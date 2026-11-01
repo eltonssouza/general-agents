@@ -1,0 +1,7 @@
+{
+  "name": "python-expert",
+  "version": "0.2.0",
+  "description": "Python specialist agent (review, tracebacks, Python 2 conversion, feature versions and stdlib module lookup) distilled from the 3.14.0rc3 Tutorial and Language Reference and the community book Python Notes for Professionals, with 5 skills, page-traceable (PDF) references, read-only scripts and citation verifiers. Audited in v0.2.0.",
+  "license": "MIT",
+  "author": { "name": "Elton Souza" }
+}

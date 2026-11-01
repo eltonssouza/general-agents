@@ -1,0 +1,1971 @@
+{
+  "_comentario": "Topic index of go-expert. Pages = PDF page (Little: printed = N-1). Each 'from source' source carries 'terms' (in English, as in the PDF) that tests/verify_citations.py checks on the cited pages; a source labeled 'inference' has no terms (conclusion of the package, not of the book). Acronyms: Eff, Spec, Little, RN1.20..RN1.24.",
+  "topicos": [
+    {
+      "id": "receivers",
+      "titulo": "Value vs pointer receivers",
+      "keywords": [
+        "receiver",
+        "receptor",
+        "ponteiro",
+        "valor",
+        "metodo",
+        "pointer",
+        "metodos",
+        "method set",
+        "conjunto de metodos",
+        "value receiver",
+        "pointer receiver",
+        "methods",
+        "which receiver"
+      ],
+      "ref": "references/frameworks.md §1",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            29
+          ],
+          "label": "from source",
+          "resumo": "value methods work on values and pointers; pointer methods only on pointers, except for an addressable value (the compiler inserts &)",
+          "terms": [
+            "pointer methods can only be invoked on pointers",
+            "addressable"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            24
+          ],
+          "label": "from source",
+          "resumo": "to print T and *T with String(), the receiver must be a value; the example uses a pointer because it is more efficient and idiomatic for structs",
+          "terms": [
+            "receiver for String must be of",
+            "more efficient and idiomatic"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            37
+          ],
+          "label": "from source",
+          "resumo": "author's heuristic: when in doubt, use a pointer; a tiny struct may be worth passing by value",
+          "terms": [
+            "Pointers versus Values"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            29,
+            30
+          ],
+          "label": "from source",
+          "resumo": "the method set of T has receivers T; that of *T has receivers *T and T",
+          "terms": [
+            "method set"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alocacao",
+      "titulo": "new, make, composite literal and useful zero value",
+      "keywords": [
+        "new",
+        "make",
+        "alocacao",
+        "composite literal",
+        "construtor",
+        "zero value",
+        "valor zero",
+        "allocation",
+        "constructor",
+        "zero-value",
+        "composite literals"
+      ],
+      "ref": "references/frameworks.md §2.2",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            15,
+            16
+          ],
+          "label": "from source",
+          "resumo": "new(T) returns zeroed storage; design the zero value to be useful; constructor with a composite literal",
+          "terms": [
+            "new(T) allocates zeroed storage",
+            "composite literal"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            17
+          ],
+          "label": "from source",
+          "resumo": "make(T, args) only for slice, map and channel; new([]int) returns a pointer to a nil slice, rarely useful",
+          "terms": [
+            "make(T, args)",
+            "rarely useful"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            32,
+            33
+          ],
+          "label": "from source",
+          "resumo": "no constructors; factory function NewX; new(X) is equivalent to &X{}",
+          "terms": [
+            "new(X) is the same as &X{}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slices",
+      "titulo": "Slices: append, capacity, aliasing, copy",
+      "keywords": [
+        "slice",
+        "slices",
+        "append",
+        "capacidade",
+        "cap",
+        "len",
+        "aliasing",
+        "subslice",
+        "copy",
+        "fatiamento",
+        "capacity",
+        "slicing",
+        "slice aliasing"
+      ],
+      "ref": "references/frameworks.md §2.1 e §2.3; references/procedimentos.md P5.1-P5.2",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            19,
+            26
+          ],
+          "label": "from source",
+          "resumo": "the result of append must be reassigned because the underlying array may change",
+          "terms": [
+            "underlying array may change",
+            "We must return the slice afterwards"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            42,
+            43
+          ],
+          "label": "from source",
+          "resumo": "len vs cap; make([]int,5)+append yields five zeros; indexing beyond len fails",
+          "terms": [
+            "length of 0 but with a capacity of 10",
+            "9332"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            44,
+            45
+          ],
+          "label": "from source",
+          "resumo": "slicing does not copy; no negative indices; copy to isolate",
+          "terms": [
+            "Go doesn’t support negative values"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            54,
+            55
+          ],
+          "label": "from source",
+          "resumo": "the upper bound of a[low:high] on a slice is cap(a); the full form a[low:high:max] limits the capacity",
+          "terms": [
+            "rather than the length",
+            "full slice expression"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            98
+          ],
+          "label": "from source",
+          "resumo": "append reuses the array if there is capacity; otherwise it allocates a new one",
+          "terms": [
+            "append"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maps",
+      "titulo": "Maps: make, comma ok, delete, iteration order",
+      "keywords": [
+        "map",
+        "maps",
+        "chave",
+        "comma ok",
+        "delete",
+        "ordem",
+        "iteracao",
+        "set",
+        "conjunto",
+        "key",
+        "iteration order",
+        "iteration",
+        "ordering"
+      ],
+      "ref": "references/frameworks.md §2.7; references/procedimentos.md P5.3",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            20,
+            21,
+            22
+          ],
+          "label": "from source",
+          "resumo": "key type with defined equality; a missing key returns zero; v, ok := m[k]; delete is safe; set as map[T]bool",
+          "terms": [
+            "comma ok",
+            "delete"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            47,
+            48
+          ],
+          "label": "from source",
+          "resumo": "make(map...) or literal; iteration is unordered, in random order",
+          "terms": [
+            "Iteration over maps isn’t ordered"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            89
+          ],
+          "label": "from source",
+          "resumo": "map iteration order is not specified and may vary",
+          "terms": [
+            "map"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strings-runes",
+      "titulo": "Strings, bytes and runes",
+      "keywords": [
+        "string",
+        "rune",
+        "byte",
+        "utf-8",
+        "unicode",
+        "len",
+        "range",
+        "strings",
+        "runes",
+        "bytes",
+        "code point"
+      ],
+      "ref": "references/procedimentos.md P9.1",
+      "fontes": [
+        {
+          "sigla": "Little",
+          "paginas": [
+            69
+          ],
+          "label": "from source",
+          "resumo": "string = runes/code points; len counts bytes; []byte(X) and string(X) copy because strings are immutable",
+          "terms": [
+            "you’re creating a copy of the data",
+            "strings are immutable"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            14,
+            53,
+            89
+          ],
+          "label": "from source",
+          "resumo": "a string is an immutable sequence of bytes; range decodes code points and invalid input becomes U+FFFD",
+          "terms": [
+            "immutable",
+            "0xFFFD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interfaces",
+      "titulo": "Interfaces, type assertion and type switch",
+      "keywords": [
+        "interface",
+        "interfaces",
+        "type assertion",
+        "type switch",
+        "implicita",
+        "interface vazia",
+        "any",
+        "assercao",
+        "implicit",
+        "empty interface",
+        "assertion",
+        "nil interface"
+      ],
+      "ref": "references/frameworks.md §3",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            30
+          ],
+          "label": "from source",
+          "resumo": "interfaces with one or two methods are common, named after the method",
+          "terms": [
+            "Interfaces with only one or two methods are common"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            32
+          ],
+          "label": "from source",
+          "resumo": "a type assertion without comma ok fails with a run-time error",
+          "terms": [
+            "comma, ok",
+            "run-time"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            39
+          ],
+          "label": "from source",
+          "resumo": "compile-time interface check: var _ json.Marshaler = (*RawMessage)(nil)",
+          "terms": [
+            "var _ json.Marshaler = (*RawMessage)(nil)"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            58,
+            59
+          ],
+          "label": "from source",
+          "resumo": "interfaces are satisfied implicitly; accept io.Closer instead of the concrete type",
+          "terms": [
+            "io.Closer"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            12,
+            69
+          ],
+          "label": "from source",
+          "resumo": "dynamic type *T with a nil value; two interfaces are equal if the dynamic types are identical and the values are equal (the nil-in-interface trap is deducible, not described)",
+          "terms": [
+            "dynamic type",
+            "dynamic values"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embedding",
+      "titulo": "Embedding and composition",
+      "keywords": [
+        "embedding",
+        "composicao",
+        "heranca",
+        "embutido",
+        "promovido",
+        "embed",
+        "inheritance",
+        "embedded",
+        "promoted",
+        "composition"
+      ],
+      "ref": "references/frameworks.md §4",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            40,
+            41
+          ],
+          "label": "from source",
+          "resumo": "the receiver of a promoted method is the inner type, not the outer one; only interfaces embed interfaces; name conflicts",
+          "terms": [
+            "receiver of the method is the inner type",
+            "Only interfaces can be embedded within interfaces"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            35,
+            36
+          ],
+          "label": "from source",
+          "resumo": "composition instead of inheritance; the outer method overrides the embedded one",
+          "terms": [
+            "Is composition better than inheritance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erros",
+      "titulo": "Errors as values",
+      "keywords": [
+        "erro",
+        "error",
+        "errors",
+        "errors.new",
+        "io.eof",
+        "sentinela",
+        "retorno multiplo",
+        "pathError",
+        "sentinel",
+        "multiple return",
+        "error handling"
+      ],
+      "ref": "references/frameworks.md §5",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            36
+          ],
+          "label": "from source",
+          "resumo": "discarding the error with _ is a terrible practice; always check",
+          "terms": [
+            "terrible practice",
+            "Always check error returns"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            48,
+            49
+          ],
+          "label": "from source",
+          "resumo": "error is an interface; rich types such as os.PathError; type switch for detail",
+          "terms": [
+            "PathError"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            63,
+            64
+          ],
+          "label": "from source",
+          "resumo": "errors as values; io.EOF is errors.New(\"EOF\"); panic/recover are rare",
+          "terms": [
+            "var EOF = errors.New(\"EOF\")",
+            "rarely used"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            111
+          ],
+          "label": "from source",
+          "resumo": "error is an interface with Error() string; nil means no error",
+          "terms": [
+            "Error() string",
+            "nil value representing"
+          ]
+        },
+        {
+          "sigla": "RN1.20",
+          "paginas": [
+            6,
+            10
+          ],
+          "label": "from source",
+          "resumo": "errors.Join, multiple %w, Unwrap() []error",
+          "terms": [
+            "Join"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defer",
+      "titulo": "defer",
+      "keywords": [
+        "defer",
+        "adiar",
+        "lifo",
+        "close",
+        "recurso",
+        "resultado nomeado",
+        "deferred",
+        "named result",
+        "resource",
+        "cleanup"
+      ],
+      "ref": "references/frameworks.md §6",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            13,
+            14
+          ],
+          "label": "from source",
+          "resumo": "defer guarantees the resource is released on any return; LIFO order; arguments are evaluated at the defer",
+          "terms": [
+            "defer f.Close()",
+            "LIFO order"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            65
+          ],
+          "label": "from source",
+          "resumo": "defer file.Close() after checking the open error",
+          "terms": [
+            "defer file.Close()"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            97,
+            98
+          ],
+          "label": "from source",
+          "resumo": "deferred calls run before the function returns, in reverse order; a nil function panics at invocation; named results can be changed",
+          "terms": [
+            "reverse order",
+            "not when the \"defer\" statement is executed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panic-recover",
+      "titulo": "panic and recover",
+      "keywords": [
+        "panic",
+        "recover",
+        "pânico",
+        "panico",
+        "recuperar",
+        "biblioteca",
+        "library",
+        "recovering"
+      ],
+      "ref": "references/frameworks.md §5.4-§5.5; references/procedimentos.md P7.3",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            50,
+            51,
+            52
+          ],
+          "label": "from source",
+          "resumo": "libraries should avoid panic; exception: initialization failure; recover at the package boundary converts it to error",
+          "terms": [
+            "real library functions should avoid panic",
+            "recover always returns nil unless called directly from a deferred function"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            104,
+            105
+          ],
+          "label": "from source",
+          "resumo": "recover returns non-nil only if called directly by a deferred function during a panic; panic(nil) becomes a run-time panic",
+          "terms": [
+            "called directly by a deferred function"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goroutines",
+      "titulo": "Goroutines and program termination",
+      "keywords": [
+        "goroutine",
+        "goroutines",
+        "go",
+        "main",
+        "esperar",
+        "sleep",
+        "go func",
+        "wait",
+        "waiting"
+      ],
+      "ref": "references/frameworks.md §7.3",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            42,
+            43
+          ],
+          "label": "from source",
+          "resumo": "a goroutine is a lightweight concurrent function; a literal must be called: go func(){...}()",
+          "terms": [
+            "Goroutines"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            73,
+            76
+          ],
+          "label": "from source",
+          "resumo": "time.Sleep to wait for goroutines is marked as bad by the author",
+          "terms": [
+            "this is bad, don't do this!"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            111
+          ],
+          "label": "from source",
+          "resumo": "when main returns the program exits and does not wait for the other goroutines",
+          "terms": [
+            "It does not wait for other"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canais",
+      "titulo": "Channels: buffer, blocking, close, nil",
+      "keywords": [
+        "canal",
+        "canais",
+        "channel",
+        "chan",
+        "buffer",
+        "bloqueio",
+        "close",
+        "nil",
+        "deadlock",
+        "channels",
+        "blocking",
+        "buffered",
+        "unbuffered"
+      ],
+      "ref": "references/frameworks.md §7.4-§7.5",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            43
+          ],
+          "label": "from source",
+          "resumo": "an unbuffered channel combines communication and synchronization",
+          "terms": [
+            "Unbuffered channels combine communication"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            77,
+            79
+          ],
+          "label": "from source",
+          "resumo": "a buffer is a queue to absorb spikes; it does not increase processing capacity",
+          "terms": [
+            "Buffered Channels"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            80
+          ],
+          "label": "from source",
+          "resumo": "a send on a closed channel panics; a send on a nil channel blocks forever",
+          "terms": [
+            "A send on a nil channel blocks"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            70,
+            99,
+            100
+          ],
+          "label": "from source",
+          "resumo": "receiving from a nil channel blocks forever; from a closed channel it yields zero after the values sent",
+          "terms": [
+            "Receiving from a nil channel blocks forever"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "select",
+      "titulo": "select, default and timeout",
+      "keywords": [
+        "select",
+        "default",
+        "timeout",
+        "time.after",
+        "contrapressao",
+        "prioridade",
+        "backpressure",
+        "priority"
+      ],
+      "ref": "references/frameworks.md §7.8",
+      "fontes": [
+        {
+          "sigla": "Little",
+          "paginas": [
+            80,
+            81
+          ],
+          "label": "from source",
+          "resumo": "drop with select+default; timeout with time.After; default fires immediately if no channel is ready",
+          "terms": [
+            "default fires immediately",
+            "time.After returns a channel"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            93
+          ],
+          "label": "from source",
+          "resumo": "no priority among cases; a select with only nil channels and no default blocks forever",
+          "terms": [
+            "no fallthrough",
+            "blocks forever"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutex",
+      "titulo": "Mutex, data race and Lock/Unlock",
+      "keywords": [
+        "mutex",
+        "lock",
+        "unlock",
+        "race",
+        "sync",
+        "rwmutex",
+        "sincronizacao",
+        "data race",
+        "synchronization",
+        "synchronisation"
+      ],
+      "ref": "references/frameworks.md §7.2",
+      "fontes": [
+        {
+          "sigla": "Little",
+          "paginas": [
+            74,
+            75,
+            76
+          ],
+          "label": "from source",
+          "resumo": "Lock + defer Unlock; forgetting Unlock causes deadlock even with a single lock; RWMutex for readers",
+          "terms": [
+            "defer lock.Unlock()",
+            "deadlock with a single lock"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            42
+          ],
+          "label": "from source",
+          "resumo": "share memory by communicating; a reference counter may be better off with a mutex",
+          "terms": [
+            "Share by communicating"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variavel-de-laco",
+      "titulo": "Per-iteration loop variable (Go 1.22)",
+      "keywords": [
+        "variavel de laco",
+        "loopvar",
+        "for",
+        "goroutine em laco",
+        "closure",
+        "1.22",
+        "per-iteration",
+        "loop variable",
+        "goroutine in loop",
+        "goroutine in a loop"
+      ],
+      "ref": "references/versoes-e-migracao.md §3.1; references/regras-da-spec.md §3.18",
+      "fontes": [
+        {
+          "sigla": "RN1.22",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "since 1.22 each iteration creates new variables",
+          "terms": [
+            "each iteration of the loop creates new variables"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            88
+          ],
+          "label": "from source",
+          "resumo": "each iteration has its own variable [Go 1.22]; before that, iterations share it",
+          "terms": [
+            "[Go 1.22]",
+            "Prior to"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            44
+          ],
+          "label": "from source",
+          "resumo": "in Go before 1.22 the example has a bug: the loop variable is shared",
+          "terms": [
+            "before 1.22 this code has a bug"
+          ]
+        },
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            3
+          ],
+          "label": "from source",
+          "resumo": "general rule: raising the toolchain while keeping the old go line preserves the old toolchain's behavior",
+          "terms": [
+            "preserves the behavior of the older toolchain"
+          ]
+        },
+        {
+          "sigla": "RN1.22",
+          "paginas": [
+            3
+          ],
+          "label": "inference",
+          "resumo": "tying the loop semantics to the go line of go.mod is an inference (RN1.21 p.3 + RN1.22 p.3); no passage says so literally"
+        }
+      ]
+    },
+    {
+      "id": "range-inteiro-funcao",
+      "titulo": "range over integer (1.22) and iterator function (1.23)",
+      "keywords": [
+        "range",
+        "inteiro",
+        "iterador",
+        "yield",
+        "iter",
+        "range func",
+        "func(yield",
+        "integer",
+        "iterator",
+        "range over int",
+        "range over func",
+        "range over function"
+      ],
+      "ref": "references/regras-da-spec.md §3.18",
+      "fontes": [
+        {
+          "sigla": "RN1.22",
+          "paginas": [
+            1,
+            2
+          ],
+          "label": "from source",
+          "resumo": "for i := range 10; range over a function only as a preview (GOEXPERIMENT=rangefunc)",
+          "terms": [
+            "may now range over integers"
+          ]
+        },
+        {
+          "sigla": "RN1.23",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "range over functions func(func() bool), func(func(K) bool), func(func(K, V) bool); iter package",
+          "terms": [
+            "iterator functions",
+            "range expressions"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            89,
+            90,
+            91
+          ],
+          "label": "from source",
+          "resumo": "yield is synthesized; after break it returns false and must not be called again; range 1e3 is invalid",
+          "terms": [
+            "yield returns false and must not be called again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generics-constraints",
+      "titulo": "Generics: constraints, type sets, comparable",
+      "keywords": [
+        "generics",
+        "generico",
+        "type parameter",
+        "constraint",
+        "type set",
+        "comparable",
+        "~t",
+        "uniao",
+        "any",
+        "generic",
+        "union",
+        "type constraint"
+      ],
+      "ref": "references/regras-da-spec.md §4.2-§4.3",
+      "fontes": [
+        {
+          "sigla": "Spec",
+          "paginas": [
+            21,
+            22,
+            23
+          ],
+          "label": "from source",
+          "resumo": "type set; ~T requires the underlying type of T to be T; union terms are disjoint; ~int | MyInt is illegal",
+          "terms": [
+            "~MyInt   // illegal",
+            "pairwise disjoint"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            38,
+            39
+          ],
+          "label": "from source",
+          "resumo": "comparable = strictly comparable non-interface types; interfaces satisfy comparable since 1.20 (with a panic risk)",
+          "terms": [
+            "strictly comparable",
+            "they satisfy"
+          ]
+        },
+        {
+          "sigla": "RN1.20",
+          "paginas": [
+            2
+          ],
+          "label": "from source",
+          "resumo": "non-strictly comparable types satisfy comparable",
+          "terms": [
+            "comparable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generics-inferencia",
+      "titulo": "Generics: instantiation and inference (cannot infer T)",
+      "keywords": [
+        "inferencia",
+        "instanciacao",
+        "cannot infer",
+        "type argument",
+        "apply",
+        "unificacao",
+        "inference",
+        "instantiation",
+        "type inference",
+        "unification"
+      ],
+      "ref": "references/regras-da-spec.md §4.4-§4.5",
+      "fontes": [
+        {
+          "sigla": "Spec",
+          "paginas": [
+            58,
+            59
+          ],
+          "label": "from source",
+          "resumo": "two-step instantiation; a partial list is a prefix; apply[[]int] supplies only S",
+          "terms": [
+            "apply[[]int]",
+            "apply[[]string, string]"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            60,
+            61,
+            62
+          ],
+          "label": "from source",
+          "resumo": "system of equations; two phases (typed, then untyped constants); conflicting constant kinds fail",
+          "terms": [
+            "conflicting constant kinds"
+          ]
+        },
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            2
+          ],
+          "label": "from source",
+          "resumo": "1.21 extends inference",
+          "terms": [
+            "inference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "versao-go-mod",
+      "titulo": "The go line of go.mod, toolchain and GODEBUG",
+      "keywords": [
+        "go.mod",
+        "linha go",
+        "toolchain",
+        "godebug",
+        "versao",
+        "migracao",
+        "1.21",
+        "compatibilidade",
+        "go line",
+        "version",
+        "migration",
+        "compatibility"
+      ],
+      "ref": "references/versoes-e-migracao.md §0, §3, §5",
+      "fontes": [
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            3
+          ],
+          "label": "from source",
+          "resumo": "go line as a strict minimum; toolchain directive; GODEBUG tied to the go line; panicnil automatic with go 1.20 or lower",
+          "terms": [
+            "strict minimum requirement",
+            "toolchain directive",
+            "GODEBUG=panicnil=1"
+          ]
+        },
+        {
+          "sigla": "RN1.23",
+          "paginas": [
+            2
+          ],
+          "label": "from source",
+          "resumo": "godebug directive in go.mod/go.work",
+          "terms": [
+            "godebug directive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rand-seed",
+      "titulo": "math/rand: automatic seed (1.20) and no-op Seed (1.24)",
+      "keywords": [
+        "rand",
+        "seed",
+        "math/rand",
+        "randautoseed",
+        "randseednop",
+        "semente",
+        "random seed",
+        "seeding"
+      ],
+      "ref": "references/versoes-e-migracao.md §3.1",
+      "fontes": [
+        {
+          "sigla": "RN1.20",
+          "paginas": [
+            11,
+            12
+          ],
+          "label": "from source",
+          "resumo": "global generator seeded automatically; GODEBUG=randautoseed=0 restores; rand.New(rand.NewSource(seed))",
+          "terms": [
+            "randautoseed=0",
+            "rand.New(rand.NewSource(seed))"
+          ]
+        },
+        {
+          "sigla": "RN1.24",
+          "paginas": [
+            12
+          ],
+          "label": "from source",
+          "resumo": "top-level Seed becomes a no-op; randseednop=0 reverts",
+          "terms": [
+            "randseednop=0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panic-nil",
+      "titulo": "panic(nil) and PanicNilError (1.21)",
+      "keywords": [
+        "panic(nil)",
+        "panicnil",
+        "paniconil",
+        "panicnilerror",
+        "recover nil",
+        "panic nil"
+      ],
+      "ref": "references/versoes-e-migracao.md §3.1",
+      "fontes": [
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            3
+          ],
+          "label": "from source",
+          "resumo": "panic(nil) causes *runtime.PanicNilError; GODEBUG=panicnil=1 reverts; automatic for go 1.20 or lower",
+          "terms": [
+            "*runtime.PanicNilError",
+            "panicnil=1"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            105
+          ],
+          "label": "from source",
+          "resumo": "to guarantee a non-nil recover, panic with a nil interface causes a run-time panic (no version stated)",
+          "terms": [
+            "recover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timers",
+      "titulo": "Unbuffered Timer and Ticker (1.23)",
+      "keywords": [
+        "timer",
+        "ticker",
+        "time.timer",
+        "asynctimerchan",
+        "len(t.c)",
+        "canal de timer",
+        "timer channel",
+        "timer channels"
+      ],
+      "ref": "references/versoes-e-migracao.md §3.1",
+      "fontes": [
+        {
+          "sigla": "RN1.23",
+          "paginas": [
+            4
+          ],
+          "label": "from source",
+          "resumo": "Timer/Ticker channel is unbuffered (cap 0); len/cap return 0; only with go 1.23.0 or higher; asynctimerchan=1 reverts",
+          "terms": [
+            "unbuffered, with capacity 0",
+            "asynctimerchan=1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "builtins-min-max-clear",
+      "titulo": "Built-ins min, max, clear (1.21)",
+      "keywords": [
+        "min",
+        "max",
+        "clear",
+        "builtin",
+        "built-in"
+      ],
+      "ref": "references/regras-da-spec.md §3.19",
+      "fontes": [
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "new built-ins min, max and clear",
+          "terms": [
+            "min",
+            "max",
+            "clear"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            99,
+            103
+          ],
+          "label": "from source",
+          "resumo": "definitions marked [Go 1.21]",
+          "terms": [
+            "[Go 1.21]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordem-inicializacao",
+      "titulo": "Package initialization and init",
+      "keywords": [
+        "init",
+        "inicializacao",
+        "ordem de inicializacao",
+        "package",
+        "dependencia",
+        "initialization",
+        "initialization order",
+        "dependency"
+      ],
+      "ref": "references/procedimentos.md P3.4",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            28
+          ],
+          "label": "from source",
+          "resumo": "init runs after the package's variable initializers and the imported packages; several init per file",
+          "terms": [
+            "niladic init function"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            109,
+            110,
+            111
+          ],
+          "label": "from source",
+          "resumo": "variables by dependency and declaration order; init several times; imported packages first",
+          "terms": [
+            "initialization"
+          ]
+        },
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            1,
+            2
+          ],
+          "label": "from source",
+          "resumo": "package initialization order specified in 1.21 (by import path)",
+          "terms": [
+            "initialization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formatacao",
+      "titulo": "Formatting: gofmt, tabs, braces, semicolon",
+      "keywords": [
+        "gofmt",
+        "formatacao",
+        "go fmt",
+        "tabs",
+        "indentacao",
+        "chave",
+        "ponto e virgula",
+        "semicolon",
+        "formatting",
+        "indentation",
+        "brace",
+        "braces"
+      ],
+      "ref": "references/procedimentos.md P1.1; references/frameworks.md §9.1",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            2,
+            3
+          ],
+          "label": "from source",
+          "resumo": "gofmt decides the style; tabs for indentation; // comments are the norm",
+          "terms": [
+            "We use tabs for indentation",
+            "Line comments are"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            5,
+            6
+          ],
+          "label": "from source",
+          "resumo": "the opening brace cannot go on the next line (automatic ; insertion)",
+          "terms": [
+            "cannot put the opening brace"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            66
+          ],
+          "label": "from source",
+          "resumo": "go fmt also aligns fields and sorts imports",
+          "terms": [
+            "alphabetically orders imports"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nomes",
+      "titulo": "Names: package, getter, MixedCaps, export",
+      "keywords": [
+        "nomes",
+        "nome",
+        "pacote",
+        "getter",
+        "mixedcaps",
+        "exportado",
+        "maiuscula",
+        "er",
+        "convencao",
+        "names",
+        "naming",
+        "package name",
+        "exported",
+        "uppercase",
+        "convention"
+      ],
+      "ref": "references/procedimentos.md P2.1; references/frameworks.md §8.1",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            3,
+            4,
+            5
+          ],
+          "label": "from source",
+          "resumo": "package: lowercase, one word, no underscore; getter Owner() without Get; one-method interface with -er suffix; MixedCaps",
+          "terms": [
+            "no need for underscores or mixedCaps",
+            "not GetOwner",
+            "-er suffix"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            56
+          ],
+          "label": "from source",
+          "resumo": "visibility by initial uppercase letter (types, functions and fields)",
+          "terms": [
+            "starts with an uppercase letter, it’s visible"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modulos-gopath",
+      "titulo": "GOPATH, go get and modules [DATED]",
+      "keywords": [
+        "gopath",
+        "go get",
+        "modulo",
+        "modulos",
+        "workspace",
+        "dependencia",
+        "godoc",
+        "go run",
+        "module",
+        "modules",
+        "dependency",
+        "dependencies"
+      ],
+      "ref": "references/procedimentos.md P10.3 (DATADO)",
+      "dated": true,
+      "fontes": [
+        {
+          "sigla": "Little",
+          "paginas": [
+            56,
+            57
+          ],
+          "label": "from source",
+          "resumo": "[DATED go1.3.3] go get downloads to the workspace from head/master; goop and godep are cited as young tools",
+          "terms": [
+            "master/head/trunk/default",
+            "goop and godep"
+          ]
+        },
+        {
+          "sigla": "RN1.22",
+          "paginas": [
+            2
+          ],
+          "label": "from source",
+          "resumo": "legacy GOPATH-mode go get stops working in 1.22",
+          "terms": [
+            "GO111MODULE=off"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unsafe",
+      "titulo": "unsafe",
+      "keywords": [
+        "unsafe",
+        "unsafe.pointer",
+        "unsafe.slice",
+        "unsafe.string",
+        "uintptr"
+      ],
+      "ref": "references/procedimentos.md P10.5; references/regras-da-spec.md §3.21",
+      "fontes": [
+        {
+          "sigla": "Spec",
+          "paginas": [
+            112,
+            113,
+            114
+          ],
+          "label": "from source",
+          "resumo": "unsafe package: Pointer, Add, Slice, SliceData, String, StringData; Sizeof/Alignof/Offsetof",
+          "terms": [
+            "unsafe.Pointer",
+            "SliceData"
+          ]
+        },
+        {
+          "sigla": "RN1.20",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "SliceData, String and StringData are new in 1.20",
+          "terms": [
+            "SliceData"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conversoes-constantes",
+      "titulo": "Conversions, constants and representability",
+      "keywords": [
+        "conversao",
+        "constante",
+        "overflow",
+        "representavel",
+        "iota",
+        "numerico",
+        "int",
+        "conversion",
+        "conversions",
+        "constant",
+        "constants",
+        "representable",
+        "numeric"
+      ],
+      "ref": "references/regras-da-spec.md §3.2 e §3.15",
+      "fontes": [
+        {
+          "sigla": "Spec",
+          "paginas": [
+            28,
+            29
+          ],
+          "label": "from source",
+          "resumo": "representability examples: 1e10 fits in uint64; 1024 does not fit in byte",
+          "terms": [
+            "representable"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            73,
+            75,
+            76
+          ],
+          "label": "from source",
+          "resumo": "integer conversion does not signal overflow; string(int) may go away; slice to array panics if smaller",
+          "terms": [
+            "may eventually be removed"
+          ]
+        },
+        {
+          "sigla": "Eff",
+          "paginas": [
+            26
+          ],
+          "label": "from source",
+          "resumo": "constants are evaluated at compile time; iota for enumerations",
+          "terms": [
+            "1<<3 is a constant expression"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparacao",
+      "titulo": "Comparison and equality",
+      "keywords": [
+        "comparacao",
+        "igualdade",
+        "==",
+        "comparavel",
+        "chave",
+        "interface panic",
+        "comparison",
+        "equality",
+        "comparable types"
+      ],
+      "ref": "references/regras-da-spec.md §3.14",
+      "fontes": [
+        {
+          "sigla": "Spec",
+          "paginas": [
+            69
+          ],
+          "label": "from source",
+          "resumo": "slice, map and function can only be compared to nil; comparing interfaces with a non-comparable dynamic type panics",
+          "terms": [
+            "run-time panic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alias-generico",
+      "titulo": "Generic type alias (1.24)",
+      "keywords": [
+        "alias",
+        "alias generico",
+        "aliastypeparams",
+        "type alias",
+        "generic alias"
+      ],
+      "ref": "references/versoes-e-migracao.md §2 (Go 1.24)",
+      "fontes": [
+        {
+          "sigla": "RN1.24",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "generic type aliases fully supported; GOEXPERIMENT=noaliastypeparams disables; aliastypeparams goes away in 1.25",
+          "terms": [
+            "aliastypeparams"
+          ]
+        },
+        {
+          "sigla": "RN1.23",
+          "paginas": [
+            1
+          ],
+          "label": "from source",
+          "resumo": "preview in 1.23 via GOEXPERIMENT=aliastypeparams",
+          "terms": [
+            "aliastypeparams"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tool-directive",
+      "titulo": "tool directive in go.mod (1.24)",
+      "keywords": [
+        "tool",
+        "tools.go",
+        "diretiva tool",
+        "go tool",
+        "go get -tool",
+        "tool directive"
+      ],
+      "ref": "references/versoes-e-migracao.md §1.2",
+      "fontes": [
+        {
+          "sigla": "RN1.24",
+          "paginas": [
+            2
+          ],
+          "label": "from source",
+          "resumo": "tool directives in go.mod replace the tools.go workaround",
+          "terms": [
+            "tool directives in go.mod",
+            "tools.go"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-expr",
+      "titulo": "new(expr) (Go 1.26 according to Effective Go)",
+      "keywords": [
+        "new(expr)",
+        "new com expressao",
+        "1.26",
+        "new(int64(300))",
+        "new with expression",
+        "new with an expression"
+      ],
+      "ref": "references/versoes-e-migracao.md §6 (cruzamento new(expr))",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            15
+          ],
+          "label": "from source",
+          "resumo": "starting with Go 1.26, new accepts an expression as its argument",
+          "terms": [
+            "Starting with Go 1.26",
+            "new(int64(300))"
+          ]
+        },
+        {
+          "sigla": "Spec",
+          "paginas": [
+            104
+          ],
+          "label": "inference",
+          "resumo": "the Spec describes new(expr) without stating the version, and the appendix ends at 1.24 (Spec p.115-116)"
+        }
+      ]
+    },
+    {
+      "id": "concorrencia-paralelismo",
+      "titulo": "Concurrency is not parallelism; GOMAXPROCS",
+      "keywords": [
+        "paralelismo",
+        "concorrencia",
+        "gomaxprocs",
+        "numcpu",
+        "parallel",
+        "parallelism",
+        "concurrency"
+      ],
+      "ref": "references/frameworks.md §7.1",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            46,
+            47
+          ],
+          "label": "from source",
+          "resumo": "Go is concurrent, not parallel; runtime.NumCPU and GOMAXPROCS [DATED 2009]",
+          "terms": [
+            "a concurrent language, not a parallel one",
+            "runtime.GOMAXPROCS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "padroes-concorrencia",
+      "titulo": "Patterns: channel semaphore, worker pool, resultChan, free list",
+      "keywords": [
+        "semaforo",
+        "worker",
+        "pool",
+        "resultchan",
+        "free list",
+        "limitar",
+        "maxoutstanding",
+        "leaky buffer",
+        "semaphore",
+        "worker pool",
+        "limit",
+        "limiting"
+      ],
+      "ref": "references/frameworks.md §7.7",
+      "fontes": [
+        {
+          "sigla": "Eff",
+          "paginas": [
+            44,
+            45,
+            46,
+            47,
+            48
+          ],
+          "label": "from source",
+          "resumo": "buffered channel as a semaphore; fixed worker pool; channels of channels; free list with select/default",
+          "terms": [
+            "MaxOutstanding",
+            "A leaky buffer"
+          ]
+        },
+        {
+          "sigla": "Little",
+          "paginas": [
+            77,
+            78,
+            79
+          ],
+          "label": "from source",
+          "resumo": "worker pool reading from the same channel",
+          "terms": [
+            "worker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pgo",
+      "titulo": "PGO (1.20 preview, 1.21 general)",
+      "keywords": [
+        "pgo",
+        "profile-guided",
+        "default.pgo",
+        "otimizacao por perfil",
+        "profile guided",
+        "profile-guided optimization"
+      ],
+      "ref": "references/versoes-e-migracao.md §1.2 e §2",
+      "fontes": [
+        {
+          "sigla": "RN1.20",
+          "paginas": [
+            3,
+            5
+          ],
+          "label": "from source",
+          "resumo": "PGO in preview; 3-4% gain measured",
+          "terms": [
+            "3–4%"
+          ]
+        },
+        {
+          "sigla": "RN1.21",
+          "paginas": [
+            4,
+            5
+          ],
+          "label": "from source",
+          "resumo": "PGO ready for general use; -pgo=auto by default; 2 to 7% gain",
+          "terms": [
+            "-pgo=auto",
+            "between 2 and 7%"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servemux",
+      "titulo": "net/http ServeMux with method and wildcards (1.22)",
+      "keywords": [
+        "servemux",
+        "http",
+        "curinga",
+        "pathvalue",
+        "httpmuxgo121",
+        "roteamento",
+        "wildcard",
+        "wildcards",
+        "routing"
+      ],
+      "ref": "references/versoes-e-migracao.md §2 (Go 1.22)",
+      "fontes": [
+        {
+          "sigla": "RN1.22",
+          "paginas": [
+            6
+          ],
+          "label": "from source",
+          "resumo": "patterns with method and wildcards, Request.PathValue; httpmuxgo121=1 reverts",
+          "terms": [
+            "PathValue",
+            "httpmuxgo121=1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sem_cobertura": [
+    {
+      "termos": [
+        "context",
+        "cancelamento",
+        "contexto",
+        "cancellation",
+        "cancel"
+      ],
+      "mensagem": "context and cancellation: NOT COVERED in Eff, Little and Spec; the release notes only bring isolated news (WithCancelCause, RN1.20 p.8; WithoutCancel and AfterFunc, RN1.21 p.7)."
+    },
+    {
+      "termos": [
+        "waitgroup",
+        "errgroup",
+        "sync.waitgroup"
+      ],
+      "mensagem": "sync.WaitGroup and errgroup: NOT COVERED in any of the four sources."
+    },
+    {
+      "termos": [
+        "go test",
+        "testing",
+        "benchmark",
+        "teste",
+        "testes",
+        "table-driven",
+        "tests"
+      ],
+      "mensagem": "Tests: NOT COVERED in Eff, Little and Spec; the release notes cite only isolated news (go test -skip in 1.20, RN1.20 p.3; testing.B.Loop in 1.24, RN1.24 p.4-5)."
+    },
+    {
+      "termos": [
+        "doc comment",
+        "godoc",
+        "documentacao",
+        "documentation",
+        "doc comments"
+      ],
+      "mensagem": "Doc comment conventions: NOT COVERED; Effective Go refers to 'Go Doc Comments', which is not in the sources (Eff p.3)."
+    },
+    {
+      "termos": [
+        "go 1.25",
+        "1.25",
+        "go 1.26",
+        "1.26",
+        "go1.25",
+        "go1.26"
+      ],
+      "mensagem": "Go 1.25 and 1.26: NO release notes in the sources (only isolated marks: new(expr) = 1.26 in Eff p.15; future notices in RN1.24)."
+    },
+    {
+      "termos": [
+        "slog",
+        "log/slog",
+        "slices",
+        "maps"
+      ],
+      "mensagem": "log/slog, slices and maps APIs from 1.21: only announced in RN1.21 p.6, without API detail; API NOT COVERED."
+    },
+    {
+      "termos": [
+        "aceitar interface",
+        "retornar struct",
+        "accept interfaces",
+        "return structs"
+      ],
+      "mensagem": "'Accept interfaces, return structs' is NOT in any source (only 'accept narrow interfaces', Little p.58-59); if you recommend it, label it [inference]."
+    },
+    {
+      "termos": [
+        "race detector",
+        "-race",
+        "go vet",
+        "staticcheck",
+        "lint",
+        "linters"
+      ],
+      "mensagem": "Analysis tools (race detector, vet, linters): usage NOT COVERED; the RN cite only new vet findings per version and the race detector rewrite on macOS (RN1.20 p.4)."
+    },
+    {
+      "termos": [
+        "sync.pool",
+        "pool",
+        "atomic",
+        "sync/atomic"
+      ],
+      "mensagem": "sync.Pool and sync/atomic: usage NOT COVERED (atomic is only mentioned in Little p.74, p.82 and as And/Or in 1.23)."
+    },
+    {
+      "termos": [
+        "cgo",
+        "reflect",
+        "reflexao",
+        "plugin",
+        "reflection"
+      ],
+      "mensagem": "cgo and reflection: usage NOT COVERED; only isolated changes in the release notes."
+    },
+    {
+      "termos": [
+        "framework",
+        "gin",
+        "echo",
+        "gorm",
+        "biblioteca de terceiros",
+        "third-party",
+        "third party library"
+      ],
+      "mensagem": "Third-party libraries and frameworks: out of scope and NOT COVERED."
+    },
+    {
+      "termos": [
+        "desempenho",
+        "performance",
+        "benchmarks",
+        "profiling",
+        "pprof"
+      ],
+      "mensagem": "Performance and profiling: NOT COVERED (only the net/http/pprof import, Eff p.38, and PGO in the RN)."
+    }
+  ]
+}

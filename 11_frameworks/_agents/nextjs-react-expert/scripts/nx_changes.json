@@ -1,0 +1,1548 @@
+{
+ "versao": 1,
+ "fonte": "Release posts NX13 (25/10/2022), NX14 (26/10/2023), NX15 (21/10/2024), NX16 (21/10/2025)",
+ "convencao": "pages = PDF page (the PDFs have no printed number); [from release] only what the text states",
+ "versions": {
+  "13": {
+   "data": "2022-10-25",
+   "fonte": "NextJS-13-Release.pdf",
+   "paginas_uteis": "1-15",
+   "paginas": 16
+  },
+  "14": {
+   "data": "2023-10-26",
+   "fonte": "NextJS-14-Release.pdf",
+   "paginas_uteis": "1-9",
+   "paginas": 13
+  },
+  "15": {
+   "data": "2024-10-21",
+   "fonte": "NextJS-15-Release.pdf",
+   "paginas_uteis": "1-19",
+   "paginas": 22
+  },
+  "16": {
+   "data": "2025-10-21",
+   "fonte": "NextJS-16-Release.pdf",
+   "paginas_uteis": "1-14",
+   "paginas": 16
+  }
+ },
+ "entries": [
+  {
+   "id": "13-app-dir",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "app-router"
+   ],
+   "title": "app directory (beta)",
+   "text": "Introduces the app/ directory in beta: the text says it is NOT yet recommended for production; the pages/ directory remains stable and supported for the foreseeable future; adopting app/ can be incremental from pages/. Routes in app/ require a page.js file.",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "kw": "app directory app/ beta pages directory adoção incremental page.js",
+   "status": "beta"
+  },
+  {
+   "id": "13-layouts",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "app-router"
+   ],
+   "title": "Layouts",
+   "text": "Layouts share UI across routes and, on navigation, preserve state, stay interactive and do not re-render; they are defined by the file system (e.g. app/blog/layout.js). Code (components, tests, styles) can live next to the routes.",
+   "pages": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "kw": "layouts layout.js estado colocation"
+  },
+  {
+   "id": "13-rsc",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "app-router",
+    "react"
+   ],
+   "title": "React Server Components in app/",
+   "text": "app/ adopts the React Server Components architecture: server-first by default, less JavaScript sent to the client; the Next/React runtime is cacheable and does not grow with the application.",
+   "pages": [
+    1,
+    4
+   ],
+   "kw": "server components rsc client components javascript runtime"
+  },
+  {
+   "id": "13-streaming",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "app-router",
+    "streaming"
+   ],
+   "title": "Streaming and loading.js",
+   "text": "Progressive rendering with streaming of UI units; the special file loading.js creates an Instant Loading UI with Suspense boundaries. On Vercel, apps using app/ stream by default on the Node.js and Edge runtimes.",
+   "pages": [
+    4,
+    5,
+    7
+   ],
+   "kw": "streaming loading.js suspense instant loading vercel"
+  },
+  {
+   "id": "13-data-fetching",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "data-fetching",
+    "caching"
+   ],
+   "title": "Data fetching: async Server Components and extended fetch",
+   "text": "Server components can be async and use fetch; the native fetch is extended (automatic dedupe) and offers an API for caching/revalidation: cache 'force-cache' (the text says it is the default), 'no-store', and next: { revalidate: N }. The text compares this with getStaticProps / getServerSideProps. Data mutations would be simplified in a future version.",
+   "pages": [
+    2,
+    5,
+    6
+   ],
+   "kw": "fetch force-cache no-store revalidate getStaticProps getServerSideProps async component"
+  },
+  {
+   "id": "13-turbopack",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack (alpha)",
+   "text": "Successor to Webpack written in Rust, in alpha. It only supports next dev (the text says they are working on supporting next build); enabled with next dev --turbo. Figures from the text: 700x faster than Webpack on updates, 10x faster than Vite, 4x on cold start; a 3,000-module app starts in 1.8 s (Vite 11.4 s, Webpack 16.5 s). Many features are still unsupported.",
+   "pages": [
+    1,
+    7,
+    8
+   ],
+   "kw": "turbopack alpha next dev --turbo webpack vite hmr",
+   "status": "alpha",
+   "cmds": [
+    "next dev --turbo"
+   ]
+  },
+  {
+   "id": "13-image",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "image"
+   ],
+   "title": "New next/image",
+   "text": "New image component: less client JS, simpler styling, alt required by default, native lazy loading without hydration. The old component was renamed to next/legacy/image.",
+   "pages": [
+    1,
+    8,
+    9
+   ],
+   "kw": "next/image alt lazy loading layout shift legacy image"
+  },
+  {
+   "id": "13-font",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "font"
+   ],
+   "title": "@next/font (beta)",
+   "text": "Font system with automatic self-hosting, no external requests (Google Fonts downloaded at build time) and zero layout shift via CSS size-adjust; imported from @next/font/google and @next/font/local.",
+   "pages": [
+    1,
+    10
+   ],
+   "kw": "@next/font google fonts localFont self-hosting size-adjust",
+   "status": "beta"
+  },
+  {
+   "id": "13-link",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "link"
+   ],
+   "title": "Simplified next/link",
+   "text": "<Link> always renders an <a>; nesting an <a> is no longer needed (experimental option since 12.2, now the default). Codemod: npx @next/codemod new-link ./pages.",
+   "pages": [
+    1,
+    11
+   ],
+   "kw": "next/link anchor a child codemod new-link",
+   "cmds": [
+    "npx @next/codemod new-link ./pages"
+   ]
+  },
+  {
+   "id": "13-og",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "og-image"
+   ],
+   "title": "OG image generation (@vercel/og)",
+   "text": "The @vercel/og library for dynamic social cards (ImageResponse), based on Vercel Edge Functions and WebAssembly; the example uses the 'experimental-edge' runtime in pages/api/og.jsx.",
+   "pages": [
+    11,
+    12
+   ],
+   "kw": "og image @vercel/og ImageResponse social cards edge"
+  },
+  {
+   "id": "13-middleware",
+   "v": 13,
+   "kind": "feature",
+   "thread": [
+    "middleware"
+   ],
+   "title": "Middleware API updates",
+   "text": "Middleware can set request/response headers and respond directly (e.g. NextResponse.json with 401) without a rewrite/redirect; responding from Middleware requires the experimental.allowMiddlewareResponseBody option in next.config.js.",
+   "pages": [
+    13,
+    14
+   ],
+   "kw": "middleware NextResponse headers response body allowMiddlewareResponseBody matcher",
+   "status": "experimental"
+  },
+  {
+   "id": "13-b-react",
+   "v": 13,
+   "kind": "requirement",
+   "thread": [
+    "react",
+    "node-req"
+   ],
+   "title": "Minimum React 18.2.0",
+   "text": "The minimum React version rises from 17.0.2 to 18.2.0.",
+   "pages": [
+    14
+   ],
+   "kw": "react 18.2.0 17.0.2 minimum"
+  },
+  {
+   "id": "13-b-node",
+   "v": 13,
+   "kind": "requirement",
+   "thread": [
+    "node-req"
+   ],
+   "title": "Minimum Node.js 14.6.0",
+   "text": "The minimum Node.js version rises from 12.22.0 to 14.6.0 (12.x reached end of life).",
+   "pages": [
+    14
+   ],
+   "kw": "node 14.6.0 12.22.0 minimum eol"
+  },
+  {
+   "id": "13-b-swcminify",
+   "v": 13,
+   "kind": "breaking",
+   "thread": [
+    "config"
+   ],
+   "title": "swcMinify becomes true",
+   "text": "The swcMinify configuration property changed from false to true.",
+   "pages": [
+    14
+   ],
+   "kw": "swcMinify config next.config.js"
+  },
+  {
+   "id": "13-b-image-rename",
+   "v": 13,
+   "kind": "breaking",
+   "thread": [
+    "image"
+   ],
+   "title": "next/image rename",
+   "text": "The next/image import was renamed to next/legacy/image and next/future/image was renamed to next/image. There is a codemod: npx @next/codemod next-image-to-legacy-image ./pages.",
+   "pages": [
+    9,
+    14
+   ],
+   "kw": "next/image next/legacy/image next/future/image codemod rename",
+   "cmds": [
+    "npx @next/codemod next-image-to-legacy-image ./pages"
+   ]
+  },
+  {
+   "id": "13-b-link-child",
+   "v": 13,
+   "kind": "breaking",
+   "thread": [
+    "link"
+   ],
+   "title": "<a> child not allowed in next/link",
+   "text": "The child of next/link can no longer be an <a>; use the legacyBehavior prop for the old behavior or remove the <a>. There is a codemod.",
+   "pages": [
+    14,
+    11
+   ],
+   "kw": "next/link legacyBehavior a child codemod"
+  },
+  {
+   "id": "13-b-bots",
+   "v": 13,
+   "kind": "breaking",
+   "thread": [
+    "routing-prefetch"
+   ],
+   "title": "No prefetch for bots",
+   "text": "Routes are no longer prefetched when the User-Agent is a bot.",
+   "pages": [
+    14
+   ],
+   "kw": "prefetch bot user-agent"
+  },
+  {
+   "id": "13-b-target",
+   "v": 13,
+   "kind": "removal",
+   "thread": [
+    "config"
+   ],
+   "title": "target option removed",
+   "text": "The obsolete target option of next.config.js was removed.",
+   "pages": [
+    14
+   ],
+   "kw": "target next.config.js removed"
+  },
+  {
+   "id": "13-b-browsers",
+   "v": 13,
+   "kind": "requirement",
+   "thread": [
+    "browsers"
+   ],
+   "title": "Supported browsers",
+   "text": "Drops Internet Explorer and targets modern browsers: Chrome 64+, Edge 79+, Firefox 67+, Opera 51+, Safari 12+; Browserslist can still change the target.",
+   "pages": [
+    14,
+    15
+   ],
+   "kw": "browsers chrome edge firefox opera safari internet explorer browserslist"
+  },
+  {
+   "id": "13-up-cmd",
+   "v": 13,
+   "kind": "upgrade",
+   "thread": [
+    "codemod",
+    "upgrade"
+   ],
+   "title": "Upgrade command",
+   "text": "Upgrade: npm i next@latest react@latest react-dom@latest eslint-config-next@latest. The text points to the upgrade guide for details.",
+   "pages": [
+    1,
+    2,
+    15
+   ],
+   "kw": "upgrade npm next@latest eslint-config-next",
+   "cmds": [
+    "npm i next@latest react@latest react-dom@latest eslint-config-next@latest"
+   ]
+  },
+  {
+   "id": "14-turbopack",
+   "v": 14,
+   "kind": "feature",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack in development (not yet stable)",
+   "text": "5,000 next dev integration tests pass with Turbopack (90% of the next dev tests); on vercel.com: up to 53.3% faster local server startup and up to 94.7% faster Fast Refresh. It becomes stable in a minor release once it reaches 100% of the tests; webpack remains supported for custom configs and plugins. Usage: next dev --turbo.",
+   "pages": [
+    1,
+    2
+   ],
+   "kw": "turbopack next dev --turbo 5000 tests webpack stable areweturboyet",
+   "status": "preview",
+   "cmds": [
+    "next dev --turbo"
+   ]
+  },
+  {
+   "id": "14-server-actions",
+   "v": 14,
+   "kind": "feature",
+   "thread": [
+    "server-actions",
+    "forms"
+   ],
+   "title": "Server Actions (stable)",
+   "text": "Functions that run on the server, called directly from React components ('use server' directive), instead of manual API Routes; they work with <form action> and also as a function call. Built on the React canary channel. They integrate with revalidatePath/revalidateTag, redirect, cookies, useOptimistic, useFormState and useFormStatus.",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "kw": "server actions use server form action formdata revalidatePath revalidateTag redirect cookies useOptimistic useFormState useFormStatus api routes canary",
+   "status": "stable"
+  },
+  {
+   "id": "14-ppr",
+   "v": 14,
+   "kind": "feature",
+   "thread": [
+    "ppr",
+    "caching"
+   ],
+   "title": "Partial Prerendering (preview)",
+   "text": "Preview of a compiler optimization: a static shell is served immediately and dynamic content is streamed, defined by <Suspense> boundaries (prerendered fallback); no new APIs. loading.js is already an implicit boundary. Under active development; more news promised for a minor release.",
+   "pages": [
+    5,
+    6,
+    7
+   ],
+   "kw": "partial prerendering ppr suspense static shell streaming loading.js",
+   "status": "preview"
+  },
+  {
+   "id": "14-metadata",
+   "v": 14,
+   "kind": "deprecation",
+   "thread": [
+    "metadata"
+   ],
+   "title": "viewport, colorScheme and themeColor leave metadata",
+   "text": "The metadata options viewport, colorScheme and themeColor are deprecated and will be removed in a future major; viewport and generateViewport appear as replacements. The old options keep working; the other metadata options do not change.",
+   "pages": [
+    7,
+    8
+   ],
+   "kw": "metadata viewport colorScheme themeColor generateViewport deprecated"
+  },
+  {
+   "id": "14-learn",
+   "v": 14,
+   "kind": "feature",
+   "thread": [
+    "learn"
+   ],
+   "title": "Next.js Learn course",
+   "text": "New free course (App Router, Tailwind, fonts and images, Postgres, Server Components, streaming, optional PPR, mutations, errors, accessibility, authentication, metadata).",
+   "pages": [
+    1,
+    8,
+    9
+   ],
+   "kw": "next.js learn course app router tutorial"
+  },
+  {
+   "id": "14-b-node",
+   "v": 14,
+   "kind": "requirement",
+   "thread": [
+    "node-req"
+   ],
+   "title": "Minimum Node.js 18.17",
+   "text": "The minimum Node.js version becomes 18.17.",
+   "pages": [
+    9
+   ],
+   "kw": "node 18.17 minimum"
+  },
+  {
+   "id": "14-b-wasm",
+   "v": 14,
+   "kind": "removal",
+   "thread": [
+    "compiler"
+   ],
+   "title": "next-swc WASM target removed",
+   "text": "The WASM target of the next-swc build was removed.",
+   "pages": [
+    9
+   ],
+   "kw": "wasm next-swc removed"
+  },
+  {
+   "id": "14-b-font",
+   "v": 14,
+   "kind": "breaking",
+   "thread": [
+    "font"
+   ],
+   "title": "@next/font dropped in favor of next/font",
+   "text": "Support for @next/font was dropped in favor of next/font; there is a codemod.",
+   "pages": [
+    9
+   ],
+   "kw": "@next/font next/font codemod"
+  },
+  {
+   "id": "14-b-imageresponse",
+   "v": 14,
+   "kind": "breaking",
+   "thread": [
+    "og-image"
+   ],
+   "title": "ImageResponse comes from next/og",
+   "text": "The ImageResponse import changes from next/server to next/og; there is a codemod.",
+   "pages": [
+    9
+   ],
+   "kw": "ImageResponse next/og next/server codemod"
+  },
+  {
+   "id": "14-b-export",
+   "v": 14,
+   "kind": "breaking",
+   "thread": [
+    "export-static"
+   ],
+   "title": "next export command removed",
+   "text": "The next export command was removed in favor of the config option output: 'export'.",
+   "pages": [
+    9
+   ],
+   "kw": "next export output export static removed"
+  },
+  {
+   "id": "14-d-onload",
+   "v": 14,
+   "kind": "deprecation",
+   "thread": [
+    "image"
+   ],
+   "title": "onLoadingComplete of next/image",
+   "text": "The onLoadingComplete prop of next/image is deprecated in favor of onLoad.",
+   "pages": [
+    9
+   ],
+   "kw": "onLoadingComplete onLoad next/image"
+  },
+  {
+   "id": "14-d-domains",
+   "v": 14,
+   "kind": "deprecation",
+   "thread": [
+    "image"
+   ],
+   "title": "images.domains",
+   "text": "The domains option of next/image is deprecated in favor of remotePatterns.",
+   "pages": [
+    9
+   ],
+   "kw": "domains remotePatterns next/image"
+  },
+  {
+   "id": "14-imp",
+   "v": 14,
+   "kind": "improvement",
+   "thread": [
+    "caching",
+    "self-hosting"
+   ],
+   "title": "Other improvements in 14",
+   "text": "More verbose fetch cache logging (optional); 80% smaller function in a basic create-next-app; better edge runtime memory management in development.",
+   "pages": [
+    9
+   ],
+   "kw": "logging fetch caching function size edge memory"
+  },
+  {
+   "id": "14-up",
+   "v": 14,
+   "kind": "upgrade",
+   "thread": [
+    "upgrade",
+    "codemod"
+   ],
+   "title": "Commands quoted in 14",
+   "text": "The post says 'Upgrade today or get started with' and shows npx create-next-app@latest. It mentions codemods (links) for @next/font and ImageResponse, without command text.",
+   "pages": [
+    1,
+    2,
+    9
+   ],
+   "kw": "upgrade create-next-app@latest codemod",
+   "cmds": [
+    "npx create-next-app@latest"
+   ]
+  },
+  {
+   "id": "15-codemod-cli",
+   "v": 15,
+   "kind": "upgrade",
+   "thread": [
+    "codemod",
+    "upgrade"
+   ],
+   "title": "@next/codemod CLI for upgrading",
+   "text": "A CLI that updates dependencies, shows the available codemods and guides their application. The canary tag uses the latest codemod version and latest sets the Next.js version; the text recommends the canary codemod even when migrating to the latest Next. Manual alternative: npm install next@latest react@rc react-dom@rc.",
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "kw": "codemod cli upgrade canary latest npm install react@rc",
+   "cmds": [
+    "npx @next/codemod@canary upgrade latest",
+    "npm install next@latest react@rc react-dom@rc"
+   ]
+  },
+  {
+   "id": "15-b-async",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "async-apis"
+   ],
+   "title": "Async request APIs",
+   "text": "cookies, headers, draftMode, params (in layout.js, page.js, route.js, default.js, generateMetadata, generateViewport) and searchParams (in page.js) become asynchronous. Synchronous access works temporarily with warnings in dev and production until the next major. Codemod: npx @next/codemod@canary next-async-request-api .",
+   "pages": [
+    1,
+    3,
+    4
+   ],
+   "kw": "async request apis cookies headers draftMode params searchParams await codemod next-async-request-api",
+   "cmds": [
+    "npx @next/codemod@canary next-async-request-api ."
+   ]
+  },
+  {
+   "id": "15-b-caching",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "caching"
+   ],
+   "title": "Caching semantics: fetch, GET Route Handlers and navigation",
+   "text": "The summary says fetch, GET Route Handlers and client-side navigations are no longer cached by default. The text details: GET Route Handlers (which in 14 were cached unless a dynamic function/config was used) are no longer cached, and you can opt in via export dynamic = 'force-static'; special files (sitemap.ts, opengraph-image.tsx, icon.tsx, metadata files) remain static by default.",
+   "pages": [
+    2,
+    4
+   ],
+   "kw": "cache default fetch get route handlers force-static sitemap opengraph-image no longer cached"
+  },
+  {
+   "id": "15-b-client-cache",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "caching",
+    "routing-prefetch"
+   ],
+   "title": "Client Router Cache without Page cache",
+   "text": "Default staleTime of 0 for Page segments: when navigating, the client reflects the latest data. Unchanged: shared layout data is not refetched; back/forward restores from cache (scroll); loading.js is cached for 5 minutes (or staleTimes.static). For the previous behavior: experimental.staleTimes.dynamic (e.g. 30). The experimental staleTimes flag has existed since 14.2.0.",
+   "pages": [
+    5
+   ],
+   "kw": "client router cache staleTimes staleTime dynamic loading.js 5 minutes back forward"
+  },
+  {
+   "id": "15-react19",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "react"
+   ],
+   "title": "React 19 support",
+   "text": "The App Router uses React 19 RC; the Pages Router keeps compatibility with React 18 (and now supports 18 and 19). Running Pages on React 18 and App on React 19 in the same application is possible but NOT recommended (unpredictable behavior, typing inconsistency). Text: Next 15 is stable even though React 19 is in RC.",
+   "pages": [
+    1,
+    2,
+    5,
+    6,
+    17,
+    18
+   ],
+   "kw": "react 19 rc react 18 pages router app router compatibility",
+   "status": "stable"
+  },
+  {
+   "id": "15-react-compiler",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "react",
+    "compiler"
+   ],
+   "title": "React Compiler (experimental)",
+   "text": "Experimental support for the React compiler (Meta), which reduces manual memoization (useMemo/useCallback). Available only as a Babel plugin, which makes dev and build slower.",
+   "pages": [
+    2,
+    6,
+    7
+   ],
+   "kw": "react compiler babel plugin memoization useMemo useCallback",
+   "status": "experimental"
+  },
+  {
+   "id": "15-hydration",
+   "v": 15,
+   "kind": "improvement",
+   "thread": [
+    "react",
+    "dev"
+   ],
+   "title": "Better hydration errors",
+   "text": "The hydration error view shows the source code and suggestions (a continuation of 14.1).",
+   "pages": [
+    7
+   ],
+   "kw": "hydration error view"
+  },
+  {
+   "id": "15-turbopack",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack Dev stable",
+   "text": "next dev --turbo becomes stable. On vercel.com: up to 76.7% faster startup, up to 96.3% faster Fast Refresh, up to 45.8% faster initial route compilation without cache (still no disk cache).",
+   "pages": [
+    2,
+    8
+   ],
+   "kw": "turbopack dev stable --turbo fast refresh",
+   "status": "stable",
+   "cmds": [
+    "next dev --turbo"
+   ]
+  },
+  {
+   "id": "15-static-indicator",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "dev"
+   ],
+   "title": "Static Route Indicator",
+   "text": "A visual indicator in development shows whether the route is static or dynamic (it can be disabled); the next build output also shows the rendering strategy.",
+   "pages": [
+    2,
+    9
+   ],
+   "kw": "static route indicator dev static dynamic"
+  },
+  {
+   "id": "15-after",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "after",
+    "observability"
+   ],
+   "title": "unstable_after (experimental)",
+   "text": "API to schedule work after the response streaming ends (logs, analytics). Requires experimental.after: true in next.config; import unstable_after as after from next/server in Server Components, Server Actions, Route Handlers or Middleware. It also works in static pages (p.19).",
+   "pages": [
+    2,
+    9,
+    10,
+    19
+   ],
+   "kw": "unstable_after after experimental.after response streaming",
+   "status": "experimental"
+  },
+  {
+   "id": "15-instrumentation",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "observability"
+   ],
+   "title": "instrumentation.js stable",
+   "text": "instrumentation with register() and the new onRequestError hook (built with Sentry) captures context of server errors (router, Server Component/Action/Route Handler/Middleware). The experimental.instrumentationHook option can be removed.",
+   "pages": [
+    2,
+    10,
+    11
+   ],
+   "kw": "instrumentation.js register onRequestError instrumentationHook opentelemetry sentry",
+   "status": "stable"
+  },
+  {
+   "id": "15-form",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "forms"
+   ],
+   "title": "<Form> component (next/form)",
+   "text": "Extends the HTML <form> with layout/loading prefetch, client-side navigation preserving layouts and state, and progressive enhancement (works via full-page navigation without JS). Useful for forms that navigate, such as search.",
+   "pages": [
+    2,
+    11,
+    12
+   ],
+   "kw": "next/form Form component prefetch client navigation progressive enhancement search"
+  },
+  {
+   "id": "15-config-ts",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "config"
+   ],
+   "title": "next.config.ts",
+   "text": "Support for next.config.ts with the NextConfig type.",
+   "pages": [
+    2,
+    12
+   ],
+   "kw": "next.config.ts typescript NextConfig"
+  },
+  {
+   "id": "15-self-hosting",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "self-hosting",
+    "caching"
+   ],
+   "title": "Self-hosting improvements",
+   "text": "Configurable expireTime (formerly experimental.swrDelta), default of one year for stale-while-revalidate in ISR; custom Cache-Control values are no longer overwritten; sharp is used automatically with next start or standalone output (no need to install it manually).",
+   "pages": [
+    2,
+    13
+   ],
+   "kw": "self-hosting expireTime swrDelta cache-control stale-while-revalidate sharp standalone"
+  },
+  {
+   "id": "15-sa-security",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "server-actions",
+    "security"
+   ],
+   "title": "Server Actions security",
+   "text": "Dead code elimination (unused actions do not expose an ID in the bundle) and secure, non-deterministic IDs, recalculated periodically between builds. The text reiterates: treat Server Actions as public HTTP endpoints.",
+   "pages": [
+    2,
+    13,
+    14
+   ],
+   "kw": "server actions security unguessable ids dead code elimination public endpoint"
+  },
+  {
+   "id": "15-bundling",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "config",
+    "bundler"
+   ],
+   "title": "Bundling of external packages (stable)",
+   "text": "The App Router bundles external packages by default (opt out with serverExternalPackages); the Pages Router does not bundle by default and used transpilePackages; the new bundlePagesRouterDependencies option unifies the behavior.",
+   "pages": [
+    2,
+    14,
+    15,
+    18
+   ],
+   "kw": "serverExternalPackages bundlePagesRouterDependencies transpilePackages external packages cold start"
+  },
+  {
+   "id": "15-eslint9",
+   "v": 15,
+   "kind": "feature",
+   "thread": [
+    "eslint-lint"
+   ],
+   "title": "ESLint 9 support",
+   "text": "ESLint 8 or 9 work; when ESLint 9 is detected without the new config format, ESLINT_USE_FLAT_CONFIG=false is applied; the --ext and --ignore-path options will be removed when running next lint; eslint-plugin-react-hooks rises to 5.0.0 with new rules.",
+   "pages": [
+    2,
+    15
+   ],
+   "kw": "eslint 9 flat config ESLINT_USE_FLAT_CONFIG next lint eslint-plugin-react-hooks 5.0.0"
+  },
+  {
+   "id": "15-dev-build",
+   "v": 15,
+   "kind": "improvement",
+   "thread": [
+    "dev",
+    "build"
+   ],
+   "title": "Dev and build improvements",
+   "text": "Server Components HMR reuses fetch responses; faster static generation (no second render) and workers share the fetch cache; experimental controls staticGenerationRetryCount, staticGenerationMaxConcurrency, staticGenerationMinPagesPerWorker (the text recommends keeping the defaults).",
+   "pages": [
+    2,
+    15,
+    16,
+    17
+   ],
+   "kw": "hmr cache static generation staticGenerationRetryCount staticGenerationMaxConcurrency staticGenerationMinPagesPerWorker build time",
+   "status": "experimental"
+  },
+  {
+   "id": "15-b-node",
+   "v": 15,
+   "kind": "requirement",
+   "thread": [
+    "node-req"
+   ],
+   "title": "Minimum Node.js 18.18.0",
+   "text": "The minimum Node.js version is updated to 18.18.0.",
+   "pages": [
+    17
+   ],
+   "kw": "node 18.18.0 minimum"
+  },
+  {
+   "id": "15-b-image",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "image"
+   ],
+   "title": "next/image: squoosh, Content-Disposition, src with spaces",
+   "text": "squoosh removed in favor of sharp as an optional dependency; the default Content-Disposition becomes attachment; error when src has leading or trailing spaces.",
+   "pages": [
+    13,
+    17
+   ],
+   "kw": "next/image squoosh sharp content-disposition attachment src spaces"
+  },
+  {
+   "id": "15-b-font",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "font"
+   ],
+   "title": "next/font: external package and font-family hash",
+   "text": "Support for the external @next/font package and font-family hashing was removed.",
+   "pages": [
+    17
+   ],
+   "kw": "@next/font font-family hashing next/font"
+  },
+  {
+   "id": "15-b-force-dynamic",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "caching"
+   ],
+   "title": "force-dynamic sets no-store on fetch",
+   "text": "force-dynamic now sets no-store as the default fetch cache option.",
+   "pages": [
+    17
+   ],
+   "kw": "force-dynamic no-store fetch cache"
+  },
+  {
+   "id": "15-b-config",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "config"
+   ],
+   "title": "Config: swcMinify, missingSuspenseWithCSRBailout, outputFileTracing",
+   "text": "The behaviors of swcMinify, missingSuspenseWithCSRBailout and outputFileTracing now apply by default, and obsolete options are removed.",
+   "pages": [
+    17
+   ],
+   "kw": "swcMinify missingSuspenseWithCSRBailout outputFileTracing config default"
+  },
+  {
+   "id": "15-b-misc",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "middleware",
+    "config"
+   ],
+   "title": "Other breaking changes (middleware, Speed Insights, sitemap, revalidate)",
+   "text": "Middleware applies the react-server condition (limits imports of non-recommended React APIs); Speed Insights auto-instrumentation removed (use @vercel/speed-insights); the .xml extension was removed from dynamic sitemap routes; revalidateTag/revalidatePath during rendering throw an error; instrumentation.js and middleware.js use the vendored React packages.",
+   "pages": [
+    17
+   ],
+   "kw": "middleware react-server speed insights sitemap xml revalidateTag revalidatePath render error vendored react"
+  },
+  {
+   "id": "15-b-edge",
+   "v": 15,
+   "kind": "deprecation",
+   "thread": [
+    "edge-runtime"
+   ],
+   "title": "runtime = 'experimental-edge' in the App Router",
+   "text": "Exporting runtime = \"experimental-edge\" in the App Router is deprecated; use \"edge\" (there is a codemod).",
+   "pages": [
+    17
+   ],
+   "kw": "runtime experimental-edge edge codemod"
+  },
+  {
+   "id": "15-b-dynamic",
+   "v": 15,
+   "kind": "breaking",
+   "thread": [
+    "dynamic-import"
+   ],
+   "title": "next/dynamic: suspense and ssr:false",
+   "text": "The obsolete suspense prop was removed (in the App Router it no longer inserts an empty Suspense boundary); using ssr: false with next/dynamic in Server Components is disallowed; the worker module condition is not applied in the Edge Runtime.",
+   "pages": [
+    18
+   ],
+   "kw": "next/dynamic suspense ssr false server components worker condition edge"
+  },
+  {
+   "id": "15-imp-config",
+   "v": 15,
+   "kind": "improvement",
+   "thread": [
+    "config"
+   ],
+   "title": "Config renames/stabilizations",
+   "text": "bundlePagesExternals stable and renamed to bundlePagesRouterDependencies; serverComponentsExternalPackages stable and renamed to serverExternalPackages; outputFileTracingRoot/Includes/Excludes stable; cache handler via NEXT_CACHE_HANDLER_PATH; esmExternals supported in the App Router; experimental.allowDevelopmentBuild.",
+   "pages": [
+    18,
+    19
+   ],
+   "kw": "bundlePagesExternals serverComponentsExternalPackages outputFileTracing NEXT_CACHE_HANDLER_PATH esmExternals allowDevelopmentBuild"
+  },
+  {
+   "id": "15-imp-misc",
+   "v": 15,
+   "kind": "improvement",
+   "thread": [
+    "misc"
+   ],
+   "title": "Other improvements in 15",
+   "text": "create-next-app new projects ignore .env files by default; the Pages Router supports React 18 and 19; unstable_rethrow to rethrow internal Next errors; App Router prefetch uses the priority attribute; metadataBase fallback on Vercel; catch-all params in parallel routes; Server Action transforms disabled in the Pages Router; revalidations applied when redirecting from a Server Action; static pages respect staleTime.",
+   "pages": [
+    18,
+    19
+   ],
+   "kw": ".env create-next-app unstable_rethrow metadataBase parallel routes priority staleTime"
+  },
+  {
+   "id": "16-cache-components",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "caching",
+    "ppr"
+   ],
+   "title": "Cache Components and 'use cache'",
+   "text": "New explicit, opt-in caching model centered on the 'use cache' directive (caches pages, components and functions; cache keys generated by the compiler). All dynamic code runs at request time by default. Completes the PPR story. Enabled with cacheComponents: true in next.config.ts. The experimental.ppr flags (and the experimental_ppr export) were removed in favor of it.",
+   "pages": [
+    1,
+    2,
+    3,
+    12
+   ],
+   "kw": "cache components use cache cacheComponents ppr partial prerendering opt-in",
+   "status": "stable"
+  },
+  {
+   "id": "16-devtools-mcp",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "devtools",
+    "ai"
+   ],
+   "title": "Next.js DevTools MCP",
+   "text": "Model Context Protocol integration for AI-assisted debugging: knowledge of routing/caching/rendering, unified browser and server logs, automatic access to errors and stack traces, awareness of the active page/route.",
+   "pages": [
+    1,
+    3,
+    4
+   ],
+   "kw": "devtools mcp model context protocol ai agents debugging logs"
+  },
+  {
+   "id": "16-proxy",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "middleware-proxy"
+   ],
+   "title": "proxy.ts replaces middleware.ts",
+   "text": "proxy.ts makes the network boundary explicit and runs on the Node.js runtime. What to do: rename middleware.ts to proxy.ts and the exported function to proxy; the logic stays. middleware.ts remains available for Edge runtime cases, but is deprecated and will be removed in a future version.",
+   "pages": [
+    1,
+    4,
+    14
+   ],
+   "kw": "proxy.ts middleware.ts rename proxy node runtime edge network boundary deprecated"
+  },
+  {
+   "id": "16-logging",
+   "v": 16,
+   "kind": "improvement",
+   "thread": [
+    "dev",
+    "build"
+   ],
+   "title": "Dev and build logs with timings",
+   "text": "Request logs in dev show where the time goes (Compile: routing and compilation; Render: code execution and React rendering); the build shows the time of each step.",
+   "pages": [
+    1,
+    4,
+    5
+   ],
+   "kw": "logging dev request compile render build timing output"
+  },
+  {
+   "id": "16-turbopack",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack stable and default",
+   "text": "Stable for dev and production build and the default bundler for new projects. Text: p.1 cites 'up to 5-10x' on Fast Refresh and 2-5x on builds; p.6 cites builds 2-5x and Fast Refresh up to 10x. For apps with custom webpack: next dev --webpack and next build --webpack. More than 50% of dev sessions and 20% of production builds on Next 15.3+ already use Turbopack.",
+   "pages": [
+    1,
+    6,
+    13
+   ],
+   "kw": "turbopack stable default bundler webpack --webpack fast refresh builds",
+   "status": "stable",
+   "cmds": [
+    "next dev --webpack",
+    "next build --webpack"
+   ]
+  },
+  {
+   "id": "16-turbopack-fs",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack File System Caching (beta)",
+   "text": "Caches compiler artifacts on disk between runs, in development: experimental.turbopackFileSystemCacheForDev: true.",
+   "pages": [
+    1,
+    6,
+    7
+   ],
+   "kw": "turbopack filesystem cache disk turbopackFileSystemCacheForDev",
+   "status": "beta"
+  },
+  {
+   "id": "16-create-next-app",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "tooling"
+   ],
+   "title": "create-next-app redesigned",
+   "text": "Simplified setup flow; template with App Router by default, TypeScript, Tailwind CSS and ESLint.",
+   "pages": [
+    7
+   ],
+   "kw": "create-next-app template app router typescript tailwind eslint"
+  },
+  {
+   "id": "16-build-adapters",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "tooling"
+   ],
+   "title": "Build Adapters API (alpha)",
+   "text": "Alpha API for adapters that hook into the build process (deployment platforms can change the config or process the output): experimental.adapterPath.",
+   "pages": [
+    2,
+    7
+   ],
+   "kw": "build adapters adapterPath alpha deployment",
+   "status": "alpha"
+  },
+  {
+   "id": "16-react-compiler",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "react",
+    "compiler"
+   ],
+   "title": "React Compiler stable",
+   "text": "Built-in support is stable after React Compiler 1.0; reactCompiler left experimental. It is NOT enabled by default; dev/build become slower because it depends on Babel. Install babel-plugin-react-compiler@latest; config reactCompiler: true.",
+   "pages": [
+    1,
+    7,
+    8
+   ],
+   "kw": "react compiler stable reactCompiler babel-plugin-react-compiler memoization",
+   "status": "stable",
+   "cmds": [
+    "npm install babel-plugin-react-compiler@latest"
+   ]
+  },
+  {
+   "id": "16-routing",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "routing-prefetch"
+   ],
+   "title": "Improved routing and prefetch",
+   "text": "Layout deduplication (shared layout downloaded once, e.g. 50 links) and incremental prefetch (only what is not cached; cancels when leaving the viewport; prioritizes hover/re-entry; re-prefetches on invalidation). Declared trade-off: more requests, but far fewer bytes. No code changes.",
+   "pages": [
+    2,
+    8,
+    9,
+    13
+   ],
+   "kw": "routing prefetch layout deduplication incremental prefetching link viewport"
+  },
+  {
+   "id": "16-caching-apis",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "caching"
+   ],
+   "title": "Cache APIs: revalidateTag, updateTag, refresh",
+   "text": "revalidateTag now requires a cacheLife profile as the 2nd argument (e.g. 'max' recommended, 'hours', 'days' or { expire: N }) for stale-while-revalidate; the 1-argument form is deprecated. updateTag (new, Server Actions only) provides read-your-writes semantics. refresh (new, Server Actions only) refreshes only uncached data and complements the client's router.refresh().",
+   "pages": [
+    1,
+    2,
+    9,
+    10,
+    11
+   ],
+   "kw": "revalidateTag updateTag refresh cacheLife max hours days expire read-your-writes server actions swr"
+  },
+  {
+   "id": "16-react-19-2",
+   "v": 16,
+   "kind": "feature",
+   "thread": [
+    "react"
+   ],
+   "title": "React 19.2 and canary features",
+   "text": "The App Router uses the latest React Canary, with 19.2 features: View Transitions, useEffectEvent and Activity (hides UI with display: none while keeping state and cleaning up Effects).",
+   "pages": [
+    2,
+    11
+   ],
+   "kw": "react 19.2 view transitions useEffectEvent activity canary"
+  },
+  {
+   "id": "16-req-node",
+   "v": 16,
+   "kind": "requirement",
+   "thread": [
+    "node-req"
+   ],
+   "title": "Minimum Node.js 20.9 (LTS)",
+   "text": "Minimum Node.js version 20.9.0 (LTS); Node.js 18 is no longer supported.",
+   "pages": [
+    11
+   ],
+   "kw": "node 20.9 lts minimum node 18 dropped"
+  },
+  {
+   "id": "16-req-ts",
+   "v": 16,
+   "kind": "requirement",
+   "thread": [
+    "typescript"
+   ],
+   "title": "Minimum TypeScript 5.1.0",
+   "text": "Minimum TypeScript 5.1.0 ('TypeScript 5+' table).",
+   "pages": [
+    11
+   ],
+   "kw": "typescript 5.1.0 minimum"
+  },
+  {
+   "id": "16-req-browsers",
+   "v": 16,
+   "kind": "requirement",
+   "thread": [
+    "browsers"
+   ],
+   "title": "Browsers in 16",
+   "text": "Chrome 111+, Edge 111+, Firefox 111+, Safari 16.4+.",
+   "pages": [
+    11
+   ],
+   "kw": "browsers chrome 111 edge 111 firefox 111 safari 16.4"
+  },
+  {
+   "id": "16-r-amp",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "amp"
+   ],
+   "title": "AMP support removed",
+   "text": "All AMP APIs and configs removed (useAmp, export const config = { amp: true }).",
+   "pages": [
+    11
+   ],
+   "kw": "amp useAmp config amp removed"
+  },
+  {
+   "id": "16-r-lint",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "eslint-lint"
+   ],
+   "title": "next lint command removed",
+   "text": "Use Biome or ESLint directly; next build no longer runs lint. Codemod: npx @next/codemod@canary next-lint-to-eslint-cli .",
+   "pages": [
+    12
+   ],
+   "kw": "next lint removed biome eslint next build codemod next-lint-to-eslint-cli",
+   "cmds": [
+    "npx @next/codemod@canary next-lint-to-eslint-cli ."
+   ]
+  },
+  {
+   "id": "16-r-devindicators",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "config",
+    "dev"
+   ],
+   "title": "devIndicators options removed",
+   "text": "appIsrStatus, buildActivity and buildActivityPosition removed from the config; the indicator remains.",
+   "pages": [
+    12
+   ],
+   "kw": "devIndicators appIsrStatus buildActivity buildActivityPosition"
+  },
+  {
+   "id": "16-r-runtimeconfig",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "config"
+   ],
+   "title": "serverRuntimeConfig and publicRuntimeConfig",
+   "text": "Removed; use environment variables (.env).",
+   "pages": [
+    12
+   ],
+   "kw": "serverRuntimeConfig publicRuntimeConfig env variables"
+  },
+  {
+   "id": "16-r-experimental-flags",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "config",
+    "ppr",
+    "turbopack"
+   ],
+   "title": "Experimental flags removed/renamed",
+   "text": "experimental.turbopack moves to top-level turbopack in the config; experimental.dynamicIO renamed to cacheComponents; experimental.ppr and the experimental_ppr export removed (they evolve into Cache Components).",
+   "pages": [
+    3,
+    12
+   ],
+   "kw": "experimental.turbopack turbopack top-level dynamicIO cacheComponents experimental.ppr experimental_ppr"
+  },
+  {
+   "id": "16-r-scroll",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "routing-prefetch"
+   ],
+   "title": "Automatic scroll-behavior: smooth",
+   "text": "The automatic scroll-behavior: smooth was removed; add data-scroll-behavior=\"smooth\" to the HTML document to opt back in.",
+   "pages": [
+    12
+   ],
+   "kw": "scroll-behavior smooth data-scroll-behavior"
+  },
+  {
+   "id": "16-r-rootparams",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "async-apis"
+   ],
+   "title": "unstable_rootParams()",
+   "text": "Removed; the text says an alternative API will arrive in a minor release.",
+   "pages": [
+    12
+   ],
+   "kw": "unstable_rootParams removed alternative"
+  },
+  {
+   "id": "16-r-sync-apis",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "async-apis"
+   ],
+   "title": "Synchronous access to params, searchParams, cookies, headers, draftMode removed",
+   "text": "They must be used asynchronously (await params, await searchParams, await cookies(), await headers(), await draftMode()). The params argument of metadata image routes is async and the id coming from generateImageMetadata becomes Promise<string>.",
+   "pages": [
+    2,
+    12
+   ],
+   "kw": "sync params searchParams cookies headers draftMode await async generateImageMetadata"
+  },
+  {
+   "id": "16-r-image-local",
+   "v": 16,
+   "kind": "removal",
+   "thread": [
+    "image"
+   ],
+   "title": "next/image: local src with query string",
+   "text": "Now requires the images.localPatterns config (prevention of enumeration attacks).",
+   "pages": [
+    12
+   ],
+   "kw": "next/image local src query string localPatterns enumeration"
+  },
+  {
+   "id": "16-b-defaults",
+   "v": 16,
+   "kind": "behavior",
+   "thread": [
+    "image"
+   ],
+   "title": "New next/image defaults",
+   "text": "images.minimumCacheTTL from 60 s to 4 hours (14400 s); images.imageSizes without the 16 size; images.qualities from [1..100] to [75] (quality is adjusted to the nearest value); images.dangerouslyAllowLocalIP blocks local IPs by default; images.maximumRedirects from unlimited to 3.",
+   "pages": [
+    2,
+    13
+   ],
+   "kw": "images minimumCacheTTL imageSizes qualities dangerouslyAllowLocalIP maximumRedirects defaults"
+  },
+  {
+   "id": "16-b-eslint",
+   "v": 16,
+   "kind": "behavior",
+   "thread": [
+    "eslint-lint"
+   ],
+   "title": "@next/eslint-plugin-next in Flat Config",
+   "text": "The plugin now uses the ESLint Flat Config format by default (aligned with ESLint v10, which will drop the legacy config).",
+   "pages": [
+    13
+   ],
+   "kw": "eslint plugin flat config eslint v10"
+  },
+  {
+   "id": "16-b-turbopack-babel",
+   "v": 16,
+   "kind": "behavior",
+   "thread": [
+    "turbopack",
+    "bundler"
+   ],
+   "title": "Turbopack and Babel",
+   "text": "Turbopack enables Babel automatically if it finds a babel config (previously it exited with an error). Sass: sass-loader v16 with the modern API.",
+   "pages": [
+    13,
+    14
+   ],
+   "kw": "turbopack babel config sass-loader 16 modern sass"
+  },
+  {
+   "id": "16-b-dirs",
+   "v": 16,
+   "kind": "behavior",
+   "thread": [
+    "dev",
+    "build"
+   ],
+   "title": "Separate directories and lockfile",
+   "text": "next dev and next build use separate output directories (concurrent execution); a lockfile mechanism prevents multiple next dev/next build instances in the same project; terminal output redesigned.",
+   "pages": [
+    13
+   ],
+   "kw": "output directories lockfile concurrent terminal output"
+  },
+  {
+   "id": "16-b-parallel",
+   "v": 16,
+   "kind": "breaking",
+   "thread": [
+    "app-router"
+   ],
+   "title": "Parallel routes require default.js",
+   "text": "All parallel route slots now require explicit default.js files; the build fails without them. Create a default.js that calls notFound() or returns null for the previous behavior.",
+   "pages": [
+    13
+   ],
+   "kw": "parallel routes default.js slots notFound build fails"
+  },
+  {
+   "id": "16-d-deprecations",
+   "v": 16,
+   "kind": "deprecation",
+   "thread": [
+    "middleware-proxy",
+    "image",
+    "caching"
+   ],
+   "title": "Deprecations in 16",
+   "text": "Deprecated and to be removed: the middleware.ts file name (rename to proxy.ts); the next/legacy/image component (use next/image); the images.domains config (use images.remotePatterns); revalidateTag with one argument (use revalidateTag(tag, profile) or updateTag(tag) in Actions).",
+   "pages": [
+    14
+   ],
+   "kw": "deprecated middleware.ts next/legacy/image images.domains remotePatterns revalidateTag single argument"
+  },
+  {
+   "id": "16-add",
+   "v": 16,
+   "kind": "improvement",
+   "thread": [
+    "config",
+    "dev"
+   ],
+   "title": "Additional improvements in 16",
+   "text": "Performance optimizations in next dev and next start; native Node.js TypeScript for next.config.ts with the --experimental-next-config-strip-types flag. The text promises a more complete migration guide before the stable release (passage inconsistent with 'now available' on p.1).",
+   "pages": [
+    14
+   ],
+   "kw": "performance next dev next start --experimental-next-config-strip-types next.config.ts native typescript migration guide",
+   "cmds": [
+    "--experimental-next-config-strip-types"
+   ]
+  },
+  {
+   "id": "16-up",
+   "v": 16,
+   "kind": "upgrade",
+   "thread": [
+    "codemod",
+    "upgrade"
+   ],
+   "title": "Upgrade commands in 16",
+   "text": "Upgrade via the automated CLI or manually, or a new project; for what the codemod does not migrate, the text says to read the upgrade guide.",
+   "pages": [
+    2
+   ],
+   "kw": "upgrade codemod canary latest create-next-app",
+   "cmds": [
+    "npx @next/codemod@canary upgrade latest",
+    "npm install next@latest react@latest react-dom@latest",
+    "npx create-next-app@latest"
+   ]
+  }
+ ]
+}

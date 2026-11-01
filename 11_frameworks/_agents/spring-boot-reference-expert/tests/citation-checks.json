@@ -1,0 +1,4284 @@
+{
+ "fonte": "SBR, Spring-Boot-Reference.pdf (Spring Boot Reference Documentation 2.7.18)",
+ "convencao": "PDF page; printed = N-20",
+ "checks": [
+  {
+   "cite": "SBR p.1",
+   "contains": [
+    "version 2.7.18"
+   ],
+   "claim": "version on the cover"
+  },
+  {
+   "cite": "SBR p.22",
+   "contains": [
+    "copyright",
+    "2012-2023"
+   ],
+   "claim": "copyright 2012-2023"
+  },
+  {
+   "cite": "SBR p.27",
+   "contains": [
+    "requires java 8",
+    "compatible up to and including java 21",
+    "5.3.31"
+   ],
+   "claim": "Java 8..21 and Spring Framework 5.3.31 requirements"
+  },
+  {
+   "cite": "SBR p.27",
+   "contains": [
+    "maven",
+    "3.5+",
+    "6.8.x, 6.9.x, 7.x, and 8.x"
+   ],
+   "claim": "Maven 3.5+ and Gradle"
+  },
+  {
+   "cite": "SBR p.27-28",
+   "contains": [
+    "tomcat",
+    "9.0",
+    "jetty 9.4",
+    "jetty 10.0",
+    "undertow 2.0"
+   ],
+   "claim": "supported servlet containers"
+  },
+  {
+   "cite": "SBR p.28",
+   "contains": [
+    "maven 3.3 or above"
+   ],
+   "claim": "inconsistency: Maven 3.3 in the installation text"
+  },
+  {
+   "cite": "SBR p.550",
+   "contains": [
+    "maven 3.2"
+   ],
+   "claim": "inconsistency: Maven 3.2 for the plugin"
+  },
+  {
+   "cite": "SBR p.27",
+   "contains": [
+    "absolutely no code generation",
+    "no requirement for xml"
+   ],
+   "claim": "goals: no code generation and no XML"
+  },
+  {
+   "cite": "SBR p.31",
+   "contains": [
+    "grab",
+    "help",
+    "jar",
+    "run",
+    "test",
+    "version"
+   ],
+   "claim": "CLI completion commands"
+  },
+  {
+   "cite": "SBR p.36",
+   "contains": [
+    "@springbootconfiguration",
+    "@enableautoconfiguration",
+    "@componentscan"
+   ],
+   "claim": "@SpringBootApplication combines 3 annotations"
+  },
+  {
+   "cite": "SBR p.40",
+   "contains": [
+    "spring-boot-properties-migrator",
+    "runtime"
+   ],
+   "claim": "properties migrator"
+  },
+  {
+   "cite": "SBR p.45",
+   "contains": [
+    "thirdpartyproject-spring-boot-starter"
+   ],
+   "claim": "third-party starter name"
+  },
+  {
+   "cite": "SBR p.51",
+   "contains": [
+    "--debug",
+    "conditions report",
+    "spring.autoconfigure.exclude"
+   ],
+   "claim": "auto-config: --debug and exclude by property"
+  },
+  {
+   "cite": "SBR p.59",
+   "contains": [
+    "spring.devtools.restart.enabled",
+    "security risk"
+   ],
+   "claim": "devtools: security risk in production"
+  },
+  {
+   "cite": "SBR p.60",
+   "contains": [
+    "server.error.include-stacktrace",
+    "always",
+    "spring.thymeleaf.cache",
+    "spring.devtools.add-properties"
+   ],
+   "claim": "devtools defaults"
+  },
+  {
+   "cite": "SBR p.68",
+   "contains": [
+    "spring.devtools.remote.secret",
+    "never enable support on a production deployment"
+   ],
+   "claim": "remote devtools never in production"
+  },
+  {
+   "cite": "SBR p.72",
+   "contains": [
+    "spring.main.log-startup-info"
+   ],
+   "claim": "log-startup-info"
+  },
+  {
+   "cite": "SBR p.73-74",
+   "contains": [
+    "spring.main.lazy-initialization",
+    "delay the discovery of a problem"
+   ],
+   "claim": "lazy init delays the discovery of problems"
+  },
+  {
+   "cite": "SBR p.74-75",
+   "contains": [
+    "spring.banner.location",
+    "spring.main.banner-mode"
+   ],
+   "claim": "banner"
+  },
+  {
+   "cite": "SBR p.77",
+   "contains": [
+    "liveness",
+    "should not be based on external checks",
+    "cascading failures"
+   ],
+   "claim": "liveness must not depend on external checks"
+  },
+  {
+   "cite": "SBR p.81",
+   "contains": [
+    "applicationstartingevent",
+    "applicationenvironmentpreparedevent",
+    "applicationreadyevent",
+    "applicationfailedevent"
+   ],
+   "claim": "application events"
+  },
+  {
+   "cite": "SBR p.82",
+   "contains": [
+    "annotationconfigservletwebserverapplicationcontext",
+    "setwebapplicationtype(webapplicationtype.none)"
+   ],
+   "claim": "web application type"
+  },
+  {
+   "cite": "SBR p.86",
+   "contains": [
+    "spring.application.admin.enabled",
+    "local.server.port"
+   ],
+   "claim": "admin features"
+  },
+  {
+   "cite": "SBR p.87-88",
+   "contains": [
+    "default properties",
+    "@propertysource",
+    "random.*",
+    "spring_application_json",
+    "command line arguments",
+    "@dynamicpropertysource",
+    "@testpropertysource",
+    "devtools global settings"
+   ],
+   "claim": "order of the PropertySources"
+  },
+  {
+   "cite": "SBR p.88",
+   "contains": [
+    "properties takes precedence",
+    "profile-specific application properties outside of your packaged jar"
+   ],
+   "claim": ".properties precedes YAML; file order"
+  },
+  {
+   "cite": "SBR p.91",
+   "contains": [
+    "spring.config.name",
+    "spring.config.location",
+    "must be defined as an environment property"
+   ],
+   "claim": "config.location only as an environment property"
+  },
+  {
+   "cite": "SBR p.92",
+   "contains": [
+    "configdatalocationnotfoundexception",
+    "spring.config.on-not-found",
+    "spring.config.additional-location"
+   ],
+   "claim": "optional: and additional-location"
+  },
+  {
+   "cite": "SBR p.93",
+   "contains": [
+    "config/*/",
+    "wildcard"
+   ],
+   "claim": "wildcards"
+  },
+  {
+   "cite": "SBR p.94-95",
+   "contains": [
+    "spring.config.import",
+    "will take precedence over the file that triggered the import"
+   ],
+   "claim": "import precedes the importer"
+  },
+  {
+   "cite": "SBR p.96-98",
+   "contains": [
+    "configtree:",
+    "/run/secrets/"
+   ],
+   "claim": "configtree and Docker secrets"
+  },
+  {
+   "cite": "SBR p.99",
+   "contains": [
+    "canonical form",
+    "kebab-case"
+   ],
+   "claim": "placeholders in canonical form"
+  },
+  {
+   "cite": "SBR p.99-100",
+   "contains": [
+    "#---",
+    "spring.config.activate.on-profile",
+    "exactly three hyphen"
+   ],
+   "claim": "multi-document"
+  },
+  {
+   "cite": "SBR p.101",
+   "contains": [
+    "does not provide any built-in support for encrypting property values",
+    "spring cloud vault"
+   ],
+   "claim": "no native encryption"
+  },
+  {
+   "cite": "SBR p.103",
+   "contains": [
+    "${random.int[1024,65536]}",
+    "${random.uuid}"
+   ],
+   "claim": "random values"
+  },
+  {
+   "cite": "SBR p.115-116",
+   "contains": [
+    "kebab case",
+    "upper case format",
+    "system environment"
+   ],
+   "claim": "relaxed binding"
+  },
+  {
+   "cite": "SBR p.117",
+   "contains": [
+    "spring_main_logstartupinfo",
+    "my_service_0_other"
+   ],
+   "claim": "environment variables"
+  },
+  {
+   "cite": "SBR p.117-119",
+   "contains": [
+    "replacing the entire list"
+   ],
+   "claim": "list replaced entirely"
+  },
+  {
+   "cite": "SBR p.121-123",
+   "contains": [
+    "iso-8601",
+    "10s means 10 seconds",
+    "ns for nanoseconds",
+    "d for days"
+   ],
+   "claim": "Duration"
+  },
+  {
+   "cite": "SBR p.125",
+   "contains": [
+    "1y3d",
+    "never actually stores the number of weeks"
+   ],
+   "claim": "Period"
+  },
+  {
+   "cite": "SBR p.125-127",
+   "contains": [
+    "10mb means 10 megabytes",
+    "tb for terabytes"
+   ],
+   "claim": "DataSize"
+  },
+  {
+   "cite": "SBR p.132-133",
+   "contains": [
+    "relaxed binding",
+    "meta-data support",
+    "spel evaluation"
+   ],
+   "claim": "@ConfigurationProperties vs @Value table"
+  },
+  {
+   "cite": "SBR p.135-136",
+   "contains": [
+    "can only be used in non-profile specific documents",
+    "spring.profiles.include"
+   ],
+   "claim": "profiles: restriction of active/include"
+  },
+  {
+   "cite": "SBR p.136",
+   "contains": [
+    "spring.profiles.group.production"
+   ],
+   "claim": "profile groups"
+  },
+  {
+   "cite": "SBR p.138",
+   "contains": [
+    "logback does not have a fatal level"
+   ],
+   "claim": "FATAL mapped to ERROR"
+  },
+  {
+   "cite": "SBR p.140",
+   "contains": [
+    "logging.file.name",
+    "logging.file.path",
+    "10 mb"
+   ],
+   "claim": "log file and 10 MB rotation"
+  },
+  {
+   "cite": "SBR p.140-141",
+   "contains": [
+    "logging.logback.rollingpolicy.max-history",
+    "defaults to 7"
+   ],
+   "claim": "Logback rolling policy"
+  },
+  {
+   "cite": "SBR p.142",
+   "contains": [
+    "logging.group.tomcat",
+    "logging.register-shutdown-hook"
+   ],
+   "claim": "log groups and shutdown hook"
+  },
+  {
+   "cite": "SBR p.143",
+   "contains": [
+    "logback-spring.xml",
+    "log4j2-spring.xml",
+    "logging.properties",
+    "org.springframework.boot.logging.loggingsystem"
+   ],
+   "claim": "config files per system"
+  },
+  {
+   "cite": "SBR p.145",
+   "contains": [
+    "not use :-"
+   ],
+   "claim": "':' and not ':-' in placeholders"
+  },
+  {
+   "cite": "SBR p.153",
+   "contains": [
+    "threadpooltaskexecutor",
+    "8 core threads",
+    "spring.task.execution.pool"
+   ],
+   "claim": "task executor"
+  },
+  {
+   "cite": "SBR p.156",
+   "contains": [
+    "mock(default)",
+    "random_port",
+    "defined_port",
+    "none"
+   ],
+   "claim": "webEnvironment"
+  },
+  {
+   "cite": "SBR p.171",
+   "contains": [
+    "@mockbean cannot be used to mock the behavior of a bean that is exercised during application context refresh"
+   ],
+   "claim": "@MockBean limit"
+  },
+  {
+   "cite": "SBR p.231",
+   "contains": [
+    "org.springframework.boot.autoconfigure.autoconfiguration.imports",
+    "one class name per line"
+   ],
+   "claim": "auto-config .imports file"
+  },
+  {
+   "cite": "SBR p.241",
+   "contains": [
+    "do not start your module names with spring-boot",
+    "acme-spring-boot-starter"
+   ],
+   "claim": "starter names"
+  },
+  {
+   "cite": "SBR p.255",
+   "contains": [
+    "replaces the need for @enablewebmvc",
+    "webmvcconfigurer"
+   ],
+   "claim": "MVC auto-config replaces @EnableWebMvc"
+  },
+  {
+   "cite": "SBR p.255",
+   "contains": [
+    "@durationunit",
+    "will be ignored"
+   ],
+   "claim": "MVC ConversionService differs"
+  },
+  {
+   "cite": "SBR p.260",
+   "contains": [
+    "suffix pattern matching",
+    "disable"
+   ],
+   "claim": "suffix disabled"
+  },
+  {
+   "cite": "SBR p.262",
+   "contains": [
+    "pathpatternparser",
+    "spring.mvc.pathmatch.matching-strategy"
+   ],
+   "claim": "PathPatternParser default"
+  },
+  {
+   "cite": "SBR p.289",
+   "contains": [
+    "results in spring boot auto-configuring spring mvc, not webflux"
+   ],
+   "claim": "MVC prevails over WebFlux"
+  },
+  {
+   "cite": "SBR p.300",
+   "contains": [
+    "server.shutdown",
+    "graceful",
+    "undertow will accept",
+    "503"
+   ],
+   "claim": "graceful shutdown and Undertow 503"
+  },
+  {
+   "cite": "SBR p.301",
+   "contains": [
+    "generated security password",
+    "development use only"
+   ],
+   "claim": "generated password for dev only"
+  },
+  {
+   "cite": "SBR p.308",
+   "contains": [
+    "inmemoryoauth2authorizedclientservice",
+    "jdbcoauth2authorizedclientservice"
+   ],
+   "claim": "authorized client service"
+  },
+  {
+   "cite": "SBR p.311",
+   "contains": [
+    "does not provide support for implementing an oauth 2.0 authorization server"
+   ],
+   "claim": "Authorization Server not supported (2.7)"
+  },
+  {
+   "cite": "SBR p.325",
+   "contains": [
+    "hikaricp",
+    "tomcat pooling datasource",
+    "commons dbcp2",
+    "oracle ucp"
+   ],
+   "claim": "connection pool order"
+  },
+  {
+   "cite": "SBR p.333",
+   "contains": [
+    "spring.jpa.open-in-view",
+    "openentitymanagerinviewinterceptor"
+   ],
+   "claim": "open-in-view"
+  },
+  {
+   "cite": "SBR p.334",
+   "contains": [
+    "spring.h2.console.enabled",
+    "only intended for use during development"
+   ],
+   "claim": "H2 console dev only"
+  },
+  {
+   "cite": "SBR p.388",
+   "contains": [
+    "amqprejectanddontrequeueexception",
+    "indefinitely"
+   ],
+   "claim": "indefinite redelivery in Rabbit"
+  },
+  {
+   "cite": "SBR p.415-416",
+   "contains": [
+    "drop existing tables",
+    "spring.quartz.jdbc.initialize-schema"
+   ],
+   "claim": "Quartz drops tables"
+  },
+  {
+   "cite": "SBR p.418",
+   "contains": [
+    "spring.mail.properties[mail.smtp.connectiontimeout]",
+    "infinite"
+   ],
+   "claim": "infinite SMTP timeouts"
+  },
+  {
+   "cite": "SBR p.437",
+   "contains": [
+    "layers.idx",
+    "spring-boot-loader",
+    "snapshot-dependencies"
+   ],
+   "claim": "layers"
+  },
+  {
+   "cite": "SBR p.437-438",
+   "contains": [
+    "-djarmode=layertools",
+    "launch script"
+   ],
+   "claim": "layertools and launch script"
+  },
+  {
+   "cite": "SBR p.441-442",
+   "contains": [
+    "auditevents",
+    "threaddump",
+    "heapdump",
+    "prometheus",
+    "shutdown",
+    "disabled by default"
+   ],
+   "claim": "list of endpoints"
+  },
+  {
+   "cite": "SBR p.442",
+   "contains": [
+    "management.endpoint.shutdown.enabled",
+    "management.endpoints.enabled-by-default"
+   ],
+   "claim": "enabling endpoints"
+  },
+  {
+   "cite": "SBR p.444",
+   "contains": [
+    "management.endpoints.web.exposure.include",
+    "exclude property takes precedence"
+   ],
+   "claim": "exclude beats include"
+  },
+  {
+   "cite": "SBR p.445",
+   "contains": [
+    "only the /health endpoint is exposed over http by default"
+   ],
+   "claim": "only health by default"
+  },
+  {
+   "cite": "SBR p.448",
+   "contains": [
+    "403"
+   ],
+   "claim": "CSRF and 403"
+  },
+  {
+   "cite": "SBR p.454",
+   "contains": [
+    "management.endpoint.health.show-details",
+    "when-authorized",
+    "always"
+   ],
+   "claim": "show-details"
+  },
+  {
+   "cite": "SBR p.457-458",
+   "contains": [
+    "503",
+    "out_of_service",
+    "disables the defaults mappings"
+   ],
+   "claim": "HTTP status of health"
+  },
+  {
+   "cite": "SBR p.462-463",
+   "contains": [
+    "management.endpoint.health.probes.enabled",
+    "/livez",
+    "/readyz"
+   ],
+   "claim": "probes"
+  },
+  {
+   "cite": "SBR p.464",
+   "contains": [
+    "should not depend on health checks for external systems"
+   ],
+   "claim": "liveness without external checks"
+  },
+  {
+   "cite": "SBR p.474",
+   "contains": [
+    "spring.jmx.enabled",
+    "not enabled"
+   ],
+   "claim": "JMX off by default"
+  },
+  {
+   "cite": "SBR p.477",
+   "contains": [
+    "configuredlevel"
+   ],
+   "claim": "loggers POST"
+  },
+  {
+   "cite": "SBR p.477-478",
+   "contains": [
+    "datadog",
+    "dynatrace",
+    "wavefront",
+    "stackdriver"
+   ],
+   "claim": "monitoring systems"
+  },
+  {
+   "cite": "SBR p.495",
+   "contains": [
+    "simple",
+    "in-memory",
+    "disables itself"
+   ],
+   "claim": "Simple registry"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "auditeventrepository",
+    "inmemoryauditeventrepository"
+   ],
+   "claim": "auditing"
+  },
+  {
+   "cite": "SBR p.518",
+   "contains": [
+    "httptracerepository",
+    "last 100"
+   ],
+   "claim": "http tracing"
+  },
+  {
+   "cite": "SBR p.527-528",
+   "contains": [
+    "prestop",
+    "terminationgraceperiodseconds"
+   ],
+   "claim": "K8s preStop and grace period"
+  },
+  {
+   "cite": "SBR p.536",
+   "contains": [
+    "run_as_user",
+    "never run a spring boot application as root"
+   ],
+   "claim": "init.d do not run as root"
+  },
+  {
+   "cite": "SBR p.556",
+   "contains": [
+    "failureanalyzer",
+    "meta-inf/spring.factories"
+   ],
+   "claim": "FailureAnalyzer"
+  },
+  {
+   "cite": "SBR p.571",
+   "contains": [
+    "server.port=-1",
+    "server.port=0"
+   ],
+   "claim": "port -1 and 0"
+  },
+  {
+   "cite": "SBR p.573",
+   "contains": [
+    "2048 bytes",
+    "server.compression.min-response-size"
+   ],
+   "claim": "compression 2048 bytes"
+  },
+  {
+   "cite": "SBR p.580-581",
+   "contains": [
+    "server.forward-headers-strategy",
+    "native",
+    "framework"
+   ],
+   "claim": "forward headers"
+  },
+  {
+   "cite": "SBR p.591",
+   "contains": [
+    "1mb per file",
+    "10mb"
+   ],
+   "claim": "multipart default"
+  },
+  {
+   "cite": "SBR p.606",
+   "contains": [
+    "jdbcurl",
+    "hikari"
+   ],
+   "claim": "Hikari uses jdbcUrl"
+  },
+  {
+   "cite": "SBR p.617",
+   "contains": [
+    "create-drop",
+    "embedded database",
+    "schema manager"
+   ],
+   "claim": "ddl-auto default"
+  },
+  {
+   "cite": "SBR p.618",
+   "contains": [
+    "spring.jpa.properties.hibernate.jdbc.batch_size",
+    "relaxed binding"
+   ],
+   "claim": "jpa.properties without relaxed binding"
+  },
+  {
+   "cite": "SBR p.629-630",
+   "contains": [
+    "spring.sql.init.mode",
+    "schema.sql",
+    "data.sql"
+   ],
+   "claim": "SQL scripts"
+  },
+  {
+   "cite": "SBR p.630",
+   "contains": [
+    "not recommended",
+    "support will be removed"
+   ],
+   "claim": "do not mix scripts with Flyway/Liquibase"
+  },
+  {
+   "cite": "SBR p.638",
+   "contains": [
+    "without --",
+    "someparameter=somevalue"
+   ],
+   "claim": "Batch args"
+  },
+  {
+   "cite": "SBR p.639",
+   "contains": [
+    "password",
+    "secret",
+    "credentials",
+    "******"
+   ],
+   "claim": "default sanitization"
+  },
+  {
+   "cite": "SBR p.639-640",
+   "contains": [
+    "keys-to-sanitize",
+    "additional-keys-to-sanitize",
+    "sanitizingfunction"
+   ],
+   "claim": "customizable sanitization"
+  },
+  {
+   "cite": "SBR p.655",
+   "contains": [
+    "classifier",
+    "boot-inf/classes"
+   ],
+   "claim": "a Boot app does not work as a dependency"
+  },
+  {
+   "cite": "SBR p.659",
+   "contains": [
+    "webflux",
+    "war deployment is not supported"
+   ],
+   "claim": "WebFlux without war"
+  },
+  {
+   "cite": "SBR p.668",
+   "contains": [
+    "exhaustive list"
+   ],
+   "claim": "Appendix A not exhaustive"
+  },
+  {
+   "cite": "SBR p.688",
+   "contains": [
+    "spring.datasource.dbcp2.max-wait-"
+   ],
+   "claim": "truncated cell in Appendix A"
+  },
+  {
+   "cite": "SBR p.689",
+   "contains": [
+    "spring.datasource.generate-unique-name",
+    "true"
+   ],
+   "claim": "generate-unique-name default true"
+  },
+  {
+   "cite": "SBR p.757",
+   "contains": [
+    "server.port",
+    "8080"
+   ],
+   "claim": "server.port default 8080"
+  },
+  {
+   "cite": "SBR p.759",
+   "contains": [
+    "server.shutdown",
+    "immediate"
+   ],
+   "claim": "server.shutdown default immediate"
+  },
+  {
+   "cite": "SBR p.775",
+   "contains": [
+    "management.endpoints.web.exposure.include",
+    "health"
+   ],
+   "claim": "exposure include default health"
+  },
+  {
+   "cite": "SBR p.801",
+   "contains": [
+    "groups",
+    "properties",
+    "hints"
+   ],
+   "claim": "metadata: groups/properties/hints"
+  },
+  {
+   "cite": "SBR p.807",
+   "contains": [
+    "class-reference",
+    "handle-as",
+    "logger-name",
+    "spring-bean-reference",
+    "spring-profile-name"
+   ],
+   "claim": "hints providers"
+  },
+  {
+   "cite": "SBR p.843",
+   "contains": [
+    "zipentry.stored",
+    "getcontextclassloader"
+   ],
+   "claim": "executable jar restrictions"
+  },
+  {
+   "cite": "SBR p.841",
+   "contains": [
+    "jarlauncher",
+    "warlauncher",
+    "propertieslauncher"
+   ],
+   "claim": "launchers"
+  },
+  {
+   "cite": "SBR p.844",
+   "contains": [
+    "jackson-databind",
+    "2.13.5"
+   ],
+   "claim": "Jackson 2.13.5 managed"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "graalvm"
+   ],
+   "claim": "the text does not cover GraalVM"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "native image"
+   ],
+   "claim": "the text has no native image chapter"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "spring boot 3"
+   ],
+   "claim": "the text does not mention Spring Boot 3"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "opentelemetry"
+   ],
+   "claim": "no OpenTelemetry"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "micrometer tracing"
+   ],
+   "claim": "no Micrometer Tracing"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "observation"
+   ],
+   "claim": "no Observation API"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "docker compose"
+   ],
+   "claim": "no Docker Compose"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "@serviceconnection"
+   ],
+   "claim": "no @ServiceConnection"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "virtual thread"
+   ],
+   "claim": "no virtual threads"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "openapi"
+   ],
+   "claim": "no OpenAPI"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "swagger"
+   ],
+   "claim": "no Swagger"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "grpc"
+   ],
+   "claim": "no gRPC"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "java 17"
+   ],
+   "claim": "no Java 17 as a requirement"
+  },
+  {
+   "cite": "SBR p.21-667",
+   "absent": [
+    "jakarta"
+   ],
+   "claim": "body without the jakarta namespace (only Appendix F coordinates)"
+  },
+  {
+   "cite": "SBR p.101",
+   "absent": [
+    "jasypt"
+   ],
+   "claim": "property encryption: the book does not mention Jasypt"
+  },
+  {
+   "cite": "SBR p.372-396",
+   "absent": [
+    "pulsar"
+   ],
+   "claim": "messaging: no Pulsar"
+  },
+  {
+   "cite": "SBR p.402-435",
+   "absent": [
+    "resilience4j",
+    "hystrix"
+   ],
+   "claim": "IO: no circuit breakers"
+  },
+  {
+   "cite": "SBR p.668-799",
+   "absent": [
+    "spring.ssl.bundle"
+   ],
+   "claim": "Appendix A: no SSL bundles"
+  },
+  {
+   "cite": "SBR p.524-540",
+   "absent": [
+    "lambda"
+   ],
+   "claim": "deploy: no AWS Lambda"
+  },
+  {
+   "cite": "SBR p.436-439",
+   "absent": [
+    "graalvm",
+    "native-image"
+   ],
+   "claim": "container images: no native image"
+  },
+  {
+   "cite": "SBR p.477-498",
+   "absent": [
+    "tracing"
+   ],
+   "claim": "metrics: no Micrometer Tracing in this section"
+  },
+  {
+   "cite": "SBR p.311",
+   "absent": [
+    "spring-authorization-server"
+   ],
+   "claim": "Authorization Server: new project not mentioned"
+  },
+  {
+   "cite": "SBR p.156",
+   "contains": [
+    "mock",
+    "embedded servers are not started",
+    "falls back to creating a regular non-web",
+    "@autoconfiguremockmvc",
+    "@autoconfigurewebtestclient"
+   ],
+   "claim": "webEnvironment MOCK: no embedded server, non-web fallback, MockMvc/WebTestClient"
+  },
+  {
+   "cite": "SBR p.156",
+   "contains": [
+    "random_port",
+    "listen on a random port",
+    "defined_port",
+    "default port of 8080",
+    "does not provide any web environment"
+   ],
+   "claim": "webEnvironment RANDOM_PORT/DEFINED_PORT/NONE"
+  },
+  {
+   "cite": "SBR p.157",
+   "contains": [
+    "management server on a separate random port",
+    "spring.main.web-application-type"
+   ],
+   "claim": "RANDOM_PORT also starts management; reactive type"
+  },
+  {
+   "cite": "SBR p.96-98",
+   "contains": [
+    "configtree:",
+    "optional:configtree:/etc/config/"
+   ],
+   "claim": "configtree"
+  },
+  {
+   "cite": "SBR p.98",
+   "contains": [
+    "docker secrets",
+    "/run/secrets/"
+   ],
+   "claim": "Docker secrets via configtree"
+  },
+  {
+   "cite": "SBR p.101",
+   "contains": [
+    "does not provide any built-in support for encrypting",
+    "spring cloud vault"
+   ],
+   "claim": "p101: no native encryption + Vault"
+  },
+  {
+   "cite": "SBR p.580-581",
+   "contains": [
+    "server.forward-headers-strategy",
+    "native"
+   ],
+   "claim": "proxy: forward-headers-strategy"
+  },
+  {
+   "cite": "SBR p.581",
+   "contains": [
+    "redirect-context-root",
+    "false",
+    "default"
+   ],
+   "claim": "proxy: redirect-context-root and NATIVE default on K8s"
+  },
+  {
+   "cite": "SBR p.582",
+   "contains": [
+    "internal-proxies",
+    "empty",
+    "forward-headers-strategy=none"
+   ],
+   "claim": "proxy: empty internal-proxies"
+  },
+  {
+   "cite": "SBR p.639",
+   "contains": [
+    "sanitized",
+    "******",
+    "password",
+    "secret",
+    "token",
+    "credentials"
+   ],
+   "claim": "env/configprops mask sensitive values"
+  },
+  {
+   "cite": "SBR p.463",
+   "contains": [
+    "livenessprobe",
+    "readinessprobe",
+    "/actuator/health/liveness",
+    "/actuator/health/readiness",
+    "httpget",
+    "<actuator-port>",
+    "management.endpoint.health.probes.add-additional-paths=true"
+   ],
+   "claim": "K8s probes manifest"
+  },
+  {
+   "cite": "SBR p.528",
+   "contains": [
+    "prestop",
+    "sleep 10",
+    "terminationgraceperiodseconds",
+    "sigterm"
+   ],
+   "claim": "preStop with sleep and terminationGracePeriodSeconds"
+  },
+  {
+   "cite": "SBR p.565",
+   "contains": [
+    "org.springframework.boot.context.config",
+    "trace"
+   ],
+   "claim": "trace log of the config data package"
+  },
+  {
+   "cite": "SBR p.566",
+   "contains": [
+    "-dspring.profiles.active=production",
+    "spring_profiles_active"
+   ],
+   "claim": "activate a profile by -D and variable (17.2.6)"
+  },
+  {
+   "cite": "SBR p.672",
+   "contains": [
+    "timeout-per-shutdown-phase",
+    "30s"
+   ],
+   "claim": "Appendix A: 30s per-phase timeout"
+  },
+  {
+   "cite": "SBR p.591",
+   "contains": [
+    "1mb per file",
+    "10mb",
+    "spring.servlet.multipart.max-file-size"
+   ],
+   "claim": "multipart: default limits"
+  },
+  {
+   "cite": "SBR p.418",
+   "contains": [
+    "default timeout values are infinite",
+    "mail.smtp.connectiontimeout"
+   ],
+   "claim": "SMTP: infinite default timeouts"
+  },
+  {
+   "cite": "SBR p.603",
+   "contains": [
+    "log4j2.yaml",
+    "log4j2.json",
+    "logging.log4j2.config.override"
+   ],
+   "claim": "Log4j 2: YAML/JSON are configuration file formats"
+  },
+  {
+   "cite": "SBR p.60",
+   "contains": [
+    "server.error.include-stacktrace",
+    "always"
+   ],
+   "claim": "devtools applies include-* = always"
+  },
+  {
+   "cite": "SBR p.471",
+   "contains": [
+    "management.server.port"
+   ],
+   "claim": "management port"
+  },
+  {
+   "cite": "SBR p.101",
+   "absent": [
+    "configtree",
+    "docker secrets"
+   ],
+   "claim": "p101 does not deal with configtree/Docker secrets (they are on p96-98)"
+  },
+  {
+   "cite": "SBR p.76-77",
+   "absent": [
+    "configtree"
+   ],
+   "claim": "p76-77 is not about configtree (old wrong citation)"
+  },
+  {
+   "cite": "SBR p.560-561",
+   "absent": [
+    "forward-headers-strategy"
+   ],
+   "claim": "p560-561 is not proxy (it is property expansion; proxy = p580-582)"
+  },
+  {
+   "cite": "SBR p.602-603",
+   "absent": [
+    "elastic common schema",
+    "logstash",
+    "jsontemplatelayout"
+   ],
+   "claim": "the book does not deal with JSON/ECS log output layout"
+  },
+  {
+   "cite": "SBR p.243",
+   "absent": [
+    "include-stacktrace"
+   ],
+   "claim": "p243 does not deal with server.error.include-*"
+  },
+  {
+   "cite": "SBR p.134",
+   "absent": [
+    "spring_profiles_active"
+   ],
+   "claim": "p134 does not carry SPRING_PROFILES_ACTIVE (it is on p566)"
+  },
+  {
+   "cite": "SBR p.451",
+   "absent": [
+    "management.server.port"
+   ],
+   "claim": "p451 does not deal with the management port"
+  },
+  {
+   "cite": "SBR p.190",
+   "contains": [
+    "scans for @entity",
+    "embedded database is available",
+    "regular @component and @configurationproperties beans are not scanned",
+    "@enableconfigurationproperties"
+   ],
+   "claim": "R2-D1: @DataJpaTest scans @Entity, configures an embedded database, does not scan @Component"
+  },
+  {
+   "cite": "SBR p.190-191",
+   "contains": [
+    "propagation.not_supported",
+    "@transactional",
+    "roll back at the end of each test"
+   ],
+   "claim": "R2-D1: rollback by default and NOT_SUPPORTED turns it off"
+  },
+  {
+   "cite": "SBR p.191",
+   "contains": [
+    "testentitymanager",
+    "@autoconfiguretestentitymanager",
+    "jdbctemplate",
+    "running in a transaction"
+   ],
+   "claim": "R2-D1: TestEntityManager, JdbcTemplate and transaction requirement"
+  },
+  {
+   "cite": "SBR p.193",
+   "contains": [
+    "@autoconfiguretestdatabase",
+    "replace.none",
+    "real database"
+   ],
+   "claim": "R2-D1: Replace.NONE uses a real database"
+  },
+  {
+   "cite": "SBR p.193-194",
+   "contains": [
+    "@jdbctest",
+    "abstractjdbcconfiguration",
+    "data jdbc tests are transactional"
+   ],
+   "claim": "R2: @JdbcTest and @DataJdbcTest"
+  },
+  {
+   "cite": "SBR p.194-195",
+   "contains": [
+    "data r2dbc tests are not transactional",
+    "r2dbcentitytemplate"
+   ],
+   "claim": "R2: @DataR2dbcTest is not transactional"
+  },
+  {
+   "cite": "SBR p.175",
+   "contains": [
+    "handlerinterceptor",
+    "webmvcregistrations",
+    "handlermethodargumentresolver",
+    "genericconverter"
+   ],
+   "claim": "R2: types scanned by @WebMvcTest"
+  },
+  {
+   "cite": "SBR p.179",
+   "contains": [
+    "webdriver",
+    "@scope(\"singleton\")",
+    "websecurityconfigurer"
+   ],
+   "claim": "R2: webDriver scope and WebSecurityConfigurer in @WebMvcTest"
+  },
+  {
+   "cite": "SBR p.182",
+   "contains": [
+    "routerfunction",
+    "securitywebfilterchain",
+    "@import"
+   ],
+   "claim": "R2: @WebFluxTest does not detect RouterFunction or SecurityWebFilterChain"
+  },
+  {
+   "cite": "SBR p.197",
+   "contains": [
+    "embeddedmongoautoconfiguration",
+    "@datamongotest"
+   ],
+   "claim": "R2: embedded Mongo exclusion"
+  },
+  {
+   "cite": "SBR p.199",
+   "contains": [
+    "not supported with reactive",
+    "@redishash"
+   ],
+   "claim": "R2: reactive Neo4j without test transaction; @RedisHash"
+  },
+  {
+   "cite": "SBR p.172",
+   "contains": [
+    "excludeautoconfiguration",
+    "@importautoconfiguration#exclude",
+    "not supported"
+   ],
+   "claim": "R2: excluding slice auto-config; do not combine slices"
+  },
+  {
+   "cite": "SBR p.219",
+   "contains": [
+    "org.springframework.boot.test.autoconfigure.jdbc.jdbctest.imports",
+    "not use the regular @import"
+   ],
+   "claim": "R2: slice .imports and warning about @Import"
+  },
+  {
+   "cite": "SBR p.223",
+   "contains": [
+    "spock-spring",
+    "@springbootconfiguration"
+   ],
+   "claim": "R2: Spock and @SpringBootConfiguration in the test hierarchy"
+  },
+  {
+   "cite": "SBR p.325",
+   "contains": [
+    "we prefer hikaricp for its performance and concurrency",
+    "oracle ucp",
+    "driver-class-name",
+    "has to be loadable"
+   ],
+   "claim": "R2-D4: Hikari rationale and loadable driver"
+  },
+  {
+   "cite": "SBR p.326",
+   "contains": [
+    "spring-boot-starter-jdbc",
+    "spring-boot-starter-data-jpa",
+    "spring.datasource.type",
+    "tomcat-jdbc",
+    "tomcat container"
+   ],
+   "claim": "R2-D4: Hikari via the starters and spring.datasource.type in a Tomcat container"
+  },
+  {
+   "cite": "SBR p.326",
+   "contains": [
+    "simpledriverdatasource",
+    "pgsimpledatasource",
+    "c3p0",
+    "datasourcebuilder"
+   ],
+   "claim": "R2-D4: pools supported by DataSourceBuilder"
+  },
+  {
+   "cite": "SBR p.328",
+   "contains": [
+    "namedparameterjdbctemplate",
+    "no primary candidate"
+   ],
+   "claim": "R2: NamedParameterJdbcTemplate not auto-configured without a primary"
+  },
+  {
+   "cite": "SBR p.333",
+   "contains": [
+    "spring.jpa.generate-ddl",
+    "hibernate.hbm2ddl.auto",
+    "globally_quoted_identifiers"
+   ],
+   "claim": "R2: generate-ddl not used with Hibernate"
+  },
+  {
+   "cite": "SBR p.342",
+   "contains": [
+    "@import(datasourceautoconfiguration.class)",
+    "spring.r2dbc.generate-unique-name"
+   ],
+   "claim": "R2: R2DBC and JDBC DataSource"
+  },
+  {
+   "cite": "SBR p.348",
+   "contains": [
+    "mongoclientsettings",
+    "will be ignored"
+   ],
+   "claim": "R2: own MongoClientSettings ignores spring.data.mongodb"
+  },
+  {
+   "cite": "SBR p.384",
+   "contains": [
+    "retries are disabled by default",
+    "rabbitretrytemplatecustomizer"
+   ],
+   "claim": "R2-D2: template retries disabled"
+  },
+  {
+   "cite": "SBR p.388",
+   "contains": [
+    "rejectanddontrequeuerecoverer",
+    "dead-letter exchange",
+    "retries are disabled",
+    "defaultrequeuerejected",
+    "amqprejectanddontrequeueexception"
+   ],
+   "claim": "R2-D2: default recoverer, DLX if broker configured, indefinite redelivery"
+  },
+  {
+   "cite": "SBR p.734",
+   "contains": [
+    "spring.rabbitmq.listener.simple.retry.max-attempts",
+    "spring.rabbitmq.listener.simple.retry.max-interval",
+    "spring.rabbitmq.listener.simple.retry.enabled",
+    "spring.rabbitmq.listener.simple.default-requeue-rejected"
+   ],
+   "claim": "R2-D2: listener.simple.* keys in Appendix A"
+  },
+  {
+   "cite": "SBR p.735",
+   "contains": [
+    "spring.rabbitmq.listener.type",
+    "spring.rabbitmq.listener.simple.retry.stateless",
+    "spring.rabbitmq.listener.simple.retry.multiplier"
+   ],
+   "claim": "R2-D2: container type and retry.* in Appendix A"
+  },
+  {
+   "cite": "SBR p.733",
+   "contains": [
+    "spring.rabbitmq.listener.direct.default-requeue-rejected",
+    "spring.rabbitmq.listener.direct.retry.max-attempts"
+   ],
+   "claim": "R2-D2: listener.direct.*"
+  },
+  {
+   "cite": "SBR p.390",
+   "contains": [
+    "chainedkafkatransactionmanager",
+    "@primary",
+    "commonerrorhandler",
+    "afterrollbackprocessor"
+   ],
+   "claim": "R2: beans associated with the Kafka container"
+  },
+  {
+   "cite": "SBR p.395-396",
+   "contains": [
+    "bootstrapserversproperty",
+    "spring.embedded.kafka.brokers"
+   ],
+   "claim": "R2: embedded Kafka broker mapping"
+  },
+  {
+   "cite": "SBR p.494",
+   "contains": [
+    "scrape_configs",
+    "metrics_path",
+    "/actuator/prometheus",
+    "static_configs",
+    "must be exposed"
+   ],
+   "claim": "R2-D3: Prometheus scrape_config and endpoint exposure"
+  },
+  {
+   "cite": "SBR p.494",
+   "contains": [
+    "spancontextsupplier",
+    "openmetrics",
+    "simpleclient_pushgateway",
+    "prometheuspushgatewaymanager",
+    "management.metrics.export.prometheus.pushgateway.enabled"
+   ],
+   "claim": "R2-D3: exemplars and Pushgateway"
+  },
+  {
+   "cite": "SBR p.501-503",
+   "contains": [
+    "jerseytagsprovider",
+    "restTemplateexchangetagsprovider",
+    "cachemetricsregistrar"
+   ],
+   "claim": "R2: tag providers and cache registration"
+  },
+  {
+   "cite": "SBR p.504",
+   "contains": [
+    "datasourcepoolmetadataprovider",
+    "hikaricp",
+    "hibernate.generate_statistics"
+   ],
+   "claim": "R2: DataSource and Hibernate metrics"
+  },
+  {
+   "cite": "SBR p.428",
+   "contains": [
+    "spring-boot-starter-webflux",
+    "reactor-netty"
+   ],
+   "claim": "R2-D5: webflux starter depends on Reactor Netty"
+  },
+  {
+   "cite": "SBR p.569",
+   "contains": [
+    "spring-boot-starter-reactor-netty"
+   ],
+   "claim": "R2-D5: Netty default in reactive"
+  },
+  {
+   "cite": "SBR p.575",
+   "contains": [
+    "using by default reactor netty as a server"
+   ],
+   "claim": "R2-D5: Netty default"
+  },
+  {
+   "cite": "SBR p.659",
+   "contains": [
+    "deployed by default on an embedded reactor netty server"
+   ],
+   "claim": "R2-D5: war not supported in WebFlux"
+  },
+  {
+   "cite": "SBR p.464",
+   "contains": [
+    "circuit breaker"
+   ],
+   "claim": "R2-D6: circuit breaker only in passing"
+  },
+  {
+   "cite": "SBR p.59",
+   "contains": [
+    "repackaged archives do not contain devtools by default",
+    "excludedevtools",
+    "developmentonly"
+   ],
+   "claim": "R2-D7: devtools outside the repackaged jar"
+  },
+  {
+   "cite": "SBR p.68",
+   "contains": [
+    "excludedevtools",
+    "spring.devtools.remote.secret",
+    "never enable support on a production deployment"
+   ],
+   "claim": "R2-D7: remote devtools"
+  },
+  {
+   "cite": "SBR p.413-414",
+   "contains": [
+    "spring.cache.cache-names",
+    "no-op",
+    "@autoconfigurecache"
+   ],
+   "claim": "R2: cache none and slices"
+  },
+  {
+   "cite": "SBR p.416",
+   "contains": [
+    "quartzdatasource",
+    "quartztransactionmanager",
+    "drop existing tables"
+   ],
+   "claim": "R2: Quartz"
+  },
+  {
+   "cite": "SBR p.419-420",
+   "contains": [
+    "@validated",
+    "messagesource"
+   ],
+   "claim": "R2: method validation and MessageSource"
+  },
+  {
+   "cite": "SBR p.302",
+   "contains": [
+    "webfilterchainproxy",
+    "reactiveuserdetailsservice",
+    "reactiveauthenticationmanager"
+   ],
+   "claim": "R2: turning security off in WebFlux"
+  },
+  {
+   "cite": "SBR p.319",
+   "contains": [
+    "webinterceptor",
+    "@order of 0"
+   ],
+   "claim": "R2: GraphQL endpoint as an ordered RouterFunction"
+  },
+  {
+   "cite": "SBR p.297",
+   "contains": [
+    "metricswebfilter",
+    "httptracewebfilter",
+    "webfilterchainproxy"
+   ],
+   "claim": "R2: order of Boot's WebFilters"
+  },
+  {
+   "cite": "SBR p.60",
+   "contains": [
+    "server.error.include-stacktrace",
+    "spring.devtools.add-properties"
+   ],
+   "claim": "R2: devtools development defaults"
+  },
+  {
+   "cite": "SBR p.154-228",
+   "absent": [
+    "@rollback",
+    "@commit"
+   ],
+   "claim": "R2-D1: Spring Test Rollback/Commit are not in the Reference (Boot tests)"
+  },
+  {
+   "cite": "SBR p.436-439",
+   "absent": [
+    "build-image",
+    "bootbuildimage"
+   ],
+   "claim": "R2: the Reference does not carry the build-image goal/task"
+  },
+  {
+   "cite": "SBR p.550",
+   "absent": [
+    "build-image",
+    "bootbuildimage"
+   ],
+   "claim": "R2: the plugins chapter only refers to another document"
+  },
+  {
+   "cite": "SBR p.647-650",
+   "absent": [
+    "postgresql",
+    "postgres"
+   ],
+   "claim": "R2-D1: the Reference's Testcontainers does not use Postgres"
+  },
+  {
+   "cite": "SBR p.388",
+   "absent": [
+    "x-dead-letter-exchange",
+    "dead-letter queue"
+   ],
+   "claim": "R2-D2: the Reference does not show how to declare DLX/DLQ"
+  },
+  {
+   "cite": "SBR p.494",
+   "absent": [
+    "grafana",
+    "promql"
+   ],
+   "claim": "R2-D3: Grafana/PromQL absent"
+  },
+  {
+   "cite": "SBR p.464",
+   "absent": [
+    "resilience4j",
+    "hystrix"
+   ],
+   "claim": "R2-D6: no Resilience4j"
+  },
+  {
+   "cite": "SBR p.724",
+   "absent": [
+    "earliest",
+    "latest"
+   ],
+   "claim": "R2: auto-offset-reset without semantics"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "kraft",
+    "resilience4j",
+    "grafana",
+    "docker compose"
+   ],
+   "claim": "R2: terms absent from the whole Reference"
+  },
+  {
+   "cite": "SBR p.518",
+   "contains": [
+    "zipkin",
+    "sleuth"
+   ],
+   "claim": "R2: Sleuth/Zipkin only in passing (curated pointer)"
+  },
+  {
+   "cite": "SBR p.96",
+   "contains": [
+    "zookeeper"
+   ],
+   "claim": "R2: ZooKeeper as an external config data source (curated pointer)"
+  },
+  {
+   "cite": "SBR p.724",
+   "contains": [
+    "auto-offset-reset"
+   ],
+   "claim": "R2: auto-offset-reset exists in Appendix A (curated pointer)"
+  },
+  {
+   "cite": "SBR p.223",
+   "contains": [
+    "spock"
+   ],
+   "claim": "R2: Spock (curated pointer)"
+  },
+  {
+   "cite": "SBR p.203",
+   "contains": [
+    "@autoconfigurerestdocs"
+   ],
+   "claim": "R2: REST Docs (curated pointer)"
+  },
+  {
+   "cite": "SBR p.344-345",
+   "contains": [
+    "geode"
+   ],
+   "claim": "R2: Geode only cited (curated pointer)"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "sum of the statistics of all meters that match",
+    "code cache",
+    "compressed class space",
+    "metaspace"
+   ],
+   "claim": "R4 D1: value = sum of the matching meters; nonheap = 3 areas"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "tag=id:metaspace",
+    "jvm.memory.max?tag=area:nonheap&tag=id:metaspace"
+   ],
+   "claim": "R4 D1: &tag=id:Metaspace filters only Metaspace"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "not available by default and must be exposed"
+   ],
+   "claim": "R4 D1: metrics endpoint not exposed by default"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "jvm_memory_max",
+    "jvm.memory.max"
+   ],
+   "claim": "R4 D1: code name x normalized name (Prometheus)"
+  },
+  {
+   "cite": "SBR p.517",
+   "contains": [
+    "13.6.6. metrics endpoint",
+    "13.7. auditing"
+   ],
+   "claim": "R4 D1: p.517 carries 13.6.6 at the top and 13.7 in the middle (lookup --page)"
+  },
+  {
+   "cite": "SBR p.574",
+   "contains": [
+    "pkcs#8",
+    "-----begin private key-----",
+    "-----begin encrypted private key-----"
+   ],
+   "claim": "R4 D2: PKCS#8 preferred"
+  },
+  {
+   "cite": "SBR p.574",
+   "contains": [
+    "pkcs#1",
+    "-----begin rsa private key-----",
+    "openssl pkcs8 -topk8 -nocrypt -in"
+   ],
+   "claim": "R4 D2: PKCS#1 converted with openssl"
+  },
+  {
+   "cite": "SBR p.574",
+   "contains": [
+    "server.ssl.certificate-private-key",
+    "server.ssl.trust-certificate"
+   ],
+   "claim": "R4 D2: PEM properties"
+  },
+  {
+   "cite": "SBR p.574",
+   "contains": [
+    "h2 (http/2 over tls)",
+    "h2c (http/2 over tcp)",
+    "to use h2, ssl must also be enabled"
+   ],
+   "claim": "R4 D2: h2 x h2c"
+  },
+  {
+   "cite": "SBR p.574-575",
+   "contains": [
+    "libtcnative",
+    "-djava.library.path=/usr/local/opt/tomcat-native/lib",
+    "jdk 9 or later"
+   ],
+   "claim": "R4 D2: Tomcat on JDK 8 requires libtcnative"
+  },
+  {
+   "cite": "SBR p.575",
+   "contains": [
+    "does not support alpn",
+    "this error is not fatal",
+    "http/1.1 ssl support"
+   ],
+   "claim": "R4 D2: ALPN error not fatal"
+  },
+  {
+   "cite": "SBR p.575",
+   "contains": [
+    "org.eclipse.jetty.http2:http2-server",
+    "jetty-alpn-java-server",
+    "jetty-alpn-openjdk8-server",
+    "jetty-alpn-conscrypt-server"
+   ],
+   "claim": "R4 D2: Jetty dependencies for h2"
+  },
+  {
+   "cite": "SBR p.575",
+   "contains": [
+    "netty-tcnative-boringssl-static",
+    "undertow 1.4.0+"
+   ],
+   "claim": "R4 D2: native Reactor Netty and Undertow"
+  },
+  {
+   "cite": "SBR p.573",
+   "contains": [
+    "spring boot does not support the configuration of both an http"
+   ],
+   "claim": "R4 D2: HTTP and HTTPS together require code (p.573)"
+  },
+  {
+   "cite": "SBR p.574",
+   "contains": [
+    "connector and an https connector through application.properties",
+    "if you want to have both, you need to configure one of them programmatically"
+   ],
+   "claim": "R4 D2: HTTP and HTTPS together require code (p.574)"
+  },
+  {
+   "cite": "SBR p.582",
+   "contains": [
+    "addadditionaltomcatconnectors",
+    "http11nioprotocol"
+   ],
+   "claim": "R4: multiple connectors on Tomcat"
+  },
+  {
+   "cite": "SBR p.581",
+   "contains": [
+    "server.tomcat.redirect-context-root",
+    "should be set to false",
+    "x-forwarded-proto header to be honored before any redirects"
+   ],
+   "claim": "R4 D4: redirect-context-root=false"
+  },
+  {
+   "cite": "SBR p.580",
+   "contains": [
+    "setting server.forward-headers-strategy to native is enough",
+    "x-forwarded-for and x-forwarded-proto"
+   ],
+   "claim": "R4 D4: NATIVE is enough with X-Forwarded-For/Proto"
+  },
+  {
+   "cite": "SBR p.581",
+   "contains": [
+    "forwardedheaderfilter",
+    "forwardedheadertransformer",
+    "framework",
+    "defaults to native"
+   ],
+   "claim": "R4 D4: FRAMEWORK and NATIVE default"
+  },
+  {
+   "cite": "SBR p.582",
+   "contains": [
+    "you can trust all proxies by setting the internal-proxies to empty",
+    "do not do so in production",
+    "server.forward-headers-strategy=none"
+   ],
+   "claim": "R4 D4: empty internal-proxies and NONE"
+  },
+  {
+   "cite": "SBR p.643",
+   "contains": [
+    "the presence of either of those properties switches on the valve",
+    "webserverfactorycustomizer"
+   ],
+   "claim": "R4 D4: any remoteip property turns on the valve"
+  },
+  {
+   "cite": "SBR p.643-644",
+   "contains": [
+    "requireschannel",
+    "requiressecure"
+   ],
+   "claim": "R4 D4: HTTPS mandatory in Spring Security"
+  },
+  {
+   "cite": "SBR p.764",
+   "contains": [
+    "0:0:0:0:0:0:0:1|::1",
+    "172\\\\.3[0-",
+    "169\\\\.254"
+   ],
+   "claim": "R4: internal-proxies default (private and loopback)"
+  },
+  {
+   "cite": "SBR p.763",
+   "contains": [
+    "redirect-context-root",
+    "when using ssl terminated at a proxy, this property should be set to false"
+   ],
+   "claim": "R4 D4: description in Appendix A"
+  },
+  {
+   "cite": "SBR p.792",
+   "contains": [
+    "number of measurements per request to use for this backend",
+    "multiple requests will be made",
+    "10000"
+   ],
+   "claim": "R4 D3: Stackdriver batch-size"
+  },
+  {
+   "cite": "SBR p.793",
+   "contains": [
+    "align the step interval to be close to your scrape interval",
+    "windowed statistics like max"
+   ],
+   "claim": "R4 D3: StatsD step aligned with the scrape"
+  },
+  {
+   "cite": "SBR p.793",
+   "contains": [
+    "how often gauges will be polled",
+    "publishunchangedmeters",
+    "10s"
+   ],
+   "claim": "R4 D3: StatsD polling-frequency"
+  },
+  {
+   "cite": "SBR p.496",
+   "contains": [
+    "management.metrics.export.stackdriver.step=30s",
+    "management.metrics.export.statsd.protocol=udp"
+   ],
+   "claim": "R4 D3: Stackdriver/StatsD body"
+  },
+  {
+   "cite": "SBR p.792",
+   "contains": [
+    "use-semantic-metric-types",
+    "cumulative metrickind",
+    "gauge metrickind"
+   ],
+   "claim": "R4 D3: use-semantic-metric-types"
+  },
+  {
+   "cite": "SBR p.790",
+   "contains": [
+    "management.metrics.export.prometheus.descriptions",
+    "http://localhost:9091",
+    "pushgateway.push-rate"
+   ],
+   "claim": "R4 D3: Prometheus properties (appendix)"
+  },
+  {
+   "cite": "SBR p.771",
+   "contains": [
+    "[down, out_of_service, up, unknown]",
+    "management.endpoint.health.show-",
+    "never"
+   ],
+   "claim": "R4 D3: status.order and show-details (appendix)"
+  },
+  {
+   "cite": "SBR p.776",
+   "contains": [
+    "management.health.diskspace.threshold",
+    "10mb"
+   ],
+   "claim": "R4 D3: diskspace threshold"
+  },
+  {
+   "cite": "SBR p.795",
+   "contains": [
+    "management.metrics.use-global-",
+    "for testing, set this to 'false'"
+   ],
+   "claim": "R4 D3: use-global-registry"
+  },
+  {
+   "cite": "SBR p.682",
+   "contains": [
+    "spring.data.cassandra.contact-points",
+    "[127.0.0.1:9042]",
+    "a simple 'host' to use the configured port"
+   ],
+   "claim": "R4: contact-points default is in Appendix A p.682"
+  },
+  {
+   "cite": "SBR p.362",
+   "contains": [
+    "spring.data.cassandra.contact-points=cassandrahost1:9042,cassandrahost2:9042",
+    "the port default to 9042"
+   ],
+   "claim": "R4: body p.362 only carries an example and port 9042"
+  },
+  {
+   "cite": "SBR p.649-650",
+   "contains": [
+    "@dynamicpropertysource",
+    "registry.add(\"spring.neo4j.uri\"",
+    "dynamicpropertyregistry"
+   ],
+   "claim": "R4: @DynamicPropertySource is on p.649-650"
+  },
+  {
+   "cite": "SBR p.647-648",
+   "contains": [
+    "testcontainers",
+    "@testcontainers",
+    "@container"
+   ],
+   "claim": "R4: p.647-648 carry Testcontainers with @Container"
+  },
+  {
+   "cite": "SBR p.369",
+   "contains": [
+    "for testing purposes",
+    "in-memory ldap server from unboundid",
+    "spring.ldap.embedded.base-dn"
+   ],
+   "claim": "R4 D5: embedded LDAP only for tests"
+  },
+  {
+   "cite": "SBR p.370",
+   "contains": [
+    "there is no need to specify a spring.ldap.urls property",
+    "random port"
+   ],
+   "claim": "R4 D5: no need for spring.ldap.urls"
+  },
+  {
+   "cite": "SBR p.370",
+   "contains": [
+    "schema.ldif",
+    "spring.ldap.embedded.ldif",
+    "spring.ldap.embedded.validation.schema"
+   ],
+   "claim": "R4 D5: schema.ldif and validation"
+  },
+  {
+   "cite": "SBR p.370",
+   "contains": [
+    "spring.ldap.embedded.base-dn[0]",
+    "yaml list notation"
+   ],
+   "claim": "R4 D5: several base-dn"
+  },
+  {
+   "cite": "SBR p.653",
+   "contains": [
+    "<goal>build-info</goal>",
+    "buildinfo()",
+    "buildproperties"
+   ],
+   "claim": "R4 D6: build-info execution"
+  },
+  {
+   "cite": "SBR p.653-654",
+   "contains": [
+    "pre-configured plugin to generate a git.properties",
+    "git-commit-id-plugin",
+    "com.gorylenko.gradle-git-properties"
+   ],
+   "claim": "R4 D6: starter-parent pre-configures the Git plugin"
+  },
+  {
+   "cite": "SBR p.654",
+   "contains": [
+    "yyyy-mm-dd't'hh:mm:ssz",
+    "overriding versions may cause compatibility issues"
+   ],
+   "claim": "R4 D6: date format and versions warning"
+  },
+  {
+   "cite": "SBR p.467",
+   "contains": [
+    "git.branch, git.commit.id, and git.commit.time",
+    "management.info.git.mode"
+   ],
+   "claim": "R4 D6: git fields in info"
+  },
+  {
+   "cite": "SBR p.468",
+   "contains": [
+    "management.info.git.enabled",
+    "build-info.properties"
+   ],
+   "claim": "R4 D6: git.enabled"
+  },
+  {
+   "cite": "SBR p.569",
+   "contains": [
+    "jetty 9.4 does not support servlet 4.0",
+    "servlet-api.version"
+   ],
+   "claim": "R4 D7: Jetty 9.4 does not support Servlet 4.0"
+  },
+  {
+   "cite": "SBR p.570",
+   "contains": [
+    "<jetty.version>10.0.8</jetty.version>",
+    "jetty9-specific dependencies also need to be excluded",
+    "javax-websocket-server-impl"
+   ],
+   "claim": "R4 D7: Jetty 10"
+  },
+  {
+   "cite": "SBR p.577",
+   "contains": [
+    "order of 0",
+    "nettyreactivewebserverfactory",
+    "auto-configured customizers are still applied"
+   ],
+   "claim": "R4: order-0 customizers and factories"
+  },
+  {
+   "cite": "SBR p.578",
+   "contains": [
+    "setenabled(false)",
+    "@servletcomponentscan"
+   ],
+   "claim": "R4: turning off filter registration"
+  },
+  {
+   "cite": "SBR p.583-584",
+   "contains": [
+    "legacycookieprocessor",
+    "an invalid character [32] was present in the cookie value"
+   ],
+   "claim": "R4: LegacyCookieProcessor"
+  },
+  {
+   "cite": "SBR p.585",
+   "contains": [
+    "server.tomcat.mbeanregistry.enabled",
+    "disabled by default"
+   ],
+   "claim": "R4: Tomcat MBean registry"
+  },
+  {
+   "cite": "SBR p.579",
+   "contains": [
+    "by default, the logs directory is a temporary directory",
+    "server.tomcat.basedir=my-tomcat"
+   ],
+   "claim": "R4: access log basedir"
+  },
+  {
+   "cite": "SBR p.580",
+   "contains": [
+    "record-request-start-time",
+    "server.undertow.accesslog.dir",
+    "system.err"
+   ],
+   "claim": "R4: Undertow/Jetty access log"
+  },
+  {
+   "cite": "SBR p.588-589",
+   "contains": [
+    "jackson-dataformat-xml",
+    "jaxb-runtime",
+    "only available out of the box with java 8"
+   ],
+   "claim": "R4: XML REST"
+  },
+  {
+   "cite": "SBR p.590",
+   "contains": [
+    "default_view_inclusion",
+    "fail_on_unknown_properties",
+    "spring.jackson.serialization.indent_output=true"
+   ],
+   "claim": "R4: ObjectMapper defaults"
+  },
+  {
+   "cite": "SBR p.593",
+   "contains": [
+    "spring.freemarker.templateloaderpath",
+    "'.ftlh'",
+    "groovymarkupviewresolver"
+   ],
+   "claim": "R4: ViewResolvers"
+  },
+  {
+   "cite": "SBR p.272",
+   "contains": [
+    "invokeflushafterservice",
+    "spring.security.filter.dispatcher-types"
+   ],
+   "claim": "R4: WebSphere and dispatcher types"
+  },
+  {
+   "cite": "SBR p.276",
+   "contains": [
+    "request_wrapper_filter_max_order",
+    "logging.level.web=debug",
+    "delegatingfilterproxyregistrationbean"
+   ],
+   "claim": "R4: filter order"
+  },
+  {
+   "cite": "SBR p.278-279",
+   "contains": [
+    "server.servlet.session.cookie.same-site",
+    "cookiesamesitesupplier",
+    "server.servlet.encoding.mapping.ko=utf-8"
+   ],
+   "claim": "R4: SameSite and encoding"
+  },
+  {
+   "cite": "SBR p.259",
+   "contains": [
+    "/v12/js/lib/mymodule.js",
+    "resourceurlencodingfilter"
+   ],
+   "claim": "R4: fixed cache-busting strategy"
+  },
+  {
+   "cite": "SBR p.572",
+   "contains": [
+    "@localserverport is a meta-annotation",
+    "local.server.port"
+   ],
+   "claim": "R4: @LocalServerPort"
+  },
+  {
+   "cite": "SBR p.606",
+   "contains": [
+    "hikari has no url property",
+    "jdbcurl property",
+    "app.datasource.jdbc-url"
+   ],
+   "claim": "R4: jdbc-url with Hikari"
+  },
+  {
+   "cite": "SBR p.617-618",
+   "contains": [
+    "defaults to create-drop",
+    "will not attempt any kind of relaxed binding",
+    "hibernate.jdbc.batch_size"
+   ],
+   "claim": "R4: ddl-auto and spring.jpa.properties"
+  },
+  {
+   "cite": "SBR p.629-630",
+   "contains": [
+    "import.sql",
+    "schema-${platform}.sql",
+    "spring.sql.init.continue-on-error"
+   ],
+   "claim": "R4: import.sql and per-platform scripts"
+  },
+  {
+   "cite": "SBR p.633",
+   "contains": [
+    "v9999__test-data.sql"
+   ],
+   "claim": "R4: Flyway test migrations"
+  },
+  {
+   "cite": "SBR p.634",
+   "contains": [
+    "runorder: \"last\"",
+    "@activeprofiles(\"test\")"
+   ],
+   "claim": "R4: Liquibase test changelog"
+  },
+  {
+   "cite": "SBR p.634-635",
+   "contains": [
+    "databaseinitializerdetector",
+    "dependsondatabaseinitializationdetector",
+    "@dependsondatabaseinitialization"
+   ],
+   "claim": "R4: database initialization detectors"
+  },
+  {
+   "cite": "SBR p.625-626",
+   "contains": [
+    "customization that was applied during the creation of the auto-configured",
+    "localentitymanagerfactorybean",
+    "entitymanagerfactoryref"
+   ],
+   "claim": "R4: several EntityManagerFactory"
+  },
+  {
+   "cite": "SBR p.618",
+   "contains": [
+    "camelcasetounderscoresnamingstrategy",
+    "telephone_number"
+   ],
+   "claim": "R4: naming strategy"
+  },
+  {
+   "cite": "SBR p.140-141",
+   "contains": [
+    "10 mb",
+    "defaults to 7",
+    "logback.configurationfile"
+   ],
+   "claim": "R4: log rotation and file"
+  },
+  {
+   "cite": "SBR p.139",
+   "contains": [
+    "%clr(%d{yyyy-mm-dd hh:mm:ss.sss}){yellow}",
+    "faint"
+   ],
+   "claim": "R4: log colors"
+  },
+  {
+   "cite": "SBR p.142",
+   "contains": [
+    "org.hibernate.sql",
+    "org.jooq.tools.loggerlistener",
+    "logging.group.tomcat"
+   ],
+   "claim": "R4: log groups"
+  },
+  {
+   "cite": "SBR p.145",
+   "contains": [
+    "no applicable action for [springproperty]"
+   ],
+   "claim": "R4: Logback extensions"
+  },
+  {
+   "cite": "SBR p.146",
+   "contains": [
+    "production & (eu-central | eu-west)",
+    "defaultvalue"
+   ],
+   "claim": "R4: springProfile with expression and springProperty"
+  },
+  {
+   "cite": "SBR p.600",
+   "contains": [
+    "logging.pattern.rolling-file-name",
+    "logback-spring.groovy"
+   ],
+   "claim": "R4: Logback how-to"
+  },
+  {
+   "cite": "SBR p.144",
+   "contains": [
+    "${log_file}.%d{yyyy-mm-dd}.%i.gz",
+    "log_dateformat_pattern"
+   ],
+   "claim": "R4: rotation default"
+  },
+  {
+   "cite": "SBR p.442",
+   "contains": [
+    "hprof",
+    "phd",
+    "range"
+   ],
+   "claim": "R4: heapdump and logfile"
+  },
+  {
+   "cite": "SBR p.452-453",
+   "contains": [
+    "application/vnd.spring-boot.actuator.v2+json",
+    "application/octet-stream",
+    "@selector(match=all_remaining)"
+   ],
+   "claim": "R4: web endpoint predicates"
+  },
+  {
+   "cite": "SBR p.462",
+   "contains": [
+    "server:/healthz",
+    "single path segment"
+   ],
+   "claim": "R4: additional-path"
+  },
+  {
+   "cite": "SBR p.464-465",
+   "contains": [
+    "clusterip",
+    "refusing_traffic"
+   ],
+   "claim": "R4: probes: ClusterIP and states"
+  },
+  {
+   "cite": "SBR p.470",
+   "contains": [
+    "management.endpoints.web.path-mapping.health=healthcheck",
+    "management.server.base-path"
+   ],
+   "claim": "R4: path-mapping"
+  },
+  {
+   "cite": "SBR p.775",
+   "contains": [
+    "1800s",
+    "management.endpoints.web.cors.max-age"
+   ],
+   "claim": "R4: cors max-age"
+  },
+  {
+   "cite": "SBR p.769",
+   "contains": [
+    "management.cloudfoundry.skip-ssl-",
+    "whether to skip ssl verification"
+   ],
+   "claim": "R4: Cloud Foundry skip-ssl-validation"
+  },
+  {
+   "cite": "SBR p.530",
+   "contains": [
+    "port 5000",
+    "server.port=5000"
+   ],
+   "claim": "R4: Elastic Beanstalk port 5000"
+  },
+  {
+   "cite": "SBR p.534",
+   "contains": [
+    "successexitstatus=143",
+    "execstop=/bin/kill -15 $mainpid"
+   ],
+   "claim": "R4: systemd"
+  },
+  {
+   "cite": "SBR p.535",
+   "contains": [
+    "zip64",
+    "corrupt"
+   ],
+   "claim": "R4: zip64 cannot be fully executable"
+  },
+  {
+   "cite": "SBR p.538-539",
+   "contains": [
+    "usestartstopdaemon",
+    "stop_wait_time",
+    "inlinedconfscript"
+   ],
+   "claim": "R4: launch script"
+  },
+  {
+   "cite": "SBR p.64",
+   "contains": [
+    "spring.devtools.restart.trigger-file",
+    ".reloadtrigger"
+   ],
+   "claim": "R4: trigger file"
+  },
+  {
+   "cite": "SBR p.75",
+   "contains": [
+    "application.formatted-version",
+    "springbootbanner"
+   ],
+   "claim": "R4: banner"
+  },
+  {
+   "cite": "SBR p.90",
+   "contains": [
+    "cannot override properties from lower order property sources with a null value"
+   ],
+   "claim": "R4: JSON null"
+  },
+  {
+   "cite": "SBR p.99",
+   "contains": [
+    "${demo.item-price}",
+    "demo_itemprice"
+   ],
+   "claim": "R4: canonical placeholder"
+  },
+  {
+   "cite": "SBR p.125",
+   "contains": [
+    "means \"7 days\"",
+    "1y3d"
+   ],
+   "claim": "R4: Period and weeks"
+  },
+  {
+   "cite": "SBR p.559",
+   "contains": [
+    "too late to configure certain properties such as logging.* and spring.main.*"
+   ],
+   "claim": "R4: @PropertySource too late"
+  },
+  {
+   "cite": "SBR p.561",
+   "contains": [
+    "usedefaultdelimiters",
+    "addresources"
+   ],
+   "claim": "R4: Maven filtering"
+  },
+  {
+   "cite": "SBR p.556",
+   "contains": [
+    "abstractfailureanalyzer",
+    "beanfactoryaware",
+    "return null"
+   ],
+   "claim": "R4: FailureAnalyzer"
+  },
+  {
+   "cite": "SBR p.172",
+   "contains": [
+    "aoptestutils.gettargetobject"
+   ],
+   "claim": "R4: AopTestUtils"
+  },
+  {
+   "cite": "SBR p.803",
+   "contains": [
+    "warning (the default) or error",
+    "is no longer managed and is not bound"
+   ],
+   "claim": "R4: deprecation level"
+  },
+  {
+   "cite": "SBR p.816-818",
+   "contains": [
+    "cannot auto-detect default values for enums and collections",
+    "my.messaging.container-type"
+   ],
+   "claim": "R4: manual metadata"
+  },
+  {
+   "cite": "SBR p.799",
+   "contains": [
+    "spring.test.database.replace",
+    "any",
+    "spring.test.mockmvc.print"
+   ],
+   "claim": "R4: A.16 testing"
+  },
+  {
+   "cite": "SBR p.553",
+   "contains": [
+    "if more than one candidate is found",
+    "libraries.none"
+   ],
+   "claim": "R4: Repackager"
+  },
+  {
+   "cite": "SBR p.520",
+   "contains": [
+    "/app/cloudfoundryapplication/*",
+    "cloudfoundryapplication"
+   ],
+   "claim": "R4: Cloud Foundry with context-path"
+  },
+  {
+   "cite": "SBR p.362",
+   "absent": [
+    "127.0.0.1"
+   ],
+   "claim": "R4: the contact-points default is NOT in the body p.362 (it is in Appendix A p.682)"
+  },
+  {
+   "cite": "SBR p.569-570",
+   "absent": [
+    "java 11",
+    "jdk 11"
+   ],
+   "claim": "R4 D7: the Reference does not state the minimum Java of Jetty 10"
+  },
+  {
+   "cite": "SBR p.369-370",
+   "absent": [
+    "ldaps",
+    "port 389",
+    "production"
+   ],
+   "claim": "R4 D5: embedded LDAP does not mention port 389 or production"
+  },
+  {
+   "cite": "SBR p.574-575",
+   "absent": [
+    "pkcs#12",
+    "jetty 10"
+   ],
+   "claim": "R4 D2: p.574-575 do not deal with PKCS#12 or Jetty 10"
+  },
+  {
+   "cite": "SBR p.649-650",
+   "absent": [
+    "@serviceconnection",
+    "docker compose"
+   ],
+   "claim": "R4: there is no @ServiceConnection or Docker Compose in the Reference"
+  },
+  {
+   "cite": "SBR p.653-654",
+   "absent": [
+    "bootbuildimage",
+    "build-image"
+   ],
+   "claim": "R4: there is no build-image in this passage"
+  },
+  {
+   "cite": "SBR p.792-793",
+   "absent": [
+    "prometheus",
+    "grafana"
+   ],
+   "claim": "R4 D3: p.792-793 (Stackdriver/StatsD/Wavefront) do not carry Prometheus or Grafana"
+  },
+  {
+   "cite": "SBR p.464-465",
+   "absent": [
+    "resilience4j",
+    "hystrix"
+   ],
+   "claim": "R4: probes mention circuit breaker, never Resilience4j"
+  },
+  {
+   "cite": "SBR p.581-582",
+   "absent": [
+    "x-forwarded-prefix",
+    "forwarded-headers-strategy"
+   ],
+   "claim": "R4 D4: p.581-582 do not carry X-Forwarded-Prefix or the wrong property name"
+  },
+  {
+   "cite": "SBR p.517",
+   "absent": [
+    "percentiles-histogram",
+    "grafana"
+   ],
+   "claim": "R4 D1: p.517 does not deal with histograms or Grafana"
+  },
+  {
+   "cite": "SBR p.140-141",
+   "absent": [
+    "json layout",
+    "logstash",
+    "ecs"
+   ],
+   "claim": "R4: the book does not deal with structured log output (JSON/ECS)"
+  },
+  {
+   "cite": "SBR p.109",
+   "contains": [
+    "unless your record has multiple constructors",
+    "no need to use",
+    "@ConstructorBinding",
+    "Nested members"
+   ],
+   "claim": "R5: record without @ConstructorBinding, nested bound by constructor"
+  },
+  {
+   "cite": "SBR p.109-110",
+   "contains": [
+    "empty",
+    "@DefaultValue",
+    "null value for security"
+   ],
+   "claim": "R5: empty @DefaultValue makes the nested non-null; without properties it is null"
+  },
+  {
+   "cite": "SBR p.110",
+   "contains": [
+    "@EnableConfigurationProperties",
+    "@Component",
+    "@Bean",
+    "@Import",
+    "null rather than an empty"
+   ],
+   "claim": "R5: enabling, limits of constructor binding and Optional"
+  },
+  {
+   "cite": "SBR p.780",
+   "contains": [
+    "atlas.lwc-",
+    "enabled",
+    "false",
+    "batch",
+    "10000",
+    "150s"
+   ],
+   "claim": "R5: Atlas keys lwc-enabled and batch-size"
+  },
+  {
+   "cite": "SBR p.781",
+   "contains": [
+    "lwc-step",
+    "less than or equal",
+    "even multiple",
+    "5s",
+    "15m",
+    "lwc-ignore-publish-step"
+   ],
+   "claim": "R5: rule lwc-step x step and meter-time-to-live"
+  },
+  {
+   "cite": "SBR p.782",
+   "contains": [
+    "datadog.bat",
+    "10000",
+    "descriptions"
+   ],
+   "claim": "R5: Datadog batch-size"
+  },
+  {
+   "cite": "SBR p.258",
+   "contains": [
+    "webjars-locator-jboss-vfs",
+    "webjars-locator-core",
+    "404"
+   ],
+   "claim": "R5: JBoss and webjars-locator-jboss-vfs"
+  },
+  {
+   "cite": "SBR p.100",
+   "contains": [
+    "must not be same comment prefix",
+    "exactly three hyphen"
+   ],
+   "claim": "R5: comment prefix in the #--- separator"
+  },
+  {
+   "cite": "SBR p.101",
+   "contains": [
+    "kubernetes",
+    "prod | staging"
+   ],
+   "claim": "R5: on-cloud-platform and on-profile example"
+  },
+  {
+   "cite": "SBR p.766",
+   "contains": [
+    "server.undertow.max-headers",
+    "8 times",
+    "-1B"
+   ],
+   "claim": "R5: Undertow without default in max-headers; worker 8x"
+  },
+  {
+   "cite": "SBR p.464-465",
+   "contains": [
+    "autoscaling",
+    "autoscaler"
+   ],
+   "claim": "R5: autoscaling only in passing"
+  },
+  {
+   "cite": "SBR p.236",
+   "contains": [
+    "@conditionalonexpression",
+    "spel expression",
+    "referencing a bean in the expression",
+    "initialized very early",
+    "won't be eligible for post- processing",
+    "its state may be incomplete"
+   ],
+   "claim": "R5-fix: ConditionalOnExpression with a bean: early init (NOTE)"
+  },
+  {
+   "cite": "SBR p.236",
+   "contains": [
+    "provide as much type information as possible",
+    "concrete class and not the interface",
+    "can only rely upon to type information that is available in the method signature"
+   ],
+   "claim": "R5-fix: TIP interface x concrete on @Bean"
+  },
+  {
+   "cite": "SBR p.227",
+   "contains": [
+    "apache http client",
+    "version 4.3.2 or better",
+    "recommended, but not mandatory",
+    "redirects are not followed",
+    "cookies are ignored",
+    "webtestclient",
+    "fluent api for assertions, unlike testresttemplate"
+   ],
+   "claim": "R5-fix: TestRestTemplate: Apache HttpClient, redirects, cookies; TIP WebTestClient"
+  },
+  {
+   "cite": "SBR p.227",
+   "absent": [
+    "we recommend webtestclient",
+    "webtestclient is recommended",
+    "recommends webtestclient",
+    "you should use webtestclient"
+   ],
+   "claim": "R5-fix: the book does NOT recommend WebTestClient (only describes it)"
+  },
+  {
+   "cite": "SBR p.228",
+   "contains": [
+    "inject a fully configured testresttemplate",
+    "webenvironment.random_port",
+    "webenvironment.defined_port",
+    "additional customizations can be applied through the resttemplatebuilder bean",
+    "urls that do not specify a host and port automatically connect to the embedded server"
+   ],
+   "claim": "R5-fix: injection, RestTemplateBuilder and default host"
+  },
+  {
+   "cite": "SBR p.229",
+   "contains": [
+    "@autowired",
+    "private testresttemplate template",
+    "resttemplatebuilder",
+    "setconnecttimeout(duration.ofseconds(1))",
+    "setreadtimeout(duration.ofseconds(1))"
+   ],
+   "claim": "R5-fix: timeouts via RestTemplateBuilder bean (1s example)"
+  },
+  {
+   "cite": "SBR p.165",
+   "contains": [
+    "requires spring-webflux on the classpath",
+    "testresttemplate facility"
+   ],
+   "claim": "R5-fix: WebTestClient requires spring-webflux; without it, TestRestTemplate"
+  },
+  {
+   "cite": "SBR p.65",
+   "contains": [
+    "meta-inf/spring-devtools.properties",
+    "restart.exclude",
+    "restart.include",
+    "regex pattern that is applied to the classpath",
+    "restart.exclude.companycommonlibs=/mycorp-common-",
+    "restart.include.projectcommon=/mycorp-myproj-",
+    "all property keys must be unique"
+   ],
+   "claim": "R5-fix: restart.exclude/include regex"
+  },
+  {
+   "cite": "SBR p.66",
+   "contains": [
+    "standard objectinputstream",
+    "configurableobjectinputstream",
+    "thread.currentthread().getcontextclassloader()",
+    "without considering the context classloader"
+   ],
+   "claim": "R5-fix: ConfigurableObjectInputStream and context classloader"
+  },
+  {
+   "cite": "SBR p.67",
+   "contains": [
+    "not found in $home/.config/spring-boot",
+    "root of the $home directory",
+    "spring-boot-devtools.properties file",
+    "older version of spring boot",
+    "profiles are not supported"
+   ],
+   "claim": "R5-fix: fallback ~/.spring-boot-devtools.properties"
+  },
+  {
+   "cite": "SBR p.42",
+   "contains": [
+    "you can still specify a version and override spring boot's recommendations",
+    "not specify its version"
+   ],
+   "claim": "R5-fix: overriding a version and the Spring Framework WARNING"
+  },
+  {
+   "cite": "SBR p.876-877",
+   "contains": [
+    "f.2. version properties",
+    "used to override the versions managed by spring boot",
+    "build tool plugins documentation",
+    "version property"
+   ],
+   "claim": "R5-fix: F.2: version properties and reference to the plugin"
+  },
+  {
+   "cite": "SBR p.878",
+   "contains": [
+    "hibernate",
+    "hibernate.version",
+    "hibernate-validator.version"
+   ],
+   "claim": "R5-fix: F.2: hibernate.version"
+  },
+  {
+   "cite": "SBR p.247",
+   "contains": [
+    "with maven, the kotlin version can be customized by setting the kotlin.version property"
+   ],
+   "claim": "R5-fix: kotlin.version (Maven)"
+  },
+  {
+   "cite": "SBR p.544",
+   "contains": [
+    "custom dependency management",
+    "@dependencymanagementbom",
+    "@grab"
+   ],
+   "claim": "R5-fix: p.544 is about the CLI (Custom Dependency Management)"
+  },
+  {
+   "cite": "SBR p.544",
+   "absent": [
+    "hibernate.version",
+    "version property",
+    "maven plugin"
+   ],
+   "claim": "R5-fix: p.544 does NOT carry the Maven/Gradle version override"
+  },
+  {
+   "cite": "SBR p.133",
+   "contains": [
+    "spel expressions from application property files are not processed",
+    "evaluated when consumed through @value"
+   ],
+   "claim": "R6-D1: SpEL in the properties file is not evaluated on read; only when consumed via @Value"
+  },
+  {
+   "cite": "SBR p.133",
+   "absent": [
+    "#{",
+    "evaluated at startup",
+    "configurableenvironment"
+   ],
+   "claim": "R6-D1 (neg): p.133 does not carry the #{...} syntax or evaluation when reading the file"
+  },
+  {
+   "cite": "SBR p.735",
+   "contains": [
+    "default to 5672, or 5671 if ssl is enabled",
+    "ignored if an address is set"
+   ],
+   "claim": "R6-D2: Rabbit port default is IN THE DESCRIPTION"
+  },
+  {
+   "cite": "SBR p.707",
+   "contains": [
+    "defaults to the current working directory"
+   ],
+   "claim": "R6-D2: log-base-dir default is IN THE DESCRIPTION"
+  },
+  {
+   "cite": "SBR p.676",
+   "contains": [
+    "spring.task.scheduling.thread-name-prefix",
+    "scheduling-"
+   ],
+   "claim": "R6-D2: scheduler thread-name-prefix has default scheduling-"
+  },
+  {
+   "cite": "SBR p.676",
+   "absent": [
+    "spring.task.scheduling.pool.max-size",
+    "spring.task.scheduling.pool.core-size"
+   ],
+   "claim": "R6-D2 (neg): the scheduler has no max-size/core-size in Appendix A"
+  },
+  {
+   "cite": "SBR p.716-717",
+   "contains": [
+    "set it to false to throw a",
+    "jmsexception"
+   ],
+   "claim": "R6-D2: block-if-full (ActiveMQ) false throws JMSException"
+  },
+  {
+   "cite": "SBR p.718",
+   "contains": [
+    "blocking period before throwing an exception if the pool is still full"
+   ],
+   "claim": "R6-D2: description of block-if-full-timeout (Artemis)"
+  },
+  {
+   "cite": "SBR p.153",
+   "contains": [
+    "a custom executor",
+    "asynctaskexecutor",
+    "applicationtaskexecutor",
+    "threadpooltaskexecutor",
+    "asyncconfigurer"
+   ],
+   "claim": "R6-D3: own Executor -> the book's two ways out"
+  },
+  {
+   "cite": "SBR p.153-154",
+   "absent": [
+    "@bean",
+    "executorservice",
+    "simpleasynctaskexecutor"
+   ],
+   "claim": "R6-D3 (neg): the book carries no @Bean AsyncTaskExecutor recipe or other classes"
+  },
+  {
+   "cite": "SBR p.514",
+   "contains": [
+    "meterfilter.renametag(\"com.example\", \"mytag.region\", \"mytag.area\")"
+   ],
+   "claim": "R6-D4: renameTag (Java) p.514"
+  },
+  {
+   "cite": "SBR p.515",
+   "contains": [
+    "meterfilter.renametag",
+    "not any of the static methods on metrics",
+    "global registry that is not spring-managed"
+   ],
+   "claim": "R6-D4: renameTag (Kotlin) and global registry note p.515"
+  },
+  {
+   "cite": "SBR p.479",
+   "contains": [
+    "global static composite registry",
+    "management.metrics.use-global-registry=false"
+   ],
+   "claim": "R6-D4: auto-configured registries enter the global registry"
+  },
+  {
+   "cite": "SBR p.502-503",
+   "contains": [
+    "instrumentation of all available cache instances on startup",
+    "cache2k",
+    "caffeine",
+    "cachemetricsregistrar"
+   ],
+   "claim": "R6-D5: cache metrics - list of supported libraries"
+  },
+  {
+   "cite": "SBR p.502-503",
+   "absent": [
+    "concurrentmap",
+    "concurrentmapcache",
+    "simple cache"
+   ],
+   "claim": "R6-D5 (neg): the book does not mention ConcurrentMap in the cache metrics (nor does it say it is left without metrics)"
+  },
+  {
+   "cite": "SBR p.449",
+   "contains": [
+    "management context path",
+    "discovery page is disabled",
+    "/management"
+   ],
+   "claim": "R7-fix: discovery page: the text speaks of the management context path (and '/' disables it)"
+  },
+  {
+   "cite": "SBR p.449",
+   "absent": [
+    "base-path",
+    "management.endpoints.web.base-path"
+   ],
+   "claim": "R7-fix (neg): p.449 does not mention base-path (the equivalence with base-path is [inference])"
+  },
+  {
+   "cite": "SBR p.470-471",
+   "absent": [
+    "discovery"
+   ],
+   "claim": "R7-fix (neg): the base-path=/ examples do not comment on the discovery page"
+  },
+  {
+   "cite": "SBR p.470",
+   "contains": [
+    "management.endpoints.web.base-path=/"
+   ],
+   "claim": "R7-fix: base-path=/ example with path-mapping.health"
+  },
+  {
+   "cite": "SBR p.839",
+   "contains": [
+    "boot-inf/classpath.idx",
+    "not parsed internally as yaml",
+    "double quotes",
+    "can be used only for jars",
+    "boot-inf/layers.idx",
+    "quoted strings"
+   ],
+   "claim": "R7-fix: format of the classpath.idx/layers.idx indexes"
+  },
+  {
+   "cite": "SBR p.839-840",
+   "contains": [
+    "dash space",
+    "colon",
+    "space space dash space",
+    "all files inside that directory",
+    "- \"dependencies\":"
+   ],
+   "claim": "R7-fix: layers.idx format: prefixes, suffix and directory"
+  },
+  {
+   "cite": "SBR p.839",
+   "absent": [
+    "war files"
+   ],
+   "claim": "R7-fix (neg): Appendix E does not mention layers.idx for war"
+  },
+  {
+   "cite": "SBR p.437",
+   "contains": [
+    "layering for war files",
+    "layers.idx"
+   ],
+   "claim": "R7-fix: conflict: p.437 admits layers for war with layers.idx"
+  },
+  {
+   "cite": "SBR p.436",
+   "contains": [
+    "classpath.idx file which is used by"
+   ],
+   "claim": "R7-fix: JarLauncher uses classpath.idx"
+  },
+  {
+   "cite": "SBR p.112",
+   "contains": [
+    "does not provide any prefix, only the fully qualified name",
+    "setter injection",
+    "*aware interfaces",
+    "must be annotated with @component",
+    "javabean-based property binding"
+   ],
+   "claim": "R7-fix: bean name NOTE and bean injection"
+  },
+  {
+   "cite": "SBR p.110",
+   "contains": [
+    "@component beans",
+    "@bean methods",
+    "@import"
+   ],
+   "claim": "R7-fix: constructor binding does not apply to @Component/@Bean/@Import"
+  },
+  {
+   "cite": "SBR p.119",
+   "contains": [
+    "does not merge the items",
+    "description of null"
+   ],
+   "claim": "R7-fix: the profile list replaces, does not merge"
+  },
+  {
+   "cite": "SBR p.120",
+   "contains": [
+    "both comma-separated lists and yaml lists",
+    "completely overriding"
+   ],
+   "claim": "R7-fix: YAML: comma list or YAML replaces entirely"
+  },
+  {
+   "cite": "SBR p.121",
+   "contains": [
+    "merging rules apply to properties from all property sources",
+    "not just files"
+   ],
+   "claim": "R7-fix: NOTE: merging applies to all sources"
+  },
+  {
+   "cite": "SBR p.677",
+   "contains": [
+    "spring.cache.redis.time-to-live",
+    "the entries never expire"
+   ],
+   "claim": "R7-fix: Redis TTL: entries never expire by default"
+  },
+  {
+   "cite": "SBR p.787",
+   "contains": [
+    "retention-duration",
+    "for instance 7d"
+   ],
+   "claim": "R7-fix: 7d is an example in the description"
+  },
+  {
+   "cite": "SBR p.297",
+   "contains": [
+    "ordered.highest_precedence + 1",
+    "-100",
+    "ordered.lowest_precedence - 10",
+    "implement ordered or be annotated with @order"
+   ],
+   "claim": "R7-fix: web filter orders"
+  },
+  {
+   "cite": "SBR p.297",
+   "absent": [
+    "lowest value",
+    "run first",
+    "executed first"
+   ],
+   "claim": "R7-fix (neg): p.297 does not claim 'lowest value runs first' (it is [inference])"
+  },
+  {
+   "cite": "SBR p.296",
+   "contains": [
+    "public/",
+    "404.html"
+   ],
+   "claim": "R7-fix: static 404 example in public/error"
+  },
+  {
+   "cite": "SBR p.857",
+   "contains": [
+    "log4j-spring-cloud-config-client"
+   ],
+   "claim": "R7-fix: the only occurrence of 'spring cloud config' is an artifact name"
+  },
+  {
+   "cite": "SBR p.857",
+   "absent": [
+    "config server",
+    "configserver"
+   ],
+   "claim": "R7-fix (neg): p.857 does not describe Spring Cloud Config"
+  },
+  {
+   "cite": "SBR p.462",
+   "claim": "R9: additional-path requires the server:/management: prefix and a single segment (rule P19)",
+   "contains": [
+    "prefix is mandatory",
+    "server:",
+    "management:",
+    "single path segment"
+   ]
+  },
+  {
+   "cite": "SBR p.551",
+   "claim": "R9: exejar Required attributes and nested elements",
+   "contains": [
+    "destfile",
+    "classes",
+    "start-class",
+    "resources",
+    "lib",
+    "yes",
+    "no (the default is the first class"
+   ]
+  },
+  {
+   "cite": "SBR p.656",
+   "claim": "R9: requiresUnpack, tmpdir and classifier exec XML",
+   "contains": [
+    "java.io.tmpdir",
+    "temporary directory",
+    "jruby-complete",
+    "requiresunpack",
+    "<classifier>exec</classifier>",
+    "will not delete"
+   ]
+  },
+  {
+   "cite": "SBR p.68",
+   "claim": "R9: remote devtools - automatic server with secret, manual client, single argument",
+   "contains": [
+    "automatically enabled",
+    "spring.devtools.remote.secret",
+    "launched manually",
+    "remoteSpringApplication",
+    "single required argument"
+   ]
+  },
+  {
+   "cite": "SBR p.69",
+   "claim": "R9: remote client reads the secret from the classpath",
+   "contains": [
+    "same classpath",
+    "directly read application properties",
+    "passed to the server for authentication"
+   ]
+  },
+  {
+   "cite": "SBR p.414-415",
+   "claim": "R9: Hazelcast search directories",
+   "contains": [
+    "hazelcast-client.xml in the working directory or at the root of the classpath",
+    "hazelcast.xml in the working directory or at the root of the classpath"
+   ]
+  },
+  {
+   "cite": "SBR p.416",
+   "claim": "R9: advanced Quartz in spring.quartz.properties.*",
+   "contains": [
+    "spring.quartz.properties.*",
+    "executor bean is not associated"
+   ]
+  },
+  {
+   "cite": "SBR p.779",
+   "claim": "R9: AppOptics api-token (no default), batch-size 500 and batch rule",
+   "contains": [
+    "management.metrics.export.appoptics.api-token",
+    "appoptics api token",
+    "per request",
+    "500"
+   ]
+  },
+  {
+   "cite": "SBR p.780",
+   "claim": "R9: AppOptics host-tag mapped to @host, default instance",
+   "contains": [
+    "appoptics.host-tag",
+    "mapped to \"@host\"",
+    "instance",
+    "floor-times"
+   ]
+  },
+  {
+   "cite": "SBR p.675",
+   "claim": "R9: Appendix A Quartz p.675 (no thread-pool-size/misfire-threshold)",
+   "contains": [
+    "spring.quartz.properties.*",
+    "quartzscheduler",
+    "spring.quartz.startup-delay"
+   ],
+   "absent": [
+    "thread-pool-size",
+    "misfire-threshold"
+   ]
+  },
+  {
+   "cite": "SBR p.167",
+   "contains": [
+    "spring.jmx.enabled=true",
+    "@dirtiescontext",
+    "mbeanserver"
+   ],
+   "claim": "round 9: JMX in test requires property + @DirtiesContext"
+  },
+  {
+   "cite": "SBR p.168",
+   "contains": [
+    "@autoconfiguremetrics",
+    "in-memory"
+   ],
+   "claim": "round 9: @AutoConfigureMetrics and registries (except in-memory) not auto-configured"
+  },
+  {
+   "cite": "SBR p.310",
+   "contains": [
+    "jwtdecoder",
+    "reactivejwtdecoder",
+    "audiences"
+   ],
+   "claim": "round 9: JwtDecoder/ReactiveJwtDecoder bean"
+  },
+  {
+   "cite": "SBR p.311",
+   "contains": [
+    "opaquetokenintrospector",
+    "reactiveopaquetokenintrospector"
+   ],
+   "claim": "round 9: OpaqueTokenIntrospector/reactive bean"
+  },
+  {
+   "cite": "SBR p.391",
+   "contains": [
+    "kafka-streams",
+    "@enablekafkastreams",
+    "application id and bootstrap servers",
+    "spring.application.name"
+   ],
+   "claim": "round 9: Kafka Streams activation condition"
+  },
+  {
+   "cite": "SBR p.392",
+   "contains": [
+    "spring.kafka.streams.auto-startup"
+   ],
+   "claim": "round 9: Kafka Streams auto-startup"
+  },
+  {
+   "cite": "SBR p.219",
+   "contains": [
+    "meta-annotated with @importautoconfiguration",
+    "slice annotation"
+   ],
+   "claim": "round 9: own slice annotation via meta-annotation"
+  },
+  {
+   "cite": "SBR p.696",
+   "contains": [
+    "web-allow-others",
+    "fetch-size",
+    "max-rows",
+    "web-admin-password"
+   ],
+   "claim": "round 9: h2 console settings and jdbc.template"
+  },
+  {
+   "cite": "SBR p.809",
+   "contains": [
+    "this parameter is mandatory",
+    "concrete"
+   ],
+   "claim": "round 9: mandatory handle-as target"
+  },
+  {
+   "cite": "SBR p.812",
+   "absent": [
+    "mandatory"
+   ],
+   "claim": "round 9: spring-bean-reference does not declare a mandatory target"
+  },
+  {
+   "cite": "SBR p.483",
+   "contains": [
+    "api.datadoghq.eu"
+   ],
+   "claim": "round 9: Datadog .eu URI"
+  },
+  {
+   "cite": "SBR p.672",
+   "contains": [
+    "spring.main.allow-circular-references",
+    "automatically try to"
+   ],
+   "claim": "round 9: C10 only the key and the description"
+  },
+  {
+   "cite": "SBR p.672",
+   "absent": [
+    "refactor",
+    "@lazy",
+    "setter injection",
+    "redesign",
+    "constructor"
+   ],
+   "claim": "round 9: C10 the Reference carries no solution for a bean cycle on this page"
+  },
+  {
+   "cite": "SBR p.668",
+   "contains": [
+    "enable debug logs"
+   ],
+   "claim": "round 9: debug property in Appendix A"
+  },
+  {
+   "cite": "SBR p.676",
+   "contains": [
+    "enable trace logs"
+   ],
+   "claim": "round 9: trace property in Appendix A"
+  },
+  {
+   "cite": "SBR p.138-139",
+   "contains": [
+    "--debug",
+    "--trace"
+   ],
+   "claim": "round 9: --debug/--trace flags"
+  },
+  {
+   "cite": "SBR p.730",
+   "contains": [
+    "default",
+    "spring.application.name"
+   ],
+   "claim": "round 9: application-id refers to spring.application.name in the description"
+  },
+  {
+   "cite": "SBR p.342",
+   "contains": [
+    "spring.r2dbc.generate-unique-name"
+   ],
+   "claim": "round 9: R2DBC unique name"
+  },
+  {
+   "cite": "SBR p.103",
+   "contains": [
+    "OPEN value",
+    "any character",
+    "(exclusive)"
+   ],
+   "claim": "round 10: random.int any OPEN/CLOSE, max exclusive"
+  },
+  {
+   "cite": "SBR p.103",
+   "contains": [
+    "prefix to input",
+    "input.remote.timeout"
+   ],
+   "claim": "round 10: environment prefix example input"
+  },
+  {
+   "cite": "SBR p.103",
+   "contains": [
+    "Configuring System Environment Properties"
+   ],
+   "claim": "round 10: section 7.2.7"
+  },
+  {
+   "cite": "SBR p.842",
+   "contains": [
+    "${user.dir}",
+    "loader.system",
+    "defaults to false"
+   ],
+   "claim": "round 10: loader.home and loader.system defaults"
+  },
+  {
+   "cite": "SBR p.842",
+   "contains": [
+    "then in the root of the classpath",
+    "classpath:/BOOT-INF/classes"
+   ],
+   "claim": "round 10: loader.properties search"
+  },
+  {
+   "cite": "SBR p.843",
+   "contains": [
+    "can not be used to configure the location of loader.properties"
+   ],
+   "claim": "round 10: loader.path does not configure loader.properties"
+  },
+  {
+   "cite": "SBR p.843",
+   "contains": [
+    "environment variables, system properties, loader.properties, the exploded archive manifest"
+   ],
+   "claim": "round 10: PropertiesLauncher search order"
+  },
+  {
+   "cite": "SBR p.843",
+   "contains": [
+    "defaults to BOOT-INF/lib"
+   ],
+   "claim": "round 10: empty loader.path"
+  },
+  {
+   "cite": "SBR p.640",
+   "contains": [
+    "called in order until a function changes the value",
+    "built-in key-based sanitization"
+   ],
+   "claim": "round 10: SanitizingFunction chain"
+  },
+  {
+   "cite": "SBR p.639",
+   "contains": [
+    "http://user1:******@localhost:8081"
+   ],
+   "claim": "round 10: sanitized URI"
+  },
+  {
+   "cite": "SBR p.95",
+   "contains": [
+    "does not matter",
+    "later imports taking precedence"
+   ],
+   "claim": "round 10: import order and last import wins"
+  },
+  {
+   "cite": "SBR p.94",
+   "contains": [
+    "last-wins strategy"
+   ],
+   "claim": "round 10: last location wins at the group level"
+  },
+  {
+   "cite": "SBR p.116",
+   "contains": [
+    "any characters that are not alpha-numeric, - or . are removed"
+   ],
+   "claim": "round 10: Map without brackets removes characters"
+  },
+  {
+   "cite": "SBR p.116-117",
+   "contains": [
+    "Map<String, Object>",
+    "scalar values"
+   ],
+   "claim": "round 10: scalars in Map"
+  },
+  {
+   "cite": "SBR p.232",
+   "contains": [
+    "ASM",
+    "before the condition on the method applies"
+   ],
+   "claim": "round 10: ConditionalOnClass on @Bean"
+  },
+  {
+   "cite": "SBR p.233",
+   "contains": [
+    "proxyBeanMethods = false"
+   ],
+   "claim": "round 10: nested configuration"
+  },
+  {
+   "cite": "SBR p.73",
+   "contains": [
+    "Port 8080 was already in use"
+   ],
+   "claim": "round 10: port-in-use sentence"
+  },
+  {
+   "cite": "SBR p.103",
+   "absent": [
+    "setEnvironmentPrefix",
+    "INPUT_REMOTE_TIMEOUT"
+   ],
+   "claim": "round 10: the book does not carry the method name or the INPUT_REMOTE_TIMEOUT variable"
+  },
+  {
+   "cite": "SBR p.103",
+   "absent": [
+    "inclusive"
+   ],
+   "claim": "round 10: max is exclusive, not inclusive"
+  },
+  {
+   "cite": "SBR p.639",
+   "absent": [
+    "beans.keys-to-sanitize"
+   ],
+   "claim": "round 10: no keys-to-sanitize for beans (p.639)"
+  },
+  {
+   "cite": "SBR p.640",
+   "absent": [
+    "beans.keys-to-sanitize"
+   ],
+   "claim": "round 10: no keys-to-sanitize for beans (p.640)"
+  },
+  {
+   "cite": "SBR p.769",
+   "absent": [
+    "keys-to-sanitize"
+   ],
+   "claim": "round 10: Appendix A: beans endpoint without keys-to-sanitize"
+  },
+  {
+   "cite": "SBR p.842",
+   "absent": [
+    "loader.path=loader.properties"
+   ],
+   "claim": "round 10: loader.path does not point to loader.properties (p.842)"
+  },
+  {
+   "cite": "SBR p.843",
+   "absent": [
+    "loader.path=loader.properties"
+   ],
+   "claim": "round 10: loader.path does not point to loader.properties (p.843)"
+  },
+  {
+   "cite": "SBR p.95",
+   "absent": [
+    "order matters"
+   ],
+   "claim": "round 10: the order of the import on the line does not matter"
+  },
+  {
+   "cite": "SBR p.116",
+   "absent": [
+    "Map<String, Object>"
+   ],
+   "claim": "round 10: scalars/Object are on p.117, not p.116"
+  },
+  {
+   "cite": "SBR p.232",
+   "absent": [
+    "proxyBeanMethods"
+   ],
+   "claim": "round 10: proxyBeanMethods only appears in the p.233 example"
+  },
+  {
+   "cite": "SBR p.75",
+   "contains": [
+    "org.springframework.boot.loader.JarLauncher",
+    "unpacked jar",
+    "java -jar"
+   ],
+   "claim": "round 11: application.* resolves with java -jar or JarLauncher (unpacked jar)"
+  },
+  {
+   "cite": "SBR p.75",
+   "contains": [
+    "setBannerMode(Banner.Mode.OFF)",
+    "springBootBanner"
+   ],
+   "claim": "round 11: banner OFF by code and springBootBanner bean"
+  },
+  {
+   "cite": "SBR p.194",
+   "contains": [
+    "Propagation.NOT_SUPPORTED",
+    "Data JDBC tests are transactional",
+    "JDBC example"
+   ],
+   "claim": "round 11: Data JDBC: transaction off as in the JDBC example"
+  },
+  {
+   "cite": "SBR p.830",
+   "contains": [
+    "@DataJdbcTest",
+    "@DataJpaTest",
+    "FlywayAutoConfiguration",
+    "LiquibaseAutoConfiguration",
+    "JdbcRepositoriesAutoConfiguration",
+    "JpaRepositoriesAutoConfiguration",
+    "HibernateJpaAutoConfiguration",
+    "TestEntityManagerAutoConfiguration"
+   ],
+   "claim": "round 11: Appendix D: diff DataJdbcTest x DataJpaTest, Flyway/Liquibase in both"
+  },
+  {
+   "cite": "SBR p.785",
+   "contains": [
+    "one greater than the number of",
+    "hops (routers)",
+    "multicast"
+   ],
+   "claim": "round 11: Ganglia time-to-live = hops+1"
+  },
+  {
+   "cite": "SBR p.785-786",
+   "contains": [
+    "graphiteTagsEnabled",
+    "hierarchical naming",
+    "pickled"
+   ],
+   "claim": "round 11: Graphite tags and protocol"
+  },
+  {
+   "cite": "SBR p.747",
+   "contains": [
+    "maxInMemorySize",
+    "spring-",
+    "written to disk",
+    "Ignored when streaming is enabled"
+   ],
+   "claim": "round 11: webflux multipart: disk above max-in-memory-size"
+  },
+  {
+   "cite": "SBR p.691",
+   "contains": [
+    "jndi-name",
+    "ignored when set",
+    "generate-unique-name",
+    "testdb"
+   ],
+   "claim": "round 11: datasource name/jndi-name"
+  },
+  {
+   "cite": "SBR p.689",
+   "contains": [
+    "generate-unique-",
+    "random datasource name"
+   ],
+   "claim": "round 11: generate-unique-name default true"
+  },
+  {
+   "cite": "SBR p.518",
+   "contains": [
+    "HttpExchangeTracer",
+    "management.trace.http.include"
+   ],
+   "claim": "round 11: HttpExchangeTracer in one sentence"
+  },
+  {
+   "cite": "SBR p.441",
+   "contains": [
+    "httptrace",
+    "HttpTraceRepository bean"
+   ],
+   "claim": "round 11: httptrace endpoint requires HttpTraceRepository"
+  },
+  {
+   "cite": "SBR p.401",
+   "contains": [
+    "responsible for the configuration of its WebSocket",
+    "spring-boot-starter-websocket",
+    "javax.websocket-api",
+    "spring-boot-starter-webflux"
+   ],
+   "claim": "round 11: WebSocket: container in WAR, MVC and reactive"
+  },
+  {
+   "cite": "SBR p.830",
+   "absent": [
+    "MongoAutoConfiguration",
+    "R2dbcAutoConfiguration"
+   ],
+   "claim": "round 11: negative per page: p.830 only has JDBC/JPA"
+  },
+  {
+   "cite": "SBR p.747",
+   "absent": [
+    "max-file-size",
+    "max-request-size"
+   ],
+   "claim": "round 11: negative per page: webflux multipart has no max-file-size"
+  },
+  {
+   "cite": "SBR p.1-882",
+   "absent": [
+    "spring.webflux.multipart.max-file-size",
+    "spring.webflux.multipart.max-request-size"
+   ],
+   "claim": "round 11: the webflux key max-file-size does not exist"
+  },
+  {
+   "cite": "SBR p.75",
+   "absent": [
+    "native-image",
+    "GraalVM"
+   ],
+   "claim": "round 11: negative per page: p.75 does not deal with native image"
+  },
+  {
+   "cite": "SBR p.518",
+   "absent": [
+    "Zipkin tracer bean example",
+    "HttpExchangeTracer("
+   ],
+   "claim": "round 11: negative per page: HttpExchangeTracer without a code example"
+  },
+  {
+   "cite": "SBR p.785",
+   "absent": [
+    "time-to-live-seconds",
+    "maxHops"
+   ],
+   "claim": "round 11: negative per page: no other Ganglia TTL keys"
+  },
+  {
+   "cite": "SBR p.702",
+   "contains": [
+    "commons-pool2",
+    "pooling is implicitly enabled in sentinel mode",
+    "use a negative value to block indefinitely",
+    "-1ms"
+   ],
+   "claim": "R12: Jedis pool (enabled, sentinel, max-wait)"
+  },
+  {
+   "cite": "SBR p.703",
+   "contains": [
+    "time between eviction runs are positive",
+    "idle object evictor thread starts",
+    "spring.redis.lettuce.pool.max-active"
+   ],
+   "claim": "R12: min-idle and eviction (Jedis/Lettuce)"
+  },
+  {
+   "cite": "SBR p.704",
+   "contains": [
+    "spring.redis.lettuce.pool.max-wait",
+    "spring.redis.lettuce.pool.min-idle",
+    "both it and time between eviction runs are positive"
+   ],
+   "claim": "R12: Lettuce pool max-wait/min-idle"
+  },
+  {
+   "cite": "SBR p.674",
+   "contains": [
+    "use-code-as-default-",
+    "nosuchmessageexception",
+    "recommended during development only"
+   ],
+   "claim": "R12: use-code-as-default-message -> NoSuchMessageException"
+  },
+  {
+   "cite": "SBR p.48",
+   "contains": [
+    "every class from every jar is read",
+    "reversed domain name",
+    "default servlet container starter used by spring-boot-starter-web",
+    "embedded reactive http server"
+   ],
+   "claim": "R12: default package and Tomcat/reactor-netty starters"
+  },
+  {
+   "cite": "SBR p.543",
+   "contains": [
+    "set \"java_opts=-xms256m -xmx2048m\"",
+    "@enablecaching",
+    "caching abstraction",
+    "@enablewebsecurity",
+    "compilerautoconfiguration"
+   ],
+   "claim": "R12: JAVA_OPTS on Windows and grab hints table"
+  },
+  {
+   "cite": "SBR p.355",
+   "contains": [
+    "a reactivetransactionmanager is not auto-configured",
+    "enables the repository support as well as transaction management",
+    "@enableneo4jrepositories"
+   ],
+   "claim": "R12: reactive Neo4j without ReactiveTransactionManager"
+  },
+  {
+   "cite": "SBR p.356",
+   "contains": [
+    "reactiveneo4jtransactionmanager",
+    "reactivedatabaseselectionprovider"
+   ],
+   "claim": "R12: ReactiveNeo4jTransactionManager bean"
+  },
+  {
+   "cite": "SBR p.40",
+   "contains": [
+    "spring-boot-properties-migrator",
+    "added late to the environment"
+   ],
+   "claim": "R12: migrator only on p.40"
+  },
+  {
+   "cite": "SBR p.857",
+   "absent": [
+    "spring cloud"
+   ],
+   "claim": "R12: p.857 does not describe Spring Cloud (only the artifact name log4j-spring-cloud-config)"
+  },
+  {
+   "cite": "SBR p.499",
+   "contains": [
+    "supported on @controller classes"
+   ],
+   "claim": "@Timed only on controllers (MVC/WebFlux) and Jersey"
+  },
+  {
+   "cite": "SBR p.501",
+   "contains": [
+    "supported on request-handling classes"
+   ],
+   "claim": "@Timed only on controllers (MVC/WebFlux) and Jersey (Jersey)"
+  },
+  {
+   "cite": "SBR p.510",
+   "contains": [
+    "combine class-level and method-level"
+   ],
+   "claim": "@Timed on class + method"
+  },
+  {
+   "cite": "SBR p.512",
+   "contains": [
+    "separate metric name",
+    "stacked with a short",
+    "micrometer documentation"
+   ],
+   "claim": "long task timer with a separate name; Micrometer pointer"
+  },
+  {
+   "cite": "SBR p.648",
+   "contains": [
+    "if docker is running locally"
+   ],
+   "claim": "Testcontainers starts a container if Docker is local"
+  },
+  {
+   "cite": "SBR p.649",
+   "contains": [
+    "neo4j::getboltur"
+   ],
+   "claim": "neo4j::getBoltUrl"
+  },
+  {
+   "cite": "SBR p.650",
+   "contains": [
+    "companion object",
+    "neo4j.boltur"
+   ],
+   "claim": "Kotlin Neo4j boltUrl"
+  },
+  {
+   "cite": "SBR p.406",
+   "contains": [
+    "single hazelcastinstance",
+    "spring.cache.jcache.config",
+    "no further customization"
+   ],
+   "claim": "single HazelcastInstance and wrapped CacheManager"
+  },
+  {
+   "cite": "SBR p.340",
+   "contains": [
+    "connectionfactoryoptions.port",
+    "connectionfactoryoptionsbuildercustomizer"
+   ],
+   "claim": "R2DBC customizer port"
+  },
+  {
+   "cite": "SBR p.341",
+   "contains": [
+    "postgresqlconnectionfactoryprovider.options",
+    "statement_timeout"
+   ],
+   "claim": "R2DBC customizer Postgres"
+  },
+  {
+   "cite": "SBR p.593",
+   "contains": [
+    "defaultservlet",
+    "spring.mvc.view.prefix"
+   ],
+   "claim": "InternalResourceViewResolver and DefaultServlet"
+  },
+  {
+   "cite": "SBR p.717",
+   "contains": [
+    "set it to 0 to wait forever"
+   ],
+   "claim": "activemq.send-timeout"
+  },
+  {
+   "cite": "SBR p.732",
+   "contains": [
+    "set it to zero to wait forever"
+   ],
+   "claim": "rabbitmq connection-timeout/channel-rpc-timeout"
+  },
+  {
+   "cite": "SBR p.236",
+   "contains": [
+    "exists and is not equal to false",
+    "havingvalue and matchifmissing"
+   ],
+   "claim": "@ConditionalOnProperty without havingValue: exists and != false"
+  },
+  {
+   "cite": "SBR p.236",
+   "contains": [
+    "will not match for applications that are run with an embedded web server"
+   ],
+   "claim": "@ConditionalOnWarDeployment does not match an embedded server"
+  },
+  {
+   "cite": "SBR p.158",
+   "contains": [
+    "unlike a nested @configuration class",
+    "used instead of your application",
+    "used in addition to your application"
+   ],
+   "claim": "nested @Configuration in place of the primary x @TestConfiguration in addition"
+  },
+  {
+   "cite": "SBR p.158",
+   "contains": [
+    "should not be picked up by scanning",
+    "@import(mytestsconfiguration.class)"
+   ],
+   "claim": "top-level @TestConfiguration not scanned; import it"
+  },
+  {
+   "cite": "SBR p.227",
+   "contains": [
+    "hashost(\"other.example.com\")",
+    "redirects are not followed"
+   ],
+   "claim": "TestRestTemplate: hasHost example and redirects"
+  },
+  {
+   "cite": "SBR p.269",
+   "contains": [
+    "errorpageregistrar",
+    "registry.adderrorpages(new errorpage(httpstatus.bad_request, \"/400\"))",
+    "even if you do not have a spring mvc dispatcherservlet"
+   ],
+   "claim": "ErrorPageRegistrar recipe"
+  },
+  {
+   "cite": "SBR p.271",
+   "contains": [
+    "filterregistrationbean",
+    "setdispatchertypes(enumset.allof(dispatchertype.class))",
+    "default filterregistrationbean does not include the error dispatcher type"
+   ],
+   "claim": "FilterRegistrationBean recipe with ERROR dispatcher"
+  },
+  {
+   "cite": "SBR p.771",
+   "contains": [
+    "[down, out_of_service, up,",
+    "unknown]",
+    "slow health indicators"
+   ],
+   "claim": "default severity order and slow health indicator threshold in Appendix A"
+  },
+  {
+   "cite": "SBR p.457",
+   "contains": [
+    "10 seconds",
+    "slow-indicator-threshold",
+    "fatal,down,out-of-service,unknown,up"
+   ],
+   "claim": "slow health indicator warning and custom order example"
+  },
+  {
+   "cite": "SBR p.820",
+   "contains": [
+    "additional-spring-configuration-metadata.json",
+    "optional"
+   ],
+   "claim": "additional-spring-configuration-metadata.json file"
+  },
+  {
+   "cite": "SBR p.813",
+   "contains": [
+    "additional-spring-configuration-metadata.json",
+    "compilejava"
+   ],
+   "claim": "compileJava depends on processResources with additional metadata"
+  },
+  {
+   "cite": "SBR p.236",
+   "absent": [
+    "conditionalonjava"
+   ],
+   "claim": "negative: there is no @ConditionalOnJava on this property/WAR conditions page"
+  }
+ ]
+}

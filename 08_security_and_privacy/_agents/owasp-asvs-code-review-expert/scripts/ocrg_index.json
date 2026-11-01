@@ -1,0 +1,1261 @@
+{
+ "_comment": "OWASP Code Review Guide v2.0 (OCRG) topic index. 'pages' = PDF pages (printed = PDF - 1). 'asvs' = correspondence to ASVS 4.0.3 requirements/sections, which is a package [inference] (the OCRG has no map to ASVS 4.0.3). 'ref' = file in references/.",
+ "convention": "PDF page; printed = PDF - 1 (body)",
+ "topics": [
+  {
+   "id": "fundamentos",
+   "title": "What secure code review is and why to do it; context; SAST needs a human",
+   "keywords": [
+    "secure code review",
+    "code review",
+    "revisao de codigo seguro",
+    "contexto",
+    "risco real",
+    "white-box",
+    "cwe",
+    "desculpas"
+   ],
+   "pages": [
+    10,
+    11,
+    12
+   ],
+   "asvs": [
+    "1.1.1"
+   ],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "pentest-360",
+   "title": "You cannot 'hack your way to secure'; code review + pentest (360 review)",
+   "keywords": [
+    "pentest",
+    "penetration test",
+    "360 review",
+    "black-box",
+    "defense in depth",
+    "hack ourselves secure",
+    "teste de invasao"
+   ],
+   "pages": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "asvs": [],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "conformidade-pci",
+   "title": "Code review and compliance (PCI-DSS 6.3.2, PA-DSS)",
+   "keywords": [
+    "pci",
+    "pci-dss",
+    "pa-dss",
+    "conformidade",
+    "compliance",
+    "regulatorio"
+   ],
+   "pages": [
+    18,
+    19,
+    20
+   ],
+   "asvs": [],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "fatores-do-processo",
+   "title": "Review process factors: risk, purpose/context, LOC, language, resources; review report",
+   "keywords": [
+    "metodologia",
+    "processo de revisao",
+    "relatorio de revisao",
+    "linguagem",
+    "linhas de codigo",
+    "s-sdlc"
+   ],
+   "pages": [
+    21,
+    22
+   ],
+   "asvs": [
+    "1.1.1"
+   ],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "quando-revisar",
+   "title": "When to review: pre-commit, post-commit, audits; agile vs waterfall; who reviews",
+   "keywords": [
+    "pre-commit",
+    "post-commit",
+    "auditoria de codigo",
+    "agile",
+    "waterfall",
+    "security sprint",
+    "quem deve revisar",
+    "satelites",
+    "bsimm"
+   ],
+   "pages": [
+    23,
+    24
+   ],
+   "asvs": [
+    "1.1.1"
+   ],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "abordagem-por-risco",
+   "title": "Risk-based approach: risk techniques, module criteria, resolution (reduce/accept/avoid)",
+   "keywords": [
+    "risco",
+    "baseada em risco",
+    "risk based",
+    "quantitativo",
+    "qualitativo",
+    "delphi",
+    "ease of exposure",
+    "value of loss",
+    "reduce",
+    "accept",
+    "avoid"
+   ],
+   "pages": [
+    25,
+    26
+   ],
+   "asvs": [
+    "1.1.2"
+   ],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "preparacao-e-contexto",
+   "title": "Preparation: understand business rules, sensitive data, roles, app type, design; design questions; checklist of areas",
+   "keywords": [
+    "preparacao",
+    "contexto",
+    "regras de negocio",
+    "descoberta",
+    "design review",
+    "perguntas de design",
+    "papeis",
+    "dados sensiveis"
+   ],
+   "pages": [
+    27,
+    28,
+    29,
+    30
+   ],
+   "asvs": [
+    "1.1.4",
+    "1.1.5",
+    "1.8.1"
+   ],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "analise-estatica",
+   "title": "Static analysis: scanners vs analyzers; advantages and limitations; tool choice",
+   "keywords": [
+    "analise estatica",
+    "static analysis",
+    "sast",
+    "scanner",
+    "falso positivo",
+    "ferramenta",
+    "taint"
+   ],
+   "pages": [
+    30,
+    31,
+    32
+   ],
+   "asvs": [
+    "10.1.1",
+    "14.1.1"
+   ],
+   "ref": "ocrg-analise-estatica-e-crawling.md"
+  },
+  {
+   "id": "source-to-sink",
+   "title": "Source-to-sink analysis; enumerate all instances of a flaw",
+   "keywords": [
+    "source to sink",
+    "source-to-sink",
+    "sink",
+    "fonte",
+    "taint analysis",
+    "fluxo de dados"
+   ],
+   "pages": [
+    18,
+    31,
+    189,
+    190
+   ],
+   "asvs": [],
+   "ref": "ocrg-analise-estatica-e-crawling.md"
+  },
+  {
+   "id": "threat-modeling",
+   "title": "Threat modeling applied to review: decompose the application, entry points, assets, trust levels, DFD; categories; countermeasures",
+   "keywords": [
+    "threat model",
+    "threat modeling",
+    "modelagem de ameacas",
+    "dfd",
+    "data flow diagram",
+    "entry point",
+    "asset",
+    "trust level",
+    "superficie de ataque",
+    "attack surface"
+   ],
+   "pages": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    39,
+    201,
+    202,
+    203
+   ],
+   "asvs": [
+    "1.1.2",
+    "1.1.4",
+    "1.1.5"
+   ],
+   "ref": "ocrg-threat-modeling-aplicado.md"
+  },
+  {
+   "id": "stride-dread",
+   "title": "STRIDE, ASF, and DREAD; Risk = Likelihood x Impact; ranking example",
+   "keywords": [
+    "stride",
+    "dread",
+    "asf",
+    "risco",
+    "likelihood",
+    "impact",
+    "spoofing",
+    "tampering",
+    "repudiation"
+   ],
+   "pages": [
+    36,
+    37,
+    38,
+    39,
+    204,
+    205
+   ],
+   "asvs": [],
+   "ref": "ocrg-threat-modeling-aplicado.md"
+  },
+  {
+   "id": "metricas",
+   "title": "Review metrics: LOC, function point, defect/risk density, cyclomatic complexity, bad fix probability, rates",
+   "keywords": [
+    "metricas",
+    "complexidade ciclomatica",
+    "cyclomatic",
+    "defect density",
+    "risk density",
+    "inspection rate",
+    "bad fix"
+   ],
+   "pages": [
+    40,
+    41,
+    42,
+    43
+   ],
+   "asvs": [],
+   "ref": "ocrg-visao-geral-e-metodologia.md"
+  },
+  {
+   "id": "crawling",
+   "title": "Code crawling: scan for sensitive APIs/keywords (.NET, Java, ASP, JS/AJAX, C++/Apache)",
+   "keywords": [
+    "crawling",
+    "code crawling",
+    "grep",
+    "palavras-chave",
+    "strings para buscar",
+    "apendice c"
+   ],
+   "pages": [
+    43,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218
+   ],
+   "asvs": [],
+   "ref": "ocrg-analise-estatica-e-crawling.md"
+  },
+  {
+   "id": "injecao-sql",
+   "title": "A1 Injection: SQL injection (concatenation, blind, PHP, .NET, Java)",
+   "keywords": [
+    "sql injection",
+    "injecao sql",
+    "sqli",
+    "concatenacao",
+    "blind sql",
+    "php sql",
+    "addslashes",
+    "mysql_real_escape_string",
+    "injection",
+    "injecao"
+   ],
+   "pages": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ],
+   "asvs": [
+    "5.3.4",
+    "5.3.5",
+    "1.5.4",
+    "5.1.3"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "consultas-parametrizadas",
+   "title": "Parameterized queries, stored procedures, safe concatenation, and flexible queries",
+   "keywords": [
+    "parametrizada",
+    "prepared statement",
+    "parameterized",
+    "stored procedure",
+    "preparedstatement",
+    "sqlparameter",
+    "consulta flexivel"
+   ],
+   "pages": [
+    45,
+    46,
+    47,
+    48,
+    50,
+    51
+   ],
+   "asvs": [
+    "5.3.4"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "orm-hql",
+   "title": "ORM is not immune: Hibernate HQL, NHibernate, LINQ",
+   "keywords": [
+    "orm",
+    "hibernate",
+    "hql",
+    "nhibernate",
+    "linq",
+    "entity framework",
+    "criteria api"
+   ],
+   "pages": [
+    50,
+    51,
+    52,
+    53
+   ],
+   "asvs": [
+    "5.3.4"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "json-eval",
+   "title": "JSON: never eval; JSON.parse; do not build HTML from JSON",
+   "keywords": [
+    "json",
+    "eval",
+    "json.parse",
+    "innerhtml",
+    "createtextnode"
+   ],
+   "pages": [
+    52,
+    190,
+    191
+   ],
+   "asvs": [
+    "5.3.6",
+    "5.5.4",
+    "5.2.4"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "csp-headers",
+   "title": "Content Security Policy and HTTP security headers (Table 11)",
+   "keywords": [
+    "csp",
+    "content security policy",
+    "headers",
+    "cabecalhos",
+    "hsts",
+    "strict-transport-security",
+    "x-frame-options",
+    "x-content-type-options",
+    "x-xss-protection"
+   ],
+   "pages": [
+    53,
+    54,
+    55
+   ],
+   "asvs": [
+    "14.4.3",
+    "14.4.5",
+    "14.4.4",
+    "14.4.7"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "validacao-de-entrada",
+   "title": "Input validation: exact match, known good, known bad, canonicalization, business validation, native method wrapper, checklist",
+   "keywords": [
+    "validacao",
+    "validacao de entrada",
+    "input validation",
+    "whitelist",
+    "blacklist",
+    "canonicalizacao",
+    "regex",
+    "request validation",
+    "native",
+    "allow list"
+   ],
+   "pages": [
+    55,
+    56,
+    57,
+    58
+   ],
+   "asvs": [
+    "5.1.3",
+    "5.1.4",
+    "1.5.3",
+    "5.1.1"
+   ],
+   "ref": "ocrg-a1-injecao-e-validacao-de-entrada.md"
+  },
+  {
+   "id": "autenticacao",
+   "title": "A2 Authentication: what to review (TLS at login, messages, lockout, passwords, MFA, SSL client auth)",
+   "keywords": [
+    "autenticacao",
+    "authentication",
+    "login",
+    "senha",
+    "password",
+    "lockout",
+    "mfa",
+    "multi-factor",
+    "client certificate"
+   ],
+   "pages": [
+    60,
+    61,
+    62
+   ],
+   "asvs": [
+    "2.1.1",
+    "2.1.7",
+    "2.1.9",
+    "2.1.10",
+    "2.2.1",
+    "2.4.1"
+   ],
+   "ref": "ocrg-a2-autenticacao-e-sessao.md"
+  },
+  {
+   "id": "esqueci-senha",
+   "title": "Forgot password: patterns and precautions",
+   "keywords": [
+    "esqueci a senha",
+    "forgot password",
+    "recuperacao de senha",
+    "reset de senha"
+   ],
+   "pages": [
+    62,
+    63
+   ],
+   "asvs": [
+    "2.5.1",
+    "2.5.2",
+    "2.5.3",
+    "2.5.6"
+   ],
+   "ref": "ocrg-a2-autenticacao-e-sessao.md"
+  },
+  {
+   "id": "captcha",
+   "title": "CAPTCHA: what to review and design principles",
+   "keywords": [
+    "captcha",
+    "anti-automacao"
+   ],
+   "pages": [
+    63,
+    64
+   ],
+   "asvs": [
+    "2.2.1"
+   ],
+   "ref": "ocrg-a2-autenticacao-e-sessao.md"
+  },
+  {
+   "id": "out-of-band",
+   "title": "Out-of-band communication and two factors (SMS/email/phone)",
+   "keywords": [
+    "out-of-band",
+    "oob",
+    "sms",
+    "dois fatores",
+    "2fa",
+    "two-factor",
+    "pin"
+   ],
+   "pages": [
+    64,
+    65,
+    66
+   ],
+   "asvs": [
+    "2.7.1",
+    "2.7.2",
+    "2.7.3",
+    "2.7.4",
+    "2.2.2"
+   ],
+   "ref": "ocrg-a2-autenticacao-e-sessao.md"
+  },
+  {
+   "id": "sessao",
+   "title": "Session management: ID, cookies, expiration, logout, hijacking/fixation/elevation",
+   "keywords": [
+    "sessao",
+    "session",
+    "cookie",
+    "httponly",
+    "session fixation",
+    "session hijacking",
+    "session id",
+    "timeout",
+    "logout"
+   ],
+   "pages": [
+    66,
+    67,
+    68,
+    69,
+    70
+   ],
+   "asvs": [
+    "3.2.1",
+    "3.2.2",
+    "3.4.1",
+    "3.4.2",
+    "3.3.1",
+    "3.1.1"
+   ],
+   "ref": "ocrg-a2-autenticacao-e-sessao.md"
+  },
+  {
+   "id": "xss",
+   "title": "A3 XSS: types, what to review, context-aware encoding, DOM, eval",
+   "keywords": [
+    "xss",
+    "cross-site scripting",
+    "output encoding",
+    "encoding",
+    "htmlencode",
+    "dom xss",
+    "atributo html",
+    "contexto"
+   ],
+   "pages": [
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+   ],
+   "asvs": [
+    "5.3.3",
+    "5.3.1",
+    "5.2.1",
+    "14.4.3"
+   ],
+   "ref": "ocrg-a3-xss-html5-e-javascript-cliente.md"
+  },
+  {
+   "id": "idor",
+   "title": "A4 Insecure direct object reference; data binding; over-posting",
+   "keywords": [
+    "idor",
+    "insecure direct object reference",
+    "referencia direta",
+    "data binding",
+    "mass assignment",
+    "over-posting",
+    "objeto"
+   ],
+   "pages": [
+    79,
+    80,
+    81,
+    82
+   ],
+   "asvs": [
+    "4.2.1",
+    "4.1.2",
+    "5.1.2"
+   ],
+   "ref": "ocrg-a4-a7-a8-a10-acesso-csrf-redirecionamento.md"
+  },
+  {
+   "id": "misconfiguracao",
+   "title": "A5 Misconfiguration: Struts, JEE (web.xml, ejb-jar.xml, annotations), Tomcat, Jetty, JBoss, WebLogic, IIS/web.config",
+   "keywords": [
+    "misconfiguracao",
+    "security misconfiguration",
+    "struts",
+    "web.xml",
+    "tomcat",
+    "jetty",
+    "jboss",
+    "weblogic",
+    "iis",
+    "web.config",
+    "jee",
+    "configuracao"
+   ],
+   "pages": [
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
+   ],
+   "asvs": [
+    "14.1.3",
+    "14.3.2",
+    "14.3.3",
+    "14.2.2"
+   ],
+   "ref": "ocrg-a5-misconfiguracao-e-a9-componentes.md"
+  },
+  {
+   "id": "assemblies-ofuscacao",
+   "title": "Strong names, round tripping, and obfuscation (.NET)",
+   "keywords": [
+    "strong name",
+    "assembly",
+    "ofuscacao",
+    "obfuscation",
+    "round tripping",
+    "ildasm",
+    "dotfuscator"
+   ],
+   "pages": [
+    107,
+    108,
+    109,
+    110,
+    111
+   ],
+   "asvs": [],
+   "ref": "ocrg-a5-misconfiguracao-e-a9-componentes.md"
+  },
+  {
+   "id": "dotnet-fxcop",
+   "title": ".NET: Forms authentication, CAS, exceptions, FxCop (Tables 16-17)",
+   "keywords": [
+    "fxcop",
+    ".net",
+    "forms authentication",
+    "code access security",
+    "viewstate",
+    "customerrors"
+   ],
+   "pages": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+   ],
+   "asvs": [
+    "14.3.2"
+   ],
+   "ref": "ocrg-a5-misconfiguracao-e-a9-componentes.md"
+  },
+  {
+   "id": "criptografia-dados-sensiveis",
+   "title": "A6 Sensitive data exposure: cryptographic controls, in transit and at rest, libraries, keys",
+   "keywords": [
+    "criptografia",
+    "cryptography",
+    "dados sensiveis",
+    "sensitive data",
+    "encryption",
+    "chave",
+    "key",
+    "fips",
+    "des",
+    "aes",
+    "bibliotecas"
+   ],
+   "pages": [
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128
+   ],
+   "asvs": [
+    "6.1.1",
+    "6.2.2",
+    "6.2.5",
+    "8.3.7",
+    "1.6.1"
+   ],
+   "ref": "ocrg-a6-dados-sensiveis-e-criptografia.md"
+  },
+  {
+   "id": "tls-em-transito",
+   "title": "Protection in transit: TLS (login, internal, HSTS, certificates, key size)",
+   "keywords": [
+    "tls",
+    "ssl",
+    "transporte",
+    "https",
+    "hsts",
+    "certificado",
+    "wildcard"
+   ],
+   "pages": [
+    119,
+    120,
+    121,
+    122
+   ],
+   "asvs": [
+    "9.1.1",
+    "9.1.2",
+    "9.1.3",
+    "9.2.2",
+    "14.4.5"
+   ],
+   "ref": "ocrg-a6-dados-sensiveis-e-criptografia.md"
+  },
+  {
+   "id": "hash-salt",
+   "title": "Hash and salt: common mistakes, unique salt, MD5/SHA-1",
+   "keywords": [
+    "hash",
+    "salt",
+    "rainbow table",
+    "md5",
+    "sha-1",
+    "sha-256",
+    "senha armazenada"
+   ],
+   "pages": [
+    128,
+    129,
+    130,
+    131
+   ],
+   "asvs": [
+    "2.4.1",
+    "2.4.2",
+    "6.2.5"
+   ],
+   "ref": "ocrg-a6-dados-sensiveis-e-criptografia.md"
+  },
+  {
+   "id": "superficie-de-ataque",
+   "title": "Reducing the attack surface: questions for the change under review",
+   "keywords": [
+    "superficie de ataque",
+    "attack surface",
+    "rsq",
+    "backup",
+    "upload",
+    "pii minimo"
+   ],
+   "pages": [
+    131,
+    132,
+    133
+   ],
+   "asvs": [
+    "1.1.4",
+    "1.14.1",
+    "1.8.1"
+   ],
+   "ref": "ocrg-a6-dados-sensiveis-e-criptografia.md"
+  },
+  {
+   "id": "controle-de-acesso-funcao",
+   "title": "A7 Function-level authorization: RBAC/ACL, MVC, default deny, complete mediation",
+   "keywords": [
+    "autorizacao",
+    "authorization",
+    "controle de acesso",
+    "access control",
+    "rbac",
+    "acl",
+    "default deny",
+    "complete mediation",
+    "403",
+    "maker/checker"
+   ],
+   "pages": [
+    135,
+    136,
+    137,
+    138,
+    139
+   ],
+   "asvs": [
+    "4.1.1",
+    "1.4.1",
+    "1.4.4",
+    "4.1.3",
+    "4.1.5",
+    "13.1.4"
+   ],
+   "ref": "ocrg-a4-a7-a8-a10-acesso-csrf-redirecionamento.md"
+  },
+  {
+   "id": "csrf",
+   "title": "A8 CSRF: what to review, defenses that do NOT work, synchronizer token, double submit, referer/origin, challenge-response",
+   "keywords": [
+    "csrf",
+    "cross-site request forgery",
+    "synchronizer token",
+    "double submit",
+    "viewstate",
+    "origin",
+    "referer"
+   ],
+   "pages": [
+    141,
+    142,
+    143,
+    144,
+    145,
+    146
+   ],
+   "asvs": [
+    "4.2.2",
+    "13.2.3",
+    "3.4.3"
+   ],
+   "ref": "ocrg-a4-a7-a8-a10-acesso-csrf-redirecionamento.md"
+  },
+  {
+   "id": "componentes-vulneraveis",
+   "title": "A9 Components with known vulnerabilities: track, control the ingredients, review the integration",
+   "keywords": [
+    "componentes",
+    "dependencias",
+    "bibliotecas",
+    "third party",
+    "dependency check",
+    "heartbleed",
+    "terceiros"
+   ],
+   "pages": [
+    148,
+    149
+   ],
+   "asvs": [
+    "14.2.1",
+    "14.2.4",
+    "14.2.5",
+    "14.2.2",
+    "1.14.3"
+   ],
+   "ref": "ocrg-a5-misconfiguracao-e-a9-componentes.md"
+  },
+  {
+   "id": "redirects-forwards",
+   "title": "A10 Unvalidated redirects and forwards",
+   "keywords": [
+    "redirect",
+    "forward",
+    "open redirect",
+    "redirecionamento",
+    "sendredirect",
+    "response.redirect"
+   ],
+   "pages": [
+    151,
+    152,
+    153,
+    154
+   ],
+   "asvs": [
+    "5.1.5"
+   ],
+   "ref": "ocrg-a4-a7-a8-a10-acesso-csrf-redirecionamento.md"
+  },
+  {
+   "id": "html5-mensageria-cors-websockets",
+   "title": "HTML5: Web Messaging (postMessage), CORS, WebSockets, Server-Sent Events",
+   "keywords": [
+    "html5",
+    "postmessage",
+    "web messaging",
+    "cors",
+    "websocket",
+    "websockets",
+    "server-sent events",
+    "eventsource",
+    "origin"
+   ],
+   "pages": [
+    155,
+    156,
+    157,
+    158
+   ],
+   "asvs": [
+    "14.5.2",
+    "14.5.3"
+   ],
+   "ref": "ocrg-a3-xss-html5-e-javascript-cliente.md"
+  },
+  {
+   "id": "same-origin-policy",
+   "title": "Same Origin Policy: what to review in URLs and MIME",
+   "keywords": [
+    "same origin",
+    "sop",
+    "mime",
+    "idn homograph",
+    "url",
+    "authority"
+   ],
+   "pages": [
+    159,
+    160
+   ],
+   "asvs": [],
+   "ref": "ocrg-a3-xss-html5-e-javascript-cliente.md"
+  },
+  {
+   "id": "logging",
+   "title": "Reviewing logging code: where to log, what to log, and what NOT to log",
+   "keywords": [
+    "log",
+    "logging",
+    "auditoria",
+    "log injection",
+    "siem",
+    "nao logar",
+    "senha no log"
+   ],
+   "pages": [
+    161,
+    162,
+    163
+   ],
+   "asvs": [
+    "7.1.1",
+    "7.1.2",
+    "7.1.3",
+    "7.1.4",
+    "7.3.1",
+    "7.3.3",
+    "7.3.4"
+   ],
+   "ref": "ocrg-logging-erros-alertas-e-defesa-ativa.md"
+  },
+  {
+   "id": "tratamento-de-erros",
+   "title": "Error handling: fail securely, generic page, exceptions by language, catch order, finally/RAII",
+   "keywords": [
+    "erro",
+    "excecao",
+    "exception",
+    "error handling",
+    "catch",
+    "finally",
+    "stack trace",
+    "fail securely",
+    "generica"
+   ],
+   "pages": [
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175
+   ],
+   "asvs": [
+    "7.4.1",
+    "7.4.2",
+    "7.4.3",
+    "4.1.5",
+    "6.2.1"
+   ],
+   "ref": "ocrg-logging-erros-alertas-e-defesa-ativa.md"
+  },
+  {
+   "id": "alertas-de-seguranca",
+   "title": "Reviewing security alerts: risk scoring, honey accounts, proportional reaction",
+   "keywords": [
+    "alertas",
+    "security alerts",
+    "risk score",
+    "honey account",
+    "siem",
+    "deteccao"
+   ],
+   "pages": [
+    176,
+    177,
+    178
+   ],
+   "asvs": [
+    "11.1.7",
+    "11.1.8",
+    "8.1.4"
+   ],
+   "ref": "ocrg-logging-erros-alertas-e-defesa-ativa.md"
+  },
+  {
+   "id": "defesa-ativa",
+   "title": "Active defense: detection points, event store, responses, AppSensor/CAPEC",
+   "keywords": [
+    "active defense",
+    "defesa ativa",
+    "appsensor",
+    "capec",
+    "detection point",
+    "event store",
+    "resposta"
+   ],
+   "pages": [
+    179,
+    180,
+    181
+   ],
+   "asvs": [
+    "11.1.7",
+    "11.1.8"
+   ],
+   "ref": "ocrg-logging-erros-alertas-e-defesa-ativa.md"
+  },
+  {
+   "id": "race-conditions",
+   "title": "Race conditions: what to look for in C#/Java/statics",
+   "keywords": [
+    "race condition",
+    "concorrencia",
+    "thread",
+    "synchronized",
+    "estatico",
+    "lock"
+   ],
+   "pages": [
+    182,
+    183
+   ],
+   "asvs": [
+    "1.11.2",
+    "1.11.3",
+    "11.1.6"
+   ],
+   "ref": "ocrg-concorrencia-e-memoria.md"
+  },
+  {
+   "id": "buffer-overruns",
+   "title": "Buffer overruns, format strings, integer overflow (C/C++)",
+   "keywords": [
+    "buffer overflow",
+    "buffer overrun",
+    "strcpy",
+    "printf",
+    "format string",
+    "integer overflow",
+    "memoria",
+    "c++"
+   ],
+   "pages": [
+    184,
+    185,
+    186,
+    187,
+    188
+   ],
+   "asvs": [
+    "5.4.1",
+    "5.4.2",
+    "5.4.3",
+    "14.1.2"
+   ],
+   "ref": "ocrg-concorrencia-e-memoria.md"
+  },
+  {
+   "id": "javascript-cliente",
+   "title": "Client-side JavaScript: DOM XSS, sources/sinks, eval, hybrid analysis",
+   "keywords": [
+    "javascript",
+    "dom xss",
+    "eval",
+    "document.write",
+    "innerhtml",
+    "taint",
+    "client side",
+    "ajax"
+   ],
+   "pages": [
+    189,
+    190,
+    191
+   ],
+   "asvs": [
+    "5.3.3",
+    "5.2.4",
+    "5.5.4",
+    "10.3.2"
+   ],
+   "ref": "ocrg-a3-xss-html5-e-javascript-cliente.md"
+  },
+  {
+   "id": "dos-donts-agile-ci",
+   "title": "Reviewer's Do's and Don'ts; agile, CI, and TDD; agile red flags",
+   "keywords": [
+    "dos and donts",
+    "boas praticas do revisor",
+    "agile",
+    "ci",
+    "continuous integration",
+    "tdd",
+    "red flag"
+   ],
+   "pages": [
+    193,
+    194,
+    195,
+    196
+   ],
+   "asvs": [
+    "1.1.3"
+   ],
+   "ref": "ocrg-checklist-e-apendices.md"
+  },
+  {
+   "id": "checklist-apendice-a",
+   "title": "Appendix A: Code Review Checklist (78 table rows)",
+   "keywords": [
+    "checklist",
+    "apendice a",
+    "pass fail",
+    "lista de verificacao"
+   ],
+   "pages": [
+    197,
+    198,
+    199,
+    200
+   ],
+   "asvs": [
+    "1.1.7"
+   ],
+   "ref": "ocrg-checklist-e-apendices.md"
+  },
+  {
+   "id": "exemplo-threat-model",
+   "title": "Appendix B: example threat model (college library) and DREAD ranking",
+   "keywords": [
+    "exemplo threat model",
+    "apendice b",
+    "biblioteca",
+    "dread score"
+   ],
+   "pages": [
+    201,
+    202,
+    203,
+    204,
+    205
+   ],
+   "asvs": [
+    "1.1.2"
+   ],
+   "ref": "ocrg-threat-modeling-aplicado.md"
+  }
+ ]
+}

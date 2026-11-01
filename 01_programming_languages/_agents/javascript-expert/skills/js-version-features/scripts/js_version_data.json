@@ -1,0 +1,243 @@
+{
+  "sources_overview": {
+    "Spec": "ECMA-262 17th edition (ECMAScript 2026, Spec p.25). Official standard; it barely states the edition in which features were introduced, apart from occasional notes and Annexes E (p.865) and F (p.867-869).",
+    "EJpt": "Eloquent JavaScript PT-BR (504 p.). Declares it uses 'the 2024 version of JavaScript' (EJpt p.9; the 4th edition is an [inference]). It dates only class, Symbol, arrow functions and ES modules to 2015, and var/CommonJS as pre-2015.",
+    "EJ1": "Eloquent JavaScript (file named EN-3ed, actually the 1st edition from 2007 revised until Nov/2013, EJ1 p.247). Everything in it is [DATED]."
+  },
+  "items": [
+    {
+      "name": "History: ES3, ES4, ES5, ES6 and ES2024/ES2026",
+      "keywords": ["es3", "es4", "es5", "es6", "es2015", "es2024", "es2026", "historia", "history", "edicoes", "editions"],
+      "category": "dated",
+      "version": "ES3 (~2000-2010), v4 (abandoned in 2008), ES5 (2009), ES6 (2015), ES2024 (EJpt), ES2026 17th ed. (Spec)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Historical overview of the versions in EJpt; EJ1 mentions that ES5 is already out and cites 'Harmony' in 2011; the Spec defines the 17th edition (ECMAScript 2026).",
+      "citations": "EJpt p.9; EJ1 p.6; Spec p.25"
+    },
+    {
+      "name": "class (class syntax)",
+      "keywords": ["class", "classes", "extends", "constructor", "super"],
+      "category": "dated",
+      "version": "ECMAScript 2015 (ES6)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Defined since ECMAScript 2015 as a concise form of the constructor + prototype pattern; a class body is always strict mode; calling it without new throws TypeError. Class fields and private # members have no stated version.",
+      "citations": "Spec p.29, p.376, p.384-385; EJpt p.131-134, p.169-170"
+    },
+    {
+      "name": "Symbol (primitive type and Symbol function)",
+      "keywords": ["symbol", "symbols", "iterator", "hasinstance", "unscopables"],
+      "category": "dated",
+      "version": "2015 (stated by EJpt; the Spec does not state the edition)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Added in 2015 according to EJpt; unique, immutable values used as collision-free property keys; calling with new throws TypeError.",
+      "citations": "EJpt p.141-142; Spec p.51-53, p.478"
+    },
+    {
+      "name": "Arrow functions (=>)",
+      "keywords": ["arrow", "=>", "seta"],
+      "category": "dated",
+      "version": "2015 (stated by EJpt; the Spec does not state the edition)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Added in 2015 according to EJpt; they have no this, arguments, super or new.target of their own and cannot be called with new.",
+      "citations": "EJpt p.56, p.128; Spec p.363-364, p.476"
+    },
+    {
+      "name": "ES modules (import / export)",
+      "keywords": ["import", "export", "module", "esm", "modulos", "modules"],
+      "category": "dated",
+      "version": "ECMAScript 2015 (stated by EJpt; the Spec does not state the edition)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Since ECMAScript 2015 there are scripts and modules; modules have their own scope and are automatically strict. Loading and specifier resolution are delegated to the host [HOST].",
+      "citations": "EJpt p.169, p.221-223; Spec p.28, p.178, p.247, p.432-433"
+    },
+    {
+      "name": "let and const (block-scoped lexical declarations and TDZ)",
+      "keywords": ["let", "const", "tdz", "bloco", "block", "var"],
+      "category": "dated",
+      "version": "ECMAScript 2015 (var is pre-2015 [DATED])",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "EJpt presents var as the pre-2015 form and let/const with block scope; EJ1 mentions let only as a future promise of 'Harmony'; Annex F records the let grammar in ES2015.",
+      "citations": "EJpt p.30-32, p.52-53; EJ1 p.34; Spec p.326-329, p.867"
+    },
+    {
+      "name": "CommonJS (require / module.exports / exports) and the IIFE pattern",
+      "keywords": ["commonjs", "require", "exports", "iife", "module.exports"],
+      "category": "dated",
+      "version": "Pre-2015 [DATED] [HOST]",
+      "label": "[DATED] [HOST]",
+      "detail": "Improvised system predating 2015 based on functions and require; EJpt states there is no longer any reason to write new programs in CommonJS. EJpt uses the `exports` object and the `require` function; `module.exports` and the acronym IIFE do not appear in the sources (EJpt describes the immediately invoked function expression in full, p.225) [extrapolation].",
+      "citations": "EJpt p.225-229; EJ1 p.167-172"
+    },
+    {
+      "name": "await (reduced number of Jobs in ES2019) and async/await",
+      "keywords": ["async", "await", "jobs", "es2019", "then"],
+      "category": "dated",
+      "version": "async/await syntax: version not stated in the sources; await Job reduction: ES2019",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "The edition in which async/await entered is not in the sources, but Annex F records that in ES2019 the number of Jobs enqueued by await was reduced, which can change the observable order between then() and await.",
+      "citations": "Spec p.387-389, p.869; EJpt p.249-250"
+    },
+    {
+      "name": "Atomics.notify (renamed from Atomics.wake)",
+      "keywords": ["atomics", "wake", "notify", "es2019"],
+      "category": "dated",
+      "version": "ECMAScript 2019",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Atomics.wake was renamed to Atomics.notify in ES2019 to avoid confusion with Atomics.wait.",
+      "citations": "Spec p.869"
+    },
+    {
+      "name": "Tagged templates (canonicalization of template objects by Parse Node)",
+      "keywords": ["template", "tagged", "raw", "es2018", "parse node"],
+      "category": "dated",
+      "version": "Canonicalization change in ECMAScript 2018 (template literal syntax: entry version not stated)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Since ES2018 template objects are canonicalized by Parse Node (location in the source code) and not by all occurrences of the same literal in the Realm.",
+      "citations": "Spec p.288-290, p.867"
+    },
+    {
+      "name": "Unicode 8.0.0 (U+180E in trim), latest Unicode version and arguments.caller",
+      "keywords": ["unicode", "180e", "trim", "caller", "es2016", "es2017"],
+      "category": "dated",
+      "version": "ES2016 (Unicode 8.0.0 / U+180E) and ES2017 (latest Unicode; removal of arguments.caller; for-in with initializer in sloppy mode)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "In ES2016 U+180E stopped being whitespace ('\\u180E'.trim().length went from 0 to 1); in ES2017 the Spec started requiring the latest Unicode version, dropped the arguments.caller requirement that threw an error and again allowed for (var x = ... in ...) in non-strict mode.",
+      "citations": "Spec p.222, p.857-858, p.867-868"
+    },
+    {
+      "name": "Object.freeze / keys / isFrozen / isSealed / isExtensible / getPrototypeOf with primitives",
+      "keywords": ["freeze", "isfrozen", "issealed", "isextensible", "keys", "getprototypeof", "getownpropertydescriptor", "primitivo", "primitive"],
+      "category": "dated",
+      "version": "Change in the handling of non-objects in ECMAScript 2015",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "Before ES2015 they threw TypeError for a non-object argument; since ES2015 they treat primitives as a non-extensible object (freeze/isFrozen/isSealed/isExtensible/preventExtensions/seal) or apply ToObject (keys/getPrototypeOf/getOwnPropertyNames/getOwnPropertyDescriptor).",
+      "citations": "Spec p.462-466, p.868-869"
+    },
+    {
+      "name": "Binary and octal literals in ToNumber ('0b101', '0o17') and RegExp flags on the prototype",
+      "keywords": ["0b", "0o", "tonumber", "binario", "binary", "octal", "regexp", "source", "flags"],
+      "category": "dated",
+      "version": "ECMAScript 2015 (Annexes E and F)",
+      "label": "[VERSION-DEPENDENT]",
+      "detail": "In ES2015 ToNumber on a String began to recognize '0b' and '0o' (previously NaN); the RegExp source/global/ignoreCase/multiline went from instance properties to getters on RegExp.prototype; Date.prototype and RegExp.prototype stopped being instances of Date/RegExp.",
+      "citations": "Spec p.613, p.865, p.867, p.869"
+    },
+    {
+      "name": "Operators ?., ??, ??=, &&=, ||=, ** and BigInt / numeric separators _",
+      "keywords": ["?.", "??", "??=", "&&=", "||=", "**", "optional chaining", "nullish", "bigint", "separador", "separator"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec / EJpt)",
+      "label": "[from source]",
+      "detail": "Defined in the 2026 Spec and used in EJpt, but none of the three sources states in which ECMAScript edition they were introduced.",
+      "citations": "Spec p.53-55, p.256-260, p.290-291, p.297-298, p.313-316; EJpt p.16, p.26, p.98"
+    },
+    {
+      "name": "Private fields and methods (#x), instance fields and static {} blocks",
+      "keywords": ["#", "privado", "private", "static block", "campos de classe", "class fields"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec / EJpt)",
+      "label": "[from source]",
+      "detail": "Private # members and class fields are in the 2026 Spec and in EJpt, and static {} blocks in the 2026 Spec, with no stated entry edition.",
+      "citations": "Spec p.110-111, p.253, p.310, p.376-386; EJpt p.132-134"
+    },
+    {
+      "name": "Object.hasOwn, Object.groupBy and Map.groupBy",
+      "keywords": ["hasown", "groupby", "object.hasown", "object.groupby", "map.groupby"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Object.hasOwn is in the Spec (p.464) and in EJpt (p.138); Object.groupBy (returns an object with a null prototype, p.464) and Map.groupBy (returns a Map, p.677) are only in the Spec. None has a stated entry edition.",
+      "citations": "Spec p.464, p.677; EJpt p.138"
+    },
+    {
+      "name": "Array: at, findLast, findLastIndex, toSorted, toReversed, toSpliced, with, fromAsync, flat, flatMap",
+      "keywords": ["at", "findlast", "findlastindex", "tosorted", "toreversed", "tospliced", "fromasync", "flat", "flatmap"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Defined in clause 23.1 of the 2026 Spec with no indication of the edition in which they entered.",
+      "citations": "Spec p.617-619, p.623-625, p.640-643"
+    },
+    {
+      "name": "Set: union, intersection, difference, symmetricDifference, isSubsetOf, isSupersetOf, isDisjointFrom",
+      "keywords": ["set", "union", "intersection", "difference", "symmetricdifference", "issubsetof", "issupersetof", "isdisjointfrom"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Set algebra operations on Set.prototype; they require a set-like argument (passing a plain Array throws TypeError).",
+      "citations": "Spec p.682-683, p.685-690"
+    },
+    {
+      "name": "Iterator, Iterator.from, Iterator.concat and Iterator helpers (map, filter, take, drop, toArray...)",
+      "keywords": ["iterator", "iterator.from", "iterator.concat", "take", "drop", "toarray"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Defined in clause 27.1 of the 2026 Spec (Spec p.753-761) with no stated entry edition.",
+      "citations": "Spec p.753-761"
+    },
+    {
+      "name": "Promise: all, allSettled, any, race, try, withResolvers and AggregateError / Error cause",
+      "keywords": ["promise", "allsettled", "any", "race", "withresolvers", "promise.try", "aggregateerror", "cause"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Promise and Promise.all are in the Spec and in EJpt; allSettled, any (AggregateError), race, try, withResolvers and the { cause } option of Error are in the Spec with no stated entry edition.",
+      "citations": "Spec p.482-484, p.487, p.764-779; EJpt p.240-255"
+    },
+    {
+      "name": "Float16Array, Math.f16round, Math.sumPrecise, Uint8Array base64/hex, RegExp.escape, JSON.rawJSON",
+      "keywords": ["float16array", "f16round", "sumprecise", "tobase64", "frombase64", "fromhex", "tohex", "regexp.escape", "rawjson"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec)",
+      "label": "[from source]",
+      "detail": "Present in the 2026 Spec with no information about the entry edition.",
+      "citations": "Spec p.458, p.503, p.507-508, p.600, p.670-672, p.734, p.739"
+    },
+    {
+      "name": "Top-level await, import attributes and JSON modules",
+      "keywords": ["top-level await", "import attributes", "with type json", "json modules"],
+      "category": "unversioned",
+      "version": "version not stated in the sources (present in the ES2026 Spec; supported attributes are [HOST])",
+      "label": "[from source] [HOST]",
+      "detail": "The Module grammar allows top-level await and ImportAttributes; which attributes the environment accepts depends on the host.",
+      "citations": "Spec p.402, p.426, p.429-430, p.434"
+    },
+    {
+      "name": "Annex B: escape/unescape, substr, getYear/setYear/toGMTString, String HTML methods, RegExp.prototype.compile, HTML comments",
+      "keywords": ["escape", "unescape", "substr", "getyear", "setyear", "togmtstring", "anchor", "blink", "bold", "compile", "<!--", "-->", "annex b", "anexo b"],
+      "category": "annex-b",
+      "version": "Annex B legacy (no stated entry edition)",
+      "label": "[DATED] [HOST]",
+      "detail": "Normative only for browsers and discouraged by the Spec in new code. Prefer slice (instead of substr), getFullYear/setFullYear/toUTCString, trimStart/trimEnd.",
+      "citations": "Spec p.843-855; EJpt p.198"
+    },
+    {
+      "name": "__proto__, __defineGetter__, __defineSetter__, __lookupGetter__, __lookupSetter__ and with",
+      "keywords": ["__proto__", "__definegetter__", "__definesetter__", "with"],
+      "category": "annex-b",
+      "version": "Legacy (Normative Optional / Legacy in the Spec)",
+      "label": "[DATED]",
+      "detail": "__proto__ and the __define/lookup* methods are marked Normative Optional, Legacy (prefer Object.getPrototypeOf / Object.create / Object.defineProperty); 'with' is LEGACY and forbidden in strict mode (SyntaxError).",
+      "citations": "Spec p.347, p.468-469, p.861; EJpt p.129-130, p.170; EJ1 p.131, p.241"
+    },
+    {
+      "name": "Environment APIs [HOST]: DOM, window, document, fetch, setTimeout, console, localStorage, Canvas, Node.js (fs, http, process)",
+      "keywords": ["dom", "window", "document", "fetch", "settimeout", "setinterval", "console", "localstorage", "canvas", "node", "fs", "http", "process", "xmlhttprequest"],
+      "category": "host",
+      "version": "Defined by the host environment (not part of ECMA-262)",
+      "label": "[HOST]",
+      "detail": "The Spec defines neither input/output nor browser or server APIs, only abstract host hooks (Annex D). EJpt covers DOM, events, fetch, localStorage, Canvas and Node.js (citing Node 18+).",
+      "citations": "Spec p.26-28, p.189, p.863-864; EJpt p.33-34, p.239, p.293-310, p.406-409, p.423-425, p.459-494"
+    },
+    {
+      "name": "Outside the sources: TypeScript, React/Vue/Express, Temporal, structuredClone, queueMicrotask, AbortController",
+      "keywords": ["typescript", "react", "vue", "angular", "express", "nextjs", "temporal", "structuredclone", "queuemicrotask", "abortcontroller"],
+      "category": "missing",
+      "version": "Not covered by the package sources",
+      "label": "[extrapolation]",
+      "detail": "They do not appear in the 2026 Spec or in the two books (TypeScript has only a passing mention in EJpt p.171; Intl is only referenced to ECMA-402 in Spec p.25).",
+      "citations": "Spec p.25; EJpt p.171"
+    }
+  ]
+}

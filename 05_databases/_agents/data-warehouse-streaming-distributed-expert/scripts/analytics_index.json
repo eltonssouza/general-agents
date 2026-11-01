@@ -1,0 +1,895 @@
+{
+ "_nota": "Pages = PDF (KIMBALL: printed = PDF - 3; STREAM: PDF = printed). Helland has no pages.",
+ "not_in_book_terms": {
+  "tumbling": "Appears only as an example window in Fig. 2 (STREAM p.6); the survey has no window taxonomy.",
+  "sliding window": "Mentioned in passing (STREAM p.1, p.22); no window taxonomy.",
+  "session window": "Not in the survey; [extrapolation].",
+  "asynchronous barrier": "The name ABS does not appear in the survey; see Chandy-Lamport aligned/unaligned (STREAM p.15-16).",
+  "abs": "The name ABS does not appear in the survey; see Chandy-Lamport aligned/unaligned (STREAM p.15-16).",
+  "jvm": "Not in the survey; [extrapolation].",
+  "garbage collector": "GC appears only as a stall factor for availability (STREAM p.21); RocksDB/GC is [extrapolation].",
+  "gc": "GC appears only as a stall factor for availability (STREAM p.21); RocksDB/GC is [extrapolation].",
+  "off-heap": "Not in the survey; [extrapolation].",
+  "kafka transaction": "Not covered; the survey cites Kafka as a sink with idempotent writes (STREAM p.20).",
+  "reactive streams": "Not in the survey; [extrapolation].",
+  "cap": "The CAP theorem is not in the corpus; [extrapolation].",
+  "outbox": "Not in the corpus; [extrapolation].",
+  "data vault": "Not in the Kimball document; [extrapolation].",
+  "lakehouse": "Not in the corpus; [extrapolation].",
+  "dbt": "Not in the corpus; [extrapolation].",
+  "medallion": "Not in the corpus; [extrapolation].",
+  "delta lake": "Not in the corpus; [extrapolation].",
+  "iceberg": "Not in the corpus; [extrapolation].",
+  "spark structured": "Not covered; the survey treats Spark Streaming only in general terms.",
+  "beam": "Beam appears only as a groupBy example (STREAM p.14); no details.",
+  "flink sql": "Not in the survey; [extrapolation].",
+  "1+2+3": "The mnemonic 1+2+3=6 is not in the Kimball document (KIMBALL p.16)."
+ },
+ "topics": {
+  "kimball_four_step": {
+   "title": "Four-step dimensional design process, requirements and workshops",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "4"
+    }
+   ],
+   "keywords": [
+    "quatro passos",
+    "four-step",
+    "processo de negócio",
+    "business process",
+    "workshop",
+    "requisitos",
+    "four steps",
+    "requirements",
+    "business process steps"
+   ],
+   "reference": "kimball-processo-de-quatro-passos-e-grao.md",
+   "note": ""
+  },
+  "grain": {
+   "title": "Grain (declaration, atomic, one grain per table)",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "5"
+    }
+   ],
+   "keywords": [
+    "grão",
+    "grain",
+    "atômico",
+    "atomic grain",
+    "contrato",
+    "contract",
+    "binding contract",
+    "one grain per table"
+   ],
+   "reference": "kimball-processo-de-quatro-passos-e-grao.md",
+   "note": ""
+  },
+  "star_olap": {
+   "title": "Star schema and OLAP cube",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "5"
+    }
+   ],
+   "keywords": [
+    "star schema",
+    "estrela",
+    "olap",
+    "cubo",
+    "xmla",
+    "star",
+    "cube"
+   ],
+   "reference": "kimball-processo-de-quatro-passos-e-grao.md",
+   "note": ""
+  },
+  "grace_extensions": {
+   "title": "Graceful extensions",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "6"
+    }
+   ],
+   "keywords": [
+    "grace extensions",
+    "extensões graciosas",
+    "resiliência",
+    "adicionar fato",
+    "adicionar atributo",
+    "graceful extensions",
+    "resilience",
+    "add fact",
+    "add attribute"
+   ],
+   "reference": "kimball-processo-de-quatro-passos-e-grao.md",
+   "note": ""
+  },
+  "additivity": {
+   "title": "Additivity: additive, semi-additive, non-additive",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "7"
+    }
+   ],
+   "keywords": [
+    "aditivo",
+    "aditividade",
+    "semi-aditivo",
+    "não aditivo",
+    "additive",
+    "saldo",
+    "razão",
+    "ratio",
+    "additivity",
+    "non-additive",
+    "semi additive",
+    "balance"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": "The source does not say how to aggregate semi-additive measures over time."
+  },
+  "fact_nulls_conformed_facts": {
+   "title": "Nulls in facts and conformed facts",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "7"
+    }
+   ],
+   "keywords": [
+    "nulo",
+    "null",
+    "fato conformado",
+    "conformed fact",
+    "chave estrangeira nula",
+    "nulls",
+    "null foreign key"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "transaction_fact": {
+   "title": "Transaction fact",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "7"
+    }
+   ],
+   "keywords": [
+    "transacional",
+    "transaction fact",
+    "transactional",
+    "transaction grain"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "periodic_snapshot": {
+   "title": "Periodic snapshot",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "8"
+    }
+   ],
+   "keywords": [
+    "snapshot periódico",
+    "periodic snapshot",
+    "periodic snapshot fact"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "accumulating_snapshot": {
+   "title": "Accumulating snapshot and lag",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "8"
+    },
+    {
+     "sigla": "KIMBALL",
+     "pages": "18"
+    }
+   ],
+   "keywords": [
+    "snapshot acumulado",
+    "accumulating snapshot",
+    "lag",
+    "duração",
+    "marco",
+    "pipeline",
+    "duration",
+    "milestone"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "factless_aggregate_consolidated": {
+   "title": "Factless, aggregate and consolidated facts",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "8-9"
+    }
+   ],
+   "keywords": [
+    "factless",
+    "agregada",
+    "aggregate",
+    "consolidada",
+    "consolidated",
+    "cobertura",
+    "factless fact",
+    "coverage"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "dimension_structure_keys": {
+   "title": "Dimension structure, surrogate, natural and durable keys",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "10"
+    }
+   ],
+   "keywords": [
+    "surrogate",
+    "chave substituta",
+    "chave natural",
+    "durável",
+    "durable",
+    "drill down",
+    "drilling down",
+    "surrogate key",
+    "natural key",
+    "durable key"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "date_dimension": {
+   "title": "Calendar dimension",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "11"
+    }
+   ],
+   "keywords": [
+    "data",
+    "calendário",
+    "date dimension",
+    "yyyymmdd",
+    "calendar",
+    "date",
+    "calendar dimension"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "degenerate_dimension": {
+   "title": "Degenerate dimension",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "10-11"
+    }
+   ],
+   "keywords": [
+    "degenerada",
+    "degenerate",
+    "número da fatura",
+    "invoice",
+    "invoice number"
+   ],
+   "reference": "dimensoes-especiais-role-playing-junk-e-degeneradas.md",
+   "note": ""
+  },
+  "denormalization_hierarchies": {
+   "title": "Flattened dimension, multiple hierarchies, flags and nulls",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "11"
+    }
+   ],
+   "keywords": [
+    "desnormalização",
+    "denormalized",
+    "achatada",
+    "flattened",
+    "hierarquia",
+    "flags",
+    "atributos nulos",
+    "denormalization",
+    "denormalized dimension",
+    "hierarchy",
+    "null attributes"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "role_playing_junk": {
+   "title": "Role-playing and junk dimension",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "12"
+    }
+   ],
+   "keywords": [
+    "role-playing",
+    "papéis",
+    "junk",
+    "dimensão de lixo",
+    "transaction profile",
+    "roles",
+    "role playing",
+    "junk dimension"
+   ],
+   "reference": "dimensoes-especiais-role-playing-junk-e-degeneradas.md",
+   "note": ""
+  },
+  "snowflake_outrigger": {
+   "title": "Snowflake and outrigger",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "12"
+    },
+    {
+     "sigla": "KIMBALL",
+     "pages": "21"
+    }
+   ],
+   "keywords": [
+    "snowflake",
+    "floco de neve",
+    "outrigger",
+    "snowflake schema"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": "The source says to avoid it; it does not say it is obsolete."
+  },
+  "conformed_dimensions": {
+   "title": "Conformed dimensions and shrunken rollup",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "13"
+    }
+   ],
+   "keywords": [
+    "conformada",
+    "conformed",
+    "shrunken",
+    "rollup",
+    "integração",
+    "conformed dimension",
+    "integration"
+   ],
+   "reference": "dimensoes-conformadas-matriz-bus-e-drill-across.md",
+   "note": ""
+  },
+  "drill_across": {
+   "title": "Drilling across (sort-merge)",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "13"
+    },
+    {
+     "sigla": "KIMBALL",
+     "pages": "20"
+    }
+   ],
+   "keywords": [
+    "drill-across",
+    "drilling across",
+    "drill across",
+    "sort-merge",
+    "stitch",
+    "drill across sort-merge"
+   ],
+   "reference": "dimensoes-conformadas-matriz-bus-e-drill-across.md",
+   "note": ""
+  },
+  "bus_architecture_matrix": {
+   "title": "Value chain, bus architecture and bus matrix",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "13-14"
+    }
+   ],
+   "keywords": [
+    "bus",
+    "matriz bus",
+    "bus matrix",
+    "value chain",
+    "cadeia de valor",
+    "stakeholder",
+    "bus architecture",
+    "stakeholders"
+   ],
+   "reference": "dimensoes-conformadas-matriz-bus-e-drill-across.md",
+   "note": ""
+  },
+  "scd_0_5": {
+   "title": "SCD types 0 to 5",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "15-16"
+    }
+   ],
+   "keywords": [
+    "scd",
+    "slowly changing",
+    "tipo 0",
+    "tipo 1",
+    "tipo 2",
+    "tipo 3",
+    "tipo 4",
+    "tipo 5",
+    "mini-dimensão",
+    "mini-dimension",
+    "histórico",
+    "type 0",
+    "type 1",
+    "type 2",
+    "type 3",
+    "type 4",
+    "type 5",
+    "history"
+   ],
+   "reference": "slowly-changing-dimensions-scd-tipos-0-a-7.md",
+   "note": ""
+  },
+  "scd_6_7": {
+   "title": "SCD types 6 and 7",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "16"
+    }
+   ],
+   "keywords": [
+    "tipo 6",
+    "tipo 7",
+    "as-was",
+    "as-is",
+    "híbrido",
+    "type 6",
+    "type 7",
+    "hybrid"
+   ],
+   "reference": "slowly-changing-dimensions-scd-tipos-0-a-7.md",
+   "note": "The mnemonic 1+2+3=6 is not in the document."
+  },
+  "dimension_hierarchies_ragged": {
+   "title": "Fixed, slightly ragged and ragged hierarchies (bridge, pathstring)",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "17"
+    }
+   ],
+   "keywords": [
+    "hierarquia",
+    "ragged",
+    "bridge",
+    "pathstring",
+    "irregular",
+    "hierarchy",
+    "ragged hierarchy"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "fact_surrogate_centipede": {
+   "title": "Fact surrogate key, centipede, header/line",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "18"
+    }
+   ],
+   "keywords": [
+    "centipede",
+    "centopeia",
+    "header/line",
+    "chave substituta de fato",
+    "fact surrogate",
+    "centipede fact table"
+   ],
+   "reference": "regras-de-ouro-e-multipass-sql-kimball.md",
+   "note": ""
+  },
+  "allocation_currency_units_ytd": {
+   "title": "Allocation, P&L, currency, units, YTD",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "19"
+    }
+   ],
+   "keywords": [
+    "alocação",
+    "allocated",
+    "moeda",
+    "currency",
+    "unidade",
+    "ytd",
+    "lucro",
+    "allocation",
+    "profit",
+    "profit and loss",
+    "currency conversion",
+    "units of measure"
+   ],
+   "reference": "familias-de-tabelas-fato-e-aditividade.md",
+   "note": ""
+  },
+  "multipass_sql": {
+   "title": "Fact-to-fact join prohibited and multipass SQL",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "20"
+    }
+   ],
+   "keywords": [
+    "multipass",
+    "join entre fatos",
+    "fact-to-fact",
+    "fato com fato",
+    "cardinalidade",
+    "fact to fact join",
+    "join between facts",
+    "cardinality"
+   ],
+   "reference": "regras-de-ouro-e-multipass-sql-kimball.md",
+   "note": ""
+  },
+  "late_arriving": {
+   "title": "Late arriving facts and dimensions; timespan tracking",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "20"
+    },
+    {
+     "sigla": "KIMBALL",
+     "pages": "23"
+    }
+   ],
+   "keywords": [
+    "late arriving",
+    "chegada tardia",
+    "timespan",
+    "late arriving facts",
+    "late arriving dimensions"
+   ],
+   "reference": "slowly-changing-dimensions-scd-tipos-0-a-7.md",
+   "note": ""
+  },
+  "bridge_multivalued_study_groups": {
+   "title": "Multivalued dimension, bridge, study groups, behavior tags",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "21-22"
+    }
+   ],
+   "keywords": [
+    "multivalorada",
+    "multivalued",
+    "study group",
+    "behavior tag",
+    "multivalued dimension",
+    "bridge table"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "audit_error_realtime": {
+   "title": "Audit dimension, real-time fact tables, error event schemas, supertype/subtype",
+   "sources": [
+    {
+     "sigla": "KIMBALL",
+     "pages": "23-24"
+    }
+   ],
+   "keywords": [
+    "audit dimension",
+    "real-time",
+    "error event",
+    "supertipo",
+    "supertype",
+    "hot partition",
+    "subtype"
+   ],
+   "reference": "tecnicas-de-dimensoes-chaves-substitutas-e-desnormalizacao.md",
+   "note": ""
+  },
+  "stream_generations": {
+   "title": "Stream processing generations and Table 1",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "1-5"
+    },
+    {
+     "sigla": "STREAM",
+     "pages": "26"
+    }
+   ],
+   "keywords": [
+    "geração",
+    "generation",
+    "dsms",
+    "dataflow",
+    "tabela 1",
+    "scale-up",
+    "scale-out",
+    "1st generation",
+    "2nd generation",
+    "table 1",
+    "generations",
+    "first generation",
+    "second generation"
+   ],
+   "reference": "evolucao-de-sistemas-de-stream-1a-vs-2a-geracao.md",
+   "note": ""
+  },
+  "stream_time_modes": {
+   "title": "Event time, processing time and ingestion time",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "4"
+    }
+   ],
+   "keywords": [
+    "event time",
+    "tempo de evento",
+    "processing time",
+    "ingestion time",
+    "tempo de ingestão"
+   ],
+   "reference": "tempo-desordem-e-watermarks-em-streams.md",
+   "note": ""
+  },
+  "stream_disorder_progress": {
+   "title": "Disorder, progress, slack, heartbeat, low-watermark, punctuation, pointstamp",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "5-8"
+    }
+   ],
+   "keywords": [
+    "desordem",
+    "out-of-order",
+    "slack",
+    "heartbeat",
+    "watermark",
+    "low-watermark",
+    "punctuation",
+    "pointstamp",
+    "frontier",
+    "disorder",
+    "progress"
+   ],
+   "reference": "tempo-desordem-e-watermarks-em-streams.md",
+   "note": "The survey's watermark is probabilistic (p.7)."
+  },
+  "stream_revision_triggers": {
+   "title": "Revision processing and triggers",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "9-10"
+    }
+   ],
+   "keywords": [
+    "revision",
+    "revisão",
+    "trigger",
+    "late data",
+    "dados tardios",
+    "revision processing",
+    "late events"
+   ],
+   "reference": "tempo-desordem-e-watermarks-em-streams.md",
+   "note": ""
+  },
+  "stream_state_architectures": {
+   "title": "State: in-memory, out-of-core (LSM/RocksDB), external",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "12-14"
+    }
+   ],
+   "keywords": [
+    "estado",
+    "state",
+    "rocksdb",
+    "lsm",
+    "leveldb",
+    "out-of-core",
+    "external state",
+    "particionado",
+    "partitioned state",
+    "in-memory"
+   ],
+   "reference": "gerenciamento-de-estado-continuo-e-checkpoints.md",
+   "note": "Off-heap/GC is not in the survey."
+  },
+  "stream_persistence_granularity": {
+   "title": "Persistence per record, epoch and batch; aligned/unaligned snapshots",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "13"
+    },
+    {
+     "sigla": "STREAM",
+     "pages": "15-16"
+    }
+   ],
+   "keywords": [
+    "epoch",
+    "época",
+    "checkpoint",
+    "snapshot",
+    "chandy-lamport",
+    "aligned",
+    "unaligned",
+    "micro-batch",
+    "micro batch",
+    "epochs"
+   ],
+   "reference": "gerenciamento-de-estado-continuo-e-checkpoints.md",
+   "note": "The name ABS does not appear in the survey."
+  },
+  "stream_fault_semantics": {
+   "title": "At-least-once, exactly-once on state / on output semantics",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "17-18"
+    }
+   ],
+   "keywords": [
+    "exactly-once",
+    "at-least-once",
+    "at-most-once",
+    "semântica",
+    "on state",
+    "on output",
+    "semantics",
+    "delivery semantics"
+   ],
+   "reference": "tolerancia-a-falhas-e-semanticas-exactly-once.md",
+   "note": ""
+  },
+  "stream_output_commit": {
+   "title": "Output commit problem and solutions",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "18-20"
+    }
+   ],
+   "keywords": [
+    "output commit",
+    "sink idempotente",
+    "idempotent",
+    "transaction-based",
+    "progress-based",
+    "lineage",
+    "sinks externos",
+    "idempotent sink",
+    "external sinks",
+    "output commit problem"
+   ],
+   "reference": "tolerancia-a-falhas-e-semanticas-exactly-once.md",
+   "note": ""
+  },
+  "stream_high_availability": {
+   "title": "High availability and replication",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "20-21"
+    }
+   ],
+   "keywords": [
+    "alta disponibilidade",
+    "high availability",
+    "replicação",
+    "active",
+    "passive",
+    "standby",
+    "replication"
+   ],
+   "reference": "tolerancia-a-falhas-e-semanticas-exactly-once.md",
+   "note": ""
+  },
+  "stream_load_shedding_backpressure": {
+   "title": "Load shedding, flow control and back-pressure (CFC)",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "21-23"
+    }
+   ],
+   "keywords": [
+    "load shedding",
+    "backpressure",
+    "back-pressure",
+    "credit",
+    "crédito",
+    "flow control",
+    "credit-based flow control",
+    "cfc"
+   ],
+   "reference": "controle-de-fluxo-backpressure-e-elasticidade.md",
+   "note": ""
+  },
+  "stream_elasticity": {
+   "title": "Elasticity: policies, mechanisms, key groups, reconfiguration",
+   "sources": [
+    {
+     "sigla": "STREAM",
+     "pages": "23-25"
+    }
+   ],
+   "keywords": [
+    "elasticidade",
+    "elasticity",
+    "autoscaling",
+    "key group",
+    "stop-and-restart",
+    "reconfiguração",
+    "migração de estado",
+    "reconfiguration",
+    "state migration"
+   ],
+   "reference": "controle-de-fluxo-backpressure-e-elasticidade.md",
+   "note": ""
+  },
+  "helland_absent": {
+   "title": "Pat Helland: source absent from the corpus (the PDF is an astrophysics paper)",
+   "sources": [],
+   "keywords": [
+    "helland",
+    "dados dentro",
+    "dados fora",
+    "2pc",
+    "two-phase commit",
+    "entidade",
+    "saga",
+    "data on the inside",
+    "data on the outside",
+    "entity"
+   ],
+   "reference": "pat-helland-fronteiras-transacionais-e-dados-dentro-fora.md",
+   "note": "NO PAGES: content is [extrapolation]; the file Life-Beyond-Distributed-Transactions.pdf is a different paper."
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "developer-productivity-engineering-expert",
+  "version": "1.0.0",
+  "description": "Developer Productivity Engineering (DPE) specialist grounded in The Developer Productivity Engineering Handbook (Hans Dockter et al., Gradle Inc., 2022): feedback loops, build cache, test distribution, MABP/ABP, failures, reliability, flaky tests, build cost/ROI. Vendor material: flags promotional claims. The PDF in the collection is named Data-Platform-Engineering-Handbook-2022, but it does not cover data platform engineering.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "developer-productivity",
+    "dpe",
+    "build-cache",
+    "test-distribution",
+    "flaky-tests",
+    "build-reliability",
+    "build-cost",
+    "roi"
+  ]
+}

@@ -1,0 +1,5 @@
+<%# app/views/products/index.html.erb %>
+<%= @products.each do |product| %>
+ <a href="/products/<%= product.id %>"><%= product.name %></a>
+<% end %>
+<%= link_to "Del", product, method: :delete %>

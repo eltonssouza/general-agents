@@ -1,0 +1,3843 @@
+{
+ "_meta": {
+  "source": "CL = Código Limpo: Habilidades Práticas do Agile Software (Robert C. Martin; Brazilian edition, Alta Books), scanned PDF of 398 pages, text by OCR",
+  "page_convention": "(CL p.N) = PDF page; the printed page is not used (the offset varies across the scan)",
+  "note": "rules = stated in the book with a page; not_in_book = NOT in the book (label [extrapolation]); uncovered = topics with no coverage. Prose is English; keywords keep the Portuguese search terms and add English ones."
+ },
+ "topics": {
+  "fonte-identificacao-obra": {
+   "name": "Identification of the work, preface and organization of the book",
+   "keywords": [
+    "autor",
+    "editora",
+    "Alta Books",
+    "prefácio",
+    "Coplien",
+    "capa",
+    "WTFs/minuto",
+    "WTF per minute",
+    "três partes",
+    "estrutura do livro",
+    "ISBN",
+    "tradutor",
+    "5S",
+    "TPM",
+    "book structure",
+    "author",
+    "publisher",
+    "preface",
+    "cover",
+    "WTFs per minute",
+    "three parts",
+    "translator",
+    "title page",
+    "table of contents"
+   ],
+   "citation": "CL p.1-10",
+   "summary": "Cover with title, subtitle and 'Série de Robert C. Martin'; preface by James O. Coplien; introduction with the WTFs/minute figure and the division into three parts. Year, ISBN and translator do not appear in the scan.",
+   "rules": [
+    "Title Código Limpo, subtitle Habilidades Práticas do Agile Software, Robert C. Martin series (CL p.1)",
+    "Preface by James O. Coplien, linking the book to TPM and the 5S (CL p.2-6)",
+    "The doors figure: the only valid measure of code quality is WTFs/minute, by Thom Holwerda (CL p.7)",
+    "Three parts: principles and practices; case studies; a chapter of heuristics and smells (CL p.8)"
+   ],
+   "not_in_book": [
+    "The PDF has no ISBN, edition year, cataloging data or translator's name",
+    "The WTFs/minute figure is not the author's, it is by Thom Holwerda",
+    "There is no table of contents in the scan"
+   ],
+   "chapter": "0"
+  },
+  "o-que-e-codigo-limpo": {
+   "name": "Definitions of clean code (Stroustrup, Booch, Thomas, Feathers, Jeffries, Cunningham)",
+   "keywords": [
+    "código limpo",
+    "clean code",
+    "definição",
+    "Bjarne Stroustrup",
+    "Grady Booch",
+    "Dave Thomas",
+    "Michael Feathers",
+    "Ron Jeffries",
+    "Ward Cunningham",
+    "elegante",
+    "legível",
+    "care",
+    "regras de Beck",
+    "simple design",
+    "definition of clean code",
+    "elegant",
+    "readable",
+    "Beck's rules",
+    "what is clean code"
+   ],
+   "citation": "CL p.17-21",
+   "summary": "The author gathers definitions from six programmers: elegance and doing one thing (Stroustrup), readable prose (Booch), tests and ease of change (Thomas), care (Feathers), Beck's rules (Jeffries), code that is what you expected (Cunningham).",
+   "rules": [
+    "Stroustrup: elegant and efficient, minimal dependencies, complete error handling, does one thing well (CL p.17-18)",
+    "Booch: simple and direct, reads like well-written prose (CL p.18)",
+    "Dave Thomas: another developer can read and improve it; it has tests; code without tests is not clean (CL p.19)",
+    "Feathers: looks like it was written by someone who cared (care) (CL p.19-20)",
+    "Jeffries/Beck: runs all the tests, no duplication, expresses the ideas, minimizes entities (CL p.20)",
+    "Cunningham: each routine is what you expected; the language looks made for the problem (CL p.21)"
+   ],
+   "not_in_book": [
+    "There is no single official definition: the book presents itself as one school of thought among others (CL p.22)",
+    "The broken windows metaphor is attributed to Dave Thomas and Andy Hunt, not to Stroustrup"
+   ],
+   "chapter": "1"
+  },
+  "custo-codigo-confuso": {
+   "name": "Cost of bad code and professional attitude",
+   "keywords": [
+    "código ruim",
+    "bad code",
+    "bagunça",
+    "mess",
+    "produtividade",
+    "prazo",
+    "deadline",
+    "grande replanejamento",
+    "rewrite",
+    "reescrever do zero",
+    "LeBlanc",
+    "profissionalismo",
+    "dívida técnica",
+    "cost of bad code",
+    "messy code",
+    "productivity",
+    "total redesign",
+    "grand redesign",
+    "LeBlanc's law",
+    "later equals never",
+    "professionalism",
+    "technical debt"
+   ],
+   "citation": "CL p.13-17",
+   "summary": "Mess drives productivity toward zero; full rewrites become years-long races; the blame lies with programmers, who must defend the code; the only way to go fast is to keep the code clean.",
+   "rules": [
+    "Bad code can bring down a company (CL p.13)",
+    "Productivity drops asymptotically toward zero and adding people makes it worse (CL p.14)",
+    "The Grand Redesign can last 10 years and end in a new mess (CL p.15)",
+    "Programmers must protect the code with the same passion with which the manager protects the deadline (CL p.16)",
+    "The only way to go fast is to always keep the code clean (CL p.16)"
+   ],
+   "not_in_book": [
+    "The chapter does not use the expression 'technical debt' (dívida técnica)",
+    "The printed translation of LeBlanc's law is 'Nunca é tarde' (it is never too late); from context the meaning is that 'later' never comes (later equals never)"
+   ],
+   "chapter": "1"
+  },
+  "regra-do-escoteiro": {
+   "name": "The Boy Scout Rule",
+   "keywords": [
+    "regra do escoteiro",
+    "boy scout rule",
+    "escoteiro",
+    "deixar mais limpo",
+    "melhoria contínua",
+    "refatoração oportunista",
+    "leave it cleaner",
+    "leave the code cleaner",
+    "continuous improvement",
+    "campground rule"
+   ],
+   "citation": "CL p.24",
+   "summary": "Leave the code cleaner than you found it; small continuous improvements prevent degradation.",
+   "rules": [
+    "Code must be kept clean over time, not just written clean (CL p.24)",
+    "Leave the campground cleaner than you found it (Boy Scouts of America) (CL p.24)",
+    "The cleanup can be small: rename, split a function, remove repetition, reduce a nested if (CL p.24)"
+   ],
+   "not_in_book": [
+    "The rule does not tell you to rewrite whole modules; it speaks of small cleanups"
+   ],
+   "chapter": "1"
+  },
+  "somos-autores-leitura": {
+   "name": "We are authors: reading vs. writing",
+   "keywords": [
+    "legibilidade",
+    "readability",
+    "leitura de código",
+    "10 para 1",
+    "10:1",
+    "ratio read write",
+    "autor",
+    "@author",
+    "authors",
+    "readers",
+    "ratio of reading to writing",
+    "10 to 1"
+   ],
+   "citation": "CL p.23",
+   "summary": "We read far more than we write (10x1 in the text); making code easy to read makes it easy to write.",
+   "rules": [
+    "A programmer is an author with readers, responsible for communication (CL p.23)",
+    "The time ratio between reading and writing is 10x1 (CL p.23)",
+    "To write quickly, make the code easy to read (CL p.23)"
+   ],
+   "not_in_book": [
+    "The book cites no research for the 10x1 ratio; it is based on replayed editing sessions"
+   ],
+   "chapter": "1"
+  },
+  "principios-srp-ocp-dip": {
+   "name": "Design principles cited (SRP, OCP, DIP) and relation to PPP",
+   "keywords": [
+    "SOLID",
+    "SRP",
+    "OCP",
+    "DIP",
+    "responsabilidade única",
+    "aberto-fechado",
+    "inversão de dependência",
+    "PPP",
+    "Agile Software Development",
+    "single responsibility principle",
+    "open closed principle",
+    "dependency inversion principle",
+    "Agile Software Development Principles Patterns and Practices"
+   ],
+   "citation": "CL p.24, p.47",
+   "summary": "The book is a prequel to PPP (2002) and cites SRP, OCP and DIP in passing, deferring the details to PPP.",
+   "rules": [
+    "Sporadic references to SRP, OCP and DIP, described in detail in PPP (CL p.24)",
+    "The calculatePay switch violates SRP and OCP (CL p.47)"
+   ],
+   "not_in_book": [
+    "The SOLID acronym does not appear on any page",
+    "LSP and ISP are not named",
+    "The printed translation calls DIP 'Princípio da Inversão da Independência'"
+   ],
+   "chapter": "1"
+  },
+  "nomes-proposito-desinformacao": {
+   "name": "Intention-revealing names, without disinformation and with meaningful distinctions",
+   "keywords": [
+    "nomes",
+    "naming",
+    "nomenclatura",
+    "intenção",
+    "intention-revealing",
+    "desinformação",
+    "disinformation",
+    "distinção significativa",
+    "noise words",
+    "Info",
+    "Data",
+    "accountList",
+    "números mágicos",
+    "intention-revealing names",
+    "reveal intent",
+    "meaningful distinctions",
+    "number series"
+   ],
+   "citation": "CL p.27-30",
+   "summary": "A name must say why it exists, what it does and how it is used; it must not suggest something false; different names must mean different things.",
+   "rules": [
+    "If a name requires a comment, it does not reveal its purpose (CL p.27)",
+    "Do not call something List if it is not a List; avoid nearly identical names (CL p.28)",
+    "Do not use lowercase l or uppercase O as names (CL p.29)",
+    "Number series (a1, a2) and noise words (Info, Data) distinguish nothing (CL p.29-30)"
+   ],
+   "not_in_book": [
+    "The book does not forbid every prefix: it accepts prefixes that mark a real distinction (CL p.30)"
+   ],
+   "chapter": "2"
+  },
+  "nomes-pronunciaveis-buscaveis": {
+   "name": "Pronounceable and searchable names",
+   "keywords": [
+    "pronunciável",
+    "pronounceable",
+    "buscável",
+    "searchable",
+    "grep",
+    "constante",
+    "magic number",
+    "nome de uma letra",
+    "tamanho do nome",
+    "escopo",
+    "pronounceable names",
+    "searchable names",
+    "name length",
+    "scope",
+    "single-letter names",
+    "magic number search"
+   ],
+   "citation": "CL p.30-32",
+   "summary": "Names must be speakable and findable by search; the length of a name follows the size of its scope.",
+   "rules": [
+    "Create pronounceable names: programming is a social activity (CL p.30)",
+    "Searchable names beat literal constants; long names beat short ones (CL p.31)",
+    "The length of a name should be proportional to the size of its scope [N5] (CL p.31)",
+    "WORK_DAYS_PER_WEEK is easier to find than the literal 5 (CL p.32)"
+   ],
+   "not_in_book": [
+    "It does not forbid one-letter names: it accepts them as locals in short methods (CL p.31)"
+   ],
+   "chapter": "2"
+  },
+  "codificacoes-notacao-hungara": {
+   "name": "Avoid encodings: Hungarian Notation, the m_ prefix, I on interfaces",
+   "keywords": [
+    "notação húngara",
+    "hungarian notation",
+    "m_",
+    "prefixo membro",
+    "member prefix",
+    "IShapeFactory",
+    "interface com I",
+    "Impl",
+    "codificação de tipo",
+    "mapeamento mental",
+    "mental mapping",
+    "encodings",
+    "interface prefix"
+   ],
+   "citation": "CL p.32-33",
+   "summary": "Do not encode type or scope in the name; Hungarian notation and m_ are obstacles in modern languages; prefer not to mark the interface; avoid names that require mental translation.",
+   "rules": [
+    "Encoding type or scope in the name is unnecessary mental load (CL p.32)",
+    "Hungarian Notation is an obstacle today: it makes changing a name or type harder and can mislead (CL p.32)",
+    "Do not use the m_ prefix; keep classes and functions small and use an IDE that highlights members (CL p.32-33)",
+    "Do not decorate interfaces with I; if needed, encode the implementation (ShapeFactoryImp) (CL p.33)",
+    "Avoid mental mapping; i, j, k only in very small scopes (CL p.33)"
+   ],
+   "not_in_book": [
+    "The rule about I on interfaces is a declared personal preference ('Prefiro', I prefer), not a prohibition"
+   ],
+   "chapter": "2"
+  },
+  "nomes-classes-metodos": {
+   "name": "Names of classes and methods, cute names, one word per concept, puns",
+   "keywords": [
+    "nome de classe",
+    "class name",
+    "substantivo",
+    "noun",
+    "nome de método",
+    "method name",
+    "verbo",
+    "verb",
+    "get set is",
+    "javabean",
+    "factory estática",
+    "piada",
+    "cute names",
+    "uma palavra por conceito",
+    "one word per concept",
+    "trocadilho",
+    "pun",
+    "léxico consistente",
+    "class names",
+    "method names",
+    "don't be cute",
+    "puns",
+    "static factory",
+    "JavaBean accessors"
+   ],
+   "citation": "CL p.34-35",
+   "summary": "Classes are nouns and methods are verbs; use get/set/is; prefer clarity to jokes; one word per concept, but do not use the same word for different ideas.",
+   "rules": [
+    "Classes use nouns; avoid Manager, Processor, Data, Info; never a verb (CL p.34)",
+    "Methods use verbs; accessors use get, set, is (JavaBean standard) (CL p.34)",
+    "With overloaded constructors, use a static factory with a descriptive name and a private constructor (CL p.34)",
+    "Do not be cute: clarity instead of fun (CL p.34)",
+    "One word per concept; do not mix fetch, retrieve and get (CL p.35)",
+    "Do not pun: an add that inserts into a collection should have another name (CL p.35)"
+   ],
+   "not_in_book": [
+    "It does not require English names; the translation uses translated examples (Cliente, postarPagamento)"
+   ],
+   "chapter": "2"
+  },
+  "dominio-e-contexto-nomes": {
+   "name": "Solution/problem domain and context in names",
+   "keywords": [
+    "domínio da solução",
+    "solution domain",
+    "domínio do problema",
+    "problem domain",
+    "contexto",
+    "context",
+    "prefixo de contexto",
+    "namespace",
+    "contexto desnecessário",
+    "prefixo de aplicação",
+    "solution domain names",
+    "problem domain names",
+    "meaningful context",
+    "gratuitous context",
+    "prefixes"
+   ],
+   "citation": "CL p.35-39",
+   "summary": "Prefer technical terms known to programmers, fall back on the problem domain when there are none; give context with classes and namespaces, without excess.",
+   "rules": [
+    "Use computer science terms, algorithms and pattern names (AccountVisitor, JobQueue) (CL p.35-36)",
+    "With no technical term, use the problem domain name (CL p.36)",
+    "Give context with classes, functions and namespaces; prefixes (addrState) are a last resort (CL p.36)",
+    "Variables with obscure context can become fields of a new class (Listings 2-1, 2-2) (CL p.36-38)",
+    "Do not prefix everything with the application name (GSD); short names if they are clear (CL p.38)"
+   ],
+   "not_in_book": [
+    "It does not say to always use business terms: the default is the solution domain, and the problem domain when there is no technical term"
+   ],
+   "chapter": "2"
+  },
+  "tamanho-de-funcoes": {
+   "name": "Function size, blocks and indentation",
+   "keywords": [
+    "tamanho de função",
+    "function size",
+    "funções pequenas",
+    "small functions",
+    "20 linhas",
+    "linhas por função",
+    "lines of code",
+    "endentação",
+    "indentation",
+    "aninhamento",
+    "nesting",
+    "150 caracteres",
+    "how long should a function be",
+    "20 lines",
+    "indentation level",
+    "blocks and indenting",
+    "long function"
+   ],
+   "citation": "CL p.43-44",
+   "summary": "Functions should be small and smaller still; the translation says at most 20 lines, and the ideal shown is 2 to 4 lines; one-line blocks and indentation of at most one or two levels.",
+   "rules": [
+    "First rule: functions should be small; second: smaller than that (CL p.43)",
+    "Lines of up to 150 characters; functions of at most 20 lines (CL p.43)",
+    "In Kent Beck's Sparkle program every function was 2, 3 or 4 lines, the recommended size (CL p.43)",
+    "if/else/while blocks of one line, preferably a function call (CL p.44)",
+    "Indentation level of at most one or two (CL p.44)"
+   ],
+   "not_in_book": [
+    "The author says he has no research to prove it: it is experience (CL p.43)",
+    "It sets no cyclomatic complexity limit"
+   ],
+   "chapter": "3"
+  },
+  "uma-coisa-nivel-abstracao": {
+   "name": "Do one thing, one level of abstraction and the Stepdown Rule",
+   "keywords": [
+    "fazer uma coisa",
+    "do one thing",
+    "single responsibility function",
+    "nível de abstração",
+    "level of abstraction",
+    "regra decrescente",
+    "stepdown rule",
+    "parágrafos TO",
+    "seções dentro de funções",
+    "one level of abstraction",
+    "reading code top to bottom",
+    "TO paragraphs",
+    "sections within functions"
+   ],
+   "citation": "CL p.44-46",
+   "summary": "A function does one thing if its steps are one level below its name; all statements at the same level; code read top to bottom descending one level at a time.",
+   "rules": [
+    "Functions should do one thing, do it well, and do only it (CL p.44)",
+    "If you can extract another function with a name that is not a restatement of the implementation, it does more than one thing (G34) (CL p.45)",
+    "A function divided into sections does more than one thing (CL p.45)",
+    "All statements at the same level of abstraction (CL p.45)",
+    "Stepdown Rule (Regra Decrescente): read top to bottom like TO paragraphs (CL p.46)"
+   ],
+   "not_in_book": [
+    "The book does not use the English term 'stepdown' nor 'SLA/Single Level of Abstraction'; it calls it Regra Decrescente"
+   ],
+   "chapter": "3"
+  },
+  "switch-polimorfismo": {
+   "name": "Switch statements and polymorphism",
+   "keywords": [
+    "switch",
+    "case",
+    "if else encadeado",
+    "polimorfismo",
+    "polymorphism",
+    "abstract factory",
+    "fábrica",
+    "tipo de funcionário",
+    "calculatePay",
+    "switch statements",
+    "switch in factory",
+    "case statement"
+   ],
+   "citation": "CL p.46-47",
+   "summary": "A switch always does N things; hide it in an abstract factory that creates polymorphic objects and use it only once.",
+   "rules": [
+    "A switch by nature does N things (CL p.46)",
+    "The calculatePay switch grows, does more than one thing, violates SRP and OCP and is repeated in other functions (CL p.47)",
+    "Hide the switch in an ABSTRACT FACTORY and dispatch by polymorphism (CL p.47)",
+    "Acceptable if it appears once, to create polymorphic objects, hidden behind inheritance [G23] (CL p.47)"
+   ],
+   "not_in_book": [
+    "It does not forbid switch in an absolute way; the author admits breaking the rule sometimes (CL p.47)"
+   ],
+   "chapter": "3"
+  },
+  "nomes-descritivos-funcoes": {
+   "name": "Descriptive function names",
+   "keywords": [
+    "nome de função",
+    "function name",
+    "nome longo",
+    "descritivo",
+    "descriptive names",
+    "renomear",
+    "consistência de nomes",
+    "long names",
+    "function naming",
+    "consistent phrasing"
+   ],
+   "citation": "CL p.48",
+   "summary": "Long, descriptive names beat short enigmatic ones and comments; try several; keep phrasing consistent in the module.",
+   "rules": [
+    "A long descriptive name is better than a short enigmatic name and than a long comment (CL p.48)",
+    "Try several names; the search for names leads to restructuring the code (CL p.48)",
+    "Use the same phrases, nouns and verbs in the function names of the module (CL p.48)"
+   ],
+   "not_in_book": [
+    "It sets no maximum length for names"
+   ],
+   "chapter": "3"
+  },
+  "parametros-de-funcoes": {
+   "name": "Arguments: count, monads, dyads, triads, flags, objects and lists",
+   "keywords": [
+    "parâmetros",
+    "argumentos",
+    "arguments",
+    "quantos parâmetros",
+    "mônade",
+    "monad",
+    "díade",
+    "dyad",
+    "tríade",
+    "triad",
+    "políade",
+    "polyad",
+    "flag",
+    "booleano",
+    "boolean parameter",
+    "parâmetro lógico",
+    "varargs",
+    "objeto parâmetro",
+    "parameter object",
+    "function arguments",
+    "number of arguments",
+    "flag arguments",
+    "niladic",
+    "monadic",
+    "dyadic",
+    "triadic",
+    "argument objects",
+    "argument lists",
+    "verbs and keywords",
+    "too many parameters"
+   ],
+   "citation": "CL p.48-51, p.398",
+   "summary": "Ideal is zero, then one and two; avoid three; more than three only for a very special reason. Boolean flags indicate the function does two things. Group arguments into objects.",
+   "rules": [
+    "Zero is ideal; then monad, then dyad; avoid triad; polyad requires very special justification (CL p.48)",
+    "Monads: a question about the argument, a transformation with a return, or an event (CL p.49)",
+    "A boolean argument (flag) is ugly: split into two functions, e.g. renderForSuite/renderForSingleTest (CL p.49-50)",
+    "Dyads cost more; convert to a monad when possible; Point(0,0) is natural (CL p.50)",
+    "Think hard before creating a triad (CL p.50)",
+    "More than two or three arguments: group them in a class (makeCircle(Point, radius)) (CL p.398)",
+    "Varargs treated equally count as one list argument; String.format is a dyad (CL p.398)",
+    "Monad as verb/noun pair; the keyword form puts the argument names in the function name (CL p.398, p.51)"
+   ],
+   "not_in_book": [
+    "The book does not forbid dyads: it says you will certainly have to use them (CL p.50)",
+    "Printed page 42 is at PDF p.398, out of order"
+   ],
+   "chapter": "3"
+  },
+  "efeitos-colaterais-saida-cqs": {
+   "name": "Side effects, output arguments and command-query separation",
+   "keywords": [
+    "efeito colateral",
+    "side effect",
+    "acoplamento temporal",
+    "temporal coupling",
+    "parâmetro de saída",
+    "output argument",
+    "separação comando-consulta",
+    "command query separation",
+    "CQS",
+    "side effects",
+    "output arguments",
+    "functions that lie"
+   ],
+   "citation": "CL p.51-53",
+   "summary": "Side effects are lies and create temporal coupling; avoid output arguments; a function does something or answers something, not both.",
+   "rules": [
+    "Side effects are lies; a checkPassword that initializes the session creates temporal coupling (CL p.51)",
+    "If the coupling is necessary, the name must say so (CL p.51-52)",
+    "Avoid output arguments; in OO change the state of the object itself (report.appendFooter()) (CL p.52)",
+    "A function should do something or answer something, but not both (CL p.52)",
+    "Split a set that returns a boolean into attributeExists and setAttribute (CL p.53)"
+   ],
+   "not_in_book": [
+    "The book does not use 'Command Query Separation' nor 'CQS'; it uses 'Separação comando-consulta'"
+   ],
+   "chapter": "3"
+  },
+  "excecoes-try-catch": {
+   "name": "Exceptions instead of error codes; extract try/catch",
+   "keywords": [
+    "exceção",
+    "exception",
+    "código de erro",
+    "error code",
+    "try catch",
+    "tratamento de erro",
+    "error handling",
+    "enum Error",
+    "chamariz à dependência",
+    "dependency magnet",
+    "exceptions vs error codes",
+    "error codes",
+    "extract try catch",
+    "error handling is one thing",
+    "Error.java enum"
+   ],
+   "citation": "CL p.53-55",
+   "summary": "Prefer exceptions to error codes; extract try/catch into their own functions; error handling is one thing; error enums become dependency magnets.",
+   "rules": [
+    "Returning an error code slightly violates command-query separation and causes nesting (CL p.53)",
+    "Extract the try/catch bodies into functions of their own (CL p.54)",
+    "Error handling is one thing: try is the first statement and nothing comes after catch/finally (CL p.54)",
+    "The Error enum is a dependency magnet; new exceptions derive without recompiling everything (CL p.54-55)"
+   ],
+   "not_in_book": [
+    "The chapter does not address checked vs. unchecked exceptions; that is left to the error handling chapter (another group)"
+   ],
+   "chapter": "3"
+  },
+  "duplicacao-evite-repeticao": {
+   "name": "Avoid repetition (duplication)",
+   "keywords": [
+    "duplicação",
+    "duplication",
+    "repetição",
+    "DRY",
+    "don't repeat yourself",
+    "código duplicado",
+    "repetition",
+    "root of all evil"
+   ],
+   "citation": "CL p.55",
+   "summary": "Duplication may be the root of all evil in software; the algorithm repeated four times in Listing 3-1 was unified in the include method.",
+   "rules": [
+    "Duplication bloats the code and requires several changes when the algorithm changes (CL p.55)",
+    "Duplication may be the root of all evil in software (CL p.55)",
+    "Normalization, OO, structured programming, AOP and components fight duplication (CL p.55)"
+   ],
+   "not_in_book": [
+    "Ch. 3 does not use the DRY acronym; it appears in other chapters (CL p.178, p.284, p.324)"
+   ],
+   "chapter": "3"
+  },
+  "programacao-estruturada-return": {
+   "name": "Structured programming (Dijkstra) and multiple returns",
+   "keywords": [
+    "programação estruturada",
+    "structured programming",
+    "Dijkstra",
+    "single entry single exit",
+    "um return",
+    "múltiplos return",
+    "early return",
+    "break",
+    "continue",
+    "goto",
+    "single return",
+    "multiple returns",
+    "single exit",
+    "break continue"
+   ],
+   "citation": "CL p.55-56",
+   "summary": "The one-entry, one-exit rule helps little in small functions; occasional return, break and continue are acceptable; avoid goto.",
+   "rules": [
+    "Dijkstra: one entry and one exit; one return, no break/continue, never goto (CL p.55)",
+    "In small functions, occasional return/break/continue cause no problem (CL p.55-56)",
+    "goto only makes sense in large functions, so avoid it (CL p.56)"
+   ],
+   "not_in_book": [
+    "The book does not require a single return"
+   ],
+   "chapter": "3"
+  },
+  "como-escrever-funcoes": {
+   "name": "How to write functions like this (process)",
+   "keywords": [
+    "processo",
+    "rascunho",
+    "first draft",
+    "refatorar",
+    "refactoring",
+    "testes de unidade",
+    "como escrever funções",
+    "linguagem de domínio",
+    "DSL",
+    "how to write functions",
+    "refine",
+    "writing process",
+    "functions are the verbs"
+   ],
+   "citation": "CL p.56",
+   "summary": "The author first writes long, ugly functions, with tests covering everything, and then refines them; he does not apply the rules from the start. Functions are the verbs of the domain language.",
+   "rules": [
+    "Writing code is like writing prose: first a draft, then refinement (CL p.56)",
+    "Refine with unit tests passing: split, rename, remove duplication (CL p.56)",
+    "The rules are not applied from the start; the author thinks that is impossible (CL p.56)",
+    "Functions are the verbs and classes the nouns of the system's language (CL p.56)"
+   ],
+   "not_in_book": [
+    "The book does not require writing the clean function in the very first version"
+   ],
+   "chapter": "3"
+  },
+  "comentarios-filosofia": {
+   "name": "Comments: the central thesis (comment as failure)",
+   "keywords": [
+    "comentário",
+    "comentarios",
+    "comments",
+    "comment",
+    "devo comentar",
+    "should I comment",
+    "self-documenting code",
+    "código autoexplicativo",
+    "explique-se no código",
+    "explain yourself in code",
+    "comments are failure",
+    "bad code comments"
+   ],
+   "citation": "CL p.59-61",
+   "summary": "Comments are at most a necessary evil: they make up for a failure to express ourselves in code, they age and they lie. Prefer cleaning up and naming well.",
+   "rules": [
+    "A comment makes up for the failure to express ourselves in code; before commenting, try to express it in code (CL p.60)",
+    "Inaccurate comments are worse than none; the truth is in the code (CL p.60)",
+    "Do not comment bad code: clean it (CL p.60-61)",
+    "Replace the comment with a function whose name says the same (e.g. isEligibleForFullBenefits) (CL p.61)"
+   ],
+   "not_in_book": [
+    "The book does not forbid all comments: it lists 8 kinds of good comments (CL p.61-65)",
+    "It does not use the term 'self-documenting code' (código autodocumentado)"
+   ],
+   "chapter": "4"
+  },
+  "comentarios-bons": {
+   "name": "Good Comments (8 kinds)",
+   "keywords": [
+    "comentários bons",
+    "good comments",
+    "comentário legal",
+    "copyright",
+    "licença",
+    "comentário informativo",
+    "intenção",
+    "intent",
+    "esclarecimento",
+    "clarification",
+    "alerta",
+    "warning of consequences",
+    "TODO",
+    "destaque",
+    "amplification",
+    "javadoc api pública",
+    "public api",
+    "legal comments",
+    "informative comments",
+    "explanation of intent",
+    "TODO comments",
+    "javadocs in public APIs"
+   ],
+   "citation": "CL p.61-65",
+   "summary": "The book accepts eight kinds: Legal, Informative, Explanation of Intent, Clarification, Warning of Consequences, TODO, Amplification and Javadocs in Public APIs.",
+   "rules": [
+    "Legal Comments (Comentários Legais): copyright/authorship at the top; reference a standard license instead of transcribing the terms (CL p.61)",
+    "Informative Comments (Informativos): useful, but prefer a function name that carries the information (CL p.62)",
+    "Explanation of Intent (Explicação da intenção): record the why of a decision (CL p.62-63)",
+    "Clarification (Esclarecimento): only for code you cannot change; check the accuracy (CL p.63)",
+    "Warning of Consequences (Alerta Sobre Consequências): e.g. slow test, SimpleDateFormat not thread-safe (CL p.64)",
+    "TODO comment: does not justify bad code; review and eliminate regularly (CL p.64-65)",
+    "Amplification (Destaque): highlights something important that seems irrelevant (CL p.65)",
+    "Javadocs in Public APIs (Javadocs em APIs Públicas): write them well; they can be as misleading as other comments (CL p.65)"
+   ],
+   "not_in_book": [
+    "It does not mention FIXME, only TODO",
+    "It defines no TODO format beyond // TODO"
+   ],
+   "chapter": "4"
+  },
+  "comentarios-ruins": {
+   "name": "Bad Comments (18 kinds)",
+   "keywords": [
+    "comentários ruins",
+    "bad comments",
+    "murmúrio",
+    "mumbling",
+    "redundante",
+    "redundant",
+    "enganador",
+    "misleading",
+    "imperativo",
+    "mandated",
+    "longo",
+    "journal",
+    "diário",
+    "changelog",
+    "ruidoso",
+    "noise",
+    "ruídos assustadores",
+    "scary noise",
+    "marcador de posição",
+    "banner",
+    "position marker",
+    "chave de fechamento",
+    "closing brace",
+    "autoria",
+    "attribution",
+    "byline",
+    "html",
+    "não-local",
+    "nonlocal",
+    "informações excessivas",
+    "too much information",
+    "conexões nada óbvias",
+    "cabeçalho de função",
+    "function header",
+    "javadoc não público",
+    "redundant comments",
+    "misleading comments",
+    "mandated comments",
+    "journal comments",
+    "noise comments",
+    "position markers",
+    "closing brace comments",
+    "attributions and bylines",
+    "commented-out code",
+    "HTML comments",
+    "nonlocal information",
+    "inobvious connection",
+    "function headers",
+    "javadocs in nonpublic code"
+   ],
+   "citation": "CL p.65-77",
+   "summary": "List of 18 headings: Mumbling, Redundant, Misleading, Mandated, Journal, Noise, Scary noise, Don't use a comment when you can use a function or variable, Position markers, Closing brace comments, Attributions and bylines, Commented-out code, HTML, Nonlocal information, Too much information, Inobvious connection, Function headers, Javadocs in nonpublic code (printed in Portuguese: Murmúrio, Redundantes, Enganadores, Imperativos, Longos, Ruidosos, Ruídos assustadores, ..., Créditos e autoria, Explicação do código em comentários, ...).",
+   "rules": [
+    "Mumbling (Murmúrio): if you comment, do it well; a comment that forces you to read another module has failed (CL p.65-66)",
+    "Redundant Comments (Redundantes): do not repeat the code (Listings 4-1, 4-2) (CL p.66-68)",
+    "Misleading Comments (Enganadores): inaccuracy about behavior induces error (CL p.69)",
+    "Mandated Comments (Imperativos): requiring a Javadoc on every function or a comment on every variable is silly (CL p.69)",
+    "Journal Comments (Longos): a changelog/diary at the top of the module should be removed; version control keeps that (CL p.69-70)",
+    "Noise Comments and Scary Noise (Ruidosos e Ruídos assustadores): obvious or copied with errors; refactor instead of venting (CL p.70-72)",
+    "Do not use a comment if you can use a function or a variable (CL p.72-73)",
+    "Position Markers (Marcadores de Posição): rarely and sparingly (CL p.73)",
+    "Closing brace comments: shorten the functions (CL p.73)",
+    "Attributions and bylines (Créditos e autoria): leave it to version control (CL p.74)",
+    "HTML Comments, Nonlocal Information, Too Much Information, Inobvious Connection, Function Headers, Javadocs in Nonpublic Code (CL p.75-77)"
+   ],
+   "not_in_book": [
+    "The names 'atribuições' or 'informação demais' are not the Brazilian edition's headings: they are 'Créditos e autoria' (p.74) and 'Informações excessivas' (p.76)"
+   ],
+   "chapter": "4"
+  },
+  "codigo-comentado": {
+   "name": "Commented-out code",
+   "keywords": [
+    "código comentado",
+    "commented-out code",
+    "código morto em comentário",
+    "comentar código",
+    "dead code",
+    "explicação do código em comentários",
+    "código como comentário",
+    "commented code",
+    "dead code in comments",
+    "delete commented code"
+   ],
+   "citation": "CL p.74-75",
+   "summary": "Lines of code disabled in a comment pile up like dirt because nobody dares delete them; delete them, version control remembers.",
+   "rules": [
+    "Delete commented-out code; source control keeps it (CL p.74-75)",
+    "In Ch. 17 the equivalent heuristic is C5: Código como comentário (commented-out code) (CL p.282)"
+   ],
+   "not_in_book": [
+    "The heading 'Explicação do código em comentários' (p.74) is the translation of 'Commented-Out Code'; it is not about explaining code in prose"
+   ],
+   "chapter": "4"
+  },
+  "javadoc": {
+   "name": "Javadoc: when yes and when no",
+   "keywords": [
+    "javadoc",
+    "doc comment",
+    "documentação de api",
+    "api documentation",
+    "@param",
+    "@return",
+    "comentário de documentação",
+    "jsdoc",
+    "xmldoc",
+    "public API docs",
+    "doc comments",
+    "docstring"
+   ],
+   "citation": "CL p.65, p.69, p.77",
+   "summary": "Good in public APIs; bad when imposed by rule on every function and in non-public code.",
+   "rules": [
+    "Write good javadocs for public APIs (CL p.65)",
+    "A mandatory-Javadoc-on-every-function rule produces abominations (Listing 4-3) (CL p.69)",
+    "Javadocs in non-public code are clutter and distraction (CL p.77)",
+    "HTML in comments is the tool's job, not the programmer's (CL p.75)"
+   ],
+   "not_in_book": [
+    "It does not address JSDoc, docstrings or XML doc; only Javadoc"
+   ],
+   "chapter": "4"
+  },
+  "exemplo-gerador-primos": {
+   "name": "Final example: GeneratePrimes / PrimeGenerator",
+   "keywords": [
+    "primos",
+    "prime generator",
+    "generateprimes",
+    "crivo de eratóstenes",
+    "sieve of eratosthenes",
+    "listagem 4-7",
+    "listagem 4-8",
+    "PrimeGenerator",
+    "prime numbers example",
+    "comment refactoring example"
+   ],
+   "citation": "CL p.77-80",
+   "summary": "Listing 4-7 shows a 'well documented' module full of bad comments; Listing 4-8 is the refactored version with only two justifiable comments.",
+   "rules": [
+    "GeneratePrimes was created for the first XP Immersion as an example of bad programming and comments (CL p.77)",
+    "In the refactored version two comments remain: the algorithm header and the justification of the square root (CL p.78-80)"
+   ],
+   "not_in_book": [],
+   "chapter": "4"
+  },
+  "formatacao-objetivo-e-equipe": {
+   "name": "Purpose of formatting and team rules",
+   "keywords": [
+    "formatação",
+    "formatting",
+    "estilo de código",
+    "code style",
+    "padrão de codificação",
+    "coding standard",
+    "guia de estilo",
+    "style guide",
+    "formatador",
+    "formatter",
+    "regra de equipe",
+    "team rules",
+    "uncle bob",
+    "code formatting",
+    "auto-format"
+   ],
+   "citation": "CL p.82, p.95-97",
+   "summary": "Formatting is communication, the first rule of the professional. In a team a single agreed style applies, enforced by a tool.",
+   "rules": [
+    "Formatting is communication and matters more than 'making it work' (CL p.82)",
+    "Choose simple rules, apply them consistently; in a team, a single set; ideally automated (CL p.82)",
+    "Team rules: the rules belong to the team; in FitNesse they were defined in 10 minutes and configured in the IDE formatter (CL p.95)",
+    "Uncle Bob's formatting rules: illustrated in Listing 5-6 (CodeAnalyzer) (CL p.95-97)"
+   ],
+   "not_in_book": [
+    "It does not cite linters or formatters by name",
+    "It does not prescribe tabs vs. spaces or indentation size"
+   ],
+   "chapter": "5"
+  },
+  "formatacao-vertical": {
+   "name": "Vertical formatting (file size, newspaper, distance, ordering)",
+   "keywords": [
+    "formatação vertical",
+    "vertical formatting",
+    "tamanho do arquivo",
+    "file size",
+    "linhas por arquivo",
+    "metáfora do jornal",
+    "newspaper metaphor",
+    "linhas em branco",
+    "blank lines",
+    "vertical openness",
+    "densidade vertical",
+    "vertical density",
+    "distância vertical",
+    "vertical distance",
+    "declaração de variáveis",
+    "variáveis de instância",
+    "funções dependentes",
+    "afinidade conceitual",
+    "ordenação vertical",
+    "vertical ordering",
+    "caller above callee",
+    "instance variables"
+   ],
+   "citation": "CL p.82-90",
+   "summary": "Small files (~200 lines, up to 500), read like a newspaper; blank lines separate concepts; what is related stays close; caller above callee.",
+   "rules": [
+    "Seven projects analyzed; FitNesse: average ~65 lines, maximum ~400; systems with files of ~200 lines and a limit of 500 (not a fixed rule) (CL p.82)",
+    "Newspaper metaphor: high level at the top, details descending (CL p.83)",
+    "Vertical openness between concepts: blank lines between thoughts (CL p.83-84)",
+    "Vertical density: related lines together, with no useless comments in between (CL p.84-85)",
+    "Vertical distance: related concepts close; local variables near use, loop variables inside the loop (CL p.85-86)",
+    "Instance variables in a well-known place, in Java at the top of the class (CL p.86)",
+    "Dependent functions: caller above callee (CL p.87)",
+    "Conceptual affinity: more affinity, less distance (CL p.89)",
+    "Vertical ordering: dependencies point downward (CL p.89-90)"
+   ],
+   "not_in_book": [
+    "200/500 lines is not a mandatory limit",
+    "The name 'Regra Decrescente' (Stepdown Rule) is from Ch. 3 (CL p.46)"
+   ],
+   "chapter": "5"
+  },
+  "formatacao-horizontal": {
+   "name": "Horizontal formatting (line width, spacing, alignment, indentation)",
+   "keywords": [
+    "formatação horizontal",
+    "horizontal formatting",
+    "largura da linha",
+    "line length",
+    "line width",
+    "80 colunas",
+    "120 caracteres",
+    "espaço em branco",
+    "whitespace",
+    "alinhamento",
+    "alignment",
+    "endentação",
+    "indentação",
+    "indentation",
+    "escopos minúsculos",
+    "while vazio",
+    "dummy scopes",
+    "120 characters",
+    "80 columns",
+    "horizontal alignment",
+    "horizontal openness"
+   ],
+   "citation": "CL p.90-95",
+   "summary": "Short lines (average ~45 characters; the author uses 120 as the limit); spaces show relationship and precedence; do not align in columns; always indent, even small scopes.",
+   "rules": [
+    "Lines are about 45 characters; widths from 20 to 60 add up to 40%; ~30% are under 10 (CL p.90)",
+    "Hollerith's 80 limit is arbitrary; 100 or 120 acceptable; the author uses 120; do not shrink the font to fit 200 (CL p.90)",
+    "Space around assignment; no space between function name and '('; space after commas (CL p.91)",
+    "Spaces indicate precedence: factors together, terms separated (CL p.91)",
+    "Horizontal alignment does not help; long lists indicate a class to split (CL p.92-93)",
+    "Indent every scope; do not collapse short if/while/functions into one line (CL p.93-94)",
+    "Tiny scopes: the semicolon of an empty while on its own line and indented (CL p.95)"
+   ],
+   "not_in_book": [
+    "It does not fix 80 columns",
+    "It defines neither tabs nor 2/4 spaces"
+   ],
+   "chapter": "5"
+  },
+  "abstracao-de-dados": {
+   "name": "Data abstraction (getters/setters)",
+   "keywords": [
+    "abstração de dados",
+    "data abstraction",
+    "getter",
+    "setter",
+    "getters e setters",
+    "acessores",
+    "encapsulamento",
+    "encapsulation",
+    "Point",
+    "expor implementação",
+    "getters and setters",
+    "accessors",
+    "hiding implementation",
+    "abstract interface"
+   ],
+   "citation": "CL p.98-100",
+   "summary": "Hiding the implementation is not putting getters/setters over variables; it is exposing abstract interfaces that manipulate the essence of the data.",
+   "rules": [
+    "Private variables exist so nobody depends on them; automatic getters/setters expose them (CL p.98)",
+    "An abstract interface (Point) hides whether the representation is rectangular or polar and enforces atomic writes (CL p.99)",
+    "Prefer getPercentFuelRemaining() to gallon getters: express the data abstractly (CL p.99-100)",
+    "The worst option is to add getters/setters carelessly (CL p.100)"
+   ],
+   "not_in_book": [
+    "It does not forbid getters/setters; it criticizes adding them without thinking (CL p.100)"
+   ],
+   "chapter": "6"
+  },
+  "antissimetria-dados-objetos": {
+   "name": "Data/object anti-symmetry (procedural vs. OO)",
+   "keywords": [
+    "antissimetria",
+    "anti-simetria",
+    "data/object anti-symmetry",
+    "objetos vs estruturas de dados",
+    "procedural vs OO",
+    "polimorfismo",
+    "instanceof",
+    "shape",
+    "Geometry",
+    "expression problem",
+    "data object anti-symmetry",
+    "procedural vs object oriented",
+    "data structures vs objects",
+    "adding new types",
+    "adding new functions",
+    "everything is an object myth"
+   ],
+   "citation": "CL p.100-102",
+   "summary": "Objects hide data and expose behavior; data structures expose data and have no behavior. Procedural makes new functions easy; OO makes new types easy.",
+   "rules": [
+    "Objects hide data behind abstractions and expose functions; data structures expose data and have no meaningful functions (CL p.100)",
+    "Procedural: adding a function is easy (shapes do not change); adding a structure requires changing all the functions (CL p.101-102)",
+    "OO: adding a class is easy; adding a function requires changing all the classes (CL p.101-102)",
+    "Want new types: objects/OO; want new functions: data structures and procedures (CL p.102)",
+    "Everything being an object is a myth (CL p.102)",
+    "Choose without prejudice the approach that best fits (CL p.106)"
+   ],
+   "not_in_book": [
+    "It does not say OO is always superior (CL p.102)",
+    "It does not use the term 'expression problem'"
+   ],
+   "chapter": "6"
+  },
+  "lei-de-demeter": {
+   "name": "The Law of Demeter",
+   "keywords": [
+    "lei de demeter",
+    "law of demeter",
+    "LoD",
+    "demeter",
+    "fale com conhecidos",
+    "talk to friends",
+    "principle of least knowledge",
+    "talk to friends not strangers",
+    "method call rules"
+   ],
+   "citation": "CL p.102-103",
+   "summary": "A method f of class C should only call methods of C, of objects created by f, of f's parameters and of objects in C's instance variables; not of objects returned by those calls.",
+   "rules": [
+    "A module should not see the insides of the objects it manipulates (CL p.102)",
+    "f of C only calls methods of: C; an object created by f; an object passed as a parameter to f; an object in an instance variable of C (CL p.102)",
+    "Do not call methods of objects returned by the permitted calls: talk to friends, not to strangers (CL p.103)",
+    "Only applies to objects; data structures naturally expose their structure (CL p.103)"
+   ],
+   "not_in_book": [
+    "It does not cite the origin/authors of the law; it only points to Wikipedia (CL p.102)",
+    "It does not forbid all dot chaining (CL p.103)",
+    "It does not use 'Princípio do Menor Conhecimento' (Principle of Least Knowledge)"
+   ],
+   "chapter": "6"
+  },
+  "carrinhos-de-trem": {
+   "name": "Train wrecks",
+   "keywords": [
+    "train wreck",
+    "carrinho de trem",
+    "acidente de trem",
+    "encadeamento de chamadas",
+    "method chaining",
+    "a.getB().getC()",
+    "navegação transitiva",
+    "train wrecks",
+    "call chain",
+    "transitive navigation",
+    "ctxt.getOptions",
+    "dot chain"
+   ],
+   "citation": "CL p.103",
+   "summary": "Chains such as ctxt.getOptions().getScratchDir().getAbsolutePath() are sloppy; breaking them into variables helps, but whether it is a violation depends on them being objects or data structures.",
+   "rules": [
+    "Call chains (train wrecks) are sloppy and should be avoided [G36] (CL p.103)",
+    "In general, split the chain into intermediate variables (CL p.103)",
+    "If they are objects, knowing the internals violates Demeter; if they are data structures, it does not (CL p.103)",
+    "Accessors confuse the matter; public fields in data structures would clarify it (CL p.103)",
+    "G36 'Evite a navegação transitiva' (avoid transitive navigation) revisits the topic (CL p.301)"
+   ],
+   "not_in_book": [
+    "It does not say that fluent APIs/builders violate Demeter (topic not addressed)"
+   ],
+   "chapter": "6"
+  },
+  "hibridos-e-estruturas-ocultas": {
+   "name": "Hybrids and hidden structures (tell, don't ask)",
+   "keywords": [
+    "híbrido",
+    "hybrid",
+    "metade objeto metade estrutura",
+    "feature envy",
+    "tell don't ask",
+    "diga não pergunte",
+    "estruturas ocultas",
+    "hiding structure",
+    "createScratchFileStream",
+    "hybrids",
+    "hidden structure",
+    "tell dont ask",
+    "half object half data structure"
+   ],
+   "citation": "CL p.104",
+   "summary": "Hybrids (behavior + exposed data) are the worst of both worlds. If it is an object, tell it to do something instead of navigating its structure.",
+   "rules": [
+    "Hybrids make it hard to add functions and structures; avoid creating them (CL p.104)",
+    "Hybrids indicate muddled design: it was not known whether to protect against new functions or new types (CL p.104)",
+    "Tell the object to do something; do not ask about its internal structure (CL p.104)",
+    "Example: ctxt.createScratchFileStream(classFileName) instead of navigating to the absolute path (CL p.104)"
+   ],
+   "not_in_book": [
+    "It does not use the expression 'Tell, Don't Ask'",
+    "Feature Envy appears only in a footnote pointing to [Refatoração] (Refactoring) (CL p.104)"
+   ],
+   "chapter": "6"
+  },
+  "dto-e-active-record": {
+   "name": "DTOs, beans and Active Record",
+   "keywords": [
+    "DTO",
+    "data transfer object",
+    "objeto de transferência de dados",
+    "bean",
+    "javabean",
+    "active record",
+    "ORM",
+    "regras de negócio em entidade",
+    "beans",
+    "public fields",
+    "business rules in active record"
+   ],
+   "citation": "CL p.105-106",
+   "summary": "A DTO is the perfect form of data structure; beans add no real advantage; Active Record is a data structure and should not receive business rules.",
+   "rules": [
+    "DTO = class with public variables and no functions (CL p.105)",
+    "DTOs serve for databases and socket messages, as a first stage of translation (CL p.105)",
+    "The apparent encapsulation of beans usually offers no advantage (CL p.105)",
+    "Active Record = special DTO with save/find, direct translation of tables (CL p.106)",
+    "Do not put business rules in the Active Record; create separate objects that contain them (CL p.106)"
+   ],
+   "not_in_book": [
+    "It does not mention Java records or data classes",
+    "It does not discuss specific ORM frameworks"
+   ],
+   "chapter": "6"
+  },
+  "excecoes-vs-codigos-de-retorno": {
+   "name": "Exceptions instead of return codes",
+   "keywords": [
+    "exceção",
+    "exception",
+    "código de erro",
+    "error code",
+    "return code",
+    "flag de erro",
+    "tratamento de erro",
+    "error handling",
+    "use exceptions rather than return codes",
+    "return codes",
+    "exceptions",
+    "separate algorithm from error handling"
+   ],
+   "citation": "CL p.107-109",
+   "summary": "Error codes clutter the caller and get forgotten; exceptions separate the algorithm from error handling.",
+   "rules": [
+    "Error handling that obscures the logic is wrong (CL p.107)",
+    "Codes/flags force an immediate check and get forgotten; throw an exception (CL p.108)",
+    "Exceptions separate two concerns (algorithm and error), which can be studied independently (CL p.109)"
+   ],
+   "not_in_book": [
+    "It does not address Result/Either types"
+   ],
+   "chapter": "7"
+  },
+  "try-catch-finally-primeiro": {
+   "name": "Write your try-catch-finally statement first",
+   "keywords": [
+    "try catch finally",
+    "try-catch",
+    "escopo de exceção",
+    "transação",
+    "TDD de exceções",
+    "teste de exceção",
+    "expected exception",
+    "try catch finally first",
+    "transaction scope",
+    "tests that force exceptions",
+    "exception tests"
+   ],
+   "citation": "CL p.109-110",
+   "summary": "try defines a transactional scope; start with try-catch-finally and use tests that force exceptions.",
+   "rules": [
+    "try blocks are like transactions; the catch must leave a consistent state (CL p.109)",
+    "Start with try-catch-finally when writing code that may throw exceptions (CL p.109)",
+    "Write tests that force exceptions and then implement the handler (CL p.110)",
+    "Refactor the catch to the type actually thrown (FileNotFoundException) (CL p.110)"
+   ],
+   "not_in_book": [
+    "It does not talk about try-with-resources (Java 7, later than the book)"
+   ],
+   "chapter": "7"
+  },
+  "excecoes-nao-verificadas": {
+   "name": "Unchecked exceptions (checked vs. unchecked)",
+   "keywords": [
+    "checked exception",
+    "unchecked exception",
+    "exceção verificada",
+    "exceção não verificada",
+    "throws",
+    "RuntimeException",
+    "aberto-fechado",
+    "open-closed",
+    "OCP",
+    "unchecked exceptions",
+    "checked exceptions",
+    "open closed principle violation",
+    "throws clause",
+    "encapsulation broken by checked exceptions"
+   ],
+   "citation": "CL p.110-111",
+   "summary": "Checked exceptions violate the Open-Closed Principle: a low-level change forces signature changes in cascade and breaks encapsulation.",
+   "rules": [
+    "Use unchecked exceptions; 'A discussão acabou' (the discussion is over) (CL p.110)",
+    "C#, C++, Python and Ruby have no checked exceptions and robust software exists in them (CL p.110)",
+    "The price of checked exceptions is violating the Open-Closed Principle (CL p.110)",
+    "throws in cascade through all levels breaks encapsulation (CL p.111)",
+    "Checked exceptions can be useful in a critical library; in applications the cost outweighs the benefit (CL p.111)"
+   ],
+   "not_in_book": [
+    "The principle violated is not SRP, it is Open-Closed (CL p.110)",
+    "It does not forbid checked exceptions in all cases (CL p.111)"
+   ],
+   "chapter": "7"
+  },
+  "contexto-e-classes-de-excecao": {
+   "name": "Context in exceptions and exception classes by caller (wrapper)",
+   "keywords": [
+    "mensagem de erro",
+    "contexto da exceção",
+    "stack trace",
+    "classe de exceção",
+    "hierarquia de exceções",
+    "wrapper",
+    "empacotar API",
+    "API de terceiros",
+    "LocalPort",
+    "ACMEPort",
+    "tradução de exceção",
+    "provide context with exceptions",
+    "define exception classes in terms of caller's needs",
+    "wrap third party API",
+    "exception wrapper",
+    "exception message"
+   ],
+   "citation": "CL p.111-113",
+   "summary": "Exceptions should state the operation and the type of failure; exception classes are defined by how they will be caught; wrap third-party APIs.",
+   "rules": [
+    "The message should mention the operation that failed and the type of failure (CL p.111)",
+    "Define exception classes with how they will be caught in mind (CL p.111)",
+    "Wrapping third-party APIs is best practice: reduces dependency, makes swapping easy and mocking in tests (CL p.112-113)",
+    "A single exception class per area is usually enough; use several only if you want to catch one and let another pass (CL p.113)"
+   ],
+   "not_in_book": [
+    "It does not recommend one exception class per error (CL p.113)"
+   ],
+   "chapter": "7"
+  },
+  "fluxo-normal-special-case": {
+   "name": "Define the normal flow (Special Case)",
+   "keywords": [
+    "special case",
+    "caso especial",
+    "null object",
+    "fluxo normal",
+    "normal flow",
+    "exceção para controle de fluxo",
+    "per diem",
+    "MealExpenses",
+    "special case pattern",
+    "Fowler special case"
+   ],
+   "citation": "CL p.113-114",
+   "summary": "When the exception muddles the business logic, return a special case object that encapsulates the behavior (Fowler's Special Case pattern).",
+   "rules": [
+    "An exception used for a business case (MealExpensesNotFound) muddles the logic (CL p.113)",
+    "Make the DAO always return MealExpenses; with no expenses, PerDiemMealExpenses (CL p.113-114)",
+    "Special Case pattern (Fowler): the client does not deal with different behavior (CL p.114)"
+   ],
+   "not_in_book": [
+    "The book does not use the name 'Null Object'"
+   ],
+   "chapter": "7"
+  },
+  "nao-retornar-null": {
+   "name": "Don't return null",
+   "keywords": [
+    "null",
+    "retornar null",
+    "return null",
+    "NullPointerException",
+    "NPE",
+    "lista vazia",
+    "empty list",
+    "Collections.emptyList",
+    "optional",
+    "don't return null",
+    "null checks",
+    "avoid null"
+   ],
+   "citation": "CL p.114-115",
+   "summary": "Returning null causes cascading checks and NPE; throw an exception, return a Special Case or an empty collection.",
+   "rules": [
+    "Returning null creates work and throws problems onto the callers (CL p.114)",
+    "Instead of null, throw an exception or return a SPECIAL CASE object (CL p.114)",
+    "Wrap third-party APIs that return null (CL p.114)",
+    "Return an empty list (Collections.emptyList()) instead of null (CL p.115)"
+   ],
+   "not_in_book": [
+    "It does not mention Optional/Maybe",
+    "It does not mention @Nullable/@NonNull annotations"
+   ],
+   "chapter": "7"
+  },
+  "nao-passar-null": {
+   "name": "Don't pass null",
+   "keywords": [
+    "passar null",
+    "null como argumento",
+    "null parameter",
+    "assert",
+    "InvalidArgumentException",
+    "validação de parâmetro",
+    "guard clause",
+    "don't pass null",
+    "passing null",
+    "null arguments"
+   ],
+   "citation": "CL p.115-116",
+   "summary": "Passing null is worse than returning it; neither an exception nor an assert solves it well; forbid null by default.",
+   "rules": [
+    "Passing null is worse than returning it; avoid it, except for an API that expects it (CL p.115)",
+    "Throwing InvalidArgumentException requires a handler with no good answer (CL p.116)",
+    "assert documents but does not solve: the error remains at runtime (CL p.116)",
+    "Forbid passing null by default (CL p.116)"
+   ],
+   "not_in_book": [
+    "It does not recommend assert as a solution (CL p.116)",
+    "It does not use the term 'guard clause'"
+   ],
+   "chapter": "7"
+  },
+  "codigo-de-terceiros-map": {
+   "name": "Third-party code and the Map example",
+   "keywords": [
+    "código de terceiros",
+    "third-party code",
+    "biblioteca externa",
+    "java.util.Map",
+    "Map",
+    "Sensors",
+    "interface de limite",
+    "boundary",
+    "limites",
+    "encapsular coleção",
+    "using third party code",
+    "boundaries",
+    "boundary interface",
+    "encapsulate collections"
+   ],
+   "citation": "CL p.117-119",
+   "summary": "Third-party interfaces are too broad; do not pass a Map (or another boundary interface) around the system: encapsulate it in a class such as Sensors.",
+   "rules": [
+    "Natural tension: the provider wants broad applicability, the user wants focus (CL p.118)",
+    "Map allows clear() to any recipient and does not restrict types (CL p.118)",
+    "Encapsulate the Map in a class (Sensors) that exposes only what is needed (CL p.119)",
+    "Keep the boundary interface inside a class or a nearby family; do not return it from or accept it in public APIs (CL p.119)"
+   ],
+   "not_in_book": [
+    "It does not say to encapsulate every use of Map (CL p.119)"
+   ],
+   "chapter": "8"
+  },
+  "testes-de-aprendizagem": {
+   "name": "Learning tests",
+   "keywords": [
+    "teste de aprendizagem",
+    "learning test",
+    "explorar API",
+    "log4j",
+    "testes de limite",
+    "boundary tests",
+    "atualização de biblioteca",
+    "upgrade de dependência",
+    "learning tests",
+    "exploring and learning boundaries",
+    "Jim Newkirk",
+    "third party library tests"
+   ],
+   "citation": "CL p.119-122",
+   "summary": "Write tests that exercise the third-party API the way you will use it; they cost nothing and detect changes in new versions.",
+   "rules": [
+    "Learning and integrating at the same time doubles the difficulty (CL p.120)",
+    "Learning tests (Jim Newkirk) are controlled experiments on the API (CL p.120)",
+    "Encapsulate the knowledge (log4j) in your own classes, isolating the application (CL p.121)",
+    "They are better than free: they run with every new version and flag incompatibilities (CL p.121-122)",
+    "Define boundary tests that exercise the interface the way your code does, to ease migration (CL p.122)"
+   ],
+   "not_in_book": [
+    "It does not say we should exhaustively test third-party libraries (CL p.119)"
+   ],
+   "chapter": "8"
+  },
+  "codigo-que-nao-existe-adapter": {
+   "name": "Code that does not exist yet (desired interface + Adapter)",
+   "keywords": [
+    "API inexistente",
+    "interface desejada",
+    "adapter",
+    "adaptador",
+    "fake",
+    "FakeTransmitter",
+    "Transmitter",
+    "seam",
+    "costura",
+    "dublê de teste",
+    "using code that does not yet exist",
+    "adapter pattern",
+    "wished-for interface"
+   ],
+   "citation": "CL p.122-123",
+   "summary": "Define the interface you would like to have, use a fake to test, and when the real API exists, connect it with an Adapter.",
+   "rules": [
+    "Define your own interface (Transmitter.transmit) when the API does not exist yet (CL p.122)",
+    "Controlling the interface keeps the client readable and focused (CL p.122)",
+    "Connect to the real API with an ADAPTER, a single point of change (CL p.123)",
+    "The design creates a seam for testing with FakeTransmitter (CL p.123)"
+   ],
+   "not_in_book": [
+    "It does not use the terms 'ports and adapters' or 'hexagonal architecture'"
+   ],
+   "chapter": "8"
+  },
+  "limites-limpos": {
+   "name": "Clean boundaries",
+   "keywords": [
+    "limites limpos",
+    "clean boundaries",
+    "isolar dependência",
+    "acoplamento a terceiros",
+    "anti-corruption layer",
+    "camada anticorrupção",
+    "boundary code",
+    "external code",
+    "wrapper",
+    "adapter",
+    "depend on what you control"
+   ],
+   "citation": "CL p.123",
+   "summary": "Keep few points of contact with external code, wrapped or adapted, and covered by tests.",
+   "rules": [
+    "Boundary code needs clear separation and tests that define expectations (CL p.123)",
+    "It is better to depend on what you control than on what controls you (CL p.123)",
+    "Reference external code in few places, via a wrapper (like Map) or an ADAPTER (CL p.123)"
+   ],
+   "not_in_book": [
+    "It does not use the term 'anti-corruption layer'"
+   ],
+   "chapter": "8"
+  },
+  "tres-leis-do-tdd": {
+   "name": "The three laws of TDD",
+   "keywords": [
+    "três leis do TDD",
+    "three laws of TDD",
+    "TDD",
+    "test driven development",
+    "desenvolvimento dirigido a testes",
+    "test first",
+    "red green refactor",
+    "write failing test first",
+    "first law",
+    "second law",
+    "third law"
+   ],
+   "citation": "CL p.125-126",
+   "summary": "1st: do not write production code until you have a failing test; 2nd: do not write more of a test than is sufficient to fail (not compiling is failing); 3rd: do not write more production code than is sufficient to pass the current test.",
+   "rules": [
+    "First Law: do not write production code before a failing unit test (CL p.125)",
+    "Second Law: do not write more of a test than is sufficient to fail; not compiling is failing (CL p.125)",
+    "Third Law: do not write more production code than is sufficient to pass the failing test (CL p.125)",
+    "The laws form a cycle of about thirty seconds (CL p.126)",
+    "They generate thousands of tests per year, whose volume becomes a management problem (CL p.126)"
+   ],
+   "not_in_book": [
+    "It does not use the expression 'red-green-refactor' in the chapter",
+    "It does not say to write all the tests before the code (CL p.126)"
+   ],
+   "chapter": "9"
+  },
+  "manter-testes-limpos": {
+   "name": "Keeping tests clean and the -ilities",
+   "keywords": [
+    "testes limpos",
+    "clean tests",
+    "qualidade do código de teste",
+    "manutenção de testes",
+    "testes sujos",
+    "flexibilidade",
+    "manutenibilidade",
+    "reuso",
+    "-idades",
+    "cobertura",
+    "medo de mudar",
+    "keeping tests clean",
+    "dirty tests",
+    "test code quality",
+    "ilities",
+    "flexibility maintainability reusability",
+    "test coverage",
+    "fear of change"
+   ],
+   "citation": "CL p.126-127",
+   "summary": "Dirty tests are equivalent to having no tests; test code is as important as production code; tests enable flexibility, reuse and maintenance.",
+   "rules": [
+    "'Quick and dirty' tests are the same as or worse than no tests (CL p.126)",
+    "Test code is as important as production code and must be as clean as it (CL p.127)",
+    "Tests enable the -ilities (flexibility, reuse, maintenance) by eliminating the fear of change (CL p.127)",
+    "The greater the coverage, the smaller the fear (CL p.127)"
+   ],
+   "not_in_book": [
+    "It sets no percentage coverage target (CL p.127)"
+   ],
+   "chapter": "9"
+  },
+  "testes-legiveis-construir-operar-verificar": {
+   "name": "Readability and BUILD-OPERATE-CHECK",
+   "keywords": [
+    "legibilidade de testes",
+    "readability",
+    "build-operate-check",
+    "construir operar verificar",
+    "arrange act assert",
+    "AAA",
+    "given when then",
+    "estrutura de teste",
+    "clean tests",
+    "build operate check",
+    "test structure"
+   ],
+   "citation": "CL p.127-129",
+   "summary": "A clean test = readability; structure each test as build the data, operate, check, without irrelevant details.",
+   "rules": [
+    "Three things make a test clean: readability, readability and readability (CL p.127)",
+    "Remove duplication and details that do not serve the test's intent (CL p.127-129)",
+    "BUILD-OPERATE-CHECK (CONSTRUIR-OPERAR-VERIFICAR) pattern: create data, operate, check (CL p.129)"
+   ],
+   "not_in_book": [
+    "The book does not use 'Arrange-Act-Assert'"
+   ],
+   "chapter": "9"
+  },
+  "dsl-de-teste": {
+   "name": "Domain-specific testing language",
+   "keywords": [
+    "DSL de teste",
+    "testing DSL",
+    "domain-specific language",
+    "API de teste",
+    "helpers de teste",
+    "test utilities",
+    "funções utilitárias de teste",
+    "domain specific testing language",
+    "test DSL",
+    "test API",
+    "test helpers"
+   ],
+   "citation": "CL p.130",
+   "summary": "Build functions and utilities that form a specialized testing API, evolved through continuous refactoring.",
+   "rules": [
+    "Build functions/utilities on top of the system's APIs to form a testing API (CL p.130)",
+    "The testing API evolves through continuous refactoring, it is not born ready (CL p.130)"
+   ],
+   "not_in_book": [],
+   "chapter": "9"
+  },
+  "padrao-duplo": {
+   "name": "Dual standard (test vs. production)",
+   "keywords": [
+    "padrão duplo",
+    "dual standard",
+    "eficiência em testes",
+    "performance de teste",
+    "StringBuffer",
+    "HBchL",
+    "mapeamento mental",
+    "a dual standard",
+    "test code efficiency",
+    "test environment",
+    "memory and CPU in tests",
+    "clarity in tests"
+   ],
+   "citation": "CL p.130-132",
+   "summary": "Test code may be less efficient (memory/CPU) than production code, but never less clear.",
+   "rules": [
+    "The testing API code does not need to be as efficient as production code (CL p.130)",
+    "The encoded string HBchL almost violates mental mapping, but is appropriate here (CL p.131)",
+    "Concessions in tests involve memory and CPU efficiency, never clarity (CL p.132)"
+   ],
+   "not_in_book": [
+    "It does not excuse dirty tests (CL p.132)"
+   ],
+   "chapter": "9"
+  },
+  "uma-afirmacao-um-conceito": {
+   "name": "One assert per test vs. one concept per test",
+   "keywords": [
+    "um assert por teste",
+    "single assert",
+    "one assert per test",
+    "múltiplos asserts",
+    "um conceito por teste",
+    "single concept",
+    "dado-quando-então",
+    "given-when-then",
+    "Template Method",
+    "single concept per test",
+    "multiple asserts",
+    "one concept per test",
+    "given when then names"
+   ],
+   "citation": "CL p.132-134",
+   "summary": "A single assert is good guidance, not a rule; minimize asserts and test a single concept per test function.",
+   "rules": [
+    "There is a school that demands a single assertion per JUnit test (CL p.132)",
+    "Splitting the tests generates duplication; the author prefers multiple assertions in Listing 9-2 (CL p.133)",
+    "The single-assert rule is good guidance; minimize the number of assertions (CL p.133)",
+    "Test a single concept per test function and minimize assertions per concept (CL p.134)",
+    "given-when-then names make reading easier (CL p.133)"
+   ],
+   "not_in_book": [
+    "It does not impose one assert per test as a law (CL p.133)"
+   ],
+   "chapter": "9"
+  },
+  "first": {
+   "name": "F.I.R.S.T.",
+   "keywords": [
+    "FIRST",
+    "F.I.R.S.T.",
+    "fast",
+    "independent",
+    "repeatable",
+    "self-validating",
+    "timely",
+    "rapidez",
+    "independência",
+    "repetitividade",
+    "autovalidação",
+    "pontualidade",
+    "testes rápidos",
+    "testes independentes",
+    "flaky",
+    "clean test principles"
+   ],
+   "citation": "CL p.134-135",
+   "summary": "Rapidez, Independência, Repetitividade, Autovalidação, Pontualidade (Fast, Independent, Repeatable, Self-validating, Timely).",
+   "rules": [
+    "F, Rapidez (Fast): slow tests are not run often (CL p.134)",
+    "I, Independência (Independent): one test does not set up the next; any order (CL p.134)",
+    "R, Repetitividade (Repeatable): run in any environment, including without a network (CL p.134)",
+    "S, Autovalidação (Self-validating): boolean output, without reading logs or comparing files by hand (CL p.134)",
+    "T, Pontualidade (Timely): written immediately before the production code (CL p.135)"
+   ],
+   "not_in_book": [
+    "T is not 'Thorough'; S is not 'Small' (CL p.134-135)",
+    "It does not use the term 'flaky'"
+   ],
+   "chapter": "9"
+  },
+  "organizacao-da-classe": {
+   "name": "Class organization (member ordering)",
+   "keywords": [
+    "ordem dos membros",
+    "organização da classe",
+    "class organization",
+    "member order",
+    "variáveis primeiro",
+    "constantes públicas",
+    "stepdown",
+    "jornal",
+    "member ordering",
+    "class layout",
+    "instance variables order",
+    "public static constants",
+    "standard Java convention"
+   ],
+   "citation": "CL p.137",
+   "summary": "Java convention: public static constants, private static variables, private instance variables; then public functions, each followed by the private ones it calls.",
+   "rules": [
+    "Variables first: public/static constants, private static, private instance (CL p.137)",
+    "There is rarely a good reason for a public variable (CL p.137)",
+    "Public functions after the variables; private ones right after the public one that calls them (CL p.137)"
+   ],
+   "not_in_book": [
+    "It is not presented as a universal rule, but as the standard Java convention (CL p.137)"
+   ],
+   "chapter": "10"
+  },
+  "encapsulamento-e-testes": {
+   "name": "Encapsulation and access for tests",
+   "keywords": [
+    "encapsulamento",
+    "encapsulation",
+    "protected para teste",
+    "package-private",
+    "visibilidade",
+    "private",
+    "private by default",
+    "protected for tests",
+    "package-private for tests",
+    "test access"
+   ],
+   "citation": "CL p.137",
+   "summary": "Private by default; protected or package access only if a test needs it, as a last resort.",
+   "rules": [
+    "The test takes priority: it can be made protected/package for a test in the same package (CL p.137)",
+    "First try to keep privacy; losing encapsulation is the last resort (CL p.137)"
+   ],
+   "not_in_book": [
+    "It does not forbid loosening visibility for tests (CL p.137)"
+   ],
+   "chapter": "10"
+  },
+  "classes-pequenas-srp": {
+   "name": "Classes should be small and the Single Responsibility Principle",
+   "keywords": [
+    "SRP",
+    "single responsibility",
+    "responsabilidade única",
+    "classe pequena",
+    "class size",
+    "god class",
+    "classe de deus",
+    "motivo para mudar",
+    "reason to change",
+    "small classes",
+    "single responsibility principle",
+    "one reason to change",
+    "class responsibilities",
+    "many small classes",
+    "tool box analogy"
+   ],
+   "citation": "CL p.137-141",
+   "summary": "Classes are measured by responsibilities; SRP = one, and only one, reason to change. Prefer many small classes to a few large ones.",
+   "rules": [
+    "Classes are measured by responsibilities, not by lines (CL p.137)",
+    "Five methods can still be too many responsibilities (CL p.139)",
+    "An ambiguous name (Processor, Manager, Super) indicates excess; describe the class in ~25 words without if/or/but (CL p.139)",
+    "SRP: a class or module should have one, and only one, reason to change (CL p.139)",
+    "SRP is the most ignored principle; many stop when the code works (CL p.140)",
+    "A system with many small classes, not a few large ones (CL p.140-141)"
+   ],
+   "not_in_book": [
+    "It sets no numeric limit of lines or methods per class (CL p.137)",
+    "The class-level SRP is not 'do one thing' (the function rule) (CL p.139)"
+   ],
+   "chapter": "10"
+  },
+  "coesao": {
+   "name": "Cohesion",
+   "keywords": [
+    "coesão",
+    "cohesion",
+    "variáveis de instância",
+    "instance variables",
+    "dividir classe",
+    "split class",
+    "LCOM",
+    "high cohesion",
+    "class splitting",
+    "maintaining cohesion results in many small classes"
+   ],
+   "citation": "CL p.141-147",
+   "summary": "Methods should use the instance variables; when cohesion drops, another class is trying to get out. Maintaining cohesion produces many small classes.",
+   "rules": [
+    "Few instance variables, each method using one or more (CL p.141)",
+    "Aim for high cohesion, not total (CL p.141)",
+    "Variables used by only some methods indicate another class trying to get out (CL p.141)",
+    "When classes lose cohesion, split them (CL p.142)",
+    "Refactor with tests, in small steps, without rewriting (CL p.147)"
+   ],
+   "not_in_book": [
+    "It defines no formal cohesion metric (LCOM) (CL p.141)"
+   ],
+   "chapter": "10"
+  },
+  "ocp-organizar-para-mudancas": {
+   "name": "Organizing for change (OCP)",
+   "keywords": [
+    "OCP",
+    "open closed",
+    "aberto-fechado",
+    "aberto fechado",
+    "organizar para mudanças",
+    "subclasse",
+    "extensão",
+    "organizing for change",
+    "open closed principle",
+    "extension without modification",
+    "sql class",
+    "private methods subset"
+   ],
+   "citation": "CL p.148-150",
+   "summary": "Structure classes so new features enter by extension, without changing existing code; act when you need to open the class.",
+   "rules": [
+    "Organize classes to reduce the risk of changes (CL p.148)",
+    "Private methods that serve only a subset indicate a point for improvement (CL p.148)",
+    "If the class is complete and will not change, leave it; when you must open it, fix the design (CL p.148)",
+    "OCP: classes open for extension and closed for modification (CL p.150)"
+   ],
+   "not_in_book": [
+    "It does not say to refactor preventively with no need for change (CL p.148)"
+   ],
+   "chapter": "10"
+  },
+  "dip-isolar-de-mudancas": {
+   "name": "Isolating from change (DIP)",
+   "keywords": [
+    "DIP",
+    "dependency inversion",
+    "inversão de dependência",
+    "inversão da independência",
+    "abstração",
+    "interface",
+    "stub",
+    "isolar mudanças",
+    "isolating from change",
+    "dependency inversion principle",
+    "abstractions",
+    "interfaces",
+    "Portfolio StockExchange"
+   ],
+   "citation": "CL p.150-151",
+   "summary": "Depend on abstractions (interfaces), not on concrete details; this also makes the code testable with stubs.",
+   "rules": [
+    "Interfaces and abstract classes isolate the client from concrete details (CL p.150)",
+    "Receive the abstraction through the constructor (Portfolio receives StockExchange) (CL p.150)",
+    "Decoupled for testing = more flexible and reusable (CL p.151)",
+    "DIP: classes should depend on abstractions, not on concrete details (CL p.151)"
+   ],
+   "not_in_book": [
+    "The translation calls DIP 'Princípio da Inversão da Independência'; it does not use 'Inversão de Dependência' (CL p.151)",
+    "It does not present the SOLID acronym, nor LSP or ISP"
+   ],
+   "chapter": "10"
+  },
+  "separar-construcao-de-uso": {
+   "name": "Separate construction from use (main, factories)",
+   "keywords": [
+    "construção",
+    "inicialização",
+    "startup",
+    "main",
+    "factory",
+    "abstract factory",
+    "lazy initialization",
+    "inicialização tardia",
+    "separation of construction",
+    "separate constructing a system from using it",
+    "factories",
+    "startup process"
+   ],
+   "citation": "CL p.153-155",
+   "summary": "Separate the creation and wiring of objects from the runtime logic: construction in main or in factories, with dependencies pointing away from main.",
+   "rules": [
+    "Separate initialization from runtime logic (CL p.153)",
+    "Lazy initialization mixed in creates a hard dependency and in a way violates SRP (CL p.154)",
+    "Have a global, consistent strategy to resolve dependencies (CL p.154)",
+    "Build everything in main; the application does not know about construction (CL p.154)",
+    "Use Abstract Factory when the application decides when to create (CL p.154-155)"
+   ],
+   "not_in_book": [
+    "It does not forbid lazy initialization (CL p.154, p.156)"
+   ],
+   "chapter": "11"
+  },
+  "injecao-de-dependencia": {
+   "name": "Dependency injection and IoC",
+   "keywords": [
+    "injeção de dependência",
+    "dependency injection",
+    "DI",
+    "IoC",
+    "inversão de controle",
+    "inversion of control",
+    "contêiner",
+    "container",
+    "JNDI",
+    "Spring",
+    "setter injection",
+    "constructor injection",
+    "service locator"
+   ],
+   "citation": "CL p.155-156",
+   "summary": "DI applies IoC to dependency management; in true DI the class is passive and the container injects through setters or the constructor.",
+   "rules": [
+    "DI is the application of IoC to dependency management and supports SRP (CL p.155-156)",
+    "JNDI is partial DI: the object still asks for the dependency (CL p.156)",
+    "True DI: passive class, setters/constructor, the container wires it up (CL p.156)",
+    "Containers still allow on-demand creation (CL p.156)"
+   ],
+   "not_in_book": [
+    "It does not mention Service Locator by name",
+    "It does not require using Spring"
+   ],
+   "chapter": "11"
+  },
+  "crescimento-e-arquitetura-testavel": {
+   "name": "Scaling up and testing the architecture",
+   "keywords": [
+    "escalonamento",
+    "scaling up",
+    "arquitetura",
+    "BDUF",
+    "big design up front",
+    "POJO",
+    "evolução",
+    "incremental",
+    "testar arquitetura",
+    "emergent architecture",
+    "test drive the system architecture",
+    "incremental growth"
+   ],
+   "citation": "CL p.156-165",
+   "summary": "There is no right system on the first try; with POJOs and separated concerns, the architecture can grow and be tested; BDUF is harmful.",
+   "rules": [
+    "It is a myth that you can get the system right the first time; implement today's stories, refactor and expand tomorrow (CL p.156-157)",
+    "Software can grow gradually if there is separation of concerns (CL p.157)",
+    "With the domain in POJOs it is possible to test the architecture (CL p.164)",
+    "BDUF is not necessary and is harmful (CL p.164)",
+    "Start simple and well decoupled, without giving up planning (CL p.165)"
+   ],
+   "not_in_book": [
+    "It does not reject planning, only BDUF (CL p.165)"
+   ],
+   "chapter": "11"
+  },
+  "preocupacoes-transversais-aop": {
+   "name": "Cross-cutting concerns, proxies and AOP",
+   "keywords": [
+    "cross-cutting concerns",
+    "preocupações transversais",
+    "AOP",
+    "POA",
+    "aspectos",
+    "proxy",
+    "dynamic proxy",
+    "AspectJ",
+    "Spring AOP",
+    "JBoss",
+    "EJB",
+    "EJB3",
+    "aspect oriented programming",
+    "proxies",
+    "JBoss AOP",
+    "persistence",
+    "transactions",
+    "security"
+   ],
+   "citation": "CL p.159-164",
+   "summary": "Persistence, transactions and security cut across objects; AOP restores modularity. JDK proxies are limited; pure Java AOP (Spring/JBoss) is enough in 80-90% of cases; AspectJ is the most complete.",
+   "rules": [
+    "Cross-cutting concerns spread the same code across several objects (CL p.159)",
+    "JDK proxies only work with interfaces and generate a lot of code (CL p.159, p.161)",
+    "With pure Java AOP, the business logic stays in POJOs (CL p.161)",
+    "Java AOP is enough for 80-90% of cases; AspectJ requires a new language (CL p.164)"
+   ],
+   "not_in_book": [
+    "The technologies cited are from 2008 [DATED]: EJB2/EJB3, Spring 2.5, JBoss AOP, AspectJ (CL p.157-164)"
+   ],
+   "chapter": "11"
+  },
+  "decisoes-padroes-dsl": {
+   "name": "Decision making, standards and DSLs",
+   "keywords": [
+    "adiar decisões",
+    "last responsible moment",
+    "último momento",
+    "padrões",
+    "standards",
+    "DSL",
+    "domain-specific language",
+    "linguagem específica de domínio",
+    "optimize decision making",
+    "postpone decisions",
+    "use standards wisely",
+    "domain specific languages",
+    "simplest thing that could possibly work"
+   ],
+   "citation": "CL p.165-167",
+   "summary": "Postpone decisions until the last moment; use standards only when they add demonstrable value; DSLs bring code and domain closer; use the simplest thing that works.",
+   "rules": [
+    "Give decisions to the most qualified and postpone them until the last moment (CL p.165)",
+    "Use standards wisely, when they add demonstrable value (CL p.166)",
+    "A DSL minimizes the communication gap between domain and code (CL p.166)",
+    "Use the simplest thing that can possibly work (CL p.167)"
+   ],
+   "not_in_book": [
+    "'Standards' (Padrões) here includes industry standards such as EJB2, not only design patterns (CL p.166)"
+   ],
+   "chapter": "11"
+  },
+  "projeto-simples-quatro-regras": {
+   "name": "The four rules of Simple Design (Kent Beck)",
+   "keywords": [
+    "simple design",
+    "projeto simples",
+    "Kent Beck",
+    "quatro regras",
+    "four rules",
+    "emergência",
+    "emergent design",
+    "four rules of simple design",
+    "Kent Beck rules",
+    "runs all the tests",
+    "no duplication",
+    "expressive",
+    "minimal classes and methods"
+   ],
+   "citation": "CL p.168-169",
+   "summary": "Book order: 1) run all the tests; 2) no duplication; 3) express the programmer's intent; 4) minimize classes and methods. The order is by importance.",
+   "rules": [
+    "Rules: run all the tests, no duplication, express intent, minimize classes and methods (CL p.169)",
+    "The rules are in order of importance (CL p.169)",
+    "Creating tests leads to better designs (CL p.169)",
+    "Rules 2 to 4 are applied during refactoring, protected by the tests (CL p.169)"
+   ],
+   "not_in_book": [
+    "It does not swap duplication and expressiveness (CL p.169)",
+    "It does not use YAGNI"
+   ],
+   "chapter": "12"
+  },
+  "sem-duplicacao": {
+   "name": "No duplication",
+   "keywords": [
+    "duplicação",
+    "duplication",
+    "DRY",
+    "template method",
+    "código repetido",
+    "reutilização",
+    "no duplication",
+    "implementation duplication",
+    "extract common code",
+    "emergent design duplication"
+   ],
+   "citation": "CL p.170-172",
+   "summary": "Duplication is the main enemy; it includes duplication of implementation. Extract even a few lines; Template Method removes high-level duplication.",
+   "rules": [
+    "Duplication is the primary enemy of a well-designed system (CL p.170)",
+    "Eliminate even a few repeated lines and duplication of implementation (isEmpty via size) (CL p.170)",
+    "Extracting similarities reveals SRP violations and enables small-scale reuse (CL p.171)",
+    "Template Method removes high-level duplication (CL p.171-172)"
+   ],
+   "not_in_book": [],
+   "chapter": "12"
+  },
+  "expressividade-e-poucas-classes": {
+   "name": "Expressiveness and few classes/methods",
+   "keywords": [
+    "expressividade",
+    "expressiveness",
+    "intenção",
+    "intent",
+    "nomes",
+    "poucas classes",
+    "minimal classes",
+    "dogmatismo",
+    "interface para cada classe",
+    "expressive",
+    "minimal classes and methods",
+    "dogma",
+    "try",
+    "names as documentation",
+    "pragmatism"
+   ],
+   "citation": "CL p.172-173",
+   "summary": "Code should express the author's intent (names, size, patterns, tests, and trying); but avoid dogmatism that creates too many classes and methods; this is the lowest-priority rule.",
+   "rules": [
+    "The code should clearly express the author's intent (CL p.172)",
+    "Use pattern names and tests as documentation (CL p.173)",
+    "The most important way of being expressive is to try (CL p.173)",
+    "Avoid dogmas such as an interface for every class (CL p.173)",
+    "Minimizing classes and methods is the lowest-priority rule (CL p.173)"
+   ],
+   "not_in_book": [
+    "It does not authorize large classes in the name of few classes (CL p.173)"
+   ],
+   "chapter": "12"
+  },
+  "por-que-concorrencia-mitos": {
+   "name": "Why concurrency; myths and challenges",
+   "keywords": [
+    "concorrência",
+    "concurrency",
+    "threads",
+    "mitos",
+    "myths",
+    "desempenho",
+    "performance",
+    "desacoplamento o que quando",
+    "caminhos de execução",
+    "why concurrency",
+    "concurrency myths",
+    "decoupling what from when",
+    "concurrency challenges",
+    "race conditions",
+    "++ paths"
+   ],
+   "citation": "CL p.175-177",
+   "summary": "Concurrency decouples what from when. It does not always improve performance, it changes the design and requires understanding the container. Even a ++ has thousands of paths.",
+   "rules": [
+    "Concurrency is a decoupling strategy between what and when (CL p.175)",
+    "It does not always improve performance; only when there is waiting to share (CL p.176)",
+    "Concurrency changes the design and requires understanding the container (CL p.176)",
+    "Concurrency bugs do not repeat and are dismissed as one-off cases (CL p.176)",
+    "++ with two threads: 12,870 paths (int), 2,704,156 (long) (CL p.177)"
+   ],
+   "not_in_book": [],
+   "chapter": "13"
+  },
+  "principios-de-defesa-concorrencia": {
+   "name": "Concurrency defense principles",
+   "keywords": [
+    "SRP concorrência",
+    "escopo dos dados",
+    "data scope",
+    "cópias",
+    "copies",
+    "threads independentes",
+    "imutável",
+    "shared data",
+    "dados compartilhados",
+    "concurrency defense principles",
+    "SRP for concurrency",
+    "limit scope of data",
+    "use copies of data",
+    "threads should be independent"
+   ],
+   "citation": "CL p.177-179",
+   "summary": "Separate concurrency code (SRP), limit access to shared data, use copies and keep threads independent.",
+   "rules": [
+    "Keep concurrency code separate from the rest (CL p.178)",
+    "Severely limit access to shared data (CL p.178)",
+    "Use copies of data to avoid synchronization (CL p.178)",
+    "Independent threads with local data; split the data into independent subsystems (CL p.178-179)"
+   ],
+   "not_in_book": [],
+   "chapter": "13"
+  },
+  "biblioteca-e-modelos-de-execucao": {
+   "name": "Know your library and the execution models",
+   "keywords": [
+    "java.util.concurrent",
+    "ConcurrentHashMap",
+    "Executor",
+    "non-blocking",
+    "produtor-consumidor",
+    "producer-consumer",
+    "leitores-escritores",
+    "readers-writers",
+    "jantar dos filósofos",
+    "dining philosophers",
+    "starvation",
+    "livelock",
+    "bound resources",
+    "know your library",
+    "thread-safe collections",
+    "Executor framework",
+    "non-blocking solutions",
+    "execution models",
+    "producer consumer",
+    "readers writers",
+    "mutual exclusion",
+    "deadlock"
+   ],
+   "citation": "CL p.179-181",
+   "summary": "Use thread-safe collections, Executor and non-blocking solutions; know the definitions (bound resources, mutual exclusion, starvation, deadlock, livelock) and the three classic models.",
+   "rules": [
+    "Use thread-safe collections, Executor, non-blocking; know the unsafe classes (CL p.179)",
+    "Start with ConcurrentHashMap in Java 5 (CL p.179)",
+    "Definitions: bound resources, mutual exclusion, starvation, deadlock, livelock (CL p.180)",
+    "Learn producer-consumer, readers-writers and dining philosophers (CL p.180-181)"
+   ],
+   "not_in_book": [
+    "It does not address CompletableFuture or virtual threads"
+   ],
+   "chapter": "13"
+  },
+  "sincronizacao-e-desligamento": {
+   "name": "Synchronized methods, critical sections and shutdown",
+   "keywords": [
+    "synchronized",
+    "seção crítica",
+    "critical section",
+    "client-based locking",
+    "server-based locking",
+    "bloqueio no cliente",
+    "bloqueio no servidor",
+    "shutdown",
+    "desligamento",
+    "encerramento",
+    "beware dependencies between synchronized methods",
+    "keep synchronized sections small",
+    "graceful shutdown",
+    "adapted server"
+   ],
+   "citation": "CL p.181-183",
+   "summary": "Avoid using more than one method of a shared object (or lock on the client, on the server, or via an extra server); keep synchronized sections small; plan shutdown early.",
+   "rules": [
+    "Avoid using more than one method on a shared object (CL p.182)",
+    "Three ways out: client-side locking, server-side locking, an extra server (CL p.182)",
+    "Keep synchronized sections as small as possible (CL p.182)",
+    "Think about shutdown early; it takes longer than you expect (CL p.182-183)"
+   ],
+   "not_in_book": [
+    "It does not forbid synchronized (CL p.182)"
+   ],
+   "chapter": "13"
+  },
+  "testar-codigo-com-threads": {
+   "name": "Testing threaded code",
+   "keywords": [
+    "testar threads",
+    "testing threaded code",
+    "teste concorrente",
+    "falha espúria",
+    "spurious failure",
+    "jiggle",
+    "instrumentação",
+    "ConTest",
+    "yield",
+    "sleep",
+    "spurious failures",
+    "threaded code testing",
+    "pluggable threaded code",
+    "tunable",
+    "more threads than processors",
+    "run on different platforms",
+    "instrument code to force failures",
+    "jiggling"
+   ],
+   "citation": "CL p.183-187",
+   "summary": "Seven recommendations: spurious failures are thread issues; get nonthreaded code working first; make it pluggable; tunable; run with more threads than processors; on different platforms; instrument to force failures.",
+   "rules": [
+    "Treat spurious failures as threading issues (CL p.183)",
+    "Get the nonthreaded code working first, in POJOs (CL p.183-184)",
+    "Make the threaded code pluggable and tunable (CL p.184)",
+    "Run with more threads than processors and on all platforms (CL p.184-185)",
+    "Instrument manually or automatically to force failures (CL p.185-187)"
+   ],
+   "not_in_book": [
+    "The book writes Object.sleep/yield/priority; in Java they are Thread methods [extrapolation] (CL p.185)"
+   ],
+   "chapter": "13"
+  },
+  "cliente-servidor-e-srp-threads": {
+   "name": "Client/server example and isolating the threading policy",
+   "keywords": [
+    "cliente servidor",
+    "client server",
+    "thread por pedido",
+    "thread per request",
+    "ClientScheduler",
+    "I/O bound",
+    "CPU bound",
+    "E/S",
+    "throughput test",
+    "client server example",
+    "threads and SRP",
+    "thread management policy"
+   ],
+   "citation": "CL p.310-314",
+   "summary": "Find out whether the bottleneck is I/O or CPU; threads help with I/O. Isolate the threading policy behind an interface (ClientScheduler) to apply SRP.",
+   "rules": [
+    "Adding threads to a CPU-bound problem does not speed it up (CL p.311)",
+    "An unbounded thread per request is naive (CL p.312)",
+    "Thread management in a few well-controlled places (CL p.313)",
+    "Changing the policy becomes a new class (e.g. Executor) (CL p.314)"
+   ],
+   "not_in_book": [],
+   "chapter": "A"
+  },
+  "caminhos-de-execucao-atomicidade": {
+   "name": "Execution paths and atomicity",
+   "keywords": [
+    "caminhos de execução",
+    "execution paths",
+    "atomicidade",
+    "atomic",
+    "bytecode",
+    "modelo de memória",
+    "memory model",
+    "long 64 bits",
+    "++ não atômico",
+    "possible paths of execution",
+    "atomic operation",
+    "JVM bytecode",
+    "long assignment",
+    "++ not atomic",
+    "interleaving"
+   ],
+   "citation": "CL p.314-319",
+   "summary": "Paths = (T*N)!/(N!^T); ++ is not atomic; assigning a long takes two 32-bit assignments according to the JVM specification.",
+   "rules": [
+    "++lastIdUsed becomes 8 bytecodes; 12,870 paths with 2 threads (CL p.315-316)",
+    "With synchronized: 2 paths for 2 threads, N! in general (CL p.316)",
+    "A 64-bit value requires two 32-bit assignments (CL p.317)",
+    "++ can be interrupted and is not atomic (CL p.317, p.319)"
+   ],
+   "not_in_book": [
+    "The translation defines atomic as 'interrompível' (interruptible), which is an error; the meaning is uninterruptible [inference] (CL p.316)"
+   ],
+   "chapter": "A"
+  },
+  "executor-futures-nao-bloqueantes": {
+   "name": "Executor, futures and non-blocking solutions",
+   "keywords": [
+    "Executor",
+    "ExecutorService",
+    "Future",
+    "Callable",
+    "AtomicInteger",
+    "CAS",
+    "compare and swap",
+    "non-blocking",
+    "lock-free",
+    "SimpleDateFormat",
+    "putIfAbsent",
+    "Executor framework",
+    "futures",
+    "atomic classes",
+    "thread-unsafe classes"
+   ],
+   "citation": "CL p.319-322",
+   "summary": "Prefer Executor to manual threads; futures for independent operations; atomic classes with CAS outperform synchronized; know the unsafe classes and compound operations.",
+   "rules": [
+    "Use the Executor framework instead of manual threads (CL p.319)",
+    "Callable returns a result; Future.get blocks until it finishes (CL p.319-320)",
+    "Atomic classes (CAS, optimistic locking) almost always outperform synchronized (CL p.320-321)",
+    "Unsafe classes: SimpleDateFormat, connections, java.util containers, servlets (CL p.321)",
+    "An operation with two safe methods is not safe; use putIfAbsent or locking (CL p.321-322)"
+   ],
+   "not_in_book": [
+    "It does not address CompletableFuture"
+   ],
+   "chapter": "A"
+  },
+  "dependencias-entre-metodos-bloqueio": {
+   "name": "Dependencies between methods: client-side vs. server-side locking",
+   "keywords": [
+    "dependências entre métodos",
+    "hasNext next",
+    "client-based locking",
+    "server-based locking",
+    "adapter",
+    "bloqueio no cliente",
+    "bloqueio no servidor",
+    "dependencies between synchronized methods",
+    "adapted server",
+    "tolerate the failure",
+    "ConcurrentHashMap"
+   ],
+   "citation": "CL p.322-326",
+   "summary": "Three options: tolerate the failure, client-side locking, server-side locking. Prefer server-side locking; if you do not own the server, use an ADAPTER or thread-safe collections.",
+   "rules": [
+    "Synchronized methods used in sequence by the client still fail (CL p.322-323)",
+    "Tolerating the failure is sloppy (CL p.324)",
+    "Client-side locking duplicates code and is risky (CL p.324-325)",
+    "Prefer server-side locking (5 reasons) (CL p.326)",
+    "If the server is not yours, use an ADAPTER (CL p.326)"
+   ],
+   "not_in_book": [],
+   "chapter": "A"
+  },
+  "throughput": {
+   "name": "Increasing throughput",
+   "keywords": [
+    "throughput",
+    "vazão",
+    "taxa de transferência",
+    "page reader",
+    "E/S e CPU sobrepostas",
+    "multithread throughput",
+    "increasing throughput",
+    "synchronize critical section only",
+    "page fetching example",
+    "I/O time",
+    "parsing time"
+   ],
+   "citation": "CL p.326-328",
+   "summary": "Synchronize only the critical section; with 1 s of I/O and 0.5 s of analysis, one thread takes 1.5 s/page; several threads reach 2 pages/s (3x).",
+   "rules": [
+    "Synchronize as little as possible (CL p.327)",
+    "One thread: 1.5 s per page; 13 pages ~ 19.5 s (CL p.328)",
+    "Several threads: two pages per second, 3x the throughput (CL p.328)"
+   ],
+   "not_in_book": [],
+   "chapter": "A"
+  },
+  "deadlock-quatro-condicoes": {
+   "name": "Deadlock: four conditions and how to break them",
+   "keywords": [
+    "deadlock",
+    "impasse",
+    "bloqueio infinito",
+    "exclusão mútua",
+    "mutual exclusion",
+    "hold and wait",
+    "bloqueio e espera",
+    "no preemption",
+    "sem preempção",
+    "circular wait",
+    "espera circular",
+    "ordenação de recursos",
+    "four conditions of deadlock",
+    "lock and wait",
+    "resource ordering",
+    "breaking mutual exclusion"
+   ],
+   "citation": "CL p.328-332",
+   "summary": "Deadlock requires mutual exclusion, lock and wait, no preemption and circular wait; breaking one is enough. Global ordering of resources is the most common method.",
+   "rules": [
+    "Four conditions: mutual exclusion, lock and wait, no preemption, circular wait (CL p.329-330)",
+    "All must exist; without one there is no deadlock (CL p.330)",
+    "Mutual exclusion: simultaneous resources or in sufficient quantity (CL p.330-331)",
+    "Lock and wait: release everything and start over (risk of starvation/livelock) (CL p.331)",
+    "Preemption: ask the holder to release (CL p.331)",
+    "Circular wait: global acquisition order, the most common method (CL p.331-332)"
+   ],
+   "not_in_book": [
+    "It does not attribute the conditions to Coffman"
+   ],
+   "chapter": "A"
+  },
+  "testar-codigo-multithread-ferramentas": {
+   "name": "Testing multithreaded code and tools (ConTest)",
+   "keywords": [
+    "teste multithread",
+    "multithreaded testing",
+    "Monte Carlo",
+    "ConTest",
+    "IBM",
+    "instrumentação",
+    "race condition test",
+    "testing multithreaded code",
+    "Monte Carlo testing",
+    "IBM ConTest",
+    "instrumentation",
+    "race condition testing",
+    "automated jiggling"
+   ],
+   "citation": "CL p.332-335",
+   "summary": "Naive tests rarely expose race conditions; use Monte Carlo tests, run on all platforms and under load, and instrumentation tools such as ConTest.",
+   "rules": [
+    "A naive test needs more than a million iterations and still rarely fails (CL p.334)",
+    "Monte Carlo tests, all platforms, varied loads (CL p.334)",
+    "ConTest: from one failure in ten million to one in ~thirty iterations (CL p.335)"
+   ],
+   "not_in_book": [
+    "The translation says ConTest makes the failure 'menos provável' (less likely); the page's numbers show the opposite [inference] (CL p.335)",
+    "ConTest is a 2008 tool [DATED]"
+   ],
+   "chapter": "A"
+  },
+  "refinamento-sucessivo-rascunho-e-limpeza": {
+   "name": "Successive refinement: dirty draft first, cleanup afterwards",
+   "keywords": [
+    "refinamento sucessivo",
+    "successive refinement",
+    "rascunho",
+    "first draft",
+    "código sujo",
+    "limpar depois",
+    "escrever limpo de primeira",
+    "redação",
+    "clean code draft",
+    "Args",
+    "refine",
+    "write then clean",
+    "professional suicide"
+   ],
+   "citation": "CL p.195",
+   "summary": "The author did not write Args clean the first time: clean code is born from a dirty draft that is refined, like an essay.",
+   "rules": [
+    "To create clean code, write first and then clean up; do not expect to get it right the first time (CL p.195)",
+    "Writing clean is a matter of constant refinement, like successive drafts of an essay (CL p.195)",
+    "Stopping at 'it works' and moving on to the next task is professional suicide (CL p.195)"
+   ],
+   "not_in_book": [
+    "It does not authorize leaving the draft as is: cleanup is part of the job",
+    "It does not preach complete design before coding"
+   ],
+   "chapter": "14"
+  },
+  "args-por-que-o-rascunho-degenerou": {
+   "name": "Args: why the first draft degenerated",
+   "keywords": [
+    "Args",
+    "rascunho",
+    "bagunça",
+    "mess",
+    "variáveis de instância",
+    "TILT",
+    "código degenerou",
+    "linha de comando",
+    "command line parser",
+    "command line arguments parser",
+    "why the draft rotted",
+    "mess grows gradually",
+    "ArgumentMarshaler",
+    "adding types"
+   ],
+   "citation": "CL p.196-207",
+   "summary": "The version with booleans was reasonable; adding string and integer made the mess grow gradually, because each type required code in three places.",
+   "rules": [
+    "Symptoms: many instance variables, odd strings such as TILT, piled-up try-catch-catch (CL p.201)",
+    "The mess grows gradually with every feature added (CL p.201, p.207)",
+    "Cause: each type needed code in three places (schema parsing, argument conversion, getXXX) (CL p.207)",
+    "Many types with similar methods suggest a class: ArgumentMarshaler (CL p.207)"
+   ],
+   "not_in_book": [
+    "The author does not blame the language for the mess; Java's verbosity is another point (p.195)"
+   ],
+   "chapter": "14"
+  },
+  "parar-e-refatorar": {
+   "name": "Knowing when to stop adding features and refactor",
+   "keywords": [
+    "parar",
+    "quando refatorar",
+    "stop adding features",
+    "dívida técnica",
+    "eu parei",
+    "momento de refatorar",
+    "refactor now",
+    "when to refactor",
+    "mess too big to fix"
+   ],
+   "citation": "CL p.207",
+   "summary": "With two types still to add, the author stopped adding features and started refactoring, because forcing it would leave a mess too big to fix.",
+   "rules": [
+    "If you keep piling on features it would leave a trail of mess too big to fix, stop and refactor first (CL p.207)",
+    "Stop adding features while you reorganize the structure (CL p.207)"
+   ],
+   "not_in_book": [
+    "The book defines no metric or threshold to decide when to stop"
+   ],
+   "chapter": "14"
+  },
+  "incrementalismo-tdd-refatoracao": {
+   "name": "Incrementalism: refactoring in tiny steps with tests passing",
+   "keywords": [
+    "incrementalismo",
+    "passos pequenos",
+    "baby steps",
+    "TDD",
+    "testes passando",
+    "refatoração segura",
+    "FitNesse",
+    "cubo de Rubik",
+    "manter sistema funcionando",
+    "incrementalism",
+    "small steps",
+    "refactoring with tests",
+    "keep the system running",
+    "Rubik's cube",
+    "TDD refactoring",
+    "tiny changes"
+   ],
+   "citation": "CL p.207-210, p.227-239",
+   "summary": "Large structural changes ruin programs; the author made dozens of tiny changes, each keeping all the tests passing.",
+   "rules": [
+    "One of the best ways to ruin a program is to make excessive structural changes to improve it (CL p.207-208)",
+    "TDD doctrine cited: keep the system running at all times; no change may break it (CL p.208)",
+    "Have automated tests (unit and acceptance) that can be run at any time (CL p.208)",
+    "If a test breaks, fix it before any other change (CL p.209-210)",
+    "First concentrate the behavior in the base class, then push it down to the derived ones (CL p.210)",
+    "Refactoring is like the Rubik's cube: many small steps, each enabling the next (CL p.230)",
+    "Numbers: ten steps to swap an array for an Iterator; about 30 to separate the exceptions (CL p.227, p.239)"
+   ],
+   "not_in_book": [
+    "It does not use the term red-green-refactor",
+    "It does not prescribe an exact step size"
+   ],
+   "chapter": "14"
+  },
+  "argumentmarshaler-polimorfismo": {
+   "name": "ArgumentMarshaler: replacing the type switch with polymorphism",
+   "keywords": [
+    "ArgumentMarshaler",
+    "polimorfismo",
+    "switch de tipos",
+    "type case",
+    "G23",
+    "F1",
+    "interface",
+    "extensibilidade",
+    "polymorphism instead of switch",
+    "setArgument",
+    "replace type case",
+    "Args refactoring",
+    "iterator"
+   ],
+   "citation": "CL p.207-234",
+   "summary": "The type case in setArgument was replaced by calls to an abstract set implemented in each marshaler; ArgumentMarshaler became an interface.",
+   "rules": [
+    "Prefer a single polymorphic call to the type case in setArgument [G23] (CL p.227)",
+    "Two parameters where one is enough dirty the code [F1]; the array became a list and an Iterator was passed (CL p.227)",
+    "A common abstract set receives the iterator even if a derived class does not use it (CL p.230)",
+    "With the set methods in the derived classes, the type case is removed (CL p.233)",
+    "Adding double began with a new test, then parse, marshaler, ErrorCode and getDouble (CL p.234-235)"
+   ],
+   "not_in_book": [
+    "It does not claim that every switch must go away; Ch. 16 and Ch. 17 address the topic"
+   ],
+   "chapter": "14"
+  },
+  "args-particionamento-excecoes": {
+   "name": "Partitioning and separating the Args exceptions",
+   "keywords": [
+    "particionamento",
+    "separação de preocupações",
+    "separation of concerns",
+    "ArgsException",
+    "SRP",
+    "mensagens de erro",
+    "módulo próprio",
+    "partitioning code",
+    "separate exception handling",
+    "good design is partitioning",
+    "SRP errorMessage"
+   ],
+   "citation": "CL p.236-246",
+   "summary": "All the error code went to ArgsException in its own module; good design largely comes down to partitioning the code into appropriate places.",
+   "rules": [
+    "Exception code that does not belong in the module should go to a module of its own (CL p.236, p.239)",
+    "Most changes were deletions; marshalers in files of their own (CL p.246)",
+    "Good design comes down to partitioning: an appropriate place for each kind of code (CL p.246)",
+    "errorMessage in Args would violate SRP; in ArgsException it is a concession for convenience (CL p.246)"
+   ],
+   "not_in_book": [
+    "It does not define SRP here; that is in Ch. 10"
+   ],
+   "chapter": "14"
+  },
+  "nao-basta-funcionar": {
+   "name": "It is not enough for the code to work",
+   "keywords": [
+    "não basta funcionar",
+    "working code",
+    "profissionalismo",
+    "código ruim apodrece",
+    "manter limpo",
+    "bad code rots",
+    "working code is not enough",
+    "professionalism",
+    "code rot",
+    "clean now",
+    "dirty code cost",
+    "hidden dependencies"
+   ],
+   "citation": "CL p.247",
+   "summary": "Code that merely works is not professional; bad code rots and is expensive to clean, whereas cleaning early is cheap.",
+   "rules": [
+    "It is not enough for the code to work; being satisfied with only that is not professional (CL p.247)",
+    "Schedules, requirements and teams can be fixed; bad code rots and becomes a burden (CL p.247)",
+    "Cleaning degraded code is expensive because of hidden dependencies (CL p.247)",
+    "Clean up the mess of five minutes ago now; never let the code start to degrade (CL p.247)"
+   ],
+   "not_in_book": [
+    "It does not say that working is irrelevant; it says it is insufficient"
+   ],
+   "chapter": "14"
+  },
+  "comparisoncompactor-refatoracao": {
+   "name": "ComparisonCompactor (JUnit): step-by-step refactoring",
+   "keywords": [
+    "ComparisonCompactor",
+    "JUnit",
+    "refatorar código bom",
+    "prefixo f",
+    "formatCompactedComparison",
+    "acoplamento temporal",
+    "+1",
+    "análise e síntese",
+    "JUnit internals",
+    "JUnit refactoring",
+    "scope prefixes",
+    "encapsulate conditionals",
+    "temporal coupling",
+    "boundary conditions",
+    "refactoring walkthrough"
+   ],
+   "citation": "CL p.248-262",
+   "summary": "With 100% test coverage, the author refines an already good JUnit module, citing eleven Ch. 17 heuristics and showing back-and-forth.",
+   "rules": [
+    "Refactor with a safety net: the tests covered 100% of the code (CL p.251)",
+    "Remove scope prefixes such as f [N6] (CL p.253)",
+    "Encapsulate the conditional in a named method [G28] and prefer the positive form [G29] (CL p.254)",
+    "Give names that reveal side effects: compact becomes formatCompactedComparison [N7] (CL p.255)",
+    "Separate compacting from formatting [G30] and keep conventions consistent [G11] (CL p.255)",
+    "Expose hidden temporal coupling [G31] without resorting to an arbitrary parameter [G32] (CL p.256-257)",
+    "Encapsulate boundary conditions; scattered +1s indicate a wrong name [G33] (CL p.258)",
+    "Result: analysis functions before synthesis ones, in topological order (CL p.262)"
+   ],
+   "not_in_book": [
+    "It does not say the original code was bad",
+    "It does not suggest rewriting from scratch"
+   ],
+   "chapter": "15"
+  },
+  "refatoracao-iterativa-desfazer": {
+   "name": "Refactoring is iterative: undoing decisions is normal",
+   "keywords": [
+    "refatoração iterativa",
+    "tentativa e erro",
+    "desfazer refatoração",
+    "trial and error",
+    "inserir e remover",
+    "iterative refactoring",
+    "undo refactoring",
+    "revert extraction"
+   ],
+   "citation": "CL p.230, p.262",
+   "summary": "One refactoring leads to another that undoes the first; the process converges by trial and error.",
+   "rules": [
+    "It is common to insert something and then remove it during refactoring (CL p.230)",
+    "The author reverted extractions and the sense of a condition at the end of ComparisonCompactor; this is typical (CL p.262)",
+    "Refactoring is an iterative process of trial and error that converges to something professional (CL p.262)"
+   ],
+   "not_in_book": [
+    "It does not treat reversals as a programmer's mistake"
+   ],
+   "chapter": "15"
+  },
+  "regra-do-escoteiro-nos-estudos-de-caso": {
+   "name": "The Boy Scout Rule applied in the case studies",
+   "keywords": [
+    "regra do escoteiro",
+    "boy scout rule",
+    "deixar mais limpo",
+    "melhoria contínua",
+    "código bom",
+    "boy scout rule case studies",
+    "improve good code",
+    "SerialDate",
+    "JUnit",
+    "leave module cleaner"
+   ],
+   "citation": "CL p.253, p.262, p.279",
+   "summary": "Even good code (JUnit, SerialDate) is improved: leave the module a little cleaner than you found it.",
+   "rules": [
+    "The Boy Scout Rule justifies improving code that is already good (CL p.253)",
+    "No module is immune to improvement; each of us has a duty to leave it better (CL p.262)",
+    "In SerialDate: higher coverage, bugs fixed, code reduced and clearer (CL p.279)"
+   ],
+   "not_in_book": [
+    "The rule's original formulation is in Ch. 1 (CL p.24); here it is applied"
+   ],
+   "chapter": "15"
+  },
+  "revisao-profissional-de-codigo": {
+   "name": "Code critique as professional review",
+   "keywords": [
+    "revisão de código",
+    "code review",
+    "crítica",
+    "arrogância",
+    "SerialDate",
+    "David Gilbert",
+    "open source",
+    "professional code review",
+    "critiquing code",
+    "SerialDate critique",
+    "doctors and pilots"
+   ],
+   "citation": "CL p.263-264",
+   "summary": "Criticizing SerialDate is not arrogance: it is professional review, which we should do and receive well, like doctors and pilots.",
+   "rules": [
+    "Treat code critique as professional review, not a personal attack (CL p.264)",
+    "We should give and receive such critiques well; only then do we learn (CL p.264)",
+    "Acknowledge the merit of the author of the reviewed code (CL p.263-264)"
+   ],
+   "not_in_book": [
+    "The chapter has no formal code review process"
+   ],
+   "chapter": "16"
+  },
+  "serialdate-faca-funcionar-testes-cobertura": {
+   "name": "SerialDate phase 1: make it work (tests and coverage)",
+   "keywords": [
+    "faça funcionar",
+    "make it work",
+    "cobertura",
+    "coverage",
+    "Clover",
+    "testes de caracterização",
+    "bug de limite",
+    "T1",
+    "T5",
+    "T8",
+    "SerialDate",
+    "test coverage",
+    "boundary tests",
+    "bugs cluster",
+    "failure patterns"
+   ],
+   "citation": "CL p.264-266",
+   "summary": "Before refactoring, the author measured coverage (91/185), wrote his own suite (170/185) and fixed bugs revealed by boundary tests.",
+   "rules": [
+    "Tests that all pass may not test everything [T1]; measure coverage [T2] (CL p.264)",
+    "To refactor a class, first write tests with higher coverage (CL p.264)",
+    "Leave the tests of the desired behavior commented out until you make them pass (CL p.264)",
+    "Test boundary conditions [T5]; bugs cluster [T6]; failure patterns [T7] and coverage patterns [T8] reveal errors (CL p.265)",
+    "Phase 1 ends when all the tests pass; only then 'make it right' (CL p.266)"
+   ],
+   "not_in_book": [
+    "It does not require 100% coverage; it accepts 84.9% at the end (p.279)"
+   ],
+   "chapter": "16"
+  },
+  "serialdate-torne-a-certa": {
+   "name": "SerialDate phase 2: make it right (problems and heuristics)",
+   "keywords": [
+    "torne certo",
+    "make it right",
+    "DayDate",
+    "SerialDate",
+    "heurísticas",
+    "refatoração de classe",
+    "enum",
+    "código morto",
+    "comentários",
+    "refactoring heuristics applied",
+    "dead code",
+    "static methods",
+    "magic numbers",
+    "inheritance of constants"
+   ],
+   "citation": "CL p.266-279",
+   "summary": "Walking the class from top to bottom and running the tests after each change, the author applies dozens of Ch. 17 heuristics.",
+   "rules": [
+    "Walk the class from top to bottom and run all the tests after each change (CL p.266)",
+    "Remove change history in comments [C1] and redundant or wrong comments [C2], [C3] (CL p.266, p.268, p.270-271)",
+    "An abstract class name should not reveal the implementation [N2]; SerialDate becomes DayDate (CL p.267)",
+    "Do not inherit constants; use an enum [J2], [J3] (CL p.267, p.270)",
+    "Move implementation concerns to the derived class [G6] (CL p.268, p.274, p.277-278)",
+    "Delete dead code [G9] and clutter [G12], including unnecessary final (CL p.270-272)",
+    "Flags that choose an output format are a bad idea [G15] (CL p.273)",
+    "A method that operates on the instance should not be static [G18] (CL p.274)",
+    "Replace magic numbers with named constants [G25] (CL p.279)"
+   ],
+   "not_in_book": [
+    "It gives no exhaustive list of steps; many small changes are shown only in the result"
+   ],
+   "chapter": "16"
+  },
+  "classe-base-nao-conhece-derivadas-abstract-factory": {
+   "name": "A base class should not know its derivatives (ABSTRACT FACTORY)",
+   "keywords": [
+    "abstract factory",
+    "fábrica abstrata",
+    "DayDateFactory",
+    "classe base",
+    "derivada",
+    "G7",
+    "dependência",
+    "base class knows derivatives",
+    "SpreadsheetDate"
+   ],
+   "citation": "CL p.268-270",
+   "summary": "DayDate created SpreadsheetDate; the solution was an abstract DayDateFactory that creates instances and reports the implementation's limits.",
+   "rules": [
+    "Base classes should not see their derivatives [G7] (CL p.269)",
+    "Use ABSTRACT FACTORY to create instances without coupling the base to the implementation (CL p.269)",
+    "Implementation information (minimum/maximum year) comes from the factory, not from the abstract class (CL p.268-270)"
+   ],
+   "not_in_book": [
+    "The book does not discuss dependency injection here (see Ch. 11)"
+   ],
+   "chapter": "16"
+  },
+  "nomes-que-nao-enganam-plusdays": {
+   "name": "Names that do not mislead: addDays becomes plusDays",
+   "keywords": [
+    "plusDays",
+    "addDays",
+    "imutabilidade",
+    "immutable",
+    "nome ambíguo",
+    "G20",
+    "N4",
+    "efeito colateral",
+    "misleading method names",
+    "mutation naming",
+    "explanatory variables",
+    "immutability"
+   ],
+   "citation": "CL p.274-275",
+   "summary": "date.addDays(7) suggests that date changes; plusDays makes it clear that a new date is returned.",
+   "rules": [
+    "A method name can mislead about mutation [G20] (CL p.275)",
+    "Choose unambiguous names: plusDays/plusMonths [N4] (CL p.275)",
+    "Use explanatory temporary variables for complicated algorithms [G19] (CL p.275-276)"
+   ],
+   "not_in_book": [
+    "The book does not discuss immutability as a general principle here"
+   ],
+   "chapter": "16"
+  },
+  "dependencia-logica-para-fisica": {
+   "name": "Turning logical dependencies into physical ones (getDayOfWeek)",
+   "keywords": [
+    "dependência lógica",
+    "logical dependency",
+    "G22",
+    "getDayOfWeek",
+    "ordinal zero",
+    "método abstrato",
+    "physical dependency",
+    "getDayOfWeekForOrdinalZero",
+    "make dependency explicit"
+   ],
+   "citation": "CL p.277",
+   "summary": "getDayOfWeek implicitly depended on the origin of the ordinal; the author created the abstract getDayOfWeekForOrdinalZero and moved the generic algorithm up.",
+   "rules": [
+    "Logical dependencies are a nuisance: if something logical depends on the implementation, something physical depends too [G22] (CL p.277)",
+    "Make the dependency explicit in an abstract method and keep the rest generic [G6] (CL p.277)"
+   ],
+   "not_in_book": [],
+   "chapter": "16"
+  },
+  "nao-refatorar-o-que-ninguem-usa": {
+   "name": "Delete instead of refactoring code nobody uses",
+   "keywords": [
+    "código morto",
+    "dead code",
+    "weekInMonthToString",
+    "relativeToString",
+    "esperto demais",
+    "F4",
+    "G9",
+    "dead function",
+    "unused code",
+    "delete unused code"
+   ],
+   "citation": "CL p.264, p.273, p.276-277",
+   "summary": "After a fine sequence of refactorings, the author realized only the tests used the function and deleted it.",
+   "rules": [
+    "A function nobody calls is a dead function [F4] (CL p.264, p.273)",
+    "Before refactoring, check whether the code is used; if only the tests use it, delete it along with its tests (CL p.277)",
+    "Unused code and fields are deleted [G9] (CL p.270-271, p.273)"
+   ],
+   "not_in_book": [],
+   "chapter": "16"
+  },
+  "apendice-b-mapa-listagens": {
+   "name": "Appendix B: where each SerialDate listing is",
+   "keywords": [
+    "Apêndice B",
+    "SerialDate.java",
+    "BobsSerialDateTest",
+    "DayDate final",
+    "SpreadsheetDate",
+    "listagens",
+    "código completo",
+    "appendix B",
+    "listings map",
+    "SerialDate listings"
+   ],
+   "citation": "CL p.341-394",
+   "summary": "B-1 original SerialDate (p.341), B-2 SerialDateTest (p.358), B-3 MonthConstants (p.363), B-4 BobsSerialDateTest (p.364), B-5 SpreadsheetDate (p.372), B-6 RelativeDayOfWeekRule (p.380), B-7 to B-16 final versions (p.384-394).",
+   "rules": [
+    "B-1 original SerialDate.java: p.341-357 (CL p.341)",
+    "B-4 BobsSerialDateTest: p.364-372 (CL p.364)",
+    "B-7 final DayDate.java: p.384-386 (CL p.384)",
+    "B-16 final SpreadsheetDate.java: p.391-394 (CL p.391)",
+    "The pages cited in Ch. 16 (e.g. 'B.1, página 349') do not match the PDF (CL p.264)"
+   ],
+   "not_in_book": [
+    "The appendix has no prose; the justifications are in Ch. 16"
+   ],
+   "chapter": "B"
+  },
+  "odores-catalogo": {
+   "name": "Catalog of smells and heuristics (overview)",
+   "keywords": [
+    "odores",
+    "heurísticas",
+    "code smells",
+    "smells",
+    "catálogo",
+    "lista de odores",
+    "cheiro de código",
+    "capítulo 17",
+    "smells and heuristics",
+    "heuristics catalog",
+    "chapter 17",
+    "Fowler refactoring smells",
+    "66 heuristics"
+   ],
+   "citation": "CL p.280-309",
+   "summary": "Ch. 17 gathers 66 codes in 7 families (C, E, F, G, J, N, T), partly from Fowler and partly from the author. Use cc_smells.json to look up by code.",
+   "rules": [
+    "The list starts from Fowler's smells and adds the author's heuristics (CL p.280)",
+    "Read it in sequence and use it as a reference; there is a cross-reference in Appendix C (CL p.281)",
+    "Families: C1-C5, E1-E2, F1-F4, G1-G36, J1-J3, N1-N7, T1-T9 (CL p.281-309)",
+    "The list is not complete; clean code comes from a value system, not from following rules (CL p.309)"
+   ],
+   "not_in_book": [
+    "The book does not use the term 'code smell' nor names such as Long Method, God Class, Shotgun Surgery, Primitive Obsession",
+    "There are no G37+, N8+, T10+, C6+, E3+, F5+, J4+"
+   ],
+   "chapter": "17"
+  },
+  "odores-comentarios": {
+   "name": "Comment smells (C1-C5)",
+   "keywords": [
+    "comentário",
+    "comment",
+    "código comentado",
+    "commented-out code",
+    "comentário obsoleto",
+    "javadoc",
+    "changelog",
+    "comment smells",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "inappropriate information",
+    "obsolete comment",
+    "redundant comment",
+    "poorly written comment"
+   ],
+   "citation": "CL p.281-282",
+   "summary": "Comments do not hold metadata, do not become obsolete, do not repeat the code, are well written; commented-out code must be deleted.",
+   "rules": [
+    "C1: history, author and date go to version control (CL p.281)",
+    "C2: update or delete an obsolete comment (CL p.281)",
+    "C3: do not repeat what the code says (CL p.281)",
+    "C4: write it well and briefly (CL p.282)",
+    "C5: delete commented-out code (CL p.282)"
+   ],
+   "not_in_book": [
+    "It does not forbid every comment; it asks that they say what the code cannot"
+   ],
+   "chapter": "17"
+  },
+  "odores-ambiente": {
+   "name": "Environment smells (E1-E2)",
+   "keywords": [
+    "build",
+    "construção",
+    "rodar testes",
+    "one-step build",
+    "ambiente",
+    "CI",
+    "environment smells",
+    "E1",
+    "E2",
+    "tests one step",
+    "one command build",
+    "svn",
+    "ant"
+   ],
+   "citation": "CL p.282",
+   "summary": "Building and testing must be one-command operations.",
+   "rules": [
+    "E1: get the system with one command and build it with another (CL p.282)",
+    "E2: all the unit tests with one command or one IDE button (CL p.282)"
+   ],
+   "not_in_book": [
+    "It does not talk about continuous integration or CI tools; the example uses svn and ant [DATED]"
+   ],
+   "chapter": "17"
+  },
+  "odores-funcoes": {
+   "name": "Function smells (F1-F4) and functions in the general catalog",
+   "keywords": [
+    "parâmetros",
+    "argumentos",
+    "too many arguments",
+    "boolean parameter",
+    "flag argument",
+    "output argument",
+    "função morta",
+    "função longa",
+    "do one thing",
+    "function smells",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "output arguments",
+    "flag arguments",
+    "dead function",
+    "selector arguments",
+    "G30",
+    "G34"
+   ],
+   "citation": "CL p.283, 289-290, 296-297, 299-300",
+   "summary": "Few arguments, no output or booleans, no dead functions; do one thing and descend one level of abstraction.",
+   "rules": [
+    "F1: zero arguments is better; more than three is questionable (CL p.283)",
+    "F2: output arguments are unexpected (CL p.283)",
+    "F3: a boolean declares that the function does more than one thing (CL p.283)",
+    "F4: discard methods that are never called (CL p.283)",
+    "G15: prefer several functions to a selector argument (CL p.289-290)",
+    "G30: functions do one thing (CL p.296-297)",
+    "G34: statements at the same level of abstraction, one below the name (CL p.299)"
+   ],
+   "not_in_book": [
+    "Ch. 17 gives no line limit for functions; that is in ch. 3"
+   ],
+   "chapter": "17"
+  },
+  "duplicacao-dry": {
+   "name": "Duplication (G5)",
+   "keywords": [
+    "duplicação",
+    "duplicate code",
+    "DRY",
+    "copy paste",
+    "código repetido",
+    "once and only once",
+    "template method",
+    "strategy",
+    "duplication",
+    "G5",
+    "lost abstraction",
+    "duplicated code"
+   ],
+   "citation": "CL p.284-285",
+   "summary": "One of the most important rules in the book: every duplication is a missed abstraction.",
+   "rules": [
+    "Identical blocks become methods (CL p.284)",
+    "Repeated switch/if with the same conditions become polymorphism (CL p.285)",
+    "Similar algorithms become TEMPLATE METHOD or STRATEGY (CL p.285)",
+    "Most design patterns serve to eliminate duplication (CL p.285)"
+   ],
+   "not_in_book": [
+    "It defines no numeric threshold of duplicated lines"
+   ],
+   "chapter": "17"
+  },
+  "numeros-magicos": {
+   "name": "Magic numbers and obscured intent (G25, G16, G35)",
+   "keywords": [
+    "número mágico",
+    "magic number",
+    "constante",
+    "hardcoded",
+    "literal",
+    "notação húngara",
+    "configuração",
+    "default value",
+    "magic numbers",
+    "G25",
+    "G16",
+    "G35",
+    "named constants",
+    "obscured intent",
+    "configurable data",
+    "replace magic numbers with named constants"
+   ],
+   "citation": "CL p.290, 294-295, 300-301",
+   "summary": "Numbers and tokens without evident meaning become named constants; configuration stays at a high level.",
+   "rules": [
+    "G25: 86,400 -> SECONDS_PER_DAY; 55 -> LINES_PER_PAGE (CL p.294)",
+    "G25: self-explanatory formulas and very well-known numbers can stay literal (CL p.295)",
+    "G25: applies to any token, including test strings (CL p.295)",
+    "G16: Hungarian notation and magic numbers obscure intent (CL p.290)",
+    "G35: configuration constants at the top, passed down (CL p.300-301)"
+   ],
+   "not_in_book": [
+    "It does not require a constant for every literal"
+   ],
+   "chapter": "17"
+  },
+  "condicionais-switch": {
+   "name": "Conditionals and switch (G23, G27, G28, G29, G33)",
+   "keywords": [
+    "switch",
+    "if else",
+    "polimorfismo",
+    "polymorphism",
+    "condicional negativa",
+    "encapsular condicional",
+    "boundary",
+    "+1",
+    "um switch",
+    "conditionals",
+    "G23",
+    "G27",
+    "G28",
+    "G29",
+    "G33",
+    "prefer polymorphism to if/else",
+    "encapsulate conditionals",
+    "negative conditionals",
+    "boundary conditions",
+    "one switch rule"
+   ],
+   "citation": "CL p.294, 296, 298-299",
+   "summary": "Consider polymorphism before a switch, encapsulate conditions in named functions, use the positive form and centralize boundaries.",
+   "rules": [
+    "G23: the ONE SWITCH rule: at most one per type of selection (CL p.294)",
+    "G27: an abstract base class forces implementation; a switch with an enum does not (CL p.296)",
+    "G28: extract a function that explains the condition (CL p.296)",
+    "G29: prefer positive conditionals (CL p.296)",
+    "G33: no scattered +1/-1 (CL p.298-299)"
+   ],
+   "not_in_book": [
+    "It does not forbid switch"
+   ],
+   "chapter": "17"
+  },
+  "acoplamento-demeter": {
+   "name": "Coupling, Feature Envy and the Law of Demeter (G8, G13, G14, G22, G31, G36)",
+   "keywords": [
+    "acoplamento",
+    "coupling",
+    "feature envy",
+    "inveja",
+    "lei de demeter",
+    "law of demeter",
+    "train wreck",
+    "a.getB().getC()",
+    "acoplamento temporal",
+    "dependência lógica",
+    "G8",
+    "G13",
+    "G14",
+    "G22",
+    "G31",
+    "G36",
+    "artificial coupling",
+    "hidden temporal coupling",
+    "transitive navigation",
+    "limited exposure"
+   ],
+   "citation": "CL p.286-289, 292-293, 297-298, 301",
+   "summary": "Small interfaces, no coupling for convenience, methods near the data, explicit dependencies and only immediate collaborators.",
+   "rules": [
+    "G8: small interfaces; hide data and utilities (CL p.286)",
+    "G13: do not couple for convenience (CL p.287-288)",
+    "G14: Feature Envy is sometimes a necessary evil (CL p.288-289)",
+    "G22: explicitly ask for what you need (CL p.292-293)",
+    "G31: expose the call order (CL p.297-298)",
+    "G36: avoid a.getB().getC().doSomething() (CL p.301)"
+   ],
+   "not_in_book": [],
+   "chapter": "17"
+  },
+  "odores-nomes": {
+   "name": "Name smells (N1-N7)",
+   "keywords": [
+    "nomes",
+    "naming",
+    "nome descritivo",
+    "nome curto",
+    "notação húngara",
+    "prefixo m_",
+    "efeito colateral",
+    "nome ambíguo",
+    "name smells",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "choose descriptive names",
+    "unambiguous names",
+    "standard nomenclature",
+    "encodings",
+    "names should describe side effects"
+   ],
+   "citation": "CL p.304-308",
+   "summary": "Descriptive names, at the right level of abstraction, standardized, unambiguous, proportional to scope, free of encodings and revealing side effects.",
+   "rules": [
+    "N1: names are 90% responsible for readability (CL p.304)",
+    "N2: connect(connectionLocator) instead of dial(phoneNumber) (CL p.306)",
+    "N3: pattern name in the class; project language (CL p.306-307)",
+    "N4: renamePageAndOptionallyAllReferences (CL p.307)",
+    "N5: length proportional to scope (CL p.307)",
+    "N6: no m_, f, siv_ (CL p.307-308)",
+    "N7: createOrReturnOos (CL p.308)"
+   ],
+   "not_in_book": [
+    "N5 does not condemn i/j in short loops"
+   ],
+   "chapter": "17"
+  },
+  "odores-testes": {
+   "name": "Test smells (T1-T9)",
+   "keywords": [
+    "testes",
+    "tests",
+    "cobertura",
+    "coverage",
+    "teste lento",
+    "@Ignore",
+    "condição de limite",
+    "bugs",
+    "test smells",
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6",
+    "T7",
+    "T8",
+    "T9",
+    "insufficient tests",
+    "coverage tool",
+    "ignored tests",
+    "boundary conditions",
+    "slow tests",
+    "exhaustively test near bugs"
+   ],
+   "citation": "CL p.308-309",
+   "summary": "Test everything that can fail, measure coverage, do not skip trivial tests, test boundaries and the neighborhood of bugs, read failure and coverage patterns, keep tests fast.",
+   "rules": [
+    "T1: test everything that can fail (CL p.308)",
+    "T2: use a coverage tool (CL p.308)",
+    "T3: do not skip trivial tests (CL p.308)",
+    "T4: an ignored test records a doubt about a requirement (CL p.308-309)",
+    "T5: test the boundaries (CL p.309)",
+    "T6: bugs cluster (CL p.309)",
+    "T7 and T8: failure and coverage patterns are revealing (CL p.309)",
+    "T9: a slow test is not run (CL p.309)"
+   ],
+   "not_in_book": [
+    "It sets no minimum coverage percentage"
+   ],
+   "chapter": "17"
+  },
+  "odores-java": {
+   "name": "Java smells (J1-J3)",
+   "keywords": [
+    "import",
+    "wildcard",
+    "import estático",
+    "enum",
+    "constantes",
+    "interface de constantes",
+    "java smells",
+    "J1",
+    "J2",
+    "J3",
+    "wildcard imports",
+    "static import",
+    "constants versus enums"
+   ],
+   "citation": "CL p.301-304",
+   "summary": "Import packages with wildcards, do not inherit constants and use enums.",
+   "rules": [
+    "J1: with two or more classes from the package, import package.* (CL p.301-302)",
+    "J2: use static import, not inheritance of a constants interface (CL p.302-303)",
+    "J3: enum instead of public static final int (CL p.303)"
+   ],
+   "not_in_book": [
+    "J1 is [DATED]: the book prefers wildcards, current guides usually prefer explicit imports [extrapolation]"
+   ],
+   "chapter": "17"
+  },
+  "abstracao-hierarquia": {
+   "name": "Level of abstraction and hierarchy (G6, G7, G17, G18, G34)",
+   "keywords": [
+    "abstração",
+    "abstraction",
+    "classe base",
+    "base class",
+    "herança",
+    "responsabilidade",
+    "static",
+    "nível de abstração",
+    "levels of abstraction",
+    "base classes depending on derivatives",
+    "misplaced responsibility",
+    "static methods",
+    "G6",
+    "G7",
+    "G17",
+    "G18",
+    "G34",
+    "code at wrong level of abstraction"
+   ],
+   "citation": "CL p.285-286, 290-291, 299-300",
+   "summary": "Separate high and low level, base does not know derivatives, code where the reader expects it, prefer non-static, one level per function.",
+   "rules": [
+    "G6: percentFull goes to BoundedStack (CL p.285)",
+    "G7: the base does not see the derivatives (CL p.286)",
+    "G17: PI together with the trigonometric functions (CL p.290)",
+    "G18: when in doubt, non-static (CL p.291)",
+    "G34: separating levels is one of the hardest refactoring tasks (CL p.300)"
+   ],
+   "not_in_book": [
+    "The G34 title comes out truncated in the Brazilian edition (the word 'abstração' is missing)"
+   ],
+   "chapter": "17"
+  },
+  "referencia-cruzada": {
+   "name": "Appendix C: cross-reference of the heuristics",
+   "keywords": [
+    "apêndice c",
+    "referência cruzada",
+    "cross reference",
+    "onde aparece",
+    "índice de heurísticas",
+    "appendix C",
+    "cross reference of heuristics",
+    "heuristics table",
+    "page numbers do not match"
+   ],
+   "citation": "CL p.395-396",
+   "summary": "Chapter-page table of where each code is applied; the page numbers do not match this edition.",
+   "rules": [
+    "Lists the 66 codes in Ch. 17 order (CL p.395-396)",
+    "Use only the chapter prefix; pages do not correspond to the PDF (CL p.396)",
+    "Only in Ch. 17: C4, C5, E1, E2, F2, F3, G26, G27, T4, T9 (CL p.395-396)"
+   ],
+   "not_in_book": [
+    "The appendix does not explain the heuristics"
+   ],
+   "chapter": "C"
+  },
+  "epilogo": {
+   "name": "Epilogue: test obsessed",
+   "keywords": [
+    "epílogo",
+    "epilogue",
+    "obcecado por testes",
+    "test obsessed",
+    "pulseira",
+    "ética profissional",
+    "wristband",
+    "Kent Beck TDD",
+    "ethics",
+    "professional commitment"
+   ],
+   "citation": "CL p.397",
+   "summary": "The 'Obcecado por testes' (Test Obsessed) wristband as a reminder of the ethical commitment to write clean code.",
+   "rules": [
+    "Wristband received in 2005, in Denver (CL p.397)",
+    "TDD learned from Kent Beck in 1999 (CL p.397)",
+    "Taking it off would betray the ethics and the professional commitment (CL p.397)"
+   ],
+   "not_in_book": [
+    "The epilogue brings no new rules"
+   ],
+   "chapter": "EP"
+  }
+ },
+ "uncovered": [
+  {
+   "keywords": [
+    "SOLID",
+    "SOLID principles"
+   ],
+   "note": "The acronym does not appear in the book; Ch. 1 cites SRP, OCP and DIP (CL p.24). LSP and ISP are not named."
+  },
+  {
+   "keywords": [
+    "complexidade ciclomática",
+    "cyclomatic complexity"
+   ],
+   "note": "Does not appear in Chs. 1-3; function size is addressed only by lines and indentation (CL p.43-44)."
+  },
+  {
+   "keywords": [
+    "dívida técnica",
+    "technical debt"
+   ],
+   "note": "Chs. 1-3 talk about messy code and its cost (CL p.14) without using the expression."
+  },
+  {
+   "keywords": [
+    "camelCase / snake_case",
+    "camelCase",
+    "snake_case",
+    "naming case conventions"
+   ],
+   "note": "Chs. 1-3 do not discuss case conventions beyond the JavaBean get/set/is standard (CL p.34). Formatting: see Ch. 5 (another group)."
+  },
+  {
+   "keywords": [
+    "comentários",
+    "comments"
+   ],
+   "note": "Topic of Ch. 4, starting at CL p.59 (another group); Ch. 2 only says that a name that needs a comment does not reveal intent (CL p.27)."
+  },
+  {
+   "keywords": [
+    "tratamento de erro detalhado (checked exceptions, null)",
+    "detailed error handling (checked exceptions, null)"
+   ],
+   "note": "Ch. 3 covers only exceptions vs. error codes and try/catch (CL p.53-55); the rest is in the error handling chapter (another group)."
+  },
+  {
+   "keywords": [
+    "tabs vs espaços",
+    "tabs vs spaces",
+    "tabs versus spaces"
+   ],
+   "note": "Chs. 4-5 do not discuss it; indentation size is a team decision (CL p.95)"
+  },
+  {
+   "keywords": [
+    "docstrings / JSDoc",
+    "docstring",
+    "JSDoc"
+   ],
+   "note": "The book only covers Javadoc (Java); applying it by analogy is extrapolation"
+  },
+  {
+   "keywords": [
+    "linters e formatadores automáticos específicos",
+    "specific linters and automatic formatters",
+    "linters",
+    "formatters",
+    "linter"
+   ],
+   "note": "The book only mentions an 'automated tool' and the IDE formatter (CL p.82, p.95)"
+  },
+  {
+   "keywords": [
+    "FIXME, XXX, HACK"
+   ],
+   "note": "Only TODO is covered (CL p.64-65)"
+  },
+  {
+   "keywords": [
+    "tamanho de classe",
+    "class size"
+   ],
+   "note": "Referred to the classes chapter (CL p.82)"
+  },
+  {
+   "keywords": [
+    "heurísticas C1-C5 e G10/G35",
+    "heuristics C1-C5 and G10/G35"
+   ],
+   "note": "Ch. 17 (CL p.281-282 for comments; G10 Vertical Separation CL p.287)"
+  },
+  {
+   "keywords": [
+    "Mockito / frameworks de mock",
+    "Mockito / mock frameworks",
+    "Mockito",
+    "mock frameworks",
+    "mocking framework"
+   ],
+   "note": "They do not appear; ch. 9 only shows hand-written test doubles (MockControlHardware p.132, FakeTransmitter p.123)."
+  },
+  {
+   "keywords": [
+    "Arrange-Act-Assert (AAA)",
+    "Arrange Act Assert"
+   ],
+   "note": "Does not appear; the book uses CONSTRUIR-OPERAR-VERIFICAR (BUILD-OPERATE-CHECK, p.129) and given-when-then (dado-quando-então, p.133)."
+  },
+  {
+   "keywords": [
+    "Null Object",
+    "null object pattern"
+   ],
+   "note": "The book uses the name Special Case, from Fowler (p.114)."
+  },
+  {
+   "keywords": [
+    "Optional / Maybe / Result / Either"
+   ],
+   "note": "Not covered; see 'Don't return null' (p.114-115)."
+  },
+  {
+   "keywords": [
+    "Tell, Don't Ask",
+    "Tell Dont Ask",
+    "tell don't ask"
+   ],
+   "note": "Expression absent; equivalent idea in 'Hidden structures' (p.104)."
+  },
+  {
+   "keywords": [
+    "meta de cobertura de código (%)",
+    "code coverage target (%)",
+    "coverage target",
+    "coverage percentage"
+   ],
+   "note": "There is no numeric target; only 'the greater the coverage, the smaller the fear' (p.127). See also the T heuristics in ch. 17."
+  },
+  {
+   "keywords": [
+    "testes de integração / end-to-end / pirâmide de testes",
+    "integration tests / end-to-end / test pyramid",
+    "integration tests",
+    "end-to-end tests",
+    "test pyramid"
+   ],
+   "note": "Ch. 9 covers only unit tests; boundary tests appear in ch. 8 (p.122-123)."
+  },
+  {
+   "keywords": [
+    "try-with-resources"
+   ],
+   "note": "Does not appear (a Java 7 feature, later than the book)."
+  },
+  {
+   "keywords": [
+    "SOLID"
+   ],
+   "note": "The acronym does not appear; chs. 10-12 cite only SRP, OCP and DIP (CL p.139, p.150-151)."
+  },
+  {
+   "keywords": [
+    "Liskov / LSP / ISP",
+    "Liskov substitution",
+    "interface segregation"
+   ],
+   "note": "Not cited in the book."
+  },
+  {
+   "keywords": [
+    "Lei de Demeter",
+    "Law of Demeter"
+   ],
+   "note": "Not in chs. 10-13; see ch. 6 (Objects and Data Structures)."
+  },
+  {
+   "keywords": [
+    "CompletableFuture, threads virtuais, ReadWriteLock, volatile",
+    "CompletableFuture, virtual threads, ReadWriteLock, volatile",
+    "CompletableFuture",
+    "virtual threads",
+    "ReadWriteLock",
+    "volatile"
+   ],
+   "note": "Outside the book (2008); any answer is extrapolation."
+  },
+  {
+   "keywords": [
+    "microsserviços, contêineres Docker, Spring Boot",
+    "microservices, Docker containers, Spring Boot",
+    "microservices",
+    "Docker",
+    "Spring Boot"
+   ],
+   "note": "Outside the book; ch. 11 covers EJB/Spring 2.5/AspectJ [DATED]."
+  },
+  {
+   "keywords": [
+    "Teste de Monte Carlo detalhado / ferramentas modernas de detecção de corrida",
+    "detailed Monte Carlo testing / modern race detection tools",
+    "Monte Carlo testing",
+    "race detector"
+   ],
+   "note": "Only cited in Appendix A (CL p.334-335); current tools are extrapolation."
+  },
+  {
+   "keywords": [
+    "red-green-refactor",
+    "red green refactor"
+   ],
+   "note": "Does not appear; Ch. 14 talks about TDD and keeping the system running (p.208); the three laws of TDD are in Ch. 9 (CL p.125)"
+  },
+  {
+   "keywords": [
+    "java.time / LocalDate",
+    "java.time",
+    "LocalDate"
+   ],
+   "note": "Outside the book (2008); SerialDate uses java.util.Date/Calendar"
+  },
+  {
+   "keywords": [
+    "ferramentas de cobertura modernas (JaCoCo)",
+    "modern coverage tools (JaCoCo)",
+    "JaCoCo",
+    "coverage tools"
+   ],
+   "note": "The book uses Clover (p.264)"
+  },
+  {
+   "keywords": [
+    "texto completo das heurísticas G/N/T/C/F/J",
+    "full text of the G/N/T/C/F/J heuristics"
+   ],
+   "note": "Definitions are in Ch. 17 (PDF p.280-310); here only the application"
+  },
+  {
+   "keywords": [
+    "Strangler Fig / reescrita gradual de sistemas",
+    "Strangler Fig / gradual system rewrite",
+    "Strangler Fig",
+    "gradual rewrite"
+   ],
+   "note": "Not covered; the case studies refactor isolated classes"
+  },
+  {
+   "keywords": [
+    "Long Method / God Class / Shotgun Surgery / Primitive Obsession",
+    "Long Method",
+    "God Class",
+    "Shotgun Surgery",
+    "Primitive Obsession"
+   ],
+   "note": "Names from Fowler's catalog or from the community; they do not appear in the book. Approximations: G30, G8, G5 [inference]."
+  },
+  {
+   "keywords": [
+    "complexidade ciclomática",
+    "cyclomatic complexity metric"
+   ],
+   "note": "Ch. 17 does not talk about complexity metrics."
+  },
+  {
+   "keywords": [
+    "porcentagem mínima de cobertura",
+    "minimum coverage percentage"
+   ],
+   "note": "T2 recommends a coverage tool, with no numeric target."
+  },
+  {
+   "keywords": [
+    "final da conclusão do cap. 17",
+    "end of the conclusion of ch. 17",
+    "chapter 17 conclusion"
+   ],
+   "note": "Printed pages 311-312 are absent from the PDF; the sentence on p.309 is left incomplete."
+  }
+ ]
+}

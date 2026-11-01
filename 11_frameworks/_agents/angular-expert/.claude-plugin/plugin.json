@@ -1,0 +1,15 @@
+{
+  "name": "angular-expert",
+  "version": "1.0.0",
+  "description": "Doc-capture based Angular overview agent: captures of the 'What is Angular?' (Overview) page for versions 18 to 22, with a difference map between versions, lookup, static snippet linter and concept checklist. Not a technical reference; standalone, zoneless, control flow, APIs and code = NOT COVERED.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "angular",
+    "overview",
+    "doc-capture",
+    "version-diff",
+    "signals",
+    "ssr"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+ "_about": "Model policy of the general-agents collection. Single source: apply_models.py writes the model into each package (Claude Code: 'model' in the frontmatter; GitHub Copilot: 'model' as a preference-ordered list; Codex: a line in AGENTS.md). Do not edit the packages by hand: edit this file and run apply_models.py.",
+ "_source": "Allowed models and tiers of the relay-harness (packages/coding-agent/src/core/model-eligibility.ts and docs/laya.md, checked on 2026-11-01): Claude Opus, Sonnet and Haiku 5.5; in openai-codex only gpt-6-astra, gpt-6.1-sol, gpt-6-luna and gpt-5.6-terra. Tier = price position within the provider (fast < balanced < strong < frontier). Copilot IDs from the github-copilot.json catalog. 'model' field values checked against the Claude Code docs (aliases) and the VS Code docs (text or preference-ordered list).",
+ "tiers": {
+  "fast": {
+   "claude": "haiku",
+   "openai": "gpt-6-luna",
+   "copilot": [
+    "claude-haiku-5.5",
+    "gpt-6-luna"
+   ],
+   "use": "triage and low-risk mechanical tasks; GPT output price USD 0.50/1M"
+  },
+  "balanced": {
+   "claude": "sonnet",
+   "openai": "gpt-6.1-sol",
+   "copilot": [
+    "claude-sonnet-5.5",
+    "gpt-6.1-sol"
+   ],
+   "use": "default: consultation with page citation, review, role deliverables; GPT output price USD 10/1M"
+  },
+  "strong": {
+   "claude": "opus",
+   "openai": "gpt-5.6-terra",
+   "copilot": [
+    "claude-opus-5.5",
+    "gpt-5.6-terra"
+   ],
+   "use": "decomposition and integration across agents, decisions across teams; GPT output price USD 12/1M"
+  },
+  "frontier": {
+   "claude": "opus",
+   "openai": "gpt-6-astra",
+   "copilot": [
+    "claude-opus-5.5",
+    "gpt-6-astra"
+   ],
+   "use": "exceptional problems; the relay-harness does not allow Claude above Opus 5.5, so the Claude side uses opus; GPT output price USD 50/1M"
+  }
+ },
+ "default": {
+  "orchestrator": "strong",
+  "specialist": "balanced",
+  "role": "balanced"
+ },
+ "exceptions": {
+  "principal-engineer": "strong",
+  "audit-orchestrator": "strong",
+  "audit-evidence-validator": "strong"
+ },
+ "rationale": {
+  "specialist": "Answers tied to the sources, with deterministic scripts; in the end-to-end tests of 2026-11-01 Sonnet cited correct pages (clean-code-expert E1c/E1d/E3).",
+  "role": "Structured deliverables by model; product-owner, product-designer and tech-lead passed end to end with Sonnet (R1b, R2, R3).",
+  "orchestrator": "Decomposing, choosing between specialist and role, integrating labels and conflicts: an error here propagates to every delegation.",
+  "principal-engineer": "Strategy and guardrails that affect several teams; high cost of a wrong recommendation.",
+  "audit-orchestrator": "Plans and closes the audit (scope, coverage, gates); a planning error becomes false coverage.",
+  "audit-evidence-validator": "Gate that decides CONFIRMED; a false positive or negative here reaches the report."
+ }
+}

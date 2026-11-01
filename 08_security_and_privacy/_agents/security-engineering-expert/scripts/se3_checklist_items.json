@@ -1,0 +1,771 @@
+{
+ "versao": 1,
+ "nota": "The question is [inference] (checklist form); the page indicates where the book presents the principle ([from source]). Source: SE3.",
+ "areas": {
+  "oponentes": "Opponents and threat model (ch.1-2)",
+  "senhas": "Psychology, usability and passwords (ch.3)",
+  "protocolos": "Protocols (ch.4)",
+  "cripto": "Cryptography (ch.5, 20)",
+  "acesso": "Access control, distributed systems and names (ch.6-7)",
+  "economia": "Economics and incentives (ch.8)",
+  "politicas": "Policies, multilateral security, privacy and data (ch.9-11, 26)",
+  "bancos": "Internal controls, banking and payments (ch.12)",
+  "selos": "Physical security, metering and seals (ch.13-16)",
+  "biometria": "Biometrics and tamper resistance (ch.17-18)",
+  "rede": "Network, malware, PKI and telephony (ch.21-22)",
+  "devsec": "Secure development and risk management (ch.27)",
+  "assurance": "Assurance, evaluation and sustainability (ch.28)",
+  "ml": "AI/ML (ch.25.3)"
+ },
+ "itens": [
+  {
+   "id": "OPO01",
+   "area": "oponentes",
+   "pergunta": "Who are the likely opponents (spies, crooks, geeks, swamp), with what capability and motivation, and how does this change over the system's lifetime?",
+   "paginas": "66",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO02",
+   "area": "oponentes",
+   "pergunta": "Does the threat model assume that spies' tools end up in criminals' hands (leaks)?",
+   "paginas": "67",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO03",
+   "area": "oponentes",
+   "pergunta": "Does the attack scale (marginal cost per target falls)? Which targets fall to which vulnerability?",
+   "paginas": "77",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO04",
+   "area": "oponentes",
+   "pergunta": "Were the supply chain and standards (components, libraries, vendors) considered as a vector?",
+   "paginas": "70-71",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO05",
+   "area": "oponentes",
+   "pergunta": "Were competitors, suppliers and the organization's own executives considered possible opponents?",
+   "paginas": "97-98",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO06",
+   "area": "oponentes",
+   "pergunta": "Is there a robust whistleblowing channel for internal reports, independent of HR?",
+   "paginas": "99",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO07",
+   "area": "oponentes",
+   "pergunta": "Does the design consider abusability (several users per device, abusive partner, the buyer is not the only user)?",
+   "paginas": "106-107",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO08",
+   "area": "oponentes",
+   "pergunta": "Does the scope of 'system' include people, usability and customers (sense 6 in the book) and not only technology?",
+   "paginas": "60",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO09",
+   "area": "oponentes",
+   "pergunta": "Does the protection policy say WHAT is protected and FROM WHOM, avoiding protecting the wrong thing or the right thing in the wrong way?",
+   "paginas": "52",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPO10",
+   "area": "oponentes",
+   "pergunta": "Is there an incident response plan, enough logs to tell a botnet from a targeted attack, backups (ransomware) and payment procedures (BEC)?",
+   "paginas": "108",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN01",
+   "area": "senhas",
+   "pergunta": "Is the account recovery fallback (questions, e-mail, SMS) as strong as the primary authentication? The system is only as strong as its weakest fallback.",
+   "paginas": "139-141",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN02",
+   "area": "senhas",
+   "pergunta": "Is a bad-password list used instead of composition rules, and is forced periodic change avoided absent suspected compromise?",
+   "paginas": "145-147",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN03",
+   "area": "senhas",
+   "pergunta": "Are passwords stored with a random salt and a slow, strong one-way function?",
+   "paginas": "156",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN04",
+   "area": "senhas",
+   "pergunta": "Are there throttling and global rate control (not only per account), without opening a DoS through lockout?",
+   "paginas": "152,157-158",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN05",
+   "area": "senhas",
+   "pergunta": "Are default passwords (devices, service accounts, scripts) eliminated or forcibly changed?",
+   "paginas": "147,153",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN06",
+   "area": "senhas",
+   "pergunta": "Do failed-login logs avoid storing the passwords that were typed?",
+   "paginas": "155-156",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN07",
+   "area": "senhas",
+   "pergunta": "Do important accounts require a second factor, and was the fallback of that factor analyzed?",
+   "paginas": "140",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN08",
+   "area": "senhas",
+   "pergunta": "Is the easiest way to use the system also the most secure (secure defaults, painless updates)?",
+   "paginas": "111,125,133",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN09",
+   "area": "senhas",
+   "pergunta": "Does the communication flow with customers avoid training them to act insecurely (links in e-mails, requests by phone)?",
+   "paginas": "148-150",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEN10",
+   "area": "senhas",
+   "pergunta": "Are data-subject requests (access, deletion) authenticated robustly?",
+   "paginas": "161",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO01",
+   "area": "protocolos",
+   "pergunta": "Is the protocol's threat model realistic, and does the protocol address it? Which environment assumptions may change?",
+   "paginas": "167,181-182",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO02",
+   "area": "protocolos",
+   "pergunta": "Is freshness ensured (random nonce or counter) with replay resistance, and were the trade-offs (memory vs resynchronization) assessed?",
+   "paginas": "169-171",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO03",
+   "area": "protocolos",
+   "pergunta": "Does key diversification avoid shrinking the effective space (e.g. a 128-bit key derived from a 16-bit number)?",
+   "paginas": "169-170",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO04",
+   "area": "protocolos",
+   "pergunta": "Do the challenges include explicit names (anti-reflection), and is the same key not reused across different applications?",
+   "paginas": "179,183-184",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO05",
+   "area": "protocolos",
+   "pergunta": "Were revocation and dependence on synchronized clocks handled (Kerberos/TTP)?",
+   "paginas": "185-187",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO06",
+   "area": "protocolos",
+   "pergunta": "Is the protocol a specialist/standard one, publicly reviewed (not designed in-house)?",
+   "paginas": "190",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO07",
+   "area": "protocolos",
+   "pergunta": "Are formats unambiguous, and does the protocol avoid exposing the software that processes it to attack?",
+   "paginas": "189",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRO08",
+   "area": "protocolos",
+   "pergunta": "Practical test: can a third party buy a spare key, or is there a universal master key (BORA)?",
+   "paginas": "173",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI01",
+   "area": "cripto",
+   "pergunta": "Is an accredited, current library/toolkit used, with no home-made crypto or protocol?",
+   "paginas": "239,250-251",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI02",
+   "area": "cripto",
+   "pergunta": "Is the cipher mode authenticated (GCM/AEAD), are IVs/keys never repeated, and is ECB not used for long data?",
+   "paginas": "223-227",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI03",
+   "area": "cripto",
+   "pergunta": "Do hashes used against collisions have output >= 256 bits?",
+   "paginas": "206",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI04",
+   "area": "cripto",
+   "pergunta": "Is RSA used with randomized padding and current key sizes (>= 2048 bits)?",
+   "paginas": "232-235",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI05",
+   "area": "cripto",
+   "pergunta": "Is the source of randomness (RNG) trustworthy? (common factors, trivial certificates)",
+   "paginas": "249",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI06",
+   "area": "cripto",
+   "pergunta": "Was forward secrecy considered (transient keys)? Beware of unauthenticated middleperson attacks.",
+   "paginas": "237-238",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI07",
+   "area": "cripto",
+   "pergunta": "Is 'pluggable cryptography' avoided (risk in the negotiation protocol)?",
+   "paginas": "217-218",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CRI08",
+   "area": "cripto",
+   "pergunta": "FDE: does the password-derived key allow an offline attack? Is there a TPM/attempt limit?",
+   "paginas": "704-705",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE01",
+   "area": "acesso",
+   "pergunta": "For the use case, is ACL, capability, group or role the right mechanism? How is access revoked, and how is 'what can this user access' audited?",
+   "paginas": "256-261",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE02",
+   "area": "acesso",
+   "pergunta": "Are the principle of least privilege and secure defaults the basis of the architecture?",
+   "paginas": "284",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE03",
+   "area": "acesso",
+   "pergunta": "Was the isolation of containers/VMs/cloud IAM validated (containers share the kernel; excess permissions)?",
+   "paginas": "271-272",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE04",
+   "area": "acesso",
+   "pergunta": "Is memory safety (language, static analysis from the start, DEP/ASLR/CFI mitigations) in the plan?",
+   "paginas": "283-284",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE05",
+   "area": "acesso",
+   "pergunta": "Is every input treated as suspect (data interpreted as code, SQL injection)?",
+   "paginas": "280",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE06",
+   "area": "acesso",
+   "pergunta": "Were concurrency/TOCTTOU and stale data analyzed, and was the cost of propagating global revocation measured?",
+   "paginas": "280-281,290-291",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE07",
+   "area": "acesso",
+   "pergunta": "Are backup and fallback distinct and tested? Has restoration been rehearsed?",
+   "paginas": "300-302",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE08",
+   "area": "acesso",
+   "pergunta": "Does a forced outage (DoS) push the system into an insecure fallback?",
+   "paginas": "302-303",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ACE09",
+   "area": "acesso",
+   "pergunta": "Are identifiers/names unique, stable and with clear semantics (Needham's principles, Kent's law)?",
+   "paginas": "304-314",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ECO01",
+   "area": "economia",
+   "pergunta": "Who pays when the system fails? Who decides? Who benefits from not seeing the problem?",
+   "paginas": "319,338,348",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ECO02",
+   "area": "economia",
+   "pergunta": "Does the control serve the business or lock-in? Who is the 'attacker' of the mechanism (equipment owner, competitor)?",
+   "paginas": "327",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ECO03",
+   "area": "economia",
+   "pergunta": "How to tell good products from bad (market for lemons)? Is there information asymmetry in purchasing?",
+   "paginas": "328-329",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ECO04",
+   "area": "economia",
+   "pergunta": "Is the defense weakest-link, best-shot or sum-of-efforts? Is the investment aligned?",
+   "paginas": "342-343",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ECO05",
+   "area": "economia",
+   "pergunta": "Is the control visible or effective (security theatre)?",
+   "paginas": "53",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL01",
+   "area": "politicas",
+   "pergunta": "Is there an agreed one-page security policy that the mechanisms can enforce?",
+   "paginas": "360-361",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL02",
+   "area": "politicas",
+   "pergunta": "Is MLS/Bell-LaPadula really necessary? Costs: label explosion, bloated TCB, covert channels.",
+   "paginas": "364-367,375-381",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL03",
+   "area": "politicas",
+   "pergunta": "Are information flows lateral (compartments, relationships) rather than hierarchical?",
+   "paginas": "384-388",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL04",
+   "area": "politicas",
+   "pergunta": "For health data: per-record ACL, notification, attribution, aggregation control (BMA)?",
+   "paginas": "398",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL05",
+   "area": "politicas",
+   "pergunta": "Is there a conflict of interest that requires a Chinese Wall (Brewer-Nash) and a cooling-off period?",
+   "paginas": "413-415",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL06",
+   "area": "politicas",
+   "pergunta": "'Anonymized data': who will try to re-identify it, with which side data? Would access control/consent be better?",
+   "paginas": "418,427-433,441",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL07",
+   "area": "politicas",
+   "pergunta": "If differential privacy is used: was epsilon decided as policy and the global budget defined?",
+   "paginas": "434-436",
+   "origem": "[inference]"
+  },
+  {
+   "id": "POL08",
+   "area": "politicas",
+   "pergunta": "Consent, security by default and transparency (defending their data is not the data subject's job)?",
+   "paginas": "406-407",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN01",
+   "area": "bancos",
+   "pergunta": "Are records append-only/immutable, with double entry and balancing as an alarm?",
+   "paginas": "447-452",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN02",
+   "area": "bancos",
+   "pergunta": "For each control: dual control or separation of duties? What is the prevent-detect-recover combination?",
+   "paginas": "453-456",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN03",
+   "area": "bancos",
+   "pergunta": "Who are the 30-40 trusted people? Are they minimized, well paid and watched?",
+   "paginas": "456",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN04",
+   "area": "bancos",
+   "pergunta": "Were employees asked 'if you wanted to commit fraud, how would you do it?'",
+   "paginas": "463",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN05",
+   "area": "bancos",
+   "pergunta": "Are there mandatory holidays/task rotation?",
+   "paginas": "454",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN06",
+   "area": "bancos",
+   "pergunta": "Does any business process defeat dual control (letter of guarantee, code over the phone, gateway)?",
+   "paginas": "470-471",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN07",
+   "area": "bancos",
+   "pergunta": "Key ceremonies with two truly separate components (different people)?",
+   "paginas": "472-473",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN08",
+   "area": "bancos",
+   "pergunta": "If the system must provide evidence: is there non-repudiation that withstands hostile experts?",
+   "paginas": "478-479",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BAN09",
+   "area": "bancos",
+   "pergunta": "Does nobody declare the system infallible (a prior probability of zero does not change with evidence)?",
+   "paginas": "463-464",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEL01",
+   "area": "selos",
+   "pergunta": "Is the physical threat model (Derek..Abdurrahman) explicit, and does the design not assume the wrong attacker?",
+   "paginas": "513-514",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEL02",
+   "area": "selos",
+   "pergunta": "Are alarm communications redundant and anonymous (against targeted DoS)?",
+   "paginas": "532-533",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEL03",
+   "area": "selos",
+   "pergunta": "Was the trade-off between missed alarms and false alarms handled (guards get tired)?",
+   "paginas": "533-534",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEL04",
+   "area": "selos",
+   "pergunta": "For seals: who inspects, with what FAR/FRR, is there 'gundecking', who forges materials, disposal?",
+   "paginas": "600,604-605",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEL05",
+   "area": "selos",
+   "pergunta": "Metering/tokens: controlled sales channel, counter safe against brown-out/lightning, date rollover?",
+   "paginas": "538-543",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO01",
+   "area": "biometria",
+   "pergunta": "Were FAR/FRR/EER measured on a large, diverse population (goats, lambs, wolves)?",
+   "paginas": "611-612,632",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO02",
+   "area": "biometria",
+   "pergunta": "Is the use 1:1 verification or 1:N identification? Was the birthday limit calculated?",
+   "paginas": "632",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO03",
+   "area": "biometria",
+   "pergunta": "Can the template be inverted (hill-climbing)? Do not treat it as a hash.",
+   "paginas": "632-633",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO04",
+   "area": "biometria",
+   "pergunta": "Is there a human operator and a fallback for the cases biometrics does not cover?",
+   "paginas": "612,634",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO05",
+   "area": "biometria",
+   "pergunta": "Trusted interface: what the user sees vs what the token signs? (A US$2000 HSM depends on the PC)",
+   "paginas": "667-668",
+   "origem": "[inference]"
+  },
+  {
+   "id": "BIO06",
+   "area": "biometria",
+   "pergunta": "For tamper resistance: what is really worth protecting (physical token, counters, root of trust)?",
+   "paginas": "671-672",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED01",
+   "area": "rede",
+   "pergunta": "Is there an accurate inventory for automated patching and network scanning?",
+   "paginas": "751-752",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED02",
+   "area": "rede",
+   "pergunta": "Is the local network untrusted? Strong authentication between clients and servers?",
+   "paginas": "749",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED03",
+   "area": "rede",
+   "pergunta": "Does spear phishing have technical mitigations (cloud attachments, filters, restricted devices), not only training?",
+   "paginas": "752",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED04",
+   "area": "rede",
+   "pergunta": "IDS: was the base rate (false:real) and the cost of false alarms calculated?",
+   "paginas": "759-760",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED05",
+   "area": "rede",
+   "pergunta": "PKI: public or private CA for your case (warrants, code signing)? Is CT monitored?",
+   "paginas": "766,768",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED06",
+   "area": "rede",
+   "pergunta": "Mobile apps: is there revocation for stolen phones/former users (car rental)?",
+   "paginas": "808-809",
+   "origem": "[inference]"
+  },
+  {
+   "id": "RED07",
+   "area": "rede",
+   "pergunta": "Does dependence on SMS/phone for authentication take SIM swap into account?",
+   "paginas": "183-184,794-795",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV01",
+   "area": "devsec",
+   "pergunta": "Is there a risk register with severity x probability, mitigation and a senior owner per risk?",
+   "paginas": "999",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV02",
+   "area": "devsec",
+   "pergunta": "Do hazards have >= 2 independent mitigation mechanisms (hazards x mechanisms matrix)?",
+   "paginas": "1006-1007",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV03",
+   "area": "devsec",
+   "pergunta": "Does threat modelling use 'meet in the middle' (system assets x attacker assets) and the six attack techniques?",
+   "paginas": "1006",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV04",
+   "area": "devsec",
+   "pergunta": "Does the development cycle have security requirements, approved tools, static/dynamic analysis, fuzzing and a final review?",
+   "paginas": "1017-1019",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV05",
+   "area": "devsec",
+   "pergunta": "When fixing a vulnerability, was the toolchain updated to find similar ones?",
+   "paginas": "1019-1020",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV06",
+   "area": "devsec",
+   "pergunta": "Is there an IR plan with monitoring, repair, distribution and reassurance (CEO/board educated beforehand)?",
+   "paginas": "1031-1032",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV07",
+   "area": "devsec",
+   "pergunta": "Is there a coordinated disclosure policy and a channel for researchers?",
+   "paginas": "1028-1031",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV08",
+   "area": "devsec",
+   "pergunta": "Are errors declared openly (culture), and does the team own its code?",
+   "paginas": "1036-1042",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV09",
+   "area": "devsec",
+   "pergunta": "Does prioritization consider risk AND reward (not only 'tightening security')?",
+   "paginas": "1010-1011",
+   "origem": "[inference]"
+  },
+  {
+   "id": "DEV10",
+   "area": "devsec",
+   "pergunta": "Are checklists/certifications not being used as false security (ISO 27001)?",
+   "paginas": "1034-1036",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS01",
+   "area": "assurance",
+   "pergunta": "Is the certifier paid by the party being evaluated? Is the certification a liability shield (Maximum Complacency)?",
+   "paginas": "1063-1065",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS02",
+   "area": "assurance",
+   "pergunta": "Was there hostile review (bug bounty, IV&V) and not only friendly review?",
+   "paginas": "1070-1071",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS03",
+   "area": "assurance",
+   "pergunta": "Is the test time consistent with the desired MTBF (k/t)?",
+   "paginas": "1068",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS04",
+   "area": "assurance",
+   "pergunta": "If FOSS: how much effort did capable people spend, and do they say everything they find?",
+   "paginas": "1071-1073",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS05",
+   "area": "assurance",
+   "pergunta": "For how many years does the vendor fix the product? Is there a sustainability/patch plan over the lifecycle?",
+   "paginas": "1075-1083",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ASS06",
+   "area": "assurance",
+   "pergunta": "Are safety and security handled together (737 Max, medical devices)?",
+   "paginas": "1056",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML01",
+   "area": "ml",
+   "pergunta": "Can the training data be poisoned (user feedback)?",
+   "paginas": "909",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML02",
+   "area": "ml",
+   "pergunta": "Does the classifier resist adversarial samples, and was the high-dimensional decision space considered?",
+   "paginas": "909-910",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML03",
+   "area": "ml",
+   "pergunta": "Does the API/model allow extraction by querying or leakage of training data (memorized outliers)?",
+   "paginas": "910",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML04",
+   "area": "ml",
+   "pergunta": "Were inputs that make the classifier slow (DoS) considered?",
+   "paginas": "910",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML05",
+   "area": "ml",
+   "pergunta": "ML as IDS: are there complements (other sensors, a brittle mode that triggers 'I am under attack')?",
+   "paginas": "911",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ML06",
+   "area": "ml",
+   "pergunta": "Does the claim of ML for social prediction (performance, crime) have evidence beyond simple regression?",
+   "paginas": "913",
+   "origem": "[inference]"
+  }
+ ]
+}

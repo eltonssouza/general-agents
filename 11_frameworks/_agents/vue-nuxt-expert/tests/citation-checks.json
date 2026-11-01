@@ -1,0 +1,907 @@
+{
+ "fonte": "VUEHB (Vue-Handbook-freeCodeCamp), VUE3G (Vue3-Guide-Introduction), NUXT (Nuxt-Getting-Started)",
+ "convencao": "page = PDF page; source abbreviation in the citation",
+ "checks": [
+  {
+   "cite": "VUEHB p.1",
+   "contains": [
+    "july 5, 2018",
+    "flavio copes"
+   ],
+   "claim": "article date and author"
+  },
+  {
+   "cite": "VUEHB p.2",
+   "contains": [
+    "24kb",
+    "performant"
+   ],
+   "claim": "size ~24KB"
+  },
+  {
+   "cite": "VUEHB p.4",
+   "contains": [
+    "100,000+ stars",
+    "350,000 downloads"
+   ],
+   "claim": "popularity Jun/2018"
+  },
+  {
+   "cite": "VUEHB p.4",
+   "contains": [
+    "progressive framework"
+   ],
+   "claim": "progressive"
+  },
+  {
+   "cite": "VUEHB p.5",
+   "contains": [
+    "adapts to the needs",
+    "script tag"
+   ],
+   "claim": "progressive adapts"
+  },
+  {
+   "cite": "VUEHB p.6",
+   "contains": [
+    "evan you",
+    "virtual dom",
+    "shouldcomponentupdate"
+   ],
+   "claim": "comparison with React"
+  },
+  {
+   "cite": "VUEHB p.7",
+   "contains": [
+    "vuex",
+    "indie project"
+   ],
+   "claim": "official Vuex; indie project"
+  },
+  {
+   "cite": "VUEHB p.8",
+   "contains": [
+    "new vue",
+    "el: '#example'",
+    "unpkg.com/vue"
+   ],
+   "claim": "first app via CDN"
+  },
+  {
+   "cite": "VUEHB p.12",
+   "contains": [
+    "productiontip",
+    "new vue"
+   ],
+   "claim": "CLI main.js"
+  },
+  {
+   "cite": "VUEHB p.14",
+   "contains": [
+    "scoped css",
+    "helloworld"
+   ],
+   "claim": "HelloWorld scoped CSS"
+  },
+  {
+   "cite": "VUEHB p.18",
+   "contains": [
+    "version 2 to 3",
+    "not yet stable"
+   ],
+   "claim": "Vue CLI 2->3 in transition"
+  },
+  {
+   "cite": "VUEHB p.19",
+   "contains": [
+    "npm install -g @vue/cli"
+   ],
+   "claim": "Vue CLI installation"
+  },
+  {
+   "cite": "VUEHB p.20",
+   "contains": [
+    "webpack",
+    "eject"
+   ],
+   "claim": "CLI on top of Webpack, no ejecting"
+  },
+  {
+   "cite": "VUEHB p.26",
+   "contains": [
+    "yarn serve"
+   ],
+   "claim": "yarn serve"
+  },
+  {
+   "cite": "VUEHB p.27",
+   "contains": [
+    "yarn build",
+    "yarn lint",
+    "yarn test:unit"
+   ],
+   "claim": "CLI scripts"
+  },
+  {
+   "cite": "VUEHB p.28",
+   "contains": [
+    "vue create -p favourite example-2"
+   ],
+   "claim": "preset via command line"
+  },
+  {
+   "cite": "VUEHB p.29",
+   "contains": [
+    ".vuejs",
+    "vue add @vue/cli-plugin-babel"
+   ],
+   "claim": "presets and plugins"
+  },
+  {
+   "cite": "VUEHB p.31",
+   "contains": [
+    "cli-service-global"
+   ],
+   "claim": "prototyping"
+  },
+  {
+   "cite": "VUEHB p.32",
+   "contains": [
+    "vue serve app.vue",
+    "vue build",
+    "dist/"
+   ],
+   "claim": "serve and build"
+  },
+  {
+   "cite": "VUEHB p.33",
+   "contains": [
+    "vue inspect"
+   ],
+   "claim": "inspecting Webpack"
+  },
+  {
+   "cite": "VUEHB p.35",
+   "contains": [
+    "development mode"
+   ],
+   "claim": "DevTools only in dev mode"
+  },
+  {
+   "cite": "VUEHB p.44",
+   "contains": [
+    "vue-devtools",
+    "localhost:8098"
+   ],
+   "claim": "standalone DevTools"
+  },
+  {
+   "cite": "VUEHB p.47",
+   "contains": [
+    "$vm0",
+    "vuex",
+    "events"
+   ],
+   "claim": "DevTools buttons"
+  },
+  {
+   "cite": "VUEHB p.51",
+   "contains": [
+    "vetur",
+    "3 million"
+   ],
+   "claim": "Vetur"
+  },
+  {
+   "cite": "VUEHB p.62",
+   "contains": [
+    "editor.formatonsave",
+    "independent units"
+   ],
+   "claim": "Vetur formatting; component definition"
+  },
+  {
+   "cite": "VUEHB p.63",
+   "contains": [
+    "local components",
+    "single file components"
+   ],
+   "claim": "ways to define components"
+  },
+  {
+   "cite": "VUEHB p.65-66",
+   "contains": [
+    "globally registered",
+    "import sidebar"
+   ],
+   "claim": "global and local registration"
+  },
+  {
+   "cite": "VUEHB p.68",
+   "contains": [
+    "cannot be used without a webpack setup"
+   ],
+   "claim": ".vue requires Webpack"
+  },
+  {
+   "cite": "VUEHB p.69",
+   "contains": [
+    "css modules",
+    "unique to your app"
+   ],
+   "claim": "scoped CSS"
+  },
+  {
+   "cite": "VUEHB p.71",
+   "contains": [
+    "mandatory to use regular functions",
+    "arrow function"
+   ],
+   "claim": "data as a regular function"
+  },
+  {
+   "cite": "VUEHB p.73",
+   "contains": [
+    "this.data.name",
+    "arrow function"
+   ],
+   "claim": "data and this"
+  },
+  {
+   "cite": "VUEHB p.74",
+   "contains": [
+    "just one expression",
+    "math and date"
+   ],
+   "claim": "single expression; globals"
+  },
+  {
+   "cite": "VUEHB p.75",
+   "contains": [
+    "v-once",
+    "v-html",
+    "escaped"
+   ],
+   "claim": "escaped interpolation"
+  },
+  {
+   "cite": "VUEHB p.76",
+   "contains": [
+    "textdecoration",
+    "camelcase"
+   ],
+   "claim": ":style in camelCase"
+  },
+  {
+   "cite": "VUEHB p.80",
+   "contains": [
+    "this.[propertyname]",
+    "ie9+"
+   ],
+   "claim": "computed uses this; IE9+"
+  },
+  {
+   "cite": "VUEHB p.81",
+   "contains": [
+    "start with v-",
+    "v-text"
+   ],
+   "claim": "directives"
+  },
+  {
+   "cite": "VUEHB p.82",
+   "contains": [
+    "xss",
+    "interpolation only works in the tag content",
+    "v-bind"
+   ],
+   "claim": "escaping/XSS and v-bind"
+  },
+  {
+   "cite": "VUEHB p.83",
+   "contains": [
+    "v-model",
+    "two-way binding"
+   ],
+   "claim": "v-model"
+  },
+  {
+   "cite": "VUEHB p.84",
+   "contains": [
+    "v-else-if",
+    "v-for"
+   ],
+   "claim": "conditionals and loops"
+  },
+  {
+   "cite": "VUEHB p.85",
+   "contains": [
+    "(todo, index) in todos",
+    "v-on"
+   ],
+   "claim": "v-for with index"
+  },
+  {
+   "cite": "VUEHB p.87",
+   "contains": [
+    "v-show",
+    "display: none",
+    "v-on:submit.prevent"
+   ],
+   "claim": "v-show and .prevent"
+  },
+  {
+   "cite": "VUEHB p.88",
+   "contains": [
+    "function associated with the vue instance"
+   ],
+   "claim": "methods"
+  },
+  {
+   "cite": "VUEHB p.89-90",
+   "contains": [
+    "this.data.name will raise an error"
+   ],
+   "claim": "this.data.name raises an error"
+  },
+  {
+   "cite": "VUEHB p.91",
+   "contains": [
+    "watchers cannot be looked up from a template"
+   ],
+   "claim": "watchers"
+  },
+  {
+   "cite": "VUEHB p.92",
+   "contains": [
+    "automatically invokes the function",
+    "regular function"
+   ],
+   "claim": "computed"
+  },
+  {
+   "cite": "VUEHB p.93",
+   "contains": [
+    "cached",
+    "date.now()"
+   ],
+   "claim": "computed is cached"
+  },
+  {
+   "cite": "VUEHB p.94",
+   "contains": [
+    "when to use methods",
+    "it will not be updated"
+   ],
+   "claim": "Date.now in computed"
+  },
+  {
+   "cite": "VUEHB p.95",
+   "contains": [
+    "multiple properties at the same time",
+    "when to use watchers"
+   ],
+   "claim": "watch on one property"
+  },
+  {
+   "cite": "VUEHB p.97",
+   "contains": [
+    "symbol",
+    "development mode"
+   ],
+   "claim": "prop types"
+  },
+  {
+   "cite": "VUEHB p.98",
+   "contains": [
+    "validator",
+    "default"
+   ],
+   "claim": "default and validator"
+  },
+  {
+   "cite": "VUEHB p.102",
+   "contains": [
+    "@click.prevent",
+    "@click.once",
+    "@click.self"
+   ],
+   "claim": "modifiers"
+  },
+  {
+   "cite": "VUEHB p.103",
+   "contains": [
+    "named slots",
+    "default content"
+   ],
+   "claim": "slots"
+  },
+  {
+   "cite": "VUEHB p.104",
+   "contains": [
+    "slot=\"sidebar\"",
+    "filters"
+   ],
+   "claim": "named slot and filters"
+  },
+  {
+   "cite": "VUEHB p.105",
+   "contains": [
+    "| fallback",
+    "pipe operator"
+   ],
+   "claim": "filters"
+  },
+  {
+   "cite": "VUEHB p.106",
+   "contains": [
+    "capitalize",
+    "prepend('dr.')",
+    "arrow function"
+   ],
+   "claim": "filters with parameter"
+  },
+  {
+   "cite": "VUEHB p.107",
+   "contains": [
+    "props are one-way",
+    "never mutate a prop"
+   ],
+   "claim": "one-way props"
+  },
+  {
+   "cite": "VUEHB p.109",
+   "contains": [
+    "event bus",
+    "this.$root"
+   ],
+   "claim": "event bus"
+  },
+  {
+   "cite": "VUEHB p.110",
+   "contains": [
+    "official state management library",
+    "single store"
+   ],
+   "claim": "Vuex"
+  },
+  {
+   "cite": "VUEHB p.111",
+   "contains": [
+    "flux pattern",
+    "redux"
+   ],
+   "claim": "Flux/Redux"
+  },
+  {
+   "cite": "VUEHB p.112",
+   "contains": [
+    "npm install vuex",
+    "yarn add vuex"
+   ],
+   "claim": "installing Vuex"
+  },
+  {
+   "cite": "VUEHB p.113",
+   "contains": [
+    "src/store/store.js",
+    "vue.use(vuex)"
+   ],
+   "claim": "store"
+  },
+  {
+   "cite": "VUEHB p.116",
+   "contains": [
+    "cannot be manipulated except by using mutations"
+   ],
+   "claim": "mutations"
+  },
+  {
+   "cite": "VUEHB p.117",
+   "contains": [
+    "getters",
+    "import { store } from './store/store'"
+   ],
+   "claim": "getters and registration"
+  },
+  {
+   "cite": "VUEHB p.118",
+   "contains": [
+    "store.commit()",
+    "@input",
+    "@change"
+   ],
+   "claim": "commit and @input"
+  },
+  {
+   "cite": "VUEHB p.119",
+   "contains": [
+    "this.$store",
+    "actions",
+    "modules",
+    "helpers",
+    "plugins"
+   ],
+   "claim": "missing concepts"
+  },
+  {
+   "cite": "VUEHB p.120",
+   "contains": [
+    "history api",
+    "official"
+   ],
+   "claim": "router"
+  },
+  {
+   "cite": "VUEHB p.121",
+   "contains": [
+    "npm install vue-router",
+    "unpkg",
+    "vue.use(vuerouter)"
+   ],
+   "claim": "installing Vue Router"
+  },
+  {
+   "cite": "VUEHB p.122",
+   "contains": [
+    "this.$router",
+    "this.$route",
+    "pushstate"
+   ],
+   "claim": "$router and $route"
+  },
+  {
+   "cite": "VUEHB p.123",
+   "contains": [
+    "router-link",
+    "router-view",
+    "router-link-active"
+   ],
+   "claim": "router-link"
+  },
+  {
+   "cite": "VUEHB p.127",
+   "contains": [
+    "beforeeach",
+    "beforeresolve",
+    "aftereach"
+   ],
+   "claim": "global guards"
+  },
+  {
+   "cite": "VUEHB p.128",
+   "contains": [
+    "next()",
+    "stuck",
+    "beforerouteleave"
+   ],
+   "claim": "always call next"
+  },
+  {
+   "cite": "VUEHB p.129",
+   "contains": [
+    "dynamic segment",
+    "life cycle hooks"
+   ],
+   "claim": "dynamic routes"
+  },
+  {
+   "cite": "VUEHB p.130",
+   "contains": [
+    "post_slug",
+    "beforerouteupdate",
+    "reuses the current instance"
+   ],
+   "claim": "instance reuse"
+  },
+  {
+   "cite": "VUEHB p.131",
+   "contains": [
+    "props: true",
+    "nested routes"
+   ],
+   "claim": "props on the route"
+  },
+  {
+   "cite": "VUEHB p.133",
+   "contains": [
+    "thank you for reading",
+    "vuehandbook.com"
+   ],
+   "claim": "end"
+  },
+  {
+   "cite": "VUE3G p.1",
+   "contains": [
+    "vue 2 support has ended on dec 31, 2023",
+    "migration guide",
+    "createapp"
+   ],
+   "claim": "Vue 2 EOL"
+  },
+  {
+   "cite": "VUE3G p.2",
+   "contains": [
+    "declarative rendering",
+    "reactivity",
+    "prerequisites"
+   ],
+   "claim": "two core features"
+  },
+  {
+   "cite": "VUE3G p.3",
+   "contains": [
+    "the progressive framework",
+    "single-page application (spa)",
+    "jamstack"
+   ],
+   "claim": "ways of use"
+  },
+  {
+   "cite": "VUE3G p.4",
+   "contains": [
+    "single-file component",
+    "options api",
+    "composition api"
+   ],
+   "claim": "SFC and API styles"
+  },
+  {
+   "cite": "VUE3G p.5",
+   "contains": [
+    "component instance",
+    "mounted",
+    "lifecycle hooks"
+   ],
+   "claim": "Options API"
+  },
+  {
+   "cite": "VUE3G p.6",
+   "contains": [
+    "onmounted",
+    "count.value++",
+    "implemented on top of the composition api"
+   ],
+   "claim": "Composition API"
+  },
+  {
+   "cite": "VUE3G p.7",
+   "contains": [
+    "beginner-friendly",
+    "go with composition api + single-file components",
+    "progressive enhancement"
+   ],
+   "claim": "recommendation"
+  },
+  {
+   "cite": "VUE3G p.8",
+   "contains": [
+    "try the tutorial",
+    "read the guide",
+    "examples"
+   ],
+   "claim": "learning paths"
+  },
+  {
+   "cite": "NUXT p.1",
+   "contains": [
+    "v4.5.2",
+    "app/pages/",
+    "server-side rendering by default",
+    "vendor lock-in"
+   ],
+   "claim": "Nuxt v4.5.2"
+  },
+  {
+   "cite": "NUXT p.2",
+   "contains": [
+    "auto-imports",
+    "code splitting",
+    "vite",
+    "tsconfig.json"
+   ],
+   "claim": "features"
+  },
+  {
+   "cite": "NUXT p.2",
+   "contains": [
+    "faster initial page load time",
+    "improved seo"
+   ],
+   "claim": "SSR benefits"
+  },
+  {
+   "cite": "NUXT p.3",
+   "contains": [
+    "nuxt generate",
+    "ssr: false",
+    "routerules",
+    "nitro"
+   ],
+   "claim": "rendering modes"
+  },
+  {
+   "cite": "NUXT p.3",
+   "contains": [
+    ".output",
+    "server/api/",
+    "server/middleware/"
+   ],
+   "claim": "Nitro and output"
+  },
+  {
+   "cite": "NUXT p.4",
+   "contains": [
+    "@nuxt/vite-builder",
+    "@nuxt/rspack-builder",
+    "@nuxt/webpack-builder",
+    "@nuxt/cli",
+    "@nuxt/kit"
+   ],
+   "claim": "packages"
+  },
+  {
+   "cite": "NUXT p.6",
+   "contains": [
+    "copyright © 2016-2026 nuxt"
+   ],
+   "claim": "footer"
+  },
+  {
+   "cite": "VUEHB p.1-133",
+   "absent": [
+    ":key",
+    "pinia",
+    "vite",
+    "nuxt",
+    "defineprops",
+    "createapp"
+   ],
+   "claim": "handbook has no :key, Pinia, Vite, Nuxt, defineProps, createApp"
+  },
+  {
+   "cite": "VUEHB p.1-133",
+   "absent": [
+    "composition api",
+    "vue 3",
+    "script setup"
+   ],
+   "claim": "handbook does not cover Vue 3/Composition API"
+  },
+  {
+   "cite": "VUEHB p.1-133",
+   "absent": [
+    "vue 2"
+   ],
+   "claim": "handbook never writes 'Vue 2'"
+  },
+  {
+   "cite": "VUEHB p.84-85",
+   "absent": [
+    "key"
+   ],
+   "claim": "v-for without key in the text"
+  },
+  {
+   "cite": "VUEHB p.95-99",
+   "absent": [
+    "emits"
+   ],
+   "claim": "props without 'emits'"
+  },
+  {
+   "cite": "VUEHB p.110-119",
+   "absent": [
+    "pinia",
+    "modules:",
+    "dispatch"
+   ],
+   "claim": "handbook Vuex without dispatch/modules/Pinia in the code"
+  },
+  {
+   "cite": "VUEHB p.120-133",
+   "absent": [
+    "createrouter",
+    "userouter",
+    "useroute"
+   ],
+   "claim": "handbook Vue Router without the router 4 API"
+  },
+  {
+   "cite": "VUEHB p.104-106",
+   "absent": [
+    "removed",
+    "deprecated"
+   ],
+   "claim": "filters without any mention of removal"
+  },
+  {
+   "cite": "VUE3G p.1-8",
+   "absent": [
+    "vuex",
+    "pinia",
+    "vue router",
+    "vite",
+    "webpack",
+    "typescript",
+    "vue cli"
+   ],
+   "claim": "VUE3G does not cover ecosystem/tooling"
+  },
+  {
+   "cite": "VUE3G p.1-8",
+   "absent": [
+    "computed",
+    "watch",
+    "props",
+    "emit",
+    "slot",
+    "filters",
+    "v-for",
+    "v-if"
+   ],
+   "claim": "VUE3G does not cover computed/watch/props/emit/slots/filters/directives"
+  },
+  {
+   "cite": "VUE3G p.5-6",
+   "absent": [
+    "definecomponent",
+    "reactive(",
+    "watcheffect"
+   ],
+   "claim": "examples only with ref/onMounted"
+  },
+  {
+   "cite": "VUE3G p.1-8",
+   "absent": [
+    "nuxt",
+    "composables"
+   ],
+   "claim": "VUE3G does not mention Nuxt"
+  },
+  {
+   "cite": "NUXT p.1-6",
+   "absent": [
+    "pinia",
+    "usefetch",
+    "useasyncdata",
+    "usestate",
+    "nuxi",
+    "npx",
+    "pnpm"
+   ],
+   "claim": "NUXT has no named data fetching nor creation commands"
+  },
+  {
+   "cite": "NUXT p.1-6",
+   "absent": [
+    "vercel",
+    "netlify",
+    "cloudflare",
+    "docker"
+   ],
+   "claim": "NUXT does not name deployment providers"
+  },
+  {
+   "cite": "NUXT p.1-6",
+   "absent": [
+    "components/",
+    "composables/",
+    "layouts",
+    "plugins/",
+    "nuxt 3",
+    "nuxt 2"
+   ],
+   "claim": "NUXT does not name the other folders nor versions 2/3"
+  },
+  {
+   "cite": "NUXT p.1-4",
+   "absent": [
+    "vue 3",
+    "vue 2",
+    "composition api"
+   ],
+   "claim": "NUXT does not say which Vue version"
+  }
+ ]
+}

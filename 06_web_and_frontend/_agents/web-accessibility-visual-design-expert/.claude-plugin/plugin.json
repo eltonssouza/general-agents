@@ -1,0 +1,19 @@
+{
+  "name": "web-accessibility-visual-design-expert",
+  "version": "1.0.0",
+  "description": "Expert in web accessibility fundamentals (W3C WAI, Introduction to Web Accessibility) and in the design principle of Repetition/visual consistency (sample of The Non-Designer's Design Book, Robin Williams, 4th ed.). Includes a deterministic lookup and static HTML triage. Does not cover detailed WCAG or the book's other chapters.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "w3c-wai",
+    "wcag-pointer",
+    "visual-design",
+    "repetition",
+    "consistency",
+    "non-designers-design-book",
+    "design-principles",
+    "html-audit"
+  ]
+}

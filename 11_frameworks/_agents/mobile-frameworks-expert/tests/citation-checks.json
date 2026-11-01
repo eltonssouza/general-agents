@@ -1,0 +1,1022 @@
+{
+ "fonte": "RN (React-Native-Getting-Started), FLT (Flutter-Docs), SWT (Swift-A-Tour-of-Swift)",
+ "convencao": "page = PDF page; sigla in the citation; render = code in an image, checked visually",
+ "checks": [
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "advanced ios developers",
+    "react beginners"
+   ],
+   "claim": "audience: from advanced iOS developers to React beginners"
+  },
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "javascript fundamentals",
+    "mozilla developer network"
+   ],
+   "claim": "JavaScript prerequisite; MDN"
+  },
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "linearly like a book"
+   ],
+   "claim": "linear or per-section reading"
+  },
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "moved to their own section",
+    "native components"
+   ],
+   "claim": "getting started in its own section"
+  },
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "0.87"
+   ],
+   "claim": "version selector 0.87"
+  },
+  {
+   "cite": "RN p.1",
+   "contains": [
+    "react, android, or ios"
+   ],
+   "claim": "does not assume knowledge of React/Android/iOS"
+  },
+  {
+   "cite": "RN p.2",
+   "contains": [
+    "snack player",
+    "expo"
+   ],
+   "claim": "Snack Player created by Expo"
+  },
+  {
+   "cite": "RN p.3",
+   "contains": [
+    "try editing me",
+    "hello, world!"
+   ],
+   "claim": "edit the example in Snack"
+  },
+  {
+   "cite": "RN p.3",
+   "contains": [
+    "developer notes",
+    "android",
+    "ios",
+    "web"
+   ],
+   "claim": "per-platform notes"
+  },
+  {
+   "cite": "RN p.3",
+   "contains": [
+    "android studio > preferences"
+   ],
+   "claim": "menu path format"
+  },
+  {
+   "cite": "RN p.3",
+   "contains": [
+    "foundation of react native: native components"
+   ],
+   "claim": "next step: Native Components"
+  },
+  {
+   "cite": "RN p.3",
+   "contains": [
+    "local development environment"
+   ],
+   "claim": "optional local environment"
+  },
+  {
+   "cite": "RN p.4",
+   "contains": [
+    "last updated on aug 12, 2026"
+   ],
+   "claim": "date of the last update"
+  },
+  {
+   "cite": "RN p.4",
+   "contains": [
+    "edit page for next release",
+    "edit page for current release"
+   ],
+   "claim": "edit links"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "install flutter",
+    "widget catalog",
+    "api docs",
+    "learning resources",
+    "create with ai"
+   ],
+   "claim": "navigation cards"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "single codebase",
+    "multiplatform apps"
+   ],
+   "claim": "multiplatform apps from a single codebase"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "flutter learning pathway"
+   ],
+   "claim": "learning pathway"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "android, swiftui, uikit, react native, and xamarin.forms"
+   ],
+   "claim": "pages for people coming from other platforms"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "building layouts",
+    "understanding constraints"
+   ],
+   "claim": "layout links"
+  },
+  {
+   "cite": "FLT p.1",
+   "contains": [
+    "what's new"
+   ],
+   "claim": "What's new link"
+  },
+  {
+   "cite": "FLT p.2",
+   "contains": [
+    "constraints flow down. sizes flow up. parents set positions"
+   ],
+   "claim": "layout model sentence"
+  },
+  {
+   "cite": "FLT p.2",
+   "contains": [
+    "stateful widget",
+    "faq"
+   ],
+   "claim": "interactivity and FAQ"
+  },
+  {
+   "cite": "FLT p.2",
+   "contains": [
+    "dart and flutter",
+    "google i/o"
+   ],
+   "claim": "videos about Dart and Flutter"
+  },
+  {
+   "cite": "FLT p.3",
+   "contains": [
+    "full-stack developer guide",
+    "4-video series"
+   ],
+   "claim": "series of 4 videos"
+  },
+  {
+   "cite": "FLT p.3",
+   "contains": [
+    "youtube channel"
+   ],
+   "claim": "YouTube channel"
+  },
+  {
+   "cite": "FLT p.3",
+   "contains": [
+    "almost every week"
+   ],
+   "claim": "new videos almost every week"
+  },
+  {
+   "cite": "FLT p.4",
+   "contains": [
+    "creative commons attribution 4.0",
+    "3-clause bsd license"
+   ],
+   "claim": "licenses"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "a swift tour",
+    "explore the features and syntax of swift"
+   ],
+   "claim": "title of the tour"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "hello, world!",
+    "single line"
+   ],
+   "claim": "hello world in one line"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "don't need to write semicolons"
+   ],
+   "claim": "no semicolons"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "global scope",
+    "entry point",
+    "main()"
+   ],
+   "claim": "global scope as entry point; no main()"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "use let to make a constant",
+    "var to make a variable"
+   ],
+   "claim": "let and var"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "exactly once"
+   ],
+   "claim": "constant receives a value exactly once"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "compiler infer"
+   ],
+   "claim": "type inference"
+  },
+  {
+   "cite": "SWT p.1",
+   "contains": [
+    "specify the type by writing it after the variable"
+   ],
+   "claim": "explicit type after a colon"
+  },
+  {
+   "cite": "SWT p.2",
+   "contains": [
+    "never implicitly converted"
+   ],
+   "claim": "no implicit conversion"
+  },
+  {
+   "cite": "SWT p.2",
+   "contains": [
+    "backslash",
+    "parentheses"
+   ],
+   "claim": "interpolation"
+  },
+  {
+   "cite": "SWT p.2",
+   "contains": [
+    "three double quotation marks"
+   ],
+   "claim": "multiline string"
+  },
+  {
+   "cite": "SWT p.2",
+   "contains": [
+    "comma is allowed after the last element"
+   ],
+   "claim": "trailing comma"
+  },
+  {
+   "cite": "SWT p.3",
+   "contains": [
+    "arrays automatically grow"
+   ],
+   "claim": "arrays grow"
+  },
+  {
+   "cite": "SWT p.3",
+   "contains": [
+    "[:]"
+   ],
+   "claim": "empty dictionary"
+  },
+  {
+   "cite": "SWT p.3",
+   "contains": [
+    "parentheses around the condition",
+    "braces around the body are required"
+   ],
+   "claim": "optional parentheses, required braces"
+  },
+  {
+   "cite": "SWT p.3",
+   "contains": [
+    "implicit comparison to zero"
+   ],
+   "claim": "if requires a Boolean"
+  },
+  {
+   "cite": "SWT p.3",
+   "contains": [
+    "after the equal sign"
+   ],
+   "claim": "if/switch as an expression"
+  },
+  {
+   "cite": "SWT p.4",
+   "contains": [
+    "optionals",
+    "nil"
+   ],
+   "claim": "optionals and nil"
+  },
+  {
+   "cite": "SWT p.4",
+   "contains": [
+    "?? operator",
+    "default value"
+   ],
+   "claim": "?? operator"
+  },
+  {
+   "cite": "SWT p.4",
+   "contains": [
+    "same name for that unwrapped value"
+   ],
+   "claim": "short form of if let"
+  },
+  {
+   "cite": "SWT p.4",
+   "contains": [
+    "aren't limited to integers"
+   ],
+   "claim": "switch with any type"
+  },
+  {
+   "cite": "SWT p.5",
+   "contains": [
+    "removing the default case"
+   ],
+   "claim": "default experiment"
+  },
+  {
+   "cite": "SWT p.5",
+   "contains": [
+    "doesn't continue to the next case",
+    "break"
+   ],
+   "claim": "no explicit break"
+  },
+  {
+   "cite": "SWT p.5",
+   "contains": [
+    "arbitrary order"
+   ],
+   "claim": "dictionary in arbitrary order"
+  },
+  {
+   "cite": "SWT p.5",
+   "contains": [
+    "at least once"
+   ],
+   "claim": "repeat-while runs at least once"
+  },
+  {
+   "cite": "SWT p.6",
+   "contains": [
+    "..<",
+    "..."
+   ],
+   "claim": "ranges"
+  },
+  {
+   "cite": "SWT p.6",
+   "contains": [
+    "use func to declare a function",
+    "->"
+   ],
+   "claim": "func and return arrow"
+  },
+  {
+   "cite": "SWT p.6",
+   "contains": [
+    "custom argument label",
+    "_ to use no argument label"
+   ],
+   "claim": "argument labels"
+  },
+  {
+   "cite": "SWT p.6",
+   "contains": [
+    "tuple",
+    "by name or by number"
+   ],
+   "claim": "tuples"
+  },
+  {
+   "cite": "SWT p.7",
+   "contains": [
+    "nested functions",
+    "first-class type"
+   ],
+   "claim": "nested and first-class functions"
+  },
+  {
+   "cite": "SWT p.8",
+   "contains": [
+    "closures",
+    "use in to separate"
+   ],
+   "claim": "closures and in"
+  },
+  {
+   "cite": "SWT p.8",
+   "contains": [
+    "single statement closures implicitly return"
+   ],
+   "claim": "implicit return"
+  },
+  {
+   "cite": "SWT p.8",
+   "contains": [
+    "last argument",
+    "omit the parentheses entirely"
+   ],
+   "claim": "trailing closure"
+  },
+  {
+   "cite": "SWT p.9",
+   "contains": [
+    "use init",
+    "deinit"
+   ],
+   "claim": "init and deinit"
+  },
+  {
+   "cite": "SWT p.9",
+   "contains": [
+    "every property needs a value"
+   ],
+   "claim": "every property needs a value"
+  },
+  {
+   "cite": "SWT p.9",
+   "contains": [
+    "override",
+    "detected by the compiler as an error"
+   ],
+   "claim": "override required"
+  },
+  {
+   "cite": "SWT p.10",
+   "contains": [
+    "getter and a setter",
+    "newvalue"
+   ],
+   "claim": "get/set and newValue"
+  },
+  {
+   "cite": "SWT p.10",
+   "contains": [
+    "three different steps"
+   ],
+   "claim": "three-step init"
+  },
+  {
+   "cite": "SWT p.11",
+   "contains": [
+    "changing the value of properties defined by the superclass"
+   ],
+   "claim": "step 3 of init"
+  },
+  {
+   "cite": "SWT p.11",
+   "contains": [
+    "will set and didset"
+   ],
+   "claim": "willSet and didSet"
+  },
+  {
+   "cite": "SWT p.11",
+   "contains": [
+    "value of the whole expression is nil"
+   ],
+   "claim": "optional chaining"
+  },
+  {
+   "cite": "SWT p.11",
+   "contains": [
+    "use enum to create an enumeration"
+   ],
+   "claim": "enum"
+  },
+  {
+   "cite": "SWT p.12",
+   "contains": [
+    "rawvalue",
+    "init?(rawvalue:)"
+   ],
+   "claim": "raw values"
+  },
+  {
+   "cite": "SWT p.12",
+   "contains": [
+    "don't have to provide one"
+   ],
+   "claim": "optional raw value"
+  },
+  {
+   "cite": "SWT p.13",
+   "contains": [
+    "associated values"
+   ],
+   "claim": "associated values"
+  },
+  {
+   "cite": "SWT p.13",
+   "contains": [
+    "structures are always copied",
+    "classes are passed by reference"
+   ],
+   "claim": "struct copied, class by reference"
+  },
+  {
+   "cite": "SWT p.13",
+   "contains": [
+    "abbreviated form"
+   ],
+   "claim": "shorthand form of the case"
+  },
+  {
+   "cite": "SWT p.14",
+   "contains": [
+    "use async to mark a function",
+    "await in front of it"
+   ],
+   "claim": "async and await"
+  },
+  {
+   "cite": "SWT p.14",
+   "contains": [
+    "async let",
+    "in parallel"
+   ],
+   "claim": "async let in parallel"
+  },
+  {
+   "cite": "SWT p.14",
+   "contains": [
+    "task",
+    "synchronous code"
+   ],
+   "claim": "Task from synchronous code"
+  },
+  {
+   "cite": "SWT p.14",
+   "contains": [
+    "task groups"
+   ],
+   "claim": "task groups"
+  },
+  {
+   "cite": "SWT p.15",
+   "contains": [
+    "actors are similar to classes"
+   ],
+   "claim": "actors"
+  },
+  {
+   "cite": "SWT p.15",
+   "contains": [
+    "mark that code with await"
+   ],
+   "claim": "await on an actor"
+  },
+  {
+   "cite": "SWT p.15",
+   "contains": [
+    "use protocol to declare a protocol"
+   ],
+   "claim": "protocol"
+  },
+  {
+   "cite": "SWT p.16",
+   "contains": [
+    "mutating"
+   ],
+   "claim": "mutating"
+  },
+  {
+   "cite": "SWT p.16",
+   "contains": [
+    "use extension to add functionality"
+   ],
+   "claim": "extension"
+  },
+  {
+   "cite": "SWT p.16",
+   "contains": [
+    "boxed protocol type"
+   ],
+   "claim": "protocol as a type"
+  },
+  {
+   "cite": "SWT p.17",
+   "contains": [
+    "adopts the error protocol"
+   ],
+   "claim": "Error type"
+  },
+  {
+   "cite": "SWT p.17",
+   "contains": [
+    "throw to throw an error",
+    "throws to mark a function"
+   ],
+   "claim": "throw and throws"
+  },
+  {
+   "cite": "SWT p.17",
+   "contains": [
+    "do-catch",
+    "try in front of it"
+   ],
+   "claim": "do-catch and try"
+  },
+  {
+   "cite": "SWT p.17",
+   "contains": [
+    "pattern after catch"
+   ],
+   "claim": "patterns in catch"
+  },
+  {
+   "cite": "SWT p.18",
+   "contains": [
+    "try? to convert the result to an optional"
+   ],
+   "claim": "try?"
+  },
+  {
+   "cite": "SWT p.18",
+   "contains": [
+    "defer to write a block of code"
+   ],
+   "claim": "defer"
+  },
+  {
+   "cite": "SWT p.18",
+   "contains": [
+    "angle brackets"
+   ],
+   "claim": "generics with angle brackets"
+  },
+  {
+   "cite": "SWT p.19",
+   "contains": [
+    "where right before the body"
+   ],
+   "claim": "where"
+  },
+  {
+   "cite": "SWT p.19",
+   "contains": [
+    "<t: equatable>"
+   ],
+   "claim": "<T: Equatable> is equivalent to where"
+  },
+  {
+   "cite": "SWT p.19",
+   "contains": [
+    "copyright © 2014-2026"
+   ],
+   "claim": "copyright 2014-2026"
+  },
+  {
+   "cite": "SWT p.19",
+   "contains": [
+    "creative commons attribution 4.0 international (cc by 4.0)"
+   ],
+   "claim": "CC BY 4.0 license"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "typescript"
+   ],
+   "claim": "RN does not mention TypeScript"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "hermes",
+    "metro",
+    "fabric",
+    "turbomodule"
+   ],
+   "claim": "RN does not mention engine/bundler/architecture"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "flexbox",
+    "stylesheet"
+   ],
+   "claim": "RN does not cover styles"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "jsx",
+    "usestate",
+    "hooks"
+   ],
+   "claim": "RN does not bring React/JSX/hooks on this page"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "navigation"
+   ],
+   "claim": "RN does not cover navigation"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "expo go",
+    "expo cli",
+    "npx",
+    "create-expo-app"
+   ],
+   "claim": "RN does not bring project commands"
+  },
+  {
+   "cite": "RN p.1-4",
+   "absent": [
+    "benchmark",
+    "performance"
+   ],
+   "claim": "RN does not cover performance"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "hot reload"
+   ],
+   "claim": "FLT does not mention hot reload"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "pubspec",
+    "flutter run",
+    "flutter create"
+   ],
+   "claim": "FLT does not bring project commands/files"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "material design",
+    "cupertino"
+   ],
+   "claim": "FLT does not mention Material/Cupertino"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "statelesswidget",
+    "setstate"
+   ],
+   "claim": "FLT does not bring a widget API"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "impeller",
+    "skia"
+   ],
+   "claim": "FLT does not talk about the rendering engine"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "riverpod",
+    "bloc"
+   ],
+   "claim": "FLT does not talk about state management"
+  },
+  {
+   "cite": "FLT p.1-4",
+   "absent": [
+    "written in dart",
+    "dart language",
+    "programming language"
+   ],
+   "claim": "FLT does not say that Dart is the language"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "swiftui",
+    "uikit",
+    "xcode"
+   ],
+   "claim": "SWT does not mention SwiftUI/UIKit/Xcode"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "swift 5",
+    "swift 6",
+    "swift 4"
+   ],
+   "claim": "SWT does not state the Swift version"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "guard",
+    "fallthrough",
+    "inout"
+   ],
+   "claim": "SWT does not cover guard/fallthrough/inout"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "weak",
+    "unowned",
+    "arc",
+    "automatic reference counting"
+   ],
+   "claim": "SWT does not cover ARC"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "sendable",
+    "mainactor"
+   ],
+   "claim": "SWT does not cover Sendable/MainActor"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "swift package manager",
+    "cocoapods"
+   ],
+   "claim": "SWT does not cover package managers"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "kotlin",
+    "flutter",
+    "react native"
+   ],
+   "claim": "SWT does not compare with other frameworks"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "ios",
+    "android",
+    "macos"
+   ],
+   "claim": "SWT does not mention platforms"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "force unwrap",
+    "try!"
+   ],
+   "claim": "SWT does not cover forced unwrapping"
+  },
+  {
+   "cite": "SWT p.1-19",
+   "absent": [
+    "opaque",
+    "some view"
+   ],
+   "claim": "SWT does not cover opaque types"
+  },
+  {
+   "cite": "SWT p.16-17",
+   "absent": [
+    "associatedtype"
+   ],
+   "claim": "SWT does not bring associatedtype"
+  },
+  {
+   "cite": "SWT p.1",
+   "render": true,
+   "claim": "code: print(\"Hello, world!\"); var myVariable = 42; let explicitDouble: Double = 70"
+  },
+  {
+   "cite": "SWT p.2",
+   "render": true,
+   "claim": "code: String(width); interpolation \\(apples + oranges); multiline string; arrays/dictionary"
+  },
+  {
+   "cite": "SWT p.3",
+   "render": true,
+   "claim": "code: append; [] and [:]; [String]/[String: Float]; if as an expression with teamScore"
+  },
+  {
+   "cite": "SWT p.4",
+   "render": true,
+   "claim": "code: String?; if let; ??; if let nickname; switch with case let x where x.hasSuffix"
+  },
+  {
+   "cite": "SWT p.5",
+   "render": true,
+   "claim": "code: for (_, numbers) in; while and repeat-while both 128"
+  },
+  {
+   "cite": "SWT p.6",
+   "render": true,
+   "claim": "code: 0..<4; func greet(_ person:, on day:); calculateStatistics with a named tuple"
+  },
+  {
+   "cite": "SWT p.7",
+   "render": true,
+   "claim": "code: statistics.sum and .2; returnFifteen; makeIncrementer; hasAnyMatches"
+  },
+  {
+   "cite": "SWT p.8",
+   "render": true,
+   "claim": "code: numbers.map closure; $0 > $1; class Shape"
+  },
+  {
+   "cite": "SWT p.9",
+   "render": true,
+   "claim": "code: NamedShape init/self; Square with super.init and override"
+  },
+  {
+   "cite": "SWT p.10",
+   "render": true,
+   "claim": "code: EquilateralTriangle with get/set and newValue"
+  },
+  {
+   "cite": "SWT p.11",
+   "render": true,
+   "claim": "code: willSet in TriangleAndSquare; optionalSquare?.sideLength; enum Rank: Int"
+  },
+  {
+   "cite": "SWT p.12",
+   "render": true,
+   "claim": "code: init?(rawValue: 3); enum Suit without raw values"
+  },
+  {
+   "cite": "SWT p.13",
+   "render": true,
+   "claim": "code: ServerResponse with result/failure; case let .result; struct Card"
+  },
+  {
+   "cite": "SWT p.14",
+   "render": true,
+   "claim": "code: fetchUserID async; async let; Task { await ... }"
+  },
+  {
+   "cite": "SWT p.15",
+   "render": true,
+   "claim": "code: withTaskGroup(of: Int.self); actor ServerConnection; protocol ExampleProtocol"
+  },
+  {
+   "cite": "SWT p.16",
+   "render": true,
+   "claim": "code: SimpleStructure mutating; extension Int: ExampleProtocol; any ExampleProtocol"
+  },
+  {
+   "cite": "SWT p.17",
+   "render": true,
+   "claim": "code: enum PrinterError: Error; func send throws; do { try } catch"
+  },
+  {
+   "cite": "SWT p.18",
+   "render": true,
+   "claim": "code: catch PrinterError.onFire; catch let printerError as PrinterError; try?; defer; makeArray<Item>"
+  },
+  {
+   "cite": "SWT p.19",
+   "render": true,
+   "claim": "code: OptionalValue<Wrapped>; anyCommonElements with where T.Element: Equatable, T.Element == U.Element"
+  }
+ ]
+}

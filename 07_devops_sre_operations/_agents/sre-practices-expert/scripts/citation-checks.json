@@ -1,0 +1,7413 @@
+{
+ "source": "Google-SRE-Book.txt (marcadores === PAGE N ===, N = pagina do PDF; impressa = N-12)",
+ "positive": [
+  {
+   "id": "P01",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "40",
+    "90%",
+    "total costs"
+   ],
+   "claim": "40-90% of total cost occurs after deployment"
+  },
+  {
+   "id": "P02",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "reliable enough"
+   ],
+   "claim": "invest in reliability up to the point of reliable enough"
+  },
+  {
+   "id": "P03",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "50% cap",
+    "ops"
+   ],
+   "claim": "50% cap on ops work"
+  },
+  {
+   "id": "P04",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "two events per",
+    "pager fatigue"
+   ],
+   "claim": "max 2 events per shift; fatigue"
+  },
+  {
+   "id": "P05",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "100%",
+    "error budget",
+    "pacemakers"
+   ],
+   "claim": "100% is the wrong target; pacemakers"
+  },
+  {
+   "id": "P06",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "70%",
+    "change"
+   ],
+   "claim": "about 70% of outages come from changes"
+  },
+  {
+   "id": "P07",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "playbook",
+    "3x"
+   ],
+   "claim": "playbook ~3x better MTTR"
+  },
+  {
+   "id": "P08",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "3,470",
+    "37 tasks"
+   ],
+   "claim": "Shakespeare sizing 3470 QPS; 37 tasks"
+  },
+  {
+   "id": "P09",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "reliable enough",
+    "100x"
+   ],
+   "claim": "cost is nonlinear; 100x"
+  },
+  {
+   "id": "P10",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "uptime",
+    "downtime",
+    "nines"
+   ],
+   "claim": "availability by time and nines"
+  },
+  {
+   "id": "P11",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "52.56 minutes",
+    "250 errors",
+    "2.5M"
+   ],
+   "claim": "numeric availability examples"
+  },
+  {
+   "id": "P12",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "$900",
+    "99.99%"
+   ],
+   "claim": "cost example of the extra nine"
+  },
+  {
+   "id": "P13",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "background error rate",
+    "0.01%"
+   ],
+   "claim": "background error rate of ISPs"
+  },
+  {
+   "id": "P14",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "99.999%",
+    "20%",
+    "self-policing"
+   ],
+   "claim": "20% budget example; self-policing"
+  },
+  {
+   "id": "P15",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "service level agreement",
+    "what happens if"
+   ],
+   "claim": "SLA test"
+  },
+  {
+   "id": "P16",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "durability",
+    "correctness"
+   ],
+   "claim": "SLI categories"
+  },
+  {
+   "id": "P17",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "percentile",
+    "tail"
+   ],
+   "claim": "percentiles instead of averages"
+  },
+  {
+   "id": "P18",
+   "pages": [
+    48,
+    49
+   ],
+   "terms": [
+    "Don",
+    "current performance"
+   ],
+   "claim": "do not pick the target from current performance"
+  },
+  {
+   "id": "P19",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "safety margin",
+    "overachieve"
+   ],
+   "claim": "safety margin and don't overachieve"
+  },
+  {
+   "id": "P20",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "toil",
+    "enduring value"
+   ],
+   "claim": "definition of toil"
+  },
+  {
+   "id": "P21",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "50%",
+    "6",
+    "33%"
+   ],
+   "claim": "toil target and 2/6 floor"
+  },
+  {
+   "id": "P22",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "career stagnation",
+    "breach of faith"
+   ],
+   "claim": "harms of toil"
+  },
+  {
+   "id": "P23",
+   "pages": [
+    57,
+    58
+   ],
+   "terms": [
+    "latency",
+    "traffic",
+    "errors",
+    "saturation"
+   ],
+   "claim": "four golden signals"
+  },
+  {
+   "id": "P24",
+   "pages": [
+    56,
+    57
+   ],
+   "terms": [
+    "black-box",
+    "white-box"
+   ],
+   "claim": "white-box vs black-box"
+  },
+  {
+   "id": "P25",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "histogram"
+   ],
+   "claim": "latency buckets"
+  },
+  {
+   "id": "P26",
+   "pages": [
+    59,
+    60
+   ],
+   "terms": [
+    "actionable",
+    "urgent"
+   ],
+   "claim": "questions for a new alert"
+  },
+  {
+   "id": "P27",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Bigtable",
+    "75th percentile"
+   ],
+   "claim": "Bigtable case"
+  },
+  {
+   "id": "P28",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "force multiplier"
+   ],
+   "claim": "automation as a force multiplier"
+  },
+  {
+   "id": "P29",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "No automation"
+   ],
+   "claim": "hierarchy of automation classes"
+  },
+  {
+   "id": "P30",
+   "pages": [
+    66,
+    67
+   ],
+   "terms": [
+    "Decider",
+    "30 seconds"
+   ],
+   "claim": "Decider and failover in <30 s"
+  },
+  {
+   "id": "P31",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "Diskerase"
+   ],
+   "claim": "Diskerase case in Ch. 7"
+  },
+  {
+   "id": "P32",
+   "pages": [
+    76,
+    77
+   ],
+   "terms": [
+    "hermetic",
+    "self-service"
+   ],
+   "claim": "release engineering principles"
+  },
+  {
+   "id": "P33",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "cherry",
+    "branch"
+   ],
+   "claim": "cherry picks on the release branch"
+  },
+  {
+   "id": "P34",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "configuration",
+    "MPM"
+   ],
+   "claim": "configuration management models"
+  },
+  {
+   "id": "P35",
+   "pages": [
+    82,
+    83
+   ],
+   "terms": [
+    "accidental complexity",
+    "boring"
+   ],
+   "claim": "virtue of boring; accidental complexity"
+  },
+  {
+   "id": "P36",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "dead code",
+    "Knight"
+   ],
+   "claim": "dead code and Knight Capital"
+  },
+  {
+   "id": "P37",
+   "pages": [
+    85,
+    86
+   ],
+   "terms": [
+    "Maslow"
+   ],
+   "claim": "reliability hierarchy"
+  },
+  {
+   "id": "P38",
+   "pages": [
+    89,
+    90
+   ],
+   "terms": [
+    "varz"
+   ],
+   "claim": "varz format"
+  },
+  {
+   "id": "P39",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "Alertmanager"
+   ],
+   "claim": "Alertmanager"
+  },
+  {
+   "id": "P40",
+   "pages": [
+    99,
+    100
+   ],
+   "terms": [
+    "5 minutes",
+    "30 minutes"
+   ],
+   "claim": "response times of 5 and 30 min"
+  },
+  {
+   "id": "P41",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "25%",
+    "eight",
+    "six"
+   ],
+   "claim": "25% on-call, 8 people, 6 per site"
+  },
+  {
+   "id": "P42",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "6 hours",
+    "2 per 12-hour"
+   ],
+   "claim": "6 h per incident; 2 incidents per shift"
+  },
+  {
+   "id": "P43",
+   "pages": [
+    102,
+    103
+   ],
+   "terms": [
+    "give back the pager"
+   ],
+   "claim": "give the pager back"
+  },
+  {
+   "id": "P44",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "hypothetico-deductive"
+   ],
+   "claim": "hypothetico-deductive method"
+  },
+  {
+   "id": "P45",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "zebras",
+    "correlation"
+   ],
+   "claim": "horses not zebras; correlation"
+  },
+  {
+   "id": "P46",
+   "pages": [
+    106,
+    107
+   ],
+   "terms": [
+    "stopping the bleeding",
+    "fly the airplane"
+   ],
+   "claim": "stop the bleeding"
+  },
+  {
+   "id": "P47",
+   "pages": [
+    110,
+    111
+   ],
+   "terms": [
+    "negative result"
+   ],
+   "claim": "negative results"
+  },
+  {
+   "id": "P48",
+   "pages": [
+    116,
+    117,
+    118,
+    119
+   ],
+   "terms": [
+    "Test-Induced",
+    "Change-Induced",
+    "Process-Induced"
+   ],
+   "claim": "three types of emergency"
+  },
+  {
+   "id": "P49",
+   "pages": [
+    122,
+    123
+   ],
+   "terms": [
+    "freelancing"
+   ],
+   "claim": "freelancing"
+  },
+  {
+   "id": "P50",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "Incident Command System"
+   ],
+   "claim": "ICS"
+  },
+  {
+   "id": "P51",
+   "pages": [
+    124
+   ],
+   "terms": [
+    "handoff",
+    "incident commander"
+   ],
+   "claim": "clear handoff"
+  },
+  {
+   "id": "P52",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "concentrated analysis",
+    "second team"
+   ],
+   "claim": "criteria for declaring an incident"
+  },
+  {
+   "id": "P53",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "data loss",
+    "blameless"
+   ],
+   "claim": "postmortem triggers and blameless"
+  },
+  {
+   "id": "P54",
+   "pages": [
+    127,
+    128
+   ],
+   "terms": [
+    "No Postmortem Left Unreviewed"
+   ],
+   "claim": "no postmortem without review"
+  },
+  {
+   "id": "P55",
+   "pages": [
+    130,
+    131
+   ],
+   "terms": [
+    "Outalator",
+    "Escalator"
+   ],
+   "claim": "Outalator and Escalator"
+  },
+  {
+   "id": "P56",
+   "pages": [
+    131,
+    132,
+    133
+   ],
+   "terms": [
+    "tag",
+    "bogus"
+   ],
+   "claim": "tags and bogus"
+  },
+  {
+   "id": "P57",
+   "pages": [
+    135
+   ],
+   "terms": [
+    "zero MTTR"
+   ],
+   "claim": "zero MTTR"
+  },
+  {
+   "id": "P58",
+   "pages": [
+    138
+   ],
+   "terms": [
+    "configuration test",
+    "stress test",
+    "canary"
+   ],
+   "claim": "production tests"
+  },
+  {
+   "id": "P59",
+   "pages": [
+    139,
+    147
+   ],
+   "terms": [
+    "0.1%"
+   ],
+   "claim": "0.1% canary rule"
+  },
+  {
+   "id": "P60",
+   "pages": [
+    142,
+    143
+   ],
+   "terms": [
+    "42,000",
+    "99.99"
+   ],
+   "claim": "the math of the 42,000 tests"
+  },
+  {
+   "id": "P61",
+   "pages": [
+    144
+   ],
+   "terms": [
+    "break-glass"
+   ],
+   "claim": "break-glass"
+  },
+  {
+   "id": "P62",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "known bad",
+    "known good"
+   ],
+   "claim": "production probes"
+  },
+  {
+   "id": "P63",
+   "pages": [
+    150,
+    151
+   ],
+   "terms": [
+    "NP-hard",
+    "N + 2"
+   ],
+   "claim": "bin packing is NP-hard; N+2 intent"
+  },
+  {
+   "id": "P64",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "Auxon"
+   ],
+   "claim": "Auxon"
+  },
+  {
+   "id": "P65",
+   "pages": [
+    161,
+    162
+   ],
+   "terms": [
+    "consistent hashing",
+    "GRE"
+   ],
+   "claim": "consistent hashing and GRE"
+  },
+  {
+   "id": "P66",
+   "pages": [
+    166
+   ],
+   "terms": [
+    "lame duck"
+   ],
+   "claim": "lame duck"
+  },
+  {
+   "id": "P67",
+   "pages": [
+    167,
+    168
+   ],
+   "terms": [
+    "subset",
+    "random"
+   ],
+   "claim": "subsetting"
+  },
+  {
+   "id": "P68",
+   "pages": [
+    173
+   ],
+   "terms": [
+    "Weighted Round Robin"
+   ],
+   "claim": "Weighted Round Robin"
+  },
+  {
+   "id": "P69",
+   "pages": [
+    176,
+    177
+   ],
+   "terms": [
+    "adaptive throttling",
+    "accepts"
+   ],
+   "claim": "adaptive throttling"
+  },
+  {
+   "id": "P70",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "CRITICAL_PLUS",
+    "SHEDDABLE"
+   ],
+   "claim": "criticality"
+  },
+  {
+   "id": "P71",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "10%",
+    "three attempts"
+   ],
+   "claim": "retry budgets"
+  },
+  {
+   "id": "P72",
+   "pages": [
+    184
+   ],
+   "terms": [
+    "cascading failure",
+    "positive feedback"
+   ],
+   "claim": "definition of cascading failure"
+  },
+  {
+   "id": "P73",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "death spiral"
+   ],
+   "claim": "GC death spiral"
+  },
+  {
+   "id": "P74",
+   "pages": [
+    191,
+    192
+   ],
+   "terms": [
+    "product of the number of attempts",
+    "randomized exponential backoff"
+   ],
+   "claim": "4^3 = 64 attempts; backoff"
+  },
+  {
+   "id": "P75",
+   "pages": [
+    190,
+    191
+   ],
+   "terms": [
+    "deadline"
+   ],
+   "claim": "deadline propagation"
+  },
+  {
+   "id": "P76",
+   "pages": [
+    193,
+    194
+   ],
+   "terms": [
+    "bimodal"
+   ],
+   "claim": "bimodal latency"
+  },
+  {
+   "id": "P77",
+   "pages": [
+    201
+   ],
+   "terms": [
+    "CAP",
+    "partition"
+   ],
+   "claim": "CAP theorem"
+  },
+  {
+   "id": "P78",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "STONITH",
+    "split-brain"
+   ],
+   "claim": "split-brain and STONITH"
+  },
+  {
+   "id": "P79",
+   "pages": [
+    204
+   ],
+   "terms": [
+    "FLP",
+    "Paxos"
+   ],
+   "claim": "FLP and Paxos"
+  },
+  {
+   "id": "P80",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "2f + 1",
+    "three"
+   ],
+   "claim": "2f+1 quorum"
+  },
+  {
+   "id": "P81",
+   "pages": [
+    218
+   ],
+   "terms": [
+    "40%",
+    "33%"
+   ],
+   "claim": "adding a replica can reduce availability"
+  },
+  {
+   "id": "P82",
+   "pages": [
+    226
+   ],
+   "terms": [
+    "skip",
+    "double"
+   ],
+   "claim": "prefer skipping to duplicating"
+  },
+  {
+   "id": "P83",
+   "pages": [
+    231
+   ],
+   "terms": [
+    "thundering herd"
+   ],
+   "claim": "thundering herd and crontab"
+  },
+  {
+   "id": "P84",
+   "pages": [
+    234,
+    235,
+    236
+   ],
+   "terms": [
+    "hanging chunk",
+    "Moir"
+   ],
+   "claim": "periodic pipeline problems"
+  },
+  {
+   "id": "P85",
+   "pages": [
+    242
+   ],
+   "terms": [
+    "200 KB"
+   ],
+   "claim": "99.99% good bytes in 2 GB = 200 KB"
+  },
+  {
+   "id": "P86",
+   "pages": [
+    246
+   ],
+   "terms": [
+    "24"
+   ],
+   "claim": "24 failure types"
+  },
+  {
+   "id": "P87",
+   "pages": [
+    249
+   ],
+   "terms": [
+    "soft deletion",
+    "60 days"
+   ],
+   "claim": "soft deletion 15-60 days"
+  },
+  {
+   "id": "P88",
+   "pages": [
+    251
+   ],
+   "terms": [
+    "700 petabytes",
+    "8 decades"
+   ],
+   "claim": "1T vs 1E"
+  },
+  {
+   "id": "P89",
+   "pages": [
+    256,
+    257
+   ],
+   "terms": [
+    "436,223",
+    "5,475"
+   ],
+   "claim": "Google Music: numbers"
+  },
+  {
+   "id": "P90",
+   "pages": [
+    263,
+    265
+   ],
+   "terms": [
+    "checklist",
+    "15 times"
+   ],
+   "claim": "launch checklist and 15x spikes"
+  },
+  {
+   "id": "P91",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "feature flag",
+    "between 1 and 10 percent"
+   ],
+   "claim": "feature flags 1 to 10 percent"
+  },
+  {
+   "id": "P92",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "350 launches"
+   ],
+   "claim": "350 launches per LCE"
+  },
+  {
+   "id": "P93",
+   "pages": [
+    276,
+    277
+   ],
+   "terms": [
+    "on-call learning checklist"
+   ],
+   "claim": "on-call learning checklist"
+  },
+  {
+   "id": "P94",
+   "pages": [
+    284
+   ],
+   "terms": [
+    "bystander effect"
+   ],
+   "claim": "a single on-call engineer"
+  },
+  {
+   "id": "P95",
+   "pages": [
+    291,
+    292
+   ],
+   "terms": [
+    "kindling",
+    "Bad Apple"
+   ],
+   "claim": "kindling and Bad Apple Theory"
+  },
+  {
+   "id": "P96",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "30",
+    "60 minutes"
+   ],
+   "claim": "production meeting 30-60 min"
+  },
+  {
+   "id": "P97",
+   "pages": [
+    308,
+    309
+   ],
+   "terms": [
+    "Engagement",
+    "Continuous Improvement"
+   ],
+   "claim": "PRR phases"
+  },
+  {
+   "id": "P98",
+   "pages": [
+    316
+   ],
+   "terms": [
+    "Preparedness",
+    "Postmortem Culture"
+   ],
+   "claim": "themes of Ch. 33"
+  },
+  {
+   "id": "P99",
+   "pages": [
+    321
+   ],
+   "terms": [
+    "HiPPO"
+   ],
+   "claim": "HiPPO"
+  },
+  {
+   "id": "P100",
+   "pages": [
+    326,
+    327
+   ],
+   "terms": [
+    "99.999%",
+    "5.26 minutes"
+   ],
+   "claim": "Appendix A"
+  },
+  {
+   "id": "P101",
+   "pages": [
+    329,
+    330
+   ],
+   "terms": [
+    "Fail Sanely",
+    "Progressive Rollouts"
+   ],
+   "claim": "Appendix B"
+  },
+  {
+   "id": "P102",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "error budget",
+    "we often use a month"
+   ],
+   "claim": "budget often monthly"
+  },
+  {
+   "id": "P103",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "eight",
+    "six",
+    "two events"
+   ],
+   "claim": "Appendix B on-call teams"
+  },
+  {
+   "id": "P104",
+   "pages": [
+    332,
+    333
+   ],
+   "terms": [
+    "Exit Criteria",
+    "Command Post"
+   ],
+   "claim": "Appendix C"
+  },
+  {
+   "id": "P105",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "Root Causes",
+    "Lessons Learned",
+    "Action Items"
+   ],
+   "claim": "Appendix D"
+  },
+  {
+   "id": "P106",
+   "pages": [
+    337,
+    338
+   ],
+   "terms": [
+    "Mondays or Fridays"
+   ],
+   "claim": "Appendix E"
+  },
+  {
+   "id": "P107",
+   "pages": [
+    339,
+    340
+   ],
+   "terms": [
+    "Outage Review",
+    "Key Service Metrics"
+   ],
+   "claim": "Appendix F"
+  },
+  {
+   "id": "P108",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "cholesterol",
+    "Bigtable"
+   ],
+   "claim": "initial disk case in Prodtest/turnup"
+  },
+  {
+   "id": "P109",
+   "pages": [
+    68,
+    69
+   ],
+   "terms": [
+    "Prodtest"
+   ],
+   "claim": "Prodtest"
+  },
+  {
+   "id": "P110",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "idempotent",
+    "15 minutes"
+   ],
+   "claim": "idempotent fixes every 15 minutes"
+  },
+  {
+   "id": "P111",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "competence",
+    "latency",
+    "relevance"
+   ],
+   "claim": "competence/latency/relevance"
+  },
+  {
+   "id": "P112",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "Admin Servers"
+   ],
+   "claim": "Admin Servers"
+  },
+  {
+   "id": "P113",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "decoupling operator from operation"
+   ],
+   "claim": "time savings"
+  },
+  {
+   "id": "P114",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "thread starvation",
+    "GC death spiral"
+   ],
+   "claim": "CPU/memory exhaustion"
+  },
+  {
+   "id": "P115",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "11,000 QPS"
+   ],
+   "claim": "service at 10,000 QPS starts a cascade at 11,000"
+  },
+  {
+   "id": "P116",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "19,000",
+    "N + 2"
+   ],
+   "claim": "N+2 capacity planning with 19,000 QPS"
+  },
+  {
+   "id": "P117",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "queueless"
+   ],
+   "claim": "small queues; Gmail queueless"
+  },
+  {
+   "id": "P118",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "CoDel",
+    "LIFO"
+   ],
+   "claim": "LIFO and CoDel"
+  },
+  {
+   "id": "P119",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "60 retries"
+   ],
+   "claim": "per-server retry budget"
+  },
+  {
+   "id": "P120",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "hedged"
+   ],
+   "claim": "hedged requests and cancellation"
+  },
+  {
+   "id": "P121",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "latency cache",
+    "capacity cache"
+   ],
+   "claim": "latency vs capacity cache"
+  },
+  {
+   "id": "P122",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "Always Go Downward",
+    "Query of Death"
+   ],
+   "claim": "moving down the stack; query of death"
+  },
+  {
+   "id": "P123",
+   "pages": [
+    196,
+    197
+   ],
+   "terms": [
+    "Test Until Failure",
+    "Test Popular Clients"
+   ],
+   "claim": "testing cascading failure"
+  },
+  {
+   "id": "P124",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "Restart Servers",
+    "Drop Traffic"
+   ],
+   "claim": "immediate steps"
+  },
+  {
+   "id": "P125",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "Eliminate Bad Traffic"
+   ],
+   "claim": "eliminate bad traffic"
+  },
+  {
+   "id": "P126",
+   "pages": [
+    164
+   ],
+   "terms": [
+    "capacity is wasted",
+    "CPU[i]"
+   ],
+   "claim": "CPU waste in load balancing"
+  },
+  {
+   "id": "P127",
+   "pages": [
+    166
+   ],
+   "terms": [
+    "lame duck",
+    "SIGTERM"
+   ],
+   "claim": "lame duck and SIGTERM"
+  },
+  {
+   "id": "P128",
+   "pages": [
+    167,
+    168
+   ],
+   "terms": [
+    "300 clients",
+    "63%",
+    "121%"
+   ],
+   "claim": "simulated random subsetting"
+  },
+  {
+   "id": "P129",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "GCU",
+    "antagonistic"
+   ],
+   "claim": "GCU and antagonistic neighbors"
+  },
+  {
+   "id": "P130",
+   "pages": [
+    172,
+    173
+   ],
+   "terms": [
+    "sinkholing"
+   ],
+   "claim": "sinkholing traffic"
+  },
+  {
+   "id": "P131",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "task overloaded",
+    "triggers retries"
+   ],
+   "claim": "overloaded; don't retry"
+  },
+  {
+   "id": "P132",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "batch proxy",
+    "fuse"
+   ],
+   "claim": "batch proxy as a fuse"
+  },
+  {
+   "id": "P133",
+   "pages": [
+    205
+   ],
+   "terms": [
+    "Paxos",
+    "sequence number"
+   ],
+   "claim": "Paxos with sequence numbers"
+  },
+  {
+   "id": "P134",
+   "pages": [
+    211
+   ],
+   "terms": [
+    "dueling proposers"
+   ],
+   "claim": "dueling proposers"
+  },
+  {
+   "id": "P135",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "Fast Paxos"
+   ],
+   "claim": "Fast Paxos"
+  },
+  {
+   "id": "P136",
+   "pages": [
+    222,
+    223
+   ],
+   "terms": [
+    "leader",
+    "view"
+   ],
+   "claim": "consensus monitoring"
+  },
+  {
+   "id": "P137",
+   "pages": [
+    224
+   ],
+   "terms": [
+    "ticking bomb"
+   ],
+   "claim": "heartbeats as a time bomb"
+  },
+  {
+   "id": "P138",
+   "pages": [
+    228,
+    229,
+    230
+   ],
+   "terms": [
+    "open launches"
+   ],
+   "claim": "cron: open launches"
+  },
+  {
+   "id": "P139",
+   "pages": [
+    231
+   ],
+   "terms": [
+    "three replicas",
+    "three copies of the logs"
+   ],
+   "claim": "cron: logs and snapshots"
+  },
+  {
+   "id": "P140",
+   "pages": [
+    240
+   ],
+   "terms": [
+    "Spanner",
+    "Chubby",
+    "heartbeat task"
+   ],
+   "claim": "Workflow: business continuity"
+  },
+  {
+   "id": "P141",
+   "pages": [
+    248
+   ],
+   "terms": [
+    "soft deletion",
+    "defense in depth"
+   ],
+   "claim": "layers of defense"
+  },
+  {
+   "id": "P142",
+   "pages": [
+    250,
+    251
+   ],
+   "terms": [
+    "30 and 90 days",
+    "tier"
+   ],
+   "claim": "30-90 day retention; tiers"
+  },
+  {
+   "id": "P143",
+   "pages": [
+    254
+   ],
+   "terms": [
+    "heartbeat",
+    "end-to-end"
+   ],
+   "claim": "test recovery continuously"
+  },
+  {
+   "id": "P144",
+   "pages": [
+    255
+   ],
+   "terms": [
+    "GTape"
+   ],
+   "claim": "Gmail 2011"
+  },
+  {
+   "id": "P145",
+   "pages": [
+    257
+   ],
+   "terms": [
+    "1.5 petabytes",
+    "5,475"
+   ],
+   "claim": "Music: 1.5 PB, 5,475 restores"
+  },
+  {
+   "id": "P146",
+   "pages": [
+    261
+   ],
+   "terms": [
+    "70 launches"
+   ],
+   "claim": "70 launches per week"
+  },
+  {
+   "id": "P147",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "gatekeeper"
+   ],
+   "claim": "LCE gatekeepers"
+  },
+  {
+   "id": "P148",
+   "pages": [
+    271
+   ],
+   "terms": [
+    "churn"
+   ],
+   "claim": "infrastructure churn"
+  },
+  {
+   "id": "P149",
+   "pages": [
+    277
+   ],
+   "terms": [
+    "powerups"
+   ],
+   "claim": "powerups"
+  },
+  {
+   "id": "P150",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "burn a search cluster"
+   ],
+   "claim": "break real things"
+  },
+  {
+   "id": "P151",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "context switch",
+    "make time"
+   ],
+   "claim": "polarize the time"
+  },
+  {
+   "id": "P152",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "embed"
+   ],
+   "claim": "SRE embedding"
+  },
+  {
+   "id": "P153",
+   "pages": [
+    305
+   ],
+   "terms": [
+    "PRR"
+   ],
+   "claim": "PRR"
+  },
+  {
+   "id": "P154",
+   "pages": [
+    314
+   ],
+   "terms": [
+    "shared responsibility"
+   ],
+   "claim": "SRE frameworks and platform"
+  },
+  {
+   "id": "P155",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "Corrective and preventative action"
+   ],
+   "claim": "CAPA in other industries"
+  },
+  {
+   "id": "P156",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "DevOps",
+    "infrastructure as code",
+    "reliability as our main focus"
+   ],
+   "claim": "preface note 4: SRE vs DevOps"
+  },
+  {
+   "id": "P157",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "DevOps",
+    "late 2008"
+   ],
+   "claim": "DevOps emerged in late 2008; consistent principles"
+  },
+  {
+   "id": "P158",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "SLA violation",
+    "missed SLO"
+   ],
+   "claim": "SLA violation is usually an SLO miss"
+  },
+  {
+   "id": "P159",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "Kubernetes"
+   ],
+   "claim": "Kubernetes only in a footnote"
+  },
+  {
+   "id": "P160",
+   "pages": [
+    88
+   ],
+   "terms": [
+    "single-machine failures",
+    "unacceptable"
+   ],
+   "claim": "alerting on an individual machine is unacceptable"
+  },
+  {
+   "id": "P161",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "otherwise undetected",
+    "actionable"
+   ],
+   "claim": "questions for a new alert"
+  },
+  {
+   "id": "P162",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "rough priority order",
+    "Load test"
+   ],
+   "claim": "prevention in approximate order of priority"
+  },
+  {
+   "id": "P163",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "incident management protocol",
+    "Increase Resources"
+   ],
+   "claim": "immediate steps after using incident management"
+  },
+  {
+   "id": "P164",
+   "pages": [
+    74,
+    119,
+    120
+   ],
+   "terms": [
+    "Diskerase"
+   ],
+   "claim": "Diskerase"
+  },
+  {
+   "id": "P165",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Example Postmortem"
+   ],
+   "claim": "Ch. 15 refers to the appendix example"
+  },
+  {
+   "id": "P166",
+   "pages": [
+    15,
+    16
+   ],
+   "terms": [
+    "Margaret Hamilton",
+    "P01"
+   ],
+   "claim": "Hamilton case"
+  },
+  {
+   "id": "P167",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "bang",
+    "error budget"
+   ],
+   "claim": "bang/bang control and budget"
+  },
+  {
+   "id": "P168",
+   "pages": [
+    102,
+    103
+   ],
+   "terms": [
+    "Operational Overload",
+    "Underload"
+   ],
+   "claim": "operational overload and underload"
+  },
+  {
+   "id": "P169",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "Beginner",
+    "Trust but Verify"
+   ],
+   "claim": "integrity principles"
+  },
+  {
+   "id": "P170",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "10,000 QPS",
+    "11,000 QPS",
+    "9,000 QPS",
+    "almost certainly not stop",
+    "1,000 QPS"
+   ],
+   "claim": "cascade: stable at 10,000 QPS, cascades at 11,000, 9,000 does not fix it, ~1,000 QPS with 10% healthy"
+  },
+  {
+   "id": "P171",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "only allow, say, 1%",
+    "Consider being aggressive"
+   ],
+   "claim": "Drop Traffic: let through only ~1% of traffic"
+  },
+  {
+   "id": "P172",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "Process health checking",
+    "service health checking"
+   ],
+   "claim": "process vs service health checking"
+  },
+  {
+   "id": "P173",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "turns on autoscaling",
+    "GSLB"
+   ],
+   "claim": "autoscaling only as a postmortem action of the Shakespeare example"
+  },
+  {
+   "id": "P174",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "typically get involved in constructing SLAs",
+    "closely tied to business and product decisions"
+   ],
+   "claim": "SRE normally does not build SLAs"
+  },
+  {
+   "id": "P175",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "business and legal teams to pick appropriate consequences",
+    "likelihood and difficulty of meeting the SLOs"
+   ],
+   "claim": "business/legal choose consequences; SRE helps assess probability/difficulty"
+  },
+  {
+   "id": "P176",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "Most people really mean SLO",
+    "court case for breach of contract"
+   ],
+   "claim": "note 16: SLA usually means SLO"
+  },
+  {
+   "id": "P177",
+   "pages": [
+    45,
+    46
+   ],
+   "terms": [
+    "hit to our reputation",
+    "drop in advertising revenue"
+   ],
+   "claim": "Search without a public SLA still has consequences"
+  },
+  {
+   "id": "P178",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "peer reviews and self-assessments",
+    "HR paperwork",
+    "bug queue hygiene",
+    "training courses"
+   ],
+   "claim": "overhead list"
+  },
+  {
+   "id": "P179",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "hands-on time a human spends running that script",
+    "for the first time ever, or even the second time"
+   ],
+   "claim": "running a script is toil; the 1st/2nd time is not toil"
+  },
+  {
+   "id": "P180",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "regardless of whether or not they paged",
+    "even more valuable"
+   ],
+   "claim": "postmortem independent of a page"
+  },
+  {
+   "id": "P181",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "Tickets Signify that a human needs to take action, but not immediately",
+    "in a few days"
+   ],
+   "claim": "ticket = action in days (p.26)"
+  },
+  {
+   "id": "P182",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "ticket queues"
+   ],
+   "claim": "subcritical alerts go to the ticket queue"
+  },
+  {
+   "id": "P183",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "Tickets A human must do something within a few days"
+   ],
+   "claim": "tickets in App. B"
+  },
+  {
+   "id": "P184",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "xkcd.com/1205"
+   ],
+   "claim": "xkcd 1205 only in note 28 (p.74)"
+  },
+  {
+   "id": "P185",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "Such events also eat into the error budget"
+   ],
+   "claim": "network outages also consume budget"
+  },
+  {
+   "id": "P186",
+   "pages": [
+    244
+   ],
+   "terms": [
+    "once a month",
+    "seven years",
+    "long-term archival storage"
+   ],
+   "claim": "archive example: monthly financial logs"
+  },
+  {
+   "id": "P187",
+   "pages": [
+    191,
+    184,
+    266,
+    331
+   ],
+   "terms": [
+    "randomized exponential backoff",
+    "jitter"
+   ],
+   "claim": "randomized backoff is the word jitter, no formula"
+  },
+  {
+   "id": "P188",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "setting and grading goals",
+    "snippets"
+   ],
+   "claim": "overhead includes defining/evaluating goals and snippets"
+  },
+  {
+   "id": "P189",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "2/6 = 33%",
+    "2/8 = 25%"
+   ],
+   "claim": "toil floor per rotation"
+  },
+  {
+   "id": "P190",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "14:53",
+    "88x"
+   ],
+   "claim": "App. D: traffic 88x at 14:53"
+  },
+  {
+   "id": "P191",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "sacrificial cluster",
+    "10x capacity"
+   ],
+   "claim": "App. D: resolution with sacrificial cluster and 10x capacity"
+  },
+  {
+   "id": "P192",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:23",
+    "USA-2 cluster"
+   ],
+   "claim": "App. D: 15:23 all traffic to USA-2"
+  },
+  {
+   "id": "P193",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:28",
+    "2x instance count"
+   ],
+   "claim": "App. D: 15:28 2x increase in instances"
+  },
+  {
+   "id": "P194",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:33",
+    "nonsacrificial clusters"
+   ],
+   "claim": "App. D: 15:33 tasks in non-sacrificial clusters start failing again"
+  },
+  {
+   "id": "P195",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:34",
+    "order-of-magnitude error",
+    "whiteboard"
+   ],
+   "claim": "App. D: 15:34 order-of-magnitude error in the whiteboard math"
+  },
+  {
+   "id": "P196",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:41",
+    "1% of traffic"
+   ],
+   "claim": "App. D: 15:41 1% of traffic reinstated"
+  },
+  {
+   "id": "P197",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "15:45",
+    "10% of traffic"
+   ],
+   "claim": "App. D: 15:45 10% of traffic"
+  },
+  {
+   "id": "P198",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "30% of traffic",
+    "50% of traffic"
+   ],
+   "claim": "App. D: 15:50 30% and 15:55 50% of traffic"
+  },
+  {
+   "id": "P199",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "OUTAGE ENDS",
+    "INCIDENT ENDS",
+    "30 minutes"
+   ],
+   "claim": "App. D: OUTAGE ENDS 16:00 and INCIDENT ENDS 16:30 with a 30-minute criterion"
+  },
+  {
+   "id": "P200",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "1.21B queries lost",
+    "no revenue impact"
+   ],
+   "claim": "App. D: impact of 1.21 billion queries with no revenue impact"
+  },
+  {
+   "id": "P201",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "66 minutes"
+   ],
+   "claim": "App. D: Shakespeare Search down for 66 minutes"
+  },
+  {
+   "id": "P202",
+   "pages": [
+    332
+   ],
+   "terms": [
+    "USA-2 sacrificial cluster",
+    "99%ile",
+    "30+ minutes"
+   ],
+   "claim": "App. C: USA-2 sacrificial cluster and p99 < 100 ms for 30+ min criterion"
+  },
+  {
+   "id": "P203",
+   "pages": [
+    333
+   ],
+   "terms": [
+    "15:01",
+    "Incident declared due to cascading failure"
+   ],
+   "claim": "App. C: incident declared due to cascade at 15:01"
+  },
+  {
+   "id": "P204",
+   "pages": [
+    90,
+    91
+   ],
+   "terms": [
+    "24 bytes",
+    "17 GB",
+    "12 hours"
+   ],
+   "claim": "Borgmon: 24 bytes per point and 17 GB for 1 million series over 12 h"
+  },
+  {
+   "id": "P205",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "magic number",
+    "12-hour horizon"
+   ],
+   "claim": "Borgmon: 12 hours and magic number (note 50)"
+  },
+  {
+   "id": "P206",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "sum of rates instead of the rate of sums",
+    "counter resets"
+   ],
+   "claim": "Borgmon: sum of rates instead of rate of the sum (note 52)"
+  },
+  {
+   "id": "P207",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "Time-Series Database",
+    "cheaper and larger"
+   ],
+   "claim": "Borgmon: archiving in the TSDB, cheaper and bigger"
+  },
+  {
+   "id": "P208",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "time-series arena",
+    "horizon",
+    "garbage collector"
+   ],
+   "claim": "Borgmon: fixed-size arena and horizon"
+  },
+  {
+   "id": "P209",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "two rule evaluation cycles"
+   ],
+   "claim": "Borgmon: minimum duration of at least two evaluation cycles"
+  },
+  {
+   "id": "P210",
+   "pages": [
+    94
+   ],
+   "terms": [
+    "0.15",
+    "dc:http_errors:ratio_rate10m"
+   ],
+   "claim": "Borgmon: error ratio of 0.15 in the example"
+  },
+  {
+   "id": "P211",
+   "pages": [
+    162
+   ],
+   "terms": [
+    "24 bytes in the case of IPv4+GRE",
+    "Generic Routing Encapsulation"
+   ],
+   "claim": "Frontend LB: GRE with 24-byte overhead (IPv4+GRE)"
+  },
+  {
+   "id": "P212",
+   "pages": [
+    161,
+    162
+   ],
+   "terms": [
+    "id(packet) mod N",
+    "N-1",
+    "Almost every packet"
+   ],
+   "claim": "Frontend LB: id mod N remaps almost every packet"
+  },
+  {
+   "id": "P213",
+   "pages": [
+    162
+   ],
+   "terms": [
+    "consistent hashing",
+    "under pressure"
+   ],
+   "claim": "Frontend LB: consistent hashing under pressure"
+  },
+  {
+   "id": "P214",
+   "pages": [
+    162
+   ],
+   "terms": [
+    "Network Address Translation",
+    "Direct Server Response",
+    "broadcast domain"
+   ],
+   "claim": "Frontend LB: NAT, DSR and broadcast domain"
+  },
+  {
+   "id": "P215",
+   "pages": [
+    171
+   ],
+   "terms": [
+    "spread of up to 2x in CPU consumption"
+   ],
+   "claim": "Datacenter LB: Round Robin with up to 2x CPU spread"
+  },
+  {
+   "id": "P216",
+   "pages": [
+    173
+   ],
+   "terms": [
+    "twice as much CPU as the least loaded",
+    "performing about as poorly as Round Robin"
+   ],
+   "claim": "Datacenter LB: Least-Loaded uses twice the CPU and is as bad as Round Robin"
+  },
+  {
+   "id": "P217",
+   "pages": [
+    173
+   ],
+   "terms": [
+    "sinkholing",
+    "good proxy for the capability",
+    "limited view"
+   ],
+   "claim": "Datacenter LB: two limitations of Least-Loaded"
+  },
+  {
+   "id": "P218",
+   "pages": [
+    167,
+    168
+   ],
+   "terms": [
+    "63%",
+    "121%",
+    "50% of the average load",
+    "150%"
+   ],
+   "claim": "Datacenter LB: random subsetting 63%/121% and 50%/150%"
+  },
+  {
+   "id": "P219",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "99% uptime",
+    "less than 30 seconds",
+    "JDBC"
+   ],
+   "claim": "Decider: failover of 30-90 min, 99% uptime and 30 s target"
+  },
+  {
+   "id": "P220",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "Decider",
+    "95% of the time",
+    "dropped by 95%",
+    "60% of our hardware"
+   ],
+   "claim": "Decider: 95% in under 30 s, -95% toil and 60% of the hardware"
+  },
+  {
+   "id": "P221",
+   "pages": [
+    321
+   ],
+   "terms": [
+    "Knight Capital",
+    "$440M",
+    "just a few hours"
+   ],
+   "claim": "Knight Capital: US$ 440M in a few hours"
+  },
+  {
+   "id": "P222",
+   "pages": [
+    322
+   ],
+   "terms": [
+    "Power Peg"
+   ],
+   "claim": "Knight Capital: note 160 with Power Peg"
+  },
+  {
+   "id": "P223",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "Knight Capital",
+    "terrible suggestions",
+    "time bomb"
+   ],
+   "claim": "Knight Capital: code switched off by a flag is a time bomb (Ch. 9)"
+  },
+  {
+   "id": "P224",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "element of luck",
+    "real-time communication channels",
+    "almost immediately"
+   ],
+   "claim": "Config push: luck of the engineer who was following channels in real time"
+  },
+  {
+   "id": "P225",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "rate-limited how quickly",
+    "full updates to new clients"
+   ],
+   "claim": "Config push: rate limit on full updates to new clients"
+  },
+  {
+   "id": "P226",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "Within five minutes",
+    "Within 10 minutes",
+    "up to an hour"
+   ],
+   "claim": "Config push: rollback in 5 minutes, incident in 10, up to 1 hour"
+  },
+  {
+   "id": "P227",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "thorough canary",
+    "rare and specific configuration keyword",
+    "regardless of the perceived risk"
+   ],
+   "claim": "Config push: rigorous canary did not exercise a rare keyword; full canary"
+  },
+  {
+   "id": "P228",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "tested our rollback procedures",
+    "flawed"
+   ],
+   "claim": "Test-Induced: untested rollback prolonged the outage"
+  },
+  {
+   "id": "P229",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "one database out of a hundred"
+   ],
+   "claim": "Test-Induced: block 1 of 100 databases"
+  },
+  {
+   "id": "P230",
+   "pages": [
+    205
+   ],
+   "terms": [
+    "Zookeeper, Consul, and etcd",
+    "Chubby"
+   ],
+   "claim": "etcd is only named together with Zookeeper and Consul"
+  },
+  {
+   "id": "P231",
+   "pages": [
+    226
+   ],
+   "terms": [
+    "recovering from a skipped launch",
+    "fail closed"
+   ],
+   "claim": "Cron: skipping is preferable to duplicating; fail closed"
+  },
+  {
+   "id": "P232",
+   "pages": [
+    227
+   ],
+   "terms": [
+    "Small writes on a distributed filesystem are very expensive",
+    "very few dependencies"
+   ],
+   "claim": "Cron: small writes on a distributed FS are expensive; few dependencies"
+  },
+  {
+   "id": "P233",
+   "pages": [
+    218
+   ],
+   "terms": [
+    "40%",
+    "33%",
+    "six replicas"
+   ],
+   "claim": "Consensus: 5 replicas 40% and 6 replicas 33%"
+  },
+  {
+   "id": "P234",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "10 milliseconds",
+    "100 per second"
+   ],
+   "claim": "Consensus: 10 ms write limits to ~100 operations per second"
+  },
+  {
+   "id": "P235",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "17 tasks in the USA",
+    "16 in Europe",
+    "6 in Asia",
+    "4 tasks (instead of 5)",
+    "20%"
+   ],
+   "claim": "Ch. 2: regional distribution 17/16/6 tasks and 4 in South America"
+  },
+  {
+   "id": "P236",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "0.1% of user traffic",
+    "orders of magnitude every 24 hours"
+   ],
+   "claim": "Canary: 0.1% of traffic and orders of magnitude every 24 h"
+  },
+  {
+   "id": "P237",
+   "pages": [
+    142,
+    143
+   ],
+   "terms": [
+    "21,000",
+    "42,000th root",
+    "99.9999%"
+   ],
+   "claim": "Tests: 42,000th root and 99.9999%"
+  },
+  {
+   "id": "P238",
+   "pages": [
+    140
+   ],
+   "terms": [
+    "Bazel",
+    "dependency graphs"
+   ],
+   "claim": "Bazel: dependency graphs and tests only for the changed code"
+  },
+  {
+   "id": "P239",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "Blaze has been open sourced as Bazel"
+   ],
+   "claim": "Blaze was open-sourced as Bazel (note 37)"
+  },
+  {
+   "id": "P240",
+   "pages": [
+    261
+   ],
+   "terms": [
+    "25 times",
+    "Make-children-cry switches",
+    "70 launches per week"
+   ],
+   "claim": "Keyhole: 25 times the peak and make-children-cry switches"
+  },
+  {
+   "id": "P241",
+   "pages": [
+    269
+   ],
+   "terms": [
+    "60 seconds",
+    "600 seconds",
+    "10 times the load"
+   ],
+   "claim": "Launch: sync every 60 s instead of 600 s generates 10x load"
+  },
+  {
+   "id": "P242",
+   "pages": [
+    265
+   ],
+   "terms": [
+    "15 times higher",
+    "four or five deployments"
+   ],
+   "claim": "Launch: 15x spikes and keep 4 or 5 deployments"
+  },
+  {
+   "id": "P243",
+   "pages": [
+    321
+   ],
+   "terms": [
+    "30 minutes",
+    "must be automated"
+   ],
+   "claim": "Other industries: nuclear 30-minute rule requires automation"
+  },
+  {
+   "id": "P244",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "two years",
+    "many millions of dollars"
+   ],
+   "claim": "Auxon: two years and millions of dollars"
+  },
+  {
+   "id": "P245",
+   "pages": [
+    153
+   ],
+   "terms": [
+    "Stupid Solver"
+   ],
+   "claim": "Auxon: Stupid Solver"
+  },
+  {
+   "id": "P246",
+   "pages": [
+    257
+   ],
+   "terms": [
+    "5,475 restore jobs",
+    "1.5 petabytes"
+   ],
+   "claim": "Google Music: 5,475 restore jobs and 1.5 PB"
+  },
+  {
+   "id": "P247",
+   "pages": [
+    256
+   ],
+   "terms": [
+    "436,223",
+    "161,000"
+   ],
+   "claim": "Google Music: 436,223 on tape and 161,000 without backup"
+  },
+  {
+   "id": "P248",
+   "pages": [
+    251
+   ],
+   "terms": [
+    "700 petabytes",
+    "8 decades"
+   ],
+   "claim": "1T vs 1E: 700 PB and 8 decades"
+  },
+  {
+   "id": "P249",
+   "pages": [
+    242
+   ],
+   "terms": [
+    "four days",
+    "24 hours"
+   ],
+   "claim": "Gmail 2011: four days and 24 hours"
+  },
+  {
+   "id": "P250",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "20-minute interruption",
+    "two context switches"
+   ],
+   "claim": "Interrupts: 20 minutes = two context switches"
+  },
+  {
+   "id": "P251",
+   "pages": [
+    291
+   ],
+   "terms": [
+    "100 request/second service can turn into a 10k request/second"
+   ],
+   "claim": "Embedding: 100 req/s can become 10k in a year"
+  },
+  {
+   "id": "P252",
+   "pages": [
+    302
+   ],
+   "terms": [
+    "1,000 CPUs and 8 TB of RAM",
+    "100 TB of data every day"
+   ],
+   "claim": "DFP: 1,000 CPUs, 8 TB of RAM and 100 TB per day"
+  },
+  {
+   "id": "P253",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "Moir",
+    "1.2M"
+   ],
+   "claim": "Moire load pattern and 1.2 M peak"
+  },
+  {
+   "id": "P254",
+   "pages": [
+    234
+   ],
+   "terms": [
+    "40 minutes",
+    "20-minute job"
+   ],
+   "claim": "Periodic pipeline: ~20 minutes and 40-minute interval"
+  },
+  {
+   "id": "P255",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "12-disk systems",
+    "wipe the machine"
+   ],
+   "claim": "Bigtable: first log disk on 12-disk machines"
+  },
+  {
+   "id": "P256",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "empty set",
+    "rate limiting",
+    "idempotent"
+   ],
+   "claim": "Diskerase: empty set, sanity checks, rate limiting and idempotence"
+  },
+  {
+   "id": "P257",
+   "pages": [
+    119,
+    120
+   ],
+   "terms": [
+    "two consecutive turndown requests",
+    "zero does mean all"
+   ],
+   "claim": "Process-Induced: two turndown requests and zero means everything"
+  },
+  {
+   "id": "P258",
+   "pages": [
+    120
+   ],
+   "terms": [
+    "TFTP",
+    "two setup tasks per worker machine"
+   ],
+   "claim": "Process-Induced: TFTP and two setup tasks per worker"
+  },
+  {
+   "id": "P259",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "19,000 QPS",
+    "5,000 QPS",
+    "approximately six clusters"
+   ],
+   "claim": "Cascade: six clusters for 19,000 QPS with a 5,000 breaking point"
+  },
+  {
+   "id": "P260",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "three and a half nines",
+    "99.95%"
+   ],
+   "claim": "GCE: three and a half nines (99.95%)"
+  },
+  {
+   "id": "P261",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "external quarterly availability target of 99.9%",
+    "YouTube"
+   ],
+   "claim": "Apps for Work: external quarterly target of 99.9%"
+  },
+  {
+   "id": "P262",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "50 ms",
+    "5% of requests are 20 times slower"
+   ],
+   "claim": "SLO: typical 50 ms and 5% of requests 20 times slower"
+  },
+  {
+   "id": "P263",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "1:1 alert/incident ratio"
+   ],
+   "claim": "On-call: 1:1 ratio between alerts and incidents"
+  },
+  {
+   "id": "P264",
+   "pages": [
+    300
+   ],
+   "terms": [
+    "end of 2014",
+    "general monitoring solution for all of SRE"
+   ],
+   "claim": "Viceroy: declared SRE's general monitoring solution in late 2014"
+  },
+  {
+   "id": "P265",
+   "pages": [
+    311
+   ],
+   "terms": [
+    "two or three SREs",
+    "two or three quarters"
+   ],
+   "claim": "PRR: onboarding of 2-3 SREs for 2-3 quarters"
+  },
+  {
+   "id": "P266",
+   "pages": [
+    313
+   ],
+   "terms": [
+    "matter of days"
+   ],
+   "claim": "Frameworks: from idea to SRE production in days"
+  },
+  {
+   "id": "P267",
+   "pages": [
+    318
+   ],
+   "terms": [
+    "two to three days per week"
+   ],
+   "claim": "Nuclear navy: drills 2-3 days per week"
+  },
+  {
+   "id": "P268",
+   "pages": [
+    320
+   ],
+   "terms": [
+    "24 hours of any injury"
+   ],
+   "claim": "Alcoa: notify injuries within 24 hours"
+  },
+  {
+   "id": "P269",
+   "pages": [
+    336
+   ],
+   "terms": [
+    "Knee-jerk",
+    "over-optimizing"
+   ],
+   "claim": "Postmortem: reflex actions (note 165)"
+  },
+  {
+   "id": "P270",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "empty DNS entry file",
+    "NXDOMAIN for six minutes"
+   ],
+   "claim": "App. B: DNS 2005 received an empty file and served NXDOMAIN for six minutes"
+  },
+  {
+   "id": "P271",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "single forward slash character",
+    "matched all URLs"
+   ],
+   "claim": "App. B: 2009 a slash / matched all URLs (malware)"
+  },
+  {
+   "id": "P272",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "99.0% available to over 99.9% available"
+   ],
+   "claim": "App. B: Gmail from ~99.0% to over 99.9% measuring at the client"
+  },
+  {
+   "id": "P273",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "tarpitting",
+    "consistent subset of clients"
+   ],
+   "claim": "App. B: tarpitting and a consistent subset of clients with errors"
+  },
+  {
+   "id": "P274",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "Root cause",
+    "defect in a software or human system",
+    "happen again in the same way"
+   ],
+   "claim": "Ch. 6: definition of root cause (p.55)"
+  },
+  {
+   "id": "P275",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "multiple root causes",
+    "insufficient process automation",
+    "software that crashed on bogus input",
+    "insufficient testing of the script"
+   ],
+   "claim": "p.55: example of multiple root causes"
+  },
+  {
+   "id": "P276",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "Each of these factors might stand alone as a root cause",
+    "each should be repaired"
+   ],
+   "claim": "p.55: each factor can be a root cause and should be fixed"
+  },
+  {
+   "id": "P277",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "Push Any change to a service",
+    "running software or its configuration"
+   ],
+   "claim": "p.55: definition of push"
+  },
+  {
+   "id": "P278",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "classified as tickets, email alerts",
+    "pages"
+   ],
+   "claim": "p.55: alerts classified into tickets, email alerts and pages"
+  },
+  {
+   "id": "P279",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "Node and machine",
+    "single instance of a running kernel",
+    "physical server, virtual machine, or container"
+   ],
+   "claim": "p.55: node and machine"
+  },
+  {
+   "id": "P280",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "code repository",
+    "master for a configuration system like Puppet or Chef"
+   ],
+   "claim": "p.55: unrelated services on the same machine"
+  },
+  {
+   "id": "P281",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "production meeting",
+    "weekly",
+    "between 30 and 60 minutes"
+   ],
+   "claim": "Ch. 31: weekly production meeting, 30 to 60 min"
+  },
+  {
+   "id": "P282",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "chair",
+    "smaller side of the call"
+   ],
+   "claim": "p.296: the chair is on the smaller side of the videoconference"
+  },
+  {
+   "id": "P283",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "two implicit questions",
+    "should that alert have paged in the way it did",
+    "should it have paged at all"
+   ],
+   "claim": "p.296: the two questions for paging events"
+  },
+  {
+   "id": "P284",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "remove those unactionable pages"
+   ],
+   "claim": "p.296: remove non-actionable pages"
+  },
+  {
+   "id": "P285",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "Nonpaging events This bucket contains three items"
+   ],
+   "claim": "p.296: nonpaging events have three items"
+  },
+  {
+   "id": "P286",
+   "pages": [
+    297
+   ],
+   "terms": [
+    "probably should have paged",
+    "fix the monitoring so that such events do trigger a page"
+   ],
+   "claim": "p.297: item 1 of nonpaging events"
+  },
+  {
+   "id": "P287",
+   "pages": [
+    297
+   ],
+   "terms": [
+    "not pageable but requires attention",
+    "Tracking reactive operational work is also appropriate here"
+   ],
+   "claim": "p.297: item 2 of nonpaging events"
+  },
+  {
+   "id": "P288",
+   "pages": [
+    297
+   ],
+   "terms": [
+    "not pageable and does not require attention",
+    "These alerts should be removed",
+    "extra noise"
+   ],
+   "claim": "p.297: item 3 of nonpaging events"
+  },
+  {
+   "id": "P289",
+   "pages": [
+    297
+   ],
+   "terms": [
+    "Attendance is compulsory",
+    "prefilled agenda technique"
+   ],
+   "claim": "p.297: mandatory attendance and pre-filled agenda"
+  },
+  {
+   "id": "P290",
+   "pages": [
+    296,
+    297
+   ],
+   "terms": [
+    "Upcoming production changes",
+    "Metrics",
+    "Outages",
+    "Paging events",
+    "Nonpaging events",
+    "Prior action items"
+   ],
+   "claim": "p.296-297: standard meeting agenda"
+  },
+  {
+   "id": "P291",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "Date: 2015-10-23",
+    "AnnotationConsistencyTooEventual",
+    "paged 5 times this week"
+   ],
+   "claim": "App. F: sample minutes, paging event"
+  },
+  {
+   "id": "P292",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "Nonpaging Events",
+    "None"
+   ],
+   "claim": "App. F: Nonpaging Events: None"
+  },
+  {
+   "id": "P293",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "from 60s to 180s"
+   ],
+   "claim": "App. F: delay threshold from 60s to 180s"
+  },
+  {
+   "id": "P294",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "1.21B queries lost",
+    "pushes to prod frozen for 1 month"
+   ],
+   "claim": "App. F: 1.21 billion queries and 1-month freeze"
+  },
+  {
+   "id": "P295",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "USA-1 cluster going offline for maintenance between 2015-10-29 and 2015-11-02"
+   ],
+   "claim": "App. F: planned maintenance of USA-1"
+  },
+  {
+   "id": "P296",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "reduce the outgoing deadline a bit",
+    "few hundred milliseconds"
+   ],
+   "claim": "p.193: reduce the outgoing deadline by a few hundred ms"
+  },
+  {
+   "id": "P297",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "upper bound for outgoing deadlines",
+    "noncritical backends"
+   ],
+   "claim": "p.193: cap on outgoing deadlines to non-critical backends"
+  },
+  {
+   "id": "P298",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "make particular types of requests fail all the time",
+    "large payloads"
+   ],
+   "claim": "p.193: beware of traffic mix and large payload"
+  },
+  {
+   "id": "P299",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "check the deadline only after writing the checkpoint"
+   ],
+   "claim": "p.193: the checkpoint exception"
+  },
+  {
+   "id": "P300",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "hedged requests",
+    "cancel the now-superfluous requests"
+   ],
+   "claim": "p.193: hedged requests and cancellation"
+  },
+  {
+   "id": "P301",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "bursty",
+    "current number of threads in use",
+    "processing time for each request",
+    "size and frequency of bursts"
+   ],
+   "claim": "p.189: queue under bursty traffic"
+  },
+  {
+   "id": "P302",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "Gmail often uses queueless servers"
+   ],
+   "claim": "p.189: Gmail uses queueless servers"
+  },
+  {
+   "id": "P303",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "small queue lengths relative to the thread pool size",
+    "50% or less"
+   ],
+   "claim": "p.189: small queue (50% or less) under steady traffic"
+  },
+  {
+   "id": "P304",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "10x the number of threads",
+    "1.1 seconds"
+   ],
+   "claim": "p.189: 10x queue and 1.1 s"
+  },
+  {
+   "id": "P305",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "At the reverse proxies",
+    "At the load balancers",
+    "At individual tasks"
+   ],
+   "claim": "p.189: three places for rate limiting"
+  },
+  {
+   "id": "P306",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "Moiré load pattern",
+    "even in continuous pipelines",
+    "less common when load arrives more evenly"
+   ],
+   "claim": "p.236: Moire also in continuous pipelines"
+  },
+  {
+   "id": "P307",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "related problem",
+    "thundering herd",
+    "two or more pipelines run simultaneously"
+   ],
+   "claim": "p.236: Moire is a problem related to the thundering herd"
+  },
+  {
+   "id": "P308",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "1.2M"
+   ],
+   "claim": "p.236: peak near 1.2 M"
+  },
+  {
+   "id": "P309",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "A new server might be installed on a few machines in one datacenter"
+   ],
+   "claim": "p.268: canary on a few machines of one datacenter"
+  },
+  {
+   "id": "P310",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "first stages of a rollout are usually called",
+    "canaries"
+   ],
+   "claim": "p.268: the first stages are canaries"
+  },
+  {
+   "id": "P311",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "automatically rolled back"
+   ],
+   "claim": "p.268: automatic rollback"
+  },
+  {
+   "id": "P312",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "Roll out many changes in parallel",
+    "each to a few servers, users, entities, or datacenters"
+   ],
+   "claim": "p.268: feature flags, requirement 1"
+  },
+  {
+   "id": "P313",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "usually between 1 and 10 percent"
+   ],
+   "claim": "p.268: feature flags, requirement 2"
+  },
+  {
+   "id": "P314",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "Direct traffic through different servers depending on users, sessions, objects, and/or locations"
+   ],
+   "claim": "p.268: feature flags, requirement 3"
+  },
+  {
+   "id": "P315",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "Automatically handle failure of the new code paths by design, without affecting users"
+   ],
+   "claim": "p.268: feature flags, requirement 4"
+  },
+  {
+   "id": "P316",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "Independently revert each such change immediately"
+   ],
+   "claim": "p.268: feature flags, requirement 5"
+  },
+  {
+   "id": "P317",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "Measure the extent to which each change improves the user experience"
+   ],
+   "claim": "p.268: feature flags, requirement 6"
+  },
+  {
+   "id": "P318",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "HTTP payload rewriter",
+    "invite system"
+   ],
+   "claim": "p.268: HTTP payload rewriter and invitation system"
+  },
+  {
+   "id": "P319",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "never merge changes from the branch back into the mainline"
+   ],
+   "claim": "p.78: the branch is never merged back"
+  },
+  {
+   "id": "P320",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "inadvertently picking up unrelated changes submitted to the mainline since the original build occurred"
+   ],
+   "claim": "p.78: reason for cherry-picking"
+  },
+  {
+   "id": "P321",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "version of the code that",
+    "exist anywhere on the mainline"
+   ],
+   "claim": "p.78: a branch may have code that does not exist on the mainline"
+  },
+  {
+   "id": "P322",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "same test targets that gate the project release"
+   ],
+   "claim": "p.78: CI test targets = targets that block the release"
+  },
+  {
+   "id": "P323",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "versioned with a unique hash, and signed"
+   ],
+   "claim": "p.78: MPM versions with a unique hash and signs"
+  },
+  {
+   "id": "P324",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "Be on interrupts, or",
+    "skew the numbers in terms of how manageable the ticket load is"
+   ],
+   "claim": "p.288: reason against touching tickets outside the shift"
+  },
+  {
+   "id": "P325",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "regular scrub for tickets and pages",
+    "silence the interrupts until the root cause is expected to be fixed"
+   ],
+   "claim": "p.288: scrub and silence until the fix date"
+  },
+  {
+   "id": "P326",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "deadline enforcement for the person fixing the root cause"
+   ],
+   "claim": "p.288: chasing the deadline with whoever is fixing it"
+  },
+  {
+   "id": "P327",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "Policy can be as powerful",
+    "giving the pager back"
+   ],
+   "claim": "p.288: policy and give the pager back"
+  },
+  {
+   "id": "P328",
+   "pages": [
+    289
+   ],
+   "terms": [
+    "meaningful",
+    "rational",
+    "legwork"
+   ],
+   "claim": "p.289: meaningful, reasoned request with prior information"
+  },
+  {
+   "id": "P329",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "an entire year of design",
+    "three weeks of writing the code"
+   ],
+   "claim": "p.319: one year of design and three weeks of code"
+  },
+  {
+   "id": "P330",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "launch and iterate culture",
+    "very different pressures, risk appetites, and requirements"
+   ],
+   "claim": "p.319: contrast with launch and iterate"
+  },
+  {
+   "id": "P331",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "Corrective and preventative action (CAPA)",
+    "published across SRE teams"
+   ],
+   "claim": "p.319: CAPA and postmortems published among teams"
+  },
+  {
+   "id": "P332",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "What happened",
+    "The effectiveness of the response",
+    "What we would do differently next time"
+   ],
+   "claim": "p.319: what is evaluated in a postmortem"
+  },
+  {
+   "id": "P333",
+   "pages": [
+    320
+   ],
+   "terms": [
+    "within 24 hours of any injury",
+    "CHIRP",
+    "near misses"
+   ],
+   "claim": "p.320: Alcoa, CHIRP and near misses"
+  },
+  {
+   "id": "P334",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "The operations team should be the only group modifying the system"
+   ],
+   "claim": "p.123: only Ops modifies the system"
+  },
+  {
+   "id": "P335",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "ordering dinner",
+    "arranging handoffs"
+   ],
+   "claim": "p.123: role of Planning"
+  },
+  {
+   "id": "P336",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "Google has found IRC to be a huge boon"
+   ],
+   "claim": "p.123: IRC"
+  },
+  {
+   "id": "P337",
+   "pages": [
+    124
+   ],
+   "terms": [
+    "Google Docs SRE use Google Sites"
+   ],
+   "claim": "p.124: Google Docs SRE uses Google Sites"
+  },
+  {
+   "id": "P338",
+   "pages": [
+    124
+   ],
+   "terms": [
+    "incident commander, okay?"
+   ],
+   "claim": "p.124: explicit IC handoff"
+  },
+  {
+   "id": "P339",
+   "pages": [
+    124
+   ],
+   "terms": [
+    "At 5 p.m.",
+    "5:45",
+    "At 6 p.m."
+   ],
+   "claim": "p.124: handoff of the managed incident"
+  },
+  {
+   "id": "P340",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Blameless culture originated in the healthcare and avionics industries"
+   ],
+   "claim": "p.127: origin of the blameless culture"
+  },
+  {
+   "id": "P341",
+   "pages": [
+    128
+   ],
+   "terms": [
+    "TGIF",
+    "four minutes",
+    "two peer bonuses"
+   ],
+   "claim": "p.128: TGIF, 4 minutes and two peer bonuses"
+  },
+  {
+   "id": "P342",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "Etsy has released Morgue"
+   ],
+   "claim": "p.129 (note 81): Etsy's Morgue"
+  },
+  {
+   "id": "P343",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "Postmortems at Google",
+    "working group"
+   ],
+   "claim": "p.129: Postmortems at Google working group"
+  },
+  {
+   "id": "P344",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "fall-through",
+    "serve as secondary on-call for each other"
+   ],
+   "claim": "p.100: secondary and teams that cover for each other"
+  },
+  {
+   "id": "P345",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "median value of 0"
+   ],
+   "claim": "p.101: likely median 0 incidents"
+  },
+  {
+   "id": "P346",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "confirmation bias",
+    "cortisol"
+   ],
+   "claim": "p.101: stress and confirmation bias"
+  },
+  {
+   "id": "P347",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "1:1 alert/incident ratio"
+   ],
+   "claim": "p.102: 1:1 alert/incident ratio"
+  },
+  {
+   "id": "P348",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "expected behavior, the actual behavior",
+    "open a bug for every issue"
+   ],
+   "claim": "p.106: problem report and one bug per problem"
+  },
+  {
+   "id": "P349",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "mutually exclusive alternatives",
+    "confounding factors"
+   ],
+   "claim": "p.110: care when designing tests"
+  },
+  {
+   "id": "P350",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "~800 connections out of the needed 8,000"
+   ],
+   "claim": "p.111: negative result of 800 out of 8,000 connections"
+  },
+  {
+   "id": "P351",
+   "pages": [
+    113,
+    114
+   ],
+   "terms": [
+    "merge_join",
+    "thousands of whitelist objects"
+   ],
+   "claim": "p.113-114: App Engine case"
+  },
+  {
+   "id": "P352",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "RE2",
+    "PCRE can require exponential time"
+   ],
+   "claim": "p.115: RE2 versus PCRE"
+  },
+  {
+   "id": "P353",
+   "pages": [
+    206,
+    208
+   ],
+   "terms": [
+    "renewable leases with timeouts",
+    "Atomic broadcast"
+   ],
+   "claim": "p.206-208: renewable leases and atomic broadcast"
+  },
+  {
+   "id": "P354",
+   "pages": [
+    211
+   ],
+   "terms": [
+    "dueling proposers"
+   ],
+   "claim": "p.211: dueling proposers"
+  },
+  {
+   "id": "P355",
+   "pages": [
+    212
+   ],
+   "terms": [
+    "Quorum leases"
+   ],
+   "claim": "p.212: quorum leases"
+  },
+  {
+   "id": "P356",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "Fast Paxos is slower than Classic Paxos"
+   ],
+   "claim": "p.213: Fast Paxos is not always faster"
+  },
+  {
+   "id": "P357",
+   "pages": [
+    222
+   ],
+   "terms": [
+    "around 50% higher than EU to east coast RTT"
+   ],
+   "claim": "p.222: loss of the link makes the RTT 50% higher"
+  },
+  {
+   "id": "P358",
+   "pages": [
+    223
+   ],
+   "terms": [
+    "Number of leader changes",
+    "Consensus transaction number"
+   ],
+   "claim": "p.223: consensus monitoring"
+  },
+  {
+   "id": "P359",
+   "pages": [
+    260
+   ],
+   "terms": [
+    "10x the observed 95th percentile"
+   ],
+   "claim": "p.260 (note 133): global deletion rate alert"
+  },
+  {
+   "id": "P360",
+   "pages": [
+    259,
+    260
+   ],
+   "terms": [
+    "Blobstore",
+    "tombstone"
+   ],
+   "claim": "p.259-260 (note 128): Blobstore and soft deletion"
+  },
+  {
+   "id": "P361",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "not toil because it needs human judgment"
+   ],
+   "claim": "p.53 (note 21): human judgment does not exclude toil"
+  },
+  {
+   "id": "P362",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Zero-redundancy (N + 0)"
+   ],
+   "claim": "p.62 (note 25): zero redundancy is imminent"
+  },
+  {
+   "id": "P363",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "cn=Monitor",
+    "mod_status"
+   ],
+   "claim": "p.98 (note 46): other applications export state"
+  },
+  {
+   "id": "P364",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "place a barrier in the replication configuration"
+   ],
+   "claim": "p.141: barrier against risky software"
+  },
+  {
+   "id": "P365",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "scheduler",
+    "executors"
+   ],
+   "claim": "p.147 (note 86): scheduler and test executors"
+  },
+  {
+   "id": "P366",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "meta-software",
+    "leaky abstraction"
+   ],
+   "claim": "p.65: automation as meta-software and leaky abstraction"
+  },
+  {
+   "id": "P367",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "rite of passage",
+    "follow the RPC"
+   ],
+   "claim": "p.283: rite of passage and follow the RPC"
+  },
+  {
+   "id": "P368",
+   "pages": [
+    304
+   ],
+   "terms": [
+    "Conway"
+   ],
+   "claim": "p.304 (note 149): Conway's law"
+  },
+  {
+   "id": "P369",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "distinct from the industry term DevOps",
+    "reliability as our main focus"
+   ],
+   "claim": "p.20 (note 4): DevOps focus distinction"
+  },
+  {
+   "id": "P370",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "generalization of several core SRE principles"
+   ],
+   "claim": "p.24: DevOps as a generalization of SRE principles"
+  },
+  {
+   "id": "P371",
+   "pages": [
+    303
+   ],
+   "terms": [
+    "weekly meetings",
+    "had to match perfectly"
+   ],
+   "claim": "p.303: DFP migration, weekly meetings and identical index"
+  },
+  {
+   "id": "P372",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "specialization",
+    "siloization",
+    "crisp team charter"
+   ],
+   "claim": "Specialization: mastery vs silos; clear charter of what the team supports and does not support (p.298)"
+  },
+  {
+   "id": "P373",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "well-defined responsibilities",
+    "in-scope decisions quickly and safely",
+    "more fluid",
+    "communicate more and more often"
+   ],
+   "claim": "Defined roles vs fluid team and the communication cost (p.298)"
+  },
+  {
+   "id": "P374",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "performance management function",
+    "general catchall",
+    "technical direction"
+   ],
+   "claim": "TL answers for technical direction; manager: performance and catchall (p.298)"
+  },
+  {
+   "id": "P375",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "diverse teams are simply better teams",
+    "cognitive biases"
+   ],
+   "claim": "Diversity improves teams and requires attention to communication and biases (p.298)"
+  },
+  {
+   "id": "P376",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "objectives of the Production Readiness Review",
+    "accepted standards of production setup",
+    "minimize the number and severity of incidents"
+   ],
+   "claim": "PRR goals (p.308)"
+  },
+  {
+   "id": "P377",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Simple PRR Model, Early Engagement Model, and Frameworks and SRE Platform",
+    "already launched"
+   ],
+   "claim": "Three engagement models; Simple PRR targets an already launched service (p.308)"
+  },
+  {
+   "id": "P378",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "batch-processing use case",
+    "network quality-of-service",
+    "central logging systems"
+   ],
+   "claim": "Examples of Analysis phase checklist items (p.308)"
+  },
+  {
+   "id": "P379",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "Additional communication between teams",
+    "launched and serving at scale",
+    "starts very late"
+   ],
+   "claim": "Limitations of Simple PRR; the main one: it comes in late (p.310)"
+  },
+  {
+   "id": "P380",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "Candidates for Early Engagement",
+    "significant rewrite",
+    "sought SRE advice"
+   ],
+   "claim": "Early Engagement candidates (p.310)"
+  },
+  {
+   "id": "P381",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "participates in Design and later phases",
+    "during or after the Build phase"
+   ],
+   "claim": "SRE joins at Design and takes over during or after Build (p.310)"
+  },
+  {
+   "id": "P382",
+   "pages": [
+    176
+   ],
+   "terms": [
+    "misbehaving customers",
+    "only delivers error responses"
+   ],
+   "claim": "Global overload: errors only for clients that misbehave (p.176)"
+  },
+  {
+   "id": "P383",
+   "pages": [
+    340
+   ],
+   "terms": [
+    "OK 99ile latency: 88 ms < 100 ms",
+    "BAD availability: 86.95% < 99.99%",
+    "trailing 30 days"
+   ],
+   "claim": "Minutes: Key Service Metrics with OK/BAD (p.340)"
+  },
+  {
+   "id": "P384",
+   "pages": [
+    340
+   ],
+   "terms": [
+    "Borrowed resources to respond to sonnet++ incident",
+    "60% of CPU, 75% RAM, 44% disk",
+    "40%, 70%, 40%"
+   ],
+   "claim": "Minutes: Resources (p.340)"
+  },
+  {
+   "id": "P385",
+   "pages": [
+    340
+   ],
+   "terms": [
+    "TODO(martym): Raise AnnotationConsistencyTooEventual threshold",
+    "Return instance count to normal"
+   ],
+   "claim": "Minutes: action items under New Action Items (p.340)"
+  },
+  {
+   "id": "P386",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "known as the Alertmanager",
+    "Inhibit certain alerts",
+    "Deduplicate alerts",
+    "Fan-in or fan-out",
+    "page-worthy alerts",
+    "ticket queues"
+   ],
+   "claim": "Alertmanager described on p.95: inhibits, deduplicates, fan-in/out; page, ticket, dashboards"
+  },
+  {
+   "id": "P387",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "may not be obvious that an outage is due to bad retry behavior",
+    "compounding cause",
+    "usually requiring a code push"
+   ],
+   "claim": "Bad retry in an emergency: may not be obvious; mitigation (p.192)"
+  },
+  {
+   "id": "P388",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "Java servers are in a GC death spiral",
+    "identify the source of the cascading failure before you restart"
+   ],
+   "claim": "Restarting servers (GC death spiral) only after finding the source (p.198)"
+  },
+  {
+   "id": "P389",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "Doorman",
+    "cooperative distributed client-side throttling"
+   ],
+   "claim": "Doorman only in note 106 (p.183)"
+  },
+  {
+   "id": "P390",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "Peer Bonus program",
+    "token cash reward"
+   ],
+   "claim": "Peer Bonus program, note 82 (p.129)"
+  },
+  {
+   "id": "P391",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "incentivized to prioritize reliability",
+    "different incentive structure"
+   ],
+   "claim": "LCE: incentive for reliability; another structure (p.262)"
+  },
+  {
+   "id": "P392",
+   "pages": [
+    272
+   ],
+   "terms": [
+    "double its product developers every one or two years",
+    "hundreds of millions of users",
+    "10-year period"
+   ],
+   "claim": "When an LCE pays off (p.272)"
+  },
+  {
+   "id": "P393",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Zero-redundancy (N + 0) situations count as imminent",
+    "nearly full"
+   ],
+   "claim": "Note 25: N + 0 and almost full count as imminent (p.62)"
+  },
+  {
+   "id": "P394",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "impending saturation",
+    "fill its hard drive in 4 hours"
+   ],
+   "claim": "Saturation includes forecasting imminent saturation (p.58)"
+  },
+  {
+   "id": "P395",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "Quorum leases are particularly useful for read-heavy workloads",
+    "concentrated in a single geographic region"
+   ],
+   "claim": "Quorum leases: reads concentrated in one region (p.213)"
+  },
+  {
+   "id": "P396",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "fundamentally flawed",
+    "most relevant metric",
+    "MTTR"
+   ],
+   "claim": "email interpreted by a human is 'fundamentally flawed' and MTTR is the most relevant metric (p.26)"
+  },
+  {
+   "id": "P397",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "/dev/null",
+    "attractive nuisance",
+    "email"
+   ],
+   "claim": "ignored email alerts: 'attractive nuisance' (p.330)"
+  },
+  {
+   "id": "P398",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "cause:netwrok",
+    "problem-went-away",
+    "predetermined list"
+   ],
+   "claim": "tags with typos and little use exist; a predetermined list is avoided (p.131)"
+  },
+  {
+   "id": "P399",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "technical, rather than legal",
+    "dummy escalator"
+   ],
+   "claim": "dummy escalator: technical audit, not legal (p.133)"
+  },
+  {
+   "id": "P400",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "Slack",
+    "Hipchat",
+    "Outalator"
+   ],
+   "claim": "Slack as an Outalator integration point (p.131)"
+  },
+  {
+   "id": "P401",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "latency cache",
+    "capacity cache",
+    "memcache",
+    "Overprovision",
+    "cache is completely empty"
+   ],
+   "claim": "cold cache: latency vs capacity cache, memcache, overprovisioning (p.194)"
+  },
+  {
+   "id": "P402",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "slowly increase the load",
+    "caches are kept warm"
+   ],
+   "claim": "increase load slowly and keep caches warm (p.195)"
+  },
+  {
+   "id": "P403",
+   "pages": [
+    200
+   ],
+   "terms": [
+    "meaningful proportion of your actual serving capacity"
+   ],
+   "claim": "note 111: capacity that depends on the cache (p.200)"
+  },
+  {
+   "id": "P404",
+   "pages": [
+    337
+   ],
+   "terms": [
+    "Monitoring the monitoring",
+    "N+2 redundancy",
+    "crash mail servers"
+   ],
+   "claim": "App. E: monitoring items and N+2 (p.337)"
+  },
+  {
+   "id": "P405",
+   "pages": [
+    338
+   ],
+   "terms": [
+    "10x growth",
+    "Standard operating procedures",
+    "Mondays or Fridays",
+    "canaries under live traffic"
+   ],
+   "claim": "App. E: growth, SOP, Mondays or Fridays (p.338)"
+  },
+  {
+   "id": "P406",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "Wheel of Misfortune",
+    "DiRT"
+   ],
+   "claim": "Wheel of Misfortune and DiRT on p.103"
+  },
+  {
+   "id": "P407",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "launching with an unidentified bug"
+   ],
+   "claim": "note 75 on p.115"
+  },
+  {
+   "id": "P408",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "confirmation bias",
+    "fourth time in the week"
+   ],
+   "claim": "confirmation bias: example of the fourth occurrence of the alert (p.101)"
+  },
+  {
+   "id": "P409",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "66 minutes",
+    "1.21B queries lost"
+   ],
+   "claim": "App. D: 66 minutes and 1.21 bn queries (p.334)"
+  },
+  {
+   "id": "P410",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "out of practice"
+   ],
+   "claim": "p.331 only carries the irony of the lack of practice"
+  },
+  {
+   "id": "P411",
+   "pages": [
+    128
+   ],
+   "terms": [
+    "Wheel of Misfortune",
+    "reenacted"
+   ],
+   "claim": "Wheel of Misfortune reenacts a postmortem (p.128)"
+  },
+  {
+   "id": "P412",
+   "pages": [
+    144
+   ],
+   "terms": [
+    "MTBF suffers",
+    "more opportunities for user-visible breakage",
+    "additional test coverage"
+   ],
+   "claim": "more releases: MTBF suffers, but it reveals where testing is lacking (p.144)"
+  },
+  {
+   "id": "P413",
+   "pages": [
+    144
+   ],
+   "terms": [
+    "mostly unattended",
+    "decreases confidence that historical data",
+    "waiting for an analysis of monitoring data"
+   ],
+   "claim": "production mostly unattended; a poorly tested tool reduces confidence (p.144)"
+  },
+  {
+   "id": "P414",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "no matter how much testing took place",
+    "MTBF"
+   ],
+   "claim": "annual release: MTBF of one year, no matter how much testing (p.143)"
+  },
+  {
+   "id": "P415",
+   "pages": [
+    144
+   ],
+   "terms": [
+    "segment the reliability budget",
+    "separate budget",
+    "make the break noisy"
+   ],
+   "claim": "reliability budget per team; noisy break-glass (p.144)"
+  },
+  {
+   "id": "P416",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "Rollouts should be supervised",
+    "roll back first and diagnose afterward"
+   ],
+   "claim": "supervised rollouts and rollback first (p.329)"
+  },
+  {
+   "id": "P417",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "primary source code repository",
+    "strict code review requirement",
+    "skew between the checked-in version"
+   ],
+   "claim": "all config models: main repository and strict code review; mainline skew (p.80)"
+  },
+  {
+   "id": "P418",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "limits flexibility",
+    "only requires installing one package",
+    "not requiring a new binary build",
+    "first_folio",
+    "bad_quarto",
+    "much_ado",
+    "Chubby, Bigtable"
+   ],
+   "claim": "pros and cons of configuration models 2, 3 and 4 (p.80)"
+  },
+  {
+   "id": "P419",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "monolithic unified source code repository",
+    "Pot16"
+   ],
+   "claim": "note 36: unified monolithic repository (text on p.81)"
+  },
+  {
+   "id": "P420",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "same revision number",
+    "identical results",
+    "fewer changes between versions"
+   ],
+   "claim": "hermetic/identical build at the same revision and frequent releases = fewer changes (p.77; note 36 linked here)"
+  },
+  {
+   "id": "P421",
+   "pages": [
+    79
+   ],
+   "terms": [
+    "integration revision number",
+    "a few jobs in our production environment",
+    "cherry pick requests can be approved or rejected"
+   ],
+   "claim": "Rapid steps (p.79)"
+  },
+  {
+   "id": "P422",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "risk profile of a given service",
+    "hourly and push releases automatically",
+    "several days"
+   ],
+   "claim": "deploy adjusted to the risk profile (p.80)"
+  },
+  {
+   "id": "P423",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "DNS cache holding until the TTL",
+    "caching proxy",
+    "production-sized model",
+    "intercontinental bandwidth",
+    "restart semantics"
+   ],
+   "claim": "automation invariants, rebalancer test and circular dependency (p.141)"
+  },
+  {
+   "id": "P424",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "offline, checkpoint, loadable, barrier, or clean start",
+    "unified instrumented binary"
+   ],
+   "claim": "constraints of offline DR tools (p.142)"
+  },
+  {
+   "id": "P425",
+   "pages": [
+    281,
+    282
+   ],
+   "terms": [
+    "eligible to serve as a shadow on-caller",
+    "only during business hours",
+    "not the appointed on-caller"
+   ],
+   "claim": "checklist before shadowing; pages copied during business hours; the newcomer is not the on-caller (p.281-282)"
+  },
+  {
+   "id": "P426",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "coauthor",
+    "reverse shadow",
+    "without modifying any state",
+    "social contract"
+   ],
+   "claim": "postmortem co-authorship, reverse shadow and social contract (p.282)"
+  },
+  {
+   "id": "P427",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "rite of passage",
+    "final exam",
+    "follow the RPC",
+    "Examples of proactive SRE work",
+    "Examples of reactive SRE work"
+   ],
+   "claim": "rite of passage and notes 136-139 (p.283)"
+  },
+  {
+   "id": "P428",
+   "pages": [
+    285
+   ],
+   "terms": [
+    "Interrupt SLO or expected response time",
+    "severity of the interrupts",
+    "human costs",
+    "low-skill",
+    "high-skill",
+    "clear goals"
+   ],
+   "claim": "five factors, human cost and low/high-skill flow (p.285)"
+  },
+  {
+   "id": "P429",
+   "pages": [
+    286
+   ],
+   "terms": [
+    "Angry Birds",
+    "interruptability",
+    "balance varies from engineer to engineer",
+    "may not actually know what balance best motivates them"
+   ],
+   "claim": "on-call stress and variable balance (p.286)"
+  },
+  {
+   "id": "P430",
+   "pages": [
+    286
+   ],
+   "terms": [
+    "Fred",
+    "undistractible",
+    "random"
+   ],
+   "claim": "distractibility: Fred's example (p.286)"
+  },
+  {
+   "id": "P431",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "Machine Database",
+    "TestDnsMonitoringConfigExists",
+    "FixDnsMonitoringCreateConfig",
+    "FixDnsMonitoringPushConfig",
+    "every 15 minutes",
+    "stops, notifying the user"
+   ],
+   "claim": "DNS example with the Machine Database and fixes (p.70)"
+  },
+  {
+   "id": "P432",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "ProdTest for DNS Service",
+    "one failed test aborts the subsequent chain"
+   ],
+   "claim": "Figure 7-1: a failure aborts the chain (p.69)"
+  },
+  {
+   "id": "P433",
+   "pages": [
+    71
+   ],
+   "terms": [
+    "ProdTest for DNS Service",
+    "only running one fix"
+   ],
+   "claim": "Figure 7-2: one failure, one fix (p.71)"
+  },
+  {
+   "id": "P434",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "a bug could be filed to extend their Prodtest",
+    "chain of tests"
+   ],
+   "claim": "another team's delay becomes a bug to extend Prodtest (p.68)"
+  },
+  {
+   "id": "P435",
+   "pages": [
+    328
+   ],
+   "terms": [
+    "aggregate unavailability metric",
+    "partially available",
+    "load varies"
+   ],
+   "claim": "aggregate metric vs duration (p.328)"
+  },
+  {
+   "id": "P436",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "time-off-in-lieu",
+    "capped at some proportion of overall salary",
+    "limit on the amount of on-call work",
+    "burnout"
+   ],
+   "claim": "on-call compensation and the cap's role (p.101)"
+  },
+  {
+   "id": "P437",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "at least 50% of SRE time",
+    "no more than 25% can be spent on-call"
+   ],
+   "claim": "50% engineering and 25% on-call (p.100)"
+  },
+  {
+   "id": "P438",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "Thrift",
+    "3 to 10 times smaller",
+    "single shared repository",
+    "Android and Chrome",
+    "All software is reviewed before being submitted",
+    "send the proposed changes"
+   ],
+   "claim": "protobufs vs Thrift/XML; single repository; all software reviewed (p.33)"
+  },
+  {
+   "id": "P439",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "Kubernetes",
+    "open source Container Cluster",
+    "started by Google in 2014",
+    "top-of-rack switches or power distribution"
+   ],
+   "claim": "notes 10 and 13 (p.35)"
+  },
+  {
+   "id": "P440",
+   "pages": [
+    32,
+    33
+   ],
+   "terms": [
+    "Stubby",
+    "gRPC"
+   ],
+   "claim": "Google's RPC is Stubby; gRPC is the open source version (p.32-33)"
+  },
+  {
+   "id": "P441",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "0.1% of user",
+    "day 2: 1%",
+    "day 3: 10%",
+    "day 4: 100%",
+    "every 24 hours"
+   ],
+   "claim": "note 89: 0.1% -> 1% -> 10% -> 100% rule (p.147)"
+  },
+  {
+   "id": "P442",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "cost savings to the organization",
+    "NP-hard"
+   ],
+   "claim": "cost savings without a percentage (p.150)"
+  },
+  {
+   "id": "P443",
+   "pages": [
+    151
+   ],
+   "terms": [
+    "N + 2 redundancy",
+    "best wins as they cross to step 3",
+    "5 nines"
+   ],
+   "claim": "level 3 of the chain of intent (p.151)"
+  },
+  {
+   "id": "P444",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "time savings and reduction of human toil",
+    "case study"
+   ],
+   "claim": "Auxon's gains in time and toil (p.155)"
+  },
+  {
+   "id": "P445",
+   "pages": [
+    293
+   ],
+   "terms": [
+    "Leading questions are not loaded questions",
+    "TaskFailures",
+    "Frobnitzer",
+    "stalled releases",
+    "error budget we set for releases is exhausted"
+   ],
+   "claim": "guiding questions and examples (p.293)"
+  },
+  {
+   "id": "P446",
+   "pages": [
+    292
+   ],
+   "terms": [
+    "Bad Apple Theory",
+    "Sort Fires According to Type",
+    "single most important lever",
+    "Get Help Clearing Kindling"
+   ],
+   "claim": "team postmortem, fires and SLO as leverage (p.292)"
+  },
+  {
+   "id": "P447",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Pointing fingers",
+    "Blameless",
+    "Avoid Blame and Keep It Constructive"
+   ],
+   "claim": "finger-pointing vs blameless example (p.127)"
+  },
+  {
+   "id": "P448",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "Mikey Dickerson",
+    "healthcare.gov",
+    "late 2013 and early 2014"
+   ],
+   "claim": "origin of the hierarchy: Dickerson and healthcare.gov, late 2013/early 2014"
+  },
+  {
+   "id": "P449",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "wasn’t explicitly developed",
+    "how to increase systems’ reliability"
+   ],
+   "claim": "hierarchy not explicitly developed before healthcare.gov"
+  },
+  {
+   "id": "P450",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "flying blind",
+    "before your users notice"
+   ],
+   "claim": "monitoring: without it you fly blind"
+  },
+  {
+   "id": "P451",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "necessarily mean fixing it once and for all",
+    "reducing the system’s precision",
+    "direct traﬃc to another instance"
+   ],
+   "claim": "resolving is not fixing for good; degrade, shut down, divert"
+  },
+  {
+   "id": "P452",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "adrenalin",
+    "start responding ad hoc",
+    "on-call support is a tool"
+   ],
+   "claim": "on-call as a tool; adrenaline and ad hoc response"
+  },
+  {
+   "id": "P453",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "new and exciting problems",
+    "key differentiators"
+   ],
+   "claim": "postmortem: only new problems; SRE differentiator"
+  },
+  {
+   "id": "P454",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "Auxon",
+    "Paxos",
+    "Day Zero"
+   ],
+   "claim": "Capacity Planning/Auxon, Development/Paxos, Product/Day Zero"
+  },
+  {
+   "id": "P455",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "If you can’t ever win a conversation about SLOs",
+    "not worth having an SRE team"
+   ],
+   "claim": "note 17 on p.50"
+  },
+  {
+   "id": "P456",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "Failure injection",
+    "can also help set expectations"
+   ],
+   "claim": "note 18 on p.50"
+  },
+  {
+   "id": "P457",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "Chubby",
+    "planned outages",
+    "Don’t overachieve"
+   ],
+   "claim": "call-out of note 18 on p.49"
+  },
+  {
+   "id": "P458",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "no inherent upper limit",
+    "executing a program",
+    "deadline checking on all integration test methods"
+   ],
+   "claim": "interpreted config: no upper bound; deadline in integration test"
+  },
+  {
+   "id": "P459",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "safe_load",
+    "hard upper limit",
+    "schema is defined in advance",
+    "defense in depth"
+   ],
+   "claim": "YAML safe_load, protobuf with schema, defense in depth"
+  },
+  {
+   "id": "P460",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "almost always",
+    "never be empty",
+    "identical hardware and software",
+    "externalize"
+   ],
+   "claim": "Bigtable: empty queue vs never-empty; identical hardware; externalize cost"
+  },
+  {
+   "id": "P461",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "10–50% of the cost of a low-latency cluster"
+   ],
+   "claim": "cost of the throughput cluster 10-50% of the low-latency one"
+  },
+  {
+   "id": "P462",
+   "pages": [
+    324
+   ],
+   "terms": [
+    "two equally important types of work",
+    "pilot and the engineer/designer",
+    "build a dashboard for 20 machines"
+   ],
+   "claim": "Ch. 34: time division, pilot and engineer, dashboard for 20 machines"
+  },
+  {
+   "id": "P463",
+   "pages": [
+    325
+   ],
+   "terms": [
+    "747",
+    "Just two pilots again"
+   ],
+   "claim": "Ch. 34: 747 with two pilots (p.325)"
+  },
+  {
+   "id": "P464",
+   "pages": [
+    269
+   ],
+   "terms": [
+    "every client should choose the time for this type of request randomly"
+   ],
+   "claim": "each client picks the time randomly"
+  },
+  {
+   "id": "P465",
+   "pages": [
+    332
+   ],
+   "terms": [
+    "Communications lead to keep summary updated"
+   ],
+   "claim": "App. C header: Communications lead maintains the Summary"
+  },
+  {
+   "id": "P466",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "File descriptors",
+    "Running out of file descriptors"
+   ],
+   "claim": "file descriptors on p.187"
+  },
+  {
+   "id": "P467",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "var-zee",
+    "pronounce"
+   ],
+   "claim": "note 43: varz is pronounced var-zee (p.98)"
+  },
+  {
+   "id": "P468",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "plural of Borgmon is Borgmon",
+    "like sheep"
+   ],
+   "claim": "note 44: plural of Borgmon = Borgmon, like sheep (p.98)"
+  },
+  {
+   "id": "P469",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Zero-redundancy (N + 0)",
+    "count as imminent"
+   ],
+   "claim": "note 25: zero redundancy (N + 0) counts as imminent (p.62)"
+  },
+  {
+   "id": "P470",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "Instead of executing custom scripts",
+    "subprocess execution",
+    "network connection setup"
+   ],
+   "claim": "p.89: Borgmon avoids custom scripts and subprocess/connection cost"
+  },
+  {
+   "id": "P471",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "last-in, first-out (LIFO)",
+    "controlled delay (CoDel)",
+    "queued for 10 seconds"
+   ],
+   "claim": "p.190: LIFO/CoDel and the RPC that has been queued for 10 s"
+  },
+  {
+   "id": "P472",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "Graceful degradation takes the concept of load shedding one step further",
+    "less-accurate (but faster) ranking"
+   ],
+   "claim": "p.190: graceful degradation"
+  },
+  {
+   "id": "P473",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "code path you never use",
+    "near overload",
+    "such as Chubby",
+    "synchronized failure"
+   ],
+   "claim": "p.190: never-used path, subset close to overload, config in Chubby and synchronized failure"
+  },
+  {
+   "id": "P474",
+   "pages": [
+    312
+   ],
+   "terms": [
+    "one for each environment we support",
+    "Java, C++, Go"
+   ],
+   "claim": "p.312: one framework per environment (Java, C++, Go)"
+  },
+  {
+   "id": "P475",
+   "pages": [
+    313
+   ],
+   "terms": [
+    "prescriptive implementation",
+    "standard configuration format for managing load shedding",
+    "share code, the goal is to expose the same API"
+   ],
+   "claim": "p.313: definition of framework, examples and they do not share code"
+  },
+  {
+   "id": "P476",
+   "pages": [
+    314
+   ],
+   "terms": [
+    "only two options: either full SRE support",
+    "load shedding, overload, automation"
+   ],
+   "claim": "p.314: two original options and responsibilities that SRE takes on"
+  },
+  {
+   "id": "P477",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "maximalist view",
+    "appropriate to automate every component"
+   ],
+   "claim": "p.65: maximalist view and limits of automation"
+  },
+  {
+   "id": "P478",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "Cluster failover is one classic example of infrequently executed automation",
+    "bit rot"
+   ],
+   "claim": "p.66: cluster failover as rare automation; bit rot"
+  },
+  {
+   "id": "P479",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "tiered backup strategy without point-in-time recovery",
+    "taken several hours apart",
+    "every two days",
+    "If you can have both features, use both features"
+   ],
+   "claim": "p.247: layers without PITR, snapshots every few hours, full/incremental every two days, use both"
+  },
+  {
+   "id": "P480",
+   "pages": [
+    246
+   ],
+   "terms": [
+    "19 data recovery efforts"
+   ],
+   "claim": "p.246: study of 19 recovery efforts"
+  },
+  {
+   "id": "P481",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "weeks to months after the bugs"
+   ],
+   "claim": "p.247: harder variants (weeks to months)"
+  },
+  {
+   "id": "P482",
+   "pages": [
+    248
+   ],
+   "terms": [
+    "merge the restored data with the current state"
+   ],
+   "claim": "p.248: long retention requires merging with the current state"
+  },
+  {
+   "id": "P483",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "about 10 hours and 25 minutes"
+   ],
+   "claim": "p.147 fn90: about 10 h 25 min"
+  },
+  {
+   "id": "P484",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "queries per second",
+    "really set an SLO",
+    "average search request latency",
+    "less than 100 milliseconds"
+   ],
+   "claim": "p.45: QPS cannot be an SLO; example SLO with average latency < 100 ms"
+  },
+  {
+   "id": "P485",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "performance cliff",
+    "higher QPS often leads to larger latencies"
+   ],
+   "claim": "p.45: QPS and latency are linked (performance cliff)"
+  },
+  {
+   "id": "P486",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "BASE",
+    "Basically Available",
+    "eventual consistency",
+    "latest timestamp wins",
+    "clock drift",
+    "network partitioning"
+   ],
+   "claim": "p.203: BASE, multimaster, latest timestamp wins, clock drift and partition"
+  },
+  {
+   "id": "P487",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "Shute",
+    "unacceptable burden",
+    "financial transactions",
+    "cannot sacrifice correctness"
+   ],
+   "claim": "p.203: cost for developers (Shute) and correctness in financial transactions"
+  },
+  {
+   "id": "P488",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "slack CPU",
+    "dangerous",
+    "committed resource limits"
+   ],
+   "claim": "p.196: idle CPU as a safety net is dangerous; stay within committed limits"
+  },
+  {
+   "id": "P489",
+   "pages": [
+    197
+   ],
+   "terms": [
+    "gradual and impulse",
+    "without human intervention",
+    "return",
+    "individual components may have different breaking points"
+   ],
+   "claim": "p.197: gradual vs impulse; return to nominal load without a human; breaking point per component"
+  },
+  {
+   "id": "P490",
+   "pages": [
+    200
+   ],
+   "terms": [
+    "often not a good assumption due to geography"
+   ],
+   "claim": "p.200: text of note 109 (mark on p.189)"
+  },
+  {
+   "id": "P491",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "109"
+   ],
+   "claim": "p.189: mark of note 109"
+  },
+  {
+   "id": "P492",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "Workqueue",
+    "de-scheduled",
+    "poke",
+    "mistrust",
+    "self-discipline",
+    "technical debt",
+    "Managers and technical leaders",
+    "red flag",
+    "quarterly reports"
+   ],
+   "claim": "p.61: complete Gmail/Workqueue case"
+  },
+  {
+   "id": "P493",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "negligible",
+    "in parallel with the acceptors",
+    "combined into a single log",
+    "batching",
+    "10 milliseconds"
+   ],
+   "claim": "p.216: ~100 ops/s assumptions and log optimizations"
+  },
+  {
+   "id": "P494",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "quarterly rather than monthly",
+    "allowable downtime is small",
+    "data-driven mechanism",
+    "N + 2"
+   ],
+   "claim": "p.330: reason for the quarterly reset, data-based mechanism, N+2"
+  },
+  {
+   "id": "P495",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "load testing rather than tradition",
+    "day-one load",
+    "Validate prior demand forecasts"
+   ],
+   "claim": "p.331: forecasts, load test instead of tradition, day 1"
+  },
+  {
+   "id": "P496",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "Fail Sanely"
+   ],
+   "claim": "p.329: title Fail Sanely"
+  },
+  {
+   "id": "P497",
+   "pages": [
+    256
+   ],
+   "terms": [
+    "encrypted backup tapes"
+   ],
+   "claim": "p.256: encrypted backup tapes (encryption not only in Ch. 2)"
+  },
+  {
+   "id": "P498",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "encryption"
+   ],
+   "claim": "p.30: encryption (Colossus)"
+  },
+  {
+   "id": "P499",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "more than once or twice a minute",
+    "200 (success) status"
+   ],
+   "claim": "probing the 200 more than 1-2 times PER minute is unnecessary (target 99.9%)"
+  },
+  {
+   "id": "P500",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "hard drive fullness",
+    "99.9% availability",
+    "unnecessary"
+   ],
+   "claim": "only disk occupancy is 'every 1-2 minutes'"
+  },
+  {
+   "id": "P501",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "long-lived spikes",
+    "tail latencies",
+    "buckets of 5% granularity"
+   ],
+   "claim": "CPU at 1 min hides long spikes; 5% buckets aggregated per minute"
+  },
+  {
+   "id": "P502",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "Table 6-1",
+    "bogosort",
+    "forgotten"
+   ],
+   "claim": "Table 6-1: bogosort and ACLs forgotten after a push"
+  },
+  {
+   "id": "P503",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "database SRE",
+    "frontend SRE",
+    "slow database reads"
+   ],
+   "claim": "slow database: symptom for the database SRE, cause for the frontend one"
+  },
+  {
+   "id": "P504",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "protocol buffers",
+    "language-neutral, platform-neutral",
+    "grab bag",
+    "forward compatible"
+   ],
+   "claim": "note 40 and format modularity (protobuf)"
+  },
+  {
+   "id": "P505",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "only develop projects cross-site when you have to",
+    "nebulous self-actualization",
+    "strict time limit",
+    "arbitrator",
+    "neutral location"
+   ],
+   "claim": "cross-site recommendations on p.301"
+  },
+  {
+   "id": "P506",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "agreed way of making decisions",
+    "clear deliverables and deadlines",
+    "long-term vision"
+   ],
+   "claim": "agreed decision, deliverables and leaders' view (p.301)"
+  },
+  {
+   "id": "P507",
+   "pages": [
+    311
+   ],
+   "terms": [
+    "levels of usage projected",
+    "overall business risk",
+    "can be reassigned"
+   ],
+   "claim": "projected usage not reached and business risk (p.311)"
+  },
+  {
+   "id": "P508",
+   "pages": [
+    205
+   ],
+   "terms": [
+    "any two majorities will overlap",
+    "isn",
+    "complete view"
+   ],
+   "claim": "overlapping majorities and incomplete view of the node (p.205)"
+  },
+  {
+   "id": "P509",
+   "pages": [
+    299
+   ],
+   "terms": [
+    "deeply conservative",
+    "complex consoles",
+    "legacy monitoring system"
+   ],
+   "claim": "Monarch consoles: two reasons and conservative SRE (p.299)"
+  },
+  {
+   "id": "P510",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "2f + 1"
+   ],
+   "claim": "the 2f+1 rule is on p.216"
+  },
+  {
+   "id": "P511",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "five engineers",
+    "over 1,500 launches"
+   ],
+   "claim": "average team of five engineers and over 1,500 launches in 3.5 years (p.270)"
+  },
+  {
+   "id": "P512",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "one LCE ran 350 launches"
+   ],
+   "claim": "one LCE drove 350 launches (p.270)"
+  },
+  {
+   "id": "P513",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "batch proxy",
+    "acts like a fuse",
+    "bigger subsets"
+   ],
+   "claim": "batch proxy as a fuse and larger subsets (p.182)"
+  },
+  {
+   "id": "P514",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "health checks",
+    "switches to UDP",
+    "significantly decreasing",
+    "utilization of the cluster"
+   ],
+   "claim": "health checks of idle ones via UDP; reduce frequency; utilization-based balancing across datacenters (p.182)"
+  },
+  {
+   "id": "P515",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "CPU and memory costs of maintaining a large pool of connections",
+    "fast rate of churn"
+   ],
+   "claim": "cost of a large pool and connection churn (p.182)"
+  },
+  {
+   "id": "P516",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "packet loss within a cluster",
+    "failed hard drives",
+    "power outage"
+   ],
+   "claim": "correlation: packet loss and disks, common cause power outage (p.106)"
+  },
+  {
+   "id": "P517",
+   "pages": [
+    240
+   ],
+   "terms": [
+    "server token",
+    "load balancer in front of a set of independent Task Masters",
+    "long-running transaction"
+   ],
+   "claim": "server token, load balancer in front of Task Masters, long transaction (p.240)"
+  },
+  {
+   "id": "P518",
+   "pages": [
+    240
+   ],
+   "terms": [
+    "naming services",
+    "Chubby",
+    "Spanner",
+    "local Workflow will block"
+   ],
+   "claim": "Spanner/Chubby/naming services and blocking of the local Workflow (p.240)"
+  },
+  {
+   "id": "P519",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "less than once a quarter",
+    "more than once or twice a minute",
+    "once every 1"
+   ],
+   "claim": "less than once per quarter; 1-2 min threshold on p.59"
+  },
+  {
+   "id": "P520",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "urgent, actionable"
+   ],
+   "claim": "'urgent and actionable' philosophy on p.60"
+  },
+  {
+   "id": "P521",
+   "pages": [
+    140
+   ],
+   "terms": [
+    "stability actually drives agility"
+   ],
+   "claim": "stability drives agility (p.140)"
+  },
+  {
+   "id": "P522",
+   "pages": [
+    322
+   ],
+   "terms": [
+    "the binder",
+    "authoritative"
+   ],
+   "claim": "'the binder' as the authoritative source (p.322)"
+  },
+  {
+   "id": "P523",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "additional metadata fields"
+   ],
+   "claim": "template with additional metadata fields (p.129)"
+  },
+  {
+   "id": "P524",
+   "pages": [
+    311
+   ],
+   "terms": [
+    "Disengaging from a service",
+    "never oﬀicially take it over"
+   ],
+   "claim": "disengaging from a service (p.311)"
+  },
+  {
+   "id": "P525",
+   "pages": [
+    253
+   ],
+   "terms": [
+    "central infrastructure team",
+    "maintain the custom business logic"
+   ],
+   "claim": "central infra team maintains the validation framework; product teams, the logic (p.253)"
+  },
+  {
+   "id": "P526",
+   "pages": [
+    253
+   ],
+   "terms": [
+    "sacrifice rigor in daily validators",
+    "reduced frequency"
+   ],
+   "claim": "less strict daily validators, greater rigor at lower frequency (p.253)"
+  },
+  {
+   "id": "P527",
+   "pages": [
+    253
+   ],
+   "terms": [
+    "intermittent failed validation",
+    "BigQuery-like"
+   ],
+   "claim": "intermittent validation failure: drill-down in audit logs, playbooks, BigQuery-like tool (p.253)"
+  },
+  {
+   "id": "P528",
+   "pages": [
+    158
+   ],
+   "terms": [
+    "agile practices via training or coaching",
+    "product manager"
+   ],
+   "claim": "ask the dev team for agile coaching and PM consulting (p.158)"
+  },
+  {
+   "id": "P529",
+   "pages": [
+    158
+   ],
+   "terms": [
+    "six-month",
+    "push-on-green"
+   ],
+   "claim": "six-month cycle and push-on-green are general Launch and iterate advice (p.158)"
+  },
+  {
+   "id": "P530",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "New York",
+    "Hurricane Sandy",
+    "no benefit"
+   ],
+   "claim": "New York/Sandy argument: widening the failure domain brings no benefit (p.217)"
+  },
+  {
+   "id": "P531",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "In any given quarter",
+    "controlled outage will be synthesized"
+   ],
+   "claim": "condition of Chubby's synthetic stop (p.45)"
+  },
+  {
+   "id": "P532",
+   "pages": [
+    235
+   ],
+   "terms": [
+    "batch scheduling resources versus production priority"
+   ],
+   "claim": "shared pool: distinguish batch and production resources (p.235)"
+  },
+  {
+   "id": "P533",
+   "pages": [
+    251
+   ],
+   "terms": [
+    "trust points",
+    "1,000 highly interdependent backups",
+    "8 decades",
+    "almost a full century"
+   ],
+   "claim": "p.251: trust points, chain of 1,000 backups and 8 decades/almost a century (distinct scenarios)"
+  },
+  {
+   "id": "P534",
+   "pages": [
+    251
+   ],
+   "terms": [
+    "Balance the data correctly",
+    "Ensure the independence of each shard",
+    "Avoid contention among the concurrent sibling tasks"
+   ],
+   "claim": "p.251: three requirements of N-task parallelism"
+  },
+  {
+   "id": "P535",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "usually not an SRE",
+    "responsibility to meet",
+    "200 requests/s in even"
+   ],
+   "claim": "p.46: correctness is normally not SRE's responsibility; aggregation"
+  },
+  {
+   "id": "P536",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "magic",
+    "automatically detect causality",
+    "stare at a screen",
+    "complex dependency hierarchies",
+    "datacenter is drained"
+   ],
+   "claim": "p.56: magic systems, dependencies, nobody watching a screen"
+  },
+  {
+   "id": "P537",
+   "pages": [
+    232
+   ],
+   "terms": [
+    "115Failure of individual jobs is beyond the scope"
+   ],
+   "claim": "note 115 on p.232"
+  },
+  {
+   "id": "P538",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "Operator-triggered manual action",
+    "Autonomous systems that need no human intervention",
+    "Externally maintained generic automation"
+   ],
+   "claim": "p.72: 5 stages of turnup evolution"
+  },
+  {
+   "id": "P539",
+   "pages": [
+    336
+   ],
+   "terms": [
+    "163Impact is the effect",
+    "168Useful information, links, logs, screenshots"
+   ],
+   "claim": "notes 163 and 168 on p.336"
+  },
+  {
+   "id": "P540",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "80See http://www.google.com/policies/privacy"
+   ],
+   "claim": "note 80 on p.129"
+  },
+  {
+   "id": "P541",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Blameless culture originated in the healthcare and avionics"
+   ],
+   "claim": "blameless on p.127"
+  },
+  {
+   "id": "P542",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "Use load testing rather than tradition",
+    "no more than two events per on-call shift",
+    "monitoring sensitivity"
+   ],
+   "claim": "p.331: load test and two events per shift"
+  },
+  {
+   "id": "P543",
+   "pages": [
+    244
+   ],
+   "terms": [
+    "Backups Versus Archives",
+    "daily, hourly, or more frequently"
+   ],
+   "claim": "p.244: backups vs archives, frequency"
+  },
+  {
+   "id": "P544",
+   "pages": [
+    245
+   ],
+   "terms": [
+    "Requirements of the Cloud Environment",
+    "Data Integrity Is the Means; Data Availability Is the Goal"
+   ],
+   "claim": "p.245: cloud challenges, integrity vs availability"
+  },
+  {
+   "id": "P545",
+   "pages": [
+    146
+   ],
+   "terms": [
+    "Those probes should never fail",
+    "is not equivalent between the production and release environ",
+    "the site is likely broken"
+   ],
+   "claim": "p.145-146: failing probe = non-equivalent frontend or backend API; site probably broken"
+  },
+  {
+   "id": "P546",
+   "pages": [
+    146
+   ],
+   "terms": [
+    "roll back to the last known good state",
+    "no user traffic is ever routed to the new version",
+    "cleanly roll back"
+   ],
+   "claim": "p.146: the updater detects the faulty combination and returns to the last good state; update paused until a clean rollback"
+  },
+  {
+   "id": "P547",
+   "pages": [
+    146
+   ],
+   "terms": [
+    "rollout automation should ideally block the associated production rollout",
+    "draining (and upgrading)"
+   ],
+   "claim": "p.146: rollout automation blocks the rollout until problematic combinations are no longer possible; peer team drains replicas"
+  },
+  {
+   "id": "P548",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "30 days",
+    "self-report their RPC connectivity",
+    "white-box and black-box monitoring",
+    "system diagram"
+   ],
+   "claim": "p.279: Reverse Engineering class - binaries self-report RPC, white-box and black-box, diagram, 30-day Bermuda"
+  },
+  {
+   "id": "P549",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "asks a senior SRE",
+    "diagrams that stack on their own",
+    "the senior SRE will learn something"
+   ],
+   "claim": "p.279: final task - the student diagrams the stack with a senior SRE and presents; the senior also learns"
+  },
+  {
+   "id": "P550",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "burn a search cluster to the ground",
+    "quarterly basis"
+   ],
+   "claim": "p.281: quarterly exercise 'burn a search cluster to the ground'"
+  },
+  {
+   "id": "P551",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "[War14]",
+    "replace privileged intranets with device and user credentials",
+    "Driven by SREs at the infrastructure level"
+   ],
+   "claim": "p.87: BeyondCorp = [War14], replace privileged intranets with device and user credentials, driven by SREs"
+  },
+  {
+   "id": "P552",
+   "pages": [
+    346
+   ],
+   "terms": [
+    "BeyondCorp: A New Approach to Enterprise Security"
+   ],
+   "claim": "p.346: BeyondCorp bibliographic reference: A New Approach to Enterprise Security"
+  },
+  {
+   "id": "P553",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "Moiré load pattern",
+    "aggregate load nears 1.2M"
+   ],
+   "claim": "p.236: Moire load pattern with aggregate load near 1.2M (no unit in the text)"
+  },
+  {
+   "id": "P554",
+   "pages": [
+    237
+   ],
+   "terms": [
+    "Figure 25-3. Moiré load pattern in shared infrastructure"
+   ],
+   "claim": "p.237: Fig. 25-3 is only an image (caption), no unit for the 1.2M"
+  },
+  {
+   "id": "P555",
+   "pages": [
+    250
+   ],
+   "terms": [
+    "would not protect from site-level failures",
+    "nearline or offline locations"
+   ],
+   "claim": "p.250: snapshots + storage in the same datacenter do not protect against site failure; backups go to nearline/offline"
+  },
+  {
+   "id": "P556",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "don’t resort to not using either",
+    "If you can have both features, use both"
+   ],
+   "claim": "do not rely on only one of the two (PITR or layers); if you can, use both"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "terms": [
+    "burn rate"
+   ],
+   "claim": "burn rate / multi-window alerts based on error budget"
+  },
+  {
+   "id": "N02",
+   "terms": [
+    "error budget policy"
+   ],
+   "claim": "error budget policy as a document"
+  },
+  {
+   "id": "N03",
+   "terms": [
+    "MTTD"
+   ],
+   "claim": "MTTD"
+  },
+  {
+   "id": "N04",
+   "terms": [
+    "re:\\bRPO\\b"
+   ],
+   "claim": "RPO as a term"
+  },
+  {
+   "id": "N05",
+   "terms": [
+    "re:\\bRTO\\b"
+   ],
+   "claim": "RTO as a term"
+  },
+  {
+   "id": "N06",
+   "terms": [
+    "chaos engineering"
+   ],
+   "claim": "chaos engineering by that name"
+  },
+  {
+   "id": "N07",
+   "terms": [
+    "circuit breaker"
+   ],
+   "claim": "circuit breaker"
+  },
+  {
+   "id": "N08",
+   "terms": [
+    "bulkhead"
+   ],
+   "claim": "bulkhead"
+  },
+  {
+   "id": "N09",
+   "terms": [
+    "blue-green",
+    "blue/green"
+   ],
+   "claim": "blue/green deployment"
+  },
+  {
+   "id": "N10",
+   "terms": [
+    "OpenTelemetry"
+   ],
+   "claim": "OpenTelemetry"
+  },
+  {
+   "id": "N11",
+   "terms": [
+    "token bucket"
+   ],
+   "claim": "token bucket"
+  },
+  {
+   "id": "N12",
+   "terms": [
+    "backpressure"
+   ],
+   "claim": "backpressure"
+  },
+  {
+   "id": "N13",
+   "terms": [
+    "re:\\bDORA\\b"
+   ],
+   "claim": "DORA metrics"
+  },
+  {
+   "id": "N14",
+   "terms": [
+    "GitOps"
+   ],
+   "claim": "GitOps"
+  },
+  {
+   "id": "N15",
+   "terms": [
+    "Terraform"
+   ],
+   "claim": "Terraform"
+  },
+  {
+   "id": "N16",
+   "terms": [
+    "toil budget"
+   ],
+   "claim": "formal toil budget"
+  },
+  {
+   "id": "N17",
+   "terms": [
+    "USE method",
+    "RED method"
+   ],
+   "claim": "USE/RED methods"
+  },
+  {
+   "id": "N18",
+   "terms": [
+    "game day"
+   ],
+   "claim": "game day"
+  },
+  {
+   "id": "N19",
+   "terms": [
+    "re:\\bSEV ?[0-9]\\b",
+    "re:\\bP0\\b"
+   ],
+   "claim": "standardized SEV/P0 levels"
+  },
+  {
+   "id": "N20",
+   "terms": [
+    "429"
+   ],
+   "claim": "HTTP 429 as the rate-limit code"
+  },
+  {
+   "id": "N21",
+   "terms": [
+    "service mesh",
+    "sidecar"
+   ],
+   "claim": "service mesh / sidecar"
+  },
+  {
+   "id": "N22",
+   "terms": [
+    "fencing token"
+   ],
+   "claim": "fencing tokens"
+  },
+  {
+   "id": "N23",
+   "terms": [
+    "ransomware"
+   ],
+   "claim": "ransomware"
+  },
+  {
+   "id": "N24",
+   "terms": [
+    "3-2-1"
+   ],
+   "claim": "3-2-1 backup rule"
+  },
+  {
+   "id": "N25",
+   "terms": [
+    "GDPR"
+   ],
+   "claim": "GDPR"
+  },
+  {
+   "id": "N26",
+   "terms": [
+    "re:\\bRED\\b method",
+    "Four Golden Signals' RED"
+   ],
+   "claim": "RED method (fixed in round 1: previous regex contained a backspace)"
+  },
+  {
+   "id": "N27",
+   "terms": [
+    "runbook"
+   ],
+   "claim": "runbook as a term (the book uses playbook)"
+  },
+  {
+   "id": "N28",
+   "terms": [
+    "re:\\bscribe\\b"
+   ],
+   "claim": "scribe role in incidents"
+  },
+  {
+   "id": "N29",
+   "terms": [
+    "power of two",
+    "ring hash"
+   ],
+   "claim": "power of two choices / ring hash"
+  },
+  {
+   "id": "N30",
+   "terms": [
+    "CRDT"
+   ],
+   "claim": "CRDTs"
+  },
+  {
+   "id": "N31",
+   "terms": [
+    "blast radius"
+   ],
+   "claim": "blast radius"
+  },
+  {
+   "id": "N32",
+   "terms": [
+    "multi-window",
+    "multiwindow",
+    "multiple windows burn"
+   ],
+   "claim": "multi-window alerts"
+  },
+  {
+   "id": "N33",
+   "terms": [
+    "contract test"
+   ],
+   "claim": "contract testing by name"
+  },
+  {
+   "id": "N34",
+   "terms": [
+    "Kafka",
+    "CronJob"
+   ],
+   "claim": "Kafka / Kubernetes CronJob"
+  },
+  {
+   "id": "N35",
+   "terms": [
+    "Grafana",
+    "Datadog",
+    "Splunk"
+   ],
+   "claim": "Observability tools (Grafana, Datadog, Splunk) absent"
+  },
+  {
+   "id": "N36",
+   "terms": [
+    "Jenkins",
+    "Docker",
+    "re:\\bHelm\\b",
+    "Ansible"
+   ],
+   "claim": "CI/infra tools (Jenkins, Docker, Helm, Ansible) absent"
+  },
+  {
+   "id": "N37",
+   "terms": [
+    "Istio",
+    "Envoy"
+   ],
+   "claim": "Istio and Envoy absent"
+  },
+  {
+   "id": "N38",
+   "terms": [
+    "user journey"
+   ],
+   "claim": "SLO per user journey absent"
+  },
+  {
+   "id": "N39",
+   "terms": [
+    "PagerDuty",
+    "Opsgenie"
+   ],
+   "claim": "PagerDuty and Opsgenie absent"
+  },
+  {
+   "id": "N40",
+   "terms": [
+    "re:\\bRedis\\b",
+    "MongoDB"
+   ],
+   "claim": "Redis and MongoDB absent"
+  },
+  {
+   "id": "N41",
+   "terms": [
+    "Maven",
+    "pom.xml"
+   ],
+   "claim": "Maven and pom.xml absent (Bazel only named)"
+  },
+  {
+   "id": "N42",
+   "terms": [
+    "re:\\bHPA\\b",
+    "Horizontal Pod"
+   ],
+   "claim": "HPA / Horizontal Pod Autoscaler absent"
+  },
+  {
+   "id": "N43",
+   "terms": [
+    "Pulumi",
+    "CloudFormation"
+   ],
+   "claim": "Pulumi and CloudFormation absent"
+  },
+  {
+   "id": "N44",
+   "terms": [
+    "DevSecOps",
+    "re:\\bCI/CD\\b"
+   ],
+   "claim": "DevSecOps and CI/CD as terms absent"
+  },
+  {
+   "id": "N45",
+   "terms": [
+    "re:burn[ -]?rate"
+   ],
+   "claim": "Burn rate with hyphen or space (reinforces N01)"
+  },
+  {
+   "id": "N46",
+   "terms": [
+    "45 minutes",
+    "45 minutos"
+   ],
+   "claim": "Duration of Knight Capital in minutes is not stated (the phrase 45 minutes does not appear)"
+  },
+  {
+   "id": "N47",
+   "terms": [
+    "SHA-1",
+    "SHA-256",
+    "SHA256",
+    "re:\\bmd5\\b"
+   ],
+   "claim": "The MPM hash algorithm is not given (p.78)"
+  },
+  {
+   "id": "N48",
+   "terms": [
+    "2x the average",
+    "2x average",
+    "double the average latency"
+   ],
+   "claim": "The '2x the average' rule for deadlines is not in the book"
+  },
+  {
+   "id": "N49",
+   "terms": [
+    "1% of machines",
+    "5% of machines",
+    "percent of the machines",
+    "percentage of machines"
+   ],
+   "claim": "A fixed percentage of machines for the canary is not in the book"
+  },
+  {
+   "id": "N50",
+   "terms": [
+    "re:\\bscribe\\b"
+   ],
+   "claim": "The scribe role in incidents does not exist in the book"
+  },
+  {
+   "id": "N51",
+   "terms": [
+    "only in periodic",
+    "only occurs in periodic",
+    "only periodic pipelines"
+   ],
+   "claim": "The book does not say that Moire occurs only in periodic pipelines (p.236)"
+  },
+  {
+   "id": "N52",
+   "terms": [
+    "traffic rather than machines",
+    "traffic, not machines"
+   ],
+   "claim": "The book does not restrict the canary to traffic rather than machines (p.268)"
+  },
+  {
+   "id": "N53",
+   "terms": [
+    "breaks polarization",
+    "break the polarization"
+   ],
+   "claim": "The reason against tickets outside the shift is not 'break the polarization' (p.288)"
+  },
+  {
+   "id": "N54",
+   "terms": [
+    "picking up unrelated changes submitted to the branch",
+    "changes from the branch to the mainline"
+   ],
+   "claim": "Cherry-pick does not avoid dragging changes from the branch into the mainline (inverse of p.78)"
+  },
+  {
+   "id": "N55",
+   "terms": [
+    "re:\\bITIL\\b"
+   ],
+   "claim": "ITIL absent from the book (the definition of root cause is the one on p.55)"
+  },
+  {
+   "id": "N56",
+   "terms": [
+    "queue size formula",
+    "queue length formula",
+    "re:queue (size|length) (=|equals) "
+   ],
+   "claim": "There is no queue-size formula for bursts (p.189)"
+  },
+  {
+   "id": "N57",
+   "terms": [
+    "re:doorman[^.]{0,120}(token bucket|lease|algorithm|parameter)"
+   ],
+   "claim": "The book describes neither the algorithm nor the parameters of Doorman (only note 106)"
+  },
+  {
+   "id": "N58",
+   "terms": [
+    "re:peer bonus[^.]{0,100}(\\$|usd|dollars)\\s?\\d",
+    "re:peer bonus[^.]{0,60}\\d+ (dollars|usd)"
+   ],
+   "claim": "The book does not give the value of the Peer Bonus"
+  },
+  {
+   "id": "N59",
+   "terms": [
+    "promql",
+    "alertmanager.yml",
+    "burn rate"
+   ],
+   "claim": "PromQL, alertmanager.yml and burn rate are not in the book (C11)"
+  },
+  {
+   "id": "N60",
+   "terms": [
+    "g1gc",
+    "-xmx",
+    "-xx:"
+   ],
+   "claim": "No JVM flag in the book (C12)"
+  },
+  {
+   "id": "N62",
+   "pages": [],
+   "terms": [
+    "re:legally (binding|admissible)",
+    "chain of custody",
+    "non-repudiation"
+   ],
+   "claim": "the book gives no legal value to the dummy escalator audit trail (C03)"
+  },
+  {
+   "id": "N63",
+   "pages": [],
+   "terms": [
+    "tag normalization",
+    "normalize tags",
+    "re:normaliz\\w* (the )?tags"
+   ],
+   "claim": "the book does not propose normalizing tags (C13)"
+  },
+  {
+   "id": "N64",
+   "pages": [],
+   "terms": [
+    "Google uses Thrift",
+    "we use Thrift",
+    "Thrift for RPC",
+    "uses Apache Thrift"
+   ],
+   "claim": "the book does not say that Google uses Apache Thrift for RPC (it only compares protobufs to it)"
+  },
+  {
+   "id": "N65",
+   "pages": [],
+   "terms": [
+    "re:anti-?patterns? (is|are) (configuration|config)",
+    "re:configuration without (code )?review"
+   ],
+   "claim": "the book does not call configuration without review an anti-pattern"
+  },
+  {
+   "id": "N66",
+   "terms": [
+    "fault injection",
+    "chaos engineering"
+   ],
+   "claim": "the book says failure injection (note 18), never fault injection or chaos engineering"
+  },
+  {
+   "id": "N67",
+   "terms": [
+    "safe_load()",
+    " yaml.load"
+   ],
+   "claim": "the book names Python's safe_load without detailing API calls"
+  },
+  {
+   "id": "N68",
+   "terms": [
+    "Borgmen"
+   ],
+   "claim": "the book never writes Borgmen; the plural is Borgmon (note 44, p.98)"
+  },
+  {
+   "id": "N69",
+   "terms": [
+    "re:Borgmon (runs|executes|relies on) (custom )?scripts"
+   ],
+   "claim": "Borgmon does not run custom per-target scripts (p.89)"
+  },
+  {
+   "id": "N70",
+   "terms": [
+    "50,000 operations per second",
+    "50,000 ops"
+   ],
+   "claim": "the book does not give 50,000 operations/s for consensus (only ~100 ops/s, p.216)"
+  },
+  {
+   "id": "N71",
+   "terms": [
+    "re:encryption[^.]{0,40}(Chapter 2|only)"
+   ],
+   "claim": "there is no claim that encryption appears only in Ch. 2"
+  },
+  {
+   "id": "N72",
+   "terms": [
+    "70/30",
+    "70-30",
+    "70:30",
+    "re:\\b70 ?% ?/ ?30 ?%"
+   ],
+   "claim": "the book does not give a 70/30 split (it gives 50-60%/40-50% on p.23)"
+  },
+  {
+   "id": "N73",
+   "terms": [
+    "re:200 \\(success\\) status (every|once every)",
+    "re:probing[^.]{0,60}every 1.{1,3}2 minutes"
+   ],
+   "claim": "the '1-2 min' rule is not attributed to probing the 200"
+  },
+  {
+   "id": "N74",
+   "terms": [
+    "re:enumera\\w* .{0,30}metadata fields",
+    "re:Appendix D lists the metadata"
+   ],
+   "claim": "the book does not enumerate the metadata fields (p.129) nor does App. D list them as such"
+  },
+  {
+   "id": "N75",
+   "terms": [
+    "more than 2,000 launches",
+    "ten engineers"
+   ],
+   "claim": "the book does not mention 2,000 launches or ten engineers in the LCE"
+  },
+  {
+   "id": "N76",
+   "terms": [
+    "zero trust",
+    "Route 53"
+   ],
+   "claim": "the book does not use the term 'zero trust' nor cite AWS Route 53"
+  },
+  {
+   "id": "N77",
+   "terms": [
+    "1.2M requests",
+    "1.2M QPS",
+    "1.2M bytes",
+    "1.2M ops"
+   ],
+   "claim": "the book gives no unit (req/s, bytes) for the Moire peak of 1.2M"
+  }
+ ],
+ "negative_pages": [
+  {
+   "id": "NP01",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "re:e-?mail"
+   ],
+   "claim": "p.95 (Alertmanager) does not treat email as a flawed channel"
+  },
+  {
+   "id": "NP02",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "fundamentally flawed"
+   ],
+   "claim": "p.55 only defines email alerts, it does not judge the channel"
+  },
+  {
+   "id": "NP03",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "Wheel of Misfortune",
+    "DiRT"
+   ],
+   "claim": "Wheel of Misfortune/DiRT are not on p.331 (they are on p.103)"
+  },
+  {
+   "id": "NP04",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "slowly increase the load"
+   ],
+   "claim": "increasing load slowly is not on p.194 (it is on p.195)"
+  },
+  {
+   "id": "NP05",
+   "pages": [
+    112,
+    113,
+    114
+   ],
+   "terms": [
+    "launching with an unidentified bug"
+   ],
+   "claim": "note 75 is not on p.112-114 (it is on p.115)"
+  },
+  {
+   "id": "NP06",
+   "pages": [
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+   ],
+   "terms": [
+    "re:anti-?patterns?"
+   ],
+   "claim": "p.76-81 do not use the word anti-pattern (config without review: only strict code review, p.80)"
+  },
+  {
+   "id": "NP07",
+   "pages": [
+    150,
+    151,
+    152,
+    153,
+    154
+   ],
+   "terms": [
+    "re:\\d+\\s?%"
+   ],
+   "claim": "Ch. 18, p.150-154 gives no savings percentage (p.155 only cites \"100% adoption\", which is not savings)"
+  },
+  {
+   "id": "NP08",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "MTBF suffers"
+   ],
+   "claim": "the phrase 'MTBF suffers' is on p.144, not on p.143"
+  },
+  {
+   "id": "NP09",
+   "pages": [
+    143,
+    145
+   ],
+   "terms": [
+    "unattended"
+   ],
+   "claim": "'unattended' appears only on p.144"
+  },
+  {
+   "id": "NP10",
+   "pages": [
+    281,
+    283
+   ],
+   "terms": [
+    "reverse shadow",
+    "coauthor"
+   ],
+   "claim": "reverse shadow and co-authorship are on p.282, not on p.281 and 283"
+  },
+  {
+   "id": "NP11",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "business hours"
+   ],
+   "claim": "pages copied during business hours are on p.282, not on p.281"
+  },
+  {
+   "id": "NP12",
+   "pages": [
+    68,
+    69,
+    71
+   ],
+   "terms": [
+    "Machine Database"
+   ],
+   "claim": "the block by the Machine Database is on p.70, not on p.68, 69 and 71"
+  },
+  {
+   "id": "NP13",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "a bug could be filed"
+   ],
+   "claim": "the bug to extend Prodtest is on p.68, not on p.70"
+  },
+  {
+   "id": "NP14",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "time-off-in-lieu"
+   ],
+   "claim": "compensation (time-off-in-lieu) is on p.101, not on p.100"
+  },
+  {
+   "id": "NP15",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "re:\\d+\\s?%"
+   ],
+   "claim": "p.101 does not give the percentage of the compensation cap"
+  },
+  {
+   "id": "NP16",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "aggregate unavailability metric"
+   ],
+   "claim": "the recommendation of aggregate metric over duration is on p.328, not on p.38"
+  },
+  {
+   "id": "NP17",
+   "pages": [
+    127,
+    128
+   ],
+   "terms": [
+    "leading questions",
+    "loaded questions"
+   ],
+   "claim": "guiding questions are on p.293; p.127-128 deal with blameless postmortem"
+  },
+  {
+   "id": "NP18",
+   "pages": [
+    284,
+    287
+   ],
+   "terms": [
+    "flow state"
+   ],
+   "claim": "the concept of flow state is on p.285 (and flow on p.286), not on p.284 and 287"
+  },
+  {
+   "id": "NP19",
+   "pages": [
+    32,
+    34
+   ],
+   "terms": [
+    "Thrift"
+   ],
+   "claim": "Thrift appears only on p.33"
+  },
+  {
+   "id": "NP20",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "monolithic"
+   ],
+   "claim": "note 36 (monolithic repository) is on p.81, not on p.80"
+  },
+  {
+   "id": "NP21",
+   "pages": [
+    146,
+    148
+   ],
+   "terms": [
+    "0.1% of user"
+   ],
+   "claim": "note 89 is on p.147"
+  },
+  {
+   "id": "NP22",
+   "pages": [
+    184
+   ],
+   "terms": [
+    "file descriptors"
+   ],
+   "claim": "file descriptors are on p.187, not on p.184"
+  },
+  {
+   "id": "NP23",
+   "pages": [
+    86,
+    87
+   ],
+   "terms": [
+    "Dickerson"
+   ],
+   "claim": "Dickerson (note 41) appears only on p.85 of the Part III introduction"
+  },
+  {
+   "id": "NP24",
+   "pages": [
+    144,
+    146
+   ],
+   "terms": [
+    "safe_load"
+   ],
+   "claim": "safe_load and protobuf for config are on p.145"
+  },
+  {
+   "id": "NP25",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "court case"
+   ],
+   "claim": "note 16 (lawsuit) is on p.50, not on p.49"
+  },
+  {
+   "id": "NP26",
+   "pages": [
+    323,
+    325
+   ],
+   "terms": [
+    "divide their time between two equally"
+   ],
+   "claim": "the time division between two types of work is from p.324"
+  },
+  {
+   "id": "NP27",
+   "pages": [
+    313,
+    314
+   ],
+   "terms": [
+    "one for each environment we support"
+   ],
+   "claim": "'one framework per environment' is on p.312, not on p.313-314"
+  },
+  {
+   "id": "NP28",
+   "pages": [
+    98,
+    89
+   ],
+   "terms": [
+    "Borgmen"
+   ],
+   "claim": "Borgmen does not occur in the notes of p.98 nor on p.89"
+  },
+  {
+   "id": "NP29",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "load testing rather than tradition",
+    "day-one load"
+   ],
+   "claim": "load test instead of tradition and day 1 are NOT on p.330 (they are on p.331)"
+  },
+  {
+   "id": "NP30",
+   "pages": [
+    330,
+    331
+   ],
+   "terms": [
+    "Fail Sanely"
+   ],
+   "claim": "Fail Sanely is NOT on p.330-331 (it is on p.329)"
+  },
+  {
+   "id": "NP31",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "often not a good assumption due to geography"
+   ],
+   "claim": "the text of note 109 is NOT on p.189 (only the mark; text on p.200)"
+  },
+  {
+   "id": "NP32",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "negligible",
+    "in parallel with the acceptors"
+   ],
+   "claim": "the 100 ops/s assumptions are NOT on p.203 (they are on p.216)"
+  },
+  {
+   "id": "NP33",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "gradual and impulse"
+   ],
+   "claim": "gradual vs impulse is NOT on p.196 (it is on p.197)"
+  },
+  {
+   "id": "NP34",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "re:200 \\(success\\) status[^.]{0,20}every 1",
+    "200 (success) status every"
+   ],
+   "claim": "p.59 does not say 'probe the 200 every 1-2 min' (only the disk)"
+  },
+  {
+   "id": "NP35",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "2f + 1"
+   ],
+   "claim": "2f+1 is NOT on p.217 (it is on p.216)"
+  },
+  {
+   "id": "NP36",
+   "pages": [
+    83,
+    85
+   ],
+   "terms": [
+    "language-neutral, platform-neutral"
+   ],
+   "claim": "note 40 (protobuf) is NOT on p.83 and p.85 (it is on p.84)"
+  },
+  {
+   "id": "NP37",
+   "pages": [
+    300
+   ],
+   "terms": [
+    "nebulous self-actualization",
+    "neutral location"
+   ],
+   "claim": "cross-site recommendations are NOT on p.300 (they are on p.301)"
+  },
+  {
+   "id": "NP38",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "levels of usage projected"
+   ],
+   "claim": "projected usage not reached is NOT on p.310 (it is on p.311)"
+  },
+  {
+   "id": "NP39",
+   "pages": [
+    298,
+    300
+   ],
+   "terms": [
+    "Those of us who tried using Monarch"
+   ],
+   "claim": "reasons for the Monarch consoles are NOT on p.298 and 300 (p.299)"
+  },
+  {
+   "id": "NP40",
+   "pages": [
+    56,
+    58
+   ],
+   "terms": [
+    "bogosort"
+   ],
+   "claim": "Table 6-1 is NOT on p.56 and p.58 (it is on p.57)"
+  },
+  {
+   "id": "NP41",
+   "pages": [
+    56,
+    60
+   ],
+   "terms": [
+    "once or twice a minute",
+    "less than once a quarter"
+   ],
+   "claim": "the 1-2 min threshold and the 'less than once per quarter' are NOT on p.56 and p.60 (they are on p.59)"
+  },
+  {
+   "id": "NP42",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "urgent, actionable"
+   ],
+   "claim": "'urgent, actionable' is NOT on p.56 (it is on p.60)"
+  },
+  {
+   "id": "NP43",
+   "pages": [
+    239,
+    241
+   ],
+   "terms": [
+    "server token"
+   ],
+   "claim": "server token is NOT on p.239 and p.241 (it is on p.240)"
+  },
+  {
+   "id": "NP44",
+   "pages": [
+    182,
+    183
+   ],
+   "terms": [
+    "Spanner"
+   ],
+   "claim": "Spanner is NOT on p.182-183 (connections); Workflow uses it on p.240-241"
+  },
+  {
+   "id": "NP45",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "batch proxy"
+   ],
+   "claim": "batch proxy is NOT on p.270 (it is on p.182)"
+  },
+  {
+   "id": "NP46",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "load testing rather than tradition",
+    "no more than two events per on-call shift"
+   ],
+   "claim": "load test and two events per shift are NOT on p.330 (they are on p.331)"
+  },
+  {
+   "id": "NP47",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "80See http://www.google.com/policies/privacy"
+   ],
+   "claim": "note 80 is NOT on p.127 (it is on p.129)"
+  },
+  {
+   "id": "NP48",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "Blameless culture originated"
+   ],
+   "claim": "blameless is NOT on p.334 (it is on p.126-127)"
+  },
+  {
+   "id": "NP49",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "BeyondCorp"
+   ],
+   "claim": "the term BeyondCorp does NOT appear on p.87 (only the description of the initiative); the bibliography with the name is on p.346"
+  }
+ ]
+}

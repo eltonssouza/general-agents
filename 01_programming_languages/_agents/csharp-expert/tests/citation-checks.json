@@ -1,0 +1,2073 @@
+{
+ "source": "texts extracted from the PDFs with '=== PAGE N ===' markers (N = PDF page). Files: CSharp-Yellow-Book.txt (CSYB), CSharp-9-WhatsNew.txt (CSHist), CSharp-12-WhatsNew.txt (CS12), CSharp-13-WhatsNew.txt (CS13).",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "CSYB",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Edition 8.1b",
+    "17 December 2019"
+   ],
+   "claim": "edition 8.1b of 17/12/2019"
+  },
+  {
+   "id": "P002",
+   "src": "CSYB",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "compiler",
+    "low level instructions"
+   ],
+   "claim": "compiler converts to low-level instructions"
+  },
+  {
+   "id": "P003",
+   "src": "CSYB",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "managed",
+    "unmanaged"
+   ],
+   "claim": "managed and unmanaged code"
+  },
+  {
+   "id": "P004",
+   "src": "CSYB",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "only one such method",
+    "Main"
+   ],
+   "claim": "Main is unique"
+  },
+  {
+   "id": "P005",
+   "src": "CSYB",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "GlazerCalc.cs"
+   ],
+   "claim": "file named after the class"
+  },
+  {
+   "id": "P006",
+   "src": "CSYB",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "returned as a string",
+    "ReadLine"
+   ],
+   "claim": "ReadLine returns string"
+  },
+  {
+   "id": "P007",
+   "src": "CSYB",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "sbyte",
+    "ulong",
+    "18,446,744,073,709,551,615"
+   ],
+   "claim": "table of integer types"
+  },
+  {
+   "id": "P008",
+   "src": "CSYB",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "wrap round"
+   ],
+   "claim": "value can wrap round"
+  },
+  {
+   "id": "P009",
+   "src": "CSYB",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "precision of only 7 digits"
+   ],
+   "claim": "float 7 digits"
+  },
+  {
+   "id": "P010",
+   "src": "CSYB",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "precision of 15 digits"
+   ],
+   "claim": "double 15 digits"
+  },
+  {
+   "id": "P011",
+   "src": "CSYB",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "precision of 28-29 digits",
+    "financial calculations",
+    "twice the storage space"
+   ],
+   "claim": "decimal 28-29 digits, financial, twice the space"
+  },
+  {
+   "id": "P012",
+   "src": "CSYB",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "2.5f"
+   ],
+   "claim": "float literal with f"
+  },
+  {
+   "id": "P013",
+   "src": "CSYB",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "sbyte tinyVal = 128"
+   ],
+   "claim": "128 in sbyte does not compile"
+  },
+  {
+   "id": "P014",
+   "src": "CSYB",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "over 65,000"
+   ],
+   "claim": "Unicode more than 65 thousand"
+  },
+  {
+   "id": "P015",
+   "src": "CSYB",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "verbatim string"
+   ],
+   "claim": "verbatim string @"
+  },
+  {
+   "id": "P016",
+   "src": "CSYB",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "150 pence"
+   ],
+   "claim": "price in cents"
+  },
+  {
+   "id": "P017",
+   "src": "CSYB",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "start with a letter"
+   ],
+   "claim": "identifier starts with a letter"
+  },
+  {
+   "id": "P018",
+   "src": "CSYB",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "camel case"
+   ],
+   "claim": "camel case"
+  },
+  {
+   "id": "P019",
+   "src": "CSYB",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "return 14 and not 20"
+   ],
+   "claim": "precedence"
+  },
+  {
+   "id": "P020",
+   "src": "CSYB",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "narrowing",
+    "explicitly"
+   ],
+   "claim": "narrowing requires explicit cast"
+  },
+  {
+   "id": "P021",
+   "src": "CSYB",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "1.999",
+    "discards the fractional part"
+   ],
+   "claim": "cast truncates"
+  },
+  {
+   "id": "P022",
+   "src": "CSYB",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "1/2.0",
+    "integer value 0"
+   ],
+   "claim": "integer division vs real division"
+  },
+  {
+   "id": "P023",
+   "src": "CSYB",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "(tabletCount + 99) / 100"
+   ],
+   "claim": "round up"
+  },
+  {
+   "id": "P024",
+   "src": "CSYB",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "not particularly meaningful to compare floating point",
+    "subtract them"
+   ],
+   "claim": "float == is not meaningful"
+  },
+  {
+   "id": "P025",
+   "src": "CSYB",
+   "pages": [
+    41,
+    42
+   ],
+   "terms": [
+    "&&",
+    "||"
+   ],
+   "claim": "logical operators"
+  },
+  {
+   "id": "P026",
+   "src": "CSYB",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "CAPITAL LETTERS"
+   ],
+   "claim": "constants in upper case"
+  },
+  {
+   "id": "P027",
+   "src": "CSYB",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "performed after the statement",
+    "do -- while"
+   ],
+   "claim": "do-while tests afterwards"
+  },
+  {
+   "id": "P028",
+   "src": "CSYB",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "dreaded goto",
+    "continue"
+   ],
+   "claim": "break/goto and continue"
+  },
+  {
+   "id": "P029",
+   "src": "CSYB",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "Give me the value after the increment"
+   ],
+   "claim": "++i"
+  },
+  {
+   "id": "P030",
+   "src": "CSYB",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "{0}",
+    "placeholder"
+   ],
+   "claim": "placeholders"
+  },
+  {
+   "id": "P031",
+   "src": "CSYB",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "Optional parameters must be provided after all the required ones"
+   ],
+   "claim": "optional parameters after the required ones"
+  },
+  {
+   "id": "P032",
+   "src": "CSYB",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "low:25",
+    "prompt:"
+   ],
+   "claim": "named arguments"
+  },
+  {
+   "id": "P033",
+   "src": "CSYB",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "method heading and also in the call"
+   ],
+   "claim": "ref in the header and in the call"
+  },
+  {
+   "id": "P034",
+   "src": "CSYB",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "output parameters are assigned values"
+   ],
+   "claim": "out: compiler requires assignment"
+  },
+  {
+   "id": "P035",
+   "src": "CSYB",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "does not let a variable in an inner block have",
+    "same name"
+   ],
+   "claim": "shadowing forbidden"
+  },
+  {
+   "id": "P036",
+   "src": "CSYB",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "confuse static with const"
+   ],
+   "claim": "static vs const"
+  },
+  {
+   "id": "P037",
+   "src": "CSYB",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "set to 0",
+    "no element scores"
+   ],
+   "claim": "array zeroed; no scores[11]"
+  },
+  {
+   "id": "P038",
+   "src": "CSYB",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "int [,] board"
+   ],
+   "claim": "2D array"
+  },
+  {
+   "id": "P039",
+   "src": "CSYB",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "System.FormatException",
+    "throwing an exception"
+   ],
+   "claim": "Parse throws FormatException"
+  },
+  {
+   "id": "P040",
+   "src": "CSYB",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "e.Message"
+   ],
+   "claim": "Exception.Message"
+  },
+  {
+   "id": "P041",
+   "src": "CSYB",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "Catch Everything",
+    "Pokemon"
+   ],
+   "claim": "do not catch everything"
+  },
+  {
+   "id": "P042",
+   "src": "CSYB",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "irrespective of whether"
+   ],
+   "claim": "finally"
+  },
+  {
+   "id": "P043",
+   "src": "CSYB",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "throw new Exception"
+   ],
+   "claim": "throw new"
+  },
+  {
+   "id": "P044",
+   "src": "CSYB",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "switch (selection)",
+    "default"
+   ],
+   "claim": "switch with default"
+  },
+  {
+   "id": "P045",
+   "src": "CSYB",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "ToUpper",
+    "ToLower"
+   ],
+   "claim": "ToUpper in switch"
+  },
+  {
+   "id": "P046",
+   "src": "CSYB",
+   "pages": [
+    79
+   ],
+   "terms": [
+    "StreamWriter",
+    "brand new, empty, file"
+   ],
+   "claim": "StreamWriter replaces the file"
+  },
+  {
+   "id": "P047",
+   "src": "CSYB",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "explicitly closed using the Close method",
+    "System.IO"
+   ],
+   "claim": "Close is mandatory; System.IO"
+  },
+  {
+   "id": "P048",
+   "src": "CSYB",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "EndOfStream"
+   ],
+   "claim": "EndOfStream"
+  },
+  {
+   "id": "P049",
+   "src": "CSYB",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "c:\\data\\2009\\November\\sales.txt"
+   ],
+   "claim": "path with @"
+  },
+  {
+   "id": "P050",
+   "src": "CSYB",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "enum SeaState",
+    "enumerated types"
+   ],
+   "claim": "enum"
+  },
+  {
+   "id": "P051",
+   "src": "CSYB",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "all the values in the source structure are copied"
+   ],
+   "claim": "struct copies values"
+  },
+  {
+   "id": "P052",
+   "src": "CSYB",
+   "pages": [
+    92
+   ],
+   "terms": [
+    "Structures are managed in terms of value whereas objects are managed in terms of reference"
+   ],
+   "claim": "value vs reference"
+  },
+  {
+   "id": "P053",
+   "src": "CSYB",
+   "pages": [
+    93,
+    94
+   ],
+   "terms": [
+    "reference called RobsAccount",
+    "new Account()"
+   ],
+   "claim": "class: reference and new"
+  },
+  {
+   "id": "P054",
+   "src": "CSYB",
+   "pages": [
+    96
+   ],
+   "terms": [
+    "Garbage Collector"
+   ],
+   "claim": "GC"
+  },
+  {
+   "id": "P055",
+   "src": "CSYB",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "encapsulation"
+   ],
+   "claim": "encapsulation"
+  },
+  {
+   "id": "P056",
+   "src": "CSYB",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "make it private",
+    "make it public"
+   ],
+   "claim": "private data, public methods"
+  },
+  {
+   "id": "P057",
+   "src": "CSYB",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "Static does not mean"
+   ],
+   "claim": "static is not constant"
+  },
+  {
+   "id": "P058",
+   "src": "CSYB",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "should always be made private"
+   ],
+   "claim": "private static"
+  },
+  {
+   "id": "P059",
+   "src": "CSYB",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "CS0120"
+   ],
+   "claim": "static method vs instance member"
+  },
+  {
+   "id": "P060",
+   "src": "CSYB",
+   "pages": [
+    108
+   ],
+   "terms": [
+    "compiler creates one for us"
+   ],
+   "claim": "default constructor"
+  },
+  {
+   "id": "P061",
+   "src": "CSYB",
+   "pages": [
+    108,
+    109
+   ],
+   "terms": [
+    "stops providing the default"
+   ],
+   "claim": "own constructor removes the default"
+  },
+  {
+   "id": "P062",
+   "src": "CSYB",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "another constructor in this class"
+   ],
+   "claim": "this(...)"
+  },
+  {
+   "id": "P063",
+   "src": "CSYB",
+   "pages": [
+    112,
+    113
+   ],
+   "terms": [
+    "Constructors cannot fail",
+    "throw an exception"
+   ],
+   "claim": "constructor does not fail"
+  },
+  {
+   "id": "P064",
+   "src": "CSYB",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "public interface IAccount",
+    "start with the letter I"
+   ],
+   "claim": "interface; I prefix"
+  },
+  {
+   "id": "P065",
+   "src": "CSYB",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "CS0535"
+   ],
+   "claim": "interface member not implemented"
+  },
+  {
+   "id": "P066",
+   "src": "CSYB",
+   "pages": [
+    120
+   ],
+   "terms": [
+    "Interfaces are just promises"
+   ],
+   "claim": "interfaces are promises"
+  },
+  {
+   "id": "P067",
+   "src": "CSYB",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "definitely can",
+    "virtual",
+    "protected"
+   ],
+   "claim": "virtual required; protected"
+  },
+  {
+   "id": "P068",
+   "src": "CSYB",
+   "pages": [
+    125,
+    126
+   ],
+   "terms": [
+    "new bool WithdrawFunds",
+    "Replace Methods"
+   ],
+   "claim": "new and Don't Replace Methods"
+  },
+  {
+   "id": "P069",
+   "src": "CSYB",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "sealed"
+   ],
+   "claim": "sealed"
+  },
+  {
+   "id": "P070",
+   "src": "CSYB",
+   "pages": [
+    128
+   ],
+   "terms": [
+    "abstract",
+    "not possible to make an instance of an abstract class"
+   ],
+   "claim": "abstract class cannot be instantiated"
+  },
+  {
+   "id": "P071",
+   "src": "CSYB",
+   "pages": [
+    130
+   ],
+   "terms": [
+    "Use Interface References"
+   ],
+   "claim": "reference through an interface"
+  },
+  {
+   "id": "P072",
+   "src": "CSYB",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "child of the object class"
+   ],
+   "claim": "everything inherits from object"
+  },
+  {
+   "id": "P073",
+   "src": "CSYB",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "System.Object",
+    "ToString"
+   ],
+   "claim": "ToString of object"
+  },
+  {
+   "id": "P074",
+   "src": "CSYB",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "Equals method rather than the == operator"
+   ],
+   "claim": "Equals vs =="
+  },
+  {
+   "id": "P075",
+   "src": "CSYB",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "Good Manners",
+    "Equals and ToString"
+   ],
+   "claim": "good manners"
+  },
+  {
+   "id": "P076",
+   "src": "CSYB",
+   "pages": [
+    136
+   ],
+   "terms": [
+    "immutable"
+   ],
+   "claim": "string is immutable"
+  },
+  {
+   "id": "P077",
+   "src": "CSYB",
+   "pages": [
+    137
+   ],
+   "terms": [
+    "Substring"
+   ],
+   "claim": "Substring"
+  },
+  {
+   "id": "P078",
+   "src": "CSYB",
+   "pages": [
+    138
+   ],
+   "terms": [
+    "StringBuilder",
+    "System.Text"
+   ],
+   "claim": "StringBuilder"
+  },
+  {
+   "id": "P079",
+   "src": "CSYB",
+   "pages": [
+    140
+   ],
+   "terms": [
+    "the thing that is being assigned"
+   ],
+   "claim": "value in set"
+  },
+  {
+   "id": "P080",
+   "src": "CSYB",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "no way that the property can return a value"
+   ],
+   "claim": "set does not report failure"
+  },
+  {
+   "id": "P081",
+   "src": "CSYB",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "type safe reference to a method"
+   ],
+   "claim": "delegate"
+  },
+  {
+   "id": "P082",
+   "src": "CSYB",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "new CalculateFee (RipoffFee)"
+   ],
+   "claim": "use of delegates"
+  },
+  {
+   "id": "P083",
+   "src": "CSYB",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "event handlers",
+    "manage threads"
+   ],
+   "claim": "delegates in events and threads"
+  },
+  {
+   "id": "P084",
+   "src": "CSYB",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "hash clash"
+   ],
+   "claim": "hash collision"
+  },
+  {
+   "id": "P085",
+   "src": "CSYB",
+   "pages": [
+    148
+   ],
+   "terms": [
+    "Hashtable",
+    "as operator"
+   ],
+   "claim": "Hashtable and as"
+  },
+  {
+   "id": "P086",
+   "src": "CSYB",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "not typesafe",
+    "KitchenSink"
+   ],
+   "claim": "ArrayList is not typesafe"
+  },
+  {
+   "id": "P087",
+   "src": "CSYB",
+   "pages": [
+    151
+   ],
+   "terms": [
+    "List class",
+    "typesafe"
+   ],
+   "claim": "List<T> is typesafe"
+  },
+  {
+   "id": "P088",
+   "src": "CSYB",
+   "pages": [
+    153
+   ],
+   "terms": [
+    "in preference to hashtables and arraylists",
+    "KeyNotFoundException"
+   ],
+   "claim": "List/Dictionary in preference; KeyNotFound"
+  },
+  {
+   "id": "P089",
+   "src": "CSYB",
+   "pages": [
+    156
+   ],
+   "terms": [
+    "catch",
+    "Close"
+   ],
+   "claim": "Save/Load close the file"
+  },
+  {
+   "id": "P090",
+   "src": "CSYB",
+   "pages": [
+    157
+   ],
+   "terms": [
+    "factory"
+   ],
+   "claim": "factory method"
+  },
+  {
+   "id": "P091",
+   "src": "CSYB",
+   "pages": [
+    163
+   ],
+   "terms": [
+    "GetType().Name"
+   ],
+   "claim": "type name"
+  },
+  {
+   "id": "P092",
+   "src": "CSYB",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "numeric values"
+   ],
+   "claim": "numbers instead of messages"
+  },
+  {
+   "id": "P093",
+   "src": "CSYB",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "time slicing"
+   ],
+   "claim": "threads by alternation"
+  },
+  {
+   "id": "P094",
+   "src": "CSYB",
+   "pages": [
+    174
+   ],
+   "terms": [
+    "ThreadStart"
+   ],
+   "claim": "ThreadStart"
+  },
+  {
+   "id": "P095",
+   "src": "CSYB",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "overDraftCount",
+    "A count increment has been lost"
+   ],
+   "claim": "lost update"
+  },
+  {
+   "id": "P096",
+   "src": "CSYB",
+   "pages": [
+    178
+   ],
+   "terms": [
+    "Monitor.Enter(sync)",
+    "Monitor.Exit(sync)"
+   ],
+   "claim": "Monitor"
+  },
+  {
+   "id": "P097",
+   "src": "CSYB",
+   "pages": [
+    178
+   ],
+   "terms": [
+    "Deadly Embrace"
+   ],
+   "claim": "deadly embrace"
+  },
+  {
+   "id": "P098",
+   "src": "CSYB",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "Abort",
+    "Suspend",
+    "Resume",
+    "Join"
+   ],
+   "claim": "thread control"
+  },
+  {
+   "id": "P099",
+   "src": "CSYB",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "producers or consumers"
+   ],
+   "claim": "producers and consumers"
+  },
+  {
+   "id": "P100",
+   "src": "CSYB",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "public class BankException : System.Exception"
+   ],
+   "claim": "custom exception"
+  },
+  {
+   "id": "P101",
+   "src": "CSYB",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "must be based on the System.Exception class"
+   ],
+   "claim": "throw requires System.Exception"
+  },
+  {
+   "id": "P102",
+   "src": "CSYB",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "catch (System.Exception exception"
+   ],
+   "claim": "generic catch last"
+  },
+  {
+   "id": "P103",
+   "src": "CSYB",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "csc /target:library"
+   ],
+   "claim": "library with csc"
+  },
+  {
+   "id": "P104",
+   "src": "CSYB",
+   "pages": [
+    186
+   ],
+   "terms": [
+    "dll hell"
+   ],
+   "claim": "DLL hell"
+  },
+  {
+   "id": "P105",
+   "src": "CSYB",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "Windows Presentation Foundation"
+   ],
+   "claim": "WPF"
+  },
+  {
+   "id": "P106",
+   "src": "CSYB",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "RoutedEventHandler",
+    "-= operator"
+   ],
+   "claim": "events with += and -="
+  },
+  {
+   "id": "P107",
+   "src": "CSYB",
+   "pages": [
+    200
+   ],
+   "terms": [
+    "Fault Reporting"
+   ],
+   "claim": "fault report"
+  },
+  {
+   "id": "P108",
+   "src": "CSYB",
+   "pages": [
+    201
+   ],
+   "terms": [
+    "stack overflow"
+   ],
+   "claim": "stack overflow as a cause of crashes"
+  },
+  {
+   "id": "P109",
+   "src": "CSYB",
+   "pages": [
+    202
+   ],
+   "terms": [
+    "Bug Fixes Cause Bugs"
+   ],
+   "claim": "fixes cause bugs"
+  },
+  {
+   "id": "P110",
+   "src": "CSYB",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "serialisation",
+    "reflection"
+   ],
+   "claim": "topics not covered"
+  },
+  {
+   "id": "P111",
+   "src": "CSYB",
+   "pages": [
+    211
+   ],
+   "terms": [
+    "Signature",
+    "Structure",
+    "copied on assignment"
+   ],
+   "claim": "glossary: Signature/Structure"
+  },
+  {
+   "id": "P112",
+   "src": "CSYB",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "Value type",
+    "Virtual Method"
+   ],
+   "claim": "glossary: Value type/Virtual"
+  },
+  {
+   "id": "P113",
+   "src": "CSHist",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "Released November 2025",
+    "Extension members",
+    "C# 14"
+   ],
+   "claim": "C# 14 released in Nov/2025"
+  },
+  {
+   "id": "P114",
+   "src": "CSHist",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "standard library",
+    "Each version may add new requirements"
+   ],
+   "claim": "library dependency"
+  },
+  {
+   "id": "P115",
+   "src": "CSHist",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "Released November 2024",
+    "params collections",
+    "New lock type"
+   ],
+   "claim": "C# 13"
+  },
+  {
+   "id": "P116",
+   "src": "CSHist",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "Released November 2023",
+    "Primary constructors"
+   ],
+   "claim": "C# 12"
+  },
+  {
+   "id": "P117",
+   "src": "CSHist",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Released November 2022",
+    "List patterns",
+    "Raw string literals"
+   ],
+   "claim": "C# 11"
+  },
+  {
+   "id": "P118",
+   "src": "CSHist",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Interceptors",
+    "Alias any type"
+   ],
+   "claim": "C# 12: alias and interceptors"
+  },
+  {
+   "id": "P119",
+   "src": "CSHist",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Released November 2021",
+    "Record structs",
+    "Extended property patterns"
+   ],
+   "claim": "C# 10"
+  },
+  {
+   "id": "P120",
+   "src": "CSHist",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "Released November 2020",
+    ".NET 5",
+    "Records"
+   ],
+   "claim": "C# 9"
+  },
+  {
+   "id": "P121",
+   "src": "CSHist",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "yearly cadence",
+    "static abstract members in interfaces"
+   ],
+   "claim": "annual cadence; C# 10 preview"
+  },
+  {
+   "id": "P122",
+   "src": "CSHist",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Relational patterns",
+    "e is not null",
+    "covariant return types"
+   ],
+   "claim": "C# 9 patterns"
+  },
+  {
+   "id": "P123",
+   "src": "CSHist",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Top level statements",
+    "nondestructive mutation"
+   ],
+   "claim": "top-level and with"
+  },
+  {
+   "id": "P124",
+   "src": "CSHist",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "Released September 2019",
+    "first major C# release that specifically targets .NET Core"
+   ],
+   "claim": "C# 8"
+  },
+  {
+   "id": "P125",
+   "src": "CSHist",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Nullable reference types",
+    "Asynchronous streams",
+    "Indices and ranges",
+    "Null-coalescing assignment"
+   ],
+   "claim": "C# 8: NRT, streams, ranges, ??="
+  },
+  {
+   "id": "P126",
+   "src": "CSHist",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Released May 2018"
+   ],
+   "claim": "C# 7.3"
+  },
+  {
+   "id": "P127",
+   "src": "CSHist",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Released November 2017",
+    "readonly struct",
+    "ref struct"
+   ],
+   "claim": "C# 7.2"
+  },
+  {
+   "id": "P128",
+   "src": "CSHist",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "Released August 2017",
+    "async Main",
+    "Released March 2017"
+   ],
+   "claim": "C# 7.1 and 7.0"
+  },
+  {
+   "id": "P129",
+   "src": "CSHist",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "Released July 2015",
+    "Null propagator",
+    "nameof operator"
+   ],
+   "claim": "C# 6.0"
+  },
+  {
+   "id": "P130",
+   "src": "CSHist",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "Roslyn",
+    "Released August 2012",
+    "Released April 2010"
+   ],
+   "claim": "Roslyn; 5.0; 4.0"
+  },
+  {
+   "id": "P131",
+   "src": "CSHist",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "Released November 2007",
+    "Visual Studio 2008",
+    "dynamic"
+   ],
+   "claim": "C# 3.0 and dynamic"
+  },
+  {
+   "id": "P132",
+   "src": "CSHist",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "Released November 2005",
+    "ListInt",
+    "ArrayList"
+   ],
+   "claim": "C# 2.0 generics"
+  },
+  {
+   "id": "P133",
+   "src": "CSHist",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "Released April 2003",
+    "Dispose",
+    "Released January 2002"
+   ],
+   "claim": "C# 1.2 and 1.0"
+  },
+  {
+   "id": "P134",
+   "src": "CSHist",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "Last updated on 11/18/2025"
+   ],
+   "claim": "update date"
+  },
+  {
+   "id": "P135",
+   "src": "CS12",
+   "pages": [
+    1
+   ],
+   "terms": [
+    ".NET 8 SDK",
+    "Primary constructors",
+    "C# 12 is supported on .NET 8"
+   ],
+   "claim": "C# 12 on .NET 8"
+  },
+  {
+   "id": "P136",
+   "src": "CS12",
+   "pages": [
+    1,
+    2
+   ],
+   "terms": [
+    "any class and struct",
+    "this() syntax",
+    "prevents the compiler from declaring an implicit parameterless constructor"
+   ],
+   "claim": "primary constructor rules"
+  },
+  {
+   "id": "P137",
+   "src": "CS12",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "only in record types"
+   ],
+   "claim": "properties only in records"
+  },
+  {
+   "id": "P138",
+   "src": "CS12",
+   "pages": [
+    2,
+    3
+   ],
+   "terms": [
+    "spread element",
+    "System.Span<T>"
+   ],
+   "claim": "collection expressions"
+  },
+  {
+   "id": "P139",
+   "src": "CS12",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "ref readonly",
+    "It won't be a breaking change for callers"
+   ],
+   "claim": "ref readonly"
+  },
+  {
+   "id": "P140",
+   "src": "CS12",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "InlineArray(10)",
+    "Alias any type"
+   ],
+   "claim": "inline arrays and alias"
+  },
+  {
+   "id": "P141",
+   "src": "CS12",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "ExperimentalAttribute",
+    "Interceptors are an experimental feature"
+   ],
+   "claim": "Experimental and interceptors"
+  },
+  {
+   "id": "P142",
+   "src": "CS12",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "InterceptorsPreviewNamespaces"
+   ],
+   "claim": "interceptors project property"
+  },
+  {
+   "id": "P143",
+   "src": "CS13",
+   "pages": [
+    1
+   ],
+   "terms": [
+    ".NET 9 SDK",
+    "C# 13 is supported on .NET 9",
+    "field contextual keyword as a preview"
+   ],
+   "claim": "C# 13 on .NET 9; field preview"
+  },
+  {
+   "id": "P144",
+   "src": "CS13",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "IReadOnlyList<T>",
+    "synthesizes the storage"
+   ],
+   "claim": "params collections"
+  },
+  {
+   "id": "P145",
+   "src": "CS13",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "System.Threading.Lock",
+    "Lock.EnterScope()",
+    "System.Threading.Monitor"
+   ],
+   "claim": "new Lock"
+  },
+  {
+   "id": "P146",
+   "src": "CS13",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "No other code needs to change"
+   ],
+   "claim": "only change the type of the object"
+  },
+  {
+   "id": "P147",
+   "src": "CS13",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "U+001B",
+    "\\x1b"
+   ],
+   "claim": "escape \\e"
+  },
+  {
+   "id": "P148",
+   "src": "CS13",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "from the end",
+    "object initializer"
+   ],
+   "claim": "implicit indexer"
+  },
+  {
+   "id": "P149",
+   "src": "CS13",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "can't be accessed across an await boundary"
+   ],
+   "claim": "ref local in async"
+  },
+  {
+   "id": "P150",
+   "src": "CS13",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "allows ref struct",
+    "boxing conversion"
+   ],
+   "claim": "allows ref struct and interfaces"
+  },
+  {
+   "id": "P151",
+   "src": "CS13",
+   "pages": [
+    5,
+    6
+   ],
+   "terms": [
+    "partial properties",
+    "auto-property declaration"
+   ],
+   "claim": "partial properties"
+  },
+  {
+   "id": "P152",
+   "src": "CS13",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "OverloadResolutionPriorityAttribute"
+   ],
+   "claim": "overload priority"
+  },
+  {
+   "id": "P153",
+   "src": "CS13",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "@field",
+    "potential breaking change"
+   ],
+   "claim": "field: caution"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "src": "CSYB",
+   "terms": [
+    "boxing",
+    "unboxing"
+   ],
+   "claim": "CSYB does not cover boxing/unboxing"
+  },
+  {
+   "id": "N002",
+   "src": "CSYB",
+   "terms": [
+    "IDisposable",
+    "re:\\.Dispose\\s*\\("
+   ],
+   "claim": "CSYB does not cover IDisposable/Dispose()"
+  },
+  {
+   "id": "N003",
+   "src": "CSYB",
+   "terms": [
+    "re:\\busing\\s*\\(",
+    "re:\\busing\\s+var\\b"
+   ],
+   "claim": "CSYB does not use the using disposal statement"
+  },
+  {
+   "id": "N004",
+   "src": "CSYB",
+   "terms": [
+    "re:\\bthrow\\s*;",
+    "re:\\bthrow\\s+ex\\s*;"
+   ],
+   "claim": "CSYB does not cover throw; or throw ex;"
+  },
+  {
+   "id": "N005",
+   "src": "CSYB",
+   "terms": [
+    "re:\\block\\s*\\(",
+    "re:\\block\\s*\\{"
+   ],
+   "claim": "CSYB does not have the lock statement"
+  },
+  {
+   "id": "N006",
+   "src": "CSYB",
+   "terms": [
+    "GetHashCode"
+   ],
+   "claim": "CSYB does not mention GetHashCode"
+  },
+  {
+   "id": "N007",
+   "src": "CSYB",
+   "terms": [
+    "TryParse"
+   ],
+   "claim": "CSYB does not mention TryParse"
+  },
+  {
+   "id": "N008",
+   "src": "CSYB",
+   "terms": [
+    "Math.Abs",
+    "epsilon",
+    "IEEE"
+   ],
+   "claim": "CSYB does not mention Math.Abs/epsilon/IEEE"
+  },
+  {
+   "id": "N009",
+   "src": "CSYB",
+   "terms": [
+    "NullReferenceException",
+    "IndexOutOfRange",
+    "DivideByZero",
+    "InvalidCast"
+   ],
+   "claim": "CSYB does not name those exceptions"
+  },
+  {
+   "id": "N010",
+   "src": "CSYB",
+   "terms": [
+    "ArgumentException",
+    "ArgumentNullException"
+   ],
+   "claim": "CSYB does not mention ArgumentException"
+  },
+  {
+   "id": "N011",
+   "src": "CSYB",
+   "terms": [
+    "re:\\b(un)?checked\\s*[({]",
+    "OverflowException"
+   ],
+   "claim": "CSYB does not mention checked/unchecked/OverflowException"
+  },
+  {
+   "id": "N012",
+   "src": "CSYB",
+   "terms": [
+    "re:\\bCLR\\b",
+    "re:\\bJIT\\b",
+    "Intermediate Language",
+    "MSIL"
+   ],
+   "claim": "CSYB does not mention CLR/JIT/CIL"
+  },
+  {
+   "id": "N013",
+   "src": "CSYB",
+   "terms": [
+    "re:\\bheap\\b",
+    "vtable"
+   ],
+   "claim": "CSYB does not mention heap or vtable"
+  },
+  {
+   "id": "N014",
+   "src": "CSYB",
+   "terms": [
+    "re:\\binternal\\b",
+    "readonly struct"
+   ],
+   "claim": "CSYB does not mention internal or readonly struct"
+  },
+  {
+   "id": "N015",
+   "src": "CSYB",
+   "terms": [
+    "re:\\basync\\b",
+    "re:\\bawait\\b",
+    "Language-Integrated",
+    "lambda"
+   ],
+   "claim": "CSYB does not mention async/await/LINQ/lambda"
+  },
+  {
+   "id": "N016",
+   "src": "CSYB",
+   "terms": [
+    "re:\\bvar\\s+\\w+\\s*=",
+    "nullable",
+    "pattern matching"
+   ],
+   "claim": "CSYB does not mention var/nullable/pattern matching"
+  },
+  {
+   "id": "N017",
+   "src": "CSYB",
+   "terms": [
+    "re:short.?circuit",
+    "re:fall.?through",
+    "UTF-16"
+   ],
+   "claim": "CSYB does not mention short-circuit/fall-through/UTF-16"
+  },
+  {
+   "id": "N018",
+   "src": "CSYB",
+   "terms": [
+    "re:\\d\\.\\d+m\\b",
+    "re:\\s%\\s"
+   ],
+   "claim": "CSYB does not use the m suffix or the % operator"
+  },
+  {
+   "id": "N019",
+   "src": "CSYB",
+   "terms": [
+    "Debug.Assert",
+    "Assert("
+   ],
+   "claim": "CSYB does not mention Debug.Assert"
+  },
+  {
+   "id": "N020",
+   "src": "CSYB",
+   "terms": [
+    "re:\\brecord\\s+(class|struct)\\b",
+    "re:\\bwith\\s*\\{"
+   ],
+   "claim": "CSYB does not mention records"
+  },
+  {
+   "id": "N021",
+   "src": "CSHist",
+   "terms": [
+    "Visual Studio 2019",
+    "Visual Studio 2022",
+    "v15.3",
+    "v16.8"
+   ],
+   "claim": "CSHist does not have VS 2019/2022 or minor versions"
+  },
+  {
+   "id": "N022",
+   "src": "CSHist",
+   "terms": [
+    ".NET 7",
+    ".NET 10",
+    ".NET 8",
+    ".NET 9"
+   ],
+   "claim": "CSHist does not state .NET 7-10"
+  },
+  {
+   "id": "N023",
+   "src": "CSHist",
+   "terms": [
+    "DLR",
+    "state machine",
+    "string interning"
+   ],
+   "claim": "CSHist does not have DLR/state machine"
+  },
+  {
+   "id": "N024",
+   "src": "CSHist",
+   "terms": [
+    "#nullable",
+    "Nullable>enable",
+    "billion dollar"
+   ],
+   "claim": "CSHist does not have #nullable or 'billion-dollar mistake'"
+  },
+  {
+   "id": "N025",
+   "src": "CSHist",
+   "terms": [
+    "ReadOnlySpan<byte>",
+    "Deconstruct("
+   ],
+   "claim": "CSHist does not have ReadOnlySpan<byte> or Deconstruct()"
+  },
+  {
+   "id": "N026",
+   "src": "CS13",
+   "terms": [
+    "allocation",
+    "stack allocate"
+   ],
+   "claim": "CS13 does not claim an allocation gain"
+  },
+  {
+   "id": "N027",
+   "src": "CS13",
+   "terms": [
+    "lock(this)",
+    "lock (this)",
+    "interning"
+   ],
+   "claim": "CS13 does not cover lock(this)"
+  },
+  {
+   "id": "N028",
+   "src": "CS12",
+   "terms": [
+    "boxing",
+    "Deconstruct("
+   ],
+   "claim": "CS12 does not have boxing/Deconstruct()"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "clean-architecture-ddd-expert",
+  "version": "2.0.0",
+  "description": "Expert in DDD (Evans, DDD Reference), Clean Architecture (Uncle Bob posts, 2011 and 2012), SRP/OCP/SOLID (posts), software complexity (Out of the Tar Pit) and Reactive Systems (Reactive Manifesto 2.0). Cites PDF pages, labels [from source]/[inference]/[extrapolation]/[DATED] and states what the corpus does not cover.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Team"
+  },
+  "keywords": [
+    "ddd",
+    "clean-architecture",
+    "solid",
+    "dependency-rule",
+    "bounded-context",
+    "aggregate",
+    "out-of-the-tar-pit",
+    "reactive-manifesto"
+  ]
+}

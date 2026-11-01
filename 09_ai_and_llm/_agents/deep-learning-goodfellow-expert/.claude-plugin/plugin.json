@@ -1,0 +1,19 @@
+{
+  "name": "deep-learning-goodfellow-expert",
+  "version": "1.0.0",
+  "description": "Deep learning specialist grounded in Deep Learning (Goodfellow, Bengio, Courville, MIT Press, 2016): applied math, ML fundamentals, feedforward networks and backprop, regularization, optimization, CNNs, RNNs/LSTM, practical methodology (training diagnosis), 2016 applications and, by sampling, Part III (autoencoders, probabilistic models, VAE/GAN). The 2016 book is [DATED]: it does not cover Transformers, LLMs or modern attention. Does not replace experimental validation.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "deep-learning",
+    "backpropagation",
+    "regularization",
+    "optimization",
+    "convolutional-networks",
+    "recurrent-networks",
+    "practical-methodology",
+    "training-diagnosis",
+    "information-theory",
+    "goodfellow"
+  ]
+}

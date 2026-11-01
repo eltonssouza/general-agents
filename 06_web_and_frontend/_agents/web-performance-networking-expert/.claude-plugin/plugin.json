@@ -1,0 +1,25 @@
+{
+  "name": "web-performance-networking-expert",
+  "version": "1.1.0",
+  "description": "Web networking and performance specialist based on High Performance Browser Networking (Ilya Grigorik, O'Reilly, 1st ed., 2013): latency, TCP, UDP/NAT, TLS up to 1.2, mobile networks, HTTP 1.x, HTTP 2.0 as a 2013 draft, XHR, SSE, WebSocket and WebRTC.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Platform"
+  },
+  "keywords": [
+    "web-performance",
+    "networking",
+    "latency",
+    "tcp",
+    "udp",
+    "tls",
+    "mobile",
+    "http1",
+    "http2-draft",
+    "xhr",
+    "sse",
+    "websocket",
+    "webrtc",
+    "grigorik"
+  ]
+}

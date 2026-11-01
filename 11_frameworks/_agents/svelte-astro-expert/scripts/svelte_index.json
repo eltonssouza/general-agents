@@ -1,0 +1,619 @@
+{
+ "versao": 1,
+ "fontes": {
+  "SVHB": "Svelte-Handbook-freeCodeCamp.pdf (The Svelte Handbook, Flavio Copes; header 22 Oct 2019; Svelte version not declared, pre-runes syntax; 49 pages; captured in 2026)",
+  "SKGS": "SvelteKit-Getting-Started.pdf (SvelteKit Docs, Introduction; no version or content date; captured 18 Aug 2026; 3 pages, useful 1-2)",
+  "ASTRO": "Astro-Getting-Started.pdf (Astro Docs, landing; banner 'Astro v7 is here'; captured 18 Aug 2026; 3 pages, landing only)"
+ },
+ "convencao": "page = PDF page ('=== PAGE N ===' marker); no source has printed book page numbering",
+ "paginas_totais": {
+  "SVHB": 49,
+  "SKGS": 3,
+  "ASTRO": 3
+ },
+ "paginas_sem_texto_util": {
+  "SVHB": [
+   5,
+   7
+  ],
+  "SKGS": [
+   3
+  ],
+  "ASTRO": []
+ },
+ "topicos": [
+  {
+   "fonte": "SVHB",
+   "tema": "Cover: The Svelte Handbook, Flavio Copes, 22 Oct 2019",
+   "paginas": [
+    1
+   ],
+   "chaves": "capa autor flavio copes freecodecamp 2019 handbook data frontend iniciantes cover author title page date beginners cover: the svelte handbook  flavio copes  22 oct 2019",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Table of contents and introduction: Svelte as a front-end framework",
+   "paginas": [
+    2
+   ],
+   "chaves": "sumario indice introducao framework frontend web aplicacoes table of contents introduction web applications table of contents and introduction: svelte as a front-end framework",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Svelte is compiled ahead of time: the framework is not served to the visitor",
+   "paginas": [
+    3
+   ],
+   "chaves": "compilado compiler compile beforehand bundle largura de banda rapido leve desaparece javascript puro react vue angular compiled ahead of time bandwidth fast lightweight disappears plain javascript svelte is compiled ahead of time: the framework is not served to the visitor",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Node.js prerequisite and the Svelte playground (REPL)",
+   "paginas": [
+    3
+   ],
+   "chaves": "node.js node playground repl svelte.dev instalar pre-requisito install prerequisite node.js prerequisite and the svelte playground (repl)",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Create a project with Vite: npm create vite@latest ... --template svelte",
+   "paginas": [
+    4
+   ],
+   "chaves": "npm create vite template svelte helloworld npm install npm run dev comando criar projeto scaffold vite create project command scaffold create a project with vite: npm create vite@latest ... --template svelte",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Development server on port 5173",
+   "paginas": [
+    4,
+    5
+   ],
+   "chaves": "dev server localhost 5173 npm run dev desenvolvimento porta development server port development server on port 5173",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "VS Code and the Svelte for VS Code extension",
+   "paginas": [
+    6,
+    7
+   ],
+   "chaves": "vscode vs code extensao extension highlight editor code . extension editor vs code and the svelte for vs code extension",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Project structure: main.js and App.svelte",
+   "paginas": [
+    8
+   ],
+   "chaves": "src main.js app.svelte entrada entry point counter lib estrutura pasta entry entry point project structure folder project structure: main.js and app.svelte",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Single file component: script, markup and style",
+   "paginas": [
+    8,
+    9
+   ],
+   "chaves": "single file component sfc script style markup html css js tres secoes three sections single file component: script  markup and style",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Component in a .svelte file and scoped CSS",
+   "paginas": [
+    10,
+    11
+   ],
+   "chaves": "componente component .svelte escopo scoped css style vaza leak dog.svelte export let component scoped css leaks component in a .svelte file and scoped css",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Importing and using components as HTML tags",
+   "paginas": [
+    11,
+    12
+   ],
+   "chaves": "import importar componente tag house dog composicao import component tag composition importing and using components as html tags",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "script context=\"module\" to export functions",
+   "paginas": [
+    12,
+    13,
+    14
+   ],
+   "chaves": "context module script exportar funcao export function button changecolor export function script context=\"module\" to export functions",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "State: simple assignment with let",
+   "paginas": [
+    14,
+    15
+   ],
+   "chaves": "estado state let count count++ atribuicao assignment usestate setter state assignment setter state: simple assignment with let",
+   "ref": "02-estado-reatividade-props.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Arrays: push/pop/shift/splice require reassignment",
+   "paginas": [
+    15,
+    16
+   ],
+   "chaves": "array push pop shift splice reatribuir list = list spread imutavel mutacao reassign reassign immutable mutation arrays: push/pop/shift/splice require reassignment",
+   "ref": "02-estado-reatividade-props.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Reactivity with $: (reactive blocks)",
+   "paginas": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "chaves": "reatividade reactivity $: reativo bloco re-executa derivada double console.log reactive block re-runs derived reactivity with $: (reactive blocks)",
+   "ref": "02-estado-reatividade-props.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Props: export let and one-way communication",
+   "paginas": [
+    19,
+    20,
+    21
+   ],
+   "chaves": "props prop export let disabled signupform pai filho one-way unidirecional shorthand parent child one-way shorthand props: export let and one-way communication",
+   "ref": "02-estado-reatividade-props.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Sharing state: props and lifting state up",
+   "paginas": [
+    21,
+    22
+   ],
+   "chaves": "lifting state up props estado compartilhado ancestral comum shared state common ancestor sharing state: props and lifting state up",
+   "ref": "03-estado-compartilhado-contexto-stores.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Context API: setContext and getContext",
+   "paginas": [
+    22,
+    23
+   ],
+   "chaves": "context api setcontext getcontext chave descendentes key descendants context api: setcontext and getcontext",
+   "ref": "03-estado-compartilhado-contexto-stores.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Writable stores: set, update, get, $store, subscribe",
+   "paginas": [
+    23,
+    24,
+    25
+   ],
+   "chaves": "store stores writable svelte/store set update get subscribe $username $ prefixo reservado reserved prefix writable stores: set  update  get  $store  subscribe",
+   "ref": "03-estado-compartilhado-contexto-stores.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Readable stores (read-only from outside)",
+   "paginas": [
+    26,
+    27
+   ],
+   "chaves": "readable store readonly set callback setinterval setTimeout timer read only readable stores (read-only from outside)",
+   "ref": "03-estado-compartilhado-contexto-stores.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Derived stores",
+   "paginas": [
+    27,
+    28
+   ],
+   "chaves": "derived store derivada welcomemessage derived store derived stores",
+   "ref": "03-estado-compartilhado-contexto-stores.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Slots: <slot />, default and named slots",
+   "paginas": [
+    28,
+    29,
+    30
+   ],
+   "chaves": "slot slots named slot nomeado default children props.children composicao named slot default composition slots: <slot />  default and named slots",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Lifecycle events: onMount, onDestroy, beforeUpdate, afterUpdate",
+   "paginas": [
+    30,
+    31
+   ],
+   "chaves": "lifecycle ciclo de vida onmount ondestroy beforeupdate afterupdate import svelte lifecycle import svelte lifecycle events: onmount  ondestroy  beforeupdate  afterupdate",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "onMount returning a function is equivalent to onDestroy",
+   "paginas": [
+    31,
+    32
+   ],
+   "chaves": "onmount retorno cleanup setinterval clearinterval limpar timer return cleanup clear timer onmount returning a function is equivalent to ondestroy",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "bind:value and the let rule (not const)",
+   "paginas": [
+    32,
+    33
+   ],
+   "chaves": "bind:value binding two-way duas vias input textarea select let const formulario two-way form bind:value and the let rule (not const)",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "bind:checked, bind:group, bind:indeterminate",
+   "paginas": [
+    34,
+    35
+   ],
+   "chaves": "checkbox radio bind:checked bind:group bind:indeterminate gooddogs checkbox radio bind:checked  bind:group  bind:indeterminate",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "select with bind:value and multiple",
+   "paginas": [
+    35,
+    36,
+    37
+   ],
+   "chaves": "select option multiple bind:value objeto selecionado dogs selected object select with bind:value and multiple",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Other bindings: files, open, media, contenteditable, read-only",
+   "paginas": [
+    37,
+    38
+   ],
+   "chaves": "bind:files bind:open audio video currenttime duration textcontent innerhtml offsetwidth clientheight read-only media read-only other bindings: files  open  media  contenteditable  read-only",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "bind:this: element reference",
+   "paginas": [
+    38
+   ],
+   "chaves": "bind:this referencia elemento dom onmount myinputfield element reference dom bind:this: element reference",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "bind on component props",
+   "paginas": [
+    38,
+    39
+   ],
+   "chaves": "bind prop componente car inmovement bind: props component props bind on component props",
+   "ref": "04-slots-lifecycle-bindings.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "{#if}, {:else}, {:else if}",
+   "paginas": [
+    39,
+    40,
+    41,
+    42
+   ],
+   "chaves": "if else else if condicional conditional truthy falsy isred isgreen conditional {#if}  {:else}  {:else if}",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "{#each} with index and key",
+   "paginas": [
+    42,
+    43,
+    44
+   ],
+   "chaves": "each loop laco lista indice index chave key identificador (dog.id) keyed loop list index key identifier {#each} with index and key",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "{#await}: promises in the template ({:then}, {:catch})",
+   "paginas": [
+    44,
+    45
+   ],
+   "chaves": "await promise promessa then catch fetch rejeicao pending promise rejection pending {#await}: promises in the template ({:then}  {:catch})",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "DOM events with on:event",
+   "paginas": [
+    45,
+    46
+   ],
+   "chaves": "on:click evento dom handler listener inline event objeto event handler listener inline dom events with on:event",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Event modifiers (preventDefault, stopPropagation, once...)",
+   "paginas": [
+    47
+   ],
+   "chaves": "modificadores preventdefault stoppropagation capture once self | modifiers event modifiers (preventdefault  stoppropagation  once...)",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Custom events: createEventDispatcher and dispatch",
+   "paginas": [
+    47,
+    48,
+    49
+   ],
+   "chaves": "createeventdispatcher dispatch evento customizado custom event on:eventname detail custom event custom events: createeventdispatcher and dispatch",
+   "ref": "05-templates-controle-eventos.md"
+  },
+  {
+   "fonte": "SVHB",
+   "tema": "Where to go next: official site and SvelteKit",
+   "paginas": [
+    49
+   ],
+   "chaves": "onde ir proximos passos sveltekit ssr node onde aprender next steps where to go where to learn where to go next: official site and sveltekit",
+   "ref": "01-svelte-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "What SvelteKit is (comparison with Next and Nuxt)",
+   "paginas": [
+    1
+   ],
+   "chaves": "sveltekit framework aplicacoes web next nuxt react vue similar web applications similar what sveltekit is (comparison with next and nuxt)",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "What Svelte is (component compiler)",
+   "paginas": [
+    1,
+    2
+   ],
+   "chaves": "svelte compilador compiler componentes javascript html css navbar compiler components what svelte is (component compiler)",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "SvelteKit vs Svelte: router, SSR, prerender, offline, preload, images",
+   "paginas": [
+    2
+   ],
+   "chaves": "sveltekit vs svelte router ssr csr prerendering preload offline image optimization build optimizations renderizacao rendering sveltekit vs svelte: router  ssr  prerender  offline  preload  images",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "Vite, the Svelte plugin and HMR in development",
+   "paginas": [
+    2
+   ],
+   "chaves": "vite plugin svelte hmr hot module replacement desenvolvimento development vite  the svelte plugin and hmr in development",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "Navigation: next page 'Creating a project' (outside the capture)",
+   "paginas": [
+    2
+   ],
+   "chaves": "creating a project proxima pagina next previous next page previous page navigation: next page 'creating a project' (outside the capture)",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "SKGS",
+   "tema": "Page 3 has no technical content (banner only)",
+   "paginas": [
+    3
+   ],
+   "chaves": "banner svelte summit vazia empty page 3 has no technical content (banner only)",
+   "ref": "06-sveltekit-introducao.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Banner: 'Astro v7 is here' and upgrade link (page outside the capture)",
+   "paginas": [
+    1
+   ],
+   "chaves": "astro v7 upgrade versao banner atualizar version update banner: 'astro v7 is here' and upgrade link (page outside the capture)",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Astro Docs landing: install and explore features",
+   "paginas": [
+    1
+   ],
+   "chaves": "astro docs guides resources api references install astro landing landing astro docs landing: install and explore features",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Installation: npm create astro@latest",
+   "paginas": [
+    2
+   ],
+   "chaves": "npm create astro@latest instalacao install cli wizard comando criar projeto installation command create project installation: npm create astro@latest",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Starter themes and the Build a Blog tutorial",
+   "paginas": [
+    2
+   ],
+   "chaves": "starter themes blog portfolio docs landing saas ecommerce tutorial build a blog themes starter themes and the build a blog tutorial",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Named features: Islands architecture, Astro components, template syntax",
+   "paginas": [
+    2
+   ],
+   "chaves": "islands architecture astro components template syntax sintaxe componentes syntax components named features: islands architecture  astro components  template syntax",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Named extensions: integrations (React, Partytown), content collections",
+   "paginas": [
+    2
+   ],
+   "chaves": "integracoes integrations react partytown content collections type safe integrations named extensions: integrations (react  partytown)  content collections",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "View transitions and headless CMS (links only)",
+   "paginas": [
+    3
+   ],
+   "chaves": "view transitions headless cms navegacao navigation view transitions and headless cms (links only)",
+   "ref": "07-astro-landing.md"
+  },
+  {
+   "fonte": "ASTRO",
+   "tema": "Community: Discord, Coding in Public course, contributing",
+   "paginas": [
+    3
+   ],
+   "chaves": "discord comunidade coding in public contribute sponsor curso video community video course community: discord  coding in public course  contributing",
+   "ref": "07-astro-landing.md"
+  }
+ ],
+ "sem_cobertura": [
+  {
+   "tema": "Svelte 5 / runes ($state, $props, $derived, $effect)",
+   "termos": "runes|rune|$state|$props|$derived|$effect|$bindable|svelte 5|svelte5"
+  },
+  {
+   "tema": "Differences between Svelte versions (3, 4, 5) and migration guide",
+   "termos": "svelte 3|svelte 4|migracao|migrar|migration|upgrade svelte|svelte 3 vs 4|svelte version differences"
+  },
+  {
+   "tema": "Modern event/snippet syntax in Svelte (onclick=, {#snippet}, {@render}, $props)",
+   "termos": "snippet|@render|onclick|render snippet"
+  },
+  {
+   "tema": "File-based routing in SvelteKit (+page.svelte, +layout.svelte)",
+   "termos": "page.svelte|layout.svelte|file based routing|roteamento por arquivos|rotas por arquivo|file based routes|file routing"
+  },
+  {
+   "tema": "load functions, form actions, hooks, endpoints in SvelteKit",
+   "termos": "load function|form actions|hooks.server|endpoint|server load|+server.js"
+  },
+  {
+   "tema": "SvelteKit adapters and deployment",
+   "termos": "adapter|adapters|deploy|deployment|vercel|netlify"
+  },
+  {
+   "tema": "SvelteKit project creation (command)",
+   "termos": "npx sv|sv create|criar projeto sveltekit|create svelte|creating a project"
+  },
+  {
+   "tema": "Per-page SSR/prerender/CSR configuration in SvelteKit (page options)",
+   "termos": "page options|export const prerender|export const ssr|export const csr"
+  },
+  {
+   "tema": "What Astro is, why use it, SSG/SSR/static",
+   "termos": "o que e astro|why astro|astro static|astro ssr|astro ssg|ssg|static site|what is astro|astro syntax"
+  },
+  {
+   "tema": "Astro .astro syntax and files (frontmatter, template)",
+   "termos": ".astro|frontmatter|astro syntax|astro template|sintaxe astro"
+  },
+  {
+   "tema": "Islands architecture details and client:* directives",
+   "termos": "client:load|client:visible|client:idle|hidratacao|hydration|client directive"
+  },
+  {
+   "tema": "How to use content collections / view transitions / integrations in Astro",
+   "termos": "defineCollection|getcollection|astro add|astro:content|clientrouter|viewtransitions"
+  },
+  {
+   "tema": "Astro v7 content / upgrade guide",
+   "termos": "upgrade v7|astro 7|v7 changes|breaking changes astro|astro v7|v7 upgrade|astro upgrade"
+  },
+  {
+   "tema": "Svelte inside Astro / SvelteKit inside Astro",
+   "termos": "svelte no astro|astro svelte|@astrojs/svelte|astro e svelte"
+  },
+  {
+   "tema": "Choice between Astro and SvelteKit (decision criteria)",
+   "termos": "astro vs sveltekit|sveltekit vs astro|astro ou sveltekit|qual escolher|which to choose|astro or sveltekit|which one to choose|astro vs svelte kit"
+  },
+  {
+   "tema": "TypeScript in Svelte/SvelteKit/Astro",
+   "termos": "typescript|lang=ts|tsconfig"
+  },
+  {
+   "tema": "Tests (unit/e2e) in Svelte/SvelteKit/Astro",
+   "termos": "teste|testes|test|testing|vitest|jest|playwright|tests|unit tests"
+  },
+  {
+   "tema": "Transitions/animations, actions (use:), {#key}, {@html}, <svelte:head>, class:, :global, props spread",
+   "termos": "transition|animate|use:|key block|@html|svelte:head|class:|:global|spread props|svelte:component|tick"
+  },
+  {
+   "tema": "Advanced styling/global CSS/preprocessors, SCSS",
+   "termos": "scss|sass|tailwind|preprocess|postcss"
+  },
+  {
+   "tema": "Benchmarks and performance/bundle size numbers",
+   "termos": "benchmark|bundle size|lighthouse|desempenho numeros|performance numbers"
+  },
+  {
+   "tema": "Accessibility, SEO, i18n",
+   "termos": "acessibilidade|a11y|seo|i18n|internationalization|accessibility"
+  },
+  {
+   "tema": "Packaging/publishing Svelte libraries and the Svelte CLI",
+   "termos": "svelte-package|publicar biblioteca|sv cli|svelte cli|publish library"
+  },
+  {
+   "tema": "Boundary: React/Next, Vue/Nuxt and Angular belong to other agents (only the isolated comparisons in SVHB p.15,29 and SKGS p.1 appear here)",
+   "termos": "nextjs|next.js|nuxt|angular|vue 3|react hooks|usestate"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+# Glossary
+
+- **Web API**: the pattern of HTTP requests and responses of a site made to be accessed by programs (APIGEE p.8).
+- **REST**: the architectural style of HTTP itself, precisely defined (APIGEE p.8, p.9).
+- **RESTful**: a mixed style (HTTP + RPC concepts such as endpoint and parameter); no precise definition (APIGEE p.8, p.9).
+- **REST API** (in the book): a web API that uses only concepts inherent to HTTP (APIGEE p.9).
+- **Coupling**: how much one side can change without breaking the other (APIGEE p.9).
+- **Uniform interface**: a REST constraint; HTTP provides the API and you only define the data (APIGEE p.12).
+- **Representation**: exchanged data that expresses the state of a resource; it can have several media types (APIGEE p.13).
+- **HATEOAS**: clients guided only by the links in the data, like browsers; the book finds Fielding's definition unclear and considers generic clients rare (APIGEE p.15).
+- **URI template**: a URL with variables; equivalent to a query language of the API's own (APIGEE p.6, p.19, p.32).
+- **Template processor**: code that combines a value and a template to generate a URL (APIGEE p.17).
+- **Well-known URL**: a URL published so the client can start (e.g. `/dogs` or the root) (APIGEE p.26).
+- **Permalink**: a stable link URL, designed for the server to route, e.g. `/{type}/{uuid}` (APIGEE p.27, p.28).
+- **Query URL**: a URL derived from a template to find resources by data one knows (APIGEE p.29, p.32).
+- **Path-absolute URL**: a relative URL that starts with a single `/` (APIGEE p.21).
+- **Matrix parameter (path parameter)**: elements after `;` in a segment (`/persons;5678/dogs`) (APIGEE p.36).
+- **`self`**: a property with the URL of the resource itself; an ATOM name registered with IANA (APIGEE p.40).
+- **`kind`**: the type of the object (also `type`, `isA`) (APIGEE p.40).
+- **Collection / Page**: types used by the authors for collections and pages, with `contents`, `pageOf`, `next`, `previous` (APIGEE p.41, p.44, p.45).
+- **IANA relation**: a registered link name (`next`, `previous`, `first`, `last`) (APIGEE p.45).
+- **JSON Merge Patch / JSON Patch**: input formats for PATCH (APIGEE p.46).
+- **Partial response**: a `fields` parameter with a list of fields (APIGEE p.48, p.49).
+- **Chatty API**: many requests per task, caused by poorly chosen resources (APIGEE p.48).
+- **Denormalized resource**: a read-only resource that aggregates data from several others (APIGEE p.48).
+- **`developerMessage` / `userMessage` / `errorCode`**: fields of the example error body (APIGEE p.53).
+- **Request entity (action request)**: a resource created by POST to ask for an action (`StartRequest`…) (APIGEE p.53).
+- **OAuth 2.0**: the recommended authentication; avoids sharing passwords and allows revoking tokens (APIGEE p.55).
+- **1+n URLs**: one URL per entity and one per version (APIGEE p.58).

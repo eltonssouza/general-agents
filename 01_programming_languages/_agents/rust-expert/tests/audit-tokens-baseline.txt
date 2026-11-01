@@ -1,0 +1,111 @@
+# Reviewed baseline of tests/audit_tokens.py (audit v2, 2026-10-26)
+# Each line: file|token (text between backticks) that the auditor did NOT find literally on the cited page and classified by reading as:
+#   (a) package notation or code abbreviation (e.g., `name.rs`, `[T; N]`, `for x in collection`, `Arc<Mutex<T>>`, `&[T]`);
+#   (b) code or formatting that the PDF extraction does not preserve literally (e.g., `{:?}`, `help:`, `'r#ident`);
+#   (c) deliberate NEGATIVE claim ("the book does not carry E0038 / fmt --check"): the token is exactly what is missing from the sources.
+# No item here supports a claim attributed to the book; those that did were fixed (see tests/relatorio-de-fidelidade.md).
+# New items that appear outside this list make audit_tokens.py fail and require a new triage by reading.
+.github/agents/rust-expert.agent.md|&Vec<T>
+.github/agents/rust-expert.agent.md|&[T]
+.github/agents/rust-expert.agent.md|Arc<Mutex<T>>
+.github/agents/rust-expert.agent.md|no_std
+AGENTS.md|&Vec<T>
+AGENTS.md|&[T]
+AGENTS.md|Arc<Mutex<T>>
+AGENTS.md|no_std
+agents/rust-expert.md|&Vec<T>
+agents/rust-expert.md|&[T]
+agents/rust-expert.md|Arc<Mutex<T>>
+agents/rust-expert.md|no_std
+references/casos-e-antipadroes.md|expect("razão")
+references/casos-e-antipadroes.md|nome.rs
+references/frameworks.md|Arc<Mutex<T>>
+references/frameworks.md|[T; N]
+references/frameworks.md|[i]
+references/frameworks.md|break valor
+references/frameworks.md|endereço as *const T
+references/frameworks.md|for x in coleção
+references/frameworks.md|get_or_insert(x)
+references/frameworks.md|get_or_insert_with(closure)
+references/frameworks.md|impl Add<Rhs> for Lhs
+references/frameworks.md|nome.rs
+references/frameworks.md|nome/
+references/frameworks.md|or(x)
+references/frameworks.md|or_else(closure)
+references/frameworks.md|proc_macro_derive(Nome)
+references/frameworks.md|pub(in caminho)
+references/glossario.md|&s[inicio..fim]
+references/glossario.md|&v[i]
+references/glossario.md|'nome:
+references/glossario.md|..outra
+references/glossario.md|A + B
+references/glossario.md|[T; N]
+references/glossario.md|[v; N]
+references/glossario.md|_nome
+references/glossario.md|expr.await
+references/glossario.md|obj.metodo()
+references/glossario.md|static mut
+references/glossario.md|type Nome = Tipo;
+references/glossario.md|{:?}
+references/procedimentos.md|$crate::caminho::item
+references/procedimentos.md|&Atomic*
+references/procedimentos.md|&Option<T>
+references/procedimentos.md|&campo
+references/procedimentos.md|.cfi_*
+references/procedimentos.md|::x
+references/procedimentos.md|<T: Tr>
+references/procedimentos.md|= valor
+references/procedimentos.md|Box<dyn T>
+references/procedimentos.md|RefCell
+references/procedimentos.md|Result<T, E1>
+references/procedimentos.md|Result<T, E2>
+references/procedimentos.md|Some(mut x)
+references/procedimentos.md|nome = "x.y.z"
+references/procedimentos.md|repr(primitiva)
+references/procedimentos.md|transmute
+references/procedimentos.md|trpl::select(f1, f2).await
+references/procedimentos.md|use Alias::Variante
+references/procedimentos.md|use Tipo::CONST_ASSOC
+references/procedimentos.md|{s.f}
+references/regras-da-referencia.md|#"x"#
+references/regras-da-referencia.md|#[unsafe(no_mangle)] pub extern "C" fn nome()
+references/regras-da-referencia.md|&[T;n]
+references/regras-da-referencia.md|&campo
+references/regras-da-referencia.md|'r#ident
+references/regras-da-referencia.md|(s.f)(x)
+references/regras-da-referencia.md|+ - *
+references/regras-da-referencia.md|MIN / -1
+references/regras-da-referencia.md|Mutex
+references/regras-da-referencia.md|RefCell
+references/regras-da-referencia.md|\xHH
+references/regras-da-referencia.md|bool
+references/regras-da-referencia.md|c"\u{E6}"
+references/regras-da-referencia.md|e/E
+references/regras-da-referencia.md|help:
+references/regras-da-referencia.md|if let A = x && let B = y && cond
+references/regras-da-referencia.md|isize::MAX
+references/regras-da-referencia.md|loop { match e { pat => body, _ => break } }
+references/regras-da-referencia.md|r#_
+references/regras-da-referencia.md|s.f(x)
+references/regras-da-referencia.md|self as nome
+references/regras-da-referencia.md|static mut
+references/regras-da-referencia.md|while
+references/regras-da-referencia.md|x.01
+references/regras-da-referencia.md|x.0_0
+references/regras-da-referencia.md|x.0b10
+skills/rust-code-review/SKILL.md|&Vec<T>
+skills/rust-code-review/SKILL.md|&[T]
+skills/rust-compiler-error-triage/SKILL.md|E0xxx
+skills/rust-compiler-error-triage/SKILL.md|rustc --explain E0xxx
+skills/rust-edition-migration/SKILL.md|&pat
+skills/rust-unsafe-audit/SKILL.md|*_unchecked
+skills/rust-unsafe-audit/SKILL.md|from_raw_parts
+skills/rust-unsafe-audit/SKILL.md|transmute
+tests/casos-de-teste.md|#[derive(Copy)]
+tests/casos-de-teste.md|E0038
+tests/casos-de-teste.md|fmt --check
+tests/casos-de-teste.md|let tags = &mut p.tags;
+tests/casos-de-teste.md|list!(error)
+tests/casos-de-teste.md|p.name
+tests/casos-de-teste.md|p.tags
+tests/casos-de-teste.md|task("a")

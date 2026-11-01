@@ -1,0 +1,1745 @@
+{
+ "_comment": "Each item asserts that the indicated (PDF) page contains ALL the substrings (positive: contains) or NONE of them as a whole word (negative: absent). The contains/absent strings are verbatim source text and must not be translated. Normalization: lowercase, collapsed whitespace, ligatures. Page convention: PDF; printed = PDF - 2.",
+ "checks": [
+  {
+   "cite": "WSTG p.16",
+   "contains": [
+    "WSTG-<category>-<number>",
+    "zero-padded",
+    "WSTG-v42-INFO-02"
+   ],
+   "claim": "ID format and v42 version"
+  },
+  {
+   "cite": "WSTG p.16-17",
+   "contains": [
+    "patch-and-penetrate",
+    "window of vulnerability"
+   ],
+   "claim": "patch-and-penetrate"
+  },
+  {
+   "cite": "WSTG p.18",
+   "contains": [
+    "DAST",
+    "SAST",
+    "software composition analysis"
+   ],
+   "claim": "automation in CI/CD"
+  },
+  {
+   "cite": "WSTG p.8",
+   "contains": [
+    "avoid using the guide as a checklist",
+    "Tools do not make software secure"
+   ],
+   "claim": "do not use as a checklist"
+  },
+  {
+   "cite": "WSTG p.14-15",
+   "contains": [
+    "people, process, and technology",
+    "cost-prohibitive"
+   ],
+   "claim": "people, process, technology"
+  },
+  {
+   "cite": "WSTG p.20",
+   "contains": [
+    "NIST 800-30",
+    "trust-but-verify"
+   ],
+   "claim": "threat modeling and trust-but-verify"
+  },
+  {
+   "cite": "WSTG p.21-22",
+   "contains": [
+    "too little too late",
+    "balanced approach"
+   ],
+   "claim": "balanced approach"
+  },
+  {
+   "cite": "WSTG p.24-25",
+   "contains": [
+    "Magic Parameters",
+    "Bad Cryptography"
+   ],
+   "claim": "scanner examples"
+  },
+  {
+   "cite": "WSTG p.27",
+   "contains": [
+    "STRIDE",
+    "Spoofing"
+   ],
+   "claim": "STRIDE"
+  },
+  {
+   "cite": "WSTG p.29-30",
+   "contains": [
+    "misuse",
+    "brute force"
+   ],
+   "claim": "abuse cases"
+  },
+  {
+   "cite": "WSTG p.35-36",
+   "contains": [
+    "CVSS",
+    "severity rating"
+   ],
+   "claim": "report: CVSS and severity"
+  },
+  {
+   "cite": "WSTG p.38-41",
+   "contains": [
+    "Phase 1.1",
+    "Phase 5.3",
+    "change veri"
+   ],
+   "claim": "framework phases"
+  },
+  {
+   "cite": "WSTG p.43",
+   "contains": [
+    "Penetration Testing Execution Standard",
+    "Pre-engagement Interactions"
+   ],
+   "claim": "PTES"
+  },
+  {
+   "cite": "WSTG p.47-48",
+   "contains": [
+    "black box",
+    "Passive Testing",
+    "Active Testing"
+   ],
+   "claim": "black box method, passive and active"
+  },
+  {
+   "cite": "WSTG p.50-52",
+   "contains": [
+    "Google hacking",
+    "cache:",
+    "Dorking"
+   ],
+   "claim": "INFO-01"
+  },
+  {
+   "cite": "WSTG p.54-55",
+   "contains": [
+    "field order",
+    "banner grab"
+   ],
+   "claim": "INFO-02 field order"
+  },
+  {
+   "cite": "WSTG p.57",
+   "contains": [
+    "mod_headers",
+    "hardened reverse proxy"
+   ],
+   "claim": "INFO-02 remediation"
+  },
+  {
+   "cite": "WSTG p.59",
+   "contains": [
+    "should not be considered",
+    "robots.txt"
+   ],
+   "claim": "robots.txt is not a control"
+  },
+  {
+   "cite": "WSTG p.60-61",
+   "contains": [
+    "security.txt",
+    "humans.txt",
+    ".well-known"
+   ],
+   "claim": "INFO-03 metafiles"
+  },
+  {
+   "cite": "WSTG p.62",
+   "contains": [
+    "rules of engagement",
+    "virtual web servers"
+   ],
+   "claim": "INFO-04 rules of engagement"
+  },
+  {
+   "cite": "WSTG p.63",
+   "contains": [
+    "Different Base URL",
+    "Non-standard Ports",
+    "Virtual Hosts"
+   ],
+   "claim": "INFO-04 three factors"
+  },
+  {
+   "cite": "WSTG p.68",
+   "contains": [
+    "source map",
+    "hardcod"
+   ],
+   "claim": "INFO-05 source maps"
+  },
+  {
+   "cite": "WSTG p.70",
+   "contains": [
+    "API Key restrictions",
+    "main.chunk.js.map"
+   ],
+   "claim": "INFO-05 keys and .map"
+  },
+  {
+   "cite": "WSTG p.72",
+   "contains": [
+    "intercepting proxy",
+    "spreadsheet",
+    "hidden form fields"
+   ],
+   "claim": "INFO-06 spreadsheet"
+  },
+  {
+   "cite": "WSTG p.74",
+   "contains": [
+    "Attack Surface Detector"
+   ],
+   "claim": "INFO-06 ASD"
+  },
+  {
+   "cite": "WSTG p.76",
+   "contains": [
+    "Data Flow",
+    "Race",
+    "negotiated with the application owner"
+   ],
+   "claim": "INFO-07"
+  },
+  {
+   "cite": "WSTG p.84",
+   "contains": [
+    "security through obscurity"
+   ],
+   "claim": "INFO-08 remediation"
+  },
+  {
+   "cite": "WSTG p.86",
+   "contains": [
+    "merged into"
+   ],
+   "claim": "INFO-09 merged"
+  },
+  {
+   "cite": "WSTG p.87-88",
+   "contains": [
+    "reverse proxy",
+    "BIGipServer",
+    "JSESSIONID"
+   ],
+   "claim": "INFO-10"
+  },
+  {
+   "cite": "WSTG p.91",
+   "contains": [
+    "false positives",
+    "back port"
+   ],
+   "claim": "CONF-01 backport"
+  },
+  {
+   "cite": "WSTG p.94",
+   "contains": [
+    "CIS-CAT",
+    "National Checklist Program"
+   ],
+   "claim": "CONF-02 baselines"
+  },
+  {
+   "cite": "WSTG p.96",
+   "contains": [
+    "log zapper",
+    "separate partition"
+   ],
+   "claim": "CONF-02 logs"
+  },
+  {
+   "cite": "WSTG p.97",
+   "contains": [
+    "separation of duty",
+    "force logs to rotate"
+   ],
+   "claim": "CONF-02 rotation and access"
+  },
+  {
+   "cite": "WSTG p.100",
+   "contains": [
+    "FILExt",
+    "8.3"
+   ],
+   "claim": "CONF-03"
+  },
+  {
+   "cite": "WSTG p.102-103",
+   "contains": [
+    "snapshots",
+    "login.asp.old"
+   ],
+   "claim": "CONF-04"
+  },
+  {
+   "cite": "WSTG p.106",
+   "contains": [
+    ".snapshot",
+    "in-place"
+   ],
+   "claim": "CONF-04 remediation"
+  },
+  {
+   "cite": "WSTG p.108-109",
+   "contains": [
+    "useradmin=0",
+    "brute force"
+   ],
+   "claim": "CONF-05"
+  },
+  {
+   "cite": "WSTG p.111",
+   "contains": [
+    "RFC 7231",
+    "method overriding"
+   ],
+   "claim": "CONF-06"
+  },
+  {
+   "cite": "WSTG p.112",
+   "contains": [
+    "web shell",
+    "security team"
+   ],
+   "claim": "CONF-06 PUT and shell"
+  },
+  {
+   "cite": "WSTG p.113",
+   "contains": [
+    "TRACE",
+    "HttpOnly",
+    "Flash"
+   ],
+   "claim": "CONF-06 XST"
+  },
+  {
+   "cite": "WSTG p.113-114",
+   "contains": [
+    "X-HTTP-Method-Override",
+    "X-Method-Override"
+   ],
+   "claim": "CONF-06 override"
+  },
+  {
+   "cite": "WSTG p.115",
+   "contains": [
+    "max-age",
+    "includeSubDomains",
+    "preload"
+   ],
+   "claim": "CONF-07"
+  },
+  {
+   "cite": "WSTG p.117-118",
+   "contains": [
+    "crossdomain.xml",
+    "clientaccesspolicy.xml",
+    "least privilege"
+   ],
+   "claim": "CONF-08"
+  },
+  {
+   "cite": "WSTG p.119",
+   "contains": [
+    "namei",
+    "world-readable"
+   ],
+   "claim": "CONF-09"
+  },
+  {
+   "cite": "WSTG p.120",
+   "contains": [
+    "NS",
+    "subdomain takeover",
+    "GitHub"
+   ],
+   "claim": "CONF-10"
+  },
+  {
+   "cite": "WSTG p.121-123",
+   "contains": [
+    "NXDOMAIN",
+    "SERVFAIL",
+    "dnsrecon"
+   ],
+   "claim": "CONF-10 method"
+  },
+  {
+   "cite": "WSTG p.124-125",
+   "contains": [
+    "S3",
+    "virtual hosted style",
+    "path-style"
+   ],
+   "claim": "CONF-11"
+  },
+  {
+   "cite": "WSTG p.128-129",
+   "contains": [
+    "maker",
+    "checker principle",
+    "Twitter",
+    "Autorize"
+   ],
+   "claim": "IDNT-01"
+  },
+  {
+   "cite": "WSTG p.130",
+   "contains": [
+    "Can anyone register",
+    "proof of identity"
+   ],
+   "claim": "IDNT-02"
+  },
+  {
+   "cite": "WSTG p.132",
+   "contains": [
+    "de-provision",
+    "privileges greater"
+   ],
+   "claim": "IDNT-03"
+  },
+  {
+   "cite": "WSTG p.134-137",
+   "contains": [
+    "response times",
+    "account1",
+    "locking out accounts"
+   ],
+   "claim": "IDNT-04"
+  },
+  {
+   "cite": "WSTG p.138",
+   "contains": [
+    "structured",
+    "dictionaries"
+   ],
+   "claim": "IDNT-05"
+  },
+  {
+   "cite": "WSTG p.140-141",
+   "contains": [
+    "HTTPS Everywhere",
+    "Secure"
+   ],
+   "claim": "ATHN-01"
+  },
+  {
+   "cite": "WSTG p.143-144",
+   "contains": [
+    "Let's Encrypt",
+    "HSTS"
+   ],
+   "claim": "ATHN-01 remediation"
+  },
+  {
+   "cite": "WSTG p.145-146",
+   "contains": [
+    "default credentials",
+    "lockout policy"
+   ],
+   "claim": "ATHN-02"
+  },
+  {
+   "cite": "WSTG p.148-149",
+   "contains": [
+    "CAPTCHA",
+    "3 to 5",
+    "one-time"
+   ],
+   "claim": "ATHN-03"
+  },
+  {
+   "cite": "WSTG p.150",
+   "contains": [
+    "5 to 10",
+    "5 to 30 minute"
+   ],
+   "claim": "ATHN-03 thresholds"
+  },
+  {
+   "cite": "WSTG p.151",
+   "contains": [
+    "forced browsing",
+    "Session ID prediction"
+   ],
+   "claim": "ATHN-04"
+  },
+  {
+   "cite": "WSTG p.155",
+   "contains": [
+    "PHPBB 2.0.13",
+    "unserialize"
+   ],
+   "claim": "ATHN-04 gray-box"
+  },
+  {
+   "cite": "WSTG p.157",
+   "contains": [
+    "remember me",
+    "ClickJacking"
+   ],
+   "claim": "ATHN-05"
+  },
+  {
+   "cite": "WSTG p.158-159",
+   "contains": [
+    "Back button",
+    "Cache-Control",
+    "about:cache"
+   ],
+   "claim": "ATHN-06"
+  },
+  {
+   "cite": "WSTG p.161",
+   "contains": [
+    "NCSC",
+    "PCI DSS",
+    "Password1"
+   ],
+   "claim": "ATHN-07"
+  },
+  {
+   "cite": "WSTG p.162-163",
+   "contains": [
+    "mother's maiden name",
+    "weakest question"
+   ],
+   "claim": "ATHN-08"
+  },
+  {
+   "cite": "WSTG p.164-165",
+   "contains": [
+    "100% on the security",
+    "old password"
+   ],
+   "claim": "ATHN-09"
+  },
+  {
+   "cite": "WSTG p.166-167",
+   "contains": [
+    "call center",
+    "alternative"
+   ],
+   "claim": "ATHN-10"
+  },
+  {
+   "cite": "WSTG p.170",
+   "contains": [
+    "dot-dot-slash",
+    "Input Vectors Enumeration"
+   ],
+   "claim": "ATHZ-01"
+  },
+  {
+   "cite": "WSTG p.173-174",
+   "contains": [
+    "grep",
+    "DotDotPwn"
+   ],
+   "claim": "ATHZ-01 gray-box"
+  },
+  {
+   "cite": "WSTG p.175-176",
+   "contains": [
+    "horizontal",
+    "vertical"
+   ],
+   "claim": "ATHZ-02"
+  },
+  {
+   "cite": "WSTG p.178-179",
+   "contains": [
+    "X-Original-URL",
+    "X-Forwarded-For",
+    "RFC1918"
+   ],
+   "claim": "ATHZ-02 headers"
+  },
+  {
+   "cite": "WSTG p.180-182",
+   "contains": [
+    "vertical escalation",
+    "startswith",
+    "MD5(Password + UserID)"
+   ],
+   "claim": "ATHZ-03"
+  },
+  {
+   "cite": "WSTG p.183-184",
+   "contains": [
+    "IDOR",
+    "at least two"
+   ],
+   "claim": "ATHZ-04"
+  },
+  {
+   "cite": "WSTG p.186",
+   "contains": [
+    "cookie collection",
+    "cookie reverse engineering",
+    "cookie manipulation"
+   ],
+   "claim": "SESS-01"
+  },
+  {
+   "cite": "WSTG p.188",
+   "contains": [
+    "50ms",
+    "quantization"
+   ],
+   "claim": "SESS-01 time"
+  },
+  {
+   "cite": "WSTG p.189-190",
+   "contains": [
+    "Unpredictability",
+    "Tamper resistance",
+    "chi-squares"
+   ],
+   "claim": "SESS-01 characteristics"
+  },
+  {
+   "cite": "WSTG p.190",
+   "contains": [
+    "256 bits",
+    "at least 50 characters"
+   ],
+   "claim": "SESS-01 gray-box"
+  },
+  {
+   "cite": "WSTG p.192-194",
+   "contains": [
+    "SameSite",
+    "__Host-",
+    "__Secure-"
+   ],
+   "claim": "SESS-02"
+  },
+  {
+   "cite": "WSTG p.194",
+   "contains": [
+    "SameSite=Strict",
+    "Path=/"
+   ],
+   "claim": "SESS-02 safer"
+  },
+  {
+   "cite": "WSTG p.196-198",
+   "contains": [
+    "session fixation",
+    "Full HSTS",
+    "two different machines"
+   ],
+   "claim": "SESS-03"
+  },
+  {
+   "cite": "WSTG p.200",
+   "contains": [
+    "private",
+    "max-age=0"
+   ],
+   "claim": "SESS-04"
+  },
+  {
+   "cite": "WSTG p.202-205",
+   "contains": [
+    "session riding",
+    "img"
+   ],
+   "claim": "SESS-05"
+  },
+  {
+   "cite": "WSTG p.205-206",
+   "contains": [
+    "JavaScript",
+    "vulnerable as well"
+   ],
+   "claim": "SESS-05 POST is not enough"
+  },
+  {
+   "cite": "WSTG p.208",
+   "contains": [
+    "ASP.NET",
+    "Forms Authentication",
+    "single sign-on"
+   ],
+   "claim": "SESS-06"
+  },
+  {
+   "cite": "WSTG p.209",
+   "contains": [
+    "15 minutes",
+    "single sign-off"
+   ],
+   "claim": "SESS-06 timeouts"
+  },
+  {
+   "cite": "WSTG p.211-212",
+   "contains": [
+    "HttpSession.invalidate()",
+    "Session.abandon()",
+    "cookie replay"
+   ],
+   "claim": "SESS-07"
+  },
+  {
+   "cite": "WSTG p.213",
+   "contains": [
+    "Session Variable Overloading",
+    "password recovery"
+   ],
+   "claim": "SESS-08"
+  },
+  {
+   "cite": "WSTG p.215-216",
+   "contains": [
+    "partial HSTS",
+    "Domain",
+    "JHijack"
+   ],
+   "claim": "SESS-09"
+  },
+  {
+   "cite": "WSTG p.219",
+   "contains": [
+    "first-order",
+    "type 1",
+    "non-persistent"
+   ],
+   "claim": "INPV-01"
+  },
+  {
+   "cite": "WSTG p.221-222",
+   "contains": [
+    "deny list",
+    "allow list",
+    "XSS Filter Evasion Cheat Sheet"
+   ],
+   "claim": "INPV-01 filters"
+  },
+  {
+   "cite": "WSTG p.225",
+   "contains": [
+    "second-order",
+    "BeEF"
+   ],
+   "claim": "INPV-02"
+  },
+  {
+   "cite": "WSTG p.226",
+   "contains": [
+    "Shopping cart",
+    "Forum",
+    "administrators"
+   ],
+   "claim": "INPV-02 where to look"
+  },
+  {
+   "cite": "WSTG p.231",
+   "contains": [
+    "merged into",
+    "Test HTTP Methods"
+   ],
+   "claim": "INPV-03"
+  },
+  {
+   "cite": "WSTG p.232-233",
+   "contains": [
+    "impedance",
+    "ModSecurity",
+    "Blogger"
+   ],
+   "claim": "INPV-04"
+  },
+  {
+   "cite": "WSTG p.234",
+   "contains": [
+    "three HTTP requests",
+    "impedance mismatch"
+   ],
+   "claim": "INPV-04 method"
+  },
+  {
+   "cite": "WSTG p.236-237",
+   "contains": [
+    "Inband",
+    "Out-of-band",
+    "Inferential"
+   ],
+   "claim": "INPV-05 classes"
+  },
+  {
+   "cite": "WSTG p.237",
+   "contains": [
+    "Union Operator",
+    "Boolean",
+    "Error based",
+    "Time delay"
+   ],
+   "claim": "INPV-05 techniques"
+  },
+  {
+   "cite": "WSTG p.238",
+   "contains": [
+    "only one variable must vary"
+   ],
+   "claim": "INPV-05 one field at a time"
+  },
+  {
+   "cite": "WSTG p.240",
+   "contains": [
+    "MySql",
+    "Oracle",
+    "PostgreSQL"
+   ],
+   "claim": "INPV-05 fingerprint"
+  },
+  {
+   "cite": "WSTG p.244-245",
+   "contains": [
+    "Stored Procedure Injection",
+    "SQLMap"
+   ],
+   "claim": "INPV-05 stored procedure"
+  },
+  {
+   "cite": "WSTG p.247",
+   "contains": [
+    "SQL Injection Prevention CheatSheet",
+    "Database Security CheatSheet"
+   ],
+   "claim": "INPV-05 remediation"
+  },
+  {
+   "cite": "WSTG p.249-250",
+   "contains": [
+    "PL/SQL Gateway",
+    "DAD"
+   ],
+   "claim": "INPV-05.1"
+  },
+  {
+   "cite": "WSTG p.256",
+   "contains": [
+    "MySQL",
+    "5.0"
+   ],
+   "claim": "INPV-05.2"
+  },
+  {
+   "cite": "WSTG p.276",
+   "contains": [
+    "NoSQL",
+    "procedural"
+   ],
+   "claim": "INPV-05.6"
+  },
+  {
+   "cite": "WSTG p.279",
+   "contains": [
+    "ORM",
+    "SQL Injection"
+   ],
+   "claim": "INPV-05.7"
+  },
+  {
+   "cite": "WSTG p.281",
+   "contains": [
+    "Web SQL",
+    "openDatabase()"
+   ],
+   "claim": "INPV-05.8"
+  },
+  {
+   "cite": "WSTG p.283",
+   "contains": [
+    "Polish notation"
+   ],
+   "claim": "INPV-06"
+  },
+  {
+   "cite": "WSTG p.293",
+   "contains": [
+    "XML External Entity (XXE) Prevention Cheat Sheet"
+   ],
+   "claim": "INPV-07 XXE"
+  },
+  {
+   "cite": "WSTG p.294",
+   "contains": [
+    "exec",
+    "Server-Side Includes"
+   ],
+   "claim": "INPV-08"
+  },
+  {
+   "cite": "WSTG p.296",
+   "contains": [
+    "XPath",
+    "Amit Klein"
+   ],
+   "claim": "INPV-09"
+  },
+  {
+   "cite": "WSTG p.298",
+   "contains": [
+    "IMAP",
+    "webmail"
+   ],
+   "claim": "INPV-10"
+  },
+  {
+   "cite": "WSTG p.307",
+   "contains": [
+    "allow list",
+    "identifier"
+   ],
+   "claim": "INPV-11 remediation"
+  },
+  {
+   "cite": "WSTG p.312",
+   "contains": [
+    "allow list",
+    "Runtime.exec()",
+    "strict permissions"
+   ],
+   "claim": "INPV-12 remediation"
+  },
+  {
+   "cite": "WSTG p.314",
+   "contains": [
+    "This content has been removed"
+   ],
+   "claim": "INPV-13 buffer overflow removed"
+  },
+  {
+   "cite": "WSTG p.315",
+   "contains": [
+    "%n",
+    "format string"
+   ],
+   "claim": "INPV-13 format string"
+  },
+  {
+   "cite": "WSTG p.318",
+   "contains": [
+    "watering hole",
+    "recall"
+   ],
+   "claim": "INPV-14"
+  },
+  {
+   "cite": "WSTG p.321",
+   "contains": [
+    "HTTP splitting",
+    "HTTP smuggling"
+   ],
+   "claim": "INPV-15"
+  },
+  {
+   "cite": "WSTG p.325-326",
+   "contains": [
+    "Reverse Proxy",
+    "TCPDump"
+   ],
+   "claim": "INPV-16"
+  },
+  {
+   "cite": "WSTG p.327",
+   "contains": [
+    "Host header",
+    "password reset"
+   ],
+   "claim": "INPV-17"
+  },
+  {
+   "cite": "WSTG p.329-330",
+   "contains": [
+    "SSTI",
+    "Jinja2",
+    "Twig"
+   ],
+   "claim": "INPV-18"
+  },
+  {
+   "cite": "WSTG p.333-334",
+   "contains": [
+    "SSRF",
+    "allow lists",
+    "Blind"
+   ],
+   "claim": "INPV-19"
+  },
+  {
+   "cite": "WSTG p.337-338",
+   "contains": [
+    "happy path",
+    "Juice Shop",
+    "Proactive Controls C10"
+   ],
+   "claim": "ERRH-01"
+  },
+  {
+   "cite": "WSTG p.339",
+   "contains": [
+    "merged into",
+    "Improper Error Handling"
+   ],
+   "claim": "ERRH-02"
+  },
+  {
+   "cite": "WSTG p.341-342",
+   "contains": [
+    "POODLE",
+    "398 days",
+    "2048 bits"
+   ],
+   "claim": "CRYP-01"
+  },
+  {
+   "cite": "WSTG p.343",
+   "contains": [
+    "sslstrip",
+    "preload list",
+    "testssl.sh"
+   ],
+   "claim": "CRYP-01 HSTS preload"
+  },
+  {
+   "cite": "WSTG p.344-345",
+   "contains": [
+    "PKCS#7",
+    "HMAC",
+    "GCM"
+   ],
+   "claim": "CRYP-02"
+  },
+  {
+   "cite": "WSTG p.347",
+   "contains": [
+    "rule of thumb",
+    "PII"
+   ],
+   "claim": "CRYP-03"
+  },
+  {
+   "cite": "WSTG p.348",
+   "contains": [
+    "Basic Authentication"
+   ],
+   "claim": "CRYP-03 examples"
+  },
+  {
+   "cite": "WSTG p.350",
+   "contains": [
+    "ECB",
+    "SecureRandom",
+    "10000"
+   ],
+   "claim": "CRYP-04"
+  },
+  {
+   "cite": "WSTG p.352",
+   "contains": [
+    "CWE-327",
+    "Fortify"
+   ],
+   "claim": "CRYP-04 tools"
+  },
+  {
+   "cite": "WSTG p.354",
+   "contains": [
+    "cannot be detected by a vulnerability scanner",
+    "manual art"
+   ],
+   "claim": "BUSL intro"
+  },
+  {
+   "cite": "WSTG p.357",
+   "contains": [
+    "Boundary Value Analysis",
+    "Distributed Denial of Dollar"
+   ],
+   "claim": "BUSL-01"
+  },
+  {
+   "cite": "WSTG p.358",
+   "contains": [
+    "logically valid"
+   ],
+   "claim": "BUSL-01 remediation"
+  },
+  {
+   "cite": "WSTG p.359",
+   "contains": [
+    "Easter egg",
+    "hidden field"
+   ],
+   "claim": "BUSL-02"
+  },
+  {
+   "cite": "WSTG p.361-362",
+   "contains": [
+    "non-editable",
+    "logs"
+   ],
+   "claim": "BUSL-03"
+  },
+  {
+   "cite": "WSTG p.364-366",
+   "contains": [
+    "quote"
+   ],
+   "claim": "BUSL-04"
+  },
+  {
+   "cite": "WSTG p.367",
+   "contains": [
+    "limits to the number of times",
+    "coupon"
+   ],
+   "claim": "BUSL-05"
+  },
+  {
+   "cite": "WSTG p.369-370",
+   "contains": [
+    "rolled back",
+    "Abuse Case Cheat Sheet"
+   ],
+   "claim": "BUSL-06"
+  },
+  {
+   "cite": "WSTG p.371-372",
+   "contains": [
+    "AppSensor",
+    "active defenses"
+   ],
+   "claim": "BUSL-07"
+  },
+  {
+   "cite": "WSTG p.373",
+   "contains": [
+    "Content-Type",
+    "client-side JavaScript"
+   ],
+   "claim": "BUSL-08"
+  },
+  {
+   "cite": "WSTG p.375-376",
+   "contains": [
+    "web shell",
+    "randomly generated name"
+   ],
+   "claim": "BUSL-09"
+  },
+  {
+   "cite": "WSTG p.376-377",
+   "contains": [
+    "EICAR",
+    "Zip bomb",
+    "written approval"
+   ],
+   "claim": "BUSL-09 zip bomb approval"
+  },
+  {
+   "cite": "WSTG p.380",
+   "contains": [
+    "DOM-based cross-site scripting",
+    "sink"
+   ],
+   "claim": "CLNT-01"
+  },
+  {
+   "cite": "WSTG p.380",
+   "contains": [
+    "Identify DOM sinks"
+   ],
+   "claim": "CLNT-01 objectives"
+  },
+  {
+   "cite": "WSTG p.387",
+   "contains": [
+    "open redirection",
+    "phishing"
+   ],
+   "claim": "CLNT-04"
+  },
+  {
+   "cite": "WSTG p.389",
+   "contains": [
+    "CSS Injection",
+    "cssText"
+   ],
+   "claim": "CLNT-05"
+  },
+  {
+   "cite": "WSTG p.393",
+   "contains": [
+    "pre-flight",
+    "Origin"
+   ],
+   "claim": "CLNT-07"
+  },
+  {
+   "cite": "WSTG p.396",
+   "contains": [
+    "ActionScript",
+    "Cross-Site Flashing"
+   ],
+   "claim": "CLNT-08"
+  },
+  {
+   "cite": "WSTG p.402",
+   "contains": [
+    "Clickjacking",
+    "UI redressing"
+   ],
+   "claim": "CLNT-09"
+  },
+  {
+   "cite": "WSTG p.402-411",
+   "contains": [
+    "X-FRAME-OPTIONS",
+    "Frame Busting",
+    "DENY"
+   ],
+   "claim": "CLNT-09 protections"
+  },
+  {
+   "cite": "WSTG p.412",
+   "contains": [
+    "Origin",
+    "WebSocket"
+   ],
+   "claim": "CLNT-10"
+  },
+  {
+   "cite": "WSTG p.415-416",
+   "contains": [
+    "postMessage()",
+    "innerHTML"
+   ],
+   "claim": "CLNT-11"
+  },
+  {
+   "cite": "WSTG p.418",
+   "contains": [
+    "Local Storage",
+    "IndexedDB",
+    "Web SQL (Deprecated)"
+   ],
+   "claim": "CLNT-12"
+  },
+  {
+   "cite": "WSTG p.420",
+   "contains": [
+    "server-side"
+   ],
+   "claim": "CLNT-12 remediation"
+  },
+  {
+   "cite": "WSTG p.422",
+   "contains": [
+    "same-origin policy",
+    "JSONP"
+   ],
+   "claim": "CLNT-13"
+  },
+  {
+   "cite": "WSTG p.428",
+   "contains": [
+    "Introspection",
+    "poc-graphql"
+   ],
+   "claim": "APIT-01"
+  },
+  {
+   "cite": "WSTG p.437",
+   "contains": [
+    "Batching Attacks",
+    "Detailed Error Message"
+   ],
+   "claim": "APIT-01 batching and errors"
+  },
+  {
+   "cite": "WSTG p.438",
+   "contains": [
+    "Maximum query depth",
+    "Timeouts",
+    "graphql-constraint-directive"
+   ],
+   "claim": "APIT-01 remediation"
+  },
+  {
+   "cite": "WSTG p.440",
+   "contains": [
+    "encrypt",
+    "suggestions"
+   ],
+   "claim": "Reporting"
+  },
+  {
+   "cite": "WSTG p.440-441",
+   "contains": [
+    "Limitations",
+    "Disclaimer",
+    "Executive Summary"
+   ],
+   "claim": "Reporting sections"
+  },
+  {
+   "cite": "WSTG p.441",
+   "contains": [
+    "Informational, Low, Medium, High, and Critical",
+    "appendix"
+   ],
+   "claim": "Reporting severity"
+  },
+  {
+   "cite": "WSTG p.442",
+   "contains": [
+    "CVSS",
+    "masked",
+    "checklist"
+   ],
+   "claim": "Reporting finding"
+  },
+  {
+   "cite": "WSTG p.444",
+   "contains": [
+    "OWASP ZAP",
+    "Burp Proxy"
+   ],
+   "claim": "Appendix A"
+  },
+  {
+   "cite": "WSTG p.450",
+   "contains": [
+    "Fuzz Vectors",
+    "FuzzDB"
+   ],
+   "claim": "Appendix C"
+  },
+  {
+   "cite": "WSTG p.454",
+   "contains": [
+    "Version 4.1",
+    "Rick Mitchell"
+   ],
+   "claim": "Appendix E"
+  },
+  {
+   "cite": "WSTG p.440-442",
+   "absent": [
+    "DREAD",
+    "CVSS v3.1",
+    "CVSS 4.0"
+   ],
+   "claim": "the guide does not define a DREAD scale or a CVSS version"
+  },
+  {
+   "cite": "WSTG p.341-343",
+   "absent": [
+    "TLS 1.3",
+    "TLSv1.3",
+    "HTTP/3"
+   ],
+   "claim": "the guide does not cover TLS 1.3"
+  },
+  {
+   "cite": "WSTG p.350-352",
+   "absent": [
+    "Argon2",
+    "ChaCha20"
+   ],
+   "claim": "the guide does not mention Argon2 or ChaCha20"
+  },
+  {
+   "cite": "WSTG p.333-335",
+   "absent": [
+    "IMDSv2",
+    "metadata service v2"
+   ],
+   "claim": "the guide does not mention IMDSv2"
+  },
+  {
+   "cite": "WSTG p.402-411",
+   "absent": [
+    "frame-ancestors",
+    "Content-Security-Policy"
+   ],
+   "claim": "the guide does not mention CSP for clickjacking"
+  },
+  {
+   "cite": "WSTG p.428-438",
+   "absent": [
+    "persisted queries",
+    "alias overloading"
+   ],
+   "claim": "does not mention persisted queries"
+  },
+  {
+   "cite": "WSTG p.148-150",
+   "absent": [
+    "NIST SP 800-63B",
+    "exponential backoff"
+   ],
+   "claim": "does not mention 800-63B or exponential backoff"
+  },
+  {
+   "cite": "WSTG p.161",
+   "absent": [
+    "Argon2",
+    "zxcvbn",
+    "haveibeenpwned"
+   ],
+   "claim": "does not mention leaked-password checks"
+  },
+  {
+   "cite": "WSTG p.164-165",
+   "absent": [
+    "magic link",
+    "passwordless"
+   ],
+   "claim": "does not mention magic link"
+  },
+  {
+   "cite": "WSTG p.186-191",
+   "absent": [
+    "JWT",
+    "JSON Web Token"
+   ],
+   "claim": "SESS-01 does not cover JWT"
+  },
+  {
+   "cite": "WSTG p.202-207",
+   "absent": [
+    "double submit",
+    "synchronizer token"
+   ],
+   "claim": "SESS-05 does not detail CSRF defense patterns"
+  },
+  {
+   "cite": "WSTG p.62-67",
+   "absent": [
+    "authorization letter",
+    "get out of jail"
+   ],
+   "claim": "INFO-04 does not mention an authorization letter"
+  },
+  {
+   "cite": "WSTG p.375-378",
+   "absent": [
+    "ClamAV",
+    "VirusTotal"
+   ],
+   "claim": "BUSL-09 does not mention ClamAV"
+  },
+  {
+   "cite": "WSTG p.192-194",
+   "absent": [
+    "Partitioned",
+    "SameParty"
+   ],
+   "claim": "SESS-02 does not mention Partitioned cookies"
+  },
+  {
+   "cite": "WSTG p.115-116",
+   "absent": [
+    "HSTS preload submission",
+    "Chrome preload list"
+   ],
+   "claim": "CONF-07 does not detail preload list submission"
+  },
+  {
+   "cite": "WSTG p.393-395",
+   "absent": [
+    "Access-Control-Allow-Credentials wildcard",
+    "Private Network Access"
+   ],
+   "claim": "CLNT-07 does not mention Private Network Access"
+  },
+  {
+   "cite": "WSTG p.329-332",
+   "absent": [
+    "Velocity",
+    "Handlebars"
+   ],
+   "claim": "SSTI does not mention Velocity or Handlebars"
+  },
+  {
+   "cite": "WSTG p.236-247",
+   "absent": [
+    "parameterized queries",
+    "prepared statements"
+   ],
+   "claim": "INPV-05 points to cheat sheets and does not describe parameterized queries"
+  },
+  {
+   "cite": "WSTG p.1-465",
+   "absent": [
+    "Kubernetes",
+    "SBOM",
+    "WebAuthn"
+   ],
+   "claim": "topics outside the guide"
+  },
+  {
+   "cite": "WSTG p.393",
+   "contains": [
+    "wildcard",
+    "Access-Control-Allow-Origin",
+    "without any additional checks",
+    "public API that is intended to be accessible by everyone"
+   ],
+   "claim": "CLNT-07: * and unchecked reflected Origin are insecure; public API exception"
+  },
+  {
+   "cite": "WSTG p.393",
+   "contains": [
+    "may be spoofed outside the browser",
+    "not a good idea"
+   ],
+   "claim": "CLNT-07: trusting Origin for access control is not a good idea"
+  },
+  {
+   "cite": "WSTG p.394",
+   "contains": [
+    "A tool such as ZAP",
+    "pay particular attention to the origin header",
+    "manual inspection of the JavaScript"
+   ],
+   "claim": "CLNT-07: the method is on p.394"
+  },
+  {
+   "cite": "WSTG p.394",
+   "contains": [
+    "URLs that are passed to XMLHttpRequest without validation",
+    "absolute URLs"
+   ],
+   "claim": "CLNT-07: validation of URLs passed to XHR L2"
+  },
+  {
+   "cite": "WSTG p.55",
+   "contains": [
+    "this method is not definite",
+    "ordering of the header fields"
+   ],
+   "claim": "INFO-02: field order is not definitive"
+  },
+  {
+   "cite": "WSTG p.56",
+   "contains": [
+    "effective method for fingerprinting even when server header fields are obscured"
+   ],
+   "claim": "INFO-02: default error pages are effective even with an obfuscated header"
+  },
+  {
+   "cite": "WSTG p.57",
+   "contains": [
+    "more likely to produce accurate results",
+    "much faster than manual testing"
+   ],
+   "claim": "INFO-02: automated tools are more likely to give an accurate result"
+  },
+  {
+   "cite": "WSTG p.79-80",
+   "contains": [
+    "somewhat more reliable",
+    "more reliable"
+   ],
+   "claim": "INFO-08: cookies are slightly more reliable than X-Powered-By"
+  },
+  {
+   "cite": "WSTG p.148",
+   "contains": [
+    "3 to 5 unsuccessful attempts",
+    "Attempt to log in with an incorrect password 3 times",
+    "Attempt to log in with an incorrect password 4 times",
+    "Attempt to log in with an incorrect password 5 times"
+   ],
+   "claim": "ATHN-03: range 3-5 on p.148 and 3/4/5 example"
+  },
+  {
+   "cite": "WSTG p.150",
+   "contains": [
+    "5 to 10 unsuccessful attempts is typical lockout threshold",
+    "5 to 30 minute lockout duration may be a good compromise"
+   ],
+   "claim": "ATHN-03: ranges 5-10 and 5-30 min are on p.150 (decision factors)"
+  },
+  {
+   "cite": "WSTG p.149",
+   "contains": [
+    "positive user identification",
+    "Time-based lockout and unlock"
+   ],
+   "claim": "ATHN-03: list of unlock options on p.149"
+  },
+  {
+   "cite": "WSTG p.112",
+   "contains": [
+    "2XX success codes or 3XX redirections",
+    "try other paths in the system"
+   ],
+   "claim": "CONF-06: 2xx/3xx criterion and trying other paths"
+  },
+  {
+   "cite": "WSTG p.86",
+   "contains": [
+    "merged into: Fingerprint Web Application Framework"
+   ],
+   "claim": "INFO-09 merged into INFO-08"
+  },
+  {
+   "cite": "WSTG p.231",
+   "contains": [
+    "merged into: Test HTTP Methods"
+   ],
+   "claim": "INPV-03 merged into CONF-06"
+  },
+  {
+   "cite": "WSTG p.339",
+   "contains": [
+    "merged into: Testing for Improper Error Handling"
+   ],
+   "claim": "ERRH-02 merged into ERRH-01"
+  },
+  {
+   "cite": "WSTG p.404",
+   "contains": [
+    "isn't a guarantee that the page is totally immune"
+   ],
+   "claim": "CLNT-09: absence in the iframe does not guarantee immunity"
+  },
+  {
+   "cite": "WSTG p.403",
+   "contains": [
+    "has no type of protection against clickjacking"
+   ],
+   "claim": "CLNT-09: page loads in the iframe, no protection"
+  },
+  {
+   "cite": "WSTG p.407",
+   "contains": [
+    "Recommended value is DENY",
+    "ALLOWALL"
+   ],
+   "claim": "CLNT-09: X-Frame-Options"
+  },
+  {
+   "cite": "WSTG p.413",
+   "contains": [
+    "do not handle authentication",
+    "do not handle authorization"
+   ],
+   "claim": "CLNT-10: WebSockets do not handle authentication/authorization"
+  },
+  {
+   "cite": "WSTG p.416",
+   "contains": [
+    "very insecure, as it will accept input from any domain"
+   ],
+   "claim": "CLNT-11: without origin checking it is very insecure"
+  },
+  {
+   "cite": "WSTG p.419",
+   "contains": [
+    "extractable"
+   ],
+   "claim": "CLNT-12: extractable CryptoKeys in IndexedDB"
+  },
+  {
+   "cite": "WSTG p.382",
+   "contains": [
+    "automated testing will not detect areas that may be susceptible to DOM-based XSS"
+   ],
+   "claim": "CLNT-01: automation does not detect DOM XSS without client code analysis"
+  },
+  {
+   "cite": "WSTG p.209",
+   "contains": [
+    "more than 15 minutes",
+    "timeouts of an hour and more can be acceptable"
+   ],
+   "claim": "SESS-06: timeout examples depend on purpose"
+  },
+  {
+   "cite": "WSTG p.294",
+   "contains": [
+    "most webservers have the exec directive disabled by default",
+    "configured to allow SSI"
+   ],
+   "claim": "INPV-08: exec disabled and SSI only where configured"
+  },
+  {
+   "cite": "WSTG p.91",
+   "contains": [
+    "false positives and false negatives",
+    "internal information"
+   ],
+   "claim": "CONF-01: scanner limits"
+  },
+  {
+   "cite": "WSTG p.393-394",
+   "absent": [
+    "Vary",
+    "null origin",
+    "CVE"
+   ],
+   "claim": "CLNT-07: the guide does not cover Vary or null origin"
+  },
+  {
+   "cite": "WSTG p.54-57",
+   "absent": [
+    "confidence level",
+    "JA3",
+    "percent"
+   ],
+   "claim": "INFO-02: the guide has no formal reliability grading nor TLS fingerprinting"
+  },
+  {
+   "cite": "WSTG p.148-150",
+   "absent": [
+    "NIST 800-63B",
+    "exactly 3",
+    "mandatory"
+   ],
+   "claim": "ATHN-03: no attempt count is a requirement; no NIST 800-63B"
+  },
+  {
+   "cite": "WSTG p.380-382",
+   "absent": [
+    "Trusted Types",
+    "Content-Security-Policy"
+   ],
+   "claim": "CLNT-01: the guide does not cover Trusted Types or CSP"
+  },
+  {
+   "cite": "WSTG p.412-414",
+   "absent": [
+    "Sec-WebSocket-Key",
+    "socket.io"
+   ],
+   "claim": "CLNT-10: no handshake details beyond Origin"
+  }
+ ]
+}

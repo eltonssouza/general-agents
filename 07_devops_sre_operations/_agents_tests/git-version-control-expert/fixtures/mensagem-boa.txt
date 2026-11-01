@@ -1,0 +1,5 @@
+Fix parser crash on empty input
+
+The tokenizer returned null for an empty string, which made the
+parser dereference a null pointer. Return an empty token list so the
+parser exits cleanly.

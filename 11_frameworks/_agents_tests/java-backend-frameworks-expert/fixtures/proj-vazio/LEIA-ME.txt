@@ -1,0 +1,1 @@
+Directory intentionally without project files (fixture for the test "scan without relevant files").

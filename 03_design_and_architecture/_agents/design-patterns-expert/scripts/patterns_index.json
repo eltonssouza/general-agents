@@ -1,0 +1,1430 @@
+{
+ "_comment": "Curated index of design-patterns-expert v2. Pages = PDF. status: texto | so_sumario_indice | referencia_cruzada | ausente. Paraphrased notes. Accent-free on purpose (search). Aliases carry Portuguese and English terms.",
+ "topics": [
+  {
+   "key": "abstract_factory",
+   "title": "Abstract Factory",
+   "status": "texto",
+   "aliases": [
+    "fabrica abstrata"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "17-28",
+     "note": "families of related products without concrete classes; steps 26-27"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "builder",
+   "title": "Builder",
+   "status": "texto",
+   "aliases": [
+    "construtor telescopico",
+    "telescoping constructor",
+    "director"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "30-43",
+     "note": "step-by-step construction; optional director; avoids the telescoping constructor (p.40)"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "factory_method",
+   "title": "Factory Method",
+   "status": "texto",
+   "aliases": [
+    "metodo fabrica",
+    "virtual constructor"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "45-56",
+     "note": "subclasses decide the product; can also reuse objects from a pool or cache (p.49, 53)"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "prototype",
+   "title": "Prototype",
+   "status": "texto",
+   "aliases": [
+    "clone",
+    "clonagem",
+    "prototipo"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "58-69",
+     "note": "cloning delegated to the object; prototype registry"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "61-75",
+     "note": "monster spawners; Nystrom found no case where it was the best answer (p.64-67); prototypes as a paradigm and in data (p.67-75)"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "singleton",
+   "title": "Singleton",
+   "status": "texto",
+   "aliases": [
+    "instancia unica"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "70-77",
+     "note": "single instance and global access; downsides p.75-76"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "77-91",
+     "note": "chapter on how not to use it; global, coupling, concurrency; alternatives p.85-91"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "adapter",
+   "title": "Adapter",
+   "status": "texto",
+   "aliases": [
+    "wrapper",
+    "adaptador"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "78-88",
+     "note": "converts an incompatible interface; object adapter and class adapter (p.81-83)"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "bridge",
+   "title": "Bridge",
+   "status": "texto",
+   "aliases": [
+    "ponte"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "89-99",
+     "note": "abstraction and implementation; example of 2 shapes x 2 colors = 4 classes (p.90)"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "composite",
+   "title": "Composite",
+   "status": "texto",
+   "aliases": [
+    "object tree"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "101-110",
+     "note": "part-whole trees; leaf and container with the same interface"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "decorator",
+   "title": "Decorator",
+   "status": "texto",
+   "aliases": [
+    "wrapper",
+    "decorador"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "112-125",
+     "note": "wrapper with the same interface; stack of decorators; downsides p.123"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "facade",
+   "title": "Facade",
+   "status": "texto",
+   "aliases": [
+    "fachada"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "127-133",
+     "note": "simple interface to a subsystem; risk of a god object (p.132)"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "flyweight",
+   "title": "Flyweight",
+   "status": "texto",
+   "aliases": [
+    "peso mosca",
+    "intrinsic state",
+    "extrinsic state",
+    "estado intrinseco",
+    "estado extrinseco"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "135-145",
+     "note": "intrinsic (shared, immutable) and extrinsic state; only under RAM pressure (p.143-144)"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "33-42",
+     "note": "forest (TreeModel) and grid terrain; instanced rendering; profile first (p.41)"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "proxy",
+   "title": "Proxy",
+   "status": "texto",
+   "aliases": [
+    "procurador"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "147-155",
+     "note": "same interface as the service; uses: virtual, protection, remote, logging, cache, smart reference (p.153-154)"
+    }
+   ],
+   "reference": "padroes-estruturais-gof.md"
+  },
+  {
+   "key": "chain_of_responsibility",
+   "title": "Chain of Responsibility",
+   "status": "texto",
+   "aliases": [
+    "cor",
+    "cadeia de responsabilidade"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "157-170",
+     "note": "chain of handlers; each one processes or passes on"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "command",
+   "title": "Command",
+   "status": "texto",
+   "aliases": [
+    "comando",
+    "reificar"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "172-185",
+     "note": "request as an object; queue, history, undo"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "21-32",
+     "note": "reified method call; remap input, AI, undo and redo, replay"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "iterator",
+   "title": "Iterator",
+   "status": "texto",
+   "aliases": [
+    "iterador"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "187-198",
+     "note": "traverse a collection without exposing its representation; several iterators in parallel"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "mediator",
+   "title": "Mediator",
+   "status": "texto",
+   "aliases": [
+    "mediador"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "199-209",
+     "note": "communication through a mediator; risk of a god object (p.208); Mediator vs Observer (p.209)"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "memento",
+   "title": "Memento",
+   "status": "texto",
+   "aliases": [
+    "snapshot"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "211-221",
+     "note": "snapshot taken by the state owner; originator and caretaker"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "observer",
+   "title": "Observer",
+   "status": "texto",
+   "aliases": [
+    "publish subscribe",
+    "listener",
+    "assinante"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "223-233",
+     "note": "dynamic subscribers; notified in random order (p.232)"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "43-59",
+     "note": "achievements and physics; costs; lapsed listener (p.55-57)"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "state",
+   "title": "State",
+   "status": "texto",
+   "aliases": [
+    "estado",
+    "maquina de estados"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "235-246",
+     "note": "states as classes; states can start transitions (p.239)"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "92-110",
+     "note": "hero FSM; static and instantiated; concurrent, hierarchical, pushdown"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "strategy",
+   "title": "Strategy",
+   "status": "texto",
+   "aliases": [
+    "estrategia"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "248-256",
+     "note": "interchangeable algorithms; can be an anonymous function (p.256)"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "template_method",
+   "title": "Template Method",
+   "status": "texto",
+   "aliases": [
+    "hook",
+    "metodo template"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "258-266",
+     "note": "skeleton in the superclass; hooks (p.261); downsides p.266"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "visitor",
+   "title": "Visitor",
+   "status": "texto",
+   "aliases": [
+    "double dispatch",
+    "visitante"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "268-278",
+     "note": "double dispatch (p.271); downsides p.278"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "classification",
+   "title": "Classification and critique of patterns",
+   "status": "texto",
+   "aliases": [
+    "criticas",
+    "history of patterns",
+    "gof",
+    "classificacao",
+    "critica",
+    "classification",
+    "critique",
+    "criticism"
+   ],
+   "entries": [
+    {
+     "sigla": "RG",
+     "pages": "5-9",
+     "note": "idioms, architectural patterns, 3 groups (p.5); criticism (p.8-9); history and the GoF book with 23 patterns (p.7)"
+    }
+   ],
+   "reference": "padroes-criacionais-gof.md"
+  },
+  {
+   "key": "double_buffer",
+   "title": "Double Buffer",
+   "status": "texto",
+   "aliases": [
+    "buffer duplo",
+    "tearing",
+    "framebuffer"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "113-128",
+     "note": "tearing; current and next; swap; swap pointers or copy; actors with buffered state"
+    }
+   ],
+   "reference": "padroes-de-sequenciamento-e-tempo.md"
+  },
+  {
+   "key": "game_loop",
+   "title": "Game Loop",
+   "status": "texto",
+   "aliases": [
+    "laco do jogo",
+    "timestep",
+    "passo fixo",
+    "passo variavel",
+    "lag",
+    "fixed timestep",
+    "variable timestep"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "130-144",
+     "note": "processInput, update, render; variable and fixed step; lag; render(lag/MS_PER_UPDATE)"
+    }
+   ],
+   "reference": "padroes-de-sequenciamento-e-tempo.md"
+  },
+  {
+   "key": "update_method",
+   "title": "Update Method",
+   "status": "texto",
+   "aliases": [
+    "metodo de atualizacao"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "146-160",
+     "note": "each entity simulates one frame; order matters; list during the loop; dormant objects"
+    }
+   ],
+   "reference": "padroes-de-sequenciamento-e-tempo.md"
+  },
+  {
+   "key": "bytecode",
+   "title": "Bytecode",
+   "status": "texto",
+   "aliases": [
+    "vm",
+    "maquina virtual"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "163-189",
+     "note": "stack VM for behavior in data; contrast with Interpreter; costs"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "type_object",
+   "title": "Type Object",
+   "status": "texto",
+   "aliases": [
+    "objeto de tipo",
+    "breed"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "191-207",
+     "note": "a type class; Breed and Monster; copy-down; inheritance between types"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "component",
+   "title": "Component",
+   "status": "texto",
+   "aliases": [
+    "componente",
+    "entity component"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "209-228",
+     "note": "splitting the entity by domain; communication; Unity, Delta3D and XNA cited (p.228)"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "event_queue",
+   "title": "Event Queue",
+   "status": "texto",
+   "aliases": [
+    "fila de eventos",
+    "message queue",
+    "ring buffer",
+    "pubsub"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "230-249",
+     "note": "decouples in time; ring buffer; aggregation; threads; decisions"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "service_locator",
+   "title": "Service Locator",
+   "status": "texto",
+   "aliases": [
+    "localizador de servicos",
+    "null service"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "251-265",
+     "note": "global service locator; null service; logging decorator; decisions"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "data_locality",
+   "title": "Data Locality",
+   "status": "texto",
+   "aliases": [
+    "localidade de dados",
+    "cache miss",
+    "cache line",
+    "hot cold"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "267-289",
+     "note": "cache, cache line (64-128 bytes, p.270); contiguous arrays; hot/cold splitting"
+    }
+   ],
+   "reference": "padroes-de-otimizacao-e-performance.md"
+  },
+  {
+   "key": "dirty_flag",
+   "title": "Dirty Flag",
+   "status": "texto",
+   "aliases": [
+    "dirty bit",
+    "sinalizador de modificacao"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "291-305",
+     "note": "scene graph; flag and dirty parameter passed down the tree (p.302-303)"
+    }
+   ],
+   "reference": "padroes-de-otimizacao-e-performance.md"
+  },
+  {
+   "key": "object_pool",
+   "title": "Object Pool",
+   "status": "texto",
+   "aliases": [
+    "pool de objetos",
+    "free list",
+    "fragmentacao"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "307-321",
+     "note": "fragmentation; O(1) free list (p.314-317); pitfalls p.310-312"
+    }
+   ],
+   "reference": "padroes-de-otimizacao-e-performance.md"
+  },
+  {
+   "key": "spatial_partition",
+   "title": "Spatial Partition",
+   "status": "texto",
+   "aliases": [
+    "quadtree",
+    "octree",
+    "grid",
+    "particao espacial",
+    "bsp",
+    "kd tree"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "322-338",
+     "note": "fixed grid, quadtree, octree, BSP, k-d tree, BVH; small n does not pay off (p.324)"
+    }
+   ],
+   "reference": "padroes-de-otimizacao-e-performance.md"
+  },
+  {
+   "key": "lapsed_listener",
+   "title": "Lapsed listener problem",
+   "status": "texto",
+   "aliases": [
+    "observador esquecido"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "56-57",
+     "note": "an observer that is not unregistered stays retained by the subject's list"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "null_object",
+   "title": "Null Object",
+   "status": "texto",
+   "aliases": [
+    "objeto nulo"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "24",
+     "note": "button with no action"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "256-257",
+     "note": "null service in the locator"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "fsm",
+   "title": "Finite state machine (FSM)",
+   "status": "texto",
+   "aliases": [
+    "finite state machine",
+    "maquina de estados finita"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "96-98",
+     "note": "states, inputs, transitions; enum and switch"
+    },
+    {
+     "sigla": "RG",
+     "pages": "235-236",
+     "note": "FSM concept in State"
+    }
+   ],
+   "reference": "padroes-comportamentais-gof.md"
+  },
+  {
+   "key": "variable_timestep",
+   "title": "Variable time step",
+   "status": "texto",
+   "aliases": [
+    "variable time step",
+    "passo de tempo variavel"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "136-138",
+     "note": "non-deterministic and unstable; Fred and George example"
+    }
+   ],
+   "reference": "padroes-de-sequenciamento-e-tempo.md"
+  },
+  {
+   "key": "fixed_timestep",
+   "title": "Fixed step with lag",
+   "status": "texto",
+   "aliases": [
+    "fixed time step",
+    "catch up",
+    "passo fixo com lag"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "138-141",
+     "note": "updates in fixed steps and renders with the residual; maximum iterations without a number (p.139)"
+    }
+   ],
+   "reference": "padroes-de-sequenciamento-e-tempo.md"
+  },
+  {
+   "key": "component_communication",
+   "title": "Communication between components",
+   "status": "texto",
+   "aliases": [
+    "comunicacao entre componentes"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "224-228",
+     "note": "container state, direct reference, messages"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md"
+  },
+  {
+   "key": "clean_code_chapter1",
+   "title": "Clean Code, Chapter 1",
+   "status": "texto",
+   "aliases": [
+    "clean code",
+    "codigo limpo",
+    "clean code capitulo 1",
+    "capitulo 1"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "31-45",
+     "note": "bad code, the cost of the mess, attitude, what clean code is, boy scout"
+    }
+   ],
+   "reference": "clean-code-capitulo-1.md"
+  },
+  {
+   "key": "boy_scout_rule",
+   "title": "Boy scout rule",
+   "status": "texto",
+   "aliases": [
+    "boy scout",
+    "regra do escoteiro",
+    "escoteiro"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "44",
+     "note": "leave the code cleaner than you found it"
+    }
+   ],
+   "reference": "clean-code-capitulo-1.md"
+  },
+  {
+   "key": "cost_of_mess",
+   "title": "Cost of owning a mess",
+   "status": "texto",
+   "aliases": [
+    "bad code",
+    "codigo ruim",
+    "later equals never",
+    "custo de possuir uma bagunca",
+    "bagunca"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "34-35",
+     "note": "productivity tends to zero; the grand redesign in the sky"
+    }
+   ],
+   "reference": "clean-code-capitulo-1.md"
+  },
+  {
+   "key": "clean_code_names",
+   "title": "Meaningful names (Ch. 2)",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "meaningful names",
+    "nomes",
+    "intention revealing",
+    "hungarian notation",
+    "notacao hungara",
+    "nomes significativos"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "7-8",
+     "note": "TOC ONLY (printed 17-30)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "58",
+     "note": "INDEX ONLY: intention-revealing names 18-19; pronounceable 21-22; searchable 22-23"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md",
+   "note": "Ch. 2 is NOT in the PDF: one can only confirm that the topic exists."
+  },
+  {
+   "key": "clean_code_functions",
+   "title": "Functions (Ch. 3)",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "functions",
+    "funcoes",
+    "small functions",
+    "do one thing",
+    "stepdown rule",
+    "funcoes pequenas",
+    "funcoes (cap. 3)"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "8-9",
+     "note": "TOC ONLY (printed 31-52)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "54",
+     "note": "INDEX ONLY: functions; doing one thing 35-36"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md",
+   "note": "Ch. 3 is NOT in the PDF."
+  },
+  {
+   "key": "flag_arguments",
+   "title": "Flag arguments",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "argumento booleano",
+    "boolean argument",
+    "flag argument"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "8",
+     "note": "TOC ONLY: Flag Arguments (printed 41)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "48",
+     "note": "INDEX ONLY: argument(s) flag, 41"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md",
+   "note": "The text of the rule is NOT in the sample."
+  },
+  {
+   "key": "command_query_separation",
+   "title": "Command Query Separation",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "cqs",
+    "comando consulta",
+    "separacao comando consulta"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "8",
+     "note": "TOC ONLY: Command Query Separation (printed 45)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "50",
+     "note": "INDEX ONLY: commands, separating from queries, 45-46"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md",
+   "note": "The text is NOT in the sample."
+  },
+  {
+   "key": "function_arguments",
+   "title": "Function arguments (monadic, dyadic, triadic)",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "argumentos",
+    "monadic",
+    "dyadic",
+    "triadic",
+    "argument objects",
+    "argumentos de funcao",
+    "monadico",
+    "diadico",
+    "triade"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "8",
+     "note": "TOC ONLY (printed 40-43)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "48",
+     "note": "INDEX ONLY: monadic, dyadic, triadic, niladic, p.40"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md",
+   "note": "Numeric limits are NOT in the sample."
+  },
+  {
+   "key": "error_handling_functions",
+   "title": "Exceptions and try/catch in functions",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "prefer exceptions",
+    "try catch",
+    "excecoes e try catch em funcoes",
+    "excecoes"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "9",
+     "note": "TOC ONLY (printed 46-48)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "64",
+     "note": "INDEX ONLY: try/catch blocks 46-47"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md"
+  },
+  {
+   "key": "dry",
+   "title": "Don't repeat code (DRY)",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "dry",
+    "duplicacao",
+    "dont repeat yourself",
+    "nao repetir codigo"
+   ],
+   "entries": [
+    {
+     "sigla": "CC",
+     "pages": "9",
+     "note": "TOC ONLY (printed 48)"
+    },
+    {
+     "sigla": "CC",
+     "pages": "52",
+     "note": "INDEX ONLY: duplication of code, 48"
+    },
+    {
+     "sigla": "CC",
+     "pages": "40-41",
+     "note": "Ron Jeffries (Ch. 1): duplication and expressiveness"
+    }
+   ],
+   "reference": "clean-code-nomes-e-funcoes.md"
+  },
+  {
+   "key": "peaa_introduction",
+   "title": "PoEAA: Introduction (layering, performance, patterns)",
+   "status": "texto",
+   "aliases": [
+    "enterprise application",
+    "aplicacao corporativa",
+    "business logic",
+    "poeaa introducao",
+    "introducao"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "26-38",
+     "note": "architecture, enterprise applications, kinds of applications, performance, pattern structure"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md"
+  },
+  {
+   "key": "layering",
+   "title": "Layering",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "layers",
+    "camadas",
+    "three principal layers",
+    "camadas (layering)"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "27",
+     "note": "layers as the author's preferred architectural pattern (Introduction)"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "8",
+     "note": "TOC ONLY: Ch. 1 Layering (printed 17)"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md",
+   "note": "Ch. 1 is NOT in the PDF."
+  },
+  {
+   "key": "gateway",
+   "title": "Gateway (Row/Table Data Gateway)",
+   "status": "texto",
+   "aliases": [
+    "row data gateway",
+    "table data gateway",
+    "record set"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "41-42",
+     "note": "SQL isolated in per-table classes; Row Data Gateway and Table Data Gateway"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "active_record",
+   "title": "Active Record",
+   "status": "texto",
+   "aliases": [],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "42-43",
+     "note": "good for a simple domain; breaks down with complex logic"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "data_mapper",
+   "title": "Data Mapper",
+   "status": "texto",
+   "aliases": [
+    "mapeador de dados"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "43",
+     "note": "isolates Domain Model and database; the most complicated and the most isolated"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "unit_of_work",
+   "title": "Unit of Work",
+   "status": "texto",
+   "aliases": [],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "45-46",
+     "note": "tracks what was read and changed; single commit"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "59",
+     "note": "manages transaction and connection"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "identity_map",
+   "title": "Identity Map",
+   "status": "texto",
+   "aliases": [],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "46",
+     "note": "avoids duplicating objects of the same row; purpose is identity, not performance"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "lazy_load",
+   "title": "Lazy Load",
+   "status": "texto",
+   "aliases": [],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "46",
+     "note": "a placeholder in place of the reference"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "inheritance_mapping",
+   "title": "Inheritance mapping (Single, Class, Concrete Table)",
+   "status": "texto",
+   "aliases": [
+    "single table inheritance",
+    "class table inheritance",
+    "concrete table inheritance",
+    "mapeamento de heranca",
+    "heranca"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "52-54",
+     "note": "three options and trade-offs; the author's first choice: Single Table"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "relationship_mapping",
+   "title": "Relationship mapping",
+   "status": "texto",
+   "aliases": [
+    "foreign key mapping",
+    "identity field",
+    "embedded value",
+    "serialized lob",
+    "association table mapping",
+    "dependent mapping",
+    "mapeamento de relacionamentos"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "48-52",
+     "note": "Identity Field, Foreign Key Mapping, Dependent Mapping, Association Table Mapping, Embedded Value, Serialized LOB"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "metadata_mapping",
+   "title": "Metadata Mapping, Query Object, Repository",
+   "status": "texto",
+   "aliases": [
+    "query object",
+    "repository",
+    "repositorio"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "56-57",
+     "note": "metadata avoids repetitive code; Repository hides the database"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "database_connections",
+   "title": "Database connections",
+   "status": "texto",
+   "aliases": [
+    "connection pool",
+    "conexoes",
+    "conexoes de banco de dados"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "57-60",
+     "note": "pool, close early, tie to the transaction, thread-scoped Registry"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "orm_impedance",
+   "title": "Object-relational impedance and O/R tools",
+   "status": "texto",
+   "aliases": [
+    "impedance mismatch",
+    "impedancia",
+    "orm",
+    "o/r mapping",
+    "impedancia objeto relacional",
+    "ferramentas o/r"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "44-45",
+     "note": "about a third of the effort goes to mapping (anecdotal observation); consider an O/R tool"
+    }
+   ],
+   "reference": "poeaa-mapeamento-para-bancos-relacionais.md"
+  },
+  {
+   "key": "transaction_script",
+   "title": "Transaction Script",
+   "status": "referencia_cruzada",
+   "aliases": [
+    "script de transacao"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "42",
+     "note": "CROSS-REFERENCE ONLY: Active Record comes from Row Data Gateway plus the repetition across Transaction Scripts"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "55",
+     "note": "simple scheme: Transaction Script or Table Module with Gateways"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "10",
+     "note": "TOC ONLY: chapter 9, printed 110"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md",
+   "note": "The formal definition is NOT in the sample (Ch. 2 and 9 absent)."
+  },
+  {
+   "key": "domain_model",
+   "title": "Domain Model",
+   "status": "referencia_cruzada",
+   "aliases": [
+    "modelo de dominio",
+    "domain logic"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "42-43",
+     "note": "CROSS-REFERENCE ONLY: with a Domain Model, Active Record (simple) or Data Mapper (complex)"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "55",
+     "note": "beware of a model that looks like a database; iterate in cycles of at most 6 weeks"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "10",
+     "note": "TOC ONLY: chapter 9, printed 116"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md",
+   "note": "The formal definition is NOT in the sample."
+  },
+  {
+   "key": "table_module",
+   "title": "Table Module",
+   "status": "referencia_cruzada",
+   "aliases": [
+    "modulo de tabela"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "42",
+     "note": "CROSS-REFERENCE ONLY: Table Data Gateway goes with Record Set and Table Module"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "10",
+     "note": "TOC ONLY: chapter 9, printed 125"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md",
+   "note": "The formal definition is NOT in the sample."
+  },
+  {
+   "key": "service_layer",
+   "title": "Service Layer (PoEAA)",
+   "status": "so_sumario_indice",
+   "aliases": [
+    "camada de servico",
+    "service layer"
+   ],
+   "entries": [
+    {
+     "sigla": "PEAA",
+     "pages": "8",
+     "note": "TOC ONLY: Ch. 2 (printed 30)"
+    },
+    {
+     "sigla": "PEAA",
+     "pages": "10",
+     "note": "TOC ONLY: Ch. 9 (printed 133, by Randy Stafford)"
+    }
+   ],
+   "reference": "poeaa-organizacao-da-logica-de-dominio.md",
+   "note": "The text is NOT in the sample."
+  },
+  {
+   "key": "subclass_sandbox",
+   "title": "Subclass Sandbox",
+   "status": "ausente",
+   "aliases": [
+    "sandbox de subclasse"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "162",
+     "note": "cited in the introduction of the behavioral section"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "90-91",
+     "note": "remedy for Singleton: access the object through the base class"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "32",
+     "note": "Command's execute() composing base methods"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "190",
+     "note": "404 error page in place of the chapter"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md",
+   "note": "The chapter is NOT in the PDF (p.190 is a 404): there are only mentions in other chapters."
+  },
+  {
+   "key": "interpreter_pattern",
+   "title": "Interpreter (GoF)",
+   "status": "texto",
+   "aliases": [
+    "interpretador",
+    "interpreter"
+   ],
+   "entries": [
+    {
+     "sigla": "GPP",
+     "pages": "164-167",
+     "note": "described in passing in the Bytecode chapter as a contrast"
+    },
+    {
+     "sigla": "GPP",
+     "pages": "189",
+     "note": "relation to Bytecode"
+    }
+   ],
+   "reference": "padroes-comportamentais-e-desacoplamento-em-jogos.md",
+   "note": "The RG catalog (PDF) does not include Interpreter."
+  }
+ ],
+ "sem_cobertura": [
+  "godot",
+  "unreal engine",
+  "unreal",
+  "dots",
+  "ecs",
+  "entity component system",
+  "dependency injection container",
+  "spring",
+  "hibernate",
+  "jpa",
+  "entity framework",
+  "ddd",
+  "domain driven design",
+  "cqrs",
+  "event sourcing",
+  "microservices",
+  "saga",
+  "circuit breaker",
+  "solid",
+  "soa",
+  "aos",
+  "structure of arrays",
+  "vsync",
+  "death spiral",
+  "espiral da morte",
+  "bullet tunneling",
+  "tunelamento",
+  "weak reference",
+  "referencia fraca",
+  "test pollution",
+  "principio de hollywood",
+  "hollywood principle",
+  "fluent interface",
+  "double checked locking",
+  "blackboard"
+ ]
+}

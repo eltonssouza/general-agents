@@ -1,0 +1,11 @@
+{
+ "PRI01": "yes",
+ "PRI02": "yes",
+ "PRI03": "partial",
+ "BAS01": "yes",
+ "BAS02": "no",
+ "BAS03": "partial",
+ "SEG01": "yes",
+ "SEG02": "no",
+ "SEG03": "na"
+}

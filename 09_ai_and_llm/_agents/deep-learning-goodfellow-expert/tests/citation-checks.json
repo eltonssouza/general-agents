@@ -1,0 +1,1443 @@
+{
+ "fonte": "DLB, PDF DL-Deep-Learning-Goodfellow",
+ "checks": [
+  {
+   "cite": "DLB p.16",
+   "contains": [
+    "hierarchy of concepts"
+   ],
+   "claim": "thesis: hierarchy of concepts"
+  },
+  {
+   "cite": "DLB p.17",
+   "contains": [
+    "cyc",
+    "knowledge base"
+   ],
+   "claim": "knowledge base/Cyc"
+  },
+  {
+   "cite": "DLB p.18",
+   "contains": [
+    "logistic regression",
+    "naive bayes",
+    "feature"
+   ],
+   "claim": "features and simple algorithms"
+  },
+  {
+   "cite": "DLB p.19",
+   "contains": [
+    "autoencoder",
+    "representation learning",
+    "polar coordinates"
+   ],
+   "claim": "representation learning, Fig 1.1"
+  },
+  {
+   "cite": "DLB p.20",
+   "contains": [
+    "disentangle",
+    "multilayer perceptron"
+   ],
+   "claim": "disentangle and MLP"
+  },
+  {
+   "cite": "DLB p.22",
+   "contains": [
+    "depth three",
+    "depth one"
+   ],
+   "claim": "depth 3 or 1 (Fig 1.3)"
+  },
+  {
+   "cite": "DLB p.28",
+   "contains": [
+    "cybernetics",
+    "connectionism",
+    "2006"
+   ],
+   "claim": "three waves"
+  },
+  {
+   "cite": "DLB p.30",
+   "contains": [
+    "perceptron",
+    "adaline",
+    "xor",
+    "stochastic gradient descent"
+   ],
+   "claim": "perceptron/ADALINE/XOR"
+  },
+  {
+   "cite": "DLB p.33",
+   "contains": [
+    "back-propagation",
+    "long short-term memory"
+   ],
+   "claim": "historical backprop and LSTM"
+  },
+  {
+   "cite": "DLB p.34",
+   "contains": [
+    "deep belief network"
+   ],
+   "claim": "2006 DBN"
+  },
+  {
+   "cite": "DLB p.35",
+   "contains": [
+    "5,000 labeled examples",
+    "10 million",
+    "2.4 years"
+   ],
+   "claim": "2016 rule of thumb"
+  },
+  {
+   "cite": "DLB p.38",
+   "contains": [
+    "26.1%",
+    "15.3%",
+    "3.6%"
+   ],
+   "claim": "ILSVRC"
+  },
+  {
+   "cite": "DLB p.49",
+   "contains": [
+    "broadcasting",
+    "hadamard product"
+   ],
+   "claim": "broadcasting and Hadamard"
+  },
+  {
+   "cite": "DLB p.52",
+   "contains": [
+    "theoretical tool"
+   ],
+   "claim": "inverse only as a theoretical tool"
+  },
+  {
+   "cite": "DLB p.53",
+   "contains": [
+    "column space",
+    "singular"
+   ],
+   "claim": "column space, singular"
+  },
+  {
+   "cite": "DLB p.55",
+   "contains": [
+    "l1 norm",
+    "max norm",
+    "frobenius norm"
+   ],
+   "claim": "norms"
+  },
+  {
+   "cite": "DLB p.57",
+   "contains": [
+    "eigendecomposition",
+    "eigenvector"
+   ],
+   "claim": "eigendecomposition"
+  },
+  {
+   "cite": "DLB p.59",
+   "contains": [
+    "singular value decomposition",
+    "positive definite"
+   ],
+   "claim": "SVD and positive definite"
+  },
+  {
+   "cite": "DLB p.61",
+   "contains": [
+    "moore-penrose pseudoinverse"
+   ],
+   "claim": "pseudoinverse"
+  },
+  {
+   "cite": "DLB p.63",
+   "contains": [
+    "principal components analysis"
+   ],
+   "claim": "PCA"
+  },
+  {
+   "cite": "DLB p.69",
+   "contains": [
+    "inherent stochasticity",
+    "incomplete observability",
+    "incomplete modeling"
+   ],
+   "claim": "3 sources of uncertainty"
+  },
+  {
+   "cite": "DLB p.70",
+   "contains": [
+    "frequentist probability",
+    "bayesian probability"
+   ],
+   "claim": "frequentist vs Bayesian"
+  },
+  {
+   "cite": "DLB p.88",
+   "contains": [
+    "self-information",
+    "nats"
+   ],
+   "claim": "self-information and nats"
+  },
+  {
+   "cite": "DLB p.89",
+   "contains": [
+    "shannon entropy",
+    "kullback-leibler",
+    "not symmetric"
+   ],
+   "claim": "entropy, KL, asymmetry"
+  },
+  {
+   "cite": "DLB p.90",
+   "contains": [
+    "cross-entropy",
+    "0 log 0"
+   ],
+   "claim": "cross-entropy and convention"
+  },
+  {
+   "cite": "DLB p.93",
+   "contains": [
+    "clique",
+    "normalizing constant"
+   ],
+   "claim": "undirected models"
+  },
+  {
+   "cite": "DLB p.96",
+   "contains": [
+    "softmax",
+    "underflow",
+    "overflow"
+   ],
+   "claim": "stable softmax"
+  },
+  {
+   "cite": "DLB p.97",
+   "contains": [
+    "condition number",
+    "gradient-based optimization"
+   ],
+   "claim": "conditioning"
+  },
+  {
+   "cite": "DLB p.101",
+   "contains": [
+    "jacobian matrix"
+   ],
+   "claim": "Jacobian"
+  },
+  {
+   "cite": "DLB p.102",
+   "contains": [
+    "hessian matrix"
+   ],
+   "claim": "Hessian"
+  },
+  {
+   "cite": "DLB p.103",
+   "contains": [
+    "second-order taylor"
+   ],
+   "claim": "2nd-order Taylor"
+  },
+  {
+   "cite": "DLB p.107",
+   "contains": [
+    "newton's method",
+    "lipschitz"
+   ],
+   "claim": "Newton and Lipschitz"
+  },
+  {
+   "cite": "DLB p.114",
+   "contains": [
+    "mitchell"
+   ],
+   "claim": "definition of learning"
+  },
+  {
+   "cite": "DLB p.115",
+   "contains": [
+    "classification with missing inputs"
+   ],
+   "claim": "task"
+  },
+  {
+   "cite": "DLB p.119",
+   "contains": [
+    "error rate",
+    "0-1 loss"
+   ],
+   "claim": "metrics"
+  },
+  {
+   "cite": "DLB p.124",
+   "contains": [
+    "normal equations"
+   ],
+   "claim": "normal equations"
+  },
+  {
+   "cite": "DLB p.126",
+   "contains": [
+    "i.i.d. assumptions",
+    "underfitting",
+    "overfitting"
+   ],
+   "claim": "iid and error"
+  },
+  {
+   "cite": "DLB p.129",
+   "contains": [
+    "vc dimension",
+    "occam"
+   ],
+   "claim": "VC and Occam"
+  },
+  {
+   "cite": "DLB p.131",
+   "contains": [
+    "bayes error",
+    "no free lunch"
+   ],
+   "claim": "Bayes error and NFL"
+  },
+  {
+   "cite": "DLB p.134",
+   "contains": [
+    "weight decay"
+   ],
+   "claim": "weight decay"
+  },
+  {
+   "cite": "DLB p.136",
+   "contains": [
+    "validation set",
+    "80%"
+   ],
+   "claim": "80/20 validation"
+  },
+  {
+   "cite": "DLB p.137",
+   "contains": [
+    "k-fold cross-validation"
+   ],
+   "claim": "k-fold"
+  },
+  {
+   "cite": "DLB p.143",
+   "contains": [
+    "95% confidence interval",
+    "standard error"
+   ],
+   "claim": "95% CI"
+  },
+  {
+   "cite": "DLB p.144",
+   "contains": [
+    "mean squared error",
+    "bias"
+   ],
+   "claim": "MSE=bias^2+var"
+  },
+  {
+   "cite": "DLB p.146",
+   "contains": [
+    "consistency",
+    "maximum likelihood"
+   ],
+   "claim": "consistency and MLE"
+  },
+  {
+   "cite": "DLB p.147",
+   "contains": [
+    "cross-entropy",
+    "kl divergence"
+   ],
+   "claim": "MLE and KL"
+  },
+  {
+   "cite": "DLB p.167",
+   "contains": [
+    "minibatch"
+   ],
+   "claim": "SGD minibatch"
+  },
+  {
+   "cite": "DLB p.170",
+   "contains": [
+    "curse of dimensionality"
+   ],
+   "claim": "curse of dimensionality"
+  },
+  {
+   "cite": "DLB p.172",
+   "contains": [
+    "smoothness prior",
+    "k-nearest neighbors"
+   ],
+   "claim": "smoothness prior"
+  },
+  {
+   "cite": "DLB p.187",
+   "contains": [
+    "xor"
+   ],
+   "claim": "linear XOR"
+  },
+  {
+   "cite": "DLB p.189",
+   "contains": [
+    "relu",
+    "rectified linear unit"
+   ],
+   "claim": "ReLU default"
+  },
+  {
+   "cite": "DLB p.194",
+   "contains": [
+    "cross-entropy",
+    "saturate"
+   ],
+   "claim": "NLL and saturation"
+  },
+  {
+   "cite": "DLB p.196",
+   "contains": [
+    "mean absolute error"
+   ],
+   "claim": "MAE and median"
+  },
+  {
+   "cite": "DLB p.198",
+   "contains": [
+    "logit",
+    "softplus"
+   ],
+   "claim": "sigmoid and softplus"
+  },
+  {
+   "cite": "DLB p.200",
+   "contains": [
+    "softmax"
+   ],
+   "claim": "softmax"
+  },
+  {
+   "cite": "DLB p.201",
+   "contains": [
+    "numerically stable"
+   ],
+   "claim": "stable softmax"
+  },
+  {
+   "cite": "DLB p.208",
+   "contains": [
+    "leaky relu",
+    "maxout"
+   ],
+   "claim": "ReLU generalizations"
+  },
+  {
+   "cite": "DLB p.210",
+   "contains": [
+    "hyperbolic tangent"
+   ],
+   "claim": "tanh"
+  },
+  {
+   "cite": "DLB p.212",
+   "contains": [
+    "softplus",
+    "hard tanh"
+   ],
+   "claim": "softplus and hard tanh"
+  },
+  {
+   "cite": "DLB p.213",
+   "contains": [
+    "universal approximation theorem"
+   ],
+   "claim": "universal approximation"
+  },
+  {
+   "cite": "DLB p.214",
+   "contains": [
+    "exponential number of hidden units"
+   ],
+   "claim": "exponential worst case"
+  },
+  {
+   "cite": "DLB p.215",
+   "contains": [
+    "montufar"
+   ],
+   "claim": "Montufar"
+  },
+  {
+   "cite": "DLB p.219",
+   "contains": [
+    "back-propagation algorithm",
+    "stochastic gradient descent"
+   ],
+   "claim": "backprop is not the whole of learning"
+  },
+  {
+   "cite": "DLB p.225",
+   "contains": [
+    "algorithm 6.2"
+   ],
+   "claim": "Alg 6.2"
+  },
+  {
+   "cite": "DLB p.228",
+   "contains": [
+    "algorithm 6.4"
+   ],
+   "claim": "Alg 6.4"
+  },
+  {
+   "cite": "DLB p.237",
+   "contains": [
+    "reverse mode accumulation",
+    "np-complete"
+   ],
+   "claim": "reverse mode and NP-complete"
+  },
+  {
+   "cite": "DLB p.239",
+   "contains": [
+    "krylov"
+   ],
+   "claim": "Krylov"
+  },
+  {
+   "cite": "DLB p.245",
+   "contains": [
+    "parameter norm penalty"
+   ],
+   "claim": "norm penalty"
+  },
+  {
+   "cite": "DLB p.246",
+   "contains": [
+    "weight decay",
+    "ridge regression"
+   ],
+   "claim": "L2"
+  },
+  {
+   "cite": "DLB p.251",
+   "contains": [
+    "lasso",
+    "laplace"
+   ],
+   "claim": "L1/LASSO"
+  },
+  {
+   "cite": "DLB p.253",
+   "contains": [
+    "dead units"
+   ],
+   "claim": "dead units"
+  },
+  {
+   "cite": "DLB p.255",
+   "contains": [
+    "dataset augmentation"
+   ],
+   "claim": "data augmentation"
+  },
+  {
+   "cite": "DLB p.258",
+   "contains": [
+    "label smoothing"
+   ],
+   "claim": "label smoothing"
+  },
+  {
+   "cite": "DLB p.259",
+   "contains": [
+    "multi-task learning"
+   ],
+   "claim": "multitask"
+  },
+  {
+   "cite": "DLB p.262",
+   "contains": [
+    "early stopping",
+    "patience"
+   ],
+   "claim": "Alg 7.1"
+  },
+  {
+   "cite": "DLB p.271",
+   "contains": [
+    "bagging"
+   ],
+   "claim": "bagging"
+  },
+  {
+   "cite": "DLB p.274",
+   "contains": [
+    "0.8",
+    "0.5"
+   ],
+   "claim": "dropout inclusion probabilities"
+  },
+  {
+   "cite": "DLB p.278",
+   "contains": [
+    "weight scaling inference rule"
+   ],
+   "claim": "weight scaling"
+  },
+  {
+   "cite": "DLB p.283",
+   "contains": [
+    "adversarial"
+   ],
+   "claim": "adversarial training"
+  },
+  {
+   "cite": "DLB p.284",
+   "contains": [
+    "gibbon",
+    "nematode"
+   ],
+   "claim": "panda gibbon"
+  },
+  {
+   "cite": "DLB p.291",
+   "contains": [
+    "empirical risk",
+    "surrogate loss"
+   ],
+   "claim": "empirical risk and surrogate loss"
+  },
+  {
+   "cite": "DLB p.293",
+   "contains": [
+    "standard error of the mean"
+   ],
+   "claim": "diminishing returns of the batch"
+  },
+  {
+   "cite": "DLB p.294",
+   "contains": [
+    "power of 2"
+   ],
+   "claim": "minibatch size"
+  },
+  {
+   "cite": "DLB p.300",
+   "contains": [
+    "norm of the gradient"
+   ],
+   "claim": "gradient norm test"
+  },
+  {
+   "cite": "DLB p.304",
+   "contains": [
+    "gradient clipping"
+   ],
+   "claim": "clipping"
+  },
+  {
+   "cite": "DLB p.305",
+   "contains": [
+    "vanishing and exploding gradient"
+   ],
+   "claim": "vanishing/exploding gradients"
+  },
+  {
+   "cite": "DLB p.310",
+   "contains": [
+    "learning rate",
+    "1%"
+   ],
+   "claim": "decay and 1%"
+  },
+  {
+   "cite": "DLB p.313",
+   "contains": [
+    "terminal velocity"
+   ],
+   "claim": "momentum"
+  },
+  {
+   "cite": "DLB p.318",
+   "contains": [
+    "normalized initialization"
+   ],
+   "claim": "Glorot"
+  },
+  {
+   "cite": "DLB p.322",
+   "contains": [
+    "adagrad"
+   ],
+   "claim": "AdaGrad"
+  },
+  {
+   "cite": "DLB p.323",
+   "contains": [
+    "rmsprop"
+   ],
+   "claim": "RMSProp"
+  },
+  {
+   "cite": "DLB p.326",
+   "contains": [
+    "suggested default",
+    "10-8"
+   ],
+   "claim": "Adam defaults"
+  },
+  {
+   "cite": "DLB p.332",
+   "contains": [
+    "batch normalization"
+   ],
+   "claim": "batch norm"
+  },
+  {
+   "cite": "DLB p.334",
+   "contains": [
+    "running averages"
+   ],
+   "claim": "BN at test time"
+  },
+  {
+   "cite": "DLB p.337",
+   "contains": [
+    "polyak"
+   ],
+   "claim": "Polyak"
+  },
+  {
+   "cite": "DLB p.348",
+   "contains": [
+    "cross-correlation",
+    "toeplitz"
+   ],
+   "claim": "cross-correlation"
+  },
+  {
+   "cite": "DLB p.350",
+   "contains": [
+    "sparse interactions",
+    "parameter sharing",
+    "equivariant"
+   ],
+   "claim": "three ideas"
+  },
+  {
+   "cite": "DLB p.355",
+   "contains": [
+    "eight billion",
+    "sixteen billion"
+   ],
+   "claim": "Fig 9.6"
+  },
+  {
+   "cite": "DLB p.357",
+   "contains": [
+    "invariance",
+    "pooling"
+   ],
+   "claim": "pooling"
+  },
+  {
+   "cite": "DLB p.354",
+   "contains": [
+    "max pooling",
+    "pooling function"
+   ],
+   "claim": "pooling"
+  },
+  {
+   "cite": "DLB p.362",
+   "contains": [
+    "infinitely strong prior"
+   ],
+   "claim": "infinite prior"
+  },
+  {
+   "cite": "DLB p.364",
+   "contains": [
+    "valid convolution",
+    "same convolution",
+    "full convolution"
+   ],
+   "claim": "padding"
+  },
+  {
+   "cite": "DLB p.367",
+   "contains": [
+    "locally connected",
+    "tiled convolution"
+   ],
+   "claim": "locally connected/tiled"
+  },
+  {
+   "cite": "DLB p.377",
+   "contains": [
+    "separable"
+   ],
+   "claim": "separable kernel"
+  },
+  {
+   "cite": "DLB p.386",
+   "contains": [
+    "10% of all the checks"
+   ],
+   "claim": "NEC checks"
+  },
+  {
+   "cite": "DLB p.388",
+   "contains": [
+    "recurrent neural networks"
+   ],
+   "claim": "RNN"
+  },
+  {
+   "cite": "DLB p.390",
+   "contains": [
+    "unfolding"
+   ],
+   "claim": "unfolding"
+  },
+  {
+   "cite": "DLB p.394",
+   "contains": [
+    "886 units"
+   ],
+   "claim": "universal RNN"
+  },
+  {
+   "cite": "DLB p.396",
+   "contains": [
+    "back-propagation through time",
+    "softmax"
+   ],
+   "claim": "BPTT"
+  },
+  {
+   "cite": "DLB p.397",
+   "contains": [
+    "teacher forcing"
+   ],
+   "claim": "teacher forcing"
+  },
+  {
+   "cite": "DLB p.411",
+   "contains": [
+    "encoder"
+   ],
+   "claim": "encoder-decoder"
+  },
+  {
+   "cite": "DLB p.416",
+   "contains": [
+    "recursive"
+   ],
+   "claim": "recursive"
+  },
+  {
+   "cite": "DLB p.425",
+   "contains": [
+    "long short-term memory",
+    "forget gate"
+   ],
+   "claim": "LSTM"
+  },
+  {
+   "cite": "DLB p.427",
+   "contains": [
+    "gated recurrent units",
+    "reset"
+   ],
+   "claim": "GRU"
+  },
+  {
+   "cite": "DLB p.430",
+   "contains": [
+    "clip"
+   ],
+   "claim": "norm clipping"
+  },
+  {
+   "cite": "DLB p.436",
+   "contains": [
+    "practical design process"
+   ],
+   "claim": "design process"
+  },
+  {
+   "cite": "DLB p.437",
+   "contains": [
+    "street view",
+    "bayes error"
+   ],
+   "claim": "Street View"
+  },
+  {
+   "cite": "DLB p.438",
+   "contains": [
+    "precision",
+    "recall",
+    "99.9999%"
+   ],
+   "claim": "rare event"
+  },
+  {
+   "cite": "DLB p.439",
+   "contains": [
+    "coverage",
+    "98%",
+    "95%"
+   ],
+   "claim": "coverage"
+  },
+  {
+   "cite": "DLB p.440",
+   "contains": [
+    "lstm",
+    "adam",
+    "early stopping"
+   ],
+   "claim": "baselines"
+  },
+  {
+   "cite": "DLB p.441",
+   "contains": [
+    "more data",
+    "quality"
+   ],
+   "claim": "more data"
+  },
+  {
+   "cite": "DLB p.442",
+   "contains": [
+    "logarithmic scale"
+   ],
+   "claim": "log scale"
+  },
+  {
+   "cite": "DLB p.444",
+   "contains": [
+    "most important hyperparameter"
+   ],
+   "claim": "learning rate"
+  },
+  {
+   "cite": "DLB p.446",
+   "contains": [
+    "table 11.1"
+   ],
+   "claim": "Table 11.1"
+  },
+  {
+   "cite": "DLB p.449",
+   "contains": [
+    "grid search",
+    "random search"
+   ],
+   "claim": "grid and random"
+  },
+  {
+   "cite": "DLB p.451",
+   "contains": [
+    "spearmint"
+   ],
+   "claim": "Bayesian optimization"
+  },
+  {
+   "cite": "DLB p.452",
+   "contains": [
+    "visualize the model in action"
+   ],
+   "claim": "debugging"
+  },
+  {
+   "cite": "DLB p.453",
+   "contains": [
+    "fit a tiny dataset"
+   ],
+   "claim": "tiny dataset"
+  },
+  {
+   "cite": "DLB p.454",
+   "contains": [
+    "finite differences",
+    "complex"
+   ],
+   "claim": "finite differences"
+  },
+  {
+   "cite": "DLB p.455",
+   "contains": [
+    "histograms",
+    "1%"
+   ],
+   "claim": "histograms"
+  },
+  {
+   "cite": "DLB p.457",
+   "contains": [
+    "ten percentage points"
+   ],
+   "claim": "Street View +10 points"
+  },
+  {
+   "cite": "DLB p.459",
+   "contains": [
+    "fixed-point"
+   ],
+   "claim": "fixed point"
+  },
+  {
+   "cite": "DLB p.461",
+   "contains": [
+    "coalesced"
+   ],
+   "claim": "GPU"
+  },
+  {
+   "cite": "DLB p.462",
+   "contains": [
+    "asynchronous stochastic gradient descent"
+   ],
+   "claim": "asynchronous SGD"
+  },
+  {
+   "cite": "DLB p.463",
+   "contains": [
+    "model compression"
+   ],
+   "claim": "compression"
+  },
+  {
+   "cite": "DLB p.464",
+   "contains": [
+    "cascade"
+   ],
+   "claim": "cascade"
+  },
+  {
+   "cite": "DLB p.467",
+   "contains": [
+    "8 and 16 bits"
+   ],
+   "claim": "precision"
+  },
+  {
+   "cite": "DLB p.469",
+   "contains": [
+    "global contrast normalization"
+   ],
+   "claim": "GCN"
+  },
+  {
+   "cite": "DLB p.476",
+   "contains": [
+    "n-grams"
+   ],
+   "claim": "n-grams"
+  },
+  {
+   "cite": "DLB p.482",
+   "contains": [
+    "hierarchical softmax"
+   ],
+   "claim": "hierarchical softmax"
+  },
+  {
+   "cite": "DLB p.490",
+   "contains": [
+    "bahdanau",
+    "weighted average"
+   ],
+   "claim": "2015 attention"
+  },
+  {
+   "cite": "DLB p.492",
+   "contains": [
+    "t-sne"
+   ],
+   "claim": "t-SNE"
+  },
+  {
+   "cite": "DLB p.504",
+   "contains": [
+    "linear factor model"
+   ],
+   "claim": "linear factors"
+  },
+  {
+   "cite": "DLB p.518",
+   "contains": [
+    "undercomplete"
+   ],
+   "claim": "undercomplete"
+  },
+  {
+   "cite": "DLB p.520",
+   "contains": [
+    "sparse autoencoder"
+   ],
+   "claim": "sparse AE"
+  },
+  {
+   "cite": "DLB p.522",
+   "contains": [
+    "denoising autoencoder"
+   ],
+   "claim": "DAE"
+  },
+  {
+   "cite": "DLB p.523",
+   "contains": [
+    "contractive autoencoder"
+   ],
+   "claim": "CAE"
+  },
+  {
+   "cite": "DLB p.543",
+   "contains": [
+    "greedy",
+    "unsupervised pretraining"
+   ],
+   "claim": "greedy pretraining"
+  },
+  {
+   "cite": "DLB p.545",
+   "contains": [
+    "algorithm 15.1"
+   ],
+   "claim": "Alg 15.1"
+  },
+  {
+   "cite": "DLB p.551",
+   "contains": [
+    "transfer learning"
+   ],
+   "claim": "transfer"
+  },
+  {
+   "cite": "DLB p.561",
+   "contains": [
+    "distributed representation"
+   ],
+   "claim": "distributed representation"
+  },
+  {
+   "cite": "DLB p.583",
+   "contains": [
+    "partition function"
+   ],
+   "claim": "partition function"
+  },
+  {
+   "cite": "DLB p.585",
+   "contains": [
+    "energy-based model"
+   ],
+   "claim": "EBM"
+  },
+  {
+   "cite": "DLB p.587",
+   "contains": [
+    "d-separation"
+   ],
+   "claim": "d-separation"
+  },
+  {
+   "cite": "DLB p.606",
+   "contains": [
+    "monte carlo"
+   ],
+   "claim": "Monte Carlo"
+  },
+  {
+   "cite": "DLB p.614",
+   "contains": [
+    "gibbs sampling"
+   ],
+   "claim": "Gibbs"
+  },
+  {
+   "cite": "DLB p.615",
+   "contains": [
+    "slow mixing"
+   ],
+   "claim": "mixing"
+  },
+  {
+   "cite": "DLB p.621",
+   "contains": [
+    "positive phase",
+    "negative phase"
+   ],
+   "claim": "phases"
+  },
+  {
+   "cite": "DLB p.625",
+   "contains": [
+    "contrastive divergence"
+   ],
+   "claim": "CD"
+  },
+  {
+   "cite": "DLB p.627",
+   "contains": [
+    "persistent contrastive divergence"
+   ],
+   "claim": "PCD"
+  },
+  {
+   "cite": "DLB p.648",
+   "contains": [
+    "evidence lower bound"
+   ],
+   "claim": "ELBO"
+  },
+  {
+   "cite": "DLB p.671",
+   "contains": [
+    "harmonium"
+   ],
+   "claim": "RBM"
+  },
+  {
+   "cite": "DLB p.711",
+   "contains": [
+    "variational autoencoder"
+   ],
+   "claim": "VAE"
+  },
+  {
+   "cite": "DLB p.714",
+   "contains": [
+    "generative adversarial networks"
+   ],
+   "claim": "GAN"
+  },
+  {
+   "cite": "DLB p.716",
+   "contains": [
+    "dcgan"
+   ],
+   "claim": "DCGAN exists in the book"
+  },
+  {
+   "cite": "DLB p.717",
+   "contains": [
+    "lapgan"
+   ],
+   "claim": "LAPGAN exists in the book"
+  },
+  {
+   "cite": "DLB p.719",
+   "contains": [
+    "maximum mean discrepancy"
+   ],
+   "claim": "GMMN"
+  },
+  {
+   "cite": "DLB p.732",
+   "contains": [
+    "diffusion"
+   ],
+   "claim": "diffusion inversion"
+  },
+  {
+   "cite": "DLB p.733",
+   "contains": [
+    "ais",
+    "0.1"
+   ],
+   "claim": "evaluating generators"
+  },
+  {
+   "cite": "DLB p.490-491",
+   "absent": [
+    "transformer",
+    "self-attention",
+    "multi-head"
+   ],
+   "claim": "the book's attention is the RNN one; no Transformers"
+  },
+  {
+   "cite": "DLB p.488-493",
+   "absent": [
+    "bert",
+    "gpt"
+   ],
+   "claim": "no BERT/GPT in the book's NMT"
+  },
+  {
+   "cite": "DLB p.440",
+   "absent": [
+    "adamw",
+    "layer normalization",
+    "warmup"
+   ],
+   "claim": "ch. 11 baseline without AdamW/LayerNorm/warmup"
+  },
+  {
+   "cite": "DLB p.321-326",
+   "absent": [
+    "adamw",
+    "lookahead",
+    "lamb"
+   ],
+   "claim": "adaptive rates without AdamW"
+  },
+  {
+   "cite": "DLB p.332-336",
+   "absent": [
+    "layer normalization",
+    "group normalization"
+   ],
+   "claim": "only batch normalization"
+  },
+  {
+   "cite": "DLB p.316-318",
+   "absent": [
+    "kaiming",
+    "he initialization"
+   ],
+   "claim": "initialization: only Glorot and orthogonal"
+  },
+  {
+   "cite": "DLB p.208-212",
+   "absent": [
+    "gelu",
+    "swish"
+   ],
+   "claim": "hidden activations without GELU/Swish"
+  },
+  {
+   "cite": "DLB p.436-457",
+   "absent": [
+    "prompt",
+    "llm",
+    "pytorch",
+    "tensorboard"
+   ],
+   "claim": "ch. 11 without prompts/LLM/PyTorch"
+  },
+  {
+   "cite": "DLB p.714-719",
+   "absent": [
+    "wasserstein",
+    "wgan",
+    "stylegan"
+   ],
+   "claim": "the book's GAN: no WGAN/StyleGAN"
+  },
+  {
+   "cite": "DLB p.711-715",
+   "absent": [
+    "diffusion",
+    "flow"
+   ],
+   "claim": "VAE/GAN without diffusion or flows"
+  },
+  {
+   "cite": "DLB p.425-427",
+   "absent": [
+    "attention",
+    "transformer"
+   ],
+   "claim": "LSTM/GRU without attention"
+  },
+  {
+   "cite": "DLB p.273-283",
+   "absent": [
+    "dropblock",
+    "spatial dropout"
+   ],
+   "claim": "dropout without modern variants"
+  },
+  {
+   "cite": "DLB p.345-387",
+   "absent": [
+    "resnet",
+    "residual",
+    "dilated",
+    "depthwise"
+   ],
+   "claim": "CNN without ResNet or dilated convolution"
+  },
+  {
+   "cite": "DLB p.35",
+   "absent": [
+    "scaling law"
+   ],
+   "claim": "no scaling laws"
+  },
+  {
+   "cite": "DLB p.467",
+   "absent": [
+    "bf16",
+    "mixed precision"
+   ],
+   "claim": "low precision without bf16"
+  },
+  {
+   "cite": "DLB p.40",
+   "absent": [
+    "pytorch",
+    "jax"
+   ],
+   "claim": "2016 libraries without PyTorch"
+  },
+  {
+   "cite": "DLB p.447-451",
+   "absent": [
+    "optuna",
+    "hyperband"
+   ],
+   "claim": "hyperparameters without Optuna/Hyperband"
+  },
+  {
+   "cite": "DLB p.436-457",
+   "absent": [
+    "a/b test",
+    "mlops"
+   ],
+   "claim": "ch. 11 without MLOps"
+  },
+  {
+   "cite": "DLB p.243-285",
+   "absent": [
+    "mixup",
+    "cutout"
+   ],
+   "claim": "regularization without mixup/cutout"
+  },
+  {
+   "cite": "DLB p.289-337",
+   "absent": [
+    "cosine annealing",
+    "cyclical"
+   ],
+   "claim": "optimization without cosine or cyclical schedules"
+  }
+ ]
+}

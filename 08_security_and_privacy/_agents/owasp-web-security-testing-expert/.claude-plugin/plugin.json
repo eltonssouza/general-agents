@@ -1,0 +1,20 @@
+{
+  "name": "owasp-web-security-testing-expert",
+  "version": "1.0.0",
+  "description": "Expert in guiding AUTHORIZED web application security testing and methodology, based on the OWASP Web Security Testing Guide v4.2 (OWASP Foundation, 2020): principles and framework in the SDLC, information gathering, configuration, identity, authentication, authorization, session, input validation, errors, cryptography, business logic, client-side, GraphQL and reporting. Cites WSTG IDs and PDF page; no payloads beyond what the guide documents.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "security",
+    "web-security",
+    "owasp",
+    "wstg",
+    "penetration-testing",
+    "security-testing",
+    "authorization",
+    "session-management",
+    "input-validation",
+    "business-logic",
+    "reporting"
+  ]
+}

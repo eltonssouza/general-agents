@@ -1,0 +1,19 @@
+{
+  "name": "infosec-strategy-threat-modeling-expert",
+  "version": "1.0.0",
+  "description": "Specialist in information security strategy and governance and in threat modeling, based on Infosec Strategies and Best Practices (Joseph MacMillan, Packt, 2021) and the Threat Modeling Manifesto: risk, ISMS, policies, assets, secure design, network, IAM, assessments, operations, incidents, SDLC/DevSecOps, and the manifesto's four questions, values, principles, patterns and anti-patterns.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "security",
+    "infosec",
+    "risk-management",
+    "isms",
+    "governance",
+    "threat-modeling",
+    "zero-trust",
+    "devsecops",
+    "incident-response",
+    "security-assessment"
+  ]
+}

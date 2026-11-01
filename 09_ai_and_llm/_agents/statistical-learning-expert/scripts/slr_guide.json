@@ -1,0 +1,717 @@
+{
+ "version": 1,
+ "note": "Rules extracted from the two books; each rule with PDF pages. Conditions in 'when' are script filters (heuristic [inference] for n/p).",
+ "rules": [
+  {
+   "id": "G01",
+   "area": "objective",
+   "situation": "Goal = inference (understand which predictors matter, the sign and shape of the relationship)",
+   "recommendation": "Prefer restricted, interpretable models (linear regression, lasso); very flexible models (splines, boosting) make it harder to understand each predictor.",
+   "pages": [
+    "ISLR p.34",
+    "ISLR p.40-41"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "inference"
+   }
+  },
+  {
+   "id": "G02",
+   "area": "objective",
+   "situation": "Goal = prediction only",
+   "recommendation": "The most flexible method does not always predict best: excess flexibility causes overfitting; compare by estimated test error.",
+   "pages": [
+    "ISLR p.41",
+    "ISLR p.47"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "prediction"
+   }
+  },
+  {
+   "id": "G03",
+   "area": "principle",
+   "situation": "Any problem",
+   "recommendation": "No method dominates on every dataset; decide by estimated test error (validation, CV), not by preference.",
+   "pages": [
+    "ISLR p.44",
+    "ISLR p.169"
+   ],
+   "source": "[from source]",
+   "when": {}
+  },
+  {
+   "id": "G04",
+   "area": "regression",
+   "situation": "Quantitative response, n much larger than p, approximately linear relationship",
+   "recommendation": "Least squares has low bias and low variance; use the diagnostics of ch. 3 (residuals, leverage, VIF).",
+   "pages": [
+    "ISLR p.218",
+    "ISLR p.107"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "quant",
+    "np": "n_gg_p"
+   }
+  },
+  {
+   "id": "G05",
+   "area": "regression",
+   "situation": "n is not much larger than p (n ≈ p)",
+   "recommendation": "The variance of least squares blows up and overfitting occurs: use ridge, lasso, subset/forward or dimension reduction.",
+   "pages": [
+    "ISLR p.218-219",
+    "ISLR p.233"
+   ],
+   "source": "[from source]",
+   "when": {
+    "np": "comparable"
+   }
+  },
+  {
+   "id": "G06",
+   "area": "high-dimension",
+   "situation": "p > n",
+   "recommendation": "Do not use least squares, the F statistic, Cp/AIC/BIC or adjusted R²; use forward stepwise, ridge, lasso or PCR (for classification, the ESL also offers diagonal LDA and nearest shrunken centroids); evaluate on an independent test set/CV; do not over-interpret the selected variables.",
+   "pages": [
+    "ISLR p.92-93",
+    "ISLR p.256-259",
+    "ESL p.668",
+    "ESL p.670-671"
+   ],
+   "source": "[from source]",
+   "when": {
+    "np": "p_gt_n"
+   }
+  },
+  {
+   "id": "G07",
+   "area": "regression",
+   "situation": "Many predictors, but only a few with a large effect",
+   "recommendation": "Tends to favor the lasso (zeroes out the irrelevant ones); confirm by CV because the number of relevant predictors is unknown.",
+   "pages": [
+    "ISLR p.239"
+   ],
+   "source": "[from source]",
+   "when": {
+    "few_relevant": "yes"
+   }
+  },
+  {
+   "id": "G08",
+   "area": "regression",
+   "situation": "Response depends on many predictors of similar size",
+   "recommendation": "Tends to favor ridge; confirm by CV.",
+   "pages": [
+    "ISLR p.239"
+   ],
+   "source": "[from source]",
+   "when": {
+    "few_relevant": "no"
+   }
+  },
+  {
+   "id": "G09",
+   "area": "regression",
+   "situation": "Correlated predictors / collinearity",
+   "recommendation": "Diagnose with VIF (above 5 or 10 is problematic); drop or combine variables; ridge stabilizes the coefficients of correlated variables.",
+   "pages": [
+    "ISLR p.116-117",
+    "ESL p.82"
+   ],
+   "source": "[from source]",
+   "when": {
+    "correlated": "yes"
+   }
+  },
+  {
+   "id": "G10",
+   "area": "regression",
+   "situation": "Need to select variables and keep interpretability",
+   "recommendation": "Lasso or subset selection; the lasso produces sparse models; forward selection works even with large p.",
+   "pages": [
+    "ISLR p.234",
+    "ISLR p.224"
+   ],
+   "source": "[from source]",
+   "when": {
+    "interpretable": "yes",
+    "response": "quant"
+   }
+  },
+  {
+   "id": "G11",
+   "area": "regression",
+   "situation": "Many predictors (large p) and wanting best subset",
+   "recommendation": "Best subset is infeasible above ~40 predictors (2^p models); use stepwise or lasso.",
+   "pages": [
+    "ISLR p.221-222",
+    "ESL p.76"
+   ],
+   "source": "[from source]",
+   "when": {
+    "p_large": "yes"
+   }
+  },
+  {
+   "id": "G12",
+   "area": "non-linear",
+   "situation": "Non-linear relationship in one predictor",
+   "recommendation": "Low-degree polynomial or splines (natural, knots at quantiles, number of knots/df by CV); splines tend to beat high-degree polynomials.",
+   "pages": [
+    "ISLR p.286-291",
+    "ISLR p.291-292"
+   ],
+   "source": "[from source]",
+   "when": {
+    "nonlinear": "moderate"
+   }
+  },
+  {
+   "id": "G13",
+   "area": "non-linear",
+   "situation": "Several predictors, non-linearity, want to interpret each effect",
+   "recommendation": "GAM (additive); add interactions by hand (X_j·X_k) if needed; for general interactions, forest or boosting.",
+   "pages": [
+    "ISLR p.300-301"
+   ],
+   "source": "[from source]",
+   "when": {
+    "nonlinear": "moderate",
+    "interpretable": "yes"
+   }
+  },
+  {
+   "id": "G14",
+   "area": "non-linear",
+   "situation": "Suspected interaction (synergy) between predictors",
+   "recommendation": "Include an interaction term respecting the hierarchical principle (keep the main effects) or use trees/boosting.",
+   "pages": [
+    "ISLR p.102-104",
+    "ISLR p.301"
+   ],
+   "source": "[from source]",
+   "when": {
+    "interaction": "yes"
+   }
+  },
+  {
+   "id": "G15",
+   "area": "classification",
+   "situation": "Binary response, linear boundary, approximately normal predictors",
+   "recommendation": "LDA can improve on logistic regression when normality holds approximately.",
+   "pages": [
+    "ISLR p.166"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "binary",
+    "gaussian": "yes"
+   }
+  },
+  {
+   "id": "G16",
+   "area": "classification",
+   "situation": "Binary response, clearly non-Gaussian predictors",
+   "recommendation": "Logistic regression can outperform LDA; in the Student t scenario QDA deteriorates.",
+   "pages": [
+    "ISLR p.166",
+    "ISLR p.168"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "binary",
+    "gaussian": "no"
+   }
+  },
+  {
+   "id": "G17",
+   "area": "classification",
+   "situation": "Well-separated classes",
+   "recommendation": "Logistic regression estimates become unstable (in the limit, infinite); LDA does not suffer from this problem. SVM tends to do well with well-separated classes; with overlapping classes logistic regression is often preferred.",
+   "pages": [
+    "ISLR p.153",
+    "ESL p.147",
+    "ISLR p.372"
+   ],
+   "source": "[from source]",
+   "when": {
+    "separated": "yes"
+   }
+  },
+  {
+   "id": "G18",
+   "area": "classification",
+   "situation": "Small n and approximately normal predictors within each class",
+   "recommendation": "LDA is more stable than logistic regression.",
+   "pages": [
+    "ISLR p.153"
+   ],
+   "source": "[from source]",
+   "when": {
+    "gaussian": "yes",
+    "small_n": "yes"
+   }
+  },
+  {
+   "id": "G19",
+   "area": "classification",
+   "situation": "More than two classes",
+   "recommendation": "LDA is popular (multiclass logistic regression is little used); do not use linear regression on indicators with K ≥ 3 without checking for masking.",
+   "pages": [
+    "ISLR p.152-153",
+    "ESL p.124-125"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "multiclass"
+   }
+  },
+  {
+   "id": "G20",
+   "area": "classification",
+   "situation": "Moderately non-linear boundary",
+   "recommendation": "QDA: better if the training set is large or if the common Σ is clearly false; LDA is the better bet with few observations (QDA estimates K·p(p+1)/2 covariances).",
+   "pages": [
+    "ISLR p.164-165",
+    "ISLR p.169"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "binary",
+    "nonlinear": "moderate"
+   }
+  },
+  {
+   "id": "G21",
+   "area": "classification",
+   "situation": "Very non-linear boundary",
+   "recommendation": "KNN with K chosen by CV (K = 1 was the worst in scenario 6); other non-parametric methods (SVM with kernel, trees/boosting); KNN does not say which predictors matter.",
+   "pages": [
+    "ISLR p.166",
+    "ISLR p.169"
+   ],
+   "source": "[from source]",
+   "when": {
+    "nonlinear": "strong"
+   }
+  },
+  {
+   "id": "G22",
+   "area": "classification",
+   "situation": "Imbalanced classes or asymmetric error costs",
+   "recommendation": "Do not trust the overall error (the null classifier errs 3.33% on Default); examine the confusion matrix, sensitivity, specificity, ROC/AUC and adjust the threshold (0.5 → 0.2 reduced missed defaulters from 75.7% to 41.4%) according to the costs.",
+   "pages": [
+    "ISLR p.159-162"
+   ],
+   "source": "[from source]",
+   "when": {
+    "imbalanced": "yes"
+   }
+  },
+  {
+   "id": "G23",
+   "area": "classification",
+   "situation": "Need probabilities",
+   "recommendation": "Logistic regression and LDA estimate posteriors; the SVM hinge loss estimates the classifier, not probabilities; the share of bagging votes is not a calibrated probability.",
+   "pages": [
+    "ESL p.445-446",
+    "ESL p.302"
+   ],
+   "source": "[from source]",
+   "when": {
+    "need_probs": "yes"
+   }
+  },
+  {
+   "id": "G25",
+   "area": "trees",
+   "situation": "Need interpretation and easy communication, non-linear relationship",
+   "recommendation": "A small tree (easy to explain and visualize), knowing that accuracy is usually lower and the tree is unstable.",
+   "pages": [
+    "ISLR p.330",
+    "ISLR p.331"
+   ],
+   "source": "[from source]",
+   "when": {
+    "interpretable": "yes",
+    "nonlinear": "strong"
+   }
+  },
+  {
+   "id": "G26",
+   "area": "trees",
+   "situation": "Want the best accuracy from trees",
+   "recommendation": "Bagging, random forest or boosting; forests are simpler to tune and, in many problems, similar to boosting (which usually wins with tuning).",
+   "pages": [
+    "ISLR p.331",
+    "ESL p.606",
+    "ESL p.610-611"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "prediction"
+   }
+  },
+  {
+   "id": "G27",
+   "area": "trees",
+   "situation": "Random forest",
+   "recommendation": "m ≈ √p (classification) or p/3 (regression), minimum node size 1 (classification) or 5 (regression), but treat m as a tuning parameter; increase B until the OOB error stabilizes (there is no overfitting from B).",
+   "pages": [
+    "ISLR p.334",
+    "ESL p.611-612"
+   ],
+   "source": "[from source]",
+   "when": {
+    "model": "rf"
+   }
+  },
+  {
+   "id": "G28",
+   "area": "trees",
+   "situation": "Boosting",
+   "recommendation": "Learn slowly: λ = 0.01 or 0.001 (ESL: ν < 0.1), B by CV/early stopping, small trees (d = 1 gives an additive model; ESL: 4 ≤ J ≤ 8), subsampling ≈ 0.5; boosting can overfit if B is large.",
+   "pages": [
+    "ISLR p.337-338",
+    "ESL p.381-384"
+   ],
+   "source": "[from source]",
+   "when": {
+    "model": "boosting"
+   }
+  },
+  {
+   "id": "G29",
+   "area": "trees",
+   "situation": "Noisy labels or outliers in the response",
+   "recommendation": "Avoid AdaBoost/exponential loss; prefer binomial deviance (classification) and absolute or Huber loss (regression).",
+   "pages": [
+    "ESL p.366-368"
+   ],
+   "source": "[from source]",
+   "when": {
+    "noisy_labels": "yes"
+   }
+  },
+  {
+   "id": "G30",
+   "area": "trees",
+   "situation": "Messy data: mixed types, missing values, outliers in the predictors, many irrelevant predictors, large N",
+   "recommendation": "Trees come closest to an off-the-shelf method (Table 10.1); neural networks and SVM do poorly on these characteristics.",
+   "pages": [
+    "ESL p.370-371"
+   ],
+   "source": "[from source]",
+   "when": {
+    "messy": "yes"
+   }
+  },
+  {
+   "id": "G31",
+   "area": "trees",
+   "situation": "Interpretation is not needed and predictive power is the focus",
+   "recommendation": "Neural networks, SVM and kNN/kernels have good predictive power (Table 10.1), but little interpretability and little robustness to irrelevant inputs.",
+   "pages": [
+    "ESL p.370"
+   ],
+   "source": "[from source]",
+   "when": {
+    "interpretable": "no",
+    "goal": "prediction"
+   }
+  },
+  {
+   "id": "G32",
+   "area": "svm",
+   "situation": "Using an SVM",
+   "recommendation": "Choose C (and γ in the radial kernel) by CV: high γ improves the training fit and may worsen the test error; C is not an 'irrelevant' parameter.",
+   "pages": [
+    "ISLR p.362",
+    "ISLR p.369-370",
+    "ISLR p.373",
+    "ESL p.451"
+   ],
+   "source": "[from source]",
+   "when": {
+    "model": "svm"
+   }
+  },
+  {
+   "id": "G33",
+   "area": "svm",
+   "situation": "SVM with many noise features",
+   "recommendation": "The SVM with a polynomial kernel is sensitive to the degree and to noise; adaptive methods (additive/MARS) degrade less in the ESL example.",
+   "pages": [
+    "ESL p.450-451"
+   ],
+   "source": "[from source]",
+   "when": {
+    "model": "svm"
+   }
+  },
+  {
+   "id": "G34",
+   "area": "assessment",
+   "situation": "Choose a model or hyperparameter",
+   "recommendation": "Cross-validation with k = 5 or 10 (good compromise between bias and variance); LOOCV has high variance.",
+   "pages": [
+    "ISLR p.198-199",
+    "ESL p.261-262"
+   ],
+   "source": "[from source]",
+   "when": {}
+  },
+  {
+   "id": "G35",
+   "area": "assessment",
+   "situation": "Few observations (e.g., N = 50)",
+   "recommendation": "5-fold CV trains on 40 observations and may overestimate the error if the learning curve is still steep.",
+   "pages": [
+    "ESL p.262"
+   ],
+   "source": "[from source]",
+   "when": {
+    "small_n": "yes"
+   }
+  },
+  {
+   "id": "G36",
+   "area": "assessment",
+   "situation": "There is variable selection, supervised filters or hyperparameter tuning",
+   "recommendation": "Repeat the whole sequence (selection included) inside each fold; only unsupervised filters can stay outside; keep an untouched test set for the final error.",
+   "pages": [
+    "ESL p.264-266",
+    "ESL p.241"
+   ],
+   "source": "[from source]",
+   "when": {
+    "selection": "yes"
+   }
+  },
+  {
+   "id": "G37",
+   "area": "assessment",
+   "situation": "Lots of data",
+   "recommendation": "Split into training, validation and test (typical split 50%/25%/25%); use the test set only at the end.",
+   "pages": [
+    "ESL p.241"
+   ],
+   "source": "[from source]",
+   "when": {
+    "data_rich": "yes"
+   }
+  },
+  {
+   "id": "G38",
+   "area": "assessment",
+   "situation": "Compare linear models by information criterion",
+   "recommendation": "Cp/AIC and BIC (BIC penalizes more and chooses smaller models; BIC is consistent, AIC tends toward complex models); CV is more general because it needs neither counting df nor estimating σ².",
+   "pages": [
+    "ISLR p.227-228",
+    "ESL p.253-254"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "quant"
+   }
+  },
+  {
+   "id": "G39",
+   "area": "assessment",
+   "situation": "CV error curve flat around the minimum",
+   "recommendation": "One-standard-error rule: choose the simplest model whose error is within one standard error of the minimum.",
+   "pages": [
+    "ISLR p.229",
+    "ESL p.263"
+   ],
+   "source": "[from source]",
+   "when": {}
+  },
+  {
+   "id": "G40",
+   "area": "assessment",
+   "situation": "Need a standard error or CI for an estimator with no formula",
+   "recommendation": "Bootstrap (B samples with replacement of size n; SE = standard deviation of the estimates).",
+   "pages": [
+    "ISLR p.202-205"
+   ],
+   "source": "[from source]",
+   "when": {}
+  },
+  {
+   "id": "G41",
+   "area": "assessment",
+   "situation": "Testing thousands of variables individually (e.g., genes)",
+   "recommendation": "Control the FDR (Benjamini-Hochberg; permutation p-values) instead of Bonferroni, which is too conservative with large M; FDR is not type I error.",
+   "pages": [
+    "ESL p.705-709"
+   ],
+   "source": "[from source]",
+   "when": {
+    "many_tests": "yes"
+   }
+  },
+  {
+   "id": "G42",
+   "area": "diagnostics",
+   "situation": "Correlated errors (time series)",
+   "recommendation": "Standard errors, CIs and p-values become optimistic; plot residuals against time.",
+   "pages": [
+    "ISLR p.109-110"
+   ],
+   "source": "[from source]",
+   "when": {
+    "time_series": "yes"
+   }
+  },
+  {
+   "id": "G43",
+   "area": "diagnostics",
+   "situation": "Non-constant error variance (funnel in the residuals)",
+   "recommendation": "Transform Y (log or square root) or use weighted least squares.",
+   "pages": [
+    "ISLR p.110-111"
+   ],
+   "source": "[from source]",
+   "when": {
+    "heterosc": "yes"
+   }
+  },
+  {
+   "id": "G44",
+   "area": "diagnostics",
+   "situation": "Outliers or influential points",
+   "recommendation": "Studentized residuals with absolute value > 3 are suspect; mean leverage (p+1)/n; an outlier with high leverage is dangerous; remove only if it is a data collection error.",
+   "pages": [
+    "ISLR p.111-114"
+   ],
+   "source": "[from source]",
+   "when": {
+    "outliers": "yes"
+   }
+  },
+  {
+   "id": "G45",
+   "area": "unsupervised",
+   "situation": "PCA for exploration or preprocessing",
+   "recommendation": "Center and, in general, standardize (sd = 1) before PCA; choosing the number of components by 'elbow' is subjective; in PCR, choose M by CV.",
+   "pages": [
+    "ISLR p.395-399"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "exploration"
+   }
+  },
+  {
+   "id": "G46",
+   "area": "unsupervised",
+   "situation": "Clustering",
+   "recommendation": "K-means with several random initializations; for hierarchical clustering prefer average or complete linkage; test dissimilarities (Euclidean vs correlation), standardization and subsets; treat the clusters as a hypothesis and validate.",
+   "pages": [
+    "ISLR p.403-405",
+    "ISLR p.410-416"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "exploration"
+   }
+  },
+  {
+   "id": "G47",
+   "area": "unsupervised",
+   "situation": "Choose the number of clusters K",
+   "recommendation": "CV does not work (W_K always decreases); look for an elbow in W_K or use the gap statistic; K may come from the problem (segmentation).",
+   "pages": [
+    "ESL p.537-539"
+   ],
+   "source": "[from source]",
+   "when": {
+    "goal": "exploration"
+   }
+  },
+  {
+   "id": "G48",
+   "area": "unsupervised",
+   "situation": "Only distances between objects (no coordinates)",
+   "recommendation": "K-medoids (or hierarchical) instead of K-means.",
+   "pages": [
+    "ESL p.536-537"
+   ],
+   "source": "[from source]",
+   "when": {
+    "only_distances": "yes"
+   }
+  },
+  {
+   "id": "G49",
+   "area": "regression",
+   "situation": "Many correlated variables and a response tied to the directions of largest variance",
+   "recommendation": "PCR (M components by CV, with standardization); PLS rarely beats ridge or PCR.",
+   "pages": [
+    "ISLR p.248-253",
+    "ESL p.101"
+   ],
+   "source": "[from source]",
+   "when": {
+    "correlated": "yes"
+   }
+  },
+  {
+   "id": "G50",
+   "area": "regression",
+   "situation": "Any method with a tuning parameter (λ, M, K, C, depth)",
+   "recommendation": "Choose the parameter by cross-validation over a grid and refit the final model on all the data.",
+   "pages": [
+    "ISLR p.242",
+    "ISLR p.362"
+   ],
+   "source": "[from source]",
+   "when": {}
+  },
+  {
+   "id": "G51",
+   "area": "classification",
+   "situation": "Doubt between logistic regression and LDA",
+   "recommendation": "Logistic regression makes fewer assumptions and is considered the safer, more robust bet; LDA gains efficiency if the Gaussian model holds, but is not robust to gross outliers.",
+   "pages": [
+    "ESL p.146-147"
+   ],
+   "source": "[from source]",
+   "when": {
+    "response": "binary"
+   }
+  },
+  {
+   "id": "G52",
+   "area": "principle",
+   "situation": "You believe the relationship is (nearly) linear",
+   "recommendation": "If f is linear, linear regression is unbiased and hard to beat; KNN wins only with appreciable non-linearity.",
+   "pages": [
+    "ISLR p.51",
+    "ISLR p.121"
+   ],
+   "source": "[from source]",
+   "when": {
+    "linear": "yes"
+   }
+  },
+  {
+   "id": "G53",
+   "area": "assessment",
+   "situation": "Adaptive models (trees) and test error",
+   "recommendation": "AIC is impractical (df is hard); CV and bootstrap can underestimate the error by ~10% in these cases: only a separate test set is unbiased.",
+   "pages": [
+    "ESL p.272-273"
+   ],
+   "source": "[from source]",
+   "when": {
+    "model": "tree"
+   }
+  }
+ ]
+}

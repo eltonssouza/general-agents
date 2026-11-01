@@ -1,0 +1,5832 @@
+{
+ "fonte": "Building Secure and Reliable Systems (Google, 2020), BSRS",
+ "convencao_pagina": "PDF; impressa = PDF - 36",
+ "capitulos": [
+  {
+   "n": 1,
+   "titulo": "The Intersection of Security and Reliability",
+   "pdf": "39-50",
+   "impressa": "3-13",
+   "ref": "intersecao-seguranca-e-confiabilidade.md"
+  },
+  {
+   "n": 2,
+   "titulo": "Understanding Adversaries",
+   "pdf": "51-72",
+   "impressa": "15-36",
+   "ref": "adversarios-e-modelagem-de-ameacas.md"
+  },
+  {
+   "n": 3,
+   "titulo": "Case Study: Safe Proxies",
+   "pdf": "73-78",
+   "impressa": "37-42",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md"
+  },
+  {
+   "n": 4,
+   "titulo": "Design Tradeoffs",
+   "pdf": "79-96",
+   "impressa": "43-60",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md"
+  },
+  {
+   "n": 5,
+   "titulo": "Design for Least Privilege",
+   "pdf": "97-124",
+   "impressa": "61-88",
+   "ref": "menor-privilegio-e-controle-de-acesso.md"
+  },
+  {
+   "n": 6,
+   "titulo": "Design for Understandability",
+   "pdf": "125-156",
+   "impressa": "89-120",
+   "ref": "design-para-compreensibilidade.md"
+  },
+  {
+   "n": 7,
+   "titulo": "Design for a Changing Landscape",
+   "pdf": "157-178",
+   "impressa": "121-142",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md"
+  },
+  {
+   "n": 8,
+   "titulo": "Design for Resilience",
+   "pdf": "179-218",
+   "impressa": "143-182",
+   "ref": "design-para-resiliencia.md"
+  },
+  {
+   "n": 9,
+   "titulo": "Design for Recovery",
+   "pdf": "219-252",
+   "impressa": "183-216",
+   "ref": "design-para-recuperacao.md"
+  },
+  {
+   "n": 10,
+   "titulo": "Mitigating Denial-of-Service Attacks",
+   "pdf": "253-268",
+   "impressa": "217-232",
+   "ref": "mitigacao-de-dos.md"
+  },
+  {
+   "n": 11,
+   "titulo": "Case Study: Designing, Implementing, and Maintaining a Publicly Trusted CA",
+   "pdf": "269-278",
+   "impressa": "233-242",
+   "ref": "estudo-de-caso-ca-publica.md"
+  },
+  {
+   "n": 12,
+   "titulo": "Writing Code",
+   "pdf": "279-306",
+   "impressa": "243-270",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md"
+  },
+  {
+   "n": 13,
+   "titulo": "Testing Code",
+   "pdf": "307-338",
+   "impressa": "271-302",
+   "ref": "testando-codigo.md"
+  },
+  {
+   "n": 14,
+   "titulo": "Deploying Code",
+   "pdf": "339-368",
+   "impressa": "303-332",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md"
+  },
+  {
+   "n": 15,
+   "titulo": "Investigating Systems",
+   "pdf": "369-398",
+   "impressa": "333-362",
+   "ref": "investigacao-de-sistemas-e-logging.md"
+  },
+  {
+   "n": 16,
+   "titulo": "Disaster Planning",
+   "pdf": "399-422",
+   "impressa": "363-386",
+   "ref": "planejamento-de-desastres.md"
+  },
+  {
+   "n": 17,
+   "titulo": "Crisis Management",
+   "pdf": "423-452",
+   "impressa": "387-416",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md"
+  },
+  {
+   "n": 18,
+   "titulo": "Recovery and Aftermath",
+   "pdf": "453-480",
+   "impressa": "417-444",
+   "ref": "recuperacao-e-pos-incidente.md"
+  },
+  {
+   "n": 19,
+   "titulo": "Case Study: Chrome Security Team",
+   "pdf": "481-490",
+   "impressa": "445-454",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md"
+  },
+  {
+   "n": 20,
+   "titulo": "Understanding Roles and Responsibilities",
+   "pdf": "491-506",
+   "impressa": "455-470",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md"
+  },
+  {
+   "n": 21,
+   "titulo": "Building a Culture of Security and Reliability",
+   "pdf": "507-532",
+   "impressa": "471-496",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md"
+  },
+  {
+   "n": 22,
+   "titulo": "Conclusion and Appendix A",
+   "pdf": "533-536",
+   "impressa": "497-500",
+   "ref": "apendice-matriz-de-risco-de-desastres.md"
+  }
+ ],
+ "entradas": [
+  {
+   "topic": "Password and power-drill case (cascading failure, recovery hampered by security)",
+   "terms_en": [
+    "password manager",
+    "power drill",
+    "HSM smart card"
+   ],
+   "keywords": [
+    "furadeira",
+    "smart card",
+    "gerenciador de senhas",
+    "hsm",
+    "cofre",
+    "dependencia circular"
+   ],
+   "pages": "39-40",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Reliability failure (load) and recovery blocked by security controls (HSM, vault).",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Reliability vs security: type of risk, fail safe vs fail secure",
+   "terms_en": [
+    "fail safe",
+    "fail secure",
+    "fail open"
+   ],
+   "keywords": [
+    "fail safe",
+    "fail secure",
+    "fail open",
+    "adversario",
+    "risco nao malicioso"
+   ],
+   "pages": "40-41",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Reliability assumes failures; security assumes an adversary causing failures.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Tradeoff: redundancy vs attack surface",
+   "terms_en": [
+    "redundancy",
+    "attack surface"
+   ],
+   "keywords": [
+    "redundancia",
+    "superficie de ataque"
+   ],
+   "pages": "41",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Redundancy increases both reliability and attack surface.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Tradeoff in incident management: many responders vs need-to-know",
+   "terms_en": [
+    "need-to-know",
+    "incident management"
+   ],
+   "keywords": [
+    "need to know",
+    "incidente de seguranca",
+    "logs alvo"
+   ],
+   "pages": "41",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Security incidents tend to have a minimal team; logs are a target.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "CIA triad and examples without an adversary (microphone, bit flip)",
+   "terms_en": [
+    "CIA triad",
+    "confidentiality",
+    "integrity",
+    "availability"
+   ],
+   "keywords": [
+    "cia",
+    "confidencialidade",
+    "integridade",
+    "disponibilidade",
+    "bit flip"
+   ],
+   "pages": "41-43",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Confidentiality, integrity and availability seen through both lenses.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "DoS between security and reliability (Google Home update, earthquake)",
+   "terms_en": [
+    "DoS",
+    "DDoS"
+   ],
+   "keywords": [
+    "dos",
+    "ddos",
+    "pico",
+    "terremoto",
+    "chromecast"
+   ],
+   "pages": "42-43",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "An attack can be indistinguishable from a defect or a legitimate spike.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Emergent properties and invisibility",
+   "terms_en": [
+    "emergent properties",
+    "invisibility"
+   ],
+   "keywords": [
+    "emergente",
+    "invisibilidade",
+    "custo",
+    "confianca"
+   ],
+   "pages": "43-44",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Hard to add later; invisible and therefore postponed.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Risk assessment and adversarial testing",
+   "terms_en": [
+    "assessment",
+    "adversarial testing",
+    "error budget"
+   ],
+   "keywords": [
+    "avaliacao",
+    "risco",
+    "teste adversarial",
+    "error budget"
+   ],
+   "pages": "44",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Security of composition is harder to assess than reliability.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Simplicity as a basis for assessment and MTTR",
+   "terms_en": [
+    "simplicity",
+    "MTTR"
+   ],
+   "keywords": [
+    "simplicidade",
+    "mttr",
+    "superficie"
+   ],
+   "pages": "44",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Simple design reduces surface and speeds up mitigation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Evolution: OpenSSL/Debian bug and the YouTube outage caused by logging",
+   "terms_en": [
+    "Debian OpenSSL",
+    "YouTube outage"
+   ],
+   "keywords": [
+    "openssl",
+    "debian",
+    "valgrind",
+    "youtube",
+    "logging",
+    "mudanca pequena"
+   ],
+   "pages": "45",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Innocent changes with large impact.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Resilience: load shedding, defense in depth, failure domains",
+   "terms_en": [
+    "resilience",
+    "defense in depth",
+    "blast radius"
+   ],
+   "keywords": [
+    "resiliencia",
+    "load shedding",
+    "blast radius",
+    "movimento lateral",
+    "criptografia em camadas"
+   ],
+   "pages": "45-46",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Load = volume x cost; failure domains limit impact.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Insiders: least privilege and MPA",
+   "terms_en": [
+    "least privilege",
+    "multi-party authorization",
+    "sudo"
+   ],
+   "keywords": [
+    "insider",
+    "menor privilegio",
+    "mpa",
+    "sudo"
+   ],
+   "pages": "46",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Controls that reduce insider threat and human error.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "From design to production: review, frameworks, testing, canaries",
+   "terms_en": [
+    "code review",
+    "canary",
+    "fuzzing"
+   ],
+   "keywords": [
+    "code review",
+    "canary",
+    "rollout lento",
+    "fuzzing",
+    "teste de carga"
+   ],
+   "pages": "46-47",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Overview of the implementation and deploy phases.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Logging: value, cost and sensitive data",
+   "terms_en": [
+    "logging",
+    "PII"
+   ],
+   "keywords": [
+    "logging",
+    "logs",
+    "pii",
+    "credenciais"
+   ],
+   "pages": "47",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Logs are essential but costly and sensitive.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Crisis response: Code Spaces, IMAG, ICS, DiRT",
+   "terms_en": [
+    "IMAG",
+    "ICS",
+    "DiRT",
+    "Code Spaces"
+   ],
+   "keywords": [
+    "crise",
+    "imag",
+    "ics",
+    "dirt",
+    "code spaces",
+    "cadeia de comando"
+   ],
+   "pages": "47-48",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Chain of command, playbooks and regular exercises.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Recovery: patch speed as a risk decision",
+   "terms_en": [
+    "recovery",
+    "patch"
+   ],
+   "keywords": [
+    "patch",
+    "recuperacao",
+    "rollback obsoleto",
+    "estado desejado"
+   ],
+   "pages": "48-49",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Fast patching is a double-edged sword; avoid insecure rollback.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Security and privacy",
+   "terms_en": [
+    "privacy"
+   ],
+   "keywords": [
+    "privacidade"
+   ],
+   "pages": "40",
+   "chapter": "01",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Privacy depends on security and vice versa.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Adversarial mindset and reliability vs security adversaries",
+   "terms_en": [
+    "adversarial mindset",
+    "success disaster"
+   ],
+   "keywords": [
+    "adversario",
+    "mentalidade",
+    "success disaster",
+    "gato",
+    "stoll"
+   ],
+   "pages": "51-52",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "The reliability adversary is abstract and benign; the security one is human and calculating.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Attacker motivations",
+   "terms_en": [
+    "attacker motivations",
+    "fun",
+    "fame",
+    "coercion",
+    "espionage"
+   ],
+   "keywords": [
+    "motivacao",
+    "fama",
+    "coercao",
+    "manipulacao",
+    "espionagem",
+    "destruicao",
+    "ganho financeiro"
+   ],
+   "pages": "52-53",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Eight motivations; one actor can combine several.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Profile: hobbyists and vulnerability researchers (bug bounty, red team)",
+   "terms_en": [
+    "hobbyists",
+    "vulnerability researchers",
+    "bug bounty",
+    "red team"
+   ],
+   "keywords": [
+    "hobbyist",
+    "pesquisador",
+    "bug bounty",
+    "vrp",
+    "disclosure",
+    "red team",
+    "pentest"
+   ],
+   "pages": "54-55",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Potential allies; disclosure norms.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Profile: governments and nation-states (RSA, Stuxnet, NSO, Aurora, Strava)",
+   "terms_en": [
+    "nation-state",
+    "government",
+    "Stuxnet",
+    "Operation Aurora"
+   ],
+   "keywords": [
+    "governo",
+    "nation state",
+    "stuxnet",
+    "aurora",
+    "strava",
+    "rsa",
+    "nso"
+   ],
+   "pages": "55-57",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "You can be a target without knowing it; raise the cost of the attack and invest in the most sensitive assets.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Profile: activists (hacktivism, DDoS, defacement)",
+   "terms_en": [
+    "hacktivism",
+    "activists",
+    "defacement",
+    "DDoS"
+   ],
+   "keywords": [
+    "ativista",
+    "hacktivismo",
+    "defacement",
+    "ddos",
+    "botnet"
+   ],
+   "pages": "57-58",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Questions to tell whether you attract activists, and layered defenses.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Profile: criminals (ransomware, stalkerware, CAPTCHA)",
+   "terms_en": [
+    "criminal actors",
+    "ransomware",
+    "stalkerware",
+    "CAPTCHA"
+   ],
+   "keywords": [
+    "criminoso",
+    "ransomware",
+    "stalkerware",
+    "captcha",
+    "engenharia social",
+    "custo do ataque"
+   ],
+   "pages": "58-60",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "They look for the easiest path; raise the cost of the attack.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Automation and AI in attacks (Cyber Grand Challenge)",
+   "terms_en": [
+    "automation",
+    "artificial intelligence",
+    "Cyber Grand Challenge"
+   ],
+   "keywords": [
+    "automacao",
+    "ia",
+    "inteligencia artificial",
+    "darpa",
+    "cyber grand challenge"
+   ],
+   "pages": "60",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Autonomous attacks require automated defense.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Insiders: categories and the reliability/security intersection",
+   "terms_en": [
+    "insiders",
+    "insider risk",
+    "first-party",
+    "third-party",
+    "related insiders"
+   ],
+   "keywords": [
+    "insider",
+    "ameaca interna",
+    "first party",
+    "third party",
+    "related",
+    "conta sequestrada",
+    "funcionario"
+   ],
+   "pages": "60-63",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Insiders make mistakes or are hijacked; least privilege protects against both.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Insider intent and the home as workplace",
+   "terms_en": [
+    "insider intent",
+    "workplace"
+   ],
+   "keywords": [
+    "intencao",
+    "acidente",
+    "laptop em casa",
+    "juridico",
+    "rh"
+   ],
+   "pages": "63",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Plan for malicious and accidental actions without assuming you can tell the difference.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Simple insider risk model (actor x motive x action x target)",
+   "terms_en": [
+    "threat modeling insider risk",
+    "Actor/Role",
+    "Motive",
+    "Actions",
+    "Target"
+   ],
+   "keywords": [
+    "modelagem de ameacas",
+    "insider",
+    "ator",
+    "motivo",
+    "acao",
+    "alvo",
+    "brainstorming",
+    "tabela 2-2"
+   ],
+   "pages": "64",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Matrix to generate insider scenarios.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Human error and the '/' in the malware list case",
+   "terms_en": [
+    "human error",
+    "This site may harm your computer"
+   ],
+   "keywords": [
+    "erro humano",
+    "barra",
+    "malware",
+    "search",
+    "check automatizado",
+    "40 minutos"
+   ],
+   "pages": "65",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "An automated config check would have prevented the outage.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Design concepts against insider risk",
+   "terms_en": [
+    "least privilege",
+    "zero trust",
+    "multi-party authorization",
+    "business justifications",
+    "auditing",
+    "recoverability"
+   ],
+   "keywords": [
+    "menor privilegio",
+    "zero trust",
+    "mpa",
+    "justificativa",
+    "auditoria",
+    "recuperabilidade"
+   ],
+   "pages": "65-66",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Six concepts that point to chs. 3, 5, 9 and 15.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Threat intelligence and IOCs",
+   "terms_en": [
+    "threat intelligence",
+    "IOC",
+    "STIX",
+    "TAXII"
+   ],
+   "keywords": [
+    "threat intelligence",
+    "ioc",
+    "indicador de comprometimento",
+    "stix",
+    "taxii",
+    "relatorio de malware"
+   ],
+   "pages": "66-67",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Three forms of threat intelligence and how to acquire them.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Cyber Kill Chain and defenses per stage",
+   "terms_en": [
+    "Cyber Kill Chain",
+    "reconnaissance",
+    "lateral movement",
+    "persistence"
+   ],
+   "keywords": [
+    "kill chain",
+    "reconhecimento",
+    "entrada",
+    "movimento lateral",
+    "persistencia",
+    "objetivos",
+    "tabela 2-3"
+   ],
+   "pages": "67-68",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Five stages paired with example defenses.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "MITRE ATT&CK (TTPs)",
+   "terms_en": [
+    "MITRE ATT&CK",
+    "TTPs"
+   ],
+   "keywords": [
+    "mitre",
+    "attack",
+    "ttp",
+    "tecnicas",
+    "bash history"
+   ],
+   "pages": "68",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Catalog of techniques per attack stage.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Considerations for assessing adversary risk",
+   "terms_en": [
+    "risk assessment",
+    "attribution",
+    "NotPetya"
+   ],
+   "keywords": [
+    "avaliacao de risco",
+    "atribuicao",
+    "notpetya",
+    "sofisticacao",
+    "subestimar",
+    "adobe"
+   ],
+   "pages": "68-70",
+   "chapter": "02",
+   "ref": "adversarios-e-modelagem-de-ameacas.md",
+   "summary": "Five considerations: you may be a target, simplicity, do not underestimate, attribution is hard, impunity.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Safe proxies: concept, benefits and drawbacks",
+   "terms_en": [
+    "safe proxy",
+    "single entry point",
+    "MPA",
+    "rate limiting"
+   ],
+   "keywords": [
+    "safe proxy",
+    "proxy seguro",
+    "auditoria",
+    "mpa",
+    "rate limiting",
+    "ponto unico de falha"
+   ],
+   "pages": "73-76",
+   "chapter": "03",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Proxy as a central point to audit, approve and limit administrative operations.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Zero Touch Prod",
+   "terms_en": [
+    "Zero Touch Prod"
+   ],
+   "keywords": [
+    "zero touch",
+    "zero touch prod",
+    "automacao",
+    "13%"
+   ],
+   "pages": "74",
+   "chapter": "03",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Production changes only through automation, prevalidation or audited breakglass.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Google Tool Proxy (policy, flow, MPA)",
+   "terms_en": [
+    "Tool Proxy",
+    "tool-proxy-cli",
+    "fork and exec"
+   ],
+   "keywords": [
+    "tool proxy",
+    "borg",
+    "politica",
+    "mpa",
+    "cli",
+    "admin-proxy"
+   ],
+   "pages": "76-78",
+   "chapter": "03",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Generic RPC executes commands under policy, logging and approval.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Functional, critical and nonfunctional requirements",
+   "terms_en": [
+    "functional requirements",
+    "critical requirements",
+    "nonfunctional requirements"
+   ],
+   "keywords": [
+    "requisito funcional",
+    "requisito critico",
+    "nao funcional",
+    "user story",
+    "slo"
+   ],
+   "pages": "80-81",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Features link directly to code/tests; nonfunctional requirements are hard to pin down.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Reliability and security as emergent properties of design",
+   "terms_en": [
+    "emergent property",
+    "production readiness review"
+   ],
+   "keywords": [
+    "emergente",
+    "prr",
+    "decomposicao",
+    "dependencias",
+    "monitoramento",
+    "flag"
+   ],
+   "pages": "81-83",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "There is no module that implements reliability or security.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Google design document template (reliability and security sections)",
+   "terms_en": [
+    "design document",
+    "Scalability",
+    "Dependency considerations",
+    "Data integrity"
+   ],
+   "keywords": [
+    "design doc",
+    "template",
+    "escalabilidade",
+    "dependencias",
+    "integridade de dados",
+    "sla",
+    "security design review"
+   ],
+   "pages": "83-84",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Six sections that force the team to think about failures and attacks.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Cost of adding security and reliability later (retrofit)",
+   "terms_en": [
+    "bolt on",
+    "retrofit"
+   ],
+   "keywords": [
+    "retrofit",
+    "acrescentar depois",
+    "refatoracao",
+    "reescrita",
+    "pressao de tempo"
+   ],
+   "pages": "85",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Late changes are expensive and risky.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Payments example: outsourcing sensitive data, reliability and security risks",
+   "terms_en": [
+    "payment processing",
+    "third-party",
+    "PCI DSS",
+    "message queue"
+   ],
+   "keywords": [
+    "pagamento",
+    "pci dss",
+    "terceiro",
+    "fila",
+    "provedor",
+    "dado sensivel",
+    "iframe",
+    "biblioteca proprietaria"
+   ],
+   "pages": "86-89",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Each mitigation creates another risk; not retaining the data is the best mitigation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Internal framework with conformance checks (security and reliability aligned with quality)",
+   "terms_en": [
+    "framework",
+    "conformance checks",
+    "secure by default"
+   ],
+   "keywords": [
+    "framework",
+    "conformance check",
+    "imutavel",
+    "isolamento",
+    "secure by default",
+    "microsservicos"
+   ],
+   "pages": "90-91",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "The framework takes responsibility for classes of vulnerabilities.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Initial vs sustained velocity; history of the internet; CI/CD",
+   "terms_en": [
+    "initial velocity",
+    "sustained velocity",
+    "CI/CD",
+    "feature flags"
+   ],
+   "keywords": [
+    "velocidade",
+    "dívida tecnica",
+    "ci/cd",
+    "feature flag",
+    "arpanet",
+    "https",
+    "agile"
+   ],
+   "pages": "92-95",
+   "chapter": "04",
+   "ref": "safe-proxies-e-tradeoffs-de-design.md",
+   "summary": "Postponing security speeds up the start and slows down the rest.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Principle of least privilege and the premise of not trusting human perfection",
+   "terms_en": [
+    "least privilege",
+    "hope is not a strategy"
+   ],
+   "keywords": [
+    "menor privilegio",
+    "least privilege",
+    "perfeicao humana",
+    "erro",
+    "fat finger"
+   ],
+   "pages": "97-98",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Design to minimize the impact of accidental or malicious bad actions.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Zero trust networking, BeyondCorp, Zero Touch and ambient authority",
+   "terms_en": [
+    "zero trust",
+    "BeyondCorp",
+    "Zero Touch",
+    "ambient authority"
+   ],
+   "keywords": [
+    "zero trust",
+    "beyondcorp",
+    "zero touch",
+    "ambient authority",
+    "root",
+    "localizacao de rede"
+   ],
+   "pages": "98-99",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "The network does not grant privilege; humans access production through automation.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Access classification by risk (table 5-1)",
+   "terms_en": [
+    "classifying access",
+    "risk",
+    "highly sensitive"
+   ],
+   "keywords": [
+    "classificacao",
+    "risco",
+    "sensivel",
+    "altamente sensivel",
+    "leitura",
+    "escrita",
+    "infraestrutura"
+   ],
+   "pages": "99-100",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Classify by impact and criticality; do not protect everything equally.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Small functional APIs and administrative APIs",
+   "terms_en": [
+    "small functional APIs",
+    "administrative API",
+    "POSIX API"
+   ],
+   "keywords": [
+    "api pequena",
+    "api administrativa",
+    "posix",
+    "ssh interativo",
+    "crud"
+   ],
+   "pages": "101-103",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Small APIs allow granting the minimum and auditing.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Auditing: granular logs, culture, choosing the auditor, structured justification",
+   "terms_en": [
+    "auditing",
+    "structured justification",
+    "auditor"
+   ],
+   "keywords": [
+    "auditoria",
+    "audit log",
+    "auditor",
+    "justificativa estruturada",
+    "tripwire",
+    "breakglass review"
+   ],
+   "pages": "104-106",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Two kinds of auditing: best practices (per team) and breaches (central).",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Breakglass: definition and guidelines",
+   "terms_en": [
+    "breakglass",
+    "panic room"
+   ],
+   "keywords": [
+    "breakglass",
+    "break glass",
+    "emergencia",
+    "panic room",
+    "falha de autorizacao"
+   ],
+   "pages": "103-104, 110",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Restricted, from specific locations, monitored and tested.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Testing least privilege and testing with least privilege",
+   "terms_en": [
+    "testing of least privilege",
+    "testing with least privilege",
+    "test environments"
+   ],
+   "keywords": [
+    "teste",
+    "perfil de usuario",
+    "ambiente de teste",
+    "dados anonimizados",
+    "conta de teste"
+   ],
+   "pages": "107-109",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Verify permissions and isolate test infrastructure.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Diagnosing access denials (blind denial and tokens)",
+   "terms_en": [
+    "access denial",
+    "403",
+    "token"
+   ],
+   "keywords": [
+    "negacao de acesso",
+    "403",
+    "token",
+    "remediacao",
+    "suporte"
+   ],
+   "pages": "109-110",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "How much information to expose depends on the caller's privilege.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Worked example: configuration distribution (OpenSSH, update API, ForceCommand, HTTP receiver)",
+   "terms_en": [
+    "configuration distribution",
+    "ForceCommand",
+    "sidecar",
+    "canary"
+   ],
+   "keywords": [
+    "distribuicao de configuracao",
+    "config",
+    "forcecommand",
+    "sidecar",
+    "canario",
+    "assinatura",
+    "rate limiter"
+   ],
+   "pages": "110-114",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Compares four config update APIs on surface, auditability and least privilege.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Authentication and authorization policy framework",
+   "terms_en": [
+    "authentication",
+    "authorization",
+    "ACL",
+    "IAM",
+    "policy framework"
+   ],
+   "keywords": [
+    "autenticacao",
+    "autorizacao",
+    "acl",
+    "iam",
+    "politica",
+    "biblioteca compartilhada"
+   ],
+   "pages": "114-117",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Separate the authorization decision from business logic; policy as configuration.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Multi-party authorization (MPA)",
+   "terms_en": [
+    "multi-party authorization",
+    "MPA"
+   ],
+   "keywords": [
+    "mpa",
+    "multi party",
+    "dois pares de olhos",
+    "aprovacao",
+    "pressao social"
+   ],
+   "pages": "117-118",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Benefits, context pitfalls and social pressure.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Three-factor authorization (3FA)",
+   "terms_en": [
+    "three-factor authorization",
+    "3FA"
+   ],
+   "keywords": [
+    "3fa",
+    "tres fatores",
+    "mobile endurecido",
+    "estacao de trabalho",
+    "autorizacao de pedido"
+   ],
+   "pages": "118-120",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Second hardened platform; protects against broad workstation compromise.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Business justifications, temporary access and proxies",
+   "terms_en": [
+    "business justification",
+    "temporary access",
+    "proxy",
+    "bastion"
+   ],
+   "keywords": [
+    "justificativa de negocio",
+    "ticket",
+    "acesso temporario",
+    "sudo",
+    "bastion",
+    "proxy"
+   ],
+   "pages": "120-122",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Advanced controls that complement MPA.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Tradeoffs and tensions of least privilege",
+   "terms_en": [
+    "tradeoffs",
+    "complexity",
+    "productivity"
+   ],
+   "keywords": [
+    "tradeoff",
+    "complexidade",
+    "produtividade",
+    "cultura",
+    "dados de qualidade",
+    "desenvolvedores"
+   ],
+   "pages": "122-123",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Complexity, culture, data quality, productivity, developer load.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Key components of a least-privilege model",
+   "terms_en": [
+    "key components",
+    "least privilege model"
+   ],
+   "keywords": [
+    "componentes",
+    "conclusao",
+    "auditar",
+    "politica",
+    "breakglass",
+    "funcao de seguranca"
+   ],
+   "pages": "123-124",
+   "chapter": "05",
+   "ref": "menor-privilegio-e-controle-de-acesso.md",
+   "summary": "Six components and minimum operational requirements.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Understandability: definition and benefits",
+   "terms_en": [
+    "understandability"
+   ],
+   "keywords": [
+    "compreensibilidade",
+    "understandability",
+    "entender o sistema",
+    "resposta a incidentes"
+   ],
+   "pages": "125-126",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Reduces vulnerabilities, helps incidents and supports claims via invariants.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "System invariants and how to analyze them",
+   "terms_en": [
+    "system invariants",
+    "formal verification"
+   ],
+   "keywords": [
+    "invariante",
+    "invariants",
+    "prova formal",
+    "teste",
+    "ausencia de evidencia",
+    "analise"
+   ],
+   "pages": "127-129",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Properties that hold for all behaviors; an informal but grounded middle ground.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Mental models and extreme conditions (thrashing, swap)",
+   "terms_en": [
+    "mental models",
+    "thrashing"
+   ],
+   "keywords": [
+    "modelo mental",
+    "thrashing",
+    "swap",
+    "condicoes extremas"
+   ],
+   "pages": "129-130",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Design so the mental model stays valid under stress.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Inherent vs unmanaged complexity and breaking into components",
+   "terms_en": [
+    "complexity",
+    "breaking down complexity"
+   ],
+   "keywords": [
+    "complexidade",
+    "gmail",
+    "componentes",
+    "compartimentalizar"
+   ],
+   "pages": "130-132",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Compartmentalize inherent complexity.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Centralized responsibility for security and reliability requirements",
+   "terms_en": [
+    "centralized responsibility",
+    "deadline propagation"
+   ],
+   "keywords": [
+    "centralizar",
+    "framework de rpc",
+    "deadline",
+    "timeout",
+    "autenticacao central"
+   ],
+   "pages": "132-133",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "A single place to review horizontal requirements.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Architecture: boundaries, assumptions about callers",
+   "terms_en": [
+    "system architecture",
+    "assumptions about callers"
+   ],
+   "keywords": [
+    "arquitetura",
+    "chamadores",
+    "suposicoes",
+    "acoplamento"
+   ],
+   "pages": "133-134",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Components should assume as little as possible about their callers.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Narrow interfaces, common object model and idempotency",
+   "terms_en": [
+    "narrow interfaces",
+    "gRPC",
+    "OpenAPI",
+    "idempotent"
+   ],
+   "keywords": [
+    "interface estreita",
+    "grpc",
+    "openapi",
+    "thrift",
+    "idempotencia",
+    "uuid",
+    "modelo de objetos"
+   ],
+   "pages": "134-136",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Typed, idempotent interfaces ease reasoning and retry.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Identities, credentials and identifier properties",
+   "terms_en": [
+    "identity",
+    "credentials",
+    "identifiers"
+   ],
+   "keywords": [
+    "identidade",
+    "credencial",
+    "identificador",
+    "spoofing",
+    "reutilizavel",
+    "ip",
+    "oidc"
+   ],
+   "pages": "136-138",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Understandable, spoofing-resistant, non-reusable identifiers.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Google identity model and ALTS",
+   "terms_en": [
+    "administrators",
+    "machines",
+    "workloads",
+    "ALTS"
+   ],
+   "keywords": [
+    "administradores",
+    "maquinas",
+    "workloads",
+    "clientes",
+    "alts",
+    "borg",
+    "transporte"
+   ],
+   "pages": "138-141",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Four entity types; ALTS gives secure transport without configuration.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Access control via declarative frameworks",
+   "terms_en": [
+    "access control frameworks"
+   ],
+   "keywords": [
+    "controle de acesso",
+    "framework",
+    "declarativo",
+    "politica",
+    "cadeia de identidades"
+   ],
+   "pages": "141",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Frameworks unify policies and enable exposure tooling.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "TCB and security boundaries (widget store example)",
+   "terms_en": [
+    "TCB",
+    "trusted computing base",
+    "security boundary",
+    "same-origin policy",
+    "EUC"
+   ],
+   "keywords": [
+    "tcb",
+    "fronteira de seguranca",
+    "microsservicos",
+    "origem web",
+    "euc",
+    "xss",
+    "same origin"
+   ],
+   "pages": "141-147",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Keep the TCB small; boundaries depend on the threat model.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Application frameworks for service-wide requirements",
+   "terms_en": [
+    "application framework",
+    "batteries included"
+   ],
+   "keywords": [
+    "application framework",
+    "full stack",
+    "autorizacao padrao",
+    "default deny",
+    "batteries included"
+   ],
+   "pages": "148-149",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "An opinionated framework avoids forgetting authorization.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Types for complex data flows and injection (SafeSql, SafeHtml)",
+   "terms_en": [
+    "types",
+    "SafeSql",
+    "SafeHtml",
+    "injection"
+   ],
+   "keywords": [
+    "tipos",
+    "safesql",
+    "safehtml",
+    "injecao",
+    "sink",
+    "url",
+    "xss",
+    "sql injection"
+   ],
+   "pages": "149-152",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Types encapsulate security invariants.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "API usability and Tink (cryptography)",
+   "terms_en": [
+    "API usability",
+    "Tink",
+    "secure-by-construction"
+   ],
+   "keywords": [
+    "tink",
+    "criptografia",
+    "usabilidade",
+    "secure by construction",
+    "autoescaping",
+    "chaves"
+   ],
+   "pages": "152-155",
+   "chapter": "06",
+   "ref": "design-para-compreensibilidade.md",
+   "summary": "Secure-by-construction APIs and their limits.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Types of security change",
+   "terms_en": [
+    "types of security changes"
+   ],
+   "keywords": [
+    "tipos de mudanca",
+    "incidente",
+    "vulnerabilidade",
+    "regulatorio",
+    "postura"
+   ],
+   "pages": "158",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Five types, including incident reactions and external requirements.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Characteristics of every change: incremental, documented, tested, isolated, qualified, staged",
+   "terms_en": [
+    "incremental",
+    "documented",
+    "tested",
+    "isolated",
+    "qualified",
+    "staged"
+   ],
+   "keywords": [
+    "incremental",
+    "documentada",
+    "testada",
+    "isolada",
+    "qualificada",
+    "escalonada",
+    "feature flag",
+    "canary"
+   ],
+   "pages": "158-159",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Six attributes every security change must have.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Updated dependencies, rebuilds and frequent releases",
+   "terms_en": [
+    "keep dependencies up to date",
+    "rebuild frequently",
+    "release frequently"
+   ],
+   "keywords": [
+    "dependencias",
+    "rebuild",
+    "releases frequentes",
+    "testes automatizados",
+    "backport"
+   ],
+   "pages": "159-160",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Small releases and frequent rebuilds prepare for emergency rollouts.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Containers: immutability, image patching and content addressability",
+   "terms_en": [
+    "containers",
+    "immutable",
+    "blue/green",
+    "content addressability"
+   ],
+   "keywords": [
+    "container",
+    "imutavel",
+    "imagem",
+    "registry",
+    "blue green",
+    "idade do container"
+   ],
+   "pages": "160-161",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Image patching and redeploy as a unit.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Microservices and Google Front End",
+   "terms_en": [
+    "microservices",
+    "GFE",
+    "zero trust",
+    "service mesh",
+    "data plane"
+   ],
+   "keywords": [
+    "microsservicos",
+    "gfe",
+    "front end",
+    "zero trust",
+    "service mesh",
+    "data plane",
+    "control plane"
+   ],
+   "pages": "161-163",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Defense in depth, segmentation and central overload mitigation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Factors in change velocity (severity, dependencies, sensitivity, deadline) and embargo",
+   "terms_en": [
+    "severity",
+    "sensitivity",
+    "deadline",
+    "embargo"
+   ],
+   "keywords": [
+    "severidade",
+    "sensibilidade",
+    "prazo",
+    "embargo",
+    "dependencias",
+    "velocidade"
+   ],
+   "pages": "163-164",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "There is no fixed rule for the speed of a change.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Zero-day: triage, patch verification, gradual rollout, mitigation",
+   "terms_en": [
+    "zero-day",
+    "triage",
+    "patch verification"
+   ],
+   "keywords": [
+    "zero day",
+    "triagem",
+    "patch",
+    "exploit",
+    "mitigacao",
+    "rollout gradual"
+   ],
+   "pages": "165-166",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Even in an emergency, the patch should be rolled out gradually.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Shellshock example and lessons",
+   "terms_en": [
+    "Shellshock",
+    "Black Swan"
+   ],
+   "keywords": [
+    "shellshock",
+    "bash",
+    "black swan",
+    "padronizar distribuicao",
+    "comunicacao externa"
+   ],
+   "pages": "166-168",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Classify by risk, patch the easy ones fast, the rest manually.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Posture improvement: phases, initial population, dry run",
+   "terms_en": [
+    "security posture",
+    "dry run",
+    "dogfooding"
+   ],
+   "keywords": [
+    "postura",
+    "fases",
+    "fácil ou dificil",
+    "dry run",
+    "dogfood",
+    "opt in"
+   ],
+   "pages": "168-169",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Rollout in groups, with success criteria per phase.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "FIDO security keys (2FA) example and lessons",
+   "terms_en": [
+    "FIDO",
+    "U2F",
+    "security keys",
+    "OTP",
+    "TOFU"
+   ],
+   "keywords": [
+    "fido",
+    "u2f",
+    "security key",
+    "otp",
+    "2fa",
+    "phishing",
+    "tofu",
+    "techstop"
+   ],
+   "pages": "169-171",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Self-service, long tail and fast feedback.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Long-term changes and the HTTPS example",
+   "terms_en": [
+    "long-term change",
+    "HTTPS",
+    "Let's Encrypt"
+   ],
+   "keywords": [
+    "longo prazo",
+    "https",
+    "chrome",
+    "let's encrypt",
+    "incentivos",
+    "80%"
+   ],
+   "pages": "172-174",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Data, communication and business incentives.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "When plans change: speeding up, slowing down, broken embargo",
+   "terms_en": [
+    "accelerate",
+    "slow down",
+    "embargo"
+   ],
+   "keywords": [
+    "acelerar",
+    "desacelerar",
+    "plano muda",
+    "embargo quebrado",
+    "rollback"
+   ],
+   "pages": "174-175",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Speed up without breaking things; plans per embargo stage.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Heartbleed example and lessons (key rotation)",
+   "terms_en": [
+    "Heartbleed",
+    "key rotation"
+   ],
+   "keywords": [
+    "heartbleed",
+    "openssl",
+    "rotacao de chaves",
+    "embargo",
+    "metasploit"
+   ],
+   "pages": "176-177",
+   "chapter": "07",
+   "ref": "design-para-mudanca-e-cenario-em-evolucao.md",
+   "summary": "Scope grows: plan for the worst case and practice key rotation.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Resilience: definition and principles",
+   "terms_en": [
+    "resilience",
+    "design principles for resilience"
+   ],
+   "keywords": [
+    "resiliencia",
+    "principios",
+    "camadas",
+    "compartimentalizar",
+    "automacao",
+    "validacao"
+   ],
+   "pages": "179-180",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Six approaches and the difference between resilience and recovery.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Defense in depth: Trojan Horse and attack stages",
+   "terms_en": [
+    "defense in depth",
+    "Trojan Horse"
+   ],
+   "keywords": [
+    "defense in depth",
+    "cavalo de troia",
+    "estagios",
+    "reconhecimento",
+    "sandbox",
+    "wannacry"
+   ],
+   "pages": "181-183",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Four stages and defenses per stage.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Google App Engine analysis (sandbox layers)",
+   "terms_en": [
+    "Google App Engine",
+    "NaCl",
+    "ptrace",
+    "sandbox"
+   ],
+   "keywords": [
+    "app engine",
+    "nacl",
+    "ptrace",
+    "sandbox",
+    "runtime",
+    "api arriscada"
+   ],
+   "pages": "183-186",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Complementary layers for running untrusted code.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Controlling degradation",
+   "terms_en": [
+    "controlling degradation",
+    "graceful degradation"
+   ],
+   "keywords": [
+    "degradacao",
+    "degradar graciosamente",
+    "desabilitar features",
+    "ecc rsa",
+    "simple html",
+    "2fa"
+   ],
+   "pages": "186-188",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Decide beforehand what to shut down; security tradeoff.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Failure costs: fail early, lame-duck, degraded UX",
+   "terms_en": [
+    "costs of failures",
+    "lame-duck",
+    "SYN cookies",
+    "user experience"
+   ],
+   "keywords": [
+    "custo de falha",
+    "falhar cedo",
+    "lame duck",
+    "syn cookies",
+    "captcha",
+    "modo offline",
+    "ux"
+   ],
+   "pages": "188-190",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Reduce waste and preserve usefulness in degraded mode.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Load shedding and throttling",
+   "terms_en": [
+    "load shedding",
+    "throttling"
+   ],
+   "keywords": [
+    "load shedding",
+    "throttling",
+    "prioridade",
+    "custo da requisicao",
+    "cascata",
+    "sobrecarga"
+   ],
+   "pages": "190-193",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Stabilize at peak load instead of crashing.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Automated response and fail open vs fail closed",
+   "terms_en": [
+    "automated response",
+    "fail open",
+    "fail closed",
+    "fail safe",
+    "fail secure"
+   ],
+   "keywords": [
+    "resposta automatica",
+    "fail open",
+    "fail closed",
+    "fail safe",
+    "acl",
+    "qos",
+    "change budget"
+   ],
+   "pages": "193-195",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Critical security operations do not fail open; humans in the loop.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Controlling blast radius: compartments and granularity",
+   "terms_en": [
+    "blast radius",
+    "compartmentalization",
+    "segmentation"
+   ],
+   "keywords": [
+    "blast radius",
+    "compartimento",
+    "segmentacao",
+    "vlan",
+    "quarentena",
+    "mutual authentication",
+    "granularidade"
+   ],
+   "pages": "195-198",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Tradeoff between useful compartments and excessive separation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Role separation",
+   "terms_en": [
+    "role separation",
+    "service accounts"
+   ],
+   "keywords": [
+    "role separation",
+    "service account",
+    "separacao de papeis",
+    "jobs"
+   ],
+   "pages": "198",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Different jobs should run as different roles.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Location separation (trust and confidentiality)",
+   "terms_en": [
+    "location separation",
+    "isolation of trust",
+    "isolation of confidentiality"
+   ],
+   "keywords": [
+    "localizacao",
+    "datacenter",
+    "raiz de confianca",
+    "chaves por local",
+    "tailgating",
+    "certificado por datacenter"
+   ],
+   "pages": "198-202",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Physical location as a boundary; trust and keys isolated per location.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Time separation (credential rotation)",
+   "terms_en": [
+    "time separation",
+    "key rotation"
+   ],
+   "keywords": [
+    "time separation",
+    "rotacao",
+    "expiracao",
+    "credenciais",
+    "relogio"
+   ],
+   "pages": "202",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Rotation limits the lifetime of a stolen secret.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Failure domains: functional and data isolation",
+   "terms_en": [
+    "failure domains",
+    "data isolation",
+    "last known good"
+   ],
+   "keywords": [
+    "failure domain",
+    "dominio de falha",
+    "isolamento de dados",
+    "last known good",
+    "canary",
+    "acl vazia"
+   ],
+   "pages": "202-205",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Independent partitions with data validation and known-good config.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Component types: high capacity, high availability, low dependency",
+   "terms_en": [
+    "high-capacity",
+    "high-availability",
+    "low-dependency"
+   ],
+   "keywords": [
+    "alta capacidade",
+    "alta disponibilidade",
+    "baixa dependencia",
+    "low dependency",
+    "alarme residencial",
+    "rede alternativa"
+   ],
+   "pages": "205-208",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Redundancy levels with increasing cost and simplicity.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Controlling redundancy: failover, pitfalls, self-healing",
+   "terms_en": [
+    "failover",
+    "failback",
+    "redundancy pitfalls"
+   ],
+   "keywords": [
+    "failover",
+    "failback",
+    "armadilhas",
+    "backup",
+    "apodrecer",
+    "auto recuperacao"
+   ],
+   "pages": "208-210",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Alternates must not become routine or rot.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Continuous validation: focus and maintenance",
+   "terms_en": [
+    "continuous validation",
+    "validators",
+    "chaos engineering"
+   ],
+   "keywords": [
+    "validacao continua",
+    "validadores",
+    "chaos engineering",
+    "logs",
+    "recuperacao",
+    "pentest"
+   ],
+   "pages": "210-212",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Confirm specific properties with recurring checks.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Validation in practice: injection, mirroring, split, oversubscribe, key rotation",
+   "terms_en": [
+    "fault injection",
+    "mirroring",
+    "oversubscribe",
+    "key rotation latency"
+   ],
+   "keywords": [
+    "injecao de falhas",
+    "mirroring",
+    "split",
+    "oversubscribe",
+    "rotacao de chaves",
+    "latencia de rotacao",
+    "perda de acesso verificada"
+   ],
+   "pages": "212-215",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Five Google validation scenarios.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Resilience: where to start (cost order)",
+   "terms_en": [
+    "where to begin",
+    "order of costs"
+   ],
+   "keywords": [
+    "por onde comecar",
+    "ordem de custos",
+    "argumentos",
+    "resistencia a investir"
+   ],
+   "pages": "215-217",
+   "chapter": "08",
+   "ref": "design-para-resiliencia.md",
+   "summary": "Failure domains first; low-dependency last.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Error categories one recovers from (random, accidental, software, malicious)",
+   "terms_en": [
+    "random errors",
+    "accidental errors",
+    "software errors",
+    "malicious actions"
+   ],
+   "keywords": [
+    "erros aleatorios",
+    "acidentais",
+    "software",
+    "maliciosos",
+    "bit flip",
+    "erro humano"
+   ],
+   "pages": "220-222",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Four categories; the design mitigation is the same for an insider or an attacker.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Going as fast as possible, guarded by policy (emergency push = regular push)",
+   "terms_en": [
+    "go as quickly as possible",
+    "rate limiting",
+    "emergency push"
+   ],
+   "keywords": [
+    "rapido",
+    "politica",
+    "rate limit",
+    "push de emergencia",
+    "rollout",
+    "taxa de mudanca"
+   ],
+   "pages": "222-224",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Fast capability with a separate rate policy.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Isolated rate limiting and the Linux base image case",
+   "terms_en": [
+    "rate-limiting microservice",
+    "golden image",
+    "rollout actuator"
+   ],
+   "keywords": [
+    "rate limiter",
+    "microsservico",
+    "imagem base",
+    "golden image",
+    "pacotes",
+    "actuator"
+   ],
+   "pages": "224-226",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Decouple image, config store and rollout actuator.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Clock dependency, epochs and the rate limit backstop",
+   "terms_en": [
+    "wall-clock time",
+    "epoch",
+    "version numbers",
+    "NTP"
+   ],
+   "keywords": [
+    "relogio",
+    "tempo",
+    "epoch",
+    "ntp",
+    "expiracao de certificado",
+    "y2k",
+    "time bomb",
+    "backstop"
+   ],
+   "pages": "226-228",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Avoid wall-clock time; use rates, epochs or validity lists.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Rollbacks: tradeoff between security and reliability",
+   "terms_en": [
+    "rollback",
+    "self-updating",
+    "deny list",
+    "allow list"
+   ],
+   "keywords": [
+    "rollback",
+    "reverter",
+    "versao vulneravel",
+    "deny list",
+    "allow list",
+    "self updating"
+   ],
+   "pages": "228-229",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Arbitrary rollbacks are insecure; never allowing them is unreliable.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Deny lists and the unzipping attack",
+   "terms_en": [
+    "deny list",
+    "unzipping",
+    "ComponentState"
+   ],
+   "keywords": [
+    "deny list",
+    "unzipping",
+    "componentstate",
+    "lista de negacao"
+   ],
+   "pages": "230-231",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "A deny list outside the component allows deciding the tradeoff by policy.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "SVN and MASVN (minimum acceptable security version number)",
+   "terms_en": [
+    "SVN",
+    "MASVN",
+    "low-water mark"
+   ],
+   "keywords": [
+    "svn",
+    "masvn",
+    "security version number",
+    "versao minima",
+    "release i"
+   ],
+   "pages": "231-234",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "A patch raises SVN; MASVN is raised after it is proven stable.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Signing key rotation and firmware/hardware",
+   "terms_en": [
+    "signing key rotation",
+    "OTP",
+    "firmware rollback",
+    "spare parts"
+   ],
+   "keywords": [
+    "rotacao de chaves de assinatura",
+    "firmware",
+    "otp",
+    "bootloader",
+    "pecas sobressalentes",
+    "multiplas assinaturas"
+   ],
+   "pages": "234-236",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Gradual with k and k+1; OTP hardware limitations.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Explicit revocation: central service, fail open, KRL, scale, exceptions",
+   "terms_en": [
+    "revocation",
+    "certificate validity database",
+    "KRL",
+    "fail open"
+   ],
+   "keywords": [
+    "revogacao",
+    "crl",
+    "krl",
+    "fail open",
+    "revogar credenciais",
+    "shard",
+    "ssh"
+   ],
+   "pages": "236-240",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Distribute cached revocation lists; avoid fail open and exceptions.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Intended state: host, firmware, global services",
+   "terms_en": [
+    "intended state",
+    "host management",
+    "firmware",
+    "global services"
+   ],
+   "keywords": [
+    "estado pretendido",
+    "desvio",
+    "checksum",
+    "firmware",
+    "bios",
+    "post install",
+    "servicos globais",
+    "turnup"
+   ],
+   "pages": "240-244",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Encode the state and repair deviations with the same process.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Persistent data: backups, partial restore, key deletion",
+   "terms_en": [
+    "persistent data",
+    "backups",
+    "restore",
+    "key deletion"
+   ],
+   "keywords": [
+    "backup",
+    "restore",
+    "integridade",
+    "persistentes",
+    "restore parcial",
+    "apagar chaves",
+    "retencao"
+   ],
+   "pages": "244-245",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Nobody cares about backups, only about restores.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Designing for testing and continuous validation of recovery",
+   "terms_en": [
+    "testing recovery",
+    "continuous validation"
+   ],
+   "keywords": [
+    "teste de recuperacao",
+    "validacao continua",
+    "interfaces",
+    "falha de hardware",
+    "instrucoes legiveis"
+   ],
+   "pages": "245-246",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Test failure environments through interfaces and validate instructions.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Emergency access: controls, communications, habits",
+   "terms_en": [
+    "emergency access",
+    "communications",
+    "responder habits"
+   ],
+   "keywords": [
+    "acesso de emergencia",
+    "breakglass",
+    "comunicacao",
+    "irc",
+    "phone bridge",
+    "habitos",
+    "credenciais offline",
+    "sso"
+   ],
+   "pages": "246-250",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Minimal dependencies, security-equivalent and routinely practiced.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Unexpected benefits of designing for recovery",
+   "terms_en": [
+    "unexpected benefits",
+    "supply chain",
+    "bare metal"
+   ],
+   "keywords": [
+    "beneficios",
+    "bare metal",
+    "supply chain",
+    "error budget"
+   ],
+   "pages": "250",
+   "chapter": "09",
+   "ref": "design-para-recuperacao.md",
+   "summary": "Automated recovery reduces concern about component supply chain.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "DoS: economic view (demand vs capacity) and extortion",
+   "terms_en": [
+    "denial of service",
+    "DoS extortion"
+   ],
+   "keywords": [
+    "dos",
+    "negacao de servico",
+    "extorsao",
+    "demanda",
+    "capacidade"
+   ],
+   "pages": "253-254",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "The attacker seeks to make demand exceed supply.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Attacker strategy and amplification",
+   "terms_en": [
+    "attacker's strategy",
+    "botnet",
+    "amplification"
+   ],
+   "keywords": [
+    "botnet",
+    "amplificacao",
+    "dns",
+    "ntp",
+    "memcache",
+    "spoofing",
+    "udp"
+   ],
+   "pages": "254-255",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Dependency stages; UDP amplification through abusable protocols.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Defender strategy: threat model, DoS vs DDoS",
+   "terms_en": [
+    "defender's strategy",
+    "DDoS",
+    "DoS",
+    "threat model"
+   ],
+   "keywords": [
+    "defensor",
+    "overprovisionar",
+    "threat model",
+    "elo mais fraco",
+    "ddos",
+    "dos"
+   ],
+   "pages": "255-256",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Prioritize the weakest link; DoS/DDoS distinction.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Defensible architecture: layers on shared infrastructure, stateful firewalls, anycast",
+   "terms_en": [
+    "defendable architecture",
+    "edge routers",
+    "anycast",
+    "stateful firewall"
+   ],
+   "keywords": [
+    "arquitetura defendivel",
+    "edge",
+    "load balancer",
+    "acl",
+    "firewall stateful",
+    "anycast",
+    "project shield",
+    "caching"
+   ],
+   "pages": "256-258",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Defend early and in layers; avoid state on the data path.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Defensible services: caching, spriting, egress",
+   "terms_en": [
+    "defendable services",
+    "caching proxies",
+    "spriting"
+   ],
+   "keywords": [
+    "cache-control",
+    "spriting",
+    "egress",
+    "banda de saida",
+    "requisicoes desnecessarias"
+   ],
+   "pages": "258",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Reduce requests and egress bytes.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Monitoring and actionable alerts for DoS",
+   "terms_en": [
+    "monitoring and alerting",
+    "MTTD",
+    "MTTR"
+   ],
+   "keywords": [
+    "monitoramento",
+    "alerta",
+    "mttd",
+    "mttr",
+    "taxa de requisicoes",
+    "syncookies"
+   ],
+   "pages": "259",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Alert when demand exceeds capacity and automatic defenses have engaged.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Graceful degradation under DoS (ACLs, QoS, degraded modes)",
+   "terms_en": [
+    "graceful degradation",
+    "QoS",
+    "read-only mode"
+   ],
+   "keywords": [
+    "degradacao",
+    "acl",
+    "qos",
+    "somente leitura",
+    "blogger",
+    "dns"
+   ],
+   "pages": "259-260",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Limit suspicious traffic without always blocking; prioritize critical traffic.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "DoS mitigation system (detection, response, CAPTCHA, fail static)",
+   "terms_en": [
+    "DoS mitigation system",
+    "CAPTCHA",
+    "fail static"
+   ],
+   "keywords": [
+    "sistema de mitigacao",
+    "deteccao",
+    "resposta",
+    "captcha",
+    "cookie de isencao",
+    "fail static",
+    "canary"
+   ],
+   "pages": "260-261",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Fast automation, no production dependencies, with fail static.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Strategic response to DoS (I AM BOT NET)",
+   "terms_en": [
+    "strategic response"
+   ],
+   "keywords": [
+    "resposta estrategica",
+    "user agent",
+    "teste a/b",
+    "captcha",
+    "provedores de mitigacao",
+    "filtragem upstream"
+   ],
+   "pages": "261-262",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Do not teach the adversary; understand capabilities and goals.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Self-inflicted attacks: user behavior and retries",
+   "terms_en": [
+    "self-inflicted attacks",
+    "client retry",
+    "exponential backoff",
+    "jitter"
+   ],
+   "keywords": [
+    "autoinfligido",
+    "terremoto",
+    "game show",
+    "retry",
+    "backoff",
+    "jitter",
+    "dns autoritativo"
+   ],
+   "pages": "262-264",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Not every spike is an attack; exponential backoff with jitter.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Conclusion: the economics of defense and WAF",
+   "terms_en": [
+    "WAF",
+    "cost-effective mitigation"
+   ],
+   "keywords": [
+    "conclusao",
+    "waf",
+    "economia",
+    "custo",
+    "time de seguranca"
+   ],
+   "pages": "264-265",
+   "chapter": "10",
+   "ref": "mitigacao-de-dos.md",
+   "summary": "Absorbing is rarely cheapest; WAF filters the known.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Public CA: context, audits and when to build",
+   "terms_en": [
+    "publicly trusted CA",
+    "WebTrust",
+    "CA/Browser Forum"
+   ],
+   "keywords": [
+    "ca publica",
+    "autoridade certificadora",
+    "webtrust",
+    "etsi",
+    "baseline requirements",
+    "auditoria"
+   ],
+   "pages": "269-271",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Why Google built its own CA.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Build or buy the CA",
+   "terms_en": [
+    "build or buy",
+    "transparency",
+    "integration",
+    "flexibility"
+   ],
+   "keywords": [
+    "construir ou comprar",
+    "build or buy",
+    "transparencia",
+    "integracao",
+    "flexibilidade",
+    "certificate transparency"
+   ],
+   "pages": "271-272",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Transparency, integration and flexibility motivated in-house development.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Layered architecture and two trust zones",
+   "terms_en": [
+    "three-layer architecture",
+    "dual trust zone"
+   ],
+   "keywords": [
+    "arquitetura",
+    "tres camadas",
+    "trust zone",
+    "entrada nao confiavel",
+    "microsservicos"
+   ],
+   "pages": "272-273",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Untrusted input separated from critical operations.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Language choice (Go vs C++) and mitigations",
+   "terms_en": [
+    "Go",
+    "C++",
+    "memory-safe",
+    "W^X",
+    "Scudo",
+    "SafeStack"
+   ],
+   "keywords": [
+    "linguagem",
+    "go",
+    "c++",
+    "memory safe",
+    "csr",
+    "der",
+    "w^x",
+    "scudo",
+    "safestack"
+   ],
+   "pages": "273-274",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Memory-safe language for parsing untrusted input; comparison of results.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Complexity vs understandability in the CA",
+   "terms_en": [
+    "complexity",
+    "understandability",
+    "centralized ACL checks"
+   ],
+   "keywords": [
+    "complexidade",
+    "funcionalidade limitada",
+    "consolidar microsservicos",
+    "acl centralizada"
+   ],
+   "pages": "274",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Limited functionality and centralized ACLs.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Third-party and open source components (nsjail, vendor HSM)",
+   "terms_en": [
+    "third-party",
+    "open source",
+    "nsjail",
+    "HSM"
+   ],
+   "keywords": [
+    "terceiros",
+    "open source",
+    "nsjail",
+    "hsm",
+    "container",
+    "revisao de seguranca"
+   ],
+   "pages": "274-275",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Validate, harden and contain third-party code.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "CA testing: negative tests, sanitizers, fuzzing, fixits",
+   "terms_en": [
+    "testing",
+    "negative tests",
+    "sanitizers",
+    "fuzzing",
+    "fixit"
+   ],
+   "keywords": [
+    "testes",
+    "negativos",
+    "emissao",
+    "sanitizer",
+    "asan",
+    "fuzzing",
+    "fixit",
+    "tricorder"
+   ],
+   "pages": "275-276",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Good and bad conditions every few minutes; a fuzzing fixit found a parser bug.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Resilience of CA key material",
+   "terms_en": [
+    "key material",
+    "root key",
+    "offline",
+    "two-party authorization"
+   ],
+   "keywords": [
+    "chave raiz",
+    "offline",
+    "autorizacao de duas partes",
+    "chave intermediaria",
+    "material de chave"
+   ],
+   "pages": "276",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "Offline root; alternate keys matured in the ecosystem.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "CA data validation (linters, CT, independent logs)",
+   "terms_en": [
+    "data validation",
+    "linters",
+    "ZLint",
+    "Certificate Transparency"
+   ],
+   "keywords": [
+    "validacao de dados",
+    "linters",
+    "zlint",
+    "certificate transparency",
+    "logs independentes"
+   ],
+   "pages": "277",
+   "chapter": "11",
+   "ref": "estudo-de-caso-ca-publica.md",
+   "summary": "No human discretion in issuance; continuous validation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Why frameworks: domain invariants and the limits of manual review",
+   "terms_en": [
+    "frameworks",
+    "invariants",
+    "code review"
+   ],
+   "keywords": [
+    "framework",
+    "invariantes",
+    "revisao manual",
+    "viés do revisor",
+    "contexto global"
+   ],
+   "pages": "279-281",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Frameworks scale better than manual review.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Benefits of frameworks (reuse, productivity, metrics, balancing)",
+   "terms_en": [
+    "benefits of frameworks",
+    "reuse"
+   ],
+   "keywords": [
+    "beneficios",
+    "reuso",
+    "produtividade",
+    "metricas",
+    "tink",
+    "avaliar framework"
+   ],
+   "pages": "281-282",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Avoids a patchwork of per-service bugs.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Framework for RPC backends (interceptors, deadline, dependencies, backoff)",
+   "terms_en": [
+    "RPC backend",
+    "interceptors",
+    "exponential backoff",
+    "deadline"
+   ],
+   "keywords": [
+    "rpc",
+    "interceptor",
+    "before after",
+    "contexto",
+    "deadline",
+    "dependencia hard soft",
+    "backoff"
+   ],
+   "pages": "283-287",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Logging, authentication, authorization and throttling as interceptors.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "OWASP Top 10 and hardening measures in the framework",
+   "terms_en": [
+    "OWASP top 10",
+    "framework hardening"
+   ],
+   "keywords": [
+    "owasp",
+    "top 10",
+    "injecao",
+    "autenticacao quebrada",
+    "xss",
+    "xxe",
+    "desserializacao",
+    "configuracao insegura"
+   ],
+   "pages": "287-288",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Table 12-1 with mitigation per framework.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "SQL injection and TrustedSqlString",
+   "terms_en": [
+    "SQL injection",
+    "TrustedSqlString",
+    "prepared statements"
+   ],
+   "keywords": [
+    "sql injection",
+    "trustedsqlstring",
+    "prepared statement",
+    "bound parameters",
+    "unsafequery",
+    "literal"
+   ],
+   "pages": "288-290",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Design the API to make injection impossible by construction.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "XSS and SafeHtml (types per context, templates, sanitizers)",
+   "terms_en": [
+    "XSS",
+    "SafeHtml",
+    "SafeUrl",
+    "contextual escaping"
+   ],
+   "keywords": [
+    "xss",
+    "safehtml",
+    "safeurl",
+    "template",
+    "escaping contextual",
+    "sanitizer",
+    "closure templates"
+   ],
+   "pages": "290-291",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Types and templates with strict contextual escaping.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Evaluating and building frameworks: compile-time checks, fast feedback, simple libraries",
+   "terms_en": [
+    "evaluating frameworks",
+    "compile-time checks",
+    "Error Prone"
+   ],
+   "keywords": [
+    "erro de compilacao",
+    "error prone",
+    "tsetse",
+    "ide",
+    "fix automatico",
+    "biblioteca simples",
+    "excecoes revisadas"
+   ],
+   "pages": "292-294",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Fast feedback makes developers adopt secure APIs.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Rollout strategy: incremental and legacy conversions",
+   "terms_en": [
+    "rollout strategy",
+    "incremental rollout",
+    "legacy conversions"
+   ],
+   "keywords": [
+    "rollout",
+    "incremental",
+    "legado",
+    "restrictedapi",
+    "git hook",
+    "bazel",
+    "legacy conversion"
+   ],
+   "pages": "294-295",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Exempt legacy and migrate one by one.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Simplicity: nesting, YAGNI, technical debt, refactoring",
+   "terms_en": [
+    "simplicity",
+    "nesting",
+    "YAGNI",
+    "technical debt",
+    "refactoring"
+   ],
+   "keywords": [
+    "simplicidade",
+    "aninhamento",
+    "yagni",
+    "divida tecnica",
+    "todo",
+    "refactoring",
+    "cobertura"
+   ],
+   "pages": "295-298",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Never mix refactoring with functional change.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Memory-safe languages and strong/static typing",
+   "terms_en": [
+    "memory-safe languages",
+    "strong typing",
+    "static type checking"
+   ],
+   "keywords": [
+    "memory safe",
+    "linguagem",
+    "c++",
+    "go",
+    "java",
+    "tipagem",
+    "pytype",
+    "typescript"
+   ],
+   "pages": "299-300",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "~70% of vulnerabilities are memory-related; verify types at compile time.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Strong types (parameters, implicit conversions, units)",
+   "terms_en": [
+    "strong types",
+    "implicit conversion",
+    "units"
+   ],
+   "keywords": [
+    "tipos fortes",
+    "unidades",
+    "conversao implicita",
+    "explicit",
+    "gimli glider",
+    "mars climate orbiter",
+    "duracao"
+   ],
+   "pages": "301-303",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Encapsulate unit and context in types.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Sanitizers in C++ and Go",
+   "terms_en": [
+    "sanitizers",
+    "Valgrind",
+    "AddressSanitizer",
+    "Race Detector"
+   ],
+   "keywords": [
+    "sanitizer",
+    "valgrind",
+    "asan",
+    "tsan",
+    "msan",
+    "ubsan",
+    "race detector",
+    "helgrind"
+   ],
+   "pages": "303-304",
+   "chapter": "12",
+   "ref": "escrevendo-codigo-seguro-e-confiavel.md",
+   "summary": "Detect memory and concurrency errors in presubmit or continuous build.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Unit tests: what to do, when to write, mutation testing, TDD",
+   "terms_en": [
+    "unit testing",
+    "TDD",
+    "mutation testing",
+    "hermetic"
+   ],
+   "keywords": [
+    "teste unitario",
+    "unit test",
+    "tdd",
+    "mutation",
+    "hermetico",
+    "xunit",
+    "googletest",
+    "cobertura"
+   ],
+   "pages": "308-310",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Fast, hermetic tests with security cases.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Testability: mocks, stubs, fakes, flakiness and overabstraction",
+   "terms_en": [
+    "mocks",
+    "stubs",
+    "fakes",
+    "flaky tests"
+   ],
+   "keywords": [
+    "mock",
+    "stub",
+    "fake",
+    "flaky",
+    "overabstraction",
+    "interceptar chamadas",
+    "testabilidade"
+   ],
+   "pages": "310-311",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Abstract external systems for reliable tests.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Correctness validation: torture test and Wycheproof",
+   "terms_en": [
+    "correctness validation",
+    "Wycheproof",
+    "torture test"
+   ],
+   "keywords": [
+    "wycheproof",
+    "torture test",
+    "vetores de teste",
+    "criptografia",
+    "rfc",
+    "parser"
+   ],
+   "pages": "311-312",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Reference suites to validate implementations.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Integration tests and test data without sensitive data",
+   "terms_en": [
+    "integration testing",
+    "test data",
+    "least privilege"
+   ],
+   "keywords": [
+    "teste de integracao",
+    "integration test",
+    "dados sensiveis",
+    "espelhar banco",
+    "qa endpoint",
+    "logging de testes"
+   ],
+   "pages": "312-313",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Do not mirror real databases; use test data.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Dynamic analysis: sanitizers (ASan, TSan, MSan, UBSan, LSan)",
+   "terms_en": [
+    "dynamic analysis",
+    "AddressSanitizer",
+    "sanitizers"
+   ],
+   "keywords": [
+    "analise dinamica",
+    "sanitizer",
+    "asan",
+    "shadow memory",
+    "red zone",
+    "use after free",
+    "instrumentacao"
+   ],
+   "pages": "313-316",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Compiler instrumentation detects memory errors; performance cost.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Fuzzing: concepts, benefits and engines",
+   "terms_en": [
+    "fuzzing",
+    "fuzz engine",
+    "fuzz driver",
+    "seed corpus"
+   ],
+   "keywords": [
+    "fuzzing",
+    "fuzzer",
+    "fuzz engine",
+    "driver",
+    "corpus",
+    "dicionario",
+    "libfuzzer",
+    "afl",
+    "honggfuzz",
+    "cobertura"
+   ],
+   "pages": "316-321",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Complements other tests; sanitizers increase detection.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Known-safe functions and Heartbleed via fuzzing",
+   "terms_en": [
+    "known safe",
+    "Heartbleed",
+    "UBSan"
+   ],
+   "keywords": [
+    "known safe",
+    "no_sanitize",
+    "heartbleed",
+    "heap buffer overflow",
+    "assembly"
+   ],
+   "pages": "319-321",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Annotate with care; limits of instrumentation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Writing fuzz drivers (libFuzzer) and the Knusperli example",
+   "terms_en": [
+    "fuzz driver",
+    "LLVMFuzzerTestOneInput",
+    "Knusperli"
+   ],
+   "keywords": [
+    "fuzz driver",
+    "llvmfuzzertestoneinput",
+    "knusperli",
+    "jpeg",
+    "bazel",
+    "hash da entrada",
+    "fuzzeddataprovider"
+   ],
+   "pages": "321-325",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Determinism, speed and variety of parameters.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Continuous fuzzing: ClusterFuzz and OSS-Fuzz",
+   "terms_en": [
+    "continuous fuzzing",
+    "ClusterFuzz",
+    "OSS-Fuzz"
+   ],
+   "keywords": [
+    "fuzzing continuo",
+    "clusterfuzz",
+    "oss-fuzz",
+    "deduplicacao de crashes",
+    "pipeline"
+   ],
+   "pages": "325-326",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Fuzzers built into CI, run and triaged automatically.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Static analysis: tradeoffs and linters (Error Prone, Clang-Tidy)",
+   "terms_en": [
+    "static analysis",
+    "linters",
+    "Error Prone",
+    "Clang-Tidy",
+    "AST"
+   ],
+   "keywords": [
+    "analise estatica",
+    "linter",
+    "error prone",
+    "clang-tidy",
+    "ast",
+    "falso positivo",
+    "indecidivel"
+   ],
+   "pages": "326-332",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Different depths; automatic fixes.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Integrating static analysis into the workflow (Tricorder)",
+   "terms_en": [
+    "Tricorder",
+    "code review",
+    "CI/CD"
+   ],
+   "keywords": [
+    "tricorder",
+    "shipshape",
+    "code review",
+    "taxa de falso positivo",
+    "integracao",
+    "not useful"
+   ],
+   "pages": "332-334",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Feedback in code review with perceived false positives of at most 10%.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Reverse engineering and concolic testing",
+   "terms_en": [
+    "reverse engineering",
+    "Ghidra",
+    "concolic testing",
+    "KLEE"
+   ],
+   "keywords": [
+    "engenharia reversa",
+    "ghidra",
+    "decompilador",
+    "concolic",
+    "klee",
+    "solver"
+   ],
+   "pages": "334-335",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Program analysis beyond testing.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Abstract interpretation and tools (Frama-C, Infer, ASI)",
+   "terms_en": [
+    "abstract interpretation",
+    "Frama-C",
+    "Infer",
+    "ASI"
+   ],
+   "keywords": [
+    "abstract interpretation",
+    "interpretacao abstrata",
+    "frama-c",
+    "infer",
+    "absint",
+    "asi",
+    "cfg"
+   ],
+   "pages": "335-336",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "Deep, slow analysis; run overnight or in differential mode.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Formal methods",
+   "terms_en": [
+    "formal methods",
+    "safety properties",
+    "liveness"
+   ],
+   "keywords": [
+    "metodos formais",
+    "formal methods",
+    "safety",
+    "liveness",
+    "verificacao",
+    "tls"
+   ],
+   "pages": "337",
+   "chapter": "13",
+   "ref": "testando-codigo.md",
+   "summary": "High upfront cost; used in hardware and critical domains.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Software supply chain: concepts and terminology",
+   "terms_en": [
+    "software supply chain",
+    "build",
+    "artifact",
+    "deployment"
+   ],
+   "keywords": [
+    "supply chain",
+    "cadeia de suprimentos",
+    "build",
+    "artefato",
+    "deployment",
+    "implantacao",
+    "vcs",
+    "ci",
+    "cd"
+   ],
+   "pages": "339-341",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Four steps and broad definitions of build, test and deploy.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Supply chain threat model (adversaries and threats)",
+   "terms_en": [
+    "threat model",
+    "insiders",
+    "backdoor",
+    "signing key"
+   ],
+   "keywords": [
+    "modelo de ameacas",
+    "ameacas",
+    "insider",
+    "backdoor",
+    "chave de assinatura",
+    "build local",
+    "configuracao nociva"
+   ],
+   "pages": "342-343",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Three adversaries and eleven example threats.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Require code review (MPA, mandatory and comprehensive)",
+   "terms_en": [
+    "code review",
+    "multi-party authorization",
+    "rubber-stamping"
+   ],
+   "keywords": [
+    "code review",
+    "revisao de codigo",
+    "obrigatorio",
+    "mpa",
+    "rubber stamp",
+    "gerrit",
+    "github",
+    "branch protection",
+    "pipeline",
+    "controle de mudanca",
+    "aprovacao de mudanca",
+    "pull request",
+    "merge request"
+   ],
+   "pages": "343-344",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Mandatory, substantive review; one layer of defense.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Trust automation: scripting, reviewing pipeline config, locking down the system",
+   "terms_en": [
+    "automation",
+    "CI/CD",
+    "lock down"
+   ],
+   "keywords": [
+    "automacao",
+    "ci/cd",
+    "jenkins",
+    "scriptar",
+    "travar",
+    "tampering",
+    "administrador",
+    "pipeline",
+    "pipeline seguro",
+    "ci/cd seguro",
+    "cicd",
+    "controle de mudanca",
+    "mudanca segura"
+   ],
+   "pages": "344-345",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Three minimum requirements to automate safely.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Verify artifacts, not just people",
+   "terms_en": [
+    "verify artifacts",
+    "Binary Authorization",
+    "breakglass"
+   ],
+   "keywords": [
+    "verificar artefatos",
+    "binary authorization",
+    "imagem assinada",
+    "breakglass",
+    "audit log",
+    "pipeline seguro",
+    "assinatura de artefato",
+    "artefato assinado"
+   ],
+   "pages": "345-346",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "The deploy environment validates what gets deployed.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Configuration as code and secrets",
+   "terms_en": [
+    "configuration as code",
+    "secrets",
+    "Cloud KMS"
+   ],
+   "keywords": [
+    "configuracao como codigo",
+    "config as code",
+    "yaml",
+    "kubernetes",
+    "segredos",
+    "senha",
+    "kms",
+    "check-in de segredos",
+    "controle de mudanca",
+    "mudanca de configuracao"
+   ],
+   "pages": "346-347",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Config requires the same rigor as code; never version secrets.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Threats vs mitigations table (14-1) and third-party code",
+   "terms_en": [
+    "threats and mitigations",
+    "third-party code"
+   ],
+   "keywords": [
+    "ameacas e mitigacoes",
+    "tabela 14-1",
+    "terceiros",
+    "open source",
+    "dependencias",
+    "monitorar vulnerabilidades"
+   ],
+   "pages": "347-350",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Mitigations and limitations; review third parties according to trust.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Binary provenance: fields and attack surface",
+   "terms_en": [
+    "binary provenance",
+    "authenticity",
+    "outputs",
+    "inputs"
+   ],
+   "keywords": [
+    "proveniencia",
+    "provenance",
+    "autenticidade",
+    "saidas",
+    "entradas",
+    "jwt",
+    "deb-buildinfo",
+    "versionamento",
+    "proveniencia binaria",
+    "attestation",
+    "proveniencia de build"
+   ],
+   "pages": "350-352",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Recommended fields and care with compiler flags.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Code signing",
+   "terms_en": [
+    "code signing",
+    "Authenticode"
+   ],
+   "keywords": [
+    "code signing",
+    "assinatura de codigo",
+    "authenticode",
+    "signatarios",
+    "chave de assinatura"
+   ],
+   "pages": "352-353",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "List accepted signers and protect the signing environment.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Provenance-based deploy policies and the decision steps",
+   "terms_en": [
+    "deployment policies",
+    "provenance",
+    "in-toto"
+   ],
+   "keywords": [
+    "politica de deploy",
+    "provenance",
+    "in-toto",
+    "regras",
+    "verificar proveniencia",
+    "hash do artefato",
+    "pipeline seguro",
+    "gate de deploy",
+    "politica de admissao"
+   ],
+   "pages": "353-355",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Authenticity, applicability to the artifact and policy rules.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Verifiable builds: requirements and architectures",
+   "terms_en": [
+    "verifiable builds",
+    "trusted build service",
+    "rebuilding service"
+   ],
+   "keywords": [
+    "build verificavel",
+    "verifiable build",
+    "trusted build service",
+    "rebuilder",
+    "reproducao",
+    "requisitos",
+    "pipeline seguro",
+    "build seguro"
+   ],
+   "pages": "355-357",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Three architectures with scale and reproducibility tradeoffs.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Hermetic, reproducible, verifiable",
+   "terms_en": [
+    "hermetic",
+    "reproducible",
+    "verifiable"
+   ],
+   "keywords": [
+    "hermetico",
+    "reprodutivel",
+    "verificavel",
+    "bazel",
+    "package-lock",
+    "buildinfo",
+    "cherry-pick"
+   ],
+   "pages": "357-358",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "The book's own definitions and benefits.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Implementing verifiable builds: untrusted and unauthenticated inputs",
+   "terms_en": [
+    "untrusted inputs",
+    "unauthenticated inputs",
+    "privilege separation",
+    "orchestrator"
+   ],
+   "keywords": [
+    "entradas nao confiaveis",
+    "rce por design",
+    "orquestrador",
+    "separacao de privilegios",
+    "mitm",
+    "http sem tls"
+   ],
+   "pages": "358-360",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Trusted orchestrator without exposing the key to user scripts.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Deployment choke points and post-deploy verification",
+   "terms_en": [
+    "choke point",
+    "Admission Controller",
+    "post-deployment verification"
+   ],
+   "keywords": [
+    "choke point",
+    "admission controller",
+    "kubernetes",
+    "proxy",
+    "verificacao pos deploy",
+    "dry run",
+    "fail open",
+    "pipeline seguro",
+    "gate de deploy"
+   ],
+   "pages": "361-363",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Decide at the point every deploy passes through; log it to verify later.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Practical advice: one step at a time, actionable errors, unambiguous provenance and policy, breakglass",
+   "terms_en": [
+    "practical advice",
+    "actionable error messages",
+    "unambiguous provenance",
+    "breakglass"
+   ],
+   "keywords": [
+    "conselhos praticos",
+    "um passo por vez",
+    "mensagem acionavel",
+    "proveniencia inequivoca",
+    "politica unica",
+    "breakglass de deploy"
+   ],
+   "pages": "364-366",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Operational lessons from deployment at Google.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Table 14-2: advanced mitigations for the remaining threats",
+   "terms_en": [
+    "advanced mitigations",
+    "hermetic builds",
+    "vulnerability scan"
+   ],
+   "keywords": [
+    "tabela 14-2",
+    "versao antiga",
+    "repositorio arbitrario",
+    "script de build",
+    "compilador com backdoor"
+   ],
+   "pages": "366",
+   "chapter": "14",
+   "ref": "implantacao-de-codigo-cicd-e-supply-chain.md",
+   "summary": "Four remaining threats and the mitigation for each.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Temporary files example (step-by-step investigation)",
+   "terms_en": [
+    "temporary files",
+    "Spanner",
+    "dentry cache"
+   ],
+   "keywords": [
+    "arquivos temporarios",
+    "spanner",
+    "dentry",
+    "slabtop",
+    "hipotese",
+    "investigacao"
+   ],
+   "pages": "370-372",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Slow, structured investigation, testing a hypothesis before changing the system.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Debugging techniques: horses and zebras, checksums, logging, baseline",
+   "terms_en": [
+    "horses and zebras",
+    "checksums",
+    "baseline",
+    "normalization of deviance"
+   ],
+   "keywords": [
+    "cavalos zebras",
+    "checksum",
+    "crc",
+    "registro de observacoes",
+    "baseline",
+    "normalizacao do desvio",
+    "o que e normal"
+   ],
+   "pages": "372-377",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Time, written notes, knowing what is normal.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Reproduce, isolate, correlation vs causation, test hypotheses, reread docs, practice",
+   "terms_en": [
+    "reproduce",
+    "isolate",
+    "correlation",
+    "hypotheses",
+    "practice"
+   ],
+   "keywords": [
+    "reproduzir",
+    "isolar",
+    "correlacao",
+    "causalidade",
+    "testar hipoteses",
+    "reler docs",
+    "praticar",
+    "dirt"
+   ],
+   "pages": "377-380",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Systematic debugging method.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "When you are stuck: observability, take a break, clean up, delete, fail closed, access",
+   "terms_en": [
+    "when you're stuck",
+    "improve observability",
+    "delete it",
+    "fail closed"
+   ],
+   "keywords": [
+    "travado",
+    "observabilidade",
+    "pausa",
+    "limpar codigo",
+    "deletar legado",
+    "parar quando algo da errado",
+    "controle de acesso"
+   ],
+   "pages": "380-384",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Improve the debugging process instead of persisting.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Collaborative debugging and Wheel of Misfortune",
+   "terms_en": [
+    "collaborative debugging",
+    "Wheel of Misfortune"
+   ],
+   "keywords": [
+    "debugging colaborativo",
+    "driver",
+    "note taker",
+    "wheel of misfortune",
+    "seguranca psicologica"
+   ],
+   "pages": "384-385",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Teaching debugging in a group.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Security investigation vs debugging and signs of compromise",
+   "terms_en": [
+    "security investigation",
+    "compromise",
+    "indicators"
+   ],
+   "keywords": [
+    "investigacao de seguranca",
+    "comprometimento",
+    "sinais",
+    "logs faltando",
+    "atacante alertado",
+    "quando declarar incidente"
+   ],
+   "pages": "386-387",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Debugging steps can alert the attacker; call specialists.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Immutable and centralized logs",
+   "terms_en": [
+    "immutable logs",
+    "centralized logging"
+   ],
+   "keywords": [
+    "logs imutaveis",
+    "log centralizado",
+    "remoto",
+    "impressora de linha",
+    "apagar rastros"
+   ],
+   "pages": "387-388",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Attackers erase traces; ship logs to a hardened remote server.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Privacy in logs: depth, retention, anonymization, encryption",
+   "terms_en": [
+    "privacy",
+    "retention",
+    "anonymization",
+    "encryption"
+   ],
+   "keywords": [
+    "privacidade",
+    "retencao",
+    "anonimizacao",
+    "pseudonimizacao",
+    "criptografia assimetrica",
+    "200 dias"
+   ],
+   "pages": "388-389",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Decisions with legal and privacy teams.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Which security logs to retain: OS, host agents, applications, cloud, network, DNS, proxy",
+   "terms_en": [
+    "OS logs",
+    "host agents",
+    "cloud logs",
+    "network logging",
+    "DNS logs"
+   ],
+   "keywords": [
+    "logs de so",
+    "auditd",
+    "host agent",
+    "hids",
+    "antivirus",
+    "osquery",
+    "cloud logs",
+    "casb",
+    "nids",
+    "dns",
+    "proxy",
+    "inventario de ativos"
+   ],
+   "pages": "390-393",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Catalog of sources with tradeoffs.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Logging budget and graceful storage degradation",
+   "terms_en": [
+    "budget for logging",
+    "graceful degradation",
+    "warm and cold storage"
+   ],
+   "keywords": [
+    "orcamento de logging",
+    "sumarizacao",
+    "netflow",
+    "sinal ruido",
+    "comprimir",
+    "warm cold",
+    "rotacao de logs"
+   ],
+   "pages": "393-394",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Degrade logging instead of stopping collection.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Robust and secure debugging access (reliability and security)",
+   "terms_en": [
+    "debugging access",
+    "emergency credentials",
+    "impersonation",
+    "metadata"
+   ],
+   "keywords": [
+    "acesso de depuracao",
+    "credenciais de emergencia",
+    "impersonation",
+    "metadados sensiveis",
+    "dados em transito"
+   ],
+   "pages": "395-396",
+   "chapter": "15",
+   "ref": "investigacao-de-sistemas-e-logging.md",
+   "summary": "Debug endpoints are targets; metadata is also sensitive.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Disaster types and response phases (immediate, short term, long term, resumption)",
+   "terms_en": [
+    "disaster",
+    "response phases",
+    "exit criteria"
+   ],
+   "keywords": [
+    "desastre",
+    "crise",
+    "fases",
+    "resposta imediata",
+    "recuperacao",
+    "criterio de saida",
+    "retomada"
+   ],
+   "pages": "399-401",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Seven disaster types; phases with exit criteria.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Disaster risk analysis (mission-essential, matrix)",
+   "terms_en": [
+    "disaster risk analysis",
+    "risk matrix"
+   ],
+   "keywords": [
+    "analise de risco",
+    "matriz de risco",
+    "mission essential",
+    "probabilidade",
+    "impacto",
+    "groupthink"
+   ],
+   "pages": "402",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Classify systems and scenarios; use a standardized matrix.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Building the IR team: models, roles, single points of failure, champion, charter",
+   "terms_en": [
+    "incident response team",
+    "roles",
+    "charter",
+    "champion"
+   ],
+   "keywords": [
+    "equipe de ir",
+    "incident commander",
+    "papeis",
+    "charter",
+    "champion",
+    "ponto unico de falha",
+    "turnos",
+    "terceirizar"
+   ],
+   "pages": "403-405",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Roles, not individuals; delegates in different time zones.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Severity and priority models; operational parameters",
+   "terms_en": [
+    "severity",
+    "priority",
+    "operating parameters",
+    "SLO"
+   ],
+   "keywords": [
+    "severidade",
+    "prioridade",
+    "escala 0-4",
+    "tempo de resposta",
+    "parametros operacionais",
+    "triagem"
+   ],
+   "pages": "405-407",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Fixed severity; dynamic priority.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Response plans and communications (including a compromised system)",
+   "terms_en": [
+    "response plans",
+    "communications",
+    "OpSec"
+   ],
+   "keywords": [
+    "plano de resposta",
+    "comunicacao",
+    "e-mail comprometido",
+    "backup de comunicacao",
+    "reportar incidente",
+    "stakeholders externos"
+   ],
+   "pages": "407-409",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Include backup communication methods.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Playbooks and documentation access during the disaster",
+   "terms_en": [
+    "playbooks",
+    "documentation access"
+   ],
+   "keywords": [
+    "playbook",
+    "documentacao",
+    "atualizar",
+    "need to know",
+    "acessivel"
+   ],
+   "pages": "409",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Procedural, per team, up to date and accessible.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Prestaging: configuring systems, training, processes",
+   "terms_en": [
+    "prestaging",
+    "training",
+    "forensic agents",
+    "air-gapped"
+   ],
+   "keywords": [
+    "prestaging",
+    "agentes forenses",
+    "retencao de logs",
+    "backups",
+    "air gapped",
+    "treinamento",
+    "imag",
+    "escalonar",
+    "janela de 15 minutos"
+   ],
+   "pages": "409-412",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Prepare access, logs, backups and people before the incident.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Testing systems and plans: automation audit and tabletops",
+   "terms_en": [
+    "testing",
+    "audit",
+    "tabletop"
+   ],
+   "keywords": [
+    "testar planos",
+    "auditoria",
+    "tabletop",
+    "believability",
+    "decision points",
+    "outcomes",
+    "wheel of misfortune"
+   ],
+   "pages": "412-415",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Test automation, processes and people at least annually.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Testing in production: fault injection, RH, multicomponent, full failover",
+   "terms_en": [
+    "fault injection",
+    "multicomponent",
+    "failover",
+    "Envoy"
+   ],
+   "keywords": [
+    "fault injection",
+    "envoy",
+    "falha de pessoal",
+    "multicomponente",
+    "failover",
+    "datacenter",
+    "regiao"
+   ],
+   "pages": "415-417",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Levels of testing in production with controlled risks.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Red Team and response evaluation (blameless, Purple Team)",
+   "terms_en": [
+    "Red Team",
+    "Purple Team",
+    "blameless postmortems"
+   ],
+   "keywords": [
+    "red team",
+    "purple team",
+    "postmortem sem culpa",
+    "medir respostas",
+    "feedback loop"
+   ],
+   "pages": "417-418",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "An exercise without implemented lessons is mere entertainment.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Google examples: 2019 earthquake, DiRT breakglass, SegmentSmack/FragmentSmack (ksplice)",
+   "terms_en": [
+    "earthquake test",
+    "DiRT",
+    "SegmentSmack",
+    "FragmentSmack",
+    "ksplice"
+   ],
+   "keywords": [
+    "terremoto",
+    "dirt",
+    "breakglass",
+    "segmentsmack",
+    "fragmentsmack",
+    "ksplice",
+    "kernel"
+   ],
+   "pages": "419-421",
+   "chapter": "16",
+   "ref": "planejamento-de-desastres.md",
+   "summary": "Planning made it possible to mitigate with ksplice during a code freeze.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Is it a crisis or not? Incident triage",
+   "terms_en": [
+    "crisis",
+    "triage",
+    "false positive",
+    "targeted compromise"
+   ],
+   "keywords": [
+    "crise",
+    "triagem",
+    "falso positivo",
+    "comprometimento direcionado",
+    "oportunista",
+    "playbook ou crise",
+    "maturidade"
+   ],
+   "pages": "424-426",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "The same threat has different severity depending on the maturity of defenses.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Compromises vs bugs and CVD",
+   "terms_en": [
+    "compromises versus bugs",
+    "CVD",
+    "vulnerabilities"
+   ],
+   "keywords": [
+    "vulnerabilidade",
+    "bug",
+    "cvd",
+    "divulgacao coordenada",
+    "spectre",
+    "meltdown",
+    "heartbleed",
+    "shellshock"
+   ],
+   "pages": "426-427",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Extreme vulnerabilities are treated as incidents.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "First step: do not panic; investigate before fixing",
+   "terms_en": [
+    "don't panic",
+    "fix first vs investigate first"
+   ],
+   "keywords": [
+    "panico",
+    "calma",
+    "cinco minutos",
+    "investigar antes de consertar",
+    "atacante observa",
+    "diferenca sre seguranca"
+   ],
+   "pages": "428",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "In security, complete the investigation before fixing.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Taking command: declaration, IC, OL and other leads",
+   "terms_en": [
+    "IMAG",
+    "incident commander",
+    "operations lead",
+    "declaration"
+   ],
+   "keywords": [
+    "imag",
+    "ics",
+    "declarar incidente",
+    "incident commander",
+    "ic",
+    "operations lead",
+    "management liaison",
+    "legal lead",
+    "communications lead"
+   ],
+   "pages": "428-430",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Declare explicitly and assign roles explicitly.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Operational security (OpSec): common mistakes and best practices",
+   "terms_en": [
+    "OpSec",
+    "operational security"
+   ],
+   "keywords": [
+    "opsec",
+    "seguranca operacional",
+    "segredo",
+    "erros",
+    "bloquear conta",
+    "logar no servidor comprometido",
+    "comando e controle",
+    "ambiente limpo"
+   ],
+   "pages": "430-432",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Keep the response secret and use clean infrastructure.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "'Helpful' tools that expose the investigation and defanging indicators",
+   "terms_en": [
+    "link expansion",
+    "example[dot]com"
+   ],
+   "keywords": [
+    "link",
+    "expansao automatica",
+    "chat",
+    "defang",
+    "example dot com",
+    "c2",
+    "user agent"
+   ],
+   "pages": "432-433",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Write indicators so that tools do not resolve them.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Trading good OpSec for the greater good (imminent risk, FaceTime)",
+   "terms_en": [
+    "imminent risk",
+    "trading OpSec",
+    "FaceTime"
+   ],
+   "keywords": [
+    "risco iminente",
+    "desligar sistema",
+    "facetime",
+    "apple",
+    "decisao executiva",
+    "shellshock"
+   ],
+   "pages": "433",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Sometimes taking the service down is the best protection.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Investigative process: forensics, timeline, pivot points, sharding",
+   "terms_en": [
+    "digital forensics",
+    "forensic timeline",
+    "pivot points",
+    "sharding"
+   ],
+   "keywords": [
+    "forense",
+    "imagem forense",
+    "imagem de memoria",
+    "file carving",
+    "timeline",
+    "pivot point",
+    "reversing",
+    "hunting",
+    "sharding",
+    "quando parar"
+   ],
+   "pages": "434-437",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Three tracks and a short feedback loop.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Keeping control: parallelizing, the IC loop and OODA",
+   "terms_en": [
+    "parallelizing",
+    "IC loop",
+    "OODA"
+   ],
+   "keywords": [
+    "paralelizar",
+    "loop do ic",
+    "ooda",
+    "remediation lead",
+    "checklist do ic"
+   ],
+   "pages": "437-438",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "The IC does not operate; checks leads in a loop.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Handovers: 12-hour shifts, follow-the-sun, agenda",
+   "terms_en": [
+    "handover",
+    "follow-the-sun",
+    "12 hours",
+    "hero mode"
+   ],
+   "keywords": [
+    "handover",
+    "passagem",
+    "12 horas",
+    "follow the sun",
+    "hero mode",
+    "fadiga",
+    "agenda de handover"
+   ],
+   "pages": "438-441",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Limit shifts and prepare the handover formally.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Response team morale",
+   "terms_en": [
+    "morale",
+    "burnout"
+   ],
+   "keywords": [
+    "moral",
+    "comer",
+    "dormir",
+    "desestressar",
+    "burnout",
+    "liderar pelo exemplo"
+   ],
+   "pages": "441-442",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Five practices to sustain the team.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Communications: misunderstandings, hedging, meetings and agendas",
+   "terms_en": [
+    "communications",
+    "hedging",
+    "meetings",
+    "agenda"
+   ],
+   "keywords": [
+    "comunicacao",
+    "mal entendido",
+    "hedging",
+    "reunioes",
+    "agenda",
+    "anotador",
+    "sync",
+    "kickoff"
+   ],
+   "pages": "442-445",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Be explicit; limit attendees; use an agenda and a note taker.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Level of detail per audience and the communications lead",
+   "terms_en": [
+    "levels of detail",
+    "communications lead",
+    "gap-filling"
+   ],
+   "keywords": [
+    "nivel de detalhe",
+    "executivos",
+    "clientes",
+    "imprensa",
+    "rumores",
+    "communications lead",
+    "gap filling"
+   ],
+   "pages": "445-446",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Each audience gets a level of detail; the CL avoids conflicting statements.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Complete example: unknown service account (triage, handover, remediation, closure)",
+   "terms_en": [
+    "service account",
+    "handover",
+    "closure"
+   ],
+   "keywords": [
+    "exemplo",
+    "service account",
+    "phishing",
+    "handover",
+    "londres",
+    "mineracao",
+    "encerramento",
+    "outbrief"
+   ],
+   "pages": "446-450",
+   "chapter": "17",
+   "ref": "gestao-de-crise-e-resposta-a-incidentes.md",
+   "summary": "Illustrates all the pieces of the response.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Recovering from security incidents: the attacker makes the difference",
+   "terms_en": [
+    "recovery",
+    "attacker",
+    "persistent"
+   ],
+   "keywords": [
+    "recuperacao",
+    "atacante persistente",
+    "quem recupera",
+    "dinamica",
+    "ambiguidade"
+   ],
+   "pages": "453-454",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Recovering with the attacker still present requires integration with the investigation.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Recovery logistics: teams, RL, information management, timeline",
+   "terms_en": [
+    "recovery logistics",
+    "remediation lead",
+    "information management"
+   ],
+   "keywords": [
+    "logistica",
+    "equipe de recuperacao",
+    "remediation lead",
+    "rl",
+    "informacao",
+    "air gapped",
+    "notas",
+    "linha do tempo"
+   ],
+   "pages": "454-457",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Different investigators and recoverers; documentation out of the attacker's reach.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Planning recovery: scope and list of affected assets",
+   "terms_en": [
+    "scoping the recovery",
+    "mitigation doc",
+    "TTPs"
+   ],
+   "keywords": [
+    "escopo",
+    "ativos afetados",
+    "mitigation doc",
+    "curto prazo",
+    "longo prazo",
+    "ttp"
+   ],
+   "pages": "457-458",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "List of systems, networks, data and TTPs; short, strategic actions.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Considerations: attacker reaction, compromised tools, variants, reintroduction, mitigation",
+   "terms_en": [
+    "attacker response",
+    "compromised tooling",
+    "variants",
+    "reintroduce attack vectors"
+   ],
+   "keywords": [
+    "reacao do atacante",
+    "ejetar",
+    "ferramentas comprometidas",
+    "variantes",
+    "golden image",
+    "backup contaminado",
+    "divida tecnica"
+   ],
+   "pages": "459-464",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Five questions before deciding on recovery.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Recovery checklists (template and color coding)",
+   "terms_en": [
+    "recovery checklist",
+    "hands off keyboards"
+   ],
+   "keywords": [
+    "checklist de recuperacao",
+    "template",
+    "hands off keyboards",
+    "verde laranja vermelho azul",
+    "tarefa por habilidade"
+   ],
+   "pages": "464-465",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Per-team tasks with commands, rollback and color-coded status.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Quarantine and asset isolation (BeyondCorp)",
+   "terms_en": [
+    "quarantine",
+    "isolation",
+    "BeyondCorp"
+   ],
+   "keywords": [
+    "quarentena",
+    "isolamento",
+    "beyondcorp",
+    "movimento lateral",
+    "adesivos",
+    "mac address",
+    "divida tecnica"
+   ],
+   "pages": "465-466",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Isolate, but do not forget the compromised assets.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "System rebuild and software upgrades",
+   "terms_en": [
+    "system rebuilds",
+    "software upgrades"
+   ],
+   "keywords": [
+    "rebuild",
+    "reinstalar",
+    "imagem limpa",
+    "rootkit uefi",
+    "chromebook",
+    "rapid",
+    "bazel",
+    "chef",
+    "helm"
+   ],
+   "pages": "466-467",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Usually reinstall from scratch with known-good images.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Data sanitization and provenance",
+   "terms_en": [
+    "data sanitization",
+    "provenance",
+    "checksums"
+   ],
+   "keywords": [
+    "sanitizacao",
+    "checksum",
+    "proveniencia",
+    "glibc",
+    "dados adulterados",
+    "restore parcial"
+   ],
+   "pages": "467-468",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Compare with known-good copies; mark what was compromised.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Recovery data: backups, inflection point, restore tools",
+   "terms_en": [
+    "recovery data",
+    "backups",
+    "inflection point"
+   ],
+   "keywords": [
+    "dados de recuperacao",
+    "backup",
+    "ponto de inflexao",
+    "parametros de ferramentas",
+    "restore in place",
+    "integridade"
+   ],
+   "pages": "468-469",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Do not change tool defaults without testing in production; use metrics to limit how many backups to skip.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Credential and secret rotation",
+   "terms_en": [
+    "credential rotation",
+    "secret rotation",
+    "pass-the-hash",
+    "2FA"
+   ],
+   "keywords": [
+    "rotacao de credenciais",
+    "segredos",
+    "pass the hash",
+    "chaves ssl",
+    "2fa",
+    "sso",
+    "historico de senhas",
+    "scrypt",
+    "argon2"
+   ],
+   "pages": "469-471",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Order: admins, compromised, sensitive; 2FA as a quick win.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "After recovery: security postmortem and action items",
+   "terms_en": [
+    "postmortem",
+    "action items",
+    "low-hanging fruit"
+   ],
+   "keywords": [
+    "postmortem",
+    "itens de acao",
+    "curto prazo",
+    "longo prazo",
+    "perguntas do postmortem",
+    "operation aurora"
+   ],
+   "pages": "471-473",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Nine security questions; items with owners.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Example: compromised cloud instances (checklist)",
+   "terms_en": [
+    "compromised cloud instances"
+   ],
+   "keywords": [
+    "instancias de nuvem",
+    "vm comprometida",
+    "scan de vulnerabilidades",
+    "patch",
+    "novas instancias",
+    "desabilitar"
+   ],
+   "pages": "474-475",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Four tasks ordered by team.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Example: large-scale phishing (checklist)",
+   "terms_en": [
+    "large-scale phishing"
+   ],
+   "keywords": [
+    "phishing em larga escala",
+    "2fa",
+    "bloquear contas de e-mail",
+    "reset de senhas",
+    "helpdesk",
+    "vpn"
+   ],
+   "pages": "475-476",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "Eject quickly without opening access to other systems.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Example: targeted attack with complex recovery (parallel teams)",
+   "terms_en": [
+    "targeted attack",
+    "parallelize recovery"
+   ],
+   "keywords": [
+    "ataque direcionado",
+    "recuperacao complexa",
+    "equipe de email",
+    "equipe de codigo",
+    "chaves ssl",
+    "dados de clientes",
+    "reconciliacao"
+   ],
+   "pages": "477-478",
+   "chapter": "18",
+   "ref": "recuperacao-e-pos-incidente.md",
+   "summary": "One checklist per problem and parallel teams.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Evolution of the Chrome security team (v0.1 to v3.0)",
+   "terms_en": [
+    "Chrome security team",
+    "Team v0.1",
+    "VRP"
+   ],
+   "keywords": [
+    "chrome",
+    "equipe de seguranca",
+    "evolucao",
+    "vrp",
+    "webkit",
+    "equipe hibrida",
+    "missao"
+   ],
+   "pages": "481-483",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Four stages up to a hybrid team with mission and principles.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Chrome team focus areas and hiring",
+   "terms_en": [
+    "focus areas",
+    "hiring",
+    "diversity"
+   ],
+   "keywords": [
+    "areas de foco",
+    "security reviews",
+    "exploit mitigation",
+    "usable security",
+    "web platform security",
+    "contratacao",
+    "diversidade"
+   ],
+   "pages": "483-484",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Five perennial areas and diverse hiring.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Security is the team's responsibility (safe path, fuzzing, safe libraries)",
+   "terms_en": [
+    "security is a team responsibility",
+    "fuzzing contests",
+    "safe base libraries"
+   ],
+   "keywords": [
+    "responsabilidade da equipe",
+    "caminho seguro",
+    "fuzzing",
+    "bibliotecas base",
+    "bonus de pares",
+    "nos contra eles"
+   ],
+   "pages": "484-485",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Security built into engineering habits.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Usable security and helping users browse safely",
+   "terms_en": [
+    "usable security",
+    "safe defaults"
+   ],
+   "keywords": [
+    "seguranca usavel",
+    "phishing",
+    "avisos",
+    "atualizacao transparente",
+    "defaults seguros",
+    "ux"
+   ],
+   "pages": "486",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Security nearly invisible to the user.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Speed: automatic updates and fixes in under 24 hours",
+   "terms_en": [
+    "speed",
+    "automatic updates",
+    "TPM",
+    "Pwn2Own"
+   ],
+   "keywords": [
+    "velocidade",
+    "atualizacoes automaticas",
+    "tpm",
+    "pwn2own",
+    "pwnium",
+    "24 horas"
+   ],
+   "pages": "486-487",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Fast updating as a security feature.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Defense in depth and Site Isolation",
+   "terms_en": [
+    "defense in depth",
+    "Site Isolation",
+    "sandboxing"
+   ],
+   "keywords": [
+    "defesa em profundidade",
+    "site isolation",
+    "sandbox",
+    "multiprocesso",
+    "execucao especulativa",
+    "estimativa errada"
+   ],
+   "pages": "487-488",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "A project of five times the estimated time, defended through communication with leadership.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Transparency and community engagement",
+   "terms_en": [
+    "transparency",
+    "community"
+   ],
+   "keywords": [
+    "transparencia",
+    "correcoes silenciosas",
+    "notas de versao",
+    "comunidade",
+    "vrp",
+    "https"
+   ],
+   "pages": "488",
+   "chapter": "19",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Do not bury vulnerabilities; list fixes in release notes.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Security and reliability are everyone's responsibility (not just specialists)",
+   "terms_en": [
+    "everyone is responsible",
+    "specialists"
+   ],
+   "keywords": [
+    "responsabilidade de todos",
+    "mito dos especialistas",
+    "equipe isolada",
+    "sisifica",
+    "analogia do carro"
+   ],
+   "pages": "491-492",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "An isolated team without power to change other teams repeats the same failures.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Role of specialists: design review, audits, independent testing and risk assessment",
+   "terms_en": [
+    "role of specialists",
+    "security design review",
+    "risk evaluation"
+   ],
+   "keywords": [
+    "especialistas",
+    "design review",
+    "auditoria",
+    "teste independente",
+    "avaliacao de risco",
+    "lancamento"
+   ],
+   "pages": "492-494",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Specialists integrate into the lifecycle; implement specialized technologies and create practices and training.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Understanding security expertise (generalist vs specialist; Google table)",
+   "terms_en": [
+    "security expertise",
+    "generalist",
+    "specialization"
+   ],
+   "keywords": [
+    "expertise",
+    "generalista",
+    "especialista",
+    "contratar",
+    "marcos do google",
+    "tabela 20-1"
+   ],
+   "pages": "494-495",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Specialization grows with the organization.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Certifications and academia when hiring for security",
+   "terms_en": [
+    "certifications",
+    "academia"
+   ],
+   "keywords": [
+    "certificacoes",
+    "academia",
+    "contratacao",
+    "iniciante",
+    "phd"
+   ],
+   "pages": "495-496",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Assess experience, certification and interest together.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "When to start a security program and how to balance cost",
+   "terms_en": [
+    "when to start",
+    "cost of security",
+    "triggers"
+   ],
+   "keywords": [
+    "quando comecar",
+    "gatilhos",
+    "dados pessoais",
+    "regulacao",
+    "contrato",
+    "custo",
+    "equilibrio",
+    "firewalls"
+   ],
+   "pages": "496-498",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Start before any trigger; spread the cost across teams.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "Embedding specialists: central organization, security champions, decentralized teams",
+   "terms_en": [
+    "security champion",
+    "central security team",
+    "embedded"
+   ],
+   "keywords": [
+    "embutir",
+    "security champion",
+    "equipe central",
+    "ciso",
+    "independencia",
+    "android",
+    "chrome",
+    "reporte"
+   ],
+   "pages": "498-500",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Hybrid of central and champions; independence to raise issues.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Smart System for Intake (dynamic questionnaire)",
+   "terms_en": [
+    "Smart System for Intake"
+   ],
+   "keywords": [
+    "intake",
+    "tickets",
+    "questionario dinamico",
+    "autoatendimento",
+    "other",
+    "fila de seguranca"
+   ],
+   "pages": "500-501",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Automates security consulting and improves ticket quality.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Blue, Red and Purple Teams; Red is not a pentest",
+   "terms_en": [
+    "Blue Team",
+    "Red Team",
+    "Purple Team",
+    "penetration testing"
+   ],
+   "keywords": [
+    "blue team",
+    "red team",
+    "purple team",
+    "pentest",
+    "vulnerability scanning",
+    "limites",
+    "protocolo de desescalada"
+   ],
+   "pages": "501-504",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Red is goal-oriented; define limits and a de-escalation protocol.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "External researchers and VRP (bug bounty): steps and challenges",
+   "terms_en": [
+    "VRP",
+    "bug bounty",
+    "external researchers"
+   ],
+   "keywords": [
+    "vrp",
+    "bug bounty",
+    "pesquisadores externos",
+    "passos",
+    "40 horas",
+    "divulgacao",
+    "pagamentos",
+    "idioma"
+   ],
+   "pages": "504-506",
+   "chapter": "20",
+   "ref": "estudo-de-caso-chrome-e-papeis-e-responsabilidades.md",
+   "summary": "Cover the basics first; intake process and payments.",
+   "label": "[from source] [DATED]"
+  },
+  {
+   "topic": "The Big Deal scenario and values of a healthy culture",
+   "terms_en": [
+    "culture",
+    "blameless postmortems",
+    "transparency"
+   ],
+   "keywords": [
+    "cultura",
+    "big deal",
+    "postmortem sem culpa",
+    "transparencia",
+    "100% confiabilidade",
+    "hackeado duas vezes"
+   ],
+   "pages": "507-509",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "A healthy culture reports incidents and redesigns processes without blame.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Security and reliability culture by default",
+   "terms_en": [
+    "by default",
+    "secure by default"
+   ],
+   "keywords": [
+    "por padrao",
+    "by default",
+    "analogia do carro",
+    "retrofit",
+    "automacao",
+    "frameworks"
+   ],
+   "pages": "509-510",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Integrating from design reduces friction and mistakes.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Review culture: document, educate reviewers, everyone participates, reduce friction",
+   "terms_en": [
+    "culture of review",
+    "MPA",
+    "lightweight review"
+   ],
+   "keywords": [
+    "cultura de review",
+    "revisao",
+    "mpa",
+    "revisores",
+    "aprendiz",
+    "review leve",
+    "atrito",
+    "contexto do revisor"
+   ],
+   "pages": "510-511",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "No one is exempt; lightweight reviews for small changes.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Awareness culture: education (talks, games, documentation, campaigns, just-in-time)",
+   "terms_en": [
+    "culture of awareness",
+    "awareness campaigns",
+    "just-in-time"
+   ],
+   "keywords": [
+    "consciencia",
+    "educacao",
+    "treinamento",
+    "jogo xss",
+    "testing on the toilet",
+    "notificacoes just in time",
+    "nudging"
+   ],
+   "pages": "512-515",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Interactive learning retains more than passive.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Culture of yes and the balance between accountability and risk",
+   "terms_en": [
+    "culture of yes",
+    "risk taking",
+    "error budgets"
+   ],
+   "keywords": [
+    "cultura do sim",
+    "cultura do nao",
+    "assumir risco",
+    "responsabilizacao",
+    "error budget",
+    "app engine"
+   ],
+   "pages": "515-516",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Layered defenses remove the weight of being the only line of defense.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Culture of inevitability and the Columbia report",
+   "terms_en": [
+    "culture of inevitably",
+    "after-action reports",
+    "Columbia"
+   ],
+   "keywords": [
+    "inevitabilidade",
+    "falha inevitavel",
+    "simulacoes",
+    "columbia",
+    "nasa",
+    "after action"
+   ],
+   "pages": "516-517",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Study failures, including peers', without blame.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Culture of sustainability (and exceptional circumstances)",
+   "terms_en": [
+    "culture of sustainability",
+    "all hands on deck"
+   ],
+   "keywords": [
+    "sustentabilidade",
+    "burnout",
+    "follow the sun",
+    "toil",
+    "project oxygen",
+    "all hands",
+    "temporario",
+    "grupo de prontidao"
+   ],
+   "pages": "517-519",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Avoid heroics; clarify what is temporary.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Aligning incentives and reducing fear (canary, dogfood, trusted testers, opt-in, progressive stringency, breakglass)",
+   "terms_en": [
+    "align incentives",
+    "dogfood",
+    "trusted testers",
+    "progressive stringency"
+   ],
+   "keywords": [
+    "incentivos",
+    "carreira",
+    "dogfood",
+    "trusted testers",
+    "opt in",
+    "rigor progressivo",
+    "safety net",
+    "breakglass"
+   ],
+   "pages": "520-522",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Strategies to introduce controls without paralyzing.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Increasing productivity and usability (transparency, usability, self-service)",
+   "terms_en": [
+    "usability",
+    "self-service",
+    "Upvote",
+    "security keys"
+   ],
+   "keywords": [
+    "usabilidade",
+    "produtividade",
+    "funcionalidade transparente",
+    "security keys",
+    "autoatendimento",
+    "upvote",
+    "allow list"
+   ],
+   "pages": "522-524",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Controls that are easier than what they replace win adoption.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Overcommunicating and building empathy",
+   "terms_en": [
+    "overcommunicate",
+    "empathy",
+    "job shadowing"
+   ],
+   "keywords": [
+    "comunicar",
+    "documentar decisoes",
+    "feedback",
+    "dashboards",
+    "atualizacoes",
+    "empatia",
+    "job swapping",
+    "mission control",
+    "hacker camp",
+    "kudos"
+   ],
+   "pages": "524-526",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Documented decisions and exchange programs between teams.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Convincing leadership: decision process, building the case, choosing battles, escalating",
+   "terms_en": [
+    "convincing leadership",
+    "build a case",
+    "escalation"
+   ],
+   "keywords": [
+    "lideranca",
+    "decisor",
+    "construir o caso",
+    "dados",
+    "aliados",
+    "zeitgeist",
+    "escolher batalhas",
+    "escalonamento"
+   ],
+   "pages": "526-530",
+   "chapter": "21",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Understand who decides and their pressures; data and allies.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Preface: purpose, audience and how to read the book",
+   "terms_en": [
+    "preface",
+    "audience",
+    "how to read"
+   ],
+   "keywords": [
+    "prefacio",
+    "publico",
+    "como ler",
+    "cookbook",
+    "cultura",
+    "deep dive",
+    "jacare",
+    "sistemas"
+   ],
+   "pages": "27-30",
+   "chapter": "00",
+   "ref": "intersecao-seguranca-e-confiabilidade.md",
+   "summary": "Not a cookbook; broad audience; boxed summary per chapter.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Book conclusion: security and reliability as inherent properties and everyone's responsibility",
+   "terms_en": [
+    "conclusion",
+    "DevSecOps",
+    "inherent properties"
+   ],
+   "keywords": [
+    "conclusao",
+    "devsecops",
+    "propriedades inerentes",
+    "responsabilidade de todos",
+    "quarta revolucao industrial"
+   ],
+   "pages": "533-534",
+   "chapter": "22",
+   "ref": "cultura-de-seguranca-e-confiabilidade.md",
+   "summary": "Significant overlap between the disciplines; invest in teams and incentives.",
+   "label": "[from source]"
+  },
+  {
+   "topic": "Appendix A: disaster risk assessment matrix (probability x impact)",
+   "terms_en": [
+    "risk assessment matrix",
+    "probability",
+    "impact"
+   ],
+   "keywords": [
+    "matriz de risco",
+    "apendice a",
+    "probabilidade",
+    "impacto",
+    "ranking",
+    "terremoto",
+    "tabela a-1",
+    "risco de desastre"
+   ],
+   "pages": "535-536",
+   "chapter": "22",
+   "ref": "apendice-matriz-de-risco-de-desastres.md",
+   "summary": "Scales 0.0 to 1.0 multiplied; environmental, infrastructure and security themes.",
+   "label": "[from source]"
+  }
+ ],
+ "gaps_globais": [
+  "SLSA",
+  "Sigstore",
+  "cosign",
+  "SBOM",
+  "CycloneDX",
+  "SPDX",
+  "Log4Shell",
+  "Log4j",
+  "SolarWinds",
+  "Codecov",
+  "STRIDE",
+  "DREAD",
+  "PASTA",
+  "attack tree",
+  "ChatGPT",
+  "LLM",
+  "large language model",
+  "GitOps",
+  "Argo",
+  "Tekton",
+  "GitHub Actions",
+  "Dependabot",
+  "Renovate",
+  "typosquatting",
+  "dependency confusion",
+  "D3FEND",
+  "NIST CSF",
+  "ISO 27001",
+  "SOC 2",
+  "OCTAVE",
+  "WebAuthn",
+  "passkey",
+  "passkeys",
+  "Rust",
+  "WebAssembly",
+  "Firecracker",
+  "gVisor",
+  "Falco",
+  "eBPF",
+  "OpenTelemetry",
+  "Splunk",
+  "Datadog",
+  "Prometheus",
+  "SIEM",
+  "SOAR",
+  "EDR",
+  "XDR",
+  "PagerDuty",
+  "Okta",
+  "NIS2",
+  "DORA",
+  "LGPD",
+  "CCPA",
+  "shift left",
+  "CVSS",
+  "EPSS",
+  "Semgrep",
+  "CodeQL",
+  "Snyk",
+  "SonarQube",
+  "Rapid Reset",
+  "Mirai",
+  "HackerOne",
+  "Bugcrowd",
+  "RACI",
+  "BSIMM",
+  "SAMM",
+  "Westrum",
+  "Kerberoasting",
+  "Golden Ticket",
+  "kpatch",
+  "livepatch",
+  "token bucket",
+  "circuit breaker",
+  "bulkhead",
+  "Hystrix",
+  "mTLS",
+  "double extortion",
+  "cyber insurance",
+  "chain of custody",
+  "PICERL",
+  "ISO 27035",
+  "CSIRT",
+  "Zero Trust Architecture",
+  "secure boot",
+  "TUF",
+  "Uptane",
+  "Notary",
+  "workload identity federation",
+  "KEV"
+ ],
+ "encaminhar": [
+  {
+   "termos": [
+    "slo",
+    "sli",
+    "sla",
+    "error budget",
+    "orcamento de erro",
+    "toil",
+    "on-call",
+    "oncall",
+    "monitoramento",
+    "golden signals",
+    "sre"
+   ],
+   "agente": "sre-practices-expert",
+   "nota": "SRE principles (SLO, error budget, toil, monitoring, on-call) are not taught in the BSRS, which cites them and refers to the SRE book and SRE workbook.",
+   "citas": "BSRS p.44 (error budget), p.81 (SLOs), p.91 (error budget), p.406 (SLOs de IR), p.515-516 (error budgets)"
+  },
+  {
+   "termos": [
+    "opentelemetry",
+    "tracing",
+    "dapper",
+    "zipkin",
+    "observabilidade",
+    "observability"
+   ],
+   "agente": "observability-opentelemetry-expert (se disponível)",
+   "nota": "The BSRS treats observability only as support for debugging and investigation (Ch.15).",
+   "citas": "BSRS p.379, 381-382"
+  },
+  {
+   "termos": [
+    "docker",
+    "kubernetes",
+    "container",
+    "containers"
+   ],
+   "agente": "containers-docker-kubernetes-expert (se disponível)",
+   "nota": "The BSRS treats containers as a change and patch strategy (Ch.7), immutability and Admission Controller (Ch.14), without a tutorial.",
+   "citas": "BSRS p.160-161, 361-362"
+  }
+ ]
+}

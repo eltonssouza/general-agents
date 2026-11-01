@@ -1,0 +1,17 @@
+{
+  "name": "csharp-expert",
+  "version": "2.0.0",
+  "description": "C# expert based on the C# Yellow Book (Rob Miles, ed. 8.1, 2019) and the documents The history of C#, What's new in C# 12 and What's new in C# 13. Separates [from source] from [inference], [extrapolation] and [DATED]; states what the sources do not cover (boxing, using/Dispose, lock, throw;, records, nullable etc.). Includes topic and version lookup, a code checklist and stack trace triage.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Platform"
+  },
+  "keywords": [
+    "csharp",
+    "dotnet",
+    "yellow-book",
+    "csharp-history",
+    "csharp-12",
+    "csharp-13"
+  ]
+}

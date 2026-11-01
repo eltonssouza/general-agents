@@ -1,0 +1,47 @@
+# 02. Psychology, deception, usability and passwords (Ch. 3)
+
+Convention: "SE3 p.N" = PDF page; printed = PDF − 47 (ch. 3). Reading: ch. 3 in full. Password/2FA statistics and standards are from 2020: `[DATED]` where indicated.
+
+## 1. Why psychology matters
+- `[from source]` Many real attacks exploit psychology as much as technology; online frauds are both easier and harder to stop than physical ones because online protections are less easy to use and less hard to forge (SE3 p.110). As designers close technical attacks, manipulating users and operators becomes more attractive (SE3 p.111).
+- `[from source]` Ideal technology: good use should be easier than bad use (SE3 p.111). Loss of physical/human context in formal communications makes forgery easier (SE3 p.111).
+
+## 2. Human error and design (SE3 p.113-115)
+- Three categories: *slips/lapses* (skill level; e.g. capture error, post-completion error — card forgotten in an ATM that returns the money before the card; typosquatting), rule *mistakes* (following the wrong rule; e.g. "https = safe", a URL starting with the bank's name) and cognitive misconceptions (SE3 p.113).
+- Design rule: dangerous actions (installing software) should require sequences different from routine ones (SE3 p.113). Attackers exploit predictable errors and perverse affordances, break workflows, and exploit the gap between the user's mental model and the real logic; do a *cognitive walkthrough* focused on attack points (SE3 p.115).
+- Programmers are users too: security and access-control APIs are hard; copied code propagates errors (SE3 p.114). The book returns to this in the summary: make things easier for programmers (crypto APIs with insecure defaults, the C language) (SE3 p.163).
+
+## 3. Social psychology and deception (SE3 p.117-131)
+- Authority and conformity (Asch: 29% resisted; Milgram: >60% obey; the "Officer Scott" case and damages against employers who do not train staff) (SE3 p.118-119). Bystander effect/diffusion of responsibility (85% vs 31%; but in 9 of 10 filmed conflicts someone intervenes) (SE3 p.119).
+- Deception: Machiavellian hypothesis, theory of mind, self-deception, minimization; **Fraud triangle** (motive, opportunity, rationalization) (SE3 p.120-123). Example countermeasure: the NCA bought ads for people searching for "web stresser" (£3,000 Jan-Jun/2018) and suppressed growth in demand for DDoS-for-hire in the UK (SE3 p.123).
+- Behavioral economics: bounded rationality, prospect theory (loss aversion: "your account has been frozen"), anchoring, availability (SE3 p.123-124); risk perception (SE3 p.124-125); **present bias**: reminders cut the rate of ignoring updates from ~90% to ~34%; best design = updates so painless that they can be (almost) mandatory (SE3 p.125); defaults and nudges, control paradox (SE3 p.126); "teaching users to parse URLs is a losing war; safe defaults would be better" (SE3 p.127); cognitive overload makes customers of a "busy" site more vulnerable to phishing (SE3 p.127-128); cognitive dissonance ("feel the hustle") (SE3 p.128); *risk thermostat* → test interventions with ecological validity (SE3 p.128).
+- **Scam principles** (Stajano-Wilson): distraction, social compliance, herd, dishonesty, kindness, need and greed, time pressure (SE3 p.130); Cialdini: reciprocity, consistency, social proof, liking, authority, scarcity (SE3 p.129-130). Dark patterns: a crawl of 11K sites found 1,818 instances (SE3 p.131).
+- **Social engineering:** pretexting (HP 2006); 2007 IRS audit: 62 of 102 employees changed their password at the auditor's request (SE3 p.132-133); phishing simulations against employees have lost support since the mid-2010s because they cause distress without changing behavior much (SE3 p.133).
+- **Phishing:** "the easiest way to use the system should be the most secure" (SE3 p.133); Greening 1996 study: 138 of 336 students returned a valid password (SE3 p.133-134); economics of mass vs targeted phishing (SE3 p.134-135).
+- **Opsec:** rules only work with training, explanation and *social embedding* (callback to a number on the internal list; showing your badge to whoever holds the door) (SE3 p.135-136); *compliance budget*: design so that the data simply cannot be disclosed (SE3 p.136).
+
+## 4. Passwords (SE3 p.137-163)
+**Context.** `[from source]` Most of the passwords requested exist for marketing (SE3 p.137-138). Password system of a large service: logon, recovery, checking protocol, synchronization, intrusion detection and SSO (SE3 p.138).
+
+**Recovery.** `[from source]` Security questions are weak (Palin 2008; Google study: 19.7% success on "favorite food", 37% give wrong answers, 16% public) (SE3 p.139-140); email recovery is only as strong as the email; for important accounts use a second factor. Google data (SMS/app): SMS blocks 100% of mass guessing bots, 96% of mass phishing and 76% of targeted attacks; app: 99% and 90% (SE3 p.140) `[DATED]`. "The system is only as strong as its weakest fallback" (SE3 p.141). Also design authentication of data-subject requests (Pavur experiment: ~1/4 accepted email/phone) (SE3 p.161).
+
+**Password choice and training.** `[from source]` Three concerns: correct entry, memorization, not disclosing (SE3 p.141). In an experiment, ~30% of the control group had a password guessable by "crack" versus ~10% of those who used a mnemonic phrase or a random one; ~1/3 of users do not follow instructions (SE3 p.144-145). Use a 100,000-entry bad-password list (GCHQ) instead of composition rules (SE3 p.145). Mother's maiden name is a design error (SE3 p.145-146).
+- **Forced periodic change is a persistent error**: >40% of passwords can be guessed from the previous one; NIST backed off in 2017 (SP 800-63-3: long phrases, change only on compromise); PCI still dictates quarterly changes `[DATED]` (SE3 p.146-147).
+- Passphrases: users choose common bigrams, diminishing returns from 3 to 4 words; EFF: list of 7,776 words (6^5), six words ≈ 77 bits (SE3 p.147).
+
+**Operational.** `[from source]` Default passwords not reset (Mirai) (SE3 p.147); banks train customers to act insecurely (links in email, calls asking for data) (SE3 p.148-149); "blame and train" does not work; "the only real fix is to design for secure usability" (SE3 p.150). Specific, concrete warnings work better; ~35%→~50% compliance with simplified text and prominent secure defaults; for most people, block at the firewall/browser (SE3 p.150).
+
+**Taxonomy of attacks on password systems.** `[from source]` Single target; any account of a target; any account on a system; any account on any system; using one breach to penetrate another; denial of service (SE3 p.151-152).
+**Lockout vs throttling vs monitoring** `[from source]`: locking an online account opens up DoS; throttling is preferable; penalize guesses of weak passwords, be more aggressive with users of weak passwords, do not punish a client/IP that repeats the same wrong password (SE3 p.152). In global systems, assume the attackers are already legitimate users (SE3 p.152); passwords between subsystems and in scripts are a problem ("changeit") (SE3 p.153).
+
+**Entry and storage.** `[from source]` Trusted path and fake terminals; skimmers (SE3 p.154); TENEX timing attack (from A^N/2 to A·N/2 attempts) (SE3 p.154); attempt counters defeated by power-channel analysis and by flash cloning (iPhone) (SE3 p.155). Store with a **random salt + slow, strong one-way function; keep salt and hash** (SE3 p.156); failed-login logs contain passwords (SE3 p.155-156); honeypots/password canaries (SE3 p.156). Kerberos and TLS do not protect weak passwords in every scenario; SAE/WPA3 was designed for this; OAuth and consent phishing (SE3 p.156-157).
+
+**Absolute limits (calculation).** `[from source]` With L = maximum password lifetime, R = attempt rate and S = password space, the probability of guessing within the password's life is **P = L·R/S** (DoD guideline) (SE3 p.157). But the attacker may want *any* account: with 1 million passwords and 1 million users and an alarm after 3 errors per account, one attempt per account is enough — this requires global rate control (SE3 p.157-158). Examples: Unix with 8 characters = 96^8 ≈ 2^52; template CVCNCVCN case-insensitive ≈ 2^-29 per attempt; at 100 attempts/s ≈ 5 million seconds (~2 months) (SE3 p.158). Use `python -I scripts/se3_calc.py dod-password` and `entropy`.
+
+**Password managers.** `[from source]` Pragmatic; risks (forgotten master, total compromise, master is not default); banks that disable autocomplete may worsen security; plan for backup/recovery/death (SE3 p.158-159).
+**Ending passwords?** `[from source]` Bonneau's criteria (resistance to theft, observation, guessing, malware, leakage from other verifiers, phishing; usability; cost); most schemes with net benefit are variants of SSO; physical tokens have high security; passwords remain the fragile foundation; trust on first use (SE3 p.160-161).
+**CAPTCHA.** `[from source]` Solved by humans at ~US$0.50/1000 (2011); reCAPTCHA; poor accessibility (SE3 p.162-163) `[DATED]`.
+
+## 5. Limits and boundary
+- Controversial passages on male/female brains (SE3 p.115-116) are the author's discussion; do not use them as a design rule.
+- NIST SP 800-63-3 and current password requirements: `[DATED]`; for concrete requirements consult the current NIST/OWASP (there are other agents in the collection, e.g. OWASP ASVS, if present in the environment).

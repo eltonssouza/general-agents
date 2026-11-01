@@ -1,0 +1,21 @@
+{
+  "name": "design-patterns-expert",
+  "version": "2.0.0",
+  "description": "Expert in design patterns (Refactoring.Guru catalog, 22 patterns), game architecture patterns (Game Programming Patterns, Nystrom), code hygiene (sample: Clean Code ch. 1) and object-relational mapping (sample: PoEAA ch. 3). Cites PDF pages and declares the gaps of the samples (the chapters on names, functions, layering and domain logic are missing) and of the Subclass Sandbox chapter.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Team"
+  },
+  "keywords": [
+    "design-patterns",
+    "gof",
+    "game-programming-patterns",
+    "clean-code",
+    "poeaa",
+    "state",
+    "observer",
+    "command",
+    "game-loop",
+    "data-mapper"
+  ]
+}

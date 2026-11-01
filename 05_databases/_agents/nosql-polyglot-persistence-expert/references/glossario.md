@@ -1,0 +1,43 @@
+# Glossary (with page; unsupported terms are labeled)
+
+Convention: `(SIGLA p.N)` = PDF page (see INDEX). Definitions are our own syntheses.
+
+- **ACID**: atomicity, consistency, isolation, durability; contrasted with BASE in STRAUCH p.35-36 and NEO4J-GDB p.213-214.
+- **Aggregate store**: collective name for document, key-value and column-family stores, because they hold self-contained records (NEO4J-GDB p.222-223).
+- **Anti-entropy (Merkle tree)**: replica synchronization by hash trees in Dynamo (STRAUCH p.64).
+- **Arbiter**: replica set member without data that votes in the primary election, in 1.6 (STRAUCH p.100) `[DATED]`.
+- **BASE**: *basically available, soft-state, eventual consistency* (STRAUCH p.35).
+- **Bigtable**: Google's store that inspires column databases (STRAUCH p.108-117).
+- **Bloom filter**: probabilistic structure that avoids reading files that do not contain the key; no false negatives (STRAUCH p.48, 122).
+- **BSON**: binary format in which MongoDB stores JSON-like documents (MONGO-PAT p.22).
+- **Bucket (comments)**: document that groups ~100 comments in the hybrid design (MONGO-PAT p.131). Calling it a "pattern" is `[extrapolation]`.
+- **CAP**: at most two among consistency, availability and partition tolerance, according to Brewer (STRAUCH p.34-35).
+- **Chunk (MongoDB)**: contiguous range of data by shard key, split and migrated by the balancer (STRAUCH p.102).
+- **Commit log + in-memory structure + immutable file**: LSM-tree; Memtable/SSTable (STRAUCH p.48; Cassandra p.122).
+- **Compensation**: logically undoing effects already written in the absence of a distributed transaction (MONGO-PAT p.43-47).
+- **Config server**: stores chunk metadata in the 2010 sharding (STRAUCH p.102) `[DATED]`.
+- **Consistent hashing**: hashing objects and nodes onto the same ring; clockwise; few objects remapped when nodes change (STRAUCH p.43-44).
+- **Eventual consistency**: if there are no new writes, replicas converge; readers see writes "eventually" (STRAUCH p.36).
+- **Design document (CouchDB)**: special document with views and validations (COUCH p.3-5).
+- **Dynamo**: Amazon's key-value store; sloppy quorum, hinted handoff, vector clocks, Merkle trees (STRAUCH p.56-65).
+- **Embedding**: embedding subdocuments/arrays in the document (MONGO-PAT p.23-24, 28-29).
+- **Gossip**: periodic exchange of information between nodes; Dynamo (membership, p.62), Cassandra (Scuttlebutt, p.121); in consistency (STRAUCH p.39).
+- **GridFS**: convention for large blobs: metadata + 256 kB *chunks* (MONGO-PAT p.117).
+- **Hinted handoff**: replicating to another node with a "hint" of the destination, when the responsible node is down (Dynamo, STRAUCH p.63).
+- **Index-free adjacency**: nodes with direct references to their neighbors; traversal is independent of the total size of the graph (NEO4J-GDB p.167-169).
+- **LSM-tree**: layout with Memtable, commit log and compacted immutable SSTables (STRAUCH p.48-49).
+- **MVCC**: concurrent versions of the same document; in CouchDB, a consistent snapshot per read (COUCH p.1; STRAUCH p.76).
+- **N, R, W**: replicas, reads and writes required; R + W > N for *read-your-own-writes* (STRAUCH p.45-46).
+- **Virtual node (vnode)**: several positions of one physical node on the ring; in the collection it belongs to Dynamo/White (STRAUCH p.44, 59); the Cassandra described moves nodes (p.120).
+- **PACELC**: `[extrapolation]` (Abadi); not in the sources.
+- **Pipelining (Redis)**: sending commands without waiting for a reply (REDIS p.17).
+- **Polyglot persistence**: using more than one storage model according to need; Scofield says he suggested the term (STRAUCH p.26).
+- **Property graph**: nodes with labels and properties, named and directed relationships with properties (NEO4J-GDB p.224).
+- **Quorum**: minimum number of replicas in an operation; in 2010 Cassandra, a write acknowledged by a quorum (STRAUCH p.120). The formula ⌊N/2⌋+1 is `[extrapolation]`.
+- **Read repair**: updating a replica that returned an old version, in Dynamo (STRAUCH p.64).
+- **Referencing**: storing `_id` and querying in another collection (MONGO-PAT p.25-28).
+- **Replica set**: group of nodes with a primary, secondaries and automatic failover (STRAUCH p.99-100; MONGO-MAN-H p.3).
+- **Shard key**: field(s) by which MongoDB partitions a collection (MONGO-PAT p.62-64; MONGO-MAN-H p.4).
+- **Sloppy quorum**: using the first N healthy nodes of the preference list (STRAUCH p.63).
+- **Vector clock**: tuple of per-node clocks to order updates and detect conflicts (STRAUCH p.37-39).
+- **View (CouchDB)**: JavaScript `map`/`reduce` function with an incremental index (COUCH p.3-4).

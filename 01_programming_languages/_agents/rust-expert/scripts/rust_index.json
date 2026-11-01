@@ -1,0 +1,2172 @@
+{
+  "versao": 2,
+  "fontes": {
+    "Book": "The Rust Programming Language (Rust 1.90, edition 2024), 719 PDF pages",
+    "Ref": "The Rust Reference, 710 PDF pages",
+    "RBE": "Rust by Example, 364 PDF pages"
+  },
+  "convencao_de_pagina": "All pages are PDF pages (the === PAGE N === marker of the extracted text), not the printed numbering.",
+  "entradas": [
+    {
+      "id": "ownership",
+      "titulo": "Ownership, move, Copy, clone, and drop",
+      "aliases": [
+        "ownership",
+        "posse",
+        "dono",
+        "move",
+        "mover",
+        "copy",
+        "clone",
+        "double free",
+        "drop",
+        "escopo",
+        "raii"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "1. Ownership and borrowing"
+        },
+        {
+          "arquivo": "references/glossario.md",
+          "secao": "1. Ownership and borrowing"
+        }
+      ],
+      "paginas": [
+        "Book p.83-96",
+        "RBE p.166-171"
+      ],
+      "termos": [
+        "owner",
+        "double free",
+        "Copy",
+        "clone"
+      ],
+      "resumo": "Three ownership rules; assignment moves (or copies, if Copy); drop at scope exit; clone is an explicit copy.",
+      "cobertura": "full"
+    },
+    {
+      "id": "borrowing",
+      "titulo": "Borrows, &mut, and the borrow checker",
+      "aliases": [
+        "borrow",
+        "borrowing",
+        "emprestimo",
+        "emprestar",
+        "referencia",
+        "&mut",
+        "borrow checker",
+        "e0499",
+        "e0502",
+        "e0596",
+        "dangling"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "1. Ownership and borrowing"
+        },
+        {
+          "arquivo": "references/casos-e-antipadroes.md",
+          "secao": "1.2 Borrows and mutability"
+        }
+      ],
+      "paginas": [
+        "Book p.98-106",
+        "RBE p.173-180"
+      ],
+      "termos": [
+        "mutable reference",
+        "E0499",
+        "E0502",
+        "dangling reference"
+      ],
+      "resumo": "One &mut OR several &; a reference lives from its start to its last use; E0499/E0502/E0596.",
+      "cobertura": "full"
+    },
+    {
+      "id": "slices",
+      "titulo": "Slices and &str",
+      "aliases": [
+        "slice",
+        "slices",
+        "fatia",
+        "&str",
+        "first_word",
+        "string slice"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Slices"
+        },
+        {
+          "arquivo": "references/casos-e-antipadroes.md",
+          "secao": "Book, chapter 4: ownership"
+        }
+      ],
+      "paginas": [
+        "Book p.107-114"
+      ],
+      "termos": [
+        "slice",
+        "first_word",
+        "&str"
+      ],
+      "resumo": "A slice references a contiguous sequence without owning it; &str as a parameter accepts String, &String, and literals.",
+      "cobertura": "full"
+    },
+    {
+      "id": "lifetimes",
+      "titulo": "Lifetimes and annotations",
+      "aliases": [
+        "lifetime",
+        "lifetimes",
+        "tempo de vida",
+        "'a",
+        "anotacao de lifetime",
+        "e0106",
+        "e0597",
+        "e0515",
+        "missing lifetime specifier"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "6. Lifetimes"
+        },
+        {
+          "arquivo": "references/casos-e-antipadroes.md",
+          "secao": "1.3 Lifetimes"
+        }
+      ],
+      "paginas": [
+        "Book p.260-274",
+        "RBE p.181-194"
+      ],
+      "termos": [
+        "lifetime",
+        "E0106",
+        "E0515",
+        "does not live long enough"
+      ],
+      "resumo": "Annotations describe relationships, they do not change how long a reference lives; choose the parameter the return value depends on.",
+      "cobertura": "full"
+    },
+    {
+      "id": "elisao",
+      "titulo": "Lifetime elision rules",
+      "aliases": [
+        "elisao",
+        "elision",
+        "lifetime elision",
+        "regras de elisao",
+        "input lifetime",
+        "output lifetime"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "When to annotate: simulate elision"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.9 Lifetimes, variance, elision"
+        }
+      ],
+      "paginas": [
+        "Book p.270-274",
+        "Ref p.498-502"
+      ],
+      "termos": [
+        "elision",
+        "input lifetime",
+        "output lifetime"
+      ],
+      "resumo": "Three deterministic rules; if a reference is left without a lifetime, the compiler reports an error.",
+      "cobertura": "full"
+    },
+    {
+      "id": "static",
+      "titulo": "The 'static lifetime and the T: 'static bound",
+      "aliases": [
+        "'static",
+        "static lifetime",
+        "lifetime static",
+        "bound static",
+        "box::leak"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "'static"
+        }
+      ],
+      "paginas": [
+        "Book p.273",
+        "RBE p.191-193"
+      ],
+      "termos": [
+        "'static",
+        "Box::leak"
+      ],
+      "resumo": "A 'static reference lives for the whole program; T: 'static means no non-static references.",
+      "cobertura": "full"
+    },
+    {
+      "id": "erros",
+      "titulo": "Result, panic!, unwrap, and expect",
+      "aliases": [
+        "result",
+        "panic",
+        "panic!",
+        "unwrap",
+        "expect",
+        "tratamento de erros",
+        "erro recuperavel",
+        "erros",
+        "propagacao"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "4. Error handling"
+        },
+        {
+          "arquivo": "references/casos-e-antipadroes.md",
+          "secao": "1.12 Runtime panics"
+        }
+      ],
+      "paginas": [
+        "Book p.210-233",
+        "RBE p.232-269"
+      ],
+      "termos": [
+        "panic!",
+        "Result",
+        "unwrap",
+        "expect"
+      ],
+      "resumo": "Expected failure: Result; contract violation: documented panic!; unwrap/expect in tests, prototypes, or with an explained invariant.",
+      "cobertura": "full"
+    },
+    {
+      "id": "operador-interrogacao",
+      "titulo": "The ? operator",
+      "aliases": [
+        "?",
+        "operador ?",
+        "question mark",
+        "propagar erro",
+        "try",
+        "try!"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "The ? operator"
+        }
+      ],
+      "paginas": [
+        "Book p.221-227",
+        "RBE p.255-256, 263"
+      ],
+      "termos": [
+        "?",
+        "From",
+        "Result"
+      ],
+      "resumo": "? unwraps the Ok or returns the Err converting via From; only in a function with a compatible return type.",
+      "cobertura": "full"
+    },
+    {
+      "id": "tipos-de-erro",
+      "titulo": "Box<dyn Error> and custom error",
+      "aliases": [
+        "box<dyn error>",
+        "dyn error",
+        "erro proprio",
+        "enum de erro",
+        "map_err",
+        "from",
+        "error trait",
+        "ok_or"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Which error type?"
+        },
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "12. Everyday language procedures"
+        }
+      ],
+      "paginas": [
+        "Book p.227, 332",
+        "RBE p.257-267"
+      ],
+      "termos": [
+        "Box<dyn Error>",
+        "From",
+        "Error"
+      ],
+      "resumo": "Box<dyn Error> for prototypes; a custom enum with Display, Error, and From when the caller needs to distinguish causes.",
+      "cobertura": "full"
+    },
+    {
+      "id": "option",
+      "titulo": "Option and combinators",
+      "aliases": [
+        "option",
+        "some",
+        "none",
+        "and_then",
+        "transpose",
+        "unwrap_or_else",
+        "nulo",
+        "null"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "2. Choosing the data type"
+        },
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Option fallbacks"
+        }
+      ],
+      "paginas": [
+        "Book p.145-147",
+        "RBE p.236-248"
+      ],
+      "termos": [
+        "Option",
+        "Some",
+        "None"
+      ],
+      "resumo": "Option replaces null; the compiler forces you to handle absence.",
+      "cobertura": "full"
+    },
+    {
+      "id": "structs-enums",
+      "titulo": "Structs, enums, newtype, and type alias",
+      "aliases": [
+        "struct",
+        "enum",
+        "tuple struct",
+        "newtype",
+        "type alias",
+        "unit-like",
+        "variante",
+        "phantomdata"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "2. Choosing the data type"
+        }
+      ],
+      "paginas": [
+        "Book p.116-158",
+        "RBE p.28-39, 154",
+        "Book p.621-623"
+      ],
+      "termos": [
+        "struct",
+        "enum",
+        "newtype"
+      ],
+      "resumo": "Enum for exclusive alternatives; struct for parts that coexist; newtype for type safety at no cost.",
+      "cobertura": "full"
+    },
+    {
+      "id": "padroes",
+      "titulo": "Pattern matching, match, if let, let...else",
+      "aliases": [
+        "pattern",
+        "padrao",
+        "padroes",
+        "match",
+        "if let",
+        "while let",
+        "let else",
+        "let...else",
+        "refutavel",
+        "irrefutavel",
+        "guard",
+        "exaustividade",
+        "e0004",
+        "e0005"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "11. Pattern matching and control flow"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.6 Patterns"
+        }
+      ],
+      "paginas": [
+        "Book p.148-159, 563-590",
+        "Ref p.368-391",
+        "RBE p.60-87"
+      ],
+      "termos": [
+        "match",
+        "irrefutable",
+        "refutable",
+        "exhaustive"
+      ],
+      "resumo": "match is exhaustive; let and parameters require irrefutable patterns; a guard does not count toward exhaustiveness.",
+      "cobertura": "full"
+    },
+    {
+      "id": "traits-genericos",
+      "titulo": "Traits and generics",
+      "aliases": [
+        "trait",
+        "traits",
+        "generico",
+        "genericos",
+        "generics",
+        "bound",
+        "trait bound",
+        "monomorfizacao",
+        "monomorphization",
+        "where"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "5. Traits and generics"
+        },
+        {
+          "arquivo": "references/glossario.md",
+          "secao": "3. Traits and generics"
+        }
+      ],
+      "paginas": [
+        "Book p.234-259",
+        "RBE p.143-165, 195-220"
+      ],
+      "termos": [
+        "trait bound",
+        "monomorphization",
+        "generic"
+      ],
+      "resumo": "Generics cost nothing at runtime (monomorphization); traits move the missing-method error to compile time.",
+      "cobertura": "full"
+    },
+    {
+      "id": "trait-objects",
+      "titulo": "Trait objects and dyn Trait",
+      "aliases": [
+        "dyn",
+        "dyn trait",
+        "trait object",
+        "box<dyn",
+        "dispatch dinamico",
+        "dynamic dispatch",
+        "despacho dinamico"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Tree: enum, generic or trait object?"
+        }
+      ],
+      "paginas": [
+        "Book p.541-547",
+        "Ref p.438-441"
+      ],
+      "termos": [
+        "dyn",
+        "trait object",
+        "dynamic dispatch"
+      ],
+      "resumo": "Trait object for heterogeneous/open collections, at the cost of dynamic dispatch; generic when there is a single concrete type.",
+      "cobertura": "full"
+    },
+    {
+      "id": "dyn-compatibility",
+      "titulo": "Dyn compatibility (object safety)",
+      "aliases": [
+        "dyn compatibility",
+        "dyn compatible",
+        "object safe",
+        "object safety",
+        "compativel com dyn"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.3 Items, traits, coherence, dyn compatibility"
+        }
+      ],
+      "paginas": [
+        "Ref p.147-150",
+        "Book p.547, 557"
+      ],
+      "termos": [
+        "dyn compatible",
+        "Self: Sized",
+        "AsyncFn"
+      ],
+      "resumo": "The Reference's dispatch rules; the error code E0038 does not appear in the sources.",
+      "cobertura": "full"
+    },
+    {
+      "id": "impl-trait",
+      "titulo": "impl Trait",
+      "aliases": [
+        "impl trait",
+        "impl trait em retorno",
+        "retornar closure",
+        "opaque type",
+        "tipo opaco"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "impl Trait vs T"
+        }
+      ],
+      "paginas": [
+        "Book p.254-257",
+        "Ref p.442-445",
+        "RBE p.200-213"
+      ],
+      "termos": [
+        "impl Trait",
+        "Abstract return types"
+      ],
+      "resumo": "impl Trait in return position requires a single concrete type; in argument position it is an anonymous generic.",
+      "cobertura": "full"
+    },
+    {
+      "id": "orfa-newtype",
+      "titulo": "Orphan rule and newtype",
+      "aliases": [
+        "orphan",
+        "orphan rule",
+        "regra do orfao",
+        "coerencia",
+        "coherence",
+        "newtype pattern",
+        "wrapper"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Orphan rule and newtype"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.3 Items, traits, coherence, dyn compatibility"
+        }
+      ],
+      "paginas": [
+        "Book p.251, 619-620",
+        "Ref p.154-159, 703-705"
+      ],
+      "termos": [
+        "orphan rule",
+        "newtype",
+        "Wrapper"
+      ],
+      "resumo": "A trait can only be implemented for a type if one of the two is local; newtype works around it.",
+      "cobertura": "full"
+    },
+    {
+      "id": "closures",
+      "titulo": "Closures and the Fn/FnMut/FnOnce traits",
+      "aliases": [
+        "closure",
+        "closures",
+        "fn",
+        "fnmut",
+        "fnonce",
+        "move",
+        "captura",
+        "capture",
+        "function pointer",
+        "e0507",
+        "e0373"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "7. Closures and iterators"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.7 Closures"
+        }
+      ],
+      "paginas": [
+        "Book p.353-366, 628-632",
+        "Ref p.338-340, 415-432",
+        "RBE p.88-111"
+      ],
+      "termos": [
+        "closure",
+        "FnOnce",
+        "FnMut",
+        "move"
+      ],
+      "resumo": "The Fn* trait depends on what the body does with what it captures; move transfers ownership.",
+      "cobertura": "full"
+    },
+    {
+      "id": "iteradores",
+      "titulo": "Iterators and adapters",
+      "aliases": [
+        "iterator",
+        "iteradores",
+        "iterador",
+        "map",
+        "filter",
+        "collect",
+        "iter",
+        "into_iter",
+        "adapter",
+        "lazy"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Iterator vs loop"
+        }
+      ],
+      "paginas": [
+        "Book p.367-381",
+        "RBE p.66-68, 105-109"
+      ],
+      "termos": [
+        "Iterator",
+        "next",
+        "collect",
+        "lazy"
+      ],
+      "resumo": "Iterators are lazy; adapters produce another iterator, consumers exhaust it; performance equivalent to loops.",
+      "cobertura": "full"
+    },
+    {
+      "id": "box",
+      "titulo": "Box<T> and recursive types",
+      "aliases": [
+        "box",
+        "box<t>",
+        "cons list",
+        "tipo recursivo",
+        "e0072",
+        "heap"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "When Box<T>"
+        }
+      ],
+      "paginas": [
+        "Book p.408-416"
+      ],
+      "termos": [
+        "Box<T>",
+        "cons list",
+        "E0072"
+      ],
+      "resumo": "Box puts data on the heap with a single owner; required for recursive types.",
+      "cobertura": "full"
+    },
+    {
+      "id": "rc-refcell",
+      "titulo": "Rc, RefCell, and interior mutability",
+      "aliases": [
+        "rc",
+        "refcell",
+        "interior mutability",
+        "mutabilidade interior",
+        "rc<refcell",
+        "borrow_mut",
+        "mock"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "8. Smart pointers"
+        }
+      ],
+      "paginas": [
+        "Book p.429-446"
+      ],
+      "termos": [
+        "Rc<T>",
+        "RefCell<T>",
+        "interior mutability"
+      ],
+      "resumo": "Rc: several owners in one thread; RefCell checks borrows at runtime; Rc<RefCell<T>> combines them.",
+      "cobertura": "full"
+    },
+    {
+      "id": "weak-ciclos",
+      "titulo": "Weak<T> and reference cycles",
+      "aliases": [
+        "weak",
+        "ciclo",
+        "ciclos",
+        "vazamento",
+        "memory leak",
+        "upgrade",
+        "downgrade",
+        "weak_count",
+        "strong_count"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Pitfalls"
+        },
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "13. Smart pointers, patterns, unsafe/FFI and traits"
+        }
+      ],
+      "paginas": [
+        "Book p.447-456"
+      ],
+      "termos": [
+        "Weak<T>",
+        "upgrade",
+        "strong_count"
+      ],
+      "resumo": "Rc cycles leak without any error; Weak breaks the cycle and upgrade returns an Option.",
+      "cobertura": "full"
+    },
+    {
+      "id": "deref-drop",
+      "titulo": "Deref, deref coercion, and Drop",
+      "aliases": [
+        "deref",
+        "deref coercion",
+        "drop",
+        "destrutor",
+        "destructor",
+        "e0040",
+        "mem::drop"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Deref"
+        }
+      ],
+      "paginas": [
+        "Book p.417-427",
+        "RBE p.167-168"
+      ],
+      "termos": [
+        "Deref",
+        "deref coercion",
+        "Drop"
+      ],
+      "resumo": "Deref customizes *; Drop runs at scope exit; calling .drop() by hand is forbidden (E0040).",
+      "cobertura": "full"
+    },
+    {
+      "id": "threads",
+      "titulo": "Threads and JoinHandle",
+      "aliases": [
+        "thread",
+        "threads",
+        "spawn",
+        "join",
+        "joinhandle",
+        "thread::spawn",
+        "concorrencia",
+        "concurrency"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "9. Concurrency"
+        }
+      ],
+      "paginas": [
+        "Book p.459-466",
+        "RBE p.299-304"
+      ],
+      "termos": [
+        "thread::spawn",
+        "join",
+        "move"
+      ],
+      "resumo": "std uses 1:1 threads; the end of main terminates the others; move is required for capture.",
+      "cobertura": "full"
+    },
+    {
+      "id": "canais",
+      "titulo": "mpsc channels",
+      "aliases": [
+        "canal",
+        "canais",
+        "mpsc",
+        "channel",
+        "send",
+        "recv",
+        "message passing",
+        "produtores"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Channels and Mutex"
+        }
+      ],
+      "paginas": [
+        "Book p.467-474",
+        "RBE p.305-306"
+      ],
+      "termos": [
+        "mpsc",
+        "send",
+        "recv"
+      ],
+      "resumo": "send takes ownership of the value; recv blocks; multiple producers clone the Sender.",
+      "cobertura": "full"
+    },
+    {
+      "id": "mutex-arc",
+      "titulo": "Mutex and Arc",
+      "aliases": [
+        "mutex",
+        "arc",
+        "arc<mutex",
+        "deadlock",
+        "poison",
+        "poisoned",
+        "lock",
+        "estado compartilhado"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Channels and Mutex"
+        }
+      ],
+      "paginas": [
+        "Book p.475-482"
+      ],
+      "termos": [
+        "Mutex<T>",
+        "Arc<T>",
+        "deadlock"
+      ],
+      "resumo": "Arc<Mutex<T>> for state shared between threads; deadlock is still possible.",
+      "cobertura": "full"
+    },
+    {
+      "id": "send-sync",
+      "titulo": "Send and Sync",
+      "aliases": [
+        "send",
+        "sync",
+        "send e sync",
+        "thread safe"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/glossario.md",
+          "secao": "9. Concurrency and async"
+        }
+      ],
+      "paginas": [
+        "Book p.483-484"
+      ],
+      "termos": [
+        "Send",
+        "Sync"
+      ],
+      "resumo": "Markers for transferable ownership and shared access between threads; Rc is not Send.",
+      "cobertura": "full"
+    },
+    {
+      "id": "async",
+      "titulo": "async/await and futures",
+      "aliases": [
+        "async",
+        "await",
+        "future",
+        "futures",
+        "trpl",
+        "runtime",
+        "executor",
+        "block_on",
+        "starvation",
+        "yield_now"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Async"
+        }
+      ],
+      "paginas": [
+        "Book p.489-535"
+      ],
+      "termos": [
+        "async",
+        "await",
+        "Future",
+        "trpl"
+      ],
+      "resumo": "Futures are lazy; await is the switch point; main cannot be async without a runtime.",
+      "cobertura": "full"
+    },
+    {
+      "id": "join-select",
+      "titulo": "join, select, and timeout in async",
+      "aliases": [
+        "join",
+        "trpl::join",
+        "select",
+        "trpl::select",
+        "timeout",
+        "either",
+        "spawn_task"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "11. Concurrency: threads, channels, shared state and async"
+        }
+      ],
+      "paginas": [
+        "Book p.497-502, 514-516"
+      ],
+      "termos": [
+        "trpl::join",
+        "trpl::select",
+        "fair"
+      ],
+      "resumo": "join is fair and waits for all; select takes the first and is not fair.",
+      "cobertura": "full"
+    },
+    {
+      "id": "pin",
+      "titulo": "Pin and Unpin",
+      "aliases": [
+        "pin",
+        "unpin",
+        "!unpin",
+        "self-referential",
+        "join_all"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Async"
+        }
+      ],
+      "paginas": [
+        "Book p.523-529"
+      ],
+      "termos": [
+        "Pin",
+        "Unpin",
+        "self-referential"
+      ],
+      "resumo": "Pin prevents moving the state machine; Unpin is the normal case.",
+      "cobertura": "full"
+    },
+    {
+      "id": "streams",
+      "titulo": "Streams and StreamExt",
+      "aliases": [
+        "stream",
+        "streams",
+        "streamext"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/glossario.md",
+          "secao": "9. Concurrency and async"
+        }
+      ],
+      "paginas": [
+        "Book p.517-519, 530-531"
+      ],
+      "termos": [
+        "Stream",
+        "StreamExt"
+      ],
+      "resumo": "Stream = Iterator + Future; import StreamExt for next; Stream was not yet in std.",
+      "cobertura": "full"
+    },
+    {
+      "id": "macros-declarativas",
+      "titulo": "macro_rules! and follow-set",
+      "aliases": [
+        "macro_rules",
+        "macro",
+        "macros",
+        "declarative macro",
+        "follow-set",
+        "follow set",
+        "hygiene",
+        "higiene",
+        "fragmento",
+        "tt",
+        "$crate"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "12. Macros"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.2 Macros"
+        }
+      ],
+      "paginas": [
+        "Book p.633-636",
+        "Ref p.46-66, 687-695",
+        "RBE p.221-231"
+      ],
+      "termos": [
+        "macro_rules!",
+        "follow",
+        "hygiene"
+      ],
+      "resumo": "Matching without lookahead; the follow-set restricts tokens after fragments; mixed hygiene.",
+      "cobertura": "full"
+    },
+    {
+      "id": "macros-procedurais",
+      "titulo": "Procedural macros and derive",
+      "aliases": [
+        "proc macro",
+        "procedural macro",
+        "macro procedural",
+        "derive",
+        "derive macro",
+        "syn",
+        "quote",
+        "tokenstream"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "9. Write a procedural derive macro"
+        }
+      ],
+      "paginas": [
+        "Book p.636-644",
+        "Ref p.67-75"
+      ],
+      "termos": [
+        "proc_macro",
+        "TokenStream",
+        "syn",
+        "quote"
+      ],
+      "resumo": "Own crate with proc-macro = true; derive receives 1 TokenStream; attribute-like receives 2.",
+      "cobertura": "full"
+    },
+    {
+      "id": "unsafe",
+      "titulo": "unsafe and superpowers",
+      "aliases": [
+        "unsafe",
+        "unsafe fn",
+        "raw pointer",
+        "ponteiro bruto",
+        "static mut",
+        "unsafe trait",
+        "safety",
+        "safe abstraction"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "13. Unsafe"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.13 Unsafe, UB, FFI, unwinding, inline asm"
+        }
+      ],
+      "paginas": [
+        "Book p.592-606",
+        "Ref p.620-623"
+      ],
+      "termos": [
+        "unsafe",
+        "raw pointer",
+        "static mut",
+        "SAFETY"
+      ],
+      "resumo": "Five actions require unsafe; unsafe does not turn off the borrow checker; minimal, encapsulated block.",
+      "cobertura": "full"
+    },
+    {
+      "id": "ub",
+      "titulo": "Undefined behavior (UB)",
+      "aliases": [
+        "ub",
+        "undefined behavior",
+        "comportamento indefinido",
+        "unsound",
+        "sound",
+        "dangling",
+        "alinhamento",
+        "valores invalidos"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "5. (d) Undefined behavior and guarantees"
+        }
+      ],
+      "paginas": [
+        "Ref p.624-631"
+      ],
+      "termos": [
+        "undefined behavior",
+        "dangling",
+        "sound"
+      ],
+      "resumo": "The Reference's non-exhaustive list: aliasing, data race, dangling, misaligned, invalid values, uninitialized memory.",
+      "cobertura": "full"
+    },
+    {
+      "id": "ffi",
+      "titulo": "FFI, extern, and no_mangle",
+      "aliases": [
+        "ffi",
+        "extern",
+        "extern c",
+        "no_mangle",
+        "unsafe extern",
+        "abi",
+        "c-unwind",
+        "export_name",
+        "link_section"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.13 Unsafe, UB, FFI, unwinding, inline asm"
+        },
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "13. Smart pointers, patterns, unsafe/FFI and traits"
+        }
+      ],
+      "paginas": [
+        "Book p.599-601",
+        "Ref p.115-117, 160-171, 567, 574-575, 639-641",
+        "RBE p.327-329"
+      ],
+      "termos": [
+        "extern",
+        "no_mangle",
+        "ABI"
+      ],
+      "resumo": "unsafe extern is mandatory in 2024; no_mangle/export_name/link_section require unsafe(...) in 2024; default Rust ABI.",
+      "cobertura": "full"
+    },
+    {
+      "id": "miri",
+      "titulo": "Miri",
+      "aliases": [
+        "miri",
+        "cargo miri",
+        "detectar ub"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "13. Smart pointers, patterns, unsafe/FFI and traits"
+        }
+      ],
+      "paginas": [
+        "Book p.604-606"
+      ],
+      "termos": [
+        "Miri",
+        "nightly"
+      ],
+      "resumo": "Miri detects UB on executed paths; requires nightly; finding nothing does not prove absence.",
+      "cobertura": "full"
+    },
+    {
+      "id": "const-static",
+      "titulo": "const, static, and const eval",
+      "aliases": [
+        "const",
+        "static",
+        "constante",
+        "const fn",
+        "const eval",
+        "avaliacao em compilacao"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.3 Items, traits, coherence, dyn compatibility"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.12 Const eval"
+        }
+      ],
+      "paginas": [
+        "Ref p.139-145, 632-637",
+        "Book p.48-49, 601-602"
+      ],
+      "termos": [
+        "const",
+        "static",
+        "constant"
+      ],
+      "resumo": "const is inlined; static is a single allocation; free consts are evaluated at compile time.",
+      "cobertura": "full"
+    },
+    {
+      "id": "modulos",
+      "titulo": "Modules, paths, use, and visibility",
+      "aliases": [
+        "modulo",
+        "modulos",
+        "mod",
+        "use",
+        "pub",
+        "pub use",
+        "pub(crate)",
+        "visibilidade",
+        "privacidade",
+        "path",
+        "caminho",
+        "crate",
+        "super",
+        "e0603",
+        "glob"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "14. Modules, crates, Cargo, workspaces and tests"
+        },
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.11 Names, paths, visibility"
+        }
+      ],
+      "paginas": [
+        "Book p.160-187",
+        "Ref p.529-560",
+        "RBE p.112-124"
+      ],
+      "termos": [
+        "module",
+        "pub",
+        "use",
+        "super"
+      ],
+      "resumo": "Everything is private by default; pub use reorganizes the API; one file style per module.",
+      "cobertura": "full"
+    },
+    {
+      "id": "cargo",
+      "titulo": "Cargo: new, check, run, build, fmt, clippy",
+      "aliases": [
+        "cargo",
+        "cargo new",
+        "cargo check",
+        "cargo build",
+        "cargo run",
+        "release",
+        "clippy",
+        "rustfmt",
+        "cargo fix",
+        "profile"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "2. Development cycle with Cargo"
+        }
+      ],
+      "paginas": [
+        "Book p.17-21, 384-385, 707-709"
+      ],
+      "termos": [
+        "cargo check",
+        "cargo build",
+        "--release",
+        "clippy"
+      ],
+      "resumo": "cargo check is faster than build; release for delivery and benchmarks; clippy/rustfmt/cargo fix come with Rust.",
+      "cobertura": "full"
+    },
+    {
+      "id": "dependencias",
+      "titulo": "Dependencies, SemVer, and Cargo.lock",
+      "aliases": [
+        "dependencia",
+        "dependencias",
+        "dependency",
+        "semver",
+        "cargo.lock",
+        "cargo update",
+        "rand",
+        "cargo add"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "3. Add dependencies and handle versions"
+        }
+      ],
+      "paginas": [
+        "Book p.29-33, 181, 402-403"
+      ],
+      "termos": [
+        "Cargo.lock",
+        "cargo update",
+        "SemVer"
+      ],
+      "resumo": "0.8.5 is equivalent to ^0.8.5; cargo update ignores Cargo.lock; commit Cargo.lock.",
+      "cobertura": "full"
+    },
+    {
+      "id": "workspace",
+      "titulo": "Workspaces",
+      "aliases": [
+        "workspace",
+        "workspaces",
+        "membro",
+        "cargo run -p"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "6. Set up a workspace"
+        }
+      ],
+      "paginas": [
+        "Book p.399-405"
+      ],
+      "termos": [
+        "workspace",
+        "Cargo.lock",
+        "-p"
+      ],
+      "resumo": "One Cargo.lock and one target for several crates; dependencies between members by path.",
+      "cobertura": "full"
+    },
+    {
+      "id": "publicar",
+      "titulo": "Publishing to crates.io and yank",
+      "aliases": [
+        "publicar",
+        "publish",
+        "crates.io",
+        "yank",
+        "cargo publish",
+        "cargo login",
+        "licenca"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "8. Publish to crates.io"
+        }
+      ],
+      "paginas": [
+        "Book p.394-398"
+      ],
+      "termos": [
+        "cargo publish",
+        "yank",
+        "crates.io"
+      ],
+      "resumo": "Publishing is permanent; yank does not delete code; description and license are required.",
+      "cobertura": "full"
+    },
+    {
+      "id": "testes",
+      "titulo": "Tests: unit, integration, doc-tests",
+      "aliases": [
+        "teste",
+        "testes",
+        "test",
+        "cargo test",
+        "assert",
+        "assert_eq",
+        "should_panic",
+        "ignore",
+        "integration test",
+        "doc test",
+        "tdd",
+        "mock"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "4. Write and run tests"
+        },
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Tests"
+        }
+      ],
+      "paginas": [
+        "Book p.275-313, 336-346",
+        "RBE p.330-342"
+      ],
+      "termos": [
+        "#[test]",
+        "assert_eq!",
+        "should_panic",
+        "cargo test"
+      ],
+      "resumo": "cfg(test) for unit tests; tests/ for integration (each file is a crate); tests run in parallel.",
+      "cobertura": "full"
+    },
+    {
+      "id": "docs",
+      "titulo": "Documentation comments and rustdoc",
+      "aliases": [
+        "doc comment",
+        "documentacao",
+        "rustdoc",
+        "///",
+        "//!",
+        "cargo doc"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "7. Write publishable doc comments"
+        }
+      ],
+      "paginas": [
+        "Book p.386-389",
+        "RBE p.359-364"
+      ],
+      "termos": [
+        "///",
+        "//!",
+        "cargo doc"
+      ],
+      "resumo": "/// documents the following item; //! the containing item; examples become doc-tests.",
+      "cobertura": "full"
+    },
+    {
+      "id": "cli",
+      "titulo": "CLI: thin binary + library (minigrep)",
+      "aliases": [
+        "cli",
+        "minigrep",
+        "args",
+        "env::args",
+        "eprintln",
+        "stderr",
+        "binario fino",
+        "config"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "5. Refactor a CLI"
+        }
+      ],
+      "paginas": [
+        "Book p.315-351"
+      ],
+      "termos": [
+        "minigrep",
+        "env::args",
+        "eprintln!"
+      ],
+      "resumo": "main orchestrates, lib.rs holds the testable logic; errors go to stderr.",
+      "cobertura": "full"
+    },
+    {
+      "id": "servidor",
+      "titulo": "Web server and ThreadPool",
+      "aliases": [
+        "servidor",
+        "web server",
+        "threadpool",
+        "thread pool",
+        "tcp",
+        "tcplistener",
+        "pool de threads",
+        "worker"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "10. Web server and thread pool with channels"
+        }
+      ],
+      "paginas": [
+        "Book p.647-689"
+      ],
+      "termos": [
+        "ThreadPool",
+        "TcpListener",
+        "Worker"
+      ],
+      "resumo": "The pool limits threads; channel shared via Arc<Mutex<Receiver>>; graceful shutdown with Drop.",
+      "cobertura": "full"
+    },
+    {
+      "id": "editions",
+      "titulo": "Editions and migration",
+      "aliases": [
+        "edition",
+        "editions",
+        "2015",
+        "2018",
+        "2021",
+        "2024",
+        "migrar edition",
+        "cargo fix edition",
+        "edition guide"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "4. (c) Differences by edition"
+        },
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "15. Edition migration"
+        }
+      ],
+      "paginas": [
+        "Book p.711-712",
+        "Ref p.3, 13-15, 357, 374, 438, 482, 490, 522, 639-641"
+      ],
+      "termos": [
+        "edition",
+        "2024",
+        "2015"
+      ],
+      "resumo": "Without the edition key, 2015 applies; the Reference's differences table is in regras-da-referencia.md.",
+      "cobertura": "full",
+      "nota": "Flags of cargo fix --edition are not in the sources."
+    },
+    {
+      "id": "layout",
+      "titulo": "Layout and repr",
+      "aliases": [
+        "repr",
+        "layout",
+        "repr(c)",
+        "repr(transparent)",
+        "packed",
+        "alinhamento",
+        "align",
+        "discriminante"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.8 Types, layout and repr"
+        }
+      ],
+      "paginas": [
+        "Ref p.449-463",
+        "Ref p.128-132"
+      ],
+      "termos": [
+        "repr",
+        "layout",
+        "packed"
+      ],
+      "resumo": "The layout of repr(Rust) is undefined; repr(C) has a defined algorithm; primitives on enums.",
+      "cobertura": "full"
+    },
+    {
+      "id": "casts",
+      "titulo": "Conversions and casts with as",
+      "aliases": [
+        "as",
+        "cast",
+        "casts",
+        "conversao",
+        "from",
+        "into",
+        "tryfrom",
+        "try_into",
+        "fromstr",
+        "parse",
+        "saturating"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.5 Expressions"
+        },
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Conversions and derives"
+        }
+      ],
+      "paginas": [
+        "Ref p.302-311",
+        "RBE p.45-58"
+      ],
+      "termos": [
+        "cast",
+        "TryFrom",
+        "saturating"
+      ],
+      "resumo": "as truncates integers; float to integer saturates; From/Into/TryFrom for conversions.",
+      "cobertura": "full"
+    },
+    {
+      "id": "numeros",
+      "titulo": "Integers, floats, and overflow",
+      "aliases": [
+        "overflow",
+        "inteiro",
+        "integer",
+        "float",
+        "wrapping",
+        "checked",
+        "saturating",
+        "overflowing",
+        "u8",
+        "i32"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Numbers and bindings"
+        }
+      ],
+      "paginas": [
+        "Book p.53-56",
+        "Ref p.291-292, 397-403"
+      ],
+      "termos": [
+        "overflow",
+        "wrapping_",
+        "checked_",
+        "saturating_"
+      ],
+      "resumo": "Debug: panic on overflow; release: wrap; choose wrapping_/checked_/saturating_/overflowing_ consciously.",
+      "cobertura": "full"
+    },
+    {
+      "id": "strings",
+      "titulo": "Strings, UTF-8, and indexing",
+      "aliases": [
+        "string",
+        "strings",
+        "utf-8",
+        "utf8",
+        "char",
+        "indexacao de string",
+        "&str",
+        "grapheme",
+        "push_str",
+        "format!"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "3. Strings and collections"
+        }
+      ],
+      "paginas": [
+        "Book p.194-202",
+        "RBE p.275-279"
+      ],
+      "termos": [
+        "UTF-8",
+        "grapheme",
+        "String"
+      ],
+      "resumo": "A String is not indexed by integer; think in bytes, chars, and grapheme clusters.",
+      "cobertura": "full"
+    },
+    {
+      "id": "colecoes",
+      "titulo": "Vec, HashMap, and HashSet",
+      "aliases": [
+        "vec",
+        "vetor",
+        "hashmap",
+        "hashset",
+        "btreeset",
+        "colecao",
+        "colecoes",
+        "entry",
+        "siphash"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "3. Strings and collections"
+        }
+      ],
+      "paginas": [
+        "Book p.188-209",
+        "RBE p.270-298"
+      ],
+      "termos": [
+        "Vec<T>",
+        "HashMap",
+        "entry"
+      ],
+      "resumo": "Vec is contiguous; HashMap with the entry API; SipHash by default; arbitrary iteration order.",
+      "cobertura": "full"
+    },
+    {
+      "id": "drop-order",
+      "titulo": "Drop order and temporaries",
+      "aliases": [
+        "drop order",
+        "ordem de drop",
+        "temporario",
+        "temporarios",
+        "lifetime extension",
+        "scrutinee",
+        "if let else 2024"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.10 Drop order and temporaries"
+        }
+      ],
+      "paginas": [
+        "Ref p.484-497",
+        "Book p.680"
+      ],
+      "termos": [
+        "drop",
+        "temporary",
+        "scrutinee"
+      ],
+      "resumo": "Variables: reverse order; temporaries have their own scope; 2024 changed if let and the block tail.",
+      "cobertura": "full"
+    },
+    {
+      "id": "variancia",
+      "titulo": "Variance and subtyping",
+      "aliases": [
+        "variancia",
+        "variance",
+        "covariante",
+        "contravariante",
+        "invariante",
+        "subtipagem",
+        "subtyping"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.9 Lifetimes, variance, elision, HRTB, coercions"
+        }
+      ],
+      "paginas": [
+        "Ref p.464-473"
+      ],
+      "termos": [
+        "covariant",
+        "invariant",
+        "contravariant"
+      ],
+      "resumo": "&mut T is invariant in T; fn(T) is contravariant; table in the Reference.",
+      "cobertura": "full"
+    },
+    {
+      "id": "hrtb",
+      "titulo": "Higher-ranked trait bounds",
+      "aliases": [
+        "hrtb",
+        "for<'a>",
+        "higher-ranked",
+        "higher ranked"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.9 Lifetimes, variance, elision, HRTB, coercions"
+        }
+      ],
+      "paginas": [
+        "Ref p.471",
+        "Book p.700"
+      ],
+      "termos": [
+        "Higher-ranked",
+        "for<"
+      ],
+      "resumo": "for<'a> F: Fn(&'a T) is needed when the reference is local and lives shorter than any lifetime of the function.",
+      "cobertura": "full"
+    },
+    {
+      "id": "asm",
+      "titulo": "Inline assembly",
+      "aliases": [
+        "asm",
+        "asm!",
+        "inline assembly",
+        "naked",
+        "naked_asm",
+        "clobber"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.13 Unsafe, UB, FFI, unwinding, inline asm"
+        },
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "14.6 Unsafe, UB, FFI and linking"
+        }
+      ],
+      "paginas": [
+        "Ref p.576-619",
+        "RBE p.345-356"
+      ],
+      "termos": [
+        "asm!",
+        "clobber_abi",
+        "nostack"
+      ],
+      "resumo": "asm! is always unsafe; every modified register must be declared; options pure/nomem/readonly only if true.",
+      "cobertura": "full"
+    },
+    {
+      "id": "lexical",
+      "titulo": "Lexical grammar and literals",
+      "aliases": [
+        "literal",
+        "literais",
+        "raw string",
+        "raw identifier",
+        "r#",
+        "keyword",
+        "keywords",
+        "palavra reservada",
+        "comentario",
+        "shebang",
+        "bom",
+        "crlf"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.1 Lexical and literals"
+        }
+      ],
+      "paginas": [
+        "Ref p.9-44",
+        "Book p.692-694"
+      ],
+      "termos": [
+        "raw string",
+        "keyword",
+        "raw identifier"
+      ],
+      "resumo": "UTF-8 source; strict/reserved/weak keywords; r# raw identifiers; escapes per literal type.",
+      "cobertura": "full"
+    },
+    {
+      "id": "controle-de-fluxo",
+      "titulo": "Variables, shadowing, if, loops",
+      "aliases": [
+        "shadowing",
+        "let",
+        "mut",
+        "if",
+        "loop",
+        "for",
+        "while",
+        "break",
+        "label",
+        "expressao",
+        "statement"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Expressions"
+        },
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "Numbers and bindings"
+        }
+      ],
+      "paginas": [
+        "Book p.46-80",
+        "Ref p.341-356"
+      ],
+      "termos": [
+        "shadowing",
+        "loop",
+        "for"
+      ],
+      "resumo": "let is immutable by default; shadowing changes the value or type; for is safer than while with an index.",
+      "cobertura": "full"
+    },
+    {
+      "id": "oop",
+      "titulo": "OOP, inheritance, and the state pattern",
+      "aliases": [
+        "oop",
+        "orientacao a objetos",
+        "heranca",
+        "inheritance",
+        "state pattern",
+        "typestate",
+        "polimorfismo"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/frameworks.md",
+          "secao": "10. State and OOP"
+        }
+      ],
+      "paginas": [
+        "Book p.535-561"
+      ],
+      "termos": [
+        "inheritance",
+        "State",
+        "polymorphism"
+      ],
+      "resumo": "No implementation inheritance; polymorphism via traits; state pattern with Option<Box<dyn State>> or typestate.",
+      "cobertura": "full"
+    },
+    {
+      "id": "coercao",
+      "titulo": "Coercions and deref coercion",
+      "aliases": [
+        "coercao",
+        "coercion",
+        "unsize",
+        "deref coercion"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/regras-da-referencia.md",
+          "secao": "3.9 Lifetimes, variance, elision, HRTB, coercions"
+        }
+      ],
+      "paginas": [
+        "Ref p.474-483",
+        "Book p.421-423"
+      ],
+      "termos": [
+        "coercion",
+        "unsized",
+        "deref"
+      ],
+      "resumo": "Coercion only at coercion sites; &mut T -> &T works, never the reverse.",
+      "cobertura": "full"
+    },
+    {
+      "id": "canais-release",
+      "titulo": "Release channels and tools",
+      "aliases": [
+        "nightly",
+        "beta",
+        "stable",
+        "release channel",
+        "rustup",
+        "toolchain",
+        "instalar",
+        "rustc"
+      ],
+      "onde": [
+        {
+          "arquivo": "references/procedimentos.md",
+          "secao": "1. Install and verify the toolchain"
+        },
+        {
+          "arquivo": "references/glossario.md",
+          "secao": "15. Tools, editions and process"
+        }
+      ],
+      "paginas": [
+        "Book p.9-12, 714-718"
+      ],
+      "termos": [
+        "nightly",
+        "stable",
+        "rustup"
+      ],
+      "resumo": "A release every six weeks via the train model; only the latest stable is supported.",
+      "cobertura": "full"
+    }
+  ],
+  "limites": [
+    {
+      "id": "crates-terceiros",
+      "aliases": [
+        "serde",
+        "tokio",
+        "async-std",
+        "rayon",
+        "clap",
+        "anyhow",
+        "thiserror",
+        "crossbeam",
+        "parking_lot",
+        "tracing",
+        "reqwest",
+        "actix",
+        "axum",
+        "diesel",
+        "sqlx",
+        "crate de terceiros",
+        "escolher crate",
+        "runtime async",
+        "third-party crate",
+        "choose crate",
+        "async runtime"
+      ],
+      "cobertura": "not covered",
+      "nota": "Choosing and using third-party crates and specific async runtimes are out of scope; the Book only mentions rand (p.30) and trpl/tokio/futures as support (Book p.491, 495, 518) and RBE mentions clap in passing (RBE p.130, 230, 323; version 2.27.1 in RBE p.130 is [DATED])."
+    },
+    {
+      "id": "atomicos",
+      "aliases": [
+        "atomic",
+        "atomicos",
+        "atomics",
+        "atomicusize",
+        "fetch_add",
+        "ordering",
+        "seqcst",
+        "compare_exchange",
+        "memory ordering"
+      ],
+      "cobertura": "partial",
+      "nota": "The Book only mentions std::sync::atomic as an alternative to Mutex for simple numbers (Book p.482); the Reference uses AtomicUsize/fetch_add only in a static example (Ref p.143). The API and the orderings are [extrapolation]."
+    },
+    {
+      "id": "no-std",
+      "aliases": [
+        "no_std",
+        "no std",
+        "embarcado",
+        "embedded",
+        "bare metal",
+        "cortex"
+      ],
+      "cobertura": "partial",
+      "nota": "The Reference treats no_std only in the context of preludes and linking (Ref p.519-527, 569-575); the Book and RBE do not cover embedded development."
+    },
+    {
+      "id": "desempenho",
+      "aliases": [
+        "benchmark",
+        "benchmarks",
+        "desempenho",
+        "performance",
+        "profiling",
+        "criterion",
+        "otimizacao",
+        "flamegraph"
+      ],
+      "cobertura": "partial",
+      "nota": "The Book only provides a loop vs iterator benchmark (Book p.381) and says test benchmarks require nightly (Book p.278); there is no performance guide."
+    },
+    {
+      "id": "compilacao-cruzada",
+      "aliases": [
+        "cross compilation",
+        "compilacao cruzada",
+        "target triple",
+        "cross-compile",
+        "wasm",
+        "webassembly"
+      ],
+      "cobertura": "not covered",
+      "nota": "Cross-compilation and WebAssembly are not addressed in the sources."
+    },
+    {
+      "id": "web",
+      "aliases": [
+        "web framework",
+        "actix-web",
+        "rocket",
+        "http client",
+        "rest",
+        "grpc",
+        "api http",
+        "ecossistema web"
+      ],
+      "cobertura": "not covered",
+      "nota": "The web ecosystem is out of scope; the Book only builds a minimal TCP/HTTP server (Book p.647-689)."
+    },
+    {
+      "id": "outras-linguagens",
+      "aliases": [
+        "python",
+        "java",
+        "javascript",
+        "go",
+        "golang",
+        "c++",
+        "cpp",
+        "c#",
+        "kotlin",
+        "swift",
+        "typescript",
+        "ruby",
+        "php"
+      ],
+      "cobertura": "not covered",
+      "nota": "Other languages: out of scope for this agent; redirect to the agent for that language."
+    },
+    {
+      "id": "infra",
+      "aliases": [
+        "kubernetes",
+        "docker",
+        "terraform",
+        "ci/cd",
+        "github actions",
+        "kafka",
+        "postgres",
+        "redis",
+        "aws"
+      ],
+      "cobertura": "not covered",
+      "nota": "Infrastructure and databases are outside this agent's sources."
+    },
+    {
+      "id": "documentos-citados-sem-conteudo",
+      "aliases": [
+        "e0038",
+        "edition guide",
+        "rustonomicon",
+        "rust api guidelines",
+        "clippy pedantic",
+        "cargo audit",
+        "cargo deny"
+      ],
+      "cobertura": "not covered",
+      "nota": "Cited only by name (Rust API Guidelines: Book p.172; Rustonomicon: Ref p.624 and Book p.191) or absent (E0038, cargo audit); the content of these documents is not part of the sources."
+    }
+  ]
+}

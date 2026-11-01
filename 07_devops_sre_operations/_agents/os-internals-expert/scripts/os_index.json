@@ -1,0 +1,1711 @@
+{
+ "_comment": "Index of os-internals-expert. pages = PDF pages (OSTEP). check = terms that must appear on some page of the range (audited by tests/verify_citations.py). sem_cobertura = terms that are NOT in the book (key name kept for compatibility). Portuguese topic names are kept as aliases so Portuguese queries still match.",
+ "topics": [
+  {
+   "topic": "process",
+   "aliases": [
+    "running program",
+    "programa em execucao",
+    "processo"
+   ],
+   "chapter": 4,
+   "pages": "30-39",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "running program"
+   ],
+   "note": "process = running program; machine state; time sharing"
+  },
+  {
+   "topic": "process states",
+   "aliases": [
+    "running ready blocked",
+    "estados de processo"
+   ],
+   "chapter": 4,
+   "pages": "34-36",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "blocked"
+   ],
+   "note": "Running, Ready, Blocked and the transitions"
+  },
+  {
+   "topic": "pcb",
+   "aliases": [
+    "process control block",
+    "process list"
+   ],
+   "chapter": 4,
+   "pages": "36-38",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "process control block"
+   ],
+   "note": "PCB and process list"
+  },
+  {
+   "topic": "zombie",
+   "aliases": [],
+   "chapter": 4,
+   "pages": "38-38",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "zombie"
+   ],
+   "note": "final state until the parent calls wait"
+  },
+  {
+   "topic": "fork",
+   "aliases": [
+    "fork()"
+   ],
+   "chapter": 5,
+   "pages": "106-109",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "fork()"
+   ],
+   "note": "creates a child; returns 0 in the child"
+  },
+  {
+   "topic": "wait",
+   "aliases": [
+    "wait()",
+    "waitpid"
+   ],
+   "chapter": 5,
+   "pages": "109-109",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "wait()"
+   ],
+   "note": "waits for the child; deterministic output"
+  },
+  {
+   "topic": "exec",
+   "aliases": [
+    "exec()",
+    "execvp"
+   ],
+   "chapter": 5,
+   "pages": "109-111",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "exec()"
+   ],
+   "note": "loads another program; does not create a process"
+  },
+  {
+   "topic": "redirection and pipes",
+   "aliases": [
+    "redirect",
+    "pipe",
+    "pipe()",
+    "shell redirection",
+    "redirecionamento e pipes"
+   ],
+   "chapter": 5,
+   "pages": "111-113",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "redirect"
+   ],
+   "note": "shell: fork, adjust fds, exec"
+  },
+  {
+   "topic": "signals",
+   "aliases": [
+    "signal",
+    "sigint",
+    "kill",
+    "sinais"
+   ],
+   "chapter": 5,
+   "pages": "113-115",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "sigint"
+   ],
+   "note": "kill, SIGINT, SIGTSTP, signal()"
+  },
+  {
+   "topic": "limited direct execution",
+   "aliases": [
+    "lde",
+    "direct execution"
+   ],
+   "chapter": 6,
+   "pages": "182-188",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "limited direct execution"
+   ],
+   "note": "performance + control"
+  },
+  {
+   "topic": "system call e trap",
+   "aliases": [
+    "syscall",
+    "trap",
+    "trap table",
+    "return-from-trap"
+   ],
+   "chapter": 6,
+   "pages": "184-188",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "trap table"
+   ],
+   "note": "user/kernel mode, trap table, return-from-trap"
+  },
+  {
+   "topic": "timer interrupt",
+   "aliases": [
+    "preempcao",
+    "timer"
+   ],
+   "chapter": 6,
+   "pages": "189-190",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "timer interrupt"
+   ],
+   "note": "lets the OS regain control"
+  },
+  {
+   "topic": "context switch",
+   "aliases": [
+    "troca de contexto"
+   ],
+   "chapter": 6,
+   "pages": "190-193",
+   "ref": "references/01-processos-api-e-limited-direct-execution.md",
+   "check": [
+    "context switch"
+   ],
+   "note": "save/restore; kernel stack"
+  },
+  {
+   "topic": "turnaround",
+   "aliases": [
+    "turnaround time",
+    "t_completion"
+   ],
+   "chapter": 7,
+   "pages": "291-291",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "turnaround time"
+   ],
+   "note": "T_completion - T_arrival"
+  },
+  {
+   "topic": "response time",
+   "aliases": [
+    "tempo de resposta",
+    "t_firstrun"
+   ],
+   "chapter": 7,
+   "pages": "295-295",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "response time"
+   ],
+   "note": "T_firstrun - T_arrival"
+  },
+  {
+   "topic": "fifo scheduling",
+   "aliases": [
+    "fcfs",
+    "first in first out",
+    "convoy"
+   ],
+   "chapter": 7,
+   "pages": "291-293",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "convoy effect"
+   ],
+   "note": "convoy effect"
+  },
+  {
+   "topic": "sjf",
+   "aliases": [
+    "shortest job first"
+   ],
+   "chapter": 7,
+   "pages": "293-294",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "shortest job first"
+   ],
+   "note": "non-preemptive"
+  },
+  {
+   "topic": "stcf",
+   "aliases": [
+    "psjf",
+    "shortest time-to-completion first"
+   ],
+   "chapter": 7,
+   "pages": "294-295",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "shortest time-to-completion first"
+   ],
+   "note": "preemptive"
+  },
+  {
+   "topic": "round robin",
+   "aliases": [
+    "rr",
+    "time slice",
+    "quantum"
+   ],
+   "chapter": 7,
+   "pages": "296-297",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "round robin"
+   ],
+   "note": "time slicing; good response, bad turnaround"
+  },
+  {
+   "topic": "amortization",
+   "aliases": [
+    "amortizacao"
+   ],
+   "chapter": 7,
+   "pages": "297-297",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "amortization"
+   ],
+   "note": "10 ms slice / 1 ms switch"
+  },
+  {
+   "topic": "mlfq",
+   "aliases": [
+    "multi-level feedback queue",
+    "feedback queue",
+    "priority boost",
+    "allotment"
+   ],
+   "chapter": 8,
+   "pages": "380-389",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "allotment"
+   ],
+   "note": "rules 1-5; gaming; boost"
+  },
+  {
+   "topic": "lottery scheduling",
+   "aliases": [
+    "lottery",
+    "tickets",
+    "ticket"
+   ],
+   "chapter": 9,
+   "pages": "465-469",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "lottery scheduling"
+   ],
+   "note": "tickets, currency, transfer, inflation"
+  },
+  {
+   "topic": "stride scheduling",
+   "aliases": [
+    "stride",
+    "pass"
+   ],
+   "chapter": 9,
+   "pages": "470-471",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "stride scheduling"
+   ],
+   "note": "deterministic"
+  },
+  {
+   "topic": "cfs",
+   "aliases": [
+    "completely fair scheduler",
+    "vruntime",
+    "sched_latency",
+    "nice"
+   ],
+   "chapter": 9,
+   "pages": "471-476",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "vruntime"
+   ],
+   "note": "vruntime, weights, red-black tree"
+  },
+  {
+   "topic": "multiprocessor scheduling",
+   "aliases": [
+    "sqms",
+    "mqms",
+    "cache affinity",
+    "work stealing",
+    "multiprocessador"
+   ],
+   "chapter": 10,
+   "pages": "528-537",
+   "ref": "references/02-escalonamento-de-cpu.md",
+   "check": [
+    "work stealing"
+   ],
+   "note": "SQMS vs MQMS"
+  },
+  {
+   "topic": "address space",
+   "aliases": [
+    "espaco de enderecos",
+    "endereco virtual",
+    "virtual address"
+   ],
+   "chapter": 13,
+   "pages": "45-49",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "address space"
+   ],
+   "note": "code, heap, stack"
+  },
+  {
+   "topic": "malloc e free",
+   "aliases": [
+    "malloc",
+    "free",
+    "memory api",
+    "leak",
+    "double free"
+   ],
+   "chapter": 14,
+   "pages": "121-128",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "malloc"
+   ],
+   "note": "common errors; brk/sbrk/mmap"
+  },
+  {
+   "topic": "base and bounds",
+   "aliases": [
+    "base e bounds",
+    "dynamic relocation",
+    "relocacao"
+   ],
+   "chapter": 15,
+   "pages": "202-205",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "base and bounds"
+   ],
+   "note": "PA = VA + base"
+  },
+  {
+   "topic": "segmentation",
+   "aliases": [
+    "segmentation fault",
+    "segmento",
+    "segmentacao"
+   ],
+   "chapter": 16,
+   "pages": "303-312",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "segmentation"
+   ],
+   "note": "base/bounds per segment"
+  },
+  {
+   "topic": "external fragmentation",
+   "aliases": [
+    "compaction",
+    "fragmentacao externa"
+   ],
+   "chapter": 16,
+   "pages": "311-312",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "external fragmentation"
+   ],
+   "note": "compaction and free-list"
+  },
+  {
+   "topic": "free-space management",
+   "aliases": [
+    "free list",
+    "best fit",
+    "worst fit",
+    "first fit",
+    "next fit",
+    "buddy",
+    "slab",
+    "splitting",
+    "coalescing"
+   ],
+   "chapter": 17,
+   "pages": "392-406",
+   "ref": "references/03-address-space-traducao-segmentacao-e-free-space.md",
+   "check": [
+    "best fit"
+   ],
+   "note": "splitting, coalescing, buddy"
+  },
+  {
+   "topic": "paging",
+   "aliases": [
+    "page table",
+    "pte",
+    "vpn",
+    "pfn",
+    "paginacao"
+   ],
+   "chapter": 18,
+   "pages": "479-490",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "page table"
+   ],
+   "note": "VPN+offset; PTE; linear page table"
+  },
+  {
+   "topic": "PTE bits",
+   "aliases": [
+    "valid bit",
+    "present bit",
+    "dirty bit",
+    "reference bit",
+    "bits do pte"
+   ],
+   "chapter": 18,
+   "pages": "484-485",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "valid bit"
+   ],
+   "note": "valid, present, dirty, reference"
+  },
+  {
+   "topic": "tlb",
+   "aliases": [
+    "translation lookaside buffer",
+    "tlb hit",
+    "tlb miss",
+    "asid",
+    "tlb coverage"
+   ],
+   "chapter": 19,
+   "pages": "541-553",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "translation-lookaside buffer"
+   ],
+   "note": "translation cache"
+  },
+  {
+   "topic": "tlb software-managed",
+   "aliases": [
+    "hardware-managed tlb",
+    "software-managed tlb"
+   ],
+   "chapter": 19,
+   "pages": "546-548",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "software-managed"
+   ],
+   "note": "who handles the miss"
+  },
+  {
+   "topic": "multi-level page tables",
+   "aliases": [
+    "multi-level page table",
+    "page directory",
+    "pde",
+    "tabela de paginas multinivel",
+    "tabelas multinivel"
+   ],
+   "chapter": 20,
+   "pages": "600-607",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "page directory"
+   ],
+   "note": "directory + page-table pages"
+  },
+  {
+   "topic": "inverted page table",
+   "aliases": [
+    "tabela invertida"
+   ],
+   "chapter": 20,
+   "pages": "608-608",
+   "ref": "references/04-paginacao-tlb-e-tabelas-de-paginas.md",
+   "check": [
+    "inverted page table"
+   ],
+   "note": "one entry per physical page"
+  },
+  {
+   "topic": "swap space",
+   "aliases": [
+    "swapping",
+    "swap"
+   ],
+   "chapter": 21,
+   "pages": "641-642",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "swap space"
+   ],
+   "note": "disk area"
+  },
+  {
+   "topic": "page fault",
+   "aliases": [
+    "page-fault handler",
+    "falta de pagina"
+   ],
+   "chapter": 21,
+   "pages": "642-646",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "page fault"
+   ],
+   "note": "handled in software"
+  },
+  {
+   "topic": "watermarks",
+   "aliases": [
+    "high watermark",
+    "low watermark",
+    "swap daemon",
+    "page daemon"
+   ],
+   "chapter": 21,
+   "pages": "646-647",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "high watermark"
+   ],
+   "note": "free pages in the background"
+  },
+  {
+   "topic": "amat",
+   "aliases": [
+    "average memory access time"
+   ],
+   "chapter": 22,
+   "pages": "690-691",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "amat"
+   ],
+   "note": "T_M + P_miss x T_D"
+  },
+  {
+   "topic": "optimal policy",
+   "aliases": [
+    "optimal",
+    "belady",
+    "opt",
+    "politica otima"
+   ],
+   "chapter": 22,
+   "pages": "691-693",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "optimal"
+   ],
+   "note": "evicts the page used farthest in the future"
+  },
+  {
+   "topic": "fifo replacement",
+   "aliases": [
+    "fifo",
+    "belady anomaly",
+    "belady's anomaly"
+   ],
+   "chapter": 22,
+   "pages": "693-694",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "belady"
+   ],
+   "note": "Belady's anomaly"
+  },
+  {
+   "topic": "lru",
+   "aliases": [
+    "least recently used",
+    "lfu",
+    "stack property"
+   ],
+   "chapter": 22,
+   "pages": "696-697",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "least-recently-used"
+   ],
+   "note": "uses history"
+  },
+  {
+   "topic": "clock",
+   "aliases": [
+    "clock algorithm",
+    "use bit"
+   ],
+   "chapter": 22,
+   "pages": "701-702",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "clock algorithm"
+   ],
+   "note": "approximates LRU"
+  },
+  {
+   "topic": "thrashing",
+   "aliases": [
+    "admission control",
+    "oom killer",
+    "out-of-memory killer"
+   ],
+   "chapter": 22,
+   "pages": "703-703",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "thrashing"
+   ],
+   "note": "oversubscribed memory"
+  },
+  {
+   "topic": "vax/vms",
+   "aliases": [
+    "vms",
+    "segmented fifo",
+    "demand zeroing",
+    "copy-on-write",
+    "cow"
+   ],
+   "chapter": 23,
+   "pages": "724-730",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "segmented fifo"
+   ],
+   "note": "VMS and lazy tricks"
+  },
+  {
+   "topic": "linux vm",
+   "aliases": [
+    "huge pages",
+    "page cache",
+    "2q",
+    "kmalloc",
+    "vmalloc",
+    "aslr",
+    "kpti",
+    "meltdown",
+    "spectre",
+    "nx bit"
+   ],
+   "chapter": 23,
+   "pages": "730-739",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "transparent huge page"
+   ],
+   "note": "Linux/x86"
+  },
+  {
+   "topic": "vmm",
+   "aliases": [
+    "hypervisor",
+    "virtual machine monitor",
+    "shadow page table",
+    "para-virtualization"
+   ],
+   "chapter": 24,
+   "pages": "677-687",
+   "ref": "references/05-swapping-politicas-de-substituicao-e-vm-completo.md",
+   "check": [
+    "hypervisor"
+   ],
+   "note": "appendix B"
+  },
+  {
+   "topic": "thread",
+   "aliases": [
+    "threads",
+    "tcb",
+    "parallelism"
+   ],
+   "chapter": 26,
+   "pages": "52-54",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "thread control block"
+   ],
+   "note": "same address space, own stack"
+  },
+  {
+   "topic": "race condition",
+   "aliases": [
+    "data race",
+    "critical section",
+    "mutual exclusion",
+    "indeterminate"
+   ],
+   "chapter": 26,
+   "pages": "60-61",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "race condition"
+   ],
+   "note": "critical section and mutual exclusion"
+  },
+  {
+   "topic": "atomicity",
+   "aliases": [
+    "atomic",
+    "atomicidade"
+   ],
+   "chapter": 26,
+   "pages": "62-63",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "atomic"
+   ],
+   "note": "all or nothing"
+  },
+  {
+   "topic": "pthread api",
+   "aliases": [
+    "pthread_create",
+    "pthread_join",
+    "pthread_mutex"
+   ],
+   "chapter": 27,
+   "pages": "133-139",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "pthread_create"
+   ],
+   "note": "creation, join, locks, CV"
+  },
+  {
+   "topic": "locks",
+   "aliases": [
+    "lock",
+    "mutex",
+    "spin lock"
+   ],
+   "chapter": 28,
+   "pages": "213-215",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "mutex"
+   ],
+   "note": "criteria: mutual exclusion, fairness, performance"
+  },
+  {
+   "topic": "test-and-set",
+   "aliases": [
+    "compare-and-swap",
+    "load-linked",
+    "store-conditional",
+    "fetch-and-add",
+    "ticket lock"
+   ],
+   "chapter": 28,
+   "pages": "218-226",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "test-and-set"
+   ],
+   "note": "hardware primitives"
+  },
+  {
+   "topic": "futex",
+   "aliases": [
+    "two-phase lock",
+    "park",
+    "unpark",
+    "priority inversion"
+   ],
+   "chapter": 28,
+   "pages": "227-232",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "futex"
+   ],
+   "note": "sleep instead of spinning"
+  },
+  {
+   "topic": "approximate counter",
+   "aliases": [
+    "concurrent counter",
+    "hash table concorrente",
+    "concurrent queue",
+    "contador aproximado"
+   ],
+   "chapter": 29,
+   "pages": "315-327",
+   "ref": "references/06-concorrencia-threads-locks-e-estruturas.md",
+   "check": [
+    "approximate counter"
+   ],
+   "note": "concurrent data structures"
+  },
+  {
+   "topic": "condition variable",
+   "aliases": [
+    "cv",
+    "pthread_cond_wait",
+    "mesa semantics",
+    "hoare semantics",
+    "covering condition"
+   ],
+   "chapter": 30,
+   "pages": "410-425",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "condition variable"
+   ],
+   "note": "wait/signal; while"
+  },
+  {
+   "topic": "producer consumer",
+   "aliases": [
+    "bounded buffer",
+    "produtor consumidor"
+   ],
+   "chapter": 30,
+   "pages": "415-423",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "bounded buffer"
+   ],
+   "note": "two CVs"
+  },
+  {
+   "topic": "semaphore",
+   "aliases": [
+    "sem_wait",
+    "sem_post",
+    "binary semaphore",
+    "semaforo"
+   ],
+   "chapter": 31,
+   "pages": "494-500",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "semaphore"
+   ],
+   "note": "lock = 1; ordering = 0"
+  },
+  {
+   "topic": "reader-writer lock",
+   "aliases": [
+    "rwlock",
+    "dining philosophers",
+    "filosofos",
+    "thread throttling"
+   ],
+   "chapter": 31,
+   "pages": "504-509",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "reader-writer"
+   ],
+   "note": "readers, philosophers, throttling"
+  },
+  {
+   "topic": "deadlock",
+   "aliases": [
+    "quatro condicoes",
+    "hold-and-wait",
+    "circular wait",
+    "livelock",
+    "lock ordering"
+   ],
+   "chapter": 32,
+   "pages": "561-570",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "circular wait"
+   ],
+   "note": "prevent, avoid, detect"
+  },
+  {
+   "topic": "atomicity violation",
+   "aliases": [
+    "order violation",
+    "bugs de concorrencia",
+    "lu et al"
+   ],
+   "chapter": 32,
+   "pages": "557-561",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "order violation"
+   ],
+   "note": "97% of non-deadlock bugs"
+  },
+  {
+   "topic": "event-based concurrency",
+   "aliases": [
+    "event loop",
+    "select",
+    "poll",
+    "aio",
+    "asynchronous i/o",
+    "continuation"
+   ],
+   "chapter": 33,
+   "pages": "611-620",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "event loop"
+   ],
+   "note": "events"
+  },
+  {
+   "topic": "monitors",
+   "aliases": [
+    "monitor",
+    "synchronized",
+    "thundering herd"
+   ],
+   "chapter": 34,
+   "pages": "744-755",
+   "ref": "references/07-condition-variables-semaforos-bugs-e-eventos.md",
+   "check": [
+    "monitor"
+   ],
+   "note": "appendix D"
+  },
+  {
+   "topic": "io devices",
+   "aliases": [
+    "polling",
+    "interrupt",
+    "dma",
+    "pio",
+    "memory-mapped io",
+    "device driver"
+   ],
+   "chapter": 36,
+   "pages": "71-76",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "polling"
+   ],
+   "note": "polling, interrupts, DMA, drivers"
+  },
+  {
+   "topic": "ide driver",
+   "aliases": [
+    "xv6 ide"
+   ],
+   "chapter": 36,
+   "pages": "76-79",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "ide"
+   ],
+   "note": "registers and protocol"
+  },
+  {
+   "topic": "hdd",
+   "aliases": [
+    "hard disk",
+    "disco rigido",
+    "seek",
+    "rotational delay",
+    "track skew"
+   ],
+   "chapter": 37,
+   "pages": "145-149",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "rotational delay"
+   ],
+   "note": "geometry and timings"
+  },
+  {
+   "topic": "I/O time",
+   "aliases": [
+    "t_i/o",
+    "r_i/o",
+    "cheetah",
+    "barracuda",
+    "sequential vs random",
+    "tempo de io"
+   ],
+   "chapter": 37,
+   "pages": "150-152",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "cheetah"
+   ],
+   "note": "T_seek + T_rotation + T_transfer"
+  },
+  {
+   "topic": "disk scheduling",
+   "aliases": [
+    "sstf",
+    "scan",
+    "c-scan",
+    "sptf",
+    "satf",
+    "elevator",
+    "i/o merging"
+   ],
+   "chapter": 37,
+   "pages": "154-158",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "shortest-seek-time-first"
+   ],
+   "note": "SSTF, SCAN, SPTF"
+  },
+  {
+   "topic": "raid",
+   "aliases": [
+    "raid-0",
+    "raid-1",
+    "raid-4",
+    "raid-5",
+    "striping",
+    "mirroring",
+    "parity"
+   ],
+   "chapter": 38,
+   "pages": "235-250",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "raid"
+   ],
+   "note": "levels and formulas"
+  },
+  {
+   "topic": "raid parity",
+   "aliases": [
+    "xor parity",
+    "subtractive parity",
+    "small-write problem",
+    "full-stripe write",
+    "raid paridade"
+   ],
+   "chapter": 38,
+   "pages": "244-248",
+   "ref": "references/08-dispositivos-de-io-discos-e-raid.md",
+   "check": [
+    "small-write problem"
+   ],
+   "note": "parity and the small write"
+  },
+  {
+   "topic": "files and directories",
+   "aliases": [
+    "file",
+    "directory",
+    "inode number",
+    "file descriptor",
+    "open file table",
+    "lseek",
+    "arquivos e diretorios"
+   ],
+   "chapter": 39,
+   "pages": "331-341",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "open file table"
+   ],
+   "note": "file API"
+  },
+  {
+   "topic": "fsync e rename",
+   "aliases": [
+    "fsync",
+    "rename",
+    "atomic rename"
+   ],
+   "chapter": 39,
+   "pages": "342-344",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "fsync"
+   ],
+   "note": "durability and atomicity"
+  },
+  {
+   "topic": "links",
+   "aliases": [
+    "hard link",
+    "symbolic link",
+    "unlink",
+    "link count"
+   ],
+   "chapter": 39,
+   "pages": "346-352",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "symbolic link"
+   ],
+   "note": "unlink and link count"
+  },
+  {
+   "topic": "permissions",
+   "aliases": [
+    "permission bits",
+    "chmod",
+    "acl",
+    "tocttou",
+    "permissoes"
+   ],
+   "chapter": 39,
+   "pages": "352-355",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "tocttou"
+   ],
+   "note": "rwx and TOCTTOU"
+  },
+  {
+   "topic": "vsfs",
+   "aliases": [
+    "very simple file system",
+    "inode",
+    "bitmap",
+    "superblock",
+    "multi-level index",
+    "extent"
+   ],
+   "chapter": 40,
+   "pages": "430-436",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "superblock"
+   ],
+   "note": "on-disk structures"
+  },
+  {
+   "topic": "access path",
+   "aliases": [
+    "open read write io count",
+    "caching e buffering",
+    "page cache fs"
+   ],
+   "chapter": 40,
+   "pages": "438-444",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "page cache"
+   ],
+   "note": "I/Os per operation"
+  },
+  {
+   "topic": "ffs",
+   "aliases": [
+    "fast file system",
+    "cylinder group",
+    "block group",
+    "large-file exception",
+    "sub-blocks"
+   ],
+   "chapter": 41,
+   "pages": "514-525",
+   "ref": "references/09-arquivos-diretorios-vsfs-e-ffs.md",
+   "check": [
+    "cylinder group"
+   ],
+   "note": "disk aware"
+  },
+  {
+   "topic": "crash consistency",
+   "aliases": [
+    "fsck",
+    "file system checker",
+    "crash-consistency problem"
+   ],
+   "chapter": 42,
+   "pages": "573-579",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "crash-consistency"
+   ],
+   "note": "six scenarios; fsck"
+  },
+  {
+   "topic": "journaling",
+   "aliases": [
+    "write-ahead logging",
+    "data journaling",
+    "ordered journaling",
+    "metadata journaling",
+    "revoke record",
+    "checkpoint"
+   ],
+   "chapter": 42,
+   "pages": "579-588",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "journaling"
+   ],
+   "note": "protocols and recovery"
+  },
+  {
+   "topic": "soft updates and cow",
+   "aliases": [
+    "copy-on-write fs",
+    "backpointer",
+    "optimistic crash consistency",
+    "soft updates e cow"
+   ],
+   "chapter": 42,
+   "pages": "589-590",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "soft updates"
+   ],
+   "note": "alternatives"
+  },
+  {
+   "topic": "lfs",
+   "aliases": [
+    "log-structured file system",
+    "segment",
+    "inode map",
+    "imap",
+    "checkpoint region",
+    "cleaner",
+    "roll forward"
+   ],
+   "chapter": 43,
+   "pages": "623-634",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "inode map"
+   ],
+   "note": "sequential writes"
+  },
+  {
+   "topic": "ssd",
+   "aliases": [
+    "flash",
+    "nand",
+    "ftl",
+    "flash translation layer",
+    "write amplification",
+    "wear leveling",
+    "garbage collection",
+    "trim",
+    "overprovisioning"
+   ],
+   "chapter": 44,
+   "pages": "653-669",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "flash translation layer"
+   ],
+   "note": "block/page, FTL, GC"
+  },
+  {
+   "topic": "ssd mapping",
+   "aliases": [
+    "hybrid mapping",
+    "switch merge",
+    "partial merge",
+    "full merge",
+    "log block"
+   ],
+   "chapter": 44,
+   "pages": "664-668",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "hybrid mapping"
+   ],
+   "note": "table size and merges"
+  },
+  {
+   "topic": "data integrity",
+   "aliases": [
+    "lse",
+    "latent sector error",
+    "corruption",
+    "fail-partial",
+    "checksum",
+    "fletcher",
+    "crc",
+    "scrubbing",
+    "misdirected write",
+    "lost write"
+   ],
+   "chapter": 45,
+   "pages": "708-717",
+   "ref": "references/10-consistencia-journaling-lfs-ssd-e-integridade.md",
+   "check": [
+    "fail-partial"
+   ],
+   "note": "checksums and scrubbing"
+  },
+  {
+   "topic": "UDP and communication",
+   "aliases": [
+    "udp",
+    "unreliable communication",
+    "ack",
+    "timeout retry",
+    "exactly-once",
+    "sequence counter",
+    "udp e comunicacao"
+   ],
+   "chapter": 48,
+   "pages": "765-771",
+   "ref": "references/11-sistemas-distribuidos-nfs-e-afs.md",
+   "check": [
+    "sequence counter"
+   ],
+   "note": "unreliable communication"
+  },
+  {
+   "topic": "rpc",
+   "aliases": [
+    "remote procedure call",
+    "stub generator",
+    "marshaling",
+    "xdr",
+    "dsm",
+    "end-to-end argument"
+   ],
+   "chapter": 48,
+   "pages": "771-777",
+   "ref": "references/11-sistemas-distribuidos-nfs-e-afs.md",
+   "check": [
+    "remote procedure call"
+   ],
+   "note": "RPC and DSM"
+  },
+  {
+   "topic": "nfs",
+   "aliases": [
+    "network file system",
+    "stateless",
+    "idempotent",
+    "file handle",
+    "attribute cache",
+    "flush-on-close",
+    "vfs",
+    "vnode"
+   ],
+   "chapter": 49,
+   "pages": "796-808",
+   "ref": "references/11-sistemas-distribuidos-nfs-e-afs.md",
+   "check": [
+    "stateless"
+   ],
+   "note": "NFSv2"
+  },
+  {
+   "topic": "afs",
+   "aliases": [
+    "andrew file system",
+    "whole-file caching",
+    "callback",
+    "fid"
+   ],
+   "chapter": 50,
+   "pages": "816-826",
+   "ref": "references/11-sistemas-distribuidos-nfs-e-afs.md",
+   "check": [
+    "callback"
+   ],
+   "note": "scale"
+  },
+  {
+   "topic": "OS security",
+   "aliases": [
+    "security",
+    "confidentiality",
+    "integrity",
+    "availability",
+    "saltzer schroeder",
+    "least privilege",
+    "seguranca de so"
+   ],
+   "chapter": 53,
+   "pages": "86-89",
+   "ref": "references/12-seguranca-labs-e-lacunas-do-acervo.md",
+   "check": [
+    "least privilege"
+   ],
+   "note": "goals and principles"
+  },
+  {
+   "topic": "authentication",
+   "aliases": [
+    "password",
+    "salt",
+    "biometrics",
+    "two-factor",
+    "false positive",
+    "autenticacao"
+   ],
+   "chapter": 54,
+   "pages": "165-175",
+   "ref": "references/12-seguranca-labs-e-lacunas-do-acervo.md",
+   "check": [
+    "salt"
+   ],
+   "note": "ch.54 (partial)"
+  },
+  {
+   "topic": "access control",
+   "aliases": [
+    "capabilities",
+    "capability",
+    "mandatory access control",
+    "discretionary",
+    "controle de acesso"
+   ],
+   "chapter": 55,
+   "pages": "254-264",
+   "ref": "references/12-seguranca-labs-e-lacunas-do-acervo.md",
+   "check": [
+    "capabilit"
+   ],
+   "note": "ch.55 (partial)"
+  },
+  {
+   "topic": "cryptography",
+   "aliases": [
+    "aes",
+    "public key",
+    "hash criptografico",
+    "tls",
+    "ssl",
+    "certificate",
+    "diffie-hellman",
+    "criptografia"
+   ],
+   "chapter": 56,
+   "pages": "361-368",
+   "ref": "references/12-seguranca-labs-e-lacunas-do-acervo.md",
+   "check": [
+    "public key"
+   ],
+   "note": "ch.56-57 (partial)"
+  },
+  {
+   "topic": "xv6 and labs",
+   "aliases": [
+    "xv6",
+    "laboratorio",
+    "labs",
+    "projetos",
+    "xv6 e labs"
+   ],
+   "chapter": 0,
+   "pages": "762-763",
+   "ref": "references/12-seguranca-labs-e-lacunas-do-acervo.md",
+   "check": [
+    "xv6"
+   ],
+   "note": "appendices E-H"
+  }
+ ],
+ "sem_cobertura": [
+  {
+   "topic": "cgroups",
+   "terms": [
+    "cgroup",
+    "cgroups"
+   ]
+  },
+  {
+   "topic": "docker/containers",
+   "terms": [
+    "docker",
+    "container",
+    "containers"
+   ]
+  },
+  {
+   "topic": "kubernetes",
+   "terms": [
+    "kubernetes",
+    "k8s"
+   ]
+  },
+  {
+   "topic": "systemd",
+   "terms": [
+    "systemd",
+    "systemctl"
+   ]
+  },
+  {
+   "topic": "epoll/io_uring",
+   "terms": [
+    "epoll",
+    "io_uring",
+    "kqueue"
+   ]
+  },
+  {
+   "topic": "Paxos/Raft/consensus",
+   "terms": [
+    "paxos",
+    "raft",
+    "consenso"
+   ]
+  },
+  {
+   "topic": "CAP theorem",
+   "terms": [
+    "cap theorem"
+   ]
+  },
+  {
+   "topic": "KVM",
+   "terms": [
+    "kvm"
+   ]
+  },
+  {
+   "topic": "lockdep",
+   "terms": [
+    "lockdep"
+   ]
+  },
+  {
+   "topic": "seqlock",
+   "terms": [
+    "seqlock"
+   ]
+  },
+  {
+   "topic": "memory barrier/fence",
+   "terms": [
+    "memory barrier",
+    "fence",
+    "membar"
+   ]
+  },
+  {
+   "topic": "TLB shootdown",
+   "terms": [
+    "tlb shootdown",
+    "shootdown"
+   ]
+  },
+  {
+   "topic": "PCID",
+   "terms": [
+    "pcid"
+   ]
+  },
+  {
+   "topic": "vDSO",
+   "terms": [
+    "vdso"
+   ]
+  },
+  {
+   "topic": "posix_spawn",
+   "terms": [
+    "posix_spawn"
+   ]
+  },
+  {
+   "topic": "RAID-Z",
+   "terms": [
+    "raid-z",
+    "raidz"
+   ]
+  },
+  {
+   "topic": "Linux I/O schedulers (CFQ/BFQ/mq-deadline)",
+   "terms": [
+    "cfq",
+    "bfq",
+    "mq-deadline"
+   ]
+  },
+  {
+   "topic": "swappiness",
+   "terms": [
+    "swappiness"
+   ]
+  },
+  {
+   "topic": "readahead",
+   "terms": [
+    "readahead"
+   ]
+  },
+  {
+   "topic": "RCU",
+   "terms": [
+    "rcu",
+    "read-copy-update"
+   ]
+  },
+  {
+   "topic": "MCS/CLH locks",
+   "terms": [
+    "mcs lock",
+    "clh lock"
+   ]
+  },
+  {
+   "topic": "btrfs internals",
+   "terms": [
+    "btrfs internals"
+   ]
+  },
+  {
+   "topic": "ext4 internals",
+   "terms": [
+    "ext4 internals",
+    "jbd2"
+   ]
+  },
+  {
+   "topic": "NUMA balancing",
+   "terms": [
+    "numa balancing"
+   ]
+  },
+  {
+   "topic": "eBPF",
+   "terms": [
+    "ebpf",
+    "bpf"
+   ]
+  },
+  {
+   "topic": "SELinux/AppArmor",
+   "terms": [
+    "selinux",
+    "apparmor"
+   ]
+  },
+  {
+   "topic": "seccomp",
+   "terms": [
+    "seccomp"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "modern-css-layout-expert",
+  "version": "1.0.0",
+  "description": "CSS and layout specialist (cascade, specificity, selectors, box model, Flexbox, Grid, positioning, responsiveness, typography, custom properties, transitions/animations and print) based on The CSS Handbook (Flavio Copes, freeCodeCamp, 2019) and the MDN CSS styling basics and CSS layout indexes.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "css",
+    "layout",
+    "flexbox",
+    "grid",
+    "specificity",
+    "cascade",
+    "box-model",
+    "responsive",
+    "media-queries",
+    "custom-properties",
+    "typography",
+    "transitions",
+    "animations",
+    "print-css"
+  ]
+}

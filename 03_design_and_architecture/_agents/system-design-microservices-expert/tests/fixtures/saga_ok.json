@@ -1,0 +1,11 @@
+{
+  "name": "Order (ok)",
+  "type": "choreography",
+  "uses_distributed_transaction": false,
+  "steps": [
+    {"name": "Create order", "service": "Orders", "compensation": "Cancel order", "idempotent": true, "publishes_event": true, "outbox": true},
+    {"name": "Reserve stock", "service": "Inventory", "compensation": "Release reservation", "idempotent": true, "publishes_event": true, "outbox": true},
+    {"name": "Charge", "service": "Payment", "pivot": true, "idempotent": true, "publishes_event": true, "outbox": true},
+    {"name": "Ship", "service": "Shipping", "idempotent": true, "publishes_event": true, "outbox": true}
+  ]
+}

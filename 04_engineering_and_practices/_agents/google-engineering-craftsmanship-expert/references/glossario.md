@@ -1,0 +1,49 @@
+# Glossary (definitions in English, with the PDF page where the term appears with that meaning)
+
+> Convention: pages = PDF (see `INDEX.md`). Terms used by the agent but absent from the text are marked "(not in the PDF)".
+
+- **Approval (Critique):** gatekeeper stamp that allows the commit; one of the three scoring elements of Critique, together with LGTM and unresolved comments (SWE-G p.286).
+- **Attention set:** the set of people on whom a change is blocked (SWE-G p.285).
+- **Beyoncé Rule:** "if you liked it, you should have put a test on it"; problems caused by infrastructure that CI did not catch are not the change's fault (SWE-G p.19, p.157).
+- **Blaze/Bazel:** internal build system and its open version (2015); artifact-based and declarative (SWE-G p.260, p.266).
+- **Build Cop:** team member who keeps the tests passing in the project and prefers to revert the culprit change (SWE-G p.340; SWE-PREV p.4).
+- **Bus factor:** number of people who need to be hit by a bus for the project to be doomed (SWE-G p.31). "Truck factor" appears in 97TH p.146.
+- **Canary:** deployment to a small part of production before all traffic (SWE-G p.331; SWE-PREV p.10).
+- **CL (Change List) / change:** unit of change sent for review (SWE-G p.121 describes "change"; "changelist (CL)" is defined on p.53).
+- **Churn Rule:** a 2012 rule under which infrastructure teams migrate their users or update in a compatible way (SWE-G p.19).
+- **Code is a liability:** code is a liability; the value is in the functionality (SWE-G p.122, p.223).
+- **Critique:** Google's code review tool (SWE-G p.121, p.279).
+- **DAMP:** "Descriptive And Meaningful Phrases"; prefer clarity over the total absence of repetition in tests (SWE-G p.177).
+- **Effective false positive:** a warning after which the developer took no positive action (SWE-G p.290).
+- **Fake:** lightweight implementation that behaves like the real one (SWE-G p.188, p.192-194).
+- **Flaky test:** test with a nondeterministic result with no change in the code; the book discusses it on p.155 (and on p.183 note 1 the difference from a brittle test).
+- **Flag guarding:** protecting features with flags that can be changed through dynamic configuration (SWE-G p.349).
+- **Genius Myth:** the tendency to attribute success to a single individual (SWE-G p.29).
+- **GSM (Goals/Signals/Metrics):** method for defining metrics (SWE-G p.97).
+- **Haunted graveyard:** part of the code or system that nobody dares to change (SWE-G p.41, p.319).
+- **HRT:** (not in the PDF as an acronym) humility, respect and trust are the "three pillars" (SWE-G p.33).
+- **Hermetic:** in SWE-G, hermetic tests contain everything to set up and tear down their environment (p.155); in the SWE-PREV article, hermetic build steps depend only on declared inputs (p.5).
+- **Hyrum's Law:** with enough users, every observable behavior is depended on by somebody (SWE-G p.15).
+- **Information hiding:** hiding design decisions (secrets) inside modules; origin in Parnas (CC2 p.57).
+- **Interaction testing:** validating calls to dependencies instead of state (SWE-G p.189, p.197-198).
+- **Kythe:** semantic indexing tool used in Code Search (SWE-G p.247, p.323).
+- **LGTM:** "looks good to me", approval that attests to correctness and comprehension (SWE-G p.121, p.126).
+- **LSC (Large-Scale Change):** set of logically related changes that do not fit in an atomic commit (SWE-G p.316).
+- **Loose coupling:** small, visible and flexible connections between modules (CC2 p.45, p.65).
+- **Monorepo / Piper:** single repository and the internal centralized VCS (SWE-G p.239).
+- **One-Version Rule:** developers must not have a choice of which version of a component to use (SWE-G p.240).
+- **OWNERS:** files that list those responsible for directories (SWE-G p.124).
+- **Presubmit:** check before sending or before the commit (SWE-G p.130, p.284, p.294).
+- **QUANTS:** mnemonic of five productivity components (SWE-G p.98-99).
+- **Readability:** mentoring process through code review that leads to language approval (SWE-G p.52-54, p.123).
+- **Release candidate (RC):** delivery unit assembled by CD from the code and configuration approved in the CB (SWE-G p.333).
+- **Rosie:** tool that splits an LSC into testable, reviewable and submittable shards (SWE-G p.323, p.326).
+- **Seam:** point that allows replacing dependencies in tests (SWE-G p.186).
+- **Semantic coupling:** coupling through knowledge of internal workings, the most insidious (CC2 p.67).
+- **Servant leadership:** leading by serving the team (SWE-G p.67-68).
+- **Shift left:** detecting problems earlier in the workflow to reduce cost (SWE-G p.21).
+- **Style arbiters:** owners of each style guide (SWE-G p.114).
+- **TAP:** Google's automated test platform; the book describes it as Test Automation Platform (SWE-G p.339) and, in another passage, as Test Automated Platform (SWE-G p.158).
+- **Tricorder:** static analysis platform integrated into Critique (SWE-G p.291).
+- **Trunk-based development:** one repository and no long-lived dev branches, as popularized by DORA (SWE-G p.231, p.238).
+- **Version skew:** state of a distributed system with several incompatible versions of code, data or configuration (SWE-G p.331).

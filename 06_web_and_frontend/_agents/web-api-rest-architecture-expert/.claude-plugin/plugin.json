@@ -1,0 +1,22 @@
+{
+  "name": "web-api-rest-architecture-expert",
+  "version": "1.1.0",
+  "description": "REST web API design specialist based on Web API Design: The Missing Link (Apigee/Google, 2018): representations and links, permalinks and query URLs, pagination, partial response, status codes with headers, errors, non-CRUD actions, PATCH and versioning.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Platform"
+  },
+  "keywords": [
+    "rest",
+    "api-design",
+    "apigee",
+    "the-missing-link",
+    "links",
+    "hypermedia",
+    "pagination",
+    "partial-response",
+    "http-status",
+    "patch",
+    "versioning"
+  ]
+}

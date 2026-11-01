@@ -1,0 +1,1644 @@
+{
+ "fonte": "LLMS (arXiv 2303.18223v19, 18 Mar 2026; 144 pages, body p.1-99) and PES (arXiv 2402.07927v2, 16 Mar 2025; 12 pages, body p.1-10)",
+ "convencao_pagina": "PDF = printed (arXiv, 1:1) in both sources",
+ "refs": {
+  "01": "01-pes-visao-geral-e-taxonomia.md",
+  "02": "02-pes-tecnicas-de-raciocinio.md",
+  "03": "03-pes-alucinacao-codigo-otimizacao-e-demais.md",
+  "04": "04-llms-fundamentos-scaling-emergencia-gpt.md",
+  "05": "05-llms-recursos-dados-pretreino.md",
+  "06": "06-llms-arquitetura-e-treinamento.md",
+  "07": "07-llms-adaptacao-instrucao-alinhamento-peft.md",
+  "08": "08-llms-utilizacao-prompting-icl-cot-planejamento.md",
+  "09": "09-llms-avaliacao-e-capacidades.md",
+  "10": "10-llms-aplicacoes-e-pesquisa.md",
+  "11": "11-llms-topicos-avancados-contexto-agentes-eficiencia.md",
+  "12": "12-llms-rag-alucinacao-raciocinio-longo-e-conclusao.md"
+ },
+ "secoes": {
+  "LLMS": [
+   [
+    "1",
+    "Introduction",
+    "1-4"
+   ],
+   [
+    "2",
+    "Overview (background, GPT)",
+    "4-11"
+   ],
+   [
+    "3",
+    "Resources",
+    "11-16"
+   ],
+   [
+    "4",
+    "Pre-training",
+    "16-30"
+   ],
+   [
+    "5",
+    "Post-training (IT, alignment, PEFT)",
+    "30-44"
+   ],
+   [
+    "6",
+    "Utilization (prompting, ICL, CoT, planning)",
+    "44-55"
+   ],
+   [
+    "7",
+    "Capability and evaluation",
+    "55-70"
+   ],
+   [
+    "8",
+    "Applications",
+    "70-78"
+   ],
+   [
+    "9",
+    "Advanced topics",
+    "78-96"
+   ],
+   [
+    "10",
+    "Conclusion and directions",
+    "96-98"
+   ],
+   [
+    "CODA",
+    "CODA, update log, acknowledgments",
+    "98-99"
+   ],
+   [
+    "REF",
+    "Bibliographic references (NOT used as content)",
+    "100-144"
+   ]
+  ],
+  "PES": [
+   [
+    "1",
+    "Introduction",
+    "1-2"
+   ],
+   [
+    "2",
+    "Techniques by area (2.1-2.12)",
+    "2-9"
+   ],
+   [
+    "Fig.2",
+    "Taxonomy",
+    "3"
+   ],
+   [
+    "Tab.1",
+    "Table 1 summary of the techniques",
+    "10"
+   ],
+   [
+    "3",
+    "Conclusion",
+    "10"
+   ],
+   [
+    "REF",
+    "References",
+    "10-12"
+   ]
+  ]
+ },
+ "topicos": [
+  {
+   "id": "pes-identificacao",
+   "source": "PES",
+   "title": "Title, authors, version (arXiv 2402.07927v2, 16 Mar 2025)",
+   "pages": "1",
+   "ref": "01",
+   "keywords": [
+    "pes",
+    "prompt engineering survey",
+    "sahoo",
+    "autores",
+    "versao",
+    "data",
+    "arxiv",
+    "titulo",
+    "authors",
+    "version",
+    "date",
+    "title"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-taxonomia",
+   "source": "PES",
+   "title": "Taxonomy of 12 areas and 41 techniques (Fig. 2)",
+   "pages": "3",
+   "ref": "01",
+   "keywords": [
+    "taxonomia",
+    "fig 2",
+    "categorias",
+    "41 tecnicas",
+    "areas de aplicacao",
+    "taxonomy",
+    "categories",
+    "41 techniques",
+    "application areas"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-tabela1",
+   "source": "PES",
+   "title": "Table 1: prompt acquisition, turns, models, datasets, metrics",
+   "pages": "10",
+   "ref": "01",
+   "keywords": [
+    "tabela 1",
+    "table 1",
+    "prompt acquisition",
+    "manual",
+    "lm generated",
+    "retrieval based",
+    "hybrid",
+    "single",
+    "multi",
+    "datasets",
+    "metricas",
+    "metrics"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-zero-few",
+   "source": "PES",
+   "title": "Zero-shot and few-shot",
+   "pages": "2",
+   "ref": "02",
+   "keywords": [
+    "zero-shot",
+    "few-shot",
+    "zero shot",
+    "few shot",
+    "sem exemplos",
+    "poucos exemplos",
+    "gpt-3",
+    "no examples",
+    "few examples"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-cot-familia",
+   "source": "PES",
+   "title": "CoT, Auto-CoT, Self-Consistency, LogiCoT",
+   "pages": "2-4",
+   "ref": "02",
+   "keywords": [
+    "cot",
+    "chain of thought",
+    "cadeia de pensamento",
+    "auto-cot",
+    "self-consistency",
+    "logicot",
+    "consistencia propria",
+    "let's think step by step"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-estruturas",
+   "source": "PES",
+   "title": "CoS, ToT, GoT (reasoning structures)",
+   "pages": "4",
+   "ref": "02",
+   "keywords": [
+    "chain of symbol",
+    "tree of thoughts",
+    "graph of thoughts",
+    "tot",
+    "got",
+    "arvore",
+    "grafo de pensamentos",
+    "busca",
+    "tree",
+    "search"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-contexto",
+   "source": "PES",
+   "title": "System 2 Attention, Thread of Thought, Chain of Table",
+   "pages": "4",
+   "ref": "02",
+   "keywords": [
+    "system 2 attention",
+    "s2a",
+    "thread of thought",
+    "thot",
+    "chain of table",
+    "contexto ruidoso",
+    "tabela",
+    "noisy context",
+    "table"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-refinamento",
+   "source": "PES",
+   "title": "Self-Refine, Code Prompting, ECHO, Logic-of-Thought, IAP",
+   "pages": "4-5",
+   "ref": "02",
+   "keywords": [
+    "self-refine",
+    "autorrefinamento",
+    "code prompting",
+    "echo",
+    "logic-of-thought",
+    "iap",
+    "instance-adaptive"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-grafos-narrativa",
+   "source": "PES",
+   "title": "EEDP, Layer-of-Thoughts, Narrative-of-Thought, Buffer of Thoughts",
+   "pages": "5-6",
+   "ref": "02",
+   "keywords": [
+    "eedp",
+    "layer-of-thoughts",
+    "narrative-of-thought",
+    "buffer of thoughts",
+    "bot",
+    "grafos",
+    "temporal",
+    "juridico",
+    "graphs",
+    "legal"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-ruido-eficiencia",
+   "source": "PES",
+   "title": "CD-CoT, R-CoT, Chain of Draft",
+   "pages": "6-7",
+   "ref": "02",
+   "keywords": [
+    "cd-cot",
+    "noisy rationales",
+    "r-cot",
+    "reverse chain",
+    "chain of draft",
+    "cod",
+    "tokens",
+    "latencia",
+    "latency"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-alucinacao",
+   "source": "PES",
+   "title": "RAG, ReAct, CoVe, Chain-of-Note, Chain-of-Knowledge",
+   "pages": "7-8",
+   "ref": "03",
+   "keywords": [
+    "rag",
+    "react",
+    "cove",
+    "chain-of-verification",
+    "chain-of-note",
+    "chain-of-knowledge",
+    "alucinacao",
+    "hallucination",
+    "recuperacao",
+    "retrieval"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-active-ape",
+   "source": "PES",
+   "title": "Active-Prompt (§2.4) and APE (§2.5)",
+   "pages": "8",
+   "ref": "03",
+   "keywords": [
+    "active-prompt",
+    "ape",
+    "automatic prompt engineer",
+    "incerteza",
+    "otimizacao de prompt",
+    "uncertainty",
+    "prompt optimization"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-art-ccot-emotion",
+   "source": "PES",
+   "title": "ART, Contrastive CoT, Emotion Prompting",
+   "pages": "8",
+   "ref": "03",
+   "keywords": [
+    "art",
+    "automatic reasoning and tool-use",
+    "contrastive cot",
+    "ccot",
+    "emotion prompting",
+    "emotionprompt",
+    "ferramentas",
+    "tools"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-codigo",
+   "source": "PES",
+   "title": "Scratchpad, PoT, SCoT, Chain of Code",
+   "pages": "8-9",
+   "ref": "03",
+   "keywords": [
+    "scratchpad",
+    "program of thoughts",
+    "pot",
+    "structured cot",
+    "scot",
+    "chain of code",
+    "coc",
+    "codigo",
+    "interpretador",
+    "code",
+    "interpreter"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-opro-rar-stepback",
+   "source": "PES",
+   "title": "OPRO, Rephrase and Respond, Step-Back",
+   "pages": "9",
+   "ref": "03",
+   "keywords": [
+    "opro",
+    "optimization by prompting",
+    "rar",
+    "rephrase and respond",
+    "step-back",
+    "take a step back",
+    "abstracao",
+    "abstraction"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pes-conclusao",
+   "source": "PES",
+   "title": "Conclusion: challenges and trends",
+   "pages": "10",
+   "ref": "01",
+   "keywords": [
+    "conclusao",
+    "viés",
+    "vieses",
+    "interpretabilidade",
+    "meta-learning",
+    "hybrid prompting",
+    "etica",
+    "conclusion",
+    "bias",
+    "biases",
+    "interpretability",
+    "ethics"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-identificacao",
+   "source": "LLMS",
+   "title": "Title, authors, version v19 (18 Mar 2026), changelog",
+   "pages": "1,98-99",
+   "ref": "04",
+   "keywords": [
+    "llms",
+    "survey of large language models",
+    "zhao",
+    "versao",
+    "v19",
+    "v18",
+    "data",
+    "changelog",
+    "update log",
+    "arxiv 2303.18223",
+    "version",
+    "date"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-quatro-geracoes",
+   "source": "LLMS",
+   "title": "Four generations of LMs (SLM, NLM, PLM, LLM)",
+   "pages": "1-3",
+   "ref": "04",
+   "keywords": [
+    "slm",
+    "nlm",
+    "plm",
+    "n-gram",
+    "word2vec",
+    "elmo",
+    "bert",
+    "geracoes",
+    "statistical language model",
+    "generations"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-definicao",
+   "source": "LLMS",
+   "title": "Definition of LLM and differences from PLM",
+   "pages": "3-4",
+   "ref": "04",
+   "keywords": [
+    "definicao llm",
+    "10b",
+    "centenas de bilhoes",
+    "plm vs llm",
+    "large language model definition",
+    "llm definition",
+    "hundreds of billions"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-scaling-laws",
+   "source": "LLMS",
+   "title": "Scaling laws: KM (Kaplan) and Chinchilla (Eq. 1-3)",
+   "pages": "4-5",
+   "ref": "04",
+   "keywords": [
+    "scaling law",
+    "kaplan",
+    "km",
+    "chinchilla",
+    "hoffmann",
+    "c=6nd",
+    "6nd",
+    "nopt",
+    "dopt",
+    "compute optimal",
+    "lei de escala",
+    "flops",
+    "parametros",
+    "parameters"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-scaling-discussao",
+   "source": "LLMS",
+   "title": "Predictable scaling, diminishing returns, inverse scaling",
+   "pages": "5",
+   "ref": "04",
+   "keywords": [
+    "predictable scaling",
+    "diminishing returns",
+    "inverse scaling",
+    "data constrained",
+    "task-level predictability"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-emergentes",
+   "source": "LLMS",
+   "title": "Emergent abilities (ICL, instruction following, CoT)",
+   "pages": "5-6",
+   "ref": "04",
+   "keywords": [
+    "emergent abilities",
+    "capacidades emergentes",
+    "emergencia",
+    "in-context learning",
+    "icl",
+    "grokking",
+    "fase de transicao",
+    "phase transition",
+    "emergence"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-tecnicas-chave",
+   "source": "LLMS",
+   "title": "Key techniques: scaling, training, eliciting, alignment, tools",
+   "pages": "6-7",
+   "ref": "04",
+   "keywords": [
+    "key techniques",
+    "ability eliciting",
+    "alignment tuning",
+    "tools manipulation",
+    "plugins"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-gpt",
+   "source": "LLMS",
+   "title": "GPT evolution (GPT-1 to GPT-4 Turbo, Codex, InstructGPT, ChatGPT)",
+   "pages": "7-11",
+   "ref": "04",
+   "keywords": [
+    "gpt-1",
+    "gpt-2",
+    "gpt-3",
+    "gpt-4",
+    "chatgpt",
+    "codex",
+    "instructgpt",
+    "gpt-4v",
+    "gpt-4 turbo",
+    "openai",
+    "gpt-3.5"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-modelos-apis",
+   "source": "LLMS",
+   "title": "Checkpoints and APIs (LLaMA, Mistral, Gemma, Qwen, GLM, Baichuan; Tab. 1)",
+   "pages": "8,11-13",
+   "ref": "05",
+   "keywords": [
+    "llama",
+    "mistral",
+    "mixtral",
+    "gemma",
+    "qwen",
+    "glm",
+    "baichuan",
+    "alpaca",
+    "vicuna",
+    "tabela 1",
+    "checkpoints",
+    "api",
+    "table 1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-corpora",
+   "source": "LLMS",
+   "title": "Pre-training corpora (Tab. 2)",
+   "pages": "13-14",
+   "ref": "05",
+   "keywords": [
+    "corpora",
+    "commoncrawl",
+    "c4",
+    "the pile",
+    "redpajama",
+    "refinedweb",
+    "dolma",
+    "roots",
+    "bookcorpus",
+    "wikipedia",
+    "stack"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-datasets-ajuste",
+   "source": "LLMS",
+   "title": "Instruction tuning and alignment datasets (Tab. 3-4)",
+   "pages": "14-15",
+   "ref": "05",
+   "keywords": [
+    "flan",
+    "p3",
+    "sharegpt",
+    "openassistant",
+    "dolly",
+    "self-instruct",
+    "alpaca-52k",
+    "baize",
+    "hh-rlhf",
+    "shp",
+    "pku-saferlhf"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-bibliotecas",
+   "source": "LLMS",
+   "title": "Libraries (Transformers, DeepSpeed, Megatron-LM, vLLM, ...)",
+   "pages": "16",
+   "ref": "05",
+   "keywords": [
+    "transformers",
+    "deepspeed",
+    "megatron",
+    "jax",
+    "colossal-ai",
+    "vllm",
+    "bmtrain",
+    "fastmoe",
+    "deepspeed-chat"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-dados-pretreino",
+   "source": "LLMS",
+   "title": "Data sources and preparation (Fig. 6-7)",
+   "pages": "16-19",
+   "ref": "05",
+   "keywords": [
+    "dados de pre-treino",
+    "pretraining data",
+    "filtragem",
+    "filtering",
+    "deduplicacao",
+    "deduplication",
+    "privacidade",
+    "pii",
+    "qualidade de dados",
+    "data quality",
+    "pre-training data",
+    "privacy"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-tokenizacao",
+   "source": "LLMS",
+   "title": "Tokenization: BPE, WordPiece, Unigram, SentencePiece",
+   "pages": "19-20",
+   "ref": "05",
+   "keywords": [
+    "tokenizacao",
+    "tokenization",
+    "bpe",
+    "byte-pair",
+    "wordpiece",
+    "unigram",
+    "sentencepiece",
+    "vocabulario",
+    "vocabulary"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-data-scheduling",
+   "source": "LLMS",
+   "title": "Data mixture and curriculum",
+   "pages": "20-21",
+   "ref": "05",
+   "keywords": [
+    "data mixture",
+    "data curriculum",
+    "doremi",
+    "mistura de dados",
+    "curriculo",
+    "codellama",
+    "llemma",
+    "longllama",
+    "curriculum"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-arquiteturas",
+   "source": "LLMS",
+   "title": "Architectures: encoder-decoder, causal, prefix, MoE, SSM",
+   "pages": "22-23",
+   "ref": "06",
+   "keywords": [
+    "encoder-decoder",
+    "causal decoder",
+    "prefix decoder",
+    "decoder-only",
+    "moe",
+    "mixture of experts",
+    "mamba",
+    "rwkv",
+    "retnet",
+    "hyena",
+    "ssm",
+    "tab 5",
+    "tab 6"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-configuracao",
+   "source": "LLMS",
+   "title": "Normalization, activation, position, attention (Tab. 7)",
+   "pages": "23-26",
+   "ref": "06",
+   "keywords": [
+    "layernorm",
+    "rmsnorm",
+    "deepnorm",
+    "pre-ln",
+    "post-ln",
+    "swiglu",
+    "geglu",
+    "gelu",
+    "rope",
+    "alibi",
+    "flashattention",
+    "pagedattention",
+    "gqa",
+    "mqa",
+    "kv cache"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-rope",
+   "source": "LLMS",
+   "title": "RoPE: θ_i and wavelength (Eq. 4-5)",
+   "pages": "25",
+   "ref": "06",
+   "keywords": [
+    "rope",
+    "rotary",
+    "theta",
+    "wavelength",
+    "comprimento de onda",
+    "base 10000"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-objetivos",
+   "source": "LLMS",
+   "title": "Pre-training objectives: LM, prefix LM, DAE, Mixture-of-Denoisers",
+   "pages": "26",
+   "ref": "06",
+   "keywords": [
+    "language modeling",
+    "lm objective",
+    "denoising autoencoding",
+    "dae",
+    "ul2",
+    "mixture-of-denoisers",
+    "prefix language modeling",
+    "likelihood"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-decodificacao",
+   "source": "LLMS",
+   "title": "Decoding: greedy, beam, temperature, top-k, top-p",
+   "pages": "26-27",
+   "ref": "06",
+   "keywords": [
+    "decoding",
+    "decodificacao",
+    "greedy",
+    "beam search",
+    "temperatura",
+    "temperature",
+    "top-k",
+    "top-p",
+    "nucleus",
+    "length penalty",
+    "eta-sampling",
+    "contrastive decoding",
+    "dola"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-por-que-next-token",
+   "source": "LLMS",
+   "title": "Why next-token prediction works / architecture choice",
+   "pages": "27-28",
+   "ref": "06",
+   "keywords": [
+    "next token",
+    "proxima palavra",
+    "sutskever",
+    "causal decoder zero-shot",
+    "next word"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-otimizacao-treino",
+   "source": "LLMS",
+   "title": "Optimization: batch, learning rate, Adam/AdamW, stability (Tab. 8)",
+   "pages": "28-29",
+   "ref": "06",
+   "keywords": [
+    "batch size",
+    "learning rate",
+    "warmup",
+    "cosine decay",
+    "adamw",
+    "adafactor",
+    "gradient clipping",
+    "weight decay",
+    "loss spike"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-paralelismo",
+   "source": "LLMS",
+   "title": "3D parallelism and mixed precision (FP16/BF16)",
+   "pages": "29-30",
+   "ref": "06",
+   "keywords": [
+    "3d parallelism",
+    "data parallelism",
+    "pipeline",
+    "tensor parallelism",
+    "bf16",
+    "fp16",
+    "mixed precision",
+    "zero",
+    "fsdp",
+    "bloom"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-instruction-tuning",
+   "source": "LLMS",
+   "title": "Instruction tuning: construction, strategies, effects",
+   "pages": "30-34",
+   "ref": "07",
+   "keywords": [
+    "instruction tuning",
+    "ajuste por instrucoes",
+    "sft",
+    "supervised fine-tuning",
+    "self-instruct",
+    "evol-instruct",
+    "wizardlm",
+    "orca",
+    "ifd",
+    "less"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-it-experimento",
+   "source": "LLMS",
+   "title": "IT experiment with LLaMA 7B/13B (Tab. 9-10)",
+   "pages": "33-36",
+   "ref": "07",
+   "keywords": [
+    "tab 10",
+    "tab 9",
+    "flan-t5",
+    "sharegpt",
+    "alpacafarm",
+    "mmlu",
+    "bbh",
+    "lora",
+    "gpus",
+    "tempo de ajuste",
+    "tuning time"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-alinhamento",
+   "source": "LLMS",
+   "title": "Alignment: HHH criteria, alignment tax, red teaming",
+   "pages": "36-37",
+   "ref": "07",
+   "keywords": [
+    "alinhamento",
+    "alignment",
+    "helpful",
+    "honest",
+    "harmless",
+    "hhh",
+    "alignment tax",
+    "red teaming"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-feedback-humano",
+   "source": "LLMS",
+   "title": "Collecting human feedback",
+   "pages": "37-38",
+   "ref": "07",
+   "keywords": [
+    "feedback humano",
+    "rotuladores",
+    "ranking",
+    "elo",
+    "sparrow",
+    "webgpt",
+    "super raters",
+    "human feedback",
+    "labelers"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-rlhf",
+   "source": "LLMS",
+   "title": "RLHF: system, steps, strategies, process-supervised",
+   "pages": "38-40",
+   "ref": "07",
+   "keywords": [
+    "rlhf",
+    "reward model",
+    "ppo",
+    "reinforcement learning from human feedback",
+    "instructgpt",
+    "rlaif",
+    "best-of-n",
+    "rejection sampling",
+    "prm800k",
+    "process supervision",
+    "kl"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-sem-rlhf",
+   "source": "LLMS",
+   "title": "Alignment without RLHF: DPO, Constitutional AI, RAFT, ...",
+   "pages": "40-41",
+   "ref": "07",
+   "keywords": [
+    "dpo",
+    "direct preference optimization",
+    "constitutional ai",
+    "raft",
+    "quark",
+    "self-align",
+    "rrhf",
+    "slic-hf",
+    "figa",
+    "coh"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-sft-rlhf",
+   "source": "LLMS",
+   "title": "SFT vs RLHF comparison",
+   "pages": "41-43",
+   "ref": "07",
+   "keywords": [
+    "sft vs rlhf",
+    "behavior cloning",
+    "clonagem de comportamento",
+    "imitation learning"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-peft",
+   "source": "LLMS",
+   "title": "PEFT: adapter, prefix, prompt tuning, LoRA",
+   "pages": "43-44",
+   "ref": "07",
+   "keywords": [
+    "peft",
+    "lora",
+    "adapter",
+    "prefix tuning",
+    "prompt tuning",
+    "p-tuning",
+    "low-rank",
+    "qlora",
+    "alpaca-lora",
+    "llama-adapter"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-prompt-criacao",
+   "source": "LLMS",
+   "title": "Prompt creation: ingredients and principles",
+   "pages": "44-46",
+   "ref": "08",
+   "keywords": [
+    "prompt engineering",
+    "prompt design",
+    "ingredientes",
+    "task description",
+    "role-playing",
+    "principios de design",
+    "tab 13",
+    "ingredients",
+    "design principles"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-prompt-dicas",
+   "source": "LLMS",
+   "title": "Tab. 12: prompt tips and Tab. 17: performance with prompts",
+   "pages": "46-47,68",
+   "ref": "08",
+   "keywords": [
+    "tab 12",
+    "dicas",
+    "tips",
+    "tab 17",
+    "prompt tips",
+    "prompt examples"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-prompt-otimizacao",
+   "source": "LLMS",
+   "title": "Prompt optimization (discrete and continuous)",
+   "pages": "46-49",
+   "ref": "08",
+   "keywords": [
+    "prompt optimization",
+    "autoprompt",
+    "rlprompt",
+    "tempera",
+    "prewrite",
+    "gps",
+    "ape",
+    "apo",
+    "gpo",
+    "mcts",
+    "spot",
+    "context tuning"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-icl",
+   "source": "LLMS",
+   "title": "In-context learning: formulation, demonstrations, mechanism",
+   "pages": "49-52",
+   "ref": "08",
+   "keywords": [
+    "icl",
+    "in-context learning",
+    "demonstration selection",
+    "demonstration order",
+    "recency bias",
+    "task recognition",
+    "task learning",
+    "kate",
+    "epr",
+    "eq 11",
+    "symbol tuning",
+    "meta-icl"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-cot",
+   "source": "LLMS",
+   "title": "Chain-of-thought: approach, improvements, when and why",
+   "pages": "52-54",
+   "ref": "08",
+   "keywords": [
+    "cot",
+    "chain-of-thought",
+    "tree of thoughts",
+    "graph of thoughts",
+    "self-consistency",
+    "diverse",
+    "tot",
+    "got",
+    "xot",
+    "let's think step by step",
+    "take a deep breath"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-planejamento",
+   "source": "LLMS",
+   "title": "Planning: planner, executor, environment, feedback, refinement",
+   "pages": "54-55",
+   "ref": "08",
+   "keywords": [
+    "planning",
+    "planejamento",
+    "plan-and-solve",
+    "decomp",
+    "pal",
+    "faithful cot",
+    "toolformer",
+    "hugginggpt",
+    "reflexion",
+    "react",
+    "memory",
+    "fig 16"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-aval-basica",
+   "source": "LLMS",
+   "title": "Basic abilities: generation, knowledge, reasoning (Tab. 14)",
+   "pages": "55-61",
+   "ref": "09",
+   "keywords": [
+    "language generation",
+    "knowledge utilization",
+    "complex reasoning",
+    "closed-book",
+    "open-book",
+    "pass@k",
+    "humaneval",
+    "lambada",
+    "gsm8k",
+    "math",
+    "numerical computation"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-aval-avancada",
+   "source": "LLMS",
+   "title": "Advanced abilities: alignment, environment, tools",
+   "pages": "61-63",
+   "ref": "09",
+   "keywords": [
+    "human alignment",
+    "truthfulqa",
+    "interaction with environment",
+    "alfworld",
+    "webshop",
+    "tool manipulation",
+    "voyager"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-benchmarks",
+   "source": "LLMS",
+   "title": "Comprehensive benchmarks: MMLU, BIG-bench, HELM, exams",
+   "pages": "63",
+   "ref": "09",
+   "keywords": [
+    "mmlu",
+    "big-bench",
+    "bbh",
+    "helm",
+    "agieval",
+    "c-eval",
+    "leaderboard",
+    "openai evals",
+    "evaluation harness"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-abordagens-aval",
+   "source": "LLMS",
+   "title": "Evaluation approaches: benchmark, human, model-based (Tab. 15)",
+   "pages": "63-66",
+   "ref": "09",
+   "keywords": [
+    "evaluation approaches",
+    "chatbot arena",
+    "alpacaeval",
+    "mt-bench",
+    "data contamination",
+    "contaminacao",
+    "position bias",
+    "verbosity bias",
+    "self-enhancement",
+    "llm as a judge",
+    "contamination"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-aval-empirica",
+   "source": "LLMS",
+   "title": "Empirical evaluation from 2023 (Tab. 16-17)",
+   "pages": "66-70",
+   "ref": "09",
+   "keywords": [
+    "tab 16",
+    "tab 17",
+    "empirical evaluation",
+    "chatgpt",
+    "claude",
+    "davinci",
+    "llama 2",
+    "vicuna",
+    "falcon",
+    "pythia"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-nlp-ir-rec",
+   "source": "LLMS",
+   "title": "Classic NLP, IR and recommendation",
+   "pages": "70-73",
+   "ref": "10",
+   "keywords": [
+    "classic nlp",
+    "ner",
+    "information extraction",
+    "information retrieval",
+    "reranking",
+    "pointwise",
+    "pairwise",
+    "listwise",
+    "recommender",
+    "recomendacao",
+    "recommendation"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-mllm",
+   "source": "LLMS",
+   "title": "Multimodal LLMs",
+   "pages": "73-75",
+   "ref": "10",
+   "keywords": [
+    "mllm",
+    "multimodal",
+    "visual instruction tuning",
+    "pope",
+    "vision-language",
+    "llava",
+    "minigpt-4"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-kg",
+   "source": "LLMS",
+   "title": "KG-enhanced LLM",
+   "pages": "75-76",
+   "ref": "10",
+   "keywords": [
+    "knowledge graph",
+    "kg",
+    "triplas",
+    "structgpt",
+    "synergy-augmented",
+    "triples"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-llm-avaliador",
+   "source": "LLMS",
+   "title": "LLM for evaluation (LLM-as-judge) and meta-evaluation",
+   "pages": "76-77",
+   "ref": "10",
+   "keywords": [
+    "llm for evaluation",
+    "judge",
+    "meta-evaluation",
+    "llmbar",
+    "mt-bench",
+    "vieses",
+    "biases"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-dominios",
+   "source": "LLMS",
+   "title": "Domains: healthcare, education, law, finance, science",
+   "pages": "77-78",
+   "ref": "10",
+   "keywords": [
+    "healthcare",
+    "saude",
+    "education",
+    "law",
+    "direito",
+    "finance",
+    "bloomberggpt",
+    "med-palm",
+    "scientific research"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-contexto-longo",
+   "source": "LLMS",
+   "title": "Long context: position and window",
+   "pages": "78-79",
+   "ref": "11",
+   "keywords": [
+    "long context",
+    "contexto longo",
+    "position interpolation",
+    "rope scaling",
+    "streamingllm",
+    "lost in the middle",
+    "base modification"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-agentes",
+   "source": "LLMS",
+   "title": "LLM-based agents",
+   "pages": "79-81",
+   "ref": "11",
+   "keywords": [
+    "agent",
+    "agente",
+    "autogpt",
+    "memoria",
+    "planejamento",
+    "execucao",
+    "multi-agent",
+    "langchain",
+    "autogen",
+    "agentverse",
+    "memory",
+    "planning",
+    "execution"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-memoria-treino",
+   "source": "LLMS",
+   "title": "Training memory: 16P and activations (Tab. 18)",
+   "pages": "81-83",
+   "ref": "11",
+   "keywords": [
+    "training memory",
+    "memoria de treino",
+    "16p",
+    "activations",
+    "ativacoes",
+    "gradient checkpointing",
+    "zero",
+    "offload",
+    "flashattention",
+    "sequence parallelism",
+    "ring attention"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-inferencia",
+   "source": "LLMS",
+   "title": "Inference: prefill/decoding, arithmetic intensity (Tab. 19-20)",
+   "pages": "83-85",
+   "ref": "11",
+   "keywords": [
+    "inference",
+    "inferencia",
+    "prefill",
+    "decoding",
+    "kv cache",
+    "arithmetic intensity",
+    "intensidade aritmetica",
+    "memory-bound",
+    "compute-bound",
+    "memory wall",
+    "a100",
+    "flash-decoding",
+    "pagedattention",
+    "continuous batching",
+    "speculative decoding",
+    "cascade",
+    "medusa",
+    "early exit"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-compressao",
+   "source": "LLMS",
+   "title": "Compression: quantization, distillation, pruning (Tab. 21)",
+   "pages": "85-88",
+   "ref": "11",
+   "keywords": [
+    "quantization",
+    "quantizacao",
+    "ptq",
+    "qat",
+    "int8",
+    "int4",
+    "smoothquant",
+    "gptq",
+    "awq",
+    "qlora",
+    "bitsandbytes",
+    "llama.cpp",
+    "distillation",
+    "pruning",
+    "sparsegpt",
+    "tab 21"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-rag",
+   "source": "LLMS",
+   "title": "RAG: flow and improvements",
+   "pages": "88-90",
+   "ref": "12",
+   "keywords": [
+    "rag",
+    "retrieval-augmented generation",
+    "retrieval",
+    "query rewriting",
+    "query expansion",
+    "reranking",
+    "iterative retrieval",
+    "lost in the middle"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-alucinacao",
+   "source": "LLMS",
+   "title": "Hallucination: definition, sources, detection, mitigation",
+   "pages": "59,90-92",
+   "ref": "12",
+   "keywords": [
+    "hallucination",
+    "alucinacao",
+    "intrinsic",
+    "extrinsic",
+    "selfcheckgpt",
+    "factscore",
+    "facttool",
+    "dola",
+    "sycophancy",
+    "exposure bias",
+    "verify-and-edit",
+    "rarr",
+    "ircot"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-long-cot",
+   "source": "LLMS",
+   "title": "Long reasoning (long CoT) and test-time scaling",
+   "pages": "92-96",
+   "ref": "12",
+   "keywords": [
+    "long cot",
+    "test-time scaling",
+    "inference-time scaling",
+    "deepseek-r1",
+    "o1",
+    "grpo",
+    "rloo",
+    "still-2",
+    "reasoning models",
+    "modelos de raciocinio",
+    "verifiable reward"
+   ],
+   "note": ""
+  },
+  {
+   "id": "llms-conclusao",
+   "source": "LLMS",
+   "title": "Conclusion and future directions",
+   "pages": "96-98",
+   "ref": "12",
+   "keywords": [
+    "conclusao",
+    "future directions",
+    "safety",
+    "alignment",
+    "red teaming",
+    "federated learning",
+    "ecossistema",
+    "gpt store",
+    "conclusion",
+    "ecosystem"
+   ],
+   "note": ""
+  }
+ ],
+ "nao_coberto": [
+  {
+   "termo": "prompt injection",
+   "nota": "Absent from LLMS p.1-99 and PES p.1-10 (text search). Prompt security: NOT COVERED."
+  },
+  {
+   "termo": "jailbreak",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "guardrails",
+   "nota": "Absent from both sources (LLMS discusses red teaming and alignment, not production guardrails)."
+  },
+  {
+   "termo": "Model Context Protocol / MCP",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "prompt caching",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "system prompt / system messages / mensagens de sistema",
+   "nota": "Absent from both sources (LLMS mentions prefixes and roles, p.45-46)."
+  },
+  {
+   "termo": "structured output / JSON mode / saída estruturada",
+   "nota": "Absent as a technique; LLMS only mentions JSON generation as a Qwen2.5 improvement (p.11)."
+  },
+  {
+   "termo": "prompt chaining / DSPy",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "KTO",
+   "nota": "Absent (LLMS covers DPO and the cited variants, p.41)."
+  },
+  {
+   "termo": "watermarking",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "token prices / monetary cost / preços por token / custo monetário",
+   "nota": "Absent; only computational and token cost in specific techniques."
+  },
+  {
+   "termo": "GDPR / LGPD",
+   "nota": "Absent; LLMS only cites privacy in general (p.18-19, 77, 97)."
+  },
+  {
+   "termo": "carbon footprint / energy / pegada de carbono / energia",
+   "nota": "Absent from both sources."
+  },
+  {
+   "termo": "state of the art after 2025-2026 / estado da arte posterior a 2025-2026",
+   "nota": "[DATED] Source PES = Mar/2025; LLMS = v19 Mar/2026 but with content mostly up to 2025."
+  },
+  {
+   "termo": "bibliographic content (references, LLMS pages 100-144) / conteúdo bibliográfico",
+   "nota": "References: not used as content."
+  }
+ ],
+ "datado": [
+  {
+   "item": "PES is from Mar/2025 (arXiv v2); the 41 techniques and benchmark numbers reflect 2022-2025",
+   "paginas": "PES p.1,3,10"
+  },
+  {
+   "item": "LLMS is v19 (18 Mar 2026); the log runs to 27 Feb 2026; the CODA still cites the 23 Nov 2023 version as the latest",
+   "paginas": "LLMS p.1,98-99"
+  },
+  {
+   "item": "OpenAI model and API names (ada/babbage/curie/davinci, gpt-3.5-turbo, gpt-4-1106-preview) and temperature/top_p/best_of parameters",
+   "paginas": "LLMS p.12-13,27"
+  },
+  {
+   "item": "Empirical results with LLaMA 7B/13B, Vicuna, Alpaca, ChatGPT, Claude/Claude 2, Davinci-002/003 (Tab. 10, 16, 17, 21)",
+   "paginas": "LLMS p.35,67-70,88"
+  },
+  {
+   "item": "Context windows of 128K (GPT-4 Turbo) and 200K (Claude 2.1)",
+   "paginas": "LLMS p.96"
+  },
+  {
+   "item": "GPT-4 MMLU 86.4% 5-shot; GPT-4 in the top 10% on a simulated law exam",
+   "paginas": "LLMS p.63,77"
+  },
+  {
+   "item": "Long CoT / reasoning models (DeepSeek-R1, o-series, STILL-2): a 2025 section",
+   "paginas": "LLMS p.92-96"
+  },
+  {
+   "item": "The Tab. 12 prompt tips were collected in 2023 for the models of the time (e.g., preference for English in OpenAI models)",
+   "paginas": "LLMS p.46-47"
+  },
+  {
+   "item": "GPUs and training/inference tools (A100/H100, vLLM, DeepSpeed, bitsandbytes) as given in the source",
+   "paginas": "LLMS p.16,83-88"
+  }
+ ],
+ "nao_lido": "No body page was left unread; LLMS pages 100-144 are bibliographic references (not read as content); LLMS tables and figures (Tab.1 p.8, Fig.3 p.9, Fig.6 p.17, Tab.16 p.67) were read only as linearized text."
+}

@@ -1,0 +1,823 @@
+{
+  "fonte": "SVHB (Svelte-Handbook-freeCodeCamp), SKGS (SvelteKit-Getting-Started), ASTRO (Astro-Getting-Started)",
+  "convencao": "page = PDF page; SIGLA in the citation",
+  "checks": [
+    {
+      "cite": "SVHB p.1",
+      "contains": [
+        "october 22, 2019",
+        "flavio copes"
+      ],
+      "claim": "date and author"
+    },
+    {
+      "cite": "SVHB p.1",
+      "contains": [
+        "the svelte handbook",
+        "zero knowledge of svelte"
+      ],
+      "claim": "title and ideal reader"
+    },
+    {
+      "cite": "SVHB p.3",
+      "contains": [
+        "compiled beforehand",
+        "whole framework"
+      ],
+      "claim": "compiled beforehand"
+    },
+    {
+      "cite": "SVHB p.3",
+      "contains": [
+        "svelte disappears",
+        "plain (and fast!) javascript"
+      ],
+      "claim": "Svelte disappears at deploy"
+    },
+    {
+      "cite": "SVHB p.3",
+      "contains": [
+        "node.js installed",
+        "svelte.dev/repl"
+      ],
+      "claim": "Node.js and REPL"
+    },
+    {
+      "cite": "SVHB p.4",
+      "contains": [
+        "npm create vite@latest helloworld -- --template svelte"
+      ],
+      "claim": "creation command"
+    },
+    {
+      "cite": "SVHB p.4",
+      "contains": [
+        "npm install",
+        "npm run dev",
+        "port 5173"
+      ],
+      "claim": "install, dev and port"
+    },
+    {
+      "cite": "SVHB p.6",
+      "contains": [
+        "svelte for vs code",
+        "code ."
+      ],
+      "claim": "VS Code"
+    },
+    {
+      "cite": "SVHB p.8",
+      "contains": [
+        "main.js",
+        "app.svelte",
+        "counter.svelte"
+      ],
+      "claim": "project structure"
+    },
+    {
+      "cite": "SVHB p.8",
+      "contains": [
+        "sveltekit",
+        "official svelte app framework"
+      ],
+      "claim": "mention of SvelteKit in the example"
+    },
+    {
+      "cite": "SVHB p.9",
+      "contains": [
+        "single file component",
+        "the markup (the html)"
+      ],
+      "claim": "SFC"
+    },
+    {
+      "cite": "SVHB p.10",
+      "contains": [
+        "every svelte component is declared in a .svelte"
+      ],
+      "claim": "component in .svelte"
+    },
+    {
+      "cite": "SVHB p.11",
+      "contains": [
+        "export let name",
+        "scoped to the component"
+      ],
+      "claim": "Dog.svelte and scoped CSS"
+    },
+    {
+      "cite": "SVHB p.11",
+      "contains": [
+        "date picker"
+      ],
+      "claim": "date picker example"
+    },
+    {
+      "cite": "SVHB p.12",
+      "contains": [
+        "context=\"module\"",
+        "default export"
+      ],
+      "claim": "context module and default export"
+    },
+    {
+      "cite": "SVHB p.13",
+      "contains": [
+        "changecolor",
+        "use props"
+      ],
+      "claim": "function and props as the best solution"
+    },
+    {
+      "cite": "SVHB p.14",
+      "contains": [
+        "import button, { changecolor }",
+        "let count = 0"
+      ],
+      "claim": "named import and state"
+    },
+    {
+      "cite": "SVHB p.15",
+      "contains": [
+        "count++",
+        "usestate()",
+        "we must also make an assignment"
+      ],
+      "claim": "assignment required"
+    },
+    {
+      "cite": "SVHB p.15",
+      "contains": [
+        "push()",
+        "pop()",
+        "shift()",
+        "splice()"
+      ],
+      "claim": "array-mutating methods"
+    },
+    {
+      "cite": "SVHB p.16",
+      "contains": [
+        "list = list",
+        "list = [...list, 4]"
+      ],
+      "claim": "reassign and spread"
+    },
+    {
+      "cite": "SVHB p.17",
+      "contains": [
+        "$:",
+        "re-run when any variable referenced"
+      ],
+      "claim": "reactive block"
+    },
+    {
+      "cite": "SVHB p.18",
+      "contains": [
+        "double the count is",
+        "opening and closing curly brackets"
+      ],
+      "claim": "several $: and block with braces"
+    },
+    {
+      "cite": "SVHB p.19",
+      "contains": [
+        "one-way form of communication",
+        "parent/child relationship"
+      ],
+      "claim": "one-way props"
+    },
+    {
+      "cite": "SVHB p.20",
+      "contains": [
+        "export let disabled",
+        "shorthand"
+      ],
+      "claim": "export let and shorthand"
+    },
+    {
+      "cite": "SVHB p.21",
+      "contains": [
+        "settimeout",
+        "lifting the state up"
+      ],
+      "claim": "dynamic update and lifting"
+    },
+    {
+      "cite": "SVHB p.22",
+      "contains": [
+        "getcontext",
+        "setcontext",
+        "context api"
+      ],
+      "claim": "context API"
+    },
+    {
+      "cite": "SVHB p.23",
+      "contains": [
+        "only use getcontext",
+        "descendants",
+        "stores"
+      ],
+      "claim": "getContext rule"
+    },
+    {
+      "cite": "SVHB p.23",
+      "contains": [
+        "writable",
+        "svelte/store"
+      ],
+      "claim": "writable"
+    },
+    {
+      "cite": "SVHB p.24",
+      "contains": [
+        "username.set('new username')",
+        "update()"
+      ],
+      "claim": "set and update"
+    },
+    {
+      "cite": "SVHB p.25",
+      "contains": [
+        "get()",
+        "reserved value",
+        "subscribe()"
+      ],
+      "claim": "get, reserved $ and subscribe"
+    },
+    {
+      "cite": "SVHB p.26",
+      "contains": [
+        "readable stores",
+        "can't be updated from the outside"
+      ],
+      "claim": "readable"
+    },
+    {
+      "cite": "SVHB p.27",
+      "contains": [
+        "setinterval",
+        "derived store"
+      ],
+      "claim": "interval and derived"
+    },
+    {
+      "cite": "SVHB p.28",
+      "contains": [
+        "welcomemessage",
+        "<slot />"
+      ],
+      "claim": "derived and slot"
+    },
+    {
+      "cite": "SVHB p.29",
+      "contains": [
+        "props.children",
+        "named slots",
+        "default"
+      ],
+      "claim": "slot and children"
+    },
+    {
+      "cite": "SVHB p.30",
+      "contains": [
+        "slot=\"before\"",
+        "onmount",
+        "ondestroy"
+      ],
+      "claim": "named slot and lifecycle"
+    },
+    {
+      "cite": "SVHB p.31",
+      "contains": [
+        "beforeupdate",
+        "afterupdate",
+        "setinterval"
+      ],
+      "claim": "hooks and timers"
+    },
+    {
+      "cite": "SVHB p.32",
+      "contains": [
+        "clearinterval",
+        "serves the same functionality of ondestroy"
+      ],
+      "claim": "onMount return"
+    },
+    {
+      "cite": "SVHB p.33",
+      "contains": [
+        "two-way binding",
+        "not const"
+      ],
+      "claim": "bind:value and let"
+    },
+    {
+      "cite": "SVHB p.34",
+      "contains": [
+        "bind:group",
+        "bind:indeterminate",
+        "bind:checked"
+      ],
+      "claim": "checkbox bindings"
+    },
+    {
+      "cite": "SVHB p.36",
+      "contains": [
+        "object, not a string",
+        "multiple"
+      ],
+      "claim": "select with objects"
+    },
+    {
+      "cite": "SVHB p.37",
+      "contains": [
+        "bind:files",
+        "playbackrate",
+        "contenteditable"
+      ],
+      "claim": "other bindings"
+    },
+    {
+      "cite": "SVHB p.38",
+      "contains": [
+        "bind:this",
+        "offsetwidth",
+        "read only"
+      ],
+      "claim": "bind:this and read-only"
+    },
+    {
+      "cite": "SVHB p.39",
+      "contains": [
+        "inmovement",
+        "bind:"
+      ],
+      "claim": "bind on a prop"
+    },
+    {
+      "cite": "SVHB p.40",
+      "contains": [
+        "truthy",
+        "{/if}"
+      ],
+      "claim": "if and truthy"
+    },
+    {
+      "cite": "SVHB p.41",
+      "contains": [
+        "{:else if somethingelse}"
+      ],
+      "claim": "else if"
+    },
+    {
+      "cite": "SVHB p.42",
+      "contains": [
+        "{#each}{/each}"
+      ],
+      "claim": "each"
+    },
+    {
+      "cite": "SVHB p.43",
+      "contains": [
+        "always pass an identifier",
+        "unique identifier"
+      ],
+      "claim": "key in each"
+    },
+    {
+      "cite": "SVHB p.44",
+      "contains": [
+        "{#await}",
+        "unresolved, resolved and rejected"
+      ],
+      "claim": "await"
+    },
+    {
+      "cite": "SVHB p.45",
+      "contains": [
+        "{:catch}",
+        "on:<event>"
+      ],
+      "claim": "catch and on:event"
+    },
+    {
+      "cite": "SVHB p.46",
+      "contains": [
+        "inline",
+        "event object"
+      ],
+      "claim": "handler and event"
+    },
+    {
+      "cite": "SVHB p.47",
+      "contains": [
+        "stoppropagation",
+        "preventdefault",
+        "capture",
+        "once",
+        "self"
+      ],
+      "claim": "modifiers"
+    },
+    {
+      "cite": "SVHB p.47",
+      "contains": [
+        "createeventdispatcher"
+      ],
+      "claim": "dispatcher"
+    },
+    {
+      "cite": "SVHB p.48",
+      "contains": [
+        "dispatch('eventname')",
+        "second parameter"
+      ],
+      "claim": "dispatch with payload"
+    },
+    {
+      "cite": "SVHB p.49",
+      "contains": [
+        "sveltekit",
+        "server-side rendered apps with node.js"
+      ],
+      "claim": "where to go next"
+    },
+    {
+      "cite": "SKGS p.1",
+      "contains": [
+        "sveltekit is a framework",
+        "performant web applications"
+      ],
+      "claim": "what SvelteKit is"
+    },
+    {
+      "cite": "SKGS p.1",
+      "contains": [
+        "similar to next",
+        "similar to nuxt"
+      ],
+      "claim": "analogy with Next and Nuxt"
+    },
+    {
+      "cite": "SKGS p.1",
+      "contains": [
+        "interactive tutorial",
+        "discord chatroom"
+      ],
+      "claim": "tutorial and Discord"
+    },
+    {
+      "cite": "SKGS p.1",
+      "contains": [
+        "svelte compiler converts your components to javascript"
+      ],
+      "claim": "compiler"
+    },
+    {
+      "cite": "SKGS p.2",
+      "contains": [
+        "sveltekit vs svelte",
+        "you need more than just svelte"
+      ],
+      "claim": "SvelteKit vs Svelte"
+    },
+    {
+      "cite": "SKGS p.2",
+      "contains": [
+        "router",
+        "build optimizations",
+        "offline support",
+        "preloading",
+        "image optimization"
+      ],
+      "claim": "named features"
+    },
+    {
+      "cite": "SKGS p.2",
+      "contains": [
+        "ssr",
+        "client-side rendering",
+        "prerendering"
+      ],
+      "claim": "rendering modes"
+    },
+    {
+      "cite": "SKGS p.2",
+      "contains": [
+        "vite",
+        "svelte plugin",
+        "hot module replacement"
+      ],
+      "claim": "Vite and HMR"
+    },
+    {
+      "cite": "SKGS p.2",
+      "contains": [
+        "creating a project",
+        "next"
+      ],
+      "claim": "next navigation"
+    },
+    {
+      "cite": "SKGS p.3",
+      "contains": [
+        "svelte summit nov 18-19"
+      ],
+      "claim": "banner without a year"
+    },
+    {
+      "cite": "ASTRO p.1",
+      "contains": [
+        "astro v7 is here",
+        "learn how to upgrade your site"
+      ],
+      "claim": "v7 banner"
+    },
+    {
+      "cite": "ASTRO p.1",
+      "contains": [
+        "astro docs",
+        "install astro"
+      ],
+      "claim": "landing"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "npm create astro@latest",
+        "create a new project with npm"
+      ],
+      "claim": "installation command"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "step-by-step instructions",
+        "cli wizard",
+        "existing astro github repository"
+      ],
+      "claim": "ways to install"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "starter themes",
+        "ecommerce"
+      ],
+      "claim": "themes"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "build a blog tutorial"
+      ],
+      "claim": "tutorial"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "islands architecture",
+        "astro components",
+        "astro template syntax"
+      ],
+      "claim": "named features"
+    },
+    {
+      "cite": "ASTRO p.2",
+      "contains": [
+        "integrations like react and partytown",
+        "type safe content collections"
+      ],
+      "claim": "named extensions"
+    },
+    {
+      "cite": "ASTRO p.3",
+      "contains": [
+        "view transitions",
+        "headless cms"
+      ],
+      "claim": "transitions and CMS"
+    },
+    {
+      "cite": "ASTRO p.3",
+      "contains": [
+        "join our discord",
+        "150+ video lessons",
+        "20% off"
+      ],
+      "claim": "community and promotion"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "svelte 3"
+      ],
+      "claim": "the text does not say 'Svelte 3'"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "svelte 4",
+        "svelte 5"
+      ],
+      "claim": "no version 4/5"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "runes",
+        "$state",
+        "$props",
+        "$derived",
+        "$effect"
+      ],
+      "claim": "no runes"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "{#snippet}",
+        "{@render}",
+        "{@html}",
+        "svelte:head"
+      ],
+      "claim": "no snippets/@html/svelte:head"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "typescript",
+        "lang=\"ts\""
+      ],
+      "claim": "no TypeScript"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "vitest",
+        "jest",
+        "playwright"
+      ],
+      "claim": "no tests"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "transition",
+        "animate"
+      ],
+      "claim": "no transitions/animations"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "use:action",
+        "class:"
+      ],
+      "claim": "no actions or class:"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "hydration",
+        "hydrate"
+      ],
+      "claim": "no hydration"
+    },
+    {
+      "cite": "SVHB p.1-48",
+      "absent": [
+        "ssr",
+        "server-side"
+      ],
+      "claim": "SSR only appears as a mention of SvelteKit on the last page"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "astro"
+      ],
+      "claim": "the handbook does not mention Astro"
+    },
+    {
+      "cite": "SVHB p.1-49",
+      "absent": [
+        "benchmark",
+        "kb"
+      ],
+      "claim": "no performance numbers"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "+page.svelte",
+        "+layout.svelte",
+        "+server.js"
+      ],
+      "claim": "no file conventions"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "npx sv create",
+        "npm create svelte"
+      ],
+      "claim": "no creation command"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "adapter",
+        "deploy"
+      ],
+      "claim": "no adapters/deploy"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "typescript",
+        "runes",
+        "svelte 5"
+      ],
+      "claim": "no TypeScript/runes/Svelte 5"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "astro"
+      ],
+      "claim": "SvelteKit does not mention Astro"
+    },
+    {
+      "cite": "SKGS p.1-3",
+      "absent": [
+        "form actions",
+        "hooks"
+      ],
+      "claim": "no actions/hooks"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        ".astro",
+        "frontmatter",
+        "client:load"
+      ],
+      "claim": "no .astro syntax or client directives"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "svelte",
+        "sveltekit"
+      ],
+      "claim": "Astro does not mention Svelte"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "static site",
+        "server-side rendering",
+        "ssg"
+      ],
+      "claim": "does not say what Astro is"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "typescript",
+        "tailwind"
+      ],
+      "claim": "no TypeScript/Tailwind"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "breaking change",
+        "removed",
+        "deprecated"
+      ],
+      "claim": "no v7 upgrade content"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "vercel",
+        "netlify",
+        "deploy"
+      ],
+      "claim": "no deploy"
+    },
+    {
+      "cite": "ASTRO p.1-3",
+      "absent": [
+        "vue",
+        "angular"
+      ],
+      "claim": "only React is cited in the integrations"
+    }
+  ]
+}

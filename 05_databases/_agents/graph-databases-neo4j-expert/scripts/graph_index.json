@@ -1,0 +1,214 @@
+{
+  "convencao_de_pagina": "NEO4J p.N = PDF page (=== PAGE N === markers); printed page = N - 18",
+  "topics": {
+    "lpg": {
+      "title": "Labeled property graph (LPG) model",
+      "keywords": ["lpg", "labeled property graph", "grafo de propriedades", "no", "node", "relacionamento", "relationship", "propriedade", "property", "rotulo", "label", "labeled property graph model", "property graph", "start node", "end node"],
+      "pages": "NEO4J p.22; p.44-45",
+      "summary": "Nodes with properties and labels; named, directed relationships with a start and end node and properties.",
+      "ref": "references/modelo-de-grafos-de-propriedades-rotuladas.md"
+    },
+    "ifa": {
+      "title": "Index-free adjacency (IFA) and costs",
+      "keywords": ["ifa", "index-free adjacency", "adjacencia livre de indices", "o(1)", "o(log n)", "traversal cost", "custo de travessia", "processamento nativo", "index-free adjacency cost", "native graph processing", "constant time traversal"],
+      "pages": "NEO4J p.23-24; p.167-170",
+      "summary": "Each node holds direct references to its neighbors; the book cites O(log n) vs O(1) per hop and O(m log n) vs O(m) for m steps; it does not use k^d.",
+      "ref": "references/adjacencia-livre-de-indices-ifa-e-performance.md"
+    },
+    "benchmark": {
+      "title": "Table 2-1: friends of friends, RDBMS vs Neo4j",
+      "keywords": ["tabela 2-1", "table 2-1", "benchmark", "partner", "vukotic", "friends of friends", "amigos de amigos", "1543"],
+      "pages": "NEO4J p.38-39",
+      "summary": "1,000,000 people, ~50 friends; RDBMS 0.016 / 30.267 / 1543.505 s / unfinished; Neo4j 0.01 / 0.168 / 1.359 / 2.132 s (depth 2 to 5). DATED.",
+      "ref": "references/adjacencia-livre-de-indices-ifa-e-performance.md"
+    },
+    "relacional": {
+      "title": "Relational databases and connected data",
+      "keywords": ["relacional", "relational", "join", "foreign key", "chave estrangeira", "tabela de juncao", "join table", "recursivo", "connect by", "relational database", "join tables", "recursive join"],
+      "pages": "NEO4J p.29-32",
+      "summary": "Joins, join tables, sparse rows; reciprocal and recursive queries get expensive.",
+      "ref": "references/relacional-vs-nosql-vs-grafos.md"
+    },
+    "nosql": {
+      "title": "Aggregate NoSQL and connected data; Appendix A",
+      "keywords": ["nosql", "agregado", "aggregate", "documento", "key-value", "chave-valor", "column family", "acid vs base", "acid", "riak", "mapreduce", "key value store", "document store", "column family store"],
+      "pages": "NEO4J p.33-36; p.211-224",
+      "summary": "Aggregates have no first-class relationships; joins happen in the application; ACID vs BASE and quadrants in Appendix A.",
+      "ref": "references/nosql-apendice-e-modelos-de-grafo.md"
+    },
+    "cypher": {
+      "title": "Cypher: philosophy, MATCH, RETURN, WHERE, clauses",
+      "keywords": ["cypher", "match", "where", "return", "ascii", "create", "merge", "with", "union", "foreach", "start", "set", "delete", "clausula", "clause", "clauses", "ascii art", "query language"],
+      "pages": "NEO4J p.45-49; p.63-70",
+      "summary": "Pattern drawn in ASCII; anchors by label and property; clause list on p.49; Neo4j 2.x syntax.",
+      "ref": "references/cypher-fundamentos-e-padroes-de-consulta.md"
+    },
+    "indices": {
+      "title": "Indexes and uniqueness constraints (2.x syntax)",
+      "keywords": ["indice", "index", "constraint", "restricao", "unique", "unicidade", "create index", "drop index", "uniqueness constraint", "schema index"],
+      "pages": "NEO4J p.65-66; p.120-121",
+      "summary": "CREATE INDEX ON :Label(prop); CREATE CONSTRAINT ... ASSERT ... IS UNIQUE; without an index the start scans the nodes of the label.",
+      "ref": "references/cypher-fundamentos-e-padroes-de-consulta.md"
+    },
+    "caminho_variavel": {
+      "title": "Variable-length paths and shortestPath",
+      "keywords": ["variable-length", "caminho variavel", "comprimento variavel", "shortestpath", "menor caminho", "*1..", "ilimitado", "path", "variable length path", "unbounded", "shortest path"],
+      "pages": "NEO4J p.58-59; p.66; p.78-81; p.106; p.136",
+      "summary": "Examples *1..5, *1..2, *1..4, *0..2, FORWARD_OF* with no bound; warning about long paths being inefficient (p.136); shortestPath on p.106.",
+      "ref": "references/cypher-avancado-caminhos-variaveis-e-algoritmos.md"
+    },
+    "parametros": {
+      "title": "Query parameters",
+      "keywords": ["parametro", "parameter", "$param", "{name}", "plan cache", "injecao", "query parameter", "parameters", "injection", "cypher injection"],
+      "pages": "NEO4J p.132; p.135; p.144",
+      "summary": "Examples use {name} (2.x syntax). The book does not discuss plan caching or injection: that is extrapolation.",
+      "ref": "references/cypher-fundamentos-e-padroes-de-consulta.md"
+    },
+    "modelagem": {
+      "title": "Modeling guidelines",
+      "keywords": ["modelagem", "modeling", "nos para coisas", "fine-grained", "generico", "fato", "fact", "valor complexo", "value type", "queryability", "story", "graph modeling", "modelling", "data model", "model guidelines", "complex value"],
+      "pages": "NEO4J p.81-89; p.92-93",
+      "summary": "Nodes for entities, relationships for structure; fine-grained vs generic types; facts as nodes; complex values as nodes.",
+      "ref": "references/diretrizes-de-modelagem-em-grafo.md"
+    },
+    "email": {
+      "title": "Email case: a relationship that loses information",
+      "keywords": ["email", "e-mail", "emailed", "provenance", "reply", "forward", "lossy", "emails", "verbing"],
+      "pages": "NEO4J p.70-82",
+      "summary": "EMAILED/CC/BCC between people is lossy; Email nodes with SENT/TO/CC/BCC; replies and forwards as Email:Reply and Email:Forward.",
+      "ref": "references/casos-e-antipadroes.md"
+    },
+    "temporal": {
+      "title": "Time: timeline tree, linked lists, versioning, intervals",
+      "keywords": ["tempo", "time", "timeline", "time tree", "arvore de tempo", "next", "previous", "versionamento", "versioning", "start_date", "intervalo", "timeline tree", "interval", "dates", "linked list"],
+      "pages": "NEO4J p.90-92; p.153-157; p.160-161",
+      "summary": "Year-Month-Day via MERGE; NEXT/PREVIOUS; versioning leaks into queries; start_date/end_date on relationships in Global Post.",
+      "ref": "references/modelagem-temporal-time-trees-e-intervalos.md"
+    },
+    "storage": {
+      "title": "Native storage (fixed-size records, doubly linked lists)",
+      "keywords": ["storage", "armazenamento", "nodestore", "relationshipstore", "propertystore", "registro", "fixed-size", "15 bytes", "34 bytes", "nine bytes", "lista duplamente encadeada", "record", "records", "doubly linked list", "store files", "record layout"],
+      "pages": "NEO4J p.170-175",
+      "summary": "Fig. 6-4: 15-byte node and 34-byte relationship (p.171); the text on p.172 says nine bytes (inconsistency); two doubly linked lists per relationship.",
+      "ref": "references/neo4j-storage-internals-e-page-cache.md"
+    },
+    "cache": {
+      "title": "Page cache (LRU-K, off-heap)",
+      "keywords": ["page cache", "cache", "lru-k", "off-heap", "heap", "gc", "off heap", "memory", "sizing"],
+      "pages": "NEO4J p.175-176; p.114-116",
+      "summary": "Since Neo4j 2.2, an off-heap LRU-K style cache; sizing: whole store in the page cache, modest heap (4-8 GB is not unusual).",
+      "ref": "references/neo4j-storage-internals-e-page-cache.md"
+    },
+    "transacoes": {
+      "title": "Transactions, WAL, recovery",
+      "keywords": ["transacao", "transaction", "acid", "lock", "deadlock", "wal", "write ahead log", "recuperacao", "recoverability", "isolation", "transactions", "write lock", "recovery", "write-ahead log"],
+      "pages": "NEO4J p.180-182",
+      "summary": "Write locks on nodes and relationships; deadlock detected and transactions serialized; WAL with idempotent replay. The book does not mention Read Committed.",
+      "ref": "references/transacoes-acid-concorrencia-e-cluster-causal.md"
+    },
+    "cluster": {
+      "title": "Master-slave high availability (DATED), scale, sharding",
+      "keywords": ["cluster", "master", "slave", "mestre", "escravo", "ha", "replicacao", "replication", "sharding", "cache sharding", "causal", "raft", "paxos", "escala", "scale", "high availability", "clustering", "master-slave", "failover", "read replica"],
+      "pages": "NEO4J p.99-102; p.116; p.182-188",
+      "summary": "Master-slave; writing through a slave is slower; cache sharding; sharding in the application; automatic partitioning is NP-hard. Causal Cluster/Raft are not in the book.",
+      "ref": "references/transacoes-acid-concorrencia-e-cluster-causal.md"
+    },
+    "arquitetura": {
+      "title": "Embedded vs server, extensions, APIs",
+      "keywords": ["embedded", "embarcado", "server", "servidor", "rest", "extensao", "extension", "core api", "traversal framework", "kernel api", "architecture", "unmanaged extension", "api"],
+      "pages": "NEO4J p.94-99; p.176-179",
+      "summary": "Embedded (JVM, application GC) vs server (REST, JSON/HTTP); Core API, Traversal Framework and Cypher.",
+      "ref": "references/arquitetura-testes-capacity-e-importacao.md"
+    },
+    "testes": {
+      "title": "Model and performance testing",
+      "keywords": ["teste", "test", "tdd", "performance test", "percentil", "percentile", "representative data", "neode", "impermanent", "testing", "tests", "test driven", "benchmarking"],
+      "pages": "NEO4J p.103-113",
+      "summary": "Test-driven modeling with small graphs; query and application performance tests; percentiles; representative data.",
+      "ref": "references/arquitetura-testes-capacity-e-importacao.md"
+    },
+    "capacity": {
+      "title": "Capacity planning",
+      "keywords": ["capacity", "capacidade", "dimensionamento", "ssd", "heap", "redundancia", "load", "carga", "cores", "capacity planning", "sizing", "redundancy", "disk seek"],
+      "pages": "NEO4J p.113-117",
+      "summary": "~6 ms seek; SSD ~20x; heap 4-8 GB; redundancy 3-4 (for 1) or 5 (for 2); concurrent load formula.",
+      "ref": "references/arquitetura-testes-capacity-e-importacao.md"
+    },
+    "importacao": {
+      "title": "Bulk import",
+      "keywords": ["import", "importacao", "neo4j-import", "load csv", "periodic commit", "unwind", "csv", "bulk import", "importing", "batch import"],
+      "pages": "NEO4J p.117-121",
+      "summary": "neo4j-import (~1M records/s) and LOAD CSV with MERGE in parts, an index and PERIODIC COMMIT. DATED syntax.",
+      "ref": "references/arquitetura-testes-capacity-e-importacao.md"
+    },
+    "casos": {
+      "title": "Real cases: Talent.net, TeleGraph, Global Post",
+      "keywords": ["talent.net", "telegraph", "global post", "recomendacao", "recommendation", "controle de acesso", "access control", "logistica", "parcel", "rbac", "authorization", "case study", "case studies", "routing", "social recommendation"],
+      "pages": "NEO4J p.123-165",
+      "summary": "Inferred social recommendation; authorization with ALLOWED_INHERIT/DENIED; parcel routing by period.",
+      "ref": "references/casos-reais-recomendacoes-rbac-e-logistica.md"
+    },
+    "usos": {
+      "title": "Use cases and reasons for adoption",
+      "keywords": ["social", "geo", "mdm", "master data", "network", "data center", "use case", "caso de uso", "use cases", "adoption", "geospatial", "network management"],
+      "pages": "NEO4J p.123-129",
+      "summary": "Social, recommendations, geo, MDM, network management and authorization.",
+      "ref": "references/casos-reais-recomendacoes-rbac-e-logistica.md"
+    },
+    "algoritmos": {
+      "title": "BFS, DFS, Dijkstra, A*",
+      "keywords": ["bfs", "dfs", "dijkstra", "a*", "a-star", "busca em largura", "busca em profundidade", "heuristica", "breadth first search", "depth first search", "shortest path algorithm", "heuristic"],
+      "pages": "NEO4J p.189-199",
+      "summary": "Dijkstra in 5 steps, O(|R| + |N| log |N|); A* with f(n)=g(n)+h(n); Dijkstra in the book via Java (GraphAlgoFactory), p.164.",
+      "ref": "references/teoria-dos-grafos-e-algoritmos-preditivos.md"
+    },
+    "teoria_social": {
+      "title": "Triadic closure, structural balance, local bridges",
+      "keywords": ["triadic", "triadico", "fechamento", "structural balance", "equilibrio estrutural", "local bridge", "ponte local", "granovetter", "weak ties", "triadic closure", "balance", "weak link"],
+      "pages": "NEO4J p.200-208",
+      "summary": "Strong triadic closure; balanced closure (all positive or two negative and one positive); local bridges as weak channels.",
+      "ref": "references/teoria-dos-grafos-e-algoritmos-preditivos.md"
+    },
+    "modelos_de_grafo": {
+      "title": "Hypergraphs and RDF triples",
+      "keywords": ["hypergraph", "hipergrafo", "rdf", "triple", "tripla", "sparql", "semantic web", "hypergraphs", "rdf triples", "graph models"],
+      "pages": "NEO4J p.224-228",
+      "summary": "Hypergraph and property graph are isomorphic; triples are not native and serve analytics.",
+      "ref": "references/nosql-apendice-e-modelos-de-grafo.md"
+    },
+    "versao": {
+      "title": "Neo4j and Cypher version of the book",
+      "keywords": ["versao", "version", "2.2", "2.3", "datado", "sintaxe", "dated content", "syntax"],
+      "pages": "NEO4J p.14; p.171",
+      "summary": "Neo4j 2.2 (2.3 coming soon) in the preface; 2.2 record layout. NEO_START is a 2026 website page with no technical content.",
+      "ref": "references/versoes-e-conteudo-datado.md"
+    }
+  },
+  "not_in_book": {
+    "superno": "The book does not cover supernodes/dense nodes (only the 'densely connected' flag on p.172). Mitigations are extrapolation.",
+    "supernode": "The book does not cover supernodes/dense nodes (only the 'densely connected' flag on p.172). Mitigations are extrapolation.",
+    "supernos": "The book does not cover supernodes/dense nodes (only the 'densely connected' flag on p.172). Mitigations are extrapolation.",
+    "no denso": "The book does not cover supernodes/dense nodes (only the 'densely connected' flag on p.172). Mitigations are extrapolation.",
+    "dense node": "The book does not cover supernodes/dense nodes (only the 'densely connected' flag on p.172). Mitigations are extrapolation.",
+    "read committed": "The book does not mention an isolation level; it says a transaction's writes are not visible to others (p.181).",
+    "raft": "Raft/Paxos and Causal Clustering are not in the book (Neo4j 2.x master-slave HA). Extrapolation/DATED.",
+    "paxos": "Raft/Paxos and Causal Clustering are not in the book (Neo4j 2.x master-slave HA). Extrapolation/DATED.",
+    "causal cluster": "Causal Clustering is not in the book (Neo4j 2.x master-slave HA).",
+    "explain": "EXPLAIN/PROFILE and plan operators are not in the book.",
+    "profile": "EXPLAIN/PROFILE and plan operators are not in the book.",
+    "allnodesscan": "AllNodesScan is not in the book; the book only says that without an index the start scans the nodes of the label (p.66).",
+    "allshortestpaths": "allShortestPaths is not in the book; shortestPath appears on p.97 and p.106.",
+    "pagerank": "PageRank, centrality and GDS are not in the book (NEO_START merely lists 'centrality algorithms' as a title, p.2).",
+    "gds": "Graph Data Science is not in the book (NEO_START merely lists the title, p.2).",
+    "apoc": "APOC is not in the book.",
+    "bolt": "Bolt/drivers are not in the book (REST and JAX-RS extensions, p.95-99).",
+    "vector": "Vector indexes are not in the book (NEO_START merely lists 'Embedding & Vector Indexes', p.2).",
+    "optional match": "OPTIONAL MATCH is not in the book.",
+    "b+": "The B+ tree is not mentioned in the book; the book talks about indexes with O(log n) cost (p.168).",
+    "k^d": "The O(k^d) notation is not in the book; the book uses O(m) and O(m log n) (p.168).",
+    "oom": "The book does not say an unbounded '*' causes OutOfMemoryError; it only warns about the inefficiency of long paths (p.136).",
+    "outofmemory": "The book does not say an unbounded '*' causes OutOfMemoryError; it only warns about the inefficiency of long paths (p.136).",
+    "dbms.memory": "dbms.memory.* parameters are not in the book; the book mentions a 4-8 GB heap and a page cache holding the whole store (p.115).",
+    "wait-for": "A wait-for graph is not in the book; deadlock is detected and transactions are serialized (p.181)."
+  }
+}

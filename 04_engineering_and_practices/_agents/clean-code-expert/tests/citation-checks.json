@@ -1,0 +1,5444 @@
+{
+ "source": "CL = Código Limpo: Habilidades Práticas do Agile Software (Robert C. Martin; Brazilian edition, Alta Books), scanned PDF of 398 pages, text by OCR; text in <src>/CL.txt with === PAGE N === markers. The 'terms' are literal OCR text of the Portuguese book and stay in Portuguese; the 'claim' fields are English summaries.",
+ "positive": [
+  {
+   "id": "G1-001",
+   "src": "CL",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "Série de Robert C. Martin",
+    "Habilidades Práticas do Agile Software"
+   ],
+   "claim": "Cover: title, subtitle and Robert C. Martin series"
+  },
+  {
+   "id": "G1-002",
+   "src": "CL",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "James O. Coplien",
+    "Mordrup, Dinamarca"
+   ],
+   "claim": "Preface signed by James O. Coplien"
+  },
+  {
+   "id": "G1-003",
+   "src": "CL",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Manutenção Produtiva Total",
+    "Seiri, ou organização",
+    "Seiketsu, ou padronização"
+   ],
+   "claim": "Preface links the book to TPM and the 5S"
+  },
+  {
+   "id": "G1-004",
+   "src": "CL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "Reproduzido com a gentil autorização de Thom Holwerda",
+    "Que porta representa seu código",
+    "habilidade profissional"
+   ],
+   "claim": "Doors figure (WTFs) by Thom Holwerda and the answer: professional skill"
+  },
+  {
+   "id": "G1-005",
+   "src": "CL",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Dividimos este livro em três partes",
+    "estudos de caso",
+    "lista de heurísticas"
+   ],
+   "claim": "Book divided into three parts: principles, case studies, heuristics"
+  },
+  {
+   "id": "G1-006",
+   "src": "CL",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "Nomes Significativos",
+    "por Tim Ottinger"
+   ],
+   "claim": "Ch. 2 is by Tim Ottinger"
+  },
+  {
+   "id": "G1-007",
+   "src": "CL",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "eles representam os detalhes dos",
+    "sempre haverá um código"
+   ],
+   "claim": "Code represents the details of the requirements and will never go away"
+  },
+  {
+   "id": "G1-008",
+   "src": "CL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "Foi o código ruim que acabou com a empresa",
+    "de LeBlanc Nunca é tarde"
+   ],
+   "claim": "Bad code brought down the company; LeBlanc's law"
+  },
+  {
+   "id": "G1-009",
+   "src": "CL",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "O Custo de Ter um Código Confuso",
+    "aproximando-se de zero"
+   ],
+   "claim": "Productivity drops asymptotically toward zero"
+  },
+  {
+   "id": "G1-010",
+   "src": "CL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "O Grande Replanejamento",
+    "Já vi umas levarem 10 anos",
+    "sobrevivência profissional"
+   ],
+   "claim": "The Grand Redesign and cleaning as professional survival"
+  },
+  {
+   "id": "G1-011",
+   "src": "CL",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "proteger o código com essa mesma paixão",
+    "O Principal Dilema",
+    "ir mais rápido é sempre manter o código limpo"
+   ],
+   "claim": "Professional attitude and the Primal Conundrum"
+  },
+  {
+   "id": "G1-012",
+   "src": "CL",
+   "pages": [
+    17,
+    18
+   ],
+   "terms": [
+    "Bjarne Stroustrup, criador do C++",
+    "das janelas quebradas",
+    "faz bem apenas uma coisa",
+    "tratamento de erro deva ser completo"
+   ],
+   "claim": "Bjarne Stroustrup's definition and comments"
+  },
+  {
+   "id": "G1-013",
+   "src": "CL",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "Grady Booch",
+    "Um código limpo é simples e direto",
+    "ler uma prosa bem escrita"
+   ],
+   "claim": "Grady Booch's definition"
+  },
+  {
+   "id": "G1-014",
+   "src": "CL",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "Dave Thomas, fundador da",
+    "oferece apenas uma maneira",
+    "sem testes, não"
+   ],
+   "claim": "Dave Thomas's definition: code without tests is not clean"
+  },
+  {
+   "id": "G1-015",
+   "src": "CL",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "Michael Feathers",
+    "foi escrito por alguém que se importava",
+    "One word: care"
+   ],
+   "claim": "Michael Feathers's definition: care"
+  },
+  {
+   "id": "G1-016",
+   "src": "CL",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "Ron Jeffries",
+    "regras\nde Beck sobre código simples",
+    "Sem duplicação de código",
+    "Minimiza o número de entidades"
+   ],
+   "claim": "Ron Jeffries and Beck's simple code rules"
+  },
+  {
+   "id": "G1-017",
+   "src": "CL",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "Ward Cunningham",
+    "como o que você esperava",
+    "linguagem foi feita para o problema"
+   ],
+   "claim": "Ward Cunningham's definition"
+  },
+  {
+   "id": "G1-018",
+   "src": "CL",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "Escolas de Pensamento",
+    "Escola de Código Limpo da Object Mentor",
+    "Nenhuma dessas escolas está 100% certa"
+   ],
+   "claim": "Object Mentor's Clean Code school, with no claim to a single truth"
+  },
+  {
+   "id": "G1-019",
+   "src": "CL",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "Somos Autores",
+    "taxa de tempo gasto na leitura",
+    "torne-o de fácil leitura"
+   ],
+   "claim": "We are authors; reading dominates writing"
+  },
+  {
+   "id": "G1-020",
+   "src": "CL",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "A Regra de Escoteiro",
+    "Deixe a área do acampamento mais limpa do que como você a encontrou",
+    "reduza uma instrução i f aninhada"
+   ],
+   "claim": "Boy Scout Rule and examples of small cleanups"
+  },
+  {
+   "id": "G1-021",
+   "src": "CL",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "Prequela e Princípios",
+    "Princípio da Responsabilidade Única",
+    "Princípio da Inversão da Independência"
+   ],
+   "claim": "Book as a prequel to PPP; cites SRP, OCP, DIP"
+  },
+  {
+   "id": "G1-022",
+   "src": "CL",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "Use Nomes que Revelem seu Propósito",
+    "Se um nome requer um comentário, então",
+    "daysSinceCreation"
+   ],
+   "claim": "Intention-revealing names"
+  },
+  {
+   "id": "G1-023",
+   "src": "CL",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "Evite Informações Erradas",
+    "nomes de plataformas",
+    "accountGroup ou"
+   ],
+   "claim": "Avoid disinformation"
+  },
+  {
+   "id": "G1-024",
+   "src": "CL",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "Faça Distinções Significativas",
+    "também devem ter",
+    "significados distintos"
+   ],
+   "claim": "Meaningful distinctions"
+  },
+  {
+   "id": "G1-025",
+   "src": "CL",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "Info e",
+    "Data são palavras muito comuns",
+    "getActiveAccount"
+   ],
+   "claim": "Noise words Info/Data and the getActiveAccount example"
+  },
+  {
+   "id": "G1-026",
+   "src": "CL",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "Use Nomes Pronunciáveis",
+    "genymdhms",
+    "a programação é uma atividade social"
+   ],
+   "claim": "Pronounceable names"
+  },
+  {
+   "id": "G1-027",
+   "src": "CL",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "Use Nomes Passíveis de Busca",
+    "O tamanho de um nome deve ser proporcional ao",
+    "tamanho do escopo"
+   ],
+   "claim": "Searchable names; length proportional to scope"
+  },
+  {
+   "id": "G1-028",
+   "src": "CL",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "Evite Codificações",
+    "A Notação Húngara",
+    "Prefixos de Variáveis Membro"
+   ],
+   "claim": "Avoid encodings, Hungarian Notation and m_ prefixes"
+  },
+  {
+   "id": "G1-029",
+   "src": "CL",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "Interfaces e Implementações",
+    "Prefiro\nnão enfeitar as interfaces",
+    "ShapeFactoryImp"
+   ],
+   "claim": "Interfaces without I; encode the implementation"
+  },
+  {
+   "id": "G1-030",
+   "src": "CL",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "Evite o Mapeamento Mental",
+    "clareza é fundamental"
+   ],
+   "claim": "Avoid mental mapping"
+  },
+  {
+   "id": "G1-031",
+   "src": "CL",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "Nomes de Classes",
+    "devem ter nomes com substantivo",
+    "Os nomes de métodos devem ter verbos",
+    "padrão javabean"
+   ],
+   "claim": "Classes = nouns; methods = verbs; get/set/is"
+  },
+  {
+   "id": "G1-032",
+   "src": "CL",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "métodos factory estáticos",
+    "torne os construtores correspondentes como privados"
+   ],
+   "claim": "Static factory in place of overloaded constructors"
+  },
+  {
+   "id": "G1-033",
+   "src": "CL",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "Não dê uma de Espertinho",
+    "HolyHandGrenade",
+    "Opte por clareza no lugar de divertimento"
+   ],
+   "claim": "Don't be cute"
+  },
+  {
+   "id": "G1-034",
+   "src": "CL",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "Selecione uma Palavra por Conceito",
+    "Um léxico consistente"
+   ],
+   "claim": "One word per concept"
+  },
+  {
+   "id": "G1-035",
+   "src": "CL",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "Não Faça Trocadilhos",
+    "Evite usar a mesma palavra para dois propósitos"
+   ],
+   "claim": "Don't pun"
+  },
+  {
+   "id": "G1-036",
+   "src": "CL",
+   "pages": [
+    35,
+    36
+   ],
+   "terms": [
+    "Use nomes a partir do Domínio da Solução",
+    "Use nomes de Domínios do Problema",
+    "JobQueue"
+   ],
+   "claim": "Solution domain and problem domain"
+  },
+  {
+   "id": "G1-037",
+   "src": "CL",
+   "pages": [
+    36,
+    37
+   ],
+   "terms": [
+    "Adicione um Contexto Significativo",
+    "criar uma classe chamada Address",
+    "Variáveis com contexto obscuro"
+   ],
+   "claim": "Meaningful context; Listing 2-1"
+  },
+  {
+   "id": "G1-038",
+   "src": "CL",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "Não Adicione Contextos Desnecessários",
+    "Gas Station Deluxe",
+    "Nomes curtos geralmente são melhores contanto que sejam claros"
+   ],
+   "claim": "Don't add gratuitous context"
+  },
+  {
+   "id": "G1-039",
+   "src": "CL",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "A primeira regra para funções é que elas devem ser pequenas",
+    "150 caracteres em uma linha",
+    "devem ter no máximo 20 linhas"
+   ],
+   "claim": "Small functions; 150 characters; at most 20 lines"
+  },
+  {
+   "id": "G1-040",
+   "src": "CL",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "Sparkle",
+    "duas, ou três, ou quatro linhas"
+   ],
+   "claim": "Functions of 2 to 4 lines in Kent Beck's Sparkle"
+  },
+  {
+   "id": "G1-041",
+   "src": "CL",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "Blocos e Endentação",
+    "devem ter apenas",
+    "no máximo, um ou dois"
+   ],
+   "claim": "One-line blocks; indentation of at most 1 or 2"
+  },
+  {
+   "id": "G1-042",
+   "src": "CL",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "Faça Apenas uma Coisa",
+    "AS FUNÇÕES DEVEM FAZER UMA COISA"
+   ],
+   "claim": "Functions should do one thing"
+  },
+  {
+   "id": "G1-043",
+   "src": "CL",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Seções Dentro de Funções",
+    "generatePrimes",
+    "(G34)"
+   ],
+   "claim": "Extraction test and sections within functions"
+  },
+  {
+   "id": "G1-044",
+   "src": "CL",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Um Nível de Abstração por Função",
+    "estão no mesmo nível de abstração"
+   ],
+   "claim": "One level of abstraction per function"
+  },
+  {
+   "id": "G1-045",
+   "src": "CL",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "Regra Decrescente",
+    "de cima para baixo, como uma narrativa",
+    "parágrafos TO"
+   ],
+   "claim": "Stepdown Rule"
+  },
+  {
+   "id": "G1-046",
+   "src": "CL",
+   "pages": [
+    46,
+    47
+   ],
+   "terms": [
+    "Estrutura Switch",
+    "sempre fazem N coisas",
+    "ABSTRACT",
+    "[G23]"
+   ],
+   "claim": "switch hidden in an abstract factory"
+  },
+  {
+   "id": "G1-047",
+   "src": "CL",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "Principio da Responsabilidade Única",
+    "Princípio de Aberto-Fechad",
+    "apenas uma vez"
+   ],
+   "claim": "switch violates SRP and OCP; tolerated once"
+  },
+  {
+   "id": "G1-048",
+   "src": "CL",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "Use Nomes Descritivos",
+    "Não tenha medo de criar nomes extensos",
+    "Seja consistente nos nomes"
+   ],
+   "claim": "Descriptive and consistent names"
+  },
+  {
+   "id": "G1-049",
+   "src": "CL",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "é zero (nulo)",
+    "um (mônade)",
+    "dois (díade)",
+    "três parâmetros (tríade)",
+    "um motivo muito especial"
+   ],
+   "claim": "Number of arguments: zero, monad, dyad, triad, polyad"
+  },
+  {
+   "id": "G1-050",
+   "src": "CL",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "Formas Mônades Comuns",
+    "Use esse tipo com cautela"
+   ],
+   "claim": "Common monad forms and events"
+  },
+  {
+   "id": "G1-051",
+   "src": "CL",
+   "pages": [
+    49,
+    50
+   ],
+   "terms": [
+    "Parâmetros Lógicos",
+    "Esses parâmetros são feios",
+    "renderForSuite()"
+   ],
+   "claim": "Flag arguments: split the function"
+  },
+  {
+   "id": "G1-052",
+   "src": "CL",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "Funções Díades",
+    "Tríades",
+    "Sugiro que você pense bastante antes de criar uma tríade"
+   ],
+   "claim": "Dyads and triads"
+  },
+  {
+   "id": "G1-053",
+   "src": "CL",
+   "pages": [
+    398
+   ],
+   "terms": [
+    "Objetos como Parâmetros",
+    "Listas como Parâmetros",
+    "Verbos e Palavras-Chave",
+    "realmente díade"
+   ],
+   "claim": "Printed page 42 of Ch. 3 is at PDF p.398"
+  },
+  {
+   "id": "G1-054",
+   "src": "CL",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "Imbuímos os nomes dos parâmetros no nome da função",
+    "Efeitos colaterais são mentiras",
+    "acoplamento temporário"
+   ],
+   "claim": "Keyword form; side effects"
+  },
+  {
+   "id": "G1-055",
+   "src": "CL",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "Parâmetros de Saída",
+    "devem-se evitar parâmetros de saída",
+    "Separação comando-consulta",
+    "As funções devem fazer ou responder algo, mas não ambos"
+   ],
+   "claim": "Output arguments and command-query separation"
+  },
+  {
+   "id": "G1-056",
+   "src": "CL",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "Prefira exceções a retorno de códigos de erro",
+    "leve violação da separação comando-consulta"
+   ],
+   "claim": "Exceptions instead of error codes"
+  },
+  {
+   "id": "G1-057",
+   "src": "CL",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "Extraia os blocos try/catch",
+    "Tratamento de erro é uma coisa só",
+    "deve ser a primeira instrução"
+   ],
+   "claim": "Extract try/catch; error handling is one thing"
+  },
+  {
+   "id": "G1-058",
+   "src": "CL",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "chamarizes à dependência",
+    "raiz de todo o mal no software"
+   ],
+   "claim": "Error enum as a dependency magnet; duplication"
+  },
+  {
+   "id": "G1-059",
+   "src": "CL",
+   "pages": [
+    55,
+    56
+   ],
+   "terms": [
+    "Edsger Dijkstra",
+    "uma entrada e uma saída",
+    "regras oferecem pouca vantagem"
+   ],
+   "claim": "Structured programming loses value in small functions"
+  },
+  {
+   "id": "G1-060",
+   "src": "CL",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "Como escrever funções como essa?",
+    "Não as aplico desde o",
+    "As funções são os verbos dessa linguagem"
+   ],
+   "claim": "How to write functions; functions as the verbs of the domain language"
+  },
+  {
+   "id": "G2-001",
+   "src": "CL",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "no máximo, um mal necessário"
+   ],
+   "claim": "Comments are at most a necessary evil"
+  },
+  {
+   "id": "G2-002",
+   "src": "CL",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Comentários são sempre fracassos",
+    "compensar nosso fracasso em nos expressar no código"
+   ],
+   "claim": "A comment makes up for a failure to express ourselves in code"
+  },
+  {
+   "id": "G2-003",
+   "src": "CL",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Porque eles mentem",
+    "mais provável será que esteja errado"
+   ],
+   "claim": "Comments lie and age badly"
+  },
+  {
+   "id": "G2-004",
+   "src": "CL",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Comentários imprecisos são muito piores do que nenhum"
+   ],
+   "claim": "An inaccurate comment is worse than none"
+  },
+  {
+   "id": "G2-005",
+   "src": "CL",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Só se pode encontrar a verdade em um lugar: no código"
+   ],
+   "claim": "The truth is in the code"
+  },
+  {
+   "id": "G2-006",
+   "src": "CL",
+   "pages": [
+    60,
+    61
+   ],
+   "terms": [
+    "Comentários Compensam um Código Ruim",
+    "use-o para limpar essa zona"
+   ],
+   "claim": "Clean the code instead of commenting the mess"
+  },
+  {
+   "id": "G2-007",
+   "src": "CL",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "Explique-se no código",
+    "criar uma função cujo nome diga"
+   ],
+   "claim": "Explain yourself in code with a function name"
+  },
+  {
+   "id": "G2-008",
+   "src": "CL",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "o único comentário verdadeiramente bom",
+    "encontrou uma forma para não escrevê-lo"
+   ],
+   "claim": "The only good comment is the one you found a way not to write"
+  },
+  {
+   "id": "G2-009",
+   "src": "CL",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "Comentários Legais",
+    "faça referência a uma licença padrão"
+   ],
+   "claim": "Legal comments: reference a standard license"
+  },
+  {
+   "id": "G2-010",
+   "src": "CL",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Comentários Informativos",
+    "é melhor usar o nome da"
+   ],
+   "claim": "Informative comments; prefer a function name"
+  },
+  {
+   "id": "G2-011",
+   "src": "CL",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Explicação da intenção",
+    "intenção por trás de uma decisão"
+   ],
+   "claim": "Explanation-of-intent comment explains the decision"
+  },
+  {
+   "id": "G2-012",
+   "src": "CL",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "Esclarecimento",
+    "parte da biblioteca padrão",
+    "certifique-se ainda mais se estão precisos"
+   ],
+   "claim": "Clarification for unchangeable code, with risk of error"
+  },
+  {
+   "id": "G2-013",
+   "src": "CL",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "Alerta Sobre Consequências",
+    "não é uma thread segura"
+   ],
+   "claim": "Warning of consequences; SimpleDateFormat not thread-safe"
+  },
+  {
+   "id": "G2-014",
+   "src": "CL",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "Antes da chegada do JUnit4",
+    "traço inferior (underscore)"
+   ],
+   "claim": "DATED item: JUnit4 @ignore vs. underscore prefix"
+  },
+  {
+   "id": "G2-015",
+   "src": "CL",
+   "pages": [
+    64,
+    65
+   ],
+   "terms": [
+    "Comentário TODO",
+    "ele não justifica deixar um código ruim",
+    "procure-os regularmente"
+   ],
+   "claim": "TODO does not justify bad code; review periodically"
+  },
+  {
+   "id": "G2-016",
+   "src": "CL",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "Destaque",
+    "destacar a importância de algo"
+   ],
+   "claim": "Amplification comment"
+  },
+  {
+   "id": "G2-017",
+   "src": "CL",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "Javadocs em APIs Públicas",
+    "não-locais e desonestos"
+   ],
+   "claim": "Javadoc in a public API is good, but can mislead"
+  },
+  {
+   "id": "G2-018",
+   "src": "CL",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "A maioria dos comentários cai nesta categoria",
+    "Murmúrio",
+    "porque o processo o requer"
+   ],
+   "claim": "Bad comments; mumbling"
+  },
+  {
+   "id": "G2-019",
+   "src": "CL",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "analisar outro módulo em busca de um",
+    "não vale os bits que consume"
+   ],
+   "claim": "A comment that requires another module has failed"
+  },
+  {
+   "id": "G2-020",
+   "src": "CL",
+   "pages": [
+    66,
+    67
+   ],
+   "terms": [
+    "Comentários Redundantes",
+    "do Tomcat"
+   ],
+   "claim": "Redundant comments; Tomcat javadocs"
+  },
+  {
+   "id": "G2-021",
+   "src": "CL",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "Comentários Enganadores",
+    "Essa pequena desinformação"
+   ],
+   "claim": "Misleading comments"
+  },
+  {
+   "id": "G2-022",
+   "src": "CL",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "Comentários Imperativos",
+    "toda função deva ter um Javadoc"
+   ],
+   "claim": "Requiring a Javadoc on every function is silly"
+  },
+  {
+   "id": "G2-023",
+   "src": "CL",
+   "pages": [
+    69,
+    70
+   ],
+   "terms": [
+    "Comentários Longos",
+    "uma redação",
+    "devendo assim ser completamente removidos"
+   ],
+   "claim": "Long journal comments should be removed"
+  },
+  {
+   "id": "G2-024",
+   "src": "CL",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "Comentários Ruidosos",
+    "Eles dizem o óbvio"
+   ],
+   "claim": "Noise comments state the obvious"
+  },
+  {
+   "id": "G2-025",
+   "src": "CL",
+   "pages": [
+    71,
+    72
+   ],
+   "terms": [
+    "melhorar a estrutura do código",
+    "Troque a tentação para criar ruídos"
+   ],
+   "claim": "Refactor instead of venting in a comment"
+  },
+  {
+   "id": "G2-026",
+   "src": "CL",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "Ruídos assustadores",
+    "erro de recortar-colar"
+   ],
+   "claim": "Scary noise: javadoc copied wrongly"
+  },
+  {
+   "id": "G2-027",
+   "src": "CL",
+   "pages": [
+    72,
+    73
+   ],
+   "terms": [
+    "Evite o comentário se é possível usar uma função ou uma variável",
+    "para que pudesse remover o comentário"
+   ],
+   "claim": "Use a function or variable in place of the comment"
+  },
+  {
+   "id": "G2-028",
+   "src": "CL",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "Marcadores de Posição",
+    "use-os esporadicamente"
+   ],
+   "claim": "Position markers sparingly"
+  },
+  {
+   "id": "G2-029",
+   "src": "CL",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "Comentários ao lado de chaves de fechamento",
+    "tente primeiro reduzir suas funções"
+   ],
+   "claim": "Closing brace comment: shorten functions"
+  },
+  {
+   "id": "G2-030",
+   "src": "CL",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "Créditos e autoria",
+    "comentários de autoria"
+   ],
+   "claim": "Attributions and bylines belong to version control"
+  },
+  {
+   "id": "G2-031",
+   "src": "CL",
+   "pages": [
+    74,
+    75
+   ],
+   "terms": [
+    "Explicação do código em comentários",
+    "Simplesmente exclua o código",
+    "década de 1960"
+   ],
+   "claim": "Commented-out code should be deleted"
+  },
+  {
+   "id": "G2-032",
+   "src": "CL",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "Comentários HTML",
+    "responsabilidade de tal ferramenta"
+   ],
+   "claim": "HTML in a comment is an abomination"
+  },
+  {
+   "id": "G2-033",
+   "src": "CL",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "Informações não-locais",
+    "coloque-o perto do código que ele descreve"
+   ],
+   "claim": "Comment close to the code it describes"
+  },
+  {
+   "id": "G2-034",
+   "src": "CL",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "Informações excessivas",
+    "RFC 2045"
+   ],
+   "claim": "Too much information (base64 RFC)"
+  },
+  {
+   "id": "G2-035",
+   "src": "CL",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "Conexões nada óbvias",
+    "comentário também precisa ser explicado"
+   ],
+   "claim": "The comment-code connection must be obvious"
+  },
+  {
+   "id": "G2-036",
+   "src": "CL",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "Cabeçalhos de funções",
+    "Funções curtas não requerem muita explicação"
+   ],
+   "claim": "Function headers are dispensable"
+  },
+  {
+   "id": "G2-037",
+   "src": "CL",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "Javadocs em códigos não-públicos",
+    "uma maldição para o"
+   ],
+   "claim": "Javadoc in non-public code is clutter"
+  },
+  {
+   "id": "G2-038",
+   "src": "CL",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "XP Immersion",
+    "Kent Beck refatorou",
+    "GeneratePrimes"
+   ],
+   "claim": "Final example GeneratePrimes"
+  },
+  {
+   "id": "G2-039",
+   "src": "CL",
+   "pages": [
+    78,
+    80
+   ],
+   "terms": [
+    "há apenas dois no módulo inteiro",
+    "limite da iteração"
+   ],
+   "claim": "PrimeGenerator refactored with two comments"
+  },
+  {
+   "id": "G2-040",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "todos devem concordar com uma única série de regras de formatação",
+    "ferramenta automatizada"
+   ],
+   "claim": "Single team rules and an automated tool"
+  },
+  {
+   "id": "G2-041",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "O objetivo da formatação",
+    "Ela serve como uma",
+    "fazer funcionar"
+   ],
+   "claim": "Formatting is communication, not just making it work"
+  },
+  {
+   "id": "G2-042",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "Junit, FitNesse, testNG, Time and Money, JDepend, Ant e Tomcat"
+   ],
+   "claim": "Seven projects analyzed"
+  },
+  {
+   "id": "G2-043",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "cerca de 65 linhas",
+    "entre 40 e 100+ linhas",
+    "aproximadamente 400 linhas"
+   ],
+   "claim": "FitNesse numbers"
+  },
+  {
+   "id": "G2-044",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "Nenhum ultrapassa 500 linhas",
+    "menos de 200 linhas"
+   ],
+   "claim": "Projects with small files"
+  },
+  {
+   "id": "G2-045",
+   "src": "CL",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "quase 50.000 linhas",
+    "não deva ser uma regra fixa"
+   ],
+   "claim": "200 lines, maximum 500, not a fixed rule"
+  },
+  {
+   "id": "G2-046",
+   "src": "CL",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "A metáfora do jornal",
+    "como um artigo de jornal"
+   ],
+   "claim": "Newspaper metaphor"
+  },
+  {
+   "id": "G2-047",
+   "src": "CL",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "Espaçamento vertical entre conceitos",
+    "separados por linhas em branco"
+   ],
+   "claim": "Blank lines separate concepts"
+  },
+  {
+   "id": "G2-048",
+   "src": "CL",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "Continuidade vertical",
+    "associação íntima"
+   ],
+   "claim": "Vertical density"
+  },
+  {
+   "id": "G2-049",
+   "src": "CL",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "Distância vertical",
+    "devem ficar juntos verticalmente",
+    "evitar variáveis"
+   ],
+   "claim": "Vertical distance and protected variables"
+  },
+  {
+   "id": "G2-050",
+   "src": "CL",
+   "pages": [
+    85,
+    86
+   ],
+   "terms": [
+    "mais próximo possível de onde",
+    "variáveis de controle para loops"
+   ],
+   "claim": "Variable declarations near their use"
+  },
+  {
+   "id": "G2-051",
+   "src": "CL",
+   "pages": [
+    86
+   ],
+   "terms": [
+    "Instâncias de variáveis",
+    "regra da tesoura",
+    "local bem conhecido"
+   ],
+   "claim": "Instance variables at the top of the class"
+  },
+  {
+   "id": "G2-052",
+   "src": "CL",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "Funções dependentes",
+    "a que chamar deve ficar acima"
+   ],
+   "claim": "Dependent functions: caller above"
+  },
+  {
+   "id": "G2-053",
+   "src": "CL",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "Afinidade conceitual",
+    "menor deve ser a distância vertical"
+   ],
+   "claim": "Conceptual affinity"
+  },
+  {
+   "id": "G2-054",
+   "src": "CL",
+   "pages": [
+    89,
+    90
+   ],
+   "terms": [
+    "Ordenação vertical",
+    "apontem para baixo",
+    "Pascal, C e C++"
+   ],
+   "claim": "Vertical ordering"
+  },
+  {
+   "id": "G2-055",
+   "src": "CL",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "cerca de 45 caracteres",
+    "Isso são 40%",
+    "menos do que 10 caracteres"
+   ],
+   "claim": "Line width numbers"
+  },
+  {
+   "id": "G2-056",
+   "src": "CL",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "limite de 80",
+    "100 ou mesmo 120 caracteres",
+    "determinei 120 como meu limite"
+   ],
+   "claim": "120-character limit"
+  },
+  {
+   "id": "G2-057",
+   "src": "CL",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "Espaçamento e continuidade horizontal",
+    "operadores de atribuição entre espaços"
+   ],
+   "claim": "Horizontal spacing"
+  },
+  {
+   "id": "G2-058",
+   "src": "CL",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "destacar a prioridade dos operadores",
+    "maior prioridade"
+   ],
+   "claim": "Space indicates precedence"
+  },
+  {
+   "id": "G2-059",
+   "src": "CL",
+   "pages": [
+    92
+   ],
+   "terms": [
+    "Alinhamento horizontal",
+    "o problema está no tamanho das listas"
+   ],
+   "claim": "Horizontal alignment abandoned"
+  },
+  {
+   "id": "G2-060",
+   "src": "CL",
+   "pages": [
+    93
+   ],
+   "terms": [
+    "Endentação",
+    "mais como uma hierarquia",
+    "praticamente ininteligíveis"
+   ],
+   "claim": "Indentation reveals the hierarchy of scopes"
+  },
+  {
+   "id": "G2-061",
+   "src": "CL",
+   "pages": [
+    94
+   ],
+   "terms": [
+    "Ignorando a endentação",
+    "Prefiro expandir e endentar escopos"
+   ],
+   "claim": "Do not collapse scopes"
+  },
+  {
+   "id": "G2-062",
+   "src": "CL",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "Escopos minúsculos",
+    "ponto-e-vírgula"
+   ],
+   "claim": "Dummy scopes and the semicolon"
+  },
+  {
+   "id": "G2-063",
+   "src": "CL",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "Regra de equipes",
+    "um único estilo",
+    "Isso levou 10 minutos"
+   ],
+   "claim": "Team rules"
+  },
+  {
+   "id": "G2-064",
+   "src": "CL",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "Regras de formatação do Uncle Bob",
+    "Listagem 5.6"
+   ],
+   "claim": "Uncle Bob's rules in Listing 5-6"
+  },
+  {
+   "id": "G2-065",
+   "src": "CL",
+   "pages": [
+    281,
+    282
+   ],
+   "terms": [
+    "C2: Comentário obsoleto",
+    "C5: Código como comentário"
+   ],
+   "claim": "Comment heuristics of Ch. 17"
+  },
+  {
+   "id": "G3-001",
+   "src": "CL",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "declararmos nossas variáveis como privadas",
+    "expondo suas variáveis"
+   ],
+   "claim": "Ch. 6 opens by criticizing automatic getters/setters that expose private variables"
+  },
+  {
+   "id": "G3-002",
+   "src": "CL",
+   "pages": [
+    99
+   ],
+   "terms": [
+    "coordenadas retangulares ou polares",
+    "operação atômica"
+   ],
+   "claim": "Abstract Point hides the representation and enforces atomic writes"
+  },
+  {
+   "id": "G3-003",
+   "src": "CL",
+   "pages": [
+    99
+   ],
+   "terms": [
+    "interfaces abstratas que permite aos",
+    "dos dados, sem precisar conhecer a implementação"
+   ],
+   "claim": "Hiding the implementation = exposing abstract interfaces over the essence of the data"
+  },
+  {
+   "id": "G3-004",
+   "src": "CL",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "A pior opção é adicionar levianamente",
+    "métodos de escrita e leitura"
+   ],
+   "claim": "Worst option: adding getters/setters carelessly"
+  },
+  {
+   "id": "G3-005",
+   "src": "CL",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "Os objetos usam abstrações para esconder seus dados",
+    "não possuem funções significativas"
+   ],
+   "claim": "Anti-symmetric definition of objects vs. data structures"
+  },
+  {
+   "id": "G3-006",
+   "src": "CL",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "As classes shape não seriam afetadas",
+    "teremos de alterar todas as funções"
+   ],
+   "claim": "Procedural: a new function is easy, a new shape requires changing all the functions"
+  },
+  {
+   "id": "G3-007",
+   "src": "CL",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "facilita a adição de novas funções",
+    "facilita a adição de novas classes"
+   ],
+   "claim": "Dichotomy: procedural makes new functions easy, OO makes new classes easy"
+  },
+  {
+   "id": "G3-008",
+   "src": "CL",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "dificulta a adição de novas estruturas de dados",
+    "dificulta a adição de novas funções"
+   ],
+   "claim": "The inverse: what is hard in each paradigm"
+  },
+  {
+   "id": "G3-009",
+   "src": "CL",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "tudo é um objeto é um mito",
+    "estruturas de dados simples com procedimentos"
+   ],
+   "claim": "Everything being an object is a myth"
+  },
+  {
+   "id": "G3-010",
+   "src": "CL",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "um módulo não deve enxergar",
+    "Um objeto criado por f",
+    "Um objeto passado como parâmetro para f"
+   ],
+   "claim": "Law of Demeter: list of permitted targets for f of C (the 'C' item was lost by the OCR; checked against the image)"
+  },
+  {
+   "id": "G3-011",
+   "src": "CL",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "fale apenas com conhecidos, não com estranhos",
+    "objetos retornados por qualquer outra"
+   ],
+   "claim": "Demeter: do not call methods of returned objects"
+  },
+  {
+   "id": "G3-012",
+   "src": "CL",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "carrinho de trem",
+    "devem ser evitadas [G36]"
+   ],
+   "claim": "Train wrecks: call chains should be avoided"
+  },
+  {
+   "id": "G3-013",
+   "src": "CL",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "Se forem objetos",
+    "aqui não se aplica a lei"
+   ],
+   "claim": "Demeter depends on whether they are objects or data structures"
+  },
+  {
+   "id": "G3-014",
+   "src": "CL",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "variáveis públicas e nenhuma função",
+    "exigem que mesmo"
+   ],
+   "claim": "Accessors confuse; beans require accessors in data structures"
+  },
+  {
+   "id": "G3-015",
+   "src": "CL",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "Híbridos",
+    "Evite criá-los",
+    "a pior coisa em ambas as condições"
+   ],
+   "claim": "Hybrids are the worst of both worlds; avoid"
+  },
+  {
+   "id": "G3-016",
+   "src": "CL",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "devemos dizê-lo para fazer algo",
+    "não devemos perguntá-lo sobre sua"
+   ],
+   "claim": "Tell the object to do something, do not ask about its structure"
+  },
+  {
+   "id": "G3-017",
+   "src": "CL",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "permite ao ctxt esconder sua estrutura",
+    "Estruturas ocultas"
+   ],
+   "claim": "createScratchFileStream hides the structure and avoids violating Demeter"
+  },
+  {
+   "id": "G3-018",
+   "src": "CL",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "objeto de transferência de dados",
+    "variáveis públicas e nenhuma função"
+   ],
+   "claim": "DTO: the perfect form of data structure"
+  },
+  {
+   "id": "G3-019",
+   "src": "CL",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "primeiros numa série de estágios de tradução",
+    "não oferece vantagem alguma"
+   ],
+   "claim": "DTOs as a translation stage; beans with no real advantage"
+  },
+  {
+   "id": "G3-020",
+   "src": "CL",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "Os Active Records são formas especiais de DTOs",
+    "save (salvar) e find (buscar)"
+   ],
+   "claim": "Active Record = special DTO with save/find"
+  },
+  {
+   "id": "G3-021",
+   "src": "CL",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "tratar o Record Active como uma estrutura de dados",
+    "contenham as regras de negócio"
+   ],
+   "claim": "Business rules in separate objects, not in the Active Record"
+  },
+  {
+   "id": "G3-022",
+   "src": "CL",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "sem preconceito",
+    "optaremos por objetos"
+   ],
+   "claim": "Choose without prejudice according to the desired flexibility"
+  },
+  {
+   "id": "G3-023",
+   "src": "CL",
+   "pages": [
+    107
+   ],
+   "terms": [
+    "por Michael Feathers",
+    "se obscurecer a lógica, está errado"
+   ],
+   "claim": "Ch. 7 by Michael Feathers; error handling must not obscure the logic"
+  },
+  {
+   "id": "G3-024",
+   "src": "CL",
+   "pages": [
+    108
+   ],
+   "terms": [
+    "Use exceções em vez de retornar códigos",
+    "facilmente se esqueciam de fazer isso",
+    "melhor lançar uma exceção"
+   ],
+   "claim": "Exceptions instead of return codes"
+  },
+  {
+   "id": "G3-025",
+   "src": "CL",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "duas preocupações que estavam intrincadas",
+    "estudá-las independentemente"
+   ],
+   "claim": "Exceptions separate the algorithm and error handling"
+  },
+  {
+   "id": "G3-026",
+   "src": "CL",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "os blocos try são como transações",
+    "num estado consistente"
+   ],
+   "claim": "try as a transaction; catch leaves a consistent state"
+  },
+  {
+   "id": "G3-027",
+   "src": "CL",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "criar testes que forçam exceções",
+    "escopo de transação do bloco try"
+   ],
+   "claim": "TDD: tests that force exceptions define the scope of the try"
+  },
+  {
+   "id": "G3-028",
+   "src": "CL",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "Use exceções não verificadas",
+    "A discussão acabou",
+    "Princípio de Aberto-Fechad"
+   ],
+   "claim": "Checked exceptions violate the Open-Closed Principle"
+  },
+  {
+   "id": "G3-029",
+   "src": "CL",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "O C# não verifica exceções",
+    "Python ou Ruby"
+   ],
+   "claim": "Languages without checked exceptions produce robust software"
+  },
+  {
+   "id": "G3-030",
+   "src": "CL",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "três níveis acima",
+    "Quebra-se o encapsulamento"
+   ],
+   "claim": "Checked exceptions cause a cascade of signatures and break encapsulation"
+  },
+  {
+   "id": "G3-031",
+   "src": "CL",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "biblioteca crítica",
+    "os custos da dependência"
+   ],
+   "claim": "Checked exceptions useful only in a critical library"
+  },
+  {
+   "id": "G3-032",
+   "src": "CL",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "Forneça exceções com contexto",
+    "operação que falhou e o tipo da falha"
+   ],
+   "claim": "Messages with the operation and type of failure"
+  },
+  {
+   "id": "G3-033",
+   "src": "CL",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "Defina as classes de exceções segundo as necessidades",
+    "como elas são capturadas"
+   ],
+   "claim": "Exception classes by how they are caught"
+  },
+  {
+   "id": "G3-034",
+   "src": "CL",
+   "pages": [
+    112
+   ],
+   "terms": [
+    "empacotar APIs de terceiros é a melhor prática que existe",
+    "minimiza as dependências"
+   ],
+   "claim": "Wrap third-party APIs (LocalPort)"
+  },
+  {
+   "id": "G3-035",
+   "src": "CL",
+   "pages": [
+    112
+   ],
+   "terms": [
+    "simples wrapper",
+    "traduz as exceções lançadas pela classe ACMEPort"
+   ],
+   "claim": "LocalPort translates ACMEPort's exceptions"
+  },
+  {
+   "id": "G3-036",
+   "src": "CL",
+   "pages": [
+    113
+   ],
+   "terms": [
+    "facilita a simulação de chamadas de terceiros",
+    "uma única classe de exceção está bom"
+   ],
+   "claim": "Wrapper eases tests; one exception class per area"
+  },
+  {
+   "id": "G3-037",
+   "src": "CL",
+   "pages": [
+    113
+   ],
+   "terms": [
+    "Defina o fluxo normal",
+    "A exceção confunde a lógica"
+   ],
+   "claim": "Normal flow: an exception muddles the expenses logic"
+  },
+  {
+   "id": "G3-038",
+   "src": "CL",
+   "pages": [
+    114
+   ],
+   "terms": [
+    "Padrão Special Case",
+    "objeto de caso especial"
+   ],
+   "claim": "Fowler's Special Case encapsulates special behavior"
+  },
+  {
+   "id": "G3-039",
+   "src": "CL",
+   "pages": [
+    114
+   ],
+   "terms": [
+    "Não retorne null",
+    "considere lançar uma exceção ou retornar um objeto SPECIAL CASE"
+   ],
+   "claim": "Don't return null: exception or Special Case"
+  },
+  {
+   "id": "G3-040",
+   "src": "CL",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "Collections.emptyList()",
+    "lista vazia"
+   ],
+   "claim": "Return an empty list instead of null"
+  },
+  {
+   "id": "G3-041",
+   "src": "CL",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "Não passe null",
+    "passar null para eles é pior"
+   ],
+   "claim": "Passing null is worse than returning it"
+  },
+  {
+   "id": "G3-042",
+   "src": "CL",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "proibir, por padrão, a passagem de null",
+    "não resolve o problema"
+   ],
+   "claim": "Forbid null by default; assert does not solve it"
+  },
+  {
+   "id": "G3-043",
+   "src": "CL",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "preocupação à parte",
+    "limpos e robustos"
+   ],
+   "claim": "Conclusion: error handling as a separate concern"
+  },
+  {
+   "id": "G3-044",
+   "src": "CL",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "por James Grenning",
+    "manter limpos os limites"
+   ],
+   "claim": "Ch. 8 by James Grenning"
+  },
+  {
+   "id": "G3-045",
+   "src": "CL",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "tensão natural entre o fornecedor",
+    "Figura 8.1"
+   ],
+   "claim": "Provider/user tension; Map as an example"
+  },
+  {
+   "id": "G3-046",
+   "src": "CL",
+   "pages": [
+    119
+   ],
+   "terms": [
+    "Java 5",
+    "Evite retorná-la ou aceitá-la como parâmetro em APIs públicas"
+   ],
+   "claim": "Do not pass Map around the system; do not expose it in public APIs"
+  },
+  {
+   "id": "G3-047",
+   "src": "CL",
+   "pages": [
+    119
+   ],
+   "terms": [
+    "public class Sensors",
+    "A interface no limite",
+    "mais dificil de ser utilizado incorretamente"
+   ],
+   "claim": "The Sensors class encapsulates the Map"
+  },
+  {
+   "id": "G3-048",
+   "src": "CL",
+   "pages": [
+    120
+   ],
+   "terms": [
+    "testes de aprendizagem",
+    "Jim Newkirk"
+   ],
+   "claim": "Learning tests (Jim Newkirk)"
+  },
+  {
+   "id": "G3-049",
+   "src": "CL",
+   "pages": [
+    120,
+    121
+   ],
+   "terms": [
+    "Aprendendo sobre log4j",
+    "desconfigurado"
+   ],
+   "claim": "log4j example"
+  },
+  {
+   "id": "G3-050",
+   "src": "CL",
+   "pages": [
+    121,
+    122
+   ],
+   "terms": [
+    "Os testes de aprendizagem são melhores que de graça",
+    "Cada distribuição vem com um novo risco"
+   ],
+   "claim": "Learning tests cost nothing and detect changes"
+  },
+  {
+   "id": "G3-051",
+   "src": "CL",
+   "pages": [
+    122
+   ],
+   "terms": [
+    "testes limite para facilitar a migração",
+    "manter por mais tempo do que deveríamos"
+   ],
+   "claim": "Boundary tests ease migration"
+  },
+  {
+   "id": "G3-052",
+   "src": "CL",
+   "pages": [
+    122
+   ],
+   "terms": [
+    "O uso de código que não existe ainda",
+    "Transmitter",
+    "transmit"
+   ],
+   "claim": "Define the desired interface before the API exists"
+  },
+  {
+   "id": "G3-053",
+   "src": "CL",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "encapsulou a interação com a API",
+    "FakeTransmitter"
+   ],
+   "claim": "Adapter and fake as a test seam"
+  },
+  {
+   "id": "G3-054",
+   "src": "CL",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "Limites limpos",
+    "depender de algo que você controle"
+   ],
+   "claim": "Clean boundaries: depend on what you control"
+  },
+  {
+   "id": "G3-055",
+   "src": "CL",
+   "pages": [
+    124,
+    125
+   ],
+   "terms": [
+    "Desenvolvimento Dirigido a Testes",
+    "joguei o código do teste fora"
+   ],
+   "claim": "History: throwaway tests before TDD"
+  },
+  {
+   "id": "G3-056",
+   "src": "CL",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "As três leis do TDD",
+    "Primeira Lei",
+    "até criar um teste de unidade de falhas"
+   ],
+   "claim": "First law of TDD"
+  },
+  {
+   "id": "G3-057",
+   "src": "CL",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "Segunda Lei",
+    "e não compilar é falhar"
+   ],
+   "claim": "Second law of TDD"
+  },
+  {
+   "id": "G3-058",
+   "src": "CL",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "Terceira Lei",
+    "teste de falha atual"
+   ],
+   "claim": "Third law of TDD"
+  },
+  {
+   "id": "G3-059",
+   "src": "CL",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "talvez dure trinta segundos",
+    "milhares a cada ano"
+   ],
+   "claim": "~30 s cycle and the volume of tests"
+  },
+  {
+   "id": "G3-060",
+   "src": "CL",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "porcamente",
+    "descartar toda coleção de testes"
+   ],
+   "claim": "Dirty tests led to the suite being discarded"
+  },
+  {
+   "id": "G3-061",
+   "src": "CL",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Ele não é componente secundário",
+    "tão limpo quanto o código de produção"
+   ],
+   "claim": "Test code as important as production code"
+  },
+  {
+   "id": "G3-062",
+   "src": "CL",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "Os testes habilitam as",
+    "flexíveis, reutilizáveis e passiveis de manutenção"
+   ],
+   "claim": "Tests enable the -ilities"
+  },
+  {
+   "id": "G3-063",
+   "src": "CL",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "legibilidade, legibilidade e legibilidade",
+    "clareza, simplicidade e consistência"
+   ],
+   "claim": "Clean test = readability"
+  },
+  {
+   "id": "G3-064",
+   "src": "CL",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "CONSTRUIR-OPERAR-VERIFICAR",
+    "dividido em três partes"
+   ],
+   "claim": "BUILD-OPERATE-CHECK pattern"
+  },
+  {
+   "id": "G3-065",
+   "src": "CL",
+   "pages": [
+    130
+   ],
+   "terms": [
+    "Linguagem de testes específica ao domínio",
+    "API especializada usada pelos testes"
+   ],
+   "claim": "Test DSL"
+  },
+  {
+   "id": "G3-066",
+   "src": "CL",
+   "pages": [
+    130
+   ],
+   "terms": [
+    "Um padrão duplo",
+    "não precisa ser mais eficiente"
+   ],
+   "claim": "Dual standard: efficiency may differ"
+  },
+  {
+   "id": "G3-067",
+   "src": "CL",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "mapeamento mental",
+    "parece apropriado"
+   ],
+   "claim": "HBchL string close to violating mental mapping"
+  },
+  {
+   "id": "G3-068",
+   "src": "CL",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "natureza do padrão duplo",
+    "Mas nunca de clareza"
+   ],
+   "claim": "The dual standard never relaxes clarity"
+  },
+  {
+   "id": "G3-069",
+   "src": "CL",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "Uma confirmação por teste",
+    "apenas uma instrução de confirmação"
+   ],
+   "claim": "One-assertion-per-test school"
+  },
+  {
+   "id": "G3-070",
+   "src": "CL",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "dado-quando-então",
+    "Template Method",
+    "prefiro as confirmações múltiplas"
+   ],
+   "claim": "Splitting tests generates duplication; the author prefers multiple"
+  },
+  {
+   "id": "G3-071",
+   "src": "CL",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "boa orientação",
+    "minimizar o número de confirmações"
+   ],
+   "claim": "Single assert is guidance; minimize assertions"
+  },
+  {
+   "id": "G3-072",
+   "src": "CL",
+   "pages": [
+    133,
+    134
+   ],
+   "terms": [
+    "Um único conceito por teste",
+    "testar apenas um conceito por função de teste"
+   ],
+   "claim": "One concept per test"
+  },
+  {
+   "id": "G3-073",
+   "src": "CL",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "28 de março",
+    "Esse teste está faltando"
+   ],
+   "claim": "Separating concepts reveals a missing test"
+  },
+  {
+   "id": "G3-074",
+   "src": "CL",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "cinco regras",
+    "Fast, Independent, Repeatable, Self-validating"
+   ],
+   "claim": "F.I.R.S.T. five rules"
+  },
+  {
+   "id": "G3-075",
+   "src": "CL",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "Rapidez os testes devem ser rápidos",
+    "Independência os testes não devem depender uns dos outros"
+   ],
+   "claim": "F = Fast, I = Independent"
+  },
+  {
+   "id": "G3-076",
+   "src": "CL",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "Repetitividade deve-se poder repetir",
+    "Autovalidação os testes devem ter uma saída booleana"
+   ],
+   "claim": "R = Repeatable, S = Self-validating"
+  },
+  {
+   "id": "G3-077",
+   "src": "CL",
+   "pages": [
+    135
+   ],
+   "terms": [
+    "Pontualidade os testes precisam ser escritos em tempo hábil",
+    "imediatamente antes do código de produção"
+   ],
+   "claim": "T = Timely (before the production code)"
+  },
+  {
+   "id": "G3-078",
+   "src": "CL",
+   "pages": [
+    135
+   ],
+   "terms": [
+    "Mantenha limpos os seus testes",
+    "linguagem específica a um domínio"
+   ],
+   "claim": "Ch. 9 conclusion"
+  },
+  {
+   "id": "G4-001",
+   "src": "CL",
+   "pages": [
+    137
+   ],
+   "terms": [
+    "começar com uma lista de variáveis",
+    "variáveis estáticas privadas",
+    "As funções públicas devem vir após"
+   ],
+   "claim": "Class member ordering: variables (public constants, private statics, private instance) and then public functions"
+  },
+  {
+   "id": "G4-002",
+   "src": "CL",
+   "pages": [
+    137
+   ],
+   "terms": [
+    "o teste tem prioridade",
+    "Perder o encapsulamento sempre é o último recurso"
+   ],
+   "claim": "Encapsulation may be loosened for tests, but only as a last resort"
+  },
+  {
+   "id": "G4-003",
+   "src": "CL",
+   "pages": [
+    137
+   ],
+   "terms": [
+    "A primeira regra para classes é que devem ser pequenas",
+    "Contamos as responsabilidades",
+    "70 métodos públicos",
+    "classe de deus"
+   ],
+   "claim": "Small classes, measured by responsibilities; SuperDashboard with ~70 methods"
+  },
+  {
+   "id": "G4-004",
+   "src": "CL",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "Cinco não é muito",
+    "possui muitas responsabilidades"
+   ],
+   "claim": "Few methods do not guarantee a small class"
+  },
+  {
+   "id": "G4-005",
+   "src": "CL",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "Processador ou Gerenciador",
+    "cerca de 25 palavras"
+   ],
+   "claim": "An ambiguous name indicates excess responsibilities; description in ~25 words without if/or/but"
+  },
+  {
+   "id": "G4-006",
+   "src": "CL",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "deve ter um, e apenas um, motivo para mudar"
+   ],
+   "claim": "The book's statement of SRP"
+  },
+  {
+   "id": "G4-007",
+   "src": "CL",
+   "pages": [
+    140
+   ],
+   "terms": [
+    "O SRP é um dos conceitos mais importantes",
+    "o princípio mais ignorado",
+    "muitas classes pequenas, e não poucas classes grandes"
+   ],
+   "claim": "SRP is important and the most ignored; prefer many small classes"
+  },
+  {
+   "id": "G4-008",
+   "src": "CL",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "pequeno número de instâncias de variáveis",
+    "totalmente coesa",
+    "há pelo menos uma outra classe tentando sair"
+   ],
+   "claim": "Cohesion: few variables used by the methods; loss of cohesion reveals another class"
+  },
+  {
+   "id": "G4-009",
+   "src": "CL",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "Quando as classes perdem coesão, divida-as"
+   ],
+   "claim": "Maintaining cohesion leads to splitting classes"
+  },
+  {
+   "id": "G4-010",
+   "src": "CL",
+   "pages": [
+    147
+   ],
+   "terms": [
+    "dividido em três responsabilidades principais",
+    "Não a reescrevemos",
+    "coleção de testes que verificou o comportamento"
+   ],
+   "claim": "PrintPrimes split into three responsibilities, by test-guided refactoring, not rewriting"
+  },
+  {
+   "id": "G4-011",
+   "src": "CL",
+   "pages": [
+    148
+   ],
+   "terms": [
+    "Como organizar para alterar",
+    "considerar consertar nosso projeto"
+   ],
+   "claim": "Organizing for change; act when you must open the class"
+  },
+  {
+   "id": "G4-012",
+   "src": "CL",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "Aberto-Fechado",
+    "abertas para expansão, mas fechadas para alteração"
+   ],
+   "claim": "OCP as stated in the book"
+  },
+  {
+   "id": "G4-013",
+   "src": "CL",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "Como isolar das alterações",
+    "interface StockExchange que declare um único método"
+   ],
+   "claim": "Isolating from change with the StockExchange interface"
+  },
+  {
+   "id": "G4-014",
+   "src": "CL",
+   "pages": [
+    151
+   ],
+   "terms": [
+    "Princípio da Inversão da Independência",
+    "depender de abstrações, não de detalhes concretos",
+    "FixedStockExchangeStub"
+   ],
+   "claim": "DIP (translated as Inversão da Independência): depend on abstractions"
+  },
+  {
+   "id": "G4-015",
+   "src": "CL",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "Kevin Dean Wampler"
+   ],
+   "claim": "Author of ch. 11"
+  },
+  {
+   "id": "G4-016",
+   "src": "CL",
+   "pages": [
+    153
+   ],
+   "terms": [
+    "devem separar o processo de inicialização",
+    "INICIALIZAÇÃO/AVALIAÇÃO TARDIA"
+   ],
+   "claim": "Separate initialization from runtime logic; criticism of mixed-in lazy initialization"
+  },
+  {
+   "id": "G4-017",
+   "src": "CL",
+   "pages": [
+    154
+   ],
+   "terms": [
+    "estratégia global e consistente para resolver nossas dependências",
+    "Separação do Main",
+    "para longe do main"
+   ],
+   "claim": "Global dependency strategy; construction in main"
+  },
+  {
+   "id": "G4-018",
+   "src": "CL",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "Separação da construção com uma factory",
+    "Injeção de Dependência (DI",
+    "Inversão de Controle (IOC"
+   ],
+   "claim": "Factories and DI as an application of IoC"
+  },
+  {
+   "id": "G4-019",
+   "src": "CL",
+   "pages": [
+    156
+   ],
+   "terms": [
+    "As consultas ao JNDI",
+    "Injeção de Dependência Verdadeira",
+    "completamente passiva"
+   ],
+   "claim": "JNDI is partial DI; true DI leaves the class passive"
+  },
+  {
+   "id": "G4-020",
+   "src": "CL",
+   "pages": [
+    156,
+    157
+   ],
+   "terms": [
+    "É mito dizer que podemos conseguir um sistema",
+    "essência das agilidades iterativa e incremental"
+   ],
+   "claim": "Gradual growth: there is no right system on the first try"
+  },
+  {
+   "id": "G4-021",
+   "src": "CL",
+   "pages": [
+    158,
+    159
+   ],
+   "terms": [
+    "dificulta o teste de unidade isolado",
+    "Um bean não pode herdar"
+   ],
+   "claim": "EJB2's coupling to the container harms tests and OO"
+  },
+  {
+   "id": "G4-022",
+   "src": "CL",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "preocupações transversais",
+    "Programação Orientada a Aspecto",
+    "só funcionam com interfaces"
+   ],
+   "claim": "Cross-cutting concerns, AOP and the limits of JDK proxies"
+  },
+  {
+   "id": "G4-023",
+   "src": "CL",
+   "pages": [
+    161
+   ],
+   "terms": [
+    "Frameworks de POA puramente Java",
+    "Os POJOs estão simplesmente centrados",
+    "Spring V2,5"
+   ],
+   "claim": "Pure Java AOP with POJOs; Spring 2.5"
+  },
+  {
+   "id": "G4-024",
+   "src": "CL",
+   "pages": [
+    162,
+    163
+   ],
+   "terms": [
+    "quase completamente desacoplado do Spring",
+    "reformulação completa do padrão EJB para a versão 3"
+   ],
+   "claim": "Spring decouples the application; EJB3 follows Spring's model"
+  },
+  {
+   "id": "G4-025",
+   "src": "CL",
+   "pages": [
+    164
+   ],
+   "terms": [
+    "80-90% dos casos",
+    "Testes na arquitetura do sistema",
+    "Não é necessário fazer um BDUF"
+   ],
+   "claim": "AspectJ vs. Java AOP; testing the architecture; BDUF unnecessary"
+  },
+  {
+   "id": "G4-026",
+   "src": "CL",
+   "pages": [
+    165
+   ],
+   "terms": [
+    "arquitetura simples, porém bem desacoplada",
+    "Otimize a tomada de decisões",
+    "adiar as decisões até o último momento"
+   ],
+   "claim": "Simple, decoupled architecture; postpone decisions"
+  },
+  {
+   "id": "G4-027",
+   "src": "CL",
+   "pages": [
+    166
+   ],
+   "terms": [
+    "Use padrões sabiamente",
+    "valor demonstrativo",
+    "Linguagens Específicas a um Domínio",
+    "distância de comunicação"
+   ],
+   "claim": "Standards when they add value; DSLs"
+  },
+  {
+   "id": "G4-028",
+   "src": "CL",
+   "pages": [
+    167
+   ],
+   "terms": [
+    "usar a coisa mais simples que funcione"
+   ],
+   "claim": "Conclusion of ch. 11"
+  },
+  {
+   "id": "G4-029",
+   "src": "CL",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "Jeff Langr",
+    "quatro regras do Projeto Simples",
+    "Kent Beck"
+   ],
+   "claim": "Ch. 12 by Jeff Langr; Kent Beck's Simple Design rules"
+  },
+  {
+   "id": "G4-030",
+   "src": "CL",
+   "pages": [
+    169
+   ],
+   "terms": [
+    "Efetuar todos os testes",
+    "Sem duplicação de código",
+    "Expressar o propósito do programador",
+    "Minimizar o número de classes e métodos",
+    "Essas regras estão em ordem de relevância"
+   ],
+   "claim": "The four rules in the book's exact order"
+  },
+  {
+   "id": "G4-031",
+   "src": "CL",
+   "pages": [
+    169
+   ],
+   "terms": [
+    "Criar testes leva a projetos melhores",
+    "acoplamento fraco e coesão alta",
+    "Regras de 2 a 4 de Projeto Simples: Refatoração"
+   ],
+   "claim": "Rule 1 improves the design; rules 2-4 applied in refactoring"
+  },
+  {
+   "id": "G4-032",
+   "src": "CL",
+   "pages": [
+    170
+   ],
+   "terms": [
+    "A repetição de código é o inimigo principal",
+    "isEmpty"
+   ],
+   "claim": "Duplication as the main enemy; duplication of implementation"
+  },
+  {
+   "id": "G4-033",
+   "src": "CL",
+   "pages": [
+    171,
+    172
+   ],
+   "terms": [
+    "TEMPLATE METHOD",
+    "pequena reutilização",
+    "aplicando o padrão Template Method"
+   ],
+   "claim": "Template Method removes high-level duplication"
+  },
+  {
+   "id": "G4-034",
+   "src": "CL",
+   "pages": [
+    172,
+    173
+   ],
+   "terms": [
+    "o código deve expressar claramente o propósito de seu autor",
+    "COMMAND ou VISITOR",
+    "a forma mais importante de ser expressivo é tentar"
+   ],
+   "claim": "Expressiveness: names, patterns, tests and trying"
+  },
+  {
+   "id": "G4-035",
+   "src": "CL",
+   "pages": [
+    173
+   ],
+   "terms": [
+    "interface para cada classe",
+    "menor prioridade das quatro"
+   ],
+   "claim": "Few classes and methods: against dogmatism; lowest-priority rule"
+  },
+  {
+   "id": "G4-036",
+   "src": "CL",
+   "pages": [
+    174,
+    175
+   ],
+   "terms": [
+    "Brett L",
+    "Concorrência é uma estratégia de desacoplamento",
+    "o que é executado de quando é executado"
+   ],
+   "claim": "Concurrency decouples what from when"
+  },
+  {
+   "id": "G4-037",
+   "src": "CL",
+   "pages": [
+    176
+   ],
+   "terms": [
+    "A concorrência sempre melhora o desempenho",
+    "O projeto não muda ao criar programas concorrentes",
+    "Uma concorrência correta é complexa"
+   ],
+   "claim": "Myths and correct statements about concurrency"
+  },
+  {
+   "id": "G4-038",
+   "src": "CL",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "12.870 caminhos possíveis",
+    "2.704.156"
+   ],
+   "claim": "Number of execution paths for ++ with int and long"
+  },
+  {
+   "id": "G4-039",
+   "src": "CL",
+   "pages": [
+    177,
+    178
+   ],
+   "terms": [
+    "possui seu próprio ciclo de desenvolvimento",
+    "Mantenha seu código voltado para a concorrência separado"
+   ],
+   "claim": "SRP applied to concurrency"
+  },
+  {
+   "id": "G4-040",
+   "src": "CL",
+   "pages": [
+    178
+   ],
+   "terms": [
+    "limite o escopo dos dados",
+    "limite severamente o acesso",
+    "Use cópias dos dados",
+    "as threads devem ser as mais independentes"
+   ],
+   "claim": "Limit scope, use copies, independent threads"
+  },
+  {
+   "id": "G4-041",
+   "src": "CL",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "subsistemas independentes",
+    "Use as coleções seguras para threads",
+    "Use o framework Executor",
+    "Use soluções non-blocking",
+    "ConcurrentHashMap",
+    "CountDownLatch"
+   ],
+   "claim": "Know the Java 5 library"
+  },
+  {
+   "id": "G4-042",
+   "src": "CL",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "Recursos limitados (Bound Resources)",
+    "Exclusão mútua (Mutual Exclusion)",
+    "Espera indefinida (Starvation)",
+    "Bloqueio infinito (Deadlock)",
+    "Livelock",
+    "Producer-Consumer"
+   ],
+   "claim": "Basic definitions and the producer-consumer model"
+  },
+  {
+   "id": "G4-043",
+   "src": "CL",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "Leitores e escritores",
+    "Dining Philosophers",
+    "Aprenda esses algoritmos básicos"
+   ],
+   "claim": "Readers-writers and dining philosophers"
+  },
+  {
+   "id": "G4-044",
+   "src": "CL",
+   "pages": [
+    181,
+    182
+   ],
+   "terms": [
+    "Cuidado com dependências entre métodos",
+    "evite usar mais de um método em um objeto compartilhado",
+    "Bloqueio voltado para o cliente",
+    "Bloqueio voltado para o servidor",
+    "Servidor extra"
+   ],
+   "claim": "Dependencies between synchronized methods and three solutions"
+  },
+  {
+   "id": "G4-045",
+   "src": "CL",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "Mantenha pequenas as seções sincronizadas",
+    "menor número possível de seções críticas"
+   ],
+   "claim": "Small synchronized sections"
+  },
+  {
+   "id": "G4-046",
+   "src": "CL",
+   "pages": [
+    182,
+    183
+   ],
+   "terms": [
+    "criar códigos de desligamento corretos",
+    "Pense o quanto antes no desligamento"
+   ],
+   "claim": "Correct shutdown is hard; think early"
+  },
+  {
+   "id": "G4-047",
+   "src": "CL",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "Trate falhas falsas como questões relacionadas às threads",
+    "Primeiro, faça com que seu código sem thread funcione",
+    "Torne seu código com threads portátil",
+    "Torne seu código com threads ajustável",
+    "Rode com mais threads do que processadores",
+    "Rode em diferentes plataformas",
+    "Altere seu código para testar e forçar falhas"
+   ],
+   "claim": "The seven recommendations for testing threaded code"
+  },
+  {
+   "id": "G4-048",
+   "src": "CL",
+   "pages": [
+    183,
+    184
+   ],
+   "terms": [
+    "Não ignore falhas de sistema como se fossem casos isolados",
+    "Certifique-se de que seu código funcione sem threads"
+   ],
+   "claim": "Don't ignore failures; nonthreaded code first"
+  },
+  {
+   "id": "G4-049",
+   "src": "CL",
+   "pages": [
+    185,
+    186
+   ],
+   "terms": [
+    "Há duas opções para alteração",
+    "Automatizada",
+    "um aspecto simples que selecione aleatoriamente"
+   ],
+   "claim": "Manual and automated instrumentation"
+  },
+  {
+   "id": "G4-050",
+   "src": "CL",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "ConTest",
+    "desenvolvida pela IBM",
+    "Três Leis do TDD"
+   ],
+   "claim": "IBM's ConTest and the conclusion of ch. 13"
+  },
+  {
+   "id": "G4-051",
+   "src": "CL",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "Concorrência II",
+    "Exemplo de cliente/servidor"
+   ],
+   "claim": "Opening of Appendix A"
+  },
+  {
+   "id": "G4-052",
+   "src": "CL",
+   "pages": [
+    311,
+    312
+   ],
+   "terms": [
+    "completar dentro de 10.000 milissegundos",
+    "não o tornará mais rápido",
+    "Quando uma parte do sistema está esperando por uma E/S"
+   ],
+   "claim": "Throughput test; CPU- vs. I/O-bound limits"
+  },
+  {
+   "id": "G4-053",
+   "src": "CL",
+   "pages": [
+    312,
+    313
+   ],
+   "terms": [
+    "Gerenciamento de conexão com o socket",
+    "Diretrizes para uso de threads",
+    "deve ser mantido em poucos locais bem controlados"
+   ],
+   "claim": "Server responsibilities; thread management in few places"
+  },
+  {
+   "id": "G4-054",
+   "src": "CL",
+   "pages": [
+    314
+   ],
+   "terms": [
+    "framework Executor do Java 5",
+    "Caminhos possíveis de execução"
+   ],
+   "claim": "Switch to Executor; execution paths"
+  },
+  {
+   "id": "G4-055",
+   "src": "CL",
+   "pages": [
+    315,
+    316
+   ],
+   "terms": [
+    "oito instruções em bytecode",
+    "12.870",
+    "N! no caso geral"
+   ],
+   "claim": "Path counting and the effect of synchronized"
+  },
+  {
+   "id": "G4-056",
+   "src": "CL",
+   "pages": [
+    316
+   ],
+   "terms": [
+    "qualquer operação que seja interrompível"
+   ],
+   "claim": "Definition of atomic operation (mistranslated)"
+  },
+  {
+   "id": "G4-057",
+   "src": "CL",
+   "pages": [
+    317
+   ],
+   "terms": [
+    "valor de 64 bits requer duas de 32 bits"
+   ],
+   "claim": "A long assignment is not atomic per the JVM specification"
+  },
+  {
+   "id": "G4-058",
+   "src": "CL",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "Onde há valores/objetos compartilhados",
+    "Framework Executor",
+    "Ele também suporta futures",
+    "interface Callable"
+   ],
+   "claim": "What to know about the memory model; Executor, futures and Callable"
+  },
+  {
+   "id": "G4-059",
+   "src": "CL",
+   "pages": [
+    320,
+    321
+   ],
+   "terms": [
+    "Soluções sem bloqueio",
+    "bloqueio otimista",
+    "bloqueio pessimista",
+    "A operação CAS é atômica"
+   ],
+   "claim": "Non-blocking solutions and CAS"
+  },
+  {
+   "id": "G4-060",
+   "src": "CL",
+   "pages": [
+    321
+   ],
+   "terms": [
+    "Classes não seguras para threads",
+    "SimpleDateFormat",
+    "qualquer operação que envolva chamar mais de um método não é segura"
+   ],
+   "claim": "Unsafe classes and compound operations"
+  },
+  {
+   "id": "G4-061",
+   "src": "CL",
+   "pages": [
+    322,
+    323
+   ],
+   "terms": [
+    "Dependências entre métodos podem danificar",
+    "bloqueio baseando-se no cliente",
+    "Aceite a falha"
+   ],
+   "claim": "Dependencies between methods and the three options"
+  },
+  {
+   "id": "G4-062",
+   "src": "CL",
+   "pages": [
+    324,
+    325
+   ],
+   "terms": [
+    "Princípio do Não Se Repita",
+    "era realmente uma desgraça"
+   ],
+   "claim": "Client-side locking violates DRY and is risky"
+  },
+  {
+   "id": "G4-063",
+   "src": "CL",
+   "pages": [
+    326
+   ],
+   "terms": [
+    "deve-se dar preferência ao bloqueio baseando-se no servidor",
+    "Força a uma única diretriz",
+    "Use um ADAPTER para alterar a API"
+   ],
+   "claim": "Prefer server-side locking; ADAPTER when the server is not yours"
+  },
+  {
+   "id": "G4-064",
+   "src": "CL",
+   "pages": [
+    326,
+    327
+   ],
+   "terms": [
+    "Como aumentar a taxa de transferência de dados",
+    "sincronizar o menos possível"
+   ],
+   "claim": "Throughput and synchronizing the minimum"
+  },
+  {
+   "id": "G4-065",
+   "src": "CL",
+   "pages": [
+    328
+   ],
+   "terms": [
+    "13 páginas",
+    "duas páginas por segundo",
+    "três vezes maior"
+   ],
+   "claim": "Throughput calculation with one and several threads"
+  },
+  {
+   "id": "G4-066",
+   "src": "CL",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "quatro condições",
+    "Exclusão mútua",
+    "Bloqueio e espera",
+    "Sem preempção",
+    "Espera circular"
+   ],
+   "claim": "The four conditions of deadlock"
+  },
+  {
+   "id": "G4-067",
+   "src": "CL",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "abraço mortal",
+    "Todas essas quatro condições devem existir",
+    "Como evitar a exclusão mútua"
+   ],
+   "claim": "Circular wait; all the conditions are necessary"
+  },
+  {
+   "id": "G4-068",
+   "src": "CL",
+   "pages": [
+    331,
+    332
+   ],
+   "terms": [
+    "Como evitar o bloqueio e espera",
+    "Como evitar a preempção",
+    "Como evitar a espera circular",
+    "ordenação de recursos global",
+    "A ordem de aquisição pode não corresponder"
+   ],
+   "claim": "How to break each condition and the limits of ordering"
+  },
+  {
+   "id": "G4-069",
+   "src": "CL",
+   "pages": [
+    332,
+    334
+   ],
+   "terms": [
+    "Teste de código multithread",
+    "mais de um milhão",
+    "Teste de Monte Carlo"
+   ],
+   "claim": "Testing multithreaded code and test ideas"
+  },
+  {
+   "id": "G4-070",
+   "src": "CL",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "Ferramentas de suporte para testar",
+    "uma falha em trinta iterações",
+    "menos provável que código não seguro para threads falhe"
+   ],
+   "claim": "ConTest and results (with a translation error)"
+  },
+  {
+   "id": "G5-001",
+   "src": "CL",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "Refinamento Sucessivo",
+    "analisador sintático de parâmetro"
+   ],
+   "claim": "Opening of Ch. 14: case study of a command-line argument parser"
+  },
+  {
+   "id": "G5-002",
+   "src": "CL",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "decidi criar o meu próprio",
+    "string do formato, ou esquema"
+   ],
+   "claim": "Args receives a format/schema string and the array from main"
+  },
+  {
+   "id": "G5-003",
+   "src": "CL",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "de cima para baixo sem ter de saltar"
+   ],
+   "claim": "The final version of Args reads top to bottom without jumps"
+  },
+  {
+   "id": "G5-004",
+   "src": "CL",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "Ruby, Python ou Smalltalk",
+    "linguagem particularmente prolixa"
+   ],
+   "claim": "Verbosity attributed to Java; it would be smaller in Ruby/Python/Smalltalk"
+  },
+  {
+   "id": "G5-005",
+   "src": "CL",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "nova função getXXX",
+    "nova ArgsException.ErrorCode"
+   ],
+   "claim": "A new argument type requires a derived class, getXXX, case and ErrorCode"
+  },
+  {
+   "id": "G5-006",
+   "src": "CL",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "programar é mais uma arte do que ciência",
+    "rascunhos de nossas redações"
+   ],
+   "claim": "Clean code is born from a dirty draft that is then cleaned (essay analogy)"
+  },
+  {
+   "id": "G5-007",
+   "src": "CL",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "suicídio profissional"
+   ],
+   "claim": "Leaving the program merely working is professional suicide"
+  },
+  {
+   "id": "G5-008",
+   "src": "CL",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "e está uma zona"
+   ],
+   "claim": "Listing 14-8: first draft that works but is messy"
+  },
+  {
+   "id": "G5-009",
+   "src": "CL",
+   "pages": [
+    201
+   ],
+   "terms": [
+    "Quantidade de Instâncias de variáveis é assustadora",
+    "A bagunça cresceu gradualmente"
+   ],
+   "claim": "Symptoms of the draft and gradual growth of the mess"
+  },
+  {
+   "id": "G5-010",
+   "src": "CL",
+   "pages": [
+    207
+   ],
+   "terms": [
+    "Portanto, eu parei",
+    "parei de adicionar novos recursos e comecei a refatorar"
+   ],
+   "claim": "Decision to stop adding features and refactor"
+  },
+  {
+   "id": "G5-011",
+   "src": "CL",
+   "pages": [
+    207
+   ],
+   "terms": [
+    "em três locais principais",
+    "isso parece uma classe para mim"
+   ],
+   "claim": "Each type required code in three places; ArgumentMarshaler emerges"
+  },
+  {
+   "id": "G5-012",
+   "src": "CL",
+   "pages": [
+    207,
+    208
+   ],
+   "terms": [
+    "Incrementalismo",
+    "Desenvolvimento dirigido a testes",
+    "sempre manter o sistema operante"
+   ],
+   "claim": "Incrementalism and TDD: keep the system always running"
+  },
+  {
+   "id": "G5-013",
+   "src": "CL",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "pelo JUnit",
+    "wiki no FitNesse",
+    "fiz muitas alterações minúsculas"
+   ],
+   "claim": "JUnit unit tests, FitNesse acceptance tests, tiny changes"
+  },
+  {
+   "id": "G5-014",
+   "src": "CL",
+   "pages": [
+    209
+   ],
+   "terms": [
+    "O incrementalismo exige que eu conserte isso rapidamente",
+    "reduzi para am"
+   ],
+   "claim": "Fix a broken test before moving on; short name am [N5]"
+  },
+  {
+   "id": "G5-015",
+   "src": "CL",
+   "pages": [
+    210
+   ],
+   "terms": [
+    "Quando um falhava",
+    "sempre funcionando"
+   ],
+   "claim": "Each change with tests working; failure fixed before the next"
+  },
+  {
+   "id": "G5-016",
+   "src": "CL",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "me livre dos três maps diferentes"
+   ],
+   "claim": "Three maps per type replaced by one map of marshalers"
+  },
+  {
+   "id": "G5-017",
+   "src": "CL",
+   "pages": [
+    220
+   ],
+   "terms": [
+    "eu só havia rodado os testes de unidade",
+    "escritos no FitNesse"
+   ],
+   "claim": "FitNesse covered behavior that the unit tests did not"
+  },
+  {
+   "id": "G5-018",
+   "src": "CL",
+   "pages": [
+    227
+   ],
+   "terms": [
+    "setArgument [G23]",
+    "Isso suja o código",
+    "Levei dez passos"
+   ],
+   "claim": "Type case [G23], two parameters dirty it [F1], ten steps"
+  },
+  {
+   "id": "G5-019",
+   "src": "CL",
+   "pages": [
+    230
+   ],
+   "terms": [
+    "Rubik",
+    "possibilita o próximo"
+   ],
+   "claim": "Refactoring is like a Rubik's cube; each step enables the next"
+  },
+  {
+   "id": "G5-020",
+   "src": "CL",
+   "pages": [
+    233
+   ],
+   "terms": [
+    "pode-se remover o caso do tipo"
+   ],
+   "claim": "Removal of the type case after moving the set methods"
+  },
+  {
+   "id": "G5-021",
+   "src": "CL",
+   "pages": [
+    234
+   ],
+   "terms": [
+    "transformar ArgumentMarshaler em uma interface",
+    "testSimp1eDoub1ePresent"
+   ],
+   "claim": "ArgumentMarshaler becomes an interface; double starts with a test"
+  },
+  {
+   "id": "G5-022",
+   "src": "CL",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "unir todas as exceções em uma única"
+   ],
+   "claim": "Exceptions unified in ArgsException"
+  },
+  {
+   "id": "G5-023",
+   "src": "CL",
+   "pages": [
+    239
+   ],
+   "terms": [
+    "pequenos 30 passos"
+   ],
+   "claim": "Separation of the error codes in about 30 small steps"
+  },
+  {
+   "id": "G5-024",
+   "src": "CL",
+   "pages": [
+    246
+   ],
+   "terms": [
+    "se resumem ao particionamento",
+    "violação ao SRP"
+   ],
+   "claim": "Good design = partitioning; errorMessage in Args would violate SRP"
+  },
+  {
+   "id": "G5-025",
+   "src": "CL",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "Isso não basta para que um código funcione",
+    "um código ruim apodrece e degrada"
+   ],
+   "claim": "Conclusion: working is not enough; bad code rots"
+  },
+  {
+   "id": "G5-026",
+   "src": "CL",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "cinco minutos atrás",
+    "Jamais deixe que ele comece a se degradar"
+   ],
+   "claim": "Cleaning early is cheap; don't let it degrade"
+  },
+  {
+   "id": "G5-027",
+   "src": "CL",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "1/7 do tamanho",
+    "todos os testes do FitNesse"
+   ],
+   "claim": "Notes: Ruby version at 1/7 of the size; unit test invokes FitNesse"
+  },
+  {
+   "id": "G5-028",
+   "src": "CL",
+   "pages": [
+    248
+   ],
+   "terms": [
+    "Características Internas do JUnit"
+   ],
+   "claim": "Title of Ch. 15"
+  },
+  {
+   "id": "G5-029",
+   "src": "CL",
+   "pages": [
+    249
+   ],
+   "terms": [
+    "Kent Beck e Eric Gamma",
+    "Capítulo 15: Testes de Unidade"
+   ],
+   "claim": "Origin of JUnit; wrong running header (Unit Tests)"
+  },
+  {
+   "id": "G5-030",
+   "src": "CL",
+   "pages": [
+    251
+   ],
+   "terms": [
+    "100% do código",
+    "bem particionado"
+   ],
+   "claim": "Tests cover 100%; original code well partitioned"
+  },
+  {
+   "id": "G5-031",
+   "src": "CL",
+   "pages": [
+    253
+   ],
+   "terms": [
+    "Regra de Escoteiro",
+    "[N6]"
+   ],
+   "claim": "Boy Scout Rule motivates refactoring; remove prefix f [N6]"
+  },
+  {
+   "id": "G5-032",
+   "src": "CL",
+   "pages": [
+    254
+   ],
+   "terms": [
+    "[G28]",
+    "[N4]",
+    "[G29]"
+   ],
+   "claim": "ComparisonCompactor: encapsulate conditional, unambiguous names, avoid negatives"
+  },
+  {
+   "id": "G5-033",
+   "src": "CL",
+   "pages": [
+    255
+   ],
+   "terms": [
+    "[N7]",
+    "formatCompactedComparison",
+    "nada além da compactação",
+    "convenções consistentes"
+   ],
+   "claim": "N7 rename compact; G30 only compact; G11 consistency"
+  },
+  {
+   "id": "G5-034",
+   "src": "CL",
+   "pages": [
+    256
+   ],
+   "terms": [
+    "acoplamento temporário escondido",
+    "[G31]"
+   ],
+   "claim": "Hidden temporal coupling between prefix and suffix [G31]"
+  },
+  {
+   "id": "G5-035",
+   "src": "CL",
+   "pages": [
+    257
+   ],
+   "terms": [
+    "um pouco arbitrária [G32]"
+   ],
+   "claim": "Arbitrary parameter [G32] replaced by findCommonPrefixAndSuffix"
+  },
+  {
+   "id": "G5-036",
+   "src": "CL",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "[G33]",
+    "não é um comprimento real"
+   ],
+   "claim": "Boundary conditions +1 encapsulated [G33]"
+  },
+  {
+   "id": "G5-037",
+   "src": "CL",
+   "pages": [
+    259
+   ],
+   "terms": [
+    "Eles passaram"
+   ],
+   "claim": "compactString's ifs commented out, tests passed, removed"
+  },
+  {
+   "id": "G5-038",
+   "src": "CL",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "processo iterativo cheio de tentativas e erros",
+    "nenhum módulo está imune a um aperfeiçoamento"
+   ],
+   "claim": "Iterative refactoring; no module is immune to improvement"
+  },
+  {
+   "id": "G5-039",
+   "src": "CL",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "funções de análise",
+    "topologicamente organizadas"
+   ],
+   "claim": "Result separates analysis and synthesis, topological organization"
+  },
+  {
+   "id": "G5-040",
+   "src": "CL",
+   "pages": [
+    263
+   ],
+   "terms": [
+    "David Gilbert é o criador da SerialDate",
+    "JCommon"
+   ],
+   "claim": "SerialDate by David Gilbert, JCommon library"
+  },
+  {
+   "id": "G5-041",
+   "src": "CL",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "revisão profissional",
+    "Os médicos fazem isso"
+   ],
+   "claim": "Code critique as professional review"
+  },
+  {
+   "id": "G5-042",
+   "src": "CL",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "91 das 185",
+    "170 (92%) das 185",
+    "Clover"
+   ],
+   "claim": "Coverage with Clover: 91/185 before, 170/185 after"
+  },
+  {
+   "id": "G5-043",
+   "src": "CL",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "Primeiro, faça-a funcionar",
+    "[G2]",
+    "[F4]"
+   ],
+   "claim": "Phase 1; obvious behavior [G2]; dead function [F4]"
+  },
+  {
+   "id": "G5-044",
+   "src": "CL",
+   "pages": [
+    265
+   ],
+   "terms": [
+    "condição de limite [T5]",
+    "[T8]",
+    "[G3]",
+    "[T 7]"
+   ],
+   "claim": "Boundary bugs [T5], failure pattern [T7], coverage pattern [T8], [G3]"
+  },
+  {
+   "id": "G5-045",
+   "src": "CL",
+   "pages": [
+    266
+   ],
+   "terms": [
+    "Então, torne-a certa",
+    "resquício da década de 1960"
+   ],
+   "claim": "Phase 2; change history removed [C1]"
+  },
+  {
+   "id": "G5-046",
+   "src": "CL",
+   "pages": [
+    266
+   ],
+   "terms": [
+    "Um termo mais explicativo seria",
+    "[Gl]"
+   ],
+   "claim": "serial -> ordinal [N1]; multiple languages in the file [G1]"
+  },
+  {
+   "id": "G5-047",
+   "src": "CL",
+   "pages": [
+    267
+   ],
+   "terms": [
+    "optei por DayDate",
+    "[N2]",
+    "[J2]"
+   ],
+   "claim": "Renamed to DayDate [N2]; do not inherit constants [J2]"
+  },
+  {
+   "id": "G5-048",
+   "src": "CL",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "controle automático de serialização é bem mais seguro [G4]"
+   ],
+   "claim": "serialVersionUID removed [G4]"
+  },
+  {
+   "id": "G5-049",
+   "src": "CL",
+   "pages": [
+    269
+   ],
+   "terms": [
+    "ABSTRACT FACTORY",
+    "péssima ideia para classes base enxergar seus derivados"
+   ],
+   "claim": "Base class should not know its derivatives [G7]; DayDateFactory"
+  },
+  {
+   "id": "G5-050",
+   "src": "CL",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "[J3]",
+    "[C3]",
+    "[G8]",
+    "[G9]"
+   ],
+   "claim": "Day constants become an enum; redundant comments; private/dead tables"
+  },
+  {
+   "id": "G5-051",
+   "src": "CL",
+   "pages": [
+    271
+   ],
+   "terms": [
+    "nomenclatura matemática [N3]",
+    "WeekdayRange"
+   ],
+   "claim": "DateInterval with mathematical nomenclature [N3]; WeekdayRange"
+  },
+  {
+   "id": "G5-052",
+   "src": "CL",
+   "pages": [
+    272
+   ],
+   "terms": [
+    "colocar final em todo o seu código",
+    "[G 13]"
+   ],
+   "claim": "Author disagrees with final everywhere; Day in its own file [G13]"
+  },
+  {
+   "id": "G5-053",
+   "src": "CL",
+   "pages": [
+    273
+   ],
+   "terms": [
+    "FEATURE",
+    "[G14]",
+    "flag como parâmetro de uma função"
+   ],
+   "claim": "Feature envy [G14]; selector flag [G15]"
+  },
+  {
+   "id": "G5-054",
+   "src": "CL",
+   "pages": [
+    274
+   ],
+   "terms": [
+    "não pode ser estática"
+   ],
+   "claim": "addDays should not be static [G18]"
+  },
+  {
+   "id": "G5-055",
+   "src": "CL",
+   "pages": [
+    275
+   ],
+   "terms": [
+    "[G20]",
+    "ambiguidade [N4]",
+    "TEMPORARY VARIABLES"
+   ],
+   "claim": "addDays suggests mutation [G20]; plusDays [N4]; explanatory variables"
+  },
+  {
+   "id": "G5-056",
+   "src": "CL",
+   "pages": [
+    277
+   ],
+   "terms": [
+    "Dependências lógicas como essa me incomodam [G22]",
+    "fui esperto demais"
+   ],
+   "claim": "Logical dependency [G22]; useless refactoring of a function used only by tests"
+  },
+  {
+   "id": "G5-057",
+   "src": "CL",
+   "pages": [
+    278
+   ],
+   "terms": [
+    "[G23]",
+    "[G24]",
+    "daysSince"
+   ],
+   "claim": "switch -> DateInterval enum [G23]; abstracts on top [G24]; daysSince"
+  },
+  {
+   "id": "G5-058",
+   "src": "CL",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "número mágico 1 [G25]",
+    "84.9%",
+    "45 de 53"
+   ],
+   "claim": "Magic number [G25]; final coverage 84.9% (45 of 53)"
+  },
+  {
+   "id": "G5-059",
+   "src": "CL",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "Regra de Escoteiro",
+    "consertamos"
+   ],
+   "claim": "Conclusion of Ch. 16: Boy Scout Rule"
+  },
+  {
+   "id": "G5-060",
+   "src": "CL",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "Listagem B.4, página 374",
+    "Listagem B.2, página"
+   ],
+   "claim": "Ch. 16 cross-references to listings with pages that do not match the PDF"
+  },
+  {
+   "id": "G5-061",
+   "src": "CL",
+   "pages": [
+    341
+   ],
+   "terms": [
+    "Apêndice B",
+    "Listing B-l"
+   ],
+   "claim": "Start of Appendix B and of Listing B-1 (original SerialDate)"
+  },
+  {
+   "id": "G5-062",
+   "src": "CL",
+   "pages": [
+    358
+   ],
+   "terms": [
+    "Listagem B-2",
+    "SerialDateTest"
+   ],
+   "claim": "B-2 SerialDateTest starts at p.358"
+  },
+  {
+   "id": "G5-063",
+   "src": "CL",
+   "pages": [
+    363,
+    364
+   ],
+   "terms": [
+    "Listagem B-3",
+    "MonthConstants",
+    "Listagem B-4",
+    "BobsSeria1DateTest"
+   ],
+   "claim": "B-3 MonthConstants and start of B-4 BobsSerialDateTest"
+  },
+  {
+   "id": "G5-064",
+   "src": "CL",
+   "pages": [
+    372,
+    380
+   ],
+   "terms": [
+    "Listing B-5",
+    "Listagem B-6"
+   ],
+   "claim": "B-5 SpreadsheetDate (p.372) and B-6 RelativeDayOfWeekRule (p.380)"
+  },
+  {
+   "id": "G5-065",
+   "src": "CL",
+   "pages": [
+    384,
+    386
+   ],
+   "terms": [
+    "DayDate.java (Final)",
+    "Listagem B-8"
+   ],
+   "claim": "B-7 final DayDate and B-8 final Month"
+  },
+  {
+   "id": "G5-066",
+   "src": "CL",
+   "pages": [
+    389,
+    390,
+    391
+   ],
+   "terms": [
+    "Listagem B-12",
+    "Listagem B-14",
+    "Listagem B-16"
+   ],
+   "claim": "Final listings B-11 to B-16"
+  },
+  {
+   "id": "G6-001",
+   "src": "CL",
+   "pages": [
+    280
+   ],
+   "terms": [
+    "Odores e Heurísticas",
+    "Martin Fowler identificou"
+   ],
+   "claim": "Ch. 17 opens at p.280 and starts from Fowler's code smells (Refactoring)."
+  },
+  {
+   "id": "G6-002",
+   "src": "CL",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "lida de cima para baixo",
+    "referência cruzada para cada heurística"
+   ],
+   "claim": "The list should be read in sequence and used as a reference; there is a cross-reference in Appendix C."
+  },
+  {
+   "id": "G6-003",
+   "src": "CL",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "Informações inapropriadas",
+    "metadados, como autores"
+   ],
+   "claim": "C1: metadata (author, date, history) does not belong in comments."
+  },
+  {
+   "id": "G6-004",
+   "src": "CL",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "Comentário obsoleto",
+    "ilhas flutuantes de irrelevância"
+   ],
+   "claim": "C2: an obsolete comment drifts from the code and misleads."
+  },
+  {
+   "id": "G6-005",
+   "src": "CL",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "Comentários redundantes",
+    "o que o código não consegue por si só"
+   ],
+   "claim": "C3: a comment should only say what the code does not."
+  },
+  {
+   "id": "G6-006",
+   "src": "CL",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "Comentário mal escrito",
+    "Seja breve"
+   ],
+   "claim": "C4: a comment should be well written and brief."
+  },
+  {
+   "id": "G6-007",
+   "src": "CL",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "Código como comentário",
+    "é uma abominação"
+   ],
+   "claim": "C5: commented-out code should be deleted."
+  },
+  {
+   "id": "G6-008",
+   "src": "CL",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "Construir requer mais de uma etapa",
+    "operação simples e única"
+   ],
+   "claim": "E1: the build should be a single, simple operation."
+  },
+  {
+   "id": "G6-009",
+   "src": "CL",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "Testes requerem mais de uma etapa",
+    "rodar todos os testes de unidade com apenas um comando"
+   ],
+   "claim": "E2: all the tests with one command."
+  },
+  {
+   "id": "G6-010",
+   "src": "CL",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Parâmetros em excesso",
+    "Ter nenhum é melhor"
+   ],
+   "claim": "F1: few arguments; zero is ideal."
+  },
+  {
+   "id": "G6-011",
+   "src": "CL",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Parâmetros de saída",
+    "parâmetros sejam de entrada"
+   ],
+   "claim": "F2: readers expect input arguments, not output ones."
+  },
+  {
+   "id": "G6-012",
+   "src": "CL",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Parâmetros lógicos",
+    "Parâmetros booleanos explicitamente declaram"
+   ],
+   "claim": "F3: a boolean argument declares that the function does more than one thing."
+  },
+  {
+   "id": "G6-013",
+   "src": "CL",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Função morta",
+    "métodos que nunca são chamados"
+   ],
+   "claim": "F4: discard methods that are never called."
+  },
+  {
+   "id": "G6-014",
+   "src": "CL",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Múltiplas linguagens em um arquivo fonte",
+    "uma, apenas uma, linguagem"
+   ],
+   "claim": "G1: ideally one language per source file."
+  },
+  {
+   "id": "G6-015",
+   "src": "CL",
+   "pages": [
+    283,
+    284
+   ],
+   "terms": [
+    "Comportamento óbvio não é implementado",
+    "perdem a confiança no autor original"
+   ],
+   "claim": "G2: without the obvious behavior, the reader loses trust in the author."
+  },
+  {
+   "id": "G6-016",
+   "src": "CL",
+   "pages": [
+    284
+   ],
+   "terms": [
+    "Comportamento incorreto nos limites",
+    "Não dependa de sua intuição"
+   ],
+   "claim": "G3: handle every boundary condition and test it."
+  },
+  {
+   "id": "G6-017",
+   "src": "CL",
+   "pages": [
+    284
+   ],
+   "terms": [
+    "Seguranças anuladas",
+    "Chernobyl derreteu"
+   ],
+   "claim": "G4: overriding safeties (warnings, tests) is risky; Chernobyl analogy."
+  },
+  {
+   "id": "G6-018",
+   "src": "CL",
+   "pages": [
+    284
+   ],
+   "terms": [
+    "G5: Duplicação",
+    "princípio de DRY",
+    "Uma vez, e apenas uma"
+   ],
+   "claim": "G5: duplication is one of the most important rules; DRY and 'once and only once'."
+  },
+  {
+   "id": "G6-019",
+   "src": "CL",
+   "pages": [
+    285
+   ],
+   "terms": [
+    "substituir pelo polimorfismo",
+    "TEMPLATE METHOD"
+   ],
+   "claim": "G5: repeated switch/if -> polymorphism; similar algorithms -> Template Method/Strategy."
+  },
+  {
+   "id": "G6-020",
+   "src": "CL",
+   "pages": [
+    285
+   ],
+   "terms": [
+    "Códigos no nível errado de abstração",
+    "Boundedstack"
+   ],
+   "claim": "G6: percentFull belongs to a BoundedStack, not to the general Stack."
+  },
+  {
+   "id": "G6-021",
+   "src": "CL",
+   "pages": [
+    286
+   ],
+   "terms": [
+    "As classes base dependem de suas derivadas",
+    "enxergar nada em suas derivadas"
+   ],
+   "claim": "G7: base classes should not see their derivatives."
+  },
+  {
+   "id": "G6-022",
+   "src": "CL",
+   "pages": [
+    286
+   ],
+   "terms": [
+    "Informações excessivas",
+    "Esconda seus dados"
+   ],
+   "claim": "G8: small interfaces; hide data, utilities and constants."
+  },
+  {
+   "id": "G6-023",
+   "src": "CL",
+   "pages": [
+    286,
+    287
+   ],
+   "terms": [
+    "G9: Código morto",
+    "funeral decente"
+   ],
+   "claim": "G9: dead code should be deleted."
+  },
+  {
+   "id": "G6-024",
+   "src": "CL",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "Separação vertical",
+    "imediatamente abaixo de seu primeiro uso"
+   ],
+   "claim": "G10: private functions just below the first use; variables just above."
+  },
+  {
+   "id": "G6-025",
+   "src": "CL",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "Inconsistência",
+    "princípio da surpresa mínima"
+   ],
+   "claim": "G11: do similar things the same way (least surprise)."
+  },
+  {
+   "id": "G6-026",
+   "src": "CL",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "G12: Entulho",
+    "construtor sem implementação alguma"
+   ],
+   "claim": "G12: clutter (empty constructor, unused variables) should be removed."
+  },
+  {
+   "id": "G6-027",
+   "src": "CL",
+   "pages": [
+    287,
+    288
+   ],
+   "terms": [
+    "Acoplamento artificial",
+    "Isso é descuido e preguiça"
+   ],
+   "claim": "G13: artificial coupling comes from putting things in a convenient place."
+  },
+  {
+   "id": "G6-028",
+   "src": "CL",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "G14: Feature Envy",
+    "inveja o escopo da classe"
+   ],
+   "claim": "G14: Feature Envy, a Fowler smell."
+  },
+  {
+   "id": "G6-029",
+   "src": "CL",
+   "pages": [
+    289,
+    290
+   ],
+   "terms": [
+    "Parâmetros seletores",
+    "parâmetro false pendurado",
+    "muitas funções do que passar um código por parâmetro"
+   ],
+   "claim": "G15: better several functions than a selector argument."
+  },
+  {
+   "id": "G6-030",
+   "src": "CL",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "Propósito obscuro",
+    "notação húngara"
+   ],
+   "claim": "G16: Hungarian notation and magic numbers obscure intent."
+  },
+  {
+   "id": "G6-031",
+   "src": "CL",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "Responsabilidade mal posicionada",
+    "computeRunningTotalOfHours"
+   ],
+   "claim": "G17: code where the reader expects it; names reflect the decision."
+  },
+  {
+   "id": "G6-032",
+   "src": "CL",
+   "pages": [
+    290,
+    291
+   ],
+   "terms": [
+    "Modo estático inadequado",
+    "Na dúvida, torne a função não estática"
+   ],
+   "claim": "G18: when in doubt, prefer non-static methods."
+  },
+  {
+   "id": "G6-033",
+   "src": "CL",
+   "pages": [
+    291
+   ],
+   "terms": [
+    "Use variáveis descritivas",
+    "Mais variáveis explicativas geralmente são melhores"
+   ],
+   "claim": "G19: explanatory variables make the code readable."
+  },
+  {
+   "id": "G6-034",
+   "src": "CL",
+   "pages": [
+    291,
+    292
+   ],
+   "terms": [
+    "Nomes de funções devem dizer o que elas fazem",
+    "addDaysTo"
+   ],
+   "claim": "G20: date.add is ambiguous; names like addDaysTo/daysLater."
+  },
+  {
+   "id": "G6-035",
+   "src": "CL",
+   "pages": [
+    292
+   ],
+   "terms": [
+    "Entenda o algoritmo",
+    "Ter passado em todos os testes não basta"
+   ],
+   "claim": "G21: passing the tests is not enough; understand the algorithm."
+  },
+  {
+   "id": "G6-036",
+   "src": "CL",
+   "pages": [
+    292,
+    293
+   ],
+   "terms": [
+    "Torne dependências lógicas em físicas",
+    "Tal suposição é uma dependência lógica"
+   ],
+   "claim": "G22: PAGE_SIZE in the reporter is a logical dependency; make it physical by asking the formatter."
+  },
+  {
+   "id": "G6-037",
+   "src": "CL",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "Prefira polimorfismo a if",
+    "UM SWITCH",
+    "cada estrutura switch deve ser um suspeito"
+   ],
+   "claim": "G23: ONE SWITCH rule; every switch is suspect."
+  },
+  {
+   "id": "G6-038",
+   "src": "CL",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "Siga as convenções padrões",
+    "que todos concordem onde colocá-las"
+   ],
+   "claim": "G24: the team follows a common standard; the code is the example."
+  },
+  {
+   "id": "G6-039",
+   "src": "CL",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "Substitua os números mágicos por constantes com nomes",
+    "86.400"
+   ],
+   "claim": "G25: loose numbers become named constants (86,400)."
+  },
+  {
+   "id": "G6-040",
+   "src": "CL",
+   "pages": [
+    295
+   ],
+   "terms": [
+    "não se aplica apenas a números",
+    "3.14159"
+   ],
+   "claim": "G25: 'magic number' applies to any token with no evident meaning; do not rewrite pi."
+  },
+  {
+   "id": "G6-041",
+   "src": "CL",
+   "pages": [
+    295
+   ],
+   "terms": [
+    "G26: Seja preciso",
+    "ponto flutuante para representar moedas"
+   ],
+   "claim": "G26: floating point for money is almost criminal; check null; handle concurrency."
+  },
+  {
+   "id": "G6-042",
+   "src": "CL",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "Estrutura acima de convenção",
+    "com métodos abstratos"
+   ],
+   "claim": "G27: a base class with abstract methods is superior to a switch with enums."
+  },
+  {
+   "id": "G6-043",
+   "src": "CL",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "Encapsule as condicionais",
+    "Extraia funções que expliquem o propósito"
+   ],
+   "claim": "G28: extract a function that explains the condition."
+  },
+  {
+   "id": "G6-044",
+   "src": "CL",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "Evite condicionais negativas",
+    "use condicionais afirmativas"
+   ],
+   "claim": "G29: prefer positive conditionals."
+  },
+  {
+   "id": "G6-045",
+   "src": "CL",
+   "pages": [
+    296,
+    297
+   ],
+   "terms": [
+    "As funções devem fazer uma coisa só",
+    "payIfNecessary"
+   ],
+   "claim": "G30: pay() split into functions that do one thing."
+  },
+  {
+   "id": "G6-046",
+   "src": "CL",
+   "pages": [
+    297
+   ],
+   "terms": [
+    "Acoplamentos temporários ocultos",
+    "UnsaturatedGradientException"
+   ],
+   "claim": "G31: the call order should be explicit."
+  },
+  {
+   "id": "G6-047",
+   "src": "CL",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "Não seja arbitrário",
+    "AliasLinkWidget"
+   ],
+   "claim": "G32: arbitrary structure (a nested class with no reason) invites changes."
+  },
+  {
+   "id": "G6-048",
+   "src": "CL",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "Encapsule as condições de limites",
+    "enxame de +1s"
+   ],
+   "claim": "G33: concentrate +1/-1 in one place."
+  },
+  {
+   "id": "G6-049",
+   "src": "CL",
+   "pages": [
+    299
+   ],
+   "terms": [
+    "Funções devem descer apenas um nível de",
+    "um nível abaixo da operação descrita pelo nome da função"
+   ],
+   "claim": "G34: statements at the same level, one below the name (printed title without 'abstração')."
+  },
+  {
+   "id": "G6-050",
+   "src": "CL",
+   "pages": [
+    300
+   ],
+   "terms": [
+    "Separar os níveis de é uma das funções mais importantes da refatoração"
+   ],
+   "claim": "G34: separating levels is one of the most important and hardest refactoring tasks."
+  },
+  {
+   "id": "G6-051",
+   "src": "CL",
+   "pages": [
+    300,
+    301
+   ],
+   "terms": [
+    "Mantenha os dados configuráveis em níveis altos",
+    "As constantes de configuração ficam em um nível muito alto"
+   ],
+   "claim": "G35: configuration at a high level, passed down."
+  },
+  {
+   "id": "G6-052",
+   "src": "CL",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "Evite a navegação transitiva",
+    "Lei de Demeter",
+    "código tímido"
+   ],
+   "claim": "G36: Law of Demeter / shy code."
+  },
+  {
+   "id": "G6-053",
+   "src": "CL",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "Evite longas listas de importação usando wildcards",
+    "80 linhas de import"
+   ],
+   "claim": "J1: import the package with a wildcard instead of long lists."
+  },
+  {
+   "id": "G6-054",
+   "src": "CL",
+   "pages": [
+    302
+   ],
+   "terms": [
+    "Importações específicas são dependências fixas"
+   ],
+   "claim": "J1: specific imports are hard dependencies; wildcards are not."
+  },
+  {
+   "id": "G6-055",
+   "src": "CL",
+   "pages": [
+    302,
+    303
+   ],
+   "terms": [
+    "Não herde as constantes",
+    "use um import estático"
+   ],
+   "claim": "J2: do not inherit a constants interface; use static import."
+  },
+  {
+   "id": "G6-056",
+   "src": "CL",
+   "pages": [
+    303
+   ],
+   "terms": [
+    "Constantes versus enum",
+    "Java 5"
+   ],
+   "claim": "J3: use enum (Java 5) instead of public static final int."
+  },
+  {
+   "id": "G6-057",
+   "src": "CL",
+   "pages": [
+    304
+   ],
+   "terms": [
+    "Escolha nomes descritivos",
+    "reavalie frequentemente"
+   ],
+   "claim": "N1: descriptive names, reevaluated as the software evolves."
+  },
+  {
+   "id": "G6-058",
+   "src": "CL",
+   "pages": [
+    306
+   ],
+   "terms": [
+    "Escolha nomes no nível apropriado de abstração",
+    "connectionLocator"
+   ],
+   "claim": "N2: Modem.dial(phoneNumber) -> connect(connectionLocator)."
+  },
+  {
+   "id": "G6-059",
+   "src": "CL",
+   "pages": [
+    306,
+    307
+   ],
+   "terms": [
+    "Use uma nomenclatura padrão onde for possível",
+    "AutoHangupModemDecorator",
+    "Eric Evans"
+   ],
+   "claim": "N3: pattern name in the class; project language (Evans)."
+  },
+  {
+   "id": "G6-060",
+   "src": "CL",
+   "pages": [
+    307
+   ],
+   "terms": [
+    "Nomes não ambíguos",
+    "renamePageAndOptionallyAllReferences"
+   ],
+   "claim": "N4: doRename -> renamePageAndOptionallyAllReferences."
+  },
+  {
+   "id": "G6-061",
+   "src": "CL",
+   "pages": [
+    307
+   ],
+   "terms": [
+    "Use nomes longos para escopos grandes",
+    "comprimento de um nome deve estar relacionado com o do escopo"
+   ],
+   "claim": "N5: name length proportional to scope."
+  },
+  {
+   "id": "G6-062",
+   "src": "CL",
+   "pages": [
+    307,
+    308
+   ],
+   "terms": [
+    "Evite codificações",
+    "livres da poluição húngara"
+   ],
+   "claim": "N6: no m_/f/siv_ prefixes; no Hungarian notation."
+  },
+  {
+   "id": "G6-063",
+   "src": "CL",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Nomes devem descrever os efeitos colaterais",
+    "createOrReturnOos"
+   ],
+   "claim": "N7: getOos -> createOrReturnOos."
+  },
+  {
+   "id": "G6-064",
+   "src": "CL",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Testes insuficientes",
+    "testar tudo que pode vir a falhar"
+   ],
+   "claim": "T1: the suite should test everything that can fail."
+  },
+  {
+   "id": "G6-065",
+   "src": "CL",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Ferramentas de cobertura informam lacunas"
+   ],
+   "claim": "T2: coverage tools show gaps."
+  },
+  {
+   "id": "G6-066",
+   "src": "CL",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Não pule testes triviais",
+    "valor de documentação é maior"
+   ],
+   "claim": "T3: trivial tests are worth it as documentation."
+  },
+  {
+   "id": "G6-067",
+   "src": "CL",
+   "pages": [
+    308,
+    309
+   ],
+   "terms": [
+    "Um teste ignorado é uma questão sobre uma ambiguidade",
+    "algo que deva ou não compilar"
+   ],
+   "claim": "T4: an ignored test records a doubt about a requirement."
+  },
+  {
+   "id": "G6-068",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "Teste as condições de limites",
+    "erramos sobre seus limites"
+   ],
+   "claim": "T5: special attention to boundaries."
+  },
+  {
+   "id": "G6-069",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "Bugs tendem a se reunir"
+   ],
+   "claim": "T6: bugs cluster; exhaustively test the function with the bug."
+  },
+  {
+   "id": "G6-070",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "Padrões de falhas são reveladores",
+    "ordenados de uma maneira lógica"
+   ],
+   "claim": "T7: ordered cases expose failure patterns."
+  },
+  {
+   "id": "G6-071",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "Padrões de cobertura de testes podem ser reveladores"
+   ],
+   "claim": "T8: coverage patterns give clues to the failures."
+  },
+  {
+   "id": "G6-072",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "Testes devem ser rápidos",
+    "Um teste lento é um que não será rodado"
+   ],
+   "claim": "T9: a slow test is not run."
+  },
+  {
+   "id": "G6-073",
+   "src": "CL",
+   "pages": [
+    309
+   ],
+   "terms": [
+    "código limpo seguindo uma série de regras",
+    "sistema de valores"
+   ],
+   "claim": "Conclusion: the list is not complete; clean code does not come from following rules, but from a value system."
+  },
+  {
+   "id": "G6-074",
+   "src": "CL",
+   "pages": [
+    395
+   ],
+   "terms": [
+    "Referência Cruzada das Heurísticas",
+    "Podem-se excluir todas as outras"
+   ],
+   "claim": "Appendix C: cross-reference of smells and heuristics."
+  },
+  {
+   "id": "G6-075",
+   "src": "CL",
+   "pages": [
+    396
+   ],
+   "terms": [
+    "17-336",
+    "16-288, 17-305"
+   ],
+   "claim": "Appendix C uses chapter-page notation (e.g. T9 at 17-336), which does not match this edition's pagination."
+  },
+  {
+   "id": "G6-076",
+   "src": "CL",
+   "pages": [
+    397
+   ],
+   "terms": [
+    "Obcecado por testes",
+    "Kent Beck me ensinou, em 1999"
+   ],
+   "claim": "Epilogue: 'Obcecado por testes' (Test Obsessed) wristband; TDD learned from Kent Beck in 1999."
+  },
+  {
+   "id": "G6-077",
+   "src": "CL",
+   "pages": [
+    304
+   ],
+   "terms": [
+    "responsáveis",
+    "Nomes são muito importantes para serem tratados de qualquer jeito"
+   ],
+   "claim": "N1: names are very important (the image shows '90% responsible for readability'; the OCR reads '900,6')."
+  }
+ ],
+ "negative": [
+  {
+   "id": "G1-N01",
+   "src": "CL",
+   "terms": [
+    "re:\\b(?-i:SOLID)\\b"
+   ],
+   "claim": "The book does not use the SOLID acronym (Ch. 1 cites SRP, OCP and DIP in isolation)"
+  },
+  {
+   "id": "G1-N02",
+   "src": "CL",
+   "terms": [
+    "Command Query",
+    "CQS"
+   ],
+   "claim": "The book does not use 'Command Query Separation'/CQS; it uses 'Separação comando-consulta'"
+  },
+  {
+   "id": "G1-N03",
+   "src": "CL",
+   "terms": [
+    "DRY"
+   ],
+   "page_range": [
+    40,
+    58
+   ],
+   "claim": "Ch. 3 does not use the DRY acronym; the topic is 'Evite repetição' (Avoid repetition; the acronym appears in other chapters)"
+  },
+  {
+   "id": "G1-N04",
+   "src": "CL",
+   "terms": [
+    "Liskov",
+    "Interface Segregation"
+   ],
+   "claim": "The book does not name LSP or ISP"
+  },
+  {
+   "id": "G1-N05",
+   "src": "CL",
+   "terms": [
+    "ISBN"
+   ],
+   "claim": "The scan has no ISBN"
+  },
+  {
+   "id": "G2-N01",
+   "src": "CL",
+   "terms": [
+    "docstring"
+   ],
+   "claim": "The book does not talk about docstrings"
+  },
+  {
+   "id": "G2-N02",
+   "src": "CL",
+   "terms": [
+    "re:tabula[çc][ãa]o"
+   ],
+   "claim": "The book does not discuss tabs vs. spaces (tab characters)"
+  },
+  {
+   "id": "G2-N03",
+   "src": "CL",
+   "terms": [
+    "re:\\b(2|4|dois|quatro) espa[çc]os"
+   ],
+   "claim": "The book does not prescribe an indentation size"
+  },
+  {
+   "id": "G2-N04",
+   "src": "CL",
+   "terms": [
+    "linter"
+   ],
+   "claim": "The book does not use the term linter"
+  },
+  {
+   "id": "G2-N05",
+   "src": "CL",
+   "terms": [
+    "FIXME"
+   ],
+   "claim": "The book does not talk about FIXME, only TODO"
+  },
+  {
+   "id": "G3-N01",
+   "src": "CL",
+   "terms": [
+    "Mockito"
+   ],
+   "claim": "The book does not mention Mockito (ch. 9 does not cite mock frameworks)"
+  },
+  {
+   "id": "G3-N02",
+   "src": "CL",
+   "terms": [
+    "re:JUnit ?5"
+   ],
+   "claim": "The book does not use JUnit 5"
+  },
+  {
+   "id": "G3-N03",
+   "src": "CL",
+   "terms": [
+    "re:\\bArrange\\b"
+   ],
+   "claim": "The book does not use Arrange-Act-Assert; it uses CONSTRUIR-OPERAR-VERIFICAR"
+  },
+  {
+   "id": "G3-N04",
+   "src": "CL",
+   "terms": [
+    "re:null ?object"
+   ],
+   "claim": "The book does not name the Null Object pattern; it uses Special Case"
+  },
+  {
+   "id": "G3-N05",
+   "src": "CL",
+   "terms": [
+    "re:tell,? ?don.?t ask"
+   ],
+   "claim": "The book does not use the expression Tell, Don't Ask"
+  },
+  {
+   "id": "G4-N01",
+   "src": "CL",
+   "terms": [
+    "Liskov"
+   ],
+   "claim": "The book does not cite the Liskov Substitution Principle"
+  },
+  {
+   "id": "G4-N02",
+   "src": "CL",
+   "terms": [
+    "re:invers.o de depend.ncia"
+   ],
+   "claim": "The translation never uses the correct name Inversão de Dependência (Dependency Inversion) for DIP"
+  },
+  {
+   "id": "G4-N03",
+   "src": "CL",
+   "terms": [
+    "Coffman"
+   ],
+   "claim": "The four deadlock conditions are not attributed to Coffman"
+  },
+  {
+   "id": "G4-N04",
+   "src": "CL",
+   "terms": [
+    "YAGNI"
+   ],
+   "claim": "The book does not use the term YAGNI"
+  },
+  {
+   "id": "G4-N05",
+   "src": "CL",
+   "terms": [
+    "CompletableFuture"
+   ],
+   "claim": "The book does not address CompletableFuture (Java 8+)"
+  },
+  {
+   "id": "G5-N01",
+   "src": "CL",
+   "terms": [
+    "Red-Green"
+   ],
+   "claim": "The book does not use the term Red-Green(-Refactor)"
+  },
+  {
+   "id": "G5-N02",
+   "src": "CL",
+   "terms": [
+    "JaCoCo"
+   ],
+   "claim": "The book does not cite JaCoCo (it uses Clover)"
+  },
+  {
+   "id": "G5-N03",
+   "src": "CL",
+   "terms": [
+    "java.time"
+   ],
+   "claim": "The book does not mention java.time"
+  },
+  {
+   "id": "G5-N04",
+   "src": "CL",
+   "terms": [
+    "LocalDate"
+   ],
+   "claim": "The book does not mention LocalDate"
+  },
+  {
+   "id": "G5-N05",
+   "src": "CL",
+   "terms": [
+    "Strangler"
+   ],
+   "claim": "The book does not cite the Strangler pattern"
+  },
+  {
+   "id": "G6-N01",
+   "src": "CL",
+   "terms": [
+    "re:\\bG3[7-9]\\b",
+    "re:\\bN[89]:",
+    "re:\\bT1[0-9]:"
+   ],
+   "claim": "The catalog ends at G36, N7 and T9; there are no G37+, N8+ or T10+."
+  },
+  {
+   "id": "G6-N02",
+   "src": "CL",
+   "terms": [
+    "re:\bC[6-9]:",
+    "re:\bE[3-9]:",
+    "re:\bF[5-9]:",
+    "re:\bJ[4-9]:"
+   ],
+   "claim": "There are no C6+, E3+, F5+ or J4+ in the book (the families stop at C5, E2, F4, J3)."
+  },
+  {
+   "id": "G6-N03",
+   "src": "CL",
+   "terms": [
+    "Shotgun Surgery",
+    "Primitive Obsession",
+    "God Class",
+    "Long Method"
+   ],
+   "claim": "These popular smells (Fowler/community) do not appear under those names in the book."
+  },
+  {
+   "id": "G6-N04",
+   "src": "CL",
+   "terms": [
+    "code smell"
+   ],
+   "claim": "The book does not use the term 'code smell'; the translation uses 'odores'."
+  }
+ ]
+}

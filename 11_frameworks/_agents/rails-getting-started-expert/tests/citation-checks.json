@@ -1,0 +1,792 @@
+{
+ "fonte": "RGS, PDF Rails-Getting-Started-Guide",
+ "convencao": "PDF page = printed 'Page N of 72'",
+ "checks": [
+  {
+   "cite": "RGS p.1",
+   "contains": [
+    "kamal",
+    "mvc",
+    "restful"
+   ],
+   "claim": "guide objectives"
+  },
+  {
+   "cite": "RGS p.2",
+   "contains": [
+    "ruby 3.2",
+    "rails 8.1.0",
+    "opinionated"
+   ],
+   "claim": "versions and opinionated"
+  },
+  {
+   "cite": "RGS p.2",
+   "contains": [
+    "don't repeat yourself",
+    "convention over configuration"
+   ],
+   "claim": "two principles"
+  },
+  {
+   "cite": "RGS p.2",
+   "contains": [
+    "rails --version",
+    "terminal"
+   ],
+   "claim": "check the version"
+  },
+  {
+   "cite": "RGS p.3",
+   "contains": [
+    "rails new",
+    "rails --help",
+    "config.ru",
+    "bundler"
+   ],
+   "claim": "rails new and structure"
+  },
+  {
+   "cite": "RGS p.4",
+   "contains": [
+    "rakefile",
+    "lib/tasks",
+    ".kamal/"
+   ],
+   "claim": "structure 2"
+  },
+  {
+   "cite": "RGS p.5",
+   "contains": [
+    "model-view-controller",
+    "bin/rails db:create"
+   ],
+   "claim": "MVC and db:create"
+  },
+  {
+   "cite": "RGS p.6",
+   "contains": [
+    "puma",
+    "http://localhost:3000",
+    "bin/rails"
+   ],
+   "claim": "server"
+  },
+  {
+   "cite": "RGS p.7",
+   "contains": [
+    "autoloading",
+    "require",
+    "naming conventions"
+   ],
+   "claim": "autoload"
+  },
+  {
+   "cite": "RGS p.8",
+   "contains": [
+    "sqlite",
+    "generate model product name:string",
+    "singular"
+   ],
+   "claim": "model and SQLite"
+  },
+  {
+   "cite": "RGS p.9",
+   "contains": [
+    "t.timestamps",
+    "migration[8.1]",
+    "plural"
+   ],
+   "claim": "migration"
+  },
+  {
+   "cite": "RGS p.9",
+   "contains": [
+    "bin/rails db:migrate"
+   ],
+   "claim": "db:migrate"
+  },
+  {
+   "cite": "RGS p.10",
+   "contains": [
+    "db:rollback",
+    "rails.version"
+   ],
+   "claim": "rollback and console"
+  },
+  {
+   "cite": "RGS p.11",
+   "contains": [
+    "column_names",
+    "applicationrecord"
+   ],
+   "claim": "empty model"
+  },
+  {
+   "cite": "RGS p.12",
+   "contains": [
+    "insert",
+    "product.create"
+   ],
+   "claim": "save and create"
+  },
+  {
+   "cite": "RGS p.13",
+   "contains": [
+    "activerecord::relation",
+    "order(name: :asc)",
+    "where"
+   ],
+   "claim": "relation"
+  },
+  {
+   "cite": "RGS p.14",
+   "contains": [
+    "product.find(1)",
+    "update"
+   ],
+   "claim": "find and update"
+  },
+  {
+   "cite": "RGS p.15",
+   "contains": [
+    "destroy",
+    "product.save"
+   ],
+   "claim": "destroy"
+  },
+  {
+   "cite": "RGS p.16",
+   "contains": [
+    "presence: true",
+    "reload!"
+   ],
+   "claim": "validation and reload"
+  },
+  {
+   "cite": "RGS p.17",
+   "contains": [
+    "full_messages",
+    "domain-specific language"
+   ],
+   "claim": "errors and DSL"
+  },
+  {
+   "cite": "RGS p.18",
+   "contains": [
+    "query parameters",
+    "patch",
+    "delete"
+   ],
+   "claim": "HTTP methods"
+  },
+  {
+   "cite": "RGS p.18",
+   "contains": [
+    "products#index",
+    "config/routes.rb"
+   ],
+   "claim": "first route"
+  },
+  {
+   "cite": "RGS p.19",
+   "contains": [
+    "products#create",
+    ":id",
+    "parameter"
+   ],
+   "claim": "post and param"
+  },
+  {
+   "cite": "RGS p.20",
+   "contains": [
+    "/blog/hello-world",
+    "crud",
+    "destroy"
+   ],
+   "claim": "blog only as a route example"
+  },
+  {
+   "cite": "RGS p.21",
+   "contains": [
+    "resources :products",
+    "bin/rails routes"
+   ],
+   "claim": "resources"
+  },
+  {
+   "cite": "RGS p.22",
+   "contains": [
+    "--skip-routes",
+    "new_product",
+    "health checks"
+   ],
+   "claim": "generated controller"
+  },
+  {
+   "cite": "RGS p.23",
+   "contains": [
+    "root \"products#index\"",
+    "underscored"
+   ],
+   "claim": "root"
+  },
+  {
+   "cite": "RGS p.24",
+   "contains": [
+    "instance variables",
+    "debug",
+    "yaml"
+   ],
+   "claim": "instance variables"
+  },
+  {
+   "cite": "RGS p.25",
+   "contains": [
+    "<% %>",
+    "does not output"
+   ],
+   "claim": "ERB tag with no output"
+  },
+  {
+   "cite": "RGS p.25-26",
+   "contains": [
+    "params[:id]",
+    "show"
+   ],
+   "claim": "params"
+  },
+  {
+   "cite": "RGS p.27",
+   "contains": [
+    "product_url",
+    "relative path",
+    "link_to"
+   ],
+   "claim": "helpers"
+  },
+  {
+   "cite": "RGS p.28",
+   "contains": [
+    "new_product_path",
+    "new action"
+   ],
+   "claim": "action new"
+  },
+  {
+   "cite": "RGS p.29",
+   "contains": [
+    "csrf",
+    "form_with",
+    "post"
+   ],
+   "claim": "form_with"
+  },
+  {
+   "cite": "RGS p.30",
+   "contains": [
+    "params.expect",
+    "strong parameters",
+    "redirect_to"
+   ],
+   "claim": "strong params"
+  },
+  {
+   "cite": "RGS p.31",
+   "contains": [
+    "422 unprocessable entity",
+    "render :new"
+   ],
+   "claim": "422"
+  },
+  {
+   "cite": "RGS p.33",
+   "contains": [
+    "_form.html.erb",
+    "partials",
+    "local variable"
+   ],
+   "claim": "partial"
+  },
+  {
+   "cite": "RGS p.34",
+   "contains": [
+    "before_action",
+    "dry"
+   ],
+   "claim": "before_action"
+  },
+  {
+   "cite": "RGS p.35",
+   "contains": [
+    "before_action :set_product, only: %i[ show edit update ]"
+   ],
+   "claim": "set_product"
+  },
+  {
+   "cite": "RGS p.37",
+   "contains": [
+    "def destroy",
+    "redirect_to products_path"
+   ],
+   "claim": "destroy controller"
+  },
+  {
+   "cite": "RGS p.38",
+   "contains": [
+    "button_to",
+    "turbo_confirm",
+    "generate authentication"
+   ],
+   "claim": "delete button and authentication"
+  },
+  {
+   "cite": "RGS p.39",
+   "contains": [
+    "bcrypt",
+    "user.create!"
+   ],
+   "claim": "bcrypt"
+  },
+  {
+   "cite": "RGS p.40",
+   "contains": [
+    "allow_unauthenticated_access",
+    "authenticated?"
+   ],
+   "claim": "unauthenticated access"
+  },
+  {
+   "cite": "RGS p.41-42",
+   "contains": [
+    "solid cache",
+    "dev:cache",
+    "cache_key"
+   ],
+   "claim": "cache"
+  },
+  {
+   "cite": "RGS p.42",
+   "contains": [
+    "read fragment",
+    "write fragment",
+    "action text"
+   ],
+   "claim": "cache logs"
+  },
+  {
+   "cite": "RGS p.43",
+   "contains": [
+    "has_rich_text",
+    "rich_textarea"
+   ],
+   "claim": "action text"
+  },
+  {
+   "cite": "RGS p.44",
+   "contains": [
+    "has_one_attached",
+    "active storage"
+   ],
+   "claim": "active storage"
+  },
+  {
+   "cite": "RGS p.45",
+   "contains": [
+    "config/locales/en.yml",
+    "translate"
+   ],
+   "claim": "i18n"
+  },
+  {
+   "cite": "RGS p.46",
+   "contains": [
+    "around_action",
+    "with_locale",
+    "relative locale lookup"
+   ],
+   "claim": "locale"
+  },
+  {
+   "cite": "RGS p.47",
+   "contains": [
+    "add_<columns>_to_<table>",
+    "es.yml"
+   ],
+   "claim": "migration convention"
+  },
+  {
+   "cite": "RGS p.48",
+   "contains": [
+    "default: 0",
+    "number_field"
+   ],
+   "claim": "inventory"
+  },
+  {
+   "cite": "RGS p.48",
+   "contains": [
+    "bin/rails db:migrate"
+   ],
+   "claim": "migrate inventory"
+  },
+  {
+   "cite": "RGS p.49",
+   "contains": [
+    "belongs_to",
+    "numericality",
+    "one-to-many"
+   ],
+   "claim": "subscriber"
+  },
+  {
+   "cite": "RGS p.50",
+   "contains": [
+    "dependent: :destroy",
+    "first_or_create",
+    "has_many"
+   ],
+   "claim": "has_many"
+  },
+  {
+   "cite": "RGS p.51",
+   "contains": [
+    "flash",
+    "only: [ :create ]"
+   ],
+   "claim": "flash and nested"
+  },
+  {
+   "cite": "RGS p.52",
+   "contains": [
+    "bin/rails g mailer product in_stock",
+    "action mailer"
+   ],
+   "claim": "mailer"
+  },
+  {
+   "cite": "RGS p.53",
+   "contains": [
+    "product_url",
+    "email clients"
+   ],
+   "claim": "url in email"
+  },
+  {
+   "cite": "RGS p.56",
+   "contains": [
+    "after_update_commit",
+    "inventory_count_previously_was",
+    "deliver_later"
+   ],
+   "claim": "callback"
+  },
+  {
+   "cite": "RGS p.57",
+   "contains": [
+    "activesupport::concern",
+    "included"
+   ],
+   "claim": "concern"
+  },
+  {
+   "cite": "RGS p.58",
+   "contains": [
+    "generates_token_for",
+    "resource :unsubscribe"
+   ],
+   "claim": "tokens"
+  },
+  {
+   "cite": "RGS p.59",
+   "contains": [
+    "find_by_token_for",
+    "@subscriber&.destroy"
+   ],
+   "claim": "unsubscribe controller"
+  },
+  {
+   "cite": "RGS p.60",
+   "contains": [
+    "propshaft",
+    "invalid or expired tokens"
+   ],
+   "claim": "propshaft"
+  },
+  {
+   "cite": "RGS p.62",
+   "contains": [
+    "import maps",
+    "no build steps"
+   ],
+   "claim": "importmap"
+  },
+  {
+   "cite": "RGS p.63",
+   "contains": [
+    "hotwire",
+    "turbo",
+    "stimulus",
+    "pin_all_from"
+   ],
+   "claim": "hotwire"
+  },
+  {
+   "cite": "RGS p.64",
+   "contains": [
+    "fixtures",
+    "test/fixtures/products.yml"
+   ],
+   "claim": "fixtures"
+  },
+  {
+   "cite": "RGS p.65",
+   "contains": [
+    "assert_emails",
+    "actionmailer::testhelper",
+    "bin/rails test"
+   ],
+   "claim": "test"
+  },
+  {
+   "cite": "RGS p.66",
+   "contains": [
+    "rubocop",
+    "productmailertest"
+   ],
+   "claim": "rubocop"
+  },
+  {
+   "cite": "RGS p.67",
+   "contains": [
+    "brakeman",
+    "bin/brakeman",
+    "session hijacking"
+   ],
+   "claim": "brakeman"
+  },
+  {
+   "cite": "RGS p.68",
+   "contains": [
+    "github actions",
+    "kamal",
+    "thruster",
+    "ubuntu"
+   ],
+   "claim": "ci and kamal"
+  },
+  {
+   "cite": "RGS p.69",
+   "contains": [
+    "letsencrypt",
+    "kamal_registry_password",
+    "bin/kamal setup"
+   ],
+   "claim": "kamal setup"
+  },
+  {
+   "cite": "RGS p.70",
+   "contains": [
+    "bin/kamal deploy",
+    "solid_queue_in_puma",
+    ":async",
+    "bin/kamal console"
+   ],
+   "claim": "solid queue"
+  },
+  {
+   "cite": "RGS p.71",
+   "contains": [
+    "sign up and settings",
+    "active record basics"
+   ],
+   "claim": "next steps"
+  },
+  {
+   "cite": "RGS p.72",
+   "contains": [
+    "creative commons",
+    "trademarks"
+   ],
+   "claim": "license"
+  },
+  {
+   "cite": "RGS p.6, 10",
+   "contains": [
+    "8.1.0"
+   ],
+   "claim": "version in outputs"
+  },
+  {
+   "cite": "RGS p.51",
+   "contains": [
+    "v8.1.3.1"
+   ],
+   "claim": "API link"
+  },
+  {
+   "cite": "RGS p.8-9",
+   "absent": [
+    "scaffold"
+   ],
+   "claim": "guide does not use scaffold"
+  },
+  {
+   "cite": "RGS p.8-9",
+   "absent": [
+    "postgresql",
+    "mysql"
+   ],
+   "claim": "SQLite only"
+  },
+  {
+   "cite": "RGS p.21-22",
+   "absent": [
+    "namespace",
+    "member",
+    "collection",
+    "constraints"
+   ],
+   "claim": "advanced routes"
+  },
+  {
+   "cite": "RGS p.30",
+   "absent": [
+    "permit!",
+    "mass assignment"
+   ],
+   "claim": "strong params without permit!"
+  },
+  {
+   "cite": "RGS p.38-41",
+   "absent": [
+    "devise",
+    "omniauth",
+    "oauth"
+   ],
+   "claim": "authentication without Devise"
+  },
+  {
+   "cite": "RGS p.60-63",
+   "absent": [
+    "webpack",
+    "esbuild",
+    "sass",
+    "tailwind"
+   ],
+   "claim": "assets without bundlers"
+  },
+  {
+   "cite": "RGS p.64-66",
+   "absent": [
+    "rspec",
+    "factorybot",
+    "capybara"
+   ],
+   "claim": "tests only Minitest/fixtures"
+  },
+  {
+   "cite": "RGS p.68-70",
+   "absent": [
+    "heroku",
+    "capistrano",
+    "kubernetes"
+   ],
+   "claim": "deploy only Kamal"
+  },
+  {
+   "cite": "RGS p.16-17",
+   "absent": [
+    "uniqueness",
+    "length:"
+   ],
+   "claim": "validations only presence"
+  },
+  {
+   "cite": "RGS p.49-50",
+   "absent": [
+    "polymorphic",
+    "has_many :through"
+   ],
+   "claim": "simple associations"
+  },
+  {
+   "cite": "RGS p.56-58",
+   "absent": [
+    "after_save",
+    "before_save"
+   ],
+   "claim": "only after_update_commit"
+  },
+  {
+   "cite": "RGS p.13",
+   "absent": [
+    "scope",
+    "includes",
+    "pluck"
+   ],
+   "claim": "basic query"
+  },
+  {
+   "cite": "RGS p.45-47",
+   "absent": [
+    "accept-language"
+   ],
+   "claim": "locale only via parameter"
+  },
+  {
+   "cite": "RGS p.67",
+   "absent": [
+    "owasp",
+    "xss"
+   ],
+   "claim": "security only Brakeman"
+  },
+  {
+   "cite": "RGS p.1-19, 21-72",
+   "absent": [
+    "blog"
+   ],
+   "claim": "the tutorial is store; blog only on p.20"
+  },
+  {
+   "cite": "RGS p.1-72",
+   "absent": [
+    "rails 7",
+    "rails 9"
+   ],
+   "claim": "no other Rails version"
+  },
+  {
+   "cite": "RGS p.1-72",
+   "absent": [
+    "postgres",
+    "heroku"
+   ],
+   "claim": "no Postgres/Heroku"
+  },
+  {
+   "cite": "RGS p.22-37",
+   "absent": [
+    "respond_to",
+    "jbuilder"
+   ],
+   "claim": "no respond_to/Jbuilder"
+  },
+  {
+   "cite": "RGS p.27-29",
+   "absent": [
+    "form_for",
+    "form_tag"
+   ],
+   "claim": "only form_with"
+  },
+  {
+   "cite": "RGS p.68-70",
+   "absent": [
+    "db:seed"
+   ],
+   "claim": "no seed in deploy"
+  }
+ ]
+}

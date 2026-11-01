@@ -1,0 +1,17 @@
+{
+  "name": "node-backend-frameworks-expert",
+  "version": "1.0.0",
+  "description": "Overview agent (based on documentation captures and handbooks) about Node.js, Express, Fastify and NestJS: Node Handbook (2018, Node 10, [DATED]), Express Handbook (2022), Fastify Getting Started (v5.12.x) and NestJS First steps (Node >= 20). Lookup, comparer, static linter and plan/skeleton generator. NOT COVERED: Nest decorators/DI, Fastify hooks, Express error middleware, ESM/worker threads. Does not replace the current documentation.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "nodejs",
+    "express",
+    "fastify",
+    "nestjs",
+    "npm",
+    "event-loop",
+    "middleware",
+    "plugins"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "package": "com.example.mapper",
+  "imports": ["com.example.Car", "com.example.CarDto"],
+  "mapper": {"name": "CarMapper", "kind": "interface", "componentModel": "spring", "injectionStrategy": "CONSTRUCTOR", "unmappedTargetPolicy": "ERROR"},
+  "methods": [
+    {"name": "carToCarDto", "returns": "CarDto", "params": [{"type": "Car", "name": "car"}],
+     "mappings": [{"target": "manufacturer", "source": "make"}, {"target": "seatCount", "source": "numberOfSeats"}, {"target": "price", "source": "price", "numberFormat": "$#.00"}]},
+    {"name": "carDtoToCar", "returns": "Car", "params": [{"type": "CarDto", "name": "carDto"}], "inheritInverse": "carToCarDto", "mappings": [{"target": "numberOfSeats", "ignore": true}]},
+    {"name": "updateCarFromDto", "returns": "void", "params": [{"type": "CarDto", "name": "carDto"}, {"type": "Car", "name": "car", "mappingTarget": true}], "inherit": "carDtoToCar"}
+  ]
+}

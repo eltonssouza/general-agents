@@ -1,0 +1,42 @@
+# Glossary (terms as the PRW uses them)
+
+Pages = PDF. Terms the book does not define are marked `[extrapolation]`.
+
+- **APCu**: simple in-memory object cache, tied to the server where it is installed `[from source] (PRW p.73)`.
+- **Autoload**: loading classes on demand; in Composer via `vendor/autoload.php` `[from source] (PRW p.16)`.
+- **Bound parameters**: values bound to a PDO *statement*, preventing SQL Injection `[from source] (PRW p.43)`.
+- **Composer**: the recommended dependency manager for PHP `[from source] (PRW p.15)`.
+- **`composer.lock`**: exact installed versions; must accompany the shared project `[from source] (PRW p.16)`.
+- **DI container**: a utility that helps implement DI; misused, it becomes a Service Locator `[from source] (PRW p.41)`.
+- **CLI**: PHP on the command line, with `$argc`/`$argv` `[from source] (PRW p.13)`.
+- **DateInterval / DatePeriod**: a date interval and iteration of recurring events `[from source] (PRW p.20-21)`.
+- **Dependency Injection**: providing dependencies via constructor, method or property `[from source] (PRW p.37)`.
+- **Dependency Inversion Principle**: depend on abstractions, not on concretions `[from source] (PRW p.40)`.
+- **DocumentRoot**: directory exposed by the web server; the book points to `public/` `[from source] (PRW p.8)`.
+- **ErrorException**: an exception that represents a PHP error, extends `Exception` `[from source] (PRW p.54)`.
+- **FastCGI Process Manager (FPM)**: FastCGI process manager built into PHP `[from source] (PRW p.66)`.
+- **gettext / PO / MO / POT**: i18n tool and files `[from source] (PRW p.27-28)`.
+- **Hash**: a one-way function that produces a fixed-size sequence; different from encryption `[from source] (PRW p.57)`.
+- **i18n / l10n**: internationalization / localization `[from source] (PRW p.26)`.
+- **Inversion of Control**: taking away from the classes the control of creating/wiring dependencies `[from source] (PRW p.38-39)`.
+- **mbstring (`mb_*`)**: multibyte functions for Unicode strings `[from source] (PRW p.22)`.
+- **Namespace**: a name space that avoids class collisions `[from source] (PRW p.12)`.
+- **Opcode cache / OPcache**: stores compiled opcodes in memory `[from source] (PRW p.72)`.
+- **PaaS**: platform as a service for hosting PHP `[from source] (PRW p.66)`.
+- **PDO**: database connection abstraction, in PHP since 5.1.0 `[from source] (PRW p.43)`.
+- **PEAR**: veteran package manager that installs globally `[from source] (PRW p.17)`.
+- **PER Coding Style / PSR-1 / PSR-12 / PSR-4**: PHP-FIG recommendations cited by the book `[from source] (PRW p.9)`.
+- **PHPDoc**: informal standard for code comments `[from source] (PRW p.74)`.
+- **PHPUnit**: the "de facto" unit testing framework `[from source] (PRW p.63)`.
+- **Prepared statement**: a query with `prepare()` and `execute()` (in the book, "PDO statements") `[from source] (PRW p.43-44)`.
+- **Rainbow table**: a reverse list of hashes of common passwords, defeated by the individual salt `[from source] (PRW p.57)`.
+- **Salt**: a random string per password before hashing `[from source] (PRW p.57)`.
+- **Sanitization / validation**: removing or escaping unsafe characters / checking that the input is what is expected `[from source] (PRW p.59-60)`.
+- **Service Locator**: anti-pattern of passing the DI container to the classes `[from source] (PRW p.41)`.
+- **SOLID**: SRP, OCP, LSP, ISP, DIP as presented in the book `[from source] (PRW p.39-40)`.
+- **SPL**: Standard PHP Library, data structures and iterators `[from source] (PRW p.12)`.
+- **Error suppression (`@`)**: operator that silences the expression's errors `[from source] (PRW p.52)`.
+- **Template (plain PHP / compiled)**: see p.48-49 `[from source] (PRW p.48-49)`.
+- **utf8mb4**: MySQL charset with full UTF-8 (do not use `utf8`) `[from source] (PRW p.23)`.
+- **Xdebug**: PHP debugger/profiler `[from source] (PRW p.14)`.
+- **`strict_types`, `Throwable`, `DateTimeImmutable`, CSRF, Singleton**: `[extrapolation]`, the PRW does not cover them (see `INDEX.md`).

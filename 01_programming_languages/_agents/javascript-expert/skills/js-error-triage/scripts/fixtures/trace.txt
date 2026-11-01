@@ -1,0 +1,7 @@
+TypeError: Cannot read properties of undefined (reading 'name')
+    at formatUser (app.js:14:22)
+    at processList (app.js:29:12)
+    at Object.<anonymous> (app.js:41:1)
+  [cause]: ReferenceError: Cannot access 'config' before initialization
+    at loadConfig (config.js:8:15)
+    at processList (app.js:25:19)

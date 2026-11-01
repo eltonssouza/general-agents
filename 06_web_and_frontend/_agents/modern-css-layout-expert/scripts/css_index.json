@@ -1,0 +1,1512 @@
+{
+  "meta": {
+    "agent": "modern-css-layout-expert",
+    "sources": {
+      "CSSHB": "The CSS Handbook: A Handy Guide to CSS for Developers (Flavio Copes, freeCodeCamp, April 24, 2019), 214 pp.",
+      "MDNFS": "MDN Core learning modules: CSS styling basics (index), 4 pp.",
+      "MDNL": "MDN Core learning modules: CSS layout (index), 3 pp."
+    },
+    "version": "1.0.0",
+    "note": "Summaries in our own words; pagination = PDF page number. Each topic keeps its original Portuguese name in name_pt so Portuguese queries still match."
+  },
+  "topics": {
+    "cascata": {
+      "name": "Cascade, specificity, inheritance and @import",
+      "name_pt": "Cascata, especificidade, herança e @import | cascata especificidade heranca",
+      "source": "CSSHB",
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "citation": "CSSHB p.19-30",
+      "reference_file": "cascata-especificidade-e-heranca.md",
+      "summary": "The cascade resolves conflicts between rules by specificity, importance, inheritance and order. Specificity uses 4 slots (element, class/pseudo-class/attribute, id, inline), with !important as a fifth level. Tie: the last one wins. Some properties inherit; inherit/revert/initial/unset control that. @import must come before any rule.",
+      "key_mechanisms": [
+        "Slots: element=0001, class/pseudo-class/attribute=0010, id=0100, inline=1000 (CSSHB p.21-24)",
+        "Repeating a class raises specificity: .a.a=0020 (p.23)",
+        "!important ignores specificity (p.24); avoid it (p.25)",
+        "Prefer classes over ids (p.25)",
+        "List of inherited properties (p.26-28)",
+        "@import at the top or it is ignored (p.29)"
+      ],
+      "gaps": [
+        "Cascade layers, :is/:where/:has/:not are not in the book",
+        "Order between origins (UA/author/user) is not detailed"
+      ],
+      "dated": [
+        "The list of inherited properties is from 2019 and not exhaustive"
+      ]
+    },
+    "seletores": {
+      "name": "Selectors, attributes, pseudo-classes and pseudo-elements",
+      "name_pt": "Seletores, atributos, pseudo-classes e pseudo-elementos | seletores atributos pseudo-classes pseudo-elementos",
+      "source": "CSSHB+MDNFS",
+      "pages": [
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        58,
+        59
+      ],
+      "citation": "CSSHB p.5-19, 30-36",
+      "reference_file": "seletores-pseudoclasses-e-pseudoelementos.md",
+      "summary": "Rule = selector + declarations. Tag, class and id selectors, combinations, grouping, descendant (space), child (>), adjacent sibling (+); attribute selectors with the operators *= ^= $= |= ~=; pseudo-classes (one colon) and pseudo-elements (two).",
+      "key_mechanisms": [
+        "Class is repeatable, id is unique (p.13)",
+        "a, a:visited, a:active to cover link states (p.33)",
+        "nth-child: odd/even, -n+3, 5n (p.33-34)",
+        "::before/::after require content (p.34-36)",
+        "Attribute operators (p.31)"
+      ],
+      "gaps": [
+        "Pseudo-class and pseudo-element tables are images that were not extracted (p.32-35)",
+        "No :is/:where/:has/:not/:focus-visible/nesting"
+      ],
+      "dated": [
+        "Support for the i flag in attribute selectors (2019)"
+      ]
+    },
+    "box_model": {
+      "name": "Box model, border, padding, margin and box-sizing",
+      "name_pt": "Box model, borda, padding, margin e box-sizing | caixa borda margem",
+      "source": "CSSHB+MDNFS",
+      "pages": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "citation": "CSSHB p.83-99",
+      "reference_file": "box-model-borda-padding-margin-e-box-sizing.md",
+      "summary": "Every element is a box: content, padding, border, margin. By default width/height apply to the content (content-box); border-box includes padding and border. The author recommends applying border-box globally. The border has a default style of none.",
+      "key_mechanisms": [
+        "content-box vs border-box (p.97-98)",
+        "*, *:before, *:after {box-sizing:border-box} (p.98-99)",
+        "Shorthands with 1 to 4 values: top-right-bottom-left (p.93-94)",
+        "margin is the only one that takes a negative value (p.97)",
+        "margin: 0 auto centers blocks (p.96-97, 164)"
+      ],
+      "gaps": [
+        "No margin collapsing, overflow, outline, box-shadow explained, logical properties"
+      ],
+      "dated": [
+        "IE context and incorrect box model (p.10)"
+      ]
+    },
+    "unidades_cores": {
+      "name": "Units, colors, url() and calc()",
+      "name_pt": "Unidades, cores, url() e calc() | unidades cores",
+      "source": "CSSHB",
+      "pages": [
+        36,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "citation": "CSSHB p.36-50",
+      "reference_file": "unidades-cores-url-e-calc.md",
+      "summary": "Absolute units (px, cm, mm, q, in, pt, pc), relative (em, rem, ex, ch, %), viewport (vw, vh, vmin, vmax) and fr. Colors: names, rgb/rgba, hex, hsl/hsla, currentColor. calc() requires spaces around + and -. url() relative/absolute.",
+      "key_mechanisms": [
+        "1in=96px; 1cm~37.8px; 1in=72pt; 1pc=12pt (p.46)",
+        "rem uses the font-size of html (p.46)",
+        "calc(): spaces required around addition/subtraction (p.49)",
+        "currentColor points to color (p.43)"
+      ],
+      "gaps": [
+        "No min()/max()/clamp(), dvh/svh, oklch, color-mix"
+      ],
+      "dated": [
+        "Short hex \"not supported everywhere\" (p.44)"
+      ]
+    },
+    "backgrounds_filtros": {
+      "name": "Backgrounds and filters",
+      "name_pt": "Backgrounds e filtros | fundo filtros",
+      "source": "CSSHB",
+      "pages": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ],
+      "citation": "CSSHB p.50-54, 174-182",
+      "reference_file": "backgrounds-e-filtros.md",
+      "summary": "Background properties (color, image, clip, position, origin, repeat, attachment, size) and the shorthand; filter with blur, brightness, contrast, drop-shadow, grayscale, hue-rotate, invert, opacity, sepia, saturate, url.",
+      "key_mechanisms": [
+        "background-size cover/contain (p.52-53)",
+        "Fallback color for an image (p.54)",
+        "drop-shadow follows the alpha (p.177)",
+        "Filters combine separated by spaces (p.176)"
+      ],
+      "gaps": [
+        "No backdrop-filter, blend modes, radial/conic-gradient"
+      ],
+      "dated": [
+        "Preference for filter:opacity because of hardware acceleration (p.177)"
+      ]
+    },
+    "display_posicao": {
+      "name": "Display, positioning, float, clear and z-index",
+      "name_pt": "Display, posicionamento, float, clear e z-index | posicionamento flutuante",
+      "source": "CSSHB+MDNL",
+      "pages": [
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123
+      ],
+      "citation": "CSSHB p.99-123",
+      "reference_file": "display-fluxo-posicionamento-float-e-z-index.md",
+      "summary": "display defines the rendering type (block, inline, inline-block, none...). position: static, relative (space preserved), absolute (relative to the non-static ancestor), fixed (window), sticky. Float went back to its original purpose; clear undoes the side-by-side stacking. z-index orders layers on positioned elements.",
+      "key_mechanisms": [
+        "absolute uses the nearest non-static ancestor (p.109)",
+        "relative preserves the original space (p.106)",
+        "fixed is not affected by scrolling (p.113)",
+        "float: left|right|none; clear: left|right|both|none (p.114, 121-122)",
+        "z-index only with non-static position in the book (p.122); use spaced-out numbers (p.123)"
+      ],
+      "gaps": [
+        "No stacking context, detailed flow-root, explained clearfix"
+      ],
+      "dated": [
+        "sticky \"poorly supported\" (p.113)",
+        "z-index on flex/grid items without position"
+      ]
+    },
+    "flexbox": {
+      "name": "Flexbox",
+      "name_pt": "Flexbox | flexbox",
+      "source": "CSSHB+MDNL",
+      "pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156
+      ],
+      "citation": "CSSHB p.141-156",
+      "reference_file": "flexbox.md",
+      "summary": "One-dimensional layout. Container: flex-direction, justify-content, align-items, flex-wrap, flex-flow. Item: order, align-self, flex-grow (default 0), flex-shrink (default 1), flex-basis, flex (0 1 auto).",
+      "key_mechanisms": [
+        "display:flex|inline-flex (p.143-144)",
+        "justify-content has 5 values in the book (p.147)",
+        "flex-wrap: wrap|wrap-reverse (p.151)",
+        "flex: 0 1 auto (p.156)"
+      ],
+      "gaps": [
+        "No space-evenly, align-content, gap in flex",
+        "Figures p.144-150 not extracted"
+      ],
+      "dated": [
+        "Support statistic of 97.66% (Feb/2018) (p.142)"
+      ]
+    },
+    "grid": {
+      "name": "CSS Grid",
+      "name_pt": "CSS Grid | grade",
+      "source": "CSSHB+MDNL",
+      "pages": [
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
+      ],
+      "citation": "CSSHB p.123-141",
+      "reference_file": "grid.md",
+      "summary": "Two-dimensional layout: display:grid, grid-template-columns/rows, fr, repeat(), minmax(), grid-gap, grid-column/row with start/end/span, grid-template-areas and grid-area. Header/sidebar/content/footer example with a reflow media query.",
+      "key_mechanisms": [
+        "grid-column: 2 / 4 or 2 / span 2 (p.133-134)",
+        "repeat(4, 1fr) (p.135-136)",
+        "minmax(200px, 3fr) 9fr (p.136)",
+        "grid-template-areas with '.' for empty cells (p.138-139)",
+        "place-items:center (p.166)"
+      ],
+      "gaps": [
+        "No subgrid, auto-fit/auto-fill, unprefixed gap, align-content, justify-items"
+      ],
+      "dated": [
+        "Support 92% (Apr/2019) (p.124)",
+        "grid-gap/grid-column-gap/grid-row-gap"
+      ]
+    },
+    "centralizacao": {
+      "name": "Centering, tables and lists",
+      "name_pt": "Centralização, tabelas e listas | centralizacao centralizar tabelas listas",
+      "source": "CSSHB",
+      "pages": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168
+      ],
+      "citation": "CSSHB p.156-168",
+      "reference_file": "centralizacao-tabelas-e-listas.md",
+      "summary": "Centering recipes with text-align, flex, margin auto and grid place-items; styling of tables (border-collapse, nth-child) and lists (list-style-*).",
+      "key_mechanisms": [
+        "text-align:center for text (p.163)",
+        "flex + justify-content/align-items (p.163-166)",
+        "grid + place-items:center + height:100vh (p.166)",
+        "border-collapse:collapse (p.161)"
+      ],
+      "gaps": [
+        "No counters, ::marker, table-layout"
+      ],
+      "dated": []
+    },
+    "responsividade": {
+      "name": "Responsiveness, media queries and feature queries",
+      "name_pt": "Responsividade, media queries e feature queries | responsividade responsivo consultas de midia",
+      "source": "CSSHB+MDNL",
+      "pages": [
+        141,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "citation": "CSSHB p.168-174",
+      "reference_file": "responsividade-media-queries-e-feature-queries.md",
+      "summary": "Media types (all, print, screen, speech), descriptors with min-/max-, operators and/comma/not, @media and @supports. MDN defines RWD and media queries only in an index description.",
+      "key_mechanisms": [
+        "@media screen and (max-width: 800px) (p.173)",
+        "not negates the whole query (p.172)",
+        "@supports (display: grid) (p.174)",
+        "Grid reflow at max-width:500px (p.141)"
+      ],
+      "gaps": [
+        "No meta viewport, mobile-first, breakpoints, clamp, container queries, prefers-*"
+      ],
+      "dated": [
+        "device-width/device-height became obsolete after the book"
+      ]
+    },
+    "tipografia": {
+      "name": "Typography and fonts",
+      "name_pt": "Tipografia e fontes | tipografia fontes texto",
+      "source": "CSSHB",
+      "pages": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "citation": "CSSHB p.63-83",
+      "reference_file": "tipografia-e-fontes.md",
+      "summary": "font-family and fallback, font-weight/stretch/style/size/variant, the font shorthand, @font-face and formats, and text properties (text-transform, text-decoration, text-align, line-height, white-space, writing-mode, hyphens, word-break, overflow-wrap...).",
+      "key_mechanisms": [
+        "End font-family with a generic family (p.67)",
+        "font: at minimum size and family (p.70)",
+        "@font-face with src woff/woff2 (p.71-72)",
+        "overflow-wrap: break-word|anywhere (p.83)"
+      ],
+      "gaps": [
+        "No font-display, variable fonts, unicode-range, clamp"
+      ],
+      "dated": [
+        "Same-origin-only fonts (p.72) is a simplification"
+      ]
+    },
+    "animacoes": {
+      "name": "Transforms, transitions and animations",
+      "name_pt": "Transforms, transições e animações | transicoes animacoes",
+      "source": "CSSHB",
+      "pages": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ],
+      "citation": "CSSHB p.182-204",
+      "reference_file": "transforms-transicoes-e-animacoes.md",
+      "summary": "transform (translate, rotate, scale, skew, matrix; 3D with perspective), transition (property duration timing-function delay), timing functions, list of animatable properties, @keyframes and animation (shorthand with 8 items) and JS events.",
+      "key_mechanisms": [
+        "transition on the base state + change on :hover (p.186-187)",
+        "animation: name duration timing delay iteration direction fill-mode play-state (p.198-199)",
+        "animationstart cannot be intercepted if the animation starts on load (p.199)"
+      ],
+      "gaps": [
+        "No prefers-reduced-motion, will-change, animation-timeline, Web Animations API"
+      ],
+      "dated": [
+        "The list of animatable properties is from 2019"
+      ]
+    },
+    "variaveis": {
+      "name": "Custom properties (CSS variables)",
+      "name_pt": "Custom properties (variáveis CSS) | variaveis propriedades personalizadas",
+      "source": "CSSHB",
+      "pages": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "citation": "CSSHB p.55-63",
+      "reference_file": "custom-properties-variaveis-css.md",
+      "summary": "Variables with --name and var(); scoped per element (:root is global); they follow the cascade; case sensitive; math via calc(); fallback var(--x, value); manipulation via JS (setProperty/getComputedStyle).",
+      "key_mechanisms": [
+        "--name and var(--name) (p.56-57)",
+        "Scope by selector, :root is global (p.58-59)",
+        "Case sensitive (p.62)",
+        "var(--x, fallback) (p.63)",
+        "An invalid value invalidates the declaration (p.61)"
+      ],
+      "gaps": [
+        "No @property, color-mix, design tokens"
+      ],
+      "dated": [
+        "Support and Myth/PostCSS (2019) (p.61)"
+      ]
+    },
+    "compat_print": {
+      "name": "Compatibility, errors, prefixes and printing",
+      "name_pt": "Compatibilidade, erros, prefixos e impressão | compatibilidade erros prefixos impressao",
+      "source": "CSSHB",
+      "pages": [
+        8,
+        9,
+        10,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213
+      ],
+      "citation": "CSSHB p.204-213",
+      "reference_file": "compatibilidade-impressao-e-tratamento-de-erros.md",
+      "summary": "Normalizing vs resetting, error resilience (a missing ; discards the line and the next one), declining vendor prefixes and Autoprefixer, print CSS (link media=print, @media print, @page, page-break-*).",
+      "key_mechanisms": [
+        "Normalize.css before all CSS (p.205)",
+        "A missing ; invalidates two declarations (p.205-206)",
+        "a[href*='//']:after with attr(href) (p.210)",
+        "@page for margins and :first/:left/:right (p.211)"
+      ],
+      "gaps": [
+        "No modern break-*, orphans/widows in print"
+      ],
+      "dated": [
+        "page-break-* replaced by break-*",
+        "Prefixes and browser list (2019)"
+      ]
+    },
+    "mdn_lacunas": {
+      "name": "MDN indexes and collection gaps",
+      "name_pt": "Índices MDN e lacunas do acervo | indices lacunas acervo",
+      "source": "MDNFS+MDNL",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "citation": "MDNFS p.1-4; MDNL p.1-3",
+      "reference_file": "mdn-modulos-e-lacunas-do-material.md",
+      "summary": "The MDN PDFs are index pages: only lesson titles and descriptions (First Steps and Layout). They contain few operational rules; they serve to map topics and identify gaps.",
+      "key_mechanisms": [
+        "Cascade layers, writing modes, multicol, legacy layout, supporting older browsers and layout cookbook are only mentioned"
+      ],
+      "gaps": [
+        "No code or table from the MDN articles is in the collection"
+      ],
+      "dated": []
+    }
+  },
+  "properties": {
+    "color": {
+      "pages": [
+        36,
+        26
+      ],
+      "topic": "unidades_cores",
+      "note": "Text color; inherited."
+    },
+    "background-color": {
+      "pages": [
+        36,
+        50
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "Background color; not inherited."
+    },
+    "border-color": {
+      "pages": [
+        36,
+        89
+      ],
+      "topic": "box_model",
+      "note": "Border color; default = text color."
+    },
+    "background": {
+      "pages": [
+        50,
+        53,
+        54
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "Background shorthand; accepts a fallback color and a gradient."
+    },
+    "background-size": {
+      "pages": [
+        52,
+        53
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "auto, cover, contain or lengths."
+    },
+    "background-position": {
+      "pages": [
+        51,
+        52
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "left/right/center and top/bottom."
+    },
+    "background-repeat": {
+      "pages": [
+        52
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "repeat, repeat-x, repeat-y, no-repeat."
+    },
+    "background-attachment": {
+      "pages": [
+        52
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "scroll, fixed, local."
+    },
+    "background-clip": {
+      "pages": [
+        51
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "border-box (default), padding-box, content-box."
+    },
+    "background-origin": {
+      "pages": [
+        52
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "Origin of the background positioning."
+    },
+    "filter": {
+      "pages": [
+        174,
+        175,
+        176
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "Functions blur, brightness, contrast, drop-shadow, etc."
+    },
+    "drop-shadow": {
+      "pages": [
+        177,
+        178
+      ],
+      "topic": "backgrounds_filtros",
+      "note": "2 to 5 parameters; follows the alpha channel."
+    },
+    "calc": {
+      "pages": [
+        49,
+        50
+      ],
+      "topic": "unidades_cores",
+      "note": "Spaces required around + and -."
+    },
+    "url": {
+      "pages": [
+        47,
+        48,
+        49
+      ],
+      "topic": "unidades_cores",
+      "note": "Relative, root-relative or absolute paths."
+    },
+    "rem": {
+      "pages": [
+        46
+      ],
+      "topic": "unidades_cores",
+      "note": "Relative to the font-size of html."
+    },
+    "em": {
+      "pages": [
+        46
+      ],
+      "topic": "unidades_cores",
+      "note": "Relative to the font-size of the element."
+    },
+    "vw": {
+      "pages": [
+        47
+      ],
+      "topic": "unidades_cores",
+      "note": "Percentage of the viewport width."
+    },
+    "vh": {
+      "pages": [
+        47
+      ],
+      "topic": "unidades_cores",
+      "note": "Percentage of the viewport height."
+    },
+    "fr": {
+      "pages": [
+        47,
+        135
+      ],
+      "topic": "grid",
+      "note": "Fraction of the space in Grid."
+    },
+    "var": {
+      "pages": [
+        57,
+        63
+      ],
+      "topic": "variaveis",
+      "note": "Reads a custom property; second argument = fallback."
+    },
+    "--custom-property": {
+      "pages": [
+        56,
+        57,
+        58,
+        59,
+        62
+      ],
+      "topic": "variaveis",
+      "note": "Defined with --name; scoped per element; case sensitive."
+    },
+    ":root": {
+      "pages": [
+        58,
+        59
+      ],
+      "topic": "variaveis",
+      "note": "Document root; higher specificity than html."
+    },
+    "font": {
+      "pages": [
+        63,
+        70,
+        71
+      ],
+      "topic": "tipografia",
+      "note": "Shorthand; minimum font-size and font-family."
+    },
+    "font-family": {
+      "pages": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "topic": "tipografia",
+      "note": "Fallback list ending in a generic family."
+    },
+    "font-weight": {
+      "pages": [
+        67,
+        68
+      ],
+      "topic": "tipografia",
+      "note": "normal, bold, bolder, lighter, 100-900."
+    },
+    "font-size": {
+      "pages": [
+        69,
+        70
+      ],
+      "topic": "tipografia",
+      "note": "Length, % or keywords."
+    },
+    "font-style": {
+      "pages": [
+        68,
+        69
+      ],
+      "topic": "tipografia",
+      "note": "italic, oblique, normal."
+    },
+    "font-stretch": {
+      "pages": [
+        68
+      ],
+      "topic": "tipografia",
+      "note": "From ultra-condensed to ultra-expanded; depends on the font."
+    },
+    "font-variant": {
+      "pages": [
+        70
+      ],
+      "topic": "tipografia",
+      "note": "normal, inherit, small-caps."
+    },
+    "@font-face": {
+      "pages": [
+        71,
+        72
+      ],
+      "topic": "tipografia",
+      "note": "Maps a family to a file (woff, woff2, eot, otf, ttf)."
+    },
+    "text-transform": {
+      "pages": [
+        73,
+        74
+      ],
+      "topic": "tipografia",
+      "note": "capitalize, uppercase, lowercase, none."
+    },
+    "text-decoration": {
+      "pages": [
+        74,
+        75
+      ],
+      "topic": "tipografia",
+      "note": "Line, style and color."
+    },
+    "text-align": {
+      "pages": [
+        75,
+        76
+      ],
+      "topic": "tipografia",
+      "note": "start (default), end, left, right, center, justify."
+    },
+    "vertical-align": {
+      "pages": [
+        76,
+        77
+      ],
+      "topic": "tipografia",
+      "note": "Alignment of inline elements."
+    },
+    "line-height": {
+      "pages": [
+        77
+      ],
+      "topic": "tipografia",
+      "note": "Line height."
+    },
+    "text-indent": {
+      "pages": [
+        77
+      ],
+      "topic": "tipografia",
+      "note": "First-line indent."
+    },
+    "letter-spacing": {
+      "pages": [
+        78,
+        79
+      ],
+      "topic": "tipografia",
+      "note": "normal or length."
+    },
+    "word-spacing": {
+      "pages": [
+        78
+      ],
+      "topic": "tipografia",
+      "note": "normal or length."
+    },
+    "text-shadow": {
+      "pages": [
+        79
+      ],
+      "topic": "tipografia",
+      "note": "x, y, blur and optional color."
+    },
+    "white-space": {
+      "pages": [
+        79,
+        80
+      ],
+      "topic": "tipografia",
+      "note": "normal, nowrap, pre-line, pre, pre-wrap."
+    },
+    "writing-mode": {
+      "pages": [
+        80,
+        81
+      ],
+      "topic": "tipografia",
+      "note": "horizontal-tb, vertical-rl, vertical-lr."
+    },
+    "hyphens": {
+      "pages": [
+        81
+      ],
+      "topic": "tipografia",
+      "note": "none, manual, auto."
+    },
+    "word-break": {
+      "pages": [
+        82
+      ],
+      "topic": "tipografia",
+      "note": "normal, break-all, keep-all."
+    },
+    "overflow-wrap": {
+      "pages": [
+        82,
+        83
+      ],
+      "topic": "tipografia",
+      "note": "normal, break-word, anywhere."
+    },
+    "box-sizing": {
+      "pages": [
+        97,
+        98,
+        99
+      ],
+      "topic": "box_model",
+      "note": "content-box (default) vs border-box."
+    },
+    "border": {
+      "pages": [
+        85,
+        90
+      ],
+      "topic": "box_model",
+      "note": "Width/style/color shorthand."
+    },
+    "border-style": {
+      "pages": [
+        86,
+        87,
+        88
+      ],
+      "topic": "box_model",
+      "note": "Default none; solid, dashed, etc."
+    },
+    "border-width": {
+      "pages": [
+        88,
+        89
+      ],
+      "topic": "box_model",
+      "note": "thin, medium (default), thick or length."
+    },
+    "border-radius": {
+      "pages": [
+        91
+      ],
+      "topic": "box_model",
+      "note": "Rounded corners."
+    },
+    "border-image": {
+      "pages": [
+        85,
+        91,
+        92
+      ],
+      "topic": "box_model",
+      "note": "Image as a border (not detailed)."
+    },
+    "padding": {
+      "pages": [
+        92,
+        93,
+        94
+      ],
+      "topic": "box_model",
+      "note": "Inner space; 1 to 4 values."
+    },
+    "margin": {
+      "pages": [
+        94,
+        95,
+        96,
+        97
+      ],
+      "topic": "box_model",
+      "note": "Outer space; accepts %, auto and negatives."
+    },
+    "display": {
+      "pages": [
+        99,
+        100,
+        101
+      ],
+      "topic": "display_posicao",
+      "note": "block, inline, inline-block, none, flex, grid, etc."
+    },
+    "position": {
+      "pages": [
+        102,
+        103,
+        106,
+        109,
+        111,
+        113
+      ],
+      "topic": "display_posicao",
+      "note": "static, relative, absolute, fixed, sticky."
+    },
+    "top": {
+      "pages": [
+        102,
+        103
+      ],
+      "topic": "display_posicao",
+      "note": "Offset; only works with non-static position."
+    },
+    "z-index": {
+      "pages": [
+        122,
+        123
+      ],
+      "topic": "display_posicao",
+      "note": "Integer; requires non-static position (in the book)."
+    },
+    "sticky": {
+      "pages": [
+        113
+      ],
+      "topic": "display_posicao",
+      "note": "Value of position; the book describes it as poorly supported in 2019 (dated)."
+    },
+    "float": {
+      "pages": [
+        113,
+        114
+      ],
+      "topic": "display_posicao",
+      "note": "left, right, none."
+    },
+    "clear": {
+      "pages": [
+        121,
+        122
+      ],
+      "topic": "display_posicao",
+      "note": "left, right, both, none."
+    },
+    "flex-direction": {
+      "pages": [
+        144
+      ],
+      "topic": "flexbox",
+      "note": "row, row-reverse, column, column-reverse."
+    },
+    "justify-content": {
+      "pages": [
+        145,
+        147
+      ],
+      "topic": "flexbox",
+      "note": "flex-start, flex-end, center, space-between, space-around."
+    },
+    "align-items": {
+      "pages": [
+        148,
+        149
+      ],
+      "topic": "flexbox",
+      "note": "flex-start, flex-end, center, baseline, stretch."
+    },
+    "align-self": {
+      "pages": [
+        154
+      ],
+      "topic": "flexbox",
+      "note": "Overrides align-items on the item."
+    },
+    "flex-wrap": {
+      "pages": [
+        151
+      ],
+      "topic": "flexbox",
+      "note": "wrap, wrap-reverse."
+    },
+    "flex-flow": {
+      "pages": [
+        151
+      ],
+      "topic": "flexbox",
+      "note": "Direction + wrap shorthand."
+    },
+    "order": {
+      "pages": [
+        153
+      ],
+      "topic": "flexbox",
+      "note": "Default 0; negative comes first."
+    },
+    "flex-grow": {
+      "pages": [
+        155
+      ],
+      "topic": "flexbox",
+      "note": "Default 0."
+    },
+    "flex-shrink": {
+      "pages": [
+        155
+      ],
+      "topic": "flexbox",
+      "note": "Default 1."
+    },
+    "flex-basis": {
+      "pages": [
+        155,
+        156
+      ],
+      "topic": "flexbox",
+      "note": "auto, 0 or length."
+    },
+    "flex": {
+      "pages": [
+        156
+      ],
+      "topic": "flexbox",
+      "note": "Shorthand; default 0 1 auto."
+    },
+    "grid-template-columns": {
+      "pages": [
+        125,
+        135,
+        136
+      ],
+      "topic": "grid",
+      "note": "Number and width of columns."
+    },
+    "grid-template-rows": {
+      "pages": [
+        125,
+        127
+      ],
+      "topic": "grid",
+      "note": "Number and height of rows."
+    },
+    "grid-gap": {
+      "pages": [
+        129,
+        130,
+        131
+      ],
+      "topic": "grid",
+      "note": "Spacing shorthand; legacy name, today gap."
+    },
+    "grid-column": {
+      "pages": [
+        133,
+        134
+      ],
+      "topic": "grid",
+      "note": "start / end or start / span n."
+    },
+    "grid-row": {
+      "pages": [
+        133
+      ],
+      "topic": "grid",
+      "note": "Same principle as grid-column."
+    },
+    "grid-template-areas": {
+      "pages": [
+        137,
+        138,
+        139
+      ],
+      "topic": "grid",
+      "note": "Named areas; '.' = empty cell."
+    },
+    "grid-area": {
+      "pages": [
+        137,
+        138
+      ],
+      "topic": "grid",
+      "note": "Associates an item with an area."
+    },
+    "repeat": {
+      "pages": [
+        135,
+        136
+      ],
+      "topic": "grid",
+      "note": "repeat(4, 1fr)."
+    },
+    "minmax": {
+      "pages": [
+        136,
+        137
+      ],
+      "topic": "grid",
+      "note": "Minimum and maximum of a track."
+    },
+    "place-items": {
+      "pages": [
+        166
+      ],
+      "topic": "centralizacao",
+      "note": "Centering in Grid."
+    },
+    "border-collapse": {
+      "pages": [
+        161,
+        26
+      ],
+      "topic": "centralizacao",
+      "note": "collapse merges borders; inherited."
+    },
+    "list-style": {
+      "pages": [
+        166,
+        167,
+        168
+      ],
+      "topic": "centralizacao",
+      "note": "type/image/position shorthand."
+    },
+    "list-style-type": {
+      "pages": [
+        167
+      ],
+      "topic": "centralizacao",
+      "note": "disc, circle, square, none."
+    },
+    "@media": {
+      "pages": [
+        173
+      ],
+      "topic": "responsividade",
+      "note": "Applies CSS by media condition."
+    },
+    "@supports": {
+      "pages": [
+        173,
+        174
+      ],
+      "topic": "responsividade",
+      "note": "Feature query."
+    },
+    "orientation": {
+      "pages": [
+        171
+      ],
+      "topic": "responsividade",
+      "note": "portrait or landscape."
+    },
+    "min-width": {
+      "pages": [
+        170
+      ],
+      "topic": "responsividade",
+      "note": "Media feature descriptor (min-)."
+    },
+    "max-width": {
+      "pages": [
+        170,
+        173
+      ],
+      "topic": "responsividade",
+      "note": "Media feature descriptor (max-)."
+    },
+    "transform": {
+      "pages": [
+        182,
+        183,
+        184
+      ],
+      "topic": "animacoes",
+      "note": "translate, rotate, scale, skew, matrix; 3D."
+    },
+    "transform-origin": {
+      "pages": [
+        183
+      ],
+      "topic": "animacoes",
+      "note": "Defines the origin of the transformation."
+    },
+    "perspective": {
+      "pages": [
+        184
+      ],
+      "topic": "animacoes",
+      "note": "Distance from the object to the viewer."
+    },
+    "transition": {
+      "pages": [
+        185,
+        186,
+        187
+      ],
+      "topic": "animacoes",
+      "note": "property duration timing-function delay."
+    },
+    "transition-timing-function": {
+      "pages": [
+        187
+      ],
+      "topic": "animacoes",
+      "note": "linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier."
+    },
+    "animation": {
+      "pages": [
+        194,
+        198,
+        199
+      ],
+      "topic": "animacoes",
+      "note": "name duration timing delay iteration direction fill-mode play-state."
+    },
+    "@keyframes": {
+      "pages": [
+        194,
+        195,
+        197
+      ],
+      "topic": "animacoes",
+      "note": "Defines the animation steps."
+    },
+    "animationstart": {
+      "pages": [
+        199
+      ],
+      "topic": "animacoes",
+      "note": "JS event; cannot be intercepted if it starts on load."
+    },
+    "!important": {
+      "pages": [
+        24,
+        25
+      ],
+      "topic": "cascata",
+      "note": "Beats specificity; avoid."
+    },
+    "inherit": {
+      "pages": [
+        28
+      ],
+      "topic": "cascata",
+      "note": "Forces inheritance from the parent."
+    },
+    "revert": {
+      "pages": [
+        28,
+        29
+      ],
+      "topic": "cascata",
+      "note": "Goes back to the browser stylesheet default."
+    },
+    "initial": {
+      "pages": [
+        29
+      ],
+      "topic": "cascata",
+      "note": "Initial value (the book's description is imprecise)."
+    },
+    "unset": {
+      "pages": [
+        29
+      ],
+      "topic": "cascata",
+      "note": "Inherits if the property inherits; otherwise initial."
+    },
+    "@import": {
+      "pages": [
+        29,
+        30
+      ],
+      "topic": "cascata",
+      "note": "Must come before any rule."
+    },
+    "specificity": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "topic": "cascata",
+      "note": "Four slots; the left weighs more."
+    },
+    "::before": {
+      "pages": [
+        34,
+        35,
+        36
+      ],
+      "topic": "seletores",
+      "note": "Inserts content via content."
+    },
+    "::after": {
+      "pages": [
+        34,
+        35,
+        36
+      ],
+      "topic": "seletores",
+      "note": "Inserts content via content."
+    },
+    "::first-line": {
+      "pages": [
+        35
+      ],
+      "topic": "seletores",
+      "note": "First line of the block."
+    },
+    "::first-letter": {
+      "pages": [
+        35
+      ],
+      "topic": "seletores",
+      "note": "First letter."
+    },
+    ":nth-child": {
+      "pages": [
+        33,
+        34
+      ],
+      "topic": "seletores",
+      "note": "odd, even, -n+3, 5n."
+    },
+    ":hover": {
+      "pages": [
+        32,
+        186
+      ],
+      "topic": "seletores",
+      "note": "Hover state."
+    },
+    ":visited": {
+      "pages": [
+        33
+      ],
+      "topic": "seletores",
+      "note": "Visited link."
+    },
+    ":active": {
+      "pages": [
+        33
+      ],
+      "topic": "seletores",
+      "note": "Active link (click)."
+    },
+    "[attr]": {
+      "pages": [
+        30,
+        31
+      ],
+      "topic": "seletores",
+      "note": "Presence/value of an attribute and the operators *= ^= $= |= ~=."
+    },
+    "@media print": {
+      "pages": [
+        210
+      ],
+      "topic": "compat_print",
+      "note": "Applies CSS only when printing."
+    },
+    "@page": {
+      "pages": [
+        211
+      ],
+      "topic": "compat_print",
+      "note": "Printed page margins; :first, :left, :right."
+    },
+    "page-break-after": {
+      "pages": [
+        211
+      ],
+      "topic": "compat_print",
+      "note": "Page break (today break-after)."
+    },
+    "page-break-inside": {
+      "pages": [
+        212
+      ],
+      "topic": "compat_print",
+      "note": "avoid prevents cutting content."
+    },
+    "normalize": {
+      "pages": [
+        204,
+        205
+      ],
+      "topic": "compat_print",
+      "note": "Removes inconsistencies and keeps a base."
+    },
+    "vendor-prefix": {
+      "pages": [
+        206,
+        207,
+        208
+      ],
+      "topic": "compat_print",
+      "note": "-webkit-, -moz-, -ms-, -o-; use Autoprefixer."
+    },
+    "comments": {
+      "pages": [
+        54,
+        55
+      ],
+      "topic": "compat_print",
+      "note": "Only /* */; // is not a comment."
+    }
+  }
+}

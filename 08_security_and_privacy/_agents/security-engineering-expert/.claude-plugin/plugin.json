@@ -1,0 +1,21 @@
+{
+  "name": "security-engineering-expert",
+  "version": "1.0.0",
+  "description": "Security engineering specialist based on Security Engineering (Ross Anderson, 3rd ed., 2020): opponents, psychology and passwords, protocols, applied cryptography, access control, economics, policies (MLS, multilateral, Chinese Wall), privacy and inference control, banking and internal controls, physical/metering/seals, biometrics and tamper resistance, network and IDS, secure development and risk management, assurance and ML. Does not replace a formal security review.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "security-engineering",
+    "threat-modeling",
+    "passwords",
+    "protocols",
+    "cryptography",
+    "access-control",
+    "security-economics",
+    "internal-controls",
+    "privacy",
+    "biometrics",
+    "risk-management",
+    "assurance"
+  ]
+}

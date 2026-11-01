@@ -1,0 +1,6 @@
+Fatal error: Uncaught TypeError: App\Calculator::add(): Argument #1 ($a) must be of type int, string given, called in /var/www/src/Controller.php on line 28 and defined in /var/www/src/Calculator.php:12
+Stack trace:
+#0 /var/www/src/Controller.php(28): App\Calculator::add('100', 50)
+#1 /var/www/public/index.php(15): App\Controller->run()
+#2 {main}
+  thrown in /var/www/src/Calculator.php on line 12

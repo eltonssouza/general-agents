@@ -1,0 +1,883 @@
+{
+ "_comment": "checks = the page contains all substrings; negative = the substrings are ABSENT (plausible claims that the report does not make). Normalized text (lowercase, collapsed whitespace).",
+ "checks": [
+  {
+   "cite": "DORA24 p.4",
+   "contains": [
+    "burnout is a state of emotional"
+   ],
+   "claim": "definition of burnout"
+  },
+  {
+   "cite": "DORA24 p.6",
+   "contains": [
+    "39.2%",
+    "little or no trust"
+   ],
+   "claim": "39.2% little or no trust"
+  },
+  {
+   "cite": "DORA24 p.7",
+   "contains": [
+    "experimental approach",
+    "repeat the process"
+   ],
+   "claim": "experimental cycle"
+  },
+  {
+   "cite": "DORA24 p.10",
+   "contains": [
+    "change lead time",
+    "failed deployment recovery time",
+    "hotfixes or rollbacks"
+   ],
+   "claim": "definitions of the four keys"
+  },
+  {
+   "cite": "DORA24 p.10",
+   "contains": [
+    "move together"
+   ],
+   "claim": "metrics move together"
+  },
+  {
+   "cite": "DORA24 p.11",
+   "contains": [
+    "rework rate",
+    "software delivery stability"
+   ],
+   "claim": "rework rate and the stability factor"
+  },
+  {
+   "cite": "DORA24 p.11",
+   "contains": [
+    "proxy for the amount of rework"
+   ],
+   "claim": "CFR as a proxy for rework"
+  },
+  {
+   "cite": "DORA24 p.11",
+   "contains": [
+    "six months"
+   ],
+   "claim": "rework question: last six months"
+  },
+  {
+   "cite": "DORA24 p.12",
+   "contains": [
+    "unintentionally lead to immediate, additional work"
+   ],
+   "claim": "stability = deployments that generate additional work"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "contains": [
+    "we do not set these levels in advance"
+   ],
+   "claim": "levels not defined in advance"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "contains": [
+    "89% uncertainty interval"
+   ],
+   "claim": "89% uncertainty interval"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "contains": [
+    "less than one day",
+    "on demand"
+   ],
+   "claim": "elite: on demand and less than one day"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "contains": [
+    "19% (18-20%)",
+    "22% (21-23%)",
+    "35% (33-36%)",
+    "25% (23-26%)"
+   ],
+   "claim": "cluster percentages"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "contains": [
+    "original four software delivery metrics"
+   ],
+   "claim": "analysis on the original four metrics"
+  },
+  {
+   "cite": "DORA24 p.14",
+   "contains": [
+    "medium performance cluster",
+    "throughput is lower and stability is higher"
+   ],
+   "claim": "medium is more stable and less fast"
+  },
+  {
+   "cite": "DORA24 p.14",
+   "contains": [
+    "elite improvement"
+   ],
+   "claim": "elite improvement"
+  },
+  {
+   "cite": "DORA24 p.14",
+   "contains": [
+    "universal answer"
+   ],
+   "claim": "no universal answer"
+  },
+  {
+   "cite": "DORA24 p.15",
+   "contains": [
+    "127x",
+    "182x",
+    "2293x"
+   ],
+   "claim": "elite vs low ratios"
+  },
+  {
+   "cite": "DORA24 p.15",
+   "contains": [
+    "rarely",
+    "predictor of software delivery"
+   ],
+   "claim": "industry rarely predicts performance"
+  },
+  {
+   "cite": "DORA24 p.16",
+   "contains": [
+    "value stream mapping",
+    "quick check"
+   ],
+   "claim": "value stream mapping and Quick Check"
+  },
+  {
+   "cite": "DORA24 p.16",
+   "contains": [
+    "stopped on its way to production"
+   ],
+   "claim": "note 1: failure only in production"
+  },
+  {
+   "cite": "DORA24 p.16",
+   "contains": [
+    "2019",
+    "retail"
+   ],
+   "claim": "2019 retail"
+  },
+  {
+   "cite": "DORA24 p.18",
+   "contains": [
+    "81%",
+    "49.2%",
+    "78%"
+   ],
+   "claim": "81% prioritized AI"
+  },
+  {
+   "cite": "DORA24 p.19",
+   "contains": [
+    "75.9%",
+    "74.9%",
+    "71.2%"
+   ],
+   "claim": "75.9% rely on AI"
+  },
+  {
+   "cite": "DORA24 p.19",
+   "contains": [
+    "larger organizations report less reliance"
+   ],
+   "claim": "larger orgs rely less"
+  },
+  {
+   "cite": "DORA24 p.20",
+   "contains": [
+    "78.2%",
+    "50.2%",
+    "58.1%"
+   ],
+   "claim": "AI interfaces"
+  },
+  {
+   "cite": "DORA24 p.20",
+   "contains": [
+    "artificially low"
+   ],
+   "claim": "numbers may be artificially low"
+  },
+  {
+   "cite": "DORA24 p.20",
+   "contains": [
+    "44.7%",
+    "Codebase modernization"
+   ],
+   "claim": "task: codebase modernization 44.7%"
+  },
+  {
+   "cite": "DORA24 p.22",
+   "contains": [
+    "seventy-five percent",
+    "early 2024"
+   ],
+   "claim": "75% report a gain; early 2024"
+  },
+  {
+   "cite": "DORA24 p.23",
+   "contains": [
+    "67%"
+   ],
+   "claim": "67% improvement when writing code"
+  },
+  {
+   "cite": "DORA24 p.23",
+   "contains": [
+    "87.9%",
+    "27.3%",
+    "11.9%"
+   ],
+   "claim": "trust in AI-generated code"
+  },
+  {
+   "cite": "DORA24 p.24",
+   "contains": [
+    "we hypothesize that developers do not"
+   ],
+   "claim": "hypothesis: absolute trust is not necessary"
+  },
+  {
+   "cite": "DORA24 p.25",
+   "contains": [
+    "careers, the environment, and society"
+   ],
+   "claim": "negative expectations for career/society"
+  },
+  {
+   "cite": "DORA24 p.30",
+   "contains": [
+    "reliance",
+    "ai adoption"
+   ],
+   "claim": "reliance preferred over frequency"
+  },
+  {
+   "cite": "DORA24 p.32",
+   "contains": [
+    "2.1%",
+    "25%"
+   ],
+   "claim": "productivity +2.1% per +25%"
+  },
+  {
+   "cite": "DORA24 p.32",
+   "contains": [
+    "2.6%",
+    "2.2%",
+    "0.4%",
+    "-0.6%",
+    "-2.6%"
+   ],
+   "claim": "figure 7 values"
+  },
+  {
+   "cite": "DORA24 p.33",
+   "contains": [
+    "vacuum hypothesis"
+   ],
+   "claim": "vacuum hypothesis"
+  },
+  {
+   "cite": "DORA24 p.35",
+   "contains": [
+    "toil and burnout remain unchanged"
+   ],
+   "claim": "toil and burnout unchanged"
+  },
+  {
+   "cite": "DORA24 p.37",
+   "contains": [
+    "7.5% increase in documentation quality",
+    "3.4% increase in code quality",
+    "3.1% increase in code review speed"
+   ],
+   "claim": "documentation +7.5%"
+  },
+  {
+   "cite": "DORA24 p.38",
+   "contains": [
+    "faster code reviews and approvals do not equate"
+   ],
+   "claim": "fast review is not better review"
+  },
+  {
+   "cite": "DORA24 p.40",
+   "contains": [
+    "1.5% reduction",
+    "7.2% reduction"
+   ],
+   "claim": "throughput -1.5% and stability -7.2%"
+  },
+  {
+   "cite": "DORA24 p.40",
+   "contains": [
+    "small batch sizes"
+   ],
+   "claim": "small batches"
+  },
+  {
+   "cite": "DORA24 p.40",
+   "contains": [
+    "not appear to be a panacea"
+   ],
+   "claim": "AI is not a panacea"
+  },
+  {
+   "cite": "DORA24 p.43",
+   "contains": [
+    "r = 0.56",
+    "r = 0.47"
+   ],
+   "claim": "Pearson correlations"
+  },
+  {
+   "cite": "DORA24 p.43",
+   "contains": [
+    "2.3% increase",
+    "1.4% increase"
+   ],
+   "claim": "org +2.3% and team +1.4%"
+  },
+  {
+   "cite": "DORA24 p.44",
+   "contains": [
+    "not derived from real data"
+   ],
+   "claim": "figure 12 is not derived from real data"
+  },
+  {
+   "cite": "DORA24 p.45",
+   "contains": [
+    "clear ai mission"
+   ],
+   "claim": "AI mission and policies"
+  },
+  {
+   "cite": "DORA24 p.46",
+   "contains": [
+    "downstream impacts"
+   ],
+   "claim": "measure downstream impacts"
+  },
+  {
+   "cite": "DORA24 p.48",
+   "contains": [
+    "golden paths",
+    "self-service"
+   ],
+   "claim": "golden paths"
+  },
+  {
+   "cite": "DORA24 p.49",
+   "contains": [
+    "8% higher",
+    "10% higher",
+    "6%",
+    "14%"
+   ],
+   "claim": "platform effects"
+  },
+  {
+   "cite": "DORA24 p.50",
+   "contains": [
+    "89% of respondents"
+   ],
+   "claim": "89% use an IDP"
+  },
+  {
+   "cite": "DORA24 p.51",
+   "contains": [
+    "developer independence",
+    "5% improvement"
+   ],
+   "claim": "developer independence +5%"
+  },
+  {
+   "cite": "DORA24 p.52",
+   "contains": [
+    "6% gain",
+    "negligible"
+   ],
+   "claim": "dedicated team +6%"
+  },
+  {
+   "cite": "DORA24 p.53",
+   "contains": [
+    "6% decrease",
+    "exclusively use the platform"
+   ],
+   "claim": "exclusive use -6% throughput"
+  },
+  {
+   "cite": "DORA24 p.54",
+   "contains": [
+    "14% decrease",
+    "higher levels of burnout"
+   ],
+   "claim": "stability -14% and burnout"
+  },
+  {
+   "cite": "DORA24 p.55",
+   "contains": [
+    "service level objectives",
+    "error budgets"
+   ],
+   "claim": "SLOs and error budgets"
+  },
+  {
+   "cite": "DORA24 p.59",
+   "contains": [
+    "not a requirement for product quality"
+   ],
+   "claim": "product quality without requiring delivery"
+  },
+  {
+   "cite": "DORA24 p.60",
+   "contains": [
+    "shiny but hardly used"
+   ],
+   "claim": "shiny features rarely used"
+  },
+  {
+   "cite": "DORA24 p.63",
+   "contains": [
+    "amplified",
+    "user signals"
+   ],
+   "claim": "docs amplify user focus"
+  },
+  {
+   "cite": "DORA24 p.64",
+   "contains": [
+    "working software over comprehensive documentation"
+   ],
+   "claim": "agile vs documentation"
+  },
+  {
+   "cite": "DORA24 p.65",
+   "contains": [
+    "strong leaders, good internal documents"
+   ],
+   "claim": "leaders/docs do not compensate for unstable priorities"
+  },
+  {
+   "cite": "DORA24 p.66",
+   "contains": [
+    "frequency with which priorities change",
+    "software delivery performance declines"
+   ],
+   "claim": "frequency of change is the problem"
+  },
+  {
+   "cite": "DORA24 p.67",
+   "contains": [
+    "10% decrease in software delivery stability"
+   ],
+   "claim": "AI in product: -10% stability"
+  },
+  {
+   "cite": "DORA24 p.68",
+   "contains": [
+    "stabilizing their priorities"
+   ],
+   "claim": "stabilizing priorities"
+  },
+  {
+   "cite": "DORA24 p.70",
+   "contains": [
+    "vision",
+    "supportive",
+    "inspirational communication",
+    "intellectual stimulation",
+    "personal recognition"
+   ],
+   "claim": "five dimensions of leadership"
+  },
+  {
+   "cite": "DORA24 p.71",
+   "contains": [
+    "9% increase in employee productivity",
+    "enabler"
+   ],
+   "claim": "leadership: +9% productivity; enabling"
+  },
+  {
+   "cite": "DORA24 p.72",
+   "contains": [
+    "9.9%",
+    "10.3%",
+    "4.5%"
+   ],
+   "claim": "figure 18 values"
+  },
+  {
+   "cite": "DORA24 p.73",
+   "contains": [
+    "40% higher level of organizational performance"
+   ],
+   "claim": "2023: 40% higher organizational performance"
+  },
+  {
+   "cite": "DORA24 p.74",
+   "contains": [
+    "not to compare teams",
+    "maturity model",
+    "30 capabilities",
+    "application and service levels"
+   ],
+   "claim": "do not compare teams; not maturity; 30 capabilities"
+  },
+  {
+   "cite": "DORA24 p.75",
+   "contains": [
+    "staying in the data center"
+   ],
+   "claim": "cloud without flexibility can be worse"
+  },
+  {
+   "cite": "DORA24 p.76",
+   "contains": [
+    "j-curve"
+   ],
+   "claim": "J-curve"
+  },
+  {
+   "cite": "DORA24 p.78",
+   "contains": [
+    "2014",
+    "50 percent"
+   ],
+   "claim": "2014 and 50 percent"
+  },
+  {
+   "cite": "DORA24 p.79",
+   "contains": [
+    "industry standard",
+    "software engineering intelligence"
+   ],
+   "claim": "four keys as industry standard; SEI tools"
+  },
+  {
+   "cite": "DORA24 p.80",
+   "contains": [
+    "operational performance",
+    "2018"
+   ],
+   "claim": "operational performance since 2018"
+  },
+  {
+   "cite": "DORA24 p.81",
+   "contains": [
+    "high-trust culture",
+    "westrum"
+   ],
+   "claim": "high-trust culture; Westrum"
+  },
+  {
+   "cite": "DORA24 p.83",
+   "contains": [
+    "replicate our research"
+   ],
+   "claim": "replicate the research"
+  },
+  {
+   "cite": "DORA24 p.91",
+   "contains": [
+    "nearly 3,000",
+    "stack overflow"
+   ],
+   "claim": "about 3,000 respondents; Stack Overflow"
+  },
+  {
+   "cite": "DORA24 p.92",
+   "contains": [
+    "35.69%"
+   ],
+   "claim": "35.69% technology"
+  },
+  {
+   "cite": "DORA24 p.93",
+   "contains": [
+    "83%"
+   ],
+   "claim": "83% men"
+  },
+  {
+   "cite": "DORA24 p.102",
+   "contains": [
+    "snowball sampling",
+    "three separate flows"
+   ],
+   "claim": "snowball and three flows"
+  },
+  {
+   "cite": "DORA24 p.103",
+   "contains": [
+    "lavaan",
+    "confirmatory factor analysis"
+   ],
+   "claim": "lavaan and CFA"
+  },
+  {
+   "cite": "DORA24 p.104",
+   "contains": [
+    "cross-validation (loocv)"
+   ],
+   "claim": "LOOCV"
+  },
+  {
+   "cite": "DORA24 p.107",
+   "contains": [
+    "bayesian statistics"
+   ],
+   "claim": "Bayesian statistics"
+  },
+  {
+   "cite": "DORA24 p.108",
+   "contains": [
+    "89%",
+    "4,000"
+   ],
+   "claim": "89% interval"
+  },
+  {
+   "cite": "DORA24 p.109",
+   "contains": [
+    "11 participants",
+    "75 minutes"
+   ],
+   "claim": "11 interviews of 75 minutes"
+  },
+  {
+   "cite": "DORA24 p.110",
+   "contains": [
+    "temporal precedence",
+    "longitudinal studies or a proper experiment"
+   ],
+   "claim": "no longitudinal study or experiment"
+  },
+  {
+   "cite": "DORA24 p.111",
+   "contains": [
+    "micro-level",
+    "macro-level"
+   ],
+   "claim": "micro-macro leap"
+  },
+  {
+   "cite": "DORA24 p.112",
+   "contains": [
+    "97.2%"
+   ],
+   "claim": "97.2% of simulations"
+  },
+  {
+   "cite": "DORA24 p.113",
+   "contains": [
+    "smaller models"
+   ],
+   "claim": "smaller models"
+  },
+  {
+   "cite": "DORA24 p.114",
+   "contains": [
+    "if we do x, what happens to y"
+   ],
+   "claim": "default question if X then Y"
+  },
+  {
+   "cite": "DORA24 p.115",
+   "contains": [
+    "internal documentation and user-centricity"
+   ],
+   "claim": "effects differ by capability"
+  },
+  {
+   "cite": "DORA24 p.118",
+   "contains": [
+    "cc by-nc-sa 4.0"
+   ],
+   "claim": "CC BY-NC-SA license"
+  }
+ ],
+ "negative": [
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "mttr"
+   ],
+   "claim": "report does not use the MTTR acronym"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "mean time to restore",
+    "mean time to recovery",
+    "time to restore"
+   ],
+   "claim": "does not use 'mean time to restore'"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "lead time for changes"
+   ],
+   "claim": "does not use 'lead time for changes'"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "trunk-based",
+    "trunk based"
+   ],
+   "claim": "does not cover trunk-based development"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "feature flag"
+   ],
+   "claim": "does not cover feature flags"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "kubernetes"
+   ],
+   "claim": "does not cover Kubernetes"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "microservice",
+    "monolith"
+   ],
+   "claim": "does not cover microservices/monolith"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "backstage"
+   ],
+   "claim": "does not cover Backstage"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "cognitive load"
+   ],
+   "claim": "does not cover cognitive load"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "sbom",
+    "devsecops"
+   ],
+   "claim": "does not cover SBOM/DevSecOps"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "canary",
+    "chaos"
+   ],
+   "claim": "does not cover canary/chaos"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "gitops",
+    "terraform"
+   ],
+   "claim": "does not cover GitOps/Terraform"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "devex",
+    "space framework",
+    "dx core"
+   ],
+   "claim": "does not cover DevEx framework/SPACE/DX Core 4"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "pull request"
+   ],
+   "claim": "does not mention pull requests"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "response rate"
+   ],
+   "claim": "does not report response rate"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "probability sample"
+   ],
+   "claim": "does not use probability sampling"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "p < 0.05",
+    "p<0.05"
+   ],
+   "claim": "does not use p < 0.05"
+  },
+  {
+   "cite": "DORA24 all",
+   "absent": [
+    "ranking"
+   ],
+   "claim": "does not provide a team ranking"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "absent": [
+    "rework"
+   ],
+   "claim": "cluster table does not include rework rate"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "absent": [
+    "median"
+   ],
+   "claim": "cluster table does not include median"
+  },
+  {
+   "cite": "DORA24 p.13",
+   "absent": [
+    "0-15%"
+   ],
+   "claim": "elite CFR is not '0-15%'"
+  },
+  {
+   "cite": "DORA24 p.40",
+   "absent": [
+    "observab"
+   ],
+   "claim": "does not mention observability"
+  }
+ ]
+}

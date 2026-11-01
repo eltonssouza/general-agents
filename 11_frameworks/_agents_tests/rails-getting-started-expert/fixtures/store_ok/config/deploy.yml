@@ -1,0 +1,2 @@
+service: store
+image: your-user/store

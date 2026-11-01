@@ -1,0 +1,1538 @@
+{
+ "versao": 1,
+ "fontes": {
+  "BAAS": {
+   "titulo": "Building Agentic AI Systems",
+   "subtitulo": "Create intelligent, autonomous AI agents that can reason, plan, and adapt",
+   "autores": "Anjanava Biswas, Wrick Talukdar",
+   "editora": "Packt Publishing (Birmingham, UK)",
+   "ano": "April 2025 (first published April 2025; ISBN 978-1-80323-875-3)",
+   "paginas_pdf": 289,
+   "offset_corpo": 25,
+   "convencao": "PDF page; printed = PDF - 25 in the body (p.28 = printed 3); front matter in Roman numerals (Preface xix = PDF 20)",
+   "obs": "p.24 and p.287 call the book 'Building Agentic Systems with Generative AI' (variation within the PDF itself)"
+  },
+  "CE2": {
+   "titulo": "Context Engineering 2.0: The Context of Context Engineering",
+   "autores": "Qishuo Hua, Lyumanshan Ye, Dayuan Fu, Yang Xiao, Xiaojie Cai, Yunze Wu, Jifan Lin, Junfei Wang, Pengfei Liu",
+   "editora": "SII-GAIR (SJTU/SII/GAIR); arXiv:2510.26493v1 [cs.AI]",
+   "ano": "October 30, 2025",
+   "paginas_pdf": 28,
+   "offset_corpo": 0,
+   "convencao": "PDF page = printed page; body p.1-21; references p.21-28",
+   "obs": "conceptual/position paper; no experiments of its own"
+  }
+ },
+ "capitulos": [
+  {
+   "fonte": "BAAS",
+   "cap": "1",
+   "titulo": "Fundamentals of Generative AI",
+   "pdf_ini": 28,
+   "pdf_fim": 50,
+   "impressa_ini": 3,
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "2",
+   "titulo": "Principles of Agentic Systems",
+   "pdf_ini": 52,
+   "pdf_fim": 74,
+   "impressa_ini": 27,
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "3",
+   "titulo": "Essential Components of Intelligent Agents",
+   "pdf_ini": 76,
+   "pdf_fim": 98,
+   "impressa_ini": 51,
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "4",
+   "titulo": "Reflection and Introspection in Agents",
+   "pdf_ini": 102,
+   "pdf_fim": 130,
+   "impressa_ini": 77,
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "5",
+   "titulo": "Enabling Tool Use and Planning in Agents",
+   "pdf_ini": 132,
+   "pdf_fim": 161,
+   "impressa_ini": 107,
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "6",
+   "titulo": "Exploring the Coordinator, Worker, and Delegator Approach",
+   "pdf_ini": 162,
+   "pdf_fim": 184,
+   "impressa_ini": 137,
+   "ref": "05-baas-multiagente-cwd.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "7",
+   "titulo": "Effective Agentic System Design Techniques",
+   "pdf_ini": 186,
+   "pdf_fim": 211,
+   "impressa_ini": 161,
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "8",
+   "titulo": "Building Trust in Generative AI Systems",
+   "pdf_ini": 214,
+   "pdf_fim": 229,
+   "impressa_ini": 189,
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "9",
+   "titulo": "Managing Safety and Ethical Considerations",
+   "pdf_ini": 230,
+   "pdf_fim": 245,
+   "impressa_ini": 205,
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "10",
+   "titulo": "Common Use Cases and Applications",
+   "pdf_ini": 246,
+   "pdf_fim": 263,
+   "impressa_ini": 221,
+   "ref": "08-baas-aplicacoes-e-futuro.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "11",
+   "titulo": "Conclusion and Future Outlook",
+   "pdf_ini": 264,
+   "pdf_fim": 272,
+   "impressa_ini": 239,
+   "ref": "08-baas-aplicacoes-e-futuro.md",
+   "leitura": "full (text)"
+  },
+  {
+   "fonte": "BAAS",
+   "cap": "Index",
+   "titulo": "Index (impressa 249-257)",
+   "pdf_ini": 274,
+   "pdf_fim": 282,
+   "impressa_ini": 249,
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "leitura": "read (used to check the offset)"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "1",
+   "titulo": "Introduction",
+   "pdf_ini": 3,
+   "pdf_fim": 4,
+   "impressa_ini": 3,
+   "ref": "09-ce2-definicao-e-eras.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "2",
+   "titulo": "Theoretical Framework (2.1 Formal Definition; 2.2 Stage Characterization)",
+   "pdf_ini": 4,
+   "pdf_fim": 6,
+   "impressa_ini": 4,
+   "ref": "09-ce2-definicao-e-eras.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "3",
+   "titulo": "Historical Evolution (3.1 Era 1.0; 3.2 Era 2.0)",
+   "pdf_ini": 6,
+   "pdf_fim": 8,
+   "impressa_ini": 6,
+   "ref": "09-ce2-definicao-e-eras.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "4",
+   "titulo": "Context Collection and Storage",
+   "pdf_ini": 9,
+   "pdf_fim": 10,
+   "impressa_ini": 9,
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "5",
+   "titulo": "Context Management (5.1 text; 5.2 multimodal; 5.3 organization; 5.4 abstraction)",
+   "pdf_ini": 10,
+   "pdf_fim": 14,
+   "impressa_ini": 10,
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "6",
+   "titulo": "Context Usage (6.1-6.6)",
+   "pdf_ini": 14,
+   "pdf_fim": 19,
+   "impressa_ini": 14,
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "7",
+   "titulo": "Applications (CLI, Deep Research, BCI)",
+   "pdf_ini": 19,
+   "pdf_fim": 20,
+   "impressa_ini": 19,
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "8",
+   "titulo": "Challenges and Future Directions",
+   "pdf_ini": 20,
+   "pdf_fim": 20,
+   "impressa_ini": 20,
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "9",
+   "titulo": "Conclusion",
+   "pdf_ini": 21,
+   "pdf_fim": 21,
+   "impressa_ini": 21,
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "leitura": "full"
+  },
+  {
+   "fonte": "CE2",
+   "cap": "Refs",
+   "titulo": "References",
+   "pdf_ini": 21,
+   "pdf_fim": 28,
+   "impressa_ini": 21,
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "leitura": "references: sampled (not used as a source of claims)"
+  }
+ ],
+ "topicos": [
+  {
+   "fonte": "BAAS",
+   "topico": "Generative AI: definition, VAE, GAN, Transformer",
+   "termos": [
+    "generative ai",
+    "ia generativa",
+    "vae",
+    "gan",
+    "transformer",
+    "autoregressivo",
+    "autoregressive"
+   ],
+   "paginas": "29-33",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "LLM types (autoregressive, encoder, multimodal, instruction-tuned)",
+   "termos": [
+    "llm types",
+    "tipos de llm",
+    "instruction-tuned",
+    "multimodal llm"
+   ],
+   "paginas": "34-35",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": "[DATED] model names"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "LLM agent as an LLM application; flight booking example",
+   "termos": [
+    "llm agent",
+    "agente llm",
+    "flight booking",
+    "reserva de voo",
+    "flightLookup",
+    "bookFlight"
+   ],
+   "paginas": "35-41",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Limitations of generative AI (bias, privacy, compute, ethics)",
+   "termos": [
+    "limitations",
+    "limitações",
+    "bias",
+    "viés",
+    "data privacy",
+    "slm"
+   ],
+   "paginas": "45-48",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Self-governance",
+   "termos": [
+    "self-governance",
+    "autogoverno",
+    "self-organization"
+   ],
+   "paginas": "54",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Agency (decisional authority, intentionality, responsibility)",
+   "termos": [
+    "agency",
+    "agência",
+    "decisional authority",
+    "intentionality"
+   ],
+   "paginas": "54-55",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Autonomy (operational, functional, hierarchical)",
+   "termos": [
+    "autonomy",
+    "autonomia",
+    "operational autonomy",
+    "functional autonomy",
+    "hierarchical autonomy"
+   ],
+   "paginas": "55-56",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Intelligent agent: reactivity, proactiveness, social ability",
+   "termos": [
+    "intelligent agent",
+    "agente inteligente",
+    "reactivity",
+    "proactiveness",
+    "social ability"
+   ],
+   "paginas": "60-61",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Deliberative architecture (sense-plan-act)",
+   "termos": [
+    "deliberative",
+    "deliberativa",
+    "sense-plan-act",
+    "symbolic architecture"
+   ],
+   "paginas": "61-62",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Reactive architecture",
+   "termos": [
+    "reactive architecture",
+    "arquitetura reativa",
+    "stimulus-response",
+    "behavior-based"
+   ],
+   "paginas": "63-64",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Hybrid architecture (reactive and deliberative layers; techniques)",
+   "termos": [
+    "hybrid architecture",
+    "arquitetura híbrida",
+    "task decomposition",
+    "multiplan selection",
+    "memory-augmented planning"
+   ],
+   "paginas": "64-65",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Multi-agent systems: definition, domains, and characteristics",
+   "termos": [
+    "multi-agent system",
+    "mas",
+    "multiagente",
+    "distributed control",
+    "heterogeneity"
+   ],
+   "paginas": "65-67",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Interaction in MAS: cooperation, coordination, negotiation",
+   "termos": [
+    "cooperation",
+    "coordination",
+    "negotiation",
+    "cooperação",
+    "coordenação",
+    "negociação",
+    "auction"
+   ],
+   "paginas": "68-70",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Travel MAS algorithm (airlines, hotels, agency)",
+   "termos": [
+    "algorithm 2",
+    "travel booking system",
+    "multi-agent travel"
+   ],
+   "paginas": "70-73",
+   "ref": "01-baas-fundamentos-e-arquiteturas.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Knowledge representation (semantic networks, frames, logic)",
+   "termos": [
+    "knowledge representation",
+    "semantic network",
+    "frames",
+    "logic-based",
+    "representação de conhecimento"
+   ],
+   "paginas": "77-81",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Deductive, inductive, and abductive reasoning",
+   "termos": [
+    "deductive",
+    "inductive",
+    "abductive",
+    "dedutivo",
+    "indutivo",
+    "abdutivo"
+   ],
+   "paginas": "82-86",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Learning mechanisms (supervised, unsupervised, reinforcement, transfer)",
+   "termos": [
+    "learning mechanisms",
+    "supervised",
+    "reinforcement learning",
+    "transfer learning",
+    "aprendizado"
+   ],
+   "paginas": "86-87",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Utility function (numeric example 95.00 and 127.50)",
+   "termos": [
+    "utility function",
+    "função de utilidade",
+    "utilidade",
+    "expected utility",
+    "budget airline",
+    "road trip"
+   ],
+   "paginas": "88-90",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": "ctx_calc.py utility reproduces p.89"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Classical planning algorithms (graphs, heuristics, MCTS, hierarchical, CSP)",
+   "termos": [
+    "planning algorithms",
+    "graph search",
+    "a*",
+    "monte carlo tree search",
+    "mcts",
+    "constraint satisfaction",
+    "heuristic search"
+   ],
+   "paginas": "90-92",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "GenAI in agents; frameworks; first agent with function calling",
+   "termos": [
+    "generative ai agents",
+    "langgraph",
+    "autogen",
+    "crewai",
+    "metagpt",
+    "function calling openai"
+   ],
+   "paginas": "93-96",
+   "ref": "02-baas-componentes-raciocinio-e-planejamento.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Reflection and introspection: importance",
+   "termos": [
+    "reflection",
+    "reflexão",
+    "introspection",
+    "introspecção",
+    "metacognition"
+   ],
+   "paginas": "103-107",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Meta-reasoning (preference weights, adjustment_factor)",
+   "termos": [
+    "meta-reasoning",
+    "meta-raciocínio",
+    "preference weights",
+    "adjustment_factor",
+    "feedback"
+   ],
+   "paginas": "108-114",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": "ctx_calc.py weights"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Performance monitoring and product metrics",
+   "termos": [
+    "performance monitoring",
+    "monitoramento de desempenho",
+    "metrics",
+    "acceptance rate",
+    "baseline",
+    "threshold"
+   ],
+   "paginas": "114-115",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Resource allocation by meta-reasoning",
+   "termos": [
+    "resource allocation",
+    "alocação de recursos",
+    "multi-armed bandit",
+    "diminishing returns"
+   ],
+   "paginas": "116-117",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Self-explanation (transparency and learning)",
+   "termos": [
+    "self-explanation",
+    "autoexplicação",
+    "transparency",
+    "explanation log"
+   ],
+   "paginas": "117-121",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Self-modeling (goal management and knowledge update)",
+   "termos": [
+    "self-modeling",
+    "automodelagem",
+    "goal management",
+    "knowledge update",
+    "internal state"
+   ],
+   "paginas": "121-123",
+   "ref": "03-baas-reflexao-e-introspeccao.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Tool use and tool/function calling; Agent Controller",
+   "termos": [
+    "tool use",
+    "uso de ferramentas",
+    "tool calling",
+    "function calling",
+    "agent controller"
+   ],
+   "paginas": "133-135",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Tool definition (docstring, JSON schema)",
+   "termos": [
+    "tool definition",
+    "definição de ferramentas",
+    "docstring",
+    "json schema",
+    "input_schema"
+   ],
+   "paginas": "135-137",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Tool types (API, database, utility, integration, hardware)",
+   "termos": [
+    "tool types",
+    "tipos de ferramentas",
+    "api tools",
+    "database tools",
+    "utility functions",
+    "integration tools",
+    "hardware interface"
+   ],
+   "paginas": "138",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Tool design considerations (composition, error, state, version, security)",
+   "termos": [
+    "tool composition",
+    "error handling",
+    "fallback",
+    "tool state",
+    "versioning",
+    "tool security",
+    "rate limits"
+   ],
+   "paginas": "139",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Planning for LLM agents (STRIPS, A*, GraphPlan, MCTS, FF, HTN, LLM-based)",
+   "termos": [
+    "strips",
+    "htn",
+    "hierarchical task network",
+    "llm-based planning",
+    "planejamento",
+    "graphplan",
+    "fast forward"
+   ],
+   "paginas": "142-150",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Reasoning about tools and their limitations",
+   "termos": [
+    "tool reasoning",
+    "raciocínio sobre ferramentas",
+    "tool selection",
+    "tool limitations",
+    "testar uso de ferramentas",
+    "tool testing"
+   ],
+   "paginas": "151-153",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "CrewAI, AutoGen, and LangGraph frameworks (comparison)",
+   "termos": [
+    "crewai",
+    "autogen",
+    "langgraph",
+    "roundrobingroupchat",
+    "stategraph",
+    "memorysaver",
+    "framework comparison"
+   ],
+   "paginas": "154-159",
+   "ref": "04-baas-ferramentas-planejamento-e-frameworks.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "CWD model (coordinator, worker, delegator)",
+   "termos": [
+    "cwd",
+    "coordinator",
+    "worker",
+    "delegator",
+    "coordenador",
+    "delegador"
+   ],
+   "paginas": "163-165",
+   "ref": "05-baas-multiagente-cwd.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Agent roles (Manager, Analyst, Reflector, Searcher, Task Interpreter); role and backstory",
+   "termos": [
+    "roles",
+    "papéis",
+    "role",
+    "backstory",
+    "manager agent",
+    "reflector",
+    "searcher",
+    "task interpreter"
+   ],
+   "paginas": "168-176",
+   "ref": "05-baas-multiagente-cwd.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Communication, coordination, negotiation, and knowledge sharing in CWD",
+   "termos": [
+    "communication",
+    "fipa acl",
+    "conflict resolution",
+    "knowledge sharing",
+    "comunicação entre agentes"
+   ],
+   "paginas": "176-178",
+   "ref": "05-baas-multiagente-cwd.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "System prompt and instruction formatting (input, output, messages)",
+   "termos": [
+    "system prompt",
+    "prompt de sistema",
+    "instruction formatting",
+    "output template",
+    "message format",
+    "interaction patterns"
+   ],
+   "paginas": "179-182",
+   "ref": "05-baas-multiagente-cwd.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Objectives, focused prompt, and task specification",
+   "termos": [
+    "focused instructions",
+    "objective",
+    "task specification",
+    "especificação de tarefa",
+    "instrução focada"
+   ],
+   "paginas": "187-190",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Contextual awareness",
+   "termos": [
+    "contextual awareness",
+    "consciência contextual",
+    "destination intelligence"
+   ],
+   "paginas": "190-192",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "State space (profile, trip, booking) and JSON example",
+   "termos": [
+    "state space",
+    "espaço de estados",
+    "booking state",
+    "state representation"
+   ],
+   "paginas": "192-193",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Environment modeling (static vs. dynamic)",
+   "termos": [
+    "environment modeling",
+    "modelagem de ambiente",
+    "static elements",
+    "dynamic elements"
+   ],
+   "paginas": "194-195",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Event-driven updates and state validation",
+   "termos": [
+    "event-driven",
+    "state validation",
+    "validação de estado",
+    "state transition",
+    "consistency"
+   ],
+   "paginas": "196-198",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Memory architecture: short-term, long-term, episodic",
+   "termos": [
+    "memory",
+    "memória",
+    "short-term memory",
+    "long-term memory",
+    "episodic memory",
+    "working memory",
+    "memória de trabalho",
+    "memória episódica",
+    "knowledge base"
+   ],
+   "paginas": "198-202",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Context management: hierarchy, switching, integration with decision",
+   "termos": [
+    "context management",
+    "gestão de contexto",
+    "context hierarchy",
+    "global context",
+    "session context",
+    "task context",
+    "context switching"
+   ],
+   "paginas": "202-204",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Sequential and parallel flows and workflow optimization",
+   "termos": [
+    "sequential",
+    "parallel",
+    "workflow optimization",
+    "backpressure",
+    "load balancing",
+    "fluxo paralelo"
+   ],
+   "paginas": "205-209",
+   "ref": "06-baas-design-prompts-estado-memoria-e-workflows.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Trust, transparency, and XAI",
+   "termos": [
+    "trust",
+    "confiança",
+    "xai",
+    "explainability",
+    "saliency",
+    "attention visualization",
+    "transparência"
+   ],
+   "paginas": "215-221",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Uncertainty and bias; output communication; control and consent",
+   "termos": [
+    "uncertainty",
+    "incerteza",
+    "debiasing",
+    "output communication",
+    "user control",
+    "consent"
+   ],
+   "paginas": "221-224",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Agent risks: adversarial, bias, hallucination, privacy, IP",
+   "termos": [
+    "adversarial attacks",
+    "hallucination",
+    "alucinação",
+    "privacy violation",
+    "intellectual property",
+    "riscos de agentes"
+   ],
+   "paginas": "231-237",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Agent safety: action limits, verification, rollback, monitoring",
+   "termos": [
+    "action boundaries",
+    "limites de ação",
+    "decision verification",
+    "rollback",
+    "real-time monitoring",
+    "rbac",
+    "guardrails"
+   ],
+   "paginas": "237-238",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": "products cited are [DATED]"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Human-in-the-loop, progressive autonomy, agent testing, decision metrics",
+   "termos": [
+    "hitl",
+    "human-in-the-loop",
+    "progressive autonomy",
+    "autonomia progressiva",
+    "agent testing",
+    "safe learning",
+    "red teaming",
+    "emergency protocols"
+   ],
+   "paginas": "238-240",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Ethics, privacy by design, and deployment security",
+   "termos": [
+    "ethics",
+    "ética",
+    "privacy by design",
+    "incident response",
+    "gdpr",
+    "pentest",
+    "pci dss"
+   ],
+   "paginas": "241-243",
+   "ref": "07-baas-confianca-seguranca-e-etica.md",
+   "nota": ""
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Case studies (previsualization, corporate knowledge, manufacturing, supply chain)",
+   "termos": [
+    "use cases",
+    "casos de uso",
+    "knowledge management agent",
+    "manufacturing cell",
+    "supply chain agents",
+    "film previsualization"
+   ],
+   "paginas": "247-260",
+   "ref": "08-baas-aplicacoes-e-futuro.md",
+   "nota": "[DATED]/unverified"
+  },
+  {
+   "fonte": "BAAS",
+   "topico": "Future: AGI and trends",
+   "termos": [
+    "agi",
+    "future outlook",
+    "emerging trends",
+    "meta-learning"
+   ],
+   "paginas": "264-271",
+   "ref": "08-baas-aplicacoes-e-futuro.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Thesis: context engineering is over 20 years old; context as a broad concept",
+   "termos": [
+    "context engineering history",
+    "engenharia de contexto",
+    "context 1.0",
+    "over 20 years"
+   ],
+   "paginas": "1-3",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context engineering as entropy reduction",
+   "termos": [
+    "entropy reduction",
+    "redução de entropia",
+    "high-entropy",
+    "low-entropy"
+   ],
+   "paginas": "3-4",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Formal definitions (Char, interaction, context, context engineering, φ)",
+   "termos": [
+    "formal definition",
+    "definição formal",
+    "char(e)",
+    "erel",
+    "f_context",
+    "dey",
+    "context definition"
+   ],
+   "paginas": "4-5",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Four eras (1.0 to 4.0) and Table 1",
+   "termos": [
+    "eras",
+    "era 1.0",
+    "era 2.0",
+    "era 3.0",
+    "era 4.0",
+    "stage characterization",
+    "primitive computation"
+   ],
+   "paginas": "6-8",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context Toolkit (Widgets, Interpreters, Aggregators, Services, Discoverers)",
+   "termos": [
+    "context toolkit",
+    "widgets",
+    "interpreters",
+    "aggregators",
+    "discoverers"
+   ],
+   "paginas": "7",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Era 2.0: sensors, raw-context tolerance, context-cooperative",
+   "termos": [
+    "context-cooperative",
+    "context-aware",
+    "raw context tolerance",
+    "sensors",
+    "tabela 2",
+    "table 2"
+   ],
+   "paginas": "8",
+   "ref": "09-ce2-definicao-e-eras.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Collection principles: Minimal Sufficiency and Semantic Continuity",
+   "termos": [
+    "minimal sufficiency",
+    "suficiência mínima",
+    "semantic continuity",
+    "continuidade semântica"
+   ],
+   "paginas": "9",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Layered storage; long-task memory (Claude Code)",
+   "termos": [
+    "storage",
+    "armazenamento",
+    "sqlite",
+    "leveldb",
+    "layered storage",
+    "long-term memory code agents"
+   ],
+   "paginas": "9-10",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Textual processing: timestamp, tags, Q&A pairs, hierarchical notes",
+   "termos": [
+    "timestamp",
+    "tagging",
+    "qa pairs",
+    "hierarchical notes",
+    "textual context processing"
+   ],
+   "paginas": "10-11",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Multimodal processing (shared vector, self-attention, cross-attention)",
+   "termos": [
+    "multimodal",
+    "multi-modal",
+    "cross-attention",
+    "shared embedding",
+    "multimodal context"
+   ],
+   "paginas": "11-12",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Layered memory: Ms, Ml, and transfer (eqs. 5-7); CPU/RAM analogy",
+   "termos": [
+    "memory",
+    "memória",
+    "layered memory",
+    "short-term memory definition",
+    "long-term memory definition",
+    "memory transfer",
+    "w_temporal",
+    "w_importance",
+    "karpathy",
+    "ms",
+    "ml"
+   ],
+   "paginas": "12",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": "ctx_calc.py memory-split"
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context isolation: subagent and lightweight references",
+   "termos": [
+    "context isolation",
+    "subagent",
+    "isolamento de contexto",
+    "lightweight references",
+    "sandbox"
+   ],
+   "paginas": "12-13",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context abstraction (self-baking): hierarchy, summaries, fixed schema, vectors",
+   "termos": [
+    "memory",
+    "self-baking",
+    "context abstraction",
+    "abstração",
+    "hierarchical memory",
+    "fixed schema",
+    "summaries",
+    "embeddings"
+   ],
+   "paginas": "13-14",
+   "ref": "10-ce2-coleta-e-gestao-de-contexto.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context sharing within the system (prompt, messages, shared memory)",
+   "termos": [
+    "intra-system sharing",
+    "shared memory",
+    "blackboard",
+    "structured messages",
+    "cross-agent context"
+   ],
+   "paginas": "14-15",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Cross-system sharing (adapters vs. shared representation)",
+   "termos": [
+    "cross-system sharing",
+    "adapters",
+    "shared representation",
+    "json schema context"
+   ],
+   "paginas": "15",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Context selection (relevance, dependency, recency, overlap, preference); RAG filters",
+   "termos": [
+    "context selection",
+    "seleção de contexto",
+    "semantic relevance",
+    "logical dependency",
+    "recency",
+    "reranking",
+    "rag",
+    "50%",
+    "context overload"
+   ],
+   "paginas": "15-17",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Proactive inference of user needs",
+   "termos": [
+    "proactive",
+    "proativa",
+    "user needs",
+    "hidden goals"
+   ],
+   "paginas": "17",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Lifelong context and four challenges (storage, degradation, instability, evaluation)",
+   "termos": [
+    "lifelong context",
+    "lifelong",
+    "storage bottlenecks",
+    "processing degradation",
+    "system instability",
+    "evaluation difficulty",
+    "semantic operating system"
+   ],
+   "paginas": "17-18",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "KV cache and stable-prefix practices",
+   "termos": [
+    "kv cache",
+    "kv caching",
+    "prefix",
+    "cache hit",
+    "append-only",
+    "warm-up"
+   ],
+   "paginas": "18",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Tool design: description and scale (30/100 tools)",
+   "termos": [
+    "tool design",
+    "projeto de ferramentas",
+    "tool count",
+    "30 tools",
+    "100 tools",
+    "logit masking"
+   ],
+   "paginas": "18-19",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Practices: keep errors, variation against few-shot, multi-agent, todo.md",
+   "termos": [
+    "context contents",
+    "keep errors",
+    "few-shot agents",
+    "todo.md",
+    "multi-agent practices",
+    "recite goals"
+   ],
+   "paginas": "19",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Applications: CLI (GEMINI.md) and deep research (context snapshots)",
+   "termos": [
+    "gemini cli",
+    "gemini.md",
+    "deep research",
+    "tongyi",
+    "context snapshots",
+    "cli"
+   ],
+   "paginas": "19",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": "[DATED]"
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Brain-computer interfaces",
+   "termos": [
+    "bci",
+    "brain-computer",
+    "neural signals"
+   ],
+   "paginas": "20",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  },
+  {
+   "fonte": "CE2",
+   "topico": "Challenges and future directions; digital presence",
+   "termos": [
+    "challenges",
+    "future directions",
+    "long context",
+    "mamba",
+    "digital presence",
+    "desafios"
+   ],
+   "paginas": "20-21",
+   "ref": "11-ce2-uso-praticas-e-desafios.md",
+   "nota": ""
+  }
+ ],
+ "lacunas": [
+  {
+   "termo": "RAG (in BAAS)",
+   "alvo": "BAAS",
+   "nota": "BAAS does not cover RAG or vector databases (the acronym appears only in an advertisement for another book, p.286); for RAG as a context technique use CE2 p.3, 12, 16-17",
+   "busca": [
+    "RAG"
+   ]
+  },
+  {
+   "termo": "Model Context Protocol / MCP",
+   "alvo": "both",
+   "nota": "MCP appears only in the CE2 bibliographic notes (p.22, 25, 26), not in the body; BAAS does not mention it",
+   "busca": [
+    "MCP",
+    "Model Context Protocol"
+   ]
+  },
+  {
+   "termo": "A2A / Agent2Agent",
+   "alvo": "both",
+   "nota": "standardized agent-to-agent protocols are not covered",
+   "busca": [
+    "A2A",
+    "Agent2Agent"
+   ]
+  },
+  {
+   "termo": "prompt injection (indirect, via context or tool)",
+   "alvo": "both",
+   "nota": "BAAS mentions 'prompt injection' once, in the context of training-data extraction (p.46); CE2 does not mention it; neither has an agent threat model",
+   "busca": [
+    "prompt injection",
+    "injeção de prompt",
+    "injeção indireta"
+   ]
+  },
+  {
+   "termo": "jailbreak",
+   "alvo": "both",
+   "nota": "not covered",
+   "busca": [
+    "jailbreak"
+   ]
+  },
+  {
+   "termo": "OWASP / LLM threat model",
+   "alvo": "both",
+   "nota": "not covered",
+   "busca": [
+    "OWASP",
+    "modelo de ameaças"
+   ]
+  },
+  {
+   "termo": "agent benchmarks (SWE-bench, AgentBench)",
+   "alvo": "both",
+   "nota": "neither text provides an agent benchmark; CE2 p.18 says memory benchmarks test only retrieval",
+   "busca": [
+    "SWE-bench",
+    "AgentBench",
+    "benchmarks de agentes",
+    "benchmark"
+   ]
+  },
+  {
+   "termo": "LLM-as-a-judge",
+   "alvo": "both",
+   "nota": "not covered",
+   "busca": [
+    "LLM-as-a-judge"
+   ]
+  },
+  {
+   "termo": "agent observability / tracing (LangSmith, OpenTelemetry)",
+   "alvo": "both",
+   "nota": "no tracing tool; BAAS discusses monitoring in general (p.198, 238); CE2 mentions tracing reasoning as a gap (p.18)",
+   "busca": [
+    "LangSmith",
+    "OpenTelemetry",
+    "observabilidade",
+    "observability",
+    "tracing"
+   ]
+  },
+  {
+   "termo": "Reflexion / ReAct as named techniques",
+   "alvo": "both",
+   "nota": "the texts do not describe these techniques (BAAS uses the word 'reactive' in another sense; ReAct appears only as a bibliographic reference in CE2, p.27); BAAS covers reflection on its own terms (ch. 4)",
+   "busca": [
+    "Reflexion"
+   ]
+  },
+  {
+   "termo": "token budgeting, pricing, prompt caching (as a method)",
+   "alvo": "both",
+   "nota": "CE2 treats KV cache and window occupancy qualitatively (p.16, 18); neither provides a budgeting method or price table; ctx_calc.py budget is a package construction",
+   "busca": [
+    "pricing",
+    "prompt caching",
+    "orçamento de tokens",
+    "preços",
+    "token budget"
+   ]
+  },
+  {
+   "termo": "context window / context engineering in BAAS",
+   "alvo": "BAAS",
+   "nota": "BAAS uses neither the term 'context window' nor 'context engineering'; it uses 'context management' (p.177-179)",
+   "busca": [
+    "context window",
+    "context engineering",
+    "janela de contexto",
+    "engenharia de contexto"
+   ]
+  },
+  {
+   "termo": "guardrails as a section of BAAS ch. 7",
+   "alvo": "BAAS",
+   "nota": "the preface (p.21) and the opening of ch. 8 (p.214) say ch. 7 covers guardrails, but ch. 7 (p.186-211) has no such section; action limits are in ch. 9 (p.237-240)",
+   "busca": [
+    "guardrails"
+   ]
+  },
+  {
+   "termo": "vendor agent SDKs (OpenAI Agents SDK, Claude Agent SDK)",
+   "alvo": "both",
+   "nota": "not covered",
+   "busca": [
+    "Agents SDK",
+    "sdk"
+   ]
+  },
+  {
+   "termo": "repository instruction files (AGENTS.md, CLAUDE.md)",
+   "alvo": "both",
+   "nota": "only GEMINI.md is described (CE2 p.19)",
+   "busca": [
+    "AGENTS.md",
+    "CLAUDE.md"
+   ]
+  }
+ ],
+ "nao_lido": [
+  {
+   "paginas": "BAAS: figures",
+   "tema": "figures (1.1-1.3, 2.1-2.5, 3.1-3.7, 4.1-4.4, 5.1-5.5, 6.1-6.3, 7.1-7.4, 8.1-8.3, 9.1) not visually inspected; only the extracted text was read (p.88 was rendered)"
+  },
+  {
+   "paginas": "CE2: figures",
+   "tema": "Figs. 1-7 not visually inspected (extracted text only); p.5 and p.12 rendered to check the formulas"
+  },
+  {
+   "paginas": "CE2 22-28",
+   "tema": "bibliographic references (sample only; not used as a source of claims)"
+  },
+  {
+   "paginas": "BAAS notebooks",
+   "tema": "the full code is in the book's GitHub notebooks, not in the PDF; only the printed excerpts were read"
+  }
+ ]
+}

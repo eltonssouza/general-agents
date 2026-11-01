@@ -1,0 +1,315 @@
+{
+  "_meta": {
+    "convencao_de_pagina": "Pages = PDF numbering (1-148 for DOCKHB; 1-2 for K8SB). The Docker Handbook PDF has no printed page number; there is no conversion map.",
+    "fontes": {
+      "DOCKHB": "The Docker Handbook - Learn Docker for Beginners (Farhan Hasin Chowdhury, freeCodeCamp, 1 Feb 2021, 148 pp.)",
+      "K8SB": "Learn Kubernetes Basics (kubernetes.io, tutorial index page, 2 pp.; last modification cited: 14 Jan 2026)",
+      "12FACTOR": "UNUSABLE: the Twelve-Factor-App.pdf file contains 12 'Page not found' pages. It is not a source."
+    }
+  },
+  "topics": {
+    "containerizacao-conceito": {
+      "name": "Containerization concept and the problem it solves",
+      "citation": "DOCKHB p.7-9",
+      "keywords": ["containerizacao", "containerization", "portabilidade", "portability", "funciona na minha maquina", "works on my machine", "dependencias", "dependencies", "node-gyp", "isolamento", "isolation"],
+      "summary": "Package the code with all its dependencies to run uniformly on any infrastructure; the book motivates it with native build dependencies and differences between operating systems.",
+      "rules": [
+        "The idea: develop and run in an isolated environment (container) identical to the deployment one, package app + dependencies + configuration into a single file (image) and distribute it through a central server (registry) (DOCKHB p.9).",
+        "Author's motivation: the real dependency list includes a C/C++ and Python toolchain (node-gyp), which is hard on Windows/Mac and inconsistent across operating systems (DOCKHB p.7-8).",
+        "Docker is one implementation among others; Podman (Red Hat) is mentioned; Kaniko and rkt are mentioned as not yet direct replacements (DOCKHB p.10)."
+      ],
+      "not_in_book": ["Kernel namespaces/cgroups details.", "Runtime comparison (containerd, CRI-O, runc)."]
+    },
+    "container-vs-vm": {
+      "name": "Container vs virtual machine",
+      "citation": "DOCKHB p.19-23",
+      "keywords": ["vm", "maquina virtual", "virtual machine", "hypervisor", "kernel", "leve", "lightweight", "uname", "wsl2", "hyperkit"],
+      "summary": "A container virtualizes the host OS (via the container runtime) instead of having a guest OS; that is why it is lighter than a VM.",
+      "rules": [
+        "VM: hypervisor + full guest OS, long communication chain and overhead (DOCKHB p.19-21).",
+        "Container: uses the host OS through the container runtime, keeping isolation (DOCKHB p.21-22).",
+        "The book's practical proof: uname -a on the host and inside an alpine container show the same kernel (DOCKHB p.22).",
+        "On Windows containers use the WSL2 kernel; on macOS the default back-end is a VM on top of HyperKit (DOCKHB p.22-23) [DATED]."
+      ],
+      "not_in_book": ["Security isolation limits between containers and VMs.", "Native Windows containers."],
+      "datado": ["HyperKit on macOS is the 2021 description; current Docker Desktop uses other back-ends."]
+    },
+    "imagens-camadas-registry": {
+      "name": "Image, container, registry and Docker architecture",
+      "citation": "DOCKHB p.23-28",
+      "keywords": ["imagem", "image", "registry", "docker hub", "quay", "oci", "daemon", "dockerd", "cliente", "client", "rest api", "pull"],
+      "summary": "Image = read-only multilayer template; container = running image with a temporary writable layer; a registry stores and distributes images.",
+      "rules": [
+        "Images are multilayer, self-contained, read-only files; the OCI standard allows an image built with Docker to be used with another runtime such as Podman (DOCKHB p.23).",
+        "Running a container creates a temporary writable layer on top of the read-only layers (DOCKHB p.23).",
+        "Docker Hub is the default public registry; Quay (Red Hat) is another; you can have your own registry and there is a local cache (DOCKHB p.23-25).",
+        "Architecture: dockerd daemon, docker client and a REST API between them (DOCKHB p.25-26).",
+        "docker run: if the image is not local, the daemon pulls it from Docker Hub; afterwards it stays in the local cache (DOCKHB p.27-28)."
+      ],
+      "not_in_book": ["Internal format of manifests/digests.", "Retention policies in registries."]
+    },
+    "instalacao": {
+      "name": "Docker installation",
+      "citation": "DOCKHB p.10-16",
+      "keywords": ["instalar", "install", "docker desktop", "wsl2", "linux", "compose", "versao", "version"],
+      "summary": "Docker Desktop on Mac/Windows (WSL2 on Windows); on Linux, Engine and Compose are installed separately.",
+      "rules": [
+        "Windows: install WSL2, then Docker Desktop (DOCKHB p.12-13).",
+        "Docker Desktop bundles Engine, Compose, Dashboard and Kubernetes; on Linux there is no bundle (DOCKHB p.14).",
+        "Verification: docker --version and docker-compose --version (DOCKHB p.12, 13, 15).",
+        "The author uses only the command line, no GUI (DOCKHB p.16)."
+      ],
+      "not_in_book": ["Current installation steps (check the current documentation)."],
+      "datado": ["2021 instructions: docker-compose as a separate binary, Ubuntu 20.10/Fedora 33, 'stable' channel. Today Compose is a plugin (docker compose); Docker Desktop licensing has changed."]
+    },
+    "ciclo-de-vida-container": {
+      "name": "Container lifecycle and commands",
+      "citation": "DOCKHB p.29-44",
+      "keywords": ["run", "create", "start", "stop", "kill", "restart", "rm", "prune", "rename", "ls", "ps", "--rm", "sigterm", "sigkill", "ciclo de vida", "lifecycle"],
+      "summary": "docker <object> <command> <options>; run = create + start; stop (SIGTERM then SIGKILL) vs kill; start vs restart; rm/prune; --rm.",
+      "rules": [
+        "Syntax restructured since version 1.13: docker <object> <command> <options> (DOCKHB p.29).",
+        "container stop sends SIGTERM and, if it does not stop within a certain time, SIGKILL; container kill sends SIGKILL directly (DOCKHB p.37).",
+        "start starts a stopped/dead container, detached by default and keeping ports; restart tries to stop and start (DOCKHB p.37-39).",
+        "container run = container create + container start (DOCKHB p.40).",
+        "Stopped containers remain on the system; container rm removes; container prune removes all stopped ones (DOCKHB p.41-42).",
+        "--rm removes the container as soon as it stops; the author uses it in most examples (DOCKHB p.43-44).",
+        "container ls shows only running ones; --all includes those that already ran; the ID appears as 12 characters out of 64 (DOCKHB p.33-34).",
+        "--name sets a name; container rename works on a running or stopped container (DOCKHB p.34-36)."
+      ],
+      "not_in_book": ["docker system prune, docker stats, docker top.", "Restart policies (--restart)."]
+    },
+    "portas-detached-interativo": {
+      "name": "Publishing a port, detached mode, interactive mode and exec",
+      "citation": "DOCKHB p.30-32, 44-48, 125-126",
+      "keywords": ["publish", "-p", "porta", "port", "detach", "-d", "-it", "interactive", "interativo", "tty", "exec", "entrypoint", "shell"],
+      "summary": "Containers are isolated: you must publish host:container ports; -d runs in the background; -it for interactive images; exec runs a command in an active container.",
+      "rules": [
+        "--publish <host port>:<container port>: requests to the host port are forwarded to the container port (DOCKHB p.30-31).",
+        "By default the container runs in the foreground; --detach/-d keeps it in the background and prints the ID (DOCKHB p.32).",
+        "In docker run the image must come last; whatever comes after it is an argument to the entry-point (DOCKHB p.32).",
+        "-it = -i (input) + -t (pseudo-tty); without -it an 'ubuntu' image shows nothing useful (DOCKHB p.45-46).",
+        "For a command in a NOT running container: docker container run <image> <command>; in a running one: docker container exec <container> <command>, with -it if interactive (DOCKHB p.48, 125-126)."
+      ],
+      "not_in_book": ["Publishing on a specific IP (127.0.0.1:8080:80), UDP, -P.", "docker attach."]
+    },
+    "bind-mounts-volumes": {
+      "name": "Bind mounts, anonymous volumes and named volumes",
+      "citation": "DOCKHB p.50-52, 92-96, 113-115",
+      "keywords": ["volume", "bind mount", "anonymous volume", "named volume", "-v", "--volume", "persistencia", "persistence", "node_modules", "hot reload"],
+      "summary": "A bind mount links a host directory to a container directory in both directions; an anonymous volume protects a directory (e.g. node_modules); a named volume persists database data.",
+      "rules": [
+        "Bind mount: bidirectional link between a local directory (absolute path) and a directory in the container; -v/--volume option with up to three fields, the third optional (DOCKHB p.51).",
+        "In dev, a bind mount of the source code triggers hot reload; but it covers the node_modules installed in the image and breaks the app (vite: not found) (DOCKHB p.92-95).",
+        "The book's solution: an anonymous volume for node_modules (-v /home/node/app/node_modules), managed by the daemon (DOCKHB p.95-96).",
+        "Databases (PostgreSQL) write to /var/lib/postgresql/data; without a volume, data is lost if the container is destroyed; use a named volume (volume create/ls) (DOCKHB p.113-115).",
+        "The author prefers a named volume over a bind mount for database data (DOCKHB p.115).",
+        ".dockerignore has no effect on bind mounts (DOCKHB p.102)."
+      ],
+      "not_in_book": ["Volume backup/restore, volume drivers, UID/GID permissions on bind mounts, --mount, tmpfs.", "volume prune."]
+    },
+    "dockerfile-basico": {
+      "name": "Dockerfile: instructions and build",
+      "citation": "DOCKHB p.53-71, 80-83",
+      "keywords": ["dockerfile", "from", "run", "cmd", "entrypoint", "expose", "copy", "add", "arg", "workdir", "env", "user", "build", "context", "tag"],
+      "summary": "Dockerfile = instructions; each instruction creates a layer; docker image build <context>; tag repo:tag; FROM, EXPOSE, RUN, CMD, COPY, ADD, ARG, WORKDIR, USER, ENV, ENTRYPOINT appear in examples.",
+      "rules": [
+        "Every valid Dockerfile starts with FROM (DOCKHB p.55).",
+        "EXPOSE is documentation: --publish is still needed (DOCKHB p.55).",
+        "RUN and CMD can be shell form or exec form; the book uses exec form in CMD (DOCKHB p.55-56).",
+        "Running NGINX as a single process (daemon off) is considered good practice in containers (DOCKHB p.56).",
+        "Build: docker image build <context>; context = directory accessible to the daemon; the Dockerfile is looked up in it (DOCKHB p.56-57). --file for another name (DOCKHB p.91).",
+        "COPY <source> <destination>; ADD also downloads from a URL but does not extract; ARG declares variables used as ${name} (DOCKHB p.66, 68-69).",
+        "WORKDIR affects the following COPY, ADD, RUN and CMD; the default is the root (DOCKHB p.89).",
+        "ENTRYPOINT turns the image into an executable: docker run arguments go to the program (DOCKHB p.48, 52, 82).",
+        "Copy package.json and run npm install before copying the rest of the code (DOCKHB p.88-90) [inference by the package author: this favors layer caching; the book does not state the reason]."
+      ],
+      "not_in_book": ["HEALTHCHECK, LABEL, VOLUME, SHELL, ONBUILD, STOPSIGNAL.", "A rule to prefer COPY over ADD.", "Ordering layers to maximize cache as an explicit rule."]
+    },
+    "tags-e-latest": {
+      "name": "Image tags and the latest tag",
+      "citation": "DOCKHB p.27-28, 58-61, 83-86",
+      "keywords": ["tag", "latest", "versao", "version", "repository", "image tag", "docker image tag"],
+      "summary": "The tag identifies a build/version; with no tag it becomes latest, which does not guarantee it is the latest version.",
+      "rules": [
+        "Syntax --tag <repository>:<tag> (DOCKHB p.58-59); image tag to re-tag later (DOCKHB p.60).",
+        "Without a tag, the image gets latest; this does not mean the most recent version, and Docker does not check (DOCKHB p.86).",
+        "The name (repository) does not change after upload; the tag can change (DOCKHB p.85).",
+        "Tag examples: mysql:5.7, node:lts, node:lts-alpine (DOCKHB p.59, 86).",
+        "[extrapolation] Pinning the version in FROM is a recommended practice; the book's examples use ubuntu:latest/alpine:latest (DOCKHB p.55, 77), which p.86 itself implicitly discourages."
+      ],
+      "not_in_book": ["Digest pinning (@sha256).", "Tagging strategy in CI (semver, commit sha)."]
+    },
+    "otimizacao-de-imagens": {
+      "name": "Image optimization: layers, cleanup and Alpine",
+      "citation": "DOCKHB p.62-64, 72-80",
+      "keywords": ["otimizar", "optimize", "optimization", "otimizacao", "tamanho", "size", "camada", "layer", "alpine", "apk", "apt-get", "clean", "single layer", "build deps"],
+      "summary": "Remove build packages in the same RUN instruction that installs them; switching the base to Alpine drastically reduces size in the book's experiment.",
+      "rules": [
+        "image history lists the layers; each instruction records changes; there is one writable layer per container (DOCKHB p.62-63).",
+        "The union file system avoids duplicating data and allows earlier layers to be used as build cache (DOCKHB p.63-64).",
+        "Packages installed and removed in separate RUNs still add to the final size; do install+compile+remove in a single layer (DOCKHB p.75).",
+        "Clean the package cache in the same RUN: apt-get clean && rm -rf /var/lib/apt/lists/* (DOCKHB p.55-56, 74).",
+        "Result measured by the author: 343MB -> 81.6MB (optimized ubuntu) -> 12.8MB (alpine); official nginx:stable image 133MB (DOCKHB p.72, 76-77, 80).",
+        "Alpine (musl libc + busybox) is light (ubuntu ~28MB vs alpine 2.8MB, at the time) and is described by the author as secure and suited to containers; apk add --no-cache and --virtual .build-deps + apk del (DOCKHB p.77-78).",
+        "Package names change between distributions (DOCKHB p.79)."
+      ],
+      "not_in_book": ["distroless/scratch, slim.", "musl vs glibc compatibility risks.", "docker build --squash, BuildKit cache mounts."],
+      "datado": ["Sizes and versions (ubuntu 28MB, nginx 1.19.2, libssl1.1, python2 in apk) are from 2021."]
+    },
+    "multi-stage": {
+      "name": "Multi-stage builds",
+      "citation": "DOCKHB p.96-101, 118-119",
+      "keywords": ["multi-stage", "multistage", "builder", "as builder", "copy --from", "producao", "production", "build estatico", "static build", "nginx"],
+      "summary": "Build in one stage with the toolchain and copy only the artifacts to a lean final image.",
+      "rules": [
+        "In production the app becomes static files (npm run build) and only needs a server such as nginx; the node image is large and unnecessary (DOCKHB p.96-97).",
+        "Pattern: FROM node:lts-alpine as builder ... ; FROM nginx:stable-alpine ; COPY --from=builder /app/dist /usr/share/nginx/html (DOCKHB p.97-98).",
+        "In the example API, stage 1 installs python/make/g++ for node-gyp and npm install --only=prod; stage 2 copies node_modules and sets NODE_ENV=production and USER node (DOCKHB p.118-119).",
+        "The final image contains only what is needed and discards the rest (DOCKHB p.97, 101)."
+      ],
+      "not_in_book": ["--target to stop at a stage.", "Cache between stages in CI."]
+    },
+    "usuario-nao-root": {
+      "name": "Non-root USER and environment ENV",
+      "citation": "DOCKHB p.88-89, 119",
+      "keywords": ["user", "root", "non-root", "seguranca", "security", "node", "env", "node_env"],
+      "summary": "The book runs the app as the node user instead of root and mentions Docker/Node good practices, without going deep into security.",
+      "rules": [
+        "By default Docker runs containers as root; the author notes this can be a risk and recommends a non-root user when possible (DOCKHB p.89).",
+        "The node image already ships the node user; USER node sets it as the default (DOCKHB p.89).",
+        "NODE_ENV=production is important for the example API (DOCKHB p.119)."
+      ],
+      "not_in_book": ["Hardening (cap-drop, read-only, seccomp, AppArmor), vulnerability scanning, image signing, secrets management."]
+    },
+    "dockerignore": {
+      "name": ".dockerignore",
+      "citation": "DOCKHB p.101-102",
+      "keywords": ["dockerignore", "ignorar", "ignore", "context", "node_modules", ".git"],
+      "summary": "List of files excluded from the build; analogous to .gitignore.",
+      "rules": [
+        "The file must be in the build context; listed entries are ignored by COPY (DOCKHB p.101-102).",
+        "Book example: .git, *Dockerfile*, *docker-compose*, node_modules (DOCKHB p.101-102).",
+        "It does not affect bind mounts (DOCKHB p.102)."
+      ],
+      "not_in_book": ["Excluding .env/secrets from the context as a security practice (it is [extrapolation])."]
+    },
+    "redes": {
+      "name": "Docker networks: default bridge vs user-defined",
+      "citation": "DOCKHB p.102-111",
+      "keywords": ["rede", "network", "bridge", "dns", "host", "none", "overlay", "macvlan", "connect", "disconnect", "ip", "127.0.0.1", "localhost"],
+      "summary": "For two containers to talk, use a user-defined bridge; on it automatic DNS resolves container names.",
+      "rules": [
+        "Inside a container, 127.0.0.1 is the container itself: it does not reach the database in another container (DOCKHB p.103).",
+        "Using the container IP (container inspect) is not recommended: the IP may change when the container is recreated (DOCKHB p.103-104).",
+        "The book's answer: put the containers on a user-defined bridge network (DOCKHB p.104).",
+        "Drivers listed: bridge (default), host, none, overlay, macvlan; only bridge is used in the book (DOCKHB p.104-105).",
+        "User-defined bridge: automatic DNS by name, better isolation, connect/disconnect on the fly; the default bridge only allows IP (DOCKHB p.106-107).",
+        "Automatic DNS requires user-defined names (--name); random names do not work (DOCKHB p.110).",
+        "Commands: network create/ls/connect/disconnect/rm/prune; --network in run/create (DOCKHB p.107-111)."
+      ],
+      "not_in_book": ["Internal networks, aliases, IPAM, custom DNS.", "Overlay/macvlan details.", "Networks in Compose beyond the example (p.141-144)."]
+    },
+    "app-multicontainer-manual": {
+      "name": "Multi-container app without Compose (notes-api + PostgreSQL)",
+      "citation": "DOCKHB p.111-128",
+      "keywords": ["notes-api", "postgres", "multi-container", "env", "environment", "logs", "exec", "migrate", "makefile", "scripts"],
+      "summary": "Network + named volume + database container + API image, with environment variables and shell scripts/Makefile to manage everything.",
+      "rules": [
+        "postgres requires POSTGRES_PASSWORD; POSTGRES_DB names the database; --env passes variables (DOCKHB p.112).",
+        "The API receives DB_HOST (the database container's name), DB_DATABASE and DB_PASSWORD (DOCKHB p.123-124).",
+        "container logs <name>, with -f/--follow to follow (DOCKHB p.115-117).",
+        "container exec to run migrations on the running API (DOCKHB p.125-126).",
+        "Management through boot.sh/build.sh/destroy.sh/stop.sh + Makefile (DOCKHB p.127-128).",
+        "[inference] The password 'secret' in --env is from the didactic example; the book does not discuss secrets management."
+      ],
+      "not_in_book": ["Docker secrets, .env files, vaults.", "Waiting for database readiness before the API."]
+    },
+    "compose-basico": {
+      "name": "Docker Compose: file and services",
+      "citation": "DOCKHB p.129-135",
+      "keywords": ["compose", "docker-compose", "yaml", "services", "build", "image", "container_name", "environment", "volumes", "ports", "version"],
+      "summary": "Compose defines the multi-container app in YAML; each container is a service. The book uses file version 3.8 and the docker-compose binary.",
+      "rules": [
+        "Compose is aimed at development and testing; using it in production is 'not recommended at all' according to the book (DOCKHB p.129).",
+        "Each container is a service; docker-compose.yaml file with version \"3.8\", services, volumes (DOCKHB p.130-132).",
+        "Each service needs a ready image (image) or build (context + dockerfile) (DOCKHB p.132-134).",
+        "container_name overrides the default <directory>_<service>; image has the same default; a named volume without name uses <directory>_<key> (DOCKHB p.133-135).",
+        "A service references another by service name (DB_HOST: db) (DOCKHB p.134); [observation] the text on p.134 says db will be replaced by the IP of the 'api' service, but the example shows it refers to the db service: an author slip.",
+        "Top-level volumes define the named volumes used by the services (DOCKHB p.132, 135)."
+      ],
+      "not_in_book": ["depends_on, healthcheck, profiles, extends, env_file, secrets, deploy/resources, override files, Compose Specification."],
+      "datado": ["docker-compose (v1, Python) is discontinued; today it is 'docker compose' (v2 plugin). The 'version' field is obsolete in the current Compose Specification. The book's 3.8 is not the 'latest version' today."]
+    },
+    "compose-comandos": {
+      "name": "Compose commands",
+      "citation": "DOCKHB p.135-140",
+      "keywords": ["up", "down", "start", "stop", "ps", "exec", "logs", "build", "--detach", "--volumes", "-f", "--file"],
+      "summary": "up/start/stop/down/ps/exec/logs, run in the directory of the YAML file.",
+      "rules": [
+        "Every docker-compose command must be run in the folder of docker-compose.yaml (DOCKHB p.135).",
+        "up builds missing images, creates and starts containers; --detach/-d; --file/-f only if the name differs; --build forces a rebuild (DOCKHB p.135-137).",
+        "start only starts existing containers, it does not create them (DOCKHB p.137).",
+        "ps lists only the containers of the YAML (DOCKHB p.137).",
+        "exec <service> <command> does not need -it (DOCKHB p.138).",
+        "logs <service>, -f to follow; leaving the log does not stop the container (DOCKHB p.138-139).",
+        "down stops and removes containers and networks; --volumes removes named volumes; stop stops and keeps the containers (DOCKHB p.139-140)."
+      ],
+      "not_in_book": ["docker compose logs of all services with timestamps, restart, pull, config, run, scale."],
+      "datado": ["docker-compose <cmd> syntax (with hyphen)."]
+    },
+    "compose-fullstack-nginx": {
+      "name": "Full-stack with Compose: nginx as router and isolated networks",
+      "citation": "DOCKHB p.140-147",
+      "keywords": ["fullstack", "nginx", "router", "frontend", "backend", "networks", "restart", "unless-stopped", "client"],
+      "summary": "Four services (db, api, client, nginx) on two bridge networks; nginx receives everything and routes /api to the backend.",
+      "rules": [
+        "All requests reach nginx (router): if the endpoint has /api it goes to the backend; otherwise, to the frontend (DOCKHB p.141).",
+        "Reason: the frontend runs in the browser (served from the container), so the Compose network does not work for it to find the API; nginx, inside the container, reaches all services (DOCKHB p.141).",
+        "By default Compose creates one bridge and attaches everything; the author defined two networks (frontend and backend) for isolation; nginx sits on both (DOCKHB p.143-144).",
+        "restart: unless-stopped appears in the nginx service (DOCKHB p.143).",
+        "The nginx configuration is outside the book's scope (DOCKHB p.142)."
+      ],
+      "not_in_book": ["TLS, load balancing, nginx health checks, detailed production configuration."]
+    },
+    "publicar-imagens": {
+      "name": "Publishing images to a registry (Docker Hub)",
+      "citation": "DOCKHB p.83-87",
+      "keywords": ["push", "login", "docker hub", "publicar", "publish", "registry", "credential", "conta", "account"],
+      "summary": "Login, tag <user>/<image>:<tag> and docker image push.",
+      "rules": [
+        "Free Docker Hub account: unlimited public repositories and one private (DOCKHB p.83) [DATED].",
+        "docker login asks for user and password and warns that the password is stored unencrypted, suggesting a credential helper (DOCKHB p.83-84).",
+        "To publish, tag in the format <user>/<image>:<tag> and docker image push (DOCKHB p.84-86)."
+      ],
+      "not_in_book": ["Access tokens, authenticated private registries, signing, automatic scanning, CI."],
+      "datado": ["Free-account limits and the pull rate limit policy have changed since 2021."]
+    },
+    "kubernetes-k8sb": {
+      "name": "Kubernetes (only what K8SB and DOCKHB say)",
+      "citation": "K8SB p.1-2; DOCKHB p.14",
+      "keywords": ["kubernetes", "k8s", "orquestracao", "orchestration", "cluster", "minikube", "deploy", "scale", "update", "debug", "pod", "kubectl", "ingress"],
+      "summary": "K8SB is just the index page of the 'Learn Kubernetes Basics' tutorial: objectives and six modules. It does not teach objects or commands.",
+      "rules": [
+        "Tutorial objectives: deploy a containerized application on a cluster, scale the deployment, update it with a new software version and debug (K8SB p.1).",
+        "Kubernetes is described as a production-ready open source platform, based on Google's experience in container orchestration (K8SB p.1).",
+        "It helps ensure that containerized applications run where and when you want and find the resources they need (K8SB p.1).",
+        "Modules: 1 Create a cluster, 2 Deploy an app, 3 Explore the app, 4 Expose it publicly, 5 Scale, 6 Update (K8SB p.2).",
+        "It points to the 'Learning environment' page and the 'Using Minikube to Create a Cluster' tutorial (K8SB p.2).",
+        "The Docker Handbook mentions Kubernetes only as part of Docker Desktop (DOCKHB p.14)."
+      ],
+      "not_in_book": ["Pod, Deployment, Service, Node, namespace, kubectl, manifest YAML, Ingress, ConfigMap/Secret, probes, rolling update (module 6 is only listed), HPA, persistent volumes, Helm.", "Any kubectl command (all use is [extrapolation])."]
+    },
+    "twelve-factor": {
+      "name": "Twelve-Factor App (source unavailable)",
+      "citation": "none (no usable page)",
+      "keywords": ["twelve-factor", "12-factor", "12factor", "config", "stateless", "logs", "processos", "processes"],
+      "summary": "The Twelve-Factor-App.pdf in this folder has 12 'Page not found' pages. No content: the agent does not cite Twelve-Factor as a source.",
+      "rules": [
+        "Any statement about 12-factor is [extrapolation] and must be flagged; re-obtain the source (12factor.net) and regenerate the package to promote items to [from source].",
+        "Docker Handbook points that merely resemble 12-factor, without citing it: configuration through environment variables (DOCKHB p.112, 123-124), a single foreground process (DOCKHB p.56) and logs via container logs (DOCKHB p.115-117). They are not from Twelve-Factor."
+      ],
+      "not_in_book": ["The 12 factors, their names and rationale."]
+    }
+  }
+}

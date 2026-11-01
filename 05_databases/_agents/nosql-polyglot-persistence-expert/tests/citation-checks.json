@@ -1,0 +1,1732 @@
+{
+ "source_note": "Text extracted per page with '=== PAGE N ===' markers (N = PDF page). See verify_citations.py.",
+ "positive": [
+  {
+   "id": "P01",
+   "src": "STRAUCH",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "1998",
+    "2009",
+    "eric evans"
+   ],
+   "claim": "NoSQL term: 1998, revived in 2009; Evans popularized it"
+  },
+  {
+   "id": "P02",
+   "src": "STRAUCH",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "graph databases",
+    "left out"
+   ],
+   "claim": "graph databases are out of the paper's scope"
+  },
+  {
+   "id": "P03",
+   "src": "STRAUCH",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "adobe",
+    "connectnow",
+    "three copies"
+   ],
+   "claim": "example motive: in-memory session replicas (Adobe ConnectNow)"
+  },
+  {
+   "id": "P04",
+   "src": "STRAUCH",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "hypertable",
+    "zvent",
+    "one billion",
+    "20 petabyte"
+   ],
+   "claim": "high-throughput examples (Hypertable/Zvents, Google 20 PB/day)"
+  },
+  {
+   "id": "P05",
+   "src": "STRAUCH",
+   "pages": [
+    11,
+    12
+   ],
+   "terms": [
+    "fallacies",
+    "network is reliable",
+    "latency is zero",
+    "network is homogeneous"
+   ],
+   "claim": "eight fallacies of distributed computing"
+  },
+  {
+   "id": "P06",
+   "src": "STRAUCH",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "82 times faster"
+   ],
+   "claim": "H-Store 82 times faster than a commercial DBMS (TPC-C)"
+  },
+  {
+   "id": "P07",
+   "src": "STRAUCH",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "two-phase-commit",
+    "round trips"
+   ],
+   "claim": "Stonebraker: avoid 2PC because of round trips"
+  },
+  {
+   "id": "P08",
+   "src": "STRAUCH",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "polyglot persistence",
+    "coin the term",
+    "lesssql"
+   ],
+   "claim": "Scofield suggested polyglot persistence, without having coined the term"
+  },
+  {
+   "id": "P09",
+   "src": "STRAUCH",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "towards robust distributed systems",
+    "podc",
+    "2000"
+   ],
+   "claim": "Brewer, PODC 2000 keynote"
+  },
+  {
+   "id": "P10",
+   "src": "STRAUCH",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "at most choose two of these three"
+   ],
+   "claim": "at most two of the three properties"
+  },
+  {
+   "id": "P11",
+   "src": "STRAUCH",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "bigtable",
+    "consistent and available",
+    "dynamo",
+    "available and partition-tolerant"
+   ],
+   "claim": "Dynamo A+P; Bigtable C+A"
+  },
+  {
+   "id": "P12",
+   "src": "STRAUCH",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "forfeit partitions",
+    "2-phase-commit",
+    "ldap",
+    "xfs",
+    "coda",
+    "dns"
+   ],
+   "claim": "Brewer's table 3.1"
+  },
+  {
+   "id": "P13",
+   "src": "STRAUCH",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "wide-area databases",
+    "have both",
+    "graceful degradation"
+   ],
+   "claim": "Brewer: long-distance databases; BASE gives up C and isolation"
+  },
+  {
+   "id": "P14",
+   "src": "STRAUCH",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "basically available",
+    "soft-state",
+    "eventual consistency"
+   ],
+   "claim": "the letters of BASE"
+  },
+  {
+   "id": "P15",
+   "src": "STRAUCH",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "strict consistency",
+    "eventual consistency",
+    "two-phase-commit",
+    "paxos"
+   ],
+   "claim": "strict consistency requires a single node or a distributed transaction protocol"
+  },
+  {
+   "id": "P16",
+   "src": "STRAUCH",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "read your own writes",
+    "session consistency",
+    "monotonic read",
+    "casual consistency"
+   ],
+   "claim": "additional guarantees of eventual consistency"
+  },
+  {
+   "id": "P17",
+   "src": "STRAUCH",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "timestamps",
+    "optimistic locking",
+    "vector clocks",
+    "multiversion storage"
+   ],
+   "claim": "versioning options"
+  },
+  {
+   "id": "P18",
+   "src": "STRAUCH",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "vi = max(vi, vmessage)",
+    "concurrent updates"
+   ],
+   "claim": "vector clock merge rule and conflict"
+  },
+  {
+   "id": "P19",
+   "src": "STRAUCH",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "no dependence on synchronized clocks",
+    "o(log n) rounds"
+   ],
+   "claim": "advantages of vector clocks; gossip in O(log n) rounds"
+  },
+  {
+   "id": "P20",
+   "src": "STRAUCH",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "hash(o) mod n",
+    "karger",
+    "1997",
+    "chord",
+    "no metadata server"
+   ],
+   "claim": "hash mod n and consistent hashing (Karger 1997)"
+  },
+  {
+   "id": "P21",
+   "src": "STRAUCH",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "standard deviation",
+    "500 virtual nodes",
+    "replication factor (r)"
+   ],
+   "claim": "White's simulation and replication factor"
+  },
+  {
+   "id": "P22",
+   "src": "STRAUCH",
+   "pages": [
+    45,
+    46
+   ],
+   "terms": [
+    "r + w > n",
+    "read-your-own-writes"
+   ],
+   "claim": "R + W > N for read-your-own-writes"
+  },
+  {
+   "id": "P23",
+   "src": "STRAUCH",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "unspecified",
+    "re-issuing"
+   ],
+   "claim": "a failed write leaves an unspecified state; reissue"
+  },
+  {
+   "id": "P24",
+   "src": "STRAUCH",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "log structured merge trees",
+    "memtables",
+    "sstables",
+    "bloom filters"
+   ],
+   "claim": "LSM-tree with memtables, SSTables and Bloom filters"
+  },
+  {
+   "id": "P25",
+   "src": "STRAUCH",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "companion sql-database",
+    "scatter/gather",
+    "distributed b+trees"
+   ],
+   "claim": "query models in NoSQL"
+  },
+  {
+   "id": "P26",
+   "src": "STRAUCH",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "md5",
+    "consistent hashing",
+    "virtual nodes"
+   ],
+   "claim": "Dynamo: key with MD5, consistent hashing and vnodes"
+  },
+  {
+   "id": "P27",
+   "src": "STRAUCH",
+   "pages": [
+    61,
+    62
+   ],
+   "terms": [
+    "r + w > n",
+    "n = 3, r = 2, w = 2"
+   ],
+   "claim": "Dynamo: quorum-like and typical configuration N=3,R=2,W=2"
+  },
+  {
+   "id": "P28",
+   "src": "STRAUCH",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "strict quorum",
+    "sloopy",
+    "hinted hando"
+   ],
+   "claim": "Dynamo: sloppy quorum (spelled sloopy in the text) and hinted handoff"
+  },
+  {
+   "id": "P29",
+   "src": "STRAUCH",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "merkle",
+    "read-repair"
+   ],
+   "claim": "Dynamo: Merkle anti-entropy and read-repair"
+  },
+  {
+   "id": "P30",
+   "src": "STRAUCH",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "lotus notes",
+    "damien katz",
+    "erlang"
+   ],
+   "claim": "CouchDB: origin in Lotus Notes, Katz, Erlang"
+  },
+  {
+   "id": "P31",
+   "src": "STRAUCH",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "128 bit",
+    "32 bit"
+   ],
+   "claim": "CouchDB: 128-bit id and 32-bit revision"
+  },
+  {
+   "id": "P32",
+   "src": "STRAUCH",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "http get",
+    "http put",
+    "http delete",
+    "revision number"
+   ],
+   "claim": "CouchDB: HTTP verbs and revision number"
+  },
+  {
+   "id": "P33",
+   "src": "STRAUCH",
+   "pages": [
+    99
+   ],
+   "terms": [
+    "capped collection",
+    "replset",
+    "rs.initiate"
+   ],
+   "claim": "replica set: operations in a capped collection; --replSet"
+  },
+  {
+   "id": "P34",
+   "src": "STRAUCH",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "seven servers",
+    "arbiter",
+    "heartbeats"
+   ],
+   "claim": "replica set: up to seven servers, arbiter and heartbeats"
+  },
+  {
+   "id": "P35",
+   "src": "STRAUCH",
+   "pages": [
+    101,
+    102
+   ],
+   "terms": [
+    "mongos",
+    "config servers",
+    "chunks",
+    "at least two shards"
+   ],
+   "claim": "2010 sharding components"
+  },
+  {
+   "id": "P36",
+   "src": "STRAUCH",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "minkey",
+    "maxkey",
+    "compound sharding keys"
+   ],
+   "claim": "chunks identified by (collection, minkey, maxkey); compound keys"
+  },
+  {
+   "id": "P37",
+   "src": "STRAUCH",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "multi-master",
+    "shard keys cannot be altered"
+   ],
+   "claim": "MongoDB 1.6 offers no multi-master; shard key cannot be changed"
+  },
+  {
+   "id": "P38",
+   "src": "STRAUCH",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "4mb",
+    "gridfs"
+   ],
+   "claim": "BSON limited to 4 MB in 1.6; GridFS"
+  },
+  {
+   "id": "P39",
+   "src": "STRAUCH",
+   "pages": [
+    119
+   ],
+   "terms": [
+    "supercolumns",
+    "(row-key, column-key, timestamp)"
+   ],
+   "claim": "Cassandra: data model"
+  },
+  {
+   "id": "P40",
+   "src": "STRAUCH",
+   "pages": [
+    120
+   ],
+   "terms": [
+    "moves nodes on the consistent hash ring",
+    "preserves the order"
+   ],
+   "claim": "Cassandra moves nodes on the ring and preserves order"
+  },
+  {
+   "id": "P41",
+   "src": "STRAUCH",
+   "pages": [
+    121
+   ],
+   "terms": [
+    "scuttlebutt",
+    "accrual failure detector",
+    "zookeeper"
+   ],
+   "claim": "Cassandra: Scuttlebutt, phi accrual detector and ZooKeeper"
+  },
+  {
+   "id": "P42",
+   "src": "STRAUCH",
+   "pages": [
+    122
+   ],
+   "terms": [
+    "commit log",
+    "immutable",
+    "bloom filter"
+   ],
+   "claim": "Cassandra: commit log, immutable file, Bloom filter"
+  },
+  {
+   "id": "P43",
+   "src": "STRAUCH",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "128mb",
+    "128 row-keys",
+    "15 seconds"
+   ],
+   "claim": "Cassandra: 128 MB commit log; blocks of 128 keys; 15 s"
+  },
+  {
+   "id": "P44",
+   "src": "STRAUCH",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "100.000 operations per second",
+    "redis"
+   ],
+   "claim": "Ellis: Redis above 100,000 ops/s"
+  },
+  {
+   "id": "P45",
+   "src": "STRAUCH",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "features-first",
+    "scale-first",
+    "purpose-optimized"
+   ],
+   "claim": "Hamilton's classification"
+  },
+  {
+   "id": "P46",
+   "src": "STRAUCH",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "central master server",
+    "tablet servers"
+   ],
+   "claim": "Bigtable: central master and tablet servers"
+  },
+  {
+   "id": "P47",
+   "src": "STRAUCH",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "$atomic"
+   ],
+   "claim": "MongoDB 2010: atomicity with $atomic"
+  },
+  {
+   "id": "P48",
+   "src": "STRAUCH",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "capped collections",
+    "fifo"
+   ],
+   "claim": "capped collections"
+  },
+  {
+   "id": "P49",
+   "src": "STRAUCH",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "redis in particular does not offer fault-tolerance"
+   ],
+   "claim": "Redis without fault tolerance (Strauch's note)"
+  },
+  {
+   "id": "P50",
+   "src": "REDIS",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "five different data structures"
+   ],
+   "claim": "five data structures"
+  },
+  {
+   "id": "P51",
+   "src": "REDIS",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "60 seconds if 1000 or more keys",
+    "append-only file"
+   ],
+   "claim": "snapshot by default and append mode"
+  },
+  {
+   "id": "P52",
+   "src": "REDIS",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "virtual memory",
+    "deprecated"
+   ],
+   "claim": "virtual memory deprecated"
+  },
+  {
+   "id": "P53",
+   "src": "REDIS",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "tens of thousands",
+    "hundreds of thousands of operations per second"
+   ],
+   "claim": "performance order of magnitude"
+  },
+  {
+   "id": "P54",
+   "src": "REDIS",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "setbit",
+    "128 million users",
+    "16mb"
+   ],
+   "claim": "bitmaps with setbit/getbit"
+  },
+  {
+   "id": "P55",
+   "src": "REDIS",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "ltrim",
+    "o(n)"
+   ],
+   "claim": "ltrim and O(N) on the removed elements"
+  },
+  {
+   "id": "P56",
+   "src": "REDIS",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "zrevrank",
+    "leaderboard",
+    "zcount"
+   ],
+   "claim": "sorted sets: ranking"
+  },
+  {
+   "id": "P57",
+   "src": "REDIS",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "sismember",
+    "zadd is a o(log(n))",
+    "o(n+m*log(m))"
+   ],
+   "claim": "command complexities"
+  },
+  {
+   "id": "P58",
+   "src": "REDIS",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "pseudo multi key",
+    "pseudo secondary index"
+   ],
+   "claim": "hash as secondary index"
+  },
+  {
+   "id": "P59",
+   "src": "REDIS",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "pipelining"
+   ],
+   "claim": "pipelining"
+  },
+  {
+   "id": "P60",
+   "src": "REDIS",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "single-threaded",
+    "multi",
+    "exec",
+    "discard",
+    "watch"
+   ],
+   "claim": "MULTI/EXEC/WATCH transactions and single-threaded"
+  },
+  {
+   "id": "P61",
+   "src": "REDIS",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "keys anti-pattern",
+    "linear scan",
+    "never be used in production"
+   ],
+   "claim": "keys command anti-pattern"
+  },
+  {
+   "id": "P62",
+   "src": "REDIS",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "expire",
+    "setex",
+    "ttl",
+    "persist",
+    "brpop"
+   ],
+   "claim": "expiration and simple queues"
+  },
+  {
+   "id": "P63",
+   "src": "REDIS",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "scan",
+    "2.8",
+    "cursor"
+   ],
+   "claim": "scan with cursor (2.8)"
+  },
+  {
+   "id": "P64",
+   "src": "REDIS",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "lua-time-limit",
+    "5 seconds"
+   ],
+   "claim": "lua-time-limit of 5 s"
+  },
+  {
+   "id": "P65",
+   "src": "REDIS",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "requirepass",
+    "rename-command",
+    "hundreds of millions"
+   ],
+   "claim": "basic administration"
+  },
+  {
+   "id": "P66",
+   "src": "REDIS",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "automated failover",
+    "manually promoted",
+    "dump.rdb",
+    "slaveof"
+   ],
+   "claim": "replication without automatic failover; snapshot backup"
+  },
+  {
+   "id": "P67",
+   "src": "REDIS",
+   "pages": [
+    29,
+    30
+   ],
+   "terms": [
+    "redis cluster"
+   ],
+   "claim": "Redis Cluster still in development"
+  },
+  {
+   "id": "P68",
+   "src": "REDIS",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "3.0.3",
+    "officially support windows"
+   ],
+   "claim": "version 3.0.3; unofficial Windows"
+  },
+  {
+   "id": "P69",
+   "src": "MONGO-PAT",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "99%",
+    "distributed join"
+   ],
+   "claim": "seek dominates read time; distributed join"
+  },
+  {
+   "id": "P70",
+   "src": "MONGO-PAT",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "bson",
+    "objectid",
+    "uuid",
+    "it depends"
+   ],
+   "claim": "BSON document format; 'it depends'"
+  },
+  {
+   "id": "P71",
+   "src": "MONGO-PAT",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "embedding for locality",
+    "contiguously"
+   ],
+   "claim": "embedding for locality"
+  },
+  {
+   "id": "P72",
+   "src": "MONGO-PAT",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "designed without multidocument transactions"
+   ],
+   "claim": "MongoDB 2013 without multi-document transactions"
+  },
+  {
+   "id": "P73",
+   "src": "MONGO-PAT",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "hard size limit of 16 mb",
+    "page fault"
+   ],
+   "claim": "16 MB limit and page faults"
+  },
+  {
+   "id": "P74",
+   "src": "MONGO-PAT",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "unbounded arity",
+    "many-to-many"
+   ],
+   "claim": "unbounded arity; many-to-many"
+  },
+  {
+   "id": "P75",
+   "src": "MONGO-PAT",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "category_ids"
+   ],
+   "claim": "embed a list of _id"
+  },
+  {
+   "id": "P76",
+   "src": "MONGO-PAT",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "polymorphic schema"
+   ],
+   "claim": "polymorphic schema"
+  },
+  {
+   "id": "P77",
+   "src": "MONGO-PAT",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "storage efficiency",
+    "short field names"
+   ],
+   "claim": "BSON storage inefficiency"
+  },
+  {
+   "id": "P78",
+   "src": "MONGO-PAT",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "exceedingly careful",
+    "application-level, two-phase commit"
+   ],
+   "claim": "warning about application-level 2PC"
+  },
+  {
+   "id": "P79",
+   "src": "MONGO-PAT",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "idempotent"
+   ],
+   "claim": "idempotent retire_transaction"
+  },
+  {
+   "id": "P80",
+   "src": "MONGO-PAT",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "28 bytes",
+    "8 bytes"
+   ],
+   "claim": "date as text 28 bytes vs timestamp 8 bytes"
+  },
+  {
+   "id": "P81",
+   "src": "MONGO-PAT",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "objectid implicitly embeds its own creation"
+   ],
+   "claim": "ObjectId embeds the creation time"
+  },
+  {
+   "id": "P82",
+   "src": "MONGO-PAT",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "write concern",
+    "w=0"
+   ],
+   "claim": "write concern"
+  },
+  {
+   "id": "P83",
+   "src": "MONGO-PAT",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "j=true",
+    "100 ms",
+    "group commits",
+    "real durability"
+   ],
+   "claim": "journal and replication"
+  },
+  {
+   "id": "P84",
+   "src": "MONGO-PAT",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "insertions are balanced between shards"
+   ],
+   "claim": "shard key criterion"
+  },
+  {
+   "id": "P85",
+   "src": "MONGO-PAT",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "same shard",
+    "hash"
+   ],
+   "claim": "sharding by time and by hash"
+  },
+  {
+   "id": "P86",
+   "src": "MONGO-PAT",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "no definitive",
+    "pre-splitting"
+   ],
+   "claim": "no definitive best practices for the shard key"
+  },
+  {
+   "id": "P87",
+   "src": "MONGO-PAT",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "capped collections",
+    "ttl"
+   ],
+   "claim": "capped collections cannot be sharded; TTL"
+  },
+  {
+   "id": "P88",
+   "src": "MONGO-PAT",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "read preference",
+    "secondary"
+   ],
+   "claim": "read preference and reading from secondaries"
+  },
+  {
+   "id": "P89",
+   "src": "MONGO-PAT",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "gridfs",
+    "256 kb",
+    "16 mb"
+   ],
+   "claim": "GridFS: 256 kB chunks"
+  },
+  {
+   "id": "P90",
+   "src": "MONGO-PAT",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "buckets",
+    "about 100"
+   ],
+   "claim": "comments in buckets of ~100"
+  },
+  {
+   "id": "P91",
+   "src": "MONGO-PAT",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "node_id",
+    "shard key"
+   ],
+   "claim": "shard key for comments"
+  },
+  {
+   "id": "P92",
+   "src": "MONGO-PAT",
+   "pages": [
+    167
+   ],
+   "terms": [
+    "embedding subdocuments versus referencing"
+   ],
+   "claim": "afterword: the book's patterns"
+  },
+  {
+   "id": "P93",
+   "src": "MONGO-MAN-H",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "document database",
+    "flexible schema"
+   ],
+   "claim": "MongoDB: document and flexible schema"
+  },
+  {
+   "id": "P94",
+   "src": "MONGO-MAN-H",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "objectid",
+    "document database"
+   ],
+   "claim": "example document with ObjectId"
+  },
+  {
+   "id": "P95",
+   "src": "MONGO-MAN-H",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "multi-document transactions",
+    "distributed transactions",
+    "automatic failover"
+   ],
+   "claim": "multi-document transactions and failover (8.3)"
+  },
+  {
+   "id": "P96",
+   "src": "MONGO-MAN-H",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "zone sharding",
+    "shard key refinement",
+    "automatic data distribution"
+   ],
+   "claim": "sharding features (8.3)"
+  },
+  {
+   "id": "P97",
+   "src": "MONGO-MAN-H",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "8.3 (current)"
+   ],
+   "claim": "version 8.3"
+  },
+  {
+   "id": "P98",
+   "src": "MONGO-MAN-I",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "transações multidocumento"
+   ],
+   "claim": "pt-BR version: multi-document transactions"
+  },
+  {
+   "id": "P99",
+   "src": "CASS",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "prerelease"
+   ],
+   "claim": "CASS and prerelease documentation"
+  },
+  {
+   "id": "P100",
+   "src": "CASS",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "vector search",
+    "architecture",
+    "cql",
+    "not relational"
+   ],
+   "claim": "CASS lists sections"
+  },
+  {
+   "id": "P101",
+   "src": "COUCH",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "restful http api",
+    "lockless",
+    "edit conflict"
+   ],
+   "claim": "CouchDB: REST API and optimistic updates"
+  },
+  {
+   "id": "P102",
+   "src": "COUCH",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "crash-only",
+    "mvcc",
+    "snapshot"
+   ],
+   "claim": "CouchDB: crash-only and MVCC"
+  },
+  {
+   "id": "P103",
+   "src": "COUCH",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "b-trees",
+    "append-only",
+    "compaction"
+   ],
+   "claim": "CouchDB: append-only B-trees and compaction"
+  },
+  {
+   "id": "P104",
+   "src": "COUCH",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "design documents",
+    "map"
+   ],
+   "claim": "CouchDB: views and design documents"
+  },
+  {
+   "id": "P105",
+   "src": "COUCH",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "directionally",
+    "validation"
+   ],
+   "claim": "CouchDB: bidirectional replication and validation"
+  },
+  {
+   "id": "P106",
+   "src": "COUCH",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "checkpoint",
+    "conflicts",
+    "winner"
+   ],
+   "claim": "CouchDB: checkpoint and conflicts"
+  },
+  {
+   "id": "P107",
+   "src": "COUCH",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "erlang",
+    "shared nothing"
+   ],
+   "claim": "CouchDB: Erlang and shared nothing"
+  },
+  {
+   "id": "P108",
+   "src": "ELAST",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "apache lucene",
+    "search and analytics engine"
+   ],
+   "claim": "ELAST: engine on Lucene"
+  },
+  {
+   "id": "P109",
+   "src": "ELAST",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "query dsl",
+    "es|ql",
+    "eql"
+   ],
+   "claim": "ELAST: query languages"
+  },
+  {
+   "id": "P110",
+   "src": "NEO4J-GDB",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "index-free adjacency"
+   ],
+   "claim": "index-free adjacency"
+  },
+  {
+   "id": "P111",
+   "src": "NEO4J-GDB",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "o(log n)",
+    "o(1)",
+    "native graph"
+   ],
+   "claim": "traversal cost: index vs adjacency"
+  },
+  {
+   "id": "P112",
+   "src": "NEO4J-GDB",
+   "pages": [
+    214
+   ],
+   "terms": [
+    "quadrants"
+   ],
+   "claim": "four NoSQL quadrants"
+  },
+  {
+   "id": "P113",
+   "src": "NEO4J-GDB",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "2f +1"
+   ],
+   "claim": "R = 2F+1 replicas"
+  },
+  {
+   "id": "P114",
+   "src": "NEO4J-GDB",
+   "pages": [
+    222,
+    223
+   ],
+   "terms": [
+    "aggregate stores"
+   ],
+   "claim": "aggregate stores"
+  },
+  {
+   "id": "P115",
+   "src": "NEO4J-GDB",
+   "pages": [
+    224
+   ],
+   "terms": [
+    "property graph",
+    "labeled"
+   ],
+   "claim": "property graph"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "srcs": [
+    "STRAUCH",
+    "REDIS",
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I",
+    "CASS",
+    "COUCH",
+    "ELAST",
+    "NEO4J-GDB"
+   ],
+   "terms": [
+    "pacelc"
+   ],
+   "claim": "PACELC is not in any source"
+  },
+  {
+   "id": "N02",
+   "srcs": [
+    "STRAUCH"
+   ],
+   "terms": [
+    "monotonic write"
+   ],
+   "claim": "monotonic write consistency is not covered"
+  },
+  {
+   "id": "N03",
+   "srcs": [
+    "STRAUCH",
+    "MONGO-PAT",
+    "REDIS"
+   ],
+   "terms": [
+    "fowler"
+   ],
+   "claim": "Fowler is not cited"
+  },
+  {
+   "id": "N04",
+   "srcs": [
+    "STRAUCH"
+   ],
+   "terms": [
+    "pritchett"
+   ],
+   "claim": "Pritchett is not cited in the text (only 'Prichett' in the bibliography)"
+  },
+  {
+   "id": "N05",
+   "srcs": [
+    "REDIS"
+   ],
+   "terms": [
+    "bgsave",
+    "appendfsync",
+    "bgrewriteaof",
+    "everysec",
+    "copy-on-write"
+   ],
+   "claim": "Redis persistence details are not covered"
+  },
+  {
+   "id": "N06",
+   "srcs": [
+    "STRAUCH",
+    "REDIS",
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I",
+    "CASS",
+    "COUCH",
+    "ELAST",
+    "NEO4J-GDB"
+   ],
+   "terms": [
+    "skiplist",
+    "skip list"
+   ],
+   "claim": "SkipList is not covered"
+  },
+  {
+   "id": "N07",
+   "srcs": [
+    "REDIS"
+   ],
+   "terms": [
+    "maxmemory",
+    "eviction",
+    "noeviction"
+   ],
+   "claim": "eviction/maxmemory are not covered"
+  },
+  {
+   "id": "N08",
+   "srcs": [
+    "REDIS"
+   ],
+   "terms": [
+    "sentinel"
+   ],
+   "claim": "Sentinel is not covered"
+  },
+  {
+   "id": "N09",
+   "srcs": [
+    "REDIS"
+   ],
+   "terms": [
+    "512 mb",
+    "512mb"
+   ],
+   "claim": "512 MB limit is not covered"
+  },
+  {
+   "id": "N10",
+   "srcs": [
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I"
+   ],
+   "terms": [
+    "oplog"
+   ],
+   "claim": "the name oplog is not covered (in STRAUCH only in a bibliographic title, p.143)"
+  },
+  {
+   "id": "N11",
+   "srcs": [
+    "STRAUCH",
+    "REDIS",
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I",
+    "CASS",
+    "COUCH",
+    "ELAST",
+    "NEO4J-GDB"
+   ],
+   "terms": [
+    "re:\\braft\\b"
+   ],
+   "claim": "Raft is not covered"
+  },
+  {
+   "id": "N12",
+   "srcs": [
+    "STRAUCH",
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I"
+   ],
+   "terms": [
+    "wiredtiger"
+   ],
+   "claim": "WiredTiger is not covered"
+  },
+  {
+   "id": "N13",
+   "srcs": [
+    "COUCH",
+    "STRAUCH"
+   ],
+   "terms": [
+    "_rev",
+    "/_replicate",
+    "re:\\b409\\b"
+   ],
+   "claim": "_rev, /_replicate and HTTP 409 are not covered"
+  },
+  {
+   "id": "N14",
+   "srcs": [
+    "ELAST"
+   ],
+   "terms": [
+    "inverted index",
+    "bm25",
+    "translog",
+    "re:\\bshards?\\b"
+   ],
+   "claim": "ELAST has no inverted index, shards, BM25"
+  },
+  {
+   "id": "N15",
+   "srcs": [
+    "CASS"
+   ],
+   "terms": [
+    "memtable",
+    "sstable",
+    "gossip",
+    "quorum",
+    "bloom",
+    "tombstone"
+   ],
+   "claim": "CASS has no architecture"
+  },
+  {
+   "id": "N16",
+   "srcs": [
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I",
+    "STRAUCH"
+   ],
+   "terms": [
+    "12 bytes",
+    "12-byte",
+    "decimal128"
+   ],
+   "claim": "the 12-byte ObjectId structure and Decimal128 are not covered"
+  },
+  {
+   "id": "N17",
+   "srcs": [
+    "MONGO-PAT"
+   ],
+   "terms": [
+    "subset pattern",
+    "extended reference",
+    "bucket pattern"
+   ],
+   "claim": "pattern names are not covered"
+  },
+  {
+   "id": "N18",
+   "srcs": [
+    "MONGO-PAT",
+    "STRAUCH"
+   ],
+   "terms": [
+    "$lookup"
+   ],
+   "claim": "$lookup is not covered"
+  },
+  {
+   "id": "N19",
+   "srcs": [
+    "STRAUCH",
+    "MONGO-PAT",
+    "MONGO-MAN-H",
+    "MONGO-MAN-I"
+   ],
+   "terms": [
+    "hashed sharding",
+    "hashed shard"
+   ],
+   "claim": "hash sharding under that name is not covered"
+  },
+  {
+   "id": "N20",
+   "srcs": [
+    "STRAUCH",
+    "MONGO-PAT"
+   ],
+   "terms": [
+    "re:heartbeats? (every|each) (2|two) seconds"
+   ],
+   "claim": "2 s heartbeat is not covered"
+  },
+  {
+   "id": "N21",
+   "srcs": [
+    "NEO4J-GDB"
+   ],
+   "terms": [
+    "gbac",
+    "knowledge graph"
+   ],
+   "claim": "GBAC and knowledge graph are not covered"
+  },
+  {
+   "id": "N22",
+   "srcs": [
+    "REDIS",
+    "MONGO-PAT"
+   ],
+   "terms": [
+    "rate limit",
+    "sliding window"
+   ],
+   "claim": "sliding-window rate limiter is not covered"
+  }
+ ]
+}

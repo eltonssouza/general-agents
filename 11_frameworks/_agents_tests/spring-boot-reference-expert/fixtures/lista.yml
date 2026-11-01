@@ -1,0 +1,9 @@
+my:
+  servers:
+  - "a.example.com"
+  - "b.example.com"
+  list: [x, y]
+spring:
+  profiles:
+    include:
+      - common

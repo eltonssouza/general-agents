@@ -1,0 +1,847 @@
+{
+ "offset_impressa": 5,
+ "total_paginas": 91,
+ "chapters": [
+  {
+   "id": "pre",
+   "title": "Preface, about the book, authors, introduction",
+   "pdf": [
+    8,
+    12
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "1",
+   "title": "DPE defined",
+   "pdf": [
+    14,
+    14
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "2",
+   "title": "The intuitive case for DPE",
+   "pdf": [
+    15,
+    18
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "3",
+   "title": "Forming a DPE team",
+   "pdf": [
+    19,
+    20
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "4",
+   "title": "DPE vs. DPM",
+   "pdf": [
+    21,
+    25
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "5",
+   "title": "Solutions overview",
+   "pdf": [
+    26,
+    26
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  },
+  {
+   "id": "6",
+   "title": "Feedback loops",
+   "pdf": [
+    28,
+    33
+   ],
+   "ref": "02-ciclos-de-feedback.md"
+  },
+  {
+   "id": "7",
+   "title": "Build cache",
+   "pdf": [
+    34,
+    42
+   ],
+   "ref": "03-build-cache.md"
+  },
+  {
+   "id": "8",
+   "title": "Test distribution",
+   "pdf": [
+    43,
+    50
+   ],
+   "ref": "04-distribuicao-de-testes.md"
+  },
+  {
+   "id": "9",
+   "title": "Profiling and analytics",
+   "pdf": [
+    51,
+    58
+   ],
+   "ref": "05-profiling-e-analytics.md"
+  },
+  {
+   "id": "10",
+   "title": "Failure types and origins",
+   "pdf": [
+    60,
+    61
+   ],
+   "ref": "06-falhas-e-troubleshooting.md"
+  },
+  {
+   "id": "11",
+   "title": "Efficient troubleshooting",
+   "pdf": [
+    62,
+    65
+   ],
+   "ref": "06-falhas-e-troubleshooting.md"
+  },
+  {
+   "id": "12",
+   "title": "Toolchain reliability",
+   "pdf": [
+    66,
+    69
+   ],
+   "ref": "07-confiabilidade-e-flaky.md"
+  },
+  {
+   "id": "13",
+   "title": "Failure analytics",
+   "pdf": [
+    70,
+    72
+   ],
+   "ref": "07-confiabilidade-e-flaky.md"
+  },
+  {
+   "id": "14",
+   "title": "Flaky tests",
+   "pdf": [
+    73,
+    76
+   ],
+   "ref": "07-confiabilidade-e-flaky.md"
+  },
+  {
+   "id": "15",
+   "title": "Cost of builds",
+   "pdf": [
+    78,
+    85
+   ],
+   "ref": "08-economia-custo-e-roi.md"
+  },
+  {
+   "id": "16",
+   "title": "ROI calculator",
+   "pdf": [
+    86,
+    90
+   ],
+   "ref": "08-economia-custo-e-roi.md"
+  },
+  {
+   "id": "next",
+   "title": "Next steps (vendor links)",
+   "pdf": [
+    91,
+    91
+   ],
+   "ref": "01-definicao-caso-e-dpm.md"
+  }
+ ],
+ "topics": [
+  {
+   "topic": "DPE definition",
+   "keywords": [
+    "dpe",
+    "developer productivity engineering",
+    "definição",
+    "engenharia de produtividade",
+    "definition",
+    "engineering productivity"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "14"
+  },
+  {
+   "topic": "Intuitive case (creative flow, collaboration, team productivity)",
+   "keywords": [
+    "fluxo criativo",
+    "creative flow",
+    "toolchain",
+    "caso intuitivo",
+    "colaboração",
+    "intuitive case",
+    "collaboration",
+    "team productivity"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "15-18"
+  },
+  {
+   "topic": "Dedicated DPE team",
+   "keywords": [
+    "time dedicado",
+    "dedicated team",
+    "formar time",
+    "equipe dpe",
+    "dpe team",
+    "forming a team",
+    "team"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "19-20"
+  },
+  {
+   "topic": "DPM vs. DPE",
+   "keywords": [
+    "dpm",
+    "developer productivity management",
+    "métricas de atividade",
+    "gestão de produtividade",
+    "big brother",
+    "activity metrics",
+    "productivity management",
+    "dpe vs dpm"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "21-25"
+  },
+  {
+   "topic": "DPE limitations (JVM/Android)",
+   "keywords": [
+    "jvm",
+    "android",
+    "limitações",
+    "ecossistema",
+    "limitations",
+    "ecosystem"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "25"
+  },
+  {
+   "topic": "Solutions overview",
+   "keywords": [
+    "visão geral",
+    "solution framework",
+    "figura 2",
+    "overview",
+    "solutions overview",
+    "figure 2"
+   ],
+   "ref": "01-definicao-caso-e-dpm.md",
+   "pages": "26"
+  },
+  {
+   "topic": "Fast feedback and build frequency",
+   "keywords": [
+    "feedback",
+    "ciclo de feedback",
+    "frequência de builds",
+    "fast feedback",
+    "feedback loop",
+    "build frequency",
+    "frequency of builds"
+   ],
+   "ref": "02-ciclos-de-feedback.md",
+   "pages": "28-29"
+  },
+  {
+   "topic": "Waiting time and context switching",
+   "keywords": [
+    "troca de contexto",
+    "context switching",
+    "espera",
+    "waiting",
+    "wait time",
+    "waiting time"
+   ],
+   "ref": "02-ciclos-de-feedback.md",
+   "pages": "29-30"
+  },
+  {
+   "topic": "Formulas for average successful build time and context switches",
+   "keywords": [
+    "tempo médio",
+    "failure frequency",
+    "fórmula troca de contexto",
+    "average time",
+    "context switch formula",
+    "average successful build time"
+   ],
+   "ref": "02-ciclos-de-feedback.md",
+   "pages": "30, 67"
+  },
+  {
+   "topic": "Large changesets, non-linear debugging, merge conflicts",
+   "keywords": [
+    "changeset",
+    "merge conflict",
+    "depuração",
+    "fix time",
+    "exponencial",
+    "debugging",
+    "exponential",
+    "large changesets"
+   ],
+   "ref": "02-ciclos-de-feedback.md",
+   "pages": "30-32"
+  },
+  {
+   "topic": "Shifting feedback right",
+   "keywords": [
+    "shift right",
+    "deslocar feedback",
+    "pull request build",
+    "shift feedback right",
+    "move feedback"
+   ],
+   "ref": "02-ciclos-de-feedback.md",
+   "pages": "32-33"
+  },
+  {
+   "topic": "Build cache: concept and how it works",
+   "keywords": [
+    "build cache",
+    "cache de build",
+    "chave de cache",
+    "cache key",
+    "hash",
+    "how build cache works",
+    "caching"
+   ],
+   "ref": "03-build-cache.md",
+   "pages": "34-39"
+  },
+  {
+   "topic": "Local vs. remote cache",
+   "keywords": [
+    "cache local",
+    "cache remoto",
+    "local cache",
+    "remote cache",
+    "agentes de ci",
+    "ci agents",
+    "local vs remote cache"
+   ],
+   "ref": "03-build-cache.md",
+   "pages": "40-41"
+  },
+  {
+   "topic": "Cache effectiveness, modularization, volatile inputs",
+   "keywords": [
+    "modularização",
+    "módulo folha",
+    "timestamp",
+    "volátil",
+    "cache effectiveness",
+    "reprodutibilidade",
+    "modularization",
+    "leaf module",
+    "volatile",
+    "volatile inputs",
+    "reproducibility"
+   ],
+   "ref": "03-build-cache.md",
+   "pages": "41-42"
+  },
+  {
+   "topic": "Claimed cache savings (90%/50%)",
+   "keywords": [
+    "90%",
+    "50%",
+    "economia cache",
+    "cache savings",
+    "claimed savings"
+   ],
+   "ref": "03-build-cache.md",
+   "pages": "42"
+  },
+  {
+   "topic": "Traditional test parallelism and CI fanout",
+   "keywords": [
+    "ci fanout",
+    "paralelismo",
+    "single machine",
+    "parallelism",
+    "test parallelism",
+    "fanout"
+   ],
+   "ref": "04-distribuicao-de-testes.md",
+   "pages": "43-45"
+  },
+  {
+   "topic": "Test Distribution: capabilities",
+   "keywords": [
+    "test distribution",
+    "distribuição de testes",
+    "agentes remotos",
+    "fallback",
+    "distributing tests",
+    "remote agents"
+   ],
+   "ref": "04-distribuicao-de-testes.md",
+   "pages": "45-46"
+  },
+  {
+   "topic": "Cache + distribution (complementary)",
+   "keywords": [
+    "complementa",
+    "virtuoso",
+    "modularização distribuição",
+    "complementary",
+    "cache and distribution",
+    "modularization distribution"
+   ],
+   "ref": "04-distribuicao-de-testes.md",
+   "pages": "46"
+  },
+  {
+   "topic": "Eclipse Jetty case",
+   "keywords": [
+    "jetty",
+    "eclipse",
+    "145 módulos",
+    "estudo de caso",
+    "case study",
+    "145 modules"
+   ],
+   "ref": "04-distribuicao-de-testes.md",
+   "pages": "46-50"
+  },
+  {
+   "topic": "MABP vs. ABP",
+   "keywords": [
+    "mabp",
+    "abp",
+    "maximum achievable",
+    "actual build performance",
+    "maximum achievable build performance"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "51-52, 58"
+  },
+  {
+   "topic": "Causes of ABP below MABP",
+   "keywords": [
+    "processador de anotação",
+    "annotation processor",
+    "antivírus",
+    "ssd",
+    "latência",
+    "paralelismo desligado",
+    "antivirus",
+    "latency",
+    "parallelism disabled"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "52-53"
+  },
+  {
+   "topic": "Instrumentation and toolchain data collection",
+   "keywords": [
+    "instrumentação",
+    "telemetria",
+    "coleta de dados",
+    "dados",
+    "instrumentation",
+    "telemetry",
+    "data collection",
+    "data"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "53-54"
+  },
+  {
+   "topic": "Percentiles and median",
+   "keywords": [
+    "percentil",
+    "mediana",
+    "median",
+    "p95",
+    "p5",
+    "percentile",
+    "percentiles"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "56-57"
+  },
+  {
+   "topic": "Build Scan",
+   "keywords": [
+    "build scan",
+    "raio x",
+    "x-ray",
+    "perfil de build",
+    "build profile"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "57, 64-65"
+  },
+  {
+   "topic": "Cache is not fire-and-forget",
+   "keywords": [
+    "fogo e esqueça",
+    "economia negativa",
+    "gestão do cache",
+    "fire and forget",
+    "negative savings",
+    "cache management"
+   ],
+   "ref": "05-profiling-e-analytics.md",
+   "pages": "58"
+  },
+  {
+   "topic": "Verification vs. non-verification failure",
+   "keywords": [
+    "verificação",
+    "não-verificação",
+    "non-verification",
+    "verification failure",
+    "build quebrado",
+    "verification",
+    "non verification",
+    "broken build"
+   ],
+   "ref": "06-falhas-e-troubleshooting.md",
+   "pages": "60-61"
+  },
+  {
+   "topic": "Troubleshooting and build record",
+   "keywords": [
+    "troubleshooting",
+    "registro",
+    "build record",
+    "causa-raiz",
+    "mttr",
+    "record",
+    "root cause",
+    "root-cause"
+   ],
+   "ref": "06-falhas-e-troubleshooting.md",
+   "pages": "62-65"
+  },
+  {
+   "topic": "Build comparison",
+   "keywords": [
+    "comparar builds",
+    "build comparison",
+    "último sucesso",
+    "compare builds",
+    "last success"
+   ],
+   "ref": "06-falhas-e-troubleshooting.md",
+   "pages": "65"
+  },
+  {
+   "topic": "Toolchain reliability",
+   "keywords": [
+    "confiabilidade",
+    "reliability",
+    "toolchain reliability",
+    "build reliability"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "66-67"
+  },
+  {
+   "topic": "Reproducible vs. reliable build",
+   "keywords": [
+    "reproduzível",
+    "reproducible",
+    "reliable build",
+    "tomcat",
+    "reproducible build",
+    "reproducibility vs reliability"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "68-69"
+  },
+  {
+   "topic": "Complaint-driven development",
+   "keywords": [
+    "complaint",
+    "reclamação",
+    "sofrendo em silêncio",
+    "complaint driven",
+    "suffering in silence"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "70"
+  },
+  {
+   "topic": "Failure prioritization",
+   "keywords": [
+    "priorização",
+    "prioridade",
+    "lint",
+    "top failures",
+    "prioritization",
+    "priority",
+    "failure priority"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "71-72"
+  },
+  {
+   "topic": "Flaky tests: definition, causes, identification",
+   "keywords": [
+    "flaky",
+    "teste instável",
+    "retry",
+    "retentativa",
+    "ordem",
+    "flaky test",
+    "flaky tests",
+    "unstable test",
+    "order"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "73-74"
+  },
+  {
+   "topic": "P_pass formula and 1% target",
+   "keywords": [
+    "p_pass",
+    "1%",
+    "fórmula flaky",
+    "probabilidade",
+    "p_pass formula",
+    "flaky formula",
+    "probability"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "74"
+  },
+  {
+   "topic": "Quarantine and Flaky Fix-It Day",
+   "keywords": [
+    "quarentena",
+    "quarantine",
+    "fix-it day",
+    "fix it",
+    "flaky fix-it day",
+    "fix-it days"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "67, 74-75"
+  },
+  {
+   "topic": "Data for investigating flakiness",
+   "keywords": [
+    "dados de flaky",
+    "histórico de testes",
+    "historical test data",
+    "flaky data",
+    "test history",
+    "flakiness data"
+   ],
+   "ref": "07-confiabilidade-e-flaky.md",
+   "pages": "75-76"
+  },
+  {
+   "topic": "Cost model: parameters of the example team",
+   "keywords": [
+    "modelo de custo",
+    "cm",
+    "ce",
+    "byl",
+    "byci",
+    "parâmetros",
+    "200 engenheiros",
+    "cost model",
+    "parameters",
+    "200 engineers"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "78-79"
+  },
+  {
+   "topic": "Cost of waiting (local and CI)",
+   "keywords": [
+    "custo espera",
+    "wl",
+    "wci",
+    "espera local",
+    "wait cost",
+    "waiting cost",
+    "local wait"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "79-80"
+  },
+  {
+   "topic": "Cost of debugging failures",
+   "keywords": [
+    "custo depuração",
+    "fl",
+    "fci",
+    "il",
+    "tl",
+    "tci",
+    "debugging cost",
+    "debug cost"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "81-82"
+  },
+  {
+   "topic": "Faulty build logic (cost)",
+   "keywords": [
+    "faulty build logic",
+    "lógica defeituosa",
+    "build logic",
+    "faulty logic",
+    "faulty build logic cost"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "82-83"
+  },
+  {
+   "topic": "Total cost of the example (US$ 3.2 M)",
+   "keywords": [
+    "total",
+    "3,2 milhões",
+    "hardware de ci",
+    "custo total",
+    "3.2 million",
+    "ci hardware",
+    "total cost"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "83-84"
+  },
+  {
+   "topic": "Why opportunities stay hidden",
+   "keywords": [
+    "ocultas",
+    "hidden",
+    "oportunidades",
+    "hidden opportunities"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "84-85"
+  },
+  {
+   "topic": "ROI calculator",
+   "keywords": [
+    "roi",
+    "calculadora",
+    "calculator",
+    "retorno",
+    "return on investment",
+    "roi calculator"
+   ],
+   "ref": "08-economia-custo-e-roi.md",
+   "pages": "86-90"
+  },
+  {
+   "topic": "Promotional claims and vendor bias",
+   "keywords": [
+    "vendor",
+    "fornecedor",
+    "gradle enterprise",
+    "viés",
+    "promocional",
+    "marketing",
+    "vendor bias",
+    "vendor claim",
+    "promotional",
+    "bias"
+   ],
+   "ref": "09-vies-de-fornecedor-e-datado.md",
+   "pages": "9-10, 18, 24, 42, 64, 88-90"
+  },
+  {
+   "topic": "Internal discrepancies in the book",
+   "keywords": [
+    "inconsistência",
+    "tci",
+    "120",
+    "90 minutos",
+    "180",
+    "inconsistency",
+    "inconsistencies",
+    "90 minutes",
+    "discrepancy"
+   ],
+   "ref": "09-vies-de-fornecedor-e-datado.md",
+   "pages": "28, 29, 74, 82-83"
+  }
+ ],
+ "gaps": [
+  {
+   "term": "Data Platform Engineering / engenharia de plataforma de dados",
+   "why": "the PDF is about Developer Productivity Engineering; no data pipeline, data lake or data platform is covered"
+  },
+  {
+   "term": "data lake / ETL / Airflow / Spark / Kafka / MLOps",
+   "why": "absent from the text"
+  },
+  {
+   "term": "DORA / SPACE metrics / deployment frequency / lead time",
+   "why": "do not appear; the book uses build/test metrics (time, failure rate) and MTTR"
+  },
+  {
+   "term": "Develocity",
+   "why": "the book uses the name Gradle Enterprise; the product's current name is [DATED]/[extrapolation]"
+  },
+  {
+   "term": "platform engineering / internal developer platform",
+   "why": "absent"
+  },
+  {
+   "term": "GitHub Actions / Kubernetes / Docker / Terraform",
+   "why": "absent (general CI: agent cicd-build-automation-expert)"
+  },
+  {
+   "term": "Bazel / monorepo",
+   "why": "absent (the book mentions Google and Facebook using caching internally, p.34)"
+  },
+  {
+   "term": "Copilot / LLM / AI for productivity",
+   "why": "absent; 2022 book"
+  },
+  {
+   "term": "TDD / test pyramid / testing strategy",
+   "why": "absent (agent software-testing-qa-expert)"
+  },
+  {
+   "term": "satisfaction survey / developer experience survey",
+   "why": "only a quote from a TechValidate survey (p.16); no measurement methodology"
+  },
+  {
+   "term": "predictive test selection",
+   "why": "only mentioned as a DPE concept (p.25); not explained"
+  },
+  {
+   "term": "formal DPE maturity model",
+   "why": "the book has none; the package checklist is [inference]"
+  }
+ ],
+ "datado": [
+  "Product name: the book says Gradle Enterprise (p.10, p.25); the current name may be different [DATED].",
+  "Ecosystem support: the book says the focus is JVM and Android (p.25) [DATED].",
+  "Versions and capabilities of Maven and Gradle, existence of build cache in other tools (p.34-35) [DATED].",
+  "External numbers: TechValidate (p.16), IDC 2020 (p.17), Google/Facebook flaky (p.73), Netflix 25% (p.89) [DATED].",
+  "Cost per minute and per engineer-year of the example (US$ 1/min; US$ 110.400) (p.78) [DATED].",
+  "Hardware and prices cited (US$ 8.000 per workstation; US$ 150 thousand per CI agent) (p.44) [DATED]."
+ ]
+}

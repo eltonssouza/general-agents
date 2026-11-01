@@ -1,0 +1,14 @@
+{
+  "name": "general-agents-orchestrator",
+  "version": "1.0.0",
+  "description": "Orchestrator of the specialist agents of the general-agents collection (folders 01 to 11) and of the role agents of folder 12 (product and technical leadership). Routes with a deterministic script (catalog generated from the frontmatters; Portuguese and English requests), decomposes multi-domain requests, delegates with self-contained briefs, integrates preserving the source labels ([from source], [extrapolation], NOT COVERED) and validates before declaring done. Requires the specialist plugins to be installed in order to delegate.",
+  "license": "MIT",
+  "author": { "name": "Elton Souza" },
+  "keywords": [
+    "orchestrator",
+    "multi-agent",
+    "routing",
+    "delegation",
+    "subagents"
+  ]
+}

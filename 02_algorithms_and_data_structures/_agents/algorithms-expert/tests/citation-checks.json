@@ -1,0 +1,1662 @@
+{
+ "source": "Algorithms-Erickson.pdf extracted by PyMuPDF (markers === PAGE N ===; N = PDF page; printed = N-18)",
+ "positive": [
+  {
+   "id": "P001",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Asymptotic notation (o, O"
+   ],
+   "claim": "Preface lists asymptotic notation as a prerequisite"
+  },
+  {
+   "id": "P002",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "explicit, precise, unambiguous",
+    "mechanically-executable"
+   ],
+   "claim": "definition of algorithm"
+  },
+  {
+   "id": "P003",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "lattice",
+    "O(mn)"
+   ],
+   "claim": "lattice multiplication in O(mn)"
+  },
+  {
+   "id": "P004",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "peasant multiplication",
+    "duplation",
+    "mediation"
+   ],
+   "claim": "peasant multiplication"
+  },
+  {
+   "id": "P005",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "What:",
+    "How:",
+    "Why:",
+    "How fast:"
+   ],
+   "claim": "four components of the description"
+  },
+  {
+   "id": "P006",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "Induction is our friend",
+    "always correct"
+   ],
+   "claim": "correctness requires proof, induction is our friend"
+  },
+  {
+   "id": "P007",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "even in the worst case"
+   ],
+   "claim": "worst case"
+  },
+  {
+   "id": "P008",
+   "pages": [
+    402
+   ],
+   "terms": [
+    "random-access machine"
+   ],
+   "claim": "RAM is only described in Ch. 12 (note 6)"
+  },
+  {
+   "id": "P009",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "Reducing one problem X to another problem Y",
+    "black box"
+   ],
+   "claim": "reduction"
+  },
+  {
+   "id": "P010",
+   "pages": [
+    40,
+    41
+   ],
+   "terms": [
+    "Recursion Fairy",
+    "Induction Hypothesis"
+   ],
+   "claim": "Recursion Fairy = induction hypothesis"
+  },
+  {
+   "id": "P011",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "2n",
+    "unrolling the recursion",
+    "T(0) = 0"
+   ],
+   "claim": "Hanoi and the advice not to unroll the recursion"
+  },
+  {
+   "id": "P012",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "Merge clearly takes O(n) time",
+    "recurrence for MergeSort"
+   ],
+   "claim": "MergeSort: recurrence and linear Merge"
+  },
+  {
+   "id": "P013",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "Tony Hoare",
+    "Lomuto"
+   ],
+   "claim": "QuickSort/Hoare/Lomuto"
+  },
+  {
+   "id": "P014",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "median of three",
+    "O(n2)"
+   ],
+   "claim": "QuickSort worst case O(n^2), median of three"
+  },
+  {
+   "id": "P015",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "best case",
+    "uniformly at random"
+   ],
+   "claim": "book ignores the best case; random pivot in note 7"
+  },
+  {
+   "id": "P016",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "Decreasing",
+    "Equal",
+    "Increasing"
+   ],
+   "claim": "three cases of the recursion tree"
+  },
+  {
+   "id": "P017",
+   "pages": [
+    51,
+    52
+   ],
+   "terms": [
+    "T(n/3) + T(2n/3)",
+    "log3/2 n"
+   ],
+   "claim": "recurrence T(n/3)+T(2n/3)"
+  },
+  {
+   "id": "P018",
+   "pages": [
+    52,
+    53
+   ],
+   "terms": [
+    "domain transformation"
+   ],
+   "claim": "domain transformation"
+  },
+  {
+   "id": "P019",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "3n/10",
+    "7n/10",
+    "MomSelect"
+   ],
+   "claim": "median of medians: 3n/10 and 7n/10"
+  },
+  {
+   "id": "P020",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "9/10",
+    "T(n/5) + T(7n/10)"
+   ],
+   "claim": "MomSelect recurrence"
+  },
+  {
+   "id": "P021",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "smallest odd block size",
+    "no faster than sorting",
+    "16n"
+   ],
+   "claim": "why 5; blocks of 3; 16n"
+  },
+  {
+   "id": "P022",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "at most 4n"
+   ],
+   "claim": "expected <= 4n comparisons (note 9)"
+  },
+  {
+   "id": "P023",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "(a −b)(c −d)",
+    "1.58496"
+   ],
+   "claim": "Karatsuba with (a-b)(c-d)"
+  },
+  {
+   "id": "P024",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Toom",
+    "Harvey"
+   ],
+   "claim": "Toom-Cook and Harvey-van der Hoeven"
+  },
+  {
+   "id": "P025",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "T(n) ≤T(n/2) + 2",
+    "O(log n)"
+   ],
+   "claim": "Pingala's power"
+  },
+  {
+   "id": "P026",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Ω(log n)",
+    "a15"
+   ],
+   "claim": "lower bound for exponentiation"
+  },
+  {
+   "id": "P027",
+   "pages": [
+    454
+   ],
+   "terms": [
+    "Master Theorem, see recursion trees"
+   ],
+   "claim": "index: Master Theorem only refers to recursion trees"
+  },
+  {
+   "id": "P028",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "one row at a time",
+    "Gauss"
+   ],
+   "claim": "N Queens row by row"
+  },
+  {
+   "id": "P029",
+   "pages": [
+    93
+   ],
+   "terms": [
+    "Zermelo",
+    "good",
+    "bad"
+   ],
+   "claim": "game tree: good/bad states"
+  },
+  {
+   "id": "P030",
+   "pages": [
+    94
+   ],
+   "terms": [
+    "prune the game tree",
+    "empty set is a subset of every set"
+   ],
+   "claim": "heuristic pruning; Subset Sum base cases"
+  },
+  {
+   "id": "P031",
+   "pages": [
+    96
+   ],
+   "terms": [
+    "O(2n)",
+    "T(n) ≤2T(n −1) + O(1)"
+   ],
+   "claim": "Subset Sum backtracking O(2^n)"
+  },
+  {
+   "id": "P032",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "Splittable",
+    "IsWord"
+   ],
+   "claim": "segmentation: Splittable"
+  },
+  {
+   "id": "P033",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "2n−1 possible ways"
+   ],
+   "claim": "2^(n-1) segmentations"
+  },
+  {
+   "id": "P034",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "LISbigger"
+   ],
+   "claim": "LISbigger"
+  },
+  {
+   "id": "P035",
+   "pages": [
+    108
+   ],
+   "terms": [
+    "LISfirst"
+   ],
+   "claim": "LISfirst"
+  },
+  {
+   "id": "P036",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "OptCost",
+    "Recursion Fairy"
+   ],
+   "claim": "OptCost(i,k)"
+  },
+  {
+   "id": "P037",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "O(3n)",
+    "4n"
+   ],
+   "claim": "optimal BST backtracking O(3^n); 4^n/sqrt(n) trees"
+  },
+  {
+   "id": "P038",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "M(n) = M(n −2) + M(n −1)",
+    "Virah"
+   ],
+   "claim": "poetic meter = Fibonacci"
+  },
+  {
+   "id": "P039",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "2Fn+1 −1",
+    "golden ratio"
+   ],
+   "claim": "RecFibo calls"
+  },
+  {
+   "id": "P040",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "Donald Michie",
+    "Arthur Samuel"
+   ],
+   "claim": "origin of memoization"
+  },
+  {
+   "id": "P041",
+   "pages": [
+    121
+   ],
+   "terms": [
+    "repeated squaring",
+    "integer arithmetic operations"
+   ],
+   "claim": "Fibonacci by matrix power"
+  },
+  {
+   "id": "P042",
+   "pages": [
+    122
+   ],
+   "terms": [
+    "Ω(n) time just to write down",
+    "O(n2)"
+   ],
+   "claim": "arbitrary-precision caveat"
+  },
+  {
+   "id": "P043",
+   "pages": [
+    123,
+    124
+   ],
+   "terms": [
+    "recursion without repetition",
+    "Specification",
+    "Dynamic programming is not about filling in tables"
+   ],
+   "claim": "DP is recursion without repetition; specification"
+  },
+  {
+   "id": "P044",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "linear extension",
+    "Analyze space and running time"
+   ],
+   "claim": "evaluation order and analysis"
+  },
+  {
+   "id": "P045",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "Greedy algorithms never work",
+    "formal proof of correctness"
+   ],
+   "claim": "Greed is Stupid"
+  },
+  {
+   "id": "P046",
+   "pages": [
+    128
+   ],
+   "terms": [
+    "from O(n2) to O(n)"
+   ],
+   "claim": "LIS: O(n) space with two columns"
+  },
+  {
+   "id": "P047",
+   "pages": [
+    129
+   ],
+   "terms": [
+    "Levenshtein",
+    "Vintsyuk",
+    "Ulam"
+   ],
+   "claim": "names of edit distance"
+  },
+  {
+   "id": "P048",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "O(mn) space",
+    "O(mn) time"
+   ],
+   "claim": "edit distance: O(mn) space and time"
+  },
+  {
+   "id": "P049",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "O(n+m) additional time",
+    "SS(i, t)"
+   ],
+   "claim": "reconstruction O(n+m); Subset Sum recurrence"
+  },
+  {
+   "id": "P050",
+   "pages": [
+    135
+   ],
+   "terms": [
+    "O(nT)",
+    "isn't always an improvement"
+   ],
+   "claim": "Subset Sum O(nT); DP does not always help"
+  },
+  {
+   "id": "P051",
+   "pages": [
+    138
+   ],
+   "terms": [
+    "O(n3)",
+    "O(n2) space"
+   ],
+   "claim": "optimal BST O(n^3)"
+  },
+  {
+   "id": "P052",
+   "pages": [
+    140
+   ],
+   "terms": [
+    "O(n) time",
+    "MISyes"
+   ],
+   "claim": "tree DP O(n)"
+  },
+  {
+   "id": "P053",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "Dream-Dollars",
+    "English specification"
+   ],
+   "claim": "Nadiria's notes exercise; English specification"
+  },
+  {
+   "id": "P054",
+   "pages": [
+    253,
+    254
+   ],
+   "terms": [
+    "NP-hard",
+    "longest path"
+   ],
+   "claim": "longest path in a dag vs general graph"
+  },
+  {
+   "id": "P055",
+   "pages": [
+    255
+   ],
+   "terms": [
+    "cannot be recast"
+   ],
+   "claim": "tree problems do not become dag paths"
+  },
+  {
+   "id": "P056",
+   "pages": [
+    178
+   ],
+   "terms": [
+    "Lemma 4.1",
+    "nuke"
+   ],
+   "claim": "tape: Lemma 4.1"
+  },
+  {
+   "id": "P057",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "Lemma 4.2",
+    "L/F"
+   ],
+   "claim": "tape with frequencies: L/F ratio"
+  },
+  {
+   "id": "P058",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "O(n3)",
+    "Soberday",
+    "ﬁnish time"
+   ],
+   "claim": "intervals: O(n^3) DP and greedy by finish time"
+  },
+  {
+   "id": "P059",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "exchange argument",
+    "Lemma 4.3"
+   ],
+   "claim": "intervals: exchange argument"
+  },
+  {
+   "id": "P060",
+   "pages": [
+    182,
+    183
+   ],
+   "terms": [
+    "inductive exchange argument",
+    "First” difference"
+   ],
+   "claim": "general exchange pattern"
+  },
+  {
+   "id": "P061",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "prefix-free"
+   ],
+   "claim": "prefix-free code"
+  },
+  {
+   "id": "P062",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "649 bits"
+   ],
+   "claim": "Sallows's example"
+  },
+  {
+   "id": "P063",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "2n −1 Inserts",
+    "2n −2 ExtractMins"
+   ],
+   "claim": "Huffman: 2n-1 Inserts and 2n-2 ExtractMins"
+  },
+  {
+   "id": "P064",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "offers its position",
+    "doctor"
+   ],
+   "claim": "hospital offers the position to the doctor"
+  },
+  {
+   "id": "P065",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "at most n2 offers",
+    "Ω(n2)"
+   ],
+   "claim": "Gale-Shapley n^2 offers"
+  },
+  {
+   "id": "P066",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "Corollary 4.8",
+    "Corollary 4.9",
+    "1998"
+   ],
+   "claim": "optimal for hospitals; worst for doctors; NRMP reversed it"
+  },
+  {
+   "id": "P067",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "pair of sets (V, E)"
+   ],
+   "claim": "graph = pair of sets"
+  },
+  {
+   "id": "P068",
+   "pages": [
+    211
+   ],
+   "terms": [
+    "dependency graph",
+    "directed acyclic graphs"
+   ],
+   "claim": "dependency graph and dag"
+  },
+  {
+   "id": "P069",
+   "pages": [
+    213,
+    214
+   ],
+   "terms": [
+    "O(V + E)",
+    "O(1 + deg(u))"
+   ],
+   "claim": "adjacency list"
+  },
+  {
+   "id": "P070",
+   "pages": [
+    215
+   ],
+   "terms": [
+    "Θ(V 2) space"
+   ],
+   "claim": "adjacency matrix Theta(V^2)"
+  },
+  {
+   "id": "P071",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "Table 5.1"
+   ],
+   "claim": "table of operations"
+  },
+  {
+   "id": "P072",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "standard adjacency list"
+   ],
+   "claim": "standard adjacency list convention"
+  },
+  {
+   "id": "P073",
+   "pages": [
+    219
+   ],
+   "terms": [
+    "O(V + ET)",
+    "O(V 2 + ET)"
+   ],
+   "claim": "WFS O(V+ET)"
+  },
+  {
+   "id": "P074",
+   "pages": [
+    220
+   ],
+   "terms": [
+    "O(V + E log E)",
+    "best-first"
+   ],
+   "claim": "best-first O(V+E log E)"
+  },
+  {
+   "id": "P075",
+   "pages": [
+    246
+   ],
+   "terms": [
+    "new",
+    "active",
+    "finished"
+   ],
+   "claim": "DFS states"
+  },
+  {
+   "id": "P076",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "forward edge",
+    "back edges",
+    "cross edges",
+    "tree edge"
+   ],
+   "claim": "edge classification"
+  },
+  {
+   "id": "P077",
+   "pages": [
+    249
+   ],
+   "terms": [
+    "IsAcyclic",
+    "Active"
+   ],
+   "claim": "cycle detection"
+  },
+  {
+   "id": "P078",
+   "pages": [
+    250
+   ],
+   "terms": [
+    "reversal of any postordering"
+   ],
+   "claim": "reverse postorder = topological order"
+  },
+  {
+   "id": "P079",
+   "pages": [
+    256
+   ],
+   "terms": [
+    "O(V E) time"
+   ],
+   "claim": "naive SCC O(VE)"
+  },
+  {
+   "id": "P080",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "Kosaraju",
+    "1978",
+    "1981"
+   ],
+   "claim": "Kosaraju-Sharir"
+  },
+  {
+   "id": "P081",
+   "pages": [
+    259
+   ],
+   "terms": [
+    "PushPostRevDFS"
+   ],
+   "claim": "phase 1 on rev(G)"
+  },
+  {
+   "id": "P082",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "O(V + E) time",
+    "Tarjan"
+   ],
+   "claim": "Tarjan O(V+E)"
+  },
+  {
+   "id": "P083",
+   "pages": [
+    276
+   ],
+   "terms": [
+    "unique minimum spanning tree"
+   ],
+   "claim": "distinct weights => unique MST"
+  },
+  {
+   "id": "P084",
+   "pages": [
+    277
+   ],
+   "terms": [
+    "safe",
+    "useless"
+   ],
+   "claim": "safe and useless edges"
+  },
+  {
+   "id": "P085",
+   "pages": [
+    278
+   ],
+   "terms": [
+    "Lemma 7.2",
+    "Prim"
+   ],
+   "claim": "Lemma 7.2"
+  },
+  {
+   "id": "P086",
+   "pages": [
+    280
+   ],
+   "terms": [
+    "O(E log V)",
+    "Add ALL the safe edges"
+   ],
+   "claim": "Boruvka O(E log V)"
+  },
+  {
+   "id": "P087",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "O(E log E) = O(E log V)",
+    "Fibonacci heap"
+   ],
+   "claim": "Jarnik with a binary heap"
+  },
+  {
+   "id": "P088",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "O(E + V log V)"
+   ],
+   "claim": "Jarnik with a Fibonacci heap"
+  },
+  {
+   "id": "P089",
+   "pages": [
+    285
+   ],
+   "terms": [
+    "MakeSet",
+    "Find",
+    "Union",
+    "inverse Ackerman"
+   ],
+   "claim": "Kruskal and union-find"
+  },
+  {
+   "id": "P090",
+   "pages": [
+    293
+   ],
+   "terms": [
+    "negative cycle",
+    "no shortest path"
+   ],
+   "claim": "negative cycle"
+  },
+  {
+   "id": "P091",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "tense"
+   ],
+   "claim": "tense edge"
+  },
+  {
+   "id": "P092",
+   "pages": [
+    299
+   ],
+   "terms": [
+    "O(V + E) time"
+   ],
+   "claim": "BFS O(V+E)"
+  },
+  {
+   "id": "P093",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "DagSSSP"
+   ],
+   "claim": "shortest paths in a dag"
+  },
+  {
+   "id": "P094",
+   "pages": [
+    306
+   ],
+   "terms": [
+    "O(E log V)",
+    "NonnegativeDijkstra",
+    "O(V2)"
+   ],
+   "claim": "Dijkstra O(E log V); original version O(V^2)"
+  },
+  {
+   "id": "P095",
+   "pages": [
+    307
+   ],
+   "terms": [
+    "exponential",
+    "Shier and Witzgall"
+   ],
+   "claim": "Dijkstra with negative edges may be exponential"
+  },
+  {
+   "id": "P096",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "V −1 iterations",
+    "O(VE)"
+   ],
+   "claim": "Bellman-Ford"
+  },
+  {
+   "id": "P097",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "Increasing all the edge weights by 2 changes the shortest path",
+    "Fibonacci heap"
+   ],
+   "claim": "adding a constant does not work; Johnson with Fibonacci"
+  },
+  {
+   "id": "P098",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "O(VE log V)",
+    "exit tax"
+   ],
+   "claim": "Johnson O(VE log V)"
+  },
+  {
+   "id": "P099",
+   "pages": [
+    337
+   ],
+   "terms": [
+    "O(V3) time"
+   ],
+   "claim": "Floyd-Warshall O(V^3)"
+  },
+  {
+   "id": "P100",
+   "pages": [
+    345,
+    346
+   ],
+   "terms": [
+    "44 vertices",
+    "105 edges"
+   ],
+   "claim": "Harris-Ross"
+  },
+  {
+   "id": "P101",
+   "pages": [
+    347
+   ],
+   "terms": [
+    "conservation",
+    "feasible"
+   ],
+   "claim": "feasible flow"
+  },
+  {
+   "id": "P102",
+   "pages": [
+    348
+   ],
+   "terms": [
+    "Lemma 10.1"
+   ],
+   "claim": "weak duality"
+  },
+  {
+   "id": "P103",
+   "pages": [
+    349
+   ],
+   "terms": [
+    "Maxflow-Mincut Theorem"
+   ],
+   "claim": "maxflow-mincut theorem"
+  },
+  {
+   "id": "P104",
+   "pages": [
+    350
+   ],
+   "terms": [
+    "residual graph",
+    "augmenting path"
+   ],
+   "claim": "residual graph and augmenting path"
+  },
+  {
+   "id": "P105",
+   "pages": [
+    352
+   ],
+   "terms": [
+    "Integrality Theorem",
+    "Edmonds and Karp"
+   ],
+   "claim": "Ford-Fulkerson and integrality"
+  },
+  {
+   "id": "P106",
+   "pages": [
+    353,
+    354
+   ],
+   "terms": [
+    "Zwick",
+    "irrational"
+   ],
+   "claim": "irrational capacities"
+  },
+  {
+   "id": "P107",
+   "pages": [
+    355
+   ],
+   "terms": [
+    "Flow Decomposition Theorem"
+   ],
+   "claim": "decomposition"
+  },
+  {
+   "id": "P108",
+   "pages": [
+    358,
+    359
+   ],
+   "terms": [
+    "fattest",
+    "polynomial function of the input size"
+   ],
+   "claim": "Edmonds-Karp fattest path"
+  },
+  {
+   "id": "P109",
+   "pages": [
+    360
+   ],
+   "terms": [
+    "O(VE2)",
+    "V/2 times"
+   ],
+   "claim": "Edmonds-Karp O(VE^2)"
+  },
+  {
+   "id": "P110",
+   "pages": [
+    361
+   ],
+   "terms": [
+    "Orlin",
+    "O(V E)"
+   ],
+   "claim": "Orlin O(VE)"
+  },
+  {
+   "id": "P111",
+   "pages": [
+    371
+   ],
+   "terms": [
+    "edge-disjoint"
+   ],
+   "claim": "edge-disjoint paths"
+  },
+  {
+   "id": "P112",
+   "pages": [
+    372
+   ],
+   "terms": [
+    "vin",
+    "vout",
+    "Ford and Fulkerson"
+   ],
+   "claim": "vertex splitting"
+  },
+  {
+   "id": "P113",
+   "pages": [
+    374
+   ],
+   "terms": [
+    "Hopcroft",
+    "alternating path"
+   ],
+   "claim": "matching and Hopcroft-Karp"
+  },
+  {
+   "id": "P114",
+   "pages": [
+    376
+   ],
+   "terms": [
+    "NP-hard"
+   ],
+   "claim": "non-adjacent tuples would be NP-hard"
+  },
+  {
+   "id": "P115",
+   "pages": [
+    379
+   ],
+   "terms": [
+    "matching of size V −k"
+   ],
+   "claim": "path cover in a dag"
+  },
+  {
+   "id": "P116",
+   "pages": [
+    382
+   ],
+   "terms": [
+    "W[n] + R[n] −W[i]"
+   ],
+   "claim": "baseball elimination"
+  },
+  {
+   "id": "P117",
+   "pages": [
+    383
+   ],
+   "terms": [
+    "saturates every edge leaving s"
+   ],
+   "claim": "baseball: saturate the edges from s"
+  },
+  {
+   "id": "P118",
+   "pages": [
+    385
+   ],
+   "terms": [
+    "Project selection",
+    "total proﬁt of P"
+   ],
+   "claim": "project selection"
+  },
+  {
+   "id": "P119",
+   "pages": [
+    399
+   ],
+   "terms": [
+    "co-NP",
+    "polynomial time"
+   ],
+   "claim": "P, NP, co-NP"
+  },
+  {
+   "id": "P120",
+   "pages": [
+    400
+   ],
+   "terms": [
+    "Millennium Prize"
+   ],
+   "claim": "P vs NP is open"
+  },
+  {
+   "id": "P121",
+   "pages": [
+    401
+   ],
+   "terms": [
+    "NP-complete",
+    "Cook",
+    "Levin"
+   ],
+   "claim": "NP-complete and Cook-Levin"
+  },
+  {
+   "id": "P122",
+   "pages": [
+    402
+   ],
+   "terms": [
+    "even sketch a proof",
+    "Turing"
+   ],
+   "claim": "Cook-Levin without proof"
+  },
+  {
+   "id": "P123",
+   "pages": [
+    403
+   ],
+   "terms": [
+    "Karp reductions",
+    "Cook reductions"
+   ],
+   "claim": "Cook and Karp reductions"
+  },
+  {
+   "id": "P124",
+   "pages": [
+    404
+   ],
+   "terms": [
+    "reduce a known NP-hard problem"
+   ],
+   "claim": "direction of the reduction"
+  },
+  {
+   "id": "P125",
+   "pages": [
+    406
+   ],
+   "terms": [
+    "3CNF formula",
+    "exactly three literals"
+   ],
+   "claim": "3CNF"
+  },
+  {
+   "id": "P126",
+   "pages": [
+    408
+   ],
+   "terms": [
+    "exactly 3k vertices"
+   ],
+   "claim": "independent set from 3Sat"
+  },
+  {
+   "id": "P127",
+   "pages": [
+    410
+   ],
+   "terms": [
+    "three things"
+   ],
+   "claim": "general pattern: three tasks"
+  },
+  {
+   "id": "P128",
+   "pages": [
+    411
+   ],
+   "terms": [
+    "certificate"
+   ],
+   "claim": "certificates"
+  },
+  {
+   "id": "P129",
+   "pages": [
+    414
+   ],
+   "terms": [
+    "truth gadget",
+    "Other"
+   ],
+   "claim": "3Color: truth gadget T,F,X"
+  },
+  {
+   "id": "P130",
+   "pages": [
+    420
+   ],
+   "terms": [
+    "traveling salesman"
+   ],
+   "claim": "TSP"
+  },
+  {
+   "id": "P131",
+   "pages": [
+    421
+   ],
+   "terms": [
+    "base 4"
+   ],
+   "claim": "Subset Sum in base 4"
+  },
+  {
+   "id": "P132",
+   "pages": [
+    422
+   ],
+   "terms": [
+    "pseudo-polynomial",
+    "weakly NP-hard",
+    "strongly NP-hard"
+   ],
+   "claim": "pseudopolynomial"
+  },
+  {
+   "id": "P133",
+   "pages": [
+    424
+   ],
+   "terms": [
+    "LongestPath",
+    "simple"
+   ],
+   "claim": "longest path is NP-hard"
+  },
+  {
+   "id": "P134",
+   "pages": [
+    426
+   ],
+   "terms": [
+    "Sat or Partition",
+    "3Color"
+   ],
+   "claim": "how to choose the source problem"
+  },
+  {
+   "id": "P135",
+   "pages": [
+    430
+   ],
+   "terms": [
+    "PSPACE"
+   ],
+   "claim": "PSPACE"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "terms": [
+    "minimax",
+    "min-max"
+   ],
+   "claim": "the book does NOT contain minimax"
+  },
+  {
+   "id": "N002",
+   "terms": [
+    "alpha-beta",
+    "alpha beta",
+    "alphabeta"
+   ],
+   "claim": "the book does NOT contain alpha-beta pruning"
+  },
+  {
+   "id": "N003",
+   "terms": [
+    "patience sorting"
+   ],
+   "claim": "LIS in O(n log n) by patience sorting is not covered"
+  },
+  {
+   "id": "N004",
+   "terms": [
+    "Knuth-Yao"
+   ],
+   "claim": "Knuth-Yao is not covered"
+  },
+  {
+   "id": "N005",
+   "terms": [
+    "greedy choice property"
+   ],
+   "claim": "the term 'greedy choice property' is not used"
+  },
+  {
+   "id": "N006",
+   "terms": [
+    "overlapping subproblems"
+   ],
+   "claim": "the term 'overlapping subproblems' is not used"
+  },
+  {
+   "id": "N007",
+   "terms": [
+    "applicant-optimal",
+    "institution-pessimal"
+   ],
+   "claim": "v1 terms for Gale-Shapley do not appear"
+  },
+  {
+   "id": "N008",
+   "terms": [
+    "Menger"
+   ],
+   "claim": "Menger's theorem is not cited"
+  },
+  {
+   "id": "N009",
+   "terms": [
+    "re:K[oőö]nig.{0,3}s (theorem|min)"
+   ],
+   "claim": "König's theorem is not stated"
+  },
+  {
+   "id": "N010",
+   "terms": [
+    "unit-cost",
+    "unit cost"
+   ],
+   "claim": "unit cost of the RAM model is not stipulated"
+  },
+  {
+   "id": "N011",
+   "terms": [
+    "re:master theorem(?!, see)"
+   ],
+   "claim": "Master Theorem is not presented (only in the index)"
+  },
+  {
+   "id": "N012",
+   "terms": [
+    "branch and bound",
+    "branch-and-bound"
+   ],
+   "claim": "branch and bound is not covered"
+  },
+  {
+   "id": "N013",
+   "terms": [
+    "convex hull",
+    "suffix tree"
+   ],
+   "claim": "computational geometry and suffix trees are not covered"
+  },
+  {
+   "id": "N014",
+   "terms": [
+    "cut property"
+   ],
+   "claim": "the term 'cut property' is not used (the book says safe edge)"
+  },
+  {
+   "id": "N015",
+   "terms": [
+    "Bloom filter",
+    "van Emde Boas"
+   ],
+   "claim": "Bloom filters and vEB are not covered"
+  },
+  {
+   "id": "N016",
+   "terms": [
+    "Ladner",
+    "NP-intermediate"
+   ],
+   "claim": "NP-intermediate is not covered"
+  },
+  {
+   "id": "N017",
+   "terms": [
+    "approximation algorithm"
+   ],
+   "claim": "approximation algorithms are not covered"
+  },
+  {
+   "id": "N018",
+   "terms": [
+    "Knuth-Morris-Pratt",
+    "KMP"
+   ],
+   "claim": "KMP is not covered"
+  },
+  {
+   "id": "N019",
+   "terms": [
+    "simulated annealing"
+   ],
+   "claim": "metaheuristics are not covered"
+  },
+  {
+   "id": "N020",
+   "terms": [
+    "Chernoff",
+    "heapsort"
+   ],
+   "claim": "Chernoff and heapsort are not covered"
+  },
+  {
+   "id": "N021",
+   "terms": [
+    "Gabow"
+   ],
+   "claim": "Gabow's SCC algorithm is not cited"
+  },
+  {
+   "id": "N022",
+   "terms": [
+    "re:greedy (algorithms )?(always|usually) (work|find)"
+   ],
+   "claim": "the book does not say that greedy algorithms always work"
+  },
+  {
+   "id": "N023",
+   "terms": [
+    "Hamiltonian cycle is in NP"
+   ],
+   "claim": "membership of Hamiltonian cycle in NP is not stated"
+  },
+  {
+   "id": "N024",
+   "terms": [
+    "O(n log n) time to compute the LIS",
+    "LIS in O(n log n)"
+   ],
+   "claim": "LIS n log n is not stated"
+  }
+ ]
+}

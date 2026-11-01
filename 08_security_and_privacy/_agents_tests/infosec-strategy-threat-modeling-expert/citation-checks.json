@@ -1,0 +1,993 @@
+{
+ "_comment": "Each item asserts that the indicated PDF page(s) contain ALL the substrings (positive: contains) or NONE of them as a whole word (negative: absent). Normalization: lowercase, collapsed whitespace, line-break hyphenation removed, straight quotes. Convention: PDF page; DZ printed = PDF - 17; TMM PDF = document.",
+ "checks": [
+  {
+   "cite": "TMM p.1",
+   "contains": [
+    "analyzing representations of a system",
+    "security and privacy characteristics"
+   ],
+   "claim": "definition of threat modeling"
+  },
+  {
+   "cite": "TMM p.1",
+   "contains": [
+    "four key questions",
+    "What are we working on",
+    "What can go wrong",
+    "What are we going to do about it",
+    "Did we do a good enough job"
+   ],
+   "claim": "the four questions"
+  },
+  {
+   "cite": "TMM p.1",
+   "contains": [
+    "methodology-agnostic",
+    "not a how-to",
+    "Agile Manifesto"
+   ],
+   "claim": "methodology-agnostic, not a how-to, Agile Manifesto format"
+  },
+  {
+   "cite": "TMM p.1",
+   "contains": [
+    "privacy, safety, and security",
+    "Everyone"
+   ],
+   "claim": "who should do it"
+  },
+  {
+   "cite": "TMM p.1",
+   "contains": [
+    "checkbox compliance",
+    "continuous refinement",
+    "Doing threat modeling over talking about it",
+    "journey of understanding",
+    "People and collaboration"
+   ],
+   "claim": "the five values"
+  },
+  {
+   "cite": "TMM p.2",
+   "contains": [
+    "early and frequent analysis",
+    "manageable portions",
+    "value to stakeholders",
+    "Dialog is key"
+   ],
+   "claim": "the four principles"
+  },
+  {
+   "cite": "TMM p.2",
+   "contains": [
+    "Systematic Approach",
+    "Informed Creativity",
+    "Varied Viewpoints",
+    "Useful Toolkit",
+    "Theory into Practice"
+   ],
+   "claim": "the five patterns"
+  },
+  {
+   "cite": "TMM p.2",
+   "contains": [
+    "Hero Threat Modeler",
+    "Admiration for the",
+    "Tendency to",
+    "Perfect Representation",
+    "multiple threat modeling representations"
+   ],
+   "claim": "the four anti-patterns"
+  },
+  {
+   "cite": "TMM p.2",
+   "contains": [
+    "innate ability",
+    "big picture",
+    "interdependent"
+   ],
+   "claim": "text of Hero and Overfocus"
+  },
+  {
+   "cite": "TMM p.3",
+   "contains": [
+    "Creative Commons Attribution 4.0",
+    "Adam Shostack",
+    "Kim Wuyts",
+    "Loren Kohnfelder",
+    "Sheila Kamath"
+   ],
+   "claim": "authors, license and reviewers"
+  },
+  {
+   "cite": "DZ p.2",
+   "contains": [
+    "Joseph MacMillan",
+    "Infosec Strategies"
+   ],
+   "claim": "title and author"
+  },
+  {
+   "cite": "DZ p.3",
+   "contains": [
+    "Packt Publishing",
+    "April 2021",
+    "978-1-80056-635-4"
+   ],
+   "claim": "publisher, date and ISBN"
+  },
+  {
+   "cite": "DZ p.5",
+   "contains": [
+    "Global Black Belt",
+    "CISSP"
+   ],
+   "claim": "author bio"
+  },
+  {
+   "cite": "DZ p.6",
+   "contains": [
+    "Kyle Reidell"
+   ],
+   "claim": "reviewer"
+  },
+  {
+   "cite": "DZ p.14",
+   "contains": [
+    "CISSP or CISM"
+   ],
+   "claim": "book audience"
+  },
+  {
+   "cite": "DZ p.22",
+   "contains": [
+    "CIA Triad",
+    "non-repudiation"
+   ],
+   "claim": "CIA triad and non-repudiation"
+  },
+  {
+   "cite": "DZ p.23",
+   "contains": [
+    "Risk = Impact x Likelihood",
+    "potential for loss"
+   ],
+   "claim": "risk formula"
+  },
+  {
+   "cite": "DZ p.24",
+   "contains": [
+    "asset register",
+    "crown jewel",
+    "anything of value"
+   ],
+   "claim": "asset and register"
+  },
+  {
+   "cite": "DZ p.25",
+   "contains": [
+    "threat modeling",
+    "malicious outsiders",
+    "accidental insiders",
+    "ability, their interest, and their tactics"
+   ],
+   "claim": "threats, actors and use of threat modeling"
+  },
+  {
+   "cite": "DZ p.26",
+   "contains": [
+    "State-sponsored",
+    "placeholder"
+   ],
+   "claim": "state actor and placeholder"
+  },
+  {
+   "cite": "DZ p.28",
+   "contains": [
+    "catastrophic",
+    "annual revenue",
+    "negligible"
+   ],
+   "claim": "impact scale"
+  },
+  {
+   "cite": "DZ p.29",
+   "contains": [
+    "once per year or more",
+    "once every 10 or more years",
+    "Percentage of revenue might not be"
+   ],
+   "claim": "likelihood scale"
+  },
+  {
+   "cite": "DZ p.33",
+   "contains": [
+    "risk appetite",
+    "avoid",
+    "reduce",
+    "transfer",
+    "accept"
+   ],
+   "claim": "appetite and treatment"
+  },
+  {
+   "cite": "DZ p.34",
+   "contains": [
+    "residual risk",
+    "risk register",
+    "hunter2"
+   ],
+   "claim": "residual risk and risk register"
+  },
+  {
+   "cite": "DZ p.35",
+   "contains": [
+    "ISO 27001",
+    "GDPR",
+    "Brazil"
+   ],
+   "claim": "compliance"
+  },
+  {
+   "cite": "DZ p.36",
+   "contains": [
+    "Business-to-Business",
+    "200 updates per day"
+   ],
+   "claim": "B2B certifications and regulatory updates"
+  },
+  {
+   "cite": "DZ p.37",
+   "contains": [
+    "Sarbanes-Oxley",
+    "7 years",
+    "subject access request"
+   ],
+   "claim": "SOX and SAR"
+  },
+  {
+   "cite": "DZ p.38",
+   "contains": [
+    "eDiscovery",
+    "pseudonymization"
+   ],
+   "claim": "investigations"
+  },
+  {
+   "cite": "DZ p.39",
+   "contains": [
+    "RAID-0",
+    "continuous improvement"
+   ],
+   "claim": "continuous improvement with RAID"
+  },
+  {
+   "cite": "DZ p.41",
+   "contains": [
+    "blame the victim",
+    "phishing simulations"
+   ],
+   "claim": "training and blaming the victim"
+  },
+  {
+   "cite": "DZ p.43",
+   "contains": [
+    "Vendor Security Assessment Questionnaire",
+    "due diligence and due care",
+    "CAIQ"
+   ],
+   "claim": "VSAQ and CAIQ"
+  },
+  {
+   "cite": "DZ p.44",
+   "contains": [
+    "defense-in-depth",
+    "complexity, which is the enemy of security"
+   ],
+   "claim": "defense in depth and complexity"
+  },
+  {
+   "cite": "DZ p.48",
+   "contains": [
+    "ultimately senior management who is responsible"
+   ],
+   "claim": "senior management responsibility"
+  },
+  {
+   "cite": "DZ p.49",
+   "contains": [
+    "Web application firewall (WAF)",
+    "3 days"
+   ],
+   "claim": "risk communication template"
+  },
+  {
+   "cite": "DZ p.52",
+   "contains": [
+    "out of scope",
+    "do what you say"
+   ],
+   "claim": "ISMS scope"
+  },
+  {
+   "cite": "DZ p.53",
+   "contains": [
+    "114 controls",
+    "14 categories",
+    "Annex A",
+    "ISO 27002"
+   ],
+   "claim": "SoA and Annex A"
+  },
+  {
+   "cite": "DZ p.56",
+   "contains": [
+    "asset owner",
+    "complexity is the enemy of security"
+   ],
+   "claim": "asset owner"
+  },
+  {
+   "cite": "DZ p.57",
+   "contains": [
+    "Confidential",
+    "Restricted",
+    "Internal",
+    "Public",
+    "four classification options"
+   ],
+   "claim": "classification"
+  },
+  {
+   "cite": "DZ p.62",
+   "contains": [
+    "tabletop exercises",
+    "picture book"
+   ],
+   "claim": "playbooks and tabletops"
+  },
+  {
+   "cite": "DZ p.64",
+   "contains": [
+    "lone wolf"
+   ],
+   "claim": "executive sponsorship"
+  },
+  {
+   "cite": "DZ p.65",
+   "contains": [
+    "shadow IT"
+   ],
+   "claim": "shadow IT"
+  },
+  {
+   "cite": "DZ p.68",
+   "contains": [
+    "Data Loss Prevention",
+    "Project Neptune"
+   ],
+   "claim": "DLP"
+  },
+  {
+   "cite": "DZ p.71",
+   "contains": [
+    "Compensating Controls",
+    "Operational Controls",
+    "Preventative Controls"
+   ],
+   "claim": "control classes and types"
+  },
+  {
+   "cite": "DZ p.72",
+   "contains": [
+    "Delay the process",
+    "Recover from the compromised state"
+   ],
+   "claim": "order of defense in depth"
+  },
+  {
+   "cite": "DZ p.73",
+   "contains": [
+    "PCI-DSS",
+    "AES-256",
+    "Hashing"
+   ],
+   "claim": "encryption"
+  },
+  {
+   "cite": "DZ p.76",
+   "contains": [
+    "A.8.3.2",
+    "A.11.2.7",
+    "seven times",
+    "Cryptoshredding"
+   ],
+   "claim": "disposal"
+  },
+  {
+   "cite": "DZ p.80",
+   "contains": [
+    "threat-model the implementation"
+   ],
+   "claim": "threat model in Ch.3"
+  },
+  {
+   "cite": "DZ p.82",
+   "contains": [
+    "threat-modeling your organization",
+    "insider risks"
+   ],
+   "claim": "insiders"
+  },
+  {
+   "cite": "DZ p.83",
+   "contains": [
+    "Thycotic",
+    "51%"
+   ],
+   "claim": "motivations"
+  },
+  {
+   "cite": "DZ p.85",
+   "contains": [
+    "NIST SP 800-39",
+    "advanced persistent threats",
+    "Remain undetected"
+   ],
+   "claim": "APT"
+  },
+  {
+   "cite": "DZ p.86",
+   "contains": [
+    "ISO/IEC 27005"
+   ],
+   "claim": "vulnerability classes"
+  },
+  {
+   "cite": "DZ p.89",
+   "contains": [
+    "NIST SP 800-30",
+    "Supply chain activities"
+   ],
+   "claim": "organizational vulnerabilities"
+  },
+  {
+   "cite": "DZ p.93",
+   "contains": [
+    "FBI",
+    "depends on the risk"
+   ],
+   "claim": "ransomware"
+  },
+  {
+   "cite": "DZ p.99",
+   "contains": [
+    "Trusted Platform Module",
+    "NEAT",
+    "Non-bypassable",
+    "trusted computing base"
+   ],
+   "claim": "TPM, TCB, NEAT"
+  },
+  {
+   "cite": "DZ p.103",
+   "contains": [
+    "Just-In-Time",
+    "principle of least privilege"
+   ],
+   "claim": "least privilege"
+  },
+  {
+   "cite": "DZ p.104",
+   "contains": [
+    "assuming breach",
+    "NIST SP 800-207"
+   ],
+   "claim": "Zero Trust"
+  },
+  {
+   "cite": "DZ p.105",
+   "contains": [
+    "security through obscurity"
+   ],
+   "claim": "obscurity"
+  },
+  {
+   "cite": "DZ p.109",
+   "contains": [
+    "SCADA",
+    "airgap",
+    "Shodan"
+   ],
+   "claim": "SCADA"
+  },
+  {
+   "cite": "DZ p.123",
+   "contains": [
+    "security-through-obscurity",
+    "port 22"
+   ],
+   "claim": "SSH port is obscurity"
+  },
+  {
+   "cite": "DZ p.126",
+   "contains": [
+    "Deny-All, and then Whitelist",
+    "flat network",
+    "3306"
+   ],
+   "claim": "segmentation and deny-all"
+  },
+  {
+   "cite": "DZ p.139",
+   "contains": [
+    "castle-and-moat",
+    "microsegment"
+   ],
+   "claim": "Zero Trust in networks"
+  },
+  {
+   "cite": "DZ p.140",
+   "contains": [
+    "two-man principle",
+    "segregation of duties"
+   ],
+   "claim": "two-person principle"
+  },
+  {
+   "cite": "DZ p.147",
+   "contains": [
+    "No read up",
+    "No write down"
+   ],
+   "claim": "Bell-LaPadula"
+  },
+  {
+   "cite": "DZ p.149",
+   "contains": [
+    "Chinese wall",
+    "Biba"
+   ],
+   "claim": "Brewer-Nash and Biba"
+  },
+  {
+   "cite": "DZ p.154",
+   "contains": [
+    "multi-factor authentication",
+    "salted hash"
+   ],
+   "claim": "MFA and password"
+  },
+  {
+   "cite": "DZ p.158",
+   "contains": [
+    "pass-the-hash",
+    "SMB signing",
+    "GTX 1060"
+   ],
+   "claim": "NTLM"
+  },
+  {
+   "cite": "DZ p.165",
+   "contains": [
+    "tailgating",
+    "electronic access control"
+   ],
+   "claim": "physical access"
+  },
+  {
+   "cite": "DZ p.172",
+   "contains": [
+    "Clause 9.3",
+    "Management Review"
+   ],
+   "claim": "ISO 27001 clauses 5 and 9.3"
+  },
+  {
+   "cite": "DZ p.173",
+   "contains": [
+    "Qualified Security Assessor",
+    "12 high-level requirements"
+   ],
+   "claim": "PCI-DSS"
+  },
+  {
+   "cite": "DZ p.175",
+   "contains": [
+    "Black Team",
+    "Red Team",
+    "$5,000"
+   ],
+   "claim": "types and budget"
+  },
+  {
+   "cite": "DZ p.179",
+   "contains": [
+    "1:1 clone",
+    "dummy dataset"
+   ],
+   "claim": "pentest clone environment"
+  },
+  {
+   "cite": "DZ p.188",
+   "contains": [
+    "dummy environment",
+    "certification bodies"
+   ],
+   "claim": "clone trade-off"
+  },
+  {
+   "cite": "DZ p.189",
+   "contains": [
+    "findings presentation",
+    "internally validating"
+   ],
+   "claim": "presentation and internal validation"
+  },
+  {
+   "cite": "DZ p.193",
+   "contains": [
+    "Automox",
+    "80%"
+   ],
+   "claim": "Automox survey"
+  },
+  {
+   "cite": "DZ p.196",
+   "contains": [
+    "CIS Benchmarks",
+    "Infrastructure as Code"
+   ],
+   "claim": "CIS and IaC"
+  },
+  {
+   "cite": "DZ p.198",
+   "contains": [
+    "policy as code",
+    "SaltStack"
+   ],
+   "claim": "policy as code and CCA"
+  },
+  {
+   "cite": "DZ p.199",
+   "contains": [
+    "HashiCorp Vault",
+    "65%"
+   ],
+   "claim": "secrets and 2019 statistic"
+  },
+  {
+   "cite": "DZ p.202",
+   "contains": [
+    "$700,000",
+    "tabletop"
+   ],
+   "claim": "DR"
+  },
+  {
+   "cite": "DZ p.203",
+   "contains": [
+    "Hot sites",
+    "Warm sites",
+    "Cold sites"
+   ],
+   "claim": "recovery sites"
+  },
+  {
+   "cite": "DZ p.205",
+   "contains": [
+    "roll-back plan"
+   ],
+   "claim": "change control"
+  },
+  {
+   "cite": "DZ p.206",
+   "contains": [
+    "security improvement program"
+   ],
+   "claim": "improvement program"
+  },
+  {
+   "cite": "DZ p.207",
+   "contains": [
+    "information security event",
+    "information security non-compliance"
+   ],
+   "claim": "ISO 27001 definitions according to the author"
+  },
+  {
+   "cite": "DZ p.213",
+   "contains": [
+    "Threat modeling",
+    "detection budget",
+    "response budget"
+   ],
+   "claim": "threat modeling in the detection strategy"
+  },
+  {
+   "cite": "DZ p.218",
+   "contains": [
+    "Credit card and banking information",
+    "Encryption keys"
+   ],
+   "claim": "what not to collect in the SIEM"
+  },
+  {
+   "cite": "DZ p.223",
+   "contains": [
+    "Heartbleed",
+    "CVE-2014-0160"
+   ],
+   "claim": "Heartbleed"
+  },
+  {
+   "cite": "DZ p.226",
+   "contains": [
+    "CSSLP",
+    "Secure Software Supply Chain"
+   ],
+   "claim": "CSSLP"
+  },
+  {
+   "cite": "DZ p.228",
+   "contains": [
+    "abuse cases",
+    "threat modeling",
+    "attack surface"
+   ],
+   "claim": "abuse cases = threat modeling"
+  },
+  {
+   "cite": "DZ p.229",
+   "contains": [
+    "ISO/IEC/IEEE 29119"
+   ],
+   "claim": "testing standard"
+  },
+  {
+   "cite": "DZ p.231",
+   "contains": [
+    "user story",
+    "As a <insert role>"
+   ],
+   "claim": "user story"
+  },
+  {
+   "cite": "DZ p.233",
+   "contains": [
+    "two-man principle",
+    "OWASP Top 10 Proactive Controls"
+   ],
+   "claim": "code review and Proactive Controls"
+  },
+  {
+   "cite": "DZ p.235",
+   "contains": [
+    "misuse user story",
+    "Dependency-Check"
+   ],
+   "claim": "misuse story"
+  },
+  {
+   "cite": "DZ p.239",
+   "contains": [
+    "HttpOnly",
+    "10 characters"
+   ],
+   "claim": "cookies and passwords"
+  },
+  {
+   "cite": "DZ p.247",
+   "contains": [
+    "bug bounty",
+    "Bugcrowd"
+   ],
+   "claim": "bug bounty"
+  },
+  {
+   "cite": "DZ p.250",
+   "contains": [
+    "public-key cryptography",
+    "DevSecOps"
+   ],
+   "claim": "signed commits and DevSecOps"
+  },
+  {
+   "cite": "DZ p.251",
+   "contains": [
+    "secrets checker",
+    "ephemeral"
+   ],
+   "claim": "pipeline"
+  },
+  {
+   "cite": "TMM p.1-3",
+   "absent": [
+    "STRIDE",
+    "DREAD",
+    "PASTA",
+    "LINDDUN"
+   ],
+   "claim": "TMM does not cite named threat modeling techniques"
+  },
+  {
+   "cite": "TMM p.1-3",
+   "absent": [
+    "data flow diagram",
+    "DFD",
+    "attack tree",
+    "trust boundary"
+   ],
+   "claim": "TMM has no DFD, attack tree or trust boundaries"
+  },
+  {
+   "cite": "TMM p.1-3",
+   "absent": [
+    "risk register",
+    "likelihood",
+    "ISO 27001",
+    "NIST"
+   ],
+   "claim": "TMM has no risk matrix or standards"
+  },
+  {
+   "cite": "TMM p.1-3",
+   "absent": [
+    "step-by-step",
+    "template",
+    "report"
+   ],
+   "claim": "TMM has no steps, template or report format"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "STRIDE",
+    "DREAD",
+    "PASTA",
+    "LINDDUN"
+   ],
+   "claim": "DZ does not cite named threat modeling techniques"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "attack tree",
+    "trust boundary",
+    "data flow diagram"
+   ],
+   "claim": "DZ has no attack tree, trust boundary or DFD"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "MITRE",
+    "kill chain",
+    "ATT&CK"
+   ],
+   "claim": "DZ has no MITRE ATT&CK or kill chain"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "SBOM",
+    "SLSA",
+    "Sigstore",
+    "CVSS"
+   ],
+   "claim": "DZ has no SBOM, SLSA, Sigstore or CVSS"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "NIST CSF",
+    "ISO 31000",
+    "COBIT",
+    "ITIL"
+   ],
+   "claim": "DZ has no NIST CSF, ISO 31000, COBIT or ITIL"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "Log4Shell",
+    "LGPD",
+    "NIS2",
+    "DORA"
+   ],
+   "claim": "DZ does not cite Log4Shell, LGPD, NIS2, DORA"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "What can go wrong",
+    "Threat Modeling Manifesto"
+   ],
+   "claim": "DZ does not have the four questions nor cite the Manifesto"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "WebAuthn",
+    "passkey",
+    "SAML",
+    "OAuth"
+   ],
+   "claim": "DZ does not cover WebAuthn, passkeys, SAML, OAuth"
+  },
+  {
+   "cite": "DZ p.20-252",
+   "absent": [
+    "SOAR",
+    "EDR",
+    "XDR"
+   ],
+   "claim": "DZ does not cover SOAR, EDR, XDR"
+  },
+  {
+   "cite": "DZ p.25",
+   "absent": [
+    "STRIDE",
+    "diagram"
+   ],
+   "claim": "p.25 (threats and actors) has no STRIDE or diagram"
+  },
+  {
+   "cite": "DZ p.228",
+   "absent": [
+    "STRIDE",
+    "DFD",
+    "data flow"
+   ],
+   "claim": "p.228 (abuse cases) has no STRIDE or DFD"
+  },
+  {
+   "cite": "DZ p.28-33",
+   "absent": [
+    "Monte Carlo",
+    "quantitative",
+    "annualized"
+   ],
+   "claim": "DZ p.28-33 has no quantitative risk analysis (ALE, Monte Carlo)"
+  },
+  {
+   "cite": "DZ p.53",
+   "absent": [
+    "93 controls",
+    "four themes"
+   ],
+   "claim": "DZ p.53 cites 114 controls (2013 edition), not the 93 of the 2022 edition"
+  },
+  {
+   "cite": "DZ p.76",
+   "absent": [
+    "800-88"
+   ],
+   "claim": "DZ p.76 does not cite NIST SP 800-88 on media sanitization"
+  },
+  {
+   "cite": "DZ p.239",
+   "absent": [
+    "8 characters",
+    "composition rules"
+   ],
+   "claim": "DZ p.239 cites 10 characters, not the current rule of 8 without composition"
+  },
+  {
+   "cite": "DZ p.209",
+   "absent": [
+    "Rev. 3"
+   ],
+   "claim": "DZ p.209 cites NIST 800-61 Rev. 2, not Rev. 3"
+  },
+  {
+   "cite": "DZ p.104",
+   "absent": [
+    "microsegmentation",
+    "ZTNA"
+   ],
+   "claim": "DZ p.104 (Zero Trust) does not cite microsegmentation (it appears on p.139) or ZTNA"
+  }
+ ]
+}

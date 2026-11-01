@@ -1,0 +1,81 @@
+{
+ "descricao": "Items from audit_tokens.py triaged manually and accepted (false positives from math scrambled by the PDF extraction, [inference] expressions, terms written with a hyphen or an acronym). Key = references/file|token. New items outside this list make the audit fail.",
+ "itens": [
+  {
+   "k": "references/algoritmos-gulosos.md|\\Theta(n\\log n)",
+   "motivo": "describes the v1 claim (corrected); the book gives O(n log n) on p.187"
+  },
+  {
+   "k": "references/algoritmos-gulosos.md|\\Theta(n)",
+   "motivo": "same"
+  },
+  {
+   "k": "references/aplicacoes-de-fluxo.md|O(|f^*|E)",
+   "motivo": "scrambled math (O(|f *| E)) on p.372"
+  },
+  {
+   "k": "references/aplicacoes-de-fluxo.md|Hopcroft-Karp",
+   "motivo": "the book writes 'John Hopcroft and Richard Karp' (p.374)"
+  },
+  {
+   "k": "references/aplicacoes-de-fluxo.md|O(\\sqrt V\\,E)",
+   "motivo": "scrambled math on p.374"
+  },
+  {
+   "k": "references/arvores-geradoras-e-caminhos-minimos.md|O(E\\alpha(V))",
+   "motivo": "alpha is Greek in the extraction (O(Eα(V)) p.285 note 6)"
+  },
+  {
+   "k": "references/arvores-geradoras-e-caminhos-minimos.md|O(V^2)",
+   "motivo": "declared [inference]: space of FW (p.337-338)"
+  },
+  {
+   "k": "references/backtracking.md|\\Theta(4^n/\\sqrt n)",
+   "motivo": "scrambled math (Θ(4n/pn)) on p.111"
+  },
+  {
+   "k": "references/casos-e-antipadroes.md|O(E|f^*|)",
+   "motivo": "scrambled math on p.352"
+  },
+  {
+   "k": "references/fluxo-maximo-e-cortes.md|O(E\\,|f^*|)",
+   "motivo": "scrambled math on p.352"
+  },
+  {
+   "k": "references/fluxo-maximo-e-cortes.md|O(E^2\\log E\\,\\log|f^*|)",
+   "motivo": "scrambled math on p.359"
+  },
+  {
+   "k": "references/fundamentos-e-analise.md|\\Theta(n^2)",
+   "motivo": "[inference] sentence about O vs Theta"
+  },
+  {
+   "k": "references/fundamentos-e-analise.md|O(1)",
+   "motivo": "sentence about arbitrary-precision arithmetic (p.122): the book says 'constant time'"
+  },
+  {
+   "k": "references/grafos-e-travessias.md|O(1+\\deg v)",
+   "motivo": "scrambled math on p.214"
+  },
+  {
+   "k": "references/grafos-e-travessias.md|O(1+\\deg u)",
+   "motivo": "scrambled math on p.214"
+  },
+  {
+   "k": "references/procedimentos.md|O(n^{\\log_c r})",
+   "motivo": "scrambled math (O(nlogc r)) on p.51"
+  },
+  {
+   "k": "references/programacao-dinamica.md|\\Theta(\\varphi^n)",
+   "motivo": "scrambled math (Θ(φn)) on p.117"
+  },
+  {
+   "k": "references/programacao-dinamica.md|O(1)",
+   "motivo": "O(1) per subproblem/arithmetic: the book says 'constant time'"
+  },
+  {
+   "k": "references/recursao-e-divisao-e-conquista.md|O(n^{\\log_2 3})",
+   "motivo": "scrambled math (O(nlog2 3)) on p.59"
+  }
+ ]
+}

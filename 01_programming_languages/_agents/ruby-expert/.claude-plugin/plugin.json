@@ -1,0 +1,18 @@
+{
+  "name": "ruby-expert",
+  "version": "2.0.0",
+  "description": "Expert on what is new in Ruby 3.0 to 3.4 based on the five official release notes (R30 to R34): Ractor, Fiber Scheduler, M:N threads, YJIT/MJIT/RJIT, RBS and TypeProf, Prism, pattern matching, `it`, Data, string literal warnings, ReDoS and Regexp.timeout, WASI and API removals. Cites the PDF page, labels [from source]/[inference]/[extrapolation]/[DATED] and states what the notes do not cover (Ruby 4.0, Rails, GVL).",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Platform"
+  },
+  "keywords": [
+    "ruby",
+    "release-notes",
+    "yjit",
+    "ractor",
+    "prism",
+    "regexp-timeout",
+    "rbs"
+  ]
+}

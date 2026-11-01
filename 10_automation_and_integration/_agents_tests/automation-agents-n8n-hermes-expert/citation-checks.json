@@ -1,0 +1,708 @@
+{
+ "fonte": "N8N=n8n-Docs.pdf, HERMES=Hermes-Agent-Docs.pdf",
+ "convencao": "PDF page (marker === PAGE N ===)",
+ "checks": [
+  {
+   "cite": "N8N p.1",
+   "contains": [
+    "fair-code licensed workflow automation tool",
+    "ai capabilities",
+    "business process automation"
+   ],
+   "claim": "n8n definition"
+  },
+  {
+   "cite": "N8N p.1",
+   "contains": [
+    "n8n docs",
+    "get started",
+    "deploy",
+    "build",
+    "nodes",
+    "connect"
+   ],
+   "claim": "menu tabs"
+  },
+  {
+   "cite": "N8N p.1",
+   "contains": [
+    "administe"
+   ],
+   "claim": "truncated tab label"
+  },
+  {
+   "cite": "N8N p.1",
+   "contains": [
+    "forum",
+    "ask",
+    "copy"
+   ],
+   "claim": "forum, ask, copy"
+  },
+  {
+   "cite": "N8N p.1",
+   "contains": [
+    "this website uses cookies",
+    "decline all",
+    "accept all",
+    "show details"
+   ],
+   "claim": "cookie banner"
+  },
+  {
+   "cite": "N8N p.2",
+   "contains": [
+    "get set up on n8n",
+    "try free then choose a plan",
+    "one-line setup",
+    "install using docker compose",
+    "use a cloud provider"
+   ],
+   "claim": "setup options"
+  },
+  {
+   "cite": "N8N p.2",
+   "contains": [
+    "build your first automation",
+    "build your first workflow"
+   ],
+   "claim": "first automation"
+  },
+  {
+   "cite": "N8N p.2",
+   "contains": [
+    "creating an api endpoint",
+    "ai agent chat",
+    "scrape and summarize webpages",
+    "joining different datasets"
+   ],
+   "claim": "examples"
+  },
+  {
+   "cite": "N8N p.2",
+   "contains": [
+    "get inspiration for what to automate"
+   ],
+   "claim": "title of the inspiration block"
+  },
+  {
+   "cite": "N8N p.2",
+   "contains": [
+    "understand key concepts",
+    "expressions for data transformation",
+    "flow logic",
+    "understand executions"
+   ],
+   "claim": "concepts"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "anthropic claude desktop",
+    "connecting claude desktop to n8n"
+   ],
+   "claim": "Claude Desktop card"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "anthropic claude code",
+    "claude mcp add --transport"
+   ],
+   "claim": "Claude Code card"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "open ai codex",
+    "codex mcp add n8n-mcp"
+   ],
+   "claim": "Codex card"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "n8n-mcp",
+    "https:///mcp"
+   ],
+   "claim": "URL with blank host"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "mcp server"
+   ],
+   "claim": "MCP server"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "company",
+    "n8n.io",
+    "careers",
+    "blog"
+   ],
+   "claim": "footer Company"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "resources",
+    "templates",
+    "academy",
+    "changelog"
+   ],
+   "claim": "footer Resources"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "legal and privacy",
+    "security",
+    "sustainable use license",
+    "privacy"
+   ],
+   "claim": "footer legal"
+  },
+  {
+   "cite": "N8N p.3",
+   "contains": [
+    "last updated 5 days ago",
+    "was this helpful"
+   ],
+   "claim": "relative dating"
+  },
+  {
+   "cite": "N8N p.4",
+   "contains": [
+    "2026 n8n",
+    "all rights reserved"
+   ],
+   "claim": "copyright"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "self-improving ai agent built by nous research"
+   ],
+   "claim": "what it is"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "only agent with a built-in learning loop",
+    "creates skills from experience",
+    "improves them during use"
+   ],
+   "claim": "promotional claim"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "nudges itself to persist knowledge",
+    "deepening model of who you are across sessions"
+   ],
+   "claim": "nudges and user model"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "get started",
+    "download desktop",
+    "view on github"
+   ],
+   "claim": "buttons"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "windows or macos",
+    "hermes desktop installer"
+   ],
+   "claim": "desktop installer"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "command-line and desktop applications"
+   ],
+   "claim": "CLI and desktop"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "without hermes desktop",
+    "command-line only install"
+   ],
+   "claim": "CLI only"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "linux / macos / wsl2 / android (termux)",
+    "windows (native)"
+   ],
+   "claim": "CLI platforms"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "curl -fssl",
+    "install.sh",
+    "| bash"
+   ],
+   "claim": "curl command"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "run in powershell",
+    "iex (irm",
+    "install.ps1"
+   ],
+   "claim": "PowerShell command"
+  },
+  {
+   "cite": "HERMES p.1",
+   "contains": [
+    "hermes-agent.nousresearch.com"
+   ],
+   "claim": "domain"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "installation guide",
+    "per-user vs root layout",
+    "windows-specific notes",
+    "platform support"
+   ],
+   "claim": "pointed-to guides"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "fastest path to a working agent",
+    "hermes setup --portal"
+   ],
+   "claim": "setup portal"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "one oauth covers a model plus all four tool gateway tools"
+   ],
+   "claim": "oauth and tool gateway"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "web search",
+    "image generation",
+    "tts",
+    "browser"
+   ],
+   "claim": "4 tools"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "nous portal"
+   ],
+   "claim": "Nous Portal"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "what is hermes agent"
+   ],
+   "claim": "what-is section"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "not a coding copilot tethered to an ide",
+    "chatbot wrapper around a single api"
+   ],
+   "claim": "negations"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "autonomous agent that gets more capable the longer it runs"
+   ],
+   "claim": "autonomous agent"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "$5 vps",
+    "gpu cluster",
+    "daytona, modal",
+    "telegram"
+   ],
+   "claim": "where it runs"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "install in 60 seconds"
+   ],
+   "claim": "60 seconds"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "quickstart tutorial",
+    "learning path",
+    "configuration",
+    "messaging gateway"
+   ],
+   "claim": "quick links 1"
+  },
+  {
+   "cite": "HERMES p.2",
+   "contains": [
+    "60+ built-in tools",
+    "memory system",
+    "persistent memory that grows across sessions"
+   ],
+   "claim": "quick links 2"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "skills system",
+    "procedural memory the agent creates and reuses"
+   ],
+   "claim": "skills"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "mcp integration",
+    "use mcp with hermes",
+    "filter their tools"
+   ],
+   "claim": "MCP quick links"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "voice mode",
+    "real-time voice interaction in cli, telegram, discord"
+   ],
+   "claim": "voice"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "soul.md",
+    "context files"
+   ],
+   "claim": "personality and context"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "command approval, authorization, container isolation"
+   ],
+   "claim": "security"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "tips & best practices",
+    "architecture",
+    "faq & troubleshooting"
+   ],
+   "claim": "remaining quick links"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "fts5 cross-session recall with llm",
+    "honcho dialectic user modeling"
+   ],
+   "claim": "FTS5 and Honcho"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "6 terminal backends",
+    "local, docker, ssh, daytona, singularity, modal"
+   ],
+   "claim": "backends"
+  },
+  {
+   "cite": "HERMES p.3",
+   "contains": [
+    "serverless persistence",
+    "hibernates when idle"
+   ],
+   "claim": "serverless persistence"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "20+ platforms from one gateway",
+    "telegram, discord, slack, whatsapp, signal, matrix"
+   ],
+   "claim": "platforms"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "microsoft teams",
+    "google chat",
+    "home assistant"
+   ],
+   "claim": "platforms 2"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "the lab behind hermes, nomos, and psyche"
+   ],
+   "claim": "Nous Research"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "nous portal, openrouter, openai, or any endpoint"
+   ],
+   "claim": "providers"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "built-in cron with delivery to any platform"
+   ],
+   "claim": "cron"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "isolated subagents",
+    "execute_code",
+    "single inference calls"
+   ],
+   "claim": "subagents"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "agentskills.io",
+    "skills hub"
+   ],
+   "claim": "open skills"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "one subscription via nous portal bundles all of them"
+   ],
+   "claim": "subscription"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "connect to any mcp server"
+   ],
+   "claim": "MCP"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "batch processing",
+    "trajectory export",
+    "rl training with atropos"
+   ],
+   "claim": "research"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "/llms.txt",
+    "/llms-full.txt",
+    "~17 kb",
+    "~1.8 mb"
+   ],
+   "claim": "llms.txt"
+  },
+  {
+   "cite": "HERMES p.4",
+   "contains": [
+    "/docs/llms.txt",
+    "generated fresh on every deploy"
+   ],
+   "claim": "docs/llms"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "open source",
+    "open-source"
+   ],
+   "claim": "n8n open source"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "webhook",
+    "credentials",
+    "credential"
+   ],
+   "claim": "webhooks/credentials"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "pricing",
+    "$",
+    "per month",
+    "enterprise"
+   ],
+   "claim": "prices"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "kubernetes",
+    "helm",
+    "queue mode",
+    "postgres",
+    "sqlite"
+   ],
+   "claim": "advanced infrastructure"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "version",
+    "v1",
+    "1.0"
+   ],
+   "claim": "n8n version"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "zapier",
+    "make",
+    "hermes"
+   ],
+   "claim": "other tools / Hermes"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "oauth",
+    "api key",
+    "token",
+    "bearer"
+   ],
+   "claim": "MCP authentication"
+  },
+  {
+   "cite": "N8N p.3",
+   "absent": [
+    "localhost",
+    "5678"
+   ],
+   "claim": "MCP host/port"
+  },
+  {
+   "cite": "N8N p.1-4",
+   "absent": [
+    "cron",
+    "python",
+    "javascript"
+   ],
+   "claim": "cron/languages (only the p.2 image has Schedule Trigger)"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "license",
+    "mit",
+    "apache",
+    "gpl"
+   ],
+   "claim": "Hermes license"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "version",
+    "v0",
+    "v1",
+    "release"
+   ],
+   "claim": "Hermes version"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "n8n",
+    "workflow"
+   ],
+   "claim": "mention of n8n/workflow"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "benchmark",
+    "accuracy",
+    "latency"
+   ],
+   "claim": "benchmarks"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "per month",
+    "/month",
+    "pricing"
+   ],
+   "claim": "portal price"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "uninstall",
+    "upgrade",
+    "hermes update"
+   ],
+   "claim": "update/removal"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "config.yaml",
+    "yaml",
+    "toml"
+   ],
+   "claim": "config format"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "claude",
+    "gemini",
+    "llama"
+   ],
+   "claim": "specific models beyond OpenAI/OpenRouter"
+  },
+  {
+   "cite": "HERMES p.1-4",
+   "absent": [
+    "windows 10",
+    "ubuntu",
+    "python 3",
+    "ram"
+   ],
+   "claim": "system requirements"
+  }
+ ]
+}

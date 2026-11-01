@@ -1,0 +1,8 @@
+theme,risk,probability,impact,systems
+Environmental,Earthquake,unlikely,critical,Datacenter SP
+Security,Phishing attack,highly likely,moderate,E-mail; VPN
+Infrastructure reliability,Power outage,0.4,severe,Frontend
+Security,DDoS/DoS attack,likely,severe,Frontend
+Security,Hardware security bug,almost never,minimal,
+Security,Emerging serious vulnerability,inevitable,moderate,All
+Security,Blank line,,,

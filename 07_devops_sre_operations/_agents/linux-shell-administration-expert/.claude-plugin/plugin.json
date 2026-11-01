@@ -1,0 +1,22 @@
+{
+  "name": "linux-shell-administration-expert",
+  "version": "1.0.0",
+  "description": "Specialist in shell fundamentals and Linux administration based on 'Introduction to Linux: A Hands on Guide' (Machtelt Garrels, TLDP, ed. 1.27, 2008, 223 pages): Bash and PATH, filesystem and permissions, processes and signals, at/cron, redirection, backup (tar/rsync/gpg), SSH and basic networking, basic security. Includes a lookup in the book index, a minimal static checker for shell scripts/crontabs and a chmod/umask permissions calculator. Marks 2008 content as [DATED] and forwards OS internals to the os-internals agent.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "linux",
+    "shell",
+    "bash",
+    "tldp",
+    "introduction-to-linux",
+    "chmod",
+    "umask",
+    "cron",
+    "ssh",
+    "tar",
+    "rsync",
+    "permissions",
+    "sysadmin"
+  ]
+}

@@ -1,0 +1,1 @@
+{"dev_dist":{"US":0.5,"India":0.5},"test_dist":{"China":0.5,"Other":0.5},"target_dist":{"US":0.25,"China":0.25,"India":0.25,"Other":0.25},"test_used_for_decisions":true,"metrics":["p","r"]}

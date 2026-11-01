@@ -1,0 +1,19 @@
+{
+  "name": "google-cloud-run-serverless-expert",
+  "version": "1.0.0",
+  "description": "Google Cloud Run specialist (fully managed, 2020) based on the book 'Building Serverless Applications with Google Cloud Run' (Wietse Venema, O'Reilly, 1st ed., Dec/2020): services and revisions, concurrency/autoscaling/throttling/cold start, container builds, Cloud SQL and Memorystore, VPC Connector, IAM and ID token, Cloud Tasks, Terraform, logs/trace and Knative. Marks limits, prices and flags as [DATED] and declares what it does not cover (Jobs, always-allocated CPU, Secret Manager, 2nd generation, probes).",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "google-cloud",
+    "cloud-run",
+    "serverless",
+    "containers",
+    "knative",
+    "cloud-sql",
+    "cloud-tasks",
+    "iam",
+    "terraform",
+    "gcloud"
+  ]
+}

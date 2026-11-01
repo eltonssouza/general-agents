@@ -1,0 +1,1607 @@
+{
+ "descricao": "Fidelity checks for the java-backend-frameworks-expert package: positive (the text contains) and negative (the text does NOT contain). Pages = PDF.",
+ "checks": [
+  {
+   "cite": "SB3G p.2",
+   "claim": "title and author",
+   "contains": [
+    "mastering spring boot 3.0",
+    "ahmet meric"
+   ]
+  },
+  {
+   "cite": "SB3G p.3",
+   "claim": "publisher, date and ISBN",
+   "contains": [
+    "packt publishing",
+    "first published: july 2024",
+    "978-1-80323-078-8"
+   ]
+  },
+  {
+   "cite": "SB3G p.15",
+   "claim": "JDK 17 and Gradle 8.7 requirements",
+   "contains": [
+    "jdk 17",
+    "gradle 8.7"
+   ]
+  },
+  {
+   "cite": "SB3G p.15",
+   "claim": "preface promises custom starters",
+   "contains": [
+    "custom spring boot starters"
+   ]
+  },
+  {
+   "cite": "SB3G p.22",
+   "claim": "Java 17 minimum",
+   "contains": [
+    "java 17 is the minimum version"
+   ]
+  },
+  {
+   "cite": "SB3G p.30",
+   "claim": "Java 17 baseline",
+   "contains": [
+    "java 17 baseline"
+   ]
+  },
+  {
+   "cite": "SB3G p.80",
+   "claim": "divergence: Java 11 minimum",
+   "contains": [
+    "requires at least java 11"
+   ]
+  },
+  {
+   "cite": "SB3G p.31",
+   "claim": "GraalVM, Micrometer, Jakarta EE 10",
+   "contains": [
+    "graalvm",
+    "micrometer",
+    "jakarta ee 10"
+   ]
+  },
+  {
+   "cite": "SB3G p.32",
+   "claim": "RFC7807 and ProblemDetail",
+   "contains": [
+    "rfc7807",
+    "problemdetail"
+   ]
+  },
+  {
+   "cite": "SB3G p.45",
+   "claim": "microservices principles",
+   "contains": [
+    "autonomy",
+    "loose coupling",
+    "discoverability"
+   ]
+  },
+  {
+   "cite": "SB3G p.48",
+   "claim": "anti-corruption layer",
+   "contains": [
+    "anti-corruption layer"
+   ]
+  },
+  {
+   "cite": "SB3G p.52",
+   "claim": "CQRS is not for everything",
+   "contains": [
+    "one-size-fits-all solution"
+   ]
+  },
+  {
+   "cite": "SB3G p.56",
+   "claim": "inventory example: eight were left",
+   "contains": [
+    "eight products left"
+   ]
+  },
+  {
+   "cite": "SB3G p.66",
+   "claim": "SOA with ESB",
+   "contains": [
+    "event service bus"
+   ]
+  },
+  {
+   "cite": "SB3G p.79",
+   "claim": "Flux and Mono",
+   "contains": [
+    "flux and mono"
+   ]
+  },
+  {
+   "cite": "SB3G p.81",
+   "claim": "Initializr 3.2.5 with R2DBC and H2",
+   "contains": [
+    "3.2.5",
+    "spring data r2dbc",
+    "h2 database"
+   ]
+  },
+  {
+   "cite": "SB3G p.82",
+   "claim": "record User",
+   "contains": [
+    "public record user(@id long id, string name, string email)"
+   ]
+  },
+  {
+   "cite": "SB3G p.84",
+   "claim": "R2dbcRepository<User, String>",
+   "contains": [
+    "r2dbcrepository<user, string>",
+    "mono<user> findbyemail"
+   ]
+  },
+  {
+   "cite": "SB3G p.88",
+   "claim": "onErrorResume and bootRun",
+   "contains": [
+    "onerrorresume",
+    "./gradlew bootrun"
+   ]
+  },
+  {
+   "cite": "SB3G p.92",
+   "claim": "request(n)",
+   "contains": [
+    "request(n)"
+   ]
+  },
+  {
+   "cite": "SB3G p.93",
+   "claim": "backpressure strategies",
+   "contains": [
+    "buffering",
+    "dropping data",
+    "batching",
+    "rate limiting"
+   ]
+  },
+  {
+   "cite": "SB3G p.94",
+   "claim": "onBackpressureBuffer",
+   "contains": [
+    "onbackpressurebuffer"
+   ]
+  },
+  {
+   "cite": "SB3G p.95",
+   "claim": "300 concurrent requests",
+   "contains": [
+    "300 concurrent requests"
+   ]
+  },
+  {
+   "cite": "SB3G p.103",
+   "claim": "data jpa starter and Lombok",
+   "contains": [
+    "spring-boot-starter-data-jpa",
+    "lombok"
+   ]
+  },
+  {
+   "cite": "SB3G p.106",
+   "claim": "datasource and ddl-auto",
+   "contains": [
+    "jdbc:postgresql://localhost:5432/bookstore",
+    "spring.jpa.hibernate.ddl-auto=update"
+   ]
+  },
+  {
+   "cite": "SB3G p.107",
+   "claim": "JPA relationships",
+   "contains": [
+    "@manytomany",
+    "@manytoone"
+   ]
+  },
+  {
+   "cite": "SB3G p.113",
+   "claim": "Mongo URI and @Document",
+   "contains": [
+    "spring.data.mongodb.uri=mongodb://localhost:27017/bookstore",
+    "@document(collection = \"reviews\")"
+   ]
+  },
+  {
+   "cite": "SB3G p.117",
+   "claim": "cache starter and @EnableCaching",
+   "contains": [
+    "spring-boot-starter-cache",
+    "@enablecaching"
+   ]
+  },
+  {
+   "cite": "SB3G p.118",
+   "claim": "@CacheEvict by key and @Cacheable",
+   "contains": [
+    "key = \"#id\"",
+    "@cacheable"
+   ]
+  },
+  {
+   "cite": "SB3G p.121",
+   "claim": "Job/Step with chunk of 10",
+   "contains": [
+    "jobbuilder",
+    "runidincrementer",
+    "chunk(10"
+   ]
+  },
+  {
+   "cite": "SB3G p.122",
+   "claim": "batch reader/writer",
+   "contains": [
+    "flatfileitemreader",
+    "linestoskip(1)",
+    "jpaitemwriter"
+   ]
+  },
+  {
+   "cite": "SB3G p.125",
+   "claim": "Liquibase",
+   "contains": [
+    "liquibase-core",
+    "spring.liquibase.change-log",
+    "includeall"
+   ]
+  },
+  {
+   "cite": "SB3G p.126-127",
+   "claim": "numbered changelog and published column",
+   "contains": [
+    "001-add-published-column.yaml",
+    "defaultvalue: false"
+   ]
+  },
+  {
+   "cite": "SB3G p.133",
+   "claim": "starter and SecurityFilterChain",
+   "contains": [
+    "spring-boot-starter-security",
+    "@enablewebsecurity",
+    "securityfilterchain"
+   ]
+  },
+  {
+   "cite": "SB3G p.134",
+   "claim": "CSRF and stateless",
+   "contains": [
+    "csrf",
+    "stateless"
+   ]
+  },
+  {
+   "cite": "SB3G p.136",
+   "claim": "Keycloak image",
+   "contains": [
+    "bitnami/keycloak:latest"
+   ]
+  },
+  {
+   "cite": "SB3G p.137",
+   "claim": "Keycloak example credentials",
+   "contains": [
+    "keycloak_user: admin",
+    "keycloak_password: admin"
+   ]
+  },
+  {
+   "cite": "SB3G p.139",
+   "claim": "realm and client",
+   "contains": [
+    "bookstorerealm",
+    "bookstore-client"
+   ]
+  },
+  {
+   "cite": "SB3G p.141",
+   "claim": "oauth2 starter and UI warning",
+   "contains": [
+    "spring-boot-starter-oauth2-client",
+    "keycloak regularly undergoes updates"
+   ]
+  },
+  {
+   "cite": "SB3G p.142",
+   "claim": "OAuth2 properties",
+   "contains": [
+    "authorization_code",
+    "openid,profile,email"
+   ]
+  },
+  {
+   "cite": "SB3G p.143",
+   "claim": "oauth2ResourceServer jwt",
+   "contains": [
+    "oauth2resourceserver",
+    "jwt(customizer.withdefaults())"
+   ]
+  },
+  {
+   "cite": "SB3G p.144",
+   "claim": "Keycloak token endpoint",
+   "contains": [
+    "/protocol/openid-connect/"
+   ]
+  },
+  {
+   "cite": "SB3G p.145",
+   "claim": "grant_type password",
+   "contains": [
+    "\"grant_type\", \"password\""
+   ]
+  },
+  {
+   "cite": "SB3G p.147",
+   "claim": "token fields",
+   "contains": [
+    "expires_in",
+    "refresh_expires_in",
+    "1800"
+   ]
+  },
+  {
+   "cite": "SB3G p.148",
+   "claim": "Bearer",
+   "contains": [
+    "authorization: bearer"
+   ]
+  },
+  {
+   "cite": "SB3G p.151",
+   "claim": "method security and roles",
+   "contains": [
+    "@enablemethodsecurity",
+    "role_admin",
+    "hasanyauthority"
+   ]
+  },
+  {
+   "cite": "SB3G p.152",
+   "claim": "realm_access claim",
+   "contains": [
+    "realm_access",
+    "keycloakroleconverter"
+   ]
+  },
+  {
+   "cite": "SB3G p.155",
+   "claim": "reactive security",
+   "contains": [
+    "securitywebfilterchain",
+    "serverhttpsecurity"
+   ]
+  },
+  {
+   "cite": "SB3G p.156",
+   "claim": "reactive converter",
+   "contains": [
+    "reactivejwtauthenticationconverter",
+    "flux<grantedauthority>"
+   ]
+  },
+  {
+   "cite": "SB3G p.157",
+   "claim": "RestTemplate in the reactive login",
+   "contains": [
+    "new resttemplate()"
+   ]
+  },
+  {
+   "cite": "SB3G p.162",
+   "claim": "TDD with @Mock",
+   "contains": [
+    "authorservice",
+    "@mock"
+   ]
+  },
+  {
+   "cite": "SB3G p.165",
+   "claim": "assertThrows and verify",
+   "contains": [
+    "assertthrows",
+    "verify",
+    "times(1)"
+   ]
+  },
+  {
+   "cite": "SB3G p.166",
+   "claim": "@InjectMocks and MockitoExtension",
+   "contains": [
+    "@injectmocks",
+    "@extendwith(mockitoextension.class)"
+   ]
+  },
+  {
+   "cite": "SB3G p.167",
+   "claim": "MVC test annotations",
+   "contains": [
+    "@webmvctest",
+    "@mockbean",
+    "@withmockuser",
+    "@import"
+   ]
+  },
+  {
+   "cite": "SB3G p.169",
+   "claim": "springSecurity and JwtDecoder",
+   "contains": [
+    "springsecurity()",
+    "jwtdecoder"
+   ]
+  },
+  {
+   "cite": "SB3G p.170",
+   "claim": "parameterized tests",
+   "contains": [
+    "@parameterizedtest",
+    "@methodsource"
+   ]
+  },
+  {
+   "cite": "SB3G p.174",
+   "claim": "Testcontainers images",
+   "contains": [
+    "postgres:latest",
+    "mongo:4.4.6"
+   ]
+  },
+  {
+   "cite": "SB3G p.175",
+   "claim": "DynamicPropertySource",
+   "contains": [
+    "@dynamicpropertysource",
+    "getreplicaseturl"
+   ]
+  },
+  {
+   "cite": "SB3G p.176",
+   "claim": "WireMock and OIDC",
+   "contains": [
+    "wiremock",
+    "openid connect"
+   ]
+  },
+  {
+   "cite": "SB3G p.179",
+   "claim": "WebFluxTest and WebTestClient",
+   "contains": [
+    "@webfluxtest",
+    "webtestclient",
+    "reactivesecurityautoconfiguration"
+   ]
+  },
+  {
+   "cite": "SB3G p.188",
+   "claim": "Spring Boot 3.2.1",
+   "contains": [
+    "3.2.1"
+   ]
+  },
+  {
+   "cite": "SB3G p.189",
+   "claim": "layers.idx",
+   "contains": [
+    "layers.idx",
+    "snapshot-dependencies",
+    "spring-boot-loader"
+   ]
+  },
+  {
+   "cite": "SB3G p.190",
+   "claim": "buildpacks and docker run",
+   "contains": [
+    "bootbuildimage --imagename=demoapp",
+    "docker run -p 8080:8080 demoapp:latest"
+   ]
+  },
+  {
+   "cite": "SB3G p.191",
+   "claim": "graceful shutdown",
+   "contains": [
+    "server.shutdown=graceful",
+    "timeout-per-shutdown-phase=20s"
+   ]
+  },
+  {
+   "cite": "SB3G p.192",
+   "claim": "probes via Actuator",
+   "contains": [
+    "livenessstate",
+    "readinessstate",
+    "spring-boot-starter-actuator"
+   ]
+  },
+  {
+   "cite": "SB3G p.193",
+   "claim": "probes in the Deployment",
+   "contains": [
+    "/actuator/health/liveness",
+    "initialdelayseconds: 10"
+   ]
+  },
+  {
+   "cite": "SB3G p.194",
+   "claim": "replace latest with a version",
+   "contains": [
+    "can be replaced with a specific version tag"
+   ]
+  },
+  {
+   "cite": "SB3G p.197",
+   "claim": "ConfigMap and Secret",
+   "contains": [
+    "configmapkeyref",
+    "secretkeyref",
+    "kubectl create secret generic app-secret"
+   ]
+  },
+  {
+   "cite": "SB3G p.199",
+   "claim": "profile via environment variable",
+   "contains": [
+    "spring_profiles_active"
+   ]
+  },
+  {
+   "cite": "SB3G p.201",
+   "claim": "Prometheus",
+   "contains": [
+    "micrometer-registry-prometheus",
+    "scrape_interval: 15s"
+   ]
+  },
+  {
+   "cite": "SB3G p.202",
+   "claim": "Prometheus image",
+   "contains": [
+    "prom/prometheus:v2.20.1"
+   ]
+  },
+  {
+   "cite": "SB3G p.204",
+   "claim": "Grafana and dashboard 12900",
+   "contains": [
+    "grafana/grafana:7.2.0",
+    "12900"
+   ]
+  },
+  {
+   "cite": "SB3G p.213",
+   "claim": "Kafka compose",
+   "contains": [
+    "confluentinc/cp-kafka",
+    "kafka_zookeeper_connect"
+   ]
+  },
+  {
+   "cite": "SB3G p.216",
+   "claim": "server.port with colon",
+   "contains": [
+    "server.port:8181"
+   ]
+  },
+  {
+   "cite": "SB3G p.217",
+   "claim": "KafkaTemplate",
+   "contains": [
+    "kafkatemplate<string, string>"
+   ]
+  },
+  {
+   "cite": "SB3G p.218",
+   "claim": "topic and serializer",
+   "contains": [
+    "messagetopic",
+    "stringserializer"
+   ]
+  },
+  {
+   "cite": "SB3G p.219",
+   "claim": "KafkaListener",
+   "contains": [
+    "@kafkalistener",
+    "auto-offset-reset=earliest",
+    "consumer_1_id"
+   ]
+  },
+  {
+   "cite": "SB3G p.220",
+   "claim": "producer port",
+   "contains": [
+    "server.port=8282"
+   ]
+  },
+  {
+   "cite": "SB3G p.223",
+   "claim": "CMAK",
+   "contains": [
+    "hlebalbau/kafka-manager:latest"
+   ]
+  },
+  {
+   "cite": "SB3G p.231",
+   "claim": "LoggingAspect",
+   "contains": [
+    "@around",
+    "execution(* com.packt.ahmeric..*.*(..))"
+   ]
+  },
+  {
+   "cite": "SB3G p.233",
+   "claim": "Feign vs RestTemplate vs WebClient",
+   "contains": [
+    "declarative web service client",
+    "resttemplate",
+    "webclient"
+   ]
+  },
+  {
+   "cite": "SB3G p.234",
+   "claim": "OpenFeign and Spring Cloud version",
+   "contains": [
+    "spring-cloud-starter-openfeign",
+    "2023.0.1"
+   ]
+  },
+  {
+   "cite": "SB3G p.237",
+   "claim": "ConditionalOnExpression and starters",
+   "contains": [
+    "@conditionalonexpression(\"${logging.aspect.enabled:false}\")",
+    "developing your own starters"
+   ]
+  },
+  {
+   "cite": "SB3G p.239",
+   "claim": "AutoConfigureOrder",
+   "contains": [
+    "@autoconfigureorder"
+   ]
+  },
+  {
+   "cite": "SB3G p.241",
+   "claim": "ConditionalOnMissingBean and CGLIB",
+   "contains": [
+    "@conditionalonmissingbean",
+    "cglib"
+   ]
+  },
+  {
+   "cite": "QRK p.1",
+   "claim": "authorship and claims",
+   "contains": [
+    "daniel oh",
+    "red hat",
+    "comparable to go and node.js",
+    "almost 450 extensions"
+   ]
+  },
+  {
+   "cite": "QRK p.2",
+   "claim": "advertisement page",
+   "contains": [
+    "join now"
+   ]
+  },
+  {
+   "cite": "QRK p.3",
+   "claim": "project creation and dev mode",
+   "contains": [
+    "quarkus-maven-plugin:2.2.3.final:create",
+    "./mvnw quarkus:dev",
+    "http://localhost:8080/q/dev/"
+   ]
+  },
+  {
+   "cite": "QRK p.4",
+   "claim": "Knative",
+   "contains": [
+    "quarkus.kubernetes.deployment-target=knative",
+    "quarkus.openshift.build-strategy=docker"
+   ]
+  },
+  {
+   "cite": "QRK p.5",
+   "claim": "start times",
+   "contains": [
+    "started in 5.984s",
+    "started in 0.013s",
+    "mandrel"
+   ]
+  },
+  {
+   "cite": "QRK p.6",
+   "claim": "Funqy",
+   "contains": [
+    "@funq",
+    "quarkus-funqy-http",
+    "aws lambda"
+   ]
+  },
+  {
+   "cite": "QRK p.7",
+   "claim": "Lambda artifacts",
+   "contains": [
+    "function.zip",
+    "manage.sh",
+    "sam.native.yaml"
+   ]
+  },
+  {
+   "cite": "QRK p.8",
+   "claim": "CloudEvents",
+   "contains": [
+    "cloudevents",
+    "ce-source",
+    "tolowercasefunction"
+   ]
+  },
+  {
+   "cite": "QRK p.9",
+   "claim": "copyright 2021",
+   "contains": [
+    "2021 devada"
+   ]
+  },
+  {
+   "cite": "MPS p.1",
+   "claim": "title and date",
+   "contains": [
+    "mapstruct 1.6.3 reference guide",
+    "2024-11-09"
+   ]
+  },
+  {
+   "cite": "MPS p.3",
+   "claim": "no reflection and artifacts",
+   "contains": [
+    "no reflection",
+    "mapstruct-processor"
+   ]
+  },
+  {
+   "cite": "MPS p.4",
+   "claim": "Maven",
+   "contains": [
+    "annotationprocessorpaths",
+    "1.6.3"
+   ]
+  },
+  {
+   "cite": "MPS p.5",
+   "claim": "Java 1.8 or higher",
+   "contains": [
+    "java 1.8 or later"
+   ]
+  },
+  {
+   "cite": "MPS p.7",
+   "claim": "generator options",
+   "contains": [
+    "suppressgeneratortimestamp",
+    "mapstruct.verbose"
+   ]
+  },
+  {
+   "cite": "MPS p.8",
+   "claim": "componentModel",
+   "contains": [
+    "jakarta-cdi",
+    "jsr330",
+    "mapstruct.defaultcomponentmodel"
+   ]
+  },
+  {
+   "cite": "MPS p.9",
+   "claim": "injection strategy",
+   "contains": [
+    "mapstruct.defaultinjectionstrategy",
+    "constructor"
+   ]
+  },
+  {
+   "cite": "MPS p.10",
+   "claim": "unmappedTargetPolicy",
+   "contains": [
+    "mapstruct.unmappedtargetpolicy",
+    "warn"
+   ]
+  },
+  {
+   "cite": "MPS p.11",
+   "claim": "unmappedSourcePolicy and builders",
+   "contains": [
+    "mapstruct.unmappedsourcepolicy",
+    "disablebuilders"
+   ]
+  },
+  {
+   "cite": "MPS p.12",
+   "claim": "nullValueIterableMappingStrategy",
+   "contains": [
+    "nullvalueiterablemappingstrategy",
+    "return_default"
+   ]
+  },
+  {
+   "cite": "MPS p.14",
+   "claim": "basic @Mapping",
+   "contains": [
+    "@mapping(target = \"manufacturer\", source = \"make\")"
+   ]
+  },
+  {
+   "cite": "MPS p.15",
+   "claim": "ignoreByDefault",
+   "contains": [
+    "ignorebydefault = true"
+   ]
+  },
+  {
+   "cite": "MPS p.17",
+   "claim": "duck-typing",
+   "contains": [
+    "duck-typing"
+   ]
+  },
+  {
+   "cite": "MPS p.19",
+   "claim": "several source parameters",
+   "contains": [
+    "several source parameters",
+    "in case all the source parameters"
+   ]
+  },
+  {
+   "cite": "MPS p.20",
+   "claim": "single MappingTarget",
+   "contains": [
+    "@mappingtarget",
+    "only one parameter marked as mapping target"
+   ]
+  },
+  {
+   "cite": "MPS p.21",
+   "claim": "public fields",
+   "contains": [
+    "public final"
+   ]
+  },
+  {
+   "cite": "MPS p.22",
+   "claim": "builders",
+   "contains": [
+    "builderprovider",
+    "disablebuilder"
+   ]
+  },
+  {
+   "cite": "MPS p.24",
+   "claim": "supported builders",
+   "contains": [
+    "autovalue",
+    "immutables",
+    "freebuilder",
+    "mapstruct.disablebuilders"
+   ]
+  },
+  {
+   "cite": "MPS p.25",
+   "claim": "ambiguous constructor",
+   "contains": [
+    "ambiguous constructors"
+   ]
+  },
+  {
+   "cite": "MPS p.30",
+   "claim": "getMapper and thread-safe",
+   "contains": [
+    "mappers.getmapper",
+    "stateless and thread-safe"
+   ]
+  },
+  {
+   "cite": "MPS p.31",
+   "claim": "CDI",
+   "contains": [
+    "@applicationscoped",
+    "mappingconstants.componentmodel"
+   ]
+  },
+  {
+   "cite": "MPS p.32",
+   "claim": "injection and conversion",
+   "contains": [
+    "injectionstrategy#setter",
+    "circular dependencies",
+    "constructor injection to simplify testing",
+    "reportingpolicy.ignore"
+   ]
+  },
+  {
+   "cite": "MPS p.33",
+   "claim": "formats",
+   "contains": [
+    "numberformat = \"$#.00\"",
+    "dateformat = \"dd.mm.yyyy\""
+   ]
+  },
+  {
+   "cite": "MPS p.34",
+   "claim": "time zones",
+   "contains": [
+    "utc",
+    "system default timezone"
+   ]
+  },
+  {
+   "cite": "MPS p.36",
+   "claim": "MappingControl",
+   "contains": [
+    "mappingcontrol",
+    "complex_mapping",
+    "@deepclone",
+    "1086"
+   ]
+  },
+  {
+   "cite": "MPS p.38",
+   "claim": "nested null check",
+   "contains": [
+    "null check on each nested property"
+   ]
+  },
+  {
+   "cite": "MPS p.40",
+   "claim": "no-argument constructor",
+   "contains": [
+    "public no-args constructor"
+   ]
+  },
+  {
+   "cite": "MPS p.41",
+   "claim": "@TargetType",
+   "contains": [
+    "@targettype"
+   ]
+  },
+  {
+   "cite": "MPS p.42",
+   "claim": "@Context without null check",
+   "contains": [
+    "@context",
+    "no null checks are performed"
+   ]
+  },
+  {
+   "cite": "MPS p.43",
+   "claim": "most specific method",
+   "contains": [
+    "most specific method"
+   ]
+  },
+  {
+   "cite": "MPS p.45",
+   "claim": "CLASS retention",
+   "contains": [
+    "retention policy class"
+   ]
+  },
+  {
+   "cite": "MPS p.46",
+   "claim": "@Named",
+   "contains": [
+    "@named"
+   ]
+  },
+  {
+   "cite": "MPS p.47",
+   "claim": "defaultExpression",
+   "contains": [
+    "defaultexpression"
+   ]
+  },
+  {
+   "cite": "MPS p.50",
+   "claim": "CollectionMappingStrategy",
+   "contains": [
+    "collectionmappingstrategy",
+    "accessor_only",
+    "setter_preferred",
+    "adder_preferred",
+    "target_immutable"
+   ]
+  },
+  {
+   "cite": "MPS p.51",
+   "claim": "implementations",
+   "contains": [
+    "linkedhashset"
+   ]
+  },
+  {
+   "cite": "MPS p.52",
+   "claim": "map implementations",
+   "contains": [
+    "concurrentskiplistmap",
+    "treemap"
+   ]
+  },
+  {
+   "cite": "MPS p.53",
+   "claim": "consumed stream",
+   "contains": [
+    "will be consumed"
+   ]
+  },
+  {
+   "cite": "MPS p.54",
+   "claim": "exception divergence",
+   "contains": [
+    "illegalstateexception",
+    "illegalargumentexception"
+   ]
+  },
+  {
+   "cite": "MPS p.55",
+   "claim": "enum constants",
+   "contains": [
+    "any_remaining",
+    "any_unmapped",
+    "throw_exception"
+   ]
+  },
+  {
+   "cite": "MPS p.57",
+   "claim": "ANY_REMAINING in enum->String",
+   "contains": [
+    "<any_remaining> will result in an error"
+   ]
+  },
+  {
+   "cite": "MPS p.58-60",
+   "claim": "name strategies",
+   "contains": [
+    "nametransformationstrategy",
+    "stripsuffix",
+    "capital"
+   ]
+  },
+  {
+   "cite": "MPS p.63",
+   "claim": "@ObjectFactory",
+   "contains": [
+    "@objectfactory"
+   ]
+  },
+  {
+   "cite": "MPS p.64",
+   "claim": "constant without source",
+   "contains": [
+    "a mapping with a constant must not include a reference to a source property"
+   ]
+  },
+  {
+   "cite": "MPS p.65",
+   "claim": "expression not validated",
+   "contains": [
+    "mapstruct will not validate the expression at generation-time",
+    "imports"
+   ]
+  },
+  {
+   "cite": "MPS p.66",
+   "claim": "exhaustive subclass",
+   "contains": [
+    "runtime_exception",
+    "subclassexhaustivestrategy"
+   ]
+  },
+  {
+   "cite": "MPS p.67",
+   "claim": "SubclassMapping vs update",
+   "contains": [
+    "combining @subclassmapping with update methods is not supported"
+   ]
+  },
+  {
+   "cite": "MPS p.68",
+   "claim": "RETURN_DEFAULT",
+   "contains": [
+    "return_default",
+    "nullvaluemappingstrategy"
+   ]
+  },
+  {
+   "cite": "MPS p.69",
+   "claim": "SET_TO_DEFAULT and check strategy",
+   "contains": [
+    "set_to_default",
+    "nullvaluepropertymappingstrategy",
+    "on_implicit_conversion"
+   ]
+  },
+  {
+   "cite": "MPS p.70",
+   "claim": "@Condition",
+   "contains": [
+    "@condition",
+    "sourceparametercondition"
+   ]
+  },
+  {
+   "cite": "MPS p.72",
+   "claim": "property names",
+   "contains": [
+    "@targetpropertyname",
+    "@sourcepropertyname"
+   ]
+  },
+  {
+   "cite": "MPS p.73",
+   "claim": "condition qualifier",
+   "contains": [
+    "conditionqualifiedbyname"
+   ]
+  },
+  {
+   "cite": "MPS p.75",
+   "claim": "RuntimeException",
+   "contains": [
+    "runtimeexception"
+   ]
+  },
+  {
+   "cite": "MPS p.76",
+   "claim": "config inheritance",
+   "contains": [
+    "@inheritconfiguration",
+    "cannot refer to methods in a used mapper"
+   ]
+  },
+  {
+   "cite": "MPS p.77",
+   "claim": "inverse",
+   "contains": [
+    "@inheritinverseconfiguration",
+    "transitively",
+    "1.1.0.beta2"
+   ]
+  },
+  {
+   "cite": "MPS p.78",
+   "claim": "MapperConfig",
+   "contains": [
+    "@mapperconfig",
+    "centralconfig"
+   ]
+  },
+  {
+   "cite": "MPS p.79",
+   "claim": "inheritance strategies",
+   "contains": [
+    "auto_inherit_all_from_config",
+    "auto_inherit_reverse_from_config",
+    "explicit"
+   ]
+  },
+  {
+   "cite": "MPS p.80",
+   "claim": "DecoratedWith",
+   "contains": [
+    "@decoratedwith"
+   ]
+  },
+  {
+   "cite": "MPS p.80-81",
+   "claim": "Spring decorators",
+   "contains": [
+    "@qualifier(\"delegate\")",
+    "@primary"
+   ]
+  },
+  {
+   "cite": "MPS p.81",
+   "claim": "JSR 330 decorators",
+   "contains": [
+    "@named(\"org.examples.personmapperimpl_\")"
+   ]
+  },
+  {
+   "cite": "MPS p.82",
+   "claim": "before/after",
+   "contains": [
+    "@beforemapping",
+    "@aftermapping"
+   ]
+  },
+  {
+   "cite": "MPS p.84",
+   "claim": "order not guaranteed and SPI",
+   "contains": [
+    "can not be guaranteed",
+    "meta-inf/services/",
+    "org.mapstruct.ap.spi.accessornamingstrategy"
+   ]
+  },
+  {
+   "cite": "MPS p.87",
+   "claim": "default exclusion",
+   "contains": [
+    "mappingexclusionprovider",
+    "java or javax"
+   ]
+  },
+  {
+   "cite": "MPS p.92",
+   "claim": "additional options",
+   "contains": [
+    "additionalsupportedoptionsprovider"
+   ]
+  },
+  {
+   "cite": "MPS p.93",
+   "claim": "non-shipped annotations",
+   "contains": [
+    "@constructorproperties",
+    "@default"
+   ]
+  },
+  {
+   "cite": "MPS p.94",
+   "claim": "Lombok 1.18.16",
+   "contains": [
+    "1.18.16",
+    "lombok-mapstruct-binding"
+   ]
+  },
+  {
+   "cite": "MPS p.95",
+   "claim": "binding version",
+   "contains": [
+    "0.2.0"
+   ]
+  },
+  {
+   "cite": "MPS p.96",
+   "claim": "update date",
+   "contains": [
+    "last updated 2024-11-09"
+   ]
+  },
+  {
+   "cite": "SB3G p.29",
+   "claim": "Cloud Foundry mentioned; JUnit and TestNG",
+   "contains": [
+    "cloud foundry",
+    "junit, testng"
+   ]
+  },
+  {
+   "cite": "SB3G p.47",
+   "claim": "DDD for projects of about six months or more",
+   "contains": [
+    "six months or longer"
+   ]
+  },
+  {
+   "cite": "SB3G p.77",
+   "claim": "the decision is not to use the newest technology",
+   "contains": [
+    "latest and greatest technology"
+   ]
+  },
+  {
+   "cite": "SB3G p.78",
+   "claim": "companies mentioned",
+   "contains": [
+    "booking.com",
+    "the guardian",
+    "patreon"
+   ]
+  },
+  {
+   "cite": "SB3G p.174",
+   "claim": "WireMock port",
+   "contains": [
+    "wiremock_port = 8180"
+   ]
+  },
+  {
+   "cite": "SB3G p.210",
+   "claim": "Kafka and LinkedIn",
+   "contains": [
+    "linkedin",
+    "zookeeper"
+   ]
+  },
+  {
+   "cite": "SB3G p.22",
+   "claim": "Java 19 and AppStartup",
+   "contains": [
+    "java 19",
+    "appstartup"
+   ]
+  },
+  {
+   "cite": "SB3G p.100",
+   "claim": "bookstore project",
+   "contains": [
+    "online bookstore management system"
+   ]
+  },
+  {
+   "cite": "SB3G p.132",
+   "claim": "threats mentioned",
+   "contains": [
+    "cross-site scripting",
+    "sql injection"
+   ]
+  },
+  {
+   "cite": "SB3G p.196",
+   "claim": "/message and /apikey endpoints",
+   "contains": [
+    "@getmapping(\"/apikey\")"
+   ]
+  },
+  {
+   "cite": "MPS p.13",
+   "claim": "Java 9 and modules",
+   "contains": [
+    "java 9 and higher"
+   ]
+  },
+  {
+   "cite": "MPS p.27",
+   "claim": "raw Map produces a warning",
+   "contains": [
+    "raw map"
+   ]
+  },
+  {
+   "cite": "MPS p.35",
+   "claim": "cutting references between entities",
+   "contains": [
+    "cut references to other entities"
+   ]
+  },
+  {
+   "cite": "MPS p.28",
+   "claim": "@Javadoc",
+   "contains": [
+    "org.mapstruct.javadoc"
+   ]
+  },
+  {
+   "cite": "MPS p.16",
+   "claim": "new method for beans only",
+   "contains": [
+    "collection or map type properties"
+   ]
+  },
+  {
+   "cite": "SB3G p.188",
+   "claim": "layering without a shown configuration",
+   "contains": [
+    "enable layering",
+    "configuration settings in your build file"
+   ]
+  },
+  {
+   "cite": "SB3G p.188-189",
+   "claim": "the book does not show the plugin configuration for layering",
+   "absent": [
+    "layers {",
+    "layered {",
+    "layers.enabled"
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "MapStruct guide does not cover Spring Boot",
+   "absent": [
+    "spring boot"
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "does not cover Kotlin/kapt/ksp",
+   "absent": [
+    "kotlin",
+    "kapt",
+    "ksp"
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "does not cover java.util.Optional",
+   "absent": [
+    "java.util.optional",
+    "optional<"
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "does not cover Java records",
+   "absent": [
+    "java record",
+    "records"
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "does not mention Jackson or Hibernate",
+   "absent": [
+    "jackson",
+    "hibernate"
+   ]
+  },
+  {
+   "cite": "MPS p.8-32",
+   "claim": "does not show an example with componentModel = spring in an annotation",
+   "absent": [
+    "componentmodel = \"spring\""
+   ]
+  },
+  {
+   "cite": "MPS p.1-96",
+   "claim": "does not mention MapStruct 2.0",
+   "absent": [
+    "mapstruct 2"
+   ]
+  },
+  {
+   "cite": "MPS p.50-51",
+   "claim": "does not name the @Mapper collectionMappingStrategy attribute",
+   "absent": [
+    "collectionmappingstrategy ="
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard does not cover Panache",
+   "absent": [
+    "panache"
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard does not cover Hibernate",
+   "absent": [
+    "hibernate"
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard does not cover Quarkus 3",
+   "absent": [
+    "quarkus 3"
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard has no Funqy extension for Azure",
+   "absent": [
+    "funqy-azure"
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard does not use the word benchmark",
+   "absent": [
+    "benchmark"
+   ]
+  },
+  {
+   "cite": "QRK p.1-9",
+   "claim": "Refcard does not detail DevServices (only mentions it)",
+   "absent": [
+    "devservices:"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not mention Quarkus",
+   "absent": [
+    "quarkus"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not mention MapStruct",
+   "absent": [
+    "mapstruct"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not use Resilience4j",
+   "absent": [
+    "resilience4j"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not use Flyway",
+   "absent": [
+    "flyway"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not demonstrate @PreAuthorize",
+   "absent": [
+    "@preauthorize"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not demonstrate @Transactional",
+   "absent": [
+    "@transactional"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not use Caffeine or Redis",
+   "absent": [
+    "caffeine",
+    "redis"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not cover Helm or Kustomize",
+   "absent": [
+    "helm",
+    "kustomize"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not use @SpringBootTest",
+   "absent": [
+    "@springboottest"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not use @DataJpaTest",
+   "absent": [
+    "@datajpatest"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not mention Spring Boot 3.3",
+   "absent": [
+    "3.3.0"
+   ]
+  },
+  {
+   "cite": "SB3G p.228-242",
+   "claim": "ch.9 does not implement a starter (no imports file)",
+   "absent": [
+    "autoconfiguration.imports",
+    "spring.factories"
+   ]
+  },
+  {
+   "cite": "SB3G p.1-251",
+   "claim": "book does not cover Spring Authorization Server",
+   "absent": [
+    "authorization server"
+   ]
+  }
+ ]
+}

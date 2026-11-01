@@ -1,0 +1,8342 @@
+{
+ "_comment": "checks: each item asserts that the page contains ALL the substrings. negatives: no substring may appear on any page of the range.",
+ "checks": [
+  {
+   "cite": "PGEN p.8",
+   "contains": [
+    "Preface",
+    "Scott Chacon"
+   ],
+   "claim": "preface to the 2nd edition signed by Scott Chacon"
+  },
+  {
+   "cite": "PGEN p.14",
+   "contains": [
+    "ten chapters",
+    "three appendices"
+   ],
+   "claim": "summary: ten chapters and three appendices"
+  },
+  {
+   "cite": "PGEN p.16",
+   "contains": [
+    "Version control",
+    "recall specific versions"
+   ],
+   "claim": "a VCS records changes over time"
+  },
+  {
+   "cite": "PGEN p.18",
+   "contains": [
+    "single point of failure",
+    "backups"
+   ],
+   "claim": "drawback of the centralized server"
+  },
+  {
+   "cite": "PGEN p.18",
+   "contains": [
+    "DVCS",
+    "Mercurial"
+   ],
+   "claim": "clients mirror the full repository"
+  },
+  {
+   "cite": "PGEN p.20",
+   "contains": [
+    "BitKeeper",
+    "2005"
+   ],
+   "claim": "origin of Git in 2005 after BitKeeper stopped being free"
+  },
+  {
+   "cite": "PGEN p.20",
+   "contains": [
+    "Speed",
+    "Fully distributed"
+   ],
+   "claim": "goals of Git"
+  },
+  {
+   "cite": "PGEN p.21",
+   "contains": [
+    "snapshots",
+    "miniature filesystem"
+   ],
+   "claim": "Git stores snapshots, not deltas"
+  },
+  {
+   "cite": "PGEN p.21",
+   "contains": [
+    "Nearly Every Operation Is Local",
+    "gods of speed"
+   ],
+   "claim": "almost every operation is local"
+  },
+  {
+   "cite": "PGEN p.22",
+   "contains": [
+    "SHA-1",
+    "40-character"
+   ],
+   "claim": "SHA-1 hash of 40 hexadecimal characters"
+  },
+  {
+   "cite": "PGEN p.22",
+   "contains": [
+    "Generally Only Adds Data",
+    "undoable"
+   ],
+   "claim": "almost only adds data; regular push protects"
+  },
+  {
+   "cite": "PGEN p.22",
+   "contains": [
+    "modified",
+    "staged",
+    "committed"
+   ],
+   "claim": "three states"
+  },
+  {
+   "cite": "PGEN p.23",
+   "contains": [
+    "working tree",
+    "staging area",
+    "Git directory"
+   ],
+   "claim": "three areas"
+  },
+  {
+   "cite": "PGEN p.23",
+   "contains": [
+    "index",
+    "staging area"
+   ],
+   "claim": "the technical name of the staging area is index"
+  },
+  {
+   "cite": "PGEN p.24",
+   "contains": [
+    "command line",
+    "partial subset"
+   ],
+   "claim": "the CLI is the only place with all the commands"
+  },
+  {
+   "cite": "PGEN p.25",
+   "contains": [
+    "Xcode",
+    "Mavericks",
+    "git --version"
+   ],
+   "claim": "installation on macOS"
+  },
+  {
+   "cite": "PGEN p.25",
+   "contains": [
+    "Chocolatey",
+    "gitforwindows"
+   ],
+   "claim": "Git for Windows and a community Chocolatey package"
+  },
+  {
+   "cite": "PGEN p.27",
+   "contains": [
+    "--system",
+    "--global",
+    "--local"
+   ],
+   "claim": "three configuration levels"
+  },
+  {
+   "cite": "PGEN p.27",
+   "contains": [
+    ".git/config",
+    "override"
+   ],
+   "claim": "each level overrides the previous one"
+  },
+  {
+   "cite": "PGEN p.28",
+   "contains": [
+    "--show-origin",
+    "user.email"
+   ],
+   "claim": "list where configs come from and set email"
+  },
+  {
+   "cite": "PGEN p.28",
+   "contains": [
+    "core.editor",
+    "notepad++"
+   ],
+   "claim": "configure the editor on Windows"
+  },
+  {
+   "cite": "PGEN p.29",
+   "contains": [
+    "init.defaultBranch",
+    "2.28"
+   ],
+   "claim": "change the initial branch from Git 2.28"
+  },
+  {
+   "cite": "PGEN p.29",
+   "contains": [
+    "last value",
+    "git config <key>"
+   ],
+   "claim": "repeated key: the last value is used"
+  },
+  {
+   "cite": "PGEN p.30",
+   "contains": [
+    "git help",
+    "man git-"
+   ],
+   "claim": "three equivalent ways to ask for help"
+  },
+  {
+   "cite": "PGEN p.32",
+   "contains": [
+    "git init",
+    ".git"
+   ],
+   "claim": "git init creates the .git subdirectory"
+  },
+  {
+   "cite": "PGEN p.33",
+   "contains": [
+    "git clone",
+    "mylibgit"
+   ],
+   "claim": "clone into a directory with another name"
+  },
+  {
+   "cite": "PGEN p.33",
+   "contains": [
+    "Every version of every file",
+    "clone"
+   ],
+   "claim": "clone brings all versions of all files"
+  },
+  {
+   "cite": "PGEN p.34",
+   "contains": [
+    "tracked",
+    "untracked",
+    "git status"
+   ],
+   "claim": "definition of tracked/untracked"
+  },
+  {
+   "cite": "PGEN p.35",
+   "contains": [
+    "main",
+    "master",
+    "mid-2020"
+   ],
+   "claim": "GitHub changed the default from master to main"
+  },
+  {
+   "cite": "PGEN p.35",
+   "contains": [
+    "Untracked files",
+    "README"
+   ],
+   "claim": "a new file appears under Untracked files"
+  },
+  {
+   "cite": "PGEN p.36",
+   "contains": [
+    "git add",
+    "marking merge-conflicted"
+   ],
+   "claim": "add is multipurpose"
+  },
+  {
+   "cite": "PGEN p.36",
+   "contains": [
+    "git restore --staged",
+    "Changes to be committed"
+   ],
+   "claim": "the book's status suggests restore --staged"
+  },
+  {
+   "cite": "PGEN p.37",
+   "contains": [
+    "git status -s",
+    "git add",
+    "Changes not staged for commit"
+   ],
+   "claim": "a staged file that is then modified appears in both lists"
+  },
+  {
+   "cite": "PGEN p.37",
+   "contains": [
+    "git add",
+    "exactly as it is"
+   ],
+   "claim": "the stage keeps the file as it was at add time"
+  },
+  {
+   "cite": "PGEN p.38",
+   "contains": [
+    "??",
+    "MM"
+   ],
+   "claim": "short status, ?? for untracked"
+  },
+  {
+   "cite": "PGEN p.38",
+   "contains": [
+    ".gitignore",
+    "*.[oa]"
+   ],
+   "claim": "example of .gitignore"
+  },
+  {
+   "cite": "PGEN p.38",
+   "contains": [
+    "a/**/z",
+    "negate"
+   ],
+   "claim": "pattern rules and double asterisks"
+  },
+  {
+   "cite": "PGEN p.39",
+   "contains": [
+    "!lib.a",
+    "doc/**/*.pdf"
+   ],
+   "claim": "negation example and doc/**/"
+  },
+  {
+   "cite": "PGEN p.40",
+   "contains": [
+    "git diff --staged",
+    "staging area"
+   ],
+   "claim": "diff --staged compares staged with the last commit"
+  },
+  {
+   "cite": "PGEN p.42",
+   "contains": [
+    "EDITOR",
+    "empty message aborts"
+   ],
+   "claim": "git commit opens the editor; an empty message aborts"
+  },
+  {
+   "cite": "PGEN p.43",
+   "contains": [
+    "-m",
+    "-v"
+   ],
+   "claim": "inline commit and commit -v with diff"
+  },
+  {
+   "cite": "PGEN p.43",
+   "contains": [
+    "git commit -a",
+    "Skipping the Staging Area"
+   ],
+   "claim": "commit -a skips the staging area"
+  },
+  {
+   "cite": "PGEN p.44",
+   "contains": [
+    "git rm",
+    "-f",
+    "safety feature"
+   ],
+   "claim": "forced removal of a modified file"
+  },
+  {
+   "cite": "PGEN p.45",
+   "contains": [
+    "--cached",
+    "git rm --cached README"
+   ],
+   "claim": "rm --cached keeps the file on disk"
+  },
+  {
+   "cite": "PGEN p.46",
+   "contains": [
+    "git log",
+    "chronological"
+   ],
+   "claim": "log in reverse chronological order"
+  },
+  {
+   "cite": "PGEN p.48",
+   "contains": [
+    "--pretty=oneline",
+    "format"
+   ],
+   "claim": "log --pretty formats"
+  },
+  {
+   "cite": "PGEN p.49",
+   "contains": [
+    "%h",
+    "%an",
+    "%ar"
+   ],
+   "claim": "format specifiers"
+  },
+  {
+   "cite": "PGEN p.49",
+   "contains": [
+    "author",
+    "committer"
+   ],
+   "claim": "difference between author and committer"
+  },
+  {
+   "cite": "PGEN p.49",
+   "contains": [
+    "--graph",
+    "ASCII"
+   ],
+   "claim": "ASCII graph of branches"
+  },
+  {
+   "cite": "PGEN p.50",
+   "contains": [
+    "--since",
+    "2.weeks"
+   ],
+   "claim": "date filter"
+  },
+  {
+   "cite": "PGEN p.51",
+   "contains": [
+    "-S",
+    "pickaxe"
+   ],
+   "claim": "log -S pickaxe"
+  },
+  {
+   "cite": "PGEN p.51",
+   "contains": [
+    "--all-match",
+    "--grep"
+   ],
+   "claim": "--all-match requires all the --grep patterns"
+  },
+  {
+   "cite": "PGEN p.51",
+   "contains": [
+    "-- path/to/file",
+    "double dashes"
+   ],
+   "claim": "path last, after --"
+  },
+  {
+   "cite": "PGEN p.52",
+   "contains": [
+    "--no-merges",
+    "merge commits"
+   ],
+   "claim": "hides merge commits"
+  },
+  {
+   "cite": "PGEN p.52",
+   "contains": [
+    "Undoing Things",
+    "--amend"
+   ],
+   "claim": "redo a commit with --amend"
+  },
+  {
+   "cite": "PGEN p.53",
+   "contains": [
+    "git add *",
+    "git reset HEAD"
+   ],
+   "claim": "unstage with reset HEAD"
+  },
+  {
+   "cite": "PGEN p.53",
+   "contains": [
+    "pushed",
+    "force pushing"
+   ],
+   "claim": "only amend local commits; force push causes problems"
+  },
+  {
+   "cite": "PGEN p.53",
+   "contains": [
+    "replacing it entirely",
+    "amending"
+   ],
+   "claim": "amend replaces the commit"
+  },
+  {
+   "cite": "PGEN p.54",
+   "contains": [
+    "--hard",
+    "not touched"
+   ],
+   "claim": "reset used to unstage does not touch the working directory"
+  },
+  {
+   "cite": "PGEN p.54",
+   "contains": [
+    "git checkout --",
+    "dangerous"
+   ],
+   "claim": "checkout -- discards local changes"
+  },
+  {
+   "cite": "PGEN p.55",
+   "contains": [
+    "Data Recovery",
+    "never to be seen again"
+   ],
+   "claim": "committed work can be recovered; uncommitted work is lost"
+  },
+  {
+   "cite": "PGEN p.55",
+   "contains": [
+    "2.23.0",
+    "git restore"
+   ],
+   "claim": "git restore introduced in Git 2.23.0"
+  },
+  {
+   "cite": "PGEN p.55",
+   "contains": [
+    "git restore --staged",
+    "unstage"
+   ],
+   "claim": "unstage with restore --staged"
+  },
+  {
+   "cite": "PGEN p.56",
+   "contains": [
+    "git restore",
+    "dangerous"
+   ],
+   "claim": "git restore <file> discards local changes"
+  },
+  {
+   "cite": "PGEN p.56",
+   "contains": [
+    "Remote repositories",
+    "same host"
+   ],
+   "claim": "the remote may be on the same machine"
+  },
+  {
+   "cite": "PGEN p.58",
+   "contains": [
+    "git remote add",
+    "pb/master"
+   ],
+   "claim": "add a remote and fetch creates pb/master"
+  },
+  {
+   "cite": "PGEN p.59",
+   "contains": [
+    "git fetch",
+    "merge it manually"
+   ],
+   "claim": "fetch does not merge automatically"
+  },
+  {
+   "cite": "PGEN p.59",
+   "contains": [
+    "pull.rebase",
+    "2.27"
+   ],
+   "claim": "pull.rebase warning from 2.27"
+  },
+  {
+   "cite": "PGEN p.59",
+   "contains": [
+    "git push origin master",
+    "rejected"
+   ],
+   "claim": "push rejected if someone pushed first"
+  },
+  {
+   "cite": "PGEN p.61",
+   "contains": [
+    "git remote rename",
+    "paul/master"
+   ],
+   "claim": "renaming a remote renames the remote-tracking branches"
+  },
+  {
+   "cite": "PGEN p.61",
+   "contains": [
+    "git remote remove",
+    "all remote-tracking branches"
+   ],
+   "claim": "removing deletes the remote-tracking branches"
+  },
+  {
+   "cite": "PGEN p.62",
+   "contains": [
+    "-l",
+    "--list",
+    "mandatory"
+   ],
+   "claim": "wildcard requires -l/--list"
+  },
+  {
+   "cite": "PGEN p.64",
+   "contains": [
+    "git tag -a v1.2",
+    "9fceb02"
+   ],
+   "claim": "retroactive tag by hash"
+  },
+  {
+   "cite": "PGEN p.64",
+   "contains": [
+    "git push origin <tagname>",
+    "doesn"
+   ],
+   "claim": "push does not send tags by default"
+  },
+  {
+   "cite": "PGEN p.65",
+   "contains": [
+    "--tags",
+    "--follow-tags"
+   ],
+   "claim": "push --tags sends both; follow-tags only annotated"
+  },
+  {
+   "cite": "PGEN p.65",
+   "contains": [
+    "git tag -d",
+    ":refs/tags"
+   ],
+   "claim": "delete a tag locally and remotely"
+  },
+  {
+   "cite": "PGEN p.66",
+   "contains": [
+    "--delete",
+    "detached HEAD"
+   ],
+   "claim": "delete remote with --delete; checking out a tag gives detached HEAD"
+  },
+  {
+   "cite": "PGEN p.66",
+   "contains": [
+    "git checkout -b version2",
+    "unreachable"
+   ],
+   "claim": "create a branch from the tag"
+  },
+  {
+   "cite": "PGEN p.67",
+   "contains": [
+    "alias.unstage",
+    "reset HEAD --"
+   ],
+   "claim": "unstage alias"
+  },
+  {
+   "cite": "PGEN p.69",
+   "contains": [
+    "blobs",
+    "tree object"
+   ],
+   "claim": "a commit has 3 blobs, 1 tree, 1 commit (5 objects) in the example"
+  },
+  {
+   "cite": "PGEN p.69",
+   "contains": [
+    "snapshots",
+    "SHA-1"
+   ],
+   "claim": "Git stores snapshots and uses SHA-1 checksums"
+  },
+  {
+   "cite": "PGEN p.70",
+   "contains": [
+    "lightweight movable pointer",
+    "default branch"
+   ],
+   "claim": "a branch is a lightweight movable pointer; master is the default name"
+  },
+  {
+   "cite": "PGEN p.70",
+   "contains": [
+    "not a special branch",
+    "git init"
+   ],
+   "claim": "master is not special; git init creates it"
+  },
+  {
+   "cite": "PGEN p.71",
+   "contains": [
+    "git branch testing",
+    "HEAD"
+   ],
+   "claim": "git branch creates a pointer; HEAD indicates the current branch"
+  },
+  {
+   "cite": "PGEN p.72",
+   "contains": [
+    "--decorate",
+    "git checkout testing"
+   ],
+   "claim": "git log --decorate shows pointers; checkout moves HEAD"
+  },
+  {
+   "cite": "PGEN p.74",
+   "contains": [
+    "--all",
+    "log testing"
+   ],
+   "claim": "log shows only what is below the current branch; --all shows all"
+  },
+  {
+   "cite": "PGEN p.74",
+   "contains": [
+    "Switching branches changes files",
+    "will not let you switch"
+   ],
+   "claim": "switching branches changes the working dir; if not clean, it refuses"
+  },
+  {
+   "cite": "PGEN p.75",
+   "contains": [
+    "--graph --all",
+    "41 bytes"
+   ],
+   "claim": "graph log; branch = 41 bytes"
+  },
+  {
+   "cite": "PGEN p.76",
+   "contains": [
+    "git checkout -b",
+    "git switch -c"
+   ],
+   "claim": "shortcut to create+switch; switch since 2.23"
+  },
+  {
+   "cite": "PGEN p.76",
+   "contains": [
+    "git switch -",
+    "previously checked out"
+   ],
+   "claim": "git switch - returns to the previous branch"
+  },
+  {
+   "cite": "PGEN p.77",
+   "contains": [
+    "git checkout -b iss53",
+    "Switched to a new branch"
+   ],
+   "claim": "creates and switches to iss53"
+  },
+  {
+   "cite": "PGEN p.78",
+   "contains": [
+    "stashing",
+    "commit amending"
+   ],
+   "claim": "alternatives for switching with pending changes"
+  },
+  {
+   "cite": "PGEN p.78",
+   "contains": [
+    "clean working state",
+    "let you switch"
+   ],
+   "claim": "clean working tree; conflict blocks the switch"
+  },
+  {
+   "cite": "PGEN p.79",
+   "contains": [
+    "Fast-forward",
+    "git merge hotfix"
+   ],
+   "claim": "merge of the hotfix is a fast-forward"
+  },
+  {
+   "cite": "PGEN p.79",
+   "contains": [
+    "no divergent work",
+    "directly ahead"
+   ],
+   "claim": "fast-forward: commit directly ahead, only moves the pointer"
+  },
+  {
+   "cite": "PGEN p.80",
+   "contains": [
+    "git branch -d hotfix",
+    "Deleted branch"
+   ],
+   "claim": "delete hotfix after merge"
+  },
+  {
+   "cite": "PGEN p.81",
+   "contains": [
+    "git merge master",
+    "three-way merge"
+   ],
+   "claim": "bring master into iss53; three-way uses the common ancestor"
+  },
+  {
+   "cite": "PGEN p.81",
+   "contains": [
+    "recursive",
+    "three-way merge"
+   ],
+   "claim": "divergent merge uses the recursive strategy and the common ancestor"
+  },
+  {
+   "cite": "PGEN p.82",
+   "contains": [
+    "merge commit",
+    "more than one parent"
+   ],
+   "claim": "a merge commit has more than one parent"
+  },
+  {
+   "cite": "PGEN p.82",
+   "contains": [
+    "same part of the same file",
+    "merge conflict"
+   ],
+   "claim": "conflict: same part of the same file"
+  },
+  {
+   "cite": "PGEN p.83",
+   "contains": [
+    "CONFLICT (content)",
+    "Automatic merge failed"
+   ],
+   "claim": "conflict message"
+  },
+  {
+   "cite": "PGEN p.83",
+   "contains": [
+    "Unmerged paths",
+    "both modified"
+   ],
+   "claim": "status lists unmerged paths"
+  },
+  {
+   "cite": "PGEN p.83",
+   "contains": [
+    "<<<<<<< HEAD",
+    "======="
+   ],
+   "claim": ">>>>>>> markers; top is HEAD"
+  },
+  {
+   "cite": "PGEN p.84",
+   "contains": [
+    "Staging the file",
+    "marks it as resolved"
+   ],
+   "claim": "staging marks as resolved"
+  },
+  {
+   "cite": "PGEN p.84",
+   "contains": [
+    "git mergetool",
+    "merge.tool"
+   ],
+   "claim": "graphical tool; merge.tool not configured"
+  },
+  {
+   "cite": "PGEN p.84",
+   "contains": [
+    "All conflicts fixed",
+    "git commit"
+   ],
+   "claim": "after resolving, git commit completes"
+  },
+  {
+   "cite": "PGEN p.85",
+   "contains": [
+    "MERGE_HEAD",
+    "Merge branch"
+   ],
+   "claim": "merge commit template mentions .git/MERGE_HEAD"
+  },
+  {
+   "cite": "PGEN p.85",
+   "contains": [
+    "git branch -v",
+    "last commit"
+   ],
+   "claim": "-v shows the last commit"
+  },
+  {
+   "cite": "PGEN p.85",
+   "contains": [
+    "--merged",
+    "--no-merged"
+   ],
+   "claim": "filters for merged branches"
+  },
+  {
+   "cite": "PGEN p.86",
+   "contains": [
+    "git branch -d",
+    "not fully merged"
+   ],
+   "claim": "-d fails on an unmerged branch"
+  },
+  {
+   "cite": "PGEN p.86",
+   "contains": [
+    "git branch -D",
+    "lose that work"
+   ],
+   "claim": "-D forces and loses work"
+  },
+  {
+   "cite": "PGEN p.86",
+   "contains": [
+    "--no-merged master",
+    "topicA"
+   ],
+   "claim": "no-merged accepts another ref"
+  },
+  {
+   "cite": "PGEN p.86",
+   "contains": [
+    "Do not rename branches",
+    "collaborators"
+   ],
+   "claim": "do not rename a branch in use by others"
+  },
+  {
+   "cite": "PGEN p.87",
+   "contains": [
+    "git branch --move",
+    "--set-upstream origin"
+   ],
+   "claim": "rename locally and publish"
+  },
+  {
+   "cite": "PGEN p.87",
+   "contains": [
+    "git push origin --delete bad-branch-name"
+   ],
+   "claim": "delete the old name on the remote"
+  },
+  {
+   "cite": "PGEN p.87",
+   "contains": [
+    "integrations",
+    "build/release scripts"
+   ],
+   "claim": "renaming master breaks integrations"
+  },
+  {
+   "cite": "PGEN p.88",
+   "contains": [
+    "remotes/origin/master",
+    "old master branch is still present"
+   ],
+   "claim": "the old master remains on the remote"
+  },
+  {
+   "cite": "PGEN p.88",
+   "contains": [
+    "pull requests",
+    "default branch"
+   ],
+   "claim": "post-rename tasks"
+  },
+  {
+   "cite": "PGEN p.88",
+   "contains": [
+    "git push origin --delete master"
+   ],
+   "claim": "delete master only at the end"
+  },
+  {
+   "cite": "PGEN p.88",
+   "contains": [
+    "Long-Running Branches",
+    "three-way merge"
+   ],
+   "claim": "long-running branches"
+  },
+  {
+   "cite": "PGEN p.89",
+   "contains": [
+    "develop",
+    "next"
+   ],
+   "claim": "progressive-stability branches"
+  },
+  {
+   "cite": "PGEN p.89",
+   "contains": [
+    "topic branches",
+    "pu"
+   ],
+   "claim": "proposed updates"
+  },
+  {
+   "cite": "PGEN p.89",
+   "contains": [
+    "short-lived",
+    "single particular feature"
+   ],
+   "claim": "a topic branch is short-lived and for a single subject"
+  },
+  {
+   "cite": "PGEN p.90",
+   "contains": [
+    "dumbidea",
+    "iss91v2"
+   ],
+   "claim": "example of multiple topic branches"
+  },
+  {
+   "cite": "PGEN p.91",
+   "contains": [
+    "completely local",
+    "no communication with the server"
+   ],
+   "claim": "branching and merging are local"
+  },
+  {
+   "cite": "PGEN p.91",
+   "contains": [
+    "git ls-remote",
+    "remote show"
+   ],
+   "claim": "list remote references"
+  },
+  {
+   "cite": "PGEN p.92",
+   "contains": [
+    "Remote-tracking branches",
+    "bookmarks"
+   ],
+   "claim": "remote tracking = local bookmarks"
+  },
+  {
+   "cite": "PGEN p.92",
+   "contains": [
+    "booyah/master",
+    "-o booyah"
+   ],
+   "claim": "origin is not special; clone -o"
+  },
+  {
+   "cite": "PGEN p.94",
+   "contains": [
+    "git fetch origin",
+    "origin/master"
+   ],
+   "claim": "fetch updates origin/master"
+  },
+  {
+   "cite": "PGEN p.95",
+   "contains": [
+    "git remote",
+    "teamone"
+   ],
+   "claim": "adds remote teamone"
+  },
+  {
+   "cite": "PGEN p.97",
+   "contains": [
+    "explicitly push",
+    "git push origin serverfix"
+   ],
+   "claim": "branches do not sync by themselves; explicit push"
+  },
+  {
+   "cite": "PGEN p.97",
+   "contains": [
+    "refs/heads/serverfix"
+   ],
+   "claim": "expands serverfix to refs/heads"
+  },
+  {
+   "cite": "PGEN p.98",
+   "contains": [
+    "serverfix:awesomebranch"
+   ],
+   "claim": "push with a different remote name"
+  },
+  {
+   "cite": "PGEN p.98",
+   "contains": [
+    "credential.helper cache"
+   ],
+   "claim": "credential cache"
+  },
+  {
+   "cite": "PGEN p.98",
+   "contains": [
+    "origin/serverfix",
+    "git merge origin/serverfix"
+   ],
+   "claim": "fetch brings only an immovable pointer; manual merge"
+  },
+  {
+   "cite": "PGEN p.98",
+   "contains": [
+    "git checkout -b serverfix origin/serverfix"
+   ],
+   "claim": "creates a local working branch"
+  },
+  {
+   "cite": "PGEN p.99",
+   "contains": [
+    "tracking branch",
+    "upstream branch"
+   ],
+   "claim": "definition of tracking/upstream"
+  },
+  {
+   "cite": "PGEN p.99",
+   "contains": [
+    "--track",
+    "git checkout serverfix"
+   ],
+   "claim": "tracking shortcuts"
+  },
+  {
+   "cite": "PGEN p.99",
+   "contains": [
+    "git branch -u",
+    "@{u}"
+   ],
+   "claim": "-u sets upstream; @{u} shortcut"
+  },
+  {
+   "cite": "PGEN p.100",
+   "contains": [
+    "git branch -vv",
+    "ahead 2"
+   ],
+   "claim": "-vv shows ahead/behind"
+  },
+  {
+   "cite": "PGEN p.100",
+   "contains": [
+    "git fetch --all",
+    "cache"
+   ],
+   "claim": "the -vv numbers depend on the last fetch"
+  },
+  {
+   "cite": "PGEN p.100",
+   "contains": [
+    "git fetch",
+    "git merge"
+   ],
+   "claim": "git pull is fetch followed by merge"
+  },
+  {
+   "cite": "PGEN p.100",
+   "contains": [
+    "git push origin --delete serverfix"
+   ],
+   "claim": "deletes the remote branch"
+  },
+  {
+   "cite": "PGEN p.101",
+   "contains": [
+    "garbage collection"
+   ],
+   "claim": "removes only the pointer; data stays until GC"
+  },
+  {
+   "cite": "PGEN p.102",
+   "contains": [
+    "git rebase master",
+    "patch"
+   ],
+   "claim": "rebase replays diffs on top of master"
+  },
+  {
+   "cite": "PGEN p.102",
+   "contains": [
+    "temporary files",
+    "common ancestor"
+   ],
+   "claim": "internal mechanism of rebase"
+  },
+  {
+   "cite": "PGEN p.103",
+   "contains": [
+    "linear history",
+    "same snapshot"
+   ],
+   "claim": "rebase gives linear history; same final snapshot"
+  },
+  {
+   "cite": "PGEN p.103",
+   "contains": [
+    "maintainer",
+    "origin/master"
+   ],
+   "claim": "contributing: rebase onto origin/master"
+  },
+  {
+   "cite": "PGEN p.104",
+   "contains": [
+    "git rebase --onto master server client"
+   ],
+   "claim": "--onto command"
+  },
+  {
+   "cite": "PGEN p.105",
+   "contains": [
+    "git rebase master server",
+    "git branch -d client"
+   ],
+   "claim": "rebase without prior checkout; cleanup"
+  },
+  {
+   "cite": "PGEN p.106",
+   "contains": [
+    "Do not rebase commits",
+    "outside your repository"
+   ],
+   "claim": "golden rule of rebase"
+  },
+  {
+   "cite": "PGEN p.106",
+   "contains": [
+    "abandoning existing commits"
+   ],
+   "claim": "rebase abandons commits and creates new ones"
+  },
+  {
+   "cite": "PGEN p.107",
+   "contains": [
+    "git push --force"
+   ],
+   "claim": "force-push scenario"
+  },
+  {
+   "cite": "PGEN p.108",
+   "contains": [
+    "patch-id"
+   ],
+   "claim": "checksum of the patch only"
+  },
+  {
+   "cite": "PGEN p.108",
+   "contains": [
+    "two commits"
+   ],
+   "claim": "duplicated commits after pull"
+  },
+  {
+   "cite": "PGEN p.109",
+   "contains": [
+    "git pull --rebase",
+    "pull.rebase true"
+   ],
+   "claim": "pull --rebase and default config"
+  },
+  {
+   "cite": "PGEN p.109",
+   "contains": [
+    "never left your own computer"
+   ],
+   "claim": "rebase is safe only for what has not left your machine"
+  },
+  {
+   "cite": "PGEN p.109",
+   "contains": [
+    "Rebase vs. Merge",
+    "record of what actually"
+   ],
+   "claim": "view of history as a record"
+  },
+  {
+   "cite": "PGEN p.110",
+   "contains": [
+    "filter-branch",
+    "story"
+   ],
+   "claim": "view of history as a narrative"
+  },
+  {
+   "cite": "PGEN p.110",
+   "contains": [
+    "never rebase anything that you"
+   ],
+   "claim": "rebase locally before sending, never what was already sent"
+  },
+  {
+   "cite": "PGEN p.111",
+   "contains": [
+    "bare repository",
+    "working directory"
+   ],
+   "claim": "remote repo is normally bare (no working directory)"
+  },
+  {
+   "cite": "PGEN p.112",
+   "contains": [
+    "file:///srv/git/project.git",
+    "git clone"
+   ],
+   "claim": "git clone accepts a file:// URL in the local protocol"
+  },
+  {
+   "cite": "PGEN p.112",
+   "contains": [
+    "hardlinks",
+    "file://"
+   ],
+   "claim": "plain path uses hardlinks/copy; file:// triggers network processes"
+  },
+  {
+   "cite": "PGEN p.112",
+   "contains": [
+    "git pull /home/john/project"
+   ],
+   "claim": "shortcut to pull from a colleague's repo"
+  },
+  {
+   "cite": "PGEN p.112",
+   "contains": [
+    "corrupting",
+    "full shell access"
+   ],
+   "claim": "the local protocol does not protect against accidental corruption"
+  },
+  {
+   "cite": "PGEN p.113",
+   "contains": [
+    "1.6.6",
+    "Smart HTTP"
+   ],
+   "claim": "Smart HTTP introduced in version 1.6.6"
+  },
+  {
+   "cite": "PGEN p.113",
+   "contains": [
+    "Dumb HTTP",
+    "post-update"
+   ],
+   "claim": "Dumb HTTP serves static files and requires a post-update hook"
+  },
+  {
+   "cite": "PGEN p.113",
+   "contains": [
+    "git update-server-info"
+   ],
+   "claim": "post-update hook runs update-server-info"
+  },
+  {
+   "cite": "PGEN p.114",
+   "contains": [
+    "single URL",
+    "firewalls"
+   ],
+   "claim": "Smart HTTP has a single URL and crosses firewalls"
+  },
+  {
+   "cite": "PGEN p.114",
+   "contains": [
+    "Keychain",
+    "Credential Manager"
+   ],
+   "claim": "credential cache on macOS/Windows"
+  },
+  {
+   "cite": "PGEN p.114",
+   "contains": [
+    "ssh://[user@]server/project.git"
+   ],
+   "claim": "SSH URL"
+  },
+  {
+   "cite": "PGEN p.115",
+   "contains": [
+    "[user@]server:project.git"
+   ],
+   "claim": "scp-like syntax"
+  },
+  {
+   "cite": "PGEN p.115",
+   "contains": [
+    "anonymous",
+    "SSH"
+   ],
+   "claim": "SSH does not support anonymous access"
+  },
+  {
+   "cite": "PGEN p.115",
+   "contains": [
+    "9418",
+    "git-daemon-export-ok"
+   ],
+   "claim": "daemon on port 9418 and requires an export file"
+  },
+  {
+   "cite": "PGEN p.115",
+   "contains": [
+    "arbitrary code",
+    "TLS"
+   ],
+   "claim": "git:// may lead to arbitrary code execution"
+  },
+  {
+   "cite": "PGEN p.116",
+   "contains": [
+    "xinetd",
+    "systemd"
+   ],
+   "claim": "daemon requires xinetd or systemd"
+  },
+  {
+   "cite": "PGEN p.116",
+   "contains": [
+    "git clone --bare my_project my_project.git"
+   ],
+   "claim": "create a bare repo, .git suffix"
+  },
+  {
+   "cite": "PGEN p.117",
+   "contains": [
+    "scp -r",
+    "/srv/git"
+   ],
+   "claim": "copy the bare repo to the server with scp"
+  },
+  {
+   "cite": "PGEN p.117",
+   "contains": [
+    "--shared",
+    "git init --bare --shared"
+   ],
+   "claim": "group permission, does not destroy commits"
+  },
+  {
+   "cite": "PGEN p.118",
+   "contains": [
+    "authorized_keys",
+    "'git' user"
+   ],
+   "claim": "single git account with keys in authorized_keys"
+  },
+  {
+   "cite": "PGEN p.118",
+   "contains": [
+    "LDAP"
+   ],
+   "claim": "alternative centralized authentication"
+  },
+  {
+   "cite": "PGEN p.119",
+   "contains": [
+    "-o option",
+    "brute-force"
+   ],
+   "claim": "-o brute-force-resistant format"
+  },
+  {
+   "cite": "PGEN p.119",
+   "contains": [
+    "ssh-copy-id"
+   ],
+   "claim": "automates key copying"
+  },
+  {
+   "cite": "PGEN p.119",
+   "contains": [
+    "chmod 700",
+    "chmod 600"
+   ],
+   "claim": "permissions of .ssh and authorized_keys"
+  },
+  {
+   "cite": "PGEN p.120",
+   "contains": [
+    "git init --bare"
+   ],
+   "claim": "new bare repo on the server"
+  },
+  {
+   "cite": "PGEN p.120",
+   "contains": [
+    "git remote add origin git@gitserver:/srv/git/project.git"
+   ],
+   "claim": "remote to the server"
+  },
+  {
+   "cite": "PGEN p.121",
+   "contains": [
+    "git-shell",
+    "/etc/shells"
+   ],
+   "claim": "restrict login shell"
+  },
+  {
+   "cite": "PGEN p.121",
+   "contains": [
+    "chsh git -s"
+   ],
+   "claim": "change the git user's shell"
+  },
+  {
+   "cite": "PGEN p.121",
+   "contains": [
+    "no-port-forwarding",
+    "no-pty"
+   ],
+   "claim": "options in authorized_keys"
+  },
+  {
+   "cite": "PGEN p.122",
+   "contains": [
+    "git help shell"
+   ],
+   "claim": "customize git-shell"
+  },
+  {
+   "cite": "PGEN p.122",
+   "contains": [
+    "git daemon --reuseaddr --base-path=/srv/git/"
+   ],
+   "claim": "daemon command"
+  },
+  {
+   "cite": "PGEN p.122",
+   "contains": [
+    "continuous integration"
+   ],
+   "claim": "daemon for CI read access inside the firewall"
+  },
+  {
+   "cite": "PGEN p.123",
+   "contains": [
+    "systemctl enable git-daemon"
+   ],
+   "claim": "enable at startup"
+  },
+  {
+   "cite": "PGEN p.123",
+   "contains": [
+    "touch git-daemon-export-ok"
+   ],
+   "claim": "release the repo"
+  },
+  {
+   "cite": "PGEN p.123",
+   "contains": [
+    "git-http-backend",
+    "1.6.6"
+   ],
+   "claim": "CGI Smart HTTP"
+  },
+  {
+   "cite": "PGEN p.124",
+   "contains": [
+    "GIT_PROJECT_ROOT",
+    "GIT_HTTP_EXPORT_ALL",
+    "ScriptAlias"
+   ],
+   "claim": "Apache config variables"
+  },
+  {
+   "cite": "PGEN p.124",
+   "contains": [
+    "htpasswd",
+    "www-data"
+   ],
+   "claim": "passwords and the web server group"
+  },
+  {
+   "cite": "PGEN p.124",
+   "contains": [
+    "git-receive-pack"
+   ],
+   "claim": "authenticate writes"
+  },
+  {
+   "cite": "PGEN p.125",
+   "contains": [
+    "does not implement any authentication"
+   ],
+   "claim": "http-backend does not authenticate"
+  },
+  {
+   "cite": "PGEN p.125",
+   "contains": [
+    "git instaweb",
+    "lighttpd",
+    "webrick"
+   ],
+   "claim": "temporary GitWeb instance"
+  },
+  {
+   "cite": "PGEN p.126",
+   "contains": [
+    "--stop",
+    "1234"
+   ],
+   "claim": "port 1234 and --stop"
+  },
+  {
+   "cite": "PGEN p.126",
+   "contains": [
+    "GITWEB_PROJECTROOT"
+   ],
+   "claim": "make variable"
+  },
+  {
+   "cite": "PGEN p.127",
+   "contains": [
+    "Omnibus"
+   ],
+   "claim": "recommended GitLab installation"
+  },
+  {
+   "cite": "PGEN p.127",
+   "contains": [
+    "initial_root_password",
+    "24 hours"
+   ],
+   "claim": "initial root password"
+  },
+  {
+   "cite": "PGEN p.128",
+   "contains": [
+    "Blocking",
+    "Destroying"
+   ],
+   "claim": "blocking preserves data; destroying removes it"
+  },
+  {
+   "cite": "PGEN p.129",
+   "contains": [
+    "Guest",
+    "Owner"
+   ],
+   "claim": "group permission levels"
+  },
+  {
+   "cite": "PGEN p.129",
+   "contains": [
+    "Private",
+    "Internal",
+    "Public"
+   ],
+   "claim": "visibility levels"
+  },
+  {
+   "cite": "PGEN p.129",
+   "contains": [
+    "HTTP POST",
+    "JSON"
+   ],
+   "claim": "GitLab hooks"
+  },
+  {
+   "cite": "PGEN p.130",
+   "contains": [
+    "git remote add gitlab"
+   ],
+   "claim": "remote for GitLab"
+  },
+  {
+   "cite": "PGEN p.130",
+   "contains": [
+    "Developer",
+    "merge request"
+   ],
+   "claim": "Developer access can push; fork + merge request for untrusted contributors"
+  },
+  {
+   "cite": "PGEN p.132",
+   "contains": [
+    "Centralized",
+    "node",
+    "hub"
+   ],
+   "claim": "nodes"
+  },
+  {
+   "cite": "PGEN p.133",
+   "contains": [
+    "non-fast-forward",
+    "Integration-Manager"
+   ],
+   "claim": "push rejected; fetch and merge"
+  },
+  {
+   "cite": "PGEN p.133",
+   "contains": [
+    "canonical",
+    "maintainer"
+   ],
+   "claim": "Integration-manager workflow, steps 1-6"
+  },
+  {
+   "cite": "PGEN p.134",
+   "contains": [
+    "lieutenants",
+    "benevolent dictator",
+    "Linux kernel"
+   ],
+   "claim": "dictator and lieutenants workflow"
+  },
+  {
+   "cite": "PGEN p.134",
+   "contains": [
+    "topic branch",
+    "rebase their work"
+   ],
+   "claim": "devs rebase onto master"
+  },
+  {
+   "cite": "PGEN p.136",
+   "contains": [
+    "git diff --check",
+    "whitespace"
+   ],
+   "claim": "check whitespace before commit"
+  },
+  {
+   "cite": "PGEN p.136",
+   "contains": [
+    "git add --patch",
+    "SubmittingPatches"
+   ],
+   "claim": "logical commits"
+  },
+  {
+   "cite": "PGEN p.137",
+   "contains": [
+    "50",
+    "72",
+    "imperative"
+   ],
+   "claim": "summary line up to ~50, body ~72, imperative"
+  },
+  {
+   "cite": "PGEN p.137",
+   "contains": [
+    "The blank line",
+    "rebase"
+   ],
+   "claim": "the blank line is critical"
+  },
+  {
+   "cite": "PGEN p.137",
+   "contains": [
+    "Tim Pope"
+   ],
+   "claim": "message template"
+  },
+  {
+   "cite": "PGEN p.137",
+   "contains": [
+    "git log --no-merges"
+   ],
+   "claim": "see well-formatted history"
+  },
+  {
+   "cite": "PGEN p.139",
+   "contains": [
+    "non-fast forward",
+    "rejected"
+   ],
+   "claim": "push rejected in Git"
+  },
+  {
+   "cite": "PGEN p.141",
+   "contains": [
+    "issue54..origin/master",
+    "--no-merges"
+   ],
+   "claim": "commit filter"
+  },
+  {
+   "cite": "PGEN p.145",
+   "contains": [
+    "git push -u origin featureA"
+   ],
+   "claim": "push of the feature branch"
+  },
+  {
+   "cite": "PGEN p.147",
+   "contains": [
+    "refspec",
+    "--set-upstream",
+    "--set-upstream"
+   ],
+   "claim": "-u = --set-upstream"
+  },
+  {
+   "cite": "PGEN p.150",
+   "contains": [
+    "git request-pull",
+    "myfork"
+   ],
+   "claim": "pull request by email"
+  },
+  {
+   "cite": "PGEN p.150",
+   "contains": [
+    "rebase -i",
+    "squash",
+    "cherry-picked"
+   ],
+   "claim": "squash/rebase is a reason to push the topic branch"
+  },
+  {
+   "cite": "PGEN p.152",
+   "contains": [
+    "git push -f myfork featureA",
+    "featureAv2"
+   ],
+   "claim": "forced push after rebase"
+  },
+  {
+   "cite": "PGEN p.153",
+   "contains": [
+    "--squash",
+    "--no-commit"
+   ],
+   "claim": "merge --squash gives a single parent"
+  },
+  {
+   "cite": "PGEN p.154",
+   "contains": [
+    "git format-patch -M origin/master",
+    "renames"
+   ],
+   "claim": "generates mbox"
+  },
+  {
+   "cite": "PGEN p.155",
+   "contains": [
+    "git imap-send",
+    "imaps://imap.gmail.com"
+   ],
+   "claim": "imap-send to Drafts"
+  },
+  {
+   "cite": "PGEN p.155",
+   "contains": [
+    "git send-email",
+    "sendemail",
+    "smtpencryption"
+   ],
+   "claim": "send-email via SMTP"
+  },
+  {
+   "cite": "PGEN p.157",
+   "contains": [
+    "sc/ruby_client"
+   ],
+   "claim": "topic branch namespace"
+  },
+  {
+   "cite": "PGEN p.157",
+   "contains": [
+    "git apply",
+    "patch -p1",
+    "all or abort"
+   ],
+   "claim": "apply is all-or-nothing, does not commit"
+  },
+  {
+   "cite": "PGEN p.158",
+   "contains": [
+    "git apply --check",
+    "non-zero"
+   ],
+   "claim": "checks without applying"
+  },
+  {
+   "cite": "PGEN p.158",
+   "contains": [
+    "git am",
+    "mbox"
+   ],
+   "claim": "am = apply a series of patches from a mailbox"
+  },
+  {
+   "cite": "PGEN p.159",
+   "contains": [
+    "--pretty=fuller",
+    "AuthorDate",
+    "CommitDate"
+   ],
+   "claim": "author vs who applied it"
+  },
+  {
+   "cite": "PGEN p.159",
+   "contains": [
+    "git am --resolved",
+    "--skip",
+    "--abort"
+   ],
+   "claim": "am failure"
+  },
+  {
+   "cite": "PGEN p.159",
+   "contains": [
+    "-3",
+    "three-way merge"
+   ],
+   "claim": "the base commit must exist"
+  },
+  {
+   "cite": "PGEN p.160",
+   "contains": [
+    "git am -3 -i",
+    "[a]ccept all"
+   ],
+   "claim": "interactive mode"
+  },
+  {
+   "cite": "PGEN p.160",
+   "contains": [
+    "git remote add jessica",
+    "jessica/ruby-client"
+   ],
+   "claim": "checkout of a remote branch"
+  },
+  {
+   "cite": "PGEN p.161",
+   "contains": [
+    "git pull https://github.com/onetimeguy/project"
+   ],
+   "claim": "single pull"
+  },
+  {
+   "cite": "PGEN p.161",
+   "contains": [
+    "git log contrib --not master"
+   ],
+   "claim": "equivalent to master..contrib"
+  },
+  {
+   "cite": "PGEN p.162",
+   "contains": [
+    "git merge-base contrib master",
+    "master...contrib"
+   ],
+   "claim": "triple-dot"
+  },
+  {
+   "cite": "PGEN p.163",
+   "contains": [
+    "two-phase merge",
+    "develop",
+    "fast-forward"
+   ],
+   "claim": "master/develop cycle"
+  },
+  {
+   "cite": "PGEN p.165",
+   "contains": [
+    "seen",
+    "maint",
+    "next",
+    "pu"
+   ],
+   "claim": "Git's long-running branches"
+  },
+  {
+   "cite": "PGEN p.166",
+   "contains": [
+    "cherry-pick",
+    "linear history"
+   ],
+   "claim": "rebase or cherry-pick for linear history"
+  },
+  {
+   "cite": "PGEN p.167",
+   "contains": [
+    "git cherry-pick e43a6"
+   ],
+   "claim": "new SHA-1"
+  },
+  {
+   "cite": "PGEN p.168",
+   "contains": [
+    "rerere.enabled"
+   ],
+   "claim": "reuse recorded resolution"
+  },
+  {
+   "cite": "PGEN p.168",
+   "contains": [
+    "git tag -s v1.5"
+   ],
+   "claim": "signed tag"
+  },
+  {
+   "cite": "PGEN p.169",
+   "contains": [
+    "git hash-object -w --stdin",
+    "maintainer-pgp-pub"
+   ],
+   "claim": "PGP key as a blob"
+  },
+  {
+   "cite": "PGEN p.169",
+   "contains": [
+    "git describe master",
+    "v1.6.2-rc1-20-g8c5b85c",
+    "--tags"
+   ],
+   "claim": "build number; requires annotated tags"
+  },
+  {
+   "cite": "PGEN p.169",
+   "contains": [
+    "10 characters"
+   ],
+   "claim": "abbreviated SHA-1 may invalidate old names"
+  },
+  {
+   "cite": "PGEN p.170",
+   "contains": [
+    "git archive master --prefix",
+    "--format=zip"
+   ],
+   "claim": "tar.gz/zip archive"
+  },
+  {
+   "cite": "PGEN p.170",
+   "contains": [
+    "git shortlog --no-merges master --not v1.0.1"
+   ],
+   "claim": "changelog by author"
+  },
+  {
+   "cite": "PGEN p.172",
+   "contains": [
+    "single largest host",
+    "Git repositories"
+   ],
+   "claim": "GitHub is described as the largest host of Git repositories"
+  },
+  {
+   "cite": "PGEN p.172",
+   "contains": [
+    "Interfaces Change",
+    "UI elements"
+   ],
+   "claim": "the book warns that the screenshots' UI changes"
+  },
+  {
+   "cite": "PGEN p.172",
+   "contains": [
+    "Sign up for GitHub",
+    "user name"
+   ],
+   "claim": "sign-up: username, email and password, Sign up for GitHub button"
+  },
+  {
+   "cite": "PGEN p.173",
+   "contains": [
+    "pricing page",
+    "verify the address"
+   ],
+   "claim": "skip the plans page; verify email"
+  },
+  {
+   "cite": "PGEN p.173",
+   "contains": [
+    "SSH remotes",
+    "public key"
+   ],
+   "claim": "SSH remotes require a configured public key"
+  },
+  {
+   "cite": "PGEN p.173",
+   "contains": [
+    "https:// protocol",
+    "clone public"
+   ],
+   "claim": "cloning public projects does not require an account"
+  },
+  {
+   "cite": "PGEN p.174",
+   "contains": [
+    "Add an SSH key",
+    "id_rsa.pub"
+   ],
+   "claim": "paste the public key in Add an SSH key"
+  },
+  {
+   "cite": "PGEN p.174",
+   "contains": [
+    "revoke",
+    "My Laptop"
+   ],
+   "claim": "name keys so you can revoke them later"
+  },
+  {
+   "cite": "PGEN p.175",
+   "contains": [
+    "Gravatar",
+    "avatar"
+   ],
+   "claim": "Gravatar avatar is used by default"
+  },
+  {
+   "cite": "PGEN p.176",
+   "contains": [
+    "email address",
+    "primary address"
+   ],
+   "claim": "commits mapped to the user by email; primary/verified/unverified states"
+  },
+  {
+   "cite": "PGEN p.176",
+   "contains": [
+    "Two-factor",
+    "2FA"
+   ],
+   "claim": "configuring 2FA is strongly recommended"
+  },
+  {
+   "cite": "PGEN p.177",
+   "contains": [
+    "one-time",
+    "SMS"
+   ],
+   "claim": "2FA via TOTP app or SMS"
+  },
+  {
+   "cite": "PGEN p.177",
+   "contains": [
+    "Forking Projects",
+    "namespace"
+   ],
+   "claim": "fork creates a copy in your namespace with push access"
+  },
+  {
+   "cite": "PGEN p.177",
+   "contains": [
+    "Pull Request",
+    "code review"
+   ],
+   "claim": "a PR opens a discussion with code review until the merge"
+  },
+  {
+   "cite": "PGEN p.178",
+   "contains": [
+    "The GitHub Flow",
+    "Topic Branches"
+   ],
+   "claim": "workflow centered on PRs and topic branches"
+  },
+  {
+   "cite": "PGEN p.178",
+   "contains": [
+    "Sync the updated master",
+    "Open a Pull Request"
+   ],
+   "claim": "list of 8 steps ends with syncing master in the fork"
+  },
+  {
+   "cite": "PGEN p.178",
+   "contains": [
+    "GitHub CLI",
+    "Windows, macOS"
+   ],
+   "claim": "GitHub CLI replaces the web UI for most tasks"
+  },
+  {
+   "cite": "PGEN p.179",
+   "contains": [
+    "git checkout -b slow-blink",
+    "git clone"
+   ],
+   "claim": "clones the fork and creates the topic branch slow-blink"
+  },
+  {
+   "cite": "PGEN p.180",
+   "contains": [
+    "git push origin slow-blink",
+    "Branches"
+   ],
+   "claim": "push of the topic branch; PR also via the Branches page"
+  },
+  {
+   "cite": "PGEN p.181",
+   "contains": [
+    "ahead",
+    "unified diff"
+   ],
+   "claim": "PR screen lists commits ahead and a unified diff"
+  },
+  {
+   "cite": "PGEN p.182",
+   "contains": [
+    "Create pull request",
+    "notification"
+   ],
+   "claim": "creating a PR notifies the project owner"
+  },
+  {
+   "cite": "PGEN p.182",
+   "contains": [
+    "internal projects",
+    "iterate"
+   ],
+   "claim": "PR is also used early in internal projects"
+  },
+  {
+   "cite": "PGEN p.183",
+   "contains": [
+    "comment",
+    "notification"
+   ],
+   "claim": "owner's comment notifies the author and watchers"
+  },
+  {
+   "cite": "PGEN p.184",
+   "contains": [
+    "automatically update",
+    "push"
+   ],
+   "claim": "commit+push updates the PR without a re-roll"
+  },
+  {
+   "cite": "PGEN p.184",
+   "contains": [
+    "trigger a notification",
+    "Adding commits"
+   ],
+   "claim": "new commits on a PR do not notify"
+  },
+  {
+   "cite": "PGEN p.185",
+   "contains": [
+    "Files Changed",
+    "git diff master"
+   ],
+   "claim": "Files Changed shows the aggregate diff equivalent to git diff master...branch"
+  },
+  {
+   "cite": "PGEN p.185",
+   "contains": [
+    "non-fast-forward",
+    "merge commit"
+   ],
+   "claim": "the Merge button does a non-ff and creates a merge commit"
+  },
+  {
+   "cite": "PGEN p.186",
+   "contains": [
+    "Not Only Forks",
+    "same repository"
+   ],
+   "claim": "a PR can be between branches of the same repo"
+  },
+  {
+   "cite": "PGEN p.186",
+   "contains": [
+    "iterative",
+    "re-rolled"
+   ],
+   "claim": "PRs are an iterative conversation; the series is not redone"
+  },
+  {
+   "cite": "PGEN p.187",
+   "contains": [
+    "rebase",
+    "slightly cleaner history"
+   ],
+   "claim": "most choose merge over rebase"
+  },
+  {
+   "cite": "PGEN p.187",
+   "contains": [
+    "git remote add upstream",
+    "git fetch upstream"
+   ],
+   "claim": "adds remote upstream and fetches"
+  },
+  {
+   "cite": "PGEN p.187",
+   "contains": [
+    "git merge upstream/master",
+    "CONFLICT"
+   ],
+   "claim": "merging upstream into the topic branch may produce a conflict"
+  },
+  {
+   "cite": "PGEN p.188",
+   "contains": [
+    "force push",
+    "Perils of Rebasing"
+   ],
+   "claim": "do not force push on a branch with an open PR"
+  },
+  {
+   "cite": "PGEN p.188",
+   "contains": [
+    "brand",
+    "close the original"
+   ],
+   "claim": "rebase: new branch, new PR, close the original"
+  },
+  {
+   "cite": "PGEN p.188",
+   "contains": [
+    "unique within the project",
+    "Pull Request #3"
+   ],
+   "claim": "PR/issue numbers are unique within the project"
+  },
+  {
+   "cite": "PGEN p.189",
+   "contains": [
+    "username#<num>",
+    "username/repo#<num>"
+   ],
+   "claim": "reference syntax across forks and repos"
+  },
+  {
+   "cite": "PGEN p.190",
+   "contains": [
+    "trackback",
+    "timeline"
+   ],
+   "claim": "mentioning a PR creates a trackback in the timeline"
+  },
+  {
+   "cite": "PGEN p.190",
+   "contains": [
+    "40 character SHA-1",
+    "link directly"
+   ],
+   "claim": "full 40-char SHA-1 becomes a link"
+  },
+  {
+   "cite": "PGEN p.190",
+   "contains": [
+    "GitHub Flavored Markdown",
+    "rendered richly"
+   ],
+   "claim": "text with GitHub Markdown"
+  },
+  {
+   "cite": "PGEN p.191",
+   "contains": [
+    "Task List",
+    "- [X]"
+   ],
+   "claim": "task list with checkboxes"
+  },
+  {
+   "cite": "PGEN p.192",
+   "contains": [
+    "fence",
+    "syntax highlight"
+   ],
+   "claim": "code fenced by backticks with a language gets highlighting"
+  },
+  {
+   "cite": "PGEN p.193",
+   "contains": [
+    "> character",
+    "r key"
+   ],
+   "claim": "quote with > and the r shortcut"
+  },
+  {
+   "cite": "PGEN p.194",
+   "contains": [
+    "emoji",
+    "autocompleter"
+   ],
+   "claim": "emoji via :name: with autocomplete"
+  },
+  {
+   "cite": "PGEN p.195",
+   "contains": [
+    "drag and drop",
+    "Parsed as Markdown"
+   ],
+   "claim": "images by drag and drop"
+  },
+  {
+   "cite": "PGEN p.195",
+   "contains": [
+    "commits behind",
+    "up-to-date"
+   ],
+   "claim": "a fork shows \"commits behind\" the original"
+  },
+  {
+   "cite": "PGEN p.196",
+   "contains": [
+    "automatically updated",
+    "git pull https://github.com/progit/progit2.git"
+   ],
+   "claim": "GitHub does not update the fork by itself; pull from the original's URL"
+  },
+  {
+   "cite": "PGEN p.196",
+   "contains": [
+    "set-upstream-to",
+    "pushDefault"
+   ],
+   "claim": "configuration for master to pull from upstream and push to origin"
+  },
+  {
+   "cite": "PGEN p.196",
+   "contains": [
+    "take care",
+    "warn"
+   ],
+   "claim": "no warning if you commit on master; do not commit directly to it"
+  },
+  {
+   "cite": "PGEN p.197",
+   "contains": [
+    "New repository",
+    "dashboard"
+   ],
+   "claim": "create a repo with the New repository button"
+  },
+  {
+   "cite": "PGEN p.198",
+   "contains": [
+    "git@github.com",
+    "HTTPS"
+   ],
+   "claim": "HTTPS and SSH URLs of each project"
+  },
+  {
+   "cite": "PGEN p.198",
+   "contains": [
+    "collaborators",
+    "push"
+   ],
+   "claim": "collaborators get push access (read and write)"
+  },
+  {
+   "cite": "PGEN p.199",
+   "contains": [
+    "Collaborators",
+    "Add collaborator"
+   ],
+   "claim": "add a collaborator in Settings > Collaborators"
+  },
+  {
+   "cite": "PGEN p.199",
+   "contains": [
+    "fork",
+    "internal"
+   ],
+   "claim": "PR from a fork or from an internal branch"
+  },
+  {
+   "cite": "PGEN p.200",
+   "contains": [
+    "git pull <url> patch-1",
+    ".patch"
+   ],
+   "claim": "the email includes git pull and .diff/.patch URLs"
+  },
+  {
+   "cite": "PGEN p.200",
+   "contains": [
+    "git am",
+    "curl"
+   ],
+   "claim": "curl the .patch URL piped to git am"
+  },
+  {
+   "cite": "PGEN p.201",
+   "contains": [
+    "merge commit",
+    "fast-forward"
+   ],
+   "claim": "the Merge button always creates a merge commit"
+  },
+  {
+   "cite": "PGEN p.202",
+   "contains": [
+    "ls-remote",
+    "plumbing"
+   ],
+   "claim": "git ls-remote lists the server's refs"
+  },
+  {
+   "cite": "PGEN p.202",
+   "contains": [
+    "refs/pull/",
+    "pseudo-branches"
+   ],
+   "claim": "GitHub exposes PRs as refs/pull/ pseudo-branches"
+  },
+  {
+   "cite": "PGEN p.203",
+   "contains": [
+    "refs/heads/",
+    "ignores"
+   ],
+   "claim": "refs/pull are not fetched by default clone/fetch"
+  },
+  {
+   "cite": "PGEN p.203",
+   "contains": [
+    "refspec",
+    "+refs/pull/*/head"
+   ],
+   "claim": "extra refspec to bring in PRs"
+  },
+  {
+   "cite": "PGEN p.204",
+   "contains": [
+    "git checkout pr/2",
+    "refs/pull/#/merge"
+   ],
+   "claim": "test a PR locally; the /merge ref simulates the Merge button"
+  },
+  {
+   "cite": "PGEN p.204",
+   "contains": [
+    "any branch in the network",
+    "another Pull Request"
+   ],
+   "claim": "a PR can target any branch or another PR"
+  },
+  {
+   "cite": "PGEN p.205",
+   "contains": [
+    "@ character",
+    "notified"
+   ],
+   "claim": "@mention notifies the user"
+  },
+  {
+   "cite": "PGEN p.206",
+   "contains": [
+    "subscribed",
+    "Unsubscribe"
+   ],
+   "claim": "the mentioned user is subscribed; there is an Unsubscribe button"
+  },
+  {
+   "cite": "PGEN p.207",
+   "contains": [
+    "Notification center",
+    "Email"
+   ],
+   "claim": "Email and Web notification options"
+  },
+  {
+   "cite": "PGEN p.207",
+   "contains": [
+    "blue",
+    "acknowledge"
+   ],
+   "claim": "web: blue dot, checkmark and mute"
+  },
+  {
+   "cite": "PGEN p.208",
+   "contains": [
+    "Message-ID",
+    "List-Unsubscribe"
+   ],
+   "claim": "email headers useful for filters"
+  },
+  {
+   "cite": "PGEN p.209",
+   "contains": [
+    "README",
+    "CONTRIBUTING"
+   ],
+   "claim": "special files README and CONTRIBUTING"
+  },
+  {
+   "cite": "PGEN p.210",
+   "contains": [
+    "Changing the Default Branch",
+    "Options"
+   ],
+   "claim": "default branch under Options in settings"
+  },
+  {
+   "cite": "PGEN p.210",
+   "contains": [
+    "Transfer ownership",
+    "redirect"
+   ],
+   "claim": "transferring a project redirects the URL, including clones/fetches"
+  },
+  {
+   "cite": "PGEN p.211",
+   "contains": [
+    "Organizations",
+    "New organization"
+   ],
+   "claim": "orgs: group namespace; create via New organization"
+  },
+  {
+   "cite": "PGEN p.212",
+   "contains": [
+    "read only",
+    "administrative access"
+   ],
+   "claim": "teams: read, read/write or admin"
+  },
+  {
+   "cite": "PGEN p.213",
+   "contains": [
+    "@acmecorp/frontend",
+    "colorblind"
+   ],
+   "claim": "a team mention subscribes all members; interest teams"
+  },
+  {
+   "cite": "PGEN p.213",
+   "contains": [
+    "Audit Log",
+    "who did them"
+   ],
+   "claim": "organization audit log"
+  },
+  {
+   "cite": "PGEN p.216",
+   "contains": [
+    "Jenkins",
+    "Add webhook"
+   ],
+   "claim": "Services include CI and a built-in Jenkins"
+  },
+  {
+   "cite": "PGEN p.216",
+   "contains": [
+    "Add webhook",
+    "push event"
+   ],
+   "claim": "default webhook sends only the push event"
+  },
+  {
+   "cite": "PGEN p.217",
+   "contains": [
+    "Sinatra",
+    "special-branch"
+   ],
+   "claim": "webhook example in Sinatra filtering pusher/branch/file"
+  },
+  {
+   "cite": "PGEN p.218",
+   "contains": [
+    "redeliver",
+    "debug"
+   ],
+   "claim": "deliveries console and redeliver for debugging"
+  },
+  {
+   "cite": "PGEN p.219",
+   "contains": [
+    "api.github.com/users/schacon",
+    "gitignore/templates"
+   ],
+   "claim": "public GET without authentication"
+  },
+  {
+   "cite": "PGEN p.220",
+   "contains": [
+    "personal access token",
+    "60 requests per hour"
+   ],
+   "claim": "token is preferable; 60/h without auth"
+  },
+  {
+   "cite": "PGEN p.220",
+   "contains": [
+    "5,000 requests",
+    "only show you the token once"
+   ],
+   "claim": "5,000/h authenticated; token shown once"
+  },
+  {
+   "cite": "PGEN p.220",
+   "contains": [
+    "comments",
+    "Authorization: token"
+   ],
+   "claim": "comment on an issue with POST and Authorization header"
+  },
+  {
+   "cite": "PGEN p.222",
+   "contains": [
+    "Signed-off-by",
+    "statuses/"
+   ],
+   "claim": "validation service posts a status per commit"
+  },
+  {
+   "cite": "PGEN p.222",
+   "contains": [
+    "context",
+    "target_url"
+   ],
+   "claim": "status fields: state, description, target_url, context"
+  },
+  {
+   "cite": "PGEN p.223",
+   "contains": [
+    "last commit",
+    "Octokit"
+   ],
+   "claim": "PR takes the status of the last commit; Octokit libraries"
+  },
+  {
+   "cite": "PGEN p.224",
+   "contains": [
+    "at least four characters",
+    "unambiguous"
+   ],
+   "claim": "SHA-1 prefix needs at least 4 characters and must be unambiguous"
+  },
+  {
+   "cite": "PGEN p.225",
+   "contains": [
+    "--abbrev-commit",
+    "seven characters"
+   ],
+   "claim": "abbrev-commit uses 7 characters by default and grows if needed"
+  },
+  {
+   "cite": "PGEN p.225",
+   "contains": [
+    "eight to ten",
+    "12 characters"
+   ],
+   "claim": "8 to 10 characters suffice; kernel has no collision in the first 12"
+  },
+  {
+   "cite": "PGEN p.226",
+   "contains": [
+    "shattered.io",
+    "SHA256"
+   ],
+   "claim": "collision demonstrated in 2017; Git is moving to SHA256"
+  },
+  {
+   "cite": "PGEN p.226",
+   "contains": [
+    "rev-parse",
+    "plumbing"
+   ],
+   "claim": "rev-parse shows the SHA-1 of a ref and is plumbing"
+  },
+  {
+   "cite": "PGEN p.226",
+   "contains": [
+    "reflog",
+    "HEAD@{0}"
+   ],
+   "claim": "git reflog lists HEAD movements"
+  },
+  {
+   "cite": "PGEN p.227",
+   "contains": [
+    "master@{yesterday}",
+    "HEAD@{5}"
+   ],
+   "claim": "reflog allows referencing by position or time"
+  },
+  {
+   "cite": "PGEN p.227",
+   "contains": [
+    "git log -g",
+    "strictly local"
+   ],
+   "claim": "log -g formats the reflog; reflog is strictly local"
+  },
+  {
+   "cite": "PGEN p.227",
+   "contains": [
+    "HEAD@{2.months.ago}",
+    "empty reflog"
+   ],
+   "claim": "a fresh clone has an empty reflog"
+  },
+  {
+   "cite": "PGEN p.228",
+   "contains": [
+    "PowerShell",
+    "backtick"
+   ],
+   "claim": "PowerShell requires escaping braces in HEAD@{0}"
+  },
+  {
+   "cite": "PGEN p.228",
+   "contains": [
+    "HEAD^",
+    "cmd.exe"
+   ],
+   "claim": "in cmd.exe the caret is special"
+  },
+  {
+   "cite": "PGEN p.229",
+   "contains": [
+    "d921970^2",
+    "second parent"
+   ],
+   "claim": "^N selects the N-th parent (merges)"
+  },
+  {
+   "cite": "PGEN p.229",
+   "contains": [
+    "HEAD~3^2",
+    "HEAD~~~"
+   ],
+   "claim": "combining ~ and ^; ~~~ equals ~3"
+  },
+  {
+   "cite": "PGEN p.230",
+   "contains": [
+    "master..experiment",
+    "reachable from experiment"
+   ],
+   "claim": "double dot = reachable from B and not from A"
+  },
+  {
+   "cite": "PGEN p.230",
+   "contains": [
+    "origin/master..HEAD",
+    "git push"
+   ],
+   "claim": "shows what will be sent on push"
+  },
+  {
+   "cite": "PGEN p.231",
+   "contains": [
+    "--not",
+    "^refA"
+   ],
+   "claim": "^ and --not allow more than two refs"
+  },
+  {
+   "cite": "PGEN p.231",
+   "contains": [
+    "master...experiment",
+    "--left-right"
+   ],
+   "claim": "triple dot = in one or the other but not both"
+  },
+  {
+   "cite": "PGEN p.232",
+   "contains": [
+    "git add -i",
+    "--interactive"
+   ],
+   "claim": "interactive staging mode"
+  },
+  {
+   "cite": "PGEN p.233",
+   "contains": [
+    "Update>>",
+    "selected"
+   ],
+   "claim": "* marks the selected file for staging"
+  },
+  {
+   "cite": "PGEN p.234",
+   "contains": [
+    "git diff --cached",
+    "Review diff"
+   ],
+   "claim": "the d command of add -i is equivalent to diff --cached"
+  },
+  {
+   "cite": "PGEN p.235",
+   "contains": [
+    "Stage this hunk",
+    "split the current hunk"
+   ],
+   "claim": "patch mode options include s to split a hunk"
+  },
+  {
+   "cite": "PGEN p.236",
+   "contains": [
+    "git add -p",
+    "git reset --patch"
+   ],
+   "claim": "patch mode also in reset, checkout and stash"
+  },
+  {
+   "cite": "PGEN p.236",
+   "contains": [
+    "git stash push",
+    "pathspecs"
+   ],
+   "claim": "stash save being deprecated in favor of push"
+  },
+  {
+   "cite": "PGEN p.237",
+   "contains": [
+    "git stash list",
+    "stash@{0}"
+   ],
+   "claim": "listing stashes"
+  },
+  {
+   "cite": "PGEN p.237",
+   "contains": [
+    "git stash apply",
+    "most recent"
+   ],
+   "claim": "apply without a name uses the most recent stash"
+  },
+  {
+   "cite": "PGEN p.238",
+   "contains": [
+    "--index",
+    "git stash drop"
+   ],
+   "claim": "apply --index reapplies staged; drop removes the stash"
+  },
+  {
+   "cite": "PGEN p.238",
+   "contains": [
+    "git stash pop",
+    "--keep-index"
+   ],
+   "claim": "pop = apply + drop; keep-index keeps staged changes in the index"
+  },
+  {
+   "cite": "PGEN p.239",
+   "contains": [
+    "--include-untracked",
+    "--all"
+   ],
+   "claim": "-u includes untracked, -a also includes ignored"
+  },
+  {
+   "cite": "PGEN p.239",
+   "contains": [
+    "git stash --patch",
+    "Stash this hunk"
+   ],
+   "claim": "interactive stash by hunk"
+  },
+  {
+   "cite": "PGEN p.240",
+   "contains": [
+    "git stash branch",
+    "testchanges"
+   ],
+   "claim": "stash branch creates a branch, reapplies and drops"
+  },
+  {
+   "cite": "PGEN p.240",
+   "contains": [
+    "git clean -f -d",
+    "requireForce"
+   ],
+   "claim": "clean requires -f unless clean.requireForce=false"
+  },
+  {
+   "cite": "PGEN p.240",
+   "contains": [
+    "git stash --all",
+    "no retrieving"
+   ],
+   "claim": "clean may be unrecoverable; stash --all is safer"
+  },
+  {
+   "cite": "PGEN p.240",
+   "contains": [
+    "--dry-run",
+    "git clean -f -d"
+   ],
+   "claim": "-n does a dry run"
+  },
+  {
+   "cite": "PGEN p.241",
+   "contains": [
+    "-x",
+    ".gitignore"
+   ],
+   "claim": "-x also removes ignored files"
+  },
+  {
+   "cite": "PGEN p.241",
+   "contains": [
+    "git clean -x -i",
+    "submodules"
+   ],
+   "claim": "interactive mode; nested repos require a second -f"
+  },
+  {
+   "cite": "PGEN p.242",
+   "contains": [
+    "gpg --gen-key",
+    "user.signingkey"
+   ],
+   "claim": "generate a key and configure user.signingkey"
+  },
+  {
+   "cite": "PGEN p.242",
+   "contains": [
+    "git tag -s",
+    "-a"
+   ],
+   "claim": "a signed tag uses -s instead of -a"
+  },
+  {
+   "cite": "PGEN p.243",
+   "contains": [
+    "git tag -v",
+    "public key not found"
+   ],
+   "claim": "verification requires the signer's public key"
+  },
+  {
+   "cite": "PGEN p.244",
+   "contains": [
+    "-S",
+    "v1.7.9"
+   ],
+   "claim": "signed commit with -S since 1.7.9"
+  },
+  {
+   "cite": "PGEN p.244",
+   "contains": [
+    "--show-signature",
+    "%G?"
+   ],
+   "claim": "ways to see signature status in the log"
+  },
+  {
+   "cite": "PGEN p.244",
+   "contains": [
+    "--verify-signatures",
+    "1.8.3"
+   ],
+   "claim": "merge may refuse unsigned commits"
+  },
+  {
+   "cite": "PGEN p.245",
+   "contains": [
+    "does not have a GPG signature",
+    "verify-signatures -S"
+   ],
+   "claim": "merge fails with an unsigned commit; -S signs the merge"
+  },
+  {
+   "cite": "PGEN p.245",
+   "contains": [
+    "commit.gpgsign",
+    "rewrite their commits"
+   ],
+   "claim": "sign by default to avoid rewriting commits"
+  },
+  {
+   "cite": "PGEN p.246",
+   "contains": [
+    "git grep -n",
+    "--count"
+   ],
+   "claim": "grep with line number and count"
+  },
+  {
+   "cite": "PGEN p.246",
+   "contains": [
+    "--show-function",
+    "gmtime_r"
+   ],
+   "claim": "-p shows the enclosing function"
+  },
+  {
+   "cite": "PGEN p.247",
+   "contains": [
+    "--and",
+    "v1.8.0"
+   ],
+   "claim": "git grep combines patterns with --and and searches a tag"
+  },
+  {
+   "cite": "PGEN p.247",
+   "contains": [
+    "pickaxe",
+    "-S"
+   ],
+   "claim": "-S shows commits that changed the string count"
+  },
+  {
+   "cite": "PGEN p.248",
+   "contains": [
+    "-G",
+    "git_deflate_bound"
+   ],
+   "claim": "-G accepts regex; -L follows a function"
+  },
+  {
+   "cite": "PGEN p.249",
+   "contains": [
+    "git log -L",
+    "/^}/"
+   ],
+   "claim": "-L with start and end regex"
+  },
+  {
+   "cite": "PGEN p.249",
+   "contains": [
+    "cardinal rules",
+    "pushed work as final"
+   ],
+   "claim": "pushed history should be treated as final"
+  },
+  {
+   "cite": "PGEN p.250",
+   "contains": [
+    "git commit --amend",
+    "--no-edit"
+   ],
+   "claim": "amend and amend without editing the message"
+  },
+  {
+   "cite": "PGEN p.250",
+   "contains": [
+    "changes the SHA-1",
+    "already pushed"
+   ],
+   "claim": "amend changes the SHA-1; do not amend an already pushed commit"
+  },
+  {
+   "cite": "PGEN p.250",
+   "contains": [
+    "HEAD~3",
+    "git rebase -i"
+   ],
+   "claim": "the argument is the parent of the last commit to edit"
+  },
+  {
+   "cite": "PGEN p.251",
+   "contains": [
+    "THAT COMMIT WILL BE LOST",
+    "rebase will be aborted"
+   ],
+   "claim": "removing a line loses the commit; emptying aborts"
+  },
+  {
+   "cite": "PGEN p.251",
+   "contains": [
+    "reword",
+    "fixup"
+   ],
+   "claim": "commands of the rebase -i script"
+  },
+  {
+   "cite": "PGEN p.252",
+   "contains": [
+    "git rebase --continue",
+    "Stopped at"
+   ],
+   "claim": "rebase stops at the commit marked edit"
+  },
+  {
+   "cite": "PGEN p.253",
+   "contains": [
+    "squash",
+    "combination of 3 commits"
+   ],
+   "claim": "squash combines messages"
+  },
+  {
+   "cite": "PGEN p.254",
+   "contains": [
+    "git reset HEAD^",
+    "mixed reset"
+   ],
+   "claim": "split uses reset mixed inside the rebase"
+  },
+  {
+   "cite": "PGEN p.255",
+   "contains": [
+    "drop",
+    "git rebase --abort"
+   ],
+   "claim": "drop removes a commit; abort restores the state"
+  },
+  {
+   "cite": "PGEN p.255",
+   "contains": [
+    "git reflog",
+    "Data Recovery"
+   ],
+   "claim": "after the rebase finishes, use reflog to recover"
+  },
+  {
+   "cite": "PGEN p.255",
+   "contains": [
+    "git-filter-repo",
+    "no longer the recommended"
+   ],
+   "claim": "filter-branch is no longer recommended"
+  },
+  {
+   "cite": "PGEN p.255",
+   "contains": [
+    "Nuclear Option",
+    "filter-branch"
+   ],
+   "claim": "filter-branch is the nuclear option"
+  },
+  {
+   "cite": "PGEN p.256",
+   "contains": [
+    "--tree-filter",
+    "passwords.txt"
+   ],
+   "claim": "tree-filter removes a file from every commit"
+  },
+  {
+   "cite": "PGEN p.256",
+   "contains": [
+    "--subdirectory-filter",
+    "trunk"
+   ],
+   "claim": "subdir as the new root"
+  },
+  {
+   "cite": "PGEN p.256",
+   "contains": [
+    "testing branch",
+    "--all"
+   ],
+   "claim": "test on a test branch; --all for all branches"
+  },
+  {
+   "cite": "PGEN p.256",
+   "contains": [
+    "--commit-filter",
+    "GIT_AUTHOR_EMAIL"
+   ],
+   "claim": "commit-filter rewrites the author conditionally (all SHA-1s change, p.257)"
+  },
+  {
+   "cite": "PGEN p.257",
+   "contains": [
+    "Three Trees",
+    "Working Directory"
+   ],
+   "claim": "the three trees: HEAD, Index, Working Directory"
+  },
+  {
+   "cite": "PGEN p.258",
+   "contains": [
+    "git ls-files -s",
+    "Working Directory"
+   ],
+   "claim": "the index is a flattened manifest"
+  },
+  {
+   "cite": "PGEN p.259",
+   "contains": [
+    "unborn master",
+    "git init"
+   ],
+   "claim": "init creates HEAD pointing to an unborn master"
+  },
+  {
+   "cite": "PGEN p.265",
+   "contains": [
+    "checkout a branch",
+    "populates your index"
+   ],
+   "claim": "checkout changes HEAD, populates the index and working dir"
+  },
+  {
+   "cite": "PGEN p.266",
+   "contains": [
+    "Move HEAD",
+    "the branch that HEAD is pointing to"
+   ],
+   "claim": "reset moves the branch that HEAD points to"
+  },
+  {
+   "cite": "PGEN p.267",
+   "contains": [
+    "reset --soft",
+    "git commit --amend"
+   ],
+   "claim": "soft stops at step 1; equivalent to the base of amend"
+  },
+  {
+   "cite": "PGEN p.268",
+   "contains": [
+    "--mixed",
+    "default"
+   ],
+   "claim": "mixed is the default"
+  },
+  {
+   "cite": "PGEN p.269",
+   "contains": [
+    "--hard",
+    "reflog"
+   ],
+   "claim": "--hard is the only dangerous mode; recoverable only via reflog if committed"
+  },
+  {
+   "cite": "PGEN p.269",
+   "contains": [
+    "Recap",
+    "stop here if --soft"
+   ],
+   "claim": "order of the three steps"
+  },
+  {
+   "cite": "PGEN p.270",
+   "contains": [
+    "reset --mixed HEAD file.txt",
+    "skip"
+   ],
+   "claim": "reset with a path skips step 1"
+  },
+  {
+   "cite": "PGEN p.271",
+   "contains": [
+    "unstage",
+    "git reset eb43bf"
+   ],
+   "claim": "file reset is the opposite of add; can use a specific commit"
+  },
+  {
+   "cite": "PGEN p.272",
+   "contains": [
+    "--patch",
+    "oops"
+   ],
+   "claim": "reset accepts --patch; squash with reset"
+  },
+  {
+   "cite": "PGEN p.273",
+   "contains": [
+    "git reset --soft HEAD~2",
+    "older commit"
+   ],
+   "claim": "squash via reset --soft"
+  },
+  {
+   "cite": "PGEN p.276",
+   "contains": [
+    "working-directory safe",
+    "trivial merge"
+   ],
+   "claim": "checkout is safe, reset --hard is not"
+  },
+  {
+   "cite": "PGEN p.276",
+   "contains": [
+    "git reset master",
+    "git checkout master"
+   ],
+   "claim": "reset moves the branch; checkout moves HEAD"
+  },
+  {
+   "cite": "PGEN p.277",
+   "contains": [
+    "git reset --hard [branch] file",
+    "--patch"
+   ],
+   "claim": "checkout with a path overwrites the working dir"
+  },
+  {
+   "cite": "PGEN p.277",
+   "contains": [
+    "WD Safe",
+    "reset --hard [commit]"
+   ],
+   "claim": "table: reset --hard is not WD safe"
+  },
+  {
+   "cite": "PGEN p.277",
+   "contains": [
+    "WD Safe",
+    "reset --hard"
+   ],
+   "claim": "table marks reset --hard as NOT safe for the workdir"
+  },
+  {
+   "cite": "PGEN p.277",
+   "contains": [
+    "checkout",
+    "--patch"
+   ],
+   "claim": "checkout with paths accepts --patch"
+  },
+  {
+   "cite": "PGEN p.278",
+   "contains": [
+    "stash",
+    "clean"
+   ],
+   "claim": "before merging leave the workdir clean (commit on a temporary branch or stash)"
+  },
+  {
+   "cite": "PGEN p.280",
+   "contains": [
+    "merge --abort",
+    "UU"
+   ],
+   "claim": "git merge --abort presented as the way out of a conflicted merge"
+  },
+  {
+   "cite": "PGEN p.280",
+   "contains": [
+    "merge --abort",
+    "uncommitted"
+   ],
+   "claim": "abort may fail if there were uncommitted changes"
+  },
+  {
+   "cite": "PGEN p.280",
+   "contains": [
+    "reset --hard HEAD",
+    "uncommitted"
+   ],
+   "claim": "reset --hard HEAD returns to the last commit and loses work"
+  },
+  {
+   "cite": "PGEN p.280",
+   "contains": [
+    "Xignore-all-space",
+    "Xignore-space-change"
+   ],
+   "claim": "whitespace options of the default merge"
+  },
+  {
+   "cite": "PGEN p.281",
+   "contains": [
+    ":1:hello.rb",
+    "stage"
+   ],
+   "claim": "stage 1 common ancestor, 2 ours, 3 theirs"
+  },
+  {
+   "cite": "PGEN p.281",
+   "contains": [
+    "ls-files -u",
+    "blobs"
+   ],
+   "claim": "lists the SHA-1 of the blobs per stage"
+  },
+  {
+   "cite": "PGEN p.281",
+   "contains": [
+    "merge-file",
+    "little-known"
+   ],
+   "claim": "git merge-file re-merges a standalone file"
+  },
+  {
+   "cite": "PGEN p.282",
+   "contains": [
+    "diff --ours",
+    "introduced"
+   ],
+   "claim": "git diff --ours shows what the merge introduced"
+  },
+  {
+   "cite": "PGEN p.282",
+   "contains": [
+    "diff --theirs",
+    "-b"
+   ],
+   "claim": "compare with their side"
+  },
+  {
+   "cite": "PGEN p.283",
+   "contains": [
+    "diff --base",
+    "clean -f"
+   ],
+   "claim": "diff with base; git clean -f cleans temporaries"
+  },
+  {
+   "cite": "PGEN p.284",
+   "contains": [
+    "--conflict",
+    "diff3"
+   ],
+   "claim": "git checkout --conflict accepts diff3 or merge"
+  },
+  {
+   "cite": "PGEN p.285",
+   "contains": [
+    "merge.conflictstyle",
+    "diff3"
+   ],
+   "claim": "default configurable via merge.conflictstyle"
+  },
+  {
+   "cite": "PGEN p.285",
+   "contains": [
+    "--ours",
+    "--theirs"
+   ],
+   "claim": "checkout --ours/--theirs picks a whole side"
+  },
+  {
+   "cite": "PGEN p.285",
+   "contains": [
+    "--left-right",
+    "MERGE_HEAD"
+   ],
+   "claim": "log --left-right HEAD...MERGE_HEAD"
+  },
+  {
+   "cite": "PGEN p.286",
+   "contains": [
+    "--merge",
+    "-p"
+   ],
+   "claim": "log --merge only commits that touch the conflicted file"
+  },
+  {
+   "cite": "PGEN p.286",
+   "contains": [
+    "Combined Diff",
+    "two columns"
+   ],
+   "claim": "git diff on a conflict uses Combined Diff"
+  },
+  {
+   "cite": "PGEN p.287",
+   "contains": [
+    "--cc",
+    "git show"
+   ],
+   "claim": "combined diff via git show or log --cc -p"
+  },
+  {
+   "cite": "PGEN p.289",
+   "contains": [
+    "revert -m 1",
+    "mainline"
+   ],
+   "claim": "-m 1 indicates the parent kept (mainline)"
+  },
+  {
+   "cite": "PGEN p.289",
+   "contains": [
+    "rewriting history",
+    "reset --hard HEAD~"
+   ],
+   "claim": "reset --hard on the merge rewrites history, bad in a shared repo"
+  },
+  {
+   "cite": "PGEN p.290",
+   "contains": [
+    "Already up-to-date",
+    "un-revert"
+   ],
+   "claim": "re-merge after a revert says Already up-to-date; the solution is to revert the revert"
+  },
+  {
+   "cite": "PGEN p.291",
+   "contains": [
+    "-Xours",
+    "-Xtheirs"
+   ],
+   "claim": "-X options choose a side and include binaries"
+  },
+  {
+   "cite": "PGEN p.292",
+   "contains": [
+    "-s ours",
+    "fake merge"
+   ],
+   "claim": "the ours strategy creates a fake merge with both parents"
+  },
+  {
+   "cite": "PGEN p.292",
+   "contains": [
+    "git diff HEAD HEAD~",
+    "release"
+   ],
+   "claim": "-s ours used for a bugfix backport to avoid a conflict"
+  },
+  {
+   "cite": "PGEN p.293",
+   "contains": [
+    "read-tree --prefix",
+    "rack_remote"
+   ],
+   "claim": "subtree: read-tree --prefix=rack/ -u"
+  },
+  {
+   "cite": "PGEN p.294",
+   "contains": [
+    "--squash",
+    "-Xsubtree=rack"
+   ],
+   "claim": "merge --squash -Xsubtree to update"
+  },
+  {
+   "cite": "PGEN p.294",
+   "contains": [
+    "diff-tree",
+    "rack_branch"
+   ],
+   "claim": "to compare a subdirectory use git diff-tree -p"
+  },
+  {
+   "cite": "PGEN p.294",
+   "contains": [
+    "rerere",
+    "hidden feature"
+   ],
+   "claim": "the name rerere means reuse recorded resolution"
+  },
+  {
+   "cite": "PGEN p.295",
+   "contains": [
+    "rerere.enabled",
+    "rr-cache"
+   ],
+   "claim": "enable rerere by config or the .git/rr-cache directory"
+  },
+  {
+   "cite": "PGEN p.296",
+   "contains": [
+    "Recorded preimage",
+    "rerere status"
+   ],
+   "claim": "merge records the preimage; git rerere status lists it"
+  },
+  {
+   "cite": "PGEN p.297",
+   "contains": [
+    "rerere diff",
+    "ls-files -u"
+   ],
+   "claim": "git rerere diff shows the resolution in progress"
+  },
+  {
+   "cite": "PGEN p.298",
+   "contains": [
+    "Recorded resolution",
+    "reset --hard HEAD^"
+   ],
+   "claim": "commit records the resolution; then reset --hard HEAD^ undoes the merge"
+  },
+  {
+   "cite": "PGEN p.299",
+   "contains": [
+    "previous resolution",
+    "Failed to merge"
+   ],
+   "claim": "rebase replays the recorded resolution"
+  },
+  {
+   "cite": "PGEN p.300",
+   "contains": [
+    "--conflict=merge",
+    "git rerere"
+   ],
+   "claim": "recreates the conflict and reapplies with git rerere"
+  },
+  {
+   "cite": "PGEN p.301",
+   "contains": [
+    "rebase --continue",
+    "git add"
+   ],
+   "claim": "after rerere, git add and rebase --continue"
+  },
+  {
+   "cite": "PGEN p.301",
+   "contains": [
+    "git blame -L",
+    "Makefile"
+   ],
+   "claim": "blame -L restricts lines"
+  },
+  {
+   "cite": "PGEN p.302",
+   "contains": [
+    "-C",
+    "GITPackUpload.m"
+   ],
+   "claim": "blame -C finds the origin in another file"
+  },
+  {
+   "cite": "PGEN p.302",
+   "contains": [
+    "git bisect start",
+    "bisect bad"
+   ],
+   "claim": "start, bad, good <commit>"
+  },
+  {
+   "cite": "PGEN p.303",
+   "contains": [
+    "first bad commit",
+    "bisect reset"
+   ],
+   "claim": "bisect ends with first bad commit and requires reset"
+  },
+  {
+   "cite": "PGEN p.304",
+   "contains": [
+    "bisect run",
+    "exit 0"
+   ],
+   "claim": "script exits 0 if good and non-zero if bad"
+  },
+  {
+   "cite": "PGEN p.304",
+   "contains": [
+    "submodule add",
+    "DbConnector"
+   ],
+   "claim": "git submodule add <url>"
+  },
+  {
+   "cite": "PGEN p.305",
+   "contains": [
+    ".gitmodules",
+    "path"
+   ],
+   "claim": "maps URL to local directory; versioned"
+  },
+  {
+   "cite": "PGEN p.305",
+   "contains": [
+    "submodule.DbConnector.url",
+    "PRIVATE_URL"
+   ],
+   "claim": "local override of the URL"
+  },
+  {
+   "cite": "PGEN p.306",
+   "contains": [
+    "160000",
+    "--submodule"
+   ],
+   "claim": "mode 160000 and diff --submodule"
+  },
+  {
+   "cite": "PGEN p.307",
+   "contains": [
+    "submodule init",
+    "submodule update"
+   ],
+   "claim": "init and update after a clone without recurse"
+  },
+  {
+   "cite": "PGEN p.307",
+   "contains": [
+    "--recurse-submodules",
+    "nested"
+   ],
+   "claim": "clone --recurse-submodules includes nested ones"
+  },
+  {
+   "cite": "PGEN p.308",
+   "contains": [
+    "update --init",
+    "--recursive"
+   ],
+   "claim": "update --init --recursive is foolproof"
+  },
+  {
+   "cite": "PGEN p.308",
+   "contains": [
+    "diff.submodule",
+    "log"
+   ],
+   "claim": "diff.submodule log as default"
+  },
+  {
+   "cite": "PGEN p.309",
+   "contains": [
+    "update --remote",
+    "stable"
+   ],
+   "claim": "--remote and branch via .gitmodules -f"
+  },
+  {
+   "cite": "PGEN p.310",
+   "contains": [
+    "status.submodulesummary",
+    "new commits"
+   ],
+   "claim": "submodule summary in status"
+  },
+  {
+   "cite": "PGEN p.312",
+   "contains": [
+    "does not update",
+    "git submodule update"
+   ],
+   "claim": "pull fetches but does not update submodules"
+  },
+  {
+   "cite": "PGEN p.312",
+   "contains": [
+    "submodule.recurse",
+    "2.14"
+   ],
+   "claim": "pull --recurse-submodules since 2.14"
+  },
+  {
+   "cite": "PGEN p.313",
+   "contains": [
+    "submodule sync",
+    "--recursive"
+   ],
+   "claim": "sync when the URL changed"
+  },
+  {
+   "cite": "PGEN p.313",
+   "contains": [
+    "detached HEAD",
+    "lost"
+   ],
+   "claim": "submodule in detached HEAD, commits may be lost"
+  },
+  {
+   "cite": "PGEN p.314",
+   "contains": [
+    "--rebase",
+    "--merge"
+   ],
+   "claim": "update --remote --rebase or --merge preserves local work"
+  },
+  {
+   "cite": "PGEN p.315",
+   "contains": [
+    "would be overwritten",
+    "Aborting"
+   ],
+   "claim": "update does not overwrite uncommitted work"
+  },
+  {
+   "cite": "PGEN p.316",
+   "contains": [
+    "recurseSubmodules",
+    "check"
+   ],
+   "claim": "push --recurse-submodules=check fails if not published"
+  },
+  {
+   "cite": "PGEN p.316",
+   "contains": [
+    "on-demand",
+    "Pushing submodule"
+   ],
+   "claim": "on-demand pushes the submodule first"
+  },
+  {
+   "cite": "PGEN p.317",
+   "contains": [
+    "CONFLICT (submodule)",
+    "merge following commits not found"
+   ],
+   "claim": "diverging submodules give a conflict"
+  },
+  {
+   "cite": "PGEN p.318",
+   "contains": [
+    "try-merge",
+    "rev-parse HEAD"
+   ],
+   "claim": "create branch try-merge and merge"
+  },
+  {
+   "cite": "PGEN p.319",
+   "contains": [
+    "cacheinfo",
+    "160000"
+   ],
+   "claim": "Git suggests update-index --cacheinfo; the book advises against it"
+  },
+  {
+   "cite": "PGEN p.320",
+   "contains": [
+    "submodule foreach",
+    "git stash"
+   ],
+   "claim": "foreach runs a command on all"
+  },
+  {
+   "cite": "PGEN p.321",
+   "contains": [
+    "alias.spush",
+    "on-demand"
+   ],
+   "claim": "aliases sdiff/spush/supdate"
+  },
+  {
+   "cite": "PGEN p.322",
+   "contains": [
+    "clean -ffdx",
+    "untracked"
+   ],
+   "claim": "leftover submodule directory in old Git"
+  },
+  {
+   "cite": "PGEN p.323",
+   "contains": [
+    "checkout --recurse-submodules",
+    "2.14"
+   ],
+   "claim": "checkout aligns submodules"
+  },
+  {
+   "cite": "PGEN p.324",
+   "contains": [
+    "git rm -r",
+    "untracked"
+   ],
+   "claim": "convert a subdirectory into a submodule"
+  },
+  {
+   "cite": "PGEN p.324",
+   "contains": [
+    "checkout -f",
+    "overwritten"
+   ],
+   "claim": "checkout -f may overwrite changes"
+  },
+  {
+   "cite": "PGEN p.325",
+   "contains": [
+    "git bundle create",
+    "HEAD"
+   ],
+   "claim": "bundle packs what would go by push; include HEAD"
+  },
+  {
+   "cite": "PGEN p.326",
+   "contains": [
+    "-b master",
+    "origin/master"
+   ],
+   "claim": "clone from a bundle without HEAD requires -b"
+  },
+  {
+   "cite": "PGEN p.327",
+   "contains": [
+    "bundle verify",
+    "list-heads"
+   ],
+   "claim": "verify and list-heads"
+  },
+  {
+   "cite": "PGEN p.327",
+   "contains": [
+    "other-master",
+    "prerequisite"
+   ],
+   "claim": "fetch from the bundle into a local branch; prerequisites"
+  },
+  {
+   "cite": "PGEN p.328",
+   "contains": [
+    "replace command",
+    "filter-branch"
+   ],
+   "claim": "replace avoids rewriting history"
+  },
+  {
+   "cite": "PGEN p.331",
+   "contains": [
+    "commit-tree",
+    "plumbing"
+   ],
+   "claim": "commit-tree creates a commit with no parent"
+  },
+  {
+   "cite": "PGEN p.332",
+   "contains": [
+    "rebase --onto",
+    "622e88"
+   ],
+   "claim": "rebase --onto onto a base commit"
+  },
+  {
+   "cite": "PGEN p.334",
+   "contains": [
+    "git replace 81a708d",
+    "project-history"
+   ],
+   "claim": "replace the short commit with the one in the history"
+  },
+  {
+   "cite": "PGEN p.336",
+   "contains": [
+    "refs/replace",
+    "push"
+   ],
+   "claim": "replace lives in refs/replace and is shareable"
+  },
+  {
+   "cite": "PGEN p.336",
+   "contains": [
+    "credential.helper",
+    "15 minutes"
+   ],
+   "claim": "cache purges after 15 minutes; store is plain text"
+  },
+  {
+   "cite": "PGEN p.337",
+   "contains": [
+    "--timeout",
+    ".git-credentials"
+   ],
+   "claim": "cache --timeout (900), store --file default"
+  },
+  {
+   "cite": "PGEN p.337",
+   "contains": [
+    "git credential",
+    "fill"
+   ],
+   "claim": "git credential fill"
+  },
+  {
+   "cite": "PGEN p.338",
+   "contains": [
+    "git-credential-foo",
+    "erase"
+   ],
+   "claim": "actions get, store, erase"
+  },
+  {
+   "cite": "PGEN p.339",
+   "contains": [
+    "osxkeychain",
+    "git.store"
+   ],
+   "claim": "store file format and native helpers"
+  },
+  {
+   "cite": "PGEN p.340",
+   "contains": [
+    "read-only",
+    "credential.helper"
+   ],
+   "claim": "custom helper git-credential-read-only"
+  },
+  {
+   "cite": "PGEN p.342",
+   "contains": [
+    "--system",
+    "/etc/gitconfig",
+    ".git/config"
+   ],
+   "claim": "config levels: system (/etc/gitconfig), global, local (.git/config); local wins"
+  },
+  {
+   "cite": "PGEN p.342",
+   "contains": [
+    "--global",
+    ".gitconfig"
+   ],
+   "claim": "global config lives in ~/.gitconfig (or ~/.config/git/config)"
+  },
+  {
+   "cite": "PGEN p.343",
+   "contains": [
+    "core.editor",
+    "VISUAL",
+    "EDITOR"
+   ],
+   "claim": "default editor comes from VISUAL/EDITOR, otherwise vi"
+  },
+  {
+   "cite": "PGEN p.343",
+   "contains": [
+    "commit.template",
+    ".gitmessage.txt"
+   ],
+   "claim": "commit template configured via commit.template"
+  },
+  {
+   "cite": "PGEN p.344",
+   "contains": [
+    "core.pager",
+    "less"
+   ],
+   "claim": "default pager is less; empty string disables it"
+  },
+  {
+   "cite": "PGEN p.344",
+   "contains": [
+    "user.signingkey",
+    "git tag -s"
+   ],
+   "claim": "GPG key for signed tag"
+  },
+  {
+   "cite": "PGEN p.345",
+   "contains": [
+    "core.excludesfile",
+    ".gitignore_global",
+    ".DS_Store"
+   ],
+   "claim": "global gitignore"
+  },
+  {
+   "cite": "PGEN p.345",
+   "contains": [
+    "help.autocorrect",
+    "tenths",
+    "50"
+   ],
+   "claim": "autocorrect is an integer in tenths of a second"
+  },
+  {
+   "cite": "PGEN p.346",
+   "contains": [
+    "color.ui",
+    "always",
+    "auto"
+   ],
+   "claim": "default auto; always is rarely desirable; use --color"
+  },
+  {
+   "cite": "PGEN p.346",
+   "contains": [
+    "color.diff.meta",
+    "blue black bold"
+   ],
+   "claim": "example of color per sub-option"
+  },
+  {
+   "cite": "PGEN p.347",
+   "contains": [
+    "extMerge",
+    "extDiff",
+    "7"
+   ],
+   "claim": "P4Merge wrappers; diff receives 7 args"
+  },
+  {
+   "cite": "PGEN p.347",
+   "contains": [
+    "mergetool",
+    "trustExitCode",
+    "diff.external"
+   ],
+   "claim": "merge.tool configuration, trustExitCode and diff.external"
+  },
+  {
+   "cite": "PGEN p.348",
+   "contains": [
+    "git mergetool",
+    "KDiff3"
+   ],
+   "claim": "git mergetool opens a graphical tool; KDiff3 as an alternative"
+  },
+  {
+   "cite": "PGEN p.348",
+   "contains": [
+    "--tool-help"
+   ],
+   "claim": "list of supported merge tools"
+  },
+  {
+   "cite": "PGEN p.349",
+   "contains": [
+    "core.autocrlf",
+    "carriage",
+    "CRLF"
+   ],
+   "claim": "Windows vs Unix line-ending problem"
+  },
+  {
+   "cite": "PGEN p.350",
+   "contains": [
+    "core.autocrlf true",
+    "core.autocrlf input",
+    "core.autocrlf false"
+   ],
+   "claim": "three values of autocrlf"
+  },
+  {
+   "cite": "PGEN p.350",
+   "contains": [
+    "blank-at-eol",
+    "blank-at-eof",
+    "space-before-tab"
+   ],
+   "claim": "three whitespace checks on by default"
+  },
+  {
+   "cite": "PGEN p.350",
+   "contains": [
+    "indent-with-non-tab",
+    "tab-in-indent",
+    "cr-at-eol"
+   ],
+   "claim": "three whitespace checks off by default"
+  },
+  {
+   "cite": "PGEN p.351",
+   "contains": [
+    "--whitespace=fix",
+    "--whitespace=warn"
+   ],
+   "claim": "git apply with whitespace"
+  },
+  {
+   "cite": "PGEN p.351",
+   "contains": [
+    "receive.fsckObjects",
+    "expensive"
+   ],
+   "claim": "checks object integrity on push; costly"
+  },
+  {
+   "cite": "PGEN p.351",
+   "contains": [
+    "receive.denyNonFastForwards"
+   ],
+   "claim": "refuses non-fast-forward"
+  },
+  {
+   "cite": "PGEN p.352",
+   "contains": [
+    "receive.denyDeletes"
+   ],
+   "claim": "refuses deleting branches/tags"
+  },
+  {
+   "cite": "PGEN p.352",
+   "contains": [
+    ".gitattributes",
+    ".git/info/attributes"
+   ],
+   "claim": "where attributes are defined"
+  },
+  {
+   "cite": "PGEN p.352",
+   "contains": [
+    "pbxproj",
+    "binary"
+   ],
+   "claim": ".pbxproj file treated as binary"
+  },
+  {
+   "cite": "PGEN p.353",
+   "contains": [
+    "diff=word",
+    "docx2txt",
+    "textconv"
+   ],
+   "claim": "Word diff via textconv"
+  },
+  {
+   "cite": "PGEN p.354",
+   "contains": [
+    "diff=exif",
+    "exiftool"
+   ],
+   "claim": "PNG diff via EXIF"
+  },
+  {
+   "cite": "PGEN p.355",
+   "contains": [
+    "ident",
+    "$Id$",
+    "blob"
+   ],
+   "claim": "ident injects the blob's SHA-1, not the commit's"
+  },
+  {
+   "cite": "PGEN p.356",
+   "contains": [
+    "smudge",
+    "clean"
+   ],
+   "claim": "clean and smudge filters"
+  },
+  {
+   "cite": "PGEN p.357",
+   "contains": [
+    "filter=indent",
+    "filter.indent.clean",
+    "filter.indent.smudge"
+   ],
+   "claim": "indent/cat example"
+  },
+  {
+   "cite": "PGEN p.358",
+   "contains": [
+    "dater",
+    "filter=dater"
+   ],
+   "claim": "$Date$ filter and warning about an unversioned driver"
+  },
+  {
+   "cite": "PGEN p.358",
+   "contains": [
+    "export-ignore",
+    "test/"
+   ],
+   "claim": "excludes test/ from the archive"
+  },
+  {
+   "cite": "PGEN p.359",
+   "contains": [
+    "export-subst",
+    "LAST_COMMIT",
+    "$Format:"
+   ],
+   "claim": "metadata in git archive"
+  },
+  {
+   "cite": "PGEN p.360",
+   "contains": [
+    "merge=ours",
+    "merge.ours.driver"
+   ],
+   "claim": "ours strategy for database.xml"
+  },
+  {
+   "cite": "PGEN p.360",
+   "contains": [
+    ".sample",
+    "hooks"
+   ],
+   "claim": ".sample examples in the hooks directory"
+  },
+  {
+   "cite": "PGEN p.361",
+   "contains": [
+    "pre-commit",
+    "--no-verify"
+   ],
+   "claim": "pre-commit aborts if exit is non-zero; can be bypassed"
+  },
+  {
+   "cite": "PGEN p.361",
+   "contains": [
+    "prepare-commit-msg",
+    "commit-msg",
+    "post-commit"
+   ],
+   "claim": "commit workflow hooks"
+  },
+  {
+   "cite": "PGEN p.361",
+   "contains": [
+    "not copied",
+    "clone"
+   ],
+   "claim": "client-side hooks are not copied on clone"
+  },
+  {
+   "cite": "PGEN p.361",
+   "contains": [
+    "applypatch-msg",
+    "git am"
+   ],
+   "claim": "git am hooks"
+  },
+  {
+   "cite": "PGEN p.362",
+   "contains": [
+    "pre-rebase",
+    "post-rewrite",
+    "post-checkout",
+    "post-merge"
+   ],
+   "claim": "other client hooks"
+  },
+  {
+   "cite": "PGEN p.362",
+   "contains": [
+    "pre-push",
+    "pre-auto-gc",
+    "git gc --auto"
+   ],
+   "claim": "push and gc hooks"
+  },
+  {
+   "cite": "PGEN p.363",
+   "contains": [
+    "pre-receive",
+    "stdin"
+   ],
+   "claim": "first script on push; receives refs on stdin"
+  },
+  {
+   "cite": "PGEN p.363",
+   "contains": [
+    "update",
+    "three arguments"
+   ],
+   "claim": "update runs per branch with 3 arguments"
+  },
+  {
+   "cite": "PGEN p.363",
+   "contains": [
+    "post-receive",
+    "continuous integration"
+   ],
+   "claim": "runs afterwards; does not stop the push"
+  },
+  {
+   "cite": "PGEN p.364",
+   "contains": [
+    "git rev-list",
+    "$oldrev",
+    "$newrev"
+   ],
+   "claim": "list the commits of the push"
+  },
+  {
+   "cite": "PGEN p.364",
+   "contains": [
+    "ref: 1234"
+   ],
+   "claim": "required message format"
+  },
+  {
+   "cite": "PGEN p.365",
+   "contains": [
+    "git cat-file",
+    "sed '1,/^$/d'"
+   ],
+   "claim": "extract the commit message"
+  },
+  {
+   "cite": "PGEN p.365",
+   "contains": [
+    "check_message_format",
+    "exit 1"
+   ],
+   "claim": "rejects a push with a bad message"
+  },
+  {
+   "cite": "PGEN p.366",
+   "contains": [
+    "avail",
+    "unavail",
+    "pipe"
+   ],
+   "claim": "ACL format"
+  },
+  {
+   "cite": "PGEN p.367",
+   "contains": [
+    "--name-only",
+    "check_directory_perms"
+   ],
+   "claim": "modified files and ACL check"
+  },
+  {
+   "cite": "PGEN p.368",
+   "contains": [
+    "chmod u+x",
+    "hook declined",
+    "remote rejected"
+   ],
+   "claim": "executable update hook and rejection"
+  },
+  {
+   "cite": "PGEN p.369",
+   "contains": [
+    "commit-msg",
+    ".git/hooks"
+   ],
+   "claim": "client hook comparing regex"
+  },
+  {
+   "cite": "PGEN p.370",
+   "contains": [
+    "git diff-index --cached",
+    ".git/acl"
+   ],
+   "claim": "pre-commit with client-side ACL"
+  },
+  {
+   "cite": "PGEN p.371",
+   "contains": [
+    "receive.denyDeletes",
+    "pre-rebase"
+   ],
+   "claim": "server already configured; pre-rebase hook"
+  },
+  {
+   "cite": "PGEN p.372",
+   "contains": [
+    "SHA^@",
+    "parents"
+   ],
+   "claim": "syntax for all parents"
+  },
+  {
+   "cite": "PGEN p.373",
+   "contains": [
+    "git svn",
+    "bidirectional",
+    "gateway drug"
+   ],
+   "claim": "bidirectional git svn bridge"
+  },
+  {
+   "cite": "PGEN p.374",
+   "contains": [
+    "svnsync",
+    "pre-revprop-change"
+   ],
+   "claim": "create a writable copy of an SVN repo"
+  },
+  {
+   "cite": "PGEN p.375",
+   "contains": [
+    "git svn clone",
+    "-T trunk",
+    "-s"
+   ],
+   "claim": "SVN clone and standard layout"
+  },
+  {
+   "cite": "PGEN p.376",
+   "contains": [
+    "git svn dcommit",
+    "refs/remotes/origin/trunk"
+   ],
+   "claim": "send commits to SVN; tags as remote refs"
+  },
+  {
+   "cite": "PGEN p.377",
+   "contains": [
+    "git-svn-id",
+    "SHA-1"
+   ],
+   "claim": "dcommit rewrites commits with git-svn-id"
+  },
+  {
+   "cite": "PGEN p.377",
+   "contains": [
+    "git svn rebase",
+    "Transaction is out of date"
+   ],
+   "claim": "resolve a rejected dcommit"
+  },
+  {
+   "cite": "PGEN p.379",
+   "contains": [
+    "first parent",
+    "git svn fetch",
+    "stash"
+   ],
+   "claim": "follow only the first parent; rebase requires a clean tree"
+  },
+  {
+   "cite": "PGEN p.380",
+   "contains": [
+    "git svn branch",
+    "squash"
+   ],
+   "claim": "branch in SVN does not check out; merge becomes squash"
+  },
+  {
+   "cite": "PGEN p.381",
+   "contains": [
+    "git svn log",
+    "git svn blame",
+    "offline"
+   ],
+   "claim": "offline equivalents"
+  },
+  {
+   "cite": "PGEN p.382",
+   "contains": [
+    "git svn info",
+    "create-ignore",
+    "show-ignore"
+   ],
+   "claim": "info and ignores"
+  },
+  {
+   "cite": "PGEN p.383",
+   "contains": [
+    "crippled",
+    "pre-receive",
+    "git-svn-id"
+   ],
+   "claim": "git svn guidelines"
+  },
+  {
+   "cite": "PGEN p.383",
+   "contains": [
+    "git-remote-hg",
+    "remote helper"
+   ],
+   "claim": "Mercurial bridge"
+  },
+  {
+   "cite": "PGEN p.385",
+   "contains": [
+    "refs/hg",
+    "notes/hg",
+    ".git/info/exclude"
+   ],
+   "claim": "Hg mapping and ignores"
+  },
+  {
+   "cite": "PGEN p.387",
+   "contains": [
+    "bookmark",
+    "heavyweight"
+   ],
+   "claim": "bookmark vs Mercurial branch"
+  },
+  {
+   "cite": "PGEN p.389",
+   "contains": [
+    "delete a bookmark",
+    "limitation of remote helpers"
+   ],
+   "claim": "bookmark cannot be deleted from the Git side"
+  },
+  {
+   "cite": "PGEN p.391",
+   "contains": [
+    "Git Fusion",
+    "git-p4"
+   ],
+   "claim": "Perforce since 1995; two options"
+  },
+  {
+   "cite": "PGEN p.393",
+   "contains": [
+    "p4gf_config",
+    ".git-fusion"
+   ],
+   "claim": "Git Fusion config"
+  },
+  {
+   "cite": "PGEN p.395",
+   "contains": [
+    "p4gf_usermap"
+   ],
+   "claim": "Git Fusion user map"
+  },
+  {
+   "cite": "PGEN p.398",
+   "contains": [
+    "anonymous",
+    "git-p4",
+    "rewrite history"
+   ],
+   "claim": "Git Fusion rejects rewrites; anonymous branch"
+  },
+  {
+   "cite": "PGEN p.399",
+   "contains": [
+    "git p4 clone",
+    "shallow",
+    "No remotes"
+   ],
+   "claim": "shallow clone; no real remotes"
+  },
+  {
+   "cite": "PGEN p.400",
+   "contains": [
+    "git p4 rebase",
+    "git p4 submit"
+   ],
+   "claim": "rebase and submit"
+  },
+  {
+   "cite": "PGEN p.402",
+   "contains": [
+    "git-p4: depot-paths",
+    "squash"
+   ],
+   "claim": "SHA-1 changes per git-p4 line"
+  },
+  {
+   "cite": "PGEN p.403",
+   "contains": [
+    "git p4 submit -n",
+    "dry-run"
+   ],
+   "claim": "merge commits linearized"
+  },
+  {
+   "cite": "PGEN p.404",
+   "contains": [
+    "--detect-branches",
+    "@all"
+   ],
+   "claim": "Perforce branches"
+  },
+  {
+   "cite": "PGEN p.405",
+   "contains": [
+    "git-p4.branchList",
+    "Perforce is in charge"
+   ],
+   "claim": "branchList and Perforce rules"
+  },
+  {
+   "cite": "PGEN p.405",
+   "contains": [
+    "users.txt",
+    "schacon"
+   ],
+   "claim": "SVN author mapping"
+  },
+  {
+   "cite": "PGEN p.406",
+   "contains": [
+    "--authors-file",
+    "--no-metadata",
+    "--prefix"
+   ],
+   "claim": "clean SVN import"
+  },
+  {
+   "cite": "PGEN p.407",
+   "contains": [
+    "for-each-ref",
+    "peg-revisions",
+    "git branch -d trunk"
+   ],
+   "claim": "post-import cleanup"
+  },
+  {
+   "cite": "PGEN p.408",
+   "contains": [
+    "hg-fast-export",
+    "git push origin --all"
+   ],
+   "claim": "migrate Mercurial"
+  },
+  {
+   "cite": "PGEN p.409",
+   "contains": [
+    "-A",
+    "-B",
+    "-T"
+   ],
+   "claim": "hg-fast-export flags"
+  },
+  {
+   "cite": "PGEN p.411",
+   "contains": [
+    "P4PORT",
+    "git-p4 clone",
+    "filter-branch"
+   ],
+   "claim": "import Perforce and remove the marker"
+  },
+  {
+   "cite": "PGEN p.412",
+   "contains": [
+    "git fast-import",
+    "stdin"
+   ],
+   "claim": "custom importer"
+  },
+  {
+   "cite": "PGEN p.413",
+   "contains": [
+    "mark",
+    "LF",
+    "CRLF"
+   ],
+   "claim": "marks and Windows warning"
+  },
+  {
+   "cite": "PGEN p.415",
+   "contains": [
+    "deleteall",
+    "M 644 inline"
+   ],
+   "claim": "fast-import commands"
+  },
+  {
+   "cite": "PGEN p.416",
+   "contains": [
+    "binmode"
+   ],
+   "claim": "$stdout.binmode on Windows"
+  },
+  {
+   "cite": "PGEN p.419",
+   "contains": [
+    "git reset --hard master",
+    "contrib/fast-import"
+   ],
+   "claim": "checkout after import"
+  },
+  {
+   "cite": "PGEN p.420",
+   "contains": [
+    "plumbing",
+    "porcelain"
+   ],
+   "claim": "Git distinguishes plumbing commands (low level) from porcelain (friendly)"
+  },
+  {
+   "cite": "PGEN p.420",
+   "contains": [
+    "content-addressable filesystem",
+    "VCS user interface"
+   ],
+   "claim": "Git is essentially a content-addressable filesystem with a VCS UI on top"
+  },
+  {
+   "cite": "PGEN p.420",
+   "contains": [
+    "git init",
+    ".git directory"
+   ],
+   "claim": "git init creates .git, where almost everything lives"
+  },
+  {
+   "cite": "PGEN p.421",
+   "contains": [
+    "GitWeb",
+    "description"
+   ],
+   "claim": "the description file is used only by GitWeb"
+  },
+  {
+   "cite": "PGEN p.421",
+   "contains": [
+    "info directory",
+    "global exclude"
+   ],
+   "claim": "info holds the global exclude file"
+  },
+  {
+   "cite": "PGEN p.421",
+   "contains": [
+    "HEAD",
+    "index",
+    "objects",
+    "refs"
+   ],
+   "claim": "the four core entries of .git"
+  },
+  {
+   "cite": "PGEN p.421",
+   "contains": [
+    "key-value",
+    "content-addressable"
+   ],
+   "claim": "Git is at heart a key-value store"
+  },
+  {
+   "cite": "PGEN p.422",
+   "contains": [
+    "hash-object",
+    "-w",
+    "--stdin"
+   ],
+   "claim": "hash-object -w writes, --stdin reads from standard input"
+  },
+  {
+   "cite": "PGEN p.422",
+   "contains": [
+    "40-character",
+    "SHA-1"
+   ],
+   "claim": "the hash is a 40-character SHA-1 of content plus header"
+  },
+  {
+   "cite": "PGEN p.422",
+   "contains": [
+    "first 2 characters",
+    "remaining 38"
+   ],
+   "claim": "directory = first 2 chars, file = remaining 38"
+  },
+  {
+   "cite": "PGEN p.422",
+   "contains": [
+    "cat-file",
+    "-p"
+   ],
+   "claim": "cat-file -p shows the object's content"
+  },
+  {
+   "cite": "PGEN p.423",
+   "contains": [
+    "cat-file -t",
+    "blob"
+   ],
+   "claim": "cat-file -t shows the type; a blob does not store a file name"
+  },
+  {
+   "cite": "PGEN p.423",
+   "contains": [
+    "tree",
+    "inodes"
+   ],
+   "claim": "trees correspond to directories; blobs to inodes/content"
+  },
+  {
+   "cite": "PGEN p.424",
+   "contains": [
+    "master^^{tree}",
+    "PowerShell"
+   ],
+   "claim": "CMD requires ^^; PowerShell requires single quotes"
+  },
+  {
+   "cite": "PGEN p.424",
+   "contains": [
+    "ZSH",
+    "globbing"
+   ],
+   "claim": "in ZSH ^ is globbing and requires quotes"
+  },
+  {
+   "cite": "PGEN p.425",
+   "contains": [
+    "update-index",
+    "--cacheinfo"
+   ],
+   "claim": "update-index --add --cacheinfo adds a database entry to the index"
+  },
+  {
+   "cite": "PGEN p.425",
+   "contains": [
+    "100755",
+    "120000"
+   ],
+   "claim": "valid modes: 100644, 100755 (executable), 120000 (symlink)"
+  },
+  {
+   "cite": "PGEN p.425",
+   "contains": [
+    "write-tree",
+    "No -w option"
+   ],
+   "claim": "write-tree does not need -w"
+  },
+  {
+   "cite": "PGEN p.426",
+   "contains": [
+    "read-tree",
+    "--prefix"
+   ],
+   "claim": "read-tree --prefix reads a tree as a subdirectory"
+  },
+  {
+   "cite": "PGEN p.427",
+   "contains": [
+    "commit-tree",
+    "-p"
+   ],
+   "claim": "commit-tree creates a commit; -p indicates the parent"
+  },
+  {
+   "cite": "PGEN p.427",
+   "contains": [
+    "author",
+    "committer",
+    "blank line"
+   ],
+   "claim": "commit format: tree, parents, author, committer, blank line, message"
+  },
+  {
+   "cite": "PGEN p.427",
+   "contains": [
+    "different hash value",
+    "Replace commit and tag hashes"
+   ],
+   "claim": "the printed hashes may differ from yours"
+  },
+  {
+   "cite": "PGEN p.428",
+   "contains": [
+    "git add",
+    "git commit"
+   ],
+   "claim": "the manual steps are equivalent to add and commit"
+  },
+  {
+   "cite": "PGEN p.429",
+   "contains": [
+    "header",
+    "null byte"
+   ],
+   "claim": "header: type, space, size in bytes and null byte"
+  },
+  {
+   "cite": "PGEN p.430",
+   "contains": [
+    "zlib",
+    "echo -n"
+   ],
+   "claim": "object is compressed with zlib; echo -n avoids the newline in the hash"
+  },
+  {
+   "cite": "PGEN p.430",
+   "contains": [
+    "Digest::SHA1",
+    "bd9dbf5aae1a3862dd1526723246b20206e5fc37"
+   ],
+   "claim": "SHA-1 of header+content matches hash-object"
+  },
+  {
+   "cite": "PGEN p.431",
+   "contains": [
+    "update-ref",
+    "refs/heads/master"
+   ],
+   "claim": "update-ref is the safe command to change refs"
+  },
+  {
+   "cite": "PGEN p.431",
+   "contains": [
+    ".git/refs",
+    "refs/heads",
+    "refs/tags"
+   ],
+   "claim": "refs initially only has heads and tags"
+  },
+  {
+   "cite": "PGEN p.432",
+   "contains": [
+    "simple pointer"
+   ],
+   "claim": "a branch is a simple pointer"
+  },
+  {
+   "cite": "PGEN p.432",
+   "contains": [
+    "symbolic reference",
+    "detached HEAD"
+   ],
+   "claim": "HEAD is normally a symbolic ref; detached holds a SHA-1"
+  },
+  {
+   "cite": "PGEN p.433",
+   "contains": [
+    "symbolic-ref",
+    "Refusing to point HEAD outside of refs"
+   ],
+   "claim": "symbolic-ref refuses to point HEAD outside refs/"
+  },
+  {
+   "cite": "PGEN p.433",
+   "contains": [
+    "tag object",
+    "fourth"
+   ],
+   "claim": "tag is the fourth object type"
+  },
+  {
+   "cite": "PGEN p.433",
+   "contains": [
+    "refs/tags/v1.0",
+    "never moves"
+   ],
+   "claim": "a lightweight tag is a ref that never moves"
+  },
+  {
+   "cite": "PGEN p.434",
+   "contains": [
+    "tag -a",
+    "tagger"
+   ],
+   "claim": "an annotated tag creates a tag object with tagger"
+  },
+  {
+   "cite": "PGEN p.434",
+   "contains": [
+    "junio-gpg-pub"
+   ],
+   "claim": "a tag can point to a blob (GPG key)"
+  },
+  {
+   "cite": "PGEN p.435",
+   "contains": [
+    "refs/remotes",
+    "read-only"
+   ],
+   "claim": "remote refs are read-only"
+  },
+  {
+   "cite": "PGEN p.436",
+   "contains": [
+    "loose",
+    "packfile",
+    "git gc"
+   ],
+   "claim": "loose format becomes a packfile with git gc"
+  },
+  {
+   "cite": "PGEN p.436",
+   "contains": [
+    "cat-file -s"
+   ],
+   "claim": "cat-file -s shows the object size"
+  },
+  {
+   "cite": "PGEN p.437",
+   "contains": [
+    "dangling"
+   ],
+   "claim": "blobs not pointed to by a commit stay out of the pack"
+  },
+  {
+   "cite": "PGEN p.437",
+   "contains": [
+    "verify-pack"
+   ],
+   "claim": "verify-pack -v lists the pack contents"
+  },
+  {
+   "cite": "PGEN p.438",
+   "contains": [
+    "delta",
+    "most recent"
+   ],
+   "claim": "the latest version is kept whole, the older as a delta"
+  },
+  {
+   "cite": "PGEN p.438",
+   "contains": [
+    "refs/remotes/origin",
+    "+refs/heads"
+   ],
+   "claim": "default refspec: +refs/heads/*:refs/remotes/origin/*"
+  },
+  {
+   "cite": "PGEN p.438",
+   "contains": [
+    "fast-forward"
+   ],
+   "claim": "the + forces update even without fast-forward"
+  },
+  {
+   "cite": "PGEN p.439",
+   "contains": [
+    "non fast forward",
+    "rejected"
+   ],
+   "claim": "fetch without + is rejected if not a fast-forward"
+  },
+  {
+   "cite": "PGEN p.439",
+   "contains": [
+    "2.6.0",
+    "qa*"
+   ],
+   "claim": "partial globs since Git 2.6.0"
+  },
+  {
+   "cite": "PGEN p.440",
+   "contains": [
+    "refs/heads/qa/master",
+    "push ="
+   ],
+   "claim": "push refspec and push config"
+  },
+  {
+   "cite": "PGEN p.440",
+   "contains": [
+    ":topic",
+    "Deleting References"
+   ],
+   "claim": "git push origin :topic deletes a remote branch"
+  },
+  {
+   "cite": "PGEN p.440",
+   "contains": [
+    "1.7.0",
+    "newer syntax"
+   ],
+   "claim": "new delete syntax since 1.7.0"
+  },
+  {
+   "cite": "PGEN p.441",
+   "contains": [
+    "--delete",
+    "git push origin"
+   ],
+   "claim": "push --delete deletes a remote ref"
+  },
+  {
+   "cite": "PGEN p.441",
+   "contains": [
+    "dumb",
+    "HTTP GET"
+   ],
+   "claim": "dumb protocol uses GETs and no Git code on the server"
+  },
+  {
+   "cite": "PGEN p.441",
+   "contains": [
+    "info/refs",
+    "post-receive"
+   ],
+   "claim": "update-server-info as post-receive for HTTP to work"
+  },
+  {
+   "cite": "PGEN p.442",
+   "contains": [
+    "404",
+    "http-alternates"
+   ],
+   "claim": "object outside loose gives a 404; check http-alternates"
+  },
+  {
+   "cite": "PGEN p.443",
+   "contains": [
+    "send-pack",
+    "receive-pack"
+   ],
+   "claim": "upload uses send-pack and receive-pack"
+  },
+  {
+   "cite": "PGEN p.443",
+   "contains": [
+    "00a5",
+    "165"
+   ],
+   "claim": "each chunk starts with the size in 4 hex digits"
+  },
+  {
+   "cite": "PGEN p.444",
+   "contains": [
+    "0000000000000000000000000000000000000000"
+   ],
+   "claim": "zeros = new ref"
+  },
+  {
+   "cite": "PGEN p.444",
+   "contains": [
+    "unpack ok"
+   ],
+   "claim": "server success response"
+  },
+  {
+   "cite": "PGEN p.445",
+   "contains": [
+    "fetch-pack",
+    "upload-pack",
+    "want",
+    "have",
+    "done"
+   ],
+   "claim": "download uses fetch-pack/upload-pack and want/have/done"
+  },
+  {
+   "cite": "PGEN p.446",
+   "contains": [
+    "auto gc",
+    "7,000",
+    "50 packfiles"
+   ],
+   "claim": "auto gc with ~7000 loose objects or >50 packs"
+  },
+  {
+   "cite": "PGEN p.446",
+   "contains": [
+    "gc.auto",
+    "gc.autopacklimit"
+   ],
+   "claim": "limits adjustable through these configs"
+  },
+  {
+   "cite": "PGEN p.447",
+   "contains": [
+    "packed-refs"
+   ],
+   "claim": "gc moves refs to packed-refs"
+  },
+  {
+   "cite": "PGEN p.447",
+   "contains": [
+    "hard-reset",
+    "force-delete"
+   ],
+   "claim": "loss through hard reset or forced branch delete"
+  },
+  {
+   "cite": "PGEN p.448",
+   "contains": [
+    "git reflog",
+    "HEAD@{0}"
+   ],
+   "claim": "reflog records HEAD changes"
+  },
+  {
+   "cite": "PGEN p.448",
+   "contains": [
+    "git log -g",
+    "recover-branch"
+   ],
+   "claim": "log -g shows the reflog; recover by creating a branch"
+  },
+  {
+   "cite": "PGEN p.449",
+   "contains": [
+    "rm -Rf .git/logs",
+    "git fsck --full",
+    "dangling commit"
+   ],
+   "claim": "without reflog, fsck --full finds the dangling commit"
+  },
+  {
+   "cite": "PGEN p.449",
+   "contains": [
+    "destructive",
+    "rebase"
+   ],
+   "claim": "filter-branch is destructive; collaborators need to rebase"
+  },
+  {
+   "cite": "PGEN p.450",
+   "contains": [
+    "count-objects",
+    "size-pack"
+   ],
+   "claim": "count-objects -v shows size-pack in KB"
+  },
+  {
+   "cite": "PGEN p.451",
+   "contains": [
+    "verify-pack",
+    "sort -k 3",
+    "tail"
+   ],
+   "claim": "find the largest objects"
+  },
+  {
+   "cite": "PGEN p.451",
+   "contains": [
+    "rev-list --objects --all"
+   ],
+   "claim": "rev-list --objects maps blob to path"
+  },
+  {
+   "cite": "PGEN p.451",
+   "contains": [
+    "--index-filter",
+    "--ignore-unmatch",
+    "--cached"
+   ],
+   "claim": "filter-branch --index-filter with git rm --cached"
+  },
+  {
+   "cite": "PGEN p.452",
+   "contains": [
+    "refs/original",
+    ".git/logs"
+   ],
+   "claim": "remove refs/original and logs before gc"
+  },
+  {
+   "cite": "PGEN p.452",
+   "contains": [
+    "prune --expire now"
+   ],
+   "claim": "prune --expire now removes the object for good"
+  },
+  {
+   "cite": "PGEN p.453",
+   "contains": [
+    "GIT_EXEC_PATH",
+    "GIT_CONFIG_NOSYSTEM"
+   ],
+   "claim": "global variables"
+  },
+  {
+   "cite": "PGEN p.453",
+   "contains": [
+    "GIT_DIR",
+    "GIT_CEILING_DIRECTORIES",
+    "GIT_WORK_TREE"
+   ],
+   "claim": "repository locations"
+  },
+  {
+   "cite": "PGEN p.454",
+   "contains": [
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES",
+    "colon-separated"
+   ],
+   "claim": "alternate object directories"
+  },
+  {
+   "cite": "PGEN p.454",
+   "contains": [
+    "GIT_LITERAL_PATHSPECS",
+    "GIT_ICASE_PATHSPECS"
+   ],
+   "claim": "pathspec variables"
+  },
+  {
+   "cite": "PGEN p.454",
+   "contains": [
+    "GIT_AUTHOR_NAME",
+    "GIT_COMMITTER_DATE"
+   ],
+   "claim": "author/committer variables"
+  },
+  {
+   "cite": "PGEN p.454",
+   "contains": [
+    "GIT_SSL_NO_VERIFY",
+    "GIT_CURL_VERBOSE"
+   ],
+   "claim": "network variables"
+  },
+  {
+   "cite": "PGEN p.455",
+   "contains": [
+    "GIT_MERGE_VERBOSITY",
+    "default value is 2"
+   ],
+   "claim": "merge verbosity default 2"
+  },
+  {
+   "cite": "PGEN p.456",
+   "contains": [
+    "GIT_TRACE_PACK_ACCESS",
+    "GIT_TRACE_PACKET"
+   ],
+   "claim": "pack and packet tracing"
+  },
+  {
+   "cite": "PGEN p.456",
+   "contains": [
+    "GIT_TRACE_PERFORMANCE",
+    "pack-refs"
+   ],
+   "claim": "performance trace shows the time of each invocation"
+  },
+  {
+   "cite": "PGEN p.457",
+   "contains": [
+    "GIT_TRACE_SETUP",
+    "2.weeks.ago"
+   ],
+   "claim": "performance trace and setup"
+  },
+  {
+   "cite": "PGEN p.457",
+   "contains": [
+    "GIT_SSH_COMMAND",
+    "ssh -i"
+   ],
+   "claim": "GIT_SSH_COMMAND accepts arguments"
+  },
+  {
+   "cite": "PGEN p.458",
+   "contains": [
+    "GIT_REFLOG_ACTION",
+    "GIT_NAMESPACE",
+    "GIT_ASKPASS"
+   ],
+   "claim": "misc variables"
+  },
+  {
+   "cite": "PGEN p.459",
+   "contains": [
+    "gitk",
+    "--all"
+   ],
+   "claim": "gitk is a history viewer; --all shows commits from any ref"
+  },
+  {
+   "cite": "PGEN p.460",
+   "contains": [
+    "git gui",
+    "git-gui"
+   ],
+   "claim": "git gui opens a commit-creation tool"
+  },
+  {
+   "cite": "PGEN p.461",
+   "contains": [
+    "Amend",
+    "task-oriented"
+   ],
+   "claim": "git-gui: Amend redoes the last commit; gitk/git-gui are task-oriented"
+  },
+  {
+   "cite": "PGEN p.461",
+   "contains": [
+    "workflow-oriented",
+    "GitHub for macOS and Windows"
+   ],
+   "claim": "GitHub clients are workflow-oriented"
+  },
+  {
+   "cite": "PGEN p.463",
+   "contains": [
+    "GitHub account",
+    "desktop.github.com"
+   ],
+   "claim": "no GitHub account needed; download at desktop.github.com"
+  },
+  {
+   "cite": "PGEN p.464",
+   "contains": [
+    "git pull --rebase",
+    "git pull --no-rebase"
+   ],
+   "claim": "Sync: pull --rebase, fallback --no-rebase, then push"
+  },
+  {
+   "cite": "PGEN p.464",
+   "contains": [
+    "Visual Studio 2019",
+    "16.8"
+   ],
+   "claim": "Git built into VS since 2019 16.8"
+  },
+  {
+   "cite": "PGEN p.465",
+   "contains": [
+    "Git version 2.0.0",
+    "Visual Studio Code"
+   ],
+   "claim": "VS Code requires Git 2.0.0 or newer"
+  },
+  {
+   "cite": "PGEN p.465",
+   "contains": [
+    "JetBrains",
+    "Git Integration plugin"
+   ],
+   "claim": "JetBrains ships a Git integration plugin"
+  },
+  {
+   "cite": "PGEN p.466",
+   "contains": [
+    "Sublime Text",
+    "3.2"
+   ],
+   "claim": "Sublime Text has Git since 3.2"
+  },
+  {
+   "cite": "PGEN p.466",
+   "contains": [
+    "git-completion.bash",
+    "git checkout tags"
+   ],
+   "claim": "copy the completion from the source of the matching version"
+  },
+  {
+   "cite": "PGEN p.467",
+   "contains": [
+    "GIT_PS1_SHOWDIRTYSTATE",
+    "__git_ps1"
+   ],
+   "claim": "Bash prompt with git-prompt.sh"
+  },
+  {
+   "cite": "PGEN p.467",
+   "contains": [
+    "compinit",
+    "autoload -Uz"
+   ],
+   "claim": "Zsh: autoload -Uz compinit && compinit"
+  },
+  {
+   "cite": "PGEN p.468",
+   "contains": [
+    "vcs_info",
+    "RPROMPT"
+   ],
+   "claim": "Zsh vcs_info for the branch in the prompt"
+  },
+  {
+   "cite": "PGEN p.469",
+   "contains": [
+    "oh-my-zsh",
+    "posh-git"
+   ],
+   "claim": "oh-my-zsh for Zsh; posh-git for PowerShell"
+  },
+  {
+   "cite": "PGEN p.469",
+   "contains": [
+    "PowerShell Core",
+    "cmd.exe"
+   ],
+   "claim": "cmd.exe does not allow a custom experience; posh-git in PowerShell Core"
+  },
+  {
+   "cite": "PGEN p.470",
+   "contains": [
+    "RemoteSigned",
+    "LocalMachine"
+   ],
+   "claim": "ExecutionPolicy RemoteSigned; LocalMachine for all"
+  },
+  {
+   "cite": "PGEN p.470",
+   "contains": [
+    "Install-Module posh-git",
+    "CurrentUser"
+   ],
+   "claim": "install posh-git via PowerShell Gallery"
+  },
+  {
+   "cite": "PGEN p.470",
+   "contains": [
+    "PowerShellGet",
+    "SkipPublisherCheck"
+   ],
+   "claim": "workaround for the Install-Module error"
+  },
+  {
+   "cite": "PGEN p.471",
+   "contains": [
+    "Add-PoshGitToProfile",
+    "posh-git.psd1"
+   ],
+   "claim": "load posh-git in the profile"
+  },
+  {
+   "cite": "PGEN p.472",
+   "contains": [
+    "spawn a shell",
+    "Libgit2"
+   ],
+   "claim": "two options: git process or embedded library"
+  },
+  {
+   "cite": "PGEN p.472",
+   "contains": [
+    "error recovery",
+    "process management"
+   ],
+   "claim": "drawbacks of the embedded CLI"
+  },
+  {
+   "cite": "PGEN p.473",
+   "contains": [
+    "git_oid",
+    "SHA-1"
+   ],
+   "claim": "git_oid is libgit2's representation of the SHA-1 hash"
+  },
+  {
+   "cite": "PGEN p.473",
+   "contains": [
+    "Rugged",
+    "Writing C"
+   ],
+   "claim": "libgit2 in Ruby is called Rugged; writing C is painful"
+  },
+  {
+   "cite": "PGEN p.474",
+   "contains": [
+    "Rugged::Commit.create",
+    "update_ref"
+   ],
+   "claim": "create a commit in Rugged with update_ref"
+  },
+  {
+   "cite": "PGEN p.475",
+   "contains": [
+    "git_odb_new",
+    "libgit2-backends"
+   ],
+   "claim": "custom ODB backend"
+  },
+  {
+   "cite": "PGEN p.476",
+   "contains": [
+    "LibGit2Sharp",
+    "objective-git"
+   ],
+   "claim": ".NET and Apple bindings"
+  },
+  {
+   "cite": "PGEN p.477",
+   "contains": [
+    "pygit2",
+    "JGit"
+   ],
+   "claim": "pygit2 is a Python binding; JGit is Java under Eclipse"
+  },
+  {
+   "cite": "PGEN p.477",
+   "contains": [
+    "org.eclipse.jgit",
+    "3.5.0.201409260305"
+   ],
+   "claim": "old JGit version on Maven"
+  },
+  {
+   "cite": "PGEN p.478",
+   "contains": [
+    "FileRepositoryBuilder",
+    "plumbing"
+   ],
+   "claim": "JGit has plumbing and porcelain"
+  },
+  {
+   "cite": "PGEN p.479",
+   "contains": [
+    "setForceUpdate",
+    "REJECTED"
+   ],
+   "claim": "branch delete in JGit requires force"
+  },
+  {
+   "cite": "PGEN p.480",
+   "contains": [
+    "lsRemote",
+    "CredentialsProvider"
+   ],
+   "claim": "JGit porcelain ~ git ls-remote"
+  },
+  {
+   "cite": "PGEN p.481",
+   "contains": [
+    "PlainClone",
+    "memory.NewStorage"
+   ],
+   "claim": "go-git, in-memory storage"
+  },
+  {
+   "cite": "PGEN p.482",
+   "contains": [
+    "InsecureSkipVerify",
+    "Dulwich"
+   ],
+   "claim": "go-git insecure example; Dulwich pure Python"
+  },
+  {
+   "cite": "PGEN p.483",
+   "contains": [
+    "porcelain.log",
+    "dulwich"
+   ],
+   "claim": "Dulwich porcelain log"
+  },
+  {
+   "cite": "PGEN p.484",
+   "contains": [
+    "git commit --a",
+    "--amend"
+   ],
+   "claim": "abbreviation of long options; use the full form in scripts"
+  },
+  {
+   "cite": "PGEN p.484",
+   "contains": [
+    "Credential Storage",
+    "Keyword Expansion"
+   ],
+   "claim": "git config cited in these sections"
+  },
+  {
+   "cite": "PGEN p.485",
+   "contains": [
+    "core.editor",
+    "code --wait"
+   ],
+   "claim": "editor table; VS Code uses code --wait"
+  },
+  {
+   "cite": "PGEN p.485",
+   "contains": [
+    "Program Files (x86)",
+    "32-bit"
+   ],
+   "claim": "32-bit editor on 64-bit Windows"
+  },
+  {
+   "cite": "PGEN p.486",
+   "contains": [
+    "help <command>",
+    "Setting Up the Server"
+   ],
+   "claim": "git help; git shell"
+  },
+  {
+   "cite": "PGEN p.486",
+   "contains": [
+    "git remote add",
+    "origin"
+   ],
+   "claim": "clone = init + remote add + fetch + checkout"
+  },
+  {
+   "cite": "PGEN p.487",
+   "contains": [
+    "--recurse-submodules",
+    "Cloning a Project with Submodules"
+   ],
+   "claim": "clone option"
+  },
+  {
+   "cite": "PGEN p.487",
+   "contains": [
+    "Tracking New Files",
+    "Interactive Staging"
+   ],
+   "claim": "git add cited"
+  },
+  {
+   "cite": "PGEN p.488",
+   "contains": [
+    "--hard",
+    "lose your work"
+   ],
+   "claim": "reset --hard can lose work"
+  },
+  {
+   "cite": "PGEN p.488",
+   "contains": [
+    "--theirs",
+    "--submodule"
+   ],
+   "claim": "diff cited in Advanced Merging and Starting with Submodules"
+  },
+  {
+   "cite": "PGEN p.489",
+   "contains": [
+    "--ignore-unmatch",
+    "filter-branch"
+   ],
+   "claim": "rm --ignore-unmatch with filter-branch"
+  },
+  {
+   "cite": "PGEN p.489",
+   "contains": [
+    "git mv",
+    "Cleaning your Working Directory"
+   ],
+   "claim": "mv and clean"
+  },
+  {
+   "cite": "PGEN p.490",
+   "contains": [
+    "--conflict=diff3",
+    "--track"
+   ],
+   "claim": "checkout cited"
+  },
+  {
+   "cite": "PGEN p.490",
+   "contains": [
+    "Subtree Merging",
+    "-Xignore-space-change"
+   ],
+   "claim": "merge cited"
+  },
+  {
+   "cite": "PGEN p.491",
+   "contains": [
+    "--show-signature",
+    "--left-right"
+   ],
+   "claim": "git log cited"
+  },
+  {
+   "cite": "PGEN p.491",
+   "contains": [
+    "git stash",
+    "Stashing and Cleaning"
+   ],
+   "claim": "stash"
+  },
+  {
+   "cite": "PGEN p.492",
+   "contains": [
+    "Pull Request Refs",
+    "--verify-signatures"
+   ],
+   "claim": "fetch and pull cited"
+  },
+  {
+   "cite": "PGEN p.493",
+   "contains": [
+    "--recurse-submodules",
+    "pre-push"
+   ],
+   "claim": "push cites submodule and pre-push"
+  },
+  {
+   "cite": "PGEN p.493",
+   "contains": [
+    "git archive",
+    "Preparing a Release"
+   ],
+   "claim": "archive for release tarball"
+  },
+  {
+   "cite": "PGEN p.494",
+   "contains": [
+    "Binary Search",
+    "File Annotation"
+   ],
+   "claim": "bisect and blame"
+  },
+  {
+   "cite": "PGEN p.494",
+   "contains": [
+    "git shortlog",
+    "git describe"
+   ],
+   "claim": "shortlog and describe"
+  },
+  {
+   "cite": "PGEN p.495",
+   "contains": [
+    "cherry-pick",
+    "automated cherry-pick"
+   ],
+   "claim": "rebase and automated cherry-pick"
+  },
+  {
+   "cite": "PGEN p.495",
+   "contains": [
+    "git revert",
+    "Reverse the commit"
+   ],
+   "claim": "revert undoes a merge commit"
+  },
+  {
+   "cite": "PGEN p.496",
+   "contains": [
+    "--resolved",
+    "Email Workflow Hooks"
+   ],
+   "claim": "git am"
+  },
+  {
+   "cite": "PGEN p.496",
+   "contains": [
+    "git imap-send",
+    "git send-email"
+   ],
+   "claim": "format-patch and sending by email"
+  },
+  {
+   "cite": "PGEN p.496",
+   "contains": [
+    "git request-pull",
+    "Forked Public Project"
+   ],
+   "claim": "request-pull"
+  },
+  {
+   "cite": "PGEN p.497",
+   "contains": [
+    "git svn",
+    "A Custom Importer"
+   ],
+   "claim": "svn and fast-import"
+  },
+  {
+   "cite": "PGEN p.497",
+   "contains": [
+    "git gc",
+    "Data Recovery"
+   ],
+   "claim": "gc and fsck/reflog"
+  },
+  {
+   "cite": "PGEN p.498",
+   "contains": [
+    "--tree-filter",
+    "--subdirectory-filter"
+   ],
+   "claim": "filter-branch cited"
+  },
+  {
+   "cite": "PGEN p.498",
+   "contains": [
+    "ls-remote",
+    "rev-parse"
+   ],
+   "claim": "plumbing cited"
+  },
+  {
+   "cite": "PGEN p.499",
+   "contains": [
+    "Dulwich",
+    "BitKeeper"
+   ],
+   "claim": "Index"
+  },
+  {
+   "cite": "PGEN p.500",
+   "contains": [
+    "gitk, 453",
+    "jgit, 471"
+   ],
+   "claim": "printed numbers in the Index (PDF-6)"
+  },
+  {
+   "cite": "PGEN p.501",
+   "contains": [
+    "posh-git, 463",
+    "zsh, 461"
+   ],
+   "claim": "Index"
+  },
+  {
+   "cite": "PGBR p.10",
+   "contains": [
+    "Cap",
+    "tulos"
+   ],
+   "claim": "introduction summarizes the ten chapters and three appendices"
+  },
+  {
+   "cite": "PGBR p.12",
+   "contains": [
+    "Sistemas Locais",
+    "VCS"
+   ],
+   "claim": "section Local Version Control Systems"
+  },
+  {
+   "cite": "PGBR p.14",
+   "contains": [
+    "DVCS",
+    "Mercurial"
+   ],
+   "claim": "distributed systems cite Git, Mercurial, Bazaar, Darcs"
+  },
+  {
+   "cite": "PGBR p.16",
+   "contains": [
+    "BitKeeper",
+    "Imagens, N"
+   ],
+   "claim": "history of Git and the title Snapshots, Not Differences"
+  },
+  {
+   "cite": "PGBR p.18",
+   "contains": [
+    "SHA-1",
+    "24b9da6552252987aa493b52f8696cd6d3b00373"
+   ],
+   "claim": "40-character SHA-1 hash as an example"
+  },
+  {
+   "cite": "PGBR p.19",
+   "contains": [
+    "rea de preparo",
+    "staging area"
+   ],
+   "claim": "staging area translated as \"area de preparo\""
+  },
+  {
+   "cite": "PGBR p.19",
+   "contains": [
+    "committed",
+    "(modified)",
+    "(staged)"
+   ],
+   "claim": "three states with English terms in parentheses"
+  },
+  {
+   "cite": "PGBR p.20",
+   "contains": [
+    "Fedora",
+    "2.0.0"
+   ],
+   "claim": "book written with Git 2.0.0 and installation on Linux"
+  },
+  {
+   "cite": "PGBR p.22",
+   "contains": [
+    "msysGit",
+    "Chocolatey"
+   ],
+   "claim": "installation on Windows (dated)"
+  },
+  {
+   "cite": "PGBR p.24",
+   "contains": [
+    "git config --global user.name",
+    "core.editor emacs"
+   ],
+   "claim": "identity and editor"
+  },
+  {
+   "cite": "PGBR p.25",
+   "contains": [
+    "git help <verb>",
+    "Freenode"
+   ],
+   "claim": "help and IRC channels"
+  },
+  {
+   "cite": "PGBR p.26",
+   "contains": [
+    "git init",
+    "rea de stage"
+   ],
+   "claim": "opening of ch. 2 uses \"area de stage\""
+  },
+  {
+   "cite": "PGBR p.27",
+   "contains": [
+    "git clone",
+    "libgit2"
+   ],
+   "claim": "clone of libgit2"
+  },
+  {
+   "cite": "PGBR p.28",
+   "contains": [
+    "Gravando Altera",
+    "snapshot"
+   ],
+   "claim": "section Recording Changes (tracked/untracked)"
+  },
+  {
+   "cite": "PGBR p.29",
+   "contains": [
+    "Untracked files",
+    "git add README"
+   ],
+   "claim": "status shows an untracked file"
+  },
+  {
+   "cite": "PGBR p.32",
+   "contains": [
+    "MM Rakefile",
+    ".gitignore"
+   ],
+   "claim": "short status and .gitignore"
+  },
+  {
+   "cite": "PGBR p.34",
+   "contains": [
+    "git diff",
+    "--staged"
+   ],
+   "claim": "git diff vs --staged"
+  },
+  {
+   "cite": "PGBR p.36",
+   "contains": [
+    "--cached",
+    "git difftool"
+   ],
+   "claim": "--cached is a synonym of --staged"
+  },
+  {
+   "cite": "PGBR p.37",
+   "contains": [
+    "COMMIT_EDITMSG",
+    "463dc4f"
+   ],
+   "claim": "first commit with -m"
+  },
+  {
+   "cite": "PGBR p.38",
+   "contains": [
+    "git commit -a -m",
+    "git rm"
+   ],
+   "claim": "-a skips git add; git rm removes a file"
+  },
+  {
+   "cite": "PGBR p.39",
+   "contains": [
+    "git rm --cached",
+    "Movendo Arquivos"
+   ],
+   "claim": "--cached keeps the file on disk"
+  },
+  {
+   "cite": "PGBR p.44",
+   "contains": [
+    "%an",
+    "commiter"
+   ],
+   "claim": "log format and author/committer distinction"
+  },
+  {
+   "cite": "PGBR p.46",
+   "contains": [
+    "--since=2.weeks",
+    "--all-match"
+   ],
+   "claim": "git log filters"
+  },
+  {
+   "cite": "PGBR p.47",
+   "contains": [
+    "--amend",
+    "detached HEAD"
+   ],
+   "claim": "amend; detached HEAD only in log output"
+  },
+  {
+   "cite": "PGBR p.48",
+   "contains": [
+    "git reset HEAD CONTRIBUTING.md",
+    "work directory"
+   ],
+   "claim": "unstage; term work directory"
+  },
+  {
+   "cite": "PGBR p.49",
+   "contains": [
+    "git checkout -- CONTRIBUTING.md",
+    "--hard"
+   ],
+   "claim": "checkout -- discards, reset --hard is dangerous"
+  },
+  {
+   "cite": "PGBR p.50",
+   "contains": [
+    "git remote -v",
+    "pulling(obter)"
+   ],
+   "claim": "remote and terms in parentheses"
+  },
+  {
+   "cite": "PGBR p.52",
+   "contains": [
+    "git fetch pb",
+    "(ramo mestre)",
+    "Pushing to Your Remotes"
+   ],
+   "claim": "master branch and English title"
+  },
+  {
+   "cite": "PGBR p.53",
+   "contains": [
+    "git remote show origin",
+    "write-access"
+   ],
+   "claim": "inspect a remote"
+  },
+  {
+   "cite": "PGBR p.54",
+   "contains": [
+    "git remote rename",
+    "git remote remove"
+   ],
+   "claim": "rename/remove remotes"
+  },
+  {
+   "cite": "PGBR p.55",
+   "contains": [
+    "git tag -l",
+    "v1.8.5"
+   ],
+   "claim": "list tags with a pattern"
+  },
+  {
+   "cite": "PGBR p.56",
+   "contains": [
+    "git tag -a v1.4 -m",
+    "GPG"
+   ],
+   "claim": "annotated tag"
+  },
+  {
+   "cite": "PGBR p.57",
+   "contains": [
+    "v1.4-lw",
+    "git tag -a v1.2 9fceb02"
+   ],
+   "claim": "lightweight tag and later tag"
+  },
+  {
+   "cite": "PGBR p.58",
+   "contains": [
+    "git push origin v1.5",
+    "--tags"
+   ],
+   "claim": "push does not send tags automatically"
+  },
+  {
+   "cite": "PGBR p.59",
+   "contains": [
+    "git checkout -b version2 v2.0.0",
+    "alias.co"
+   ],
+   "claim": "check out a tag via branch; aliases"
+  },
+  {
+   "cite": "PGBR p.60",
+   "contains": [
+    "alias.unstage",
+    "!gitk"
+   ],
+   "claim": "aliases"
+  },
+  {
+   "cite": "PGBR p.61",
+   "contains": [
+    "<< ch01",
+    "staging area",
+    "blobs"
+   ],
+   "claim": "broken xref and staging area"
+  },
+  {
+   "cite": "PGBR p.62",
+   "contains": [
+    "git init",
+    "master"
+   ],
+   "claim": "master is not special"
+  },
+  {
+   "cite": "PGBR p.64",
+   "contains": [
+    "--decorate",
+    "git checkout testing"
+   ],
+   "claim": "git log --decorate"
+  },
+  {
+   "cite": "PGBR p.67",
+   "contains": [
+    "--oneline --decorate --graph --all",
+    "41 bytes"
+   ],
+   "claim": "branch is a 41-byte file"
+  },
+  {
+   "cite": "PGBR p.68",
+   "contains": [
+    "git checkout -b iss53",
+    "(Merge)"
+   ],
+   "claim": "title Branching (Branch) and Merging (Merge)"
+  },
+  {
+   "cite": "PGBR p.70",
+   "contains": [
+    "stash",
+    "--ammend",
+    "Stashing and Cleaning"
+   ],
+   "claim": "stash cited; typo --ammend"
+  },
+  {
+   "cite": "PGBR p.71",
+   "contains": [
+    "Fast-forward",
+    "git merge hotfix"
+   ],
+   "claim": "fast-forward merge"
+  },
+  {
+   "cite": "PGBR p.73",
+   "contains": [
+    "recursive",
+    "git merge iss53"
+   ],
+   "claim": "three-way merge"
+  },
+  {
+   "cite": "PGBR p.75",
+   "contains": [
+    "unmerged",
+    "<<<<<<< HEAD:index.html"
+   ],
+   "claim": "conflict markers"
+  },
+  {
+   "cite": "PGBR p.76",
+   "contains": [
+    "git mergetool",
+    "Advanced Merging"
+   ],
+   "claim": "mergetool and English xref"
+  },
+  {
+   "cite": "PGBR p.78",
+   "contains": [
+    "git branch --merged",
+    "-D testing"
+   ],
+   "claim": "-d vs -D"
+  },
+  {
+   "cite": "PGBR p.80",
+   "contains": [
+    "pu (proposed updates)",
+    "dumbidea"
+   ],
+   "claim": "pu branch and topics"
+  },
+  {
+   "cite": "PGBR p.83",
+   "contains": [
+    "origin/master",
+    "booyah",
+    "git.ourcompany.com"
+   ],
+   "claim": "origin is not special"
+  },
+  {
+   "cite": "PGBR p.85",
+   "contains": [
+    "git fetch origin",
+    "git.nossaempresa.com"
+   ],
+   "claim": "example domain translated only on this page"
+  },
+  {
+   "cite": "PGBR p.88",
+   "contains": [
+    "git push origin serverfix",
+    "refs/heads/serverfix"
+   ],
+   "claim": "push of a branch"
+  },
+  {
+   "cite": "PGBR p.89",
+   "contains": [
+    "credential.helper",
+    "git merge origin/serverfix"
+   ],
+   "claim": "credential cache and merge of origin/serverfix"
+  },
+  {
+   "cite": "PGBR p.90",
+   "contains": [
+    "--track origin/serverfix",
+    "git branch -u origin/serverfix"
+   ],
+   "claim": "tracking branches"
+  },
+  {
+   "cite": "PGBR p.91",
+   "contains": [
+    "git branch -vv",
+    "git fetch --all"
+   ],
+   "claim": "-vv and fetch --all"
+  },
+  {
+   "cite": "PGBR p.92",
+   "contains": [
+    "git push origin --delete serverfix",
+    "merge e o rebase"
+   ],
+   "claim": "delete a remote branch"
+  },
+  {
+   "cite": "PGBR p.95",
+   "contains": [
+    "--onto master server client"
+   ],
+   "claim": "rebase --onto"
+  },
+  {
+   "cite": "PGBR p.98",
+   "contains": [
+    "git push --force"
+   ],
+   "claim": "force push overwrites history"
+  },
+  {
+   "cite": "PGBR p.99",
+   "contains": [
+    "patch-id"
+   ],
+   "claim": "patch-id"
+  },
+  {
+   "cite": "PGBR p.100",
+   "contains": [
+    "git pull --rebase",
+    "pull.rebase true"
+   ],
+   "claim": "pull --rebase"
+  },
+  {
+   "cite": "PGBR p.102",
+   "contains": [
+    "vazio (bare repository)",
+    "Git no servidor"
+   ],
+   "claim": "empty repository"
+  },
+  {
+   "cite": "PGBR p.103",
+   "contains": [
+    "file:///srv/git/project.git",
+    "git clone /srv/git/project.git"
+   ],
+   "claim": "local protocol"
+  },
+  {
+   "cite": "PGBR p.104",
+   "contains": [
+    "\"Smart\"",
+    "\"Dumb\"",
+    "1.6.6"
+   ],
+   "claim": "Smart and Dumb HTTP"
+  },
+  {
+   "cite": "PGBR p.105",
+   "contains": [
+    "post-update",
+    "update-server-info"
+   ],
+   "claim": "post-update hook"
+  },
+  {
+   "cite": "PGBR p.107",
+   "contains": [
+    "9418",
+    "daemon-export-ok",
+    "Getting Git on a Server"
+   ],
+   "claim": "Git protocol and start of an English passage"
+  },
+  {
+   "cite": "PGBR p.108",
+   "contains": [
+    "git clone --bare",
+    "scp -r"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.110",
+   "contains": [
+    "ssh-keygen",
+    "id_rsa.pub"
+   ],
+   "claim": "SSH key"
+  },
+  {
+   "cite": "PGBR p.111",
+   "contains": [
+    "adduser git",
+    "authorized_keys",
+    "Setting Up the Server"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.112",
+   "contains": [
+    "git-shell",
+    "chsh"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.113",
+   "contains": [
+    "git daemon --reuseaddr",
+    "Upstart"
+   ],
+   "claim": "git daemon in English"
+  },
+  {
+   "cite": "PGBR p.114",
+   "contains": [
+    "git-http-backend",
+    "initctl start local-git-daemon"
+   ],
+   "claim": "smart http in English"
+  },
+  {
+   "cite": "PGBR p.116",
+   "contains": [
+    "git instaweb",
+    "GitWeb"
+   ],
+   "claim": "gitweb in English"
+  },
+  {
+   "cite": "PGBR p.117",
+   "contains": [
+    "GitLab",
+    "GITWEB_PROJECTROOT"
+   ],
+   "claim": "GitLab starts in PT"
+  },
+  {
+   "cite": "PGBR p.118",
+   "contains": [
+    "bitnami",
+    "admin@local.host"
+   ],
+   "claim": "GitLab installation"
+  },
+  {
+   "cite": "PGBR p.119",
+   "contains": [
+    "namespace",
+    "Bloquear"
+   ],
+   "claim": "GitLab users"
+  },
+  {
+   "cite": "PGBR p.120",
+   "contains": [
+    "(hooks)",
+    "HTTP POST"
+   ],
+   "claim": "GitLab hooks"
+  },
+  {
+   "cite": "PGBR p.121",
+   "contains": [
+    "git remote add gitlab",
+    "solicita",
+    "bifurca"
+   ],
+   "claim": "GitLab uses \"solicitacoes de mesclagem\" and \"bifurcacao\" (merge requests and forks)"
+  },
+  {
+   "cite": "PGBR p.122",
+   "contains": [
+    "Third Party Hosted Options",
+    "GitHosting"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.123",
+   "contains": [
+    "Distributed Git",
+    "Fluxos de Trabalho Distribu"
+   ],
+   "claim": "opening in English and PT"
+  },
+  {
+   "cite": "PGBR p.124",
+   "contains": [
+    "non-fast-forward",
+    "coordenadores"
+   ],
+   "claim": "push rejected and coordinators"
+  },
+  {
+   "cite": "PGBR p.125",
+   "contains": [
+    "tenentes",
+    "ditador benevolente"
+   ],
+   "claim": "dictator and lieutenants workflow"
+  },
+  {
+   "cite": "PGBR p.126",
+   "contains": [
+    "branching-patterns",
+    "Contribuindo com um Projeto"
+   ],
+   "claim": "patterns"
+  },
+  {
+   "cite": "PGBR p.127",
+   "contains": [
+    "git diff --check",
+    "SubmittingPatches",
+    "commites"
+   ],
+   "claim": "commit guidelines"
+  },
+  {
+   "cite": "PGBR p.128",
+   "contains": [
+    "git add --patch",
+    "50 caracteres",
+    "Tim Pope"
+   ],
+   "claim": "commit message"
+  },
+  {
+   "cite": "PGBR p.129",
+   "contains": [
+    "git log --no-merges",
+    "Time Pequeno Privado"
+   ],
+   "claim": "message template"
+  },
+  {
+   "cite": "PGBR p.131",
+   "contains": [
+    "non-fast forward",
+    "git fetch origin"
+   ],
+   "claim": "push rejected"
+  },
+  {
+   "cite": "PGBR p.134",
+   "contains": [
+    "issue54..origin/master",
+    "Commit Ranges"
+   ],
+   "claim": "commit range"
+  },
+  {
+   "cite": "PGBR p.137",
+   "contains": [
+    "git push -u origin featureA"
+   ],
+   "claim": "managed team"
+  },
+  {
+   "cite": "PGBR p.139",
+   "contains": [
+    "featureB:featureBee",
+    "refspec",
+    "--set-upstream"
+   ],
+   "claim": "refspec"
+  },
+  {
+   "cite": "PGBR p.143",
+   "contains": [
+    "git request-pull",
+    "meufork",
+    "cherry-pick"
+   ],
+   "claim": "pull request by email"
+  },
+  {
+   "cite": "PGBR p.145",
+   "contains": [
+    "git push -f meufork featureA",
+    "git rebase origin/master"
+   ],
+   "claim": "force push after rebase"
+  },
+  {
+   "cite": "PGBR p.146",
+   "contains": [
+    "--squash"
+   ],
+   "claim": "merge --squash"
+  },
+  {
+   "cite": "PGBR p.147",
+   "contains": [
+    "git format-patch -M origin/master",
+    "mbox"
+   ],
+   "claim": "format-patch"
+  },
+  {
+   "cite": "PGBR p.148",
+   "contains": [
+    "git imap-send",
+    "[sendemail]"
+   ],
+   "claim": "imap and smtp"
+  },
+  {
+   "cite": "PGBR p.149",
+   "contains": [
+    "git send-email",
+    "Maintaining a Project"
+   ],
+   "claim": "end of PT and start of English"
+  },
+  {
+   "cite": "PGBR p.150",
+   "contains": [
+    "Applying Patches from Email",
+    "Working in Topic Branches"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.161",
+   "contains": [
+    "Rerere",
+    "Tagging Your Releases"
+   ],
+   "claim": "passage in English"
+  },
+  {
+   "cite": "PGBR p.164",
+   "contains": [
+    "Summary",
+    "largest and most popular Git"
+   ],
+   "claim": "English summary of ch. 5"
+  },
+  {
+   "cite": "PGBR p.165",
+   "contains": [
+    "Configurando uma conta",
+    "Interfaces Change"
+   ],
+   "claim": "GitHub opens in English and PT"
+  },
+  {
+   "cite": "PGBR p.169",
+   "contains": [
+    "2FA",
+    "Gravatar"
+   ],
+   "claim": "GitHub account"
+  },
+  {
+   "cite": "PGBR p.171",
+   "contains": [
+    "Integration Manager",
+    "Pull Request"
+   ],
+   "claim": "GitHub workflow"
+  },
+  {
+   "cite": "PGBR p.173",
+   "contains": [
+    "git checkout -b slow-blink",
+    "--word-diff"
+   ],
+   "claim": "blink example"
+  },
+  {
+   "cite": "PGBR p.178",
+   "contains": [
+    "no-fast-forward",
+    "Files Changed"
+   ],
+   "claim": "merge on GitHub"
+  },
+  {
+   "cite": "PGBR p.181",
+   "contains": [
+    "git remote add upstream",
+    "git fetch upstream"
+   ],
+   "claim": "upstream"
+  },
+  {
+   "cite": "PGBR p.184",
+   "contains": [
+    "Markdown aprimorado",
+    "melhorado"
+   ],
+   "claim": "two translations of GitHub Flavored Markdown"
+  },
+  {
+   "cite": "PGBR p.185",
+   "contains": [
+    "Task List",
+    "- [X] Write the code"
+   ],
+   "claim": "task lists"
+  },
+  {
+   "cite": "PGBR p.189",
+   "contains": [
+    "Maintaining a Project",
+    "Creating a New Repository"
+   ],
+   "claim": "passage in English from GitHub"
+  },
+  {
+   "cite": "PGBR p.195",
+   "contains": [
+    "Pull Request Refs"
+   ],
+   "claim": "English"
+  },
+  {
+   "cite": "PGBR p.217",
+   "contains": [
+    "Git Tools",
+    "Revision Selection"
+   ],
+   "claim": "ch. 7 in English"
+  },
+  {
+   "cite": "PGBR p.225",
+   "contains": [
+    "Interactive Staging",
+    "Staging and Unstaging Files"
+   ],
+   "claim": "English"
+  },
+  {
+   "cite": "PGBR p.228",
+   "contains": [
+    "Stage this hunk"
+   ],
+   "claim": "hunk only in English"
+  },
+  {
+   "cite": "PGBR p.229",
+   "contains": [
+    "Stashing and Cleaning",
+    "git stash"
+   ],
+   "claim": "stash in English"
+  },
+  {
+   "cite": "PGBR p.243",
+   "contains": [
+    "Rewriting History",
+    "git commit --amend"
+   ],
+   "claim": "English"
+  },
+  {
+   "cite": "PGBR p.248",
+   "contains": [
+    "filter-branch"
+   ],
+   "claim": "English"
+  },
+  {
+   "cite": "PGBR p.249",
+   "contains": [
+    "Reset Demystified",
+    "The Three Trees"
+   ],
+   "claim": "English"
+  },
+  {
+   "cite": "PGBR p.217",
+   "contains": [
+    "Git Tools",
+    "Revision Selection"
+   ],
+   "claim": "ch. 7 starts at p.217 with an English title"
+  },
+  {
+   "cite": "PGBR p.219",
+   "contains": [
+    "A SHORT NOTE ABOUT SHA-1",
+    "NOTA"
+   ],
+   "claim": "NOTE label translated, body in English"
+  },
+  {
+   "cite": "PGBR p.220",
+   "contains": [
+    "RefLog Shortnames",
+    "git reflog"
+   ],
+   "claim": "reflog with no PT translation"
+  },
+  {
+   "cite": "PGBR p.225",
+   "contains": [
+    "Interactive Staging",
+    "--interactive"
+   ],
+   "claim": "git add -i in English"
+  },
+  {
+   "cite": "PGBR p.229",
+   "contains": [
+    "Stashing and Cleaning",
+    "git stash"
+   ],
+   "claim": "stash not translated"
+  },
+  {
+   "cite": "PGBR p.230",
+   "contains": [
+    "git stash save",
+    "Saved working directory"
+   ],
+   "claim": "old form of stash, in English"
+  },
+  {
+   "cite": "PGBR p.234",
+   "contains": [
+    "git clean",
+    "Cleaning your Working Directory"
+   ],
+   "claim": "clean in English"
+  },
+  {
+   "cite": "PGBR p.235",
+   "contains": [
+    "Signing Your Work",
+    "user.signingkey"
+   ],
+   "claim": "GPG signing in English"
+  },
+  {
+   "cite": "PGBR p.243",
+   "contains": [
+    "Rewriting History",
+    "git commit --amend"
+   ],
+   "claim": "history rewriting in English"
+  },
+  {
+   "cite": "PGBR p.244",
+   "contains": [
+    "git rebase -i",
+    "squash"
+   ],
+   "claim": "interactive rebase only as an EN command"
+  },
+  {
+   "cite": "PGBR p.248",
+   "contains": [
+    "filter-branch",
+    "--tree-filter"
+   ],
+   "claim": "filter-branch in English"
+  },
+  {
+   "cite": "PGBR p.249",
+   "contains": [
+    "Reset Demystified",
+    "The Three Trees"
+   ],
+   "claim": "reset: EN title"
+  },
+  {
+   "cite": "PGBR p.251",
+   "contains": [
+    "The Working Directory",
+    "unborn branch"
+   ],
+   "claim": "working directory in English; HEAD points to an unborn branch"
+  },
+  {
+   "cite": "PGBR p.258",
+   "contains": [
+    "Step 1: Move HEAD",
+    "git reset"
+   ],
+   "claim": "reset step 1 in English"
+  },
+  {
+   "cite": "PGBR p.260",
+   "contains": [
+    "--mixed",
+    "--hard"
+   ],
+   "claim": "reset steps"
+  },
+  {
+   "cite": "PGBR p.261",
+   "contains": [
+    "reflog",
+    "dangerous"
+   ],
+   "claim": "--hard is dangerous; reflog recovers the commit"
+  },
+  {
+   "cite": "PGBR p.262",
+   "contains": [
+    "Reset With a Path",
+    "git reset --mixed HEAD file.txt"
+   ],
+   "claim": "reset with a path skips step 1"
+  },
+  {
+   "cite": "PGBR p.269",
+   "contains": [
+    "Advanced Merging",
+    "WD Safe?"
+   ],
+   "claim": "reset summary table in English"
+  },
+  {
+   "cite": "PGBR p.270",
+   "contains": [
+    "Merge Conflicts",
+    "Conflitos"
+   ],
+   "claim": "PT xref in an EN sentence"
+  },
+  {
+   "cite": "PGBR p.272",
+   "contains": [
+    "Aborting a Merge",
+    "git merge --abort"
+   ],
+   "claim": "abort merge in English"
+  },
+  {
+   "cite": "PGBR p.278",
+   "contains": [
+    "MERGE_HEAD",
+    "diff3"
+   ],
+   "claim": "ours/theirs/diff3 in English"
+  },
+  {
+   "cite": "PGBR p.281",
+   "contains": [
+    "Undoing Merges"
+   ],
+   "claim": "undoing merges in English (title)"
+  },
+  {
+   "cite": "PGBR p.282",
+   "contains": [
+    "git reset --hard HEAD~",
+    "Figura 138"
+   ],
+   "claim": "reset --hard undoes an accidental merge; Figure caption translated only in the label"
+  },
+  {
+   "cite": "PGBR p.285",
+   "contains": [
+    "-Xours",
+    "-Xtheirs"
+   ],
+   "claim": "ours/theirs options untranslated"
+  },
+  {
+   "cite": "PGBR p.286",
+   "contains": [
+    "Subtree Merging",
+    "rack_remote"
+   ],
+   "claim": "subtree merge in English"
+  },
+  {
+   "cite": "PGBR p.288",
+   "contains": [
+    "Rerere",
+    "reuse recorded"
+   ],
+   "claim": "rerere not translated"
+  },
+  {
+   "cite": "PGBR p.294",
+   "contains": [
+    "File Annotation",
+    "git blame"
+   ],
+   "claim": "blame in English"
+  },
+  {
+   "cite": "PGBR p.295",
+   "contains": [
+    "Binary Search",
+    "git bisect"
+   ],
+   "claim": "bisect in English"
+  },
+  {
+   "cite": "PGBR p.297",
+   "contains": [
+    "Submodules",
+    "git submodule add"
+   ],
+   "claim": "submodule only in English"
+  },
+  {
+   "cite": "PGBR p.305",
+   "contains": [
+    "detached HEAD",
+    "Working on a Submodule"
+   ],
+   "claim": "detached HEAD in English"
+  },
+  {
+   "cite": "PGBR p.311",
+   "contains": [
+    "Submodule Foreach",
+    "foreach submodule"
+   ],
+   "claim": "foreach in English"
+  },
+  {
+   "cite": "PGBR p.316",
+   "contains": [
+    "Bundling",
+    "git bundle"
+   ],
+   "claim": "bundle in English"
+  },
+  {
+   "cite": "PGBR p.326",
+   "contains": [
+    "git replace",
+    "commit you want to replace"
+   ],
+   "claim": "replace in English"
+  },
+  {
+   "cite": "PGBR p.329",
+   "contains": [
+    "git credential",
+    "credential-helper"
+   ],
+   "claim": "credential helper in English"
+  },
+  {
+   "cite": "PGBR p.334",
+   "contains": [
+    "Customizing Git",
+    "As you briefly saw in Come"
+   ],
+   "claim": "ch. 8 in English; PT xref \"Começando\""
+  },
+  {
+   "cite": "PGBR p.344",
+   "contains": [
+    "Git Attributes",
+    "Binary Files"
+   ],
+   "claim": "attributes in English"
+  },
+  {
+   "cite": "PGBR p.348",
+   "contains": [
+    "smudge",
+    "filters"
+   ],
+   "claim": "smudge/clean filters in English"
+  },
+  {
+   "cite": "PGBR p.351",
+   "contains": [
+    "export-subst",
+    "git archive"
+   ],
+   "claim": "export-subst in English"
+  },
+  {
+   "cite": "PGBR p.352",
+   "contains": [
+    "Git Hooks",
+    "Installing a Hook"
+   ],
+   "claim": "hooks in English"
+  },
+  {
+   "cite": "PGBR p.355",
+   "contains": [
+    "pre-receive",
+    "update"
+   ],
+   "claim": "server hooks in English"
+  },
+  {
+   "cite": "PGBR p.365",
+   "contains": [
+    "Git and Other Systems",
+    "Git and Subversion"
+   ],
+   "claim": "ch. 9 in English"
+  },
+  {
+   "cite": "PGBR p.376",
+   "contains": [
+    "git-remote-hg",
+    "remote helper"
+   ],
+   "claim": "Mercurial helper in English"
+  },
+  {
+   "cite": "PGBR p.386",
+   "contains": [
+    "Git Fusion",
+    "Git and Perforce"
+   ],
+   "claim": "Perforce in English"
+  },
+  {
+   "cite": "PGBR p.394",
+   "contains": [
+    "git p4 clone",
+    "Git-p4"
+   ],
+   "claim": "git-p4 in English"
+  },
+  {
+   "cite": "PGBR p.411",
+   "contains": [
+    "A Custom Importer"
+   ],
+   "claim": "section A Custom Importer in English"
+  },
+  {
+   "cite": "PGBR p.419",
+   "contains": [
+    "git reset --hard master",
+    "Summary"
+   ],
+   "claim": "end of ch. 9; last EN text before ch. 10"
+  },
+  {
+   "cite": "PGBR p.420",
+   "contains": [
+    "Funcionamento Interno do Git",
+    "Encanamento e Porcelana"
+   ],
+   "claim": "ch. 10 translated; plumbing/porcelain"
+  },
+  {
+   "cite": "PGBR p.420",
+   "contains": [
+    "plumbing",
+    "porcelain"
+   ],
+   "claim": "EN terms in parentheses"
+  },
+  {
+   "cite": "PGBR p.421",
+   "contains": [
+    "Objetos do Git",
+    "hooks/"
+   ],
+   "claim": "section and hooks directory"
+  },
+  {
+   "cite": "PGBR p.421",
+   "contains": [
+    "stage",
+    "banco de dados"
+   ],
+   "claim": "\"area de stage\"; database"
+  },
+  {
+   "cite": "PGBR p.422",
+   "contains": [
+    "hash-object",
+    "cat-file"
+   ],
+   "claim": "plumbing commands in the PT text"
+  },
+  {
+   "cite": "PGBR p.423",
+   "contains": [
+    "Objetos Tree",
+    "master^{tree}"
+   ],
+   "claim": "tree object"
+  },
+  {
+   "cite": "PGBR p.424",
+   "contains": [
+    "update-index",
+    "--cacheinfo"
+   ],
+   "claim": "update-index; Figure 148 caption translated"
+  },
+  {
+   "cite": "PGBR p.425",
+   "contains": [
+    "write-tree",
+    "read-tree"
+   ],
+   "claim": "write-tree and read-tree"
+  },
+  {
+   "cite": "PGBR p.426",
+   "contains": [
+    "Objetos Commit",
+    "Figura 149"
+   ],
+   "claim": "section Commit Objects"
+  },
+  {
+   "cite": "PGBR p.427",
+   "contains": [
+    "commit-tree",
+    "author"
+   ],
+   "claim": "commit-tree"
+  },
+  {
+   "cite": "PGBR p.429",
+   "contains": [
+    "Armazenamento de Objetos",
+    "Figura 150"
+   ],
+   "claim": "storage section"
+  },
+  {
+   "cite": "PGBR p.430",
+   "contains": [
+    "ncias do Git",
+    "Zlib::Deflate"
+   ],
+   "claim": "section Git References"
+  },
+  {
+   "cite": "PGBR p.431",
+   "contains": [
+    "update-ref",
+    "refs/heads"
+   ],
+   "claim": "update-ref and refs/heads"
+  },
+  {
+   "cite": "PGBR p.432",
+   "contains": [
+    "symbolic-ref",
+    "Figura 151. Git directory"
+   ],
+   "claim": "HEAD and EN caption"
+  },
+  {
+   "cite": "PGBR p.433",
+   "contains": [
+    "Tags",
+    "anotada"
+   ],
+   "claim": "annotated/lightweight tag in PT"
+  },
+  {
+   "cite": "PGBR p.434",
+   "contains": [
+    "refs/remotes",
+    "Remotes se diferenciam"
+   ],
+   "claim": "remotes are read-only"
+  },
+  {
+   "cite": "PGBR p.435",
+   "contains": [
+    "Packfiles",
+    "zlib"
+   ],
+   "claim": "packfiles: body in English"
+  },
+  {
+   "cite": "PGBR p.436",
+   "contains": [
+    "packfile",
+    "git gc"
+   ],
+   "claim": "packfile and gc in English"
+  },
+  {
+   "cite": "PGBR p.437",
+   "contains": [
+    "dangling",
+    "verify-pack"
+   ],
+   "claim": "dangling in English"
+  },
+  {
+   "cite": "PGBR p.438",
+   "contains": [
+    "The Refspec",
+    "refspec"
+   ],
+   "claim": "refspec in English"
+  },
+  {
+   "cite": "PGBR p.440",
+   "contains": [
+    "Pushing Refspecs",
+    "qa/"
+   ],
+   "claim": "push refspecs in English"
+  },
+  {
+   "cite": "PGBR p.441",
+   "contains": [
+    "The Dumb Protocol",
+    "Transfer Protocols"
+   ],
+   "claim": "dumb protocol in English"
+  },
+  {
+   "cite": "PGBR p.443",
+   "contains": [
+    "The Smart Protocol",
+    "receive-pack"
+   ],
+   "claim": "smart protocol in English"
+  },
+  {
+   "cite": "PGBR p.446",
+   "contains": [
+    "Maintenance and Data Recovery",
+    "git gc --auto"
+   ],
+   "claim": "maintenance in English"
+  },
+  {
+   "cite": "PGBR p.447",
+   "contains": [
+    "packed-refs",
+    "Data Recovery"
+   ],
+   "claim": "packed-refs in English"
+  },
+  {
+   "cite": "PGBR p.448",
+   "contains": [
+    "git reflog",
+    "git log -g"
+   ],
+   "claim": "reflog in English; xref ncias do Git"
+  },
+  {
+   "cite": "PGBR p.449",
+   "contains": [
+    "git fsck",
+    "Removing Objects"
+   ],
+   "claim": "fsck in English"
+  },
+  {
+   "cite": "PGBR p.452",
+   "contains": [
+    "git count-objects",
+    "refs/original"
+   ],
+   "claim": "object count"
+  },
+  {
+   "cite": "PGBR p.453",
+   "contains": [
+    "GIT_EXEC_PATH",
+    "Comportamentos globais"
+   ],
+   "claim": "environment variables PT; Repository Locations EN"
+  },
+  {
+   "cite": "PGBR p.454",
+   "contains": [
+    "Pathspecss",
+    "GIT_LITERAL_PATHSPECS"
+   ],
+   "claim": "title with a typo"
+  },
+  {
+   "cite": "PGBR p.455",
+   "contains": [
+    "Rede e Internet",
+    "Diffing and Merging"
+   ],
+   "claim": "PT and EN on the same page"
+  },
+  {
+   "cite": "PGBR p.456",
+   "contains": [
+    "GIT_TRACE",
+    "Debugging"
+   ],
+   "claim": "debug variables in English"
+  },
+  {
+   "cite": "PGBR p.458",
+   "contains": [
+    "GIT_REFLOG_ACTION",
+    "encanamento"
+   ],
+   "claim": "Summary PT; Miscellaneous EN"
+  },
+  {
+   "cite": "PGBR p.459",
+   "contains": [
+    "VCS",
+    "sistema de arquivos"
+   ],
+   "claim": "last PT page of ch. 10"
+  },
+  {
+   "cite": "PGBR p.460",
+   "contains": [
+    "Graphical Interfaces",
+    "gitk"
+   ],
+   "claim": "App. A: intro PT, GUIs in English"
+  },
+  {
+   "cite": "PGBR p.462",
+   "contains": [
+    "GitHub for Mac and Windows",
+    "Figura 153"
+   ],
+   "claim": "caption labeled in PT, text EN"
+  },
+  {
+   "cite": "PGBR p.467",
+   "contains": [
+    "Git in Bash",
+    "Git in Eclipse"
+   ],
+   "claim": "EN sections of App. A"
+  },
+  {
+   "cite": "PGBR p.470",
+   "contains": [
+    "Git in Powershell",
+    "posh-git"
+   ],
+   "claim": "powershell in English"
+  },
+  {
+   "cite": "PGBR p.471",
+   "contains": [
+    "Resumo",
+    "cotidiando"
+   ],
+   "claim": "Summary PT (vs Sumario 458); spelling error"
+  },
+  {
+   "cite": "PGBR p.472",
+   "contains": [
+    "Embedding Git in your",
+    "Libgit2"
+   ],
+   "claim": "mixed title of App. B"
+  },
+  {
+   "cite": "PGBR p.477",
+   "contains": [
+    "JGit",
+    "Getting Set Up"
+   ],
+   "claim": "JGit in English"
+  },
+  {
+   "cite": "PGBR p.482",
+   "contains": [
+    "Setup and Config",
+    "git help"
+   ],
+   "claim": "App. C in English"
+  },
+  {
+   "cite": "PGBR p.489",
+   "contains": [
+    "Rebase quando voc",
+    "Buscando e Obtendo de"
+   ],
+   "claim": "PT xrefs with the error \"vocês faz\""
+  },
+  {
+   "cite": "PGBR p.495",
+   "contains": [
+    "Plumbing Commands",
+    "Interno do"
+   ],
+   "claim": "App. C ends; PT xref"
+  },
+  {
+   "cite": "PGBR p.496",
+   "contains": [
+    "Index",
+    "Chaves SSH"
+   ],
+   "claim": "EN index with a PT entry"
+  },
+  {
+   "cite": "PGBR p.500",
+   "contains": [
+    "Notas de Tradu",
+    "status.json"
+   ],
+   "claim": "boilerplate text of the translation project"
+  },
+  {
+   "cite": "PGBR p.312",
+   "contains": [
+    "git submodule foreach",
+    "Entering"
+   ],
+   "claim": "foreach in submodules, example with stash"
+  },
+  {
+   "cite": "PGBR p.287",
+   "contains": [
+    "read-tree",
+    "Funcionamento"
+   ],
+   "claim": "read-tree refers to the chapter Git Internals"
+  },
+  {
+   "cite": "PGBR p.412",
+   "contains": [
+    "git fast-import",
+    "fast-import"
+   ],
+   "claim": "custom importer uses fast-import"
+  },
+  {
+   "cite": "PGEN p.254",
+   "contains": [
+    "reset HEAD^"
+   ],
+   "claim": "split: reset HEAD^ at the commit marked edit"
+  },
+  {
+   "cite": "PGEN p.267",
+   "contains": [
+    "--soft"
+   ],
+   "claim": "reset --soft moves the branch"
+  },
+  {
+   "cite": "PGEN p.303",
+   "contains": [
+    "bisect reset"
+   ],
+   "claim": "bisect reset at the end"
+  },
+  {
+   "cite": "PGEN p.304",
+   "contains": [
+    "bisect run"
+   ],
+   "claim": "bisect run script"
+  },
+  {
+   "cite": "PGEN p.316",
+   "contains": [
+    "--recurse-submodules=check"
+   ],
+   "claim": "push --recurse-submodules=check"
+  },
+  {
+   "cite": "PGEN p.323",
+   "contains": [
+    "recurse-submodules"
+   ],
+   "claim": "checkout --recurse-submodules"
+  },
+  {
+   "cite": "PGEN p.136",
+   "contains": [
+    "--check"
+   ],
+   "claim": "git diff --check"
+  },
+  {
+   "cite": "PGEN p.53",
+   "contains": [
+    "git add *"
+   ],
+   "claim": "git add * stages too much"
+  },
+  {
+   "cite": "PGEN p.231",
+   "contains": [
+    "--not"
+   ],
+   "claim": "ranges with --not"
+  },
+  {
+   "cite": "PGEN p.231",
+   "contains": [
+    "--left-right"
+   ],
+   "claim": "triple dot --left-right"
+  },
+  {
+   "cite": "PGEN p.87",
+   "contains": [
+    "--move"
+   ],
+   "claim": "branch --move"
+  },
+  {
+   "cite": "PGEN p.86",
+   "contains": [
+    "--merged"
+   ],
+   "claim": "branch --merged"
+  },
+  {
+   "cite": "PGEN p.100",
+   "contains": [
+    "--delete"
+   ],
+   "claim": "push --delete"
+  },
+  {
+   "cite": "PGEN p.279",
+   "contains": [
+    "--abort"
+   ],
+   "claim": "merge --abort"
+  },
+  {
+   "cite": "PGEN p.252",
+   "contains": [
+    "--continue"
+   ],
+   "claim": "rebase --continue"
+  },
+  {
+   "cite": "PGEN p.452",
+   "contains": [
+    "prune --expire now"
+   ],
+   "claim": "prune --expire now"
+  },
+  {
+   "cite": "PGEN p.361",
+   "contains": [
+    "--no-verify"
+   ],
+   "claim": "client hooks can be bypassed"
+  },
+  {
+   "cite": "PGEN p.352",
+   "contains": [
+    "denyNonFastForwards"
+   ],
+   "claim": "receive.denyNonFastForwards"
+  },
+  {
+   "cite": "PGEN p.350",
+   "contains": [
+    "autocrlf"
+   ],
+   "claim": "core.autocrlf"
+  },
+  {
+   "cite": "PGEN p.416",
+   "contains": [
+    "binmode"
+   ],
+   "claim": "fast-import binmode"
+  },
+  {
+   "cite": "PGEN p.446",
+   "contains": [
+    "7,000"
+   ],
+   "claim": "auto gc 7,000 loose objects"
+  },
+  {
+   "cite": "PGEN p.98",
+   "contains": [
+    "credential.helper"
+   ],
+   "claim": "credential.helper cache"
+  },
+  {
+   "cite": "PGEN p.158",
+   "contains": [
+    "git am"
+   ],
+   "claim": "git am"
+  },
+  {
+   "cite": "PGEN p.157",
+   "contains": [
+    "git apply"
+   ],
+   "claim": "git apply"
+  },
+  {
+   "cite": "PGEN p.162",
+   "contains": [
+    "...contrib"
+   ],
+   "claim": "diff master...contrib"
+  },
+  {
+   "cite": "PGEN p.241",
+   "contains": [
+    "-x"
+   ],
+   "claim": "clean -x"
+  },
+  {
+   "cite": "PGEN p.250",
+   "contains": [
+    "--no-edit"
+   ],
+   "claim": "amend --no-edit"
+  },
+  {
+   "cite": "PGEN p.256",
+   "contains": [
+    "tree-filter"
+   ],
+   "claim": "filter-branch tree-filter"
+  },
+  {
+   "cite": "PGEN p.495",
+   "contains": [
+    "git revert",
+    "reverse"
+   ],
+   "claim": "revert as reverse cherry-pick (Appendix C)"
+  },
+  {
+   "cite": "PGEN p.226",
+   "contains": [
+    "SHA256"
+   ],
+   "claim": "note: Git is moving to SHA256"
+  },
+  {
+   "cite": "PGEN p.76",
+   "contains": [
+    "git switch"
+   ],
+   "claim": "git switch (box)"
+  },
+  {
+   "cite": "PGEN p.22",
+   "contains": [
+    "modified",
+    "staged",
+    "committed"
+   ],
+   "claim": "three states"
+  },
+  {
+   "cite": "PGEN p.269",
+   "contains": [
+    "only way to make the reset command dangerous"
+   ],
+   "claim": "reset --hard is the only dangerous form"
+  },
+  {
+   "cite": "PGEN p.106",
+   "contains": [
+    "Do not rebase commits that exist outside your repository"
+   ],
+   "claim": "golden rule of rebase"
+  },
+  {
+   "cite": "PGEN p.109",
+   "contains": [
+    "git pull --rebase"
+   ],
+   "claim": "pull --rebase as a way out"
+  },
+  {
+   "cite": "PGEN p.289",
+   "contains": [
+    "git revert -m 1 HEAD"
+   ],
+   "claim": "revert -m 1 HEAD"
+  },
+  {
+   "cite": "PGEN p.290",
+   "contains": [
+    "Already up-to-date"
+   ],
+   "claim": "re-merge after revert"
+  },
+  {
+   "cite": "PGEN p.312",
+   "contains": [
+    "git submodule update --init --recursive"
+   ],
+   "claim": "submodule update --init --recursive"
+  },
+  {
+   "cite": "PGEN p.363",
+   "contains": [
+    "pre-receive"
+   ],
+   "claim": "server hooks"
+  },
+  {
+   "cite": "PGEN p.188",
+   "contains": [
+    "force push"
+   ],
+   "claim": "do not force push on an open PR"
+  },
+  {
+   "cite": "PGEN p.448",
+   "contains": [
+    "git branch recover-branch"
+   ],
+   "claim": "recover-branch"
+  },
+  {
+   "cite": "PGEN p.449",
+   "contains": [
+    "git fsck --full"
+   ],
+   "claim": "fsck --full"
+  },
+  {
+   "cite": "PGEN p.452",
+   "contains": [
+    ".git/refs/original"
+   ],
+   "claim": "clean refs/original"
+  },
+  {
+   "cite": "PGEN p.255",
+   "contains": [
+    "no longer the recommended"
+   ],
+   "claim": "filter-branch not recommended"
+  },
+  {
+   "cite": "PGEN p.241",
+   "contains": [
+    "git clean -d -n"
+   ],
+   "claim": "clean dry run"
+  },
+  {
+   "cite": "PGEN p.239",
+   "contains": [
+    "untracked"
+   ],
+   "claim": "stash and untracked"
+  },
+  {
+   "cite": "PGEN p.87",
+   "contains": [
+    "git branch --move master main"
+   ],
+   "claim": "rename master"
+  },
+  {
+   "cite": "PGEN p.88",
+   "contains": [
+    "git push origin --delete master"
+   ],
+   "claim": "delete the old master"
+  },
+  {
+   "cite": "PGEN p.65",
+   "contains": [
+    "--follow-tags"
+   ],
+   "claim": "follow-tags"
+  },
+  {
+   "cite": "PGEN p.137",
+   "contains": [
+    "imperative"
+   ],
+   "claim": "imperative"
+  },
+  {
+   "cite": "PGEN p.124",
+   "contains": [
+    "git-http-backend"
+   ],
+   "claim": "git-http-backend"
+  },
+  {
+   "cite": "PGEN p.316",
+   "contains": [
+    "push --recurse-submodules"
+   ],
+   "claim": "push --recurse-submodules"
+  },
+  {
+   "cite": "PGEN p.107",
+   "contains": [
+    "--force"
+   ],
+   "claim": "force push cited"
+  },
+  {
+   "cite": "PGEN p.152",
+   "contains": [
+    "push -f"
+   ],
+   "claim": "push -f on the fork"
+  },
+  {
+   "cite": "PGBR p.143",
+   "contains": [
+    "rebase interativo"
+   ],
+   "claim": "only occurrence of interactive rebase in PT-BR"
+  },
+  {
+   "cite": "PGBR p.120",
+   "contains": [
+    "gancho"
+   ],
+   "claim": "hook only in GitLab"
+  },
+  {
+   "cite": "PGBR p.425",
+   "contains": [
+    "submódulo"
+   ],
+   "claim": "submodule only in passing"
+  },
+  {
+   "cite": "PGEN p.336",
+   "contains": [
+    "cleartext"
+   ],
+   "claim": "credential store in plain text"
+  },
+  {
+   "cite": "PGEN p.427",
+   "contains": [
+    "commit-tree"
+   ],
+   "claim": "commit-tree"
+  },
+  {
+   "cite": "PGEN p.236",
+   "contains": [
+    "add -p"
+   ],
+   "claim": "add -p"
+  },
+  {
+   "cite": "PGEN p.370",
+   "contains": [
+    "git diff-index --cached",
+    "ACL"
+   ],
+   "claim": "pre-commit with client-side ACL"
+  },
+  {
+   "cite": "PGEN p.249",
+   "contains": [
+    "push"
+   ],
+   "claim": "rule: do not push rewritten history"
+  },
+  {
+   "cite": "PGEN p.490",
+   "contains": [
+    "checkout"
+   ],
+   "claim": "Appendix C still uses checkout"
+  }
+ ],
+ "negatives": [
+  {
+   "scope": "PGEN",
+   "absent": [
+    "force-with-lease"
+   ],
+   "claim": "The book does not teach git push --force-with-lease (only --force/-f)"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "object-format"
+   ],
+   "claim": "The book does not teach SHA-256 repositories (object-format)"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "autosquash"
+   ],
+   "claim": "The book does not cover rebase --autosquash"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "--fixup"
+   ],
+   "claim": "The book does not cover commit --fixup"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "git flow"
+   ],
+   "claim": "The book does not cover git-flow"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "Conventional Commits"
+   ],
+   "claim": "The book does not cover Conventional Commits"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "GitHub Actions"
+   ],
+   "claim": "The book does not cover GitHub Actions"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "Git LFS"
+   ],
+   "claim": "The book does not cover Git LFS"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "partial clone"
+   ],
+   "claim": "The book does not cover partial clone"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "--depth"
+   ],
+   "claim": "The book does not cover clone --depth (shallow)"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "reflog expire"
+   ],
+   "claim": "The book does not cover git reflog expire"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "--no-ff"
+   ],
+   "claim": "The book does not cover merge --no-ff"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "--ff-only"
+   ],
+   "claim": "The book does not cover merge --ff-only"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "reset --keep"
+   ],
+   "claim": "The book does not cover reset --keep"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "restore --source"
+   ],
+   "claim": "The book does not cover restore --source"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "ORIG_HEAD"
+   ],
+   "claim": "The book does not mention ORIG_HEAD"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "git maintenance"
+   ],
+   "claim": "The book does not cover git maintenance"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "commit-graph"
+   ],
+   "claim": "The book does not cover commit-graph"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "CODEOWNERS"
+   ],
+   "claim": "The book does not mention CODEOWNERS"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "branch protection"
+   ],
+   "claim": "The book does not mention branch protection"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "Gerrit"
+   ],
+   "claim": "The book does not cover Gerrit"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "bisect skip"
+   ],
+   "claim": "The book does not cover git bisect skip"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "Dependabot"
+   ],
+   "claim": "The book does not mention Dependabot"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "git worktree"
+   ],
+   "claim": "The book does not cover the git worktree command"
+  },
+  {
+   "scope": "PGEN",
+   "absent": [
+    "git absorb"
+   ],
+   "claim": "The book does not mention git absorb"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "git switch"
+   ],
+   "claim": "PT-BR has no git switch"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "git restore"
+   ],
+   "claim": "PT-BR has no git restore"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "filter-repo"
+   ],
+   "claim": "PT-BR does not cite git-filter-repo (the EN cites it on p.255)"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "init.defaultBranch"
+   ],
+   "claim": "PT-BR has no init.defaultBranch (the EN has it on p.29)"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "force-with-lease"
+   ],
+   "claim": "PT-BR does not teach --force-with-lease"
+  },
+  {
+   "scope": "PGBR",
+   "absent": [
+    "SHA256"
+   ],
+   "claim": "PT-BR does not mention SHA256 (the EN cites it on p.226)"
+  }
+ ]
+}

@@ -1,0 +1,1030 @@
+{
+ "_nota": "Pages = PDF. Generated and checked against the extracted text; see references/INDEX.md. Portuguese keywords are kept on purpose so Portuguese queries still match.",
+ "entries": [
+  {
+   "id": "sweg-programming-vs-engineering",
+   "book": "SWE-G",
+   "pages": "13-14",
+   "chapter": "Ch. 1",
+   "title": "Programming vs software engineering",
+   "keywords": [
+    "programming",
+    "engineering",
+    "time",
+    "scale",
+    "trade-offs",
+    "sustainability",
+    "sustentabilidade",
+    "tempo",
+    "escala",
+    "programacao x engenharia de software"
+   ],
+   "summary": "Three differences: time, scale and trade-offs; the phrase 'programming integrated over time' is an internal Google saying; sustainability is the ability to react to valuable changes.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-hyrum",
+   "book": "SWE-G",
+   "pages": "15-17",
+   "chapter": "Ch. 1",
+   "title": "Hyrum's Law",
+   "keywords": [
+    "hyrum",
+    "observable behavior",
+    "implicit dependencies",
+    "hash ordering",
+    "comportamento observavel",
+    "dependencias implicitas",
+    "lei de hyrum"
+   ],
+   "summary": "With enough users, every observable behavior is depended on by somebody; hash iteration order example; it can be mitigated, not eradicated.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-beyonce",
+   "book": "SWE-G",
+   "pages": "19; 157",
+   "chapter": "Ch. 1 e 11",
+   "title": "Beyonce Rule",
+   "keywords": [
+    "beyonce",
+    "ci",
+    "test",
+    "infrastructure",
+    "regra da beyonce"
+   ],
+   "summary": "If the infrastructure breaks something that CI did not test, the change is not to blame; 'test everything you do not want to break'.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-churn-rule",
+   "book": "SWE-G",
+   "pages": "19",
+   "chapter": "Ch. 1",
+   "title": "Churn Rule",
+   "keywords": [
+    "churn",
+    "migration",
+    "infrastructure team",
+    "regra do churn"
+   ],
+   "summary": "Since 2012 the infrastructure team migrates its users or upgrades in a compatible way; specialists scale better.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-shift-left",
+   "book": "SWE-G",
+   "pages": "21",
+   "chapter": "Ch. 1",
+   "title": "Shift left",
+   "keywords": [
+    "shift left",
+    "cost of bugs",
+    "defense in depth"
+   ],
+   "summary": "Finding problems earlier in the workflow costs less; defense in depth.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-costs",
+   "book": "SWE-G",
+   "pages": "21-25",
+   "chapter": "Ch. 1",
+   "title": "Costs and decisions",
+   "keywords": [
+    "cost",
+    "trade-off",
+    "data-driven",
+    "decision",
+    "custo",
+    "decisao",
+    "custos e decisoes"
+   ],
+   "summary": "Cost includes financial, resource, personnel, transaction, opportunity and societal costs; decisions with an explicit rationale; revisit decisions when the data changes.",
+   "ref": "engenharia-de-software-ao-longo-do-tempo.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-genius-myth",
+   "book": "SWE-G",
+   "pages": "28-33",
+   "chapter": "Ch. 2",
+   "title": "Genius myth and hiding code",
+   "keywords": [
+    "genius",
+    "hiding",
+    "bus factor",
+    "team",
+    "genio",
+    "esconder",
+    "mito do genio e esconder codigo"
+   ],
+   "summary": "Engineering is a team effort; hiding code increases risk; bus factor.",
+   "ref": "cultura-humildade-respeito-e-confianca-hrt.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-three-pillars",
+   "book": "SWE-G",
+   "pages": "33-38",
+   "chapter": "Ch. 2",
+   "title": "Humility, respect and trust",
+   "keywords": [
+    "humility",
+    "respect",
+    "trust",
+    "hrt",
+    "ego",
+    "criticism",
+    "humildade",
+    "respeito",
+    "confianca",
+    "humildade, respeito e confianca"
+   ],
+   "summary": "Three pillars: humility, respect and trust; 'you are not your code'; the acronym HRT does not appear in the PDF.",
+   "ref": "cultura-humildade-respeito-e-confianca-hrt.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-postmortem-culture",
+   "book": "SWE-G",
+   "pages": "36",
+   "chapter": "Ch. 2",
+   "title": "Blameless postmortem",
+   "keywords": [
+    "postmortem",
+    "blameless",
+    "root cause",
+    "sem culpa",
+    "postmortem sem culpa"
+   ],
+   "summary": "A postmortem documents root cause, impact, actions and lessons; it is not a list of culprits.",
+   "ref": "cultura-humildade-respeito-e-confianca-hrt.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-knowledge-sharing",
+   "book": "SWE-G",
+   "pages": "40-56",
+   "chapter": "Ch. 3",
+   "title": "Knowledge sharing",
+   "keywords": [
+    "knowledge sharing",
+    "psychological safety",
+    "readability",
+    "haunted graveyards",
+    "parroting",
+    "seguranca psicologica",
+    "compartilhamento de conhecimento"
+   ],
+   "summary": "Psychological safety as the foundation; challenges (information islands, SPOF, parroting, haunted graveyards); Readability as mentoring through code review (p.52-54).",
+   "ref": "cultura-humildade-respeito-e-confianca-hrt.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-leadership",
+   "book": "SWE-G",
+   "pages": "65-81",
+   "chapter": "Ch. 5",
+   "title": "Manager, tech lead and servant leadership",
+   "keywords": [
+    "servant leadership",
+    "manager",
+    "tech lead",
+    "antipatterns",
+    "micromanagement",
+    "lideranca servidora",
+    "gerente, tech lead e lideranca servidora"
+   ],
+   "summary": "The manager leads people; the tech lead leads technology; manager antipatterns (p.70-72); positive patterns (p.73-78).",
+   "ref": "lideranca-tecnica-e-gestao-em-escala.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-always",
+   "book": "SWE-G",
+   "pages": "83-93",
+   "chapter": "Ch. 6",
+   "title": "The three Always of leadership",
+   "keywords": [
+    "always be deciding",
+    "always be leaving",
+    "always be scaling",
+    "leading at scale",
+    "tres always da lideranca"
+   ],
+   "summary": "Always Be Deciding, Always Be Leaving, Always Be Scaling.",
+   "ref": "lideranca-tecnica-e-gestao-em-escala.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-gsm",
+   "book": "SWE-G",
+   "pages": "94-103",
+   "chapter": "Ch. 7",
+   "title": "GSM and QUANTS",
+   "keywords": [
+    "gsm",
+    "goals signals metrics",
+    "quants",
+    "productivity",
+    "metrics",
+    "produtividade",
+    "metricas",
+    "gsm e quants"
+   ],
+   "summary": "Goals/Signals/Metrics and the five QUANTS components; before measuring, ask whether the result is actionable.",
+   "ref": "lideranca-tecnica-e-gestao-em-escala.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-style-rules",
+   "book": "SWE-G",
+   "pages": "105-111",
+   "chapter": "Ch. 8",
+   "title": "Style rules and guides",
+   "keywords": [
+    "style guide",
+    "rules",
+    "guidance",
+    "consistency",
+    "pull their weight",
+    "readers",
+    "estilo",
+    "regras",
+    "regras e guias de estilo"
+   ],
+   "summary": "Rules are law; guidance is recommendation; five principles (worth the cost, reader, consistency, avoid dangerous constructs, practicalities).",
+   "ref": "guias-de-estilo-e-regras-de-codificacao.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-style-enforcement",
+   "book": "SWE-G",
+   "pages": "113-119",
+   "chapter": "Ch. 8",
+   "title": "Rule automation and formatters",
+   "keywords": [
+    "clang-format",
+    "gofmt",
+    "buildifier",
+    "presubmit formatter",
+    "error prone",
+    "clang-tidy",
+    "formatador",
+    "automacao de regras e formatadores"
+   ],
+   "summary": "Prefer automation; formatters via presubmit; about 90% of C++ rules checkable (2018 estimate); no automatic rejection by change size (p.117).",
+   "ref": "guias-de-estilo-e-regras-de-codificacao.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-review-flow",
+   "book": "SWE-G",
+   "pages": "121-124",
+   "chapter": "Ch. 9",
+   "title": "Code review flow, LGTM, owners and readability",
+   "keywords": [
+    "code review",
+    "lgtm",
+    "owners",
+    "readability",
+    "three approvals",
+    "tres aprovacoes",
+    "revisao",
+    "fluxo de code review, lgtm, owners e readability"
+   ],
+   "summary": "Three approval aspects (LGTM, owner, readability) that may fall on a single person; one LGTM by default.",
+   "ref": "code-review-e-o-processo-de-critique.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-small-changes",
+   "book": "SWE-G",
+   "pages": "129",
+   "chapter": "Ch. 9",
+   "title": "Small changes",
+   "keywords": [
+    "small changes",
+    "200 lines",
+    "cl size",
+    "small cl",
+    "mudancas pequenas",
+    "tamanho"
+   ],
+   "summary": "'Small' is around 200 lines; initial feedback in about a day; about 35% of changes touch a single file.",
+   "ref": "code-review-e-o-processo-de-critique.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-review-practices",
+   "book": "SWE-G",
+   "pages": "128-132",
+   "chapter": "Ch. 9",
+   "title": "Code review good practices",
+   "keywords": [
+    "24 hours",
+    "ptal",
+    "description",
+    "one reviewer",
+    "presubmit",
+    "descricao",
+    "boas praticas de revisao"
+   ],
+   "summary": "24 business hours for feedback; description with what and why; one reviewer; types of review.",
+   "ref": "code-review-e-o-processo-de-critique.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-critique",
+   "book": "SWE-G",
+   "pages": "279-288",
+   "chapter": "Ch. 19",
+   "title": "Critique",
+   "keywords": [
+    "critique",
+    "attention set",
+    "scoring",
+    "lgtm",
+    "approval",
+    "unresolved comments",
+    "gerrit"
+   ],
+   "summary": "Simplicity, trust, generic communication and integration; LGTM, Approval and unresolved comments scoring.",
+   "ref": "code-review-e-o-processo-de-critique.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-test-size-scope",
+   "book": "SWE-G",
+   "pages": "153-156",
+   "chapter": "Ch. 11",
+   "title": "Test size and scope",
+   "keywords": [
+    "test size",
+    "small",
+    "medium",
+    "large",
+    "scope",
+    "hermetic",
+    "tamanho",
+    "escopo",
+    "hermetico",
+    "tamanho e escopo de testes"
+   ],
+   "summary": "Size (resources) and scope (code verified) are distinct axes; small runs in one process, medium on one machine.",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-pyramid",
+   "book": "SWE-G",
+   "pages": "156-157; 165",
+   "chapter": "Ch. 11 e 12",
+   "title": "80/15/5 test pyramid",
+   "keywords": [
+    "pyramid",
+    "80%",
+    "15%",
+    "5%",
+    "ice cream cone",
+    "hourglass",
+    "piramide",
+    "80/15/5",
+    "piramide de testes 80/15/5"
+   ],
+   "summary": "Approximate reference: 80% unit, 15% integration, 5% end-to-end (p.156); 80/20 rule on p.165. There is NO 70/20/10 in the book.",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-flaky",
+   "book": "SWE-G",
+   "pages": "155",
+   "chapter": "Ch. 11",
+   "title": "Flakiness",
+   "keywords": [
+    "flaky",
+    "flakiness",
+    "0.15%",
+    "nondeterminism",
+    "rerun",
+    "teste intermitente"
+   ],
+   "summary": "Near 1% flakiness tests lose their value; Google's rate is around 0.15%.",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-coverage",
+   "book": "SWE-G",
+   "pages": "157-158",
+   "chapter": "Ch. 11",
+   "title": "Code coverage",
+   "keywords": [
+    "code coverage",
+    "coverage",
+    "80% bar",
+    "cobertura",
+    "cobertura de codigo"
+   ],
+   "summary": "Coverage measures execution, not verification; an 80% target tends to become a ceiling.",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-unit-practices",
+   "book": "SWE-G",
+   "pages": "166-183",
+   "chapter": "Ch. 12",
+   "title": "Sustainable unit tests",
+   "keywords": [
+    "unit testing",
+    "brittle",
+    "public api",
+    "state testing",
+    "behaviors",
+    "damp",
+    "dry",
+    "given when then",
+    "teste de unidade",
+    "testes de unidade sustentaveis"
+   ],
+   "summary": "Unchanging tests; public API; state instead of interactions; behaviors; no logic; DAMP over DRY.",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-larger-tests",
+   "book": "SWE-G",
+   "pages": "202-221",
+   "chapter": "Ch. 14",
+   "title": "Larger tests (overview)",
+   "keywords": [
+    "larger tests",
+    "sut",
+    "end-to-end",
+    "webdriver torso",
+    "dirt",
+    "testes maiores",
+    "testes maiores (visao geral)"
+   ],
+   "summary": "SUT, data, action and verification; configuration as the main cause of large outages (p.204).",
+   "ref": "filosofia-e-piramide-de-testes-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-doubles",
+   "book": "SWE-G",
+   "pages": "184-200",
+   "chapter": "Ch. 13",
+   "title": "Test doubles",
+   "keywords": [
+    "test double",
+    "fake",
+    "stub",
+    "mock",
+    "interaction testing",
+    "real implementation",
+    "classical",
+    "dublê",
+    "dubles"
+   ],
+   "summary": "Prefer the real implementation; a fake is ideal when the real one will not do; stubbing and interaction testing with caution.",
+   "ref": "test-doubles-fakes-vs-mocks-e-anti-padroes.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-fakes-owner",
+   "book": "SWE-G",
+   "pages": "193-194",
+   "chapter": "Ch. 13",
+   "title": "Fakes: owner and fidelity",
+   "keywords": [
+    "fake owner",
+    "contract tests",
+    "fidelity",
+    "fakes",
+    "fakes: dono e fidelidade"
+   ],
+   "summary": "The team that owns the real implementation should write and maintain the fake; fakes should have tests (contract tests).",
+   "ref": "test-doubles-fakes-vs-mocks-e-anti-padroes.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-deprecation",
+   "book": "SWE-G",
+   "pages": "222-230",
+   "chapter": "Ch. 15",
+   "title": "Deprecation",
+   "keywords": [
+    "deprecation",
+    "advisory",
+    "compulsory",
+    "backsliding",
+    "alert fatigue",
+    "depreciacao"
+   ],
+   "summary": "Code is a liability; advisory rarely migrates; compulsory needs a deadline, enforcement and a team; actionable and relevant warnings.",
+   "ref": "depreciacao-e-grandes-mudancas-de-codigo-lsc.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-lsc",
+   "book": "SWE-G",
+   "pages": "316-328",
+   "chapter": "Ch. 22",
+   "title": "Large-Scale Changes and Rosie",
+   "keywords": [
+    "lsc",
+    "large-scale change",
+    "rosie",
+    "tap train",
+    "shard",
+    "clangmr",
+    "global approver",
+    "grandes mudancas",
+    "large-scale changes e rosie"
+   ],
+   "summary": "An LSC does not fit in one atomic commit; four phases (authorization, creation, shards, cleanup); Rosie splits the change into shards.",
+   "ref": "depreciacao-e-grandes-mudancas-de-codigo-lsc.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-trunk-vcs",
+   "book": "SWE-G",
+   "pages": "231-245",
+   "chapter": "Ch. 16",
+   "title": "Version control, trunk-based and One-Version",
+   "keywords": [
+    "version control",
+    "trunk-based",
+    "dev branch",
+    "one-version",
+    "monorepo",
+    "piper",
+    "release branch",
+    "diamond",
+    "branch",
+    "controle de versao, trunk-based e one-version"
+   ],
+   "summary": "Trunk-based as a scalable policy; long-lived dev branches discouraged; One-Version Rule; Piper and OWNERS.",
+   "ref": "monorepo-trunk-based-e-sistemas-de-build-hermeticos.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-build",
+   "book": "SWE-G",
+   "pages": "260-277",
+   "chapter": "Ch. 18",
+   "title": "Build systems (tasks vs artifacts)",
+   "keywords": [
+    "build system",
+    "bazel",
+    "blaze",
+    "artifact-based",
+    "task-based",
+    "remote cache",
+    "sandbox",
+    "build",
+    "sistemas de build (tarefas x artefatos)"
+   ],
+   "summary": "Artifact-based systems (Blaze/Bazel) give the 'how' to the system; sandbox, remote cache and external dependencies with hashes.",
+   "ref": "monorepo-trunk-based-e-sistemas-de-build-hermeticos.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-dependency",
+   "book": "SWE-G",
+   "pages": "297-314",
+   "chapter": "Ch. 21",
+   "title": "Dependency management (partial)",
+   "keywords": [
+    "dependency management",
+    "semver",
+    "live at head",
+    "nothing changes",
+    "dependencias",
+    "gestao de dependencias (parcial)"
+   ],
+   "summary": "Models: Nothing Changes, SemVer, bundle and Live at Head; SemVer is a lossy estimate of risk.",
+   "ref": "monorepo-trunk-based-e-sistemas-de-build-hermeticos.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-code-search",
+   "book": "SWE-G",
+   "pages": "247; 258",
+   "chapter": "Ch. 17",
+   "title": "Code Search (overview)",
+   "keywords": [
+    "code search",
+    "kythe",
+    "grok",
+    "code search (visao geral)"
+   ],
+   "summary": "Search and navigation tool integrated with Kythe.",
+   "ref": "monorepo-trunk-based-e-sistemas-de-build-hermeticos.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-static-analysis",
+   "book": "SWE-G",
+   "pages": "289-296",
+   "chapter": "Ch. 20",
+   "title": "Static analysis and Tricorder",
+   "keywords": [
+    "static analysis",
+    "tricorder",
+    "false positive",
+    "effective false positive",
+    "10%",
+    "error prone",
+    "analise estatica",
+    "analise estatica e tricorder"
+   ],
+   "summary": "New checks should have less than 10% effective false positives; overall rate below 5%; integration into review; there is no 1% target in the book.",
+   "ref": "analise-estatica-tricorder-e-ci-cd-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-ci",
+   "book": "SWE-G",
+   "pages": "330-345",
+   "chapter": "Ch. 23",
+   "title": "Continuous integration and TAP",
+   "keywords": [
+    "continuous integration",
+    "tap",
+    "build cop",
+    "presubmit",
+    "post-submit",
+    "rollback",
+    "ci",
+    "integracao continua e tap"
+   ],
+   "summary": "CB, RC, fast presubmit; TAP handles more than 50,000 changes per day and runs more than 4 billion tests per day.",
+   "ref": "analise-estatica-tricorder-e-ci-cd-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "sweg-cd",
+   "book": "SWE-G",
+   "pages": "347-353",
+   "chapter": "Ch. 24",
+   "title": "Continuous delivery",
+   "keywords": [
+    "continuous delivery",
+    "flag guard",
+    "release train",
+    "staged rollout",
+    "faster is safer",
+    "entrega continua"
+   ],
+   "summary": "Faster is safer; flag guarding; release trains; staged rollouts.",
+   "ref": "analise-estatica-tricorder-e-ci-cd-no-google.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "prev-overview",
+   "book": "SWE-PREV",
+   "pages": "3-18",
+   "chapter": "Article",
+   "title": "Henderson's article (2017)",
+   "keywords": [
+    "henderson",
+    "overview",
+    "2017",
+    "repository",
+    "canary",
+    "hermetic build",
+    "size labels",
+    "artigo de henderson (2017)"
+   ],
+   "summary": "Catalog of practices (repository, hermetic build, code review, testing, release with canary, OKRs); 2015 data.",
+   "ref": "visao-geral-henderson-2017-software-engineering-at-google.md",
+   "label": "[from source][DATED]"
+  },
+  {
+   "id": "cc2-complexity",
+   "book": "CC2",
+   "pages": "42-44",
+   "chapter": "Ch. 5",
+   "title": "Managing complexity",
+   "keywords": [
+    "complexity",
+    "primary technical imperative",
+    "essential",
+    "accidental",
+    "brooks",
+    "complexidade",
+    "gerenciar a complexidade"
+   ],
+   "summary": "Managing complexity is the primary technical imperative; essential and accidental difficulties.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-characteristics",
+   "book": "CC2",
+   "pages": "45-46",
+   "chapter": "Ch. 5",
+   "title": "Characteristics of a good design",
+   "keywords": [
+    "minimal complexity",
+    "loose coupling",
+    "fan-in",
+    "fan-out",
+    "extensibility",
+    "leanness",
+    "stratification",
+    "caracteristicas de um bom design"
+   ],
+   "summary": "Eleven internal characteristics; fan-out above about seven suggests complexity.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-info-hiding",
+   "book": "CC2",
+   "pages": "57-64",
+   "chapter": "Ch. 5",
+   "title": "Information hiding",
+   "keywords": [
+    "information hiding",
+    "secrets",
+    "parnas",
+    "likely to change",
+    "ocultamento",
+    "segredos"
+   ],
+   "summary": "Hide design decisions; two categories of secrets; identify areas likely to change.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-coupling",
+   "book": "CC2",
+   "pages": "65-67",
+   "chapter": "Ch. 5",
+   "title": "Coupling",
+   "keywords": [
+    "coupling",
+    "semantic coupling",
+    "size visibility flexibility",
+    "acoplamento"
+   ],
+   "summary": "Size, visibility and flexibility criteria; simple-data, simple-object, object-parameter and semantic types.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-patterns",
+   "book": "CC2",
+   "pages": "68-70",
+   "chapter": "Ch. 5",
+   "title": "Design patterns",
+   "keywords": [
+    "design patterns",
+    "factory method",
+    "feature-itis",
+    "padroes",
+    "padroes de design"
+   ],
+   "summary": "Patterns reduce complexity; risks of forcing the pattern and feature-itis.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-heuristics",
+   "book": "CC2",
+   "pages": "70-73",
+   "chapter": "Ch. 5",
+   "title": "Other heuristics",
+   "keywords": [
+    "cohesion",
+    "hierarchies",
+    "contracts",
+    "design for test",
+    "binding time",
+    "coesao",
+    "outras heuristicas"
+   ],
+   "summary": "Cohesion, hierarchies, contracts, responsibilities, design for test, binding time, central points of control.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "cc2-practices",
+   "book": "CC2",
+   "pages": "75-83",
+   "chapter": "Ch. 5",
+   "title": "Design practices",
+   "keywords": [
+    "iterate",
+    "divide and conquer",
+    "top-down",
+    "bottom-up",
+    "prototyping",
+    "collaborative design",
+    "praticas de design"
+   ],
+   "summary": "Iterate, divide and conquer, top-down and bottom-up, prototyping, collaborative design, how much design to do.",
+   "ref": "construcao-de-software-e-gestao-da-complexidade.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-scope",
+   "book": "97TH",
+   "pages": "9",
+   "chapter": "Preface",
+   "title": "What the 97TH PDF is",
+   "keywords": [
+    "extended",
+    "padalkar",
+    "68 essays",
+    "leanpub",
+    "edicao extended",
+    "o que o pdf 97th e"
+   ],
+   "summary": "Extended edition: 68 additional essays; it does not contain the 97 of the O'Reilly book.",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-leave-better",
+   "book": "97TH",
+   "pages": "90-91",
+   "chapter": "Essay",
+   "title": "Leave It in a Better State (Patrick Kua)",
+   "keywords": [
+    "leave it in a better state",
+    "clean up",
+    "boy scout",
+    "escoteiro",
+    "kua"
+   ],
+   "summary": "Small improvements on every pass; the PDF does not use the expression Boy Scout Rule (cited only in SWE-G p.56, note 7).",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-mutability",
+   "book": "97TH",
+   "pages": "108-109",
+   "chapter": "Essay",
+   "title": "Restrict Mutability of State (Kevlin Henney)",
+   "keywords": [
+    "mutability",
+    "immutability",
+    "state",
+    "thread-safe",
+    "imutabilidade"
+   ],
+   "summary": "Restricting mutability reduces defects; immutable objects are thread-safe.",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-humans",
+   "book": "97TH",
+   "pages": "150-151",
+   "chapter": "Essay",
+   "title": "Write Code for Humans not Machines (Mario Fusco)",
+   "keywords": [
+    "write code for humans",
+    "readability",
+    "15 lines",
+    "3 parameters",
+    "legibilidade"
+   ],
+   "summary": "Clear names; short methods (about 15 lines), one responsibility, about 3 parameters: numbers from the essay's author.",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-implicit-deps",
+   "book": "97TH",
+   "pages": "68-69",
+   "chapter": "Essay",
+   "title": "Implicit Dependencies Are also Dependencies (Klaus Marquardt)",
+   "keywords": [
+    "implicit dependencies",
+    "dependencias implicitas",
+    "marquardt"
+   ],
+   "summary": "More dependencies than decoupling assumes; changing the meaning of a parameter is changing the interface.",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  },
+  {
+   "id": "97th-truck",
+   "book": "97TH",
+   "pages": "146-147",
+   "chapter": "Essay",
+   "title": "Work with a Star and Get Rid of the Truck Factor",
+   "keywords": [
+    "truck factor",
+    "pair programming",
+    "rotation star"
+   ],
+   "summary": "Pair rotation to reduce the truck factor.",
+   "ref": "sabedoria-coletiva-dos-especialistas-97-things.md",
+   "label": "[from source]"
+  }
+ ],
+ "not_in_book": [
+  {
+   "terms": [
+    "70/20/10",
+    "70 20 10"
+   ],
+   "note": "The SWE-G pyramid is 80/15/5 (p.156) and 80/20 (p.165); 70/20/10 is not in the book."
+  },
+  {
+   "terms": [
+    "goodhart"
+   ],
+   "note": "Goodhart's Law does not appear in SWE-G."
+  },
+  {
+   "terms": [
+    "nit:",
+    "nitpick prefix"
+   ],
+   "note": "The nit: prefix is not described in Critique (SWE-G p.279-288)."
+  },
+  {
+   "terms": [
+    "1% falsos positivos",
+    "tricorder 1%",
+    "1% false positives"
+   ],
+   "note": "The 1% target is not in the book; the criterion is less than 10% (p.292) and the overall rate is below 5%."
+  },
+  {
+   "terms": [
+    "citc",
+    "clients in the cloud"
+   ],
+   "note": "CitC does not appear in the SWE-G PDF; workspaces are mentioned on p.283."
+  },
+  {
+   "terms": [
+    "miller",
+    "7 +- 2",
+    "7+-2"
+   ],
+   "note": "The Code Complete sample does not contain the 7 +- 2 rule; only fan-out above about seven (CC2 p.46)."
+  },
+  {
+   "terms": [
+    "boy scout",
+    "escoteiro"
+   ],
+   "note": "The 97TH (Extended) PDF does not contain the essay The Boy Scout Rule; only SWE-G p.56 (note 7) cites it as an essay of the O'Reilly book. The PDF essay is Leave It in a Better State (97TH p.90)."
+  },
+  {
+   "terms": [
+    "cohesion types",
+    "coesao funcional",
+    "coesao temporal",
+    "coesao coincidente",
+    "functional cohesion",
+    "temporal cohesion",
+    "coincidental cohesion"
+   ],
+   "note": "The cohesion taxonomy is in Chapter 7 of Code Complete, outside the sample."
+  },
+  {
+   "terms": [
+    "cyclomatic",
+    "complexidade ciclomatica",
+    "cyclomatic complexity"
+   ],
+   "note": "There is no cyclomatic complexity limit in the sources."
+  },
+  {
+   "terms": [
+    "solid",
+    "clean architecture",
+    "hexagonal",
+    "ddd",
+    "domain-driven"
+   ],
+   "note": "Outside the corpus of this collection."
+  },
+  {
+   "terms": [
+    "canary 1%",
+    "p99"
+   ],
+   "note": "The canary figures from the v1 package are not in the sources; SWE-PREV (p.10) only describes canary servers."
+  }
+ ]
+}

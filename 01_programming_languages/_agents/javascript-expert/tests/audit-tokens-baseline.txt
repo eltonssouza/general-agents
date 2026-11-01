@@ -1,0 +1,218 @@
+# falhas de token REVISADAS manualmente na auditoria (arquivo|termo|fonte pagina). Regenerar so apos nova revisao.
+.github/agents/javascript-expert.agent.md|EN-3ed|EJ1 p.247
+.github/agents/javascript-expert.agent.md|FileReader|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|addEventListener|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|alert|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|arguments.caller|Spec p.222
+.github/agents/javascript-expert.agent.md|console.log|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|exports|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|fetch|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|localStorage|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|module.exports|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|node:fs|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|node:http|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|prompt|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|querySelector|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|setInterval|Spec p.189, p.768, p.863–864
+.github/agents/javascript-expert.agent.md|setTimeout|Spec p.189, p.768, p.863–864
+AGENTS.md|EN-3ed|EJ1 p.247
+AGENTS.md|FileReader|Spec p.189, p.768, p.863–864
+AGENTS.md|addEventListener|Spec p.189, p.768, p.863–864
+AGENTS.md|alert|Spec p.189, p.768, p.863–864
+AGENTS.md|arguments.caller|Spec p.222
+AGENTS.md|console.log|Spec p.189, p.768, p.863–864
+AGENTS.md|exports|Spec p.189, p.768, p.863–864
+AGENTS.md|fetch|Spec p.189, p.768, p.863–864
+AGENTS.md|localStorage|Spec p.189, p.768, p.863–864
+AGENTS.md|module.exports|Spec p.189, p.768, p.863–864
+AGENTS.md|node:fs|Spec p.189, p.768, p.863–864
+AGENTS.md|node:http|Spec p.189, p.768, p.863–864
+AGENTS.md|prompt|Spec p.189, p.768, p.863–864
+AGENTS.md|querySelector|Spec p.189, p.768, p.863–864
+AGENTS.md|setInterval|Spec p.189, p.768, p.863–864
+AGENTS.md|setTimeout|Spec p.189, p.768, p.863–864
+README.md|JavaScript-Eloquent-JS-EN-3ed.pdf|EJ1 p.247
+README.md|JavaScript-Eloquent-JS-PTBR.pdf|EJpt p.9
+agents/javascript-expert.md|EN-3ed|EJ1 p.247
+agents/javascript-expert.md|FileReader|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|addEventListener|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|alert|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|arguments.caller|Spec p.222
+agents/javascript-expert.md|console.log|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|exports|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|fetch|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|localStorage|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|module.exports|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|node:fs|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|node:http|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|prompt|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|querySelector|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|setInterval|Spec p.189, p.768, p.863–864
+agents/javascript-expert.md|setTimeout|Spec p.189, p.768, p.863–864
+references/INDEX.md|AbortController|Spec p.25
+references/INDEX.md|EN-3ed|EJ1 p.247
+references/INDEX.md|Intl|Spec p.25
+references/INDEX.md|queueMicrotask|Spec p.25
+references/INDEX.md|structuredClone|Spec p.25
+references/builtins-objetos.md|Function.length|Spec p.472
+references/builtins-objetos.md|Int32Array|Spec p.727–728
+references/builtins-objetos.md|Number.isFinite|Spec p.452
+references/builtins-objetos.md|ThisBigIntValue|Spec p.807
+references/builtins-objetos.md|URIError|Spec p.454
+references/builtins-objetos.md|a%20b%26c|Spec p.455–456
+references/builtins-objetos.md|contexto.source|Spec p.735–738
+references/builtins-objetos.md|drop|Spec p.760
+references/builtins-objetos.md|g.prototype|Spec p.781–783
+references/builtins-objetos.md|new.target|Spec p.448–449
+references/builtins-objetos.md|options.cause|Spec p.487
+references/builtins-objetos.md|preventExtensions|Spec p.463
+references/builtins-objetos.md|seal|Spec p.463
+references/builtins-objetos.md|setBigInt64|Spec p.717
+references/builtins-objetos.md|setBigUint64|Spec p.717
+references/builtins-objetos.md|setFloat16|Spec p.717
+references/builtins-objetos.md|setFloat32|Spec p.717
+references/builtins-objetos.md|setFloat64|Spec p.717
+references/builtins-objetos.md|setInt16|Spec p.717
+references/builtins-objetos.md|setInt32|Spec p.717
+references/builtins-objetos.md|setUint16|Spec p.717
+references/builtins-objetos.md|setUint32|Spec p.717
+references/builtins-objetos.md|super.prop|Spec p.448–449
+references/builtins-objetos.md|this.resolve|Spec p.771–772
+references/builtins-objetos.md|valueOf|Spec p.526
+references/builtins-objetos.md|x.constructor|Spec p.777
+references/builtins-objetos.md|x.then|Spec p.766
+references/builtins-objetos.md|±Infinity|Spec p.739–745
+references/builtins-texto-colecoes.md|reduce|Spec p.625, p.628, p.641
+references/builtins-texto-colecoes.md|splice|Spec p.619–620, p.626–627
+references/builtins-texto-colecoes.md|startsWith|Spec p.542
+references/casos-e-antipadroes.md|+Infinity|Spec p.505–506
+references/casos-e-antipadroes.md|.then|Spec p.389, p.797
+references/casos-e-antipadroes.md|0o17|Spec p.257–259, p.262–264
+references/casos-e-antipadroes.md|Array.from|Spec p.114, p.342
+references/casos-e-antipadroes.md|Array.from|Spec p.552
+references/casos-e-antipadroes.md|Ctor.prototype|EJpt p.132
+references/casos-e-antipadroes.md|JSON.parse|EJ1 p.145, p.192–193, p.234
+references/casos-e-antipadroes.md|JSON.parse|EJ1 p.234
+references/casos-e-antipadroes.md|JSON.parse|EJpt p.228
+references/casos-e-antipadroes.md|Object.create|Spec p.281, p.283–284
+references/casos-e-antipadroes.md|Object.defineProperty|Spec p.104, p.799
+references/casos-e-antipadroes.md|Object.entries|EJ1 p.129, p.133
+references/casos-e-antipadroes.md|Object.getPrototypeOf|Spec p.468–469
+references/casos-e-antipadroes.md|Object.is|Spec p.501, p.506
+references/casos-e-antipadroes.md|Object.keys|EJ1 p.129, p.133
+references/casos-e-antipadroes.md|Proxy|Spec p.81, p.89, p.96, p.167, p.293–294, p.310, p.317, p.632–633, p.742, p.787
+references/casos-e-antipadroes.md|Reflect|Spec p.235–243
+references/casos-e-antipadroes.md|XMLHttpRequest|EJ1 p.233
+references/casos-e-antipadroes.md|arguments.callee|Spec p.223–224, p.445, p.861
+references/casos-e-antipadroes.md|createElement|Spec p.851–853
+references/casos-e-antipadroes.md|decodeURIComponent|Spec p.849–851
+references/casos-e-antipadroes.md|defineProperty|Spec p.84
+references/casos-e-antipadroes.md|dispatch|EJpt p.431–433
+references/casos-e-antipadroes.md|encodeURIComponent|Spec p.849–851
+references/casos-e-antipadroes.md|focusin|EJpt p.332–333
+references/casos-e-antipadroes.md|getTime|Spec p.318, p.537
+references/casos-e-antipadroes.md|indexOf|Spec p.310
+references/casos-e-antipadroes.md|new.target|Spec p.179, p.247, p.402
+references/casos-e-antipadroes.md|obj.f|Spec p.294, p.324
+references/casos-e-antipadroes.md|open.remove|EJ1 p.245–246
+references/casos-e-antipadroes.md|setX|Spec p.528
+references/casos-e-antipadroes.md|startsWith|Spec p.541–543
+references/casos-e-antipadroes.md|toString|Spec p.293
+references/casos-e-antipadroes.md|up.lower|Spec p.554
+references/frameworks.md|AbortController|EJpt p.202–203
+references/frameworks.md|Object.create|EJ1 p.151–152
+references/frameworks.md|XMLHttpRequest|EJ1 p.233
+references/frameworks.md|dispatch|EJpt p.431–433, p.497
+references/frameworks.md|entries|EJpt p.80, p.138
+references/frameworks.md|for-in|EJ1 p.129, p.133–134
+references/frameworks.md|for-of|EJ1 p.77
+references/frameworks.md|for-of|EJpt p.111
+references/frameworks.md|for-of|EJpt p.118, p.122–123
+references/frameworks.md|for-of|EJpt p.119
+references/frameworks.md|for-of|EJpt p.210
+references/frameworks.md|for-of|EJpt p.249–250
+references/frameworks.md|for-of|EJpt p.80, p.138
+references/frameworks.md|for-of|Spec p.342–343
+references/frameworks.md|for-of|Spec p.343, p.116
+references/frameworks.md|innerHTML|EJpt p.202–203
+references/frameworks.md|matchAll|EJ1 p.179
+references/frameworks.md|obj.m|EJpt p.127
+references/frameworks.md|proto.constructor|Spec p.385
+references/frameworks.md|queueMicrotask|EJpt p.202–203
+references/frameworks.md|response.json|EJpt p.407
+references/frameworks.md|response.text|EJpt p.406–408
+references/frameworks.md|this.content|EJ1 p.226
+references/glossario.md|constructor.prototype|Spec p.203
+references/glossario.md|context.source|Spec p.735, p.737
+references/glossario.md|matchAll|Spec p.613–614
+references/glossario.md|new.target|Spec p.171–172
+references/glossario.md|super.prop|Spec p.204, p.366–367
+references/linguagem-sintaxe-e-estruturas.md|.nome|Spec p.290
+references/linguagem-sintaxe-e-estruturas.md|1__0|Spec p.257–258
+references/linguagem-sintaxe-e-estruturas.md|Array.prototype|Spec p.279
+references/linguagem-sintaxe-e-estruturas.md|ToPrimitive|Spec p.309
+references/linguagem-sintaxe-e-estruturas.md|continue|Spec p.354
+references/linguagem-sintaxe-e-estruturas.md|for-in|Spec p.341–342
+references/linguagem-sintaxe-e-estruturas.md|for-of|Spec p.342
+references/linguagem-sintaxe-e-estruturas.md|new.target|Spec p.295
+references/linguagem-sintaxe-e-estruturas.md|new.target|Spec p.398
+references/linguagem-sintaxe-e-estruturas.md|obj.f|Spec p.294
+references/linguagem-sintaxe-e-estruturas.md|proto.constructor|Spec p.385
+references/linguagem-sintaxe-e-estruturas.md|super.prop|Spec p.366–367
+references/linguagem-sintaxe-e-estruturas.md|super.x|Spec p.289–290
+references/linguagem-sintaxe-e-estruturas.md|super.x|Spec p.295–296
+references/linguagem-valores-e-execucao.md|0..len-1|Spec p.220
+references/linguagem-valores-e-execucao.md|0..length-1|Spec p.227
+references/linguagem-valores-e-execucao.md|2^1024|Spec p.55–56
+references/linguagem-valores-e-execucao.md|@@nome|Spec p.52
+references/linguagem-valores-e-execucao.md|AUTO|Spec p.225
+references/linguagem-valores-e-execucao.md|C.prototype|Spec p.108
+references/linguagem-valores-e-execucao.md|F.prototype|Spec p.209
+references/linguagem-valores-e-execucao.md|Intl|Spec p.25
+references/linguagem-valores-e-execucao.md|Number::equal|Spec p.100
+references/linguagem-valores-e-execucao.md|O.constructor|Spec p.108
+references/linguagem-valores-e-execucao.md|Object.is|Spec p.99
+references/linguagem-valores-e-execucao.md|constructor.prototype|Spec p.203
+references/linguagem-valores-e-execucao.md|for-in|Spec p.129
+references/linguagem-valores-e-execucao.md|new.target|Spec p.163
+references/linguagem-valores-e-execucao.md|new.target|Spec p.185–186
+references/linguagem-valores-e-execucao.md|super.x|Spec p.158–159
+references/linguagem-valores-e-execucao.md|switch|Spec p.124
+references/procedimentos.md|.classe|EJpt p.308–309
+references/procedimentos.md|Intl|Spec p.534
+references/procedimentos.md|JSON.parse|EJ1 p.234
+references/procedimentos.md|Object.groupBy|Spec p.627, p.641
+references/procedimentos.md|Picture.draw|EJpt p.434–435
+references/procedimentos.md|dispatch|EJpt p.431–433
+references/procedimentos.md|document.head|EJpt p.295
+references/procedimentos.md|getYear|EJpt p.9, p.56, p.132, p.141, p.221
+references/procedimentos.md|http.request|EJpt p.469
+references/procedimentos.md|obj.x|EJpt p.76
+references/procedimentos.md|push|EJpt p.100–101
+references/procedimentos.md|requestAnimationFrame|EJpt p.368–371
+references/versoes-e-datado.md|@@nome|Spec p.52
+references/versoes-e-datado.md|Array.fromAsync|Spec p.644
+references/versoes-e-datado.md|BinaryHeap|EJ1 p.17
+references/versoes-e-datado.md|Float16Array|Spec p.644
+references/versoes-e-datado.md|Intl|Spec p.25
+references/versoes-e-datado.md|JSON.parse|EJ1 p.17
+references/versoes-e-datado.md|JSON.stringify|EJ1 p.17
+references/versoes-e-datado.md|Math|Spec p.25
+references/versoes-e-datado.md|Object.create|EJ1 p.17
+references/versoes-e-datado.md|Promise|Spec p.25
+references/versoes-e-datado.md|Temporal|Spec p.25
+references/versoes-e-datado.md|for-in|Spec p.857–858
+references/versoes-e-datado.md|heightAt|EJ1 p.17
+references/versoes-e-datado.md|querySelector|EJ1 p.17
+references/versoes-e-datado.md|recluseFile|EJ1 p.17
+references/versoes-e-datado.md|showRoute|EJ1 p.17
+references/versoes-e-datado.md|toLowerCase|Spec p.869
+references/versoes-e-datado.md|toUpperCase|Spec p.869
+references/versoes-e-datado.md|viewHTML|EJ1 p.17
+skills/js-code-review/SKILL.md|Object.entries|Spec p.343
+skills/js-error-triage/SKILL.md|+sym|Spec p.89–90, p.288, p.317, p.741–742
+skills/js-error-triage/SKILL.md|.errors|Spec p.483–484, p.774–775
+skills/js-error-triage/SKILL.md|Math.|Spec p.89–90, p.288, p.317, p.741–742
+skills/js-error-triage/SKILL.md|union|Spec p.682–683
+skills/js-version-features/SKILL.md|annex-b|Spec p.446, p.843–859
+skills/js-version-features/SKILL.md|arguments.caller|Spec p.222, p.867–868

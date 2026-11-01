@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "sources": {
+      "WAI": "W3C WAI, Introduction to Web Accessibility (web page printed to PDF, 8 pages; updated 3 Feb 2026; first published Feb 2005). Citation WAI p.N = PDF page.",
+      "NDDB": "Robin Williams, The Non-Designer's Design Book, 4th ed., Peachpit/Pearson, 2015 (SAMPLE of 29 PDF pages). Citation NDDB p.N = PRINTED page number of the book (front matter 5-10, Repetition chapter 55-68, index 236-239)."
+    },
+    "page_map_nddb": "PDF 5=p.5; PDF 6-9=p.6-9 (table of contents); PDF 11=p.10; PDF 12-25=p.55-68; PDF 26-29=p.236-239 (index).",
+    "labels": ["from source", "from source (pointer only)", "inference", "extrapolation", "DATED"],
+    "warning": "The index and table of contents of the NDDB sample only point to pages that are NOT part of the sample: do not infer the content of those pages."
+  },
+  "topics": {
+    "wai_definicao": {
+      "source": "WAI",
+      "name": "What web accessibility is",
+      "pages": [3],
+      "citation": "WAI p.3",
+      "label": "from source",
+      "keywords": ["acessibilidade", "definicao", "accessibility", "o que e", "perceber", "entender", "navegar", "interagir", "contribuir", "deficiencia", "auditiva", "cognitiva", "neurologica", "fisica", "fala", "visual", "definition", "what is", "perceive", "understand", "navigate", "interact", "contribute", "disability", "auditory", "cognitive", "neurological", "physical", "speech"],
+      "summary": "Web accessibility means designing and developing websites, tools and technologies so that people with disabilities can use them: perceive, understand, navigate, interact with and also contribute to the web. It covers auditory, cognitive, neurological, physical, speech and visual disabilities.",
+      "key_points": [
+        "Five verbs of use: perceive, understand, navigate, interact, contribute (WAI p.3).",
+        "Six disability groups listed: auditory, cognitive, neurological, physical, speech, visual (WAI p.3)."
+      ]
+    },
+    "wai_contexto_barreiras": {
+      "source": "WAI",
+      "name": "Context: the web removes barriers, poor design creates barriers",
+      "pages": [1, 2],
+      "citation": "WAI p.1-2",
+      "label": "from source",
+      "keywords": ["barreira", "barriers", "universalidade", "universal", "contexto", "projeto ruim", "excluir", "berners-lee", "context", "bad design", "poor design", "exclude", "exclusion"],
+      "summary": "The web was designed to work for everyone, regardless of hardware, software, language, location or ability. This changes the impact of disability, because the web removes barriers of the physical world. However, poorly designed sites and tools create barriers that exclude people. Today many sites still have barriers that make use difficult or impossible for some people.",
+      "key_points": [
+        "The barrier lies in the design/code, not in the person (WAI p.1-2).",
+        "Accessibility is essential for anyone who wants high-quality products without excluding users (WAI p.2).",
+        "The page quotes a phrase by Tim Berners-Lee about the universality of the web (WAI p.2)."
+      ]
+    },
+    "wai_beneficiarios": {
+      "source": "WAI",
+      "name": "Who benefits beyond people with disabilities",
+      "pages": [3, 4],
+      "citation": "WAI p.3-4",
+      "label": "from source",
+      "keywords": ["beneficio", "situacional", "temporaria", "idosos", "envelhecimento", "celular", "tela pequena", "banda", "conexao lenta", "luz do sol", "braco quebrado", "situational", "temporary", "benefit", "beneficiaries", "older people", "aging", "mobile phone", "small screen", "bandwidth", "slow connection", "sunlight", "broken arm"],
+      "summary": "Accessibility also helps people who use mobile phones, smartwatches, TVs and other devices with small screens or different input; older people; people with temporary disability (broken arm, lost glasses); people with situational limitations (bright sun, environment without sound); and people with slow connections or limited/expensive bandwidth. Social inclusion reaches older people, rural areas and developing countries.",
+      "key_points": [
+        "Five groups of beneficiaries listed (WAI p.3).",
+        "Social inclusion: older people, rural areas, developing countries (WAI p.4)."
+      ]
+    },
+    "wai_importancia_negocio_lei": {
+      "source": "WAI",
+      "name": "Why it matters: individual, business, society, law",
+      "pages": [4, 5],
+      "citation": "WAI p.4-5",
+      "label": "from source",
+      "keywords": ["negocio", "business case", "lei", "legal", "direito humano", "onu", "crpd", "marca", "mercado", "inovacao", "educacao", "emprego", "governo", "business", "law", "human right", "UN", "brand", "market", "innovation", "education", "employment", "government"],
+      "summary": "The web is a core resource in education, employment, government, commerce, health and leisure; it therefore must be accessible to give equal access and opportunity. Access to ICT, including the web, is defined as a basic human right in the UN Convention on the Rights of Persons with Disabilities. There is a business case: better overall experience, brand, innovation and market reach. Accessibility is required by law in many situations (the page does not detail which).",
+      "key_points": [
+        "Basic human right according to the UN CRPD (WAI p.4).",
+        "Business benefits: experience, brand, innovation, market reach (WAI p.4).",
+        "Legal requirement 'in many situations', with no jurisdiction details (WAI p.4); there is only a pointer to a legal-factors resource (WAI p.5)."
+      ]
+    },
+    "wai_componentes_e_padroes": {
+      "source": "WAI",
+      "name": "Components that must work together and W3C WAI standards",
+      "pages": [5],
+      "citation": "WAI p.5",
+      "label": "from source",
+      "keywords": ["componentes", "padroes", "standards", "wcag", "atag", "aria", "iso", "40500", "user agents", "ferramentas de autoria", "navegadores", "wai", "w3c", "components", "authoring tools", "browsers"],
+      "summary": "Accessibility depends on several components working together: web technologies, browsers and other user agents, authoring tools and the sites themselves. The W3C WAI develops specifications, guidelines and techniques, regarded as international standards; the page cites WCAG 2.2 (which is also ISO/IEC 40500), plus ATAG and ARIA as resources, by name only.",
+      "key_points": [
+        "Four components: technologies, user agents, authoring tools, sites (WAI p.5).",
+        "WCAG 2.2 = ISO/IEC 40500 (WAI p.5).",
+        "WCAG, ATAG and ARIA are only introduced by name: their technical content is NOT in the source (WAI p.5)."
+      ]
+    },
+    "wai_incorporar_cedo": {
+      "source": "WAI",
+      "name": "Build accessibility in from the start",
+      "pages": [5],
+      "citation": "WAI p.5",
+      "label": "from source",
+      "keywords": ["desde o inicio", "cedo", "retrabalho", "refazer", "facil", "complexo", "early", "rework", "projeto", "from the start", "redo", "easy", "complex", "project"],
+      "summary": "Many aspects of accessibility are relatively easy to understand and implement; others are more complex and require more knowledge. The most efficient and effective approach is to include accessibility from the start of the project, avoiding rework.",
+      "key_points": ["Decision rule: plan accessibility at the start, not as a final patch (WAI p.5)."]
+    },
+    "wai_avaliacao": {
+      "source": "WAI",
+      "name": "Evaluating accessibility: early, continuously, a tool is not enough",
+      "pages": [6],
+      "citation": "WAI p.6",
+      "label": "from source",
+      "keywords": ["avaliar", "avaliacao", "teste", "evaluation", "ferramenta", "automatica", "humana", "easy checks", "verificacao", "revisao", "evaluate", "test", "tool", "automatic", "human", "check", "review"],
+      "summary": "Evaluate accessibility early and throughout development to find problems when they are easiest to fix. Simple steps, such as changing browser settings, help evaluate some aspects; comprehensive conformance evaluation requires more effort. Tools help, but no tool alone determines whether a site meets the guidelines: qualified human evaluation is needed.",
+      "key_points": [
+        "Evaluate early and always (WAI p.6).",
+        "No tool alone decides conformance; it requires qualified human evaluation (WAI p.6).",
+        "The source does not list which browser settings to use (WAI p.6): details would be extrapolation."
+      ]
+    },
+    "wai_recursos_indicados": {
+      "source": "WAI",
+      "name": "WAI pointers for going deeper (outside the sample)",
+      "pages": [4, 5, 6, 7],
+      "citation": "WAI p.4-7",
+      "label": "from source (pointer only)",
+      "keywords": ["recursos", "wcag quickref", "tutoriais", "easy checks", "first aid", "tips", "curso", "planejamento", "principios", "how to meet wcag", "resources", "tutorials", "course", "planning", "principles"],
+      "summary": "The page only points to resources for going deeper: Accessibility Principles, Easy Checks, Tips for Getting Started, How to Meet WCAG (Quick Reference), Web Accessibility Tutorials, Planning and Managing Web Accessibility, Web Accessibility First Aid (provisional fixes) and a free online course. The content of those resources is NOT in the sources.",
+      "key_points": [
+        "For technical criteria (e.g. WCAG), refer to the Quick Reference cited in WAI p.6.",
+        "Do not invent the content of those resources."
+      ]
+    },
+    "wai_datado_metadados": {
+      "source": "WAI",
+      "name": "Metadata and dating of the WAI source",
+      "pages": [7],
+      "citation": "WAI p.7",
+      "label": "DATED",
+      "keywords": ["atualizado", "versao", "2026", "2005", "editor", "eowg", "datado", "updated", "version", "dated"],
+      "summary": "The page was updated on 3 February 2026, first published in February 2005, edited by Shawn Lawton Henry and developed by the EOWG group. It references WCAG 2.2; future versions of the standard may change the picture.",
+      "key_points": ["Treat version numbering (WCAG 2.2) as [DATED] if the user asks about a newer version."]
+    },
+    "nddb_publico_premissa": {
+      "source": "NDDB",
+      "name": "Audience and premise of the book",
+      "pages": [10],
+      "citation": "NDDB p.10",
+      "label": "from source",
+      "keywords": ["premissa", "publico", "nao designer", "iniciante", "quatro conceitos", "nomear o problema", "intro", "para quem", "premise", "audience", "non-designer", "beginner", "four concepts", "name the problem", "who is it for"],
+      "summary": "The book is for people who need to create visual pieces without design training. The premise: most people sense that a page is bad but do not know how to fix it; four basic concepts are present in almost all well-designed work; by naming the problem, you find the solution. The author says the book does not replace design school and promises more professional, organized, unified and interesting work.",
+      "key_points": [
+        "Naming the problem makes it possible to fix it (NDDB p.10).",
+        "Four recurring basic concepts (NDDB p.10); their names appear in the table of contents/index (NDDB p.6, 236)."
+      ]
+    },
+    "nddb_epigrafe_tschichold": {
+      "source": "NDDB",
+      "name": "Epigraph by Jan Tschichold (1935)",
+      "pages": [5],
+      "citation": "NDDB p.5",
+      "label": "from source",
+      "keywords": ["tschichold", "epigrafe", "clareza", "hierarquia", "destacar", "importante", "legibilidade", "epigraph", "clarity", "hierarchy", "emphasize", "important", "legibility", "readability"],
+      "summary": "Tschichold's epigraph (1935) states that readers avoid what is laborious to read and prefer what looks clear and well arranged; for that, the important must stand out and the less important be restrained.",
+      "key_points": ["Idea of visual hierarchy: emphasize the important, subordinate the rest (NDDB p.5)."]
+    },
+    "nddb_estrutura_sumario": {
+      "source": "NDDB",
+      "name": "Structure of the book according to the table of contents (pointers only)",
+      "pages": [6, 7, 8, 9, 10],
+      "citation": "NDDB p.6-9",
+      "label": "from source (pointer only)",
+      "keywords": ["sumario", "estrutura", "capitulos", "proximidade", "alinhamento", "repeticao", "contraste", "cor", "tipografia", "toc", "mapa do livro", "lacunas", "table of contents", "contents", "structure", "chapters", "proximity", "alignment", "repetition", "contrast", "color", "typography", "book map", "gaps"],
+      "summary": "The table of contents shows: introduction (p.11, four principles p.13); Proximity (p.15, summary p.32); Alignment (p.33, summary p.54); Repetition (p.55, summary p.68); Contrast (p.69, summary p.84); review of the four principles (p.85); color (p.95); extra tips with business card, letterhead, flyer, newsletter, brochure, postcard, ad and resume (p.113); typography essentials (p.151); type and life (p.167); categories of type (p.175); type contrasts (p.187); 'does it make sense?' (p.219). Of these parts, ONLY the Repetition chapter (p.55-68) is in the sample with text.",
+      "key_points": [
+        "Each principle chapter has a summary with basic purpose, how to get it and what to avoid (NDDB p.6).",
+        "Proximity, Alignment, Contrast, color and typography: only titles/pages in the table of contents, no content (NDDB p.6-9)."
+      ]
+    },
+    "nddb_repeticao_definicao": {
+      "source": "NDDB",
+      "name": "Principle of Repetition: definition",
+      "pages": [55],
+      "citation": "NDDB p.55",
+      "label": "from source",
+      "keywords": ["repeticao", "repetition", "consistencia", "definicao", "elemento repetitivo", "chave visual", "unificar", "coesao", "repetitive element", "visual key", "unify", "cohesion", "consistency"],
+      "summary": "Repeat some aspect of the design throughout the whole piece. The repeated element can be a bold font, a rule, a bullet, a graphic element, a color, a shape, spatial relationships: anything the reader recognizes visually. Repetition is consistency; in a 16-page brochure, page 13 with nothing from page 4 loses cohesion. Besides being naturally consistent, it is a conscious effort to unify the parts.",
+      "key_points": [
+        "List of possible elements: bold font, rule, bullet, color, shape, spatial relationships (NDDB p.55).",
+        "New designers need to push the inconspicuous consistency until it becomes a visual key (NDDB p.55).",
+        "The book's analogy: a team's uniforms make the organization clear (NDDB p.55)."
+      ]
+    },
+    "nddb_repeticao_fluxo_do_olhar": {
+      "source": "NDDB",
+      "name": "Repetition guides the eye (business card example)",
+      "pages": [56],
+      "citation": "NDDB p.56",
+      "label": "from source",
+      "keywords": ["olhar", "eye flow", "cartao de visita", "negrito", "atencao", "unidade", "pacote", "eye", "business card", "bold", "attention", "unity", "package"],
+      "summary": "On the business card, adding repetition of a strong bold font makes the eye jump between the bold elements instead of leaving the card. Designers use this trick to control the reader's eye, keep attention on the page and unify the design; it is an easy way to connect the pieces of a package.",
+      "key_points": ["Repetition has a dual function: unity and control of the eye flow (NDDB p.56)."]
+    },
+    "nddb_repeticao_empurrar_consistencia": {
+      "source": "NDDB",
+      "name": "Turning existing consistency into a graphic element",
+      "pages": [57],
+      "citation": "NDDB p.57",
+      "label": "from source",
+      "keywords": ["titulos", "subtitulos", "headlines", "headline", "heading", "headings", "fonte forte", "empurrar", "consistencia existente", "elemento de design", "comecar", "subheadings", "titles", "strong font", "push", "existing consistency", "design element", "start"],
+      "summary": "Take advantage of what is already consistent (e.g. all headings in the same size/weight) and make it a stronger graphic symbol, for example by swapping a neutral font for a distinctive sans in the headings. Headings and subheadings are a good starting point because they are probably already consistent; it becomes a design element as well as a useful one, and increases visual organization.",
+      "key_points": [
+        "Step 1: find the consistency that already exists; Step 2: strengthen it (NDDB p.57).",
+        "Headings/subheadings as a starting point (NDDB p.57)."
+      ]
+    },
+    "nddb_repeticao_multipagina": {
+      "source": "NDDB",
+      "name": "Repetition in multi-page publications",
+      "pages": [58, 59],
+      "citation": "NDDB p.58-59",
+      "label": "from source",
+      "keywords": ["multiplas paginas", "multi-page", "paginas", "numeros de pagina", "filete", "bottoming out", "clothesline", "varal", "linha de base", "surpresa", "especial", "guia", "coluna", "multiple pages", "pages", "page numbers", "rule", "baseline", "surprise", "special", "guide", "column"],
+      "summary": "When opening the document, it should be obvious that page 3 and page 13 belong to the same publication. Annotated examples: a double rule at the top of every page, the same font and the same space above in headings and subheadings, page numbers in the same place and font, a single rule repeated at the bottom, stories and photos starting at the same top guide, a triangular shape repeated in a list and caption, a wide column taking the space of two to keep the edges. You can align from the top ('hanging from the clothesline') or from the bottom ('bottoming out'): pick one and use it consistently. If everything is inconsistent, nothing stands out; with strong consistency, you can insert surprises to draw special attention.",
+      "key_points": [
+        "Choose one convention (top or bottom) and keep it (NDDB p.58).",
+        "Strong consistency allows 'surprises' that signal the special (NDDB p.59)."
+      ]
+    },
+    "nddb_repeticao_pacote_e_curriculo": {
+      "source": "NDDB",
+      "name": "Repetition across pieces (brand package) and in a resume",
+      "pages": [60, 61],
+      "citation": "NDDB p.60-61",
+      "label": "from source",
+      "keywords": ["pacote", "cartao", "papel timbrado", "envelope", "curriculo", "resume", "marca", "identidade", "organiza", "guia o leitor", "marcadores quadrados", "package", "business card", "letterhead", "brand", "identity", "organizes", "guides the reader", "square bullets"],
+      "summary": "In a package (business card, letterhead, envelope), use strong repetition within each piece and across them, so the recipient recognizes the same sender; the letter can be aligned to an element of the stationery. Repetition organizes information, guides the reader through the pages and unifies disparate parts, even in a one-page piece; and it is critical when several one-page pieces form a set. In the resume example, a bold font, a light font, square bullets, indents, spacing and alignments are repeated, and the cover letter could incorporate those elements.",
+      "key_points": [
+        "Repetition works within the piece and across pieces (NDDB p.60).",
+        "Six repetitions in the resume example (NDDB p.61)."
+      ]
+    },
+    "nddb_repeticao_criar_elementos": {
+      "source": "NDDB",
+      "name": "Creating new repetitive elements and pulling from a graphic",
+      "pages": [62, 63, 64],
+      "citation": "NDDB p.62-64",
+      "label": "from source",
+      "keywords": ["clip art", "fonte de imagens", "motivo", "coracao", "puxar elemento", "tamanhos", "cores", "angulos", "intencional", "aleatorio", "sobrepor", "bordas", "exercicio", "designer eye", "variar", "image font", "motif", "heart", "pull an element", "sizes", "colors", "angles", "intentional", "random", "overlap", "edges", "exercise", "vary"],
+      "summary": "It is worth adopting an element you like (clip art, picture font), or adding something new just to repeat it, or using a simple element in several ways (sizes, colors, angles); very similar objects also connect. You can extract a motif from a graphic (a heart) and apply it in related materials. Elements apparently unrelated to the subject can work, as long as it looks intentional and not random. Overlapping an element or taking it beyond the edges unifies pieces or foreground and background. After establishing a few key items, you can vary without losing consistency. On p.64, the dashed letters inspired dashed ovals that suggest a sound wave.",
+      "key_points": [
+        "Test: does it look intentional or random? (NDDB p.63).",
+        "The 'Designer Eye' exercises refer to answers outside the sample (NDDB p.62-64: suggestions on p.227-228)."
+      ]
+    },
+    "nddb_repeticao_nao_so_grafico": {
+      "source": "NDDB",
+      "name": "Repetition need not be an image: space, rules, fonts, alignments (lecture example)",
+      "pages": [65],
+      "citation": "NDDB p.65",
+      "label": "from source",
+      "keywords": ["palestra", "convite", "anuncio", "centralizado", "alinhamento fraco", "times new roman", "foco", "barra preta", "filete", "alinhamento", "contraste", "lecture", "invitation", "ad", "centered", "weak alignment", "focus", "black bar", "alignment", "contrast"],
+      "summary": "The repeated element can be spacing, rules, fonts, alignments or anything consciously repeated. The example is a lecture ad: the 'typical' version uses centered Times New Roman, typewriter quotes, grouped information but weak centered alignment and an attempt to fill the corners. The redone versions choose a focus (the speaker or the topic); in one of them the black bar is repeated in a thinner version at the bottom: a simple element that stitches the piece together. The book reminds us that alignment and contrast are also at play.",
+      "key_points": [
+        "Decide the focus before designing (NDDB p.65).",
+        "The repetitive element can be as simple as a thinner repeated bar (NDDB p.65)."
+      ]
+    },
+    "nddb_repeticao_sugestao_parcial": {
+      "source": "NDDB",
+      "name": "Repeating only a piece of a familiar element",
+      "pages": [66],
+      "citation": "NDDB p.66",
+      "label": "from source",
+      "keywords": ["parcial", "fragmento", "sugestao", "imagem familiar", "maquina de escrever", "material de marketing", "reconhecimento", "partial", "fragment", "suggestion", "familiar image", "typewriter", "marketing material", "recognition"],
+      "summary": "The mere suggestion of a repeated element can yield the same effect: if the image is already familiar to the reader from other materials (the conference typewriter example), using part of it is enough and the reader 'sees' the whole.",
+      "key_points": ["It only works if the element has already been established in other materials (NDDB p.66)."]
+    },
+    "nddb_repeticao_autoridade_variedade": {
+      "source": "NDDB",
+      "name": "Repetition confers authority; variety within structure",
+      "pages": [67],
+      "citation": "NDDB p.67",
+      "label": "from source",
+      "keywords": ["autoridade", "profissionalismo", "variedade", "unidade com variedade", "estrutura", "receitas", "formato", "alinhamentos fortes", "jogo", "playful", "authority", "professionalism", "variety", "unity with variety", "structure", "recipes", "format", "strong alignments"],
+      "summary": "Repetition conveys professionalism and authority, even in playful pieces, because it indicates a thought-out design decision: someone is in charge. You do not need to repeat exactly the same thing: in the example, headings in different colors but the same font and illustrations in different styles but with the same mood. Enough repetition is needed so the differences look deliberate and not a mess; recipes with the same format and strong alignments provide structure that allows flexibility.",
+      "key_points": [
+        "An underlying structure allows the elements to be loosened (NDDB p.67).",
+        "Insufficient repetitions turn the differences into a mess (NDDB p.67)."
+      ]
+    },
+    "nddb_repeticao_resumo": {
+      "source": "NDDB",
+      "name": "Repetition summary: purpose, how to get it, what to avoid",
+      "pages": [68],
+      "citation": "NDDB p.68",
+      "label": "from source",
+      "keywords": ["resumo", "proposito", "como obter", "o que evitar", "excesso", "filete", "lista numerada", "vermelho", "acentuar", "unificar", "interesse visual", "summary", "purpose", "how to get it", "what to avoid", "excess", "numbered list", "red", "accent", "visual interest"],
+      "summary": "Purpose: unify and add visual interest (if it looks interesting, it is more likely to be read). How to get it: think of repetition as consistency, push what already exists (e.g. a 1-point rule becomes 4 points; turn a heading into a design element), then add elements created just to be repeated (e.g. numbers of a numbered list in a distinct font or reversed, in all lists). First find and strengthen, then create. The analogy is accenting a black outfit with a few red details. What to avoid: repeating so much that it becomes irritating or overwhelming and confuses the focus; pay attention to contrast.",
+      "key_points": [
+        "Order: find -> strengthen -> create (NDDB p.68).",
+        "Limit: excess repetition cancels the effect (NDDB p.68)."
+      ]
+    },
+    "nddb_ponteiros_outros_principios": {
+      "source": "NDDB",
+      "name": "Index pointers to Proximity, Alignment and Contrast (content absent)",
+      "pages": [6, 7, 236, 237, 238, 239],
+      "citation": "NDDB p.236-239",
+      "label": "from source (pointer only)",
+      "keywords": ["proximidade", "alinhamento", "contraste", "proximity", "alignment", "contrast", "crap", "indice", "quebrar regras", "unidade", "espaco em branco", "white space", "index", "break the rules", "unity"],
+      "summary": "According to the index: Proximity is covered from p.15 and Alignment from p.33; Contrast from p.69; the index cites 'white space' as a by-product of organization (p.32, 142), that 'proximity does not mean everything together' (p.20) and that there are times to break the rules (p.51, 225). The TEXT of those pages is not in the sample: the agent cannot explain what the book says there, only point to where to look. [inference] The initials of the four principles (Contrast, Repetition, Alignment, Proximity) form the acronym that the index records on p.13, from index entries.",
+      "key_points": [
+        "Use [inference] or [extrapolation] for any explanation of proximity/alignment/contrast.",
+        "Do not attribute to the book numbers, rules or examples from those pages."
+      ]
+    },
+    "nddb_ponteiros_cor_tipografia": {
+      "source": "NDDB",
+      "name": "Index pointers to color and typography (content absent)",
+      "pages": [7, 8, 9, 10, 236, 237, 238, 239],
+      "citation": "NDDB p.7-10, 236-239",
+      "label": "from source (pointer only)",
+      "keywords": ["cor", "color", "roda de cores", "cmyk", "rgb", "web", "impressao", "tipografia", "fontes", "serifa", "sans", "helvetica", "arial", "sublinhado", "caixa alta", "kerning", "viúva", "orfas", "texto invertido", "reverse", "colour", "color wheel", "print", "typography", "fonts", "serif", "underline", "uppercase", "all caps", "widows", "orphans", "reversed text"],
+      "summary": "The table of contents shows a chapter on color (p.95) with a section 'cmyk vs. rgb: print vs. web' (p.110-112), and chapters on typography (p.151-218). The index records entries such as 'colors for web: which model to use' (p.112), 'Arial/Helvetica: avoid' (p.126, 132, 136), 'underline: don't' (p.162), 'all caps' (p.161, 190, 201) and 'reversed text: when not to use' (p.144). These are only pointers: the reasoning behind them is NOT in the sample.",
+      "key_points": ["If asked 'why avoid Arial/underline?', say that the index points to the topic but the justification is not in the sample."]
+    },
+    "nddb_limites_amostra": {
+      "source": "NDDB",
+      "name": "Boundary: the NDDB sample is print-centric and partial",
+      "pages": [6, 7, 8, 9, 10, 55, 68, 236],
+      "citation": "NDDB p.6-10, 55-68, 236",
+      "label": "inference",
+      "keywords": ["amostra", "limites", "fronteira", "impressao", "print", "web", "responsivo", "css", "datado", "fax", "papel", "sample", "limits", "boundary", "responsive", "dated", "paper"],
+      "summary": "The sample contains with text: epigraph, audience/premise, table of contents, the Repetition chapter and the index. The examples are printed pieces (business card, letterhead, flyer, newsletter, ad, resume); the web only appears as the pair of terms 'print vs web' in color. Any translation to HTML/CSS, design systems, UI or responsiveness is [extrapolation]; references to fax, fonts and tools of the era are [DATED].",
+      "key_points": [
+        "Mark translation to the web as [extrapolation].",
+        "Do not attribute to the book ideas about CSS, components, tokens or responsiveness."
+      ]
+    },
+    "fora_escopo_wcag_detalhado": {
+      "source": "WAI+NDDB",
+      "name": "Out of scope: WCAG technical criteria, ARIA, contrast ratios, screen readers",
+      "pages": [5, 6],
+      "citation": "WAI p.5-6",
+      "label": "inference",
+      "keywords": ["wcag", "aria", "contraste", "razao de contraste", "4.5", "leitor de tela", "screen reader", "teclado", "foco", "alt", "texto alternativo", "legenda", "criterio de sucesso", "nivel aa", "nivel aaa", "conformidade", "fora do escopo", "contrast ratio", "keyboard", "focus", "alternative text", "success criterion", "level AA", "level AAA", "conformance", "out of scope", "captions"],
+      "summary": "The sources present WCAG only as a standard and point to the Quick Reference (WAI p.6). There are no success criteria, conformance levels, contrast ratios, ARIA rules, keyboard/focus requirements, alternative text etc. Any answer about this is [extrapolation] with no backing in the sources; prefer referring to the WCAG 2.2 Quick Reference.",
+      "key_points": [
+        "Do not cite WCAG numbers as if they came from the sources.",
+        "The NDDB treats contrast as a visual DESIGN principle (chapter absent from the sample), not as an accessibility criterion."
+      ]
+    }
+  }
+}

@@ -1,0 +1,886 @@
+{
+ "fonte": "Tut/Ref/Notes/Lib: Python 3.14.0rc3 PDFs (Tutorial, Language Reference, Standard Library) and Python Notes for Professionals",
+ "convencao": "PDF page; printed = N-6 (Tut), N-8 (Ref), N-25 (Notes), N-26 (Lib)",
+ "checks": [
+  {
+   "cite": "Tut p.1",
+   "contains": [
+    "release 3.14.0rc3",
+    "october 01, 2025"
+   ],
+   "claim": "cover: Tutorial 3.14.0rc3 (release candidate), 10/01/2025"
+  },
+  {
+   "cite": "Ref p.1",
+   "contains": [
+    "release 3.14.0rc3"
+   ],
+   "claim": "cover of the Language Reference 3.14.0rc3"
+  },
+  {
+   "cite": "Lib p.1",
+   "contains": [
+    "release 3.14.0rc3"
+   ],
+   "claim": "cover of the Library Reference 3.14.0rc3"
+  },
+  {
+   "cite": "Tut p.130",
+   "contains": [
+    "as of python 3.13",
+    "--disable-gil",
+    "-x gil=0",
+    "python_gil=0"
+   ],
+   "claim": "GIL can be disabled since 3.13 via a --disable-gil build; -X gil=0 or PYTHON_GIL=0"
+  },
+  {
+   "cite": "Tut p.31",
+   "contains": [
+    "the default value is evaluated only once",
+    "defining scope"
+   ],
+   "claim": "default value evaluated once, in the defining scope"
+  },
+  {
+   "cite": "Tut p.32",
+   "contains": [
+    "def f(a, l=none)",
+    "if l is none"
+   ],
+   "claim": "None idiom + test in the body"
+  },
+  {
+   "cite": "Ref p.103",
+   "contains": [
+    "default values are calculated, once, when the function is defined",
+    "shared by all calls"
+   ],
+   "claim": "Ref: default computed once; mutable one is shared"
+  },
+  {
+   "cite": "Ref p.78",
+   "contains": [
+    "name resolution of free variables occurs at runtime, not at compile time",
+    "print 42"
+   ],
+   "claim": "Ref: free variables resolved at run time"
+  },
+  {
+   "cite": "Ref p.76",
+   "contains": [
+    "list(a + i for i in range(10))",
+    "global statement must precede all uses"
+   ],
+   "claim": "class scope does not reach genexp; global before the uses"
+  },
+  {
+   "cite": "Ref p.26",
+   "contains": [
+    "string.templatelib",
+    "interpolation",
+    "eagerly",
+    "'.2f'",
+    "added in version 3.14"
+   ],
+   "claim": "t-strings: Template, Interpolation, nested spec evaluated first"
+  },
+  {
+   "cite": "Ref p.19",
+   "contains": [
+    "soft keywords",
+    "changed in version 3.12: type is now a soft keyword"
+   ],
+   "claim": "soft keywords; type soft keyword since 3.12"
+  },
+  {
+   "cite": "Ref p.131",
+   "contains": [
+    "added in version 3.10"
+   ],
+   "claim": "version mark of the match statement: 3.10"
+  },
+  {
+   "cite": "Ref p.123",
+   "contains": [
+    "added in version 3.12"
+   ],
+   "claim": "version mark of the type statement: 3.12"
+  },
+  {
+   "cite": "Ref p.110",
+   "contains": [
+    "added in version 3.8",
+    "pep 572"
+   ],
+   "claim": "assignment expression (:=) 3.8"
+  },
+  {
+   "cite": "Ref p.140",
+   "contains": [
+    "changed in version 3.8",
+    "/ function parameter syntax"
+   ],
+   "claim": "positional-only (/) 3.8"
+  },
+  {
+   "cite": "Ref p.25",
+   "contains": [
+    "added in version 3.8: the equal sign '='"
+   ],
+   "claim": "f-string {x=} 3.8"
+  },
+  {
+   "cite": "Ref p.127",
+   "contains": [
+    "changed in version 3.14",
+    "optionally dropping grouping parentheses",
+    "pep 758"
+   ],
+   "claim": "except without parentheses 3.14 (PEP 758)"
+  },
+  {
+   "cite": "Ref p.128",
+   "contains": [
+    "except* clause",
+    "exceptiongroup"
+   ],
+   "claim": "except* handles ExceptionGroup"
+  },
+  {
+   "cite": "Ref p.35",
+   "contains": [
+    "changed in version 3.7",
+    "did not preserve insertion order"
+   ],
+   "claim": "dict preserves insertion order: 3.7"
+  },
+  {
+   "cite": "Tut p.73",
+   "contains": [
+    "from version 3.14 the compiler emits a syntaxwarning",
+    "pep 765"
+   ],
+   "claim": "return/break/continue in finally: SyntaxWarning 3.14"
+  },
+  {
+   "cite": "Ref p.117",
+   "contains": [
+    "assignments to __debug__ are illegal",
+    "-o"
+   ],
+   "claim": "assert/__debug__: illegal assignment; -O"
+  },
+  {
+   "cite": "Ref p.52",
+   "contains": [
+    "total_ordering",
+    "x==y calls x.__eq__(y)"
+   ],
+   "claim": "rich comparisons and total_ordering"
+  },
+  {
+   "cite": "Ref p.53",
+   "contains": [
+    "__hash__ = <parentclass>.__hash__",
+    "implicitly set to none",
+    "__bool__"
+   ],
+   "claim": "__eq__ without __hash__ => hash None; __bool__/__len__"
+  },
+  {
+   "cite": "Ref p.57",
+   "contains": [
+    "typeerror will be raised if nonempty __slots__",
+    "__class__ assignment works only if both classes have the same __slots__"
+   ],
+   "claim": "__slots__ rules"
+  },
+  {
+   "cite": "Ref p.183",
+   "contains": [
+    "somewhat tricky to get right",
+    "__slots__"
+   ],
+   "claim": "glossary: __slots__ delicate technique"
+  },
+  {
+   "cite": "Ref p.69",
+   "contains": [
+    "lazily evaluated",
+    "__annotate__",
+    "must always support value format",
+    "notimplementederror"
+   ],
+   "claim": "annotations 3.14: lazy, __annotate__, VALUE"
+  },
+  {
+   "cite": "Ref p.31",
+   "contains": [
+    "reference-counting scheme",
+    "do not depend on immediate finalization"
+   ],
+   "claim": "CPython detail: refcount; do not depend on immediate finalization"
+  },
+  {
+   "cite": "Ref p.51",
+   "contains": [
+    "reference cycle",
+    "locals of all frames"
+   ],
+   "claim": "a caught exception can form a cycle via the traceback"
+  },
+  {
+   "cite": "Ref p.37",
+   "contains": [
+    "always returns an iterator object",
+    "stopiteration"
+   ],
+   "claim": "generator returns an iterator; return raises StopIteration"
+  },
+  {
+   "cite": "Ref p.38",
+   "contains": [
+    "classes are callable",
+    "instances of arbitrary classes can be made callable by defining a __call__() method"
+   ],
+   "claim": "callable classes and instances"
+  },
+  {
+   "cite": "Ref p.173",
+   "contains": [
+    "dictionary view",
+    "list(dictview)"
+   ],
+   "claim": "dict views are dynamic"
+  },
+  {
+   "cite": "Ref p.60",
+   "contains": [
+    "__classcell__",
+    "runtimeerror in python 3.8"
+   ],
+   "claim": "__classcell__ must be propagated; RuntimeError in 3.8"
+  },
+  {
+   "cite": "Ref p.111",
+   "contains": [
+    "a trailing comma is required only to create a one-item tuple"
+   ],
+   "claim": "a one-item tuple requires a comma"
+  },
+  {
+   "cite": "Ref p.114",
+   "contains": [
+    "the left-hand side target a.x is always set as an instance attribute"
+   ],
+   "claim": "assignment to an attribute creates an instance attribute"
+  },
+  {
+   "cite": "Ref p.32",
+   "contains": [
+    "e = f = [] assigns the same object to both e and f"
+   ],
+   "claim": "a = b = [] shares the object"
+  },
+  {
+   "cite": "Ref p.84",
+   "contains": [
+    "find_module() has been removed"
+   ],
+   "claim": "Changed 3.12: find_module removed"
+  },
+  {
+   "cite": "Ref p.39",
+   "contains": [
+    "deprecated since version 3.13, will be removed in version 3.15",
+    "__package__"
+   ],
+   "claim": "__package__ without __spec__ deprecated 3.13"
+  },
+  {
+   "cite": "Tut p.66",
+   "contains": [
+    "insecure by default",
+    "untrusted source",
+    "pickle"
+   ],
+   "claim": "Tut: pickle insecure by default"
+  },
+  {
+   "cite": "Tut p.88",
+   "contains": [
+    "the idiomatic approach is to use dataclasses"
+   ],
+   "claim": "Tut: dataclasses are the idiomatic approach"
+  },
+  {
+   "cite": "Tut p.134",
+   "contains": [
+    "namespace package",
+    "no __init__.py file",
+    "it is recommended to use a regular package"
+   ],
+   "claim": "namespace package vs regular package"
+  },
+  {
+   "cite": "Tut p.128",
+   "contains": [
+    "eafp",
+    "lbyl"
+   ],
+   "claim": "EAFP and LBYL"
+  },
+  {
+   "cite": "Tut p.132",
+   "contains": [
+    "lbyl",
+    "race condition",
+    "eafp approach"
+   ],
+   "claim": "LBYL risks a race in multithreading; locks or EAFP"
+  },
+  {
+   "cite": "Tut p.130",
+   "contains": [
+    "pep 703"
+   ],
+   "claim": "free threading: PEP 703"
+  },
+  {
+   "cite": "Notes p.505",
+   "contains": [
+    "not possible to use eval or exec to execute code from untrusted user securely"
+   ],
+   "claim": "Notes: eval/exec are not safe with untrusted input"
+  },
+  {
+   "cite": "Notes p.535",
+   "contains": [
+    "there are no security guarantees",
+    "don't load any data you don't trust"
+   ],
+   "claim": "Notes: pickle warning"
+  },
+  {
+   "cite": "Notes p.434",
+   "contains": [
+    "shell=true since it provides security issues"
+   ],
+   "claim": "Notes: shell=True raises security problems"
+  },
+  {
+   "cite": "Tut p.40",
+   "contains": [
+    "not all data can be sorted or compared"
+   ],
+   "claim": "Tut: not all data is sortable"
+  },
+  {
+   "cite": "Tut p.41",
+   "contains": [
+    "to implement a queue, use collections.deque"
+   ],
+   "claim": "queue with deque"
+  },
+  {
+   "cite": "Tut p.90",
+   "contains": [
+    "__iter__() and __next__() methods are created automatically"
+   ],
+   "claim": "generators: automatic __iter__/__next__"
+  },
+  {
+   "cite": "Tut p.119",
+   "contains": [
+    "format(0.1, '.17f')",
+    "decimal.from_float"
+   ],
+   "claim": "float: exact repr and Decimal.from_float"
+  },
+  {
+   "cite": "Tut p.51",
+   "contains": [
+    "importlib.reload()",
+    "only imported once per interpreter session"
+   ],
+   "claim": "module imported once per session"
+  },
+  {
+   "cite": "Tut p.52",
+   "contains": [
+    "-o switch removes assert statements",
+    "-oo"
+   ],
+   "claim": "-O removes asserts; -OO removes docstrings"
+  },
+  {
+   "cite": "Tut p.113",
+   "contains": [
+    "ipython",
+    "bpython"
+   ],
+   "claim": "alternatives to the interactive interpreter"
+  },
+  {
+   "cite": "Tut p.139",
+   "contains": [
+    "type hints are optional and are not enforced by python"
+   ],
+   "claim": "optional type hints"
+  },
+  {
+   "cite": "Tut p.13",
+   "contains": [
+    "division (/) always returns a float",
+    "// operator"
+   ],
+   "claim": "/ returns float; // integer division"
+  },
+  {
+   "cite": "Tut p.129",
+   "contains": [
+    "floor division",
+    "11 // 4"
+   ],
+   "claim": "glossary: floor division"
+  },
+  {
+   "cite": "Tut p.36",
+   "contains": [
+    "lambda expressions",
+    "make_incrementor"
+   ],
+   "claim": "lambda and function factory (closure)"
+  },
+  {
+   "cite": "Tut p.55",
+   "contains": [
+    "__init__.py can just be an empty file"
+   ],
+   "claim": "__init__.py can be empty"
+  },
+  {
+   "cite": "Tut p.69",
+   "contains": [
+    "baseexception is the common base class of all exceptions",
+    "non-fatal"
+   ],
+   "claim": "BaseException; Exception base of the non-fatal ones"
+  },
+  {
+   "cite": "Tut p.132",
+   "contains": [
+    "key function",
+    "operator.itemgetter()"
+   ],
+   "claim": "key functions and itemgetter"
+  },
+  {
+   "cite": "Notes p.790",
+   "contains": [
+    "alist.pop(index)",
+    "iterate through the loop backwards"
+   ],
+   "claim": "Notes: skipping items when removing during the for"
+  },
+  {
+   "cite": "Notes p.292",
+   "contains": [
+    "o(n)",
+    "pop(0)",
+    "insert(0, v)"
+   ],
+   "claim": "Notes: pop(0)/insert(0) cost O(n)"
+  },
+  {
+   "cite": "Notes p.523",
+   "contains": [
+    "-5 and 256"
+   ],
+   "claim": "Notes: integers -5..256 are reused"
+  },
+  {
+   "cite": "Notes p.234",
+   "contains": [
+    "only init method get called of class which is inherit first"
+   ],
+   "claim": "Notes: multiple inheritance and __init__"
+  },
+  {
+   "cite": "Notes p.529",
+   "contains": [
+    "__setstate__",
+    "important_data"
+   ],
+   "claim": "Notes: unpickling does not call __init__"
+  },
+  {
+   "cite": "Notes p.140",
+   "contains": [
+    "del a[::2]"
+   ],
+   "claim": "Notes: del with slice and step"
+  },
+  {
+   "cite": "Notes p.150",
+   "contains": [
+    "list.sort() sorts a list in-place",
+    "returns the value none"
+   ],
+   "claim": "Notes: sort returns None"
+  },
+  {
+   "cite": "Notes p.787",
+   "contains": [
+    "do not check against type",
+    "duck typing",
+    "list(listing)"
+   ],
+   "claim": "Notes: do not check the type; convert"
+  },
+  {
+   "cite": "Notes p.404",
+   "contains": [
+    "re.escape()"
+   ],
+   "claim": "Notes: re.escape"
+  },
+  {
+   "cite": "Notes p.361",
+   "contains": [
+    "next(iterator[, default])"
+   ],
+   "claim": "Notes: next with a default"
+  },
+  {
+   "cite": "Notes p.451",
+   "contains": [
+    "permissionerror",
+    "connectionerror",
+    "filenotfounderror",
+    "systemexit"
+   ],
+   "claim": "Notes: exception tree"
+  },
+  {
+   "cite": "Notes p.80",
+   "contains": [
+    "from __future__ import division"
+   ],
+   "claim": "Notes: Python 2 division"
+  },
+  {
+   "cite": "Notes p.646",
+   "contains": [
+    "example.py.bak",
+    "-n flag",
+    "2to3 -w example.py"
+   ],
+   "claim": "Notes: 2to3 -w creates .bak"
+  },
+  {
+   "cite": "Notes p.625",
+   "contains": [
+    "ur is not supported"
+   ],
+   "claim": "Notes: ur prefix not supported"
+  },
+  {
+   "cite": "Notes p.273",
+   "contains": [
+    "import * only allowed at module level"
+   ],
+   "claim": "Notes: import * only at module level"
+  },
+  {
+   "cite": "Notes p.256",
+   "contains": [
+    "maketrans"
+   ],
+   "claim": "Notes: maketrans"
+  },
+  {
+   "cite": "Notes p.584",
+   "contains": [
+    "csv.writer",
+    "\"wb\""
+   ],
+   "claim": "Notes: CSV example with 'wb' (Py2)"
+  },
+  {
+   "cite": "Notes p.289",
+   "contains": [
+    "the order of keys in python dictionaries is arbitrary"
+   ],
+   "claim": "Notes: unordered dict"
+  },
+  {
+   "cite": "Notes p.38",
+   "contains": [
+    "an unordered collection of unique key-value pairs"
+   ],
+   "claim": "Notes: unordered dict"
+  },
+  {
+   "cite": "Notes p.434",
+   "contains": [
+    "shell=true"
+   ],
+   "claim": "Notes: subprocess with shell=True"
+  },
+  {
+   "cite": "Notes p.446",
+   "contains": [
+    "version ≥ 3.6",
+    "variable annotations"
+   ],
+   "claim": "Notes: variable annotation since 3.6"
+  },
+  {
+   "cite": "Notes p.447",
+   "contains": [
+    "init should be annotated to return none",
+    "self should not be annotated"
+   ],
+   "claim": "Notes: annotating __init__ -> None"
+  },
+  {
+   "cite": "Notes p.324",
+   "contains": [
+    "total_ordering",
+    "only one"
+   ],
+   "claim": "Notes: total_ordering"
+  },
+  {
+   "cite": "Notes p.385",
+   "contains": [
+    "total_ordering",
+    "__eq__, __ne__ and only one of the __lt__"
+   ],
+   "claim": "Notes: total_ordering (p.385)"
+  },
+  {
+   "cite": "Notes p.384",
+   "contains": [
+    "the 6 methods",
+    "__lt__, __gt__, __ge__, __le__, __ne__ and __eq__"
+   ],
+   "claim": "Notes: p.384 requires 6 methods (contradicts p.385)"
+  },
+  {
+   "cite": "Notes p.152",
+   "contains": [
+    "almost 2x faster"
+   ],
+   "claim": "Notes: comprehension almost 2x faster (no measurement)"
+  },
+  {
+   "cite": "Notes p.308",
+   "contains": [
+    "only groups of consecutive elements are grouped"
+   ],
+   "claim": "Notes: groupby only consecutive"
+  },
+  {
+   "cite": "Lib p.1018",
+   "contains": [
+    "as of python 3.13, free-threaded builds can disable the gil"
+   ],
+   "claim": "Lib: free-threaded build can disable the GIL"
+  },
+  {
+   "cite": "Lib p.876",
+   "contains": [
+    "from python 3.13 onward, the gil can be disabled on free threaded builds"
+   ],
+   "claim": "Lib ctypes: GIL can be disabled"
+  },
+  {
+   "cite": "Lib p.665",
+   "contains": [
+    "file formats"
+   ],
+   "claim": "Lib: File Formats chapter"
+  },
+  {
+   "cite": "Tut p.1-167",
+   "absent": [
+    "pathlib",
+    "tomllib",
+    "zoneinfo",
+    "pytest",
+    "lru_cache",
+    "ruff",
+    "flake8",
+    "pylint",
+    "poetry",
+    "pipenv"
+   ],
+   "claim": "Tutorial 3.14 does not carry these tools/modules"
+  },
+  {
+   "cite": "Tut p.1-167",
+   "absent": [
+    "asyncio.run",
+    "taskgroup",
+    "jit",
+    "sys.monitoring",
+    "subinterpreter"
+   ],
+   "claim": "Tutorial does not carry asyncio.run, TaskGroup, JIT, sys.monitoring, subinterpreters"
+  },
+  {
+   "cite": "Tut p.130",
+   "absent": [
+    "pep 779",
+    "enabled by default",
+    "default in 3.14",
+    "supported"
+   ],
+   "claim": "Tut p.130 does not say that free-threaded is the default in 3.14 (nor does it cite PEP 779)"
+  },
+  {
+   "cite": "Tut p.88",
+   "absent": [
+    "frozen=true",
+    "slots=true",
+    "kw_only",
+    "__post_init__"
+   ],
+   "claim": "Tut p.88 only presents dataclass; no frozen/slots/kw_only"
+  },
+  {
+   "cite": "Tut p.1-167",
+   "absent": [
+    "2to3"
+   ],
+   "claim": "Tutorial does not mention 2to3"
+  },
+  {
+   "cite": "Ref p.1-225",
+   "absent": [
+    "asyncio.run",
+    "taskgroup",
+    "lru_cache",
+    "pathlib",
+    "pytest",
+    "ruff",
+    "pylint",
+    "flake8",
+    "2to3"
+   ],
+   "claim": "Language Reference does not carry these modules/tools"
+  },
+  {
+   "cite": "Ref p.26",
+   "absent": [
+    "pep 750",
+    "lazy",
+    "html"
+   ],
+   "claim": "Ref p.26 (t-strings) does not cite PEP 750 nor HTML examples"
+  },
+  {
+   "cite": "Ref p.127",
+   "absent": [
+    "is deprecated",
+    "removed in version"
+   ],
+   "claim": "Ref p.127 does not say that 'except A, B' was deprecated"
+  },
+  {
+   "cite": "Notes p.1-813",
+   "absent": [
+    "taskgroup",
+    "asyncio.run",
+    "functools.cache",
+    "tomllib",
+    "pipenv",
+    "ruff",
+    "flake8",
+    "pylint",
+    "exceptiongroup",
+    "add_note"
+   ],
+   "claim": "Notes does not carry these modern features"
+  },
+  {
+   "cite": "Notes p.313-317",
+   "absent": [
+    "asyncio.run",
+    "taskgroup",
+    "asyncio.gather",
+    "create_task"
+   ],
+   "claim": "Notes asyncio chapter uses the old API (no asyncio.run/TaskGroup/gather/create_task)"
+  },
+  {
+   "cite": "Notes p.434",
+   "absent": [
+    "injection",
+    "vulnerab"
+   ],
+   "claim": "Notes p.434 does not mention shell injection (only cites security issues)"
+  },
+  {
+   "cite": "Notes p.694",
+   "absent": [
+    "insecure",
+    "deprecated",
+    "collision",
+    "not secure"
+   ],
+   "claim": "Notes p.694 lists MD5/SHA1 without a warning"
+  },
+  {
+   "cite": "Notes p.687",
+   "absent": [
+    "untrusted",
+    "security",
+    "unsafe"
+   ],
+   "claim": "Notes p.687 (pickle) without a security warning"
+  },
+  {
+   "cite": "Lib p.1-2488",
+   "absent": [
+    "2to3"
+   ],
+   "claim": "Lib 3.14 does not document 2to3"
+  },
+  {
+   "cite": "Tut p.31-32",
+   "absent": [
+    "late binding",
+    "lambda i=i"
+   ],
+   "claim": "Tut p.31-32 does not carry 'late binding' nor lambda i=i"
+  },
+  {
+   "cite": "Ref p.78",
+   "absent": [
+    "late binding",
+    "lambda i=i"
+   ],
+   "claim": "Ref p.78 does not use 'late binding' nor lambda i=i"
+  },
+  {
+   "cite": "Ref p.34",
+   "absent": [
+    "trailing comma"
+   ],
+   "claim": "p.34 does not carry the trailing comma (it is on p.111)"
+  },
+  {
+   "cite": "Notes p.234-235",
+   "absent": [
+    "c3",
+    "c3 linearization",
+    "__mro__"
+   ],
+   "claim": "Notes p.234-235 do not name C3 nor __mro__"
+  }
+ ]
+}

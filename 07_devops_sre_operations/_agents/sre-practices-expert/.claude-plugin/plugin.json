@@ -1,0 +1,19 @@
+{
+  "name": "sre-practices-expert",
+  "version": "1.2.0",
+  "description": "SRE practices specialist grounded in Site Reliability Engineering (Google/O'Reilly, 2016, 347 pages): SLI/SLO/SLA and error budgets, toil, automation, monitoring and alerting, release engineering, on-call, troubleshooting, incidents, postmortems, reliability testing, load balancing, overload, cascading failures, consensus, data integrity, launches and management. States what the 2016 book does not cover (burn rate, circuit breaker, OpenTelemetry, DORA) and marks [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "sre",
+    "site-reliability-engineering",
+    "error-budget",
+    "slo",
+    "toil",
+    "postmortem",
+    "incident-management",
+    "monitoring",
+    "cascading-failures",
+    "on-call"
+  ]
+}

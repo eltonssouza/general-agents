@@ -1,0 +1,422 @@
+# audit_tokens failures ALREADY TRIAGED in the audit (see tests/relatorio-de-fidelidade.md): backticked term absent from the
+# cited page because it is a package form (suggestion/identifier/spelling) or because of a line with several citations.
+# format: file|term|source p.pages
+references/casos-e-antipadroes.md|"\\t"|Notes p.398
+references/casos-e-antipadroes.md|'short' is 'short'|Notes p.107,792,793,523
+references/casos-e-antipadroes.md|('hello')|Notes p.178
+references/casos-e-antipadroes.md|-3 / 2 = -2|Notes p.80
+references/casos-e-antipadroes.md|.keys()/.values()/.items|Notes p.118
+references/casos-e-antipadroes.md|1000 is 1000|Notes p.107,792,793,523
+references/casos-e-antipadroes.md|5 is 5|Notes p.107,792,793,523
+references/casos-e-antipadroes.md|@property author|Notes p.612,613
+references/casos-e-antipadroes.md|Dog.tricks|Tut p.84,85
+references/casos-e-antipadroes.md|NotImplementedError|Notes p.491
+references/casos-e-antipadroes.md|Oscillator.__init__|Notes p.580
+references/casos-e-antipadroes.md|SyntaxError|Tut p.50,56
+references/casos-e-antipadroes.md|Vehicle.__init__|Notes p.610,611
+references/casos-e-antipadroes.md|[None, 'hello', 10]|Notes p.632
+references/casos-e-antipadroes.md|[[]] * n|Notes p.147,148,785,786,700
+references/casos-e-antipadroes.md|[[]] * n|Tut p.31,32
+references/casos-e-antipadroes.md|[obj] * n|Notes p.147,148,785,786,700
+references/casos-e-antipadroes.md|__import__|Tut p.50,56
+references/casos-e-antipadroes.md|_nome|Tut p.50,56
+references/casos-e-antipadroes.md|ast.literal_eval|Notes p.631
+references/casos-e-antipadroes.md|c.x = v|Notes p.238
+references/casos-e-antipadroes.md|case(1), case(2), case(3)|Notes p.603
+references/casos-e-antipadroes.md|ctypes._Py_Dealloc|Notes p.525,526
+references/casos-e-antipadroes.md|default_factory=None|Notes p.290
+references/casos-e-antipadroes.md|deque|Notes p.168,169,170,171,172
+references/casos-e-antipadroes.md|except Exception: pass|Notes p.448,449,783
+references/casos-e-antipadroes.md|float|Notes p.631
+references/casos-e-antipadroes.md|from m import *|Tut p.50,56
+references/casos-e-antipadroes.md|from pacote import *|Tut p.56
+references/casos-e-antipadroes.md|from pacote import item|Tut p.55
+references/casos-e-antipadroes.md|fs = [lambda: i for i in range(3)]|Ref p.78
+references/casos-e-antipadroes.md|fs[0]|Ref p.78
+references/casos-e-antipadroes.md|g[:3]|Notes p.157,307,308
+references/casos-e-antipadroes.md|if x == True|Notes p.786,787
+references/casos-e-antipadroes.md|import a.b.c|Tut p.55
+references/casos-e-antipadroes.md|importlib.import_module|Tut p.50,56
+references/casos-e-antipadroes.md|import|Tut p.14
+references/casos-e-antipadroes.md|lambda|Ref p.78
+references/casos-e-antipadroes.md|list(infinito)|Notes p.310,311,312,358
+references/casos-e-antipadroes.md|open('arquivo', 'shift_jis')|Notes p.640
+references/casos-e-antipadroes.md|partial(func, y=3)|Notes p.218
+references/casos-e-antipadroes.md|r"\t"|Notes p.398
+references/casos-e-antipadroes.md|strip('abc')|Notes p.259
+references/casos-e-antipadroes.md|super().__init__|Notes p.610,611
+references/casos-e-antipadroes.md|sys.modules|Tut p.51
+references/casos-e-antipadroes.md|timeout|Notes p.538,539
+references/casos-e-antipadroes.md|unpickle|Notes p.529
+references/casos-e-antipadroes.md|urlopen().read|Notes p.463,464
+references/fontes-comunitarias.md|shelve|Tut p.66
+references/frameworks.md|"".join(lista)|Notes p.699,770
+references/frameworks.md|'rb'/'wb'|Notes p.654
+references/frameworks.md|(a ** b) % m|Notes p.82,375,376
+references/frameworks.md|:nome|Notes p.670,671
+references/frameworks.md|BaseClassName.metodo(self, args)|Tut p.86,87
+references/frameworks.md|None|Notes p.319,320
+references/frameworks.md|[None] * n|Notes p.147,148
+references/frameworks.md|[[] for _ in range(n)]|Notes p.700,785
+references/frameworks.md|[[]] * n|Notes p.700,785
+references/frameworks.md|[int(s) for s in itens]|Notes p.161
+references/frameworks.md|[x for sub in l for x in sub]|Notes p.153,154
+references/frameworks.md|__hash__|Notes p.324,385
+references/frameworks.md|a or b|Notes p.90,91,92,102
+references/frameworks.md|a.update(b)|Notes p.131,155
+references/frameworks.md|annotationlib.get_annotations|Tut p.139
+references/frameworks.md|argparse.add_subparsers(dest="cmd")|Tut p.93,94
+references/frameworks.md|argparse|Tut p.113
+references/frameworks.md|array|Tut p.113
+references/frameworks.md|asyncio|Tut p.88
+references/frameworks.md|atan2(y, x)|Notes p.279
+references/frameworks.md|bisect|Tut p.113
+references/frameworks.md|caminho/python -m pip|Notes p.415,423
+references/frameworks.md|click|Tut p.93,94
+references/frameworks.md|collections.deque|Tut p.113
+references/frameworks.md|d.get(k, padrao)|Notes p.784
+references/frameworks.md|d.items|Notes p.386,387
+references/frameworks.md|d['n'] = d.get('n', 0) + 1|Notes p.532
+references/frameworks.md|d[k]|Notes p.129,130,131
+references/frameworks.md|datetime|Tut p.113
+references/frameworks.md|decimal|Tut p.113
+references/frameworks.md|del a[fatia]|Notes p.137,140
+references/frameworks.md|del a[i]|Notes p.137,140
+references/frameworks.md|dict.items|Tut p.25,131,132
+references/frameworks.md|dir(obj)|Notes p.239
+references/frameworks.md|docopt|Tut p.93,94
+references/frameworks.md|doctest|Tut p.113
+references/frameworks.md|dump/load|Notes p.298
+references/frameworks.md|dumps/loads|Notes p.298
+references/frameworks.md|email|Tut p.113
+references/frameworks.md|f(**d)|Notes p.133,134
+references/frameworks.md|fileinput.input(nome, inplace=True)|Notes p.193
+references/frameworks.md|filter(None, xs)|Notes p.173,174
+references/frameworks.md|finditer|Notes p.403
+references/frameworks.md|for a, b in itens|Notes p.33,118,119
+references/frameworks.md|for elem in seq|Notes p.142,147,786
+references/frameworks.md|for x in food|Tut p.24,46,136
+references/frameworks.md|fractions|Tut p.113
+references/frameworks.md|from m import a, b|Notes p.273
+references/frameworks.md|func(*lista)|Notes p.202,216
+references/frameworks.md|functools.wraps(func)|Notes p.223
+references/frameworks.md|getstate/setstate|Notes p.318,319,321,322
+references/frameworks.md|glob|Tut p.113
+references/frameworks.md|gzip|Tut p.113
+references/frameworks.md|heapq.nlargest/nsmallest|Notes p.388,389
+references/frameworks.md|heapq|Tut p.113
+references/frameworks.md|if k in d|Notes p.129,130,131,288,290,291
+references/frameworks.md|if x is None|Notes p.104,105
+references/frameworks.md|if/elif/else|Notes p.101
+references/frameworks.md|if/elif|Notes p.600,601,602,603
+references/frameworks.md|if/elif|Tut p.23,27
+references/frameworks.md|int('123.456')|Notes p.39
+references/frameworks.md|isfile(p) and getsize(p) > 0|Notes p.193
+references/frameworks.md|itertools.islice(gen, n)|Notes p.307,308
+references/frameworks.md|key=itemgetter(1)|Notes p.386,387
+references/frameworks.md|key=|Tut p.132
+references/frameworks.md|lambda|Ref p.78
+references/frameworks.md|len(a & b) == 0|Notes p.75,77,78
+references/frameworks.md|list(set(x))|Notes p.76,145,146
+references/frameworks.md|list(x)|Notes p.787
+references/frameworks.md|list.pop(0)|Notes p.292
+references/frameworks.md|ljust/rjust/center|Tut p.62,63
+references/frameworks.md|locale|Tut p.113
+references/frameworks.md|logger.debug('texto %s', valor)|Notes p.595
+references/frameworks.md|logging|Tut p.113
+references/frameworks.md|lzma|Tut p.113
+references/frameworks.md|make_incrementor|Tut p.31
+references/frameworks.md|next(filter(pred, xs))|Notes p.173,174
+references/frameworks.md|pop(i)|Notes p.137,140
+references/frameworks.md|pow(a, b, m)|Notes p.82,375,376
+references/frameworks.md|pprint|Tut p.113
+references/frameworks.md|profile|Tut p.113
+references/frameworks.md|pstats|Tut p.113
+references/frameworks.md|queue|Tut p.113
+references/frameworks.md|raise Classe|Tut p.70
+references/frameworks.md|raise X from e|Notes p.449,455,629,630
+references/frameworks.md|random.randint(a, b)|Notes p.319,320
+references/frameworks.md|random|Tut p.113
+references/frameworks.md|range(len(x))|Notes p.142,147,786
+references/frameworks.md|reduce(or_/and_)|Notes p.366
+references/frameworks.md|remove(v)|Notes p.137,140
+references/frameworks.md|reprlib|Tut p.113
+references/frameworks.md|reversed(x)|Notes p.144
+references/frameworks.md|sample(seq, k)|Notes p.319,320
+references/frameworks.md|self.x|Tut p.84
+references/frameworks.md|set.remove|Notes p.75
+references/frameworks.md|shell=True|Tut p.66
+references/frameworks.md|shutil|Tut p.113
+references/frameworks.md|smtplib|Tut p.113
+references/frameworks.md|statistics|Tut p.113
+references/frameworks.md|str(x)|Notes p.787
+references/frameworks.md|struct|Tut p.113
+references/frameworks.md|sum(1 for x in it if c)|Notes p.158,160,161
+references/frameworks.md|sum(1 for x in it if cond)|Notes p.160,161
+references/frameworks.md|sum(i*i for i in r)|Notes p.356,363
+references/frameworks.md|sys.argv|Tut p.113
+references/frameworks.md|sys.exit(codigo)|Tut p.94
+references/frameworks.md|sys.exit|Tut p.113
+references/frameworks.md|sys.stderr|Tut p.113
+references/frameworks.md|tarfile|Tut p.113
+references/frameworks.md|textwrap|Tut p.113
+references/frameworks.md|threading|Tut p.113
+references/frameworks.md|timeit|Tut p.113
+references/frameworks.md|try/except ValueError|Notes p.46,453
+references/frameworks.md|try/finally|Notes p.409,410,411
+references/frameworks.md|try/finally|Notes p.455,408
+references/frameworks.md|try: d[k] except KeyError|Notes p.784
+references/frameworks.md|unittest|Tut p.113
+references/frameworks.md|urllib.request|Tut p.113
+references/frameworks.md|v1 if cond else v2|Notes p.101
+references/frameworks.md|weakref|Tut p.113
+references/frameworks.md|while lista: pop|Notes p.790,791,792
+references/frameworks.md|x = x or padrao|Notes p.104,105
+references/frameworks.md|x or padrao|Notes p.102,104,105,789
+references/frameworks.md|x.reverse|Notes p.144
+references/frameworks.md|x[::-1]|Notes p.144
+references/frameworks.md|zipfile|Tut p.113
+references/frameworks.md|zlib|Tut p.113
+references/glossario.md|& - ^|Tut p.44,45
+references/glossario.md|'__main__'|Tut p.49,51
+references/glossario.md|**dict|Tut p.123,124,135
+references/glossario.md|**kwargs|Tut p.32,33,34,35
+references/glossario.md|**kwargs|Tut p.33,34,35,36
+references/glossario.md|**kwargs|Tut p.36
+references/glossario.md|-> tipo|Notes p.445,446,447
+references/glossario.md|@Base.foo.setter|Notes p.481,482,483
+references/glossario.md|@abstractmethod|Tut p.123
+references/glossario.md|@contextlib.contextmanager|Tut p.126
+references/glossario.md|@dec|Tut p.127
+references/glossario.md|@nome.setter|Notes p.481,482,483
+references/glossario.md|AttributeError|Tut p.127
+references/glossario.md|Classe.f(x)|Tut p.83
+references/glossario.md|Classe.mro|Tut p.133
+references/glossario.md|ConnectionError|Tut p.69
+references/glossario.md|FileNotFoundError|Tut p.69
+references/glossario.md|IndexError|Tut p.131
+references/glossario.md|IndexError|Tut p.137
+references/glossario.md|PermissionError|Tut p.69
+references/glossario.md|SyntaxError|Tut p.50,51
+references/glossario.md|True|Tut p.126
+references/glossario.md|TypeError|Tut p.126
+references/glossario.md|ValueError|Tut p.126
+references/glossario.md|__call__|Tut p.127
+references/glossario.md|__cause__|Tut p.71,72
+references/glossario.md|__context__|Tut p.71,72
+references/glossario.md|__defaults__|Tut p.31,32
+references/glossario.md|__dict__|Tut p.127
+references/glossario.md|__getstate__|Tut p.65,66
+references/glossario.md|__iter__|Notes p.356,357
+references/glossario.md|__lt__ __le__ __eq__ __ne__ __gt__ __ge__|Notes p.485,486
+references/glossario.md|__new__|Tut p.133
+references/glossario.md|__repr__|Tut p.59,60
+references/glossario.md|__setstate__|Tut p.65,66
+references/glossario.md|__str__|Tut p.59,60
+references/glossario.md|a = 1, 2, 3|Tut p.20,44
+references/glossario.md|a.f is a.f|Tut p.83
+references/glossario.md|assert c, msg|Ref p.117
+references/glossario.md|b c s n r l p q|Notes p.501,502,503
+references/glossario.md|backslashreplace|Tut p.138
+references/glossario.md|bytes.decode(enc)|Tut p.138
+references/glossario.md|classmethod|Tut p.83
+references/glossario.md|cmath.sqrt(-1)|Tut p.126
+references/glossario.md|copy.copy|Tut p.19
+references/glossario.md|copy.deepcopy|Tut p.19
+references/glossario.md|del nome|Tut p.137
+references/glossario.md|dict.copy|Tut p.19
+references/glossario.md|dir(m)|Tut p.53,54
+references/glossario.md|except Classe|Tut p.69
+references/glossario.md|except X as e|Tut p.69,70
+references/glossario.md|f = dec(f)|Tut p.127
+references/glossario.md|f(**dict)|Tut p.36
+references/glossario.md|f(*seq)|Tut p.36
+references/glossario.md|file|Tut p.21
+references/glossario.md|finally|Tut p.69,70
+references/glossario.md|first, *rest|Tut p.20,44
+references/glossario.md|flush|Tut p.21
+references/glossario.md|foo.bar|Tut p.127
+references/glossario.md|from m import *|Tut p.50,51
+references/glossario.md|from m import n|Tut p.50,51
+references/glossario.md|from pacote import *|Tut p.55,56
+references/glossario.md|heapq.nlargest/nsmallest|Notes p.384,385,386,387,388,389,390
+references/glossario.md|if __debug__: if not c: raise AssertionError(msg)|Ref p.117
+references/glossario.md|ignore|Tut p.138
+references/glossario.md|import m as a|Tut p.50,51
+references/glossario.md|import m|Tut p.50,51
+references/glossario.md|l[:]|Tut p.19
+references/glossario.md|lambda [params]: expr|Tut p.36,37,132
+references/glossario.md|logging.getLogger(__name__)|Tut p.49,51
+references/glossario.md|long|Tut p.131,133
+references/glossario.md|m.nome|Tut p.50,51
+references/glossario.md|math.sqrt(-1)|Tut p.126
+references/glossario.md|min(d)|Tut p.45,46,127
+references/glossario.md|min/max|Notes p.384,385,386,387,388,389,390
+references/glossario.md|most_common(n)|Notes p.288,289,290,390
+references/glossario.md|namereplace|Tut p.138
+references/glossario.md|next(it[, default])|Notes p.359,360,361
+references/glossario.md|nome: tipo|Notes p.445,446,447
+references/glossario.md|nome=|Tut p.123,124,135
+references/glossario.md|open(nome, modo, encoding=)|Tut p.63,64,65
+references/glossario.md|pos1, pos2, /, pos_ou_kw, *, kw1, kw2|Tut p.33,34,35,36
+references/glossario.md|raise Nova from e|Tut p.71,72
+references/glossario.md|replace|Tut p.138
+references/glossario.md|s[i:j:k]|Tut p.17,18,19,20,137
+references/glossario.md|set.copy|Tut p.19
+references/glossario.md|snake_case|Tut p.38,135,136
+references/glossario.md|staticmethod|Tut p.83
+references/glossario.md|str.encode(enc)|Tut p.138
+references/glossario.md|strict|Tut p.138
+references/glossario.md|strip(chars)|Notes p.255,256,257,258,259,260,261,262,263,264,265,266,267,380
+references/glossario.md|struct.pack/unpack|Tut p.65,66
+references/glossario.md|sys.getrecursionlimit/setrecursionlimit|Notes p.438,439,440,441,442,443
+references/glossario.md|sys.modules|Tut p.50,51
+references/glossario.md|type(nome, bases, dict)|Tut p.133
+references/glossario.md|x = property(getX, setX)|Notes p.481,482,483
+references/glossario.md|x if c else y|Tut p.41,42,43,127,132
+references/glossario.md|xmlcharrefreplace|Tut p.138
+references/glossario.md|yield|Tut p.126
+references/procedimentos.md|(x,)|Ref p.34,111
+references/procedimentos.md|*resto|Ref p.114
+references/procedimentos.md|-f/--fix|Notes p.645,646
+references/procedimentos.md|-o DIR|Notes p.645,646
+references/procedimentos.md|-x/--nofix|Notes p.645,646
+references/procedimentos.md|2to3 arquivo.py|Notes p.645,646
+references/procedimentos.md|@functools.total_ordering|Ref p.52
+references/procedimentos.md|Decimal.from_float(x)|Tut p.119
+references/procedimentos.md|None|Tut p.37
+references/procedimentos.md|Popen(cmd, stdout=PIPE)|Notes p.433,434
+references/procedimentos.md|[k for k in d if d[k] == v]|Notes p.381,382
+references/procedimentos.md|__hash__ = Pai.__hash__|Ref p.53
+references/procedimentos.md|a = b = []|Ref p.32
+references/procedimentos.md|del sys.modules['mod']|Notes p.274,275
+references/procedimentos.md|dict(zip(chaves, combinacao))|Notes p.135
+references/procedimentos.md|dir(modulo)|Notes p.46,47,48,49,50,56
+references/procedimentos.md|dir(obj)|Notes p.46,47,48,49,50,56
+references/procedimentos.md|except A, B|Ref p.117,127,128,129
+references/procedimentos.md|f.__defaults__|Ref p.36,44
+references/procedimentos.md|for i in range((fim - inicio).days): inicio + i*passo|Notes p.72
+references/procedimentos.md|format(x, '.17f')|Tut p.119
+references/procedimentos.md|from importlib import reload; reload(mod)|Notes p.274,275
+references/procedimentos.md|from pkg import nome|Ref p.121
+references/procedimentos.md|from x import *|Ref p.121
+references/procedimentos.md|get_type_hints|Ref p.123,174
+references/procedimentos.md|global nome|Tut p.80,81
+references/procedimentos.md|hashlib.pbkdf2_hmac('sha256', senha_em_bytes, salt, iteracoes)|Notes p.778
+references/procedimentos.md|help(obj)|Notes p.46,47,48,49,50,56
+references/procedimentos.md|itemgetter('campo')|Notes p.138,139
+references/procedimentos.md|itertools.product(*valores)|Notes p.135
+references/procedimentos.md|key=attrgetter('campo')|Notes p.138,139
+references/procedimentos.md|next(k for k in d if d[k] == v)|Notes p.381,382
+references/procedimentos.md|nonlocal nome|Tut p.80,81
+references/procedimentos.md|obj.attr = obj.attr + 1|Ref p.114
+references/procedimentos.md|obj.f = func|Ref p.37
+references/procedimentos.md|os.path.isdir(p)|Notes p.303,304
+references/procedimentos.md|passo = timedelta(days=1)|Notes p.72
+references/procedimentos.md|print >>f, x|Notes p.626
+references/procedimentos.md|print x|Notes p.186,626
+references/procedimentos.md|print x|Notes p.626
+references/procedimentos.md|print(x)|Notes p.626
+references/procedimentos.md|print(x, end="")|Notes p.186,626
+references/procedimentos.md|print(x, file=f)|Notes p.626
+references/procedimentos.md|python3 --version|Notes p.28
+references/procedimentos.md|python3 -m http.server [porta]|Notes p.563,566
+references/procedimentos.md|raise Nova("msg") from exc|Tut p.71,72
+references/procedimentos.md|return valor|Ref p.118
+references/procedimentos.md|return/break/continue|Ref p.117,127,128,129
+references/procedimentos.md|rsplit(sep, maxsplit=1)|Notes p.260,261
+references/procedimentos.md|sys.getrefcount(obj)|Ref p.171,177
+references/procedimentos.md|try/except*|Ref p.211,212,213,214,215,216,217,218,219,220,221,222,223,224,225
+references/procedimentos.md|try/finally|Ref p.127,128
+references/procedimentos.md|try: os.makedirs(p)|Notes p.303,304
+references/procedimentos.md|x.as_integer_ratio|Tut p.119
+references/regras-da-linguagem.md|* @ / // %|Ref p.110,111,112
+references/regras-da-linguagem.md|A-Z a-z _|Ref p.18
+references/regras-da-linguagem.md|C[int]|Ref p.61,62,63
+references/regras-da-linguagem.md|False None True and as assert async await break class continue def del elif else except finally for from global if import in is lambda nonlocal not or pass raise return try while with yield|Ref p.19
+references/regras-da-linguagem.md|\N \u \U|Ref p.21,22,23
+references/regras-da-linguagem.md|\\ \' \"|Ref p.21,22,23
+references/regras-da-linguagem.md|\a \b \f \n \r \t \v|Ref p.21,22,23
+references/regras-da-linguagem.md|__doc__ __name__ __qualname__(3.3) __module__ __defaults__ __code__ __dict__ __annotations__ __annotate__(3.14) __kwdefaults__ __type_params__(3.12)|Ref p.35,36
+references/regras-da-linguagem.md|__getitem__|Ref p.173
+references/regras-da-linguagem.md|__hash__ = ParentClass.__hash__|Ref p.52,53
+references/regras-da-linguagem.md|__iter__ = None|Ref p.50,66
+references/regras-da-linguagem.md|__len__|Ref p.173
+references/regras-da-linguagem.md|a is b|Ref p.32
+references/regras-da-linguagem.md|b r f t u|Ref p.21
+references/regras-da-linguagem.md|eval/exec|Ref p.78
+references/regras-da-linguagem.md|exec|Ref p.19
+references/regras-da-linguagem.md|int/bytes/tuple|Ref p.57
+references/regras-da-linguagem.md|invalid_*|Ref p.12,151
+references/regras-da-linguagem.md|list(view)|Ref p.173
+references/versoes-e-datado.md|*args: *expr|Ref p.140
+references/versoes-e-datado.md|OSError|Notes p.197,192,249
+references/versoes-e-datado.md|Requests 2.6.0/2.7.0|Tut p.108,109
+references/versoes-e-datado.md|__cmp__|Notes p.104,180,181
+references/versoes-e-datado.md|__metaclass__ = X|Notes p.242,243,244,615,690
+references/versoes-e-datado.md|_zstd|Tut p.5,6
+references/versoes-e-datado.md|class X(object)|Notes p.226,227,230,231,492,788
+references/versoes-e-datado.md|code.replace|Ref p.47
+references/versoes-e-datado.md|collections.abc|Notes p.197,192,249
+references/versoes-e-datado.md|collections.abc|Notes p.197,390
+references/versoes-e-datado.md|compression.zstd|Tut p.5,6
+references/versoes-e-datado.md|datetime.timezone|Notes p.65
+references/versoes-e-datado.md|distutils.core.setup|Notes p.435,436
+references/versoes-e-datado.md|except TailRecurseException, e|Notes p.455
+references/versoes-e-datado.md|except X, e|Notes p.628
+references/versoes-e-datado.md|execfile(activate_this)|Notes p.706,710
+references/versoes-e-datado.md|itertools.accumulate|Notes p.310
+references/versoes-e-datado.md|library-index|Tut p.60,61,72,117
+references/versoes-e-datado.md|map(None, *seq)|Notes p.370
+references/versoes-e-datado.md|print >> f, s|Notes p.29,183,186,191,192,460,626
+references/versoes-e-datado.md|print x|Notes p.29,183,186,191,192,460,626
+references/versoes-e-datado.md|raise E, "x"|Notes p.628
+references/versoes-e-datado.md|subprocess|Notes p.525,526
+references/versoes-e-datado.md|sudo pip|Notes p.421
+references/versoes-e-datado.md|sum(a)|Tut p.60,62,95,96
+references/versoes-e-datado.md|super(Classe, self)|Notes p.229
+references/versoes-e-datado.md|sys-path-init|Tut p.60,61,72,117
+references/versoes-e-datado.md|textseq|Tut p.60,61,72,117
+references/versoes-e-datado.md|update("texto")|Notes p.694,778,779
+skills/python-code-review/SKILL.md|eval|Notes p.434
+skills/python-code-review/SKILL.md|except Exception: pass|Notes p.448,449,783
+skills/python-code-review/SKILL.md|if x is None|Notes p.104,105
+skills/python-code-review/SKILL.md|lambda i=i|Ref p.103,140
+skills/python-code-review/SKILL.md|lambda|Ref p.78
+skills/python-code-review/SKILL.md|make_incrementor|Ref p.103,140
+skills/python-code-review/SKILL.md|pickle.load|Notes p.434
+skills/python-code-review/SKILL.md|try/finally|Tut p.74
+skills/python-code-review/SKILL.md|x or padrao|Notes p.104,105
+skills/python-error-triage/SKILL.md|ConfigParser|Tut p.134
+skills/python-error-triage/SKILL.md|Queue|Tut p.134
+skills/python-error-triage/SKILL.md|RuntimeError|Tut p.23,24,47
+skills/python-error-triage/SKILL.md|[[]] * n|Ref p.32,103
+skills/python-error-triage/SKILL.md|except E, e|Notes p.626,627,628,629,630,631,632,633,642,643
+skills/python-error-triage/SKILL.md|list(d)|Tut p.23,24,47
+skills/python-error-triage/SKILL.md|urllib2|Tut p.134
+skills/python-py2-to-py3/SKILL.md|except A, B|Ref p.127
+skills/python-py2-to-py3/SKILL.md|items()/keys()/values|Notes p.627,632,633,642,643
+skills/python-py2-to-py3/SKILL.md|iteritems/iterkeys/itervalues|Notes p.627,632,633,642,643
+skills/python-py2-to-py3/SKILL.md|next(it)|Notes p.627,632,633,642,643
+skills/python-py2-to-py3/SKILL.md|print >>f, x|Notes p.626
+skills/python-py2-to-py3/SKILL.md|print x|Notes p.626
+skills/python-py2-to-py3/SKILL.md|print(x)|Notes p.626
+skills/python-py2-to-py3/SKILL.md|print(x, file=f)|Notes p.626
+skills/python-py2-to-py3/SKILL.md|py2-except-comma|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-has-key|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-iter-dict|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-long-literal|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-module-names|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-print|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-raw-input|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-types|Ref p.127
+skills/python-py2-to-py3/SKILL.md|py2-xrange|Ref p.127
+skills/python-py2-to-py3/SKILL.md|syntax-error|Ref p.127
+skills/python-stdlib-lookup/SKILL.md|asyncio|Notes p.584
+skills/python-stdlib-lookup/SKILL.md|collections|Notes p.584
+skills/python-stdlib-lookup/SKILL.md|csv.reader|Notes p.584
+skills/python-stdlib-lookup/SKILL.md|fontes-comunitarias.md|Notes p.584
+skills/python-stdlib-lookup/SKILL.md|itertools|Notes p.584
+skills/python-stdlib-lookup/SKILL.md|os.path|Notes p.584
+skills/python-version-features/SKILL.md|__annotate__|Ref p.127
+skills/python-version-features/SKILL.md|except A, B|Ref p.127

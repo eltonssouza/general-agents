@@ -1,0 +1,16 @@
+{
+  "name": "svelte-astro-expert",
+  "version": "1.0.0",
+  "description": "Overview agent (based on documentation captures) on Svelte, SvelteKit and Astro: The Svelte Handbook (freeCodeCamp, header 22 Oct 2019, Svelte version not declared, pre-runes syntax), the SvelteKit introduction (2026 capture) and the Astro Docs landing (v7 banner; practically landing only). .svelte components, state, $:, props, context/stores, slots, lifecycle, bindings, events; SvelteKit (router, SSR/CSR/prerender, Vite, HMR); Astro only named. Everything [DATED]; many topics NOT COVERED. Does not cover React/Next, Vue/Nuxt or Angular.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "astro",
+    "components",
+    "stores",
+    "vite",
+    "ssr"
+  ]
+}

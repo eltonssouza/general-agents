@@ -1,0 +1,1299 @@
+{
+  "topics": {
+    "latencia_vs_banda": {
+      "name": "Latency versus bandwidth",
+      "pages": [
+        21,
+        23,
+        24,
+        25,
+        27,
+        30,
+        195,
+        196
+      ],
+      "citation": "HPBN p.21, 23, 24, 25, 27, 30, 195, 196",
+      "summary": "Latency is the time between sending and receiving a packet; bandwidth is the path's maximum throughput. Latency adds up propagation, transmission, processing and queuing. For ordinary browsing the RTT limits load time: above about 5 Mbps more bandwidth yields little, while every 20 ms less latency improves load time linearly. That is why the book says to reduce round trips, move data closer to the client and hide latency with caching and prefetch.",
+      "key_mechanisms": [
+        "Four delays: propagation, transmission, processing and queuing (p.23)",
+        "Fiber at about 200,000,000 m/s; Table 1-1: fiber RTT from 42 ms (New York–San Francisco) to 160 ms (New York–Sydney), optimistic values (p.24, 25)",
+        "Bufferbloat: buffers that are too large cause high and variable latency (p.24)",
+        "Belshe study: 5 to 10 Mbps yields about 5%; every 20 ms less RTT gives a linear gain (p.195, 196)",
+        "Recipe: reduce round trips, move data closer, hide latency (p.30)",
+        "traceroute measures the delay hop by hop (p.27)"
+      ],
+      "ref": "fundamentos-tcp-e-gargalos-de-transporte.md",
+      "keywords": [
+        "rtt",
+        "latencia",
+        "banda",
+        "bandwidth",
+        "bufferbloat",
+        "traceroute",
+        "cdn",
+        "latency",
+        "round trip"
+      ]
+    },
+    "tcp_handshake_slow_start": {
+      "name": "TCP: handshake and slow-start",
+      "pages": [
+        32,
+        33,
+        37,
+        38,
+        39,
+        41,
+        43,
+        44
+      ],
+      "citation": "HPBN p.32, 33, 37, 38, 39, 41, 43, 44",
+      "summary": "Every new TCP connection pays a full round trip in the three-way handshake before any data. Then slow-start limits sending to the cwnd, which grows by one segment per ACK, that is, doubles every RTT. The book computes 224 ms just to reach 64 KB with a 56 ms RTT and an initial cwnd of 4, and shows a 20 KB GET that takes 264 ms on a new connection and 96 ms on a reused one.",
+      "key_mechanisms": [
+        "Three-way handshake: SYN, SYN-ACK, ACK; 1 RTT before data (p.32, 33)",
+        "Data in flight = minimum of rwnd and cwnd (p.38)",
+        "Initial cwnd: 1, then 4 (RFC 2581), then 10 (RFC 6928, April 2013) [DATED] (p.38)",
+        "Equation 2-1: time = RTT × log2(N / initial cwnd) (p.39)",
+        "20 KB example, RTT 56 ms: 264 ms on a new connection, 96 ms reused (p.43, 44)",
+        "Slow-start restart: resets the cwnd after idle time; turn it off on the server (p.41)"
+      ],
+      "ref": "fundamentos-tcp-e-gargalos-de-transporte.md",
+      "keywords": [
+        "tcp",
+        "handshake",
+        "slow-start",
+        "slow start",
+        "cwnd",
+        "initcwnd",
+        "syn"
+      ]
+    },
+    "tcp_fluxo_bdp_hol": {
+      "name": "TCP: flow control, BDP and head-of-line",
+      "pages": [
+        35,
+        36,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "citation": "HPBN p.35, 36, 45, 46, 47, 48, 49",
+      "summary": "The receiver advertises the rwnd window in every ACK; without window scaling it is at most 65,535 bytes. The bandwidth-delay product (BDP) is the maximum data in flight and defines the window needed: 10 Mbps with a 100 ms RTT requires at least 122.1 KB. Loss is TCP's congestion signal; the loss of one packet holds the following ones in the receiver's buffer (head-of-line), which causes jitter and favors UDP for audio, video and games.",
+      "key_mechanisms": [
+        "Window scaling (RFC 1323) raises the rwnd up to 1 GB; check it with sysctl (p.36, 37)",
+        "BDP = capacity × delay; a 16 KB window and a 100 ms RTT give a ceiling of 1.31 Mbps (p.46, 47)",
+        "Congestion avoidance: loss shrinks the window; PRR in Linux 3.2+ [DATED] (p.45)",
+        "HoL in TCP: a lost packet holds the following ones until retransmission (p.48)",
+        "Loss-tolerant, jitter-sensitive applications prefer UDP (p.49)"
+      ],
+      "ref": "fundamentos-tcp-e-gargalos-de-transporte.md",
+      "keywords": [
+        "rwnd",
+        "window scaling",
+        "bdp",
+        "hol",
+        "head-of-line",
+        "jitter",
+        "congestionamento",
+        "prr",
+        "congestion",
+        "flow control",
+        "bandwidth-delay product"
+      ]
+    },
+    "tcp_otimizacao_servidor": {
+      "name": "TCP: server optimization checklist",
+      "pages": [
+        34,
+        41,
+        44,
+        50,
+        51,
+        52
+      ],
+      "citation": "HPBN p.34, 41, 44, 50, 51, 52",
+      "summary": "The book says to update the kernel (Linux 3.2+), use an initial cwnd of 10, turn off slow-start after idle, keep window scaling on, eliminate redundant transfers, compress, move servers closer to the user and reuse connections. TCP Fast Open is treated as a new option that requires support on both sides.",
+      "key_mechanisms": [
+        "Checklist (p.52): kernel 3.2+, cwnd = 10, no slow-start after idle, window scaling, fewer bytes, nearby servers, connection reuse",
+        "sysctl -w net.ipv4.tcp_slow_start_after_idle=0 (p.41)",
+        "ss --options --extended --memory --processes --info shows the sockets (p.51)",
+        "TFO: data in the SYN, only on repeat connections with a cookie; Linux 3.7+ [DATED] (p.34, 51)",
+        "cwnd 10 is the default from kernel 2.6.39 (p.44)"
+      ],
+      "ref": "fundamentos-tcp-e-gargalos-de-transporte.md",
+      "keywords": [
+        "sysctl",
+        "tfo",
+        "fast open",
+        "kernel",
+        "checklist tcp",
+        "ss",
+        "tcp checklist",
+        "server tuning",
+        "tcp optimization"
+      ]
+    },
+    "udp_nat_stun_turn_ice": {
+      "name": "UDP, NAT and traversal (STUN, TURN, ICE)",
+      "pages": [
+        53,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "citation": "HPBN p.53, 55, 56, 57, 58, 59, 60, 61, 62, 63",
+      "summary": "UDP is a protocol with no guarantees: no guaranteed delivery, no ordering, no connection state, no congestion control; in exchange it has no head-of-line blocking and preserves message boundaries. NAT keeps tables that expire on a timer, and the book gives no fixed timeout value. STUN discovers the public address; TURN relays as a last resort; ICE picks the best path among direct, STUN and TURN. Designing your own protocol over UDP risks ending up with a poorly built TCP.",
+      "key_mechanisms": [
+        "UDP non-services: no ACK, no ordering, no state, no congestion control (p.55)",
+        "NAT: UDP entries expire on a timer; bidirectional keepalives renew them (p.57, 58)",
+        "STUN (RFC 5389): the binding request reveals the public IP and port (p.59, 60)",
+        "TURN (RFC 5766): last-resort relay, high cost (p.60, 61)",
+        "libjingle: 92% direct connections and 8% with a relay [DATED] (p.61)",
+        "RFC 5405: guidelines for UDP users; minimum keepalive of 15 s (p.62, 63)"
+      ],
+      "ref": "udp-e-protocolos-de-transporte-alternativos.md",
+      "keywords": [
+        "udp",
+        "nat",
+        "stun",
+        "turn",
+        "ice",
+        "datagrama",
+        "keepalive",
+        "datagram",
+        "nat traversal"
+      ]
+    },
+    "tls_handshake_custo": {
+      "name": "TLS: handshake and cost in round trips",
+      "pages": [
+        66,
+        68,
+        69,
+        70,
+        83
+      ],
+      "citation": "HPBN p.66, 68, 69, 70, 83",
+      "summary": "The book covers SSL 3.0 through TLS 1.2. The full handshake requires two round trips after TCP; the abbreviated one, one. In the worst case, TCP plus a full TLS handshake cost three RTTs before any data (168 ms with a 56 ms RTT). Public-key cryptography is used only for setup; afterwards the symmetric key does the work. TLS 1.3 and 0-RTT do not appear in the book.",
+      "key_mechanisms": [
+        "TLS services: encryption, authentication, integrity (p.66, 67)",
+        "Full = 2 RTTs; abbreviated = 1 RTT (p.70)",
+        "TCP + TLS in the worst case = 3 RTTs; 168 ms with a 56 ms RTT (p.83)",
+        "DTLS (RFC 6347) adapts TLS to datagrams (p.66)",
+        "New protocols use HTTPS to get through intermediaries (p.68)"
+      ],
+      "ref": "tls-handshakes-resumption-e-alpn.md",
+      "keywords": [
+        "tls",
+        "ssl",
+        "handshake",
+        "https",
+        "rtt",
+        "tls handshake",
+        "tls cost"
+      ]
+    },
+    "tls_retomada_sessao": {
+      "name": "TLS: session resumption (IDs and tickets)",
+      "pages": [
+        73,
+        74,
+        75,
+        85
+      ],
+      "citation": "HPBN p.73, 74, 75, 85",
+      "summary": "Session identifiers: the server keeps a cache and the client presents the ID again; it eliminates one round trip and the public-key cryptography, but requires per-client state. Session tickets (RFC 5077): the server hands over the session data encrypted with a key only it holds, and the client presents it again; no cache needed. With several servers, all of them need the same ticket key, with rotation. The book recommends enabling both mechanisms.",
+      "key_mechanisms": [
+        "32-byte session ID in the ServerHello; server-side cache (p.73)",
+        "Resumption eliminates one RTT and the public-key operation (p.74)",
+        "Session ticket in the ClientHello SessionTicket extension; stateless resumption (p.75)",
+        "Checklist: shared cache, timeout, monitor statistics, IDs and tickets together (p.85)"
+      ],
+      "ref": "tls-handshakes-resumption-e-alpn.md",
+      "keywords": [
+        "session ticket",
+        "session id",
+        "retomada",
+        "resumption",
+        "rfc 5077",
+        "session resumption",
+        "session tickets"
+      ]
+    },
+    "tls_alpn_sni": {
+      "name": "TLS: ALPN, NPN and SNI",
+      "pages": [
+        71,
+        72,
+        73
+      ],
+      "citation": "HPBN p.71, 72, 73",
+      "summary": "ALPN negotiates the application protocol inside the TLS handshake: the client lists, the server chooses, with no extra round trip. It replaces NPN, which came from SPDY and had the order reversed. SNI sends the hostname in the handshake so that an IP with several sites picks the right certificate; old clients (IE on Windows XP, Android 2.2) do not support it.",
+      "key_mechanisms": [
+        "ALPN: ProtocolNameList in the ClientHello, ProtocolName in the ServerHello (p.72)",
+        "NPN obsolete [DATED] (p.72)",
+        "HTTP Upgrade would cost another round trip over HTTPS (p.71)",
+        "SNI is the TLS equivalent of the Host header (p.73)"
+      ],
+      "ref": "tls-handshakes-resumption-e-alpn.md",
+      "keywords": [
+        "alpn",
+        "npn",
+        "sni",
+        "upgrade"
+      ]
+    },
+    "tls_certificados_revogacao": {
+      "name": "TLS: chain of trust, revocation, OCSP and HSTS",
+      "pages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        88,
+        89,
+        90
+      ],
+      "citation": "HPBN p.75, 76, 77, 78, 79, 80, 88, 89, 90",
+      "summary": "Authentication uses transitive trust: the browser ships the root CAs. Revocation can be by CRL (a list that only grows) or OCSP (a real-time query that blocks navigation and exposes the sites visited). The chain should include all intermediates and no superfluous certificate; a well-managed chain can stay at 2 to 3 KB. With OCSP stapling the server attaches the signed response; HSTS makes the client convert to HTTPS without a redirect.",
+      "key_mechanisms": [
+        "CRL (RFC 5280) and OCSP (RFC 2560): advantages and problems (p.79, 80)",
+        "Ideal chain: site + intermediate; root outside the chain (p.89)",
+        "A sample chain of 5,323 bytes overflows the old initial cwnd (p.88, 89)",
+        "OCSP stapling: a response of 400 to 4,000 bytes can overflow the cwnd (p.89, 90)",
+        "HSTS: Strict-Transport-Security: max-age=31536000 (p.90)"
+      ],
+      "ref": "tls-handshakes-resumption-e-alpn.md",
+      "keywords": [
+        "certificado",
+        "ocsp",
+        "crl",
+        "stapling",
+        "hsts",
+        "revogacao",
+        "cadeia",
+        "certificate",
+        "revocation",
+        "certificate chain",
+        "chain of trust"
+      ]
+    },
+    "tls_otimizacao_checklist": {
+      "name": "TLS: optimization checklist",
+      "pages": [
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        91
+      ],
+      "citation": "HPBN p.81, 82, 83, 84, 86, 87, 88, 91",
+      "summary": "After applying the TCP best practices: update libraries, enable resumption, terminate TLS close to the user, fit the TLS record into one TCP segment (about 1,400 bytes), keep the chain small, turn off TLS compression because of CRIME, configure SNI, OCSP stapling and HSTS, and do not mix HTTP and HTTPS content. The book's CPU cost numbers are from 2010 and serve as an order of magnitude.",
+      "key_mechanisms": [
+        "TLS record: maximum of 16 KB; one record per TCP segment (p.81, 86, 87)",
+        "TLS compression turned off (CRIME, 2012) (p.87)",
+        "Early termination with a connection pool to the origin (p.83, 84)",
+        "Full performance checklist (p.91)",
+        "Test: openssl s_client -state -CAfile ... -connect host:443 (p.91, 93)"
+      ],
+      "ref": "tls-handshakes-resumption-e-alpn.md",
+      "keywords": [
+        "tls checklist",
+        "crime",
+        "compressao tls",
+        "registro tls",
+        "early termination",
+        "tls compression",
+        "tls record",
+        "tls optimization"
+      ]
+    },
+    "wifi": {
+      "name": "WiFi: medium access and variability",
+      "pages": [
+        108,
+        109,
+        111,
+        112,
+        113,
+        114,
+        115
+      ],
+      "citation": "HPBN p.108, 109, 111, 112, 113, 114, 115",
+      "summary": "WiFi uses CSMA/CA on a shared medium with no central scheduler. There is no guarantee of bandwidth or latency: the 2.4 GHz band has only three non-overlapping channels, and the book's measurement shows a median of 6.22 ms against 0.90 ms at 5 GHz. The book recommends continuously adapting the bitrate and using WiFi for large downloads when possible.",
+      "key_mechanisms": [
+        "CSMA/CA: transmits when the channel is idle and waits for an ACK (p.108)",
+        "Channels 1, 6 and 11 at 2.4 GHz (p.111)",
+        "Table 6-2: ping to the gateway, 2.4 GHz median 6.22 ms; 5 GHz median 0.90 ms (p.112)",
+        "Adaptive streaming (ABR) in 5 to 10 s chunks (p.115)",
+        "Wi-Fi offloading for data-intensive apps (p.113, 114)"
+      ],
+      "ref": "redes-moveis-rrc-state-machine-e-tail-time.md",
+      "keywords": [
+        "wifi",
+        "wi-fi",
+        "802.11",
+        "abr",
+        "bitrate",
+        "adaptive bitrate",
+        "wireless"
+      ]
+    },
+    "redes_moveis_geracoes": {
+      "name": "Mobile networks: generations, LTE and HSPA+",
+      "pages": [
+        118,
+        122,
+        123,
+        124,
+        125,
+        128
+      ],
+      "citation": "HPBN p.118, 122, 123, 124, 125, 128",
+      "summary": "Typical ranges from Table 7-2: 2G at 100 to 400 Kbit/s and 300 to 1000 ms; 3G at 0.5 to 5 Mbit/s and 100 to 500 ms; 4G at 1 to 50 Mbit/s and under 100 ms. Peak rates hold for ideal conditions; assume the lower bound for throughput and the upper bound for latency. 4G is a set of requirements (IMT-Advanced), and carriers apply the label to LTE and most of HSPA+. The book says to plan for several generations and expects older networks to remain for at least another decade (relative to 2013).",
+      "key_mechanisms": [
+        "Table 7-2: throughput and latency by generation (p.118)",
+        "3GPP (GSM, UMTS, HSPA, LTE) and 3GPP2 (CDMA, EV-DO) (p.119, 121, 122)",
+        "Table 7-6: HSPA+, LTE and LTE-Advanced (p.128)",
+        "LTE user-plane latency: under 5 ms (p.128)"
+      ],
+      "ref": "redes-moveis-rrc-state-machine-e-tail-time.md",
+      "keywords": [
+        "3g",
+        "4g",
+        "lte",
+        "hspa",
+        "mobile",
+        "celular",
+        "geracao",
+        "cellular",
+        "mobile generations",
+        "mobile network"
+      ]
+    },
+    "rrc_state_machine": {
+      "name": "RRC: radio state machine",
+      "pages": [
+        131,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "citation": "HPBN p.131, 133, 134, 135, 136, 137, 138, 139",
+      "summary": "The RRC decides who talks when, with what bandwidth and power; in LTE it sits at the tower. LTE has Idle (low power, under 15 mW) and Connected (1,000 to 3,500 mW), with DRX substates. Promotion from Idle costs up to 100 ms in LTE; in HSPA the FACH state is intermediate and the Idle to DCH transition can take up to 2 s. The RRC relies on timers to demote the state, because it does not know when the transfer ends. There is no API to control it.",
+      "key_mechanisms": [
+        "LTE: Idle and Connected; Continuous Reception, Short DRX, Long DRX (p.135, 136)",
+        "Table 7-9: idle to connected < 100 ms, DRX to connected < 50 ms (p.137)",
+        "HSPA: Idle, Cell DCH, Cell FACH; Idle to DCH up to 2 s (p.137, 138)",
+        "EV-DO: only Idle and Connected (p.139)",
+        "The radio is the second largest consumer, behind the screen (p.133)"
+      ],
+      "ref": "redes-moveis-rrc-state-machine-e-tail-time.md",
+      "keywords": [
+        "rrc",
+        "radio",
+        "idle",
+        "connected",
+        "fach",
+        "dch",
+        "drx",
+        "estado",
+        "state machine",
+        "radio state"
+      ]
+    },
+    "energy_tail_polling_movel": {
+      "name": "Energy tail, polling and keepalives on mobile",
+      "pages": [
+        140,
+        141,
+        160,
+        161,
+        162
+      ],
+      "citation": "HPBN p.140, 141, 160, 161, 162",
+      "summary": "Every send, however small, promotes the radio to high power and leaves it there until the timers expire (energy tail). The Pandora case: pings every 60 s were 0.2% of the bytes and 46% of the app's energy. Polling is very expensive; prefer push, aggregate and defer what is not critical. With the book's assumptions, polling every minute costs 600 J per hour, about 3% of the battery. Application keepalives are rarely needed: carrier NAT timeouts are 5 to 30 minutes. The book does not fix a typical tail time.",
+      "key_mechanisms": [
+        "Pandora case: 0.2% of the bytes, 46% of the energy (p.141)",
+        "Rules: minimize polling, use push, aggregate, defer (p.160)",
+        "Nagle at the application layer: push when the radio is already active (p.161)",
+        "Calculation: 5 Wh = 18,000 J; 10 J per cycle; 600 J/h (p.162)",
+        "A keepalive of ~5 min covers a 5 to 30 min NAT (p.162)"
+      ],
+      "ref": "redes-moveis-rrc-state-machine-e-tail-time.md",
+      "keywords": [
+        "energy tail",
+        "tail",
+        "bateria",
+        "battery",
+        "polling movel",
+        "pandora",
+        "keepalive movel",
+        "push",
+        "mobile polling",
+        "mobile keepalive",
+        "power",
+        "energy"
+      ]
+    },
+    "mobile_otimizacao": {
+      "name": "Optimizing for mobile networks (ch. 8)",
+      "pages": [
+        157,
+        158,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169
+      ],
+      "citation": "HPBN p.157, 158, 163, 164, 165, 166, 167, 168, 169",
+      "summary": "Budget for the first request after idle: +100 ms on 4G, +150 to 500 ms on 3.5G+, +500 to 2,500 ms on 3G. Decouple the UI from the network, do not store bandwidth estimates, treat loss of connectivity as the norm, use retry with backoff and download in bursts so the radio can return to Idle. For large downloads, fetch everything at once or use ABR; offer WiFi. TCP, UDP and TLS optimizations count double on mobile.",
+      "key_mechanisms": [
+        "Table 8-1: latency of a simple request, 100–600 ms on 4G and 200–3,500 ms on 3G (p.163)",
+        "Extra cost of the first packet after idle (p.164)",
+        "Do not cache or guess the network state; backoff (p.166, 167)",
+        "Burst your data and return to idle (p.167)",
+        "Prefetch guided by usage patterns (p.168)"
+      ],
+      "ref": "redes-moveis-rrc-state-machine-e-tail-time.md",
+      "keywords": [
+        "mobile",
+        "movel",
+        "burst",
+        "prefetch movel",
+        "backoff",
+        "offline",
+        "mobile optimization",
+        "mobile prefetch"
+      ]
+    },
+    "http_historia_keepalive": {
+      "name": "HTTP: history and keep-alive",
+      "pages": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        179,
+        207,
+        208,
+        209,
+        210
+      ],
+      "citation": "HPBN p.173, 174, 175, 176, 177, 179, 207, 208, 209, 210",
+      "summary": "HTTP 0.9 and 1.0 closed the connection after every request, which was a big penalty. 1.1 (RFC 2068, later 2616) made keep-alive the default. With keep-alive the second request on the same connection costs 1 RTT instead of 2; for N requests the saving is (N − 1) × RTT. In the book's example: 284 ms on separate connections, 228 ms with keep-alive, 172 ms with pipelining.",
+      "key_mechanisms": [
+        "HTTP 0.9: one ASCII line, connection closed at the end (p.173, 174)",
+        "HTTP 1.0 documented in RFC 1945, informational only (p.175)",
+        "HTTP 1.1: keep-alive by default; Connection: close to end it (p.179)",
+        "Saving of (N − 1) × RTT (p.210)",
+        "Minimum for one request on a new connection: 2 RTTs (p.207, 208)"
+      ],
+      "ref": "http1x-keepalive-pipelining-e-sharding.md",
+      "keywords": [
+        "keep-alive",
+        "keepalive http",
+        "http 1.1",
+        "http 1.0",
+        "conexao persistente",
+        "persistent connection",
+        "http keepalive"
+      ]
+    },
+    "http1x_pipelining_hol": {
+      "name": "HTTP 1.x: pipelining and head-of-line",
+      "pages": [
+        210,
+        211,
+        212,
+        213,
+        214
+      ],
+      "citation": "HPBN p.210, 211, 212, 213, 214",
+      "summary": "Pipelining moves the queue from the client to the server, but HTTP 1.x requires in-order responses: a slow response blocks the following ones (head-of-line). Intermediaries abort or serialize, and most browsers keep it turned off. It only pays off when you control both client and server, as in the iTunes case (300% gain on slow networks), handling aborts, idempotence and intermediaries.",
+      "key_mechanisms": [
+        "The keep-alive FIFO queue; pipelining cuts the example to 172 ms (p.210, 211)",
+        "Responses are not interleaved; HoL (p.212, 213)",
+        "iTunes case: 300% on slow networks (p.207)",
+        "Safe-use checklist (p.214)"
+      ],
+      "ref": "http1x-keepalive-pipelining-e-sharding.md",
+      "keywords": [
+        "pipelining",
+        "hol http",
+        "itunes",
+        "http pipelining",
+        "http hol"
+      ]
+    },
+    "http1x_conexoes_sharding": {
+      "name": "HTTP 1.x: six connections, domain sharding and headers",
+      "pages": [
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        257
+      ],
+      "citation": "HPBN p.214, 215, 216, 217, 218, 219, 257",
+      "summary": "Browsers open up to six connections per host. Domain sharding spreads resources across subdomains to raise that ceiling, at the cost of DNS, sockets and more slow-starts; the book says to start with zero shards and measure. HTTP 1.x headers add up to 500 to 800 bytes per request, not counting cookies. Long-lived connections (SSE, WebSocket, hanging XHR) each consume one of the six connections.",
+      "key_mechanisms": [
+        "Six connections per host (p.214)",
+        "Sharding: extra DNS, extra sockets, no optimal formula (p.216, 217)",
+        "High-latency clients suffer more from excessive sharding (p.218)",
+        "Headers of 500 to 800 bytes; example of 96% overhead (p.218, 219)",
+        "Cookieless origin for static assets (p.257)"
+      ],
+      "ref": "http1x-keepalive-pipelining-e-sharding.md",
+      "keywords": [
+        "sharding",
+        "domain sharding",
+        "seis conexoes",
+        "cookies",
+        "cabecalhos",
+        "six connections",
+        "headers",
+        "http headers"
+      ]
+    },
+    "http1x_bundling_inlining": {
+      "name": "HTTP 1.x: concatenation, sprites and inlining",
+      "pages": [
+        219,
+        220,
+        221,
+        222,
+        223
+      ],
+      "citation": "HPBN p.219, 220, 221, 222, 223",
+      "summary": "Concatenating and using sprites reduces requests, but any change invalidates the whole bundle, JS and CSS only run after everything is downloaded, and the sprite becomes a 4-bytes-per-pixel RGBA bitmap (800 × 600 comes to about 1.83 MB). The book suggests 30 to 50 KB compressed per JS bundle as a target. Inlining suits small, page-specific resources (under 1 to 2 KB); base64 grows about 33%.",
+      "key_mechanisms": [
+        "Costs of bundling: cache, unnecessary bytes, deferred execution (p.220)",
+        "Sprite: width × height × 4 bytes (p.221)",
+        "Target of 30 to 50 KB per JS bundle (p.221)",
+        "Gmail case: critical CSS separated and JS in chunks (p.222)",
+        "Inlining: base64 +33%, not cacheable on its own (p.223)"
+      ],
+      "ref": "http1x-keepalive-pipelining-e-sharding.md",
+      "keywords": [
+        "bundle",
+        "concatenacao",
+        "sprite",
+        "inlining",
+        "data uri",
+        "base64",
+        "concatenation",
+        "bundling",
+        "sprites"
+      ]
+    },
+    "pipeline_renderizacao": {
+      "name": "Rendering pipeline: DOM, CSSOM and JavaScript",
+      "pages": [
+        186,
+        190,
+        192,
+        194,
+        202,
+        203,
+        221,
+        222
+      ],
+      "citation": "HPBN p.186, 190, 192, 194, 202, 203, 221, 222",
+      "summary": "The parser builds the DOM and, in parallel, the CSSOM; the two form the render tree. JavaScript can block parsing and wait for the CSS, so the DOM only advances after the JS and the JS only runs once the CSSOM is ready. The book says to make critical resources discoverable early, deliver CSS early, defer non-critical JS and flush the HTML incrementally. The term critical rendering path and the defer and async attributes do not appear in the book.",
+      "key_mechanisms": [
+        "DOM, CSSOM and JS interleaved (p.186)",
+        "Structure recommendations (p.202)",
+        "Waterfall: DNS, TCP, TLS, request, download (p.190)",
+        "Google Search case: send the static header early (p.203)",
+        "Rendering and script on a single thread (p.194)"
+      ],
+      "ref": "critical-rendering-path-dom-cssom-e-layout.md",
+      "keywords": [
+        "crp",
+        "critical rendering path",
+        "dom",
+        "cssom",
+        "render tree",
+        "defer",
+        "async",
+        "render-blocking",
+        "renderizacao",
+        "rendering",
+        "rendering pipeline"
+      ]
+    },
+    "medicao_desempenho": {
+      "name": "Performance measurement",
+      "pages": [
+        185,
+        188,
+        189,
+        197,
+        198,
+        199,
+        200
+      ],
+      "citation": "HPBN p.185, 188, 189, 197, 198, 199, 200",
+      "summary": "PLT (the onload event) is insufficient for applications; define your own milestones. Synthetic tests give a baseline and RUM captures real diversity; analyze distributions (histograms, medians, quantiles), not averages. Navigation Timing, Resource Timing and User Timing provide the data in the browser. Perception table: up to 100 ms is instant; above 1,000 ms the user switches context.",
+      "key_mechanisms": [
+        "PLT = onload (p.185)",
+        "Perception table (p.188)",
+        "Revenue cost: Bing and Aberdeen (p.189)",
+        "Synthetic plus RUM (p.197)",
+        "Navigation Timing (p.198), Resource Timing and User Timing (p.200)",
+        "Distributions instead of averages (p.199)"
+      ],
+      "ref": "critical-rendering-path-dom-cssom-e-layout.md",
+      "keywords": [
+        "plt",
+        "onload",
+        "rum",
+        "navigation timing",
+        "medicao",
+        "metrica",
+        "percentil",
+        "measurement",
+        "metric",
+        "percentile",
+        "performance measurement"
+      ]
+    },
+    "navegador_hints_cache": {
+      "name": "Browser: speculative optimizations, hints and caching",
+      "pages": [
+        201,
+        202,
+        203,
+        254,
+        255,
+        256,
+        257,
+        258,
+        272,
+        273,
+        275
+      ],
+      "citation": "HPBN p.201, 202, 203, 254, 255, 256, 257, 258, 272, 273, 275",
+      "summary": "The browser does DNS pre-resolution, TCP pre-connection, prefetching and prerendering; the socket pool is per origin, with up to six. The hints the book documents are dns-prefetch, subresource, prefetch and prerender; preconnect and preload as rel values do not appear. The preload scanner looks ahead when the parser is blocked (about a 20% gain), but does not see what JS schedules. For caching, always set Cache-Control (max-age) and a validator (ETag or Last-Modified).",
+      "key_mechanisms": [
+        "Four techniques: prefetch/priority, DNS pre-resolve, TCP pre-connect, prerender (p.201, 202)",
+        "Table 10-2: hint support in 2013 [DATED] (p.203)",
+        "Preload scanner (p.258)",
+        "Cache: max-age plus validation (p.254)",
+        "Redundant transfers on smartphones: 18% and 20% (p.255)",
+        "Gzip reduces text by 60–80% (p.255)"
+      ],
+      "ref": "otimizacoes-de-navegador-resource-hints-e-caching.md",
+      "keywords": [
+        "cache",
+        "cache-control",
+        "etag",
+        "dns-prefetch",
+        "prefetch",
+        "prerender",
+        "hint",
+        "preload",
+        "preconnect",
+        "gzip",
+        "scanner",
+        "resource hints",
+        "browser cache",
+        "caching"
+      ]
+    },
+    "http2_rascunho_framing": {
+      "name": "HTTP 2.0 (2013 draft): binary framing and streams",
+      "pages": [
+        225,
+        226,
+        229,
+        230,
+        231,
+        232,
+        244,
+        245,
+        246,
+        247,
+        248
+      ],
+      "citation": "HPBN p.225, 226, 229, 230, 231, 232, 244, 245, 246, 247, 248",
+      "summary": "The book's HTTP 2.0 is the 2013 draft (Drafts 2 and 4), born from SPDY. A binary framing layer divides communication into streams, messages and frames over a single TCP connection. The draft's frame header is 8 bytes, with a 16-bit length, and the types include DATA, HEADERS, PRIORITY, RST_STREAM, SETTINGS, PUSH_PROMISE, PING, GOAWAY, WINDOW_UPDATE and CONTINUATION. HTTP semantics do not change. The 9-byte frame and RFC 7540 came later.",
+      "key_mechanisms": [
+        "Goals: less latency, less overhead, priority and push (p.225)",
+        "SPDY is not HTTP 2.0 (p.227); details may change (p.226, 229)",
+        "Stream, message, frame (p.230, 231)",
+        "8-byte header; 16-bit length (p.244, 245)",
+        "Frame types (p.245, 246)",
+        "DATA limited to 2^14 − 1 bytes (p.248)",
+        "Stream ID parity is contradictory between p.247 and p.249"
+      ],
+      "ref": "http2-binary-framing-multiplexing-e-streams.md",
+      "keywords": [
+        "http2",
+        "http/2",
+        "http 2.0",
+        "frame",
+        "stream",
+        "spdy",
+        "binary framing",
+        "framing",
+        "rfc 7540",
+        "http2 draft",
+        "binary frame"
+      ]
+    },
+    "http2_multiplexacao_prioridade_fluxo": {
+      "name": "HTTP 2.0: multiplexing, priority and flow control",
+      "pages": [
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        248
+      ],
+      "citation": "HPBN p.232, 233, 234, 235, 236, 237, 248",
+      "summary": "Multiplexing interleaves requests and responses on the same connection and solves HTTP's head-of-line blocking, but TCP's remains. In the draft, priority has 31 bits (0 is the highest), and the standard does not define the server's algorithm. Flow control is hop-by-hop, via WINDOW_UPDATE, directional and applied only to DATA frames. The book recommends one connection per origin.",
+      "key_mechanisms": [
+        "Multiplexing: the most important improvement (p.233)",
+        "31-bit priority; the algorithm is left to the server (p.233, 234)",
+        "Ignored or overly strict priority is bad (p.234, 235)",
+        "One connection per origin; TCP HoL remains (p.235, 236)",
+        "WINDOW_UPDATE, SETTINGS (p.237)"
+      ],
+      "ref": "http2-binary-framing-multiplexing-e-streams.md",
+      "keywords": [
+        "multiplexacao",
+        "prioridade",
+        "controle de fluxo",
+        "window_update",
+        "hol http2",
+        "multiplexing",
+        "priority",
+        "flow control"
+      ]
+    },
+    "http2_compressao_cabecalhos": {
+      "name": "HTTP 2.0: header compression (header tables)",
+      "pages": [
+        240,
+        241,
+        242
+      ],
+      "citation": "HPBN p.240, 241, 242",
+      "summary": "In the draft, client and server keep per-connection header tables, and each new set is sent as a difference from the previous one; if nothing changes, the header cost is zero bytes. SPDY used zlib with a dictionary, which was disabled after the CRIME attack (2012). The book does not use the name HPACK nor describe a static table or Huffman coding. The draft's pseudo-headers include :method, :scheme, :host and :path.",
+      "key_mechanisms": [
+        "Header tables plus differential encoding (p.240, 241)",
+        "Lowercase keys; request line split into :method, :scheme, :host, :path (p.241)",
+        "SPDY zlib: 85% to 88% reduction; replaced after CRIME (p.242)",
+        "Full mechanism deferred to the IETF draft (p.242)"
+      ],
+      "ref": "http2-hpack-prioritizacao-e-server-push.md",
+      "keywords": [
+        "hpack",
+        "compressao de cabecalhos",
+        "header compression",
+        "header tables",
+        "crime",
+        "zlib",
+        "compression of headers"
+      ]
+    },
+    "http2_server_push": {
+      "name": "HTTP 2.0: server push",
+      "pages": [
+        237,
+        238,
+        239,
+        240,
+        247,
+        261
+      ],
+      "citation": "HPBN p.237, 238, 239, 240, 247, 261",
+      "summary": "Push lets the server send several resources in response to one request. Each push stream starts from a PUSH_PROMISE frame, which must go out before the response. The client can refuse the resource, cache it and reuse it across pages, which inlining does not allow. The standard does not define the server's strategy; the book cites three families. There is no client API to know that a push happened.",
+      "key_mechanisms": [
+        "PUSH_PROMISE (p.239, 247)",
+        "Inlining is a forced push (p.239)",
+        "Strategies: application, X-Associated-Content header, server learning (p.239, 240)",
+        "Respects the same-origin policy (p.239)",
+        "Swap inlining for push when migrating (p.261)"
+      ],
+      "ref": "http2-hpack-prioritizacao-e-server-push.md",
+      "keywords": [
+        "push",
+        "server push",
+        "push_promise",
+        "inlining push"
+      ]
+    },
+    "http2_upgrade_migracao": {
+      "name": "HTTP 2.0: negotiation, load balancers and migration",
+      "pages": [
+        242,
+        243,
+        244,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268
+      ],
+      "citation": "HPBN p.242, 243, 244, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268",
+      "summary": "Negotiation uses TLS with ALPN over HTTPS and the Upgrade mechanism in cleartext (HTTP2-Settings and the 101 response). When migrating, the book says to first undo domain sharding, then undo concatenation and sprites gradually and swap inlining for push. To serve clients from both worlds there are three strategies (same code, separate code, dynamic optimization with PageSpeed). Translating 2.0 to 1.x internally is only a starting point. Load balancers must support ALPN or operate as a TCP proxy.",
+      "key_mechanisms": [
+        "TLS + ALPN, Upgrade in cleartext, prior knowledge (p.242, 243, 244)",
+        "Minimal server: cwnd 10, ALPN, TLS resumption (p.260)",
+        "Sharding becomes an antipattern (p.260); concatenation and sprites (p.261)",
+        "Dual-protocol and PageSpeed (p.262, 263)",
+        "Do not downgrade 2.0 to 1.x (p.264, 265)",
+        "Load balancer: ALPN or TCP proxy (p.265, 266, 267, 268)"
+      ],
+      "ref": "http2-binary-framing-multiplexing-e-streams.md",
+      "keywords": [
+        "migracao",
+        "http2 migracao",
+        "http 1.x para 2.0",
+        "upgrade",
+        "balanceador",
+        "dual-protocol",
+        "pagespeed",
+        "migration",
+        "http2 migration",
+        "load balancer",
+        "http 1.x to 2.0"
+      ]
+    },
+    "xhr": {
+      "name": "XMLHttpRequest (XHR) and CORS",
+      "pages": [
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        286,
+        287,
+        288,
+        289,
+        290
+      ],
+      "citation": "HPBN p.279, 280, 281, 282, 283, 284, 286, 287, 288, 289, 290",
+      "summary": "XHR is the API that lets script control transfers; the browser handles connection, caching and authentication. CORS is the server's voluntary opt-in to cross-origin requests; non-simple requests require an OPTIONS preflight, which costs at least one round trip. XHR does not stream requests, has no timeout by default and is not good for response streaming (responseText accumulates everything).",
+      "key_mechanisms": [
+        "XHR2 merged into the specification in 2011 (p.280, 281)",
+        "Protected headers that the application cannot change (p.281, 282)",
+        "CORS: Origin and Access-Control-Allow-Origin; preflight with OPTIONS (p.282, 283, 284)",
+        "Chunked upload with Content-Range (p.286, 287)",
+        "Progress events (p.288); no timeout by default (p.289)",
+        "Streaming with XHR is not recommended (p.289, 290)"
+      ],
+      "ref": "xhr-sse-e-escolha-de-transporte.md",
+      "keywords": [
+        "xhr",
+        "xmlhttprequest",
+        "ajax",
+        "cors",
+        "preflight",
+        "fetch"
+      ]
+    },
+    "polling_long_polling": {
+      "name": "Polling and long-polling",
+      "pages": [
+        291,
+        292,
+        293,
+        294,
+        295,
+        296
+      ],
+      "citation": "HPBN p.291, 292, 293, 294, 295, 296",
+      "summary": "HTTP does not let the server initiate the connection, so the client polls or uses streaming. Periodic polling costs about 800 bytes of header per query; with email every 60 s and 10,000 clients, that is about 1.13 Mbps of empty queries alone, and the average delivery latency is 30 s. Long-polling holds the request until there is data and gives the best latency, but keeps the HTTP overhead per message. Set latency and overhead targets before choosing.",
+      "key_mechanisms": [
+        "Polling: no optimal interval; good for predictable events and large payloads (p.292)",
+        "Email model: 850 bytes per query, 1.13 Mbps with 10,000 clients (p.293)",
+        "Long-polling (Comet): can open more requests than polling (p.294, 295)",
+        "Facebook chat in 2008 used long-polling via XHR (p.295, 296)",
+        "With no specific reason, prefer SSE or WebSocket (p.296)"
+      ],
+      "ref": "xhr-sse-e-escolha-de-transporte.md",
+      "keywords": [
+        "polling",
+        "long-polling",
+        "long polling",
+        "comet",
+        "tempo real",
+        "real-time"
+      ]
+    },
+    "sse": {
+      "name": "Server-Sent Events (SSE) and EventSource",
+      "pages": [
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303
+      ],
+      "citation": "HPBN p.297, 298, 299, 300, 301, 302, 303",
+      "summary": "SSE is efficient server-to-client streaming of UTF-8 text. The EventSource API delivers DOM events, reconnects on its own and the server controls the interval with retry; the client resends the last ID in Last-Event-ID. The body is text/event-stream with data, event, id and retry fields. Binary via base64 costs 33% more; for that the book points to WebSocket. Proxies that buffer the stream can break SSE; the way out is to deliver it over TLS.",
+      "key_mechanisms": [
+        "EventSource interface and event stream format (p.297)",
+        "Content-Type text/event-stream; fields data, event, id, retry (p.300, 301)",
+        "Automatic reconnection, suggested delay of 2 to 3 s; Last-Event-ID (p.301, 302)",
+        "Limitations: server to client only; UTF-8 (p.303)",
+        "No native support in IE or the Android browser in early 2013 [DATED] (p.299)",
+        "The underlying polyfill is usually XHR (p.299)"
+      ],
+      "ref": "xhr-sse-e-escolha-de-transporte.md",
+      "keywords": [
+        "sse",
+        "server-sent events",
+        "eventsource",
+        "event stream",
+        "last-event-id",
+        "text/event-stream"
+      ]
+    },
+    "websocket_api_handshake": {
+      "name": "WebSocket: API, subprotocols and handshake",
+      "pages": [
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        316,
+        317,
+        318
+      ],
+      "citation": "HPBN p.305, 306, 307, 308, 309, 310, 311, 312, 316, 317, 318",
+      "summary": "WebSocket is a bidirectional message-oriented channel, with text and binary. The API uses ws or wss and callbacks; send() is asynchronous and bufferedAmount shows the queue. The handshake is an HTTP Upgrade that ends in 101 Switching Protocols, with Sec-WebSocket-Key and Sec-WebSocket-Accept (SHA-1 over the key plus a fixed GUID, in base64). Subprotocols and extensions are negotiated through headers.",
+      "key_mechanisms": [
+        "ws and wss schemes; onopen, onmessage, onerror, onclose callbacks (p.306, 307)",
+        "binaryType: Blob or ArrayBuffer (p.308)",
+        "bufferedAmount and HoL in the send queue (p.310)",
+        "Subprotocols: application-defined names (p.311, 312)",
+        "Sec-WebSocket-* headers and handshake flow (p.316, 317, 318)",
+        "Version 13 (RFC 6455) [DATED] (p.307)"
+      ],
+      "ref": "websockets-full-duplex-e-enquadramento.md",
+      "keywords": [
+        "websocket",
+        "wss",
+        "ws",
+        "upgrade",
+        "sec-websocket",
+        "bufferedamount",
+        "subprotocolo",
+        "subprotocol",
+        "handshake websocket"
+      ]
+    },
+    "websocket_framing_infra": {
+      "name": "WebSocket: framing, multiplexing, proxies and performance",
+      "pages": [
+        313,
+        314,
+        315,
+        316,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325
+      ],
+      "citation": "HPBN p.313, 314, 315, 316, 319, 320, 321, 322, 323, 324, 325",
+      "summary": "The server's frame has a 2 to 10 byte header and the client's 6 to 14, because the client's payload is masked to protect intermediaries. Without multiplexing, each WebSocket connection takes its own TCP connection and messages suffer head-of-line blocking. Intermediary proxies can break the traffic: use WSS and have a fallback. Check Nginx and HAProxy timeouts before writing a keepalive. Binary over WebSocket is not cached; use XHR for assets. Replacing polling with WebSocket eliminates the wait, not the RTT.",
+      "key_mechanisms": [
+        "FIN, opcode (1 text, 2 binary, 8 close, 9 ping, 10 pong), mask, length 7/16/64 bits (p.313, 314)",
+        "Client masking (p.314)",
+        "Multiplexing and compression extensions in 2013 [DATED] (p.315, 316)",
+        "Overhead comparison: SSE 5 bytes, WebSocket 2–14, XHR 500–800 (p.321)",
+        "Nginx timeout (60 s by default) and HAProxy (p.324)",
+        "Performance checklist (p.325)"
+      ],
+      "ref": "websockets-full-duplex-e-enquadramento.md",
+      "keywords": [
+        "framing websocket",
+        "mascaramento",
+        "opcode",
+        "multiplexacao websocket",
+        "proxy websocket",
+        "nginx",
+        "haproxy",
+        "websocket framing",
+        "masking",
+        "websocket multiplexing",
+        "websocket proxy"
+      ]
+    },
+    "escolha_de_transporte": {
+      "name": "Choosing between XHR, SSE, WebSocket and WebRTC",
+      "pages": [
+        276,
+        277,
+        291,
+        320,
+        321,
+        322,
+        323
+      ],
+      "citation": "HPBN p.276, 277, 291, 320, 321, 322, 323",
+      "summary": "There is no absolutely best protocol; non-trivial applications mix transports. XHR suits transactions with caching, authentication and compression; SSE suits server-to-client text streaming; WebSocket suits low-latency bidirectional communication and binary; WebRTC suits peer-to-peer data and media. Propagation latency is the same in all four; queuing latency changes. Use SSE or WebSocket for notifications and XHR to download cacheable assets.",
+      "key_mechanisms": [
+        "XHR, SSE and WebSocket comparison table (p.276)",
+        "Set latency and overhead targets (p.291)",
+        "Data flow and direction (p.320)",
+        "Overhead and latency per message (p.321)",
+        "Compression and custom protocols (p.322)",
+        "Caching and binary data (p.323)"
+      ],
+      "ref": "xhr-sse-e-escolha-de-transporte.md",
+      "keywords": [
+        "escolha",
+        "qual transporte",
+        "comparacao",
+        "sse vs websocket",
+        "websocket vs polling",
+        "choice",
+        "which transport",
+        "comparison",
+        "transport choice",
+        "polling vs websocket"
+      ]
+    },
+    "webrtc_visao_pilha": {
+      "name": "WebRTC: overview and protocol stack",
+      "pages": [
+        327,
+        328,
+        333,
+        334,
+        335,
+        336
+      ],
+      "citation": "HPBN p.327, 328, 333, 334, 335, 336",
+      "summary": "WebRTC bundles APIs and protocols for peer-to-peer audio, video and data without plug-ins: MediaStream, RTCPeerConnection and RTCDataChannel. It runs over UDP, but only as a starting point: ICE, STUN and TURN handle connectivity, SDP describes the session, DTLS encrypts, SRTP carries media and SCTP carries data. In 2013 the book warns that APIs and protocols could change.",
+      "key_mechanisms": [
+        "Three APIs: MediaStream, RTCPeerConnection, RTCDataChannel (p.327)",
+        "UDP chosen for timeliness over reliability (p.333)",
+        "Stack: ICE, STUN, TURN, SDP, DTLS, SCTP, SRTP (p.334, 335)",
+        "RTCPeerConnection handles the lifecycle (p.335, 336)",
+        "Work in progress [DATED] (p.328)"
+      ],
+      "ref": "webrtc-p2p-ice-stun-turn-e-datachannel.md",
+      "keywords": [
+        "webrtc",
+        "p2p",
+        "rtcpeerconnection",
+        "mediastream",
+        "rtc",
+        "peer-to-peer",
+        "webrtc stack"
+      ]
+    },
+    "webrtc_sinalizacao_ice": {
+      "name": "WebRTC: signaling, SDP, ICE and trickle ICE",
+      "pages": [
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        378
+      ],
+      "citation": "HPBN p.337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 378",
+      "summary": "Signaling is not standardized: the application picks the channel. SDP in an offer/answer model (createOffer, createAnswer) describes the session. The ICE agent gathers candidates (host, STUN, TURN), runs connectivity checks and ranks local, public and TURN last. Trickle ICE sends the offer without candidates and transmits them as they appear, reducing connection time. About 8% to 10% of connections require TURN.",
+      "key_mechanisms": [
+        "Signaling is left to the application (p.338, 339, 340)",
+        "Amy and Bob offer/answer flow (p.342)",
+        "ICE agent: host, srflx, TURN (p.343, 344, 345)",
+        "Trickle ICE (p.346, 347)",
+        "iceGatheringState and iceConnectionState (p.348, 349)",
+        "STUN always; TURN for ~8% of failures (p.345, 378)"
+      ],
+      "ref": "webrtc-p2p-ice-stun-turn-e-datachannel.md",
+      "keywords": [
+        "sinalizacao",
+        "sdp",
+        "ice",
+        "trickle",
+        "offer",
+        "answer",
+        "candidato",
+        "turn webrtc",
+        "signaling",
+        "candidate",
+        "webrtc turn",
+        "webrtc ice"
+      ]
+    },
+    "webrtc_seguranca_midia": {
+      "name": "WebRTC: DTLS, SRTP and SRTCP",
+      "pages": [
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361
+      ],
+      "citation": "HPBN p.355, 356, 357, 358, 359, 360, 361",
+      "summary": "All WebRTC data is encrypted. DTLS exchanges keys over UDP with a mini-TCP in the handshake, which takes two round trips; certificates are self-signed, and peer authentication is left to the application. Media goes in SRTP, with a 12-byte header, and SRTCP for feedback; the browser's flow control starts below 500 Kbps and adapts quality, never above what was captured.",
+      "key_mechanisms": [
+        "DTLS: two round trips; self-signed certificates (p.356, 357)",
+        "Authentication is left to the application (p.357, 358)",
+        "SRTP: 12-byte header, SSRC, timestamp (p.360)",
+        "SRTCP: loss and jitter statistics (p.360, 361)",
+        "DTLS provides the SRTP keying material (p.361)"
+      ],
+      "ref": "webrtc-p2p-ice-stun-turn-e-datachannel.md",
+      "keywords": [
+        "dtls",
+        "srtp",
+        "srtcp",
+        "seguranca webrtc",
+        "midia",
+        "webrtc security",
+        "media",
+        "webrtc encryption"
+      ]
+    },
+    "webrtc_datachannel_sctp": {
+      "name": "WebRTC: DataChannel and SCTP",
+      "pages": [
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374
+      ],
+      "citation": "HPBN p.362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374",
+      "summary": "The DataChannel uses SCTP over DTLS over UDP. The API is a superset of WebSocket's, but each channel has ordered or unordered delivery, reliable or partially reliable by retransmissions or by lifetime (mutually exclusive). Each channel is an independent SCTP stream, with no HoL between channels. SCTP adds 28 bytes per data chunk. On an unreliable channel, the message should fit in about 1,150 bytes.",
+      "key_mechanisms": [
+        "TCP, UDP, SCTP table (p.362)",
+        "28-byte overhead per chunk (p.365)",
+        "WebSocket and DataChannel comparison (p.368)",
+        "DATA_CHANNEL_OPEN and SDP with m=application (p.369, 370)",
+        "Six combinations of ordering and reliability (p.371, 372, 373)",
+        "120 KB example with 1% loss: 107 packets (p.373, 374)"
+      ],
+      "ref": "webrtc-p2p-ice-stun-turn-e-datachannel.md",
+      "keywords": [
+        "datachannel",
+        "sctp",
+        "rtcdatachannel",
+        "maxretransmits",
+        "confiabilidade parcial",
+        "partial reliability",
+        "data channel"
+      ]
+    },
+    "webrtc_arquitetura_checklist": {
+      "name": "WebRTC: multiparty architectures and checklist",
+      "pages": [
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380
+      ],
+      "citation": "HPBN p.374, 375, 376, 377, 378, 379, 380",
+      "summary": "In calls with N participants, a full mesh requires N × (N − 1) connections and saturates the uplink; the alternative is a supernode or intermediary service. Every application needs signaling infrastructure, STUN, TURN and identity verification. The final checklist covers low-latency signaling, STUN, TURN and trickle ICE, supernode, media constraints, UTF-8 compression in the DataChannel, unordered delivery to avoid HoL and messages smaller than 1,150 bytes.",
+      "key_mechanisms": [
+        "Asymmetric bandwidth (p.375)",
+        "Mesh versus star (p.376, 377)",
+        "Infrastructure: signaling, STUN/TURN, gateways (p.377, 378, 379)",
+        "Performance checklist (p.379, 380)"
+      ],
+      "ref": "webrtc-p2p-ice-stun-turn-e-datachannel.md",
+      "keywords": [
+        "mesh",
+        "malha",
+        "supernode",
+        "supno",
+        "multiparty",
+        "checklist webrtc",
+        "full mesh",
+        "webrtc checklist",
+        "mesh topology"
+      ]
+    }
+  },
+  "not_in_book": {
+    "hpack": "The book does not use the term HPACK. It talks about header tables and differential encoding in the 2013 draft (HPBN p.240, 241). HPACK (RFC 7541) is [extrapolation].",
+    "rfc 7540": "RFC 7540 came after the book, which describes the 2013 draft (HPBN p.226, 229). [extrapolation]",
+    "tls 1.3": "The book covers SSL/TLS up to version 1.2 (HPBN p.66). TLS 1.3 and 0-RTT are [extrapolation].",
+    "0-rtt": "0-RTT belongs to TLS 1.3, which is not in the book (HPBN p.66). [extrapolation]",
+    "quic": "QUIC and HTTP/3 do not appear in the book. TCP HoL is acknowledged as a limitation of HTTP 2.0 (HPBN p.236). [extrapolation]",
+    "http/3": "HTTP/3 does not appear in the book. See TCP HoL in HPBN p.236. [extrapolation]",
+    "defer": "The book says to defer non-critical JS (HPBN p.202), but does not mention the defer and async attributes. [extrapolation]",
+    "async": "The book does not mention the async attribute (HPBN p.202). [extrapolation]",
+    "preload": "The book documents dns-prefetch, subresource, prefetch and prerender (HPBN p.202). preload and preconnect as rel values are not in it. [extrapolation]",
+    "preconnect": "preconnect as a rel value is not in the book; it only describes the TCP pre-connection done by the browser (HPBN p.201, 202). [extrapolation]",
+    "core web vitals": "Core Web Vitals came after the book, which uses PLT, Navigation/Resource/User Timing and RUM (HPBN p.185, 198, 200). [extrapolation]",
+    "service worker": "Service Workers do not appear in the book; it mentions AppCache and localStorage for offline mode (HPBN p.167). [extrapolation]",
+    "5g": "5G does not appear in the book, which goes up to LTE-Advanced (HPBN p.118, 128). [extrapolation]",
+    "critical rendering path": "The term does not appear in the book; the equivalent content is in HPBN p.186 and p.202.",
+    "tail time": "The book uses energy tail (HPBN p.140) and does not state a typical tail time of 10 to 20 s.",
+    "fast retransmit": "It is only mentioned in passing (HPBN p.37, 50), with no mechanics."
+  }
+}

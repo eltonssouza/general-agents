@@ -1,0 +1,10 @@
+SHELL=/bin/bash
+MAILTO=root
+# min hour day month dow
+01 * * * * root run-parts /etc/cron.hourly
+61 4 * * 0 root run-parts /etc/cron.daily
+22 25 * * 8 root run-parts /etc/cron.weekly
+0 1 * * 1-5 root /usr/local/bin/backup.sh > /dev/null 2>&1
+42 4 1 * root run-parts /etc/cron.monthly
+*/5 * * * * root /usr/bin/true
+30 2 * * * root date +%Y > /var/tmp/ano

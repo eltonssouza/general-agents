@@ -1,0 +1,2266 @@
+{
+ "versao": 1,
+ "fonte": "Deep Learning, Goodfellow/Bengio/Courville, MIT Press 2016 (DLB)",
+ "convencao": "PDF page; printed = PDF - 15 (constant across the 720 body pages, p.16-735)",
+ "offset": 15,
+ "capitulos": [
+  {
+   "cap": 1,
+   "titulo": "Introduction",
+   "parte": "I",
+   "pdf_ini": 16,
+   "pdf_fim": 43,
+   "ref": "00-introducao-e-historia.md",
+   "leitura": "full",
+   "lido": [
+    [
+     16,
+     43
+    ]
+   ]
+  },
+  {
+   "cap": 2,
+   "titulo": "Linear Algebra",
+   "parte": "I",
+   "pdf_ini": 46,
+   "pdf_fim": 67,
+   "ref": "01-matematica-aplicada.md",
+   "leitura": "p.46-66 full; p.67 not read",
+   "lido": [
+    [
+     46,
+     66
+    ]
+   ]
+  },
+  {
+   "cap": 3,
+   "titulo": "Probability and Information Theory",
+   "parte": "I",
+   "pdf_ini": 68,
+   "pdf_fim": 94,
+   "ref": "01-matematica-aplicada.md",
+   "leitura": "partial: p.68-70 and 88-94 read; p.71-87 titles only",
+   "lido": [
+    [
+     68,
+     70
+    ],
+    [
+     88,
+     94
+    ]
+   ]
+  },
+  {
+   "cap": 4,
+   "titulo": "Numerical Computation",
+   "parte": "I",
+   "pdf_ini": 95,
+   "pdf_fim": 112,
+   "ref": "01-matematica-aplicada.md",
+   "leitura": "p.95-107 read; p.108-112 titles only",
+   "lido": [
+    [
+     95,
+     107
+    ]
+   ]
+  },
+  {
+   "cap": 5,
+   "titulo": "Machine Learning Basics",
+   "parte": "I",
+   "pdf_ini": 113,
+   "pdf_fim": 180,
+   "ref": "02-fundamentos-de-ml.md",
+   "leitura": "partial: p.114-150 and 166-172 read",
+   "lido": [
+    [
+     114,
+     150
+    ],
+    [
+     166,
+     172
+    ]
+   ]
+  },
+  {
+   "cap": 6,
+   "titulo": "Deep Feedforward Networks",
+   "parte": "II",
+   "pdf_ini": 183,
+   "pdf_fim": 242,
+   "ref": "03-redes-feedforward-e-backprop.md",
+   "leitura": "p.183-201, 206-216, 219-228, 236-242 read; p.202-205 and 229-235 not",
+   "lido": [
+    [
+     183,
+     201
+    ],
+    [
+     206,
+     216
+    ],
+    [
+     219,
+     228
+    ],
+    [
+     236,
+     242
+    ]
+   ]
+  },
+  {
+   "cap": 7,
+   "titulo": "Regularization for Deep Learning",
+   "parte": "II",
+   "pdf_ini": 243,
+   "pdf_fim": 288,
+   "ref": "04-regularizacao.md",
+   "leitura": "partial: p.243-247, 250-264, 268, 271-285",
+   "lido": [
+    [
+     243,
+     247
+    ],
+    [
+     250,
+     264
+    ],
+    [
+     268,
+     268
+    ],
+    [
+     271,
+     285
+    ]
+   ]
+  },
+  {
+   "cap": 8,
+   "titulo": "Optimization for Training Deep Models",
+   "parte": "II",
+   "pdf_ini": 289,
+   "pdf_fim": 344,
+   "ref": "05-otimizacao.md",
+   "leitura": "partial: p.289-305, 309-314, 316-318, 321-329, 332-337",
+   "lido": [
+    [
+     289,
+     305
+    ],
+    [
+     309,
+     314
+    ],
+    [
+     316,
+     318
+    ],
+    [
+     321,
+     329
+    ],
+    [
+     332,
+     337
+    ]
+   ]
+  },
+  {
+   "cap": 9,
+   "titulo": "Convolutional Networks",
+   "parte": "II",
+   "pdf_ini": 345,
+   "pdf_fim": 387,
+   "ref": "06-redes-convolucionais.md",
+   "leitura": "partial: p.346-357, 362-371, 373-377, 386-387",
+   "lido": [
+    [
+     346,
+     357
+    ],
+    [
+     362,
+     371
+    ],
+    [
+     373,
+     377
+    ],
+    [
+     386,
+     387
+    ]
+   ]
+  },
+  {
+   "cap": 10,
+   "titulo": "Sequence Modeling: Recurrent and Recursive Nets",
+   "parte": "II",
+   "pdf_ini": 388,
+   "pdf_fim": 435,
+   "ref": "07-redes-recorrentes.md",
+   "leitura": "partial: p.388-400, 411-412, 416-418, 425-430",
+   "lido": [
+    [
+     388,
+     400
+    ],
+    [
+     411,
+     412
+    ],
+    [
+     416,
+     418
+    ],
+    [
+     425,
+     430
+    ]
+   ]
+  },
+  {
+   "cap": 11,
+   "titulo": "Practical Methodology",
+   "parte": "II",
+   "pdf_ini": 436,
+   "pdf_fim": 457,
+   "ref": "08-metodologia-pratica.md",
+   "leitura": "full",
+   "lido": [
+    [
+     436,
+     457
+    ]
+   ]
+  },
+  {
+   "cap": 12,
+   "titulo": "Applications",
+   "parte": "II",
+   "pdf_ini": 458,
+   "pdf_fim": 500,
+   "ref": "09-aplicacoes-e-escala.md",
+   "leitura": "partial: p.458-465, 467-470, 476-477, 482, 488-493",
+   "lido": [
+    [
+     458,
+     465
+    ],
+    [
+     467,
+     470
+    ],
+    [
+     476,
+     477
+    ],
+    [
+     482,
+     482
+    ],
+    [
+     488,
+     493
+    ]
+   ]
+  },
+  {
+   "cap": 13,
+   "titulo": "Linear Factor Models",
+   "parte": "III",
+   "pdf_ini": 504,
+   "pdf_fim": 516,
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md",
+   "leitura": "minimal: only p.504-505",
+   "lido": [
+    [
+     504,
+     505
+    ]
+   ]
+  },
+  {
+   "cap": 14,
+   "titulo": "Autoencoders",
+   "parte": "III",
+   "pdf_ini": 517,
+   "pdf_fim": 540,
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md",
+   "leitura": "partial: p.518-524",
+   "lido": [
+    [
+     518,
+     524
+    ]
+   ]
+  },
+  {
+   "cap": 15,
+   "titulo": "Representation Learning",
+   "parte": "III",
+   "pdf_ini": 541,
+   "pdf_fim": 572,
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md",
+   "leitura": "partial: p.543-546, 551, 561-563",
+   "lido": [
+    [
+     543,
+     546
+    ],
+    [
+     551,
+     551
+    ],
+    [
+     561,
+     563
+    ]
+   ]
+  },
+  {
+   "cap": 16,
+   "titulo": "Structured Probabilistic Models for Deep Learning",
+   "parte": "III",
+   "pdf_ini": 573,
+   "pdf_fim": 604,
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md",
+   "leitura": "minimal: p.574, 583-588",
+   "lido": [
+    [
+     574,
+     574
+    ],
+    [
+     583,
+     588
+    ]
+   ]
+  },
+  {
+   "cap": 17,
+   "titulo": "Monte Carlo Methods",
+   "parte": "III",
+   "pdf_ini": 605,
+   "pdf_fim": 619,
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md",
+   "leitura": "minimal: p.606, 614-616",
+   "lido": [
+    [
+     606,
+     606
+    ],
+    [
+     614,
+     616
+    ]
+   ]
+  },
+  {
+   "cap": 18,
+   "titulo": "Confronting the Partition Function",
+   "parte": "III",
+   "pdf_ini": 620,
+   "pdf_fim": 645,
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md",
+   "leitura": "partial: p.621-627",
+   "lido": [
+    [
+     621,
+     627
+    ]
+   ]
+  },
+  {
+   "cap": 19,
+   "titulo": "Approximate Inference",
+   "parte": "III",
+   "pdf_ini": 646,
+   "pdf_fim": 668,
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md",
+   "leitura": "minimal: only p.648",
+   "lido": [
+    [
+     648,
+     648
+    ]
+   ]
+  },
+  {
+   "cap": 20,
+   "titulo": "Deep Generative Models",
+   "parte": "III",
+   "pdf_ini": 669,
+   "pdf_fim": 735,
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md",
+   "leitura": "minimal: p.671-672, 711-719, 732-734",
+   "lido": [
+    [
+     671,
+     672
+    ],
+    [
+     711,
+     719
+    ],
+    [
+     732,
+     734
+    ]
+   ]
+  }
+ ],
+ "entradas": [
+  {
+   "cap": 1,
+   "topico": "Deep learning: concept hierarchy, representation learning, autoencoder (introductory view)",
+   "paginas": "16-20",
+   "termos": [
+    "deep learning",
+    "aprendizado profundo",
+    "hierarquia de conceitos",
+    "representation learning",
+    "autoencoder",
+    "fatores de variacao",
+    "disentangle",
+    "knowledge base",
+    "cyc"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "Depth of a model: computational graph vs concept graph",
+   "paginas": "22-23",
+   "termos": [
+    "profundidade",
+    "depth",
+    "o que e deep",
+    "quao profundo"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "Three historical waves: cybernetics, connectionism, deep learning (2006)",
+   "paginas": "28-34",
+   "termos": [
+    "ondas",
+    "cybernetics",
+    "connectionism",
+    "historia",
+    "2006",
+    "deep belief network",
+    "pretreino guloso historia",
+    "mcculloch pitts"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "Perceptron, ADALINE, XOR and the first decline of neural networks",
+   "paginas": "30",
+   "termos": [
+    "perceptron",
+    "adaline",
+    "xor",
+    "minsky",
+    "linear models limitations"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "Distributed representation (introduction) and backpropagation (history)",
+   "paginas": "32-33",
+   "termos": [
+    "distributed representation",
+    "representacao distribuida",
+    "back-propagation historia",
+    "lstm historia"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "2016 rule of thumb (5,000 examples per category; 10 million) and model growth (2.4 years)",
+   "paginas": "35",
+   "termos": [
+    "5000 exemplos",
+    "10 milhoes",
+    "tamanho do dataset",
+    "2,4 anos",
+    "numero de neuronios",
+    "rule of thumb"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "ILSVRC: top-5 error from 26.1% to 15.3% (2012) and 3.6% (2015)",
+   "paginas": "38",
+   "termos": [
+    "ilsvrc",
+    "imagenet",
+    "top-5",
+    "alexnet resultado",
+    "krizhevsky 2012",
+    "reconhecimento de objetos erro"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 1,
+   "topico": "Reinforcement learning, neural Turing machines, 2016 libraries (Theano, Torch, Caffe, TensorFlow)",
+   "paginas": "40",
+   "termos": [
+    "atari",
+    "neural turing machine",
+    "theano",
+    "torch",
+    "caffe",
+    "tensorflow",
+    "mxnet"
+   ],
+   "ref": "00-introducao-e-historia.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Scalars, vectors, matrices, tensors; transpose; broadcasting",
+   "paginas": "46-49",
+   "termos": [
+    "tensor",
+    "transposta",
+    "broadcasting",
+    "escalar",
+    "vetor",
+    "matriz"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Matrix product, Hadamard, properties",
+   "paginas": "49-50",
+   "termos": [
+    "produto matricial",
+    "hadamard",
+    "produto elemento a elemento",
+    "dot product"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Identity, inverse and linear systems; the inverse only as a theoretical tool",
+   "paginas": "51-52",
+   "termos": [
+    "inversa",
+    "identidade",
+    "sistema linear",
+    "ax=b"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Linear dependence, span, column space; singular matrix",
+   "paginas": "52-54",
+   "termos": [
+    "span",
+    "dependencia linear",
+    "espaco coluna",
+    "singular",
+    "range"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Lp norms, L1, L2, max, Frobenius; L0 is not a norm",
+   "paginas": "54-55",
+   "termos": [
+    "norma",
+    "l1",
+    "l2",
+    "frobenius",
+    "max norm",
+    "l0"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Special matrices: diagonal, symmetric, orthogonal; unit vectors",
+   "paginas": "55-57",
+   "termos": [
+    "diagonal",
+    "simetrica",
+    "ortogonal",
+    "ortonormal",
+    "vetor unitario"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Eigendecomposition, positive definite",
+   "paginas": "57-59",
+   "termos": [
+    "autovalor",
+    "autovetor",
+    "eigendecomposition",
+    "definida positiva",
+    "semidefinida"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "SVD and the Moore-Penrose pseudoinverse",
+   "paginas": "59-61",
+   "termos": [
+    "svd",
+    "singular value",
+    "pseudoinversa",
+    "moore-penrose"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "Trace and determinant",
+   "paginas": "61-62",
+   "termos": [
+    "traco",
+    "trace",
+    "determinante"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 2,
+   "topico": "PCA derived with linear algebra (encoder D^T x, decoder D)",
+   "paginas": "63-66",
+   "termos": [
+    "pca",
+    "principal components",
+    "componentes principais",
+    "compressao com perdas"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 3,
+   "topico": "Why probability: sources of uncertainty; frequentist vs Bayesian",
+   "paginas": "69-70",
+   "termos": [
+    "incerteza",
+    "probabilidade",
+    "frequentista",
+    "bayesiana",
+    "monty hall",
+    "estocasticidade"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 3,
+   "topico": "Self-information, Shannon entropy, KL, cross-entropy, nats and bits",
+   "paginas": "88-90",
+   "termos": [
+    "entropia",
+    "shannon",
+    "kl",
+    "kullback-leibler",
+    "cross-entropy",
+    "entropia cruzada",
+    "auto-informacao",
+    "nats",
+    "bits",
+    "0 log 0"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 3,
+   "topico": "KL asymmetry: min KL(p||q) vs KL(q||p) (Fig. 3.6)",
+   "paginas": "90-91",
+   "termos": [
+    "assimetria kl",
+    "kl direcao",
+    "modos",
+    "fig 3.6"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 3,
+   "topico": "Structured probabilistic models: directed and undirected (introduction)",
+   "paginas": "90-94",
+   "termos": [
+    "modelo grafico",
+    "dirigido",
+    "nao dirigido",
+    "clique",
+    "fatoracao",
+    "normalizing constant"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 4,
+   "topico": "Overflow and underflow; stable softmax and log-softmax",
+   "paginas": "95-97",
+   "termos": [
+    "overflow",
+    "underflow",
+    "softmax estavel",
+    "log softmax",
+    "estabilidade numerica",
+    "nan"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 4,
+   "topico": "Ill-conditioning and condition number",
+   "paginas": "97",
+   "termos": [
+    "condicionamento",
+    "condition number",
+    "mal condicionado",
+    "poor conditioning"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 4,
+   "topico": "Gradient descent, critical points, local minima and saddle points, directional derivative",
+   "paginas": "97-101",
+   "termos": [
+    "gradient descent",
+    "gradiente",
+    "ponto critico",
+    "sela",
+    "saddle",
+    "minimo local",
+    "steepest descent",
+    "learning rate definicao",
+    "line search"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 4,
+   "topico": "Jacobian, Hessian, second derivative, Taylor expansion, optimal step",
+   "paginas": "101-104",
+   "termos": [
+    "jacobiana",
+    "hessiana",
+    "curvatura",
+    "taylor",
+    "passo otimo",
+    "segunda derivada",
+    "teste da segunda derivada"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 4,
+   "topico": "Newton's method; first- and second-order methods; Lipschitz",
+   "paginas": "107",
+   "termos": [
+    "newton",
+    "primeira ordem",
+    "segunda ordem",
+    "lipschitz"
+   ],
+   "ref": "01-matematica-aplicada.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Definition of learning (Mitchell), tasks T, measure P, experience E",
+   "paginas": "114-121",
+   "termos": [
+    "mitchell",
+    "tarefa",
+    "classificacao",
+    "regressao",
+    "transcricao",
+    "deteccao de anomalia",
+    "densidade",
+    "supervisionado",
+    "nao supervisionado",
+    "design matrix",
+    "acuracia",
+    "0-1 loss"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Linear regression, MSE, normal equations",
+   "paginas": "122-125",
+   "termos": [
+    "regressao linear",
+    "equacoes normais",
+    "mse",
+    "normal equations",
+    "erro quadratico medio"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Generalization, overfitting, underfitting, capacity, VC, U-shaped curve",
+   "paginas": "125-131",
+   "termos": [
+    "generalizacao",
+    "overfitting",
+    "underfitting",
+    "capacidade",
+    "vc dimension",
+    "occam",
+    "bayes error",
+    "iid",
+    "polinomio"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "No Free Lunch",
+   "paginas": "131-133",
+   "termos": [
+    "no free lunch",
+    "wolpert"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Regularization as preference; weight decay (L2)",
+   "paginas": "133-135",
+   "termos": [
+    "regularizacao definicao",
+    "weight decay",
+    "ridge",
+    "regularizador"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Hyperparameters, validation set (80/20), k-fold",
+   "paginas": "135-138",
+   "termos": [
+    "hiperparametro",
+    "validacao",
+    "validation set",
+    "k-fold",
+    "cross-validation",
+    "validacao cruzada"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Estimators: bias, variance, standard error, 95% CI, MSE = bias^2 + var, consistency",
+   "paginas": "137-146",
+   "termos": [
+    "vies",
+    "bias",
+    "variancia",
+    "erro padrao",
+    "intervalo de confianca",
+    "mse decomposicao",
+    "consistencia",
+    "estimador"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Maximum likelihood, KL and cross-entropy, MSE as Gaussian MLE",
+   "paginas": "146-150",
+   "termos": [
+    "maxima verossimilhanca",
+    "mle",
+    "negative log-likelihood",
+    "nll",
+    "log-verossimilhanca condicional",
+    "cramer-rao"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "SGD, minibatch, cost per update independent of m",
+   "paginas": "166-168",
+   "termos": [
+    "sgd",
+    "stochastic gradient descent",
+    "minibatch",
+    "gradiente estocastico"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Recipe of an ML algorithm (dataset, cost, optimization, model)",
+   "paginas": "168-170",
+   "termos": [
+    "receita",
+    "recipe",
+    "construindo algoritmo de ml"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 5,
+   "topico": "Curse of dimensionality and the smoothness prior",
+   "paginas": "170-172",
+   "termos": [
+    "curse of dimensionality",
+    "maldicao da dimensionalidade",
+    "smoothness prior",
+    "local constancy",
+    "knn"
+   ],
+   "ref": "02-fundamentos-de-ml.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Feedforward: definition, layers, width, depth; learned phi(x)",
+   "paginas": "183-186",
+   "termos": [
+    "feedforward",
+    "mlp",
+    "perceptron multicamadas",
+    "camada oculta",
+    "largura",
+    "phi aprendido",
+    "kernel trick"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "XOR example with a ReLU network (W, c, w, b)",
+   "paginas": "186-192",
+   "termos": [
+    "xor",
+    "exemplo xor",
+    "relu xor",
+    "solucao do xor"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Gradient-based learning; non-convexity; small initialization",
+   "paginas": "192-193",
+   "termos": [
+    "nao convexo",
+    "inicializacao",
+    "otimizacao nao convexa"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Cost function by MLE; cross-entropy; MSE vs MAE (mean and median)",
+   "paginas": "193-196",
+   "termos": [
+    "cross-entropy custo",
+    "mle custo",
+    "mae",
+    "mediana condicional",
+    "calculo variacional",
+    "mse custo"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Output units: linear, sigmoid (logit, softplus), softmax",
+   "paginas": "196-201",
+   "termos": [
+    "unidade de saida",
+    "sigmoide",
+    "softmax",
+    "logit",
+    "softplus loss",
+    "saturacao",
+    "bernoulli",
+    "multinoulli"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Hidden units: ReLU, leaky, PReLU, maxout; tanh and sigmoid; others",
+   "paginas": "206-212",
+   "termos": [
+    "relu",
+    "leaky relu",
+    "prelu",
+    "maxout",
+    "tanh",
+    "sigmoide oculta",
+    "softplus",
+    "hidden units",
+    "unidade oculta",
+    "ativacao"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Architecture; universal approximation; exponential depth (Montufar)",
+   "paginas": "212-216",
+   "termos": [
+    "aproximacao universal",
+    "universal approximation",
+    "profundidade",
+    "arquitetura",
+    "regioes lineares",
+    "montufar"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Backpropagation: computational graphs, chain rule, Algorithms 6.1-6.4",
+   "paginas": "219-228",
+   "termos": [
+    "backpropagation",
+    "backprop",
+    "regra da cadeia",
+    "grafo computacional",
+    "algoritmo 6.2",
+    "algoritmo 6.4",
+    "jacobiano gradiente"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Complications, automatic differentiation (reverse/forward mode), higher-order derivatives, Hv",
+   "paginas": "236-239",
+   "termos": [
+    "diferenciacao automatica",
+    "reverse mode",
+    "forward mode",
+    "krylov",
+    "hessian vector product",
+    "np-completo"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 6,
+   "topico": "Historical notes; cross-entropy and ReLU as decisive algorithmic changes",
+   "paginas": "239-242",
+   "termos": [
+    "historia do backprop",
+    "mudancas algoritmicas",
+    "cross-entropy substituiu mse",
+    "relu historia"
+   ],
+   "ref": "03-redes-feedforward-e-backprop.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Regularization in deep learning: trading bias for variance; large regularized model",
+   "paginas": "243-244",
+   "termos": [
+    "regularizacao",
+    "vies variancia regularizacao",
+    "modelo grande regularizado"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Norm penalties: L2 (weight decay) and L1 (sparsity, LASSO); MAP",
+   "paginas": "245-247, 250-251",
+   "termos": [
+    "l2",
+    "l1",
+    "weight decay",
+    "lasso",
+    "esparsidade",
+    "map",
+    "penalidade de norma",
+    "ridge"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Penalty as constraint (KKT); reprojection; per-column norm",
+   "paginas": "252-254",
+   "termos": [
+    "kkt",
+    "restricao explicita",
+    "reprojecao",
+    "dead units",
+    "norma de coluna"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Regularization and underdetermined problems; pseudoinverse",
+   "paginas": "254-255",
+   "termos": [
+    "subdeterminado",
+    "x^t x + alpha i",
+    "pseudoinversa regularizada"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Data augmentation and noise injection; noise on the weights; label smoothing",
+   "paginas": "255-258",
+   "termos": [
+    "data augmentation",
+    "aumento de dados",
+    "ruido na entrada",
+    "ruido nos pesos",
+    "label smoothing",
+    "denoising"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Semi-supervised and multi-task learning",
+   "paginas": "258-261",
+   "termos": [
+    "semi-supervisionado",
+    "multi-task",
+    "aprendizado multitarefa"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Early stopping (Algorithms 7.1-7.3)",
+   "paginas": "261-264",
+   "termos": [
+    "early stopping",
+    "parada antecipada",
+    "paciencia",
+    "patience",
+    "algoritmo 7.1"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Parameter tying and sharing",
+   "paginas": "268",
+   "termos": [
+    "parameter tying",
+    "parameter sharing",
+    "compartilhamento de parametros"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Bagging and ensembles (error v/k + (k-1)c/k)",
+   "paginas": "271-273",
+   "termos": [
+    "bagging",
+    "ensemble",
+    "model averaging",
+    "boosting"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Dropout: masks, weight scaling, cost, limits",
+   "paginas": "273-283",
+   "termos": [
+    "dropout",
+    "weight scaling",
+    "mascara binaria",
+    "dropconnect",
+    "inferencia dropout"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Adversarial training and adversarial examples; excessive linearity",
+   "paginas": "283-285",
+   "termos": [
+    "adversarial",
+    "exemplo adversarial",
+    "adversarial training",
+    "fgsm",
+    "panda gibbon",
+    "virtual adversarial"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 7,
+   "topico": "Tangent distance and tangent prop",
+   "paginas": "285",
+   "termos": [
+    "tangent prop",
+    "tangent distance",
+    "manifold tangent"
+   ],
+   "ref": "04-regularizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Learning vs pure optimization: empirical risk, surrogate loss, early stopping",
+   "paginas": "290-292",
+   "termos": [
+    "risco empirico",
+    "erm",
+    "surrogate loss",
+    "perda substituta",
+    "0-1 loss",
+    "empirical risk"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Batch, minibatch and online; minibatch size; shuffling",
+   "paginas": "292-297",
+   "termos": [
+    "minibatch",
+    "batch size",
+    "tamanho do lote",
+    "embaralhar",
+    "shuffle",
+    "online",
+    "gradiente nao viesado"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Hessian ill-conditioning and g^T H g",
+   "paginas": "297-298",
+   "termos": [
+    "ill-conditioning",
+    "mal condicionamento",
+    "g^t h g"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Local minima, identifiability and the gradient norm test",
+   "paginas": "298-300",
+   "termos": [
+    "minimo local",
+    "identificabilidade",
+    "weight space symmetry",
+    "norma do gradiente"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Plateaus, saddle points and flat regions; saddle-free Newton",
+   "paginas": "300-303",
+   "termos": [
+    "sela",
+    "plato",
+    "saddle point",
+    "saddle-free"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Cliffs, exploding and vanishing gradients, long-term dependencies",
+   "paginas": "303-305",
+   "termos": [
+    "cliff",
+    "penhasco",
+    "exploding gradient",
+    "vanishing gradient",
+    "gradiente explosivo",
+    "gradiente que desaparece",
+    "dependencias longas"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "SGD (Algorithm 8.1), learning rate and linear decay",
+   "paginas": "309-311",
+   "termos": [
+    "sgd algoritmo",
+    "learning rate",
+    "decaimento da learning rate",
+    "schedule",
+    "convergencia sgd"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Momentum (Algorithm 8.2)",
+   "paginas": "311-314",
+   "termos": [
+    "momentum",
+    "velocidade terminal",
+    "algoritmo 8.2"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Parameter initialization (Glorot, symmetry breaking)",
+   "paginas": "316-318, 321",
+   "termos": [
+    "inicializacao",
+    "glorot",
+    "xavier",
+    "break symmetry",
+    "normalized initialization",
+    "init"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Adaptive rates: AdaGrad, RMSProp, Adam; choosing the algorithm",
+   "paginas": "321-326",
+   "termos": [
+    "adagrad",
+    "rmsprop",
+    "adam",
+    "taxa adaptativa",
+    "delta-bar-delta",
+    "adadelta",
+    "qual otimizador"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Approximate Newton, conjugate gradients, L-BFGS",
+   "paginas": "325-329, 332",
+   "termos": [
+    "newton treinamento",
+    "conjugate gradient",
+    "gradientes conjugados",
+    "bfgs",
+    "l-bfgs",
+    "levenberg-marquardt"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Batch normalization",
+   "paginas": "332-336",
+   "termos": [
+    "batch normalization",
+    "batchnorm",
+    "normalizacao em lote"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 8,
+   "topico": "Coordinate descent and Polyak averaging",
+   "paginas": "336-337",
+   "termos": [
+    "coordinate descent",
+    "polyak",
+    "media de parametros"
+   ],
+   "ref": "05-otimizacao.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Convolution operation; cross-correlation; Toeplitz matrix",
+   "paginas": "346-349",
+   "termos": [
+    "convolucao",
+    "cross-correlation",
+    "toeplitz",
+    "kernel",
+    "feature map"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Motivation: sparse interactions, parameter sharing, equivariance",
+   "paginas": "350-354",
+   "termos": [
+    "interacoes esparsas",
+    "parameter sharing cnn",
+    "equivariancia",
+    "campo receptivo",
+    "esparsidade conectividade"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Convolution cost vs dense matrix (320x280 example)",
+   "paginas": "355",
+   "termos": [
+    "custo da convolucao",
+    "eficiencia convolucao",
+    "detecao de bordas",
+    "267960"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Pooling; translation invariance; pooling with stride",
+   "paginas": "354-357",
+   "termos": [
+    "pooling",
+    "max pooling",
+    "invariancia",
+    "estagio detector"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Convolution and pooling as an infinitely strong prior",
+   "paginas": "362",
+   "termos": [
+    "prior infinitamente forte",
+    "infinitely strong prior"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Variants: multichannel, stride, zero padding (valid, same, full), locally connected, tiled",
+   "paginas": "362-371",
+   "termos": [
+    "stride",
+    "zero padding",
+    "valid",
+    "same",
+    "full",
+    "locally connected",
+    "tiled convolution",
+    "padding",
+    "tamanho de saida",
+    "multicanal"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Transposed convolution, per-channel bias, structured outputs",
+   "paginas": "371-375",
+   "termos": [
+    "convolucao transposta",
+    "bias por canal",
+    "saidas estruturadas",
+    "segmentacao"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "Data types, variable sizes, efficient algorithms (Fourier, separable)",
+   "paginas": "375-377",
+   "termos": [
+    "tipos de dados",
+    "tamanho variavel",
+    "kernel separavel",
+    "fourier"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 9,
+   "topico": "History of CNNs (AT&T/NEC checks) and role in deep learning",
+   "paginas": "386-387",
+   "termos": [
+    "historia cnn",
+    "lenet",
+    "leitura de cheques"
+   ],
+   "ref": "06-redes-convolucionais.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Unfolding computational graphs; hidden state",
+   "paginas": "390-393",
+   "termos": [
+    "unfolding",
+    "grafo desdobrado",
+    "rnn definicao",
+    "estado oculto",
+    "compartilhamento no tempo"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "RNN: design patterns, universality, equations 10.8-10.11, BPTT",
+   "paginas": "393-396",
+   "termos": [
+    "rnn",
+    "recorrente",
+    "bptt",
+    "tanh recorrente",
+    "turing",
+    "equacoes da rnn"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Teacher forcing",
+   "paginas": "396-399",
+   "termos": [
+    "teacher forcing"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Gradient by BPTT (10.18-10.21)",
+   "paginas": "399-400",
+   "termos": [
+    "gradiente bptt",
+    "backpropagation through time"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Sequence-to-sequence encoder-decoder; recursive networks",
+   "paginas": "411-412, 416",
+   "termos": [
+    "encoder-decoder",
+    "seq2seq",
+    "sequence-to-sequence",
+    "contexto c",
+    "recursive neural network"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Long-term dependencies: powers of W, echo state networks",
+   "paginas": "416-418",
+   "termos": [
+    "dependencias de longo prazo",
+    "long-term dependencies",
+    "echo state",
+    "reservoir",
+    "raio espectral"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "LSTM (10.40-10.44) and GRU (10.45-10.47)",
+   "paginas": "425-427",
+   "termos": [
+    "lstm",
+    "gru",
+    "forget gate",
+    "portas",
+    "gated rnn",
+    "celula lstm"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 10,
+   "topico": "Gradient clipping (10.48-10.49)",
+   "paginas": "428-430",
+   "termos": [
+    "clipping",
+    "gradient clipping",
+    "recorte de gradiente",
+    "norma do gradiente limite"
+   ],
+   "ref": "07-redes-recorrentes.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Practical design process and the Street View example",
+   "paginas": "436-437",
+   "termos": [
+    "metodologia pratica",
+    "processo de projeto",
+    "street view",
+    "pipeline ponta a ponta"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Metrics: Bayes error, precision, recall, F, PR, coverage",
+   "paginas": "437-439",
+   "termos": [
+    "metricas",
+    "bayes error",
+    "precision",
+    "recall",
+    "f-score",
+    "coverage",
+    "pr curve",
+    "evento raro",
+    "custo assimetrico"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Default baseline models",
+   "paginas": "440-441",
+   "termos": [
+    "baseline",
+    "modelo padrao",
+    "primeiro modelo",
+    "o que usar primeiro"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Whether or not to collect more data",
+   "paginas": "441-442",
+   "termos": [
+    "mais dados",
+    "coletar dados",
+    "curva de aprendizado tamanho do treino",
+    "gap treino teste"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Manual hyperparameters; learning rate; Table 11.1",
+   "paginas": "442-447",
+   "termos": [
+    "hiperparametros manuais",
+    "learning rate importante",
+    "tabela 11.1",
+    "capacidade efetiva",
+    "ajuste de hiperparametros"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Grid search, random search, Bayesian hyperparameter optimization",
+   "paginas": "447-451",
+   "termos": [
+    "grid search",
+    "random search",
+    "busca aleatoria",
+    "spearmint",
+    "tpe",
+    "smac",
+    "otimizacao bayesiana"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Debugging strategies (tiny dataset, gradient check, histograms)",
+   "paginas": "451-455",
+   "termos": [
+    "depuracao",
+    "debug",
+    "gradient checking",
+    "diferencas finitas",
+    "passo complexo",
+    "histogramas",
+    "dataset minusculo",
+    "piores erros"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 11,
+   "topico": "Example: address number transcription (coverage and cropping)",
+   "paginas": "455-457",
+   "termos": [
+    "street view",
+    "transcricao de enderecos",
+    "coverage 95%",
+    "recorte apertado"
+   ],
+   "ref": "08-metodologia-pratica.md"
+  },
+  {
+   "cap": 12,
+   "topico": "Scale: CPU, GPU, distributed (asynchronous SGD), compression, dynamic structure, hardware",
+   "paginas": "458-465, 467",
+   "termos": [
+    "gpu",
+    "cuda",
+    "distribuido",
+    "sgd assincrono",
+    "parameter server",
+    "compressao de modelo",
+    "cascata",
+    "mixture of experts",
+    "baixa precisao",
+    "paralelismo de dados"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 12,
+   "topico": "Computer vision: preprocessing and contrast normalization (GCN)",
+   "paginas": "467-470",
+   "termos": [
+    "visao computacional",
+    "pre-processamento",
+    "gcn",
+    "contrast normalization",
+    "sphering"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 12,
+   "topico": "NLP: n-grams, hierarchical softmax",
+   "paginas": "476-477, 482",
+   "termos": [
+    "n-gram",
+    "n-grama",
+    "modelo de linguagem",
+    "hierarchical softmax",
+    "smoothing"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 12,
+   "topico": "Neural translation, encoder-decoder and attention (Bahdanau 2015) [DATED]",
+   "paginas": "488-491",
+   "termos": [
+    "traducao automatica",
+    "nmt",
+    "atencao",
+    "attention",
+    "bahdanau",
+    "encoder-decoder traducao"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 12,
+   "topico": "Embeddings and NLP history; t-SNE",
+   "paginas": "491-492",
+   "termos": [
+    "embeddings",
+    "word embeddings",
+    "t-sne",
+    "historico nlp"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 12,
+   "topico": "Recommender systems",
+   "paginas": "493",
+   "termos": [
+    "recomendacao",
+    "recommender",
+    "publicidade online"
+   ],
+   "ref": "09-aplicacoes-e-escala.md"
+  },
+  {
+   "cap": 13,
+   "topico": "Linear factor models (x = Wh + b + noise)",
+   "paginas": "504-505",
+   "termos": [
+    "modelo de fatores lineares",
+    "linear factor",
+    "ppca",
+    "factor analysis",
+    "ica",
+    "sfa",
+    "sparse coding"
+   ],
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md"
+  },
+  {
+   "cap": 14,
+   "topico": "Autoencoders: undercomplete and regularized (sparse, denoising, contractive)",
+   "paginas": "518-524",
+   "termos": [
+    "autoencoder",
+    "undercomplete",
+    "sparse autoencoder",
+    "denoising autoencoder",
+    "contractive",
+    "dae",
+    "cae",
+    "overcomplete"
+   ],
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md"
+  },
+  {
+   "cap": 15,
+   "topico": "Greedy unsupervised pretraining (Algorithm 15.1)",
+   "paginas": "543-546",
+   "termos": [
+    "pretreino",
+    "pre-treino",
+    "greedy layer-wise",
+    "pretraining nao supervisionado",
+    "algoritmo 15.1"
+   ],
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md"
+  },
+  {
+   "cap": 15,
+   "topico": "Transfer learning and domain adaptation",
+   "paginas": "551",
+   "termos": [
+    "transfer learning",
+    "domain adaptation",
+    "pretrained",
+    "modelo pre-treinado"
+   ],
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md"
+  },
+  {
+   "cap": 15,
+   "topico": "Distributed representation vs symbolic/one-hot",
+   "paginas": "561-563",
+   "termos": [
+    "representacao distribuida",
+    "one-hot",
+    "distributed representation",
+    "k^n conceitos"
+   ],
+   "ref": "10-modelos-lineares-autoencoders-e-representacoes.md"
+  },
+  {
+   "cap": 16,
+   "topico": "Partition function Z, energy-based models, Boltzmann",
+   "paginas": "583-586",
+   "termos": [
+    "funcao de particao",
+    "partition function",
+    "energy-based",
+    "boltzmann",
+    "mrf",
+    "produto de especialistas",
+    "z"
+   ],
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md"
+  },
+  {
+   "cap": 16,
+   "topico": "Separation and d-separation",
+   "paginas": "587-588",
+   "termos": [
+    "d-separacao",
+    "separacao",
+    "independencia condicional"
+   ],
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md"
+  },
+  {
+   "cap": 17,
+   "topico": "Monte Carlo, Gibbs sampling, mixing between modes",
+   "paginas": "606, 614-616",
+   "termos": [
+    "monte carlo",
+    "gibbs",
+    "mcmc",
+    "mixing",
+    "block gibbs",
+    "metropolis"
+   ],
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md"
+  },
+  {
+   "cap": 18,
+   "topico": "Gradient of the log-likelihood: positive and negative phases; CD and PCD",
+   "paginas": "621-627",
+   "termos": [
+    "fase positiva",
+    "fase negativa",
+    "contrastive divergence",
+    "cd",
+    "pcd",
+    "sml",
+    "modos espurios"
+   ],
+   "ref": "11-modelos-probabilisticos-monte-carlo-e-particao.md"
+  },
+  {
+   "cap": 19,
+   "topico": "ELBO (evidence lower bound)",
+   "paginas": "648",
+   "termos": [
+    "elbo",
+    "evidence lower bound",
+    "variational free energy",
+    "inferencia variacional"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  },
+  {
+   "cap": 20,
+   "topico": "RBM",
+   "paginas": "671",
+   "termos": [
+    "rbm",
+    "restricted boltzmann",
+    "harmonium",
+    "hebb"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  },
+  {
+   "cap": 20,
+   "topico": "VAE (variational autoencoder)",
+   "paginas": "711-713",
+   "termos": [
+    "vae",
+    "variational autoencoder",
+    "iwae",
+    "draw"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  },
+  {
+   "cap": 20,
+   "topico": "GAN (generative adversarial network), non-convergence, DCGAN, LAPGAN, GMMN/MMD",
+   "paginas": "714-719",
+   "termos": [
+    "gan",
+    "generative adversarial",
+    "gerador",
+    "discriminador",
+    "jogo de soma zero",
+    "dcgan",
+    "lapgan",
+    "gmmn",
+    "mmd",
+    "moment matching"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  },
+  {
+   "cap": 20,
+   "topico": "Diffusion inversion (precursor) [DATED]",
+   "paginas": "731-732",
+   "termos": [
+    "difusao",
+    "diffusion",
+    "diffusion inversion"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  },
+  {
+   "cap": 20,
+   "topico": "Evaluation of generative models",
+   "paginas": "732-734",
+   "termos": [
+    "avaliar modelos generativos",
+    "ais",
+    "binarizacao",
+    "log-verossimilhanca avaliacao"
+   ],
+   "ref": "12-inferencia-aproximada-e-modelos-generativos.md"
+  }
+ ],
+ "lacunas": [
+  {
+   "termo": "Transformer",
+   "busca": [
+    "transformer",
+    "transformers"
+   ],
+   "nota": "0 occurrences; the book predates it (2016)"
+  },
+  {
+   "termo": "self-attention / multi-head attention",
+   "busca": [
+    "self-attention",
+    "self attention",
+    "multi-head",
+    "atencao propria"
+   ],
+   "nota": "0 occurrences; the book's attention is the weighted average of an RNN (p.490-491)"
+  },
+  {
+   "termo": "BERT / GPT / LLMs / large language models",
+   "busca": [
+    "bert",
+    "gpt",
+    "llm",
+    "large language model",
+    "chatgpt",
+    "grandes modelos de linguagem"
+   ],
+   "nota": "0 occurrences of bert/gpt"
+  },
+  {
+   "termo": "prompting / in-context learning / LLM fine-tuning",
+   "busca": [
+    "prompt",
+    "in-context",
+    "prompt engineering",
+    "instruction tuning"
+   ],
+   "nota": "0 occurrences of prompt; fine-tuning only in the sense of the 2006 pretraining (p.544)"
+  },
+  {
+   "termo": "RLHF",
+   "busca": [
+    "rlhf"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "LoRA / adapters / PEFT",
+   "busca": [
+    "lora",
+    "peft",
+    "adaptador"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "Layer normalization",
+   "busca": [
+    "layer normalization",
+    "layernorm",
+    "layer norm"
+   ],
+   "nota": "0 occurrences; only batch normalization (p.332-336)"
+  },
+  {
+   "termo": "ResNet / residual connections",
+   "busca": [
+    "resnet",
+    "residual network",
+    "conexao residual",
+    "skip connection resnet"
+   ],
+   "nota": "0 occurrences of ResNet; 'residual' only on p.506 and 659 in another sense"
+  },
+  {
+   "termo": "AdamW / decoupled weight decay",
+   "busca": [
+    "adamw"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "GELU / Swish",
+   "busca": [
+    "gelu",
+    "swish"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "word2vec",
+   "busca": [
+    "word2vec"
+   ],
+   "nota": "0 occurrences of the name; there is a citation of word vectors (Mikolov 2013a) on p.551"
+  },
+  {
+   "termo": "normalizing flows",
+   "busca": [
+    "normalizing flow",
+    "normalizing flows"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "PyTorch / JAX / TPU",
+   "busca": [
+    "pytorch",
+    "jax",
+    "tpu"
+   ],
+   "nota": "0 occurrences; there are Theano, Torch, Caffe, TensorFlow, MXNet (p.40, 461) [DATED]"
+  },
+  {
+   "termo": "scaling laws / tokenization",
+   "busca": [
+    "scaling law",
+    "scaling laws",
+    "tokenizacao",
+    "tokenization",
+    "bpe"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "mixed precision / bf16 training",
+   "busca": [
+    "mixed precision",
+    "bf16",
+    "fp16"
+   ],
+   "nota": "0 occurrences; there is only 8-16 bit low precision (p.467) [DATED]"
+  },
+  {
+   "termo": "learning rate warmup / cosine schedule",
+   "busca": [
+    "warmup",
+    "cosine schedule",
+    "cosine annealing"
+   ],
+   "nota": "0 occurrences of warmup"
+  },
+  {
+   "termo": "mixup / cutout / modern augmentations",
+   "busca": [
+    "mixup",
+    "cutout",
+    "randaugment"
+   ],
+   "nota": "0 occurrences"
+  },
+  {
+   "termo": "diffusion as a modern generative image model",
+   "busca": [
+    "diffusion model",
+    "modelo de difusao",
+    "ddpm",
+    "stable diffusion"
+   ],
+   "nota": "the book only has 'diffusion inversion' as a transition (p.731-732)"
+  },
+  {
+   "termo": "Neural architecture search / capsules / GNN",
+   "busca": [
+    "neural architecture search",
+    "nas",
+    "capsule",
+    "graph neural network",
+    "gnn"
+   ],
+   "nota": "0 occurrences"
+  }
+ ],
+ "nao_lido": [
+  {
+   "paginas": "44-45, 181-182, 502-503",
+   "tema": "openers of Parts I, II and III"
+  },
+  {
+   "paginas": "67",
+   "tema": "end of ch. 2"
+  },
+  {
+   "paginas": "71-87",
+   "tema": "ch. 3: random variables, common distributions, Bayes, technical details (titles only)"
+  },
+  {
+   "paginas": "108-112",
+   "tema": "ch. 4: constrained optimization (KKT) and linear least squares (titles only)"
+  },
+  {
+   "paginas": "151-165",
+   "tema": "ch. 5: Bayesian statistics, MAP, SVM, kNN, trees, PCA, k-means"
+  },
+  {
+   "paginas": "173-180",
+   "tema": "ch. 5: smoothness, manifold learning"
+  },
+  {
+   "paginas": "202-205",
+   "tema": "ch. 6: other outputs, mixture densities"
+  },
+  {
+   "paginas": "229-235",
+   "tema": "ch. 6: general backprop and MLP example"
+  },
+  {
+   "paginas": "248-249, 265-267, 269-270, 286-288",
+   "tema": "ch. 7: L2 eigenvalues, early stopping = L2, sparsity, tangent classifier, summary"
+  },
+  {
+   "paginas": "306-308, 315, 319-320, 330-331, 338-344",
+   "tema": "ch. 8: inexact gradient, local/global structure, Nesterov, SVD init, BFGS, supervised pretraining, continuation/curriculum"
+  },
+  {
+   "paginas": "358-361, 372, 378-385",
+   "tema": "ch. 9: detailed pooling, complete architectures, random features, neuroscientific basis"
+  },
+  {
+   "paginas": "401-410, 412-415, 419-424, 431-435",
+   "tema": "ch. 10: remaining BPTT, graphical RNN, bidirectional, deep RNN, full echo state, leaky units, regularizing flow, explicit memory"
+  },
+  {
+   "paginas": "466, 471-475, 478-481, 483-487, 494-500",
+   "tema": "ch. 12: specialized hardware, speech, neural LMs, high-dimensional outputs, recommendation detail, knowledge graphs"
+  },
+  {
+   "paginas": "506-516",
+   "tema": "ch. 13 remainder: PPCA/FA, ICA, SFA, sparse coding, manifold PCA"
+  },
+  {
+   "paginas": "517, 525-540",
+   "tema": "ch. 14 remainder: DAE and score matching, manifolds, CAE, PSD, applications"
+  },
+  {
+   "paginas": "541-542, 547-550, 552-560, 564-572",
+   "tema": "ch. 15 remainder"
+  },
+  {
+   "paginas": "573, 575-582, 589-604",
+   "tema": "ch. 16 remainder: challenge, directed/undirected graphs, conversion, factor graphs, sampling, RBM"
+  },
+  {
+   "paginas": "605, 607-613, 617-619",
+   "tema": "ch. 17 remainder: importance sampling, Markov chains, tempering"
+  },
+  {
+   "paginas": "620, 628-645",
+   "tema": "ch. 18 remainder: pseudolikelihood, score matching, NCE, AIS"
+  },
+  {
+   "paginas": "646-647, 649-668",
+   "tema": "ch. 19 remainder: EM, MAP, variational, wake-sleep"
+  },
+  {
+   "paginas": "669-670, 673-710, 720-731, 735",
+   "tema": "ch. 20 remainder: Boltzmann machines, DBN, DBM, types of generators, autoregressive, GSN, conclusion"
+  },
+  {
+   "paginas": "736-800",
+   "tema": "Bibliography and Index (not used as a source)"
+  }
+ ]
+}

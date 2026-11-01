@@ -1,0 +1,21 @@
+{
+  "name": "aws-lambda-serverless-expert",
+  "version": "1.0.0",
+  "description": "AWS Lambda and serverless specialist (invocation, concurrency, configuration, IAM, VPC, layers, versions/aliases, container images, SnapStart, observability, limits and best practices) based on the AWS Lambda Developer Guide (2022 edition). Numeric content is marked [DATED].",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "aws",
+    "lambda",
+    "serverless",
+    "concurrency",
+    "event-source-mapping",
+    "sqs",
+    "kinesis",
+    "snapstart",
+    "iam",
+    "vpc",
+    "layers",
+    "quotas"
+  ]
+}

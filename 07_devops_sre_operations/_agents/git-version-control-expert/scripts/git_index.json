@@ -1,0 +1,1524 @@
+{
+ "_meta": {
+  "title": "Pro Git (Scott Chacon, Ben Straub)",
+  "pgen": "Pro Git EN, ed. 2.1.450 (2026-05-25), 501 PDF pages",
+  "pgbr": "Pro Git PT-BR, ed. 2.1.47 (2024-10-28), 500 PDF pages, partial translation",
+  "page_convention": "PDF page; printed EN = PDF - 6; printed PT-BR = PDF - 5",
+  "note": "Topic index for git_lookup.py. Pages checked by tests/verify_citations.py."
+ },
+ "topics": {
+  "vcs-tipos": {
+   "name": "Types of version control (local, centralized, distributed)",
+   "aliases": [
+    "vcs",
+    "controle de versao",
+    "centralizado",
+    "distribuido",
+    "dvcs",
+    "cvcs",
+    "svn",
+    "rcs",
+    "version control",
+    "centralized",
+    "distributed"
+   ],
+   "pgen": "16-19",
+   "pgbr": "12-15",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "Compares local VCS (e.g. RCS), centralized (CVS, Subversion, Perforce: single point of failure) and distributed (full clones as backups; multiple remotes).",
+   "mechanisms": [
+    "Every clone is a full backup of the history",
+    "Centralized: if the server is down, nobody can collaborate"
+   ],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "Does not cover monorepos or trunk-based development"
+   ]
+  },
+  "snapshots-tres-estados": {
+   "name": "Snapshots, integrity and the three states",
+   "aliases": [
+    "snapshot",
+    "tres estados",
+    "three states",
+    "staging area",
+    "index",
+    "working tree",
+    "area de stage",
+    "sha-1",
+    "integridade",
+    "integrity",
+    "snapshots",
+    "checksum"
+   ],
+   "pgen": "20-23",
+   "pgbr": "16-19",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "Git stores snapshots (not differences); almost everything is local; everything is checksummed (40-hex SHA-1); states are modified, staged, committed; working tree, staging area (index), .git directory.",
+   "mechanisms": [
+    "An unchanged file becomes a link to the identical stored copy",
+    "Git almost only adds data: what is easily lost is what was never committed"
+   ],
+   "risks": [
+    "Work that was never committed is probably lost (PGEN p.55)"
+   ],
+   "dated": [
+    "SHA-1 as the hash; only a passing note says Git is moving to SHA256 (PGEN p.226); PGBR does not even have that [DATED]"
+   ],
+   "gaps": [
+    "Does not teach how to create SHA-256 repositories (object-format does not appear)"
+   ]
+  },
+  "config-inicial": {
+   "name": "Installation and initial configuration (git config)",
+   "aliases": [
+    "config",
+    "user.name",
+    "user.email",
+    "core.editor",
+    "init.defaultbranch",
+    "instalar",
+    "install",
+    "git help",
+    "setup",
+    "installation",
+    "configuration",
+    "default branch"
+   ],
+   "pgen": "24-31",
+   "pgbr": "20-25",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "Three config levels (system, global, local), identity, editor, init.defaultBranch (Git >= 2.28), --show-origin, help (git help, -h).",
+   "mechanisms": [
+    "Repeated key: the last value read wins",
+    "git config --list --show-origin"
+   ],
+   "risks": [
+    "A badly configured editor on Windows can end the operation prematurely (PGEN p.29)"
+   ],
+   "dated": [
+    "Installation steps and the versions cited (e.g. 2.8.0) are of their time [DATED]"
+   ],
+   "gaps": [
+    "PGBR does not have the section 'Your default branch name'"
+   ]
+  },
+  "init-clone": {
+   "name": "Getting a repository (init, clone)",
+   "aliases": [
+    "git init",
+    "git clone",
+    "clonar",
+    "repositorio",
+    "clone",
+    "get a repository",
+    "initialize"
+   ],
+   "pgen": "32-33",
+   "pgbr": "26-27",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "git init creates .git; git clone copies every version of every file and checks out the latest; the 2nd argument picks the directory.",
+   "mechanisms": [
+    "Protocols cited: https, git://, SSH"
+   ],
+   "risks": [],
+   "dated": [
+    "git:// is discouraged by the book itself in Ch. 4 (PGEN p.115) [DATED in practice]"
+   ],
+   "gaps": [
+    "Does not cover --depth or partial clone"
+   ]
+  },
+  "gravar-alteracoes": {
+   "name": "Recording changes (status, add, commit, rm, mv, .gitignore)",
+   "aliases": [
+    "status",
+    "add",
+    "commit",
+    "commit -a",
+    "git rm",
+    "git mv",
+    "gitignore",
+    "stage",
+    "diff",
+    "diff --staged",
+    "preparar",
+    "record changes",
+    "track files",
+    "remove file",
+    "move file",
+    "ignore files"
+   ],
+   "pgen": "34-46",
+   "pgbr": "28-40",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "The status/add/diff/commit cycle; git add is used to track, stage and mark a conflict as resolved; diff compares working tree x index, --staged compares index x last commit; .gitignore with globs; rm needs -f if the file is modified/staged; rm --cached removes it from tracking.",
+   "mechanisms": [
+    "git add stores the content as of the moment of the add",
+    "commit -a only picks up files that are already tracked"
+   ],
+   "risks": [
+    "commit -a can include unwanted changes (PGEN p.44)",
+    "git rm -f discards unrecorded data (p.44)"
+   ],
+   "dated": [
+    "Status messages have the format of their time [DATED]"
+   ],
+   "gaps": [
+    "Does not teach a global gitignore or .git/info/exclude (refers to the man page)"
+   ]
+  },
+  "log-historico": {
+   "name": "History (git log and filters)",
+   "aliases": [
+    "git log",
+    "log",
+    "historico",
+    "pretty",
+    "oneline",
+    "graph",
+    "--since",
+    "--author",
+    "-s",
+    "pickaxe",
+    "no-merges",
+    "history",
+    "view history",
+    "log filters"
+   ],
+   "pgen": "46-52",
+   "pgbr": "40-47",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "log -p, --stat, --pretty (format is stable across versions), --graph, date/author/grep filters, -S, path after --, --no-merges.",
+   "mechanisms": [
+    "Several --author/--grep options combine as 'any'; --all-match requires all the --grep patterns"
+   ],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "Does not show --follow; the ready-made log --oneline --graph --all appears only in Branches (PGEN p.74-75)"
+   ]
+  },
+  "desfazer-basico": {
+   "name": "Undoing things (amend, unstage, discard local changes)",
+   "aliases": [
+    "desfazer",
+    "undo",
+    "amend",
+    "--amend",
+    "unstage",
+    "git restore",
+    "git checkout --",
+    "reset head",
+    "descartar",
+    "discard",
+    "corrigir ultimo commit",
+    "tirar do stage",
+    "undo things",
+    "discard changes",
+    "fix last commit"
+   ],
+   "pgen": "52-56",
+   "pgbr": "47-49",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "commit --amend redoes the last commit; reset HEAD <file> (or restore --staged, Git >= 2.23) unstages; checkout -- <file> (or restore) discards local changes with NO way back.",
+   "mechanisms": [
+    "amend replaces the commit (new SHA-1)",
+    "reset without --hard does not touch the working directory"
+   ],
+   "risks": [
+    "checkout -- / restore discard with no way back (PGEN p.54, 56)",
+    "Do not amend a commit that was already pushed (p.53)"
+   ],
+   "dated": [
+    "The book shows reset/checkout first and restore only afterwards; current teaching uses restore/switch [DATED]"
+   ],
+   "gaps": [
+    "Does not cover revert here (only in Appendix C and in merge), nor stash in detail in this section"
+   ]
+  },
+  "remotos": {
+   "name": "Working with remotes (remote, fetch, pull, push)",
+   "aliases": [
+    "remote",
+    "fetch",
+    "pull",
+    "push",
+    "origin",
+    "git remote add",
+    "remote show",
+    "pull.rebase",
+    "remotes",
+    "remote repository",
+    "sync"
+   ],
+   "pgen": "56-61",
+   "pgbr": "50-54",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "remote -v/add/show/rename/remove; fetch does NOT merge; pull = fetch + merge; push is rejected if someone pushed first; pull.rebase defines the behavior (warning since Git 2.27).",
+   "mechanisms": [
+    "Renaming a remote renames the remote-tracking branches",
+    "remote remove also deletes those branches"
+   ],
+   "risks": [
+    "A rejected push requires integrating first (PGEN p.59)"
+   ],
+   "dated": [
+    "The PGBR section 'Pushing to Your Remotes' is in English (PGBR p.52)"
+   ],
+   "gaps": [
+    "Does not teach pull --rebase beyond the pull.rebase config in this section"
+   ]
+  },
+  "tags": {
+   "name": "Tags (lightweight, annotated, sharing, deleting)",
+   "aliases": [
+    "tag",
+    "tags",
+    "git tag",
+    "anotada",
+    "annotated",
+    "lightweight",
+    "leve",
+    "follow-tags",
+    "release",
+    "tagging",
+    "version tag"
+   ],
+   "pgen": "61-66",
+   "pgbr": "55-58",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "An annotated tag (-a) is a full object (tagger, message, signable) and is the recommended kind; a lightweight tag is just a pointer. push does not send tags; --tags sends lightweight and annotated; --follow-tags only annotated; tag -d does not delete on the remote.",
+   "mechanisms": [
+    "Tagging an old commit: git tag -a vX <hash>",
+    "checking out a tag gives a detached HEAD"
+   ],
+   "risks": [
+    "Commits in a detached HEAD become unreachable without a branch (PGEN p.66)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "aliases": {
+   "name": "Git aliases",
+   "aliases": [
+    "alias",
+    "apelido",
+    "alias.co",
+    "git config alias",
+    "aliases",
+    "shortcut"
+   ],
+   "pgen": "66-68",
+   "pgbr": "59-60",
+   "ref": "cap1-2-fundamentos-config-e-desfazer.md",
+   "summary": "git config --global alias.<name> '<command>'; the ! prefix runs an external command; examples unstage and last.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [
+    "The unstage example uses reset HEAD -- [DATED]"
+   ],
+   "gaps": []
+  },
+  "branches-basico": {
+   "name": "Branches: pointers, HEAD, create and switch",
+   "aliases": [
+    "branch",
+    "branches",
+    "head",
+    "checkout",
+    "git switch",
+    "switch",
+    "criar branch",
+    "ponteiro",
+    "decorate",
+    "git branch",
+    "pointer",
+    "create branch",
+    "switch branch"
+   ],
+   "pgen": "69-76",
+   "pgbr": "61-68",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "A branch is a lightweight pointer to a commit; HEAD points to the current branch; checkout moves HEAD and changes the working directory; checkout -b creates and switches; since Git 2.23 git switch / switch -c do the same (PGEN p.76 box).",
+   "mechanisms": [
+    "3 files produce 5 objects: 3 blobs, 1 tree, 1 commit",
+    "git log --oneline --decorate --graph --all"
+   ],
+   "risks": [
+    "Checkout overwrites the working directory; with conflicting changes Git refuses (PGEN p.74, 78)"
+   ],
+   "dated": [
+    "Examples use master and checkout [DATED]; PGBR does not mention switch"
+   ],
+   "gaps": []
+  },
+  "merge-basico": {
+   "name": "Merge: fast-forward and three-way",
+   "aliases": [
+    "merge",
+    "fast-forward",
+    "ff",
+    "three-way",
+    "merge commit",
+    "mesclar",
+    "juntar branches",
+    "hotfix",
+    "merging",
+    "merge branches",
+    "join branches"
+   ],
+   "pgen": "76-82",
+   "pgbr": "68-73",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "Fast-forward only moves the pointer when the commit is directly ahead; diverged history produces a three-way merge with a merge commit (two parents). A merged branch can be deleted with -d.",
+   "mechanisms": [
+    "git merge hotfix -> Fast-forward",
+    "'recursive' strategy in the book's message"
+   ],
+   "risks": [],
+   "dated": [
+    "The recursive strategy is cited; today the default is another one (ort) [DATED, extrapolation]"
+   ],
+   "gaps": [
+    "Does not include --no-ff, --ff-only or --squash in this section"
+   ]
+  },
+  "conflitos-merge": {
+   "name": "Merge conflicts (basic resolution)",
+   "aliases": [
+    "conflito",
+    "conflict",
+    "mergetool",
+    "marcadores",
+    "<<<<<<<",
+    "unmerged",
+    "resolver conflito",
+    "conflicts",
+    "merge conflict",
+    "resolve conflict",
+    "conflict markers"
+   ],
+   "pgen": "82-85",
+   "pgbr": "73-76",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "Git pauses without creating the merge commit; status lists 'both modified'; edit between <<<<<<< ======= >>>>>>>, remove the markers, git add each file and git commit; git mergetool is a graphical alternative.",
+   "mechanisms": [
+    "git add = mark as resolved"
+   ],
+   "risks": [
+    "Forgetting to remove the markers or to run git add"
+   ],
+   "dated": [],
+   "gaps": [
+    "merge --abort only appears in Advanced Merging (PGEN p.279-280)"
+   ]
+  },
+  "gestao-branches": {
+   "name": "Branch management (list, delete, rename, master -> main)",
+   "aliases": [
+    "branch -d",
+    "branch -D",
+    "--merged",
+    "renomear branch",
+    "rename",
+    "master main",
+    "branch --move",
+    "apagar branch",
+    "delete branch",
+    "rename branch",
+    "list branches",
+    "master to main"
+   ],
+   "pgen": "85-88",
+   "pgbr": "77-78",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "branch -v/--merged/--no-merged; -d refuses an unmerged branch and -D forces it (loses work); rename with --move and push with --set-upstream; renaming master requires warning collaborators and adjusting scripts, CI and the host before deleting the old one.",
+   "mechanisms": [
+    "push --set-upstream origin new; push origin --delete old"
+   ],
+   "risks": [
+    "-D discards unmerged commits (PGEN p.86)",
+    "Renaming a branch in use by collaborators is discouraged (p.86)"
+   ],
+   "dated": [
+    "The book treats the master->main switch as a note [DATED in hosting practice]"
+   ],
+   "gaps": []
+  },
+  "workflows-de-branch": {
+   "name": "Branching workflows (long-running, topic branches)",
+   "aliases": [
+    "long-running",
+    "topic branch",
+    "develop",
+    "next",
+    "pu",
+    "workflow",
+    "fluxo de branches",
+    "branch por feature",
+    "branching workflow",
+    "branch workflow",
+    "feature branch"
+   ],
+   "pgen": "88-91",
+   "pgbr": "79-82",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "Long-running: only stable code in master and develop/next for testing; topic branches are short-lived and are created, merged and deleted several times a day.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "Does not cover git-flow or trunk-based; no 'git flow' in the text"
+   ]
+  },
+  "branches-remotos": {
+   "name": "Remote branches, tracking, push, pull and remote delete",
+   "aliases": [
+    "origin/master",
+    "tracking",
+    "rastreamento",
+    "upstream",
+    "set-upstream",
+    "branch -vv",
+    "push origin --delete",
+    "remote branch",
+    "fetch",
+    "remote branches",
+    "remote tracking",
+    "tracking branch",
+    "delete remote branch"
+   ],
+   "pgen": "91-101",
+   "pgbr": "82-92",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "fetch brings an immovable origin/x (no editable local branch); create tracking with checkout -b / --track / branch -u; explicit push; branch -vv uses data from the last fetch; deleting a remote branch only removes the pointer (data stays until GC).",
+   "mechanisms": [
+    "pull = fetch + merge"
+   ],
+   "risks": [
+    "credential.helper cache avoids typing the HTTPS password on every push (PGEN p.98)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "rebase": {
+   "name": "Rebase: basics, --onto, perils and rebase vs merge",
+   "aliases": [
+    "rebase",
+    "git rebase",
+    "rebase --onto",
+    "perils",
+    "perigos",
+    "regra de ouro",
+    "force push",
+    "pull --rebase",
+    "linear",
+    "historico linear",
+    "rebasing",
+    "rebase vs merge",
+    "golden rule",
+    "perils of rebasing",
+    "rebase or merge"
+   ],
+   "pgen": "101-110",
+   "pgbr": "92-101",
+   "ref": "cap3-branching-merge-rebase.md",
+   "summary": "Rebase replays commits onto another base, producing a linear history with the same final snapshot as a merge. Rule: do not rebase commits that exist outside your repository and on which others may have based work. If someone else's force-push happened: fetch + rebase or pull --rebase.",
+   "mechanisms": [
+    "Rebase abandons commits and creates new, similar ones",
+    "patch-id helps detect duplicates, only if the patch is nearly identical"
+   ],
+   "risks": [
+    "Rebasing published, in-use commits confuses everyone (PGEN p.106-109)"
+   ],
+   "dated": [
+    "The book only cites --force; --force-with-lease does not appear [DATED]"
+   ],
+   "gaps": [
+    "Does not include rebase --abort/--continue here (--abort appears in PGEN p.255)"
+   ]
+  },
+  "servidor-protocolos": {
+   "name": "Protocols (local, smart/dumb HTTP, SSH, git://)",
+   "aliases": [
+    "protocolo",
+    "protocols",
+    "git://",
+    "http",
+    "ssh",
+    "local protocol",
+    "bare",
+    "smart http",
+    "dumb",
+    "server protocols",
+    "choose protocol"
+   ],
+   "pgen": "111-116",
+   "pgbr": "102-107",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "Local does not protect against accidental damage; Smart HTTP is the most popular; SSH is good on a corporate network; git:// without TLS can allow arbitrary code execution and push over it is open to anyone.",
+   "mechanisms": [
+    "Port 9418 is often blocked"
+   ],
+   "risks": [
+    "git:// and http:// without encryption (PGEN p.115-116)"
+   ],
+   "dated": [
+    "git:// is obsolete in practice [DATED]"
+   ],
+   "gaps": []
+  },
+  "servidor-ssh-daemon-http": {
+   "name": "Setting up a server (bare, SSH, git-shell, daemon, Smart HTTP)",
+   "aliases": [
+    "servidor",
+    "bare repository",
+    "git clone --bare",
+    "authorized_keys",
+    "git-shell",
+    "git daemon",
+    "git-http-backend",
+    "apache",
+    "ssh key",
+    "ssh-keygen",
+    "server",
+    "git server",
+    "set up server",
+    "host repository"
+   ],
+   "pgen": "116-125",
+   "pgbr": "102-116",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "git clone --bare + scp; single git user with authorized_keys and git-shell; git daemon with git-daemon-export-ok; Smart HTTP with git-http-backend (authentication belongs to the web server, use SSL).",
+   "mechanisms": [
+    "ssh-keygen -o with a passphrase; ssh-agent"
+   ],
+   "risks": [
+    "git-http-backend does not authenticate on its own (PGEN p.124-125)"
+   ],
+   "dated": [
+    "Examples with systemd/Apache/Ruby of their time [DATED]; PGBR p.107-116 is in English"
+   ],
+   "gaps": []
+  },
+  "gitweb-gitlab-hospedagem": {
+   "name": "GitWeb, GitLab and third-party hosting",
+   "aliases": [
+    "gitweb",
+    "gitlab",
+    "hospedagem",
+    "hosting",
+    "instaweb",
+    "merge request",
+    "third-party hosting"
+   ],
+   "pgen": "125-131",
+   "pgbr": "116-122",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "GitWeb is simple; GitLab is a full server (more maintenance); in GitLab, 'Destroy' on a user is destructive and 'Block' is preferable.",
+   "mechanisms": [],
+   "risks": [
+    "Destroying removes the user's projects (PGEN p.128)"
+   ],
+   "dated": [
+    "The GitLab version and hosting services cited are of their time [DATED]"
+   ],
+   "gaps": []
+  },
+  "workflows-distribuidos": {
+   "name": "Distributed workflows (centralized, integration-manager, dictator and lieutenants)",
+   "aliases": [
+    "workflow distribuido",
+    "centralizado",
+    "integration manager",
+    "ditador",
+    "tenentes",
+    "dictator",
+    "lieutenants",
+    "maintainer",
+    "distributed workflow",
+    "distributed workflows",
+    "centralized workflow",
+    "dictator and lieutenants"
+   ],
+   "pgen": "132-135",
+   "pgbr": "123-126",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "Three models: centralized, integration-manager (fork + pull) and dictator/lieutenants (huge projects).",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [],
+   "gaps": []
+  },
+  "diretrizes-de-commit": {
+   "name": "Commit guidelines (whitespace, logical commits, message)",
+   "aliases": [
+    "mensagem de commit",
+    "commit message",
+    "diff --check",
+    "imperativo",
+    "50 caracteres",
+    "72 colunas",
+    "commit guidelines",
+    "commit message guidelines",
+    "imperative mood",
+    "50 characters",
+    "72 columns"
+   ],
+   "pgen": "136-137",
+   "pgbr": "127-128",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "git diff --check before committing; logical commits (git add --patch); summary of up to ~50 characters, blank line, body of ~72 columns, verb in the imperative; the blank line is critical (rebase gets confused).",
+   "mechanisms": [],
+   "risks": [
+    "Without a blank line after the summary, tools such as rebase get confused (PGEN p.137)"
+   ],
+   "dated": [],
+   "gaps": [
+    "Does not include Conventional Commits or Signed-off-by as a general format rule"
+   ]
+  },
+  "times-e-forks-publicos": {
+   "name": "Contributing: small team, managed team, public fork",
+   "aliases": [
+    "private small team",
+    "managed team",
+    "forked public project",
+    "request-pull",
+    "push -f",
+    "merge --squash",
+    "topic branch fork",
+    "contributing",
+    "small team",
+    "public fork"
+   ],
+   "pgen": "137-153",
+   "pgbr": "129-146",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "Small team: fetch+merge and push; managed: one branch per feature and integrators; public fork: push the topic branch to the fork, request-pull, rebase+push -f or a v2 branch, merge --squash for change requests.",
+   "mechanisms": [],
+   "risks": [
+    "push -f after a rebase rewrites the remote branch (PGEN p.152)"
+   ],
+   "dated": [],
+   "gaps": [
+    "Does not cover --force-with-lease"
+   ]
+  },
+  "patches-por-email": {
+   "name": "Patches by email (format-patch, send-email, apply, am)",
+   "aliases": [
+    "format-patch",
+    "send-email",
+    "imap-send",
+    "git am",
+    "git apply",
+    "patch",
+    "email",
+    "patches by email",
+    "email patch",
+    "mailing list"
+   ],
+   "pgen": "153-160",
+   "pgbr": "146-149",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "format-patch -M; send-email/imap-send; the maintainer uses git apply (all or nothing, does not commit) or git am (preserves author and message; --resolved, --skip, --abort, -3).",
+   "mechanisms": [],
+   "risks": [
+    "Pasting a patch into an email client can break its formatting (PGEN p.154)"
+   ],
+   "dated": [
+    "PGBR p.149-164 (Maintaining a Project) is in English"
+   ],
+   "gaps": []
+  },
+  "manter-projeto-integracao": {
+   "name": "Maintaining a project: integration, review, release (describe, archive, shortlog)",
+   "aliases": [
+    "maintaining",
+    "integrar",
+    "cherry-pick",
+    "triple dot",
+    "merge-base",
+    "git describe",
+    "git archive",
+    "shortlog",
+    "build number",
+    "release",
+    "next seen maint",
+    "maintaining a project",
+    "integrate",
+    "integration"
+   ],
+   "pgen": "156-171",
+   "pgbr": "149-164",
+   "ref": "cap4-5-servidores-e-workflows-distribuidos.md",
+   "summary": "Review with git diff master...contrib and git log contrib --not master; integrate by merge, master/develop, master/next/seen/maint, rebase or cherry-pick (new SHA-1); release with tag -s, describe, archive, shortlog.",
+   "mechanisms": [
+    "git describe requires an annotated tag (--tags includes lightweight ones)"
+   ],
+   "risks": [
+    "The abbreviated SHA from describe may stop being valid (PGEN p.169)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "github-conta-fork-pr": {
+   "name": "GitHub: account, fork, pull request, GitHub Flow",
+   "aliases": [
+    "github",
+    "fork",
+    "pull request",
+    "pr",
+    "github flow",
+    "2fa",
+    "upstream",
+    "sync fork",
+    "markdown",
+    "contribute",
+    "update fork"
+   ],
+   "pgen": "172-196",
+   "pgbr": "165-189",
+   "ref": "cap6-github.md",
+   "summary": "Fork + topic branch + push to the fork + PR; new commits on the same branch update the PR (without notifying); outdated PR: prefer merging upstream over rebase; if you rebase, do not force-push to an open PR (new branch/PR). The fork never updates itself.",
+   "mechanisms": [
+    "The Merge button always creates a non-ff merge commit"
+   ],
+   "risks": [
+    "A direct commit to the fork's master gets in the way of syncing (PGEN p.196)"
+   ],
+   "dated": [
+    "Interfaces, HTTPS password auth and the Sync fork button have changed [DATED]; PGBR translates only up to p.188"
+   ],
+   "gaps": []
+  },
+  "github-manter-org-api": {
+   "name": "GitHub: maintaining a project, organizations, notifications, webhooks and API",
+   "aliases": [
+    "colaboradores",
+    "refs/pull",
+    "organizacao",
+    "teams",
+    "webhook",
+    "api",
+    "token",
+    "octokit",
+    "notificacoes",
+    "readme",
+    "contributing",
+    "collaborators",
+    "organization",
+    "organizations",
+    "notifications",
+    "webhooks"
+   ],
+   "pgen": "197-223",
+   "pgbr": "189-216",
+   "ref": "cap6-github.md",
+   "summary": "Collaborators, PRs at refs/pull/N/head (needs an extra refspec), notifications, README/CONTRIBUTING, transferring a project, teams, webhooks (default: push only), API with a token (60 req/h without auth, 5,000 with).",
+   "mechanisms": [],
+   "risks": [
+    "The token only appears once (PGEN p.220)"
+   ],
+   "dated": [
+    "Webhooks and Services, limits and Basic/token auth [DATED]"
+   ],
+   "gaps": [
+    "Does not cover GitHub Actions, CODEOWNERS or branch protection"
+   ]
+  },
+  "revision-selection": {
+   "name": "Revision selection (short SHA, reflog, ^ and ~, ranges)",
+   "aliases": [
+    "revision",
+    "rev-parse",
+    "head~",
+    "head^",
+    "reflog",
+    "@{",
+    "..",
+    "...",
+    "--not",
+    "left-right",
+    "range",
+    "revision selection",
+    "select revisions",
+    "short sha",
+    "ancestry",
+    "commit ranges"
+   ],
+   "pgen": "224-232",
+   "pgbr": "217-224 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "Unique short prefix (>=4); rev-parse; reflog and HEAD@{n}; ancestry ^ and ~; ranges A..B, --not, A...B with --left-right.",
+   "mechanisms": [
+    "git log origin/master..HEAD shows what would be pushed"
+   ],
+   "risks": [
+    "The reflog is local and covers a few months (PGEN p.227)",
+    "PowerShell/cmd require escaping @{ and ^ (p.228)"
+   ],
+   "dated": [
+    "SHA-1 collision demonstrated in 2017; the book cites the migration to SHA256 (p.225-226)"
+   ],
+   "gaps": []
+  },
+  "staging-interativo-stash-clean": {
+   "name": "Interactive staging, stash and clean",
+   "aliases": [
+    "add -p",
+    "add -i",
+    "patch",
+    "hunk",
+    "stash",
+    "stash push",
+    "stash apply",
+    "stash pop",
+    "stash -u",
+    "git clean",
+    "clean -n",
+    "clean -f",
+    "interactive staging",
+    "clean untracked",
+    "partial commit"
+   ],
+   "pgen": "232-241",
+   "pgbr": "225-234 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "add -p for a partial commit; stash saves work (by default it does NOT save untracked/ignored: -u/-a); apply does not restore staged state without --index and does not remove the stash; clean deletes untracked files (use -n before -f).",
+   "mechanisms": [
+    "stash branch <name> for an old stash that conflicts"
+   ],
+   "risks": [
+    "git clean often has no way back (PGEN p.240)",
+    "-x deletes ignored files (p.241)"
+   ],
+   "dated": [
+    "git stash save is deprecated, use push (PGEN p.236)"
+   ],
+   "gaps": []
+  },
+  "assinatura-gpg": {
+   "name": "Signing your work (GPG: tags and commits)",
+   "aliases": [
+    "gpg",
+    "assinar",
+    "sign",
+    "tag -s",
+    "commit -S",
+    "verify-signatures",
+    "commit.gpgsign",
+    "show-signature",
+    "signingkey",
+    "signing",
+    "sign commits",
+    "sign tags",
+    "signature verification"
+   ],
+   "pgen": "242-245",
+   "pgbr": "235-239 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "tag -s / tag -v; commit -S and log --show-signature; merge --verify-signatures; commit.gpgsign for the team.",
+   "mechanisms": [],
+   "risks": [
+    "Without standardizing commit.gpgsign the team fails to sign (PGEN p.245)"
+   ],
+   "dated": [
+    "The book only covers GPG (SSH/S-MIME out) [DATED, extrapolation]"
+   ],
+   "gaps": [
+    "Does not cover SSH or S/MIME signing"
+   ]
+  },
+  "busca": {
+   "name": "Searching (git grep, log -S/-G/-L)",
+   "aliases": [
+    "git grep",
+    "log -S",
+    "log -G",
+    "log -L",
+    "pickaxe",
+    "buscar",
+    "procurar",
+    "line log",
+    "search",
+    "searching",
+    "find string in history"
+   ],
+   "pgen": "245-249",
+   "pgbr": "239-242 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "git grep -n [tag] searches any tree; log -S string (when it entered/changed); -G regex; -L :function:file shows a function's history.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "The term 'pickaxe' appears in PGEN but not in PGBR"
+   ]
+  },
+  "reescrita-de-historia": {
+   "name": "Rewriting history (amend, rebase -i, squash, split, filter-branch)",
+   "aliases": [
+    "rebase -i",
+    "rebase interativo",
+    "interactive rebase",
+    "squash",
+    "reword",
+    "reorder",
+    "split",
+    "drop",
+    "filter-branch",
+    "filter-repo",
+    "reescrever historia",
+    "remover arquivo do historico",
+    "editar mensagem",
+    "rewrite history",
+    "rewriting history",
+    "remove file from history",
+    "edit message"
+   ],
+   "pgen": "249-257",
+   "pgbr": "243-249 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "Rewrite only locally and before pushing. amend; rebase -i HEAD~N (pick/edit/squash/drop; deleting a line loses the commit); split via reset HEAD^; filter-branch is the 'nuclear option' and the book recommends git-filter-repo.",
+   "mechanisms": [
+    "Way out: git rebase --abort during, reflog afterwards"
+   ],
+   "risks": [
+    "Changing a commit rewrites all its descendants (PGEN p.255)",
+    "filter-branch changes every SHA-1 when changing an email (p.256-257)"
+   ],
+   "dated": [
+    "filter-branch: the book itself says it is no longer recommended (PGEN p.255)"
+   ],
+   "gaps": [
+    "Does not include autosquash/fixup or force-with-lease"
+   ]
+  },
+  "reset": {
+   "name": "Reset demystified (three trees, --soft/--mixed/--hard, checkout vs reset)",
+   "aliases": [
+    "reset",
+    "reset --hard",
+    "reset --soft",
+    "reset --mixed",
+    "tres arvores",
+    "three trees",
+    "head index working",
+    "squash com reset",
+    "checkout vs reset",
+    "wd safe",
+    "reset demystified"
+   ],
+   "pgen": "257-277",
+   "pgbr": "249-269 (in English)",
+   "ref": "cap7a-revisoes-stash-reset-e-reescrita-de-historia.md",
+   "summary": "reset moves the branch HEAD points to (step 1, --soft), then matches the index (--mixed, default) and the working directory (--hard). reset --hard is the only destructive form; with a path, it skips step 1 (= unstage). checkout moves HEAD itself.",
+   "mechanisms": [
+    "Squash: reset --soft HEAD~N + commit",
+    "The final table has a 'WD Safe?' column (PGEN p.277)"
+   ],
+   "risks": [
+    "reset --hard and checkout <commit> <paths> are not safe for the working directory (PGEN p.269, 277)"
+   ],
+   "dated": [
+    "Does not cover restore/switch or ORIG_HEAD [DATED]"
+   ],
+   "gaps": [
+    "Does not include reset --keep"
+   ]
+  },
+  "merge-avancado": {
+   "name": "Advanced merging (abort, whitespace, manual re-merge, ours/theirs, undo, subtree)",
+   "aliases": [
+    "merge --abort",
+    "ignore-space-change",
+    "merge-file",
+    "diff3",
+    "checkout --conflict",
+    "--ours",
+    "--theirs",
+    "-Xours",
+    "-s ours",
+    "desfazer merge",
+    "revert -m 1",
+    "subtree",
+    "combined diff",
+    "advanced merging",
+    "undo merge",
+    "merge strategies",
+    "ours theirs"
+   ],
+   "pgen": "277-294",
+   "pgbr": "269-287 (in English)",
+   "ref": "cap7b-merge-avancado-bisect-submodulos-bundle-credenciais.md",
+   "summary": "Clean workdir before merging; merge --abort; -Xignore-space-change; checkout --conflict=diff3; undo a local merge with reset --hard HEAD~, a published one with revert -m 1 (and revert the revert to re-merge); -Xours/-Xtheirs vs -s ours; subtree.",
+   "mechanisms": [],
+   "risks": [
+    "merge --abort may not restore everything when there were uncommitted changes (PGEN p.280)",
+    "-s ours ignores the other branch entirely (p.291-292)"
+   ],
+   "dated": [
+    "recursive vs ort strategy [DATED, extrapolation]"
+   ],
+   "gaps": []
+  },
+  "rerere": {
+   "name": "Rerere (reuse recorded resolution)",
+   "aliases": [
+    "rerere",
+    "rerere.enabled",
+    "reuse recorded resolution"
+   ],
+   "pgen": "294-301",
+   "pgbr": "283-288 (in English)",
+   "ref": "cap7b-merge-avancado-bisect-submodulos-bundle-credenciais.md",
+   "summary": "rerere.enabled true records preimage/resolution and replays it in future merges/rebases with the same conflict.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "Does not cover rerere forget"
+   ]
+  },
+  "blame-bisect": {
+   "name": "Debugging with Git (blame and bisect)",
+   "aliases": [
+    "blame",
+    "bisect",
+    "git bisect",
+    "bisect run",
+    "anotar arquivo",
+    "quem mudou",
+    "commit que quebrou",
+    "regressao",
+    "debugging",
+    "find bug",
+    "annotate file",
+    "who changed",
+    "regression",
+    "broken commit"
+   ],
+   "pgen": "301-304",
+   "pgbr": "289-291 (in English)",
+   "ref": "cap7b-merge-avancado-bisect-submodulos-bundle-credenciais.md",
+   "summary": "blame -L, -C annotates lines; bisect: start, bad, good, run <script> (0 = good, non-zero = bad), reset at the end. Use bisect when you do not know where the defect is.",
+   "mechanisms": [],
+   "risks": [
+    "Forgetting bisect reset leaves the repository in the bisect state"
+   ],
+   "dated": [],
+   "gaps": [
+    "Does not include bisect skip"
+   ]
+  },
+  "submodulos": {
+   "name": "Submodules",
+   "aliases": [
+    "submodule",
+    "submodulo",
+    "submodules",
+    ".gitmodules",
+    "recurse-submodules",
+    "submodule update",
+    "update --init"
+   ],
+   "pgen": "304-325",
+   "pgbr": "292-315 (in English)",
+   "ref": "cap7b-merge-avancado-bisect-submodulos-bundle-credenciais.md",
+   "summary": "submodule add; clone --recurse-submodules; pull does not update submodules (use submodule update --init --recursive); a submodule sits in a detached HEAD; push the submodule before the superproject (--recurse-submodules=check|on-demand); only worth it if you edit the submodule together with the project.",
+   "mechanisms": [],
+   "risks": [
+    "A forgotten push leaves the superproject pointing to a nonexistent commit (PGEN p.315)"
+   ],
+   "dated": [
+    "Git < 2.13 behaviors cited [DATED]"
+   ],
+   "gaps": [
+    "Does not cover submodule deinit"
+   ]
+  },
+  "bundle-replace-credenciais": {
+   "name": "Bundle, replace and credential storage",
+   "aliases": [
+    "bundle",
+    "git bundle",
+    "replace",
+    "git replace",
+    "credential",
+    "credential.helper",
+    "credential store",
+    "cache",
+    ".git-credentials",
+    "credentials",
+    "credential storage",
+    "password cache"
+   ],
+   "pgen": "324-341",
+   "pgbr": "316-333 (in English)",
+   "ref": "cap7b-merge-avancado-bisect-submodulos-bundle-credenciais.md",
+   "summary": "bundle create/verify/list-heads to carry commits without a network; replace grafts history; credential helpers (cache expires in 900 s; store writes in plain text).",
+   "mechanisms": [],
+   "risks": [
+    "credential store keeps the password in plain text and never expires (PGEN p.336, 339)"
+   ],
+   "dated": [
+    "HTTP password authentication has changed on hosts [DATED]"
+   ],
+   "gaps": []
+  },
+  "config-atributos-hooks": {
+   "name": "Customizing: config, attributes, hooks",
+   "aliases": [
+    "core.autocrlf",
+    "gitattributes",
+    "textconv",
+    "clean smudge",
+    "export-ignore",
+    "hooks",
+    "pre-commit",
+    "commit-msg",
+    "pre-receive",
+    "update hook",
+    "post-receive",
+    "no-verify",
+    "denynonfastforwards",
+    "customizing git",
+    "attributes",
+    "line endings",
+    "autocrlf"
+   ],
+   "pgen": "342-363",
+   "pgbr": "334-364 (in English)",
+   "ref": "cap8-9-customizacao-hooks-e-outros-sistemas.md",
+   "summary": "autocrlf (true on Windows, input on Linux/macOS); .gitattributes travels with the project but drivers/filters (config) do not; client hooks are not cloned and can be bypassed (--no-verify); real policy lives on the server (pre-receive/update).",
+   "mechanisms": [
+    "update runs per ref; pre-receive runs once"
+   ],
+   "risks": [
+    "help.autocorrect=1 runs the command automatically (PGEN p.345)"
+   ],
+   "dated": [
+    "Hook examples in Ruby and P4Merge are of their time [DATED]"
+   ],
+   "gaps": []
+  },
+  "politica-imposta": {
+   "name": "Example of Git-enforced policy (message and ACL)",
+   "aliases": [
+    "acl",
+    "politica",
+    "policy",
+    "commit-msg regex",
+    "update hook acl",
+    "hook declined",
+    "enforced policy",
+    "hook policy"
+   ],
+   "pgen": "363-372",
+   "pgbr": "355-364 (in English)",
+   "ref": "cap8-9-customizacao-hooks-e-outros-sistemas.md",
+   "summary": "A server-side update hook validates the message format (regex) and per-path ACLs; client hooks mirror it to warn early.",
+   "mechanisms": [],
+   "risks": [
+    "Client hooks assume the same local and remote user (PGEN p.371)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "git-svn": {
+   "name": "Git with Subversion (git svn)",
+   "aliases": [
+    "git svn",
+    "dcommit",
+    "svn",
+    "subversion",
+    "git-svn-id",
+    "subversion bridge"
+   ],
+   "pgen": "373-383",
+   "pgbr": "365-375 (in English)",
+   "ref": "cap8-9-customizacao-hooks-e-outros-sistemas.md",
+   "summary": "git svn clone/dcommit/rebase; keep history linear, rebase instead of merge, dcommit before any Git push; dcommit rewrites commits.",
+   "mechanisms": [],
+   "risks": [
+    "A merge becomes a squash in SVN and loses merge-base information (PGEN p.379-381)"
+   ],
+   "dated": [
+    "Subversion is little used today [DATED, extrapolation]"
+   ],
+   "gaps": []
+  },
+  "mercurial-perforce-migracao": {
+   "name": "Mercurial, Perforce and migrating to Git (fast-import)",
+   "aliases": [
+    "mercurial",
+    "hg",
+    "perforce",
+    "git-p4",
+    "git fusion",
+    "migracao",
+    "migrar",
+    "fast-import",
+    "hg-fast-export",
+    "users.txt",
+    "authors",
+    "migration",
+    "migrate",
+    "migrating to git",
+    "import history"
+   ],
+   "pgen": "383-419",
+   "pgbr": "376-419 (in English)",
+   "ref": "cap8-9-customizacao-hooks-e-outros-sistemas.md",
+   "summary": "Map authors before migrating; git svn clone --authors-file; hg-fast-export; git-p4 and Git Fusion; custom importer with git fast-import.",
+   "mechanisms": [],
+   "risks": [
+    "Cleaning markers (git-svn-id, git-p4) with filter-branch changes every SHA-1 (PGEN p.411-412)"
+   ],
+   "dated": [
+    "Git Fusion, Google Code, git-remote-hg: old tools [DATED]"
+   ],
+   "gaps": [
+    "There is no TFS/TFVC section in the text"
+   ]
+  },
+  "internals-objetos": {
+   "name": "Internals: objects (blob, tree, commit, tag) and plumbing",
+   "aliases": [
+    "internals",
+    "plumbing",
+    "porcelain",
+    "encanamento",
+    "porcelana",
+    "blob",
+    "tree",
+    "hash-object",
+    "cat-file",
+    "write-tree",
+    "commit-tree",
+    ".git",
+    "object storage",
+    "zlib",
+    "git objects",
+    "object model",
+    "content-addressable"
+   ],
+   "pgen": "420-431",
+   "pgbr": "420-430",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "Git is a content-addressable filesystem; object = header (type, space, size, null) + content, SHA-1, zlib, in objects/xx/yyyy; valid modes 100644, 100755, 120000.",
+   "mechanisms": [
+    "hash-object -w; update-index --add --cacheinfo; write-tree; commit-tree"
+   ],
+   "risks": [],
+   "dated": [
+    "The whole chapter describes 40-hex SHA-1; SHA-256 repositories are not covered [DATED]"
+   ],
+   "gaps": [
+    "Does not include object-format or hash migration"
+   ]
+  },
+  "internals-refs-tags-head": {
+   "name": "Internals: references (HEAD, tags, remotes) and update-ref",
+   "aliases": [
+    "refs",
+    "update-ref",
+    "symbolic-ref",
+    "head",
+    "refs/heads",
+    "packed-refs",
+    "tag object",
+    "referencias",
+    "references",
+    "git refs"
+   ],
+   "pgen": "431-435",
+   "pgbr": "430-434",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "Refs are files with a SHA-1 under refs/; use update-ref and symbolic-ref instead of editing files (update-ref feeds the reflog); an annotated tag is an object, a lightweight one is just a ref.",
+   "mechanisms": [],
+   "risks": [
+    "symbolic-ref refuses HEAD outside refs/ (PGEN p.433)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "packfiles-gc": {
+   "name": "Packfiles, gc and maintenance",
+   "aliases": [
+    "packfile",
+    "pack",
+    "gc",
+    "git gc",
+    "loose object",
+    "delta",
+    "verify-pack",
+    "count-objects",
+    "auto gc",
+    "manutencao",
+    "maintenance",
+    "garbage collection",
+    "packfiles"
+   ],
+   "pgen": "435-438, 446-447",
+   "pgbr": "435-438 (in English)",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "A pack stores the most recent version whole and older ones as deltas; automatic gc triggers at ~7,000 loose objects or >50 packs; moves refs to packed-refs.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [],
+   "gaps": [
+    "Does not include git maintenance or commit-graph"
+   ]
+  },
+  "refspec-transferencia": {
+   "name": "Refspec and transfer protocols (dumb/smart)",
+   "aliases": [
+    "refspec",
+    "fetch refspec",
+    "push refspec",
+    "+refs/heads",
+    "send-pack",
+    "upload-pack",
+    "dumb protocol",
+    "smart protocol",
+    "transfer protocols",
+    "transfer"
+   ],
+   "pgen": "438-446",
+   "pgbr": "438-446 (in English)",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "Default fetch: +refs/heads/*:refs/remotes/origin/* (the + forces a non-fast-forward update); push <src>:<dst>; :topic or --delete deletes on the remote; dumb does not write to the server; smart uses send-pack/receive-pack and fetch-pack/upload-pack.",
+   "mechanisms": [],
+   "risks": [
+    "A refspec cannot be used to fetch from one repo and push to another (PGEN p.440)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "recuperacao-de-dados": {
+   "name": "Data recovery and removing large objects",
+   "aliases": [
+    "recuperar",
+    "recover",
+    "commit perdido",
+    "reflog recover",
+    "fsck",
+    "dangling",
+    "git prune",
+    "remover arquivo grande",
+    "verify-pack",
+    "branch -D recuperar",
+    "reset --hard recuperar",
+    "data recovery",
+    "recovery",
+    "recover lost commit",
+    "remove large file",
+    "lost commit"
+   ],
+   "pgen": "446-453",
+   "pgbr": "441-452 (in English)",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "Lost commit: git reflog (or log -g) and git branch recover <sha>; without a reflog: git fsck --full and 'dangling commit'. Large file: filter-branch --index-filter 'git rm --ignore-unmatch --cached', clean refs/original and logs, gc and prune --expire now.",
+   "mechanisms": [],
+   "risks": [
+    "Deleting the file in a later commit does NOT remove it from history (PGEN p.449)",
+    "prune --expire now deletes permanently (p.452)"
+   ],
+   "dated": [
+    "filter-branch and manual cleanup with rm -Rf [DATED]"
+   ],
+   "gaps": [
+    "Does not include reflog expire or gc --prune"
+   ]
+  },
+  "variaveis-de-ambiente": {
+   "name": "Git environment variables",
+   "aliases": [
+    "environment variables",
+    "GIT_DIR",
+    "GIT_TRACE",
+    "GIT_SSL_NO_VERIFY",
+    "GIT_AUTHOR",
+    "variaveis de ambiente",
+    "environment variable",
+    "env vars"
+   ],
+   "pgen": "453-458",
+   "pgbr": "453-459",
+   "ref": "cap10-internals-objetos-refs-packfiles-recuperacao.md",
+   "summary": "Global variables, repository location, pathspecs, commits, network, diff/merge, debugging (GIT_TRACE*) and others.",
+   "mechanisms": [],
+   "risks": [
+    "GIT_SSL_NO_VERIFY turns off certificate verification (PGEN p.454-455)"
+   ],
+   "dated": [],
+   "gaps": []
+  },
+  "apendices-ambientes-embutir": {
+   "name": "Appendices A and B (GUIs/IDEs/shells; embedding Git: libgit2, JGit, go-git, Dulwich)",
+   "aliases": [
+    "gui",
+    "gitk",
+    "visual studio",
+    "vscode",
+    "bash completion",
+    "zsh",
+    "posh-git",
+    "powershell",
+    "libgit2",
+    "jgit",
+    "go-git",
+    "dulwich",
+    "embedding",
+    "guis",
+    "ides",
+    "shell completion",
+    "embedding git"
+   ],
+   "pgen": "459-483",
+   "pgbr": "460-481",
+   "ref": "apendices-e-mapa-de-comandos.md",
+   "summary": "Autocompletion and prompt in Bash/Zsh/PowerShell (posh-git); GitHub Desktop's Sync button does pull --rebase and push; CLI vs library when embedding.",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [
+    "Versions of IDEs and libraries [DATED]"
+   ],
+   "gaps": []
+  },
+  "apendice-c-comandos": {
+   "name": "Appendix C: commands by category and Index",
+   "aliases": [
+    "apendice c",
+    "comandos",
+    "git commands",
+    "indice",
+    "index",
+    "revert",
+    "cherry-pick",
+    "worktree",
+    "appendix c",
+    "command map",
+    "command reference",
+    "command index"
+   ],
+   "pgen": "484-501",
+   "pgbr": "482-499 (in English)",
+   "ref": "apendices-e-mapa-de-comandos.md",
+   "summary": "Lists commands by category citing the book's section (without pages); the EN Index uses printed pages (PDF - 6). git revert is described as a reverse cherry-pick (PGEN p.495).",
+   "mechanisms": [],
+   "risks": [],
+   "dated": [
+    "Appendix C still uses checkout to switch branches and does not list switch/restore/worktree [DATED]"
+   ],
+   "gaps": [
+    "Does not list git worktree as a documented command"
+   ]
+  }
+ }
+}

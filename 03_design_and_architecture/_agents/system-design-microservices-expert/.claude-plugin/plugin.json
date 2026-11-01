@@ -1,0 +1,21 @@
+{
+  "name": "system-design-microservices-expert",
+  "version": "2.0.0",
+  "description": "Expert in system design, microservices, and distributed systems grounded in 11 PDFs (Richards SAP and SOA, System Design Handbook, Microsoft MS-MIC/MS-CLD/MS-WEB e-books, Stopford EDS, Hohpe SBC, NGINX API Gateway, Java Microservices, Spring REST). States what the corpus does not cover (Little's Law, PACELC in detail, Half-Open, pivot transaction, Helland) and marks [DATED] content.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Agentic Platform"
+  },
+  "keywords": [
+    "system-design",
+    "microservices",
+    "distributed-systems",
+    "saga",
+    "outbox",
+    "event-driven",
+    "kafka",
+    "api-gateway",
+    "resilience",
+    "cqrs"
+  ]
+}

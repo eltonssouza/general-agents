@@ -1,0 +1,17 @@
+{
+  "name": "mobile-frameworks-expert",
+  "version": "1.0.0",
+  "description": "Overview agent (based on documentation captures) about mobile: React Native docs introduction (docs 0.87, Aug 12, 2026), Flutter documentation landing page (no version) and A Swift Tour (Swift version not stated; code in images). Swift: values, flow control, functions, classes, enums/structs, concurrency, protocols, errors and generics. RN and Flutter are minimal sources. Swift snippet linter, comparator by criteria of the sources and tour checklist. Everything [DATED]; many topics NOT COVERED. Does not recommend among the technologies; does not cover web React or Kotlin/Android.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "swift",
+    "react-native",
+    "flutter",
+    "mobile",
+    "swift-tour",
+    "async-await",
+    "protocols",
+    "optionals"
+  ]
+}

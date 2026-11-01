@@ -1,0 +1,18 @@
+{
+  "name": "product-owner",
+  "version": "1.0.0",
+  "description": "Role agent: Product Owner and business analyst. Product vision, ubiquitous language, AS-IS/TO-BE flows, INVEST stories, BDD criteria (Given/When/Then), DoR and DoD. Validates stories (Portuguese or English) with a deterministic script. No bibliographic source: [practice] label and hand-off to the collection's specialists.",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "product-owner",
+    "user-stories",
+    "invest",
+    "bdd",
+    "acceptance-criteria",
+    "backlog",
+    "ddd"
+  ]
+}

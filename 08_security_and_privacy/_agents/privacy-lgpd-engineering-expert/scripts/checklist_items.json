@@ -1,0 +1,1033 @@
+{
+ "areas": {
+  "escopo": "Scope and application (Art. 3-4)",
+  "principios": "Principles (Art. 6)",
+  "bases": "Legal bases and consent (Art. 7-10)",
+  "sensiveis": "Sensitive data, anonymization and research (Art. 11-13)",
+  "criancas": "Children and adolescents (Art. 14)",
+  "ciclo": "End of processing and deletion (Art. 15-16)",
+  "direitos": "Data subject rights (Art. 17-22)",
+  "publico": "Public authorities (Art. 23-32)",
+  "transferencia": "International transfer (Art. 33-36)",
+  "agentes": "Processing agents, encarregado (DPO) and liability (Art. 37-45)",
+  "seguranca": "Security and privacy by design (Art. 46-49)",
+  "incidentes": "Security incidents (Art. 48)",
+  "governanca": "Good practices and governance (Art. 50-51)",
+  "sancoes": "Accountability in view of sanctions (Art. 52)",
+  "nist": "Privacy engineering and risk (NIST IR 8062)"
+ },
+ "items": [
+  {
+   "id": "ESC01",
+   "area": "escopo",
+   "text": "Has it been determined whether the operation takes place in national territory, aims to offer goods/services to or process data of individuals located in Brazil, or uses data collected in Brazil (any one is enough)?",
+   "src": "LGPD Art. 3º, I-III and §1º",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "território nacional",
+    "oferta ou o fornecimento de bens ou serviços",
+    "coletados no território nacional"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "ESC02",
+   "area": "escopo",
+   "text": "Was any Art. 4 exception assessed and documented (purely private non-economic purposes; journalistic/artistic/academic; public security and similar; data from abroad with no shared use)? For academic purposes, do Arts. 7 and 11 still apply?",
+   "src": "LGPD Art. 4º, I-IV",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "fins exclusivamente particulares",
+    "acadêmicos",
+    "segurança pública"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI01",
+   "area": "principios",
+   "text": "Is each purpose legitimate, specific, explicit and informed to the data subject, with no incompatible further processing?",
+   "src": "LGPD Art. 6º, I",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "propósitos legítimos, específicos, explícitos e informados"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI02",
+   "area": "principios",
+   "text": "Is the processing compatible with the purposes informed, according to the context of the processing?",
+   "src": "LGPD Art. 6º, II",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "compatibilidade do tratamento",
+    "contexto do tratamento"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI03",
+   "area": "principios",
+   "text": "Is the data collected limited to the minimum necessary, relevant, proportionate and not excessive for each purpose?",
+   "src": "LGPD Art. 6º, III",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "mínimo necessário",
+    "não excessivos"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI04",
+   "area": "principios",
+   "text": "Can the data subject consult, in a facilitated and free way, the form and duration of the processing and the completeness of their data?",
+   "src": "LGPD Art. 6º, IV",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "consulta facilitada e gratuita",
+    "integralidade"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI05",
+   "area": "principios",
+   "text": "Are there mechanisms to keep the data accurate, clear, relevant and up to date according to the purpose?",
+   "src": "LGPD Art. 6º, V",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "exatidão, clareza, relevância e atualização"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI06",
+   "area": "principios",
+   "text": "Is the information about the processing and the agents clear, precise and easily accessible (respecting trade and industrial secrets)?",
+   "src": "LGPD Art. 6º, VI",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "claras, precisas e facilmente acessíveis"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI07",
+   "area": "principios",
+   "text": "Are there technical and administrative measures against unauthorized access and accidental or unlawful destruction, loss, alteration, communication or dissemination?",
+   "src": "LGPD Art. 6º, VII",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "medidas técnicas e administrativas",
+    "acessos não autorizados"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI08",
+   "area": "principios",
+   "text": "Have measures been adopted to prevent harm arising from the processing and to avoid unlawful or abusive discriminatory purposes?",
+   "src": "LGPD Art. 6º, VIII-IX",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "prevenir a ocorrência de danos",
+    "fins discriminatórios ilícitos ou abusivos"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PRI09",
+   "area": "principios",
+   "text": "Can effective compliance measures, and their effectiveness, be demonstrated with evidence (accountability)?",
+   "src": "LGPD Art. 6º, X",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "responsabilização e prestação de contas",
+    "eficácia dessas medidas"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS01",
+   "area": "bases",
+   "text": "Is each processing operation linked to a basis in Art. 7 (or Art. 11, if sensitive) and is this recorded?",
+   "src": "LGPD Art. 7º, caput; Art. 37",
+   "pages": [
+    4,
+    14
+   ],
+   "terms": [
+    "somente poderá ser realizado nas seguintes hipóteses",
+    "registro das operações de tratamento"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS02",
+   "area": "bases",
+   "text": "If the basis is consent: was it given in writing (in a highlighted clause) or by another means that shows the data subject's will, for specific purposes, with no generic authorization, and can the controller prove it (burden of proof)?",
+   "src": "LGPD Art. 8º, caput, §§1º, 2º, 4º",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "cláusula destacada",
+    "ônus da prova",
+    "autorizações genéricas"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS03",
+   "area": "bases",
+   "text": "Can consent be revoked at any time, expressly, through a free and facilitated procedure, and does the system propagate the revocation?",
+   "src": "LGPD Art. 8º, §5º; Art. 18, IX",
+   "pages": [
+    5,
+    9
+   ],
+   "terms": [
+    "revogado a qualquer momento",
+    "gratuito e facilitado"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS04",
+   "area": "bases",
+   "text": "Are incompatible changes of purpose or changes to the information in Art. 9, I, II, III or V communicated prominently, with the possibility of revoking?",
+   "src": "LGPD Art. 8º, §6º; Art. 9º, §2º",
+   "pages": [
+    5,
+    6
+   ],
+   "terms": [
+    "com destaque de forma específica",
+    "mudanças da finalidade"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS05",
+   "area": "bases",
+   "text": "Is the information in Art. 9 (purpose, form and duration, controller, contact, shared use, responsibilities, rights) presented in a clear, adequate and conspicuous way?",
+   "src": "LGPD Art. 9º, I-VII",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "finalidade específica do tratamento",
+    "informações de contato do controlador",
+    "clara, adequada e ostensiva"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS06",
+   "area": "bases",
+   "text": "If the processing is a condition for supplying a product/service or exercising a right, is the data subject informed prominently and about how to exercise their rights?",
+   "src": "LGPD Art. 9º, §3º",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "condição para o fornecimento de produto ou de serviço"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS07",
+   "area": "bases",
+   "text": "If the basis is legitimate interest: is there a legitimate purpose based on a concrete situation, only strictly necessary data, transparency, and readiness for a RIPD (Relatório de Impacto à Proteção de Dados Pessoais, data protection impact report) requested by the ANPD?",
+   "src": "LGPD Art. 10, caput, §§1º-3º",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "situações concretas",
+    "estritamente necessários",
+    "relatório de impacto"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS08",
+   "area": "bases",
+   "text": "Does sharing with other controllers on the basis of consent have specific consent for that purpose (unless waived)?",
+   "src": "LGPD Art. 7º, §5º",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "consentimento específico do titular para esse fim"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "BAS09",
+   "area": "bases",
+   "text": "Does publicly accessible data, or data manifestly made public, remain subject to purpose, good faith, public interest, data subject rights and the principles?",
+   "src": "LGPD Art. 7º, §§3º, 4º, 6º",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "manifestamente públicos",
+    "não desobriga os agentes de tratamento"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN01",
+   "area": "sensiveis",
+   "text": "Was the data processed classified against the list of sensitive data in Art. 5, II (including health, genetic, biometric)?",
+   "src": "LGPD Art. 5º, II",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "dado genético ou biométrico"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN02",
+   "area": "sensiveis",
+   "text": "For sensitive data, is there specific and prominent consent for specific purposes, or an indispensable basis from Art. 11, II (a-g)?",
+   "src": "LGPD Art. 11, I-II",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "específica e destacada",
+    "prevenção à fraude"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN03",
+   "area": "sensiveis",
+   "text": "Was processing that reveals sensitive data and may cause harm handled under the Art. 11 regime (even if the data is not sensitive by nature)?",
+   "src": "LGPD Art. 11, §1º",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "revele dados pessoais sensíveis e que possa causar dano"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN04",
+   "area": "sensiveis",
+   "text": "Health data: were the prohibitions on sharing for economic advantage and on risk selection by health plan operators checked?",
+   "src": "LGPD Art. 11, §§4º-5º",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "seleção de riscos",
+    "vantagem econômica"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN05",
+   "area": "sensiveis",
+   "text": "Does the claimed anonymization withstand the reversal test with own means or reasonable efforts (cost, time, technology)? Were behavioral profiles considered?",
+   "src": "LGPD Art. 12, caput, §§1º-2º",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "esforços razoáveis",
+    "perfil comportamental"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEN06",
+   "area": "sensiveis",
+   "text": "In public health research: is data processed only within the body, in a controlled and secure environment, with anonymization/pseudonymization, without transfer to third parties and without disclosing personal data?",
+   "src": "LGPD Art. 13, caput, §§1º, 2º, 4º",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "ambiente controlado e seguro",
+    "pseudonimização"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CRI01",
+   "area": "criancas",
+   "text": "Is the processing of children's and adolescents' data done in their best interest, and is there specific and prominent consent from at least one parent or guardian (children)?",
+   "src": "LGPD Art. 14, caput, §1º",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "melhor interesse",
+    "pelo menos um dos pais"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CRI02",
+   "area": "criancas",
+   "text": "Are reasonable efforts made to verify that consent was given by the guardian, considering the available technologies?",
+   "src": "LGPD Art. 14, §5º",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "esforços razoáveis para verificar"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CRI03",
+   "area": "criancas",
+   "text": "Do games and applications avoid conditioning participation on data beyond what is strictly necessary? Is public information about the types of data, use and rights available?",
+   "src": "LGPD Art. 14, §§2º, 4º",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "estritamente necessárias à atividade",
+    "manter pública a informação"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CRI04",
+   "area": "criancas",
+   "text": "Is the information simple, clear and accessible, with audiovisual resources where appropriate, for the parent/guardian and for the child?",
+   "src": "LGPD Art. 14, §6º",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "recursos audiovisuais"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CIC01",
+   "area": "ciclo",
+   "text": "Are there criteria and a routine for ending the processing (purpose achieved, end of period, data subject request, ANPD order)?",
+   "src": "LGPD Art. 15, I-IV",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "finalidade foi alcançada",
+    "determinação da autoridade nacional"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "CIC02",
+   "area": "ciclo",
+   "text": "After the end of processing, is data deleted, except for authorized retention (legal obligation, research, transfer to a third party, exclusive use by the controller in anonymized form)?",
+   "src": "LGPD Art. 16, I-IV",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "serão eliminados após o término",
+    "uso exclusivo do controlador"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR01",
+   "area": "direitos",
+   "text": "Is there a channel for the express request of the data subject or representative, and is the response free of charge?",
+   "src": "LGPD Art. 18, §§3º, 5º",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "requerimento expresso do titular",
+    "sem custos para o titular"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR02",
+   "area": "direitos",
+   "text": "Does the system handle confirmation, access, correction, anonymization/blocking/deletion, portability, deletion of data processed on consent, information about sharing and about the consequences of refusal (incisos I to IX)?",
+   "src": "LGPD Art. 18, I-IX",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "confirmação da existência de tratamento",
+    "portabilidade dos dados",
+    "revogação do consentimento"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR03",
+   "area": "direitos",
+   "text": "Is there an immediate simplified format and a complete declaration within 15 days for confirmation/access, and is data stored in a format that favors access?",
+   "src": "LGPD Art. 19, I-II, §1º",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "15 (quinze) dias",
+    "formato que favoreça"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR04",
+   "area": "direitos",
+   "text": "When the origin is consent or a contract, can a full electronic copy in a reusable format be provided?",
+   "src": "LGPD Art. 19, §3º",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "cópia eletrônica integral"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR05",
+   "area": "direitos",
+   "text": "If an immediate response is not possible, does the reply state that the sender is not a processing agent (and who is) or give the factual or legal reasons?",
+   "src": "LGPD Art. 18, §4º",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "não é agente de tratamento",
+    "razões de fato ou de direito"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR06",
+   "area": "direitos",
+   "text": "Are correction, deletion, anonymization or blocking communicated immediately to the agents with whom the data was shared (unless impossible or a disproportionate effort)?",
+   "src": "LGPD Art. 18, §6º",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "informar, de maneira imediata",
+    "esforço desproporcional"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR07",
+   "area": "direitos",
+   "text": "Do solely automated decisions that affect the data subject (personal, professional, consumer, credit profiles) allow a review request and give information on criteria and procedures?",
+   "src": "LGPD Art. 20, caput, §1º",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "unicamente com base em tratamento automatizado",
+    "critérios e dos procedimentos"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "DIR08",
+   "area": "direitos",
+   "text": "Is data about the data subject's regular exercise of rights not used to their detriment?",
+   "src": "LGPD Art. 21",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "não podem ser utilizados em seu prejuízo"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PUB01",
+   "area": "publico",
+   "text": "(Public authority) Are the processing cases, legal basis, purpose, procedures and practices published in an easily accessible medium, and is an encarregado (DPO) appointed?",
+   "src": "LGPD Art. 23, I and III",
+   "pages": [
+    10,
+    11
+   ],
+   "terms": [
+    "previsão legal, a finalidade, os procedimentos",
+    "indicado um encarregado"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "PUB02",
+   "area": "publico",
+   "text": "(Public authority) Do transfers to private entities occur only under the exceptions in Art. 26 §1, and were contracts/agreements communicated to the ANPD?",
+   "src": "LGPD Art. 26, §§1º-2º; Art. 27",
+   "pages": [
+    11,
+    12
+   ],
+   "terms": [
+    "execução descentralizada",
+    "comunicados à autoridade nacional"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "TRA01",
+   "area": "transferencia",
+   "text": "Does every international transfer rest on one of the Art. 33 cases (adequacy, contractual guarantees/standard clauses/global corporate rules/seals, cooperation, life, ANPD, agreement, public policy, specific and prominent consent, Art. 7 II, V, VI cases)?",
+   "src": "LGPD Art. 33, I-IX",
+   "pages": [
+    12,
+    13
+   ],
+   "terms": [
+    "cláusulas-padrão contratuais",
+    "normas corporativas globais",
+    "consentimento específico e em destaque"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "TRA02",
+   "area": "transferencia",
+   "text": "When the basis is consent, was the data subject informed beforehand of the international nature of the operation, distinguishing it from other purposes?",
+   "src": "LGPD Art. 33, VIII",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "caráter internacional da operação"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "TRA03",
+   "area": "transferencia",
+   "text": "Are changes to the guarantees presented as sufficient communicated to the ANPD?",
+   "src": "LGPD Art. 36",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "comunicadas à autoridade nacional"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE01",
+   "area": "agentes",
+   "text": "Do the controller and the processor keep a record of processing operations (especially those based on legitimate interest)?",
+   "src": "LGPD Art. 37",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "manter registro das operações"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE02",
+   "area": "agentes",
+   "text": "Does the processor process only according to the controller's instructions, and does the controller verify compliance?",
+   "src": "LGPD Art. 39",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "segundo as instruções fornecidas pelo controlador"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE03",
+   "area": "agentes",
+   "text": "Is an encarregado appointed, with identity and contact publicly disclosed in a clear way (preferably on the website)?",
+   "src": "LGPD Art. 41, caput and §1º",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "indicar encarregado",
+    "divulgadas publicamente"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE04",
+   "area": "agentes",
+   "text": "Does the encarregado receive complaints from data subjects and communications from the ANPD, and advise employees and contractors?",
+   "src": "LGPD Art. 41, §2º",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "aceitar reclamações e comunicações",
+    "orientar os funcionários"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE05",
+   "area": "agentes",
+   "text": "Do controller-processor contracts make clear the instructions, the processor's joint liability (Art. 42 §1, I) and the right of recourse (§4)?",
+   "src": "LGPD Art. 42, §1º, I; §4º",
+   "pages": [
+    14,
+    15
+   ],
+   "terms": [
+    "solidariamente",
+    "direito de regresso"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "AGE06",
+   "area": "agentes",
+   "text": "Can the organization prove one of the Art. 43 exclusions or show the security the data subject may expect (Art. 44)?",
+   "src": "LGPD Art. 43-44",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "culpa exclusiva do titular",
+    "segurança que o titular dele pode esperar"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEG01",
+   "area": "seguranca",
+   "text": "Are there technical and administrative security measures able to protect against unauthorized access and accidental or unlawful situations, proportionate to the nature of the data (especially sensitive) and the state of the technology?",
+   "src": "LGPD Art. 46, caput and §1º",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "medidas de segurança, técnicas e administrativas",
+    "estado atual da tecnologia"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEG02",
+   "area": "seguranca",
+   "text": "Were security and privacy measures applied from the design of the product or service through its execution (privacy by design as a reading of Art. 46 §2)?",
+   "src": "LGPD Art. 46, §2º",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "desde a fase de concepção do produto ou do serviço"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEG03",
+   "area": "seguranca",
+   "text": "Does security continue even after the end of processing and extend to anyone who intervenes in any phase?",
+   "src": "LGPD Art. 47",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "mesmo após o seu término"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SEG04",
+   "area": "seguranca",
+   "text": "Are the systems structured to meet security requirements, good practices, governance and the general principles?",
+   "src": "LGPD Art. 49",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "estruturados de forma a atender aos requisitos de segurança"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "INC01",
+   "area": "incidentes",
+   "text": "Is there a procedure to assess whether an incident may cause relevant risk or harm and, if so, to notify the ANPD and data subjects?",
+   "src": "LGPD Art. 48, caput",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "risco ou dano relevante"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "INC02",
+   "area": "incidentes",
+   "text": "Does the notification contain the six minimum elements (nature of the data, data subjects, protection measures, risks, reasons for delay, reversal/mitigation measures) and respect the deadline defined by the ANPD ([extrapolation]: check the current regulation)?",
+   "src": "LGPD Art. 48, §1º, I-VI",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "descrição da natureza dos dados pessoais afetados",
+    "motivos da demora"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "INC03",
+   "area": "incidentes",
+   "text": "Is there a record of measures that make the data unintelligible to third parties (relevant to the severity assessment) and a plan for measures ordered by the ANPD (disclosure, mitigation)?",
+   "src": "LGPD Art. 48, §§2º-3º",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "ininteligíveis",
+    "ampla divulgação"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV01",
+   "area": "governanca",
+   "text": "Is there a privacy governance program with management commitment, covering the whole data set and adapted to structure, scale and sensitivity?",
+   "src": "LGPD Art. 50, §2º, I, a-c",
+   "pages": [
+    16,
+    17
+   ],
+   "terms": [
+    "programa de governança em privacidade",
+    "independentemente do modo"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV02",
+   "area": "governanca",
+   "text": "Do the policies and safeguards result from a systematic assessment of privacy impacts and risks?",
+   "src": "LGPD Art. 50, §2º, I, d",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "avaliação sistemática de impactos e riscos à privacidade"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV03",
+   "area": "governanca",
+   "text": "Are there transparency and data subject participation mechanisms, internal and external oversight, and integration with general governance?",
+   "src": "LGPD Art. 50, §2º, I, e-f",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "mecanismos de participação do titular",
+    "supervisão internos e externos"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV04",
+   "area": "governanca",
+   "text": "Are there incident response and remediation plans, and is the program updated through continuous monitoring and periodic assessments?",
+   "src": "LGPD Art. 50, §2º, I, g-h",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "planos de resposta a incidentes e remediação",
+    "monitoramento contínuo"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV05",
+   "area": "governanca",
+   "text": "Can the program's effectiveness be demonstrated at the ANPD's request? Are the good-practice rules published and updated?",
+   "src": "LGPD Art. 50, §2º, II; §3º",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "demonstrar a efetividade",
+    "publicadas e atualizadas periodicamente"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "GOV06",
+   "area": "governanca",
+   "text": "Do the good-practice rules consider the nature, scope, purpose and the probability and severity of the risks and benefits of the processing?",
+   "src": "LGPD Art. 50, §1º",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "probabilidade e a gravidade dos riscos e dos benefícios"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SAN01",
+   "area": "sancoes",
+   "text": "Is there evidence for the grading criteria in Art. 52 §1 (good faith, cooperation, internal mechanisms, governance policy, prompt adoption of corrective measures, recidivism)?",
+   "src": "LGPD Art. 52, §1º, II, VII-X",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "boa-fé do infrator",
+    "cooperação do infrator",
+    "pronta adoção de medidas corretivas"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "SAN02",
+   "area": "sancoes",
+   "text": "Does the organization know the range of sanctions (warning, simple fine of up to 2% of revenue limited to R$ 50 million per infraction, daily fine, publicization, blocking, deletion, suspensions, prohibition)?",
+   "src": "LGPD Art. 52, I-XII",
+   "pages": [
+    17,
+    18
+   ],
+   "terms": [
+    "2% (dois por cento) do faturamento",
+    "publicização da infração"
+   ],
+   "origem": "texto"
+  },
+  {
+   "id": "NIS01",
+   "area": "nist",
+   "text": "Does the system have an inventory of data actions (collection, retention, logging, analysis, generation, merging, disclosure, transfer, disposal) and an indication of which may be problematic for individuals?",
+   "src": "NIST8062 3.2.2.1 (p.31)",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "data actions",
+    "collection, retention, logging, analysis"
+   ],
+   "origem": "nist"
+  },
+  {
+   "id": "NIS02",
+   "area": "nist",
+   "text": "Were problematic data actions analyzed (not only unauthorized-access threats), considering the context of use and the perception of typical individuals?",
+   "src": "NIST8062 3.2 and 3.2.2.3 (p.29-31)",
+   "pages": [
+    29,
+    30,
+    31
+   ],
+   "terms": [
+    "problematic data action",
+    "context"
+   ],
+   "origem": "nist"
+  },
+  {
+   "id": "NIS03",
+   "area": "nist",
+   "text": "For each risk, were likelihood and impact estimated (with cost proxies when individual impact is hard to assess) and was the residual risk explicitly accepted or treated?",
+   "src": "NIST8062 3.2.1 (p.30)",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "likelihood",
+    "impact",
+    "residual risk"
+   ],
+   "origem": "nist"
+  },
+  {
+   "id": "NIS04",
+   "area": "nist",
+   "text": "Were potential problems classified (loss of trust, loss of self-determination, discrimination, economic loss) and linked to verifiable system requirements?",
+   "src": "NIST8062 2.2, Fig. 3 and glossary (p.17-18, 37)",
+   "pages": [
+    17,
+    37
+   ],
+   "terms": [
+    "privacy problems",
+    "System privacy requirement"
+   ],
+   "origem": "nist"
+  },
+  {
+   "id": "NIS05",
+   "area": "nist",
+   "text": "Are there capabilities for predictability (no one is surprised; notices tested for comprehension), manageability (granularity to correct, erase, selectively disclose) and disassociability (do not associate beyond what is necessary)?",
+   "src": "NIST8062 3.1 and 3.1.1.1-3 (p.25-28)",
+   "pages": [
+    26,
+    27,
+    28
+   ],
+   "terms": [
+    "predictability",
+    "manageability",
+    "disassociability"
+   ],
+   "origem": "nist"
+  },
+  {
+   "id": "NIS06",
+   "area": "nist",
+   "text": "Does the system boundary used in the analysis cover the whole PII life cycle (collection to disposal), including steps outside the authorization boundary?",
+   "src": "NIST8062 1 and 2.3.1 (p.10, 19)",
+   "pages": [
+    10,
+    19
+   ],
+   "terms": [
+    "system boundary",
+    "authorization boundary"
+   ],
+   "origem": "nist"
+  }
+ ]
+}

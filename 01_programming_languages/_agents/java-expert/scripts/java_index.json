@@ -1,0 +1,2340 @@
+{
+ "_doc": "Topic index of the java-expert package. Pages = PDF pages (convention in references/INDEX.md). 'anchors' are terms that tests/verify_citations.py checks on the indicated page. Marks: [introductory]=Think, [advanced]=Adv, [DATED]/[DEPENDS ON VERSION] according to the text. Aliases keep the Portuguese terms (user input) and add English ones.",
+ "entries": [
+  {
+   "id": "think-depuracao",
+   "titulo": "Debugging, kinds of errors and what to do when stuck",
+   "aliases": [
+    "depuração",
+    "depurar",
+    "debug",
+    "bug",
+    "erro de compilação",
+    "compile error",
+    "erro de execução",
+    "erro lógico",
+    "bisseção",
+    "rubber duck",
+    "patinho de borracha",
+    "preso",
+    "Depuração, tipos de erro e quando estiver preso"
+   ],
+   "refs": [
+    "references/procedimentos.md §3",
+    "references/frameworks.md §2",
+    "references/casos-e-antipadroes.md §1.1 and §1.13"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "43-46"
+    },
+    {
+     "sig": "Think",
+     "pages": "271-284"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 274,
+     "term": "half"
+    },
+    {
+     "sig": "Think",
+     "page": 283,
+     "term": "rubber duck"
+    },
+    {
+     "sig": "Think",
+     "page": 271,
+     "term": "logic"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-scanner",
+   "titulo": "Reading input with Scanner",
+   "aliases": [
+    "scanner",
+    "entrada",
+    "nextint",
+    "nextline",
+    "nextdouble",
+    "hasnextdouble",
+    "inputmismatch",
+    "ler do teclado",
+    "input",
+    "Entrada de dados com Scanner"
+   ],
+   "refs": [
+    "references/procedimentos.md §4",
+    "references/casos-e-antipadroes.md §1.2"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "53-55"
+    },
+    {
+     "sig": "Think",
+     "pages": "60-62"
+    },
+    {
+     "sig": "Think",
+     "pages": "91-92"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 53,
+     "term": "import java.util.Scanner"
+    },
+    {
+     "sig": "Think",
+     "page": 62,
+     "term": "nextLine"
+    },
+    {
+     "sig": "Think",
+     "page": 92,
+     "term": "hasNextDouble"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-tipos-aritmetica",
+   "titulo": "Types, variables, operators, precedence, casts",
+   "aliases": [
+    "tipo",
+    "variável",
+    "operador",
+    "precedência",
+    "cast",
+    "divisão inteira",
+    "int",
+    "double",
+    "char",
+    "long",
+    "constante",
+    "final",
+    "número mágico",
+    "Tipos, variáveis, operadores, precedência, cast",
+    "type",
+    "variable",
+    "operator",
+    "precedence",
+    "integer division",
+    "constant",
+    "magic number"
+   ],
+   "refs": [
+    "references/frameworks.md §3",
+    "references/glossario.md §1"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "33-42"
+    },
+    {
+     "sig": "Think",
+     "pages": "56-59"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 38,
+     "term": "integer division"
+    },
+    {
+     "sig": "Think",
+     "page": 58,
+     "term": "cast"
+    },
+    {
+     "sig": "Think",
+     "page": 56,
+     "term": "magic number"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-ponto-flutuante",
+   "titulo": "Floating point and rounding error",
+   "aliases": [
+    "ponto flutuante",
+    "arredondamento",
+    "0.1",
+    "double comparar",
+    "tolerância",
+    "floating point",
+    "rounding",
+    "Ponto flutuante e erro de arredondamento"
+   ],
+   "refs": [
+    "references/casos-e-antipadroes.md §1.2",
+    "references/frameworks.md §3"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "40-41"
+    },
+    {
+     "sig": "Think",
+     "pages": "280"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 40,
+     "term": "0.9999999999999999"
+    },
+    {
+     "sig": "Think",
+     "page": 280,
+     "term": "never use the == operator with doubles"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-strings",
+   "titulo": "Strings: immutability, charAt, substring, indexOf, equals, compareTo",
+   "aliases": [
+    "string",
+    "charat",
+    "substring",
+    "indexof",
+    "tochararray",
+    "imutável",
+    "immutable",
+    "concatenação",
+    "parseint",
+    "wrapper",
+    "integer",
+    "Strings: imutabilidade, charAt, substring, indexOf, equals, compareTo",
+    "concatenation"
+   ],
+   "refs": [
+    "references/frameworks.md §5",
+    "references/glossario.md §3"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "157-166"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 159,
+     "term": "immutable"
+    },
+    {
+     "sig": "Think",
+     "page": 162,
+     "term": "indexOf"
+    },
+    {
+     "sig": "Think",
+     "page": 165,
+     "term": "parseInt"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-arrays",
+   "titulo": "Arrays: creation, length, index, copying, enhanced for",
+   "aliases": [
+    "array",
+    "arrays",
+    "length",
+    "índice",
+    "indexoutofbounds",
+    "for aprimorado",
+    "enhanced for",
+    "arrays.tostring",
+    "histograma",
+    "vetor",
+    "Arrays: criação, length, índice, cópia, for aprimorado",
+    "index",
+    "histogram"
+   ],
+   "refs": [
+    "references/frameworks.md §11",
+    "references/casos-e-antipadroes.md §1.5"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "141-152"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 142,
+     "term": "NegativeArraySizeException"
+    },
+    {
+     "sig": "Think",
+     "page": 144,
+     "term": "Arrays.toString"
+    },
+    {
+     "sig": "Think",
+     "page": 151,
+     "term": "enhanced for"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-metodos",
+   "titulo": "Methods: parameters, return, overloading, incremental development",
+   "aliases": [
+    "método",
+    "parâmetro",
+    "argumento",
+    "retorno",
+    "sobrecarga",
+    "overload",
+    "stub",
+    "scaffolding",
+    "void",
+    "static",
+    "documentação",
+    "Métodos: parâmetros, retorno, sobrecarga, desenvolvimento incremental",
+    "method",
+    "parameter",
+    "argument",
+    "return",
+    "overloading",
+    "documentation"
+   ],
+   "refs": [
+    "references/procedimentos.md §5",
+    "references/frameworks.md §8"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "69-81"
+    },
+    {
+     "sig": "Think",
+     "pages": "104-112"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 75,
+     "term": "parameter"
+    },
+    {
+     "sig": "Think",
+     "page": 108,
+     "term": "scaffolding"
+    },
+    {
+     "sig": "Think",
+     "page": 110,
+     "term": "overload"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-recursao",
+   "titulo": "Recursion and the base case",
+   "aliases": [
+    "recursão",
+    "recursion",
+    "caso base",
+    "base case",
+    "stackoverflow",
+    "salto de fé",
+    "fatorial",
+    "fibonacci",
+    "Recursão e caso base"
+   ],
+   "refs": [
+    "references/glossario.md §1",
+    "references/casos-e-antipadroes.md §1.9"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "92-98"
+    },
+    {
+     "sig": "Think",
+     "pages": "115-116"
+    },
+    {
+     "sig": "Think",
+     "pages": "220"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 95,
+     "term": "StackOverflowError"
+    },
+    {
+     "sig": "Think",
+     "page": 95,
+     "term": "base case"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-classes",
+   "titulo": "Classes, objects, attributes, constructors, this, getters/setters, toString",
+   "aliases": [
+    "classe",
+    "objeto",
+    "atributo",
+    "construtor",
+    "this",
+    "getter",
+    "setter",
+    "tostring",
+    "encapsulamento",
+    "private",
+    "acoplamento",
+    "instância",
+    "Classes, objetos, atributos, construtores, this, getters/setters, toString",
+    "class",
+    "object",
+    "attribute",
+    "constructor",
+    "encapsulation",
+    "coupling",
+    "instance"
+   ],
+   "refs": [
+    "references/frameworks.md §6",
+    "references/glossario.md §2 and §4.1"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "173-203"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 191,
+     "term": "constructor"
+    },
+    {
+     "sig": "Think",
+     "page": 194,
+     "term": "getters and setters"
+    },
+    {
+     "sig": "Think",
+     "page": 196,
+     "term": "Time@"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-igualdade",
+   "titulo": "Equality, identity, Think's equals, compareTo",
+   "aliases": [
+    "igualdade",
+    "equals",
+    "==",
+    "identidade",
+    "equivalência",
+    "comparar objetos",
+    "comparar string",
+    "compareto",
+    "Igualdade, identidade, equals do Think, compareTo",
+    "equality",
+    "identity",
+    "equivalence",
+    "compare objects",
+    "compare string"
+   ],
+   "refs": [
+    "references/frameworks.md §4",
+    "references/casos-e-antipadroes.md §1.7"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "86"
+    },
+    {
+     "sig": "Think",
+     "pages": "162-163"
+    },
+    {
+     "sig": "Think",
+     "pages": "198-201"
+    },
+    {
+     "sig": "Think",
+     "pages": "212-213"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 199,
+     "term": "By default, the equals method does the same thing as =="
+    },
+    {
+     "sig": "Think",
+     "page": 212,
+     "term": "equals(Card that)"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-null-alias",
+   "titulo": "null, aliasing, references, pass by value",
+   "aliases": [
+    "null",
+    "nullpointer",
+    "alias",
+    "aliasing",
+    "referência",
+    "passagem por valor",
+    "garbage",
+    "coleta de lixo",
+    "null, aliasing, referências, passagem por valor",
+    "reference",
+    "pass by value",
+    "garbage collection"
+   ],
+   "refs": [
+    "references/casos-e-antipadroes.md §1.3",
+    "references/frameworks.md §3"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "76"
+    },
+    {
+     "sig": "Think",
+     "pages": "142-145"
+    },
+    {
+     "sig": "Think",
+     "pages": "177-180"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 179,
+     "term": "NullPointerException"
+    },
+    {
+     "sig": "Think",
+     "page": 178,
+     "term": "alias"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-heranca",
+   "titulo": "Inheritance, composition, polymorphism in the playing-cards example",
+   "aliases": [
+    "herança",
+    "extends",
+    "super",
+    "composição",
+    "is-a",
+    "has-a",
+    "polimorfismo",
+    "cardcollection",
+    "hand",
+    "object",
+    "Herança, composição, polimorfismo no exemplo de cartas",
+    "inheritance",
+    "composition",
+    "polymorphism"
+   ],
+   "refs": [
+    "references/frameworks.md §7"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "234-250"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 238,
+     "term": "extends"
+    },
+    {
+     "sig": "Think",
+     "page": 248,
+     "term": "HAS-A"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-busca-ordenacao",
+   "titulo": "Binary search, selection sort, merge sort, Deck",
+   "aliases": [
+    "busca binária",
+    "binary search",
+    "ordenação",
+    "selection sort",
+    "merge sort",
+    "deck",
+    "embaralhar",
+    "shuffle",
+    "Busca binária, selection sort, merge sort, Deck",
+    "sorting",
+    "sort"
+   ],
+   "refs": [
+    "references/procedimentos.md §11",
+    "references/frameworks.md §11"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "216-232"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 218,
+     "term": "binary"
+    },
+    {
+     "sig": "Think",
+     "page": 226,
+     "term": "selection sort"
+    },
+    {
+     "sig": "Think",
+     "page": 230,
+     "term": "merge"
+    }
+   ],
+   "rotulo": "[introductory]",
+   "nota": ""
+  },
+  {
+   "id": "think-testes",
+   "titulo": "JUnit, Checkstyle, testing by redirection, DrJava",
+   "aliases": [
+    "junit",
+    "checkstyle",
+    "teste",
+    "redirecionamento",
+    "diff",
+    "drjava",
+    "depurador",
+    "breakpoint",
+    "ide",
+    "JUnit, Checkstyle, teste por redirecionamento, DrJava",
+    "test",
+    "testing",
+    "redirection",
+    "debugger"
+   ],
+   "refs": [
+    "references/procedimentos.md §2 and §3.3"
+   ],
+   "pages": [
+    {
+     "sig": "Think",
+     "pages": "251-262"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Think",
+     "page": 260,
+     "term": "JUnit"
+    },
+    {
+     "sig": "Think",
+     "page": 257,
+     "term": "Checkstyle"
+    },
+    {
+     "sig": "Think",
+     "page": 258,
+     "term": "breakpoint"
+    }
+   ],
+   "rotulo": "[introductory] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "adv-construtores",
+   "titulo": "Constructors, initialization, default values, visibility, generational GC",
+   "aliases": [
+    "construtor",
+    "inicialização",
+    "bloco de inicialização",
+    "valor padrão",
+    "default value",
+    "this(",
+    "finalize",
+    "finalizer",
+    "visibilidade",
+    "static init",
+    "coleta de lixo",
+    "Construtores, inicialização, valores padrão, visibilidade, GC geracional",
+    "constructor",
+    "initialization",
+    "initializer block",
+    "visibility",
+    "garbage collection"
+   ],
+   "refs": [
+    "references/frameworks.md §6",
+    "references/glossario.md §4.1"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "12-16"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 13,
+     "term": "Initialization Blocks"
+    },
+    {
+     "sig": "Adv",
+     "page": 14,
+     "term": "Construction guarantee"
+    },
+    {
+     "sig": "Adv",
+     "page": 16,
+     "term": "Finalizers"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-padroes-construcao",
+   "titulo": "Singleton, helper/utility, factory, dependency injection",
+   "aliases": [
+    "singleton",
+    "utility",
+    "helper",
+    "factory",
+    "fábrica",
+    "injeção de dependência",
+    "dependency injection",
+    "di",
+    "inversão de controle",
+    "Singleton, helper/utility, factory, injeção de dependência",
+    "inversion of control"
+   ],
+   "refs": [
+    "references/frameworks.md §6",
+    "references/procedimentos.md §15.1"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "17-19"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 17,
+     "term": "singleton"
+    },
+    {
+     "sig": "Adv",
+     "page": 18,
+     "term": "Dependency Injection"
+    },
+    {
+     "sig": "Adv",
+     "page": 19,
+     "term": "DateFormat"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-equals-hashcode",
+   "titulo": "equals, hashCode, toString, clone",
+   "aliases": [
+    "equals",
+    "hashcode",
+    "tostring",
+    "clone",
+    "cloneable",
+    "objects.equals",
+    "objects.hash",
+    "contrato",
+    "equals, hashCode, toString, clone",
+    "contract"
+   ],
+   "refs": [
+    "references/procedimentos.md §7",
+    "references/frameworks.md §4",
+    "references/casos-e-antipadroes.md §1.7"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "21-27"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 22,
+     "term": "reflexive"
+    },
+    {
+     "sig": "Adv",
+     "page": 23,
+     "term": "hashCode"
+    },
+    {
+     "sig": "Adv",
+     "page": 25,
+     "term": "Cloneable"
+    },
+    {
+     "sig": "Adv",
+     "page": 26,
+     "term": "Objects"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-interfaces",
+   "titulo": "Interfaces, marker, functional, default and static",
+   "aliases": [
+    "interface",
+    "default",
+    "interface funcional",
+    "functional interface",
+    "marker",
+    "marcadora",
+    "lambda",
+    "abstract class",
+    "classe abstrata",
+    "Interfaces, marcadoras, funcionais, default e static",
+    "marker interface"
+   ],
+   "refs": [
+    "references/frameworks.md §7",
+    "references/glossario.md §4.2"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "28-32"
+    },
+    {
+     "sig": "Adv",
+     "pages": "36"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 28,
+     "term": "interface"
+    },
+    {
+     "sig": "Adv",
+     "page": 30,
+     "term": "default"
+    },
+    {
+     "sig": "Adv",
+     "page": 31,
+     "term": "abstract"
+    }
+   ],
+   "rotulo": "[advanced] [DEPENDS ON VERSION: Java 8]",
+   "nota": ""
+  },
+  {
+   "id": "adv-imutabilidade",
+   "titulo": "Immutability and defensive copying",
+   "aliases": [
+    "imutável",
+    "imutabilidade",
+    "immutable",
+    "cópia defensiva",
+    "defensive copy",
+    "unmodifiable",
+    "final field",
+    "Imutabilidade e cópia defensiva",
+    "immutability"
+   ],
+   "refs": [
+    "references/procedimentos.md §8",
+    "references/frameworks.md §9"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "31-32"
+    },
+    {
+     "sig": "Adv",
+     "pages": "62"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 32,
+     "term": "unmodifiable"
+    },
+    {
+     "sig": "Adv",
+     "page": 62,
+     "term": "immutab"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-heranca",
+   "titulo": "Inheritance, final, visibility, @Override, composition",
+   "aliases": [
+    "herança",
+    "inheritance",
+    "final",
+    "override",
+    "@override",
+    "composição",
+    "visibilidade",
+    "anonymous",
+    "classe anônima",
+    "Herança, final, visibilidade, @Override, composição",
+    "anonymous class",
+    "composition",
+    "visibility"
+   ],
+   "refs": [
+    "references/frameworks.md §7 and §8"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "33-38"
+    },
+    {
+     "sig": "Adv",
+     "pages": "60-61"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 34,
+     "term": "Override"
+    },
+    {
+     "sig": "Adv",
+     "page": 37,
+     "term": "composition"
+    },
+    {
+     "sig": "Adv",
+     "page": 38,
+     "term": "final"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-generics",
+   "titulo": "Generics: erasure, bounds, wildcards, diamond",
+   "aliases": [
+    "generics",
+    "genéricos",
+    "erasure",
+    "apagamento",
+    "wildcard",
+    "diamante",
+    "diamond",
+    "bounds",
+    "type parameter",
+    "Generics: apagamento, bounds, wildcards, diamante",
+    "generic",
+    "diamond operator"
+   ],
+   "refs": [
+    "references/frameworks.md §10",
+    "references/glossario.md §4.4"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "39-46"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 42,
+     "term": "erasure"
+    },
+    {
+     "sig": "Adv",
+     "page": 43,
+     "term": "wildcard"
+    },
+    {
+     "sig": "Adv",
+     "page": 44,
+     "term": "diamond"
+    }
+   ],
+   "rotulo": "[advanced] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "adv-enums",
+   "titulo": "Enums, EnumSet, EnumMap",
+   "aliases": [
+    "enum",
+    "enums",
+    "enumset",
+    "enummap",
+    "Enums, EnumSet, EnumMap"
+   ],
+   "refs": [
+    "references/frameworks.md §10",
+    "references/procedimentos.md §15.3"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "47-52"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 47,
+     "term": "enum"
+    },
+    {
+     "sig": "Adv",
+     "page": 51,
+     "term": "EnumSet"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-annotations",
+   "titulo": "Annotations, retention, target, processors",
+   "aliases": [
+    "annotation",
+    "annotations",
+    "@retention",
+    "@target",
+    "@repeatable",
+    "@inherited",
+    "@interface",
+    "Annotations, retention, target, processors"
+   ],
+   "refs": [
+    "references/frameworks.md §10",
+    "references/procedimentos.md §15.4",
+    "references/glossario.md §4.3"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "52-56"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 53,
+     "term": "Retention"
+    },
+    {
+     "sig": "Adv",
+     "page": 54,
+     "term": "Inherited"
+    },
+    {
+     "sig": "Adv",
+     "page": 55,
+     "term": "Repeatable"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-metodos",
+   "titulo": "Method best practices: overloading, varargs, arguments, Javadoc, Optional",
+   "aliases": [
+    "varargs",
+    "sanity check",
+    "validar argumentos",
+    "menos de 6 argumentos",
+    "inlining",
+    "javadoc",
+    "retornar null",
+    "optional",
+    "method reference",
+    "referência a método",
+    "Boas práticas de métodos: sobrecarga, varargs, argumentos, Javadoc, Optional",
+    "validate arguments",
+    "return null",
+    "method parameters"
+   ],
+   "refs": [
+    "references/frameworks.md §17",
+    "references/procedimentos.md §13"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "57-65"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 58,
+     "term": "6"
+    },
+    {
+     "sig": "Adv",
+     "page": 59,
+     "term": "varargs"
+    },
+    {
+     "sig": "Adv",
+     "page": 64,
+     "term": "Optional"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-diretrizes",
+   "titulo": "General guidelines: scope, wrappers, String/StringBuilder, naming conventions",
+   "aliases": [
+    "escopo",
+    "scope",
+    "stringbuilder",
+    "stringbuffer",
+    "string.format",
+    "convenção de nome",
+    "naming",
+    "boxing",
+    "autoboxing",
+    "interface como tipo",
+    "Diretrizes gerais: escopo, wrappers, String/StringBuilder, convenções de nome",
+    "wrapper",
+    "naming convention",
+    "interface as type"
+   ],
+   "refs": [
+    "references/frameworks.md §5 and §17",
+    "references/glossario.md §3"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "66-71"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 66,
+     "term": "scope"
+    },
+    {
+     "sig": "Adv",
+     "page": 69,
+     "term": "StringBuilder"
+    },
+    {
+     "sig": "Adv",
+     "page": 70,
+     "term": "camel case"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-excecoes",
+   "titulo": "Exceptions: checked/unchecked, try-with-resources, custom exception, documentation",
+   "aliases": [
+    "exceção",
+    "exception",
+    "checked",
+    "unchecked",
+    "try-with-resources",
+    "catch vazio",
+    "runtimeexception",
+    "autocloseable",
+    "throws",
+    "@throws",
+    "Exceções: checked/unchecked, try-with-resources, exceção própria, documentação",
+    "empty catch",
+    "custom exception"
+   ],
+   "refs": [
+    "references/frameworks.md §12",
+    "references/procedimentos.md §9",
+    "references/casos-e-antipadroes.md §1.9"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "73-78"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 73,
+     "term": "never ignore"
+    },
+    {
+     "sig": "Adv",
+     "page": 75,
+     "term": "try-with-resources"
+    },
+    {
+     "sig": "Adv",
+     "page": 77,
+     "term": "RuntimeException"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-concorrencia",
+   "titulo": "Concurrency: threads, executors, locks, atomics, wait/notify",
+   "aliases": [
+    "concorrência",
+    "thread",
+    "executor",
+    "future",
+    "callable",
+    "synchronized",
+    "reentrantlock",
+    "trylock",
+    "atomic",
+    "cas",
+    "wait",
+    "notify",
+    "stampedlock",
+    "race condition",
+    "deadlock",
+    "Concorrência: threads, executors, locks, atômicos, wait/notify",
+    "concurrency",
+    "threads",
+    "locks",
+    "atomics"
+   ],
+   "refs": [
+    "references/frameworks.md §13",
+    "references/procedimentos.md §14",
+    "references/casos-e-antipadroes.md §1.11"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "79-87"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 81,
+     "term": "Executors"
+    },
+    {
+     "sig": "Adv",
+     "page": 83,
+     "term": "tryLock"
+    },
+    {
+     "sig": "Adv",
+     "page": 87,
+     "term": "wait"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-serializacao",
+   "titulo": "Serialization, serialVersionUID, Serialization Proxy, JAXB, JSON",
+   "aliases": [
+    "serialização",
+    "serialization",
+    "serializable",
+    "serialversionuid",
+    "externalizable",
+    "serialization proxy",
+    "jaxb",
+    "json",
+    "rmi",
+    "Serialização, serialVersionUID, Serialization Proxy, JAXB, JSON"
+   ],
+   "refs": [
+    "references/frameworks.md §16",
+    "references/procedimentos.md §15.5"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "89-95"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 89,
+     "term": "serialVersionUID"
+    },
+    {
+     "sig": "Adv",
+     "page": 92,
+     "term": "Serialization Proxy"
+    },
+    {
+     "sig": "Adv",
+     "page": 95,
+     "term": "JSON-B"
+    }
+   ],
+   "rotulo": "[advanced] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "adv-reflexao",
+   "titulo": "Reflection, method handles, parameter names",
+   "aliases": [
+    "reflexão",
+    "reflection",
+    "setaccessible",
+    "method handle",
+    "invokedynamic",
+    "-parameters",
+    "Reflexão, method handles, nomes de parâmetros",
+    "parameter names"
+   ],
+   "refs": [
+    "references/frameworks.md §16"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "96-99"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 98,
+     "term": "setAccessible"
+    },
+    {
+     "sig": "Adv",
+     "page": 99,
+     "term": "method handle"
+    }
+   ],
+   "rotulo": "[advanced]",
+   "nota": ""
+  },
+  {
+   "id": "adv-linguagens-dinamicas",
+   "titulo": "Scripting API and dynamic languages on the JVM (Groovy, JRuby, Nashorn)",
+   "aliases": [
+    "scripting",
+    "javax.script",
+    "nashorn",
+    "groovy",
+    "jruby",
+    "jython",
+    "linguagens dinâmicas",
+    "dynamic languages",
+    "Scripting API e linguagens dinâmicas na JVM (Groovy, JRuby, Nashorn)"
+   ],
+   "refs": [
+    "references/glossario.md §9",
+    "references/versoes-e-datado.md §6.2"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "100-105"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 101,
+     "term": "javax.script"
+    },
+    {
+     "sig": "Adv",
+     "page": 102,
+     "term": "Nashorn"
+    }
+   ],
+   "rotulo": "[advanced] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "adv-compiler-api",
+   "titulo": "Compiler API, Tree API, annotation processors",
+   "aliases": [
+    "compiler api",
+    "javax.tools",
+    "annotation processor",
+    "abstractprocessor",
+    "javac",
+    "tree api",
+    "elementscanner",
+    "ast",
+    "Compiler API, Tree API, annotation processors"
+   ],
+   "refs": [
+    "references/procedimentos.md §15.6 and §15.7"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "106-119"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 107,
+     "term": "Compiler"
+    },
+    {
+     "sig": "Adv",
+     "page": 114,
+     "term": "processor"
+    },
+    {
+     "sig": "Adv",
+     "page": 115,
+     "term": "AbstractProcessor"
+    }
+   ],
+   "rotulo": "[advanced] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "adv-agents",
+   "titulo": "Java agents and bytecode instrumentation",
+   "aliases": [
+    "java agent",
+    "javaagent",
+    "premain",
+    "agentmain",
+    "instrumentation",
+    "classfiletransformer",
+    "javassist",
+    "bytecode",
+    "Java agents e instrumentação de bytecode"
+   ],
+   "refs": [
+    "references/procedimentos.md §15.8"
+   ],
+   "pages": [
+    {
+     "sig": "Adv",
+     "pages": "120-124"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "Adv",
+     "page": 120,
+     "term": "premain"
+    },
+    {
+     "sig": "Adv",
+     "page": 122,
+     "term": "ClassFileTransformer"
+    }
+   ],
+   "rotulo": "[advanced] [DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-memoria",
+   "titulo": "HotSpot memory spaces: Java Heap, PermGen, Native Heap; IBM and JRockit",
+   "aliases": [
+    "memória",
+    "heap",
+    "permgen",
+    "native heap",
+    "c-heap",
+    "youngen",
+    "oldgen",
+    "xmx",
+    "xms",
+    "maxpermsize",
+    "32 bits",
+    "jrockit",
+    "ibm",
+    "gencon",
+    "Espaços de memória da HotSpot: Java Heap, PermGen, Native Heap; IBM e JRockit",
+    "memory",
+    "jvm memory",
+    "32 bit"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §2",
+    "references/frameworks.md §14"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "3-13"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 3,
+     "term": "PermGen"
+    },
+    {
+     "sig": "JVM",
+     "page": 4,
+     "term": "C-Heap"
+    },
+    {
+     "sig": "JVM",
+     "page": 6,
+     "term": "gencon"
+    },
+    {
+     "sig": "JVM",
+     "page": 9,
+     "term": "32-bit"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-dimensionamento",
+   "titulo": "Heap sizing and number of JVMs",
+   "aliases": [
+    "dimensionamento",
+    "sizing",
+    "footprint",
+    "full gc",
+    "failover",
+    "divide and conquer",
+    "tuning",
+    "heap size",
+    "Dimensionamento do heap e número de JVMs",
+    "heap sizing",
+    "number of jvms"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.15"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "8-14"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 11,
+     "term": "footprint"
+    },
+    {
+     "sig": "JVM",
+     "page": 12,
+     "term": "50%"
+    },
+    {
+     "sig": "JVM",
+     "page": 14,
+     "term": "Divide and conquer"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-memoria-threads",
+   "titulo": "Heap retained by threads (giant JSON/XML)",
+   "aliases": [
+    "retenção",
+    "threads retendo",
+    "executethread",
+    "stuck",
+    "json gigante",
+    "retained memory",
+    "Heap retido por threads (JSON/XML gigante)",
+    "retention",
+    "threads retaining",
+    "giant json"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.3"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "14-21"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 17,
+     "term": "BEA-000337"
+    },
+    {
+     "sig": "JVM",
+     "page": 19,
+     "term": "ExecuteThread"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-metaspace",
+   "titulo": "PermGen to Metaspace (Java 8 beta, build b75)",
+   "aliases": [
+    "metaspace",
+    "maxmetaspacesize",
+    "java 8 permgen",
+    "remoção do permgen",
+    "PermGen para Metaspace (Java 8 beta, build b75)"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §2.6",
+    "references/versoes-e-datado.md §6.3"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "21-26"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 22,
+     "term": "Metaspace"
+    },
+    {
+     "sig": "JVM",
+     "page": 22,
+     "term": "MaxMetaspaceSize"
+    }
+   ],
+   "rotulo": "[DATED] [DEPENDS ON VERSION]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-heap-dump",
+   "titulo": "Heap dump, MAT, ObjectName leak",
+   "aliases": [
+    "heap dump",
+    "hprof",
+    "mat",
+    "memory analyzer",
+    "jmap",
+    "leak",
+    "vazamento",
+    "histograma",
+    "jhat",
+    "heapdumponoutofmemoryerror",
+    "Heap dump, MAT, leak de ObjectName",
+    "memory leak",
+    "object histogram"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.4"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "26-33"
+    },
+    {
+     "sig": "JVM",
+     "pages": "60-69"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 28,
+     "term": "jmap"
+    },
+    {
+     "sig": "JVM",
+     "page": 32,
+     "term": "ObjectName"
+    },
+    {
+     "sig": "JVM",
+     "page": 64,
+     "term": "hprof"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-verbose-gc",
+   "titulo": "Reading verbose GC (HotSpot Java 7)",
+   "aliases": [
+    "verbose gc",
+    "-verbose:gc",
+    "printgcdetails",
+    "full gc",
+    "psyounggen",
+    "gc log",
+    "Ler verbose GC (HotSpot Java 7)"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.13"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "33-39"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 36,
+     "term": "PSYoungGen"
+    },
+    {
+     "sig": "JVM",
+     "page": 37,
+     "term": "Full GC"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-thread-dump",
+   "titulo": "Thread dump: obtaining, reading, states, nid",
+   "aliases": [
+    "thread dump",
+    "kill -3",
+    "jstack",
+    "nid",
+    "tid",
+    "javacore",
+    "waiting to lock",
+    "Thread dump: obter, ler, estados, nid"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.11"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "40-48"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 42,
+     "term": "nid"
+    },
+    {
+     "sig": "JVM",
+     "page": 44,
+     "term": "kill -3"
+    },
+    {
+     "sig": "JVM",
+     "page": 47,
+     "term": "bottom-up"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-cpu-alta",
+   "titulo": "High CPU: the guilty thread (Windows, Process Explorer)",
+   "aliases": [
+    "cpu alta",
+    "high cpu",
+    "process explorer",
+    "perfmon",
+    "thread culpada",
+    "CPU alta: thread culpada (Windows, Process Explorer)",
+    "guilty thread"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.9"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "49-54"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 52,
+     "term": "Process Explorer"
+    },
+    {
+     "sig": "JVM",
+     "page": 54,
+     "term": "HighCPUSimulator"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-fds",
+   "titulo": "Too many open files (file descriptors, AIX)",
+   "aliases": [
+    "too many open files",
+    "file descriptor",
+    "ulimit",
+    "procfiles",
+    "lsof",
+    "Too many open files (file descriptors, AIX)"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.10"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "54-58"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 55,
+     "term": "Too many open files"
+    },
+    {
+     "sig": "JVM",
+     "page": 56,
+     "term": "procfiles"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-gc-overhead",
+   "titulo": "OutOfMemoryError: GC overhead limit exceeded",
+   "aliases": [
+    "gc overhead",
+    "overhead limit",
+    "usegcoverheadlimit",
+    "OutOfMemoryError: GC overhead limit exceeded"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.5"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "58-69"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 59,
+     "term": "98%"
+    },
+    {
+     "sig": "JVM",
+     "page": 59,
+     "term": "UseGCOverheadLimit"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-deadlock",
+   "titulo": "Deadlock, stuck threads, resource deadlock, hidden read lock",
+   "aliases": [
+    "deadlock",
+    "stuck",
+    "resource deadlock",
+    "lock-ordering",
+    "reentrantreadwritelock",
+    "read lock",
+    "livelock",
+    "Deadlock, stuck threads, resource deadlock, read lock oculto",
+    "hidden read lock"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.12"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "69-85"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 70,
+     "term": "deadlock"
+    },
+    {
+     "sig": "JVM",
+     "page": 79,
+     "term": "Found one Java-level deadlock"
+    },
+    {
+     "sig": "JVM",
+     "page": 83,
+     "term": "ownable synchronizer"
+    }
+   ],
+   "rotulo": "[DATED] [DEPENDS ON VERSION]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-oom-heap-permgen",
+   "titulo": "Heap and PermGen OOM (three patterns)",
+   "aliases": [
+    "java heap space",
+    "permgen space",
+    "outofmemoryerror",
+    "oom",
+    "OOM de heap e de PermGen (três padrões)"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.2 and §3.6"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "85-87"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 85,
+     "term": "PermGen"
+    },
+    {
+     "sig": "JVM",
+     "page": 86,
+     "term": "verbose"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-oom-nativo",
+   "titulo": "Native OOM: out of swap space, unable to create new native thread",
+   "aliases": [
+    "out of swap",
+    "native thread",
+    "unable to create new native thread",
+    "chunkpool",
+    "sigbus",
+    "OOM nativo: out of swap space, unable to create new native thread"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §3.7 and §3.8"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "87-93"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 87,
+     "term": "ChunkPool"
+    },
+    {
+     "sig": "JVM",
+     "page": 89,
+     "term": "native thread"
+    },
+    {
+     "sig": "JVM",
+     "page": 90,
+     "term": "SIGBUS"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "jvm-classloading",
+   "titulo": "ClassNotFoundException, NoClassDefFoundError, class loaders",
+   "aliases": [
+    "classnotfound",
+    "noclassdeffound",
+    "class loader",
+    "classloader",
+    "delegação",
+    "exceptionininitializererror",
+    "verbose:class",
+    "parent-first",
+    "ClassNotFoundException, NoClassDefFoundError, class loaders",
+    "delegation"
+   ],
+   "refs": [
+    "references/jvm-troubleshooting.md §2.9 and §3.14"
+   ],
+   "pages": [
+    {
+     "sig": "JVM",
+     "pages": "93-126"
+    }
+   ],
+   "anchors": [
+    {
+     "sig": "JVM",
+     "page": 93,
+     "term": "ClassNotFoundException"
+    },
+    {
+     "sig": "JVM",
+     "page": 103,
+     "term": "static"
+    },
+    {
+     "sig": "JVM",
+     "page": 126,
+     "term": "verbose:class"
+    }
+   ],
+   "rotulo": "[DATED]",
+   "nota": ""
+  },
+  {
+   "id": "rn-jeps",
+   "titulo": "JEPs by JDK (11, 17, 21, 22, 26): number and title only",
+   "aliases": [
+    "jep",
+    "jdk 11",
+    "jdk 17",
+    "jdk 21",
+    "jdk 22",
+    "jdk 26",
+    "release notes",
+    "lts",
+    "sealed",
+    "record patterns",
+    "structured concurrency",
+    "scoped values",
+    "string templates",
+    "vector api",
+    "ffm",
+    "foreign function",
+    "pattern matching",
+    "stream gatherers",
+    "sequenced collections",
+    "JEPs por JDK (11, 17, 21, 22, 26): só número e título"
+   ],
+   "refs": [
+    "references/versoes-e-datado.md §3 and §5",
+    "skills/java-jdk-features/scripts/jdk_lookup.py"
+   ],
+   "pages": [
+    {
+     "sig": "RN",
+     "pages": "JDK 11, 17, 21, 22, 26"
+    }
+   ],
+   "anchors": [],
+   "rotulo": "(RN JDK N)",
+   "nota": "Use jdk_lookup.py: number and title only; nothing describes the feature."
+  }
+ ],
+ "no_coverage": [
+  {
+   "id": "nc-records",
+   "aliases": [
+    "record",
+    "records",
+    "record class"
+   ],
+   "motivo": "No occurrence of `record` as a feature in Think/Adv; there is only the title \"Record Patterns\" (JDK 21, JEP 440) in the RN. Version of origin: not stated in the sources.",
+   "ver": "jdk_lookup.py record"
+  },
+  {
+   "id": "nc-var",
+   "aliases": [
+    "var",
+    "inferência local",
+    "local variable type inference",
+    "local inference"
+   ],
+   "motivo": "No occurrence of `var` as a keyword in the sources. JEP 323 (JDK 11) has, in its title, local-variable syntax for lambda parameters (title only).",
+   "ver": "jdk_lookup.py 323"
+  },
+  {
+   "id": "nc-text-blocks",
+   "aliases": [
+    "text block",
+    "text blocks",
+    "bloco de texto"
+   ],
+   "motivo": "No occurrence in the sources and no JEP with that title in the RN.",
+   "ver": ""
+  },
+  {
+   "id": "nc-switch-expr",
+   "aliases": [
+    "switch expression",
+    "switch expressions",
+    "switch com seta",
+    "arrow switch"
+   ],
+   "motivo": "Think does not present `switch`; Adv uses a classic switch over an enum (Adv p.51). No RN lists the feature by title (only pattern matching for switch).",
+   "ver": "jdk_lookup.py switch"
+  },
+  {
+   "id": "nc-modulos",
+   "aliases": [
+    "módulo",
+    "módulos",
+    "jpms",
+    "jigsaw",
+    "module-info",
+    "module"
+   ],
+   "motivo": "No occurrence in the sources; Adv only mentions Java 9 as the future (Adv p.94). The RN have only one title with the word Modules (JEP 320, JDK 11).",
+   "ver": "jdk_lookup.py module"
+  },
+  {
+   "id": "nc-streams",
+   "aliases": [
+    "stream",
+    "streams",
+    "stream api",
+    "collectors"
+   ],
+   "motivo": "Streams only in passing in Adv (p.62, p.82, p.103); there is no explanation. Think only uses 'stream' in the I/O sense.",
+   "ver": "jdk_lookup.py stream"
+  },
+  {
+   "id": "nc-colecoes",
+   "aliases": [
+    "hashmap",
+    "hashset",
+    "arraylist",
+    "list",
+    "collections framework",
+    "coleção",
+    "coleções",
+    "collection",
+    "collections"
+   ],
+   "motivo": "There is no collections chapter: Think uses ArrayList (p.234-236) and Adv uses Set/Map only in generics and concurrency examples.",
+   "ver": ""
+  },
+  {
+   "id": "nc-gc-moderno",
+   "aliases": [
+    "g1",
+    "cms",
+    "zgc",
+    "shenandoah",
+    "parallel gc",
+    "serial gc",
+    "gc tuning",
+    "jfr",
+    "flight recorder",
+    "jcmd"
+   ],
+   "motivo": "The handbook does not mention CMS, G1, Serial, ParNew, Flight Recorder or jcmd. The RN only list JEP titles for collectors (JEP 318, 333, 439, 423, 516, 522) without description.",
+   "ver": "jdk_lookup.py gc"
+  },
+  {
+   "id": "nc-frameworks",
+   "aliases": [
+    "spring",
+    "spring boot",
+    "hibernate",
+    "jpa",
+    "jakarta",
+    "micronaut",
+    "quarkus"
+   ],
+   "motivo": "Spring and Hibernate appear only as case-study context in the handbook (JVM p.73, 78, 102); no source teaches frameworks.",
+   "ver": ""
+  },
+  {
+   "id": "nc-build",
+   "aliases": [
+    "maven",
+    "gradle",
+    "ant",
+    "build",
+    "pom",
+    "build tool",
+    "build tools"
+   ],
+   "motivo": "Only a maven-compiler-plugin snippet in an annotation processor example (Adv p.118-119); no source covers build tools.",
+   "ver": ""
+  },
+  {
+   "id": "nc-virtual-threads",
+   "aliases": [
+    "virtual thread",
+    "virtual threads",
+    "loom",
+    "thread virtual",
+    "virtual threads java 21"
+   ],
+   "motivo": "Only the title of JEP 444 (JDK 21) in the RN; how it works is not in any source.",
+   "ver": "jdk_lookup.py virtual"
+  },
+  {
+   "id": "nc-junit5",
+   "aliases": [
+    "junit 5",
+    "jupiter",
+    "mockito",
+    "assertj",
+    "testcontainers"
+   ],
+   "motivo": "Think shows only old JUnit (TestCase, p.260-261); no source covers JUnit 5 or mock libraries.",
+   "ver": ""
+  },
+  {
+   "id": "nc-jdks-sem-fonte",
+   "aliases": [
+    "jdk 8",
+    "jdk 9",
+    "jdk 10",
+    "jdk 12",
+    "jdk 13",
+    "jdk 14",
+    "jdk 15",
+    "jdk 16",
+    "jdk 18",
+    "jdk 19",
+    "jdk 20",
+    "jdk 23",
+    "jdk 24",
+    "jdk 25",
+    "java 25"
+   ],
+   "motivo": "The RN cover only JDK 11, 17, 21, 22 and 26. For Java 8 there are the books (Think p.16, Adv); for the other JDKs there is no source.",
+   "ver": "jdk_lookup.py --coverage"
+  },
+  {
+   "id": "nc-web-dados",
+   "aliases": [
+    "http",
+    "servlet",
+    "rest",
+    "jdbc",
+    "sql",
+    "jackson",
+    "docker",
+    "kubernetes",
+    "segurança",
+    "tls",
+    "web",
+    "security",
+    "database"
+   ],
+   "motivo": "Outside the scope of the sources (fundamentals, Java 7/8 best practices, JVM handbook and JEP titles).",
+   "ver": ""
+  }
+ ]
+}

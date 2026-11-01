@@ -1,0 +1,1050 @@
+{
+ "fonte": "PES = A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications (Sahoo et al.), arXiv:2402.07927v2, 16 Mar 2025",
+ "datado": "[DATED] Mar/2025; numbers 'as reported' in the survey, from different models/datasets; not comparable across techniques.",
+ "convencao_pagina": "PDF page = printed page (arXiv)",
+ "categorias": {
+  "2.1": "New tasks without extensive training",
+  "2.2": "Reasoning and logic",
+  "2.3": "Reducing hallucination",
+  "2.4": "User interaction",
+  "2.5": "Fine-tuning and optimization",
+  "2.6": "Knowledge-based reasoning and generation",
+  "2.7": "Consistency and coherence",
+  "2.8": "Emotion and tone",
+  "2.9": "Code generation and execution",
+  "2.10": "Optimization and efficiency",
+  "2.11": "Understanding user intent",
+  "2.12": "Metacognition and self-reflection"
+ },
+ "tecnicas": [
+  {
+   "id": "zero-shot",
+   "name": "Zero-shot",
+   "section": "2.1",
+   "category": "New tasks without extensive training",
+   "pages": "2",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-2",
+   "datasets": "Arithmetic, Symbolic",
+   "metrics": "Accuracy, ROUGE Score",
+   "summary": "Only the task description, no labeled examples; uses the knowledge already in the model.",
+   "reported": [],
+   "limits": "No examples: depends on what the model already knows (inference from the definition, p.2).",
+   "tags": [
+    "no-examples",
+    "baseline",
+    "any-task"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "few-shot",
+   "name": "Few-shot",
+   "section": "2.1",
+   "category": "New tasks without extensive training",
+   "pages": "2",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-3",
+   "datasets": "NaturalQS, WebQS, TriviaQA",
+   "metrics": "Accuracy",
+   "summary": "A few high-quality input-output pairs in the prompt to induce the task.",
+   "reported": [
+    "Improves complex tasks compared with no demonstrations (p.2)."
+   ],
+   "limits": "Spends tokens; the selection and composition of the examples influence behavior; biases such as favoring frequent words persist (p.2).",
+   "tags": [
+    "few-shot",
+    "examples",
+    "any-task",
+    "factual-qa"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "cot",
+   "name": "Chain-of-Thought (CoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "2",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "PaLM 540B",
+   "datasets": "GSM8K",
+   "metrics": "Accuracy",
+   "summary": "Demonstrations showing step-by-step reasoning and the final answer on multi-step problems.",
+   "reported": [
+    "PaLM 540B: 90.2% accuracy, state of the art on math and commonsense according to the survey (p.2)."
+   ],
+   "limits": "Requires well-made reasoning examples (writing them by hand is time-consuming, p.2).",
+   "tags": [
+    "reasoning-math",
+    "commonsense",
+    "symbolic",
+    "multi-step",
+    "few-shot"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "auto-cot",
+   "name": "Automatic Chain-of-Thought (Auto-CoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "2",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "GPT-3",
+   "datasets": "Arithmetic, Symbolic",
+   "metrics": "Accuracy",
+   "summary": "Generates the reasoning chains with 'Let's think step by step' and samples diverse questions to build demonstrations.",
+   "reported": [
+    "+1.33% (arithmetic) and +1.5% (symbolic) over CoT with GPT-3 (p.2)."
+   ],
+   "limits": "Individual chains may contain errors; sampling diversity mitigates this (p.2).",
+   "tags": [
+    "reasoning-math",
+    "symbolic",
+    "automatic-prompt",
+    "example-generation",
+    "few-shot"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "self-consistency",
+   "name": "Self-Consistency",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "2",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "PaLM 540B",
+   "datasets": "Arithmetic, Commonsense",
+   "metrics": "Accuracy",
+   "summary": "Samples several reasoning chains and picks the most consistent answer (marginalizes) instead of greedy decoding.",
+   "reported": [
+    "Over CoT: +17.9% GSM8K, +11.0% SVAMP, +12.2% AQuA, +6.4% StrategyQA, +3.9% ARC-challenge (p.2)."
+   ],
+   "limits": "Cost of multiple decoding samples (inference from the description, p.2).",
+   "tags": [
+    "reasoning-math",
+    "commonsense",
+    "robustness",
+    "voting",
+    "sampling"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "logicot",
+   "name": "Logical Chain-of-Thought (LogiCoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "2,4",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "Vicuna-33b, GPT-4",
+   "datasets": "GSM8K, AQuA, SocialQA",
+   "metrics": "Accuracy",
+   "summary": "Neuro-symbolic framework: applies reductio ad absurdum to verify each step and revise wrong steps (think-verify-revise).",
+   "reported": [
+    "Vicuna-33b/GPT-4: +0.16%/+1.42% on GSM8K and +3.15%/+2.75% on AQuA over CoT (p.4)."
+   ],
+   "limits": "Small gains on GSM8K (p.4).",
+   "tags": [
+    "reasoning-logic",
+    "verification",
+    "hallucination",
+    "self-feedback",
+    "multi-step"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "cos",
+   "name": "Chain-of-Symbol (CoS)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "gpt-3.5-turbo, GPT-4",
+   "datasets": "SPARTUN",
+   "metrics": "Accuracy, Precision, Recall",
+   "summary": "Condensed symbols instead of natural language for spatial reasoning.",
+   "reported": [
+    "ChatGPT: 31.8%→92.6% on Brick World; up to 65.8% fewer prompt tokens (p.4)."
+   ],
+   "limits": "Scalability, generalization, integration with other techniques and interpretability of reasoning with symbols (p.4).",
+   "tags": [
+    "spatial",
+    "efficiency-tokens",
+    "planning"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "tot",
+   "name": "Tree-of-Thoughts (ToT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Retrieval Based",
+   "turn": "Multi",
+   "models": "GPT-4",
+   "datasets": "Game of 24, Creative Writing",
+   "metrics": "Success Rate",
+   "summary": "Tree of intermediate thoughts; the model generates and evaluates thoughts and uses search (BFS/DFS) with lookahead and backtracking.",
+   "reported": [
+    "Game of 24: 74% vs 4% for CoT; word task: 60% vs 16% (p.4)."
+   ],
+   "limits": "Multiple calls and search (inference from the description, p.4).",
+   "tags": [
+    "search-exploration",
+    "reasoning-logic",
+    "planning",
+    "backtracking",
+    "reasoning-math"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "got",
+   "name": "Graph-of-Thoughts (GoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Retrieval Based",
+   "turn": "Multi",
+   "models": "T5-large",
+   "datasets": "GSM8K, ScienceQA",
+   "metrics": "ROUGE Score",
+   "summary": "Thoughts as a directed graph, with aggregation and combination of branches, backtracking and evaluation.",
+   "reported": [
+    "T5-base +3.41% and T5-large +5.08% on GSM8K; ScienceQA +6.63% (base) and +1.09% (large) over Multimodal-CoT (p.4)."
+   ],
+   "limits": "—",
+   "tags": [
+    "search-exploration",
+    "reasoning-logic",
+    "multimodal",
+    "backtracking"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "s2a",
+   "name": "System 2 Attention (S2A)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "Llama 2-70B",
+   "datasets": "QA, GSM8K",
+   "metrics": "Accuracy",
+   "summary": "The LLM regenerates the context keeping only the relevant part and then answers with the refined context.",
+   "reported": [
+    "Factual QA: 80.3% accuracy; long-form generation: 3.82/5 in objectivity (p.4)."
+   ],
+   "limits": "—",
+   "tags": [
+    "noisy-context",
+    "long-context",
+    "factual-qa",
+    "hallucination"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "thot",
+   "name": "Thread of Thought (ThoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Hybrid",
+   "turn": "Multi",
+   "models": "gpt-3.5-turbo, Llama 2-70b-chat",
+   "datasets": "PopQA, EntityQ, MTCR",
+   "metrics": "Exact Match (EM) Score",
+   "summary": "Splits chaotic contexts into segments, summarizes and examines each one and only then refines the answer; plug-and-play module.",
+   "reported": [
+    "+47.20% on QA and +17.8% on conversation, especially in chaotic contexts (p.4)."
+   ],
+   "limits": "—",
+   "tags": [
+    "noisy-context",
+    "long-context",
+    "factual-qa",
+    "conversation"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "chain-of-table",
+   "name": "Chain of Table",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "GPT 3.5, LLaMA 2",
+   "datasets": "TabFact, WikiTQ",
+   "metrics": "BLEU, ROUGE Score",
+   "summary": "Step-by-step tabular reasoning that generates and executes SQL/DataFrame operations on the table.",
+   "reported": [
+    "+8.69% on TabFact and +6.72% on WikiTQ (p.4)."
+   ],
+   "limits": "Requires executing operations on the table (p.4).",
+   "tags": [
+    "table",
+    "structured-data",
+    "code"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "self-refine",
+   "name": "Self-Refine",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "4-5",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "GPT-3.5, GPT-4",
+   "datasets": "7 diverse tasks (e.g., dialogue response, mathematical reasoning)",
+   "metrics": "Task-specific (accuracy, human preference)",
+   "summary": "Generates an answer, the model critiques its own output and refines it; repeats until a stopping criterion.",
+   "reported": [
+    "GPT-4: +8.7 pts in code optimization, +13.9 in readability, +21.6 in sentiment reversal (p.5)."
+   ],
+   "limits": "Several calls; depends on stopping criteria (p.5).",
+   "tags": [
+    "self-feedback",
+    "code",
+    "writing",
+    "verification",
+    "refinement"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "code-prompting",
+   "name": "Code Prompting",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "5",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "GPT 3.5, Mixtral",
+   "datasets": "CondQA, ShaRC, BGQA",
+   "metrics": "F1",
+   "summary": "Reformulates natural-language problems as structured code for text+code LLMs, without executing it.",
+   "reported": [
+    "GPT-3.5 +8.42 average F1; Mistral +4.22 on three datasets (p.5)."
+   ],
+   "limits": "—",
+   "tags": [
+    "reasoning-logic",
+    "conditional-reasoning",
+    "code"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "echo",
+   "name": "Self-Harmonized CoT (ECHO)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "5",
+   "table_page": 10,
+   "acquisition": "Hybrid",
+   "turn": "Multi",
+   "models": "gpt-3.5-Turbo-0301",
+   "datasets": "Arithmetic, Commonsense, Symbolic",
+   "metrics": "Accuracy",
+   "summary": "Clusters questions (Sentence-BERT + k-means), samples demonstrations with Zero-Shot-CoT and iteratively unifies the rationales.",
+   "reported": [
+    "+2.8% over Auto-CoT on 10 benchmarks; with 50% fewer examples, a drop of -0.8% (Few-Shot-CoT: -1.3%); +2.3% on Mixtral-8x7B (p.5)."
+   ],
+   "limits": "Behind GPT-3.5 on Mixtral because of rationale quality (p.5).",
+   "tags": [
+    "reasoning-math",
+    "commonsense",
+    "symbolic",
+    "automatic-prompt",
+    "example-generation",
+    "few-shot"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "logic-of-thought",
+   "name": "Logic-of-Thought (LoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "5",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "GPT 3.5-turbo, GPT-4",
+   "datasets": "ReClor, LogiQA, RuleTaker, ProofWriter, FOLIO",
+   "metrics": "Accuracy",
+   "summary": "Extracts propositions, extends them with logical laws (Python module) and translates back into the prompt to reduce unfaithful reasoning.",
+   "reported": [
+    "+4.35% (ReClor, with CoT), +5% (LogiQA, CoT+SC), +8% (ProofWriter, with ToT) (p.5)."
+   ],
+   "limits": "—",
+   "tags": [
+    "reasoning-logic",
+    "verification",
+    "hallucination"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "iap",
+   "name": "Instance-adaptive Prompting (IAP)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "5",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Multi",
+   "models": "LLaMA-3-8B-Instruct, Qwen-14B-Chat",
+   "datasets": "Math, Logic, Commonsense",
+   "metrics": "Accuracy",
+   "summary": "Chooses the zero-shot-CoT prompt per instance using attention saliency (IAP-ss and IAP-mv).",
+   "reported": [
+    "IAP-mv: +1.82% on LLaMA-3-8B and +3.31% on Qwen-14B on GSM8K/SVAMP (p.5)."
+   ],
+   "limits": "—",
+   "tags": [
+    "reasoning-math",
+    "commonsense",
+    "prompt-optimization",
+    "per-instance"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "eedp",
+   "name": "End-to-End DAG-Path (EEDP)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "5-6",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-4-turbo",
+   "datasets": "Merged 1000, ZINC test 2500",
+   "metrics": "Accuracy",
+   "summary": "Represents graphs by prioritizing paths between extremes (DAG via BFS), preserving adjacency lists and compressing shared segments.",
+   "reported": [
+    "-55% tokens on molecular graphs; EPCP +10.21%/+16.76% and EPDP +4.73%/+30.13% (p.6)."
+   ],
+   "limits": "—",
+   "tags": [
+    "graph",
+    "efficiency-tokens",
+    "long-range-dependencies"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "layer-of-thoughts",
+   "name": "Layer-of-Thoughts (LoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "6",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "GPT-4o",
+   "datasets": "Japanese Civil Law, Normative sentence",
+   "metrics": "Precision, Recall, F2",
+   "summary": "Filtering layers (keywords, semantics, confirmation) with hard and soft constraints for legal retrieval.",
+   "reported": [
+    "F2 0.835 (precision 0.838, recall 0.839) on Japanese Civil Law vs 0.807; recall 0.966 on German traffic law (p.6)."
+   ],
+   "limits": "—",
+   "tags": [
+    "legal",
+    "retrieval",
+    "reasoning-logic"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "not",
+   "name": "Narrative-of-Thought (NoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "6",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Single",
+   "models": "GPT-3.5, GPT-4, Mistral-7B, LLaMA3-8B",
+   "datasets": "ProScript, Schema-11, WikiHow Script",
+   "metrics": "F1, GED",
+   "summary": "Temporally anchored narratives and a Python class to build temporal graphs; demonstrations generated by GPT-4.",
+   "reported": [
+    "LLaMA3-8B: F1 42.2 vs GPT-3.5 45.7; models <10B are ~50% behind GPT-3.5/4 on the TGG benchmark without the technique (p.6)."
+   ],
+   "limits": "Even GPT-4 struggles because of alignment constraints (p.6).",
+   "tags": [
+    "temporal",
+    "graph",
+    "small-model",
+    "reasoning-logic"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "bot",
+   "name": "Buffer of Thoughts (BoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "6",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "Llama3-8B, Llama3-70B",
+   "datasets": "10 reasoning tasks (e.g., Game of 24, Geometric Shapes)",
+   "metrics": "Accuracy",
+   "summary": "Meta-buffer of reusable 'thought-templates' and a manager that refines them as new problems arrive.",
+   "reported": [
+    "+11% Game of 24, +20% Geometric Shapes, +51% Checkmate-in-One; 12% of the cost of multi-query methods such as ToT; Llama3-8B+BoT outperforms Llama3-70B (p.6)."
+   ],
+   "limits": "—",
+   "tags": [
+    "reasoning-math",
+    "reasoning-logic",
+    "efficiency-cost",
+    "small-model",
+    "template-reuse"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "cd-cot",
+   "name": "Contrastive Denoising with Noisy CoT (CD-CoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "6",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "gpt-3.5-turbo-0613, Gemini-Pro (e outros)",
+   "datasets": "Various tasks (BIG-Bench, commonsense, etc.)",
+   "metrics": "Accuracy, Solve Rate, Human Preference",
+   "summary": "Contrasts noisy rationales with clean ones, rephrases failed examples, chooses paths and votes on the most consistent answer.",
+   "reported": [
+    "+17.8% accuracy on average (p.6)."
+   ],
+   "limits": "Models copy incorrect reasoning from noisy examples; self-correction fails without external feedback and self-consistency does not fix reasoning failures (p.6).",
+   "tags": [
+    "noisy-context",
+    "reasoning-math",
+    "robustness",
+    "voting"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "r-cot",
+   "name": "Reverse Chain-of-Thought (R-CoT)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "6-7",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT4o, R-CoT-8B (e outros)",
+   "datasets": "GeoMM, MathVista, GeoQA",
+   "metrics": "Accuracy",
+   "summary": "Two-stage pipeline (GeoChain and Reverse A&Q) that generates geometric data with detailed chains for multimodal models.",
+   "reported": [
+    "An 8B model outperforms GPT-4o by 12.5% (MathVista) and 14.5% (GeoQA) (p.7)."
+   ],
+   "limits": "—",
+   "tags": [
+    "multimodal",
+    "reasoning-math",
+    "synthetic-data",
+    "geometry"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "cod",
+   "name": "Chain of Draft (CoD)",
+   "section": "2.2",
+   "category": "Reasoning and logic",
+   "pages": "7",
+   "table_page": 10,
+   "acquisition": "Hybrid",
+   "turn": "Single",
+   "models": "GPT-4o, Claude 3.5 Sonnet",
+   "datasets": "Arithmetic, Commonsense, Symbolic",
+   "metrics": "Accuracy",
+   "summary": "Reasoning with short, information-dense steps instead of verbose chains.",
+   "reported": [
+    "Matches or beats CoT; in some cases -80% output tokens; average latency -76.2% (p.7)."
+   ],
+   "limits": "—",
+   "tags": [
+    "efficiency-tokens",
+    "efficiency-latency",
+    "reasoning-math",
+    "commonsense",
+    "symbolic"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "rag",
+   "name": "Retrieval Augmented Generation (RAG)",
+   "section": "2.3",
+   "category": "Reducing hallucination",
+   "pages": "7",
+   "table_page": 10,
+   "acquisition": "Retrieval Based",
+   "turn": "Single",
+   "models": "RAG-Token, RAG-Seq.",
+   "datasets": "MSMARCO, SearchQA",
+   "metrics": "ROUGE, BLEU score",
+   "summary": "Retrieves passages from a pre-built knowledge base and inserts them into the prompt before generation.",
+   "reported": [
+    "Outperforms seq2seq and task-specific architectures on ODQA: EM up to 56.8% (TriviaQA) and 44.5% (Natural Questions) (p.7)."
+   ],
+   "limits": "Depends on a knowledge base and on retrieval (p.7).",
+   "tags": [
+    "retrieval",
+    "external-knowledge",
+    "hallucination",
+    "factual-qa",
+    "up-to-date"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "react",
+   "name": "ReAct",
+   "section": "2.3",
+   "category": "Reducing hallucination",
+   "pages": "7",
+   "table_page": 10,
+   "acquisition": "Retrieval Based",
+   "turn": "Multi",
+   "models": "PaLM-540B, GPT-3",
+   "datasets": "HotpotQA, FEVER",
+   "metrics": "Exact Match (EM), Accuracy",
+   "summary": "Interleaved reasoning traces and task-specific actions; updates plans and handles exceptions by interacting with an API.",
+   "reported": [
+    "ALFWorld 34% and WebShop 10% success with few examples; HotpotQA and Fever with the Wikipedia API (p.7)."
+   ],
+   "limits": "—",
+   "tags": [
+    "tool-use",
+    "retrieval",
+    "hallucination",
+    "interactive",
+    "planning",
+    "factual-qa"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "cove",
+   "name": "Chain-of-Verification (CoVe)",
+   "section": "2.3",
+   "category": "Reducing hallucination",
+   "pages": "7",
+   "table_page": 10,
+   "acquisition": "Retrieval Based",
+   "turn": "Multi",
+   "models": "Llama 65B",
+   "datasets": "Wikidata, QUEST, MultiSpanQA",
+   "metrics": "Precision, F1",
+   "summary": "Four steps: baseline answer, plan verification questions, answer them independently and produce a revised answer.",
+   "reported": [
+    "Reduces hallucinations in lists, QA and long-form generation while keeping the facts (p.7)."
+   ],
+   "limits": "—",
+   "tags": [
+    "hallucination",
+    "verification",
+    "self-feedback",
+    "factual-qa",
+    "long-form"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "con",
+   "name": "Chain-of-Note (CoN)",
+   "section": "2.3",
+   "category": "Reducing hallucination",
+   "pages": "7",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "Llama 2, DPR",
+   "datasets": "NQ, TriviaQA, WebQ",
+   "metrics": "Exact Match (EM), F1 Score",
+   "summary": "Assesses the relevance of each retrieved document and filters noise, answering 'unknown' when information is missing.",
+   "reported": [
+    "+7.9 average EM with noisy documents and +10.5 in rejection rate for questions outside the knowledge (p.7)."
+   ],
+   "limits": "—",
+   "tags": [
+    "retrieval",
+    "noisy-context",
+    "hallucination",
+    "uncertainty",
+    "factual-qa"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "cok",
+   "name": "Chain-of-Knowledge (CoK)",
+   "section": "2.3",
+   "category": "Reducing hallucination",
+   "pages": "7-8",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "gpt-3.5-turbo-0613",
+   "datasets": "HotpotQA, FEVER, MedMCQA, MMLU Physics and Biology",
+   "metrics": "Exact Match (EM), Accuracy",
+   "summary": "Reasoning preparation and dynamic knowledge adaptation from internal sources, external bases and the prompt.",
+   "reported": [
+    "The text gives no gain figures (p.7-8)."
+   ],
+   "limits": "The survey describes only the two phases; no numerical results in the text (p.8).",
+   "tags": [
+    "external-knowledge",
+    "hallucination",
+    "retrieval",
+    "factual-qa",
+    "medical"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "active-prompt",
+   "name": "Active-Prompt",
+   "section": "2.4",
+   "category": "User interaction",
+   "pages": "8",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "code-davinci-002, text-davinci-003",
+   "datasets": "Arithmetic, Commonsense, Symbolic",
+   "metrics": "Disagreement, Entropy, Variance, Self-confidence Score",
+   "summary": "Selects by uncertainty (inspired by active learning) the most useful questions for annotating CoT examples.",
+   "reported": [
+    "Outperforms self-consistency by 7.0% on average (text-davinci-002) and 1.8% (code-davinci-002) on eight tasks (p.8)."
+   ],
+   "limits": "Requires human annotation of the chosen examples (inference from the description, p.8).",
+   "tags": [
+    "example-selection",
+    "uncertainty",
+    "reasoning-math",
+    "commonsense",
+    "few-shot"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "ape",
+   "name": "Automatic Prompt Engineer (APE)",
+   "section": "2.5",
+   "category": "Fine-tuning and optimization",
+   "pages": "8",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Single",
+   "models": "text-curie-001, text-davanci-002",
+   "datasets": "BBII, TruthfulQA",
+   "metrics": "Execution accuracy, Log probability, Efficient score estimation",
+   "summary": "Generates and selects instructions automatically (candidates generated by the LLM and choice of the best).",
+   "reported": [
+    "Outperforms human prompts on 19 of 24 BIG-Bench tasks (p.8)."
+   ],
+   "limits": "—",
+   "tags": [
+    "automatic-prompt",
+    "prompt-optimization",
+    "instruction-generation"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "art",
+   "name": "Automatic Reasoning and Tool-use (ART)",
+   "section": "2.6",
+   "category": "Knowledge-based reasoning and generation",
+   "pages": "8",
+   "table_page": 10,
+   "acquisition": "Hybrid",
+   "turn": "Multi",
+   "models": "GPT-3 (175B)",
+   "datasets": "BigBench, MMLU",
+   "metrics": "Accuracy",
+   "summary": "Multi-step reasoning through structured programs with pauses to use external tools.",
+   "reported": [
+    "Outperforms traditional prompting on BigBench/MMLU and in some cases matches handwritten demonstrations (p.8)."
+   ],
+   "limits": "—",
+   "tags": [
+    "tool-use",
+    "reasoning-math",
+    "multi-step",
+    "automatic-prompt"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "ccot",
+   "name": "Contrastive Chain-of-Thought (CCoT)",
+   "section": "2.7",
+   "category": "Consistency and coherence",
+   "pages": "8",
+   "table_page": 10,
+   "acquisition": "LM Generated",
+   "turn": "Multi",
+   "models": "gpt-3.5-turbo-0301",
+   "datasets": "Arithmetic, Factual QA",
+   "metrics": "Accuracy",
+   "summary": "Shows valid and invalid reasoning demonstrations so the model learns from mistakes.",
+   "reported": [
+    "4-16% improvement on strategic and mathematical reasoning vs CoT; ~+5% with self-consistency (p.8)."
+   ],
+   "limits": "Open problem: generating contrasts automatically for diverse problems and applying them beyond reasoning (p.8).",
+   "tags": [
+    "reasoning-math",
+    "commonsense",
+    "robustness",
+    "few-shot"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "emotion",
+   "name": "Emotion Prompting (EmotionPrompt)",
+   "section": "2.8",
+   "category": "Emotion and tone",
+   "pages": "8",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-4",
+   "datasets": "BIG-Bench, Instruction Induction",
+   "metrics": "Accuracy",
+   "summary": "Appends 11 emotional-stimulus phrases to the prompt.",
+   "reported": [
+    "+8.00% relative on instruction induction; +115% on BIG-Bench tasks; study with 106 participants: +10.9% in performance, truthfulness and responsibility (p.8)."
+   ],
+   "limits": "—",
+   "tags": [
+    "tone-emotion",
+    "any-task"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "scratchpad",
+   "name": "Scratchpad Prompting",
+   "section": "2.9",
+   "category": "Code generation and execution",
+   "pages": "8-9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-3",
+   "datasets": "MBPP, MBPP-aug",
+   "metrics": "Accuracy",
+   "summary": "The model generates an arbitrary sequence of intermediate tokens before the final answer.",
+   "reported": [
+    "46.8% on MBPP-aug; combining CodeNet and single-line: 26.6% correct final outputs and 24.6% perfect traces (p.9)."
+   ],
+   "limits": "Fixed window of 512 tokens and dependence on supervised learning to use the scratchpad (p.9).",
+   "tags": [
+    "code",
+    "multi-step",
+    "algorithmic",
+    "symbolic"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "pot",
+   "name": "Program of Thoughts (PoT)",
+   "section": "2.9",
+   "category": "Code generation and execution",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "gpt-3.5-turbo",
+   "datasets": "GSM8K, SVAMP, FinQA",
+   "metrics": "Exact Match (EM) Score",
+   "summary": "Expresses reasoning as Python programs run by an external interpreter.",
+   "reported": [
+    "~12% average gain over CoT on math and financial problems (p.9)."
+   ],
+   "limits": "Requires a code interpreter (p.9).",
+   "tags": [
+    "reasoning-math",
+    "numerical",
+    "code",
+    "tool-use"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "scot",
+   "name": "Structured Chain-of-Thought (SCoT)",
+   "section": "2.9",
+   "category": "Code generation and execution",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Hybrid",
+   "turn": "Multi",
+   "models": "ChatGPT, Codex",
+   "datasets": "HumanEval, MBPP, MBCPP",
+   "metrics": "pass@k",
+   "summary": "Incorporates program structures (sequence, branch, loop) into the reasoning steps for code generation.",
+   "reported": [
+    "Up to +13.79% over CoT on HumanEval, MBPP and MBCPP (p.9)."
+   ],
+   "limits": "—",
+   "tags": [
+    "code",
+    "code-generation",
+    "multi-step"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "coc",
+   "name": "Chain-of-Code (CoC)",
+   "section": "2.9",
+   "category": "Code generation and execution",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "text-davinci-003, gpt-3.5-turbo",
+   "datasets": "BIG-Bench Hard",
+   "metrics": "Accuracy",
+   "summary": "Formats semantic subtasks as flexible pseudocode; the interpreter catches undefined behavior and an 'LMulator' simulates it.",
+   "reported": [
+    "84% accuracy on BIG-Bench Hard (+12%) (p.9)."
+   ],
+   "limits": "—",
+   "tags": [
+    "reasoning-math",
+    "symbolic",
+    "numerical",
+    "code",
+    "semantic-reasoning"
+   ],
+   "needs_external": true
+  },
+  {
+   "id": "opro",
+   "name": "Optimization by Prompting (OPRO)",
+   "section": "2.10",
+   "category": "Optimization and efficiency",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "PaLM 2-L-IT, text-bison",
+   "datasets": "GSM8K, BIG-Bench Hard",
+   "metrics": "Accuracy",
+   "summary": "Uses LLMs as optimizers: iteratively generates solutions (or prompts) from natural-language descriptions.",
+   "reported": [
+    "Optimized prompts outperform human ones by up to 8% (GSM8K) and up to 50% (Big-Bench) (p.9)."
+   ],
+   "limits": "—",
+   "tags": [
+    "automatic-prompt",
+    "prompt-optimization",
+    "optimization"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "rar",
+   "name": "Rephrase and Respond (RaR)",
+   "section": "2.11",
+   "category": "Understanding user intent",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "GPT-4-0613",
+   "datasets": "Knowledge, Symbolic",
+   "metrics": "Accuracy, Fair Score, Language Modeling Score",
+   "summary": "The LLM rephrases and expands the question; a two-step variant uses one LLM to rephrase and another to answer.",
+   "reported": [
+    "Improves understanding and accuracy by resolving ambiguities in the question (p.9, no numbers in the text)."
+   ],
+   "limits": "—",
+   "tags": [
+    "ambiguity-intent",
+    "user-intent",
+    "any-task"
+   ],
+   "needs_external": false
+  },
+  {
+   "id": "step-back",
+   "name": "Take a Step Back Prompting",
+   "section": "2.12",
+   "category": "Metacognition and self-reflection",
+   "pages": "9",
+   "table_page": 10,
+   "acquisition": "Manual",
+   "turn": "Single",
+   "models": "PaLM2-L, GPT-4",
+   "datasets": "MMLU-Physics, MMLU-Chemistry, TimeQA, SituatedQA, StrategyQA",
+   "metrics": "Accuracy",
+   "summary": "Two steps: abstraction (extract general concepts and principles) and reasoning.",
+   "reported": [
+    "PaLM-2L: +7% on MMLU Physics and Chemistry, +27% on TimeQA, +7% on MuSiQue (p.9)."
+   ],
+   "limits": "—",
+   "tags": [
+    "abstraction",
+    "reasoning-math",
+    "knowledge-qa",
+    "multi-hop",
+    "stem"
+   ],
+   "needs_external": false
+  }
+ ]
+}

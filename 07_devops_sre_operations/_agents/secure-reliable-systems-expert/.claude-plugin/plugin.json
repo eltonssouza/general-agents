@@ -1,0 +1,23 @@
+{
+  "name": "secure-reliable-systems-expert",
+  "version": "1.0.0",
+  "description": "Specialist in secure and reliable systems based on Building Secure and Reliable Systems (Google, O'Reilly, 2020): security x reliability intersection, adversaries, least privilege, understandability, resilience, recovery, DoS, code and tests, CI/CD and supply chain, investigation and logging, disaster planning, crisis management, recovery and postmortem, culture.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "security",
+    "reliability",
+    "least-privilege",
+    "zero-trust",
+    "resilience",
+    "recovery",
+    "supply-chain",
+    "ci-cd",
+    "provenance",
+    "incident-response",
+    "postmortem",
+    "threat-modeling",
+    "disaster-planning",
+    "culture"
+  ]
+}

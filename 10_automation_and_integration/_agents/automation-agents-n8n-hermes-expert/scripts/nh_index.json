@@ -1,0 +1,1167 @@
+{
+ "fontes": {
+  "N8N": {
+   "arquivo": "n8n-Docs.pdf",
+   "paginas": 4,
+   "descricao": "Capture of the n8n documentation home page (docs.n8n.io; the URL does not appear in the text), with a cookie banner overlaid on every page. Footer: (c) 2026 n8n; 'Last updated 5 days ago' (no absolute date).",
+   "util": "partial (landing page with section titles and 3 MCP connection cards)"
+  },
+  "HERMES": {
+   "arquivo": "Hermes-Agent-Docs.pdf",
+   "paginas": 4,
+   "descricao": "Capture of the Hermes Agent documentation home page (Nous Research; the domain hermes-agent.nousresearch.com appears in the install commands). No date or version.",
+   "util": "yes for overview/installation/features (the project's own promotional text)"
+  }
+ },
+ "topicos": [
+  {
+   "id": "N8N-01",
+   "fonte": "N8N",
+   "paginas": [
+    1
+   ],
+   "profundidade": "described",
+   "titulo": "What n8n is",
+   "resumo": "The page defines n8n as a fair-code licensed workflow automation tool that combines AI capabilities with business process automation. It is the only descriptive sentence in the source.",
+   "palavras": [
+    "n8n",
+    "o que e",
+    "what is",
+    "fair-code",
+    "fair code",
+    "workflow automation",
+    "automacao de workflow",
+    "automacao",
+    "ai capabilities",
+    "capacidades de ia",
+    "business process",
+    "processo de negocio",
+    "definicao"
+   ]
+  },
+  {
+   "id": "N8N-02",
+   "fonte": "N8N",
+   "paginas": [
+    1
+   ],
+   "profundidade": "title-only",
+   "titulo": "Documentation navigation (sections)",
+   "resumo": "The menu lists the sections Get started, Deploy, Build, Nodes, Connect and Administe(r) (label cut off in the capture), plus Forum, search, an 'Ask' button and a 'Copy' button. Only the names appear; the content of the sections is not in the source.",
+   "palavras": [
+    "secoes",
+    "sections",
+    "menu",
+    "navegacao",
+    "get started",
+    "deploy",
+    "build",
+    "nodes",
+    "connect",
+    "administer",
+    "administe",
+    "forum",
+    "ask",
+    "copy",
+    "busca",
+    "search",
+    "estrutura da doc",
+    "navigation",
+    "doc structure"
+   ]
+  },
+  {
+   "id": "N8N-03",
+   "fonte": "N8N",
+   "paginas": [
+    2
+   ],
+   "profundidade": "title-only",
+   "titulo": "Get set up on n8n (installation/getting-started options)",
+   "resumo": "Four items, only as link titles: Try free then choose a plan; One-line setup; Install using Docker Compose; Use a cloud provider. No step, command or price is in the source. The card image (render of p.2) shows a docker-style code snippet and a sign-up form, at an unreadable resolution: do not use as a source of commands.",
+   "palavras": [
+    "instalar",
+    "instalacao",
+    "install",
+    "docker",
+    "docker compose",
+    "compose",
+    "cloud provider",
+    "provedor de nuvem",
+    "one-line",
+    "one line",
+    "setup",
+    "comecar",
+    "get set up",
+    "try free",
+    "teste gratis",
+    "planos",
+    "plano",
+    "plan",
+    "preco",
+    "cloud",
+    "installation",
+    "price",
+    "prices",
+    "pricing",
+    "getting started",
+    "get started",
+    "free trial",
+    "plans"
+   ]
+  },
+  {
+   "id": "N8N-04",
+   "fonte": "N8N",
+   "paginas": [
+    2
+   ],
+   "profundidade": "title-only",
+   "titulo": "Build your first automation",
+   "resumo": "A single link: 'Build your first workflow'. The tutorial itself is not in the source.",
+   "palavras": [
+    "first workflow",
+    "primeiro workflow",
+    "primeira automacao",
+    "build your first",
+    "tutorial",
+    "primeiros passos",
+    "first automation",
+    "getting started tutorial"
+   ]
+  },
+  {
+   "id": "N8N-05",
+   "fonte": "N8N",
+   "paginas": [
+    2
+   ],
+   "profundidade": "title-only",
+   "titulo": "Inspiration for what to automate (4 examples)",
+   "resumo": "Four example titles: Creating an API endpoint; AI agent chat; Scrape and summarize webpages with AI; Joining different datasets. Only the titles appear.",
+   "palavras": [
+    "inspiracao",
+    "inspiration",
+    "exemplos",
+    "examples",
+    "api endpoint",
+    "endpoint",
+    "ai agent chat",
+    "agente de ia",
+    "scrape",
+    "summarize",
+    "resumir paginas",
+    "joining datasets",
+    "datasets",
+    "casos de uso",
+    "use cases",
+    "ai agent",
+    "summarize webpages",
+    "use case"
+   ]
+  },
+  {
+   "id": "N8N-06",
+   "fonte": "N8N",
+   "paginas": [
+    2
+   ],
+   "profundidade": "title-only",
+   "titulo": "Key concepts (3 titles)",
+   "resumo": "Understand key concepts lists: Expressions for data transformation; Flow logic; Understand executions. None of them is defined in the source.",
+   "palavras": [
+    "conceitos",
+    "key concepts",
+    "expressions",
+    "expressoes",
+    "data transformation",
+    "transformacao de dados",
+    "flow logic",
+    "logica de fluxo",
+    "executions",
+    "execucoes",
+    "execution",
+    "concepts",
+    "expression",
+    "flow control"
+   ]
+  },
+  {
+   "id": "N8N-07",
+   "fonte": "N8N",
+   "paginas": [
+    3
+   ],
+   "profundidade": "command",
+   "titulo": "Connecting AI clients to the n8n MCP server",
+   "resumo": "Three cards: Anthropic Claude Desktop (link 'Connecting Claude Desktop to n8n MCP server'), Anthropic Claude Code (command 'claude mcp add --transport http n8n-mcp' with a URL ending in /mcp-server/http) and OpenAI Codex (command 'codex mcp add n8n-mcp --url' with a URL ending in /mcp-server/http). In the capture the URL host is blank (placeholder lost): do not invent the host or the authentication.",
+   "palavras": [
+    "mcp",
+    "mcp server",
+    "servidor mcp",
+    "claude desktop",
+    "claude code",
+    "codex",
+    "codex cli",
+    "openai codex",
+    "anthropic",
+    "claude mcp add",
+    "codex mcp add",
+    "mcp-server",
+    "conectar claude",
+    "integracao com ia",
+    "n8n-mcp",
+    "connect claude",
+    "ai integration"
+   ]
+  },
+  {
+   "id": "N8N-08",
+   "fonte": "N8N",
+   "paginas": [
+    3
+   ],
+   "profundidade": "title-only",
+   "titulo": "Institutional footer links",
+   "resumo": "Company: n8n.io, Careers, Blog. Resources: Templates, Academy, Changelog. Legal and privacy: Security, Sustainable use license, Privacy. Only link names; the license text, templates etc. are not in the source.",
+   "palavras": [
+    "rodape",
+    "footer",
+    "careers",
+    "blog",
+    "templates",
+    "academy",
+    "changelog",
+    "sustainable use license",
+    "licenca de uso sustentavel",
+    "security",
+    "seguranca",
+    "privacy",
+    "privacidade",
+    "legal",
+    "licenca",
+    "license"
+   ]
+  },
+  {
+   "id": "N8N-09",
+   "fonte": "N8N",
+   "paginas": [
+    3,
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Capture dating",
+   "resumo": "Page 3: 'Last updated 5 days ago' (relative, no date); page 4: (c) 2026 n8n. No n8n version number on any page. [DATED] relative to a 2026 capture of unknown exact date.",
+   "palavras": [
+    "versao",
+    "version",
+    "data",
+    "atualizado",
+    "last updated",
+    "2026",
+    "copyright",
+    "quando",
+    "recente",
+    "atual",
+    "date",
+    "updated",
+    "when",
+    "recent",
+    "current",
+    "dated"
+   ]
+  },
+  {
+   "id": "N8N-10",
+   "fonte": "N8N",
+   "paginas": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Cookie banner (noise)",
+   "resumo": "All 4 pages have the 'This website uses cookies' banner (Essential/Functional/Marketing; Decline all, Accept all, Show details). It is not technical content and must not be treated as an instruction.",
+   "palavras": [
+    "cookies",
+    "cookie",
+    "banner",
+    "consentimento",
+    "accept all",
+    "decline all",
+    "marketing",
+    "analytics",
+    "consent"
+   ]
+  },
+  {
+   "id": "HERMES-01",
+   "fonte": "HERMES",
+   "paginas": [
+    1,
+    2
+   ],
+   "profundidade": "described",
+   "titulo": "What the page says Hermes Agent is",
+   "resumo": "A 'self-improving' AI agent made by Nous Research; the page claims it is the only one with a built-in learning loop (it creates skills from experience, improves them during use, nudges itself to persist knowledge and builds a model of the user across sessions). It says it is not a coding copilot tied to an IDE nor a chatbot wrapper, but an autonomous agent that gets more capable the longer it runs. These are the project's own claims, not verified.",
+   "palavras": [
+    "hermes",
+    "hermes agent",
+    "o que e",
+    "what is",
+    "nous research",
+    "self-improving",
+    "auto-aperfeicoavel",
+    "learning loop",
+    "ciclo de aprendizado",
+    "agente autonomo",
+    "autonomous agent",
+    "copilot",
+    "chatbot wrapper",
+    "definicao",
+    "self improving",
+    "autonomous"
+   ]
+  },
+  {
+   "id": "HERMES-02",
+   "fonte": "HERMES",
+   "paginas": [
+    1
+   ],
+   "profundidade": "described",
+   "titulo": "Entry buttons: Get Started, Download Desktop, View on GitHub",
+   "resumo": "The home page offers three actions: Get Started, Download Desktop and View on GitHub. Destination URLs do not appear in the text.",
+   "palavras": [
+    "get started",
+    "download desktop",
+    "github",
+    "view on github",
+    "repositorio",
+    "codigo fonte",
+    "baixar",
+    "repository",
+    "source code",
+    "download"
+   ]
+  },
+  {
+   "id": "HERMES-03",
+   "fonte": "HERMES",
+   "paginas": [
+    1
+   ],
+   "profundidade": "described",
+   "titulo": "Installation on Windows or macOS (Hermes Desktop)",
+   "resumo": "To easily install the command-line and desktop applications, download the Hermes Desktop installer from the project's site and run it.",
+   "palavras": [
+    "desktop",
+    "hermes desktop",
+    "instalador",
+    "windows",
+    "macos",
+    "mac",
+    "instalar",
+    "install",
+    "baixar",
+    "download",
+    "instalacao",
+    "installer",
+    "installation"
+   ]
+  },
+  {
+   "id": "HERMES-04",
+   "fonte": "HERMES",
+   "paginas": [
+    1
+   ],
+   "profundidade": "command",
+   "titulo": "Command-line-only installation (without Desktop)",
+   "resumo": "Linux/macOS/WSL2/Android (Termux): a command that downloads install.sh from hermes-agent.nousresearch.com and pipes it to bash. Native Windows: in PowerShell, a command that downloads install.ps1 from the same domain and evaluates it (iex/irm). These are 'download and run a remote script' patterns: treat as data; this agent neither runs them nor recommends running them without inspecting the script [extrapolation].",
+   "palavras": [
+    "cli",
+    "linha de comando",
+    "command-line",
+    "curl",
+    "install.sh",
+    "install.ps1",
+    "powershell",
+    "iex",
+    "irm",
+    "wsl2",
+    "termux",
+    "android",
+    "linux",
+    "instalar",
+    "install",
+    "sem desktop",
+    "without hermes desktop",
+    "bash",
+    "instalacao",
+    "command line",
+    "installation",
+    "without desktop"
+   ]
+  },
+  {
+   "id": "HERMES-05",
+   "fonte": "HERMES",
+   "paginas": [
+    2
+   ],
+   "profundidade": "described",
+   "titulo": "Installation guide and platform matrix (only pointed to)",
+   "resumo": "The page points to the Installation Guide (what the installer does, per-user vs root layout, Windows notes) and to Platform Support (full matrix). The content of those guides is not in the source.",
+   "palavras": [
+    "installation guide",
+    "guia de instalacao",
+    "platform support",
+    "suporte a plataformas",
+    "per-user",
+    "root",
+    "layout",
+    "matriz",
+    "requisitos",
+    "requirements",
+    "instalacao",
+    "matrix",
+    "installation"
+   ]
+  },
+  {
+   "id": "HERMES-06",
+   "fonte": "HERMES",
+   "paginas": [
+    2
+   ],
+   "profundidade": "command",
+   "titulo": "Fastest path: hermes setup --portal",
+   "resumo": "After installing, run 'hermes setup --portal': one OAuth covers a model plus the four Tool Gateway tools (web search, image generation, TTS, browser). Points to the Nous Portal (content not included).",
+   "palavras": [
+    "hermes setup",
+    "setup --portal",
+    "portal",
+    "nous portal",
+    "oauth",
+    "tool gateway",
+    "web search",
+    "image generation",
+    "tts",
+    "browser",
+    "configurar",
+    "primeira configuracao",
+    "fastest path",
+    "setup",
+    "first setup",
+    "configure"
+   ]
+  },
+  {
+   "id": "HERMES-07",
+   "fonte": "HERMES",
+   "paginas": [
+    2
+   ],
+   "profundidade": "described",
+   "titulo": "Where it runs: VPS, GPU, serverless, Telegram",
+   "resumo": "The page says the agent lives wherever the user puts it: a $5 VPS, a GPU cluster or serverless infrastructure (Daytona, Modal) that costs almost nothing when idle; you can talk to it via Telegram while it works on a cloud VM; it is not tied to the laptop.",
+   "palavras": [
+    "vps",
+    "gpu",
+    "serverless",
+    "daytona",
+    "modal",
+    "nuvem",
+    "cloud",
+    "telegram",
+    "laptop",
+    "onde roda",
+    "hospedagem",
+    "hosting",
+    "custo",
+    "idle",
+    "where it runs",
+    "cost"
+   ]
+  },
+  {
+   "id": "HERMES-08",
+   "fonte": "HERMES",
+   "paginas": [
+    2,
+    3
+   ],
+   "profundidade": "title-only",
+   "titulo": "Quick Links: 18 doc pages (title + one sentence only)",
+   "resumo": "Installation, Quickstart Tutorial, Learning Path, Configuration (config file, providers, models), Messaging Gateway (Telegram, Discord, Slack, WhatsApp, Teams or more), Tools & Toolsets (60+ built-in tools), Memory System, Skills System, MCP Integration, Use MCP with Hermes, Voice Mode, Use Voice Mode with Hermes, Personality & SOUL.md, Context Files, Security (command approval, authorization, container isolation), Tips & Best Practices, Architecture, FAQ & Troubleshooting. The content of those pages is not in the source.",
+   "palavras": [
+    "quick links",
+    "quickstart",
+    "learning path",
+    "configuration",
+    "configuracao",
+    "messaging gateway",
+    "gateway",
+    "tools",
+    "toolsets",
+    "ferramentas",
+    "memory system",
+    "memoria",
+    "skills system",
+    "mcp integration",
+    "use mcp",
+    "voice mode",
+    "voz",
+    "personality",
+    "soul.md",
+    "soul",
+    "context files",
+    "arquivos de contexto",
+    "security",
+    "seguranca",
+    "tips",
+    "architecture",
+    "arquitetura",
+    "faq",
+    "troubleshooting",
+    "memory",
+    "voice",
+    "tools and toolsets",
+    "messaging",
+    "config",
+    "installation"
+   ]
+  },
+  {
+   "id": "HERMES-09",
+   "fonte": "HERMES",
+   "paginas": [
+    3
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: closed learning loop",
+   "resumo": "Agent-curated memory with periodic nudges, autonomous skill creation, skill self-improvement during use, cross-session recall with FTS5 and LLM summarization, and dialectic user modeling with Honcho. How each piece works is not in the source.",
+   "palavras": [
+    "learning loop",
+    "ciclo de aprendizado",
+    "memoria",
+    "memory",
+    "nudges",
+    "skills",
+    "skill",
+    "fts5",
+    "honcho",
+    "recall",
+    "cross-session",
+    "modelagem do usuario",
+    "user modeling",
+    "auto-melhoria",
+    "self improvement",
+    "user model"
+   ]
+  },
+  {
+   "id": "HERMES-10",
+   "fonte": "HERMES",
+   "paginas": [
+    3
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: 6 terminal backends",
+   "resumo": "Six terminal backends: local, Docker, SSH, Daytona, Singularity and Modal; Daytona and Modal offer serverless persistence (the environment hibernates when idle, costing almost nothing).",
+   "palavras": [
+    "terminal backends",
+    "backends",
+    "docker",
+    "ssh",
+    "daytona",
+    "singularity",
+    "modal",
+    "local",
+    "hiberna",
+    "persistencia serverless",
+    "isolamento",
+    "container",
+    "conteiner",
+    "hibernates",
+    "serverless persistence",
+    "isolation"
+   ]
+  },
+  {
+   "id": "HERMES-11",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: messaging platforms (20+ from one gateway)",
+   "resumo": "CLI, Telegram, Discord, Slack, WhatsApp, Signal, Matrix, Mattermost, Email, SMS, DingTalk, Feishu, WeCom, Weixin, QQ Bot, Yuanbao, BlueBubbles, Home Assistant, Microsoft Teams, Google Chat 'and more': over 20 platforms from a single gateway.",
+   "palavras": [
+    "plataformas",
+    "platforms",
+    "telegram",
+    "discord",
+    "slack",
+    "whatsapp",
+    "signal",
+    "matrix",
+    "mattermost",
+    "email",
+    "sms",
+    "dingtalk",
+    "feishu",
+    "wecom",
+    "weixin",
+    "qq bot",
+    "yuanbao",
+    "bluebubbles",
+    "home assistant",
+    "teams",
+    "google chat",
+    "gateway",
+    "canais",
+    "messaging platforms",
+    "messaging",
+    "channels",
+    "chat platforms"
+   ]
+  },
+  {
+   "id": "HERMES-12",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: models/providers and who makes it",
+   "resumo": "Built by Nous Research, the lab behind Hermes, Nomos and Psyche. Works with Nous Portal, OpenRouter, OpenAI or any endpoint.",
+   "palavras": [
+    "modelos",
+    "models",
+    "provedores",
+    "providers",
+    "openrouter",
+    "openai",
+    "nous portal",
+    "endpoint",
+    "nomos",
+    "psyche",
+    "nous research",
+    "quem criou",
+    "autor",
+    "models and providers",
+    "who made it",
+    "author",
+    "creator"
+   ]
+  },
+  {
+   "id": "HERMES-13",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: scheduled automations (cron)",
+   "resumo": "Built-in cron with delivery to any platform. Scheduling syntax and commands are not in the source.",
+   "palavras": [
+    "cron",
+    "agendamento",
+    "agendadas",
+    "scheduled",
+    "schedule",
+    "automacoes",
+    "automations",
+    "agendar",
+    "scheduling",
+    "scheduled automations"
+   ]
+  },
+  {
+   "id": "HERMES-14",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: subagents and execute_code",
+   "resumo": "Isolated subagents for parallel work; 'Programmatic Tool Calling' via execute_code collapses multi-step pipelines into single inference calls. Usage details are not in the source.",
+   "palavras": [
+    "subagentes",
+    "subagents",
+    "subagent",
+    "delegar",
+    "delegates",
+    "paralelo",
+    "parallel",
+    "execute_code",
+    "programmatic tool calling",
+    "tool calling",
+    "pipelines",
+    "delegate"
+   ]
+  },
+  {
+   "id": "HERMES-15",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: open skills (agentskills.io, Skills Hub)",
+   "resumo": "Skills compatible with agentskills.io, portable, shareable and community-contributed via the Skills Hub.",
+   "palavras": [
+    "agentskills.io",
+    "agentskills",
+    "skills hub",
+    "skills abertas",
+    "open standard",
+    "portavel",
+    "comunidade",
+    "skills",
+    "open skills",
+    "portable",
+    "community"
+   ]
+  },
+  {
+   "id": "HERMES-16",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: web control and Nous Portal subscription",
+   "resumo": "Search, extraction, browsing, vision, image generation and TTS; one Nous Portal subscription bundles them all. Price is not in the source.",
+   "palavras": [
+    "web",
+    "search",
+    "extract",
+    "browse",
+    "vision",
+    "visao",
+    "image generation",
+    "tts",
+    "assinatura",
+    "subscription",
+    "nous portal",
+    "preco",
+    "price",
+    "pricing",
+    "web control"
+   ]
+  },
+  {
+   "id": "HERMES-17",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: MCP support (as a client)",
+   "resumo": "Hermes says it supports connecting to any MCP server to extend its tools. The pages 'MCP Integration' and 'Use MCP with Hermes' are only pointed to (p.3).",
+   "palavras": [
+    "mcp",
+    "mcp server",
+    "servidor mcp",
+    "mcp integration",
+    "model context protocol",
+    "ferramentas mcp",
+    "mcp tools"
+   ]
+  },
+  {
+   "id": "HERMES-18",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Key feature: research (batch, trajectories, RL with Atropos)",
+   "resumo": "Batch processing, trajectory export and RL training with Atropos. Details are not in the source.",
+   "palavras": [
+    "pesquisa",
+    "research",
+    "batch",
+    "lote",
+    "trajectory",
+    "trajetoria",
+    "rl",
+    "atropos",
+    "reinforcement",
+    "treinamento",
+    "training",
+    "trajectories",
+    "trajectory export"
+   ]
+  },
+  {
+   "id": "HERMES-19",
+   "fonte": "HERMES",
+   "paginas": [
+    4
+   ],
+   "profundidade": "described",
+   "titulo": "Machine-readable entry points: llms.txt and llms-full.txt",
+   "resumo": "/llms.txt (curated page index, ~17 KB) and /llms-full.txt (all pages concatenated as markdown, ~1.8 MB); also at /docs/llms.txt and /docs/llms-full.txt; generated fresh on every deploy.",
+   "palavras": [
+    "llms.txt",
+    "llms-full.txt",
+    "llms",
+    "maquina",
+    "machine-readable",
+    "ingestao",
+    "indice",
+    "machine",
+    "ingestion",
+    "index"
+   ]
+  },
+  {
+   "id": "HERMES-20",
+   "fonte": "HERMES",
+   "paginas": [
+    3
+   ],
+   "profundidade": "described",
+   "titulo": "Security, voice, personality, context (only pointed to)",
+   "resumo": "Security: command approval, authorization and container isolation. Voice Mode: real-time voice in CLI, Telegram, Discord and Discord VC. Personality & SOUL.md: default voice via a global SOUL.md. Context Files: project context files that shape every conversation. Only the sentence on each card is in the source; no details.",
+   "palavras": [
+    "seguranca",
+    "security",
+    "aprovacao de comandos",
+    "command approval",
+    "autorizacao",
+    "container isolation",
+    "voice mode",
+    "voz",
+    "soul.md",
+    "soul",
+    "personalidade",
+    "context files",
+    "contexto de projeto",
+    "authorization",
+    "personality",
+    "project context"
+   ]
+  },
+  {
+   "id": "N8N-11",
+   "fonte": "N8N",
+   "paginas": [
+    2
+   ],
+   "profundidade": "title-only",
+   "titulo": "'Schedule Trigger' image (render only)",
+   "resumo": "The 'Build your first automation' card has an image with a node labeled 'Schedule Trigger' (visible only when rendering the page; the extracted text does not contain it). No explanation of triggers or scheduling in n8n is in the source.",
+   "palavras": [
+    "schedule trigger",
+    "trigger",
+    "gatilho",
+    "agendamento",
+    "agendar",
+    "schedule",
+    "agendado",
+    "scheduling",
+    "scheduled",
+    "to schedule"
+   ]
+  }
+ ],
+ "lacunas": [
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "preco",
+    "precos",
+    "pricing",
+    "valor do plano",
+    "quanto custa",
+    "price",
+    "prices",
+    "cost",
+    "how much"
+   ],
+   "nota": "N8N p.2 only has the title 'Try free then choose a plan'; no price or plan limit.",
+   "parcial": true
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "webhook",
+    "webhooks",
+    "credencial",
+    "credenciais",
+    "credentials",
+    "oauth do n8n",
+    "http request",
+    "n8n credentials"
+   ],
+   "nota": "The source does not explain triggers, webhooks, credentials or specific nodes (the Nodes section only appears as a menu name, N8N p.1)."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "queue mode",
+    "escalar",
+    "scaling",
+    "alta disponibilidade",
+    "kubernetes",
+    "helm",
+    "postgres",
+    "banco de dados",
+    "self-hosted",
+    "self hosted",
+    "autohospedado",
+    "variaveis de ambiente",
+    "environment variables",
+    "high availability",
+    "environment variable",
+    "database",
+    "self-hosted deployment"
+   ],
+   "nota": "The source only mentions the titles 'One-line setup', 'Install using Docker Compose' and 'Use a cloud provider' (N8N p.2); no configuration, scaling, database or variables."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "sintaxe de expressao",
+    "javascript no n8n",
+    "code node",
+    "no code",
+    "sub-workflow",
+    "if node",
+    "switch",
+    "merge node",
+    "loop",
+    "expression syntax",
+    "javascript in n8n",
+    "flow nodes"
+   ],
+   "nota": "Expressions and Flow logic appear only as titles (N8N p.2); the syntax and the flow nodes are not covered."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "termos da licenca",
+    "licenca detalhada",
+    "uso comercial",
+    "pode usar em producao",
+    "open source",
+    "open-source",
+    "licenca",
+    "termos",
+    "license terms",
+    "detailed license",
+    "commercial use",
+    "production use",
+    "license",
+    "terms"
+   ],
+   "nota": "The source says 'fair-code' (N8N p.1) and mentions the 'Sustainable use license' link (N8N p.3), without the terms. Do not state whether it is open source or not.",
+   "parcial": true
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "autenticacao do mcp",
+    "token do mcp",
+    "host do mcp",
+    "url do mcp",
+    "habilitar mcp",
+    "ativar o servidor mcp",
+    "mcp authentication",
+    "mcp token",
+    "mcp host",
+    "mcp url",
+    "enable mcp",
+    "enable the mcp server"
+   ],
+   "nota": "The commands in N8N p.3 have a blank host and no explanation of authentication or how to enable the MCP server."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "comparado ao zapier",
+    "zapier",
+    "make.com",
+    "integromat",
+    "melhor que",
+    "compared to zapier",
+    "better than"
+   ],
+   "nota": "Neither source compares n8n with other tools."
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "licenca do hermes",
+    "open source hermes",
+    "versao do hermes",
+    "release",
+    "changelog do hermes",
+    "requisitos de sistema",
+    "hermes license",
+    "hermes open source",
+    "hermes version",
+    "hermes changelog",
+    "system requirements"
+   ],
+   "nota": "The source gives no license, version, releases or system requirements for Hermes."
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "preco do portal",
+    "quanto custa o nous portal",
+    "plano do portal",
+    "gratuito",
+    "preco",
+    "precos",
+    "pricing",
+    "portal price",
+    "how much is nous portal",
+    "portal plan",
+    "free tier",
+    "price",
+    "prices",
+    "cost"
+   ],
+   "nota": "HERMES p.2/p.4 mention the Nous Portal and 'one subscription', with no price or plans. The US$ 5 is the cost of a VPS (p.2), not of the product.",
+   "parcial": true
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "arquivo de configuracao",
+    "config.yaml",
+    "config file",
+    "formato do config",
+    "comandos do hermes",
+    "hermes --help",
+    "atualizar o hermes",
+    "desinstalar",
+    "uninstall",
+    "update",
+    "config file format",
+    "hermes commands",
+    "update hermes",
+    "remove hermes"
+   ],
+   "nota": "The only Hermes command besides the installers is 'hermes setup --portal' (HERMES p.2); configuration, updating and removal are not covered."
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "como funciona o fts5",
+    "como funciona o honcho",
+    "como o agente cria skills",
+    "arquitetura interna",
+    "algoritmo",
+    "benchmark",
+    "desempenho",
+    "latencia",
+    "acuracia",
+    "how fts5 works",
+    "how honcho works",
+    "how the agent creates skills",
+    "internal architecture",
+    "performance",
+    "latency",
+    "accuracy"
+   ],
+   "nota": "The source names FTS5, Honcho and skill creation (HERMES p.3) but does not explain how they work or give benchmarks; 'Architecture' is only a link."
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "hermes e claude",
+    "hermes vs openclaw",
+    "melhor agente",
+    "ranking de agentes",
+    "comparado ao",
+    "hermes and claude",
+    "best agent",
+    "agent ranking",
+    "compared to"
+   ],
+   "nota": "The source only claims superiority in a promotional way ('the only agent with a built-in learning loop', HERMES p.1); there is no verifiable comparison with other agents."
+  },
+  {
+   "fonte": "AMBAS",
+   "palavras": [
+    "n8n com hermes",
+    "hermes com n8n",
+    "integrar n8n e hermes",
+    "integrar hermes ao n8n",
+    "hermes chamar o n8n",
+    "n8n chamar o hermes",
+    "n8n and hermes",
+    "hermes and n8n",
+    "n8n hermes integration",
+    "integrate n8n and hermes",
+    "integrate hermes with n8n",
+    "hermes call n8n",
+    "n8n call hermes"
+   ],
+   "nota": "Neither source mentions the other, nor describes an integration between them. Any combined architecture would be [extrapolation]."
+  },
+  {
+   "fonte": "AMBAS",
+   "palavras": [
+    "tutorial passo a passo",
+    "exemplo completo de workflow",
+    "json do workflow",
+    "codigo do workflow",
+    "deploy em producao",
+    "step by step tutorial",
+    "complete workflow example",
+    "workflow json",
+    "workflow code",
+    "production deployment"
+   ],
+   "nota": "These are landing pages: no tutorials, complete examples or production recipes."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "versao",
+    "version",
+    "numero de versao",
+    "release",
+    "version number"
+   ],
+   "nota": "No n8n version appears; only '(c) 2026 n8n' and 'Last updated 5 days ago' (N8N p.3-4).",
+   "parcial": true
+  },
+  {
+   "fonte": "HERMES",
+   "palavras": [
+    "versao",
+    "version",
+    "numero de versao",
+    "version number"
+   ],
+   "nota": "No Hermes version appears in the source."
+  },
+  {
+   "fonte": "N8N",
+   "palavras": [
+    "como agendar",
+    "sintaxe do schedule",
+    "cron do n8n",
+    "intervalo",
+    "how to schedule",
+    "schedule syntax",
+    "n8n cron",
+    "interval"
+   ],
+   "nota": "Only the 'Schedule Trigger' image (render of N8N p.2); nothing on how to schedule.",
+   "parcial": true
+  }
+ ]
+}

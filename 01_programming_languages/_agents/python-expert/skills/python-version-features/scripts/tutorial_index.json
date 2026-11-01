@@ -1,0 +1,2061 @@
+{
+ "fonte": "Python Tutorial (PDF) versions 3.10, 3.11, 3.12, 3.13 and 3.14.0rc3, in 01_programming_languages/",
+ "natureza": "index of the PRESENCE of the term in each Tutorial; not a version mark of the feature",
+ "convencao": "p = PDF page of EACH Tutorial; printed = PDF - off",
+ "zonas": "corpo (body) = chapters 1-16 of the Tutorial; glossario (glossary) = Appendix A; licenca (license) = Appendices B-D (history/licenses/copyright: do NOT indicate a feature). Index/table-of-contents pages are ignored.",
+ "versions": {
+  "3.10": {
+   "pdf_pages": 153,
+   "off": 6,
+   "file": "Python-3.10-Tutorial.pdf",
+   "zonas": {
+    "corpo": [
+     9,
+     114
+    ],
+    "glossario": [
+     115,
+     128
+    ],
+    "licenca": [
+     129,
+     153
+    ]
+   }
+  },
+  "3.11": {
+   "pdf_pages": 153,
+   "off": 6,
+   "file": "Python-3.11-Tutorial.pdf",
+   "zonas": {
+    "corpo": [
+     9,
+     114
+    ],
+    "glossario": [
+     115,
+     128
+    ],
+    "licenca": [
+     129,
+     153
+    ]
+   }
+  },
+  "3.12": {
+   "pdf_pages": 161,
+   "off": 6,
+   "file": "Python-3.12-Tutorial.pdf",
+   "zonas": {
+    "corpo": [
+     9,
+     120
+    ],
+    "glossario": [
+     121,
+     136
+    ],
+    "licenca": [
+     137,
+     161
+    ]
+   }
+  },
+  "3.13": {
+   "pdf_pages": 167,
+   "off": 6,
+   "file": "Python-3.13-Tutorial.pdf",
+   "zonas": {
+    "corpo": [
+     9,
+     122
+    ],
+    "glossario": [
+     123,
+     140
+    ],
+    "licenca": [
+     141,
+     167
+    ]
+   }
+  },
+  "3.14": {
+   "pdf_pages": 167,
+   "off": 6,
+   "file": "Python-3.14-Tutorial.pdf",
+   "zonas": {
+    "corpo": [
+     9,
+     122
+    ],
+    "glossario": [
+     123,
+     140
+    ],
+    "licenca": [
+     141,
+     167
+    ]
+   }
+  }
+ },
+ "terms": [
+  {
+   "id": "match",
+   "aliases": [
+    "match",
+    "case",
+    "pattern matching",
+    "structural pattern matching",
+    "match statement"
+   ],
+   "pattern": "\\bmatch statement|\\bstructural pattern matching|\\bcase\\b.*\\bmatch\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      23,
+      26,
+      27,
+      28
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      23,
+      26,
+      27,
+      28,
+      72
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      23,
+      27,
+      28,
+      29,
+      74
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      23,
+      27,
+      28,
+      29,
+      74
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      23,
+      27,
+      28,
+      29,
+      74
+     ]
+    }
+   }
+  },
+  {
+   "id": "ExceptionGroup",
+   "aliases": [
+    "exceptiongroup",
+    "exception group",
+    "except*",
+    "except star"
+   ],
+   "pattern": "\\bExceptionGroup\\b",
+   "pages": {
+    "3.10": {},
+    "3.11": {
+     "corpo": [
+      72,
+      73
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      74,
+      75,
+      76
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      74,
+      75,
+      76
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      74,
+      75,
+      76
+     ]
+    }
+   }
+  },
+  {
+   "id": "except*",
+   "aliases": [
+    "except*",
+    "except star",
+    "exceptiongroup"
+   ],
+   "pattern": "except\\*",
+   "pages": {
+    "3.10": {},
+    "3.11": {
+     "corpo": [
+      72
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      74
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      74,
+      75
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      74,
+      75
+     ]
+    }
+   }
+  },
+  {
+   "id": "add_note",
+   "aliases": [
+    "add_note",
+    "exception notes",
+    "notes on exceptions"
+   ],
+   "pattern": "\\badd_note\\b",
+   "pages": {
+    "3.10": {},
+    "3.11": {
+     "corpo": [
+      73
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      75,
+      76
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      76
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      76
+     ]
+    }
+   }
+  },
+  {
+   "id": "dataclass",
+   "aliases": [
+    "dataclass",
+    "dataclasses"
+   ],
+   "pattern": "\\bdataclass",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {
+     "corpo": [
+      86
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      88
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      88
+     ]
+    }
+   }
+  },
+  {
+   "id": "walrus",
+   "aliases": [
+    "walrus",
+    ":=",
+    "assignment expression",
+    "assignment expressions"
+   ],
+   "pattern": "walrus|assignment expression",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      48
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      48
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      48
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      48
+     ],
+     "glossario": [
+      139
+     ],
+     "licenca": [
+      167
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      48
+     ],
+     "glossario": [
+      140
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "positional-only",
+   "aliases": [
+    "positional-only",
+    "/ parameter",
+    "posonly",
+    "positional only"
+   ],
+   "pattern": "positional-only|positional only",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      33,
+      34,
+      35
+     ],
+     "glossario": [
+      123
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      33,
+      34,
+      35
+     ],
+     "glossario": [
+      124
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "glossario": [
+      131
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "glossario": [
+      134
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "glossario": [
+      135
+     ]
+    }
+   }
+  },
+  {
+   "id": "keyword-only",
+   "aliases": [
+    "keyword-only",
+    "keyword only",
+    "* parameter"
+   ],
+   "pattern": "keyword-only|keyword only",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      33,
+      35
+     ],
+     "glossario": [
+      123
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      33,
+      35
+     ],
+     "glossario": [
+      124
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36,
+      39
+     ],
+     "glossario": [
+      131
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36,
+      39
+     ],
+     "glossario": [
+      134
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      33,
+      34,
+      35,
+      36,
+      39
+     ],
+     "glossario": [
+      135
+     ]
+    }
+   }
+  },
+  {
+   "id": "f-string",
+   "aliases": [
+    "f-string",
+    "fstring",
+    "formatted string literal",
+    "formatted string literals"
+   ],
+   "pattern": "formatted string literal|f-string",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      20,
+      57,
+      58
+     ],
+     "glossario": [
+      118
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      20,
+      57,
+      58
+     ],
+     "glossario": [
+      118
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      18,
+      59,
+      60
+     ],
+     "glossario": [
+      125
+     ],
+     "licenca": [
+      159,
+      160
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      18,
+      59,
+      60
+     ],
+     "glossario": [
+      128
+     ],
+     "licenca": [
+      165,
+      166
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      18,
+      59,
+      60
+     ],
+     "glossario": [
+      128
+     ],
+     "licenca": [
+      166
+     ]
+    }
+   }
+  },
+  {
+   "id": "{x=}",
+   "aliases": [
+    "{x=}",
+    "self-documenting",
+    "f-string ="
+   ],
+   "pattern": "\\{[a-z_]+=\\}|self-documenting",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      67
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      59,
+      67
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      61,
+      70
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      61,
+      70
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      61,
+      70
+     ]
+    }
+   }
+  },
+  {
+   "id": "type alias",
+   "aliases": [
+    "type alias",
+    "type statement",
+    "type aliases"
+   ],
+   "pattern": "type alias",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      126
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      126
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      135
+     ],
+     "licenca": [
+      161
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      138
+     ],
+     "licenca": [
+      167
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      128,
+      139
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "typing",
+   "aliases": [
+    "typing",
+    "type hint",
+    "type hints",
+    "annotations"
+   ],
+   "pattern": "\\btype hint",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      115,
+      119,
+      120,
+      126,
+      127
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      115,
+      119,
+      120,
+      126,
+      127
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      121,
+      126,
+      127,
+      134,
+      135,
+      136
+     ],
+     "licenca": [
+      161
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      123,
+      129,
+      137,
+      138,
+      139
+     ],
+     "licenca": [
+      167
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      123,
+      129,
+      130,
+      138,
+      139,
+      140
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "typing.get_type_hints",
+   "aliases": [
+    "get_type_hints"
+   ],
+   "pattern": "get_type_hints",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      126
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      127
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      135
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      138
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      139
+     ]
+    }
+   }
+  },
+  {
+   "id": "annotationlib",
+   "aliases": [
+    "annotationlib",
+    "get_annotations",
+    "__annotate__",
+    "annotate"
+   ],
+   "pattern": "annotationlib|__annotate__",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {
+     "glossario": [
+      123
+     ]
+    }
+   }
+  },
+  {
+   "id": "t-string",
+   "aliases": [
+    "t-string",
+    "template string",
+    "templatelib",
+    "t-strings"
+   ],
+   "pattern": "t-string|template string|templatelib",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {
+     "glossario": [
+      138
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "free-threaded",
+   "aliases": [
+    "free-threaded",
+    "free threading",
+    "free-threading",
+    "nogil",
+    "gil"
+   ],
+   "pattern": "free[- ]thread",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      120
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      120
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      127
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      128,
+      131
+     ],
+     "licenca": [
+      166
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      124,
+      129,
+      132
+     ],
+     "licenca": [
+      166
+     ]
+    }
+   }
+  },
+  {
+   "id": "PYTHON_GIL",
+   "aliases": [
+    "python_gil",
+    "gil=0",
+    "disable-gil",
+    "-x gil"
+   ],
+   "pattern": "PYTHON_GIL|--disable-gil|-X gil",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {
+     "glossario": [
+      130
+     ],
+     "licenca": [
+      165,
+      167
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      130
+     ],
+     "licenca": [
+      165,
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "mimalloc",
+   "aliases": [
+    "mimalloc"
+   ],
+   "pattern": "mimalloc",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {
+     "licenca": [
+      160
+     ]
+    },
+    "3.14": {
+     "licenca": [
+      160
+     ]
+    }
+   }
+  },
+  {
+   "id": "immortal",
+   "aliases": [
+    "immortal",
+    "immortal objects",
+    "_is_immortal",
+    "pep 683"
+   ],
+   "pattern": "immortal",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {
+     "glossario": [
+      127,
+      133
+     ],
+     "licenca": [
+      160
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      130,
+      136
+     ],
+     "licenca": [
+      166
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      131,
+      137
+     ],
+     "licenca": [
+      166
+     ]
+    }
+   }
+  },
+  {
+   "id": "zstd",
+   "aliases": [
+    "zstd",
+    "zstandard",
+    "compression.zstd"
+   ],
+   "pattern": "zstd|zstandard",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {
+     "licenca": [
+      161
+     ]
+    }
+   }
+  },
+  {
+   "id": "subinterpreter",
+   "aliases": [
+    "subinterpreter",
+    "subinterpreters",
+    "interpreters",
+    "concurrent.interpreters"
+   ],
+   "pattern": "subinterpreter|\\binterpreters\\b",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {
+     "glossario": [
+      139
+     ]
+    }
+   }
+  },
+  {
+   "id": "REPL",
+   "aliases": [
+    "repl",
+    "interactive interpreter",
+    "python_basic_repl",
+    "pyrepl"
+   ],
+   "pattern": "PYTHON_BASIC_REPL|\\bREPL\\b",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {
+     "corpo": [
+      121
+     ],
+     "glossario": [
+      136
+     ],
+     "licenca": [
+      165,
+      167
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      121
+     ],
+     "glossario": [
+      137
+     ],
+     "licenca": [
+      165,
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "PEP 765",
+   "aliases": [
+    "pep 765",
+    "finally syntaxwarning",
+    "return in finally",
+    "finally return"
+   ],
+   "pattern": "PEP 765",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {
+     "corpo": [
+      73
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "asyncio",
+   "aliases": [
+    "asyncio",
+    "async",
+    "coroutine",
+    "await"
+   ],
+   "pattern": "\\basyncio\\b",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {
+     "licenca": [
+      156
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      126
+     ],
+     "licenca": [
+      160
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      127
+     ],
+     "licenca": [
+      160
+     ]
+    }
+   }
+  },
+  {
+   "id": "venv",
+   "aliases": [
+    "venv",
+    "virtual environment",
+    "virtual environments"
+   ],
+   "pattern": "\\bvenv\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      99
+     ],
+     "glossario": [
+      127
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      101
+     ],
+     "glossario": [
+      127
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      105
+     ],
+     "glossario": [
+      136
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      107
+     ],
+     "glossario": [
+      139
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      107
+     ],
+     "glossario": [
+      140
+     ]
+    }
+   }
+  },
+  {
+   "id": "pip",
+   "aliases": [
+    "pip",
+    "pip install"
+   ],
+   "pattern": "\\bpip\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      100,
+      101
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      102,
+      103
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      106,
+      107
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      108,
+      109
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      108,
+      109
+     ]
+    }
+   }
+  },
+  {
+   "id": "importlib.reload",
+   "aliases": [
+    "importlib.reload",
+    "reload"
+   ],
+   "pattern": "importlib\\.reload",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      51
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      51
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      51
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      51
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      51
+     ]
+    }
+   }
+  },
+  {
+   "id": "setup.py",
+   "aliases": [
+    "setup.py",
+    "setuptools",
+    "distutils",
+    "packaging"
+   ],
+   "pattern": "setup\\.py|distutils|setuptools",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      100,
+      101
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      102,
+      103
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      106,
+      107
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      108,
+      109
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      108,
+      109
+     ]
+    }
+   }
+  },
+  {
+   "id": "pathlib",
+   "aliases": [
+    "pathlib"
+   ],
+   "pattern": "pathlib",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {}
+   }
+  },
+  {
+   "id": "tomllib",
+   "aliases": [
+    "tomllib",
+    "toml"
+   ],
+   "pattern": "tomllib",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {}
+   }
+  },
+  {
+   "id": "zoneinfo",
+   "aliases": [
+    "zoneinfo",
+    "timezone"
+   ],
+   "pattern": "zoneinfo",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {}
+   }
+  },
+  {
+   "id": "lru_cache",
+   "aliases": [
+    "lru_cache",
+    "functools.cache",
+    "cache"
+   ],
+   "pattern": "lru_cache|functools\\.cache",
+   "pages": {
+    "3.10": {},
+    "3.11": {},
+    "3.12": {},
+    "3.13": {},
+    "3.14": {}
+   }
+  },
+  {
+   "id": "singledispatch",
+   "aliases": [
+    "singledispatch",
+    "single dispatch",
+    "overload"
+   ],
+   "pattern": "singledispatch|single dispatch",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      120,
+      126
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      120,
+      126
+     ],
+     "licenca": [
+      153
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      127,
+      134
+     ],
+     "licenca": [
+      161
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      129,
+      137
+     ],
+     "licenca": [
+      167
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      130,
+      137
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "SyntaxWarning",
+   "aliases": [
+    "syntaxwarning",
+    "syntax warning"
+   ],
+   "pattern": "SyntaxWarning",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      54
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      54
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      54,
+      73
+     ]
+    }
+   }
+  },
+  {
+   "id": "DeprecationWarning",
+   "aliases": [
+    "deprecationwarning",
+    "deprecated"
+   ],
+   "pattern": "DeprecationWarning",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      53,
+      54
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      53,
+      54
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      53,
+      54
+     ]
+    }
+   }
+  },
+  {
+   "id": "RecursionError",
+   "aliases": [
+    "recursionerror",
+    "recursion"
+   ],
+   "pattern": "RecursionError",
+   "pages": {
+    "3.10": {},
+    "3.11": {
+     "corpo": [
+      72
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      74,
+      75
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      75
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      75
+     ]
+    }
+   }
+  },
+  {
+   "id": "OSError aliases",
+   "aliases": [
+    "ioerror",
+    "environmenterror",
+    "oserror"
+   ],
+   "pattern": "IOError|EnvironmentError",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      53
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      53
+     ]
+    }
+   }
+  },
+  {
+   "id": "raise from",
+   "aliases": [
+    "raise from",
+    "exception chaining",
+    "__cause__",
+    "__context__"
+   ],
+   "pattern": "exception chaining|__cause__",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      69
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      69
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      71
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      71,
+      72
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      71,
+      72
+     ]
+    }
+   }
+  },
+  {
+   "id": "with statement",
+   "aliases": [
+    "with",
+    "context manager",
+    "context managers",
+    "contextlib"
+   ],
+   "pattern": "context manager",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      116,
+      117
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      116,
+      117
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      122,
+      123
+     ],
+     "licenca": [
+      159
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      124,
+      126
+     ],
+     "licenca": [
+      165
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      124,
+      126
+     ],
+     "licenca": [
+      165
+     ]
+    }
+   }
+  },
+  {
+   "id": "generators",
+   "aliases": [
+    "generator",
+    "generators",
+    "yield"
+   ],
+   "pattern": "\\bgenerator expression|\\bgenerators\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      84,
+      85
+     ],
+     "glossario": [
+      120
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      86,
+      87
+     ],
+     "glossario": [
+      120
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      88,
+      89
+     ],
+     "glossario": [
+      126
+     ],
+     "licenca": [
+      160
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      90,
+      91
+     ],
+     "glossario": [
+      129,
+      134
+     ],
+     "licenca": [
+      166
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      90,
+      91
+     ],
+     "glossario": [
+      130,
+      134
+     ],
+     "licenca": [
+      166
+     ]
+    }
+   }
+  },
+  {
+   "id": "decimal",
+   "aliases": [
+    "decimal",
+    "fractions",
+    "floating point"
+   ],
+   "pattern": "\\bdecimal\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      16,
+      58,
+      98,
+      107,
+      108,
+      109
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      16,
+      58,
+      100,
+      109,
+      110,
+      111
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      14,
+      59,
+      60,
+      102,
+      103,
+      113
+     ],
+     "licenca": [
+      154
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      14,
+      59,
+      60,
+      104,
+      105,
+      115
+     ],
+     "licenca": [
+      158
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      14,
+      59,
+      60,
+      104,
+      105,
+      115
+     ],
+     "licenca": [
+      158
+     ]
+    }
+   }
+  },
+  {
+   "id": "collections.abc",
+   "aliases": [
+    "collections.abc",
+    "abc",
+    "abstract base class"
+   ],
+   "pattern": "collections\\.abc|abstract base class",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      115,
+      118,
+      122,
+      125
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      115,
+      118,
+      122,
+      126
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      121,
+      125,
+      130,
+      134
+     ],
+     "licenca": [
+      159
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      123,
+      127,
+      132,
+      137
+     ],
+     "licenca": [
+      165
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      123,
+      128,
+      133,
+      137
+     ],
+     "licenca": [
+      165
+     ]
+    }
+   }
+  },
+  {
+   "id": "slots",
+   "aliases": [
+    "__slots__",
+    "slots"
+   ],
+   "pattern": "__slots__",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      123,
+      125
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      123,
+      125
+     ],
+     "licenca": [
+      151
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      131,
+      133
+     ],
+     "licenca": [
+      159
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      134,
+      136
+     ],
+     "licenca": [
+      165
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      134,
+      137
+     ],
+     "licenca": [
+      165
+     ]
+    }
+   }
+  },
+  {
+   "id": "namespace package",
+   "aliases": [
+    "namespace package",
+    "namespace packages",
+    "__init__.py",
+    "regular package"
+   ],
+   "pattern": "namespace package",
+   "pages": {
+    "3.10": {
+     "glossario": [
+      123,
+      124,
+      125
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.11": {
+     "glossario": [
+      123,
+      124,
+      125
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      55
+     ],
+     "glossario": [
+      131,
+      132,
+      133
+     ],
+     "licenca": [
+      160
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      55
+     ],
+     "glossario": [
+      133,
+      134,
+      135,
+      136
+     ],
+     "licenca": [
+      166
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      55
+     ],
+     "glossario": [
+      134,
+      135,
+      136,
+      137
+     ],
+     "licenca": [
+      166
+     ]
+    }
+   }
+  },
+  {
+   "id": "encoding warning",
+   "aliases": [
+    "encodingwarning",
+    "utf-8 mode",
+    "-x utf8",
+    "locale.getencoding"
+   ],
+   "pattern": "EncodingWarning|UTF-8 mode|getencoding",
+   "pages": {
+    "3.10": {},
+    "3.11": {
+     "glossario": [
+      122
+     ]
+    },
+    "3.12": {
+     "glossario": [
+      129
+     ]
+    },
+    "3.13": {
+     "glossario": [
+      132
+     ]
+    },
+    "3.14": {
+     "glossario": [
+      133
+     ]
+    }
+   }
+  },
+  {
+   "id": "PEP 8",
+   "aliases": [
+    "pep 8",
+    "pep8",
+    "style guide",
+    "coding style"
+   ],
+   "pattern": "PEP 8",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      38
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      38
+     ],
+     "licenca": [
+      152
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      38
+     ],
+     "licenca": [
+      160
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      38
+     ],
+     "licenca": [
+      167
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      38
+     ],
+     "licenca": [
+      167
+     ]
+    }
+   }
+  },
+  {
+   "id": "doctest",
+   "aliases": [
+    "doctest",
+    "unittest",
+    "testing"
+   ],
+   "pattern": "\\bdoctest\\b",
+   "pages": {
+    "3.10": {
+     "corpo": [
+      91
+     ]
+    },
+    "3.11": {
+     "corpo": [
+      93
+     ]
+    },
+    "3.12": {
+     "corpo": [
+      95
+     ]
+    },
+    "3.13": {
+     "corpo": [
+      97
+     ]
+    },
+    "3.14": {
+     "corpo": [
+      97
+     ]
+    }
+   }
+  }
+ ]
+}

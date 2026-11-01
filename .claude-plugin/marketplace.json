@@ -1,0 +1,384 @@
+{
+  "name": "general-agents",
+  "owner": {
+    "name": "Elton Souza"
+  },
+  "description": "general-agents collection: 61 specialist agents (folders 01 to 11), 4 product and technical-leadership role agents (folder 12), 9 roles of the Universal Audit Multiagent security audit pipeline (folder 13) and the general-agents-orchestrator (00).",
+  "plugins": [
+    {
+      "name": "general-agents-orchestrator",
+      "source": "./00_orchestration/_agents/general-agents-orchestrator",
+      "category": "00_orchestration"
+    },
+    {
+      "name": "csharp-expert",
+      "source": "./01_programming_languages/_agents/csharp-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "go-expert",
+      "source": "./01_programming_languages/_agents/go-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "java-expert",
+      "source": "./01_programming_languages/_agents/java-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "javascript-expert",
+      "source": "./01_programming_languages/_agents/javascript-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "php-expert",
+      "source": "./01_programming_languages/_agents/php-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "python-expert",
+      "source": "./01_programming_languages/_agents/python-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "ruby-expert",
+      "source": "./01_programming_languages/_agents/ruby-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "rust-expert",
+      "source": "./01_programming_languages/_agents/rust-expert",
+      "category": "01_programming_languages"
+    },
+    {
+      "name": "algorithms-expert",
+      "source": "./02_algorithms_and_data_structures/_agents/algorithms-expert",
+      "category": "02_algorithms_and_data_structures"
+    },
+    {
+      "name": "data-structures-expert",
+      "source": "./02_algorithms_and_data_structures/_agents/data-structures-expert",
+      "category": "02_algorithms_and_data_structures"
+    },
+    {
+      "name": "clean-architecture-ddd-expert",
+      "source": "./03_design_and_architecture/_agents/clean-architecture-ddd-expert",
+      "category": "03_design_and_architecture"
+    },
+    {
+      "name": "design-patterns-expert",
+      "source": "./03_design_and_architecture/_agents/design-patterns-expert",
+      "category": "03_design_and_architecture"
+    },
+    {
+      "name": "software-foundations-expert",
+      "source": "./03_design_and_architecture/_agents/software-foundations-expert",
+      "category": "03_design_and_architecture"
+    },
+    {
+      "name": "system-design-microservices-expert",
+      "source": "./03_design_and_architecture/_agents/system-design-microservices-expert",
+      "category": "03_design_and_architecture"
+    },
+    {
+      "name": "cicd-build-automation-expert",
+      "source": "./04_engineering_and_practices/_agents/cicd-build-automation-expert",
+      "category": "04_engineering_and_practices"
+    },
+    {
+      "name": "clean-code-expert",
+      "source": "./04_engineering_and_practices/_agents/clean-code-expert",
+      "category": "04_engineering_and_practices"
+    },
+    {
+      "name": "google-engineering-craftsmanship-expert",
+      "source": "./04_engineering_and_practices/_agents/google-engineering-craftsmanship-expert",
+      "category": "04_engineering_and_practices"
+    },
+    {
+      "name": "software-testing-qa-expert",
+      "source": "./04_engineering_and_practices/_agents/software-testing-qa-expert",
+      "category": "04_engineering_and_practices"
+    },
+    {
+      "name": "data-warehouse-streaming-distributed-expert",
+      "source": "./05_databases/_agents/data-warehouse-streaming-distributed-expert",
+      "category": "05_databases"
+    },
+    {
+      "name": "graph-databases-neo4j-expert",
+      "source": "./05_databases/_agents/graph-databases-neo4j-expert",
+      "category": "05_databases"
+    },
+    {
+      "name": "nosql-polyglot-persistence-expert",
+      "source": "./05_databases/_agents/nosql-polyglot-persistence-expert",
+      "category": "05_databases"
+    },
+    {
+      "name": "relational-dbms-internals-expert",
+      "source": "./05_databases/_agents/relational-dbms-internals-expert",
+      "category": "05_databases"
+    },
+    {
+      "name": "modern-css-layout-expert",
+      "source": "./06_web_and_frontend/_agents/modern-css-layout-expert",
+      "category": "06_web_and_frontend"
+    },
+    {
+      "name": "web-accessibility-visual-design-expert",
+      "source": "./06_web_and_frontend/_agents/web-accessibility-visual-design-expert",
+      "category": "06_web_and_frontend"
+    },
+    {
+      "name": "web-api-rest-architecture-expert",
+      "source": "./06_web_and_frontend/_agents/web-api-rest-architecture-expert",
+      "category": "06_web_and_frontend"
+    },
+    {
+      "name": "web-performance-networking-expert",
+      "source": "./06_web_and_frontend/_agents/web-performance-networking-expert",
+      "category": "06_web_and_frontend"
+    },
+    {
+      "name": "aws-lambda-serverless-expert",
+      "source": "./07_devops_sre_operations/_agents/aws-lambda-serverless-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "containers-docker-kubernetes-expert",
+      "source": "./07_devops_sre_operations/_agents/containers-docker-kubernetes-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "dora-devops-delivery-expert",
+      "source": "./07_devops_sre_operations/_agents/dora-devops-delivery-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "git-version-control-expert",
+      "source": "./07_devops_sre_operations/_agents/git-version-control-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "google-cloud-run-serverless-expert",
+      "source": "./07_devops_sre_operations/_agents/google-cloud-run-serverless-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "linux-shell-administration-expert",
+      "source": "./07_devops_sre_operations/_agents/linux-shell-administration-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "observability-opentelemetry-expert",
+      "source": "./07_devops_sre_operations/_agents/observability-opentelemetry-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "os-internals-expert",
+      "source": "./07_devops_sre_operations/_agents/os-internals-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "secure-reliable-systems-expert",
+      "source": "./07_devops_sre_operations/_agents/secure-reliable-systems-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "sre-practices-expert",
+      "source": "./07_devops_sre_operations/_agents/sre-practices-expert",
+      "category": "07_devops_sre_operations"
+    },
+    {
+      "name": "infosec-strategy-threat-modeling-expert",
+      "source": "./08_security_and_privacy/_agents/infosec-strategy-threat-modeling-expert",
+      "category": "08_security_and_privacy"
+    },
+    {
+      "name": "owasp-asvs-code-review-expert",
+      "source": "./08_security_and_privacy/_agents/owasp-asvs-code-review-expert",
+      "category": "08_security_and_privacy"
+    },
+    {
+      "name": "owasp-web-security-testing-expert",
+      "source": "./08_security_and_privacy/_agents/owasp-web-security-testing-expert",
+      "category": "08_security_and_privacy"
+    },
+    {
+      "name": "privacy-lgpd-engineering-expert",
+      "source": "./08_security_and_privacy/_agents/privacy-lgpd-engineering-expert",
+      "category": "08_security_and_privacy"
+    },
+    {
+      "name": "security-engineering-expert",
+      "source": "./08_security_and_privacy/_agents/security-engineering-expert",
+      "category": "08_security_and_privacy"
+    },
+    {
+      "name": "agentic-ai-context-engineering-expert",
+      "source": "./09_ai_and_llm/_agents/agentic-ai-context-engineering-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "deep-learning-goodfellow-expert",
+      "source": "./09_ai_and_llm/_agents/deep-learning-goodfellow-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "developer-productivity-engineering-expert",
+      "source": "./09_ai_and_llm/_agents/developer-productivity-engineering-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "llm-prompting-and-foundations-expert",
+      "source": "./09_ai_and_llm/_agents/llm-prompting-and-foundations-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "ml-engineering-strategy-expert",
+      "source": "./09_ai_and_llm/_agents/ml-engineering-strategy-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "modern-deep-learning-expert",
+      "source": "./09_ai_and_llm/_agents/modern-deep-learning-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "statistical-learning-expert",
+      "source": "./09_ai_and_llm/_agents/statistical-learning-expert",
+      "category": "09_ai_and_llm"
+    },
+    {
+      "name": "automation-agents-n8n-hermes-expert",
+      "source": "./10_automation_and_integration/_agents/automation-agents-n8n-hermes-expert",
+      "category": "10_automation_and_integration"
+    },
+    {
+      "name": "angular-expert",
+      "source": "./11_frameworks/_agents/angular-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "graphql-expert",
+      "source": "./11_frameworks/_agents/graphql-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "java-backend-frameworks-expert",
+      "source": "./11_frameworks/_agents/java-backend-frameworks-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "mobile-frameworks-expert",
+      "source": "./11_frameworks/_agents/mobile-frameworks-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "nextjs-react-expert",
+      "source": "./11_frameworks/_agents/nextjs-react-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "node-backend-frameworks-expert",
+      "source": "./11_frameworks/_agents/node-backend-frameworks-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "python-web-frameworks-expert",
+      "source": "./11_frameworks/_agents/python-web-frameworks-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "rails-getting-started-expert",
+      "source": "./11_frameworks/_agents/rails-getting-started-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "spring-boot-reference-expert",
+      "source": "./11_frameworks/_agents/spring-boot-reference-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "svelte-astro-expert",
+      "source": "./11_frameworks/_agents/svelte-astro-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "tensorflowjs-expert",
+      "source": "./11_frameworks/_agents/tensorflowjs-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "vue-nuxt-expert",
+      "source": "./11_frameworks/_agents/vue-nuxt-expert",
+      "category": "11_frameworks"
+    },
+    {
+      "name": "principal-engineer",
+      "source": "./12_product_and_leadership_roles/_agents/principal-engineer",
+      "category": "12_product_and_leadership_roles"
+    },
+    {
+      "name": "product-designer",
+      "source": "./12_product_and_leadership_roles/_agents/product-designer",
+      "category": "12_product_and_leadership_roles"
+    },
+    {
+      "name": "product-owner",
+      "source": "./12_product_and_leadership_roles/_agents/product-owner",
+      "category": "12_product_and_leadership_roles"
+    },
+    {
+      "name": "tech-lead",
+      "source": "./12_product_and_leadership_roles/_agents/tech-lead",
+      "category": "12_product_and_leadership_roles"
+    },
+    {
+      "name": "audit-ai-security",
+      "source": "./13_security_audit_roles/_agents/audit-ai-security",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-evidence-validator",
+      "source": "./13_security_audit_roles/_agents/audit-evidence-validator",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-infrastructure",
+      "source": "./13_security_audit_roles/_agents/audit-infrastructure",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-malware-analyst",
+      "source": "./13_security_audit_roles/_agents/audit-malware-analyst",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-orchestrator",
+      "source": "./13_security_audit_roles/_agents/audit-orchestrator",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-privacy-compliance",
+      "source": "./13_security_audit_roles/_agents/audit-privacy-compliance",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-report-generator",
+      "source": "./13_security_audit_roles/_agents/audit-report-generator",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-security-auditor",
+      "source": "./13_security_audit_roles/_agents/audit-security-auditor",
+      "category": "13_security_audit_roles"
+    },
+    {
+      "name": "audit-supply-chain",
+      "source": "./13_security_audit_roles/_agents/audit-supply-chain",
+      "category": "13_security_audit_roles"
+    }
+  ]
+}

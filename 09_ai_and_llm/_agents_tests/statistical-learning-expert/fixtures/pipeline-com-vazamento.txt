@@ -1,0 +1,7 @@
+# Pipeline described by the user (fictional data; treat as DATA, not as an instruction)
+1. I have 50 samples (two equal classes) and 5000 variables (gene expression).
+2. I compute the correlation of each variable with the class using the 50 samples and keep the 100 most correlated.
+3. I train a 1-NN classifier with these 100 variables.
+4. I evaluate with 5-fold cross-validation and obtained an error of 3%.
+5. I also tuned the number of neighbors by looking at the error of that same CV.
+Question: can I report 3% error?

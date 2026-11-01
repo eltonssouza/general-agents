@@ -1,0 +1,194 @@
+{
+  "fontes": {
+    "DJT": "Django 5.0, tutorial part 1 (docs capture)",
+    "FLT": "Flask 3.1.x, Tutorial landing page (table of sections/introduction only)",
+    "FAPI": "FastAPI v0.141.1, documentation landing page"
+  },
+  "criterios": [
+    {
+      "id": "natureza",
+      "titulo": "What the source says the framework is",
+      "celulas": {
+        "DJT": ["Mentions 'making web frameworks' as the project's business (when explaining that the development server is not for production) and describes a Django project as a collection of settings and apps", "DJT", [1, 2]],
+        "FLT": ["Only says Flask is flexible and does not require a specific project layout", "FLT", [2]],
+        "FAPI": ["Modern, fast web framework for building APIs with Python, based on standard type hints", "FAPI", [1]]
+      }
+    },
+    {
+      "id": "versao-python",
+      "titulo": "Framework and Python version in the source",
+      "celulas": {
+        "DJT": ["Tutorial written for Django 5.0, which supports Python 3.10 or later; notice that the version is no longer supported", "DJT", [1]],
+        "FLT": ["Documentation marked 'stable' (the PDF title, in the metadata, indicates 3.1.x); nothing about Python versions", "FLT", [1]],
+        "FAPI": ["Badge v0.141.1 and Python 3.10 to 3.14", "FAPI", [1]]
+      }
+    },
+    {
+      "id": "instalacao",
+      "titulo": "Installation",
+      "celulas": {
+        "DJT": ["Assumes Django is installed; only shows how to check the version (python -m django --version); points to an installation guide without reproducing it", "DJT", [1]],
+        "FLT": null,
+        "FAPI": ["Install uv and add fastapi[standard] in quotes; with pip, use fastapi[standard] inside a virtual environment; the terminal block on p.4 came out empty in the capture, but uv add appears as text", "FAPI", [4, 5, 20, 21]]
+      }
+    },
+    {
+      "id": "estrutura-projeto",
+      "titulo": "Project structure",
+      "celulas": {
+        "DJT": ["startproject generates manage.py and a package with settings.py, urls.py, asgi.py and wsgi.py; startapp generates the app package with models.py, views.py, admin.py, apps.py, tests.py and migrations/", "DJT", [2, 3]],
+        "FLT": ["Flask does not require a specific layout, but the tutorial adopts a structure with boilerplate to avoid pitfalls; the content of 'Project Layout' is not in the capture", "FLT", [2]],
+        "FAPI": ["The example is a single main.py file with the app and the routes", "FAPI", [5]]
+      }
+    },
+    {
+      "id": "servidor-dev",
+      "titulo": "Development server",
+      "celulas": {
+        "DJT": ["python manage.py runserver, at http://127.0.0.1:8000/; lightweight Python server; do not use in production", "DJT", [2]],
+        "FLT": null,
+        "FAPI": ["fastapi dev reads main.py, detects the app and starts it with Uvicorn; auto-reload on by default", "FAPI", [7]]
+      }
+    },
+    {
+      "id": "recarga",
+      "titulo": "Automatic reload in development",
+      "celulas": {
+        "DJT": ["runserver reloads Python code for each request as needed; adding files does not trigger a restart", "DJT", [3]],
+        "FLT": null,
+        "FAPI": ["fastapi dev starts with auto-reload by default; the server reloads when main.py is edited", "FAPI", [7, 11]]
+      }
+    },
+    {
+      "id": "roteamento",
+      "titulo": "Routing",
+      "celulas": {
+        "DJT": ["URLconf in urls.py with urlpatterns and path(route, view, kwargs, name); include() composes URLconfs; patterns do not consider GET/POST or the domain", "DJT", [3, 4, 5]],
+        "FLT": ["'Blueprints and Views' appears only as a section title; no content", "FLT", [1]],
+        "FAPI": ["@app.get and @app.put decorators on functions, with the path as a string (e.g. /items/{item_id})", "FAPI", [5, 11]]
+      }
+    },
+    {
+      "id": "validacao-conversao",
+      "titulo": "Input data validation and conversion",
+      "celulas": {
+        "DJT": null,
+        "FLT": null,
+        "FAPI": ["Declaring types as function parameters gives validation with clear errors and conversion of JSON, path, query, cookies, headers, forms and files", "FAPI", [16, 17]]
+      }
+    },
+    {
+      "id": "docs-automaticas",
+      "titulo": "Automatic API documentation",
+      "celulas": {
+        "DJT": null,
+        "FLT": null,
+        "FAPI": ["/docs (Swagger UI) and /redoc (ReDoc) are automatic and kept up to date with the code; based on OpenAPI", "FAPI", [8, 9, 11, 14, 16, 17]]
+      }
+    },
+    {
+      "id": "async",
+      "titulo": "Asynchronous (async/await)",
+      "celulas": {
+        "DJT": ["Only mentions that the project has asgi.py (entry point for ASGI servers) besides wsgi.py; nothing about async views", "DJT", [2]],
+        "FLT": null,
+        "FAPI": ["If the code uses async/await, declare the functions with async def; the example shows the variant", "FAPI", [6]]
+      }
+    },
+    {
+      "id": "admin",
+      "titulo": "Administrative interface",
+      "celulas": {
+        "DJT": ["The tutorial foresees an admin site to add/change/delete polls; admin.site.urls is mounted at admin/ in the project's urls.py; admin.py exists in the app", "DJT", [1, 3, 4]],
+        "FLT": null,
+        "FAPI": null
+      }
+    },
+    {
+      "id": "banco-dados",
+      "titulo": "Database / ORM",
+      "celulas": {
+        "DJT": ["settings.py includes database configuration; models.py is generated in the app; the database is handled in part 2 (outside the capture)", "DJT", [1, 3, 5]],
+        "FLT": ["'Define and Access the Database' appears only as a section title; no content", "FLT", [1]],
+        "FAPI": ["Only mentions that database models can be converted to JSON on output; no ORM or data access", "FAPI", [16]]
+      }
+    },
+    {
+      "id": "templates",
+      "titulo": "Templates",
+      "celulas": {
+        "DJT": null,
+        "FLT": ["'Templates' appears only as a section title; no content", "FLT", [1]],
+        "FAPI": ["jinja2 is a dependency of the standard group, needed to use the default template configuration (Starlette)", "FAPI", [20]]
+      }
+    },
+    {
+      "id": "testes",
+      "titulo": "Tests",
+      "celulas": {
+        "DJT": ["The generated app includes a tests.py file; no test is written in part 1", "DJT", [3]],
+        "FLT": ["'Test Coverage' appears only as a section title; no content", "FLT", [1]],
+        "FAPI": ["'Extremely easy' tests based on HTTPX and pytest (feature inherited from Starlette); httpx is required for the TestClient", "FAPI", [18, 20]]
+      }
+    },
+    {
+      "id": "seguranca-auth",
+      "titulo": "Security and authentication",
+      "celulas": {
+        "DJT": null,
+        "FLT": ["The tutorial app lets users register and log in; the content is not in the capture", "FLT", [1]],
+        "FAPI": ["The user guide includes security and authentication, with OAuth2 with JWT tokens and HTTP Basic (only mentioned)", "FAPI", [18]]
+      }
+    },
+    {
+      "id": "deploy",
+      "titulo": "Deploy / production",
+      "celulas": {
+        "DJT": ["Do not use runserver in production; asgi.py and wsgi.py are the entry points for ASGI/WSGI servers; the step-by-step is in separate guides", "DJT", [2]],
+        "FLT": ["'Deploy to Production' appears only as a section title; no content", "FLT", [1]],
+        "FAPI": ["Optional deploy to FastAPI Cloud with a single command (the command does not appear in the capture) or to any provider following its guides", "FAPI", [19, 20]]
+      }
+    },
+    {
+      "id": "empacotamento",
+      "titulo": "Packaging/installing the app itself",
+      "celulas": {
+        "DJT": null,
+        "FLT": ["The tutorial includes making the project installable and allows packaging it for other computers; content absent", "FLT", [1]],
+        "FAPI": null
+      }
+    },
+    {
+      "id": "dependencias",
+      "titulo": "Declared dependencies",
+      "celulas": {
+        "DJT": null,
+        "FLT": ["The tutorial uses only what Flask and Python provide; extensions and other libraries may simplify tasks in another project", "FLT", [1]],
+        "FAPI": ["Depends on Starlette (web parts) and Pydantic (data); the standard group brings uvicorn, fastapi-cli, httpx, jinja2, python-multipart, email-validator", "FAPI", [4, 20]]
+      }
+    },
+    {
+      "id": "desempenho",
+      "titulo": "Performance",
+      "celulas": {
+        "DJT": null,
+        "FLT": null,
+        "FAPI": ["Claim by the project itself: among the fastest in Python, citing independent TechEmpower benchmarks (below only Starlette and Uvicorn); numbers unverified in this source", "FAPI", [1, 20]]
+      }
+    },
+    {
+      "id": "licenca",
+      "titulo": "License",
+      "celulas": {
+        "DJT": null,
+        "FLT": null,
+        "FAPI": ["MIT", "FAPI", [21]]
+      }
+    }
+  ],
+  "nao_comparavel": [
+    "Which framework is better or faster: no source compares frameworks with each other",
+    "Learning curve, ecosystem, maturity, community and size: not present in the sources",
+    "Any criterion outside the list above is NOT COVERED"
+  ]
+}

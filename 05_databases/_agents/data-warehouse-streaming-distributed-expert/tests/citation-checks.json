@@ -1,0 +1,1799 @@
+{
+ "source": "KIMBALL.txt, STREAM.txt, HELLAND.txt (=== PAGE N === markers; N = PDF page; KIMBALL printed = N-3; STREAM printed = N)",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "KIMBALL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "select the business process",
+    "declare the grain",
+    "identify the dimensions",
+    "identify the facts"
+   ],
+   "claim": "four steps in order"
+  },
+  {
+   "id": "P002",
+   "src": "KIMBALL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "data realities",
+    "profiling"
+   ],
+   "claim": "requirements + data realities + profiling"
+  },
+  {
+   "id": "P003",
+   "src": "KIMBALL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "collaboration is critical"
+   ],
+   "claim": "collaborative design"
+  },
+  {
+   "id": "P004",
+   "src": "KIMBALL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "each business process corresponds to a row"
+   ],
+   "claim": "process = bus matrix row"
+  },
+  {
+   "id": "P005",
+   "src": "KIMBALL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "the data warehouse toolkit, third edition",
+    "2013"
+   ],
+   "claim": "document extracted from the Toolkit 3rd ed. 2013"
+  },
+  {
+   "id": "P006",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "binding contract"
+   ],
+   "claim": "grain = binding contract"
+  },
+  {
+   "id": "P007",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "strongly encourage",
+    "atomic-"
+   ],
+   "claim": "atomic grain strongly encouraged (not mandatory)"
+  },
+  {
+   "id": "P008",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "different grains must not be mixed"
+   ],
+   "claim": "one grain per table"
+  },
+  {
+   "id": "P009",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "soul"
+   ],
+   "claim": "dimensions are the soul of the DW"
+  },
+  {
+   "id": "P010",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "xmla",
+    "olap cube"
+   ],
+   "claim": "OLAP cube and languages such as XMLA"
+  },
+  {
+   "id": "P011",
+   "src": "KIMBALL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "salary is disallowed"
+   ],
+   "claim": "example of a fact outside the grain"
+  },
+  {
+   "id": "P012",
+   "src": "KIMBALL",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "without altering any existing bi query"
+   ],
+   "claim": "grace extensions"
+  },
+  {
+   "id": "P013",
+   "src": "KIMBALL",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "more atomic",
+    "preserve the existing"
+   ],
+   "claim": "make the grain more atomic while preserving names"
+  },
+  {
+   "id": "P014",
+   "src": "KIMBALL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "fully additive",
+    "semi-additive",
+    "except time"
+   ],
+   "claim": "additivity"
+  },
+  {
+   "id": "P015",
+   "src": "KIMBALL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "ratios",
+    "fully additive components"
+   ],
+   "claim": "non-additive: additive components"
+  },
+  {
+   "id": "P016",
+   "src": "KIMBALL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "default row",
+    "referential integrity"
+   ],
+   "claim": "null FK prohibited, default row"
+  },
+  {
+   "id": "P017",
+   "src": "KIMBALL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "conformed facts",
+    "identically named"
+   ],
+   "claim": "conformed facts"
+  },
+  {
+   "id": "P018",
+   "src": "KIMBALL",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "dense or sparse"
+   ],
+   "claim": "transaction fact dense or sparse"
+  },
+  {
+   "id": "P019",
+   "src": "KIMBALL",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "periodic snapshot",
+    "uniformly dense"
+   ],
+   "claim": "dense periodic snapshot"
+  },
+  {
+   "id": "P020",
+   "src": "KIMBALL",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "lag measurements",
+    "revisited and updated"
+   ],
+   "claim": "accumulating snapshot updated, lags"
+  },
+  {
+   "id": "P021",
+   "src": "KIMBALL",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "coverage table",
+    "subtracted from the coverage"
+   ],
+   "claim": "factless: what did not happen"
+  },
+  {
+   "id": "P022",
+   "src": "KIMBALL",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "aggregate navigation",
+    "database indexes"
+   ],
+   "claim": "aggregates behave like indexes"
+  },
+  {
+   "id": "P023",
+   "src": "KIMBALL",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "consolidated fact table",
+    "actuals",
+    "forecasts",
+    "etl"
+   ],
+   "claim": "consolidated fact and ETL cost"
+  },
+  {
+   "id": "P024",
+   "src": "KIMBALL",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "single primary key",
+    "denormalized"
+   ],
+   "claim": "dimension structure"
+  },
+  {
+   "id": "P025",
+   "src": "KIMBALL",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "anonymous integer",
+    "starting with the value 1"
+   ],
+   "claim": "surrogate: integers starting at 1"
+  },
+  {
+   "id": "P026",
+   "src": "KIMBALL",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "durable",
+    "supernatural"
+   ],
+   "claim": "durable key"
+  },
+  {
+   "id": "P027",
+   "src": "KIMBALL",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "drilling down",
+    "group by"
+   ],
+   "claim": "drill down = add header/GROUP BY"
+  },
+  {
+   "id": "P028",
+   "src": "KIMBALL",
+   "pages": [
+    10,
+    11
+   ],
+   "terms": [
+    "degenerate dimension",
+    "no associated dimension table"
+   ],
+   "claim": "degenerate dimension"
+  },
+  {
+   "id": "P029",
+   "src": "KIMBALL",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "transaction and accumulating snapshot"
+   ],
+   "claim": "degenerate common in transaction and accumulating"
+  },
+  {
+   "id": "P030",
+   "src": "KIMBALL",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "resist the normalization urges"
+   ],
+   "claim": "resist normalization"
+  },
+  {
+   "id": "P031",
+   "src": "KIMBALL",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "unknown",
+    "not applicable",
+    "inconsistently"
+   ],
+   "claim": "nulls in dimension attributes"
+  },
+  {
+   "id": "P032",
+   "src": "KIMBALL",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "yyyymmdd",
+    "easter"
+   ],
+   "claim": "date dimension: smart key and calendar"
+  },
+  {
+   "id": "P033",
+   "src": "KIMBALL",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "more than one natural hierarchy"
+   ],
+   "claim": "multiple hierarchies in the same dimension"
+  },
+  {
+   "id": "P034",
+   "src": "KIMBALL",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "role-playing",
+    "separate view"
+   ],
+   "claim": "role-playing via views"
+  },
+  {
+   "id": "P035",
+   "src": "KIMBALL",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "junk dimension",
+    "cartesian product",
+    "actually occur"
+   ],
+   "claim": "junk dimension"
+  },
+  {
+   "id": "P036",
+   "src": "KIMBALL",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "avoid snowflakes",
+    "difficult for business users"
+   ],
+   "claim": "avoid snowflake"
+  },
+  {
+   "id": "P037",
+   "src": "KIMBALL",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "outrigger",
+    "sparingly"
+   ],
+   "claim": "outrigger sparingly"
+  },
+  {
+   "id": "P038",
+   "src": "KIMBALL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "conformed dimensions",
+    "same column names and domain contents"
+   ],
+   "claim": "conformed dimension"
+  },
+  {
+   "id": "P039",
+   "src": "KIMBALL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "shrunken",
+    "forecast by month and brand"
+   ],
+   "claim": "shrunken rollup"
+  },
+  {
+   "id": "P040",
+   "src": "KIMBALL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "sort-merge",
+    "multipass query"
+   ],
+   "claim": "drilling across by sort-merge"
+  },
+  {
+   "id": "P041",
+   "src": "KIMBALL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "value chain"
+   ],
+   "claim": "value chain"
+  },
+  {
+   "id": "P042",
+   "src": "KIMBALL",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "technology and database platform independent"
+   ],
+   "claim": "platform-independent bus"
+  },
+  {
+   "id": "P043",
+   "src": "KIMBALL",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "one row of the matrix at a time"
+   ],
+   "claim": "one row at a time"
+  },
+  {
+   "id": "P044",
+   "src": "KIMBALL",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "opportunity/stakeholder matrix"
+   ],
+   "claim": "opportunity/stakeholder matrix"
+  },
+  {
+   "id": "P045",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "type 0",
+    "retain original",
+    "original credit score"
+   ],
+   "claim": "SCD 0"
+  },
+  {
+   "id": "P046",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "destroys history",
+    "recomputed"
+   ],
+   "claim": "SCD 1 destroys history; recompute aggregates"
+  },
+  {
+   "id": "P047",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "minimum of three additional columns"
+   ],
+   "claim": "SCD 2: 3 minimum columns"
+  },
+  {
+   "id": "P048",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "alternate reality",
+    "relatively infrequently"
+   ],
+   "claim": "SCD 3"
+  },
+  {
+   "id": "P049",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "rapidly changing monster dimension"
+   ],
+   "claim": "SCD 4"
+  },
+  {
+   "id": "P050",
+   "src": "KIMBALL",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "type 5",
+    "mini-dimension",
+    "outrigger"
+   ],
+   "claim": "SCD 5"
+  },
+  {
+   "id": "P051",
+   "src": "KIMBALL",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "type 6",
+    "durable key",
+    "systematically overwritten"
+   ],
+   "claim": "SCD 6"
+  },
+  {
+   "id": "P052",
+   "src": "KIMBALL",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "type 7",
+    "as-was",
+    "as-is",
+    "separate views"
+   ],
+   "claim": "SCD 7"
+  },
+  {
+   "id": "P053",
+   "src": "KIMBALL",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "fixed depth",
+    "bridge table",
+    "pathstring"
+   ],
+   "claim": "hierarchies"
+  },
+  {
+   "id": "P054",
+   "src": "KIMBALL",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "centipede",
+    "junk dimension"
+   ],
+   "claim": "centipede and junk"
+  },
+  {
+   "id": "P055",
+   "src": "KIMBALL",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "fact table surrogate keys",
+    "back out or resume"
+   ],
+   "claim": "fact SK"
+  },
+  {
+   "id": "P056",
+   "src": "KIMBALL",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "header/line"
+   ],
+   "claim": "header/line"
+  },
+  {
+   "id": "P057",
+   "src": "KIMBALL",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "lag/duration facts"
+   ],
+   "claim": "lag/duration"
+  },
+  {
+   "id": "P058",
+   "src": "KIMBALL",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "allocate the header facts"
+   ],
+   "claim": "allocate header facts"
+  },
+  {
+   "id": "P059",
+   "src": "KIMBALL",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "year-to-date",
+    "bi applications or olap cube"
+   ],
+   "claim": "YTD in BI/cube"
+  },
+  {
+   "id": "P060",
+   "src": "KIMBALL",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "conversion factors",
+    "standard unit of measure"
+   ],
+   "claim": "units of measure"
+  },
+  {
+   "id": "P061",
+   "src": "KIMBALL",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "must never issue sql",
+    "fact-to-fact"
+   ],
+   "claim": "fact-to-fact join prohibition"
+  },
+  {
+   "id": "P062",
+   "src": "KIMBALL",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "three basic fact table grains"
+   ],
+   "claim": "three basic grains"
+  },
+  {
+   "id": "P063",
+   "src": "KIMBALL",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "late arriving"
+   ],
+   "claim": "late arriving facts"
+  },
+  {
+   "id": "P064",
+   "src": "KIMBALL",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "bridge table",
+    "explosive growth"
+   ],
+   "claim": "bridge and explosive growth"
+  },
+  {
+   "id": "P065",
+   "src": "KIMBALL",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "measure type dimensions",
+    "we generally do not recommend"
+   ],
+   "claim": "measure type not recommended"
+  },
+  {
+   "id": "P066",
+   "src": "KIMBALL",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "value banding",
+    "case statement"
+   ],
+   "claim": "dynamic value banding"
+  },
+  {
+   "id": "P067",
+   "src": "KIMBALL",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "abstract generic dimensions should be avoided"
+   ],
+   "claim": "avoid generic dimensions"
+  },
+  {
+   "id": "P068",
+   "src": "KIMBALL",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "audit dimension",
+    "hot swappable",
+    "type 1 overwrites"
+   ],
+   "claim": "audit, hot swappable, late arriving dimension"
+  },
+  {
+   "id": "P069",
+   "src": "KIMBALL",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "supertype",
+    "hot partition",
+    "error event"
+   ],
+   "claim": "supertype, real-time, error events"
+  },
+  {
+   "id": "P070",
+   "src": "HELLAND",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "hd 30963",
+    "chemically peculiar",
+    "spectrograph"
+   ],
+   "claim": "the collection's Helland PDF is an astrophysics paper"
+  },
+  {
+   "id": "P071",
+   "src": "STREAM",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "arxiv:2008.00842",
+    "14 jan 2023"
+   ],
+   "claim": "PDF identification (arXiv v2)"
+  },
+  {
+   "id": "P072",
+   "src": "STREAM",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "scale-up",
+    "scale-out",
+    "millwheel",
+    "tapestry"
+   ],
+   "claim": "generations"
+  },
+  {
+   "id": "P073",
+   "src": "STREAM",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "3rd gen",
+    "2nd gen",
+    "1st gen"
+   ],
+   "claim": "Fig. 1 has a 3rd generation with ?"
+  },
+  {
+   "id": "P074",
+   "src": "STREAM",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "table 1: evolution of streaming systems",
+    "approximate or exact",
+    "low-watermark, frontiers"
+   ],
+   "claim": "Table 1"
+  },
+  {
+   "id": "P075",
+   "src": "STREAM",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "load shedding, load-aware scheduling",
+    "backpressure, elasticity"
+   ],
+   "claim": "Table 1: load"
+  },
+  {
+   "id": "P076",
+   "src": "STREAM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "event (or application) time",
+    "processing time",
+    "ingestion time"
+   ],
+   "claim": "three time modes"
+  },
+  {
+   "id": "P077",
+   "src": "STREAM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "load shedder",
+    "approximate results"
+   ],
+   "claim": "DSMS architecture"
+  },
+  {
+   "id": "P078",
+   "src": "STREAM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "shared-nothing"
+   ],
+   "claim": "2nd generation shared-nothing"
+  },
+  {
+   "id": "P079",
+   "src": "STREAM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "in-order processing systems",
+    "out-of-order processing systems"
+   ],
+   "claim": "disorder architectures"
+  },
+  {
+   "id": "P080",
+   "src": "STREAM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "smallest value of a"
+   ],
+   "claim": "definition of progress"
+  },
+  {
+   "id": "P081",
+   "src": "STREAM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "slack",
+    "grace period"
+   ],
+   "claim": "slack"
+  },
+  {
+   "id": "P082",
+   "src": "STREAM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "order-insensitive operators",
+    "dupelim"
+   ],
+   "claim": "order-insensitive operators"
+  },
+  {
+   "id": "P083",
+   "src": "STREAM",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "input manager",
+    "clock skew"
+   ],
+   "claim": "heartbeat"
+  },
+  {
+   "id": "P084",
+   "src": "STREAM",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "low-watermark for an attribute a",
+    "probabilistically"
+   ],
+   "claim": "probabilistic low-watermark"
+  },
+  {
+   "id": "P085",
+   "src": "STREAM",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "punctuations",
+    "oldest pending work"
+   ],
+   "claim": "watermark via punctuation"
+  },
+  {
+   "id": "P086",
+   "src": "STREAM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "pointstamps",
+    "frontier",
+    "could-result-in"
+   ],
+   "claim": "pointstamps"
+  },
+  {
+   "id": "P087",
+   "src": "STREAM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "cyclic",
+    "deadlock",
+    "naiad"
+   ],
+   "claim": "cyclic queries"
+  },
+  {
+   "id": "P088",
+   "src": "STREAM",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "revision processing",
+    "triggers",
+    "retracted data"
+   ],
+   "claim": "revision and triggers"
+  },
+  {
+   "id": "P089",
+   "src": "STREAM",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "replay and revise"
+   ],
+   "claim": "replay and revise"
+  },
+  {
+   "id": "P090",
+   "src": "STREAM",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "partition and consolidate",
+    "impatience sort"
+   ],
+   "claim": "partition and consolidate"
+  },
+  {
+   "id": "P091",
+   "src": "STREAM",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "watermarks unaligned"
+   ],
+   "claim": "misaligned watermarks: open problem"
+  },
+  {
+   "id": "P092",
+   "src": "STREAM",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "table 3",
+    "programmable state",
+    "persistence granularity"
+   ],
+   "claim": "Table 3"
+  },
+  {
+   "id": "P093",
+   "src": "STREAM",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "redis"
+   ],
+   "claim": "manual external state: Redis"
+  },
+  {
+   "id": "P094",
+   "src": "STREAM",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "out-of-core",
+    "lsm-tree",
+    "rocksdb",
+    "faster"
+   ],
+   "claim": "LSM/RocksDB"
+  },
+  {
+   "id": "P095",
+   "src": "STREAM",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "bigtable",
+    "spanner",
+    "dramatically increasing"
+   ],
+   "claim": "external state and latency"
+  },
+  {
+   "id": "P096",
+   "src": "STREAM",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "epoch-level",
+    "batch-level",
+    "record-level"
+   ],
+   "claim": "granularity"
+  },
+  {
+   "id": "P097",
+   "src": "STREAM",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "partitioned state",
+    "non-partitioned state",
+    "keyby",
+    "groupby"
+   ],
+   "claim": "partitioned state"
+  },
+  {
+   "id": "P098",
+   "src": "STREAM",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "lambda architecture"
+   ],
+   "claim": "lambda"
+  },
+  {
+   "id": "P099",
+   "src": "STREAM",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "strong production",
+    "blind writes"
+   ],
+   "claim": "per-event persistence"
+  },
+  {
+   "id": "P100",
+   "src": "STREAM",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "exactly-once processing on state"
+   ],
+   "claim": "exactly-once on state"
+  },
+  {
+   "id": "P101",
+   "src": "STREAM",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "drizzle",
+    "two-phase commit"
+   ],
+   "claim": "two-phase commit per epoch"
+  },
+  {
+   "id": "P102",
+   "src": "STREAM",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "unaligned",
+    "aligned",
+    "chandy-lamport",
+    "ibm streams"
+   ],
+   "claim": "snapshots"
+  },
+  {
+   "id": "P103",
+   "src": "STREAM",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "at most-once",
+    "exactly-once",
+    "mostly obsolete"
+   ],
+   "claim": "semantics; at-most-once obsolete"
+  },
+  {
+   "id": "P104",
+   "src": "STREAM",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "nondeterminism",
+    "processing-time windows"
+   ],
+   "claim": "non-determinism"
+  },
+  {
+   "id": "P105",
+   "src": "STREAM",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "output commit problem",
+    "clonos"
+   ],
+   "claim": "output commit problem (definition)"
+  },
+  {
+   "id": "P106",
+   "src": "STREAM",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "99.999%"
+   ],
+   "claim": "high availability example"
+  },
+  {
+   "id": "P107",
+   "src": "STREAM",
+   "pages": [
+    17,
+    18
+   ],
+   "terms": [
+    "table 4",
+    "eighteen"
+   ],
+   "claim": "Table 4"
+  },
+  {
+   "id": "P108",
+   "src": "STREAM",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "cannot be retracted"
+   ],
+   "claim": "output cannot be retracted"
+  },
+  {
+   "id": "P109",
+   "src": "STREAM",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "passive replication",
+    "remote resilient store"
+   ],
+   "claim": "Table 4 patterns"
+  },
+  {
+   "id": "P110",
+   "src": "STREAM",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "transaction-based",
+    "progress-based",
+    "lineage-based"
+   ],
+   "claim": "three solution categories"
+  },
+  {
+   "id": "P111",
+   "src": "STREAM",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "precise recovery",
+    "strong productions"
+   ],
+   "claim": "equivalent terms"
+  },
+  {
+   "id": "P112",
+   "src": "STREAM",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "table 5",
+    "deterministic"
+   ],
+   "claim": "Table 5: assumptions"
+  },
+  {
+   "id": "P113",
+   "src": "STREAM",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "external sinks",
+    "idempotent writes",
+    "apache kafka"
+   ],
+   "claim": "idempotent external sinks"
+  },
+  {
+   "id": "P114",
+   "src": "STREAM",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "optimistic output techniques",
+    "pessimistic output techniques",
+    "multi-version concurrency control"
+   ],
+   "claim": "optimistic vs pessimistic"
+  },
+  {
+   "id": "P115",
+   "src": "STREAM",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "active replication",
+    "passive replication",
+    "hybrid replication",
+    "flux"
+   ],
+   "claim": "replication types"
+  },
+  {
+   "id": "P116",
+   "src": "STREAM",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "90% less overhead",
+    "66%"
+   ],
+   "claim": "numbers from cited studies"
+  },
+  {
+   "id": "P117",
+   "src": "STREAM",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "slack between",
+    "processing time and event time"
+   ],
+   "claim": "proposed availability measure"
+  },
+  {
+   "id": "P118",
+   "src": "STREAM",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "load shedding",
+    "approximate results"
+   ],
+   "claim": "load shedding"
+  },
+  {
+   "id": "P119",
+   "src": "STREAM",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "lsrm",
+    "drop operators",
+    "concept drift"
+   ],
+   "claim": "load shedding details"
+  },
+  {
+   "id": "P120",
+   "src": "STREAM",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "load-aware scheduling",
+    "throttling the producer"
+   ],
+   "claim": "flow control"
+  },
+  {
+   "id": "P121",
+   "src": "STREAM",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "credit-based",
+    "atm",
+    "apache flink"
+   ],
+   "claim": "CFC"
+  },
+  {
+   "id": "P122",
+   "src": "STREAM",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "persistent input message queue"
+   ],
+   "claim": "persistent queue for back-pressure"
+  },
+  {
+   "id": "P123",
+   "src": "STREAM",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "policy",
+    "mechanism"
+   ],
+   "claim": "elasticity: policy and mechanism"
+  },
+  {
+   "id": "P124",
+   "src": "STREAM",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "key groups",
+    "consistent hashing",
+    "hybrid",
+    "dhalion"
+   ],
+   "claim": "state redistribution"
+  },
+  {
+   "id": "P125",
+   "src": "STREAM",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "stop-and-restart",
+    "very common in modern systems"
+   ],
+   "claim": "stop-and-restart common"
+  },
+  {
+   "id": "P126",
+   "src": "STREAM",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "partial pause and restart",
+    "pro-active replication",
+    "progressive"
+   ],
+   "claim": "reconfiguration strategies"
+  },
+  {
+   "id": "P127",
+   "src": "STREAM",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "scaling down is a quite recent requirement"
+   ],
+   "claim": "scale down is a recent requirement"
+  },
+  {
+   "id": "P128",
+   "src": "STREAM",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "largely rejected the notion of approxima"
+   ],
+   "claim": "conclusion: approximation rejected"
+  },
+  {
+   "id": "P129",
+   "src": "STREAM",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "last access: july 2020"
+   ],
+   "claim": "2020 references"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "src": "STREAM",
+   "terms": [
+    "re:session windows?"
+   ],
+   "claim": "survey does not cover session windows"
+  },
+  {
+   "id": "N002",
+   "src": "STREAM",
+   "terms": [
+    "jvm"
+   ],
+   "claim": "survey does not mention the JVM"
+  },
+  {
+   "id": "N003",
+   "src": "STREAM",
+   "terms": [
+    "off-heap",
+    "off heap"
+   ],
+   "claim": "survey does not mention off-heap"
+  },
+  {
+   "id": "N004",
+   "src": "STREAM",
+   "terms": [
+    "asynchronous barrier"
+   ],
+   "claim": "survey does not use the term ABS / Asynchronous Barrier Snapshotting"
+  },
+  {
+   "id": "N005",
+   "src": "STREAM",
+   "terms": [
+    "stop-the-world"
+   ],
+   "claim": "survey does not discuss stop-the-world pauses"
+  },
+  {
+   "id": "N006",
+   "src": "STREAM",
+   "terms": [
+    "re:\\bsagas?\\b"
+   ],
+   "claim": "survey does not cover Saga"
+  },
+  {
+   "id": "N007",
+   "src": "STREAM",
+   "terms": [
+    "outbox"
+   ],
+   "claim": "survey does not cover Outbox"
+  },
+  {
+   "id": "N008",
+   "src": "STREAM",
+   "terms": [
+    "reactive streams"
+   ],
+   "claim": "survey does not cite Reactive Streams"
+  },
+  {
+   "id": "N009",
+   "src": "STREAM",
+   "terms": [
+    "cassandra"
+   ],
+   "claim": "survey does not cite Cassandra"
+  },
+  {
+   "id": "N010",
+   "src": "STREAM",
+   "terms": [
+    "pre-commit",
+    "precommit"
+   ],
+   "claim": "survey does not describe sink pre-commit"
+  },
+  {
+   "id": "N011",
+   "src": "STREAM",
+   "terms": [
+    "terabyte"
+   ],
+   "claim": "survey does not mention terabytes of state"
+  },
+  {
+   "id": "N012",
+   "src": "STREAM",
+   "terms": [
+    "re:\\bhdfs\\b"
+   ],
+   "claim": "survey does not cite HDFS"
+  },
+  {
+   "id": "N013",
+   "src": "STREAM",
+   "terms": [
+    "allowed lateness",
+    "forboundedoutoforderness"
+   ],
+   "claim": "survey does not provide Flink APIs"
+  },
+  {
+   "id": "N014",
+   "src": "STREAM",
+   "terms": [
+    "cap theorem"
+   ],
+   "claim": "survey does not cite the CAP theorem"
+  },
+  {
+   "id": "N015",
+   "src": "STREAM",
+   "terms": [
+    "kafka transaction"
+   ],
+   "claim": "survey does not describe Kafka transactions"
+  },
+  {
+   "id": "N016",
+   "src": "STREAM",
+   "terms": [
+    "re:\\bheap\\b"
+   ],
+   "claim": "survey does not mention the JVM heap"
+  },
+  {
+   "id": "N017",
+   "src": "KIMBALL",
+   "terms": [
+    "1+2+3",
+    "1 + 2 + 3"
+   ],
+   "claim": "document does not contain the 1+2+3=6 mnemonic"
+  },
+  {
+   "id": "N018",
+   "src": "KIMBALL",
+   "terms": [
+    "9999-12-31"
+   ],
+   "claim": "document does not contain the 9999-12-31 expiration date"
+  },
+  {
+   "id": "N019",
+   "src": "KIMBALL",
+   "terms": [
+    "data vault"
+   ],
+   "claim": "document does not cover Data Vault"
+  },
+  {
+   "id": "N020",
+   "src": "KIMBALL",
+   "terms": [
+    "re:negative (integer|key|surrogate)"
+   ],
+   "claim": "document does not mention negative keys"
+  },
+  {
+   "id": "N021",
+   "src": "KIMBALL",
+   "terms": [
+    "re:\\bbytes?\\b"
+   ],
+   "claim": "document does not quantify surrogate key bytes"
+  },
+  {
+   "id": "N022",
+   "src": "KIMBALL",
+   "terms": [
+    "weighted average",
+    "ending balance"
+   ],
+   "claim": "document does not say how to sum semi-additive measures over time"
+  },
+  {
+   "id": "N023",
+   "src": "KIMBALL",
+   "terms": [
+    "obsolete",
+    "outdated"
+   ],
+   "claim": "document does not say snowflake is obsolete"
+  },
+  {
+   "id": "N024",
+   "src": "KIMBALL",
+   "terms": [
+    "re:\\b(kafka|hadoop|spark|cassandra)\\b"
+   ],
+   "claim": "document does not cite big data tools"
+  },
+  {
+   "id": "N025",
+   "src": "KIMBALL",
+   "terms": [
+    "re:never[^.]{0,40}department",
+    "re:not[^.]{0,30}organizational"
+   ],
+   "claim": "document does not forbid modeling by department"
+  },
+  {
+   "id": "N026",
+   "src": "KIMBALL",
+   "terms": [
+    "re:orders? of magnitude"
+   ],
+   "claim": "document does not mention join orders of magnitude"
+  },
+  {
+   "id": "N027",
+   "src": "HELLAND",
+   "terms": [
+    "two-phase commit",
+    "distributed transaction",
+    "idempotent"
+   ],
+   "claim": "the collection's Helland PDF does not cover distributed transactions"
+  },
+  {
+   "id": "N028",
+   "src": "HELLAND",
+   "terms": [
+    "pat helland",
+    "helland"
+   ],
+   "claim": "the collection's Helland PDF does not mention Helland"
+  }
+ ]
+}

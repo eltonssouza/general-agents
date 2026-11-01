@@ -1,0 +1,9 @@
+{
+  "name": "php-expert",
+  "version": "2.0.0",
+  "description": "PHP expert agent based on 'PHP: The Right Way' (April 2026 capture, PHP 8.5): Composer, PDO, UTF-8, DI/SOLID, errors and exceptions, passwords, data filtering, testing, servers, OPcache and PHPDoc. States what the book does not cover (strict_types, Throwable, CSRF, what is new in PHP 8.x) and labels it as extrapolation.",
+  "license": "MIT",
+  "author": {
+    "name": "php-expert package"
+  }
+}

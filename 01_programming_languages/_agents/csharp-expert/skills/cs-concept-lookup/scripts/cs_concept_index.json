@@ -1,0 +1,690 @@
+{
+  "source": {
+    "sigla": "CSYB",
+    "title": "C# Programming Yellow Book, Rob Miles, 'Cheese' Edition 8.1 (Dec/2019)",
+    "pdf_pages": 217,
+    "page_convention": "PDF pages; printed = PDF - 5"
+  },
+  "sections": [
+    {
+      "id": "1.1-1.2",
+      "title": "Computers; Programs and Programming",
+      "pages": "7-13",
+      "keywords": [
+        "especificacao",
+        "specification",
+        "metadata",
+        "metadados",
+        "teste",
+        "dados",
+        "informacao",
+        "programador",
+        "program",
+        "programmer",
+        "data",
+        "information",
+        "test"
+      ],
+      "summary": "Computer, data vs information, what programming is; specification (FDS) before code; metadata; proving that it works."
+    },
+    {
+      "id": "1.3",
+      "title": "Programming Languages",
+      "pages": "14",
+      "keywords": [
+        "linguagem",
+        "language"
+      ],
+      "summary": "Languages reduce ambiguity compared with English; the language is not the most important thing."
+    },
+    {
+      "id": "1.4",
+      "title": "C#",
+      "pages": "15-18",
+      "keywords": [
+        "gerenciado",
+        "managed",
+        "compilado",
+        "compilador",
+        "visual studio",
+        "origem",
+        "c#",
+        "perigoso",
+        "compiled",
+        "compiler",
+        "origin",
+        "dangerous"
+      ],
+      "summary": "C# looks like C++/Java; managed vs unmanaged code; compiled language; Visual Studio and the .NET Framework of the time; the source file and what it contains."
+    },
+    {
+      "id": "2.1",
+      "title": "A First C# Program",
+      "pages": "19-26",
+      "keywords": [
+        "main",
+        "class",
+        "static",
+        "void",
+        "using system",
+        "console",
+        "readline",
+        "parse",
+        "namespace",
+        "programa",
+        "hello",
+        "program"
+      ],
+      "summary": "GlazerCalc program: using System, class, static void Main (only one), Console.ReadLine, double.Parse, string concatenation; layout does not matter to the compiler."
+    },
+    {
+      "id": "2.2",
+      "title": "Manipulating Data",
+      "pages": "27-38",
+      "keywords": [
+        "int",
+        "float",
+        "double",
+        "decimal",
+        "char",
+        "string",
+        "bool",
+        "tipos",
+        "cast",
+        "widening",
+        "narrowing",
+        "literal",
+        "escape",
+        "verbatim",
+        "identificador",
+        "operador",
+        "divisao",
+        "precisao",
+        "types",
+        "identifier",
+        "operator",
+        "division",
+        "precision"
+      ],
+      "summary": "Table of integer types, float/double/decimal, char and string (escapes, @), bool, identifiers, assignment, expressions, widening/narrowing, cast, integer division."
+    },
+    {
+      "id": "2.3",
+      "title": "Writing a Program",
+      "pages": "38-52",
+      "keywords": [
+        "if",
+        "else",
+        "while",
+        "do",
+        "for",
+        "break",
+        "continue",
+        "const",
+        "comentario",
+        "operador relacional",
+        "float ==",
+        "comparar",
+        "&&",
+        "||",
+        "++",
+        "formatacao",
+        "placeholder",
+        "comment",
+        "relational",
+        "operator",
+        "compare",
+        "formatting"
+      ],
+      "summary": "Comments, if/else, relational and logical operators (== with float is not meaningful), const, do-while/while/for, break/continue, ++ and +=, formatting {0:0.00}."
+    },
+    {
+      "id": "3.1",
+      "title": "Methods",
+      "pages": "53-63",
+      "keywords": [
+        "metodo",
+        "parametro",
+        "argumento",
+        "return",
+        "ref",
+        "out",
+        "valor",
+        "referencia",
+        "nomeado",
+        "opcional",
+        "named",
+        "optional",
+        "method",
+        "parameter",
+        "argument",
+        "value",
+        "reference"
+      ],
+      "summary": "Methods, parameters vs arguments, return, named/optional arguments, pass by value, ref and out, method libraries."
+    },
+    {
+      "id": "3.2",
+      "title": "Variables and Scope",
+      "pages": "63-66",
+      "keywords": [
+        "escopo",
+        "scope",
+        "bloco",
+        "local",
+        "membro",
+        "static",
+        "const",
+        "block",
+        "member"
+      ],
+      "summary": "Block scope, nested blocks may not repeat names, for-loop variable, class members; static is different from const."
+    },
+    {
+      "id": "3.3",
+      "title": "Arrays",
+      "pages": "66-71",
+      "keywords": [
+        "array",
+        "vetor",
+        "indice",
+        "subscript",
+        "matriz",
+        "limites",
+        "2d",
+        "index",
+        "matrix",
+        "bounds"
+      ],
+      "summary": "new int[n], zeroed elements, zero-based index, going outside the array crashes the program, const for the size, 2D/3D arrays, initializers."
+    },
+    {
+      "id": "3.4",
+      "title": "Exceptions and Errors",
+      "pages": "71-75",
+      "keywords": [
+        "excecao",
+        "exception",
+        "try",
+        "catch",
+        "finally",
+        "throw",
+        "formatexception",
+        "parse",
+        "message"
+      ],
+      "summary": "Parse throws an exception; try/catch; Exception.Message; nesting; 'do not catch everything'; finally; throw new Exception; exception etiquette."
+    },
+    {
+      "id": "3.5",
+      "title": "The Switch Construction",
+      "pages": "75-78",
+      "keywords": [
+        "switch",
+        "case",
+        "default",
+        "break"
+      ],
+      "summary": "switch with numbers and strings, default, several cases sharing one block, ToUpper/ToLower for commands."
+    },
+    {
+      "id": "3.6",
+      "title": "Using Files",
+      "pages": "78-83",
+      "keywords": [
+        "arquivo",
+        "file",
+        "stream",
+        "streamwriter",
+        "streamreader",
+        "close",
+        "system.io",
+        "caminho",
+        "endofstream",
+        "path"
+      ],
+      "summary": "Streams, StreamWriter (replaces an existing file), Close is mandatory, System.IO, StreamReader/EndOfStream, paths with @."
+    },
+    {
+      "id": "4.1-4.2",
+      "title": "Case Study: Friendly Bank; Enumerated Types",
+      "pages": "84-86",
+      "keywords": [
+        "banco",
+        "bank",
+        "enum",
+        "enumeracao",
+        "estado",
+        "enumeration",
+        "state"
+      ],
+      "summary": "Bank case study; enum creates a type with named values; use enumerated types."
+    },
+    {
+      "id": "4.3",
+      "title": "Structures",
+      "pages": "87-91",
+      "keywords": [
+        "struct",
+        "estrutura",
+        "valor",
+        "copia",
+        "campo",
+        "registro",
+        "structure",
+        "copy",
+        "field",
+        "record"
+      ],
+      "summary": "struct groups fields; assignment copies values; unassigned local fields cause an error; passed by value."
+    },
+    {
+      "id": "4.4",
+      "title": "Objects, Structures and References",
+      "pages": "91-98",
+      "keywords": [
+        "objeto",
+        "referencia",
+        "reference",
+        "new",
+        "garbage",
+        "gc",
+        "null",
+        "classe",
+        "heap",
+        "object",
+        "class"
+      ],
+      "summary": "Structs by value vs objects by reference; new; several references to the same object; Garbage Collector; why references exist."
+    },
+    {
+      "id": "4.5",
+      "title": "Designing With Objects",
+      "pages": "98-104",
+      "keywords": [
+        "encapsulamento",
+        "private",
+        "public",
+        "teste",
+        "tdd",
+        "acessor",
+        "convencao",
+        "design",
+        "encapsulation",
+        "accessor",
+        "convention"
+      ],
+      "summary": "Encapsulation (private/public), naming convention, accessor, tests and TDD."
+    },
+    {
+      "id": "4.6",
+      "title": "Static Items",
+      "pages": "104-107",
+      "keywords": [
+        "static",
+        "estatico",
+        "juros",
+        "biblioteca",
+        "interest",
+        "library"
+      ],
+      "summary": "static belongs to the class; static does not mean constant; private static data; a static method cannot use instance members."
+    },
+    {
+      "id": "4.7",
+      "title": "The Construction of Objects",
+      "pages": "107-114",
+      "keywords": [
+        "construtor",
+        "constructor",
+        "this",
+        "sobrecarga",
+        "overload",
+        "default constructor",
+        "overloading"
+      ],
+      "summary": "Default constructor, own constructor, overloading, this(...), a constructor does not fail (it throws an exception)."
+    },
+    {
+      "id": "4.8",
+      "title": "From Object to Component (Interfaces)",
+      "pages": "114-121",
+      "keywords": [
+        "interface",
+        "componente",
+        "iaccount",
+        "implementar",
+        "multiplas interfaces",
+        "component",
+        "implement",
+        "multiple",
+        "interfaces"
+      ],
+      "summary": "Interface = set of methods; name starts with I; implementing; reference through an interface; several interfaces; interfaces are promises."
+    },
+    {
+      "id": "4.9",
+      "title": "Inheritance",
+      "pages": "121-131",
+      "keywords": [
+        "heranca",
+        "inheritance",
+        "override",
+        "virtual",
+        "base",
+        "protected",
+        "new",
+        "sealed",
+        "abstract",
+        "abstrata",
+        "polimorfismo",
+        "polymorphism"
+      ],
+      "summary": "Inheritance (:), override/virtual, protected, base, new (do not replace methods), sealed, constructors in hierarchies, abstract vs interface."
+    },
+    {
+      "id": "4.10",
+      "title": "Object Etiquette",
+      "pages": "131-136",
+      "keywords": [
+        "object",
+        "tostring",
+        "equals",
+        "this",
+        "igualdade",
+        "equality"
+      ],
+      "summary": "Everything inherits from object; ToString is virtual; == compares references, Equals compares content; this as a reference."
+    },
+    {
+      "id": "4.11",
+      "title": "The power of strings and chars",
+      "pages": "136-138",
+      "keywords": [
+        "string",
+        "imutavel",
+        "immutable",
+        "substring",
+        "trim",
+        "toupper",
+        "stringbuilder",
+        "char"
+      ],
+      "summary": "string is immutable; == compares text; Substring, Length, ToUpper, Trim, char methods, StringBuilder."
+    },
+    {
+      "id": "4.12",
+      "title": "Properties (and delegates)",
+      "pages": "138-145",
+      "keywords": [
+        "propriedade",
+        "property",
+        "get",
+        "set",
+        "value",
+        "delegate",
+        "evento",
+        "event"
+      ],
+      "summary": "Properties get/set/value, read-only, in interfaces, problems; delegates (type-safe) and events."
+    },
+    {
+      "id": "4.13",
+      "title": "Building a Bank (hash table)",
+      "pages": "145-148",
+      "keywords": [
+        "hashtable",
+        "hash",
+        "tabela hash",
+        "busca",
+        "table",
+        "search"
+      ],
+      "summary": "Storing accounts in an array, sequential search, hash table, Hashtable with 'as'."
+    },
+    {
+      "id": "5.1",
+      "title": "Generics and Collections",
+      "pages": "149-153",
+      "keywords": [
+        "generico",
+        "generics",
+        "arraylist",
+        "list",
+        "dictionary",
+        "colecao",
+        "collection",
+        "typesafe",
+        "keynotfound",
+        "generic"
+      ],
+      "summary": "ArrayList (object, cast, not typesafe), List<T>, Dictionary<TKey,TValue>; prefer List and Dictionary."
+    },
+    {
+      "id": "5.2",
+      "title": "Storing Business Objects",
+      "pages": "154-165",
+      "keywords": [
+        "salvar",
+        "carregar",
+        "save",
+        "load",
+        "factory",
+        "persistencia",
+        "business object",
+        "persistence"
+      ],
+      "summary": "Save/Load with try/catch/finally and Close, streams as parameters, factory with GetType().Name."
+    },
+    {
+      "id": "5.3",
+      "title": "Business Objects and Editing",
+      "pages": "165-172",
+      "keywords": [
+        "validacao",
+        "validate",
+        "editor",
+        "interface de usuario",
+        "business object",
+        "validation",
+        "user",
+        "interface"
+      ],
+      "summary": "A business object validates its own data; the UI uses that validation; text menus; numbers instead of messages."
+    },
+    {
+      "id": "5.4",
+      "title": "Threads and Threading",
+      "pages": "172-181",
+      "keywords": [
+        "thread",
+        "threads",
+        "monitor",
+        "mutex",
+        "exclusao mutua",
+        "sincronizacao",
+        "deadly embrace",
+        "join",
+        "sleep",
+        "processo",
+        "concorrencia",
+        "mutual",
+        "exclusion",
+        "synchronization",
+        "process",
+        "concurrency",
+        "deadlock"
+      ],
+      "summary": "Thread, ThreadStart, Start, lost update on a shared counter, Monitor.Enter/Exit, deadly embrace, Sleep/Join/Abort, processes."
+    },
+    {
+      "id": "5.5",
+      "title": "Structured Error Handling",
+      "pages": "181-183",
+      "keywords": [
+        "excecao propria",
+        "custom exception",
+        "bankexception",
+        "throw",
+        "multiplos catch",
+        "custom",
+        "exception",
+        "multiple",
+        "catch"
+      ],
+      "summary": "Base Exception, custom exception types, throw, several catch blocks (System.Exception last), handlers need testing."
+    },
+    {
+      "id": "5.6",
+      "title": "Program Organisation",
+      "pages": "183-189",
+      "keywords": [
+        "biblioteca",
+        "dll",
+        "namespace",
+        "csc",
+        "reference",
+        "using",
+        "qualificado",
+        "library",
+        "qualified"
+      ],
+      "summary": "Several source files, csc /target:library, /reference, DLL hell, namespaces and qualified names."
+    },
+    {
+      "id": "5.7",
+      "title": "A Graphical User Interface (WPF/XAML)",
+      "pages": "189-200",
+      "keywords": [
+        "wpf",
+        "xaml",
+        "interface grafica",
+        "gui",
+        "evento",
+        "click",
+        "silverlight",
+        "graphical",
+        "user",
+        "interface"
+      ],
+      "summary": "WPF/XAML (dated): elements, properties, events with delegates (+= / -=), error handling with MessageBox."
+    },
+    {
+      "id": "5.8",
+      "title": "Debugging",
+      "pages": "200-203",
+      "keywords": [
+        "depuracao",
+        "debug",
+        "bug",
+        "falha",
+        "defeito",
+        "pato",
+        "teste automatico",
+        "debugging",
+        "fault",
+        "defect",
+        "duck",
+        "automated",
+        "test"
+      ],
+      "summary": "Fault report, two kinds of fault, 'bugswatting', tips, fixes cause bugs, there is no perfect software."
+    },
+    {
+      "id": "5.9",
+      "title": "The End?",
+      "pages": "203",
+      "keywords": [
+        "leitura",
+        "serializacao",
+        "reflexao",
+        "atributos",
+        "rede",
+        "reading",
+        "serialization",
+        "reflection",
+        "attributes",
+        "network"
+      ],
+      "summary": "What was left out: serialization, attributes, reflection, networking; continuous development."
+    },
+    {
+      "id": "6",
+      "title": "Glossary of Terms",
+      "pages": "204-213",
+      "keywords": [
+        "glossario",
+        "definicao",
+        "glossary",
+        "definition"
+      ],
+      "summary": "Entries from Abstract to Virtual Method."
+    }
+  ],
+  "not_in_book": [
+    {
+      "term": "CIL / CLR / JIT / Roslyn",
+      "note": "absent; the book only says the compiler converts to low-level instructions (p.16)"
+    },
+    {
+      "term": "stack / heap / pilha",
+      "note": "absent; only 'stack overflow' under debugging (p.201)"
+    },
+    {
+      "term": "boxing / unboxing",
+      "note": "absent; the book talks about casts and ArrayList typing (p.150-152)"
+    },
+    {
+      "term": "using / IDisposable / Dispose",
+      "note": "absent; the book uses Close() and try/finally (p.80, 156, 158)"
+    },
+    {
+      "term": "throw; / throw ex",
+      "note": "absent; the book only shows throw new (p.75, 182)"
+    },
+    {
+      "term": "lock",
+      "note": "absent; the book uses Monitor.Enter/Exit (p.178). 'Lock' appears only in CS13 p.2"
+    },
+    {
+      "term": "GetHashCode",
+      "note": "absent; object etiquette covers ToString and Equals (p.132-134)"
+    },
+    {
+      "term": "TryParse",
+      "note": "absent; the book uses try/catch around Parse (p.72)"
+    },
+    {
+      "term": "checked / unchecked / overflow",
+      "note": "absent; only a warning that the value may 'wrap round' (p.28)"
+    },
+    {
+      "term": "Math.Abs / epsilon / IEEE 754",
+      "note": "absent; the book says to subtract and check whether the difference is small (p.41)"
+    },
+    {
+      "term": "NullReferenceException / IndexOutOfRangeException / DivideByZeroException / InvalidCastException",
+      "note": "names absent; only FormatException (p.72) and KeyNotFoundException (p.153)"
+    },
+    {
+      "term": "internal",
+      "note": "absent"
+    },
+    {
+      "term": "vtable",
+      "note": "absent; the glossary only says virtual slows things down a little (p.213)"
+    },
+    {
+      "term": "linq / lambda / async / await / var",
+      "note": "absent from CSYB; see cs_version_lookup.py for the versions (CSHist)"
+    },
+    {
+      "term": "record / nullable / pattern matching",
+      "note": "absent from CSYB (2019, C# 8 and earlier); see cs_version_lookup.py"
+    },
+    {
+      "term": "ASP.NET / Entity Framework / Blazor / MAUI / Docker",
+      "note": "out of scope"
+    }
+  ]
+}

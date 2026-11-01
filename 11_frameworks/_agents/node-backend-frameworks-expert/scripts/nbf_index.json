@@ -1,0 +1,1852 @@
+{
+ "version": 1,
+ "sources": {
+  "NODEHB": {
+   "file": "Node-Handbook-freeCodeCamp",
+   "pdf_pages": 200,
+   "date": "2018-09-06",
+   "note": "Node 10; npm 5; [DATED]"
+  },
+  "EXPHB": {
+   "file": "Express-Handbook-freeCodeCamp",
+   "pdf_pages": 38,
+   "date": "2022-11-18",
+   "note": "Express version not declared"
+  },
+  "FSTF": {
+   "file": "Fastify-Getting-Started",
+   "pdf_pages": 14,
+   "date": null,
+   "note": "Version: latest (v5.12.x) on p.1; no date"
+  },
+  "NEST": {
+   "file": "NestJS-First-Steps",
+   "pdf_pages": 10,
+   "date": null,
+   "note": "Copyright 2017-2026 (p.7); Node >= 20 (p.2); pages 1 and 8-10 empty"
+  }
+ },
+ "topics": [
+  {
+   "id": "node-visao",
+   "src": "NODEHB",
+   "pages": [
+    2,
+    5
+   ],
+   "title": "What Node.js is",
+   "kw": [
+    "node",
+    "runtime",
+    "v8",
+    "single thread",
+    "thread",
+    "nao bloqueante",
+    "non-blocking",
+    "io",
+    "http.createserver",
+    "hello world",
+    "non blocking"
+   ],
+   "summary": "Server-side JavaScript runtime on top of V8, single process with no thread per request, asynchronous I/O; example server using the http module.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-frameworks",
+   "src": "NODEHB",
+   "pages": [
+    5,
+    6
+   ],
+   "title": "Frameworks and tools mentioned",
+   "kw": [
+    "express",
+    "meteor",
+    "koa",
+    "next.js",
+    "micro",
+    "socket.io",
+    "frameworks"
+   ],
+   "summary": "Author's short list (2018): Express, Meteor, Koa, Next.js, Micro, Socket.io.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-historia",
+   "src": "NODEHB",
+   "pages": [
+    7,
+    10
+   ],
+   "title": "Node.js history 2009-2018",
+   "kw": [
+    "historia",
+    "history",
+    "io.js",
+    "npm 1.0",
+    "leftpad",
+    "yarn",
+    "node 4",
+    "node 6",
+    "node 8",
+    "node 10",
+    "mjs",
+    "2009"
+   ],
+   "summary": "Timeline from 2009 to 2018 (Node 10, experimental ES modules .mjs).",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-instalar",
+   "src": "NODEHB",
+   "pages": [
+    10,
+    11
+   ],
+   "title": "How to install Node.js",
+   "kw": [
+    "instalar",
+    "install",
+    "homebrew",
+    "brew",
+    "nvm",
+    "instalador",
+    "installer"
+   ],
+   "summary": "Installation via the official package, a package manager (Homebrew) or nvm.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-js-prereq",
+   "src": "NODEHB",
+   "pages": [
+    11,
+    12
+   ],
+   "title": "How much JavaScript you need",
+   "kw": [
+    "javascript",
+    "pre-requisito",
+    "closures",
+    "promises",
+    "event loop",
+    "strict mode",
+    "prerequisite"
+   ],
+   "summary": "List of JS concepts recommended before learning Node.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-vs-browser",
+   "src": "NODEHB",
+   "pages": [
+    12,
+    14
+   ],
+   "title": "Node.js versus the browser",
+   "kw": [
+    "browser",
+    "navegador",
+    "dom",
+    "window",
+    "document",
+    "commonjs",
+    "require",
+    "import",
+    "babel",
+    "es modules"
+   ],
+   "summary": "No DOM in Node; you control the version; CommonJS (require) in Node and import in the browser in 2018.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-v8",
+   "src": "NODEHB",
+   "pages": [
+    14,
+    16
+   ],
+   "title": "The V8 engine",
+   "kw": [
+    "v8",
+    "jit",
+    "spidermonkey",
+    "chakra",
+    "javascriptcore",
+    "electron",
+    "compilacao",
+    "compilation"
+   ],
+   "summary": "V8 compiles JS with JIT; other engines exist; V8 also powers Electron.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-sair",
+   "src": "NODEHB",
+   "pages": [
+    16,
+    19
+   ],
+   "title": "Exiting a Node program",
+   "kw": [
+    "process.exit",
+    "exitcode",
+    "sigterm",
+    "sigkill",
+    "signal",
+    "server.close",
+    "encerrar",
+    "graceful",
+    "exit",
+    "shutdown"
+   ],
+   "summary": "process.exit ends immediately; process.exitCode; SIGTERM with server.close for graceful exit.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-env",
+   "src": "NODEHB",
+   "pages": [
+    20,
+    21
+   ],
+   "title": "Environment variables",
+   "kw": [
+    "process.env",
+    "node_env",
+    "dotenv",
+    ".env",
+    "gitignore",
+    "api_key"
+   ],
+   "summary": "process.env, NODE_ENV, .env file with dotenv and .gitignore.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-hospedagem",
+   "src": "NODEHB",
+   "pages": [
+    21,
+    25
+   ],
+   "title": "Where to host a Node app",
+   "kw": [
+    "hospedagem",
+    "hosting",
+    "ngrok",
+    "glitch",
+    "serverless",
+    "paas",
+    "heroku",
+    "azure",
+    "vps",
+    "bare metal",
+    "localtunnel"
+   ],
+   "summary": "Options from simplest to most complex: local tunnel, zero-config, serverless, PaaS, VPS, bare metal (2018 list).",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-repl",
+   "src": "NODEHB",
+   "pages": [
+    25,
+    30
+   ],
+   "title": "The Node REPL",
+   "kw": [
+    "repl",
+    "dot commands",
+    ".editor",
+    ".break",
+    ".clear",
+    ".load",
+    ".save",
+    ".exit",
+    "tab",
+    "autocomplete"
+   ],
+   "summary": "REPL, tab autocomplete, the _ variable, dot commands.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-argv",
+   "src": "NODEHB",
+   "pages": [
+    30,
+    32
+   ],
+   "title": "Command-line arguments",
+   "kw": [
+    "argv",
+    "process.argv",
+    "minimist",
+    "args",
+    "linha de comando",
+    "command line"
+   ],
+   "summary": "process.argv, slice(2), minimist for key=value pairs.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-console",
+   "src": "NODEHB",
+   "pages": [
+    32,
+    38
+   ],
+   "title": "Console output",
+   "kw": [
+    "console.log",
+    "console.error",
+    "console.count",
+    "console.trace",
+    "console.time",
+    "stdout",
+    "stderr",
+    "chalk",
+    "progress",
+    "format specifier"
+   ],
+   "summary": "console.* (log, clear, count, trace, time/timeEnd, error), colors with escape codes or chalk, progress bar.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-readline",
+   "src": "NODEHB",
+   "pages": [
+    38,
+    40
+   ],
+   "title": "Interactive input",
+   "kw": [
+    "readline",
+    "inquirer",
+    "readline-sync",
+    "password",
+    "stdin",
+    "question"
+   ],
+   "summary": "readline (since v7), readline-sync and Inquirer.js.",
+   "ref": "01-node-runtime.md"
+  },
+  {
+   "id": "node-exports",
+   "src": "NODEHB",
+   "pages": [
+    40,
+    43
+   ],
+   "title": "module.exports and exports",
+   "kw": [
+    "module.exports",
+    "exports",
+    "require",
+    "modulo",
+    "commonjs",
+    "module"
+   ],
+   "summary": "Two ways to expose functionality and the difference between module.exports and exports.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-basico",
+   "src": "NODEHB",
+   "pages": [
+    43,
+    46
+   ],
+   "title": "npm: install, update, run tasks",
+   "kw": [
+    "npm",
+    "npm install",
+    "--save",
+    "--save-dev",
+    "npm update",
+    "npm run",
+    "scripts",
+    "registry",
+    "package.json"
+   ],
+   "summary": "npm install/update, dependencies vs devDependencies, npm run <task>.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-local-global",
+   "src": "NODEHB",
+   "pages": [
+    46,
+    48
+   ],
+   "title": "Where npm installs",
+   "kw": [
+    "node_modules",
+    "global",
+    "-g",
+    "npm root -g",
+    "local install"
+   ],
+   "summary": "Local install in node_modules and global with -g; npm root -g.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npx-bin",
+   "src": "NODEHB",
+   "pages": [
+    48,
+    49
+   ],
+   "title": "Running an installed package (.bin, npx)",
+   "kw": [
+    "npx",
+    ".bin",
+    "cowsay",
+    "executavel",
+    "executable"
+   ],
+   "summary": "Executables live in node_modules/.bin; npx (npm >= 5.2) locates them.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "package-json",
+   "src": "NODEHB",
+   "pages": [
+    49,
+    63
+   ],
+   "title": "package.json guide",
+   "kw": [
+    "package.json",
+    "name",
+    "version",
+    "description",
+    "main",
+    "private",
+    "scripts",
+    "dependencies",
+    "devdependencies",
+    "engines",
+    "browserslist",
+    "license",
+    "keywords",
+    "repository",
+    "bugs",
+    "homepage",
+    "author",
+    "contributors"
+   ],
+   "summary": "Project manifest: fields and rules (name < 214 characters, lowercase, no spaces), engines, browserslist.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "semver-ranges",
+   "src": "NODEHB",
+   "pages": [
+    63,
+    64
+   ],
+   "title": "Version symbols (~ ^ * etc.)",
+   "kw": [
+    "~",
+    "^",
+    "semver",
+    "range",
+    "latest",
+    "versao",
+    "*",
+    ">=",
+    "<=",
+    "version"
+   ],
+   "summary": "~ patch only, ^ patch and minor, * anything, comparators and ranges.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "package-lock",
+   "src": "NODEHB",
+   "pages": [
+    64,
+    69
+   ],
+   "title": "package-lock.json",
+   "kw": [
+    "package-lock",
+    "lockfileversion",
+    "integrity",
+    "resolved",
+    "reproduzivel",
+    "lock",
+    "reproducible"
+   ],
+   "summary": "Lockfile introduced in npm 5: pins exact versions; must be committed.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-list-view",
+   "src": "NODEHB",
+   "pages": [
+    69,
+    72
+   ],
+   "title": "Viewing and installing specific versions",
+   "kw": [
+    "npm list",
+    "--depth=0",
+    "npm view",
+    "versions",
+    "pacote@versao",
+    "older version"
+   ],
+   "summary": "npm list, npm view <pkg> version(s), npm install pkg@version.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-atualizar",
+   "src": "NODEHB",
+   "pages": [
+    72,
+    75
+   ],
+   "title": "Updating dependencies",
+   "kw": [
+    "npm update",
+    "npm outdated",
+    "npm-check-updates",
+    "ncu",
+    "major"
+   ],
+   "summary": "npm update respects the range; major requires npm-check-updates (ncu -u).",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "semver-regras",
+   "src": "NODEHB",
+   "pages": [
+    76,
+    78
+   ],
+   "title": "Semantic Versioning in npm",
+   "kw": [
+    "semver",
+    "major",
+    "minor",
+    "patch",
+    "x.y.z",
+    "breaking"
+   ],
+   "summary": "Meaning of major/minor/patch and range operators.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-uninstall",
+   "src": "NODEHB",
+   "pages": [
+    78,
+    79
+   ],
+   "title": "Uninstalling packages",
+   "kw": [
+    "npm uninstall",
+    "-D",
+    "-g",
+    "remover pacote",
+    "remove package"
+   ],
+   "summary": "npm uninstall, with -D for dev and -g for global.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-global-vs-local",
+   "src": "NODEHB",
+   "pages": [
+    79,
+    81
+   ],
+   "title": "Global or local package",
+   "kw": [
+    "global",
+    "local",
+    "create-react-app",
+    "nodemon",
+    "mocha",
+    "forever",
+    "vue-cli"
+   ],
+   "summary": "General rule: install locally; global only for reusable CLIs.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npm-deps-devdeps",
+   "src": "NODEHB",
+   "pages": [
+    81,
+    82
+   ],
+   "title": "dependencies versus devDependencies",
+   "kw": [
+    "--production",
+    "devdependencies",
+    "dependencies",
+    "-d",
+    "producao",
+    "production"
+   ],
+   "summary": "Dev dependencies are not needed in production; --production flag.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "npx",
+   "src": "NODEHB",
+   "pages": [
+    82,
+    85
+   ],
+   "title": "npx",
+   "kw": [
+    "npx",
+    "versao do node",
+    "node@6",
+    "gist",
+    "executar sem instalar",
+    "@version",
+    "node version",
+    "run without installing"
+   ],
+   "summary": "Run commands without installing, pick a version (@), run code from a URL with caution.",
+   "ref": "02-modulos-npm-semver.md"
+  },
+  {
+   "id": "event-loop",
+   "src": "NODEHB",
+   "pages": [
+    85,
+    98
+   ],
+   "title": "Event loop",
+   "kw": [
+    "event loop",
+    "call stack",
+    "message queue",
+    "job queue",
+    "bloquear",
+    "blocking",
+    "single thread",
+    "fila",
+    "pilha",
+    "block",
+    "queue",
+    "stack"
+   ],
+   "summary": "Single-threaded JS code; LIFO call stack, message queue and job queue (promises).",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "nexttick-immediate",
+   "src": "NODEHB",
+   "pages": [
+    99,
+    100
+   ],
+   "title": "process.nextTick and setImmediate",
+   "kw": [
+    "nexttick",
+    "setimmediate",
+    "tick",
+    "proxima iteracao",
+    "next iteration"
+   ],
+   "summary": "nextTick runs at the end of the current operation; setImmediate on the next iteration.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "timers",
+   "src": "NODEHB",
+   "pages": [
+    100,
+    105
+   ],
+   "title": "Timers",
+   "kw": [
+    "settimeout",
+    "setinterval",
+    "cleartimeout",
+    "clearinterval",
+    "zero delay",
+    "recursive settimeout",
+    "timers"
+   ],
+   "summary": "setTimeout, zero delay, setInterval and recursive setTimeout to avoid overlap.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "callbacks",
+   "src": "NODEHB",
+   "pages": [
+    105,
+    110
+   ],
+   "title": "Asynchronous programming and callbacks",
+   "kw": [
+    "callback",
+    "error-first",
+    "err",
+    "assincrono",
+    "async",
+    "callback hell",
+    "aninhamento",
+    "asynchronous",
+    "nesting"
+   ],
+   "summary": "JS is synchronous by default and single-threaded; error-first callbacks; nesting.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "promises",
+   "src": "NODEHB",
+   "pages": [
+    110,
+    118
+   ],
+   "title": "Promises",
+   "kw": [
+    "promise",
+    "then",
+    "catch",
+    "resolve",
+    "reject",
+    "promise.all",
+    "promise.race",
+    "chain",
+    "fetch",
+    "new promise"
+   ],
+   "summary": "States, then/catch, chaining, cascading errors, all/race, the forgotten-new error.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "async-await",
+   "src": "NODEHB",
+   "pages": [
+    118,
+    123
+   ],
+   "title": "Async/await",
+   "kw": [
+    "async",
+    "await",
+    "async function",
+    "es2017",
+    "retorna promise",
+    "returns promise"
+   ],
+   "summary": "Syntax on top of promises; an async function returns a promise; simpler debugging.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "eventemitter-intro",
+   "src": "NODEHB",
+   "pages": [
+    123,
+    125
+   ],
+   "title": "EventEmitter (introduction)",
+   "kw": [
+    "eventemitter",
+    "emit",
+    "on",
+    "once",
+    "off",
+    "events",
+    "addlistener"
+   ],
+   "summary": "events.EventEmitter: on/emit, arguments, once/off/removeAllListeners.",
+   "ref": "03-event-loop-e-assincronia.md"
+  },
+  {
+   "id": "http-como-funciona",
+   "src": "NODEHB",
+   "pages": [
+    126,
+    133
+   ],
+   "title": "How HTTP requests work",
+   "kw": [
+    "http",
+    "dns",
+    "tcp",
+    "request line",
+    "header",
+    "status code",
+    "get",
+    "post",
+    "host",
+    "connection"
+   ],
+   "summary": "DNS, TCP, request line, headers, body, response and status codes (HTTP/1.1).",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "http-server",
+   "src": "NODEHB",
+   "pages": [
+    133,
+    135
+   ],
+   "title": "HTTP server with Node",
+   "kw": [
+    "http.createserver",
+    "statuscode",
+    "setheader",
+    "res.end",
+    "listen"
+   ],
+   "summary": "Hello World with http.createServer and request/response objects.",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "http-client",
+   "src": "NODEHB",
+   "pages": [
+    135,
+    137
+   ],
+   "title": "HTTP requests with https.request",
+   "kw": [
+    "https.request",
+    "https",
+    "post",
+    "put",
+    "delete",
+    "content-length",
+    "req.write"
+   ],
+   "summary": "GET and POST with the https module; PUT/DELETE change options.method.",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "axios",
+   "src": "NODEHB",
+   "pages": [
+    137,
+    142
+   ],
+   "title": "Axios",
+   "kw": [
+    "axios",
+    "fetch",
+    "axios.get",
+    "axios.post",
+    "params",
+    "promise-based"
+   ],
+   "summary": "HTTP request library; advantages over Fetch listed by the author (2018).",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "websockets",
+   "src": "NODEHB",
+   "pages": [
+    142,
+    146
+   ],
+   "title": "WebSockets",
+   "kw": [
+    "websocket",
+    "wss",
+    "ws",
+    "onmessage",
+    "onopen",
+    "tempo real",
+    "real-time",
+    "8080"
+   ],
+   "summary": "Bidirectional channel; use wss://; server with the ws library.",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "fs-descritores",
+   "src": "NODEHB",
+   "pages": [
+    146,
+    147
+   ],
+   "title": "File descriptors",
+   "kw": [
+    "fs.open",
+    "file descriptor",
+    "fd",
+    "flags",
+    "r+",
+    "w+",
+    "a+"
+   ],
+   "summary": "fs.open/openSync and flags r, r+, w+, a, a+.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "fs-stat",
+   "src": "NODEHB",
+   "pages": [
+    147,
+    149
+   ],
+   "title": "File statistics",
+   "kw": [
+    "fs.stat",
+    "isfile",
+    "isdirectory",
+    "issymboliclink",
+    "size",
+    "stats"
+   ],
+   "summary": "fs.stat with isFile/isDirectory/size; the sync version blocks the thread.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "path",
+   "src": "NODEHB",
+   "pages": [
+    149,
+    152
+   ],
+   "title": "File paths (path)",
+   "kw": [
+    "path",
+    "dirname",
+    "basename",
+    "extname",
+    "join",
+    "resolve",
+    "normalize"
+   ],
+   "summary": "Extract parts and compose paths; resolve/normalize do not check existence.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "fs-ler-escrever",
+   "src": "NODEHB",
+   "pages": [
+    152,
+    155
+   ],
+   "title": "Reading and writing files",
+   "kw": [
+    "readfile",
+    "readfilesync",
+    "writefile",
+    "appendfile",
+    "utf8",
+    "memoria",
+    "flag",
+    "memory"
+   ],
+   "summary": "readFile/writeFile/appendFile; readFile loads everything into memory.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "fs-pastas",
+   "src": "NODEHB",
+   "pages": [
+    155,
+    159
+   ],
+   "title": "Folders",
+   "kw": [
+    "mkdir",
+    "readdir",
+    "rename",
+    "rmdir",
+    "fs-extra",
+    "remove",
+    "access",
+    "existssync"
+   ],
+   "summary": "Create, list, rename and remove folders; fs-extra to remove with contents.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "fs-modulo",
+   "src": "NODEHB",
+   "pages": [
+    160,
+    163
+   ],
+   "title": "fs module",
+   "kw": [
+    "fs",
+    "sync",
+    "assincrono",
+    "promise api",
+    "experimental",
+    "rename",
+    "asynchronous"
+   ],
+   "summary": "List of fs methods; async by default and Sync suffix; promises API experimental in Node 10.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "path-modulo",
+   "src": "NODEHB",
+   "pages": [
+    163,
+    167
+   ],
+   "title": "path module (reference)",
+   "kw": [
+    "path.sep",
+    "path.delimiter",
+    "path.parse",
+    "path.relative",
+    "isabsolute"
+   ],
+   "summary": "path methods, sep and delimiter.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "os-modulo",
+   "src": "NODEHB",
+   "pages": [
+    167,
+    173
+   ],
+   "title": "os module",
+   "kw": [
+    "os",
+    "os.eol",
+    "cpus",
+    "freemem",
+    "platform",
+    "homedir",
+    "tmpdir",
+    "hostname",
+    "uptime",
+    "networkinterfaces"
+   ],
+   "summary": "Operating system information and constants.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "events-modulo",
+   "src": "NODEHB",
+   "pages": [
+    173,
+    178
+   ],
+   "title": "events module (reference)",
+   "kw": [
+    "emitter",
+    "setmaxlisteners",
+    "prependlistener",
+    "listenercount",
+    "removelistener",
+    "maxlisteners"
+   ],
+   "summary": "EventEmitter methods; default limit of 10 listeners.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "http-modulo",
+   "src": "NODEHB",
+   "pages": [
+    178,
+    185
+   ],
+   "title": "http module (reference)",
+   "kw": [
+    "http.methods",
+    "status_codes",
+    "http.agent",
+    "clientrequest",
+    "serverresponse",
+    "incomingmessage",
+    "writehead",
+    "globalagent"
+   ],
+   "summary": "Properties, methods and 5 classes of the http module.",
+   "ref": "04-http-websockets-rede.md"
+  },
+  {
+   "id": "streams",
+   "src": "NODEHB",
+   "pages": [
+    185,
+    192
+   ],
+   "title": "Streams",
+   "kw": [
+    "stream",
+    "pipe",
+    "readable",
+    "writable",
+    "duplex",
+    "transform",
+    "createreadstream",
+    "_write",
+    "zlib"
+   ],
+   "summary": "Memory and time; pipe; four types; creating Readable/Writable.",
+   "ref": "05-fs-path-os-events-streams.md"
+  },
+  {
+   "id": "mysql",
+   "src": "NODEHB",
+   "pages": [
+    193,
+    197
+   ],
+   "title": "MySQL with Node",
+   "kw": [
+    "mysql",
+    "createconnection",
+    "query",
+    "insert",
+    "placeholder",
+    "?",
+    "insertid",
+    "escape"
+   ],
+   "summary": "mysql package; queries with ? escape values; INSERT SET ?; connection.end().",
+   "ref": "06-mysql-e-producao.md"
+  },
+  {
+   "id": "dev-vs-prod",
+   "src": "NODEHB",
+   "pages": [
+    197,
+    199
+   ],
+   "title": "Development versus production",
+   "kw": [
+    "node_env",
+    "production",
+    "development",
+    "cache",
+    "app.configure",
+    "errorhandler",
+    "pug"
+   ],
+   "summary": "NODE_ENV=production; view cache in Express; app.configure [DATED].",
+   "ref": "06-mysql-e-producao.md"
+  },
+  {
+   "id": "ex-visao",
+   "src": "EXPHB",
+   "pages": [
+    1,
+    2
+   ],
+   "title": "Express: overview and table of contents",
+   "kw": [
+    "express",
+    "web framework",
+    "node.js",
+    "pre-built packages"
+   ],
+   "summary": "Express as a web framework on top of Node; handbook table of contents.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-instalar-hello",
+   "src": "EXPHB",
+   "pages": [
+    3,
+    5
+   ],
+   "title": "Express: install and Hello World",
+   "kw": [
+    "npm init -y",
+    "npm install express",
+    "app.get",
+    "app.listen",
+    "req",
+    "res",
+    "verbos http",
+    "http verbs"
+   ],
+   "summary": "Installation via npm and a 4-line server; one method per HTTP verb.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-request",
+   "src": "EXPHB",
+   "pages": [
+    6,
+    6
+   ],
+   "title": "Express: Request properties",
+   "kw": [
+    "req.body",
+    "req.params",
+    "req.query",
+    "req.cookies",
+    "req.ip",
+    "req.hostname",
+    "req.xhr",
+    "req.secure"
+   ],
+   "summary": "Table of main req properties (table truncated in the capture).",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-response",
+   "src": "EXPHB",
+   "pages": [
+    7,
+    9
+   ],
+   "title": "Express: responses",
+   "kw": [
+    "res.send",
+    "res.end",
+    "res.status",
+    "res.sendstatus",
+    "res.json",
+    "content-type",
+    "content-length"
+   ],
+   "summary": "send (string -> text/html; object -> JSON), end, status/sendStatus, json.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-cookies",
+   "src": "EXPHB",
+   "pages": [
+    9,
+    10
+   ],
+   "title": "Express: cookies",
+   "kw": [
+    "res.cookie",
+    "httponly",
+    "secure",
+    "samesite",
+    "maxage",
+    "clearcookie",
+    "signed"
+   ],
+   "summary": "res.cookie with options and res.clearCookie.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-headers",
+   "src": "EXPHB",
+   "pages": [
+    10,
+    12
+   ],
+   "title": "Express: headers",
+   "kw": [
+    "req.headers",
+    "req.header",
+    "res.set",
+    "res.type",
+    "content-type"
+   ],
+   "summary": "Read request headers and set response headers (res.set, res.type).",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-redirect",
+   "src": "EXPHB",
+   "pages": [
+    12,
+    13
+   ],
+   "title": "Express: redirects",
+   "kw": [
+    "res.redirect",
+    "301",
+    "302",
+    "back"
+   ],
+   "summary": "res.redirect (302 default; 301 explicit), relative paths and 'back'.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-rotas",
+   "src": "EXPHB",
+   "pages": [
+    13,
+    14
+   ],
+   "title": "Express: routing",
+   "kw": [
+    "rota",
+    "routing",
+    "req.params",
+    "named parameters",
+    "regex",
+    "/uppercase/:thevalue",
+    "route"
+   ],
+   "summary": "Named parameters in req.params and regular-expression routes.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-templates",
+   "src": "EXPHB",
+   "pages": [
+    14,
+    16
+   ],
+   "title": "Express: templates",
+   "kw": [
+    "pug",
+    "jade",
+    "view engine",
+    "res.render",
+    "handlebars",
+    "ejs",
+    "mustache",
+    "template"
+   ],
+   "summary": "Jade default for compatibility; recommends Pug; app.set('view engine') and res.render.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-middleware",
+   "src": "EXPHB",
+   "pages": [
+    17,
+    18
+   ],
+   "title": "Express: middleware",
+   "kw": [
+    "middleware",
+    "next",
+    "app.use",
+    "cookie-parser",
+    "req.locals",
+    "execution stack"
+   ],
+   "summary": "Function (req,res,next); call next(); per-route middleware; cookie-parser.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-static",
+   "src": "EXPHB",
+   "pages": [
+    18,
+    19
+   ],
+   "title": "Express: static files",
+   "kw": [
+    "express.static",
+    "public",
+    "index.html",
+    "static"
+   ],
+   "summary": "app.use(express.static('public')).",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-download",
+   "src": "EXPHB",
+   "pages": [
+    19,
+    20
+   ],
+   "title": "Express: sending files",
+   "kw": [
+    "res.download",
+    "download",
+    "attachment"
+   ],
+   "summary": "res.download with optional name and callback.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-sessions",
+   "src": "EXPHB",
+   "pages": [
+    20,
+    24
+   ],
+   "title": "Express: sessions",
+   "kw": [
+    "express-session",
+    "session",
+    "secret",
+    "redis",
+    "memory",
+    "cookie-session",
+    "req.session"
+   ],
+   "summary": "express-session with secret; in-memory store for dev only; cookie-session discouraged by the author.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-validacao",
+   "src": "EXPHB",
+   "pages": [
+    24,
+    29
+   ],
+   "title": "Express: input validation",
+   "kw": [
+    "express-validator",
+    "check",
+    "validationresult",
+    "withmessage",
+    "custom",
+    "isemail",
+    "422",
+    "validator.js"
+   ],
+   "summary": "express-validator: check(), validationResult, 422, withMessage, custom.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-sanitizacao",
+   "src": "EXPHB",
+   "pages": [
+    29,
+    33
+   ],
+   "title": "Express: sanitization",
+   "kw": [
+    "sanitize",
+    "trim",
+    "escape",
+    "normalizeemail",
+    "customsanitizer",
+    "tobool",
+    "toint",
+    "never trust the input"
+   ],
+   "summary": "Chained sanitization after validation: trim, escape, normalizeEmail, customSanitizer.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-forms",
+   "src": "EXPHB",
+   "pages": [
+    33,
+    34
+   ],
+   "title": "Express: forms",
+   "kw": [
+    "form",
+    "express.urlencoded",
+    "urlencoded",
+    "extended",
+    "post"
+   ],
+   "summary": "HTML form and express.urlencoded.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "ex-upload",
+   "src": "EXPHB",
+   "pages": [
+    34,
+    38
+   ],
+   "title": "Express: file upload",
+   "kw": [
+    "formidable",
+    "multipart/form-data",
+    "enctype",
+    "upload",
+    "incomingform",
+    "filebegin"
+   ],
+   "summary": "formidable for multipart; field/file/error/end events.",
+   "ref": "07-express.md"
+  },
+  {
+   "id": "fs-install-first",
+   "src": "FSTF",
+   "pages": [
+    1,
+    3
+   ],
+   "title": "Fastify: install and first server",
+   "kw": [
+    "fastify",
+    "npm i fastify",
+    "yarn add",
+    "logger",
+    "listen",
+    "type module",
+    "async await",
+    "reply.send"
+   ],
+   "summary": "Installation, server with logger: true, GET route, listen; ESM requires type: module.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-host",
+   "src": "FSTF",
+   "pages": [
+    3,
+    4
+   ],
+   "title": "Fastify: listen host",
+   "kw": [
+    "0.0.0.0",
+    "127.0.0.1",
+    "host",
+    "docker",
+    "localhost",
+    "::1"
+   ],
+   "summary": "By default it listens only on localhost; 0.0.0.0 or :: for containers.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-plugin",
+   "src": "FSTF",
+   "pages": [
+    4,
+    5
+   ],
+   "title": "Fastify: first plugin and register",
+   "kw": [
+    "plugin",
+    "register",
+    "encapsulamento",
+    "routes",
+    "our-first-routes"
+   ],
+   "summary": "Everything is a plugin; register is the only way to add routes and plugins.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-bootstrap",
+   "src": "FSTF",
+   "pages": [
+    5,
+    10
+   ],
+   "title": "Fastify: async bootstrap and load order",
+   "kw": [
+    "fastify-plugin",
+    "@fastify/mongodb",
+    "dbconnector",
+    "decorate",
+    "ordem",
+    "ready",
+    "inject",
+    "order",
+    "mongodb"
+   ],
+   "summary": "register loads in declared order; fastify-plugin exposes decorators/hooks to the parent scope; loading starts at listen/inject/ready.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-estrutura",
+   "src": "FSTF",
+   "pages": [
+    10,
+    10
+   ],
+   "title": "Fastify: recommended load order",
+   "kw": [
+    "plugins",
+    "decorators",
+    "hooks",
+    "services",
+    "encapsulation",
+    "encapsulamento"
+   ],
+   "summary": "Order: ecosystem plugins, your plugins, decorators, hooks, services; repeat per route subset.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-validacao",
+   "src": "FSTF",
+   "pages": [
+    11,
+    11
+   ],
+   "title": "Fastify: validation",
+   "kw": [
+    "json schema",
+    "schema",
+    "body",
+    "querystring",
+    "params",
+    "headers",
+    "validacao",
+    "validation"
+   ],
+   "summary": "Validation via JSON Schema in the route's schema option.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-serializacao",
+   "src": "FSTF",
+   "pages": [
+    12,
+    12
+   ],
+   "title": "Fastify: serialization",
+   "kw": [
+    "serializacao",
+    "response schema",
+    "2-3",
+    "vazamento",
+    "leak",
+    "serialization"
+   ],
+   "summary": "Response schema speeds up serialization (2-3x according to the text) and limits exposed data.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-parse",
+   "src": "FSTF",
+   "pages": [
+    12,
+    13
+   ],
+   "title": "Fastify: payload parsing",
+   "kw": [
+    "application/json",
+    "text/plain",
+    "request.body",
+    "content-type parser"
+   ],
+   "summary": "Native parsing of JSON and text; request.body.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-extend-test",
+   "src": "FSTF",
+   "pages": [
+    13,
+    13
+   ],
+   "title": "Fastify: extension and testing",
+   "kw": [
+    "ecossistema",
+    "batteries included",
+    "testing",
+    "teste",
+    "fastify.inject",
+    "ecosystem",
+    "test"
+   ],
+   "summary": "Minimal framework, no built-in testing; points to the testing documentation.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "fs-cli",
+   "src": "FSTF",
+   "pages": [
+    13,
+    14
+   ],
+   "title": "Fastify: fastify-cli",
+   "kw": [
+    "fastify-cli",
+    "fastify start",
+    "npm start",
+    "scripts"
+   ],
+   "summary": "fastify-cli, start script and server.js module.",
+   "ref": "08-fastify.md"
+  },
+  {
+   "id": "nest-intro",
+   "src": "NEST",
+   "pages": [
+    2,
+    2
+   ],
+   "title": "Nest: introduction and setup",
+   "kw": [
+    "nest",
+    "nestjs",
+    "typescript",
+    "nest cli",
+    "nest new",
+    "--strict",
+    "node 20",
+    "babel"
+   ],
+   "summary": "Works with TypeScript and JS; Node >= 20; npm i -g @nestjs/cli; nest new.",
+   "ref": "09-nestjs.md"
+  },
+  {
+   "id": "nest-arquivos",
+   "src": "NEST",
+   "pages": [
+    3,
+    4
+   ],
+   "title": "Nest: initial files and NestFactory",
+   "kw": [
+    "app.module",
+    "app.controller",
+    "app.service",
+    "main.ts",
+    "nestfactory",
+    "bootstrap",
+    "inestapplication",
+    "abortonerror"
+   ],
+   "summary": "Generated files and bootstrap with NestFactory.create; abortOnError.",
+   "ref": "09-nestjs.md"
+  },
+  {
+   "id": "nest-plataforma",
+   "src": "NEST",
+   "pages": [
+    4,
+    5
+   ],
+   "title": "Nest: Express or Fastify platform",
+   "kw": [
+    "platform-express",
+    "platform-fastify",
+    "nestexpressapplication",
+    "nestfastifyapplication",
+    "adapter",
+    "plataforma",
+    "platform"
+   ],
+   "summary": "Express by default; Fastify supported; optional type at creation.",
+   "ref": "09-nestjs.md"
+  },
+  {
+   "id": "nest-rodar",
+   "src": "NEST",
+   "pages": [
+    5,
+    6
+   ],
+   "title": "Nest: run, SWC, lint and format",
+   "kw": [
+    "npm run start",
+    "start:dev",
+    "swc",
+    "eslint",
+    "prettier",
+    "npm run lint",
+    "npm run format",
+    "-b swc"
+   ],
+   "summary": "npm run start, start:dev, -b swc, lint and format.",
+   "ref": "09-nestjs.md"
+  }
+ ],
+ "gaps": [
+  {
+   "id": "nest-decorators-di",
+   "terms": [
+    "@module",
+    "@controller",
+    "@injectable",
+    "@get",
+    "injecao de dependencia",
+    "dependency injection",
+    "providers",
+    "provider",
+    "guards",
+    "pipes",
+    "interceptors",
+    "dto",
+    "decorator"
+   ],
+   "note": "The Nest pages only list the files (root module, controller, service) and the bootstrap; they do not explain decorators, DI, providers, pipes, guards or DTOs."
+  },
+  {
+   "id": "express-erros-router",
+   "terms": [
+    "error handler",
+    "tratamento de erros",
+    "express.router",
+    "router",
+    "helmet",
+    "cors",
+    "next(err)",
+    "body-parser",
+    "morgan",
+    "rate limit",
+    "jwt",
+    "passport",
+    "error handling"
+   ],
+   "note": "The Express Handbook has no error middleware (4 arguments), express.Router, helmet, CORS, JWT/passport."
+  },
+  {
+   "id": "fastify-hooks-log-ts",
+   "terms": [
+    "hooks",
+    "addhook",
+    "lifecycle",
+    "ciclo de vida",
+    "pino",
+    "typescript",
+    "ajv",
+    "prefix",
+    "swagger",
+    "@fastify/cors",
+    "@fastify/helmet"
+   ],
+   "note": "Fastify: hooks and decorators appear only in passing (p.7, p.10); no lifecycle, no pino/logging beyond logger: true, no TypeScript, prefixes or security plugins."
+  },
+  {
+   "id": "node-avancado",
+   "terms": [
+    "worker_threads",
+    "worker threads",
+    "cluster",
+    "child_process",
+    "crypto",
+    "buffer",
+    "esm",
+    "import export",
+    "fetch nativo",
+    "test runner",
+    "node:test",
+    "jest",
+    "mocha",
+    "typescript",
+    "docker",
+    "pm2",
+    "npm ci",
+    "npm audit",
+    "pnpm",
+    "async hooks",
+    "debugger",
+    "inspect",
+    "native fetch"
+   ],
+   "note": "The Node Handbook (2018) does not cover worker threads, cluster, child_process, crypto, Buffer, ESM as the default, the native test runner, debugging, npm audit/ci, pnpm, Docker or TypeScript."
+  },
+  {
+   "id": "rest-bd-auth",
+   "terms": [
+    "rest",
+    "restful",
+    "openapi",
+    "graphql",
+    "orm",
+    "prisma",
+    "sequelize",
+    "mongoose",
+    "postgres",
+    "autenticacao",
+    "oauth",
+    "microservices",
+    "microsservicos",
+    "authentication"
+   ],
+   "note": "REST API design belongs to web-api-rest-architecture-expert; ORMs/Postgres/Mongo (beyond MySQL p.193-197 and @fastify/mongodb) and authentication beyond sessions are not in the sources."
+  },
+  {
+   "id": "react-next-vue",
+   "terms": [
+    "react",
+    "vue",
+    "nuxt",
+    "angular",
+    "svelte",
+    "app router"
+   ],
+   "note": "Out of scope: React/Next/Vue are handled by other agents (Next.js is only cited as a name on p.6 of the Node Handbook)."
+  }
+ ]
+}

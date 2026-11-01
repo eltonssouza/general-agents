@@ -1,0 +1,5 @@
+id,ativo,ameaca,impacto,probabilidade,tratamento,residual_impacto,residual_probabilidade
+R1,Secret recipe on the NAS,Competitor accesses the NAS without login,5,5,reduzir,5,1
+R2,Application server,Disk failure without redundancy,3,3,reduzir,3,1
+R3,Office,Basement flooding,2,2,aceitar,,
+R4,Corporate website,Defacement by injection,3,4,reduzir,3,2

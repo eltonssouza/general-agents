@@ -1,0 +1,911 @@
+{
+ "fonte": "DPE, PDF Data-Platform-Engineering-Handbook-2022 (The Developer Productivity Engineering Handbook, Gradle Inc., 2022)",
+ "checks": [
+  {
+   "cite": "DPE p.2",
+   "contains": [
+    "Hans Dockter",
+    "Version 2.0-local",
+    "2022-03-11"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.6",
+   "contains": [
+    "Gradle Inc.",
+    "Published by Gradle Inc."
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.8",
+   "contains": [
+    "2019",
+    "living document",
+    "Developer Productivity Engineering (DPE)"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.9",
+   "contains": [
+    "Hans Dockter is the founder",
+    "CEO of Gradle"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.10",
+   "contains": [
+    "VP of Marketing",
+    "Gradle Enterprise",
+    "premier enabling"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.11",
+   "contains": [
+    "Netflix",
+    "executive sponsorship",
+    "any technology stack"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.14",
+   "contains": [
+    "automation, actionable data",
+    "Developer Productivity Management",
+    "MTTR"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.15",
+   "contains": [
+    "scientist",
+    "Hello World"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.16",
+   "contains": [
+    "TechValidate",
+    "90%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.17",
+   "contains": [
+    "IDC",
+    "auditability",
+    "65%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.18",
+   "contains": [
+    "factory workers",
+    "over a hundred"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.19",
+   "contains": [
+    "cost per engineering minute",
+    "most important movement",
+    "dedicated"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.20",
+   "contains": [
+    "recruiting",
+    "double digit"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.21",
+   "contains": [
+    "auto racing",
+    "cohort analysis"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.22",
+   "contains": [
+    "Gergely Orosz",
+    "Nortal"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.23",
+   "contains": [
+    "Big brother",
+    "Bill Harding",
+    "Tableau"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.24",
+   "contains": [
+    "gamed",
+    "fully-loaded engineering year"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.25",
+   "contains": [
+    "JVM",
+    "Android",
+    "predictive test selection",
+    "complementary"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.28",
+   "contains": [
+    "850",
+    "1010",
+    "creative flow"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.29",
+   "contains": [
+    "10 minutes",
+    "44 days",
+    "5,200",
+    "220 working days"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.30",
+   "contains": [
+    "20% of all build",
+    "10-20 minutes",
+    "context switching frequency"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.31",
+   "contains": [
+    "exponentially",
+    "vicious circle"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.32",
+   "contains": [
+    "the feedback later in the development cycle"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.33",
+   "contains": [
+    "dog eat dog",
+    "Wall Street"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.34",
+   "contains": [
+    "2017",
+    "dependency cache",
+    "Google and Facebook"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.35",
+   "contains": [
+    "20% of the actions",
+    "incremental build system"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.36",
+   "contains": [
+    "hashes all inputs"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.37",
+   "contains": [
+    "40% of the actions"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.38",
+   "contains": [
+    "public API",
+    "20% of the build actions"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.39",
+   "contains": [
+    "30% of the actions",
+    "65%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.40",
+   "contains": [
+    "remote cache",
+    "local cache",
+    "quality gate"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.41",
+   "contains": [
+    "1/n",
+    "leaf modules",
+    "timestamp"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.42",
+   "contains": [
+    "90% average time saving",
+    "minimum of 50%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.43",
+   "contains": [
+    "60%",
+    "90%",
+    "no parallelism"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.44",
+   "contains": [
+    "CI fanout",
+    "$8 million per 1,000 developers",
+    "$150K",
+    "Reporting is broken"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.45",
+   "contains": [
+    "load balancing",
+    "single build invocation"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.46",
+   "contains": [
+    "complementary",
+    "virtuous cycle",
+    "145 modules",
+    "450,000",
+    "51m 35s"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.47",
+   "contains": [
+    "92%",
+    "22m 35s",
+    "20m 12s"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.48",
+   "contains": [
+    "39m 37s",
+    "14m 50s",
+    "2.7x",
+    "3.5x"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.49",
+   "contains": [
+    "35m 27s",
+    "10m 49s",
+    "3.3x",
+    "-T 1C"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.51",
+   "contains": [
+    "MABP",
+    "Scala",
+    "order of magnitude"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.52",
+   "contains": [
+    "annotation processors",
+    "virus scanner"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.53",
+   "contains": [
+    "40 minutes",
+    "SSD"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.54",
+   "contains": [
+    "network share",
+    "20 minutes"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.55",
+   "contains": [
+    "128 threads",
+    ".mvn"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.56",
+   "contains": [
+    "30%",
+    "median",
+    "5th percentile"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.57",
+   "contains": [
+    "25th and 75th",
+    "Java VMs have different vendors"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.58",
+   "contains": [
+    "fire and forget",
+    "negative savings"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.60",
+   "contains": [
+    "non-verification failures",
+    "Faulty build logic",
+    "verification failures"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.61",
+   "contains": [
+    "snapshot dependencies",
+    "mean-time-to-repair"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.62",
+   "contains": [
+    "data contextualization",
+    "Build environment"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.63",
+   "contains": [
+    "deeply-linkable",
+    "ASTONISHING WASTE"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.64",
+   "contains": [
+    "X-ray",
+    "2-5%",
+    "3-10%",
+    "de facto standard"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.65",
+   "contains": [
+    "immutable record"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.66",
+   "contains": [
+    "two forms",
+    "burn down the whole workspace"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.67",
+   "contains": [
+    "2016",
+    "3%",
+    "99%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.68",
+   "contains": [
+    "plumber",
+    "reproducible"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.69",
+   "contains": [
+    "Tomcat",
+    "time bomb"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.70",
+   "contains": [
+    "complaint-driven",
+    "30 other developers"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.71",
+   "contains": [
+    "Frequent new non-verification failures",
+    "auto-formatting"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.72",
+   "contains": [
+    "1 in 40",
+    "IntelliJ"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.73",
+   "contains": [
+    "1.5%",
+    "16%",
+    "Facebook",
+    "Order-dependent"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.74",
+   "contains": [
+    "Netflix and Mozilla",
+    "fewer than 1%",
+    "0.005%",
+    "0.7%",
+    "P_pass",
+    "Flaky Failures/day"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.75",
+   "contains": [
+    "quarantine",
+    "5.6% to 2.5%",
+    "4.0% to 3.1%",
+    "35 of the top 50",
+    "monthly"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.76",
+   "contains": [
+    "Execution timestamp"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.78",
+   "contains": [
+    "$110,400",
+    "230 days",
+    "500000"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.79",
+   "contains": [
+    "$400,000",
+    "$6667",
+    "18 engineers",
+    "4.5 engineers",
+    "80%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.80",
+   "contains": [
+    "$100,000",
+    "1,300,128",
+    "39 seconds",
+    "8 wasted engineering years"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.81",
+   "contains": [
+    "$600000",
+    "$700,000",
+    "60 minutes"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.82",
+   "contains": [
+    "240 minutes",
+    "90 minutes",
+    "exponentially"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.83",
+   "contains": [
+    "$240,000",
+    "* 120 *",
+    "$300,000",
+    "$200K"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.84",
+   "contains": [
+    "$3,200,000",
+    "15 engineers",
+    "$1,200,000"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.86",
+   "contains": [
+    "gradle.com/roi-calculator"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.88",
+   "contains": [
+    "15% or more each year"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.89",
+   "contains": [
+    "Netflix",
+    "25%"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.90",
+   "contains": [
+    "trial of Gradle Enterprise"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.91",
+   "contains": [
+    "Learning Center"
+   ],
+   "claim": "terms/numbers that the references attribute to this page"
+  },
+  {
+   "cite": "DPE p.74",
+   "contains": [
+    "200 flaky tests",
+    "500 builds per day",
+    "single retry"
+   ],
+   "claim": "numeric example of P_pass"
+  },
+  {
+   "cite": "DPE p.30",
+   "contains": [
+    "average time for a successful build",
+    "failure frequency * number of builds * 2"
+   ],
+   "claim": "feedback formulas"
+  },
+  {
+   "cite": "DPE p.67",
+   "contains": [
+    "failure frequency * number of builds * number of context switches"
+   ],
+   "claim": "variant of the formula in ch. 12"
+  },
+  {
+   "cite": "DPE p.78",
+   "contains": [
+    "CE = DE * CM * 8 * 60"
+   ],
+   "claim": "cost per engineer-year"
+  },
+  {
+   "cite": "DPE p.79",
+   "contains": [
+    "BYL * WL * CM = 500000 * 0.8 * $1"
+   ],
+   "claim": "local waiting cost"
+  },
+  {
+   "cite": "DPE p.80",
+   "contains": [
+    "BYCI * WCI * CM = 500000 * 0.2 * $1"
+   ],
+   "claim": "CI waiting cost"
+  },
+  {
+   "cite": "DPE p.81",
+   "contains": [
+    "500000 * 0.2 * 0.05 * 20",
+    "500000 * 0.1 * 0.2 * 60"
+   ],
+   "claim": "debugging cost"
+  },
+  {
+   "cite": "DPE p.83",
+   "contains": [
+    "500000 * 0.001 * 1 * 120"
+   ],
+   "claim": "build logic calculation with 120 min"
+  },
+  {
+   "cite": "DPE p.19-20",
+   "contains": [
+    "average build time reduction",
+    "average number of builds"
+   ],
+   "claim": "annual savings formula"
+  },
+  {
+   "cite": "DPE p.24",
+   "contains": [
+    "Multiply the average time saved"
+   ],
+   "claim": "ROI formula in engineer-years"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "Develocity"
+   ],
+   "claim": "later product name does not appear"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "DORA"
+   ],
+   "claim": "DORA metrics do not appear"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "Kubernetes",
+    "Docker",
+    "Terraform"
+   ],
+   "claim": "container/IaC infrastructure absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "data lake",
+    "ETL",
+    "Airflow",
+    "Spark",
+    "Kafka"
+   ],
+   "claim": "data platform engineering absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "MLOps",
+    "machine learning",
+    "LLM"
+   ],
+   "claim": "ML/LLM absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "Copilot"
+   ],
+   "claim": "code assistant absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "Bazel",
+    "monorepo"
+   ],
+   "claim": "Bazel/monorepo absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "GitHub Actions"
+   ],
+   "claim": "GitHub Actions absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "platform engineering"
+   ],
+   "claim": "platform engineering absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "deployment frequency",
+    "lead time"
+   ],
+   "claim": "DORA delivery metrics absent"
+  },
+  {
+   "cite": "DPE p.1-91",
+   "absent": [
+    "TDD",
+    "test pyramid",
+    "mutation testing"
+   ],
+   "claim": "testing strategy absent"
+  },
+  {
+   "cite": "DPE p.78-84",
+   "absent": [
+    "payback",
+    "NPV",
+    "net present value"
+   ],
+   "claim": "cost model does not calculate payback/NPV"
+  },
+  {
+   "cite": "DPE p.19-20",
+   "absent": [
+    "payback",
+    "NPV"
+   ],
+   "claim": "ROI without payback"
+  },
+  {
+   "cite": "DPE p.73-76",
+   "absent": [
+    "Bayesian",
+    "chaos engineering"
+   ],
+   "claim": "flaky: no Bayes/chaos"
+  },
+  {
+   "cite": "DPE p.86-90",
+   "absent": [
+    "formula"
+   ],
+   "claim": "online calculator formulas are not given"
+  },
+  {
+   "cite": "DPE p.60-65",
+   "absent": [
+    "postmortem",
+    "blameless"
+   ],
+   "claim": "no postmortem/blameless"
+  },
+  {
+   "cite": "DPE p.21-25",
+   "absent": [
+    "SPACE framework",
+    "survey"
+   ],
+   "claim": "DPM: no SPACE/survey on these pages"
+  },
+  {
+   "cite": "DPE p.43-50",
+   "absent": [
+    "Bazel",
+    "Buck"
+   ],
+   "claim": "test distribution: no other tools"
+  },
+  {
+   "cite": "DPE p.34-42",
+   "absent": [
+    "Bazel",
+    "remote execution"
+   ],
+   "claim": "build cache: no Bazel/remote execution"
+  },
+  {
+   "cite": "DPE p.28-33",
+   "absent": [
+    "DORA",
+    "story points"
+   ],
+   "claim": "feedback: no DORA/story points"
+  },
+  {
+   "cite": "DPE p.51-58",
+   "absent": [
+    "SLO",
+    "SLI",
+    "Prometheus"
+   ],
+   "claim": "profiling: no SLO/Prometheus"
+  }
+ ]
+}

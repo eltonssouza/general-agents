@@ -1,0 +1,16 @@
+{
+  "name": "rails-getting-started-expert",
+  "version": "1.0.0",
+  "description": "Ruby on Rails overview agent based on the official Getting Started with Rails guide (Rails 8.1.0+, Ruby 3.2+; 'store' app): MVC, routes, controllers, views, Active Record, migrations, validations, associations, forms, partials, authentication, mailer, tests, Kamal. [DATED] Rails 8.1.x; outside the guide = NOT COVERED. Does not replace the current documentation.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "rails",
+    "ruby-on-rails",
+    "mvc",
+    "active-record",
+    "routes",
+    "getting-started",
+    "kamal"
+  ]
+}

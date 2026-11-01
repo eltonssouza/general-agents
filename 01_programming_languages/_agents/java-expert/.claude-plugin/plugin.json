@@ -1,0 +1,9 @@
+{
+  "name": "java-expert",
+  "version": "0.2.0",
+  "description": "Java specialist agent (fundamentals, code review, exceptions, JVM diagnosis and locating features by JDK) distilled from Think Java, Advanced Java, the JVM Troubleshooting Handbook and the JEP lists in the OpenJDK 11/17/21/22/26 release notes, with 4 skills, read-only scripts, references traceable by PDF page, citation verifiers and adapters for Codex and GitHub Copilot.",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  }
+}

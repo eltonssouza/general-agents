@@ -1,0 +1,24 @@
+# 07 · Recurrent and recursive networks (DLB ch. 10, PDF p.388-435)
+
+**Coverage:** read p.388-400, 411-412 (beginning), 416 (recursive), 417-418 (beginning) and 425-430. **Not read:** p.401-410 (rest of BPTT, RNN as a graphical model, conditioning, bidirectional), p.412-415 (encoder-decoder in detail, deep RNN), p.419-424 (full *echo state*, *leaky units*, *skip connections*), p.431-435 (regularizing information flow, explicit memory). Convention: DLB p.N = PDF page (printed = N − 15). Eq. 10.8-10.11 and 10.41-10.44 checked visually (p.396, p.426).
+
+## Core idea
+- `[from source]` (DLB p.388-389) An RNN (Rumelhart 1986a) processes sequences x⁽¹⁾..x⁽τ⁾ with **parameter sharing** across positions, which allows generalizing to lengths not seen; the sentence "I went to Nepal in 2009" shows why (the year can appear in different positions). Time-delay networks (1-D convolution over time) share parameters in a shallow way.
+- `[from source]` (DLB p.390-393) **Unfolding**: s⁽ᵗ⁾ = f(s⁽ᵗ⁻¹⁾;θ) (10.1); with input h⁽ᵗ⁾ = f(h⁽ᵗ⁻¹⁾,x⁽ᵗ⁾;θ) (10.5); h⁽ᵗ⁾ is a lossy summary of the past; advantages: fixed-size input and the same parameters at all steps (p.392).
+- `[from source]` (DLB p.393-395) Patterns: outputs at each step with hidden-to-hidden recurrence (Fig. 10.3), output→hidden only (Fig. 10.4; less powerful, but steps are decoupled) and reading the sequence with a single output (Fig. 10.5). The model of Fig. 10.3 is **universal** (equivalent to a Turing machine, Siegelmann and Sontag 1995 with 886 units).
+
+## Forward propagation (checked)
+- `[from source]` (DLB p.396) a⁽ᵗ⁾ = b + Wh⁽ᵗ⁻¹⁾ + Ux⁽ᵗ⁾; h⁽ᵗ⁾ = tanh(a⁽ᵗ⁾); o⁽ᵗ⁾ = c + Vh⁽ᵗ⁾; ŷ⁽ᵗ⁾ = softmax(o⁽ᵗ⁾) (10.8-10.11); total loss = sum of the per-step losses (10.12-10.14). Training by **BPTT** costs O(τ) in time **and** memory and is not parallelizable (the forward pass is sequential).
+- `[from source]` (DLB p.396-399) **Teacher forcing**: in training, the true output y⁽ᵗ⁾ is the input of step t+1 (eq. 10.15-10.16); it decouples the steps and allows parallelization when there is only output recurrence; problem: in *open-loop* mode the test sees inputs different from training; mitigation: mix real and generated inputs (Bengio 2015b, *curriculum*).
+- `[from source]` (DLB p.399-400) BPTT gradient: ∇ₒ⁽ᵗ⁾L = ŷ⁽ᵗ⁾ − 1ᵢ,ᵧ (10.18); ∇_h⁽τ⁾L = Vᵀ∇ₒ⁽τ⁾L (10.19); ∇_h⁽ᵗ⁾L = Wᵀ(∇_h⁽ᵗ⁺¹⁾L)diag(1 − (h⁽ᵗ⁺¹⁾)²) + Vᵀ(∇ₒ⁽ᵗ⁾L) (10.20-10.21).
+- `[from source]` (DLB p.411) **Encoder-decoder** architecture (*sequence-to-sequence*, Fig. 10.12): an encoder RNN reads x⁽¹⁾..x⁽ⁿˣ⁾ and produces a fixed-size context C; a decoder generates y⁽¹⁾..y⁽ⁿʸ⁾.
+- `[from source]` (DLB p.416) **Recursive** networks (Pollack 1990): depth O(log τ) instead of τ; tree structure left open.
+
+## Long-term dependencies
+- `[from source]` (DLB p.417-418) The composition of many nonlinear functions is highly nonlinear (Fig. 10.15); h⁽ᵗ⁾ = Wᵀh⁽ᵗ⁻¹⁾ (10.36) is the power method, h⁽ᵗ⁾ = (Wᵗ)ᵀh⁽⁰⁾ (10.37); *echo state networks* fix the recurrent weights near the edge of stability (spectral radius of the Jacobian ≈ 1).
+- `[from source]` (DLB p.425-426) **LSTM** (Hochreiter and Schmidhuber 1997): self-loop on the state with a context-conditioned weight (*forget gate*, Gers 2000). Equations: fᵢ⁽ᵗ⁾ = σ(bᶠᵢ + ΣUᶠᵢⱼxⱼ⁽ᵗ⁾ + ΣWᶠᵢⱼhⱼ⁽ᵗ⁻¹⁾) (10.40); sᵢ⁽ᵗ⁾ = fᵢ⁽ᵗ⁾sᵢ⁽ᵗ⁻¹⁾ + gᵢ⁽ᵗ⁾σ(bᵢ + ΣUᵢⱼxⱼ⁽ᵗ⁾ + ΣWᵢⱼhⱼ⁽ᵗ⁻¹⁾) (10.41); gᵢ⁽ᵗ⁾ = σ(bᵍ+...) (10.42); hᵢ⁽ᵗ⁾ = tanh(sᵢ⁽ᵗ⁾)qᵢ⁽ᵗ⁾ (10.43); qᵢ⁽ᵗ⁾ = σ(bᵒ+...) (10.44), with qᵢ the output gate and gᵢ the external input gate. Applications cited: handwriting, speech, translation, *captioning* and *parsing* `[DATED]`. `dlb_calc.py lstm` computes a scalar cell.
+- `[from source]` (DLB p.427) **GRU** (Cho 2014b): a single gate (update u) controls forgetting and updating, with a reset gate r (eq. 10.45-10.47); investigations of variants found none that clearly outperforms LSTM and GRU on all tasks; Greff 2015: the *forget gate* is the crucial ingredient; Jozefowicz 2015: adding 1 to the forget gate bias matches the best variant.
+- `[from source]` (DLB p.428) Second-order methods (Martens and Sutskever 2011) and Nesterov with good initialization (Sutskever 2013) were largely replaced by plain SGD in LSTMs; recurring theme: "it is easier to design a model that is easy to optimize than a more powerful optimizer".
+- `[from source]` (DLB p.428-430) **Gradient clipping**: clip the gradient element-wise (Mikolov 2012) or by the norm (Pascanu 2013): if ‖g‖ > v, g ← g·v/‖g‖ (eq. 10.48-10.49); it preserves the direction and limits the step; even a random step of size v works almost as well; the average of clipped gradients per minibatch is a heuristic bias; it **does not help** with vanishing gradients.
+
+`[DATED]` The book does not cover attention as a main building block or Transformers (the book's attention is that of the RNN encoder-decoder, in `09-aplicacoes-e-escala.md`).

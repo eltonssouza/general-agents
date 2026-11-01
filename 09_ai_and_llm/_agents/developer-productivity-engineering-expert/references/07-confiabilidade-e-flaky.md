@@ -1,0 +1,34 @@
+# 07. Toolchain reliability, failure analytics and flaky tests (ch. 12-14, DPE p.66-76)
+
+## 7.1 What reliability is (p.66-67)
+- `[from source]` Toolchain reliability is judged by the rate at which it causes non-verification failures, in two ways: failing without producing a result, or producing an incorrect result (flaky test, wrongly assembled file); the second is harder to identify (p.66).
+- `[from source]` Builds become unreliable when problems are expensive to find, hard to reproduce and unprioritized because their impact is unknown (p.66). In an unreliable environment, developers repeat the build, clear caches and even re-clone the workspace (p.66).
+- `[from source]` Performance and reliability connect through the formulas of ch. 6 (p.67; see `02-ciclos-de-feedback.md`); non-verification failures have a much higher average debugging time than verification failures (p.67).
+- `[from source]` Gradle history (2016): flaky tests in integration tests meant it took up to two days to get a green build on the main branch; fewer than 3% of changes passed CI without a flaky failure; after two "flaky fix-it days" 30% passed within a week, 70% after another month, today over 99%; there is a fix-it day before each major release (p.67). `[from source]` but this is the company's own account.
+- `[from source]` Moral: frequent failures in challenging tasks, with defective tools, cause frustration (plumber analogy) (p.67-68).
+
+## 7.2 Prevention and reproducibility (p.68-69)
+- `[from source]` The most efficient approach is to prevent non-verification incidents; reliability is a continuous practice, with trends and comprehensive data to detect regressions, find the cause without reproducing, and prioritize by impact (p.68).
+- `[from source]` **Reproducible build:** always produces the same output when the declared input has not changed. Reliable and reproducible are not synonyms: a non-reproducible build is not necessarily unreliable, but it is a future reliability risk (p.68-69). Declaring the input makes the build fail with a clear message on an environment change (p.69).
+- `[from source]` Tomcat anecdote: a library read from the locally installed Tomcat, with no version in the name; discovered when introducing cache and seeing fewer hits than expected; cache "surfaces" reproducibility problems (p.69).
+
+## 7.3 Failure analytics (ch. 13, p.70-72)
+- `[from source]` **Avoid complaint-driven development:** the best developers leave before complaining much; anecdote: when telemetry was installed, 30 developers were found suffering in silence while the one who complained loudest was being helped; several left citing the experience (p.70).
+- `[from source]` **Use data:** collect a representative sample of failures and group by root cause. Priority from highest to lowest: (1) new, frequent non-verification failures, (2) old non-verification failures that are reasonably frequent and actionable, (3) frequent verification failures, (4) other infrequent ones with a quick fix (p.71).
+- `[from source]` Frequent compilation, static analysis or test failures should not be ignored; e.g. many lint failures suggest automatic formatting in the IDE or a git hook (p.71).
+- `[from source]` **Measure and optimize continuously:** ask how much time passes between detecting a productivity problem and fixing it (p.71).
+- `[from source]` The "missing project" case: a top failures dashboard filtered to local non-verification builds revealed an error affecting 1 in 40 local builds per week, tied to the IntelliJ IDE after a subproject was removed; the verification/non-verification classification uses semantic analysis of error messages and groups by similarity (p.72). `[vendor claim]` describes a product feature.
+
+## 7.4 Flaky tests (ch. 14, p.73-76)
+- `[from source]` Flaky test: produces both pass and fail results for the same code (p.73). Google reports ~1.5% of executions with a flaky result and almost 16% of tests with some degree of flakiness; Facebook says "all real tests are flaky to some degree" (p.73).
+- `[from source]` Common causes: asynchronous code, order-dependent tests, resource leaks, external infrastructure, time-based computation; often the test is not the culprit, but rather production code or test infrastructure (p.73).
+- `[from source]` Identification: almost always by re-execution: in another order (order dependence), in isolation (leak or asynchrony), in another environment (infrastructure); the most common strategy is to re-run right after the failure, in the same environment; leading teams (Netflix and Mozilla, according to the book) apply aggressive retries to new and modified tests (p.73-74).
+- `[from source]` Tolerance target: fewer than 1% of developer-facing pipeline runs should fail due to non-verification (1 in 100) (p.74).
+- `[from source]` **Formula (checked on the rendered page, p.74):** P_pass = Π(1 − P_flaky) over the flaky tests; build flaky failure probability = 1 − P_pass; flaky failures per day = (1 − P_pass) × builds per day. Example: 200 flaky tests, 500 builds per day, 1% target (5 builds): without retry, the average rate per test must stay below 0.005%; with one retry, below 0.7% (p.74). The package reproduced both numbers (0.00502% and 0.708%); the text's phrase "product of number of tests, rate and number of builds" is an approximation for small rates `[inference]`.
+- `[from source]` Mitigation: accepting the test as passing if it passed on retry is immaturity (flakiness grows and ends up failing even with retry); deleting tests is objected to; **quarantine** (a secondary process that runs the flaky tests without blocking integration, encouraging stabilization); a monthly **Flaky Fix-It Day** with most of the team (p.74-75).
+- `[from source]` Result at Gradle: after 2 fix-it days, the frequency of builds with flaky tests fell from 5.6% to 2.5% in 2 months; total failures from 4.0% to 3.1%; 35 of the 50 most frequent flaky tests fixed and 3 production bugs found (p.75). Coherence note: the account on p.67 says ">99% today"; the two measures are from different metrics and moments and should not be compared directly `[inference]`.
+- `[from source]` Useful data for root cause: timestamp, duration, OS and environment per failure; logs and exceptions; tests that fail or are flaky in the same run; tests executed at the same time; ideally store it in one place and allow controlling which tests run, in what order and environment; history confirms there were no more flaky failures after the fix (p.75-76).
+- `[from source]` Summary: DPE quantifies the impact with historical data and manages proactively (p.76).
+
+## 7.5 Use by the agent
+`python -I scripts/dpe_cost.py flaky --tests 200 --builds-day 500 --target 0.01 --retries 0|1` (p.74). For one retry the script uses p² per test `[inference]` from the book's sentence about a "single retry", and labels it that way.

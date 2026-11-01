@@ -1,0 +1,20 @@
+{
+  "name": "observability-opentelemetry-expert",
+  "version": "1.0.0",
+  "description": "Introductory specialist in observability of distributed systems and OpenTelemetry based on two 2021 DZone Refcards (DOW and OTW, 7 pages each): monitoring vs observability, metrics/logs/traces, platform and collection, Collector (receivers/processors/exporters, Agent vs Gateway, OTLP), spans, Context API, automatic vs manual instrumentation, and backends. States what it does not cover (per-language SDKs, advanced Collector, SLOs, current versions).",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "observability",
+    "opentelemetry",
+    "otel",
+    "collector",
+    "otlp",
+    "tracing",
+    "metrics",
+    "logs",
+    "distributed-systems",
+    "jaeger",
+    "prometheus"
+  ]
+}

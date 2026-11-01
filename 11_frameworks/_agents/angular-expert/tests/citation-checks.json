@@ -1,0 +1,713 @@
+{
+ "_note": "Positive and negative checks against the extracted text. Absence in the capture is NOT absence in the framework.",
+ "checks": [
+  {
+   "cite": "NG18 p.1",
+   "claim": "opening",
+   "contains": [
+    "web framework that empowers",
+    "fast, reliable applications"
+   ]
+  },
+  {
+   "cite": "NG18 p.1",
+   "claim": "headline components/DI",
+   "contains": [
+    "opinionated component model",
+    "flexible dependency injection"
+   ]
+  },
+  {
+   "cite": "NG18 p.1",
+   "claim": "signals",
+   "contains": [
+    "fine-grained reactivity",
+    "signals"
+   ]
+  },
+  {
+   "cite": "NG18 p.1",
+   "claim": "modular/testable DI",
+   "contains": [
+    "modular, loosely",
+    "testable"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "defer",
+   "contains": [
+    "@defer",
+    "lazy-loadable"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "SSR/SSG/hydration",
+   "contains": [
+    "server-side rendering",
+    "static site generation",
+    "hydration"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "router",
+   "contains": [
+    "route guards",
+    "data resolution"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "forms",
+   "contains": [
+    "form participation"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "CLI and DevTools",
+   "contains": [
+    "under a minute",
+    "flame chart"
+   ]
+  },
+  {
+   "cite": "NG18 p.2",
+   "claim": "ng update headline",
+   "contains": [
+    "never miss a version with ng update"
+   ]
+  },
+  {
+   "cite": "NG18 p.3",
+   "claim": "IDE and monorepo",
+   "contains": [
+    "language services",
+    "colossal monorepo"
+   ]
+  },
+  {
+   "cite": "NG18 p.3",
+   "claim": "LTS",
+   "contains": [
+    "long term support",
+    "migration schematics"
+   ]
+  },
+  {
+   "cite": "NG18 p.4",
+   "claim": "i18n and security",
+   "contains": [
+    "icu syntax",
+    "trusted type",
+    "cross-site request forgery"
+   ]
+  },
+  {
+   "cite": "NG18 p.4",
+   "claim": "build",
+   "contains": [
+    "vite and esbuild",
+    "hundreds of thousands of lines"
+   ]
+  },
+  {
+   "cite": "NG18 p.5",
+   "claim": "Aurora",
+   "contains": [
+    "ngoptimizedimage",
+    "aurora",
+    "core web vitals"
+   ]
+  },
+  {
+   "cite": "NG18 p.5",
+   "claim": "partners",
+   "contains": [
+    "firebase",
+    "flutter",
+    "material design"
+   ]
+  },
+  {
+   "cite": "NG18 p.6",
+   "claim": "NG18 footer",
+   "contains": [
+    "©2010-2024",
+    "discord",
+    "ελληνικά"
+   ]
+  },
+  {
+   "cite": "NG18 p.4",
+   "claim": "spelling",
+   "contains_cs": [
+    "ESBuild"
+   ]
+  },
+  {
+   "cite": "NG18 p.5",
+   "claim": "spelling",
+   "contains_cs": [
+    "Tensorflow"
+   ]
+  },
+  {
+   "cite": "NG19 p.1",
+   "claim": "p1 cookies/nav only",
+   "contains": [
+    "this site uses cookies",
+    "menu docs"
+   ]
+  },
+  {
+   "cite": "NG19 p.2",
+   "claim": "opening",
+   "contains": [
+    "web framework that empowers",
+    "opinionated component model"
+   ]
+  },
+  {
+   "cite": "NG19 p.3",
+   "claim": "defer/SSR",
+   "contains": [
+    "@defer",
+    "static site generation",
+    "hydration"
+   ]
+  },
+  {
+   "cite": "NG19 p.3",
+   "claim": "router/forms/CLI",
+   "contains": [
+    "route guards",
+    "form participation",
+    "under a minute"
+   ]
+  },
+  {
+   "cite": "NG19 p.4",
+   "claim": "ng update/LTS",
+   "contains": [
+    "ng update",
+    "long term support",
+    "language services"
+   ]
+  },
+  {
+   "cite": "NG19 p.4",
+   "claim": "monorepo",
+   "contains": [
+    "colossal monorepo"
+   ]
+  },
+  {
+   "cite": "NG19 p.5",
+   "claim": "security",
+   "contains": [
+    "trusted type",
+    "icu syntax"
+   ]
+  },
+  {
+   "cite": "NG19 p.6",
+   "claim": "Aurora",
+   "contains": [
+    "ngoptimizedimage",
+    "aurora"
+   ]
+  },
+  {
+   "cite": "NG19 p.7",
+   "claim": "NG19 footer",
+   "contains": [
+    "bluesky",
+    "ελληνικά",
+    "©2010-2025"
+   ]
+  },
+  {
+   "cite": "NG20 p.1",
+   "claim": "opening",
+   "contains": [
+    "web framework that empowers"
+   ]
+  },
+  {
+   "cite": "NG20 p.2",
+   "claim": "cards",
+   "contains": [
+    "opinionated component model",
+    "@defer",
+    "hydration"
+   ]
+  },
+  {
+   "cite": "NG20 p.3",
+   "claim": "tools",
+   "contains": [
+    "flame chart",
+    "ng update",
+    "language services"
+   ]
+  },
+  {
+   "cite": "NG20 p.4",
+   "claim": "stability/i18n",
+   "contains": [
+    "compatible, and include migration tools",
+    "icu syntax",
+    "trusted type"
+   ]
+  },
+  {
+   "cite": "NG20 p.5",
+   "claim": "open source",
+   "contains": [
+    "request for comments",
+    "made in the open on github"
+   ]
+  },
+  {
+   "cite": "NG20 p.6",
+   "claim": "NG20 footer",
+   "contains": [
+    "bluesky",
+    "firebase",
+    "한국어"
+   ]
+  },
+  {
+   "cite": "NG20 p.7",
+   "claim": "footer only",
+   "contains": [
+    "©2010-2025"
+   ]
+  },
+  {
+   "cite": "NG20 p.6",
+   "claim": "spelling",
+   "contains_cs": [
+    "Tensorflow"
+   ]
+  },
+  {
+   "cite": "NG21 p.1",
+   "claim": "NG21 opening",
+   "contains": [
+    "users love",
+    "official home for angular documentation"
+   ]
+  },
+  {
+   "cite": "NG21 p.1",
+   "claim": "cards",
+   "contains": [
+    "essentials",
+    "tutorials",
+    "step-by-step instructions in your browser"
+   ]
+  },
+  {
+   "cite": "NG21 p.2",
+   "claim": "signals",
+   "contains": [
+    "angular signals",
+    "fine-grained reactivity",
+    "compile-time"
+   ]
+  },
+  {
+   "cite": "NG21 p.3",
+   "claim": "SSR",
+   "contains": [
+    "server-side rendering",
+    "static site",
+    "hydration"
+   ]
+  },
+  {
+   "cite": "NG21 p.3",
+   "claim": "NG21 cards",
+   "contains": [
+    "share code across",
+    "angular routing",
+    "route",
+    "forms in angular",
+    "explore forms"
+   ]
+  },
+  {
+   "cite": "NG21 p.3",
+   "claim": "DI",
+   "contains": [
+    "dependency injection"
+   ]
+  },
+  {
+   "cite": "NG21 p.4",
+   "claim": "NG21 tools",
+   "contains": [
+    "language service",
+    "ng update",
+    "flame chart",
+    "colossal"
+   ]
+  },
+  {
+   "cite": "NG21 p.5",
+   "claim": "stability",
+   "contains": [
+    "long term support",
+    "icu syntax",
+    "trusted type"
+   ]
+  },
+  {
+   "cite": "NG21 p.6",
+   "claim": "build",
+   "contains": [
+    "vite and esbuild",
+    "hundreds of thousands of lines"
+   ]
+  },
+  {
+   "cite": "NG21 p.7",
+   "claim": "community",
+   "contains": [
+    "devlibrary",
+    "aurora"
+   ]
+  },
+  {
+   "cite": "NG21 p.8",
+   "claim": "NG21 footer",
+   "contains": [
+    "community translations",
+    "azərbaycanca",
+    "ngoptimizedimage",
+    "bluesky"
+   ]
+  },
+  {
+   "cite": "NG21 p.9",
+   "claim": "stamp",
+   "contains": [
+    "built by angular at v21.2.20",
+    "©2010-2026"
+   ]
+  },
+  {
+   "cite": "NG21 p.6",
+   "claim": "spelling",
+   "contains_cs": [
+    "esbuild"
+   ]
+  },
+  {
+   "cite": "NG21 p.8",
+   "claim": "spelling",
+   "contains_cs": [
+    "TensorFlow"
+   ]
+  },
+  {
+   "cite": "NG22 p.1",
+   "claim": "NG22 opening",
+   "contains": [
+    "users love",
+    "official home for angular documentation"
+   ]
+  },
+  {
+   "cite": "NG22 p.2",
+   "claim": "signals",
+   "contains": [
+    "angular signals",
+    "fine-grained reactivity"
+   ]
+  },
+  {
+   "cite": "NG22 p.3",
+   "claim": "NG22 cards",
+   "contains": [
+    "share code across",
+    "server-side rendering",
+    "explore dependency injection"
+   ]
+  },
+  {
+   "cite": "NG22 p.4",
+   "claim": "NG22 tools",
+   "contains": [
+    "ng update",
+    "language service",
+    "flame chart"
+   ]
+  },
+  {
+   "cite": "NG22 p.5",
+   "claim": "stability",
+   "contains": [
+    "long term support",
+    "trusted type"
+   ]
+  },
+  {
+   "cite": "NG22 p.6",
+   "claim": "build",
+   "contains": [
+    "vite and esbuild"
+   ]
+  },
+  {
+   "cite": "NG22 p.8",
+   "claim": "NG22 footer",
+   "contains": [
+    "community translations",
+    "ngoptimizedimage",
+    "bluesky"
+   ]
+  },
+  {
+   "cite": "NG22 p.9",
+   "claim": "NG22 stamp",
+   "contains": [
+    "built by angular at v22.1.2",
+    "©2010-2026"
+   ]
+  },
+  {
+   "cite": "NG22 p.8",
+   "claim": "spelling",
+   "contains_cs": [
+    "TensorFlow"
+   ]
+  },
+  {
+   "cite": "NG18 p.1-6",
+   "claim": "NG18 does not have",
+   "absent": [
+    "standalone",
+    "zoneless",
+    "ngmodule",
+    "typescript",
+    "rxjs",
+    "bluesky",
+    "users love"
+   ]
+  },
+  {
+   "cite": "NG19 p.1-7",
+   "claim": "NG19 does not have",
+   "absent": [
+    "standalone",
+    "zone.js",
+    "@if",
+    "@for",
+    "users love",
+    "community translations"
+   ]
+  },
+  {
+   "cite": "NG20 p.1-7",
+   "claim": "NG20 does not have",
+   "absent": [
+    "standalone",
+    "zoneless",
+    "computed",
+    "vitest",
+    "users love",
+    "built by angular",
+    "ελληνικά"
+   ]
+  },
+  {
+   "cite": "NG21 p.1-9",
+   "claim": "NG21 does not have",
+   "absent": [
+    "@defer",
+    "deferred loading",
+    "lazy-loadable",
+    "standalone",
+    "zoneless",
+    "signal forms",
+    "opinionated",
+    "browser extension",
+    "never miss a version",
+    "guarantee everything works",
+    "meet your performance targets"
+   ]
+  },
+  {
+   "cite": "NG22 p.1-9",
+   "claim": "NG22 does not have",
+   "absent": [
+    "@defer",
+    "deferred",
+    "angular material",
+    "control flow",
+    "resource",
+    "opinionated",
+    "browser extension",
+    "modular, loosely"
+   ]
+  },
+  {
+   "cite": "NG18 p.1-6",
+   "claim": "NG18 has no new phrases",
+   "absent": [
+    "share code across",
+    "community translations",
+    "built by angular"
+   ]
+  },
+  {
+   "cite": "NG19 p.1-7",
+   "claim": "NG19 has no new phrases",
+   "absent": [
+    "share code across",
+    "built by angular"
+   ]
+  },
+  {
+   "cite": "NG20 p.1-7",
+   "claim": "NG20 has no new phrases",
+   "absent": [
+    "share code across",
+    "community translations"
+   ]
+  },
+  {
+   "cite": "NG21 p.1-9",
+   "claim": "NG21 has no release dates",
+   "absent": [
+    "release date",
+    "released on",
+    "testing",
+    "animation",
+    "inject("
+   ]
+  },
+  {
+   "cite": "NG18 p.1-6",
+   "claim": "NG18 has no commands",
+   "absent": [
+    "release date",
+    "ng new",
+    "ng serve",
+    "testing",
+    "animation"
+   ]
+  },
+  {
+   "cite": "NG22 p.1-9",
+   "claim": "NG22 has no commands",
+   "absent": [
+    "ng new",
+    "ng serve",
+    "ng build",
+    "jest",
+    "karma"
+   ]
+  },
+  {
+   "cite": "NG18 p.3",
+   "claim": "ng update transforms",
+   "contains": [
+    "automated code transformations",
+    "backwards"
+   ]
+  },
+  {
+   "cite": "NG21 p.5",
+   "claim": "release schedule",
+   "contains": [
+    "time-based",
+    "backwards compatible"
+   ]
+  },
+  {
+   "cite": "NG22 p.7",
+   "claim": "community",
+   "contains": [
+    "google developer experts",
+    "developers library"
+   ]
+  },
+  {
+   "cite": "NG18 p.1-6",
+   "claim": "NG18",
+   "absent": [
+    "signal forms",
+    "incremental hydration"
+   ]
+  },
+  {
+   "cite": "NG19 p.1-7",
+   "claim": "NG19",
+   "absent": [
+    "zoneless",
+    "control flow",
+    "angular material"
+   ]
+  },
+  {
+   "cite": "NG20 p.1-7",
+   "claim": "NG20",
+   "absent": [
+    "control flow",
+    "signal forms",
+    "resource"
+   ]
+  },
+  {
+   "cite": "NG21 p.1-9",
+   "claim": "NG21",
+   "absent": [
+    "control flow",
+    "angular material",
+    "webpack"
+   ]
+  },
+  {
+   "cite": "NG22 p.1-9",
+   "claim": "NG22",
+   "absent": [
+    "standalone",
+    "zoneless",
+    "typescript",
+    "rxjs"
+   ]
+  },
+  {
+   "cite": "NG19 p.1-7",
+   "claim": "NG19",
+   "absent": [
+    "ng new",
+    "release date",
+    "testing"
+   ]
+  },
+  {
+   "cite": "NG20 p.1-7",
+   "claim": "NG20",
+   "absent": [
+    "ng new",
+    "release date",
+    "animation"
+   ]
+  },
+  {
+   "cite": "NG21 p.2",
+   "claim": "NG21 p2 is only Components/Signals",
+   "absent": [
+    "ssr",
+    "@defer"
+   ]
+  }
+ ]
+}

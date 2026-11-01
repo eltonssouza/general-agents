@@ -1,0 +1,45 @@
+# Glossary (source terms in English)
+
+Each entry summarizes what the sources say (paraphrase) with a page. `[DATED]` when the term ages.
+
+- **Prompt / prompt engineering**: instruction/context sent to the model; prompt engineering = designing them without changing parameters (PES p.1); manual creation of prompts (LLMS p.44).
+- **Zero-shot / few-shot**: no examples / a few input-output pairs (PES p.2).
+- **In-context learning (ICL)**: the model solves the task from a description and/or demonstrations in the prompt, without updating gradients (LLMS p.5, 49-50).
+- **Chain-of-Thought (CoT)**: ⟨input, steps, output⟩ demonstrations for step-by-step reasoning (LLMS p.52; PES p.2).
+- **Auto-CoT**: generates the chains automatically with "Let's think step by step" (PES p.2; LLMS p.52).
+- **Self-Consistency**: sample several chains and vote for the most consistent answer (LLMS p.52; PES p.2).
+- **Tree/Graph-of-Thoughts**: reasoning with tree/graph search, with backtracking (LLMS p.53; PES p.4).
+- **Long CoT**: long thinking with reflection and verification before answering (LLMS p.92-93) `[DATED 2025]`.
+- **Test-time (inference-time) scaling**: trading inference cost for performance (LLMS p.96).
+- **RAG**: retrieve external context and incorporate it into the prompt (LLMS p.88-89; PES p.7).
+- **Intrinsic / extrinsic hallucination**: conflicts with the source / unverifiable (LLMS p.59, 90).
+- **LLM**: Transformer with hundreds of billions of parameters; the survey focuses on >10B (LLMS p.4).
+- **Emergent abilities**: abilities absent in small models and present in large ones, with a jump above random (LLMS p.5).
+- **Scaling law (KM, Chinchilla)**: power-law relations between loss and N, D, C (LLMS p.4); C≈6ND (LLMS p.4).
+- **Predictable scaling / inverse scaling**: predicting large models from small ones; tasks where performance worsens as the loss drops (LLMS p.5).
+- **Pre-training**: training on a massive corpus with a language-modeling objective (LLMS p.16, 26).
+- **Causal / prefix decoder; encoder-decoder; MoE; SSM**: architectures (LLMS p.22-23).
+- **RoPE / ALiBi**: position embeddings (rotary / linear bias) (LLMS p.25).
+- **MQA / GQA / FlashAttention / PagedAttention / KV cache**: attention and cache variants and optimizations (LLMS p.25).
+- **Temperature, top-k, top-p**: sampling controls (LLMS p.27).
+- **Tokenization (BPE, WordPiece, Unigram, SentencePiece)**: subword segmentation (LLMS p.19).
+- **Data mixture / curriculum**: proportion and order of data sources (LLMS p.20-21).
+- **Deduplication / data contamination**: removing duplicates; avoiding overlap between training and evaluation (LLMS p.18, 65).
+- **Instruction tuning (SFT)**: supervised tuning on instances formatted as instructions (LLMS p.30).
+- **Alignment tax**: loss of general ability when aligning (LLMS p.36).
+- **HHH**: helpful, honest, harmless (LLMS p.36-37).
+- **RLHF / RLAIF / PPO / reward model**: alignment via RL with human/AI feedback and a reward model (LLMS p.38).
+- **DPO**: direct preference optimization without an explicit reward model (LLMS p.41).
+- **Process-supervised RLHF / PRM**: reward per reasoning step (LLMS p.39-40).
+- **PEFT / LoRA / adapter / prefix / prompt tuning**: parameter-efficient tuning (LLMS p.43-44).
+- **Red teaming**: adversarial probing to find harmful outputs (LLMS p.37).
+- **Planning (planner/executor/environment)**: decomposition and execution of plans with feedback (LLMS p.54).
+- **LLM agent**: LLM with memory, planning and execution (LLMS p.80).
+- **pass@k**: 1 if at least one of the k programs passes the tests (LLMS p.56).
+- **MMLU / BIG-bench / BBH / HELM**: comprehensive benchmarks (LLMS p.63).
+- **Position / verbosity / self-preference bias**: biases of LLM as evaluator (LLMS p.65-66).
+- **3D parallelism / ZeRO / FSDP / BF16**: parallelism and memory in training (LLMS p.29-30, 82).
+- **Prefill / decoding; memory-bound / compute-bound; arithmetic intensity**: inference phases and bottlenecks (LLMS p.83).
+- **Quantization (PTQ/QAT), SmoothQuant, GPTQ, QLoRA**: weight/activation compression (LLMS p.85-87).
+- **Speculative decoding / continuous batching**: inference acceleration (LLMS p.84-85).
+- **Prompt origin (Manual, LM Generated, Retrieval Based, Hybrid) / turns (Single, Multi)**: columns of PES Table 1 (PES p.10).

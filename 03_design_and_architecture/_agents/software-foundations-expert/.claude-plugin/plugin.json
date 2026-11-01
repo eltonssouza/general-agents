@@ -1,0 +1,18 @@
+{
+  "name": "software-foundations-expert",
+  "version": "2.0.0",
+  "description": "Expert in programming and language foundations based on SICP (Abelson and Sussman), The Art of Unix Programming (Raymond) and Crafting Interpreters (Nystrom): evaluation models, data abstraction, state and concurrency, evaluators, Unix philosophy, scanner/parser/resolver, bytecode VM, closures and garbage collection. Cites PDF pages, separates what is from the book from inference and extrapolation, states what the books do not cover and flags dated content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "sicp",
+    "unix-philosophy",
+    "crafting-interpreters",
+    "interpreters",
+    "compilers",
+    "evaluation-model",
+    "closures",
+    "garbage-collection",
+    "bytecode-vm"
+  ]
+}

@@ -1,0 +1,2628 @@
+{
+ "source": "RG.txt, GPP.txt, CC.txt, PEAA.txt extracted with PyMuPDF; markers === PAGE N === (N = PDF page)",
+ "positive": [
+  {
+   "id": "P001",
+   "sigla": "RG",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "idioms",
+    "architectural patterns",
+    "creational patterns"
+   ],
+   "claim": "idioms, architectural patterns and 3 groups by intent"
+  },
+  {
+   "id": "P002",
+   "sigla": "RG",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "Gang of Four",
+    "23 patterns",
+    "Christopher Alexander"
+   ],
+   "claim": "origin in Alexander; GoF with 23 patterns"
+  },
+  {
+   "id": "P003",
+   "sigla": "RG",
+   "pages": [
+    8,
+    9
+   ],
+   "terms": [
+    "kludges",
+    "lambda",
+    "hammer"
+   ],
+   "claim": "criticism: language crutch, Strategy as lambda, hammer"
+  },
+  {
+   "id": "P004",
+   "sigla": "RG",
+   "pages": [
+    10,
+    11
+   ],
+   "terms": [
+    "Creational design patterns",
+    "object creation mechanisms"
+   ],
+   "claim": "creational: object creation mechanisms"
+  },
+  {
+   "id": "P005",
+   "sigla": "RG",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "families of related objects"
+   ],
+   "claim": "Abstract Factory: families of related objects"
+  },
+  {
+   "id": "P006",
+   "sigla": "RG",
+   "pages": [
+    18,
+    19
+   ],
+   "terms": [
+    "Modern",
+    "Victorian",
+    "ArtDeco"
+   ],
+   "claim": "Abstract Factory: furniture variants"
+  },
+  {
+   "id": "P007",
+   "sigla": "RG",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "blur its primary responsibility"
+   ],
+   "claim": "Abstract Factory when Factory Methods blur the responsibility"
+  },
+  {
+   "id": "P008",
+   "sigla": "RG",
+   "pages": [
+    31,
+    32
+   ],
+   "terms": [
+    "constructor with lots of parameters",
+    "swimming pools"
+   ],
+   "claim": "Builder: constructor with many parameters"
+  },
+  {
+   "id": "P009",
+   "sigla": "RG",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "director"
+   ],
+   "claim": "Builder: optional director"
+  },
+  {
+   "id": "P010",
+   "sigla": "RG",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "telescoping constructor",
+    "Pizza"
+   ],
+   "claim": "Builder: telescoping constructor"
+  },
+  {
+   "id": "P011",
+   "sigla": "RG",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Virtual Constructor"
+   ],
+   "claim": "Factory Method also known as Virtual Constructor"
+  },
+  {
+   "id": "P012",
+   "sigla": "RG",
+   "pages": [
+    46,
+    47
+   ],
+   "terms": [
+    "Truck",
+    "Ship",
+    "common base class or interface"
+   ],
+   "claim": "Factory Method: logistics, products with a common interface"
+  },
+  {
+   "id": "P013",
+   "sigla": "RG",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "object pool"
+   ],
+   "claim": "Factory Method can return cached or pooled objects"
+  },
+  {
+   "id": "P014",
+   "sigla": "RG",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "specialization of Template Method"
+   ],
+   "claim": "Factory Method is a specialization of Template Method"
+  },
+  {
+   "id": "P015",
+   "sigla": "RG",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "Also known as: Clone"
+   ],
+   "claim": "Prototype also known as Clone"
+  },
+  {
+   "id": "P016",
+   "sigla": "RG",
+   "pages": [
+    59,
+    62
+   ],
+   "terms": [
+    "private",
+    "Prototype registry"
+   ],
+   "claim": "Prototype: private fields and prototype registry"
+  },
+  {
+   "id": "P017",
+   "sigla": "RG",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "circular references"
+   ],
+   "claim": "Prototype: circular references are a downside"
+  },
+  {
+   "id": "P018",
+   "sigla": "RG",
+   "pages": [
+    71
+   ],
+   "terms": [
+    "violating the Single Responsibility Principle"
+   ],
+   "claim": "Singleton violates the SRP"
+  },
+  {
+   "id": "P019",
+   "sigla": "RG",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "acquireThreadLock"
+   ],
+   "claim": "Singleton pseudocode uses a thread lock"
+  },
+  {
+   "id": "P020",
+   "sigla": "RG",
+   "pages": [
+    75,
+    76
+   ],
+   "terms": [
+    "unit test",
+    "mock"
+   ],
+   "claim": "Singleton makes testing and mocking harder"
+  },
+  {
+   "id": "P021",
+   "sigla": "RG",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "Flyweight would resemble Singleton",
+    "immutable"
+   ],
+   "claim": "Flyweight vs Singleton"
+  },
+  {
+   "id": "P022",
+   "sigla": "RG",
+   "pages": [
+    79
+   ],
+   "terms": [
+    "XML",
+    "JSON"
+   ],
+   "claim": "Adapter: XML and JSON example"
+  },
+  {
+   "id": "P023",
+   "sigla": "RG",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "multiple inheritance",
+    "C++"
+   ],
+   "claim": "class adapter requires multiple inheritance"
+  },
+  {
+   "id": "P024",
+   "sigla": "RG",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "BlueCircle",
+    "RedSquare",
+    "triangle"
+   ],
+   "claim": "Bridge: shapes x colors"
+  },
+  {
+   "id": "P025",
+   "sigla": "RG",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "confuse the Bridge with the Strategy"
+   ],
+   "claim": "Bridge vs Strategy"
+  },
+  {
+   "id": "P026",
+   "sigla": "RG",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "Interface Segregation Principle"
+   ],
+   "claim": "Composite: add/remove in the interface violates the ISP"
+  },
+  {
+   "id": "P027",
+   "sigla": "RG",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "only has one child component"
+   ],
+   "claim": "Decorator is like a Composite with a single child"
+  },
+  {
+   "id": "P028",
+   "sigla": "RG",
+   "pages": [
+    114
+   ],
+   "terms": [
+    "Subclasses can have just one parent class"
+   ],
+   "claim": "Decorator: inheritance limits you to one parent"
+  },
+  {
+   "id": "P029",
+   "sigla": "RG",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "hard to remove a specific wrapper"
+   ],
+   "claim": "Decorator: downside of removing a wrapper"
+  },
+  {
+   "id": "P030",
+   "sigla": "RG",
+   "pages": [
+    125
+   ],
+   "terms": [
+    "life cycle"
+   ],
+   "claim": "Proxy manages the lifecycle; Decorator is controlled by the client"
+  },
+  {
+   "id": "P031",
+   "sigla": "RG",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "god object"
+   ],
+   "claim": "Facade can become a god object"
+  },
+  {
+   "id": "P032",
+   "sigla": "RG",
+   "pages": [
+    137,
+    139
+   ],
+   "terms": [
+    "intrinsic state",
+    "extrinsic state",
+    "immutab"
+   ],
+   "claim": "Flyweight: intrinsic and extrinsic state; immutability"
+  },
+  {
+   "id": "P033",
+   "sigla": "RG",
+   "pages": [
+    143,
+    144
+   ],
+   "terms": [
+    "barely fit into available RAM"
+   ],
+   "claim": "Flyweight only when it barely fits in RAM"
+  },
+  {
+   "id": "P034",
+   "sigla": "RG",
+   "pages": [
+    153,
+    154
+   ],
+   "terms": [
+    "virtual proxy",
+    "protection proxy",
+    "remote proxy",
+    "logging proxy",
+    "caching proxy",
+    "Smart reference"
+   ],
+   "claim": "Proxy: six uses"
+  },
+  {
+   "id": "P035",
+   "sigla": "RG",
+   "pages": [
+    160
+   ],
+   "terms": [
+    "canonical"
+   ],
+   "claim": "CoR: the most canonical variant"
+  },
+  {
+   "id": "P036",
+   "sigla": "RG",
+   "pages": [
+    169
+   ],
+   "terms": [
+    "unhandled"
+   ],
+   "claim": "CoR: requests may go unhandled"
+  },
+  {
+   "id": "P037",
+   "sigla": "RG",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "Also known as: Action, Transaction"
+   ],
+   "claim": "Command: aliases"
+  },
+  {
+   "id": "P038",
+   "sigla": "RG",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "Memento pattern",
+    "inverse operation"
+   ],
+   "claim": "Command: undo with Memento or inverse operation"
+  },
+  {
+   "id": "P039",
+   "sigla": "RG",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "powerful version of the Command"
+   ],
+   "claim": "Visitor as a powerful version of Command"
+  },
+  {
+   "id": "P040",
+   "sigla": "RG",
+   "pages": [
+    197
+   ],
+   "terms": [
+    "overkill"
+   ],
+   "claim": "Iterator: overkill for simple collections"
+  },
+  {
+   "id": "P041",
+   "sigla": "RG",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "God Object"
+   ],
+   "claim": "Mediator can become a God Object"
+  },
+  {
+   "id": "P042",
+   "sigla": "RG",
+   "pages": [
+    209
+   ],
+   "terms": [
+    "Mediator and Observer"
+   ],
+   "claim": "Mediator vs Observer"
+  },
+  {
+   "id": "P043",
+   "sigla": "RG",
+   "pages": [
+    214,
+    215
+   ],
+   "terms": [
+    "caretaker",
+    "originator"
+   ],
+   "claim": "Memento: roles"
+  },
+  {
+   "id": "P044",
+   "sigla": "RG",
+   "pages": [
+    221
+   ],
+   "terms": [
+    "PHP, Python and JavaScript"
+   ],
+   "claim": "Memento: dynamic languages"
+  },
+  {
+   "id": "P045",
+   "sigla": "RG",
+   "pages": [
+    232
+   ],
+   "terms": [
+    "random order"
+   ],
+   "claim": "Observer: random notification order"
+  },
+  {
+   "id": "P046",
+   "sigla": "RG",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "Draft",
+    "Moderation",
+    "Published"
+   ],
+   "claim": "State: document"
+  },
+  {
+   "id": "P047",
+   "sigla": "RG",
+   "pages": [
+    239
+   ],
+   "terms": [
+    "aware of each other"
+   ],
+   "claim": "State: states may know each other"
+  },
+  {
+   "id": "P048",
+   "sigla": "RG",
+   "pages": [
+    256
+   ],
+   "terms": [
+    "anonymous functions"
+   ],
+   "claim": "Strategy with anonymous functions"
+  },
+  {
+   "id": "P049",
+   "sigla": "RG",
+   "pages": [
+    261
+   ],
+   "terms": [
+    "hook"
+   ],
+   "claim": "Template Method: hooks"
+  },
+  {
+   "id": "P050",
+   "sigla": "RG",
+   "pages": [
+    266
+   ],
+   "terms": [
+    "Liskov Substitution Principle"
+   ],
+   "claim": "Template Method: possible LSP violation"
+  },
+  {
+   "id": "P051",
+   "sigla": "RG",
+   "pages": [
+    271
+   ],
+   "terms": [
+    "Double Dispatch"
+   ],
+   "claim": "Visitor: double dispatch"
+  },
+  {
+   "id": "P052",
+   "sigla": "RG",
+   "pages": [
+    278
+   ],
+   "terms": [
+    "nested"
+   ],
+   "claim": "Visitor: access to private members via nested class"
+  },
+  {
+   "id": "P053",
+   "sigla": "RG",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "22 design patterns",
+    "8 principles"
+   ],
+   "claim": "the site sells an e-book with 22 patterns (the PDF is from the site)"
+  },
+  {
+   "id": "P054",
+   "sigla": "RG",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "404"
+   ],
+   "claim": "page 1 of the PDF is a 404 page"
+  },
+  {
+   "id": "P055",
+   "sigla": "GPP",
+   "pages": [
+    4,
+    5
+   ],
+   "terms": [
+    "Gang of Four",
+    "thirteen design patterns"
+   ],
+   "claim": "the book presents 13 patterns of its own"
+  },
+  {
+   "id": "P056",
+   "sigla": "GPP",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "YAGNI"
+   ],
+   "claim": "YAGNI"
+  },
+  {
+   "id": "P057",
+   "sigla": "GPP",
+   "pages": [
+    21,
+    22
+   ],
+   "terms": [
+    "reified method call",
+    "Commands are an object-oriented replacement for callbacks"
+   ],
+   "claim": "Command is a reified call"
+  },
+  {
+   "id": "P058",
+   "sigla": "GPP",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "Null Object"
+   ],
+   "claim": "Command: Null Object for a button with no action"
+  },
+  {
+   "id": "P059",
+   "sigla": "GPP",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "Memento",
+    "waste of memory"
+   ],
+   "claim": "Memento is costly for undo"
+  },
+  {
+   "id": "P060",
+   "sigla": "GPP",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "re-play",
+    "Control-Z"
+   ],
+   "claim": "undo/redo and replay"
+  },
+  {
+   "id": "P061",
+   "sigla": "GPP",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "Subclass Sandbox",
+    "Chain of Responsibility",
+    "Flyweight"
+   ],
+   "claim": "Command: see also"
+  },
+  {
+   "id": "P062",
+   "sigla": "GPP",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "instanced rendering",
+    "only Gang of Four design pattern to have actual hardware support"
+   ],
+   "claim": "Flyweight with hardware support"
+  },
+  {
+   "id": "P063",
+   "sigla": "GPP",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "Type Object",
+    "purely about efficiency"
+   ],
+   "claim": "Flyweight vs Type Object"
+  },
+  {
+   "id": "P064",
+   "sigla": "GPP",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "almost always immutable"
+   ],
+   "claim": "Flyweights almost always immutable"
+  },
+  {
+   "id": "P065",
+   "sigla": "GPP",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "golden rule of optimization is profile first",
+    "no penalty"
+   ],
+   "claim": "Flyweight: profile first"
+  },
+  {
+   "id": "P066",
+   "sigla": "GPP",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "list of observers"
+   ],
+   "claim": "Observer: list of observers"
+  },
+  {
+   "id": "P067",
+   "sigla": "GPP",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "stay off the UI thread"
+   ],
+   "claim": "synchronous Observer"
+  },
+  {
+   "id": "P068",
+   "sigla": "GPP",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "dying breath"
+   ],
+   "claim": "Observer: final notification"
+  },
+  {
+   "id": "P069",
+   "sigla": "GPP",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "lapsed listener problem"
+   ],
+   "claim": "lapsed listener problem"
+  },
+  {
+   "id": "P070",
+   "sigla": "GPP",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "closures"
+   ],
+   "claim": "modern Observer with closures"
+  },
+  {
+   "id": "P071",
+   "sigla": "GPP",
+   "pages": [
+    62,
+    64
+   ],
+   "terms": [
+    "parallel class hierarchy",
+    "deep clone or shallow one"
+   ],
+   "claim": "Prototype: parallel hierarchy and shallow or deep clone"
+  },
+  {
+   "id": "P072",
+   "sigla": "GPP",
+   "pages": [
+    66,
+    67
+   ],
+   "terms": [
+    "Prototype design pattern was the best answer"
+   ],
+   "claim": "Nystrom found no case where Prototype was the best"
+  },
+  {
+   "id": "P073",
+   "sigla": "GPP",
+   "pages": [
+    73,
+    75
+   ],
+   "terms": [
+    "prototype",
+    "delegation",
+    "goblin"
+   ],
+   "claim": "prototype in game data"
+  },
+  {
+   "id": "P074",
+   "sigla": "GPP",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "how not to use"
+   ],
+   "claim": "the Singleton chapter shows how not to use it"
+  },
+  {
+   "id": "P075",
+   "sigla": "GPP",
+   "pages": [
+    82,
+    83
+   ],
+   "terms": [
+    "pure",
+    "concurrency",
+    "placebo"
+   ],
+   "claim": "Singleton: global, purity, concurrency"
+  },
+  {
+   "id": "P076",
+   "sigla": "GPP",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "Lazy initialization takes control away from you"
+   ],
+   "claim": "Singleton: lazy init takes away control"
+  },
+  {
+   "id": "P077",
+   "sigla": "GPP",
+   "pages": [
+    88,
+    89
+   ],
+   "terms": [
+    "Pass it in",
+    "dependency injection"
+   ],
+   "claim": "alternatives: pass the object"
+  },
+  {
+   "id": "P078",
+   "sigla": "GPP",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "never used the full Gang of Four implementation"
+   ],
+   "claim": "Nystrom never used the full Singleton"
+  },
+  {
+   "id": "P079",
+   "sigla": "GPP",
+   "pages": [
+    92,
+    93
+   ],
+   "terms": [
+    "air jumping"
+   ],
+   "claim": "State: air jumping"
+  },
+  {
+   "id": "P080",
+   "sigla": "GPP",
+   "pages": [
+    97
+   ],
+   "terms": [
+    "Zork",
+    "enum"
+   ],
+   "claim": "FSM: Zork and enum"
+  },
+  {
+   "id": "P081",
+   "sigla": "GPP",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "The difference is intent"
+   ],
+   "claim": "State vs Strategy vs Type Object"
+  },
+  {
+   "id": "P082",
+   "sigla": "GPP",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "Flyweight"
+   ],
+   "claim": "static states are flyweights"
+  },
+  {
+   "id": "P083",
+   "sigla": "GPP",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "n × m",
+    "n + m"
+   ],
+   "claim": "concurrent machines"
+  },
+  {
+   "id": "P084",
+   "sigla": "GPP",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "pushdown automaton"
+   ],
+   "claim": "pushdown automaton"
+  },
+  {
+   "id": "P085",
+   "sigla": "GPP",
+   "pages": [
+    110
+   ],
+   "terms": [
+    "behavior trees"
+   ],
+   "claim": "modern AI: behavior trees"
+  },
+  {
+   "id": "P086",
+   "sigla": "GPP",
+   "pages": [
+    114,
+    115
+   ],
+   "terms": [
+    "tearing"
+   ],
+   "claim": "Double Buffer: tearing"
+  },
+  {
+   "id": "P087",
+   "sigla": "GPP",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "next buffer",
+    "current buffer"
+   ],
+   "claim": "Double Buffer: next and current"
+  },
+  {
+   "id": "P088",
+   "sigla": "GPP",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "The swap itself takes time"
+   ],
+   "claim": "Double Buffer: cost of the swap"
+  },
+  {
+   "id": "P089",
+   "sigla": "GPP",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "Swap pointers or references"
+   ],
+   "claim": "Double Buffer: swapping pointers"
+  },
+  {
+   "id": "P090",
+   "sigla": "GPP",
+   "pages": [
+    128
+   ],
+   "terms": [
+    "swapBuffers()",
+    "swap chains"
+   ],
+   "claim": "Double Buffer: OpenGL and Direct3D"
+  },
+  {
+   "id": "P091",
+   "sigla": "GPP",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "processInput();",
+    "tick"
+   ],
+   "claim": "basic Game Loop"
+  },
+  {
+   "id": "P092",
+   "sigla": "GPP",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "PeekMessage",
+    "requestAnimationFrame"
+   ],
+   "claim": "Game Loop: platform loop"
+  },
+  {
+   "id": "P093",
+   "sigla": "GPP",
+   "pages": [
+    137,
+    138
+   ],
+   "terms": [
+    "deterministic",
+    "Fred",
+    "George"
+   ],
+   "claim": "variable step is non-deterministic"
+  },
+  {
+   "id": "P094",
+   "sigla": "GPP",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "maximum number of iterations",
+    "MS_PER_UPDATE"
+   ],
+   "claim": "iteration cap without a number"
+  },
+  {
+   "id": "P095",
+   "sigla": "GPP",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "220 pixels",
+    "400 pixels per frame"
+   ],
+   "claim": "rendering example"
+  },
+  {
+   "id": "P096",
+   "sigla": "GPP",
+   "pages": [
+    149
+   ],
+   "terms": [
+    "butter"
+   ],
+   "claim": "Update Method is the butter of the Game Loop"
+  },
+  {
+   "id": "P097",
+   "sigla": "GPP",
+   "pages": [
+    151
+   ],
+   "terms": [
+    "Double Buffer",
+    "not truly concurrent"
+   ],
+   "claim": "Update Method: not concurrent"
+  },
+  {
+   "id": "P098",
+   "sigla": "GPP",
+   "pages": [
+    152,
+    153
+   ],
+   "terms": [
+    "backwards"
+   ],
+   "claim": "Update Method: removals during the loop"
+  },
+  {
+   "id": "P099",
+   "sigla": "GPP",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "object composition",
+    "class inheritance"
+   ],
+   "claim": "prefer composition over inheritance (GoF)"
+  },
+  {
+   "id": "P100",
+   "sigla": "GPP",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "dormant"
+   ],
+   "claim": "Update Method: dormant objects"
+  },
+  {
+   "id": "P101",
+   "sigla": "GPP",
+   "pages": [
+    164,
+    167
+   ],
+   "terms": [
+    "Interpreter",
+    "68 bytes",
+    "15 years"
+   ],
+   "claim": "Bytecode vs Interpreter; 68 bytes; Ruby 15 years"
+  },
+  {
+   "id": "P102",
+   "sigla": "GPP",
+   "pages": [
+    169
+   ],
+   "terms": [
+    "most complex pattern in this book"
+   ],
+   "claim": "Bytecode is the most complex"
+  },
+  {
+   "id": "P103",
+   "sigla": "GPP",
+   "pages": [
+    170
+   ],
+   "terms": [
+    "debugger"
+   ],
+   "claim": "Bytecode: you lose the debugger"
+  },
+  {
+   "id": "P104",
+   "sigla": "GPP",
+   "pages": [
+    182,
+    183
+   ],
+   "terms": [
+    "register-based",
+    "Lua",
+    "Lua 5.1"
+   ],
+   "claim": "stack or register VM"
+  },
+  {
+   "id": "P105",
+   "sigla": "GPP",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "Wren",
+    "Kismet"
+   ],
+   "claim": "Bytecode: see also"
+  },
+  {
+   "id": "P106",
+   "sigla": "GPP",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "404 Not Found",
+    "subtype-sandbox"
+   ],
+   "claim": "the Subclass Sandbox chapter is a 404 in the PDF"
+  },
+  {
+   "id": "P107",
+   "sigla": "GPP",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "Type Object",
+    "Breed"
+   ],
+   "claim": "Type Object"
+  },
+  {
+   "id": "P108",
+   "sigla": "GPP",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "vtable"
+   ],
+   "claim": "vtable as a type object"
+  },
+  {
+   "id": "P109",
+   "sigla": "GPP",
+   "pages": [
+    201,
+    202
+   ],
+   "terms": [
+    "copy-down"
+   ],
+   "claim": "copy-down delegation"
+  },
+  {
+   "id": "P110",
+   "sigla": "GPP",
+   "pages": [
+    207
+   ],
+   "terms": [
+    "Flyweight GoF",
+    "State GoF",
+    "Prototype GoF"
+   ],
+   "claim": "Type Object: relatives"
+  },
+  {
+   "id": "P111",
+   "sigla": "GPP",
+   "pages": [
+    210
+   ],
+   "terms": [
+    "5,000-line"
+   ],
+   "claim": "5,000-line class"
+  },
+  {
+   "id": "P112",
+   "sigla": "GPP",
+   "pages": [
+    212
+   ],
+   "terms": [
+    "Deadly Diamond"
+   ],
+   "claim": "Component: Deadly Diamond"
+  },
+  {
+   "id": "P113",
+   "sigla": "GPP",
+   "pages": [
+    221
+   ],
+   "terms": [
+    "demo mode"
+   ],
+   "claim": "Component: demo mode"
+  },
+  {
+   "id": "P114",
+   "sigla": "GPP",
+   "pages": [
+    222
+   ],
+   "terms": [
+    "entity component systems"
+   ],
+   "claim": "ECS cited in passing"
+  },
+  {
+   "id": "P115",
+   "sigla": "GPP",
+   "pages": [
+    228
+   ],
+   "terms": [
+    "Unity",
+    "Delta3D",
+    "XNA"
+   ],
+   "claim": "Component: Unity, Delta3D, XNA"
+  },
+  {
+   "id": "P116",
+   "sigla": "GPP",
+   "pages": [
+    235
+   ],
+   "terms": [
+    "both statically and in time"
+   ],
+   "claim": "Event Queue decouples in time"
+  },
+  {
+   "id": "P117",
+   "sigla": "GPP",
+   "pages": [
+    235,
+    236
+   ],
+   "terms": [
+    "decouple something in time",
+    "sender needs a response"
+   ],
+   "claim": "Event Queue: only when you need to decouple in time"
+  },
+  {
+   "id": "P118",
+   "sigla": "GPP",
+   "pages": [
+    237
+   ],
+   "terms": [
+    "feedback loops"
+   ],
+   "claim": "Event Queue: feedback loops"
+  },
+  {
+   "id": "P119",
+   "sigla": "GPP",
+   "pages": [
+    239
+   ],
+   "terms": [
+    "ring buffer"
+   ],
+   "claim": "ring buffer"
+  },
+  {
+   "id": "P120",
+   "sigla": "GPP",
+   "pages": [
+    243
+   ],
+   "terms": [
+    "larger of the two volumes"
+   ],
+   "claim": "aggregation with the highest volume"
+  },
+  {
+   "id": "P121",
+   "sigla": "GPP",
+   "pages": [
+    249
+   ],
+   "terms": [
+    "channel",
+    "actor model"
+   ],
+   "claim": "Event Queue: see also"
+  },
+  {
+   "id": "P122",
+   "sigla": "GPP",
+   "pages": [
+    252
+   ],
+   "terms": [
+    "phone book",
+    "sparingly"
+   ],
+   "claim": "Service Locator: phone book; sparingly"
+  },
+  {
+   "id": "P123",
+   "sigla": "GPP",
+   "pages": [
+    255
+   ],
+   "terms": [
+    "dependency injection"
+   ],
+   "claim": "GPP calls the provider registration DI"
+  },
+  {
+   "id": "P124",
+   "sigla": "GPP",
+   "pages": [
+    256,
+    257
+   ],
+   "terms": [
+    "NullAudio"
+   ],
+   "claim": "null service"
+  },
+  {
+   "id": "P125",
+   "sigla": "GPP",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "LoggedAudio"
+   ],
+   "claim": "logging decorator"
+  },
+  {
+   "id": "P126",
+   "sigla": "GPP",
+   "pages": [
+    265
+   ],
+   "terms": [
+    "GetComponent",
+    "GameServices"
+   ],
+   "claim": "Service Locator: Unity and XNA"
+  },
+  {
+   "id": "P127",
+   "sigla": "GPP",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "64 to 128 bytes",
+    "L1"
+   ],
+   "claim": "cache line of 64 to 128 bytes"
+  },
+  {
+   "id": "P128",
+   "sigla": "GPP",
+   "pages": [
+    271
+   ],
+   "terms": [
+    "fifty times slower",
+    "cache miss"
+   ],
+   "claim": "50x slower in the author's test"
+  },
+  {
+   "id": "P129",
+   "sigla": "GPP",
+   "pages": [
+    274
+   ],
+   "terms": [
+    "silver bullet"
+   ],
+   "claim": "Data Locality: no silver bullet"
+  },
+  {
+   "id": "P130",
+   "sigla": "GPP",
+   "pages": [
+    278,
+    279
+   ],
+   "terms": [
+    "fifty times faster"
+   ],
+   "claim": "contiguous arrays 50x faster in the author's test"
+  },
+  {
+   "id": "P131",
+   "sigla": "GPP",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "hot/cold splitting"
+   ],
+   "claim": "hot/cold splitting"
+  },
+  {
+   "id": "P132",
+   "sigla": "GPP",
+   "pages": [
+    285
+   ],
+   "terms": [
+    "data-oriented design",
+    "Noel Llopis"
+   ],
+   "claim": "data-oriented design"
+  },
+  {
+   "id": "P133",
+   "sigla": "GPP",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "Artemis"
+   ],
+   "claim": "Artemis"
+  },
+  {
+   "id": "P134",
+   "sigla": "GPP",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "ten world transform calculations"
+   ],
+   "claim": "Dirty Flag: ten computations for four objects"
+  },
+  {
+   "id": "P135",
+   "sigla": "GPP",
+   "pages": [
+    296
+   ],
+   "terms": [
+    "calculation and synchronization"
+   ],
+   "claim": "Dirty Flag: computation and synchronization"
+  },
+  {
+   "id": "P136",
+   "sigla": "GPP",
+   "pages": [
+    298
+   ],
+   "terms": [
+    "cache invalidation",
+    "Phil Karlton"
+   ],
+   "claim": "Dirty Flag: cache invalidation"
+  },
+  {
+   "id": "P137",
+   "sigla": "GPP",
+   "pages": [
+    302,
+    303
+   ],
+   "terms": [
+    "dirty_",
+    "parentWorld"
+   ],
+   "claim": "Dirty Flag: dirty parameter goes down the tree"
+  },
+  {
+   "id": "P138",
+   "sigla": "GPP",
+   "pages": [
+    305
+   ],
+   "terms": [
+    "Angular",
+    "physics engines"
+   ],
+   "claim": "Dirty Flag: see also"
+  },
+  {
+   "id": "P139",
+   "sigla": "GPP",
+   "pages": [
+    307,
+    308
+   ],
+   "terms": [
+    "fragmentation",
+    "soak tests"
+   ],
+   "claim": "Object Pool: fragmentation and soak tests"
+  },
+  {
+   "id": "P140",
+   "sigla": "GPP",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "Forcibly kill an existing object"
+   ],
+   "claim": "Object Pool: exhausted"
+  },
+  {
+   "id": "P141",
+   "sigla": "GPP",
+   "pages": [
+    312
+   ],
+   "terms": [
+    "garbage collector"
+   ],
+   "claim": "Object Pool with a garbage collector"
+  },
+  {
+   "id": "P142",
+   "sigla": "GPP",
+   "pages": [
+    315,
+    316
+   ],
+   "terms": [
+    "free list"
+   ],
+   "claim": "free list"
+  },
+  {
+   "id": "P143",
+   "sigla": "GPP",
+   "pages": [
+    320
+   ],
+   "terms": [
+    "Flyweight GoF"
+   ],
+   "claim": "Object Pool vs Flyweight"
+  },
+  {
+   "id": "P144",
+   "sigla": "GPP",
+   "pages": [
+    323,
+    324
+   ],
+   "terms": [
+    "O(n²)",
+    "n log n"
+   ],
+   "claim": "Spatial Partition: complexity"
+  },
+  {
+   "id": "P145",
+   "sigla": "GPP",
+   "pages": [
+    333
+   ],
+   "terms": [
+    "quadtrees",
+    "binary space partitions"
+   ],
+   "claim": "Spatial Partition: structures"
+  },
+  {
+   "id": "P146",
+   "sigla": "GPP",
+   "pages": [
+    336
+   ],
+   "terms": [
+    "octree",
+    "four smaller squares"
+   ],
+   "claim": "quadtree and octree"
+  },
+  {
+   "id": "P147",
+   "sigla": "GPP",
+   "pages": [
+    338
+   ],
+   "terms": [
+    "persistent bucket sort",
+    "tries"
+   ],
+   "claim": "Spatial Partition: structures as 1D structures"
+  },
+  {
+   "id": "P148",
+   "sigla": "CC",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "Meaningful Names",
+    "Use Intention-Revealing Names",
+    "Use Searchable Names"
+   ],
+   "claim": "table of contents: Ch. 2"
+  },
+  {
+   "id": "P149",
+   "sigla": "CC",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Flag Arguments",
+    "Command Query Separation",
+    "Stepdown Rule"
+   ],
+   "claim": "table of contents: Ch. 3"
+  },
+  {
+   "id": "P150",
+   "sigla": "CC",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Prefer Exceptions to Returning Error Codes",
+    "Structured Programming"
+   ],
+   "claim": "table of contents: error handling in functions"
+  },
+  {
+   "id": "P151",
+   "sigla": "CC",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "There Will Be Code"
+   ],
+   "claim": "Ch. 1: there will always be code"
+  },
+  {
+   "id": "P152",
+   "sigla": "CC",
+   "pages": [
+    33,
+    34
+   ],
+   "terms": [
+    "LeBlanc",
+    "Later equals never"
+   ],
+   "claim": "Ch. 1: LeBlanc's law"
+  },
+  {
+   "id": "P153",
+   "sigla": "CC",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "asymptotically approaching zero"
+   ],
+   "claim": "Ch. 1: productivity tends to zero"
+  },
+  {
+   "id": "P154",
+   "sigla": "CC",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "tiger team",
+    "10 years"
+   ],
+   "claim": "Ch. 1: the grand redesign"
+  },
+  {
+   "id": "P155",
+   "sigla": "CC",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "Primal Conundrum"
+   ],
+   "claim": "Ch. 1: the primal conundrum"
+  },
+  {
+   "id": "P156",
+   "sigla": "CC",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "Stroustrup",
+    "does one thing well"
+   ],
+   "claim": "Ch. 1: Stroustrup"
+  },
+  {
+   "id": "P157",
+   "sigla": "CC",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "broken windows"
+   ],
+   "claim": "Ch. 1: broken windows"
+  },
+  {
+   "id": "P158",
+   "sigla": "CC",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "Dave Thomas, founder of OTI",
+    "if it hath not tests"
+   ],
+   "claim": "Ch. 1: tests and clean code"
+  },
+  {
+   "id": "P159",
+   "sigla": "CC",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "Beck",
+    "Runs all the tests"
+   ],
+   "claim": "Ch. 1: Beck's rules according to Jeffries"
+  },
+  {
+   "id": "P160",
+   "sigla": "CC",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "Extract Method",
+    "more than one thing"
+   ],
+   "claim": "Ch. 1: Extract Method"
+  },
+  {
+   "id": "P161",
+   "sigla": "CC",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "Object Mentor School"
+   ],
+   "claim": "Ch. 1: the Object Mentor school"
+  },
+  {
+   "id": "P162",
+   "sigla": "CC",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "10:1",
+    "Boy Scout Rule"
+   ],
+   "claim": "Ch. 1: 10:1 reading and boy scout"
+  },
+  {
+   "id": "P163",
+   "sigla": "CC",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Principles, Patterns, and Practices",
+    "Single Responsibility Principle"
+   ],
+   "claim": "Ch. 1: prequel and SRP"
+  },
+  {
+   "id": "P164",
+   "sigla": "CC",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "argument(s) flag, 41"
+   ],
+   "claim": "index: argument flag, 41"
+  },
+  {
+   "id": "P165",
+   "sigla": "CC",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "flag arguments, 41"
+   ],
+   "claim": "index: flag arguments, 41"
+  },
+  {
+   "id": "P166",
+   "sigla": "CC",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "dyadic argument, 40"
+   ],
+   "claim": "index: dyadic argument"
+  },
+  {
+   "id": "P167",
+   "sigla": "CC",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "commands, separating from queries"
+   ],
+   "claim": "index: CQS"
+  },
+  {
+   "id": "P168",
+   "sigla": "CC",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "2008",
+    "Pearson"
+   ],
+   "claim": "credits: 2008/2009 Pearson"
+  },
+  {
+   "id": "P169",
+   "sigla": "PEAA",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Organizing Domain Logic",
+    "Service Layer"
+   ],
+   "claim": "table of contents: Ch. 2"
+  },
+  {
+   "id": "P170",
+   "sigla": "PEAA",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "Transaction Script",
+    "Domain Model",
+    "Table Module",
+    "Randy Stafford"
+   ],
+   "claim": "table of contents: Ch. 9"
+  },
+  {
+   "id": "P171",
+   "sigla": "PEAA",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "layered architecture"
+   ],
+   "claim": "Introduction: layered architecture"
+  },
+  {
+   "id": "P172",
+   "sigla": "PEAA",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "few things that are less logical than business logic"
+   ],
+   "claim": "Introduction: business logic"
+  },
+  {
+   "id": "P173",
+   "sigla": "PEAA",
+   "pages": [
+    30,
+    31
+   ],
+   "terms": [
+    "B2C",
+    "leasing",
+    "expense"
+   ],
+   "claim": "Introduction: three kinds of application"
+  },
+  {
+   "id": "P174",
+   "sigla": "PEAA",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "alarm bells"
+   ],
+   "claim": "Introduction: Always do this"
+  },
+  {
+   "id": "P175",
+   "sigla": "PEAA",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "Throughput",
+    "Latency"
+   ],
+   "claim": "Introduction: performance terms"
+  },
+  {
+   "id": "P176",
+   "sigla": "PEAA",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "horizontal scalability"
+   ],
+   "claim": "Introduction: horizontal scalability"
+  },
+  {
+   "id": "P177",
+   "sigla": "PEAA",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "half baked"
+   ],
+   "claim": "Introduction: half-baked patterns"
+  },
+  {
+   "id": "P178",
+   "sigla": "PEAA",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "example is not the pattern"
+   ],
+   "claim": "Introduction: the example is not the pattern"
+  },
+  {
+   "id": "P179",
+   "sigla": "PEAA",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "relational database",
+    "Architectural Patterns"
+   ],
+   "claim": "Ch. 3: architectural patterns"
+  },
+  {
+   "id": "P180",
+   "sigla": "PEAA",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "Row Data Gateway",
+    "Table Data Gateway",
+    "Record Set"
+   ],
+   "claim": "Ch. 3: gateways"
+  },
+  {
+   "id": "P181",
+   "sigla": "PEAA",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "Active Record",
+    "Table Module"
+   ],
+   "claim": "Ch. 3: Active Record and Table Module"
+  },
+  {
+   "id": "P182",
+   "sigla": "PEAA",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "Data Mapper",
+    "primary persistence mechanism"
+   ],
+   "claim": "Ch. 3: Data Mapper"
+  },
+  {
+   "id": "P183",
+   "sigla": "PEAA",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "impedance mismatch",
+    "a third of programming effort"
+   ],
+   "claim": "Ch. 3: impedance; a third of the effort"
+  },
+  {
+   "id": "P184",
+   "sigla": "PEAA",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "JDO",
+    "O/R mapping tool"
+   ],
+   "claim": "Ch. 3: O/R tools"
+  },
+  {
+   "id": "P185",
+   "sigla": "PEAA",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "Unit of Work",
+    "Identity Map",
+    "Lazy Load"
+   ],
+   "claim": "Ch. 3: behavioral problem"
+  },
+  {
+   "id": "P186",
+   "sigla": "PEAA",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "Service Stub"
+   ],
+   "claim": "Ch. 3: separate finders"
+  },
+  {
+   "id": "P187",
+   "sigla": "PEAA",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "three or four joins"
+   ],
+   "claim": "Ch. 3: joins"
+  },
+  {
+   "id": "P188",
+   "sigla": "PEAA",
+   "pages": [
+    49,
+    50
+   ],
+   "terms": [
+    "Foreign Key Mapping",
+    "Association Table Mapping"
+   ],
+   "claim": "Ch. 3: relationships"
+  },
+  {
+   "id": "P189",
+   "sigla": "PEAA",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "Embedded Value",
+    "Serialized LOB"
+   ],
+   "claim": "Ch. 3: embedded value and LOB"
+  },
+  {
+   "id": "P190",
+   "sigla": "PEAA",
+   "pages": [
+    52,
+    54
+   ],
+   "terms": [
+    "Single Table Inheritance",
+    "Class Table Inheritance",
+    "Concrete Table Inheritance"
+   ],
+   "claim": "Ch. 3: inheritance"
+  },
+  {
+   "id": "P191",
+   "sigla": "PEAA",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "first choice tends to be Single Table Inheritance"
+   ],
+   "claim": "Ch. 3: the author's first choice"
+  },
+  {
+   "id": "P192",
+   "sigla": "PEAA",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "six weeks"
+   ],
+   "claim": "Ch. 3: iterations of up to six weeks"
+  },
+  {
+   "id": "P193",
+   "sigla": "PEAA",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "Metadata Mapping"
+   ],
+   "claim": "Ch. 3: metadata"
+  },
+  {
+   "id": "P194",
+   "sigla": "PEAA",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "Repository",
+    "Query Object"
+   ],
+   "claim": "Ch. 3: Repository"
+  },
+  {
+   "id": "P195",
+   "sigla": "PEAA",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "garbage collection"
+   ],
+   "claim": "Ch. 3: connections and garbage collection"
+  },
+  {
+   "id": "P196",
+   "sigla": "PEAA",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "select *"
+   ],
+   "claim": "Ch. 3: select *"
+  },
+  {
+   "id": "P197",
+   "sigla": "PEAA",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "static SQL",
+    "precompiled"
+   ],
+   "claim": "Ch. 3: static SQL"
+  },
+  {
+   "id": "P198",
+   "sigla": "PEAA",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "2003",
+    "Addison"
+   ],
+   "claim": "credits: 2003 Addison-Wesley"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "terms": [
+    "Interpreter"
+   ],
+   "claim": "the RG catalog does not have the Interpreter pattern",
+   "sigla": "RG"
+  },
+  {
+   "id": "N02",
+   "terms": [
+    "double-checked",
+    "double checked",
+    "fluent",
+    "Hollywood"
+   ],
+   "claim": "RG does not use double-checked locking, fluent interface or the Hollywood Principle",
+   "sigla": "RG"
+  },
+  {
+   "id": "N03",
+   "terms": [
+    "Godot",
+    "Unity",
+    "Unreal"
+   ],
+   "claim": "RG does not mention game engines",
+   "sigla": "RG"
+  },
+  {
+   "id": "N04",
+   "terms": [
+    "double-checked",
+    "double checked"
+   ],
+   "claim": "GPP does not mention double-checked locking",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N05",
+   "terms": [
+    "weak reference",
+    "weak ref",
+    "WeakReference"
+   ],
+   "claim": "GPP does not recommend weak references for observers",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N06",
+   "terms": [
+    "Godot"
+   ],
+   "claim": "GPP does not mention Godot",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N07",
+   "terms": [
+    "test pollution"
+   ],
+   "claim": "GPP does not use the term test pollution",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N08",
+   "terms": [
+    "re:spiral of death|death spiral"
+   ],
+   "claim": "GPP does not use death spiral",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N09",
+   "terms": [
+    "bullet tunnel",
+    "tunneling"
+   ],
+   "claim": "GPP does not mention projectile tunneling",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N10",
+   "terms": [
+    "re:structures? of arrays|\\bSoA\\b|\\bAoS\\b|array of structures"
+   ],
+   "claim": "GPP does not use SoA/AoS",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N11",
+   "terms": [
+    "Superpower",
+    "spawnParticles(type)"
+   ],
+   "claim": "the Subclass Sandbox chapter is not in the PDF",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N12",
+   "terms": [
+    "re:1[.,]000\\s*[x×]\\s*1[.,]000",
+    "500 KB",
+    "500KB"
+   ],
+   "claim": "GPP does not have the 1000x1000 tile map with 500 KB textures",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N13",
+   "terms": [
+    "300 milliseconds",
+    "100 to 300"
+   ],
+   "claim": "GPP does not have pauses of 100 to 300 ms",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N14",
+   "terms": [
+    "Stop-the-World"
+   ],
+   "claim": "Stop-the-World does not appear in the Object Pool chapter",
+   "sigla": "GPP",
+   "pages": [
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321
+   ]
+  },
+  {
+   "id": "N15",
+   "terms": [
+    "gigabytes"
+   ],
+   "claim": "the GPP Flyweight chapter does not mention gigabytes",
+   "sigla": "GPP",
+   "pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ]
+  },
+  {
+   "id": "N16",
+   "terms": [
+    "re:V-?BLANK"
+   ],
+   "claim": "the Double Buffer chapter does not use VBLANK (it only appears in passing at GPP p.155)",
+   "sigla": "GPP",
+   "pages": [
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128
+   ]
+  },
+  {
+   "id": "N17",
+   "terms": [
+    "re:Lua 5\\.[2-9]"
+   ],
+   "claim": "GPP only describes Lua 5.1",
+   "sigla": "GPP"
+  },
+  {
+   "id": "N18",
+   "terms": [
+    "re:Unreal Engine|Godot"
+   ],
+   "claim": "GPP does not cite Unreal Engine or Godot as adopters of Component",
+   "sigla": "GPP",
+   "pages": [
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228
+   ]
+  },
+  {
+   "id": "N19",
+   "terms": [
+    "ShapeFactoryImpl",
+    "IShapeFactory"
+   ],
+   "claim": "the Clean Code sample does not have the example of interfaces with an I prefix",
+   "sigla": "CC"
+  },
+  {
+   "id": "N20",
+   "terms": [
+    "re:hardly ever 20 lines|less than 20 lines|20 lines"
+   ],
+   "claim": "the sample does not have the line limit per function",
+   "sigla": "CC"
+  },
+  {
+   "id": "N21",
+   "terms": [
+    "re:more than three arguments|three arguments"
+   ],
+   "claim": "the sample does not have the argument limit",
+   "sigla": "CC"
+  },
+  {
+   "id": "N22",
+   "terms": [
+    "renderSuite",
+    "attributeExists"
+   ],
+   "claim": "the sample does not have the Ch. 3 function examples",
+   "sigla": "CC"
+  },
+  {
+   "id": "N23",
+   "terms": [
+    "transactional boundar",
+    "workflow"
+   ],
+   "claim": "the sample does not have the Service Layer definition",
+   "sigla": "PEAA"
+  },
+  {
+   "id": "N24",
+   "terms": [
+    "Transaction Script Trap"
+   ],
+   "claim": "the sample does not have the Transaction Script trap",
+   "sigla": "PEAA"
+  },
+  {
+   "id": "N25",
+   "terms": [
+    "re:NET 1\\.1"
+   ],
+   "claim": "the sample does not mention .NET 1.1",
+   "sigla": "PEAA"
+  }
+ ]
+}

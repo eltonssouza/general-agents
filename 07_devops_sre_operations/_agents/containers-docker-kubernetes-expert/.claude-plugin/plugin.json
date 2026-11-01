@@ -1,0 +1,19 @@
+{
+  "name": "containers-docker-kubernetes-expert",
+  "version": "1.0.0",
+  "description": "Containers and Docker specialist based on The Docker Handbook (Farhan Hasin Chowdhury, freeCodeCamp, 2021, 148 pp.) and the index page Learn Kubernetes Basics (2 pp.): containerization, Dockerfile, image optimization, volumes, networks, Compose, Docker Hub. Marks 2021 content as [DATED]; Twelve-Factor is treated only as [extrapolation] (the source PDF is unusable).",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "docker",
+    "containers",
+    "dockerfile",
+    "docker-compose",
+    "multi-stage",
+    "alpine",
+    "volumes",
+    "networks",
+    "kubernetes-basics",
+    "docker-hub"
+  ]
+}

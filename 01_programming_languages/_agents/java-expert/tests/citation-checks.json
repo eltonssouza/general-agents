@@ -1,0 +1,1865 @@
+{
+ "source": "Think=Java-Think-Java-6e.txt (PDF = printed + 18); Adv=Java-Advanced-Tutorial.txt (PDF = footer 'N / 113' + 11); JVM=Java-JVM-Troubleshooting-Guide-Oracle.txt (PDF = footer 'N of 127'); RN11/17/21/22/26=Java-N-JDK-Release-Notes-OpenJDK.txt (3 pages each). Markers '=== PAGE N ===' with N = PDF page.",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "Think",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "Java SE Development Kit 8",
+    "tested"
+   ],
+   "claim": "examples developed and tested with Java SE 8 (basis of Think)"
+  },
+  {
+   "id": "P002",
+   "src": "Think",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "import java.util.Scanner"
+   ],
+   "claim": "the Scanner import is on p.53 (v1 cited p.54)"
+  },
+  {
+   "id": "P003",
+   "src": "Think",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "nextLine"
+   ],
+   "claim": "discard the line break with nextLine after nextInt (Scanner bug)"
+  },
+  {
+   "id": "P004",
+   "src": "Think",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "InputMismatchException",
+    "nextDouble"
+   ],
+   "claim": "nextDouble example that gives InputMismatchException with non-numeric input"
+  },
+  {
+   "id": "P005",
+   "src": "Think",
+   "pages": [
+    92
+   ],
+   "terms": [
+    "hasNextDouble",
+    "next()"
+   ],
+   "claim": "test hasNextDouble and consume the invalid token with next()"
+  },
+  {
+   "id": "P006",
+   "src": "Think",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "minute * 100 / 60",
+    "98"
+   ],
+   "claim": "multiplying before dividing in integers gives 98 for minute=59"
+  },
+  {
+   "id": "P007",
+   "src": "Think",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "0.9999999999999999",
+    "0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1"
+   ],
+   "claim": "the sum of ten 0.1 gives 0.9999999999999999"
+  },
+  {
+   "id": "P008",
+   "src": "Think",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "double y = 1.0 / 3.0",
+    "style"
+   ],
+   "claim": "assigning an integer to a double is a style matter"
+  },
+  {
+   "id": "P009",
+   "src": "Think",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "2 billion",
+    "cents"
+   ],
+   "claim": "int goes up to about 2 billion; use cents for money"
+  },
+  {
+   "id": "P010",
+   "src": "Think",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "cast",
+    "toward zero"
+   ],
+   "claim": "cast from double to int truncates toward zero"
+  },
+  {
+   "id": "P011",
+   "src": "Think",
+   "pages": [
+    280
+   ],
+   "terms": [
+    "probably never use the == operator with doubles",
+    ".000001"
+   ],
+   "claim": "the book says 'probably never' use == with double and suggests a tolerance (v1 said 'never')"
+  },
+  {
+   "id": "P012",
+   "src": "Think",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "x / 2 * Math.PI",
+    "intersection",
+    "Math.min"
+   ],
+   "claim": "example of x/2*Math.PI and intersection with temporary variables"
+  },
+  {
+   "id": "P013",
+   "src": "Think",
+   "pages": [
+    86
+   ],
+   "terms": [
+    "don’t use them with strings",
+    "equals method"
+   ],
+   "claim": "do not use == with strings; use equals"
+  },
+  {
+   "id": "P014",
+   "src": "Think",
+   "pages": [
+    162
+   ],
+   "terms": [
+    "it is not correct",
+    "most of the time"
+   ],
+   "claim": "== with strings 'most of the time' works, but is not correct"
+  },
+  {
+   "id": "P015",
+   "src": "Think",
+   "pages": [
+    144
+   ],
+   "terms": [
+    "[I@bf3f7e0",
+    "Arrays.toString"
+   ],
+   "claim": "println of an array shows [I@...; use Arrays.toString"
+  },
+  {
+   "id": "P016",
+   "src": "Think",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "NegativeArraySizeException",
+    "zero elements"
+   ],
+   "claim": "negative size throws NegativeArraySizeException; zero is allowed"
+  },
+  {
+   "id": "P017",
+   "src": "Think",
+   "pages": [
+    146
+   ],
+   "terms": [
+    "a.length",
+    "magic number"
+   ],
+   "claim": "length without parentheses; replacing the magic number with a.length"
+  },
+  {
+   "id": "P018",
+   "src": "Think",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "immutable"
+   ],
+   "claim": "strings are immutable"
+  },
+  {
+   "id": "P019",
+   "src": "Think",
+   "pages": [
+    164
+   ],
+   "terms": [
+    "i.equals(5)",
+    "compiler error"
+   ],
+   "claim": "i.equals(5) with int does not compile"
+  },
+  {
+   "id": "P020",
+   "src": "Think",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "NullPointerException"
+   ],
+   "claim": "NullPointerException when using a member of a null reference"
+  },
+  {
+   "id": "P021",
+   "src": "Think",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "make second a double"
+   ],
+   "claim": "the text declares second as double (book error recorded in Part 4)"
+  },
+  {
+   "id": "P022",
+   "src": "Think",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "getSecond",
+    "int"
+   ],
+   "claim": "accessors getHour/getMinute/getSecond return int (divergence recorded)"
+  },
+  {
+   "id": "P023",
+   "src": "Think",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "Time@80cc7c0"
+   ],
+   "claim": "default toString shows Time@80cc7c0"
+  },
+  {
+   "id": "P024",
+   "src": "Think",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "does the same thing as =="
+   ],
+   "claim": "default equals does the same as =="
+  },
+  {
+   "id": "P025",
+   "src": "Think",
+   "pages": [
+    212
+   ],
+   "terms": [
+    "equals(Card that)"
+   ],
+   "claim": "the book defines equals(Card that) (v1 cited only p.86/198-199/280 for Card)"
+  },
+  {
+   "id": "P026",
+   "src": "Think",
+   "pages": [
+    220
+   ],
+   "terms": [
+    "StackOverflowException"
+   ],
+   "claim": "chapter 12 uses StackOverflowException (book error)"
+  },
+  {
+   "id": "P027",
+   "src": "Think",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "StackOverflowError",
+    "base case"
+   ],
+   "claim": "recursion without a base case causes StackOverflowError"
+  },
+  {
+   "id": "P028",
+   "src": "Think",
+   "pages": [
+    218
+   ],
+   "terms": [
+    "mid",
+    "return -1"
+   ],
+   "claim": "binary search returns -1 when it does not find"
+  },
+  {
+   "id": "P029",
+   "src": "Think",
+   "pages": [
+    225
+   ],
+   "terms": [
+    "pseudocode",
+    "top-down development"
+   ],
+   "claim": "pseudocode and top-down development"
+  },
+  {
+   "id": "P030",
+   "src": "Think",
+   "pages": [
+    231
+   ],
+   "terms": [
+    "including both",
+    "avoid creating a Random object"
+   ],
+   "claim": "randomInt exercise: inclusive at both ends; do not create a Random on every call"
+  },
+  {
+   "id": "P031",
+   "src": "Think",
+   "pages": [
+    237
+   ],
+   "terms": [
+    "random.nextInt(i)"
+   ],
+   "claim": "CardCollection shuffle draws j with nextInt(i)"
+  },
+  {
+   "id": "P032",
+   "src": "Think",
+   "pages": [
+    243
+   ],
+   "terms": [
+    "sum -= 20"
+   ],
+   "claim": "score() accumulates with sum -= ..."
+  },
+  {
+   "id": "P033",
+   "src": "Think",
+   "pages": [
+    242
+   ],
+   "terms": [
+    "searchForMatch",
+    "drawForMatch"
+   ],
+   "claim": "Player.play uses searchForMatch and drawForMatch"
+  },
+  {
+   "id": "P034",
+   "src": "Think",
+   "pages": [
+    257
+   ],
+   "terms": [
+    "Checkstyle",
+    "google_checks.xml"
+   ],
+   "claim": "Checkstyle with google_checks.xml"
+  },
+  {
+   "id": "P035",
+   "src": "Think",
+   "pages": [
+    260
+   ],
+   "terms": [
+    "TestCase",
+    "testFibonacci"
+   ],
+   "claim": "JUnit TestCase style with testFibonacci"
+  },
+  {
+   "id": "P036",
+   "src": "Think",
+   "pages": [
+    274
+   ],
+   "terms": [
+    "half"
+   ],
+   "claim": "bisection: delete about half of the code"
+  },
+  {
+   "id": "P037",
+   "src": "Think",
+   "pages": [
+    275
+   ],
+   "terms": [
+    "entering the loop",
+    "exiting the loop"
+   ],
+   "claim": "'entering/exiting the loop' prints to find an infinite loop"
+  },
+  {
+   "id": "P038",
+   "src": "Think",
+   "pages": [
+    277
+   ],
+   "terms": [
+    "int[] array = new Point[5]"
+   ],
+   "claim": "example with int[] array = new Point[5] (book error)"
+  },
+  {
+   "id": "P039",
+   "src": "Think",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "rubber duck"
+   ],
+   "claim": "rubber duck"
+  },
+  {
+   "id": "P040",
+   "src": "Think",
+   "pages": [
+    88
+   ],
+   "terms": [
+    "goto fail"
+   ],
+   "claim": "Apple's goto fail bug as an example of if without braces"
+  },
+  {
+   "id": "P041",
+   "src": "Adv",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "2015"
+   ],
+   "claim": "e-book published in 2015"
+  },
+  {
+   "id": "P042",
+   "src": "Adv",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "Initialization blocks are always called before any constructor",
+    "0L",
+    "0.0f"
+   ],
+   "claim": "initialization blocks run before the constructor; default values"
+  },
+  {
+   "id": "P043",
+   "src": "Adv",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "objects creation in Java is quite cheap",
+    "most objects die young"
+   ],
+   "claim": "creating objects is cheap; generational GC"
+  },
+  {
+   "id": "P044",
+   "src": "Adv",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "Finalizers"
+   ],
+   "claim": "finalizers section"
+  },
+  {
+   "id": "P045",
+   "src": "Adv",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "NaiveSingleton",
+    "may create many instances"
+   ],
+   "claim": "naive singleton can create several instances"
+  },
+  {
+   "id": "P046",
+   "src": "Adv",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "not considered to be a good choice",
+    "Dependency Injection"
+   ],
+   "claim": "singletons are not a good choice today; dependency injection makes them unnecessary"
+  },
+  {
+   "id": "P047",
+   "src": "Adv",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "reflexive",
+    "symmetric",
+    "transitive",
+    "consistent"
+   ],
+   "claim": "equals contract with the listed properties"
+  },
+  {
+   "id": "P048",
+   "src": "Adv",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "always override the hashCode",
+    "getClass",
+    "instanceof"
+   ],
+   "claim": "override hashCode together; use getClass instead of instanceof"
+  },
+  {
+   "id": "P049",
+   "src": "Adv",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "new String(",
+    "bbb",
+    "Objects"
+   ],
+   "claim": "new String(\"bbb\") == \"bbb\" example and the Objects class"
+  },
+  {
+   "id": "P050",
+   "src": "Adv",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "Cloneable",
+    "super.clone()"
+   ],
+   "claim": "clone requires Cloneable and super.clone()"
+  },
+  {
+   "id": "P051",
+   "src": "Adv",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "Table",
+    "final"
+   ],
+   "claim": "final fields as the starting point of immutability"
+  },
+  {
+   "id": "P052",
+   "src": "Adv",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "unmodifiable",
+    "copy"
+   ],
+   "claim": "unmodifiable views and defensive copies"
+  },
+  {
+   "id": "P053",
+   "src": "Adv",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "always use the @Override annotation"
+   ],
+   "claim": "always use @Override"
+  },
+  {
+   "id": "P054",
+   "src": "Adv",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "never expose the fields directly",
+    "composition"
+   ],
+   "claim": "never expose fields directly; composition"
+  },
+  {
+   "id": "P055",
+   "src": "Adv",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "final"
+   ],
+   "claim": "final classes and methods"
+  },
+  {
+   "id": "P056",
+   "src": "Adv",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "erasure"
+   ],
+   "claim": "type erasure"
+  },
+  {
+   "id": "P057",
+   "src": "Adv",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "diamond",
+    "Java 7"
+   ],
+   "claim": "diamond operator, Java 7"
+  },
+  {
+   "id": "P058",
+   "src": "Adv",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "@Controller",
+    "@Entity",
+    "Repeatable"
+   ],
+   "claim": "@Controller/@Entity examples; Java 8 and repeatable annotations"
+  },
+  {
+   "id": "P059",
+   "src": "Adv",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "below 6"
+   ],
+   "claim": "keep the number of arguments below 6"
+  },
+  {
+   "id": "P060",
+   "src": "Adv",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "Parent",
+    "Child",
+    "toObject",
+    "Covariant method return types"
+   ],
+   "claim": "Parent/Child toObject example; covariant return"
+  },
+  {
+   "id": "P061",
+   "src": "Adv",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "overloaded version",
+    "tail call optimization"
+   ],
+   "claim": "overload is not override; tail call optimization"
+  },
+  {
+   "id": "P062",
+   "src": "Adv",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "LocalDateTime",
+    "Javadoc"
+   ],
+   "claim": "LocalDateTime and Javadoc on public methods"
+  },
+  {
+   "id": "P063",
+   "src": "Adv",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "Optional",
+    "less than 6"
+   ],
+   "claim": "Optional and fewer than 6 arguments"
+  },
+  {
+   "id": "P064",
+   "src": "Adv",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "only one single rule",
+    "as close to the place"
+   ],
+   "claim": "only scope rule: declare close to use"
+  },
+  {
+   "id": "P065",
+   "src": "Adv",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "autoboxing",
+    "primitive"
+   ],
+   "claim": "autoboxing can surprise; prefer the primitive"
+  },
+  {
+   "id": "P066",
+   "src": "Adv",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "StringBuilder",
+    "UTF-16"
+   ],
+   "claim": "StringBuilder/StringBuffer and UTF-16"
+  },
+  {
+   "id": "P067",
+   "src": "Adv",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "never ignore them",
+    "logged"
+   ],
+   "claim": "never ignore exceptions; at least log them"
+  },
+  {
+   "id": "P068",
+   "src": "Adv",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "boilerplate"
+   ],
+   "claim": "checked exceptions generated boilerplate"
+  },
+  {
+   "id": "P069",
+   "src": "Adv",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "try-with-resources",
+    "AutoCloseable",
+    "exclusion"
+   ],
+   "claim": "try-with-resources; failure of close() as the only exclusion"
+  },
+  {
+   "id": "P070",
+   "src": "Adv",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "RuntimeException",
+    "serialVersionUID"
+   ],
+   "claim": "custom exception extends RuntimeException and declares serialVersionUID"
+  },
+  {
+   "id": "P071",
+   "src": "Adv",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "racing conditions",
+    "happens-before"
+   ],
+   "claim": "race conditions and happens-before (synchronized)"
+  },
+  {
+   "id": "P072",
+   "src": "Adv",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "parallelStream",
+    "get"
+   ],
+   "claim": "Future.get and parallelStream"
+  },
+  {
+   "id": "P073",
+   "src": "Adv",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "JVM often is able to detect the deadlocks",
+    "tryLock"
+   ],
+   "claim": "Adv states that the JVM usually detects deadlocks; tryLock with timeout"
+  },
+  {
+   "id": "P074",
+   "src": "Adv",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "yield",
+    "scheduler"
+   ],
+   "claim": "do not depend on the scheduler/yield"
+  },
+  {
+   "id": "P075",
+   "src": "Adv",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "mediocre performance",
+    "synchronizedSet"
+   ],
+   "claim": "synchronized wrappers have mediocre performance"
+  },
+  {
+   "id": "P076",
+   "src": "Adv",
+   "pages": [
+    86
+   ],
+   "terms": [
+    "StampedLock",
+    "lock-free",
+    "biased locking"
+   ],
+   "claim": "StampedLock, lock-free and biased locking"
+  },
+  {
+   "id": "P077",
+   "src": "Adv",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "wait()",
+    "never be called outside of a loop"
+   ],
+   "claim": "wait() in a loop"
+  },
+  {
+   "id": "P078",
+   "src": "Adv",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "serialVersionUID",
+    "JSR-222",
+    "JSR-353"
+   ],
+   "claim": "serialVersionUID; JAXB JSR-222 and JSON-P JSR-353 cited on p.89"
+  },
+  {
+   "id": "P079",
+   "src": "Adv",
+   "pages": [
+    92
+   ],
+   "terms": [
+    "Serialization Proxy",
+    "writeReplace",
+    "readResolve"
+   ],
+   "claim": "Serialization Proxy with writeReplace/readResolve"
+  },
+  {
+   "id": "P080",
+   "src": "Adv",
+   "pages": [
+    94
+   ],
+   "terms": [
+    "upcoming Java 9",
+    "jeps/198"
+   ],
+   "claim": "JEP 198 as a discussion for the future Java 9"
+  },
+  {
+   "id": "P081",
+   "src": "Adv",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "JSR-367"
+   ],
+   "claim": "JSON-B JSR-367"
+  },
+  {
+   "id": "P082",
+   "src": "Adv",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "setAccessible",
+    "ParameterizedType"
+   ],
+   "claim": "setAccessible and ParameterizedType"
+  },
+  {
+   "id": "P083",
+   "src": "Adv",
+   "pages": [
+    99
+   ],
+   "terms": [
+    "-parameters"
+   ],
+   "claim": "parameter names with -parameters (Java 8)"
+  },
+  {
+   "id": "P084",
+   "src": "Adv",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "Nashorn"
+   ],
+   "claim": "Nashorn in Java 8"
+  },
+  {
+   "id": "P085",
+   "src": "Adv",
+   "pages": [
+    112
+   ],
+   "terms": [
+    "around 50 methods"
+   ],
+   "claim": "TreePathScanner with about 50 visitXxx methods"
+  },
+  {
+   "id": "P086",
+   "src": "Adv",
+   "pages": [
+    118
+   ],
+   "terms": [
+    "Maven",
+    "Gradle"
+   ],
+   "claim": "Maven and Gradle cited in passing (build tools)"
+  },
+  {
+   "id": "P087",
+   "src": "Adv",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "\"/\" one"
+   ],
+   "claim": "className with / separator in the transformer"
+  },
+  {
+   "id": "P088",
+   "src": "JVM",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Java Heap",
+    "PermGen",
+    "Native Heap"
+   ],
+   "claim": "three memory spaces"
+  },
+  {
+   "id": "P089",
+   "src": "JVM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "static"
+   ],
+   "claim": "PermGen reasonably static"
+  },
+  {
+   "id": "P090",
+   "src": "JVM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "gencon"
+   ],
+   "claim": "IBM's gencon"
+  },
+  {
+   "id": "P091",
+   "src": "JVM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "couple of hundred MB larger"
+   ],
+   "claim": "JRockit: process about two hundred MB larger (v1 said 'hundreds')"
+  },
+  {
+   "id": "P092",
+   "src": "JVM",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "2.5",
+    "bigger is not always the better"
+   ],
+   "claim": "heap of 2.5 GB or more on 32-bit; bigger is not always better"
+  },
+  {
+   "id": "P093",
+   "src": "JVM",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "500 MB",
+    "33%"
+   ],
+   "claim": "YoungGen 500 MB of 2 GB and 33%"
+  },
+  {
+   "id": "P094",
+   "src": "JVM",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "50%",
+    "3 GB",
+    "64-bit"
+   ],
+   "claim": "50% rule after a major collection in the 3 GB 64-bit example"
+  },
+  {
+   "id": "P095",
+   "src": "JVM",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "80%",
+    "fail-over"
+   ],
+   "claim": "OldGen at 80% does not support failover"
+  },
+  {
+   "id": "P096",
+   "src": "JVM",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "Divide and conquer",
+    "more taxing for the hardware"
+   ],
+   "claim": "splitting into more JVMs costs more hardware"
+  },
+  {
+   "id": "P097",
+   "src": "JVM",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "BEA-000337",
+    "672"
+   ],
+   "claim": "WebLogic STUCK thread (BEA-000337)"
+  },
+  {
+   "id": "P098",
+   "src": "JVM",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "ExecuteThread"
+   ],
+   "claim": "histogram filtered by ExecuteThread"
+  },
+  {
+   "id": "P099",
+   "src": "JVM",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "MaxMetaspaceSize",
+    "PermSize",
+    "ignored"
+   ],
+   "claim": "Metaspace: PermSize/MaxPermSize ignored; MaxMetaspaceSize"
+  },
+  {
+   "id": "P100",
+   "src": "JVM",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "30K+ classes",
+    "1.7"
+   ],
+   "claim": "a 128 MB PermGen is exhausted at about 30 thousand classes on JDK 1.7"
+  },
+  {
+   "id": "P101",
+   "src": "JVM",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "MaxMetaspaceSize=128m",
+    "50K"
+   ],
+   "claim": "test with MaxMetaspaceSize=128m"
+  },
+  {
+   "id": "P102",
+   "src": "JVM",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "The above OOM event was thrown by the JVM from the Metaspace",
+    "twice"
+   ],
+   "claim": "OOM thrown by Metaspace; native reservation about double"
+  },
+  {
+   "id": "P103",
+   "src": "JVM",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "jmap",
+    "heap"
+   ],
+   "claim": "jmap -heap:format=b for a heap dump"
+  },
+  {
+   "id": "P104",
+   "src": "JVM",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "ObjectName"
+   ],
+   "claim": "javax.management.ObjectName leak"
+  },
+  {
+   "id": "P105",
+   "src": "JVM",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "Full GC (System)",
+    "PSOldGen"
+   ],
+   "claim": "Full GC (System) and PS labels in verbose GC"
+  },
+  {
+   "id": "P106",
+   "src": "JVM",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "nid",
+    "tid"
+   ],
+   "claim": "tid and nid in the thread dump"
+  },
+  {
+   "id": "P107",
+   "src": "JVM",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "kill -3"
+   ],
+   "claim": "kill -3 for a thread dump"
+  },
+  {
+   "id": "P108",
+   "src": "JVM",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "ParallelGC",
+    "GC task thread"
+   ],
+   "claim": "GC threads (ParallelGC)"
+  },
+  {
+   "id": "P109",
+   "src": "JVM",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "bottom-up",
+    "created"
+   ],
+   "claim": "read the stack from bottom to top; a created thread is not a working thread"
+  },
+  {
+   "id": "P110",
+   "src": "JVM",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "5996"
+   ],
+   "claim": "decimal id 5996 in Process Explorer"
+  },
+  {
+   "id": "P111",
+   "src": "JVM",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "procfiles"
+   ],
+   "claim": "procfiles to see file descriptors on AIX"
+  },
+  {
+   "id": "P112",
+   "src": "JVM",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "98%",
+    "2%",
+    "1.6"
+   ],
+   "claim": "GC overhead limit: 98%/2% and HotSpot 1.6"
+  },
+  {
+   "id": "P113",
+   "src": "JVM",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "UseGCOverheadLimit",
+    "Indigo"
+   ],
+   "claim": "turn off with -XX:-UseGCOverheadLimit; Eclipse Indigo"
+  },
+  {
+   "id": "P114",
+   "src": "JVM",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "jstack",
+    "VisualVM"
+   ],
+   "claim": "jstack and JVisualVM for a thread dump"
+  },
+  {
+   "id": "P115",
+   "src": "JVM",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "RUNNING state != healthy state"
+   ],
+   "claim": "a thread may be RUNNING and hung"
+  },
+  {
+   "id": "P116",
+   "src": "JVM",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "10 years"
+   ],
+   "claim": "a true deadlock is rare (about 5 in 10 years)"
+  },
+  {
+   "id": "P117",
+   "src": "JVM",
+   "pages": [
+    79
+   ],
+   "terms": [
+    "Found one Java-level deadlock"
+   ],
+   "claim": "HotSpot deadlock section"
+  },
+  {
+   "id": "P118",
+   "src": "JVM",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "executeTask1",
+    "executeTask2",
+    "Thread.sleep(2000)"
+   ],
+   "claim": "Task class with executeTask1/executeTask2 (v1 called it WorkerThread1/2)"
+  },
+  {
+   "id": "P119",
+   "src": "JVM",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "ownable synchronizer"
+   ],
+   "claim": "write lock ownable synchronizer"
+  },
+  {
+   "id": "P120",
+   "src": "JVM",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "WorkerThread2",
+    "272236d0"
+   ],
+   "claim": "the name WorkerThread2 only appears in the stack frame on p.84"
+  },
+  {
+   "id": "P121",
+   "src": "JVM",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "getReadLockCount",
+    "PermGen"
+   ],
+   "claim": "getReadLockCount and PermGen patterns"
+  },
+  {
+   "id": "P122",
+   "src": "JVM",
+   "pages": [
+    87
+   ],
+   "terms": [
+    "Out of swap",
+    "HeapDumpOnOutOfMemoryError",
+    "ChunkPool"
+   ],
+   "claim": "swap OOM; heap dump flag spelled as on p.87"
+  },
+  {
+   "id": "P123",
+   "src": "JVM",
+   "pages": [
+    88
+   ],
+   "terms": [
+    "Definitely not"
+   ],
+   "claim": "increasing the heap for 'Out of swap space': 'Definitely not'"
+  },
+  {
+   "id": "P124",
+   "src": "JVM",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "256",
+    "native thread"
+   ],
+   "claim": "reduce the heap by about 256 MB on 32-bit"
+  },
+  {
+   "id": "P125",
+   "src": "JVM",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "16 EB",
+    "SIGBUS"
+   ],
+   "claim": "64-bit up to 16 EB; SIGBUS on Solaris"
+  },
+  {
+   "id": "P126",
+   "src": "JVM",
+   "pages": [
+    93
+   ],
+   "terms": [
+    "ClassNotFoundException",
+    "forName"
+   ],
+   "claim": "ClassNotFoundException: Class.forName and the like"
+  },
+  {
+   "id": "P127",
+   "src": "JVM",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "Hibernate",
+    "Spring",
+    "Apache"
+   ],
+   "claim": "Hibernate/Spring as third-party libraries in the NoClassDefFoundError case"
+  },
+  {
+   "id": "P128",
+   "src": "JVM",
+   "pages": [
+    103
+   ],
+   "terms": [
+    "static",
+    "ExceptionInInitializerError"
+   ],
+   "claim": "a failure in static causes ExceptionInInitializerError"
+  },
+  {
+   "id": "P129",
+   "src": "JVM",
+   "pages": [
+    126
+   ],
+   "terms": [
+    "verbose:class"
+   ],
+   "claim": "-verbose:class to find duplicate loading"
+  },
+  {
+   "id": "P130",
+   "src": "RN11",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "JSR 384",
+    "25 September 2018",
+    "321: HTTP Client (Standard)",
+    "333: ZGC: A Scalable Low-Latency Garbage Collector"
+   ],
+   "claim": "JDK 11: JSR 384, GA, JEP 321 with '(Standard)', JEP 333"
+  },
+  {
+   "id": "P131",
+   "src": "RN17",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "JSR 390",
+    "14 September 2021",
+    "409: Sealed Classes",
+    "406: Pattern Matching for switch (Preview)",
+    "previous LTS release, JDK 11"
+   ],
+   "claim": "JDK 17: sealed classes with no mark; pattern matching for switch (Preview); LTS and JDK 11 previous"
+  },
+  {
+   "id": "P132",
+   "src": "RN21",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "JSR 396",
+    "19 September 2023",
+    "444: Virtual Threads",
+    "440: Record Patterns",
+    "441: Pattern Matching for switch",
+    "previous LTS release, JDK 17"
+   ],
+   "claim": "JDK 21: virtual threads, record patterns, pattern matching for switch; LTS and JDK 17 previous"
+  },
+  {
+   "id": "P133",
+   "src": "RN22",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "JSR 397",
+    "19 March 2024",
+    "461: Stream Gatherers (Preview)",
+    "456: Unnamed Variables & Patterns",
+    "463: Implicitly Declared Classes and Instance Main Methods (Second Preview)"
+   ],
+   "claim": "JDK 22: JEPs 461, 456, 463"
+  },
+  {
+   "id": "P134",
+   "src": "RN26",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "JSR 401",
+    "17 March 2026",
+    "530: Primitive Types in Patterns, instanceof, and switch (Fourth Preview)",
+    "526: Lazy Constants (Second Preview)",
+    "529: Vector API (Eleventh Incubator)"
+   ],
+   "claim": "JDK 26: JEPs 530, 526, 529"
+  },
+  {
+   "id": "P135",
+   "src": "RN26",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "branch from main line"
+   ],
+   "claim": "JDK 26 uses 'branch from main line' (the others 'fork from main line')"
+  },
+  {
+   "id": "P136",
+   "src": "RN11",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "fork from main line"
+   ],
+   "claim": "JDK 11 uses 'fork from main line'"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "src": "Think",
+   "terms": [
+    "re:\\blambdas?\\b"
+   ],
+   "claim": "Think teaches lambdas"
+  },
+  {
+   "id": "N02",
+   "src": "Think",
+   "terms": [
+    "reCS:\\bvar\\b"
+   ],
+   "claim": "Think uses `var`"
+  },
+  {
+   "id": "N03",
+   "src": "Think",
+   "terms": [
+    "re:\\brecords?\\b"
+   ],
+   "claim": "Think covers records"
+  },
+  {
+   "id": "N04",
+   "src": "Think",
+   "terms": [
+    "re:text block",
+    "re:\"\"\""
+   ],
+   "claim": "Think has text blocks"
+  },
+  {
+   "id": "N05",
+   "src": "Think",
+   "terms": [
+    "re:Maven|Gradle"
+   ],
+   "claim": "Think covers Maven or Gradle"
+  },
+  {
+   "id": "N06",
+   "src": "Think",
+   "terms": [
+    "reCS:\\bLTS\\b",
+    "re:Java 11|Java 17|Java 21"
+   ],
+   "claim": "Think mentions LTS or JDKs 11/17/21"
+  },
+  {
+   "id": "N07",
+   "src": "Think",
+   "terms": [
+    "re:\\bmodules?\\b"
+   ],
+   "claim": "Think covers the module system"
+  },
+  {
+   "id": "N08",
+   "src": "Think",
+   "terms": [
+    "re:instanceof"
+   ],
+   "claim": "Think uses instanceof"
+  },
+  {
+   "id": "N09",
+   "src": "Think",
+   "terms": [
+    "re:hashCode"
+   ],
+   "claim": "Think covers hashCode"
+  },
+  {
+   "id": "N10",
+   "src": "Think",
+   "terms": [
+    "re:\\bswitch statement|switch \\(|case [A-Za-z0-9_\"']+ ?(:|->)"
+   ],
+   "claim": "Think presents the switch statement"
+  },
+  {
+   "id": "N11",
+   "src": "Adv",
+   "terms": [
+    "reCS:\\bvar\\b"
+   ],
+   "claim": "Adv uses `var`"
+  },
+  {
+   "id": "N12",
+   "src": "Adv",
+   "terms": [
+    "re:\\brecords?\\b"
+   ],
+   "claim": "Adv covers records"
+  },
+  {
+   "id": "N13",
+   "src": "Adv",
+   "terms": [
+    "re:text block"
+   ],
+   "claim": "Adv has text blocks"
+  },
+  {
+   "id": "N14",
+   "src": "Adv",
+   "terms": [
+    "reCS:\\bsealed\\b"
+   ],
+   "claim": "Adv covers sealed classes"
+  },
+  {
+   "id": "N15",
+   "src": "Adv",
+   "terms": [
+    "re:virtual thread|Project Loom"
+   ],
+   "claim": "Adv covers virtual threads"
+  },
+  {
+   "id": "N16",
+   "src": "Adv",
+   "terms": [
+    "re:Spring|Hibernate"
+   ],
+   "claim": "Adv mentions Spring or Hibernate"
+  },
+  {
+   "id": "N17",
+   "src": "Adv",
+   "terms": [
+    "re:IntegerCache|Integer cache"
+   ],
+   "claim": "Adv covers the Integer cache"
+  },
+  {
+   "id": "N18",
+   "src": "Adv",
+   "terms": [
+    "re:volatile|double-checked"
+   ],
+   "claim": "Adv covers volatile or double-checked locking"
+  },
+  {
+   "id": "N19",
+   "src": "Adv",
+   "terms": [
+    "re:\\bmodule-info|\\bJigsaw\\b"
+   ],
+   "claim": "Adv covers the module system"
+  },
+  {
+   "id": "N20",
+   "src": "JVM",
+   "terms": [
+    "reCS:\\bG1\\b|\\bCMS\\b|Garbage.First|Concurrent Mark"
+   ],
+   "claim": "the handbook covers G1 or CMS"
+  },
+  {
+   "id": "N21",
+   "src": "JVM",
+   "terms": [
+    "re:Flight Recorder|\\bJFR\\b|\\bjcmd\\b"
+   ],
+   "claim": "the handbook covers Flight Recorder or jcmd"
+  },
+  {
+   "id": "N22",
+   "src": "JVM",
+   "terms": [
+    "reCS:\\bZGC\\b|Shenandoah"
+   ],
+   "claim": "the handbook covers ZGC or Shenandoah"
+  },
+  {
+   "id": "N23",
+   "src": "JVM",
+   "terms": [
+    "re:OutOfMemoryError: ?Metaspace"
+   ],
+   "claim": "the handbook has the message 'OutOfMemoryError: Metaspace'"
+  },
+  {
+   "id": "N24",
+   "src": "JVM",
+   "terms": [
+    "re:top -H|printf ?\\(?\"%x"
+   ],
+   "claim": "the handbook teaches converting nid to decimal with top -H/printf"
+  },
+  {
+   "id": "N25",
+   "src": "RN",
+   "terms": [
+    "re:PermGen|Metaspace"
+   ],
+   "claim": "some release note covers PermGen or Metaspace"
+  },
+  {
+   "id": "N26",
+   "src": "RN11",
+   "terms": [
+    "reCS:\\bLTS\\b"
+   ],
+   "claim": "the JDK 11 page mentions LTS"
+  },
+  {
+   "id": "N27",
+   "src": "RN22",
+   "terms": [
+    "reCS:\\bLTS\\b"
+   ],
+   "claim": "the JDK 22 page mentions LTS"
+  },
+  {
+   "id": "N28",
+   "src": "RN26",
+   "terms": [
+    "reCS:\\bLTS\\b"
+   ],
+   "claim": "the JDK 26 page mentions LTS"
+  },
+  {
+   "id": "N29",
+   "src": "RN",
+   "terms": [
+    "re:lightweight|continuation|JDK 25"
+   ],
+   "claim": "some release note describes virtual threads or has JDK 25"
+  }
+ ]
+}

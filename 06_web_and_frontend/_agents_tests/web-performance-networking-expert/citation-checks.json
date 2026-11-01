@@ -1,0 +1,8999 @@
+{
+ "_comment": "positivas: the indicated PDF page contains all the terms (alphanumeric normalization); negativas: the term is absent from the whole PDF. Items with 'rodada' (round) were added in the post-blind-test fix (round 1). Round 2 (post-blind-test): +135 positivas, +13 global negativas and 6 negativas per page (field negativas_por_pagina: the term must be absent from the indicated PDF pages). (+15 additional positivas from the WebRTC/XHR supplement).",
+ "positivas": [
+  {
+   "pagina_pdf": 21,
+   "pagina_impressa": 3,
+   "termos": [
+    "speed is a feature"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "speed is a feature"
+  },
+  {
+   "pagina_pdf": 23,
+   "pagina_impressa": 5,
+   "termos": [
+    "propagation delay",
+    "queuing delay",
+    "transmission delay",
+    "processing delay"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "latency components"
+  },
+  {
+   "pagina_pdf": 25,
+   "pagina_impressa": 7,
+   "termos": [
+    "New York to London",
+    "Sydney",
+    "200-300 millisecond"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "NY-London/Sydney RTT and 200-300 ms"
+  },
+  {
+   "pagina_pdf": 25,
+   "pagina_impressa": 7,
+   "termos": [
+    "100-200 millisecond",
+    "300 millisecond"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "lag perception (ch.1)"
+  },
+  {
+   "pagina_pdf": 26,
+   "pagina_impressa": 8,
+   "termos": [
+    "FCC",
+    "18 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "last mile FCC"
+  },
+  {
+   "pagina_pdf": 28,
+   "pagina_impressa": 10,
+   "termos": [
+    "3.1 Mbps",
+    "Akamai"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "global average 3.1 Mbps"
+  },
+  {
+   "pagina_pdf": 30,
+   "pagina_impressa": 12,
+   "termos": [
+    "30% improvement",
+    "speed of light"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "physical latency limit"
+  },
+  {
+   "pagina_pdf": 32,
+   "pagina_impressa": 14,
+   "termos": [
+    "three-way handshake",
+    "random"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "handshake with random sequence numbers"
+  },
+  {
+   "pagina_pdf": 33,
+   "pagina_impressa": 15,
+   "termos": [
+    "56 milliseconds",
+    "full roundtrip"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "handshake = 1 RTT; 56 ms NY-London"
+  },
+  {
+   "pagina_pdf": 34,
+   "pagina_impressa": 16,
+   "termos": [
+    "TCP Fast Open",
+    "15%",
+    "Linux 3.7",
+    "cryptographic cookie"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TFO"
+  },
+  {
+   "pagina_pdf": 35,
+   "pagina_impressa": 17,
+   "termos": [
+    "receive window",
+    "rwnd"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "rwnd"
+  },
+  {
+   "pagina_pdf": 36,
+   "pagina_impressa": 18,
+   "termos": [
+    "RFC 1323",
+    "1 gigabyte",
+    "65,535"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "window scaling"
+  },
+  {
+   "pagina_pdf": 38,
+   "pagina_impressa": 20,
+   "termos": [
+    "RFC 6928",
+    "RFC 2581",
+    "4 segments",
+    "10 segments"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "initcwnd 1/4/10"
+  },
+  {
+   "pagina_pdf": 39,
+   "pagina_impressa": 21,
+   "termos": [
+    "224",
+    "45 segments"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "slow-start example 224 ms"
+  },
+  {
+   "pagina_pdf": 41,
+   "pagina_impressa": 23,
+   "termos": [
+    "slow-start restart",
+    "tcp_slow_start_after_idle"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSR"
+  },
+  {
+   "pagina_pdf": 43,
+   "pagina_impressa": 25,
+   "termos": [
+    "22%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cwnd 10 = 22%"
+  },
+  {
+   "pagina_pdf": 44,
+   "pagina_impressa": 26,
+   "termos": [
+    "275%",
+    "2.6.39"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "reuse = 275%; IW10 Linux"
+  },
+  {
+   "pagina_pdf": 45,
+   "pagina_impressa": 27,
+   "termos": [
+    "RFC 6937",
+    "CUBIC",
+    "Compound TCP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PRR and variants"
+  },
+  {
+   "pagina_pdf": 46,
+   "pagina_impressa": 28,
+   "termos": [
+    "bandwidth-delay product"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "BDP"
+  },
+  {
+   "pagina_pdf": 47,
+   "pagina_impressa": 29,
+   "termos": [
+    "1.31 Mbps",
+    "122.1 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "BDP examples"
+  },
+  {
+   "pagina_pdf": 48,
+   "pagina_impressa": 30,
+   "termos": [
+    "head-of-line"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TCP HoL"
+  },
+  {
+   "pagina_pdf": 49,
+   "pagina_impressa": 31,
+   "termos": [
+    "WebRTC uses UDP",
+    "jitter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "acceptable loss / WebRTC uses UDP"
+  },
+  {
+   "pagina_pdf": 52,
+   "pagina_impressa": 34,
+   "termos": [
+    "disable slow-start after idle",
+    "cwnd size is set to 10"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TCP checklist"
+  },
+  {
+   "pagina_pdf": 55,
+   "pagina_impressa": 37,
+   "termos": [
+    "No congestion control",
+    "head-of-line blocking",
+    "datagrams cannot be fragmented"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UDP non-services"
+  },
+  {
+   "pagina_pdf": 56,
+   "pagina_impressa": 38,
+   "termos": [
+    "RFC 1631"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "NAT RFC 1631"
+  },
+  {
+   "pagina_pdf": 57,
+   "pagina_impressa": 39,
+   "termos": [
+    "10.0.0.0",
+    "Connection-State Timeouts"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "private ranges / timeouts"
+  },
+  {
+   "pagina_pdf": 58,
+   "pagina_impressa": 40,
+   "termos": [
+    "keepalive",
+    "vendor, make, version"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "variable NAT timeout"
+  },
+  {
+   "pagina_pdf": 59,
+   "pagina_impressa": 41,
+   "termos": [
+    "RFC 5389"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "STUN"
+  },
+  {
+   "pagina_pdf": 60,
+   "pagina_impressa": 42,
+   "termos": [
+    "RFC 5766",
+    "binding request"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TURN/STUN binding"
+  },
+  {
+   "pagina_pdf": 61,
+   "pagina_impressa": 43,
+   "termos": [
+    "92%",
+    "8% of the time",
+    "RFC 5245"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "libjingle 92/8 and ICE"
+  },
+  {
+   "pagina_pdf": 62,
+   "pagina_impressa": 44,
+   "termos": [
+    "RFC 5405"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RFC 5405"
+  },
+  {
+   "pagina_pdf": 63,
+   "pagina_impressa": 45,
+   "termos": [
+    "15 seconds",
+    "keepalives"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "minimum keepalive 15 s"
+  },
+  {
+   "pagina_pdf": 66,
+   "pagina_impressa": 48,
+   "termos": [
+    "August 2008",
+    "RFC 6347"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS 1.2 / DTLS"
+  },
+  {
+   "pagina_pdf": 68,
+   "pagina_impressa": 50,
+   "termos": [
+    "HTTPS tunnel",
+    "WebSocket"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTPS tunnel for new protocols"
+  },
+  {
+   "pagina_pdf": 69,
+   "pagina_impressa": 51,
+   "termos": [
+    "three-way handshake",
+    "28 millisecond"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS handshake: TCP first"
+  },
+  {
+   "pagina_pdf": 70,
+   "pagina_impressa": 52,
+   "termos": [
+    "two roundtrips",
+    "full handshake"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "full TLS = 2 RTT"
+  },
+  {
+   "pagina_pdf": 71,
+   "pagina_impressa": 53,
+   "termos": [
+    "Application Layer Protocol Negotiation",
+    "HTTP Upgrade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ALPN motivation"
+  },
+  {
+   "pagina_pdf": 72,
+   "pagina_impressa": 54,
+   "termos": [
+    "ProtocolNameList",
+    "NPN",
+    "deprecated"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ALPN/NPN"
+  },
+  {
+   "pagina_pdf": 73,
+   "pagina_impressa": 55,
+   "termos": [
+    "Server Name Indication",
+    "Windows XP",
+    "32-byte"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SNI and 32-byte Session ID"
+  },
+  {
+   "pagina_pdf": 75,
+   "pagina_impressa": 57,
+   "termos": [
+    "RFC 5077",
+    "New Session Ticket"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "session tickets"
+  },
+  {
+   "pagina_pdf": 80,
+   "pagina_impressa": 62,
+   "termos": [
+    "RFC 2560",
+    "real-time"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "OCSP"
+  },
+  {
+   "pagina_pdf": 81,
+   "pagina_impressa": 63,
+   "termos": [
+    "16 KB",
+    "5-byte header"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS record"
+  },
+  {
+   "pagina_pdf": 82,
+   "pagina_impressa": 64,
+   "termos": [
+    "less than 1% of the CPU"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS cost (Gmail)"
+  },
+  {
+   "pagina_pdf": 83,
+   "pagina_impressa": 65,
+   "termos": [
+    "168 milliseconds",
+    "112 milliseconds",
+    "Early Termination"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3 RTTs / early termination"
+  },
+  {
+   "pagina_pdf": 85,
+   "pagina_impressa": 67,
+   "termos": [
+    "session tickets",
+    "session identifiers"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "recommendation to enable both"
+  },
+  {
+   "pagina_pdf": 86,
+   "pagina_impressa": 68,
+   "termos": [
+    "6% of framing overhead"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "record overhead"
+  },
+  {
+   "pagina_pdf": 87,
+   "pagina_impressa": 69,
+   "termos": [
+    "1,400 bytes",
+    "CRIME"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "record size and CRIME"
+  },
+  {
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "termos": [
+    "2 or 3 KB",
+    "OCSP stapling"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "short chain and stapling"
+  },
+  {
+   "pagina_pdf": 90,
+   "pagina_impressa": 72,
+   "termos": [
+    "4,000 bytes",
+    "max-age=31536000",
+    "HTTP Strict Transport Security"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stapling and HSTS"
+  },
+  {
+   "pagina_pdf": 91,
+   "pagina_impressa": 73,
+   "termos": [
+    "Qualys",
+    "Configure SNI"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS checklist"
+  },
+  {
+   "pagina_pdf": 133,
+   "pagina_impressa": 115,
+   "termos": [
+    "15 mW",
+    "3,500 mW",
+    "RRC"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "radio energy"
+  },
+  {
+   "pagina_pdf": 134,
+   "pagina_impressa": 116,
+   "termos": [
+    "WiFi",
+    "3G/4G"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi vs 3G/4G"
+  },
+  {
+   "pagina_pdf": 135,
+   "pagina_impressa": 117,
+   "termos": [
+    "RRC Idle",
+    "RRC Connected",
+    "100 milliseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "LTE RRC"
+  },
+  {
+   "pagina_pdf": 136,
+   "pagina_impressa": 118,
+   "termos": [
+    "Short DRX",
+    "Long DRX",
+    "50 milliseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DRX"
+  },
+  {
+   "pagina_pdf": 137,
+   "pagina_impressa": 119,
+   "termos": [
+    "Cell DCH",
+    "Cell FACH",
+    "Table 7-9"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UMTS RRC / table"
+  },
+  {
+   "pagina_pdf": 138,
+   "pagina_impressa": 120,
+   "termos": [
+    "two seconds",
+    "one and a half seconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "idle->DCH up to 2 s"
+  },
+  {
+   "pagina_pdf": 140,
+   "pagina_impressa": 122,
+   "termos": [
+    "energy tail",
+    "10 seconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "energy tail"
+  },
+  {
+   "pagina_pdf": 141,
+   "pagina_impressa": 123,
+   "termos": [
+    "46%",
+    "0.2%",
+    "Pandora"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Pandora"
+  },
+  {
+   "pagina_pdf": 147,
+   "pagina_impressa": 129,
+   "termos": [
+    "100 milliseconds",
+    "Initiating a Request"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "request flow"
+  },
+  {
+   "pagina_pdf": 148,
+   "pagina_impressa": 130,
+   "termos": [
+    "30–100 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "core latency"
+  },
+  {
+   "pagina_pdf": 150,
+   "pagina_impressa": 132,
+   "termos": [
+    "40–50 ms",
+    "HSPA+"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "AT&T table"
+  },
+  {
+   "pagina_pdf": 160,
+   "pagina_impressa": 142,
+   "termos": [
+    "Polling is exceptionally expensive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "expensive polling"
+  },
+  {
+   "pagina_pdf": 161,
+   "pagina_impressa": 143,
+   "termos": [
+    "Nagle"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nagle in push"
+  },
+  {
+   "pagina_pdf": 162,
+   "pagina_impressa": 144,
+   "termos": [
+    "600 joules",
+    "5–30 minute"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "polling energy; mobile NAT timeout"
+  },
+  {
+   "pagina_pdf": 163,
+   "pagina_impressa": 145,
+   "termos": [
+    "200–2,500 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP overhead on 3G/4G"
+  },
+  {
+   "pagina_pdf": 164,
+   "pagina_impressa": 146,
+   "termos": [
+    "500–2,500 ms",
+    "150–500 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RRC rule of thumb"
+  },
+  {
+   "pagina_pdf": 167,
+   "pagina_impressa": 149,
+   "termos": [
+    "Burst Your Data and Return to Idle",
+    "progressive loading"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "burst and idle"
+  },
+  {
+   "pagina_pdf": 168,
+   "pagina_impressa": 150,
+   "termos": [
+    "Offload to WiFi"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi offload"
+  },
+  {
+   "pagina_pdf": 173,
+   "pagina_impressa": 155,
+   "termos": [
+    "HTTP 0.9"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 0.9"
+  },
+  {
+   "pagina_pdf": 175,
+   "pagina_impressa": 157,
+   "termos": [
+    "RFC 1945",
+    "informational"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 1.0"
+  },
+  {
+   "pagina_pdf": 177,
+   "pagina_impressa": 159,
+   "termos": [
+    "RFC 2616",
+    "RFC 2068"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 1.1"
+  },
+  {
+   "pagina_pdf": 185,
+   "pagina_impressa": 167,
+   "termos": [
+    "onload"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PLT = onload"
+  },
+  {
+   "pagina_pdf": 186,
+   "pagina_impressa": 168,
+   "termos": [
+    "CSSOM",
+    "doc.write",
+    "render tree"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DOM/CSSOM pipeline"
+  },
+  {
+   "pagina_pdf": 187,
+   "pagina_impressa": 169,
+   "termos": [
+    "1,311 KB",
+    "90 requests"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "average page 2013"
+  },
+  {
+   "pagina_pdf": 188,
+   "pagina_impressa": 170,
+   "termos": [
+    "250 milliseconds",
+    "Machine is working"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "perception table"
+  },
+  {
+   "pagina_pdf": 189,
+   "pagina_impressa": 171,
+   "termos": [
+    "4.3%",
+    "Aberdeen"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "business cost"
+  },
+  {
+   "pagina_pdf": 194,
+   "pagina_impressa": 176,
+   "termos": [
+    "single-threaded",
+    "More Bandwidth Doesn"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "pillars / bandwidth"
+  },
+  {
+   "pagina_pdf": 195,
+   "pagina_impressa": 177,
+   "termos": [
+    "Belshe"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Belshe study"
+  },
+  {
+   "pagina_pdf": 196,
+   "pagina_impressa": 178,
+   "termos": [
+    "20 millisecond",
+    "5 Mbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "20 ms linear; >5 Mbps"
+  },
+  {
+   "pagina_pdf": 197,
+   "pagina_impressa": 179,
+   "termos": [
+    "real-user measurement",
+    "synthetic"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "synthetic + RUM"
+  },
+  {
+   "pagina_pdf": 198,
+   "pagina_impressa": 180,
+   "termos": [
+    "Navigation Timing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Navigation Timing"
+  },
+  {
+   "pagina_pdf": 200,
+   "pagina_impressa": 182,
+   "termos": [
+    "Resource Timing",
+    "User Timing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Resource/User Timing"
+  },
+  {
+   "pagina_pdf": 201,
+   "pagina_impressa": 183,
+   "termos": [
+    "DNS pre-resolve",
+    "TCP pre-connect",
+    "Document-aware",
+    "Speculative optimization"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "speculative classes and techniques"
+  },
+  {
+   "pagina_pdf": 202,
+   "pagina_impressa": 184,
+   "termos": [
+    "Page pre-rendering"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "pre-rendering"
+  },
+  {
+   "pagina_pdf": 202,
+   "pagina_impressa": 184,
+   "termos": [
+    "dns-prefetch",
+    "prerender",
+    "subresource"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "book hints"
+  },
+  {
+   "pagina_pdf": 207,
+   "pagina_impressa": 189,
+   "termos": [
+    "iTunes",
+    "300%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "iTunes"
+  },
+  {
+   "pagina_pdf": 210,
+   "pagina_impressa": 192,
+   "termos": [
+    "savings for N requests"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "(N-1) x RTT"
+  },
+  {
+   "pagina_pdf": 211,
+   "pagina_impressa": 193,
+   "termos": [
+    "172 milliseconds",
+    "284"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "284->172 ms"
+  },
+  {
+   "pagina_pdf": 213,
+   "pagina_impressa": 195,
+   "termos": [
+    "head-of-line blocking",
+    "pipelining"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "pipelining HoL"
+  },
+  {
+   "pagina_pdf": 214,
+   "pagina_impressa": 196,
+   "termos": [
+    "six connections per host"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "6 connections"
+  },
+  {
+   "pagina_pdf": 217,
+   "pagina_impressa": 199,
+   "termos": [
+    "CNAME",
+    "hostname, not the IP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CNAME shards"
+  },
+  {
+   "pagina_pdf": 218,
+   "pagina_impressa": 200,
+   "termos": [
+    "500–800 bytes",
+    "8 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "header overhead and limits"
+  },
+  {
+   "pagina_pdf": 219,
+   "pagina_impressa": 201,
+   "termos": [
+    "352 bytes",
+    "96%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "15 bytes in 352"
+  },
+  {
+   "pagina_pdf": 221,
+   "pagina_impressa": 203,
+   "termos": [
+    "30–50 KB",
+    "800 × 600"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bundle size / sprite memory"
+  },
+  {
+   "pagina_pdf": 222,
+   "pagina_impressa": 204,
+   "termos": [
+    "Gmail"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Gmail"
+  },
+  {
+   "pagina_pdf": 223,
+   "pagina_impressa": 205,
+   "termos": [
+    "33%",
+    "1–2 KB",
+    "32 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "inlining"
+  },
+  {
+   "pagina_pdf": 226,
+   "pagina_impressa": 208,
+   "termos": [
+    "50% reduction",
+    "SPDY"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY goals"
+  },
+  {
+   "pagina_pdf": 228,
+   "pagina_impressa": 210,
+   "termos": [
+    "binary framing layer",
+    "November 2014"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "2.0 and schedule"
+  },
+  {
+   "pagina_pdf": 228,
+   "pagina_impressa": 210,
+   "termos": [
+    "SPDY v3",
+    "SPDY v2"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "co-evolution"
+  },
+  {
+   "pagina_pdf": 233,
+   "pagina_impressa": 215,
+   "termos": [
+    "31-bit",
+    "highest priority"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "31-bit priority"
+  },
+  {
+   "pagina_pdf": 235,
+   "pagina_impressa": 217,
+   "termos": [
+    "One Connection Per Origin",
+    "40%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "one connection per origin"
+  },
+  {
+   "pagina_pdf": 236,
+   "pagina_impressa": 218,
+   "termos": [
+    "head-of-line blocking",
+    "TCP level",
+    "UDP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TCP HoL persists in HTTP/2"
+  },
+  {
+   "pagina_pdf": 237,
+   "pagina_impressa": 219,
+   "termos": [
+    "WINDOW_UPDATE",
+    "hop-by-hop"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "flow control"
+  },
+  {
+   "pagina_pdf": 238,
+   "pagina_impressa": 220,
+   "termos": [
+    "declined by the client",
+    "zero"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "refusable push; SETTINGS zero"
+  },
+  {
+   "pagina_pdf": 239,
+   "pagina_impressa": 221,
+   "termos": [
+    "PUSH_PROMISE",
+    "same-origin",
+    "before returning the response"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "push restrictions"
+  },
+  {
+   "pagina_pdf": 240,
+   "pagina_impressa": 222,
+   "termos": [
+    "X-Associated-Content",
+    "header tables",
+    "no client-side API"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "push strategies / tables"
+  },
+  {
+   "pagina_pdf": 241,
+   "pagina_impressa": 223,
+   "termos": [
+    ":method",
+    "lowercase"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "header format"
+  },
+  {
+   "pagina_pdf": 242,
+   "pagina_impressa": 224,
+   "termos": [
+    "CRIME",
+    "85%",
+    "zlib"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CRIME and SPDY"
+  },
+  {
+   "pagina_pdf": 243,
+   "pagina_impressa": 225,
+   "termos": [
+    "ALPN",
+    "HTTP Upgrade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP/2 discovery"
+  },
+  {
+   "pagina_pdf": 244,
+   "pagina_impressa": 226,
+   "termos": [
+    "8-byte header",
+    "Brief Introduction to Binary Framing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "8-byte header"
+  },
+  {
+   "pagina_pdf": 245,
+   "pagina_impressa": 227,
+   "termos": [
+    "16-bit length",
+    "31-bit stream identifier",
+    "RST_STREAM"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "frame fields"
+  },
+  {
+   "pagina_pdf": 246,
+   "pagina_impressa": 228,
+   "termos": [
+    "GOAWAY",
+    "CONTINUATION",
+    "PUSH_PROMISE"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "frame types"
+  },
+  {
+   "pagina_pdf": 247,
+   "pagina_impressa": 229,
+   "termos": [
+    "even-numbered",
+    "odd-numbered",
+    "fixed-length"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "parity (book text)"
+  },
+  {
+   "pagina_pdf": 248,
+   "pagina_impressa": 230,
+   "termos": [
+    "16383",
+    "END_STREAM"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DATA frame"
+  },
+  {
+   "pagina_pdf": 249,
+   "pagina_impressa": 231,
+   "termos": [
+    "streams: 1, 3, and 5",
+    "All three stream IDs are odd"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "parity (book figure)"
+  },
+  {
+   "pagina_pdf": 253,
+   "pagina_impressa": 235,
+   "termos": [
+    "measure first"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "measure first"
+  },
+  {
+   "pagina_pdf": 254,
+   "pagina_impressa": 236,
+   "termos": [
+    "Last-Modified",
+    "ETag",
+    "max-age"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cache"
+  },
+  {
+   "pagina_pdf": 255,
+   "pagina_impressa": 237,
+   "termos": [
+    "18% and 20%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cache on smartphones"
+  },
+  {
+   "pagina_pdf": 256,
+   "pagina_impressa": 238,
+   "termos": [
+    "WebP",
+    "25%–34%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebP"
+  },
+  {
+   "pagina_pdf": 257,
+   "pagina_impressa": 239,
+   "termos": [
+    "4 KB limit",
+    "cookie-free"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cookies"
+  },
+  {
+   "pagina_pdf": 258,
+   "pagina_impressa": 240,
+   "termos": [
+    "preload scanner",
+    "20%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "preload scanner"
+  },
+  {
+   "pagina_pdf": 260,
+   "pagina_impressa": 242,
+   "termos": [
+    "ALPN",
+    "TLS resumption",
+    "anti-pattern"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP/2: requirements and sharding"
+  },
+  {
+   "pagina_pdf": 261,
+   "pagina_impressa": 243,
+   "termos": [
+    "server push",
+    "bundling"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "remove bundling, push"
+  },
+  {
+   "pagina_pdf": 262,
+   "pagina_impressa": 244,
+   "termos": [
+    "Dual-Protocol"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "two protocols"
+  },
+  {
+   "pagina_pdf": 264,
+   "pagina_impressa": 246,
+   "termos": [
+    "exactly backward"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "do not downgrade 2.0 to 1.x"
+  },
+  {
+   "pagina_pdf": 267,
+   "pagina_impressa": 249,
+   "termos": [
+    "TCP proxy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "LB without ALPN"
+  },
+  {
+   "pagina_pdf": 273,
+   "pagina_impressa": 255,
+   "termos": [
+    "six sockets",
+    "Origin"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "socket pool"
+  },
+  {
+   "pagina_pdf": 274,
+   "pagina_impressa": 256,
+   "termos": [
+    "predictor"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Chrome predictor"
+  },
+  {
+   "pagina_pdf": 275,
+   "pagina_impressa": 257,
+   "termos": [
+    "principle of",
+    "least privilege"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "sandbox/least privilege"
+  },
+  {
+   "pagina_pdf": 276,
+   "pagina_impressa": 258,
+   "termos": [
+    "Table 14-1",
+    "Server-Sent Events"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR/SSE/WS table"
+  },
+  {
+   "pagina_pdf": 281,
+   "pagina_impressa": 263,
+   "termos": [
+    "Cross-Origin Resource Sharing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CORS"
+  },
+  {
+   "pagina_pdf": 298,
+   "pagina_impressa": 280,
+   "termos": [
+    "EventSource"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE"
+  },
+  {
+   "pagina_pdf": 305,
+   "pagina_impressa": 287,
+   "termos": [
+    "RFC 6455",
+    "HyBi"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "standard WebSocket"
+  },
+  {
+   "pagina_pdf": 307,
+   "pagina_impressa": 289,
+   "termos": [
+    "SockJS",
+    "Socket.IO",
+    "wss"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "polyfills and schemes"
+  },
+  {
+   "pagina_pdf": 310,
+   "pagina_impressa": 292,
+   "termos": [
+    "bufferedAmount",
+    "head-of-line blocking"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bufferedAmount / HoL"
+  },
+  {
+   "pagina_pdf": 311,
+   "pagina_impressa": 293,
+   "termos": [
+    "subprotocol"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "subprotocols"
+  },
+  {
+   "pagina_pdf": 313,
+   "pagina_impressa": 295,
+   "termos": [
+    "opcode",
+    "ping (9)",
+    "pong (10)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS frame"
+  },
+  {
+   "pagina_pdf": 314,
+   "pagina_impressa": 296,
+   "termos": [
+    "cache poisoning",
+    "2–10 bytes",
+    "6–14 bytes",
+    "stream ID"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "mask, overhead, no multiplexing"
+  },
+  {
+   "pagina_pdf": 315,
+   "pagina_impressa": 297,
+   "termos": [
+    "Multiplexing Extension"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "multiplexing extension"
+  },
+  {
+   "pagina_pdf": 316,
+   "pagina_impressa": 298,
+   "termos": [
+    "x-webkit-deflate-frame",
+    "Sec-WebSocket-Version"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "compression and WS version"
+  },
+  {
+   "pagina_pdf": 317,
+   "pagina_impressa": 299,
+   "termos": [
+    "Sec-WebSocket-Key"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS key"
+  },
+  {
+   "pagina_pdf": 317,
+   "pagina_impressa": 299,
+   "termos": [
+    "Origin",
+    "CORS",
+    "101"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Origin/CORS in the handshake"
+  },
+  {
+   "pagina_pdf": 318,
+   "pagina_impressa": 300,
+   "termos": [
+    "GUID",
+    "SHA1",
+    "Sec-WebSocket-Accept"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Accept = SHA1(key+GUID)"
+  },
+  {
+   "pagina_pdf": 319,
+   "pagina_impressa": 301,
+   "termos": [
+    "WSS",
+    "transparent proxies"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WSS against proxies"
+  },
+  {
+   "pagina_pdf": 321,
+   "pagina_impressa": 303,
+   "termos": [
+    "5 bytes",
+    "2 to 14 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE/WS overhead"
+  },
+  {
+   "pagina_pdf": 324,
+   "pagina_impressa": 306,
+   "termos": [
+    "60-second",
+    "timeout tunnel"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nginx/HAProxy timeouts"
+  },
+  {
+   "pagina_pdf": 325,
+   "pagina_impressa": 307,
+   "termos": [
+    "Performance Checklist",
+    "WSS"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS checklist"
+  },
+  {
+   "pagina_pdf": 327,
+   "pagina_impressa": 309,
+   "termos": [
+    "MediaStream",
+    "RTCPeerConnection",
+    "RTCDataChannel"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3 WebRTC APIs"
+  },
+  {
+   "pagina_pdf": 329,
+   "pagina_impressa": 311,
+   "termos": [
+    "echo cancellation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "audio engine"
+  },
+  {
+   "pagina_pdf": 332,
+   "pagina_impressa": 314,
+   "termos": [
+    "Opus",
+    "VP8",
+    "6–510"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "codecs"
+  },
+  {
+   "pagina_pdf": 333,
+   "pagina_impressa": 315,
+   "termos": [
+    "720p",
+    "2.5+ Mbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bitrates"
+  },
+  {
+   "pagina_pdf": 335,
+   "pagina_impressa": 317,
+   "termos": [
+    "RFC 5245",
+    "SCTP",
+    "SRTP",
+    "RFC 4566"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC stack"
+  },
+  {
+   "pagina_pdf": 338,
+   "pagina_impressa": 320,
+   "termos": [
+    "signaling"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "signaling"
+  },
+  {
+   "pagina_pdf": 342,
+   "pagina_impressa": 324,
+   "termos": [
+    "RFC 4568",
+    "Amy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SDP and offer/answer"
+  },
+  {
+   "pagina_pdf": 343,
+   "pagina_impressa": 325,
+   "termos": [
+    "ICE agent"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE agent"
+  },
+  {
+   "pagina_pdf": 346,
+   "pagina_impressa": 328,
+   "termos": [
+    "Trickle ICE"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Trickle ICE"
+  },
+  {
+   "pagina_pdf": 345,
+   "pagina_impressa": 327,
+   "termos": [
+    "STUN binding request"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE verification"
+  },
+  {
+   "pagina_pdf": 347,
+   "pagina_impressa": 329,
+   "termos": [
+    "recommended strategy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Trickle recommended"
+  },
+  {
+   "pagina_pdf": 348,
+   "pagina_impressa": 330,
+   "termos": [
+    "iceGatheringState",
+    "iceConnectionState"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE states"
+  },
+  {
+   "pagina_pdf": 350,
+   "pagina_impressa": 332,
+   "termos": [
+    "webrtc-internals"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Chrome tool"
+  },
+  {
+   "pagina_pdf": 356,
+   "pagina_impressa": 338,
+   "termos": [
+    "mini-TCP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS mini-TCP"
+  },
+  {
+   "pagina_pdf": 357,
+   "pagina_impressa": 339,
+   "termos": [
+    "two roundtrips",
+    "self-signed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS 2 RTT and self-signed"
+  },
+  {
+   "pagina_pdf": 359,
+   "pagina_impressa": 341,
+   "termos": [
+    "500 Kbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC bandwidth start"
+  },
+  {
+   "pagina_pdf": 360,
+   "pagina_impressa": 342,
+   "termos": [
+    "SSRC",
+    "RFC 3711"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTP"
+  },
+  {
+   "pagina_pdf": 362,
+   "pagina_impressa": 344,
+   "termos": [
+    "SCTP",
+    "Table 18-1"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP"
+  },
+  {
+   "pagina_pdf": 364,
+   "pagina_impressa": 346,
+   "termos": [
+    "0×51",
+    "0×52",
+    "PPID"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel PPID"
+  },
+  {
+   "pagina_pdf": 365,
+   "pagina_impressa": 347,
+   "termos": [
+    "28 bytes",
+    "RFC 3758"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP overhead / PR"
+  },
+  {
+   "pagina_pdf": 366,
+   "pagina_impressa": 348,
+   "termos": [
+    "Naked SCTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bare SCTP"
+  },
+  {
+   "pagina_pdf": 367,
+   "pagina_impressa": 349,
+   "termos": [
+    "createDataChannel"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "createDataChannel"
+  },
+  {
+   "pagina_pdf": 368,
+   "pagina_impressa": 350,
+   "termos": [
+    "Table 18-2",
+    "WebSocket",
+    "DataChannel"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS vs DataChannel"
+  },
+  {
+   "pagina_pdf": 369,
+   "pagina_impressa": 351,
+   "termos": [
+    "DTLS/SCTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel SDP"
+  },
+  {
+   "pagina_pdf": 370,
+   "pagina_impressa": 352,
+   "termos": [
+    "DATA_CHANNEL_OPEN",
+    "head-of-line"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "open channel, no HoL"
+  },
+  {
+   "pagina_pdf": 372,
+   "pagina_impressa": 354,
+   "termos": [
+    "maxRetransmits",
+    "maxRetransmitTime"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "partial reliability"
+  },
+  {
+   "pagina_pdf": 373,
+   "pagina_impressa": 355,
+   "termos": [
+    "1,280 bytes",
+    "107 packets"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP MTU and 120 KB"
+  },
+  {
+   "pagina_pdf": 374,
+   "pagina_impressa": 356,
+   "termos": [
+    "1,150 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "message < 1150 B"
+  },
+  {
+   "pagina_pdf": 376,
+   "pagina_impressa": 358,
+   "termos": [
+    "mesh network",
+    "star"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "mesh vs star"
+  },
+  {
+   "pagina_pdf": 377,
+   "pagina_impressa": 359,
+   "termos": [
+    "supernode"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "supernode"
+  },
+  {
+   "pagina_pdf": 378,
+   "pagina_impressa": 360,
+   "termos": [
+    "8%–10%",
+    "TURN"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TURN 8-10%"
+  },
+  {
+   "pagina_pdf": 22,
+   "pagina_impressa": 4,
+   "termos": [
+    "Hibernia",
+    "Latency is expensive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "components: section opening"
+  },
+  {
+   "pagina_pdf": 24,
+   "pagina_impressa": 6,
+   "termos": [
+    "Table 1-1",
+    "speed of light"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "fiber light table"
+  },
+  {
+   "pagina_pdf": 27,
+   "pagina_impressa": 9,
+   "termos": [
+    "wavelength-division multiplexing",
+    "70 Tbit/s"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WDM"
+  },
+  {
+   "pagina_pdf": 29,
+   "pagina_impressa": 11,
+   "termos": [
+    "TeleGeography",
+    "network weather"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "capacity and variability"
+  },
+  {
+   "pagina_pdf": 31,
+   "pagina_impressa": 13,
+   "termos": [
+    "reliable network",
+    "unreliable channel",
+    "optimized for accurate delivery"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TCP: reliable abstraction"
+  },
+  {
+   "pagina_pdf": 37,
+   "pagina_impressa": 19,
+   "termos": [
+    "Slow-Start",
+    "initcwnd",
+    "Van Jacobson"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "slow-start: origin and cwnd"
+  },
+  {
+   "pagina_pdf": 40,
+   "pagina_impressa": 22,
+   "termos": [
+    "small transfers",
+    "amortized"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "slow-start and short transfers"
+  },
+  {
+   "pagina_pdf": 43,
+   "pagina_impressa": 25,
+   "termos": [
+    "264"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "20 KB example"
+  },
+  {
+   "pagina_pdf": 50,
+   "pagina_impressa": 32,
+   "termos": [
+    "Optimizing for TCP",
+    "upgrading"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "optimizing TCP"
+  },
+  {
+   "pagina_pdf": 51,
+   "pagina_impressa": 33,
+   "termos": [
+    "Slow-Start Restart",
+    "Window Scaling",
+    "TCP Fast Open"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "server best practices"
+  },
+  {
+   "pagina_pdf": 53,
+   "pagina_impressa": 35,
+   "termos": [
+    "null protocol",
+    "RFC 768"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "null UDP"
+  },
+  {
+   "pagina_pdf": 54,
+   "pagina_impressa": 36,
+   "termos": [
+    "null protocol",
+    "four additional fields"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UDP header"
+  },
+  {
+   "pagina_pdf": 65,
+   "pagina_impressa": 47,
+   "termos": [
+    "Netscape",
+    "TLS"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "origin of SSL"
+  },
+  {
+   "pagina_pdf": 66,
+   "pagina_impressa": 48,
+   "termos": [
+    "encryption, authentication, and data integrity"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS services"
+  },
+  {
+   "pagina_pdf": 67,
+   "pagina_impressa": 49,
+   "termos": [
+    "message authentication code"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MAC"
+  },
+  {
+   "pagina_pdf": 73,
+   "pagina_impressa": 55,
+   "termos": [
+    "abbreviated handshake"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "abbreviated resumption"
+  },
+  {
+   "pagina_pdf": 74,
+   "pagina_impressa": 56,
+   "termos": [
+    "session cache"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "session cache"
+  },
+  {
+   "pagina_pdf": 76,
+   "pagina_impressa": 58,
+   "termos": [
+    "Alice",
+    "Bob",
+    "Charlie"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chain of trust"
+  },
+  {
+   "pagina_pdf": 79,
+   "pagina_impressa": 61,
+   "termos": [
+    "Certificate Revocation List",
+    "RFC 5280"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CRL"
+  },
+  {
+   "pagina_pdf": 84,
+   "pagina_impressa": 66,
+   "termos": [
+    "uncached origin fetch",
+    "CDN"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "early termination"
+  },
+  {
+   "pagina_pdf": 88,
+   "pagina_impressa": 70,
+   "termos": [
+    "TLS compression",
+    "Certificate-Chain Length"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS compression and chain"
+  },
+  {
+   "pagina_pdf": 91,
+   "pagina_impressa": 73,
+   "termos": [
+    "openssl"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "openssl"
+  },
+  {
+   "pagina_pdf": 92,
+   "pagina_impressa": 74,
+   "termos": [
+    "TLSv1",
+    "RC4"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "openssl example"
+  },
+  {
+   "pagina_pdf": 108,
+   "pagina_impressa": 90,
+   "termos": [
+    "CSMA",
+    "collision avoidance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi CSMA/CA"
+  },
+  {
+   "pagina_pdf": 110,
+   "pagina_impressa": 92,
+   "termos": [
+    "WiFi Multimedia",
+    "central scheduler"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi without a scheduler"
+  },
+  {
+   "pagina_pdf": 111,
+   "pagina_impressa": 93,
+   "termos": [
+    "1, 6, and 11"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "2.4 GHz channels"
+  },
+  {
+   "pagina_pdf": 131,
+   "pagina_impressa": 113,
+   "termos": [
+    "Radio Resource Controller",
+    "Nexus 4"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RRC introduction"
+  },
+  {
+   "pagina_pdf": 132,
+   "pagina_impressa": 114,
+   "termos": [
+    "DTIM"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi DTIM"
+  },
+  {
+   "pagina_pdf": 139,
+   "pagina_impressa": 121,
+   "termos": [
+    "EV-DO",
+    "Inefficiency of Periodic Transfers"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "EV-DO and periodicity"
+  },
+  {
+   "pagina_pdf": 142,
+   "pagina_impressa": 124,
+   "termos": [
+    "eNodeB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RAN"
+  },
+  {
+   "pagina_pdf": 143,
+   "pagina_impressa": 125,
+   "termos": [
+    "tracking area",
+    "Core Network"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "core"
+  },
+  {
+   "pagina_pdf": 144,
+   "pagina_impressa": 126,
+   "termos": [
+    "Physical Layer vs. Application Layer Connectivity",
+    "PGW"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "connection vs radio"
+  },
+  {
+   "pagina_pdf": 145,
+   "pagina_impressa": 127,
+   "termos": [
+    "MME"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MME"
+  },
+  {
+   "pagina_pdf": 146,
+   "pagina_impressa": 128,
+   "termos": [
+    "RRC is maintained by the radio tower"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RRC at the tower"
+  },
+  {
+   "pagina_pdf": 149,
+   "pagina_impressa": 131,
+   "termos": [
+    "Control-plane latency",
+    "User-plane latency",
+    "Core network latency"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "four latencies"
+  },
+  {
+   "pagina_pdf": 151,
+   "pagina_impressa": 133,
+   "termos": [
+    "paging"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "incoming paging"
+  },
+  {
+   "pagina_pdf": 158,
+   "pagina_impressa": 140,
+   "termos": [
+    "Preserve Battery Power"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "preserving battery"
+  },
+  {
+   "pagina_pdf": 159,
+   "pagina_impressa": 141,
+   "termos": [
+    "Application Resource Optimizer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ARO"
+  },
+  {
+   "pagina_pdf": 164,
+   "pagina_impressa": 146,
+   "termos": [
+    "Decouple User Interactions"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "decoupling interaction"
+  },
+  {
+   "pagina_pdf": 166,
+   "pagina_impressa": 148,
+   "termos": [
+    "Do not cache or attempt to guess"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "do not cache network state"
+  },
+  {
+   "pagina_pdf": 169,
+   "pagina_impressa": 151,
+   "termos": [
+    "Apply Protocol and Application Best Practices"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "protocol best practices"
+  },
+  {
+   "pagina_pdf": 174,
+   "pagina_impressa": 156,
+   "termos": [
+    "HTTP 0.9",
+    "telnet"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 0.9 detail"
+  },
+  {
+   "pagina_pdf": 176,
+   "pagina_impressa": 158,
+   "termos": [
+    "HTTP 1.0",
+    "CERN-LineMode"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 1.0 example"
+  },
+  {
+   "pagina_pdf": 178,
+   "pagina_impressa": 160,
+   "termos": [
+    "Cache-Control",
+    "Etag",
+    "Expires"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP/1.1 cache example"
+  },
+  {
+   "pagina_pdf": 179,
+   "pagina_impressa": 161,
+   "termos": [
+    "keepalive",
+    "Connection: close"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP/1.1 default keepalive"
+  },
+  {
+   "pagina_pdf": 183,
+   "pagina_impressa": 165,
+   "termos": [
+    "Primer on Web Performance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ch. 10 opening"
+  },
+  {
+   "pagina_pdf": 184,
+   "pagina_impressa": 166,
+   "termos": [
+    "Hypertext document",
+    "Web application"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3 classes"
+  },
+  {
+   "pagina_pdf": 190,
+   "pagina_impressa": 172,
+   "termos": [
+    "DNS resolution",
+    "Start Render"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "waterfall: stages"
+  },
+  {
+   "pagina_pdf": 191,
+   "pagina_impressa": 173,
+   "termos": [
+    "Figure 10-4"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "waterfall"
+  },
+  {
+   "pagina_pdf": 192,
+   "pagina_impressa": 174,
+   "termos": [
+    "front-end performance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "front-end vs back-end"
+  },
+  {
+   "pagina_pdf": 193,
+   "pagina_impressa": 175,
+   "termos": [
+    "connection view",
+    "bandwidth utilization"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "connection view"
+  },
+  {
+   "pagina_pdf": 199,
+   "pagina_impressa": 181,
+   "termos": [
+    "histograms",
+    "medians"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "distributions"
+  },
+  {
+   "pagina_pdf": 203,
+   "pagina_impressa": 185,
+   "termos": [
+    "Table 10-2",
+    "Optimizing Time to First Byte"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "hints table and Google TTFB"
+  },
+  {
+   "pagina_pdf": 205,
+   "pagina_impressa": 187,
+   "termos": [
+    "HTTP 1.0 deployments should be upgraded",
+    "Souders"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ch. 11 opening"
+  },
+  {
+   "pagina_pdf": 206,
+   "pagina_impressa": 188,
+   "termos": [
+    "Gzip",
+    "redirects",
+    "Expires"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Souders rules"
+  },
+  {
+   "pagina_pdf": 208,
+   "pagina_impressa": 190,
+   "termos": [
+    "Figure 11-1"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "keepalive: figure"
+  },
+  {
+   "pagina_pdf": 208,
+   "pagina_impressa": 190,
+   "termos": [
+    "two network roundtrips"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "minimum cost of a new request"
+  },
+  {
+   "pagina_pdf": 212,
+   "pagina_impressa": 194,
+   "termos": [
+    "strict serialization",
+    "multiplexed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1.x limit"
+  },
+  {
+   "pagina_pdf": 215,
+   "pagina_impressa": 197,
+   "termos": [
+    "window scaling",
+    "starting congestion window"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "reasons for multiple connections"
+  },
+  {
+   "pagina_pdf": 216,
+   "pagina_impressa": 198,
+   "termos": [
+    "self-imposed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "connection limit"
+  },
+  {
+   "pagina_pdf": 220,
+   "pagina_impressa": 202,
+   "termos": [
+    "Application-layer pipelining",
+    "cache"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bundle costs"
+  },
+  {
+   "pagina_pdf": 225,
+   "pagina_impressa": 207,
+   "termos": [
+    "HTTP 2.0 will make our applications faster"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ch. 12 opening"
+  },
+  {
+   "pagina_pdf": 227,
+   "pagina_impressa": 209,
+   "termos": [
+    "The Road to HTTP 2.0",
+    "charter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "road to HTTP 2.0"
+  },
+  {
+   "pagina_pdf": 230,
+   "pagina_impressa": 212,
+   "termos": [
+    "Binary Framing Layer",
+    "HTTPS"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "binary layer"
+  },
+  {
+   "pagina_pdf": 231,
+   "pagina_impressa": 213,
+   "termos": [
+    "Stream",
+    "Message",
+    "Frame",
+    "bidirectional"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "definitions"
+  },
+  {
+   "pagina_pdf": 232,
+   "pagina_impressa": 214,
+   "termos": [
+    "unique integer identifier",
+    "single TCP connection"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stream/multiplexing"
+  },
+  {
+   "pagina_pdf": 234,
+   "pagina_impressa": 216,
+   "termos": [
+    "Browser Request Prioritization"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "browser priority"
+  },
+  {
+   "pagina_pdf": 259,
+   "pagina_impressa": 241,
+   "termos": [
+    "Optimizing for HTTP 1.x",
+    "pipelining"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "optimizing HTTP/1.x"
+  },
+  {
+   "pagina_pdf": 263,
+   "pagina_impressa": 245,
+   "termos": [
+    "PageSpeed",
+    "mod_pagespeed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PageSpeed"
+  },
+  {
+   "pagina_pdf": 265,
+   "pagina_impressa": 247,
+   "termos": [
+    "Evaluating Server Quality"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "server quality"
+  },
+  {
+   "pagina_pdf": 266,
+   "pagina_impressa": 248,
+   "termos": [
+    "ALPN",
+    "load balancer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS at the LB"
+  },
+  {
+   "pagina_pdf": 268,
+   "pagina_impressa": 250,
+   "termos": [
+    "fall back",
+    "HTTP Upgrade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "fallback without ALPN"
+  },
+  {
+   "pagina_pdf": 272,
+   "pagina_impressa": 254,
+   "termos": [
+    "Connection Management and Optimization",
+    "late binding"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "connection management"
+  },
+  {
+   "pagina_pdf": 279,
+   "pagina_impressa": 261,
+   "termos": [
+    "XMLHttpRequest"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR (ch. 15)"
+  },
+  {
+   "pagina_pdf": 306,
+   "pagina_impressa": 288,
+   "termos": [
+    "WebSocket API",
+    "onmessage"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS API"
+  },
+  {
+   "pagina_pdf": 308,
+   "pagina_impressa": 290,
+   "termos": [
+    "Blob",
+    "ArrayBuffer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS data"
+  },
+  {
+   "pagina_pdf": 309,
+   "pagina_impressa": 291,
+   "termos": [
+    "ArrayBufferView"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "JS binary"
+  },
+  {
+   "pagina_pdf": 312,
+   "pagina_impressa": 294,
+   "termos": [
+    "WebSocket Protocol",
+    "RFC 6455"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS protocol"
+  },
+  {
+   "pagina_pdf": 320,
+   "pagina_impressa": 302,
+   "termos": [
+    "Request and Response Streaming",
+    "bidirectional"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "streaming"
+  },
+  {
+   "pagina_pdf": 322,
+   "pagina_impressa": 304,
+   "termos": [
+    "Data Efficiency and Compression",
+    "gzip"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "compression in WS"
+  },
+  {
+   "pagina_pdf": 323,
+   "pagina_impressa": 305,
+   "termos": [
+    "Deploying WebSocket Infrastructure"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WS infrastructure"
+  },
+  {
+   "pagina_pdf": 324,
+   "pagina_impressa": 306,
+   "termos": [
+    "Nginx",
+    "HAProxy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nginx/HAProxy"
+  },
+  {
+   "pagina_pdf": 328,
+   "pagina_impressa": 310,
+   "termos": [
+    "RTCWEB",
+    "WEBRTC"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "standardization"
+  },
+  {
+   "pagina_pdf": 330,
+   "pagina_impressa": 312,
+   "termos": [
+    "getUserMedia",
+    "MediaStream"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "getUserMedia"
+  },
+  {
+   "pagina_pdf": 331,
+   "pagina_impressa": 313,
+   "termos": [
+    "track",
+    "constraints"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "constraints"
+  },
+  {
+   "pagina_pdf": 334,
+   "pagina_impressa": 316,
+   "termos": [
+    "UDP",
+    "NATs and firewalls"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "why not just UDP"
+  },
+  {
+   "pagina_pdf": 339,
+   "pagina_impressa": 321,
+   "termos": [
+    "Jingle",
+    "ISUP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "signaling: SIP/Jingle/ISUP"
+  },
+  {
+   "pagina_pdf": 340,
+   "pagina_impressa": 322,
+   "termos": [
+    "Skype",
+    "Asterisk"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "signaling: examples"
+  },
+  {
+   "pagina_pdf": 341,
+   "pagina_impressa": 323,
+   "termos": [
+    "Session Description Protocol",
+    "createOffer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SDP"
+  },
+  {
+   "pagina_pdf": 344,
+   "pagina_impressa": 326,
+   "termos": [
+    "STUN server"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE: STUN"
+  },
+  {
+   "pagina_pdf": 349,
+   "pagina_impressa": 331,
+   "termos": [
+    "disconnected",
+    "closed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE states"
+  },
+  {
+   "pagina_pdf": 355,
+   "pagina_impressa": 337,
+   "termos": [
+    "Datagram Transport Layer Security",
+    "encrypted"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS mandatory"
+  },
+  {
+   "pagina_pdf": 358,
+   "pagina_impressa": 340,
+   "termos": [
+    "Identity and Authentication",
+    "SRTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "identity; SRTP"
+  },
+  {
+   "pagina_pdf": 361,
+   "pagina_impressa": 343,
+   "termos": [
+    "SRTCP",
+    "jitter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTCP"
+  },
+  {
+   "pagina_pdf": 363,
+   "pagina_impressa": 345,
+   "termos": [
+    "Association",
+    "Chunk"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP: terms"
+  },
+  {
+   "pagina_pdf": 370,
+   "pagina_impressa": 352,
+   "termos": [
+    "Out-of-Band Channel Negotiation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "out-of-band negotiation"
+  },
+  {
+   "pagina_pdf": 375,
+   "pagina_impressa": 357,
+   "termos": [
+    "3.1 Mbps",
+    "10-to-1"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC bandwidth"
+  },
+  {
+   "pagina_pdf": 379,
+   "pagina_impressa": 361,
+   "termos": [
+    "Data Efficiency and Compression",
+    "Performance Checklist"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC checklist"
+  },
+  {
+   "pagina_pdf": 368,
+   "pagina_impressa": 350,
+   "termos": [
+    "Compression",
+    "no (extension)",
+    "DataChannel API is a superset of the WebSocket API"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-2: Compression no (DataChannel) / no (extension) (WebSocket)",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 379,
+   "pagina_impressa": 361,
+   "termos": [
+    "there is no equivalent for WebRTC",
+    "all messages are transferred as they are provided",
+    "it is the responsibility of the WebRTC application to optimize the binary payloads and compress the UTF-8 content"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel does not compress; no equivalent to the WebSocket extension",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 380,
+   "pagina_impressa": 362,
+   "termos": [
+    "Optimize binary payloads sent over DataChannel",
+    "Consider compressing UTF-8 content sent over DataChannel",
+    "Send small messages (< 1,150 bytes)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "checklist: optimize binary and compress UTF-8 in the DataChannel",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 373,
+   "pagina_impressa": 355,
+   "termos": [
+    "120 KB",
+    "1,280 bytes",
+    "107 packets",
+    "packet loss between the peers is ~1%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "120 KB scenario, 107 packets, ~1% loss",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 374,
+   "pagina_impressa": 356,
+   "termos": [
+    "very high probability of losing at least one",
+    "the entire message will be dropped",
+    "less than 1,150 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "book: 'very high probability' (not 'almost certain')",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 376,
+   "pagina_impressa": 358,
+   "termos": [
+    "mesh network",
+    "N - 1 connections for each peer",
+    "N × (N - 1) connections"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "mesh: N-1 per peer and N x (N-1) in total",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 316,
+   "pagina_impressa": 298,
+   "termos": [
+    "x-webkit-deflate-frame",
+    "per-message compression is still experimental"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket compression experimental in 2013",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 39,
+   "pagina_impressa": 21,
+   "termos": [
+    "224 milliseconds",
+    "four roundtrips",
+    "45 segments"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "4 round trips = 224 ms (rounded from the book)",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 43,
+   "pagina_impressa": 25,
+   "termos": [
+    "22% improvement in performance",
+    "264 ms to transfer the 20 KB file"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "22% is on p.43 (not p.44) and 264 ms",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 44,
+   "pagina_impressa": 26,
+   "termos": [
+    "275% improvement in performance",
+    "96 milliseconds",
+    "2.6.39"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "275% and 96 ms on p.44",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 247,
+   "pagina_impressa": 229,
+   "termos": [
+    "client-initiated streams have",
+    "even-numbered stream IDs"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "text: client = even",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 249,
+   "pagina_impressa": 231,
+   "termos": [
+    "All three stream IDs are odd",
+    "all three are client-initiated streams"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "figure 12-9: 1,3,5 odd = client",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 266,
+   "pagina_impressa": 248,
+   "termos": [
+    "TLS+ALPN",
+    "unencrypted HTTP 2.0 frames"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS+ALPN termination at the load balancer",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 292,
+   "pagina_impressa": 274,
+   "termos": [
+    "800 bytes of overhead",
+    "setInterval",
+    "costly performance anti"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "polling: ~800 B of overhead per request",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 293,
+   "pagina_impressa": 275,
+   "termos": [
+    "850 bytes",
+    "10,000 clients",
+    "1.13 Mbps",
+    "167 requests",
+    "30 seconds",
+    "over 60 Mbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "webmail model: 1.13 Mbps, 167 req/s, 30 s, >60 Mbps at 1 s",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 294,
+   "pagina_impressa": 276,
+   "termos": [
+    "a hanging GET",
+    "Comet",
+    "long-polling offers the best-case scenario for message latency"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "long-polling: hanging GET / Comet",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 295,
+   "pagina_impressa": 277,
+   "termos": [
+    "each delivered message still incurs the same HTTP overhead",
+    "long-polling will issue more XHR requests than periodic polling",
+    "Facebook"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "long-polling: per-message overhead; more requests at a high rate; Facebook Chat",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 296,
+   "pagina_impressa": 278,
+   "termos": [
+    "Long-polling delivers low latency but still has the same per-message overhead",
+    "use them"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "summary: polling x long-polling; use SSE/WebSocket",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 289,
+   "pagina_impressa": 271,
+   "termos": [
+    "do not have a default timeout",
+    "no simple, efficient, cross-browser API for XHR streaming"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR without default timeout; no efficient streaming",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 284,
+   "pagina_impressa": 266,
+   "termos": [
+    "a minimum of a full roundtrip of network latency",
+    "can be cached by the client"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CORS preflight: >= 1 RTT and cacheable",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 298,
+   "pagina_impressa": 280,
+   "termos": [
+    "EventSource",
+    "SSE provides a memory-efficient implementation of XHR streaming"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "EventSource and memory-efficient SSE",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 299,
+   "pagina_impressa": 281,
+   "termos": [
+    "Internet Explorer and the stock Android browser",
+    "jQuery.EventSource",
+    "XHR polling"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE polyfill uses polling",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 300,
+   "pagina_impressa": 282,
+   "termos": [
+    "text/event-stream",
+    "retry: 15000",
+    "UTF-8 encoded event data"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE protocol: text/event-stream, retry",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 301,
+   "pagina_impressa": 283,
+   "termos": [
+    "33%",
+    "gzip",
+    "Last-Event-ID",
+    "2–3 second"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE UTF-8, +33% base64, gzip, Last-Event-ID, 2-3 s",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 302,
+   "pagina_impressa": 284,
+   "termos": [
+    "Last-Event-ID: 43",
+    "local cache to recover and retransmit"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE: reconnection with Last-Event-ID and recovery cache",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 303,
+   "pagina_impressa": 285,
+   "termos": [
+    "server-to-client only",
+    "intermediaries may choose to buffer",
+    "TLS connection",
+    "radio is idle"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE: limits, proxies buffer, TLS, battery",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 108,
+   "pagina_impressa": 90,
+   "termos": [
+    "CSMA/CA",
+    "explicit acknowledgment"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CSMA/CA and explicit ACK",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 109,
+   "pagina_impressa": 91,
+   "termos": [
+    "below 10%",
+    "channel load"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "channel load < 10%",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 111,
+   "pagina_impressa": 93,
+   "termos": [
+    "1, 6, and 11",
+    "tens and even hundreds of milliseconds",
+    "5 GHz"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "channels 1/6/11; jitter of tens to hundreds of ms",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 112,
+   "pagina_impressa": 94,
+   "termos": [
+    "6.22",
+    "34.87",
+    "58.91",
+    "0.90",
+    "1.58",
+    "7.89",
+    "Median (ms)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 6-2: first hop 2.4 x 5 GHz",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 113,
+   "pagina_impressa": 95,
+   "termos": [
+    "hide these wireless collisions",
+    "frame aggregation",
+    "higher variability in packet arrival times"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "hidden losses; jitter; frame aggregation",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 115,
+   "pagina_impressa": 97,
+   "termos": [
+    "less than one millisecond",
+    "1–10 millisecond median",
+    "10–50 millisecond",
+    "hundreds of milliseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "first hop: <1 ms ideal; 1-10 median; tail 10-50; worst hundreds",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 132,
+   "pagina_impressa": 114,
+   "termos": [
+    "delivery traffic indication message (DTIM)",
+    "adds extra latency"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTIM saves energy and adds latency",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 133,
+   "pagina_impressa": 115,
+   "termos": [
+    "30–200 mW"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi transmit power",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 154,
+   "pagina_impressa": 136,
+   "termos": [
+    "46 distinct Measurement Lab",
+    "3,300 users",
+    "802.11g"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Michigan/AT&T test 2011",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 155,
+   "pagina_impressa": 137,
+   "termos": [
+    "single test does not prove a universal rule",
+    "comparable and better"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "one test does not prove a universal rule",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 99,
+   "pagina_impressa": 81,
+   "termos": [
+    "Shannon",
+    "channel capacity",
+    "log2"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Shannon capacity",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 100,
+   "pagina_impressa": 82,
+   "termos": [
+    "20 to 40 MHz",
+    "directly proportional"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "rate proportional to bandwidth",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 102,
+   "pagina_impressa": 84,
+   "termos": [
+    "$19.592 billion",
+    "698–806 MHz",
+    "1947"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "700 MHz auction and ISM",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 104,
+   "pagina_impressa": 86,
+   "termos": [
+    "Near-far problem",
+    "Cell-breathing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "near-far and cell-breathing",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 105,
+   "pagina_impressa": 87,
+   "termos": [
+    "1,000 baud",
+    "2,000 bits per second"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "modulation: 1000 baud x 2 bits",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 106,
+   "pagina_impressa": 88,
+   "termos": [
+    "few inches",
+    "highly variable"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "highly variable wireless performance",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 118,
+   "pagina_impressa": 100,
+   "termos": [
+    "300–1000 ms",
+    "100–500 ms",
+    "0.5–5 Mbit/s",
+    "lower bound for data"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 7-2: data and latency by generation",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 119,
+   "pagina_impressa": 101,
+   "termos": [
+    "172 Kbit/s",
+    "384 Kbit/s",
+    "80%–85%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "GPRS, EDGE, GSM",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 122,
+   "pagina_impressa": 104,
+   "termos": [
+    "High-Speed Packet Access Evolution (HSPA+)",
+    "Release",
+    "LTE System Architecture Evolution"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3GPP releases",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 124,
+   "pagina_impressa": 106,
+   "termos": [
+    "IMT-Advanced",
+    "sub 10 ms user-plane latency",
+    "3.9G"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "IMT-Advanced and LTE as 3.9G",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 128,
+   "pagina_impressa": 110,
+   "termos": [
+    "168",
+    "3,000",
+    "1,500",
+    "Maximum MIMO streams",
+    "User-plane one-way latency"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 7-6 HSPA+/LTE/LTE-Advanced",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 130,
+   "pagina_impressa": 112,
+   "termos": [
+    "Category",
+    "299.6",
+    "Quad-cell + MIMO"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "LTE/HSPA UE categories",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 144,
+   "pagina_impressa": 126,
+   "termos": [
+    "the PGW acts as a NAT",
+    "device radio state is not tied"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PGW as NAT; radio independent of the connection",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 146,
+   "pagina_impressa": 128,
+   "termos": [
+    "dedicated fiber link",
+    "backhaul capacity"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "backhaul as a bottleneck",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 151,
+   "pagina_impressa": 133,
+   "termos": [
+    "paging message",
+    "first packet incurs a much higher latency cost"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "paging and first-packet latency",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 152,
+   "pagina_impressa": 134,
+   "termos": [
+    "50 to 300 meters",
+    "femtocells"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HetNets: small cells",
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "pagina_pdf": 198,
+   "pagina_impressa": 180,
+   "termos": [
+    "supported by IE9+",
+    "Chrome 6+",
+    "Firefox 7+",
+    "Safari and Opera"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Navigation Timing: support in early 2013 (IE9+, Chrome 6+, Firefox 7+; no Safari/Opera)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 198,
+   "pagina_impressa": 180,
+   "termos": [
+    "microsecond",
+    "performance.timing",
+    "beacon it back"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Navigation Timing: high-resolution timestamps and beacon collection",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 199,
+   "pagina_impressa": 181,
+   "termos": [
+    "skewed",
+    "multimodal",
+    "cached vs. uncached page generation time"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "igvita example: skewed load and multimodal response (cache x no cache)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 199,
+   "pagina_impressa": 181,
+   "termos": [
+    "throw away the averages",
+    "histogram"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "averages are meaningless for skewed/multimodal distributions; histograms",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 80,
+   "pagina_impressa": 62,
+   "termos": [
+    "complementary",
+    "some browsers distribute their own CRL lists",
+    "differ in their behavior if the OCSP request fails"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CRL and OCSP are complementary; browsers differ",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 80,
+   "pagina_impressa": 62,
+   "termos": [
+    "Real-time OCSP requests may impair the client's privacy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "privacy and the real-time OCSP problem",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "termos": [
+    "browser behavior for this process varies wildly",
+    "Extended Validation",
+    "vary by vendor, platform, and version"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "revocation: behavior varies by vendor, platform and version; EV",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "termos": [
+    "Some browsers may block the TLS handshake",
+    "no single best solution"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "browsers may block the handshake; no single best solution",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "termos": [
+    "one optimization that can be made for some browsers is OCSP stapling",
+    "allowing the browser to skip the online check"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stapling: optimization for some browsers; the browser skips the online lookup",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 90,
+   "pagina_impressa": 72,
+   "termos": [
+    "cache the signed OCSP response",
+    "save the extra request for many clients"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stapling: the server caches the response and saves the request for many clients",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 90,
+   "pagina_impressa": 72,
+   "termos": [
+    "400 to 4,000 bytes",
+    "Only one OCSP response can be included",
+    "Nginx, Apache, and IIS"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stapling: 400-4,000 B, one response, Nginx/Apache/IIS",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 244,
+   "pagina_impressa": 226,
+   "termos": [
+    "binary, length-prefixed framing layer",
+    "easier and more efficient to process in code"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 2.0: length-prefixed binary layer",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 245,
+   "pagina_impressa": 227,
+   "termos": [
+    "16-bit length prefix",
+    "216 - 1 bytes",
+    "excludes the 8-byte header"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "16-bit length field; excludes the 8-byte header",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 245,
+   "pagina_impressa": 227,
+   "termos": [
+    "skip ahead to the beginning of the next frame",
+    "big performance improvement over HTTP 1.x",
+    "first eight bytes of every frame"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "parser skips to the next frame using the length prefix",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 246,
+   "pagina_impressa": 228,
+   "termos": [
+    "PING",
+    "Used to measure the roundtrip time",
+    "liveness"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PING: measure RTT and liveness",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 246,
+   "pagina_impressa": 228,
+   "termos": [
+    "GOAWAY",
+    "last processed stream ID",
+    "safe multiplexing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "GOAWAY reports the last processed stream",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 247,
+   "pagina_impressa": 229,
+   "termos": [
+    "fixed-length fields exclusively",
+    "8-byte header for a data frame",
+    "0.3%",
+    "100 nanoseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "fixed-size fields (not frames): 4 bytes, 0.3%, <100 ns",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 248,
+   "pagina_impressa": 230,
+   "termos": [
+    "flow control is applied only to DATA frames",
+    "214 - 1 (16383) bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "flow control only on DATA; DATA <= 16383",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 163,
+   "pagina_impressa": 145,
+   "termos": [
+    "Control plane",
+    "200-2,500 ms",
+    "50-100 ms",
+    "DNS lookup",
+    "TLS handshake",
+    "200-400 ms",
+    "100-200 ms",
+    "200-3500 ms",
+    "100-600 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 8-1 item by item",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 163,
+   "pagina_impressa": 145,
+   "termos": [
+    "optimistic 100 ms roundtrip time for 4G",
+    "200 ms roundtrip time for 3.5G+",
+    "half a dozen roundtrips"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 8-1 RTT assumptions and half a dozen RTTs",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 22,
+   "pagina_impressa": 4,
+   "termos": [
+    "Hibernia Express",
+    "5 milliseconds",
+    "$80M per millisecond"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Hibernia Express: US$ 80 M per ms",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 23,
+   "pagina_impressa": 5,
+   "termos": [
+    "Processing delay",
+    "process the packet header",
+    "check for bit-level errors",
+    "Queuing delay"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "processing delay is the router's (packet header)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 23,
+   "pagina_impressa": 5,
+   "termos": [
+    "10 Mb file",
+    "1 Mbps and 100 Mbps",
+    "10 seconds",
+    "0.1 seconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "10 Mb at 1 Mbps = 10 s; at 100 Mbps = 0.1 s",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 192,
+   "pagina_impressa": 174,
+   "termos": [
+    "back-end performance",
+    "server response times and network latency",
+    "can't parse or execute a resource that is blocked on the network"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "back-end (server and network) as critical as the front-end",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 203,
+   "pagina_impressa": 185,
+   "termos": [
+    "Google Search",
+    "immediately flushes the static header",
+    "prior to even analyzing the query"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "early flush of the static header in Google Search",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 258,
+   "pagina_impressa": 240,
+   "termos": [
+    "Underprovisioned servers",
+    "Underprovisioned proxy and load-balancer capacity"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "undersized server and proxy/load balancer",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 24,
+   "pagina_impressa": 6,
+   "termos": [
+    "Jim Gettys",
+    "2010",
+    "CoDel",
+    "Linux 3.5+",
+    "refractive index of ~1.5"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bufferbloat, CoDel and refractive index ~1.5",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 24,
+   "pagina_impressa": 6,
+   "termos": [
+    "299,792,458 meters per second",
+    "200,000,000 meters per second"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "speed of light and in fiber",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 25,
+   "pagina_impressa": 7,
+   "termos": [
+    "New York to San Francisco",
+    "4,148 km",
+    "15,993 km",
+    "40,075 km",
+    "133.7 ms",
+    "200-300 millisecond range"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 1-1 (distances, vacuum x fiber)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 26,
+   "pagina_impressa": 8,
+   "termos": [
+    "18 ms",
+    "26 ms",
+    "44 ms",
+    "11th hop"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "FCC and traceroute: 18/26/44 ms",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 27,
+   "pagina_impressa": 9,
+   "termos": [
+    "400 wavelengths",
+    "171 Gbit/s",
+    "70 Tbit/s",
+    "ICMP Time Exceeded"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WDM: 400 wavelengths x 171 Gbit/s; ICMP traceroute",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 28,
+   "pagina_impressa": 10,
+   "termos": [
+    "Table 1-2",
+    "South Korea",
+    "14.2",
+    "11.7",
+    "10.9",
+    "10.1",
+    "9.9",
+    "8.6",
+    "2 to 10 Mbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 1-2 Akamai Q1 2013 and HD 2-10 Mbps",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 29,
+   "pagina_impressa": 11,
+   "termos": [
+    "TeleGeography",
+    "20% of the available capacity",
+    "more than half",
+    "trans-Pacific"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TeleGeography: 20% of submarine capacity; WDM",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 31,
+   "pagina_impressa": 13,
+   "termos": [
+    "Vint Cerf and Bob Kahn",
+    "1974",
+    "RFC 791",
+    "RFC 793"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "origin of TCP/IP: 1974, RFC 791 and 793",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 32,
+   "pagina_impressa": 14,
+   "termos": [
+    "Internet Stream Protocol (ST)",
+    "IPv{1,2,3,5}"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "IPv5 = Internet Stream Protocol; why IPv6",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 35,
+   "pagina_impressa": 17,
+   "termos": [
+    "1986",
+    "5,000+",
+    "factor of 1,000",
+    "1969",
+    "NCP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1986 collapse: capacity dropped by a factor of 1,000; NCP",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 36,
+   "pagina_impressa": 18,
+   "termos": [
+    "number of bits to left-shift",
+    "strip this option entirely",
+    "net.ipv4.tcp_window_scaling"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "window scaling: bit shift; intermediaries strip the option",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 44,
+   "pagina_impressa": 26,
+   "termos": [
+    "68 ms",
+    "15 segments",
+    "96 milliseconds",
+    "275%",
+    "2.6.39"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "reuse: 96 ms; IW10 above kernel 2.6.39",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 42,
+   "pagina_impressa": 24,
+   "termos": [
+    "84 ms",
+    "124 ms",
+    "152 ms",
+    "initial cwnd size is 4"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "20 KB file timeline (new connection)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 47,
+   "pagina_impressa": 29,
+   "termos": [
+    "1.31 Mbps",
+    "122.1 KB",
+    "traffic shaping"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "BDP: 1.31 Mbps and 122.1 KB; traffic shaping",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 50,
+   "pagina_impressa": 32,
+   "termos": [
+    "selective acknowledgments (SACK)",
+    "delayed acknowledgments",
+    "fast retransmit"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SACK, delayed ACK and fast retransmit only mentioned",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 53,
+   "pagina_impressa": 35,
+   "termos": [
+    "August of 1980",
+    "Jon Postel",
+    "napkin",
+    "Unreliable Datagram Protocol"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UDP: August 1980, Postel, napkin",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 56,
+   "pagina_impressa": 38,
+   "termos": [
+    "4.29 billion",
+    "mid-1994",
+    "RFC 1631"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "NAT: 4.29 billion addresses; RFC 1631 in 1994",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 57,
+   "pagina_impressa": 39,
+   "termos": [
+    "16,777,216",
+    "1,048,576",
+    "65,536",
+    "no public computer is allowed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 3-1: private ranges",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 63,
+   "pagina_impressa": 45,
+   "termos": [
+    "delivery delays up to 2 minutes",
+    "must enable IPv6 checksum",
+    "minimum interval 15 seconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RFC 5405: delays of up to 2 minutes; IPv6 checksum; 15 s keepalive",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 65,
+   "pagina_impressa": 47,
+   "termos": [
+    "third-party observer can only infer",
+    "approximate amount of data sent"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS: an observer infers only endpoints, cipher and volume",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 66,
+   "pagina_impressa": 48,
+   "termos": [
+    "quickly replaced by SSL 3.0",
+    "preclude interoperability"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSL 2.0 -> 3.0; TLS 1.0 does not interoperate with SSL 3.0",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 70,
+   "pagina_impressa": 52,
+   "termos": [
+    "140",
+    "168",
+    "Finished",
+    "up to two extra roundtrips"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS timeline: 140 and 168 ms; up to two extra RTTs",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 71,
+   "pagina_impressa": 53,
+   "termos": [
+    "1,024 or 2,048 bits",
+    "Don't fall for marketing"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RSA 1,024/2,048 bits as a bottleneck; do not trust old benchmarks",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 82,
+   "pagina_impressa": 64,
+   "termos": [
+    "less than 1% of the CPU load",
+    "less than 10 KB",
+    "less than 2% of network overhead",
+    "Doug Beaver"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Gmail: <1% CPU, <10 KB, <2% overhead; Facebook",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 85,
+   "pagina_impressa": 67,
+   "termos": [
+    "both sides of the connection",
+    "Servers with multiple processes or workers should use a shared session cache",
+    "do not assume that session support will be on by default"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "early termination with a CDN on both sides; session cache checklist",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 86,
+   "pagina_impressa": 68,
+   "termos": [
+    "20 to 40 bytes of overhead",
+    "60 to 100 bytes",
+    "6% of framing overhead",
+    "11,211-byte"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS record: overhead and 6% minimum",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 87,
+   "pagina_impressa": 69,
+   "termos": [
+    "40 bytes for TCP options",
+    "1,420 bytes",
+    "1,400 bytes",
+    "50 KB of memory per connection",
+    "about 5 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS record: 1,420/1,400 B; OpenSSL 50 KB x Google 5 KB",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 88,
+   "pagina_impressa": 70,
+   "termos": [
+    "DNS lookup, TCP connection, and an HTTP GET",
+    "URL for the parent"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "missing intermediate: DNS+TCP+GET; parent certificate URL",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 90,
+   "pagina_impressa": 72,
+   "termos": [
+    "Firefox 4+",
+    "Chrome 4+",
+    "Opera 12+",
+    "pin"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HSTS: support in early 2013 and pin",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 92,
+   "pagina_impressa": 74,
+   "termos": [
+    "3571 bytes",
+    "444 bytes",
+    "RC4-SHA",
+    "Timeout   : 300"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "openssl s_client: 3,571 B read, RC4-SHA, timeout 300 s",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 93,
+   "pagina_impressa": 75,
+   "termos": [
+    "three- to four-segment initial TCP congestion window",
+    "Issued session identifier"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3,571 B chain close to the initial cwnd of 3-4 segments",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 98,
+   "pagina_impressa": 80,
+   "termos": [
+    "IEEE 802.15 (WiMAX)",
+    "Cellular (UMTS, LTE, etc.)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 5-1: the book writes 802.15 for WiMAX",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 102,
+   "pagina_impressa": 84,
+   "termos": [
+    "Radio Act of 1912",
+    "Titanic",
+    "Communications Act of 1934",
+    "$19.592 billion",
+    "698-806 MHz"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "regulation history and 700 MHz auction",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 117,
+   "pagina_impressa": 99,
+   "termos": [
+    "6.4 billion",
+    "1.1 billion",
+    "1.8 billion",
+    "20 billion"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chapter 7: connection and device numbers (IDC)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 120,
+   "pagina_impressa": 102,
+   "termos": [
+    "3rd Generation Partnership Project 2",
+    "CDMA2000",
+    "Table 7-3"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3GPP2 and Table 7-3",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 121,
+   "pagina_impressa": 103,
+   "termos": [
+    "*#*#4636#*#*",
+    "SIM card"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Android 4636 and SIM = 3GPP",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 123,
+   "pagina_impressa": 105,
+   "termos": [
+    "256 Kbit/s",
+    "640 Kbit/s",
+    "IMT-Advanced"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "relative broadband (256/640 Kbit/s); IMT-Advanced",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 125,
+   "pagina_impressa": 107,
+   "termos": [
+    "three or four radios",
+    "five or six"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "radios in the LTE device: 3-4; 5-6 with 4x MIMO",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 130,
+   "pagina_impressa": 112,
+   "termos": [
+    "168.8",
+    "Quad-cell + MIMO",
+    "2998.6",
+    "1497.8",
+    "301.5",
+    "category 3"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Tables 7-7 and 7-8: UE categories",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 131,
+   "pagina_impressa": 113,
+   "termos": [
+    "Nexus 4",
+    "HSPA+ 42",
+    "category 24"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nexus 4: HSPA+ 42 and category 24",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 138,
+   "pagina_impressa": 120,
+   "termos": [
+    "100 to 1,000 bytes",
+    "up to two seconds",
+    "one and a half seconds",
+    "multisecond RRC latency"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UMTS: FACH buffer threshold and DCH delays",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 139,
+   "pagina_impressa": 121,
+   "termos": [
+    "half a billion",
+    "Connected",
+    "hundreds to thousands"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "EV-DO: half a billion CDMA subscriptions in 2017",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 148,
+   "pagina_impressa": 130,
+   "termos": [
+    "30-100 ms range",
+    "25-95 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "4G: end-to-end latency 30-100 ms; 25-95 ms in the core",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 150,
+   "pagina_impressa": 132,
+   "termos": [
+    "Table 7-10",
+    "40-50 ms",
+    "100-200 ms",
+    "150-400 ms",
+    "600-750 ms",
+    "24,901 miles",
+    "133.7 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 7-10 (AT&T) and around the globe",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 152,
+   "pagina_impressa": 134,
+   "termos": [
+    "50 to 300 meters",
+    "femtocells",
+    "tens of square miles"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HetNets: 50-300 m; femtocells",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 153,
+   "pagina_impressa": 135,
+   "termos": [
+    "TamoGraph",
+    "capacity planning"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TamoGraph and capacity planning",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 159,
+   "pagina_impressa": 141,
+   "termos": [
+    "Application Resource Optimizer",
+    "collector and an analyzer",
+    "estimates"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ARO: collector and analyzer; model estimates",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 160,
+   "pagina_impressa": 142,
+   "termos": [
+    "pcap",
+    "tcpdump",
+    "no such thing as a \"small request\""
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ARO accepts pcap; there is no small request for the battery",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 162,
+   "pagina_impressa": 144,
+   "termos": [
+    "5 watt-hours",
+    "18,000 joules",
+    "600 joules",
+    "~3%",
+    "5–30 minute NAT connection timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "battery math: 18,000 J; 600 J/h; 3%",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 166,
+   "pagina_impressa": 148,
+   "termos": [
+    "antennagate",
+    "tens to hundreds of milliseconds, at most a second"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stable estimates at most ~1 s; antennagate",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 167,
+   "pagina_impressa": 149,
+   "termos": [
+    "one-millisecond intervals",
+    "Prefetch third-party content",
+    "AppCache"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "LTE/HSPA+: 1 ms allocation; third-party prefetch; AppCache",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 168,
+   "pagina_impressa": 150,
+   "termos": [
+    "almost 90%",
+    "three variables to balance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "90% of wireless traffic indoors; three variables",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 173,
+   "pagina_impressa": 155,
+   "termos": [
+    "Tim Berners-Lee",
+    "1991",
+    "carriage return"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 0.9 in 1991",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 175,
+   "pagina_impressa": 157,
+   "termos": [
+    "Mosaic",
+    "October 1994",
+    "August 9, 1995",
+    "May 1996",
+    "RFC 1945"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1994-1996 context: Mosaic, Netscape IPO, RFC 1945",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 177,
+   "pagina_impressa": 159,
+   "termos": [
+    "RFC 2068",
+    "January 1997",
+    "RFC 2616",
+    "June of 1999"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 1.1: RFC 2068 (Jan/1997) and RFC 2616 (Jun/1999)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 179,
+   "pagina_impressa": 161,
+   "termos": [
+    "Connection: close",
+    "Connection: Keep-Alive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "keepalive by default in 1.1; Connection: Keep-Alive in 1.0",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 205,
+   "pagina_impressa": 187,
+   "termos": [
+    "Steve Souders",
+    "14 rules",
+    "half of which are networking optimizations"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Souders: 14 rules, half about the network",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 207,
+   "pagina_impressa": 189,
+   "termos": [
+    "300% performance improvement",
+    "Joshua Graessley",
+    "28 millisecond one-way"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "iTunes 300% and Fig. 11-1 parameters",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 211,
+   "pagina_impressa": 193,
+   "termos": [
+    "284 milli",
+    "228 milliseconds",
+    "172 milliseconds",
+    "40% reduction"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "pipelining: 284 -> 228 -> 172 ms (-40%)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 212,
+   "pagina_impressa": 194,
+   "termos": [
+    "eliminating another 20 milliseconds",
+    "strict serialization of returned responses"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "server parallelism: extra 20 ms; strict serialization",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 213,
+   "pagina_impressa": 195,
+   "termos": [
+    "attack vector against the server",
+    "advanced configuration option"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "pipelining: attack vector and advanced option",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 216,
+   "pagina_impressa": 198,
+   "termos": [
+    "seventh request",
+    "self-imposed DoS attack"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "seventh request stalls; self-imposed DoS",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 217,
+   "pagina_impressa": 199,
+   "termos": [
+    "no such simple equation",
+    "more than a dozen connections",
+    "CNAME"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "sharding: no formula; few sites go beyond a dozen",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 218,
+   "pagina_impressa": 200,
+   "termos": [
+    "500–800 bytes",
+    "8 KB or a 16 KB limit",
+    "218 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "overhead 500-800 B; 8/16 KB limits",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 219,
+   "pagina_impressa": 201,
+   "termos": [
+    "352 bytes",
+    "96% protocol byte overhead",
+    "15-byte"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "15 bytes in 352 B of header = 96%",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 221,
+   "pagina_impressa": 203,
+   "termos": [
+    "800 × 600 × 4",
+    "1,920,000 bytes",
+    "1.83 MB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "800x600 bitmap: 1.83 MB",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 222,
+   "pagina_impressa": 204,
+   "termos": [
+    "Gmail",
+    "self-inflicted DoS attack",
+    "one or more times each day"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Gmail: background update to avoid self-inflicted DoS",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 223,
+   "pagina_impressa": 205,
+   "termos": [
+    "IE8",
+    "32 KB",
+    "33% byte expansion",
+    "1–2 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "inline: IE8 32 KB; base64 +33%; 1-2 KB",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 226,
+   "pagina_impressa": 208,
+   "termos": [
+    "announced in mid-2009",
+    "50% reduction in page load time",
+    "up to 55% faster"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY: goals and up to 55% faster",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 228,
+   "pagina_impressa": 210,
+   "termos": [
+    "March 2012",
+    "September 2012",
+    "July 2013",
+    "April 2014",
+    "November 2014"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTTP 2.0 schedule in 2013",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 228,
+   "pagina_impressa": 210,
+   "termos": [
+    "SPDY v3 was released in 2012",
+    "first implementation of flow control"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY v3 (2012) with the first flow control",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 229,
+   "pagina_impressa": 211,
+   "termos": [
+    "SPDY v4 will be released in 2013"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY v4 expected in 2013-2014",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 235,
+   "pagina_impressa": 217,
+   "termos": [
+    "40% less than HTTP",
+    "single compression context"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "one connection per origin: up to 40% fewer packets",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 236,
+   "pagina_impressa": 218,
+   "termos": [
+    "outweighed by the benefits of compression and prioritization",
+    "UDP, are not outside the realm of possibility"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TCP HoL overcome by compression and prioritization in the tests; UDP is not ruled out",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 242,
+   "pagina_impressa": 224,
+   "termos": [
+    "85%–88%",
+    "45–1142 ms",
+    "375 Kbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY zlib: 85-88%; gains of 45-1142 ms",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 243,
+   "pagina_impressa": 225,
+   "termos": [
+    "HTTP2-Settings",
+    "101 Switching Protocols",
+    "no extra roundtrips"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cleartext Upgrade of HTTP 2.0",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 244,
+   "pagina_impressa": 226,
+   "termos": [
+    "connection header",
+    "fail-fast"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "connection header fail-fast",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 247,
+   "pagina_impressa": 229,
+   "termos": [
+    "promised stream ID",
+    "client-initiated streams have even-numbered stream IDs"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PUSH_PROMISE with promised stream ID; parity in the text",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 249,
+   "pagina_impressa": 231,
+   "termos": [
+    "All three stream IDs are odd",
+    "client-initiated streams"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "figure 12-9: client streams 1,3,5 are odd",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 255,
+   "pagina_impressa": 237,
+   "termos": [
+    "18% and 20%",
+    "17% of the bytes",
+    "7% of the radio energy",
+    "6% of the signaling load",
+    "9% of the radio resource"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MobiSys 2012: redundant transfers",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 256,
+   "pagina_impressa": 238,
+   "termos": [
+    "26% smaller",
+    "25%–34% smaller",
+    "22% additional bytes",
+    "1.4x",
+    "50%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebP and Chrome Data Compression Proxy",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 257,
+   "pagina_impressa": 239,
+   "termos": [
+    "4 KB limit",
+    "tens of kilobytes",
+    "cookie-free"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cookies: 4 KB; tens of KB; cookieless origin",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 263,
+   "pagina_impressa": 245,
+   "termos": [
+    "over 40 various",
+    "ModPagespeedDisableFilters combine_css,combine_javascript",
+    "ModPagespeedShardDomain"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "PageSpeed: 40 filters; config for SPDY",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 264,
+   "pagina_impressa": 246,
+   "termos": [
+    "Load balancer and proxy connections to application servers should be persistent",
+    "message-oriented"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "internal infrastructure criteria for 2.0",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 265,
+   "pagina_impressa": 247,
+   "termos": [
+    "optimistic",
+    "HTTP 2.0 server must understand stream priorities"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "optimistic HTTP 2.0 client; server quality",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 266,
+   "pagina_impressa": 248,
+   "termos": [
+    "HAProxy",
+    "NPN negotiation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HAProxy: NPN and routing by protocol",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 267,
+   "pagina_impressa": 249,
+   "termos": [
+    "TCP proxy",
+    "may not provide ALPN"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "cloud load balancers without ALPN: TCP mode",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 276,
+   "pagina_impressa": 258,
+   "termos": [
+    "Request streaming",
+    "binary framing",
+    "no (base64)",
+    "limited"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 14-1",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 288,
+   "pagina_impressa": 270,
+   "termos": [
+    "Table 15-1",
+    "loadstart",
+    "loadend",
+    "timeout = 5000",
+    "default: no timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR event Table 15-1",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 280,
+   "pagina_impressa": 262,
+   "termos": [
+    "2006",
+    "Mozilla modeled its own implementation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR: W3C draft in 2006",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 307,
+   "pagina_impressa": 289,
+   "termos": [
+    "Android browser",
+    "SockJS",
+    "Socket.IO",
+    "heartbeats"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket: Android without support; SockJS and Socket.IO",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 310,
+   "pagina_impressa": 292,
+   "termos": [
+    "asynchronous",
+    "bufferedAmount",
+    "single bit"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "asynchronous send; bufferedAmount; one text/binary bit",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 316,
+   "pagina_impressa": 298,
+   "termos": [
+    "x-webkit-deflate-frame",
+    "mid-2013",
+    "not yet supported by any popular browser"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket: multiplexing and compression in 2013",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 318,
+   "pagina_impressa": 300,
+   "termos": [
+    "Client must send Sec-WebSocket-Version and Sec-WebSocket-Key",
+    "Server must confirm the protocol by returning Sec-WebSocket-Accept"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "minimal WebSocket handshake",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 323,
+   "pagina_impressa": 305,
+   "termos": [
+    "three pieces to consider",
+    "block WebSocket traffic entirely",
+    "does not prevent the intermediary from timing out an idle TCP connection"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket infrastructure: three fronts; TLS does not avoid timeouts",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 324,
+   "pagina_impressa": 306,
+   "termos": [
+    "proxy_read_timeout 3600",
+    "timeout tunnel  1h",
+    "60-second timeouts"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nginx/HAProxy: 60 s and 1 h timeouts",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 332,
+   "pagina_impressa": 314,
+   "termos": [
+    "Opus",
+    "VP8"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Opus and VP8 codecs",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 333,
+   "pagina_impressa": 315,
+   "termos": [
+    "720p at 30 FPS: 1.0~2.0 Mbps",
+    "360p at 30 FPS: 0.5~1.0 Mbps",
+    "180p at 30 FPS: 0.1~0.5 Mbps",
+    "2.5+ Mbps"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC video bitrate ranges",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 362,
+   "pagina_impressa": 344,
+   "termos": [
+    "Table 18-1",
+    "byte-oriented",
+    "message-oriented",
+    "configurable"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-1: TCP x UDP x SCTP",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 368,
+   "pagina_impressa": 350,
+   "termos": [
+    "Table 18-2",
+    "no (extension)",
+    "always"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-2: WebSocket x DataChannel",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 369,
+   "pagina_impressa": 351,
+   "termos": [
+    "DTLS/SCTP 5000",
+    "streams=10",
+    "0.0.0.0"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel SDP: streams=10",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 372,
+   "pagina_impressa": 354,
+   "termos": [
+    "Table 18-3",
+    "mutually exclusive",
+    "maxRetransmits: 0",
+    "TCP, but without the head-"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-3: exclusive reliability policies",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 374,
+   "pagina_impressa": 356,
+   "termos": [
+    "1,150 bytes",
+    "very high probability of losing at least one"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "messages < 1,150 B; high probability of loss",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 109,
+   "pagina_impressa": 91,
+   "termos": [
+    "20, 40, 80, 160",
+    "866.7",
+    "7.2, 14.4, 21.7, 28.9, 43.3, 57.8, 65, 72.2"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi Table 6-1 (rates per stream)",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 107,
+   "pagina_impressa": 89,
+   "termos": [
+    "1997",
+    "ALOHAnet",
+    "1971",
+    "University of Hawaii",
+    "WiFi Alliance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi: 1997, ALOHAnet 1971, WiFi Alliance",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 111,
+   "pagina_impressa": 93,
+   "termos": [
+    "1, 6, and 11",
+    "channels (13, 14)",
+    "cut in half"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "channels 1/6/11; 13 and 14 in some countries; halved band",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 114,
+   "pagina_impressa": 96,
+   "termos": [
+    "Table 6-3",
+    "Wi-Fi offloading",
+    "3–4.3"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 6-3 and Wi-Fi offloading",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 115,
+   "pagina_impressa": 97,
+   "termos": [
+    "over 120 different versions",
+    "5–10 second chunks",
+    "less than one millisecond"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Netflix 120 versions; 5-10 s segments; <1 ms",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 132,
+   "pagina_impressa": 114,
+   "termos": [
+    "delivery traffic indication message (DTIM)",
+    "NoAck",
+    "APSD"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTIM and WMM PowerSave",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 355,
+   "pagina_impressa": 337,
+   "termos": [
+    "Secure Communication with DTLS",
+    "cannot be used over UDP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS: TLS does not run over UDP",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 356,
+   "pagina_impressa": 338,
+   "termos": [
+    "mini-TCP",
+    "fragment offset",
+    "self-signed certificates"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS: mini-TCP, fragment offset, self-signed",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 357,
+   "pagina_impressa": 339,
+   "termos": [
+    "two roundtrips",
+    "block cipher must be used",
+    "single network packet"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS: 2 RTTs, block cipher, record in one packet",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 358,
+   "pagina_impressa": 340,
+   "termos": [
+    "identity provider",
+    "self-signed certificates"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC: authentication is left to the application / identity provider",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 359,
+   "pagina_impressa": 341,
+   "termos": [
+    "<500 Kbps",
+    "will not upgrade the quality",
+    "360p video constraint"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC: starts <500 Kbps; quality does not rise; 360p ceiling",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 360,
+   "pagina_impressa": 342,
+   "termos": [
+    "RFC 3550",
+    "RFC 3711",
+    "12 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTP: RFC 3550/3711 and 12-byte header",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 361,
+   "pagina_impressa": 343,
+   "termos": [
+    "separate ports for each individual stream",
+    "keying material",
+    "inter-arrival jitter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTCP: statistics; DTLS keys; ports per stream",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 364,
+   "pagina_impressa": 346,
+   "termos": [
+    "B=1, E=0",
+    "Payload protocol identifier",
+    "TSN"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP: B/E bits, TSN and PPID",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 365,
+   "pagina_impressa": 347,
+   "termos": [
+    "28 bytes of overhead",
+    "RFC 3758",
+    "same initial congestion window size"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP: 28 bytes; partial reliability; same initial cwnd",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 366,
+   "pagina_impressa": 348,
+   "termos": [
+    "Naked SCTP",
+    "many mobile carriers use SCTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bare SCTP does not traverse NAT; carriers use it in the core",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 282,
+   "pagina_impressa": 264,
+   "termos": [
+    "triple of application protocol, domain name, and port number",
+    "same-origin policy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "origin = protocol, domain and port",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 284,
+   "pagina_impressa": 266,
+   "termos": [
+    "Access-Control-Request-Method",
+    "Access-Control-Allow-Headers",
+    "minimum of a full roundtrip"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "preflight: headers and minimum cost of one RTT",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 285,
+   "pagina_impressa": 267,
+   "termos": [
+    "ArrayBuffer",
+    "Document",
+    "revokeObjectURL",
+    "no network transmission overhead"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "native XHR download types and blob without base64",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 22,
+   "pagina_impressa": 4,
+   "termos": [
+    "Latency is expensive",
+    "3,000-mile"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Hibernia Express: 3,000 miles",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 203,
+   "pagina_impressa": 185,
+   "termos": [
+    "Table 10-2",
+    "dns-prefetch",
+    "subresource",
+    "prerender",
+    "13+",
+    "11+"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 10-2: hint support",
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "pagina_pdf": 328,
+   "pagina_impressa": 310,
+   "termos": [
+    "Standard under construction",
+    "1B+ users",
+    "$4.7 trillion"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC: standard under construction, 1B+ users, US$ 4.7 trillion",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 329,
+   "pagina_impressa": 311,
+   "termos": [
+    "noise reduction and echo cancellation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "audio engine: noise reduction and echo cancellation",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 331,
+   "pagina_impressa": 313,
+   "termos": [
+    "MediaStream object",
+    "Request a mandatory audio track",
+    "facingMode"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "getUserMedia example with mandatory and optional constraints",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 332,
+   "pagina_impressa": 314,
+   "termos": [
+    "Web Audio API",
+    "Canvas API",
+    "WebGL",
+    "6–510 Kbit/s"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "acquired stream feeds Web Audio, Canvas and WebGL; Opus 6-510 Kbit/s",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 333,
+   "pagina_impressa": 315,
+   "termos": [
+    "No guarantee of message delivery",
+    "No connection state tracking",
+    "No congestion control"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UDP non-services",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 334,
+   "pagina_impressa": 316,
+   "termos": [
+    "thin wrapper",
+    "supporting cast"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "UDP as a thin wrapper; supporting cast of protocols",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 335,
+   "pagina_impressa": 317,
+   "termos": [
+    "RFC 5245",
+    "RFC 5389",
+    "RFC 5766",
+    "RFC 4566",
+    "RFC 6347",
+    "RFC 4960",
+    "RFC 3711"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebRTC stack RFCs",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 336,
+   "pagina_impressa": 318,
+   "termos": [
+    "triggers automatic stream renegotiation as required"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RTCPeerConnection triggers automatic stream renegotiation (D1)",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 337,
+   "pagina_impressa": 319,
+   "termos": [
+    "maximum number of retransmissions"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel partially reliable via retransmissions",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 338,
+   "pagina_impressa": 320,
+   "termos": [
+    "Session Initiation Protocol (SIP)",
+    "shared signaling channel"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SIP and shared signaling channel",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 339,
+   "pagina_impressa": 321,
+   "termos": [
+    "Jingle",
+    "ISDN User Part (ISUP)",
+    "PSTN"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Jingle, ISUP and PSTN",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 340,
+   "pagina_impressa": 322,
+   "termos": [
+    "Skype",
+    "Asterisk",
+    "WebSocket module"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Skype with its own signaling; Asterisk WebSocket module",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 341,
+   "pagina_impressa": 323,
+   "termos": [
+    "RTP/SAVPF",
+    "opus/48000/2",
+    "minptime=10"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "audio SDP lines",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 342,
+   "pagina_impressa": 324,
+   "termos": [
+    "JavaScript Session Establishment Protocol (JSEP)",
+    "Amy",
+    "Bob"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "JSEP and the Amy/Bob flow",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 343,
+   "pagina_impressa": 325,
+   "termos": [
+    "ICE agent",
+    "last resort candidate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE agent and TURN as the last-resort candidate",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 344,
+   "pagina_impressa": 326,
+   "termos": [
+    "stun.l.google.com:19302",
+    "onicecandidate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Google's public STUN and onicecandidate callback",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 345,
+   "pagina_impressa": 327,
+   "termos": [
+    "~8% of users",
+    "STUN binding request"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "8% of users need TURN; binding request",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 346,
+   "pagina_impressa": 328,
+   "termos": [
+    "Incremental Provisioning (Trickle ICE)",
+    "local IP addresses are checked first"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Trickle ICE and check ordering",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 347,
+   "pagina_impressa": 329,
+   "termos": [
+    "recommended strategy for all WebRTC applications",
+    "addIceCandidate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Trickle ICE recommended; addIceCandidate",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 348,
+   "pagina_impressa": 330,
+   "termos": [
+    "iceGatheringState",
+    "gathering",
+    "checking",
+    "connected",
+    "completed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ICE agent states",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 349,
+   "pagina_impressa": 331,
+   "termos": [
+    "disconnected",
+    "more aggressive than failed",
+    "closed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "disconnected state more aggressive than failed",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 350,
+   "pagina_impressa": 332,
+   "termos": [
+    "chrome://webrtc-internals"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Chrome debugging tool",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 352,
+   "pagina_impressa": 334,
+   "termos": [
+    "automatic SDP renegotiation is invoked",
+    "add and remove streams"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SDP renegotiation when adding/removing streams (D1)",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 353,
+   "pagina_impressa": 335,
+   "termos": [
+    "createAnswer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "the answerer generates the answer with createAnswer",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 354,
+   "pagina_impressa": 336,
+   "termos": [
+    "fewer than 100 lines of JavaScript",
+    "simpleWebRTC"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "videoconference in under 100 lines; SimpleWebRTC",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 355,
+   "pagina_impressa": 337,
+   "termos": [
+    "Datagram Transport Layer Security (DTLS)",
+    "Stream Control Transport Protocol (SCTP)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS, SRTP and SCTP over UDP",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 356,
+   "pagina_impressa": 338,
+   "termos": [
+    "mini-TCP",
+    "explicit fragment offset",
+    "retransmit handshake records"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS: mini-TCP, fragment offset and retransmission",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 357,
+   "pagina_impressa": 339,
+   "termos": [
+    "two roundtrips",
+    "self-signed certificates",
+    "block cipher must be used"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DTLS: 2 RTTs, self-signed, block cipher",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 359,
+   "pagina_impressa": 341,
+   "termos": [
+    "<500 Kbps",
+    "will not upgrade the quality"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "media starts below 500 Kbps and quality does not rise",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 360,
+   "pagina_impressa": 342,
+   "termos": [
+    "RFC 3550",
+    "SSRC identifier",
+    "authentication tag",
+    "12 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTP header",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 361,
+   "pagina_impressa": 343,
+   "termos": [
+    "separate ports for each individual stream",
+    "inter-arrival jitter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SRTP/SRTCP: ports per stream; arrival jitter",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 362,
+   "pagina_impressa": 344,
+   "termos": [
+    "Table 18-1",
+    "Comparing TCP vs. UDP vs. SCTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-1",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 363,
+   "pagina_impressa": 345,
+   "termos": [
+    "Association",
+    "Chunk",
+    "12 bytes of data"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SCTP vocabulary and 12-byte header",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 364,
+   "pagina_impressa": 346,
+   "termos": [
+    "Payload protocol identifier (PPID)",
+    "Transmission sequence number (TSN)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DATA chunk fields",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 365,
+   "pagina_impressa": 347,
+   "termos": [
+    "28 bytes of overhead",
+    "Partial Reliability Extension",
+    "RFC 3758"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "28-byte overhead and partial reliability extension",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 366,
+   "pagina_impressa": 348,
+   "termos": [
+    "Challenges with",
+    "mobile carriers use SCTP"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bare SCTP and carrier use",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 367,
+   "pagina_impressa": 349,
+   "termos": [
+    "onDataChannel",
+    "binaryType",
+    "bufferedAmount"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DataChannel API mirrors WebSocket",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 369,
+   "pagina_impressa": 351,
+   "termos": [
+    "m=application 1 DTLS/SCTP 5000",
+    "streams=10",
+    "OfferToReceiveAudio"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "data SDP and data-only connection",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 370,
+   "pagina_impressa": 352,
+   "termos": [
+    "DATA_CHANNEL_OPEN",
+    "HEADERS frame"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "DATA_CHANNEL_OPEN analogous to HEADERS",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 371,
+   "pagina_impressa": 353,
+   "termos": [
+    "no additional performance benefits",
+    "Partially reliable delivery with timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "out-of-band negotiation and time-based reliability",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 372,
+   "pagina_impressa": 354,
+   "termos": [
+    "maxRetransmitTime",
+    "Table 18-3",
+    "mutually exclusive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 18-3 and mutual exclusion",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 373,
+   "pagina_impressa": 355,
+   "termos": [
+    "read-only attributes",
+    "1,280 bytes",
+    "~130 bytes of overhead",
+    "107 packets"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1,280 B MTU, 130 B overhead, 107 packets",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 374,
+   "pagina_impressa": 356,
+   "termos": [
+    "peer-to-peer does not mean high performance",
+    "less than 1,150 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "P2P is not high performance; messages < 1,150 B",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 375,
+   "pagina_impressa": 357,
+   "termos": [
+    "3.1 Mbps",
+    "3.5G+ connection",
+    "10-to-1"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "average bandwidth, 3.5G+ for HD and 10:1 asymmetry",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 376,
+   "pagina_impressa": 358,
+   "termos": [
+    "mesh network",
+    "supernode",
+    "N - 1 connections for each peer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "mesh x supernode",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 377,
+   "pagina_impressa": 359,
+   "termos": [
+    "Hangouts",
+    "Peer-to-Peer Optimization as a Service",
+    "election"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "P2P optimization as a service; supernode election",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 378,
+   "pagina_impressa": 360,
+   "termos": [
+    "stund",
+    "8%–10% of peer-to-peer connections",
+    "low-latency transport"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "STUN stund; TURN in 8-10%; low-latency signaling",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 379,
+   "pagina_impressa": 361,
+   "termos": [
+    "smart proxy",
+    "responsibility of the WebRTC application to optimize the binary payloads"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "smart proxy and data in the DataChannel",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 66,
+   "pagina_impressa": 48,
+   "termos": [
+    "RFC 2246",
+    "TLS 1.1 in April 2006",
+    "TLS 1.2 in August 2008"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS 1.0, 1.1 and 1.2 dates",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 67,
+   "pagina_impressa": 49,
+   "termos": [
+    "message authentication code (MAC)",
+    "company proxy server"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MAC and client authentication",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 68,
+   "pagina_impressa": 50,
+   "termos": [
+    "use HTTPS to deliver data to mobile clients"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "why WebSocket uses HTTPS",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 70,
+   "pagina_impressa": 52,
+   "termos": [
+    "generates a new symmetric key",
+    "Finished"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "handshake: symmetric key and Finished",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 71,
+   "pagina_impressa": 53,
+   "termos": [
+    "openssl speed rsa",
+    "openssl speed aes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "measuring RSA and AES",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 72,
+   "pagina_impressa": 54,
+   "termos": [
+    "ProtocolNameList",
+    "ProtocolName",
+    "abort the connection"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ALPN: the server answers with one name and may abort",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 73,
+   "pagina_impressa": 55,
+   "termos": [
+    "Server Name Indication (SNI)",
+    "Windows XP",
+    "Android 2.2"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SNI and old clients",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 74,
+   "pagina_impressa": 56,
+   "termos": [
+    "tens of thousands or even millions of unique connections"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "session cache at scale",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 75,
+   "pagina_impressa": 57,
+   "termos": [
+    "New Session Ticket",
+    "stateless resumption",
+    "rotate the shared key"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "tickets and key rotation",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 76,
+   "pagina_impressa": 58,
+   "termos": [
+    "Alice",
+    "Bob",
+    "Charlie",
+    "chain of trust"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chain of trust parable",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 78,
+   "pagina_impressa": 60,
+   "termos": [
+    "StartCom Class 1 Primary Intermediate Server",
+    "hundreds of well-known and trusted certificate authorities"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "igvita.com chain and number of CAs",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 79,
+   "pagina_impressa": 61,
+   "termos": [
+    "RFC 5280",
+    "superseding certificate",
+    "revoked certificate serial numbers"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CRL and revocation reasons",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 80,
+   "pagina_impressa": 62,
+   "termos": [
+    "RFC 2560",
+    "The client must block on OCSP requests",
+    "the CA knows which sites the client is visiting"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "OCSP: blocking and privacy",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 81,
+   "pagina_impressa": 63,
+   "termos": [
+    "up to 32 bytes for TLS 1.2",
+    "entire record must be available"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MAC of up to 32 B and the whole record",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 82,
+   "pagina_impressa": 64,
+   "termos": [
+    "Adam Langley",
+    "Doug Beaver",
+    "less than 1% of the CPU load",
+    "SSL offloading"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS cost: Gmail and Facebook",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 83,
+   "pagina_impressa": 65,
+   "termos": [
+    "168 milliseconds",
+    "112 milliseconds",
+    "three roundtrips"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3 RTTs: 168 ms and 112 ms",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 86,
+   "pagina_impressa": 68,
+   "termos": [
+    "11,211-byte TLS record",
+    "minimum of 6% of framing overhead"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "11,211 B record and 6% framing",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 87,
+   "pagina_impressa": 69,
+   "termos": [
+    "not something we can control at the application layer",
+    "check the documentation of your server"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WARNING D3: record size is a server setting",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 87,
+   "pagina_impressa": 69,
+   "termos": [
+    "up to 50 KB of memory per connection",
+    "about 5 KB",
+    "1,400 bytes for IPv6"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WARNING D3: 50 KB and 5 KB buffers; 1,400 B",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 88,
+   "pagina_impressa": 70,
+   "termos": [
+    "5,323-byte TLS certificate chain",
+    "new DNS lookup"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "5,323 B chain; missing intermediate",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 90,
+   "pagina_impressa": 72,
+   "termos": [
+    "400 to 4,000 bytes",
+    "max-age=31536000",
+    "Chrome 4+"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "stapling and HSTS",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 91,
+   "pagina_impressa": 73,
+   "termos": [
+    "Qualys SSL Server Test",
+    "do not mix HTTP and HTTPS content"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "TLS checklist",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 92,
+   "pagina_impressa": 74,
+   "termos": [
+    "Secure Renegotiation IS supported",
+    "3571 bytes",
+    "444 bytes",
+    "RC4-SHA"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "s_client output (TLS hit separate from SDP renegotiation)",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 93,
+   "pagina_impressa": 75,
+   "termos": [
+    "three- to four-segment initial TCP congestion window",
+    "omitting the root certificate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "s_client: root and cwnd",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 279,
+   "pagina_impressa": 261,
+   "termos": [
+    "Jim Van Eaton",
+    "Outlook Web Access"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "origin of XHR",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 280,
+   "pagina_impressa": 262,
+   "termos": [
+    "Alex Hopmann",
+    "MSXML",
+    "published in 2006"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XMLHttpRequest name and 2006 draft",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 281,
+   "pagina_impressa": 263,
+   "termos": [
+    "XMLHttpRequest Level 2",
+    "Sec-*",
+    "Proxy-*"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "XHR2 and protected headers",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 282,
+   "pagina_impressa": 264,
+   "termos": [
+    "same-origin policy",
+    "thirdparty.com"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "same-origin policy",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 283,
+   "pagina_impressa": 265,
+   "termos": [
+    "Access-Control-Allow-Origin: *",
+    "withCredentials",
+    "Access-Control-Allow-Credentials"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "CORS: wildcard and credentials",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 284,
+   "pagina_impressa": 266,
+   "termos": [
+    "Access-Control-Request-Method",
+    "a minimum of a full roundtrip",
+    "cached by the client"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "preflight",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 285,
+   "pagina_impressa": 267,
+   "termos": [
+    "ArrayBuffer",
+    "revokeObjectURL"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "download types and blob",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 286,
+   "pagina_impressa": 268,
+   "termos": [
+    "HTML5 File API",
+    "DOMString, Document, FormData, Blob, File, or ArrayBuffer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "types accepted by send()",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 287,
+   "pagina_impressa": 269,
+   "termos": [
+    "Content-Range",
+    "BYTES_PER_CHUNK",
+    "does not support request streaming"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chunked upload",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 288,
+   "pagina_impressa": 270,
+   "termos": [
+    "Table 15-1",
+    "xhr.timeout = 5000"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "progress and timeout events",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 289,
+   "pagina_impressa": 271,
+   "termos": [
+    "do not have a default timeout",
+    "Streams API",
+    "not yet available in any browser"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "no default timeout; Streams API absent",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 290,
+   "pagina_impressa": 272,
+   "termos": [
+    "only way to release the buffered response",
+    "application/x-javascript"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "streaming-with-XHR caveats",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 291,
+   "pagina_impressa": 273,
+   "termos": [
+    "moz-chunked-text",
+    "moz-chunked-arraybuffer",
+    "ms-stream"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "proprietary streaming extensions",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 292,
+   "pagina_impressa": 274,
+   "termos": [
+    "800 bytes of overhead",
+    "setInterval"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "polling: per-request overhead",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 302,
+   "pagina_impressa": 284,
+   "termos": [
+    "4.5 seconds",
+    "Last-Event-ID: 43",
+    "checkpoint specific"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SSE: reconnection with Last-Event-ID",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 307,
+   "pagina_impressa": 289,
+   "termos": [
+    "SockJS",
+    "Socket.IO",
+    "HyBi Working Group"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket emulation and ws/wss schemes",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 309,
+   "pagina_impressa": 291,
+   "termos": [
+    "Float32Array",
+    "ArrayBufferView"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "ArrayBufferView over ArrayBuffer",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 310,
+   "pagina_impressa": 292,
+   "termos": [
+    "bufferedAmount",
+    "priority queue",
+    "head-of-line blocking"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "queue and bufferedAmount in WebSocket",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 221,
+   "pagina_impressa": 203,
+   "termos": [
+    "1,920,000 bytes",
+    "1.83 MB",
+    "30–50 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "800x600x4 bitmap memory and 30-50 KB bundles",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 142,
+   "pagina_impressa": 124,
+   "termos": [
+    "hundreds of milliseconds",
+    "hand-off procedure"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "LTE handoff takes hundreds of ms",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "pagina_pdf": 127,
+   "pagina_impressa": 109,
+   "termos": [
+    "3G networks are still much more efficient",
+    "old-fashioned voice traffic",
+    "Voice over LTE (VoLTE)",
+    "circuit-switched infrastructure"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3G more efficient than 4G for voice; VoLTE under development; circuit voice (D2)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 127,
+   "pagina_impressa": 109,
+   "termos": [
+    "older-generation networks will continue to operate for at least another decade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "older generations will operate for at least another decade (p.127)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 123,
+   "pagina_impressa": 105,
+   "termos": [
+    "operational for at least another decade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "older networks continue for another decade (p.123)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 138,
+   "pagina_impressa": 120,
+   "termos": [
+    "continue to exist for at least another decade"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "same idea on p.138",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 260,
+   "pagina_impressa": 242,
+   "termos": [
+    "domain sharding",
+    "reduces the effectiveness of header compression and request prioritization"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "sharding reduces header compression and prioritization (item 16)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 260,
+   "pagina_impressa": 242,
+   "termos": [
+    "domain sharding, concatenation, and image spriting",
+    "will hurt performance rather than help"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1.x hacks get in the way in HTTP 2.0 (item 16)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 261,
+   "pagina_impressa": 243,
+   "termos": [
+    "expensive cache invalidations",
+    "larger memory requirements",
+    "deferred execution",
+    "increased application complexity"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bundling costs (item 16)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 261,
+   "pagina_impressa": 243,
+   "termos": [
+    "Bundled assets do not affect performance of the HTTP 2.0 protocol itself",
+    "negative impact on cache performance and execution speed"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bundles: only cache and execution (item 16)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 261,
+   "pagina_impressa": 243,
+   "termos": [
+    "certain resources are always used together and updates are infrequent",
+    "an exception, not the rule"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bundling exception (item 16)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 179,
+   "pagina_impressa": 161,
+   "termos": [
+    "backported to HTTP 1.0",
+    "Connection: Keep-Alive",
+    "keepalive by default"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "default keepalive in 1.1; in 1.0 opt-in via header (D4)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 97,
+   "pagina_impressa": 79,
+   "termos": [
+    "WiFi, Bluetooth, ZigBee, NFC, WiMAX, LTE, HSPA, EV-DO"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "list of wireless technologies in the ch. 5 introduction (Thread/LoRa absent)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 194,
+   "pagina_impressa": 176,
+   "termos": [
+    "single-threaded"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "browser single-thread model (the only sense of 'thread' in the chapter)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 177,
+   "pagina_impressa": 159,
+   "termos": [
+    "RFC 2616"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RFC 2616 in the source text",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "pagina_pdf": 24,
+   "pagina_impressa": 6,
+   "termos": [
+    "coined and popularized",
+    "Jim Gettys",
+    "2010"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "bufferbloat: term coined and popularized by Gettys in 2010",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 189,
+   "pagina_impressa": 171,
+   "termos": [
+    "Google, Microsoft, and Amazon",
+    "4.3%",
+    "Aberdeen"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Amazon cited only generically; the only number is Bing's (4.3%)",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 255,
+   "pagina_impressa": 237,
+   "termos": [
+    "add some tests to catch any regressions",
+    "unnecessary resources",
+    "MobiSys"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "MobiSys case: recommendation to check fetches and regression tests",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 256,
+   "pagina_impressa": 238,
+   "termos": [
+    "supported by Chrome and Opera",
+    "26% smaller",
+    "25%-34% smaller"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebP supported by Chrome and Opera",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 100,
+   "pagina_impressa": 82,
+   "termos": [
+    "all else being equal",
+    "macrocells",
+    "microcells"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "doubling the band doubles the rate 'all else being equal'; macro/microcells",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "termos": [
+    "increase the initial congestion window",
+    "overflow the initial",
+    "5 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chain >5 KB: option to increase the initial cwnd",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 92,
+   "pagina_impressa": 74,
+   "termos": [
+    "Timeout",
+    "300 (sec)",
+    "3571 bytes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Timeout 300 appears only in the s_client output",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 93,
+   "pagina_impressa": 75,
+   "termos": [
+    "two certificates",
+    "3,571 bytes",
+    "three- to four-segment"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3,571 bytes = the two certificates",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 276,
+   "pagina_impressa": 258,
+   "termos": [
+    "Table 14-1",
+    "XMLHttpRequest",
+    "Server-Sent Events",
+    "WebSocket",
+    "There is no one best protocol"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 14-1 on p.276 (printed 258)",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "pagina_pdf": 247,
+   "pagina_impressa": 229,
+   "termos": [
+    "1 Mbps",
+    "4 saved bytes",
+    "less than 100 nanoseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.247: the book text says <100 ns at 1 Mbps (the book's arithmetic error; 4 B = 32 us at 1 Mbps, [inference] caveat in the package)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 122,
+   "pagina_impressa": 104,
+   "termos": [
+    "Improvements to SAE and WiMAX interoperability",
+    "Improved core network efficiency and performance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Table 7-4 Rel.9 = SAE+WiMAX; Table 7-5 Rev.C = core efficiency",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 123,
+   "pagina_impressa": 105,
+   "termos": [
+    "The Rev. C release",
+    "capacity and performance",
+    "adoption of EV-DO Advanced",
+    "not been nearly as strong as that of HSPA+",
+    "3GPP2 does not have an official and competing 4G standard"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.123: Rev. C = EV-DO Advanced, capacity/performance; weak adoption [from source] and the reason",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 128,
+   "pagina_impressa": 110,
+   "termos": [
+    "User-plane one-way latency (ms)",
+    "Table 7-6"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.128: Table 7-6 has the user-plane latency (<10/<5/<5 ms)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 129,
+   "pagina_impressa": 111,
+   "termos": [
+    "User-plane one-way latency is the target time",
+    "Every application packet will incur this cost"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.129 only DEFINES user-plane latency (no ms value)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 137,
+   "pagina_impressa": 119,
+   "termos": [
+    "User-plane one-way latency",
+    "5 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.137 Table 7-9: user plane < 5 ms (only page with the value besides p.128 and p.149)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 264,
+   "pagina_impressa": 246,
+   "termos": [
+    "convenience path should not be mistaken for a good long-term strategy",
+    "exactly backward",
+    "converting inbound 1.x client requests to 2.0 streams"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.264: 2.0->1.x is a convenient path, not a long-term strategy (anti-pattern 22); not a 'bridge'",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 376,
+   "pagina_impressa": 358,
+   "termos": [
+    "supernode"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "supernode (supernó) p.376-377",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 377,
+   "pagina_impressa": 359,
+   "termos": [
+    "A supernode can be another peer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "supernode p.377",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 223,
+   "pagina_impressa": 205,
+   "termos": [
+    "IE8 has a maximum limit of 32 KB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "data URI: IE8 32 KB (IE9 not reported)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 198,
+   "pagina_impressa": 180,
+   "termos": [
+    "supported by IE9+, Chrome 6+"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "IE9 only appears as Navigation Timing (p.198)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "pagina_pdf": 192,
+   "pagina_impressa": 174,
+   "termos": [
+    "download time, indicated in blue",
+    "latency (indicated in green)",
+    "connection view"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.192: blue = download, green = wait for the 1st byte",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 193,
+   "pagina_impressa": 175,
+   "termos": [
+    "green bar (time to first byte)",
+    "bandwidth utilization chart",
+    "not limited by bandwidth"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.193: green bar = TTFB; low bandwidth utilization",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 316,
+   "pagina_impressa": 298,
+   "termos": [
+    "WebSocket servers can run on port 80 and 443",
+    "frequently the only open ports"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.316: ports 80/443 often the only ones open",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 324,
+   "pagina_impressa": 306,
+   "termos": [
+    "Long-lived and idle sessions occupy memory and socket resources",
+    "short timeouts are often justified"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.324: idle sessions take memory and sockets",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 324,
+   "pagina_impressa": 306,
+   "termos": [
+    "Each load-balancer, router, proxy, and web server in the serving path"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.324: each LB/router/proxy/server",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 275,
+   "pagina_impressa": 257,
+   "termos": [
+    "principle of least privilege",
+    "the application supplies the data and URL"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.275: least privilege",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 275,
+   "pagina_impressa": 257,
+   "termos": [
+    "request not made"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.275: the fastest request is the one not made",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 71,
+   "pagina_impressa": 53,
+   "termos": [
+    "firewalls and other intermediaries often permit traffic only on ports 80 and 443"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.71: firewalls 'often' allow only 80/443",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 162,
+   "pagina_impressa": 144,
+   "termos": [
+    "5-30 minute NAT connection timeout",
+    "periodic (5 minute) keepalive",
+    "check your own server, proxy, and load balancer"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.162: NAT 5-30 min; keepalive ~5 min; check infrastructure",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "pagina_pdf": 207,
+   "pagina_impressa": 189,
+   "termos": [
+    "joshua graessley",
+    "session 706",
+    "networking best practices",
+    "300%"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "iTunes: speaker and WWDC 2012 session"
+  },
+  {
+   "pagina_pdf": 214,
+   "pagina_impressa": 196,
+   "termos": [
+    "custom itunes client",
+    "pipelining both on the server"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "iTunes: custom client and server under control"
+  },
+  {
+   "pagina_pdf": 102,
+   "pagina_impressa": 84,
+   "termos": [
+    "radio act of 1912",
+    "mandated licensed use",
+    "unlicensed spectrum",
+    "19.592 billion"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1912 Radio Act: licensed use mandatory"
+  },
+  {
+   "pagina_pdf": 78,
+   "pagina_impressa": 60,
+   "termos": [
+    "trust anchor",
+    "startcom certification authority",
+    "hundreds of well-known"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "trust anchor = root CA (StartCom); hundreds of CAs"
+  },
+  {
+   "pagina_pdf": 35,
+   "pagina_impressa": 17,
+   "termos": [
+    "had not yet become a problem for ARPANET",
+    "most nodes had uniform bandwidth",
+    "5,000+",
+    "factor of 1,000"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "1984 report: collapse was not yet a problem on ARPANET; 1986 incidents (factor 1,000)",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 35,
+   "pagina_impressa": 17,
+   "termos": [
+    "Nagle",
+    "RFC 896",
+    "1969",
+    "1983"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nagle RFC 896; ARPANET 1969/1983",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 37,
+   "pagina_impressa": 19,
+   "termos": [
+    "sysctl -w net.ipv4.tcp_window_scaling=1"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "command to enable window scaling",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 370,
+   "pagina_impressa": 352,
+   "termos": [
+    "negotiated parameter to true",
+    "skips the automatic dispatch of the DATA_CHANNEL_OPEN message",
+    "same id parameter"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "negotiated:true skips DATA_CHANNEL_OPEN; same id",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 370,
+   "pagina_impressa": 352,
+   "termos": [
+    "Out-of-Band Channel Negotiation"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "out-of-band negotiation section",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 178,
+   "pagina_impressa": 160,
+   "termos": [
+    "End of chunked stream response",
+    "Number of octets in the chunk expressed as an ASCII hexadecimal number (256 bytes)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "chunked: size in hex and end marker",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 295,
+   "pagina_impressa": 277,
+   "termos": [
+    "aggregate low-priority updates on the server",
+    "trigger immediate delivery for high priority updates"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "strategy mix by priority (XHR/server push)",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 161,
+   "pagina_impressa": 143,
+   "termos": [
+    "Nagle and Efficient Server Push",
+    "Google Cloud Messaging",
+    "Push API"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Nagle in the application, GCM, Push API",
+   "rodada": 9
+  },
+  {
+   "pagina_pdf": 22,
+   "pagina_impressa": 4,
+   "termos": [
+    "financial institutions only",
+    "3,000-mile",
+    "over $400M",
+    "$80M per millisecond",
+    "5 milliseconds"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "Hibernia: exclusive use by financial institutions; 3,000 miles; US$400 M; US$80 M/ms; 5 ms",
+   "rodada": "10-post-blind-test"
+  },
+  {
+   "pagina_pdf": 31,
+   "pagina_impressa": 13,
+   "termos": [
+    "A Protocol for Packet Network Intercommunication",
+    "RFC 675"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "title of the 1974 paper and RFC 675",
+   "rodada": "10-post-blind-test"
+  },
+  {
+   "pagina_pdf": 123,
+   "pagina_impressa": 105,
+   "termos": [
+    "Mbit/s bandwidth threshold"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "3G = Mbit/s threshold (not '>1 Mbit/s')",
+   "rodada": "10-post-blind-test"
+  },
+  {
+   "pagina_pdf": 228,
+   "pagina_impressa": 210,
+   "termos": [
+    "SPDY v3 was released in 2012",
+    "first implementa"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY v3: updated framing and first flow control",
+   "rodada": "10-post-blind-test"
+  },
+  {
+   "pagina_pdf": 229,
+   "pagina_impressa": 211,
+   "termos": [
+    "SPDY v4 will be released in 2013",
+    "improved prioritization",
+    "vehicle for experimenting"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SPDY v4 and the reason",
+   "rodada": "10-post-blind-test"
+  },
+  {
+   "pagina_pdf": 323,
+   "pagina_impressa": 305,
+   "termos": [
+    "won't be cached by the browser cache",
+    "any intermediary",
+    "a CDN",
+    "much higher traffic to the origin servers"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "image over WebSocket is not cached by browser or CDN; more traffic to the origin",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 323,
+   "pagina_impressa": 305,
+   "termos": [
+    "non-cacheable data",
+    "control” messages",
+    "trigger XHR requests to fetch other assets"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WebSocket only for non-cacheable content; XHR fetches assets over HTTP",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 180,
+   "pagina_impressa": 162,
+   "termos": [
+    "embedded devices",
+    "sensors, actuators",
+    "coffee pots alike",
+    "primary control and data protocols"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "embedded devices (sensors, actuators, coffee makers) use HTTP",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 180,
+   "pagina_impressa": 162,
+   "termos": [
+    "Hyper Text Coffee Pot Control Protocol",
+    "April Fools"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "HTCPCP: April Fools' joke",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 132,
+   "pagina_impressa": 114,
+   "termos": [
+    "The radio is always on, which consumes a lot of power",
+    "broadcasts a delivery traffic indication message (DTIM)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "always-on WiFi radio and DTIM",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 133,
+   "pagina_impressa": 115,
+   "termos": [
+    "usually in the 30",
+    "200 mW range",
+    "as low as 15 mW",
+    "3,500 mW"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "energy: WiFi 30-200 mW; cellular 15 to 3,500 mW",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 133,
+   "pagina_impressa": 115,
+   "termos": [
+    "control the RRC via an API",
+    "RRC lived in the core carrier network",
+    "eNodeB"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RRC is not controllable by API; 4G moves RRC to the tower",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 134,
+   "pagina_impressa": 116,
+   "termos": [
+    "WiFi is often far more efficient",
+    "mostly idle",
+    "no such mechanism exists"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi x 3G/4G: efficiency by usage profile",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 168,
+   "pagina_impressa": 150,
+   "termos": [
+    "more battery",
+    "do not require an RRC"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "WiFi more battery-efficient for large transfers; no RRC",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 117,
+   "pagina_impressa": 99,
+   "termos": [
+    "1.1 billion shipments",
+    "over 1.8",
+    "billion by 2016"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "IDC: 1.1 billion in 2012 and more than 1.8 billion in 2016",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 148,
+   "pagina_impressa": 130,
+   "termos": [
+    "30",
+    "100 ms range once the device is in a connected",
+    "up to 5 ms of the total time",
+    "25",
+    "95 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "30-100 ms end-to-end connected includes up to 5 ms of first hop",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 149,
+   "pagina_impressa": 131,
+   "termos": [
+    "<100 ms for idle to active",
+    "<50 ms for dormant to active",
+    "<5 ms",
+    "bounded by the 4G requirements",
+    "30",
+    "100 ms"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "control <100/<50, user <5, core 30-100: separate components bounded by requirements",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 253,
+   "pagina_impressa": 235,
+   "termos": [
+    "The secret to a successful and sustainable web performance strategy",
+    "measure first",
+    "link business goals to performance metrics"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "secret of the sustainable strategy",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 238,
+   "pagina_impressa": 220,
+   "termos": [
+    "exchange SETTINGS frames",
+    "limit the maximum number of",
+    "concurrent streams in both directions",
+    "disable server push entirely"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "SETTINGS limits concurrent streams; zero disables push",
+   "rodada": "11-post-blind-test"
+  },
+  {
+   "pagina_pdf": 153,
+   "pagina_impressa": 135,
+   "termos": [
+    "Picocells",
+    "art and a science",
+    "TamoGraph",
+    "number of active users",
+    "required number"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.153: picocells, art and science, TamoGraph models environment/users/technology",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 344,
+   "pagina_impressa": 326,
+   "termos": [
+    "iceServers",
+    "stun:stun.l.google.com:19302",
+    "turn:user@turnserver.com",
+    "credential"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.344: static iceServers example",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 347,
+   "pagina_impressa": 329,
+   "termos": [
+    "iceServers",
+    "turn:user@turnserver.com",
+    "credential"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.347: iceServers in the ICE state example",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 351,
+   "pagina_impressa": 333,
+   "termos": [
+    "iceServers",
+    "stun:stunserver.com:12345",
+    "turn:user@turnserver.com"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.351: iceServers in the call example",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 263,
+   "pagina_impressa": 245,
+   "termos": [
+    "ModPagespeedIf spdy",
+    "combine_css,combine_javascript",
+    "ModPagespeedShardDomain",
+    "ModPagespeedIf !spdy"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.263: mod_pagespeed configuration",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 215,
+   "pagina_impressa": 197,
+   "termos": [
+    "safety check against an unintentional",
+    "denial of service"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.215: per-host limit as a DoS check",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 66,
+   "pagina_impressa": 48,
+   "termos": [
+    "RFC 6347"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RFC 6347 on p.66",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 335,
+   "pagina_impressa": 317,
+   "termos": [
+    "RFC 6347"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "RFC 6347 on p.335",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 379,
+   "pagina_impressa": 361,
+   "termos": [
+    "dynamically adjust the bitrate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.379: bitrate adjustment",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 86,
+   "pagina_impressa": 68,
+   "termos": [
+    "20 to 40 bytes of overhead",
+    "60 to 100 bytes of overhead"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.86: TLS adds 20-40; with IP+TCP 60-100",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 162,
+   "pagina_impressa": 144,
+   "termos": [
+    "Most mobile carriers set a 5",
+    "you may need a periodic (5 minute) keepalive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.162: 5 min keepalive is 'may be needed', not a rule",
+   "rodada": "12-post-blind-test"
+  },
+  {
+   "pagina_pdf": 107,
+   "pagina_impressa": 89,
+   "termos": [
+    "first public demonstration of a wireless network",
+    "1971",
+    "University of Hawaii",
+    "ALOHAnet"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.107: ALOHAnet = first public demonstration of a wireless network (1971, Hawaii)",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 98,
+   "pagina_impressa": 80,
+   "termos": [
+    "Wireless inter-network connectivity",
+    "Cable replacement for peripherals",
+    "Wireless extension of wired network",
+    "Wireless network access"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.98: Applications column of Table 5-1",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 98,
+   "pagina_impressa": 80,
+   "termos": [
+    "no such thing as a wired application",
+    "zero demand for such a distinction"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.98: there is no wired application",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 98,
+   "pagina_impressa": 80,
+   "termos": [
+    "IEEE 802.15 (WiMAX)",
+    "neither complete nor entirely accurate"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.98: the book writes 802.15 for WiMAX; imperfect classification",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 105,
+   "pagina_impressa": 87,
+   "termos": [
+    "802.11n standard raises the bar up to 600 Mbit/s",
+    "multiple radio streams"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.105: 600 Mbit/s is the advertised 802.11n peak; MIMO only among the ideal conditions",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 109,
+   "pagina_impressa": 91,
+   "termos": [
+    "Data rate per stream",
+    "15, 30, 45, 60, 90, 120, 135, 150"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.109: Table 6-1, 802.11n at 40 MHz = up to 150 Mbit/s per stream (no 600)",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 110,
+   "pagina_impressa": 92,
+   "termos": [
+    "multiple-input and multiple-output (MIMO)",
+    "gigabit-plus throughput"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.110: MIMO and ac 'gigabit-plus', without decomposing 600 Mbit/s",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 261,
+   "pagina_impressa": 243,
+   "termos": [
+    "may offer the most benefits for mobile clients",
+    "3G and 4G networks"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.261: push can bring the greatest benefit on mobile",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 265,
+   "pagina_impressa": 247,
+   "termos": [
+    "quality of implementation of the HTTP 2.0 server",
+    "naive implementation of an HTTP 2.0 server",
+    "HTTP 2.0 server must support server push"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.265: server quality determines the push/prioritization gain",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 236,
+   "pagina_impressa": 218,
+   "termos": [
+    "Flow Control",
+    "simple mechanism for stream and connection flow control"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.236: start of HTTP 2.0 flow control",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 237,
+   "pagina_impressa": 219,
+   "termos": [
+    "Flow control is hop-by-hop, not end-to-end",
+    "WINDOW_UPDATE",
+    "does not specify any specific algorithm"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.237: hop-by-hop flow control, WINDOW_UPDATE, no algorithm",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 35,
+   "pagina_impressa": 17,
+   "termos": [
+    "prevent the sender from overwhelming the receiver",
+    "receive window (rwnd)"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.35: TCP flow control (rwnd)",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 44,
+   "pagina_impressa": 26,
+   "termos": [
+    "Increasing TCP",
+    "Congestion Avoidance"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.44: congestion avoidance (not flow control)",
+   "rodada": "13-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 129,
+   "pagina_impressa": 111,
+   "termos": [
+    "User Equipment Category",
+    "the answer is a simple one",
+    "cost",
+    "device differentiation",
+    "price points",
+    "36 possible UE categories"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.129: the book's reason for so many UE categories = cost, differentiation, price tiers",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 125,
+   "pagina_impressa": 107,
+   "termos": [
+    "Low latencies in user",
+    "control planes"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.125: LTE text with user latency < 10 ms",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 128,
+   "pagina_impressa": 110,
+   "termos": [
+    "Table 7-6",
+    "User-plane one-way latency",
+    "LTE-Advanced comparison"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.128: Table 7-6 with user latency (<5 ms in LTE)",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 130,
+   "pagina_impressa": 112,
+   "termos": [
+    "Table 7-8",
+    "LTE user equipment",
+    "2998.6",
+    "1497.8"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.130: Table 7-8 ends at category 8 (release 10)",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 57,
+   "pagina_impressa": 39,
+   "termos": [
+    "Reserved IP ranges",
+    "three well-known ranges",
+    "10.0.0.0",
+    "172.16.0.0",
+    "192.168.0.0",
+    "65,536"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.57: Table 3-1 with three private ranges",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 58,
+   "pagina_impressa": 40,
+   "termos": [
+    "Technically, there is no need for additional TCP timeouts",
+    "bidirectional keepalive"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.58: technically TCP does not need additional NAT timeouts",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 288,
+   "pagina_impressa": 270,
+   "termos": [
+    "XHR progress events",
+    "loadstart",
+    "loadend",
+    "default: no timeout",
+    "xhr.timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.288: Table 15-1 with six events and timeout via the property",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 289,
+   "pagina_impressa": 271,
+   "termos": [
+    "do not have a default timeout",
+    "always set a meaningful timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.289: XHR without default timeout",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 281,
+   "pagina_impressa": 263,
+   "termos": [
+    "Support for request timeouts"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.281: XHR2 feature list mentions timeout support",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 151,
+   "pagina_impressa": 133,
+   "termos": [
+    "paging message",
+    "paging list",
+    "paging overhead"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.151: paging (incoming packet flow to an idle device)",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 145,
+   "pagina_impressa": 127,
+   "termos": [
+    "Mobility Management Entity",
+    "query to the MME"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.145: SGW query to the MME (not paging)",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 265,
+   "pagina_impressa": 247,
+   "termos": [
+    "Evaluating Server Quality and Performance",
+    "server push"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.265: HTTP 2.0 server quality and push",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 264,
+   "pagina_impressa": 246,
+   "termos": [
+    "should not be mistaken for a good long-term"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.264: 2.0->1.x conversion is not a long-term strategy",
+   "rodada": "14-post-blind-test-fix"
+  },
+  {
+   "pagina_pdf": 162,
+   "pagina_impressa": 144,
+   "termos": [
+    "periodic (5 minute) keepalive",
+    "5–30 minute NAT connection timeout"
+   ],
+   "ok": true,
+   "faltando": [],
+   "descricao": "p.162: 5 min keepalive on mobile networks",
+   "rodada": "14-post-blind-test-fix"
+  }
+ ],
+ "negativas": [
+  {
+   "termo": "HPACK",
+   "ausente": true
+  },
+  {
+   "termo": "Huffman",
+   "ausente": true
+  },
+  {
+   "termo": "TLS 1.3",
+   "ausente": true
+  },
+  {
+   "termo": "0-RTT",
+   "ausente": true
+  },
+  {
+   "termo": "QUIC",
+   "ausente": true
+  },
+  {
+   "termo": "HTTP/3",
+   "ausente": true
+  },
+  {
+   "termo": "RFC 7540",
+   "ausente": true
+  },
+  {
+   "termo": "RFC 7541",
+   "ausente": true
+  },
+  {
+   "termo": "RFC 8446",
+   "ausente": true
+  },
+  {
+   "termo": "RFC 7413",
+   "ausente": true
+  },
+  {
+   "termo": "RFC 7913",
+   "ausente": true
+  },
+  {
+   "termo": "no-store",
+   "ausente": true
+  },
+  {
+   "termo": "rel=\"preconnect\"",
+   "ausente": true
+  },
+  {
+   "termo": "rel=\"preload\"",
+   "ausente": true
+  },
+  {
+   "termo": "FOIT",
+   "ausente": true
+  },
+  {
+   "termo": "304 Not Modified",
+   "ausente": true
+  },
+  {
+   "termo": "Core Web Vitals",
+   "ausente": true
+  },
+  {
+   "termo": "Lighthouse",
+   "ausente": true
+  },
+  {
+   "termo": "Service Worker",
+   "ausente": true
+  },
+  {
+   "termo": "GraphQL",
+   "ausente": true
+  },
+  {
+   "termo": "symmetric NAT",
+   "ausente": true
+  },
+  {
+   "termo": "full-cone",
+   "ausente": true
+  },
+  {
+   "termo": "258EAFA5",
+   "ausente": true
+  },
+  {
+   "termo": "tail time",
+   "ausente": true
+  },
+  {
+   "termo": "Early Hints",
+   "ausente": true
+  },
+  {
+   "termo": "BBR",
+   "ausente": true
+  },
+  {
+   "termo": "9-byte",
+   "ausente": true
+  },
+  {
+   "termo": "defer attribute",
+   "ausente": true
+  },
+  {
+   "termo": "script async",
+   "ausente": true
+  },
+  {
+   "termo": "30 to 60 seconds",
+   "ausente": true
+  },
+  {
+   "termo": "14.6 KB",
+   "ausente": true
+  },
+  {
+   "termo": "RST_STREAM (CANCEL)",
+   "ausente": true
+  },
+  {
+   "termo": "over-pushing",
+   "ausente": true
+  },
+  {
+   "termo": "permessage-deflate",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "WebTransport",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "OFDMA",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "WPA3",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "Wi-Fi 6",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "ReadableStream",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "RFC 7692",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "802.11ax",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "MU-MIMO",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "beamforming",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "simulcast",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "perfect negotiation",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "airtime fairness",
+   "ausente": true,
+   "rodada": "1-post-blind-test"
+  },
+  {
+   "termo": "bimodal",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "Access-Control-Max-Age",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "must-staple",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "forward secrecy",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "h2c",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "Server Timing",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "PerformanceObserver",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "Long Tasks",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "Priority header",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "Brotli",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "certificate transparency",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "gRPC",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "DNS over HTTPS",
+   "ausente": true,
+   "rodada": "2-post-blind-test"
+  },
+  {
+   "termo": "negotiationneeded",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "addTrack",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "removeTrack",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "RTCRtpSender",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "ICE restart",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "RFC 5746",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "Unified Plan",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "getStats",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "RFC 8445",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "Largest Contentful Paint",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "Total Blocking Time",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "ECDHE",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "AES-GCM",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "ChaCha20",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "SameSite",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "includeSubDomains",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "AbortController",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "getDisplayMedia",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "RFC 8441",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "OCSP Must-Staple",
+   "ausente": true,
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "termo": "LoRaWAN",
+   "ausente": true,
+   "descricao": "LoRaWAN is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "Sigfox",
+   "ausente": true,
+   "descricao": "Sigfox is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "Z-Wave",
+   "ausente": true,
+   "descricao": "Z-Wave is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "DNS over HTTPS",
+   "ausente": true,
+   "descricao": "DoH is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "Protocol Buffers",
+   "ausente": true,
+   "descricao": "protobuf is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "RFC 7230",
+   "ausente": true,
+   "descricao": "RFC 7230 is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "RFC 7231",
+   "ausente": true,
+   "descricao": "RFC 7231 is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "RFC 9110",
+   "ausente": true,
+   "descricao": "RFC 9110 is not in the book",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "termo": "Let's Encrypt",
+   "ausente": true
+  },
+  {
+   "termo": "Lets Encrypt",
+   "ausente": true
+  },
+  {
+   "termo": "ACME",
+   "ausente": true
+  },
+  {
+   "termo": "SETTINGS_MAX_CONCURRENT_STREAMS",
+   "ausente": true
+  },
+  {
+   "termo": "MQTT",
+   "ausente": true
+  },
+  {
+   "termo": "CoAP",
+   "ausente": true
+  },
+  {
+   "termo": "2.8 billion",
+   "ausente": true
+  },
+  {
+   "termo": "100.64.0.0",
+   "ausente": true
+  },
+  {
+   "termo": "CGNAT",
+   "ausente": true
+  },
+  {
+   "termo": "carrier-grade",
+   "ausente": true
+  },
+  {
+   "termo": "release 12",
+   "ausente": true
+  },
+  {
+   "termo": "category 12",
+   "ausente": true
+  },
+  {
+   "termo": "category 16",
+   "ausente": true
+  },
+  {
+   "termo": "ontimeout",
+   "ausente": true
+  }
+ ],
+ "negativas_por_pagina": [
+  {
+   "paginas": [
+    89,
+    90
+   ],
+   "termo": "privacy",
+   "descricao": "the book does not attribute to stapling the elimination of the privacy leak (p.89-90)"
+  },
+  {
+   "paginas": [
+    89,
+    90
+   ],
+   "termo": "private",
+   "descricao": "p.89-90 do not discuss CA privacy"
+  },
+  {
+   "paginas": [
+    244,
+    245,
+    246,
+    247,
+    248
+   ],
+   "termo": "fixed-size frame",
+   "descricao": "the book does not say HTTP 2.0 frames are fixed-size"
+  },
+  {
+   "paginas": [
+    22,
+    23
+   ],
+   "termo": "application server",
+   "descricao": "p.22-23 (processing delay) do not discuss the application server"
+  },
+  {
+   "paginas": [
+    198,
+    199,
+    200
+   ],
+   "termo": "bimodal",
+   "descricao": "the book uses multimodal, not bimodal (p.198-200)"
+  },
+  {
+   "paginas": [
+    80
+   ],
+   "termo": "stapling",
+   "descricao": "p.80 does not mention stapling"
+  },
+  {
+   "paginas": [
+    336,
+    352
+   ],
+   "termo": "addTrack",
+   "descricao": "p.336 and 352 only discuss addstream/automatic renegotiation; addTrack is a later API",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    336,
+    352
+   ],
+   "termo": "negotiationneeded",
+   "descricao": "the negotiationneeded event does not appear on the renegotiation pages",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    92
+   ],
+   "termo": "WebRTC",
+   "descricao": "the s_client output (p.92) has no relation to WebRTC",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    87
+   ],
+   "termo": "Nginx",
+   "descricao": "p.87 tells the reader to see the server documentation without naming servers (Nginx only on p.90)",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    352
+   ],
+   "termo": "RFC 5746",
+   "descricao": "p.352 does not cite a renegotiation RFC",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    90
+   ],
+   "termo": "includeSubDomains",
+   "descricao": "p.90 only has max-age and an optional pin",
+   "rodada": "3-post-blind-test"
+  },
+  {
+   "paginas": [
+    261
+   ],
+   "termo": "prioritization",
+   "descricao": "p.261 (bundling) does not discuss prioritization; prioritization belongs to sharding (p.260)",
+   "rodada": "4-post-blind-test"
+  },
+  {
+   "paginas": [
+    189
+   ],
+   "termo": "100 ms",
+   "descricao": "the book does NOT carry Amazon's '100 ms = 1%' (p.189)",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    189
+   ],
+   "termo": "1%",
+   "descricao": "p.189 without the 1% of sales figure",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    256
+   ],
+   "termo": "Safari",
+   "descricao": "p.256 does not claim Safari support for WebP",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    256
+   ],
+   "termo": "Firefox",
+   "descricao": "p.256 does not claim Firefox support for WebP",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    92,
+    93
+   ],
+   "termo": "ServerHello",
+   "descricao": "p.92-93 do not say 3,571 bytes include the ServerHello",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    92,
+    93
+   ],
+   "termo": "lifetime",
+   "descricao": "the book does not comment on Timeout 300 as session lifetime",
+   "rodada": "5-post-blind-test"
+  },
+  {
+   "paginas": [
+    129
+   ],
+   "termo": "5 ms",
+   "descricao": "p.129 only defines the term: it does not carry the '< 5 ms' value (value: p.128, p.137, p.149)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "paginas": [
+    264,
+    265
+   ],
+   "termo": "bridge",
+   "descricao": "p.264-265 do not call the 2.0->1.x proxy a bridge",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "paginas": [
+    222,
+    223
+   ],
+   "termo": "IE9",
+   "descricao": "p.222-223 say nothing about IE9 (only IE8 32 KB)",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "paginas": [
+    247
+   ],
+   "termo": "microsecond",
+   "descricao": "p.247 does not carry the microsecond calculation (32 us is the package's [inference])",
+   "rodada": "6-post-blind-test"
+  },
+  {
+   "paginas": [
+    162
+   ],
+   "termo": "less than 5 minutes",
+   "descricao": "p.162 does not carry the '<5 min drains battery' cutoff (it is the package's inference)",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "paginas": [
+    316,
+    71
+   ],
+   "termo": "only ports",
+   "descricao": "p.71 and p.316 do not say 'only' without a caveat ('frequentemente'/'often')",
+   "rodada": "7-post-blind-test"
+  },
+  {
+   "paginas": [
+    145
+   ],
+   "termo": "trust anchor",
+   "descricao": "p.145 does not cover trust anchor (false positive; only mobility anchors)"
+  },
+  {
+   "paginas": [
+    160,
+    161,
+    167,
+    168
+   ],
+   "termo": "high priority",
+   "descricao": "p.160-161/167-168 do not distinguish high/low priority (only p.295, XHR)"
+  },
+  {
+   "paginas": [
+    160,
+    161,
+    167,
+    168
+   ],
+   "termo": "low-priority",
+   "descricao": "ditto"
+  },
+  {
+   "paginas": [
+    177,
+    178,
+    179
+   ],
+   "termo": "total size",
+   "descricao": "chunked: the book does not say it serves to send without knowing the total size"
+  },
+  {
+   "paginas": [
+    177,
+    178,
+    179
+   ],
+   "termo": "without knowing",
+   "descricao": "ditto"
+  },
+  {
+   "paginas": [
+    35
+   ],
+   "termo": "congestion collapse had already",
+   "descricao": "p.35 does not say ARPANET already had collapse in 1984"
+  },
+  {
+   "paginas": [
+    355,
+    356,
+    357,
+    358
+   ],
+   "termo": "RFC 6347",
+   "descricao": "RFC 6347 does not appear on p.355-358 (it is on p.66 and 335)"
+  },
+  {
+   "paginas": [
+    375
+   ],
+   "termo": "adjust the bitrate",
+   "descricao": "p.375 does not support the bitrate adjustment (it is p.379)"
+  },
+  {
+   "paginas": [
+    109,
+    110
+   ],
+   "termo": "600",
+   "descricao": "p.109-110 do not contain 600 Mbit/s: the book does not derive the 802.11n peak from 40 MHz + MIMO (600 only on p.105)"
+  },
+  {
+   "paginas": [
+    145
+   ],
+   "termo": "paging",
+   "descricao": "p.145 does not cover paging (only the MME query; paging is p.151, mention on p.135)"
+  },
+  {
+   "paginas": [
+    288
+   ],
+   "termo": "timeout event",
+   "descricao": "p.288 has no timeout event in Table 15-1"
+  },
+  {
+   "paginas": [
+    130
+   ],
+   "termo": "category 12",
+   "descricao": "p.130 (Tables 7-7/7-8) has no category 12"
+  },
+  {
+   "paginas": [
+    57
+   ],
+   "termo": "100.64",
+   "descricao": "p.57 (Table 3-1) does not have 100.64.0.0/10"
+  }
+ ]
+}

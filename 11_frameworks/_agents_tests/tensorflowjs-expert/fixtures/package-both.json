@@ -1,0 +1,1 @@
+{ "name": "x", "dependencies": { "@tensorflow/tfjs-node": "*", "@tensorflow/tfjs-node-gpu": "*", "@tensorflow/tfjs": "*" } }

@@ -1,0 +1,143 @@
+# -*- coding: utf-8 -*-
+"""
+run_script_tests.py - tests of the audit-privacy-compliance package (Universal Audit Multiagent in the collection): script cases (if any),
+frontmatter, adapters, shared policy identical in the 9 roles (POL), identical contracts (CTR),
+skills, references and plugin.json. Usage (from the package root): python -I tests/run_script_tests.py
+No network. Exit code 0 if everything passes.
+"""
+import glob
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FX = os.path.join(ROOT, "tests", "fixtures")
+SIBLINGS = os.path.normpath(os.path.join(ROOT, ".."))
+ACERVO = os.path.normpath(os.path.join(ROOT, "..", "..", ".."))
+NAME = "audit-privacy-compliance"
+TOOLS = "Read, Grep, Glob"
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+CASES = []
+
+
+def run(script, args, stdin=None):
+    env = dict(os.environ, PYTHONIOENCODING="utf-8")
+    args = [x.replace("{FX}", FX) for x in args]
+    p = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", script)] + args, input=stdin,
+                       capture_output=True, text=True, encoding="utf-8", env=env)
+    return p.returncode, p.stdout + p.stderr
+
+
+def read(*p):
+    return open(os.path.join(*p), encoding="utf-8").read()
+
+
+def policy_of(text):
+    m = re.search(r"## Shared policy.*?\n\n(.*?)\n\n## Role\n", text, re.S)
+    return m.group(1) if m else None
+
+
+def main():
+    fails = n = 0
+    for c in CASES:
+        cid, desc, script, args, must, rc, must_not = c[:7]
+        code, out = run(script, args, c[7] if len(c) > 7 else None)
+        miss = [m for m in must if m not in out]
+        bad = [m for m in must_not if m in out]
+        ok = code == rc and not miss and not bad
+        n += 1
+        print("%s %-6s %s" % ("OK   " if ok else "FAIL ", cid, desc))
+        if not ok:
+            fails += 1
+            print("   rc=%s (expected %s) missing=%s unexpected=%s" % (code, rc, miss, bad))
+    checks = []
+    agent = read(ROOT, "agents", NAME + ".md")
+    m = re.match(r"---\nname: %s\ndescription: (.+?)\ntools: %s\nmodel: (opus|sonnet|haiku)\n---\n" % (NAME, re.escape(TOOLS)), agent)
+    checks.append(("AGT", "Claude Code frontmatter with minimal tools (%s) and model" % TOOLS, bool(m) and len(m.group(1)) <= 1024))
+    heads = re.findall(r"^## .+$", agent, re.M)
+    cop, cdx = read(ROOT, ".github", "agents", NAME + ".agent.md"), read(ROOT, "AGENTS.md")
+    checks.append(("ADP", "Codex/Copilot adapters with the same sections as the canonical one and <PKG>",
+                   re.findall(r"^## .+$", cop, re.M) == heads == re.findall(r"^## .+$", cdx, re.M)
+                   and "<PKG>" in cop + cdx and "CLAUDE_PLUGIN_ROOT" not in cop + cdx))
+    pol = policy_of(agent)
+    checks.append(("POL0", "prompt carries the shared policy before the role", bool(pol) and "Read-only by default" in pol))
+    sk_bad = [s for s in glob.glob(os.path.join(ROOT, "skills", "*", "SKILL.md"))
+              if not re.match(r"---\nname: %s\ndescription: .{1,1024}\n---\n" % re.escape(os.path.basename(os.path.dirname(s))), read(s))]
+    checks.append(("SKL", "skills with valid frontmatter (name = folder)", not sk_bad))
+    refs = set(re.findall(r"\$\{CLAUDE_PLUGIN_ROOT\}/((?:references|templates|contracts|scripts)/[\w./-]+?\.(?:md|json|yaml|py))", agent))
+    missing = [r for r in refs if not os.path.isfile(os.path.join(ROOT, r))]
+    checks.append(("REF", "files cited by the agent exist (%d)" % len(refs), not missing))
+    names = sorted(os.listdir(os.path.join(ROOT, "contracts")))
+    checks.append(("CTR0", "three valid JSON contracts", names == ["agent-result.schema.json", "audit-run.schema.json", "finding.schema.json"]
+                   and all(json.load(open(os.path.join(ROOT, "contracts", x), encoding="utf-8")) for x in names)))
+    pj = json.load(open(os.path.join(ROOT, ".claude-plugin", "plugin.json"), encoding="utf-8"))
+    checks.append(("PLG", "plugin.json: name, author object, license",
+                   pj.get("name") == NAME and isinstance(pj.get("author"), dict) and pj.get("license") == "MIT"))
+    for cid, desc, ok in checks:
+        n += 1
+        print("%s %-6s %s" % ("OK   " if ok else "FAIL ", cid, desc))
+        fails += 0 if ok else 1
+    sibs = sorted(d for d in glob.glob(os.path.join(SIBLINGS, "audit-*")) if os.path.isfile(os.path.join(d, "agents", os.path.basename(d) + ".md")))
+    if len(sibs) == 9:
+        pols = {policy_of(read(d, "agents", os.path.basename(d) + ".md")) for d in sibs}
+        ok = len(pols) == 1 and None not in pols
+        print("%s %-6s shared policy identical in the 9 roles" % ("OK   " if ok else "FAIL ", "POL"))
+        h = lambda d: [hashlib.sha256(open(os.path.join(d, "contracts", x), "rb").read()).hexdigest() for x in names]
+        ok2 = all(h(d) == h(ROOT) for d in sibs)
+        print("%s %-6s contracts identical in the 9 roles" % ("OK   " if ok2 else "FAIL ", "CTR"))
+        n += 2
+        fails += (not ok) + (not ok2)
+    else:
+        print("SKIP   POL/CTR  pipeline siblings not found around the package")
+    if glob.glob(os.path.join(ACERVO, "[0-9][0-9]_*", "_agents")):
+        txt = "\n".join(read(f) for f in glob.glob(os.path.join(ROOT, "**", "*.md"), recursive=True))
+        cited = set(re.findall(r"`(audit-orchestrator|audit-security-auditor|audit-malware-analyst|audit-privacy-compliance|audit-supply-chain|audit-infrastructure|audit-ai-security|audit-evidence-validator|audit-report-generator|(?:[a-z0-9]+(?:-[a-z0-9]+)*-expert)|product-owner|product-designer|tech-lead|principal-engineer|general-agents-orchestrator)`", txt))
+        missing = sorted(x for x in cited if not glob.glob(os.path.join(ACERVO, "[0-9][0-9]_*", "_agents", x)))
+        print("%s %-6s agents cited exist in the collection (%d): %s" % ("OK   " if not missing else "FAIL ", "FRT", len(cited), missing or "ok"))
+        n += 1
+        fails += 1 if missing else 0
+    else:
+        print("SKIP   FRT    collection not found around the package")
+    try:
+        import jsonschema  # noqa: F401  (optional; only to cross-check the stdlib validator)
+        have = True
+    except ImportError:
+        have = False
+    if have and os.path.isfile(os.path.join(ROOT, "scripts", "audit_contracts.py")):
+        sys.path.insert(0, os.path.join(ROOT, "scripts"))
+        import audit_contracts as ac
+        from jsonschema import Draft202012Validator
+        from referencing import Registry, Resource
+        sch = ac.load_schemas()
+        reg = Registry()
+        for s in sch.values():
+            reg = reg.with_resource(s["$id"], Resource.from_contents(s))
+        div = []
+        for f in sorted(glob.glob(os.path.join(FX, "*.json"))):
+            doc = json.load(open(f, encoding="utf-8"))
+            k = ac.detect(doc)
+            items = (doc if isinstance(doc, list) else doc.get("findings", [])) if k == "findings" else [doc]
+            nm = "finding" if k in ("finding", "findings") else k
+            ref_ok = all(not list(Draft202012Validator(sch[nm + ".schema.json"], registry=reg).iter_errors(i)) for i in items)
+            mine = all(not ac.Validator(sch).errors(i, sch[nm + ".schema.json"], sch[nm + ".schema.json"]) for i in items)
+            if ref_ok != mine:
+                div.append(os.path.basename(f))
+        print("%s %-6s stdlib validator agrees with jsonschema on the fixtures: %s" % ("OK   " if not div else "FAIL ", "XJS", div or "no divergence"))
+        n += 1
+        fails += 1 if div else 0
+    elif os.path.isfile(os.path.join(ROOT, "scripts", "audit_contracts.py")):
+        print("SKIP   XJS    jsonschema not installed (optional cross-check)")
+    print("Summary: %d checks, %d failures" % (n, fails))
+    return 1 if fails else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

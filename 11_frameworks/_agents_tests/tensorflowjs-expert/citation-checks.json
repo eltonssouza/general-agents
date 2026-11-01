@@ -1,0 +1,813 @@
+{
+ "fonte": "captures TFJG/TFJL/TFJS/TFJI",
+ "convencao": "PDF page",
+ "checks": [
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Tensores e Operações",
+    "blocos de construção"
+   ],
+   "claim": "guide has the section \"Tensores e Operações\" (Tensors and Operations)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Plataforma e Ambiente",
+    "vantagens/desvantagens"
+   ],
+   "claim": "\"Plataforma e Ambiente\" (Platform and Environment)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Modelos e Camadas",
+    "API de Camadas",
+    "API Principal"
+   ],
+   "claim": "\"Modelos e Camadas\" (Models and Layers)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Treinando Modelos",
+    "otimizadores",
+    "funções de perda",
+    "métricas"
+   ],
+   "claim": "\"Treinando Modelos\" (Training Models)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Salvando e Carregando Modelos",
+    "salvar e carregar"
+   ],
+   "claim": "\"Salvando e Carregando Modelos\" (Saving and Loading Models)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Conversão de Modelo",
+    "tipos de modelos"
+   ],
+   "claim": "\"Conversão de Modelo\" (Model Conversion)"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Diferenças do Python tf.keras",
+    "layers_for_keras_users"
+   ],
+   "claim": "differences from tf.keras"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Usando TensorFlow.js no Node.js",
+    "três ligações"
+   ],
+   "claim": "Node.js three bindings"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "guide/tensors_operations"
+   ],
+   "claim": "slug tensors_operations"
+  },
+  {
+   "cite": "TFJG p.1",
+   "contains": [
+    "Creative Commons",
+    "Apache 2.0"
+   ],
+   "claim": "CC and Apache license"
+  },
+  {
+   "cite": "TFJG p.2",
+   "contains": [
+    "2022-01-24"
+   ],
+   "claim": "update date"
+  },
+  {
+   "cite": "TFJL p.1",
+   "contains": [
+    "biblioteca",
+    "machine",
+    "JavaScript"
+   ],
+   "claim": "slogan"
+  },
+  {
+   "cite": "TFJL p.1",
+   "contains": [
+    "navegador ou no Node.js"
+   ],
+   "claim": "browser or Node.js"
+  },
+  {
+   "cite": "TFJL p.1",
+   "contains": [
+    "exemplos",
+    "completos"
+   ],
+   "claim": "tutorials with complete examples"
+  },
+  {
+   "cite": "TFJL p.1",
+   "contains": [
+    "pré-treinados",
+    "casos de uso comuns"
+   ],
+   "claim": "pretrained models"
+  },
+  {
+   "cite": "TFJL p.2",
+   "contains": [
+    "Como funciona"
+   ],
+   "claim": "\"Como funciona\" (How it works)"
+  },
+  {
+   "cite": "TFJL p.2",
+   "contains": [
+    "Executar",
+    "existentes"
+   ],
+   "claim": "run existing models"
+  },
+  {
+   "cite": "TFJL p.2",
+   "contains": [
+    "Treinar",
+    "novamente"
+   ],
+   "claim": "retrain"
+  },
+  {
+   "cite": "TFJL p.2",
+   "contains": [
+    "APIs",
+    "intuitivas"
+   ],
+   "claim": "develop ML with JavaScript"
+  },
+  {
+   "cite": "TFJL p.3",
+   "contains": [
+    "Learning para",
+    "personalizar"
+   ],
+   "claim": "Transfer Learning"
+  },
+  {
+   "cite": "TFJL p.3",
+   "contains": [
+    "Converter",
+    "Python"
+   ],
+   "claim": "convert Python models"
+  },
+  {
+   "cite": "TFJL p.3-4",
+   "contains": [
+    "_rnn",
+    "piano"
+   ],
+   "claim": "Performance RNN / piano"
+  },
+  {
+   "cite": "TFJL p.3-4",
+   "contains": [
+    "Hol",
+    "lobooth.flu"
+   ],
+   "claim": "Holobooth"
+  },
+  {
+   "cite": "TFJL p.4",
+   "contains": [
+    "Pac-Man",
+    "ebcam-"
+   ],
+   "claim": "webcam Pac-Man"
+  },
+  {
+   "cite": "TFJL p.5",
+   "contains": [
+    "Ver todas as demonstrações"
+   ],
+   "claim": "see all demos"
+  },
+  {
+   "cite": "TFJL p.6",
+   "contains": [
+    "2023/03",
+    "30 de"
+   ],
+   "claim": "Adobe post 2023-03"
+  },
+  {
+   "cite": "TFJL p.6",
+   "contains": [
+    "JAX",
+    "31 de"
+   ],
+   "claim": "JAX on the Web"
+  },
+  {
+   "cite": "TFJL p.6",
+   "contains": [
+    "8 de",
+    "setembro",
+    "2022"
+   ],
+   "claim": "moderation 2022-09"
+  },
+  {
+   "cite": "TFJL p.7",
+   "contains": [
+    "Participação da comunidade",
+    "Comunidade"
+   ],
+   "claim": "community"
+  },
+  {
+   "cite": "TFJL p.8",
+   "contains": [
+    "tensorflow /tfjs"
+   ],
+   "claim": "GitHub tfjs"
+  },
+  {
+   "cite": "TFJL p.8",
+   "contains": [
+    "announce)"
+   ],
+   "claim": "tfjs-announce"
+  },
+  {
+   "cite": "TFJL p.8",
+   "contains": [
+    "stackov"
+   ],
+   "claim": "Stack Overflow"
+  },
+  {
+   "cite": "TFJL p.8",
+   "contains": [
+    "Special",
+    "Interest",
+    "Group"
+   ],
+   "claim": "SIG"
+  },
+  {
+   "cite": "TFJL p.9",
+   "contains": [
+    "Primeiros passos com o"
+   ],
+   "claim": "\"Primeiros passos\" (Getting started)"
+  },
+  {
+   "cite": "TFJS p.1",
+   "contains": [
+    "Configurar um projeto TensorFlow.js"
+   ],
+   "claim": "title"
+  },
+  {
+   "cite": "TFJS p.1",
+   "contains": [
+    "duas maneiras recomendadas"
+   ],
+   "claim": "two ways"
+  },
+  {
+   "cite": "TFJS p.1",
+   "contains": [
+    "Parcel",
+    "webpack",
+    "Rollup"
+   ],
+   "claim": "Parcel webpack Rollup"
+  },
+  {
+   "cite": "TFJS p.1",
+   "contains": [
+    "tag de script primeiro",
+    "ferramentas de construção"
+   ],
+   "claim": "new to the web: script tag first"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"
+   ],
+   "claim": "CDN jsDelivr tfjs@latest"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "tf` available",
+    "global variable"
+   ],
+   "claim": "tf global"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "tf.layers.dense({units: 1, inputShape: [1]})"
+   ],
+   "claim": "linear model dense units 1"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "meanSquaredError",
+    "'sgd'"
+   ],
+   "claim": "compile sgd"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "tf.tensor2d([1, 2, 3, 4], [4, 1])",
+    "tf.tensor2d([1, 3, 5, 7], [4, 1])"
+   ],
+   "claim": "data xs ys"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "epochs: 10"
+   ],
+   "claim": "fit 10 epochs"
+  },
+  {
+   "cite": "TFJS p.2",
+   "contains": [
+    "index.html"
+   ],
+   "claim": "save index.html"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "npx http-server",
+    "y"
+   ],
+   "claim": "npx http-server"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "http://localhost:8080"
+   ],
+   "claim": "localhost 8080"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "console do navegador"
+   ],
+   "claim": "browser console"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "Atualize a página",
+    "diferente"
+   ],
+   "claim": "refresh gives a new prediction"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "npm install @tensorflow/tfjs"
+   ],
+   "claim": "npm install tfjs"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "import * as tf from '@tensorflow/tfjs'"
+   ],
+   "claim": "import tf"
+  },
+  {
+   "cite": "TFJS p.3",
+   "contains": [
+    "Fio"
+   ],
+   "claim": "yarn tab \"Fio\""
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "Opção 1",
+    "vinculações nativas",
+    "binário TensorFlow C"
+   ],
+   "claim": "Node option 1 native"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "npm install @tensorflow/tfjs-node"
+   ],
+   "claim": "npm install tfjs-node"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "require('@tensorflow/tfjs-node')",
+    "imported indirectly"
+   ],
+   "claim": "require tfjs-node"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "units: 100, activation: 'relu', inputShape: [10]"
+   ],
+   "claim": "Node model dense 100 relu"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "tf.randomNormal([100, 10])"
+   ],
+   "claim": "randomNormal"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "onEpochEnd",
+    "epochs: 100"
+   ],
+   "claim": "onEpochEnd"
+  },
+  {
+   "cite": "TFJS p.4",
+   "contains": [
+    "guia do Node.js"
+   ],
+   "claim": "Node.js guide"
+  },
+  {
+   "cite": "TFJS p.5",
+   "contains": [
+    "Somente Linux",
+    "GPU NVIDIA",
+    "CUDA"
+   ],
+   "claim": "GPU Linux only"
+  },
+  {
+   "cite": "TFJS p.5",
+   "contains": [
+    "npm install @tensorflow/tfjs-node-gpu"
+   ],
+   "claim": "npm install tfjs-node-gpu"
+  },
+  {
+   "cite": "TFJS p.5",
+   "contains": [
+    "require('@tensorflow/tfjs-node-gpu')"
+   ],
+   "claim": "require tfjs-node-gpu"
+  },
+  {
+   "cite": "TFJS p.5",
+   "contains": [
+    "Opção 3",
+    "JavaScript pura"
+   ],
+   "claim": "Option 3 pure JS"
+  },
+  {
+   "cite": "TFJS p.6",
+   "contains": [
+    "mais lenta",
+    "mesmo pacote"
+   ],
+   "claim": "slowest"
+  },
+  {
+   "cite": "TFJS p.6",
+   "contains": [
+    "require('@tensorflow/tfjs')"
+   ],
+   "claim": "require tfjs"
+  },
+  {
+   "cite": "TFJS p.6",
+   "contains": [
+    "skipLibCheck: true",
+    "tsconfig.json",
+    "verificação nula estrita"
+   ],
+   "claim": "TypeScript skipLibCheck"
+  },
+  {
+   "cite": "TFJS p.7",
+   "contains": [
+    "2023-11-15"
+   ],
+   "claim": "setup date"
+  },
+  {
+   "cite": "TFJI p.1",
+   "contains": [
+    "Primeiros passos com o TensorFlow.js"
+   ],
+   "claim": "title"
+  },
+  {
+   "cite": "TFJI p.1",
+   "contains": [
+    "Node.js",
+    "Fio"
+   ],
+   "claim": "prerequisites Node and Yarn"
+  },
+  {
+   "cite": "TFJI p.1",
+   "contains": [
+    "cd tfjs-examples/getting-started",
+    "yarn install"
+   ],
+   "claim": "cd getting-started"
+  },
+  {
+   "cite": "TFJI p.1",
+   "contains": [
+    "tfjs-examples/tree/master/getting-started"
+   ],
+   "claim": "example on GitHub"
+  },
+  {
+   "cite": "TFJI p.2",
+   "contains": [
+    "package.json",
+    "CDN"
+   ],
+   "claim": "package.json without tfjs"
+  },
+  {
+   "cite": "TFJI p.2",
+   "contains": [
+    "micro-out-div",
+    "./index.js"
+   ],
+   "claim": "index html"
+  },
+  {
+   "cite": "TFJI p.2",
+   "contains": [
+    "yarn watch",
+    "http://127.0.0.1:1234"
+   ],
+   "claim": "yarn watch"
+  },
+  {
+   "cite": "TFJI p.2",
+   "contains": [
+    "38.31612014770508",
+    "próximo de 39"
+   ],
+   "claim": "38.316 close to 39"
+  },
+  {
+   "cite": "TFJI p.3",
+   "contains": [
+    "epochs: 250",
+    "[6, 1]"
+   ],
+   "claim": "fit code 250"
+  },
+  {
+   "cite": "TFJI p.3",
+   "contains": [
+    "tf.tensor2d([20], [1, 1])",
+    "dataSync"
+   ],
+   "claim": "predict 20"
+  },
+  {
+   "cite": "TFJI p.3",
+   "contains": [
+    "Specify the loss and the optimizer"
+   ],
+   "claim": "compile comment"
+  },
+  {
+   "cite": "TFJI p.3",
+   "contains": [
+    "guia",
+    "TensorFlow.js"
+   ],
+   "claim": "guide as next step"
+  },
+  {
+   "cite": "TFJI p.3-4",
+   "contains": [
+    "curso",
+    "desenvolvedores da Web"
+   ],
+   "claim": "web ML course"
+  },
+  {
+   "cite": "TFJI p.4",
+   "contains": [
+    "ml5.js",
+    "API concisa"
+   ],
+   "claim": "ml5.js"
+  },
+  {
+   "cite": "TFJI p.4",
+   "contains": [
+    "Keras",
+    "GraphDef"
+   ],
+   "claim": "Keras and GraphDef"
+  },
+  {
+   "cite": "TFJI p.4",
+   "contains": [
+    "tfjs-examples",
+    "pequenas implementações"
+   ],
+   "claim": "tfjs-examples"
+  },
+  {
+   "cite": "TFJI p.4-5",
+   "contains": [
+    "tfjs-vis",
+    "navegador da web"
+   ],
+   "claim": "tfjs-vis"
+  },
+  {
+   "cite": "TFJI p.5",
+   "contains": [
+    "práticas recomendadas de ML",
+    "#Data"
+   ],
+   "claim": "data"
+  },
+  {
+   "cite": "TFJI p.5",
+   "contains": [
+    "2023-11-30"
+   ],
+   "claim": "data"
+  },
+  {
+   "cite": "TFJS p.1-6",
+   "absent": [
+    "v4",
+    "v3",
+    "versão 4"
+   ],
+   "claim": "numbered versions absent"
+  },
+  {
+   "cite": "TFJS p.1-6",
+   "absent": [
+    "webgl",
+    "wasm",
+    "webgpu"
+   ],
+   "claim": "backends not cited"
+  },
+  {
+   "cite": "TFJS p.1-6",
+   "absent": [
+    "vite",
+    "esbuild"
+   ],
+   "claim": "bundlers not detailed / vite"
+  },
+  {
+   "cite": "TFJS p.4-6",
+   "absent": [
+    "react",
+    "android"
+   ],
+   "claim": "react native not cited"
+  },
+  {
+   "cite": "TFJS p.5",
+   "absent": [
+    "cudnn",
+    "driver"
+   ],
+   "claim": "CUDA version not cited"
+  },
+  {
+   "cite": "TFJS p.3",
+   "absent": [
+    "yarn add"
+   ],
+   "claim": "yarn add command does not appear"
+  },
+  {
+   "cite": "TFJI p.1-5",
+   "absent": [
+    "tf.tidy",
+    "dispose"
+   ],
+   "claim": "tf.tidy does not appear"
+  },
+  {
+   "cite": "TFJI p.1-5",
+   "absent": [
+    "webgl",
+    "wasm"
+   ],
+   "claim": "backends not cited"
+  },
+  {
+   "cite": "TFJI p.1-5",
+   "absent": [
+    "tensorflowjs_converter"
+   ],
+   "claim": "tensorflowjs_converter does not appear"
+  },
+  {
+   "cite": "TFJI p.2-3",
+   "absent": [
+    "adam"
+   ],
+   "claim": "adam is not the tutorial's optimizer"
+  },
+  {
+   "cite": "TFJG p.1-2",
+   "absent": [
+    "webgl",
+    "backend"
+   ],
+   "claim": "guide does not cite WebGL"
+  },
+  {
+   "cite": "TFJG p.1-2",
+   "absent": [
+    "versão"
+   ],
+   "claim": "guide does not cite a version"
+  },
+  {
+   "cite": "TFJL p.1-9",
+   "absent": [
+    "mobilenet",
+    "coco-ssd",
+    "posenet"
+   ],
+   "claim": "mobilenet not cited"
+  },
+  {
+   "cite": "TFJL p.1-9",
+   "absent": [
+    "webgpu",
+    "wasm"
+   ],
+   "claim": "WebGPU not cited"
+  },
+  {
+   "cite": "TFJL p.1-9",
+   "absent": [
+    "tflite",
+    "react native"
+   ],
+   "claim": "Lite/React Native not cited"
+  },
+  {
+   "cite": "TFJL p.1-9",
+   "absent": [
+    "atualização"
+   ],
+   "claim": "no update date"
+  },
+  {
+   "cite": "TFJS p.1-7",
+   "absent": [
+    "model.save",
+    "loadlayersmodel"
+   ],
+   "claim": "model.save does not appear"
+  },
+  {
+   "cite": "TFJI p.1-5",
+   "absent": [
+    "tf.data"
+   ],
+   "claim": "tf.data is not exemplified with code"
+  }
+ ]
+}

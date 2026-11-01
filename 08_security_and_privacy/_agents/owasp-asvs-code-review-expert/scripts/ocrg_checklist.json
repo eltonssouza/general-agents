@@ -1,0 +1,552 @@
+{
+ "source": "OWASP Code Review Guide v2.0 (2017), Appendix A Code Review Checklist",
+ "page_convention": "PDF page; printed = PDF - 1",
+ "items": [
+  {
+   "id": "A.1",
+   "page": 197,
+   "category": "General",
+   "text": "Are there backdoor/unexposed business logic classes?",
+   "rect_y": 140.5
+  },
+  {
+   "id": "A.2",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Are there unused configurations related to business logic?",
+   "rect_y": 159.0
+  },
+  {
+   "id": "A.3",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "If request parameters are used to identify business logic methods, is there a proper mapping of user privileges and methods/actions allowed to them?",
+   "rect_y": 188.7
+  },
+  {
+   "id": "A.4",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Check if unexposed instance variables are present in form objects that get bound to user inputs. If present, check if they have default values.",
+   "rect_y": 218.4
+  },
+  {
+   "id": "A.5",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Check if unexposed instance variables present in form objects that get bound to user inputs. If present, check if they get initialized before form binding.",
+   "rect_y": 248.2
+  },
+  {
+   "id": "A.6",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is the placement of authentication and authorization check correct?",
+   "rect_y": 277.9
+  },
+  {
+   "id": "A.7",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is there execution stopped/terminated after for invalid request? I.e. when authentication/autho-rization check fails?",
+   "rect_y": 296.3
+  },
+  {
+   "id": "A.8",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Are the checks correct implemented? Is there any backdoor parameter?",
+   "rect_y": 326.1
+  },
+  {
+   "id": "A.9",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is the check applied on all the required files and folder within web root directory?",
+   "rect_y": 344.5
+  },
+  {
+   "id": "A.10",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Are security checks placed before processing inputs?",
+   "rect_y": 363.0
+  },
+  {
+   "id": "A.11",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Check if unexposed instance variables are present in form objects that get bound to user inputs. If present, check if they have default values.",
+   "rect_y": 381.5
+  },
+  {
+   "id": "A.12",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Check if unexposed instance variables present in form objects that get bound to user inputs. If present, check if they get initialized before form binding.",
+   "rect_y": 411.2
+  },
+  {
+   "id": "A.13",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is there execution stopped/terminated after for invalid request? I.e. when authentication/autho-rization check fails?",
+   "rect_y": 440.9
+  },
+  {
+   "id": "A.14",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Are the checks correct implemented? Is there any backdoor parameter?",
+   "rect_y": 470.6
+  },
+  {
+   "id": "A.15",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Is the check applied on all the required files and folder within web root directory?",
+   "rect_y": 500.3
+  },
+  {
+   "id": "A.16",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Is there any default configuration like Access- ALL?",
+   "rect_y": 530.1
+  },
+  {
+   "id": "A.17",
+   "page": 197,
+   "category": "Business Logic and Design",
+   "text": "Does the configuration get applied to all files and users?",
+   "rect_y": 559.8
+  },
+  {
+   "id": "A.18",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Incase of container-managed authentication - Is the authentication based on web methods only?",
+   "rect_y": 589.5
+  },
+  {
+   "id": "A.19",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Incase of container-managed authentication - Does the authentication get applied on all resources?",
+   "rect_y": 608.0
+  },
+  {
+   "id": "A.20",
+   "page": 197,
+   "category": "Session Management",
+   "text": "Does the design handle sessions securely?",
+   "rect_y": 637.7
+  },
+  {
+   "id": "A.21",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Incase of container-managed authentication - Is the authentication based on web methods only?",
+   "rect_y": 667.4
+  },
+  {
+   "id": "A.22",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is Password Complexity Check enforced on the password?",
+   "rect_y": 685.9
+  },
+  {
+   "id": "A.23",
+   "page": 197,
+   "category": "Cryptography",
+   "text": "Is password stored in an encrypted format?",
+   "rect_y": 704.3
+  },
+  {
+   "id": "A.24",
+   "page": 197,
+   "category": "Authorization",
+   "text": "Is password disclosed to user/written to a file/logs/console?",
+   "rect_y": 722.8
+  },
+  {
+   "id": "A.25",
+   "page": 198,
+   "category": "Cryptography",
+   "text": "Are database credentials stored in an encrypted format",
+   "rect_y": 139.9
+  },
+  {
+   "id": "A.26",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the design support weak data stores like flat files",
+   "rect_y": 158.4
+  },
+  {
+   "id": "A.27",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the centralized validation get applied to all requests and all the inputs?",
+   "rect_y": 188.1
+  },
+  {
+   "id": "A.28",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the centralized validation check block all the special characters?",
+   "rect_y": 217.8
+  },
+  {
+   "id": "A.29",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does are there any special kind of request skipped from validation?",
+   "rect_y": 247.6
+  },
+  {
+   "id": "A.30",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the design maintain any exclusion list for parameters or features from being validated?",
+   "rect_y": 277.3
+  },
+  {
+   "id": "A.31",
+   "page": 198,
+   "category": "Imput Validation",
+   "text": "Are all the untrusted inputs validated? Input data is constrained and validated for type, length, format, and range.",
+   "rect_y": 307.0
+  },
+  {
+   "id": "A.32",
+   "page": 198,
+   "category": "Cryptography",
+   "text": "Is the data sent on encrypted channel?  Does the application use HTTPClient for making external connections?",
+   "rect_y": 336.7
+  },
+  {
+   "id": "A.33",
+   "page": 198,
+   "category": "Session Management",
+   "text": "Does the design involve session sharing between components/modules? Is session validated correctly on both ends?",
+   "rect_y": 366.7
+  },
+  {
+   "id": "A.34",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the design use any elevated OS/system privileges for external connections/commands?",
+   "rect_y": 396.5
+  },
+  {
+   "id": "A.35",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Is there any known flaw(s) in API’s/Technology used? For eg: DWR",
+   "rect_y": 425.3
+  },
+  {
+   "id": "A.36",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Does the design framework provide any inbuilt security control? Like <%: %> in ASP.NET MVC? Is the application taking advantage of these controls?",
+   "rect_y": 454.6
+  },
+  {
+   "id": "A.37",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Are privileges reduce whenever possible?",
+   "rect_y": 483.9
+  },
+  {
+   "id": "A.38",
+   "page": 198,
+   "category": "Business Logic and Design",
+   "text": "Is the program designed to fail gracefully?",
+   "rect_y": 513.3
+  },
+  {
+   "id": "A.39",
+   "page": 198,
+   "category": "Logging and Auditing",
+   "text": "Are logs logging personal information, passwords or other sensitive information?",
+   "rect_y": 542.6
+  },
+  {
+   "id": "A.40",
+   "page": 198,
+   "category": "Logging and Auditing",
+   "text": "Do audit logs log connection attempts (both successful and failures)?",
+   "rect_y": 571.9
+  },
+  {
+   "id": "A.41",
+   "page": 198,
+   "category": "Logging and Auditing",
+   "text": "Is there a process(s) in place to read audit logs for unintended/malicious behaviors?",
+   "rect_y": 601.2
+  },
+  {
+   "id": "A.42",
+   "page": 198,
+   "category": "Cryptography",
+   "text": "Is all PI and sensitive information being sent over the network encrypted form.",
+   "rect_y": 630.6
+  },
+  {
+   "id": "A.43",
+   "page": 198,
+   "category": "Authorization",
+   "text": "Does application design call for server authentication (anti-spoofing measure)?",
+   "rect_y": 659.9
+  },
+  {
+   "id": "A.44",
+   "page": 198,
+   "category": "Authorization",
+   "text": "Does application support password expiration?",
+   "rect_y": 689.2
+  },
+  {
+   "id": "A.45",
+   "page": 198,
+   "category": "Cryptography",
+   "text": "Does application use custom schemes for hashing and or cryptographic?",
+   "rect_y": 718.6
+  },
+  {
+   "id": "A.46",
+   "page": 199,
+   "category": "Cryptography",
+   "text": "Are cryptographic functions used by the application the most recent version of these protocols, patched and process in place to keep them updated?",
+   "rect_y": 140.1
+  },
+  {
+   "id": "A.47",
+   "page": 199,
+   "category": "General",
+   "text": "Are external libraries, tools, plugins used by the application functions the most recent version of these protocols, patched and process in place to keep them updated?",
+   "rect_y": 169.9
+  },
+  {
+   "id": "A.48",
+   "page": 199,
+   "category": "General",
+   "text": "Classes that contain security secrets (like passwords) are only accessible through protected API’s",
+   "rect_y": 199.6
+  },
+  {
+   "id": "A.49",
+   "page": 199,
+   "category": "Cryptography",
+   "text": "Does are there any special kind of request skipped from validation?",
+   "rect_y": 218.0
+  },
+  {
+   "id": "A.50",
+   "page": 199,
+   "category": "General",
+   "text": "Classes that contain security secrets (like passwords) are only accessible through protected API’s",
+   "rect_y": 247.8
+  },
+  {
+   "id": "A.51",
+   "page": 199,
+   "category": "Cryptography",
+   "text": "Keys are not held in code.",
+   "rect_y": 266.2
+  },
+  {
+   "id": "A.52",
+   "page": 199,
+   "category": "General",
+   "text": "Plain text secrets are not stored in memory for extended periods of time.",
+   "rect_y": 284.7
+  },
+  {
+   "id": "A.53",
+   "page": 199,
+   "category": "General",
+   "text": "Array bounds are checked.",
+   "rect_y": 303.2
+  },
+  {
+   "id": "A.54",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "User and role based privileges are documented",
+   "rect_y": 321.3
+  },
+  {
+   "id": "A.55",
+   "page": 199,
+   "category": "General",
+   "text": "All sensitive information used by application has been identified",
+   "rect_y": 350.7
+  },
+  {
+   "id": "A.56",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authentication cookies are not persisted",
+   "rect_y": 368.9
+  },
+  {
+   "id": "A.57",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authentication cookies are encrypted",
+   "rect_y": 398.2
+  },
+  {
+   "id": "A.58",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authentication credentials are not passed by HTTP GET",
+   "rect_y": 427.6
+  },
+  {
+   "id": "A.59",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authorization checks are granular (page and directory level)",
+   "rect_y": 457.0
+  },
+  {
+   "id": "A.60",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authorization based on clearly defined roles",
+   "rect_y": 486.4
+  },
+  {
+   "id": "A.61",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authorization works properly and cannot be circumvented by parameter manipulation",
+   "rect_y": 515.8
+  },
+  {
+   "id": "A.62",
+   "page": 199,
+   "category": "User Management and Authentication",
+   "text": "Authorization cannot be bypassed by cookie manipulation",
+   "rect_y": 545.2
+  },
+  {
+   "id": "A.63",
+   "page": 199,
+   "category": "Session Management",
+   "text": "No session parameters are passed in URLs",
+   "rect_y": 574.6
+  },
+  {
+   "id": "A.64",
+   "page": 199,
+   "category": "Session Management",
+   "text": "Session cookies expire in a reasonable short time",
+   "rect_y": 604.0
+  },
+  {
+   "id": "A.65",
+   "page": 199,
+   "category": "Session Management",
+   "text": "Session cookies are encrypted",
+   "rect_y": 633.3
+  },
+  {
+   "id": "A.66",
+   "page": 199,
+   "category": "Session Management",
+   "text": "Session data is validated",
+   "rect_y": 662.7
+  },
+  {
+   "id": "A.67",
+   "page": 199,
+   "category": "Session Management",
+   "text": "Session id is complex",
+   "rect_y": 692.1
+  },
+  {
+   "id": "A.68",
+   "page": 199,
+   "category": "Session Management",
+   "text": "Session storage is secure",
+   "rect_y": 721.5
+  },
+  {
+   "id": "A.69",
+   "page": 200,
+   "category": "Session Management",
+   "text": "Session inactivity timeouts are enforced",
+   "rect_y": 140.0
+  },
+  {
+   "id": "A.70",
+   "page": 200,
+   "category": "Data Management",
+   "text": "Data is validated on server side",
+   "rect_y": 169.7
+  },
+  {
+   "id": "A.71",
+   "page": 200,
+   "category": "Data Management",
+   "text": "HTTP headers are validated for each request",
+   "rect_y": 188.5
+  },
+  {
+   "id": "A.72",
+   "page": 200,
+   "category": "Business Logic and Design",
+   "text": "Are all of the entry points and trust boundaries identified by the design and are in risk analysis report?",
+   "rect_y": 207.3
+  },
+  {
+   "id": "A.73",
+   "page": 200,
+   "category": "Data Management",
+   "text": "Is all XML input data validated against an agreed schema?",
+   "rect_y": 237.0
+  },
+  {
+   "id": "A.74",
+   "page": 200,
+   "category": "Data Management",
+   "text": "Is output that contains untrusted data supplied input have the correct type of encoding (URL encoding, HTML encoding)?",
+   "rect_y": 255.8
+  },
+  {
+   "id": "A.75",
+   "page": 200,
+   "category": "Data Management",
+   "text": "Has the correct encoding been applied to all data being output by the application",
+   "rect_y": 285.5
+  },
+  {
+   "id": "A.76",
+   "page": 200,
+   "category": "Web Services",
+   "text": "Web service has documentation protocol is disable if the application does not need dynamic generation of WSDL.",
+   "rect_y": 304.2
+  },
+  {
+   "id": "A.77",
+   "page": 200,
+   "category": "Web Services",
+   "text": "Web service endpoints address in Web Services Description Language (WSDL) is checked for validity",
+   "rect_y": 334.0
+  },
+  {
+   "id": "A.78",
+   "page": 200,
+   "category": "Web Services",
+   "text": "Web service protocols that are unnecessary are disable (HTTP GET and HTTP POST",
+   "rect_y": 352.7
+  }
+ ]
+}

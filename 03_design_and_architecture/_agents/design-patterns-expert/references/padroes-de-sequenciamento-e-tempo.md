@@ -1,0 +1,39 @@
+# Sequencing patterns (GPP): Double Buffer, Game Loop and Update Method
+
+Source: **GPP** = *Game Programming Patterns* (Nystrom), a 338-page PDF web capture. Pages = **PDF** (no printed page). The "Sequencing Patterns" section opens on p.112 `[from source] (GPP p.112)`. Labels: `[from source]`, `[inference]`, `[extrapolation]`, `[DATED]`. The book is from 2009-2021 (footer `[from source] (GPP p.7)`); passages about the Windows API, XNA, PS3/Wii and pre-C++11 C++ are `[DATED]`.
+
+## 1. Double Buffer (GPP p.113-128)
+- Intent: make a series of sequential operations appear instantaneous or simultaneous `[from source] (GPP p.113)`.
+- Graphics problem: the video hardware reads the *framebuffer* all the time; if the code writes while the driver reads, **tearing** occurs (half the drawing appears) `[from source] (GPP p.114-115)`.
+- Pattern: the class keeps two buffers, *next* (write) and *current* (read); at the end, a *swap* operation exchanges them instantly; the old *current* becomes the new *next* `[from source] (GPP p.116-117)`. If the swap is timed to the end of a refresh, there is no tearing; old consoles with little memory prefer to synchronize drawing with the refresh `[from source] (GPP p.116)`.
+- When to use (all true): state modified incrementally, accessed in the middle of the modification, and the reader must neither see work in progress nor wait `[from source] (GPP p.117)`.
+- Costs: the *swap* must be atomic and fast (if it takes longer than the modification, it did not help); doubled memory `[from source] (GPP p.117-118)`.
+- It is not only graphical: the actors/comedians example shows that reading and writing the same state in the same update makes the result depend on the order; buffering the "slapped" state (current/next) solves it `[from source] (GPP p.121-126)`.
+- Decisions: swap pointers (fast; persistent pointers to the buffer stop being valid; the old data is two frames old) or copy data (slower swap; data one frame old) `[from source] (GPP p.126-127)`; monolithic buffer vs distributed across objects, with the static index `current_` optimization `[from source] (GPP p.127-128)`. Real uses: `swapBuffers()` in OpenGL, *swap chains* in Direct3D `[from source] (GPP p.128)`.
+- "V-BLANK", "the GPU swaps the pointers" and "front/back buffer" as a description of Double Buffer are **not** in the chapter (which says *current/next* and speaks of swapping at the end of the refresh, p.116); "VBLANK" appears only in passing, in the history of the 6502, in GPP p.155. Use `[extrapolation]`.
+
+## 2. Game Loop (GPP p.130-144)
+- Intent: decouple the progression of game time from user input and from processor speed `[from source] (GPP p.130)`.
+- Evolution: batch programs; interactive programs (command loop); GUI event loops, which block waiting for input `[from source] (GPP p.130-131)`. A game keeps moving without input: the loop processes input **without waiting** and repeats `processInput(); update(); render();` `[from source] (GPP p.132)`. "Tick" and "frame" are the terms for one turn `[from source] (GPP p.132)`.
+- Two jobs of the pattern: input without blocking, and running the game at the same speed regardless of hardware (the "turbo" buttons example) `[from source] (GPP p.132-133)`.
+- When to use: Nystrom says you will use it; in an engine it already exists; the engine owns the loop, a library does not `[from source] (GPP p.133-134)`. On platforms with their own event loop (Windows `PeekMessage`, browser `requestAnimationFrame`) coordination is needed `[from source] (GPP p.134)` `[DATED]`.
+- Code variants `[from source] (GPP p.135-141)`:
+  1. Uncontrolled (runs as fast as possible): speed depends on the hardware `[from source] (GPP p.135)`.
+  2. With `sleep` until ~16 ms per frame is completed at 60 FPS: does not help if the frame takes longer; the game slows down `[from source] (GPP p.135-136)`.
+  3. **Variable step** (`update(elapsed)`): the game follows real time, but becomes **non-deterministic and unstable**: floating-point error accumulates differently on different machines (Fred and George example) and physics damping is tuned for a fixed step `[from source] (GPP p.136-138)`.
+  4. **Fixed step for updating, flexible rendering**: accumulates `lag` with the elapsed time and runs `update()` in steps of `MS_PER_UPDATE` while `lag >= MS_PER_UPDATE`; then `render()` `[from source] (GPP p.138-139)`. The step must be larger than the time of one `update()` on the slowest machine; Nystrom says the inner loop can be protected with a **maximum number of iterations** (the game slows down, but does not freeze), without giving a number `[from source] (GPP p.139)`.
+  5. **Residual lag**: what remains in `lag` indicates how much of the next frame has already passed; call `render(lag / MS_PER_UPDATE)`, a value between 0 and almost 1; the renderer draws the object ahead according to its speed (example: 20 px, 400 px/frame, 0.5 gives 220 px). He calls this extrapolation/interpolation and admits it is sometimes wrong, a barely noticeable correction `[from source] (GPP p.140-141)`.
+- Design decisions: who owns the loop (platform, engine or you), energy consumption (run as fast as possible vs limit the FPS, on mobile 30 or 60), control of game speed (summary of the four options) `[from source] (GPP p.141-144)`.
+- Careful attribution: "death spiral" and "projectile tunneling" are **not** GPP terms (the word *spiral* only appears in contexts unrelated to the Game Loop); the formula `Pos*(1-α)+PosAnterior*α` is also not the one he shows. Use `[extrapolation]` and say that a cap of 5 to 8 updates is a choice of the script/engineer, not a number from the book.
+
+## 3. Update Method (GPP p.146-160)
+- Intent: simulate a collection of independent objects by telling each one to process one frame of behavior at a time `[from source] (GPP p.146)`.
+- Motivation: a patrolling skeleton and statues that shoot lightning; the "simple" code in the main loop turns into a tangle of variables; solution: each entity encapsulates its own behavior in an abstract `update()`; the loop keeps a collection and calls `update()` on each one per frame `[from source] (GPP p.146-149)`.
+- Pattern and when to use (simultaneous objects, independent behavior, simulated over time; for abstract board games it is usually a poor choice) `[from source] (GPP p.149)`.
+- Cautions: splitting code into one-frame slices increases complexity; you must store state to resume (State helps); coroutines/generators/Bytecode are alternatives `[from source] (GPP p.150)`. Objects are **not** really concurrent: the update order matters (to avoid it, Double Buffer) `[from source] (GPP p.151)`. Modifying the list during the loop: fix the number of objects at the start, walk backwards or defer removals by marking objects "dead" `[from source] (GPP p.151-153)`.
+- Example code `Entity`, `Skeleton`, `Statue` `[from source] (GPP p.153-157)`. With a variable step, `update(double elapsed)` and care with *overshoot* `[from source] (GPP p.157-158)`.
+- Decisions: which class holds `update()` (entity, component or delegated as State/Type Object) and how to handle dormant objects (separate collection of active ones, with memory and synchronization cost) `[from source] (GPP p.158-160)`. Nystrom cites Game Loop, Update Method and Component as the "trinity" at the core of an engine; Data Locality helps performance `[from source] (GPP p.160-161)`. He also recalls the GoF recommendation to prefer composition over inheritance, but thinks the pendulum has swung too far `[from source] (GPP p.155)`.
+
+## 4. What the PDF does NOT contain
+- Physics values at 60/120 Hz as a recommendation; "cap of 8 updates"; "death spiral" chart; Unity's `fixed update` with current API names (there is only a mention of Unity in GPP p.145, 161).
+- Loop multithreading, adaptive vsync, modern GPUs (he says they were left out, p.141): `[extrapolation]`.

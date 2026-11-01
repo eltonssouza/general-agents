@@ -1,0 +1,15 @@
+{
+  "name": "automation-agents-n8n-hermes-expert",
+  "version": "1.0.0",
+  "description": "Overview agent based on two captured landing pages: n8n Docs (N8N, 4 pages) and Hermes Agent by Nous Research (HERMES, 4 pages). States only what the pages say; answers NOT COVERED for the rest (pricing, steps, webhooks, versions, integration between the two). Hermes claims are promotional text. [DATED] 2026 captures. Does not replace the official documentation.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "n8n",
+    "hermes-agent",
+    "nous-research",
+    "workflow-automation",
+    "mcp",
+    "doc-capture"
+  ]
+}

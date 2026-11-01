@@ -1,0 +1,49 @@
+# Glossary
+
+> Convention: `(KIMBALL p.N)` = PDF page (printed = N − 3); `(STREAM p.N)` = PDF page = printed page. Labels: `[from source]`, `[inference]`, `[extrapolation]`, `[DATED]`. Terms without a page: not in the corpus.
+
+- **Additive / semi-additive / non-additive**: [from source] summable across any dimension / across some (balances: not over time) / not summable (ratios) (KIMBALL p.7).
+- **Accumulating snapshot**: [from source] one row per process with milestones, updated over time (KIMBALL p.8).
+- **At-least-once**: [from source] results of failure-free execution plus duplicates from recovery (STREAM p.17).
+- **At-most-once**: [from source] term "mostly obsolete" in the survey (STREAM p.17).
+- **Atomic grain**: [from source] the lowest level at which the process captures data (KIMBALL p.5).
+- **Back-pressure**: [from source] operators slow down to the slowest consumer; propagates to the source; requires a persistent queue to avoid losing data (STREAM p.23).
+- **Bridge table**: [from source] links a fact to a multivalued dimension, or implements an irregular hierarchy with one row per path (KIMBALL p.17, p.21).
+- **Bus matrix**: [from source] rows = processes, columns = dimensions (KIMBALL p.14).
+- **Centipede fact table**: [from source] a fact with dozens of hierarchically related dimensions; avoid (KIMBALL p.18).
+- **Chandy-Lamport**: [from source] consistent snapshot algorithm based on markers (STREAM p.15-16).
+- **Durable key (supernatural key)**: [from source] a persistent key that does not change, independent of the business process (KIMBALL p.10).
+- **Conformed dimension**: [from source] the same column names and domains across dimensions (KIMBALL p.13).
+- **Credit-based flow control**: [from source] receivers advertise buffer credits; implemented in Flink (STREAM p.23).
+- **Degenerate dimension**: [from source] a dimension key in the fact with no dimension table (KIMBALL p.10-11).
+- **Drilling across**: [from source] separate queries per fact with conformed headers, merged by sort-merge (KIMBALL p.13).
+- **Elasticity**: [from source] the ability to vary the resources of a running computation, with a policy and a mechanism (STREAM p.23).
+- **Epoch**: [from source] a mini-batch of computation with an atomic state commit (STREAM p.15).
+- **Event time / processing time / ingestion time**: [from source] STREAM p.4.
+- **Exactly-once on state / on output**: [from source] STREAM p.17-18.
+- **Frontier / pointstamp**: [from source] STREAM p.8.
+- **Grain**: [from source] what exactly one row of the fact represents (KIMBALL p.5).
+- **Grace extensions**: [from source] changes that do not break queries (KIMBALL p.6).
+- **Heartbeat**: [from source] an external progress signal with a timestamp (STREAM p.6-7).
+- **Idempotence (of writes)**: [from source] the survey speaks of "idempotent writes" in external sinks (STREAM p.20); the formal definition is general knowledge [extrapolation].
+- **Junk dimension**: [from source] one dimension for low-cardinality flags, with only the combinations that occur (KIMBALL p.12).
+- **Late arriving dimension / fact**: [from source] KIMBALL p.23 / p.20.
+- **Load shedding**: [from source] dropping tuples when the input exceeds capacity (STREAM p.21-22).
+- **Low-watermark**: [from source] the lowest value of the attribute in a subset of the stream; future tuples will probabilistically have a higher value (STREAM p.7).
+- **LSM-Tree / RocksDB**: [from source] an LSM-Tree variant used in most out-of-core systems; RocksDB/LevelDB and FASTER are cited (STREAM p.13).
+- **Mini-dimension**: [from source] SCD type 4 (KIMBALL p.15).
+- **Multipass SQL**: [from source] title of the technique for avoiding a join between facts; "stitch/multipass query" (KIMBALL p.13, p.20).
+- **Outrigger dimension**: [from source] a dimension that references another; use sparingly (KIMBALL p.12).
+- **Output commit problem**: [from source] publishing output only when it is recoverable without republishing (STREAM p.18).
+- **Periodic snapshot**: [from source] one row per standard period (KIMBALL p.8).
+- **Punctuation**: [from source] a metadata tuple in the stream (STREAM p.7-8).
+- **Role-playing dimension**: [from source] the same physical dimension, views per role (KIMBALL p.12).
+- **Saga / Outbox**: [extrapolation] microservices patterns; not in the corpus.
+- **SCD types 0-7**: [from source] KIMBALL p.15-16.
+- **Slack**: [from source] a fixed grace period for late records (STREAM p.6).
+- **Snowflake**: [from source] hierarchy normalized into secondary tables; avoid (KIMBALL p.12).
+- **Star schema**: [from source] facts linked to dimensions by PK/FK in a relational DBMS (KIMBALL p.5).
+- **Surrogate key**: [from source] an anonymous sequential integer starting at 1 (KIMBALL p.10).
+- **Transaction fact**: [from source] one row per measurement event (KIMBALL p.7).
+- **Two-phase commit (2PC)**: [from source] in the survey, two-phase commit per epoch (STREAM p.15); the thesis "2PC is anti-availability" is [extrapolation] (Helland, source absent).
+- **Watermark**: see low-watermark. [inference] "W(t)" and the idea of an absolute guarantee are not from the survey.

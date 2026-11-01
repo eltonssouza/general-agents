@@ -1,0 +1,15 @@
+{
+  "name": "audit-infrastructure",
+  "version": "3.0.0",
+  "description": "Infrastructure and DevSecOps auditor of the audit pipeline (Universal Audit Multiagent v3.0): cloud (AWS/Azure/GCP), IAM and least privilege, Docker and Kubernetes, Terraform/Pulumi/CloudFormation, CI/CD and runners, TLS, logging, backups and network exposure, based only on what is declared in the repository. Use when the audit-orchestrator dispatches the infrastructure task or when an IaC and pipeline audit is requested in the agent-result contract. It does not run apply, deploy or active scans. Do not use to operate or design the platform (containers-docker-kubernetes-expert,...",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "security-audit",
+    "multiagent",
+    "universal-audit",
+    "infrastructure"
+  ]
+}

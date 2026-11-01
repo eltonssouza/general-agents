@@ -1,0 +1,1048 @@
+{
+ "fonte": "MLY, PDF ML-Machine-Learning-Yearning-Ng",
+ "convencao": "PDF page = printed number",
+ "checks": [
+  {
+   "cite": "MLY p.6-7",
+   "contains": [
+    "cat picture",
+    "regularization",
+    "gradient descent"
+   ],
+   "claim": "cat startup example and ideas"
+  },
+  {
+   "cite": "MLY p.2",
+   "contains": [
+    "draft",
+    "2018",
+    "deeplearning.ai"
+   ],
+   "claim": "2018 draft"
+  },
+  {
+   "cite": "MLY p.8",
+   "contains": [
+    "superhero",
+    "print them out"
+   ],
+   "claim": "short chapters"
+  },
+  {
+   "cite": "MLY p.9",
+   "contains": [
+    "supervised learning",
+    "coursera"
+   ],
+   "claim": "prerequisites"
+  },
+  {
+   "cite": "MLY p.10",
+   "contains": [
+    "data availability",
+    "computational scale",
+    "plateaus"
+   ],
+   "claim": "drivers of progress"
+  },
+  {
+   "cite": "MLY p.11",
+   "contains": [
+    "20 training examples",
+    "1 million"
+   ],
+   "claim": "note 1"
+  },
+  {
+   "cite": "MLY p.14",
+   "contains": [
+    "70%/30%",
+    "mobile phones",
+    "blurrier"
+   ],
+   "claim": "70/30 split and phone photos"
+  },
+  {
+   "cite": "MLY p.15",
+   "contains": [
+    "hold-out cross validation",
+    "reflect data you expect to get in the future"
+   ],
+   "claim": "definitions and rule"
+  },
+  {
+   "cite": "MLY p.15",
+   "contains": [
+    "ask your friends"
+   ],
+   "claim": "approximating with friends"
+  },
+  {
+   "cite": "MLY p.17",
+   "contains": [
+    "US",
+    "China",
+    "India",
+    "overfit the dev set"
+   ],
+   "claim": "regions and overfitting"
+  },
+  {
+   "cite": "MLY p.17-18",
+   "contains": [
+    "harder than the dev set",
+    "luck, rather than skill",
+    "same distribution"
+   ],
+   "claim": "causes and benchmarks"
+  },
+  {
+   "cite": "MLY p.19",
+   "contains": [
+    "1,000 to 10,000",
+    "0.1%",
+    "30%",
+    "0.01%"
+   ],
+   "claim": "sizes"
+  },
+  {
+   "cite": "MLY p.19",
+   "contains": [
+    "statistically significant"
+   ],
+   "claim": "note 2 significance"
+  },
+  {
+   "cite": "MLY p.20",
+   "contains": [
+    "single-number evaluation metric",
+    "92.4%"
+   ],
+   "claim": "F1 of classifier A"
+  },
+  {
+   "cite": "MLY p.21",
+   "contains": [
+    "harmonic mean",
+    "91.0%",
+    "2/((1/precision)+(1/recall))"
+   ],
+   "claim": "F1 of B and formula"
+  },
+  {
+   "cite": "MLY p.22",
+   "contains": [
+    "satisficing",
+    "100ms",
+    "optimizing metric",
+    "n-1"
+   ],
+   "claim": "optimizing/satisficing"
+  },
+  {
+   "cite": "MLY p.23",
+   "contains": [
+    "false negative",
+    "one false positive every 24 hours"
+   ],
+   "claim": "wakeword"
+  },
+  {
+   "cite": "MLY p.24",
+   "contains": [
+    "idea",
+    "code",
+    "experiment",
+    "0.1%"
+   ],
+   "claim": "iteration cycle"
+  },
+  {
+   "cite": "MLY p.25",
+   "contains": [
+    "less than one week",
+    "anti-spam",
+    "kitten"
+   ],
+   "claim": "one-week deadline"
+  },
+  {
+   "cite": "MLY p.26",
+   "contains": [
+    "overfit",
+    "pornographic",
+    "do not use the test set to make any decisions"
+   ],
+   "claim": "when to change and the test set"
+  },
+  {
+   "cite": "MLY p.27",
+   "contains": [
+    "70%/30%",
+    "single-number"
+   ],
+   "claim": "chapter 12 summary"
+  },
+  {
+   "cite": "MLY p.29",
+   "contains": [
+    "honeypot",
+    "few days"
+   ],
+   "claim": "quick basic system"
+  },
+  {
+   "cite": "MLY p.30",
+   "contains": [
+    "100 dev set examples",
+    "5%",
+    "9.5%",
+    "ceiling"
+   ],
+   "claim": "5% ceiling"
+  },
+  {
+   "cite": "MLY p.31",
+   "contains": [
+    "50%",
+    "two hours",
+    "error analysis"
+   ],
+   "claim": "50% ceiling and two hours"
+  },
+  {
+   "cite": "MLY p.32",
+   "contains": [
+    "spreadsheet",
+    "instagram",
+    "25%",
+    "50%"
+   ],
+   "claim": "spreadsheet"
+  },
+  {
+   "cite": "MLY p.33",
+   "contains": [
+    "8%",
+    "43%",
+    "61%",
+    "rigid mathematical formula"
+   ],
+   "claim": "result and non-formula"
+  },
+  {
+   "cite": "MLY p.34",
+   "contains": [
+    "mislabeled",
+    "0.6%",
+    "9.4%",
+    "6%"
+   ],
+   "claim": "mislabeled data example 1"
+  },
+  {
+   "cite": "MLY p.35",
+   "contains": [
+    "30%",
+    "1.4%",
+    "bias into your evaluation",
+    "dev and test sets continue to be drawn from the same distribution"
+   ],
+   "claim": "example 2 and correction bias"
+  },
+  {
+   "cite": "MLY p.36",
+   "contains": [
+    "eyeball dev set",
+    "blackbox dev set",
+    "4500"
+   ],
+   "claim": "Eyeball and Blackbox"
+  },
+  {
+   "cite": "MLY p.37",
+   "contains": [
+    "overfit the eyeball dev set"
+   ],
+   "claim": "overfitting to the eyeball"
+  },
+  {
+   "cite": "MLY p.38",
+   "contains": [
+    "~20 mistakes",
+    "~50 mistakes",
+    "~100 mistakes",
+    "2,000 examples",
+    "500"
+   ],
+   "claim": "Eyeball size"
+  },
+  {
+   "cite": "MLY p.39",
+   "contains": [
+    "1,000-10,000",
+    "1,000 errors"
+   ],
+   "claim": "blackbox and the 1000 limit"
+  },
+  {
+   "cite": "MLY p.40",
+   "contains": [
+    "basic system",
+    "eyeball dev set"
+   ],
+   "claim": "chapter 19 summary"
+  },
+  {
+   "cite": "MLY p.42-43",
+   "contains": [
+    "15%",
+    "16%",
+    "bias",
+    "variance",
+    "mean squared error"
+   ],
+   "claim": "bias and variance"
+  },
+  {
+   "cite": "MLY p.43",
+   "contains": [
+    "simultaneously reduce bias and variance"
+   ],
+   "claim": "note 7"
+  },
+  {
+   "cite": "MLY p.44",
+   "contains": [
+    "overfitting",
+    "underfitting",
+    "high bias and high variance"
+   ],
+   "claim": "examples"
+  },
+  {
+   "cite": "MLY p.45",
+   "contains": [
+    "0.5%",
+    "low bias and low variance"
+   ],
+   "claim": "good performance"
+  },
+  {
+   "cite": "MLY p.46",
+   "contains": [
+    "14%",
+    "unavoidable bias",
+    "speech recognition"
+   ],
+   "claim": "optimal 14%"
+  },
+  {
+   "cite": "MLY p.47",
+   "contains": [
+    "avoidable bias",
+    "bayes error rate",
+    "no such thing as",
+    "over-memorized"
+   ],
+   "claim": "avoidable bias, Bayes, no unavoidable variance"
+  },
+  {
+   "cite": "MLY p.47",
+   "contains": [
+    "error we attribute to bias"
+   ],
+   "claim": "note 9"
+  },
+  {
+   "cite": "MLY p.49",
+   "contains": [
+    "increase the size of your model",
+    "add data to your training set",
+    "l2 regularization or dropout"
+   ],
+   "claim": "simple recipe"
+  },
+  {
+   "cite": "MLY p.50",
+   "contains": [
+    "bias vs. variance tradeoff",
+    "less of a tradeoff"
+   ],
+   "claim": "trade-off"
+  },
+  {
+   "cite": "MLY p.51",
+   "contains": [
+    "reduce or eliminate regularization",
+    "add more training data",
+    "no significant effect on bias"
+   ],
+   "claim": "bias techniques"
+  },
+  {
+   "cite": "MLY p.52",
+   "contains": [
+    "loud background",
+    "error analysis on the training data"
+   ],
+   "claim": "training error"
+  },
+  {
+   "cite": "MLY p.53",
+   "contains": [
+    "early stopping",
+    "feature selection",
+    "use with caution"
+   ],
+   "claim": "variance techniques"
+  },
+  {
+   "cite": "MLY p.56",
+   "contains": [
+    "learning curve",
+    "desired error rate",
+    "100, 200, 300"
+   ],
+   "claim": "learning curve"
+  },
+  {
+   "cite": "MLY p.57",
+   "contains": [
+    "plateaued",
+    "doubling the training set"
+   ],
+   "claim": "plateau and extrapolation"
+  },
+  {
+   "cite": "MLY p.59",
+   "contains": [
+    "memorize",
+    "increases",
+    "strictly above"
+   ],
+   "claim": "training error grows"
+  },
+  {
+   "cite": "MLY p.60",
+   "contains": [
+    "absolutely sure"
+   ],
+   "claim": "more data is not enough"
+  },
+  {
+   "cite": "MLY p.61",
+   "contains": [
+    "textbook",
+    "high avoidable bias",
+    "small variance"
+   ],
+   "claim": "high bias"
+  },
+  {
+   "cite": "MLY p.62",
+   "contains": [
+    "bias is small, but the variance is large",
+    "significant bias and significant variance"
+   ],
+   "claim": "other cases"
+  },
+  {
+   "cite": "MLY p.63",
+   "contains": [
+    "sampling with replacement",
+    "80%",
+    "balanced"
+   ],
+   "claim": "noise in the curves"
+  },
+  {
+   "cite": "MLY p.64",
+   "contains": [
+    "1,000, 2,000, 4,000, 6,000, and 10,000",
+    "10,000 examples"
+   ],
+   "claim": "non-linear scale"
+  },
+  {
+   "cite": "MLY p.66",
+   "contains": [
+    "ease of obtaining data",
+    "pear",
+    "at least 8%"
+   ],
+   "claim": "ratios and 8%"
+  },
+  {
+   "cite": "MLY p.67",
+   "contains": [
+    "stock market",
+    "optimal error rate"
+   ],
+   "claim": "tasks without humans"
+  },
+  {
+   "cite": "MLY p.68",
+   "contains": [
+    "x-ray",
+    "2%",
+    "team of doctors",
+    "cannot be higher"
+   ],
+   "claim": "team of doctors"
+  },
+  {
+   "cite": "MLY p.69",
+   "contains": [
+    "rapidly spoken",
+    "10% error",
+    "8% error"
+   ],
+   "claim": "surpassing the human"
+  },
+  {
+   "cite": "MLY p.71",
+   "contains": [
+    "10,000 images",
+    "200,000",
+    "97.6%",
+    "domain adaptation"
+   ],
+   "claim": "different distributions"
+  },
+  {
+   "cite": "MLY p.72",
+   "contains": [
+    "5,000",
+    "205,000",
+    "500,000",
+    "street addresses"
+   ],
+   "claim": "5,000 in dev/test and training"
+  },
+  {
+   "cite": "MLY p.73",
+   "contains": [
+    "20,000",
+    "capacity",
+    "x —> y mapping"
+   ],
+   "claim": "use all the data"
+  },
+  {
+   "cite": "MLY p.74",
+   "contains": [
+    "sherlock holmes",
+    "attic",
+    "scanned historical documents"
+   ],
+   "claim": "attic"
+  },
+  {
+   "cite": "MLY p.75",
+   "contains": [
+    "detroit",
+    "new york city",
+    "extra feature"
+   ],
+   "claim": "inconsistent data"
+  },
+  {
+   "cite": "MLY p.76",
+   "contains": [
+    "40:1",
+    "1/40",
+    "squared error"
+   ],
+   "claim": "weights"
+  },
+  {
+   "cite": "MLY p.77",
+   "contains": [
+    "data mismatch",
+    "1.5%",
+    "training dev"
+   ],
+   "claim": "mismatch"
+  },
+  {
+   "cite": "MLY p.77-78",
+   "contains": [
+    "four subsets",
+    "same distribution as the training set"
+   ],
+   "claim": "four sets"
+  },
+  {
+   "cite": "MLY p.79",
+   "contains": [
+    "10% error on the training set",
+    "11% error on training dev set",
+    "20% error on the dev set"
+   ],
+   "claim": "10/11/20 example"
+  },
+  {
+   "cite": "MLY p.80",
+   "contains": [
+    "human level error",
+    "data mismatch",
+    "upper-right box"
+   ],
+   "claim": "table"
+  },
+  {
+   "cite": "MLY p.81",
+   "contains": [
+    "car",
+    "quiet background",
+    "domain adaptation"
+   ],
+   "claim": "addressing mismatch"
+  },
+  {
+   "cite": "MLY p.82",
+   "contains": [
+    "1 hour of car noise",
+    "10 different cars",
+    "motion blur"
+   ],
+   "claim": "synthesis"
+  },
+  {
+   "cite": "MLY p.83",
+   "contains": [
+    "20 car designs",
+    "100,000",
+    "overfit"
+   ],
+   "claim": "video game cars"
+  },
+  {
+   "cite": "MLY p.85",
+   "contains": [
+    "beam search",
+    "50,000",
+    "search algorithm problem",
+    "objective"
+   ],
+   "claim": "optimization verification"
+  },
+  {
+   "cite": "MLY p.86",
+   "contains": [
+    "score",
+    "case 1",
+    "case 2",
+    "95%"
+   ],
+   "claim": "cases 1 and 2"
+  },
+  {
+   "cite": "MLY p.87",
+   "contains": [
+    "chinese-to-english",
+    "design pattern",
+    "arg max"
+   ],
+   "claim": "general form"
+  },
+  {
+   "cite": "MLY p.88",
+   "contains": [
+    "autorotation",
+    "-1,000",
+    "reward function"
+   ],
+   "claim": "helicopter"
+  },
+  {
+   "cite": "MLY p.89",
+   "contains": [
+    "thuman",
+    "reinforcement learning",
+    "improving r"
+   ],
+   "claim": "test in RL"
+  },
+  {
+   "cite": "MLY p.91",
+   "contains": [
+    "sentiment",
+    "parser",
+    "mop"
+   ],
+   "claim": "end-to-end"
+  },
+  {
+   "cite": "MLY p.92",
+   "contains": [
+    "end-to-end",
+    "input end"
+   ],
+   "claim": "input end"
+  },
+  {
+   "cite": "MLY p.93",
+   "contains": [
+    "mfcc",
+    "phoneme",
+    "autonomous car"
+   ],
+   "claim": "speech pipeline"
+  },
+  {
+   "cite": "MLY p.94",
+   "contains": [
+    "skeptical",
+    "robot motion planning"
+   ],
+   "claim": "self-driving car skepticism"
+  },
+  {
+   "cite": "MLY p.95",
+   "contains": [
+    "hand-engineered",
+    "pitch"
+   ],
+   "claim": "pros and cons"
+  },
+  {
+   "cite": "MLY p.96",
+   "contains": [
+    "both ends",
+    "(audio, transcript)",
+    "great caution"
+   ],
+   "claim": "data at both ends"
+  },
+  {
+   "cite": "MLY p.97",
+   "contains": [
+    "mechanical turk",
+    "steering direction"
+   ],
+   "claim": "car data"
+  },
+  {
+   "cite": "MLY p.98",
+   "contains": [
+    "architecture better matches the availability of data"
+   ],
+   "claim": "most promising pipeline"
+  },
+  {
+   "cite": "MLY p.99",
+   "contains": [
+    "siamese",
+    "overexposed",
+    "kolmogorov"
+   ],
+   "claim": "simplicity"
+  },
+  {
+   "cite": "MLY p.100",
+   "contains": [
+    "prior knowledge",
+    "cat detector"
+   ],
+   "claim": "Siamese pipeline"
+  },
+  {
+   "cite": "MLY p.101",
+   "contains": [
+    "bounding boxes",
+    "significantly less data"
+   ],
+   "claim": "note 17"
+  },
+  {
+   "cite": "MLY p.102",
+   "contains": [
+    "3 key steps to driving"
+   ],
+   "claim": "driving pipeline"
+  },
+  {
+   "cite": "MLY p.103",
+   "contains": [
+    "image-captioning",
+    "h:x",
+    "housing price"
+   ],
+   "claim": "rich outputs"
+  },
+  {
+   "cite": "MLY p.104",
+   "contains": [
+    "machine translation",
+    "tts",
+    "2014"
+   ],
+   "claim": "outputs table"
+  },
+  {
+   "cite": "MLY p.106",
+   "contains": [
+    "error analysis by parts",
+    "cat detector",
+    "cat breed classifier"
+   ],
+   "claim": "analysis by parts"
+  },
+  {
+   "cite": "MLY p.107",
+   "contains": [
+    "blameless",
+    "90 of the errors"
+   ],
+   "claim": "90 vs 10"
+  },
+  {
+   "cite": "MLY p.109",
+   "contains": [
+    "hand-labeled bounding box",
+    "ambiguous"
+   ],
+   "claim": "formal test"
+  },
+  {
+   "cite": "MLY p.110",
+   "contains": [
+    "perfect",
+    "case 1",
+    "case 2"
+   ],
+   "claim": "two cases"
+  },
+  {
+   "cite": "MLY p.111",
+   "contains": [
+    "a, b and c",
+    "attribute this error to component a"
+   ],
+   "claim": "general case"
+  },
+  {
+   "cite": "MLY p.112",
+   "contains": [
+    "scenario",
+    "directed acyclic graph"
+   ],
+   "claim": "DAG and scenario"
+  },
+  {
+   "cite": "MLY p.113",
+   "contains": [
+    "human-level performance",
+    "no one \"right\" way"
+   ],
+   "claim": "no single form"
+  },
+  {
+   "cite": "MLY p.114",
+   "contains": [
+    "only the outputs",
+    "far from human-level"
+   ],
+   "claim": "human with the same input"
+  },
+  {
+   "cite": "MLY p.115-116",
+   "contains": [
+    "flawed",
+    "lane markings",
+    "redesigned"
+   ],
+   "claim": "flawed pipeline"
+  },
+  {
+   "cite": "MLY p.116",
+   "contains": [
+    "detect lane markings",
+    "task simplicity"
+   ],
+   "claim": "note 18"
+  },
+  {
+   "cite": "MLY p.118",
+   "contains": [
+    "superhero team"
+   ],
+   "claim": "chapter 58"
+  },
+  {
+   "cite": "MLY p.42-50",
+   "absent": [
+    "k-fold"
+   ],
+   "claim": "k-fold is not in the bias/variance chapters"
+  },
+  {
+   "cite": "MLY p.42-54",
+   "absent": [
+    "bayesian",
+    "bagging",
+    "boosting"
+   ],
+   "claim": "bagging/boosting/Bayesian do not appear"
+  },
+  {
+   "cite": "MLY p.49-54",
+   "absent": [
+    "ensemble",
+    "dropout rate",
+    "learning rate"
+   ],
+   "claim": "ensembles/learning rate absent"
+  },
+  {
+   "cite": "MLY p.56-64",
+   "absent": [
+    "confidence interval",
+    "standard deviation",
+    "variance of the estimate"
+   ],
+   "claim": "no formal statistics in the curves"
+  },
+  {
+   "cite": "MLY p.6-12",
+   "absent": [
+    "transformer",
+    "attention",
+    "gpt"
+   ],
+   "claim": "no transformers in the introduction"
+  },
+  {
+   "cite": "MLY p.14-27",
+   "absent": [
+    "a/b test",
+    "ab test",
+    "auc",
+    "roc curve"
+   ],
+   "claim": "no A/B or AUC in dev/test"
+  },
+  {
+   "cite": "MLY p.19",
+   "absent": [
+    "power analysis",
+    "p-value",
+    "z-test"
+   ],
+   "claim": "no statistical power on p.19"
+  },
+  {
+   "cite": "MLY p.34-35",
+   "absent": [
+    "threshold of",
+    "5% mislabeled",
+    "inter-annotator",
+    "cohen"
+   ],
+   "claim": "no threshold or inter-annotator agreement"
+  },
+  {
+   "cite": "MLY p.36-39",
+   "absent": [
+    "cross-validation folds",
+    "stratified"
+   ],
+   "claim": "eyeball without k-fold/stratification"
+  },
+  {
+   "cite": "MLY p.47",
+   "absent": [
+    "irreducible variance",
+    "unavoidable variance exists"
+   ],
+   "claim": "the book states there is no unavoidable variance"
+  },
+  {
+   "cite": "MLY p.68",
+   "absent": [
+    "inter-rater",
+    "kappa"
+   ],
+   "claim": "no kappa"
+  },
+  {
+   "cite": "MLY p.71-83",
+   "absent": [
+    "fine-tuning",
+    "pretrain",
+    "pre-train",
+    "importance weighting",
+    "adversarial"
+   ],
+   "claim": "no fine-tuning/adversarial"
+  },
+  {
+   "cite": "MLY p.85-89",
+   "absent": [
+    "viterbi",
+    "dynamic programming",
+    "monte carlo"
+   ],
+   "claim": "optimization: only beam search is cited"
+  },
+  {
+   "cite": "MLY p.91-104",
+   "absent": [
+    "transformer",
+    "bert",
+    "lstm",
+    "attention mechanism",
+    "convolutional"
+   ],
+   "claim": "no modern architectures in end-to-end"
+  },
+  {
+   "cite": "MLY p.106-116",
+   "absent": [
+    "shapley",
+    "ablation",
+    "grad-cam",
+    "saliency"
+   ],
+   "claim": "analysis by parts without ablation/saliency"
+  },
+  {
+   "cite": "MLY p.10-12",
+   "absent": [
+    "moore's law",
+    "gpu"
+   ],
+   "claim": "scale without GPU/Moore's Law"
+  },
+  {
+   "cite": "MLY p.1-118",
+   "absent": [
+    "mlops",
+    "drift",
+    "data leakage",
+    "fairness"
+   ],
+   "claim": "modern topics absent from the whole book"
+  },
+  {
+   "cite": "MLY p.22-26",
+   "absent": [
+    "ndcg",
+    "bleu",
+    "mean average precision"
+   ],
+   "claim": "ranking/translation metrics absent"
+  },
+  {
+   "cite": "MLY p.29-33",
+   "absent": [
+    "monitoring in production",
+    "canary"
+   ],
+   "claim": "no production monitoring"
+  }
+ ]
+}

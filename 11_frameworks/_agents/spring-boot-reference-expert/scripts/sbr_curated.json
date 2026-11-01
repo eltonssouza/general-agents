@@ -1,0 +1,1292 @@
+{
+ "descricao": "Curated list used by sbr_lookup.py. 'fora' = subjects outside the scope/the collection (the lookup only says 'the Reference does not cover it' for them or for terms with no occurrence in sbr_terms.json). 'so_ponteiro' = subjects that the Reference mentions but the package does not summarize (the lookup returns the page pointer and the note).",
+ "fora": [
+  {
+   "termos": [
+    "graalvm",
+    "native image",
+    "native-image",
+    "aot",
+    "ahead of time",
+    "substratevm"
+   ],
+   "nota": "GraalVM/native image/AOT: 0 occurrences in the Reference 2.7.18 (neither a chapter nor a mention).",
+   "encaminhar": "java-backend-frameworks-expert (Spring Boot 3 guide) / current documentation"
+  },
+  {
+   "termos": [
+    "spring boot 3",
+    "boot 3",
+    "spring boot 3.0",
+    "spring boot 3.2"
+   ],
+   "nota": "Boot 3.x is not covered: the text is the 2.7.18 line (Java 8-21, javax.*).",
+   "encaminhar": "java-backend-frameworks-expert (JavaCodeGeeks guide, Boot 3)"
+  },
+  {
+   "termos": [
+    "jakarta",
+    "jakarta ee",
+    "jakarta.persistence"
+   ],
+   "nota": "the jakarta.* namespace is not used in the text; it only appears in artifact coordinates in Appendix F.",
+   "encaminhar": "java-backend-frameworks-expert"
+  },
+  {
+   "termos": [
+    "java 17",
+    "java 21",
+    "jdk 17",
+    "jdk 21"
+   ],
+   "nota": "the text declares Java 8 as the minimum and compatibility up to Java 21 (SBR p.27); Java 17 as a baseline is a Boot 3 thing.",
+   "encaminhar": "java-backend-frameworks-expert"
+  },
+  {
+   "termos": [
+    "resilience4j",
+    "resilience",
+    "bulkhead",
+    "ratelimiter",
+    "rate limiter",
+    "hystrix"
+   ],
+   "nota": "Resilience4j/Hystrix do not exist in the Reference; 'circuit breaker' is only mentioned in passing (see its own entry).",
+   "encaminhar": "java-backend-frameworks-expert / Resilience4j documentation"
+  },
+  {
+   "termos": [
+    "virtual thread",
+    "virtual threads",
+    "project loom",
+    "loom",
+    "crac"
+   ],
+   "nota": "virtual threads/Loom/CRaC: 0 occurrences.",
+   "encaminhar": "current documentation"
+  },
+  {
+   "termos": [
+    "opentelemetry",
+    "otel",
+    "micrometer tracing",
+    "observation",
+    "observationregistry"
+   ],
+   "nota": "Observation API, Micrometer Tracing and OpenTelemetry: 0 occurrences; only Micrometer metrics and a mention of Sleuth/Zipkin.",
+   "encaminhar": "java-backend-frameworks-expert / current documentation"
+  },
+  {
+   "termos": [
+    "docker compose",
+    "docker-compose",
+    "service connection",
+    "serviceconnection",
+    "spring-boot-docker-compose"
+   ],
+   "nota": "Docker Compose and @ServiceConnection do not exist in the Reference 2.7.18 (Testcontainers only with @DynamicPropertySource, SBR p.647-650).",
+   "encaminhar": "java-backend-frameworks-expert"
+  },
+  {
+   "termos": [
+    "ssl bundle",
+    "ssl bundles",
+    "spring.ssl"
+   ],
+   "nota": "SSL bundles: 0 occurrences (only server.ssl.* and client-specific SSL exist).",
+   "encaminhar": "current documentation"
+  },
+  {
+   "termos": [
+    "openapi",
+    "swagger",
+    "springdoc",
+    "grpc",
+    "graphql federation"
+   ],
+   "nota": "OpenAPI/Swagger/gRPC: 0 occurrences in the Reference.",
+   "encaminhar": "current documentation"
+  },
+  {
+   "termos": [
+    "kraft",
+    "kraft mode"
+   ],
+   "nota": "KRaft: 0 occurrences; ZooKeeper appears in non-Kafka contexts (config data p.96; Appendix F p.686, 875).",
+   "encaminhar": "Kafka documentation / Boot 3 guide"
+  },
+  {
+   "termos": [
+    "quarkus",
+    "mapstruct",
+    "javacodegeeks",
+    "java code geeks"
+   ],
+   "nota": "Quarkus, MapStruct and the JavaCodeGeeks practical guide (Spring Boot 3) belong to java-backend-frameworks-expert; they are not part of this collection.",
+   "encaminhar": "java-backend-frameworks-expert"
+  },
+  {
+   "termos": [
+    "grafana"
+   ],
+   "nota": "Grafana: 0 occurrences; the Reference only carries the Prometheus scrape_config (SBR p.494).",
+   "encaminhar": "java-backend-frameworks-expert (JavaCodeGeeks guide covers Prometheus/Grafana)"
+  },
+  {
+   "termos": [
+    "build-image",
+    "bootbuildimage",
+    "spring-boot:build-image"
+   ],
+   "nota": "the build-image goal/task (buildpacks) does not appear in the Reference: the text only says that the Maven and Gradle plugins support buildpacks and refers to the plugin documentation (SBR p.439, 550).",
+   "encaminhar": "plugin documentation / java-backend-frameworks-expert (the Boot 3 guide carries bootBuildImage)"
+  },
+  {
+   "termos": [
+    "rollback false",
+    "@rollback",
+    "@commit",
+    "@sql"
+   ],
+   "nota": "Spring Test's @Rollback, @Commit and @Sql: 0 occurrences; for tests without rollback the Reference shows @Transactional(propagation = Propagation.NOT_SUPPORTED) (SBR p.190-191).",
+   "encaminhar": "testing agents / Spring Framework documentation"
+  },
+  {
+   "termos": [
+    "spring cloud config",
+    "spring-cloud-config",
+    "cloud config"
+   ],
+   "nota": "the Reference does NOT cover Spring Cloud Config; the only occurrence in the text (SBR p.857, Appendix F.1) is the name of the artifact log4j-spring-cloud-config-client, a managed version, not a description of the product. For remote configuration the book only carries the pluggable spring.config.import mechanism (SBR p.96).",
+   "encaminhar": "Spring Cloud Config documentation"
+  }
+ ],
+ "so_ponteiro": [
+  {
+   "termos": [
+    "circuit breaker",
+    "circuit breakers"
+   ],
+   "paginas": "464",
+   "nota": "mentioned in passing on p.464 (readiness probes: shared external systems, 'the application could have circuit breakers and fallbacks'); the Reference carries neither Resilience4j nor circuit breaker configuration."
+  },
+  {
+   "termos": [
+    "sleuth",
+    "spring cloud sleuth",
+    "zipkin"
+   ],
+   "paginas": "494,518",
+   "nota": "mentioned only in passing (Prometheus exemplars p.494; HTTP tracing p.518); no configuration."
+  },
+  {
+   "termos": [
+    "zookeeper"
+   ],
+   "paginas": "96,686,875",
+   "nota": "ZooKeeper appears as an example of an external config data source (p.96) and in Appendix F coordinates; not as part of Kafka configuration."
+  },
+  {
+   "termos": [
+    "dead letter",
+    "dead-letter",
+    "dlx",
+    "dead letter exchange"
+   ],
+   "paginas": "388",
+   "nota": "p.388: once retries are exhausted, the message is rejected and discarded or routed to a dead-letter exchange 'if the broker is configured'; the Reference does not carry how to declare a DLX/DLQ."
+  },
+  {
+   "termos": [
+    "auto-offset-reset",
+    "auto offset reset",
+    "offset"
+   ],
+   "paginas": "724",
+   "nota": "spring.kafka.consumer.auto-offset-reset exists in Appendix A (short description, no default); the Reference does not explain offset semantics."
+  },
+  {
+   "termos": [
+    "rest docs",
+    "autoconfigurerestdocs",
+    "spring rest docs"
+   ],
+   "paginas": "203-213",
+   "nota": "the package records only the pointer (@AutoConfigureRestDocs with MockMvc, WebTestClient and REST Assured, p.203-214)."
+  },
+  {
+   "termos": [
+    "spock"
+   ],
+   "paginas": "223",
+   "nota": "Spock 2.x cited in one paragraph (spock-spring); no details."
+  },
+  {
+   "termos": [
+    "geode",
+    "gemfire"
+   ],
+   "paginas": "314,344-345,404",
+   "nota": "Apache Geode only cited (Spring Boot for Apache Geode is a separate project)."
+  }
+ ],
+ "descricoes": {
+  "management.metrics.export.statsd.step": {
+   "d": "window used to compute windowed statistics such as max; the Reference says to align the step with the collector's scrape interval to benefit from them (default 1m)",
+   "ap": "792-793",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.statsd.polling-frequency": {
+   "d": "gauge polling frequency; on reading, the value is recomputed and sent if it changed (or always, if publish-unchanged-meters=true) (default 10s)",
+   "ap": "793",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.statsd.buffered": {
+   "d": "accumulates measurements before sending them to the StatsD server (default true)",
+   "ap": "792",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.statsd.max-packet-length": {
+   "d": "total size of a payload, which must fit in the network MTU (default 1400)",
+   "ap": "792",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.statsd.publish-unchanged-meters": {
+   "d": "also send unchanged meters (default true)",
+   "ap": "793",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.statsd.flavor": {
+   "d": "StatsD line protocol (default datadog)",
+   "ap": "792",
+   "corpo": "496-497"
+  },
+  "management.metrics.export.stackdriver.batch-size": {
+   "d": "number of measurements per request; if there are more, several requests are made (default 10000)",
+   "ap": "792",
+   "corpo": "496"
+  },
+  "management.metrics.export.stackdriver.step": {
+   "d": "reporting frequency (default 1m); the body shows 30s as an example",
+   "ap": "792",
+   "corpo": "496"
+  },
+  "management.metrics.export.stackdriver.project-id": {
+   "d": "identifier of the monitored Google Cloud project",
+   "ap": "792",
+   "corpo": "496"
+  },
+  "management.metrics.export.stackdriver.use-semantic-metric-types": {
+   "d": "false publishes counters as GAUGE; true as CUMULATIVE (default false)",
+   "ap": "792"
+  },
+  "management.metrics.export.stackdriver.resource-type": {
+   "d": "type of the monitored resource (default global)",
+   "ap": "792"
+  },
+  "management.metrics.export.wavefront.batch-size": {
+   "d": "number of measurements per request; if there are more, several requests (default 10000)",
+   "ap": "793",
+   "corpo": "497-498"
+  },
+  "management.metrics.export.wavefront.report-minute-distribution": {
+   "d": "report histogram distributions aggregated per minute (default true)",
+   "ap": "794"
+  },
+  "management.metrics.export.datadog.step": {
+   "d": "reporting frequency to Datadog (default 1m)",
+   "ap": "782",
+   "corpo": "482-483"
+  },
+  "management.metrics.export.datadog.api-key": {
+   "d": "Datadog API key",
+   "ap": "781",
+   "corpo": "482-483"
+  },
+  "management.metrics.export.datadog.application-key": {
+   "d": "application key; not mandatory, but improves the experience (sends descriptions, types and base units)",
+   "ap": "781",
+   "corpo": "482-483"
+  },
+  "management.metrics.export.datadog.uri": {
+   "d": "where to send; change it to publish to a Datadog site outside the US or to an internal proxy (default https://api.datadoghq.com)",
+   "ap": "782",
+   "corpo": "482-483"
+  },
+  "management.metrics.export.prometheus.descriptions": {
+   "d": "publish descriptions in the scrape payload; turn off to reduce the volume per scrape (default true)",
+   "ap": "790",
+   "corpo": "494"
+  },
+  "management.metrics.export.prometheus.histogram-flavor": {
+   "d": "histogram type for DistributionSummary and Timer (default prometheus)",
+   "ap": "790",
+   "corpo": "494"
+  },
+  "management.metrics.export.prometheus.pushgateway.enabled": {
+   "d": "publish via Prometheus Pushgateway (default false)",
+   "ap": "790",
+   "corpo": "494"
+  },
+  "management.metrics.export.prometheus.pushgateway.push-rate": {
+   "d": "metrics push frequency (default 1m)",
+   "ap": "790",
+   "corpo": "494"
+  },
+  "management.metrics.export.prometheus.pushgateway.shutdown-operation": {
+   "d": "operation performed on shutdown (default none)",
+   "ap": "791",
+   "corpo": "494"
+  },
+  "management.metrics.export.defaults.enabled": {
+   "d": "turns all default exporters on/off (default true)",
+   "ap": "782",
+   "corpo": "479"
+  },
+  "management.metrics.use-global-registry": {
+   "d": "bind the auto-configured MeterRegistry instances to the global static Metrics registry; in tests use false to isolate (default true)",
+   "ap": "795",
+   "corpo": "479"
+  },
+  "management.metrics.web.server.request.metric-name": {
+   "d": "name of the meter for received requests (default http.server.requests)",
+   "ap": "796",
+   "corpo": "499-501"
+  },
+  "management.metrics.web.client.request.metric-name": {
+   "d": "name of the meter for sent requests (default http.client.requests)",
+   "ap": "795",
+   "corpo": "501-502"
+  },
+  "management.metrics.web.server.max-uri-tags": {
+   "d": "maximum number of distinct values of the uri tag; above it new metrics are denied by a filter (default 100)",
+   "ap": "795",
+   "corpo": "499-501"
+  },
+  "management.metrics.system.diskspace.paths": {
+   "d": "paths for which to report disk metrics (default .)",
+   "ap": "794"
+  },
+  "management.metrics.tags.*": {
+   "d": "common tags applied to every meter",
+   "ap": "794",
+   "corpo": "515"
+  },
+  "management.metrics.enable.*": {
+   "d": "turns meters on/off by name prefix; the longest match wins; the key all applies to everything",
+   "ap": "779",
+   "corpo": "515-516"
+  },
+  "management.metrics.distribution.percentiles-histogram.*": {
+   "d": "publish percentile histograms (aggregable) for meters with the name prefix; only takes effect on systems that support them",
+   "ap": "779",
+   "corpo": "515-516"
+  },
+  "management.metrics.distribution.slo.*": {
+   "d": "SLO limits by name prefix; one counter per limit is published",
+   "ap": "779",
+   "corpo": "515-516"
+  },
+  "management.endpoint.health.show-details": {
+   "d": "when to show health details: never, when-authorized or always (default never)",
+   "ap": "771",
+   "corpo": "454"
+  },
+  "management.endpoint.health.show-components": {
+   "d": "when to show the components; if absent show-details applies",
+   "ap": "771",
+   "corpo": "454"
+  },
+  "management.endpoint.health.roles": {
+   "d": "roles that authorize seeing details; empty = every authenticated user is authorized",
+   "ap": "771",
+   "corpo": "454"
+  },
+  "management.endpoint.health.status.order": {
+   "d": "severity order of the statuses (default DOWN, OUT_OF_SERVICE, UP, UNKNOWN)",
+   "ap": "771",
+   "corpo": "457-458"
+  },
+  "management.endpoint.health.status.http-mapping.*": {
+   "d": "map of health status to HTTP code; by default DOWN and OUT_OF_SERVICE give 503",
+   "ap": "771",
+   "corpo": "457-458"
+  },
+  "management.endpoint.health.logging.slow-indicator-threshold": {
+   "d": "time from which a slow indicator generates a log warning (default 10s)",
+   "ap": "771",
+   "corpo": "457"
+  },
+  "management.endpoint.health.probes.enabled": {
+   "d": "turns the liveness/readiness groups on in any environment (default false; turned on by themselves only on Kubernetes)",
+   "ap": "771",
+   "corpo": "462-463"
+  },
+  "management.endpoint.health.probes.add-additional-paths": {
+   "d": "publishes liveness and readiness on the main port at /livez and /readyz (default false)",
+   "ap": "771",
+   "corpo": "463"
+  },
+  "management.endpoint.health.group.*": {
+   "d": "health groups (include, exclude, show-details, roles, status, additional-path)",
+   "ap": "771",
+   "corpo": "460-462"
+  },
+  "management.health.diskspace.threshold": {
+   "d": "minimum free space required by the diskspace indicator (default 10MB)",
+   "ap": "776"
+  },
+  "management.health.db.ignore-routing-data-sources": {
+   "d": "ignore AbstractRoutingDataSource when building the database indicators (default false)",
+   "ap": "776",
+   "corpo": "462"
+  },
+  "management.endpoint.logfile.external-file": {
+   "d": "external log file to serve, useful when the log goes out through redirection and not through the logging system",
+   "ap": "772"
+  },
+  "management.endpoint.env.keys-to-sanitize": {
+   "d": "masked keys (replaces the defaults); accepts simple suffixes or regex",
+   "ap": "770",
+   "corpo": "639-640"
+  },
+  "management.endpoint.env.additional-keys-to-sanitize": {
+   "d": "masked keys in addition to the defaults (sum)",
+   "ap": "770",
+   "corpo": "639-640"
+  },
+  "management.endpoint.configprops.keys-to-sanitize": {
+   "d": "masked keys in configprops (replaces the defaults)",
+   "ap": "770",
+   "corpo": "639-640"
+  },
+  "management.endpoint.configprops.additional-keys-to-sanitize": {
+   "d": "masked keys in configprops in addition to the defaults (sum)",
+   "ap": "770",
+   "corpo": "639-640"
+  },
+  "management.endpoints.web.cors.allowed-origins": {
+   "d": "allowed origins; without origins or origin-patterns CORS is off; with credentials * cannot be used",
+   "ap": "775",
+   "corpo": "449-450"
+  },
+  "management.endpoints.web.cors.allowed-methods": {
+   "d": "allowed methods; when absent only GET applies",
+   "ap": "774",
+   "corpo": "449-450"
+  },
+  "management.endpoints.web.cors.max-age": {
+   "d": "cache time of the pre-flight response (default 1800s)",
+   "ap": "775",
+   "corpo": "449-450"
+  },
+  "management.endpoints.web.base-path": {
+   "d": "prefix of the web endpoints (default /actuator); relative to the context-path (or the WebFlux base-path), or to management.server.base-path when there is its own port",
+   "ap": "774",
+   "corpo": "470"
+  },
+  "management.endpoints.web.path-mapping.*": {
+   "d": "maps the ID of an endpoint to another path",
+   "ap": "775",
+   "corpo": "470"
+  },
+  "management.endpoints.web.exposure.include": {
+   "d": "IDs of endpoints exposed on the web, or * for all (default only health)",
+   "ap": "775",
+   "corpo": "443-445"
+  },
+  "management.endpoints.web.exposure.exclude": {
+   "d": "IDs excluded from exposure; exclude beats include",
+   "ap": "775",
+   "corpo": "443-445"
+  },
+  "management.endpoints.jmx.exposure.include": {
+   "d": "IDs exposed over JMX (default *)",
+   "ap": "773",
+   "corpo": "443-445"
+  },
+  "management.endpoints.jmx.domain": {
+   "d": "JMX domain of the endpoints (default org.springframework.boot; falls back to spring.jmx.default-domain if set)",
+   "ap": "773",
+   "corpo": "474-475"
+  },
+  "management.info.git.mode": {
+   "d": "how to expose git.properties: simple (default) or full",
+   "ap": "777",
+   "corpo": "467"
+  },
+  "management.server.port": {
+   "d": "HTTP port of the management endpoints (default the same as the application); -1 turns HTTP off",
+   "ap": "796",
+   "corpo": "471-473"
+  },
+  "management.server.address": {
+   "d": "bind address of management; requires its own port",
+   "ap": "796",
+   "corpo": "473"
+  },
+  "management.trace.http.include": {
+   "d": "items included in the HTTP trace (default request-headers without Authorization and Cookie, response-headers without Set-Cookie, and time)",
+   "ap": "797",
+   "corpo": "518"
+  },
+  "server.port": {
+   "d": "HTTP port of the server (default 8080); 0 = random; -1 turns HTTP off keeping the context",
+   "ap": "757",
+   "corpo": "275, 571-572"
+  },
+  "server.shutdown": {
+   "d": "supported shutdown type: immediate (default) or graceful",
+   "ap": "759",
+   "corpo": "300-301"
+  },
+  "server.compression.enabled": {
+   "d": "turns response compression on (default false)",
+   "ap": "754",
+   "corpo": "572-573"
+  },
+  "server.compression.min-response-size": {
+   "d": "minimum Content-Length size to compress (default 2KB)",
+   "ap": "754",
+   "corpo": "572-573"
+  },
+  "server.http2.enabled": {
+   "d": "turns HTTP/2 on if the environment supports it (default false); h2 with SSL, h2c without SSL",
+   "ap": "755",
+   "corpo": "574-575"
+  },
+  "server.forward-headers-strategy": {
+   "d": "how to handle the X-Forwarded-* headers: NATIVE, FRAMEWORK or NONE (default NATIVE on Cloud Foundry, Heroku and Kubernetes; NONE otherwise)",
+   "ap": "755",
+   "corpo": "580-582"
+  },
+  "server.tomcat.redirect-context-root": {
+   "d": "redirect requests to the context root by appending / (default true); with SSL terminated at the proxy set false",
+   "ap": "763",
+   "corpo": "581"
+  },
+  "server.tomcat.remoteip.internal-proxies": {
+   "d": "regex of trusted proxies; the default covers private ranges and loopback (10.x, 192.168.x, 169.254.x, 127.x, 100.64-127, 172.16-31 and ::1); empty trusts everyone (not in production)",
+   "ap": "764",
+   "corpo": "581-582"
+  },
+  "server.tomcat.remoteip.remote-ip-header": {
+   "d": "header from which to extract the remote IP (e.g. X-Forwarded-For); setting this or protocol-header turns the RemoteIpValve on",
+   "ap": "764",
+   "corpo": "581, 643"
+  },
+  "server.tomcat.remoteip.protocol-header": {
+   "d": "header with the incoming protocol (usually X-Forwarded-Proto); setting this or remote-ip-header turns the RemoteIpValve on",
+   "ap": "764",
+   "corpo": "581, 643"
+  },
+  "server.tomcat.threads.max": {
+   "d": "maximum number of Tomcat worker threads (default 200)",
+   "ap": "764"
+  },
+  "server.tomcat.accept-count": {
+   "d": "maximum size of the connection queue when all threads are busy (default 100)",
+   "ap": "760"
+  },
+  "server.tomcat.max-connections": {
+   "d": "maximum number of connections accepted and processed at the same time (default 8192)",
+   "ap": "762"
+  },
+  "server.tomcat.basedir": {
+   "d": "Tomcat base directory; without a value it uses a temporary directory (relevant for the access logs)",
+   "ap": "762",
+   "corpo": "579"
+  },
+  "server.tomcat.mbeanregistry.enabled": {
+   "d": "turns the Tomcat MBean Registry on (default false); required for the tomcat.* meters",
+   "ap": "763",
+   "corpo": "585"
+  },
+  "server.tomcat.accesslog.enabled": {
+   "d": "turns the Tomcat access log on (default false)",
+   "ap": "761",
+   "corpo": "579"
+  },
+  "server.undertow.accesslog.enabled": {
+   "d": "turns the Undertow access log on (default false)",
+   "ap": "765",
+   "corpo": "579-580"
+  },
+  "server.jetty.accesslog.enabled": {
+   "d": "turns the Jetty access log on (default false); without filename it goes to System.err",
+   "ap": "755",
+   "corpo": "580"
+  },
+  "server.servlet.session.timeout": {
+   "d": "session timeout (default 30m); without a duration suffix, seconds",
+   "ap": "759"
+  },
+  "server.servlet.register-default-servlet": {
+   "d": "register the default Servlet in the container (default false)",
+   "ap": "758",
+   "corpo": "275"
+  },
+  "server.servlet.encoding.mapping.*": {
+   "d": "map of locale to response charset",
+   "ap": "758",
+   "corpo": "279"
+  },
+  "server.error.include-stacktrace": {
+   "d": "when to include the trace attribute in the error response (default never)",
+   "ap": "755"
+  },
+  "server.error.whitelabel.enabled": {
+   "d": "default error page for browsers (default true)",
+   "ap": "755",
+   "corpo": "639"
+  },
+  "spring.data.cassandra.contact-points": {
+   "d": "addresses of the cluster nodes in host:port format, or just host to use the configured port (default [127.0.0.1:9042])",
+   "ap": "682",
+   "corpo": "361-362"
+  },
+  "spring.data.cassandra.local-datacenter": {
+   "d": "name of the driver's local datacenter; the book usually gives keyspace-name, contact-points and the local datacenter together",
+   "ap": "682",
+   "corpo": "361-362"
+  },
+  "spring.jpa.hibernate.ddl-auto": {
+   "d": "Hibernate DDL behavior; default create-drop with an embedded database without a schema manager, none in the other cases",
+   "ap": "",
+   "corpo": "617, 629"
+  },
+  "spring.sql.init.mode": {
+   "d": "when to run schema.sql/data.sql: embedded (default), always or never",
+   "ap": "",
+   "corpo": "629-630"
+  },
+  "spring.jpa.defer-datasource-initialization": {
+   "d": "defers initialization by SQL scripts until after Hibernate creates the schema (default false)",
+   "ap": "",
+   "corpo": "630"
+  },
+  "spring.ldap.embedded.base-dn": {
+   "d": "base DN(s) of the embedded LDAP server (UnboundID); several entries require a list (YAML) or an index [0],[1] (properties)",
+   "ap": "",
+   "corpo": "369-370"
+  },
+  "spring.security.filter.dispatcher-types": {
+   "d": "dispatcher types of the security filter (default async, error, request)",
+   "ap": "767",
+   "corpo": "272"
+  },
+  "spring.devtools.restart.enabled": {
+   "d": "turns automatic restart on (default true)",
+   "ap": "798",
+   "corpo": "62-63"
+  },
+  "spring.devtools.restart.poll-interval": {
+   "d": "interval between checks for classpath changes (default 1s)",
+   "ap": "798",
+   "corpo": "66-67"
+  },
+  "spring.devtools.restart.quiet-period": {
+   "d": "time without changes required before restarting (default 400ms)",
+   "ap": "798",
+   "corpo": "66-67"
+  },
+  "management.metrics.export.atlas.lwc-step": {
+   "d": "step (frequency) of streaming to Atlas LWC, the highest resolution of the on-demand stream; Reference rule: it must be less than or equal to atlas.step AND atlas.step must be an even (integer) multiple of lwc-step; e.g. step 1m with lwc-step 7s violates it (60/7 is not an integer) (default 5s)",
+   "ap": "781",
+   "corpo": "482"
+  },
+  "management.metrics.export.atlas.lwc-enabled": {
+   "d": "turns streaming to Atlas LWC on (default false)",
+   "ap": "780",
+   "corpo": "482"
+  },
+  "management.metrics.export.atlas.lwc-ignore-publish-step": {
+   "d": "ignores in streaming the expressions with the same step as the normal publication to Atlas, for when the data already goes to Atlas (default true)",
+   "ap": "781",
+   "corpo": "482"
+  },
+  "management.metrics.export.atlas.meter-time-to-live": {
+   "d": "lifetime of a meter with no activity: after the period it expires and is no longer reported (default 15m)",
+   "ap": "781"
+  },
+  "management.metrics.export.atlas.batch-size": {
+   "d": "measurements per request; if there are more, several requests (default 10000); for Atlas it is on p.780 and for Datadog on p.782",
+   "ap": "780"
+  },
+  "management.metrics.export.atlas.config-time-to-live": {
+   "d": "lifetime of the subscriptions coming from the LWC service (default 150s)",
+   "ap": "780"
+  },
+  "management.metrics.export.atlas.config-refresh-frequency": {
+   "d": "frequency of refreshing the configuration from the LWC service (default 10s)",
+   "ap": "780"
+  },
+  "management.metrics.export.atlas.step": {
+   "d": "Atlas step (reporting frequency); must be an even multiple of lwc-step (default 1m)",
+   "ap": "781",
+   "corpo": "482"
+  },
+  "management.metrics.export.datadog.batch-size": {
+   "d": "measurements per request; if there are more, several requests (default 10000)",
+   "ap": "782",
+   "corpo": "482-483"
+  },
+  "server.undertow.max-headers": {
+   "d": "maximum number of headers accepted, a limit against hash collision attacks; NO published default: the default cell is empty in Appendix A (confirmed on p.766)",
+   "ap": "766",
+   "sem_default": true
+  },
+  "server.undertow.max-parameters": {
+   "d": "maximum number of query/path parameters, a limit against hash collisions; NO published default (empty cell, p.766)",
+   "ap": "766",
+   "sem_default": true
+  },
+  "server.undertow.threads.io": {
+   "d": "worker I/O threads; NO value in the default column: the description only says it is derived from the number of available processors (p.766)",
+   "ap": "766",
+   "sem_default": true
+  },
+  "server.undertow.no-request-timeout": {
+   "d": "idle time of a connection without processing a request before it is closed; NO published default (empty cell, p.766)",
+   "ap": "766",
+   "sem_default": true
+  },
+  "server.undertow.threads.worker": {
+   "d": "worker threads; the default is IN THE DESCRIPTION, not in the column: 8 times the number of I/O threads (p.766)",
+   "ap": "766",
+   "default_na_descricao": true
+  },
+  "spring.servlet.multipart.file-size-threshold": {
+   "d": "threshold from which received files are written to disk (default 0B: everything goes to disk; derived reading)",
+   "ap": "742",
+   "corpo": "591"
+  },
+  "spring.servlet.multipart.max-file-size": {
+   "d": "maximum size of each file (default 1MB; -1 = unlimited)",
+   "ap": "742",
+   "corpo": "591"
+  },
+  "spring.servlet.multipart.max-request-size": {
+   "d": "maximum size of the request (default 10MB)",
+   "ap": "742",
+   "corpo": "591"
+  },
+  "spring.activemq.pool.block-if-full": {
+   "d": "when the pool is full and someone asks for a connection: blocks (true) or throws \"JMSException\" (false)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.block-if-full-timeout": {
+   "d": "maximum blocking time before throwing an exception if the pool is still full (the book's description does not explicitly condition it on block-if-full; the natural reading is that it matters when you choose to block) (default -1ms)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.enabled": {
+   "d": "turns on the use of a JmsPoolConnectionFactory in place of the plain ConnectionFactory (default false)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.idle-timeout": {
+   "d": "idle time of a pool connection (default 30s)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.max-connections": {
+   "d": "maximum number of connections in the pool (default 1)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.max-sessions-per-connection": {
+   "d": "maximum number of sessions per connection in the pool (default 500)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.time-between-expiration-check": {
+   "d": "interval between runs of the thread that removes idle connections; a negative value = no removal thread runs (default -1ms)",
+   "ap": "716"
+  },
+  "spring.activemq.pool.use-anonymous-producers": {
+   "d": "uses a single shared anonymous MessageProducer (default true)",
+   "ap": "717"
+  },
+  "spring.artemis.pool.block-if-full": {
+   "d": "when the pool is full and someone asks for a connection: blocks (true) or throws \"JMSException\" (false)",
+   "ap": "717"
+  },
+  "spring.artemis.pool.block-if-full-timeout": {
+   "d": "maximum blocking time before throwing an exception if the pool is still full (the book's description does not explicitly condition it on block-if-full; the natural reading is that it matters when you choose to block) (default -1ms)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.enabled": {
+   "d": "turns on the use of a JmsPoolConnectionFactory in place of the plain ConnectionFactory (default false)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.idle-timeout": {
+   "d": "idle time of a pool connection (default 30s)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.max-connections": {
+   "d": "maximum number of connections in the pool (default 1)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.max-sessions-per-connection": {
+   "d": "maximum number of sessions per connection in the pool (default 500)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.time-between-expiration-check": {
+   "d": "interval between runs of the thread that removes idle connections; a negative value = no removal thread runs (default -1ms)",
+   "ap": "718"
+  },
+  "spring.artemis.pool.use-anonymous-producers": {
+   "d": "uses a single shared anonymous MessageProducer (default true)",
+   "ap": "718"
+  },
+  "spring.rabbitmq.port": {
+   "d": "RabbitMQ port; ignored if addresses is set; the default is IN THE DESCRIPTION (empty column): 5672, or 5671 with SSL on (p.735)",
+   "ap": "735",
+   "default_na_descricao": true
+  },
+  "spring.jta.atomikos.properties.log-base-dir": {
+   "d": "directory where the Atomikos transaction log files are kept; the default is IN THE DESCRIPTION (empty column): the current working directory (p.707)",
+   "ap": "707",
+   "default_na_descricao": true
+  },
+  "spring.task.scheduling.thread-name-prefix": {
+   "d": "prefix of the task scheduler thread names; the default is \"scheduling-\"",
+   "ap": "676",
+   "corpo": "154"
+  },
+  "spring.cache.redis.time-to-live": {
+   "d": "expiration of cache entries; by default entries NEVER expire (the 'default' is written in the description; the default column is empty)",
+   "ap": "677",
+   "corpo": "409",
+   "default_na_descricao": true
+  },
+  "management.metrics.export.influx.retention-duration": {
+   "d": "period for which Influx retains data in the current database; the '7d' that appears in the description is only an EXAMPLE of a duration format, not a default; InfluxDB v1 only",
+   "ap": "787",
+   "sem_default": true
+  },
+  "management.metrics.export.influx.retention-policy": {
+   "d": "retention policy to use; if not given, Influx writes to the DEFAULT retention policy (server behavior described, not a property value); InfluxDB v1 only",
+   "ap": "788",
+   "sem_default": true
+  },
+  "management.metrics.export.appoptics.api-token": {
+   "d": "AppOptics API token, used to authenticate the sending of metrics; Appendix A does not publish a default value (empty cell), so it must be provided when the backend is on [inference about being mandatory; the book only describes it as the token]",
+   "ap": "779",
+   "corpo": "481"
+  },
+  "management.metrics.export.appoptics.batch-size": {
+   "d": "how many measurements per request; if there are more, several requests are made (default 500)",
+   "ap": "779"
+  },
+  "management.metrics.export.appoptics.connect-timeout": {
+   "d": "maximum time to connect to the backend in requests (default 5s)",
+   "ap": "779"
+  },
+  "management.metrics.export.appoptics.enabled": {
+   "d": "turns metrics export to this backend on/off (default true)",
+   "ap": "779"
+  },
+  "management.metrics.export.appoptics.floor-times": {
+   "d": "sends the time rounded down (aligns measurements from several hosts to the same time boundary) (default false)",
+   "ap": "780"
+  },
+  "management.metrics.export.appoptics.host-tag": {
+   "d": "tag that is mapped to the \"@host\" attribute when sending metrics to AppOptics (default instance)",
+   "ap": "780"
+  },
+  "management.metrics.export.appoptics.read-timeout": {
+   "d": "maximum time to read the backend response (default 10s)",
+   "ap": "780"
+  },
+  "management.metrics.export.appoptics.step": {
+   "d": "reporting interval (sending frequency) (default 1m)",
+   "ap": "780"
+  },
+  "management.metrics.export.appoptics.uri": {
+   "d": "URL of the AppOptics endpoint to which the metrics are sent (default https://api.appoptics.com/v1/measurements)",
+   "ap": "780"
+  },
+  "spring.quartz.auto-startup": {
+   "d": "starts the scheduler automatically after initialization (default true)",
+   "ap": "674",
+   "corpo": "415-416"
+  },
+  "spring.quartz.jdbc.comment-prefix": {
+   "d": "single-line comment prefixes in the initialization SQL scripts (default [#, --])",
+   "ap": "674",
+   "corpo": "415-416"
+  },
+  "spring.quartz.jdbc.initialize-schema": {
+   "d": "Quartz schema initialization mode: embedded (default) or always (book example); the book warns that the default Quartz scripts DROP tables and triggers on every restart (p.416)",
+   "ap": "674",
+   "corpo": "415-416"
+  },
+  "spring.quartz.jdbc.platform": {
+   "d": "platform used in the @@platform@@ placeholder of the initialization scripts; detected automatically by default (no published value)",
+   "ap": "674",
+   "corpo": "416"
+  },
+  "spring.quartz.jdbc.schema": {
+   "d": "path of the SQL script that initializes the schema (default: the Quartz tables_@@platform@@.sql scripts on the classpath)",
+   "ap": "675",
+   "corpo": "416"
+  },
+  "spring.quartz.job-store-type": {
+   "d": "Quartz job store type: memory (default) or jdbc (requires a DataSource)",
+   "ap": "675",
+   "corpo": "415"
+  },
+  "spring.quartz.overwrite-existing-jobs": {
+   "d": "whether jobs defined by configuration overwrite those already saved in the persistent store (default false)",
+   "ap": "675",
+   "corpo": "416"
+  },
+  "spring.quartz.properties.*": {
+   "d": "map of additional properties passed to the Quartz scheduler; this is where advanced Quartz configuration goes (p.416); the native Quartz names (thread pool, misfire etc.) are NOT in the book: citing them is [extrapolation]; spring.quartz.thread-pool-size and spring.quartz.misfire-threshold do NOT exist in Appendix A",
+   "ap": "675",
+   "corpo": "416"
+  },
+  "spring.quartz.scheduler-name": {
+   "d": "scheduler name (default quartzScheduler)",
+   "ap": "675"
+  },
+  "spring.quartz.startup-delay": {
+   "d": "delay to start the scheduler after initialization finishes; useful if no job should run before the application is fully up (default 0s)",
+   "ap": "675"
+  },
+  "spring.quartz.wait-for-jobs-to-complete-on-shutdown": {
+   "d": "wait for running jobs to finish on shutdown (default false)",
+   "ap": "675"
+  },
+  "spring.devtools.remote.secret": {
+   "d": "shared secret required to establish the remote connection; enables remote support (and the server endpoint) when set; no published default; the client reads it from the properties on the same classpath",
+   "ap": "798",
+   "corpo": "68-69"
+  },
+  "spring.devtools.remote.secret-header-name": {
+   "d": "HTTP header in which the secret travels (default X-AUTH-TOKEN)",
+   "ap": "798",
+   "corpo": "68-69"
+  },
+  "spring.devtools.remote.proxy.host": {
+   "d": "proxy host used by the remote client to reach the remote application; no published default",
+   "ap": "798",
+   "corpo": "69"
+  },
+  "spring.devtools.remote.proxy.port": {
+   "d": "proxy port used by the remote client; no published default",
+   "ap": "798",
+   "corpo": "69"
+  },
+  "spring.devtools.remote.context-path": {
+   "d": "context path that serves the remote connection (default /.~~spring-boot!~)",
+   "ap": "797",
+   "corpo": "68"
+  },
+  "spring.devtools.remote.restart.enabled": {
+   "d": "turns remote restart on (default true)",
+   "ap": "798",
+   "corpo": "69"
+  },
+  "debug": {
+   "d": "debug mode: with --debug (or debug=true) some core loggers (embedded container, Hibernate, Spring Boot) emit more information; it does not put the whole application in DEBUG (default false)",
+   "ap": "668",
+   "corpo": "138-139"
+  },
+  "trace": {
+   "d": "trace mode: with --trace (or trace=true) turns on trace logging of some core loggers (embedded container, Hibernate schema generation, the whole Spring portfolio) (default false; line at the end of table A.1, p.676)",
+   "ap": "676",
+   "corpo": "139"
+  },
+  "spring.kafka.streams.application-id": {
+   "d": "application.id of Kafka Streams; the Default column is empty, but the Appendix A description refers to spring.application.name as the default (the body repeats this)",
+   "ap": "730",
+   "corpo": "391",
+   "default_na_descricao": true
+  },
+  "spring.webflux.multipart.file-storage-directory": {
+   "d": "directory where parts larger than max-in-memory-size are kept; default: folder \"spring-multipart\" under the system temporary directory; ignored with streaming=true",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.max-in-memory-size": {
+   "d": "maximum memory per part before writing to disk (default 256KB; -1 = everything in memory); ignored with streaming=true",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.max-disk-usage-per-part": {
+   "d": "maximum disk space per part (default -1B = no limit); ignored with streaming=true",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.max-parts": {
+   "d": "maximum number of parts per multipart request (default -1 = no limit)",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.max-headers-size": {
+   "d": "maximum memory per header section of each part (default 10KB; -1 = no limit)",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.headers-charset": {
+   "d": "charset used to decode headers (default UTF-8)",
+   "ap": "747"
+  },
+  "spring.webflux.multipart.streaming": {
+   "d": "if true, reads straight from the input buffer, without keeping it in memory or in a file (default false = not streaming)",
+   "ap": "747"
+  },
+  "spring.datasource.name": {
+   "d": "datasource name, used ONLY if generate-unique-name=false; default \"testdb\" with an embedded database, otherwise null",
+   "ap": "691"
+  },
+  "spring.datasource.jndi-name": {
+   "d": "JNDI location of the datasource; when set, class, url, username and password are ignored",
+   "ap": "691",
+   "corpo": "326"
+  },
+  "spring.datasource.generate-unique-name": {
+   "d": "generates a random name for the datasource (default true); with true, spring.datasource.name is not used",
+   "ap": "689"
+  },
+  "management.metrics.export.ganglia.time-to-live": {
+   "d": "Ganglia multicast TTL: must be one above the number of hops (routers) between the hosts, i.e. hops+1 (default 1)",
+   "ap": "785",
+   "corpo": "487"
+  },
+  "management.metrics.export.ganglia.addressing-mode": {
+   "d": "UDP addressing mode, unicast or multicast (default multicast)",
+   "ap": "785"
+  },
+  "management.metrics.export.graphite.graphite-tags-enabled": {
+   "d": "uses Graphite tags instead of hierarchical naming; no default in the column: on by default unless tags-as-prefix is set",
+   "ap": "785-786"
+  },
+  "management.metrics.export.graphite.tags-as-prefix": {
+   "d": "in hierarchical naming, turns the listed tag keys into part of the metric prefix; ignored if graphite-tags-enabled is true (default empty list)",
+   "ap": "786"
+  },
+  "spring.redis.jedis.pool.enabled": {
+   "d": "turns the connection pool on; enables itself if commons-pool2 is on the classpath; in Jedis the pool is implicitly on in sentinel mode and this key only applies to a single node",
+   "ap": "702",
+   "corpo": "346"
+  },
+  "spring.redis.jedis.pool.max-active": {
+   "d": "maximum connections allocated at the same time by the pool; negative value = no limit (default 8)",
+   "ap": "702",
+   "corpo": "346"
+  },
+  "spring.redis.jedis.pool.max-idle": {
+   "d": "maximum idle connections in the pool; negative value = unlimited (default 8)",
+   "ap": "702",
+   "corpo": "346"
+  },
+  "spring.redis.jedis.pool.max-wait": {
+   "d": "maximum time that allocating a connection blocks before throwing an exception when the pool is exhausted; negative value = blocks indefinitely (default -1ms)",
+   "ap": "702",
+   "corpo": "346"
+  },
+  "spring.redis.jedis.pool.min-idle": {
+   "d": "minimum target of idle connections kept in the pool; only takes effect if it and time-between-eviction-runs are positive (default 0)",
+   "ap": "703",
+   "corpo": "346"
+  },
+  "spring.redis.jedis.pool.time-between-eviction-runs": {
+   "d": "interval between runs of the thread that evicts idle connections; positive turns the thread on, otherwise there is no eviction (no published default)",
+   "ap": "703",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.enabled": {
+   "d": "turns the connection pool on; enables itself if commons-pool2 is on the classpath",
+   "ap": "703",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.max-active": {
+   "d": "maximum connections allocated at the same time by the pool; negative value = no limit (default 8)",
+   "ap": "703",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.max-idle": {
+   "d": "maximum idle connections in the pool; negative value = unlimited (default 8)",
+   "ap": "703",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.max-wait": {
+   "d": "maximum time that allocating a connection blocks before throwing an exception when the pool is exhausted; negative value = blocks indefinitely (default -1ms)",
+   "ap": "704",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.min-idle": {
+   "d": "minimum target of idle connections kept in the pool; only takes effect if it and time-between-eviction-runs are positive (default 0)",
+   "ap": "704",
+   "corpo": "346"
+  },
+  "spring.redis.lettuce.pool.time-between-eviction-runs": {
+   "d": "interval between runs of the thread that evicts idle connections; positive turns the thread on, otherwise there is no eviction (no published default)",
+   "ap": "704",
+   "corpo": "346"
+  },
+  "spring.messages.use-code-as-default-message": {
+   "d": "uses the message code itself as the default message instead of throwing NoSuchMessageException when the code is not resolved; recommended only in development (default false)",
+   "ap": "674",
+   "corpo": "147"
+  },
+  "spring.redis.lettuce.cluster.refresh.adaptive": {
+   "d": "uses adaptive refresh of the cluster topology with all available refresh triggers (default false)",
+   "ap": "703"
+  },
+  "spring.redis.lettuce.cluster.refresh.dynamic-refresh-sources": {
+   "d": "discovers and queries all cluster nodes to obtain the topology; with false only the initial seed nodes are the source (default true)",
+   "ap": "703"
+  },
+  "spring.activemq.send-timeout": {
+   "d": "time to wait for a response when sending messages; 0 means wait forever (default 0ms)",
+   "ap": "717"
+  },
+  "spring.activemq.non-blocking-redelivery": {
+   "d": "if true, stops delivery before redelivering messages of a rolled-back transaction; implies that message order is NOT preserved (default false)",
+   "ap": "716"
+  },
+  "spring.rabbitmq.channel-rpc-timeout": {
+   "d": "continuation timeout of RPC calls on channels; zero means wait forever (default 10m)",
+   "ap": "732"
+  },
+  "spring.rabbitmq.connection-timeout": {
+   "d": "connection timeout; zero means wait forever (the default column is empty)",
+   "ap": "732"
+  },
+  "spring.rabbitmq.requested-channel-max": {
+   "d": "number of channels per connection requested by the client; 0 means unlimited (default 2047)",
+   "ap": "735"
+  },
+  "spring.jdbc.template.fetch-size": {
+   "d": "rows fetched from the database each time needed; -1 uses the JDBC driver's default setting (default -1)",
+   "ap": "696"
+  },
+  "spring.jdbc.template.max-rows": {
+   "d": "maximum rows; -1 uses the JDBC driver's default setting (default -1)",
+   "ap": "696"
+  },
+  "server.tomcat.keep-alive-timeout": {
+   "d": "wait for another HTTP request before closing the connection; without a value it uses the connectionTimeout; -1 means no timeout",
+   "ap": "762"
+  },
+  "server.tomcat.processor-cache": {
+   "d": "maximum idle processors kept in cache; -1 leaves the cache unlimited (theoretical ceiling = maximum threads, according to the Appendix A description)",
+   "ap": "763"
+  },
+  "server.undertow.max-http-post-size": {
+   "d": "maximum size of the HTTP POST content; -1 (the default) means unlimited",
+   "ap": "766"
+  }
+ },
+ "descricoes_nota": "Short paraphrases (from the package, not from the book) of the meaning of Appendix A properties; 'ap' = Appendix A page(s) where the key, description and default are; 'corpo' = page(s) of the Reference body that describe the subject. Properties without an entry here: the package keeps only key+default; read the description on the Appendix A page.",
+ "contexto_pagina": [
+  {
+   "termos": [
+    "dependency management",
+    "dependency-management"
+   ],
+   "paginas": "544-545",
+   "rotulo": "CLI Custom Dependency Management (@Grab/@DependencyManagementBom)",
+   "nota": "p.544-545 is Spring Boot CLI context, NOT overriding a version in Maven/Gradle. To override a managed version: SBR p.42 (NOTE) and Appendix F.2, table of *.version properties, SBR p.876-881 (e.g. hibernate.version p.878); for the CLI: references/12."
+  }
+ ],
+ "sinonimos": [
+  {
+   "termos": [
+    "merge list map",
+    "merge list",
+    "merge lists",
+    "merge map",
+    "merge maps",
+    "list merge",
+    "map merge",
+    "merge de lista",
+    "merge de mapa",
+    "merge de listas",
+    "mesclar lista",
+    "mesclar listas",
+    "mesclar mapa",
+    "mesclar mapas",
+    "mesclagem",
+    "mesclagem de lista",
+    "mesclagem de mapa",
+    "mesclagem de listas",
+    "lista substituida",
+    "listas substituidas",
+    "list override",
+    "list replace",
+    "merging lists",
+    "merging maps"
+   ],
+   "alias": "merging complex types",
+   "nota": "the Reference treats list/map merging under the title 'Merging Complex Types' (SBR p.117-121); the query was mapped to it."
+  },
+  {
+   "termos": [
+    "custom slice",
+    "custom slices",
+    "slice customizado",
+    "slice próprio",
+    "slice propria",
+    "slice própria",
+    "anotação de slice própria",
+    "custom slice annotation"
+   ],
+   "alias": "slice annotation",
+   "nota": "the Reference treats customizing a slice annotation or @AutoConfigure... meta-annotated with @ImportAutoConfiguration on SBR p.219 (it does not use the expression 'custom slice'); the query was mapped to 'slice annotation'."
+  },
+  {
+   "termos": [
+    "env-prefix",
+    "env prefix",
+    "environment prefix",
+    "environment-prefix",
+    "env prefixo",
+    "prefixo de variaveis de ambiente",
+    "prefixo de variáveis de ambiente",
+    "prefixo de ambiente",
+    "prefix for environment properties",
+    "setenvironmentprefix"
+   ],
+   "alias": "system environment properties",
+   "nota": "the Reference treats the system environment variable prefix in section 7.2.7 'Configuring System Environment Properties' (SBR p.103; it does not use the word 'env-prefix'); the query was mapped to it."
+  },
+  {
+   "termos": [
+    "port 8080 was already in use",
+    "port already in use",
+    "port was already in use",
+    "porta 8080 em uso",
+    "porta em uso",
+    "address already in use",
+    "port in use"
+   ],
+   "alias": "port 8080 was already",
+   "nota": "the Reference carries the 'APPLICATION FAILED TO START' block with the message that port 8080 is already in use (SBR p.73); the query was mapped to it."
+  },
+  {
+   "termos": [
+    "import twice",
+    "import order",
+    "import duplicado",
+    "ordem do import",
+    "ordem de import",
+    "spring.config.import order",
+    "imported once"
+   ],
+   "alias": "spring.config.import",
+   "nota": "the Reference treats the order and repetition of spring.config.import in 'Importing Additional Data' (SBR p.94-95); the query was mapped to spring.config.import."
+  },
+  {
+   "termos": [
+    "redis pool",
+    "redis pools",
+    "redis connection pool",
+    "lettuce pool",
+    "jedis pool",
+    "jedis sentinel",
+    "pool do redis",
+    "pool redis",
+    "pool de conexoes redis",
+    "pool de conexões redis"
+   ],
+   "alias": "spring.redis.lettuce.pool",
+   "nota": "the Redis pool rules (Lettuce and Jedis, same keys and defaults) are in Appendix A, SBR p.702-704, and in the body p.346; the query was mapped to the spring.redis.lettuce.pool prefix."
+  }
+ ]
+}

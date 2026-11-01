@@ -1,0 +1,416 @@
+{
+ "_meta": {
+  "source": "CL = Código Limpo (Robert C. Martin), pages of the scanned PDF",
+  "note": "items are phrased as questions; each ref points to the rule in references/ and cc_index.json; area keys stay in Portuguese (nomes, funcoes, ...)"
+ },
+ "areas": {
+  "nomes": {
+   "title": "Meaningful names",
+   "chapter": "2",
+   "pages": "p.26-39",
+   "items": [
+    {
+     "q": "Does every name reveal its intent, without needing a comment?",
+     "ref": "p.27"
+    },
+    {
+     "q": "Does no name misinform (e.g. 'List' for something that is not a list) or look almost identical to another?",
+     "ref": "p.28"
+    },
+    {
+     "q": "Are the distinctions meaningful, with no number series (a1, a2) or noise words (Info, Data)?",
+     "ref": "p.29-30"
+    },
+    {
+     "q": "Are the names pronounceable and searchable; does the length follow the scope?",
+     "ref": "p.30-31"
+    },
+    {
+     "q": "Are there no encodings (Hungarian notation, m_ prefix, I on interfaces)?",
+     "ref": "p.32-33"
+    },
+    {
+     "q": "Is there no mental mapping (single letters outside small loops)?",
+     "ref": "p.33"
+    },
+    {
+     "q": "Are classes nouns and methods verbs?",
+     "ref": "p.34"
+    },
+    {
+     "q": "Is there one word per concept and no puns (the same name with different meanings)?",
+     "ref": "p.35"
+    },
+    {
+     "q": "Do the names use the solution or problem domain and have meaningful context, without gratuitous prefixes?",
+     "ref": "p.35-38"
+    }
+   ]
+  },
+  "funcoes": {
+   "title": "Functions",
+   "chapter": "3",
+   "pages": "p.40-58, p.398",
+   "items": [
+    {
+     "q": "Are the functions small (at most 20 lines; the book's ideal is 2 to 4)?",
+     "ref": "p.43"
+    },
+    {
+     "q": "Are if/else/while blocks one line long and is indentation at one or two levels?",
+     "ref": "p.44"
+    },
+    {
+     "q": "Does each function do one thing (no other function can be extracted with a name that is not a restatement of the implementation)?",
+     "ref": "p.44-45"
+    },
+    {
+     "q": "Are all the statements of the function at the same level of abstraction, and does the code read top to bottom (Stepdown Rule)?",
+     "ref": "p.45-46"
+    },
+    {
+     "q": "Does any switch appear only once, hidden in a factory that creates polymorphic objects?",
+     "ref": "p.46-47"
+    },
+    {
+     "q": "Is the number of arguments zero, one or two (triads avoided; more than three only for a very special reason)?",
+     "ref": "p.48"
+    },
+    {
+     "q": "Is there no boolean argument (flag) that gives the function two behaviors?",
+     "ref": "p.49-50"
+    },
+    {
+     "q": "Were too many arguments grouped into an object?",
+     "ref": "p.398"
+    },
+    {
+     "q": "Does the function have no hidden side effects or output arguments?",
+     "ref": "p.51-52"
+    },
+    {
+     "q": "Does the function do something or answer something, but not both (command-query separation)?",
+     "ref": "p.52-53"
+    },
+    {
+     "q": "Are errors exceptions (not return codes) and was the try/catch body extracted into its own function?",
+     "ref": "p.53-54"
+    },
+    {
+     "q": "Is there no duplication?",
+     "ref": "p.55"
+    }
+   ]
+  },
+  "comentarios": {
+   "title": "Comments",
+   "chapter": "4",
+   "pages": "p.59-80",
+   "items": [
+    {
+     "q": "Is every comment necessary, or can it be replaced by a function or variable with a good name?",
+     "ref": "p.61, p.72-73"
+    },
+    {
+     "q": "Do the remaining comments explain intent, clarify, or warn about consequences?",
+     "ref": "p.62-64"
+    },
+    {
+     "q": "Are there no redundant, misleading or rule-mandated comments (Javadoc on everything)?",
+     "ref": "p.66-69"
+    },
+    {
+     "q": "Is there no change journal, credits or authorship in the code (version control keeps that)?",
+     "ref": "p.69-70, p.74"
+    },
+    {
+     "q": "Is there no commented-out code?",
+     "ref": "p.74-75"
+    },
+    {
+     "q": "Are there no closing brace comments, position markers or noise?",
+     "ref": "p.70-73"
+    },
+    {
+     "q": "Are the TODOs reviewed and do they not justify bad code?",
+     "ref": "p.64-65"
+    },
+    {
+     "q": "Do the comments avoid nonlocal or excessive information, or an inobvious connection to the code?",
+     "ref": "p.75-77"
+    }
+   ]
+  },
+  "formatacao": {
+   "title": "Formatting",
+   "chapter": "5",
+   "pages": "p.81-97",
+   "items": [
+    {
+     "q": "Does the team follow a single set of formatting rules, preferably automated?",
+     "ref": "p.82, p.95"
+    },
+    {
+     "q": "Does the file read like a newspaper (high level at the top) and are concepts separated by blank lines?",
+     "ref": "p.83-84"
+    },
+    {
+     "q": "Are related concepts close together, local variables near their use, and the calling function above the called one?",
+     "ref": "p.85-87"
+    },
+    {
+     "q": "Do instance variables sit in a well-known place (in Java, at the top of the class)?",
+     "ref": "p.86"
+    },
+    {
+     "q": "Do the lines fit the limit the author uses (120 characters)?",
+     "ref": "p.90"
+    },
+    {
+     "q": "Do spaces indicate relationship and precedence, without artificial horizontal alignment?",
+     "ref": "p.91-93"
+    },
+    {
+     "q": "Is every scope indented, with no short if/while/function collapsed into one line?",
+     "ref": "p.93-94"
+    }
+   ]
+  },
+  "objetos-e-dados": {
+   "title": "Objects and data structures",
+   "chapter": "6",
+   "pages": "p.98-106",
+   "items": [
+    {
+     "q": "Does the class expose abstractions of the data, rather than automatic getters/setters for every field?",
+     "ref": "p.98-100"
+    },
+    {
+     "q": "Is it clear whether each type is an object (hides data, exposes functions) or a data structure (exposes data)?",
+     "ref": "p.100"
+    },
+    {
+     "q": "Are there no hybrids, half object and half data structure?",
+     "ref": "p.104"
+    },
+    {
+     "q": "Does the code respect the Law of Demeter (no train wrecks navigating the insides of objects)?",
+     "ref": "p.102-103"
+    },
+    {
+     "q": "Do DTOs and Active Records contain no business rules?",
+     "ref": "p.105-106"
+    }
+   ]
+  },
+  "erros": {
+   "title": "Error handling",
+   "chapter": "7",
+   "pages": "p.107-116",
+   "items": [
+    {
+     "q": "Does it use exceptions instead of return codes, without obscuring the logic?",
+     "ref": "p.107-109"
+    },
+    {
+     "q": "Did the code that may throw an exception start with try-catch-finally and with tests that force the exception?",
+     "ref": "p.109-110"
+    },
+    {
+     "q": "Does it use unchecked exceptions (except in a critical library)?",
+     "ref": "p.110-111"
+    },
+    {
+     "q": "Do exceptions carry context (operation and type of failure) and are they defined by the needs of whoever catches them?",
+     "ref": "p.111"
+    },
+    {
+     "q": "Are third-party APIs wrapped, converting their exceptions?",
+     "ref": "p.112-113"
+    },
+    {
+     "q": "Do business cases use Special Case instead of an exception?",
+     "ref": "p.113-114"
+    },
+    {
+     "q": "Does the code not return null (throw an exception, return a Special Case or an empty list)?",
+     "ref": "p.114-115"
+    },
+    {
+     "q": "Does the code not pass null as an argument?",
+     "ref": "p.115-116"
+    }
+   ]
+  },
+  "limites": {
+   "title": "Boundaries (third-party code)",
+   "chapter": "8",
+   "pages": "p.117-123",
+   "items": [
+    {
+     "q": "Are boundary interfaces (e.g. Map) encapsulated and kept from circulating through the public API?",
+     "ref": "p.118-119"
+    },
+    {
+     "q": "Are there learning/boundary tests that exercise the third-party API the way your code uses it?",
+     "ref": "p.120-122"
+    },
+    {
+     "q": "For an API that does not exist yet, is there an interface of your own connected by an ADAPTER?",
+     "ref": "p.122-123"
+    },
+    {
+     "q": "Is external code referenced in few places?",
+     "ref": "p.123"
+    }
+   ]
+  },
+  "testes": {
+   "title": "Unit tests",
+   "chapter": "9",
+   "pages": "p.124-135",
+   "items": [
+    {
+     "q": "Was the production code written after a failing test (three laws of TDD)?",
+     "ref": "p.125"
+    },
+    {
+     "q": "Is the test code as clean as the production code?",
+     "ref": "p.126-127"
+    },
+    {
+     "q": "Is each test readable and does it follow BUILD-OPERATE-CHECK (CONSTRUIR-OPERAR-VERIFICAR), with no details that do not serve its intent?",
+     "ref": "p.127-129"
+    },
+    {
+     "q": "Is there a test API/DSL that hides repetitive details?",
+     "ref": "p.130"
+    },
+    {
+     "q": "Does each test check a single concept, with few assertions?",
+     "ref": "p.133-134"
+    },
+    {
+     "q": "Are the tests F.I.R.S.T.: fast, independent, repeatable, self-validating and timely?",
+     "ref": "p.134-135"
+    }
+   ]
+  },
+  "classes": {
+   "title": "Classes",
+   "chapter": "10",
+   "pages": "p.136-151",
+   "items": [
+    {
+     "q": "Does the class follow the order: public constants, private statics, instance variables, public functions, and private ones right after their caller?",
+     "ref": "p.137"
+    },
+    {
+     "q": "Is the class small in responsibilities and can it be described in ~25 words without 'if', 'and', 'or', 'but'?",
+     "ref": "p.137, p.139"
+    },
+    {
+     "q": "Does the class have one, and only one, reason to change (SRP)?",
+     "ref": "p.139"
+    },
+    {
+     "q": "Is cohesion high (few instance variables, used by most methods)?",
+     "ref": "p.141-142"
+    },
+    {
+     "q": "Do new features enter by extension, without changing existing classes (OCP)?",
+     "ref": "p.148-150"
+    },
+    {
+     "q": "Does the client depend on abstractions, received through the constructor (DIP)?",
+     "ref": "p.150-151"
+    }
+   ]
+  },
+  "sistemas": {
+   "title": "Systems",
+   "chapter": "11",
+   "pages": "p.152-167",
+   "items": [
+    {
+     "q": "Is object construction separated from use (main, factories or dependency injection)?",
+     "ref": "p.153-156"
+    },
+    {
+     "q": "Are cross-cutting concerns (persistence, transactions, security) not scattered through the business logic?",
+     "ref": "p.159-161"
+    },
+    {
+     "q": "Is the domain logic in testable POJOs, and were decisions postponed until the last responsible moment?",
+     "ref": "p.164-165"
+    },
+    {
+     "q": "Do standards and frameworks come in only when they add demonstrable value?",
+     "ref": "p.166"
+    }
+   ]
+  },
+  "design-simples": {
+   "title": "Emergence (the four rules of simple design)",
+   "chapter": "12",
+   "pages": "p.168-173",
+   "items": [
+    {
+     "q": "Do all the tests run and pass?",
+     "ref": "p.169"
+    },
+    {
+     "q": "Is there no duplication (not even of implementation)?",
+     "ref": "p.170-172"
+    },
+    {
+     "q": "Does the code express intent (names, small functions and classes, named patterns, tests as documentation)?",
+     "ref": "p.172-173"
+    },
+    {
+     "q": "Is the number of classes and methods the minimum, without dogmas such as one interface per class?",
+     "ref": "p.173"
+    }
+   ]
+  },
+  "concorrencia": {
+   "title": "Concurrency",
+   "chapter": "13 and Appendix A",
+   "pages": "p.174-187, p.310-340",
+   "items": [
+    {
+     "q": "Is the concurrent code separated from the rest (SRP)?",
+     "ref": "p.178"
+    },
+    {
+     "q": "Is access to shared data minimal, with copies and independent threads when possible?",
+     "ref": "p.178-179"
+    },
+    {
+     "q": "Does it use the concurrency library (thread-safe collections, Executor, atomic classes) instead of manual threads?",
+     "ref": "p.179, p.319-321"
+    },
+    {
+     "q": "Is there no dependency between synchronized methods called in sequence by the client?",
+     "ref": "p.182, p.322-326"
+    },
+    {
+     "q": "Are the synchronized sections as small as possible?",
+     "ref": "p.182, p.327"
+    },
+    {
+     "q": "Was shutdown thought through from the start?",
+     "ref": "p.182-183"
+    },
+    {
+     "q": "Is at least one of the four deadlock conditions broken (e.g. global acquisition order)?",
+     "ref": "p.329-332"
+    },
+    {
+     "q": "Do the tests run with more threads than processors, on several platforms, with instrumentation to force failures?",
+     "ref": "p.183-187, p.334-335"
+    }
+   ]
+  }
+ }
+}

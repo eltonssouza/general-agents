@@ -1,0 +1,1614 @@
+{
+ "_comentario": "Positive: all the terms must be on the cited pages (PDF) of the doc. Negative: none of the terms may appear on any page of the docs. Terms prefixed with 're:' are regexes. See tests/verify_citations.py.",
+ "positive": [
+  {
+   "id": "P001",
+   "doc": "Eff",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "pointer methods can only be invoked on pointers",
+    "addressable",
+    "inserting the address operator automatically"
+   ],
+   "claim": "value methods work on values and pointers; pointer methods only on pointers; an addressable value gets & automatically"
+  },
+  {
+   "id": "P002",
+   "doc": "Eff",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "receiver for String must be of",
+    "more efficient and idiomatic"
+   ],
+   "claim": "String() with a value receiver to print T and *T"
+  },
+  {
+   "id": "P003",
+   "doc": "Eff",
+   "pages": [
+    19,
+    26
+   ],
+   "terms": [
+    "We must return the slice afterwards",
+    "underlying array may change"
+   ],
+   "claim": "the result of append must be reassigned"
+  },
+  {
+   "id": "P004",
+   "doc": "Eff",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "terrible practice",
+    "Always check error returns"
+   ],
+   "claim": "discarding an error with _ is a terrible practice"
+  },
+  {
+   "id": "P005",
+   "doc": "Eff",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "rarely useful",
+    "pointer to a nil slice value"
+   ],
+   "claim": "new([]int) is rarely useful"
+  },
+  {
+   "id": "P006",
+   "doc": "Eff",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "type T is determined by the caller",
+    "That's why append is built in"
+   ],
+   "claim": "append is a built-in because the result type depends on the caller"
+  },
+  {
+   "id": "P007",
+   "doc": "Eff",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "comma, ok",
+    "run-time"
+   ],
+   "claim": "a type assertion without comma ok fails at run time"
+  },
+  {
+   "id": "P008",
+   "doc": "Eff",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "same nesting level",
+    "usually an error"
+   ],
+   "claim": "a name conflict at the same level is usually an error"
+  },
+  {
+   "id": "P009",
+   "doc": "Eff",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "Unbuffered channels combine communication"
+   ],
+   "claim": "an unbuffered channel combines communication and synchronization"
+  },
+  {
+   "id": "P010",
+   "doc": "Eff",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "1<<3 is a constant expression",
+    "math.Sin(math.Pi/4)",
+    "ignore first value"
+   ],
+   "claim": "compile-time constants; iota with _"
+  },
+  {
+   "id": "P011",
+   "doc": "Eff",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "Interfaces with only one or two methods are common"
+   ],
+   "claim": "small interfaces are common"
+  },
+  {
+   "id": "P012",
+   "doc": "Eff",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "a concurrent language, not a parallel one"
+   ],
+   "claim": "Go is concurrent, not parallel"
+  },
+  {
+   "id": "P013",
+   "doc": "Eff",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "runtime.GOMAXPROCS",
+    "It defaults to the value of"
+   ],
+   "claim": "default GOMAXPROCS (2009 text)"
+  },
+  {
+   "id": "P014",
+   "doc": "Eff",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "Starting with Go 1.26",
+    "new(int64(300))"
+   ],
+   "claim": "new with an expression from Go 1.26 (only Effective Go says so)"
+  },
+  {
+   "id": "P015",
+   "doc": "Eff",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "before 1.22",
+    "loop variable is shared"
+   ],
+   "claim": "the Serve example has a bug before 1.22"
+  },
+  {
+   "id": "P016",
+   "doc": "Eff",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "written for Go's release in 2009",
+    "not actively updated",
+    "generics",
+    "modules"
+   ],
+   "claim": "Effective Go is from 2009 and does not cover generics or modules"
+  },
+  {
+   "id": "P017",
+   "doc": "Eff",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "niladic init function",
+    "called after all the variable declarations"
+   ],
+   "claim": "init runs after variable initializers"
+  },
+  {
+   "id": "P018",
+   "doc": "Eff",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "%+v",
+    "%#v"
+   ],
+   "claim": "the %+v and %#v verbs"
+  },
+  {
+   "id": "P019",
+   "doc": "Eff",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "We use tabs for indentation",
+    "Line comments are",
+    "the norm"
+   ],
+   "claim": "tabs and line comments"
+  },
+  {
+   "id": "P020",
+   "doc": "Eff",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "no need for underscores or mixedCaps",
+    "not GetOwner"
+   ],
+   "claim": "lowercase package; getter without Get"
+  },
+  {
+   "id": "P021",
+   "doc": "Eff",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "cannot put the opening brace",
+    "-er suffix"
+   ],
+   "claim": "opening brace on the same line; -er interface"
+  },
+  {
+   "id": "P022",
+   "doc": "Eff",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "receiver of the method is the inner type, not the outer one",
+    "Only interfaces can be embedded within interfaces"
+   ],
+   "claim": "embedding: the receiver is the inner type"
+  },
+  {
+   "id": "P023",
+   "doc": "Eff",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "defer f.Close()",
+    "Contents returns the file's contents",
+    "sits near the open"
+   ],
+   "claim": "defer Close right next to the open"
+  },
+  {
+   "id": "P024",
+   "doc": "Eff",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "LIFO order"
+   ],
+   "claim": "defers in LIFO order"
+  },
+  {
+   "id": "P025",
+   "doc": "Eff",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "real library functions should avoid panic",
+    "counterexample is during initialization"
+   ],
+   "claim": "libraries avoid panic; initialization exception"
+  },
+  {
+   "id": "P026",
+   "doc": "Eff",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "recover always returns nil unless called directly from a deferred function"
+   ],
+   "claim": "recover only works directly in the deferred function"
+  },
+  {
+   "id": "P027",
+   "doc": "Eff",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "var _ json.Marshaler = (*RawMessage)(nil)",
+    "checked at compile"
+   ],
+   "claim": "compile-time interface check"
+  },
+  {
+   "id": "P028",
+   "doc": "Eff",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "HandlerFunc type is an adapter"
+   ],
+   "claim": "HandlerFunc adapts a function to an interface"
+  },
+  {
+   "id": "P029",
+   "doc": "Eff",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "If the slices might grow or shrink"
+   ],
+   "claim": "2D slices: allocate row by row if they can grow"
+  },
+  {
+   "id": "P030",
+   "doc": "Little",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "_, exists := power(\"goku\")",
+    "the blank identifier"
+   ],
+   "claim": "blank identifier discards a return value"
+  },
+  {
+   "id": "P031",
+   "doc": "Little",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "Go won't let you have unused variables"
+   ],
+   "claim": "an unused variable does not compile"
+  },
+  {
+   "id": "P032",
+   "doc": "Little",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "Our first example crashes",
+    "scores = scores[0:8]"
+   ],
+   "claim": "indexing beyond len fails; reslice"
+  },
+  {
+   "id": "P033",
+   "doc": "Little",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "9332",
+    "expanded 3 times with a capacity of 10"
+   ],
+   "claim": "make([]int,5)+append; growth 10,20,40 (the author's hypothesis)"
+  },
+  {
+   "id": "P034",
+   "doc": "Little",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "strings.Index(haystack[5:], \" \")",
+    "Go doesn't support negative values"
+   ],
+   "claim": "no negative indices; indexOf with a start"
+  },
+  {
+   "id": "P035",
+   "doc": "Little",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "Iteration over maps isn't ordered",
+    "random order"
+   ],
+   "claim": "map iteration in random order"
+  },
+  {
+   "id": "P036",
+   "doc": "Little",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "master/head/trunk/default",
+    "goop and godep"
+   ],
+   "claim": "go get from head/master; goop and godep"
+  },
+  {
+   "id": "P037",
+   "doc": "Little",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "alphabetically orders imports",
+    "authoritative"
+   ],
+   "claim": "go fmt aligns and sorts imports"
+  },
+  {
+   "id": "P038",
+   "doc": "Little",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "creating a copy of the data",
+    "strings are immutable"
+   ],
+   "claim": "[]byte(X) and string(X) copy"
+  },
+  {
+   "id": "P039",
+   "doc": "Little",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "M:N threading model",
+    "millions of goroutines",
+    "this is bad, don't do this!"
+   ],
+   "claim": "M:N goroutines; Sleep marked as bad"
+  },
+  {
+   "id": "P040",
+   "doc": "Little",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "defer lock.Unlock()",
+    "deadlock with a single lock"
+   ],
+   "claim": "forgetting Unlock causes deadlock even with a single lock"
+  },
+  {
+   "id": "P041",
+   "doc": "Little",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "We're pushing out 20 messages per second",
+    "only handle 10 per second"
+   ],
+   "claim": "drop with select/default"
+  },
+  {
+   "id": "P042",
+   "doc": "Little",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "default fires immediately if no channel",
+    "time.After returns a channel"
+   ],
+   "claim": "default fires immediately; time.After"
+  },
+  {
+   "id": "P043",
+   "doc": "Little",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "statically typed language with a C",
+    "syntax and garbage collection"
+   ],
+   "claim": "nature of the language"
+  },
+  {
+   "id": "P044",
+   "doc": "Little",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "It will not compile if you import a package but don't use it",
+    "at index 0"
+   ],
+   "claim": "an unused import does not compile; os.Args[0]"
+  },
+  {
+   "id": "P045",
+   "doc": "Little",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "var EOF = errors.New(\"EOF\")",
+    "they are rarely used"
+   ],
+   "claim": "io.EOF sentinel; panic/recover are rare"
+  },
+  {
+   "id": "P046",
+   "doc": "Little",
+   "pages": [
+    71
+   ],
+   "terms": [
+    "Many people dislike Go's approach to error handling"
+   ],
+   "claim": "the author's opinion on errors"
+  },
+  {
+   "id": "P047",
+   "doc": "Little",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "Is composition better than inheritance"
+   ],
+   "claim": "composition vs inheritance (the author's opinion)"
+  },
+  {
+   "id": "P048",
+   "doc": "Little",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "starts with an uppercase letter",
+    "visible"
+   ],
+   "claim": "visibility by initial uppercase letter"
+  },
+  {
+   "id": "P049",
+   "doc": "Little",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "go version go1.3.3 darwin/amd64"
+   ],
+   "claim": "Go version of the book"
+  },
+  {
+   "id": "P050",
+   "doc": "Little",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "new(X) is the same as &X{}"
+   ],
+   "claim": "new(X) is equivalent to &X{}"
+  },
+  {
+   "id": "P051",
+   "doc": "Little",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "doesn't have objects nor inheritance"
+   ],
+   "claim": "Go has no objects or inheritance"
+  },
+  {
+   "id": "P052",
+   "doc": "Little",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "go folder with a src subfolder"
+   ],
+   "claim": "GOPATH model (dated)"
+  },
+  {
+   "id": "P053",
+   "doc": "Spec",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "Represent integer constants with at least 256 bits",
+    "exponent of at least 16 bits"
+   ],
+   "claim": "constant precision minimums"
+  },
+  {
+   "id": "P054",
+   "doc": "Spec",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "int      same size as uint",
+    "two's complement"
+   ],
+   "claim": "int has the same size as uint"
+  },
+  {
+   "id": "P055",
+   "doc": "Spec",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "first-in-first-out queues",
+    "chan<- <-chan int"
+   ],
+   "claim": "FIFO channels; binding of <-"
+  },
+  {
+   "id": "P056",
+   "doc": "Spec",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "var j int32 = 1<<s",
+    "j == 0"
+   ],
+   "claim": "non-constant shift"
+  },
+  {
+   "id": "P057",
+   "doc": "Spec",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "taking the address of an empty slice or map composite literal",
+    "p2 := new([]int)"
+   ],
+   "claim": "&[]int{} vs new([]int)"
+  },
+  {
+   "id": "P058",
+   "doc": "Spec",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "fused multiply and add",
+    "FMA"
+   ],
+   "claim": "FMA allowed"
+  },
+  {
+   "id": "P059",
+   "doc": "Spec",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "A call to the built-in function panic"
+   ],
+   "claim": "terminating statement: panic"
+  },
+  {
+   "id": "P060",
+   "doc": "Spec",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "not permitted in statement context",
+    "append cap complex imag len make new real"
+   ],
+   "claim": "built-ins outside statement context"
+  },
+  {
+   "id": "P061",
+   "doc": "Spec",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "rather than the length"
+   ],
+   "claim": "the upper bound of the slice is cap"
+  },
+  {
+   "id": "P062",
+   "doc": "Spec",
+   "pages": [
+    97
+   ],
+   "terms": [
+    "in the reverse order",
+    "not when the \"defer\" statement is executed"
+   ],
+   "claim": "defer: reverse order; nil function at invocation"
+  },
+  {
+   "id": "P063",
+   "doc": "Spec",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "delete is a no-op"
+   ],
+   "claim": "delete on a nil map is a no-op"
+  },
+  {
+   "id": "P064",
+   "doc": "Spec",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "must be non-negative and",
+    "n must be no larger than m"
+   ],
+   "claim": "make: constant sizes"
+  },
+  {
+   "id": "P065",
+   "doc": "Spec",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "called directly by a deferred function"
+   ],
+   "claim": "recover called directly by a deferred function"
+  },
+  {
+   "id": "P066",
+   "doc": "Spec",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "It does not wait for other",
+    "type error interface"
+   ],
+   "claim": "main returns and the program exits; error interface"
+  },
+  {
+   "id": "P067",
+   "doc": "Spec",
+   "pages": [
+    112
+   ],
+   "terms": [
+    "runtime.Error",
+    "unspecified"
+   ],
+   "claim": "run-time errors"
+  },
+  {
+   "id": "P068",
+   "doc": "Spec",
+   "pages": [
+    88
+   ],
+   "terms": [
+    "Each iteration has its own separate declared variable",
+    "Prior to [Go 1.22]"
+   ],
+   "claim": "per-iteration variable"
+  },
+  {
+   "id": "P069",
+   "doc": "Spec",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "invalid: 256 cannot be assigned to uint8",
+    "invalid: 1e3 is a floating-point constant"
+   ],
+   "claim": "range over integer: invalid cases"
+  },
+  {
+   "id": "P070",
+   "doc": "Spec",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "yield returns false and must not be called again"
+   ],
+   "claim": "yield after false"
+  },
+  {
+   "id": "P071",
+   "doc": "Spec",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "strictly comparable",
+    "they do not implement comparable",
+    "they satisfy"
+   ],
+   "claim": "interfaces satisfy comparable"
+  },
+  {
+   "id": "P072",
+   "doc": "Spec",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "not satisfied: any does not implement"
+   ],
+   "claim": "any does not satisfy comparable;m()"
+  },
+  {
+   "id": "P073",
+   "doc": "Spec",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "~MyInt   // illegal",
+    "type MyInt int"
+   ],
+   "claim": "~MyInt illegal"
+  },
+  {
+   "id": "P074",
+   "doc": "Spec",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "pairwise disjoint",
+    "~int | MyInt     // illegal"
+   ],
+   "claim": "union terms are disjoint"
+  },
+  {
+   "id": "P075",
+   "doc": "Spec",
+   "pages": [
+    75
+   ],
+   "terms": [
+    "may eventually be removed",
+    "utf8.AppendRune or utf8.EncodeRune"
+   ],
+   "claim": "string(int)"
+  },
+  {
+   "id": "P076",
+   "doc": "Spec",
+   "pages": [
+    95
+   ],
+   "terms": [
+    "return  // invalid return statement: err is shadowed",
+    "initialized to the zero values"
+   ],
+   "claim": "naked return with a shadowed err"
+  },
+  {
+   "id": "P077",
+   "doc": "Spec",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "does not inherit any methods"
+   ],
+   "claim": "a type definition does not inherit methods"
+  },
+  {
+   "id": "P078",
+   "doc": "Spec",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "in lexical file name order"
+   ],
+   "claim": "lexical order of files"
+  },
+  {
+   "id": "P079",
+   "doc": "Spec",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "0b1011",
+    "will be rejected if the implied or required language version"
+   ],
+   "claim": "general version rule"
+  },
+  {
+   "id": "P080",
+   "doc": "Spec",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "apply[[]string, string]"
+   ],
+   "claim": "partial instantiation example"
+  },
+  {
+   "id": "P081",
+   "doc": "Spec",
+   "pages": [
+    93
+   ],
+   "terms": [
+    "no fallthrough, no folding of cases",
+    "blocks forever"
+   ],
+   "claim": "select without priority; nil blocks"
+  },
+  {
+   "id": "P082",
+   "doc": "Spec",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "any bool byte comparable"
+   ],
+   "claim": "predeclared identifiers"
+  },
+  {
+   "id": "P083",
+   "doc": "Spec",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "make max min new panic print println real recover"
+   ],
+   "claim": "predeclared identifiers (functions)"
+  },
+  {
+   "id": "P084",
+   "doc": "Spec",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "new"
+   ],
+   "claim": "new(expr) appears in the body of the Spec"
+  },
+  {
+   "id": "P085",
+   "doc": "RN1.20",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "by up to 2%",
+    "about 3-4%",
+    "improves build speeds by up to 10%"
+   ],
+   "claim": "GC/PGO/build numbers of 1.20"
+  },
+  {
+   "id": "P086",
+   "doc": "RN1.20",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "approximately 15% (RSA-2048 on amd64) and 45%",
+    "approximately 20x slower"
+   ],
+   "claim": "RSA slower in 1.20"
+  },
+  {
+   "id": "P087",
+   "doc": "RN1.20",
+   "pages": [
+    11,
+    12
+   ],
+   "terms": [
+    "Go 1.20.3 and later disallow actions in ECMAScript 6 template literals",
+    "to 10000",
+    "to 1000"
+   ],
+   "claim": "html/template 1.20.3; multipart limits"
+  },
+  {
+   "id": "P088",
+   "doc": "RN1.20",
+   "pages": [
+    11,
+    12
+   ],
+   "terms": [
+    "GODEBUG=randautoseed=0",
+    "rand.New(rand.NewSource(seed))"
+   ],
+   "claim": "automatic seed of math/rand"
+  },
+  {
+   "id": "P089",
+   "doc": "RN1.20",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "race detector has been rewritten not to use cgo"
+   ],
+   "claim": "race detector on macOS"
+  },
+  {
+   "id": "P090",
+   "doc": "RN1.20",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "WithCancelCause"
+   ],
+   "claim": "context.WithCancelCause in 1.20"
+  },
+  {
+   "id": "P091",
+   "doc": "RN1.20",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "go: and type: prefixes",
+    "Go 1.17.13"
+   ],
+   "claim": "symbol prefixes; bootstrap"
+  },
+  {
+   "id": "P092",
+   "doc": "RN1.21",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "GODEBUG=panicnil=1",
+    "go 1.20 or earlier",
+    "*runtime.PanicNilError",
+    "strict minimum requirement",
+    "preserves the behavior of the older toolchain"
+   ],
+   "claim": "panic(nil), go line and toolchain"
+  },
+  {
+   "id": "P093",
+   "doc": "RN1.21",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "first 50 (innermost) frames",
+    "up to a 40%"
+   ],
+   "claim": "stack traces and GC of 1.21"
+  },
+  {
+   "id": "P094",
+   "doc": "RN1.21",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "~100-200 nanoseconds per call",
+    "between 2 and 7% improvement"
+   ],
+   "claim": "C->Go call and PGO"
+  },
+  {
+   "id": "P095",
+   "doc": "RN1.21",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "WithoutCancel",
+    "AfterFunc"
+   ],
+   "claim": "context 1.21"
+  },
+  {
+   "id": "P096",
+   "doc": "RN1.22",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "each iteration of the loop creates new variables",
+    "may now range over integers"
+   ],
+   "claim": "per-iteration loop; range over integer"
+  },
+  {
+   "id": "P097",
+   "doc": "RN1.22",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "vet no longer reports references to loop variables"
+   ],
+   "claim": "vet follows the new semantics"
+  },
+  {
+   "id": "P098",
+   "doc": "RN1.22",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "by 1-3%",
+    "approximately 1%",
+    "14% improvement"
+   ],
+   "claim": "GC/PGO numbers of 1.22"
+  },
+  {
+   "id": "P099",
+   "doc": "RN1.22",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "httpmuxgo121",
+    "behave differently"
+   ],
+   "claim": "new ServeMux"
+  },
+  {
+   "id": "P100",
+   "doc": "RN1.22",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "We may change the default value of x509usepolicies in Go"
+   ],
+   "claim": "x509usepolicies (1.22 notice)"
+  },
+  {
+   "id": "P101",
+   "doc": "RN1.22",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "now zero the elements between the new length and the old length",
+    "Insert now always panics"
+   ],
+   "claim": "slices.Delete etc. zero the tail"
+  },
+  {
+   "id": "P102",
+   "doc": "RN1.22",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "last release that will run on macOS 10.15 Catalina"
+   ],
+   "claim": "1.22 platforms"
+  },
+  {
+   "id": "P103",
+   "doc": "RN1.23",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "indents the second and subsequent lines",
+    "100%+ build time increase",
+    "single digit percentages"
+   ],
+   "claim": "traceback and PGO in 1.23"
+  },
+  {
+   "id": "P104",
+   "doc": "RN1.23",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "unbuffered, with capacity 0",
+    "non-blocking receive",
+    "asynctimerchan=1"
+   ],
+   "claim": "unbuffered timers"
+  },
+  {
+   "id": "P105",
+   "doc": "RN1.23",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "go telemetry local",
+    "go mod tidy -diff",
+    "godebug directive"
+   ],
+   "claim": "1.23 tools"
+  },
+  {
+   "id": "P106",
+   "doc": "RN1.23",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "httpservecontentkeepheaders=1",
+    "Transfer-Encoding header instead of Content-Encoding"
+   ],
+   "claim": "ServeContent"
+  },
+  {
+   "id": "P107",
+   "doc": "RN1.23",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "raised from 32 to 128 frames"
+   ],
+   "claim": "pprof 128 frames"
+  },
+  {
+   "id": "P108",
+   "doc": "RN1.23",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "0.5ms instead of 15.6ms",
+    "Linux kernel version 2.6.32 or later"
+   ],
+   "claim": "1.23 platforms"
+  },
+  {
+   "id": "P109",
+   "doc": "RN1.23",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Certificate.Leaf",
+    "x509keypairleaf",
+    "x509sha1 GODEBUG setting will be removed",
+    "driver.Valuer"
+   ],
+   "claim": "tls/x509/sql in 1.23"
+  },
+  {
+   "id": "P110",
+   "doc": "RN1.24",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "tool directives in go.mod",
+    "tools.go"
+   ],
+   "claim": "tool directive"
+  },
+  {
+   "id": "P111",
+   "doc": "RN1.24",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "by 2-3%"
+   ],
+   "claim": "runtime gain of 1.24"
+  },
+  {
+   "id": "P112",
+   "doc": "RN1.24",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Go 1.22.6 or later for bootstrap",
+    "Go 1.26 will require a point release of Go 1.24"
+   ],
+   "claim": "bootstrap"
+  },
+  {
+   "id": "P113",
+   "doc": "RN1.24",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "x509sha1 GODEBUG setting has been removed",
+    "x509usepolicies=0"
+   ],
+   "claim": "x509 in 1.24"
+  },
+  {
+   "id": "P114",
+   "doc": "RN1.24",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "requires Linux kernel version 3.2 or later",
+    "last release that will run on macOS 11 Big Sur"
+   ],
+   "claim": "1.24 platforms"
+  },
+  {
+   "id": "P115",
+   "doc": "RN1.24",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "32-bit windows/arm port",
+    "marked broken"
+   ],
+   "claim": "windows/arm broken"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "docs": "all",
+   "terms": [
+    "re:accept\\s+interfaces",
+    "re:return\\s+structs"
+   ],
+   "claim": "'accept interfaces, return structs' is not in any source"
+  },
+  {
+   "id": "N002",
+   "docs": "all",
+   "terms": [
+    "errgroup"
+   ],
+   "claim": "errgroup is not mentioned"
+  },
+  {
+   "id": "N003",
+   "docs": "all",
+   "terms": [
+    "WaitGroup"
+   ],
+   "claim": "sync.WaitGroup is not mentioned"
+  },
+  {
+   "id": "N004",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "context.Context",
+    "context.WithCancel",
+    "context.Background"
+   ],
+   "claim": "context is not mentioned in Eff, Little and Spec"
+  },
+  {
+   "id": "N005",
+   "docs": [
+    "Eff",
+    "Little"
+   ],
+   "terms": [
+    "errors.Is",
+    "errors.As",
+    "%w"
+   ],
+   "claim": "error wrapping is not mentioned in Eff and Little"
+  },
+  {
+   "id": "N006",
+   "docs": [
+    "Eff",
+    "Little"
+   ],
+   "terms": [
+    "go.mod"
+   ],
+   "claim": "go.mod is not mentioned in Eff and Little"
+  },
+  {
+   "id": "N007",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "re:(?<![\\w])t\\.Parallel\\(",
+    "testing.T",
+    "testing.B"
+   ],
+   "claim": "tests are not mentioned in Eff, Little and Spec"
+  },
+  {
+   "id": "N008",
+   "docs": "all",
+   "terms": [
+    "sync.Pool"
+   ],
+   "claim": "sync.Pool is not mentioned"
+  },
+  {
+   "id": "N009",
+   "docs": [
+    "Eff",
+    "Little"
+   ],
+   "terms": [
+    "go vet"
+   ],
+   "claim": "go vet is not mentioned in Eff and Little"
+  },
+  {
+   "id": "N010",
+   "docs": "all",
+   "terms": [
+    "re:when to use generics",
+    "re:when not to use generics"
+   ],
+   "claim": "no guide on when to use generics"
+  },
+  {
+   "id": "N011",
+   "docs": "all",
+   "terms": [
+    "staticcheck",
+    "golangci"
+   ],
+   "claim": "third-party linters are not mentioned"
+  },
+  {
+   "id": "N012",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "log/slog",
+    "slog."
+   ],
+   "claim": "slog is not mentioned in Eff, Little and Spec"
+  },
+  {
+   "id": "N013",
+   "docs": [
+    "RN1.20",
+    "RN1.21",
+    "RN1.22",
+    "RN1.23",
+    "RN1.24"
+   ],
+   "terms": [
+    "iter.Seq",
+    "iter.Seq2"
+   ],
+   "claim": "the names iter.Seq/iter.Seq2 do not appear in the release notes"
+  },
+  {
+   "id": "N014",
+   "docs": [
+    "RN1.20",
+    "RN1.21",
+    "RN1.22",
+    "RN1.23",
+    "RN1.24"
+   ],
+   "terms": [
+    "new(expr)",
+    "new(int64"
+   ],
+   "claim": "new(expr) does not appear in the 1.20-1.24 release notes"
+  },
+  {
+   "id": "N015",
+   "docs": [
+    "Spec"
+   ],
+   "terms": [
+    "[Go 1.25]",
+    "[Go 1.26]"
+   ],
+   "claim": "the Spec version appendix has no 1.25/1.26 marks"
+  },
+  {
+   "id": "N016",
+   "docs": "all",
+   "terms": [
+    "circuit breaker"
+   ],
+   "claim": "circuit breaker is not mentioned"
+  },
+  {
+   "id": "N017",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "errors.Join",
+    "slices.Sort",
+    "slices.Contains"
+   ],
+   "claim": "modern APIs absent from the books and the Spec"
+  },
+  {
+   "id": "N018",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "sync.Once"
+   ],
+   "claim": "sync.Once is not mentioned in Eff, Little and Spec"
+  },
+  {
+   "id": "N019",
+   "docs": [
+    "Eff",
+    "Little"
+   ],
+   "terms": [
+    "generics tutorial",
+    "re:\\[T any\\]",
+    "re:\\[K comparable"
+   ],
+   "claim": "generics syntax is not mentioned in Eff and Little"
+  },
+  {
+   "id": "N020",
+   "docs": "all",
+   "terms": [
+    "re:go 1\\.25 release notes",
+    "re:what's new in go 1\\.25"
+   ],
+   "claim": "Go 1.25 notes are not in the sources"
+  },
+  {
+   "id": "N021",
+   "docs": [
+    "Eff",
+    "Little",
+    "Spec"
+   ],
+   "terms": [
+    "os.Root",
+    "testing.B.Loop",
+    "unique.Make"
+   ],
+   "claim": "1.23/1.24 news is not mentioned in Eff, Little and Spec"
+  }
+ ]
+}

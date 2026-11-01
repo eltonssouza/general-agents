@@ -1,0 +1,25 @@
+{
+ "n_train": 205000,
+ "n_dev": 2500,
+ "n_test": 2500,
+ "train_dist": "internet+mobile",
+ "dev_dist": "mobile",
+ "test_dist": "mobile",
+ "target_dist": "mobile",
+ "min_detectable_diff_pp": 0.1,
+ "dev_error_pct": 5,
+ "eyeball_fraction": 0.1,
+ "metrics": [
+  "accuracy",
+  "runtime_ms"
+ ],
+ "satisficing": [
+  "runtime_ms"
+ ],
+ "test_used_for_decisions": false,
+ "labels_fixed_dev_only": false,
+ "train_has_target_distribution_data": true,
+ "has_training_dev": false,
+ "project_stage": "new",
+ "days_to_first_devtest": 5
+}

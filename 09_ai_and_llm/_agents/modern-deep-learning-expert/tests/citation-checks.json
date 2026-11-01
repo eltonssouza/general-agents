@@ -1,0 +1,1510 @@
+{
+ "fonte": "UDL (541 pages) and NNDL (303 pages), text extracted per page in scratch/ai",
+ "convencao": "p.N = PDF page",
+ "checks": [
+  {
+   "cite": "UDL p.15",
+   "contains": [
+    "machine learning",
+    "deep neural network",
+    "reinforcement"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.16-17",
+   "contains": [
+    "regression",
+    "binary classification",
+    "multiclass"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.18",
+   "contains": [
+    "441"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.34",
+   "contains": [
+    "7.07",
+    "10.28",
+    "0.20"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.39",
+   "contains": [
+    "rectified linear unit",
+    "ten parameters"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.43",
+   "contains": [
+    "universal approximation theorem",
+    "D + 1 linear regions"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.48",
+   "contains": [
+    "51, 001"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.49",
+   "contains": [
+    "multi-layer perceptron",
+    "feed-forward",
+    "fully connected"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.52",
+   "contains": [
+    "swish",
+    "hardswish",
+    "zaslavsky",
+    "dying relu"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.64",
+   "contains": [
+    "3D + 1"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.65",
+   "contains": [
+    "471",
+    "161,051",
+    "10,801"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.67",
+   "contains": [
+    "binomial",
+    "depth"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.74",
+   "contains": [
+    "recipe",
+    "negative log-likelihood"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.80",
+   "contains": [
+    "bernoulli",
+    "logistic sigmoid"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.82",
+   "contains": [
+    "softmax",
+    "categorical"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.84",
+   "contains": [
+    "von mises",
+    "plackett-luce",
+    "poisson"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.85-86",
+   "contains": [
+    "cross-entropy",
+    "dirac"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.92",
+   "contains": [
+    "learning rate",
+    "line search"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.95",
+   "contains": [
+    "gabor",
+    "28 input/output"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.97",
+   "contains": [
+    "saddle"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.100",
+   "contains": [
+    "momentum"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.104",
+   "contains": [
+    "adam"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.108",
+   "contains": [
+    "adamw",
+    "special case of adam"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.114",
+   "contains": [
+    "cos",
+    "exp",
+    "sin"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.120",
+   "contains": [
+    "backpropagation",
+    "pytorch"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.124",
+   "contains": [
+    "he initialization",
+    "0.02"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.125-126",
+   "contains": [
+    "learning rate starts at 0.01",
+    "lr = 0.1"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.127",
+   "contains": [
+    "werbos",
+    "rumelhart",
+    "glorot"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.128",
+   "contains": [
+    "gradient checkpointing",
+    "trillion",
+    "3072"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.132",
+   "contains": [
+    "mnist-1d",
+    "4000"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.138",
+   "contains": [
+    "variance",
+    "bias",
+    "noise"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.141-143",
+   "contains": [
+    "double descent",
+    "10,000",
+    "15%"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.147",
+   "contains": [
+    "validation set",
+    "hyperparameter"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.154",
+   "contains": [
+    "l2",
+    "weight decay",
+    "ridge"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.162",
+   "contains": [
+    "dropout",
+    "monte carlo"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.169-170",
+   "contains": [
+    "hanson",
+    "adamw",
+    "frobenius"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.175",
+   "contains": [
+    "150,528",
+    "22 billion"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.176",
+   "contains": [
+    "invariant",
+    "equivariant"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.181",
+   "contains": [
+    "2,050",
+    "59,065"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.188",
+   "contains": [
+    "1,281,167",
+    "50,000",
+    "100,000"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.190",
+   "contains": [
+    "16.4%",
+    "38.1%",
+    "60 million"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.190",
+   "contains": [
+    "vgg",
+    "144 million",
+    "6.8%"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.202",
+   "contains": [
+    "cifar-10",
+    "shattered"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.206",
+   "contains": [
+    "exploding",
+    "doubles"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.209",
+   "contains": [
+    "4.8%",
+    "20.1%",
+    "5.1%"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.221",
+   "contains": [
+    "37",
+    "1024"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.224",
+   "contains": [
+    "queries",
+    "keys",
+    "softmax"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.228",
+   "contains": [
+    "scaled dot product",
+    "multi-head"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.229-230",
+   "contains": [
+    "layernorm",
+    "residual"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.233",
+   "contains": [
+    "340 million",
+    "30,000",
+    "24 transformer layers"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.234",
+   "contains": [
+    "512",
+    "3.3-billion"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.237",
+   "contains": [
+    "masked self-attention"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.238",
+   "contains": [
+    "175 billion",
+    "12288",
+    "300 billion",
+    "3.2 million"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.239",
+   "contains": [
+    "few-shot",
+    "erratic"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.243",
+   "contains": [
+    "imagegpt",
+    "vision transformer",
+    "303 million"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.246",
+   "contains": [
+    "swin",
+    "9.89%",
+    "davit"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.248",
+   "contains": [
+    "palm",
+    "540 billion",
+    "chinchilla"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.254",
+   "contains": [
+    "billion",
+    "graph neural networks"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.259",
+   "contains": [
+    "permutation matrix",
+    "walks of length"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.265",
+   "contains": [
+    "118"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.272",
+   "contains": [
+    "kipf",
+    "degree matrix"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.283",
+   "contains": [
+    "generative adversarial",
+    "latent variable"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.286",
+   "contains": [
+    "inception score",
+    "kl-divergence"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.291",
+   "contains": [
+    "nash",
+    "minimax"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.295",
+   "contains": [
+    "jensen-shannon",
+    "coverage",
+    "quality"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.299",
+   "contains": [
+    "wasserstein",
+    "gradient penalty"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.323",
+   "contains": [
+    "decomposition"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.327",
+   "contains": [
+    "inverse autoregressive"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.332",
+   "contains": [
+    "glow",
+    "256 × 256"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.341",
+   "contains": [
+    "mixture of gaussians",
+    "marginalization"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.347",
+   "contains": [
+    "elbo",
+    "kullback-leibler"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.350",
+   "contains": [
+    "monte carlo"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.352",
+   "contains": [
+    "reparameterization trick"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.355",
+   "contains": [
+    "disentangle"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.363",
+   "contains": [
+    "noise schedule"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.364",
+   "contains": [
+    "markov"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.366",
+   "contains": [
+    "diffusion kernel"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.369",
+   "contains": [
+    "bayes"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.377",
+   "contains": [
+    "algorithm 18.1",
+    "sampling"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.378-379",
+   "contains": [
+    "classifier guidance"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.388",
+   "contains": [
+    "discount factor"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.393",
+   "contains": [
+    "bellman"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.398",
+   "contains": [
+    "sarsa",
+    "q-learning"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.400",
+   "contains": [
+    "atari",
+    "experience replay"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.405",
+   "contains": [
+    "reinforce"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.412",
+   "contains": [
+    "rlhf",
+    "reward model",
+    "proximal policy optimization",
+    "instructgpt"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.411",
+   "contains": [
+    "trpo",
+    "ppo"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.415",
+   "contains": [
+    "np-hard"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.416",
+   "contains": [
+    "177,201",
+    "167,201"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.418",
+   "contains": [
+    "15208",
+    "15139"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.420",
+   "contains": [
+    "lottery ticket"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.422",
+   "contains": [
+    "750"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.426",
+   "contains": [
+    "grokking",
+    "goldilocks"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.427",
+   "contains": [
+    "198,450",
+    "adversarial"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.429",
+   "contains": [
+    "138 million",
+    "98.5%"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.434",
+   "contains": [
+    "compas",
+    "jobin"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.435",
+   "contains": [
+    "outer alignment",
+    "inner alignment"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.437",
+   "contains": [
+    "unawareness",
+    "separation"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.439",
+   "contains": [
+    "gpt4",
+    "functional transparency"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.443",
+   "contains": [
+    "284 tonnes",
+    "30%"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.445",
+   "contains": [
+    "gaydar"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "UDL p.450",
+   "contains": [
+    "greek letters",
+    "calligraphic"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.4",
+   "contains": [
+    "74 lines",
+    "96 percent"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.6",
+   "contains": [
+    "perceptron",
+    "threshold"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.9",
+   "contains": [
+    "nand",
+    "universal"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.14",
+   "contains": [
+    "sigmoid function",
+    "logistic"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.26",
+   "contains": [
+    "60,000",
+    "250 people"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.27",
+   "contains": [
+    "quadratic cost",
+    "mean squared error"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.37",
+   "contains": [
+    "60,000"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.47",
+   "contains": [
+    "9129",
+    "95.42",
+    "96.59"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.48",
+   "contains": [
+    "1139",
+    "100.0"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.52",
+   "contains": [
+    "9,435",
+    "2,225",
+    "9,979"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.57",
+   "contains": [
+    "2006"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.59",
+   "contains": [
+    "warm up"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.60",
+   "contains": [
+    "weight matrix"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.63-64",
+   "contains": [
+    "hadamard",
+    "schur"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.64",
+   "contains": [
+    "demon"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.67",
+   "contains": [
+    "transpose"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.73",
+   "contains": [
+    "feedforward",
+    "backpropagate"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.78",
+   "contains": [
+    "million",
+    "forward passes"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.86",
+   "contains": [
+    "0.82"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.87",
+   "contains": [
+    "0.09",
+    "0.98"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.89",
+   "contains": [
+    "cross-entropy",
+    "learning slowdown"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.97",
+   "contains": [
+    "95.49",
+    "96.82",
+    "3.41"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.101",
+   "contains": [
+    "softmax"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.104",
+   "contains": [
+    "log-likelihood"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.107",
+   "contains": [
+    "23,860",
+    "elephant"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.111",
+   "contains": [
+    "82.27"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.114",
+   "contains": [
+    "97.86",
+    "95.33",
+    "17.73"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.115",
+   "contains": [
+    "l2 regularization",
+    "weight decay"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.120",
+   "contains": [
+    "97.92",
+    "98.04",
+    "95.49"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.130",
+   "contains": [
+    "dropout"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.131",
+   "contains": [
+    "halve the weights"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.135",
+   "contains": [
+    "98.4",
+    "98.9",
+    "99.3"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.137",
+   "contains": [
+    "94.48",
+    "93.24"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.140",
+   "contains": [
+    "22.4",
+    "501"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.141",
+   "contains": [
+    "1.22",
+    "gaussian"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.143",
+   "contains": [
+    "96 percent",
+    "87 percent"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.150",
+   "contains": [
+    "np.sqrt"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.164",
+   "contains": [
+    "order of magnitude"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.166",
+   "contains": [
+    "no-improvement-in-ten"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.167",
+   "contains": [
+    "1/128"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.175",
+   "contains": [
+    "hessian"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.176",
+   "contains": [
+    "velocity",
+    "friction"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.188",
+   "contains": [
+    "cybenko",
+    "hornik"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.194",
+   "contains": [
+    "step"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.202",
+   "contains": [
+    "1000",
+    "200"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.208",
+   "contains": [
+    "tower"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.220",
+   "contains": [
+    "parity"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.224",
+   "contains": [
+    "96.90",
+    "96.57",
+    "96.53"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.227",
+   "contains": [
+    "0.012",
+    "0.283",
+    "0.003"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.233",
+   "contains": [
+    "1/4",
+    "derivative of sigmoid function"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.235",
+   "contains": [
+    "100",
+    "25"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.248-249",
+   "contains": [
+    "520",
+    "26"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.249",
+   "contains": [
+    "23,550",
+    "40"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.253",
+   "contains": [
+    "theano"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.254",
+   "contains": [
+    "97.80"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.256",
+   "contains": [
+    "98.78"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.257",
+   "contains": [
+    "99.06"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.259",
+   "contains": [
+    "99.23",
+    "0.03"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.260",
+   "contains": [
+    "250,000",
+    "99.37"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.262",
+   "contains": [
+    "99.60",
+    "dropout"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.263",
+   "contains": [
+    "99.67",
+    "33"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.265",
+   "contains": [
+    "99.65"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.268",
+   "contains": [
+    "n_out",
+    "n_in",
+    "2016"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.282",
+   "contains": [
+    "15.8",
+    "9.3"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.283",
+   "contains": [
+    "84.7",
+    "73.8",
+    "63.3"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.286",
+   "contains": [
+    "93.33",
+    "88.3"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.287",
+   "contains": [
+    "5.1%",
+    "12.0"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "NNDL p.288",
+   "contains": [
+    "adversarial",
+    "street view"
+   ],
+   "claim": "terms/numbers that the references attribute to these pages"
+  }
+ ],
+ "negativos": [
+  {
+   "cite": "UDL p.221-253",
+   "absent": [
+    "rope",
+    "flashattention",
+    "rmsnorm",
+    "kv cache",
+    "mixture of experts"
+   ],
+   "claim": "modern LLM concepts that ch.12 does not contain"
+  },
+  {
+   "cite": "UDL p.233-239",
+   "absent": [
+    "scaling law",
+    "rlhf",
+    "chain-of-thought"
+   ],
+   "claim": "BERT/GPT-3: none of this on these pages"
+  },
+  {
+   "cite": "UDL p.362-386",
+   "absent": [
+    "latent diffusion",
+    "ddpm",
+    "flow matching"
+   ],
+   "claim": "ch.18: names the book does not use"
+  },
+  {
+   "cite": "UDL p.55-69",
+   "absent": [
+    "self-attention",
+    "dropout",
+    "transformer"
+   ],
+   "claim": "ch.4: neither attention nor dropout"
+  },
+  {
+   "cite": "UDL p.387-410",
+   "absent": [
+    "rlhf",
+    "instructgpt"
+   ],
+   "claim": "RLHF appears only in the note on p.412"
+  },
+  {
+   "cite": "UDL p.415-433",
+   "absent": [
+    "scaling law",
+    "neural tangent"
+   ],
+   "claim": "ch.20 does not cover scaling laws or NTK"
+  },
+  {
+   "cite": "UDL p.100-104",
+   "absent": [
+    "adamw"
+   ],
+   "claim": "AdamW appears only in the notes (p.108)"
+  },
+  {
+   "cite": "UDL p.124-125",
+   "absent": [
+    "kaiming"
+   ],
+   "claim": "the book says He initialization without the name Kaiming"
+  },
+  {
+   "cite": "UDL p.206-208",
+   "absent": [
+    "layernorm"
+   ],
+   "claim": "BatchNorm on p.206-208; LayerNorm only in the notes p.217+"
+  },
+  {
+   "cite": "UDL p.434-449",
+   "absent": [
+    "lgpd",
+    "ai act"
+   ],
+   "claim": "ch.21 cites GDPR art.22, not LGPD or the AI Act"
+  },
+  {
+   "cite": "UDL p.289-304",
+   "absent": [
+    "non-saturating"
+   ],
+   "claim": "the non-saturating variant is not covered on these pages"
+  },
+  {
+   "cite": "UDL p.91-109",
+   "absent": [
+    "cosine"
+   ],
+   "claim": "the cosine schedule is not in ch.6"
+  },
+  {
+   "cite": "NNDL p.58-84",
+   "absent": [
+    "dropout",
+    "relu",
+    "batch normalization"
+   ],
+   "claim": "ch.2 only has sigmoids and the 4 equations"
+  },
+  {
+   "cite": "NNDL p.1-303",
+   "absent": [
+    "transformer",
+    "diffusion",
+    "batch normalization"
+   ],
+   "claim": "NNDL does not cover transformers, diffusion or BatchNorm"
+  },
+  {
+   "cite": "NNDL p.86-101",
+   "absent": [
+    "kullback"
+   ],
+   "claim": "NNDL does not use KL for the cross-entropy; it uses the dC/dw argument"
+  },
+  {
+   "cite": "NNDL p.139-146",
+   "absent": [
+    "kaiming",
+    "he initialization"
+   ],
+   "claim": "NNDL initialization is 1/sqrt(n_in), without the name He"
+  },
+  {
+   "cite": "NNDL p.173-183",
+   "absent": [
+    "adam"
+   ],
+   "claim": "Adam does not appear among NNDL's SGD variations"
+  },
+  {
+   "cite": "NNDL p.242-267",
+   "absent": [
+    "residual",
+    "skip connection"
+   ],
+   "claim": "NNDL CNN without residual connections"
+  },
+  {
+   "cite": "NNDL p.219-239",
+   "absent": [
+    "relu",
+    "dropout"
+   ],
+   "claim": "ch.5 covers sigmoids and unstable gradients"
+  }
+ ]
+}

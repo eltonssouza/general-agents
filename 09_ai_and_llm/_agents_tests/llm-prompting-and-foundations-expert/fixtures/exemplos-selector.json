@@ -1,0 +1,11 @@
+{
+  "fonte": "selector use cases and techniques that MUST appear (derived from the PES technique sheets, p.2-9)",
+  "casos": [
+    {"args": ["--need", "matematica", "--no-external", "--turn", "single"], "devem_aparecer": ["self-consistency", "cod", "step-back"]},
+    {"args": ["--need", "alucinacao", "--acq", "Retrieval Based"], "devem_aparecer": ["rag", "react", "cove"]},
+    {"args": ["--need", "codigo", "--turn", "single"], "devem_aparecer": ["pot", "scratchpad"]},
+    {"args": ["--need", "tabela"], "devem_aparecer": ["chain-of-table"]},
+    {"args": ["--need", "prompt-automatico"], "devem_aparecer": ["ape", "opro", "auto-cot"]},
+    {"args": ["--need", "tokens"], "devem_aparecer": ["cod", "cos", "eedp"]}
+  ]
+}

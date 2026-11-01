@@ -1,0 +1,2520 @@
+{
+ "convention": "pages = PDF (see references/INDEX.md); TAUP: printed = PDF - 2",
+ "entries": [
+  {
+   "id": "sicp-substitution-model",
+   "book": "SICP",
+   "section": "1.1.5",
+   "title": "The substitution model",
+   "pages": "28-30",
+   "page": 28,
+   "keywords": [
+    "substitution model",
+    "modelo de substituicao",
+    "substitution",
+    "substituicao",
+    "procedure application"
+   ],
+   "summary": "Applying a compound procedure = evaluating the body with the formal parameters replaced by the arguments; it is for thinking, not a description of the real interpreter; it breaks down with mutable data.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "substitution model",
+    "formal parameter",
+    "mutable data"
+   ]
+  },
+  {
+   "id": "sicp-applicative-vs-normal-order",
+   "book": "SICP",
+   "section": "1.1.5",
+   "title": "Applicative order vs normal order",
+   "pages": "30-31",
+   "page": 30,
+   "keywords": [
+    "applicative order",
+    "normal order",
+    "ordem aplicativa",
+    "ordem normal",
+    "lazy",
+    "evaluation order"
+   ],
+   "summary": "Applicative: evaluates the arguments and applies; normal: fully expands and then reduces (evaluates (+ 5 1) twice in the example). They give the same value when substitution holds; Lisp uses applicative.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "normal-order",
+    "applicative-order",
+    "fully expand"
+   ]
+  },
+  {
+   "id": "sicp-lexical-scoping",
+   "book": "SICP",
+   "section": "1.1.8",
+   "title": "Lexical scoping and block structure",
+   "pages": "42-42",
+   "page": 42,
+   "keywords": [
+    "lexical scoping",
+    "escopo lexico",
+    "block structure",
+    "estrutura de blocos",
+    "free variable"
+   ],
+   "summary": "A free variable of an internal procedure takes its value from the enclosing procedure: lexical scoping; associated with the block structure of Algol 60.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "lexical scoping",
+    "block structure",
+    "Algol 60"
+   ]
+  },
+  {
+   "id": "sicp-first-class-procedures",
+   "book": "SICP",
+   "section": "1.3.4",
+   "title": "First-class procedures",
+   "pages": "84-84",
+   "page": 84,
+   "keywords": [
+    "first-class",
+    "primeira classe",
+    "higher-order",
+    "ordem superior",
+    "first class"
+   ],
+   "summary": "First-class elements can be named, passed as arguments, returned and stored in data structures; Lisp gives procedures this status.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "first-class",
+    "named by variables",
+    "included in data structures"
+   ]
+  },
+  {
+   "id": "sicp-higher-order-sum",
+   "book": "SICP",
+   "section": "1.3.1",
+   "title": "Procedures as arguments (sum)",
+   "pages": "69-69",
+   "page": 69,
+   "keywords": [
+    "sum",
+    "higher-order",
+    "ordem superior",
+    "pi-sum",
+    "sum-cubes",
+    "term next"
+   ],
+   "summary": "`sum` takes term, a, next, b; with it sum-cubes, sum-integers and pi-sum are defined.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "define (sum term a next b)",
+    "sum-cubes",
+    "pi-sum"
+   ]
+  },
+  {
+   "id": "sicp-procedures-returned",
+   "book": "SICP",
+   "section": "1.3.4",
+   "title": "Procedures as returned values",
+   "pages": "82-83",
+   "page": 82,
+   "keywords": [
+    "deriv",
+    "newton-transform",
+    "returned values",
+    "valor retornado",
+    "derivada",
+    "average-damp"
+   ],
+   "summary": "`deriv` takes a procedure and returns another (approximate derivative); Newton's method via newton-transform.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "define (deriv g)",
+    "newton-transform"
+   ]
+  },
+  {
+   "id": "sicp-data-abstraction-rational",
+   "book": "SICP",
+   "section": "2.1.1",
+   "title": "Data abstraction: rational numbers",
+   "pages": "91-94",
+   "page": 91,
+   "keywords": [
+    "data abstraction",
+    "abstracao de dados",
+    "constructors",
+    "selectors",
+    "construtores",
+    "seletores",
+    "make-rat"
+   ],
+   "summary": "Data abstraction isolates the use of compound data from its construction; interface = selectors and constructors (make-rat, numer, denom).",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "data abstraction",
+    "selectors",
+    "make-rat"
+   ]
+  },
+  {
+   "id": "sicp-abstraction-barriers",
+   "book": "SICP",
+   "section": "2.1.2",
+   "title": "Abstraction barriers",
+   "pages": "94-96",
+   "page": 94,
+   "keywords": [
+    "abstraction barrier",
+    "barreira de abstracao",
+    "barreiras de abstracao",
+    "information hiding"
+   ],
+   "summary": "Barriers isolate levels of the system (add-rat → make-rat/numer/denom → pairs); confining the dependence on the representation makes maintenance and modification easier.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "abstraction barriers",
+    "rational-number package"
+   ]
+  },
+  {
+   "id": "sicp-what-is-data",
+   "book": "SICP",
+   "section": "2.1.3",
+   "title": "What is data? (pairs as procedures)",
+   "pages": "97-98",
+   "page": 97,
+   "keywords": [
+    "what is meant by data",
+    "procedural pairs",
+    "cons como procedimento",
+    "message passing",
+    "passagem de mensagens"
+   ],
+   "summary": "Data = constructors + selectors + conditions; cons/car/cdr can be implemented with procedures only (dispatch); the style is called message passing.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "constructors",
+    "dispatch",
+    "message passing"
+   ]
+  },
+  {
+   "id": "sicp-closure-property",
+   "book": "SICP",
+   "section": "2.2",
+   "title": "Closure property",
+   "pages": "104-104",
+   "page": 104,
+   "keywords": [
+    "closure property",
+    "propriedade de fechamento",
+    "hierarchical data",
+    "box-and-pointer",
+    "closure"
+   ],
+   "summary": "A combination operation has the property if its results can be combined by the same operation (cons of pairs); it enables hierarchical structures. Note p.141: SICP does not use 'closure' in the implementation sense.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "closure property",
+    "hierarchical structures"
+   ]
+  },
+  {
+   "id": "sicp-closure-footnote",
+   "book": "SICP",
+   "section": "2.2 (nota 6)",
+   "title": "Note on the word 'closure'",
+   "pages": "141-141",
+   "page": 141,
+   "keywords": [
+    "closure footnote",
+    "abstract algebra",
+    "algebra abstrata",
+    "closure sentido",
+    "free variables"
+   ],
+   "summary": "The term comes from abstract algebra; SICP warns that the Lisp community uses closure for another technique (procedures with free variables), a sense not used in the book.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "abstract algebra",
+    "unrelated concept",
+    "free variables"
+   ]
+  },
+  {
+   "id": "sicp-conventional-interfaces",
+   "book": "SICP",
+   "section": "2.2.3",
+   "title": "Sequences as conventional interfaces",
+   "pages": "117-118",
+   "page": 117,
+   "keywords": [
+    "conventional interfaces",
+    "interfaces convencionais",
+    "map filter accumulate",
+    "signal flow",
+    "enumerate"
+   ],
+   "summary": "Enumerate, filter, map and accumulate as stages of a signal flow; a conventional interface for data structures.",
+   "ref": "abstracao-procedural-e-dados-compostos.md",
+   "verify": [
+    "conventional interfaces",
+    "filter",
+    "accumulate"
+   ]
+  },
+  {
+   "id": "sicp-multiple-representations",
+   "book": "SICP",
+   "section": "2.4.1",
+   "title": "Multiple representations (complex numbers)",
+   "pages": "168-172",
+   "page": 168,
+   "keywords": [
+    "multiple representations",
+    "representacoes multiplas",
+    "rectangular",
+    "polar",
+    "complex numbers",
+    "numeros complexos"
+   ],
+   "summary": "Complex numbers in rectangular or polar form: addition/subtraction natural in rectangular, multiplication/division in polar; principle of least commitment.",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "rectangular form",
+    "polar form",
+    "least commitment"
+   ]
+  },
+  {
+   "id": "sicp-tagged-data-dispatch",
+   "book": "SICP",
+   "section": "2.4.2-2.4.3",
+   "title": "Tagged data and dispatch on type",
+   "pages": "172-176",
+   "page": 172,
+   "keywords": [
+    "tagged data",
+    "dados etiquetados",
+    "attach-tag",
+    "dispatching on type",
+    "despacho por tipo",
+    "nao aditivo"
+   ],
+   "summary": "Type tags and generic selectors with cond; weaknesses: changing the selectors for each new type and name collisions; a non-additive technique.",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "attach-tag",
+    "dispatching on type",
+    "not additive"
+   ]
+  },
+  {
+   "id": "sicp-data-directed-programming",
+   "book": "SICP",
+   "section": "2.4.3",
+   "title": "Data-directed programming",
+   "pages": "176-179",
+   "page": 176,
+   "keywords": [
+    "data-directed",
+    "orientada a dados",
+    "additivity",
+    "aditividade",
+    "put get",
+    "apply-generic",
+    "operation-and-type table"
+   ],
+   "summary": "Two-dimensional operation×type table; packages installed with put; apply-generic looks up the method; generic selectors do not change when a representation is added.",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "two-dimensional table",
+    "install-rectangular-package",
+    "apply-generic"
+   ]
+  },
+  {
+   "id": "sicp-message-passing",
+   "book": "SICP",
+   "section": "2.4.3",
+   "title": "Message passing",
+   "pages": "181-182",
+   "page": 181,
+   "keywords": [
+    "message passing",
+    "passagem de mensagens",
+    "intelligent data objects",
+    "dispatch on operation names"
+   ],
+   "summary": "Decomposes the table into columns: 'intelligent' objects that dispatch on the operation name; a useful technique, to be taken up again in ch. 3.",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "message passing",
+    "intelligent data objects",
+    "dispatch"
+   ]
+  },
+  {
+   "id": "sicp-coercion",
+   "book": "SICP",
+   "section": "2.5.2",
+   "title": "Coercion between types",
+   "pages": "188-190",
+   "page": 188,
+   "keywords": [
+    "coercion",
+    "coercao",
+    "put-coercion",
+    "cross-type operations",
+    "tabela de coercao"
+   ],
+   "summary": "Coercion table; apply-generic tries to coerce one argument to the other's type; one procedure per pair of types.",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "coercion",
+    "put-coercion",
+    "cross-type"
+   ]
+  },
+  {
+   "id": "sicp-type-tower",
+   "book": "SICP",
+   "section": "2.5.2",
+   "title": "Type tower and hierarchies",
+   "pages": "190-193",
+   "page": 190,
+   "keywords": [
+    "tower of types",
+    "torre de tipos",
+    "raise",
+    "hierarchies of types",
+    "type hierarchy"
+   ],
+   "summary": "Integer ⊂ rational ⊂ real ⊂ complex; the raise procedure goes up one level; general hierarchies are not towers (multiple supertypes).",
+   "ref": "programacao-orientada-a-dados-e-genericos.md",
+   "verify": [
+    "tower",
+    "raise",
+    "supertype"
+   ]
+  },
+  {
+   "id": "sicp-costs-of-assignment",
+   "book": "SICP",
+   "section": "3.1.3",
+   "title": "The cost of assignment",
+   "pages": "217-221",
+   "page": 217,
+   "keywords": [
+    "costs of assignment",
+    "set!",
+    "assignment",
+    "atribuicao",
+    "custo da atribuicao",
+    "functional programming",
+    "imperative programming",
+    "sameness",
+    "aliasing"
+   ],
+   "summary": "With set! substitution no longer holds: a variable becomes a place; equality/identity get complicated; the imperative style brings pitfalls (order of assignments).",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "costs of introducing assignment",
+    "functional programming",
+    "imperative programming"
+   ]
+  },
+  {
+   "id": "sicp-referential-transparency",
+   "book": "SICP",
+   "section": "3.1.3",
+   "title": "Referential transparency",
+   "pages": "220-220",
+   "page": 220,
+   "keywords": [
+    "referential transparency",
+    "transparencia referencial",
+    "referentially transparent",
+    "substituir iguais"
+   ],
+   "summary": "A language in which equals can be substituted for equals is referentially transparent; set! violates this.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "referentially transparent",
+    "equals can be substituted for equals"
+   ]
+  },
+  {
+   "id": "sicp-environment-model",
+   "book": "SICP",
+   "section": "3.2",
+   "title": "The environment model",
+   "pages": "224-227",
+   "page": 224,
+   "keywords": [
+    "environment model",
+    "modelo de ambiente",
+    "frame",
+    "frames",
+    "enclosing environment",
+    "ambiente",
+    "environment",
+    "binding",
+    "shadow"
+   ],
+   "summary": "Environment = sequence of frames (tables of bindings) with a pointer to the enclosing environment; procedure = code + environment; applying creates a new frame; define and set! act on the frame.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "environment is a sequence of frames",
+    "enclosing environment",
+    "pair consisting of some code"
+   ]
+  },
+  {
+   "id": "sicp-frames-local-state",
+   "book": "SICP",
+   "section": "3.2.3",
+   "title": "Frames as a repository of local state",
+   "pages": "230-234",
+   "page": 230,
+   "keywords": [
+    "make-withdraw",
+    "local state",
+    "estado local",
+    "frames local state",
+    "W1 W2"
+   ],
+   "summary": "make-withdraw: E1 holds balance; (W1 50) creates a frame whose enclosing environment is E1; W2 has another environment and independent state.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "make-withdraw",
+    "E1",
+    "enclosing environment"
+   ]
+  },
+  {
+   "id": "sicp-concurrency-time",
+   "book": "SICP",
+   "section": "3.4.1",
+   "title": "Concurrency: time is of the essence",
+   "pages": "279-283",
+   "page": 279,
+   "keywords": [
+    "concurrency",
+    "concorrencia",
+    "interleaving",
+    "intercalacao",
+    "time",
+    "tempo",
+    "shared state"
+   ],
+   "summary": "Assignment forces us to admit time; processes sharing balance can interleave read/compute/write and lose money; criterion: same result as some sequential order.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "interleave",
+    "same as if they had run sequentially",
+    "Time Is of the Essence"
+   ]
+  },
+  {
+   "id": "sicp-serializers",
+   "book": "SICP",
+   "section": "3.4.2",
+   "title": "Serializers",
+   "pages": "284-290",
+   "page": 284,
+   "keywords": [
+    "serializer",
+    "serializador",
+    "make-serializer",
+    "parallel-execute",
+    "serialized-exchange"
+   ],
+   "summary": "Sets of procedures of which only one execution at a time is allowed; make-serializer, parallel-execute; exchanging between accounts requires exposing the serializer.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "make-serializer",
+    "parallel-execute",
+    "serialized"
+   ]
+  },
+  {
+   "id": "sicp-mutex-test-and-set",
+   "book": "SICP",
+   "section": "3.4.2",
+   "title": "Mutex and test-and-set!",
+   "pages": "290-291",
+   "page": 290,
+   "keywords": [
+    "mutex",
+    "test-and-set",
+    "atomic",
+    "atomico",
+    "semaphore"
+   ],
+   "summary": "Serializers use a mutex; test-and-set! must be atomic; the implementation depends on the system (time-slicing or hardware instructions).",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "mutex",
+    "test-and-set!",
+    "atomically"
+   ]
+  },
+  {
+   "id": "sicp-deadlock",
+   "book": "SICP",
+   "section": "3.4.2",
+   "title": "Deadlock",
+   "pages": "292-292",
+   "page": 292,
+   "keywords": [
+    "deadlock",
+    "impasse",
+    "numbering resources",
+    "ordenar recursos"
+   ],
+   "summary": "Two processes waiting for each other; way out: number the resources and acquire the lowest-numbered one first; harder cases may require sophisticated techniques.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "deadlock",
+    "unique identification number"
+   ]
+  },
+  {
+   "id": "sicp-streams",
+   "book": "SICP",
+   "section": "3.5.1",
+   "title": "Streams, delay and force",
+   "pages": "296-302",
+   "page": 296,
+   "keywords": [
+    "stream",
+    "streams",
+    "cons-stream",
+    "delay",
+    "force",
+    "memo-proc",
+    "memoization",
+    "memoizacao",
+    "lazy list"
+   ],
+   "summary": "cons-stream = cons a (delay b); delay = lambda with no arguments; force calls it; memo-proc stores the result.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "cons-stream",
+    "(lambda () <exp>)",
+    "memo-proc"
+   ]
+  },
+  {
+   "id": "sicp-infinite-streams",
+   "book": "SICP",
+   "section": "3.5.2",
+   "title": "Infinite streams",
+   "pages": "303-306",
+   "page": 303,
+   "keywords": [
+    "infinite streams",
+    "streams infinitos",
+    "integers",
+    "fibs",
+    "sieve",
+    "crivo",
+    "ones",
+    "add-streams"
+   ],
+   "summary": "integers-starting-from, no-sevens, sieve of Eratosthenes, implicit definition of ones/integers/fibs.",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "integers-starting-from",
+    "sieve of Eratosthenes",
+    "add-streams"
+   ]
+  },
+  {
+   "id": "sicp-mutability-vs-delay",
+   "book": "SICP",
+   "section": "3.5.4-3.5.5",
+   "title": "Mutability and delayed evaluation",
+   "pages": "325-326",
+   "page": 325,
+   "keywords": [
+    "mutability delayed evaluation",
+    "mutabilidade",
+    "modularity functional",
+    "do not mix well",
+    "monte-carlo stream"
+   ],
+   "summary": "Mutability and delayed evaluation do not mix well; streams allow modularity without assignment (Monte Carlo).",
+   "ref": "estado-mutavel-concorrencia-e-streams.md",
+   "verify": [
+    "do not mix well",
+    "no assignment or local state"
+   ]
+  },
+  {
+   "id": "sicp-metacircular-evaluator",
+   "book": "SICP",
+   "section": "4.1.1",
+   "title": "Metacircular evaluator: eval and apply",
+   "pages": "335-338",
+   "page": 335,
+   "keywords": [
+    "metacircular evaluator",
+    "avaliador metacircular",
+    "eval",
+    "apply",
+    "eval-apply cycle",
+    "ciclo eval apply"
+   ],
+   "summary": "An evaluator written in the language it evaluates; eval does case analysis on the syntax; apply distinguishes primitives from compounds.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "metacircular",
+    "eval",
+    "apply-primitive-procedure"
+   ]
+  },
+  {
+   "id": "sicp-universal-machine",
+   "book": "SICP",
+   "section": "4.1.5",
+   "title": "Data as programs; universal machine",
+   "pages": "352-354",
+   "page": 352,
+   "keywords": [
+    "universal machine",
+    "maquina universal",
+    "data as programs",
+    "dados como programas",
+    "halting problem"
+   ],
+   "summary": "The evaluator is seen as a universal machine: it imitates other machines described as Lisp programs.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "universal machine",
+    "Data as Programs"
+   ]
+  },
+  {
+   "id": "sicp-analyze-separation",
+   "book": "SICP",
+   "section": "4.1.7",
+   "title": "Separating analysis and execution (analyze)",
+   "pages": "359-360",
+   "page": 359,
+   "keywords": [
+    "analyze",
+    "syntactic analysis",
+    "analise sintatica",
+    "execution procedure",
+    "analyzing evaluator"
+   ],
+   "summary": "analyze takes only the expression and returns an execution procedure that takes the environment; the analysis happens once.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "analyze",
+    "execution procedure",
+    "syntactic analysis"
+   ]
+  },
+  {
+   "id": "sicp-lazy-evaluation",
+   "book": "SICP",
+   "section": "4.2",
+   "title": "Lazy evaluation and thunks",
+   "pages": "367-372",
+   "page": 367,
+   "keywords": [
+    "lazy evaluation",
+    "avaliacao preguicosa",
+    "thunk",
+    "thunks",
+    "force-it",
+    "actual-value",
+    "strict",
+    "non-strict",
+    "call-by-need"
+   ],
+   "summary": "Delayed arguments become thunks (expression + environment); forced in primitives, predicates and operators; memoization with evaluated-thunk.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "thunk",
+    "actual-value",
+    "evaluated-thunk"
+   ]
+  },
+  {
+   "id": "sicp-amb",
+   "book": "SICP",
+   "section": "4.3.1",
+   "title": "The amb operator and search",
+   "pages": "379-381",
+   "page": 379,
+   "keywords": [
+    "amb",
+    "nondeterministic",
+    "nao deterministico",
+    "require",
+    "backtracking",
+    "choice point",
+    "an-element-of"
+   ],
+   "summary": "amb chooses ambiguously; (amb) fails; require discards; systematic search with backtracking; choice points.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "amb",
+    "require",
+    "choice point"
+   ]
+  },
+  {
+   "id": "sicp-amb-evaluator",
+   "book": "SICP",
+   "section": "4.3.3",
+   "title": "The amb evaluator: success and failure continuations",
+   "pages": "389-391",
+   "page": 389,
+   "keywords": [
+    "ambeval",
+    "success continuation",
+    "failure continuation",
+    "continuacao de sucesso",
+    "continuacao de falha"
+   ],
+   "summary": "Execution procedures take environment, succeed and fail; side effects are undone when backtracking.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "ambeval",
+    "success continuation",
+    "failure continuation"
+   ]
+  },
+  {
+   "id": "sicp-stop-and-copy",
+   "book": "SICP",
+   "section": "5.3.2",
+   "title": "Stop-and-copy garbage collection",
+   "pages": "489-494",
+   "page": 489,
+   "keywords": [
+    "stop-and-copy",
+    "garbage collection",
+    "coleta de lixo",
+    "broken heart",
+    "forwarding address",
+    "compacting",
+    "mark-sweep"
+   ],
+   "summary": "Memory split into two halves; copies useful objects to the free half; broken heart and forwarding address; it is a compactor and examines only the useful part.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "stop-and-copy",
+    "broken heart",
+    "forwarding address"
+   ]
+  },
+  {
+   "id": "sicp-tail-recursion",
+   "book": "SICP",
+   "section": "5.4.2",
+   "title": "Tail recursion in the explicit-control evaluator",
+   "pages": "501-503",
+   "page": 501,
+   "keywords": [
+    "tail recursion",
+    "recursao em cauda",
+    "tail-recursive",
+    "ev-sequence",
+    "explicit-control evaluator"
+   ],
+   "summary": "The tail-recursive evaluator runs sqrt-iter without growing space; the metacircular one does not specify it; ev-sequence restores continue before the last expression.",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md",
+   "verify": [
+    "tail-recursive",
+    "ev-sequence"
+   ]
+  },
+  {
+   "id": "taup-pike-rules",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Pike's rules and McIlroy's philosophy",
+   "pages": "36-37",
+   "page": 36,
+   "keywords": [
+    "rob pike",
+    "pike rules",
+    "mcilroy",
+    "data dominates",
+    "ken thompson",
+    "brute force"
+   ],
+   "summary": "McIlroy's philosophy and Pike's rules (measure before optimizing; data dominates; 'there is no Rule 6') precede the 17 rules.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule 5. Data dominates",
+    "Rule 2. Measure",
+    "Rule 6"
+   ]
+  },
+  {
+   "id": "taup-17-rules-list",
+   "book": "TAUP",
+   "section": "1",
+   "title": "The list of the 17 rules",
+   "pages": "37-38",
+   "page": 37,
+   "keywords": [
+    "17 rules",
+    "17 regras",
+    "seventeen rules",
+    "unix philosophy",
+    "filosofia unix",
+    "regras"
+   ],
+   "summary": "Numbered list of the 17 rules from Modularity to Extensibility, abstracted by the author.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Modularity",
+    "Rule of Extensibility"
+   ]
+  },
+  {
+   "id": "taup-rule-modularity",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Modularity",
+   "pages": "38-39",
+   "page": 38,
+   "keywords": [
+    "modularity",
+    "modularidade",
+    "simple parts",
+    "clean interfaces"
+   ],
+   "summary": "Simple parts connected by clean interfaces; problems stay local and one part can be updated without breaking the whole.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Modularity",
+    "clean interfaces"
+   ]
+  },
+  {
+   "id": "taup-rule-clarity",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Clarity",
+   "pages": "39-39",
+   "page": 39,
+   "keywords": [
+    "clarity",
+    "clareza",
+    "cleverness",
+    "esperteza"
+   ],
+   "summary": "Write for whoever will maintain it; trading a small performance gain for great obscurity is a bad deal.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Clarity",
+    "cleverness"
+   ]
+  },
+  {
+   "id": "taup-rule-composition",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Composition",
+   "pages": "39-40",
+   "page": 39,
+   "keywords": [
+    "composition",
+    "composicao",
+    "filters",
+    "filtros",
+    "text streams"
+   ],
+   "summary": "Programs should connect; filters of text streams; the text stream imposes encapsulation.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Composition",
+    "text stream"
+   ]
+  },
+  {
+   "id": "taup-rule-separation",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Separation",
+   "pages": "40-41",
+   "page": 40,
+   "keywords": [
+    "separation",
+    "separacao",
+    "policy",
+    "politica",
+    "mechanism",
+    "mecanismo",
+    "engines"
+   ],
+   "summary": "Separate policy from mechanism and interfaces from engines; they change on different time scales.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Separation",
+    "policy from mechanism"
+   ]
+  },
+  {
+   "id": "taup-rule-simplicity",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Simplicity",
+   "pages": "41-42",
+   "page": 41,
+   "keywords": [
+    "simplicity",
+    "simplicidade",
+    "kiss",
+    "complexity",
+    "complexidade"
+   ],
+   "summary": "Design for simplicity; complexity only where unavoidable; 'technical machismo' and inflated requirements.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Simplicity",
+    "technical machismo"
+   ]
+  },
+  {
+   "id": "taup-rule-parsimony",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Parsimony",
+   "pages": "42-42",
+   "page": 42,
+   "keywords": [
+    "parsimony",
+    "parcimonia",
+    "big program",
+    "programa grande"
+   ],
+   "summary": "A big program only when it is shown that nothing smaller will do.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Parsimony",
+    "clear by demonstration"
+   ]
+  },
+  {
+   "id": "taup-rule-transparency",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Transparency",
+   "pages": "42-43",
+   "page": 42,
+   "keywords": [
+    "transparency",
+    "transparencia",
+    "visibility",
+    "discoverable",
+    "debugging"
+   ],
+   "summary": "Design for visibility; transparent = you can understand what it does; discoverable = exposes internal state.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Transparency",
+    "discoverable"
+   ]
+  },
+  {
+   "id": "taup-rule-robustness",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Robustness",
+   "pages": "43-44",
+   "page": 43,
+   "keywords": [
+    "robustness",
+    "robustez",
+    "special cases",
+    "casos especiais"
+   ],
+   "summary": "Child of transparency and simplicity; avoid special cases; tolerate unusual inputs.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Robustness",
+    "special cases"
+   ]
+  },
+  {
+   "id": "taup-rule-representation",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Representation",
+   "pages": "44-44",
+   "page": 44,
+   "keywords": [
+    "representation",
+    "representacao",
+    "fold knowledge into data",
+    "data-driven"
+   ],
+   "summary": "Fold knowledge into data so the logic can be simple; conversion array vs switch; Pike's Rule 5.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Representation",
+    "Rob Pike"
+   ]
+  },
+  {
+   "id": "taup-rule-least-surprise",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Least Surprise",
+   "pages": "44-45",
+   "page": 44,
+   "keywords": [
+    "least surprise",
+    "menor surpresa",
+    "least astonishment",
+    "astonishment"
+   ],
+   "summary": "Model the interface on conventions and analogous programs; respect Unix traditions.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Least Surprise",
+    "Astonishment"
+   ]
+  },
+  {
+   "id": "taup-rule-silence",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Silence",
+   "pages": "45-46",
+   "page": 45,
+   "keywords": [
+    "silence",
+    "silencio",
+    "rule of silence",
+    "chatty",
+    "falante",
+    "verbose"
+   ],
+   "summary": "With nothing surprising to say, say nothing; predates video terminals; the user's attention is a scarce resource.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Silence",
+    "silence is golden"
+   ]
+  },
+  {
+   "id": "taup-rule-repair",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Repair",
+   "pages": "46-47",
+   "page": 46,
+   "keywords": [
+    "repair",
+    "reparo",
+    "fail noisily",
+    "fail-fast",
+    "falhar cedo",
+    "postel"
+   ],
+   "summary": "Repair what you can; when failing, fail noisily and early; mentions Postel's prescription.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Repair",
+    "fail noisily"
+   ]
+  },
+  {
+   "id": "taup-rule-economy",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Economy",
+   "pages": "47-47",
+   "page": 47,
+   "keywords": [
+    "economy",
+    "economia",
+    "programmer time",
+    "tempo do programador"
+   ],
+   "summary": "Programmer time is expensive; conserve it in preference to machine time.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Economy",
+    "Programmer time is expensive"
+   ]
+  },
+  {
+   "id": "taup-rule-generation",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Generation",
+   "pages": "47-48",
+   "page": 47,
+   "keywords": [
+    "generation",
+    "geracao",
+    "code generators",
+    "geradores de codigo",
+    "hand-hacking"
+   ],
+   "summary": "Avoid hand-hacking; write programs that write programs; parser/lexer generators.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Generation",
+    "write programs to write programs"
+   ]
+  },
+  {
+   "id": "taup-rule-optimization",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Optimization",
+   "pages": "48-49",
+   "page": 48,
+   "keywords": [
+    "optimization",
+    "otimizacao",
+    "premature optimization",
+    "prototype before polishing",
+    "knuth",
+    "prototipar"
+   ],
+   "summary": "Prototype before polishing; premature optimization (Knuth, whom he attributes to Hoare); K&P: 90% of the functionality now.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Optimization",
+    "premature optimization",
+    "Hoare"
+   ]
+  },
+  {
+   "id": "taup-rule-diversity",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Diversity",
+   "pages": "49-50",
+   "page": 49,
+   "keywords": [
+    "diversity",
+    "diversidade",
+    "one true way",
+    "unico caminho"
+   ],
+   "summary": "Distrust 'one true way'; many languages and open systems.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Diversity",
+    "one true way"
+   ]
+  },
+  {
+   "id": "taup-rule-extensibility",
+   "book": "TAUP",
+   "section": "1",
+   "title": "Rule of Extensibility",
+   "pages": "50-50",
+   "page": 50,
+   "keywords": [
+    "extensibility",
+    "extensibilidade",
+    "version number",
+    "self-describing",
+    "versionamento"
+   ],
+   "summary": "Leave room to grow; self-describing versioned formats; not a license for unnecessary features.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Rule of Extensibility",
+    "version number"
+   ]
+  },
+  {
+   "id": "taup-kiss",
+   "book": "TAUP",
+   "section": "1",
+   "title": "The single lesson: KISS",
+   "pages": "50-51",
+   "page": 50,
+   "keywords": [
+    "kiss",
+    "keep it simple",
+    "one lesson",
+    "uma licao"
+   ],
+   "summary": "The whole philosophy boils down to the KISS principle.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "KISS principle"
+   ]
+  },
+  {
+   "id": "taup-textuality-serialization",
+   "book": "TAUP",
+   "section": "5",
+   "title": "Textuality: serialization, interoperability and transparency",
+   "pages": "132-133",
+   "page": 132,
+   "keywords": [
+    "textuality",
+    "textualidade",
+    "serialization",
+    "serializacao",
+    "marshaling",
+    "endian",
+    "interoperability"
+   ],
+   "summary": "File formats and protocols involve serializing structures; addresses lose meaning; endianness and 32/64 bits cause problems; themes: interoperability, transparency, extensibility, economy.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "marshaling",
+    "big- vs. little-endian",
+    "Interoperability, transparency, extensibility"
+   ]
+  },
+  {
+   "id": "taup-binary-vs-text",
+   "book": "TAUP",
+   "section": "5",
+   "title": "Text vs binary",
+   "pages": "134-135",
+   "page": 134,
+   "keywords": [
+    "binary format",
+    "formato binario",
+    "text vs binary",
+    "texto vs binario",
+    "ipv4",
+    "compression"
+   ],
+   "summary": "Complex binary formats should be avoided; compression over text; binary only with volume that matters; extensibility weighs against binary.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "lie down until the feeling passes",
+    "IPv4",
+    "premature-optimization"
+   ]
+  },
+  {
+   "id": "taup-password-file",
+   "book": "TAUP",
+   "section": "5",
+   "title": "Case study: the Unix password file",
+   "pages": "135-136",
+   "page": 135,
+   "keywords": [
+    "password file",
+    "arquivo de senhas",
+    "passwd",
+    "newsrc",
+    "png"
+   ],
+   "summary": "Text with one record per line and colon-separated fields; the ~8% gain of binary does not compensate for editability and the use of grep.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "Password file",
+    "8% size",
+    "grep"
+   ]
+  },
+  {
+   "id": "taup-metaformats",
+   "book": "TAUP",
+   "section": "5",
+   "title": "Metaformats for data files",
+   "pages": "139-146",
+   "page": 139,
+   "keywords": [
+    "metaformats",
+    "metaformatos",
+    "dsv",
+    "rfc 822",
+    "cookie-jar",
+    "record-jar",
+    "xml",
+    "ini"
+   ],
+   "summary": "DSV, RFC 822, cookie-jar, record-jar, XML and INI; use an existing metaformat instead of an idiosyncratic format.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "metaformat",
+    "DSV",
+    "RFC 822"
+   ]
+  },
+  {
+   "id": "taup-multiprogramming",
+   "book": "TAUP",
+   "section": "7",
+   "title": "Multiprogramming: cooperating processes",
+   "pages": "190-192",
+   "page": 190,
+   "keywords": [
+    "multiprogramming",
+    "multiprogramacao",
+    "cooperating processes",
+    "processos cooperantes",
+    "process spawning",
+    "fork"
+   ],
+   "summary": "Split programs into cooperating processes; Unix makes processes cheap, offers IPC and encourages textual formats; bugs accumulate at the interfaces.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "multiprogramming",
+    "cooperating processes",
+    "fork"
+   ]
+  },
+  {
+   "id": "taup-pipes-filters",
+   "book": "TAUP",
+   "section": "7",
+   "title": "Pipes, redirection and filters",
+   "pages": "194-194",
+   "page": 194,
+   "keywords": [
+    "pipe",
+    "pipes",
+    "filter",
+    "filtro",
+    "redirection",
+    "redirecionamento",
+    "mcilroy",
+    "standard input"
+   ],
+   "summary": "Pipe invented by McIlroy; programs as filters read from standard input and write to standard output.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "Doug McIlroy",
+    "standard input",
+    "filters"
+   ]
+  },
+  {
+   "id": "taup-threads",
+   "book": "TAUP",
+   "section": "7",
+   "title": "Threads: threat or menace?",
+   "pages": "213-216",
+   "page": 213,
+   "keywords": [
+    "threads",
+    "threading",
+    "multithreading",
+    "shared memory",
+    "memoria compartilhada",
+    "last resort"
+   ],
+   "summary": "Threads are a performance hack; contention in shared space, no encapsulation, hard to debug and not very portable; last resort.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "Threads",
+    "performance hack",
+    "last resort"
+   ]
+  },
+  {
+   "id": "taup-minilanguages",
+   "book": "TAUP",
+   "section": "8",
+   "title": "Minilanguages",
+   "pages": "217-218",
+   "page": 217,
+   "keywords": [
+    "minilanguage",
+    "minilinguagem",
+    "little languages",
+    "dsl",
+    "domain-specific",
+    "sendmail"
+   ],
+   "summary": "Small domain languages; fewer lines, fewer bugs; three paths (two good, one dangerous: extending feature by feature).",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "minilanguage",
+    "sendmail.cf",
+    "little languages"
+   ]
+  },
+  {
+   "id": "taup-language-taxonomy",
+   "book": "TAUP",
+   "section": "8",
+   "title": "Taxonomy of languages",
+   "pages": "219-221",
+   "page": 219,
+   "keywords": [
+    "taxonomy of languages",
+    "taxonomia",
+    "declarative",
+    "declarativa",
+    "imperative",
+    "turing-complete",
+    "m4",
+    "make"
+   ],
+   "summary": "From the data file to general-purpose interpreters: declarative (m4, make, yacc/lex, XSLT), domain-imperative (bc/dc) and general.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "Taxonomy of languages",
+    "declarative minilanguage",
+    "Turing-complete"
+   ]
+  },
+  {
+   "id": "taup-designing-minilanguages",
+   "book": "TAUP",
+   "section": "8",
+   "title": "Designing minilanguages",
+   "pages": "244-246",
+   "page": 244,
+   "keywords": [
+    "designing minilanguages",
+    "projetando minilinguagens",
+    "complexity level",
+    "embedding",
+    "accidentally turing-complete"
+   ],
+   "summary": "Keep it simple; prefer structured data; avoid accidentally Turing-complete languages; consider extending/embedding a scripting language.",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md",
+   "verify": [
+    "accidentally Turing-complete",
+    "embedding",
+    "Choosing the Right Complexity Level"
+   ]
+  },
+  {
+   "id": "taup-profiling-90-10",
+   "book": "TAUP",
+   "section": "15",
+   "title": "Profiling: 90% of the time in 10% of the code",
+   "pages": "412-412",
+   "page": 412,
+   "keywords": [
+    "profiling",
+    "profilers",
+    "90% of the execution time",
+    "hot spots",
+    "pontos quentes",
+    "90/10",
+    "regra 90 10"
+   ],
+   "summary": "As a rule of thumb, 90% of the execution time is spent in 10% of the code; profilers identify these hot spots (outside the Rule of Optimization).",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "90% of the execution time of your program",
+    "10% of its code",
+    "Profilers"
+   ]
+  },
+  {
+   "id": "taup-filter-cantrip",
+   "book": "TAUP",
+   "section": "11",
+   "title": "Interface patterns: filter and cantrip",
+   "pages": "305-306",
+   "page": 305,
+   "keywords": [
+    "filter pattern",
+    "cantrip",
+    "interface design patterns",
+    "padroes de interface",
+    "exit status"
+   ],
+   "summary": "Filter: stdin → stdout; cantrip: no input or output, only invocation and a numeric exit status.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Filter Pattern",
+    "cantrip",
+    "numeric exit status"
+   ]
+  },
+  {
+   "id": "taup-silence-is-golden",
+   "book": "TAUP",
+   "section": "11",
+   "title": "Silence is Golden (ch. 11)",
+   "pages": "327-327",
+   "page": 327,
+   "keywords": [
+    "silence is golden",
+    "silencio",
+    "babble",
+    "standard error",
+    "stderr",
+    "status messages"
+   ],
+   "summary": "Programs that chatter do not compose; status messages on standard output get in the way; only real errors go to standard error.",
+   "ref": "as-17-regras-da-filosofia-unix.md",
+   "verify": [
+    "Silence Is Golden",
+    "standard error",
+    "babble"
+   ]
+  },
+  {
+   "id": "ci-map-of-territory",
+   "book": "CI",
+   "section": "2",
+   "title": "The map of the territory: phases",
+   "pages": "10-16",
+   "page": 10,
+   "keywords": [
+    "map of the territory",
+    "pipeline",
+    "phases",
+    "fases",
+    "scanning",
+    "parsing",
+    "static analysis",
+    "optimization",
+    "code generation",
+    "runtime"
+   ],
+   "summary": "Scanning, parsing, static analysis (binding), IR, optimization, code generation, VM and runtime.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "Scanning",
+    "Static analysis",
+    "intermediate representation",
+    "Code generation",
+    "Runtime"
+   ]
+  },
+  {
+   "id": "ci-ir-front-back-end",
+   "book": "CI",
+   "section": "2",
+   "title": "Front end, back end and IR",
+   "pages": "13-14",
+   "page": 13,
+   "keywords": [
+    "intermediate representation",
+    "ir",
+    "front end",
+    "back end",
+    "middle end",
+    "ssa",
+    "three-address"
+   ],
+   "summary": "IR as the interface between source and target languages; a shared IR reduces N×M compilers.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "front end",
+    "intermediate representation",
+    "three-address code"
+   ]
+  },
+  {
+   "id": "ci-shortcuts",
+   "book": "CI",
+   "section": "2",
+   "title": "Shortcuts: single pass, tree-walk, transpilers",
+   "pages": "16-18",
+   "page": 16,
+   "keywords": [
+    "single-pass",
+    "passagem unica",
+    "tree-walk",
+    "transpiler",
+    "source-to-source"
+   ],
+   "summary": "Single-pass compilers, tree-walk interpreters (slow), transpilers.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "Single-pass compilers",
+    "Tree-walk interpreters",
+    "Transpilers"
+   ]
+  },
+  {
+   "id": "ci-jit",
+   "book": "CI",
+   "section": "2",
+   "title": "Just-in-time compilation",
+   "pages": "18-18",
+   "page": 18,
+   "keywords": [
+    "jit",
+    "just-in-time",
+    "hotspot",
+    "profiling hooks",
+    "hot spots"
+   ],
+   "summary": "JIT compiles to native code at load time; the most sophisticated ones recompile hot spots.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "Just-in-time compilation",
+    "HotSpot"
+   ]
+  },
+  {
+   "id": "ci-compilers-vs-interpreters",
+   "book": "CI",
+   "section": "2",
+   "title": "Compilers vs interpreters",
+   "pages": "18-20",
+   "page": 18,
+   "keywords": [
+    "compiler vs interpreter",
+    "compilador vs interpretador",
+    "cpython",
+    "go run",
+    "go build"
+   ],
+   "summary": "Compiling and interpreting are not mutually exclusive; CPython is an interpreter and has a compiler.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "Compilers and Interpreters",
+    "CPython"
+   ]
+  },
+  {
+   "id": "ci-lexemes-tokens",
+   "book": "CI",
+   "section": "4",
+   "title": "Lexemes and tokens",
+   "pages": "43-44",
+   "page": 43,
+   "keywords": [
+    "lexeme",
+    "lexema",
+    "token",
+    "tokens",
+    "scanner",
+    "tokentype"
+   ],
+   "summary": "A lexeme is the smallest sequence with meaning; token = lexeme + type + literal + line.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "Lexemes and Tokens",
+    "Token type",
+    "Literal value",
+    "Location information"
+   ]
+  },
+  {
+   "id": "ci-context-free-grammars",
+   "book": "CI",
+   "section": "5",
+   "title": "Context-free grammars",
+   "pages": "60-62",
+   "page": 60,
+   "keywords": [
+    "context-free grammar",
+    "gramatica livre de contexto",
+    "cfg",
+    "bnf",
+    "terminal",
+    "nonterminal",
+    "production"
+   ],
+   "summary": "A grammar generates strings; terminals, nonterminals and productions; a BNF variant.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "context-free",
+    "terminal",
+    "Backus"
+   ]
+  },
+  {
+   "id": "ci-precedence-associativity",
+   "book": "CI",
+   "section": "6",
+   "title": "Precedence and associativity",
+   "pages": "81-83",
+   "page": 81,
+   "keywords": [
+    "precedence",
+    "precedencia",
+    "associativity",
+    "associatividade",
+    "ambiguity",
+    "left recursion",
+    "stratified"
+   ],
+   "summary": "Lox precedence table (equality to unary); stratified grammar; avoid left recursion.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Precedence",
+    "Associativity",
+    "left-recursive"
+   ]
+  },
+  {
+   "id": "ci-recursive-descent",
+   "book": "CI",
+   "section": "6",
+   "title": "Recursive descent",
+   "pages": "84-84",
+   "page": 84,
+   "keywords": [
+    "recursive descent",
+    "descida recursiva",
+    "top-down parser",
+    "gcc v8 roslyn"
+   ],
+   "summary": "Top-down parser that translates rules into code; used by GCC, V8 and Roslyn.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Recursive descent",
+    "GCC",
+    "Roslyn"
+   ]
+  },
+  {
+   "id": "ci-panic-mode",
+   "book": "CI",
+   "section": "6",
+   "title": "Error recovery: panic mode",
+   "pages": "91-94",
+   "page": 91,
+   "keywords": [
+    "panic mode",
+    "modo de panico",
+    "synchronization",
+    "sincronizacao",
+    "error recovery",
+    "recuperacao de erros",
+    "cascaded errors"
+   ],
+   "summary": "On detecting an error the parser synchronizes by discarding tokens up to a statement boundary; avoids cascading errors.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "panic mode",
+    "synchronization",
+    "cascaded errors"
+   ]
+  },
+  {
+   "id": "ci-expression-problem",
+   "book": "CI",
+   "section": "5",
+   "title": "The expression problem",
+   "pages": "70-71",
+   "page": 70,
+   "keywords": [
+    "expression problem",
+    "problema da expressao",
+    "rows columns",
+    "pattern matching",
+    "ml family"
+   ],
+   "summary": "Types×operations table; OO makes new rows easy, ML new columns; neither makes both easy.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "expression problem",
+    "pattern matching"
+   ]
+  },
+  {
+   "id": "ci-visitor-pattern",
+   "book": "CI",
+   "section": "5",
+   "title": "The Visitor pattern",
+   "pages": "72-75",
+   "page": 72,
+   "keywords": [
+    "visitor",
+    "visitor pattern",
+    "padrao visitor",
+    "accept",
+    "visit methods",
+    "pastry"
+   ],
+   "summary": "Approximates the functional style in OO: adds operations without touching the types; Visitor interface with one method per type; accept calls the right method.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Visitor pattern",
+    "accept()",
+    "functional style"
+   ]
+  },
+  {
+   "id": "ci-static-scope",
+   "book": "CI",
+   "section": "11",
+   "title": "Static scope and the resolution rule",
+   "pages": "163-164",
+   "page": 163,
+   "keywords": [
+    "static scope",
+    "escopo estatico",
+    "lexical scope",
+    "escopo lexico",
+    "scope rules",
+    "shadowing"
+   ],
+   "summary": "A used variable refers to the preceding declaration with the same name in the innermost scope; part of the static semantics.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Static Scope",
+    "innermost scope",
+    "preceding declaration"
+   ]
+  },
+  {
+   "id": "ci-dynamic-scope",
+   "book": "CI",
+   "section": "8",
+   "title": "Dynamic scope (definition)",
+   "pages": "131-131",
+   "page": 131,
+   "keywords": [
+    "dynamic scope",
+    "escopo dinamico",
+    "dynamically scoped",
+    "methods and fields"
+   ],
+   "summary": "In dynamic scope you do not know what a name refers to until runtime; Lox has no dynamic variables, but methods and fields are dynamic.",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md",
+   "verify": [
+    "dynamic scope",
+    "dynamically scoped"
+   ]
+  },
+  {
+   "id": "ci-scope-bug",
+   "book": "CI",
+   "section": "11",
+   "title": "The scope bug with closures (showA)",
+   "pages": "164-167",
+   "page": 164,
+   "keywords": [
+    "showa",
+    "scope bug",
+    "bug de escopo",
+    "mutable environments",
+    "closure captures environment",
+    "global block"
+   ],
+   "summary": "showA prints 'global' and then 'block' without reassignment: the closure captures the mutable Environment; persistent environments or a resolver.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "showA",
+    "mutable",
+    "persistent"
+   ]
+  },
+  {
+   "id": "ci-resolver",
+   "book": "CI",
+   "section": "11",
+   "title": "The resolution pass (Resolver)",
+   "pages": "168-181",
+   "page": 168,
+   "keywords": [
+    "resolver",
+    "resolver pass",
+    "resolution",
+    "resolucao",
+    "semantic analysis",
+    "analise semantica",
+    "hops",
+    "getat",
+    "locals",
+    "scopes stack"
+   ],
+   "summary": "Static pass after the parser and before execution; stack of scopes; computes the distance (hops) per use; the interpreter uses getAt(distance).",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Semantic Analysis",
+    "Resolver",
+    "getAt"
+   ]
+  },
+  {
+   "id": "ci-resolution-errors",
+   "book": "CI",
+   "section": "11",
+   "title": "Resolution errors",
+   "pages": "182-185",
+   "page": 182,
+   "keywords": [
+    "resolution errors",
+    "erros de resolucao",
+    "duplicate variable",
+    "return top-level",
+    "invalid return"
+   ],
+   "summary": "A duplicate variable in a local scope and a top-level return are static errors; the interpreter does not run if there is an error.",
+   "ref": "interpretador-tree-walk-e-ast.md",
+   "verify": [
+    "Resolution Errors",
+    "Invalid return errors"
+   ]
+  },
+  {
+   "id": "ci-why-bytecode",
+   "book": "CI",
+   "section": "14",
+   "title": "Why bytecode (tree-walk vs native)",
+   "pages": "232-235",
+   "page": 232,
+   "keywords": [
+    "why bytecode",
+    "por que bytecode",
+    "bytecode",
+    "cache",
+    "locality",
+    "localidade",
+    "tree-walk slow",
+    "native code",
+    "72 seconds"
+   ],
+   "summary": "jlox takes ~72 s for fib(40) against 0.5 s in C; the AST has many pointers and poor locality; native is fast but complex and not portable; bytecode sits in the middle.",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md",
+   "verify": [
+    "72 seconds",
+    "spatial locality",
+    "Bytecode sits in the middle"
+   ]
+  },
+  {
+   "id": "ci-chunks-constants-lines",
+   "book": "CI",
+   "section": "14",
+   "title": "Chunks, constants and lines",
+   "pages": "237-252",
+   "page": 237,
+   "keywords": [
+    "chunk",
+    "chunks",
+    "opcode",
+    "constant pool",
+    "pool de constantes",
+    "valuearray",
+    "dynamic array",
+    "line information"
+   ],
+   "summary": "Chunk = dynamic array of bytes + constant pool + parallel line array.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "uint8_t* code",
+    "ValueArray",
+    "Line Information"
+   ]
+  },
+  {
+   "id": "ci-vm-stack",
+   "book": "CI",
+   "section": "15",
+   "title": "The stack VM: ip, run and stackTop",
+   "pages": "260-268",
+   "page": 260,
+   "keywords": [
+    "virtual machine",
+    "vm",
+    "stack-based",
+    "pilha",
+    "ip",
+    "instruction pointer",
+    "stacktop",
+    "dispatch",
+    "switch"
+   ],
+   "summary": "ip points to the next instruction (a pointer is faster than an index); run() with a switch; stack with stackTop after the last element.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "instruction pointer",
+    "READ_BYTE",
+    "stackTop"
+   ]
+  },
+  {
+   "id": "ci-pratt-parsing",
+   "book": "CI",
+   "section": "17",
+   "title": "Pratt parsing and single-pass compilation",
+   "pages": "300-318",
+   "page": 300,
+   "keywords": [
+    "pratt",
+    "pratt parsing",
+    "parserule",
+    "parseprecedence",
+    "operator precedence",
+    "single-pass compilation"
+   ],
+   "summary": "Top-down operator precedence; ParseRule table (prefix, infix, precedence); parsePrecedence with a loop; emits bytecode directly.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "Vaughan Pratt",
+    "ParseRule",
+    "parsePrecedence"
+   ]
+  },
+  {
+   "id": "ci-globals-locals",
+   "book": "CI",
+   "section": "21-22",
+   "title": "Global (late bound) and stack-local variables",
+   "pages": "381-402",
+   "page": 381,
+   "keywords": [
+    "global variables",
+    "variaveis globais",
+    "late bound",
+    "local variables",
+    "variaveis locais",
+    "slots"
+   ],
+   "summary": "Globals in a hash table, resolved late; locals on the VM stack, resolved at compile time.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "late bound",
+    "stackTop",
+    "scopeDepth"
+   ]
+  },
+  {
+   "id": "ci-callframes",
+   "book": "CI",
+   "section": "24",
+   "title": "Calls and CallFrames",
+   "pages": "446-447",
+   "page": 446,
+   "keywords": [
+    "callframe",
+    "call frame",
+    "frames",
+    "call stack",
+    "frames_max",
+    "slots"
+   ],
+   "summary": "CallFrame = function, ip and slots; fixed array of frames in the VM; maximum depth FRAMES_MAX.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "CallFrame",
+    "FRAMES_MAX",
+    "slots"
+   ]
+  },
+  {
+   "id": "ci-upvalues",
+   "book": "CI",
+   "section": "25",
+   "title": "Closures and upvalues",
+   "pages": "476-477",
+   "page": 476,
+   "keywords": [
+    "upvalue",
+    "upvalues",
+    "closure",
+    "closures",
+    "lua",
+    "captured variables"
+   ],
+   "summary": "An upvalue is the indirection (from Lua) to a local of an enclosing function; each closure has an array of upvalues.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "upvalue",
+    "Lua dev team"
+   ]
+  },
+  {
+   "id": "ci-open-closed-upvalues",
+   "book": "CI",
+   "section": "25",
+   "title": "Open and closed upvalues",
+   "pages": "493-500",
+   "page": 493,
+   "keywords": [
+    "open upvalue",
+    "closed upvalue",
+    "upvalue aberto",
+    "upvalue fechado",
+    "op_close_upvalue",
+    "closeupvalues",
+    "iscaptured"
+   ],
+   "summary": "Open points to the stack; closed keeps the value on the heap; OP_CLOSE_UPVALUE and closeUpvalues.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "open upvalue",
+    "closed upvalue",
+    "OP_CLOSE_UPVALUE"
+   ]
+  },
+  {
+   "id": "ci-hash-tombstones",
+   "book": "CI",
+   "section": "20",
+   "title": "Hash tables: tombstones",
+   "pages": "372-375",
+   "page": 372,
+   "keywords": [
+    "hash table",
+    "tabela hash",
+    "tombstone",
+    "linear probing",
+    "open addressing",
+    "string interning"
+   ],
+   "summary": "Deletion requires tombstones; open addressing with linear probing; interned strings.",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md",
+   "verify": [
+    "tombstone",
+    "probe sequence"
+   ]
+  },
+  {
+   "id": "ci-gc-reachability",
+   "book": "CI",
+   "section": "26",
+   "title": "Why collect garbage; reachability and roots",
+   "pages": "506-508",
+   "page": 506,
+   "keywords": [
+    "garbage collection",
+    "coleta de lixo",
+    "reachability",
+    "alcancabilidade",
+    "roots",
+    "raizes",
+    "managed language"
+   ],
+   "summary": "A managed language gives the illusion of infinite memory; reachable = referenceable; roots reached directly by the VM.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "garbage collector",
+    "reachable",
+    "roots"
+   ]
+  },
+  {
+   "id": "ci-mark-sweep",
+   "book": "CI",
+   "section": "26",
+   "title": "Mark-sweep in clox",
+   "pages": "509-516",
+   "page": 509,
+   "keywords": [
+    "mark-sweep",
+    "mark and sweep",
+    "marcar e varrer",
+    "ismarked",
+    "markroots",
+    "roots clox"
+   ],
+   "summary": "Mark from the roots (stack, globals, CallFrames, open upvalues, compiler) and sweep the unmarked.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "mark-sweep",
+    "isMarked",
+    "vm.openUpvalues"
+   ]
+  },
+  {
+   "id": "ci-tricolor",
+   "book": "CI",
+   "section": "26",
+   "title": "Tricolor abstraction and the gray stack",
+   "pages": "517-518",
+   "page": 517,
+   "keywords": [
+    "tricolor",
+    "tri-color",
+    "gray stack",
+    "pilha de cinzas",
+    "grayStack",
+    "white gray black",
+    "worklist"
+   ],
+   "summary": "White, gray (worklist) and black; grayStack managed outside the GC.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "tricolor abstraction",
+    "grayStack",
+    "White"
+   ]
+  },
+  {
+   "id": "ci-sweep-weak-refs",
+   "book": "CI",
+   "section": "26",
+   "title": "Sweep and weak references (string pool)",
+   "pages": "522-525",
+   "page": 522,
+   "keywords": [
+    "sweep",
+    "weak reference",
+    "referencia fraca",
+    "string table",
+    "tableremovewhite",
+    "interned strings"
+   ],
+   "summary": "sweep frees whites and clears marks; the string table is a weak reference: tableRemoveWhite between marking and sweep.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "weak reference",
+    "tableRemoveWhite",
+    "sweep()"
+   ]
+  },
+  {
+   "id": "ci-gc-timing",
+   "book": "CI",
+   "section": "26",
+   "title": "When to collect: throughput and latency",
+   "pages": "525-529",
+   "page": 525,
+   "keywords": [
+    "throughput",
+    "latency",
+    "latencia",
+    "gc_heap_grow_factor",
+    "nextgc",
+    "when to collect"
+   ],
+   "summary": "Throughput vs latency; next GC threshold = bytes allocated × factor 2.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "Throughput",
+    "Latency",
+    "GC_HEAP_GROW_FACTOR"
+   ]
+  },
+  {
+   "id": "ci-gc-bugs-generational",
+   "book": "CI",
+   "section": "26",
+   "title": "GC bugs and generational collection",
+   "pages": "531-534",
+   "page": 531,
+   "keywords": [
+    "gc bugs",
+    "bugs de gc",
+    "generational",
+    "geracional",
+    "reference counting",
+    "cheney",
+    "nursery"
+   ],
+   "summary": "Objects held only on the C stack during allocation get swept; fix by pushing them on the stack; alternatives: reference counting, generational, Cheney (exercise).",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "Adding to the constant table",
+    "generational",
+    "Cheney"
+   ]
+  },
+  {
+   "id": "ci-profiling-optimization",
+   "book": "CI",
+   "section": "30",
+   "title": "Profiler-guided optimization",
+   "pages": "597-601",
+   "page": 597,
+   "keywords": [
+    "profiler",
+    "profiling",
+    "optimization",
+    "otimizacao",
+    "tableget",
+    "benchmark",
+    "modulo"
+   ],
+   "summary": "The profiler showed tableGet at 72% of the time; replacing modulo with a bit mask reduced it to 35%; profilers also verify solutions.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "profiler",
+    "72%",
+    "35%"
+   ]
+  },
+  {
+   "id": "ci-nan-boxing",
+   "book": "CI",
+   "section": "30",
+   "title": "NaN boxing",
+   "pages": "601-604",
+   "page": 601,
+   "keywords": [
+    "nan boxing",
+    "nan tagging",
+    "ieee 754",
+    "quiet nan",
+    "qnan",
+    "value 16 bytes",
+    "64-bit double"
+   ],
+   "summary": "A 16-byte Value drops to 8 using the 51 free bits of quiet NaNs; 48-bit pointers + 3 tag bits.",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md",
+   "verify": [
+    "NaN boxing",
+    "quiet NaN",
+    "51 bits"
+   ]
+  }
+ ],
+ "not_in_book": [
+  {
+   "id": "nib-dynamic-scoping",
+   "terms": [
+    "dynamic scoping",
+    "escopo dinamico",
+    "dynamically scoped variables"
+   ],
+   "books": [
+    "SICP",
+    "TAUP"
+   ],
+   "note": "SICP and TAUP do not define dynamic scoping (v1 cited TAUP p.364). Only CI defines it (p.131, p.161). Label [extrapolation] or cite CI."
+  },
+  {
+   "id": "nib-homoiconicity",
+   "terms": [
+    "homoiconic",
+    "homoiconicity",
+    "homoiconicidade"
+   ],
+   "books": [
+    "SICP",
+    "TAUP",
+    "CI"
+   ],
+   "note": "The term does not appear in any of the three books. SICP deals with 'data as programs' (p.352-354)."
+  },
+  {
+   "id": "nib-cheney",
+   "terms": [
+    "cheney"
+   ],
+   "books": [
+    "SICP"
+   ],
+   "note": "SICP describes stop-and-copy (p.489-494) without naming Cheney; CI cites Cheney in an exercise (p.533)."
+  },
+  {
+   "id": "nib-copy-on-write",
+   "terms": [
+    "copy-on-write",
+    "copy on write",
+    "cow"
+   ],
+   "books": [
+    "TAUP",
+    "SICP",
+    "CI"
+   ],
+   "note": "Copy-on-write does not appear in TAUP or in the other books of the package."
+  },
+  {
+   "id": "nib-double-dispatch",
+   "terms": [
+    "double dispatch",
+    "despacho duplo"
+   ],
+   "books": [
+    "CI"
+   ],
+   "note": "CI explains the Visitor without using 'double dispatch' (p.72-75)."
+  },
+  {
+   "id": "nib-ocp",
+   "terms": [
+    "open/closed",
+    "open closed principle",
+    "principio aberto fechado",
+    "ocp"
+   ],
+   "books": [
+    "CI"
+   ],
+   "note": "CI does not relate the Visitor to the Open/Closed Principle."
+  },
+  {
+   "id": "nib-json-yaml",
+   "terms": [
+    "json",
+    "yaml"
+   ],
+   "books": [
+    "TAUP"
+   ],
+   "note": "TAUP (2003) does not mention JSON or YAML; it cites DSV, RFC 822, XML, INI (p.139-146)."
+  },
+  {
+   "id": "nib-orders-of-magnitude-analyze",
+   "terms": [
+    "orders of magnitude analyze",
+    "ordens de magnitude analyze"
+   ],
+   "books": [
+    "SICP"
+   ],
+   "note": "SICP says analyze is 'significantly more efficient' (p.360), without 'orders of magnitude'."
+  },
+  {
+   "id": "nib-bytecode-speedup-numbers",
+   "terms": [
+    "10x a 50x",
+    "50x faster",
+    "5x a 10x menos memoria",
+    "10x to 50x",
+    "5x to 10x less memory"
+   ],
+   "books": [
+    "CI"
+   ],
+   "note": "CI does not give these multipliers; it gives 72 s (jlox) vs 0.5 s (C) for fib(40) (p.232)."
+  },
+  {
+   "id": "nib-pratt-year",
+   "terms": [
+    "pratt 1973",
+    "pratt year",
+    "ano de pratt"
+   ],
+   "books": [
+    "CI"
+   ],
+   "note": "CI does not state the year of Pratt's work."
+  },
+  {
+   "id": "nib-posix-flags",
+   "terms": [
+    "--help",
+    "posix flags",
+    "gnu flags"
+   ],
+   "books": [
+    "TAUP"
+   ],
+   "note": "TAUP does not prescribe --help/-v/-f as a POSIX/GNU convention; it only says to follow Unix traditions (p.45)."
+  },
+  {
+   "id": "nib-control-flow-chapter",
+   "terms": [
+    "control flow",
+    "fluxo de controle capitulo 9",
+    "chapter 9"
+   ],
+   "books": [
+    "CI"
+   ],
+   "note": "Chapter 9 (Control Flow) is not in the CI PDF (p.139→140)."
+  },
+  {
+   "id": "nib-closure-sicp-sense",
+   "terms": [
+    "sicp closure implementation",
+    "closure no sicp"
+   ],
+   "books": [
+    "SICP"
+   ],
+   "note": "SICP does not use 'closure' in the sense of an implementation technique (p.141, note 6)."
+  }
+ ]
+}

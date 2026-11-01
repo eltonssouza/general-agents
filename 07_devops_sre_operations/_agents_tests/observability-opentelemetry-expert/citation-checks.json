@@ -1,0 +1,884 @@
+{
+ "_comment": "checks: the indicated page must contain ALL substrings (lowercase, whitespace collapsed). negative: plausible claims that the sources do NOT contain; 'src' (DOW|OTW|ALL) = absent from the whole text of the work; 'cite' = absent from the page.",
+ "checks": [
+  {
+   "cite": "DOW p.1",
+   "contains": [
+    "five key architectural features"
+   ],
+   "claim": "five characteristics"
+  },
+  {
+   "cite": "DOW p.1",
+   "contains": [
+    "availability (fault tolerance)"
+   ],
+   "claim": "availability/fault tolerance"
+  },
+  {
+   "cite": "DOW p.1",
+   "contains": [
+    "appear as one coherent system"
+   ],
+   "claim": "distributed system definition"
+  },
+  {
+   "cite": "DOW p.1",
+   "contains": [
+    "kubernetes, apache spark, and apache kafka"
+   ],
+   "claim": "examples of distributed systems"
+  },
+  {
+   "cite": "DOW p.1",
+   "contains": [
+    "competitiveness, agility, velocity, and"
+   ],
+   "claim": "four goals"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "competitiveness of an enterprise can be measured"
+   ],
+   "claim": "competitiveness via availability"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "troubleshooting a distributed system"
+   ],
+   "claim": "harder troubleshooting"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "exponential"
+   ],
+   "claim": "exponential resources"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "predefined set of measurements"
+   ],
+   "claim": "monitoring"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "known set of problems"
+   ],
+   "claim": "monitoring"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "designed and implemented during the initial"
+   ],
+   "claim": "observability from the start"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "responsibility of everyone"
+   ],
+   "claim": "everyone's responsibility"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "monitoring indicates when"
+   ],
+   "claim": "when"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "observability indicates why"
+   ],
+   "claim": "why"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "from a reactive to proactive"
+   ],
+   "claim": "proactive"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "legacy systems that only"
+   ],
+   "claim": "legacy only aggregates measurements"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "three pillars: logs, metrics, and traces"
+   ],
+   "claim": "three pillars"
+  },
+  {
+   "cite": "DOW p.3",
+   "contains": [
+    "figure 1: distributed system advantages"
+   ],
+   "claim": "Fig 1 caption"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "numerical measurements"
+   ],
+   "claim": "metrics"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "immutable timestamped"
+   ],
+   "claim": "logs"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "plaintext"
+   ],
+   "claim": "log formats"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "avro"
+   ],
+   "claim": "binary"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "graphical representation of event logs"
+   ],
+   "claim": "trace"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "lifecycle of a request"
+   ],
+   "claim": "trace"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "dbas can detect long-running queries"
+   ],
+   "claim": "DBAs"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "sres can identify potential security breaches"
+   ],
+   "claim": "SREs"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "global vision"
+   ],
+   "claim": "graphs"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "proactive approach"
+   ],
+   "claim": "alerts"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "five major pillars"
+   ],
+   "claim": "five pillars"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "figure 2: detailed observability concept"
+   ],
+   "claim": "Fig 2 caption"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "team maturity"
+   ],
+   "claim": "maturity"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "kubernetes or consul"
+   ],
+   "claim": "auto discovery"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "ansible"
+   ],
+   "claim": "usability"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "victorops"
+   ],
+   "claim": "integration"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "next three years"
+   ],
+   "claim": "compatibility"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "cannot be designed by a single team"
+   ],
+   "claim": "multi-team platform"
+  },
+  {
+   "cite": "DOW p.5",
+   "contains": [
+    "cpu, memory, disks, and network"
+   ],
+   "claim": "physical metrics"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "deploy an agent on each system"
+   ],
+   "claim": "agent"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "time series database"
+   ],
+   "claim": "TSDB"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "global log management policy"
+   ],
+   "claim": "log policy"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "verbosity"
+   ],
+   "claim": "log policy"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "tag management"
+   ],
+   "claim": "tags"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "extract metrics from events"
+   ],
+   "claim": "collectors extract metrics"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "service mesh"
+   ],
+   "claim": "instrumentation"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "unique identifier must be assigned"
+   ],
+   "claim": "id per step"
+  },
+  {
+   "cite": "DOW p.6",
+   "contains": [
+    "figure 3: overview of an observability workflow"
+   ],
+   "claim": "Fig 3 caption"
+  },
+  {
+   "cite": "DOW p.7",
+   "contains": [
+    "w3c trace context"
+   ],
+   "claim": "further reading"
+  },
+  {
+   "cite": "DOW p.7",
+   "contains": [
+    "copyright © 2021"
+   ],
+   "claim": "2021 edition"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "opencensus"
+   ],
+   "claim": "merger"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "opentracing"
+   ],
+   "claim": "merger"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "shopify"
+   ],
+   "claim": "contributors"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "vendor-agnostic"
+   ],
+   "claim": "goal"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "vendor lock-in"
+   ],
+   "claim": "lock-in"
+  },
+  {
+   "cite": "OTW p.1",
+   "contains": [
+    "programming-language-"
+   ],
+   "claim": "per-language API/SDK"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "filter or sample"
+   ],
+   "claim": "SDK samples"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "multiple destinations"
+   ],
+   "claim": "SDK exports to several"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "language-agnostic"
+   ],
+   "claim": "Collector"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "the ordering does matter"
+   ],
+   "claim": "processor order"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "defined through yaml"
+   ],
+   "claim": "YAML pipelines"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "otelcol:4317"
+   ],
+   "claim": "example YAML"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "daemonset"
+   ],
+   "claim": "Agent"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "recommended option"
+   ],
+   "claim": "Agent recommended"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "api token management"
+   ],
+   "claim": "Gateway"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "protocol buffer"
+   ],
+   "claim": "OTLP"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "automatic and manual instrumentation"
+   ],
+   "claim": "instrumentation"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "traces, metrics, and logs"
+   ],
+   "claim": "three sources"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "reference to the parent span"
+   ],
+   "claim": "parent span"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "zipkin or jaeger"
+   ],
+   "claim": "trace backends"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "aggregated in the emitting application"
+   ],
+   "claim": "metrics"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "42 requests per second"
+   ],
+   "claim": "metric example"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "histogram bucket"
+   ],
+   "claim": "metric example"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "independent or attached to spans"
+   ],
+   "claim": "OTel logs"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "only the tracing specification is considered stable"
+   ],
+   "claim": "2021 stability"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "end of 2021"
+   ],
+   "claim": "Metrics 1.0"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "draft stage"
+   ],
+   "claim": "Logs"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "tracer provider"
+   ],
+   "claim": "SDK"
+  },
+  {
+   "cite": "OTW p.4",
+   "contains": [
+    "sampling"
+   ],
+   "claim": "SDK"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "span processors"
+   ],
+   "claim": "processors"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "root span"
+   ],
+   "claim": "tree"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "trace tree"
+   ],
+   "claim": "tree"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "spankind"
+   ],
+   "claim": "SpanKind"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "spancontext"
+   ],
+   "claim": "SpanContext"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "context propagation"
+   ],
+   "claim": "propagation"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "user id"
+   ],
+   "claim": "user attributes"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "pip install opentelemetry-api"
+   ],
+   "claim": "Python example"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "batchspanprocessor"
+   ],
+   "claim": "Python example"
+  },
+  {
+   "cite": "OTW p.5",
+   "contains": [
+    "consolespanexporter"
+   ],
+   "claim": "Python example"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "unknown_service"
+   ],
+   "claim": "output"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "1.7.1"
+   ],
+   "claim": "SDK version"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "flaskinstrumentor"
+   ],
+   "claim": "auto-instrumentation"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "lose some control"
+   ],
+   "claim": "loses control"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "telegraf"
+   ],
+   "claim": "legacy"
+  },
+  {
+   "cite": "OTW p.6",
+   "contains": [
+    "django"
+   ],
+   "claim": "auto-instrumentation"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "zipkin is an older project"
+   ],
+   "claim": "Zipkin"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "fully graduated"
+   ],
+   "claim": "Jaeger"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "influxdb and prometheus"
+   ],
+   "claim": "metrics"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "elasticsearch"
+   ],
+   "claim": "logs"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "logstash"
+   ],
+   "claim": "logs"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "tradeoff"
+   ],
+   "claim": "choice"
+  },
+  {
+   "cite": "OTW p.7",
+   "contains": [
+    "locked into a specific vendor"
+   ],
+   "claim": "lock-in"
+  },
+  {
+   "cite": "OTW p.3",
+   "contains": [
+    "receivers",
+    "processors",
+    "exporters"
+   ],
+   "claim": "three Collector components"
+  },
+  {
+   "cite": "DOW p.4",
+   "contains": [
+    "plaintext",
+    "structured",
+    "binary"
+   ],
+   "claim": "three log formats"
+  }
+ ],
+ "negative": [
+  {
+   "src": "ALL",
+   "absent": [
+    "traceparent",
+    "baggage"
+   ],
+   "claim": "detailed W3C propagation / baggage"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "error budget",
+    "service level objective",
+    "burn rate"
+   ],
+   "claim": "SLO/error budget"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "golden signal"
+   ],
+   "claim": "golden signals"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "tail-based",
+    "head-based"
+   ],
+   "claim": "tail/head sampling"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "cardinality"
+   ],
+   "claim": "cardinality"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "grafana",
+    "loki"
+   ],
+   "claim": "Grafana stack"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "ebpf"
+   ],
+   "claim": "eBPF"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "otel_"
+   ],
+   "claim": "OTEL_* variables"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "semantic convention"
+   ],
+   "claim": "semantic conventions"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "exemplar"
+   ],
+   "claim": "exemplars"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "java",
+    "golang",
+    "node.js"
+   ],
+   "claim": "other SDKs"
+  },
+  {
+   "src": "DOW",
+   "absent": [
+    "jaeger",
+    "zipkin",
+    "prometheus"
+   ],
+   "claim": "DOW does not mention backends"
+  },
+  {
+   "src": "OTW",
+   "absent": [
+    "w3c"
+   ],
+   "claim": "OTW does not mention W3C"
+  },
+  {
+   "src": "OTW",
+   "absent": [
+    "kafka"
+   ],
+   "claim": "OTW does not mention Kafka"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "alertmanager"
+   ],
+   "claim": "Alertmanager"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "rate limit"
+   ],
+   "claim": "rate limiting"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "span link"
+   ],
+   "claim": "span links"
+  },
+  {
+   "src": "DOW",
+   "absent": [
+    "opentelemetry collector"
+   ],
+   "claim": "DOW does not describe the Collector"
+  },
+  {
+   "cite": "OTW p.3",
+   "absent": [
+    "gateway is the recommended",
+    "stable"
+   ],
+   "claim": "Gateway recommended / stability on p.3"
+  },
+  {
+   "cite": "OTW p.4",
+   "absent": [
+    "metrics specification is stable",
+    "logs specification is stable"
+   ],
+   "claim": "Metrics/Logs stable"
+  },
+  {
+   "cite": "DOW p.4",
+   "absent": [
+    "prometheus",
+    "opentelemetry"
+   ],
+   "claim": "DOW p.4 without Prometheus/OTel"
+  }
+ ]
+}

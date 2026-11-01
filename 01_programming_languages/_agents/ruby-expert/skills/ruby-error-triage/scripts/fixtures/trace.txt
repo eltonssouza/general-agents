@@ -1,0 +1,5 @@
+test.rb:1:in 'Object#foo': undefined method 'time' for an instance of Integer (NoMethodError)
+1.time {}
+ ^^^^^
+Did you mean?  times
+	from test.rb:2:in '<main>'

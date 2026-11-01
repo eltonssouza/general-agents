@@ -1,0 +1,317 @@
+{
+ "_doc": "Backticked terms that tests/audit_tokens.py did not find on the cited page, reviewed by hand (review of 2026-10): each one is package notation, translation, text belonging to the neighboring citation, or a negation. The real defects found in the same scan were fixed in the text, not listed here.",
+ "allow": [
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Think",
+   "term": "nextDouble",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Think",
+   "term": "nextInt",
+   "why": "term marked [inference] or [extrapolation] in the sentence itself"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Think",
+   "term": "Rectangle",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Think",
+   "term": "Objects.equals",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Adv",
+   "term": "this.campo",
+   "why": "translation or escape lost in the PDF extraction; checked by hand"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Adv",
+   "term": "Classe@hash",
+   "why": "translation or escape lost in the PDF extraction; checked by hand"
+  },
+  {
+   "file": "casos-e-antipadroes.md",
+   "sig": "Adv",
+   "term": "toObject",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Think",
+   "term": "Deck",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Adv",
+   "term": "Collections.synchronizedXxx",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Adv",
+   "term": "try/finally",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Adv",
+   "term": "wait/notify",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Adv",
+   "term": "Future.get",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "frameworks.md",
+   "sig": "Think",
+   "term": "if/else",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Think",
+   "term": "length",
+   "why": "term marked [inference] or [extrapolation] in the sentence itself"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Think",
+   "term": "getX",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Think",
+   "term": "setX",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "Classe::estático",
+   "why": "translation or escape lost in the PDF extraction; checked by hand"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "obj::método",
+   "why": "translation or escape lost in the PDF extraction; checked by hand"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "Tipo::métodoDeInstância",
+   "why": "translation or escape lost in the PDF extraction; checked by hand"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "Classe::new",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "ScriptEngine.eval",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "ElementScannerN",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "sun.misc.Launcher",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "synchronized",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "getReadLockCount",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "PSPermGen",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "user",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "real",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "try/catch",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "-verbose:class",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "-XX:HeapDumpOnOutOfMemoryError",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "jvm-troubleshooting.md",
+   "sig": "JVM",
+   "term": "WorkerThread2",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "procedimentos.md",
+   "sig": "Think",
+   "term": "null",
+   "why": "term marked [inference] or [extrapolation] in the sentence itself"
+  },
+  {
+   "file": "procedimentos.md",
+   "sig": "Think",
+   "term": "Player.play",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "procedimentos.md",
+   "sig": "Adv",
+   "term": "Future.get",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "procedimentos.md",
+   "sig": "Adv",
+   "term": "finally",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "procedimentos.md",
+   "sig": "Adv",
+   "term": "AbstractProcessor",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Think",
+   "term": "testXxx",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Think",
+   "term": "Stream",
+   "why": "negation: the sentence says the term is NOT in the source (confirmed in the negatives of citation-checks.json)"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Adv",
+   "term": "@FunctionalInterface",
+   "why": "list of features spread over several pages on the same line; each item checked by hand"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Adv",
+   "term": "@Repeatable",
+   "why": "list of features spread over several pages on the same line; each item checked by hand"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Adv",
+   "term": "Optional",
+   "why": "list of features spread over several pages on the same line; each item checked by hand"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "Adv",
+   "term": "ElementScanner6/7/8",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "versoes-e-datado.md",
+   "sig": "JVM",
+   "term": "jcmd",
+   "why": "negation: the sentence says the term is NOT in the source (confirmed in the negatives of citation-checks.json)"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Adv",
+   "term": "equals",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Adv",
+   "term": "hashCode",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Adv",
+   "term": "toString",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Think",
+   "term": "RuntimeException",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Think",
+   "term": "catch",
+   "why": "the term belongs to the neighboring citation on the same line (the tool assigns the passage to the following citation); checked by hand"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "Think",
+   "term": "nextInt",
+   "why": "term marked [inference] or [extrapolation] in the sentence itself"
+  },
+  {
+   "file": "SKILL.md",
+   "sig": "JVM",
+   "term": "-Xms/-Xmx",
+   "why": "package notation (Class.method, generic form or list of alternatives); the book uses the method name without the class or the exact term"
+  },
+  {
+   "file": "glossario.md",
+   "sig": "Adv",
+   "term": "\\u0000",
+   "why": "escape lost in the PDF extraction (the default values table shows 'char u0000', Adv p.14); checked by hand"
+  }
+ ]
+}

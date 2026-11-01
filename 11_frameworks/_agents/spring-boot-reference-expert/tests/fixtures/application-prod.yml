@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: metrics
+  jpa:
+    open-in-view: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+  endpoint:
+    health:
+      show-details: when-authorized
+      probes:
+        enabled: true
+server:
+  shutdown: graceful

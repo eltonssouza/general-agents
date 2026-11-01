@@ -1,0 +1,1451 @@
+{
+ "_comment": "checks: the indicated PDF page must contain ALL the substrings (comparison ignoring spaces/hyphens, lowercase). negative: plausible claims the book does NOT contain; 'src: ALL' = absent from the whole text; 'cite' = absent from the page. allowed_absent_flags: flags cited in the package files that the book does NOT contain (listed on purpose as 'not in the book' or flags of the package scripts).",
+ "checks": [
+  {
+   "cite": "RUN p.8",
+   "contains": [
+    "First Edition"
+   ],
+   "claim": "first edition"
+  },
+  {
+   "cite": "RUN p.8",
+   "contains": [
+    "December 2020"
+   ],
+   "claim": "edition date"
+  },
+  {
+   "cite": "RUN p.8",
+   "contains": [
+    "978-1-098-12607-0"
+   ],
+   "claim": "ISBN"
+  },
+  {
+   "cite": "RUN p.3",
+   "contains": [
+    "cockroachlabs"
+   ],
+   "claim": "CockroachDB ad"
+  },
+  {
+   "cite": "RUN p.21",
+   "contains": [
+    "Binx.io"
+   ],
+   "claim": "author is a consultant at Binx.io"
+  },
+  {
+   "cite": "RUN p.30",
+   "contains": [
+    "pay-per-use"
+   ],
+   "claim": "pay-per-use"
+  },
+  {
+   "cite": "RUN p.30",
+   "contains": [
+    "web-based applications"
+   ],
+   "claim": "web scope"
+  },
+  {
+   "cite": "RUN p.31",
+   "contains": [
+    "more than 30 minutes of downtime per month"
+   ],
+   "claim": "30 min of downtime"
+  },
+  {
+   "cite": "RUN p.31",
+   "contains": [
+    "setting resource requirements"
+   ],
+   "claim": "what remains the developer's job"
+  },
+  {
+   "cite": "RUN p.32",
+   "contains": [
+    "granularity of 100 ms"
+   ],
+   "claim": "100 ms"
+  },
+  {
+   "cite": "RUN p.33",
+   "contains": [
+    "AWS Lambda"
+   ],
+   "claim": "Lambda mentioned in passing as FaaS"
+  },
+  {
+   "cite": "RUN p.34",
+   "contains": [
+    "will not be comparing"
+   ],
+   "claim": "the book does not compare vendors"
+  },
+  {
+   "cite": "RUN p.32",
+   "contains": [
+    "20 to 40%"
+   ],
+   "claim": "typical utilization"
+  },
+  {
+   "cite": "RUN p.33",
+   "contains": [
+    "Serverless Is Not Functions as a Service"
+   ],
+   "claim": "serverless != FaaS"
+  },
+  {
+   "cite": "RUN p.35",
+   "contains": [
+    "Notably missing from the serverless offering on Google Cloud is a relational database"
+   ],
+   "claim": "relational DB missing"
+  },
+  {
+   "cite": "RUN p.36",
+   "contains": [
+    "three-step process"
+   ],
+   "claim": "3-step flow"
+  },
+  {
+   "cite": "RUN p.36",
+   "contains": [
+    "key concept in Cloud Run"
+   ],
+   "claim": "service is the key concept"
+  },
+  {
+   "cite": "RUN p.37",
+   "contains": [
+    "up to a thousand container instances"
+   ],
+   "claim": "a thousand instances"
+  },
+  {
+   "cite": "RUN p.39",
+   "contains": [
+    "Unpredictable Costs"
+   ],
+   "claim": "unpredictable costs"
+  },
+  {
+   "cite": "RUN p.40",
+   "contains": [
+    "API compatible with the Knative"
+   ],
+   "claim": "Knative-compatible API"
+  },
+  {
+   "cite": "RUN p.42",
+   "contains": [
+    "$300 in free credits"
+   ],
+   "claim": "300 credits"
+  },
+  {
+   "cite": "RUN p.44",
+   "contains": [
+    "port 8080"
+   ],
+   "claim": "port 8080"
+  },
+  {
+   "cite": "RUN p.44",
+   "contains": [
+    "gcloud components install beta"
+   ],
+   "claim": "beta components"
+  },
+  {
+   "cite": "RUN p.45",
+   "contains": [
+    "--allow-unauthenticated"
+   ],
+   "claim": "allow-unauthenticated flag"
+  },
+  {
+   "cite": "RUN p.45",
+   "contains": [
+    "gcr.io/cloud-run-book/inspect"
+   ],
+   "claim": "gcr.io image in the 1st deploy"
+  },
+  {
+   "cite": "RUN p.45",
+   "contains": [
+    "fully-managed"
+   ],
+   "claim": "fully-managed"
+  },
+  {
+   "cite": "RUN p.46",
+   "contains": [
+    "europe-west1"
+   ],
+   "claim": "region"
+  },
+  {
+   "cite": "RUN p.46",
+   "contains": [
+    "gcloud config set run/region"
+   ],
+   "claim": "default region"
+  },
+  {
+   "cite": "RUN p.48",
+   "contains": [
+    "immutable copy of the service configuration"
+   ],
+   "claim": "immutable revision"
+  },
+  {
+   "cite": "RUN p.48",
+   "contains": [
+    "all traffic to the latest revision"
+   ],
+   "claim": "traffic on the latest revision"
+  },
+  {
+   "cite": "RUN p.49",
+   "contains": [
+    "gcloud run services update-traffic"
+   ],
+   "claim": "rollback"
+  },
+  {
+   "cite": "RUN p.49",
+   "contains": [
+    "more than a thousand revisions"
+   ],
+   "claim": "auto-delete of revisions"
+  },
+  {
+   "cite": "RUN p.50",
+   "contains": [
+    "SIGTERM"
+   ],
+   "claim": "SIGTERM"
+  },
+  {
+   "cite": "RUN p.50",
+   "contains": [
+    "10 seconds"
+   ],
+   "claim": "10 s"
+  },
+  {
+   "cite": "RUN p.52",
+   "contains": [
+    "background thread might never complete"
+   ],
+   "claim": "background thread"
+  },
+  {
+   "cite": "RUN p.52",
+   "contains": [
+    "HTTP 503"
+   ],
+   "claim": "503 at startup"
+  },
+  {
+   "cite": "RUN p.54",
+   "contains": [
+    "concurrency level of 1"
+   ],
+   "claim": "concurrency 1"
+  },
+  {
+   "cite": "RUN p.54",
+   "contains": [
+    "HTTP 429"
+   ],
+   "claim": "429"
+  },
+  {
+   "cite": "RUN p.55",
+   "contains": [
+    "default concurrency is 250"
+   ],
+   "claim": "concurrency 250"
+  },
+  {
+   "cite": "RUN p.55",
+   "contains": [
+    "minimum instances"
+   ],
+   "claim": "minimum instances"
+  },
+  {
+   "cite": "RUN p.55",
+   "contains": [
+    "cold start"
+   ],
+   "claim": "cold start"
+  },
+  {
+   "cite": "RUN p.56",
+   "contains": [
+    "4 GB"
+   ],
+   "claim": "4 GB limit"
+  },
+  {
+   "cite": "RUN p.56",
+   "contains": [
+    "more than 20 consecutive responses"
+   ],
+   "claim": "20 5xx responses"
+  },
+  {
+   "cite": "RUN p.56",
+   "contains": [
+    "NGINX and PHP-FPM"
+   ],
+   "claim": "NGINX+PHP-FPM"
+  },
+  {
+   "cite": "RUN p.57",
+   "contains": [
+    "unparalleled portability"
+   ],
+   "claim": "portability"
+  },
+  {
+   "cite": "RUN p.58",
+   "contains": [
+    "Flexible runs on top of Compute Engine"
+   ],
+   "claim": "App Engine Flexible"
+  },
+  {
+   "cite": "RUN p.59",
+   "contains": [
+    "Source-based versus container-based"
+   ],
+   "claim": "source vs container"
+  },
+  {
+   "cite": "RUN p.63",
+   "contains": [
+    "--entrypoint"
+   ],
+   "claim": "entrypoint ping"
+  },
+  {
+   "cite": "RUN p.70",
+   "contains": [
+    "stick with COPY and ENTRYPOINT"
+   ],
+   "claim": "COPY/ENTRYPOINT"
+  },
+  {
+   "cite": "RUN p.71",
+   "contains": [
+    "826MB"
+   ],
+   "claim": "826 MB"
+  },
+  {
+   "cite": "RUN p.71",
+   "contains": [
+    "Snyk"
+   ],
+   "claim": "Snyk"
+  },
+  {
+   "cite": "RUN p.72",
+   "contains": [
+    "26.7MB"
+   ],
+   "claim": "26.7 MB"
+  },
+  {
+   "cite": "RUN p.72",
+   "contains": [
+    "can only pull container"
+   ],
+   "claim": "pull only from AR"
+  },
+  {
+   "cite": "RUN p.73",
+   "contains": [
+    "gcloud artifacts repositories create"
+   ],
+   "claim": "create repository"
+  },
+  {
+   "cite": "RUN p.75",
+   "contains": [
+    "KO_DOCKER_REPO"
+   ],
+   "claim": "ko repo"
+  },
+  {
+   "cite": "RUN p.76",
+   "contains": [
+    "authoritative"
+   ],
+   "claim": "authoritative replace"
+  },
+  {
+   "cite": "RUN p.76",
+   "contains": [
+    "serving.knative.dev/v1"
+   ],
+   "claim": "apiVersion"
+  },
+  {
+   "cite": "RUN p.77",
+   "contains": [
+    "627 MB"
+   ],
+   "claim": "openjdk 627"
+  },
+  {
+   "cite": "RUN p.77",
+   "contains": [
+    "197 MB"
+   ],
+   "claim": "distroless java"
+  },
+  {
+   "cite": "RUN p.78",
+   "contains": [
+    "gcr.io/buildpacks/builder:v1"
+   ],
+   "claim": "builder"
+  },
+  {
+   "cite": "RUN p.78",
+   "contains": [
+    ".NET Core"
+   ],
+   "claim": "languages"
+  },
+  {
+   "cite": "RUN p.79",
+   "contains": [
+    "gcloud builds submit --tag"
+   ],
+   "claim": "builds submit"
+  },
+  {
+   "cite": "RUN p.79",
+   "contains": [
+    "/workspace"
+   ],
+   "claim": "workspace"
+  },
+  {
+   "cite": "RUN p.81",
+   "contains": [
+    "timeout of 24 hours"
+   ],
+   "claim": "24 h"
+  },
+  {
+   "cite": "RUN p.85",
+   "contains": [
+    "db-f1-micro"
+   ],
+   "claim": "tier"
+  },
+  {
+   "cite": "RUN p.85",
+   "contains": [
+    "MYSQL_8_0"
+   ],
+   "claim": "MySQL version"
+  },
+  {
+   "cite": "RUN p.86",
+   "contains": [
+    "not serverless"
+   ],
+   "claim": "Cloud SQL is not serverless"
+  },
+  {
+   "cite": "RUN p.86",
+   "contains": [
+    "$9"
+   ],
+   "claim": "price"
+  },
+  {
+   "cite": "RUN p.87",
+   "contains": [
+    "Cloud SQL Client"
+   ],
+   "claim": "role"
+  },
+  {
+   "cite": "RUN p.88",
+   "contains": [
+    "cloudsqlproxy~%"
+   ],
+   "claim": "root host"
+  },
+  {
+   "cite": "RUN p.89",
+   "contains": [
+    "--add-cloudsql-instances"
+   ],
+   "claim": "cloudsql flag"
+  },
+  {
+   "cite": "RUN p.89",
+   "contains": [
+    "UNIX Domain Socket"
+   ],
+   "claim": "socket"
+  },
+  {
+   "cite": "RUN p.90",
+   "contains": [
+    "--require-ssl"
+   ],
+   "claim": "require-ssl"
+  },
+  {
+   "cite": "RUN p.93",
+   "contains": [
+    "beyond 200"
+   ],
+   "claim": "concurrency >200"
+  },
+  {
+   "cite": "RUN p.96",
+   "contains": [
+    "--max-instances 100"
+   ],
+   "claim": "max-instances"
+  },
+  {
+   "cite": "RUN p.96",
+   "contains": [
+    "SetMaxOpenConns(2)"
+   ],
+   "claim": "pool"
+  },
+  {
+   "cite": "RUN p.96",
+   "contains": [
+    "PgBouncer"
+   ],
+   "claim": "external pool"
+  },
+  {
+   "cite": "RUN p.97",
+   "contains": [
+    "110"
+   ],
+   "claim": "optimal concurrency in the case study"
+  },
+  {
+   "cite": "RUN p.97",
+   "contains": [
+    "db-n1-standard-16"
+   ],
+   "claim": "tier in the case study"
+  },
+  {
+   "cite": "RUN p.98",
+   "contains": [
+    "around a minute"
+   ],
+   "claim": "1 minute of downtime"
+  },
+  {
+   "cite": "RUN p.101",
+   "contains": [
+    "SameSite=Strict"
+   ],
+   "claim": "cookie"
+  },
+  {
+   "cite": "RUN p.102",
+   "contains": [
+    "gcloud redis instances create"
+   ],
+   "claim": "memorystore"
+  },
+  {
+   "cite": "RUN p.102",
+   "contains": [
+    "$35"
+   ],
+   "claim": "memorystore price"
+  },
+  {
+   "cite": "RUN p.102",
+   "contains": [
+    "exactly 16 private IP addresses"
+   ],
+   "claim": "16 IPs"
+  },
+  {
+   "cite": "RUN p.104",
+   "contains": [
+    "minimum number of connector instances is 2"
+   ],
+   "claim": "connector minimum"
+  },
+  {
+   "cite": "RUN p.104",
+   "contains": [
+    "$8"
+   ],
+   "claim": "connector price"
+  },
+  {
+   "cite": "RUN p.104",
+   "contains": [
+    "10.0.0.0/28"
+   ],
+   "claim": "range"
+  },
+  {
+   "cite": "RUN p.105",
+   "contains": [
+    "--vpc-connector my-connector"
+   ],
+   "claim": "connector usage"
+  },
+  {
+   "cite": "RUN p.106",
+   "contains": [
+    "99.9%"
+   ],
+   "claim": "memorystore SLA"
+  },
+  {
+   "cite": "RUN p.106",
+   "contains": [
+    "26.3 seconds"
+   ],
+   "claim": "firestore SLA"
+  },
+  {
+   "cite": "RUN p.106",
+   "contains": [
+    "does not support session affinity"
+   ],
+   "claim": "affinity not supported"
+  },
+  {
+   "cite": "RUN p.110",
+   "contains": [
+    "allUsers"
+   ],
+   "claim": "allUsers"
+  },
+  {
+   "cite": "RUN p.110",
+   "contains": [
+    "Cloud Run Invoker"
+   ],
+   "claim": "invoker"
+  },
+  {
+   "cite": "RUN p.112",
+   "contains": [
+    "roles/run.invoker"
+   ],
+   "claim": "invoker role"
+  },
+  {
+   "cite": "RUN p.114",
+   "contains": [
+    "Project Editor"
+   ],
+   "claim": "editor"
+  },
+  {
+   "cite": "RUN p.114",
+   "contains": [
+    "3000 permissions"
+   ],
+   "claim": "3000 permissions"
+  },
+  {
+   "cite": "RUN p.114",
+   "contains": [
+    "big red button"
+   ],
+   "claim": "big red button"
+  },
+  {
+   "cite": "RUN p.115",
+   "contains": [
+    "--service-account"
+   ],
+   "claim": "SA flag"
+  },
+  {
+   "cite": "RUN p.117",
+   "contains": [
+    "gcloud auth print-identity-token"
+   ],
+   "claim": "id token"
+  },
+  {
+   "cite": "RUN p.117",
+   "contains": [
+    "--no-allow-unauthenticated"
+   ],
+   "claim": "private"
+  },
+  {
+   "cite": "RUN p.116",
+   "contains": [
+    "--no-allow-authenticated"
+   ],
+   "claim": "book typo on p.116"
+  },
+  {
+   "cite": "RUN p.118",
+   "contains": [
+    "valid for one hour at most"
+   ],
+   "claim": "1 h"
+  },
+  {
+   "cite": "RUN p.118",
+   "contains": [
+    "audience"
+   ],
+   "claim": "audience"
+  },
+  {
+   "cite": "RUN p.119",
+   "contains": [
+    "Google Frontend"
+   ],
+   "claim": "GFE"
+  },
+  {
+   "cite": "RUN p.119",
+   "contains": [
+    "X-CloudTasks-QueueName"
+   ],
+   "claim": "reserved header"
+  },
+  {
+   "cite": "RUN p.120",
+   "contains": [
+    "seven to nine milliseconds"
+   ],
+   "claim": "7-9 ms"
+  },
+  {
+   "cite": "RUN p.121",
+   "contains": [
+    "4 GiB"
+   ],
+   "claim": "4 GiB"
+  },
+  {
+   "cite": "RUN p.124",
+   "contains": [
+    "wait 20 seconds"
+   ],
+   "claim": "20 s"
+  },
+  {
+   "cite": "RUN p.127",
+   "contains": [
+    "background thread or scheduling a cron job"
+   ],
+   "claim": "thread and cron"
+  },
+  {
+   "cite": "RUN p.129",
+   "contains": [
+    "10 minutes by default"
+   ],
+   "claim": "10 min"
+  },
+  {
+   "cite": "RUN p.129",
+   "contains": [
+    "60 minutes"
+   ],
+   "claim": "60 min"
+  },
+  {
+   "cite": "RUN p.130",
+   "contains": [
+    "gcloud tasks queues create jobs"
+   ],
+   "claim": "queue"
+  },
+  {
+   "cite": "RUN p.130",
+   "contains": [
+    "--timeout 900"
+   ],
+   "claim": "timeout 900"
+  },
+  {
+   "cite": "RUN p.131",
+   "contains": [
+    "roles/cloudtasks.enqueuer"
+   ],
+   "claim": "enqueuer"
+  },
+  {
+   "cite": "RUN p.132",
+   "contains": [
+    "DispatchDeadline"
+   ],
+   "claim": "deadline"
+  },
+  {
+   "cite": "RUN p.133",
+   "contains": [
+    "roles/iam.serviceAccountUser"
+   ],
+   "claim": "SA user"
+  },
+  {
+   "cite": "RUN p.133",
+   "contains": [
+    "minimum backoff, maximum backoff, maximum doublings"
+   ],
+   "claim": "retry parameters"
+  },
+  {
+   "cite": "RUN p.134",
+   "contains": [
+    "forgets about the task"
+   ],
+   "claim": "forgets"
+  },
+  {
+   "cite": "RUN p.134",
+   "contains": [
+    "maxConcurrentDispatches"
+   ],
+   "claim": "rate limit"
+  },
+  {
+   "cite": "RUN p.135",
+   "contains": [
+    "0.001%"
+   ],
+   "claim": "duplicate"
+  },
+  {
+   "cite": "RUN p.135",
+   "contains": [
+    "maxAttempts: 100"
+   ],
+   "claim": "default 100"
+  },
+  {
+   "cite": "RUN p.136",
+   "contains": [
+    "no emulator"
+   ],
+   "claim": "no emulator"
+  },
+  {
+   "cite": "RUN p.136",
+   "contains": [
+    "Cloud Workflows"
+   ],
+   "claim": "workflows"
+  },
+  {
+   "cite": "RUN p.140",
+   "contains": [
+    "declarative"
+   ],
+   "claim": "declarative"
+  },
+  {
+   "cite": "RUN p.142",
+   "contains": [
+    "Ansible"
+   ],
+   "claim": "Ansible"
+  },
+  {
+   "cite": "RUN p.143",
+   "contains": [
+    "gradual rollout of a new revision in Cloud Run with Terraform"
+   ],
+   "claim": "no gradual rollout"
+  },
+  {
+   "cite": "RUN p.143",
+   "contains": [
+    "Application Default Credentials"
+   ],
+   "claim": "ADC"
+  },
+  {
+   "cite": "RUN p.143",
+   "contains": [
+    "Bitcoin mining"
+   ],
+   "claim": "bitcoin"
+  },
+  {
+   "cite": "RUN p.145",
+   "contains": [
+    "~> 3.0"
+   ],
+   "claim": "provider 3.0"
+  },
+  {
+   "cite": "RUN p.148",
+   "contains": [
+    "terraform plan -out tfplan"
+   ],
+   "claim": "plan"
+  },
+  {
+   "cite": "RUN p.150",
+   "contains": [
+    "API keys, passwords for database users"
+   ],
+   "claim": "state with secrets"
+  },
+  {
+   "cite": "RUN p.152",
+   "contains": [
+    "prevent_destroy"
+   ],
+   "claim": "prevent_destroy"
+  },
+  {
+   "cite": "RUN p.152",
+   "contains": [
+    "run.routes.invoke"
+   ],
+   "claim": "invoker permission"
+  },
+  {
+   "cite": "RUN p.158",
+   "contains": [
+    "/var/log"
+   ],
+   "claim": "var/log"
+  },
+  {
+   "cite": "RUN p.159",
+   "contains": [
+    "gcloud logging read"
+   ],
+   "claim": "logging read"
+  },
+  {
+   "cite": "RUN p.163",
+   "contains": [
+    "Service Unavailable"
+   ],
+   "claim": "503 from Fatal"
+  },
+  {
+   "cite": "RUN p.165",
+   "contains": [
+    "X-Cloud-Trace-Context"
+   ],
+   "claim": "trace header"
+  },
+  {
+   "cite": "RUN p.166",
+   "contains": [
+    "logging.googleapis.com/trace"
+   ],
+   "claim": "trace attribute"
+  },
+  {
+   "cite": "RUN p.169",
+   "contains": [
+    "OpenCensus"
+   ],
+   "claim": "OpenCensus"
+  },
+  {
+   "cite": "RUN p.172",
+   "contains": [
+    "Logs-based metrics"
+   ],
+   "claim": "log-based metrics"
+  },
+  {
+   "cite": "RUN p.176",
+   "contains": [
+    "completely separate and proprietary implementation"
+   ],
+   "claim": "Run is not managed Knative"
+  },
+  {
+   "cite": "RUN p.177",
+   "contains": [
+    "15,000 nodes"
+   ],
+   "claim": "15000 nodes"
+  },
+  {
+   "cite": "RUN p.182",
+   "contains": [
+    "etcd"
+   ],
+   "claim": "etcd"
+  },
+  {
+   "cite": "RUN p.187",
+   "contains": [
+    "gVisor"
+   ],
+   "claim": "gVisor"
+  },
+  {
+   "cite": "RUN p.187",
+   "contains": [
+    "NFS"
+   ],
+   "claim": "NFS"
+  },
+  {
+   "cite": "RUN p.188",
+   "contains": [
+    "Cloud IAM, Firestore, Cloud Tasks, and Cloud Scheduler"
+   ],
+   "claim": "proprietary services"
+  },
+  {
+   "cite": "RUN p.112",
+   "contains": [
+    "implicitly add a policy binding"
+   ],
+   "claim": "allow-unauthenticated adds a binding"
+  },
+  {
+   "cite": "RUN p.112",
+   "contains": [
+    "get-iam-policy"
+   ],
+   "claim": "get-iam-policy"
+  },
+  {
+   "cite": "RUN p.113",
+   "contains": [
+    "allUsers"
+   ],
+   "claim": "allUsers binding shown"
+  },
+  {
+   "cite": "RUN p.135",
+   "contains": [
+    "minBackoff: 0.100s"
+   ],
+   "claim": "camelCase defaults on p.135"
+  },
+  {
+   "cite": "RUN p.124",
+   "contains": [
+    "--service-account frontend@"
+   ],
+   "claim": "frontend SA"
+  },
+  {
+   "cite": "RUN p.131",
+   "contains": [
+    "--update-env-vars QUEUE"
+   ],
+   "claim": "env QUEUE"
+  },
+  {
+   "cite": "RUN p.186",
+   "contains": [
+    "gcloud beta run services replace service.yml"
+   ],
+   "claim": "replace on Cloud Run"
+  },
+  {
+   "cite": "RUN p.185",
+   "contains": [
+    "kubectl apply"
+   ],
+   "claim": "apply on Knative"
+  },
+  {
+   "cite": "RUN p.111",
+   "contains": [
+    "Cloud SQL Client"
+   ],
+   "claim": "binding on project"
+  },
+  {
+   "cite": "RUN p.89",
+   "contains": [
+    "/cloudsql/"
+   ],
+   "claim": "socket"
+  },
+  {
+   "cite": "RUN p.41",
+   "contains": [
+    "Cloud Run is request driven"
+   ],
+   "claim": "request-driven"
+  },
+  {
+   "cite": "RUN p.116",
+   "contains": [
+    "Deploying a Private Service"
+   ],
+   "claim": "private service"
+  },
+  {
+   "cite": "RUN p.163",
+   "contains": [
+    "Cloud Error Reporting"
+   ],
+   "claim": "Error Reporting"
+  },
+  {
+   "cite": "RUN p.98",
+   "contains": [
+    "automated backups"
+   ],
+   "claim": "automated backups"
+  }
+ ],
+ "negative": [
+  {
+   "src": "ALL",
+   "absent": [
+    "Secret Manager"
+   ],
+   "claim": "Secret Manager is not in the book"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "set-secrets"
+   ],
+   "claim": "set-secrets"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "min-instances"
+   ],
+   "claim": "--min-instances flag"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Cloud Run jobs"
+   ],
+   "claim": "Cloud Run Jobs"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "gen2"
+   ],
+   "claim": "gen2"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "execution environment"
+   ],
+   "claim": "execution environment"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "CPU boost"
+   ],
+   "claim": "startup CPU boost"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "startup CPU"
+   ],
+   "claim": "startup CPU"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "health check"
+   ],
+   "claim": "health checks"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "liveness"
+   ],
+   "claim": "liveness probe"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "startup probe"
+   ],
+   "claim": "startup probe"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Eventarc"
+   ],
+   "claim": "Eventarc"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Cloud Deploy"
+   ],
+   "claim": "Cloud Deploy"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Binary Authorization"
+   ],
+   "claim": "Binary Authorization"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "WebSocket"
+   ],
+   "claim": "WebSocket"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "gRPC"
+   ],
+   "claim": "gRPC"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Direct VPC"
+   ],
+   "claim": "Direct VPC egress"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "serverless NEG"
+   ],
+   "claim": "serverless NEG"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Cloud Armor"
+   ],
+   "claim": "Cloud Armor"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Workload Identity"
+   ],
+   "claim": "Workload Identity"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "--no-cpu-throttling"
+   ],
+   "claim": "no-cpu-throttling"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "always allocated"
+   ],
+   "claim": "CPU always allocated"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "OpenTelemetry"
+   ],
+   "claim": "OpenTelemetry"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "concurrency of 80"
+   ],
+   "claim": "default 80"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "autoscaling.knative"
+   ],
+   "claim": "Knative scaling annotations"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "service mesh"
+   ],
+   "claim": "service mesh"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "remote state"
+   ],
+   "claim": "remote state"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Terraform Cloud"
+   ],
+   "claim": "Terraform Cloud"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "VPC Service Controls"
+   ],
+   "claim": "VPC Service Controls"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Private Service Connect"
+   ],
+   "claim": "Private Service Connect"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "Cloud Run functions"
+   ],
+   "claim": "Cloud Run functions"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "error budget"
+   ],
+   "claim": "error budget"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "--source"
+   ],
+   "claim": "deploy --source"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "--revision-suffix"
+   ],
+   "claim": "revision-suffix"
+  },
+  {
+   "src": "ALL",
+   "absent": [
+    "canary"
+   ],
+   "claim": "canary"
+  },
+  {
+   "cite": "RUN p.55",
+   "absent": [
+    "--min-instances"
+   ],
+   "claim": "p.55 only mentions the concept of minimum instances"
+  },
+  {
+   "cite": "RUN p.49",
+   "absent": [
+    "--tag",
+    "--no-traffic"
+   ],
+   "claim": "p.49 only mentions the concept of revision tags"
+  },
+  {
+   "cite": "RUN p.54",
+   "absent": [
+    "concurrency 80"
+   ],
+   "claim": "p.54 does not give concurrency 80"
+  },
+  {
+   "cite": "RUN p.106",
+   "absent": [
+    "--session-affinity"
+   ],
+   "claim": "p.106 does not give the session affinity flag"
+  },
+  {
+   "cite": "RUN p.114",
+   "absent": [
+    "workload identity"
+   ],
+   "claim": "p.114 does not mention Workload Identity"
+  }
+ ],
+ "allowed_absent_flags": [
+  "--add-volume",
+  "--args",
+  "--attempts",
+  "--command",
+  "--cpu-boost",
+  "--cpu-throttling",
+  "--doublings",
+  "--execution-environment",
+  "--format",
+  "--help",
+  "--ingress",
+  "--json",
+  "--labels",
+  "--list",
+  "--liveness-probe",
+  "--max",
+  "--min",
+  "--min-instances",
+  "--network",
+  "--no-cpu-throttling",
+  "--no-extra",
+  "--no-traffic",
+  "--pkg",
+  "--platform",
+  "--plugin-dir",
+  "--port",
+  "--profile",
+  "--revision",
+  "--revision-suffix",
+  "--session-affinity",
+  "--set-secrets",
+  "--show",
+  "--source",
+  "--src",
+  "--startup-probe",
+  "--strict",
+  "--subnet",
+  "--tag",
+  "--to-latest",
+  "--update-secrets",
+  "--vpc-egress"
+ ]
+}

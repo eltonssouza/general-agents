@@ -1,0 +1,1531 @@
+{
+ "source": "NEO4J.txt and NEO_START.txt extracted with PyMuPDF (=== PAGE N === markers, N = PDF page; printed = N-18 in NEO4J)",
+ "positive": [
+  {
+   "id": "P01",
+   "src": "NEO4J",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "neo4j 2.0",
+    "2.2 at the time of writing",
+    "2.3 coming soon"
+   ],
+   "claim": "preface: Neo4j 2.2 (2.3 coming soon); book version"
+  },
+  {
+   "id": "P02",
+   "src": "NEO4J",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "set of nodes",
+    "relationships that connect them"
+   ],
+   "claim": "graph = nodes and relationships"
+  },
+  {
+   "id": "P03",
+   "src": "NEO4J",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "nodes can be labeled with one or more labels",
+    "named and directed",
+    "always have a start and end node"
+   ],
+   "claim": "characteristics of the LPG"
+  },
+  {
+   "id": "P04",
+   "src": "NEO4J",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "graph compute engines",
+    "offline graph analytics"
+   ],
+   "claim": "graph databases (OLTP) vs graph compute engines"
+  },
+  {
+   "id": "P05",
+   "src": "NEO4J",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "index-free adjacency",
+    "native graph processing",
+    "property graph, resource description framework"
+   ],
+   "claim": "IFA defines native processing; three models"
+  },
+  {
+   "id": "P06",
+   "src": "NEO4J",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "neither good nor bad",
+    "mysql",
+    "at the expense of making some queries"
+   ],
+   "claim": "native vs non-native are trade-offs; IFA costs queries without traversal"
+  },
+  {
+   "id": "P07",
+   "src": "NEO4J",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "relatively constant",
+    "proportional only to the size of the part of the graph traversed"
+   ],
+   "claim": "performance proportional to the part traversed"
+  },
+  {
+   "id": "P08",
+   "src": "NEO4J",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "naturally additive",
+    "schema-oriented data governance"
+   ],
+   "claim": "graphs are additive; programmatic governance"
+  },
+  {
+   "id": "P09",
+   "src": "NEO4J",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "only at modeling",
+    "joining tables"
+   ],
+   "claim": "relationships only at relational modeling time"
+  },
+  {
+   "id": "P10",
+   "src": "NEO4J",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "join tables add accidental complexity",
+    "sparse tables with nullable columns"
+   ],
+   "claim": "accidental complexity in the relational model"
+  },
+  {
+   "id": "P11",
+   "src": "NEO4J",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "connect by",
+    "four, five, or six degrees"
+   ],
+   "claim": "CONNECT BY and degrees 4-6"
+  },
+  {
+   "id": "P12",
+   "src": "NEO4J",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "foreign keys",
+    "application level"
+   ],
+   "claim": "aggregate NoSQL: join in the application"
+  },
+  {
+   "id": "P13",
+   "src": "NEO4J",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "riak",
+    "map-reduce",
+    "hadoop",
+    "dangling references"
+   ],
+   "claim": "Riak link walking; dangling references; Hadoop"
+  },
+  {
+   "id": "P14",
+   "src": "NEO4J",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "o(1)",
+    "o(log n)",
+    "o(m log n)"
+   ],
+   "claim": "O notation in ch. 2"
+  },
+  {
+   "id": "P15",
+   "src": "NEO4J",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "write latency",
+    "each hop requires an index lookup"
+   ],
+   "claim": "denormalizing with backlinks costs writes and traversal"
+  },
+  {
+   "id": "P16",
+   "src": "NEO4J",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "1,000,000 people",
+    "50 friends",
+    "neo4j in action"
+   ],
+   "claim": "Partner/Vukotic experiment"
+  },
+  {
+   "id": "P17",
+   "src": "NEO4J",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "30.267",
+    "1543.505",
+    "2.132",
+    "unfinished"
+   ],
+   "claim": "Table 2-1"
+  },
+  {
+   "id": "P18",
+   "src": "NEO4J",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "java string and primitive data types",
+    "arrays of these types"
+   ],
+   "claim": "property types in Neo4j"
+  },
+  {
+   "id": "P19",
+   "src": "NEO4J",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "quality and weight",
+    "sparql",
+    "gremlin"
+   ],
+   "claim": "properties on relationships; other languages"
+  },
+  {
+   "id": "P20",
+   "src": "NEO4J",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "ascii art",
+    "identifiers"
+   ],
+   "claim": "Cypher: ASCII art and identifiers"
+  },
+  {
+   "id": "P21",
+   "src": "NEO4J",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "metainformation about existing indexes",
+    "specification by example"
+   ],
+   "claim": "anchors by label/predicates and meta-information"
+  },
+  {
+   "id": "P22",
+   "src": "NEO4J",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "create unique",
+    "foreach",
+    "deprecated in favor of"
+   ],
+   "claim": "list of clauses; START deprecated"
+  },
+  {
+   "id": "P23",
+   "src": "NEO4J",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "asset label",
+    "two labels"
+   ],
+   "claim": "generic Asset label in the data center"
+  },
+  {
+   "id": "P24",
+   "src": "NEO4J",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "*1..5",
+    "status = 'down'",
+    "return distinct asset"
+   ],
+   "claim": "variable-length path query 1..5"
+  },
+  {
+   "id": "P25",
+   "src": "NEO4J",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "unique email property value",
+    "index all nodes with a user label"
+   ],
+   "claim": "labels enable indexes and uniqueness"
+  },
+  {
+   "id": "P26",
+   "src": "NEO4J",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "single transaction",
+    "if the transaction fails"
+   ],
+   "claim": "CREATE in a single transaction"
+  },
+  {
+   "id": "P27",
+   "src": "NEO4J",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "merge",
+    "duplication is not permitted"
+   ],
+   "claim": "CREATE vs MERGE"
+  },
+  {
+   "id": "P28",
+   "src": "NEO4J",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "create index on :venue(name)",
+    "assert c.name is unique"
+   ],
+   "claim": "2.x index and constraint syntax"
+  },
+  {
+   "id": "P29",
+   "src": "NEO4J",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "populated in the background",
+    "scan and filter all the nodes labeled venue"
+   ],
+   "claim": "background index; without an index the label is scanned"
+  },
+  {
+   "id": "P30",
+   "src": "NEO4J",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "[:street|city*1..2]",
+    "anonymous node"
+   ],
+   "claim": "variable-length path with alternative types"
+  },
+  {
+   "id": "P31",
+   "src": "NEO4J",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "present (or absent)",
+    "specific values"
+   ],
+   "claim": "what WHERE can restrict"
+  },
+  {
+   "id": "P32",
+   "src": "NEO4J",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "chain together several matches",
+    "piped into the next"
+   ],
+   "claim": "WITH chains queries"
+  },
+  {
+   "id": "P33",
+   "src": "NEO4J",
+   "pages": [
+    70
+   ],
+   "terms": [
+    "separate read-only clauses"
+   ],
+   "claim": "WITH separates reading from SET"
+  },
+  {
+   "id": "P34",
+   "src": "NEO4J",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "lossy",
+    "star-shaped"
+   ],
+   "claim": "EMAILED model is lossy"
+  },
+  {
+   "id": "P35",
+   "src": "NEO4J",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "lax use of english",
+    "email_1"
+   ],
+   "claim": "cause of the error: loose use of language; Email node"
+  },
+  {
+   "id": "P36",
+   "src": "NEO4J",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "replied_to",
+    "forwarded",
+    "lossy"
+   ],
+   "claim": "naive REPLIED_TO/FORWARDED"
+  },
+  {
+   "id": "P37",
+   "src": "NEO4J",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "email:reply",
+    "reply_to*1..4"
+   ],
+   "claim": "reply as Email:Reply with REPLY_TO*1..4"
+  },
+  {
+   "id": "P38",
+   "src": "NEO4J",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "forward_of*",
+    "count(f)",
+    "email:forward"
+   ],
+   "claim": "FORWARD_OF* without an upper bound"
+  },
+  {
+   "id": "P39",
+   "src": "NEO4J",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "design for queryability",
+    "common nouns become labels"
+   ],
+   "claim": "five steps and nouns become labels"
+  },
+  {
+   "id": "P40",
+   "src": "NEO4J",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "bad practice to try to conflate",
+    "verbing"
+   ],
+   "claim": "do not conflate data at write time; verbing"
+  },
+  {
+   "id": "P41",
+   "src": "NEO4J",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "royal road",
+    "separate store file",
+    "ignore direction",
+    "breaking change"
+   ],
+   "claim": "modeling guidelines and cost of properties"
+  },
+  {
+   "id": "P42",
+   "src": "NEO4J",
+   "pages": [
+    86
+   ],
+   "terms": [
+    "closed set",
+    "home_address",
+    "delivery_address",
+    "start and end times"
+   ],
+   "claim": "fine-grained types for a closed set; facts with timestamps"
+  },
+  {
+   "id": "P43",
+   "src": "NEO4J",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "complex value types",
+    "address"
+   ],
+   "claim": "complex values as nodes"
+  },
+  {
+   "id": "P44",
+   "src": "NEO4J",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "timeline trees",
+    "linked lists"
+   ],
+   "claim": "two time techniques"
+  },
+  {
+   "id": "P45",
+   "src": "NEO4J",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "merge will add any missing elements",
+    "broadcast_on",
+    "somewhat verbose"
+   ],
+   "claim": "MERGE on the timeline tree; verbose WHERE"
+  },
+  {
+   "id": "P46",
+   "src": "NEO4J",
+   "pages": [
+    92
+   ],
+   "terms": [
+    "constant time",
+    "leak into any queries"
+   ],
+   "claim": "doubly linked list and versioning leaks"
+  },
+  {
+   "id": "P47",
+   "src": "NEO4J",
+   "pages": [
+    94
+   ],
+   "terms": [
+    "not the same as an in-memory database"
+   ],
+   "claim": "embedded is not in-memory"
+  },
+  {
+   "id": "P48",
+   "src": "NEO4J",
+   "pages": [
+    96
+   ],
+   "terms": [
+    "60 seconds",
+    "transactional cypher endpoint"
+   ],
+   "claim": "orphan transactions at 60 s"
+  },
+  {
+   "id": "P49",
+   "src": "NEO4J",
+   "pages": [
+    99
+   ],
+   "terms": [
+    "order of magnitude slower",
+    "ha.tx_push_factor",
+    "ha.tx_push_strategy"
+   ],
+   "claim": "writing through slaves; push factor"
+  },
+  {
+   "id": "P50",
+   "src": "NEO4J",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "ha.slave_coordinator_update_mode=none",
+    "native load balancer"
+   ],
+   "claim": "master election per region; no native load balancer"
+  },
+  {
+   "id": "P51",
+   "src": "NEO4J",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "cache sharding",
+    "warm cache"
+   ],
+   "claim": "cache sharding"
+  },
+  {
+   "id": "P52",
+   "src": "NEO4J",
+   "pages": [
+    102
+   ],
+   "terms": [
+    "eventually consistent",
+    "read our own writes"
+   ],
+   "claim": "eventually consistent cluster"
+  },
+  {
+   "id": "P53",
+   "src": "NEO4J",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "impermanentgraphdatabase",
+    "not intended for production"
+   ],
+   "claim": "Impermanent only for tests"
+  },
+  {
+   "id": "P54",
+   "src": "NEO4J",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "percentiles rather than averages",
+    "98%",
+    "200 ms"
+   ],
+   "claim": "percentiles in performance tests"
+  },
+  {
+   "id": "P55",
+   "src": "NEO4J",
+   "pages": [
+    114
+   ],
+   "terms": [
+    "6ms",
+    "20-fold"
+   ],
+   "claim": "disk seek and SSD gain"
+  },
+  {
+   "id": "P56",
+   "src": "NEO4J",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "between 4 and 8 gb",
+    "smaller heap can actually improve performance"
+   ],
+   "claim": "heap 4-8 GB"
+  },
+  {
+   "id": "P57",
+   "src": "NEO4J",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "redundancy of one",
+    "five instances",
+    "1000 / average request time"
+   ],
+   "claim": "redundancy and load formula"
+  },
+  {
+   "id": "P58",
+   "src": "NEO4J",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "inflated expectations",
+    "neo4j-import",
+    "1,000,000 records per second"
+   ],
+   "claim": "initial import"
+  },
+  {
+   "id": "P59",
+   "src": "NEO4J",
+   "pages": [
+    120
+   ],
+   "terms": [
+    "duplicate data",
+    "three small statements"
+   ],
+   "claim": "MERGE of a large pattern duplicates"
+  },
+  {
+   "id": "P60",
+   "src": "NEO4J",
+   "pages": [
+    121
+   ],
+   "terms": [
+    "periodic commit",
+    "1000 by default",
+    "drop index on :movie(title)"
+   ],
+   "claim": "PERIODIC COMMIT and DROP INDEX"
+  },
+  {
+   "id": "P61",
+   "src": "NEO4J",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "minutes to milliseconds",
+    "names, however, have been changed"
+   ],
+   "claim": "reasons for adoption; names changed"
+  },
+  {
+   "id": "P62",
+   "src": "NEO4J",
+   "pages": [
+    127
+   ],
+   "terms": [
+    "full mdm solution"
+   ],
+   "claim": "graphs are not full MDM"
+  },
+  {
+   "id": "P63",
+   "src": "NEO4J",
+   "pages": [
+    130
+   ],
+   "terms": [
+    "inferred, rather than volunteered"
+   ],
+   "claim": "Talent.net infers ties"
+  },
+  {
+   "id": "P64",
+   "src": "NEO4J",
+   "pages": [
+    136
+   ],
+   "terms": [
+    "relatively inefficient",
+    "as narrow a scope as possible"
+   ],
+   "claim": "long variable-length paths are inefficient"
+  },
+  {
+   "id": "P65",
+   "src": "NEO4J",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "worked_with",
+    "single writer thread"
+   ],
+   "claim": "asynchronous WORKED_WITH shortcut"
+  },
+  {
+   "id": "P66",
+   "src": "NEO4J",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "allowed_do_not_inherit",
+    "denied takes precedence",
+    "almost twice as fast"
+   ],
+   "claim": "TeleGraph: precedence and fine-grained types"
+  },
+  {
+   "id": "P67",
+   "src": "NEO4J",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "union all includes any duplicates"
+   ],
+   "claim": "UNION vs UNION ALL"
+  },
+  {
+   "id": "P68",
+   "src": "NEO4J",
+   "pages": [
+    148
+   ],
+   "terms": [
+    "bottom-up",
+    "administrators for an account"
+   ],
+   "claim": "bottom-up query"
+  },
+  {
+   "id": "P69",
+   "src": "NEO4J",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "between one and three thousand parcels"
+   ],
+   "claim": "Global Post requirement"
+  },
+  {
+   "id": "P70",
+   "src": "NEO4J",
+   "pages": [
+    153
+   ],
+   "terms": [
+    "start_date",
+    "end_date",
+    "connected_to",
+    "densely connected"
+   ],
+   "claim": "intervals on relationships"
+  },
+  {
+   "id": "P71",
+   "src": "NEO4J",
+   "pages": [
+    157
+   ],
+   "terms": [
+    "all(r in relationships(upleg)",
+    "reduce(weight=0"
+   ],
+   "claim": "route Cypher"
+  },
+  {
+   "id": "P72",
+   "src": "NEO4J",
+   "pages": [
+    164
+   ],
+   "terms": [
+    "graphalgofactory.dijkstra"
+   ],
+   "claim": "Dijkstra via Java library"
+  },
+  {
+   "id": "P73",
+   "src": "NEO4J",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "o(m log n)",
+    "o(log n)",
+    "o(1)"
+   ],
+   "claim": "costs with and without IFA"
+  },
+  {
+   "id": "P74",
+   "src": "NEO4J",
+   "pages": [
+    169
+   ],
+   "terms": [
+    "brute-force",
+    "contending for resources"
+   ],
+   "claim": "reverse index and contention"
+  },
+  {
+   "id": "P75",
+   "src": "NEO4J",
+   "pages": [
+    171
+   ],
+   "terms": [
+    "record layout from neo4j 2.2"
+   ],
+   "claim": "2.2 record layout"
+  },
+  {
+   "id": "P76",
+   "src": "NEO4J",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "nine bytes",
+    "900 bytes",
+    "in-use flag",
+    "densely connected"
+   ],
+   "claim": "text: 9 bytes; dense-node flag"
+  },
+  {
+   "id": "P77",
+   "src": "NEO4J",
+   "pages": [
+    173
+   ],
+   "terms": [
+    "doubly linked lists",
+    "start node",
+    "end node"
+   ],
+   "claim": "two doubly linked lists"
+  },
+  {
+   "id": "P78",
+   "src": "NEO4J",
+   "pages": [
+    174
+   ],
+   "terms": [
+    "four property blocks",
+    "neostore.propertystore.db.strings",
+    "neostore.propertystore.db.arrays"
+   ],
+   "claim": "properties"
+  },
+  {
+   "id": "P79",
+   "src": "NEO4J",
+   "pages": [
+    175
+   ],
+   "terms": [
+    "off-heap cache",
+    "lru-k",
+    "inlin"
+   ],
+   "claim": "off-heap LRU-K cache since 2.2"
+  },
+  {
+   "id": "P80",
+   "src": "NEO4J",
+   "pages": [
+    175
+   ],
+   "terms": [
+    "least frequently used",
+    "page popularity"
+   ],
+   "claim": "LFU policy adjusted by popularity"
+  },
+  {
+   "id": "P81",
+   "src": "NEO4J",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "transaction event handlers",
+    "logically deleted"
+   ],
+   "claim": "Kernel API"
+  },
+  {
+   "id": "P82",
+   "src": "NEO4J",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "marginally less well"
+   ],
+   "claim": "Traversal Framework vs Core API"
+  },
+  {
+   "id": "P83",
+   "src": "NEO4J",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "not all graph databases are fully acid",
+    "two-phase commit"
+   ],
+   "claim": "not every graph is ACID; 2PC"
+  },
+  {
+   "id": "P84",
+   "src": "NEO4J",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "detect a potential deadlock",
+    "serialize the transactions",
+    "write ahead log"
+   ],
+   "claim": "serialized deadlock; WAL"
+  },
+  {
+   "id": "P85",
+   "src": "NEO4J",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "idempotent",
+    "master-slave"
+   ],
+   "claim": "idempotent replay; master-slave"
+  },
+  {
+   "id": "P86",
+   "src": "NEO4J",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "writing through slaves",
+    "version 1.8"
+   ],
+   "claim": "writing through slaves; replication since 1.8"
+  },
+  {
+   "id": "P87",
+   "src": "NEO4J",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "tens of billions",
+    "95th percentile"
+   ],
+   "claim": "capacity"
+  },
+  {
+   "id": "P88",
+   "src": "NEO4J",
+   "pages": [
+    186
+   ],
+   "terms": [
+    "o(1)",
+    "prev"
+   ],
+   "claim": "O(1) publication list"
+  },
+  {
+   "id": "P89",
+   "src": "NEO4J",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "pancake",
+    "synthetic identifier"
+   ],
+   "claim": "sharding in the application"
+  },
+  {
+   "id": "P90",
+   "src": "NEO4J",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "no database yet that provably supports"
+   ],
+   "claim": "automatic partitioning not proven"
+  },
+  {
+   "id": "P91",
+   "src": "NEO4J",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "np hard",
+    "holy grail"
+   ],
+   "claim": "NP-hard holy grail"
+  },
+  {
+   "id": "P92",
+   "src": "NEO4J",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "published in 1956",
+    "o(|r| + |n| log |n|)",
+    "o(|r|^2)"
+   ],
+   "claim": "Dijkstra: history and cost"
+  },
+  {
+   "id": "P93",
+   "src": "NEO4J",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "50 driving hours"
+   ],
+   "claim": "Sydney-Perth example"
+  },
+  {
+   "id": "P94",
+   "src": "NEO4J",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "f(n) = g(n) + h(n)",
+    "provably optimal"
+   ],
+   "claim": "A*"
+  },
+  {
+   "id": "P95",
+   "src": "NEO4J",
+   "pages": [
+    201
+   ],
+   "terms": [
+    "strong triadic closure property"
+   ],
+   "claim": "strong triadic closure"
+  },
+  {
+   "id": "P96",
+   "src": "NEO4J",
+   "pages": [
+    205
+   ],
+   "terms": [
+    "structurally balanced triadic closure",
+    "two relationships having negative sentiments"
+   ],
+   "claim": "structural balance"
+  },
+  {
+   "id": "P97",
+   "src": "NEO4J",
+   "pages": [
+    207
+   ],
+   "terms": [
+    "local bridge",
+    "strong triadic closure"
+   ],
+   "claim": "local bridge conflicts with strong closure"
+  },
+  {
+   "id": "P98",
+   "src": "NEO4J",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "finding your next job",
+    "different knowledge"
+   ],
+   "claim": "local bridges and jobs"
+  },
+  {
+   "id": "P99",
+   "src": "NEO4J",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "basic availability",
+    "ravendb"
+   ],
+   "claim": "ACID/BASE in Appendix A"
+  },
+  {
+   "id": "P100",
+   "src": "NEO4J",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "2f +1"
+   ],
+   "claim": "replicas R = 2F + 1"
+  },
+  {
+   "id": "P101",
+   "src": "NEO4J",
+   "pages": [
+    218
+   ],
+   "terms": [
+    "consistent hashing"
+   ],
+   "claim": "consistent hashing"
+  },
+  {
+   "id": "P102",
+   "src": "NEO4J",
+   "pages": [
+    225
+   ],
+   "terms": [
+    "hyper-edge",
+    "six relationships"
+   ],
+   "claim": "hypergraph"
+  },
+  {
+   "id": "P103",
+   "src": "NEO4J",
+   "pages": [
+    228
+   ],
+   "terms": [
+    "blueprints sail"
+   ],
+   "claim": "RDF over graphs"
+  },
+  {
+   "id": "P104",
+   "src": "NEO_START",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "what is cypher",
+    "import data to neo4j"
+   ],
+   "claim": "NEO_START: only topic titles"
+  },
+  {
+   "id": "P105",
+   "src": "NEO_START",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "embedding & vector indexes",
+    "centrality algorithms",
+    "graph data science"
+   ],
+   "claim": "NEO_START: topics listed"
+  },
+  {
+   "id": "P106",
+   "src": "NEO_START",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "2026"
+   ],
+   "claim": "NEO_START: 2026 page"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "src": "NEO4J",
+   "terms": [
+    "supernode",
+    "super node",
+    "dense node",
+    "super-node"
+   ],
+   "claim": "the book does not cover supernodes"
+  },
+  {
+   "id": "N02",
+   "src": "NEO4J",
+   "terms": [
+    "time tree",
+    "timetree"
+   ],
+   "claim": "the book says 'timeline tree', not 'time tree'"
+  },
+  {
+   "id": "N03",
+   "src": "NEO4J",
+   "terms": [
+    "re:\\braft\\b",
+    "re:\\bpaxos\\b"
+   ],
+   "claim": "Raft/Paxos are not in the book"
+  },
+  {
+   "id": "N04",
+   "src": "NEO4J",
+   "terms": [
+    "read committed",
+    "read-committed",
+    "repeatable read"
+   ],
+   "claim": "isolation levels are not in the book"
+  },
+  {
+   "id": "N05",
+   "src": "NEO4J",
+   "terms": [
+    "allnodesscan",
+    "nodeindexseek",
+    "nodeuniqueindexseek"
+   ],
+   "claim": "plan operators are not in the book"
+  },
+  {
+   "id": "N06",
+   "src": "NEO4J",
+   "terms": [
+    "allshortestpaths"
+   ],
+   "claim": "allShortestPaths is not in the book"
+  },
+  {
+   "id": "N07",
+   "src": "NEO4J",
+   "terms": [
+    "outofmemory",
+    "out of memory"
+   ],
+   "claim": "OutOfMemoryError is not in the book"
+  },
+  {
+   "id": "N08",
+   "src": "NEO4J",
+   "terms": [
+    "wait-for graph",
+    "wait for graph"
+   ],
+   "claim": "wait-for graph is not in the book"
+  },
+  {
+   "id": "N09",
+   "src": "NEO4J",
+   "terms": [
+    "causal cluster",
+    "read replica",
+    "core server"
+   ],
+   "claim": "Causal Clustering is not in the book"
+  },
+  {
+   "id": "N10",
+   "src": "NEO4J",
+   "terms": [
+    "dbms.memory"
+   ],
+   "claim": "dbms.memory.* is not in the book"
+  },
+  {
+   "id": "N11",
+   "src": "NEO4J",
+   "terms": [
+    "b+ tree",
+    "b-tree",
+    "btree",
+    "b+tree"
+   ],
+   "claim": "B-tree is not mentioned"
+  },
+  {
+   "id": "N12",
+   "src": "NEO4J",
+   "terms": [
+    "pagerank",
+    "apoc",
+    "graph data science"
+   ],
+   "claim": "PageRank/APOC/GDS are not in the book"
+  },
+  {
+   "id": "N13",
+   "src": "NEO4J",
+   "terms": [
+    "plan cache",
+    "query cache",
+    "compiled plan",
+    "execution plan"
+   ],
+   "claim": "plan cache is not in the book"
+  },
+  {
+   "id": "N14",
+   "src": "NEO4J",
+   "terms": [
+    "optional match"
+   ],
+   "claim": "OPTIONAL MATCH is not in the book"
+  },
+  {
+   "id": "N15",
+   "src": "NEO4J",
+   "terms": [
+    "k^d",
+    "o(k^d",
+    "k**d"
+   ],
+   "claim": "O(k^d) is not in the book"
+  },
+  {
+   "id": "N16",
+   "src": "NEO4J",
+   "terms": [
+    "stop-the-world",
+    "stop the world"
+   ],
+   "claim": "stop-the-world is not in the book"
+  },
+  {
+   "id": "N17",
+   "src": "NEO4J",
+   "terms": [
+    "re:circular(ly)?\\s+(doubly|linked|list)"
+   ],
+   "claim": "'circular' list is not in the book"
+  },
+  {
+   "id": "N18",
+   "src": "NEO4J",
+   "terms": [
+    "re:\\$[a-z]\\w*\\s*[,)}]"
+   ],
+   "claim": "$name parameters are not in the book (it uses {name})"
+  },
+  {
+   "id": "N19",
+   "src": "NEO4J",
+   "terms": [
+    "rbac",
+    "gbac"
+   ],
+   "claim": "RBAC/GBAC are not in the book"
+  },
+  {
+   "id": "N20",
+   "src": "NEO4J",
+   "terms": [
+    "low-cardinality",
+    "low cardinality"
+   ],
+   "claim": "low-cardinality rule is not in the book"
+  },
+  {
+   "id": "N21",
+   "src": "NEO4J",
+   "terms": [
+    "lucene"
+   ],
+   "claim": "Lucene is not in the book"
+  },
+  {
+   "id": "N22",
+   "src": "NEO4J",
+   "terms": [
+    "euclidean",
+    "geodesic"
+   ],
+   "claim": "Euclidean/geodesic A* heuristic is not in the book"
+  },
+  {
+   "id": "N23",
+   "src": "NEO4J",
+   "terms": [
+    "compressedoops",
+    "31 gb",
+    "32-bit"
+   ],
+   "claim": "JVM heap limits are not in the book"
+  },
+  {
+   "id": "N24",
+   "src": "NEO4J",
+   "terms": [
+    "re:\\blpg\\b",
+    "re:\\bifa\\b"
+   ],
+   "claim": "the acronyms LPG and IFA do not appear in the book"
+  },
+  {
+   "id": "N25",
+   "src": "NEO4J",
+   "terms": [
+    "campinas",
+    "recife"
+   ],
+   "claim": "the v1 Campinas-Recife example is invented"
+  }
+ ]
+}

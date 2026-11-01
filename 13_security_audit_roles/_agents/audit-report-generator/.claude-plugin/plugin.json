@@ -1,0 +1,15 @@
+{
+  "name": "audit-report-generator",
+  "version": "3.0.0",
+  "description": "Audit report generator of the pipeline (Universal Audit Multiagent v3.0): consolidates only already validated data into a Markdown/PDF report, findings.json, coverage and compliance matrices and issue drafts, with totals computed by script (audit_summary.py: only CONFIRMED counts as a vulnerability). Use only after the audit-evidence-validator, or to assemble a clearly labeled partial report. It does not invent, does not raise severity, does not confirm candidates, does not publish issues remotely and does not alter the audited",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "security-audit",
+    "multiagent",
+    "universal-audit",
+    "report-generator"
+  ]
+}

@@ -1,0 +1,42 @@
+# Generated from agents-skills/universal-audit-multiagent/configs/routing.yaml v3.0: roles point to the collection's agents.
+version: '3.0'
+roles:
+  security: audit-security-auditor
+  malware: audit-malware-analyst
+  privacy: audit-privacy-compliance
+  supply-chain: audit-supply-chain
+  infrastructure: audit-infrastructure
+  ai-security: audit-ai-security
+  validator: audit-evidence-validator
+  reporter: audit-report-generator
+  orchestrator: audit-orchestrator
+shared_policy: 'section "Shared policy" of each agent prompt (identical in all)'
+routing:
+  '01': {primary: security, consult: [infrastructure]}
+  '02': {primary: security, consult: []}
+  '03': {primary: security, consult: [privacy]}
+  '04': {primary: security, consult: [malware]}
+  '05': {primary: security, consult: []}
+  '06': {primary: security, consult: [supply-chain, infrastructure]}
+  '07': {primary: security, consult: [privacy, infrastructure]}
+  '08': {primary: security, consult: []}
+  '09': {primary: security, consult: [malware]}
+  '10': {primary: supply-chain, consult: [malware]}
+  '11': {primary: malware, consult: [supply-chain]}
+  '12': {primary: infrastructure, consult: [security]}
+  '13': {primary: infrastructure, consult: []}
+  '14': {primary: infrastructure, consult: [supply-chain, malware]}
+  '15': {primary: infrastructure, consult: [privacy]}
+  '16': {primary: privacy, consult: [security]}
+  '17': {primary: privacy, consult: []}
+  '18': {primary: security, consult: []}
+  '19': {primary: security, consult: [infrastructure]}
+  '20': {primary: ai-security, consult: [security, privacy]}
+activation:
+  always: [security, malware]
+  supply-chain: 'if there are dependencies, a build, a release or distributed software'
+  infrastructure: 'if there is infrastructure, network, cloud, deploy, containers or CI/CD'
+  privacy: 'if personal data is processed, a regulated jurisdiction/activity applies, or applicability is uncertain'
+  ai-security: 'if there is an LLM, agent, model, RAG, AI tools, MCP or AI memory'
+  validator: 'for all candidates from all specialists'
+  reporter: 'only after the validation gate'

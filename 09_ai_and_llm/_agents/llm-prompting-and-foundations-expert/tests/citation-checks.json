@@ -1,0 +1,1938 @@
+{
+ "fonte": "LLMS (arXiv 2303.18223v19) and PES (arXiv 2402.07927v2); verification against the text extracted per page (PDF = printed)",
+ "checks": [
+  {
+   "cite": "LLMS p.1",
+   "contains": [
+    "arXiv:2303.18223v19",
+    "18 Mar 2026",
+    "v18",
+    "March 7, 2026",
+    "Wayne Xin Zhao",
+    "pre-training",
+    "adaptation tuning",
+    "utilization",
+    "capacity evaluation"
+   ],
+   "claim": "identification and version"
+  },
+  {
+   "cite": "LLMS p.1-3",
+   "contains": [
+    "statistical language models",
+    "Neural language models",
+    "Pre-trained language models",
+    "Large language models"
+   ],
+   "claim": "four generations of LMs"
+  },
+  {
+   "cite": "LLMS p.2",
+   "contains": [
+    "four generations of language models",
+    "ELMo",
+    "BERT"
+   ],
+   "claim": "Fig.2"
+  },
+  {
+   "cite": "LLMS p.3",
+   "contains": [
+    "emergent abilities",
+    "in-context learning",
+    "GPT-2",
+    "prompting interface",
+    "three major differences"
+   ],
+   "claim": "differences LLM vs PLM"
+  },
+  {
+   "cite": "LLMS p.4",
+   "contains": [
+    "KM scaling law",
+    "Kaplan",
+    "0.076",
+    "0.095",
+    "0.050",
+    "8.8 × 10",
+    "Chinchilla scaling law",
+    "1.69",
+    "406.4",
+    "410.7",
+    "0.34",
+    "0.28",
+    "6ND",
+    "larger than 10B"
+   ],
+   "claim": "scaling laws Eq.1-3 and >10B definition"
+  },
+  {
+   "cite": "LLMS p.4",
+   "contains": [
+    "G is a scaling coefficient",
+    "computed by A, B"
+   ],
+   "claim": "G is only described, with no formula"
+  },
+  {
+   "cite": "LLMS p.5",
+   "contains": [
+    "predictable scaling",
+    "inverse scaling",
+    "diminishing returns",
+    "3-digit addition",
+    "62B",
+    "68B",
+    "Persian",
+    "instruction following"
+   ],
+   "claim": "discussion of scaling and emergence"
+  },
+  {
+   "cite": "LLMS p.5-6",
+   "contains": [
+    "step-by-step reasoning",
+    "60B",
+    "100B",
+    "GSM8K",
+    "MAWPS"
+   ],
+   "claim": "emergent CoT"
+  },
+  {
+   "cite": "LLMS p.6",
+   "contains": [
+    "grokking",
+    "DeepSpeed",
+    "Megatron-LM",
+    "mixed precision",
+    "training loss spike",
+    "Ability eliciting",
+    "Alignment tuning"
+   ],
+   "claim": "key techniques"
+  },
+  {
+   "cite": "LLMS p.7",
+   "contains": [
+    "Tools manipulation",
+    "calculator",
+    "plugins"
+   ],
+   "claim": "tool use"
+  },
+  {
+   "cite": "LLMS p.7",
+   "contains": [
+    "GPT-1",
+    "GPT-2",
+    "decoder-only",
+    "unsupervised multitask learner",
+    "WebText"
+   ],
+   "claim": "GPT-1 and GPT-2"
+  },
+  {
+   "cite": "LLMS p.9",
+   "contains": [
+    "GPT-3",
+    "in-context learning",
+    "Codex",
+    "July 2021"
+   ],
+   "claim": "GPT-3 and Codex"
+  },
+  {
+   "cite": "LLMS p.10",
+   "contains": [
+    "InstructGPT",
+    "January 2022",
+    "ChatGPT",
+    "November 2022",
+    "GPT-4",
+    "March 2023",
+    "red teaming",
+    "predictable scaling",
+    "128k tokens",
+    "April 2023"
+   ],
+   "claim": "ChatGPT, GPT-4, Turbo"
+  },
+  {
+   "cite": "LLMS p.11",
+   "contains": [
+    "LLaMA-3.1",
+    "405B",
+    "15T tokens",
+    "128K",
+    "Mixtral",
+    "Mistral Large 2",
+    "Gemma-2",
+    "Qwen2.5",
+    "18T tokens",
+    "GLM-4",
+    "Baichuan-2",
+    "2.6 trillion"
+   ],
+   "claim": "model series"
+  },
+  {
+   "cite": "LLMS p.12",
+   "contains": [
+    "Stanford Alpaca",
+    "52K",
+    "Vicuna",
+    "ShareGPT",
+    "LLaVA",
+    "davinci",
+    "babbage",
+    "curie"
+   ],
+   "claim": "LLaMA derivatives and APIs"
+  },
+  {
+   "cite": "LLMS p.13",
+   "contains": [
+    "CommonCrawl",
+    "C4",
+    "RedPajama-Data",
+    "30T tokens",
+    "RefinedWeb",
+    "5T tokens",
+    "WebText",
+    "BookCorpus",
+    "Gutenberg",
+    "gpt-4-1106-preview"
+   ],
+   "claim": "corpora and APIs"
+  },
+  {
+   "cite": "LLMS p.14",
+   "contains": [
+    "The Pile",
+    "22 diverse",
+    "ROOTS",
+    "59 different languages",
+    "Dolma",
+    "3T tokens",
+    "OLMo",
+    "BigQuery",
+    "The Stack"
+   ],
+   "claim": "mixed corpora"
+  },
+  {
+   "cite": "LLMS p.14-15",
+   "contains": [
+    "170 English NLP datasets",
+    "2,052",
+    "FLAN-v2",
+    "ShareGPT",
+    "90,000",
+    "OpenAssistant",
+    "66,497",
+    "Dolly",
+    "15,000",
+    "175 seed",
+    "Baize",
+    "111.5K"
+   ],
+   "claim": "instruction tuning datasets"
+  },
+  {
+   "cite": "LLMS p.15",
+   "contains": [
+    "HH-RLHF",
+    "SHP",
+    "385K",
+    "PKU-SafeRLHF",
+    "330K",
+    "Stack Exchange Preferences",
+    "Sandbox Alignment Data",
+    "169K"
+   ],
+   "claim": "alignment datasets"
+  },
+  {
+   "cite": "LLMS p.16",
+   "contains": [
+    "DeepSpeed",
+    "Megatron-LM",
+    "vLLM",
+    "PagedAttention",
+    "continuous batching",
+    "DeepSpeed-Chat",
+    "Colossal-AI"
+   ],
+   "claim": "libraries"
+  },
+  {
+   "cite": "LLMS p.17",
+   "contains": [
+    "Webpages",
+    "Conversation text",
+    "Books",
+    "Multilingual text",
+    "122 languages",
+    "46"
+   ],
+   "claim": "data sources"
+  },
+  {
+   "cite": "LLMS p.18",
+   "contains": [
+    "classifier-based",
+    "heuristic-based",
+    "De-duplication",
+    "perplexity",
+    "Privacy Reduction",
+    "Data-Juicer"
+   ],
+   "claim": "pre-processing"
+  },
+  {
+   "cite": "LLMS p.19",
+   "contains": [
+    "Byte-Pair Encoding",
+    "WordPiece",
+    "Unigram",
+    "SentencePiece",
+    "1994"
+   ],
+   "claim": "tokenization"
+  },
+  {
+   "cite": "LLMS p.20",
+   "contains": [
+    "double descent",
+    "Data Mixture",
+    "DoReMi",
+    "Falcon",
+    "CodeGen",
+    "over 80%",
+    "6.5%",
+    "4.5%",
+    "2.5%"
+   ],
+   "claim": "data mixture"
+  },
+  {
+   "cite": "LLMS p.21",
+   "contains": [
+    "CodeLLaMA",
+    "500B",
+    "100B Python",
+    "Llemma",
+    "5% general",
+    "16K",
+    "LongLLaMA",
+    "Gopher",
+    "Chinchilla"
+   ],
+   "claim": "data curriculum"
+  },
+  {
+   "cite": "LLMS p.22",
+   "contains": [
+    "encoder-decoder",
+    "causal decoder",
+    "prefix decoder",
+    "Switch Transformer",
+    "GLaM",
+    "state space models",
+    "Mamba",
+    "RWKV",
+    "without official verification"
+   ],
+   "claim": "architectures"
+  },
+  {
+   "cite": "LLMS p.23",
+   "contains": [
+    "TABLE 6",
+    "O(H(T + H))",
+    "O(TH(T + H))",
+    "Hyena",
+    "Pre LayerNorm",
+    "12288",
+    "GLM-130B"
+   ],
+   "claim": "Tab.5/6"
+  },
+  {
+   "cite": "LLMS p.24",
+   "contains": [
+    "Post Norm",
+    "Pre Norm",
+    "Sandwich Norm",
+    "LayerNorm",
+    "RMSNorm",
+    "DeepNorm",
+    "SwiGLU",
+    "GeGLU",
+    "ALiBi",
+    "RoPE",
+    "about 50%"
+   ],
+   "claim": "Tab.7 and configuration"
+  },
+  {
+   "cite": "LLMS p.25",
+   "contains": [
+    "10000",
+    "wavelength",
+    "multi-query",
+    "grouped-query",
+    "FlashAttention-2",
+    "2×",
+    "PagedAttention",
+    "KV cache"
+   ],
+   "claim": "RoPE, attention"
+  },
+  {
+   "cite": "LLMS p.26",
+   "contains": [
+    "pre RMSNorm",
+    "SwiGLU or GeGLU",
+    "Language Modeling",
+    "Denoising Autoencoding",
+    "Mixture-of-Denoisers",
+    "UL2",
+    "S-denoiser",
+    "greedy search",
+    "coffee",
+    "sleepy"
+   ],
+   "claim": "objectives and decoding"
+  },
+  {
+   "cite": "LLMS p.27",
+   "contains": [
+    "Beam search",
+    "length penalty",
+    "Temperature sampling",
+    "Top-k sampling",
+    "Top-p sampling",
+    "k = 50",
+    "p = 0.9",
+    "0.7",
+    "best_of",
+    "presence_penalty",
+    "frequency_penalty",
+    "temperature to 0"
+   ],
+   "claim": "decoding and settings"
+  },
+  {
+   "cite": "LLMS p.28",
+   "contains": [
+    "Sutskever",
+    "2,048 examples or 4M tokens",
+    "32K to 3.2M",
+    "6 × 10−5",
+    "cosine decay",
+    "AdamW",
+    "0.95",
+    "gradient clipping",
+    "weight decay"
+   ],
+   "claim": "optimization"
+  },
+  {
+   "cite": "LLMS p.29",
+   "contains": [
+    "3D parallelism",
+    "pipeline parallelism",
+    "GPipe",
+    "PipeDream",
+    "tensor parallelism",
+    "32K→3.2M",
+    "PaLM (540B)"
+   ],
+   "claim": "parallelism and Tab.8"
+  },
+  {
+   "cite": "LLMS p.30",
+   "contains": [
+    "BF16",
+    "384 A100",
+    "8-way data parallelism",
+    "4-way tensor parallelism",
+    "12-way pipeline parallelism",
+    "ZeRO",
+    "FSDP",
+    "instruction tuning",
+    "alignment tuning"
+   ],
+   "claim": "training and start of Sec.5"
+  },
+  {
+   "cite": "LLMS p.31",
+   "contains": [
+    "Self-Instruct",
+    "175 instances",
+    "WizardLM",
+    "Evol-Instruct",
+    "Self-Align",
+    "InstructGPT"
+   ],
+   "claim": "construction of instances"
+  },
+  {
+   "cite": "LLMS p.30",
+   "contains": [
+    "PromptSource",
+    "task description"
+   ],
+   "claim": "task descriptions and PromptSource"
+  },
+  {
+   "cite": "LLMS p.31-32",
+   "contains": [
+    "Orca",
+    "5 million",
+    "IFD",
+    "LESS",
+    "JiuZhang3.0",
+    "20% data synthesis cost",
+    "examples-proportional mixing"
+   ],
+   "claim": "IT factors"
+  },
+  {
+   "cite": "LLMS p.33",
+   "contains": [
+    "OPT-IML",
+    "GLM-130B",
+    "Galactica",
+    "Vicuna",
+    "loss mask",
+    "self-identification",
+    "A800"
+   ],
+   "claim": "IT strategies and Tab.9"
+  },
+  {
+   "cite": "LLMS p.34",
+   "contains": [
+    "BLOOMZ-P3",
+    "50%",
+    "Med-PaLM",
+    "1,836 tasks",
+    "15M",
+    "63K",
+    "WizardLM-70K"
+   ],
+   "claim": "IT effects and experiment datasets"
+  },
+  {
+   "cite": "LLMS p.35",
+   "contains": [
+    "43.69",
+    "38.58",
+    "29.81",
+    "26.63",
+    "LLaMA (13B)",
+    "TABLE 10"
+   ],
+   "claim": "Tab.10"
+  },
+  {
+   "cite": "LLMS p.36",
+   "contains": [
+    "alignment tax",
+    "helpful",
+    "honest",
+    "harmless",
+    "Instruction Tuning Suggestions"
+   ],
+   "claim": "alignment"
+  },
+  {
+   "cite": "LLMS p.37",
+   "contains": [
+    "Elo",
+    "Sparrow",
+    "WebGPT",
+    "super raters",
+    "red teaming",
+    "Helpfulness",
+    "Honesty",
+    "Harmlessness",
+    "mismatch"
+   ],
+   "claim": "criteria and feedback"
+  },
+  {
+   "cite": "LLMS p.38",
+   "contains": [
+    "reward model",
+    "PPO",
+    "6B GPT-3",
+    "7B Gopher",
+    "RLAIF",
+    "evasion problem",
+    "KL divergence",
+    "zero-shot classifiers"
+   ],
+   "claim": "RLHF"
+  },
+  {
+   "cite": "LLMS p.39",
+   "contains": [
+    "LLaMA 2",
+    "five versions",
+    "rejection sampling",
+    "best-of-N",
+    "PRM800k",
+    "Process-Supervised"
+   ],
+   "claim": "RLHF strategies"
+  },
+  {
+   "cite": "LLMS p.39-40",
+   "contains": [
+    "12K",
+    "75K",
+    "expert iteration",
+    "RAFT",
+    "Quark",
+    "ILF",
+    "constitutional AI"
+   ],
+   "claim": "PRM and alignment without RLHF"
+  },
+  {
+   "cite": "LLMS p.41",
+   "contains": [
+    "DPO",
+    "Direct preference optimization",
+    "RRHF",
+    "SLiC-HF",
+    "CoH",
+    "FIGA",
+    "Stable Alignment",
+    "reference model"
+   ],
+   "claim": "DPO and variants"
+  },
+  {
+   "cite": "LLMS p.42",
+   "contains": [
+    "behavior cloning",
+    "imitation learning",
+    "hallucination",
+    "John Schulman",
+    "teacher-forcing"
+   ],
+   "claim": "SFT vs RLHF"
+  },
+  {
+   "cite": "LLMS p.43",
+   "contains": [
+    "Adapter Tuning",
+    "Prefix Tuning",
+    "Prompt Tuning",
+    "Low-Rank Adaptation",
+    "LoRA",
+    "p-tuning v2",
+    "Figure 13"
+   ],
+   "claim": "PEFT"
+  },
+  {
+   "cite": "LLMS p.44",
+   "contains": [
+    "Alpaca-LoRA",
+    "LLaMA-Adapter",
+    "PEFT",
+    "GPT-J (6B)",
+    "BLOOM (7.1B)",
+    "task description",
+    "input data",
+    "contextual information",
+    "prompt style"
+   ],
+   "claim": "PEFT in LLMs and ingredients"
+  },
+  {
+   "cite": "LLMS p.45",
+   "contains": [
+    "Let us think step by step",
+    "###",
+    "Decomposing",
+    "few-shot demonstrations",
+    "TABLE 11",
+    "Complex CoT",
+    "Reflexion"
+   ],
+   "claim": "design principles and Tab.11"
+  },
+  {
+   "cite": "LLMS p.45-46",
+   "contains": [
+    "role-playing"
+   ],
+   "claim": "role-playing principle"
+  },
+  {
+   "cite": "LLMS p.46",
+   "contains": [
+    "29.25",
+    "31.21",
+    "53.20",
+    "66.75",
+    "78.47",
+    "79.30",
+    "34.20",
+    "Gradient-based"
+   ],
+   "claim": "empirical results on prompts"
+  },
+  {
+   "cite": "LLMS p.46-47",
+   "contains": [
+    "Auto-Prompt"
+   ],
+   "claim": "AutoPrompt"
+  },
+  {
+   "cite": "LLMS p.47",
+   "contains": [
+    "TABLE 12",
+    "three different experts",
+    "Question: Short Answer",
+    "separated by",
+    "ABCD",
+    "pronouns"
+   ],
+   "claim": "Tab.12"
+  },
+  {
+   "cite": "LLMS p.48",
+   "contains": [
+    "TEMPERA",
+    "PRewrite",
+    "GPS",
+    "genetic",
+    "TABLE 13",
+    "triple quotes"
+   ],
+   "claim": "Tab.13 and optimization"
+  },
+  {
+   "cite": "LLMS p.49",
+   "contains": [
+    "APE",
+    "APO",
+    "GPO",
+    "cosine-based decay",
+    "Monte Carlo tree search",
+    "SPoT",
+    "context tuning",
+    "Continuous Prompt Optimization"
+   ],
+   "claim": "prompt optimization"
+  },
+  {
+   "cite": "LLMS p.50",
+   "contains": [
+    "recency bias",
+    "k-NN",
+    "EPR",
+    "BM25",
+    "demonstration selection",
+    "demonstration order"
+   ],
+   "claim": "demonstration design"
+  },
+  {
+   "cite": "LLMS p.51",
+   "contains": [
+    "task recognition",
+    "task learning",
+    "PAC",
+    "meta-gradients"
+   ],
+   "claim": "ICL mechanism"
+  },
+  {
+   "cite": "LLMS p.51",
+   "contains": [
+    "Fig. 14"
+   ],
+   "claim": "Fig.14"
+  },
+  {
+   "cite": "LLMS p.52",
+   "contains": [
+    "350M",
+    "66B",
+    "Symbol Tuning",
+    "Meta-In-Context",
+    "Take a deep breath",
+    "self-consistency",
+    "DIVERSE"
+   ],
+   "claim": "ICL and CoT"
+  },
+  {
+   "cite": "LLMS p.53",
+   "contains": [
+    "Tree of Thoughts",
+    "Graph of Thoughts",
+    "TouT",
+    "XoT",
+    "10B",
+    "MNLI",
+    "SST-2",
+    "QQP"
+   ],
+   "claim": "ToT/GoT and when CoT works"
+  },
+  {
+   "cite": "LLMS p.54",
+   "contains": [
+    "symbols",
+    "patterns",
+    "task planner",
+    "plan executor",
+    "environment",
+    "Plan-and-Solve",
+    "DECOMP",
+    "ToolFormer"
+   ],
+   "claim": "CoT components and planning"
+  },
+  {
+   "cite": "LLMS p.55",
+   "contains": [
+    "HuggingGPT",
+    "Faithful CoT",
+    "PAL",
+    "PROGPROMPT",
+    "LLM+P",
+    "Reflexion",
+    "AutoGPT",
+    "MemoryBank",
+    "Ebbinghaus",
+    "DEPS",
+    "TIP"
+   ],
+   "claim": "feedback and refinement"
+  },
+  {
+   "cite": "LLMS p.56",
+   "contains": [
+    "pass@k",
+    "LAMBADA",
+    "Penn Treebank",
+    "WikiText-103",
+    "HumanEval",
+    "MBPP",
+    "APPS",
+    "28%",
+    "Codeforces",
+    "BLEU",
+    "ROUGE"
+   ],
+   "claim": "language generation"
+  },
+  {
+   "cite": "LLMS p.57",
+   "contains": [
+    "TABLE 14",
+    "Closed-Book QA",
+    "Open-Book QA",
+    "Knowledge Completion",
+    "VirtualHome",
+    "WebShop",
+    "Mind2Web"
+   ],
+   "claim": "Tab.14"
+  },
+  {
+   "cite": "LLMS p.58",
+   "contains": [
+    "alignment tax",
+    "catastrophic forgetting",
+    "10×",
+    "closed-book"
+   ],
+   "claim": "knowledge"
+  },
+  {
+   "cite": "LLMS p.59",
+   "contains": [
+    "intrinsic hallucination",
+    "extrinsic hallucination",
+    "SelfCheckGPT",
+    "TruthfulQA",
+    "HaluEval",
+    "Knowledge recency"
+   ],
+   "claim": "hallucination and recency"
+  },
+  {
+   "cite": "LLMS p.60",
+   "contains": [
+    "EasyEdit",
+    "CSQA",
+    "StrategyQA",
+    "ScienceQA",
+    "Symbolic Reasoning",
+    "last letter concatenation",
+    "coin flip",
+    "SVAMP",
+    "GSM8k",
+    "MATH"
+   ],
+   "claim": "complex reasoning"
+  },
+  {
+   "cite": "LLMS p.61",
+   "contains": [
+    "PISA",
+    "miniF2F",
+    "Lean",
+    "Isabelle",
+    "Self-Refine",
+    "7481",
+    "74815",
+    "LLaMA and Galactica"
+   ],
+   "claim": "math and numerical"
+  },
+  {
+   "cite": "LLMS p.62",
+   "contains": [
+    "TruthfulQA",
+    "CrowS-Pairs",
+    "Winogender",
+    "VirtualHome",
+    "ALFRED",
+    "BEHAVIOR",
+    "Voyager",
+    "GITM"
+   ],
+   "claim": "advanced abilities"
+  },
+  {
+   "cite": "LLMS p.63",
+   "contains": [
+    "MMLU",
+    "86.4%",
+    "BIG-bench",
+    "204 tasks",
+    "BIG-bench hard",
+    "HELM",
+    "16 scenarios",
+    "7 categories",
+    "AGIEval",
+    "C-Eval",
+    "Open LLM Leaderboard",
+    "OpenAI Evals"
+   ],
+   "claim": "benchmarks"
+  },
+  {
+   "cite": "LLMS p.64",
+   "contains": [
+    "TABLE 15",
+    "Chatbot Arena",
+    "AlpacaEval",
+    "MT-bench",
+    "Base/Fine-tuned/Specialized"
+   ],
+   "claim": "Tab.15"
+  },
+  {
+   "cite": "LLMS p.65",
+   "contains": [
+    "pairwise comparison",
+    "single-answer grading",
+    "MultiMedQA",
+    "FLUE",
+    "BloombergGPT",
+    "data contamination"
+   ],
+   "claim": "evaluation approaches"
+  },
+  {
+   "cite": "LLMS p.65-66",
+   "contains": [
+    "position bias",
+    "verbosity bias",
+    "self-enhancement bias"
+   ],
+   "claim": "LLM-as-evaluator biases"
+  },
+  {
+   "cite": "LLMS p.66",
+   "contains": [
+    "LLaMA (7B)",
+    "Pythia",
+    "Falcon",
+    "Vicuna",
+    "Alpaca",
+    "ChatGLM",
+    "Claude 2",
+    "Davinci002"
+   ],
+   "claim": "evaluated models"
+  },
+  {
+   "cite": "LLMS p.67",
+   "contains": [
+    "78.47",
+    "49.96",
+    "79.88",
+    "51.22",
+    "TABLE 16"
+   ],
+   "claim": "Tab.16"
+  },
+  {
+   "cite": "LLMS p.68",
+   "contains": [
+    "TABLE 17",
+    "I want you to act as a translator",
+    "20.66",
+    "41.40",
+    "21.71",
+    "42.08",
+    "85.19",
+    "92.00",
+    "70.10",
+    "84.10",
+    "48.80",
+    "76.25",
+    "17.20",
+    "25.60"
+   ],
+   "claim": "Tab.17"
+  },
+  {
+   "cite": "LLMS p.69",
+   "contains": [
+    "ChatGPT mostly performs the best",
+    "Claude 2",
+    "36.40",
+    "26.00",
+    "44.53",
+    "7.74",
+    "72.58",
+    "22.04"
+   ],
+   "claim": "closed-source findings"
+  },
+  {
+   "cite": "LLMS p.69-70",
+   "contains": [
+    "about 2 trillion tokens",
+    "Instruction-tuned models mostly perform better",
+    "LAMBADA"
+   ],
+   "claim": "open-source findings"
+  },
+  {
+   "cite": "LLMS p.70",
+   "contains": [
+    "Word/Sentence-level",
+    "sequence tagging",
+    "MISC",
+    "ORG"
+   ],
+   "claim": "classic NLP"
+  },
+  {
+   "cite": "LLMS p.71",
+   "contains": [
+    "Marathi"
+   ],
+   "claim": "low-resource language"
+  },
+  {
+   "cite": "LLMS p.71",
+   "contains": [
+    "retrieve-then-rerank",
+    "pointwise",
+    "pairwise",
+    "listwise",
+    "Suggestions",
+    "Future direction"
+   ],
+   "claim": "IR and NLP summarization"
+  },
+  {
+   "cite": "LLMS p.72",
+   "contains": [
+    "InstructRec",
+    "cold-start",
+    "sliding window",
+    "setwise",
+    "semantic identifiers"
+   ],
+   "claim": "IR and recommendation"
+  },
+  {
+   "cite": "LLMS p.73",
+   "contains": [
+    "RecAgent",
+    "AgentCF",
+    "image encoder",
+    "connection module",
+    "1M",
+    "1B"
+   ],
+   "claim": "recommendation and MLLM"
+  },
+  {
+   "cite": "LLMS p.74",
+   "contains": [
+    "POPE",
+    "HallusionBench",
+    "MMBench",
+    "CircularEval",
+    "LVLM-eHub",
+    "47",
+    "Reform-Eval",
+    "MME",
+    "SEED-Bench",
+    "19K",
+    "MM-Vet"
+   ],
+   "claim": "MLLM evaluation"
+  },
+  {
+   "cite": "LLMS p.75",
+   "contains": [
+    "knowledge graphs",
+    "Retrieval-Augmented LLM",
+    "Synergy-Augmented LLM",
+    "RoBERTa"
+   ],
+   "claim": "KG-enhanced LLM"
+  },
+  {
+   "cite": "LLMS p.76",
+   "contains": [
+    "score-based",
+    "language-based",
+    "MT-Bench",
+    "LLMBar",
+    "StructGPT"
+   ],
+   "claim": "LLM for evaluation"
+  },
+  {
+   "cite": "LLMS p.77",
+   "contains": [
+    "order bias",
+    "self-preference bias",
+    "length bias",
+    "Med-PaLM",
+    "USMLE",
+    "top 10%",
+    "BloombergGPT",
+    "privacy"
+   ],
+   "claim": "biases and domains"
+  },
+  {
+   "cite": "LLMS p.78",
+   "contains": [
+    "Position interpolation",
+    "ReRoPE",
+    "extrapolation",
+    "2K",
+    "32K",
+    "NoPE",
+    "Direct model fine-tuning"
+   ],
+   "claim": "long context"
+  },
+  {
+   "cite": "LLMS p.79",
+   "contains": [
+    "Λ-shaped",
+    "StreamingLLM",
+    "lost in the middle",
+    "LongWanjuan",
+    "100K tokens",
+    "parallel context window"
+   ],
+   "claim": "context window"
+  },
+  {
+   "cite": "LLMS p.80",
+   "contains": [
+    "memory, planning, and execution",
+    "short-term memory",
+    "long-term memory",
+    "vector databases",
+    "AutoGPT"
+   ],
+   "claim": "agents"
+  },
+  {
+   "cite": "LLMS p.80-81",
+   "contains": [
+    "AgentVerse",
+    "AutoGen",
+    "debate",
+    "LangChain"
+   ],
+   "claim": "multi-agent agents"
+  },
+  {
+   "cite": "LLMS p.81",
+   "contains": [
+    "16P bytes",
+    "6.7 × 109",
+    "100GB",
+    "12P",
+    "4P",
+    "Model States Cost"
+   ],
+   "claim": "training memory"
+  },
+  {
+   "cite": "LLMS p.82",
+   "contains": [
+    "16GB",
+    "PyTorch",
+    "1GB",
+    "8BTV",
+    "0.5GB to 1GB",
+    "ZeRO-3",
+    "50%",
+    "Gradient Checkpointing",
+    "TABLE 18"
+   ],
+   "claim": "Tab.18 and memory optimization"
+  },
+  {
+   "cite": "LLMS p.83",
+   "contains": [
+    "one-tenth",
+    "prefill stage",
+    "decoding stage",
+    "KV cache",
+    "312 TFLOP/s",
+    "2039GB/s",
+    "142.51",
+    "memory-bound",
+    "compute-bound",
+    "2730.67",
+    "114.67",
+    "memory wall"
+   ],
+   "claim": "inference"
+  },
+  {
+   "cite": "LLMS p.84",
+   "contains": [
+    "TABLE 19",
+    "TABLE 20",
+    "6BTH2",
+    "5BTH",
+    "4BTHH",
+    "Flash-Decoding",
+    "PagedAttention",
+    "continuous batching"
+   ],
+   "claim": "Tab.19/20 and system optimization"
+  },
+  {
+   "cite": "LLMS p.85",
+   "contains": [
+    "Dynamic SplitFuse",
+    "Speculative Decoding",
+    "2× to 3×",
+    "FrugalGPT",
+    "Medusa",
+    "Early Exit",
+    "mixture-of-depths",
+    "quantization-aware training",
+    "post-training quantization"
+   ],
+   "claim": "algorithmic optimization"
+  },
+  {
+   "cite": "LLMS p.86",
+   "contains": [
+    "scaling factor",
+    "zero-point",
+    "LLM.int8()",
+    "SmoothQuant",
+    "GPTQ",
+    "AWQ",
+    "group size of 128",
+    "6.7B",
+    "SpQR"
+   ],
+   "claim": "quantization"
+  },
+  {
+   "cite": "LLMS p.87",
+   "contains": [
+    "QLoRA",
+    "INT8",
+    "INT4",
+    "60B",
+    "30B",
+    "4-bit",
+    "outliers"
+   ],
+   "claim": "quantization findings"
+  },
+  {
+   "cite": "LLMS p.88",
+   "contains": [
+    "12.58",
+    "6.65",
+    "3.94",
+    "24.40",
+    "12.53",
+    "7.34",
+    "MINILLM",
+    "SparseGPT",
+    "60%",
+    "LLM-pruner",
+    "93.6%",
+    "Sheared LLaMA",
+    "87.8%",
+    "bitsandbytes"
+   ],
+   "claim": "Tab.21 and compression"
+  },
+  {
+   "cite": "LLMS p.89",
+   "contains": [
+    "Context Retrieval",
+    "Prompt Construction",
+    "Response Generation",
+    "lexical",
+    "dense",
+    "propositions",
+    "lost in the middle"
+   ],
+   "claim": "RAG"
+  },
+  {
+   "cite": "LLMS p.90",
+   "contains": [
+    "Iterative retrieval",
+    "adaptive retrieval",
+    "RAG-enhanced training",
+    "Entity-error",
+    "Relation-error",
+    "Incompleteness",
+    "Outdatedness",
+    "Overclaim",
+    "Unverifiability"
+   ],
+   "claim": "RAG and hallucination"
+  },
+  {
+   "cite": "LLMS p.91",
+   "contains": [
+    "imitative falsehoods",
+    "exposure bias",
+    "teacher-forcing",
+    "temperature",
+    "Model-based Methods",
+    "HaluEval"
+   ],
+   "claim": "sources of hallucination"
+  },
+  {
+   "cite": "LLMS p.92",
+   "contains": [
+    "SelfCheckGPT",
+    "FActScore",
+    "FacTool",
+    "HaluAgent",
+    "sycophantic",
+    "RARR",
+    "LLM-Augmenter",
+    "Verify-and-Edit",
+    "IRCoT",
+    "DoLa",
+    "ITI",
+    "CAD",
+    "KCTS"
+   ],
+   "claim": "detection and mitigation"
+  },
+  {
+   "cite": "LLMS p.92-93",
+   "contains": [
+    "slow thinking"
+   ],
+   "claim": "slow thinking"
+  },
+  {
+   "cite": "LLMS p.93",
+   "contains": [
+    "long CoT",
+    "DeepSeek-R1",
+    "wait",
+    "double check",
+    "reflection",
+    "backtracking",
+    "self-refinement",
+    "divide-and-conquer"
+   ],
+   "claim": "long CoT"
+  },
+  {
+   "cite": "LLMS p.94",
+   "contains": [
+    "STILL-2",
+    "DeepSeek-R1-Lite-Preview",
+    "QwQ-32B-preview",
+    "Monte Carlo Tree Search",
+    "Q-value",
+    "multi-agent",
+    "3.9K",
+    "Qwen2.5 (32B)",
+    "physics and chemistry"
+   ],
+   "claim": "long CoT data and training"
+  },
+  {
+   "cite": "LLMS p.95",
+   "contains": [
+    "GRPO",
+    "RLOO",
+    "DeepSeek-R1-Zero",
+    "Kimi-K1.5",
+    "reinforcement fine-tuning",
+    "format reward",
+    "response length",
+    "test-time scaling law"
+   ],
+   "claim": "RL for long CoT"
+  },
+  {
+   "cite": "LLMS p.96",
+   "contains": [
+    "token efficiency",
+    "performance ceiling",
+    "8,000 training steps",
+    "Self-Consistency",
+    "128K",
+    "200K",
+    "Claude 2.1",
+    "test-time scaling"
+   ],
+   "claim": "test-time scaling and conclusion"
+  },
+  {
+   "cite": "LLMS p.97",
+   "contains": [
+    "Assistants API",
+    "GPT Store",
+    "red teaming",
+    "federated",
+    "overreliance",
+    "Safety and Alignment"
+   ],
+   "claim": "conclusion"
+  },
+  {
+   "cite": "LLMS p.98",
+   "contains": [
+    "March 31, 2023",
+    "June 29, 2023",
+    "September 10, 2023",
+    "November 23, 2023",
+    "Update log",
+    "AGI"
+   ],
+   "claim": "CODA and log"
+  },
+  {
+   "cite": "LLMS p.99",
+   "contains": [
+    "September 25, 2024",
+    "October 12, 2024",
+    "March 11, 2025",
+    "February 27, 2026",
+    "Chinese Book",
+    "Clarifications on Experiments"
+   ],
+   "claim": "2024-2026 log"
+  },
+  {
+   "cite": "LLMS p.100",
+   "contains": [
+    "Collobert",
+    "Natural language processing (almost) from scratch"
+   ],
+   "claim": "p.100 = references (only to delimit the body)"
+  },
+  {
+   "cite": "PES p.1",
+   "contains": [
+    "Pranab Sahoo",
+    "Aman Chadha",
+    "arXiv:2402.07927v2",
+    "16 Mar 2025",
+    "Indian Institute of Technology Patna",
+    "over 41 distinct techniques",
+    "without altering parameters",
+    "Figure 1"
+   ],
+   "claim": "identification and scope"
+  },
+  {
+   "cite": "PES p.2",
+   "contains": [
+    "Zero-shot prompting",
+    "Few-shot prompting",
+    "Chain-of-Thought",
+    "90.2%",
+    "PaLM 540B",
+    "Auto-CoT",
+    "1.33%",
+    "1.5%",
+    "Self-Consistency",
+    "17.9%",
+    "GSM8K",
+    "11.0%",
+    "SVAMP",
+    "12.2%",
+    "AQuA",
+    "6.4%",
+    "3.9%"
+   ],
+   "claim": "zero/few-shot, CoT, Auto-CoT, SC"
+  },
+  {
+   "cite": "PES p.3",
+   "contains": [
+    "Zero-shot Prompting",
+    "Chain-of-Symbol",
+    "Tree-of-Thoughts",
+    "Graph-of-Thought",
+    "System 2 Attention",
+    "Thread of Thought",
+    "Chain of Table",
+    "Self-Refine",
+    "Chain of Draft",
+    "Retrieval Augmented Generation",
+    "Active-Prompt",
+    "Automatic Prompt Engineer",
+    "Emotion Prompting",
+    "Scratchpad",
+    "Optimization by Prompting",
+    "Take a Step Back",
+    "User Interaction"
+   ],
+   "claim": "Fig.2"
+  },
+  {
+   "cite": "PES p.4",
+   "contains": [
+    "LogiCoT",
+    "0.16%",
+    "1.42%",
+    "3.15%",
+    "2.75%",
+    "31.8%",
+    "92.6%",
+    "65.8%",
+    "74%",
+    "Game of 24",
+    "60%",
+    "16%",
+    "3.41%",
+    "5.08%",
+    "6.63%",
+    "1.09%",
+    "80.3%",
+    "3.82",
+    "47.20%",
+    "17.8%",
+    "8.69%",
+    "6.72%"
+   ],
+   "claim": "reasoning techniques p.4"
+  },
+  {
+   "cite": "PES p.5",
+   "contains": [
+    "8.7 points",
+    "13.9 points",
+    "21.6 points",
+    "8.42",
+    "4.22",
+    "ECHO",
+    "2.8%",
+    "50% fewer",
+    "Logic-of-thought",
+    "4.35%",
+    "IAP",
+    "1.82%",
+    "3.31%",
+    "EEDP"
+   ],
+   "claim": "techniques p.5"
+  },
+  {
+   "cite": "PES p.6",
+   "contains": [
+    "55%",
+    "10.21%",
+    "16.76%",
+    "4.73%",
+    "30.13%",
+    "Layer-of-Thoughts",
+    "0.835",
+    "0.807",
+    "0.966",
+    "Narrative-of-Thought",
+    "42.2",
+    "45.7",
+    "Buffer of Thoughts",
+    "11%",
+    "20%",
+    "51%",
+    "12%",
+    "Llama3-8B",
+    "CD-CoT",
+    "17.8%",
+    "noisy rationales"
+   ],
+   "claim": "techniques p.6"
+  },
+  {
+   "cite": "PES p.7",
+   "contains": [
+    "R-CoT",
+    "12.5%",
+    "14.5%",
+    "Chain of Draft",
+    "80%",
+    "76.2%",
+    "56.8%",
+    "44.5%",
+    "ReAct",
+    "34%",
+    "10%",
+    "Chain-of-Verification",
+    "Chain-of-Note",
+    "7.9",
+    "10.5"
+   ],
+   "claim": "techniques p.7"
+  },
+  {
+   "cite": "PES p.8",
+   "contains": [
+    "Active-Prompting",
+    "7.0%",
+    "1.8%",
+    "Automatic Prompt Engineer",
+    "19 out of 24",
+    "ART",
+    "Contrastive Chain-of-Thought",
+    "4-16%",
+    "EmotionPrompt",
+    "11 emotional stimulus",
+    "8.00%",
+    "115%",
+    "106 participants",
+    "10.9%"
+   ],
+   "claim": "techniques p.8"
+  },
+  {
+   "cite": "PES p.9",
+   "contains": [
+    "46.8%",
+    "26.6%",
+    "24.6%",
+    "512 tokens",
+    "Program-of-Thoughts",
+    "13.79%",
+    "Chain-of-Code",
+    "84%",
+    "LMulator",
+    "OPRO",
+    "Rephrase and Respond",
+    "Step-Back",
+    "27%",
+    "MuSiQue"
+   ],
+   "claim": "techniques p.9"
+  },
+  {
+   "cite": "PES p.10",
+   "contains": [
+    "Table 1",
+    "Prompt Acquisition",
+    "Prompt Turn",
+    "Retrieval Based",
+    "LM Generated",
+    "Hybrid",
+    "Manual",
+    "Single",
+    "Multi",
+    "Take a Step Back",
+    "41 distinct",
+    "biases",
+    "factual inaccuracies",
+    "interpretability gaps",
+    "meta-learning",
+    "hybrid prompting"
+   ],
+   "claim": "Table 1 and conclusion"
+  },
+  {
+   "cite": "LLMS p.1-99",
+   "absent": [
+    "prompt injection",
+    "jailbreak",
+    "guardrails",
+    "Model Context Protocol",
+    "prompt caching"
+   ],
+   "claim": "LLMS does not cover prompt security/MCP/caching"
+  },
+  {
+   "cite": "LLMS p.1-99",
+   "absent": [
+    "system prompt",
+    "DSPy",
+    "watermarking",
+    "pricing",
+    "KTO"
+   ],
+   "claim": "other absent terms"
+  },
+  {
+   "cite": "LLMS p.1-99",
+   "absent": [
+    "GDPR",
+    "LGPD",
+    "carbon",
+    "observability"
+   ],
+   "claim": "regulation/footprint/observability absent"
+  },
+  {
+   "cite": "PES p.1-10",
+   "absent": [
+    "RLHF",
+    "LoRA",
+    "scaling law",
+    "KV cache",
+    "quantization"
+   ],
+   "claim": "PES does not cover training/architecture"
+  },
+  {
+   "cite": "PES p.1-10",
+   "absent": [
+    "prompt injection",
+    "jailbreak",
+    "guardrail",
+    "safety",
+    "privacy"
+   ],
+   "claim": "PES does not cover security/privacy"
+  },
+  {
+   "cite": "PES p.1-10",
+   "absent": [
+    "leaderboard",
+    "DPO",
+    "temperature",
+    "top-p",
+    "pricing"
+   ],
+   "claim": "PES does not cover decoding or prices"
+  },
+  {
+   "cite": "LLMS p.28-29",
+   "absent": [
+    "Lion",
+    "Sophia",
+    "LAMB"
+   ],
+   "claim": "the survey cites Adam/AdamW/Adafactor, not Lion/Sophia/LAMB"
+  },
+  {
+   "cite": "LLMS p.41",
+   "absent": [
+    "KTO",
+    "ORPO",
+    "SimPO"
+   ],
+   "claim": "DPO and variants cited in the text do not include KTO/ORPO/SimPO"
+  },
+  {
+   "cite": "LLMS p.87",
+   "absent": [
+    "GGUF",
+    "AWQ-int4",
+    "HQQ"
+   ],
+   "claim": "quantization formats/methods not cited"
+  },
+  {
+   "cite": "LLMS p.63",
+   "absent": [
+    "MMLU-Pro",
+    "GPQA",
+    "SWE-bench",
+    "HumanEval+"
+   ],
+   "claim": "newer benchmarks do not appear on p.63"
+  },
+  {
+   "cite": "LLMS p.10",
+   "absent": [
+    "GPT-4o",
+    "GPT-5"
+   ],
+   "claim": "p.10 does not describe GPT-4o/GPT-5"
+  },
+  {
+   "cite": "LLMS p.44-47",
+   "absent": [
+    "system message",
+    "JSON schema",
+    "prompt chaining"
+   ],
+   "claim": "the LLMS prompt guide has no system messages or chaining"
+  },
+  {
+   "cite": "LLMS p.92-95",
+   "absent": [
+    "Gemini",
+    "Claude",
+    "GPT-5"
+   ],
+   "claim": "the long CoT section cites DeepSeek-R1, o1, Kimi, STILL-2, QwQ; not Gemini/Claude/GPT-5"
+  },
+  {
+   "cite": "PES p.4-9",
+   "absent": [
+    "Claude",
+    "Gemini"
+   ],
+   "claim": "in the technique text (p.4-9) Claude/Gemini do not appear; only in Table 1 (p.10)"
+  },
+  {
+   "cite": "PES p.2",
+   "absent": [
+    "ReAct",
+    "Tree-of-Thoughts"
+   ],
+   "claim": "p.2 describes zero/few-shot, CoT, Auto-CoT, SC and LogiCoT; ReAct and ToT are described later"
+  },
+  {
+   "cite": "PES p.7-8",
+   "absent": [
+    "adversarial",
+    "jailbreak"
+   ],
+   "claim": "PES does not discuss adversarial prompts"
+  },
+  {
+   "cite": "LLMS p.4",
+   "absent": [
+    "Hoffmann scaling coefficient formula",
+    "G = ("
+   ],
+   "claim": "the survey does not give the formula for G"
+  },
+  {
+   "cite": "LLMS p.56",
+   "absent": [
+    "SWE-bench",
+    "LiveCodeBench"
+   ],
+   "claim": "newer code benchmarks do not appear"
+  },
+  {
+   "cite": "PES p.9",
+   "absent": [
+    "MMLU-Pro",
+    "GPQA"
+   ],
+   "claim": "benchmarks not cited on p.9"
+  },
+  {
+   "cite": "LLMS p.46",
+   "contains": [
+    "23.61",
+    "28.47"
+   ],
+   "claim": "the paragraph itself also gives 23.61 -> 28.47 for WikiFact (inconsistency with Tab.17)"
+  },
+  {
+   "cite": "LLMS p.82",
+   "contains": [
+    "6TH",
+    "softmax with size"
+   ],
+   "claim": "Tab.18 prints 6TH (without B) for Q,K,V"
+  },
+  {
+   "cite": "LLMS p.3",
+   "contains": [
+    "emergent abilities may not occur in some LLMs"
+   ],
+   "claim": "note 1: not every LLM is more capable than a small PLM"
+  },
+  {
+   "cite": "LLMS p.4",
+   "contains": [
+    "Section 8 discusses the practical guide for prompt design"
+   ],
+   "claim": "description of Section 8 on p.4"
+  },
+  {
+   "cite": "LLMS p.70",
+   "contains": [
+    "APPLICATIONS"
+   ],
+   "claim": "Section 8 is about applications"
+  },
+  {
+   "cite": "LLMS p.98",
+   "contains": [
+    "this latest version (major revision) on November 23, 2023"
+   ],
+   "claim": "outdated CODA"
+  },
+  {
+   "cite": "PES p.8",
+   "contains": [
+    "User Interface"
+   ],
+   "claim": "label of 2.4 in the text"
+  },
+  {
+   "cite": "PES p.5",
+   "contains": [
+    "Hong et al., 2024"
+   ],
+   "claim": "EEDP attributed to Hong in the text"
+  },
+  {
+   "cite": "PES p.3",
+   "contains": [
+    "Yuan et al., 2024"
+   ],
+   "claim": "EEDP attributed to Yuan in Fig.2"
+  }
+ ]
+}

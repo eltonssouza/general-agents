@@ -1,0 +1,8 @@
+{
+  "name": "No pivot",
+  "type": "choreography",
+  "steps": [
+    {"name": "A", "service": "SA", "compensation": "undo A", "idempotent": true, "publishes_event": false},
+    {"name": "B", "service": "SB", "idempotent": true, "publishes_event": false}
+  ]
+}

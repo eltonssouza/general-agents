@@ -1,0 +1,834 @@
+{
+ "_meta": {
+  "source": "JUNIT (JUnit Tutorial, JUnit 4, 8 p.), MOCK (SmartBear, 12 p.), TDM (DZone Refcard, 9 p.), JMETER (JMeter Tutorial 2.11, 53 p.), SWE-G (ch. 11-14, PDF p.149-221)",
+  "page_convention": "PDF pages; printed JMETER = N-7; MOCK and TDM PDF = printed; SWE-G has no printed numbering",
+  "note": "rules = stated in the source with a page; not_in_book = NOT in the source (label [extrapolation]); uncovered = topics with no coverage. Keywords keep the Portuguese input terms and add English ones."
+ },
+ "topics": {
+  "piramide-80-15-5": {
+   "name": "Test pyramid: 80/15/5",
+   "keywords": [
+    "pirâmide",
+    "piramide",
+    "80/15/5",
+    "70/20/10",
+    "test pyramid",
+    "pyramid",
+    "ice cream cone",
+    "hourglass",
+    "proporção",
+    "mix de testes",
+    "test mix",
+    "ratio"
+   ],
+   "citation": "SWE-G p.156, 165",
+   "summary": "Google speaks of roughly 80% unit tests, 15% integration and 5% end-to-end, by test case count; each team varies.",
+   "rules": [
+    "Approximate 80/15/5 mix by count of test cases (SWE-G p.156)",
+    "In ch. 12: about 80% unit tests and 20% of broader scope (SWE-G p.165)",
+    "Anti-patterns ice cream cone and hourglass (SWE-G p.156-157)",
+    "The mix should reflect the local architectural and organizational reality (SWE-G p.157)"
+   ],
+   "not_in_book": [
+    "70/20/10 is NOT in the SWE-G testing chapters (the book says 80/15/5)"
+   ]
+  },
+  "tamanho-escopo": {
+   "name": "Test size and scope (small, medium, large)",
+   "keywords": [
+    "tamanho",
+    "escopo",
+    "small",
+    "medium",
+    "large",
+    "enormous",
+    "size",
+    "scope",
+    "unitário",
+    "unit test",
+    "integração",
+    "integration"
+   ],
+   "citation": "SWE-G p.153-156",
+   "summary": "Size = the test's resources; scope = the code verified. Small: one process, no sleep/I/O/network; medium: one machine (localhost); large: no restriction.",
+   "rules": [
+    "Size and scope are distinct dimensions (SWE-G p.153)",
+    "Small: one process; no sleep, I/O or blocking calls; uses test doubles (SWE-G p.154)",
+    "Medium: several processes and threads, network only to localhost (SWE-G p.154)",
+    "Large: may span several machines; reserved for configuration E2E and legacy without doubles (SWE-G p.155)",
+    "In practice Google has a fourth size, enormous (SWE-G p.163, note 4)",
+    "Narrow scope (unit), medium (integration), broad (E2E/system) (SWE-G p.156)"
+   ]
+  },
+  "flaky-hermetico": {
+   "name": "Flaky tests and hermetic tests",
+   "keywords": [
+    "flaky",
+    "flakiness",
+    "intermitente",
+    "intermittent",
+    "hermético",
+    "hermetico",
+    "hermetic",
+    "não determinístico",
+    "nondeterminism",
+    "non-deterministic",
+    "sleep",
+    "polling",
+    "quarentena",
+    "quarantine"
+   ],
+   "citation": "SWE-G p.155, 159, 219",
+   "summary": "Flaky = non-deterministic failure. The book quantifies the cost (0.1% x 10,000 tests = 10 flakes/day), says that near 1% tests lose value and asks for hermetic tests.",
+   "rules": [
+    "Sources of non-determinism: clock, threads, network latency (SWE-G p.155)",
+    "Example: 0.1% spurious failure and 10,000 tests/day = 10 investigations per day; near 1% value is lost; Google's rate ~0.15% (SWE-G p.155)",
+    "Automatically re-running trades CPU for engineering time and only postpones the root cause (SWE-G p.155)",
+    "A hermetic test contains everything it needs to set up, run and tear down the environment, without depending on order or a shared database (SWE-G p.155)",
+    "sleep/setTimeout are naive heuristics; poll the state with a timeout (SWE-G p.159, p.219)",
+    "Fixing broken tests within minutes keeps confidence (SWE-G p.152)"
+   ],
+   "not_in_book": [
+    "Immediately quarantining flaky tests is not a prescription of the book [inference]"
+   ]
+  },
+  "beyonce-falhas-cobertura": {
+   "name": "Beyoncé Rule, failure testing and coverage",
+   "keywords": [
+    "beyoncé",
+    "beyonce",
+    "cobertura",
+    "coverage",
+    "teste de falha",
+    "failure testing",
+    "chaos",
+    "failure"
+   ],
+   "citation": "SWE-G p.157-158",
+   "summary": "Test everything you do not want to break; simulate failures; coverage measures execution, not verification, and targets become ceilings.",
+   "rules": [
+    "Beyoncé Rule: if you care about it, put a test on it (SWE-G p.157)",
+    "Test failures: exceptions in unit tests, RPC errors/latency in integration and E2E (SWE-G p.157)",
+    "Coverage measures invoked lines; an 80% target becomes a ceiling; measure only small tests (SWE-G p.157-158)"
+   ]
+  },
+  "testes-unitarios-claros": {
+   "name": "Clear and stable unit tests",
+   "keywords": [
+    "api pública",
+    "public api",
+    "estado",
+    "state",
+    "interação",
+    "interaction",
+    "dado quando então",
+    "given when then",
+    "arrange act assert",
+    "aaa",
+    "damp",
+    "dry",
+    "frágil",
+    "brittle",
+    "comportamento",
+    "behavior",
+    "nome do teste",
+    "test name",
+    "lógica no teste",
+    "logic in tests",
+    "mensagem de falha",
+    "failure message"
+   ],
+   "citation": "SWE-G p.166-182",
+   "summary": "Tests that do not change on refactoring, use the public API, verify state, are complete and concise, test behaviors and prefer DAMP over DRY.",
+   "rules": [
+    "Strive for unchanging tests: only a change in behavior requires changing the test (SWE-G p.166-167)",
+    "Test through the public API, not the private ones (SWE-G p.167-169)",
+    "State, not interaction (SWE-G p.169-170)",
+    "Complete and concise (SWE-G p.171-172); behaviors, not methods (SWE-G p.172-173)",
+    "Given/when/then, also called arrange/act/assert (SWE-G p.173; p.183 note 6)",
+    "The name describes the action and result; starting with 'should' is a trick (SWE-G p.174-175)",
+    "No logic in the test (SWE-G p.175-176); clear failure messages (SWE-G p.176-177)",
+    "DAMP, not DRY (SWE-G p.177-179)",
+    "Shared values via helpers/builders; setup only to construct the object under test (SWE-G p.179-181)",
+    "Shared test infrastructure has its own tests (SWE-G p.182)"
+   ]
+  },
+  "test-doubles": {
+   "name": "Test doubles: vocabulary and stance",
+   "keywords": [
+    "test double",
+    "dublê",
+    "duble",
+    "mocking",
+    "mock",
+    "stub",
+    "fake",
+    "dummy",
+    "spy",
+    "meszaros",
+    "classical",
+    "mockist",
+    "donotmock",
+    "real implementation",
+    "implementação real"
+   ],
+   "citation": "SWE-G p.184-191; MOCK p.4",
+   "summary": "SWE-G organizes three techniques (faking, stubbing, interaction testing) and prefers the real implementation; MOCK uses stub/mock/virtual service.",
+   "rules": [
+    "A test double replaces a real implementation; the chapter avoids 'mocking' as a synonym (SWE-G p.184)",
+    "Concerns: testability, applicability, fidelity (SWE-G p.184-185)",
+    "Abuse of mocking frameworks at Google: tests costly to maintain that rarely found bugs (SWE-G p.185)",
+    "Seams and dependency injection (SWE-G p.186-187)",
+    "Three techniques: faking, stubbing, interaction testing (SWE-G p.188-189)",
+    "First choice: the real implementation; classical vs mockist style (SWE-G p.189-190)",
+    "@DoNotMock (SWE-G p.190-191)",
+    "MOCK: stub, mock and virtual service (MOCK p.4)"
+   ],
+   "not_in_book": [
+    "Dummy and Spy do NOT appear in SWE-G or MOCK; the Meszaros taxonomy is an [extrapolation]"
+   ]
+  },
+  "fakes": {
+   "name": "Fakes",
+   "keywords": [
+    "fake",
+    "fakes",
+    "fidelidade",
+    "fidelity",
+    "in-memory",
+    "banco em memória",
+    "in-memory database",
+    "contract tests do fake",
+    "fake contract tests"
+   ],
+   "citation": "SWE-G p.188, 192-195",
+   "summary": "A fake = a lightweight implementation faithful to the contract; it should be written and maintained by the API owner and have its own tests.",
+   "rules": [
+    "A fake is a lightweight implementation of the API, unsuitable for production (SWE-G p.188)",
+    "The team that owns the real implementation writes and maintains the fake; create it at the root of what is not fit for tests (SWE-G p.193)",
+    "Fidelity to the API contract; fail fast on unsupported paths (SWE-G p.194)",
+    "Fakes should have tests, run against both the real one and the fake (SWE-G p.194)",
+    "No fake: ask the owners; or wrap the API in a class and fake that (SWE-G p.194-195)"
+   ]
+  },
+  "stubbing-interacao": {
+   "name": "Stubbing and interaction testing",
+   "keywords": [
+    "stubbing",
+    "stub",
+    "interaction testing",
+    "teste de interação",
+    "verify",
+    "state testing",
+    "change-detector",
+    "overspecification",
+    "when thenreturn"
+   ],
+   "citation": "SWE-G p.195-200",
+   "summary": "Excess stubbing and interaction testing produce brittle tests; prefer state testing; interaction only in specific cases.",
+   "rules": [
+    "Dangers of stubbing: unclear, brittle and less effective tests (SWE-G p.195-196)",
+    "Stubbing is appropriate to drive the system into a state or simulate errors; stub few functions (SWE-G p.197)",
+    "Prefer state testing; interaction testing does not prove correctness; nicknamed change-detector tests (SWE-G p.197-198)",
+    "Legitimate interaction testing: no real one or fake, or when the number/order of calls matters (SWE-G p.198)",
+    "Only for state-changing functions (e.g. sendEmail), and without over-specifying (SWE-G p.198-200)"
+   ]
+  },
+  "junit4-anotacoes": {
+   "name": "JUnit 4: annotations and lifecycle",
+   "keywords": [
+    "junit",
+    "@test",
+    "@before",
+    "@after",
+    "@beforeclass",
+    "@afterclass",
+    "@ignore",
+    "ciclo de vida",
+    "lifecycle",
+    "junit 4"
+   ],
+   "citation": "JUNIT p.3, 6",
+   "summary": "The PDF describes JUnit 4: @Test, @Before, @After, @BeforeClass, @AfterClass, @Ignore.",
+   "rules": [
+    "@Test marks a public void method as a test (JUNIT p.3)",
+    "@Before/@After per test; @BeforeClass/@AfterClass once and static (JUNIT p.3)",
+    "Order shown by the example (JUNIT p.3)",
+    "@Ignore on a method or class (JUNIT p.3, p.6)"
+   ],
+   "not_in_book": [
+    "JUnit 5 (@BeforeEach, @DisplayName, @Nested, assertAll) is NOT in the PDF"
+   ]
+  },
+  "junit4-asserts": {
+   "name": "JUnit 4: assertions",
+   "keywords": [
+    "assert",
+    "assertequals",
+    "asserttrue",
+    "assertfalse",
+    "assertnull",
+    "assertnotnull",
+    "assertsame",
+    "assertarrayequals",
+    "asserção",
+    "assertion"
+   ],
+   "citation": "JUNIT p.3-4",
+   "summary": "org.junit.Assert: assertEquals, assertTrue, assertFalse, assertNull, assertNotNull, assertSame, assertNotSame, assertArrayEquals.",
+   "rules": [
+    "Table of assertions with an optional message (JUNIT p.3-4)",
+    "A failure aborts the test and appears in the JUnit window (JUNIT p.4)"
+   ],
+   "not_in_book": [
+    "assertThrows, assertAll, assertTimeout are NOT in the PDF"
+   ]
+  },
+  "junit4-suites-param-rules": {
+   "name": "JUnit 4: suites, parameterized tests, Rules, Categories, CLI",
+   "keywords": [
+    "suite",
+    "suíte",
+    "parameterized",
+    "parametrizado",
+    "rule",
+    "categories",
+    "category",
+    "junitcore",
+    "linha de comando",
+    "command line"
+   ],
+   "citation": "JUNIT p.7-8",
+   "summary": "Suites with @RunWith/@Suite, parameterized tests with @Parameters, @Rule, @Category and execution through JUnitCore.",
+   "rules": [
+    "@RunWith(Suite.class) with @Suite.SuiteClasses (JUNIT p.7)",
+    "Parameterized: constructor, static @Parameters method and @Test (JUNIT p.7)",
+    "@Rule: ErrorCollector, ExpectedException, TestName (JUNIT p.7)",
+    "@Category, @IncludeCategory, @ExcludeCategory (JUNIT p.7-8)",
+    "JUnitCore.runClasses and Result/Failure; junit-4.11.jar and hamcrest-core-1.3.jar (JUNIT p.8)"
+   ],
+   "not_in_book": [
+    "@ParameterizedTest, @ValueSource, @CsvSource are NOT in the PDF"
+   ]
+  },
+  "api-mocking-vocab": {
+   "name": "API mocking: stub, mock, virtual service",
+   "keywords": [
+    "api mocking",
+    "virtual service",
+    "service virtualization",
+    "stub",
+    "mock",
+    "sandbox",
+    "smartbear"
+   ],
+   "citation": "MOCK p.3-4",
+   "summary": "The SmartBear e-book defines stub, mock and virtual service and says when to use each.",
+   "rules": [
+    "Stub: minimal version with predictable data, often handwritten (MOCK p.4)",
+    "Mock: verifies outputs against expectations, focuses on interactions, usually has state (MOCK p.4)",
+    "Virtual service: created from a definition (OAS) or from recorded traffic; remote and shared (MOCK p.4)",
+    "Virtual services in system tests; stubs and mocks in unit/module/acceptance tests (MOCK p.4)"
+   ],
+   "not_in_book": [
+    "'Static vs dynamic' mocks and in-memory CRUD are NOT in MOCK"
+   ]
+  },
+  "contract-testing": {
+   "name": "Contract testing",
+   "keywords": [
+    "contract testing",
+    "contrato",
+    "contract",
+    "pact",
+    "consumer-driven",
+    "cdc",
+    "spring cloud contracts",
+    "contract tests"
+   ],
+   "citation": "MOCK p.5, 7; SWE-G p.194, 210",
+   "summary": "Contract testing verifies each application in isolation against a shared contract; SWE-G cites Pact and Spring Cloud Contracts.",
+   "rules": [
+    "Contract testing: each application in isolation against a contract of the messages (MOCK p.5)",
+    "Applies where two services communicate; pays off with many microservices (MOCK p.5)",
+    "Helps control mock drift (MOCK p.7)",
+    "Consumer-driven: Pact and Spring Cloud Contracts; Google does not use them because of protocol buffers (SWE-G p.210)",
+    "In SWE-G, contract tests are also the tests run against the real one and the fake (SWE-G p.194)"
+   ],
+   "not_in_book": [
+    "Pact broker, can-i-deploy and contract versioning are NOT in the sources"
+   ]
+  },
+  "mock-drift-quando-mockar": {
+   "name": "When to mock and mock drift",
+   "keywords": [
+    "mock drift",
+    "quando mockar",
+    "when to mock",
+    "api-first",
+    "design first",
+    "desenvolvimento paralelo",
+    "parallel development",
+    "dependência externa",
+    "external dependency",
+    "cota",
+    "rate limit"
+   ],
+   "citation": "MOCK p.6-10; SWE-G p.209",
+   "summary": "Mock when the service does not exist or the dependency is unavailable; mocks diverge from the real one (drift).",
+   "rules": [
+    "Recommendation: service not yet developed or dependencies unavailable (MOCK p.6)",
+    "Mock drift and contract testing (MOCK p.7)",
+    "Problems of the real service in tests: connectivity, slowness, rate limits, lack of a sandbox (MOCK p.9)",
+    "Use cases: API design, collaboration, demonstration (MOCK p.8)",
+    "SWE-G: do not use a real third-party API in automated tests (SWE-G p.209)"
+   ],
+   "not_in_book": [
+    "Simulating HTTP 500/503/429 is NOT described in MOCK"
+   ]
+  },
+  "gravacao-replay": {
+   "name": "Traffic recording and replay",
+   "keywords": [
+    "record",
+    "replay",
+    "gravação",
+    "recording",
+    "gravar tráfego",
+    "record traffic",
+    "matcher",
+    "record mode",
+    "replay mode"
+   ],
+   "citation": "MOCK p.9-10; SWE-G p.210",
+   "summary": "Record the traffic of an API and replay it in tests (MOCK) and Google's Record/Replay model (SWE-G).",
+   "rules": [
+    "MOCK: record HTTP/HTTPS traffic and create a virtual service; forward to the real API (MOCK p.9-10)",
+    "SWE-G: a larger test in Record Mode generates logs; Replay Mode in development; matchers (SWE-G p.210)"
+   ]
+  },
+  "tdm-visao": {
+   "name": "TDM: overview and data factory",
+   "keywords": [
+    "tdm",
+    "test data management",
+    "data factory",
+    "requisitos de dados",
+    "data requirements",
+    "bimodal"
+   ],
+   "citation": "TDM p.1, 3-4",
+   "summary": "Refcard with patterns and anti-patterns per TDM method; data requirements should be captured early.",
+   "rules": [
+    "TDM builds data-ready environments across the SDLC (TDM p.1)",
+    "Natural complexity of data (TDM p.1)",
+    "Data factory: requirements, profiling, synthetic data, subsetting, virtualization, masking/encryption, validation, orchestration, views, exemptions (TDM p.3)",
+    "Data requirements per user story; anti-pattern: capturing them late (TDM p.3-4)"
+   ]
+  },
+  "tdm-profiling-sinteticos": {
+   "name": "TDM: profiling and synthetic data",
+   "keywords": [
+    "profiling",
+    "pii",
+    "sintético",
+    "sintetico",
+    "synthetic",
+    "synthetic data",
+    "fake data",
+    "dados falsos"
+   ],
+   "citation": "TDM p.4-5",
+   "summary": "Automatic profiling finds PII; synthetic data avoids production in early phases but does not suit every phase.",
+   "rules": [
+    "Automated profiling discovers schema, relationships and PII; anti-pattern: manual (TDM p.4)",
+    "Synthetic data: avoid production and create data that does not exist (TDM p.4)",
+    "Anti-pattern: using fake data in higher environments (SIT, UAT, performance) (TDM p.5)"
+   ]
+  },
+  "tdm-masking-encryption": {
+   "name": "TDM: masking and encryption",
+   "keywords": [
+    "masking",
+    "data masking",
+    "mascaramento",
+    "ofuscação",
+    "obfuscation",
+    "encryption",
+    "criptografia",
+    "gdpr",
+    "hipaa",
+    "pci",
+    "lgpd"
+   ],
+   "citation": "TDM p.6",
+   "summary": "Masking is non-reversible and should keep a production-like appearance; encryption is reversible by key. Anti-patterns: masking too much and masking inconsistently.",
+   "rules": [
+    "Masking: a copy with obfuscated PII, preferably non-reversible (TDM p.6)",
+    "Benefits: aligns with GDPR, HIPAA and PCI (TDM p.6)",
+    "Anti-patterns: over-protecting; protecting inconsistently (TDM p.6)",
+    "Encryption: reversible with a key; DES, AES, RSA; loses the format (TDM p.6)"
+   ],
+   "not_in_book": [
+    "LGPD is NOT cited; SDM/DDM (static/dynamic masking) are NOT in TDM"
+   ]
+  },
+  "tdm-validacao-views-orquestracao": {
+   "name": "TDM: validation, views and orchestration",
+   "keywords": [
+    "validação",
+    "validation",
+    "data views",
+    "views",
+    "orquestração",
+    "orchestration",
+    "herói",
+    "hero",
+    "planilha",
+    "spreadsheet"
+   ],
+   "citation": "TDM p.6-7",
+   "summary": "Automatically validate PII removal; views reserve data pools; automate the data operations.",
+   "rules": [
+    "Validation: a screening process; anti-pattern: manual inspection (TDM p.6-7)",
+    "Data views and pool reservation; anti-pattern: list/spreadsheet (TDM p.7)",
+    "Orchestration: standardize and automate; anti-patterns: the hero and selective automation (TDM p.7)"
+   ]
+  },
+  "tdm-subsetting-virtualizacao": {
+   "name": "TDM: subsetting and virtualization",
+   "keywords": [
+    "subsetting",
+    "sub-setting",
+    "subset",
+    "amostragem",
+    "sampling",
+    "virtualização",
+    "virtualizacao",
+    "virtualization",
+    "delta",
+    "differencing",
+    "footprint"
+   ],
+   "citation": "TDM p.5",
+   "summary": "Subsetting reduces the footprint by a repeatable criterion and must be precise; virtualization uses deltas over the source.",
+   "rules": [
+    "Subsetting by a repeatable criterion; benefits: lower cost and less batch time (TDM p.5)",
+    "Anti-pattern: a loose subset loses data and relationships (TDM p.5)",
+    "Virtualization: deltas between the source and the local copy (TDM p.5)",
+    "Anti-patterns: data not desensitized in the source; transforming the delta (TDM p.5)"
+   ],
+   "not_in_book": [
+    "Copy-on-Write, sampling percentages and restore times are NOT in TDM"
+   ]
+  },
+  "tdm-exemptions-reporting": {
+   "name": "TDM: exemptions and reporting",
+   "keywords": [
+    "exemption",
+    "exceção",
+    "exception",
+    "produção",
+    "production",
+    "reporting",
+    "dataops",
+    "datasec",
+    "auditoria",
+    "audit"
+   ],
+   "citation": "TDM p.8",
+   "summary": "Production data only as a last resort, with a request and a recorded window; DataOps and DataSec reporting.",
+   "rules": [
+    "Exemptions: last resort; request, documented risk, approval and window (TDM p.8)",
+    "Anti-pattern: exemption as standard practice (TDM p.8)",
+    "DataOps and DataSec reporting; anti-patterns: not reporting and reporting manually (TDM p.8)"
+   ]
+  },
+  "jmeter-thread-group": {
+   "name": "JMeter: Thread Group",
+   "keywords": [
+    "thread group",
+    "threads",
+    "ramp-up",
+    "ramp up",
+    "loop count",
+    "scheduler",
+    "usuários virtuais",
+    "virtual users",
+    "carga",
+    "load"
+   ],
+   "citation": "JMETER p.15",
+   "summary": "The Thread Group is the root of the plan: threads, ramp-up, loop count, error behavior and scheduler.",
+   "rules": [
+    "Root of the plan (JMETER p.15)",
+    "Number of threads, ramp-up period, loop count, error behavior (JMETER p.15)",
+    "Scheduler: start and end (JMETER p.15)",
+    "Recording example: 50 threads, ramp-up 10 s, 1 loop (JMETER p.42)"
+   ],
+   "not_in_book": [
+    "Thread calculation (Little's Law) is NOT in JMETER"
+   ]
+  },
+  "jmeter-componentes-ordem": {
+   "name": "JMeter: components and order of execution",
+   "keywords": [
+    "sampler",
+    "listener",
+    "timer",
+    "controller",
+    "config element",
+    "pre processor",
+    "post processor",
+    "ordem de execução",
+    "order of execution",
+    "execution order",
+    "test plan"
+   ],
+   "citation": "JMETER p.15-21",
+   "summary": "Test plan with samplers, controllers, listeners, timers, config elements, pre/post processors; the order of execution is on p.21.",
+   "rules": [
+    "Samplers (JMETER p.15-16); logic controllers (JMETER p.16-17); listeners (JMETER p.17)",
+    "Timers; without a timer, the next request goes out immediately (JMETER p.18)",
+    "Config elements, pre processors (JMETER p.19); post processors (JMETER p.20)",
+    "Order: config, pre, timers, sampler, post, assertions, listeners (JMETER p.21)"
+   ]
+  },
+  "jmeter-assertions": {
+   "name": "JMeter: assertions and extractors",
+   "keywords": [
+    "assertion",
+    "duration assertion",
+    "size assertion",
+    "response assertion",
+    "extractor",
+    "regex",
+    "xpath",
+    "json path",
+    "sla"
+   ],
+   "citation": "JMETER p.18, 20, 29-31",
+   "summary": "Assertions validate the response; examples with Duration (100 ms, 2000 ms) and Size (5000 bytes); regex/XPath/CSS extractors.",
+   "rules": [
+    "List of assertions (JMETER p.18)",
+    "A 100 ms Duration Assertion fails; with 2000 ms almost everything passes (JMETER p.29-30)",
+    "5000-byte Size Assertion (JMETER p.30-31)",
+    "Post processors: Regular Expression, XPath, CSS/JQuery Extractor (JMETER p.20)"
+   ],
+   "not_in_book": [
+    "JSON Path Extractor is NOT in the 2.11 list; Response Assertion is not described in detail"
+   ]
+  },
+  "jmeter-nongui-boaspraticas": {
+   "name": "JMeter: non-GUI and best practices",
+   "keywords": [
+    "non-gui",
+    "nongui",
+    "cli",
+    "jmeter -n",
+    "linha de comando",
+    "command line",
+    "gui",
+    "listeners",
+    "boas práticas",
+    "best practices",
+    "stop",
+    "shutdown"
+   ],
+   "citation": "JMETER p.50",
+   "summary": "Experienced users run in non-GUI: jmeter -n -t plano.jmx -l resultado.jtl; few listeners; Stop and Shutdown.",
+   "rules": [
+    "Non-GUI: jmeter -n -t test.jmx -l test.jtl (JMETER p.50)",
+    "Listeners consume a lot of memory; use few (JMETER p.50)",
+    "View only errors; variables and loops instead of duplicated samplers; meaningful messages (JMETER p.50)",
+    "Stop (Ctrl+.) and Shutdown (Ctrl+,) (JMETER p.50)",
+    "Jenkins Performance plugin (JMETER p.49)"
+   ],
+   "not_in_book": [
+    "-e -o (HTML dashboard) is NOT in the PDF: [extrapolation], versions later than 2.11"
+   ]
+  },
+  "jmeter-planos-exemplo": {
+   "name": "JMeter: example plans (HTTP, JDBC, JUnit, recording)",
+   "keywords": [
+    "http request",
+    "jdbc",
+    "mysql",
+    "junit request",
+    "gravação",
+    "recording",
+    "proxy",
+    "firefox",
+    "wikipedia"
+   ],
+   "citation": "JMETER p.25-48",
+   "summary": "The tutorial builds HTTP, JDBC (MySQL), JUnit plans and a recording through a proxy.",
+   "rules": [
+    "HTTP plan with a 500 ms timer and assertions (JMETER p.25-31)",
+    "JDBC plan with MySQL (JMETER p.32-36)",
+    "Plan with JUnit Request; jar in lib/junit (JMETER p.37-40)",
+    "Recording with a Firefox proxy and the Test Script Recorder (JMETER p.41-48)"
+   ]
+  },
+  "testes-grandes": {
+   "name": "Larger tests (SWE-G ch. 14)",
+   "keywords": [
+    "larger tests",
+    "testes grandes",
+    "large tests",
+    "sut",
+    "system under test",
+    "fidelidade",
+    "fidelity",
+    "e2e",
+    "ponta a ponta",
+    "end-to-end",
+    "ownership"
+   ],
+   "citation": "SWE-G p.202-221",
+   "summary": "Larger tests exist to cover fidelity; they have costs (slow, flaky, owners, standardization).",
+   "rules": [
+    "Fidelity is the primary reason for larger tests (SWE-G p.202-203)",
+    "Gaps of unit tests: unfaithful doubles, configuration, load, unanticipated behaviors, emergent behaviors (SWE-G p.203-204)",
+    "Challenges: reliability, speed, scale, ownership and standardization (SWE-G p.204-205)",
+    "Structure: obtain the SUT, seed data, act, verify (SWE-G p.207)",
+    "SUT: single process, single machine, multi-machine, shared environments, hybrids (SWE-G p.208)",
+    "Keep the SUT as small as possible; handle UI/API boundaries and third parties (SWE-G p.207, p.209)",
+    "Documented owners for larger tests (SWE-G p.220-221)"
+   ]
+  },
+  "tipos-de-testes-grandes": {
+   "name": "Types of larger tests",
+   "keywords": [
+    "a/b diff",
+    "uat",
+    "probers",
+    "canary",
+    "chaos",
+    "dirt",
+    "exploratory",
+    "exploratório",
+    "bug bash",
+    "performance",
+    "load",
+    "stress",
+    "browser",
+    "device",
+    "dogfooding",
+    "experimentação",
+    "experimentation"
+   ],
+   "citation": "SWE-G p.211-217",
+   "summary": "Google's list: functional, browser/device, performance/load/stress, configuration, exploratory, A/B diff, UAT, probers and canary, DiRT/chaos, user evaluation.",
+   "rules": [
+    "Types listed (SWE-G p.211-212)",
+    "Performance, load and stress: emergent properties; imitate production (SWE-G p.213)",
+    "Configuration test: smoke test of the SUT with its configuration files (SWE-G p.213)",
+    "Exploratory and bug bash (SWE-G p.213-214)",
+    "A/B diff and A-A (SWE-G p.214-215)",
+    "UAT (SWE-G p.215); probers and canary (SWE-G p.215-216)",
+    "DiRT and chaos engineering (SWE-G p.216-217)",
+    "Dogfooding, experimentation, evaluation by raters (SWE-G p.217)"
+   ]
+  },
+  "dados-testes-grandes": {
+   "name": "Data in larger tests",
+   "keywords": [
+    "seeded data",
+    "test traffic",
+    "dados semeados",
+    "smart sampling",
+    "amostragem inteligente",
+    "copiado de produção",
+    "copied from production",
+    "dados artesanais",
+    "handcrafted data"
+   ],
+   "citation": "SWE-G p.210-211",
+   "summary": "Seeded data and test traffic; sources: handcrafted, copied, sampled.",
+   "rules": [
+    "Seeded data and test traffic (SWE-G p.210)",
+    "Handcrafted, copied and sampled data; smart sampling (SWE-G p.210-211)"
+   ]
+  }
+ },
+ "uncovered": [
+  {
+   "keywords": [
+    "junit 5",
+    "jupiter",
+    "beforeeach",
+    "afterall",
+    "assertall",
+    "assertthrows",
+    "parameterizedtest",
+    "displayname",
+    "nested",
+    "valuesource",
+    "csvsource"
+   ],
+   "note": "JUnit 5/Jupiter is NOT in the sources (JUNIT is a JUnit 4 tutorial). The JUnit 4 -> 5 map in references/ciclo-de-vida-e-assercoes-junit.md, section 5, is an [extrapolation]."
+  },
+  {
+   "keywords": [
+    "meszaros",
+    "dummy",
+    "spy",
+    "xunit test patterns"
+   ],
+   "note": "The Meszaros taxonomy (Dummy, Stub, Spy, Mock, Fake) is NOT in SWE-G or MOCK: [extrapolation]."
+  },
+  {
+   "keywords": [
+    "lei de little",
+    "little's law",
+    "littles law",
+    "little",
+    "concorrência",
+    "concurrency",
+    "throughput",
+    "tps",
+    "percentil",
+    "percentile",
+    "p95",
+    "p99"
+   ],
+   "note": "Little's Law, throughput and percentiles are NOT in JMETER: [extrapolation]; use jmeter_calc.py, which labels the calculations."
+  },
+  {
+   "keywords": [
+    "lgpd",
+    "sdm",
+    "ddm",
+    "mascaramento estático",
+    "mascaramento dinâmico",
+    "static data masking",
+    "dynamic data masking",
+    "copy-on-write"
+   ],
+   "note": "LGPD, static/dynamic masking and Copy-on-Write are NOT in TDM (which cites GDPR, HIPAA and PCI): [extrapolation]."
+  },
+  {
+   "keywords": [
+    "testcontainers",
+    "wiremock",
+    "mockserver",
+    "k6",
+    "gatling",
+    "locust",
+    "mutation testing",
+    "pitest",
+    "tdd",
+    "bdd",
+    "property-based",
+    "hypothesis",
+    "selenium",
+    "cypress",
+    "playwright",
+    "mockito",
+    "easymock"
+   ],
+   "note": "Tools and techniques outside the sources (SWE-G uses Mockito in its examples and mentions Cucumber and WebDriver in passing): [extrapolation]."
+  }
+ ]
+}

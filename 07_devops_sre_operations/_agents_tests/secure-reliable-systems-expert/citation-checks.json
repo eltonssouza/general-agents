@@ -1,0 +1,6633 @@
+{
+ "_comment": "Each item asserts that the indicated (PDF) page contains ALL the substrings (positive: contains) or NONE of them as a whole word (negative: absent). Normalization: lowercase, collapsed whitespace, line-break hyphenation removed, straight quotes. Page convention: PDF; printed = PDF - 36.",
+ "checks": [
+  {
+   "cite": "BSRS p.39",
+   "contains": [
+    "required a power drill",
+    "password manager"
+   ],
+   "claim": "opening case: power drill and password manager"
+  },
+  {
+   "cite": "BSRS p.40",
+   "contains": [
+    "smart card",
+    "green light"
+   ],
+   "claim": "misleading green LED on the reader"
+  },
+  {
+   "cite": "BSRS p.41",
+   "contains": [
+    "fail safe",
+    "fail secure",
+    "attack surface"
+   ],
+   "claim": "fail safe vs secure; redundancy increases attack surface"
+  },
+  {
+   "cite": "BSRS p.41",
+   "contains": [
+    "need-to-know",
+    "valuable target"
+   ],
+   "claim": "security incident with few people; logs as target"
+  },
+  {
+   "cite": "BSRS p.42",
+   "contains": [
+    "CIA triad",
+    "single-bit flip"
+   ],
+   "claim": "CIA triad; recovered bit flip"
+  },
+  {
+   "cite": "BSRS p.42",
+   "contains": [
+    "push-to-talk",
+    "stuck"
+   ],
+   "claim": "stuck microphone = confidentiality breach without an adversary"
+  },
+  {
+   "cite": "BSRS p.42",
+   "contains": [
+    "straddle the areas",
+    "design flaw"
+   ],
+   "claim": "DoS between reliability and security"
+  },
+  {
+   "cite": "BSRS p.43",
+   "contains": [
+    "emergent",
+    "bolt on"
+   ],
+   "claim": "emergent properties, hard to add later"
+  },
+  {
+   "cite": "BSRS p.44",
+   "contains": [
+    "$350",
+    "700 flight cancellations"
+   ],
+   "claim": "Yahoo/Verizon and Delta costs"
+  },
+  {
+   "cite": "BSRS p.44",
+   "contains": [
+    "adversarial testing",
+    "error budgets"
+   ],
+   "claim": "risk assessment, adversarial testing"
+  },
+  {
+   "cite": "BSRS p.45",
+   "contains": [
+    "Valgrind",
+    "process ID"
+   ],
+   "claim": "Debian OpenSSL bug"
+  },
+  {
+   "cite": "BSRS p.45",
+   "contains": [
+    "YouTube was down globally",
+    "logging library"
+   ],
+   "claim": "YouTube outage caused by a logging library"
+  },
+  {
+   "cite": "BSRS p.46",
+   "contains": [
+    "defense in depth",
+    "blast radius",
+    "move laterally"
+   ],
+   "claim": "defense in depth and blast radius"
+  },
+  {
+   "cite": "BSRS p.46",
+   "contains": [
+    "multi-party authorization",
+    "least privilege"
+   ],
+   "claim": "MPA and least privilege against insiders"
+  },
+  {
+   "cite": "BSRS p.47",
+   "contains": [
+    "Code Spaces",
+    "deleting all of its data"
+   ],
+   "claim": "Code Spaces case"
+  },
+  {
+   "cite": "BSRS p.48",
+   "contains": [
+    "IMAG",
+    "Incident Command System",
+    "DiRT"
+   ],
+   "claim": "IMAG, ICS and DiRT"
+  },
+  {
+   "cite": "BSRS p.48-49",
+   "contains": [
+    "double-edged sword",
+    "rolled back to an obsolete or unsafe version"
+   ],
+   "claim": "fast patch and safeguards against rollback"
+  },
+  {
+   "cite": "BSRS p.39-50",
+   "absent": [
+    "SLSA",
+    "Sigstore",
+    "MITRE ATT&CK",
+    "NIST Cybersecurity Framework"
+   ],
+   "claim": "terms not present in ch.1"
+  },
+  {
+   "cite": "BSRS p.39-50",
+   "absent": [
+    "STRIDE",
+    "DREAD",
+    "OWASP"
+   ],
+   "claim": "threat models do not appear in ch.1"
+  },
+  {
+   "cite": "BSRS p.51",
+   "contains": [
+    "tactics, techniques, and procedures",
+    "cat had damaged"
+   ],
+   "claim": "TTPs and the cat case"
+  },
+  {
+   "cite": "BSRS p.51-52",
+   "contains": [
+    "success disas",
+    "fishing vessels"
+   ],
+   "claim": "benign adversaries in reliability"
+  },
+  {
+   "cite": "BSRS p.52-53",
+   "contains": [
+    "Fun",
+    "Coercion",
+    "Manipulation",
+    "Espionage",
+    "Destruction"
+   ],
+   "claim": "list of motivations"
+  },
+  {
+   "cite": "BSRS p.54",
+   "contains": [
+    "Hobbyists",
+    "MIT Mind and Hand Book"
+   ],
+   "claim": "hobbyists and MIT"
+  },
+  {
+   "cite": "BSRS p.54-55",
+   "contains": [
+    "Vulnerability Reward Programs",
+    "disclosure norms"
+   ],
+   "claim": "researchers and VRP"
+  },
+  {
+   "cite": "BSRS p.55",
+   "contains": [
+    "Red Teams and penetration testers",
+    "permission of the system owner"
+   ],
+   "claim": "red teams with permission"
+  },
+  {
+   "cite": "BSRS p.55",
+   "contains": [
+    "RSA was compromised",
+    "Lockheed"
+   ],
+   "claim": "RSA case"
+  },
+  {
+   "cite": "BSRS p.56",
+   "contains": [
+    "Stuxnet",
+    "NSO Group"
+   ],
+   "claim": "Stuxnet and NSO"
+  },
+  {
+   "cite": "BSRS p.57",
+   "contains": [
+    "Strava",
+    "Operation Aurora"
+   ],
+   "claim": "Strava and Aurora"
+  },
+  {
+   "cite": "BSRS p.57-58",
+   "contains": [
+    "Syrian Electronic Army",
+    "Anonymous"
+   ],
+   "claim": "hacktivism"
+  },
+  {
+   "cite": "BSRS p.58-59",
+   "contains": [
+    "social engineering",
+    "Stalkerware",
+    "Ransomware"
+   ],
+   "claim": "criminals"
+  },
+  {
+   "cite": "BSRS p.59-60",
+   "contains": [
+    "CAPTCHA",
+    "increase the cost"
+   ],
+   "claim": "CAPTCHA as a cost increase"
+  },
+  {
+   "cite": "BSRS p.60",
+   "contains": [
+    "Cyber Grand Challenge",
+    "self-learn"
+   ],
+   "claim": "DARPA CGC"
+  },
+  {
+   "cite": "BSRS p.61",
+   "contains": [
+    "First-party insiders",
+    "Third-party insiders",
+    "Related insiders"
+   ],
+   "claim": "categories of insiders"
+  },
+  {
+   "cite": "BSRS p.61",
+   "contains": [
+    "take over an employee",
+    "least privilege"
+   ],
+   "claim": "hijacked account and least privilege"
+  },
+  {
+   "cite": "BSRS p.61-62",
+   "contains": [
+    "General Electric",
+    "UCLA Medical Center",
+    "23"
+   ],
+   "claim": "GE, UCLA and 23 servers cases"
+  },
+  {
+   "cite": "BSRS p.63",
+   "contains": [
+    "Determining Insider Intent",
+    "broad definition of"
+   ],
+   "claim": "intent and home as workplace"
+  },
+  {
+   "cite": "BSRS p.64",
+   "contains": [
+    "Actor/Role",
+    "Retaliatory",
+    "Exfiltration"
+   ],
+   "claim": "insider risk table"
+  },
+  {
+   "cite": "BSRS p.65",
+   "contains": [
+    "This site may",
+    "harm your computer"
+   ],
+   "claim": "the slash in Search case"
+  },
+  {
+   "cite": "BSRS p.65-66",
+   "contains": [
+    "Zero trust",
+    "Business justifications",
+    "Recoverability"
+   ],
+   "claim": "concepts for insider risk"
+  },
+  {
+   "cite": "BSRS p.66-67",
+   "contains": [
+    "Indicators of compromise",
+    "STIX",
+    "IDA Pro"
+   ],
+   "claim": "threat intelligence"
+  },
+  {
+   "cite": "BSRS p.67-68",
+   "contains": [
+    "Reconnaissance",
+    "Lateral movement",
+    "Persistence",
+    "application whitelisting"
+   ],
+   "claim": "kill chain"
+  },
+  {
+   "cite": "BSRS p.68",
+   "contains": [
+    "ATT&CK",
+    "bash_history"
+   ],
+   "claim": "MITRE ATT&CK"
+  },
+  {
+   "cite": "BSRS p.68-69",
+   "contains": [
+    "not a true predictor",
+    "firmware backdoors"
+   ],
+   "claim": "sophistication does not predict success"
+  },
+  {
+   "cite": "BSRS p.69",
+   "contains": [
+    "Attribution is hard",
+    "NotPetya"
+   ],
+   "claim": "attribution is hard"
+  },
+  {
+   "cite": "BSRS p.51-72",
+   "absent": [
+    "STRIDE",
+    "DREAD",
+    "attack tree",
+    "PASTA",
+    "OWASP"
+   ],
+   "claim": "classic threat modeling frameworks are not in ch.2"
+  },
+  {
+   "cite": "BSRS p.51-72",
+   "absent": [
+    "SolarWinds",
+    "Log4j",
+    "Log4Shell",
+    "MOVEit"
+   ],
+   "claim": "events after 2020 do not appear"
+  },
+  {
+   "cite": "BSRS p.51-72",
+   "absent": [
+    "ChatGPT",
+    "large language model"
+   ],
+   "claim": "generative AI does not appear"
+  },
+  {
+   "cite": "BSRS p.73",
+   "contains": [
+    "safe proxies",
+    "without requiring substantial changes"
+   ],
+   "claim": "safe proxies without changing systems"
+  },
+  {
+   "cite": "BSRS p.74",
+   "contains": [
+    "Zero Touch Prod",
+    "13%",
+    "breakglass"
+   ],
+   "claim": "Zero Touch Prod and 13%"
+  },
+  {
+   "cite": "BSRS p.74",
+   "contains": [
+    "Audit every operation",
+    "single entry"
+   ],
+   "claim": "single entry point and auditing"
+  },
+  {
+   "cite": "BSRS p.74-75",
+   "contains": [
+    "multi-party authorization",
+    "Rate limiting",
+    "closed-source"
+   ],
+   "claim": "benefits of the proxy"
+  },
+  {
+   "cite": "BSRS p.75-76",
+   "contains": [
+    "single point of failure",
+    "Resistance to change"
+   ],
+   "claim": "drawbacks of the proxy"
+  },
+  {
+   "cite": "BSRS p.76",
+   "contains": [
+    "fork and exec",
+    "Tool Proxy"
+   ],
+   "claim": "Tool Proxy"
+  },
+  {
+   "cite": "BSRS p.77",
+   "contains": [
+    "tool-proxy-cli",
+    "stdout"
+   ],
+   "claim": "Tool Proxy flow"
+  },
+  {
+   "cite": "BSRS p.78",
+   "contains": [
+    "deny any direct connections",
+    "breakglass situations"
+   ],
+   "claim": "server only accepts admin-proxy"
+  },
+  {
+   "cite": "BSRS p.80",
+   "contains": [
+    "critical requirements",
+    "user journeys"
+   ],
+   "claim": "critical requirements"
+  },
+  {
+   "cite": "BSRS p.81",
+   "contains": [
+    "service level objectives",
+    "99th-percentile"
+   ],
+   "claim": "non-functional requirements with SLO"
+  },
+  {
+   "cite": "BSRS p.82",
+   "contains": [
+    "enable_high_reliability_mode",
+    "emergent property"
+   ],
+   "claim": "there is no reliability flag"
+  },
+  {
+   "cite": "BSRS p.82-83",
+   "contains": [
+    "production readiness reviews",
+    "trust relationships"
+   ],
+   "claim": "reliability and security are emergent"
+  },
+  {
+   "cite": "BSRS p.83-84",
+   "contains": [
+    "Dependency considerations",
+    "dependency cycles",
+    "Data integrity",
+    "SLA requirements"
+   ],
+   "claim": "design doc template sections"
+  },
+  {
+   "cite": "BSRS p.84",
+   "contains": [
+    "quick security design review",
+    "explicitly state"
+   ],
+   "claim": "security design review after the design doc"
+  },
+  {
+   "cite": "BSRS p.85",
+   "contains": [
+    "bolt on",
+    "tangled set of dependencies"
+   ],
+   "claim": "retrofit is expensive"
+  },
+  {
+   "cite": "BSRS p.86",
+   "contains": [
+    "PCI DSS",
+    "critical requirement"
+   ],
+   "claim": "payments example and PCI DSS"
+  },
+  {
+   "cite": "BSRS p.87",
+   "contains": [
+    "to not hold that data",
+    "third-party service provider"
+   ],
+   "claim": "do not retain sensitive data"
+  },
+  {
+   "cite": "BSRS p.88",
+   "contains": [
+    "message queueing",
+    "security risk that arose from your attempt"
+   ],
+   "claim": "risk chain of the example"
+  },
+  {
+   "cite": "BSRS p.89",
+   "contains": [
+    "transitive dependencies",
+    "sandboxed iframe",
+    "REST+JSON"
+   ],
+   "claim": "security risks of integrating with a third party"
+  },
+  {
+   "cite": "BSRS p.90",
+   "contains": [
+    "conformance checks",
+    "immutable types"
+   ],
+   "claim": "framework with conformance checks"
+  },
+  {
+   "cite": "BSRS p.91",
+   "contains": [
+    "error budget",
+    "security by default"
+   ],
+   "claim": "benefits of the framework"
+  },
+  {
+   "cite": "BSRS p.92",
+   "contains": [
+    "initial velocity",
+    "sustained velocity"
+   ],
+   "claim": "initial vs sustained velocity"
+  },
+  {
+   "cite": "BSRS p.93",
+   "contains": [
+    "ARPANET",
+    "IPsec",
+    "HTTPS"
+   ],
+   "claim": "history of the internet: security absent"
+  },
+  {
+   "cite": "BSRS p.94",
+   "contains": [
+    "feature flags",
+    "tarballs"
+   ],
+   "claim": "investment in CI/CD and feature flags"
+  },
+  {
+   "cite": "BSRS p.94-95",
+   "contains": [
+    "secure-by-construction",
+    "modest"
+   ],
+   "claim": "secure-by-construction framework"
+  },
+  {
+   "cite": "BSRS p.73-95",
+   "absent": [
+    "STRIDE",
+    "NIST 800-53",
+    "SOC 2",
+    "ISO 27001",
+    "DevSecOps",
+    "shift left"
+   ],
+   "claim": "terms not present in chs. 3-4"
+  },
+  {
+   "cite": "BSRS p.73-78",
+   "absent": [
+    "Istio",
+    "Envoy",
+    "service mesh",
+    "bastion"
+   ],
+   "claim": "proxy products not cited in ch.3"
+  },
+  {
+   "cite": "BSRS p.79-95",
+   "absent": [
+    "GDPR",
+    "LGPD",
+    "HIPAA",
+    "SOX"
+   ],
+   "claim": "regulations beyond PCI DSS not detailed"
+  },
+  {
+   "cite": "BSRS p.97",
+   "contains": [
+    "minimum amount of",
+    "least privilege"
+   ],
+   "claim": "definition of least privilege"
+  },
+  {
+   "cite": "BSRS p.98",
+   "contains": [
+    "hope is not a strategy",
+    "ambient authority"
+   ],
+   "claim": "hope is not a strategy and ambient authority"
+  },
+  {
+   "cite": "BSRS p.98-99",
+   "contains": [
+    "zero trust networking",
+    "BeyondCorp"
+   ],
+   "claim": "zero trust and BeyondCorp"
+  },
+  {
+   "cite": "BSRS p.99",
+   "contains": [
+    "Zero Touch",
+    "removing direct human access"
+   ],
+   "claim": "zero touch"
+  },
+  {
+   "cite": "BSRS p.99-100",
+   "contains": [
+    "classify access",
+    "publicly available data"
+   ],
+   "claim": "classify access by risk"
+  },
+  {
+   "cite": "BSRS p.100",
+   "contains": [
+    "highly sensitive",
+    "No permanent access",
+    "Infrastructure access"
+   ],
+   "claim": "table 5-1"
+  },
+  {
+   "cite": "BSRS p.101",
+   "contains": [
+    "avoid open-ended interactive interfaces",
+    "small functional APIs"
+   ],
+   "claim": "small functional APIs"
+  },
+  {
+   "cite": "BSRS p.102",
+   "contains": [
+    "administrative API",
+    "attack surfaces"
+   ],
+   "claim": "administrative API"
+  },
+  {
+   "cite": "BSRS p.103",
+   "contains": [
+    "keep the honest people honest",
+    "vim"
+   ],
+   "claim": "auditing an interactive session is not enough"
+  },
+  {
+   "cite": "BSRS p.103",
+   "contains": [
+    "git-shell",
+    "break glass in case of emergency"
+   ],
+   "claim": "git-shell and breakglass"
+  },
+  {
+   "cite": "BSRS p.104-105",
+   "contains": [
+    "strong culture of auditing",
+    "rubber stamps"
+   ],
+   "claim": "audit culture"
+  },
+  {
+   "cite": "BSRS p.105-106",
+   "contains": [
+    "Audits to ensure best practices",
+    "Audits to identify security breaches",
+    "tripwires"
+   ],
+   "claim": "types of audit"
+  },
+  {
+   "cite": "BSRS p.106",
+   "contains": [
+    "structured justification",
+    "free-text"
+   ],
+   "claim": "structured justification"
+  },
+  {
+   "cite": "BSRS p.107",
+   "contains": [
+    "Testing of least privilege",
+    "Testing with least privilege"
+   ],
+   "claim": "testing from and with least privilege"
+  },
+  {
+   "cite": "BSRS p.108",
+   "contains": [
+    "anonymized data sets",
+    "test accounts"
+   ],
+   "claim": "anonymized data and test accounts"
+  },
+  {
+   "cite": "BSRS p.109",
+   "contains": [
+    "403 Access Denied",
+    "token associated with the denial"
+   ],
+   "claim": "blind denial and token"
+  },
+  {
+   "cite": "BSRS p.110",
+   "contains": [
+    "panic rooms",
+    "tested regularly"
+   ],
+   "claim": "breakglass in panic rooms"
+  },
+  {
+   "cite": "BSRS p.110-111",
+   "contains": [
+    "canary set",
+    "version control system"
+   ],
+   "claim": "configuration best practices"
+  },
+  {
+   "cite": "BSRS p.111",
+   "contains": [
+    "POSIX API via",
+    "Custom OpenSSH",
+    "Auditability"
+   ],
+   "claim": "table 5-2"
+  },
+  {
+   "cite": "BSRS p.112-113",
+   "contains": [
+    "ForceCommand",
+    "gRPC or Thrift"
+   ],
+   "claim": "ForceCommand and gRPC"
+  },
+  {
+   "cite": "BSRS p.113-114",
+   "contains": [
+    "bearer token",
+    "rate limiter"
+   ],
+   "claim": "rate limiter bearer token"
+  },
+  {
+   "cite": "BSRS p.114-115",
+   "contains": [
+    "authentication [noun]",
+    "authorization [noun]"
+   ],
+   "claim": "definitions of authentication and authorization"
+  },
+  {
+   "cite": "BSRS p.115-116",
+   "contains": [
+    "Access Management (IAM)",
+    "shared library"
+   ],
+   "claim": "IAM and shared library"
+  },
+  {
+   "cite": "BSRS p.117",
+   "contains": [
+    "Multi-Party Authorization",
+    "tamper-resistant"
+   ],
+   "claim": "benefits of MPA"
+  },
+  {
+   "cite": "BSRS p.118",
+   "contains": [
+    "social pressure",
+    "someone to say no"
+   ],
+   "claim": "MPA pitfalls"
+  },
+  {
+   "cite": "BSRS p.118-119",
+   "contains": [
+    "Three-Factor Authorization",
+    "same centrally",
+    "mobile"
+   ],
+   "claim": "3FA"
+  },
+  {
+   "cite": "BSRS p.120",
+   "contains": [
+    "3FA Is Not 2FA",
+    "stronger authorization of a specific request"
+   ],
+   "claim": "3FA is not 2FA"
+  },
+  {
+   "cite": "BSRS p.120-121",
+   "contains": [
+    "structured business justification",
+    "Team foo needed access"
+   ],
+   "claim": "business justifications"
+  },
+  {
+   "cite": "BSRS p.121",
+   "contains": [
+    "Temporary Access",
+    "ambient authority",
+    "bastion"
+   ],
+   "claim": "temporary access and proxies"
+  },
+  {
+   "cite": "BSRS p.122",
+   "contains": [
+    "Does a given user have",
+    "who has access"
+   ],
+   "claim": "fundamental questions"
+  },
+  {
+   "cite": "BSRS p.123-124",
+   "contains": [
+    "breakglass mechanism",
+    "forensic analysis"
+   ],
+   "claim": "operational requirements"
+  },
+  {
+   "cite": "BSRS p.97-124",
+   "absent": [
+    "RBAC",
+    "ABAC",
+    "Vault",
+    "HashiCorp",
+    "Kerberos",
+    "LDAP"
+   ],
+   "claim": "RBAC/ABAC/Vault do not appear in ch.5"
+  },
+  {
+   "cite": "BSRS p.97-124",
+   "absent": [
+    "just-in-time",
+    "privileged access management",
+    "PAM"
+   ],
+   "claim": "JIT/PAM as market terms do not appear"
+  },
+  {
+   "cite": "BSRS p.97-124",
+   "absent": [
+    "passkey",
+    "WebAuthn",
+    "Okta"
+   ],
+   "claim": "passkeys/Okta do not appear"
+  },
+  {
+   "cite": "BSRS p.125-126",
+   "contains": [
+    "understandability",
+    "invariants"
+   ],
+   "claim": "definition of understandability"
+  },
+  {
+   "cite": "BSRS p.126",
+   "contains": [
+    "for all possible behaviors",
+    "abstract reasoning"
+   ],
+   "claim": "invariants and abstract reasoning"
+  },
+  {
+   "cite": "BSRS p.127",
+   "contains": [
+    "system invariant is a property that is always true",
+    "audit log"
+   ],
+   "claim": "definition of invariant"
+  },
+  {
+   "cite": "BSRS p.127-128",
+   "contains": [
+    "self-inflicted denial",
+    "backoff"
+   ],
+   "claim": "self-attack by retries without backoff"
+  },
+  {
+   "cite": "BSRS p.128",
+   "contains": [
+    "Absence of evidence is not evidence of absence",
+    "20 person-years"
+   ],
+   "claim": "limits of testing and formal methods"
+  },
+  {
+   "cite": "BSRS p.129",
+   "contains": [
+    "practical middle ground",
+    "mental models"
+   ],
+   "claim": "practical middle ground"
+  },
+  {
+   "cite": "BSRS p.129-130",
+   "contains": [
+    "thrashing",
+    "swap space"
+   ],
+   "claim": "thrashing and swap"
+  },
+  {
+   "cite": "BSRS p.130",
+   "contains": [
+    "unmanaged complexity",
+    "over a billion lines"
+   ],
+   "claim": "unmanaged complexity"
+  },
+  {
+   "cite": "BSRS p.132",
+   "contains": [
+    "deadline propagation",
+    "centralized component"
+   ],
+   "claim": "centralized responsibility"
+  },
+  {
+   "cite": "BSRS p.133-134",
+   "contains": [
+    "makes no assumptions",
+    "call site"
+   ],
+   "claim": "fewer assumptions about callers"
+  },
+  {
+   "cite": "BSRS p.134",
+   "contains": [
+    "Prefer narrow interfaces",
+    "gRPC",
+    "free-form"
+   ],
+   "claim": "narrow interfaces"
+  },
+  {
+   "cite": "BSRS p.135",
+   "contains": [
+    "common object model",
+    "Kubernetes"
+   ],
+   "claim": "common object model"
+  },
+  {
+   "cite": "BSRS p.135-136",
+   "contains": [
+    "idempotent operation",
+    "UUID"
+   ],
+   "claim": "idempotence"
+  },
+  {
+   "cite": "BSRS p.137",
+   "contains": [
+    "IP addresses",
+    "easily spoofable"
+   ],
+   "claim": "an IP is not usable as an identity"
+  },
+  {
+   "cite": "BSRS p.137-138",
+   "contains": [
+    "widget-store-frontend-prod",
+    "Have nonreusable identifiers"
+   ],
+   "claim": "properties of identifiers"
+  },
+  {
+   "cite": "BSRS p.138-139",
+   "contains": [
+    "Administrators",
+    "Machines",
+    "Workloads",
+    "Customers"
+   ],
+   "claim": "identities at Google"
+  },
+  {
+   "cite": "BSRS p.140",
+   "contains": [
+    "Application Layer Transport Security",
+    "zero-config"
+   ],
+   "claim": "ALTS"
+  },
+  {
+   "cite": "BSRS p.141-142",
+   "contains": [
+    "trusted computing base",
+    "security boundary"
+   ],
+   "claim": "TCB and boundary"
+  },
+  {
+   "cite": "BSRS p.143",
+   "contains": [
+    "as small as possible",
+    "TCBAddressData"
+   ],
+   "claim": "small TCB"
+  },
+  {
+   "cite": "BSRS p.144",
+   "contains": [
+    "CVE-2010-1870",
+    "SQL injection"
+   ],
+   "claim": "risks in the monolith"
+  },
+  {
+   "cite": "BSRS p.146",
+   "contains": [
+    "end-user context ticket",
+    "same-origin policy"
+   ],
+   "claim": "EUC and same-origin"
+  },
+  {
+   "cite": "BSRS p.147",
+   "contains": [
+    "failure domain",
+    "by definition not a TCB"
+   ],
+   "claim": "TCB as a failure domain"
+  },
+  {
+   "cite": "BSRS p.148",
+   "contains": [
+    "application frameworks",
+    "batteries-included"
+   ],
+   "claim": "application frameworks"
+  },
+  {
+   "cite": "BSRS p.149-150",
+   "contains": [
+    "Url.parse",
+    "well-formed"
+   ],
+   "claim": "types for data properties"
+  },
+  {
+   "cite": "BSRS p.151",
+   "contains": [
+    "SafeSql",
+    "SafeHtml",
+    "injection sinks"
+   ],
+   "claim": "SafeSql and SafeHtml"
+  },
+  {
+   "cite": "BSRS p.152",
+   "contains": [
+    "contextually autoescaping",
+    "secure-by-construction"
+   ],
+   "claim": "contextual autoescaping"
+  },
+  {
+   "cite": "BSRS p.153",
+   "contains": [
+    "decryption oracle",
+    "Tink"
+   ],
+   "claim": "Tink and decryption oracle"
+  },
+  {
+   "cite": "BSRS p.154",
+   "contains": [
+    "does not accept raw key material",
+    "hashing it"
+   ],
+   "claim": "Tink limits"
+  },
+  {
+   "cite": "BSRS p.155",
+   "contains": [
+    "sacrificing availability for security"
+   ],
+   "claim": "taking a service offline in a security incident"
+  },
+  {
+   "cite": "BSRS p.125-155",
+   "absent": [
+    "STRIDE",
+    "threat modeling",
+    "TLA+",
+    "Coq",
+    "Rust"
+   ],
+   "claim": "terms not present in ch.6"
+  },
+  {
+   "cite": "BSRS p.125-155",
+   "absent": [
+    "SPIFFE",
+    "mTLS",
+    "service mesh",
+    "Envoy"
+   ],
+   "claim": "SPIFFE/mTLS/service mesh do not appear in ch.6"
+  },
+  {
+   "cite": "BSRS p.125-155",
+   "absent": [
+    "OWASP ASVS",
+    "NIST SP 800-207"
+   ],
+   "claim": "standards not cited"
+  },
+  {
+   "cite": "BSRS p.158",
+   "contains": [
+    "Changes in response to security incidents",
+    "externally motivated"
+   ],
+   "claim": "types of security change"
+  },
+  {
+   "cite": "BSRS p.158-159",
+   "contains": [
+    "Incremental",
+    "Documented",
+    "Tested",
+    "Isolated",
+    "Qualified",
+    "Staged"
+   ],
+   "claim": "six characteristics of change"
+  },
+  {
+   "cite": "BSRS p.159",
+   "contains": [
+    "feature flags",
+    "no change in behavior when the feature is"
+   ],
+   "claim": "feature flags isolate changes"
+  },
+  {
+   "cite": "BSRS p.159-160",
+   "contains": [
+    "Rebuild",
+    "emergency rollout"
+   ],
+   "claim": "frequent rebuild"
+  },
+  {
+   "cite": "BSRS p.160",
+   "contains": [
+    "fewer changes",
+    "automate their testing"
+   ],
+   "claim": "frequent releases and automated tests"
+  },
+  {
+   "cite": "BSRS p.161",
+   "contains": [
+    "content addressability",
+    "immutable"
+   ],
+   "claim": "containers and content addressability"
+  },
+  {
+   "cite": "BSRS p.161",
+   "contains": [
+    "monitor the age of",
+    "recently built containers"
+   ],
+   "claim": "age of containers"
+  },
+  {
+   "cite": "BSRS p.161-162",
+   "contains": [
+    "zero trust networking",
+    "segmented"
+   ],
+   "claim": "microservices and zero trust"
+  },
+  {
+   "cite": "BSRS p.162",
+   "contains": [
+    "Google Front End",
+    "DDoS"
+   ],
+   "claim": "GFE"
+  },
+  {
+   "cite": "BSRS p.163",
+   "contains": [
+    "SSL renegotiations",
+    "data plane",
+    "control plane"
+   ],
+   "claim": "GFE and data/control plane"
+  },
+  {
+   "cite": "BSRS p.163-164",
+   "contains": [
+    "Severity",
+    "Sensitivity",
+    "Deadline",
+    "Dependent systems"
+   ],
+   "claim": "speed factors"
+  },
+  {
+   "cite": "BSRS p.164",
+   "contains": [
+    "Embargoed Vulnerabilities",
+    "announcement date"
+   ],
+   "claim": "embargo"
+  },
+  {
+   "cite": "BSRS p.165",
+   "contains": [
+    "zero-day vulnerability",
+    "top hits"
+   ],
+   "claim": "zero-day and top hits"
+  },
+  {
+   "cite": "BSRS p.165-166",
+   "contains": [
+    "absence of evidence is not evidence of absence",
+    "working exploit"
+   ],
+   "claim": "verify the patch with an exploit"
+  },
+  {
+   "cite": "BSRS p.166",
+   "contains": [
+    "Shellshock",
+    "Black Swan"
+   ],
+   "claim": "Shellshock and the Black Swan protocol"
+  },
+  {
+   "cite": "BSRS p.167-168",
+   "contains": [
+    "Standardize software distribution",
+    "reusable incident",
+    "outliers"
+   ],
+   "claim": "Shellshock lessons"
+  },
+  {
+   "cite": "BSRS p.168-169",
+   "contains": [
+    "easiest use case",
+    "hardest use case",
+    "dogfood"
+   ],
+   "claim": "initial population and dogfooding"
+  },
+  {
+   "cite": "BSRS p.169",
+   "contains": [
+    "dry run",
+    "enforcement mode"
+   ],
+   "claim": "dry run before enforcement"
+  },
+  {
+   "cite": "BSRS p.169-170",
+   "contains": [
+    "FIDO",
+    "one-time passwords",
+    "phishing"
+   ],
+   "claim": "FIDO and OTP at Google"
+  },
+  {
+   "cite": "BSRS p.170",
+   "contains": [
+    "trusted on first use",
+    "TechStop"
+   ],
+   "claim": "TOFU and TechStop"
+  },
+  {
+   "cite": "BSRS p.171",
+   "contains": [
+    "long tail",
+    "visually impaired"
+   ],
+   "claim": "lessons: long tail and accessibility"
+  },
+  {
+   "cite": "BSRS p.172",
+   "contains": [
+    "80% or 90% adoption",
+    "single source of truth"
+   ],
+   "claim": "80-90% adoption and single source"
+  },
+  {
+   "cite": "BSRS p.172-173",
+   "contains": [
+    "Let's Encrypt",
+    "Service Worker"
+   ],
+   "claim": "HTTPS and business incentives"
+  },
+  {
+   "cite": "BSRS p.174",
+   "contains": [
+    "Overcommunicate",
+    "industry consensus"
+   ],
+   "claim": "HTTPS lessons"
+  },
+  {
+   "cite": "BSRS p.175",
+   "contains": [
+    "embargo is broken",
+    "rate limiting"
+   ],
+   "claim": "plans change"
+  },
+  {
+   "cite": "BSRS p.176",
+   "contains": [
+    "Heartbleed",
+    "64 KB",
+    "Metasploit"
+   ],
+   "claim": "Heartbleed"
+  },
+  {
+   "cite": "BSRS p.177",
+   "contains": [
+    "Regularly rotate your encryption keys",
+    "communication channel to your end users"
+   ],
+   "claim": "Heartbleed lessons"
+  },
+  {
+   "cite": "BSRS p.157-177",
+   "absent": [
+    "SBOM",
+    "SLSA",
+    "Log4Shell",
+    "Log4j",
+    "Dependabot",
+    "Renovate"
+   ],
+   "claim": "SBOM/SLSA/Log4Shell do not appear in ch.7"
+  },
+  {
+   "cite": "BSRS p.157-177",
+   "absent": [
+    "Docker",
+    "Helm",
+    "Terraform",
+    "Argo",
+    "GitOps"
+   ],
+   "claim": "specific tools not cited"
+  },
+  {
+   "cite": "BSRS p.157-177",
+   "absent": [
+    "CVSS",
+    "EPSS",
+    "KEV"
+   ],
+   "claim": "vulnerability scoring systems do not appear"
+  },
+  {
+   "cite": "BSRS p.179",
+   "contains": [
+    "controlled degradation",
+    "blast radius controls",
+    "continuous validation"
+   ],
+   "claim": "focus for smaller organizations"
+  },
+  {
+   "cite": "BSRS p.180",
+   "contains": [
+    "independently resilient",
+    "Prioritize each feature"
+   ],
+   "claim": "resilience principles"
+  },
+  {
+   "cite": "BSRS p.181",
+   "contains": [
+    "Trojan Horse",
+    "Deployment",
+    "Execution",
+    "Compromise"
+   ],
+   "claim": "stages of the Trojan attack"
+  },
+  {
+   "cite": "BSRS p.182",
+   "contains": [
+    "DNS registrations",
+    "blind spots"
+   ],
+   "claim": "threat intelligence and blind spots"
+  },
+  {
+   "cite": "BSRS p.183",
+   "contains": [
+    "EternalBlue",
+    "WannaCry",
+    "sandboxing"
+   ],
+   "claim": "sandboxing and WannaCry"
+  },
+  {
+   "cite": "BSRS p.185",
+   "contains": [
+    "Native Client",
+    "ptrace"
+   ],
+   "claim": "NaCl and ptrace in App Engine"
+  },
+  {
+   "cite": "BSRS p.186",
+   "contains": [
+    "complementary",
+    "signals of a compromise become stronger"
+   ],
+   "claim": "complementary layers"
+  },
+  {
+   "cite": "BSRS p.187",
+   "contains": [
+    "controlled breakpoints",
+    "ECC",
+    "RSA"
+   ],
+   "claim": "controlled degradation and ECC vs RSA"
+  },
+  {
+   "cite": "BSRS p.188",
+   "contains": [
+    "simple HTML mode",
+    "2FA outage"
+   ],
+   "claim": "Gmail simple HTML and 2FA"
+  },
+  {
+   "cite": "BSRS p.189",
+   "contains": [
+    "SYN cookies",
+    "lame-duck mode"
+   ],
+   "claim": "SYN cookies and lame duck"
+  },
+  {
+   "cite": "BSRS p.191",
+   "contains": [
+    "Load shedding",
+    "Throttling of clients"
+   ],
+   "claim": "load shedding and throttling"
+  },
+  {
+   "cite": "BSRS p.192",
+   "contains": [
+    "request priority",
+    "request cost",
+    "rather than crashing"
+   ],
+   "claim": "request priority and cost"
+  },
+  {
+   "cite": "BSRS p.193",
+   "contains": [
+    "self-reliant failure detection",
+    "full load-shedding mode"
+   ],
+   "claim": "self-contained detection"
+  },
+  {
+   "cite": "BSRS p.194",
+   "contains": [
+    "allow all",
+    "deny all",
+    "nonnegotiable security posture"
+   ],
+   "claim": "fail open vs closed"
+  },
+  {
+   "cite": "BSRS p.195",
+   "contains": [
+    "change budget",
+    "SYN attack"
+   ],
+   "claim": "change budget and SYN attack"
+  },
+  {
+   "cite": "BSRS p.196-197",
+   "contains": [
+    "mutually authenticated",
+    "compartmentalization",
+    "imperfect compartments"
+   ],
+   "claim": "compartments"
+  },
+  {
+   "cite": "BSRS p.198",
+   "contains": [
+    "sole-tenant",
+    "role, location, and time"
+   ],
+   "claim": "sole-tenant and role/location/time"
+  },
+  {
+   "cite": "BSRS p.199",
+   "contains": [
+    "single-homed",
+    "tailgating"
+   ],
+   "claim": "location and tailgating"
+  },
+  {
+   "cite": "BSRS p.200",
+   "contains": [
+    "separate certificate to each server",
+    "job control system"
+   ],
+   "claim": "per-server certificate and job control"
+  },
+  {
+   "cite": "BSRS p.201",
+   "contains": [
+    "zip-tied",
+    "802.1x",
+    "guest VLAN"
+   ],
+   "claim": "red team and cable tie"
+  },
+  {
+   "cite": "BSRS p.202",
+   "contains": [
+    "key wrapping",
+    "wall clock"
+   ],
+   "claim": "per-location keys and clock-based expiration"
+  },
+  {
+   "cite": "BSRS p.203-204",
+   "contains": [
+    "failure domain",
+    "last known good"
+   ],
+   "claim": "failure domains and last known good"
+  },
+  {
+   "cite": "BSRS p.204",
+   "contains": [
+    "A/B regression",
+    "canary"
+   ],
+   "claim": "two failure domains"
+  },
+  {
+   "cite": "BSRS p.206",
+   "contains": [
+    "high-capacity",
+    "high-availability",
+    "low-dependency"
+   ],
+   "claim": "three classes of components"
+  },
+  {
+   "cite": "BSRS p.207",
+   "contains": [
+    "home security system",
+    "landline"
+   ],
+   "claim": "alarm system example"
+  },
+  {
+   "cite": "BSRS p.208-209",
+   "contains": [
+    "Failover strategies",
+    "disable that failback"
+   ],
+   "claim": "failover and failback"
+  },
+  {
+   "cite": "BSRS p.209",
+   "contains": [
+    "six-week-old code",
+    "autorecovering"
+   ],
+   "claim": "pitfalls of alternates"
+  },
+  {
+   "cite": "BSRS p.210",
+   "contains": [
+    "chaos engineering",
+    "exploratory"
+   ],
+   "claim": "validation vs chaos engineering"
+  },
+  {
+   "cite": "BSRS p.212",
+   "contains": [
+    "Inject anticipated changes of behavior",
+    "step function"
+   ],
+   "claim": "injecting behavior changes"
+  },
+  {
+   "cite": "BSRS p.212-213",
+   "contains": [
+    "mirroring",
+    "tee"
+   ],
+   "claim": "request mirroring"
+  },
+  {
+   "cite": "BSRS p.214",
+   "contains": [
+    "Oversubscribe",
+    "margin call"
+   ],
+   "claim": "oversubscribe without complacency"
+  },
+  {
+   "cite": "BSRS p.214-215",
+   "contains": [
+    "Key rotation latency",
+    "Verified loss of access"
+   ],
+   "claim": "measure key rotation"
+  },
+  {
+   "cite": "BSRS p.215-216",
+   "contains": [
+    "In order of costs",
+    "low-dependency solution"
+   ],
+   "claim": "where to start"
+  },
+  {
+   "cite": "BSRS p.217",
+   "contains": [
+    "N+1",
+    "lateral moves"
+   ],
+   "claim": "defense in depth as N+1"
+  },
+  {
+   "cite": "BSRS p.179-217",
+   "absent": [
+    "gVisor",
+    "Firecracker",
+    "WebAssembly",
+    "eBPF",
+    "Falco"
+   ],
+   "claim": "modern isolation technologies do not appear"
+  },
+  {
+   "cite": "BSRS p.179-217",
+   "absent": [
+    "Istio",
+    "Hystrix",
+    "circuit breaker",
+    "bulkhead"
+   ],
+   "claim": "circuit breaker and bulkhead not named"
+  },
+  {
+   "cite": "BSRS p.179-217",
+   "absent": [
+    "Gremlin",
+    "Litmus",
+    "game day"
+   ],
+   "claim": "chaos engineering tools not cited (only Chaos Monkey)"
+  },
+  {
+   "cite": "BSRS p.179-217",
+   "absent": [
+    "SLSA",
+    "SBOM",
+    "Log4Shell"
+   ],
+   "claim": "modern supply chain does not appear"
+  },
+  {
+   "cite": "BSRS p.219-220",
+   "contains": [
+    "rolling back an unstable release",
+    "reintroduce security vulnerabilities"
+   ],
+   "claim": "rollback can reintroduce a vulnerability"
+  },
+  {
+   "cite": "BSRS p.220",
+   "contains": [
+    "random errors",
+    "accidental errors",
+    "malicious actions",
+    "software errors"
+   ],
+   "claim": "four categories of error"
+  },
+  {
+   "cite": "BSRS p.221",
+   "contains": [
+    "unilateral human action",
+    "2015 through 2018"
+   ],
+   "claim": "Google outage analysis"
+  },
+  {
+   "cite": "BSRS p.222-223",
+   "contains": [
+    "decoupling your ability to perform rollouts",
+    "rate and frequency policies"
+   ],
+   "claim": "decouple capability from policy"
+  },
+  {
+   "cite": "BSRS p.223",
+   "contains": [
+    "emergency push",
+    "regular push system turned up to maximum"
+   ],
+   "claim": "emergency push = regular push"
+  },
+  {
+   "cite": "BSRS p.224",
+   "contains": [
+    "standalone, single-purpose microservice",
+    "short-lived cryptographic token"
+   ],
+   "claim": "isolated rate limiter"
+  },
+  {
+   "cite": "BSRS p.224-225",
+   "contains": [
+    "golden",
+    "base image",
+    "every month"
+   ],
+   "claim": "monthly base image"
+  },
+  {
+   "cite": "BSRS p.225",
+   "contains": [
+    "rollout actuator",
+    "configuration store"
+   ],
+   "claim": "actuator and config store"
+  },
+  {
+   "cite": "BSRS p.226",
+   "contains": [
+    "wall-clock time",
+    "time bomb",
+    "Rates"
+   ],
+   "claim": "avoid wall-clock time"
+  },
+  {
+   "cite": "BSRS p.226-227",
+   "contains": [
+    "does not use expiration time",
+    "revocation"
+   ],
+   "claim": "ALTS without expiration"
+  },
+  {
+   "cite": "BSRS p.227",
+   "contains": [
+    "the cure is worse than",
+    "ratcheted forward"
+   ],
+   "claim": "do not disable validation; ratchet"
+  },
+  {
+   "cite": "BSRS p.228",
+   "contains": [
+    "64-bit integer",
+    "once per second"
+   ],
+   "claim": "rate-limit backstop on the epoch"
+  },
+  {
+   "cite": "BSRS p.228-229",
+   "contains": [
+    "Allow arbitrary rollbacks",
+    "Never allow rollbacks"
+   ],
+   "claim": "extreme rollback policies"
+  },
+  {
+   "cite": "BSRS p.229",
+   "contains": [
+    "self-updating",
+    "Minimum Acceptable Security"
+   ],
+   "claim": "self-updating and MASVN"
+  },
+  {
+   "cite": "BSRS p.230",
+   "contains": [
+    "unzipping",
+    "deny list"
+   ],
+   "claim": "unzipping and deny list"
+  },
+  {
+   "cite": "BSRS p.231",
+   "contains": [
+    "Security Version Number",
+    "low-water mark"
+   ],
+   "claim": "SVN and MASVN low-water mark"
+  },
+  {
+   "cite": "BSRS p.232",
+   "contains": [
+    "IsUpdateAllowed",
+    "ComponentState[MASVN]"
+   ],
+   "claim": "MASVN logic"
+  },
+  {
+   "cite": "BSRS p.233",
+   "contains": [
+    "release i",
+    "increments the MASVN"
+   ],
+   "claim": "release i and i+1"
+  },
+  {
+   "cite": "BSRS p.234",
+   "contains": [
+    "garbage-collect",
+    "signing keys"
+   ],
+   "claim": "deny list and MASVN together; signing key rotation"
+  },
+  {
+   "cite": "BSRS p.235",
+   "contains": [
+    "maximum value",
+    "one-time-programmable"
+   ],
+   "claim": "maximum MASVN and OTP"
+  },
+  {
+   "cite": "BSRS p.235-236",
+   "contains": [
+    "spare parts",
+    "multiple signatures"
+   ],
+   "claim": "spare parts and multiple signatures"
+  },
+  {
+   "cite": "BSRS p.237",
+   "contains": [
+    "fail open",
+    "certificate validity database"
+   ],
+   "claim": "fail open in revocation"
+  },
+  {
+   "cite": "BSRS p.238",
+   "contains": [
+    "authorized_keys",
+    "Key Revocation List"
+   ],
+   "claim": "KRL and authorized_keys"
+  },
+  {
+   "cite": "BSRS p.239",
+   "contains": [
+    "refuse any update that revokes its own",
+    "half of your machines"
+   ],
+   "claim": "KRL safeguard"
+  },
+  {
+   "cite": "BSRS p.239",
+   "contains": [
+    "shard your revocation list",
+    "special"
+   ],
+   "claim": "shard of the revocation list"
+  },
+  {
+   "cite": "BSRS p.240",
+   "contains": [
+    "intended state",
+    "stateless"
+   ],
+   "claim": "intended state"
+  },
+  {
+   "cite": "BSRS p.240-241",
+   "contains": [
+    "post_install",
+    "cryptographic checksum"
+   ],
+   "claim": "checksums and post_install"
+  },
+  {
+   "cite": "BSRS p.242",
+   "contains": [
+    "activation check",
+    "deviations"
+   ],
+   "claim": "activation check"
+  },
+  {
+   "cite": "BSRS p.243",
+   "contains": [
+    "leap seconds",
+    "SATA over USB"
+   ],
+   "claim": "firmware examples"
+  },
+  {
+   "cite": "BSRS p.244",
+   "contains": [
+    "No one cares about backups",
+    "only care about restores"
+   ],
+   "claim": "restores matter"
+  },
+  {
+   "cite": "BSRS p.244",
+   "contains": [
+    "same level of integrity protection",
+    "validate them as part of the restore"
+   ],
+   "claim": "backup integrity"
+  },
+  {
+   "cite": "BSRS p.245",
+   "contains": [
+    "deleting encryption",
+    "0.01%"
+   ],
+   "claim": "partial restore and key deletion"
+  },
+  {
+   "cite": "BSRS p.246",
+   "contains": [
+    "Emergency Access",
+    "readable and easy to comprehend"
+   ],
+   "claim": "emergency access and readable instructions"
+  },
+  {
+   "cite": "BSRS p.247",
+   "contains": [
+    "sum of your dependencies",
+    "geographically distributed racks"
+   ],
+   "claim": "sum of dependencies and racks"
+  },
+  {
+   "cite": "BSRS p.247-248",
+   "contains": [
+    "time bomb",
+    "single sign-on"
+   ],
+   "claim": "short-lived credentials become a time bomb"
+  },
+  {
+   "cite": "BSRS p.248",
+   "contains": [
+    "offline",
+    "alternate authentication and authorization"
+   ],
+   "claim": "Google fallback"
+  },
+  {
+   "cite": "BSRS p.248-249",
+   "contains": [
+    "phone bridges",
+    "IRC"
+   ],
+   "claim": "emergency communication"
+  },
+  {
+   "cite": "BSRS p.249",
+   "contains": [
+    "minimize the distinction between normal and emergency",
+    "minimum period between required exercises"
+   ],
+   "claim": "responders' habits"
+  },
+  {
+   "cite": "BSRS p.250",
+   "contains": [
+    "bare metal",
+    "supply chain"
+   ],
+   "claim": "unexpected benefits"
+  },
+  {
+   "cite": "BSRS p.219-251",
+   "absent": [
+    "RPO",
+    "RTO",
+    "3-2-1",
+    "immutable backup",
+    "WORM"
+   ],
+   "claim": "RPO/RTO and immutable backups do not appear"
+  },
+  {
+   "cite": "BSRS p.219-251",
+   "absent": [
+    "SLSA",
+    "Sigstore",
+    "SBOM",
+    "in-toto"
+   ],
+   "claim": "modern supply chain does not appear in ch.9"
+  },
+  {
+   "cite": "BSRS p.219-251",
+   "absent": [
+    "Kubernetes",
+    "Ansible",
+    "Puppet",
+    "Chef"
+   ],
+   "claim": "orchestrators/config managers not cited"
+  },
+  {
+   "cite": "BSRS p.219-251",
+   "absent": [
+    "TUF",
+    "Uptane",
+    "secure boot"
+   ],
+   "claim": "TUF/Uptane do not appear"
+  },
+  {
+   "cite": "BSRS p.253",
+   "contains": [
+    "denial-of-service",
+    "backhoe",
+    "demand for a particular service to exceed"
+   ],
+   "claim": "DoS: demand exceeds capacity"
+  },
+  {
+   "cite": "BSRS p.253-254",
+   "contains": [
+    "DoS extortion",
+    "demonstration attack"
+   ],
+   "claim": "DoS extortion"
+  },
+  {
+   "cite": "BSRS p.254",
+   "contains": [
+    "botnet",
+    "amplification",
+    "DNS query"
+   ],
+   "claim": "dependencies and DDoS"
+  },
+  {
+   "cite": "BSRS p.255",
+   "contains": [
+    "amplification attack",
+    "spoof",
+    "well-known source port"
+   ],
+   "claim": "amplification and well-known port"
+  },
+  {
+   "cite": "BSRS p.255-256",
+   "contains": [
+    "recency bias",
+    "weakest link"
+   ],
+   "claim": "recency bias and weakest link"
+  },
+  {
+   "cite": "BSRS p.256",
+   "contains": [
+    "We use the term DDoS",
+    "filtering within the infrastructure"
+   ],
+   "claim": "DoS vs DDoS"
+  },
+  {
+   "cite": "BSRS p.256",
+   "contains": [
+    "layered defenses",
+    "Edge routers",
+    "Network load",
+    "Application load balancers"
+   ],
+   "claim": "layered defenses on shared infrastructure"
+  },
+  {
+   "cite": "BSRS p.257",
+   "contains": [
+    "state exhaustion",
+    "router ACLs",
+    "Project Shield"
+   ],
+   "claim": "stateful firewalls and Project Shield"
+  },
+  {
+   "cite": "BSRS p.257-258",
+   "contains": [
+    "magnifying glass",
+    "anycast"
+   ],
+   "claim": "magnifying glass and anycast"
+  },
+  {
+   "cite": "BSRS p.258",
+   "contains": [
+    "Cache-Control",
+    "spriting",
+    "10 million requests"
+   ],
+   "claim": "defensible services"
+  },
+  {
+   "cite": "BSRS p.259",
+   "contains": [
+    "mean time to detection",
+    "actionable",
+    "syncookies"
+   ],
+   "claim": "actionable alerts"
+  },
+  {
+   "cite": "BSRS p.259",
+   "contains": [
+    "network ACLs to throttle",
+    "quality-of-service"
+   ],
+   "claim": "network ACLs and QoS"
+  },
+  {
+   "cite": "BSRS p.260",
+   "contains": [
+    "Blogger serves in read-only mode",
+    "Detection",
+    "Response"
+   ],
+   "claim": "degraded modes and system components"
+  },
+  {
+   "cite": "BSRS p.260-261",
+   "contains": [
+    "pseudo-anonymous identifier",
+    "exemption cookies"
+   ],
+   "claim": "CAPTCHA exemption cookie"
+  },
+  {
+   "cite": "BSRS p.261",
+   "contains": [
+    "fail static",
+    "1 second"
+   ],
+   "claim": "fail static and 1-second canary"
+  },
+  {
+   "cite": "BSRS p.261-262",
+   "contains": [
+    "I AM BOT",
+    "A/B testing"
+   ],
+   "claim": "User-Agent I AM BOT NET"
+  },
+  {
+   "cite": "BSRS p.262",
+   "contains": [
+    "upstream filtering",
+    "scrape"
+   ],
+   "claim": "upstream filtering and scraping"
+  },
+  {
+   "cite": "BSRS p.263",
+   "contains": [
+    "game show",
+    "German words"
+   ],
+   "claim": "Bot or Not game show"
+  },
+  {
+   "cite": "BSRS p.264",
+   "contains": [
+    "exponential backoff",
+    "jitter",
+    "30x"
+   ],
+   "claim": "exponential backoff with jitter"
+  },
+  {
+   "cite": "BSRS p.264-265",
+   "contains": [
+    "web application firewall",
+    "absorbing an attack is rarely"
+   ],
+   "claim": "WAF and the cost of absorbing"
+  },
+  {
+   "cite": "BSRS p.253-265",
+   "absent": [
+    "Cloudflare",
+    "Akamai",
+    "Kubernetes",
+    "token bucket"
+   ],
+   "claim": "specific products and algorithms not cited"
+  },
+  {
+   "cite": "BSRS p.253-265",
+   "absent": [
+    "Rapid Reset",
+    "HTTP/2",
+    "QUIC",
+    "BGP flowspec"
+   ],
+   "claim": "later attacks and techniques do not appear"
+  },
+  {
+   "cite": "BSRS p.253-265",
+   "absent": [
+    "Mirai",
+    "Memcrashed",
+    "GitHub"
+   ],
+   "claim": "named DDoS incidents do not appear"
+  },
+  {
+   "cite": "BSRS p.253-265",
+   "absent": [
+    "scrubbing center",
+    "RTBH",
+    "blackhole"
+   ],
+   "claim": "scrubbing center and blackholing not described"
+  },
+  {
+   "cite": "BSRS p.269-270",
+   "contains": [
+    "WebTrust",
+    "CA/Browser Forum",
+    "one quarter"
+   ],
+   "claim": "public CA audits"
+  },
+  {
+   "cite": "BSRS p.270",
+   "contains": [
+    "never need to build a publicly trusted CA",
+    "reduced complexity"
+   ],
+   "claim": "most do not need to build a CA"
+  },
+  {
+   "cite": "BSRS p.270-271",
+   "contains": [
+    "Reliance on third parties",
+    "Need for automation",
+    "DigiNotar"
+   ],
+   "claim": "reasons to build"
+  },
+  {
+   "cite": "BSRS p.271-272",
+   "contains": [
+    "Transparency and validation",
+    "Integration capabilities",
+    "Flexibility",
+    "Certificate Transparency"
+   ],
+   "claim": "reasons to build your own"
+  },
+  {
+   "cite": "BSRS p.272",
+   "contains": [
+    "three-layer tiered architecture",
+    "dual trust zone"
+   ],
+   "claim": "three-tier architecture and two zones"
+  },
+  {
+   "cite": "BSRS p.273",
+   "contains": [
+    "three distinct design iterations",
+    "nearly a decade"
+   ],
+   "claim": "three design iterations"
+  },
+  {
+   "cite": "BSRS p.273",
+   "contains": [
+    "memory-safe",
+    "Go and C++",
+    "CSR"
+   ],
+   "claim": "Go and C++, CSR in Go"
+  },
+  {
+   "cite": "BSRS p.273-274",
+   "contains": [
+    "W^X",
+    "Scudo",
+    "SafeStack"
+   ],
+   "claim": "C++ mitigations"
+  },
+  {
+   "cite": "BSRS p.274",
+   "contains": [
+    "limited functionality",
+    "esoteric attributes",
+    "centralize ACL checks"
+   ],
+   "claim": "limited functionality and centralized ACL"
+  },
+  {
+   "cite": "BSRS p.274-275",
+   "contains": [
+    "nsjail",
+    "hardware security module"
+   ],
+   "claim": "HSM and nsjail"
+  },
+  {
+   "cite": "BSRS p.275",
+   "contains": [
+    "negative conditions",
+    "egregious errors"
+   ],
+   "claim": "negative tests"
+  },
+  {
+   "cite": "BSRS p.276",
+   "contains": [
+    "Tricorder",
+    "AddressSanitizer",
+    "fixit"
+   ],
+   "claim": "Tricorder, sanitizers and fixits"
+  },
+  {
+   "cite": "BSRS p.276",
+   "contains": [
+    "offline",
+    "two-party authorization",
+    "intermediary keys"
+   ],
+   "claim": "offline root key"
+  },
+  {
+   "cite": "BSRS p.277",
+   "contains": [
+    "ZLint",
+    "Certificate Transparency",
+    "independent logging systems"
+   ],
+   "claim": "linters and CT"
+  },
+  {
+   "cite": "BSRS p.269-277",
+   "absent": [
+    "ACME",
+    "Let's Encrypt",
+    "cert-manager",
+    "HashiCorp"
+   ],
+   "claim": "ACME and cert-manager do not appear in ch.11"
+  },
+  {
+   "cite": "BSRS p.269-277",
+   "absent": [
+    "Rust",
+    "SPIFFE",
+    "SLSA",
+    "Sigstore"
+   ],
+   "claim": "Rust and modern supply chain do not appear"
+  },
+  {
+   "cite": "BSRS p.269-277",
+   "absent": [
+    "OCSP",
+    "CRL",
+    "OCSP stapling"
+   ],
+   "claim": "OCSP/CRL revocation not discussed in ch.11"
+  },
+  {
+   "cite": "BSRS p.269-277",
+   "absent": [
+    "Kubernetes",
+    "Docker",
+    "Terraform"
+   ],
+   "claim": "infrastructure tools not cited in ch.11"
+  },
+  {
+   "cite": "BSRS p.279",
+   "contains": [
+    "hardened frameworks and libraries",
+    "retrofitted"
+   ],
+   "claim": "hardened frameworks; cannot be retrofitted"
+  },
+  {
+   "cite": "BSRS p.280",
+   "contains": [
+    "cross-site scripting",
+    "hundreds of HTML templates"
+   ],
+   "claim": "reviewer bias"
+  },
+  {
+   "cite": "BSRS p.280-281",
+   "contains": [
+    "global invariants",
+    "transitive callers"
+   ],
+   "claim": "reviewers do not keep global context"
+  },
+  {
+   "cite": "BSRS p.281",
+   "contains": [
+    "TrustedSqlString",
+    "OWASP",
+    "SANS"
+   ],
+   "claim": "SQLI at the top and TrustedSqlString"
+  },
+  {
+   "cite": "BSRS p.281-282",
+   "contains": [
+    "patchwork of different bugs",
+    "propagating"
+   ],
+   "claim": "benefits of frameworks"
+  },
+  {
+   "cite": "BSRS p.282",
+   "contains": [
+    "cryptographic framework",
+    "Tink"
+   ],
+   "claim": "do not create your own cryptographic framework"
+  },
+  {
+   "cite": "BSRS p.283",
+   "contains": [
+    "interceptors",
+    "reverse order"
+   ],
+   "claim": "before/after interceptors"
+  },
+  {
+   "cite": "BSRS p.285",
+   "contains": [
+    "hard dependency",
+    "exponential backoff",
+    "deadline"
+   ],
+   "claim": "dependencies, deadline and backoff in the framework"
+  },
+  {
+   "cite": "BSRS p.288",
+   "contains": [
+    "Insufficient logging",
+    "XML external entities"
+   ],
+   "claim": "OWASP table"
+  },
+  {
+   "cite": "BSRS p.288",
+   "contains": [
+    "Rails",
+    "Protocol Buffers",
+    "Use distinct types"
+   ],
+   "claim": "hardening by OWASP type"
+  },
+  {
+   "cite": "BSRS p.288-289",
+   "contains": [
+    "reset_token",
+    "prepared statements"
+   ],
+   "claim": "SQLi example"
+  },
+  {
+   "cite": "BSRS p.289",
+   "contains": [
+    "AppendLiteral",
+    "@CompileTimeConstant",
+    "template constructor"
+   ],
+   "claim": "TrustedSqlString by language"
+  },
+  {
+   "cite": "BSRS p.290",
+   "contains": [
+    "unsafequery",
+    "one (rotating) engineer"
+   ],
+   "claim": "reviewed bypass and review load"
+  },
+  {
+   "cite": "BSRS p.290",
+   "contains": [
+    "SafeUrl",
+    "javascript: scheme"
+   ],
+   "claim": "SafeHtml and SafeUrl"
+  },
+  {
+   "cite": "BSRS p.291",
+   "contains": [
+    "TrustedResourceUrl",
+    "Closure Templates",
+    "sanitizer"
+   ],
+   "claim": "templates with contextual escaping"
+  },
+  {
+   "cite": "BSRS p.292",
+   "contains": [
+    "Error Prone",
+    "Tsetse",
+    "compiler errors"
+   ],
+   "claim": "compile-time checks"
+  },
+  {
+   "cite": "BSRS p.292-293",
+   "contains": [
+    "false-positive",
+    "GDB"
+   ],
+   "claim": "false positives vs simplicity"
+  },
+  {
+   "cite": "BSRS p.293",
+   "contains": [
+    "simple, small library",
+    "expert-reviewed access"
+   ],
+   "claim": "simple libraries and reviewed exceptions"
+  },
+  {
+   "cite": "BSRS p.294",
+   "contains": [
+    "two orders of magnitude",
+    "legacy code"
+   ],
+   "claim": "XSS reduced by two orders of magnitude"
+  },
+  {
+   "cite": "BSRS p.294-295",
+   "contains": [
+    "@RestrictedApi",
+    "Bazel visibility"
+   ],
+   "claim": "incremental rollout"
+  },
+  {
+   "cite": "BSRS p.295",
+   "contains": [
+    "Legacy conversions",
+    "single function"
+   ],
+   "claim": "legacy conversions"
+  },
+  {
+   "cite": "BSRS p.296",
+   "contains": [
+    "multilevel nesting",
+    "swapped"
+   ],
+   "claim": "nesting and swapped errors"
+  },
+  {
+   "cite": "BSRS p.296-297",
+   "contains": [
+    "YAGNI",
+    "Sleep"
+   ],
+   "claim": "YAGNI smells"
+  },
+  {
+   "cite": "BSRS p.297-298",
+   "contains": [
+    "technical debt",
+    "cyclomatic complexity",
+    "fixit weeks"
+   ],
+   "claim": "technical debt"
+  },
+  {
+   "cite": "BSRS p.298",
+   "contains": [
+    "never mix refactoring and functional",
+    "100% test coverage"
+   ],
+   "claim": "golden rule of refactoring"
+  },
+  {
+   "cite": "BSRS p.299",
+   "contains": [
+    "70%",
+    "85%",
+    "memory safe"
+   ],
+   "claim": "memory safety"
+  },
+  {
+   "cite": "BSRS p.300",
+   "contains": [
+    "Pytype",
+    "TypeScript",
+    "[10, 8, 9]"
+   ],
+   "claim": "typing and extensions"
+  },
+  {
+   "cite": "BSRS p.301-302",
+   "contains": [
+    "AddUserToGroup",
+    "explicit"
+   ],
+   "claim": "strong types and explicit"
+  },
+  {
+   "cite": "BSRS p.303",
+   "contains": [
+    "Gimli Glider",
+    "Mars Climate Orbiter"
+   ],
+   "claim": "unit confusion"
+  },
+  {
+   "cite": "BSRS p.303-304",
+   "contains": [
+    "Valgrind",
+    "AddressSanitizer",
+    "Race Detector"
+   ],
+   "claim": "sanitizers"
+  },
+  {
+   "cite": "BSRS p.279-305",
+   "absent": [
+    "Rust",
+    "SolarWinds",
+    "Log4j",
+    "Dependabot"
+   ],
+   "claim": "Rust and modern supply chain do not appear"
+  },
+  {
+   "cite": "BSRS p.279-305",
+   "absent": [
+    "Semgrep",
+    "CodeQL",
+    "Snyk",
+    "SonarQube"
+   ],
+   "claim": "commercial SAST tools not cited"
+  },
+  {
+   "cite": "BSRS p.279-305",
+   "absent": [
+    "WebAssembly",
+    "Kotlin",
+    "Swift"
+   ],
+   "claim": "modern languages not cited"
+  },
+  {
+   "cite": "BSRS p.279-305",
+   "absent": [
+    "CSP",
+    "Content Security Policy",
+    "Trusted Types"
+   ],
+   "claim": "CSP and Trusted Types do not appear in ch.12"
+  },
+  {
+   "cite": "BSRS p.307",
+   "contains": [
+    "Query of Death",
+    "buffer overflows"
+   ],
+   "claim": "unexpected inputs and errors"
+  },
+  {
+   "cite": "BSRS p.308",
+   "contains": [
+    "xUnit",
+    "self-contained",
+    "GoogleTest"
+   ],
+   "claim": "unit tests and xUnit"
+  },
+  {
+   "cite": "BSRS p.309",
+   "contains": [
+    "hermetic",
+    "negative amounts of bytes"
+   ],
+   "claim": "hermetic and security tests"
+  },
+  {
+   "cite": "BSRS p.309",
+   "contains": [
+    "if (false)",
+    "mutation testing"
+   ],
+   "claim": "mutation testing"
+  },
+  {
+   "cite": "BSRS p.310-311",
+   "contains": [
+    "test-driven development",
+    "flakiness"
+   ],
+   "claim": "TDD and flakiness"
+  },
+  {
+   "cite": "BSRS p.310-311",
+   "contains": [
+    "mocks, stubs, or fakes",
+    "overabstraction"
+   ],
+   "claim": "mocks, stubs, fakes and overabstraction"
+  },
+  {
+   "cite": "BSRS p.311-312",
+   "contains": [
+    "torture test",
+    "Wycheproof"
+   ],
+   "claim": "correctness validation"
+  },
+  {
+   "cite": "BSRS p.312-313",
+   "contains": [
+    "Integration testing",
+    "mirror actual databases"
+   ],
+   "claim": "integration and not mirroring real databases"
+  },
+  {
+   "cite": "BSRS p.313",
+   "contains": [
+    "QA endpoint",
+    "not a substitute"
+   ],
+   "claim": "QA endpoint and tests do not replace each other"
+  },
+  {
+   "cite": "BSRS p.314",
+   "contains": [
+    "Google Sanitizers",
+    "shadow memory"
+   ],
+   "claim": "Google Sanitizers and shadow memory"
+  },
+  {
+   "cite": "BSRS p.314-315",
+   "contains": [
+    "red zones",
+    "use-after-free"
+   ],
+   "claim": "red zones and use-after-free"
+  },
+  {
+   "cite": "BSRS p.316",
+   "contains": [
+    "orders of magnitude slower",
+    "nightly"
+   ],
+   "claim": "sanitizer performance cost"
+  },
+  {
+   "cite": "BSRS p.316",
+   "contains": [
+    "fuzz engine",
+    "fuzz driver",
+    "fuzz target"
+   ],
+   "claim": "fuzzing terms"
+  },
+  {
+   "cite": "BSRS p.317",
+   "contains": [
+    "Simian Army",
+    "Spinnaker"
+   ],
+   "claim": "Simian Army"
+  },
+  {
+   "cite": "BSRS p.317",
+   "contains": [
+    "dumb fuzzing",
+    "percentage of code covered"
+   ],
+   "claim": "dumb fuzzing and coverage"
+  },
+  {
+   "cite": "BSRS p.318",
+   "contains": [
+    "seed corpus",
+    "Peach Fuzzer",
+    "OSS-Fuzz"
+   ],
+   "claim": "seed corpus and dictionaries"
+  },
+  {
+   "cite": "BSRS p.319",
+   "contains": [
+    "known safe",
+    "signed integer overflow",
+    "Heartbleed"
+   ],
+   "claim": "known safe and Heartbleed by fuzzing"
+  },
+  {
+   "cite": "BSRS p.320",
+   "contains": [
+    "handwritten assembly",
+    "heap-buffer-overflow"
+   ],
+   "claim": "fuzzing limits and ASan report"
+  },
+  {
+   "cite": "BSRS p.320-321",
+   "contains": [
+    "QEMU",
+    "libFuzzer",
+    "Honggfuzz"
+   ],
+   "claim": "QEMU and engines"
+  },
+  {
+   "cite": "BSRS p.321-322",
+   "contains": [
+    "LLVMFuzzerTestOneInput",
+    "Nondeterministic",
+    "CRC32"
+   ],
+   "claim": "effective drivers"
+  },
+  {
+   "cite": "BSRS p.322",
+   "contains": [
+    "Knusperli",
+    "FuzzedDataProvider"
+   ],
+   "claim": "Knusperli example"
+  },
+  {
+   "cite": "BSRS p.325-326",
+   "contains": [
+    "ClusterFuzz",
+    "crash deduplication",
+    "five months"
+   ],
+   "claim": "ClusterFuzz and OSS-Fuzz"
+  },
+  {
+   "cite": "BSRS p.327",
+   "contains": [
+    "undecidable problem",
+    "false positives"
+   ],
+   "claim": "limits of static analysis"
+  },
+  {
+   "cite": "BSRS p.327-328",
+   "contains": [
+    "linters",
+    "AST",
+    "Error Prone",
+    "Clang-Tidy"
+   ],
+   "claim": "linters and AST"
+  },
+  {
+   "cite": "BSRS p.333",
+   "contains": [
+    "Tricorder",
+    "Shipshape",
+    "50,000"
+   ],
+   "claim": "Tricorder"
+  },
+  {
+   "cite": "BSRS p.334-335",
+   "contains": [
+    "Ghidra",
+    "concolic",
+    "KLEE"
+   ],
+   "claim": "Ghidra and concolic testing"
+  },
+  {
+   "cite": "BSRS p.335-336",
+   "contains": [
+    "abstract interpretation",
+    "interval",
+    "control-flow graph"
+   ],
+   "claim": "abstract interpretation"
+  },
+  {
+   "cite": "BSRS p.336",
+   "contains": [
+    "Frama-C",
+    "App Security Improvement"
+   ],
+   "claim": "Frama-C and ASI"
+  },
+  {
+   "cite": "BSRS p.337",
+   "contains": [
+    "safety properties",
+    "liveness properties"
+   ],
+   "claim": "formal methods"
+  },
+  {
+   "cite": "BSRS p.307-338",
+   "absent": [
+    "Semgrep",
+    "CodeQL",
+    "Snyk",
+    "SonarQube",
+    "Dependabot"
+   ],
+   "claim": "modern SAST not cited"
+  },
+  {
+   "cite": "BSRS p.307-338",
+   "absent": [
+    "property-based",
+    "Hypothesis",
+    "QuickCheck",
+    "Pact"
+   ],
+   "claim": "property-based and contract testing do not appear"
+  },
+  {
+   "cite": "BSRS p.307-338",
+   "absent": [
+    "Burp",
+    "ZAP",
+    "DAST",
+    "penetration"
+   ],
+   "claim": "DAST/pentest not covered in ch.13"
+  },
+  {
+   "cite": "BSRS p.307-338",
+   "absent": [
+    "AFL++",
+    "Jazzer",
+    "Atheris",
+    "syzkaller"
+   ],
+   "claim": "later fuzzers not cited"
+  },
+  {
+   "cite": "BSRS p.339",
+   "contains": [
+    "Is the code running in your production environment",
+    "software supply chain"
+   ],
+   "claim": "central question of ch.14"
+  },
+  {
+   "cite": "BSRS p.339-340",
+   "contains": [
+    "reject deployments that don",
+    "offer proof that it has executed properly"
+   ],
+   "claim": "reject deploys outside the supply chain"
+  },
+  {
+   "cite": "BSRS p.340",
+   "contains": [
+    "A build is any transformation",
+    "a test is a special case of a build"
+   ],
+   "claim": "build and test definitions"
+  },
+  {
+   "cite": "BSRS p.341",
+   "contains": [
+    "A deployment is any assignment",
+    "Updating configuration"
+   ],
+   "claim": "deployment definition"
+  },
+  {
+   "cite": "BSRS p.342",
+   "contains": [
+    "Benign insiders",
+    "Malicious insiders",
+    "External attackers"
+   ],
+   "claim": "three adversaries"
+  },
+  {
+   "cite": "BSRS p.342-343",
+   "contains": [
+    "locally modified version",
+    "steals the integrity key",
+    "backdoored compiler"
+   ],
+   "claim": "supply chain threats"
+  },
+  {
+   "cite": "BSRS p.343",
+   "contains": [
+    "multi-party authorization",
+    "must be mandatory"
+   ],
+   "claim": "code review as MPA and mandatory"
+  },
+  {
+   "cite": "BSRS p.344",
+   "contains": [
+    "rubber-stamping",
+    "Gerrit",
+    "Phabricator"
+   ],
+   "claim": "rubber-stamping and review tools"
+  },
+  {
+   "cite": "BSRS p.344-345",
+   "contains": [
+    "Move all build, test, and deployment steps",
+    "Lock down the automated system"
+   ],
+   "claim": "automate safely"
+  },
+  {
+   "cite": "BSRS p.345",
+   "contains": [
+    "verify what is being deployed",
+    "Binary Authorization"
+   ],
+   "claim": "verify artifacts"
+  },
+  {
+   "cite": "BSRS p.346",
+   "contains": [
+    "Treat configuration as code",
+    "kubectl"
+   ],
+   "claim": "configuration as code"
+  },
+  {
+   "cite": "BSRS p.347",
+   "contains": [
+    "Never check secrets into version control",
+    "Cloud KMS"
+   ],
+   "claim": "do not check in secrets"
+  },
+  {
+   "cite": "BSRS p.348",
+   "contains": [
+    "collusion",
+    "Table 14-1",
+    "integrity key in a key management system"
+   ],
+   "claim": "table 14-1"
+  },
+  {
+   "cite": "BSRS p.349-350",
+   "contains": [
+    "Trusting Third-Party Code",
+    "monitor your dependencies"
+   ],
+   "claim": "third-party code"
+  },
+  {
+   "cite": "BSRS p.350",
+   "contains": [
+    "Binary Provenance",
+    "inputs, the transformation, and the entity"
+   ],
+   "claim": "definition of binary provenance"
+  },
+  {
+   "cite": "BSRS p.351",
+   "contains": [
+    "Authenticity (required)",
+    "Outputs (required)",
+    "Dependencies"
+   ],
+   "claim": "provenance fields"
+  },
+  {
+   "cite": "BSRS p.352",
+   "contains": [
+    "rollback attacks",
+    "deb-buildinfo",
+    "JSON Web Tokens"
+   ],
+   "claim": "versioning and format examples"
+  },
+  {
+   "cite": "BSRS p.352-353",
+   "contains": [
+    "Authenticode",
+    "explicitly list",
+    "signers you accept"
+   ],
+   "claim": "code signing"
+  },
+  {
+   "cite": "BSRS p.353",
+   "contains": [
+    "provenance-based deployment policies",
+    "single signing key per build step"
+   ],
+   "claim": "provenance-based policies"
+  },
+  {
+   "cite": "BSRS p.354",
+   "contains": [
+    "in-toto",
+    "Binary was explicitly allowed"
+   ],
+   "claim": "rules and in-toto"
+  },
+  {
+   "cite": "BSRS p.354-355",
+   "contains": [
+    "Verify that the provenance is authentic",
+    "applies to the artifact",
+    "RFC 6920"
+   ],
+   "claim": "three steps of the policy decision"
+  },
+  {
+   "cite": "BSRS p.356",
+   "contains": [
+    "Trusted build service",
+    "Rebuilding service",
+    "A rebuild you perform yourself"
+   ],
+   "claim": "three verifiable build architectures"
+  },
+  {
+   "cite": "BSRS p.357",
+   "contains": [
+    "Hermetic",
+    "package-lock.json",
+    "cherry-picking"
+   ],
+   "claim": "hermetic builds"
+  },
+  {
+   "cite": "BSRS p.358",
+   "contains": [
+    "bit-by-bit identical",
+    "buildinfo"
+   ],
+   "claim": "reproducible builds"
+  },
+  {
+   "cite": "BSRS p.360",
+   "contains": [
+    "Remote Code Execution",
+    "privilege separation",
+    "man-in-"
+   ],
+   "claim": "untrusted and unauthenticated inputs"
+  },
+  {
+   "cite": "BSRS p.361",
+   "contains": [
+    "choke point",
+    "master node"
+   ],
+   "claim": "deployment choke points"
+  },
+  {
+   "cite": "BSRS p.362",
+   "contains": [
+    "Admission Controller",
+    "proxy"
+   ],
+   "claim": "Admission Controller"
+  },
+  {
+   "cite": "BSRS p.363",
+   "contains": [
+    "fail open",
+    "dry run mode",
+    "breakglass"
+   ],
+   "claim": "post-deploy verification"
+  },
+  {
+   "cite": "BSRS p.364",
+   "contains": [
+    "actionable",
+    "one particular aspect"
+   ],
+   "claim": "actionable messages and one step at a time"
+  },
+  {
+   "cite": "BSRS p.364-365",
+   "contains": [
+    "497,129",
+    "100 ms"
+   ],
+   "claim": "ambiguous provenance"
+  },
+  {
+   "cite": "BSRS p.365",
+   "contains": [
+    "single policy applies",
+    "meta-policy"
+   ],
+   "claim": "unambiguous policies"
+  },
+  {
+   "cite": "BSRS p.365-366",
+   "contains": [
+    "breakglass",
+    "audited quickly"
+   ],
+   "claim": "rare and audited deploy breakglass"
+  },
+  {
+   "cite": "BSRS p.366",
+   "contains": [
+    "Table 14-2",
+    "security vulnerability scan within the last N days"
+   ],
+   "claim": "table 14-2"
+  },
+  {
+   "cite": "BSRS p.339-367",
+   "absent": [
+    "SLSA",
+    "Sigstore",
+    "cosign",
+    "SBOM",
+    "CycloneDX",
+    "SPDX"
+   ],
+   "claim": "SLSA/Sigstore/SBOM do not appear in ch.14"
+  },
+  {
+   "cite": "BSRS p.339-367",
+   "absent": [
+    "SolarWinds",
+    "Codecov",
+    "Log4j",
+    "typosquatting",
+    "dependency confusion"
+   ],
+   "claim": "later dependency incidents and attacks do not appear"
+  },
+  {
+   "cite": "BSRS p.339-367",
+   "absent": [
+    "GitHub Actions",
+    "GitOps",
+    "Argo",
+    "Tekton"
+   ],
+   "claim": "GitHub Actions and GitOps not cited"
+  },
+  {
+   "cite": "BSRS p.339-367",
+   "absent": [
+    "Dependabot",
+    "Renovate",
+    "pinning",
+    "Notary"
+   ],
+   "claim": "automatic pinning and Notary do not appear"
+  },
+  {
+   "cite": "BSRS p.339-367",
+   "absent": [
+    "OIDC",
+    "workload identity federation",
+    "attestation"
+   ],
+   "claim": "CI OIDC and modern attestation do not appear"
+  },
+  {
+   "cite": "BSRS p.369",
+   "contains": [
+    "adequate logs",
+    "access control"
+   ],
+   "claim": "logs and access control in the investigation"
+  },
+  {
+   "cite": "BSRS p.370-371",
+   "contains": [
+    "dentry",
+    "slabtop",
+    "Colossus"
+   ],
+   "claim": "temporary files case"
+  },
+  {
+   "cite": "BSRS p.372",
+   "contains": [
+    "Know how the system is supposed to work",
+    "Be systematic"
+   ],
+   "claim": "two requirements of debugging"
+  },
+  {
+   "cite": "BSRS p.373",
+   "contains": [
+    "horses",
+    "zebras",
+    "400,000 RAM chips"
+   ],
+   "claim": "horses and zebras"
+  },
+  {
+   "cite": "BSRS p.374",
+   "contains": [
+    "64-bit cache key",
+    "superlinear"
+   ],
+   "claim": "other zebras"
+  },
+  {
+   "cite": "BSRS p.374-375",
+   "contains": [
+    "Checksums",
+    "cryptographic hashes protect against human attackers"
+   ],
+   "claim": "CRC checksums vs hash"
+  },
+  {
+   "cite": "BSRS p.375",
+   "contains": [
+    "between 5 and 10 hours",
+    "pager fatigue"
+   ],
+   "claim": "debugging time and fatigue"
+  },
+  {
+   "cite": "BSRS p.375-376",
+   "contains": [
+    "Record your observations",
+    "court of law"
+   ],
+   "claim": "record observations; evidentiary value"
+  },
+  {
+   "cite": "BSRS p.376",
+   "contains": [
+    "Know what",
+    "cegzaukxwefark.local"
+   ],
+   "claim": "Chrome resolves random domains"
+  },
+  {
+   "cite": "BSRS p.377",
+   "contains": [
+    "normalizing deviance",
+    "heap fragmentation",
+    "Red Teams"
+   ],
+   "claim": "normalization of deviance"
+  },
+  {
+   "cite": "BSRS p.378",
+   "contains": [
+    "Isolate the problem",
+    "thread stacks"
+   ],
+   "claim": "isolate the problem"
+  },
+  {
+   "cite": "BSRS p.378-379",
+   "contains": [
+    "correlation does not",
+    "common element"
+   ],
+   "claim": "correlation and causality"
+  },
+  {
+   "cite": "BSRS p.379",
+   "contains": [
+    "Observability is the property",
+    "Dapper"
+   ],
+   "claim": "observability and Dapper"
+  },
+  {
+   "cite": "BSRS p.380",
+   "contains": [
+    "Reread the docs",
+    "DiRT"
+   ],
+   "claim": "re-read docs and DiRT"
+  },
+  {
+   "cite": "BSRS p.381",
+   "contains": [
+    "structured logging",
+    "mutex"
+   ],
+   "claim": "improve observability"
+  },
+  {
+   "cite": "BSRS p.382-383",
+   "contains": [
+    "-Wconversion",
+    "Delete it!"
+   ],
+   "claim": "clean up code and delete"
+  },
+  {
+   "cite": "BSRS p.383-384",
+   "contains": [
+    "exa1",
+    "fail closed"
+   ],
+   "claim": "stop when something goes wrong and fail closed"
+  },
+  {
+   "cite": "BSRS p.384-385",
+   "contains": [
+    "driver",
+    "note taker",
+    "Wheel of Misfortune"
+   ],
+   "claim": "collaborative debugging"
+  },
+  {
+   "cite": "BSRS p.386",
+   "contains": [
+    "security investigations",
+    "alerted to the investigation"
+   ],
+   "claim": "security investigation differs from debugging"
+  },
+  {
+   "cite": "BSRS p.386-387",
+   "contains": [
+    "rick_roll.gif",
+    "missing, truncated, or corrupted"
+   ],
+   "claim": "signs of compromise"
+  },
+  {
+   "cite": "BSRS p.387",
+   "contains": [
+    "structured, timestamped records",
+    "core dumps"
+   ],
+   "claim": "definition of logs"
+  },
+  {
+   "cite": "BSRS p.388",
+   "contains": [
+    "immutable",
+    "line printer",
+    "centralized"
+   ],
+   "claim": "immutable logging"
+  },
+  {
+   "cite": "BSRS p.389",
+   "contains": [
+    "200 days",
+    "pseudonymization",
+    "asymmetric encryption"
+   ],
+   "claim": "privacy, retention, encryption"
+  },
+  {
+   "cite": "BSRS p.390-391",
+   "contains": [
+    "auditd",
+    "OSQuery",
+    "antivirus"
+   ],
+   "claim": "OS logs and host agents"
+  },
+  {
+   "cite": "BSRS p.392",
+   "contains": [
+    "CASB",
+    "Device Inventory Service"
+   ],
+   "claim": "CASB and inventory"
+  },
+  {
+   "cite": "BSRS p.393",
+   "contains": [
+    "sinkholes",
+    "100 TB"
+   ],
+   "claim": "DNS sinkholes and budget"
+  },
+  {
+   "cite": "BSRS p.394",
+   "contains": [
+    "degrade gracefully",
+    "warm",
+    "cold"
+   ],
+   "claim": "graceful degradation of logging"
+  },
+  {
+   "cite": "BSRS p.395",
+   "contains": [
+    "emergency-only credentials",
+    "impersonate"
+   ],
+   "claim": "emergency credentials and impersonation"
+  },
+  {
+   "cite": "BSRS p.395-396",
+   "contains": [
+    "metadata as nonsensitive",
+    "packet dumps"
+   ],
+   "claim": "sensitive metadata"
+  },
+  {
+   "cite": "BSRS p.396",
+   "contains": [
+    "chance favors the prepared"
+   ],
+   "claim": "conclusion"
+  },
+  {
+   "cite": "BSRS p.369-398",
+   "absent": [
+    "OpenTelemetry",
+    "Splunk",
+    "Datadog",
+    "Prometheus",
+    "Grafana"
+   ],
+   "claim": "modern observability stack does not appear"
+  },
+  {
+   "cite": "BSRS p.369-398",
+   "absent": [
+    "SIEM",
+    "SOAR",
+    "EDR",
+    "XDR",
+    "chain of custody"
+   ],
+   "claim": "SIEM/SOAR/EDR/XDR do not appear in ch.15"
+  },
+  {
+   "cite": "BSRS p.369-398",
+   "absent": [
+    "Elastic Stack",
+    "Kibana",
+    "Loki",
+    "Jaeger"
+   ],
+   "claim": "other tools not cited (Elasticsearch appears)"
+  },
+  {
+   "cite": "BSRS p.369-398",
+   "absent": [
+    "SLI",
+    "SLO",
+    "error budget",
+    "burn rate"
+   ],
+   "claim": "SLO concepts not covered in ch.15"
+  },
+  {
+   "cite": "BSRS p.399",
+   "contains": [
+    "disaster planning",
+    "toward the end of the development cycle"
+   ],
+   "claim": "when to plan for disasters"
+  },
+  {
+   "cite": "BSRS p.400",
+   "contains": [
+    "Natural disasters",
+    "Urgent security vulnerabilities",
+    "interchangeably"
+   ],
+   "claim": "forms of disaster"
+  },
+  {
+   "cite": "BSRS p.400-401",
+   "contains": [
+    "Incident response isn",
+    "muscle memory"
+   ],
+   "claim": "practice and muscle memory"
+  },
+  {
+   "cite": "BSRS p.401",
+   "contains": [
+    "immediate response",
+    "long-term recovery",
+    "exit criteria"
+   ],
+   "claim": "phases and exit criteria"
+  },
+  {
+   "cite": "BSRS p.402",
+   "contains": [
+    "mission-essential",
+    "mission-important",
+    "groupthink"
+   ],
+   "claim": "disaster risk analysis"
+  },
+  {
+   "cite": "BSRS p.403",
+   "contains": [
+    "dedicated full-time IR team",
+    "outsourcing IR activities"
+   ],
+   "claim": "IR staffing models"
+  },
+  {
+   "cite": "BSRS p.403-404",
+   "contains": [
+    "Incident commander",
+    "Forensic specialists",
+    "roles, not individuals"
+   ],
+   "claim": "IR roles"
+  },
+  {
+   "cite": "BSRS p.404-405",
+   "contains": [
+    "single points of failure",
+    "champion"
+   ],
+   "claim": "single points of failure and champion"
+  },
+  {
+   "cite": "BSRS p.405",
+   "contains": [
+    "team charter",
+    "single sentence"
+   ],
+   "claim": "team charter"
+  },
+  {
+   "cite": "BSRS p.405-406",
+   "contains": [
+    "severity model",
+    "priority model",
+    "0–4"
+   ],
+   "claim": "severity and priority models"
+  },
+  {
+   "cite": "BSRS p.406",
+   "contains": [
+    "severity of an incident will remain fixed",
+    "Priority, on the other hand"
+   ],
+   "claim": "fixed severity, changing priority"
+  },
+  {
+   "cite": "BSRS p.406",
+   "contains": [
+    "expected time it takes to initially respond",
+    "Service level objectives"
+   ],
+   "claim": "operational parameters"
+  },
+  {
+   "cite": "BSRS p.407",
+   "contains": [
+    "Incident reporting",
+    "Triage",
+    "Outreach",
+    "Communications"
+   ],
+   "claim": "content of response plans"
+  },
+  {
+   "cite": "BSRS p.408",
+   "contains": [
+    "tipping off an adversary",
+    "domain controller",
+    "backup communication"
+   ],
+   "claim": "compromised communication"
+  },
+  {
+   "cite": "BSRS p.409",
+   "contains": [
+    "Playbooks complement response plans",
+    "procedural in nature"
+   ],
+   "claim": "playbooks"
+  },
+  {
+   "cite": "BSRS p.409",
+   "contains": [
+    "need-to-know",
+    "accessible during an emergency"
+   ],
+   "claim": "accessible documentation and need-to-know"
+  },
+  {
+   "cite": "BSRS p.410-411",
+   "contains": [
+    "GRR",
+    "200 days",
+    "air-gapped"
+   ],
+   "claim": "prestaging: forensic agents, retention, air-gapped"
+  },
+  {
+   "cite": "BSRS p.411",
+   "contains": [
+    "IMAG",
+    "15-minute window"
+   ],
+   "claim": "IMAG and 15-minute escalation window"
+  },
+  {
+   "cite": "BSRS p.411",
+   "contains": [
+    "preserving artifacts for forensic",
+    "differentiate these activities from artifacts left by"
+   ],
+   "claim": "competing priorities and notes"
+  },
+  {
+   "cite": "BSRS p.412",
+   "contains": [
+    "rapid procurement",
+    "fuel for generators"
+   ],
+   "claim": "processes and procedures"
+  },
+  {
+   "cite": "BSRS p.412",
+   "contains": [
+    "annually, at a minimum",
+    "Evaluate automated systems"
+   ],
+   "claim": "periodic tests"
+  },
+  {
+   "cite": "BSRS p.413",
+   "contains": [
+    "backup system is operating correctly",
+    "SMTP"
+   ],
+   "claim": "audit of automated systems"
+  },
+  {
+   "cite": "BSRS p.414",
+   "contains": [
+    "Tabletop",
+    "nonintrusive",
+    "Wheel of Misfortune"
+   ],
+   "claim": "tabletops"
+  },
+  {
+   "cite": "BSRS p.415",
+   "contains": [
+    "Decision points",
+    "10–20"
+   ],
+   "claim": "tabletop decision points"
+  },
+  {
+   "cite": "BSRS p.415-416",
+   "contains": [
+    "fault injection",
+    "Envoy"
+   ],
+   "claim": "fault injection and Envoy"
+  },
+  {
+   "cite": "BSRS p.417",
+   "contains": [
+    "System-wide failures",
+    "cycles power to entire datacenter"
+   ],
+   "claim": "whole-system failures"
+  },
+  {
+   "cite": "BSRS p.417",
+   "contains": [
+    "Red Team",
+    "Information Security Assurance"
+   ],
+   "claim": "Red Team testing"
+  },
+  {
+   "cite": "BSRS p.418",
+   "contains": [
+    "merely entertainment",
+    "Purple Team",
+    "blameless postmortems"
+   ],
+   "claim": "evaluating responses"
+  },
+  {
+   "cite": "BSRS p.419",
+   "contains": [
+    "earthquake",
+    "2019"
+   ],
+   "claim": "earthquake test"
+  },
+  {
+   "cite": "BSRS p.420",
+   "contains": [
+    "SegmentSmack",
+    "FragmentSmack",
+    "ksplice"
+   ],
+   "claim": "SegmentSmack and ksplice"
+  },
+  {
+   "cite": "BSRS p.421",
+   "contains": [
+    "code freeze",
+    "identify your most important system"
+   ],
+   "claim": "ksplice in code freeze and conclusion"
+  },
+  {
+   "cite": "BSRS p.399-421",
+   "absent": [
+    "NIST SP 800-61",
+    "SOAR",
+    "EDR",
+    "PagerDuty",
+    "cyber insurance"
+   ],
+   "claim": "IR frameworks and products not cited"
+  },
+  {
+   "cite": "BSRS p.399-421",
+   "absent": [
+    "MTTR",
+    "RTO",
+    "RPO",
+    "BCP"
+   ],
+   "claim": "formal DR metrics do not appear"
+  },
+  {
+   "cite": "BSRS p.399-421",
+   "absent": [
+    "ransomware negotiation",
+    "GDPR",
+    "72 hours"
+   ],
+   "claim": "regulatory notification deadlines do not appear"
+  },
+  {
+   "cite": "BSRS p.399-421",
+   "absent": [
+    "ISO 27035",
+    "CSIRT",
+    "SANS PICERL"
+   ],
+   "claim": "IR standards not cited"
+  },
+  {
+   "cite": "BSRS p.423-424",
+   "contains": [
+    "Incident Management at Google",
+    "24 hours"
+   ],
+   "claim": "IMAG for security and 24-hour deadline"
+  },
+  {
+   "cite": "BSRS p.424",
+   "contains": [
+    "Not every incident is a crisis",
+    "triage"
+   ],
+   "claim": "not every incident is a crisis"
+  },
+  {
+   "cite": "BSRS p.425",
+   "contains": [
+    "false positive",
+    "targeted compromise",
+    "preplanned criteria"
+   ],
+   "claim": "triage"
+  },
+  {
+   "cite": "BSRS p.425-426",
+   "contains": [
+    "Organization 1",
+    "Organization 2",
+    "Organization 3"
+   ],
+   "claim": "three organizations and ransomware"
+  },
+  {
+   "cite": "BSRS p.426",
+   "contains": [
+    "compensating controls",
+    "commodity opportunistic malware"
+   ],
+   "claim": "questions to decide between playbook and crisis"
+  },
+  {
+   "cite": "BSRS p.427",
+   "contains": [
+    "coordinated vulnerability disclosures",
+    "Spectre and Meltdown",
+    "29147:2018"
+   ],
+   "claim": "vulnerabilities as incidents and CVD"
+  },
+  {
+   "cite": "BSRS p.428",
+   "contains": [
+    "Don’t Panic",
+    "fix the system first",
+    "full investigation"
+   ],
+   "claim": "do not panic; investigate before fixing"
+  },
+  {
+   "cite": "BSRS p.428",
+   "contains": [
+    "first five minutes",
+    "postmortems"
+   ],
+   "claim": "five minutes to plan"
+  },
+  {
+   "cite": "BSRS p.429",
+   "contains": [
+    "Incident Command System",
+    "declaring an incident",
+    "incident commander"
+   ],
+   "claim": "incident declaration"
+  },
+  {
+   "cite": "BSRS p.429-430",
+   "contains": [
+    "operations lead",
+    "Management liaison",
+    "Legal lead",
+    "Communications lead"
+   ],
+   "claim": "lead roles"
+  },
+  {
+   "cite": "BSRS p.430",
+   "contains": [
+    "operational security",
+    "OpSec plan"
+   ],
+   "claim": "definition of OpSec"
+  },
+  {
+   "cite": "BSRS p.431",
+   "contains": [
+    "remote forensic agents",
+    "cluing in an attacker"
+   ],
+   "claim": "remote forensic agents and alerting the attacker"
+  },
+  {
+   "cite": "BSRS p.431-432",
+   "contains": [
+    "Logging into compromised servers",
+    "command and control",
+    "Locking accounts or changing passwords"
+   ],
+   "claim": "common OpSec mistakes"
+  },
+  {
+   "cite": "BSRS p.432",
+   "contains": [
+    "Conduct meetings and discussions in person",
+    "Chromebooks"
+   ],
+   "claim": "OpSec good practices"
+  },
+  {
+   "cite": "BSRS p.432-433",
+   "contains": [
+    "example[dot]com",
+    "malware_c2.gif"
+   ],
+   "claim": "tools that expand links"
+  },
+  {
+   "cite": "BSRS p.433",
+   "contains": [
+    "Facetime",
+    "imminent"
+   ],
+   "claim": "imminent risk and FaceTime"
+  },
+  {
+   "cite": "BSRS p.434",
+   "contains": [
+    "Forensic imaging",
+    "Memory imaging",
+    "File carving"
+   ],
+   "claim": "forensic techniques"
+  },
+  {
+   "cite": "BSRS p.435",
+   "contains": [
+    "forensic timeline",
+    "correlation and causation"
+   ],
+   "claim": "forensic timeline"
+  },
+  {
+   "cite": "BSRS p.435-436",
+   "contains": [
+    "hands-off approach",
+    "pivot points"
+   ],
+   "claim": "hands-off and pivot points"
+  },
+  {
+   "cite": "BSRS p.436",
+   "contains": [
+    "Forensics group",
+    "Reversing group",
+    "Hunting group"
+   ],
+   "claim": "sharding the investigation"
+  },
+  {
+   "cite": "BSRS p.437",
+   "contains": [
+    "popcorn",
+    "remediation"
+   ],
+   "claim": "when to stop investigating"
+  },
+  {
+   "cite": "BSRS p.437-438",
+   "contains": [
+    "parallelize the incident",
+    "remediation lead"
+   ],
+   "claim": "parallelize and remediation lead"
+  },
+  {
+   "cite": "BSRS p.438",
+   "contains": [
+    "while loop",
+    "OODA"
+   ],
+   "claim": "IC loop and OODA"
+  },
+  {
+   "cite": "BSRS p.439",
+   "contains": [
+    "12 continuous hours",
+    "hero mode",
+    "follow-the-sun"
+   ],
+   "claim": "12-hour shifts and follow-the-sun"
+  },
+  {
+   "cite": "BSRS p.441",
+   "contains": [
+    "next 12 hours",
+    "note"
+   ],
+   "claim": "handover agenda"
+  },
+  {
+   "cite": "BSRS p.441-442",
+   "contains": [
+    "Eat",
+    "Sleep",
+    "Destress",
+    "Watch for burnout",
+    "Lead by example"
+   ],
+   "claim": "morale"
+  },
+  {
+   "cite": "BSRS p.443",
+   "contains": [
+    "Misunderstandings",
+    "Hedging"
+   ],
+   "claim": "misunderstandings and hedging"
+  },
+  {
+   "cite": "BSRS p.444",
+   "contains": [
+    "every two or four hours",
+    "kickoff meeting"
+   ],
+   "claim": "syncs and kickoff agenda"
+  },
+  {
+   "cite": "BSRS p.445",
+   "contains": [
+    "note taker",
+    "action tracker"
+   ],
+   "claim": "note taker and action tracker"
+  },
+  {
+   "cite": "BSRS p.445-446",
+   "contains": [
+    "gap-filling",
+    "communications lead"
+   ],
+   "claim": "level of detail and communications lead"
+  },
+  {
+   "cite": "BSRS p.446-447",
+   "contains": [
+    "service account",
+    "declare an incident"
+   ],
+   "claim": "service account scenario"
+  },
+  {
+   "cite": "BSRS p.447",
+   "contains": [
+    "freshly rebuilt laptops",
+    "operations lead"
+   ],
+   "claim": "OpSec in the scenario"
+  },
+  {
+   "cite": "BSRS p.448-449",
+   "contains": [
+    "London",
+    "hand off"
+   ],
+   "claim": "handover to London"
+  },
+  {
+   "cite": "BSRS p.449-450",
+   "contains": [
+    "remediation lead",
+    "blog post",
+    "coin mining"
+   ],
+   "claim": "parallel communication and remediation"
+  },
+  {
+   "cite": "BSRS p.450",
+   "contains": [
+    "outbrief",
+    "no longer requires an emergency response"
+   ],
+   "claim": "closure"
+  },
+  {
+   "cite": "BSRS p.423-451",
+   "absent": [
+    "NIST SP 800-61",
+    "PICERL",
+    "SANS",
+    "MITRE D3FEND",
+    "RACI"
+   ],
+   "claim": "external IR frameworks not cited"
+  },
+  {
+   "cite": "BSRS p.423-451",
+   "absent": [
+    "72 hours",
+    "NIS2",
+    "LGPD",
+    "SEC"
+   ],
+   "claim": "specific regulatory deadlines do not appear"
+  },
+  {
+   "cite": "BSRS p.423-451",
+   "absent": [
+    "Slack",
+    "PagerDuty",
+    "Splunk",
+    "CrowdStrike"
+   ],
+   "claim": "commercial IR tools not cited"
+  },
+  {
+   "cite": "BSRS p.423-451",
+   "absent": [
+    "double extortion",
+    "ransom payment",
+    "negotiat"
+   ],
+   "claim": "double extortion and ransom negotiation not covered"
+  },
+  {
+   "cite": "BSRS p.453",
+   "contains": [
+    "persistent attacker",
+    "reengage"
+   ],
+   "claim": "persistent attacker during recovery"
+  },
+  {
+   "cite": "BSRS p.454",
+   "contains": [
+    "NIST SP 800-184",
+    "known good state"
+   ],
+   "claim": "NIST SP 800-184 and known good state"
+  },
+  {
+   "cite": "BSRS p.454-455",
+   "contains": [
+    "should be different from the people investigating",
+    "Scrum"
+   ],
+   "claim": "recoverers different from investigators"
+  },
+  {
+   "cite": "BSRS p.455",
+   "contains": [
+    "ballet",
+    "roles for preparing, reviewing, and executing"
+   ],
+   "claim": "ballet and roles"
+  },
+  {
+   "cite": "BSRS p.456",
+   "contains": [
+    "remediation lead",
+    "air-gapped",
+    "technical writers"
+   ],
+   "claim": "RL, documentation out of the attacker's reach"
+  },
+  {
+   "cite": "BSRS p.456-457",
+   "contains": [
+    "mission-critical",
+    "recovery checklists before proceeding"
+   ],
+   "claim": "recovery timeline and checklists"
+  },
+  {
+   "cite": "BSRS p.457-458",
+   "contains": [
+    "scoping the recovery",
+    "nation-state",
+    "configuration distribution system"
+   ],
+   "claim": "recovery scope"
+  },
+  {
+   "cite": "BSRS p.458",
+   "contains": [
+    "mitigation doc",
+    "short-term mitigations",
+    "strategic long-term changes"
+   ],
+   "claim": "mitigation doc and short vs long term"
+  },
+  {
+   "cite": "BSRS p.459",
+   "contains": [
+    "six systems",
+    "Chromebooks"
+   ],
+   "claim": "six systems and a new channel"
+  },
+  {
+   "cite": "BSRS p.460",
+   "contains": [
+    "game of chess",
+    "checkmate"
+   ],
+   "claim": "chess game and ejecting too early"
+  },
+  {
+   "cite": "BSRS p.460-461",
+   "contains": [
+    "recovery infrastructure or tooling compromised",
+    "quarantined network"
+   ],
+   "claim": "compromised recovery tools"
+  },
+  {
+   "cite": "BSRS p.461",
+   "contains": [
+    "What variants of the attack exist",
+    "20 other servers",
+    "undersea cable"
+   ],
+   "claim": "attack variants and submarine cable"
+  },
+  {
+   "cite": "BSRS p.462",
+   "contains": [
+    "golden images",
+    "reintroduce attack vectors"
+   ],
+   "claim": "golden images and reintroduction"
+  },
+  {
+   "cite": "BSRS p.462-463",
+   "contains": [
+    "technical debt",
+    "tape backups"
+   ],
+   "claim": "backups with attacker modifications; technical debt"
+  },
+  {
+   "cite": "BSRS p.463",
+   "contains": [
+    "How quickly (and when)",
+    "six months instead of the intended two weeks"
+   ],
+   "claim": "questions about mitigation technical debt"
+  },
+  {
+   "cite": "BSRS p.464",
+   "contains": [
+    "hands off keyboard",
+    "rollback procedures"
+   ],
+   "claim": "checklist and hands off keyboards"
+  },
+  {
+   "cite": "BSRS p.465",
+   "contains": [
+    "Isolating Assets (Quarantine)",
+    "network segmentation"
+   ],
+   "claim": "quarantine"
+  },
+  {
+   "cite": "BSRS p.466",
+   "contains": [
+    "BeyondCorp",
+    "lateral movement",
+    "stickers"
+   ],
+   "claim": "BeyondCorp, quarantine stickers"
+  },
+  {
+   "cite": "BSRS p.466-467",
+   "contains": [
+    "reinstalling systems from scratch",
+    "Chromebooks",
+    "Rapid"
+   ],
+   "claim": "system rebuilds"
+  },
+  {
+   "cite": "BSRS p.467",
+   "contains": [
+    "Bazel",
+    "Chef",
+    "Helm"
+   ],
+   "claim": "open source build and config tools"
+  },
+  {
+   "cite": "BSRS p.467-468",
+   "contains": [
+    "Data Sanitization",
+    "checksum comparisons",
+    "glibc"
+   ],
+   "claim": "data sanitization"
+  },
+  {
+   "cite": "BSRS p.468-469",
+   "contains": [
+    "inflection point",
+    "oldest",
+    "safe"
+   ],
+   "claim": "inflection point and backups"
+  },
+  {
+   "cite": "BSRS p.469",
+   "contains": [
+    "pass-the-hash",
+    "key rotation"
+   ],
+   "claim": "credential rotation and pass-the-hash"
+  },
+  {
+   "cite": "BSRS p.470",
+   "contains": [
+    "SSL keys",
+    "GitHub",
+    "administrator credentials"
+   ],
+   "claim": "SSL key rotation and reset order"
+  },
+  {
+   "cite": "BSRS p.471",
+   "contains": [
+    "two-factor authentication",
+    "password2019",
+    "Argon2"
+   ],
+   "claim": "2FA and password history"
+  },
+  {
+   "cite": "BSRS p.471-472",
+   "contains": [
+    "Operation Aurora",
+    "FIDO"
+   ],
+   "claim": "Operation Aurora and FIDO"
+  },
+  {
+   "cite": "BSRS p.472-473",
+   "contains": [
+    "main contributing factors",
+    "expected technology control",
+    "bypass during the recovery"
+   ],
+   "claim": "security postmortem questions"
+  },
+  {
+   "cite": "BSRS p.473",
+   "contains": [
+    "low-hanging fruit",
+    "explicit owners"
+   ],
+   "claim": "short and long term action items"
+  },
+  {
+   "cite": "BSRS p.474-475",
+   "contains": [
+    "Compromised Cloud Instances",
+    "vulnerability management program"
+   ],
+   "claim": "cloud instances example"
+  },
+  {
+   "cite": "BSRS p.475",
+   "contains": [
+    "70% of",
+    "seven-day period"
+   ],
+   "claim": "large-scale phishing example"
+  },
+  {
+   "cite": "BSRS p.476",
+   "contains": [
+    "More widespread use of two-factor",
+    "SSO solution"
+   ],
+   "claim": "phishing lessons"
+  },
+  {
+   "cite": "BSRS p.477",
+   "contains": [
+    "$0.02",
+    "SSL keys"
+   ],
+   "claim": "complex targeted attack"
+  },
+  {
+   "cite": "BSRS p.477-478",
+   "contains": [
+    "Email team",
+    "Source code team",
+    "Reconciliation team"
+   ],
+   "claim": "parallel recovery teams"
+  },
+  {
+   "cite": "BSRS p.453-478",
+   "absent": [
+    "SOAR",
+    "EDR",
+    "XDR",
+    "Velociraptor",
+    "ransom negotiation"
+   ],
+   "claim": "modern response tools not cited"
+  },
+  {
+   "cite": "BSRS p.453-478",
+   "absent": [
+    "Active Directory forest recovery",
+    "krbtgt",
+    "Golden Ticket",
+    "Kerberoasting"
+   ],
+   "claim": "AD recovery not detailed"
+  },
+  {
+   "cite": "BSRS p.453-478",
+   "absent": [
+    "cyber insurance",
+    "SEC filing",
+    "8-K",
+    "notification deadline"
+   ],
+   "claim": "insurance and regulatory deadlines not covered"
+  },
+  {
+   "cite": "BSRS p.453-478",
+   "absent": [
+    "immutable backup",
+    "air gap backup",
+    "3-2-1",
+    "WORM"
+   ],
+   "claim": "immutable backups not cited"
+  },
+  {
+   "cite": "BSRS p.481",
+   "contains": [
+    "Chrome was one of the first products",
+    "open source"
+   ],
+   "claim": "Chrome and its own security organization"
+  },
+  {
+   "cite": "BSRS p.482",
+   "contains": [
+    "Team v0.1",
+    "Team v1.0",
+    "Team v2.0",
+    "buffer overflows"
+   ],
+   "claim": "team stages"
+  },
+  {
+   "cite": "BSRS p.482",
+   "contains": [
+    "Vulnerability Reward Program",
+    "hybrid engineering team"
+   ],
+   "claim": "VRP and hybrid team"
+  },
+  {
+   "cite": "BSRS p.483",
+   "contains": [
+    "Team v3.0",
+    "core security principles",
+    "most secure platform possible"
+   ],
+   "claim": "v3.0 and mission"
+  },
+  {
+   "cite": "BSRS p.483-484",
+   "contains": [
+    "Security reviews",
+    "Bug finding and fixing",
+    "Architecture and exploit mitigation",
+    "Usable security",
+    "Web platform security"
+   ],
+   "claim": "focus areas"
+  },
+  {
+   "cite": "BSRS p.484",
+   "contains": [
+    "Having the right people",
+    "SRE background"
+   ],
+   "claim": "people and diversity"
+  },
+  {
+   "cite": "BSRS p.485",
+   "contains": [
+    "well-lit path",
+    "fuzzing contests",
+    "safe numerics library"
+   ],
+   "claim": "secure path, fuzzing and base libraries"
+  },
+  {
+   "cite": "BSRS p.485",
+   "contains": [
+    "us” versus “them",
+    "peer bonuses"
+   ],
+   "claim": "us vs them and peer bonus"
+  },
+  {
+   "cite": "BSRS p.486",
+   "contains": [
+    "security nearly invisible",
+    "usable security",
+    "blind to many"
+   ],
+   "claim": "usable security"
+  },
+  {
+   "cite": "BSRS p.486-487",
+   "contains": [
+    "technical program managers",
+    "Pwn2Own",
+    "24 hours"
+   ],
+   "claim": "velocity and TPMs"
+  },
+  {
+   "cite": "BSRS p.487",
+   "contains": [
+    "Site Isolation",
+    "factor of five",
+    "color-by-risk"
+   ],
+   "claim": "Site Isolation and risk-based diagram"
+  },
+  {
+   "cite": "BSRS p.487-488",
+   "contains": [
+    "speculative execution",
+    "proactively manage"
+   ],
+   "claim": "defense in depth requires active management"
+  },
+  {
+   "cite": "BSRS p.488",
+   "contains": [
+    "silent fixes",
+    "quarterly summaries",
+    "Vulnerability Reward Program"
+   ],
+   "claim": "transparency"
+  },
+  {
+   "cite": "BSRS p.488-489",
+   "contains": [
+    "default path the secure one",
+    "just a year after the"
+   ],
+   "claim": "conclusion"
+  },
+  {
+   "cite": "BSRS p.481-489",
+   "absent": [
+    "SLSA",
+    "Rust",
+    "MiraclePtr",
+    "Trusted Types"
+   ],
+   "claim": "later Chrome technologies do not appear"
+  },
+  {
+   "cite": "BSRS p.481-489",
+   "absent": [
+    "Zero Trust",
+    "BeyondCorp",
+    "SolarWinds"
+   ],
+   "claim": "topics from other chapters do not appear"
+  },
+  {
+   "cite": "BSRS p.481-489",
+   "absent": [
+    "OKR",
+    "RACI",
+    "NIST",
+    "ISO 27001"
+   ],
+   "claim": "formal organizational frameworks not cited"
+  },
+  {
+   "cite": "BSRS p.481-489",
+   "absent": [
+    "bug bounty payout",
+    "$",
+    "HackerOne"
+   ],
+   "claim": "reward amounts and platforms not cited"
+  },
+  {
+   "cite": "BSRS p.491",
+   "contains": [
+    "everyone is responsible for security",
+    "myth"
+   ],
+   "claim": "everyone is responsible for security"
+  },
+  {
+   "cite": "BSRS p.492",
+   "contains": [
+    "Sisyphean",
+    "modern cars",
+    "nonfunctional requirements"
+   ],
+   "claim": "isolated team and car analogy"
+  },
+  {
+   "cite": "BSRS p.492-493",
+   "contains": [
+    "security design review",
+    "security audits",
+    "independent person"
+   ],
+   "claim": "security consulting by phase"
+  },
+  {
+   "cite": "BSRS p.493",
+   "contains": [
+    "Security and Reliability Risk Evaluation",
+    "graceful degradation"
+   ],
+   "claim": "risk assessment by specialists"
+  },
+  {
+   "cite": "BSRS p.494",
+   "contains": [
+    "roll your own crypto",
+    "brain trust"
+   ],
+   "claim": "do not create your own crypto and brain trust"
+  },
+  {
+   "cite": "BSRS p.494-495",
+   "contains": [
+    "family doctors",
+    "generalist"
+   ],
+   "claim": "medical analogy and generalist"
+  },
+  {
+   "cite": "BSRS p.495",
+   "contains": [
+    "Table 20-1",
+    "Google AdWords",
+    "Blogger",
+    "Insider risk"
+   ],
+   "claim": "table 20-1"
+  },
+  {
+   "cite": "BSRS p.495-496",
+   "contains": [
+    "certifications",
+    "early career"
+   ],
+   "claim": "certifications"
+  },
+  {
+   "cite": "BSRS p.496-497",
+   "contains": [
+    "Sarbanes-Oxley",
+    "breach notification",
+    "far before any of these"
+   ],
+   "claim": "triggers for starting a security program"
+  },
+  {
+   "cite": "BSRS p.497",
+   "contains": [
+    "Code Spaces",
+    "American Medical Collection Agency"
+   ],
+   "claim": "companies that went bankrupt after breaches"
+  },
+  {
+   "cite": "BSRS p.497-498",
+   "contains": [
+    "turning off our datacenters",
+    "Availability is a core tenet of security"
+   ],
+   "claim": "availability and security principle"
+  },
+  {
+   "cite": "BSRS p.498",
+   "contains": [
+    "120 firewalls",
+    "automated configuration system"
+   ],
+   "claim": "the 120 firewalls example"
+  },
+  {
+   "cite": "BSRS p.498",
+   "contains": [
+    "shareholder suit against",
+    "Yahoo"
+   ],
+   "claim": "shareholder lawsuit against Yahoo"
+  },
+  {
+   "cite": "BSRS p.499",
+   "contains": [
+    "Chief Information Security Officers",
+    "peer to"
+   ],
+   "claim": "CISO and central organization as peer of engineering"
+  },
+  {
+   "cite": "BSRS p.499",
+   "contains": [
+    "silent launches",
+    "blocking gate"
+   ],
+   "claim": "risks of a team without independence"
+  },
+  {
+   "cite": "BSRS p.499-500",
+   "contains": [
+    "security champion",
+    "senior decider"
+   ],
+   "claim": "security champion"
+  },
+  {
+   "cite": "BSRS p.500",
+   "contains": [
+    "Android security team",
+    "product security review"
+   ],
+   "claim": "decentralized teams Android and Chrome"
+  },
+  {
+   "cite": "BSRS p.500-501",
+   "contains": [
+    "Smart System for Intake",
+    "dynamic questionnaire",
+    "other"
+   ],
+   "claim": "Smart System for Intake"
+  },
+  {
+   "cite": "BSRS p.501-502",
+   "contains": [
+    "Blue Teams",
+    "Red Teams",
+    "Surveillance",
+    "Targeted attacks"
+   ],
+   "claim": "Blue and Red Teams"
+  },
+  {
+   "cite": "BSRS p.502",
+   "contains": [
+    "buy-in",
+    "Purple Team",
+    "test accounts"
+   ],
+   "claim": "Red Team limits and Purple Team"
+  },
+  {
+   "cite": "BSRS p.503",
+   "contains": [
+    "vulnerability scanning",
+    "penetration testing",
+    "weeks"
+   ],
+   "claim": "Red Team is not a pentest"
+  },
+  {
+   "cite": "BSRS p.504",
+   "contains": [
+    "Vulnerability Reward Programs",
+    "T-shirt",
+    "2006"
+   ],
+   "claim": "VRP and Google's first VRP"
+  },
+  {
+   "cite": "BSRS p.505",
+   "contains": [
+    "40 hours",
+    "payout levels",
+    "in-house bug bounty"
+   ],
+   "claim": "bug bounty steps"
+  },
+  {
+   "cite": "BSRS p.505-506",
+   "contains": [
+    "firehose",
+    "Language barriers",
+    "Vulnerability disclosure guidelines"
+   ],
+   "claim": "bug bounty challenges"
+  },
+  {
+   "cite": "BSRS p.506",
+   "contains": [
+    "Project Zero",
+    "ISO"
+   ],
+   "claim": "disclosure references"
+  },
+  {
+   "cite": "BSRS p.491-506",
+   "absent": [
+    "DevSecOps",
+    "shift left",
+    "SOC 2",
+    "ISO 27001",
+    "NIST CSF"
+   ],
+   "claim": "DevSecOps and compliance frameworks not cited"
+  },
+  {
+   "cite": "BSRS p.491-506",
+   "absent": [
+    "HackerOne",
+    "Bugcrowd",
+    "MITRE ATT&CK",
+    "RACI"
+   ],
+   "claim": "bug bounty platforms and RACI not cited"
+  },
+  {
+   "cite": "BSRS p.491-506",
+   "absent": [
+    "NIS2",
+    "DORA",
+    "LGPD",
+    "CCPA"
+   ],
+   "claim": "later regulations not cited"
+  },
+  {
+   "cite": "BSRS p.491-506",
+   "absent": [
+    "SOC analyst",
+    "threat hunting",
+    "MDR",
+    "SIEM"
+   ],
+   "claim": "modern SOC terms do not appear in ch.20"
+  },
+  {
+   "cite": "BSRS p.508",
+   "contains": [
+    "Big Deal",
+    "blameless postmortems",
+    "100% is",
+    "never the right reliability target"
+   ],
+   "claim": "Big Deal scenario and 100% is not a goal"
+  },
+  {
+   "cite": "BSRS p.509",
+   "contains": [
+    "explicitly designed, implemented",
+    "by default"
+   ],
+   "claim": "culture can be designed"
+  },
+  {
+   "cite": "BSRS p.509-510",
+   "contains": [
+    "seat belt",
+    "technical debt",
+    "reduce friction"
+   ],
+   "claim": "by-default culture and car analogy"
+  },
+  {
+   "cite": "BSRS p.510",
+   "contains": [
+    "Culture of Review",
+    "Multi-party authorization reviews"
+   ],
+   "claim": "review culture"
+  },
+  {
+   "cite": "BSRS p.511",
+   "contains": [
+    "apprenticeship",
+    "opt out",
+    "lightweight review"
+   ],
+   "claim": "educate reviewers, everyone participates, lightweight review"
+  },
+  {
+   "cite": "BSRS p.511",
+   "contains": [
+    "Tricorder",
+    "context necessary"
+   ],
+   "claim": "reviewer needs context"
+  },
+  {
+   "cite": "BSRS p.512",
+   "contains": [
+    "Culture of Awareness",
+    "hands-",
+    "mandatory annual training"
+   ],
+   "claim": "awareness and training"
+  },
+  {
+   "cite": "BSRS p.512-513",
+   "contains": [
+    "Interactive talks",
+    "XSS game",
+    "Reference documentation"
+   ],
+   "claim": "education tactics"
+  },
+  {
+   "cite": "BSRS p.513-514",
+   "contains": [
+    "Testing on the Toilet",
+    "Just-in-time notifications"
+   ],
+   "claim": "campaigns and just-in-time notifications"
+  },
+  {
+   "cite": "BSRS p.515",
+   "contains": [
+    "culture of no",
+    "Google App Engine"
+   ],
+   "claim": "culture of yes and App Engine"
+  },
+  {
+   "cite": "BSRS p.515-516",
+   "contains": [
+    "only line of defense",
+    "error budgets"
+   ],
+   "claim": "accountability and risk"
+  },
+  {
+   "cite": "BSRS p.516",
+   "contains": [
+    "Culture of Inevitably",
+    "after-action reports"
+   ],
+   "claim": "culture of inevitability"
+  },
+  {
+   "cite": "BSRS p.517",
+   "contains": [
+    "Columbia Disaster Investigation Board",
+    "Culture of Sustainability"
+   ],
+   "claim": "Columbia and sustainability"
+  },
+  {
+   "cite": "BSRS p.518",
+   "contains": [
+    "Project Oxygen",
+    "follow the sun"
+   ],
+   "claim": "sustainability at Google"
+  },
+  {
+   "cite": "BSRS p.518-519",
+   "contains": [
+    "all hands on deck",
+    "temporary",
+    "reward system"
+   ],
+   "claim": "exceptional circumstances"
+  },
+  {
+   "cite": "BSRS p.519",
+   "contains": [
+    "fear",
+    "myth"
+   ],
+   "claim": "fear and the friction myth"
+  },
+  {
+   "cite": "BSRS p.520",
+   "contains": [
+    "Align Project Goals",
+    "job ladder"
+   ],
+   "claim": "align incentives"
+  },
+  {
+   "cite": "BSRS p.520-521",
+   "contains": [
+    "Canaries and staged rollouts",
+    "Dogfood",
+    "Trusted testers"
+   ],
+   "claim": "risk-reduction mechanisms"
+  },
+  {
+   "cite": "BSRS p.521-522",
+   "contains": [
+    "Opt in before mandatory",
+    "Progressive stringency",
+    "justification"
+   ],
+   "claim": "opt-in and progressive stringency"
+  },
+  {
+   "cite": "BSRS p.522",
+   "contains": [
+    "Make Safety Nets the Norm",
+    "breakglass"
+   ],
+   "claim": "safety nets"
+  },
+  {
+   "cite": "BSRS p.522-523",
+   "contains": [
+    "Build transparent functionality",
+    "Focus on usability",
+    "security keys"
+   ],
+   "claim": "productivity and usability"
+  },
+  {
+   "cite": "BSRS p.523-524",
+   "contains": [
+    "Upvote",
+    "social voting"
+   ],
+   "claim": "Upvote and social voting"
+  },
+  {
+   "cite": "BSRS p.524-525",
+   "contains": [
+    "Document decisions",
+    "Create feedback channels",
+    "Use dashboards",
+    "Write frequent updates"
+   ],
+   "claim": "supercommunicate"
+  },
+  {
+   "cite": "BSRS p.525-526",
+   "contains": [
+    "SRE Security Exchange Program",
+    "Mission Control",
+    "Hacker Camp",
+    "Kudos"
+   ],
+   "claim": "empathy and exchange programs"
+  },
+  {
+   "cite": "BSRS p.527",
+   "contains": [
+    "Who is the decider",
+    "startups and nonprofits"
+   ],
+   "claim": "who is the decision maker"
+  },
+  {
+   "cite": "BSRS p.528-529",
+   "contains": [
+    "Gather data",
+    "Educate others",
+    "Align incentives",
+    "Find allies",
+    "Change the zeitgeist"
+   ],
+   "claim": "build the case"
+  },
+  {
+   "cite": "BSRS p.529",
+   "contains": [
+    "Pick Your Battles",
+    "Lost causes"
+   ],
+   "claim": "choose your battles"
+  },
+  {
+   "cite": "BSRS p.530",
+   "contains": [
+    "Escalations and Problem Resolution",
+    "concise as possible"
+   ],
+   "claim": "escalations"
+  },
+  {
+   "cite": "BSRS p.507-531",
+   "absent": [
+    "BSIMM",
+    "SAMM",
+    "DevSecOps",
+    "shift left",
+    "security champion"
+   ],
+   "claim": "maturity models and DevSecOps not cited"
+  },
+  {
+   "cite": "BSRS p.507-531",
+   "absent": [
+    "phishing simulation",
+    "KnowBe4",
+    "CTF",
+    "capture the flag"
+   ],
+   "claim": "simulated phishing and CTF not cited"
+  },
+  {
+   "cite": "BSRS p.507-531",
+   "absent": [
+    "Spotify",
+    "Netflix",
+    "Amazon",
+    "Microsoft"
+   ],
+   "claim": "cultures of other companies not detailed"
+  },
+  {
+   "cite": "BSRS p.507-531",
+   "absent": [
+    "Westrum",
+    "psychological safety",
+    "generative culture"
+   ],
+   "claim": "Westrum model and psychological safety term do not appear"
+  },
+  {
+   "cite": "BSRS p.27",
+   "contains": [
+    "fundamentally secure",
+    "afterthoughts"
+   ],
+   "claim": "thesis question of the preface"
+  },
+  {
+   "cite": "BSRS p.27",
+   "contains": [
+    "complex emergent behaviors",
+    "the processes by which people design"
+   ],
+   "claim": "definition of systems"
+  },
+  {
+   "cite": "BSRS p.28",
+   "contains": [
+    "infrastructure support that simply may not exist",
+    "rapidly evolving"
+   ],
+   "claim": "infrastructure limits of the preface"
+  },
+  {
+   "cite": "BSRS p.28-29",
+   "contains": [
+    "Site Reliability Engineers",
+    "security engineers",
+    "independent of a particular job"
+   ],
+   "claim": "audience of the book"
+  },
+  {
+   "cite": "BSRS p.29",
+   "contains": [
+    "A Note About Culture",
+    "not a cookbook"
+   ],
+   "claim": "note on culture and it is not a cookbook"
+  },
+  {
+   "cite": "BSRS p.29",
+   "contains": [
+    "start with Chapters 1 and 2",
+    "alligator icon"
+   ],
+   "claim": "how to read the book"
+  },
+  {
+   "cite": "BSRS p.30",
+   "contains": [
+    "Site Reliability Workbook",
+    "not a prerequisite"
+   ],
+   "claim": "SRE book is not a prerequisite"
+  },
+  {
+   "cite": "BSRS p.533",
+   "contains": [
+    "significant overlap",
+    "inherent properties of a system"
+   ],
+   "claim": "final thesis of the conclusion"
+  },
+  {
+   "cite": "BSRS p.534",
+   "contains": [
+    "DevSecOps",
+    "silver-bullet",
+    "common language"
+   ],
+   "claim": "DevSecOps and silver bullet"
+  },
+  {
+   "cite": "BSRS p.535",
+   "contains": [
+    "standardized matrix",
+    "Hamburg",
+    "multiply them"
+   ],
+   "claim": "risk matrix: multiply probability and impact"
+  },
+  {
+   "cite": "BSRS p.535",
+   "contains": [
+    "0.8",
+    "response plans for the most critical risks"
+   ],
+   "claim": "plans for critical risks"
+  },
+  {
+   "cite": "BSRS p.536",
+   "contains": [
+    "Almost never: 0.0",
+    "Inevitable",
+    "Critical: 1.0",
+    "Probability"
+   ],
+   "claim": "scales of table A-1"
+  },
+  {
+   "cite": "BSRS p.536",
+   "contains": [
+    "Earthquake",
+    "Phishing attack",
+    "Meltdown/Spectre",
+    "cryptocurrency mining"
+   ],
+   "claim": "sample risks of table A-1"
+  },
+  {
+   "cite": "BSRS p.27-30, 533-536",
+   "absent": [
+    "NIST CSF",
+    "ISO 27001",
+    "FAIR",
+    "CVSS",
+    "OCTAVE"
+   ],
+   "claim": "risk methodologies not cited"
+  },
+  {
+   "cite": "BSRS p.27-30, 533-536",
+   "absent": [
+    "ransomware",
+    "SolarWinds",
+    "supply chain",
+    "SBOM"
+   ],
+   "claim": "ransomware and supply chain are not in the appendix table"
+  },
+  {
+   "cite": "BSRS p.27-30, 533-536",
+   "absent": [
+    "STRIDE",
+    "threat model",
+    "kill chain"
+   ],
+   "claim": "threat modeling does not appear in the preface, conclusion and appendix"
+  },
+  {
+   "cite": "BSRS p.27-30, 533-536",
+   "absent": [
+    "machine learning",
+    "artificial intelligence",
+    "LLM"
+   ],
+   "claim": "AI does not appear in the preface, conclusion and appendix"
+  },
+  {
+   "cite": "BSRS p.39-40",
+   "contains": [
+    "offline password manager",
+    "power drill"
+   ],
+   "claim": "AP01 Circular dependency between the secret and the system that guard"
+  },
+  {
+   "cite": "BSRS p.103",
+   "contains": [
+    "keep the honest people honest",
+    "vim"
+   ],
+   "claim": "AP02 Treating the audited interactive session as a sufficient control"
+  },
+  {
+   "cite": "BSRS p.120",
+   "contains": [
+    "all customer records"
+   ],
+   "claim": "AP03 Support with access to all customer records"
+  },
+  {
+   "cite": "BSRS p.121",
+   "contains": [
+    "Team foo needed access"
+   ],
+   "claim": "AP04 Generic access justifications"
+  },
+  {
+   "cite": "BSRS p.108-109",
+   "contains": [
+    "test accounts in production",
+    "test in production"
+   ],
+   "claim": "AP05 Test accounts in production instead of test infrastructur"
+  },
+  {
+   "cite": "BSRS p.85, 92",
+   "contains": [
+    "bolt on",
+    "sustained velocity"
+   ],
+   "claim": "AP06 Postponing security and reliability for later (retrofit under p"
+  },
+  {
+   "cite": "BSRS p.88",
+   "contains": [
+    "message queueing",
+    "security risk that arose from your attempt"
+   ],
+   "claim": "AP07 Mitigation creates new risk (persistent retry queue with dat"
+  },
+  {
+   "cite": "BSRS p.94",
+   "contains": [
+    "tarballs",
+    "technical debt"
+   ],
+   "claim": "AP08 Launching without tests and copying tarballs to production"
+  },
+  {
+   "cite": "BSRS p.137",
+   "contains": [
+    "IP addresses",
+    "easily spoofable"
+   ],
+   "claim": "AP09 Using an IP address as a service identity"
+  },
+  {
+   "cite": "BSRS p.138",
+   "contains": [
+    "Have nonreusable identifiers"
+   ],
+   "claim": "AP10 Reusable identifiers (former administrator's email at"
+  },
+  {
+   "cite": "BSRS p.149-151",
+   "contains": [
+    "string-typed value",
+    "SafeHtml"
+   ],
+   "claim": "AP11 Critical values as strings without a contract"
+  },
+  {
+   "cite": "BSRS p.148",
+   "contains": [
+    "forget to configure authorization"
+   ],
+   "claim": "AP12 Service with RPC and authentication but no authorization polic"
+  },
+  {
+   "cite": "BSRS p.154",
+   "contains": [
+    "hashing it",
+    "Social Security numbers"
+   ],
+   "claim": "AP13 Cryptographic hash to protect small-space data (car"
+  },
+  {
+   "cite": "BSRS p.227",
+   "contains": [
+    "the cure is worse than"
+   ],
+   "claim": "AP14 Disabling certificate validation to be able to recover"
+  },
+  {
+   "cite": "BSRS p.229-230",
+   "contains": [
+    "Allow arbitrary rollbacks",
+    "Never allow rollbacks"
+   ],
+   "claim": "AP15 Extreme rollback policies (arbitrary or never)"
+  },
+  {
+   "cite": "BSRS p.230",
+   "contains": [
+    "unzipping"
+   ],
+   "claim": "AP16 Deny list embedded in the component (unzipping)"
+  },
+  {
+   "cite": "BSRS p.237",
+   "contains": [
+    "fail open",
+    "certificate validity database"
+   ],
+   "claim": "AP17 Fail open in the revocation service"
+  },
+  {
+   "cite": "BSRS p.239-240",
+   "contains": [
+    "emergency",
+    "special"
+   ],
+   "claim": "AP18 Emergency revocation list rarely used or special accounts"
+  },
+  {
+   "cite": "BSRS p.209",
+   "contains": [
+    "rot and surprise failures"
+   ],
+   "claim": "AP19 Alternates used as routine or left to rot"
+  },
+  {
+   "cite": "BSRS p.244",
+   "contains": [
+    "same level of integrity protection"
+   ],
+   "claim": "AP20 Backups without integrity protection or restore validation"
+  },
+  {
+   "cite": "BSRS p.259",
+   "contains": [
+    "not block suspicious traffic all the time"
+   ],
+   "claim": "AP21 Always blocking suspicious traffic"
+  },
+  {
+   "cite": "BSRS p.261-262",
+   "contains": [
+    "I AM BOT"
+   ],
+   "claim": "AP22 Filtering the obvious attack signature (teaches the adversary)"
+  },
+  {
+   "cite": "BSRS p.298",
+   "contains": [
+    "never mix refactoring and functional"
+   ],
+   "claim": "AP23 Mixing refactoring and functional change in the same commit"
+  },
+  {
+   "cite": "BSRS p.296",
+   "contains": [
+    "multilevel nesting"
+   ],
+   "claim": "AP24 Deep nesting that hides errors in failure paths"
+  },
+  {
+   "cite": "BSRS p.313",
+   "contains": [
+    "mirror actual databases"
+   ],
+   "claim": "AP25 Mirroring production databases in test environments"
+  },
+  {
+   "cite": "BSRS p.344",
+   "contains": [
+    "workstations",
+    "unreviewed"
+   ],
+   "claim": "AP26 Building production binaries on engineer workstations"
+  },
+  {
+   "cite": "BSRS p.343-344",
+   "contains": [
+    "rubber-stamping",
+    "must be mandatory"
+   ],
+   "claim": "AP27 Optional code review or rubber-stamping"
+  },
+  {
+   "cite": "BSRS p.345",
+   "contains": [
+    "verify what is being deployed"
+   ],
+   "claim": "AP28 Verifying only who deploys, not the artifact"
+  },
+  {
+   "cite": "BSRS p.347",
+   "contains": [
+    "Never check secrets into version control"
+   ],
+   "claim": "AP29 Secrets in version control or in code"
+  },
+  {
+   "cite": "BSRS p.364-365",
+   "contains": [
+    "497,129",
+    "100 ms"
+   ],
+   "claim": "AP30 Ambiguous provenance in a database, sent asynchronously"
+  },
+  {
+   "cite": "BSRS p.352-353",
+   "contains": [
+    "Authenticode",
+    "signers you accept"
+   ],
+   "claim": "AP31 Trusting any valid code signature"
+  },
+  {
+   "cite": "BSRS p.386",
+   "contains": [
+    "alerted to the investigation"
+   ],
+   "claim": "AP32 Deleting 'strange' files during debugging of a possible"
+  },
+  {
+   "cite": "BSRS p.388",
+   "contains": [
+    "immutable",
+    "centralized"
+   ],
+   "claim": "AP33 Mutable, local-only logging"
+  },
+  {
+   "cite": "BSRS p.375",
+   "contains": [
+    "pager fatigue",
+    "blamed"
+   ],
+   "claim": "AP34 Blaming users for an outage in an operational overload context"
+  },
+  {
+   "cite": "BSRS p.408",
+   "contains": [
+    "domain controller",
+    "backup communication"
+   ],
+   "claim": "AP35 Depending on a single email/messaging system during the"
+  },
+  {
+   "cite": "BSRS p.431-432",
+   "contains": [
+    "Logging into compromised servers",
+    "Taking systems offline before you understand"
+   ],
+   "claim": "AP36 OpSec mistakes: logging into compromised servers, locking"
+  },
+  {
+   "cite": "BSRS p.432-433",
+   "contains": [
+    "example[dot]com"
+   ],
+   "claim": "AP37 Tools that expand links contacting the attacker's infrastructure"
+  },
+  {
+   "cite": "BSRS p.443",
+   "contains": [
+    "Hedging",
+    "Misunderstandings"
+   ],
+   "claim": "AP38 Hedging and misunderstandings in incident communication"
+  },
+  {
+   "cite": "BSRS p.444",
+   "contains": [
+    "too large",
+    "agenda"
+   ],
+   "claim": "AP39 Crowded meetings with no agenda"
+  },
+  {
+   "cite": "BSRS p.439",
+   "contains": [
+    "hero mode",
+    "12 continuous hours"
+   ],
+   "claim": "AP40 Hero mode and long shifts"
+  },
+  {
+   "cite": "BSRS p.462",
+   "contains": [
+    "golden images"
+   ],
+   "claim": "AP41 Recovering from vulnerable golden images or configuration"
+  },
+  {
+   "cite": "BSRS p.466",
+   "contains": [
+    "pernicious form of technical debt",
+    "stickers"
+   ],
+   "claim": "AP42 Compromised assets kept online in quarantine and forgotten"
+  },
+  {
+   "cite": "BSRS p.471",
+   "contains": [
+    "password2019"
+   ],
+   "claim": "AP43 Rotating passwords with a history of predictable patterns"
+  },
+  {
+   "cite": "BSRS p.459-460",
+   "contains": [
+    "six systems",
+    "game of chess"
+   ],
+   "claim": "AP44 Ejecting the attacker before understanding the attack"
+  },
+  {
+   "cite": "BSRS p.515-516",
+   "contains": [
+    "culture of no",
+    "only line of defense"
+   ],
+   "claim": "AP45 Culture of 'no' in the name of security and reliability"
+  },
+  {
+   "cite": "BSRS p.492, 499",
+   "contains": [
+    "Sisyphean",
+    "silent launches"
+   ],
+   "claim": "AP46 Isolated security team, with no power to demand changes or"
+  },
+  {
+   "cite": "BSRS p.504-505",
+   "contains": [
+    "basics of finding and addressing regular security issues"
+   ],
+   "claim": "AP47 Starting a bug bounty before covering the basics"
+  },
+  {
+   "cite": "BSRS p.98",
+   "contains": [
+    "hope is not a strategy"
+   ],
+   "claim": "AP48 Relying on human perfection"
+  },
+  {
+   "cite": "BSRS p.69",
+   "contains": [
+    "Attribution is hard",
+    "TTPs"
+   ],
+   "claim": "AP49 Requiring attribution before acting"
+  },
+  {
+   "cite": "BSRS p.418",
+   "contains": [
+    "merely entertainment"
+   ],
+   "claim": "AP50 Test exercise without implementing the lessons"
+  },
+  {
+   "cite": "BSRS p.83-84",
+   "contains": [
+    "Dependency considerations",
+    "dependency cycles",
+    "Data integrity",
+    "SLA requirements"
+   ],
+   "claim": "checklist REQ01"
+  },
+  {
+   "cite": "BSRS p.84",
+   "contains": [
+    "quick security design review"
+   ],
+   "claim": "checklist REQ02"
+  },
+  {
+   "cite": "BSRS p.80",
+   "contains": [
+    "critical requirements"
+   ],
+   "claim": "checklist REQ03"
+  },
+  {
+   "cite": "BSRS p.82-83",
+   "contains": [
+    "emergent property",
+    "enable_high_reliability_mode"
+   ],
+   "claim": "checklist REQ04"
+  },
+  {
+   "cite": "BSRS p.94",
+   "contains": [
+    "feature flags",
+    "staggered production rollouts"
+   ],
+   "claim": "checklist REQ05"
+  },
+  {
+   "cite": "BSRS p.87-89",
+   "contains": [
+    "to not hold that data",
+    "transitive dependencies",
+    "sandboxed iframe"
+   ],
+   "claim": "checklist REQ06"
+  },
+  {
+   "cite": "BSRS p.52-68",
+   "contains": [
+    "Attacker Motivations",
+    "Cyber Kill Chain",
+    "Tactics, Techniques, and Procedures"
+   ],
+   "claim": "checklist ADV01"
+  },
+  {
+   "cite": "BSRS p.61-64",
+   "contains": [
+    "First-party insiders",
+    "Actor/Role",
+    "Retaliatory"
+   ],
+   "claim": "checklist ADV02"
+  },
+  {
+   "cite": "BSRS p.65",
+   "contains": [
+    "An automated check on whether"
+   ],
+   "claim": "checklist ADV03"
+  },
+  {
+   "cite": "BSRS p.68-69",
+   "contains": [
+    "not a true predictor",
+    "firmware backdoors"
+   ],
+   "claim": "checklist ADV04"
+  },
+  {
+   "cite": "BSRS p.99-100",
+   "contains": [
+    "classify access",
+    "No permanent access"
+   ],
+   "claim": "checklist PRI01"
+  },
+  {
+   "cite": "BSRS p.101-103",
+   "contains": [
+    "small functional APIs",
+    "administrative API"
+   ],
+   "claim": "checklist PRI02"
+  },
+  {
+   "cite": "BSRS p.98-99",
+   "contains": [
+    "zero trust networking",
+    "ambient authority"
+   ],
+   "claim": "checklist PRI03"
+  },
+  {
+   "cite": "BSRS p.104-106",
+   "contains": [
+    "Audits to ensure best practices",
+    "structured justification"
+   ],
+   "claim": "checklist PRI04"
+  },
+  {
+   "cite": "BSRS p.107-109",
+   "contains": [
+    "Testing of least privilege",
+    "anonymized data sets"
+   ],
+   "claim": "checklist PRI05"
+  },
+  {
+   "cite": "BSRS p.109-110",
+   "contains": [
+    "403 Access Denied",
+    "token associated with the denial"
+   ],
+   "claim": "checklist PRI06"
+  },
+  {
+   "cite": "BSRS p.110",
+   "contains": [
+    "panic rooms",
+    "tested regularly"
+   ],
+   "claim": "checklist PRI07"
+  },
+  {
+   "cite": "BSRS p.117-118",
+   "contains": [
+    "Multi-Party Authorization",
+    "someone to say no"
+   ],
+   "claim": "checklist PRI08"
+  },
+  {
+   "cite": "BSRS p.118-120",
+   "contains": [
+    "Three-Factor Authorization",
+    "stronger authorization of a specific request"
+   ],
+   "claim": "checklist PRI09"
+  },
+  {
+   "cite": "BSRS p.120-122",
+   "contains": [
+    "Temporary Access",
+    "bastion",
+    "structured business justification"
+   ],
+   "claim": "checklist PRI10"
+  },
+  {
+   "cite": "BSRS p.73-78",
+   "contains": [
+    "Zero Touch Prod",
+    "single entry",
+    "Rate limiting"
+   ],
+   "claim": "checklist PRI11"
+  },
+  {
+   "cite": "BSRS p.127",
+   "contains": [
+    "system invariant is a property that is always true"
+   ],
+   "claim": "checklist CMP01"
+  },
+  {
+   "cite": "BSRS p.132-133",
+   "contains": [
+    "centralized component",
+    "deadline propagation"
+   ],
+   "claim": "checklist CMP02"
+  },
+  {
+   "cite": "BSRS p.134-136",
+   "contains": [
+    "Prefer narrow interfaces",
+    "idempotent operation"
+   ],
+   "claim": "checklist CMP03"
+  },
+  {
+   "cite": "BSRS p.137-138",
+   "contains": [
+    "easily spoofable",
+    "Have nonreusable identifiers"
+   ],
+   "claim": "checklist CMP04"
+  },
+  {
+   "cite": "BSRS p.141-147",
+   "contains": [
+    "trusted computing base",
+    "same-origin policy",
+    "end-user context ticket"
+   ],
+   "claim": "checklist CMP05"
+  },
+  {
+   "cite": "BSRS p.148",
+   "contains": [
+    "application frameworks",
+    "forget to configure authorization"
+   ],
+   "claim": "checklist CMP06"
+  },
+  {
+   "cite": "BSRS p.149-152",
+   "contains": [
+    "Url.parse",
+    "SafeSql",
+    "SafeHtml"
+   ],
+   "claim": "checklist CMP07"
+  },
+  {
+   "cite": "BSRS p.153-154",
+   "contains": [
+    "Tink",
+    "does not accept raw key material"
+   ],
+   "claim": "checklist CMP08"
+  },
+  {
+   "cite": "BSRS p.158-159",
+   "contains": [
+    "Incremental",
+    "Isolated",
+    "Qualified",
+    "Staged"
+   ],
+   "claim": "checklist CHG01"
+  },
+  {
+   "cite": "BSRS p.159-160",
+   "contains": [
+    "Rebuild",
+    "fewer changes"
+   ],
+   "claim": "checklist CHG02"
+  },
+  {
+   "cite": "BSRS p.160-161",
+   "contains": [
+    "immutable",
+    "content addressability",
+    "monitor the age of"
+   ],
+   "claim": "checklist CHG03"
+  },
+  {
+   "cite": "BSRS p.165-168",
+   "contains": [
+    "zero-day vulnerability",
+    "top hits",
+    "Standardize software distribution"
+   ],
+   "claim": "checklist CHG04"
+  },
+  {
+   "cite": "BSRS p.175-177",
+   "contains": [
+    "embargo is broken",
+    "Regularly rotate your encryption keys"
+   ],
+   "claim": "checklist CHG05"
+  },
+  {
+   "cite": "BSRS p.180",
+   "contains": [
+    "independently resilient"
+   ],
+   "claim": "checklist RES01"
+  },
+  {
+   "cite": "BSRS p.186-188",
+   "contains": [
+    "controlled breakpoints",
+    "2FA outage"
+   ],
+   "claim": "checklist RES02"
+  },
+  {
+   "cite": "BSRS p.191-193",
+   "contains": [
+    "Load shedding",
+    "request priority",
+    "request cost"
+   ],
+   "claim": "checklist RES03"
+  },
+  {
+   "cite": "BSRS p.194-195",
+   "contains": [
+    "allow all",
+    "deny all",
+    "nonnegotiable security posture"
+   ],
+   "claim": "checklist RES04"
+  },
+  {
+   "cite": "BSRS p.195",
+   "contains": [
+    "change budget",
+    "SYN attack"
+   ],
+   "claim": "checklist RES05"
+  },
+  {
+   "cite": "BSRS p.196-202",
+   "contains": [
+    "role, location, and time",
+    "single-homed",
+    "time separation"
+   ],
+   "claim": "checklist RES06"
+  },
+  {
+   "cite": "BSRS p.203-205",
+   "contains": [
+    "failure domain",
+    "last known good"
+   ],
+   "claim": "checklist RES07"
+  },
+  {
+   "cite": "BSRS p.205-210",
+   "contains": [
+    "high-availability",
+    "low-dependency",
+    "rot and surprise failures"
+   ],
+   "claim": "checklist RES08"
+  },
+  {
+   "cite": "BSRS p.210-215",
+   "contains": [
+    "Continuous Validation",
+    "Key rotation latency",
+    "Verified loss of access"
+   ],
+   "claim": "checklist RES09"
+  },
+  {
+   "cite": "BSRS p.222-226",
+   "contains": [
+    "regular push system turned up to maximum",
+    "standalone, single-purpose microservice"
+   ],
+   "claim": "checklist REC01"
+  },
+  {
+   "cite": "BSRS p.226-228",
+   "contains": [
+    "wall-clock time",
+    "64-bit integer",
+    "once per second"
+   ],
+   "claim": "checklist REC02"
+  },
+  {
+   "cite": "BSRS p.228-235",
+   "contains": [
+    "unzipping",
+    "low-water mark",
+    "Security Version Number"
+   ],
+   "claim": "checklist REC03"
+  },
+  {
+   "cite": "BSRS p.236-240",
+   "contains": [
+    "fail open",
+    "refuse any update that revokes its own",
+    "shard your revocation list"
+   ],
+   "claim": "checklist REC04"
+  },
+  {
+   "cite": "BSRS p.240-244",
+   "contains": [
+    "intended state",
+    "activation check",
+    "circular dependencies"
+   ],
+   "claim": "checklist REC05"
+  },
+  {
+   "cite": "BSRS p.244-245",
+   "contains": [
+    "same level of integrity protection",
+    "0.01%"
+   ],
+   "claim": "checklist REC06"
+  },
+  {
+   "cite": "BSRS p.246-250",
+   "contains": [
+    "Emergency Access",
+    "time bomb",
+    "minimum period between required exercises"
+   ],
+   "claim": "checklist REC07"
+  },
+  {
+   "cite": "BSRS p.256-258",
+   "contains": [
+    "Edge routers",
+    "state exhaustion",
+    "anycast"
+   ],
+   "claim": "checklist DOS01"
+  },
+  {
+   "cite": "BSRS p.258-261",
+   "contains": [
+    "Cache-Control",
+    "actionable",
+    "fail static"
+   ],
+   "claim": "checklist DOS02"
+  },
+  {
+   "cite": "BSRS p.264",
+   "contains": [
+    "exponential backoff",
+    "jitter"
+   ],
+   "claim": "checklist DOS03"
+  },
+  {
+   "cite": "BSRS p.281, 288-291",
+   "contains": [
+    "TrustedSqlString",
+    "SafeHtml",
+    "contextual"
+   ],
+   "claim": "checklist COD01"
+  },
+  {
+   "cite": "BSRS p.299-304",
+   "contains": [
+    "memory safe",
+    "Pytype",
+    "AddressSanitizer"
+   ],
+   "claim": "checklist COD02"
+  },
+  {
+   "cite": "BSRS p.296-298",
+   "contains": [
+    "multilevel nesting",
+    "YAGNI",
+    "never mix refactoring and functional"
+   ],
+   "claim": "checklist COD03"
+  },
+  {
+   "cite": "BSRS p.308-310",
+   "contains": [
+    "hermetic",
+    "negative amounts of bytes",
+    "mutation testing"
+   ],
+   "claim": "checklist TST01"
+  },
+  {
+   "cite": "BSRS p.313",
+   "contains": [
+    "mirror actual databases"
+   ],
+   "claim": "checklist TST02"
+  },
+  {
+   "cite": "BSRS p.316-326",
+   "contains": [
+    "seed corpus",
+    "LLVMFuzzerTestOneInput",
+    "ClusterFuzz"
+   ],
+   "claim": "checklist TST03"
+  },
+  {
+   "cite": "BSRS p.326-337",
+   "contains": [
+    "Tricorder",
+    "abstract interpretation",
+    "liveness properties"
+   ],
+   "claim": "checklist TST04"
+  },
+  {
+   "cite": "BSRS p.343-344, 346",
+   "contains": [
+    "must be mandatory",
+    "rubber-stamping",
+    "Treat configuration as code"
+   ],
+   "claim": "checklist PIP01"
+  },
+  {
+   "cite": "BSRS p.344-345",
+   "contains": [
+    "Move all build, test, and deployment steps",
+    "Lock down the automated system"
+   ],
+   "claim": "checklist PIP02"
+  },
+  {
+   "cite": "BSRS p.345",
+   "contains": [
+    "verify what is being deployed",
+    "Binary Authorization"
+   ],
+   "claim": "checklist PIP03"
+  },
+  {
+   "cite": "BSRS p.347",
+   "contains": [
+    "Never check secrets into version control",
+    "Cloud KMS"
+   ],
+   "claim": "checklist PIP04"
+  },
+  {
+   "cite": "BSRS p.349-350",
+   "contains": [
+    "Trusting Third-Party Code",
+    "monitor your dependencies"
+   ],
+   "claim": "checklist PIP05"
+  },
+  {
+   "cite": "BSRS p.350-352",
+   "contains": [
+    "Authenticity (required)",
+    "Outputs (required)",
+    "Dependencies",
+    "rollback attacks"
+   ],
+   "claim": "checklist PIP06"
+  },
+  {
+   "cite": "BSRS p.353-355",
+   "contains": [
+    "provenance-based deployment policies",
+    "Binary was explicitly allowed",
+    "applies to the artifact"
+   ],
+   "claim": "checklist PIP07"
+  },
+  {
+   "cite": "BSRS p.357-360",
+   "contains": [
+    "Hermetic",
+    "privilege separation",
+    "Remote Code Execution"
+   ],
+   "claim": "checklist PIP08"
+  },
+  {
+   "cite": "BSRS p.361-366",
+   "contains": [
+    "choke point",
+    "actionable",
+    "audited quickly"
+   ],
+   "claim": "checklist PIP09"
+  },
+  {
+   "cite": "BSRS p.387-389",
+   "contains": [
+    "immutable",
+    "centralized",
+    "pseudonymization"
+   ],
+   "claim": "checklist LOG01"
+  },
+  {
+   "cite": "BSRS p.390-394",
+   "contains": [
+    "auditd",
+    "CASB",
+    "degrade gracefully"
+   ],
+   "claim": "checklist LOG02"
+  },
+  {
+   "cite": "BSRS p.395-396",
+   "contains": [
+    "emergency-only credentials",
+    "metadata as nonsensitive"
+   ],
+   "claim": "checklist LOG03"
+  },
+  {
+   "cite": "BSRS p.402, 405-406, 535-536",
+   "contains": [
+    "mission-essential",
+    "severity model",
+    "multiply them"
+   ],
+   "claim": "checklist IR01"
+  },
+  {
+   "cite": "BSRS p.403-405",
+   "contains": [
+    "Incident commander",
+    "team charter",
+    "champion"
+   ],
+   "claim": "checklist IR02"
+  },
+  {
+   "cite": "BSRS p.407-409",
+   "contains": [
+    "Playbooks complement response plans",
+    "backup communication"
+   ],
+   "claim": "checklist IR03"
+  },
+  {
+   "cite": "BSRS p.409-412",
+   "contains": [
+    "GRR",
+    "air-gapped",
+    "15-minute window"
+   ],
+   "claim": "checklist IR04"
+  },
+  {
+   "cite": "BSRS p.412-418",
+   "contains": [
+    "Tabletop",
+    "fault injection",
+    "merely entertainment"
+   ],
+   "claim": "checklist IR05"
+  },
+  {
+   "cite": "BSRS p.430-433",
+   "contains": [
+    "OpSec plan",
+    "Logging into compromised servers",
+    "example[dot]com"
+   ],
+   "claim": "checklist IR06"
+  },
+  {
+   "cite": "BSRS p.429-441",
+   "contains": [
+    "operations lead",
+    "12 continuous hours",
+    "next 12 hours"
+   ],
+   "claim": "checklist IR07"
+  },
+  {
+   "cite": "BSRS p.459-471",
+   "contains": [
+    "Recovery Checklists",
+    "golden images",
+    "stickers",
+    "pass-the-hash"
+   ],
+   "claim": "checklist IR08"
+  },
+  {
+   "cite": "BSRS p.472-473",
+   "contains": [
+    "main contributing factors",
+    "explicit owners",
+    "low-hanging fruit"
+   ],
+   "claim": "checklist IR09"
+  },
+  {
+   "cite": "BSRS p.509-519",
+   "contains": [
+    "Culture of Review",
+    "Culture of Awareness",
+    "Culture of Inevitably",
+    "Culture of Sustainability"
+   ],
+   "claim": "checklist CUL01"
+  },
+  {
+   "cite": "BSRS p.520-522",
+   "contains": [
+    "Dogfood",
+    "Trusted testers",
+    "Progressive stringency"
+   ],
+   "claim": "checklist CUL02"
+  },
+  {
+   "cite": "BSRS p.492, 499-505",
+   "contains": [
+    "security champion",
+    "Purple Team",
+    "basics of finding and addressing regular security issues"
+   ],
+   "claim": "checklist CUL03"
+  },
+  {
+   "cite": "BSRS p.44",
+   "contains": [
+    "error budgets"
+   ],
+   "claim": "error budget cited"
+  },
+  {
+   "cite": "BSRS p.81",
+   "contains": [
+    "service level objectives"
+   ],
+   "claim": "SLOs cited"
+  },
+  {
+   "cite": "BSRS p.91",
+   "contains": [
+    "error budget"
+   ],
+   "claim": "error budget p.91"
+  },
+  {
+   "cite": "BSRS p.406",
+   "contains": [
+    "Service level objectives"
+   ],
+   "claim": "IR SLOs"
+  },
+  {
+   "cite": "BSRS p.515-516",
+   "contains": [
+    "error budgets"
+   ],
+   "claim": "error budgets p.516"
+  },
+  {
+   "cite": "BSRS p.379",
+   "contains": [
+    "Dapper",
+    "Zipkin"
+   ],
+   "claim": "dapper"
+  },
+  {
+   "cite": "BSRS p.160-161",
+   "contains": [
+    "containers"
+   ],
+   "claim": "containers"
+  },
+  {
+   "cite": "BSRS p.361-362",
+   "contains": [
+    "Admission Controller"
+   ],
+   "claim": "admission"
+  }
+ ]
+}

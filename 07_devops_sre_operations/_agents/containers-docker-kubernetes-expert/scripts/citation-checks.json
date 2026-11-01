@@ -1,0 +1,1148 @@
+[
+ {
+  "id": "c01",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 9,
+  "all": [
+   "container",
+   "image",
+   "registry"
+  ],
+  "claim": "three pieces: container, image, registry"
+ },
+ {
+  "id": "c02",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 10,
+  "all": [
+   "Podman",
+   "Kaniko"
+  ],
+  "claim": "other engines: Podman, Kaniko, rkt"
+ },
+ {
+  "id": "c03",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 12,
+  "all": [
+   "docker-compose --version",
+   "WSL2"
+  ],
+  "claim": "verify installation with docker-compose --version; WSL2 on Windows"
+ },
+ {
+  "id": "c04",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 14,
+  "all": [
+   "Docker Desktop",
+   "Kubernetes"
+  ],
+  "claim": "Docker Desktop includes Kubernetes among its tools"
+ },
+ {
+  "id": "c05",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 22,
+  "all": [
+   "uname -a",
+   "kernel"
+  ],
+  "claim": "a container uses the host kernel (uname)"
+ },
+ {
+  "id": "c06",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 21,
+  "all": [
+   "guest operating system",
+   "container runtime"
+  ],
+  "claim": "a VM has a guest OS, a container does not"
+ },
+ {
+  "id": "c07",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 23,
+  "all": [
+   "Open Container Initiative",
+   "read-only"
+  ],
+  "claim": "OCI and read-only image"
+ },
+ {
+  "id": "c08",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 23,
+  "all": [
+   "writable layer"
+  ],
+  "claim": "container = writable layer on top of the read-only ones"
+ },
+ {
+  "id": "c09",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 24,
+  "all": [
+   "Docker Hub",
+   "Quay"
+  ],
+  "claim": "Docker Hub is the default; Quay"
+ },
+ {
+  "id": "c10",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 25,
+  "all": [
+   "dockerd",
+   "Docker Daemon"
+  ],
+  "claim": "dockerd daemon"
+ },
+ {
+  "id": "c11",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 26,
+  "all": [
+   "REST API",
+   "client"
+  ],
+  "claim": "the client talks to the daemon via REST API"
+ },
+ {
+  "id": "c12",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 27,
+  "all": [
+   "Unable to find image",
+   "Docker Hub"
+  ],
+  "claim": "docker run flow: pull if absent"
+ },
+ {
+  "id": "c13",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 29,
+  "all": [
+   "docker <object> <command> <options>",
+   "1.13"
+  ],
+  "claim": "new syntax since 1.13"
+ },
+ {
+  "id": "c14",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 31,
+  "all": [
+   "--publish <host port>:<container port>"
+  ],
+  "claim": "--publish format"
+ },
+ {
+  "id": "c15",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 32,
+  "all": [
+   "--detach",
+   "image name must come last"
+  ],
+  "claim": "detach; image name last"
+ },
+ {
+  "id": "c16",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 33,
+  "all": [
+   "64 characters",
+   "12 characters"
+  ],
+  "claim": "ID 12 vs 64 chars"
+ },
+ {
+  "id": "c17",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 35,
+  "all": [
+   "container rename"
+  ],
+  "claim": "rename"
+ },
+ {
+  "id": "c18",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 37,
+  "all": [
+   "SIGTERM",
+   "SIGKILL"
+  ],
+  "claim": "stop = SIGTERM then SIGKILL"
+ },
+ {
+  "id": "c19",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 39,
+  "all": [
+   "container restart",
+   "stopped container"
+  ],
+  "claim": "restart vs start"
+ },
+ {
+  "id": "c20",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 40,
+  "all": [
+   "container create",
+   "container start"
+  ],
+  "claim": "run = create + start"
+ },
+ {
+  "id": "c21",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 42,
+  "all": [
+   "container prune",
+   "container rm"
+  ],
+  "claim": "rm and prune"
+ },
+ {
+  "id": "c22",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 43,
+  "all": [
+   "--rm"
+  ],
+  "claim": "--rm removes on stop"
+ },
+ {
+  "id": "c23",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 46,
+  "all": [
+   "--interactive",
+   "--tty",
+   "pseudo-tty"
+  ],
+  "claim": "-it = -i + -t"
+ },
+ {
+  "id": "c24",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 48,
+  "all": [
+   "entry point",
+   "busybox"
+  ],
+  "claim": "arguments after the image go to the entrypoint"
+ },
+ {
+  "id": "c25",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 51,
+  "all": [
+   "bind mount",
+   "absolute path"
+  ],
+  "claim": "bind mount requires an absolute path"
+ },
+ {
+  "id": "c26",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 52,
+  "all": [
+   "entry-point",
+   "rmbyext"
+  ],
+  "claim": "executable image = custom entrypoint"
+ },
+ {
+  "id": "c27",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 55,
+  "all": [
+   "FROM",
+   "EXPOSE",
+   "documentation"
+  ],
+  "claim": "EXPOSE is documentation; --publish is needed"
+ },
+ {
+  "id": "c28",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 56,
+  "all": [
+   "exec form",
+   "daemon off",
+   "best practice"
+  ],
+  "claim": "CMD exec form; nginx as a single process"
+ },
+ {
+  "id": "c29",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 57,
+  "all": [
+   "context",
+   "Dockerfile"
+  ],
+  "claim": "build context"
+ },
+ {
+  "id": "c30",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 59,
+  "all": [
+   "--tag <image repository>:<image tag>"
+  ],
+  "claim": "tag format"
+ },
+ {
+  "id": "c31",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 61,
+  "all": [
+   "image prune",
+   "dangling"
+  ],
+  "claim": "image prune removes dangling images"
+ },
+ {
+  "id": "c32",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 62,
+  "all": [
+   "image history",
+   "layers"
+  ],
+  "claim": "image history shows the layers"
+ },
+ {
+  "id": "c33",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 63,
+  "all": [
+   "union file system"
+  ],
+  "claim": "union file system"
+ },
+ {
+  "id": "c34",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 64,
+  "all": [
+   "cache",
+   "layers"
+  ],
+  "claim": "layers as build cache"
+ },
+ {
+  "id": "c35",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 66,
+  "all": [
+   "COPY <source> <destination>"
+  ],
+  "claim": "COPY syntax"
+ },
+ {
+  "id": "c36",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 69,
+  "all": [
+   "ARG",
+   "ADD",
+   "extract"
+  ],
+  "claim": "ARG; ADD does not extract"
+ },
+ {
+  "id": "c37",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 73,
+  "all": [
+   "libpcre3",
+   "zlib1g"
+  ],
+  "claim": "only two libs needed at runtime"
+ },
+ {
+  "id": "c38",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 75,
+  "all": [
+   "separate layers",
+   "single layer"
+  ],
+  "claim": "remove packages in the same layer"
+ },
+ {
+  "id": "c39",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 77,
+  "all": [
+   "musl",
+   "busybox",
+   "2.8MB"
+  ],
+  "claim": "Alpine"
+ },
+ {
+  "id": "c40",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 77,
+  "all": [
+   "81.6MB",
+   "343MB"
+  ],
+  "claim": "343MB -> 81.6MB"
+ },
+ {
+  "id": "c41",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 78,
+  "all": [
+   "--no-cache",
+   "--virtual"
+  ],
+  "claim": "apk add --no-cache --virtual"
+ },
+ {
+  "id": "c42",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 80,
+  "all": [
+   "12.8M"
+  ],
+  "claim": "alpine reduced it to 12.8M"
+ },
+ {
+  "id": "c43",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 81,
+  "all": [
+   "ENTRYPOINT",
+   "WORKDIR"
+  ],
+  "claim": "Dockerfile of the executable image"
+ },
+ {
+  "id": "c44",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 83,
+  "all": [
+   "unlimited public repositories",
+   "one private"
+  ],
+  "claim": "free Docker Hub account"
+ },
+ {
+  "id": "c45",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 84,
+  "all": [
+   "unencrypted",
+   "credential helper"
+  ],
+  "claim": "docker login stores the password unencrypted"
+ },
+ {
+  "id": "c46",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 86,
+  "all": [
+   "latest",
+   "cross check"
+  ],
+  "claim": "latest does not guarantee the latest version"
+ },
+ {
+  "id": "c47",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 86,
+  "all": [
+   "docker image push"
+  ],
+  "claim": "image push"
+ },
+ {
+  "id": "c48",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 88,
+  "all": [
+   "package.json",
+   "COPY"
+  ],
+  "claim": "copy package.json before installing"
+ },
+ {
+  "id": "c49",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 89,
+  "all": [
+   "root user",
+   "non-root"
+  ],
+  "claim": "non-root USER"
+ },
+ {
+  "id": "c50",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 89,
+  "all": [
+   "WORKDIR",
+   "subsequent"
+  ],
+  "claim": "WORKDIR affects the following instructions"
+ },
+ {
+  "id": "c51",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 94,
+  "all": [
+   "node_modules",
+   "vite: not found"
+  ],
+  "claim": "bind mount overrides node_modules"
+ },
+ {
+  "id": "c52",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 95,
+  "all": [
+   "anonymous volume"
+  ],
+  "claim": "anonymous volume"
+ },
+ {
+  "id": "c53",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 97,
+  "all": [
+   "multi-staged build",
+   "discard"
+  ],
+  "claim": "multi-stage"
+ },
+ {
+  "id": "c54",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 98,
+  "all": [
+   "--from=builder",
+   "/usr/share/nginx/html"
+  ],
+  "claim": "COPY --from"
+ },
+ {
+  "id": "c55",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 102,
+  "all": [
+   ".dockerignore",
+   "bind mount",
+   "no effect"
+  ],
+  "claim": ".dockerignore does not affect bind mounts"
+ },
+ {
+  "id": "c56",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 103,
+  "all": [
+   "127.0.0.1",
+   "localhost"
+  ],
+  "claim": "127.0.0.1 inside the container is the container itself"
+ },
+ {
+  "id": "c57",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 104,
+  "all": [
+   "not recommended",
+   "IP address may change"
+  ],
+  "claim": "container IP is not recommended"
+ },
+ {
+  "id": "c58",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 105,
+  "all": [
+   "host",
+   "overlay",
+   "macvlan"
+  ],
+  "claim": "network drivers"
+ },
+ {
+  "id": "c59",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 106,
+  "all": [
+   "automatic DNS resolution"
+  ],
+  "claim": "automatic DNS on a user-defined bridge"
+ },
+ {
+  "id": "c60",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 107,
+  "all": [
+   "on the fly",
+   "network create"
+  ],
+  "claim": "connect/disconnect on the fly"
+ },
+ {
+  "id": "c61",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 110,
+  "all": [
+   "custom names",
+   "randomly generated name"
+  ],
+  "claim": "DNS requires a custom name"
+ },
+ {
+  "id": "c62",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 112,
+  "all": [
+   "POSTGRES_PASSWORD",
+   "POSTGRES_DB"
+  ],
+  "claim": "postgres variables"
+ },
+ {
+  "id": "c63",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 113,
+  "all": [
+   "named volume",
+   "/var/lib/postgresql/data"
+  ],
+  "claim": "named volume for DB data"
+ },
+ {
+  "id": "c64",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 115,
+  "all": [
+   "named volume",
+   "bind mount"
+  ],
+  "claim": "the author prefers a named volume"
+ },
+ {
+  "id": "c65",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 117,
+  "all": [
+   "--follow"
+  ],
+  "claim": "logs -f"
+ },
+ {
+  "id": "c66",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 119,
+  "all": [
+   "NODE_ENV",
+   "production"
+  ],
+  "claim": "NODE_ENV=production in the final stage"
+ },
+ {
+  "id": "c67",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 124,
+  "all": [
+   "DB_HOST",
+   "container name"
+  ],
+  "claim": "DB_HOST = container name"
+ },
+ {
+  "id": "c68",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 126,
+  "all": [
+   "container exec",
+   "-it"
+  ],
+  "claim": "exec"
+ },
+ {
+  "id": "c69",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 127,
+  "all": [
+   "Makefile",
+   "destroy.sh"
+  ],
+  "claim": "management scripts + Makefile"
+ },
+ {
+  "id": "c70",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 129,
+  "all": [
+   "not recommended at all",
+   "production"
+  ],
+  "claim": "Compose not recommended in production"
+ },
+ {
+  "id": "c71",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 131,
+  "all": [
+   "version: \"3.8\"",
+   "services"
+  ],
+  "claim": "compose file version 3.8"
+ },
+ {
+  "id": "c72",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 133,
+  "all": [
+   "container_name",
+   "project directory"
+  ],
+  "claim": "default container name"
+ },
+ {
+  "id": "c73",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 135,
+  "all": [
+   "volume will be named",
+   "volume key"
+  ],
+  "claim": "default volume name"
+ },
+ {
+  "id": "c74",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 137,
+  "all": [
+   "--build",
+   "doesn't create missing containers"
+  ],
+  "claim": "up vs start; --build"
+ },
+ {
+  "id": "c75",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 138,
+  "all": [
+   "docker-compose exec",
+   "automatically"
+  ],
+  "claim": "compose exec without -it"
+ },
+ {
+  "id": "c76",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 140,
+  "all": [
+   "--volumes",
+   "down"
+  ],
+  "claim": "down --volumes"
+ },
+ {
+  "id": "c77",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 141,
+  "all": [
+   "router",
+   "/api"
+  ],
+  "claim": "nginx as router"
+ },
+ {
+  "id": "c78",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 143,
+  "all": [
+   "restart: unless-stopped"
+  ],
+  "claim": "restart policy in the example"
+ },
+ {
+  "id": "c79",
+  "type": "pos",
+  "src": "DOCKHB",
+  "page": 144,
+  "all": [
+   "network isolation",
+   "bridge"
+  ],
+  "claim": "two bridge networks"
+ },
+ {
+  "id": "k01",
+  "type": "pos",
+  "src": "K8SB",
+  "page": 1,
+  "all": [
+   "Deploy a containerized application",
+   "Scale the deployment",
+   "Update the containerized application",
+   "Debug the containerized application"
+  ],
+  "claim": "tutorial objectives"
+ },
+ {
+  "id": "k02",
+  "type": "pos",
+  "src": "K8SB",
+  "page": 1,
+  "all": [
+   "production-ready",
+   "open source",
+   "orchestration"
+  ],
+  "claim": "K8s: production-ready open source platform"
+ },
+ {
+  "id": "k03",
+  "type": "pos",
+  "src": "K8SB",
+  "page": 2,
+  "all": [
+   "Create a Kubernetes",
+   "Deploy an app",
+   "Explore your app",
+   "Expose your app",
+   "Scale up your app",
+   "Update your app"
+  ],
+  "claim": "6 modules"
+ },
+ {
+  "id": "k04",
+  "type": "pos",
+  "src": "K8SB",
+  "page": 2,
+  "all": [
+   "Minikube",
+   "Learning environment"
+  ],
+  "claim": "Minikube and Learning environment"
+ },
+ {
+  "id": "n01",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "HEALTHCHECK"
+  ],
+  "claim": "the book does not cover HEALTHCHECK"
+ },
+ {
+  "id": "n02",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "depends_on"
+  ],
+  "claim": "the book does not cover depends_on"
+ },
+ {
+  "id": "n03",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "docker secret",
+   "secrets:"
+  ],
+  "claim": "the book does not cover Docker secrets"
+ },
+ {
+  "id": "n04",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "--memory",
+   "--cpus",
+   "mem_limit"
+  ],
+  "claim": "the book does not cover CPU/memory limits"
+ },
+ {
+  "id": "n05",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "Trivy",
+   "Snyk",
+   "vulnerability scan"
+  ],
+  "claim": "the book does not cover vulnerability scanning"
+ },
+ {
+  "id": "n06",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "BuildKit",
+   "buildx"
+  ],
+  "claim": "the book does not cover BuildKit"
+ },
+ {
+  "id": "n07",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "docker compose up",
+   "docker compose exec",
+   "docker compose down"
+  ],
+  "claim": "the book does not cover docker compose v2 (no hyphen)"
+ },
+ {
+  "id": "n08",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "Swarm",
+   "docker stack"
+  ],
+  "claim": "the book does not cover Docker Swarm"
+ },
+ {
+  "id": "n09",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "@sha256"
+  ],
+  "claim": "the book does not cover digest pinning in FROM"
+ },
+ {
+  "id": "n10",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "--read-only",
+   "cap-drop",
+   "--privileged"
+  ],
+  "claim": "the book does not cover read-only rootfs / cap-drop / privileged"
+ },
+ {
+  "id": "n11",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   ".env file",
+   "env_file",
+   "env-file"
+  ],
+  "claim": "the book does not cover .env file / env_file"
+ },
+ {
+  "id": "n12",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "kubectl",
+   "Helm",
+   "kind: Pod"
+  ],
+  "claim": "the book does not cover kubectl, Helm or manifests"
+ },
+ {
+  "id": "n13",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "twelve-factor",
+   "12-factor",
+   "Twelve Factor"
+  ],
+  "claim": "the book does not cover Twelve-Factor"
+ },
+ {
+  "id": "n14",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "system prune"
+  ],
+  "claim": "the book does not cover docker system prune"
+ },
+ {
+  "id": "n15",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "on-failure",
+   "restart: always",
+   "--restart"
+  ],
+  "claim": "the book does not cover restart policy always/on-failure nor --restart"
+ },
+ {
+  "id": "n16",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "prefer COPY",
+   "COPY over ADD"
+  ],
+  "claim": "the book does not say 'prefer COPY over ADD'"
+ },
+ {
+  "id": "n17",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "multi-arch",
+   "manifest list",
+   "--platform"
+  ],
+  "claim": "the book does not cover multi-arch"
+ },
+ {
+  "id": "n18",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "--internal",
+   "--alias"
+  ],
+  "claim": "the book does not cover network --internal/--alias"
+ },
+ {
+  "id": "n19",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "docker stats",
+   "docker top"
+  ],
+  "claim": "the book does not cover docker stats/top"
+ },
+ {
+  "id": "n20",
+  "type": "neg",
+  "src": "DOCKHB",
+  "none_of": [
+   "CI/CD",
+   "GitHub Actions",
+   "Jenkins"
+  ],
+  "claim": "the book does not cover CI/CD"
+ },
+ {
+  "id": "n21",
+  "type": "neg",
+  "src": "K8SB",
+  "none_of": [
+   "kubectl",
+   "Pod",
+   "ReplicaSet",
+   "Ingress",
+   "rolling update"
+  ],
+  "claim": "K8SB (2 pgs) does not detail Pods, kubectl, ReplicaSets, Ingress or rolling update; it only lists modules"
+ },
+ {
+  "id": "n22",
+  "type": "neg",
+  "src": "K8SB",
+  "none_of": [
+   "Docker",
+   "container runtime",
+   "etcd",
+   "kubelet"
+  ],
+  "claim": "K8SB does not mention Docker, runtime, etcd or kubelet"
+ }
+]

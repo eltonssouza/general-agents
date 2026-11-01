@@ -1,0 +1,4 @@
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Banco.ContaBancaria.ImprimirExtrato(String prefixo) in C:\Projetos\Banco\ContaBancaria.cs:line 45
+   at Banco.GerenciadorContas.ListarTodas() in C:\Projetos\Banco\GerenciadorContas.cs:line 112
+   at Banco.Program.Main(String[] args) in C:\Projetos\Banco\Program.cs:line 18

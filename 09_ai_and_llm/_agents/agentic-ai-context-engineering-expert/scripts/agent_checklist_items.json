@@ -1,0 +1,620 @@
+{
+ "versao": 1,
+ "nota": "The QUESTION is [inference] (checklist form) or [extrapolation] when indicated; the page shows where the text presents the idea ([from source]). Items with source 'pacote' (package-authored) have no page in the texts. Pages = PDF (BAAS printed = PDF - 25; CE2 PDF = printed).",
+ "areas": {
+  "arq": "Architecture, scope, and autonomy",
+  "tool": "Tools",
+  "plan": "Planning, reasoning, and decision",
+  "prm": "Prompts and specification",
+  "sta": "State and environment",
+  "mem": "Memory",
+  "ctx": "Context: inventory, budget, selection, and sharing",
+  "ops": "Operational context practices",
+  "mas": "Multi-agent and orchestration",
+  "seg": "Safety, action limits, and oversight",
+  "cnf": "Trust, transparency, privacy, and bias",
+  "avl": "Evaluation and monitoring"
+ },
+ "itens": [
+  {
+   "id": "ARQ01",
+   "area": "arq",
+   "fonte": "BAAS",
+   "paginas": "65",
+   "pergunta": "Was the architecture (deliberative, reactive, or hybrid) chosen based on task complexity, environment uncertainty, and the need for real-time response?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ARQ02",
+   "area": "arq",
+   "fonte": "BAAS",
+   "paginas": "55-56",
+   "pergunta": "Was the degree of autonomy (operational, functional, hierarchical) decided explicitly, with defined limits and human oversight?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ARQ03",
+   "area": "arq",
+   "fonte": "BAAS",
+   "paginas": "195",
+   "pergunta": "Is the decision to use several specific agents (instead of a single one with many integrations) justified? Was the coordination cost considered?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "ARQ04",
+   "area": "arq",
+   "fonte": "pacote",
+   "paginas": "-",
+   "pergunta": "Is there a criterion for saying when a deterministic task does NOT need an agent? (the texts do not provide this criterion; it is a package question)",
+   "origem": "[extrapolation]"
+  },
+  {
+   "id": "TOOL01",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "135-136",
+   "pergunta": "Does each tool have a clear description of what it does, required and optional parameters, and the expected return?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL02",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "136-137",
+   "pergunta": "Is the definition format (docstring or JSON schema) compatible with the model and framework in use?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL03",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "134-135",
+   "pergunta": "Does whoever executes the call (the Agent Controller, not the LLM) validate parameters and permissions before executing?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL04",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "139",
+   "pergunta": "Is there error handling and fallback for tool failures, plus respect for rate limits and quotas?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL05",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "139",
+   "pergunta": "Are tool state, credentials, versions, and compatibility managed?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL06",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "152",
+   "pergunta": "Was tool use tested on the chosen model before deployment (watch for smaller models and long combinations)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL07",
+   "area": "tool",
+   "fonte": "CE2",
+   "paginas": "18",
+   "pergunta": "Is the tool set small and free of overlapping descriptions? (report of degradation above 30 and failure above 100 for one model, [DATED])",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL08",
+   "area": "tool",
+   "fonte": "CE2",
+   "paginas": "18-19",
+   "pergunta": "Is the tool list stable during the task (loading tools dynamically can break the cache and confuse references)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "TOOL09",
+   "area": "tool",
+   "fonte": "BAAS",
+   "paginas": "150-151",
+   "pergunta": "Are plans that depend on real-world data grounded in real tools (and not invented by the model)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PLAN01",
+   "area": "plan",
+   "fonte": "BAAS",
+   "paginas": "147",
+   "pergunta": "Is the planning method (LLM-based or HTN) appropriate, and are hard numeric or temporal constraints handled explicitly?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PLAN02",
+   "area": "plan",
+   "fonte": "BAAS",
+   "paginas": "148",
+   "pergunta": "In hierarchical decomposition, was the choice between an agent manager and an LLM manager deliberate (control vs. simplicity)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PLAN03",
+   "area": "plan",
+   "fonte": "BAAS",
+   "paginas": "116",
+   "pergunta": "Is the reasoning effort proportional to task complexity, avoiding diminishing returns and delay?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PLAN04",
+   "area": "plan",
+   "fonte": "BAAS",
+   "paginas": "88-90",
+   "pergunta": "Is there an explicit decision criterion (for example a utility function) with justified weights and awareness that they are arbitrary?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRM01",
+   "area": "prm",
+   "fonte": "BAAS",
+   "paginas": "179-180",
+   "pergunta": "Does the system prompt define role and scope, constraints, communication protocols, and the role's decision framework?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRM02",
+   "area": "prm",
+   "fonte": "BAAS",
+   "paginas": "187-188",
+   "pergunta": "Are objective, main functions, constraints, and behavior explicit?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRM03",
+   "area": "prm",
+   "fonte": "BAAS",
+   "paginas": "188-190",
+   "pergunta": "Does each task have steps, expected outputs, and potential challenges specified?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRM04",
+   "area": "prm",
+   "fonte": "BAAS",
+   "paginas": "180-181",
+   "pergunta": "Are input, output, and message formats structured and consistent?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "PRM05",
+   "area": "prm",
+   "fonte": "BAAS",
+   "paginas": "169",
+   "pergunta": "Are persona and backstory treated as a prompt resource, and not as evidence of decision quality?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "STA01",
+   "area": "sta",
+   "fonte": "BAAS",
+   "paginas": "192-193",
+   "pergunta": "Is the task state represented explicitly (status, components, dependencies, deadlines)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "STA02",
+   "area": "sta",
+   "fonte": "BAAS",
+   "paginas": "194-195",
+   "pergunta": "Was the environment modeled: accessible systems, rules and constraints, dynamic conditions to monitor?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "STA03",
+   "area": "sta",
+   "fonte": "BAAS",
+   "paginas": "196",
+   "pergunta": "Do external changes arrive through events (instead of polling) when appropriate and update the state?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "STA04",
+   "area": "sta",
+   "fonte": "BAAS",
+   "paginas": "197-198",
+   "pergunta": "Are state transitions validated (payment, availability, dependencies, business rules) before being committed?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM01",
+   "area": "mem",
+   "fonte": "BAAS",
+   "paginas": "198-202",
+   "pergunta": "Is there a separation between short-term, long-term, and episodic memory, with a cleanup and retention policy?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM02",
+   "area": "mem",
+   "fonte": "BAAS",
+   "paginas": "202-203",
+   "pergunta": "Are the context hierarchy (global, session, task) and context switching (preserve, restore, merge) defined?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM03",
+   "area": "mem",
+   "fonte": "CE2",
+   "paginas": "9",
+   "pergunta": "Do collection and storage follow Minimal Sufficiency and Semantic Continuity?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM04",
+   "area": "mem",
+   "fonte": "CE2",
+   "paginas": "13-14",
+   "pergunta": "Was the memory abstraction form (summaries, schema, vectors, hierarchy) chosen by weighing the limitation of each?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM05",
+   "area": "mem",
+   "fonte": "CE2",
+   "paginas": "12",
+   "pergunta": "Is there a rule for transferring from short-term to long-term with temporal-relevance and importance thresholds defined by you?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM06",
+   "area": "mem",
+   "fonte": "CE2",
+   "paginas": "13",
+   "pergunta": "Do large data stay outside the window, with lightweight references or selected fields?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM07",
+   "area": "mem",
+   "fonte": "CE2",
+   "paginas": "10",
+   "pergunta": "Is storage layered according to use (cache, embedded database, secure storage, cloud), with protection for sensitive data?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MEM08",
+   "area": "mem",
+   "fonte": "BAAS",
+   "paginas": "241-242",
+   "pergunta": "Does persistent memory with personal data follow minimization, access control, and a retention policy?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX01",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "4-5",
+   "pergunta": "Is there a context inventory by category (user, application, environment, tools, memory, model service)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX02",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "16",
+   "pergunta": "Is there a token budget per component and a window-occupancy alert? (the ~50% threshold is a heuristic from coding agents, [DATED])",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX03",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "16",
+   "pergunta": "Does context selection consider semantic relevance, logical dependency, recency and frequency, overlap, and user preferences?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX04",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "16-17",
+   "pergunta": "Does retrieval have adequate chunking, a combination of semantic, non-semantic, or structured retrieval and, if needed, reranking?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX05",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "16",
+   "pergunta": "Is redundant information actively merged or removed?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX06",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "12",
+   "pergunta": "Is subagent context isolated, with its own prompt and minimal permissions?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX07",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "14-15",
+   "pergunta": "Does context sharing between agents use a defined mechanism (embedded prompt, structured messages, or shared memory)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CTX08",
+   "area": "ctx",
+   "fonte": "CE2",
+   "paginas": "15",
+   "pergunta": "Does cross-system sharing consciously choose between adapters and shared representation, weighing precision, flexibility, and interpretability?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPS01",
+   "area": "ops",
+   "fonte": "CE2",
+   "paginas": "18",
+   "pergunta": "Is the prompt prefix stable, with append-only updates and deterministic serialization (to take advantage of the KV cache)? [DATED]",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPS02",
+   "area": "ops",
+   "fonte": "CE2",
+   "paginas": "19",
+   "pergunta": "Do the agent's errors remain visible in the context so it can correct course? [DATED]",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPS03",
+   "area": "ops",
+   "fonte": "CE2",
+   "paginas": "19",
+   "pergunta": "Is there mitigation against repetition caused by very similar action-observation examples? [DATED]",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPS04",
+   "area": "ops",
+   "fonte": "CE2",
+   "paginas": "19",
+   "pergunta": "In long tasks, are goals kept and recited in the recent context (for example a to-do list)? [DATED]",
+   "origem": "[inference]"
+  },
+  {
+   "id": "OPS05",
+   "area": "ops",
+   "fonte": "CE2",
+   "paginas": "19",
+   "pergunta": "Does delegation to subagents include objective, expected output, tool guidance, and limits?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MAS01",
+   "area": "mas",
+   "fonte": "BAAS",
+   "paginas": "164-165",
+   "pergunta": "Are the roles (coordinator, delegator, workers) and the two-way information flow defined?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MAS02",
+   "area": "mas",
+   "fonte": "BAAS",
+   "paginas": "177, 180-181",
+   "pergunta": "Are the communication protocol and output format standardized across agents?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MAS03",
+   "area": "mas",
+   "fonte": "BAAS",
+   "paginas": "177-178",
+   "pergunta": "Is there a conflict rule: mediation by the delegator and final decision by the coordinator using predefined criteria?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MAS04",
+   "area": "mas",
+   "fonte": "BAAS",
+   "paginas": "205-206",
+   "pergunta": "Is parallelism used only for independent tasks, with dependencies respected (sequential when there is a dependency)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "MAS05",
+   "area": "mas",
+   "fonte": "BAAS",
+   "paginas": "165, 208",
+   "pergunta": "Is there fault tolerance (redundancy, role reassignment), load balancing, and a retry strategy?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG01",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "237-239",
+   "pergunta": "Are there action limits by risk level (financial limits, sensitive destinations or domains, when changes can be autonomous)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG02",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "237",
+   "pergunta": "Is there role-based access control and context-sensitive permissions for the agent's actions?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG03",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "237-239",
+   "pergunta": "Is there multi-step verification and human approval above thresholds for critical decisions?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG04",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "237-239",
+   "pergunta": "Are actions logged and reversible, respecting real-world constraints (cancellation policies)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG05",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "238",
+   "pergunta": "Is there anomaly and drift monitoring with alerts or corrective action?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG06",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "240",
+   "pergunta": "Is autonomy progressive (starting restricted) and do emergency protocols exist?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG07",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "42",
+   "pergunta": "Is LLM-generated code run in a sandbox and sanitized?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG08",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "233-234",
+   "pergunta": "For actions based on uncertain information, are there confidence thresholds, fallback, and real-time verification?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "SEG09",
+   "area": "seg",
+   "fonte": "pacote",
+   "paginas": "-",
+   "pergunta": "Are retrieved data and tool outputs treated as data and not as instructions (indirect injection)? (the texts do not detail this; it is a package question)",
+   "origem": "[extrapolation]"
+  },
+  {
+   "id": "SEG10",
+   "area": "seg",
+   "fonte": "BAAS",
+   "paginas": "139",
+   "pergunta": "Are tool credentials and authentication managed securely, with authorization verified?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF01",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "118-119, 216-220",
+   "pergunta": "Are decisions and recommendations explainable (recorded self-explanation, XAI when applicable)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF02",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "222-223",
+   "pergunta": "Are outputs labeled as AI-generated, with context and verification guidance?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF03",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "221, 226-227",
+   "pergunta": "Is uncertainty communicated (several options, confidence notes) instead of a single answer without caveats?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF04",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "223-224",
+   "pergunta": "Does the user have control over parameters and consent over data use?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF05",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "241-243",
+   "pergunta": "Is there privacy by design (minimization), governance and access control for data, and an incident response plan?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF06",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "235",
+   "pergunta": "Does the privacy analysis consider chains of decisions over time, and not only each isolated action?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "CNF07",
+   "area": "cnf",
+   "fonte": "BAAS",
+   "paginas": "232-233",
+   "pergunta": "Is bias handled: representative data, decision audits, and diverse stakeholders?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL01",
+   "area": "avl",
+   "fonte": "BAAS",
+   "paginas": "239",
+   "pergunta": "Do the tests cover decision chains and action sequences in simulated scenarios, and not only output quality?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL02",
+   "area": "avl",
+   "fonte": "BAAS",
+   "paginas": "114-115",
+   "pergunta": "Are there product metrics with baselines and thresholds (ratings, acceptance, complaints, engagement)?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL03",
+   "area": "avl",
+   "fonte": "BAAS",
+   "paginas": "238",
+   "pergunta": "Are there decision metrics (consistency, risk, adaptability) beyond output quality?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL04",
+   "area": "avl",
+   "fonte": "BAAS",
+   "paginas": "198",
+   "pergunta": "Does monitoring cover state-update latency, errors and recovery, resource utilization, and satisfaction?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL05",
+   "area": "avl",
+   "fonte": "CE2",
+   "paginas": "18",
+   "pergunta": "Does memory evaluation check relevance, recency, and correctness, as well as contradictions, and not only retrieval?",
+   "origem": "[inference]"
+  },
+  {
+   "id": "AVL06",
+   "area": "avl",
+   "fonte": "CE2",
+   "paginas": "18",
+   "pergunta": "Is it possible to trace and audit the reasoning that led to a decision (and undo wrong memory updates)?",
+   "origem": "[inference]"
+  }
+ ]
+}

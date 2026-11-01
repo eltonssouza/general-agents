@@ -1,0 +1,711 @@
+{
+ "versao": 2,
+ "convencao_de_pagina": "PDF pages (the === PAGE N === marker), not the printed numbering.",
+ "rotulos": {
+  "[from source]": "the cited page supports the item",
+  "[inference]": "follows from the pages, which do not state it",
+  "[extrapolation]": "convention external to the sources"
+ },
+ "areas": {
+  "review": {
+   "titulo": "General Rust code review",
+   "itens": [
+    {
+     "id": "rev-01",
+     "texto": "Text parameters: &str instead of &String (accepts String, &String, slices, and literals).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.113"
+     ],
+     "termos": [
+      "&str",
+      "String Slices as Parameters"
+     ]
+    },
+    {
+     "id": "rev-02",
+     "texto": "Return a slice instead of a loose index, which becomes stale after clear().",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.107-114"
+     ],
+     "termos": [
+      "first_word",
+      "slice"
+     ]
+    },
+    {
+     "id": "rev-03",
+     "texto": "clone() only when both copies are needed and the cost is acceptable.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.91-94",
+      "Book p.326"
+     ],
+     "termos": [
+      "clone",
+      "Trade-Offs"
+     ]
+    },
+    {
+     "id": "rev-04",
+     "texto": "for over the collection instead of while with an index (less risk of panic).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.79-80"
+     ],
+     "termos": [
+      "for",
+      "index"
+     ]
+    },
+    {
+     "id": "rev-05",
+     "texto": "Shadowing, not mut, when the type changes; const for domain values used in several places.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.48-50"
+     ],
+     "termos": [
+      "shadowing",
+      "constants"
+     ]
+    },
+    {
+     "id": "rev-06",
+     "texto": "Overflow: choose wrapping_*, checked_*, saturating_*, or overflowing_* consciously.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.54-55"
+     ],
+     "termos": [
+      "wrapping_*",
+      "checked_*",
+      "saturating_*",
+      "overflowing_*"
+     ]
+    },
+    {
+     "id": "rev-07",
+     "texto": "Do not index a String by integer; choose between bytes, chars, and grapheme clusters.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.198-202"
+     ],
+     "termos": [
+      "grapheme",
+      "index"
+     ]
+    },
+    {
+     "id": "rev-08",
+     "texto": "Types validated in the constructor (private field and a validating constructor) instead of scattered checks.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.230-233"
+     ],
+     "termos": [
+      "Guess",
+      "new"
+     ]
+    },
+    {
+     "id": "rev-09",
+     "texto": "Suggested order before committing: cargo fmt, cargo clippy, cargo test.",
+     "rotulo": "[inference]",
+     "fontes": [
+      "Book p.707-709"
+     ],
+     "termos": [
+      "rustfmt",
+      "Clippy"
+     ]
+    },
+    {
+     "id": "rev-10",
+     "texto": "Run cargo fmt --check in CI.",
+     "rotulo": "[extrapolation]",
+     "fontes": []
+    }
+   ]
+  },
+  "errors": {
+   "titulo": "Error handling",
+   "itens": [
+    {
+     "id": "err-01",
+     "texto": "Expected failure: Result; caller contract violation: panic! with a documented contract.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.228-230"
+     ],
+     "termos": [
+      "panic!",
+      "Result",
+      "contract"
+     ]
+    },
+    {
+     "id": "err-02",
+     "texto": "unwrap/expect only in an example, prototype, test, or with an invariant explained in the expect.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.221",
+      "Book p.228-229"
+     ],
+     "termos": [
+      "expect",
+      "prototyping"
+     ]
+    },
+    {
+     "id": "err-03",
+     "texto": "The ? operator only in a function whose return type is compatible (Result/Option).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.225-226"
+     ],
+     "termos": [
+      "?",
+      "return type"
+     ]
+    },
+    {
+     "id": "err-04",
+     "texto": "main can return Result<(), Box<dyn Error>>.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.227"
+     ],
+     "termos": [
+      "Box<dyn Error>",
+      "main"
+     ]
+    },
+    {
+     "id": "err-05",
+     "texto": "Error messages to stderr with eprintln!, not to stdout.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.349-350"
+     ],
+     "termos": [
+      "eprintln!",
+      "stderr"
+     ]
+    },
+    {
+     "id": "err-06",
+     "texto": "Construction that can fail: build returning Result, since many expect new to never fail.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.329"
+     ],
+     "termos": [
+      "build",
+      "never fail"
+     ]
+    },
+    {
+     "id": "err-07",
+     "texto": "Custom error with Display, Error, and From so that ? converts; Box<dyn Error> when the message is only displayed.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.332",
+      "RBE p.261-267"
+     ],
+     "termos": [
+      "Box<dyn Error>",
+      "From"
+     ]
+    }
+   ]
+  },
+  "ownership": {
+   "titulo": "Ownership, borrows, and lifetimes",
+   "itens": [
+    {
+     "id": "own-01",
+     "texto": "One mutable reference OR any number of immutable ones; every reference must be valid.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.101-103",
+      "Book p.106"
+     ],
+     "termos": [
+      "mutable reference",
+      "data race"
+     ]
+    },
+    {
+     "id": "own-02",
+     "texto": "A borrow goes from creation to the last use, not to the end of the block.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.103-104"
+     ],
+     "termos": [
+      "last use"
+     ]
+    },
+    {
+     "id": "own-03",
+     "texto": "Reference to a Vec element alive during push: reallocation would invalidate the reference (E0502).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.190-192"
+     ],
+     "termos": [
+      "E0502",
+      "push"
+     ]
+    },
+    {
+     "id": "own-04",
+     "texto": "Returning a reference to a local value cannot be fixed by annotation: return the owned value.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.105-106",
+      "Book p.268"
+     ],
+     "termos": [
+      "dangling",
+      "E0515"
+     ]
+    },
+    {
+     "id": "own-05",
+     "texto": "Annotate lifetimes only on the parameters related to the return value; the suggestion to use the same lifetime everywhere may be wrong.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.272",
+      "Book p.338"
+     ],
+     "termos": [
+      "contents",
+      "incorrect"
+     ]
+    },
+    {
+     "id": "own-06",
+     "texto": "Rc::clone(&a) as a convention to distinguish a cheap clone from a deep copy.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.432"
+     ],
+     "termos": [
+      "Rc::clone"
+     ]
+    },
+    {
+     "id": "own-07",
+     "texto": "RefCell only when compile-time checking does not suffice; the error becomes a runtime panic.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.435-436"
+     ],
+     "termos": [
+      "RefCell<T>",
+      "runtime"
+     ]
+    },
+    {
+     "id": "own-08",
+     "texto": "Rc cycles leak without any error; use Weak<T> on the non-owning edge.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.447",
+      "Book p.450"
+     ],
+     "termos": [
+      "Weak<T>",
+      "reference cycle"
+     ]
+    }
+   ]
+  },
+  "unsafe": {
+   "titulo": "Unsafe audit",
+   "itens": [
+    {
+     "id": "uns-01",
+     "texto": "Confirm that the code uses one of the five superpowers before opening unsafe.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.592"
+     ],
+     "termos": [
+      "five actions",
+      "unsafe"
+     ]
+    },
+    {
+     "id": "uns-02",
+     "texto": "Minimal unsafe block, encapsulated in a safe API.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.593",
+      "Book p.596"
+     ],
+     "termos": [
+      "safe abstraction",
+      "unsafe"
+     ]
+    },
+    {
+     "id": "uns-03",
+     "texto": "SAFETY comment explaining why the obligations hold.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.602"
+     ],
+     "termos": [
+      "SAFETY"
+     ]
+    },
+    {
+     "id": "uns-04",
+     "texto": "static mut: do not create references; use &raw const/&raw mut; the static_mut_refs lint denies by default.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.602"
+     ],
+     "termos": [
+      "static_mut_refs",
+      "raw"
+     ]
+    },
+    {
+     "id": "uns-05",
+     "texto": "Miri only sees executed paths: finding a problem is a bug, finding none does not prove absence.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.604-606"
+     ],
+     "termos": [
+      "Miri"
+     ]
+    },
+    {
+     "id": "uns-06",
+     "texto": "unsafe extern is mandatory in edition 2024.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.160"
+     ],
+     "termos": [
+      "2024",
+      "unsafe"
+     ]
+    },
+    {
+     "id": "uns-07",
+     "texto": "no_mangle, export_name, and link_section require #[unsafe(...)] (edition 2024).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.191",
+      "Ref p.639-641"
+     ],
+     "termos": [
+      "no_mangle",
+      "export_name",
+      "link_section"
+     ]
+    },
+    {
+     "id": "uns-08",
+     "texto": "Walk through the Reference's UB list (non-exhaustive): aliasing, data race, dangling, misalignment.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.624-627"
+     ],
+     "termos": [
+      "undefined behavior",
+      "dangling",
+      "aligned"
+     ]
+    },
+    {
+     "id": "uns-09",
+     "texto": "Invalid values are immediate UB: bool outside 0/1, char outside the range, null reference, ! never exists.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.627-628"
+     ],
+     "termos": [
+      "bool",
+      "char",
+      "null"
+     ]
+    },
+    {
+     "id": "uns-10",
+     "texto": "Always write an explicit unsafe {} inside unsafe fn.",
+     "rotulo": "[inference]",
+     "fontes": [
+      "Ref p.621-622",
+      "Book p.596"
+     ],
+     "termos": [
+      "unsafe_op_in_unsafe_fn"
+     ]
+    }
+   ]
+  },
+  "concurrency": {
+   "titulo": "Concurrency and async",
+   "itens": [
+    {
+     "id": "con-01",
+     "texto": "thread::spawn needs move when the closure uses local data (E0373).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.464-466"
+     ],
+     "termos": [
+      "move",
+      "E0373"
+     ]
+    },
+    {
+     "id": "con-02",
+     "texto": "Rc is not Send: swap it for Arc; Arc<Mutex<T>> for shared state.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.480-481",
+      "Book p.483"
+     ],
+     "termos": [
+      "Send",
+      "Arc<T>"
+     ]
+    },
+    {
+     "id": "con-03",
+     "texto": "Mutex does not prevent deadlock.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.482"
+     ],
+     "termos": [
+      "deadlock"
+     ]
+    },
+    {
+     "id": "con-04",
+     "texto": "Simple counter: atomic types instead of Mutex (the API is not in the sources).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.482"
+     ],
+     "termos": [
+      "atomic"
+     ]
+    },
+    {
+     "id": "con-05",
+     "texto": "Futures are lazy: forgetting .await means nothing runs.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.492"
+     ],
+     "termos": [
+      "lazy",
+      "await"
+     ]
+    },
+    {
+     "id": "con-06",
+     "texto": "Blocking work without an await point makes the future monopolize the thread (starvation).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.510"
+     ],
+     "termos": [
+      "starving",
+      "await point"
+     ]
+    },
+    {
+     "id": "con-07",
+     "texto": "A recv loop only ends when all tx are dropped: use async move to drop the tx.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.506-508"
+     ],
+     "termos": [
+      "async move",
+      "tx"
+     ]
+    },
+    {
+     "id": "con-08",
+     "texto": "trpl::select is not fair: pass the priority future first; trpl::join is fair.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.502",
+      "Book p.515"
+     ],
+     "termos": [
+      "fair",
+      "select"
+     ]
+    },
+    {
+     "id": "con-09",
+     "texto": "Parallelizable CPU-bound: threads; highly concurrent I/O-bound: async; they can be combined.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.485-486",
+      "Book p.533-534"
+     ],
+     "termos": [
+      "CPU",
+      "I/O"
+     ]
+    }
+   ]
+  },
+  "edition": {
+   "titulo": "Edition migration and differences",
+   "itens": [
+    {
+     "id": "edi-01",
+     "texto": "Without the edition key in Cargo.toml, 2015 applies.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.711"
+     ],
+     "termos": [
+      "2015",
+      "key doesn"
+     ]
+    },
+    {
+     "id": "edi-02",
+     "texto": "Editions only change the initial parse; crates of different editions link together.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.711-712"
+     ],
+     "termos": [
+      "compile",
+      "dependency"
+     ]
+    },
+    {
+     "id": "edi-03",
+     "texto": "Closures: up to 2018 they capture the whole variable; afterwards, by path (the Reference only labels the old regime).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.431"
+     ],
+     "termos": [
+      "Edition 2018 and before",
+      "entirety"
+     ]
+    },
+    {
+     "id": "edi-04",
+     "texto": "Let chains in if only from 2024.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.357"
+     ],
+     "termos": [
+      "2024",
+      "let chains"
+     ]
+    },
+    {
+     "id": "edi-05",
+     "texto": "unsafe extern mandatory in 2024; no_mangle & co. with unsafe(...).",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.160",
+      "Ref p.639-641"
+     ],
+     "termos": [
+      "2024",
+      "no_mangle"
+     ]
+    },
+    {
+     "id": "edi-06",
+     "texto": "impl Trait in return position captures all lifetimes in scope in 2024.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.444"
+     ],
+     "termos": [
+      "2024",
+      "capture"
+     ]
+    },
+    {
+     "id": "edi-07",
+     "texto": "Divergence fallback: () before 2024, ! after.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.482"
+     ],
+     "termos": [
+      "2024",
+      "fallback"
+     ]
+    },
+    {
+     "id": "edi-08",
+     "texto": "dyn mandatory from 2021; async/await/dyn keywords in 2018; try reserved in 2018; gen in 2024.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.13-14",
+      "Ref p.438"
+     ],
+     "termos": [
+      "2021",
+      "2018",
+      "gen"
+     ]
+    },
+    {
+     "id": "edi-09",
+     "texto": "Binding modes: explicit ref/ref mut/mut under a non-move mode are rejected in 2024.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.374"
+     ],
+     "termos": [
+      "2024",
+      "binding mode"
+     ]
+    },
+    {
+     "id": "edi-10",
+     "texto": "Temporaries: in 2024 the if let scrutinee is dropped before the else.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Ref p.490-491"
+     ],
+     "termos": [
+      "2024",
+      "else"
+     ]
+    },
+    {
+     "id": "edi-11",
+     "texto": "cargo fix migrates between editions; flags such as --edition are not in the sources.",
+     "rotulo": "[from source]",
+     "fontes": [
+      "Book p.708",
+      "Book p.712"
+     ],
+     "termos": [
+      "cargo fix",
+      "edition"
+     ]
+    }
+   ]
+  }
+ }
+}

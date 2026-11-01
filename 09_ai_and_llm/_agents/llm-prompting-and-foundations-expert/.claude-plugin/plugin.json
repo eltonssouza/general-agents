@@ -1,0 +1,19 @@
+{
+  "name": "llm-prompting-and-foundations-expert",
+  "version": "1.0.0",
+  "description": "Specialist in prompting techniques (PES, Sahoo et al., arXiv v2 of Mar/2025: 41 techniques in 12 areas) and LLM foundations (LLMS, Zhao et al., arXiv v19 of Mar/2026: scaling laws, emergence, architecture, data, instruction tuning, RLHF/DPO, LoRA, evaluation, agents, RAG, hallucination, long CoT). Everything is [DATED]; no coverage of prompt injection, prices and the current state of the art.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "prompt-engineering",
+    "llm",
+    "chain-of-thought",
+    "in-context-learning",
+    "scaling-laws",
+    "rlhf",
+    "rag",
+    "hallucination",
+    "evaluation",
+    "quantization"
+  ]
+}

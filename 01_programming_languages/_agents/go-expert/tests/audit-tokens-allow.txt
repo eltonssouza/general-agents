@@ -1,0 +1,19 @@
+# FAIL/NEAR items of tests/audit_tokens.py already triaged by hand (file:line:term # reason).
+# If a reference is edited and the lines change, run audit_tokens.py again and triage the new items.
+references/INDEX.md:53:panic(nil) # neighboring term belongs to RN1.21 p.3 (the line cites RN1.23 p.2 for another subject)
+references/casos-e-antipadroes.md:40:sub[0] # rewritten example; the claim (a subslice is a window over the array) is in Little p.44-45
+references/casos-e-antipadroes.md:106:time.Sleep # the term belongs to the Little p.73 citation in the same cell; Spec p.111 supports only "main exits without waiting"
+references/frameworks.md:251:go.mod # term from the package's own text (advice about the go line), not attributed to Eff p.44
+references/glossario.md:121:x != nil # conclusion labeled [inference] (Spec p.12 + p.69), not attributed to a page
+references/glossario.md:139:Seq2 # the entry says iter.Seq2 does NOT appear in the notes; Seq2 only appears as reflect.Value.Seq2 in RN1.23 p.9
+references/glossario.md:139:iter.Seq2 # same: absence confirmed by tests/citation-checks.json (negative check)
+references/procedimentos.md:95:go.mod # package advice (check the go.mod); the version rule is in Spec p.115
+references/regras-da-spec.md:130:x != nil # conclusion labeled [inference]
+references/regras-da-spec.md:180:T.Mp # the "illegal" sentence is in Spec p.50; the T.Mp code spills over to p.51
+references/regras-da-spec.md:204:x != nil # conclusion labeled [inference]
+references/regras-da-spec.md:214:[]rune # the conversion rules are in Spec p.72; the examples with []rune are on p.74
+references/regras-da-spec.md:238:os.Exit # labeled [inference]: the Spec lists only the terminating statements (p.78-79) and does not mention os.Exit
+references/regras-da-spec.md:309:{int} # the package's own notation in an [inference]
+references/regras-da-spec.md:400:a[low:high:max] # the line cites p.45 for [...]T and p.55 for the full form; the neighboring term is from p.55
+references/versoes-e-migracao.md:401:errors.Is/As # guidance labeled [inference]: the note (RN1.23 p.6) only says that errors are wrapped
+references/versoes-e-migracao.md:577:Attr # the line lists what is NOT COVERED (RN1.21 p.6 only announces slog)

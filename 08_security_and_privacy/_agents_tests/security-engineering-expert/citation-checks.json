@@ -1,0 +1,2280 @@
+{
+ "fonte": "SE3, PDF Security-Engineering-RossAnderson-3e",
+ "checks": [
+  {
+   "cite": "SE3 p.51",
+   "contains": [
+    "malice",
+    "error",
+    "mischance",
+    "dependable"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.52",
+   "contains": [
+    "policy",
+    "assurance",
+    "incentive"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.53",
+   "contains": [
+    "security theatre",
+    "cockpit"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.61",
+   "contains": [
+    "trusted",
+    "trustworthy",
+    "principal"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.63",
+   "contains": [
+    "hack",
+    "vulnerability"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.66",
+   "contains": [
+    "spies",
+    "crooks",
+    "geeks"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.89",
+   "contains": [
+    "Equifax",
+    "Struts",
+    "145.5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.97-98",
+   "contains": [
+    "CEO",
+    "Volkswagen"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.99",
+   "contains": [
+    "whistleblower"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.107",
+   "contains": [
+    "abusability"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.113",
+   "contains": [
+    "post-completion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.118-119",
+   "contains": [
+    "Milgram",
+    "Asch",
+    "bystander"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.120-123",
+   "contains": [
+    "fraud triangle",
+    "opportunity"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.125",
+   "contains": [
+    "present bias"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.133-134",
+   "contains": [
+    "138",
+    "336"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.139-140",
+   "contains": [
+    "Palin",
+    "security question"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.145",
+   "contains": [
+    "100,000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.146-147",
+   "contains": [
+    "800-63",
+    "40%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.147",
+   "contains": [
+    "7,776",
+    "77 bits"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.152",
+   "contains": [
+    "throttl"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.154",
+   "contains": [
+    "TENEX"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.156",
+   "contains": [
+    "salt"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.158",
+   "contains": [
+    "CVCNCVCN",
+    "two months"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.161",
+   "contains": [
+    "Pavur"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.167-168",
+   "contains": [
+    "PT2262"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.170",
+   "contains": [
+    "ABAB"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.172-173",
+   "contains": [
+    "Keeloq",
+    "Megamos"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.173-174",
+   "contains": [
+    "56%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.178-179",
+   "contains": [
+    "middleperson"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.179",
+   "contains": [
+    "reflection"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.180",
+   "contains": [
+    "IFF"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.181-182",
+   "contains": [
+    "phantom withdrawals",
+    "Holland"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.184",
+   "contains": [
+    "resurrecting duckling"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.185-186",
+   "contains": [
+    "Needham-Schroeder"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.186-187",
+   "contains": [
+    "Kerberos",
+    "timestamp"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.189",
+   "contains": [
+    "verified",
+    "TLS"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.190",
+   "contains": [
+    "don't design"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.202",
+   "contains": [
+    "68-bit",
+    "bitcoin"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.205",
+   "contains": [
+    "birthday theorem",
+    "23 pupils"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.206",
+   "contains": [
+    "MD5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.221-222",
+   "contains": [
+    "Deep Crack",
+    "3DES"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.223-224",
+   "contains": [
+    "ECB"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.224-225",
+   "contains": [
+    "Vaudenay",
+    "padding oracle"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.227",
+   "contains": [
+    "GCM"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.229-230",
+   "contains": [
+    "Sydney",
+    "MD5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.232",
+   "contains": [
+    "RSA-250",
+    "829"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.233-235",
+   "contains": [
+    "OAEP",
+    "Bleichenbacher"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.237-238",
+   "contains": [
+    "Diffie"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.241-242",
+   "contains": [
+    "DigiNotar"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.249",
+   "contains": [
+    "172"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.256",
+   "contains": [
+    "15,000,000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.257",
+   "contains": [
+    "role"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.258",
+   "contains": [
+    "container"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.260-261",
+   "contains": [
+    "capabilit"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.264-265",
+   "contains": [
+    "Android",
+    "trust on first use"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.271-272",
+   "contains": [
+    "194"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.278-279",
+   "contains": [
+    "smashing the stack",
+    "256"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.280-281",
+   "contains": [
+    "TOCTTOU"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.281-282",
+   "contains": [
+    "Spectre",
+    "Needham"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.283-284",
+   "contains": [
+    "90%",
+    "canar",
+    "ASLR"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.289",
+   "contains": [
+    "Amdahl"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.290",
+   "contains": [
+    "floor limit",
+    "stand-in"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.297",
+   "contains": [
+    "Byzantine",
+    "3t"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.301-302",
+   "contains": [
+    "Tesco"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.302-303",
+   "contains": [
+    "Panix",
+    "booter"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.304-308",
+   "contains": [
+    "Zooko",
+    "Needham"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.308",
+   "contains": [
+    "Zooko"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.313",
+   "contains": [
+    "10m",
+    "duplicate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.314",
+   "contains": [
+    "Kent"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.319",
+   "contains": [
+    "incentive"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.326-327",
+   "contains": [
+    "lock-in",
+    "150"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.328-329",
+   "contains": [
+    "lemons",
+    "2000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.331-333",
+   "contains": [
+    "prisoner",
+    "tit-for-tat"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.333",
+   "contains": [
+    "hawk",
+    "dove"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.338-340",
+   "contains": [
+    "ship it Tuesday"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.342-343",
+   "contains": [
+    "weakest-link",
+    "best-shot",
+    "sum-of-efforts"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.349-350",
+   "contains": [
+    "privacy paradox"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.360-361",
+   "contains": [
+    "need-to-know"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.364-365",
+   "contains": [
+    "Bell-LaPadula",
+    "simple security",
+    "*-property"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.369-370",
+   "contains": [
+    "Biba",
+    "Low"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.389",
+   "contains": [
+    "Vault 7"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.397-399",
+   "contains": [
+    "BMA",
+    "ACL"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.400-401",
+   "contains": [
+    "NPfIT",
+    "receptionist"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.413-415",
+   "contains": [
+    "Chinese Wall",
+    "cooling"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.420-421",
+   "contains": [
+    "tracker",
+    "query set"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.422-423",
+   "contains": [
+    "k-anonymity",
+    "33 bits"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.428",
+   "contains": [
+    "69%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.430",
+   "contains": [
+    "AOL",
+    "Netflix"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.434",
+   "contains": [
+    "differential privacy",
+    "Laplace",
+    "1000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.435-436",
+   "contains": [
+    "census",
+    "reconstruction"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.437",
+   "contains": [
+    "privacy set",
+    "anonymity set"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.451",
+   "contains": [
+    "Clark-Wilson",
+    "audit trail"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.453-454",
+   "contains": [
+    "prevent",
+    "detect",
+    "recover"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.456-457",
+   "contains": [
+    "Fizzy",
+    "Lloyds"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.459-460",
+   "contains": [
+    "Horizon",
+    "587"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.461-462",
+   "contains": [
+    "Wirecard"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.469",
+   "contains": [
+    "Bangladesh"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.473-474",
+   "contains": [
+    "Postbank"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.478-479",
+   "contains": [
+    "Regulation E",
+    "Munden"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.492-494",
+   "contains": [
+    "No-PIN",
+    "pre-play",
+    "unpredictable number"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.496-497",
+   "contains": [
+    "Tesco Bank"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.140",
+   "contains": [
+    "96%",
+    "76%",
+    "99%",
+    "90%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.162-163",
+   "contains": [
+    "1000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.181-182",
+   "contains": [
+    "Holland",
+    "1993"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.245-246",
+   "contains": [
+    "twelve",
+    "four of"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.263-264",
+   "contains": [
+    "ten",
+    "10"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.278-279",
+   "contains": [
+    "half",
+    "256"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.301-302",
+   "contains": [
+    "1980s",
+    "Saturday",
+    "year"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.302-303",
+   "contains": [
+    "$10",
+    "50,000",
+    "fifteen",
+    "Akamai"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.994-995",
+   "contains": [
+    "hundred times"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.456",
+   "contains": [
+    "thirty",
+    "forty"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.468",
+   "contains": [
+    "twenty",
+    "512"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.474-477",
+   "contains": [
+    "fourteen"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.543-546",
+   "contains": [
+    "12.5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.568",
+   "contains": [
+    "twelve"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.603",
+   "contains": [
+    "71",
+    "ten",
+    "Trujillo"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.611-612",
+   "contains": [
+    "1990s",
+    "90s",
+    "1%",
+    "0.01%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.620-621",
+   "contains": [
+    "11",
+    "eleven",
+    "gelatin"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1033-1034",
+   "contains": [
+    "pizza"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1020-1042",
+   "contains": [
+    "Bezos",
+    "pizza"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1054-1055",
+   "contains": [
+    "angle",
+    "346",
+    "737"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1005-1007",
+   "contains": [
+    "FMEA",
+    "737"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1065-1067",
+   "contains": [
+    "ISO 27001",
+    "Cyber Essentials",
+    "Bitsight"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1090-1091",
+   "contains": [
+    "20",
+    "twenty",
+    "forty",
+    "sustainab"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.908-909",
+   "contains": [
+    "1990s",
+    "90s"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.417-418",
+   "contains": [
+    "1970",
+    "1990",
+    "2006"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.532-533",
+   "contains": [
+    "Hackensack",
+    "Tulsa",
+    "London",
+    "£20"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.699",
+   "contains": [
+    "pizza",
+    "Pentagon",
+    "GUM"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.675-676",
+   "contains": [
+    "Cold War"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.301-302",
+   "contains": [
+    "Tesco",
+    "40 seconds",
+    "2001"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.253-254",
+   "contains": [
+    "layers",
+    "middleware"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.259-260",
+   "contains": [
+    "suid"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.261-262",
+   "contains": [
+    "TPM",
+    "trusted boot"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.263-264",
+   "contains": [
+    "secure enclave",
+    "PIN"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.268-270",
+   "contains": [
+    "same-origin",
+    "CSRF"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.281",
+   "contains": [
+    "return-oriented",
+    "Spectre"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.282-283",
+   "contains": [
+    "confused deputy"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.283-284",
+   "contains": [
+    "DEP",
+    "2003"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.284-285",
+   "contains": [
+    "environmental creep"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.295-296",
+   "contains": [
+    "Cinderella",
+    "NTP"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.298-299",
+   "contains": [
+    "Stratus"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.300-301",
+   "contains": [
+    "fallback"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.301-302",
+   "contains": [
+    "Netflix",
+    "chaos"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.305-308",
+   "contains": [
+    "Prawo Jazdy",
+    "M-Pesa",
+    "Norway"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.325-326",
+   "contains": [
+    "network effects",
+    "two-sided"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.330-331",
+   "contains": [
+    "Nash"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.335-336",
+   "contains": [
+    "Vickrey"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.340-341",
+   "contains": [
+    "OpenBSD"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.341-342",
+   "contains": [
+    "Zerodium",
+    "iDefense"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.346-348",
+   "contains": [
+    "2019/771"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.350-351",
+   "contains": [
+    "Pew",
+    "93%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.353-354",
+   "contains": [
+    "burglary"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.362-363",
+   "contains": [
+    "Top Secret",
+    "SCI"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.364",
+   "contains": [
+    "Anderson report",
+    "reference monitor"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.366-367",
+   "contains": [
+    "tranquility",
+    "high water mark"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.375-381",
+   "contains": [
+    "polyinstantiation",
+    "covert channel",
+    "cascade"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.381",
+   "contains": [
+    "MILS",
+    "diode"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.389-392",
+   "contains": [
+    "Wildbook"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.397-398",
+   "contains": [
+    "principle"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.402-405",
+   "contains": [
+    "HES",
+    "DeepMind",
+    "TPP"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.406-408",
+   "contains": [
+    "OpenSAFELY",
+    "medConfidential"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.421-422",
+   "contains": [
+    "complementary",
+    "suppression"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.425-426",
+   "contains": [
+    "Source Informatics",
+    "Iceland"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.429",
+   "contains": [
+    "98%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.431-433",
+   "contains": [
+    "Montjoye",
+    "Victoria"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.434",
+   "contains": [
+    "Dinur",
+    "reconstruction"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.436-437",
+   "contains": [
+    "Ohm",
+    "Royal Society"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.441-443",
+   "contains": [
+    "0.96%",
+    "feeders"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.447-449",
+   "contains": [
+    "double-entry",
+    "collusion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.452-453",
+   "contains": [
+    "Sarbanes",
+    "COSO"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.458",
+   "contains": [
+    "230",
+    "14%",
+    "SEC"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.465-468",
+   "contains": [
+    "test key",
+    "512"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.471-472",
+   "contains": [
+    "3624",
+    "offset"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.475-477",
+   "contains": [
+    "Lebanese loop",
+    "jackpotting",
+    "false terminals"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.480-484",
+   "contains": [
+    "CVV",
+    "PCI"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.486-492",
+   "contains": [
+    "ARQC",
+    "SDA",
+    "DDA"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.498-501",
+   "contains": [
+    "CAP",
+    "mule"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.511-513",
+   "contains": [
+    "Mifare",
+    "bumping"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.513-514",
+   "contains": [
+    "Abdurrahman",
+    "Charlie"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.514",
+   "contains": [
+    "Lojack"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.538-541",
+   "contains": [
+    "STS",
+    "ghost"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.564-565",
+   "contains": [
+    "Stampit",
+    "grey"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.581-582",
+   "contains": [
+    "subliminal",
+    "DSA"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.600",
+   "contains": [
+    "gundecking"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.619",
+   "contains": [
+    "6,000,000",
+    "0.31%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.620",
+   "contains": [
+    "Matsumoto"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.625-627",
+   "contains": [
+    "iris"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.668",
+   "contains": [
+    "Amazon",
+    "trillion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.671-672",
+   "contains": [
+    "third shift",
+    "trojan"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.675-676",
+   "contains": [
+    "Tempest",
+    "Spectre"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.699",
+   "contains": [
+    "Nissenbaum",
+    "contextual integrity"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.703-705",
+   "contains": [
+    "cold boot",
+    "BitLocker"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.705-708",
+   "contains": [
+    "X3DH",
+    "double ratchet",
+    "SGX"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.712",
+   "contains": [
+    "17 transactions"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.716-717",
+   "contains": [
+    "featuritis",
+    "Gemalto"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.731",
+   "contains": [
+    "Moscow",
+    "West Virginia"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.748-749",
+   "contains": [
+    "EternalBlue",
+    "filehandle"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.749-750",
+   "contains": [
+    "packer"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.751-752",
+   "contains": [
+    "inventory"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.752",
+   "contains": [
+    "Chromebook"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.753-754",
+   "contains": [
+    "BeyondCorp",
+    "proxy"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.757-758",
+   "contains": [
+    "Benford",
+    "honeypot"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.759",
+   "contains": [
+    "Cohen",
+    "halting problem"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.765",
+   "contains": [
+    "DigiNotar",
+    "300,000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.768",
+   "contains": [
+    "Certificate Transparency"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.794-795",
+   "contains": [
+    "SIM swap",
+    "MTN",
+    "Verizon"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.808-809",
+   "contains": [
+    "FordPass"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.846-847",
+   "contains": [
+    "propaganda"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.896-897",
+   "contains": [
+    "wicked"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.909",
+   "contains": [
+    "Tay",
+    "16 hours"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.911",
+   "contains": [
+    "Sommer",
+    "Paxson"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.913",
+   "contains": [
+    "Narayanan",
+    "snake oil"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.981-983",
+   "contains": [
+    "chain of custody"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.984-985",
+   "contains": [
+    "Munden",
+    "Operation Ore"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.991-992",
+   "contains": [
+    "Safe Harbour",
+    "Privacy Shield"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.999",
+   "contains": [
+    "risk register"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1000",
+   "contains": [
+    "CRAMM",
+    "ALE"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1003-1005",
+   "contains": [
+    "fault tree",
+    "FMEA",
+    "Challenger"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1006",
+   "contains": [
+    "meet-in-the-middle",
+    "elevation of privilege"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1009",
+   "contains": [
+    "Satan"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1017-1019",
+   "contains": [
+    "SDL",
+    "champion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1027-1028",
+   "contains": [
+    "HackerOne",
+    "zero-day"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1029-1031",
+   "contains": [
+    "Shellshock",
+    "Heartbleed",
+    "CVSS"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1031-1032",
+   "contains": [
+    "press release"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1034-1036",
+   "contains": [
+    "CISO"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1046-1048",
+   "contains": [
+    "quaint"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1051-1053",
+   "contains": [
+    "Therac"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1056-1057",
+   "contains": [
+    "Orange Book",
+    "ITSEC",
+    "FIPS 140"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1057-1060",
+   "contains": [
+    "EAL",
+    "1472"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1063-1065",
+   "contains": [
+    "Lerner",
+    "Tirole",
+    "Maximum Complacency"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1065-1067",
+   "contains": [
+    "Cybersecurity Act",
+    "ENISA"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1070-1071",
+   "contains": [
+    "Project Zero",
+    "90 days"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1071-1073",
+   "contains": [
+    "Raymond",
+    "Kerckhoffs"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.1075-1080",
+   "contains": [
+    "pacemaker",
+    "diesel",
+    "465,000"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "SE3 p.157",
+   "contains": [
+    "probability that a password can be guessed in its lifetime",
+    "US Department of Defense password"
+   ],
+   "claim": "P = L.R/S (DoD) is on p.157"
+  },
+  {
+   "cite": "SE3 p.158",
+   "contains": [
+    "CVCNCVCN",
+    "5 million seconds",
+    "two months"
+   ],
+   "claim": "CVCNCVCN template example and 100 guesses/s"
+  },
+  {
+   "cite": "SE3 p.205",
+   "contains": [
+    "birthday theorem",
+    "23 pupils",
+    "square root of this, namely"
+   ],
+   "claim": "birthday: 2^(n/2) and 23 people"
+  },
+  {
+   "cite": "SE3 p.205",
+   "contains": [
+    "more precisely",
+    "probability that m ﬁsh chosen randomly"
+   ],
+   "claim": "note with the formula beta = N(N-1)...(N-m+1)/N^m"
+  },
+  {
+   "cite": "SE3 p.632",
+   "contains": [
+    "1177",
+    "692,076",
+    "0.500",
+    "false match pairing"
+   ],
+   "claim": "biometrics: N > sqrt(1.386/f); 1177 people"
+  },
+  {
+   "cite": "SE3 p.759",
+   "contains": [
+    "too few attacks",
+    "ten real attacks per million",
+    "ratio of false to real alarms will be 100"
+   ],
+   "claim": "base rate in IDS"
+  },
+  {
+   "cite": "SE3 p.1000",
+   "contains": [
+    "annualized loss expectancy",
+    "teller takes cash",
+    "$648,000",
+    "$250,000",
+    "$100,000",
+    "guesswork"
+   ],
+   "claim": "ALE table (Fig. 27.1) and the author's warning"
+  },
+  {
+   "cite": "SE3 p.999",
+   "contains": [
+    "risk register"
+   ],
+   "claim": "risk register on p.999"
+  },
+  {
+   "cite": "SE3 p.1067",
+   "contains": [
+    "poisson distribution",
+    "reliability growth"
+   ],
+   "claim": "single bug: Poisson model"
+  },
+  {
+   "cite": "SE3 p.1068",
+   "contains": [
+    "mean time between failure",
+    "a million hours",
+    "test for (at least) a million hours"
+   ],
+   "claim": "MTBF ~ t/k; proportional testing"
+  },
+  {
+   "cite": "SE3 p.1069",
+   "contains": [
+    "1,000,000 bugs",
+    "Ahmed",
+    "Brian",
+    "thermodynamics on his side",
+    "10%"
+   ],
+   "claim": "attacker vs defender"
+  },
+  {
+   "cite": "SE3 p.297",
+   "contains": [
+    "Byzantine",
+    "Lamport"
+   ],
+   "claim": "Byzantine faults (n >= 3t+1)"
+  },
+  {
+   "cite": "SE3 p.289",
+   "contains": [
+    "Amdahl"
+   ],
+   "claim": "Amdahl's law"
+  },
+  {
+   "cite": "SE3 p.333",
+   "contains": [
+    "hawk",
+    "dove"
+   ],
+   "claim": "hawk-dove"
+  },
+  {
+   "cite": "SE3 p.147",
+   "contains": [
+    "7,776",
+    "77 bits"
+   ],
+   "claim": "EFF list: six words ~ 77 bits"
+  },
+  {
+   "cite": "SE3 p.202",
+   "contains": [
+    "68-bit",
+    "bitcoin"
+   ],
+   "claim": "bitcoin mining as a yardstick for brute force"
+  },
+  {
+   "cite": "SE3 p.221-222",
+   "contains": [
+    "Deep Crack",
+    "3DES"
+   ],
+   "claim": "DES / 3DES"
+  },
+  {
+   "cite": "SE3 p.152",
+   "contains": [
+    "throttl"
+   ],
+   "claim": "throttling vs lockout"
+  },
+  {
+   "cite": "SE3 p.1043",
+   "contains": [
+    "strides"
+   ],
+   "claim": "the only occurrence of 'stride' in the book is the word 'strides' (there is no STRIDE)"
+  },
+  {
+   "cite": "SE3 p.1006",
+   "contains": [
+    "meet-in-the-middle",
+    "spooﬁng",
+    "tampering",
+    "repudiation",
+    "information disclosure",
+    "elevation of privilege"
+   ],
+   "claim": "Microsoft threat modelling"
+  },
+  {
+   "cite": "SE3 p.1031-1032",
+   "contains": [
+    "incident response",
+    "press release"
+   ],
+   "claim": "IR plan: components and reassurance"
+  },
+  {
+   "cite": "SE3 p.1065-1066",
+   "contains": [
+    "Cyber Essentials",
+    "ISO 27001",
+    "income stream"
+   ],
+   "claim": "ISO 27001 as a revenue source for accounting firms"
+  },
+  {
+   "cite": "SE3 p.1090-1091",
+   "contains": [
+    "twenty or even forty years",
+    "no real idea how to do that"
+   ],
+   "claim": "sustainability: software for 20-40 years"
+  },
+  {
+   "cite": "SE3 p.712",
+   "contains": [
+    "chain of 17 transactions",
+    "lie and cheat"
+   ],
+   "claim": "HSM: chain of 17 transactions"
+  },
+  {
+   "cite": "SE3 p.986",
+   "contains": [
+    "1890",
+    "Warren",
+    "Brandeis"
+   ],
+   "claim": "Warren and Brandeis"
+  },
+  {
+   "cite": "SE3 p.545",
+   "contains": [
+    "12.5m",
+    "39m"
+   ],
+   "claim": "UK smart meters"
+  },
+  {
+   "cite": "SE3 p.462",
+   "contains": [
+    "Wirecard",
+    "€2.1bn",
+    "screenshots"
+   ],
+   "claim": "Wirecard"
+  },
+  {
+   "cite": "SE3 p.1032",
+   "contains": [
+    "Bezos"
+   ],
+   "claim": "Bezos's law"
+  },
+  {
+   "cite": "SE3 p.1055",
+   "contains": [
+    "failure modes and effects analysis",
+    "MCAS"
+   ],
+   "claim": "737 Max without an adequate FMEA"
+  },
+  {
+   "cite": "SE3 p.156",
+   "absent": [
+    "bcrypt",
+    "argon2",
+    "pbkdf2",
+    "scrypt"
+   ],
+   "claim": "the book prescribes salt + slow function but does not name bcrypt/argon2/scrypt"
+  },
+  {
+   "cite": "SE3 p.759-760",
+   "absent": [
+    "snort",
+    "suricata",
+    "splunk",
+    "zeek"
+   ],
+   "claim": "IDS without tool names"
+  },
+  {
+   "cite": "SE3 p.1006-1007",
+   "absent": [
+    "STRIDE",
+    "DREAD",
+    "PASTA"
+   ],
+   "claim": "threat modelling without the name STRIDE"
+  },
+  {
+   "cite": "SE3 p.1000",
+   "absent": [
+    "FAIR",
+    "OCTAVE",
+    "ISO 27005"
+   ],
+   "claim": "ALE without FAIR/OCTAVE"
+  },
+  {
+   "cite": "SE3 p.434-436",
+   "absent": [
+    "gaussian",
+    "rdp",
+    "zero-knowledge"
+   ],
+   "claim": "DP in the book: Laplace, without gaussian/RDP"
+  },
+  {
+   "cite": "SE3 p.223-228",
+   "absent": [
+    "chacha20",
+    "poly1305",
+    "aes-gcm-siv"
+   ],
+   "claim": "modes: without ChaCha20-Poly1305"
+  },
+  {
+   "cite": "SE3 p.232-240",
+   "absent": [
+    "ed25519",
+    "curve25519",
+    "x25519"
+   ],
+   "claim": "asymmetric ciphers without Ed25519/X25519"
+  },
+  {
+   "cite": "SE3 p.271-272",
+   "absent": [
+    "kubernetes",
+    "podman",
+    "gvisor"
+   ],
+   "claim": "containers without Kubernetes"
+  },
+  {
+   "cite": "SE3 p.752-757",
+   "absent": [
+    "zero trust",
+    "sase",
+    "casb"
+   ],
+   "claim": "network defense (BeyondCorp) without the term zero trust"
+  },
+  {
+   "cite": "SE3 p.1017-1019",
+   "absent": [
+    "SAMM",
+    "BSIMM",
+    "OWASP"
+   ],
+   "claim": "SDL without SAMM/BSIMM/OWASP"
+  },
+  {
+   "cite": "SE3 p.1027-1032",
+   "absent": [
+    "EPSS",
+    "SBOM",
+    "SLSA"
+   ],
+   "claim": "disclosure without EPSS/SBOM/SLSA"
+  },
+  {
+   "cite": "SE3 p.907-915",
+   "absent": [
+    "chatgpt",
+    "large language model",
+    "prompt injection",
+    "jailbreak",
+    "rlhf"
+   ],
+   "claim": "the book's AI/ML does not cover LLMs"
+  },
+  {
+   "cite": "SE3 p.1057-1060",
+   "absent": [
+    "ISO 15408",
+    "FedRAMP"
+   ],
+   "claim": "CC without ISO 15408/FedRAMP"
+  },
+  {
+   "cite": "SE3 p.1065-1067",
+   "absent": [
+    "SOC 2",
+    "HITRUST",
+    "FedRAMP"
+   ],
+   "claim": "certifications without SOC 2/HITRUST"
+  },
+  {
+   "cite": "SE3 p.757-760",
+   "absent": [
+    "EDR",
+    "XDR",
+    "MITRE ATT&CK"
+   ],
+   "claim": "detection without EDR/XDR/ATT&CK"
+  },
+  {
+   "cite": "SE3 p.794-795",
+   "absent": [
+    "eSIM"
+   ],
+   "claim": "SIM swap without eSIM"
+  },
+  {
+   "cite": "SE3 p.139-141",
+   "absent": [
+    "passkey",
+    "webauthn",
+    "fido2"
+   ],
+   "claim": "recovery/2FA without passkeys/WebAuthn"
+  },
+  {
+   "cite": "SE3 p.703-705",
+   "absent": [
+    "veracrypt",
+    "luks"
+   ],
+   "claim": "FDE without VeraCrypt/LUKS"
+  },
+  {
+   "cite": "SE3 p.1020-1026",
+   "absent": [
+    "kubernetes",
+    "terraform",
+    "ansible"
+   ],
+   "claim": "DevSecOps without Kubernetes/Terraform"
+  },
+  {
+   "cite": "SE3 p.987-992",
+   "absent": [
+    "LGPD",
+    "HIPAA"
+   ],
+   "claim": "data protection in the book: GDPR and sectoral US law, without LGPD"
+  },
+  {
+   "cite": "SE3 p.51-1091",
+   "absent": [
+    "SBOM",
+    "SolarWinds",
+    "Log4Shell",
+    "WebAuthn",
+    "Kubernetes",
+    "OWASP",
+    "LGPD",
+    "ChatGPT",
+    "Pegasus",
+    "Colonial Pipeline"
+   ],
+   "claim": "terms absent from the whole body of the book (declared gaps)"
+  }
+ ]
+}

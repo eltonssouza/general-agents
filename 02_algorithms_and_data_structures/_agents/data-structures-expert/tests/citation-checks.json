@@ -1,0 +1,1540 @@
+{
+ "source": "Open-Data-Structures.txt (=== PAGE N === markers, N = PDF page; printed = N - 12; comparison ignores spaces, underscores and ligatures)",
+ "positive": [
+  {
+   "id": "P01",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "Open Data Structures (in pseudocode)",
+    "Edition 0.1G"
+   ],
+   "claim": "title page: in pseudocode, Edition 0.1G"
+  },
+  {
+   "id": "P02",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "machine translations of Python code",
+    "Java and C++"
+   ],
+   "claim": "Python/Java/C++ code is on the website; the text gives pseudocode"
+  },
+  {
+   "id": "P03",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "describes what a data structure does",
+    "implementation describes how"
+   ],
+   "claim": "interface versus implementation"
+  },
+  {
+   "id": "P04",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "FIFO",
+    "priority",
+    "LIFO"
+   ],
+   "claim": "Queue disciplines: FIFO, priority, LIFO"
+  },
+  {
+   "id": "P05",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "add_first(x)",
+    "add(0,x)",
+    "add_last(x)"
+   ],
+   "claim": "Deque operations come from the List add/remove"
+  },
+  {
+   "id": "P06",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "smallest element y in the set such that",
+    "always use a USet unless"
+   ],
+   "claim": "SSet.find is a successor search; use a USet if possible"
+  },
+  {
+   "id": "P07",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "word-size w",
+    "w >= log n",
+    "Space is measured in words"
+   ],
+   "claim": "Word-RAM: w >= log n; space measured in words"
+  },
+  {
+   "id": "P08",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "Worst-case running times",
+    "Amortized running times",
+    "Expected running times"
+   ],
+   "claim": "three running-time guarantees"
+  },
+  {
+   "id": "P09",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "choices made by the randomized data structure"
+   ],
+   "claim": "expectation over the structure's random choices"
+  },
+  {
+   "id": "P10",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "Table 1.1",
+    "ArrayStack",
+    "DualArrayDeque",
+    "SEList",
+    "SkiplistList",
+    "LinearHashTable"
+   ],
+   "claim": "Table 1.1 (List and USet)"
+  },
+  {
+   "id": "P11",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "Table 1.2",
+    "BinaryTrie",
+    "XFastTrie",
+    "YFastTrie",
+    "MeldableHeap",
+    "find min"
+   ],
+   "claim": "Table 1.2 (SSet and priority queues)"
+  },
+  {
+   "id": "P12",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "length(a) >= 3n",
+    "resize()"
+   ],
+   "claim": "ArrayStack shrinks when length(a) >= 3n"
+  },
+  {
+   "id": "P13",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "max(1,2",
+    "Lemma 2.1",
+    "resize() is O(m)"
+   ],
+   "claim": "resize allocates max(1,2n); Lemma 2.1"
+  },
+  {
+   "id": "P14",
+   "pages": [
+    47,
+    48
+   ],
+   "terms": [
+    "at least n/2",
+    "2m + 2r"
+   ],
+   "claim": "proof of Lemma 2.1: ops between resizes, sum n_i <= 2m + 2r"
+  },
+  {
+   "id": "P15",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "Theorem 2.1",
+    "push(x) as add(n,x)",
+    "O(1) amortized time"
+   ],
+   "claim": "push/pop amortized O(1)"
+  },
+  {
+   "id": "P16",
+   "pages": [
+    49,
+    50
+   ],
+   "terms": [
+    "factor between 2 and 3",
+    "memmove"
+   ],
+   "claim": "FastArrayStack: 2 to 3 times faster in C++/Java"
+  },
+  {
+   "id": "P17",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "a[(j + n) mod length(a)]",
+    "circular array"
+   ],
+   "claim": "ArrayQueue with modular arithmetic"
+  },
+  {
+   "id": "P18",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "Theorem 2.2",
+    "O(1) time per operation"
+   ],
+   "claim": "Theorem 2.2 ArrayQueue"
+  },
+  {
+   "id": "P19",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "i < n/2",
+    "never has to shift more than min{i,n -i} elements"
+   ],
+   "claim": "ArrayDeque shifts the shorter side"
+  },
+  {
+   "id": "P20",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "Theorem 2.3",
+    "O(1 + min{i,n -i})"
+   ],
+   "claim": "Theorem 2.3 ArrayDeque"
+  },
+  {
+   "id": "P21",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "3 * front.size() >= back.size()",
+    "factor of 3"
+   ],
+   "claim": "balance(): front and back differ by a factor <= 3"
+  },
+  {
+   "id": "P22",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "3 * front.size() < back.size()",
+    "⌊n/2⌋"
+   ],
+   "claim": "rebalancing condition and redistribution"
+  },
+  {
+   "id": "P23",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "potential method",
+    "front.size() -back.size()"
+   ],
+   "claim": "DualArrayDeque potential"
+  },
+  {
+   "id": "P24",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Theorem 2.4",
+    "RootishArrayStack: A Space-Efficient Array Stack"
+   ],
+   "claim": "Theorem 2.4; start of the Rootish section"
+  },
+  {
+   "id": "P25",
+   "pages": [
+    62,
+    63
+   ],
+   "terms": [
+    "r(r + 1)/2",
+    "Block b contains"
+   ],
+   "claim": "Rootish: block b has b+1 elements; total r(r+1)/2"
+  },
+  {
+   "id": "P26",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "j = i -b(b + 1)/2",
+    "smallest integer b"
+   ],
+   "claim": "formula for the inner index and the block"
+  },
+  {
+   "id": "P27",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "i2b(i)",
+    "grow()"
+   ],
+   "claim": "i2b and grow"
+  },
+  {
+   "id": "P28",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "never has more than two blocks that are not completely full",
+    "(r -2)(r -1) <= n"
+   ],
+   "claim": "up to two non-full blocks; (r-2)(r-1) <= n"
+  },
+  {
+   "id": "P29",
+   "pages": [
+    68
+   ],
+   "terms": [
+    "Theorem 2.5",
+    "n + O("
+   ],
+   "claim": "Theorem 2.5: space n + O(sqrt n)"
+  },
+  {
+   "id": "P30",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "Brodnik",
+    "Goodrich and Kloss"
+   ],
+   "claim": "origin of Rootish and the tiered-vector"
+  },
+  {
+   "id": "P31",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "Theorem 3.1",
+    "n -2 steps"
+   ],
+   "claim": "SLList: removing from the end takes n-2 steps"
+  },
+  {
+   "id": "P32",
+   "pages": [
+    77
+   ],
+   "terms": [
+    "dummy",
+    "linked into a cycle",
+    "O(1 + min{i,n -i})"
+   ],
+   "claim": "DLList: circular dummy; get_node"
+  },
+  {
+   "id": "P33",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "add_before(w,x)",
+    "u.prev.next <- u"
+   ],
+   "claim": "DLList add_before"
+  },
+  {
+   "id": "P34",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "Theorem 3.2",
+    "get_node(i)"
+   ],
+   "claim": "Theorem 3.2 DLList"
+  },
+  {
+   "id": "P35",
+   "pages": [
+    81
+   ],
+   "terms": [
+    "at least b -1 and at most b + 1 elements",
+    "n/(b -1) + 1"
+   ],
+   "claim": "SEList: invariant and number of blocks"
+  },
+  {
+   "id": "P36",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "b(b + 1)",
+    "three cases"
+   ],
+   "claim": "SEList add: three cases and spread"
+  },
+  {
+   "id": "P37",
+   "pages": [
+    88,
+    89
+   ],
+   "terms": [
+    "fragile",
+    "rugged",
+    "potential"
+   ],
+   "claim": "SEList potential: fragile nodes"
+  },
+  {
+   "id": "P38",
+   "pages": [
+    89
+   ],
+   "terms": [
+    "Theorem 3.3",
+    "n + O(b + n/b)"
+   ],
+   "claim": "Theorem 3.3 SEList"
+  },
+  {
+   "id": "P39",
+   "pages": [
+    96
+   ],
+   "terms": [
+    "sentinel",
+    "search path",
+    "Lemma 4.1",
+    "2logn + O(1)"
+   ],
+   "claim": "skiplist: sentinel and expected search path"
+  },
+  {
+   "id": "P40",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "random.getrandbits(32)",
+    "pick_height()"
+   ],
+   "claim": "pick_height counts ones in 32 bits"
+  },
+  {
+   "id": "P41",
+   "pages": [
+    100
+   ],
+   "terms": [
+    "Theorem 4.1",
+    "O(logn) expected time"
+   ],
+   "claim": "Theorem 4.1 SkiplistSSet"
+  },
+  {
+   "id": "P42",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "length of an edge",
+    "u.next"
+   ],
+   "claim": "SkiplistList: edge length"
+  },
+  {
+   "id": "P43",
+   "pages": [
+    105
+   ],
+   "terms": [
+    "Theorem 4.2",
+    "Lemma 4.2",
+    "E[T ] = 2"
+   ],
+   "claim": "Theorem 4.2; Lemma 4.2"
+  },
+  {
+   "id": "P44",
+   "pages": [
+    106
+   ],
+   "terms": [
+    "Lemma 4.3",
+    "is 2n",
+    "Lemma 4.4",
+    "logn + 2"
+   ],
+   "claim": "2n expected nodes; height <= log n + 2"
+  },
+  {
+   "id": "P45",
+   "pages": [
+    107,
+    108
+   ],
+   "terms": [
+    "Lemma 4.6",
+    "reverse search path"
+   ],
+   "claim": "analysis via the reverse search path"
+  },
+  {
+   "id": "P46",
+   "pages": [
+    109
+   ],
+   "terms": [
+    "Theorem 4.3",
+    "introduced by Pugh"
+   ],
+   "claim": "Theorem 4.3; Pugh origin"
+  },
+  {
+   "id": "P47",
+   "pages": [
+    116
+   ],
+   "terms": [
+    "Lemma 5.1",
+    "<=2/2d"
+   ],
+   "claim": "Lemma 5.1: collision <= 2/2^d"
+  },
+  {
+   "id": "P48",
+   "pages": [
+    117
+   ],
+   "terms": [
+    "Lemma 5.2",
+    "nx + 2"
+   ],
+   "claim": "Lemma 5.2: expected list length <= n_x + 2"
+  },
+  {
+   "id": "P49",
+   "pages": [
+    114
+   ],
+   "terms": [
+    "n <= length(t)"
+   ],
+   "claim": "ChainedHashTable invariant"
+  },
+  {
+   "id": "P50",
+   "pages": [
+    115
+   ],
+   "terms": [
+    "3 * n < length(t)"
+   ],
+   "claim": "ChainedHashTable shrinks when 3n < length(t)"
+  },
+  {
+   "id": "P51",
+   "pages": [
+    121
+   ],
+   "terms": [
+    "del values",
+    "nil values",
+    "length(t) >= 2q"
+   ],
+   "claim": "three kinds of entry and invariant length(t) >= 2q"
+  },
+  {
+   "id": "P52",
+   "pages": [
+    123
+   ],
+   "terms": [
+    "8 * n < length(t)",
+    "ever sets a non-nil entry to nil",
+    "2d >= 3n"
+   ],
+   "claim": "remove/resize and correctness with del"
+  },
+  {
+   "id": "P53",
+   "pages": [
+    124
+   ],
+   "terms": [
+    "incorrect",
+    "independently and uniformly distributed",
+    "Lemma 5.4"
+   ],
+   "claim": "analysis assumes independent, uniform hashing"
+  },
+  {
+   "id": "P54",
+   "pages": [
+    127,
+    128
+   ],
+   "terms": [
+    "Theorem 5.2",
+    "Tabulation Hashing"
+   ],
+   "claim": "Theorem 5.2 and tabulation hashing"
+  },
+  {
+   "id": "P55",
+   "pages": [
+    130
+   ],
+   "terms": [
+    "Theorem 5.3",
+    "3/2w"
+   ],
+   "claim": "composite hash code: Pr <= 3/2^w"
+  },
+  {
+   "id": "P56",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "n + 1 external",
+    "real nodes"
+   ],
+   "claim": "n real nodes have n+1 external nodes"
+  },
+  {
+   "id": "P57",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "height(u)",
+    "if u = nil then return 0"
+   ],
+   "claim": "height returns 0 for nil in the pseudocode"
+  },
+  {
+   "id": "P58",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "traverse2",
+    "prv"
+   ],
+   "claim": "traversal without recursion using parent"
+  },
+  {
+   "id": "P59",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "binary search tree property"
+   ],
+   "claim": "BST property"
+  },
+  {
+   "id": "P60",
+   "pages": [
+    151
+   ],
+   "terms": [
+    "Theorem 6.1",
+    "O(n) time per operation",
+    "unimpressive"
+   ],
+   "claim": "BST: O(n) per operation"
+  },
+  {
+   "id": "P61",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "long chain of n nodes",
+    "worst-case time operations"
+   ],
+   "claim": "BST becomes a chain; promises of the following chapters"
+  },
+  {
+   "id": "P62",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "Lemma 7.1",
+    "lnk < Hk"
+   ],
+   "claim": "Lemma 7.1 and harmonic numbers"
+  },
+  {
+   "id": "P63",
+   "pages": [
+    163
+   ],
+   "terms": [
+    "Heap Property",
+    "u.parent.p < u.p"
+   ],
+   "claim": "Treap heap property"
+  },
+  {
+   "id": "P64",
+   "pages": [
+    165
+   ],
+   "terms": [
+    "rotate_left(u)",
+    "w <- u.right"
+   ],
+   "claim": "rotate_left in the Treap"
+  },
+  {
+   "id": "P65",
+   "pages": [
+    165
+   ],
+   "terms": [
+    "rotate_left(u)",
+    "w <- u.right"
+   ],
+   "claim": "rotate_left in the Treap"
+  },
+  {
+   "id": "P66",
+   "pages": [
+    170
+   ],
+   "terms": [
+    "Theorem 7.2",
+    "2lnn + O(1)",
+    "1.386logn"
+   ],
+   "claim": "Theorem 7.2; 2 ln n ~ 1.386 log n"
+  },
+  {
+   "id": "P67",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "Reed",
+    "Seidel and Aragon"
+   ],
+   "claim": "expected height (Reed); origin of the name Treap"
+  },
+  {
+   "id": "P68",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "q/2 <= n <= q",
+    "log3/2 q"
+   ],
+   "claim": "ScapegoatTree: q/2 <= n <= q and height <= log_{3/2} q"
+  },
+  {
+   "id": "P69",
+   "pages": [
+    180
+   ],
+   "terms": [
+    "depth(u) > log3/2 q",
+    "scapegoat"
+   ],
+   "claim": "add triggers the scapegoat search"
+  },
+  {
+   "id": "P70",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "if 2 * n < q then",
+    "rebuild(r)"
+   ],
+   "claim": "remove rebuilds if 2n < q"
+  },
+  {
+   "id": "P71",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "Lemma 8.3",
+    "O(mlogm)"
+   ],
+   "claim": "Lemma 8.3: rebuild totals O(m log m)"
+  },
+  {
+   "id": "P72",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "considerably slower than the other SSet implementations",
+    "Galperin and Rivest"
+   ],
+   "claim": "Scapegoat is slower in practice"
+  },
+  {
+   "id": "P73",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "Property 9.1 (height)",
+    "Property 9.2 (degree)",
+    "Lemma 9.1"
+   ],
+   "claim": "properties of the 2-4 tree"
+  },
+  {
+   "id": "P74",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "Property 9.3 (black-height)",
+    "Property 9.4 (no-red-edge)",
+    "Red is represented by the value 0",
+    "colour the root"
+   ],
+   "claim": "two properties and the root convention"
+  },
+  {
+   "id": "P75",
+   "pages": [
+    196
+   ],
+   "terms": [
+    "Lemma 9.2",
+    "2log(n + 1) -2 <= 2logn"
+   ],
+   "claim": "height <= 2 log n"
+  },
+  {
+   "id": "P76",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "Property 9.5 (left-leaning)",
+    "No single definition of red-black trees exists"
+   ],
+   "claim": "left-leaning variant; no single definition"
+  },
+  {
+   "id": "P77",
+   "pages": [
+    198,
+    199
+   ],
+   "terms": [
+    "push_black(u)",
+    "pull_black(u)",
+    "flip_left(u)"
+   ],
+   "claim": "push/pull/flip subroutines"
+  },
+  {
+   "id": "P78",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "Theorem 9.1",
+    "Theorem 9.2",
+    "O(m)"
+   ],
+   "claim": "Theorems 9.1 and 9.2"
+  },
+  {
+   "id": "P79",
+   "pages": [
+    209
+   ],
+   "terms": [
+    "potential method",
+    "3m/2"
+   ],
+   "claim": "potential proof: <= 3m/2 splits/merges"
+  },
+  {
+   "id": "P80",
+   "pages": [
+    210
+   ],
+   "terms": [
+    "AVL",
+    "golden ratio"
+   ],
+   "claim": "AVL is mentioned only in the discussion"
+  },
+  {
+   "id": "P81",
+   "pages": [
+    215,
+    216
+   ],
+   "terms": [
+    "left(i) = 2i+1",
+    "parent(i) = (i -1)/2"
+   ],
+   "claim": "BinaryHeap indices"
+  },
+  {
+   "id": "P82",
+   "pages": [
+    219
+   ],
+   "terms": [
+    "3 * n < length(a)",
+    "trickle_down(i)"
+   ],
+   "claim": "BinaryHeap.remove"
+  },
+  {
+   "id": "P83",
+   "pages": [
+    221
+   ],
+   "terms": [
+    "Theorem 10.1",
+    "Ignoring the cost of calls to resize()"
+   ],
+   "claim": "Theorem 10.1: O(log n) ignoring resize"
+  },
+  {
+   "id": "P84",
+   "pages": [
+    222
+   ],
+   "terms": [
+    "random_bit()",
+    "merge(h1,h2)"
+   ],
+   "claim": "merge with a coin flip"
+  },
+  {
+   "id": "P85",
+   "pages": [
+    224,
+    225
+   ],
+   "terms": [
+    "Lemma 10.1",
+    "log(n + 1)"
+   ],
+   "claim": "random walk <= log(n+1)"
+  },
+  {
+   "id": "P86",
+   "pages": [
+    225,
+    226
+   ],
+   "terms": [
+    "Lemma 10.2",
+    "2logn",
+    "Theorem 10.2"
+   ],
+   "claim": "merge <= 2 log n steps; Theorem 10.2"
+  },
+  {
+   "id": "P87",
+   "pages": [
+    233
+   ],
+   "terms": [
+    "Theorem 11.1",
+    "nlogn comparisons"
+   ],
+   "claim": "merge-sort: <= n log n comparisons"
+  },
+  {
+   "id": "P88",
+   "pages": [
+    236
+   ],
+   "terms": [
+    "Lemma 11.1",
+    "2nlnn + O(n)"
+   ],
+   "claim": "quicksort: 2n ln n + O(n)"
+  },
+  {
+   "id": "P89",
+   "pages": [
+    237,
+    238
+   ],
+   "terms": [
+    "in-place sorting algorithm",
+    "a.reverse()"
+   ],
+   "claim": "in-place heap-sort and final reversal"
+  },
+  {
+   "id": "P90",
+   "pages": [
+    239
+   ],
+   "terms": [
+    "Theorem 11.4",
+    "2nlogn + O(n)",
+    "log(n!)"
+   ],
+   "claim": "heap-sort: 2n log n + O(n); log n! = n log n - O(n)"
+  },
+  {
+   "id": "P91",
+   "pages": [
+    241
+   ],
+   "terms": [
+    "Theorem 11.5",
+    "at least n! leaves"
+   ],
+   "claim": "lower bound: n! leaves"
+  },
+  {
+   "id": "P92",
+   "pages": [
+    242
+   ],
+   "terms": [
+    "Theorem 11.6",
+    "randomized"
+   ],
+   "claim": "the bound also holds for randomized algorithms"
+  },
+  {
+   "id": "P93",
+   "pages": [
+    245
+   ],
+   "terms": [
+    "Theorem 11.7",
+    "O(n + k)",
+    "stable"
+   ],
+   "claim": "counting sort O(n+k), stable"
+  },
+  {
+   "id": "P94",
+   "pages": [
+    246
+   ],
+   "terms": [
+    "Theorem 11.8",
+    "O((w/d)(n + 2d))"
+   ],
+   "claim": "radix sort"
+  },
+  {
+   "id": "P95",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "Corollary 11.1",
+    "O(cn)",
+    "1.38nlogn + O(n)"
+   ],
+   "claim": "radix O(cn) and the sorting table"
+  },
+  {
+   "id": "P96",
+   "pages": [
+    255
+   ],
+   "terms": [
+    "Theorem 12.1",
+    "O(n2)"
+   ],
+   "claim": "AdjacencyMatrix: space O(n^2)"
+  },
+  {
+   "id": "P97",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "out_edges(i)",
+    "return adj[i]",
+    "O(n + m)"
+   ],
+   "claim": "out_edges returns adj[i]; in_edges O(n+m)"
+  },
+  {
+   "id": "P98",
+   "pages": [
+    259
+   ],
+   "terms": [
+    "Theorem 12.2",
+    "O(deg(i))"
+   ],
+   "claim": "AdjacencyLists: costs"
+  },
+  {
+   "id": "P99",
+   "pages": [
+    260
+   ],
+   "terms": [
+    "q <- SLList()",
+    "seen"
+   ],
+   "claim": "BFS uses SLList and seen"
+  },
+  {
+   "id": "P100",
+   "pages": [
+    262
+   ],
+   "terms": [
+    "white",
+    "grey",
+    "black"
+   ],
+   "claim": "DFS uses three colors"
+  },
+  {
+   "id": "P101",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "Theorem 12.4",
+    "dfs2"
+   ],
+   "claim": "DFS O(n+m)"
+  },
+  {
+   "id": "P102",
+   "pages": [
+    270,
+    271
+   ],
+   "terms": [
+    "u.jump points to the smallest leaf",
+    "largest leaf"
+   ],
+   "claim": "jump: smaller/larger leaf"
+  },
+  {
+   "id": "P103",
+   "pages": [
+    276
+   ],
+   "terms": [
+    "Theorem 13.1",
+    "O(n * w)",
+    "w + 1 hash tables"
+   ],
+   "claim": "BinaryTrie O(w), space O(n w); XFast with w+1 tables"
+  },
+  {
+   "id": "P104",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "Theorem 13.2",
+    "O(logw) expected time"
+   ],
+   "claim": "XFastTrie: find O(log w)"
+  },
+  {
+   "id": "P105",
+   "pages": [
+    280
+   ],
+   "terms": [
+    "independently with probability 1/w"
+   ],
+   "claim": "YFastTrie: sample with probability 1/w"
+  },
+  {
+   "id": "P106",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "Lemma 13.1",
+    "2w -1"
+   ],
+   "claim": "expected treap size <= 2w - 1"
+  },
+  {
+   "id": "P107",
+   "pages": [
+    284
+   ],
+   "terms": [
+    "Theorem 13.3",
+    "O(n + w)"
+   ],
+   "claim": "YFastTrie: space O(n + w)"
+  },
+  {
+   "id": "P108",
+   "pages": [
+    287
+   ],
+   "terms": [
+    "19ms",
+    "0.3ms"
+   ],
+   "claim": "the author's HDD/SSD numbers (DATED)"
+  },
+  {
+   "id": "P109",
+   "pages": [
+    288
+   ],
+   "terms": [
+    "internal memory computations are free",
+    "B words"
+   ],
+   "claim": "external memory model"
+  },
+  {
+   "id": "P110",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "at least B chil",
+    "every non-root internal node"
+   ],
+   "claim": "B-tree: B to 2B children"
+  },
+  {
+   "id": "P111",
+   "pages": [
+    291
+   ],
+   "terms": [
+    "B = 256",
+    "4096"
+   ],
+   "claim": "example with B = 256 and a 4096-byte block"
+  },
+  {
+   "id": "P112",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "u.keys[B -1]",
+    "B + 4"
+   ],
+   "claim": "split; no pointer to the parent (3 -> B+4 accesses)"
+  },
+  {
+   "id": "P113",
+   "pages": [
+    299
+   ],
+   "terms": [
+    "smallest value",
+    "u.children[i + 1]"
+   ],
+   "claim": "removal uses the successor"
+  },
+  {
+   "id": "P114",
+   "pages": [
+    303
+   ],
+   "terms": [
+    "2B -3 keys",
+    "2B -2 keys"
+   ],
+   "claim": "merge: 2B-3 keys become 2B-2"
+  },
+  {
+   "id": "P115",
+   "pages": [
+    305
+   ],
+   "terms": [
+    "Lemma 14.1",
+    "3m/2"
+   ],
+   "claim": "Lemma 14.1: <= 3m/2 restructurings"
+  },
+  {
+   "id": "P116",
+   "pages": [
+    308
+   ],
+   "terms": [
+    "Theorem 14.2",
+    "O(Bm)",
+    "McCreight [9] in 1970"
+   ],
+   "claim": "Theorem 14.2; Bayer and McCreight 1970"
+  },
+  {
+   "id": "P117",
+   "pages": [
+    314
+   ],
+   "terms": [
+    "Organization and maintenance of large ordered indexes",
+    "1970"
+   ],
+   "claim": "bibliography: Bayer and McCreight 1970"
+  },
+  {
+   "id": "P118",
+   "pages": [
+    319
+   ],
+   "terms": [
+    "Skip lists: A probabilistic alternative to balanced trees",
+    "1990"
+   ],
+   "claim": "bibliography: Pugh 1990"
+  },
+  {
+   "id": "P119",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "YFastTrie: A Doubly-Logarithmic Time SSet"
+   ],
+   "claim": "page convention: YFastTrie on PDF p.279"
+  },
+  {
+   "id": "P120",
+   "pages": [
+    326
+   ],
+   "terms": [
+    "YFastTrie, 267"
+   ],
+   "claim": "page convention: the subject index uses printed numbers (267 + 12 = 279)"
+  },
+  {
+   "id": "P121",
+   "pages": [
+    166
+   ],
+   "terms": [
+    "depth of w decreases by one"
+   ],
+   "claim": "rotation: w moves up 1, u moves down 1"
+  },
+  {
+   "id": "P122",
+   "pages": [
+    167
+   ],
+   "terms": [
+    "bubble_up(u)"
+   ],
+   "claim": "Treap.add uses bubble_up"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "terms": [
+    "tombstone"
+   ],
+   "claim": "the book does not use 'tombstone' (it uses del values)"
+  },
+  {
+   "id": "N02",
+   "terms": [
+    "re:primary\\s+cluster"
+   ],
+   "claim": "the book does not use 'primary clustering'"
+  },
+  {
+   "id": "N03",
+   "terms": [
+    "2-independent",
+    "pairwise independent",
+    "2-universal"
+   ],
+   "claim": "the book does not label multiplicative hashing as 2-independent/2-universal"
+  },
+  {
+   "id": "N04",
+   "terms": [
+    "real-time",
+    "real time"
+   ],
+   "claim": "the book does not cover real-time"
+  },
+  {
+   "id": "N05",
+   "terms": [
+    "load factor"
+   ],
+   "claim": "the book does not use 'load factor'"
+  },
+  {
+   "id": "N06",
+   "terms": [
+    "NP-complete",
+    "NP-hard",
+    "Cook-Levin"
+   ],
+   "claim": "NP-completeness is not in the book"
+  },
+  {
+   "id": "N07",
+   "terms": [
+    "Ford-Fulkerson",
+    "Edmonds",
+    "max-flow",
+    "maximum flow"
+   ],
+   "claim": "flow networks are not in the book"
+  },
+  {
+   "id": "N08",
+   "terms": [
+    "Bellman",
+    "Kruskal",
+    "topological"
+   ],
+   "claim": "other graph algorithms are not in the book"
+  },
+  {
+   "id": "N09",
+   "terms": [
+    "Phi(S",
+    "potential function"
+   ],
+   "claim": "there is no general formula for the potential method"
+  },
+  {
+   "id": "N10",
+   "terms": [
+    "at most 3 rotations",
+    "at most three rotations",
+    "three rotations"
+   ],
+   "claim": "the book does not state 3 rotations for red-black removal (only AVL has 'at most two rotations', p.211)"
+  },
+  {
+   "id": "N11",
+   "terms": [
+    "w/4"
+   ],
+   "claim": "the y-fast trie with blocks of w/4 to 2w is not the book's"
+  },
+  {
+   "id": "N12",
+   "terms": [
+    "weight-balanced",
+    "alpha-weight"
+   ],
+   "claim": "the book does not use alpha-weight-balanced"
+  },
+  {
+   "id": "N13",
+   "terms": [
+    "cache-oblivious",
+    "cache-friendly",
+    "cache line"
+   ],
+   "claim": "no CPU cache analysis"
+  },
+  {
+   "id": "N14",
+   "terms": [
+    "LSM-tree",
+    "log-structured merge",
+    "re:\blsm\b"
+   ],
+   "claim": "LSM-trees are not in the book"
+  },
+  {
+   "id": "N15",
+   "terms": [
+    "quadratic probing",
+    "double hashing",
+    "Robin Hood"
+   ],
+   "claim": "other open-addressing probe sequences are not named"
+  },
+  {
+   "id": "N16",
+   "terms": [
+    "Timsort",
+    "introsort"
+   ],
+   "claim": "hybrid sorts are not in the book"
+  },
+  {
+   "id": "N17",
+   "terms": [
+    "lock-free",
+    "tail latency"
+   ],
+   "claim": "concurrency and tail latency are not in the book"
+  },
+  {
+   "id": "N18",
+   "terms": [
+    "union-find",
+    "path compression"
+   ],
+   "claim": "union-find is not in the book"
+  }
+ ]
+}

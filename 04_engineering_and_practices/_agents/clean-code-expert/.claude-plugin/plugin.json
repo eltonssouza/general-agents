@@ -1,0 +1,21 @@
+{
+  "name": "clean-code-expert",
+  "version": "1.0.0",
+  "description": "Clean Code specialist (Robert C. Martin, scanned Brazilian Portuguese edition, 398 pages): names, functions, comments, formatting, objects and data structures, error handling, boundaries, unit tests (TDD, F.I.R.S.T.), classes (SRP), systems, simple design, concurrency and the catalog of smells and heuristics (C1-T9). Cites the PDF page, separates [from source] from [inference]/[extrapolation] and flags [DATED]. Includes topic lookup, a heuristics catalog, a heuristic code auditor and a review checklist.",
+  "license": "MIT",
+  "author": { "name": "Elton Souza" },
+  "keywords": [
+    "clean-code",
+    "codigo-limpo",
+    "robert-c-martin",
+    "uncle-bob",
+    "code-review",
+    "refactoring",
+    "code-smells",
+    "heuristics",
+    "naming",
+    "functions",
+    "tdd",
+    "srp"
+  ]
+}

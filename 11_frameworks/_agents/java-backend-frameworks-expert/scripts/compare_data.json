@@ -1,0 +1,197 @@
+{
+  "comparacoes": [
+    {
+      "id": "mapper-obtencao",
+      "titulo": "Obtaining the mapper: Mappers.getMapper/INSTANCE vs dependency injection",
+      "abordagens": {
+        "Mappers.getMapper + INSTANCE": [
+          ["Suitable when no DI framework is used; by convention the interface declares an INSTANCE field", "MPS", [30]],
+          ["Generated mappers are stateless and thread-safe, so they can be accessed by several threads", "MPS", [30]]
+        ],
+        "Injection via componentModel (cdi, spring, jsr330...)": [
+          ["The guide recommends obtaining mappers by injection when using CDI or Spring, instead of the Mappers class", "MPS", [31]],
+          ["Mappers used via `uses` are obtained through the same component model (they must be beans)", "MPS", [31, 40]]
+        ]
+      },
+      "texto_nao_diz": ["comparative performance of the two approaches", "complete example with Spring Boot (the guide shows the example with CDI)"]
+    },
+    {
+      "id": "injecao-mapper",
+      "titulo": "MapStruct injection strategies: field vs constructor vs setter",
+      "abordagens": {
+        "FIELD (default)": [["It is the current default; it can be changed through a processor option", "MPS", [9, 32]]],
+        "CONSTRUCTOR": [["The guide recommends constructor injection to simplify tests", "MPS", [32]], ["With CDI a default constructor is also generated", "MPS", [9]]],
+        "SETTER": [["Use it when there are circular dependencies in Spring (compilation may fail with a constructor)", "MPS", [32]], ["For abstract classes or decorators, setter injection must be used", "MPS", [32]]]
+      },
+      "texto_nao_diz": ["performance impact", "Spring Boot rules beyond those cited"]
+    },
+    {
+      "id": "interface-vs-abstrata",
+      "titulo": "Mapper as an interface (default methods) vs abstract class",
+      "abordagens": {
+        "Interface with default methods": [["Available with Java 8+; the generated code invokes the manual method if the types match", "MPS", [18]]],
+        "Abstract class": [["Allows declaring additional fields in the mapper", "MPS", [18, 19]], ["For abstract classes or decorators, use setter injection", "MPS", [32]]]
+      },
+      "texto_nao_diz": ["official preference between the two", "testability differences beyond fields"]
+    },
+    {
+      "id": "logica-custom",
+      "titulo": "Where to put manual logic in MapStruct: default method, uses, expression, @AfterMapping, decorator",
+      "abordagens": {
+        "default method / abstract method in a class": [["Manual logic directly in the mapper for one pair of types", "MPS", [18]]],
+        "uses (another class)": [["Manual mapper/method in another class; in the default model it needs a public no-argument constructor", "MPS", [38, 40]]],
+        "expression / defaultExpression": [["Inline Java expressions; they are not validated at generation time and require imports", "MPS", [65, 66]]],
+        "@BeforeMapping/@AfterMapping": [["Callbacks for all applicable methods; the order within the same type is not guaranteed", "MPS", [82, 84]]],
+        "@DecoratedWith": [["Typed customization of specific methods; with CDI the guide says to use CDI decorators", "MPS", [79, 80]]]
+      },
+      "texto_nao_diz": ["objective criterion for choosing among the options (the guide only describes each one)"]
+    },
+    {
+      "id": "builder-construtor-setter",
+      "titulo": "How MapStruct instantiates the target: builder vs constructor vs setters/fields",
+      "abordagens": {
+        "Builder": [["Used automatically if the BuilderProvider finds one; it can be turned off (disableBuilder / mapstruct.disableBuilders)", "MPS", [22, 24]]],
+        "Constructor": [["Without a builder, it looks for @Default > single public constructor > no-argument constructor; ambiguity is an error", "MPS", [24, 25]]],
+        "Setters/public fields": [["Public fields serve as accessors when there is no getter/setter", "MPS", [21]]]
+      },
+      "texto_nao_diz": ["preference for immutability", "interaction with records"]
+    },
+    {
+      "id": "colecao-estrategia",
+      "titulo": "CollectionMappingStrategy: ACCESSOR_ONLY, SETTER_PREFERRED, ADDER_PREFERRED, TARGET_IMMUTABLE",
+      "abordagens": {
+        "ACCESSOR_ONLY": [["Uses setters or getters (equivalent to DEFAULT); on update it clears and repopulates", "MPS", [20, 50, 51]]],
+        "SETTER_PREFERRED": [["Prefers setters; uses adders if there is only an adder and getters if there is none (table)", "MPS", [51]]],
+        "ADDER_PREFERRED": [["Prefers adders; typical of generated JPA entities; on update it does not clear", "MPS", [20, 51]]],
+        "TARGET_IMMUTABLE": [["Uses setters; according to the table, throws an exception when the target has only an adder or no accessor", "MPS", [51]]]
+      },
+      "texto_nao_diz": ["which @Mapper attribute defines the strategy (the guide only names the type)"]
+    },
+    {
+      "id": "reativo-vs-bloqueante",
+      "titulo": "Reactive web (WebFlux) vs traditional (blocking)",
+      "abordagens": {
+        "Reactive": [["Non-blocking model with streams; scenarios: real-time UIs, complex networks, microservices, IoT/streaming", "SB3G", [74, 76]], ["Libraries: WebFlux and Project Reactor (Mono/Flux)", "SB3G", [79]], ["Requires testing with WebTestClient and configuring reactive security", "SB3G", [155, 179]]],
+        "Traditional": [["Operations are processed one at a time (blocking); scales by adding servers", "SB3G", [74]]]
+      },
+      "texto_nao_diz": ["comparative benchmarks", "migration cost", "the book states that the decision is not to use the newest option but to fit the needs (p.77)"]
+    },
+    {
+      "id": "clientes-http",
+      "titulo": "HTTP clients: RestTemplate vs WebClient vs Feign",
+      "abordagens": {
+        "RestTemplate": [["Traditional, synchronous; requires more code per call (according to the book)", "SB3G", [233]]],
+        "WebClient": [["Part of WebFlux, asynchronous; steeper learning curve without familiarity with reactive", "SB3G", [233]]],
+        "Feign": [["Declarative client via an interface, `@FeignClient`; RestTemplate-like simplicity with a modern approach", "SB3G", [233, 234]]]
+      },
+      "texto_nao_diz": ["maintenance status of each client", "performance"]
+    },
+    {
+      "id": "imagem-container",
+      "titulo": "Building an image: layered jar vs Cloud Native Buildpacks",
+      "abordagens": {
+        "Layered jar": [["Separates dependencies and application into layers to reuse the Docker cache (layers.idx)", "SB3G", [188, 189]], ["The book does not show the plugin configuration to enable it", "SB3G", [188]]],
+        "Buildpacks (bootBuildImage)": [["Builds the image without writing a Dockerfile; command ./gradlew bootBuildImage --imageName=demoapp", "SB3G", [190]]]
+      },
+      "texto_nao_diz": ["example of a manual Dockerfile", "image size comparison"]
+    },
+    {
+      "id": "sql-nosql",
+      "titulo": "SQL (JPA/PostgreSQL) vs NoSQL (MongoDB) in the bookstore example",
+      "abordagens": {
+        "SQL / JPA": [["Structured data; @ManyToMany/@ManyToOne relationships; JpaRepository", "SB3G", [101, 107, 108]]],
+        "MongoDB": [["Unstructured/semi-structured data with flexibility; reviews (Review) as documents", "SB3G", [111, 113]]],
+        "Hybrid model": [["The project uses both: Postgres for books/authors/publishers and Mongo for reviews", "SB3G", [114]]]
+      },
+      "texto_nao_diz": ["consistency/transactions across the two databases", "quantitative selection criteria"]
+    },
+    {
+      "id": "cache-evict",
+      "titulo": "Cache invalidation: allEntries vs key",
+      "abordagens": {
+        "@CacheEvict(allEntries = true)": [["Used in POST and PUT to clear all entries of the \"books\" cache", "SB3G", [117]]],
+        "@CacheEvict(key = \"#id\")": [["Used on removal to clear only the book's entry", "SB3G", [118]]]
+      },
+      "texto_nao_diz": ["cache provider, TTL and expiration policy"]
+    },
+    {
+      "id": "evolucao-esquema",
+      "titulo": "Evolving the schema: ddl-auto=update vs Liquibase",
+      "abordagens": {
+        "ddl-auto=update": [["Used in the example to generate/update the schema from the entities", "SB3G", [106]]],
+        "Liquibase": [["Versioned changelog (YAML/XML/JSON/SQL), applied at startup; includeAll in alphabetical order", "SB3G", [124, 125, 126]], ["Example: adding the published column without touching the server manually", "SB3G", [126, 127]]]
+      },
+      "texto_nao_diz": ["the book does not compare the two explicitly; recommending Liquibase instead of update in production is an [inference]"]
+    },
+    {
+      "id": "config-k8s",
+      "titulo": "Configuration in Kubernetes: ConfigMap vs Secret vs Spring profiles",
+      "abordagens": {
+        "ConfigMap": [["Separates configuration from the image; injected as an environment variable", "SB3G", [196, 197]]],
+        "Secret": [["Stores sensitive data (passwords, tokens, keys)", "SB3G", [196, 197]]],
+        "Profiles (SPRING_PROFILES_ACTIVE)": [["application-prod/test.properties and an environment variable activate the profile", "SB3G", [198, 199]]]
+      },
+      "texto_nao_diz": ["encryption/rotation of Secrets", "the example exposes the key through an endpoint only for demonstration"]
+    },
+    {
+      "id": "tipos-de-teste",
+      "titulo": "Test types in the book: unit (Mockito) vs @WebMvcTest vs integration (Testcontainers/WireMock) vs reactive",
+      "abordagens": {
+        "Unit with Mockito": [["@Mock/@InjectMocks, TDD red-green-refactor", "SB3G", [162, 165, 166]]],
+        "@WebMvcTest + @WithMockUser": [["Only the web layer and the imported security configuration; service and JwtDecoder mocked", "SB3G", [167, 169]]],
+        "Integration": [["Testcontainers (Postgres, Mongo) + WireMock (OIDC); without mocking the service/repository", "SB3G", [172, 174, 176, 178]]],
+        "Reactive": [["@WebFluxTest + WebTestClient", "SB3G", [179]]]
+      },
+      "texto_nao_diz": ["test pyramid/proportion", "@SpringBootTest and @DataJpaTest"]
+    },
+    {
+      "id": "basic-vs-jwt",
+      "titulo": "Authentication in the example: HTTP Basic vs OAuth2 resource server with JWT",
+      "abordagens": {
+        "HTTP Basic": [["Simple, stateless initial configuration (username/password on every request)", "SB3G", [134]]],
+        "OAuth2 resource server (JWT) with Keycloak": [["Validates JWTs issued by Keycloak; RBAC by roles from the realm_access claim", "SB3G", [143, 152]], ["The access token expires in 300 s in the example", "SB3G", [147]]]
+      },
+      "texto_nao_diz": ["the book makes no formal comparison; the password flow used in /login is debatable [extrapolation]"]
+    },
+    {
+      "id": "padroes-arquiteturais",
+      "titulo": "CQRS vs Event Sourcing vs Saga (SB3G ch.2)",
+      "abordagens": {
+        "CQRS": [["Separates writes (commands) from reads (queries); only worthwhile if the load is unbalanced", "SB3G", [51, 52, 53]]],
+        "Event Sourcing": [["Stores each change as an immutable event and rebuilds state by replay; good for auditing", "SB3G", [55, 56, 60]]],
+        "Saga": [["Splits a distributed transaction into local transactions with compensation", "SB3G", [69, 70]]]
+      },
+      "texto_nao_diz": ["implementation in Spring (the chapter is conceptual)", "libraries/frameworks for each pattern"]
+    },
+    {
+      "id": "spring-vs-quarkus",
+      "titulo": "Spring Boot vs Quarkus: what the sources actually say",
+      "abordagens": {
+        "Quarkus (QRK, 2021, Red Hat vendor)": [["Claims to make Java comparable to Go/Node.js, ~450 extensions, and to deploy 10x more native apps on Kubernetes", "QRK", [1]], ["Author's measurement: JVM start 5.984 s vs native 0.013 s (varies by environment)", "QRK", [5]], ["Figure 7 (checked visually): RSS 12 MB native, 73 MB JVM, 136 MB traditional stack; boot + first response 0.016 s, 0.943 s and 4.3 s; no methodology described", "QRK", [6]], ["Cites Spring Boot as a heavy/slow traditional framework for serverless", "QRK", [1]]],
+        "Spring Boot (SB3G, 2024)": [["Cites GraalVM support to reduce memory and start time in serverless/microservices", "SB3G", [31]], ["The book does not mention Quarkus on any page (there is no comparison)", "SB3G", [31]]]
+      },
+      "texto_nao_diz": ["any neutral benchmark", "comparison of productivity, ecosystem or maintenance", "Quarkus 3.x and Spring Boot 3.3+ (dated)"]
+    },
+    {
+      "id": "alvos-serverless-quarkus",
+      "titulo": "Serverless targets in the Quarkus Refcard: Knative vs AWS Lambda vs CloudEvents",
+      "abordagens": {
+        "Knative/OpenShift": [["quarkus.kubernetes.deployment-target=knative, deploy and scale-to-zero (30 s)", "QRK", [4, 5]]],
+        "AWS Lambda": [["quarkus-funqy-amazon-lambda; generates function.zip, manage.sh, SAM", "QRK", [6, 7]]],
+        "CloudEvents on Knative": [["quarkus-funqy-knative-events; headers Ce-Id, Ce-Source, Ce-Type", "QRK", [8]]]
+      },
+      "texto_nao_diz": ["Azure Functions/Google Cloud in practice (only mentioned)", "costs"]
+    },
+    {
+      "id": "enum-estrategias",
+      "titulo": "Mapping enums in MapStruct: same names, @ValueMapping, @EnumMapping, SPI",
+      "abordagens": {
+        "Same name (default)": [["Each constant maps to the one with the same name; a constant without a match is a build error", "MPS", [53, 54]]],
+        "@ValueMapping": [["Maps specific constants; ANY_REMAINING/ANY_UNMAPPED/NULL/THROW_EXCEPTION", "MPS", [53, 55]]],
+        "@EnumMapping": [["Transforms names: suffix, stripSuffix, prefix, stripPrefix, case", "MPS", [58, 59]]],
+        "SPI EnumMappingStrategy/EnumTransformationStrategy": [["Organization conventions and custom strategies", "MPS", [88, 91]]]
+      },
+      "texto_nao_diz": ["enums with associated fields"]
+    }
+  ]
+}

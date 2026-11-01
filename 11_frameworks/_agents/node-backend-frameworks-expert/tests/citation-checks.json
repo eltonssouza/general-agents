@@ -1,0 +1,1102 @@
+{
+ "fonte": "NODEHB, EXPHB, FSTF, NEST",
+ "convencao": "PDF page (no printed page numbers)",
+ "checks": [
+  {
+   "cite": "NODEHB p.1",
+   "contains": [
+    "september 6, 2018",
+    "flavio copes"
+   ],
+   "claim": "Node Handbook date"
+  },
+  {
+   "cite": "NODEHB p.2",
+   "contains": [
+    "single process",
+    "without creating a new thread"
+   ],
+   "claim": "single process, no thread per request"
+  },
+  {
+   "cite": "NODEHB p.3",
+   "contains": [
+    "almost 500,000"
+   ],
+   "claim": "npm packages in 2018"
+  },
+  {
+   "cite": "NODEHB p.6",
+   "contains": [
+    "koa",
+    "micro",
+    "socket.io",
+    "meteor"
+   ],
+   "claim": "list of frameworks"
+  },
+  {
+   "cite": "NODEHB p.9",
+   "contains": [
+    "leftpad",
+    "io.js",
+    "ghost"
+   ],
+   "claim": "history 2013-2016"
+  },
+  {
+   "cite": "NODEHB p.10",
+   "contains": [
+    "node 10",
+    "es modules .mjs"
+   ],
+   "claim": "Node 10 and experimental .mjs"
+  },
+  {
+   "cite": "NODEHB p.14",
+   "contains": [
+    "commonjs",
+    "require()"
+   ],
+   "claim": "CommonJS and require"
+  },
+  {
+   "cite": "NODEHB p.17",
+   "contains": [
+    "process.exit()",
+    "ungracefully"
+   ],
+   "claim": "process.exit is abrupt"
+  },
+  {
+   "cite": "NODEHB p.19",
+   "contains": [
+    "sigterm",
+    "sigkill",
+    "server.close"
+   ],
+   "claim": "SIGTERM and server.close"
+  },
+  {
+   "cite": "NODEHB p.20",
+   "contains": [
+    "process.env",
+    "node_env",
+    "development"
+   ],
+   "claim": "environment variables"
+  },
+  {
+   "cite": "NODEHB p.21",
+   "contains": [
+    "dotenv",
+    ".gitignore",
+    "next.js"
+   ],
+   "claim": ".env and dotenv"
+  },
+  {
+   "cite": "NODEHB p.22",
+   "contains": [
+    "ngrok",
+    "localtunnel"
+   ],
+   "claim": "local tunnel"
+  },
+  {
+   "cite": "NODEHB p.29",
+   "contains": [
+    ".editor",
+    ".break",
+    ".clear",
+    ".load",
+    ".save"
+   ],
+   "claim": "REPL dot commands"
+  },
+  {
+   "cite": "NODEHB p.31",
+   "contains": [
+    "argv",
+    "third position"
+   ],
+   "claim": "process.argv"
+  },
+  {
+   "cite": "NODEHB p.32",
+   "contains": [
+    "minimist"
+   ],
+   "claim": "minimist"
+  },
+  {
+   "cite": "NODEHB p.33",
+   "contains": [
+    "%s",
+    "%d",
+    "%f",
+    "%o"
+   ],
+   "claim": "console format specifiers"
+  },
+  {
+   "cite": "NODEHB p.38",
+   "contains": [
+    "readline",
+    "version 7"
+   ],
+   "claim": "readline since v7"
+  },
+  {
+   "cite": "NODEHB p.43",
+   "contains": [
+    "the first exposes the object it points to",
+    "350,000"
+   ],
+   "claim": "exports and npm package count in 2017"
+  },
+  {
+   "cite": "NODEHB p.44",
+   "contains": [
+    "--save-dev",
+    "devdependencies"
+   ],
+   "claim": "--save-dev"
+  },
+  {
+   "cite": "NODEHB p.47",
+   "contains": [
+    "npm root -g"
+   ],
+   "claim": "global install location"
+  },
+  {
+   "cite": "NODEHB p.49",
+   "contains": [
+    "npx",
+    "5.2",
+    ".bin"
+   ],
+   "claim": "npx since 5.2"
+  },
+  {
+   "cite": "NODEHB p.54",
+   "contains": [
+    "214 characters",
+    "lowercase letters"
+   ],
+   "claim": "rules for name"
+  },
+  {
+   "cite": "NODEHB p.60",
+   "contains": [
+    "private",
+    "accidentally published"
+   ],
+   "claim": "private field"
+  },
+  {
+   "cite": "NODEHB p.62",
+   "contains": [
+    "engines"
+   ],
+   "claim": "engines field"
+  },
+  {
+   "cite": "NODEHB p.64",
+   "contains": [
+    "~0.13.0",
+    "^0.13.0"
+   ],
+   "claim": "tilde and caret"
+  },
+  {
+   "cite": "NODEHB p.65",
+   "contains": [
+    "package-lock.json",
+    "version 5",
+    "100% reproducible"
+   ],
+   "claim": "npm 5 lockfile"
+  },
+  {
+   "cite": "NODEHB p.66",
+   "contains": [
+    "needs to be committed to your git repository"
+   ],
+   "claim": "lockfile is committed"
+  },
+  {
+   "cite": "NODEHB p.70",
+   "contains": [
+    "npm view [package_name] version"
+   ],
+   "claim": "npm view"
+  },
+  {
+   "cite": "NODEHB p.75",
+   "contains": [
+    "npm-check-updates",
+    "ncu -u"
+   ],
+   "claim": "ncu"
+  },
+  {
+   "cite": "NODEHB p.76",
+   "contains": [
+    "incompatible api changes",
+    "backward-compatible"
+   ],
+   "claim": "semver"
+  },
+  {
+   "cite": "NODEHB p.80",
+   "contains": [
+    "in general, all packages should be installed locally"
+   ],
+   "claim": "install locally"
+  },
+  {
+   "cite": "NODEHB p.82",
+   "contains": [
+    "--production"
+   ],
+   "claim": "flag production"
+  },
+  {
+   "cite": "NODEHB p.85",
+   "contains": [
+    "npx node@6 -v",
+    "be careful"
+   ],
+   "claim": "npx with version and URL"
+  },
+  {
+   "cite": "NODEHB p.86",
+   "contains": [
+    "single threaded",
+    "block"
+   ],
+   "claim": "single thread"
+  },
+  {
+   "cite": "NODEHB p.87",
+   "contains": [
+    "lifo"
+   ],
+   "claim": "LIFO stack"
+  },
+  {
+   "cite": "NODEHB p.97",
+   "contains": [
+    "message queue",
+    "job queue"
+   ],
+   "claim": "queues"
+  },
+  {
+   "cite": "NODEHB p.99",
+   "contains": [
+    "process.nexttick()"
+   ],
+   "claim": "nextTick"
+  },
+  {
+   "cite": "NODEHB p.100",
+   "contains": [
+    "setimmediate()",
+    "always execute before settimeout()"
+   ],
+   "claim": "nextTick order"
+  },
+  {
+   "cite": "NODEHB p.104",
+   "contains": [
+    "recursive settimeout"
+   ],
+   "claim": "recursive setTimeout"
+  },
+  {
+   "cite": "NODEHB p.109",
+   "contains": [
+    "error-first callbacks"
+   ],
+   "claim": "error-first"
+  },
+  {
+   "cite": "NODEHB p.111",
+   "contains": [
+    "pending state",
+    "es2017"
+   ],
+   "claim": "promises"
+  },
+  {
+   "cite": "NODEHB p.116",
+   "contains": [
+    "promise.all()"
+   ],
+   "claim": "Promise.all"
+  },
+  {
+   "cite": "NODEHB p.117",
+   "contains": [
+    "promise.race()"
+   ],
+   "claim": "Promise.race"
+  },
+  {
+   "cite": "NODEHB p.118",
+   "contains": [
+    "undefined is not a promise",
+    "new promise()"
+   ],
+   "claim": "new Promise error"
+  },
+  {
+   "cite": "NODEHB p.123",
+   "contains": [
+    "debugging promises is hard"
+   ],
+   "claim": "debugging"
+  },
+  {
+   "cite": "NODEHB p.125",
+   "contains": [
+    "once()",
+    "removealllisteners()"
+   ],
+   "claim": "emitter"
+  },
+  {
+   "cite": "NODEHB p.131",
+   "contains": [
+    "mandatory",
+    "connection"
+   ],
+   "claim": "mandatory headers according to the author"
+  },
+  {
+   "cite": "NODEHB p.137",
+   "contains": [
+    "axios",
+    "built-in csrf protection"
+   ],
+   "claim": "Axios"
+  },
+  {
+   "cite": "NODEHB p.143",
+   "contains": [
+    "wss://",
+    "ws://"
+   ],
+   "claim": "secure WebSocket"
+  },
+  {
+   "cite": "NODEHB p.148",
+   "contains": [
+    "blocks the thread"
+   ],
+   "claim": "sync blocks"
+  },
+  {
+   "cite": "NODEHB p.151",
+   "contains": [
+    "path.resolve()"
+   ],
+   "claim": "path.resolve"
+  },
+  {
+   "cite": "NODEHB p.153",
+   "contains": [
+    "full content of the file in memory"
+   ],
+   "claim": "readFile loads into memory"
+  },
+  {
+   "cite": "NODEHB p.158",
+   "contains": [
+    "fs-extra"
+   ],
+   "claim": "fs-extra"
+  },
+  {
+   "cite": "NODEHB p.161",
+   "contains": [
+    "asynchronous by default"
+   ],
+   "claim": "fs is asynchronous by default"
+  },
+  {
+   "cite": "NODEHB p.162",
+   "contains": [
+    "node 10 includes experimental support for a promise based"
+   ],
+   "claim": "experimental fs promises"
+  },
+  {
+   "cite": "NODEHB p.174",
+   "contains": [
+    "synchronously calls every event listener in the order they were registered"
+   ],
+   "claim": "synchronous emit"
+  },
+  {
+   "cite": "NODEHB p.175",
+   "contains": [
+    "defaults to 10"
+   ],
+   "claim": "maxListeners"
+  },
+  {
+   "cite": "NODEHB p.176",
+   "contains": [
+    "added in node 10"
+   ],
+   "claim": "off in Node 10"
+  },
+  {
+   "cite": "NODEHB p.182",
+   "contains": [
+    "http.agent",
+    "pool of sockets"
+   ],
+   "claim": "Agent"
+  },
+  {
+   "cite": "NODEHB p.186",
+   "contains": [
+    "memory efficiency",
+    "time efficiency"
+   ],
+   "claim": "streams"
+  },
+  {
+   "cite": "NODEHB p.188",
+   "contains": [
+    "src.pipe(dest1).pipe(dest2)"
+   ],
+   "claim": "chained pipe"
+  },
+  {
+   "cite": "NODEHB p.189",
+   "contains": [
+    "readable",
+    "writable",
+    "duplex",
+    "transform"
+   ],
+   "claim": "stream types"
+  },
+  {
+   "cite": "NODEHB p.195",
+   "contains": [
+    "automatically escaped"
+   ],
+   "claim": "mysql placeholders"
+  },
+  {
+   "cite": "NODEHB p.196",
+   "contains": [
+    "results.insertid"
+   ],
+   "claim": "insertId"
+  },
+  {
+   "cite": "NODEHB p.197",
+   "contains": [
+    "results.resultid"
+   ],
+   "claim": "resultId error in the snippet"
+  },
+  {
+   "cite": "NODEHB p.198",
+   "contains": [
+    "node_env=production",
+    "cached"
+   ],
+   "claim": "production"
+  },
+  {
+   "cite": "NODEHB p.199",
+   "contains": [
+    "app.configure",
+    "errorhandler"
+   ],
+   "claim": "app.configure"
+  },
+  {
+   "cite": "NODEHB p.46",
+   "contains": [
+    "npm watch"
+   ],
+   "claim": "error: npm watch without run"
+  },
+  {
+   "cite": "NODEHB p.164",
+   "contains": [
+    "require('path').dirname('/test/something') // ''"
+   ],
+   "claim": "extname/dirname error"
+  },
+  {
+   "cite": "EXPHB p.1",
+   "contains": [
+    "november 18, 2022",
+    "flavio copes"
+   ],
+   "claim": "Express Handbook date"
+  },
+  {
+   "cite": "EXPHB p.2",
+   "contains": [
+    "very performant"
+   ],
+   "claim": "performance without numbers"
+  },
+  {
+   "cite": "EXPHB p.3",
+   "contains": [
+    "npm init -y",
+    "npm install express"
+   ],
+   "claim": "install"
+  },
+  {
+   "cite": "EXPHB p.4",
+   "contains": [
+    "node index.js",
+    "app.listen(3000"
+   ],
+   "claim": "hello"
+  },
+  {
+   "cite": "EXPHB p.5",
+   "contains": [
+    "closes the connection"
+   ],
+   "claim": "send closes the connection"
+  },
+  {
+   "cite": "EXPHB p.6",
+   "contains": [
+    "baseurl",
+    "signedcookies",
+    "xhr"
+   ],
+   "claim": "req properties"
+  },
+  {
+   "cite": "EXPHB p.7",
+   "contains": [
+    "content-length",
+    "text/html",
+    "application/json"
+   ],
+   "claim": "send"
+  },
+  {
+   "cite": "EXPHB p.8",
+   "contains": [
+    "sendstatus"
+   ],
+   "claim": "sendStatus"
+  },
+  {
+   "cite": "EXPHB p.10",
+   "contains": [
+    "samesite",
+    "httponly",
+    "clearcookie"
+   ],
+   "claim": "cookies"
+  },
+  {
+   "cite": "EXPHB p.12",
+   "contains": [
+    "302 redirect",
+    "res.redirect(301"
+   ],
+   "claim": "redirect"
+  },
+  {
+   "cite": "EXPHB p.14",
+   "contains": [
+    "/uppercase/:thevalue",
+    "req.params"
+   ],
+   "claim": "named parameters"
+  },
+  {
+   "cite": "EXPHB p.15",
+   "contains": [
+    "jade",
+    "pug 1.0",
+    "trademark"
+   ],
+   "claim": "Jade/Pug"
+  },
+  {
+   "cite": "EXPHB p.17",
+   "contains": [
+    "next()",
+    "execution stack",
+    "cookie-parser"
+   ],
+   "claim": "middleware"
+  },
+  {
+   "cite": "EXPHB p.18",
+   "contains": [
+    "req.locals"
+   ],
+   "claim": "req.locals in the text"
+  },
+  {
+   "cite": "EXPHB p.19",
+   "contains": [
+    "express.static('public')",
+    "response.download()"
+   ],
+   "claim": "static and download"
+  },
+  {
+   "cite": "EXPHB p.22",
+   "contains": [
+    "secret",
+    "only required parameter",
+    "req.session"
+   ],
+   "claim": "sessions"
+  },
+  {
+   "cite": "EXPHB p.23",
+   "contains": [
+    "not meant for production",
+    "redis",
+    "4 kilobytes"
+   ],
+   "claim": "store and cookie-session"
+  },
+  {
+   "cite": "EXPHB p.25",
+   "contains": [
+    "validationresult",
+    "422"
+   ],
+   "claim": "validation"
+  },
+  {
+   "cite": "EXPHB p.28",
+   "contains": [
+    "withmessage",
+    "invalid value"
+   ],
+   "claim": "withMessage"
+  },
+  {
+   "cite": "EXPHB p.30",
+   "contains": [
+    "never trust the input"
+   ],
+   "claim": "never trust"
+  },
+  {
+   "cite": "EXPHB p.31",
+   "contains": [
+    "trim()",
+    "escape()",
+    "normalizeemail()"
+   ],
+   "claim": "sanitization"
+  },
+  {
+   "cite": "EXPHB p.34",
+   "contains": [
+    "express.urlencoded()",
+    "extended: true"
+   ],
+   "claim": "urlencoded"
+  },
+  {
+   "cite": "EXPHB p.35",
+   "contains": [
+    "multipart/form-data",
+    "formidable"
+   ],
+   "claim": "upload"
+  },
+  {
+   "cite": "EXPHB p.37",
+   "contains": [
+    "filebegin",
+    "file.path"
+   ],
+   "claim": "fileBegin"
+  },
+  {
+   "cite": "FSTF p.1",
+   "contains": [
+    "version: latest (v5.12.x)",
+    "npm i fastify",
+    "logger: true"
+   ],
+   "claim": "version and installation"
+  },
+  {
+   "cite": "FSTF p.2",
+   "contains": [
+    "\"type\": \"module\"",
+    "async/await"
+   ],
+   "claim": "ESM"
+  },
+  {
+   "cite": "FSTF p.3",
+   "contains": [
+    "0.0.0.0",
+    "127.0.0.1"
+   ],
+   "claim": "host"
+  },
+  {
+   "cite": "FSTF p.4",
+   "contains": [
+    "everything is a plugin",
+    "docker"
+   ],
+   "claim": "plugins and Docker"
+  },
+  {
+   "cite": "FSTF p.5",
+   "contains": [
+    "register",
+    "only way to add routes"
+   ],
+   "claim": "register"
+  },
+  {
+   "cite": "FSTF p.6",
+   "contains": [
+    "fastify-plugin",
+    "@fastify/mongodb"
+   ],
+   "claim": "example dependencies"
+  },
+  {
+   "cite": "FSTF p.7",
+   "contains": [
+    "exposes the decorators",
+    "hooks"
+   ],
+   "claim": "fastify-plugin exposes"
+  },
+  {
+   "cite": "FSTF p.9",
+   "contains": [
+    "same order you declare",
+    "only once the current one has been loaded"
+   ],
+   "claim": "load order"
+  },
+  {
+   "cite": "FSTF p.10",
+   "contains": [
+    "fastify.listen()",
+    "fastify.inject()",
+    "fastify.ready()",
+    "decorate"
+   ],
+   "claim": "start of loading"
+  },
+  {
+   "cite": "FSTF p.11",
+   "contains": [
+    "json schema",
+    "querystring",
+    "params",
+    "headers"
+   ],
+   "claim": "validation"
+  },
+  {
+   "cite": "FSTF p.12",
+   "contains": [
+    "factor of 2-3",
+    "leakage",
+    "application/json",
+    "text/plain"
+   ],
+   "claim": "serialization and parsing"
+  },
+  {
+   "cite": "FSTF p.13",
+   "contains": [
+    "batteries included",
+    "does not offer a testing framework",
+    "fastify-cli"
+   ],
+   "claim": "extension, testing, CLI"
+  },
+  {
+   "cite": "FSTF p.14",
+   "contains": [
+    "fastify start server.js",
+    "npm start"
+   ],
+   "claim": "start script"
+  },
+  {
+   "cite": "NEST p.2",
+   "contains": [
+    "(version >= 20)",
+    "nest new project-name",
+    "--strict"
+   ],
+   "claim": "Node 20 and nest new"
+  },
+  {
+   "cite": "NEST p.3",
+   "contains": [
+    "app.module.ts",
+    "root module",
+    "nestfactory"
+   ],
+   "claim": "project files"
+  },
+  {
+   "cite": "NEST p.4",
+   "contains": [
+    "inestapplication",
+    "abortonerror",
+    "platform-agnostic"
+   ],
+   "claim": "NestFactory and platform"
+  },
+  {
+   "cite": "NEST p.5",
+   "contains": [
+    "nestexpressapplication",
+    "nestfastifyapplication",
+    "npm run start:dev",
+    "swc",
+    "x20 times faster"
+   ],
+   "claim": "app types and SWC"
+  },
+  {
+   "cite": "NEST p.6",
+   "contains": [
+    "eslint",
+    "prettier",
+    "npm run lint",
+    "npm run format"
+   ],
+   "claim": "lint and format"
+  },
+  {
+   "cite": "NEST p.7",
+   "contains": [
+    "copyright © 2017-2026"
+   ],
+   "claim": "footer year"
+  },
+  {
+   "cite": "NEST p.2-6",
+   "absent": [
+    "@injectable",
+    "@controller",
+    "@module",
+    "dependency injection",
+    "provider",
+    "guard",
+    "interceptor",
+    "dto"
+   ],
+   "claim": "Nest: no decorators/DI/guards/DTOs in these pages"
+  },
+  {
+   "cite": "NEST p.2-6",
+   "absent": [
+    "typeorm",
+    "swagger",
+    "graphql",
+    "microservice",
+    "jest"
+   ],
+   "claim": "Nest: no ORM/OpenAPI/GraphQL/microservices/Jest"
+  },
+  {
+   "cite": "NEST p.4-5",
+   "absent": [
+    "benchmark",
+    "requests per second"
+   ],
+   "claim": "Nest: no benchmark"
+  },
+  {
+   "cite": "FSTF p.1-14",
+   "absent": [
+    "typescript",
+    "pino",
+    "helmet",
+    "cors",
+    "swagger"
+   ],
+   "claim": "Fastify: no TS/pino/helmet/CORS/Swagger"
+  },
+  {
+   "cite": "FSTF p.1-14",
+   "absent": [
+    "benchmark",
+    "requests per second",
+    "express",
+    "koa"
+   ],
+   "claim": "Fastify: no benchmark or comparison with Express"
+  },
+  {
+   "cite": "FSTF p.10-13",
+   "absent": [
+    "onrequest",
+    "prehandler",
+    "lifecycle"
+   ],
+   "claim": "Fastify: no lifecycle hook names"
+  },
+  {
+   "cite": "FSTF p.11-12",
+   "absent": [
+    "ajv"
+   ],
+   "claim": "Fastify: Ajv not mentioned"
+  },
+  {
+   "cite": "EXPHB p.1-38",
+   "absent": [
+    "helmet",
+    "cors",
+    "passport",
+    "jwt",
+    "typescript"
+   ],
+   "claim": "Express: no helmet/CORS/passport/JWT/TS"
+  },
+  {
+   "cite": "EXPHB p.1-38",
+   "absent": [
+    "express.router",
+    "body-parser",
+    "morgan",
+    "fastify",
+    "nest"
+   ],
+   "claim": "Express: no Router/body-parser/morgan/other frameworks"
+  },
+  {
+   "cite": "EXPHB p.17-18",
+   "absent": [
+    "error handler",
+    "error-handling"
+   ],
+   "claim": "Express: no error middleware"
+  },
+  {
+   "cite": "EXPHB p.20-24",
+   "absent": [
+    "csrf",
+    "jwt"
+   ],
+   "claim": "Express: sessions without CSRF/JWT"
+  },
+  {
+   "cite": "NODEHB p.1-200",
+   "absent": [
+    "worker_threads",
+    "child_process",
+    "cluster",
+    "async_hooks",
+    "node:test"
+   ],
+   "claim": "Node HB: no worker_threads/cluster/child_process/test runner"
+  },
+  {
+   "cite": "NODEHB p.1-200",
+   "absent": [
+    "typescript",
+    "docker",
+    "pnpm",
+    "npm audit",
+    "npm ci"
+   ],
+   "claim": "Node HB: no TS/Docker/pnpm/npm audit/npm ci"
+  },
+  {
+   "cite": "NODEHB p.1-200",
+   "absent": [
+    "crypto",
+    "libuv"
+   ],
+   "claim": "Node HB: no crypto or libuv"
+  },
+  {
+   "cite": "NODEHB p.85-100",
+   "absent": [
+    "libuv",
+    "poll phase"
+   ],
+   "claim": "event loop: no libuv phases"
+  },
+  {
+   "cite": "NODEHB p.126-146",
+   "absent": [
+    "http/2",
+    "http/3"
+   ],
+   "claim": "HTTP: only HTTP/1.1 in the description"
+  },
+  {
+   "cite": "NODEHB p.193-197",
+   "absent": [
+    "pool",
+    "transaction",
+    "sequelize",
+    "prepared statement"
+   ],
+   "claim": "MySQL: no pool/transactions/ORM"
+  },
+  {
+   "cite": "NODEHB p.17-19",
+   "absent": [
+    "sigint",
+    "graceful shutdown"
+   ],
+   "claim": "exit: no SIGINT"
+  },
+  {
+   "cite": "NODEHB p.1-200",
+   "absent": [
+    "fastify",
+    "nestjs"
+   ],
+   "claim": "Node HB does not mention Fastify or NestJS"
+  },
+  {
+   "cite": "EXPHB p.1-38",
+   "absent": [
+    "express 4",
+    "express 5",
+    "express@"
+   ],
+   "claim": "Express HB does not declare the Express version"
+  },
+  {
+   "cite": "FSTF p.1-14",
+   "absent": [
+    "v4",
+    "v3"
+   ],
+   "claim": "Fastify: only v5.12.x appears"
+  }
+ ]
+}

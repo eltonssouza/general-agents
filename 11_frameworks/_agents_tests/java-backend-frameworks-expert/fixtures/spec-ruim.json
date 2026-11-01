@@ -1,0 +1,10 @@
+{
+  "mapper": {"name": "BadMapper", "kind": "interface", "componentModel": "guice", "foo": 1},
+  "methods": [
+    {"name": "m", "returns": "B", "params": [{"type": "A", "name": "a"}, {"type": "C", "name": "c"}],
+     "mappings": [{"target": "x", "constant": "1", "source": "a.x"}, {"target": "y", "source": "name"}, {"target": "z", "expression": "new Foo()"}]},
+    {"name": "u", "returns": "void", "params": [{"type": "A", "name": "a", "mappingTarget": true}, {"type": "B", "name": "b", "mappingTarget": true}]},
+    {"name": "e", "returns": "String", "params": [{"type": "OrderType", "name": "o"}],
+     "valueMappings": [{"source": "ANY_REMAINING", "target": "X"}, {"source": "ANY_UNMAPPED", "target": "Y"}, {"source": "THROW_EXCEPTION", "target": "Z"}]}
+  ]
+}

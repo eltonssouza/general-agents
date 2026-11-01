@@ -1,0 +1,2293 @@
+{
+ "source": "ISLR (1st ed.) and ESL (2nd ed.), PDFs of the collection",
+ "checks": [
+  {
+   "cite": "ISLR p.8",
+   "contains": [
+    "advanced training in the mathematical sciences",
+    "less technical"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.24",
+   "contains": [
+    "supplementary text",
+    "self-contained"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.28",
+   "contains": [
+    "no longer correspond precisely"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.31",
+   "contains": [
+    "random error term",
+    "mean zero"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.33",
+   "contains": [
+    "reducible",
+    "irreducible"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.34",
+   "contains": [
+    "irreducible error will always provide an upper bound"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.36",
+   "contains": [
+    "parametric",
+    "least squares"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.40",
+   "contains": [
+    "lasso",
+    "interpretable"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.44",
+   "contains": [
+    "no free lunch",
+    "mean squared error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.47",
+   "contains": [
+    "u-shape",
+    "overfitting"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.49",
+   "contains": [
+    "squared bias",
+    "irreducible error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.51",
+   "contains": [
+    "recurring themes"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.53",
+   "contains": [
+    "bayes error rate",
+    "bayes decision boundary"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.54",
+   "contains": [
+    "0.1304",
+    "0.1363"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.55",
+   "contains": [
+    "0.1695",
+    "0.1925"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.77",
+   "contains": [
+    "0.0475",
+    "7.03"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.81",
+   "contains": [
+    "97.5 %",
+    "t-distribution"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.83",
+   "contains": [
+    "2.75",
+    "p-value"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.85",
+   "contains": [
+    "well below 0.1"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.89",
+   "contains": [
+    "shark",
+    "0.35"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.91",
+   "contains": [
+    "570",
+    "f-statistic"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.92",
+   "contains": [
+    "by chance",
+    "p-values"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.93",
+   "contains": [
+    "1,073,741,824"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.94",
+   "contains": [
+    "greedy",
+    "cannot be used if p > n"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.97",
+   "contains": [
+    "prediction intervals",
+    "wider",
+    "11,256"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.104",
+   "contains": [
+    "hierarchical principle"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.109",
+   "contains": [
+    "underestimate",
+    "time series"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.112",
+   "contains": [
+    "studentized",
+    "greater than 3"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.113",
+   "contains": [
+    "leverage statistic",
+    "1/n"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.116",
+   "contains": [
+    "variance inflation factor",
+    "rule of thumb",
+    "5 or 10"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.117",
+   "contains": [
+    "160.67",
+    "160.59"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.123",
+   "contains": [
+    "curse of dimensionality"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.124",
+   "contains": [
+    "small number of observations per predictor",
+    "interpretability"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.144",
+   "contains": [
+    "stroke",
+    "drug overdose",
+    "epileptic seizure"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.147",
+   "contains": [
+    "log-odds",
+    "logit",
+    "1/4"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.148",
+   "contains": [
+    "maximum likelihood",
+    "likelihood function"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.149",
+   "contains": [
+    "0.00576",
+    "0.586"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.150",
+   "contains": [
+    "0.0431",
+    "0.0292"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.151",
+   "contains": [
+    "confounding"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.152",
+   "contains": [
+    "0.058",
+    "0.105"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.153",
+   "contains": [
+    "well-separated",
+    "unstable"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.156",
+   "contains": [
+    "10.6 %",
+    "11.1 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.159",
+   "contains": [
+    "2.75 %",
+    "3.33 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.160",
+   "contains": [
+    "252",
+    "333",
+    "75.7 %",
+    "24.3 %",
+    "99.8 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.161",
+   "contains": [
+    "41.4 %",
+    "3.73 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.162",
+   "contains": [
+    "receiver operating characteristics",
+    "0.95"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.164",
+   "contains": [
+    "type i error",
+    "precision"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.164-165",
+   "contains": [
+    "1,275",
+    "quadratic discriminant"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.166",
+   "contains": [
+    "does not tell us which predictors are important"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.169",
+   "contains": [
+    "no one method will dominate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.191",
+   "contains": [
+    "validation set approach",
+    "hold-out"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.193",
+   "contains": [
+    "highly variable",
+    "overestimate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.195",
+   "contains": [
+    "amazing shortcut",
+    "leverage"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.196",
+   "contains": [
+    "k = 5 or k = 10",
+    "k-fold cv"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.198-199",
+   "contains": [
+    "intermediate level of bias",
+    "higher variance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.200",
+   "contains": [
+    "0.201",
+    "0.197",
+    "0.160",
+    "0.162",
+    "0.133"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.203",
+   "contains": [
+    "0.083",
+    "0.6"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.205",
+   "contains": [
+    "0.087",
+    "0.083"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.220",
+   "contains": [
+    "algorithm 6.1",
+    "null model",
+    "validated prediction error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.222",
+   "contains": [
+    "branch-and-bound"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.223",
+   "contains": [
+    "1,048,576",
+    "211"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.224",
+   "contains": [
+    "backward selection requires"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.226",
+   "contains": [
+    "six-variable",
+    "cp"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.227",
+   "contains": [
+    "bic",
+    "log(n)",
+    "adjusted r2",
+    "n > 7"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.228",
+   "contains": [
+    "asymptotic",
+    "nowadays"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.229",
+   "contains": [
+    "one-standard-error rule",
+    "three-variable"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.230",
+   "contains": [
+    "shrinkage penalty",
+    "tuning parameter"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.232",
+   "contains": [
+    "scale equivariant",
+    "standardizing"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.234",
+   "contains": [
+    "sparse models",
+    "lasso"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.237",
+   "contains": [
+    "corners"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.240",
+   "contains": [
+    "thresholding",
+    "(6.15)"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.241",
+   "contains": [
+    "posterior mode",
+    "gaussian"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.242",
+   "contains": [
+    "double-exponential",
+    "laplace"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.243",
+   "contains": [
+    "noise variables",
+    "n = 50"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.248",
+   "contains": [
+    "principal components regression",
+    "orthogonal"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.251",
+   "contains": [
+    "ridge regression as a continuous"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.253",
+   "contains": [
+    "partial least squares",
+    "wash"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.256",
+   "contains": [
+    "not appropriate in the high-dimensional setting"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.257",
+   "contains": [
+    "curse of dimensionality"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.258",
+   "contains": [
+    "17 of those snps"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.259",
+   "contains": [
+    "independent test set",
+    "r2 = 1"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.281",
+   "contains": [
+    "polynomial regression"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.288",
+   "contains": [
+    "4 + k",
+    "truncated power basis"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.289",
+   "contains": [
+    "natural spline",
+    "boundary"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.292",
+   "contains": [
+    "smoothing spline",
+    "interpolates"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.294",
+   "contains": [
+    "sum of the diagonal elements"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.297",
+   "contains": [
+    "local regression",
+    "poorly if p is much larger than about 3 or 4"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.300",
+   "contains": [
+    "partial residual"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.301",
+   "contains": [
+    "additive",
+    "interactions"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.320",
+   "contains": [
+    "5.107",
+    "165,174"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.321",
+   "contains": [
+    "recursive binary splitting",
+    "greedy"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.324",
+   "contains": [
+    "algorithm 8.1",
+    "cross-validation"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.325",
+   "contains": [
+    "132",
+    "131",
+    "six-fold"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.327",
+   "contains": [
+    "gini index",
+    "entropy",
+    "node purity"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.331",
+   "contains": [
+    "non-robust"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.332",
+   "contains": [
+    "not a critical parameter",
+    "b = 100"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.333",
+   "contains": [
+    "two-thirds",
+    "out-of-bag"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.334",
+   "contains": [
+    "4 out of the 13"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.336",
+   "contains": [
+    "45.7 %",
+    "75.4 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.337",
+   "contains": [
+    "0.01 or 0.001",
+    "stump"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.338",
+   "contains": [
+    "algorithm 8.2",
+    "shrunken"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.352",
+   "contains": [
+    "maximal margin classifier",
+    "support vector classifier"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.361",
+   "contains": [
+    "slack variables"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.362",
+   "contains": [
+    "budget",
+    "cross-validation"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.367",
+   "contains": [
+    "radial kernel",
+    "polynomial kernel"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.368",
+   "contains": [
+    "infinite-dimensional"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.369",
+   "contains": [
+    "297",
+    "207",
+    "90"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.370",
+   "contains": [
+    "one-versus-one"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.372",
+   "contains": [
+    "hinge loss",
+    "ridge penalty"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.373",
+   "contains": [
+    "nuisance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.374",
+   "contains": [
+    "e1071",
+    "cost argument"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.389",
+   "contains": [
+    "no universally accepted mechanism"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.390",
+   "contains": [
+    "45 plots"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.396",
+   "contains": [
+    "18.97",
+    "87.73",
+    "6945.16",
+    "209.5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.398",
+   "contains": [
+    "62.0 %",
+    "24.7 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.399",
+   "contains": [
+    "elbow",
+    "ad hoc"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.403",
+   "contains": [
+    "algorithm 10.1",
+    "local optimum"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.404",
+   "contains": [
+    "235.8"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.407",
+   "contains": [
+    "dendrogram",
+    "reorderings"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.409",
+   "contains": [
+    "gender",
+    "nationality",
+    "nested"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.410",
+   "contains": [
+    "inversion",
+    "centroid"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.412",
+   "contains": [
+    "correlation-based distance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.415",
+   "contains": [
+    "we will find clusters",
+    "mixture models"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.1",
+   "contains": [
+    "corrected 12th printing"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.5",
+   "contains": [
+    "random forests",
+    "ensemble learning",
+    "undirected graphical models",
+    "high-dimensional problems"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.34",
+   "contains": [
+    "n/k",
+    "effective number of parameters"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.35",
+   "contains": [
+    "low variance and potentially high bias",
+    "high variance and low bias"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.37",
+   "contains": [
+    "conditional expectation",
+    "regression function"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.40",
+   "contains": [
+    "bayes classifier",
+    "bayes rate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.41",
+   "contains": [
+    "0.63",
+    "0.80",
+    "curse of dimensionality"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.42",
+   "contains": [
+    "0.52"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.43",
+   "contains": [
+    "more than 99%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.45",
+   "contains": [
+    "linearly"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.51",
+   "contains": [
+    "infinitely many solutions"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.53",
+   "contains": [
+    "roughness penalty",
+    "posterior mode"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.56",
+   "contains": [
+    "irreducible error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.67",
+   "contains": [
+    "z-score",
+    "f statistic"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.70",
+   "contains": [
+    "1.67",
+    "0.17",
+    "0.521",
+    "1.057",
+    "gauss-markov"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.71",
+   "contains": [
+    "biased",
+    "trade a little bias"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.76",
+   "contains": [
+    "leaps and bounds",
+    "30 or 40"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.79",
+   "contains": [
+    "standard errors are not valid",
+    "bootstrap"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.80",
+   "contains": [
+    "one-standard-error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.83",
+   "contains": [
+    "hoerl and kennard"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.85",
+   "contains": [
+    "singular values"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.87",
+   "contains": [
+    "effective degrees of freedom",
+    "5.0"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.88",
+   "contains": [
+    "0.36",
+    "soft thresholding"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.91",
+   "contains": [
+    "double exponential",
+    "convex"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.92",
+   "contains": [
+    "elastic",
+    "zou and hastie"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.98",
+   "contains": [
+    "discards"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.100",
+   "contains": [
+    "partial least squares",
+    "high variance and have high correlation"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.101",
+   "contains": [
+    "frank and friedman",
+    "ridge regression"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.123",
+   "contains": [
+    "negative",
+    "greater than 1"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.124",
+   "contains": [
+    "masked",
+    "middle class"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.125",
+   "contains": [
+    "0.33",
+    "0.04"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.126",
+   "contains": [
+    "0.67",
+    "0.56",
+    "0.53",
+    "0.51"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.130",
+   "contains": [
+    "statlog",
+    "7 of the 22"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.131",
+   "contains": [
+    "friedman (1989)",
+    "0.9"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.140",
+   "contains": [
+    "iteratively reweighted least squares",
+    "concave"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.143",
+   "contains": [
+    "1.084",
+    "8.4%",
+    "(1.03, 1.14)"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.147",
+   "contains": [
+    "30%",
+    "not robust to gross outliers"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.239",
+   "contains": [
+    "generalization error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.241",
+   "contains": [
+    "vault",
+    "50%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.242",
+   "contains": [
+    "irreducible error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.245",
+   "contains": [
+    "0.9",
+    "0.6"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.248",
+   "contains": [
+    "optimism",
+    "covariance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.249",
+   "contains": [
+    "cp",
+    "akaike information criterion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.250",
+   "contains": [
+    "equivalent to cp"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.252",
+   "contains": [
+    "bic",
+    "schwarz",
+    "7.4"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.253",
+   "contains": [
+    "bayes factor",
+    "posterior"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.254",
+   "contains": [
+    "asymptotically consistent",
+    "too simple"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.257",
+   "contains": [
+    "shatter",
+    "vc dimension"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.262",
+   "contains": [
+    "learning curve",
+    "160",
+    "40"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.263",
+   "contains": [
+    "generalized cross-validation",
+    "one-standard error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.264",
+   "contains": [
+    "5000",
+    "3%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.265-266",
+   "contains": [
+    "entire sequence of modeling steps",
+    "unsupervised"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.266",
+   "contains": [
+    "top rank journals"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.270",
+   "contains": [
+    "0.632",
+    "0.184",
+    "0.368"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.271",
+   "contains": [
+    ".316",
+    "no-information error rate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.272-273",
+   "contains": [
+    "38%",
+    "51%",
+    "10%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.276",
+   "contains": [
+    "not easy in general"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.302",
+   "contains": [
+    "voting proportions",
+    "0.75"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.304",
+   "contains": [
+    "never increases mean squared error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.305",
+   "contains": [
+    "wisdom of crowds",
+    "0.6",
+    "1.0"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.307",
+   "contains": [
+    "0.166",
+    "0.065"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.324",
+   "contains": [
+    "cart",
+    "c4.5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.326",
+   "contains": [
+    "greedy algorithm"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.327",
+   "contains": [
+    "cost complexity",
+    "weakest link"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.328",
+   "contains": [
+    "gini index",
+    "cross-entropy",
+    "misclassification error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.328-329",
+   "contains": [
+    "(400, 400)",
+    "pure node"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.330",
+   "contains": [
+    "surrogate"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.331",
+   "contains": [
+    "instability of trees",
+    "high variance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.332",
+   "contains": [
+    "9.3%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.356",
+   "contains": [
+    "adaboost.m1",
+    "weak classifier"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.358-359",
+   "contains": [
+    "45.8%",
+    "5.8%",
+    "24.7%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.359",
+   "contains": [
+    "best off-the-shelf classifier in the world"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.360",
+   "contains": [
+    "not very mysterious",
+    "additive"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.363",
+   "contains": [
+    "exponential loss criterion"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.364-365",
+   "contains": [
+    "log-odds"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.367",
+   "contains": [
+    "deviance",
+    "robust",
+    "noisy"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.370",
+   "contains": [
+    "table 10.1",
+    "mars"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.371",
+   "contains": [
+    "decision trees come closest"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.371-372",
+   "contains": [
+    "4.5%",
+    "8.7%",
+    "mcnemar"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.380",
+   "contains": [
+    "algorithm 10.3",
+    "mart"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.381-382",
+   "contains": [
+    "decision stump",
+    "works well in the context of boosting"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.383-384",
+   "contains": [
+    "learning rate",
+    "early stopping"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.386",
+   "contains": [
+    "four parameters"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.408",
+   "contains": [
+    "neural networks"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.411",
+   "contains": [
+    "hype",
+    "nonlinear statistical models"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.412",
+   "contains": [
+    "softmax",
+    "hidden units"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.414",
+   "contains": [
+    "cross-entropy",
+    "back-propagation"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.416",
+   "contains": [
+    "back-propagation can be very slow"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.417",
+   "contains": [
+    "weight decay",
+    "early stopping"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.438",
+   "contains": [
+    "slack variables",
+    "nonconvex"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.440-441",
+   "contains": [
+    "support vectors",
+    "62%",
+    "85%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.443",
+   "contains": [
+    "neither of these claims is true",
+    "radial basis"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.445",
+   "contains": [
+    "hinge",
+    "binomial deviance"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.446",
+   "contains": [
+    "mode of the posterior class probabilities"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.450",
+   "contains": [
+    "0.450",
+    "0.472",
+    "0.078",
+    "0.152",
+    "0.434",
+    "0.090"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.451",
+   "contains": [
+    "very sensitive to the choice of kernel",
+    "noise features"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.457",
+   "contains": [
+    "structural risk minimization"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.527",
+   "contains": [
+    "34, 105"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.528",
+   "contains": [
+    "local optima",
+    "greedy descent"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.529",
+   "contains": [
+    "algorithm 14.1",
+    "voronoi"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.538",
+   "contains": [
+    "kink",
+    "gap statistic"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.539",
+   "contains": [
+    "agglomerative",
+    "divisive"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.541-542",
+   "contains": [
+    "cophenetic",
+    "ultrametric"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.543",
+   "contains": [
+    "chaining"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.544",
+   "contains": [
+    "monotone strictly increasing"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.554",
+   "contains": [
+    "singular value decomposition",
+    "reconstruction error"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.556",
+   "contains": [
+    "90%",
+    "63%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.606",
+   "contains": [
+    "simpler to train and tune"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.607",
+   "contains": [
+    "algorithm 15.1",
+    "minimum node size"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.608",
+   "contains": [
+    "0.05 or lower"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.609",
+   "contains": [
+    "4.88%",
+    "4.5%",
+    "5.4%"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.611",
+   "contains": [
+    "minimum node size",
+    "default value for m"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.612",
+   "contains": [
+    "almost identical",
+    "permuted"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.668",
+   "contains": [
+    "highly regularized",
+    "less fitting is better"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.670",
+   "contains": [
+    "more regularization"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.671",
+   "contains": [
+    "independence rule",
+    "nearest shrunken centroids"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.704",
+   "contains": [
+    "1189",
+    "631.3",
+    "24.5"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.705",
+   "contains": [
+    "family-wise error rate",
+    "too conservative"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.706",
+   "contains": [
+    "false discovery rate",
+    "benjamini and hochberg"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.707",
+   "contains": [
+    "algorithm 18.2",
+    "bh rejection threshold"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.708",
+   "contains": [
+    "1518",
+    "14%",
+    "algorithm 18.3"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.709",
+   "contains": [
+    "0.15",
+    "exploratory"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.103",
+   "contains": [
+    "96.8 %",
+    "89.7 %"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.106",
+   "contains": [
+    "0.688",
+    "0.606"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.111",
+   "contains": [
+    "1.09",
+    "0.77"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.112",
+   "contains": [
+    "0.892",
+    "0.805"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.116",
+   "contains": [
+    "0.701",
+    "12"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.232-233",
+   "contains": [
+    "p = 45",
+    "n = 50",
+    "approximately λ = 30"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.325-326",
+   "contains": [
+    "three-node tree",
+    "ten-node tree"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.260",
+   "contains": [
+    "n/k"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.69",
+   "contains": [
+    "2.002",
+    "67"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.78",
+   "contains": [
+    "0.85",
+    "p = 31"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.129",
+   "contains": [
+    "proportional to the lda direction"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.379",
+   "contains": [
+    "table 10.2",
+    "pseudo"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.610-611",
+   "contains": [
+    "0.007",
+    "wilcoxon"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.669-670",
+   "contains": [
+    "20 df",
+    "35 df",
+    "43 df"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ESL p.536",
+   "contains": [
+    "distances rather than raw observations"
+   ],
+   "claim": "terms/names/numbers that the references attribute to these pages"
+  },
+  {
+   "cite": "ISLR p.163-164",
+   "absent": [
+    "f1",
+    "f-measure",
+    "f1-score"
+   ],
+   "claim": "Tables 4.6/4.7 do not list F1"
+  },
+  {
+   "cite": "ISLR p.162-164",
+   "absent": [
+    "precision-recall",
+    "pr curve"
+   ],
+   "claim": "ISLR uses ROC, not the PR curve"
+  },
+  {
+   "cite": "ISLR p.318-338",
+   "absent": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+   ],
+   "claim": "ISLR boosting is the simple-tree one (Alg. 8.2)"
+  },
+  {
+   "cite": "ISLR p.318-338",
+   "absent": [
+    "adaboost",
+    "exponential loss"
+   ],
+   "claim": "AdaBoost is not in the ISLR 1st ed."
+  },
+  {
+   "cite": "ISLR p.352-373",
+   "absent": [
+    "platt",
+    "sequential minimal optimization",
+    "smo"
+   ],
+   "claim": "Platt calibration and SMO are not covered"
+  },
+  {
+   "cite": "ISLR p.388-416",
+   "absent": [
+    "t-sne",
+    "umap",
+    "dbscan",
+    "silhouette"
+   ],
+   "claim": "only PCA, K-means and hierarchical clustering"
+  },
+  {
+   "cite": "ISLR p.388-416",
+   "absent": [
+    "gap statistic"
+   ],
+   "claim": "gap statistic appears only in the ESL"
+  },
+  {
+   "cite": "ISLR p.218-258",
+   "absent": [
+    "elastic net",
+    "least angle"
+   ],
+   "claim": "elastic net/LAR only in the ESL"
+  },
+  {
+   "cite": "ISLR p.191-205",
+   "absent": [
+    "632",
+    ".632+"
+   ],
+   "claim": ".632 only in the ESL"
+  },
+  {
+   "cite": "ISLR p.16-433",
+   "absent": [
+    "benjamini",
+    "bonferroni"
+   ],
+   "claim": "multiple testing absent from the ISLR 1st ed."
+  },
+  {
+   "cite": "ISLR p.16-433",
+   "absent": [
+    "deep learning",
+    "transformer",
+    "dropout",
+    "xgboost"
+   ],
+   "claim": "topics absent from the 1st ed."
+  },
+  {
+   "cite": "ISLR p.143-169",
+   "absent": [
+    "naive bayes"
+   ],
+   "claim": "naive Bayes is not in ch. 4 of the ISLR 1st ed."
+  },
+  {
+   "cite": "ISLR p.286-302",
+   "absent": [
+    "mars"
+   ],
+   "claim": "MARS only in the ESL"
+  },
+  {
+   "cite": "ISLR p.230-243",
+   "absent": [
+    "coordinate descent",
+    "elastic"
+   ],
+   "claim": "ridge/lasso in the ISLR without coordinate descent"
+  },
+  {
+   "cite": "ESL p.408-417",
+   "absent": [
+    "relu",
+    "rectified linear",
+    "dropout",
+    "batch normalization",
+    "transformer"
+   ],
+   "claim": "only the one-hidden-layer network"
+  },
+  {
+   "cite": "ESL p.606-614",
+   "absent": [
+    "xgboost",
+    "extremely randomized",
+    "extra-trees"
+   ],
+   "claim": "ESL 2009 forests"
+  },
+  {
+   "cite": "ESL p.356-389",
+   "absent": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+   ],
+   "claim": "ESL 2009 GBM/MART"
+  },
+  {
+   "cite": "ESL p.436-457",
+   "absent": [
+    "platt",
+    "sequential minimal optimization"
+   ],
+   "claim": "ESL SVM without Platt/SMO in this passage"
+  },
+  {
+   "cite": "ESL p.247-254",
+   "absent": [
+    "hannan-quinn",
+    "hqic"
+   ],
+   "claim": "only AIC, BIC, MDL, VC/SRM"
+  },
+  {
+   "cite": "ESL p.702-711",
+   "absent": [
+    "holm",
+    "sidak",
+    "storey's q-value"
+   ],
+   "claim": "only Bonferroni, BH, SAM and pFDR"
+  },
+  {
+   "cite": "ESL p.527-546",
+   "absent": [
+    "dbscan",
+    "silhouette",
+    "t-sne"
+   ],
+   "claim": "only K-means/medoids/hierarchical"
+  },
+  {
+   "cite": "ESL p.20-717",
+   "absent": [
+    "conformal",
+    "double descent",
+    "xgboost",
+    "pytorch"
+   ],
+   "claim": "topics later than the book"
+  },
+  {
+   "cite": "ESL p.138-148",
+   "absent": [
+    "lbfgs",
+    "l-bfgs"
+   ],
+   "claim": "logistic regression by IRLS/Newton"
+  },
+  {
+   "cite": "ESL p.368-370",
+   "absent": [
+    "lime",
+    "shapley"
+   ],
+   "claim": "interpretability by relative importance and partial dependence"
+  },
+  {
+   "cite": "ISLR p.336-338",
+   "absent": [
+    "subsample",
+    "stochastic gradient boosting"
+   ],
+   "claim": "subsampling in boosting only in the ESL"
+  },
+  {
+   "cite": "ISLR p.334-336",
+   "absent": [
+    "permutation"
+   ],
+   "claim": "ISLR measures importance by RSS/Gini decrease; OOB permutation only in the ESL"
+  },
+  {
+   "cite": "ESL p.436-446",
+   "absent": [
+    "libsvm",
+    "liblinear"
+   ],
+   "claim": "no SVM packages in this passage"
+  }
+ ]
+}

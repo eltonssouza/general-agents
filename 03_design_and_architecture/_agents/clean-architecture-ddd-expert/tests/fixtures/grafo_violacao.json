@@ -1,0 +1,9 @@
+{
+  "name": "fixture with violation",
+  "modules": [
+    {"name": "Invoice", "layer": "entities", "dependencies": [{"name": "JpaEntityAnnotation", "layer": "frameworks_drivers"}]},
+    {"name": "PayInvoice", "layer": "use_cases", "dependencies": [{"name": "Invoice", "layer": "entities"}, {"name": "InvoiceController", "layer": "interface_adapters"}]},
+    {"name": "InvoiceController", "layer": "interface_adapters", "dependencies": [{"name": "PayInvoice", "layer": "use_cases"}]},
+    {"name": "Mystery", "layer": "camada_estranha", "dependencies": []}
+  ]
+}

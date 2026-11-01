@@ -1,0 +1,1269 @@
+{
+ "fonte": "BAAS = Building-Agentic-AI-System.pdf (289 pp.); CE2 = Context-Engineering-2.0-arxiv.pdf (28 pp.); pages = PDF",
+ "checks": [
+  {
+   "cite": "BAAS p.1",
+   "contains": [
+    "Building",
+    "Agentic AI Systems",
+    "Anjanava Biswas",
+    "Wrick Talukdar"
+   ],
+   "claim": "identification: title and authors"
+  },
+  {
+   "cite": "BAAS p.3",
+   "contains": [
+    "2025 Packt Publishing",
+    "First published: April 2025",
+    "978-1-80323-875-3"
+   ],
+   "claim": "publisher, date, and ISBN"
+  },
+  {
+   "cite": "BAAS p.24",
+   "contains": [
+    "Building Agentic Systems with Generative AI"
+   ],
+   "claim": "title variation within the PDF itself"
+  },
+  {
+   "cite": "BAAS p.29",
+   "contains": [
+    "discriminative",
+    "probability distribution"
+   ],
+   "claim": "generative vs. discriminative AI"
+  },
+  {
+   "cite": "BAAS p.35",
+   "contains": [
+    "do not fit neatly into a single category",
+    "instruction-tuned"
+   ],
+   "claim": "LLM agent is not a model type"
+  },
+  {
+   "cite": "BAAS p.39",
+   "contains": [
+    "flightLookup",
+    "bookFlight"
+   ],
+   "claim": "fictional functions in the flight example"
+  },
+  {
+   "cite": "BAAS p.40",
+   "contains": [
+    "chain of thought"
+   ],
+   "claim": "CoT in the flight example"
+  },
+  {
+   "cite": "BAAS p.42",
+   "contains": [
+    "sandbox"
+   ],
+   "claim": "generated code executed in a sandbox"
+  },
+  {
+   "cite": "BAAS p.46",
+   "contains": [
+    "$200",
+    "prompt injection"
+   ],
+   "claim": "training-data extraction"
+  },
+  {
+   "cite": "BAAS p.47",
+   "contains": [
+    "small language models"
+   ],
+   "claim": "SLMs"
+  },
+  {
+   "cite": "BAAS p.54",
+   "contains": [
+    "Self-organization",
+    "Self-regulation",
+    "Self-adaptation",
+    "Self-optimization",
+    "Self-determination"
+   ],
+   "claim": "five aspects of self-governance"
+  },
+  {
+   "cite": "BAAS p.55",
+   "contains": [
+    "Intentionality",
+    "Responsibility",
+    "Operational autonomy",
+    "Functional autonomy"
+   ],
+   "claim": "agency and autonomy"
+  },
+  {
+   "cite": "BAAS p.56",
+   "contains": [
+    "Hierarchical autonomy",
+    "human oversight"
+   ],
+   "claim": "hierarchical autonomy; human oversight"
+  },
+  {
+   "cite": "BAAS p.59",
+   "contains": [
+    "not intelligent"
+   ],
+   "claim": "the agent in algorithm 1 is not intelligent"
+  },
+  {
+   "cite": "BAAS p.60",
+   "contains": [
+    "Reactivity",
+    "Proactiveness",
+    "Social ability"
+   ],
+   "claim": "attributes of the intelligent agent"
+  },
+  {
+   "cite": "BAAS p.61",
+   "contains": [
+    "Deliberative architectures",
+    "sense-plan-act"
+   ],
+   "claim": "deliberative architecture"
+  },
+  {
+   "cite": "BAAS p.62",
+   "contains": [
+    "computational cost"
+   ],
+   "claim": "limit of the deliberative architecture"
+  },
+  {
+   "cite": "BAAS p.63",
+   "contains": [
+    "Reactive architectures",
+    "condition-action"
+   ],
+   "claim": "reactive architecture"
+  },
+  {
+   "cite": "BAAS p.64",
+   "contains": [
+    "Lack of long-term planning",
+    "reactive layer",
+    "deliberative layer"
+   ],
+   "claim": "limits of the reactive architecture; layers of the hybrid one"
+  },
+  {
+   "cite": "BAAS p.65",
+   "contains": [
+    "Task decomposition",
+    "Multiplan selection",
+    "Planning with external modules",
+    "Reflection and refinement",
+    "Memory-augmented planning"
+   ],
+   "claim": "techniques of the hybrid architecture"
+  },
+  {
+   "cite": "BAAS p.67",
+   "contains": [
+    "Decentralized data and knowledge",
+    "Heterogeneity",
+    "Scalability",
+    "Distributed control"
+   ],
+   "claim": "characteristics of MAS"
+  },
+  {
+   "cite": "BAAS p.70",
+   "contains": [
+    "auctions",
+    "voting protocols",
+    "game-theoretic"
+   ],
+   "claim": "negotiation"
+  },
+  {
+   "cite": "BAAS p.73",
+   "contains": [
+    "not very intelligent"
+   ],
+   "claim": "the MAS in algorithm 2 does not interpret natural language"
+  },
+  {
+   "cite": "BAAS p.78",
+   "contains": [
+    "inheritance"
+   ],
+   "claim": "semantic networks and inheritance"
+  },
+  {
+   "cite": "BAAS p.79",
+   "contains": [
+    "attribute-value"
+   ],
+   "claim": "frames"
+  },
+  {
+   "cite": "BAAS p.81",
+   "contains": [
+    "soundness",
+    "completeness"
+   ],
+   "claim": "logic: soundness and completeness"
+  },
+  {
+   "cite": "BAAS p.85",
+   "contains": [
+    "inference to the best explanation",
+    "Abductive reasoning"
+   ],
+   "claim": "abduction"
+  },
+  {
+   "cite": "BAAS p.88",
+   "contains": [
+    "0.05",
+    "1000",
+    "completely arbitrary"
+   ],
+   "claim": "arbitrary utility weights"
+  },
+  {
+   "cite": "BAAS p.89",
+   "contains": [
+    "95.00",
+    "127.50",
+    "Budget Airline",
+    "Road Trip"
+   ],
+   "claim": "numeric result of the utility example"
+  },
+  {
+   "cite": "BAAS p.90",
+   "contains": [
+    "preference elicitation",
+    "inverse reinforcement learning"
+   ],
+   "claim": "difficulty of defining utility"
+  },
+  {
+   "cite": "BAAS p.91",
+   "contains": [
+    "Bellman-Ford",
+    "A*",
+    "Monte Carlo"
+   ],
+   "claim": "classical planning"
+  },
+  {
+   "cite": "BAAS p.94",
+   "contains": [
+    "LangGraph",
+    "AutoGen",
+    "CrewAI",
+    "MetaGPT"
+   ],
+   "claim": "frameworks cited [DATED]"
+  },
+  {
+   "cite": "BAAS p.95",
+   "contains": [
+    "gpt-4-turbo"
+   ],
+   "claim": "first agent with function calling"
+  },
+  {
+   "cite": "BAAS p.103",
+   "contains": [
+    "Reflection in LLM agents"
+   ],
+   "claim": "definition of reflection"
+  },
+  {
+   "cite": "BAAS p.109",
+   "contains": [
+    "feedback == -1",
+    "preferences_weights",
+    "0.9",
+    "1.1"
+   ],
+   "claim": "feedback-based weight adjustment rule"
+  },
+  {
+   "cite": "BAAS p.110",
+   "contains": [
+    "adjustment_factor",
+    "gpt-4o-mini"
+   ],
+   "claim": "CrewAI meta-agent"
+  },
+  {
+   "cite": "BAAS p.113",
+   "contains": [
+    "0.33",
+    "0.32",
+    "0.34"
+   ],
+   "claim": "resulting weights of the example"
+  },
+  {
+   "cite": "BAAS p.115",
+   "contains": [
+    "Recommendation acceptance rates",
+    "Complaint and return rates"
+   ],
+   "claim": "product metrics"
+  },
+  {
+   "cite": "BAAS p.116",
+   "contains": [
+    "diminishing returns"
+   ],
+   "claim": "diminishing returns in resource allocation"
+  },
+  {
+   "cite": "BAAS p.117",
+   "contains": [
+    "Multi-Armed Bandit",
+    "Min-Min",
+    "weighted round robin"
+   ],
+   "claim": "allocation strategies"
+  },
+  {
+   "cite": "BAAS p.118",
+   "contains": [
+    "backstory",
+    "transparency"
+   ],
+   "claim": "self-explanation via backstory"
+  },
+  {
+   "cite": "BAAS p.121",
+   "contains": [
+    "Self-modeling",
+    "shared internal state"
+   ],
+   "claim": "self-modeling"
+  },
+  {
+   "cite": "BAAS p.122",
+   "contains": [
+    "Goal management",
+    "Knowledge update"
+   ],
+   "claim": "components of self-modeling"
+  },
+  {
+   "cite": "BAAS p.134",
+   "contains": [
+    "Agent Controller",
+    "Function calling refers",
+    "Tool calling"
+   ],
+   "claim": "function vs. tool calling; executor"
+  },
+  {
+   "cite": "BAAS p.135",
+   "contains": [
+    "mandatory",
+    "optional"
+   ],
+   "claim": "required and optional parameters"
+  },
+  {
+   "cite": "BAAS p.136",
+   "contains": [
+    "docstring",
+    "Claude Sonnet"
+   ],
+   "claim": "docstring; models cited [DATED]"
+  },
+  {
+   "cite": "BAAS p.137",
+   "contains": [
+    "input_schema",
+    "required"
+   ],
+   "claim": "tool JSON schema"
+  },
+  {
+   "cite": "BAAS p.138",
+   "contains": [
+    "Hardware interface tools",
+    "Integration tools",
+    "Utility functions",
+    "Database tools"
+   ],
+   "claim": "tool types"
+  },
+  {
+   "cite": "BAAS p.139",
+   "contains": [
+    "Tool composition and chaining",
+    "Error handling and fallbacks",
+    "Tool updates and versioning",
+    "Tool security and access control",
+    "rate limits"
+   ],
+   "claim": "tool considerations"
+  },
+  {
+   "cite": "BAAS p.142",
+   "contains": [
+    "STRIPS",
+    "GraphPlan",
+    "Fast Forward",
+    "LLM-based planning"
+   ],
+   "claim": "practicality classification"
+  },
+  {
+   "cite": "BAAS p.143",
+   "contains": [
+    "combinatorial explosion",
+    "prohibitively expensive"
+   ],
+   "claim": "reasons for impracticality (GraphPlan, MCTS)"
+  },
+  {
+   "cite": "BAAS p.147",
+   "contains": [
+    "overly optimistic"
+   ],
+   "claim": "caution with LLM-based planning"
+  },
+  {
+   "cite": "BAAS p.148",
+   "contains": [
+    "manager",
+    "less flexible"
+   ],
+   "claim": "LLM manager less flexible"
+  },
+  {
+   "cite": "BAAS p.150",
+   "contains": [
+    "completely fictional"
+   ],
+   "claim": "a plan without tools is fictional"
+  },
+  {
+   "cite": "BAAS p.152",
+   "contains": [
+    "Failing to understand when a tool is needed",
+    "before deployment"
+   ],
+   "claim": "limitations of reasoning about tools"
+  },
+  {
+   "cite": "BAAS p.155",
+   "contains": [
+    "RoundRobinGroupChat"
+   ],
+   "claim": "AutoGen: round-robin chat"
+  },
+  {
+   "cite": "BAAS p.156",
+   "contains": [
+    "TextMentionTermination",
+    "TERMINATE"
+   ],
+   "claim": "AutoGen: termination condition"
+  },
+  {
+   "cite": "BAAS p.158",
+   "contains": [
+    "MemorySaver",
+    "thread_id",
+    "StateGraph"
+   ],
+   "claim": "LangGraph"
+  },
+  {
+   "cite": "BAAS p.159",
+   "contains": [
+    "State management",
+    "Flow control"
+   ],
+   "claim": "comparison table"
+  },
+  {
+   "cite": "BAAS p.164",
+   "contains": [
+    "throughput",
+    "latency",
+    "Delegators"
+   ],
+   "claim": "delegator and metrics"
+  },
+  {
+   "cite": "BAAS p.165",
+   "contains": [
+    "Separation of concerns",
+    "Fault tolerance through redundancy",
+    "Runtime role reassignment",
+    "Downward flow",
+    "Upward flow"
+   ],
+   "claim": "CWD principles"
+  },
+  {
+   "cite": "BAAS p.169",
+   "contains": [
+    "backstory",
+    "system prompt"
+   ],
+   "claim": "backstory merged into the system prompt"
+  },
+  {
+   "cite": "BAAS p.170",
+   "contains": [
+    "Task Interpreter",
+    "Kazík"
+   ],
+   "claim": "roles; cited study"
+  },
+  {
+   "cite": "BAAS p.177",
+   "contains": [
+    "FIPA",
+    "Agent Communication Language"
+   ],
+   "claim": "communication protocol"
+  },
+  {
+   "cite": "BAAS p.178",
+   "contains": [
+    "mediator"
+   ],
+   "claim": "delegator as mediator"
+  },
+  {
+   "cite": "BAAS p.179",
+   "contains": [
+    "system prompts",
+    "configuration layer"
+   ],
+   "claim": "system prompt as configuration layer"
+  },
+  {
+   "cite": "BAAS p.180",
+   "contains": [
+    "Instruction formatting",
+    "Input structuring",
+    "Output templates"
+   ],
+   "claim": "instruction formatting"
+  },
+  {
+   "cite": "BAAS p.181",
+   "contains": [
+    "message_type",
+    "sender",
+    "recipient"
+   ],
+   "claim": "message format"
+  },
+  {
+   "cite": "BAAS p.188",
+   "contains": [
+    "Constraints:",
+    "Behavior:",
+    "Core functions:"
+   ],
+   "claim": "focused prompt example"
+  },
+  {
+   "cite": "BAAS p.193",
+   "contains": [
+    "booking_id",
+    "cancellation_deadline",
+    "dependencies"
+   ],
+   "claim": "booking state in JSON"
+  },
+  {
+   "cite": "BAAS p.194",
+   "contains": [
+    "three fundamental questions",
+    "static",
+    "dynamic"
+   ],
+   "claim": "environment modeling"
+  },
+  {
+   "cite": "BAAS p.195",
+   "contains": [
+    "purpose-built agents"
+   ],
+   "claim": "mitigation with specific agents"
+  },
+  {
+   "cite": "BAAS p.196",
+   "contains": [
+    "Event-driven updates",
+    "FLIGHT_CHANGE",
+    "WEATHER_ALERT"
+   ],
+   "claim": "events"
+  },
+  {
+   "cite": "BAAS p.196",
+   "contains": [
+    "State validation and consistency"
+   ],
+   "claim": "state validation"
+  },
+  {
+   "cite": "BAAS p.197",
+   "contains": [
+    "validate_state_transition",
+    "passport"
+   ],
+   "claim": "state transition validation"
+  },
+  {
+   "cite": "BAAS p.199",
+   "contains": [
+    "Short-term memory",
+    "clear_session",
+    "WorkingMemory"
+   ],
+   "claim": "short-term memory"
+  },
+  {
+   "cite": "BAAS p.200",
+   "contains": [
+    "Long-term memory",
+    "knowledge base"
+   ],
+   "claim": "long-term memory"
+  },
+  {
+   "cite": "BAAS p.201",
+   "contains": [
+    "episodic memory",
+    "EpisodicMemory"
+   ],
+   "claim": "episodic memory"
+  },
+  {
+   "cite": "BAAS p.202",
+   "contains": [
+    "Global context",
+    "Session context",
+    "$2,000",
+    "retrieve_relevant_episodes"
+   ],
+   "claim": "context hierarchy and policy example"
+  },
+  {
+   "cite": "BAAS p.203",
+   "contains": [
+    "Context preservation",
+    "Context restoration",
+    "Context merging",
+    "Task context"
+   ],
+   "claim": "context switching"
+  },
+  {
+   "cite": "BAAS p.206",
+   "contains": [
+    "Parallel processing",
+    "Concurrent searches"
+   ],
+   "claim": "parallel flow"
+  },
+  {
+   "cite": "BAAS p.208",
+   "contains": [
+    "backpressure",
+    "retry strategies",
+    "rate limits and quotas"
+   ],
+   "claim": "workflow optimization"
+  },
+  {
+   "cite": "BAAS p.214",
+   "contains": [
+    "guardrails and constraints"
+   ],
+   "claim": "opening of ch. 8 mentions the guardrails of ch. 7"
+  },
+  {
+   "cite": "BAAS p.216",
+   "contains": [
+    "Algorithmic transparency",
+    "Presentation transparency"
+   ],
+   "claim": "two levels of transparency"
+  },
+  {
+   "cite": "BAAS p.217",
+   "contains": [
+    "bert-base-uncased"
+   ],
+   "claim": "XAI notebook"
+  },
+  {
+   "cite": "BAAS p.222",
+   "contains": [
+    "AI-generated"
+   ],
+   "claim": "labeling content"
+  },
+  {
+   "cite": "BAAS p.231",
+   "contains": [
+    "adversarial",
+    "agentic systems"
+   ],
+   "claim": "most critical risks in agents"
+  },
+  {
+   "cite": "BAAS p.232",
+   "contains": [
+    "action verification",
+    "decision auditing",
+    "multi-step authentication"
+   ],
+   "claim": "safeguards against adversarial attack"
+  },
+  {
+   "cite": "BAAS p.233",
+   "contains": [
+    "real-time bias detection"
+   ],
+   "claim": "bias in agents"
+  },
+  {
+   "cite": "BAAS p.234",
+   "contains": [
+    "confidence thresholds",
+    "multi-step verification",
+    "fallback procedures"
+   ],
+   "claim": "hallucination mitigation"
+  },
+  {
+   "cite": "BAAS p.235",
+   "contains": [
+    "chains of autonomous decisions"
+   ],
+   "claim": "privacy in decision chains"
+  },
+  {
+   "cite": "BAAS p.236",
+   "contains": [
+    "Stability AI",
+    "SynthID",
+    "WIPO PROOF"
+   ],
+   "claim": "tools and IP case [DATED]"
+  },
+  {
+   "cite": "BAAS p.237",
+   "contains": [
+    "Action boundaries",
+    "Decision verification",
+    "Rollback capabilities",
+    "Amazon Bedrock Guardrails",
+    "role-based access control",
+    "Apache Kafka"
+   ],
+   "claim": "agent safety considerations"
+  },
+  {
+   "cite": "BAAS p.238",
+   "contains": [
+    "Real-time monitoring",
+    "Reinforcement learning feedback loops",
+    "Performance metrics",
+    "AI Fairness 360",
+    "hybrid AI-human workflows"
+   ],
+   "claim": "monitoring, HITL, metrics"
+  },
+  {
+   "cite": "BAAS p.239",
+   "contains": [
+    "decision chains",
+    "Human oversight",
+    "Figure 9.1"
+   ],
+   "claim": "agent testing and oversight"
+  },
+  {
+   "cite": "BAAS p.240",
+   "contains": [
+    "Progressive autonomy",
+    "Contextual safety bounds",
+    "Continuous validation",
+    "Emergency protocols",
+    "red-teaming",
+    "sandboxed"
+   ],
+   "claim": "safe learning"
+  },
+  {
+   "cite": "BAAS p.241",
+   "contains": [
+    "privacy-by-design",
+    "k-anonymity"
+   ],
+   "claim": "privacy by design"
+  },
+  {
+   "cite": "BAAS p.243",
+   "contains": [
+    "incident response",
+    "penetration testing"
+   ],
+   "claim": "deployment security"
+  },
+  {
+   "cite": "BAAS p.248",
+   "contains": [
+    "Firefly"
+   ],
+   "claim": "cited case [DATED]"
+  },
+  {
+   "cite": "BAAS p.252",
+   "contains": [
+    "Access control layer",
+    "Audit logging system"
+   ],
+   "claim": "access-control layer in the knowledge case"
+  },
+  {
+   "cite": "BAAS p.257",
+   "contains": [
+    "LOXM"
+   ],
+   "claim": "cited case [DATED]"
+  },
+  {
+   "cite": "BAAS p.264",
+   "contains": [
+    "no practical implementation"
+   ],
+   "claim": "AGI does not exist"
+  },
+  {
+   "cite": "BAAS p.270",
+   "contains": [
+    "meta-learning",
+    "MAML"
+   ],
+   "claim": "future challenges"
+  },
+  {
+   "cite": "BAAS p.274",
+   "contains": [
+    "abductive reasoning  59-61"
+   ],
+   "claim": "index: offset 25 (abductive reasoning printed 59-61 = PDF 84-86)"
+  },
+  {
+   "cite": "CE2 p.1",
+   "contains": [
+    "Context Engineering 2.0",
+    "Qishuo Hua",
+    "Pengfei Liu",
+    "arXiv:2510.26493v1",
+    "Context as translation",
+    "Context as World"
+   ],
+   "claim": "identification and Fig. 1"
+  },
+  {
+   "cite": "CE2 p.3",
+   "contains": [
+    "entropy reduction",
+    "high-entropy",
+    "Mei et al., 2025"
+   ],
+   "claim": "entropy reduction"
+  },
+  {
+   "cite": "CE2 p.4",
+   "contains": [
+    "Entity and Characterization",
+    "power set",
+    "Gemini CLI"
+   ],
+   "claim": "definition 1"
+  },
+  {
+   "cite": "CE2 p.5",
+   "contains": [
+    "Definition 3",
+    "Definition 4",
+    "self-baking",
+    "adapting context dynamically"
+   ],
+   "claim": "definitions 3 and 4 and the eight operations"
+  },
+  {
+   "cite": "CE2 p.6",
+   "contains": [
+    "Era 1.0: Primitive Computation",
+    "Era 2.0: Agent-Centric Intelligence",
+    "Era 3.0: Human-Level Intelligence",
+    "Era 4.0: Superhuman Intelligence",
+    "Context Toolkit",
+    "Cooltown",
+    "ContextPhone"
+   ],
+   "claim": "four eras and Table 1"
+  },
+  {
+   "cite": "CE2 p.7",
+   "contains": [
+    "Widgets",
+    "Interpreters",
+    "Aggregators",
+    "Services",
+    "Discoverers",
+    "Weiser",
+    "Salber"
+   ],
+   "claim": "Context Toolkit"
+  },
+  {
+   "cite": "CE2 p.8",
+   "contains": [
+    "context-cooperative",
+    "Table 2",
+    "tolerance for raw context"
+   ],
+   "claim": "era 2.0"
+  },
+  {
+   "cite": "CE2 p.9",
+   "contains": [
+    "Minimal Sufficiency Principle",
+    "Semantic Continuity Principle",
+    "SQLite"
+   ],
+   "claim": "collection principles"
+  },
+  {
+   "cite": "CE2 p.10",
+   "contains": [
+    "RocksDB",
+    "hardware security modules",
+    "layered architecture",
+    "Claude Code",
+    "timestamp"
+   ],
+   "claim": "layered storage"
+  },
+  {
+   "cite": "CE2 p.11",
+   "contains": [
+    "cross-attention",
+    "self-attention",
+    "Hierarchical Notes",
+    "QA Pairs"
+   ],
+   "claim": "textual and multimodal processing"
+  },
+  {
+   "cite": "CE2 p.12",
+   "contains": [
+    "Karpathy",
+    "RAM",
+    "Definition 5.1",
+    "Definition 5.2",
+    "Definition 5.3",
+    "temporal relevance",
+    "importance weight",
+    "200k tokens",
+    "context pollution"
+   ],
+   "claim": "layered memory and subagent"
+  },
+  {
+   "cite": "CE2 p.13",
+   "contains": [
+    "Lightweight References",
+    "CodeAgent",
+    "self-baking",
+    "Hierarchical Memory Architectures",
+    "Natural-Language Summaries",
+    "Fixed Schema"
+   ],
+   "claim": "isolation and abstraction"
+  },
+  {
+   "cite": "CE2 p.14",
+   "contains": [
+    "CodeRabbit",
+    "embeddings",
+    "Embedding Previous Context into Prompts",
+    "AutoGPT",
+    "ChatDev",
+    "Letta",
+    "MemOS"
+   ],
+   "claim": "vectors and intra-system sharing"
+  },
+  {
+   "cite": "CE2 p.15",
+   "contains": [
+    "blackboard",
+    "Task Memory Engine",
+    "G-Memory",
+    "adapters",
+    "shared JSON schema"
+   ],
+   "claim": "shared memory and cross-system"
+  },
+  {
+   "cite": "CE2 p.16",
+   "contains": [
+    "50%",
+    "context overload",
+    "attention before attention",
+    "Semantic Relevance",
+    "Logical Dependency",
+    "MEM1",
+    "Recency and Frequency",
+    "FAISS"
+   ],
+   "claim": "context selection"
+  },
+  {
+   "cite": "CE2 p.17",
+   "contains": [
+    "Grep",
+    "reranking",
+    "Windsurf",
+    "Challenge I: Storage Bottlenecks"
+   ],
+   "claim": "filtering and challenge I"
+  },
+  {
+   "cite": "CE2 p.18",
+   "contains": [
+    "Challenge II: Processing Degradation",
+    "Challenge III: System Instability",
+    "Challenge IV: Difficulty of Evaluation",
+    "KV Caching",
+    "cache hit rate",
+    "30 tools",
+    "DeepSeek-v3",
+    "Semantic Operating System"
+   ],
+   "claim": "challenges and KV cache and tools"
+  },
+  {
+   "cite": "CE2 p.19",
+   "contains": [
+    "todo.md",
+    "Manus",
+    "GEMINI.md",
+    "Tongyi DeepResearch",
+    "few-shot prompting"
+   ],
+   "claim": "practices and applications"
+  },
+  {
+   "cite": "CE2 p.20",
+   "contains": [
+    "Brain-Computer Interfaces",
+    "Mamba",
+    "LOCOST",
+    "Digital Presence"
+   ],
+   "claim": "BCI and challenges"
+  },
+  {
+   "cite": "CE2 p.21",
+   "contains": [
+    "god's eye view"
+   ],
+   "claim": "era 4.0"
+  },
+  {
+   "cite": "CE2 p.22",
+   "contains": [
+    "Model Context Protocol"
+   ],
+   "claim": "MCP appears only in the references (p.22)"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "Model Context Protocol",
+    "MCP"
+   ],
+   "claim": "BAAS does not cover MCP"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "context window",
+    "context engineering"
+   ],
+   "claim": "BAAS uses neither the term 'context window' nor 'context engineering'"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "OWASP",
+    "jailbreak"
+   ],
+   "claim": "BAAS has neither OWASP nor jailbreak"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "SWE-bench",
+    "AgentBench",
+    "LangSmith",
+    "OpenTelemetry"
+   ],
+   "claim": "no agent benchmarks or named observability in BAAS"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "Reflexion",
+    "Agent2Agent",
+    "A2A"
+   ],
+   "claim": "no Reflexion technique or A2A in BAAS"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "KV cache",
+    "prompt caching"
+   ],
+   "claim": "BAAS does not cover KV cache or prompt caching"
+  },
+  {
+   "cite": "BAAS p.186-211",
+   "absent": [
+    "guardrails"
+   ],
+   "claim": "BAAS ch. 7 has no guardrails section, although the preface and ch. 8 say it does"
+  },
+  {
+   "cite": "BAAS p.1-285",
+   "absent": [
+    "RAG",
+    "retrieval-augmented",
+    "FAISS"
+   ],
+   "claim": "BAAS does not cover RAG (the acronym appears only in an advertisement for another book on p.286)"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "idempotent",
+    "idempotency"
+   ],
+   "claim": "BAAS does not discuss tool idempotency"
+  },
+  {
+   "cite": "BAAS p.231-245",
+   "absent": [
+    "prompt injection"
+   ],
+   "claim": "prompt injection appears in BAAS only on p.46, not in ch. 9"
+  },
+  {
+   "cite": "BAAS p.1-289",
+   "absent": [
+    "Tree of Thoughts",
+    "LLM-as-a-judge"
+   ],
+   "claim": "BAAS describes neither Tree of Thoughts nor LLM-as-a-judge"
+  },
+  {
+   "cite": "BAAS p.186-211",
+   "absent": [
+    "token budget",
+    "context window"
+   ],
+   "claim": "BAAS ch. 7 covers neither token budgeting nor the context window"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "guardrails",
+    "OWASP",
+    "jailbreak"
+   ],
+   "claim": "the CE2 body covers neither guardrails nor agent security threats"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "Model Context Protocol",
+    "MCP"
+   ],
+   "claim": "MCP appears only in the CE2 references (p.22, 25, 26), not in the body"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "prompt injection",
+    "red team"
+   ],
+   "claim": "CE2 covers neither prompt injection nor red teaming"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "SWE-bench",
+    "AgentBench",
+    "LangSmith"
+   ],
+   "claim": "CE2 has no agent benchmarks or named observability"
+  },
+  {
+   "cite": "CE2 p.12-14",
+   "absent": [
+    "episodic memory"
+   ],
+   "claim": "CE2 does not name 'episodic memory' on these pages (only 'episodic buffers' on p.12)"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "pricing",
+    "budget"
+   ],
+   "claim": "CE2 has neither prices nor token budgeting"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "Reflexion",
+    "Agent2Agent",
+    "A2A"
+   ],
+   "claim": "CE2 covers neither Reflexion nor A2A"
+  },
+  {
+   "cite": "CE2 p.1-21",
+   "absent": [
+    "hallucination",
+    "hallucinate"
+   ],
+   "claim": "CE2 does not discuss hallucination"
+  }
+ ]
+}

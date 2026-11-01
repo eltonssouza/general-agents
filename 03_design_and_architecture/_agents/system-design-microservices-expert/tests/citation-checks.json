@@ -1,0 +1,1285 @@
+{
+ "fonte": "11 source PDFs of the system-design-microservices-expert package (see references/INDEX.md)",
+ "convencao": "PDF page; printed = N - k (SAP 7, SOA 10, MS-MIC 15, MS-CLD 10, MS-WEB 9, EDS 15, JMG 15, REST 9; SDH/SBC/APIGW 0)",
+ "checks": [
+  {
+   "cite": "SDH p.6",
+   "contains": [
+    "scalability is the property of a system",
+    "adding resources"
+   ],
+   "claim": "definition of scalability"
+  },
+  {
+   "cite": "SDH p.7",
+   "contains": [
+    "availability = uptime / (uptime + downtime)",
+    "availability tiers"
+   ],
+   "claim": "availability formula; the table of nines is an image"
+  },
+  {
+   "cite": "SDH p.8",
+   "contains": [
+    "latency refers to the time",
+    "throughput measures",
+    "requests per second"
+   ],
+   "claim": "latency and throughput"
+  },
+  {
+   "cite": "SDH p.9",
+   "contains": [
+    "every read receives the most recent write or an error",
+    "partition tolerance"
+   ],
+   "claim": "CAP"
+  },
+  {
+   "cite": "SDH p.10",
+   "contains": [
+    "weighted round robin",
+    "least connections",
+    "least response time",
+    "ip hash"
+   ],
+   "claim": "LB algorithms"
+  },
+  {
+   "cite": "SDH p.13",
+   "contains": [
+    "message queue",
+    "asynchronously"
+   ],
+   "claim": "message queue"
+  },
+  {
+   "cite": "SDH p.14",
+   "contains": [
+    "token bucket",
+    "leaky bucket",
+    "fixed window counter",
+    "sliding window log",
+    "sliding window counter"
+   ],
+   "claim": "rate limit algorithms (list)"
+  },
+  {
+   "cite": "SDH p.16",
+   "contains": [
+    "read-through cache",
+    "write-through cache",
+    "write-back cache",
+    "cache-aside"
+   ],
+   "claim": "cache strategies"
+  },
+  {
+   "cite": "SDH p.17",
+   "contains": [
+    "least recently used",
+    "least frequently used",
+    "first in, first out",
+    "time-to-live"
+   ],
+   "claim": "eviction"
+  },
+  {
+   "cite": "SDH p.18",
+   "contains": [
+    "consistent hashing",
+    "clockwise",
+    "only a small portion of the data needs to be reassigned"
+   ],
+   "claim": "consistent hashing"
+  },
+  {
+   "cite": "SDH p.19",
+   "contains": [
+    "database sharding",
+    "smaller, independent pieces called shards"
+   ],
+   "claim": "sharding"
+  },
+  {
+   "cite": "SDH p.20",
+   "contains": [
+    "paxos",
+    "raft"
+   ],
+   "claim": "consensus"
+  },
+  {
+   "cite": "SDH p.25",
+   "contains": [
+    "bloom filter",
+    "definitely not in a set or possibly in the set",
+    "false positive"
+   ],
+   "claim": "Bloom filter"
+  },
+  {
+   "cite": "SDH p.28",
+   "contains": [
+    "single point of failure",
+    "almost limitless"
+   ],
+   "claim": "vertical vs horizontal"
+  },
+  {
+   "cite": "SDH p.29",
+   "contains": [
+    "strong consistency",
+    "eventual consistency",
+    "no guarantees about when"
+   ],
+   "claim": "strong vs eventual"
+  },
+  {
+   "cite": "SDH p.51",
+   "contains": [
+    "clarify requirements",
+    "functional requirements",
+    "non-functional requirements"
+   ],
+   "claim": "template step 1"
+  },
+  {
+   "cite": "SDH p.59",
+   "contains": [
+    "circuit breaker",
+    "exponential backoff"
+   ],
+   "claim": "reliability: CB and retry"
+  },
+  {
+   "cite": "SDH p.64",
+   "contains": [
+    "idempotent",
+    "chaos engineering"
+   ],
+   "claim": "tips 31 and 35"
+  },
+  {
+   "cite": "SAP p.8",
+   "contains": [
+    "four standard layers",
+    "presentation, business, persistence, and database"
+   ],
+   "claim": "four layers"
+  },
+  {
+   "cite": "SAP p.10",
+   "contains": [
+    "layers of isolation",
+    "closed layer"
+   ],
+   "claim": "closed layer"
+  },
+  {
+   "cite": "SAP p.14",
+   "contains": [
+    "architecture sinkhole",
+    "80-20 rule",
+    "20 percent",
+    "80 percent"
+   ],
+   "claim": "sinkhole 80-20"
+  },
+  {
+   "cite": "SAP p.15",
+   "contains": [
+    "monolithic applications",
+    "rating: low"
+   ],
+   "claim": "monolithic tendency; ratings"
+  },
+  {
+   "cite": "SAP p.18",
+   "contains": [
+    "mediator",
+    "broker"
+   ],
+   "claim": "two EDA topologies"
+  },
+  {
+   "cite": "SAP p.20",
+   "contains": [
+    "doesn't actually perform the business logic",
+    "event channels"
+   ],
+   "claim": "mediator does not execute logic"
+  },
+  {
+   "cite": "SAP p.21",
+   "contains": [
+    "recipe for failure",
+    "bpel"
+   ],
+   "claim": "poorly sized mediator"
+  },
+  {
+   "cite": "SAP p.25",
+   "contains": [
+    "lack of atomic transactions",
+    "contract versioning policy"
+   ],
+   "claim": "EDA: no atomic transaction"
+  },
+  {
+   "cite": "SAP p.26",
+   "contains": [
+    "rating: low",
+    "specialized testing client"
+   ],
+   "claim": "EDA: testability Low"
+  },
+  {
+   "cite": "SAP p.28",
+   "contains": [
+    "plug-in modules",
+    "core system"
+   ],
+   "claim": "microkernel"
+  },
+  {
+   "cite": "SAP p.36",
+   "contains": [
+    "api rest-based topology",
+    "application rest-based topology",
+    "centralized messaging topology"
+   ],
+   "claim": "microservices topologies"
+  },
+  {
+   "cite": "SAP p.38",
+   "contains": [
+    "service-oriented architecture pattern",
+    "lightweight centralized message broker"
+   ],
+   "claim": "lightweight broker is not SOA-lite"
+  },
+  {
+   "cite": "SAP p.40",
+   "contains": [
+    "shared database",
+    "dry principle",
+    "compensation framework"
+   ],
+   "claim": "shared database; compensation"
+  },
+  {
+   "cite": "SAP p.45",
+   "contains": [
+    "tuple space",
+    "in-memory data grids"
+   ],
+   "claim": "space-based"
+  },
+  {
+   "cite": "SAP p.46-47",
+   "contains": [
+    "messaging grid",
+    "processing grid",
+    "deployment manager"
+   ],
+   "claim": "virtualized middleware"
+  },
+  {
+   "cite": "SAP p.53",
+   "contains": [
+    "pattern-analysis summary"
+   ],
+   "claim": "figure A-1 (image of arrows)"
+  },
+  {
+   "cite": "SBC p.1",
+   "contains": [
+    "competing consumer",
+    "correlation",
+    "queue of coffee cups"
+   ],
+   "claim": "cup queue"
+  },
+  {
+   "cite": "SBC p.2",
+   "contains": [
+    "write-off",
+    "retry",
+    "idempotent receiver",
+    "reconciliation reports"
+   ],
+   "claim": "error strategies"
+  },
+  {
+   "cite": "SBC p.3",
+   "contains": [
+    "compensating action",
+    "two-phase commit",
+    "kill starbucks' business",
+    "conversation"
+   ],
+   "claim": "2PC and conversation"
+  },
+  {
+   "cite": "SOA p.16",
+   "contains": [
+    "2,000 milliseconds",
+    "4,000 milliseconds",
+    "circuit breaker"
+   ],
+   "claim": "timeout example and CB"
+  },
+  {
+   "cite": "SOA p.17",
+   "contains": [
+    "context-based timeout",
+    "externally configurable"
+   ],
+   "claim": "timeouts per context"
+  },
+  {
+   "cite": "SOA p.18",
+   "contains": [
+    "base transactions",
+    "acid"
+   ],
+   "claim": "ACID vs BASE"
+  },
+  {
+   "cite": "SOA p.28",
+   "contains": [
+    "600 milliseconds",
+    "200 milli"
+   ],
+   "claim": "granularity and latency"
+  },
+  {
+   "cite": "SOA p.32",
+   "contains": [
+    "share-as-much-as-possible",
+    "share-as-little-as-possible"
+   ],
+   "claim": "sharing"
+  },
+  {
+   "cite": "SOA p.34",
+   "contains": [
+    "orchestration",
+    "mediator",
+    "bounded context"
+   ],
+   "claim": "orchestration"
+  },
+  {
+   "cite": "SOA p.40",
+   "contains": [
+    "api layer",
+    "messaging middleware",
+    "integration hub"
+   ],
+   "claim": "API layer vs middleware"
+  },
+  {
+   "cite": "SOA p.46",
+   "contains": [
+    "large insurance companies",
+    "securities trading"
+   ],
+   "claim": "when SOA/microservices"
+  },
+  {
+   "cite": "SOA p.49",
+   "contains": [
+    "protocol-agnostic",
+    "heterogeneous"
+   ],
+   "claim": "interoperability"
+  },
+  {
+   "cite": "APIGW p.4",
+   "contains": [
+    "50% to 90%",
+    "openresty",
+    "converged approach"
+   ],
+   "claim": "Lua 50-90%"
+  },
+  {
+   "cite": "APIGW p.22",
+   "contains": [
+    "limit_req_zone",
+    "rate=1r/s",
+    "10 requests per second"
+   ],
+   "claim": "rate limit and the 10 vs 1r/s inconsistency"
+  },
+  {
+   "cite": "APIGW p.23",
+   "contains": [
+    "429",
+    "limit_req_status",
+    "503"
+   ],
+   "claim": "429 vs 503"
+  },
+  {
+   "cite": "APIGW p.29",
+   "contains": [
+    "1 mb",
+    "client_max_body_size 16k"
+   ],
+   "claim": "body size"
+  },
+  {
+   "cite": "MS-MIC p.40",
+   "contains": [
+    "soa done right",
+    "enterprise service bus"
+   ],
+   "claim": "SOA vs microservices"
+  },
+  {
+   "cite": "MS-MIC p.43-44",
+   "contains": [
+    "polyglot persistence",
+    "private to that microservice",
+    "eventual consistency"
+   ],
+   "claim": "private data"
+  },
+  {
+   "cite": "MS-MIC p.49",
+   "contains": [
+    "cap theorem",
+    "two-phase commit",
+    "cosmos db"
+   ],
+   "claim": "CAP and 2PC"
+  },
+  {
+   "cite": "MS-MIC p.50",
+   "contains": [
+    "blocking and low performance",
+    "failure in any one microservice"
+   ],
+   "claim": "HTTP chains"
+  },
+  {
+   "cite": "MS-MIC p.57",
+   "contains": [
+    "facade",
+    "backend for frontend",
+    "reverse proxy"
+   ],
+   "claim": "API gateway"
+  },
+  {
+   "cite": "MS-MIC p.58",
+   "contains": [
+    "monolithic aggregator",
+    "backend for frontend"
+   ],
+   "claim": "gateway per client"
+  },
+  {
+   "cite": "MS-MIC p.59",
+   "contains": [
+    "layer 7",
+    "modernizing a monolithic api"
+   ],
+   "claim": "L7 routing and modernization"
+  },
+  {
+   "cite": "MS-MIC p.60",
+   "contains": [
+    "rate limiting and throttling",
+    "ip allowlisting",
+    "requests aggregation"
+   ],
+   "claim": "gateway functions"
+  },
+  {
+   "cite": "MS-MIC p.62",
+   "contains": [
+    "the new esb",
+    "single point of failure"
+   ],
+   "claim": "gateway risks"
+  },
+  {
+   "cite": "MS-MIC p.64",
+   "contains": [
+    "smart endpoints and dumb pipes"
+   ],
+   "claim": "slogan"
+  },
+  {
+   "cite": "MS-MIC p.73",
+   "contains": [
+    "outbox pattern",
+    "msmq"
+   ],
+   "claim": "resilient publishing options"
+  },
+  {
+   "cite": "MS-MIC p.79",
+   "contains": [
+    "liveness",
+    "readiness"
+   ],
+   "claim": "types of health check"
+  },
+  {
+   "cite": "MS-MIC p.158",
+   "contains": [
+    "atomically",
+    "distributed transaction"
+   ],
+   "claim": "database+broker atomicity"
+  },
+  {
+   "cite": "MS-MIC p.159",
+   "contains": [
+    "integrationevent table",
+    "ready to publish the event",
+    "rearchitect"
+   ],
+   "claim": "outbox and ES"
+  },
+  {
+   "cite": "MS-MIC p.165",
+   "contains": [
+    "set the product price to $25",
+    "identity per event"
+   ],
+   "claim": "idempotency"
+  },
+  {
+   "cite": "MS-MIC p.199-200",
+   "contains": [
+    "bertrand meyer",
+    "greg young"
+   ],
+   "claim": "CQS and CQRS"
+  },
+  {
+   "cite": "MS-MIC p.202",
+   "contains": [
+    "not architectural styles",
+    "do not use cqrs and ddd patterns everywhere"
+   ],
+   "claim": "CQRS is not a top-level style"
+  },
+  {
+   "cite": "MS-MIC p.308",
+   "contains": [
+    "50 dependencies",
+    "99.99%"
+   ],
+   "claim": "50 dependencies at 99.99%"
+  },
+  {
+   "cite": "MS-MIC p.309",
+   "contains": [
+    "retries with exponential backoff",
+    "bulkhead isolation",
+    "provide fallbacks"
+   ],
+   "claim": "partial failure strategies"
+  },
+  {
+   "cite": "MS-MIC p.320",
+   "contains": [
+    "six times",
+    "jitter"
+   ],
+   "claim": "Polly retry and jitter"
+  },
+  {
+   "cite": "MS-MIC p.321",
+   "contains": [
+    "decorrelatedjitterbackoffv2",
+    "denial of service"
+   ],
+   "claim": "jitter and DoS"
+  },
+  {
+   "cite": "MS-MIC p.322",
+   "contains": [
+    "five consecutive faults",
+    "30 seconds",
+    "enables an application to retry an operation"
+   ],
+   "claim": "example CB"
+  },
+  {
+   "cite": "MS-CLD p.16",
+   "contains": [
+    "twelve-factor",
+    "code base",
+    "backing services"
+   ],
+   "claim": "12 factors 1-4"
+  },
+  {
+   "cite": "MS-CLD p.17",
+   "contains": [
+    "disposability",
+    "dev/prod parity",
+    "admin processes"
+   ],
+   "claim": "12 factors 5-12"
+  },
+  {
+   "cite": "MS-CLD p.71",
+   "contains": [
+    "api gateway",
+    "bottleneck",
+    "backend for frontends"
+   ],
+   "claim": "thin gateway and BFF"
+  },
+  {
+   "cite": "MS-CLD p.79",
+   "contains": [
+    "materialized view",
+    "sum of the latency"
+   ],
+   "claim": "materialized view and chain latency"
+  },
+  {
+   "cite": "MS-CLD p.82",
+   "contains": [
+    "64 kb",
+    "exactly one of the consumer instances"
+   ],
+   "claim": "Storage queue and queue"
+  },
+  {
+   "cite": "MS-CLD p.83",
+   "contains": [
+    "seven days",
+    "256 kb"
+   ],
+   "claim": "Azure queue limits"
+  },
+  {
+   "cite": "MS-CLD p.86",
+   "contains": [
+    "2,000 subscribers"
+   ],
+   "claim": "subscriber limit"
+  },
+  {
+   "cite": "MS-CLD p.88",
+   "contains": [
+    "99.99%",
+    "24-hour"
+   ],
+   "claim": "Event Grid"
+  },
+  {
+   "cite": "MS-CLD p.89",
+   "contains": [
+    "one day by default"
+   ],
+   "claim": "Event Hub retention"
+  },
+  {
+   "cite": "MS-CLD p.90",
+   "contains": [
+    "multiplexing",
+    "bidirectional full-duplex",
+    "http/2"
+   ],
+   "claim": "HTTP/2"
+  },
+  {
+   "cite": "MS-CLD p.91",
+   "contains": [
+    "8x faster",
+    "60-80% smaller",
+    "protocol buffers"
+   ],
+   "claim": "gRPC performance"
+  },
+  {
+   "cite": "MS-CLD p.92",
+   "contains": [
+    "favor grpc",
+    "polyglot"
+   ],
+   "claim": "when to favor gRPC"
+  },
+  {
+   "cite": "MS-CLD p.102",
+   "contains": [
+    "saga",
+    "compensating transactions"
+   ],
+   "claim": "Saga"
+  },
+  {
+   "cite": "MS-CLD p.103",
+   "contains": [
+    "choreographed",
+    "orchestrated",
+    "cqrs"
+   ],
+   "claim": "choreographed/orchestrated Saga"
+  },
+  {
+   "cite": "MS-CLD p.107",
+   "contains": [
+    "pacelc"
+   ],
+   "claim": "PACELC only mentioned"
+  },
+  {
+   "cite": "MS-CLD p.124",
+   "contains": [
+    "bulkhead",
+    "fallback",
+    "429",
+    "503"
+   ],
+   "claim": "Polly policies and status"
+  },
+  {
+   "cite": "MS-CLD p.125",
+   "contains": [
+    "403",
+    "four retries",
+    "two seconds"
+   ],
+   "claim": "retry example"
+  },
+  {
+   "cite": "MS-CLD p.126",
+   "contains": [
+    "circuit breaker",
+    "trial call"
+   ],
+   "claim": "CB with trial call"
+  },
+  {
+   "cite": "MS-CLD p.127",
+   "contains": [
+    "100 failed requests",
+    "30 seconds"
+   ],
+   "claim": "CB figure"
+  },
+  {
+   "cite": "MS-CLD p.131",
+   "contains": [
+    "five minutes",
+    "15 minutes"
+   ],
+   "claim": "cool-down"
+  },
+  {
+   "cite": "MS-CLD p.136",
+   "contains": [
+    "logging, monitoring, and alerts"
+   ],
+   "claim": "observability patterns"
+  },
+  {
+   "cite": "EDS p.32",
+   "contains": [
+    "partitioned log",
+    "append-only"
+   ],
+   "claim": "partitioned log"
+  },
+  {
+   "cite": "EDS p.34",
+   "contains": [
+    "partitioner",
+    "round-robin"
+   ],
+   "claim": "partitioner"
+  },
+  {
+   "cite": "EDS p.36",
+   "contains": [
+    "only within a partition",
+    "quotas"
+   ],
+   "claim": "ordering and quotas"
+  },
+  {
+   "cite": "EDS p.37",
+   "contains": [
+    "single partition",
+    "replication factor of three"
+   ],
+   "claim": "global ordering and replication"
+  },
+  {
+   "cite": "EDS p.39",
+   "contains": [
+    "compacted topics",
+    "single service instance",
+    "lsm"
+   ],
+   "claim": "compacted topics and consumer"
+  },
+  {
+   "cite": "EDS p.46",
+   "contains": [
+    "fact and a notification",
+    "free of side effects"
+   ],
+   "claim": "event and query"
+  },
+  {
+   "cite": "EDS p.52",
+   "contains": [
+    "event-carried state transfer"
+   ],
+   "claim": "ECST"
+  },
+  {
+   "cite": "EDS p.55",
+   "contains": [
+    "choreograph",
+    "process manager"
+   ],
+   "claim": "choreography"
+  },
+  {
+   "cite": "EDS p.74",
+   "contains": [
+    "erasers"
+   ],
+   "claim": "accountants don't use erasers"
+  },
+  {
+   "cite": "EDS p.82",
+   "contains": [
+    "change data capture",
+    "write-ahead log"
+   ],
+   "claim": "CDC"
+  },
+  {
+   "cite": "EDS p.120",
+   "contains": [
+    "single writer",
+    "crdt"
+   ],
+   "claim": "single writer"
+  },
+  {
+   "cite": "EDS p.130",
+   "contains": [
+    "exactly once is both idempotence and atomic commit"
+   ],
+   "claim": "exactly once"
+  },
+  {
+   "cite": "EDS p.132",
+   "contains": [
+    "transaction coordinator",
+    "3% overhead",
+    "two-phase commit"
+   ],
+   "claim": "coordinator and 3%"
+  },
+  {
+   "cite": "EDS p.134",
+   "contains": [
+    "sagas"
+   ],
+   "claim": "sagas for multi-service"
+  },
+  {
+   "cite": "EDS p.142",
+   "contains": [
+    "two weeks",
+    "dead letter queue",
+    "null value"
+   ],
+   "claim": "retention and DLQ"
+  },
+  {
+   "cite": "JMG p.18",
+   "contains": [
+    "single source of truth",
+    "distributed monolith"
+   ],
+   "claim": "ownership and distributed monolith"
+  },
+  {
+   "cite": "JMG p.21",
+   "contains": [
+    "uniform interface",
+    "statelessness",
+    "code on demand"
+   ],
+   "claim": "REST constraints"
+  },
+  {
+   "cite": "JMG p.22",
+   "contains": [
+    "idempotent: yes",
+    "safe: yes"
+   ],
+   "claim": "idempotent/safe table"
+  },
+  {
+   "cite": "JMG p.24",
+   "contains": [
+    "http/2",
+    "protocol buffers"
+   ],
+   "claim": "gRPC"
+  },
+  {
+   "cite": "JMG p.59",
+   "contains": [
+    "magic number",
+    "resilience4j"
+   ],
+   "claim": "timeouts and libs"
+  },
+  {
+   "cite": "JMG p.60",
+   "contains": [
+    "thundering herd",
+    "bulkhead"
+   ],
+   "claim": "thundering herd and bulkhead"
+  },
+  {
+   "cite": "JMG p.61",
+   "contains": [
+    "hystrix"
+   ],
+   "claim": "Hystrix"
+  },
+  {
+   "cite": "JMG p.62",
+   "contains": [
+    "rate limiting",
+    "persistent queues"
+   ],
+   "claim": "rate limiter and queues"
+  },
+  {
+   "cite": "JMG p.63",
+   "contains": [
+    "saga is a sequence of local transactions",
+    "eventuate tram",
+    "two-phase commit"
+   ],
+   "claim": "saga"
+  },
+  {
+   "cite": "JMG p.141",
+   "contains": [
+    "opentelemetry",
+    "specification draft"
+   ],
+   "claim": "OpenTelemetry as a draft"
+  },
+  {
+   "cite": "JMG p.152",
+   "contains": [
+    "trace context"
+   ],
+   "claim": "W3C Trace Context"
+  },
+  {
+   "cite": "REST p.27",
+   "contains": [
+    "405 method not allowed",
+    "allow http header",
+    "200 ok"
+   ],
+   "claim": "status in Spring"
+  },
+  {
+   "cite": "REST p.35",
+   "contains": [
+    "accept header",
+    "content-type header"
+   ],
+   "claim": "content negotiation"
+  },
+  {
+   "cite": "REST p.78",
+   "contains": [
+    "hateoas",
+    "link header"
+   ],
+   "claim": "HATEOAS"
+  },
+  {
+   "cite": "REST p.100",
+   "contains": [
+    "page as resource vs page as representation"
+   ],
+   "claim": "pagination"
+  },
+  {
+   "cite": "MS-WEB p.3",
+   "contains": [
+    "much easier to build, deploy, and debug"
+   ],
+   "claim": "easier monolith"
+  },
+  {
+   "cite": "MS-WEB p.26",
+   "contains": [
+    "monolithic application is one that is entirely self-contained"
+   ],
+   "claim": "definition of monolith"
+  },
+  {
+   "cite": "SDH p.7-9",
+   "absent": [
+    "little's law",
+    "mtbf",
+    "mttr",
+    "pacelc",
+    "tail latency"
+   ],
+   "claim": "SDH does not include Little, MTBF/MTTR, PACELC, tail"
+  },
+  {
+   "cite": "SDH p.19",
+   "absent": [
+    "range-based",
+    "hash-based",
+    "directory-based",
+    "scatter-gather"
+   ],
+   "claim": "sharding strategies are not in the SDH"
+  },
+  {
+   "cite": "SDH p.16-17",
+   "absent": [
+    "write-behind",
+    "thundering herd",
+    "xfetch",
+    "stampede"
+   ],
+   "claim": "write-behind/stampede are not in the SDH"
+  },
+  {
+   "cite": "SDH p.18",
+   "absent": [
+    "virtual node",
+    "vnodes",
+    "2^32"
+   ],
+   "claim": "vnodes and 2^32 are not in the SDH"
+  },
+  {
+   "cite": "SDH p.10",
+   "absent": [
+    "layer 4",
+    "layer 7",
+    "l4",
+    "l7"
+   ],
+   "claim": "L4/L7 are not in SDH p.10"
+  },
+  {
+   "cite": "SAP p.14-15",
+   "absent": [
+    "50 percent",
+    "50%",
+    "inadequate"
+   ],
+   "claim": "the 50% threshold from the previous package is not from the SAP"
+  },
+  {
+   "cite": "SAP p.40",
+   "absent": [
+    "two-phase",
+    "2pc",
+    "temporal coupling"
+   ],
+   "claim": "SAP p.40 does not mention 2PC"
+  },
+  {
+   "cite": "SAP p.52-53",
+   "absent": [
+    "stars",
+    "five-star"
+   ],
+   "claim": "the SAP uses Low/High, not 1-5 stars"
+  },
+  {
+   "cite": "SAP p.46-51",
+   "absent": [
+    "write-behind"
+   ],
+   "claim": "write-behind is not an SAP term"
+  },
+  {
+   "cite": "SBC p.1-3",
+   "absent": [
+    "saga",
+    "outbox",
+    "kafka",
+    "microservice"
+   ],
+   "claim": "the SBC does not mention Saga/Outbox/Kafka/microservices"
+  },
+  {
+   "cite": "SBC p.1-3",
+   "absent": [
+    "10 seconds",
+    "2 minutes",
+    "two minutes",
+    "frappuccino"
+   ],
+   "claim": "preparation times from the previous package are not in the SBC"
+  },
+  {
+   "cite": "SOA p.1-55",
+   "absent": [
+    "two-pizza",
+    "pizza"
+   ],
+   "claim": "Two-Pizza Teams is not in the SOA"
+  },
+  {
+   "cite": "SOA p.40-43",
+   "absent": [
+    "dumb pipes",
+    "smart endpoints"
+   ],
+   "claim": "the slogan is not in the SOA"
+  },
+  {
+   "cite": "APIGW p.1-50",
+   "absent": [
+    "half-open",
+    "full jitter"
+   ],
+   "claim": "the APIGW does not cover CB/jitter resilience"
+  },
+  {
+   "cite": "MS-MIC p.306-326",
+   "absent": [
+    "half-open",
+    "full jitter",
+    "closed state"
+   ],
+   "claim": "the MS-MIC uses neither Half-Open nor full jitter"
+  },
+  {
+   "cite": "MS-CLD p.123-135",
+   "absent": [
+    "half-open",
+    "full jitter"
+   ],
+   "claim": "the MS-CLD uses neither Half-Open nor full jitter"
+  },
+  {
+   "cite": "MS-CLD p.136-141",
+   "absent": [
+    "opentelemetry",
+    "traceparent",
+    "w3c"
+   ],
+   "claim": "OpenTelemetry/TraceContext are not in the MS-CLD"
+  },
+  {
+   "cite": "MS-CLD p.90-91",
+   "absent": [
+    "7 to 10",
+    "hpack"
+   ],
+   "claim": "numbers and HPACK from the previous package are not in the MS-CLD"
+  },
+  {
+   "cite": "EDS p.39",
+   "absent": [
+    "tombstone"
+   ],
+   "claim": "'tombstone' is not an EDS term (it uses null value/delete marker)"
+  },
+  {
+   "cite": "EDS p.70-84",
+   "absent": [
+    "every 100 events",
+    "o(1) load"
+   ],
+   "claim": "periodic snapshots are not in the EDS"
+  },
+  {
+   "cite": "MS-MIC p.158-160",
+   "absent": [
+    "debezium",
+    "message relay"
+   ],
+   "claim": "Debezium/Message Relay are not in the MS-MIC"
+  },
+  {
+   "cite": "MS-MIC p.40-51",
+   "absent": [
+    "two-pizza",
+    "strangler"
+   ],
+   "claim": "Two-Pizza and Strangler are not in the MS-MIC"
+  },
+  {
+   "cite": "REST p.1-118",
+   "absent": [
+    "richardson",
+    "maturity model",
+    "mass assignment"
+   ],
+   "claim": "REST (Baeldung) has neither RMM nor mass assignment"
+  },
+  {
+   "cite": "MS-WEB p.1-118",
+   "absent": [
+    "distributed systems tax"
+   ],
+   "claim": "'distributed systems tax' is not in the MS-WEB"
+  },
+  {
+   "cite": "JMG p.58-63",
+   "absent": [
+    "half-open",
+    "pivot",
+    "full jitter"
+   ],
+   "claim": "JMG ch.6 has no half-open/pivot/full jitter"
+  },
+  {
+   "cite": "MS-CLD p.107",
+   "absent": [
+    "pc/ec",
+    "pa/el",
+    "pc/el",
+    "pa/ec"
+   ],
+   "claim": "PACELC classes are not in the MS-CLD"
+  },
+  {
+   "cite": "MS-CLD p.130-131",
+   "absent": [
+    "sticky sessions are required"
+   ],
+   "claim": "inverse claim: the MS-CLD says to avoid affinity"
+  },
+  {
+   "cite": "MS-MIC p.57-63",
+   "absent": [
+    "bff mobile",
+    "partner api gateway"
+   ],
+   "claim": "BFF 'Partner API' from the previous package is not in the MS-MIC"
+  }
+ ]
+}

@@ -1,0 +1,1398 @@
+{
+ "source": "prw.txt (PHP-PHP-The-Right-Way.pdf extracted with PyMuPDF; markers === PAGE N ===, N = PDF page; no printed numbering)",
+ "positive": [
+  {
+   "id": "P01",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "LAST UPDATED: 2026-04-27"
+   ],
+   "claim": "capture of 2026-04-27"
+  },
+  {
+   "id": "P02",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Current Stable Version (8.5)",
+    "7.4 is already End of Life"
+   ],
+   "claim": "stable 8.5; 7.4 EOL"
+  },
+  {
+   "id": "P03",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "php -S localhost:8000",
+    "PHP 5.4"
+   ],
+   "claim": "built-in server"
+  },
+  {
+   "id": "P04",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "macOS 12",
+    "Homebrew",
+    "8.1, 8.2, 8.3, 8.4"
+   ],
+   "claim": "Homebrew and macOS 12"
+  },
+  {
+   "id": "P05",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Windows Subsystem for Linux",
+    "PATH",
+    "EasyPHP"
+   ],
+   "claim": "Windows: PATH, WSL, all-in-one"
+  },
+  {
+   "id": "P06",
+   "pages": [
+    7,
+    8
+   ],
+   "terms": [
+    "ppa:ondrej/php",
+    "bikeshed",
+    "Remi"
+   ],
+   "claim": "PPA, bikeshed, Remi"
+  },
+  {
+   "id": "P07",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "DocumentRoot",
+    "public/",
+    "tests/",
+    "vendor/",
+    "Standard PHP Package Skeleton"
+   ],
+   "claim": "skeleton directories"
+  },
+  {
+   "id": "P08",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "PSR-1",
+    "PSR-12",
+    "PSR-4",
+    "PER Coding Style",
+    "PHP_CodeSniffer"
+   ],
+   "claim": "named PSRs and CodeSniffer"
+  },
+  {
+   "id": "P09",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "phpcs -sw --standard=PSR1",
+    "phpcbf -w --standard=PSR1",
+    "php-cs-fixer fix -v --rules=@PSR1",
+    "GitStaged"
+   ],
+   "claim": "phpcs/phpcbf/php-cs-fixer commands and pre-commit"
+  },
+  {
+   "id": "P10",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "English is preferred for all symbol names"
+   ],
+   "claim": "English for symbols"
+  },
+  {
+   "id": "P11",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "PHP 5.0 (2004)",
+    "5.3 (2009)",
+    "5.4 (2012)"
+   ],
+   "claim": "history 5.0/5.3/5.4"
+  },
+  {
+   "id": "P12",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "__call()",
+    "__callStatic()",
+    "method_missing",
+    "Reflection"
+   ],
+   "claim": "metaprogramming"
+  },
+  {
+   "id": "P13",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "PSR-0",
+    "October 2014",
+    "PHP 5.3"
+   ],
+   "claim": "PSR-0 deprecated in 2014"
+  },
+  {
+   "id": "P14",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "Standard PHP Library",
+    "stack",
+    "queue",
+    "heap",
+    "iterators"
+   ],
+   "claim": "SPL"
+  },
+  {
+   "id": "P15",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "$argc",
+    "$argv",
+    "exit()",
+    "not to put your CLI PHP scripts in your public web root"
+   ],
+   "claim": "CLI"
+  },
+  {
+   "id": "P16",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "Xdebug",
+    "KCacheGrind",
+    "code coverage",
+    "Remote Debugging"
+   ],
+   "claim": "Xdebug"
+  },
+  {
+   "id": "P17",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "Composer is the recommended dependency manager",
+    "Packagist",
+    "Bundler"
+   ],
+   "claim": "Composer recommended"
+  },
+  {
+   "id": "P18",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "composer require",
+    "composer init",
+    "composer install",
+    "vendor/autoload.php"
+   ],
+   "claim": "require/init/install/autoload"
+  },
+  {
+   "id": "P19",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "composer.lock",
+    "Don't use composer update when deploying"
+   ],
+   "claim": "lock and do not use update on deploy"
+  },
+  {
+   "id": "P20",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "~1.8",
+    "1.8.*",
+    "libraries.io",
+    "Local PHP Security Checker",
+    "composer global require phpunit/phpunit"
+   ],
+   "claim": "constraints, security checker, global"
+  },
+  {
+   "id": "P21",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "PEAR installs packages globally"
+   ],
+   "claim": "PEAR global"
+  },
+  {
+   "id": "P22",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "Composer version 2",
+    "pear install foo"
+   ],
+   "claim": "PEAR in Composer 2"
+  },
+  {
+   "id": "P23",
+   "pages": [
+    18,
+    19
+   ],
+   "terms": [
+    "pear2/pear2-http-request",
+    "psr-4"
+   ],
+   "claim": "PEAR via Composer example with psr-4"
+  },
+  {
+   "id": "P24",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "createFromFormat",
+    "DateInterval",
+    "same number of seconds in every day"
+   ],
+   "claim": "DateTime and DateInterval"
+  },
+  {
+   "id": "P25",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "DatePeriod",
+    "Carbon",
+    "EXCLUDE_START_DATE"
+   ],
+   "claim": "DatePeriod and Carbon"
+  },
+  {
+   "id": "P26",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "does not support Unicode at a low level",
+    "mb_substr",
+    "mb_internal_encoding",
+    "mb_http_output"
+   ],
+   "claim": "UTF-8 and mb_*"
+  },
+  {
+   "id": "P27",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "symfony/polyfill-mbstring",
+    "utf8mb4",
+    "UTF-8 is the default encoding for htmlentities"
+   ],
+   "claim": "polyfill, utf8mb4, default 5.4"
+  },
+  {
+   "id": "P28",
+   "pages": [
+    23,
+    24
+   ],
+   "terms": [
+    "charset=utf8mb4",
+    "mb_http_output('UTF-8')"
+   ],
+   "claim": "utf8mb4 DSN and mb_http_output"
+  },
+  {
+   "id": "P29",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "htmlspecialchars($dirty, ENT_QUOTES, 'UTF-8')"
+   ],
+   "claim": "escaping example"
+  },
+  {
+   "id": "P30",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "numeronyms",
+    "Pluralization",
+    "Slovenian"
+   ],
+   "claim": "i18n and pluralization"
+  },
+  {
+   "id": "P31",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "gettext",
+    "1995",
+    "aura/intl",
+    "symfony/translation"
+   ],
+   "claim": "gettext and libraries"
+  },
+  {
+   "id": "P32",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "PO (Portable Object)",
+    "MO (Machine Object)",
+    "POT"
+   ],
+   "claim": "PO/MO/POT"
+  },
+  {
+   "id": "P33",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "ISO 639-1",
+    "pt_BR",
+    "LC_MESSAGES"
+   ],
+   "claim": "locale and directories"
+  },
+  {
+   "id": "P34",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "nplurals=2; plural=(n != 1)",
+    "nplurals=2; plural=(n > 1)"
+   ],
+   "claim": "plural forms"
+  },
+  {
+   "id": "P35",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "bindtextdomain",
+    "textdomain",
+    "PoEdit 1.8"
+   ],
+   "claim": "gettext setup and Poedit 1.8"
+  },
+  {
+   "id": "P36",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "mod_php",
+    "restart the server"
+   ],
+   "claim": ".mo cache"
+  },
+  {
+   "id": "P37",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "constructor injection",
+    "It is that simple"
+   ],
+   "claim": "DI definition"
+  },
+  {
+   "id": "P38",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "constructor property promotion",
+    "MySqlAdapter"
+   ],
+   "claim": "property promotion"
+  },
+  {
+   "id": "P39",
+   "pages": [
+    38,
+    39
+   ],
+   "terms": [
+    "Inversion of Control",
+    "Dependency Inversion Principle"
+   ],
+   "claim": "IoC and DIP"
+  },
+  {
+   "id": "P40",
+   "pages": [
+    39,
+    40
+   ],
+   "terms": [
+    "Single Responsibility Principle",
+    "Open/Closed Principle",
+    "Liskov Substitution Principle",
+    "Interface Segregation Principle"
+   ],
+   "claim": "SOLID"
+  },
+  {
+   "id": "P41",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "FileInterface",
+    "embed()",
+    "steeringWheel()",
+    "handlebars()"
+   ],
+   "claim": "LSP/ISP examples"
+  },
+  {
+   "id": "P42",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "Service Location",
+    "anti-pattern",
+    "AdapterInterface"
+   ],
+   "claim": "container and Service Locator"
+  },
+  {
+   "id": "P43",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "mysqli",
+    "officially removed in PHP 7.0",
+    "mysql_connect()"
+   ],
+   "claim": "mysql removed in 7.0"
+  },
+  {
+   "id": "P44",
+   "pages": [
+    42,
+    43
+   ],
+   "terms": [
+    "mysql_*",
+    "mysqli_*",
+    "parameter binding"
+   ],
+   "claim": "do not do find-replace"
+  },
+  {
+   "id": "P45",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "since 5.1.0",
+    "will not translate your SQL queries",
+    "bound parameters"
+   ],
+   "claim": "PDO since 5.1.0, does not translate SQL"
+  },
+  {
+   "id": "P46",
+   "pages": [
+    43,
+    44
+   ],
+   "terms": [
+    "$_GET['id']",
+    "1;DELETE FROM users"
+   ],
+   "claim": "SQL injection example"
+  },
+  {
+   "id": "P47",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "bindParam(':id', $id, PDO::PARAM_INT)",
+    "FILTER_SANITIZE_NUMBER_INT",
+    "PDO will only sanitize it for SQL"
+   ],
+   "claim": "correct PDO and limit of sanitization"
+  },
+  {
+   "id": "P48",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "hard to debug",
+    "Model",
+    "View",
+    "MVC"
+   ],
+   "claim": "Model/View separation"
+  },
+  {
+   "id": "P49",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "database abstraction",
+    "overhead",
+    "re:unit-\\s*test"
+   ],
+   "claim": "abstraction layers"
+  },
+  {
+   "id": "P50",
+   "pages": [
+    46,
+    47
+   ],
+   "terms": [
+    "Doctrine2 DBAL",
+    "Medoo",
+    "Propel",
+    "laminas-db"
+   ],
+   "claim": "list of abstraction layers"
+  },
+  {
+   "id": "P51",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "sand-boxing",
+    "partials",
+    "automatically escaping"
+   ],
+   "claim": "benefits of templates"
+  },
+  {
+   "id": "P52",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "Plates",
+    "Aura.View",
+    "no compiling stage"
+   ],
+   "claim": "plain PHP templates"
+  },
+  {
+   "id": "P53",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "Smarty",
+    "NOT enabled by default",
+    "Mustache"
+   ],
+   "claim": "Smarty without autoescape by default"
+  },
+  {
+   "id": "P54",
+   "pages": [
+    49,
+    50
+   ],
+   "terms": [
+    "{% extends",
+    "{{ name }}"
+   ],
+   "claim": "Twig example"
+  },
+  {
+   "id": "P55",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "exception-light",
+    "Notice: Undefined variable"
+   ],
+   "claim": "PHP is exception-light"
+  },
+  {
+   "id": "P56",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "E_ERROR",
+    "E_NOTICE",
+    "E_WARNING",
+    "E_STRICT",
+    "error_reporting(E_ERROR | E_WARNING)"
+   ],
+   "claim": "severities"
+  },
+  {
+   "id": "P57",
+   "pages": [
+    52,
+    53
+   ],
+   "terms": [
+    "Error Control Operator @",
+    "?? ''"
+   ],
+   "claim": "@ operator and ??"
+  },
+  {
+   "id": "P58",
+   "pages": [
+    53
+   ],
+   "terms": [
+    "xdebug.scream",
+    "less performant",
+    "fopen()"
+   ],
+   "claim": "scream and @ performance"
+  },
+  {
+   "id": "P59",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "ErrorException",
+    "Whoops!"
+   ],
+   "claim": "ErrorException"
+  },
+  {
+   "id": "P60",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "CodeIgniter",
+    "finally",
+    "FALSE"
+   ],
+   "claim": "exceptions versus false"
+  },
+  {
+   "id": "P61",
+   "pages": [
+    55,
+    56
+   ],
+   "terms": [
+    "SPL Exceptions",
+    "BadMethodCallException"
+   ],
+   "claim": "SPL Exceptions"
+  },
+  {
+   "id": "P62",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "2018 Guide to Building Secure PHP Software"
+   ],
+   "claim": "Paragon guide"
+  },
+  {
+   "id": "P63",
+   "pages": [
+    56,
+    57
+   ],
+   "terms": [
+    "Code-data separation",
+    "Cryptography weaknesses",
+    "OWASP"
+   ],
+   "claim": "four security themes"
+  },
+  {
+   "id": "P64",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "irreversible, one-way function",
+    "rainbow tables",
+    "SHA256"
+   ],
+   "claim": "hash, salt, general-purpose hash"
+  },
+  {
+   "id": "P65",
+   "pages": [
+    57,
+    58
+   ],
+   "terms": [
+    "as of June 2018",
+    "Argon2",
+    "Scrypt",
+    "PBKDF2",
+    "Bcrypt"
+   ],
+   "claim": "2018 algorithm list"
+  },
+  {
+   "id": "P66",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "password_hash()",
+    "PHP 5.5",
+    "BCrypt",
+    "password_verify()",
+    "password_compat"
+   ],
+   "claim": "password_hash"
+  },
+  {
+   "id": "P67",
+   "pages": [
+    58
+   ],
+   "terms": [
+    "don't need a separate database field to store your salts"
+   ],
+   "claim": "no salt column"
+  },
+  {
+   "id": "P68",
+   "pages": [
+    59
+   ],
+   "terms": [
+    "Never ever (ever) trust foreign input",
+    "filter_var()",
+    "filter_input()",
+    "strip_tags()",
+    "htmlentities()",
+    "htmlspecialchars()",
+    "escapeshellarg()"
+   ],
+   "claim": "filtering"
+  },
+  {
+   "id": "P69",
+   "pages": [
+    59,
+    60
+   ],
+   "terms": [
+    "Sanitization",
+    "Validation",
+    "HTML Purifier"
+   ],
+   "claim": "sanitization and validation"
+  },
+  {
+   "id": "P70",
+   "pages": [
+    60
+   ],
+   "terms": [
+    "unserialize()",
+    "json_decode"
+   ],
+   "claim": "unserialize is dangerous"
+  },
+  {
+   "id": "P71",
+   "pages": [
+    60
+   ],
+   "terms": [
+    ".php extension",
+    "source control"
+   ],
+   "claim": "configuration files"
+  },
+  {
+   "id": "P72",
+   "pages": [
+    60,
+    61
+   ],
+   "terms": [
+    "register_globals",
+    "5.4.0"
+   ],
+   "claim": "register_globals"
+  },
+  {
+   "id": "P73",
+   "pages": [
+    61
+   ],
+   "terms": [
+    "display_errors = On",
+    "error_reporting = -1",
+    "log_errors = On"
+   ],
+   "claim": "error reporting in dev"
+  },
+  {
+   "id": "P74",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "display_errors = Off",
+    "display_startup_errors = Off",
+    "error_reporting = E_ALL"
+   ],
+   "claim": "error reporting in production"
+  },
+  {
+   "id": "P75",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "best practice"
+   ],
+   "claim": "tests as best practice"
+  },
+  {
+   "id": "P76",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "Kent Beck",
+    "PHPUnit",
+    "de-facto",
+    "var_dump()"
+   ],
+   "claim": "TDD and PHPUnit"
+  },
+  {
+   "id": "P77",
+   "pages": [
+    63,
+    64
+   ],
+   "terms": [
+    "atoum",
+    "Kahlan",
+    "Peridot",
+    "Pest",
+    "SimpleTest"
+   ],
+   "claim": "alternatives to PHPUnit"
+  },
+  {
+   "id": "P78",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "Codeception",
+    "Cypress",
+    "Mink",
+    "Selenium",
+    "Storyplayer"
+   ],
+   "claim": "functional tests"
+  },
+  {
+   "id": "P79",
+   "pages": [
+    64,
+    65
+   ],
+   "terms": [
+    "SpecBDD",
+    "StoryBDD",
+    "Behat",
+    "Gherkin",
+    "PHPSpec"
+   ],
+   "claim": "BDD"
+  },
+  {
+   "id": "P80",
+   "pages": [
+    65
+   ],
+   "terms": [
+    "Mockery",
+    "Prophecy",
+    "php-mock",
+    "Infection",
+    "PHPUnit Polyfills"
+   ],
+   "claim": "complementary tools"
+  },
+  {
+   "id": "P81",
+   "pages": [
+    66
+   ],
+   "terms": [
+    "FastCGI Process Manager",
+    "nginx",
+    "MUST use the prefork MPM",
+    "mod_php"
+   ],
+   "claim": "nginx/FPM and Apache prefork"
+  },
+  {
+   "id": "P82",
+   "pages": [
+    67
+   ],
+   "terms": [
+    "mod_proxy_fcgi",
+    "Apache 2.4",
+    "shared servers",
+    "latest version"
+   ],
+   "claim": "Apache 2.4 and shared hosting"
+  },
+  {
+   "id": "P83",
+   "pages": [
+    67,
+    68
+   ],
+   "terms": [
+    "Phing",
+    "Capistrano",
+    "Ansistrano",
+    "Deployer",
+    "Magallanes"
+   ],
+   "claim": "deploy tools"
+  },
+  {
+   "id": "P84",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "Ansible",
+    "Puppet",
+    "Chef"
+   ],
+   "claim": "provisioning"
+  },
+  {
+   "id": "P85",
+   "pages": [
+    69,
+    70
+   ],
+   "terms": [
+    "Martin Fowler",
+    "Travis CI",
+    "GitHub Actions"
+   ],
+   "claim": "CI"
+  },
+  {
+   "id": "P86",
+   "pages": [
+    70,
+    71
+   ],
+   "terms": [
+    "Vagrant",
+    "Docker",
+    "docker-compose.yml"
+   ],
+   "claim": "Vagrant and Docker"
+  },
+  {
+   "id": "P87",
+   "pages": [
+    71
+   ],
+   "terms": [
+    "docker run -d --name my-php-webserver -p 8080:80",
+    "php:apache"
+   ],
+   "claim": "the book's docker command"
+  },
+  {
+   "id": "P88",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "unofficial images",
+    "PHPDocker.io",
+    "opcode",
+    "opcache.enable"
+   ],
+   "claim": "beware of images; opcode cache"
+  },
+  {
+   "id": "P89",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "Zend OPcache",
+    "PHP 5.5"
+   ],
+   "claim": "OPcache since 5.5"
+  },
+  {
+   "id": "P90",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "PHP Preloading",
+    "APCu",
+    "memcached",
+    "PHP-FPM",
+    "is not shared"
+   ],
+   "claim": "preloading and APCu/memcached"
+  },
+  {
+   "id": "P91",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "apcu_fetch",
+    "apcu_add",
+    "PHPDoc is an informal standard"
+   ],
+   "claim": "APCu example and informal PHPDoc"
+  },
+  {
+   "id": "P92",
+   "pages": [
+    75,
+    76
+   ],
+   "terms": [
+    "@param",
+    "@return",
+    "@throws",
+    "@author",
+    "@link"
+   ],
+   "claim": "PHPDoc tags"
+  },
+  {
+   "id": "P93",
+   "pages": [
+    76
+   ],
+   "terms": [
+    "@return void"
+   ],
+   "claim": "return void"
+  },
+  {
+   "id": "P94",
+   "pages": [
+    77,
+    78
+   ],
+   "terms": [
+    "Micro Frameworks",
+    "Full-Stack Frameworks",
+    "Component Frameworks"
+   ],
+   "claim": "framework types"
+  },
+  {
+   "id": "P95",
+   "pages": [
+    80
+   ],
+   "terms": [
+    "PHP 6",
+    "never exist"
+   ],
+   "claim": "avoid books about PHP 6"
+  },
+  {
+   "id": "P96",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "Creative Commons"
+   ],
+   "claim": "CC license"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "terms": [
+    "strict_types"
+   ],
+   "claim": "declare(strict_types=1) is not in the book"
+  },
+  {
+   "id": "N02",
+   "terms": [
+    "DateTimeImmutable",
+    "DateTimeZone"
+   ],
+   "claim": "DateTimeImmutable/DateTimeZone are not in the book"
+  },
+  {
+   "id": "N03",
+   "terms": [
+    "Throwable"
+   ],
+   "claim": "the Throwable hierarchy is not in the book"
+  },
+  {
+   "id": "N04",
+   "terms": [
+    "random_bytes",
+    "hash_equals"
+   ],
+   "claim": "random_bytes/hash_equals are not in the book"
+  },
+  {
+   "id": "N05",
+   "terms": [
+    "CSRF",
+    "Cross-Site Request Forgery"
+   ],
+   "claim": "CSRF is not in the book"
+  },
+  {
+   "id": "N06",
+   "terms": [
+    "Singleton"
+   ],
+   "claim": "Singleton is not in the book"
+  },
+  {
+   "id": "N07",
+   "terms": [
+    "assertSame",
+    "assertEquals",
+    "createMock",
+    "expectException"
+   ],
+   "claim": "the PHPUnit API is not in the book"
+  },
+  {
+   "id": "N08",
+   "terms": [
+    "PHPStan",
+    "Psalm"
+   ],
+   "claim": "PHPStan/Psalm are not in the book"
+  },
+  {
+   "id": "N09",
+   "terms": [
+    "Argon2id",
+    "PASSWORD_ARGON2ID"
+   ],
+   "claim": "Argon2id is not in the book (only Argon2)"
+  },
+  {
+   "id": "N10",
+   "terms": [
+    "password_needs_rehash"
+   ],
+   "claim": "password_needs_rehash is not in the book"
+  },
+  {
+   "id": "N11",
+   "terms": [
+    "Share-Nothing",
+    "share nothing",
+    "shared-nothing"
+   ],
+   "claim": "Share-Nothing is not in the book"
+  },
+  {
+   "id": "N12",
+   "terms": [
+    "set_error_handler"
+   ],
+   "claim": "set_error_handler is not in the book"
+  },
+  {
+   "id": "N13",
+   "terms": [
+    "SplFixedArray",
+    "SplStack",
+    "SplQueue",
+    "SplDoublyLinkedList"
+   ],
+   "claim": "specific SPL classes are not in the book"
+  },
+  {
+   "id": "N14",
+   "terms": [
+    "PSR-11",
+    "PSR-7",
+    "PHP-DI"
+   ],
+   "claim": "PSR-11/PSR-7/PHP-DI are not in the book"
+  },
+  {
+   "id": "N15",
+   "terms": [
+    "md5",
+    "sha1"
+   ],
+   "claim": "md5/sha1 are not named in the book (only SHA256 as an example)"
+  },
+  {
+   "id": "N16",
+   "terms": [
+    "re:arrow function",
+    "re:\\bfn\\s*\\("
+   ],
+   "claim": "arrow functions are not in the book"
+  },
+  {
+   "id": "N17",
+   "terms": [
+    "re:\\bmatch\\s*[({]",
+    "re:\\benums?\\b",
+    "readonly",
+    "Fibers"
+   ],
+   "claim": "match/enum/readonly/fibers are not in the book"
+  },
+  {
+   "id": "N18",
+   "terms": [
+    "opcache.memory_consumption",
+    "validate_timestamps",
+    "interned_strings"
+   ],
+   "claim": "opcache.* parameters beyond opcache.enable are not there"
+  },
+  {
+   "id": "N19",
+   "terms": [
+    "ATTR_EMULATE_PREPARES",
+    "ATTR_DEFAULT_FETCH_MODE"
+   ],
+   "claim": "PDO emulation options and default fetch mode are not in the book"
+  },
+  {
+   "id": "N20",
+   "terms": [
+    "magic_quotes"
+   ],
+   "claim": "magic_quotes is not in the book"
+  },
+  {
+   "id": "N21",
+   "terms": [
+    "Data Mapper",
+    "Active Record"
+   ],
+   "claim": "Data Mapper/Active Record are not in the book"
+  },
+  {
+   "id": "N22",
+   "terms": [
+    "re:union types?",
+    "nullable"
+   ],
+   "claim": "union/nullable types are not in the book"
+  },
+  {
+   "id": "N23",
+   "terms": [
+    "re:Strategy pattern",
+    "re:Decorator pattern",
+    "re:Factory pattern",
+    "re:Abstract Factory"
+   ],
+   "claim": "GoF patterns are not described"
+  },
+  {
+   "id": "N24",
+   "terms": [
+    "pm.max_children",
+    "pm.max_requests"
+   ],
+   "claim": "PHP-FPM tuning is not in the book"
+  },
+  {
+   "id": "N25",
+   "terms": [
+    "Collator"
+   ],
+   "claim": "Collator is not in the book"
+  },
+  {
+   "id": "N26",
+   "terms": [
+    "Information Disclosure"
+   ],
+   "claim": "the Information Disclosure label is not in the book"
+  }
+ ]
+}

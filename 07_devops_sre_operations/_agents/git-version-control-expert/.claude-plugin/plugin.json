@@ -1,0 +1,21 @@
+{
+  "name": "git-version-control-expert",
+  "version": "1.0.0",
+  "description": "Git and version control specialist based on Pro Git (Chacon and Straub; EN 2.1.450 and PT-BR 2.1.47): safe undoing, branching/merge/rebase, history rewriting, recovery, distributed workflows, servers, GitHub, hooks, submodules, migration and internals. Cites pages (PGEN/PGBR), marks [DATED] and states what the book does not cover.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "git",
+    "version-control",
+    "pro-git",
+    "branching",
+    "rebase",
+    "merge",
+    "reset",
+    "reflog",
+    "hooks",
+    "submodules",
+    "github",
+    "internals"
+  ]
+}

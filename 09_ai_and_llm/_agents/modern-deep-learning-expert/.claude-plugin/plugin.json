@@ -1,0 +1,21 @@
+{
+  "name": "modern-deep-learning-expert",
+  "version": "1.0.0",
+  "description": "Modern deep learning specialist based on Understanding Deep Learning (Prince, MIT Press, 2023; primary source) and Neural Networks and Deep Learning (Nielsen, 2015/2019; didactic introduction): shallow and deep networks, losses (maximum likelihood, cross-entropy), training and backpropagation, initialization, generalization, regularization, CNN/ResNet, transformers, GNNs, GANs, flows, VAEs, diffusion, RL/RLHF, why DL works, and ethics. Compares the two books (notation and approach, with pages). Does not cover post-2023 LLMs nor replace specialist review.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "deep-learning",
+    "neural-networks",
+    "backpropagation",
+    "transformers",
+    "attention",
+    "diffusion-models",
+    "gans",
+    "vae",
+    "reinforcement-learning",
+    "generalization",
+    "regularization",
+    "ai-ethics"
+  ]
+}

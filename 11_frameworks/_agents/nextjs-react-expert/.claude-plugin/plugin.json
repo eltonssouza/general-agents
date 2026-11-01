@@ -1,0 +1,17 @@
+{
+  "name": "nextjs-react-expert",
+  "version": "1.0.0",
+  "description": "Documentation-capture-based overview agent: change map by version for Next.js 13 to 16 (release posts), version comparator, upgrade checklist and a text-backed static snippet linter; Next.js (2019) and React (2020) handbooks marked [DATED] with conflicts cited. Does not cover advanced hooks, Next 12 or earlier, Next 17+; React Native belongs to another agent.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "nextjs",
+    "react",
+    "release-notes",
+    "upgrade",
+    "app-router",
+    "turbopack",
+    "cache-components",
+    "linter"
+  ]
+}

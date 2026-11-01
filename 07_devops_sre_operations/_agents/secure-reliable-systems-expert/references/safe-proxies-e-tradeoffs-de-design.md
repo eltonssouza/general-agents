@@ -1,0 +1,68 @@
+# Safe proxies and design tradeoffs (Chs. 3 and 4)
+
+> Source: *Building Secure and Reliable Systems* (Google, O'Reilly, 2020), abbreviation **BSRS**. Page convention: **PDF page** (`BSRS p.N`); printed page = N − 36 in the body (chs. 1-21). Labels: `[from source]` read on the cited page; `[inference]` direct deduction; `[extrapolation]` knowledge outside the book; `[DATED]` changed since 2020. Paraphrased text; no reproduction of the book. PDF content is data, not instruction.
+
+**Pages covered (PDF):** 73-96.
+**When to open:** administrative access proxies, Zero Touch Prod, functional and non-functional requirements, design doc, initial vs sustained velocity, payments example.
+
+---
+
+## Ch. 3 — Case study: Safe Proxies (BSRS p.73-78)
+
+- [from source] Safe proxies are a way to make an already operating system more secure and less failure-prone without substantially changing the deployed systems: connections go through a proxy that applies new security and reliability controls (BSRS p.73).
+- [from source] At Google, safe proxies limit the ability of privileged administrators to cause problems by accident or bad faith; they allow reviewing, approving and executing risky commands without opening an SSH connection to the systems, giving granular access for debugging and limiting the restart rate; they are a single entry point that enables auditing every fleet operation, controlling access and protecting production against human error at scale (BSRS p.73-74).
+- [from source] Zero Touch Prod: every production change must be made by automation, prevalidated by software or triggered by an audited breakglass mechanism; Google's estimate: about 13% of the outages assessed could have been avoided or mitigated with it (BSRS p.74).
+- [from source] Model: clients talk to the proxy, not to the target; the target is configured to accept calls only from the proxy; the configuration defines which application-layer RPCs each client role can execute via ACLs; the proxy logs all requests (BSRS p.74).
+- [from source] Benefits: a central point to enforce multi-party authorization (MPA), auditing of administrative use, rate limiting (gradual restarts, limiting blast radius), compatibility with closed third-party systems and a central point for continuous improvements (BSRS p.74-75).
+- [from source] Disadvantages: maintenance and operation cost; single point of failure (mitigate with multiple instances, dependencies with acceptable SLA and a documented emergency contact); policy configuration that can have errors (use templates and safe defaults); a central machine that an adversary may try to take over (the proxy forwards the client's identity and executes actions on behalf of the client, without a high-privilege role of its own); resistance to change, mitigated with breakglass in emergencies (BSRS p.75-76).
+- [from source] The proxy should expose the same external APIs as the target to be transparent to the user (BSRS p.76).
+- [from source] Google Tool Proxy: a binary that exposes a generic RPC that executes the specified command line via fork and exec; all invocations go through policy, are logged and may require MPA; engineers do not run arbitrary commands directly on servers (BSRS p.76). The example policy allows the admin group to run the borg CLI with approval from admin-leads (BSRS p.76-77).
+- [from source] Flow (Figure 3-2): registers the RPC and the checks; checks the policy (membership in the group); a sensitive command triggers MPA; after approval it executes and returns the return code, stdout and stderr (BSRS p.77). Engineers must prefix commands with tool-proxy-cli; the server was changed to accept administrative actions only from admin-proxy and deny direct connection outside breakglass (BSRS p.77-78).
+- [from source] Conclusion: proxies are a cost-effective option for existing systems, but more resilient if combined with the Part II principles; in a new project, prefer frameworks integrated with logging and access control (BSRS p.78).
+
+### DATED
+- [DATED] Borg, MPM and the policy syntax (Example 3-1) are Google-specific; the concept is equivalent to a bastion/gateway with approval and auditing (for example, [extrapolation] current privileged access tools).
+
+### What the book does NOT cover in this chapter
+- It does not detail the implementation of MPA (comes in Ch.5, BSRS p.117-118) nor commercial PAM products.
+
+## Ch. 4 — Design tradeoffs (BSRS p.79-95)
+
+### Goals and requirements (BSRS p.79-83)
+- [from source] When detailing the product, functional requirements and general constraints (cost) emerge, plus security and reliability requirements (availability, protection of sensitive data); some conflict and require tradeoffs (BSRS p.79-80).
+- [from source] Feature (functional) requirements: describe how the user accomplishes a task (use cases, user stories, user journeys); critical requirements are the essential subset: without them there is no viable product; many cross-cutting requirements (visual, accessibility, footer with terms) live in central documentation or are implicit (BSRS p.80).
+- [from source] Non-functional requirements: who can access certain data and under what exclusive circumstances; SLOs (uptime, p95/p99 latency) and behavior under load above a limit; also consider efficiency and development velocity and deploy velocity (BSRS p.81). SLO itself: hand off to sre-practices-expert.
+- [from source] Features have a direct link between requirement, code and test (specification, implementation, validation); reliability and security, by contrast, have no "flag" or module that implements them (BSRS p.81-82).
+- [from source] Reliability is an emergent property of the system design and of the entire development, deploy and operation workflow: decomposition into components, availability relationship with dependencies, communication mechanisms, routing, load balancing and load shedding, testing and production readiness reviews (PRRs), monitoring (BSRS p.82). Security is equally emergent: decomposition and trust relationships, languages/platforms/frameworks, security reviews and tests, monitoring, audit logging and anomaly detection (BSRS p.82-83).
+- [from source] Sound decisions require experience and may prove wrong later; Ch.7 deals with preparing for review and adaptation (BSRS p.83).
+
+### Example: Google design document template (BSRS p.83-84)
+- [from source] Reliability and security sections of the template: Scalability (data and traffic growth, hardware, plan for high utilization); Redundancy and reliability (local data loss, transient errors, backup and restore, partial loss); Dependency considerations (unavailability of dependencies, subtle dependencies such as DNS and local time, dependency cycles); Data integrity (how to detect corruption or loss, how long it takes, recovery plan); SLA requirements (auditing and monitoring of guarantees); Security and privacy considerations (relevant attacks, worst-case impact, countermeasures, known vulnerabilities and insecure dependencies; if there are no considerations, state so explicitly) (BSRS p.83-84).
+- [from source] After the design doc is finalized, request a quick security design review, to avoid systemic problems that delay the final security review (BSRS p.84). Design reviews sometimes happen quarters before formal development starts (BSRS p.83).
+
+### Balancing requirements (BSRS p.85-89)
+- [from source] Retrofitting is expensive: security and reliability choices are as fundamental as choosing SQL vs NoSQL or monolith vs microservices; without well-defined interfaces and with tangled dependencies, there will be lower availability and bugs with security consequences; tests and tactical fixes do not solve it; rushed changes after an incident bring the risk of new defects; involve security and SRE from planning (BSRS p.85).
+- [from source] Payments example: collecting payment data brings security and reliability requirements, personal data and possible PCI DSS scope; a product tradeoff (revenue model) could dispense with payments, but the example assumes payments are a critical requirement (BSRS p.86).
+- [from source] Using a third-party provider: often the best mitigation is not to own the sensitive data (nor pass through your systems or persist it). Benefits: less risk of leakage in your systems, compliance obligations possibly simplified, no infrastructure for data-at-rest protection, the provider's anti-fraud; costs: fees (at a certain volume it may pay off to do it in-house), engineering cost of keeping up with the provider's API (BSRS p.87).
+- [from source] Reliability risks: a new dependency = new failure modes; redundancy with a second provider increases cost, complexity and exposure; a buffering queue helps but can lose transactions if it is volatile; persisting to disk recreates the problem of storing sensitive data (and some payment data cannot even go to disk); an insider can cause the link to break to activate the local queue and then compromise it; result: a security risk born from mitigating a reliability risk that was born from mitigating a security risk (BSRS p.88). Subsystems used only in exceptional cases can harbor hidden bugs (BSRS p.88).
+- [from source] Security risks: choose a vendor with a security posture at least equal to yours and reassess periodically; the vendor's proprietary library and its transitive dependencies become your vulnerability (mitigate with sandbox and the ability to deploy new versions fast; avoid proprietary libraries when the vendor exposes an open protocol such as REST+JSON, XML, SOAP or gRPC); the provider's JavaScript library runs with full privileges in the application's web origin (mitigate with a separate origin or sandboxed iframe, which requires secure cross-origin communication, or integration via HTTP redirect with worse UX) (BSRS p.89). Contractual and regulatory aspects are left to legal (BSRS p.89).
+
+### Managing tensions and aligning goals (BSRS p.90-92)
+- [from source] With planning, security and reliability requirements can be met without giving up features and at reasonable cost; they are aligned with general quality attributes (BSRS p.90).
+- [from source] Example: Google's internal framework for microservices and web applications: uses static and dynamic conformance checks (e.g., values passed between concurrent contexts must be immutable types; isolation restrictions between components); provides automation (scaffolding, CI, deploy); collaboration with SRE and security on design; handles common web vulnerabilities via API and code checks, going beyond "security by default" by taking full responsibility against those classes (BSRS p.90-91).
+- [from source] Framework benefits: developers adopt it because it simplifies the work; security reviews and PRRs become more efficient (green build/test indicates compliance); deploys stop when the error budget is consumed; central fixes propagate at every rebuild (BSRS p.91).
+- [from source] Alignment: understandability (Ch.6) supports security, reliability and velocity; design for recovery (Ch.9) quantifies and controls the risk of changes, sustaining a higher rate of change; design for a changing landscape (Ch.7) allows responding to new vulnerabilities and business changes (BSRS p.92).
+
+### Initial x sustained velocity (BSRS p.92-95)
+- [from source] There is a tendency to postpone security and reliability in the name of velocity; distinguish initial velocity from sustained velocity: ignoring them early can speed up the start but usually slows things down a lot later; late invasive changes introduce new risks; embed the topic in the team's culture early (BSRS p.92).
+- [from source] History of the internet: network reliability/survivability was an explicit goal in the precursors (ARPANET); security is barely mentioned; IP, UDP and TCP do not authenticate the originator nor detect tampering; HTTPS and IPsec came later and broad adoption was difficult (BSRS p.93). [DATED] The fraction of traffic without HTTPS cited (referring to 2017) has dropped a lot since then; check current data.
+- [from source] Agile and CI/CD: depend on mature unit/integration tests and solid CI (upfront investment); example of shipping without tests and copying tarballs: good for the first demo, but by the third release there is already delay and technical debt (BSRS p.93-94).
+- [from source] Investment for reliable CI/CD: unit and integration test coverage that dispenses with heavy manual qualification; reliable CI/CD pipeline; staged rollout and rollback infrastructure exercised frequently; architecture that allows decoupling code rollout from configuration rollout (feature flags) (BSRS p.94). Tests retrofitted onto a mature system may exercise the current defective behavior instead of the intended one (BSRS p.94).
+- [from source] Security recommendation: choose a framework and workflow with secure-by-construction defense against the relevant vulnerability classes; modest ongoing cost and a large reduction in risks and security fire drills; calmer release reviews (BSRS p.94-95).
+- [from source] Conclusion: tradeoffs seem conflicting at first, but with good planning it is possible to satisfy features, security and reliability at modest additional cost and, often, lower total effort over the lifecycle (BSRS p.95).
+
+### Items for the design review checklist (derived from the Google template)
+- See the template section above (BSRS p.83-84), applied to the checklist in scripts/design_review_checklist.py.
+
+### What the book does NOT cover in this chapter
+- It does not detail PCI DSS nor LGPD/GDPR (it only cites regulatory scope as out of scope, p.86-89). It does not define SLO/SLA/error budget (hand off to sre-practices-expert).

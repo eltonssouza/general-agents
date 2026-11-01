@@ -1,0 +1,1570 @@
+{
+ "_comment": "positive: the page (PDF) contains ALL the substrings (case-insensitive; whitespace collapsed). Negative: 'absent' = terms absent from the whole body (PDF 9-211); 'absent_on_page' = terms absent from the page. The 'claim' fields are English glosses; 'contains'/'terms' keep the literal source text.",
+ "checks": [
+  {
+   "cite": "TLDP p.15",
+   "contains": [
+    "1969",
+    "Bell Labs",
+    "C programming language"
+   ],
+   "claim": "UNIX was born at Bell Labs in 1969, written in C"
+  },
+  {
+   "cite": "TLDP p.16",
+   "contains": [
+    "POSIX",
+    "comp.os.minix"
+   ],
+   "claim": "Linus and POSIX; post on comp.os.minix"
+  },
+  {
+   "cite": "TLDP p.20",
+   "contains": [
+    "GNU Public License"
+   ],
+   "claim": "GPL license"
+  },
+  {
+   "cite": "TLDP p.22",
+   "contains": [
+    "Bash: The GNU shell",
+    "Coreutils"
+   ],
+   "claim": "GNU tools: Bash and Coreutils"
+  },
+  {
+   "cite": "TLDP p.23",
+   "contains": [
+    "RPM is the RedHat Package Manager",
+    "Dpkg is the Debian package management system"
+   ],
+   "claim": "RPM and dpkg"
+  },
+  {
+   "cite": "TLDP p.25",
+   "contains": [
+    "Linux expects to be networked"
+   ],
+   "claim": "installation checklist: network"
+  },
+  {
+   "cite": "TLDP p.26",
+   "contains": [
+    "Careful with that root account"
+   ],
+   "claim": "avoid root in the graphical login"
+  },
+  {
+   "cite": "TLDP p.28",
+   "contains": [
+    "Don't log in as root",
+    "sudo"
+   ],
+   "claim": "do not log in as root in text mode; sudo (Ubuntu)"
+  },
+  {
+   "cite": "TLDP p.29",
+   "contains": [
+    "Table 2-1",
+    "apropos string",
+    "info command"
+   ],
+   "claim": "table of initial commands"
+  },
+  {
+   "cite": "TLDP p.30",
+   "contains": [
+    "Table 2-2",
+    "Ctrl+R",
+    "Search command history"
+   ],
+   "claim": "Bash shortcuts"
+  },
+  {
+   "cite": "TLDP p.33",
+   "contains": [
+    "man 5 passwd",
+    "man -a passwd"
+   ],
+   "claim": "man sections and -a"
+  },
+  {
+   "cite": "TLDP p.34",
+   "contains": [
+    "whatis",
+    "apropos browser"
+   ],
+   "claim": "whatis and apropos"
+  },
+  {
+   "cite": "TLDP p.36",
+   "contains": [
+    "shell built-in",
+    "MANPATH",
+    "/usr/share/doc"
+   ],
+   "claim": "builtins without their own man page; MANPATH"
+  },
+  {
+   "cite": "TLDP p.40",
+   "contains": [
+    "everything is a file; if something is not a file, it is a process"
+   ],
+   "claim": "everything is a file"
+  },
+  {
+   "cite": "TLDP p.41",
+   "contains": [
+    "Table 3-1",
+    "Named pipes",
+    "Block device"
+   ],
+   "claim": "file types"
+  },
+  {
+   "cite": "TLDP p.42",
+   "contains": [
+    "journaled file systems",
+    "RAID",
+    "if the disk is full"
+   ],
+   "claim": "why partition; journaling vs RAID"
+  },
+  {
+   "cite": "TLDP p.43",
+   "contains": [
+    "twice the amount of physical memory"
+   ],
+   "claim": "swap 2x RAM rule"
+  },
+  {
+   "cite": "TLDP p.44",
+   "contains": [
+    "mount point",
+    "/etc/fstab"
+   ],
+   "claim": "mount points and fstab"
+  },
+  {
+   "cite": "TLDP p.46",
+   "contains": [
+    "Table 3-2",
+    "cleaned upon reboot"
+   ],
+   "claim": "directory table; /tmp cleaned on reboot"
+  },
+  {
+   "cite": "TLDP p.47",
+   "contains": [
+    "1 inode per 2 to 8",
+    "not included in an inode, is the file name"
+   ],
+   "claim": "inodes"
+  },
+  {
+   "cite": "TLDP p.48",
+   "contains": [
+    "search is stopped",
+    "which -a ls"
+   ],
+   "claim": "PATH stops at the first match"
+  },
+  {
+   "cite": "TLDP p.49",
+   "contains": [
+    "Changes are not permanent",
+    "absolute path"
+   ],
+   "claim": "temporary export; absolute paths"
+  },
+  {
+   "cite": "TLDP p.50",
+   "contains": [
+    "sh or Bourne Shell",
+    "superset of the Bourne shell"
+   ],
+   "claim": "shell types; bash is a superset"
+  },
+  {
+   "cite": "TLDP p.51",
+   "contains": [
+    "/bin/sh is usually a link to Bash",
+    "/etc/passwd"
+   ],
+   "claim": "sh -> bash; shell in /etc/passwd"
+  },
+  {
+   "cite": "TLDP p.55",
+   "contains": [
+    "/var/tmp",
+    "deleted without notice"
+   ],
+   "claim": "/tmp can be erased"
+  },
+  {
+   "cite": "TLDP p.56",
+   "contains": [
+    "ls -latr",
+    "hidden from view"
+   ],
+   "claim": "ls -a/-latr; hidden files"
+  },
+  {
+   "cite": "TLDP p.58",
+   "contains": [
+    "file can be tricked"
+   ],
+   "claim": "file is only a guess"
+  },
+  {
+   "cite": "TLDP p.60",
+   "contains": [
+    "mkdir -p",
+    "case sensitive operating system"
+   ],
+   "claim": "mkdir -p; case sensitive"
+  },
+  {
+   "cite": "TLDP p.61",
+   "contains": [
+    "no garbage can",
+    "rm -ri"
+   ],
+   "claim": "no trash can; rm -i"
+  },
+  {
+   "cite": "TLDP p.62",
+   "contains": [
+    "which",
+    "find <path> -name"
+   ],
+   "claim": "which and find"
+  },
+  {
+   "cite": "TLDP p.63",
+   "contains": [
+    "xargs",
+    "slocate",
+    "once every day"
+   ],
+   "claim": "xargs; daily locate"
+  },
+  {
+   "cite": "TLDP p.65",
+   "contains": [
+    "less \\*",
+    "cat This\\ File"
+   ],
+   "claim": "escaping special characters"
+  },
+  {
+   "cite": "TLDP p.66",
+   "contains": [
+    "less is the GNU version of more",
+    "tail command has a handy feature"
+   ],
+   "claim": "less; tail -f"
+  },
+  {
+   "cite": "TLDP p.67",
+   "contains": [
+    "can't span partitions",
+    "Soft link or symbolic link"
+   ],
+   "claim": "hard link vs symlink"
+  },
+  {
+   "cite": "TLDP p.68",
+   "contains": [
+    "ln -s targetfile linkname"
+   ],
+   "claim": "ln -s"
+  },
+  {
+   "cite": "TLDP p.69",
+   "contains": [
+    "Table 3-7",
+    "Table 3-8"
+   ],
+   "claim": "access and category codes"
+  },
+  {
+   "cite": "TLDP p.70",
+   "contains": [
+    "bad interpreter: Permission denied",
+    "chmod u+rwx,go-rwx",
+    "Table 3-9"
+   ],
+   "claim": "symbolic chmod and table 3-9"
+  },
+  {
+   "cite": "TLDP p.71",
+   "contains": [
+    "chmod 755",
+    "fourth digit",
+    "User private group scheme"
+   ],
+   "claim": "common modes; 4th digit; private group"
+  },
+  {
+   "cite": "TLDP p.72",
+   "contains": [
+    "umask",
+    "subtracted from the total possible access rights"
+   ],
+   "claim": "umask is subtracted"
+  },
+  {
+   "cite": "TLDP p.73",
+   "contains": [
+    "022",
+    "chown (change owner)"
+   ],
+   "claim": "root's umask; chown"
+  },
+  {
+   "cite": "TLDP p.74",
+   "contains": [
+    "Sticky bit mode",
+    "chmod o+t directory",
+    "SGID (set group ID) on a directory"
+   ],
+   "claim": "special modes"
+  },
+  {
+   "cite": "TLDP p.80",
+   "contains": [
+    "Table 4-1",
+    "Ctrl+Z",
+    "screen"
+   ],
+   "claim": "job control; screen"
+  },
+  {
+   "cite": "TLDP p.81",
+   "contains": [
+    "lower than 0.8",
+    "Daemons"
+   ],
+   "claim": "batch < 0.8; daemons"
+  },
+  {
+   "cite": "TLDP p.82",
+   "contains": [
+    "pgrep",
+    "login shells"
+   ],
+   "claim": "pgrep; login shell with a hyphen"
+  },
+  {
+   "cite": "TLDP p.84",
+   "contains": [
+    "forking",
+    "exec call"
+   ],
+   "claim": "fork and exec"
+  },
+  {
+   "cite": "TLDP p.85",
+   "contains": [
+    "zombie process",
+    "exit status",
+    "grep command returns -1"
+   ],
+   "claim": "zombie; exit status; the book's statement about grep -1"
+  },
+  {
+   "cite": "TLDP p.86",
+   "contains": [
+    "Table 4-2",
+    "SIGKILL",
+    "sparsely as possible"
+   ],
+   "claim": "signals; special modes used sparingly"
+  },
+  {
+   "cite": "TLDP p.87",
+   "contains": [
+    "-r-s--x--x",
+    "write",
+    "wall"
+   ],
+   "claim": "passwd SUID; write/wall SGID"
+  },
+  {
+   "cite": "TLDP p.88",
+   "contains": [
+    "Master Boot Record",
+    "GRUB"
+   ],
+   "claim": "boot: MBR and GRUB"
+  },
+  {
+   "cite": "TLDP p.89",
+   "contains": [
+    "/etc/inittab",
+    "run level",
+    "kill scripts"
+   ],
+   "claim": "init and runlevels"
+  },
+  {
+   "cite": "TLDP p.90",
+   "contains": [
+    "symbolic links",
+    "getty",
+    "Ctrl+Alt+Delete"
+   ],
+   "claim": "rc.d links; getty; ctrl-alt-del"
+  },
+  {
+   "cite": "TLDP p.91",
+   "contains": [
+    "Single user mode",
+    "Do NOT set initdefault",
+    "boot into single-user mode"
+   ],
+   "claim": "runlevels in inittab; single-user"
+  },
+  {
+   "cite": "TLDP p.92",
+   "contains": [
+    "chkconfig",
+    "update-rc.d",
+    "shutdown command"
+   ],
+   "claim": "runlevel tools; shutdown"
+  },
+  {
+   "cite": "TLDP p.94",
+   "contains": [
+    "what is normal for your system"
+   ],
+   "claim": "load depends on the system"
+  },
+  {
+   "cite": "TLDP p.95",
+   "contains": [
+    "nice number",
+    "renice"
+   ],
+   "claim": "nice and renice"
+  },
+  {
+   "cite": "TLDP p.98",
+   "contains": [
+    "SIGTERM",
+    "kill -9",
+    "SIGKILL"
+   ],
+   "claim": "SIGTERM first; -9 last"
+  },
+  {
+   "cite": "TLDP p.99",
+   "contains": [
+    "three types of delayed execution",
+    "xkill"
+   ],
+   "claim": "kinds of deferred execution; xkill"
+  },
+  {
+   "cite": "TLDP p.100",
+   "contains": [
+    "atq",
+    "atrm",
+    "strange execution times"
+   ],
+   "claim": "at: atq/atrm; strange times"
+  },
+  {
+   "cite": "TLDP p.101",
+   "contains": [
+    "run-parts",
+    "both 0 and 7 are Sunday"
+   ],
+   "claim": "crontab: fields; Sunday 0/7"
+  },
+  {
+   "cite": "TLDP p.102",
+   "contains": [
+    "crontab -e",
+    "do not need to restart the cron daemon"
+   ],
+   "claim": "crontab -e; no restart"
+  },
+  {
+   "cite": "TLDP p.105",
+   "contains": [
+    "standard input (stdin)",
+    "overwritten"
+   ],
+   "claim": "stdin/stdout; > overwrites"
+  },
+  {
+   "cite": "TLDP p.106",
+   "contains": [
+    "noclobber",
+    "truncating"
+   ],
+   "claim": "noclobber; truncation"
+  },
+  {
+   "cite": "TLDP p.106",
+   "contains": [
+    "mail mike@somewhere.org < to_do"
+   ],
+   "claim": "input redirection"
+  },
+  {
+   "cite": "TLDP p.107",
+   "contains": [
+    "beginner's cat file | mail someone"
+   ],
+   "claim": "cat | mail is the beginner's form"
+  },
+  {
+   "cite": "TLDP p.108",
+   "contains": [
+    "ls > dirlist 2>&1",
+    "ls 2>&1 > dirlist",
+    "file descriptor"
+   ],
+   "claim": "order of 2>&1"
+  },
+  {
+   "cite": "TLDP p.109",
+   "contains": [
+    "tee",
+    "2>&1 | less"
+   ],
+   "claim": "tee; 2>&1 | less"
+  },
+  {
+   "cite": "TLDP p.110",
+   "contains": [
+    "sort -nk 5",
+    "-v option"
+   ],
+   "claim": "sort -nk; grep -v"
+  },
+  {
+   "cite": "TLDP p.111",
+   "contains": [
+    "sort itemlist | uniq"
+   ],
+   "claim": "sort | uniq"
+  },
+  {
+   "cite": "TLDP p.114",
+   "contains": [
+    "Vim stands for",
+    "you can survive on any UNIX system"
+   ],
+   "claim": "vim; vi on every UNIX"
+  },
+  {
+   "cite": "TLDP p.115",
+   "contains": [
+    ":q!",
+    ":wq",
+    ":recover"
+   ],
+   "claim": "basic vi commands"
+  },
+  {
+   "cite": "TLDP p.117",
+   "contains": [
+    "Don't edit these files with any office component"
+   ],
+   "claim": "do not edit config files with an office suite"
+  },
+  {
+   "cite": "TLDP p.120",
+   "contains": [
+    "truncating",
+    "tail -5 wishlist > newlist",
+    "/dev/null"
+   ],
+   "claim": "truncation; tail; symlink to /dev/null"
+  },
+  {
+   "cite": "TLDP p.121",
+   "contains": [
+    "ulimit",
+    ".forward"
+   ],
+   "claim": "ulimit; .forward"
+  },
+  {
+   "cite": "TLDP p.122",
+   "contains": [
+    "printenv",
+    "inherited"
+   ],
+   "claim": "inherited environment variables"
+  },
+  {
+   "cite": "TLDP p.123",
+   "contains": [
+    "export VARIABLE=value",
+    "runfgfs"
+   ],
+   "claim": "export"
+  },
+  {
+   "cite": "TLDP p.124",
+   "contains": [
+    "Table 7-1",
+    "~/.bash_profile, ~/.bash_login and ~/.profile"
+   ],
+   "claim": "variables and profile order"
+  },
+  {
+   "cite": "TLDP p.126",
+   "contains": [
+    "source built-in shell command"
+   ],
+   "claim": "source"
+  },
+  {
+   "cite": "TLDP p.127",
+   "contains": [
+    "umask 002",
+    "umask 022"
+   ],
+   "claim": "umask in /etc/bashrc"
+  },
+  {
+   "cite": "TLDP p.128",
+   "contains": [
+    "MYPROMPT=$PS1"
+   ],
+   "claim": "saving the prompt"
+  },
+  {
+   "cite": "TLDP p.129",
+   "contains": [
+    "#! /bin/bash",
+    "non-interactive shell",
+    "positional parameters"
+   ],
+   "claim": "scripts: shebang and parameters"
+  },
+  {
+   "cite": "TLDP p.130",
+   "contains": [
+    "makebackupfiles.sh",
+    "LIST=`ls`",
+    "mv * *.old"
+   ],
+   "claim": ".old copy script"
+  },
+  {
+   "cite": "TLDP p.131",
+   "contains": [
+    "Usage: $0 {start|stop|restart|status}",
+    "POSIX-compliant mode",
+    "Advanced Bash Scripting"
+   ],
+   "claim": "init script; POSIX; reference"
+  },
+  {
+   "cite": "TLDP p.132",
+   "contains": [
+    "network-transparent",
+    "hostname:displaynumber.screennumber"
+   ],
+   "claim": "X; display name"
+  },
+  {
+   "cite": "TLDP p.133",
+   "contains": [
+    "window managers",
+    "DISPLAY"
+   ],
+   "claim": "window managers; DISPLAY"
+  },
+  {
+   "cite": "TLDP p.134",
+   "contains": [
+    "xorg.conf",
+    "backup copy of the configuration file"
+   ],
+   "claim": "xorg.conf; backup"
+  },
+  {
+   "cite": "TLDP p.135",
+   "contains": [
+    "ntpdate",
+    "should not be running"
+   ],
+   "claim": "ntpdate without ntpd"
+  },
+  {
+   "cite": "TLDP p.137",
+   "contains": [
+    "rpm -Uvh",
+    "install option -i"
+   ],
+   "claim": "rpm -Uvh; kernel with -i"
+  },
+  {
+   "cite": "TLDP p.138",
+   "contains": [
+    "dpkg -l",
+    "dpkg -S"
+   ],
+   "claim": "dpkg -l and -S"
+  },
+  {
+   "cite": "TLDP p.139",
+   "contains": [
+    "apt-get update",
+    "apt-get upgrade",
+    "Updates should be applied regularly"
+   ],
+   "claim": "apt-get and updates"
+  },
+  {
+   "cite": "TLDP p.140",
+   "contains": [
+    "up2date",
+    "yum",
+    "YaST"
+   ],
+   "claim": "RPM managers"
+  },
+  {
+   "cite": "TLDP p.141",
+   "contains": [
+    "grub.conf",
+    "noauto"
+   ],
+   "claim": "grub.conf; fstab noauto"
+  },
+  {
+   "cite": "TLDP p.142",
+   "contains": [
+    "lsof",
+    "umount /mnt/cdrom"
+   ],
+   "claim": "device busy; umount"
+  },
+  {
+   "cite": "TLDP p.143",
+   "contains": [
+    "tail testfile > testfile"
+   ],
+   "claim": "truncation exercise"
+  },
+  {
+   "cite": "TLDP p.145",
+   "contains": [
+    "lp file(s)",
+    "lpr file(s)"
+   ],
+   "claim": "lp and lpr"
+  },
+  {
+   "cite": "TLDP p.146",
+   "contains": [
+    "lpstat -d"
+   ],
+   "claim": "default printer"
+  },
+  {
+   "cite": "TLDP p.148",
+   "contains": [
+    "631"
+   ],
+   "claim": "CUPS web interface"
+  },
+  {
+   "cite": "TLDP p.152",
+   "contains": [
+    "GNU tar",
+    "tarballs"
+   ],
+   "claim": "GNU tar"
+  },
+  {
+   "cite": "TLDP p.153",
+   "contains": [
+    "tarred directory"
+   ],
+   "claim": "archiving a directory"
+  },
+  {
+   "cite": "TLDP p.154",
+   "contains": [
+    "-N",
+    "-g option"
+   ],
+   "claim": "incremental tar -N and -g"
+  },
+  {
+   "cite": "TLDP p.155",
+   "contains": [
+    "tar zxvf file.tar.gz",
+    "tar jxvf"
+   ],
+   "claim": "tar zxvf/jxvf"
+  },
+  {
+   "cite": "TLDP p.156",
+   "contains": [
+    "jar will follow symbolic links"
+   ],
+   "claim": "jar follows symlinks"
+  },
+  {
+   "cite": "TLDP p.158",
+   "contains": [
+    "mkisofs -J -r -o cd.iso ."
+   ],
+   "claim": "mkisofs"
+  },
+  {
+   "cite": "TLDP p.160",
+   "contains": [
+    "rsync -avz /home/karl/ /mnt/usbstore",
+    "dump and restore"
+   ],
+   "claim": "rsync; dump/restore"
+  },
+  {
+   "cite": "TLDP p.162",
+   "contains": [
+    "gpg -e -r"
+   ],
+   "claim": "gpg -e -r"
+  },
+  {
+   "cite": "TLDP p.163",
+   "contains": [
+    "No password = no data"
+   ],
+   "claim": "no passphrase, no data"
+  },
+  {
+   "cite": "TLDP p.165",
+   "contains": [
+    "Table 10-1",
+    "Application layer"
+   ],
+   "claim": "simplified OSI model"
+  },
+  {
+   "cite": "TLDP p.169",
+   "contains": [
+    "127.0.0.1",
+    "nsswitch.conf",
+    "resolv.conf"
+   ],
+   "claim": "/etc/hosts, resolv.conf, nsswitch"
+  },
+  {
+   "cite": "TLDP p.170",
+   "contains": [
+    "ip addr show",
+    "Do not ever change the local loop"
+   ],
+   "claim": "ip addr; do not touch the loopback"
+  },
+  {
+   "cite": "TLDP p.172",
+   "contains": [
+    "netstat -nr",
+    "The modern way"
+   ],
+   "claim": "netstat -nr; ip route"
+  },
+  {
+   "cite": "TLDP p.175",
+   "contains": [
+    "Standalone server",
+    "inetd"
+   ],
+   "claim": "standalone vs inetd"
+  },
+  {
+   "cite": "TLDP p.176",
+   "contains": [
+    "IMAP is to be",
+    "preferred"
+   ],
+   "claim": "IMAP preferable"
+  },
+  {
+   "cite": "TLDP p.180",
+   "contains": [
+    "FTP is insecure!",
+    "sftp"
+   ],
+   "claim": "FTP insecure"
+  },
+  {
+   "cite": "TLDP p.182",
+   "contains": [
+    "/etc/shadow",
+    "-r--------"
+   ],
+   "claim": "shadow 400"
+  },
+  {
+   "cite": "TLDP p.183",
+   "contains": [
+    "PAM",
+    "required, requisite, sufficient or optional"
+   ],
+   "claim": "PAM and flags"
+  },
+  {
+   "cite": "TLDP p.184",
+   "contains": [
+    "Secure SHell or ssh is advised",
+    "telnet mailserver 25"
+   ],
+   "claim": "SSH recommended; telnet to test SMTP"
+  },
+  {
+   "cite": "TLDP p.185",
+   "contains": [
+    "telnet www.some.net 80"
+   ],
+   "claim": "telnet for HTTP"
+  },
+  {
+   "cite": "TLDP p.186",
+   "contains": [
+    "xhost +remote.machine.com",
+    "OpenSSH"
+   ],
+   "claim": "xhost; OpenSSH"
+  },
+  {
+   "cite": "TLDP p.187",
+   "contains": [
+    "in three characters",
+    "known_hosts"
+   ],
+   "claim": "typing yes; known_hosts"
+  },
+  {
+   "cite": "TLDP p.188",
+   "contains": [
+    "man-in-the-middle"
+   ],
+   "claim": "host key warning"
+  },
+  {
+   "cite": "TLDP p.189",
+   "contains": [
+    "sftp",
+    "ssh-keygen",
+    "no way to recover a lost passphrase"
+   ],
+   "claim": "scp/sftp; passphrase"
+  },
+  {
+   "cite": "TLDP p.191",
+   "contains": [
+    "netstat -l",
+    "as few services as possible"
+   ],
+   "claim": "few services"
+  },
+  {
+   "cite": "TLDP p.192",
+   "contains": [
+    "chkconfig",
+    "update regularly"
+   ],
+   "claim": "stop services; update"
+  },
+  {
+   "cite": "TLDP p.193",
+   "contains": [
+    "TCP wrappers",
+    "hosts.allow"
+   ],
+   "claim": "TCP wrappers"
+  },
+  {
+   "cite": "TLDP p.194",
+   "contains": [
+    "tripwire",
+    "sudo",
+    "Have I been hacked?"
+   ],
+   "claim": "tripwire; sudo; checklist"
+  },
+  {
+   "cite": "TLDP p.195",
+   "contains": [
+    "Disconnect the machine from the network"
+   ],
+   "claim": "intrusion recovery"
+  },
+  {
+   "cite": "TLDP p.201",
+   "contains": [
+    "eavesdrop"
+   ],
+   "claim": "VoIP without encryption"
+  },
+  {
+   "cite": "TLDP p.207",
+   "contains": [
+    "Table B-1",
+    "cls",
+    "clear"
+   ],
+   "claim": "DOS vs Linux"
+  },
+  {
+   "cite": "TLDP p.208",
+   "contains": [
+    "Table C-1"
+   ],
+   "claim": "common features"
+  },
+  {
+   "cite": "TLDP p.209",
+   "contains": [
+    "Table C-2",
+    "&> file or > file 2>&1"
+   ],
+   "claim": "differences between shells; &>"
+  },
+  {
+   "cite": "TLDP p.210",
+   "contains": [
+    "source file or . file"
+   ],
+   "claim": "source vs ."
+  },
+  {
+   "cite": "TLDP p.9",
+   "contains": [
+    "CLUE",
+    "Command Line User Experience"
+   ],
+   "claim": "goal of the book: CLUE"
+  },
+  {
+   "cite": "TLDP p.27",
+   "contains": [
+    "control panel"
+   ],
+   "claim": "the terminal is the control panel"
+  },
+  {
+   "cite": "TLDP p.30",
+   "contains": [
+    "second nature"
+   ],
+   "claim": "reading documentation as second nature"
+  },
+  {
+   "cite": "TLDP p.35",
+   "contains": [
+    "Konqueror",
+    "info:info"
+   ],
+   "claim": "period graphical help"
+  },
+  {
+   "cite": "TLDP p.60",
+   "contains": [
+    "only the name of the file changes"
+   ],
+   "claim": "mv renames"
+  },
+  {
+   "cite": "TLDP p.61",
+   "contains": [
+    "rather dangerous"
+   ],
+   "claim": "dangerous rm options"
+  },
+  {
+   "cite": "TLDP p.64",
+   "contains": [
+    "reverse-i-search",
+    ".bash_history"
+   ],
+   "claim": "reverse history search"
+  },
+  {
+   "cite": "TLDP p.68",
+   "contains": [
+    "always very small files"
+   ],
+   "claim": "symlinks are small"
+  },
+  {
+   "cite": "TLDP p.71",
+   "contains": [
+    "gpasswd"
+   ],
+   "claim": "gpasswd for groups"
+  },
+  {
+   "cite": "TLDP p.72",
+   "contains": [
+    "Files without permissions don't exist"
+   ],
+   "claim": "files always have permissions"
+  },
+  {
+   "cite": "TLDP p.73",
+   "contains": [
+    "chown jacky: my_report"
+   ],
+   "claim": "chown user:"
+  },
+  {
+   "cite": "TLDP p.74",
+   "contains": [
+    "Existing files are left unchanged"
+   ],
+   "claim": "SGID on a directory does not affect existing files"
+  },
+  {
+   "cite": "TLDP p.85",
+   "contains": [
+    "daemonize"
+   ],
+   "claim": "daemonization and init as parent"
+  },
+  {
+   "cite": "TLDP p.93",
+   "contains": [
+    "built-in time command"
+   ],
+   "claim": "built-in time"
+  },
+  {
+   "cite": "TLDP p.94",
+   "contains": [
+    "/usr/bin/time"
+   ],
+   "claim": "GNU time"
+  },
+  {
+   "cite": "TLDP p.96",
+   "contains": [
+    "iostat"
+   ],
+   "claim": "iostat"
+  },
+  {
+   "cite": "TLDP p.100",
+   "contains": [
+    "$SHELL"
+   ],
+   "claim": "shell used by at"
+  },
+  {
+   "cite": "TLDP p.101",
+   "contains": [
+    "MAILTO=root"
+   ],
+   "claim": "crontab variables"
+  },
+  {
+   "cite": "TLDP p.125",
+   "contains": [
+    "~/.bash_logout"
+   ],
+   "claim": "bash_logout"
+  },
+  {
+   "cite": "TLDP p.126",
+   "contains": [
+    "profile.d"
+   ],
+   "claim": "profile.d"
+  },
+  {
+   "cite": "TLDP p.139",
+   "contains": [
+    "reasonable start"
+   ],
+   "claim": "updating every few weeks as a reasonable start"
+  },
+  {
+   "cite": "TLDP p.140",
+   "contains": [
+    "only execute this command"
+   ],
+   "claim": "su -c runs only the command"
+  },
+  {
+   "cite": "TLDP p.141",
+   "contains": [
+    "old-kernel"
+   ],
+   "claim": "grub.conf with an old kernel"
+  },
+  {
+   "cite": "TLDP p.150",
+   "contains": [
+    "FTP client"
+   ],
+   "claim": "printer test via FTP"
+  },
+  {
+   "cite": "TLDP p.159",
+   "contains": [
+    "Amanda",
+    "HAL"
+   ],
+   "claim": "Amanda; HAL"
+  },
+  {
+   "cite": "TLDP p.161",
+   "contains": [
+    "private key"
+   ],
+   "claim": "private key"
+  },
+  {
+   "cite": "TLDP p.162",
+   "contains": [
+    "move the mouse cursor"
+   ],
+   "claim": "entropy in key generation"
+  },
+  {
+   "cite": "TLDP p.168",
+   "contains": [
+    "better not to specify any information"
+   ],
+   "claim": "better not to invent network data"
+  },
+  {
+   "cite": "TLDP p.171",
+   "contains": [
+    "UP",
+    "RUNNING"
+   ],
+   "claim": "UP and RUNNING state"
+  },
+  {
+   "cite": "TLDP p.173",
+   "contains": [
+    "tracepath"
+   ],
+   "claim": "tracepath"
+  },
+  {
+   "cite": "TLDP p.179",
+   "contains": [
+    "http_proxy"
+   ],
+   "claim": "proxy via variable"
+  },
+  {
+   "cite": "TLDP p.182",
+   "contains": [
+    "first candidates for being examined by hackers"
+   ],
+   "claim": "passwd/shadow under attack"
+  },
+  {
+   "cite": "TLDP p.188",
+   "contains": [
+    "Trojan horse"
+   ],
+   "claim": "host key warning"
+  },
+  {
+   "cite": "TLDP p.190",
+   "contains": [
+    "VNC"
+   ],
+   "claim": "VNC"
+  },
+  {
+   "cite": "TLDP p.194",
+   "contains": [
+    "arachNIDS",
+    "Snort"
+   ],
+   "claim": "Snort and arachNIDS"
+  },
+  {
+   "cite": "TLDP p.195",
+   "contains": [
+    "Re-install the system"
+   ],
+   "claim": "reinstall"
+  }
+ ],
+ "negative_checks": [
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "systemd",
+    "systemctl",
+    "journalctl"
+   ],
+   "claim": "the book does not cover systemd"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "docker",
+    "kubernetes"
+   ],
+   "claim": "the book does not cover containers"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "SELinux",
+    "AppArmor"
+   ],
+   "claim": "the book does not cover MAC (SELinux/AppArmor)"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "setfacl",
+    "getfacl"
+   ],
+   "claim": "the book does not cover POSIX ACLs"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "ufw",
+    "firewalld",
+    "nftables",
+    "fail2ban"
+   ],
+   "claim": "the book does not cover firewalls/modern tools"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "visudo",
+    "sudoers"
+   ],
+   "claim": "the book does not explain sudo configuration"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "set -e",
+    "set -u",
+    "pipefail"
+   ],
+   "claim": "the book does not cover shell strict mode"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "shellcheck"
+   ],
+   "claim": "the book does not mention shellcheck"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "getopts"
+   ],
+   "claim": "the book does not cover getopts"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "mktemp"
+   ],
+   "claim": "the book does not mention mktemp"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "nohup",
+    "disown"
+   ],
+   "claim": "the book does not mention nohup/disown"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "pkill",
+    "killall"
+   ],
+   "claim": "the book does not mention pkill/killall (only pgrep)"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "ext4",
+    "btrfs"
+   ],
+   "claim": "the book does not cover ext4/btrfs (xfs appears only as X font server)"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "lvm",
+    "lsblk",
+    "fsck",
+    "mkfs"
+   ],
+   "claim": "the book does not cover LVM/fsck/mkfs"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "curl",
+    "wget"
+   ],
+   "claim": "the book does not mention curl/wget"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "tmux"
+   ],
+   "claim": "the book mentions screen, not tmux"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "strace",
+    "cgroup"
+   ],
+   "claim": "the book does not cover strace/cgroups"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "nginx"
+   ],
+   "claim": "the book only mentions Apache as a web server"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "ssh-copy-id",
+    "ed25519",
+    "ProxyJump"
+   ],
+   "claim": "the book does not cover modern SSH practices"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "chmod -R"
+   ],
+   "claim": "the book does not write chmod -R"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "rm -rf"
+   ],
+   "claim": "the book never writes 'rm -rf' literally"
+  },
+  {
+   "type": "absent",
+   "scope": "body",
+   "terms": [
+    "$(("
+   ],
+   "claim": "no $(( )) arithmetic"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.101",
+   "terms": [
+    "*/",
+    "@reboot"
+   ],
+   "claim": "p.101 (cron) has no */n steps or @reboot"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.72",
+   "terms": [
+    "bitwise",
+    "complement"
+   ],
+   "claim": "p.72 explains umask by subtraction, not bitwise"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.98",
+   "terms": [
+    "nohup",
+    "pkill"
+   ],
+   "claim": "p.98 (kill) does not mention nohup/pkill"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.71",
+   "terms": [
+    "setfacl",
+    "ACL"
+   ],
+   "claim": "p.71 (chmod) does not mention ACLs"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.139",
+   "terms": [
+    "dnf",
+    "zypper"
+   ],
+   "claim": "p.139 (apt) does not mention dnf/zypper"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.170",
+   "terms": [
+    "ss -",
+    "nmcli"
+   ],
+   "claim": "p.170 (ip) does not mention ss/nmcli"
+  },
+  {
+   "type": "absent_on_page",
+   "cite": "TLDP p.129",
+   "terms": [
+    "set -e",
+    "shellcheck",
+    "[["
+   ],
+   "claim": "p.129 (scripts) has no set -e/shellcheck/[[ ]]"
+  }
+ ]
+}

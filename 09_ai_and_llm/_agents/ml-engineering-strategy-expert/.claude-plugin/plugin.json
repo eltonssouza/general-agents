@@ -1,0 +1,17 @@
+{
+  "name": "ml-engineering-strategy-expert",
+  "version": "1.0.0",
+  "description": "ML engineering strategy expert based on Machine Learning Yearning (Andrew Ng, 2018 draft): dev/test sets, single-number metric, error analysis, bias and variance, learning curves, human level, different distributions, optimization verification, pipelines and end-to-end. [DATED] 2018; does not cover Transformers/LLMs/MLOps. Not a substitute for statistical validation.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "machine-learning",
+    "ml-strategy",
+    "bias-variance",
+    "error-analysis",
+    "dev-test-sets",
+    "learning-curves",
+    "end-to-end",
+    "pipelines"
+  ]
+}

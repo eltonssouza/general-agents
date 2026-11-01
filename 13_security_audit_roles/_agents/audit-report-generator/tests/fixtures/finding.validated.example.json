@@ -1,0 +1,27 @@
+{
+  "id": "AUD-DEMO-001",
+  "run_id": "RUN-DEMO",
+  "repository_revision": "snapshot-demo-without-repository",
+  "origin_specialist": "security",
+  "domain": "03",
+  "title": "Synthetic example of missing object-level authorization",
+  "status": "POTENTIAL",
+  "suggested_status": "POTENTIAL",
+  "severity": "HIGH",
+  "priority": "P1",
+  "confidence": "LOW",
+  "description": "Fictitious format example. DOES NOT REPRESENT A REAL FINDING.",
+  "root_cause": null,
+  "exploit_conditions": "Synthetic data; no condition was verified.",
+  "impact": "Not determined; schema demonstration only.",
+  "evidence": [
+    {"id": "EV-DEMO-001", "source_kind": "external_reference", "locator": "synthetic-example-only", "method": "Contract example", "summary": "Contains no evidence from a real repository"}
+  ],
+  "remediation": "Not applicable: synthetic example.",
+  "acceptance_criteria": ["The example does not appear as a confirmed finding in real audits."],
+  "cvss_score": null,
+  "cvss_vector": null,
+  "cve": null,
+  "cwe": null,
+  "validation": null
+}

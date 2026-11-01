@@ -1,0 +1,563 @@
+{
+  "source": {
+    "CSHist": "The history of C# (PDFs CSharp-9/10/11-WhatsNew.pdf, identical text, 16 p.)",
+    "CS12": "What's new in C# 12 (6 p.)",
+    "CS13": "What's new in C# 13 (7 p.)",
+    "page_convention": "PDF pages (the articles have no printed page numbers)",
+    "features_pt_note": "features_pt keeps the original Portuguese feature names (input keywords) so that Portuguese queries still match"
+  },
+  "versions": [
+    {
+      "version": "1.0",
+      "name": "C# 1.0",
+      "release_date": "January 2002",
+      "platform": "Visual Studio .NET 2002",
+      "source": "CSHist p.15-16",
+      "features": [
+        "Classes",
+        "Structs",
+        "Interfaces",
+        "Events",
+        "Properties",
+        "Delegates",
+        "Operators and expressions",
+        "Statements",
+        "Attributes"
+      ],
+      "note": "No generics and no LINQ; 'looked a lot like Java' (p.15).",
+      "features_pt": [
+        "Classes (Classes)",
+        "Structs (Structs)",
+        "Interfaces (Interfaces)",
+        "Eventos (Events)",
+        "Propriedades (Properties)",
+        "Delegates (Delegates)",
+        "Operadores e expressoes (Operators and expressions)",
+        "Instrucoes (Statements)",
+        "Atributos (Attributes)"
+      ]
+    },
+    {
+      "version": "1.2",
+      "name": "C# 1.2",
+      "release_date": "April 2003",
+      "platform": "Visual Studio .NET 2003",
+      "source": "CSHist p.15",
+      "features": [
+        "foreach now calls Dispose on the IEnumerator when it implements IDisposable"
+      ],
+      "note": "",
+      "features_pt": [
+        "foreach passa a chamar Dispose no IEnumerator quando ele implementa IDisposable"
+      ]
+    },
+    {
+      "version": "2.0",
+      "name": "C# 2.0",
+      "release_date": "November 2005",
+      "platform": "Visual Studio 2005",
+      "source": "CSHist p.14-15",
+      "features": [
+        "Generics",
+        "Partial types",
+        "Anonymous methods",
+        "Nullable value types",
+        "Iterators",
+        "Covariance and contravariance",
+        "Getter/setter separate accessibility",
+        "Method group conversions",
+        "Static classes",
+        "Delegate inference"
+      ],
+      "note": "",
+      "features_pt": [
+        "Genericos (Generics)",
+        "Tipos parciais (Partial types)",
+        "Metodos anonimos (Anonymous methods)",
+        "Tipos por valor anulaveis (Nullable value types)",
+        "Iteradores (Iterators)",
+        "Covariancia e contravariancia (Covariance and contravariance)",
+        "Acessibilidade separada para get/set (Getter/setter separate accessibility)",
+        "Conversoes de grupo de metodos (Method group conversions)",
+        "Classes estaticas (Static classes)",
+        "Inferencia de delegate (Delegate inference)"
+      ]
+    },
+    {
+      "version": "3.0",
+      "name": "C# 3.0",
+      "release_date": "November 2007",
+      "platform": "Visual Studio 2008 (full features with .NET Framework 3.5)",
+      "source": "CSHist p.13-14",
+      "features": [
+        "Auto-implemented properties",
+        "Anonymous types",
+        "Query expressions / LINQ",
+        "Lambda expressions",
+        "Expression trees",
+        "Extension methods",
+        "Implicitly typed local variables / var",
+        "Partial methods",
+        "Object and collection initializers"
+      ],
+      "note": "",
+      "features_pt": [
+        "Propriedades auto-implementadas (Auto-implemented properties)",
+        "Tipos anonimos (Anonymous types)",
+        "Expressoes de consulta / LINQ (Query expressions)",
+        "Expressoes lambda (Lambda expressions)",
+        "Arvores de expressao (Expression trees)",
+        "Metodos de extensao (Extension methods)",
+        "Variaveis locais com tipo implicito / var (Implicitly typed local variables)",
+        "Metodos parciais (Partial methods)",
+        "Inicializadores de objeto e colecao (Object and collection initializers)"
+      ]
+    },
+    {
+      "version": "4.0",
+      "name": "C# 4.0",
+      "release_date": "April 2010",
+      "platform": "Visual Studio 2010",
+      "source": "CSHist p.12-13",
+      "features": [
+        "Dynamic binding / dynamic",
+        "Named and optional arguments",
+        "Generic covariant and contravariant",
+        "Embedded interop types"
+      ],
+      "note": "",
+      "features_pt": [
+        "Vinculacao dinamica / dynamic (Dynamic binding)",
+        "Argumentos nomeados e opcionais (Named/optional arguments)",
+        "Covariancia e contravariancia genericas (Generic covariant and contravariant)",
+        "Tipos de interop incorporados (Embedded interop types)"
+      ]
+    },
+    {
+      "version": "5.0",
+      "name": "C# 5.0",
+      "release_date": "August 2012",
+      "platform": "Visual Studio 2012",
+      "source": "CSHist p.12",
+      "features": [
+        "Asynchronous members / async and await",
+        "Caller info attributes"
+      ],
+      "note": "",
+      "features_pt": [
+        "Membros assincronos / async e await (Asynchronous members)",
+        "Atributos de informacao do chamador (Caller info attributes)"
+      ]
+    },
+    {
+      "version": "6.0",
+      "name": "C# 6.0",
+      "release_date": "July 2015",
+      "platform": "Visual Studio 2015",
+      "source": "CSHist p.11-12",
+      "features": [
+        "Static imports",
+        "Exception filters",
+        "Auto-property initializers",
+        "Expression bodied members",
+        "Null propagator ?.",
+        "String interpolation",
+        "nameof operator",
+        "Index initializers",
+        "Await in catch/finally blocks",
+        "Default values for getter-only properties"
+      ],
+      "note": "Roslyn release: the C# compiler written in C# and usable as a service (p.12).",
+      "features_pt": [
+        "Static imports (Static imports)",
+        "Filtros de excecao (Exception filters)",
+        "Inicializadores de propriedade auto-implementada (Auto-property initializers)",
+        "Membros com corpo de expressao (Expression bodied members)",
+        "Propagador de nulo ?. (Null propagator)",
+        "Interpolacao de string (String interpolation)",
+        "Operador nameof (nameof operator)",
+        "Inicializadores de indice (Index initializers)",
+        "await em catch/finally (Await in catch/finally blocks)",
+        "Valores padrao para propriedades so com get (Default values for getter-only properties)"
+      ]
+    },
+    {
+      "version": "7.0",
+      "name": "C# 7.0",
+      "release_date": "March 2017",
+      "platform": "Visual Studio 2017",
+      "source": "CSHist p.10-11",
+      "features": [
+        "Out variables",
+        "Tuples and deconstruction",
+        "Pattern matching",
+        "Local functions",
+        "Expanded expression bodied members",
+        "Ref locals",
+        "Ref returns",
+        "Discards",
+        "Binary literals and digit separators",
+        "Throw expressions"
+      ],
+      "note": "",
+      "features_pt": [
+        "Variaveis out (Out variables)",
+        "Tuplas e desconstrucao (Tuples and deconstruction)",
+        "Pattern matching (Pattern matching)",
+        "Funcoes locais (Local functions)",
+        "Membros com corpo de expressao ampliados (Expanded expression bodied members)",
+        "Ref locals",
+        "Ref returns",
+        "Discards (Discards)",
+        "Literais binarios e separadores de digitos (Binary Literals and Digit Separators)",
+        "Throw expressions (Throw expressions)"
+      ]
+    },
+    {
+      "version": "7.1",
+      "name": "C# 7.1",
+      "release_date": "August 2017",
+      "platform": null,
+      "source": "CSHist p.10",
+      "features": [
+        "async Main method",
+        "default literal expressions",
+        "Inferred tuple element names",
+        "Pattern matching on generic type parameters"
+      ],
+      "note": "First point release; adds the language version selection option (p.10).",
+      "features_pt": [
+        "Metodo async Main (async Main method)",
+        "Expressoes literais default (default literal expressions)",
+        "Nomes de elementos de tupla inferidos (Inferred tuple element names)",
+        "Pattern matching em parametro de tipo generico (Pattern matching on generic type parameters)"
+      ]
+    },
+    {
+      "version": "7.2",
+      "name": "C# 7.2",
+      "release_date": "November 2017",
+      "platform": null,
+      "source": "CSHist p.9-10",
+      "features": [
+        "readonly struct",
+        "in modifier",
+        "ref readonly on method returns",
+        "ref struct",
+        "Non-trailing named arguments",
+        "Leading underscores in numeric literals",
+        "private protected",
+        "Conditional ref expressions"
+      ],
+      "note": "",
+      "features_pt": [
+        "readonly struct",
+        "Modificador in (in modifier)",
+        "Retorno ref readonly (ref readonly on method returns)",
+        "ref struct",
+        "Argumentos nomeados nao finais (Non-trailing named arguments)",
+        "Sublinhados iniciais em literais numericos (Leading underscores in numeric literals)",
+        "private protected",
+        "Expressoes ref condicionais (Conditional ref expressions)"
+      ]
+    },
+    {
+      "version": "7.3",
+      "name": "C# 7.3",
+      "release_date": "May 2018",
+      "platform": null,
+      "source": "CSHist p.8-9",
+      "features": [
+        "Access to fixed fields without pinning",
+        "Reassigning ref local variables",
+        "Initializers on stackalloc",
+        "fixed with any type that supports the pattern",
+        "More generic constraints",
+        "== and != on tuples",
+        "Expression variables in more places",
+        "Attributes on the backing field of auto-implemented properties",
+        "Improved overload resolution",
+        "-publicsign and -pathmap options"
+      ],
+      "note": "",
+      "features_pt": [
+        "Acesso a campos fixos sem pinning",
+        "Reatribuir variaveis locais ref",
+        "Inicializadores em stackalloc",
+        "fixed com qualquer tipo que suporte o padrao",
+        "Mais restricoes genericas",
+        "== e != em tuplas",
+        "Variaveis de expressao em mais locais",
+        "Atributos no campo de apoio de propriedades auto-implementadas",
+        "Melhor resolucao de sobrecarga",
+        "Opcoes -publicsign e -pathmap"
+      ]
+    },
+    {
+      "version": "8.0",
+      "name": "C# 8.0",
+      "release_date": "September 2019",
+      "platform": "first release targeting .NET Core (features depend on the .NET Core 3.0 CLR/libraries)",
+      "source": "CSHist p.7-8",
+      "features": [
+        "Readonly members",
+        "Default interface members",
+        "Switch expressions",
+        "Property patterns",
+        "Tuple patterns",
+        "Positional patterns",
+        "Using declarations",
+        "Static local functions",
+        "Parameter shadowing in lambdas and local functions",
+        "Disposable ref structs",
+        "Nullable reference types",
+        "Asynchronous streams",
+        "Indices and ranges",
+        "Null-coalescing assignment ??=",
+        "Unmanaged constructed types",
+        "Stackalloc in nested expressions",
+        "Improvement to interpolated verbatim strings"
+      ],
+      "note": "",
+      "features_pt": [
+        "Membros readonly (Readonly members)",
+        "Membros de interface padrao (Default interface members)",
+        "Switch expressions (Switch expressions)",
+        "Property patterns",
+        "Tuple patterns",
+        "Positional patterns",
+        "Using declarations (Using declarations)",
+        "Funcoes locais estaticas (Static local functions)",
+        "Sombreamento de parametros em lambdas e funcoes locais",
+        "ref structs descartaveis (Disposable ref structs)",
+        "Tipos de referencia anulaveis (Nullable reference types)",
+        "Streams assincronos (Asynchronous streams)",
+        "Indices e intervalos (Indices and ranges)",
+        "Atribuicao de coalescencia nula ??= (Null-coalescing assignment)",
+        "Tipos construidos nao gerenciados (Unmanaged constructed types)",
+        "stackalloc em expressoes aninhadas (Stackalloc in nested expressions)",
+        "Melhoria em strings verbatim interpoladas"
+      ]
+    },
+    {
+      "version": "9",
+      "name": "C# 9",
+      "release_date": "November 2020",
+      "platform": ".NET 5 (default language for those targeting .NET 5)",
+      "source": "CSHist p.5-7",
+      "features": [
+        "Records",
+        "Init-only setters",
+        "Top-level statements",
+        "Relational and logical patterns: and, or, not",
+        "Native sized integers nint/nuint",
+        "Function pointers",
+        "Suppress the localsinit flag",
+        "Module initializers",
+        "New features for partial methods",
+        "Target-typed new expressions",
+        "Static anonymous functions",
+        "Target-typed conditional expressions",
+        "Covariant return types",
+        "Extension GetEnumerator in foreach",
+        "Discards in lambdas",
+        "Attributes on local functions"
+      ],
+      "note": "",
+      "features_pt": [
+        "Records (Records)",
+        "Init-only setters (Init only setters)",
+        "Top-level statements (Top-level statements)",
+        "Padroes relacional e logico: and, or, not (relational and logical patterns)",
+        "Inteiros de tamanho nativo nint/nuint (Native sized integers)",
+        "Function pointers",
+        "Suprimir o flag localsinit",
+        "Module initializers",
+        "Novos recursos de metodos parciais",
+        "new com tipo alvo (Target-typed new expressions)",
+        "Funcoes anonimas estaticas (static anonymous functions)",
+        "Condicional com tipo alvo (Target-typed conditional expressions)",
+        "Tipos de retorno covariantes (Covariant return types)",
+        "GetEnumerator de extensao no foreach",
+        "Discards em lambdas",
+        "Atributos em funcoes locais"
+      ]
+    },
+    {
+      "version": "10",
+      "name": "C# 10",
+      "release_date": "November 2021",
+      "platform": ".NET 6 (runtime performance improvements are cited)",
+      "source": "CSHist p.4-5",
+      "features": [
+        "Record structs",
+        "Improvements of structure types",
+        "Interpolated string handlers",
+        "global using",
+        "File-scoped namespace declaration",
+        "Extended property patterns",
+        "Natural type of lambdas",
+        "Declared return type on lambdas",
+        "Attributes on lambdas",
+        "const interpolated strings",
+        "sealed on record ToString",
+        "More precise definite assignment and nullability analysis",
+        "Assignment and declaration in the same deconstruction",
+        "AsyncMethodBuilder on methods",
+        "CallerArgumentExpression",
+        "New #line format"
+      ],
+      "note": "Preview in C# 10: generic attributes and static abstract members in interfaces (p.5). Marks the annual cadence (p.5).",
+      "features_pt": [
+        "Record structs (Record structs)",
+        "Melhorias em tipos struct (Improvements of structure types)",
+        "Interpolated string handlers",
+        "global using",
+        "Namespace de escopo de arquivo (File-scoped namespace declaration)",
+        "Extended property patterns",
+        "Tipo natural de lambda",
+        "Tipo de retorno declarado em lambda",
+        "Atributos em lambdas",
+        "const strings interpoladas",
+        "sealed em ToString de record",
+        "Analise de atribuicao definitiva e nulidade mais precisa",
+        "Atribuicao e declaracao na mesma desconstrucao",
+        "AsyncMethodBuilder em metodos",
+        "CallerArgumentExpression",
+        "Novo formato de #line"
+      ]
+    },
+    {
+      "version": "11",
+      "name": "C# 11",
+      "release_date": "November 2022",
+      "platform": null,
+      "source": "CSHist p.3-4",
+      "features": [
+        "Raw string literals",
+        "Generic math support",
+        "Generic attributes",
+        "UTF-8 string literals",
+        "Newlines in interpolation expressions",
+        "List patterns",
+        "File-local types",
+        "Required members",
+        "Auto-default structs",
+        "Matching Span<char> against a constant string",
+        "Extended nameof scope",
+        "nint and uint as aliases of IntPtr/UIntPtr (source's wording)",
+        "ref fields and scoped ref",
+        "Improved method group to delegate conversion",
+        "Warning wave 7"
+      ],
+      "note": "The .NET version for C# 11 is not stated in the sources.",
+      "features_pt": [
+        "Raw string literals (Raw string literals)",
+        "Generic math (Generic math support)",
+        "Atributos genericos (Generic attributes)",
+        "Literais de string UTF-8 (UTF-8 string literals)",
+        "Quebras de linha em expressoes de interpolacao",
+        "List patterns (List patterns)",
+        "File-local types",
+        "Required members (membros required)",
+        "Auto-default structs",
+        "Casar Span<char> com string constante",
+        "Escopo ampliado de nameof",
+        "nint e uint como alias de IntPtr/UIntPtr (grafia da fonte)",
+        "ref fields e scoped ref",
+        "Conversao de grupo de metodos para delegate melhorada",
+        "Warning wave 7"
+      ]
+    },
+    {
+      "version": "12",
+      "name": "C# 12",
+      "release_date": "November 2023",
+      "platform": ".NET 8 (CS12 p.1)",
+      "source": "CSHist p.2-3; CS12 p.1-6",
+      "features": [
+        "Primary constructors",
+        "Collection expressions (spread ..e)",
+        "Inline arrays",
+        "Optional parameters in lambda expressions",
+        "ref readonly parameters",
+        "Alias any type",
+        "Experimental attribute",
+        "Interceptors (preview/experimental)"
+      ],
+      "note": "",
+      "features_pt": [
+        "Primary constructors (Primary constructors)",
+        "Collection expressions (Collection expressions, spread ..e)",
+        "Inline arrays (Inline arrays)",
+        "Parametros opcionais em lambdas (Optional parameters in lambda expressions)",
+        "Parametros ref readonly (ref readonly parameters)",
+        "Alias para qualquer tipo (Alias any type)",
+        "Atributo Experimental (Experimental attribute)",
+        "Interceptors (Interceptors, preview/experimental)"
+      ]
+    },
+    {
+      "version": "13",
+      "name": "C# 13",
+      "release_date": "November 2024",
+      "platform": ".NET 9 (CS13 p.1)",
+      "source": "CSHist p.2; CS13 p.1-7",
+      "features": [
+        "params collections",
+        "New lock type and semantics: System.Threading.Lock",
+        "New escape sequence \\e",
+        "Method group natural type: overload resolution optimizations",
+        "Implicit indexer access: ^ in object initializers",
+        "ref locals and unsafe in iterators and async methods",
+        "ref structs implement interfaces",
+        "allows ref struct in generics",
+        "Partial properties and indexers (partial)",
+        "Overload resolution priority (OverloadResolutionPriorityAttribute)",
+        "field contextual keyword (preview)"
+      ],
+      "note": "",
+      "features_pt": [
+        "params collections (params collections)",
+        "Novo tipo e semantica de lock: System.Threading.Lock (New lock type and semantics)",
+        "Escape \\e (New escape sequence)",
+        "Otimizacoes de resolucao de sobrecarga em grupos de metodos (Method group natural type)",
+        "Acesso ^ em inicializadores de objeto (Implicit indexer access)",
+        "ref locals e unsafe em iterators e metodos async",
+        "ref struct implementam interfaces",
+        "allows ref struct em genericos",
+        "Propriedades e indexadores parciais (partial)",
+        "Overload resolution priority (OverloadResolutionPriorityAttribute)",
+        "Palavra contextual field (preview)"
+      ]
+    },
+    {
+      "version": "14",
+      "name": "C# 14",
+      "release_date": "November 2025",
+      "platform": null,
+      "source": "CSHist p.1",
+      "features": [
+        "Extension members",
+        "Null-conditional assignment",
+        "nameof supports unbound generic types",
+        "More implicit conversions to Span<T> and ReadOnlySpan<T>",
+        "Modifiers on simple lambda parameters",
+        "Field-backed properties / field",
+        "Partial events and constructors",
+        "User-defined compound assignment operators"
+      ],
+      "note": "The .NET version for C# 14 is not stated in the sources.",
+      "features_pt": [
+        "Extension members (Extension members)",
+        "Atribuicao null-condicional (Null-conditional assignment)",
+        "nameof com tipos genericos nao vinculados (nameof supports unbound generic types)",
+        "Mais conversoes implicitas para Span<T> e ReadOnlySpan<T>",
+        "Modificadores em parametros de lambda simples",
+        "Propriedades com campo de apoio / field (field backed properties)",
+        "Eventos e construtores parciais (partial events and constructors)",
+        "Operadores compostos de atribuicao definidos pelo usuario (user-defined compound assignment operators)"
+      ]
+    }
+  ]
+}

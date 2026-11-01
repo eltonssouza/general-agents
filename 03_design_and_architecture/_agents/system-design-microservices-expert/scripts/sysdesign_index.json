@@ -1,0 +1,2542 @@
+[
+ {
+  "key": "scalability",
+  "title": "Vertical vs. horizontal scaling",
+  "coverage": "ok",
+  "keywords": [
+   "escalabilidade",
+   "scale up",
+   "scale out",
+   "vertical",
+   "horizontal",
+   "scalability",
+   "vertical vs. horizontal scaling"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.6",
+    "note": "definition of scalability",
+    "terms": [
+     "scalability is the property",
+     "growing amount of load"
+    ]
+   },
+   {
+    "cite": "SDH p.28",
+    "note": "vertical is simpler but has a physical limit and a SPOF; horizontal is nearly unlimited, with added complexity",
+    "terms": [
+     "vertical scaling",
+     "single point of failure"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.130",
+    "note": "favor scale-out; stateless services",
+    "terms": [
+     "favor scale-out",
+     "stateless"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.131",
+    "note": "avoid affinity; aggressive scale-out and conservative scale-in (5/15 min cool-down in the example)",
+    "terms": [
+     "avoid affinity",
+     "cool down period"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "availability",
+  "title": "Availability and 'nines'",
+  "coverage": "ok",
+  "keywords": [
+   "disponibilidade",
+   "availability",
+   "noves",
+   "sla",
+   "uptime",
+   "availability and 'nines'"
+  ],
+  "nota": "Series/parallel composition and MTBF/MTTR: the formulas are [extrapolation] (see analyze_tradeoffs.py).",
+  "entries": [
+   {
+    "cite": "SDH p.7",
+    "note": "Uptime/(Uptime+Downtime); the table of nines is an image (99%=3.65 d; 99.9%=8.76 h; 99.99%=52.56 min; 99.999%=5.26 min; 99.9999%=31.5 s)",
+    "terms": [
+     "uptime"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.308",
+    "note": "50 dependencies at 99.99% yield several hours of downtime per month",
+    "terms": [
+     "99.99%",
+     "50 dependencies"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.128",
+    "note": "redundancy: hardware, datacenter, region, load, backup",
+    "terms": [
+     "datacenter failure",
+     "regional failure"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "latency-throughput",
+  "title": "Latency vs. throughput",
+  "coverage": "ok",
+  "keywords": [
+   "latencia",
+   "throughput",
+   "vazao",
+   "rps",
+   "tps",
+   "latency throughput",
+   "latency vs. throughput"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.8",
+    "note": "definitions of latency and throughput (RPS/TPS)",
+    "terms": [
+     "latency refers",
+     "throughput measures"
+    ]
+   },
+   {
+    "cite": "SOA p.28",
+    "note": "4 services x 100 ms = 600 ms of transport; consolidated 200 ms",
+    "terms": [
+     "600 milliseconds",
+     "200 milli"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.79",
+    "note": "the latency of a chain is the sum of its stages",
+    "terms": [
+     "sum of the latency"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cap",
+  "title": "CAP theorem",
+  "coverage": "ok",
+  "keywords": [
+   "cap",
+   "consistencia",
+   "particao",
+   "partition",
+   "cap theorem"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.9",
+    "note": "three properties; impossible to guarantee all three",
+    "terms": [
+     "partition tolerance",
+     "most recent write"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.107",
+    "note": "CAP and a mention of PACELC",
+    "terms": [
+     "pacelc",
+     "partition tolerance"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.49",
+    "note": "microservices: choose availability; 2PC goes against the principles; NoSQL without 2PC",
+    "terms": [
+     "cap theorem",
+     "two-phase commit"
+    ]
+   },
+   {
+    "cite": "EDS p.116",
+    "note": "'consistency' is an overloaded term",
+    "terms": [
+     "consistency in cap theorem"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pacelc",
+  "title": "PACELC",
+  "coverage": "partial",
+  "keywords": [
+   "pacelc",
+   "else",
+   "latency consistency"
+  ],
+  "nota": "The four classes PC/EC, PA/EL, PC/EL, PA/EC and database examples are NOT in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-CLD p.107",
+    "note": "only mentions that CAP is commonly extended to PACELC",
+    "terms": [
+     "pacelc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "little-law",
+  "title": "Little's Law",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "little",
+   "l = lambda w",
+   "concorrencia em voo",
+   "little law",
+   "little's law"
+  ],
+  "nota": "Does not appear in any source of the corpus. [extrapolation] (queueing theory; see analyze_tradeoffs.py).",
+  "entries": []
+ },
+ {
+  "key": "tail-latency",
+  "title": "Tail latency amplification",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "cauda",
+   "tail latency",
+   "p99",
+   "tail latency amplification"
+  ],
+  "nota": "Does not appear in the corpus. [extrapolation] (1-0.99^N). Qualitative: more synchronous dependencies worsen response time (MS-MIC p.65).",
+  "entries": []
+ },
+ {
+  "key": "consistency",
+  "title": "Strong vs. eventual consistency",
+  "coverage": "ok",
+  "keywords": [
+   "consistencia eventual",
+   "eventual consistency",
+   "strong consistency",
+   "consistency",
+   "strong vs. eventual consistency"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.29",
+    "note": "strong vs. eventual",
+    "terms": [
+     "strong consistency",
+     "eventual consistency"
+    ]
+   },
+   {
+    "cite": "EDS p.118",
+    "note": "eventual consistency: timeliness and collisions",
+    "terms": [
+     "timeliness",
+     "collisions"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.44",
+    "note": "no single ACID transaction across services; eventual consistency",
+    "terms": [
+     "eventual consistency",
+     "single acid transaction"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "stateless",
+  "title": "Stateless vs. stateful",
+  "coverage": "ok",
+  "keywords": [
+   "stateless",
+   "stateful",
+   "sessao",
+   "stateless vs. stateful"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.30",
+    "note": "definitions",
+    "terms": [
+     "stateful design",
+     "stateless design"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.130",
+    "note": "stateless services to scale",
+    "terms": [
+     "stateless"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "layered",
+  "title": "Layered architecture",
+  "coverage": "ok",
+  "keywords": [
+   "camadas",
+   "layered",
+   "n-tier",
+   "layers of isolation",
+   "closed layer",
+   "layered architecture"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.8",
+    "note": "the four usual layers",
+    "terms": [
+     "layered architecture",
+     "four standard layers"
+    ]
+   },
+   {
+    "cite": "SAP p.10",
+    "note": "closed layer and layers of isolation",
+    "terms": [
+     "layers of isolation",
+     "closed"
+    ]
+   },
+   {
+    "cite": "SAP p.11",
+    "note": "open layers; JSP->JSF example",
+    "terms": [
+     "open",
+     "jsf"
+    ]
+   },
+   {
+    "cite": "SAP p.15",
+    "note": "ratings: agility Low, deployment Low",
+    "terms": [
+     "rating: low"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sinkhole",
+  "title": "Architecture sinkhole and the 80-20 rule",
+  "coverage": "ok",
+  "keywords": [
+   "sinkhole",
+   "80-20",
+   "passthrough",
+   "architecture sinkhole and the 80-20 rule"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.14",
+    "note": "sinkhole; ~20% pass-through is typical, ~80% with logic",
+    "terms": [
+     "sinkhole",
+     "20 percent",
+     "80 percent"
+    ]
+   },
+   {
+    "cite": "SAP p.15",
+    "note": "if inverted, consider open layers",
+    "terms": [
+     "open"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "eda",
+  "title": "Event-driven architecture (SAP)",
+  "coverage": "ok",
+  "keywords": [
+   "eda",
+   "evento",
+   "mediator",
+   "broker",
+   "event-driven",
+   "event-driven architecture (sap)"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.18",
+    "note": "two topologies: mediator and broker",
+    "terms": [
+     "mediator",
+     "broker"
+    ]
+   },
+   {
+    "cite": "SAP p.25",
+    "note": "no atomic transaction; contracts and versioning",
+    "terms": [
+     "atomic transactions",
+     "contract"
+    ]
+   },
+   {
+    "cite": "SAP p.26",
+    "note": "EDA ratings: testability Low, development Low",
+    "terms": [
+     "rating: low"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mediator-topology",
+  "title": "Mediator topology",
+  "coverage": "ok",
+  "keywords": [
+   "mediator",
+   "orquestracao",
+   "event mediator",
+   "mediator topology"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.19",
+    "note": "queues, mediator, channels, processors",
+    "terms": [
+     "event mediator",
+     "event channels",
+     "event processors"
+    ]
+   },
+   {
+    "cite": "SAP p.20",
+    "note": "the mediator does not execute business logic",
+    "terms": [
+     "event mediator"
+    ]
+   },
+   {
+    "cite": "SAP p.21",
+    "note": "integration hub vs. BPM: do not use the wrong one",
+    "terms": [
+     "recipe for failure"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "broker-topology",
+  "title": "Broker topology",
+  "coverage": "ok",
+  "keywords": [
+   "broker",
+   "revezamento",
+   "relay",
+   "broker topology"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.21",
+    "note": "no central mediator; lightweight broker",
+    "terms": [
+     "broker topology"
+    ]
+   },
+   {
+    "cite": "SAP p.24",
+    "note": "relay-race analogy",
+    "terms": [
+     "relay race"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "microkernel",
+  "title": "Microkernel (plug-ins)",
+  "coverage": "ok",
+  "keywords": [
+   "microkernel",
+   "plug-in",
+   "plugin",
+   "microkernel (plug-ins)"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.28",
+    "note": "core system + plug-in modules",
+    "terms": [
+     "core system",
+     "plug-in modules"
+    ]
+   },
+   {
+    "cite": "SAP p.29",
+    "note": "plug-in registry",
+    "terms": [
+     "registry"
+    ]
+   },
+   {
+    "cite": "SAP p.32",
+    "note": "first choice for products",
+    "terms": [
+     "first choice"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "microservices-sap",
+  "title": "Microservices according to the SAP",
+  "coverage": "ok",
+  "keywords": [
+   "microsservicos",
+   "service component",
+   "topologias",
+   "microservices sap",
+   "microservices according to the sap"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.34",
+    "note": "separately deployed units; service component",
+    "terms": [
+     "separately deployed units",
+     "service component"
+    ]
+   },
+   {
+    "cite": "SAP p.36",
+    "note": "three topologies: REST API, application REST, messaging",
+    "terms": [
+     "api rest-based topology",
+     "centralized messaging topology"
+    ]
+   },
+   {
+    "cite": "SAP p.40",
+    "note": "shared database; transaction compensation; orchestration signals an unsuitable pattern",
+    "terms": [
+     "shared database",
+     "compensation framework"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "space-based",
+  "title": "Space-based architecture",
+  "coverage": "ok",
+  "keywords": [
+   "space-based",
+   "processing unit",
+   "data grid",
+   "tuple",
+   "space based",
+   "space-based architecture"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SAP p.45",
+    "note": "tuple space; replicated in-memory data grids",
+    "terms": [
+     "tuple space",
+     "in-memory data grids"
+    ]
+   },
+   {
+    "cite": "SAP p.46",
+    "note": "messaging grid, data grid, processing grid, deployment manager",
+    "terms": [
+     "messaging grid",
+     "deployment manager"
+    ]
+   },
+   {
+    "cite": "SAP p.49",
+    "note": "considerations: complex and expensive",
+    "terms": [
+     "complex and expensive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "soa-vs-microservices",
+  "title": "SOA vs. microservices",
+  "coverage": "ok",
+  "keywords": [
+   "soa",
+   "esb",
+   "share as much",
+   "smart endpoints",
+   "dumb pipes",
+   "soa vs microservices",
+   "soa vs. microservices"
+  ],
+  "nota": "'Two-Pizza Teams' does not appear in any source (NOT COVERED).",
+  "entries": [
+   {
+    "cite": "SOA p.32",
+    "note": "share-as-much vs. share-as-little",
+    "terms": [
+     "share-as-much-as-possible",
+     "share-as-little-as-possible"
+    ]
+   },
+   {
+    "cite": "SOA p.40",
+    "note": "API layer vs. messaging middleware",
+    "terms": [
+     "api layer",
+     "messaging middleware"
+    ]
+   },
+   {
+    "cite": "SOA p.46",
+    "note": "when each one fits",
+    "terms": [
+     "well-suited"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.40",
+    "note": "ESB and central orchestrators: anti-patterns in microservices; SOA done right",
+    "terms": [
+     "soa done right",
+     "enterprise service bus"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.64",
+    "note": "smart endpoints and dumb pipes",
+    "terms": [
+     "smart endpoints and dumb pipes"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "orchestration-choreography",
+  "title": "Orchestration vs. choreography",
+  "coverage": "ok",
+  "keywords": [
+   "orquestracao",
+   "coreografia",
+   "orchestration",
+   "choreography",
+   "orchestration choreography",
+   "orchestration vs. choreography"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SOA p.34",
+    "note": "orchestration = central mediator",
+    "terms": [
+     "orchestration",
+     "mediator"
+    ]
+   },
+   {
+    "cite": "SOA p.35",
+    "note": "choreography = no mediator (service chaining)",
+    "terms": [
+     "choreography",
+     "service chaining"
+    ]
+   },
+   {
+    "cite": "EDS p.55",
+    "note": "pluggable choreography vs. orchestration with a process manager",
+    "terms": [
+     "choreograph",
+     "orchestration"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "monolith",
+  "title": "Monolith",
+  "coverage": "ok",
+  "keywords": [
+   "monolito",
+   "monolithic",
+   "monolith"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-WEB p.3",
+    "note": "a monolith is easier to build, deploy, and debug",
+    "terms": [
+     "monolithic",
+     "easier to build"
+    ]
+   },
+   {
+    "cite": "MS-WEB p.26",
+    "note": "definition",
+    "terms": [
+     "monolithic application"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.35",
+    "note": "scales as a whole; retest everything",
+    "terms": [
+     "monolithic"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.12",
+    "note": "cycle of fear",
+    "terms": [
+     "fear cycle"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "data-per-service",
+  "title": "Private data per service",
+  "coverage": "ok",
+  "keywords": [
+   "banco por servico",
+   "database per service",
+   "dados",
+   "shared database",
+   "data sovereignty",
+   "data per service",
+   "private data per service"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.43",
+    "note": "each microservice's data is private",
+    "terms": [
+     "private to that microservice"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.44",
+    "note": "access only via API or messaging",
+    "terms": [
+     "accessed either synchronously",
+     "loosely coupled"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.99",
+    "note": "benefits of a database per microservice",
+    "terms": [
+     "database per microservice"
+    ]
+   },
+   {
+    "cite": "JMG p.18",
+    "note": "single source of truth; avoid sharing data",
+    "terms": [
+     "single source of truth"
+    ]
+   },
+   {
+    "cite": "EDS p.8",
+    "note": "shared database = coupling point",
+    "terms": [
+     "shared database"
+    ]
+   },
+   {
+    "cite": "SAP p.40",
+    "note": "counterpoint: the SAP allows a shared database",
+    "terms": [
+     "shared database"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "distributed-monolith",
+  "title": "Distributed monolith",
+  "coverage": "ok",
+  "keywords": [
+   "monolito distribuido",
+   "chattiness",
+   "dependency cycles",
+   "distributed monolith"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "JMG p.18",
+    "note": "danger of the distributed monolith",
+    "terms": [
+     "distributed monolith"
+    ]
+   },
+   {
+    "cite": "JMG p.19",
+    "note": "chattiness, cycles, sharing",
+    "terms": [
+     "chattiness",
+     "dependency cycles"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "api-gateway",
+  "title": "API Gateway",
+  "coverage": "ok",
+  "keywords": [
+   "gateway",
+   "api gateway",
+   "ponto unico",
+   "reverse proxy"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.57",
+    "note": "definition (facade, BFF, reverse proxy)",
+    "terms": [
+     "api gateway",
+     "facade"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.59",
+    "note": "L7 routing and modernization of a monolithic API",
+    "terms": [
+     "reverse proxy",
+     "layer 7"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.60",
+    "note": "request aggregation and offloading",
+    "terms": [
+     "requests aggregation",
+     "rate limiting"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.62",
+    "note": "risks: new ESB, SPOF, bottleneck",
+    "terms": [
+     "the new esb",
+     "single point of failure"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.71",
+    "note": "thin gateway, no business logic",
+    "terms": [
+     "api gateway"
+    ]
+   },
+   {
+    "cite": "JMG p.115",
+    "note": "definition and motivation",
+    "terms": [
+     "api gateway"
+    ]
+   },
+   {
+    "cite": "APIGW p.8",
+    "note": "single, consistent entry point",
+    "terms": [
+     "entry point"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bff",
+  "title": "Backend for Frontend",
+  "coverage": "ok",
+  "keywords": [
+   "bff",
+   "backend for frontend"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.58",
+    "note": "split the gateway by client type",
+    "terms": [
+     "backend for frontend"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.71",
+    "note": "BFF with several gateways",
+    "terms": [
+     "backend for frontends"
+    ]
+   },
+   {
+    "cite": "JMG p.119",
+    "note": "BFF and risks",
+    "terms": [
+     "backends for frontends"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nginx-lua",
+  "title": "NGINX: cost of Lua scripts",
+  "coverage": "ok",
+  "keywords": [
+   "lua",
+   "nginx",
+   "50%",
+   "90%",
+   "nginx lua",
+   "nginx: cost of lua scripts"
+  ],
+  "nota": "Vendor measurement for simple scripts; validate peak performance.",
+  "entries": [
+   {
+    "cite": "APIGW p.4",
+    "note": "three forms; Lua reduces performance by 50% to 90% in F5/NGINX tests with simple scripts",
+    "terms": [
+     "50% to 90%",
+     "lua"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "nginx-rate-limit",
+  "title": "NGINX: rate limiting",
+  "coverage": "ok",
+  "keywords": [
+   "rate limit",
+   "limit_req",
+   "429",
+   "nginx rate limit",
+   "nginx: rate limiting"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "APIGW p.22",
+    "note": "limit_req_zone; the text says 10 r/s and the code shows 1r/s",
+    "terms": [
+     "limit_req_zone",
+     "rate=1r/s"
+    ]
+   },
+   {
+    "cite": "APIGW p.23",
+    "note": "503 by default; 429 with limit_req_status",
+    "terms": [
+     "429"
+    ]
+   },
+   {
+    "cite": "APIGW p.29",
+    "note": "default maximum body of 1 MB",
+    "terms": [
+     "1 mb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "load-balancing",
+  "title": "Load balancing",
+  "coverage": "ok",
+  "keywords": [
+   "load balancer",
+   "round robin",
+   "least connections",
+   "l7",
+   "layer 7",
+   "load balancing"
+  ],
+  "nota": "L4 is not described in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "SDH p.10",
+    "note": "RR, Weighted RR, Least Connections, Least Response Time, IP Hash",
+    "terms": [
+     "round robin",
+     "least connections",
+     "ip hash"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.73",
+    "note": "L7: routes by HTTP content",
+    "terms": [
+     "layer-7"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.59",
+    "note": "layer 7 routing",
+    "terms": [
+     "layer 7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "service-discovery",
+  "title": "Service discovery",
+  "coverage": "ok",
+  "keywords": [
+   "service discovery",
+   "registry",
+   "eureka"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.24",
+    "note": "registry as the single source of truth",
+    "terms": [
+     "service registry"
+    ]
+   },
+   {
+    "cite": "JMG p.110",
+    "note": "Eureka and others",
+    "terms": [
+     "eureka"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rest",
+  "title": "REST and HTTP semantics",
+  "coverage": "ok",
+  "keywords": [
+   "rest",
+   "http",
+   "idempotente",
+   "seguro",
+   "safe",
+   "get",
+   "post",
+   "rest and http semantics"
+  ],
+  "nota": "Richardson Maturity Model: only cited as further reading (MS-MIC p.68).",
+  "entries": [
+   {
+    "cite": "JMG p.21",
+    "note": "six constraints; method mapping",
+    "terms": [
+     "uniform interface",
+     "statelessness"
+    ]
+   },
+   {
+    "cite": "JMG p.22",
+    "note": "idempotency and safety of the methods",
+    "terms": [
+     "idempotent",
+     "safe"
+    ]
+   },
+   {
+    "cite": "SDH p.35",
+    "note": "REST vs. RPC",
+    "terms": [
+     "representational state transfer"
+    ]
+   },
+   {
+    "cite": "REST p.27",
+    "note": "status codes in Spring (405, 200)",
+    "terms": [
+     "405",
+     "200 ok"
+    ]
+   },
+   {
+    "cite": "REST p.35",
+    "note": "Accept/Content-Type content negotiation",
+    "terms": [
+     "accept header",
+     "content-type"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "hateoas",
+  "title": "HATEOAS and discoverability",
+  "coverage": "ok",
+  "keywords": [
+   "hateoas",
+   "discoverability",
+   "link header",
+   "hateoas and discoverability"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "REST p.78",
+    "note": "discoverability and HATEOAS",
+    "terms": [
+     "hateoas",
+     "discoverab"
+    ]
+   },
+   {
+    "cite": "REST p.86",
+    "note": "Spring HATEOAS",
+    "terms": [
+     "spring hateoas"
+    ]
+   },
+   {
+    "cite": "REST p.102",
+    "note": "pagination with the Link header",
+    "terms": [
+     "link http header"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "richardson",
+  "title": "Richardson Maturity Model",
+  "coverage": "partial",
+  "keywords": [
+   "richardson",
+   "maturity",
+   "richardson maturity model"
+  ],
+  "nota": "Levels 0-3 are not described in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-MIC p.68",
+    "note": "only a further-reading link",
+    "terms": [
+     "richardson maturity model"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "grpc",
+  "title": "gRPC and Protocol Buffers",
+  "coverage": "ok",
+  "keywords": [
+   "grpc",
+   "protobuf",
+   "http/2",
+   "grpc and protocol buffers"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.90",
+    "note": "HTTP/2: binary framing, multiplexing, full-duplex, streaming",
+    "terms": [
+     "http/2",
+     "multiplexing"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.91",
+    "note": "up to 8x faster than JSON, messages 60-80% smaller",
+    "terms": [
+     "8x faster",
+     "60-80%"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.92",
+    "note": "when to favor gRPC",
+    "terms": [
+     "favor grpc"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.94",
+    "note": "first choice for direct synchronous communication between services",
+    "terms": [
+     "primary choice"
+    ]
+   },
+   {
+    "cite": "JMG p.24",
+    "note": "gRPC uses HTTP/2 and protocol buffers",
+    "terms": [
+     "protocol buffers"
+    ]
+   },
+   {
+    "cite": "APIGW p.34",
+    "note": "NGINX as a gRPC gateway",
+    "terms": [
+     "grpc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "message-queues",
+  "title": "Message queues",
+  "coverage": "ok",
+  "keywords": [
+   "fila",
+   "queue",
+   "mensageria",
+   "ponto a ponto",
+   "message queues"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.13",
+    "note": "definition",
+    "terms": [
+     "message queue"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.82",
+    "note": "the queue ensures that one consumer instance processes the message",
+    "terms": [
+     "exactly one of the consumer instances"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.70",
+    "note": "single receiver; idempotency required",
+    "terms": [
+     "single-receiver"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pubsub",
+  "title": "Publish/subscribe and event bus",
+  "coverage": "ok",
+  "keywords": [
+   "pub/sub",
+   "topico",
+   "event bus",
+   "pubsub",
+   "publish/subscribe and event bus"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.85",
+    "note": "topics: one-to-many",
+    "terms": [
+     "publish/subscribe",
+     "topic"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.71",
+    "note": "event bus; subscribers without changing the sender",
+    "terms": [
+     "publish/subscribe",
+     "event bus"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.72",
+    "note": "messaging technologies",
+    "terms": [
+     "rabbitmq",
+     "azure service bus"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kafka-log",
+  "title": "Kafka: partitioned log and ordering",
+  "coverage": "ok",
+  "keywords": [
+   "kafka",
+   "particao",
+   "partition",
+   "ordem",
+   "offset",
+   "kafka log",
+   "kafka: partitioned log and ordering"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "EDS p.32",
+    "note": "partitioned, append-only log",
+    "terms": [
+     "partitioned log"
+    ]
+   },
+   {
+    "cite": "EDS p.34",
+    "note": "partitions and key-based partitioner",
+    "terms": [
+     "partitioner"
+    ]
+   },
+   {
+    "cite": "EDS p.36",
+    "note": "ordering only within the partition",
+    "terms": [
+     "only within a partition"
+    ]
+   },
+   {
+    "cite": "EDS p.37",
+    "note": "global ordering requires a single partition",
+    "terms": [
+     "single partition"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "consumer-group",
+  "title": "Consumer groups",
+  "coverage": "ok",
+  "keywords": [
+   "consumer group",
+   "grupo de consumidores",
+   "consumer groups"
+  ],
+  "nota": "Parallelism ceiling = number of partitions is [inference].",
+  "entries": [
+   {
+    "cite": "EDS p.35",
+    "note": "the group divides the partitions",
+    "terms": [
+     "consumer group"
+    ]
+   },
+   {
+    "cite": "EDS p.39",
+    "note": "one partition per consumer instance (invariant)",
+    "terms": [
+     "single service instance"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "compacted-topic",
+  "title": "Compacted topics and deletion",
+  "coverage": "ok",
+  "keywords": [
+   "compactacao",
+   "compacted",
+   "tombstone",
+   "delete",
+   "compacted topic",
+   "compacted topics and deletion"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "EDS p.39",
+    "note": "keeps the latest event per key",
+    "terms": [
+     "compacted topics"
+    ]
+   },
+   {
+    "cite": "EDS p.142",
+    "note": "default retention of two weeks; delete with null",
+    "terms": [
+     "two weeks",
+     "null value"
+    ]
+   },
+   {
+    "cite": "EDS p.143",
+    "note": "compaction removes the message with a null value",
+    "terms": [
+     "null value"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "event-types",
+  "title": "Event notification vs. event-carried state transfer",
+  "coverage": "ok",
+  "keywords": [
+   "notification",
+   "event-carried",
+   "estado",
+   "evento",
+   "event types",
+   "event notification vs. event-carried state transfer"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "EDS p.46",
+    "note": "an event is a fact and a notification",
+    "terms": [
+     "fact and a notification"
+    ]
+   },
+   {
+    "cite": "EDS p.50",
+    "note": "events for notification (iPad example)",
+    "terms": [
+     "notification"
+    ]
+   },
+   {
+    "cite": "EDS p.52",
+    "note": "event-carried state transfer",
+    "terms": [
+     "event-carried state transfer"
+    ]
+   },
+   {
+    "cite": "EDS p.53",
+    "note": "trade-offs: autonomy vs. simplicity",
+    "terms": [
+     "isolation and autonomy"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "event-sourcing",
+  "title": "Event Sourcing",
+  "coverage": "ok",
+  "keywords": [
+   "event sourcing",
+   "event store",
+   "replay"
+  ],
+  "nota": "Periodic snapshots are not in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "EDS p.70",
+    "note": "immutable log; re-derive state",
+    "terms": [
+     "event sourcing"
+    ]
+   },
+   {
+    "cite": "EDS p.74",
+    "note": "'accountants don't use erasers'",
+    "terms": [
+     "erasers"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.104",
+    "note": "event store as the system of record",
+    "terms": [
+     "event store"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.159",
+    "note": "requires restructuring the system",
+    "terms": [
+     "rearchitect"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cqrs",
+  "title": "CQRS",
+  "coverage": "ok",
+  "keywords": [
+   "cqrs",
+   "cqs",
+   "read model",
+   "leitura escrita"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "EDS p.76",
+    "note": "write-ahead log as an analogy",
+    "terms": [
+     "write-ahead log"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.200",
+    "note": "CQS/CQRS (Meyer, Young, Dahan); simplified version",
+    "terms": [
+     "greg young",
+     "cqs"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.202",
+    "note": "CQRS/DDD are not top-level styles; do not use everywhere",
+    "terms": [
+     "not architectural styles"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.103",
+    "note": "separate read/write; eventual consistency",
+    "terms": [
+     "cqrs"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "materialized-view",
+  "title": "Materialized View",
+  "coverage": "ok",
+  "keywords": [
+   "materialized view",
+   "visao materializada"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.79",
+    "note": "removes coupling between services",
+    "terms": [
+     "materialized view"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.101",
+    "note": "local read model",
+    "terms": [
+     "materialized view",
+     "read model"
+    ]
+   },
+   {
+    "cite": "EDS p.77",
+    "note": "views derived from the log",
+    "terms": [
+     "materialized view"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "saga",
+  "title": "Saga",
+  "coverage": "ok",
+  "keywords": [
+   "saga",
+   "compensacao",
+   "transacao distribuida"
+  ],
+  "nota": "The pivot/compensable/retryable classification is NOT in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-CLD p.102",
+    "note": "local + compensating transactions",
+    "terms": [
+     "saga",
+     "compensating transactions"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.103",
+    "note": "choreographed by events or orchestrated by commands",
+    "terms": [
+     "choreographed",
+     "orchestrated"
+    ]
+   },
+   {
+    "cite": "JMG p.63",
+    "note": "definition and frameworks (Axon, Eventuate Tram)",
+    "terms": [
+     "saga is a sequence of local transactions",
+     "axon"
+    ]
+   },
+   {
+    "cite": "EDS p.134",
+    "note": "for multi-service transactions, consider sagas",
+    "terms": [
+     "sagas"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.149",
+    "note": "Sagas as a feature of service buses",
+    "terms": [
+     "sagas"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "starbucks-2pc",
+  "title": "Starbucks and 2PC",
+  "coverage": "ok",
+  "keywords": [
+   "starbucks",
+   "2pc",
+   "two-phase",
+   "hohpe",
+   "starbucks 2pc",
+   "starbucks and 2pc"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SBC p.1",
+    "note": "cup queue, Competing Consumer, correlation",
+    "terms": [
+     "competing consumer",
+     "correlation"
+    ]
+   },
+   {
+    "cite": "SBC p.2",
+    "note": "write-off, retry, idempotent receiver",
+    "terms": [
+     "write-off",
+     "idempotent receiver"
+    ]
+   },
+   {
+    "cite": "SBC p.3",
+    "note": "compensating action; 2PC would kill the business; conversation",
+    "terms": [
+     "compensating action",
+     "two-phase commit"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "write-off-retry-compensation",
+  "title": "Write-off, retry, and compensation",
+  "coverage": "ok",
+  "keywords": [
+   "write-off",
+   "retry",
+   "compensacao",
+   "write off retry compensation",
+   "write-off, retry, and compensation"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SBC p.2",
+    "note": "write-off and retry",
+    "terms": [
+     "write-off",
+     "retry"
+    ]
+   },
+   {
+    "cite": "SBC p.3",
+    "note": "compensating action",
+    "terms": [
+     "compensating action"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "outbox",
+  "title": "Transactional Outbox",
+  "coverage": "ok",
+  "keywords": [
+   "outbox",
+   "atomicidade",
+   "cdc",
+   "dual write",
+   "transactional outbox"
+  ],
+  "nota": "'Debezium' and 'Message Relay' are names external to the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-MIC p.73",
+    "note": "Outbox among the resilient publishing options",
+    "terms": [
+     "outbox pattern"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.158",
+    "note": "the database+event atomicity problem",
+    "terms": [
+     "atomically"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.159",
+    "note": "IntegrationEvent table and local transaction",
+    "terms": [
+     "integrationevent table",
+     "local transaction"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.160",
+    "note": "publish and mark; table as a queue with a worker",
+    "terms": [
+     "worker"
+    ]
+   },
+   {
+    "cite": "EDS p.82",
+    "note": "CDC reads the database write log",
+    "terms": [
+     "change data capture"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "idempotency",
+  "title": "Idempotency",
+  "coverage": "ok",
+  "keywords": [
+   "idempotencia",
+   "idempotent",
+   "duplicata",
+   "deduplicacao",
+   "idempotency"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.164",
+    "note": "idempotent update events",
+    "terms": [
+     "idempotency"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.165",
+    "note": "example 'set price = 25'; identity per event",
+    "terms": [
+     "product price to $25"
+    ]
+   },
+   {
+    "cite": "EDS p.127",
+    "note": "retries produce duplicates (double payment)",
+    "terms": [
+     "duplicate"
+    ]
+   },
+   {
+    "cite": "SBC p.2",
+    "note": "Idempotent Receiver",
+    "terms": [
+     "idempotent receiver"
+    ]
+   },
+   {
+    "cite": "JMG p.60",
+    "note": "idempotency on both sides of the retry",
+    "terms": [
+     "idempotency"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "exactly-once",
+  "title": "Exactly once (Kafka)",
+  "coverage": "ok",
+  "keywords": [
+   "exactly once",
+   "transacoes",
+   "kafka",
+   "exactly once (kafka)"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "EDS p.130",
+    "note": "exactly once = idempotency + atomic commit",
+    "terms": [
+     "exactly once is both idempotence and atomic commit"
+    ]
+   },
+   {
+    "cite": "EDS p.132",
+    "note": "transaction coordinator; ~3% overhead in the example",
+    "terms": [
+     "transaction coordinator",
+     "3%"
+    ]
+   },
+   {
+    "cite": "EDS p.134",
+    "note": "limitations: only valid inside Kafka",
+    "terms": [
+     "only in situations"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "circuit-breaker",
+  "title": "Circuit Breaker",
+  "coverage": "ok",
+  "keywords": [
+   "circuit breaker",
+   "disjuntor",
+   "half-open"
+  ],
+  "nota": "The names Closed/Open/Half-Open do not appear in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-MIC p.309",
+    "note": "definition",
+    "terms": [
+     "circuit breaker"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.322",
+    "note": "example: 5 consecutive failures, 30 s",
+    "terms": [
+     "five consecutive faults",
+     "30 seconds"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.126",
+    "note": "blocks traffic after N failures and allows a trial call",
+    "terms": [
+     "circuit breaker",
+     "trial call"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.127",
+    "note": "figure: 100 failures, 30 s CheckCircuit",
+    "terms": [
+     "100 failed requests",
+     "checkcircuit"
+    ]
+   },
+   {
+    "cite": "SOA p.16",
+    "note": "avoids waiting for timeouts; Ribbon; Release It!",
+    "terms": [
+     "circuit breaker"
+    ]
+   },
+   {
+    "cite": "JMG p.61",
+    "note": "CB + fallback; Hystrix",
+    "terms": [
+     "hystrix"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "half-open",
+  "title": "Half-Open (name)",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "half-open",
+   "half open",
+   "semi-aberto",
+   "half-open (name)"
+  ],
+  "nota": "The term 'Half-Open' does not appear in the corpus.",
+  "entries": [
+   {
+    "cite": "MS-CLD p.126",
+    "note": "the behavior (periodic trial call) is described without the name",
+    "terms": [
+     "trial call"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "retry-backoff",
+  "title": "Retry with exponential backoff",
+  "coverage": "ok",
+  "keywords": [
+   "retry",
+   "backoff",
+   "tentativas",
+   "retry backoff",
+   "retry with exponential backoff"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.310",
+    "note": "definition",
+    "terms": [
+     "exponential backoff"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.320",
+    "note": "Polly example: 6 attempts, 2^n seconds",
+    "terms": [
+     "six times",
+     "exponential"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.125",
+    "note": "example: up to 4 retries, 2 s doubling",
+    "terms": [
+     "four retries"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.124",
+    "note": "transient statuses to retry; 403 is not",
+    "terms": [
+     "429",
+     "503"
+    ]
+   },
+   {
+    "cite": "JMG p.60",
+    "note": "backoff vs. fixed interval; thundering herd",
+    "terms": [
+     "thundering herd"
+    ]
+   },
+   {
+    "cite": "SDH p.59",
+    "note": "retry with exponential backoff",
+    "terms": [
+     "exponential backoff"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jitter",
+  "title": "Jitter",
+  "coverage": "partial",
+  "keywords": [
+   "jitter",
+   "full jitter"
+  ],
+  "nota": "The 'full jitter' formula uniform(0, min(cap, base*2^n)) is NOT in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "MS-MIC p.320",
+    "note": "recommends jitter in the retry policy",
+    "terms": [
+     "jitter"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.321",
+    "note": "DecorrelatedJitterBackoffV2 example",
+    "terms": [
+     "decorrelatedjitterbackoffv2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "timeout",
+  "title": "Timeouts",
+  "coverage": "ok",
+  "keywords": [
+   "timeout",
+   "tempo limite",
+   "timeouts"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.307",
+    "note": "a synchronous RPC without a timeout blocks threads",
+    "terms": [
+     "timeout"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.309",
+    "note": "clients must not block indefinitely",
+    "terms": [
+     "timeouts"
+    ]
+   },
+   {
+    "cite": "SOA p.16",
+    "note": "example 2,000 ms -> 4,000 ms and its problems",
+    "terms": [
+     "4,000 milliseconds"
+    ]
+   },
+   {
+    "cite": "SOA p.17",
+    "note": "avoid global timeouts; per context and configurable",
+    "terms": [
+     "context-based timeout"
+    ]
+   },
+   {
+    "cite": "JMG p.59",
+    "note": "there is no magic number; the SLA guides it",
+    "terms": [
+     "magic number"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bulkhead",
+  "title": "Bulkhead",
+  "coverage": "ok",
+  "keywords": [
+   "bulkhead",
+   "isolamento",
+   "anteparo"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.309",
+    "note": "limit the queue of pending requests (Polly Bulkhead)",
+    "terms": [
+     "bulkhead"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.310",
+    "note": "BulkheadPolicy exposes occupancy and events",
+    "terms": [
+     "bulkheadpolicy"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.124",
+    "note": "Bulkhead policy",
+    "terms": [
+     "bulkhead"
+    ]
+   },
+   {
+    "cite": "JMG p.60",
+    "note": "naval analogy and dedicated pools",
+    "terms": [
+     "bulkhead",
+     "ship"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "health-checks",
+  "title": "Health checks, liveness, and readiness",
+  "coverage": "ok",
+  "keywords": [
+   "health",
+   "liveness",
+   "readiness",
+   "heartbeat",
+   "health checks",
+   "health checks, liveness, and readiness"
+  ],
+  "nota": "Kubernetes probe rules (e.g., do not check the database in liveness) are [extrapolation].",
+  "entries": [
+   {
+    "cite": "MS-MIC p.79",
+    "note": "liveness vs. readiness",
+    "terms": [
+     "liveness",
+     "readiness"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.326",
+    "note": "example: healthy = API reachable and database available",
+    "terms": [
+     "healthy"
+    ]
+   },
+   {
+    "cite": "JMG p.59",
+    "note": "health endpoint",
+    "terms": [
+     "health check"
+    ]
+   },
+   {
+    "cite": "SDH p.22",
+    "note": "heartbeats",
+    "terms": [
+     "heartbeat"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "service-mesh",
+  "title": "Service mesh and sidecar",
+  "coverage": "ok",
+  "keywords": [
+   "service mesh",
+   "sidecar",
+   "istio",
+   "envoy",
+   "service mesh and sidecar"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.95",
+    "note": "definition and sidecar",
+    "terms": [
+     "service mesh",
+     "sidecar"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.134",
+    "note": "retry, instance eviction, Istio",
+    "terms": [
+     "istio"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.306",
+    "note": "eShopOnContainers moved HTTP resilience to Linkerd",
+    "terms": [
+     "linkerd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "twelve-factor",
+  "title": "Twelve factors",
+  "coverage": "ok",
+  "keywords": [
+   "12 fatores",
+   "twelve-factor",
+   "12-factor",
+   "twelve factor",
+   "twelve factors"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.16",
+    "note": "factors 1 to 4",
+    "terms": [
+     "twelve-factor",
+     "code base"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.17",
+    "note": "factors 5 to 12",
+    "terms": [
+     "disposability",
+     "admin processes"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "observability",
+  "title": "Observability: logs, metrics, alerts",
+  "coverage": "ok",
+  "keywords": [
+   "observabilidade",
+   "logs",
+   "metricas",
+   "alertas",
+   "monitoramento",
+   "observability",
+   "observability: logs, metrics, alerts"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-CLD p.136",
+    "note": "logging, monitoring, and alerts",
+    "terms": [
+     "logging",
+     "monitoring",
+     "alerts"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.139",
+    "note": "centralized logs; correlation ID; single format",
+    "terms": [
+     "correlation id"
+    ]
+   },
+   {
+    "cite": "JMG p.129",
+    "note": "definition of observability",
+    "terms": [
+     "observability"
+    ]
+   },
+   {
+    "cite": "JMG p.144",
+    "note": "cost of metrics",
+    "terms": [
+     "time series"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "distributed-tracing",
+  "title": "Distributed tracing",
+  "coverage": "ok",
+  "keywords": [
+   "tracing",
+   "trace",
+   "zipkin",
+   "opentelemetry",
+   "w3c",
+   "distributed tracing"
+  ],
+  "nota": "[DATED] OpenTelemetry/Trace Context are consolidated standards today (external knowledge).",
+  "entries": [
+   {
+    "cite": "JMG p.145",
+    "note": "definition; Dapper",
+    "terms": [
+     "distributed tracing",
+     "dapper"
+    ]
+   },
+   {
+    "cite": "JMG p.146",
+    "note": "context propagation; Zipkin",
+    "terms": [
+     "zipkin"
+    ]
+   },
+   {
+    "cite": "JMG p.141",
+    "note": "OpenTelemetry only as a draft at the time of the book",
+    "terms": [
+     "opentelemetry"
+    ]
+   },
+   {
+    "cite": "JMG p.152",
+    "note": "W3C Trace Context as a draft",
+    "terms": [
+     "trace context"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "caching",
+  "title": "Cache: strategies and eviction",
+  "coverage": "ok",
+  "keywords": [
+   "cache",
+   "read-through",
+   "write-through",
+   "cache-aside",
+   "lru",
+   "caching",
+   "cache: strategies and eviction"
+  ],
+  "nota": "write-behind, cache thundering herd, and XFetch are not in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "SDH p.16",
+    "note": "read-through, write-through, write-back, cache-aside",
+    "terms": [
+     "read-through",
+     "cache-aside"
+    ]
+   },
+   {
+    "cite": "SDH p.17",
+    "note": "LRU, LFU, FIFO, TTL",
+    "terms": [
+     "least recently used",
+     "first in, first out"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.119",
+    "note": "cache-aside in cloud-native",
+    "terms": [
+     "cache-aside"
+    ]
+   },
+   {
+    "cite": "SDH p.32",
+    "note": "read-through vs. write-through",
+    "terms": [
+     "write-through"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "consistent-hashing",
+  "title": "Consistent hashing",
+  "coverage": "ok",
+  "keywords": [
+   "consistent hashing",
+   "hash consistente",
+   "anel"
+  ],
+  "nota": "Vnodes and the K/n formula are NOT in the SDH ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "SDH p.18",
+    "note": "ring, clockwise, a small part is reassigned",
+    "terms": [
+     "consistent hashing",
+     "clockwise"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "sharding",
+  "title": "Sharding",
+  "coverage": "ok",
+  "keywords": [
+   "sharding",
+   "shard",
+   "particionamento"
+  ],
+  "nota": "Range/hash/directory strategies are NOT in the corpus ([extrapolation]).",
+  "entries": [
+   {
+    "cite": "SDH p.19",
+    "note": "definition",
+    "terms": [
+     "sharding"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.108",
+    "note": "costs: joins, transactions, and referential integrity",
+    "terms": [
+     "sharding"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "bloom-filter",
+  "title": "Bloom filter",
+  "coverage": "ok",
+  "keywords": [
+   "bloom",
+   "bloom filter"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.25",
+    "note": "bit vector and k hashes; definitely absent / possibly present",
+    "terms": [
+     "bloom filter",
+     "false positive"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "consensus",
+  "title": "Consensus (Paxos and Raft)",
+  "coverage": "ok",
+  "keywords": [
+   "paxos",
+   "raft",
+   "consenso",
+   "consensus",
+   "consensus (paxos and raft)"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "SDH p.20",
+    "note": "Paxos and Raft, one line each",
+    "terms": [
+     "paxos",
+     "raft"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rate-limiting",
+  "title": "Rate limiting",
+  "coverage": "ok",
+  "keywords": [
+   "rate limit",
+   "token bucket",
+   "leaky bucket",
+   "throttling",
+   "rate limiting"
+  ],
+  "nota": "The token bucket simulation in calc_rate_limit.py is [extrapolation] (the SDH only lists it).",
+  "entries": [
+   {
+    "cite": "SDH p.14",
+    "note": "list of algorithms (token bucket, leaky bucket, windows)",
+    "terms": [
+     "token bucket",
+     "leaky bucket"
+    ]
+   },
+   {
+    "cite": "APIGW p.22",
+    "note": "limit_req_zone",
+    "terms": [
+     "limit_req_zone"
+    ]
+   },
+   {
+    "cite": "JMG p.62",
+    "note": "delegate rate limiting to gateways",
+    "terms": [
+     "rate limiting"
+    ]
+   },
+   {
+    "cite": "MS-MIC p.60",
+    "note": "rate limiting and throttling as gateway offloading",
+    "terms": [
+     "rate limiting"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "polyglot",
+  "title": "Polyglot persistence",
+  "coverage": "ok",
+  "keywords": [
+   "poliglota",
+   "polyglot",
+   "polyglot persistence"
+  ],
+  "nota": "",
+  "entries": [
+   {
+    "cite": "MS-MIC p.44",
+    "note": "polyglot persistence",
+    "terms": [
+     "polyglot persistence"
+    ]
+   },
+   {
+    "cite": "MS-CLD p.99",
+    "note": "examples per service",
+    "terms": [
+     "polyglot"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "strangler-fig",
+  "title": "Strangler Fig",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "strangler",
+   "decomposicao",
+   "strangler fig"
+  ],
+  "nota": "The name 'Strangler Fig' does not appear in the corpus.",
+  "entries": [
+   {
+    "cite": "MS-MIC p.59",
+    "note": "a gateway between clients and the monolithic API allows adding services without changing URIs",
+    "terms": [
+     "monolithic api"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pivot-transaction",
+  "title": "Pivot / compensable / retryable transaction",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "pivo",
+   "pivot",
+   "compensavel",
+   "repetivel",
+   "pivot transaction",
+   "pivot / compensable / retryable transaction"
+  ],
+  "nota": "Richardson's classification, outside the corpus. Compensation: MS-CLD p.102; idempotent retry: SBC p.2.",
+  "entries": []
+ },
+ {
+  "key": "two-pizza",
+  "title": "Two-Pizza Teams",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "two-pizza",
+   "two pizza",
+   "two-pizza teams"
+  ],
+  "nota": "Does not appear in any source of the corpus.",
+  "entries": []
+ },
+ {
+  "key": "helland",
+  "title": "Life Beyond Distributed Transactions",
+  "coverage": "NOT COVERED",
+  "keywords": [
+   "helland",
+   "life beyond",
+   "life beyond distributed transactions"
+  ],
+  "nota": "Not in the corpus (the previous package description mentioned it improperly).",
+  "entries": []
+ }
+]

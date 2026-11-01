@@ -1,0 +1,3714 @@
+{
+ "meta": {
+  "versao": "1.0.0",
+  "fontes": {
+   "LGPD": "Lei nº 13.709 of 14 August 2018 (LGPD), compiled text from the PDF 'LGPD-Lei-13709-ptBR.pdf' (25 pages); contains amendment notes from Laws 13.853/2019, 14.010/2020, 14.460/2022 and 15.352/2026 as stated in the PDF itself.",
+   "NIST8062": "NISTIR 8062, An Introduction to Privacy Engineering and Risk Management in Federal Systems (Jan/2017; 49 PDF pages)."
+  },
+  "convencao_paginas": {
+   "LGPD": "PDF page (marker === PAGE N ===, 1-25). The PDF has no printed numbering of its own; always cite Art./inciso (item) and PDF page.",
+   "NIST8062": "PDF page; in the body, printed = PDF - 8 (PDF 9 = printed 1; PDF 49 = printed 41). Front matter in roman numerals: PDF 4 = ii ... PDF 8 = vi."
+  },
+  "aviso": "This material is not legal advice. Refer to a lawyer/encarregado (DPO) for decisions on concrete cases and check the current version of the law and the ANPD regulations."
+ },
+ "capitulos": [
+  {
+   "cap": "I",
+   "titulo": "Preliminary provisions (Disposições preliminares)",
+   "arts": "1-6",
+   "paginas": [
+    1,
+    4
+   ]
+  },
+  {
+   "cap": "II",
+   "titulo": "Processing of personal data (Do tratamento de dados pessoais) (Section I requirements Art. 7-10; Section II sensitive data Art. 11-13; Section III children and adolescents Art. 14; Section IV termination Art. 15-16)",
+   "arts": "7-16",
+   "paginas": [
+    4,
+    8
+   ]
+  },
+  {
+   "cap": "III",
+   "titulo": "Data subject rights (Dos direitos do titular)",
+   "arts": "17-22",
+   "paginas": [
+    8,
+    11
+   ]
+  },
+  {
+   "cap": "IV",
+   "titulo": "Processing by Public Authorities (Do tratamento pelo Poder Público) (Section I rules Art. 23-30; Section II liability Art. 31-32)",
+   "arts": "23-32",
+   "paginas": [
+    10,
+    12
+   ]
+  },
+  {
+   "cap": "V",
+   "titulo": "International data transfer (Da transferência internacional de dados)",
+   "arts": "33-36",
+   "paginas": [
+    12,
+    13
+   ]
+  },
+  {
+   "cap": "VI",
+   "titulo": "Processing agents (Dos agentes de tratamento) (Section I controller and processor Art. 37-40; Section II encarregado Art. 41; Section III liability and compensation Art. 42-45)",
+   "arts": "37-45",
+   "paginas": [
+    13,
+    15
+   ]
+  },
+  {
+   "cap": "VII",
+   "titulo": "Security and good practices (Da segurança e das boas práticas) (Section I security and confidentiality Art. 46-49; Section II good practices and governance Art. 50-51)",
+   "arts": "46-51",
+   "paginas": [
+    15,
+    17
+   ]
+  },
+  {
+   "cap": "VIII",
+   "titulo": "Enforcement (Da fiscalização) (Section I administrative sanctions Art. 52-54)",
+   "arts": "52-54",
+   "paginas": [
+    17,
+    19
+   ]
+  },
+  {
+   "cap": "IX",
+   "titulo": "The ANPD and the National Council for the Protection of Personal Data and Privacy (Da ANPD e do Conselho Nacional de Proteção de Dados Pessoais e da Privacidade) (title as worded by Lei 15.352/2026)",
+   "arts": "55-59",
+   "paginas": [
+    19,
+    24
+   ]
+  },
+  {
+   "cap": "X",
+   "titulo": "Final and transitional provisions (Disposições finais e transitórias)",
+   "arts": "60-65",
+   "paginas": [
+    24,
+    24
+   ]
+  }
+ ],
+ "temas": {
+  "escopo-aplicacao": "Scope, territorial application and exceptions",
+  "excecoes": "Exceptions to the scope of the law",
+  "fundamentos": "Foundations of the regime",
+  "definicoes": "Definitions of Art. 5",
+  "principios": "Principles of Art. 6",
+  "minimizacao": "Necessity and minimization",
+  "bases-legais": "Legal bases for processing (Art. 7)",
+  "consentimento": "Consent",
+  "legitimo-interesse": "Legitimate interest",
+  "sensiveis": "Sensitive data",
+  "anonimizacao": "Anonymization and pseudonymization",
+  "pesquisa": "Research bodies and studies",
+  "saude": "Health data",
+  "criancas": "Children and adolescents",
+  "termino-eliminacao": "End of processing and deletion",
+  "direitos-titular": "Data subject rights",
+  "portabilidade": "Portability",
+  "decisoes-automatizadas": "Automated decisions",
+  "transparencia": "Transparency",
+  "discriminacao": "Non-discrimination",
+  "poder-publico": "Processing by Public Authorities",
+  "transferencia-internacional": "International transfer",
+  "agentes": "Controller and processor",
+  "registro": "Record of operations",
+  "ripd": "Impact report (RIPD)",
+  "encarregado": "Encarregado (DPO)",
+  "responsabilidade-civil": "Liability and compensation",
+  "seguranca": "Security and confidentiality",
+  "incidentes": "Security incidents",
+  "governanca": "Good practices and governance",
+  "sancoes": "Administrative sanctions",
+  "anpd": "ANPD and Council",
+  "vigencia": "Effective date",
+  "disposicoes-finais": "Final provisions",
+  "visao-geral": "NIST: overview",
+  "sistemas-fronteira": "NIST: systems and boundary",
+  "seguranca-vs-privacidade": "NIST: security versus privacy",
+  "problemas-privacidade": "NIST: privacy problems",
+  "definicao": "NIST: definition of privacy engineering",
+  "requisitos": "NIST: system requirements",
+  "gestao-risco": "NIST: risk management",
+  "componentes": "NIST: components",
+  "pia": "NIST: PIA",
+  "objetivos": "NIST: objectives",
+  "fipps": "NIST: FIPPs",
+  "modelo-risco": "NIST: risk model",
+  "roteiro": "NIST: roadmap",
+  "apendices": "NIST: appendices",
+  "glossario": "NIST: glossary"
+ },
+ "entries": [
+  {
+   "id": "Art. 1",
+   "pages": [
+    1
+   ],
+   "temas": [
+    "escopo-aplicacao"
+   ],
+   "kw": [
+    "objeto",
+    "tratamento de dados pessoais",
+    "meios digitais",
+    "liberdade",
+    "privacidade",
+    "personalidade",
+    "normas gerais",
+    "interesse nacional",
+    "uniao estados municipios"
+   ],
+   "resumo": "Subject matter: governs the processing of personal data, including in digital media, by a natural person or a legal entity under public or private law, to protect freedom, privacy and the free development of personality. Sole paragraph: general rules of national interest, to be observed by the Union, States, the Federal District and Municipalities (paragraph added by Lei 13.853/2019).",
+   "src": "LGPD",
+   "arts": [
+    "1"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 2",
+   "pages": [
+    1
+   ],
+   "temas": [
+    "fundamentos"
+   ],
+   "kw": [
+    "fundamentos",
+    "privacidade",
+    "autodeterminacao informativa",
+    "liberdade de expressao",
+    "intimidade honra imagem",
+    "desenvolvimento economico inovacao",
+    "livre iniciativa",
+    "defesa do consumidor",
+    "direitos humanos"
+   ],
+   "resumo": "Seven foundations (I to VII): respect for privacy; informational self-determination; freedom of expression, information, communication and opinion; inviolability of intimacy, honor and image; economic and technological development and innovation; free enterprise, free competition and consumer protection; human rights, dignity and the exercise of citizenship.",
+   "src": "LGPD",
+   "arts": [
+    "2"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 3",
+   "pages": [
+    1
+   ],
+   "temas": [
+    "escopo-aplicacao"
+   ],
+   "kw": [
+    "aplicacao",
+    "territorio",
+    "extraterritorial",
+    "oferta de bens ou servicos",
+    "coletados no territorio nacional",
+    "titular se encontre"
+   ],
+   "resumo": "Applies to any processing operation, regardless of the medium, the country of the headquarters or where the data is located, if: I the operation takes place in national territory; II the aim is to offer goods/services or to process data of individuals located in national territory (wording of Lei 13.853/2019); III the data was collected in national territory. §1 data is considered collected in Brazil when its data subject is in Brazil at the time of collection. §2 exception to item I for art. 4, IV.",
+   "src": "LGPD",
+   "arts": [
+    "3"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 4",
+   "pages": [
+    2
+   ],
+   "temas": [
+    "escopo-aplicacao",
+    "excecoes"
+   ],
+   "kw": [
+    "nao se aplica",
+    "exceções",
+    "fins particulares",
+    "jornalistico",
+    "artistico",
+    "academico",
+    "seguranca publica",
+    "defesa nacional",
+    "seguranca do estado",
+    "investigacao e repressao",
+    "dados provenientes de fora"
+   ],
+   "resumo": "Does not apply to: I a natural person for exclusively private and non-economic purposes; II exclusively journalistic and artistic purposes, or academic ones (in which case arts. 7 and 11 apply); III exclusive purposes of public security, national defense, state security, criminal investigation and prosecution (specific legislation, §1; prohibited for a private-law person, except under public guardianship, §2; ANPD issues opinions and requests a RIPD, §3; never the entire database to a private party, §4, wording 13.853/2019); IV data coming from abroad, without shared use/transfer, with a country of origin of adequate protection.",
+   "src": "LGPD",
+   "arts": [
+    "4"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, I",
+   "pages": [
+    2
+   ],
+   "temas": [
+    "definicoes"
+   ],
+   "kw": [
+    "dado pessoal",
+    "informacao relacionada",
+    "pessoa natural identificada ou identificavel"
+   ],
+   "resumo": "Personal data: information related to an identified or identifiable natural person.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, II",
+   "pages": [
+    2
+   ],
+   "temas": [
+    "definicoes",
+    "sensiveis"
+   ],
+   "kw": [
+    "dado pessoal sensivel",
+    "origem racial",
+    "etnica",
+    "conviccao religiosa",
+    "opiniao politica",
+    "sindicato",
+    "saude",
+    "vida sexual",
+    "genetico",
+    "biometrico"
+   ],
+   "resumo": "Sensitive personal data: racial or ethnic origin, religious belief, political opinion, membership of a union or religious, philosophical or political organization, data concerning health or sex life, genetic or biometric data, when linked to a natural person.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, III",
+   "pages": [
+    2
+   ],
+   "temas": [
+    "definicoes",
+    "anonimizacao"
+   ],
+   "kw": [
+    "dado anonimizado",
+    "meios tecnicos razoaveis e disponiveis",
+    "nao possa ser identificado"
+   ],
+   "resumo": "Anonymized data: data relating to a data subject who cannot be identified, considering reasonable technical means available at the time of the processing.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, IV-VII",
+   "pages": [
+    2,
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "agentes"
+   ],
+   "kw": [
+    "banco de dados",
+    "titular",
+    "controlador",
+    "operador",
+    "decisoes referentes ao tratamento",
+    "em nome do controlador"
+   ],
+   "resumo": "IV database; V data subject (natural person to whom the data refers); VI controller (who is responsible for the decisions on processing); VII processor (carries out the processing on behalf of the controller).",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, VIII",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "encarregado"
+   ],
+   "kw": [
+    "encarregado",
+    "canal de comunicacao",
+    "controlador operador titulares ANPD"
+   ],
+   "resumo": "Encarregado (data protection officer): person appointed by the controller and processor to act as a communication channel between controller, data subjects and the ANPD (wording given by Lei 15.352/2026, according to the compiled text).",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, IX-XI",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "anonimizacao"
+   ],
+   "kw": [
+    "agentes de tratamento",
+    "tratamento",
+    "anonimizacao",
+    "coleta",
+    "producao",
+    "eliminacao",
+    "perde a possibilidade de associacao"
+   ],
+   "resumo": "IX processing agents = controller and processor; X processing = any operation with personal data (collection, production, reception, classification, use, access, reproduction, transmission, distribution, processing, archiving, storage, deletion, evaluation or control, modification, communication, transfer, dissemination, extraction); XI anonymization = use of reasonable technical means by which the data loses the possibility of direct or indirect association with an individual.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, XII",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "consentimento"
+   ],
+   "kw": [
+    "consentimento",
+    "livre",
+    "informada",
+    "inequivoca",
+    "finalidade determinada"
+   ],
+   "resumo": "Consent: free, informed and unambiguous statement by which the data subject agrees to the processing for a determined purpose.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, XIII-XVI",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "transferencia-internacional"
+   ],
+   "kw": [
+    "bloqueio",
+    "eliminacao",
+    "transferencia internacional",
+    "uso compartilhado",
+    "interconexao"
+   ],
+   "resumo": "XIII blocking (temporary suspension of any operation, with retention of the data); XIV deletion (removal of data or a set of stored data); XV international transfer (to a foreign country or an international body of which the country is a member); XVI shared use of data.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, XVII",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "ripd"
+   ],
+   "kw": [
+    "relatorio de impacto",
+    "RIPD",
+    "riscos as liberdades civis",
+    "direitos fundamentais",
+    "salvaguardas",
+    "mitigacao de risco"
+   ],
+   "resumo": "Data protection impact report (RIPD): controller documentation describing the processing operations that may generate risks to civil liberties and fundamental rights, as well as measures, safeguards and risk mitigation mechanisms.",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 5, XVIII-XIX",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "definicoes",
+    "anpd",
+    "pesquisa"
+   ],
+   "kw": [
+    "orgao de pesquisa",
+    "autoridade nacional",
+    "zelar implementar fiscalizar"
+   ],
+   "resumo": "XVIII research body (wording 13.853/2019); XIX national authority: public administration entity responsible for ensuring, implementing and overseeing compliance with the law throughout the territory (wording given by Lei 15.352/2026, according to the compiled text).",
+   "src": "LGPD",
+   "arts": [
+    "5"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, caput",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "principios"
+   ],
+   "kw": [
+    "boa-fe",
+    "principios",
+    "dez principios"
+   ],
+   "resumo": "Processing activities must observe good faith and ten principles (items I to X).",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, I",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "principios"
+   ],
+   "kw": [
+    "finalidade",
+    "propositos legitimos especificos explicitos informados",
+    "tratamento posterior incompativel"
+   ],
+   "resumo": "Purpose: legitimate, specific, explicit purposes informed to the data subject, with no further processing incompatible with them.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, II",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "principios"
+   ],
+   "kw": [
+    "adequacao",
+    "compatibilidade",
+    "contexto do tratamento"
+   ],
+   "resumo": "Suitability: compatibility of the processing with the informed purposes, according to the context of the processing.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, III",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "principios",
+    "minimizacao"
+   ],
+   "kw": [
+    "necessidade",
+    "minimo necessario",
+    "pertinentes proporcionais nao excessivos",
+    "minimizacao"
+   ],
+   "resumo": "Necessity: limitation to the minimum necessary for the purposes, with relevant, proportional and non-excessive data.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, IV",
+   "pages": [
+    3
+   ],
+   "temas": [
+    "principios",
+    "direitos-titular"
+   ],
+   "kw": [
+    "livre acesso",
+    "consulta facilitada e gratuita",
+    "forma e duracao",
+    "integralidade"
+   ],
+   "resumo": "Free access: facilitated and free consultation on the form and duration of the processing and on the completeness of the data.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, V",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios"
+   ],
+   "kw": [
+    "qualidade dos dados",
+    "exatidao",
+    "clareza",
+    "relevancia",
+    "atualizacao"
+   ],
+   "resumo": "Data quality: accuracy, clarity, relevance and updating, according to the need and the purpose.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, VI",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios"
+   ],
+   "kw": [
+    "transparencia",
+    "informacoes claras precisas facilmente acessiveis",
+    "segredo comercial industrial"
+   ],
+   "resumo": "Transparency: clear, precise and easily accessible information about the processing and the agents, observing trade and industrial secrets.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, VII",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios",
+    "seguranca"
+   ],
+   "kw": [
+    "seguranca",
+    "medidas tecnicas e administrativas",
+    "acessos nao autorizados",
+    "destruicao perda alteracao comunicacao difusao"
+   ],
+   "resumo": "Security: technical and administrative measures apt to protect the data from unauthorized access and from accidental or unlawful situations of destruction, loss, alteration, communication or dissemination.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, VIII",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios",
+    "seguranca"
+   ],
+   "kw": [
+    "prevencao",
+    "prevenir danos"
+   ],
+   "resumo": "Prevention: adoption of measures to prevent the occurrence of damage due to the processing.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, IX",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios",
+    "discriminacao"
+   ],
+   "kw": [
+    "nao discriminacao",
+    "fins discriminatorios ilicitos ou abusivos"
+   ],
+   "resumo": "Non-discrimination: impossibility of processing for unlawful or abusive discriminatory purposes.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 6, X",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "principios",
+    "governanca"
+   ],
+   "kw": [
+    "responsabilizacao",
+    "prestacao de contas",
+    "demonstracao",
+    "medidas eficazes",
+    "eficacia"
+   ],
+   "resumo": "Accountability: demonstration by the agent of effective measures capable of proving compliance with the rules and the effectiveness of those measures.",
+   "src": "LGPD",
+   "arts": [
+    "6"
+   ],
+   "ref": "lgpd-fundamentos-escopo-e-principios.md"
+  },
+  {
+   "id": "Art. 7, caput",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "bases legais",
+    "hipoteses",
+    "requisitos para o tratamento",
+    "somente poderá"
+   ],
+   "resumo": "Processing of personal data may only take place in the cases of items I to X (exhaustive list in the article).",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, I",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais",
+    "consentimento"
+   ],
+   "kw": [
+    "consentimento pelo titular"
+   ],
+   "resumo": "Basis: consent by the data subject.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, II",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "obrigacao legal ou regulatoria",
+    "controlador"
+   ],
+   "resumo": "Basis: compliance with a legal or regulatory obligation by the controller.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, III",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais",
+    "poder-publico"
+   ],
+   "kw": [
+    "administracao publica",
+    "politicas publicas",
+    "uso compartilhado"
+   ],
+   "resumo": "Basis: public administration, for the processing and shared use of data necessary for the execution of public policies provided for in laws, regulations, contracts, agreements or similar instruments (subject to Chap. IV).",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, IV",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais",
+    "pesquisa"
+   ],
+   "kw": [
+    "estudos por orgao de pesquisa",
+    "anonimizacao sempre que possivel"
+   ],
+   "resumo": "Basis: studies by a research body, guaranteeing anonymization whenever possible.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, V",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "execucao de contrato",
+    "procedimentos preliminares",
+    "a pedido do titular"
+   ],
+   "resumo": "Basis: performance of a contract or preliminary procedures related to a contract to which the data subject is a party, at the request of the data subject.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, VI",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "exercicio regular de direitos",
+    "processo judicial administrativo arbitral"
+   ],
+   "resumo": "Basis: regular exercise of rights in judicial, administrative or arbitration proceedings.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, VII",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "protecao da vida",
+    "incolumidade fisica"
+   ],
+   "resumo": "Basis: protection of the life or physical safety of the data subject or a third party.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, VIII",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais",
+    "saude"
+   ],
+   "kw": [
+    "tutela da saude",
+    "profissionais de saude",
+    "servicos de saude",
+    "autoridade sanitaria"
+   ],
+   "resumo": "Basis: health protection, exclusively in a procedure carried out by health professionals, health services or the health authority (wording Lei 13.853/2019).",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, IX",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais",
+    "legitimo-interesse"
+   ],
+   "kw": [
+    "legitimo interesse",
+    "interesses legitimos do controlador ou de terceiro",
+    "direitos e liberdades fundamentais prevalecerem"
+   ],
+   "resumo": "Basis: legitimate interests of the controller or a third party, except where the data subject's fundamental rights and freedoms that require data protection prevail.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, X",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "protecao do credito"
+   ],
+   "resumo": "Basis: credit protection, including as provided in the relevant legislation.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, §§ 1º-2º",
+   "pages": [
+    4
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "revogado"
+   ],
+   "resumo": "§§ 1 and 2: revoked (the compiled text carries the revocation marking with the wording of Lei 13.853/2019).",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, § 3º",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "dados de acesso publico",
+    "finalidade boa-fe interesse publico"
+   ],
+   "resumo": "Publicly accessible data: the processing must consider the purpose, good faith and public interest that justified making it available.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, § 4º",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "bases-legais",
+    "consentimento"
+   ],
+   "kw": [
+    "dados manifestamente publicos",
+    "dispensa de consentimento"
+   ],
+   "resumo": "Exemption from consent for data manifestly made public by the data subject, safeguarding the data subject's rights and the principles.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, § 5º",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "bases-legais",
+    "consentimento"
+   ],
+   "kw": [
+    "comunicar compartilhar com outros controladores",
+    "consentimento especifico"
+   ],
+   "resumo": "Whoever obtained consent and needs to communicate or share data with other controllers must obtain specific consent for that, except in the cases of exemption.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, § 6º",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "dispensa do consentimento nao desobriga",
+    "principios",
+    "direitos do titular"
+   ],
+   "resumo": "The exemption from consent does not release the agents from the other obligations, especially compliance with the principles and guarantee of the data subject's rights.",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 7, § 7º",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "bases-legais"
+   ],
+   "kw": [
+    "tratamento posterior",
+    "novas finalidades",
+    "propositos legitimos e especificos"
+   ],
+   "resumo": "Further processing of the data in §§ 3 and 4 may have new purposes, observing legitimate and specific purposes, the data subject's rights, the foundations and principles (paragraph added by Lei 13.853/2019).",
+   "src": "LGPD",
+   "arts": [
+    "7"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 8",
+   "pages": [
+    5
+   ],
+   "temas": [
+    "consentimento"
+   ],
+   "kw": [
+    "consentimento por escrito",
+    "clausula destacada",
+    "onus da prova",
+    "vicio de consentimento",
+    "autorizacoes genericas nulas",
+    "revogacao",
+    "gratuito facilitado"
+   ],
+   "resumo": "Consent: in writing or by another means that shows the will (caput); if written, in a highlighted clause (§1); the burden of proof lies with the controller (§2); defective consent prohibited (§3); determined purposes, generic authorizations are void (§4); revocable at any time through a free and facilitated procedure, prior processing ratified until there is a deletion request (§5); a change in the information of items I, II, III or V of art. 9 must be informed with prominence, and the data subject may revoke (§6).",
+   "src": "LGPD",
+   "arts": [
+    "8"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 9",
+   "pages": [
+    5,
+    6
+   ],
+   "temas": [
+    "direitos-titular",
+    "transparencia"
+   ],
+   "kw": [
+    "acesso facilitado",
+    "informacoes sobre o tratamento",
+    "finalidade especifica",
+    "forma e duracao",
+    "identificacao do controlador",
+    "contato",
+    "uso compartilhado",
+    "responsabilidades dos agentes",
+    "direitos do titular"
+   ],
+   "resumo": "Facilitated access to clear, adequate and prominent information: specific purpose; form and duration; identification and contact of the controller; shared use and purpose; responsibilities of the agents; rights of art. 18 (items I to VII, p.5). §1 consent void if the information is misleading/abusive or was not presented beforehand with transparency; §2 an incompatible change of purpose requires prior notice, with the possibility of revocation; §3 if the processing is a condition for the supply of a product/service, inform with prominence (p.6).",
+   "src": "LGPD",
+   "arts": [
+    "9"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 10",
+   "pages": [
+    6
+   ],
+   "temas": [
+    "legitimo-interesse",
+    "bases-legais"
+   ],
+   "kw": [
+    "legitimo interesse",
+    "situacoes concretas",
+    "apoio e promocao de atividades",
+    "legitimas expectativas",
+    "estritamente necessarios",
+    "transparencia",
+    "RIPD"
+   ],
+   "resumo": "Legitimate interest only supports processing for legitimate purposes, based on concrete situations (support and promotion of the controller's activities; protection of the regular exercise of rights or provision of services that benefit the data subject, respecting legitimate expectations and rights and freedoms). §1 only strictly necessary data; §2 transparency measures; §3 the ANPD may request a RIPD when the basis is legitimate interest.",
+   "src": "LGPD",
+   "arts": [
+    "10"
+   ],
+   "ref": "lgpd-bases-legais-e-consentimento.md"
+  },
+  {
+   "id": "Art. 11, caput I",
+   "pages": [
+    6
+   ],
+   "temas": [
+    "sensiveis",
+    "consentimento"
+   ],
+   "kw": [
+    "dados sensiveis",
+    "consentimento especifico e destacado",
+    "finalidades especificas",
+    "responsavel legal"
+   ],
+   "resumo": "Sensitive data may only be processed: I with the consent of the data subject or legal guardian, in a specific and highlighted manner, for specific purposes.",
+   "src": "LGPD",
+   "arts": [
+    "11"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 11, II",
+   "pages": [
+    6
+   ],
+   "temas": [
+    "sensiveis",
+    "bases-legais"
+   ],
+   "kw": [
+    "sem consentimento",
+    "indispensavel",
+    "obrigacao legal",
+    "politicas publicas",
+    "pesquisa",
+    "exercicio regular de direitos",
+    "vida",
+    "tutela da saude",
+    "prevencao a fraude"
+   ],
+   "resumo": "II without consent, when indispensable for: a) legal or regulatory obligation; b) shared processing for public policies by the administration; c) studies by a research body (anonymization whenever possible); d) regular exercise of rights (including contract and proceedings); e) protection of life or physical safety; f) health protection (wording 13.853/2019); g) fraud prevention and data subject security in identification and authentication processes of registration in electronic systems, safeguarding the rights of art. 9 and except where the data subject's rights and freedoms prevail. Note: the list in art. 11 does not repeat legitimate interest (art. 7, IX) or credit protection (art. 7, X) [literal reading of the list; check scholarship with a lawyer].",
+   "src": "LGPD",
+   "arts": [
+    "11"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 11, §§ 1º-5º",
+   "pages": [
+    7
+   ],
+   "temas": [
+    "sensiveis",
+    "saude"
+   ],
+   "kw": [
+    "dado que revele sensivel",
+    "dano ao titular",
+    "vantagem economica",
+    "saude",
+    "operadoras de planos de saude",
+    "selecao de riscos",
+    "portabilidade"
+   ],
+   "resumo": "§1 applies to any processing that reveals sensitive data and may cause harm to the data subject; §2 publicity of the exemption from consent by the public authorities (art. 23, I); §3 communication/shared use of sensitive data for economic advantage may be prohibited or regulated by the ANPD; §4 communication/shared use of health data for economic advantage is prohibited, except for the provision of health services, pharmaceutical and health care (subject to §5) for portability at the data subject's request or financial and administrative transactions of the services (wording/additions of Lei 13.853/2019); §5 health plan operators are prohibited from processing health data for risk selection in contracting and in excluding beneficiaries.",
+   "src": "LGPD",
+   "arts": [
+    "11"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 12",
+   "pages": [
+    7
+   ],
+   "temas": [
+    "anonimizacao"
+   ],
+   "kw": [
+    "dados anonimizados nao sao dados pessoais",
+    "reversao",
+    "esforcos razoaveis",
+    "custo e tempo",
+    "perfil comportamental",
+    "padroes e tecnicas de anonimizacao"
+   ],
+   "resumo": "Anonymized data is not personal data, unless the process is reversed with own means or can be reversed with reasonable efforts (§1: objective factors such as cost and time and available technologies); §2 data used to form the behavioral profile of an identified person may be considered personal; §3 the ANPD may rule on anonymization standards and techniques and verify their security, after hearing the Council.",
+   "src": "LGPD",
+   "arts": [
+    "12"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 13",
+   "pages": [
+    7
+   ],
+   "temas": [
+    "pesquisa",
+    "saude",
+    "anonimizacao"
+   ],
+   "kw": [
+    "estudos em saude publica",
+    "orgaos de pesquisa",
+    "ambiente controlado e seguro",
+    "pseudonimizacao",
+    "transferencia a terceiro vedada"
+   ],
+   "resumo": "In public health studies, research bodies may access personal databases, processed only within the body, in a controlled and secure environment, with anonymization or pseudonymization whenever possible and ethical standards. §1 results may not reveal personal data; §2 the body answers for security, with no transfer to a third party; §3 regulation by the ANPD and health authorities; §4 pseudonymization: the data loses the possibility of association with an individual except through the use of additional information kept separately by the controller in a controlled and secure environment.",
+   "src": "LGPD",
+   "arts": [
+    "13"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 14",
+   "pages": [
+    8
+   ],
+   "temas": [
+    "criancas"
+   ],
+   "kw": [
+    "criancas e adolescentes",
+    "melhor interesse",
+    "consentimento de um dos pais",
+    "informacao publica",
+    "coleta sem consentimento",
+    "jogos",
+    "verificar consentimento",
+    "linguagem simples"
+   ],
+   "resumo": "Processing of data of children and adolescents in their best interest. §1 children: specific and highlighted consent from at least one of the parents or legal guardian; §2 keep public the information on types of data, use and exercise of rights; §3 collection without consent only to contact the parents (single use, no storage) or for protection, never passed on to a third party without consent; §4 do not condition games/applications on data beyond what is strictly necessary; §5 reasonable efforts to verify consent, considering the available technologies; §6 simple, clear and accessible information, with audiovisual resources when appropriate.",
+   "src": "LGPD",
+   "arts": [
+    "14"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 15",
+   "pages": [
+    8
+   ],
+   "temas": [
+    "termino-eliminacao"
+   ],
+   "kw": [
+    "termino do tratamento",
+    "finalidade alcancada",
+    "fim do periodo",
+    "revogacao",
+    "determinacao da autoridade nacional"
+   ],
+   "resumo": "End of processing: I purpose achieved or data unnecessary/irrelevant; II end of the processing period; III communication from the data subject (including revocation of consent, art. 8 §5), safeguarding the public interest; IV ANPD order in case of violation.",
+   "src": "LGPD",
+   "arts": [
+    "15"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 16",
+   "pages": [
+    8
+   ],
+   "temas": [
+    "termino-eliminacao"
+   ],
+   "kw": [
+    "eliminacao apos o termino",
+    "conservacao autorizada",
+    "obrigacao legal",
+    "estudo por orgao de pesquisa",
+    "transferencia a terceiro",
+    "uso exclusivo do controlador anonimizados"
+   ],
+   "resumo": "After the end, data is deleted (within the technical limits of the activities), with retention authorized for: I legal or regulatory obligation; II study by a research body (anonymization whenever possible); III transfer to a third party, respecting the requirements of the law; IV exclusive use by the controller, without third-party access and with anonymized data.",
+   "src": "LGPD",
+   "arts": [
+    "16"
+   ],
+   "ref": "lgpd-dados-sensiveis-anonimizacao-criancas.md"
+  },
+  {
+   "id": "Art. 17",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "titularidade dos dados",
+    "direitos fundamentais de liberdade intimidade privacidade"
+   ],
+   "resumo": "Every natural person is assured ownership of their data and guaranteed the fundamental rights of freedom, intimacy and privacy.",
+   "src": "LGPD",
+   "arts": [
+    "17"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, caput",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "direitos do titular",
+    "a qualquer momento",
+    "mediante requisicao"
+   ],
+   "resumo": "The data subject may obtain from the controller, at any time and upon request, the rights of items I to IX.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, I-II",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "confirmacao da existencia de tratamento",
+    "acesso aos dados"
+   ],
+   "resumo": "I confirmation of the existence of processing; II access to the data.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, III",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "correcao de dados incompletos inexatos desatualizados"
+   ],
+   "resumo": "III correction of incomplete, inaccurate or outdated data.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, IV",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "anonimizacao bloqueio eliminacao",
+    "dados desnecessarios excessivos desconformidade"
+   ],
+   "resumo": "IV anonymization, blocking or deletion of unnecessary, excessive or non-compliant data.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, V",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular",
+    "portabilidade"
+   ],
+   "kw": [
+    "portabilidade",
+    "outro fornecedor",
+    "requisicao expressa",
+    "regulamentacao da autoridade nacional",
+    "segredos comercial e industrial"
+   ],
+   "resumo": "V portability to another service or product provider, upon express request, under ANPD regulation, observing trade and industrial secrets (wording Lei 13.853/2019). §7 portability does not include data already anonymized by the controller.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, VI",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular",
+    "termino-eliminacao"
+   ],
+   "kw": [
+    "eliminacao dos dados tratados com consentimento",
+    "excecoes do art. 16"
+   ],
+   "resumo": "VI deletion of data processed with the data subject's consent, except in the cases of art. 16.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, VII-IX",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "informacao das entidades com as quais houve uso compartilhado",
+    "possibilidade de nao fornecer consentimento",
+    "consequencias da negativa",
+    "revogacao do consentimento"
+   ],
+   "resumo": "VII information on the public and private entities with which shared use took place; VIII information on the possibility of not giving consent and the consequences of refusal; IX revocation of consent (art. 8 §5).",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 18, §§ 1º-8º",
+   "pages": [
+    9
+   ],
+   "temas": [
+    "direitos-titular",
+    "anpd"
+   ],
+   "kw": [
+    "peticionar a autoridade nacional",
+    "oposicao",
+    "requerimento expresso",
+    "sem custos",
+    "comunicar agentes com uso compartilhado",
+    "organismos de defesa do consumidor"
+   ],
+   "resumo": "§1 right to petition the ANPD against the controller; §2 objection to processing exempt from consent in case of breach of the law; §3 exercise by express request of the data subject or representative to a processing agent; §4 if immediate action is impossible, a reply stating that it is not the agent (and who is, if possible) or the factual or legal reasons; §5 fulfillment at no cost, within the deadlines and terms of the regulation; §6 immediately inform the agents with shared use about correction, deletion, anonymization or blocking (wording 13.853/2019), except in case of proven impossibility or disproportionate effort; §7 portability does not include anonymized data; §8 petition also before consumer protection bodies.",
+   "src": "LGPD",
+   "arts": [
+    "18"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 19",
+   "pages": [
+    10
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "confirmacao ou acesso",
+    "formato simplificado imediatamente",
+    "declaracao clara e completa",
+    "15 dias",
+    "origem dos dados",
+    "criterios utilizados",
+    "copia eletronica integral",
+    "formato que favoreca"
+   ],
+   "resumo": "Confirmation of existence or access: I in simplified format, immediately; or II by a clear and complete statement (origin of the data, absence of record, criteria used, purpose), within 15 days of the request, observing trade and industrial secrets. §1 data stored in a format that favors access; §2 secure and suitable electronic means or printed, at the data subject's choice; §3 if the origin is consent or contract, full electronic copy in a format allowing subsequent use, under regulation; §4 the ANPD may rule differently on deadlines by sector.",
+   "src": "LGPD",
+   "arts": [
+    "19"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 20",
+   "pages": [
+    10
+   ],
+   "temas": [
+    "decisoes-automatizadas",
+    "direitos-titular"
+   ],
+   "kw": [
+    "decisoes automatizadas",
+    "revisao",
+    "perfil pessoal profissional de consumo e credito",
+    "criterios e procedimentos",
+    "auditoria",
+    "segredo comercial"
+   ],
+   "resumo": "Right to request review of decisions made solely on the basis of automated processing that affect their interests, including personal, professional, consumer and credit profiles (wording Lei 13.853/2019). §1 clear and adequate information on criteria and procedures, subject to trade and industrial secrets; §2 if denied on grounds of secrecy, the ANPD may audit discriminatory aspects; §3 vetoed. Note: the compiled text does not mention review by a natural person; §3 appears only as (VETADO), with no content.",
+   "src": "LGPD",
+   "arts": [
+    "20"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 21",
+   "pages": [
+    10
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "exercicio regular de direitos nao pode ser utilizado em prejuizo"
+   ],
+   "resumo": "Data relating to the data subject's regular exercise of rights may not be used to their detriment.",
+   "src": "LGPD",
+   "arts": [
+    "21"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 22",
+   "pages": [
+    10,
+    11
+   ],
+   "temas": [
+    "direitos-titular"
+   ],
+   "kw": [
+    "defesa em juizo",
+    "tutela individual e coletiva"
+   ],
+   "resumo": "The defense of the interests and rights of data subjects may be exercised in court, individually or collectively.",
+   "src": "LGPD",
+   "arts": [
+    "22"
+   ],
+   "ref": "lgpd-direitos-do-titular.md"
+  },
+  {
+   "id": "Art. 23",
+   "pages": [
+    10,
+    11
+   ],
+   "temas": [
+    "poder-publico"
+   ],
+   "kw": [
+    "poder publico",
+    "finalidade publica",
+    "interesse publico",
+    "competencias legais",
+    "informar hipoteses de tratamento",
+    "encarregado",
+    "Lei de Acesso a Informacao",
+    "habeas data",
+    "notarios e registradores"
+   ],
+   "resumo": "Processing by public-law legal entities (LAI, art. 1, sole paragraph) for public purpose, public interest and legal competences, provided that: I they inform the cases of processing, with legal basis, purpose, procedures and practices, in easily accessible outlets; III they appoint an encarregado (wording 13.853/2019); II and IV vetoed. §1 the ANPD may rule on forms of publicity; §2 does not exempt authorities from the LAI; §3 deadlines and procedures for rights follow Habeas Data, Administrative Procedure and LAI; §4 notary and registry services receive the same treatment; §5 electronic access to the administration.",
+   "src": "LGPD",
+   "arts": [
+    "23"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 24",
+   "pages": [
+    11
+   ],
+   "temas": [
+    "poder-publico"
+   ],
+   "kw": [
+    "empresas publicas",
+    "sociedades de economia mista",
+    "regime de concorrencia",
+    "art. 173"
+   ],
+   "resumo": "Public companies and mixed-capital companies in competition are treated as private-law legal entities; when operationalizing public policies, as public bodies.",
+   "src": "LGPD",
+   "arts": [
+    "24"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 25",
+   "pages": [
+    11
+   ],
+   "temas": [
+    "poder-publico"
+   ],
+   "kw": [
+    "formato interoperavel e estruturado",
+    "uso compartilhado"
+   ],
+   "resumo": "Data kept in an interoperable and structured format for shared use (public policies, public services, decentralization, access to information).",
+   "src": "LGPD",
+   "arts": [
+    "25"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 26",
+   "pages": [
+    11
+   ],
+   "temas": [
+    "poder-publico"
+   ],
+   "kw": [
+    "uso compartilhado pelo poder publico",
+    "finalidades especificas",
+    "vedado transferir a entidades privadas",
+    "execucao descentralizada",
+    "acessiveis publicamente",
+    "previsao legal",
+    "prevencao de fraudes",
+    "comunicar contratos a autoridade nacional"
+   ],
+   "resumo": "Shared use by the Public Authorities serves specific purposes of public policies and legal attribution, with the principles of art. 6. §1 transfer to private entities is prohibited, except: I decentralized execution of public activity; III publicly accessible data; IV legal provision or contracts/agreements (added in 2019); V exclusively fraud and irregularity prevention or protection of the data subject's security and integrity (added in 2019); II vetoed. §2 contracts and agreements are communicated to the ANPD.",
+   "src": "LGPD",
+   "arts": [
+    "26"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 27",
+   "pages": [
+    12
+   ],
+   "temas": [
+    "poder-publico"
+   ],
+   "kw": [
+    "comunicacao ou uso compartilhado a pessoa de direito privado",
+    "informado a autoridade nacional",
+    "consentimento"
+   ],
+   "resumo": "Communication or shared use of data from a public-law person to a private-law person is reported to the ANPD and depends on consent, except legal exemption, the publicity of art. 23, I, or the exceptions of art. 26 §1; reporting to the ANPD will be regulated (sole paragraph added in 2019).",
+   "src": "LGPD",
+   "arts": [
+    "27"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 28-30",
+   "pages": [
+    12
+   ],
+   "temas": [
+    "poder-publico",
+    "anpd"
+   ],
+   "kw": [
+    "vetado",
+    "autoridade nacional pode solicitar",
+    "operacoes de tratamento",
+    "parecer tecnico",
+    "normas complementares",
+    "uso compartilhado"
+   ],
+   "resumo": "Art. 28 vetoed; Art. 29 the ANPD may request from public bodies processing operations, information on the scope and nature of the data, and issue a complementary technical opinion (wording 13.853/2019); Art. 30 the ANPD may establish complementary rules for communication and shared use.",
+   "src": "LGPD",
+   "arts": [
+    "28",
+    "29",
+    "30"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 31-32",
+   "pages": [
+    12
+   ],
+   "temas": [
+    "poder-publico",
+    "anpd",
+    "ripd"
+   ],
+   "kw": [
+    "infracao por orgaos publicos",
+    "informe com medidas",
+    "publicacao de relatorios de impacto",
+    "boas praticas"
+   ],
+   "resumo": "Art. 31 in case of infringement by public bodies, the ANPD may send a notice with measures to stop the violation; Art. 32 the ANPD may request Public Authority agents to publish a RIPD and suggest standards and good practices.",
+   "src": "LGPD",
+   "arts": [
+    "31",
+    "32"
+   ],
+   "ref": "lgpd-poder-publico.md"
+  },
+  {
+   "id": "Art. 33, caput I-V",
+   "pages": [
+    12
+   ],
+   "temas": [
+    "transferencia-internacional"
+   ],
+   "kw": [
+    "transferencia internacional",
+    "pais adequado",
+    "clausulas contratuais especificas",
+    "clausulas-padrao",
+    "normas corporativas globais",
+    "selos certificados codigos de conduta",
+    "cooperacao juridica internacional",
+    "protecao da vida",
+    "autorizacao da autoridade nacional"
+   ],
+   "resumo": "International transfer only in the cases: I countries/bodies with an adequate degree of protection; II the controller offers and proves safeguards in the form of a) specific contractual clauses, b) standard contractual clauses, c) global corporate rules, d) seals, certificates and codes of conduct; III international legal cooperation between public intelligence, investigation and prosecution bodies; IV protection of life or physical safety; V ANPD authorization.",
+   "src": "LGPD",
+   "arts": [
+    "33"
+   ],
+   "ref": "lgpd-transferencia-internacional.md"
+  },
+  {
+   "id": "Art. 33, VI-IX e p.único",
+   "pages": [
+    13
+   ],
+   "temas": [
+    "transferencia-internacional"
+   ],
+   "kw": [
+    "acordo de cooperacao internacional",
+    "politica publica",
+    "consentimento especifico e em destaque",
+    "carater internacional da operacao",
+    "incisos II V VI do art. 7",
+    "avaliacao do nivel de protecao"
+   ],
+   "resumo": "VI commitment in an international cooperation agreement; VII execution of public policy or legal attribution, with publicity (art. 23, I); VIII specific and highlighted consent, with prior information on the international nature of the operation, distinguishing it from other purposes; IX necessity for the cases of art. 7, II (legal obligation), V (contract) and VI (exercise of rights). Sole paragraph: public-law persons may request the ANPD to assess the level of protection of a country/body.",
+   "src": "LGPD",
+   "arts": [
+    "33"
+   ],
+   "ref": "lgpd-transferencia-internacional.md"
+  },
+  {
+   "id": "Art. 34",
+   "pages": [
+    13
+   ],
+   "temas": [
+    "transferencia-internacional",
+    "anpd"
+   ],
+   "kw": [
+    "nivel de protecao",
+    "avaliado pela autoridade nacional",
+    "normas do pais de destino",
+    "natureza dos dados",
+    "garantias judiciais e institucionais"
+   ],
+   "resumo": "The ANPD assesses the level of protection of the country/body considering: general and sector rules, nature of the data, observance of principles and rights, security measures provided in regulation, judicial and institutional guarantees, and other circumstances (items I to VI).",
+   "src": "LGPD",
+   "arts": [
+    "34"
+   ],
+   "ref": "lgpd-transferencia-internacional.md"
+  },
+  {
+   "id": "Art. 35",
+   "pages": [
+    13
+   ],
+   "temas": [
+    "transferencia-internacional",
+    "anpd"
+   ],
+   "kw": [
+    "definicao das clausulas-padrao",
+    "verificacao de clausulas especificas",
+    "normas corporativas globais",
+    "organismos de certificacao",
+    "medidas tecnicas e organizacionais do operador"
+   ],
+   "resumo": "The ANPD defines the content of the standard clauses and verifies specific clauses, corporate rules and seals/certificates/codes (caput); considers requirements and minimum safeguards (§1); may request information and inquiries (§2); may designate certification bodies under its oversight (§3) and review their acts (§4); safeguards are also analyzed according to the technical and organizational measures of the processor (§5, arts. 46 §§1-2).",
+   "src": "LGPD",
+   "arts": [
+    "35"
+   ],
+   "ref": "lgpd-transferencia-internacional.md"
+  },
+  {
+   "id": "Art. 36",
+   "pages": [
+    13
+   ],
+   "temas": [
+    "transferencia-internacional"
+   ],
+   "kw": [
+    "alteracoes nas garantias",
+    "comunicadas a autoridade nacional"
+   ],
+   "resumo": "Changes to the safeguards presented as sufficient (art. 33, II) must be communicated to the ANPD.",
+   "src": "LGPD",
+   "arts": [
+    "36"
+   ],
+   "ref": "lgpd-transferencia-internacional.md"
+  },
+  {
+   "id": "Art. 37",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "registro",
+    "agentes"
+   ],
+   "kw": [
+    "registro das operacoes de tratamento",
+    "legitimo interesse",
+    "controlador e operador"
+   ],
+   "resumo": "Controller and processor must keep a record of the processing operations they carry out, especially when based on legitimate interest. The text does not list the fields of the record.",
+   "src": "LGPD",
+   "arts": [
+    "37"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 38",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "ripd"
+   ],
+   "kw": [
+    "relatorio de impacto",
+    "RIPD",
+    "autoridade nacional pode determinar",
+    "dados sensiveis",
+    "descricao dos tipos de dados coletados",
+    "metodologia de coleta e seguranca",
+    "analise do controlador",
+    "salvaguardas",
+    "mitigacao de risco"
+   ],
+   "resumo": "The ANPD may order the controller to prepare a RIPD (including for sensitive data), under regulation, observing trade and industrial secrets. Sole paragraph: minimum content = description of the types of data collected; methodology used for collection and for ensuring information security; the controller's analysis of the measures, safeguards and risk mitigation mechanisms adopted.",
+   "src": "LGPD",
+   "arts": [
+    "38"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 39",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "agentes"
+   ],
+   "kw": [
+    "operador deve seguir instrucoes do controlador",
+    "verifica a observancia"
+   ],
+   "resumo": "The processor processes according to the controller's instructions, and the controller verifies compliance with its own instructions and with the rules.",
+   "src": "LGPD",
+   "arts": [
+    "39"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 40",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "anpd",
+    "direitos-titular"
+   ],
+   "kw": [
+    "padroes de interoperabilidade",
+    "portabilidade",
+    "livre acesso",
+    "seguranca",
+    "tempo de guarda dos registros"
+   ],
+   "resumo": "The ANPD may rule on interoperability standards for portability, free access and security, and on the retention time of records, considering necessity and transparency.",
+   "src": "LGPD",
+   "arts": [
+    "40"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 41",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "encarregado"
+   ],
+   "kw": [
+    "encarregado",
+    "DPO",
+    "identidade e contato divulgados publicamente",
+    "aceitar reclamacoes",
+    "receber comunicacoes da autoridade",
+    "orientar funcionarios e contratados",
+    "dispensa"
+   ],
+   "resumo": "The controller must appoint an encarregado (caput). §1 identity and contact publicly disclosed, clearly and objectively, preferably on the controller's website; §2 activities: I accept complaints and communications from data subjects, provide clarifications and take action; II receive communications from the ANPD and take action; III guide employees and contractors on data protection practices; IV other duties set by the controller or by complementary rules; §3 the ANPD may establish complementary rules, including cases of exemption depending on nature, size or volume; §4 vetoed.",
+   "src": "LGPD",
+   "arts": [
+    "41"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 42",
+   "pages": [
+    14,
+    15
+   ],
+   "temas": [
+    "responsabilidade-civil"
+   ],
+   "kw": [
+    "reparacao de danos",
+    "dano patrimonial moral individual ou coletivo",
+    "responsabilidade solidaria",
+    "operador equipara-se ao controlador",
+    "inversao do onus da prova",
+    "direito de regresso"
+   ],
+   "resumo": "Whoever causes property, moral, individual or collective damage in violation of data protection legislation is obliged to repair it. §1 I the processor is jointly liable when it breaches the law or does not follow the controller's lawful instructions (equated with the controller); II controllers directly involved are jointly liable; §2 the judge may reverse the burden of proof (plausibility, vulnerability or excessive burden); §3 collective actions; §4 right of recourse.",
+   "src": "LGPD",
+   "arts": [
+    "42"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 43",
+   "pages": [
+    15
+   ],
+   "temas": [
+    "responsabilidade-civil"
+   ],
+   "kw": [
+    "excludentes de responsabilidade",
+    "nao realizaram o tratamento",
+    "nao houve violacao",
+    "culpa exclusiva do titular ou de terceiro"
+   ],
+   "resumo": "Agents are only not liable if they prove: I that they did not carry out the attributed processing; II that, although they carried it out, there was no violation of the legislation; III that the damage results from the exclusive fault of the data subject or a third party.",
+   "src": "LGPD",
+   "arts": [
+    "43"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 44",
+   "pages": [
+    15
+   ],
+   "temas": [
+    "responsabilidade-civil",
+    "seguranca"
+   ],
+   "kw": [
+    "tratamento irregular",
+    "seguranca que o titular dele pode esperar",
+    "modo",
+    "resultado e riscos",
+    "tecnicas disponiveis a epoca",
+    "violacao da seguranca"
+   ],
+   "resumo": "Irregular processing: does not comply with the legislation or does not provide the security the data subject may expect, considering the manner of performance, the result and the risks reasonably expected and the techniques available at the time. Sole paragraph: whoever failed to adopt the measures of art. 46 answers for the damages of the security breach.",
+   "src": "LGPD",
+   "arts": [
+    "44"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 45",
+   "pages": [
+    15
+   ],
+   "temas": [
+    "responsabilidade-civil"
+   ],
+   "kw": [
+    "relacoes de consumo",
+    "legislacao pertinente"
+   ],
+   "resumo": "Violations of the data subject's rights in consumer relations follow the liability rules of the relevant legislation.",
+   "src": "LGPD",
+   "arts": [
+    "45"
+   ],
+   "ref": "lgpd-agentes-encarregado-responsabilidade.md"
+  },
+  {
+   "id": "Art. 46",
+   "pages": [
+    15
+   ],
+   "temas": [
+    "seguranca"
+   ],
+   "kw": [
+    "medidas de seguranca tecnicas e administrativas",
+    "acessos nao autorizados",
+    "situacoes acidentais ou ilicitas",
+    "padroes tecnicos minimos",
+    "desde a fase de concepcao",
+    "privacy by design"
+   ],
+   "resumo": "Agents must adopt technical and administrative security measures apt to protect data from unauthorized access and from destruction, loss, alteration, communication or any inadequate or unlawful processing (caput). §1 the ANPD may rule on minimum technical standards, considering the nature of the information, the characteristics of the processing, the state of technology (especially sensitive data) and the principles of art. 6; §2 the measures must be observed from the design phase of the product or service until its execution.",
+   "src": "LGPD",
+   "arts": [
+    "46"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 47",
+   "pages": [
+    15
+   ],
+   "temas": [
+    "seguranca"
+   ],
+   "kw": [
+    "seguranca da informacao mesmo apos o termino do tratamento",
+    "qualquer pessoa que intervenha"
+   ],
+   "resumo": "Agents or any person who intervenes in a phase of the processing are obliged to guarantee information security, even after the processing has ended.",
+   "src": "LGPD",
+   "arts": [
+    "47"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 48, caput",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "incidentes",
+    "seguranca"
+   ],
+   "kw": [
+    "incidente de seguranca",
+    "comunicar autoridade nacional e titular",
+    "risco ou dano relevante",
+    "prazo razoavel"
+   ],
+   "resumo": "The controller must notify the ANPD and the data subject of the occurrence of a security incident that may cause relevant risk or harm to the data subjects.",
+   "src": "LGPD",
+   "arts": [
+    "48"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 48, § 1º",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "incidentes"
+   ],
+   "kw": [
+    "conteudo minimo da comunicacao",
+    "natureza dos dados afetados",
+    "titulares envolvidos",
+    "medidas tecnicas e de seguranca",
+    "riscos",
+    "motivos da demora",
+    "medidas para reverter ou mitigar",
+    "prazo razoavel definido pela autoridade"
+   ],
+   "resumo": "Notification is made within a reasonable period, as defined by the ANPD, and mentions at least: I nature of the personal data affected; II information on the data subjects involved; III technical and security measures used for protection (subject to trade and industrial secrets); IV risks related to the incident; V reasons for delay, if not immediate; VI measures adopted or to be adopted to reverse or mitigate the effects. The text does not fix a number of hours or days.",
+   "src": "LGPD",
+   "arts": [
+    "48"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 48, §§ 2º-3º",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "incidentes",
+    "anpd"
+   ],
+   "kw": [
+    "gravidade do incidente",
+    "ampla divulgacao",
+    "medidas para reverter ou mitigar",
+    "dados ininteligiveis",
+    "medidas tecnicas adequadas"
+   ],
+   "resumo": "§2 the ANPD verifies the severity and may order measures, such as wide dissemination of the fact and measures to reverse or mitigate; §3 in judging severity, proof of adequate technical measures that make the data unintelligible to unauthorized third parties is assessed, within the technical limits of the services.",
+   "src": "LGPD",
+   "arts": [
+    "48"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 49",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "seguranca",
+    "governanca"
+   ],
+   "kw": [
+    "sistemas estruturados",
+    "requisitos de seguranca",
+    "padroes de boas praticas e de governanca"
+   ],
+   "resumo": "The systems used for processing must be structured to meet security requirements, good practice and governance standards and the general principles of the law and other regulatory rules.",
+   "src": "LGPD",
+   "arts": [
+    "49"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 50, caput e §1º",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "governanca"
+   ],
+   "kw": [
+    "boas praticas e governanca",
+    "regras de boas praticas",
+    "associacoes",
+    "reclamacoes e peticoes",
+    "acoes educativas",
+    "mecanismos internos de supervisao",
+    "natureza escopo finalidade probabilidade gravidade riscos beneficios"
+   ],
+   "resumo": "Controllers and processors, individually or through associations, may formulate rules of good practice and governance (organization, operating regime, procedures including complaints and petitions, security rules, technical standards, obligations, educational actions, internal supervision, risk mitigation). §1 in establishing them, they consider the nature, scope, purpose and the probability and severity of the risks and benefits of the processing.",
+   "src": "LGPD",
+   "arts": [
+    "50"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 50, § 2º, I, a-b",
+   "pages": [
+    16
+   ],
+   "temas": [
+    "governanca"
+   ],
+   "kw": [
+    "programa de governanca em privacidade",
+    "comprometimento do controlador",
+    "aplicavel a todo o conjunto de dados"
+   ],
+   "resumo": "§2, I: privacy governance program that, at a minimum: a) demonstrates the controller's commitment to internal processes and policies that ensure comprehensive compliance with the rules; b) applies to the whole set of data under its control, regardless of how it was collected.",
+   "src": "LGPD",
+   "arts": [
+    "50"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 50, § 2º, I, c-h",
+   "pages": [
+    17
+   ],
+   "temas": [
+    "governanca",
+    "incidentes"
+   ],
+   "kw": [
+    "adaptado a estrutura escala volume",
+    "avaliacao sistematica de impactos e riscos a privacidade",
+    "relacao de confianca",
+    "participacao do titular",
+    "supervisao internos e externos",
+    "planos de resposta a incidentes e remediacao",
+    "monitoramento continuo",
+    "avaliacoes periodicas"
+   ],
+   "resumo": "c) adapted to the structure, scale, volume and sensitivity of the data; d) policies and safeguards based on a process of systematic assessment of privacy impacts and risks; e) relationship of trust with the data subject, through transparent action and mechanisms for data subject participation; f) integrated into general governance, with internal and external oversight; g) incident response and remediation plans; h) updated based on continuous monitoring and periodic evaluations.",
+   "src": "LGPD",
+   "arts": [
+    "50"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 50, § 2º, II e § 3º",
+   "pages": [
+    17
+   ],
+   "temas": [
+    "governanca"
+   ],
+   "kw": [
+    "demonstrar a efetividade",
+    "a pedido da autoridade nacional",
+    "codigos de conduta",
+    "publicadas e atualizadas periodicamente"
+   ],
+   "resumo": "§2, II: demonstrate the effectiveness of the program when appropriate, especially at the request of the ANPD or of an entity that promotes good practices or codes of conduct; §3 the good practice rules must be published, periodically updated and may be recognized and disseminated by the ANPD.",
+   "src": "LGPD",
+   "arts": [
+    "50"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 51",
+   "pages": [
+    17
+   ],
+   "temas": [
+    "governanca",
+    "anpd"
+   ],
+   "kw": [
+    "padroes tecnicos que facilitem o controle pelos titulares"
+   ],
+   "resumo": "The ANPD will encourage the adoption of technical standards that facilitate data subjects' control over their data.",
+   "src": "LGPD",
+   "arts": [
+    "51"
+   ],
+   "ref": "lgpd-seguranca-incidentes-governanca.md"
+  },
+  {
+   "id": "Art. 52, caput I-VI",
+   "pages": [
+    17
+   ],
+   "temas": [
+    "sancoes"
+   ],
+   "kw": [
+    "sancoes administrativas",
+    "advertencia",
+    "multa simples",
+    "2% do faturamento",
+    "50 milhoes por infracao",
+    "multa diaria",
+    "publicizacao da infracao",
+    "bloqueio",
+    "eliminacao dos dados"
+   ],
+   "resumo": "Sanctions applicable by the ANPD: I warning with a deadline for corrective measures; II simple fine of up to 2% of the revenue of the private-law legal entity, group or conglomerate in Brazil in the last fiscal year, excluding taxes, limited to R$ 50,000,000.00 per infringement; III daily fine (subject to the limit of item II); IV publicizing of the infringement after it has been investigated and confirmed; V blocking of the data of the infringement until regularization; VI deletion of the data of the infringement. Effective date of arts. 52 to 54: 1 Aug 2021 (art. 65, I-A).",
+   "src": "LGPD",
+   "arts": [
+    "52"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 52, VII-XII",
+   "pages": [
+    17,
+    18
+   ],
+   "temas": [
+    "sancoes"
+   ],
+   "kw": [
+    "suspensao parcial do funcionamento do banco de dados",
+    "suspensao do exercicio da atividade de tratamento",
+    "6 meses",
+    "proibicao parcial ou total",
+    "vetado"
+   ],
+   "resumo": "VII to IX vetoed; X partial suspension of the operation of the database for up to 6 months, extendable for an equal period; XI suspension of the exercise of the processing activity for up to 6 months, extendable; XII partial or total prohibition of the exercise of activities related to processing (X to XII added by Lei 13.853/2019).",
+   "src": "LGPD",
+   "arts": [
+    "52"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 52, § 1º",
+   "pages": [
+    18
+   ],
+   "temas": [
+    "sancoes"
+   ],
+   "kw": [
+    "criterios de aplicacao",
+    "ampla defesa",
+    "gravidade",
+    "boa-fe",
+    "vantagem auferida",
+    "condicao economica",
+    "reincidencia",
+    "grau do dano",
+    "cooperacao",
+    "mecanismos internos",
+    "politica de boas praticas",
+    "medidas corretivas",
+    "proporcionalidade"
+   ],
+   "resumo": "Sanctions applied after an administrative procedure with full defense, gradually, singly or cumulatively, according to parameters: I seriousness and nature of the infringements and rights affected; II good faith; III advantage gained or intended; IV economic condition; V recidivism; VI degree of damage; VII cooperation; VIII repeated and demonstrated adoption of internal mechanisms capable of minimizing the damage (in line with art. 48 §2, II); IX good practices and governance policy; X prompt adoption of corrective measures; XI proportionality between seriousness and sanction.",
+   "src": "LGPD",
+   "arts": [
+    "52"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 52, §§ 2º-7º",
+   "pages": [
+    18
+   ],
+   "temas": [
+    "sancoes"
+   ],
+   "kw": [
+    "nao substitui sancoes do codigo de defesa do consumidor",
+    "entidades e orgaos publicos",
+    "faturamento total",
+    "fundo de defesa de direitos difusos",
+    "sancoes X XI XII somente apos",
+    "conciliacao direta",
+    "vazamentos individuais"
+   ],
+   "resumo": "§2 does not replace administrative, civil or criminal sanctions of Lei 8.078/1990 and specific legislation (wording 13.853/2019); §3 items I, IV, V, VI, X, XI and XII may be applied to public entities and bodies (promulgation of vetoed parts); §4 in calculating the fine the ANPD may consider the total revenue of the company or group when there is no revenue for the line of business or it is incomplete; §5 proceeds go to the Fund for the Defense of Diffuse Rights; §6 sanctions X, XI and XII only after at least one of those in items II to VI has been imposed in the same case, after hearing other sanctioning bodies; §7 individual leaks or unauthorized accesses under art. 46 may be the subject of direct conciliation between controller and data subject; without agreement, the penalties apply.",
+   "src": "LGPD",
+   "arts": [
+    "52"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 53-54",
+   "pages": [
+    18,
+    19
+   ],
+   "temas": [
+    "sancoes",
+    "anpd"
+   ],
+   "kw": [
+    "regulamento de sancoes",
+    "consulta publica",
+    "metodologias de calculo do valor-base",
+    "multa diaria",
+    "intimacao",
+    "prazo razoavel"
+   ],
+   "resumo": "Art. 53: the ANPD will define by its own regulation, submitted to public consultation, the methodologies for calculating the base amount of fines (previously published, with objective calculation and reasoning, §1; circumstances for simple or daily fine, §2). Art. 54: the daily fine considers the seriousness and extent of the damage and is reasoned; the notice includes a description of the obligation, a reasonable deadline and the amount (sole paragraph). Effective date: 1 Aug 2021.",
+   "src": "LGPD",
+   "arts": [
+    "53",
+    "54"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 55-A",
+   "pages": [
+    19
+   ],
+   "temas": [
+    "anpd"
+   ],
+   "kw": [
+    "ANPD",
+    "autarquia de natureza especial",
+    "ministerio da justica",
+    "autonomia"
+   ],
+   "resumo": "ANPD: autarchy of special nature linked to the Ministry of Justice and Public Security, with functional, technical, decision-making, administrative and financial autonomy, its own assets and headquarters in the Federal District (wording given by Lei 15.352/2026, according to the compiled text); §§1-3 and art. 55-B revoked by Lei 14.460/2022.",
+   "src": "LGPD",
+   "arts": [
+    "55-A"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 55-C a 55-I",
+   "pages": [
+    19,
+    20
+   ],
+   "temas": [
+    "anpd"
+   ],
+   "kw": [
+    "composicao da ANPD",
+    "conselho diretor",
+    "5 diretores",
+    "mandato de 4 anos",
+    "corregedoria",
+    "ouvidoria",
+    "procuradoria",
+    "auditoria",
+    "perda do cargo",
+    "restricoes pos-mandato"
+   ],
+   "resumo": "Art. 55-C composition: Board of Directors, National Council for the Protection of Personal Data and Privacy, Inspector General's Office, Ombudsman, Attorney's Office (V-A), Audit (V-B), administrative and specialized units (items V-A, V-B and VI with wording/addition of Lei 15.352/2026; V wording of Lei 14.460/2022). Art. 55-D Board of Directors with 5 directors, chosen by the President and approved by the Senate, 4-year term. Arts. 55-E to 55-I: loss of office only by resignation, final conviction or dismissal in a disciplinary proceeding; post-term restrictions (Lei 12.813/2013, art. 6); regimental structure; positions.",
+   "src": "LGPD",
+   "arts": [
+    "55-C",
+    "55-D",
+    "55-E",
+    "55-F",
+    "55-G",
+    "55-H",
+    "55-I"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 55-J, I-XII",
+   "pages": [
+    20,
+    21
+   ],
+   "temas": [
+    "anpd"
+   ],
+   "kw": [
+    "competencias da ANPD",
+    "zelar pela protecao",
+    "fiscalizar e aplicar sancoes",
+    "apreciar peticoes de titular",
+    "promover conhecimento",
+    "estudos",
+    "cooperacao internacional",
+    "formas de publicidade",
+    "solicitar informe ao poder publico",
+    "relatorios de gestao"
+   ],
+   "resumo": "Competences of the ANPD, among others: ensure the protection of data and of trade and industrial secrets (I-II); guidelines of the National Policy (III); oversee and sanction with adversarial proceedings and full defense (IV); consider petitions from data subjects after a complaint not resolved by the controller (V); promote knowledge and studies (VI-VII); encourage standards that facilitate control by the data subject (VIII); international cooperation (IX); forms of publicity of operations (X); request a notice from the public authorities (XI); annual management reports (XII).",
+   "src": "LGPD",
+   "arts": [
+    "55-J"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 55-J, XIII-XXIV",
+   "pages": [
+    21
+   ],
+   "temas": [
+    "anpd",
+    "ripd"
+   ],
+   "kw": [
+    "regulamentos sobre RIPD para alto risco",
+    "ouvir agentes e sociedade",
+    "auditorias",
+    "compromisso para eliminar irregularidade",
+    "microempresas e startups",
+    "dados de idosos",
+    "interpretacao da lei",
+    "comunicar infracoes penais",
+    "mecanismos simplificados de reclamacao"
+   ],
+   "resumo": "XIII issue regulations and procedures on data protection and on RIPD for cases of high risk to the principles; XIV hear agents and society; XV revenues; XVI carry out or order audits, including in the public authorities; XVII enter into a commitment to eliminate irregularity; XVIII simplified rules for microenterprises, small companies and startups; XIX data of the elderly in a simple and clear way; XX decide with finality on the interpretation of the law and unforeseen cases; XXI report criminal offenses; XXII report non-compliance by federal bodies; XXIII coordinate with sector regulators; XXIV simplified mechanisms for recording complaints.",
+   "src": "LGPD",
+   "arts": [
+    "55-J"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 55-J, §§ 1º-6º; 55-K a 55-M",
+   "pages": [
+    22
+   ],
+   "temas": [
+    "anpd",
+    "sancoes"
+   ],
+   "kw": [
+    "minima intervencao",
+    "consulta e audiencia publicas",
+    "analises de impacto regulatorio",
+    "forum permanente",
+    "sancoes competem exclusivamente a ANPD",
+    "orgao central de interpretacao",
+    "receitas",
+    "patrimonio"
+   ],
+   "resumo": "§1 minimum intervention when imposing conditions on private agents; §2 regulations preceded by public consultation and hearing and regulatory impact analysis; §§3-4 coordination with sector regulators and a permanent forum; §5 preserve business secrecy; §6 complaints may be analyzed in aggregate form. Art. 55-K: the application of sanctions is exclusively the ANPD's competence, the central body for interpreting the law. Arts. 55-L and 55-M: revenues and assets. Arts. 56 and 57 vetoed.",
+   "src": "LGPD",
+   "arts": [
+    "55-J",
+    "55-K",
+    "55-L",
+    "55-M",
+    "56"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 58 a 59",
+   "pages": [
+    23,
+    24
+   ],
+   "temas": [
+    "anpd"
+   ],
+   "kw": [
+    "conselho nacional de protecao de dados pessoais e da privacidade",
+    "23 representantes",
+    "diretrizes estrategicas",
+    "relatorios anuais",
+    "vetado"
+   ],
+   "resumo": "Art. 58-A: National Council with 23 representatives (Executive, Legislative, CNJ, CNMP, CGI.br, civil society, scientific institutions, union confederations, business and labor sectors); Art. 58-B: proposes strategic guidelines, annual reports, studies, debates and dissemination of knowledge. Arts. 58 and 59 vetoed.",
+   "src": "LGPD",
+   "arts": [
+    "58",
+    "58-A",
+    "58-B",
+    "59"
+   ],
+   "ref": "lgpd-sancoes-e-anpd.md"
+  },
+  {
+   "id": "Art. 60",
+   "pages": [
+    24
+   ],
+   "temas": [
+    "disposicoes-finais"
+   ],
+   "kw": [
+    "marco civil da internet",
+    "exclusao definitiva dos dados",
+    "guarda obrigatoria de registros"
+   ],
+   "resumo": "Amends the Marco Civil da Internet (Lei 12.965/2014): art. 7, X (definitive deletion of data provided to an internet application, on request, at the end of the relationship, except for mandatory record keeping) and art. 16, II (keeping of excessive data relative to the consented purpose is prohibited, except in the cases of the data protection law).",
+   "src": "LGPD",
+   "arts": [
+    "60"
+   ],
+   "ref": "lgpd-disposicoes-finais-vigencia-e-alteracoes.md"
+  },
+  {
+   "id": "Art. 61-64",
+   "pages": [
+    24
+   ],
+   "temas": [
+    "disposicoes-finais"
+   ],
+   "kw": [
+    "empresa estrangeira notificada",
+    "filial agencia sucursal",
+    "adequacao progressiva de bancos de dados",
+    "direitos e principios nao excluem outros"
+   ],
+   "resumo": "Art. 61 a foreign company is notified through the agent/representative of a branch, agency, subsidiary or office in Brazil; Art. 62 specific ANPD/Inep regulations (LDB, Sinaes); Art. 63 the ANPD will establish rules for progressive adaptation of databases constituted up to the law's entry into force; Art. 64 the rights and principles of the law do not exclude others from the legal order or from treaties.",
+   "src": "LGPD",
+   "arts": [
+    "61",
+    "62",
+    "63",
+    "64"
+   ],
+   "ref": "lgpd-disposicoes-finais-vigencia-e-alteracoes.md"
+  },
+  {
+   "id": "Art. 65",
+   "pages": [
+    24
+   ],
+   "temas": [
+    "vigencia"
+   ],
+   "kw": [
+    "entrada em vigor",
+    "28 de dezembro de 2018",
+    "1 de agosto de 2021",
+    "24 meses",
+    "vigencia"
+   ],
+   "resumo": "Effective date (wording Lei 13.853/2019): I on 28 Dec 2018 arts. 55-A to 55-K, 55-L, 58-A and 58-B (according to the compiled text, including 55-B, now revoked); I-A on 1 Aug 2021 arts. 52, 53 and 54 (item added by Lei 14.010/2020); II the remaining articles 24 months after publication (published 15 Aug 2018).",
+   "src": "LGPD",
+   "arts": [
+    "65"
+   ],
+   "ref": "lgpd-disposicoes-finais-vigencia-e-alteracoes.md"
+  },
+  {
+   "id": "NIST Resumo executivo",
+   "pages": [
+    6
+   ],
+   "temas": [
+    "visao-geral"
+   ],
+   "kw": [
+    "executive summary",
+    "privacy engineering",
+    "predictability manageability disassociability",
+    "privacy risk model",
+    "problematic data action",
+    "roadmap"
+   ],
+   "resumo": "Presents privacy engineering as a systems engineering discipline, three objectives (predictability, manageability, disassociability) and a privacy risk model based on the problematic data action; concludes with a roadmap for future guidance. Notes that unauthorized access to PII is part of information security, but privacy risks go beyond that.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 1 Introdução",
+   "pages": [
+    9,
+    10,
+    11
+   ],
+   "temas": [
+    "visao-geral",
+    "sistemas-fronteira"
+   ],
+   "kw": [
+    "introducao",
+    "trustworthiness",
+    "confiabilidade",
+    "FIPPs",
+    "PII",
+    "smart meters",
+    "Precision Medicine",
+    "fronteira do sistema",
+    "PIA",
+    "Circular A-130",
+    "repetibilidade",
+    "mensurabilidade"
+   ],
+   "resumo": "Trustworthy systems require translating high-level principles (FIPPs) into system requirements (p.9). Examples: smart meters and the precision medicine program (p.10). The system boundary matters because privacy problems arise at any point in the handling of PII, including outside the scope of authorization (p.10). OMB A-130 (2016) requires the RMF and emphasizes privacy risk beyond compliance; a repeatable and measurable model was lacking (p.11).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 1.1-1.3 Escopo, público, organização",
+   "pages": [
+    11,
+    12,
+    13
+   ],
+   "temas": [
+    "visao-geral"
+   ],
+   "kw": [
+    "purpose and scope",
+    "audience",
+    "organization of this document",
+    "apendices"
+   ],
+   "resumo": "Scope: basis for future guidance, introduces objectives and a risk model and a roadmap; it is an introductory report (p.11). Audience: those responsible for privacy, implementation, engineering and audit (p.12). Organization in chapters 2 to 4 and appendices A to F (p.12-13).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2 Abordagem de engenharia (intro)",
+   "pages": [
+    14
+   ],
+   "temas": [
+    "visao-geral"
+   ],
+   "kw": [
+    "multidisciplinar",
+    "fronteira entre individuo e outros",
+    "tecnologia pressiona a fronteira"
+   ],
+   "resumo": "Privacy exists or is lost at the boundary between the individual and others; this boundary varies with context and technology pressures it. The ideal system optimizes benefits and minimizes adverse effects.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2.1 Segurança e privacidade",
+   "pages": [
+    14,
+    15,
+    16,
+    17
+   ],
+   "temas": [
+    "seguranca-vs-privacidade"
+   ],
+   "kw": [
+    "relacao seguranca privacidade",
+    "byproduct risk model",
+    "autorizado",
+    "nao autorizado",
+    "FIPPs lista",
+    "consentimento",
+    "Figura 2",
+    "medidores inteligentes",
+    "monitoramento"
+   ],
+   "resumo": "Security and privacy are related, not identical, disciplines (p.15). List of the A-130 FIPPs (p.15). There are security issues without privacy and privacy issues without security (p.15). Security tools, such as persistent monitoring, also affect privacy (p.16). Security risk model = unauthorized activity; 'byproduct' model = authorized processing of PII that generates implications for privacy (p.16; Figure 2, p.16). Security guides do not address the consequences of poor consent, purpose, transparency or change of use (p.16-17); privacy is not managed by security alone (p.17).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2.2 Problemas de privacidade",
+   "pages": [
+    17,
+    18
+   ],
+   "temas": [
+    "problemas-privacidade"
+   ],
+   "kw": [
+    "privacy problems",
+    "problemas de privacidade",
+    "embaraco",
+    "perda economica",
+    "discriminacao",
+    "perda de confianca",
+    "Solove",
+    "Figura 3"
+   ],
+   "resumo": "'Privacy problem' = adverse experience resulting from the processing of PII, a term chosen for discussion without legal connotation (p.17 and note 28). Examples: embarrassment, identity theft, stalking, discriminatory effect of excessive collection, inaccurate data without correction, loss of trust (p.17). Figure 3 (image, p.18): Loss of trust; Loss of self-determination (loss of autonomy, of liberty, exclusion, physical harm); Discrimination (stigmatization, power imbalance); Economic loss. Derived from Solove; it is illustrative and not exhaustive (p.18).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2.3 Definição de engenharia de privacidade",
+   "pages": [
+    18,
+    19,
+    20
+   ],
+   "temas": [
+    "definicao",
+    "requisitos"
+   ],
+   "kw": [
+    "privacy engineering definition",
+    "disciplina de engenharia de sistemas",
+    "problemas para individuos com consequencias inaceitaveis",
+    "FIPPs sao declaracoes de valor",
+    "requisito de sistema",
+    "risco aceito"
+   ],
+   "resumo": "Definition: a specialized discipline of systems engineering aimed at achieving the absence of conditions that could create problems for individuals, with unacceptable consequences, arising from the system when processing PII (p.18-19). The FIPPs are value statements, not recipes (quotation, p.19). A focus on outcome allows translating principles into system requirements; example requirement: limit the collection of a problematic data set without preventing the function (p.20). The clause 'unacceptable consequences' acknowledges risk acceptance: not all privacy risk is eliminated (p.20).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2.3.1 Engenharia de sistemas",
+   "pages": [
+    20,
+    21
+   ],
+   "temas": [
+    "definicao",
+    "sistemas-fronteira"
+   ],
+   "kw": [
+    "systems engineering",
+    "stakeholders",
+    "ciclo de vida",
+    "evidencia",
+    "confiabilidade",
+    "usabilidade"
+   ],
+   "resumo": "Systems engineering considers stakeholder needs throughout the life cycle; applied to privacy it can include the interests of individuals (p.20-21). It provides an evidence base to claim the desired level of trustworthiness and integrates other specialties (p.21). More research is needed (p.21). On the boundary: it may be determined by authorization, programmatic, operational or jurisdictional control; a programmatically expansive view may be necessary (p.19).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 2.3.2 Gestão de risco",
+   "pages": [
+    21,
+    22
+   ],
+   "temas": [
+    "gestao-risco"
+   ],
+   "kw": [
+    "risk management",
+    "linguagem comum",
+    "enterprise risk",
+    "ISO",
+    "OASIS PMRM",
+    "conformidade versus resultado",
+    "avaliacao baseada em conformidade"
+   ],
+   "resumo": "Risk management provides a common language to communicate inside and outside the organization and puts privacy risk on par with other risks (p.21). ISO and OASIS provide for privacy risk assessment but do not guide how to conduct it (p.21-22). Assessments tend to check compliance (existence of a notice) rather than effectiveness (p.22). There is growing emphasis on privacy risk beyond compliance (p.22).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST 3 Componentes (PIA, Figura 4)",
+   "pages": [
+    23
+   ],
+   "temas": [
+    "componentes",
+    "pia"
+   ],
+   "kw": [
+    "components",
+    "PIA",
+    "privacy impact assessment",
+    "risk model",
+    "risk management framework",
+    "Figura 4",
+    "objectives",
+    "requisitos de privacidade"
+   ],
+   "resumo": "The PIA is a formal analysis and document (A-130 definition, p.23). Figure 4 (image): laws, regulations and FIPPs derive privacy requirements; the risk model generates risk assessment; privacy and security engineering objectives map capabilities and provide assurance; the RMF selects controls; the PIA documents identified risks, controls and how the system meets requirements.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.1 Objetivos de engenharia de privacidade",
+   "pages": [
+    24,
+    25
+   ],
+   "temas": [
+    "objetivos"
+   ],
+   "kw": [
+    "privacy engineering objectives",
+    "predictability",
+    "manageability",
+    "disassociability",
+    "CIA triad",
+    "Figura 6",
+    "Figura 7",
+    "lacuna entre politica e engenharia"
+   ],
+   "resumo": "Objectives analogous to the CIA triad to organize system capabilities that demonstrate implementation of privacy policies; they are not new policy (p.24). Figure 6 (p.25) defines: predictability = enabling reliable assumptions by individuals, owners and operators about PII and its processing; manageability = capability for granular administration of PII, including alteration, deletion and selective disclosure; disassociability = processing PII or events without association to individuals or devices beyond operational requirements. Figure 7 (p.25): example of capabilities for identity brokers.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.1.1 Objetivos e FIPPs (Figura 8)",
+   "pages": [
+    25,
+    26
+   ],
+   "temas": [
+    "objetivos",
+    "fipps"
+   ],
+   "kw": [
+    "FIPPs",
+    "Figura 8",
+    "alinhamento",
+    "access and amendment",
+    "accountability",
+    "authority",
+    "minimization",
+    "quality and integrity",
+    "individual participation",
+    "purpose specification",
+    "transparency",
+    "security"
+   ],
+   "resumo": "The objectives complement, not replace, the FIPPs (p.25). Figure 8 (image, p.26): Access and Amendment -> manageability; Accountability -> predictability, manageability and disassociability; Authority -> predictability; Minimization -> manageability and disassociability; Quality and Integrity -> manageability; Individual Participation -> manageability; Purpose Specification and Use Limitation -> predictability; Transparency -> predictability; Security -> confidentiality, integrity, availability.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.1.1.1 Predictability",
+   "pages": [
+    26,
+    27
+   ],
+   "temas": [
+    "objetivos"
+   ],
+   "kw": [
+    "predictability",
+    "suposicoes confiaveis",
+    "aviso lido e compreendido",
+    "nao ser surpreendido",
+    "de-identificacao",
+    "mudanca de contexto"
+   ],
+   "resumo": "Predictability supports transparency and accountability; assessing whether users read and understood the notice is worth more than checking that it exists (p.26). It means designing so that parties are not surprised by the processing of PII (p.26). It may include technical measures such as de-identification and supports purpose specification and use limitation without stalling innovation, by encouraging assessment of the impact of changes in processing (p.27).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.1.1.2 Manageability",
+   "pages": [
+    27,
+    28
+   ],
+   "temas": [
+    "objetivos"
+   ],
+   "kw": [
+    "manageability",
+    "granularidade",
+    "corrigir dados inexatos",
+    "descartar dados obsoletos",
+    "preferencias de privacidade",
+    "data tagging",
+    "detecao de fraude"
+   ],
+   "resumo": "Manageability enables access and amendment, accountability, minimization, quality and integrity and individual participation: without managing information with granularity there is no way to correct inaccuracies, discard obsolete data, limit collection or apply preferences (p.27). It is not a policy statement about a right of control by the individual; in systems such as fraud detection, a privileged actor may administer the changes (p.27). It can support data tagging and attribute transmission standards (p.27-28).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.1.1.3 Disassociability",
+   "pages": [
+    28
+   ],
+   "temas": [
+    "objetivos"
+   ],
+   "kw": [
+    "disassociability",
+    "blind",
+    "exposicao dentro do perimetro autorizado",
+    "minimizacao",
+    "tecnicas criptograficas",
+    "zero-knowledge",
+    "anonimato",
+    "pseudonimia",
+    "desindexacao",
+    "taxonomia"
+   ],
+   "resumo": "Disassociability: the system protects ('blinds') the identity or associated activities of the individual against exposure; unlike confidentiality, it recognizes exposure risks within the authorized perimeter and is more closely tied to minimization (p.28). Association with individuals must be a real operational requirement, not a convenience (p.28). Cryptographic techniques (e.g., zero-knowledge proof, note 63) may map to this objective; a taxonomy is suggested (anonymity, de-identification, unlinkability, unobservability, pseudonymity) (p.28).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.2 Modelo de risco de privacidade",
+   "pages": [
+    28,
+    29
+   ],
+   "temas": [
+    "modelo-risco"
+   ],
+   "kw": [
+    "privacy risk model",
+    "risco",
+    "likelihood",
+    "impact",
+    "threat vulnerability",
+    "problematic data action",
+    "acao de dados problematica"
+   ],
+   "resumo": "Risk = function of adverse impact and likelihood of occurrence; the assessment requires a risk model that defines factors and relationships (p.29). In security the factors are threat and vulnerability; these terms do not capture many privacy problems (p.29). For privacy the factor is the 'problematic data action': a data action that causes an adverse effect or problem for individuals (p.29).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.2.1 Fatores de risco (probabilidade e impacto)",
+   "pages": [
+    29,
+    30
+   ],
+   "temas": [
+    "modelo-risco"
+   ],
+   "kw": [
+    "likelihood",
+    "impact",
+    "probabilidade",
+    "impacto",
+    "individuo tipico",
+    "percepcao dos usuarios",
+    "grupos focais",
+    "custos proxies",
+    "conformidade",
+    "missao",
+    "reputacao",
+    "cultura interna",
+    "risco residual"
+   ],
+   "resumo": "Likelihood = chance that a data action becomes problematic for a representative individual; perception and context are central; demographics, similar scenarios, focus groups or surveys may be used (p.30). Impact = magnitude of cost or harm; only individuals directly feel the problem; proxies: costs of compliance, mission failure, reputation and internal culture (p.30). Risk can be managed, not eliminated; the aim is acceptable residual risk (p.30-31).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 3.2.2 Características (ações de dados, PII, contexto)",
+   "pages": [
+    31
+   ],
+   "temas": [
+    "modelo-risco"
+   ],
+   "kw": [
+    "data actions",
+    "acoes de dados",
+    "PII",
+    "context",
+    "contexto",
+    "coleta retencao logging analise merge divulgacao transferencia descarte"
+   ],
+   "resumo": "Data actions = system operations that process PII (collection, retention, logging, analysis, generation, transformation or merging, disclosure, transfer, disposal); the assessment must identify the discrete actions and which of them may be problematic. PII = information that distinguishes or traces identity, alone or combined with other linkable information. Context = circumstances of the processing; an email in an office directory is not a problem, but the same email linked to a health condition and disclosed outside that context may cause embarrassment or discrimination (p.31).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST 4 Roteiro",
+   "pages": [
+    32,
+    33
+   ],
+   "temas": [
+    "roteiro"
+   ],
+   "kw": [
+    "roadmap",
+    "NIST SP 800-30",
+    "800-37",
+    "800-53",
+    "800-122",
+    "800-160",
+    "Figura 9",
+    "orientacoes futuras",
+    "paridade com risco corporativo"
+   ],
+   "resumo": "NIST intends to expand guidance to apply the risk model and the objectives to the RMF; security guidance serves unauthorized access risks, but is less suited to authorized processing risk (p.32). Figure 9 (image, p.33): security publications (SP 800-18, -30, -37, -39, -53, -53A, -60, -122, -160) for which complementary privacy guidance is planned. Goal: parity of privacy with other enterprise risks (p.33).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-objetivos-e-modelo-de-risco.md"
+  },
+  {
+   "id": "NIST Apêndice A Processo de desenvolvimento",
+   "pages": [
+    34,
+    35
+   ],
+   "temas": [
+    "apendices"
+   ],
+   "kw": [
+    "workshops",
+    "public comments",
+    "comunicacao entre juridico e engenharia",
+    "lacuna de comunicacao",
+    "ferramentas de medicao"
+   ],
+   "resumo": "2014 workshops, public comments and a May 2015 draft. Three key issues: communication gap between legal/policy, engineering and product management; need for tools to measure effectiveness; risk management as the driver of the approach (p.34).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST Apêndice B Glossário",
+   "pages": [
+    36,
+    37
+   ],
+   "temas": [
+    "glossario"
+   ],
+   "kw": [
+    "glossary",
+    "context",
+    "data actions",
+    "disassociability",
+    "manageability",
+    "PII",
+    "predictability",
+    "privacy control",
+    "privacy engineering",
+    "problematic data action",
+    "processing",
+    "risk",
+    "system privacy requirement",
+    "trustworthiness"
+   ],
+   "resumo": "Defines context, data actions, disassociability, manageability, PII, predictability, privacy control (administrative, technical and physical safeguards), privacy engineering, problematic data action, processing, risk, senior agency official for privacy, system, systems engineering, system privacy requirement (verifiable by analysis, observation, test, inspection or measurement) and trustworthiness.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST Apêndice C-D Siglas e referências",
+   "pages": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+   ],
+   "temas": [
+    "apendices"
+   ],
+   "kw": [
+    "acronyms",
+    "references",
+    "legislacao",
+    "OMB",
+    "NIST SP",
+    "ISO"
+   ],
+   "resumo": "Acronyms (p.38) and list of legislative references, OMB memoranda, NIST publications and others (p.39-43).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST Apêndice E Preocupações além de vazamento",
+   "pages": [
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "temas": [
+    "problemas-privacidade"
+   ],
+   "kw": [
+    "cyber-physical",
+    "smart meters",
+    "smart cities",
+    "drones",
+    "body scanners",
+    "personal health information",
+    "biobank",
+    "reidentificacao",
+    "big data",
+    "vies",
+    "discriminacao",
+    "ATS",
+    "ESTA",
+    "midias sociais"
+   ],
+   "resumo": "Examples of problems that do not stem from a breach: cyber-physical systems (smart meters, smart cities, connected vehicles, body scanners, drones) (p.44-46); health information, including doubt about the extent of consent and reidentification (p.46-47); big data and analytic systems with bias or discrimination, such as DHS's ATS and ESTA/social media (p.47-48).",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  },
+  {
+   "id": "NIST Apêndice F FIPPs da Circular A-130",
+   "pages": [
+    49
+   ],
+   "temas": [
+    "fipps"
+   ],
+   "kw": [
+    "FIPPs",
+    "access and amendment",
+    "accountability",
+    "authority",
+    "minimization",
+    "quality and integrity",
+    "individual participation",
+    "purpose specification and use limitation",
+    "security",
+    "transparency"
+   ],
+   "resumo": "Defines the nine FIPPs of A-130: Access and Amendment; Accountability (monitor, audit, document, define roles and train); Authority; Minimization (only relevant and necessary PII, only for as long as necessary); Quality and Integrity; Individual Participation (consent to the extent practicable and procedures for complaints); Purpose Specification and Use Limitation; Security (administrative, technical and physical safeguards proportional to risk); Transparency.",
+   "src": "NIST8062",
+   "arts": [],
+   "ref": "nist8062-engenharia-de-privacidade-e-risco.md"
+  }
+ ],
+ "amendments": [
+  {
+   "art": "ementa",
+   "unit": "Title/summary (Ementa) (LGPD)",
+   "page": 1,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "1",
+   "unit": "sole paragraph",
+   "page": 1,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "3",
+   "unit": "II",
+   "page": 1,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "4",
+   "unit": "§ 4º",
+   "page": 2,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "5",
+   "unit": "VIII (encarregado)",
+   "page": 3,
+   "tipo": "wording",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "5",
+   "unit": "XVIII (research body)",
+   "page": 3,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "5",
+   "unit": "XIX (national authority)",
+   "page": 3,
+   "tipo": "wording",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "7",
+   "unit": "VIII",
+   "page": 4,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "7",
+   "unit": "§§ 1º and 2º",
+   "page": 4,
+   "tipo": "revoked (wording of Lei 13.853/2019)",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "7",
+   "unit": "§ 7º",
+   "page": 5,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "11",
+   "unit": "II, f",
+   "page": 6,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "11",
+   "unit": "§ 4º, caput, I and II",
+   "page": 7,
+   "tipo": "wording/added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "11",
+   "unit": "§ 5º",
+   "page": 7,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "18",
+   "unit": "V",
+   "page": 9,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "18",
+   "unit": "§ 6º",
+   "page": 9,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "20",
+   "unit": "caput",
+   "page": 10,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "20",
+   "unit": "§ 3º",
+   "page": 10,
+   "tipo": "vetoed",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "23",
+   "unit": "II and IV",
+   "page": 11,
+   "tipo": "vetoed",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "23",
+   "unit": "III",
+   "page": 11,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "26",
+   "unit": "II",
+   "page": 11,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "26",
+   "unit": "IV and V",
+   "page": 11,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "27",
+   "unit": "sole paragraph",
+   "page": 12,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "28",
+   "unit": "caput",
+   "page": 12,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "29",
+   "unit": "caput",
+   "page": 12,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "41",
+   "unit": "§ 4º",
+   "page": 14,
+   "tipo": "vetoed",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "52",
+   "unit": "caput, 53 and 54",
+   "page": 17,
+   "tipo": "marked '(Vigência)' (effective date) in the compiled text; effective 1 Aug 2021 under Art. 65, I-A",
+   "lei": "14.010",
+   "ano": 2020
+  },
+  {
+   "art": "52",
+   "unit": "VII, VIII and IX",
+   "page": 17,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "52",
+   "unit": "X, XI and XII",
+   "page": 17,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "52",
+   "unit": "§ 2º",
+   "page": 18,
+   "tipo": "wording",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "52",
+   "unit": "§ 3º",
+   "page": 18,
+   "tipo": "promulgation of vetoed parts",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "52",
+   "unit": "§§ 5º, 6º and 7º",
+   "page": 18,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "55",
+   "unit": "caput",
+   "page": 19,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "55-A",
+   "unit": "caput",
+   "page": 19,
+   "tipo": "wording",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "55-A",
+   "unit": "§§ 1º to 3º",
+   "page": 19,
+   "tipo": "revoked",
+   "lei": "14.460",
+   "ano": 2022
+  },
+  {
+   "art": "55-B",
+   "unit": "caput",
+   "page": 19,
+   "tipo": "revoked",
+   "lei": "14.460",
+   "ano": 2022
+  },
+  {
+   "art": "cap. IX",
+   "unit": "title of Chapter IX",
+   "page": 19,
+   "tipo": "wording",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "55-C",
+   "unit": "caput and I-IV",
+   "page": 19,
+   "tipo": "added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "55-C",
+   "unit": "V",
+   "page": 19,
+   "tipo": "revoked/wording",
+   "lei": "14.460",
+   "ano": 2022
+  },
+  {
+   "art": "55-C",
+   "unit": "V-A and VI",
+   "page": 19,
+   "tipo": "wording",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "55-C",
+   "unit": "V-B",
+   "page": 19,
+   "tipo": "added",
+   "lei": "15.352",
+   "ano": 2026
+  },
+  {
+   "art": "55-D a 55-L",
+   "unit": "caput and sub-items",
+   "page": 19,
+   "tipo": "added (p.19-22)",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "55-L",
+   "unit": "V",
+   "page": 22,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "55-M",
+   "unit": "caput, I and II",
+   "page": 22,
+   "tipo": "added",
+   "lei": "14.460",
+   "ano": 2022
+  },
+  {
+   "art": "56 e 57",
+   "unit": "caput",
+   "page": 22,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "58",
+   "unit": "caput",
+   "page": 23,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "58-A e 58-B",
+   "unit": "caput and sub-items",
+   "page": 23,
+   "tipo": "added (p.23-24)",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "59",
+   "unit": "caput",
+   "page": 24,
+   "tipo": "vetoed",
+   "lei": null,
+   "ano": null
+  },
+  {
+   "art": "65",
+   "unit": "caput, I and II",
+   "page": 24,
+   "tipo": "wording/added",
+   "lei": "13.853",
+   "ano": 2019
+  },
+  {
+   "art": "65",
+   "unit": "I-A",
+   "page": 24,
+   "tipo": "added",
+   "lei": "14.010",
+   "ano": 2020
+  }
+ ],
+ "gaps": {
+  "LGPD": [
+   "inteligência artificial",
+   "cookies",
+   "controlador conjunto",
+   "suboperador",
+   "direito ao esquecimento",
+   "reconhecimento facial",
+   "criptografia",
+   "inventário de dados",
+   "mapeamento de dados",
+   "72 horas",
+   "GDPR",
+   "RGPD",
+   "resolução",
+   "privacy by design",
+   "DPO",
+   "ISO/IEC",
+   "marketing",
+   "trabalhador",
+   "teste de proporcionalidade",
+   "hash",
+   "geolocalização",
+   "big data",
+   "ciclo de vida",
+   "avaliação de impacto"
+  ],
+  "NIST8062": [
+   "PRAM",
+   "differential privacy",
+   "k-anonymity",
+   "homomorphic",
+   "encryption",
+   "Revision 5",
+   "data flow",
+   "scoring",
+   "heat map",
+   "risk matrix",
+   "27001",
+   "threshold",
+   "Identify-P",
+   "DPIA",
+   "incident",
+   "opt-in",
+   "data map",
+   "inventory"
+  ]
+ }
+}

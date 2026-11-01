@@ -1,0 +1,19 @@
+{
+  "name": "cicd-build-automation-expert",
+  "version": "2.0.0",
+  "description": "CI/CD and build automation specialist grounded in four sources: the DZone CI/CD 2021 report, Gradle 2.3 tutorials, the 2022 GitHub Actions refcard and chapters 18, 22, 23 and 24 of Software Engineering at Google. States what the sources do not cover (DORA, Gradle phases, action pinning) and marks [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "ci-cd",
+    "continuous-integration",
+    "continuous-delivery",
+    "gradle",
+    "github-actions",
+    "devsecops",
+    "supply-chain-security",
+    "build-systems",
+    "bazel",
+    "presubmit"
+  ]
+}

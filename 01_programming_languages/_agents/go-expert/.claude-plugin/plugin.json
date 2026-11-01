@@ -1,0 +1,9 @@
+{
+  "name": "go-expert",
+  "version": "0.2.0",
+  "description": "Go specialist agent (review, decisions, concurrency, generics and version migration) distilled from Effective Go, the Language Specification, the Little Go Book and the 1.20-1.24 release notes, with 4 skills, lookup scripts and references traceable by PDF page. Labels [from source]/[inference]/[extrapolation]/[DATED]; no Go 1.25/1.26.",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  }
+}

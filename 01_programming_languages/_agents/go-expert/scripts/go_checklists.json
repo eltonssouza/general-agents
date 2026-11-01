@@ -1,0 +1,114 @@
+{
+  "_comentario": "Checklists by area for go-expert. 'origem': 'from source' (the cited page says so; the 'terms' are checked by tests/verify_citations.py), 'inference' (conclusion of the package from the sources) or 'extrapolation' (knowledge outside the sources). Pages = PDF (Little: printed = N-1). [DATED] items come from Eff (2009) or Little (go1.3.3). Area keys are kept in Portuguese (go_checklist.py also accepts English aliases).",
+  "areas": {
+    "formatacao": {
+      "titulo": "Formatting and comments",
+      "itens": [
+        {"texto": "Let gofmt decide the layout (do not align comments or fields by hand)", "origem": "from source", "doc": "Eff", "paginas": [2], "terms": ["Gofmt will do that for you"]},
+        {"texto": "Indent with tabs", "origem": "from source", "doc": "Eff", "paginas": [3], "terms": ["We use tabs for indentation"]},
+        {"texto": "Opening brace on the same line as if/for/switch/select", "origem": "from source", "doc": "Eff", "paginas": [5, 6], "terms": ["cannot put the opening brace"]},
+        {"texto": "No parentheses in if/for/switch", "origem": "from source", "doc": "Eff", "paginas": [3], "terms": ["do not have parentheses in their syntax"]},
+        {"texto": "Doc comment conventions beyond the basics: not covered (Effective Go refers to 'Go Doc Comments', which is not in the sources)", "origem": "inference"}
+      ]
+    },
+    "nomes": {
+      "titulo": "Names and exporting",
+      "itens": [
+        {"texto": "Package name in lowercase, one word, no underscore or mixedCaps", "origem": "from source", "doc": "Eff", "paginas": [4], "terms": ["no need for underscores or mixedCaps"]},
+        {"texto": "Do not repeat the package name in the symbol (bufio.Reader, not BufReader; ring.New, not NewRing)", "origem": "from source", "doc": "Eff", "paginas": [4], "terms": ["not BufReader", "ring.New"]},
+        {"texto": "Getter without Get (Owner, not GetOwner); setter SetOwner", "origem": "from source", "doc": "Eff", "paginas": [4], "terms": ["not GetOwner"]},
+        {"texto": "One-method interface: method name + -er", "origem": "from source", "doc": "Eff", "paginas": [5], "terms": ["-er suffix"]},
+        {"texto": "Visibility by initial uppercase letter (types, functions and fields)", "origem": "from source", "doc": "Little", "paginas": [56], "terms": ["starts with an uppercase letter"]}
+      ]
+    },
+    "erros": {
+      "titulo": "Errors",
+      "itens": [
+        {"texto": "Handle every error return before using the result; do not discard it with _ to 'ignore' it", "origem": "from source", "doc": "Eff", "paginas": [36], "terms": ["Always check error returns"]},
+        {"texto": "Return early on the error path, without an unnecessary else", "origem": "from source", "doc": "Eff", "paginas": [6, 7], "terms": ["unnecessary else is omitted", "eliminating"]},
+        {"texto": "defer resource.Close() right after checking the open error", "origem": "from source", "doc": "Little", "paginas": [65], "terms": ["defer file.Close()"]},
+        {"texto": "Sentinel such as io.EOF: compare with ==", "origem": "from source", "doc": "Little", "paginas": [64], "terms": ["if err == io.EOF"]},
+        {"texto": "A structured error (like os.PathError) lets you inspect the cause by type switch/assertion", "origem": "from source", "doc": "Eff", "paginas": [48, 49], "terms": ["PathError"]},
+        {"texto": "Error chaining (%w, errors.Is/As): the sources only cite errors.Join and multiple %w (RN1.20 p.6, p.10); any guidance beyond that is [extrapolation]", "origem": "inference"}
+      ]
+    },
+    "ponteiros-receivers": {
+      "titulo": "Pointers and receivers",
+      "itens": [
+        {"texto": "Pointer receiver when the method needs to change the receiver", "origem": "from source", "doc": "Eff", "paginas": [29], "terms": ["pointer methods can modify the receiver"]},
+        {"texto": "A pointer method only on a pointer (an addressable value gets & automatically); only *T satisfies the interface with pointer methods", "origem": "from source", "doc": "Eff", "paginas": [29], "terms": ["only *ByteSlice satisfies io.Writer", "addressable"]},
+        {"texto": "If you need to print T and *T with String(), the String receiver must be a value", "origem": "from source", "doc": "Eff", "paginas": [24], "terms": ["receiver for String must be of"]},
+        {"texto": "[DATED] Little's heuristic: when in doubt, use a pointer (the author's opinion, not a Spec rule)", "origem": "from source", "doc": "Little", "paginas": [37], "terms": ["if you aren't sure, use a pointer"]},
+        {"texto": "Mixing value and pointer receivers on the same type: no source covers it; avoid it without a reason because of the method set rule", "origem": "inference"}
+      ]
+    },
+    "slices-maps": {
+      "titulo": "Slices and maps",
+      "itens": [
+        {"texto": "Reassign the result of append (the underlying array may change)", "origem": "from source", "doc": "Eff", "paginas": [19, 26], "terms": ["underlying array may change"]},
+        {"texto": "make([]T, n) creates n elements; for capacity without elements use make([]T, 0, n)", "origem": "from source", "doc": "Little", "paginas": [42, 43], "terms": ["length of 0 but with a capacity of 10", "9332"]},
+        {"texto": "A subslice shares the array (the upper bound of slicing is cap); use copy or the a[low:high:max] form to isolate", "origem": "from source", "doc": "Spec", "paginas": [54, 55], "terms": ["rather than the length", "full slice expression"]},
+        {"texto": "Nil map: writing panics (initialize with make)", "origem": "from source", "doc": "Spec", "paginas": [53], "terms": ["Assigning to an element of a nil map causes a run-time panic"]},
+        {"texto": "Do not depend on map iteration order", "origem": "from source", "doc": "Little", "paginas": [48], "terms": ["Iteration over maps isn't ordered"]},
+        {"texto": "A slice cannot be a map key (equality is not defined)", "origem": "from source", "doc": "Eff", "paginas": [20], "terms": ["Slices cannot be used as map keys"]}
+      ]
+    },
+    "interfaces": {
+      "titulo": "Interfaces",
+      "itens": [
+        {"texto": "Accept the narrow interface the function actually uses (e.g. io.Closer)", "origem": "from source", "doc": "Little", "paginas": [58, 59], "terms": ["io.Closer"]},
+        {"texto": "Single-form type assertion only if a crash is acceptable; otherwise use comma ok", "origem": "from source", "doc": "Eff", "paginas": [32], "terms": ["comma, ok", "run-time"]},
+        {"texto": "String() must not format its own type with %s/%v (recursion); convert to the base type", "origem": "from source", "doc": "Eff", "paginas": [24], "terms": ["OK: note conversion"]},
+        {"texto": "An interface holding a nil pointer is not nil: deduction from Spec p.12 + p.69; no source describes the trap", "origem": "inference"},
+        {"texto": "'Accept interfaces, return structs' is not in any source; if you recommend it, label it", "origem": "inference"}
+      ]
+    },
+    "defer-panic": {
+      "titulo": "defer, panic and recover",
+      "itens": [
+        {"texto": "defer in a loop only runs at the end of the function (deferred calls run before the function returns)", "origem": "from source", "doc": "Spec", "paginas": [97], "terms": ["in the reverse order", "before the surrounding function returns"]},
+        {"texto": "defer arguments are evaluated when the defer is executed; a nil function panics only at invocation", "origem": "from source", "doc": "Spec", "paginas": [97], "terms": ["not when the \"defer\" statement is executed"]},
+        {"texto": "panic only for the 'impossible' or initialization failure; libraries avoid panic", "origem": "from source", "doc": "Eff", "paginas": [50], "terms": ["real library functions should avoid panic"]},
+        {"texto": "recover only works when called directly by a deferred function", "origem": "from source", "doc": "Spec", "paginas": [105], "terms": ["called directly by a deferred function"]},
+        {"texto": "Convert an internal panic into an error at the package boundary (local error type, re-panic if it is another)", "origem": "from source", "doc": "Eff", "paginas": [51, 52], "terms": ["calling panic with a local error type"]},
+        {"texto": "panic(nil) becomes *runtime.PanicNilError since Go 1.21 (panicnil=1 reverts)", "origem": "from source", "doc": "RN1.21", "paginas": [3], "terms": ["*runtime.PanicNilError", "GODEBUG=panicnil=1"]}
+      ]
+    },
+    "concorrencia": {
+      "titulo": "Concurrency",
+      "itens": [
+        {"texto": "time.Sleep is not synchronization (Little uses it only to show that main exits without waiting)", "origem": "from source", "doc": "Little", "paginas": [73], "terms": ["this is bad, don't do this!"]},
+        {"texto": "Lock() followed by defer Unlock(); forgetting Unlock causes deadlock", "origem": "from source", "doc": "Little", "paginas": [75], "terms": ["defer lock.Unlock()", "deadlock with a single lock"]},
+        {"texto": "When main returns the program exits and does not wait for the other goroutines", "origem": "from source", "doc": "Spec", "paginas": [111], "terms": ["It does not wait for other"]},
+        {"texto": "Goroutine in a loop: before Go 1.22 the loop variable is shared; find out the version (that it depends on the go line of go.mod is an inference)", "origem": "from source", "doc": "Eff", "paginas": [44], "terms": ["before 1.22", "loop variable is shared"]},
+        {"texto": "Limit goroutine creation (buffered channel as a semaphore or a fixed pool)", "origem": "from source", "doc": "Eff", "paginas": [44, 45], "terms": ["MaxOutstanding"]},
+        {"texto": "Go 1.23+: Timer/Ticker channel is unbuffered; len(t.C) is not a readiness test", "origem": "from source", "doc": "RN1.23", "paginas": [4], "terms": ["unbuffered, with capacity 0", "non-blocking receive"]},
+        {"texto": "select with default in a loop, with no other blocking, spins without waiting (burns CPU)", "origem": "inference"},
+        {"texto": "Who closes the channel: the Spec does not say; 'the sender closes' is an inference (sending on a closed channel panics, Spec p.80)", "origem": "inference"},
+        {"texto": "sync.WaitGroup, context and errgroup: not covered in the sources; any recommended use is [extrapolation]", "origem": "inference"}
+      ]
+    },
+    "generics": {
+      "titulo": "Generics",
+      "itens": [
+        {"texto": "~T requires the underlying type of T to be T and T not to be an interface (~MyInt is illegal)", "origem": "from source", "doc": "Spec", "paginas": [22], "terms": ["~MyInt   // illegal"]},
+        {"texto": "Non-interface terms of a union must be disjoint (~int | MyInt is illegal)", "origem": "from source", "doc": "Spec", "paginas": [23], "terms": ["pairwise disjoint"]},
+        {"texto": "Interfaces satisfy comparable since Go 1.20 (any works in [K comparable]) with a panic risk when comparing", "origem": "from source", "doc": "Spec", "paginas": [38, 39], "terms": ["they satisfy", "comparing operands"]},
+        {"texto": "A partial list of type arguments is a prefix; apply[] is illegal; with no argument that fixes the parameter, pass the type argument explicitly", "origem": "from source", "doc": "Spec", "paginas": [59], "terms": ["apply[[]string, string]"]},
+        {"texto": "A method only uses the receiver's type parameters (there is no method with its own type parameters)", "origem": "from source", "doc": "Spec", "paginas": [41, 42], "terms": ["MethodDecl"]},
+        {"texto": "Check the version required by the feature (Spec version table)", "origem": "from source", "doc": "Spec", "paginas": [115], "terms": ["will be rejected if the implied or required language version"]},
+        {"texto": "When to use generics: no source gives guidance; any recommendation is [extrapolation]", "origem": "inference"}
+      ]
+    },
+    "versao-migracao": {
+      "titulo": "Version and migration (Go 1.20 to 1.24)",
+      "itens": [
+        {"texto": "Read the go line and the toolchain directive of go.mod; raising only the toolchain preserves the old behavior of the go line", "origem": "from source", "doc": "RN1.21", "paginas": [3], "terms": ["preserves the behavior of the older toolchain", "toolchain directive"]},
+        {"texto": "rand.Seed: global generator seeded automatically in 1.20; top-level Seed becomes a no-op in 1.24 (randseednop=0 reverts)", "origem": "from source", "doc": "RN1.24", "paginas": [12], "terms": ["randseednop=0"]},
+        {"texto": "Go 1.24: the tool directive in go.mod replaces the tools.go pattern", "origem": "from source", "doc": "RN1.24", "paginas": [2], "terms": ["tool directives in go.mod", "tools.go"]},
+        {"texto": "Raising one version at a time is an inference (the notes do not dictate the order)", "origem": "inference"},
+        {"texto": "Go 1.25 and 1.26: no release notes in the sources; say there is no coverage", "origem": "inference"}
+      ]
+    }
+  }
+}

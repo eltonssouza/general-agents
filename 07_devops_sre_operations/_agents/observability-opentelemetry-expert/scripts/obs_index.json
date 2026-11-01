@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "source": "DOW = Getting Started With Observability for Distributed Systems (DZone Refcard, 2021, 7 pp.); OTW = Getting Started With OpenTelemetry (DZone Refcard, 2021, 7 pp.)",
+    "page_convention": "PDF page = printed number (1-7). Page 2 of each PDF is an ad with no technical content.",
+    "labels": "rules = stated in the sources (with page); not_in_book = NOT in the sources: can only be said as [inference], [extrapolation] or [DATED]."
+  },
+  "topics": {
+    "monitoring_vs_observability": {
+      "name": "Monitoring vs observability",
+      "citation": "DOW p.3",
+      "keywords": ["monitoramento", "monitoring", "observabilidade", "observability", "diferença", "difference", "quando", "when", "porque", "why", "proativo", "proactive"],
+      "summary": "Monitoring obtains state from predefined measurements for known problems; observability measures understanding of state from multiple outputs and must be designed in from the start.",
+      "rules": [
+        "Monitoring: state from predefined measurements, detects a known set of problems (DOW p.3)",
+        "Observability: understanding of state from multiple outputs; a capability designed in during initial construction, like reliability and security (DOW p.3)",
+        "Monitoring tells you when something is wrong; observability tells you why; monitoring is a subset (DOW p.3)",
+        "Everyone's responsibility, as with DevSecOps (DOW p.3)"
+      ],
+      "not_in_book": ["Formal definition of controllability/observability from control theory", "SLOs and symptom-based alerts"]
+    },
+    "pillars": {
+      "name": "Pillars: logs, metrics, traces (3) and five pillars",
+      "citation": "DOW p.3-5",
+      "keywords": ["pilar", "pilares", "pillar", "pillars", "logs", "metricas", "metrics", "traces", "cinco", "five", "three", "profiling"],
+      "summary": "The text mentions three pillars (logs, metrics, traces) on p.3 and five on p.5 (three for collection, alerting and graphing for interpretation). Figure 2 uses Monitoring, Logging, Tracing.",
+      "rules": [
+        "Observability complements monitoring with three pillars: logs, metrics, traces (DOW p.3)",
+        "Five pillars: three for collection and two for interpretation (DOW p.5)",
+        "The three data types work together (DOW p.4)"
+      ],
+      "not_in_book": ["Events/profiles as additional pillars (note: Fig. 2 mentions Profiling as a step, without detail)", "Automatic correlation between signals"]
+    },
+    "metrics": {
+      "name": "Metrics",
+      "citation": "DOW p.4; OTW p.4",
+      "keywords": ["metrica", "metricas", "metric", "metrics", "cpu", "memoria", "memory", "tags", "histograma", "histogram", "taxa", "rate", "latencia", "latency"],
+      "summary": "Numeric measurements of state; with tags they can be grouped; in OTel they are aggregated in the emitting application and collected at fixed intervals.",
+      "rules": [
+        "Numeric measurements, tags allow grouping and querying, good for trends (DOW p.4)",
+        "Anyone can create a metric (DOW p.4)",
+        "In OTel: aggregated in the emitting application, intervals from 1 s to 1 day, basis for alerts and automated actions (OTW p.4)",
+        "Examples: request rate, latency per histogram bucket, bandwidth usage (OTW p.4)"
+      ],
+      "not_in_book": ["Instrument types (counter, gauge)", "Cardinality", "Exemplars"]
+    },
+    "logs": {
+      "name": "Logs and log policy",
+      "citation": "DOW p.4, 6; OTW p.4",
+      "keywords": ["log", "logs", "logging", "politica", "policy", "estruturado", "structured", "json", "binario", "binary", "coletor", "collector", "tags", "verbosidade", "verbosity"],
+      "summary": "Immutable timestamped records; three formats; global log policy and tag management; a collector centralizes.",
+      "rules": [
+        "Immutable and timestamped; plaintext, structured, or binary (DOW p.4)",
+        "Global policy: format and flow, verbosity per environment, transformations (DOW p.6)",
+        "Tags to correlate metric and event; collector reads, transforms, centralizes; compression and archiving (DOW p.6)",
+        "In OTel: logs standalone or attached to spans (OTW p.4)"
+      ],
+      "not_in_book": ["Log levels", "Correlating log with trace via trace_id in the log", "PII redaction"]
+    },
+    "traces": {
+      "name": "Traces and spans",
+      "citation": "DOW p.4, 6; OTW p.4-5",
+      "keywords": ["trace", "traces", "span", "spans", "tracing", "rastreamento", "pai", "parent", "raiz", "root", "spankind", "spancontext"],
+      "summary": "Trace = lifecycle of a request across services; span = operation with duration, errors, and a reference to its parent; tree with a root span.",
+      "rules": [
+        "A trace represents the request lifecycle in the distributed system (DOW p.4)",
+        "A span records duration, errors, and a reference to the parent span (OTW p.4)",
+        "Spans form a tree with a root; they need a name, unique ID, and trace ID (OTW p.5)",
+        "SpanKind describes relationships such as synchronous calls and helps visualize latency (OTW p.5)",
+        "Unique identifier at each step to correlate (DOW p.6)"
+      ],
+      "not_in_book": ["Span links", "Span status/events in detail", "SpanKind values other than SERVER and INTERNAL in the example"]
+    },
+    "context_propagation": {
+      "name": "Context API and context propagation",
+      "citation": "OTW p.5",
+      "keywords": ["contexto", "context", "propagacao", "propagation", "cabecalho", "header", "headers", "inject", "extract", "baggage", "traceparent", "w3c"],
+      "summary": "OTel injects context (trace ID, span ID, state) into headers and extracts it in the receiving service; allows user-defined properties.",
+      "rules": [
+        "Context includes trace ID, span ID, and the current span's state (OTW p.5)",
+        "Injection into headers and extraction at the receiver = context propagation (OTW p.5)",
+        "User-defined properties (e.g., user ID, region) can be attached (OTW p.5)"
+      ],
+      "not_in_book": ["W3C traceparent format (DOW p.7 only lists the link)", "Baggage by name", "Propagation via messaging"]
+    },
+    "sdk_tracing": {
+      "name": "Tracing SDK: Tracer Provider, sampling, processors",
+      "citation": "OTW p.3-5",
+      "keywords": ["sdk", "tracer", "provider", "amostragem", "sampling", "tail", "head", "processor", "batch", "exporter"],
+      "summary": "Tracer Provider creates traces and configures processors, sampling, IDs, and limits; the SDK can filter/sample and export to multiple destinations.",
+      "rules": [
+        "The SDK is the bridge between API and export; filters or samples; multiple destinations (OTW p.3)",
+        "Tracer Provider configures processors, sampling, IDs, and limits (OTW p.4)",
+        "Span processors in a pipeline in registration order (OTW p.5)",
+        "BatchSpanProcessor groups spans before the exporter (OTW p.5)"
+      ],
+      "not_in_book": ["Tail-based/head-based sampling strategies and sampler types (always_on, parent-based, ratio)", "OTEL_* variables", "SDKs for other languages"]
+    },
+    "collector": {
+      "name": "Collector: receivers, processors, exporters, pipelines",
+      "citation": "OTW p.3",
+      "keywords": ["collector", "receiver", "processor", "exporter", "pipeline", "yaml", "otlp", "extension"],
+      "summary": "Vendor- and language-agnostic alternative; YAML pipelines connect receivers, processors (order matters), and exporters.",
+      "rules": [
+        "Vendor- and language-independent (OTW p.3)",
+        "Receivers listen on ports or pull; processors enrich/transform in sequence (order matters); exporters send to backends, with multiple destinations (OTW p.3)",
+        "Pipelines defined in YAML; example with otlp, batch, otlp and extensions health_check/pprof/zpages (OTW p.3)"
+      ],
+      "not_in_book": ["Processors other than batch", "tail_sampling", "memory_limiter", "Contrib distributions", "Collector TLS and authentication"]
+    },
+    "deployment_agent_gateway": {
+      "name": "Collector deployment: Agent vs Gateway",
+      "citation": "OTW p.3",
+      "keywords": ["agent", "gateway", "daemonset", "sidecar", "implantacao", "deploy", "deployment", "kubernetes", "operator"],
+      "summary": "Agent (on the application host; binary, sidecar, DaemonSet) is the recommended option; Gateway is a standalone service per cluster/datacenter, more complex, with token management and scaling.",
+      "rules": [
+        "Agent: recommended; push or pull; enriches with tags and hardware information (OTW p.3)",
+        "Gateway: standalone service, multiple instances, per cluster or datacenter; API token management and scaling flexibility (OTW p.3)"
+      ],
+      "not_in_book": ["Layered agent+gateway topologies (the text does not describe them)", "Sizing and HA", "OpenTelemetry Operator for Kubernetes"]
+    },
+    "otlp": {
+      "name": "OpenTelemetry Protocol (OTLP)",
+      "citation": "OTW p.3",
+      "keywords": ["otlp", "protocolo", "protocol", "grpc", "http", "protobuf"],
+      "summary": "Specification for encoding, transporting, and delivering telemetry between sources, collectors, and backends; gRPC or HTTP with a Protocol Buffer schema.",
+      "rules": ["Between sources, intermediate nodes, and backends, via gRPC or HTTP with Protocol Buffers (OTW p.3)"],
+      "not_in_book": ["Default ports 4317/4318 (4317 only appears in the example YAML)", "Versions and compression"]
+    },
+    "instrumentation": {
+      "name": "Automatic vs manual instrumentation; legacy",
+      "citation": "OTW p.4, 6",
+      "keywords": ["instrumentacao", "instrumentation", "automatica", "automatic", "manual", "flask", "django", "legado", "legacy", "telegraf", "greenfield"],
+      "summary": "Automatic saves repetitive code but loses control; manual gives control; legacy can use a converter such as Telegraf instead of refactoring.",
+      "rules": [
+        "Instrumenting = adding the SDK to emit signals; automatic and manual options (OTW p.4)",
+        "FlaskInstrumentor replaces the manual code; supports Django, MongoDB, PostgreSQL (OTW p.6)",
+        "Automatic saves code, but loses control (OTW p.6)",
+        "Legacy: refactoring may not be worth it; Telegraf converts existing telemetry to OTel (OTW p.6)",
+        "DOW p.6: instrument via code (APM) or service mesh"
+      ],
+      "not_in_book": ["Agent-based auto-instrumentation for Java/.NET", "OTel Operator for Kubernetes"]
+    },
+    "backends": {
+      "name": "Backends for traces, metrics, and logs",
+      "citation": "OTW p.7",
+      "keywords": ["backend", "backends", "jaeger", "zipkin", "prometheus", "influxdb", "elasticsearch", "fluentd", "logstash", "telegraf", "armazenamento", "storage"],
+      "summary": "Traces: Zipkin and Jaeger; metrics: InfluxDB and Prometheus; logs: Telegraf/Logstash/FluentD + ElasticSearch; the choice is a trade-off.",
+      "rules": [
+        "Traces: Zipkin and Jaeger (OTW p.7)",
+        "Metrics: InfluxDB and Prometheus (OTW p.7)",
+        "Logs: conversion to metrics in a TSDB or ElasticSearch; Telegraf/Logstash/FluentD in pre-processing (OTW p.7)",
+        "Switching backend = changing the exporter configuration (OTW p.7)"
+      ],
+      "not_in_book": ["Grafana, Loki, Tempo", "Cost and scale comparison", "Commercial backends beyond mentions of contributors"]
+    },
+    "platform_considerations": {
+      "name": "Platform considerations checklist",
+      "citation": "DOW p.5",
+      "keywords": ["plataforma", "platform", "checklist", "disponibilidade", "availability", "escalabilidade", "scalability", "seguranca", "security", "custo", "cost", "conformidade", "compliance", "integracao", "integration", "auto discovery", "compatibilidade", "compatibility"],
+      "summary": "Ten considerations: HA, scalability, auto discovery, security, distributed storage, cost, compliance, documentation, usability, integration, compatibility.",
+      "rules": [
+        "Ten items with guiding questions in the table (DOW p.5)",
+        "A single team does not design the platform (DOW p.5)"
+      ],
+      "not_in_book": ["Quantitative criteria (RTO/RPO, retention in days)", "Prices"]
+    },
+    "how_to_collect": {
+      "name": "How to monitor, log, and trace",
+      "citation": "DOW p.5-6",
+      "keywords": ["agente", "agent", "coleta", "collection", "monitorar", "monitor", "service mesh", "apm", "tsdb", "centralizar", "centralize", "instrumentar", "instrument"],
+      "summary": "Start with metrics; one agent per system (monitored); centralize in a TSDB; log policy; instrumentation via code/APM or service mesh with a unique identifier per step.",
+      "rules": [
+        "Metrics first: physical, then system (DOW p.5)",
+        "One agent per system, monitored, without consuming too much; centralize in a remote platform (DOW p.6)",
+        "Global log policy, tags, collector (DOW p.6)",
+        "Instrumentation via code (APM) or service mesh; unique identifier per step (DOW p.6)"
+      ],
+      "not_in_book": ["Agent product names beyond integration examples", "Concrete configuration"]
+    },
+    "graphs_alerts": {
+      "name": "Graphs and alerts",
+      "citation": "DOW p.4-5",
+      "keywords": ["grafico", "graficos", "graph", "graphs", "alerta", "alertas", "alert", "alerts", "dashboard", "adocao", "adoption"],
+      "summary": "Graphs give a global view over time; alerts allow proactive action; without interpretation, observability loses value.",
+      "rules": [
+        "Graphs for the whole organization (DOW p.4)",
+        "Alerts on deviant behavior, proactive action (DOW p.4)",
+        "Requires collection and interpretation maturity (DOW p.5)"
+      ],
+      "not_in_book": ["Alert design (SLO, burn rate)", "Alert fatigue", "Runbooks"]
+    },
+    "status_2021": {
+      "name": "Specification status in 2021 [DATED]",
+      "citation": "OTW p.4",
+      "keywords": ["estavel", "stable", "estabilidade", "stability", "versao", "version", "v1.0", "rascunho", "draft", "2021", "datado", "dated"],
+      "summary": "In 2021 only Tracing was stable; Metrics v1.0 expected for the end of 2021; Logs in draft.",
+      "rules": ["Only Tracing stable; Metrics 1.0 expected at the end of 2021; Logs in draft, maybe 2022 (OTW p.4)"],
+      "not_in_book": ["Current status of any specification (check current documentation)"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "os-internals-expert",
+  "version": "1.0.0",
+  "description": "Specialist in operating-systems fundamentals and internals based on OSTEP (Operating Systems: Three Easy Pieces, Arpaci-Dusseau): processes and LDE, scheduling (FIFO/SJF/STCF/RR/MLFQ/lottery/stride/CFS), virtual memory (base/bounds, segmentation, paging, TLB, swap, page replacement), concurrency (locks, condition variables, semaphores, deadlock), persistence (HDD, RAID, vsfs, FFS, journaling, LFS, SSD/FTL, checksums) and NFS/AFS. Includes index lookup, deterministic simulators and calculators, with automatic citation verification.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "operating-systems",
+    "ostep",
+    "scheduling",
+    "mlfq",
+    "paging",
+    "tlb",
+    "page-replacement",
+    "concurrency",
+    "locks",
+    "semaphores",
+    "deadlock",
+    "raid",
+    "file-systems",
+    "journaling",
+    "lfs",
+    "ssd",
+    "nfs",
+    "afs"
+  ]
+}

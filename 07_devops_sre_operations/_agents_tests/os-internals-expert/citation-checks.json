@@ -1,0 +1,1673 @@
+{
+ "_comment": "Each item of checks asserts that the PDF page contains ALL the substrings (lowercase, ligatures and whitespace normalized). negative_checks assert ABSENCE (in the whole book by regex, or on specific pages). Used to audit the citations of the references. The 'contains', 'absent' and 'regex_absent_everywhere' values are literal source text and stay as is.",
+ "checks": [
+  {
+   "cite": "OSTEP p.272",
+   "contains": [
+    "resource manager",
+    "standard library"
+   ],
+   "claim": "OS as resource manager and standard library"
+  },
+  {
+   "cite": "OSTEP p.276",
+   "contains": [
+    "0x200000",
+    "address space"
+   ],
+   "claim": "same virtual address in two processes"
+  },
+  {
+   "cite": "OSTEP p.278",
+   "contains": [
+    "143012"
+   ],
+   "claim": "wrong counter 143012"
+  },
+  {
+   "cite": "OSTEP p.30",
+   "contains": [
+    "time sharing",
+    "virtualizing the cpu"
+   ],
+   "claim": "process and time sharing"
+  },
+  {
+   "cite": "OSTEP p.34",
+   "contains": [
+    "file descriptors",
+    "main()"
+   ],
+   "claim": "process creation: fds and main"
+  },
+  {
+   "cite": "OSTEP p.38",
+   "contains": [
+    "zombie",
+    "process control block"
+   ],
+   "claim": "zombie and PCB"
+  },
+  {
+   "cite": "OSTEP p.108",
+   "contains": [
+    "not deterministic"
+   ],
+   "claim": "non-deterministic fork output"
+  },
+  {
+   "cite": "OSTEP p.110",
+   "contains": [
+    "execvp"
+   ],
+   "claim": "exec example"
+  },
+  {
+   "cite": "OSTEP p.111",
+   "contains": [
+    "does not create a new process",
+    "never returns"
+   ],
+   "claim": "exec does not create a process and does not return"
+  },
+  {
+   "cite": "OSTEP p.112",
+   "contains": [
+    "redirected",
+    "file descriptors"
+   ],
+   "claim": "shell redirection"
+  },
+  {
+   "cite": "OSTEP p.184",
+   "contains": [
+    "user mode",
+    "kernel mode",
+    "trap"
+   ],
+   "claim": "user/kernel mode and trap"
+  },
+  {
+   "cite": "OSTEP p.185",
+   "contains": [
+    "trap table",
+    "return-from-trap"
+   ],
+   "claim": "trap table and return-from-trap"
+  },
+  {
+   "cite": "OSTEP p.189",
+   "contains": [
+    "timer interrupt"
+   ],
+   "claim": "timer interrupt"
+  },
+  {
+   "cite": "OSTEP p.190",
+   "contains": [
+    "context switch"
+   ],
+   "claim": "context switch"
+  },
+  {
+   "cite": "OSTEP p.194",
+   "contains": [
+    "lmbench",
+    "4 microseconds"
+   ],
+   "claim": "1996 measurements"
+  },
+  {
+   "cite": "OSTEP p.291",
+   "contains": [
+    "tcompletion",
+    "tarrival",
+    "turnaround time"
+   ],
+   "claim": "turnaround definition"
+  },
+  {
+   "cite": "OSTEP p.292",
+   "contains": [
+    "convoy effect"
+   ],
+   "claim": "convoy effect"
+  },
+  {
+   "cite": "OSTEP p.293",
+   "contains": [
+    "shortest job first"
+   ],
+   "claim": "SJF"
+  },
+  {
+   "cite": "OSTEP p.295",
+   "contains": [
+    "tfirstrun",
+    "response time",
+    "shortest time-to-completion first"
+   ],
+   "claim": "response time and STCF"
+  },
+  {
+   "cite": "OSTEP p.296",
+   "contains": [
+    "scheduling quantum",
+    "time slice"
+   ],
+   "claim": "RR and quantum"
+  },
+  {
+   "cite": "OSTEP p.297",
+   "contains": [
+    "amortization",
+    "pessimal"
+   ],
+   "claim": "amortization and pessimal RR"
+  },
+  {
+   "cite": "OSTEP p.382",
+   "contains": [
+    "allotment",
+    "rule 3",
+    "rule 4a"
+   ],
+   "claim": "allotment and rules 3-4"
+  },
+  {
+   "cite": "OSTEP p.385",
+   "contains": [
+    "rule 5",
+    "priority"
+   ],
+   "claim": "rule 5 (boost)"
+  },
+  {
+   "cite": "OSTEP p.384",
+   "contains": [
+    "gaming the scheduler",
+    "starvation"
+   ],
+   "claim": "starvation and gaming"
+  },
+  {
+   "cite": "OSTEP p.386",
+   "contains": [
+    "voo-doo constants"
+   ],
+   "claim": "voo-doo constants"
+  },
+  {
+   "cite": "OSTEP p.388",
+   "contains": [
+    "solaris",
+    "60 queues"
+   ],
+   "claim": "Solaris TS 60 queues"
+  },
+  {
+   "cite": "OSTEP p.389",
+   "contains": [
+    "rule 4",
+    "windows nt",
+    "time period s"
+   ],
+   "claim": "final rules and Windows NT"
+  },
+  {
+   "cite": "OSTEP p.466",
+   "contains": [
+    "tickets",
+    "lottery scheduling"
+   ],
+   "claim": "lottery and tickets"
+  },
+  {
+   "cite": "OSTEP p.470",
+   "contains": [
+    "stride scheduling",
+    "10,000"
+   ],
+   "claim": "stride"
+  },
+  {
+   "cite": "OSTEP p.472",
+   "contains": [
+    "vruntime",
+    "sched latency"
+   ],
+   "claim": "CFS vruntime"
+  },
+  {
+   "cite": "OSTEP p.473",
+   "contains": [
+    "88761",
+    "nice"
+   ],
+   "claim": "weight table"
+  },
+  {
+   "cite": "OSTEP p.474",
+   "contains": [
+    "red-black tree"
+   ],
+   "claim": "red-black tree"
+  },
+  {
+   "cite": "OSTEP p.533",
+   "contains": [
+    "sqms",
+    "multiprocessor scheduling"
+   ],
+   "claim": "SQMS"
+  },
+  {
+   "cite": "OSTEP p.537",
+   "contains": [
+    "work stealing",
+    "o(1) scheduler"
+   ],
+   "claim": "work stealing and Linux"
+  },
+  {
+   "cite": "OSTEP p.47",
+   "contains": [
+    "transparency",
+    "320kb"
+   ],
+   "claim": "transparency and 320KB"
+  },
+  {
+   "cite": "OSTEP p.204",
+   "contains": [
+    "memory management unit"
+   ],
+   "claim": "MMU in base/bounds"
+  },
+  {
+   "cite": "OSTEP p.205",
+   "contains": [
+    "19384",
+    "out of bounds"
+   ],
+   "claim": "translation 3000 -> 19384 and fault"
+  },
+  {
+   "cite": "OSTEP p.306",
+   "contains": [
+    "34920",
+    "segmentation violation"
+   ],
+   "claim": "heap VA 4200 -> 34920"
+  },
+  {
+   "cite": "OSTEP p.308",
+   "contains": [
+    "grows positive"
+   ],
+   "claim": "stack growth bit"
+  },
+  {
+   "cite": "OSTEP p.311",
+   "contains": [
+    "external fragmentation"
+   ],
+   "claim": "external fragmentation"
+  },
+  {
+   "cite": "OSTEP p.402",
+   "contains": [
+    "best fit"
+   ],
+   "claim": "best fit"
+  },
+  {
+   "cite": "OSTEP p.405",
+   "contains": [
+    "buddy"
+   ],
+   "claim": "buddy allocation"
+  },
+  {
+   "cite": "OSTEP p.482",
+   "contains": [
+    "physical frame number"
+   ],
+   "claim": "PFN"
+  },
+  {
+   "cite": "OSTEP p.484",
+   "contains": [
+    "linear page table"
+   ],
+   "claim": "linear page table"
+  },
+  {
+   "cite": "OSTEP p.486",
+   "contains": [
+    "page-table base register",
+    "vpn_mask"
+   ],
+   "claim": "PTBR and VPN_MASK"
+  },
+  {
+   "cite": "OSTEP p.542",
+   "contains": [
+    "retryinstruction",
+    "tlb_insert"
+   ],
+   "claim": "TLB flow"
+  },
+  {
+   "cite": "OSTEP p.544",
+   "contains": [
+    "70%",
+    "hit rate"
+   ],
+   "claim": "hit rate 70%"
+  },
+  {
+   "cite": "OSTEP p.546",
+   "contains": [
+    "software-managed tlb",
+    "cr3"
+   ],
+   "claim": "hardware vs software TLB"
+  },
+  {
+   "cite": "OSTEP p.550",
+   "contains": [
+    "address space identifier"
+   ],
+   "claim": "ASID"
+  },
+  {
+   "cite": "OSTEP p.551",
+   "contains": [
+    "n + 1 pages"
+   ],
+   "claim": "LRU in an n+1 loop"
+  },
+  {
+   "cite": "OSTEP p.553",
+   "contains": [
+    "tlb coverage"
+   ],
+   "claim": "TLB coverage"
+  },
+  {
+   "cite": "OSTEP p.600",
+   "contains": [
+    "page directory"
+   ],
+   "claim": "page directory"
+  },
+  {
+   "cite": "OSTEP p.605",
+   "contains": [
+    "0x3f80",
+    "0x0dc0"
+   ],
+   "claim": "2-level example"
+  },
+  {
+   "cite": "OSTEP p.608",
+   "contains": [
+    "inverted page table",
+    "powerpc"
+   ],
+   "claim": "inverted page table"
+  },
+  {
+   "cite": "OSTEP p.642",
+   "contains": [
+    "present bit"
+   ],
+   "claim": "present bit"
+  },
+  {
+   "cite": "OSTEP p.646",
+   "contains": [
+    "high watermark",
+    "low watermark"
+   ],
+   "claim": "watermarks"
+  },
+  {
+   "cite": "OSTEP p.691",
+   "contains": [
+    "amat"
+   ],
+   "claim": "AMAT"
+  },
+  {
+   "cite": "OSTEP p.693",
+   "contains": [
+    "85.7%",
+    "54.5%"
+   ],
+   "claim": "OPT hit rates"
+  },
+  {
+   "cite": "OSTEP p.694",
+   "contains": [
+    "36.4%",
+    "belady's anomaly",
+    "stack property"
+   ],
+   "claim": "FIFO and anomaly"
+  },
+  {
+   "cite": "OSTEP p.699",
+   "contains": [
+    "looping-sequential",
+    "0% hit rate"
+   ],
+   "claim": "looping sequential"
+  },
+  {
+   "cite": "OSTEP p.701",
+   "contains": [
+    "use bit",
+    "clock algorithm"
+   ],
+   "claim": "clock"
+  },
+  {
+   "cite": "OSTEP p.703",
+   "contains": [
+    "thrashing",
+    "admission control",
+    "out-of-memory killer"
+   ],
+   "claim": "thrashing"
+  },
+  {
+   "cite": "OSTEP p.728",
+   "contains": [
+    "segmented fifo",
+    "resident set size"
+   ],
+   "claim": "segmented FIFO"
+  },
+  {
+   "cite": "OSTEP p.738",
+   "contains": [
+    "address space layout randomization",
+    "meltdown"
+   ],
+   "claim": "ASLR and Meltdown"
+  },
+  {
+   "cite": "OSTEP p.58",
+   "contains": [
+    "volatile int counter"
+   ],
+   "claim": "counter with volatile"
+  },
+  {
+   "cite": "OSTEP p.61",
+   "contains": [
+    "race condition",
+    "critical section",
+    "mutual exclusion"
+   ],
+   "claim": "concurrency terms"
+  },
+  {
+   "cite": "OSTEP p.135",
+   "contains": [
+    "pthread join"
+   ],
+   "claim": "pthread_join"
+  },
+  {
+   "cite": "OSTEP p.140",
+   "contains": [
+    "spuriously"
+   ],
+   "claim": "spurious wakeup"
+  },
+  {
+   "cite": "OSTEP p.141",
+   "contains": [
+    "half"
+   ],
+   "claim": "half of the ad hoc synchronization uses are buggy"
+  },
+  {
+   "cite": "OSTEP p.220",
+   "contains": [
+    "spin lock"
+   ],
+   "claim": "spin lock with test-and-set"
+  },
+  {
+   "cite": "OSTEP p.222",
+   "contains": [
+    "compare-and-swap"
+   ],
+   "claim": "compare-and-swap"
+  },
+  {
+   "cite": "OSTEP p.226",
+   "contains": [
+    "ticket"
+   ],
+   "claim": "ticket lock"
+  },
+  {
+   "cite": "OSTEP p.229",
+   "contains": [
+    "priority inversion"
+   ],
+   "claim": "priority inversion"
+  },
+  {
+   "cite": "OSTEP p.231",
+   "contains": [
+    "futex"
+   ],
+   "claim": "futex"
+  },
+  {
+   "cite": "OSTEP p.232",
+   "contains": [
+    "two-phase lock"
+   ],
+   "claim": "two-phase lock"
+  },
+  {
+   "cite": "OSTEP p.320",
+   "contains": [
+    "approximation factor"
+   ],
+   "claim": "approximate counter"
+  },
+  {
+   "cite": "OSTEP p.323",
+   "contains": [
+    "hand-over-hand locking"
+   ],
+   "claim": "hand-over-hand"
+  },
+  {
+   "cite": "OSTEP p.418",
+   "contains": [
+    "mesa semantics"
+   ],
+   "claim": "Mesa"
+  },
+  {
+   "cite": "OSTEP p.419",
+   "contains": [
+    "hoare semantics"
+   ],
+   "claim": "Hoare"
+  },
+  {
+   "cite": "OSTEP p.424",
+   "contains": [
+    "covering condition"
+   ],
+   "claim": "covering condition"
+  },
+  {
+   "cite": "OSTEP p.495",
+   "contains": [
+    "sem_wait",
+    "sem_post"
+   ],
+   "claim": "semaphores"
+  },
+  {
+   "cite": "OSTEP p.503",
+   "contains": [
+    "deadlock"
+   ],
+   "claim": "deadlock in producer/consumer with semaphores"
+  },
+  {
+   "cite": "OSTEP p.557",
+   "contains": [
+    "105 total bugs",
+    "lu et al"
+   ],
+   "claim": "Lu et al. study"
+  },
+  {
+   "cite": "OSTEP p.558",
+   "contains": [
+    "(74)",
+    "atomicity violation"
+   ],
+   "claim": "74 non-deadlock"
+  },
+  {
+   "cite": "OSTEP p.561",
+   "contains": [
+    "97%"
+   ],
+   "claim": "97% of non-deadlock bugs"
+  },
+  {
+   "cite": "OSTEP p.563",
+   "contains": [
+    "hold-and-wait",
+    "circular wait",
+    "no preemption"
+   ],
+   "claim": "deadlock conditions"
+  },
+  {
+   "cite": "OSTEP p.565",
+   "contains": [
+    "livelock"
+   ],
+   "claim": "livelock"
+  },
+  {
+   "cite": "OSTEP p.569",
+   "contains": [
+    "banker's algorithm"
+   ],
+   "claim": "Banker's"
+  },
+  {
+   "cite": "OSTEP p.612",
+   "contains": [
+    "event loop"
+   ],
+   "claim": "event loop"
+  },
+  {
+   "cite": "OSTEP p.616",
+   "contains": [
+    "aiocb"
+   ],
+   "claim": "AIO"
+  },
+  {
+   "cite": "OSTEP p.619",
+   "contains": [
+    "continuation"
+   ],
+   "claim": "continuation"
+  },
+  {
+   "cite": "OSTEP p.71",
+   "contains": [
+    "programmed i/o"
+   ],
+   "claim": "PIO"
+  },
+  {
+   "cite": "OSTEP p.73",
+   "contains": [
+    "livelock",
+    "coalescing"
+   ],
+   "claim": "interrupts and livelock"
+  },
+  {
+   "cite": "OSTEP p.74",
+   "contains": [
+    "direct memory access"
+   ],
+   "claim": "DMA"
+  },
+  {
+   "cite": "OSTEP p.75",
+   "contains": [
+    "mapped i/o"
+   ],
+   "claim": "memory-mapped I/O"
+  },
+  {
+   "cite": "OSTEP p.76",
+   "contains": [
+    "70%"
+   ],
+   "claim": "drivers >70% of the kernel"
+  },
+  {
+   "cite": "OSTEP p.146",
+   "contains": [
+    "unwritten contract"
+   ],
+   "claim": "unwritten contract"
+  },
+  {
+   "cite": "OSTEP p.149",
+   "contains": [
+    "track skew",
+    "write back"
+   ],
+   "claim": "track skew and write back"
+  },
+  {
+   "cite": "OSTEP p.150",
+   "contains": [
+    "dimensional analysis"
+   ],
+   "claim": "dimensional analysis"
+  },
+  {
+   "cite": "OSTEP p.152",
+   "contains": [
+    "0.66 mb/s",
+    "0.31 mb/s"
+   ],
+   "claim": "Cheetah and Barracuda rates"
+  },
+  {
+   "cite": "OSTEP p.155",
+   "contains": [
+    "c-scan"
+   ],
+   "claim": "C-SCAN"
+  },
+  {
+   "cite": "OSTEP p.156",
+   "contains": [
+    "shortest positioning time first"
+   ],
+   "claim": "SPTF"
+  },
+  {
+   "cite": "OSTEP p.157",
+   "contains": [
+    "work-conserving"
+   ],
+   "claim": "work-conserving"
+  },
+  {
+   "cite": "OSTEP p.236",
+   "contains": [
+    "transparency enables deployment"
+   ],
+   "claim": "RAID transparency"
+  },
+  {
+   "cite": "OSTEP p.237",
+   "contains": [
+    "fail-stop"
+   ],
+   "claim": "fail-stop"
+  },
+  {
+   "cite": "OSTEP p.239",
+   "contains": [
+    "a % number_of_disks"
+   ],
+   "claim": "RAID-0 mapping"
+  },
+  {
+   "cite": "OSTEP p.241",
+   "contains": [
+    "47.62 mb/s",
+    "0.981 mb/s"
+   ],
+   "claim": "S and R of the example"
+  },
+  {
+   "cite": "OSTEP p.243",
+   "contains": [
+    "consistent-update problem"
+   ],
+   "claim": "consistent-update"
+  },
+  {
+   "cite": "OSTEP p.246",
+   "contains": [
+    "full-stripe write"
+   ],
+   "claim": "full-stripe write"
+  },
+  {
+   "cite": "OSTEP p.247",
+   "contains": [
+    "subtractive",
+    "small-write problem"
+   ],
+   "claim": "subtractive parity"
+  },
+  {
+   "cite": "OSTEP p.249",
+   "contains": [
+    "(n/2)",
+    "raid-5"
+   ],
+   "claim": "comparison table"
+  },
+  {
+   "cite": "OSTEP p.332",
+   "contains": [
+    "inode number",
+    "directory tree"
+   ],
+   "claim": "files and directories"
+  },
+  {
+   "cite": "OSTEP p.334",
+   "contains": [
+    "capability",
+    "file descriptor"
+   ],
+   "claim": "fd as capability"
+  },
+  {
+   "cite": "OSTEP p.337",
+   "contains": [
+    "open file table"
+   ],
+   "claim": "open file table"
+  },
+  {
+   "cite": "OSTEP p.338",
+   "contains": [
+    "absolutely does not cause any disk i/o"
+   ],
+   "claim": "lseek without I/O"
+  },
+  {
+   "cite": "OSTEP p.342",
+   "contains": [
+    "fsync()"
+   ],
+   "claim": "fsync"
+  },
+  {
+   "cite": "OSTEP p.344",
+   "contains": [
+    "rename()",
+    "atomic"
+   ],
+   "claim": "atomic rename"
+  },
+  {
+   "cite": "OSTEP p.346",
+   "contains": [
+    "unlink()"
+   ],
+   "claim": "unlink"
+  },
+  {
+   "cite": "OSTEP p.350",
+   "contains": [
+    "reference count",
+    "symbolic link"
+   ],
+   "claim": "link count and symlinks"
+  },
+  {
+   "cite": "OSTEP p.355",
+   "contains": [
+    "tocttou"
+   ],
+   "claim": "TOCTTOU"
+  },
+  {
+   "cite": "OSTEP p.432",
+   "contains": [
+    "superblock",
+    "magic number"
+   ],
+   "claim": "superblock"
+  },
+  {
+   "cite": "OSTEP p.433",
+   "contains": [
+    "inodestartaddr"
+   ],
+   "claim": "inode address calculation"
+  },
+  {
+   "cite": "OSTEP p.435",
+   "contains": [
+    "extents",
+    "double indirect"
+   ],
+   "claim": "extents and double indirect"
+  },
+  {
+   "cite": "OSTEP p.437",
+   "contains": [
+    "file allocation table"
+   ],
+   "claim": "FAT"
+  },
+  {
+   "cite": "OSTEP p.439",
+   "contains": [
+    "root inode number"
+   ],
+   "claim": "well-known root inode"
+  },
+  {
+   "cite": "OSTEP p.440",
+   "contains": [
+    "allocation structures"
+   ],
+   "claim": "bitmaps only on allocation"
+  },
+  {
+   "cite": "OSTEP p.441",
+   "contains": [
+    "five i/os"
+   ],
+   "claim": "allocating write = 5 I/Os"
+  },
+  {
+   "cite": "OSTEP p.442",
+   "contains": [
+    "unified page cache"
+   ],
+   "claim": "unified page cache"
+  },
+  {
+   "cite": "OSTEP p.514",
+   "contains": [
+    "2%"
+   ],
+   "claim": "old FS with 2% of the bandwidth"
+  },
+  {
+   "cite": "OSTEP p.516",
+   "contains": [
+    "fast file system",
+    "cylinder groups"
+   ],
+   "claim": "FFS"
+  },
+  {
+   "cite": "OSTEP p.518",
+   "contains": [
+    "keep related stuff together"
+   ],
+   "claim": "FFS mantra"
+  },
+  {
+   "cite": "OSTEP p.522",
+   "contains": [
+    "409.6 kb",
+    "amortization"
+   ],
+   "claim": "amortization in FFS"
+  },
+  {
+   "cite": "OSTEP p.524",
+   "contains": [
+    "sub-blocks"
+   ],
+   "claim": "sub-blocks"
+  },
+  {
+   "cite": "OSTEP p.525",
+   "contains": [
+    "symbolic link",
+    "long file names"
+   ],
+   "claim": "FFS usability"
+  },
+  {
+   "cite": "OSTEP p.573",
+   "contains": [
+    "crash-consistency problem"
+   ],
+   "claim": "crash consistency"
+  },
+  {
+   "cite": "OSTEP p.576",
+   "contains": [
+    "space leak"
+   ],
+   "claim": "space leak"
+  },
+  {
+   "cite": "OSTEP p.577",
+   "contains": [
+    "fsck"
+   ],
+   "claim": "fsck"
+  },
+  {
+   "cite": "OSTEP p.578",
+   "contains": [
+    "lost+found"
+   ],
+   "claim": "lost+found"
+  },
+  {
+   "cite": "OSTEP p.579",
+   "contains": [
+    "write-ahead logging"
+   ],
+   "claim": "write-ahead logging"
+  },
+  {
+   "cite": "OSTEP p.580",
+   "contains": [
+    "txb",
+    "txe",
+    "physical logging",
+    "checkpointing"
+   ],
+   "claim": "data journaling"
+  },
+  {
+   "cite": "OSTEP p.581",
+   "contains": [
+    "write barriers"
+   ],
+   "claim": "write barriers"
+  },
+  {
+   "cite": "OSTEP p.582",
+   "contains": [
+    "checksum",
+    "ext4"
+   ],
+   "claim": "journal checksum and ext4"
+  },
+  {
+   "cite": "OSTEP p.583",
+   "contains": [
+    "redo logging"
+   ],
+   "claim": "redo logging"
+  },
+  {
+   "cite": "OSTEP p.584",
+   "contains": [
+    "circular log"
+   ],
+   "claim": "circular log"
+  },
+  {
+   "cite": "OSTEP p.586",
+   "contains": [
+    "write the pointed-to object"
+   ],
+   "claim": "pointed-to rule"
+  },
+  {
+   "cite": "OSTEP p.588",
+   "contains": [
+    "revoke record"
+   ],
+   "claim": "revoke record"
+  },
+  {
+   "cite": "OSTEP p.589",
+   "contains": [
+    "soft updates",
+    "copy-on-write"
+   ],
+   "claim": "alternatives"
+  },
+  {
+   "cite": "OSTEP p.590",
+   "contains": [
+    "backpointer-based consistency",
+    "optimistic crash consistency"
+   ],
+   "claim": "BBC and optimistic"
+  },
+  {
+   "cite": "OSTEP p.624",
+   "contains": [
+    "segment",
+    "log-structured file system"
+   ],
+   "claim": "LFS"
+  },
+  {
+   "cite": "OSTEP p.627",
+   "contains": [
+    "9 mb",
+    "inode map"
+   ],
+   "claim": "LFS 9 MB and imap"
+  },
+  {
+   "cite": "OSTEP p.629",
+   "contains": [
+    "checkpoint region"
+   ],
+   "claim": "checkpoint region"
+  },
+  {
+   "cite": "OSTEP p.632",
+   "contains": [
+    "segment summary block"
+   ],
+   "claim": "segment summary"
+  },
+  {
+   "cite": "OSTEP p.633",
+   "contains": [
+    "hot",
+    "cold"
+   ],
+   "claim": "hot and cold segments"
+  },
+  {
+   "cite": "OSTEP p.634",
+   "contains": [
+    "roll forward"
+   ],
+   "claim": "roll forward"
+  },
+  {
+   "cite": "OSTEP p.654",
+   "contains": [
+    "erase blocks"
+   ],
+   "claim": "erase blocks"
+  },
+  {
+   "cite": "OSTEP p.655",
+   "contains": [
+    "erase",
+    "program"
+   ],
+   "claim": "flash operations"
+  },
+  {
+   "cite": "OSTEP p.657",
+   "contains": [
+    "10,000 p/e"
+   ],
+   "claim": "MLC lifetime"
+  },
+  {
+   "cite": "OSTEP p.658",
+   "contains": [
+    "flash translation layer",
+    "write amplification"
+   ],
+   "claim": "FTL and write amplification"
+  },
+  {
+   "cite": "OSTEP p.659",
+   "contains": [
+    "wear leveling",
+    "direct mapped"
+   ],
+   "claim": "wear leveling"
+  },
+  {
+   "cite": "OSTEP p.662",
+   "contains": [
+    "out-of-band"
+   ],
+   "claim": "OOB"
+  },
+  {
+   "cite": "OSTEP p.664",
+   "contains": [
+    "trim",
+    "overprovision"
+   ],
+   "claim": "TRIM and overprovisioning"
+  },
+  {
+   "cite": "OSTEP p.667",
+   "contains": [
+    "switch merge"
+   ],
+   "claim": "switch merge"
+  },
+  {
+   "cite": "OSTEP p.668",
+   "contains": [
+    "partial merge",
+    "full merge"
+   ],
+   "claim": "partial and full merge"
+  },
+  {
+   "cite": "OSTEP p.709",
+   "contains": [
+    "9.40%",
+    "1.40%",
+    "fail-partial"
+   ],
+   "claim": "LSE frequency"
+  },
+  {
+   "cite": "OSTEP p.711",
+   "contains": [
+    "raid-dp"
+   ],
+   "claim": "RAID-DP"
+  },
+  {
+   "cite": "OSTEP p.712",
+   "contains": [
+    "0x201b9403"
+   ],
+   "claim": "XOR checksum"
+  },
+  {
+   "cite": "OSTEP p.713",
+   "contains": [
+    "fletcher",
+    "mod 255"
+   ],
+   "claim": "Fletcher"
+  },
+  {
+   "cite": "OSTEP p.715",
+   "contains": [
+    "misdirected write",
+    "physical id"
+   ],
+   "claim": "misdirected write"
+  },
+  {
+   "cite": "OSTEP p.716",
+   "contains": [
+    "lost write",
+    "read-after-write"
+   ],
+   "claim": "lost write"
+  },
+  {
+   "cite": "OSTEP p.717",
+   "contains": [
+    "scrubbing",
+    "0.19%"
+   ],
+   "claim": "scrubbing and overhead"
+  },
+  {
+   "cite": "OSTEP p.765",
+   "contains": [
+    "communication is inherently unreliable"
+   ],
+   "claim": "unreliable communication"
+  },
+  {
+   "cite": "OSTEP p.770",
+   "contains": [
+    "exactly-once",
+    "sequence counter"
+   ],
+   "claim": "exactly-once"
+  },
+  {
+   "cite": "OSTEP p.771",
+   "contains": [
+    "exponential back-off"
+   ],
+   "claim": "exponential back-off"
+  },
+  {
+   "cite": "OSTEP p.772",
+   "contains": [
+    "distributed shared memory",
+    "remote procedure call"
+   ],
+   "claim": "DSM and RPC"
+  },
+  {
+   "cite": "OSTEP p.773",
+   "contains": [
+    "stub generator"
+   ],
+   "claim": "stub generator"
+  },
+  {
+   "cite": "OSTEP p.775",
+   "contains": [
+    "at most once"
+   ],
+   "claim": "at-most-once"
+  },
+  {
+   "cite": "OSTEP p.776",
+   "contains": [
+    "end-to-end argument"
+   ],
+   "claim": "end-to-end"
+  },
+  {
+   "cite": "OSTEP p.777",
+   "contains": [
+    "xdr",
+    "grpc"
+   ],
+   "claim": "XDR and gRPC"
+  },
+  {
+   "cite": "OSTEP p.796",
+   "contains": [
+    "simple and fast server crash recovery"
+   ],
+   "claim": "NFSv2 goal"
+  },
+  {
+   "cite": "OSTEP p.797",
+   "contains": [
+    "stateless protocol"
+   ],
+   "claim": "stateless protocol"
+  },
+  {
+   "cite": "OSTEP p.798",
+   "contains": [
+    "generation number",
+    "file handle"
+   ],
+   "claim": "file handle"
+  },
+  {
+   "cite": "OSTEP p.802",
+   "contains": [
+    "idempotent"
+   ],
+   "claim": "idempotency"
+  },
+  {
+   "cite": "OSTEP p.804",
+   "contains": [
+    "voltaire's law"
+   ],
+   "claim": "Voltaire"
+  },
+  {
+   "cite": "OSTEP p.805",
+   "contains": [
+    "update visibility",
+    "stale cache",
+    "flush-on-close"
+   ],
+   "claim": "cache consistency"
+  },
+  {
+   "cite": "OSTEP p.806",
+   "contains": [
+    "attribute cache"
+   ],
+   "claim": "attribute cache"
+  },
+  {
+   "cite": "OSTEP p.807",
+   "contains": [
+    "stable storage"
+   ],
+   "claim": "stable commit"
+  },
+  {
+   "cite": "OSTEP p.808",
+   "contains": [
+    "vnode"
+   ],
+   "claim": "VFS/vnode"
+  },
+  {
+   "cite": "OSTEP p.817",
+   "contains": [
+    "whole-file caching",
+    "venus"
+   ],
+   "claim": "AFS"
+  },
+  {
+   "cite": "OSTEP p.818",
+   "contains": [
+    "patterson's law"
+   ],
+   "claim": "Patterson"
+  },
+  {
+   "cite": "OSTEP p.819",
+   "contains": [
+    "callback",
+    "uniquifier"
+   ],
+   "claim": "callback and FID"
+  },
+  {
+   "cite": "OSTEP p.823",
+   "contains": [
+    "heartbeat"
+   ],
+   "claim": "heartbeat in AFS"
+  },
+  {
+   "cite": "OSTEP p.824",
+   "contains": [
+    "50 clients"
+   ],
+   "claim": "AFSv2 ~50 clients"
+  },
+  {
+   "cite": "OSTEP p.89",
+   "contains": [
+    "economy of mechanism",
+    "least privilege",
+    "complete mediation"
+   ],
+   "claim": "security principles"
+  },
+  {
+   "cite": "OSTEP p.166",
+   "contains": [
+    "avoid storing secrets"
+   ],
+   "claim": "avoid storing secrets"
+  },
+  {
+   "cite": "OSTEP p.258",
+   "contains": [
+    "nine bits"
+   ],
+   "claim": "9-bit ACL"
+  },
+  {
+   "cite": "OSTEP p.264",
+   "contains": [
+    "mandatory access control",
+    "discretionary access control"
+   ],
+   "claim": "MAC and DAC"
+  }
+ ],
+ "negative_checks": [
+  {
+   "claim": "the book does not cover cgroups",
+   "regex_absent_everywhere": "\\bcgroups?\\b"
+  },
+  {
+   "claim": "the book does not cover Docker",
+   "regex_absent_everywhere": "\\bdocker\\b"
+  },
+  {
+   "claim": "the book does not cover Kubernetes",
+   "regex_absent_everywhere": "\\bkubernetes\\b"
+  },
+  {
+   "claim": "the book does not cover epoll",
+   "regex_absent_everywhere": "\\bepoll\\b"
+  },
+  {
+   "claim": "the book does not cover io_uring",
+   "regex_absent_everywhere": "\\bio_uring\\b"
+  },
+  {
+   "claim": "the book does not cover Paxos",
+   "regex_absent_everywhere": "\\bpaxos\\b"
+  },
+  {
+   "claim": "the book does not cover Raft (consensus)",
+   "regex_absent_everywhere": "\\braft\\b"
+  },
+  {
+   "claim": "the book does not cover CAP theorem",
+   "regex_absent_everywhere": "\\bcap theorem\\b"
+  },
+  {
+   "claim": "the book does not cover systemd",
+   "regex_absent_everywhere": "\\bsystemd\\b"
+  },
+  {
+   "claim": "the book does not cover KVM",
+   "regex_absent_everywhere": "\\bkvm\\b"
+  },
+  {
+   "claim": "the book does not cover lockdep",
+   "regex_absent_everywhere": "\\blockdep\\b"
+  },
+  {
+   "claim": "the book does not cover seqlock",
+   "regex_absent_everywhere": "\\bseqlock\\b"
+  },
+  {
+   "claim": "the book does not cover memory barrier",
+   "regex_absent_everywhere": "\\bmemory barrier\\b"
+  },
+  {
+   "claim": "the book does not cover TLB shootdown",
+   "regex_absent_everywhere": "\\bshootdown\\b"
+  },
+  {
+   "claim": "the book does not cover PCID",
+   "regex_absent_everywhere": "\\bpcid\\b"
+  },
+  {
+   "claim": "the book does not cover vDSO",
+   "regex_absent_everywhere": "\\bvdso\\b"
+  },
+  {
+   "claim": "the book does not cover posix_spawn",
+   "regex_absent_everywhere": "\\bposix_spawn\\b"
+  },
+  {
+   "claim": "the book does not cover RAID-Z",
+   "regex_absent_everywhere": "\\braid-?z\\b"
+  },
+  {
+   "claim": "the book does not cover CFQ",
+   "regex_absent_everywhere": "\\bcfq\\b"
+  },
+  {
+   "claim": "the book does not cover BFQ",
+   "regex_absent_everywhere": "\\bbfq\\b"
+  },
+  {
+   "claim": "the book does not cover swappiness",
+   "regex_absent_everywhere": "\\bswappiness\\b"
+  },
+  {
+   "claim": "the book does not cover readahead",
+   "regex_absent_everywhere": "\\breadahead\\b"
+  },
+  {
+   "claim": "the book does not cover containers",
+   "regex_absent_everywhere": "\\bcontainers?\\b"
+  },
+  {
+   "claim": "the book does not cover NUMA balancing",
+   "regex_absent_everywhere": "\\bnuma balancing\\b"
+  },
+  {
+   "claim": "the book does not cover eBPF",
+   "regex_absent_everywhere": "\\bebpf\\b"
+  },
+  {
+   "claim": "the book does not cover SELinux",
+   "regex_absent_everywhere": "\\bselinux\\b"
+  },
+  {
+   "claim": "p.289 and ch.2 do not define microkernel as \"the\" OS design",
+   "pages": "271-289",
+   "absent": [
+    "microkernel"
+   ]
+  },
+  {
+   "claim": "ch.7 does not define \"waiting time\" as a metric",
+   "pages": "290-302",
+   "absent": [
+    "waiting time"
+   ]
+  },
+  {
+   "claim": "ch.8 does not recommend a value of S for the boost",
+   "pages": "380-391",
+   "absent": [
+    "recommended value"
+   ]
+  },
+  {
+   "claim": "ch.14 does not cover AddressSanitizer",
+   "pages": "121-132",
+   "absent": [
+    "addresssanitizer",
+    "asan"
+   ]
+  },
+  {
+   "claim": "ch.19 does not cover PCID/INVPCID",
+   "pages": "541-556",
+   "absent": [
+    "pcid",
+    "invpcid"
+   ]
+  },
+  {
+   "claim": "ch.28 does not mention memory fences",
+   "pages": "213-234",
+   "absent": [
+    "fence"
+   ]
+  },
+  {
+   "claim": "ch.30 does not mention CV wait_for/timed wait",
+   "pages": "410-428",
+   "absent": [
+    "timedwait"
+   ]
+  },
+  {
+   "claim": "ch.38 does not discuss RAID-Z/ZFS RAID",
+   "pages": "235-252",
+   "absent": [
+    "raid-z"
+   ]
+  },
+  {
+   "claim": "ch.41 does not mention flex_bg",
+   "pages": "514-527",
+   "absent": [
+    "flex_bg"
+   ]
+  },
+  {
+   "claim": "ch.44 does not mention QLC or ZNS",
+   "pages": "653-676",
+   "absent": [
+    "qlc",
+    "zns"
+   ]
+  },
+  {
+   "claim": "ch.49 does not mention NFSv4 compound/delegations",
+   "pages": "794-811",
+   "absent": [
+    "delegation",
+    "compound"
+   ]
+  },
+  {
+   "claim": "ch.48 does not cover consensus",
+   "pages": "764-780",
+   "absent": [
+    "consensus"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1513 @@
+{
+ "_comment": "Each positive item asserts that the indicated PDF page contains ALL the terms (normalization: lowercase, no accents, collapsed spaces, straight quotes). The terms are VERBATIM source text and stay in the source language (Portuguese for the LGPD, English for NIST). Negatives: the term (whole word) does NOT exist in the full text of the source (or on the indicated page). Convention: PDF page; NIST printed = PDF - 8.",
+ "checks": [
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD preamble (ementa), p.1",
+   "claim": "wording of the preamble (ementa) from Lei 13.853/2019",
+   "contains": [
+    "Lei Geral de Proteção de Dados Pessoais (LGPD)",
+    "Redação dada pela Lei nº 13.853, de 2019"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD Art. 1º, p.1",
+   "claim": "object: protect liberty and privacy",
+   "contains": [
+    "proteger os direitos fundamentais de liberdade e de privacidade",
+    "livre desenvolvimento da personalidade"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD Art. 1º, sole par., p.1",
+   "claim": "general rules of national interest",
+   "contains": [
+    "normas gerais contidas nesta Lei são de interesse nacional"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD Art. 2º, p.1",
+   "claim": "foundations",
+   "contains": [
+    "autodeterminação informativa",
+    "o respeito à privacidade"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD Art. 3º, p.1",
+   "claim": "extraterritorial application",
+   "contains": [
+    "independentemente do meio, do país de sua sede",
+    "coletados no território nacional"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 1,
+   "cite": "LGPD Art. 3º, §1º, p.1",
+   "claim": "collection in national territory",
+   "contains": [
+    "cujo titular nele se encontre no momento da coleta"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 2,
+   "cite": "LGPD Art. 4º, I-II, p.2",
+   "claim": "exceptions: private purposes; academic purposes apply arts. 7 and 11",
+   "contains": [
+    "fins exclusivamente particulares e não econômicos",
+    "aplicando-se a esta hipótese os arts. 7º e 11"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 2,
+   "cite": "LGPD Art. 4º, III, p.2",
+   "claim": "public security etc. with specific legislation",
+   "contains": [
+    "segurança pública",
+    "defesa nacional",
+    "atividades de investigação e repressão de infrações penais"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 2,
+   "cite": "LGPD Art. 4º, §3º, p.2",
+   "claim": "ANPD requests a RIPD in the exceptions of inciso III",
+   "contains": [
+    "relatórios de impacto à proteção de dados pessoais"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 2,
+   "cite": "LGPD Art. 5º, I-II, p.2",
+   "claim": "personal data and sensitive data",
+   "contains": [
+    "informação relacionada a pessoa natural identificada ou identificável",
+    "dado genético ou biométrico"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 5º, VIII, p.3",
+   "claim": "encarregado: wording from Lei 15.352/2026",
+   "contains": [
+    "canal de comunicação entre o controlador, os titulares dos dados e a Agência Nacional de Proteção de Dados",
+    "Lei nº 15.352, de 2026"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 5º, XI, p.3",
+   "claim": "anonymization: loss of the possibility of association",
+   "contains": [
+    "perde a possibilidade de associação, direta ou indireta, a um indivíduo"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 5º, XII, p.3",
+   "claim": "consent",
+   "contains": [
+    "manifestação livre, informada e inequívoca"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 5º, XVII, p.3",
+   "claim": "RIPD: definition",
+   "contains": [
+    "riscos às liberdades civis e aos direitos fundamentais",
+    "mecanismos de mitigação de risco"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 5º, XIX, p.3",
+   "claim": "national authority: wording from 15.352/2026",
+   "contains": [
+    "entidade da administração pública responsável por zelar, implementar e fiscalizar",
+    "Lei nº 15.352, de 2026"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 6º, I, p.3",
+   "claim": "purpose",
+   "contains": [
+    "propósitos legítimos, específicos, explícitos e informados",
+    "tratamento posterior de forma incompatível"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 6º, II, p.3",
+   "claim": "suitability and context",
+   "contains": [
+    "contexto do tratamento"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 6º, III, p.3",
+   "claim": "necessity",
+   "contains": [
+    "mínimo necessário",
+    "não excessivos"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 3,
+   "cite": "LGPD Art. 6º, IV, p.3",
+   "claim": "free access",
+   "contains": [
+    "consulta facilitada e gratuita"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 6º, V-VI, p.4",
+   "claim": "quality and transparency",
+   "contains": [
+    "exatidão, clareza, relevância e atualização",
+    "informações claras, precisas e facilmente acessíveis"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 6º, VII-VIII, p.4",
+   "claim": "security and prevention",
+   "contains": [
+    "acessos não autorizados",
+    "prevenir a ocorrência de danos"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 6º, IX-X, p.4",
+   "claim": "non-discrimination and accountability",
+   "contains": [
+    "fins discriminatórios ilícitos ou abusivos",
+    "responsabilização e prestação de contas"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 7º, caput, I, p.4",
+   "claim": "legal bases and consent",
+   "contains": [
+    "somente poderá ser realizado nas seguintes hipóteses",
+    "mediante o fornecimento de consentimento pelo titular"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 7º, VIII, p.4",
+   "claim": "health protection (wording from 13.853)",
+   "contains": [
+    "tutela da saúde, exclusivamente",
+    "Lei nº 13.853, de 2019"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 7º, IX, p.4",
+   "claim": "legitimate interest",
+   "contains": [
+    "interesses legítimos do controlador ou de terceiro",
+    "prevalecerem direitos e liberdades fundamentais"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 7º, X, p.4",
+   "claim": "credit protection",
+   "contains": [
+    "proteção do crédito"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 4,
+   "cite": "LGPD Art. 7º, §§1º-2º, p.4",
+   "claim": "repealed",
+   "contains": [
+    "(Revogado)"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 5,
+   "cite": "LGPD Art. 7º, §4º, p.5",
+   "claim": "manifestly public data",
+   "contains": [
+    "manifestamente públicos pelo titular"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 5,
+   "cite": "LGPD Art. 7º, §5º, p.5",
+   "claim": "specific consent for sharing",
+   "contains": [
+    "consentimento específico do titular para esse fim"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 5,
+   "cite": "LGPD Art. 8º, p.5",
+   "claim": "consent: form and burden of proof",
+   "contains": [
+    "cláusula destacada",
+    "ônus da prova",
+    "autorizações genéricas"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 5,
+   "cite": "LGPD Art. 8º, §5º, p.5",
+   "claim": "revocation",
+   "contains": [
+    "revogado a qualquer momento",
+    "gratuito e facilitado"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 5,
+   "cite": "LGPD Art. 9º, p.5",
+   "claim": "information to the data subject",
+   "contains": [
+    "acesso facilitado às informações sobre o tratamento",
+    "direitos do titular, com menção explícita aos direitos contidos no art. 18"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 6,
+   "cite": "LGPD Art. 9º, §§1º-3º, p.6",
+   "claim": "consent void for misleading information",
+   "contains": [
+    "conteúdo enganoso ou abusivo",
+    "condição para o fornecimento de produto ou de serviço"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 6,
+   "cite": "LGPD Art. 10, p.6",
+   "claim": "legitimate interest: conditions",
+   "contains": [
+    "situações concretas",
+    "legítimas expectativas dele",
+    "estritamente necessários",
+    "relatório de impacto"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 6,
+   "cite": "LGPD Art. 11, I-II, p.6",
+   "claim": "sensitive data",
+   "contains": [
+    "específica e destacada",
+    "prevenção à fraude e à segurança do titular"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 7,
+   "cite": "LGPD Art. 11, §§1º-5º, p.7",
+   "claim": "sensitive data: health",
+   "contains": [
+    "revele dados pessoais sensíveis e que possa causar dano",
+    "seleção de riscos"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 7,
+   "cite": "LGPD Art. 12, p.7",
+   "claim": "anonymized data",
+   "contains": [
+    "esforços razoáveis",
+    "formação do perfil comportamental"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 7,
+   "cite": "LGPD Art. 13, p.7",
+   "claim": "public health research; pseudonymization",
+   "contains": [
+    "ambiente controlado e seguro",
+    "informação adicional mantida separadamente"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 8,
+   "cite": "LGPD Art. 14, p.8",
+   "claim": "children",
+   "contains": [
+    "melhor interesse",
+    "pelo menos um dos pais",
+    "esforços razoáveis para verificar"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 8,
+   "cite": "LGPD Art. 15-16, p.8",
+   "claim": "end of processing and deletion",
+   "contains": [
+    "finalidade foi alcançada",
+    "serão eliminados após o término de seu tratamento",
+    "uso exclusivo do controlador"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 9,
+   "cite": "LGPD Art. 17-18, p.9",
+   "claim": "ownership and rights",
+   "contains": [
+    "titularidade de seus dados pessoais",
+    "confirmação da existência de tratamento",
+    "portabilidade dos dados"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 9,
+   "cite": "LGPD Art. 18, §§, p.9",
+   "claim": "petition to the ANPD; free of charge; disproportionate effort",
+   "contains": [
+    "peticionar em relação aos seus dados",
+    "sem custos para o titular",
+    "esforço desproporcional"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 10,
+   "cite": "LGPD Art. 19, p.10",
+   "claim": "15-day deadline; electronic copy",
+   "contains": [
+    "15 (quinze) dias",
+    "cópia eletrônica integral"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 10,
+   "cite": "LGPD Art. 20, p.10",
+   "claim": "automated decisions",
+   "contains": [
+    "unicamente com base em tratamento automatizado",
+    "auditoria para verificação de aspectos discriminatórios"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 10,
+   "cite": "LGPD Art. 21, p.10",
+   "claim": "regular exercise of rights",
+   "contains": [
+    "não podem ser utilizados em seu prejuízo"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 10,
+   "cite": "LGPD Art. 23, I, p.10",
+   "claim": "public authorities: inform processing cases",
+   "contains": [
+    "informações claras e atualizadas sobre a previsão legal"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 11,
+   "cite": "LGPD Art. 23, III, p.11",
+   "claim": "public authorities: encarregado",
+   "contains": [
+    "seja indicado um encarregado"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 11,
+   "cite": "LGPD Art. 26, §1º, p.11",
+   "claim": "prohibition of transfer to private entities and exceptions",
+   "contains": [
+    "execução descentralizada de atividade pública",
+    "prevenção de fraudes e irregularidades"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 12,
+   "cite": "LGPD Art. 27, p.12",
+   "claim": "communication to private entities depends on consent",
+   "contains": [
+    "dependerá de consentimento do titular"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 12,
+   "cite": "LGPD Art. 29, p.12",
+   "claim": "ANPD requests information from public authorities",
+   "contains": [
+    "parecer técnico complementar"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 12,
+   "cite": "LGPD Art. 33, I-V, p.12",
+   "claim": "international transfer",
+   "contains": [
+    "cláusulas-padrão contratuais",
+    "normas corporativas globais",
+    "selos, certificados e códigos de conduta",
+    "quando a autoridade nacional autorizar a transferência"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 13,
+   "cite": "LGPD Art. 33, VIII-IX, p.13",
+   "claim": "specific and prominent consent",
+   "contains": [
+    "consentimento específico e em destaque",
+    "caráter internacional da operação",
+    "incisos II, V e VI do art. 7º"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 13,
+   "cite": "LGPD Art. 34, p.13",
+   "claim": "assessment of the level of protection",
+   "contains": [
+    "garantias judiciais e institucionais"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 13,
+   "cite": "LGPD Art. 35-36, p.13",
+   "claim": "certification bodies; communication of changes",
+   "contains": [
+    "organismos de certificação",
+    "comunicadas à autoridade nacional"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 37, p.14",
+   "claim": "record of operations",
+   "contains": [
+    "manter registro das operações de tratamento"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 38, sole par., p.14",
+   "claim": "minimum content of the RIPD",
+   "contains": [
+    "descrição dos tipos de dados coletados",
+    "metodologia utilizada para a coleta e para a garantia da segurança das informações",
+    "mecanismos de mitigação de risco adotados"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 38, caput, p.14",
+   "claim": "RIPD ordered by the ANPD",
+   "contains": [
+    "inclusive de dados sensíveis",
+    "segredos comercial e industrial"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 39-40, p.14",
+   "claim": "processor and instructions; retention time",
+   "contains": [
+    "segundo as instruções fornecidas pelo controlador",
+    "tempo de guarda dos registros"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 41, p.14",
+   "claim": "encarregado",
+   "contains": [
+    "indicar encarregado",
+    "divulgadas publicamente",
+    "orientar os funcionários e os contratados"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 41, §3º, p.14",
+   "claim": "exemption by complementary rules",
+   "contains": [
+    "hipóteses de dispensa da necessidade de sua indicação"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 14,
+   "cite": "LGPD Art. 42, p.14",
+   "claim": "joint liability",
+   "contains": [
+    "solidariamente",
+    "dano patrimonial, moral, individual ou coletivo"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 15,
+   "cite": "LGPD Art. 42, §§2º-4º, p.15",
+   "claim": "reversal of the burden of proof; right of recourse",
+   "contains": [
+    "inverter o ônus da prova",
+    "direito de regresso"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 15,
+   "cite": "LGPD Art. 43, p.15",
+   "claim": "exclusions",
+   "contains": [
+    "culpa exclusiva do titular dos dados ou de terceiro"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 15,
+   "cite": "LGPD Art. 44, p.15",
+   "claim": "irregular processing",
+   "contains": [
+    "segurança que o titular dele pode esperar",
+    "técnicas de tratamento de dados pessoais disponíveis à época"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 15,
+   "cite": "LGPD Art. 46, p.15",
+   "claim": "security from the design stage",
+   "contains": [
+    "medidas de segurança, técnicas e administrativas",
+    "desde a fase de concepção do produto ou do serviço até a sua execução"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 15,
+   "cite": "LGPD Art. 47, p.15",
+   "claim": "security after the end of processing",
+   "contains": [
+    "mesmo após o seu término"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 48, caput and §1º, p.16",
+   "claim": "incident: notification and deadline",
+   "contains": [
+    "incidente de segurança que possa acarretar risco ou dano relevante",
+    "prazo razoável, conforme definido pela autoridade nacional"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 48, §1º, I-VI, p.16",
+   "claim": "six minimum elements",
+   "contains": [
+    "descrição da natureza dos dados pessoais afetados",
+    "motivos da demora",
+    "reverter ou mitigar os efeitos do prejuízo"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 48, §§2º-3º, p.16",
+   "claim": "measures and unintelligibility",
+   "contains": [
+    "ampla divulgação do fato em meios de comunicação",
+    "ininteligíveis"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 49, p.16",
+   "claim": "structured systems",
+   "contains": [
+    "estruturados de forma a atender aos requisitos de segurança"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 50, §1º, p.16",
+   "claim": "probability and severity",
+   "contains": [
+    "probabilidade e a gravidade dos riscos e dos benefícios"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 16,
+   "cite": "LGPD Art. 50, §2º, I, a-b, p.16",
+   "claim": "governance program",
+   "contains": [
+    "programa de governança em privacidade",
+    "independentemente do modo como se realizou sua coleta"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 17,
+   "cite": "LGPD Art. 50, §2º, I, c-h, p.17",
+   "claim": "elements of the governance program",
+   "contains": [
+    "avaliação sistemática de impactos e riscos à privacidade",
+    "planos de resposta a incidentes e remediação",
+    "monitoramento contínuo"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 17,
+   "cite": "LGPD Art. 50, §2º, II and §3º; Art. 51, p.17",
+   "claim": "demonstrate effectiveness; publication; standards",
+   "contains": [
+    "demonstrar a efetividade",
+    "publicadas e atualizadas periodicamente",
+    "padrões técnicos que facilitem o controle pelos titulares"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 17,
+   "cite": "LGPD Art. 52, I-III, p.17",
+   "claim": "warning, 2% fine and R$ 50 million",
+   "contains": [
+    "2% (dois por cento) do faturamento",
+    "R$ 50.000.000,00",
+    "multa diária"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 17,
+   "cite": "LGPD Art. 52, IV-VI, p.17",
+   "claim": "publicization, blocking, deletion",
+   "contains": [
+    "publicização da infração",
+    "bloqueio dos dados pessoais a que se refere a infração",
+    "eliminação dos dados pessoais"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 17,
+   "cite": "LGPD Art. 52, X-XI, p.17",
+   "claim": "suspensions",
+   "contains": [
+    "6 (seis) meses, prorrogável por igual período"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 18,
+   "cite": "LGPD Art. 52, XII and §1º, p.18",
+   "claim": "prohibition and criteria",
+   "contains": [
+    "proibição parcial ou total do exercício de atividades",
+    "boa-fé do infrator",
+    "pronta adoção de medidas corretivas"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 18,
+   "cite": "LGPD Art. 52, §§4º-7º, p.18",
+   "claim": "total revenue; fund; conciliation",
+   "contains": [
+    "faturamento total da empresa ou grupo de empresas",
+    "Fundo de Defesa de Direitos Difusos",
+    "conciliação direta"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 18,
+   "cite": "LGPD Art. 52, §6º, p.18",
+   "claim": "sanctions X-XII only after another sanction",
+   "contains": [
+    "somente após já ter sido imposta ao menos 1 (uma)"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 18,
+   "cite": "LGPD Art. 53, p.18",
+   "claim": "sanctions regulation with public consultation",
+   "contains": [
+    "consulta pública"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 19,
+   "cite": "LGPD Art. 54, p.19",
+   "claim": "daily fine",
+   "contains": [
+    "prazo razoável e estipulado"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 19,
+   "cite": "LGPD Art. 55-A, 55-C, p.19",
+   "claim": "ANPD: nature and composition (Lei 15.352/2026)",
+   "contains": [
+    "autarquia de natureza especial vinculada ao Ministério da Justiça e Segurança Pública",
+    "Lei nº 14.460, de 2022",
+    "Procuradoria",
+    "Auditoria"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 19,
+   "cite": "LGPD Chap. IX, p.19",
+   "claim": "title of chapter IX",
+   "contains": [
+    "DA AGÊNCIA NACIONAL DE PROTEÇÃO DE DADOS E DO CONSELHO NACIONAL DE PROTEÇÃO DE DADOS PESSOAIS E DA PRIVACIDADE"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 20,
+   "cite": "LGPD Art. 55-D, §3º, p.20",
+   "claim": "4-year term",
+   "contains": [
+    "mandato dos membros do Conselho Diretor será de 4 (quatro) anos"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 20,
+   "cite": "LGPD Art. 55-J, I-IV, p.20",
+   "claim": "ANPD powers",
+   "contains": [
+    "zelar pela proteção dos dados pessoais",
+    "contraditório, a ampla defesa e o direito de recurso"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 21,
+   "cite": "LGPD Art. 55-J, XIII and XVIII, p.21",
+   "claim": "high-risk RIPD; micro and small businesses",
+   "contains": [
+    "relatórios de impacto à proteção de dados pessoais para os casos em que o tratamento representar alto risco",
+    "microempresas e empresas de pequeno porte"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 22,
+   "cite": "LGPD Art. 55-J, §1º; 55-K, p.22",
+   "claim": "minimum intervention; sanctions exclusive to the ANPD",
+   "contains": [
+    "mínima intervenção",
+    "compete exclusivamente à ANPD"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 23,
+   "cite": "LGPD Art. 58-A, p.23",
+   "claim": "council with 23 representatives",
+   "contains": [
+    "23 (vinte e três) representantes"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 24,
+   "cite": "LGPD Art. 60, p.24",
+   "claim": "Marco Civil da Internet (Brazilian Internet Civil Rights Framework)",
+   "contains": [
+    "exclusão definitiva dos dados pessoais",
+    "Marco Civil da Internet"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 24,
+   "cite": "LGPD Art. 63-64, p.24",
+   "claim": "progressive adaptation; rights not mutually exclusive",
+   "contains": [
+    "adequação progressiva de bancos de dados",
+    "não excluem outros previstos no ordenamento jurídico"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 24,
+   "cite": "LGPD Art. 65, p.24",
+   "claim": "effective date",
+   "contains": [
+    "28 de dezembro de 2018",
+    "1º de agosto de 2021",
+    "24 (vinte e quatro) meses",
+    "Lei nº 14.010, de 2020"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 25,
+   "cite": "LGPD footer, p.25",
+   "claim": "text does not replace the one published in the DOU (Diário Oficial da União, official gazette)",
+   "contains": [
+    "Este texto não substitui o publicado no DOU de 15.8.2018"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 11,
+   "cite": "LGPD Art. 23, §3º, p.11",
+   "claim": "deadlines for rights before public authorities",
+   "contains": [
+    "Lei do Habeas Data",
+    "Lei de Acesso à Informação"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "page": 12,
+   "cite": "LGPD Art. 28, p.12",
+   "claim": "vetoed",
+   "contains": [
+    "Art. 28. (VETADO)"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 6,
+   "cite": "NIST8062 p.6",
+   "claim": "definition and objectives in the executive summary",
+   "contains": [
+    "privacy engineering means a specialty discipline of systems engineering",
+    "predictability, manageability, and disassociability"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 9,
+   "cite": "NIST8062 p.9",
+   "claim": "introduction: FIPPs and unauthorized access to PII",
+   "contains": [
+    "fair information practice principles",
+    "unauthorized access to personally identifiable"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 10,
+   "cite": "NIST8062 p.10",
+   "claim": "smart meters, re-identification, boundary",
+   "contains": [
+    "smart meters",
+    "re-identification of information",
+    "system boundary"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 11,
+   "cite": "NIST8062 p.11",
+   "claim": "RMF; repeatability and measurability",
+   "contains": [
+    "risk management framework",
+    "repeatability is important",
+    "measurability matters"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 12,
+   "cite": "NIST8062 p.12",
+   "claim": "audience and common processes",
+   "contains": [
+    "common processes that complement existing enterprise risk management"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 14,
+   "cite": "NIST8062 p.14",
+   "claim": "individual's boundary",
+   "contains": [
+    "boundary line between the individual and others"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 15,
+   "cite": "NIST8062 p.15",
+   "claim": "security and privacy: coordinated approach; FIPPs",
+   "contains": [
+    "a coordinated approach does not necessarily mean an identical approach",
+    "purpose specification",
+    "access and amendment"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 16,
+   "cite": "NIST8062 p.16",
+   "claim": "by-product model",
+   "contains": [
+    "byproduct risk model",
+    "persistent activity monitoring",
+    "poor consent mechanism"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 17,
+   "cite": "NIST8062 p.17",
+   "claim": "do not manage privacy through security alone; problems",
+   "contains": [
+    "solely on the basis of managing security",
+    "adverse experience resulting from pii processing",
+    "discriminatory and stigmatizing effect",
+    "boarding airplanes"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 18,
+   "cite": "NIST8062 p.18",
+   "claim": "Figure 3 illustrative; Solove",
+   "contains": [
+    "figure 3 is for illustrative purposes only",
+    "solove"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 19,
+   "cite": "NIST8062 p.19",
+   "claim": "FIPPs as value statements; boundary",
+   "contains": [
+    "value statements rather than recipes",
+    "programmatically expansive view of the boundary"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 20,
+   "cite": "NIST8062 p.20",
+   "claim": "example of a requirement; accepted risk",
+   "contains": [
+    "limit the collection of a particular set of data",
+    "no system that can be perfectly free of security risk"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 21,
+   "cite": "NIST8062 p.21",
+   "claim": "evidence base; absence of assessment guidance",
+   "contains": [
+    "sufficient base of evidence",
+    "no guidance on how to assess this risk"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 22,
+   "cite": "NIST8062 p.22",
+   "claim": "compliance-focused assessments",
+   "contains": [
+    "focused on compliance rather than the effectiveness"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 23,
+   "cite": "NIST8062 p.23",
+   "claim": "PIA",
+   "contains": [
+    "a pia is both an analysis and a formal document",
+    "risk management framework"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 24,
+   "cite": "NIST8062 p.24",
+   "claim": "communication gap; CIA triad",
+   "contains": [
+    "communication gap between policy and legal teams",
+    "confidentiality, integrity, and availability"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 25,
+   "cite": "NIST8062 p.25",
+   "claim": "objectives supplement FIPPs; identity broker",
+   "contains": [
+    "supplement, not replace the fipps",
+    "identity broker"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 26,
+   "cite": "NIST8062 p.26",
+   "claim": "predictability and notice read",
+   "contains": [
+    "not surprised by the handling of pii",
+    "whether users have read and understood the notice"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 27,
+   "cite": "NIST8062 p.27",
+   "claim": "predictability and purpose spec; manageability",
+   "contains": [
+    "purpose specification and use limitation fipp",
+    "manageability is an important system property enabling several of the fipps",
+    "fraud detection or proof of eligibility"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 28,
+   "cite": "NIST8062 p.28",
+   "claim": "disassociability",
+   "contains": [
+    "disassociability captures one of the elements of privacy-preserving systems",
+    "unlike confidentiality",
+    "zero-knowledge proof",
+    "unlinkability, unobservability, pseudonymity"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 29,
+   "cite": "NIST8062 p.29",
+   "claim": "problematic data action; risk",
+   "contains": [
+    "problematic data action means a data action that causes an adverse effect",
+    "fail to capture the essence of many privacy problems",
+    "likelihood of occurrence"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 30,
+   "cite": "NIST8062 p.30",
+   "claim": "likelihood and impact; proxies; residual risk",
+   "contains": [
+    "likelihood in a privacy risk model is the probability",
+    "legal compliance costs",
+    "risk can be managed, but it cannot be eliminated"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 31,
+   "cite": "NIST8062 p.31",
+   "claim": "data actions, PII, context",
+   "contains": [
+    "data actions are any system operations that process pii",
+    "the circumstances surrounding the system's processing of pii",
+    "health condition"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 32,
+   "cite": "NIST8062 p.32",
+   "claim": "roadmap",
+   "contains": [
+    "expand its guidance to enable agencies to apply the privacy risk model"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 33,
+   "cite": "NIST8062 p.33",
+   "claim": "parity with enterprise risk",
+   "contains": [
+    "privacy to achieve parity with other considerations"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 34,
+   "cite": "NIST8062 p.34",
+   "claim": "App. A: gaps",
+   "contains": [
+    "communication gap around privacy",
+    "risk management should be a fundamental driver"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 36,
+   "cite": "NIST8062 p.36",
+   "claim": "glossary: manageability and predictability",
+   "contains": [
+    "granular administration of pii including alteration",
+    "enabling of reliable assumptions"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 37,
+   "cite": "NIST8062 p.37",
+   "claim": "verifiable privacy system requirement",
+   "contains": [
+    "system privacy requirement",
+    "verification possible via analysis, observation, test, inspection, measurement"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 44,
+   "cite": "NIST8062 p.44",
+   "claim": "App. E: cyber-physical systems",
+   "contains": [
+    "cyber-physical systems",
+    "predictive policing"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 46,
+   "cite": "NIST8062 p.46",
+   "claim": "App. E: health and consent",
+   "contains": [
+    "79% of respondents had concerns about their privacy",
+    "misunderstand or underestimate the extent to which they have consented"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 47,
+   "cite": "NIST8062 p.47",
+   "claim": "App. E: big data and bias",
+   "contains": [
+    "automated targeting system",
+    "bias or discrimination"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 48,
+   "cite": "NIST8062 p.48",
+   "claim": "App. E: ESTA and social media",
+   "contains": [
+    "social media identifiers",
+    "chilling effect"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 49,
+   "cite": "NIST8062 p.49",
+   "claim": "App. F: FIPPs",
+   "contains": [
+    "monitor, audit, and document compliance",
+    "directly relevant and necessary to accomplish a legally authorized purpose",
+    "commensurate with the risk and magnitude of the harm"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 21,
+   "cite": "NIST8062 p.21",
+   "claim": "ISO and OASIS do not teach how to conduct an assessment",
+   "contains": [
+    "oasis) privacy management",
+    "iso) privacy framework"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 9,
+   "cite": "NIST8062 p.9",
+   "claim": "note 2: Cavoukian's Privacy by Design",
+   "contains": [
+    "privacy by design"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "page": 22,
+   "cite": "NIST8062 p.22",
+   "claim": "note 47: COPPA as an example of a prescriptive law",
+   "contains": [
+    "children's online privacy protection act"
+   ]
+  }
+ ],
+ "negatives": [
+  {
+   "src": "LGPD",
+   "claim": "The LGPD (compiled text) sets neither 72 hours nor any number of hours/days for reporting an incident",
+   "terms": [
+    "72 horas",
+    "setenta e duas",
+    "horas"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "Art. 48 contains neither 'dias' nor 'horas' (the deadline is 'razoável, conforme definido pela ANPD', i.e. reasonable, as defined by the ANPD)",
+   "terms": [
+    "horas",
+    "dias"
+   ],
+   "page": 16
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not mention artificial intelligence, cookies, encryption, facial recognition",
+   "terms": [
+    "inteligência artificial",
+    "cookies",
+    "criptografia",
+    "reconhecimento facial"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not use 'privacy by design' or 'privacidade desde a concepção'; the basis is Art. 46 §2º",
+   "terms": [
+    "privacy by design",
+    "privacidade desde a concepção"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text uses neither DPO nor GDPR/RGPD (the term in the law is encarregado)",
+   "terms": [
+    "DPO",
+    "GDPR",
+    "RGPD"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text provides for no joint controller, sub-processor, right to be forgotten",
+   "terms": [
+    "controlador conjunto",
+    "suboperador",
+    "direito ao esquecimento"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not mention data inventory/mapping (Art. 37 only asks for a record of operations)",
+   "terms": [
+    "inventário",
+    "mapeamento"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not mention 'avaliação de impacto' (impact assessment; the term is relatório de impacto) or 'ciclo de vida' (life cycle)",
+   "terms": [
+    "avaliação de impacto",
+    "ciclo de vida"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The compiled text cites no ANPD resolutions or ISO/IEC standard",
+   "terms": [
+    "resolução",
+    "ISO/IEC"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text mentions neither NIST nor Privacy Engineering",
+   "terms": [
+    "NIST",
+    "privacy engineering"
+   ]
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not list the fields of the record of operations (no 'categorias de dados' in Art. 37)",
+   "terms": [
+    "categorias de dados"
+   ],
+   "page": 14
+  },
+  {
+   "src": "LGPD",
+   "claim": "The text does not define a 'prazo de retenção' (retention period) in days/months for data",
+   "terms": [
+    "prazo de retenção",
+    "retenção"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "NIST IR 8062 contains neither PRAM nor the NIST Privacy Framework",
+   "terms": [
+    "PRAM",
+    "Identify-P",
+    "NIST Privacy Framework"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No techniques such as differential privacy, k-anonymity, homomorphic, encryption",
+   "terms": [
+    "differential privacy",
+    "k-anonymity",
+    "homomorphic",
+    "encryption"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No risk matrix, scoring scales or heat map",
+   "terms": [
+    "risk matrix",
+    "heat map",
+    "scoring"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No GDPR DPIA as a method, no ISO 27001, no 'incident'",
+   "terms": [
+    "DPIA",
+    "27001",
+    "incident"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No data inventory/map",
+   "terms": [
+    "data map",
+    "inventory",
+    "data flow"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "Does not cite the LGPD or Brazil",
+   "terms": [
+    "LGPD",
+    "Brazil",
+    "Brasil"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No SP 800-53 Revision 5",
+   "terms": [
+    "Revision 5",
+    "Rev. 5"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "p.28 (disassociability) contains neither 'encryption' nor 'anonymization'",
+   "terms": [
+    "encryption",
+    "anonymization"
+   ],
+   "page": 28
+  },
+  {
+   "src": "NIST8062",
+   "claim": "p.30 (likelihood and impact) contains no matrix or numeric scale",
+   "terms": [
+    "matrix",
+    "scale"
+   ],
+   "page": 30
+  },
+  {
+   "src": "NIST8062",
+   "claim": "The GDPR high-risk 'threshold' is not in NIST",
+   "terms": [
+    "threshold"
+   ]
+  },
+  {
+   "src": "NIST8062",
+   "claim": "No opt-in/opt-out",
+   "terms": [
+    "opt-in",
+    "opt out"
+   ]
+  }
+ ]
+}

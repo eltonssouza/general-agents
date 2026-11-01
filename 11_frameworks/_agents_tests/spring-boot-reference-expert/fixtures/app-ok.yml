@@ -1,0 +1,17 @@
+# correct example (test data)
+server:
+  port: 8081
+  shutdown: graceful
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+  endpoint:
+    health:
+      show-details: when-authorized
+      probes:
+        enabled: true

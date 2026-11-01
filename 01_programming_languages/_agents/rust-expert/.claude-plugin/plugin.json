@@ -1,0 +1,8 @@
+{
+  "name": "rust-expert",
+  "version": "0.2.0",
+  "description": "Rust specialist agent (review, decisions, and diagnosis) distilled from The Rust Programming Language (Rust 1.90, edition 2024), The Rust Reference, and Rust by Example, with 5 skills, 3 scripts, and references traceable by PDF page. It states what the sources do not cover and marks [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Elton Souza" },
+  "keywords": ["rust", "ownership", "borrow-checker", "lifetimes", "unsafe", "async", "editions"]
+}

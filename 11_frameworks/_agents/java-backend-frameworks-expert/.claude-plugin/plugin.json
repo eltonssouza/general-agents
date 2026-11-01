@@ -1,0 +1,18 @@
+{
+  "name": "java-backend-frameworks-expert",
+  "version": "1.0.0",
+  "description": "Java back-end specialist based on three sources: Mastering Spring Boot 3.0 (Ahmet Meric, Packt, 2024; Spring Boot 3.2.x), DZone Refcard Quarkus Serverless Functions (Daniel Oh, Red Hat, 2021; Quarkus 2.x) and MapStruct 1.6.3 Reference Guide (2024-11-09). Lookup, Spring Boot 3 project checklist, @Mapper generator/validator and approach comparator. [DATED] 2021-2024; the extensive official Spring Boot reference belongs to spring-boot-reference-expert.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "spring-boot-3",
+    "quarkus",
+    "serverless",
+    "mapstruct",
+    "java",
+    "reactive",
+    "spring-security",
+    "kafka",
+    "kubernetes"
+  ]
+}

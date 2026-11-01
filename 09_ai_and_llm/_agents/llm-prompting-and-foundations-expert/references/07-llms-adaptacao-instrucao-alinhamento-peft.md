@@ -1,0 +1,28 @@
+# LLMS p.30–44 — post-training: instruction tuning, alignment (RLHF and alternatives), PEFT
+
+## 5.1 Instruction tuning (LLMS p.30-36)
+- Definition: supervised fine-tuning on instances formatted in natural language (instruction, optional input, output, optional demonstrations); close to SFT and to prompted multitask training (LLMS p.30).
+- Instance construction (Fig. 11, p.31): (a) formatting NLP datasets with task descriptions (removing the descriptions drops performance; PromptSource; inverting input-output pairs), (b) real chat data (InstructGPT uses real API queries; ShareGPT, Dolly, OpenAssistant), (c) synthetic (Self-Instruct with 175 seed instances and a quality/diversity filter; WizardLM's Evol-Instruct; Self-Align) (p.30-31).
+- Factors: increasing the number of tasks improves results and then saturates; few instances per task already saturate; a few thousand high-quality instructions may suffice, while Orca scales to 5M with explanations; the task description is the most important part of the format; including "what to avoid/reasons" can be neutral or harmful; mixing CoT and non-CoT examples (p.31-32). Instruction quality and selection: perplexity, length, IFD, diversity, LESS (p.32).
+- Strategies (p.32-33): balance the mixture (proportional sampling with a maximum cap per dataset), combine with pre-training data (OPT-IML; GLM-130B and Galactica), multi-stage (task instructions and then chat, keeping some task data in the 2nd stage), loss masking in multi-turn conversations (Vicuna), model self-identification.
+- Effects (p.33-34): improves performance at scales from 77M to 540B; smaller models with IT can outperform larger ones without IT; generalizes to unseen tasks (BLOOMZ-P3: >50% gain in multilingual completion with English-only instructions); specializes domains (Med-PaLM).
+- Survey experiment (Tab. 10, p.35; analysis p.36) **[DATED: LLaMA 7B/13B, 2023]**: FLAN-T5 (80 thousand) is better at QA, ShareGPT (63,184) is better at chat; mixing the three sources helps (MMLU 7B: 43.69 vs 38.58 FLAN only); increasing complexity and diversity helps; merely increasing the number of instructions without quality control can worsen results (BBH 29.81→26.63); balancing difficulty by perplexity does not always help; a larger model is better (MMLU 38.11→47.49 on ShareGPT from 7B to 13B). Tab. 9 (p.33): GPUs/time (e.g., LLaMA 7B, full fine-tuning on 2 A800 GPUs, 3.0 h; LoRA on 1 GPU, 3.5 h; 65B: 16 GPUs and 11.2 h vs LoRA 60.6 h).
+
+## 5.2 Alignment (LLMS p.36-43)
+- Rationale: the LM objective does not consider human values; alignment can harm general abilities ("alignment tax") (p.36). Criteria: **helpfulness, honesty, harmlessness** (p.36-37); the criteria are subjective; **red teaming** is a promising technique (p.37).
+- Human feedback (p.37): selecting labelers (InstructGPT filters by agreement; "super raters"); collecting by ranking (Elo), questions (WebGPT) and rules (Sparrow); GPT-4 uses zero-shot classifiers as rule-based reward models (p.37-38).
+- **RLHF** (Fig. 12, p.38): LM to align + reward model + RL algorithm (PPO). Steps: (1) SFT, (2) RM training from preferences/rankings, (3) RL tuning with a KL penalty relative to the initial LM; InstructGPT used a 6B RM and a 175B GPT-3; DeepMind used Gopher 280B with a 7B RM (p.38). RLAIF uses AI feedback and targets the "evasion problem" (p.38).
+- Strategies (p.39): large RM (≥ model), initialize the RM from a chat checkpoint (LLaMA 2), regularize with LM loss, multiple RMs per criterion, rejection sampling/best-of-N before RL, 5 RLHF versions in LLaMA 2, beam search for candidates, RM on a separate server. **Process-supervised RLHF** (p.39-40): PRM800k (12 thousand problems, 75 thousand solutions, per-step label), MCTS/LLM for annotation, expert iteration, reranking.
+- **Alignment without RLHF** (p.40-41): RAFT, Quark, ILF; Constitutional AI (critique and revision by principles); Self-Align; FIGA; Stable Alignment; primary cross-entropy objective and **DPO** (reparameterizes the reward through the policy and eliminates the explicit RM), with limitations (balancing positive/negative examples; weak reference model); auxiliary losses (RRHF, SLiC-HF, contrastive) (p.41).
+- **SFT vs RLHF** (p.41-43): SFT = behavior cloning with per-token ("local") loss; RLHF optimizes the whole text ("global"). SFT unlocks abilities but does not inject new ones and may induce hallucination if the demonstration exceeds the model's knowledge; quality > quantity; RLHF contrasts the model's own responses, helps reduce harm and hallucination (GPT-4), but inherits instability and sample inefficiency and requires a good SFT (p.42-43). Note 30 says this discussion is "somewhat subjective".
+
+## 5.3 Parameter-efficient tuning (LLMS p.43-44; Fig. 13, p.39)
+- **Adapter** (serial/parallel bottleneck module), **prefix tuning** (trainable vectors at each layer; p-tuning v2), **prompt tuning** (soft prompts at the input only; depends on model size) and **LoRA**: W ← W + ΔW with ΔW = A·Bᵀ, A∈R^(m×k), B∈R^(n×k), k ≪ min(m,n); saves memory and allows several matrices per task (p.43).
+- In LLMs: Alpaca-LoRA, LLaMA-Adapter; a study comparing adapters and LoRA on GPT-J/BLOOM/LLaMA: LoRA does well with few parameters; methods fall below GPT-3.5 on hard tasks; PEFT library (p.44). Broad studies on large LLMs are lacking (p.44).
+- Quantization for adaptation: see `11-llms-topicos-avancados...` (QLoRA, p.87).
+
+## Rules
+1. Goal "follow instructions": IT with a diverse, high-quality mixture (p.31-33, 36).
+2. Goal "harmless/helpful": RLHF or alternatives (DPO etc.) (p.38-41); consider annotation cost and instability (p.43).
+3. Small budget: LoRA (p.43-44).
+4. Do not claim DPO "replaces" RLHF: the survey says there are limitations (p.41).

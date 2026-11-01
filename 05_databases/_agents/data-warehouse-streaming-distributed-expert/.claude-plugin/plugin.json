@@ -1,0 +1,21 @@
+{
+  "name": "data-warehouse-streaming-distributed-expert",
+  "version": "2.0.0",
+  "description": "Specialist in dimensional modeling (Kimball Dimensional Modeling Techniques) and stream processing (survey on the evolution of stream systems, arXiv): grain, facts, dimensions, SCD, bus matrix, event time, watermarks, state, snapshots, exactly-once and the output commit problem, back-pressure. Pat Helland is not in the collection (the PDF is a different paper): content labeled [extrapolation]. States what the collection does not cover and flags [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "data-warehouse",
+    "kimball",
+    "dimensional-modeling",
+    "star-schema",
+    "fact-tables",
+    "scd",
+    "stream-processing",
+    "event-time",
+    "watermarks",
+    "exactly-once",
+    "output-commit",
+    "backpressure"
+  ]
+}

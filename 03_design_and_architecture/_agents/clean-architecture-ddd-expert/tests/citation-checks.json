@@ -1,0 +1,1772 @@
+{
+ "source": "text extracted from the 8 PDFs (markers === PAGE N ===, N = PDF page)",
+ "positive": [
+  {
+   "id": "P01",
+   "src": "DDD",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "core domain",
+    "ubiquitous language",
+    "explicitly bounded context"
+   ],
+   "claim": "three-point summary of the DDD"
+  },
+  {
+   "id": "P02",
+   "src": "DDD",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "multiple models",
+    "team organization",
+    "code bases",
+    "database schemas"
+   ],
+   "claim": "bounded context: boundaries by team, parts of the application and code bases/schemas"
+  },
+  {
+   "id": "P03",
+   "src": "DDD",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "bounded context",
+    "boundary",
+    "defined and applicable"
+   ],
+   "claim": "definition of bounded context in the glossary"
+  },
+  {
+   "id": "P04",
+   "src": "DDD",
+   "pages": [
+    10,
+    11
+   ],
+   "terms": [
+    "change in the language is a change to the model",
+    "relentlessly"
+   ],
+   "claim": "changing the language means changing the model"
+  },
+  {
+   "id": "P05",
+   "src": "DDD",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "three or four people",
+    "fragment",
+    "automated tests"
+   ],
+   "claim": "CI: fragmentation already with 3-4 people"
+  },
+  {
+   "id": "P06",
+   "src": "DDD",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "key goal here is isolation",
+    "hexagonal architecture",
+    "depends only on the layers below"
+   ],
+   "claim": "Layered Architecture: the goal is isolation; mentions Hexagonal"
+  },
+  {
+   "id": "P07",
+   "src": "DDD",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "thread of continuity",
+    "mistaken identity",
+    "same thing"
+   ],
+   "claim": "Entities: identity and continuity"
+  },
+  {
+   "id": "P08",
+   "src": "DDD",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "no conceptual identity",
+    "immutable",
+    "side-effect-free functions"
+   ],
+   "claim": "Value Objects: no identity, immutable"
+  },
+  {
+   "id": "P09",
+   "src": "DDD",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "ordinarily immutable",
+    "timestamp",
+    "distributed"
+   ],
+   "claim": "Domain Events: immutable, timestamp, distributed systems"
+  },
+  {
+   "id": "P10",
+   "src": "DDD",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "standalone interface",
+    "service contract",
+    "ubiquitous language"
+   ],
+   "claim": "Services: standalone interface with a contract"
+  },
+  {
+   "id": "P11",
+   "src": "DDD",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "tell the story of the system",
+    "cohesive set of concepts"
+   ],
+   "claim": "Modules: tell the story of the system"
+  },
+  {
+   "id": "P12",
+   "src": "DDD",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "root of each aggregate",
+    "references to the root only",
+    "invariants"
+   ],
+   "claim": "Aggregates: one root; external references only to the root"
+  },
+  {
+   "id": "P13",
+   "src": "DDD",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "within an aggregate boundary, apply consistency rules synchronously",
+    "across boundaries, handle updates asynchronously"
+   ],
+   "claim": "Aggregates: synchronous inside, asynchronous across"
+  },
+  {
+   "id": "P14",
+   "src": "DDD",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "govern transactions and distribution",
+    "keep an aggregate together on one server"
+   ],
+   "claim": "Aggregates: the boundary governs transactions and distribution"
+  },
+  {
+   "id": "P15",
+   "src": "DDD",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "illusion of an in-memory collection",
+    "repositories only for aggregate roots that actually need direct access"
+   ],
+   "claim": "Repositories: collection illusion; roots only"
+  },
+  {
+   "id": "P16",
+   "src": "DDD",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "blindsiding the aggregate root",
+    "mere data containers"
+   ],
+   "claim": "Repositories: unrestricted queries ambush the root; data containers"
+  },
+  {
+   "id": "P17",
+   "src": "DDD",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "create an entire aggregate as a piece",
+    "concrete classes"
+   ],
+   "claim": "Factories: create the whole aggregate, without concrete classes"
+  },
+  {
+   "id": "P18",
+   "src": "DDD",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "intention-revealing",
+    "write a test for a behavior before creating it"
+   ],
+   "claim": "Intention-Revealing Interfaces"
+  },
+  {
+   "id": "P19",
+   "src": "DDD",
+   "pages": [
+    28
+   ],
+   "terms": [
+    "segregate commands",
+    "no observable side effects"
+   ],
+   "claim": "Side-Effect-Free Functions"
+  },
+  {
+   "id": "P20",
+   "src": "DDD",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "post-conditions",
+    "invariants",
+    "automated unit tests"
+   ],
+   "claim": "Assertions"
+  },
+  {
+   "id": "P21",
+   "src": "DDD",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "closure of operations",
+    "same as the type of its argument"
+   ],
+   "claim": "Closure of Operations"
+  },
+  {
+   "id": "P22",
+   "src": "DDD",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "map the existing terrain",
+    "explicit translation",
+    "points of contact"
+   ],
+   "claim": "Context Map"
+  },
+  {
+   "id": "P23",
+   "src": "DDD",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "upstream",
+    "downstream",
+    "pollution"
+   ],
+   "claim": "upstream/downstream definition"
+  },
+  {
+   "id": "P24",
+   "src": "DDD",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "partnership",
+    "same release",
+    "succeed or fail together"
+   ],
+   "claim": "Partnership"
+  },
+  {
+   "id": "P25",
+   "src": "DDD",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "keep this kernel small",
+    "consultation",
+    "shared kernel"
+   ],
+   "claim": "Shared Kernel"
+  },
+  {
+   "id": "P26",
+   "src": "DDD",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "customer/supplier",
+    "acceptance tests",
+    "negotiate and budget"
+   ],
+   "claim": "Customer/Supplier"
+  },
+  {
+   "id": "P27",
+   "src": "DDD",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "slavishly",
+    "conformist",
+    "upstream is in the driver"
+   ],
+   "claim": "Conformist"
+  },
+  {
+   "id": "P28",
+   "src": "DDD",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "isolating layer",
+    "own domain model",
+    "translates in one or both directions"
+   ],
+   "claim": "Anticorruption Layer"
+  },
+  {
+   "id": "P29",
+   "src": "DDD",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "open-host service",
+    "protocol",
+    "one-off translator"
+   ],
+   "claim": "Open-host Service"
+  },
+  {
+   "id": "P30",
+   "src": "DDD",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "well-documented shared language",
+    "data interchange standards"
+   ],
+   "claim": "Published Language"
+  },
+  {
+   "id": "P31",
+   "src": "DDD",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "separate ways",
+    "integration is always expensive"
+   ],
+   "claim": "Separate Ways"
+  },
+  {
+   "id": "P32",
+   "src": "DDD",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "draw a boundary around the entire mess",
+    "big ball of mud",
+    "foote and yoder"
+   ],
+   "claim": "Big Ball of Mud"
+  },
+  {
+   "id": "P33",
+   "src": "DDD",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "boil the model down",
+    "top talent",
+    "core domain"
+   ],
+   "claim": "Core Domain"
+  },
+  {
+   "id": "P34",
+   "src": "DDD",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "off-the-shelf",
+    "generic subdomains",
+    "lower priority"
+   ],
+   "claim": "Generic Subdomains"
+  },
+  {
+   "id": "P35",
+   "src": "DDD",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "about one page",
+    "value proposition"
+   ],
+   "claim": "Domain Vision Statement"
+  },
+  {
+   "id": "P36",
+   "src": "DDD",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "three to seven sparse pages"
+   ],
+   "claim": "Highlighted Core"
+  },
+  {
+   "id": "P37",
+   "src": "DDD",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "new term introduced since the 2004 book"
+   ],
+   "claim": "asterisk legend in the table of contents"
+  },
+  {
+   "id": "P38",
+   "src": "DDD",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "less is more",
+    "evolving order"
+   ],
+   "claim": "Evolving Order"
+  },
+  {
+   "id": "P39",
+   "src": "DDD",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "cqrs",
+    "event sourcing"
+   ],
+   "claim": "acknowledgments mention CQRS and Event Sourcing"
+  },
+  {
+   "id": "P40",
+   "src": "CA11",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "hide the framework, ui, or database",
+    "frustrated architect"
+   ],
+   "claim": "CA11: reluctance to hide framework/UI/database"
+  },
+  {
+   "id": "P41",
+   "src": "CA11",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "interactor",
+    "httprequest",
+    "vanilla data structure"
+   ],
+   "claim": "CA11: controller-interactor-simple structures flow"
+  },
+  {
+   "id": "P42",
+   "src": "CA11",
+   "pages": [
+    2,
+    3
+   ],
+   "terms": [
+    "without the ui present",
+    "web server"
+   ],
+   "claim": "CA11: testing without the UI or web server"
+  },
+  {
+   "id": "P43",
+   "src": "CA11",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "allows you to defer critical decisions",
+    "doesn't force you"
+   ],
+   "claim": "CA11: architecture allows deferring decisions"
+  },
+  {
+   "id": "P44",
+   "src": "CA11",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "decoupling trumps convention",
+    "activerecord"
+   ],
+   "claim": "CA11: decoupling matters more than convention"
+  },
+  {
+   "id": "P45",
+   "src": "CA11",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "inside-out",
+    "annoying little detail",
+    "growing object oriented software"
+   ],
+   "claim": "CA11: inside-out vs GOOS"
+  },
+  {
+   "id": "P46",
+   "src": "CA11",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "big up front design",
+    "parnas",
+    "demarco",
+    "booch",
+    "jacobson"
+   ],
+   "claim": "CA11: not BDUF; old ideas"
+  },
+  {
+   "id": "P47",
+   "src": "CA12",
+   "pages": [
+    1,
+    2
+   ],
+   "terms": [
+    "hexagonal architecture",
+    "onion architecture",
+    "dci",
+    "bce"
+   ],
+   "claim": "CA12: earlier architectures"
+  },
+  {
+   "id": "P48",
+   "src": "CA12",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "separation of concerns",
+    "at least one layer for business rules"
+   ],
+   "claim": "CA12: common goal"
+  },
+  {
+   "id": "P49",
+   "src": "CA12",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "independent of frameworks",
+    "testable",
+    "independent of ui",
+    "independent of database",
+    "independent of any external agency"
+   ],
+   "claim": "CA12: five properties"
+  },
+  {
+   "id": "P50",
+   "src": "CA12",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "source code dependencies can only point inwards",
+    "outer circles are mechanisms",
+    "inner circles are policies"
+   ],
+   "claim": "CA12: Dependency Rule"
+  },
+  {
+   "id": "P51",
+   "src": "CA12",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "enterprise wide business rules",
+    "least likely to change"
+   ],
+   "claim": "CA12: Entities"
+  },
+  {
+   "id": "P52",
+   "src": "CA12",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "application specific business rules",
+    "orchestrate the flow of data"
+   ],
+   "claim": "CA12: Use Cases"
+  },
+  {
+   "id": "P53",
+   "src": "CA12",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "all the sql should be restricted to this layer",
+    "presenters, views, and controllers"
+   ],
+   "claim": "CA12: Interface Adapters"
+  },
+  {
+   "id": "P54",
+   "src": "CA12",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "web is a detail",
+    "database is a detail",
+    "glue code"
+   ],
+   "claim": "CA12: Frameworks and Drivers"
+  },
+  {
+   "id": "P55",
+   "src": "CA12",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "circles are schematic",
+    "dependency rule always applies"
+   ],
+   "claim": "CA12: schematic circles"
+  },
+  {
+   "id": "P56",
+   "src": "CA12",
+   "pages": [
+    5,
+    6
+   ],
+   "terms": [
+    "dependency inversion principle",
+    "flow of control",
+    "use case output port"
+   ],
+   "claim": "CA12: crossing boundaries with DIP"
+  },
+  {
+   "id": "P57",
+   "src": "CA12",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "simple data structures",
+    "rowstructure",
+    "data transfer objects"
+   ],
+   "claim": "CA12: data crossing boundaries"
+  },
+  {
+   "id": "P58",
+   "src": "CA12",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "most convenient for the inner circle",
+    "intrinsically testable"
+   ],
+   "claim": "CA12: form most convenient to the inner circle; testability"
+  },
+  {
+   "id": "P59",
+   "src": "SRP",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "parnas",
+    "decomposing systems into modules",
+    "likely to change"
+   ],
+   "claim": "SRP: Parnas"
+  },
+  {
+   "id": "P60",
+   "src": "SRP",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "separation of concerns",
+    "constantine",
+    "one and only one reason to change"
+   ],
+   "claim": "SRP: lineage and definition"
+  },
+  {
+   "id": "P61",
+   "src": "SRP",
+   "pages": [
+    2,
+    3
+   ],
+   "terms": [
+    "cfo",
+    "coo",
+    "cto"
+   ],
+   "claim": "SRP: executives"
+  },
+  {
+   "id": "P62",
+   "src": "SRP",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "calculatepay",
+    "reporthours",
+    "save"
+   ],
+   "claim": "SRP: Employee class"
+  },
+  {
+   "id": "P63",
+   "src": "SRP",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "this principle is about people",
+    "single narrowly defined business function"
+   ],
+   "claim": "SRP: the principle is about people"
+  },
+  {
+   "id": "P64",
+   "src": "SRP",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "put sql in jsps",
+    "gather together the things that change for the same reasons",
+    "cohesion"
+   ],
+   "claim": "SRP: SQL in JSP; alternative formulation"
+  },
+  {
+   "id": "P65",
+   "src": "SRP",
+   "pages": [
+    4,
+    5
+   ],
+   "terms": [
+    "electric window",
+    "mechanic"
+   ],
+   "claim": "SRP: the mechanic analogy"
+  },
+  {
+   "id": "P66",
+   "src": "SRP",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "hyperbole"
+   ],
+   "claim": "SRP: footnote about hyperbole"
+  },
+  {
+   "id": "P67",
+   "src": "OCP",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "bertrand meyer",
+    "1988",
+    "available for extension"
+   ],
+   "claim": "OCP: Meyer"
+  },
+  {
+   "id": "P68",
+   "src": "OCP",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "extend the behavior of a system without having to modify that system",
+    "isolatable features"
+   ],
+   "claim": "OCP: essence"
+  },
+  {
+   "id": "P69",
+   "src": "OCP",
+   "pages": [
+    2,
+    3
+   ],
+   "terms": [
+    "shotgun surgery",
+    "fowler"
+   ],
+   "claim": "OCP: Shotgun Surgery"
+  },
+  {
+   "id": "P70",
+   "src": "OCP",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "plugin systems",
+    "apotheosis",
+    "high level policy from low level detail"
+   ],
+   "claim": "OCP: plugins"
+  },
+  {
+   "id": "P71",
+   "src": "OCP",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "inside the plugin, point at the system"
+   ],
+   "claim": "OCP: plugin dependencies point toward the system"
+  },
+  {
+   "id": "P72",
+   "src": "OCP",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "most important aspect of future software systems"
+   ],
+   "claim": "OCP: opinion on plugins"
+  },
+  {
+   "id": "P73",
+   "src": "SREL",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "dan north",
+    "just write simple code"
+   ],
+   "claim": "SREL: Dan North"
+  },
+  {
+   "id": "P74",
+   "src": "SREL",
+   "pages": [
+    1,
+    2
+   ],
+   "terms": [
+    "sequence, selection, and iteration",
+    "1945"
+   ],
+   "claim": "SREL: software has changed little"
+  },
+  {
+   "id": "P75",
+   "src": "SREL",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "microservices do not solve this problem",
+    "tangled microservice"
+   ],
+   "claim": "SREL: microservices do not solve the SRP"
+  },
+  {
+   "id": "P76",
+   "src": "SREL",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "device independence",
+    "simple code is both open and closed"
+   ],
+   "claim": "SREL: OCP"
+  },
+  {
+   "id": "P77",
+   "src": "SREL",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "liskov substitution principle",
+    "sub-typing",
+    "duck-types",
+    "if/switch statements will proliferate"
+   ],
+   "claim": "SREL: LSP and subtyping"
+  },
+  {
+   "id": "P78",
+   "src": "SREL",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "interface segregation principle",
+    "recompilation and redeployment",
+    "c#, c++, go, swift",
+    "maven and leiningen"
+   ],
+   "claim": "SREL: ISP"
+  },
+  {
+   "id": "P79",
+   "src": "SREL",
+   "pages": [
+    4,
+    5
+   ],
+   "terms": [
+    "depend in the direction of abstraction"
+   ],
+   "claim": "SREL: DIP"
+  },
+  {
+   "id": "P80",
+   "src": "SREL",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "simplicity requires disciplines guided by principles"
+   ],
+   "claim": "SREL: closing"
+  },
+  {
+   "id": "P81",
+   "src": "TARPIT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "single major difficulty",
+    "code volume",
+    "1968"
+   ],
+   "claim": "TARPIT: abstract and introduction"
+  },
+  {
+   "id": "P82",
+   "src": "TARPIT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "complexity, conformity, changeability and invisibility",
+    "root cause"
+   ],
+   "claim": "TARPIT: Brooks' four properties"
+  },
+  {
+   "id": "P83",
+   "src": "TARPIT",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "nothing to do with complexity theory",
+    "informal reasoning"
+   ],
+   "claim": "TARPIT: complexity is not complexity theory"
+  },
+  {
+   "id": "P84",
+   "src": "TARPIT",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "presence of bugs but never to show their absence",
+    "simplicity is more important"
+   ],
+   "claim": "TARPIT: limits of testing"
+  },
+  {
+   "id": "P85",
+   "src": "TARPIT",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "mutable state specifically"
+   ],
+   "claim": "TARPIT: state = mutable state"
+  },
+  {
+   "id": "P86",
+   "src": "TARPIT",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "double the total number of possible states",
+    "contamination",
+    "camel into the tent"
+   ],
+   "claim": "TARPIT: state doubles per bit; contamination"
+  },
+  {
+   "id": "P87",
+   "src": "TARPIT",
+   "pages": [
+    8,
+    9
+   ],
+   "terms": [
+    "a := b + 3",
+    "over-specify"
+   ],
+   "claim": "TARPIT: control over-specifies"
+  },
+  {
+   "id": "P88",
+   "src": "TARPIT",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "shared-state concurrency",
+    "nothing at all about what will happen the next time"
+   ],
+   "claim": "TARPIT: concurrency and non-repeatable tests"
+  },
+  {
+   "id": "P89",
+   "src": "TARPIT",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "code volume",
+    "nonlinear"
+   ],
+   "claim": "TARPIT: code volume"
+  },
+  {
+   "id": "P90",
+   "src": "TARPIT",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "dead code",
+    "unnecessary abstraction",
+    "complexity breeds complexity",
+    "simplicity is hard"
+   ],
+   "claim": "TARPIT: other causes"
+  },
+  {
+   "id": "P91",
+   "src": "TARPIT",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "power corrupts",
+    "garbage collection"
+   ],
+   "claim": "TARPIT: power corrupts"
+  },
+  {
+   "id": "P92",
+   "src": "TARPIT",
+   "pages": [
+    13,
+    14
+   ],
+   "terms": [
+    "intensional identity",
+    "extensional identity",
+    "value objects"
+   ],
+   "claim": "TARPIT: identity and Value Objects"
+  },
+  {
+   "id": "P93",
+   "src": "TARPIT",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "referential transparency",
+    "lambda calculus"
+   ],
+   "claim": "TARPIT: referential transparency"
+  },
+  {
+   "id": "P94",
+   "src": "TARPIT",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "essential complexity is inherent in, and the essence of, the problem",
+    "accidental complexity is all the rest"
+   ],
+   "claim": "TARPIT: definitions"
+  },
+  {
+   "id": "P95",
+   "src": "TARPIT",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "bits, bytes, transistors"
+   ],
+   "claim": "TARPIT: essential is strict"
+  },
+  {
+   "id": "P96",
+   "src": "TARPIT",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "thread pool",
+    "firmly believe"
+   ],
+   "claim": "TARPIT: thread pool is not essential"
+  },
+  {
+   "id": "P97",
+   "src": "TARPIT",
+   "pages": [
+    23,
+    24
+   ],
+   "terms": [
+    "ideal world",
+    "declarative programming",
+    "informal requirements"
+   ],
+   "claim": "TARPIT: ideal world"
+  },
+  {
+   "id": "P98",
+   "src": "TARPIT",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "table 1",
+    "essential input",
+    "accidental state"
+   ],
+   "claim": "TARPIT: Table 1"
+  },
+  {
+   "id": "P99",
+   "src": "TARPIT",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "no caches",
+    "synchrony hypothesis"
+   ],
+   "claim": "TARPIT: no caches in the ideal world"
+  },
+  {
+   "id": "P100",
+   "src": "TARPIT",
+   "pages": [
+    30,
+    31
+   ],
+   "terms": [
+    "performance",
+    "ease of expression",
+    "required accidental complexity"
+   ],
+   "claim": "TARPIT: necessary accidental complexity"
+  },
+  {
+   "id": "P101",
+   "src": "TARPIT",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "avoid",
+    "separate",
+    "kowalski"
+   ],
+   "claim": "TARPIT: avoid and separate"
+  },
+  {
+   "id": "P102",
+   "src": "TARPIT",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "table 2",
+    "useless complexity"
+   ],
+   "claim": "TARPIT: Table 2"
+  },
+  {
+   "id": "P103",
+   "src": "TARPIT",
+   "pages": [
+    35,
+    36
+   ],
+   "terms": [
+    "essential state",
+    "essential logic",
+    "accidental state and control",
+    "recommended architecture"
+   ],
+   "claim": "TARPIT: recommended architecture"
+  },
+  {
+   "id": "P104",
+   "src": "TARPIT",
+   "pages": [
+    36,
+    37
+   ],
+   "terms": [
+    "premature optimisation"
+   ],
+   "claim": "TARPIT: premature optimization"
+  },
+  {
+   "id": "P105",
+   "src": "TARPIT",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "data independence",
+    "structure",
+    "manipulation",
+    "integrity"
+   ],
+   "claim": "TARPIT: four aspects of the relational model"
+  },
+  {
+   "id": "P106",
+   "src": "TARPIT",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "functional reactive programming",
+    "not in any way been proven in practice"
+   ],
+   "claim": "TARPIT: FRP is hypothetical and is not functional reactive"
+  },
+  {
+   "id": "P107",
+   "src": "TARPIT",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "essential state",
+    "essential logic",
+    "accidental state and control",
+    "other"
+   ],
+   "claim": "TARPIT: four FRP components"
+  },
+  {
+   "id": "P108",
+   "src": "TARPIT",
+   "pages": [
+    44,
+    45
+   ],
+   "terms": [
+    "base relvars",
+    "integrity constraints",
+    "normalization"
+   ],
+   "claim": "TARPIT: essential state and logic"
+  },
+  {
+   "id": "P109",
+   "src": "TARPIT",
+   "pages": [
+    46,
+    47
+   ],
+   "terms": [
+    "feeders",
+    "observers"
+   ],
+   "claim": "TARPIT: feeders and observers"
+  },
+  {
+   "id": "P110",
+   "src": "TARPIT",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "1500 lines of scheme"
+   ],
+   "claim": "TARPIT: Scheme prototype"
+  },
+  {
+   "id": "P111",
+   "src": "TARPIT",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "data abstraction",
+    "subjectivity"
+   ],
+   "claim": "TARPIT: unnecessary data abstraction"
+  },
+  {
+   "id": "P112",
+   "src": "TARPIT",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "tar pit",
+    "silver bullet",
+    "simplicity"
+   ],
+   "claim": "TARPIT: conclusion"
+  },
+  {
+   "id": "P113",
+   "src": "REACT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "responsive, resilient, elastic and message driven",
+    "reactive systems"
+   ],
+   "claim": "REACT: four attributes"
+  },
+  {
+   "id": "P114",
+   "src": "REACT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "replication, containment, isolation and delegation"
+   ],
+   "claim": "REACT: resilience mechanisms"
+  },
+  {
+   "id": "P115",
+   "src": "REACT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "millisecond response times",
+    "100% uptime",
+    "petabytes"
+   ],
+   "claim": "REACT: modern demands"
+  },
+  {
+   "id": "P116",
+   "src": "REACT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "no contention points or central bottlenecks",
+    "shard or replicate"
+   ],
+   "claim": "REACT: elastic"
+  },
+  {
+   "id": "P117",
+   "src": "REACT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "back-pressure",
+    "location transparency",
+    "asynchronous message-passing"
+   ],
+   "claim": "REACT: message driven"
+  },
+  {
+   "id": "P118",
+   "src": "REACT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "composable"
+   ],
+   "claim": "REACT: composition"
+  },
+  {
+   "id": "P119",
+   "src": "REACT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "published on september 16 2014"
+   ],
+   "claim": "REACT: publication date"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "src": [
+    "TARPIT"
+   ],
+   "terms": [
+    "mammoth",
+    "sabre"
+   ],
+   "claim": "TARPIT does not describe mammoths/tigers in the tar pit"
+  },
+  {
+   "id": "N02",
+   "src": [
+    "TARPIT"
+   ],
+   "terms": [
+    "deadlock",
+    "mutex",
+    "semaphore",
+    "race condition"
+   ],
+   "claim": "TARPIT does not discuss deadlock/mutex/semaphore/race condition"
+  },
+  {
+   "id": "N03",
+   "src": [
+    "TARPIT"
+   ],
+   "terms": [
+    "functional core",
+    "imperative shell",
+    "bernhardt"
+   ],
+   "claim": "Functional Core/Imperative Shell is not in TARPIT"
+  },
+  {
+   "id": "N04",
+   "src": [
+    "TARPIT"
+   ],
+   "terms": [
+    "re:\\b60\\s?%",
+    "accidental percent"
+   ],
+   "claim": "there is no percentage or 60% threshold in TARPIT"
+  },
+  {
+   "id": "N05",
+   "src": [
+    "SRP"
+   ],
+   "terms": [
+    "re:\\bactors?\\b"
+   ],
+   "claim": "SRP does not use the word 'actor'"
+  },
+  {
+   "id": "N06",
+   "src": [
+    "SRP"
+   ],
+   "terms": [
+    "facade",
+    "regularhours",
+    "merge conflict",
+    "paycalculator",
+    "hourreporter"
+   ],
+   "claim": "SRP does not contain Facade, regularHours, merge conflict or the three classes"
+  },
+  {
+   "id": "N07",
+   "src": [
+    "OCP"
+   ],
+   "terms": [
+    "financial report",
+    "pdfpresenter",
+    "webpresenter",
+    "presenter"
+   ],
+   "claim": "OCP does not contain the financial report example"
+  },
+  {
+   "id": "N08",
+   "src": [
+    "SREL"
+   ],
+   "terms": [
+    "rectangle",
+    "square",
+    "barbara",
+    "re:\\bo1\\b"
+   ],
+   "claim": "SREL does not contain formal Liskov or Rectangle/Square"
+  },
+  {
+   "id": "N09",
+   "src": [
+    "SREL"
+   ],
+   "terms": [
+    "monad",
+    "hexagonal",
+    "fat interface"
+   ],
+   "claim": "SREL does not discuss monads or fat interfaces"
+  },
+  {
+   "id": "N10",
+   "src": [
+    "CA11"
+   ],
+   "terms": [
+    "lost years",
+    "blueprint",
+    "floor plan",
+    "delivery mechanism"
+   ],
+   "claim": "CA11 is not 'The Lost Years' nor does it contain the house-plan metaphor"
+  },
+  {
+   "id": "N11",
+   "src": [
+    "CA12"
+   ],
+   "terms": [
+    "re:\\bgateways?\\b",
+    "pojo",
+    "viewmodel",
+    "hibernate",
+    "mass assignment",
+    "jpa"
+   ],
+   "claim": "CA12 does not contain Gateways, POJO, ViewModel, Hibernate, mass assignment"
+  },
+  {
+   "id": "N12",
+   "src": [
+    "DDD"
+   ],
+   "terms": [
+    "supporting subdomain",
+    "re:supporting\\s+sub-?domain"
+   ],
+   "claim": "DDD booklet does not define 'supporting subdomain'"
+  },
+  {
+   "id": "N13",
+   "src": [
+    "DDD"
+   ],
+   "terms": [
+    "re:\\bby ids?\\b",
+    "one aggregate per transaction"
+   ],
+   "claim": "DDD booklet does not say 'reference by ID' nor 'one aggregate per transaction'"
+  },
+  {
+   "id": "N14",
+   "src": [
+    "DDD"
+   ],
+   "terms": [
+    "anemic domain model",
+    "participle"
+   ],
+   "claim": "DDD booklet does not discuss the Anemic Domain Model nor past-participle events"
+  },
+  {
+   "id": "N15",
+   "src": [
+    "DDD"
+   ],
+   "terms": [
+    "microservice",
+    "event storming",
+    "saga",
+    "outbox"
+   ],
+   "claim": "DDD booklet does not cover microservices/Event Storming/Saga/Outbox"
+  },
+  {
+   "id": "N16",
+   "src": [
+    "REACT"
+   ],
+   "terms": [
+    "akka",
+    "supervisor",
+    "circuit breaker",
+    "bulkhead",
+    "kubernetes",
+    "actor model"
+   ],
+   "claim": "REACT does not mention Akka, supervisor, circuit breaker, bulkhead, Kubernetes"
+  },
+  {
+   "id": "N17",
+   "src": [
+    "REACT"
+   ],
+   "terms": [
+    "bonér",
+    "farley",
+    "kuhn",
+    "thompson"
+   ],
+   "claim": "REACT (PDF) does not list the authors"
+  },
+  {
+   "id": "N18",
+   "src": [
+    "REACT"
+   ],
+   "terms": [
+    "reactive streams",
+    "rxjs",
+    "reactor"
+   ],
+   "claim": "REACT does not mention Reactive Streams/RxJS"
+  },
+  {
+   "id": "N19",
+   "src": [
+    "TARPIT"
+   ],
+   "terms": [
+    "bounded context",
+    "aggregate root",
+    "ddd"
+   ],
+   "claim": "TARPIT does not mention DDD"
+  },
+  {
+   "id": "N20",
+   "src": [
+    "DDD",
+    "CA12",
+    "CA11"
+   ],
+   "terms": [
+    "tar pit",
+    "referential transparency"
+   ],
+   "claim": "DDD/CA do not mention TARPIT"
+  },
+  {
+   "id": "N21",
+   "src": [
+    "DDD",
+    "CA11",
+    "CA12",
+    "SRP",
+    "OCP",
+    "SREL",
+    "TARPIT",
+    "REACT"
+   ],
+   "terms": [
+    "cqrs and event sourcing are required"
+   ],
+   "claim": "control: claim absent from every source"
+  }
+ ]
+}

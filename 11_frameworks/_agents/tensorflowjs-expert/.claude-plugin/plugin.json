@@ -1,0 +1,15 @@
+{
+  "name": "tensorflowjs-expert",
+  "version": "1.0.0",
+  "description": "TensorFlow.js overview agent based on 4 captured pt-br web pages (Guide 2022-01, Landing, Setup 2023-11, Getting started 2023-11): concepts and named sections, browser and Node.js setup, minimal y = 2x - 1 tutorial and resource map. [DATED]; NOT COVERED for the API, backends, versions and guide section contents.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "tensorflow.js",
+    "javascript",
+    "machine-learning",
+    "setup",
+    "node.js",
+    "browser"
+  ]
+}

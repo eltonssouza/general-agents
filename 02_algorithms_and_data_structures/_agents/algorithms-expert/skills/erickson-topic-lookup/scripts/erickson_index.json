@@ -1,0 +1,3246 @@
+{
+ "fonte": "Algorithms, Jeff Erickson, 1st paperback ed. (Jun/2019), 472-page PDF",
+ "convencao_de_pagina": "pages = PDF; printed page = PDF - 18",
+ "aviso": "Hand-curated index built from reading the pages; 'NOT COVERED' = the book does not treat the topic.",
+ "capitulos": [
+  {
+   "id": "cap-0",
+   "tipo": "chapter",
+   "capitulo": 0,
+   "titulo": "Introduction",
+   "pagina_pdf": 19,
+   "pagina_impressa": 1,
+   "fim_pdf": 38,
+   "referencia": "fundamentos-e-analise.md"
+  },
+  {
+   "id": "cap-1",
+   "tipo": "chapter",
+   "capitulo": 1,
+   "titulo": "Recursion",
+   "pagina_pdf": 39,
+   "pagina_impressa": 21,
+   "fim_pdf": 88,
+   "referencia": "recursao-e-divisao-e-conquista.md"
+  },
+  {
+   "id": "cap-2",
+   "tipo": "chapter",
+   "capitulo": 2,
+   "titulo": "Backtracking",
+   "pagina_pdf": 89,
+   "pagina_impressa": 71,
+   "fim_pdf": 114,
+   "referencia": "backtracking.md"
+  },
+  {
+   "id": "cap-3",
+   "tipo": "chapter",
+   "capitulo": 3,
+   "titulo": "Dynamic Programming",
+   "pagina_pdf": 115,
+   "pagina_impressa": 97,
+   "fim_pdf": 176,
+   "referencia": "programacao-dinamica.md"
+  },
+  {
+   "id": "cap-4",
+   "tipo": "chapter",
+   "capitulo": 4,
+   "titulo": "Greedy Algorithms",
+   "pagina_pdf": 177,
+   "pagina_impressa": 159,
+   "fim_pdf": 204,
+   "referencia": "algoritmos-gulosos.md"
+  },
+  {
+   "id": "cap-5",
+   "tipo": "chapter",
+   "capitulo": 5,
+   "titulo": "Basic Graph Algorithms",
+   "pagina_pdf": 205,
+   "pagina_impressa": 187,
+   "fim_pdf": 242,
+   "referencia": "grafos-e-travessias.md"
+  },
+  {
+   "id": "cap-6",
+   "tipo": "chapter",
+   "capitulo": 6,
+   "titulo": "Depth-First Search",
+   "pagina_pdf": 243,
+   "pagina_impressa": 225,
+   "fim_pdf": 274,
+   "referencia": "grafos-e-travessias.md"
+  },
+  {
+   "id": "cap-7",
+   "tipo": "chapter",
+   "capitulo": 7,
+   "titulo": "Minimum Spanning Trees",
+   "pagina_pdf": 275,
+   "pagina_impressa": 257,
+   "fim_pdf": 290,
+   "referencia": "arvores-geradoras-e-caminhos-minimos.md"
+  },
+  {
+   "id": "cap-8",
+   "tipo": "chapter",
+   "capitulo": 8,
+   "titulo": "Shortest Paths",
+   "pagina_pdf": 291,
+   "pagina_impressa": 273,
+   "fim_pdf": 326,
+   "referencia": "arvores-geradoras-e-caminhos-minimos.md"
+  },
+  {
+   "id": "cap-9",
+   "tipo": "chapter",
+   "capitulo": 9,
+   "titulo": "All-Pairs Shortest Paths",
+   "pagina_pdf": 327,
+   "pagina_impressa": 309,
+   "fim_pdf": 344,
+   "referencia": "arvores-geradoras-e-caminhos-minimos.md"
+  },
+  {
+   "id": "cap-10",
+   "tipo": "chapter",
+   "capitulo": 10,
+   "titulo": "Maximum Flows & Minimum Cuts",
+   "pagina_pdf": 345,
+   "pagina_impressa": 327,
+   "fim_pdf": 370,
+   "referencia": "fluxo-maximo-e-cortes.md"
+  },
+  {
+   "id": "cap-11",
+   "tipo": "chapter",
+   "capitulo": 11,
+   "titulo": "Applications of Flows and Cuts",
+   "pagina_pdf": 371,
+   "pagina_impressa": 353,
+   "fim_pdf": 396,
+   "referencia": "aplicacoes-de-fluxo.md"
+  },
+  {
+   "id": "cap-12",
+   "tipo": "chapter",
+   "capitulo": 12,
+   "titulo": "NP-Hardness",
+   "pagina_pdf": 397,
+   "pagina_impressa": 379,
+   "fim_pdf": 459,
+   "referencia": "complexidade-e-np-completude.md"
+  }
+ ],
+ "secoes": [
+  {
+   "id": "sec-0.1",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.1",
+   "titulo": "What is an algorithm?",
+   "pagina_pdf": 19,
+   "pagina_impressa": 1
+  },
+  {
+   "id": "sec-0.2",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.2",
+   "titulo": "Multiplication",
+   "pagina_pdf": 21,
+   "pagina_impressa": 3
+  },
+  {
+   "id": "sec-0.3",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.3",
+   "titulo": "Congressional Apportionment",
+   "pagina_pdf": 26,
+   "pagina_impressa": 8
+  },
+  {
+   "id": "sec-0.4",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.4",
+   "titulo": "A Bad Example",
+   "pagina_pdf": 28,
+   "pagina_impressa": 10
+  },
+  {
+   "id": "sec-0.5",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.5",
+   "titulo": "Describing Algorithms",
+   "pagina_pdf": 29,
+   "pagina_impressa": 11
+  },
+  {
+   "id": "sec-0.6",
+   "tipo": "section",
+   "capitulo": 0,
+   "numero": "0.6",
+   "titulo": "Analyzing Algorithms",
+   "pagina_pdf": 32,
+   "pagina_impressa": 14
+  },
+  {
+   "id": "sec-1.1",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.1",
+   "titulo": "Reductions",
+   "pagina_pdf": 39,
+   "pagina_impressa": 21
+  },
+  {
+   "id": "sec-1.2",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.2",
+   "titulo": "Simplify and Delegate",
+   "pagina_pdf": 40,
+   "pagina_impressa": 22
+  },
+  {
+   "id": "sec-1.3",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.3",
+   "titulo": "Tower of Hanoi",
+   "pagina_pdf": 42,
+   "pagina_impressa": 24
+  },
+  {
+   "id": "sec-1.4",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.4",
+   "titulo": "Mergesort",
+   "pagina_pdf": 44,
+   "pagina_impressa": 26
+  },
+  {
+   "id": "sec-1.5",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.5",
+   "titulo": "Quicksort",
+   "pagina_pdf": 47,
+   "pagina_impressa": 29
+  },
+  {
+   "id": "sec-1.6",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.6",
+   "titulo": "The Pattern",
+   "pagina_pdf": 49,
+   "pagina_impressa": 31
+  },
+  {
+   "id": "sec-1.7",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.7",
+   "titulo": "Recursion Trees",
+   "pagina_pdf": 49,
+   "pagina_impressa": 31
+  },
+  {
+   "id": "sec-1.8",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.8",
+   "titulo": "Linear-Time Selection",
+   "pagina_pdf": 53,
+   "pagina_impressa": 35
+  },
+  {
+   "id": "sec-1.9",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.9",
+   "titulo": "Fast Multiplication",
+   "pagina_pdf": 58,
+   "pagina_impressa": 40
+  },
+  {
+   "id": "sec-1.10",
+   "tipo": "section",
+   "capitulo": 1,
+   "numero": "1.10",
+   "titulo": "Exponentiation",
+   "pagina_pdf": 60,
+   "pagina_impressa": 42
+  },
+  {
+   "id": "sec-2.1",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.1",
+   "titulo": "N Queens",
+   "pagina_pdf": 89,
+   "pagina_impressa": 71
+  },
+  {
+   "id": "sec-2.2",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.2",
+   "titulo": "Game Trees",
+   "pagina_pdf": 92,
+   "pagina_impressa": 74
+  },
+  {
+   "id": "sec-2.3",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.3",
+   "titulo": "Subset Sum",
+   "pagina_pdf": 94,
+   "pagina_impressa": 76
+  },
+  {
+   "id": "sec-2.4",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.4",
+   "titulo": "The General Pattern",
+   "pagina_pdf": 97,
+   "pagina_impressa": 79
+  },
+  {
+   "id": "sec-2.5",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.5",
+   "titulo": "Text Segmentation (Interpunctio Verborum)",
+   "pagina_pdf": 98,
+   "pagina_impressa": 80
+  },
+  {
+   "id": "sec-2.6",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.6",
+   "titulo": "Longest Increasing Subsequence",
+   "pagina_pdf": 104,
+   "pagina_impressa": 86
+  },
+  {
+   "id": "sec-2.7",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.7",
+   "titulo": "Longest Increasing Subsequence, Take 2",
+   "pagina_pdf": 107,
+   "pagina_impressa": 89
+  },
+  {
+   "id": "sec-2.8",
+   "tipo": "section",
+   "capitulo": 2,
+   "numero": "2.8",
+   "titulo": "Optimal Binary Search Trees",
+   "pagina_pdf": 109,
+   "pagina_impressa": 91
+  },
+  {
+   "id": "sec-3.1",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.1",
+   "titulo": "M¯atr¯avr.tta",
+   "pagina_pdf": 115,
+   "pagina_impressa": 97
+  },
+  {
+   "id": "sec-3.2",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.2",
+   "titulo": "Aside: Even Faster Fibonacci Numbers",
+   "pagina_pdf": 121,
+   "pagina_impressa": 103
+  },
+  {
+   "id": "sec-3.3",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.3",
+   "titulo": "Interpunctio Verborum Redux",
+   "pagina_pdf": 123,
+   "pagina_impressa": 105
+  },
+  {
+   "id": "sec-3.4",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.4",
+   "titulo": "The Pattern: Smart Recursion",
+   "pagina_pdf": 123,
+   "pagina_impressa": 105
+  },
+  {
+   "id": "sec-3.5",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.5",
+   "titulo": "Warning: Greed is Stupid",
+   "pagina_pdf": 125,
+   "pagina_impressa": 107
+  },
+  {
+   "id": "sec-3.6",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.6",
+   "titulo": "Longest Increasing Subsequence",
+   "pagina_pdf": 127,
+   "pagina_impressa": 109
+  },
+  {
+   "id": "sec-3.7",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.7",
+   "titulo": "Edit Distance",
+   "pagina_pdf": 129,
+   "pagina_impressa": 111
+  },
+  {
+   "id": "sec-3.8",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.8",
+   "titulo": "Subset Sum",
+   "pagina_pdf": 134,
+   "pagina_impressa": 116
+  },
+  {
+   "id": "sec-3.9",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.9",
+   "titulo": "Optimal Binary Search Trees",
+   "pagina_pdf": 135,
+   "pagina_impressa": 117
+  },
+  {
+   "id": "sec-3.10",
+   "tipo": "section",
+   "capitulo": 3,
+   "numero": "3.10",
+   "titulo": "Dynamic Programming on Trees",
+   "pagina_pdf": 138,
+   "pagina_impressa": 120
+  },
+  {
+   "id": "sec-4.1",
+   "tipo": "section",
+   "capitulo": 4,
+   "numero": "4.1",
+   "titulo": "Storing Files on Tape",
+   "pagina_pdf": 177,
+   "pagina_impressa": 159
+  },
+  {
+   "id": "sec-4.2",
+   "tipo": "section",
+   "capitulo": 4,
+   "numero": "4.2",
+   "titulo": "Scheduling Classes",
+   "pagina_pdf": 179,
+   "pagina_impressa": 161
+  },
+  {
+   "id": "sec-4.3",
+   "tipo": "section",
+   "capitulo": 4,
+   "numero": "4.3",
+   "titulo": "General Pattern",
+   "pagina_pdf": 182,
+   "pagina_impressa": 164
+  },
+  {
+   "id": "sec-4.4",
+   "tipo": "section",
+   "capitulo": 4,
+   "numero": "4.4",
+   "titulo": "Huﬀman Codes",
+   "pagina_pdf": 183,
+   "pagina_impressa": 165
+  },
+  {
+   "id": "sec-4.5",
+   "tipo": "section",
+   "capitulo": 4,
+   "numero": "4.5",
+   "titulo": "Stable Matching",
+   "pagina_pdf": 188,
+   "pagina_impressa": 170
+  },
+  {
+   "id": "sec-5.1",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.1",
+   "titulo": "Introduction and History",
+   "pagina_pdf": 205,
+   "pagina_impressa": 187
+  },
+  {
+   "id": "sec-5.2",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.2",
+   "titulo": "Basic Deﬁnitions",
+   "pagina_pdf": 208,
+   "pagina_impressa": 190
+  },
+  {
+   "id": "sec-5.3",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.3",
+   "titulo": "Representations and Examples",
+   "pagina_pdf": 210,
+   "pagina_impressa": 192
+  },
+  {
+   "id": "sec-5.4",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.4",
+   "titulo": "Data Structures",
+   "pagina_pdf": 213,
+   "pagina_impressa": 195
+  },
+  {
+   "id": "sec-5.5",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.5",
+   "titulo": "Whatever-First Search",
+   "pagina_pdf": 217,
+   "pagina_impressa": 199
+  },
+  {
+   "id": "sec-5.6",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.6",
+   "titulo": "Important Variants",
+   "pagina_pdf": 219,
+   "pagina_impressa": 201
+  },
+  {
+   "id": "sec-5.7",
+   "tipo": "section",
+   "capitulo": 5,
+   "numero": "5.7",
+   "titulo": "Graph Reductions: Flood Fill",
+   "pagina_pdf": 223,
+   "pagina_impressa": 205
+  },
+  {
+   "id": "sec-6.1",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.1",
+   "titulo": "Preorder and Postorder",
+   "pagina_pdf": 245,
+   "pagina_impressa": 227
+  },
+  {
+   "id": "sec-6.2",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.2",
+   "titulo": "Detecting Cycles",
+   "pagina_pdf": 249,
+   "pagina_impressa": 231
+  },
+  {
+   "id": "sec-6.3",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.3",
+   "titulo": "Topological Sort",
+   "pagina_pdf": 250,
+   "pagina_impressa": 232
+  },
+  {
+   "id": "sec-6.4",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.4",
+   "titulo": "Memoization and Dynamic Programming",
+   "pagina_pdf": 252,
+   "pagina_impressa": 234
+  },
+  {
+   "id": "sec-6.5",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.5",
+   "titulo": "Strong Connectivity",
+   "pagina_pdf": 255,
+   "pagina_impressa": 237
+  },
+  {
+   "id": "sec-6.6",
+   "tipo": "section",
+   "capitulo": 6,
+   "numero": "6.6",
+   "titulo": "Strong Components in Linear Time",
+   "pagina_pdf": 256,
+   "pagina_impressa": 238
+  },
+  {
+   "id": "sec-7.1",
+   "tipo": "section",
+   "capitulo": 7,
+   "numero": "7.1",
+   "titulo": "Distinct Edge Weights",
+   "pagina_pdf": 275,
+   "pagina_impressa": 257
+  },
+  {
+   "id": "sec-7.2",
+   "tipo": "section",
+   "capitulo": 7,
+   "numero": "7.2",
+   "titulo": "The Only Minimum Spanning Tree Algorithm",
+   "pagina_pdf": 277,
+   "pagina_impressa": 259
+  },
+  {
+   "id": "sec-7.3",
+   "tipo": "section",
+   "capitulo": 7,
+   "numero": "7.3",
+   "titulo": "Borůvka’s Algorithm",
+   "pagina_pdf": 279,
+   "pagina_impressa": 261
+  },
+  {
+   "id": "sec-7.4",
+   "tipo": "section",
+   "capitulo": 7,
+   "numero": "7.4",
+   "titulo": "Jarník’s (“Prim’s”) Algorithm",
+   "pagina_pdf": 281,
+   "pagina_impressa": 263
+  },
+  {
+   "id": "sec-7.5",
+   "tipo": "section",
+   "capitulo": 7,
+   "numero": "7.5",
+   "titulo": "Kruskal’s Algorithm",
+   "pagina_pdf": 283,
+   "pagina_impressa": 265
+  },
+  {
+   "id": "sec-8.1",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.1",
+   "titulo": "Shortest Path Trees",
+   "pagina_pdf": 292,
+   "pagina_impressa": 274
+  },
+  {
+   "id": "sec-8.2",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.2",
+   "titulo": "Negative Edges",
+   "pagina_pdf": 292,
+   "pagina_impressa": 274
+  },
+  {
+   "id": "sec-8.3",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.3",
+   "titulo": "The Only SSSP Algorithm",
+   "pagina_pdf": 294,
+   "pagina_impressa": 276
+  },
+  {
+   "id": "sec-8.4",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.4",
+   "titulo": "Unweighted Graphs: Breadth-First Search",
+   "pagina_pdf": 296,
+   "pagina_impressa": 278
+  },
+  {
+   "id": "sec-8.5",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.5",
+   "titulo": "Directed Acyclic Graphs: Depth-First Search",
+   "pagina_pdf": 300,
+   "pagina_impressa": 282
+  },
+  {
+   "id": "sec-8.6",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.6",
+   "titulo": "Best-First: Dijkstra’s Algorithm",
+   "pagina_pdf": 302,
+   "pagina_impressa": 284
+  },
+  {
+   "id": "sec-8.7",
+   "tipo": "section",
+   "capitulo": 8,
+   "numero": "8.7",
+   "titulo": "Relax ALL the Edges: Bellman-Ford",
+   "pagina_pdf": 307,
+   "pagina_impressa": 289
+  },
+  {
+   "id": "sec-9.1",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.1",
+   "titulo": "Introduction",
+   "pagina_pdf": 327,
+   "pagina_impressa": 309
+  },
+  {
+   "id": "sec-9.2",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.2",
+   "titulo": "Lots of Single Sources",
+   "pagina_pdf": 328,
+   "pagina_impressa": 310
+  },
+  {
+   "id": "sec-9.3",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.3",
+   "titulo": "Reweighting",
+   "pagina_pdf": 329,
+   "pagina_impressa": 311
+  },
+  {
+   "id": "sec-9.4",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.4",
+   "titulo": "Johnson’s Algorithm",
+   "pagina_pdf": 330,
+   "pagina_impressa": 312
+  },
+  {
+   "id": "sec-9.5",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.5",
+   "titulo": "Dynamic Programming",
+   "pagina_pdf": 331,
+   "pagina_impressa": 313
+  },
+  {
+   "id": "sec-9.6",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.6",
+   "titulo": "Divide and Conquer",
+   "pagina_pdf": 333,
+   "pagina_impressa": 315
+  },
+  {
+   "id": "sec-9.7",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.7",
+   "titulo": "Funny Matrix Multiplication",
+   "pagina_pdf": 334,
+   "pagina_impressa": 316
+  },
+  {
+   "id": "sec-9.8",
+   "tipo": "section",
+   "capitulo": 9,
+   "numero": "9.8",
+   "titulo": "(Kleene-Roy-)Floyd-Warshall(-Ingerman)",
+   "pagina_pdf": 336,
+   "pagina_impressa": 318
+  },
+  {
+   "id": "sec-10.1",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.1",
+   "titulo": "Flows",
+   "pagina_pdf": 346,
+   "pagina_impressa": 328
+  },
+  {
+   "id": "sec-10.2",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.2",
+   "titulo": "Cuts",
+   "pagina_pdf": 347,
+   "pagina_impressa": 329
+  },
+  {
+   "id": "sec-10.3",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.3",
+   "titulo": "The Maxﬂow-Mincut Theorem",
+   "pagina_pdf": 349,
+   "pagina_impressa": 331
+  },
+  {
+   "id": "sec-10.4",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.4",
+   "titulo": "Ford and Fulkerson’s augmenting-path algorithm",
+   "pagina_pdf": 352,
+   "pagina_impressa": 334
+  },
+  {
+   "id": "sec-10.5",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.5",
+   "titulo": "Combining and Decomposing Flows",
+   "pagina_pdf": 354,
+   "pagina_impressa": 336
+  },
+  {
+   "id": "sec-10.6",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.6",
+   "titulo": "Edmonds and Karp’s Algorithms",
+   "pagina_pdf": 358,
+   "pagina_impressa": 340
+  },
+  {
+   "id": "sec-10.7",
+   "tipo": "section",
+   "capitulo": 10,
+   "numero": "10.7",
+   "titulo": "Further Progress",
+   "pagina_pdf": 361,
+   "pagina_impressa": 343
+  },
+  {
+   "id": "sec-11.1",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.1",
+   "titulo": "Edge-Disjoint Paths",
+   "pagina_pdf": 371,
+   "pagina_impressa": 353
+  },
+  {
+   "id": "sec-11.2",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.2",
+   "titulo": "Vertex Capacities and Vertex-Disjoint Paths",
+   "pagina_pdf": 372,
+   "pagina_impressa": 354
+  },
+  {
+   "id": "sec-11.3",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.3",
+   "titulo": "Bipartite Matching",
+   "pagina_pdf": 373,
+   "pagina_impressa": 355
+  },
+  {
+   "id": "sec-11.4",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.4",
+   "titulo": "Tuple Selection",
+   "pagina_pdf": 375,
+   "pagina_impressa": 357
+  },
+  {
+   "id": "sec-11.5",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.5",
+   "titulo": "Disjoint-Path Covers",
+   "pagina_pdf": 378,
+   "pagina_impressa": 360
+  },
+  {
+   "id": "sec-11.6",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.6",
+   "titulo": "Baseball Elimination",
+   "pagina_pdf": 381,
+   "pagina_impressa": 363
+  },
+  {
+   "id": "sec-11.7",
+   "tipo": "section",
+   "capitulo": 11,
+   "numero": "11.7",
+   "titulo": "Project Selection",
+   "pagina_pdf": 384,
+   "pagina_impressa": 366
+  },
+  {
+   "id": "sec-12.1",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.1",
+   "titulo": "A Game You Can’t Win",
+   "pagina_pdf": 397,
+   "pagina_impressa": 379
+  },
+  {
+   "id": "sec-12.2",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.2",
+   "titulo": "P versus NP",
+   "pagina_pdf": 399,
+   "pagina_impressa": 381
+  },
+  {
+   "id": "sec-12.3",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.3",
+   "titulo": "NP-hard, NP-easy, and NP-complete",
+   "pagina_pdf": 400,
+   "pagina_impressa": 382
+  },
+  {
+   "id": "sec-12.4",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.4",
+   "titulo": "Formal Deﬁnitions (HC SVNT DRACONES)",
+   "pagina_pdf": 402,
+   "pagina_impressa": 384
+  },
+  {
+   "id": "sec-12.5",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.5",
+   "titulo": "Reductions and Sat",
+   "pagina_pdf": 403,
+   "pagina_impressa": 385
+  },
+  {
+   "id": "sec-12.6",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.6",
+   "titulo": "3Sat (from CircuitSat)",
+   "pagina_pdf": 406,
+   "pagina_impressa": 388
+  },
+  {
+   "id": "sec-12.7",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.7",
+   "titulo": "Maximum Independent Set (from 3Sat)",
+   "pagina_pdf": 408,
+   "pagina_impressa": 390
+  },
+  {
+   "id": "sec-12.8",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.8",
+   "titulo": "The General Pattern",
+   "pagina_pdf": 410,
+   "pagina_impressa": 392
+  },
+  {
+   "id": "sec-12.9",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.9",
+   "titulo": "Clique and Vertex Cover (from Independent Set)",
+   "pagina_pdf": 412,
+   "pagina_impressa": 394
+  },
+  {
+   "id": "sec-12.10",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.10",
+   "titulo": "Graph Coloring (from 3Sat)",
+   "pagina_pdf": 413,
+   "pagina_impressa": 395
+  },
+  {
+   "id": "sec-12.11",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.11",
+   "titulo": "Hamiltonian Cycle",
+   "pagina_pdf": 416,
+   "pagina_impressa": 398
+  },
+  {
+   "id": "sec-12.12",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.12",
+   "titulo": "Subset Sum (from Vertex Cover)",
+   "pagina_pdf": 420,
+   "pagina_impressa": 402
+  },
+  {
+   "id": "sec-12.13",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.13",
+   "titulo": "Other Useful NP-hard Problems",
+   "pagina_pdf": 422,
+   "pagina_impressa": 404
+  },
+  {
+   "id": "sec-12.14",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.14",
+   "titulo": "Choosing the Right Problem",
+   "pagina_pdf": 425,
+   "pagina_impressa": 407
+  },
+  {
+   "id": "sec-12.15",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.15",
+   "titulo": "A Frivolous Real-World Example",
+   "pagina_pdf": 426,
+   "pagina_impressa": 408
+  },
+  {
+   "id": "sec-12.16",
+   "tipo": "section",
+   "capitulo": 12,
+   "numero": "12.16",
+   "titulo": "On Beyond Zebra",
+   "pagina_pdf": 430,
+   "pagina_impressa": 412
+  }
+ ],
+ "temas": [
+  {
+   "id": "algoritmo",
+   "titulo": "What is an algorithm?",
+   "titulo_en": "What an algorithm is",
+   "paginas": [
+    19,
+    20
+   ],
+   "capitulo": 0,
+   "tipo": "topic",
+   "palavras": [
+    "algoritmo",
+    "algorithm",
+    "definicao",
+    "al-khwarizmi",
+    "o que e um algoritmo"
+   ],
+   "verificar": [
+    "mechanically-executable",
+    "algorithm"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "multiplicacao-historica",
+   "titulo": "Lattice and peasant multiplication",
+   "titulo_en": "Multiplication: lattice and peasant methods",
+   "paginas": [
+    21,
+    25
+   ],
+   "capitulo": 0,
+   "tipo": "topic",
+   "palavras": [
+    "lattice",
+    "grade",
+    "peasant",
+    "camponesa",
+    "duplation",
+    "mediation",
+    "multiplicacao",
+    "multiplicacao: grade e camponesa"
+   ],
+   "verificar": [
+    "lattice",
+    "PeasantMultiply"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "descrever-algoritmos",
+   "titulo": "Describing algorithms (What, How, Why, How fast)",
+   "titulo_en": "How to describe an algorithm",
+   "paginas": [
+    29,
+    32
+   ],
+   "capitulo": 0,
+   "tipo": "topic",
+   "palavras": [
+    "especificar",
+    "pseudocodigo",
+    "descrever",
+    "what how why",
+    "how fast",
+    "especificacao",
+    "como descrever um algoritmo"
+   ],
+   "verificar": [
+    "How fast",
+    "pseudocode"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "corretude-e-tempo",
+   "titulo": "Analyzing algorithms: correctness and running time",
+   "titulo_en": "Correctness and running time",
+   "paginas": [
+    32,
+    35
+   ],
+   "capitulo": 0,
+   "tipo": "topic",
+   "palavras": [
+    "corretude",
+    "correctness",
+    "pior caso",
+    "worst case",
+    "tempo de execucao",
+    "inducao",
+    "corretude e tempo de execucao"
+   ],
+   "verificar": [
+    "Induction is our friend",
+    "worst case"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "reducao",
+   "titulo": "Reductions",
+   "titulo_en": "Reductions",
+   "paginas": [
+    39,
+    40
+   ],
+   "capitulo": 1,
+   "tipo": "topic",
+   "palavras": [
+    "reducao",
+    "reduction",
+    "caixa-preta",
+    "reducoes"
+   ],
+   "verificar": [
+    "Reduction",
+    "black box"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fada-da-recursao",
+   "titulo": "Simplify and Delegate (Recursion Fairy)",
+   "titulo_en": "Recursion Fairy / induction hypothesis",
+   "paginas": [
+    40,
+    41
+   ],
+   "capitulo": 1,
+   "tipo": "topic",
+   "palavras": [
+    "fada",
+    "recursion fairy",
+    "recursao",
+    "simplify and delegate",
+    "inducao",
+    "fada da recursao",
+    "hipotese de inducao"
+   ],
+   "verificar": [
+    "Recursion Fairy",
+    "Induction Hypothesis"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "hanoi",
+   "titulo": "Tower of Hanoi",
+   "titulo_en": "Tower of Hanoi",
+   "paginas": [
+    42,
+    44
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "hanoi",
+    "torre de hanoi",
+    "2^n-1"
+   ],
+   "verificar": [
+    "Hanoi",
+    "2n"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "mergesort",
+   "titulo": "Mergesort",
+   "titulo_en": "MergeSort",
+   "paginas": [
+    44,
+    46
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "mergesort",
+    "merge sort",
+    "intercalar",
+    "ordenacao"
+   ],
+   "verificar": [
+    "Mergesort",
+    "Merge"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "quicksort",
+   "titulo": "Quicksort",
+   "titulo_en": "QuickSort",
+   "paginas": [
+    47,
+    49
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "quicksort",
+    "pivo",
+    "particao",
+    "lomuto",
+    "pior caso"
+   ],
+   "verificar": [
+    "Quicksort",
+    "Lomuto"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dividir-e-conquistar",
+   "titulo": "The Pattern (divide and conquer)",
+   "titulo_en": "Divide-and-conquer pattern",
+   "paginas": [
+    49,
+    49
+   ],
+   "capitulo": 1,
+   "tipo": "topic",
+   "palavras": [
+    "divisao e conquista",
+    "divide and conquer",
+    "padrao de divisao e conquista"
+   ],
+   "verificar": [
+    "divide and conquer"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "arvore-de-recursao",
+   "titulo": "Recursion Trees",
+   "titulo_en": "Recursion trees (three cases)",
+   "paginas": [
+    49,
+    52
+   ],
+   "capitulo": 1,
+   "tipo": "theorem",
+   "palavras": [
+    "arvore de recursao",
+    "recursion tree",
+    "recorrencia",
+    "decrescente",
+    "igual",
+    "crescente",
+    "teorema mestre",
+    "master theorem",
+    "arvores de recursao (tres casos)"
+   ],
+   "verificar": [
+    "Decreasing",
+    "Increasing",
+    "recursion tree"
+   ],
+   "nota": "The Master Theorem is NOT presented; the book uses recursion trees (index p.454)."
+  },
+  {
+   "id": "pisos-e-tetos",
+   "titulo": "Ignoring floors and ceilings (domain transformation)",
+   "titulo_en": "Ignoring floors and ceilings",
+   "paginas": [
+    52,
+    53
+   ],
+   "capitulo": 1,
+   "tipo": "topic",
+   "palavras": [
+    "piso",
+    "teto",
+    "floor",
+    "ceiling",
+    "transformacao de dominio",
+    "ignorar piso e teto"
+   ],
+   "verificar": [
+    "domain transformation"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "selecao-linear",
+   "titulo": "Linear-time selection (QuickSelect, median of medians)",
+   "titulo_en": "Linear-time selection",
+   "paginas": [
+    53,
+    57
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "selecao",
+    "quickselect",
+    "mediana das medianas",
+    "median of medians",
+    "mom",
+    "blocos de 5",
+    "selecao em tempo linear"
+   ],
+   "verificar": [
+    "QuickSelect",
+    "7n/10"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "karatsuba",
+   "titulo": "Fast multiplication (Karatsuba)",
+   "titulo_en": "Fast multiplication (Karatsuba)",
+   "paginas": [
+    58,
+    60
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "karatsuba",
+    "multiplicacao rapida",
+    "n^1.585",
+    "toom-cook",
+    "fft",
+    "multiplicacao rapida (karatsuba)"
+   ],
+   "verificar": [
+    "Karatsuba",
+    "1.58496"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "exponenciacao",
+   "titulo": "Exponentiation",
+   "titulo_en": "Fast exponentiation",
+   "paginas": [
+    60,
+    62
+   ],
+   "capitulo": 1,
+   "tipo": "algorithm",
+   "palavras": [
+    "exponenciacao",
+    "potencia",
+    "pingala",
+    "quadrados repetidos",
+    "exponenciacao rapida"
+   ],
+   "verificar": [
+    "ngalaPower",
+    "log n"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "n-queens",
+   "titulo": "N Queens",
+   "titulo_en": "N Queens",
+   "paginas": [
+    89,
+    91
+   ],
+   "capitulo": 2,
+   "tipo": "algorithm",
+   "palavras": [
+    "n queens",
+    "n rainhas",
+    "rainhas",
+    "gauss"
+   ],
+   "verificar": [
+    "PlaceQueens"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "arvores-de-jogos",
+   "titulo": "Game Trees (good/bad states)",
+   "titulo_en": "Game trees (good/bad states)",
+   "paginas": [
+    92,
+    94
+   ],
+   "capitulo": 2,
+   "tipo": "topic",
+   "palavras": [
+    "arvore de jogo",
+    "game tree",
+    "zermelo",
+    "estado bom",
+    "jogos",
+    "arvores de jogos (estados bom/ruim)"
+   ],
+   "verificar": [
+    "good or bad",
+    "Zermelo"
+   ],
+   "nota": "Minimax/alpha-beta do NOT appear in the book."
+  },
+  {
+   "id": "subset-sum-backtracking",
+   "titulo": "Subset Sum (backtracking)",
+   "titulo_en": "Subset Sum (backtracking)",
+   "paginas": [
+    94,
+    96
+   ],
+   "capitulo": 2,
+   "tipo": "algorithm",
+   "palavras": [
+    "subset sum",
+    "soma de subconjuntos",
+    "backtracking",
+    "soma de subconjuntos (backtracking)"
+   ],
+   "verificar": [
+    "SubsetSum",
+    "2n"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "padrao-backtracking",
+   "titulo": "The General Pattern (backtracking)",
+   "titulo_en": "General backtracking pattern",
+   "paginas": [
+    97,
+    98
+   ],
+   "capitulo": 2,
+   "tipo": "topic",
+   "palavras": [
+    "backtracking",
+    "retrocesso",
+    "padrao geral",
+    "decisao",
+    "padrao geral de backtracking"
+   ],
+   "verificar": [
+    "General Pattern",
+    "decisions"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "segmentacao-de-texto",
+   "titulo": "Text Segmentation (Interpunctio Verborum)",
+   "titulo_en": "Text segmentation",
+   "paginas": [
+    98,
+    104
+   ],
+   "capitulo": 2,
+   "tipo": "algorithm",
+   "palavras": [
+    "segmentacao",
+    "interpunctio verborum",
+    "splittable",
+    "isword",
+    "segmentacao de texto"
+   ],
+   "verificar": [
+    "Splittable",
+    "IsWord"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "lis-backtracking",
+   "titulo": "Longest Increasing Subsequence (backtracking)",
+   "titulo_en": "LIS (backtracking)",
+   "paginas": [
+    104,
+    108
+   ],
+   "capitulo": 2,
+   "tipo": "algorithm",
+   "palavras": [
+    "lis",
+    "maior subsequencia crescente",
+    "longest increasing subsequence",
+    "lisbigger",
+    "lisfirst"
+   ],
+   "verificar": [
+    "LISbigger",
+    "LISfirst"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "bst-otima-backtracking",
+   "titulo": "Optimal Binary Search Trees (backtracking)",
+   "titulo_en": "Optimal BST (backtracking)",
+   "paginas": [
+    109,
+    111
+   ],
+   "capitulo": 2,
+   "tipo": "algorithm",
+   "palavras": [
+    "bst otima",
+    "optimal binary search tree",
+    "optcost",
+    "arvore binaria de busca otima",
+    "bst otima (backtracking)"
+   ],
+   "verificar": [
+    "OptCost",
+    "3n"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fibonacci-matravritta",
+   "titulo": "Matravritta and Fibonacci",
+   "titulo_en": "Matravritta and Fibonacci",
+   "paginas": [
+    115,
+    120
+   ],
+   "capitulo": 3,
+   "tipo": "topic",
+   "palavras": [
+    "fibonacci",
+    "matravritta",
+    "memoizacao",
+    "memoization",
+    "memo",
+    "matravritta e fibonacci"
+   ],
+   "verificar": [
+    "MemFibo",
+    "IterFibo"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fibonacci-rapido",
+   "titulo": "Even faster Fibonacci numbers",
+   "titulo_en": "Fast Fibonacci (matrix)",
+   "paginas": [
+    121,
+    123
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "fibonacci rapido",
+    "matriz",
+    "log n",
+    "multiplicacao de matrizes",
+    "fibonacci rapido (matriz)"
+   ],
+   "verificar": [
+    "FastRecFibo",
+    "arbitrary-precision"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "padrao-dp",
+   "titulo": "The Pattern: Smart Recursion",
+   "titulo_en": "Dynamic programming procedure",
+   "paginas": [
+    123,
+    125
+   ],
+   "capitulo": 3,
+   "tipo": "topic",
+   "palavras": [
+    "programacao dinamica",
+    "dynamic programming",
+    "roteiro",
+    "especificacao",
+    "ordem de avaliacao",
+    "recursao inteligente",
+    "roteiro da programacao dinamica"
+   ],
+   "verificar": [
+    "recursion without repetition",
+    "Specification",
+    "evaluation order"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "greed-is-stupid",
+   "titulo": "Warning: Greed is Stupid",
+   "titulo_en": "Warning: greedy is stupid",
+   "paginas": [
+    125,
+    126
+   ],
+   "capitulo": 3,
+   "tipo": "topic",
+   "palavras": [
+    "guloso",
+    "greedy",
+    "greed is stupid",
+    "nunca funciona",
+    "aviso: guloso e burro"
+   ],
+   "verificar": [
+    "Greedy algorithms never work",
+    "formal proof"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "lis-dp",
+   "titulo": "Longest Increasing Subsequence (DP)",
+   "titulo_en": "LIS (DP)",
+   "paginas": [
+    127,
+    129
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "lis",
+    "subsequencia crescente"
+   ],
+   "verificar": [
+    "FastLIS",
+    "LISbigger"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "edit-distance",
+   "titulo": "Edit Distance",
+   "titulo_en": "Edit distance (Levenshtein)",
+   "paginas": [
+    129,
+    134
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "edit distance",
+    "distancia de edicao",
+    "levenshtein",
+    "edicao",
+    "distancia de edicao (levenshtein)"
+   ],
+   "verificar": [
+    "EditDistance",
+    "Levenshtein"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "subset-sum-dp",
+   "titulo": "Subset Sum (DP)",
+   "titulo_en": "Subset Sum (DP)",
+   "paginas": [
+    134,
+    135
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "subset sum",
+    "soma de subconjuntos",
+    "o(nt)",
+    "pseudopolinomial",
+    "soma de subconjuntos (dp)"
+   ],
+   "verificar": [
+    "FastSubsetSum",
+    "O(nT)"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "bst-otima-dp",
+   "titulo": "Optimal Binary Search Trees (DP)",
+   "titulo_en": "Optimal BST (DP)",
+   "paginas": [
+    135,
+    138
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "bst otima",
+    "optimal binary search tree",
+    "optcost",
+    "o(n^3)",
+    "bst otima (dp)"
+   ],
+   "verificar": [
+    "OptimalBST",
+    "O(n3)"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dp-em-arvores",
+   "titulo": "Dynamic Programming on Trees",
+   "titulo_en": "DP on trees (independent set)",
+   "paginas": [
+    138,
+    140
+   ],
+   "capitulo": 3,
+   "tipo": "algorithm",
+   "palavras": [
+    "dp em arvores",
+    "conjunto independente",
+    "independent set",
+    "mis",
+    "tree",
+    "dp em arvores (conjunto independente)"
+   ],
+   "verificar": [
+    "TreeMIS",
+    "post-order"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fita",
+   "titulo": "Storing Files on Tape",
+   "titulo_en": "Files on tape",
+   "paginas": [
+    177,
+    179
+   ],
+   "capitulo": 4,
+   "tipo": "algorithm",
+   "palavras": [
+    "fita",
+    "tape",
+    "arquivos",
+    "razao l/f",
+    "arquivos em fita"
+   ],
+   "verificar": [
+    "magnetic tape",
+    "Lemma 4.1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "intervalos",
+   "titulo": "Scheduling Classes (interval scheduling)",
+   "titulo_en": "Interval scheduling",
+   "paginas": [
+    179,
+    182
+   ],
+   "capitulo": 4,
+   "tipo": "algorithm",
+   "palavras": [
+    "intervalos",
+    "scheduling",
+    "escalonamento",
+    "termino mais cedo",
+    "aulas",
+    "escalonamento de intervalos"
+   ],
+   "verificar": [
+    "GreedySchedule",
+    "exchange argument"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "padrao-guloso",
+   "titulo": "General Pattern (exchange argument)",
+   "titulo_en": "Exchange argument",
+   "paginas": [
+    182,
+    183
+   ],
+   "capitulo": 4,
+   "tipo": "topic",
+   "palavras": [
+    "argumento de troca",
+    "exchange argument",
+    "guloso",
+    "prova"
+   ],
+   "verificar": [
+    "exchange",
+    "first"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "huffman",
+   "titulo": "Huffman Codes",
+   "titulo_en": "Huffman codes",
+   "paginas": [
+    183,
+    188
+   ],
+   "capitulo": 4,
+   "tipo": "algorithm",
+   "palavras": [
+    "huffman",
+    "codigo prefixo",
+    "prefix-free",
+    "codigos de huffman"
+   ],
+   "verificar": [
+    "BuildHuffman",
+    "prefix-free"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "gale-shapley",
+   "titulo": "Stable Matching (Gale-Shapley)",
+   "titulo_en": "Stable matching (Gale-Shapley)",
+   "paginas": [
+    188,
+    194
+   ],
+   "capitulo": 4,
+   "tipo": "algorithm",
+   "palavras": [
+    "emparelhamento estavel",
+    "stable matching",
+    "gale-shapley",
+    "hospitais",
+    "medicos",
+    "emparelhamento estavel (gale-shapley)"
+   ],
+   "verificar": [
+    "Gale-Shapley",
+    "unstable pair"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "grafos-definicoes",
+   "titulo": "Basic Definitions and Representations",
+   "titulo_en": "Graph definitions and representations",
+   "paginas": [
+    208,
+    217
+   ],
+   "capitulo": 5,
+   "tipo": "topic",
+   "palavras": [
+    "grafo",
+    "lista de adjacencia",
+    "matriz de adjacencia",
+    "representacao",
+    "dag",
+    "definicoes e representacoes de grafos"
+   ],
+   "verificar": [
+    "adjacency list",
+    "adjacency matrix"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "whatever-first",
+   "titulo": "Whatever-First Search",
+   "titulo_en": "Generic search (bag)",
+   "paginas": [
+    217,
+    219
+   ],
+   "capitulo": 5,
+   "tipo": "algorithm",
+   "palavras": [
+    "whatever-first",
+    "busca generica",
+    "bag",
+    "bolsa",
+    "travessia",
+    "busca generica (bolsa)"
+   ],
+   "verificar": [
+    "WhateverFirstSearch",
+    "bag"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "bfs-dfs-bestfirst",
+   "titulo": "Important Variants (stack, queue, priority queue)",
+   "titulo_en": "Variants: stack, queue, priority queue",
+   "paginas": [
+    219,
+    223
+   ],
+   "capitulo": 5,
+   "tipo": "topic",
+   "palavras": [
+    "dfs",
+    "bfs",
+    "busca em largura",
+    "busca em profundidade",
+    "best-first",
+    "variantes: pilha, fila, fila de prioridade"
+   ],
+   "verificar": [
+    "breadth-first search",
+    "best-first search"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "flood-fill",
+   "titulo": "Graph Reductions: Flood Fill",
+   "titulo_en": "Flood fill as a reduction",
+   "paginas": [
+    223,
+    224
+   ],
+   "capitulo": 5,
+   "tipo": "algorithm",
+   "palavras": [
+    "flood fill",
+    "flood fill como reducao"
+   ],
+   "verificar": [
+    "flood fill"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dfs",
+   "titulo": "Depth-First Search, preorder and postorder",
+   "titulo_en": "DFS, preorder and postorder",
+   "paginas": [
+    243,
+    246
+   ],
+   "capitulo": 6,
+   "tipo": "algorithm",
+   "palavras": [
+    "dfs",
+    "busca em profundidade",
+    "preorder",
+    "postorder",
+    "pre-ordem",
+    "pos-ordem",
+    "dfs, pre e pos-ordem"
+   ],
+   "verificar": [
+    "PreVisit",
+    "PostVisit"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "classificacao-arestas",
+   "titulo": "Classifying vertices and edges",
+   "titulo_en": "Edge classification (tree, forward, back, cross)",
+   "paginas": [
+    246,
+    248
+   ],
+   "capitulo": 6,
+   "tipo": "theorem",
+   "palavras": [
+    "classificacao de arestas",
+    "tree edge",
+    "forward edge",
+    "back edge",
+    "cross edge",
+    "aresta de retorno",
+    "classificacao de arestas (arvore, avanco, retorno, cruzamento)"
+   ],
+   "verificar": [
+    "tree edge",
+    "back edges",
+    "cross edges"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "deteccao-ciclos",
+   "titulo": "Detecting Cycles",
+   "titulo_en": "Detecting cycles",
+   "paginas": [
+    249,
+    249
+   ],
+   "capitulo": 6,
+   "tipo": "algorithm",
+   "palavras": [
+    "ciclo",
+    "dag",
+    "acyclic",
+    "isacyclic",
+    "detectar ciclos"
+   ],
+   "verificar": [
+    "IsAcyclic"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "ordenacao-topologica",
+   "titulo": "Topological Sort",
+   "titulo_en": "Topological sort",
+   "paginas": [
+    250,
+    252
+   ],
+   "capitulo": 6,
+   "tipo": "algorithm",
+   "palavras": [
+    "ordenacao topologica",
+    "topological sort",
+    "pos-ordem reversa"
+   ],
+   "verificar": [
+    "topological ordering",
+    "reversal"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dp-e-dag",
+   "titulo": "Memoization and Dynamic Programming (dependency dag)",
+   "titulo_en": "DP and DFS on the dependency graph",
+   "paginas": [
+    252,
+    255
+   ],
+   "capitulo": 6,
+   "tipo": "topic",
+   "palavras": [
+    "grafo de dependencias",
+    "dependency graph",
+    "dag",
+    "memoizacao",
+    "caminho mais longo",
+    "dp e dfs no grafo de dependencias"
+   ],
+   "verificar": [
+    "dependency graph",
+    "postorder"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "scc",
+   "titulo": "Strong Connectivity and Strong Components",
+   "titulo_en": "Strongly connected components",
+   "paginas": [
+    255,
+    262
+   ],
+   "capitulo": 6,
+   "tipo": "algorithm",
+   "palavras": [
+    "scc",
+    "componentes fortes",
+    "kosaraju",
+    "sharir",
+    "tarjan",
+    "strong components",
+    "componentes fortemente conexos"
+   ],
+   "verificar": [
+    "KosarajuSharir",
+    "TarjanDFS"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "mst",
+   "titulo": "Minimum Spanning Trees (only MST algorithm)",
+   "titulo_en": "Minimum spanning trees: safe edge",
+   "paginas": [
+    275,
+    279
+   ],
+   "capitulo": 7,
+   "tipo": "theorem",
+   "palavras": [
+    "mst",
+    "arvore geradora minima",
+    "aresta segura",
+    "safe edge",
+    "pesos distintos",
+    "arvores geradoras minimas: aresta segura"
+   ],
+   "verificar": [
+    "safe",
+    "useless"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "boruvka",
+   "titulo": "Boruvka's Algorithm",
+   "titulo_en": "Boruvka",
+   "paginas": [
+    279,
+    281
+   ],
+   "capitulo": 7,
+   "tipo": "algorithm",
+   "palavras": [
+    "boruvka",
+    "mst"
+   ],
+   "verificar": [
+    "Add ALL the safe edges",
+    "E log V"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "jarnik-prim",
+   "titulo": "Jarnik's (Prim's) Algorithm",
+   "titulo_en": "Jarnik (Prim)",
+   "paginas": [
+    281,
+    283
+   ],
+   "capitulo": 7,
+   "tipo": "algorithm",
+   "palavras": [
+    "jarnik",
+    "prim",
+    "mst",
+    "fibonacci heap"
+   ],
+   "verificar": [
+    "Fibonacci heap",
+    "Jarn"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "kruskal",
+   "titulo": "Kruskal's Algorithm",
+   "titulo_en": "Kruskal",
+   "paginas": [
+    283,
+    286
+   ],
+   "capitulo": 7,
+   "tipo": "algorithm",
+   "palavras": [
+    "kruskal",
+    "union-find",
+    "conjuntos disjuntos",
+    "mst"
+   ],
+   "verificar": [
+    "MakeSet",
+    "Union"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "sssp-arvore",
+   "titulo": "Shortest Path Trees and Negative Edges",
+   "titulo_en": "Shortest-path trees; negative edges and cycles",
+   "paginas": [
+    292,
+    294
+   ],
+   "capitulo": 8,
+   "tipo": "topic",
+   "palavras": [
+    "caminho minimo",
+    "shortest path",
+    "ciclo negativo",
+    "negative cycle",
+    "sssp",
+    "arvores de caminhos minimos; arestas e ciclos negativos"
+   ],
+   "verificar": [
+    "shortest path tree",
+    "negative cycle"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "ford-sssp",
+   "titulo": "The Only SSSP Algorithm (Ford)",
+   "titulo_en": "Ford's algorithm (relaxation)",
+   "paginas": [
+    294,
+    296
+   ],
+   "capitulo": 8,
+   "tipo": "algorithm",
+   "palavras": [
+    "ford",
+    "relaxacao",
+    "relax",
+    "aresta tensa",
+    "tense",
+    "algoritmo de ford (relaxacao)"
+   ],
+   "verificar": [
+    "tense",
+    "Relax"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "bfs-sssp",
+   "titulo": "Unweighted Graphs: BFS",
+   "titulo_en": "BFS for unweighted shortest paths",
+   "paginas": [
+    296,
+    300
+   ],
+   "capitulo": 8,
+   "tipo": "algorithm",
+   "palavras": [
+    "bfs",
+    "busca em largura",
+    "sem pesos",
+    "bfs para caminhos minimos sem pesos"
+   ],
+   "verificar": [
+    "BFSWithToken",
+    "Lemma 8.1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dag-sssp",
+   "titulo": "Directed Acyclic Graphs: DFS",
+   "titulo_en": "Shortest paths in a DAG",
+   "paginas": [
+    300,
+    302
+   ],
+   "capitulo": 8,
+   "tipo": "algorithm",
+   "palavras": [
+    "dag",
+    "caminhos minimos em dag",
+    "ordem topologica"
+   ],
+   "verificar": [
+    "DagSSSP"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "dijkstra",
+   "titulo": "Best-First: Dijkstra's Algorithm",
+   "titulo_en": "Dijkstra (and negative edges)",
+   "paginas": [
+    302,
+    307
+   ],
+   "capitulo": 8,
+   "tipo": "algorithm",
+   "palavras": [
+    "dijkstra",
+    "arestas negativas",
+    "nonnegativedijkstra",
+    "exponencial",
+    "fila de prioridade",
+    "dijkstra (e arestas negativas)"
+   ],
+   "verificar": [
+    "NonnegativeDijkstra",
+    "exponential"
+   ],
+   "nota": "With negative edges: NonnegativeDijkstra is wrong; the full Dijkstra is correct without negative cycles but may be exponential."
+  },
+  {
+   "id": "bellman-ford",
+   "titulo": "Relax ALL the Edges: Bellman-Ford",
+   "titulo_en": "Bellman-Ford (and Moore)",
+   "paginas": [
+    307,
+    313
+   ],
+   "capitulo": 8,
+   "tipo": "algorithm",
+   "palavras": [
+    "bellman-ford",
+    "moore",
+    "ciclo negativo",
+    "o(ve)",
+    "bellman-ford (e moore)"
+   ],
+   "verificar": [
+    "BellmanFord",
+    "Moore"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "apsp-intro",
+   "titulo": "All-Pairs Shortest Paths: lots of single sources",
+   "titulo_en": "APSP: many sources",
+   "paginas": [
+    327,
+    329
+   ],
+   "capitulo": 9,
+   "tipo": "topic",
+   "palavras": [
+    "apsp",
+    "todos os pares",
+    "apsp: varias origens"
+   ],
+   "verificar": [
+    "ObviousAPSP"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "reponderacao",
+   "titulo": "Reweighting (adding a constant does not work)",
+   "titulo_en": "Reweighting (adding a constant does NOT work)",
+   "paginas": [
+    329,
+    330
+   ],
+   "capitulo": 9,
+   "tipo": "theorem",
+   "palavras": [
+    "reponderacao",
+    "reweighting",
+    "somar constante",
+    "preco",
+    "reponderacao (somar constante nao funciona)"
+   ],
+   "verificar": [
+    "Increasing all the edge weights",
+    "price"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "johnson",
+   "titulo": "Johnson's Algorithm",
+   "titulo_en": "Johnson",
+   "paginas": [
+    330,
+    331
+   ],
+   "capitulo": 9,
+   "tipo": "algorithm",
+   "palavras": [
+    "johnson",
+    "apsp",
+    "reponderacao"
+   ],
+   "verificar": [
+    "JohnsonAPSP",
+    "Johnson"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "apsp-dp",
+   "titulo": "APSP by dynamic programming (Shimbel, Fischer-Meyer, Leyzorek)",
+   "titulo_en": "APSP by DP and min-plus multiplication",
+   "paginas": [
+    331,
+    335
+   ],
+   "capitulo": 9,
+   "tipo": "algorithm",
+   "palavras": [
+    "shimbel",
+    "leyzorek",
+    "fischer-meyer",
+    "min-plus",
+    "funny matrix",
+    "apsp por dp e multiplicacao min-plus"
+   ],
+   "verificar": [
+    "LeyzorekAPSP",
+    "funny"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "floyd-warshall",
+   "titulo": "(Kleene-Roy-)Floyd-Warshall(-Ingerman)",
+   "titulo_en": "Floyd-Warshall",
+   "paginas": [
+    336,
+    338
+   ],
+   "capitulo": 9,
+   "tipo": "algorithm",
+   "palavras": [
+    "floyd-warshall",
+    "floyd",
+    "warshall",
+    "apsp",
+    "o(v^3)"
+   ],
+   "verificar": [
+    "FloydWarshall",
+    "Kleene"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fluxo-e-corte",
+   "titulo": "Flows and Cuts",
+   "titulo_en": "Flows and cuts (definitions and weak duality)",
+   "paginas": [
+    346,
+    349
+   ],
+   "capitulo": 10,
+   "tipo": "theorem",
+   "palavras": [
+    "fluxo",
+    "flow",
+    "corte",
+    "cut",
+    "capacidade",
+    "dualidade fraca",
+    "lema 10.1",
+    "fluxos e cortes (definicoes e dualidade fraca)"
+   ],
+   "verificar": [
+    "conservation",
+    "Lemma 10.1"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "maxflow-mincut",
+   "titulo": "The Maxflow-Mincut Theorem",
+   "titulo_en": "Maxflow-mincut theorem",
+   "paginas": [
+    349,
+    351
+   ],
+   "capitulo": 10,
+   "tipo": "theorem",
+   "palavras": [
+    "max-flow min-cut",
+    "fluxo maximo",
+    "corte minimo",
+    "grafo residual",
+    "caminho aumentante",
+    "residual",
+    "teorema do fluxo maximo e corte minimo"
+   ],
+   "verificar": [
+    "residual capacity",
+    "augmenting path"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "ford-fulkerson",
+   "titulo": "Ford and Fulkerson's augmenting-path algorithm",
+   "titulo_en": "Ford-Fulkerson (integrality, irrational capacities)",
+   "paginas": [
+    352,
+    354
+   ],
+   "capitulo": 10,
+   "tipo": "algorithm",
+   "palavras": [
+    "ford-fulkerson",
+    "integralidade",
+    "irracional",
+    "zwick",
+    "o(e|f*|)",
+    "ford-fulkerson (integralidade, irracionais)"
+   ],
+   "verificar": [
+    "Integrality Theorem",
+    "irrational"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "decomposicao-fluxo",
+   "titulo": "Combining and Decomposing Flows",
+   "titulo_en": "Flow decomposition",
+   "paginas": [
+    354,
+    358
+   ],
+   "capitulo": 10,
+   "tipo": "theorem",
+   "palavras": [
+    "decomposicao de fluxo",
+    "flow decomposition"
+   ],
+   "verificar": [
+    "Flow Decomposition Theorem"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "edmonds-karp",
+   "titulo": "Edmonds and Karp's Algorithms",
+   "titulo_en": "Edmonds-Karp (fattest / shortest)",
+   "paginas": [
+    358,
+    361
+   ],
+   "capitulo": 10,
+   "tipo": "algorithm",
+   "palavras": [
+    "edmonds-karp",
+    "caminho mais gordo",
+    "fattest",
+    "caminho mais curto",
+    "o(ve^2)",
+    "edmonds-karp (mais gordo",
+    "mais curto)"
+   ],
+   "verificar": [
+    "Fattest Augmenting Paths",
+    "Shortest Augmenting Paths"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "fluxo-progresso",
+   "titulo": "Further Progress (Orlin O(VE))",
+   "titulo_en": "Progress: Orlin O(VE)",
+   "paginas": [
+    361,
+    362
+   ],
+   "capitulo": 10,
+   "tipo": "topic",
+   "palavras": [
+    "orlin",
+    "o(ve)",
+    "dinitz",
+    "push-relabel",
+    "progresso: orlin o(ve)"
+   ],
+   "verificar": [
+    "Orlin",
+    "O(VE)"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "caminhos-disjuntos",
+   "titulo": "Edge-Disjoint Paths; Vertex Capacities",
+   "titulo_en": "Disjoint paths and vertex capacities",
+   "paginas": [
+    371,
+    373
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "caminhos disjuntos",
+    "edge-disjoint",
+    "vertex-disjoint",
+    "divisao de vertices",
+    "vin",
+    "vout",
+    "caminhos disjuntos e capacidades nos vertices"
+   ],
+   "verificar": [
+    "Edge-Disjoint Paths",
+    "vin"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "emparelhamento-bipartido",
+   "titulo": "Bipartite Matching",
+   "titulo_en": "Maximum bipartite matching",
+   "paginas": [
+    373,
+    374
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "emparelhamento bipartido",
+    "bipartite matching",
+    "hopcroft-karp",
+    "caminho alternante",
+    "emparelhamento bipartido maximo"
+   ],
+   "verificar": [
+    "alternating path",
+    "Hopcroft"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "selecao-tuplas",
+   "titulo": "Tuple Selection",
+   "titulo_en": "Tuple selection and exam scheduling",
+   "paginas": [
+    375,
+    378
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "tuple selection",
+    "selecao de tuplas",
+    "provas",
+    "selecao de tuplas e escalonamento de provas"
+   ],
+   "verificar": [
+    "tuple selection"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "cobertura-caminhos",
+   "titulo": "Disjoint-Path Covers",
+   "titulo_en": "Disjoint-path covers",
+   "paginas": [
+    378,
+    381
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "cobertura por caminhos",
+    "path cover",
+    "cobertura por caminhos disjuntos"
+   ],
+   "verificar": [
+    "disjoint-path cover"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "beisebol",
+   "titulo": "Baseball Elimination",
+   "titulo_en": "Baseball elimination",
+   "paginas": [
+    381,
+    384
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "beisebol",
+    "baseball",
+    "eliminacao",
+    "eliminacao no beisebol"
+   ],
+   "verificar": [
+    "Baseball Elimination",
+    "saturates every edge"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "selecao-projetos",
+   "titulo": "Project Selection",
+   "titulo_en": "Project selection",
+   "paginas": [
+    384,
+    386
+   ],
+   "capitulo": 11,
+   "tipo": "algorithm",
+   "palavras": [
+    "selecao de projetos",
+    "project selection",
+    "fecho",
+    "lucro"
+   ],
+   "verificar": [
+    "Project Selection",
+    "profit"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "circuitsat",
+   "titulo": "A Game You Can't Win (CircuitSat)",
+   "titulo_en": "CircuitSat",
+   "paginas": [
+    397,
+    399
+   ],
+   "capitulo": 12,
+   "tipo": "topic",
+   "palavras": [
+    "circuitsat",
+    "circuito booleano",
+    "satisfatibilidade"
+   ],
+   "verificar": [
+    "CircuitSat"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "p-np",
+   "titulo": "P versus NP",
+   "titulo_en": "P versus NP, co-NP",
+   "paginas": [
+    399,
+    400
+   ],
+   "capitulo": 12,
+   "tipo": "theorem",
+   "palavras": [
+    "p vs np",
+    "p versus np",
+    "np",
+    "co-np",
+    "certificado"
+   ],
+   "verificar": [
+    "co-NP",
+    "polynomial time"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "np-hard-def",
+   "titulo": "NP-hard, NP-easy, and NP-complete",
+   "titulo_en": "NP-hard, NP-complete, Cook-Levin",
+   "paginas": [
+    400,
+    402
+   ],
+   "capitulo": 12,
+   "tipo": "theorem",
+   "palavras": [
+    "np-hard",
+    "np-dificil",
+    "np-completo",
+    "np-complete",
+    "cook-levin",
+    "teorema de cook",
+    "np-dificil, np-completo, cook-levin"
+   ],
+   "verificar": [
+    "NP-hard",
+    "Cook-Levin"
+   ],
+   "nota": "The book does NOT prove Cook-Levin."
+  },
+  {
+   "id": "reducoes-formais",
+   "titulo": "Formal Definitions (Cook and Karp reductions)",
+   "titulo_en": "Formal definitions: Cook and Karp reductions",
+   "paginas": [
+    402,
+    403
+   ],
+   "capitulo": 12,
+   "tipo": "theorem",
+   "palavras": [
+    "reducao de karp",
+    "reducao de cook",
+    "maquina de turing",
+    "ram",
+    "definicoes formais: reducoes de cook e de karp"
+   ],
+   "verificar": [
+    "Karp reductions",
+    "Turing"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "regra-da-reducao",
+   "titulo": "Reductions and Sat (direction rule)",
+   "titulo_en": "Rule: reduce a known NP-hard problem to the new one",
+   "paginas": [
+    403,
+    406
+   ],
+   "capitulo": 12,
+   "tipo": "theorem",
+   "palavras": [
+    "direcao da reducao",
+    "reduzir",
+    "sat",
+    "reducao",
+    "regra: reduza um np-dificil conhecido ao novo"
+   ],
+   "verificar": [
+    "reduce a known NP-hard problem"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "3sat",
+   "titulo": "3Sat (from CircuitSat)",
+   "titulo_en": "3SAT from CircuitSAT",
+   "paginas": [
+    406,
+    408
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "3sat",
+    "3cnf",
+    "3sat a partir de circuitsat"
+   ],
+   "verificar": [
+    "3CNF",
+    "Tseitin"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "independent-set",
+   "titulo": "Maximum Independent Set (from 3Sat)",
+   "titulo_en": "Maximum independent set",
+   "paginas": [
+    408,
+    410
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "conjunto independente",
+    "independent set",
+    "maxindset",
+    "conjunto independente maximo"
+   ],
+   "verificar": [
+    "MaxIndSet",
+    "triangle"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "padrao-reducao",
+   "titulo": "The General Pattern (reductions)",
+   "titulo_en": "General pattern of a reduction (three tasks)",
+   "paginas": [
+    410,
+    411
+   ],
+   "capitulo": 12,
+   "tipo": "topic",
+   "palavras": [
+    "padrao geral",
+    "reducao",
+    "certificado",
+    "tres tarefas",
+    "ida e volta",
+    "padrao geral de uma reducao (tres tarefas)"
+   ],
+   "verificar": [
+    "certificates",
+    "General Pattern"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "clique-vc",
+   "titulo": "Clique and Vertex Cover (from Independent Set)",
+   "titulo_en": "Clique and vertex cover",
+   "paginas": [
+    412,
+    413
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "clique",
+    "vertex cover",
+    "cobertura de vertices",
+    "complemento",
+    "clique e cobertura de vertices"
+   ],
+   "verificar": [
+    "MaxClique",
+    "complement"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "3color",
+   "titulo": "Graph Coloring (from 3Sat)",
+   "titulo_en": "Graph coloring (3Color)",
+   "paginas": [
+    413,
+    416
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "coloracao",
+    "3color",
+    "gadget",
+    "graph coloring",
+    "coloracao de grafos (3color)"
+   ],
+   "verificar": [
+    "3Color",
+    "gadget"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "hamiltoniano",
+   "titulo": "Hamiltonian Cycle and TSP",
+   "titulo_en": "Hamiltonian cycle and traveling salesman",
+   "paginas": [
+    416,
+    420
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "hamiltoniano",
+    "hamiltonian",
+    "tsp",
+    "caixeiro viajante",
+    "traveling salesman",
+    "ciclo hamiltoniano e caixeiro viajante"
+   ],
+   "verificar": [
+    "Hamiltonian cycle",
+    "traveling salesman"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "subset-sum-np",
+   "titulo": "Subset Sum (from Vertex Cover); pseudo-polynomial time",
+   "titulo_en": "Subset Sum NP-hard; pseudopolynomial",
+   "paginas": [
+    420,
+    422
+   ],
+   "capitulo": 12,
+   "tipo": "algorithm",
+   "palavras": [
+    "subset sum",
+    "pseudopolinomial",
+    "pseudo-polynomial",
+    "weakly np-hard",
+    "base 4",
+    "subset sum np-dificil; pseudopolinomial"
+   ],
+   "verificar": [
+    "pseudo-polynomial",
+    "weakly NP-hard"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "outros-np",
+   "titulo": "Other Useful NP-hard Problems",
+   "titulo_en": "Other useful NP-hard problems",
+   "paginas": [
+    422,
+    426
+   ],
+   "capitulo": 12,
+   "tipo": "topic",
+   "palavras": [
+    "longest path",
+    "maior caminho",
+    "partition",
+    "3partition",
+    "set cover",
+    "steiner",
+    "max cut",
+    "outros problemas np-dificeis uteis"
+   ],
+   "verificar": [
+    "LongestPath",
+    "Partition"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "escolha-de-problema",
+   "titulo": "Choosing the Right Problem",
+   "titulo_en": "How to choose the source problem",
+   "paginas": [
+    425,
+    426
+   ],
+   "capitulo": 12,
+   "tipo": "topic",
+   "palavras": [
+    "escolher problema",
+    "regras praticas",
+    "como escolher o problema de origem"
+   ],
+   "verificar": [
+    "Choosing the Right Problem"
+   ],
+   "nota": ""
+  },
+  {
+   "id": "pspace-exp",
+   "titulo": "On Beyond Zebra (PSPACE, EXP)",
+   "titulo_en": "PSPACE, EXP and beyond",
+   "paginas": [
+    430,
+    433
+   ],
+   "capitulo": 12,
+   "tipo": "topic",
+   "palavras": [
+    "pspace",
+    "exp",
+    "qbf",
+    "expspace",
+    "pspace, exp e alem"
+   ],
+   "verificar": [
+    "PSPACE",
+    "EXP"
+   ],
+   "nota": ""
+  }
+ ],
+ "nao_coberto": [
+  {
+   "id": "teorema-mestre",
+   "palavras": [
+    "teorema mestre",
+    "master theorem",
+    "akra-bazzi"
+   ],
+   "nota": "The Master Theorem is not presented (only in the index: 'see recursion trees', p.454). Use recursion trees (JE p.49-52)."
+  },
+  {
+   "id": "minimax",
+   "palavras": [
+    "minimax",
+    "alfa-beta",
+    "alpha-beta",
+    "poda alfa"
+   ],
+   "nota": "Minimax and alpha-beta do not appear. The game tree uses good/bad states (JE p.93)."
+  },
+  {
+   "id": "rubro-negra",
+   "palavras": [
+    "rubro-negra",
+    "red-black",
+    "avl",
+    "b-tree",
+    "arvore b",
+    "skiplist",
+    "skip list",
+    "splay"
+   ],
+   "nota": "Internal data structures are a prerequisite (JE p.6) and are not taught; refer to data-structures-expert."
+  },
+  {
+   "id": "knuth-yao",
+   "palavras": [
+    "knuth-yao",
+    "knuth yao"
+   ],
+   "nota": "The Knuth-Yao optimization is not covered."
+  },
+  {
+   "id": "patience",
+   "palavras": [
+    "patience sorting",
+    "lis n log n",
+    "lis em o(n log n)"
+   ],
+   "nota": "LIS in O(n log n) by binary search is not covered; only O(n^2)."
+  },
+  {
+   "id": "konig-menger",
+   "palavras": [
+    "konig",
+    "teorema de konig",
+    "menger",
+    "teorema de menger"
+   ],
+   "nota": "The König and Menger theorems are not stated (König only as a historical name, JE p.208, 374)."
+  },
+  {
+   "id": "cook-levin-prova",
+   "palavras": [
+    "prova de cook-levin",
+    "demonstracao de cook-levin"
+   ],
+   "nota": "The book does not prove Cook-Levin (JE p.401-402)."
+  },
+  {
+   "id": "aproximacao",
+   "palavras": [
+    "aproximacao",
+    "approximation",
+    "ptas",
+    "fpt",
+    "parametrizado"
+   ],
+   "nota": "Approximation algorithms and FPT are not covered."
+  },
+  {
+   "id": "programacao-linear",
+   "palavras": [
+    "programacao linear",
+    "linear programming",
+    "simplex",
+    "dualidade lp"
+   ],
+   "nota": "Linear programming is not covered (Dantzig is cited only historically)."
+  },
+  {
+   "id": "string-matching",
+   "palavras": [
+    "kmp",
+    "knuth-morris-pratt",
+    "boyer-moore",
+    "rabin-karp",
+    "suffix array",
+    "trie"
+   ],
+   "nota": "String matching is not covered."
+  },
+  {
+   "id": "hashing",
+   "palavras": [
+    "tabela hash",
+    "hash table",
+    "hashing"
+   ],
+   "nota": "Hashing is only mentioned in passing (JE p.214, 216)."
+  },
+  {
+   "id": "randomizados",
+   "palavras": [
+    "algoritmo randomizado",
+    "randomized algorithm",
+    "monte carlo",
+    "las vegas"
+   ],
+   "nota": "Randomized algorithms are out of scope (JE p.49, note 7)."
+  },
+  {
+   "id": "amortizada",
+   "palavras": [
+    "analise amortizada",
+    "amortized",
+    "potencial"
+   ],
+   "nota": "Amortized analysis is only mentioned in passing (JE p.282-283)."
+  },
+  {
+   "id": "geometria",
+   "palavras": [
+    "geometria computacional",
+    "convex hull",
+    "fecho convexo",
+    "closest pair"
+   ],
+   "nota": "Computational geometry is not covered."
+  },
+  {
+   "id": "a-estrela",
+   "palavras": [
+    "a*",
+    "a-star",
+    "a estrela"
+   ],
+   "nota": "A* is not covered."
+  },
+  {
+   "id": "dinic-detalhe",
+   "palavras": [
+    "dinic",
+    "push-relabel",
+    "blocking flow",
+    "fluxo de custo minimo",
+    "min-cost flow"
+   ],
+   "nota": "Dinitz and push-relabel are only cited (JE p.359, 361); minimum-cost flow is not covered."
+  }
+ ]
+}

@@ -1,0 +1,2152 @@
+{
+ "source": "Rust-The-Rust-Programming-Language.txt, Rust-Reference.txt, Rust-by-Example.txt (=== PAGE N === markers, N = PDF page)",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "Book",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "Each value in Rust has an owner",
+    "can only be one owner at a time",
+    "will be dropped"
+   ],
+   "claim": "the three ownership rules"
+  },
+  {
+   "id": "P002",
+   "src": "Book",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "E0382",
+    "borrow of moved value"
+   ],
+   "claim": "use after move gives E0382"
+  },
+  {
+   "id": "P003",
+   "src": "Book",
+   "pages": [
+    364,
+    365
+   ],
+   "terms": [
+    "E0507",
+    "FnMut",
+    "captured variable"
+   ],
+   "claim": "E0507 in an FnMut closure of sort_by_key"
+  },
+  {
+   "id": "P004",
+   "src": "Book",
+   "pages": [
+    426,
+    427
+   ],
+   "terms": [
+    "E0040",
+    "explicit destructor",
+    "double free"
+   ],
+   "claim": "calling .drop() by hand is forbidden (double free)"
+  },
+  {
+   "id": "P005",
+   "src": "Book",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "E0384",
+    "cannot assign twice to immutable variable"
+   ],
+   "claim": "E0384: reassigning an immutable binding"
+  },
+  {
+   "id": "P006",
+   "src": "Book",
+   "pages": [
+    338
+   ],
+   "terms": [
+    "same lifetime parameter for all the parameters",
+    "which is incorrect"
+   ],
+   "claim": "the compiler's suggestion to use the same lifetime everywhere is wrong in search"
+  },
+  {
+   "id": "P007",
+   "src": "Book",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "E0515",
+    "no way we can specify lifetime parameters"
+   ],
+   "claim": "an annotation does not fix returning a reference to a local"
+  },
+  {
+   "id": "P008",
+   "src": "Book",
+   "pages": [
+    602
+   ],
+   "terms": [
+    "deny by default",
+    "static_mut_refs",
+    "SAFETY"
+   ],
+   "claim": "static_mut_refs lint denies by default; SAFETY comment"
+  },
+  {
+   "id": "P009",
+   "src": "Book",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "E0433",
+    "unlinked crate",
+    "cargo add hosting"
+   ],
+   "claim": "E0433 and the misleading cargo add hint"
+  },
+  {
+   "id": "P010",
+   "src": "Book",
+   "pages": [
+    605
+   ],
+   "terms": [
+    "pointer not dereferenceable",
+    "dangling pointer"
+   ],
+   "claim": "Miri reports a dangling pointer"
+  },
+  {
+   "id": "P011",
+   "src": "Book",
+   "pages": [
+    54
+   ],
+   "terms": [
+    "256",
+    "integer overflow",
+    "--release"
+   ],
+   "claim": "overflow: panic in debug, wrap in release"
+  },
+  {
+   "id": "P012",
+   "src": "Book",
+   "pages": [
+    398
+   ],
+   "terms": [
+    "does not delete any code",
+    "secrets",
+    "--undo"
+   ],
+   "claim": "yank does not delete code or secrets; --undo"
+  },
+  {
+   "id": "P013",
+   "src": "Book",
+   "pages": [
+    683
+   ],
+   "terms": [
+    "double panic",
+    "unwrap"
+   ],
+   "claim": "unwrap in drop can cause a double panic"
+  },
+  {
+   "id": "P014",
+   "src": "Book",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "glob",
+    "Be careful when using the glob operator"
+   ],
+   "claim": "beware of glob"
+  },
+  {
+   "id": "P015",
+   "src": "Book",
+   "pages": [
+    344
+   ],
+   "terms": [
+    "to_lowercase",
+    "100 percent accurate"
+   ],
+   "claim": "to_lowercase is not 100% exact"
+  },
+  {
+   "id": "P016",
+   "src": "Book",
+   "pages": [
+    667
+   ],
+   "terms": [
+    "It compiles!",
+    "errors in the browser"
+   ],
+   "claim": "compiling does not mean working"
+  },
+  {
+   "id": "P017",
+   "src": "Book",
+   "pages": [
+    381
+   ],
+   "terms": [
+    "19,620,300",
+    "19,234,900"
+   ],
+   "claim": "for vs iterator benchmark in ns/iter"
+  },
+  {
+   "id": "P018",
+   "src": "Book",
+   "pages": [
+    672
+   ],
+   "terms": [
+    "std::thread::Builder",
+    "returns Result"
+   ],
+   "claim": "Builder::spawn returns Result"
+  },
+  {
+   "id": "P019",
+   "src": "Book",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "Rust API Guidelines"
+   ],
+   "claim": "the Book only cites the Rust API Guidelines"
+  },
+  {
+   "id": "P020",
+   "src": "Book",
+   "pages": [
+    502
+   ],
+   "terms": [
+    "trpl::join",
+    "fair"
+   ],
+   "claim": "join is fair"
+  },
+  {
+   "id": "P021",
+   "src": "Book",
+   "pages": [
+    515
+   ],
+   "terms": [
+    "not fair",
+    "in the order in which they are passed"
+   ],
+   "claim": "select is not fair and polls in order"
+  },
+  {
+   "id": "P022",
+   "src": "Book",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "uninstall"
+   ],
+   "claim": "rustup self uninstall / update"
+  },
+  {
+   "id": "P023",
+   "src": "Book",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "ignore the Cargo.lock file",
+    "latest versions"
+   ],
+   "claim": "cargo update ignores Cargo.lock"
+  },
+  {
+   "id": "P024",
+   "src": "Book",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "following sections will not be run"
+   ],
+   "claim": "a failing unit test prevents integration tests and doc-tests"
+  },
+  {
+   "id": "P025",
+   "src": "Book",
+   "pages": [
+    639
+   ],
+   "terms": [
+    "syn = \"2.0\"",
+    "quote = \"1.0\"",
+    "proc-macro = true"
+   ],
+   "claim": "Cargo.toml of the derive macro crate"
+  },
+  {
+   "id": "P026",
+   "src": "Book",
+   "pages": [
+    677
+   ],
+   "terms": [
+    "Job",
+    "type alias"
+   ],
+   "claim": "type alias Job"
+  },
+  {
+   "id": "P027",
+   "src": "Book",
+   "pages": [
+    459
+   ],
+   "terms": [
+    "1:1 model"
+   ],
+   "claim": "std uses 1:1 threads"
+  },
+  {
+   "id": "P028",
+   "src": "Book",
+   "pages": [
+    476
+   ],
+   "terms": [
+    "would fail if another thread holding the lock panicked"
+   ],
+   "claim": "lock fails if another thread panicked"
+  },
+  {
+   "id": "P029",
+   "src": "Book",
+   "pages": [
+    384
+   ],
+   "terms": [
+    "opt-level",
+    "range of 0 to 3"
+   ],
+   "claim": "opt-level from 0 to 3"
+  },
+  {
+   "id": "P030",
+   "src": "Book",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "^0.8.5",
+    "below 0.9.0"
+   ],
+   "claim": "SemVer: 0.8.5 is ^0.8.5"
+  },
+  {
+   "id": "P031",
+   "src": "Book",
+   "pages": [
+    711
+   ],
+   "terms": [
+    "Every three years or so",
+    "2015 as the edition value"
+   ],
+   "claim": "editions every three years; without the key 2015 applies"
+  },
+  {
+   "id": "P032",
+   "src": "Book",
+   "pages": [
+    716
+   ],
+   "terms": [
+    "six weeks",
+    "supports the most recent stable version",
+    "end of life"
+   ],
+   "claim": "only the latest stable is supported"
+  },
+  {
+   "id": "P033",
+   "src": "Book",
+   "pages": [
+    715
+   ],
+   "terms": [
+    "Every six weeks"
+   ],
+   "claim": "a release every six weeks"
+  },
+  {
+   "id": "P034",
+   "src": "Book",
+   "pages": [
+    592
+   ],
+   "terms": [
+    "five actions",
+    "unsafe Rust"
+   ],
+   "claim": "five actions in unsafe"
+  },
+  {
+   "id": "P035",
+   "src": "Book",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "unimplemented! macro"
+   ],
+   "claim": "skeleton with unimplemented!"
+  },
+  {
+   "id": "P036",
+   "src": "Book",
+   "pages": [
+    337
+   ],
+   "terms": [
+    "unimplemented! macro panics",
+    "not implemented"
+   ],
+   "claim": "test fails because of unimplemented!"
+  },
+  {
+   "id": "P037",
+   "src": "Book",
+   "pages": [
+    326
+   ],
+   "terms": [
+    "The Trade-Offs of Using clone"
+   ],
+   "claim": "trade-offs of clone"
+  },
+  {
+   "id": "P038",
+   "src": "Book",
+   "pages": [
+    436
+   ],
+   "terms": [
+    "inherently conservative"
+   ],
+   "claim": "static analysis is conservative"
+  },
+  {
+   "id": "P039",
+   "src": "Book",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "new to build",
+    "never fail"
+   ],
+   "claim": "build instead of new"
+  },
+  {
+   "id": "P040",
+   "src": "Book",
+   "pages": [
+    137
+   ],
+   "terms": [
+    "isn't a special name"
+   ],
+   "claim": "new is not a special name"
+  },
+  {
+   "id": "P041",
+   "src": "Book",
+   "pages": [
+    209
+   ],
+   "terms": [
+    "SipHash",
+    "not the fastest"
+   ],
+   "claim": "SipHash is DoS-resistant, not the fastest"
+  },
+  {
+   "id": "P042",
+   "src": "Book",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "valid Unicode scalar value"
+   ],
+   "claim": "a byte index is not a valid Unicode scalar"
+  },
+  {
+   "id": "P043",
+   "src": "Book",
+   "pages": [
+    229
+   ],
+   "terms": [
+    "more information than the compiler"
+   ],
+   "claim": "expect when you know more than the compiler"
+  },
+  {
+   "id": "P044",
+   "src": "Book",
+   "pages": [
+    332
+   ],
+   "terms": [
+    "Result<(), Box<dyn Error>>"
+   ],
+   "claim": "run returns Result<(), Box<dyn Error>>"
+  },
+  {
+   "id": "P045",
+   "src": "Book",
+   "pages": [
+    547
+   ],
+   "terms": [
+    "Dynamic Dispatch",
+    "monomorphization"
+   ],
+   "claim": "dynamic dispatch vs monomorphization"
+  },
+  {
+   "id": "P046",
+   "src": "Book",
+   "pages": [
+    612
+   ],
+   "terms": [
+    "directly implemented on the type"
+   ],
+   "claim": "an inherent method has priority"
+  },
+  {
+   "id": "P047",
+   "src": "Book",
+   "pages": [
+    482
+   ],
+   "terms": [
+    "std::sync::atomic",
+    "simple numerical operations"
+   ],
+   "claim": "atomics only cited as an alternative to Mutex"
+  },
+  {
+   "id": "P048",
+   "src": "Book",
+   "pages": [
+    557
+   ],
+   "terms": [
+    "default implementations",
+    "return self"
+   ],
+   "claim": "a default method returning self does not work in the state pattern"
+  },
+  {
+   "id": "P049",
+   "src": "Book",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "E0502",
+    "cannot borrow `v` as mutable"
+   ],
+   "claim": "E0502 message with Vec and push"
+  },
+  {
+   "id": "P050",
+   "src": "Book",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "1.90.0",
+    "2025-09-18",
+    "edition = \"2024\""
+   ],
+   "claim": "version assumed by the Book"
+  },
+  {
+   "id": "P051",
+   "src": "Book",
+   "pages": [
+    694
+   ],
+   "terms": [
+    "Raw identifiers",
+    "r#"
+   ],
+   "claim": "raw identifiers"
+  },
+  {
+   "id": "P052",
+   "src": "Book",
+   "pages": [
+    693
+   ],
+   "terms": [
+    "abstract become box do final gen macro override priv try typeof unsized virtual yield"
+   ],
+   "claim": "reserved keywords"
+  },
+  {
+   "id": "P053",
+   "src": "Book",
+   "pages": [
+    406
+   ],
+   "terms": [
+    "cargo install",
+    "binary crates",
+    "ripgrep"
+   ],
+   "claim": "cargo install only for binaries"
+  },
+  {
+   "id": "P054",
+   "src": "Book",
+   "pages": [
+    278
+   ],
+   "terms": [
+    "only available in nightly"
+   ],
+   "claim": "benchmarks only on nightly"
+  },
+  {
+   "id": "P055",
+   "src": "Book",
+   "pages": [
+    491
+   ],
+   "terms": [
+    "trpl",
+    "futures",
+    "tokio"
+   ],
+   "claim": "trpl re-exports futures and tokio"
+  },
+  {
+   "id": "P056",
+   "src": "Book",
+   "pages": [
+    678
+   ],
+   "terms": [
+    "poisoned state",
+    "panicked while holding the lock"
+   ],
+   "claim": "poisoned mutex"
+  },
+  {
+   "id": "P057",
+   "src": "Book",
+   "pages": [
+    510
+   ],
+   "terms": [
+    "starving",
+    "await point"
+   ],
+   "claim": "starvation without an await point"
+  },
+  {
+   "id": "P058",
+   "src": "Book",
+   "pages": [
+    507
+   ],
+   "terms": [
+    "dropped once that block ends"
+   ],
+   "claim": "async move drops the tx"
+  },
+  {
+   "id": "P059",
+   "src": "Book",
+   "pages": [
+    113
+   ],
+   "terms": [
+    "String Slices as Parameters"
+   ],
+   "claim": "&str as a parameter"
+  },
+  {
+   "id": "P060",
+   "src": "Book",
+   "pages": [
+    228
+   ],
+   "terms": [
+    "To panic! or Not to panic!"
+   ],
+   "claim": "when to use panic!"
+  },
+  {
+   "id": "P061",
+   "src": "Book",
+   "pages": [
+    346
+   ],
+   "terms": [
+    "env::var(\"IGNORE_CASE\").is_ok()"
+   ],
+   "claim": "IGNORE_CASE with is_ok"
+  },
+  {
+   "id": "P062",
+   "src": "Book",
+   "pages": [
+    347
+   ],
+   "terms": [
+    "IGNORE_CASE=1 cargo run -- to poem.txt",
+    "$Env:IGNORE_CASE=1"
+   ],
+   "claim": "using IGNORE_CASE on Unix and PowerShell"
+  },
+  {
+   "id": "P063",
+   "src": "Book",
+   "pages": [
+    604
+   ],
+   "terms": [
+    "rustup +nightly component add miri",
+    "cargo +nightly miri run"
+   ],
+   "claim": "Miri commands"
+  },
+  {
+   "id": "P064",
+   "src": "Book",
+   "pages": [
+    214
+   ],
+   "terms": [
+    "RUST_BACKTRACE=1 cargo run"
+   ],
+   "claim": "backtrace with cargo run"
+  },
+  {
+   "id": "P065",
+   "src": "Book",
+   "pages": [
+    40,
+    61
+   ],
+   "terms": [
+    "RUST_BACKTRACE=1"
+   ],
+   "claim": "RUST_BACKTRACE hint"
+  },
+  {
+   "id": "P066",
+   "src": "Book",
+   "pages": [
+    349,
+    350
+   ],
+   "terms": [
+    "standard error",
+    "eprintln!"
+   ],
+   "claim": "stderr and eprintln!"
+  },
+  {
+   "id": "P067",
+   "src": "Book",
+   "pages": [
+    388
+   ],
+   "terms": [
+    "Panics",
+    "Errors",
+    "Safety"
+   ],
+   "claim": "common sections of doc comments"
+  },
+  {
+   "id": "P068",
+   "src": "Book",
+   "pages": [
+    717
+   ],
+   "terms": [
+    "rustup override set nightly"
+   ],
+   "claim": "nightly per project"
+  },
+  {
+   "id": "P069",
+   "src": "Ref",
+   "pages": [
+    244
+   ],
+   "terms": [
+    "default in rustc is 128",
+    "recursion_limit"
+   ],
+   "claim": "default recursion_limit 128"
+  },
+  {
+   "id": "P070",
+   "src": "Ref",
+   "pages": [
+    245
+   ],
+   "terms": [
+    "-Zenforce-type-length-limit",
+    "nightly"
+   ],
+   "claim": "type_length_limit only with a nightly flag"
+  },
+  {
+   "id": "P071",
+   "src": "Ref",
+   "pages": [
+    148
+   ],
+   "terms": [
+    "AsyncFn",
+    "not dyn-compatible"
+   ],
+   "claim": "AsyncFn* is not dyn compatible"
+  },
+  {
+   "id": "P072",
+   "src": "Ref",
+   "pages": [
+    149
+   ],
+   "terms": [
+    "Rc<Box<Self>>",
+    "nested receiver cannot be dispatched on"
+   ],
+   "claim": "Rc<Box<Self>> does not dispatch"
+  },
+  {
+   "id": "P073",
+   "src": "Ref",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "Super<Self>"
+   ],
+   "claim": "a trait with Self as a supertrait argument is not dyn compatible"
+  },
+  {
+   "id": "P074",
+   "src": "Ref",
+   "pages": [
+    292
+   ],
+   "terms": [
+    "-128_i8",
+    "never cause a panic"
+   ],
+   "claim": "-128_i8 does not panic"
+  },
+  {
+   "id": "P075",
+   "src": "Ref",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "unsafe(..)",
+    "export_name link_section naked no_mangle"
+   ],
+   "claim": "unsafe attributes"
+  },
+  {
+   "id": "P076",
+   "src": "Ref",
+   "pages": [
+    9,
+    10
+   ],
+   "terms": [
+    "Byte order mark removal",
+    "CRLF normalization",
+    "CR CR LF LF"
+   ],
+   "claim": "input normalizations"
+  },
+  {
+   "id": "P077",
+   "src": "Ref",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "hard cut operator"
+   ],
+   "claim": "the ^ operator is a hard cut"
+  },
+  {
+   "id": "P078",
+   "src": "Ref",
+   "pages": [
+    438
+   ],
+   "terms": [
+    "2021 Edition differences",
+    "dyn keyword may be omitted"
+   ],
+   "claim": "dyn mandatory in 2021"
+  },
+  {
+   "id": "P079",
+   "src": "Ref",
+   "pages": [
+    482
+   ],
+   "terms": [
+    "2024 Edition differences",
+    "inferred to instead be ()"
+   ],
+   "claim": "divergence fallback in 2024"
+  },
+  {
+   "id": "P080",
+   "src": "Ref",
+   "pages": [
+    522
+   ],
+   "terms": [
+    "std::prelude::rust_2021",
+    "std::prelude::rust_2024"
+   ],
+   "claim": "preludes per edition"
+  },
+  {
+   "id": "P081",
+   "src": "Ref",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "Before the 2021 edition",
+    "IntoIterator"
+   ],
+   "claim": "array and IntoIterator before 2021"
+  },
+  {
+   "id": "P082",
+   "src": "Ref",
+   "pages": [
+    545
+   ],
+   "terms": [
+    "core::panic!",
+    "std::panic!",
+    "2021"
+   ],
+   "claim": "identical panic! from 2021"
+  },
+  {
+   "id": "P083",
+   "src": "Ref",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "Raw lifetimes are accepted in the 2021 edition"
+   ],
+   "claim": "raw lifetimes 2021"
+  },
+  {
+   "id": "P084",
+   "src": "Ref",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "Prior to the 2018 edition"
+   ],
+   "claim": "anonymous parameters in traits"
+  },
+  {
+   "id": "P085",
+   "src": "Ref",
+   "pages": [
+    382
+   ],
+   "terms": [
+    "Before the 2021 edition",
+    "range patterns"
+   ],
+   "claim": "a...b removed in 2021"
+  },
+  {
+   "id": "P086",
+   "src": "Ref",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "async await dyn"
+   ],
+   "claim": "2018 keywords"
+  },
+  {
+   "id": "P087",
+   "src": "Ref",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "The try keyword was added",
+    "gen keyword was added"
+   ],
+   "claim": "try 2018 and gen 2024"
+  },
+  {
+   "id": "P088",
+   "src": "Ref",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "In the 2015 edition, dyn is a keyword when used in a type position"
+   ],
+   "claim": "contextual dyn in 2015"
+  },
+  {
+   "id": "P089",
+   "src": "Ref",
+   "pages": [
+    357
+   ],
+   "terms": [
+    "Before the 2024 edition, let chains are not supported"
+   ],
+   "claim": "let chains only in 2024"
+  },
+  {
+   "id": "P090",
+   "src": "Ref",
+   "pages": [
+    374
+   ],
+   "terms": [
+    "default binding mode",
+    "ref mut"
+   ],
+   "claim": "binding modes"
+  },
+  {
+   "id": "P091",
+   "src": "Ref",
+   "pages": [
+    160
+   ],
+   "terms": [
+    "Prior to the 2024 edition, the unsafe keyword is optional"
+   ],
+   "claim": "unsafe extern mandatory in 2024"
+  },
+  {
+   "id": "P092",
+   "src": "Ref",
+   "pages": [
+    431
+   ],
+   "terms": [
+    "Edition 2018 and before",
+    "in its entirety"
+   ],
+   "claim": "capture of the whole variable up to 2018"
+  },
+  {
+   "id": "P093",
+   "src": "Ref",
+   "pages": [
+    116,
+    117
+   ],
+   "terms": [
+    "panic aborts without unwinding",
+    "undefined behavior"
+   ],
+   "claim": "unwinding table per ABI"
+  },
+  {
+   "id": "P094",
+   "src": "Ref",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "future matches are not tried",
+    "ambiguity!(error)"
+   ],
+   "claim": "first matching rule; local ambiguity"
+  },
+  {
+   "id": "P095",
+   "src": "Ref",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "mixed-site hygiene"
+   ],
+   "claim": "mixed hygiene"
+  },
+  {
+   "id": "P096",
+   "src": "Ref",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "inlined wherever they are used"
+   ],
+   "claim": "const is inlined"
+  },
+  {
+   "id": "P097",
+   "src": "Ref",
+   "pages": [
+    142
+   ],
+   "terms": [
+    "refer to the same allocation"
+   ],
+   "claim": "static is a single allocation"
+  },
+  {
+   "id": "P098",
+   "src": "Ref",
+   "pages": [
+    316
+   ],
+   "terms": [
+    "right hand side is evaluated first"
+   ],
+   "claim": "evaluation order in compound assignment"
+  },
+  {
+   "id": "P099",
+   "src": "Ref",
+   "pages": [
+    379
+   ],
+   "terms": [
+    "must be nonempty",
+    "10..=0"
+   ],
+   "claim": "non-empty range pattern"
+  },
+  {
+   "id": "P100",
+   "src": "Ref",
+   "pages": [
+    381
+   ],
+   "terms": [
+    "0u8..=255u8 is irrefutable"
+   ],
+   "claim": "a range that covers the type is irrefutable"
+  },
+  {
+   "id": "P101",
+   "src": "Ref",
+   "pages": [
+    389
+   ],
+   "terms": [
+    "T: PartialEq",
+    "structural equality"
+   ],
+   "claim": "constant patterns"
+  },
+  {
+   "id": "P102",
+   "src": "Ref",
+   "pages": [
+    390
+   ],
+   "terms": [
+    "let-bindings and function and closure parameters"
+   ],
+   "claim": "top-level or-pattern"
+  },
+  {
+   "id": "P103",
+   "src": "Ref",
+   "pages": [
+    415
+   ],
+   "terms": [
+    "ImmBorrow",
+    "UniqueImmBorrow"
+   ],
+   "claim": "capture modes"
+  },
+  {
+   "id": "P104",
+   "src": "Ref",
+   "pages": [
+    501
+   ],
+   "terms": [
+    "&'a Box<dyn Foo>",
+    "Box<dyn Foo + 'static>"
+   ],
+   "claim": "default object lifetime"
+  },
+  {
+   "id": "P105",
+   "src": "Ref",
+   "pages": [
+    485
+   ],
+   "terms": [
+    "reverse order of declaration"
+   ],
+   "claim": "drop order of variables"
+  },
+  {
+   "id": "P106",
+   "src": "Ref",
+   "pages": [
+    497
+   ],
+   "terms": [
+    "core::mem::forget"
+   ],
+   "claim": "destructors are not guaranteed"
+  },
+  {
+   "id": "P107",
+   "src": "Ref",
+   "pages": [
+    558
+   ],
+   "terms": [
+    "pub(in path), pub(crate), pub(super), and pub(self)"
+   ],
+   "claim": "forms of pub(...)"
+  },
+  {
+   "id": "P108",
+   "src": "Ref",
+   "pages": [
+    635
+   ],
+   "terms": [
+    "the empty array is promoted"
+   ],
+   "claim": "const pitfall with an empty array"
+  },
+  {
+   "id": "P109",
+   "src": "Ref",
+   "pages": [
+    624
+   ],
+   "terms": [
+    "sound",
+    "unsound",
+    "Rustonomicon"
+   ],
+   "claim": "sound vs unsound; Rustonomicon"
+  },
+  {
+   "id": "P110",
+   "src": "Ref",
+   "pages": [
+    630
+   ],
+   "terms": [
+    "Deadlocks",
+    "Leaks of memory"
+   ],
+   "claim": "not considered unsafe"
+  },
+  {
+   "id": "P111",
+   "src": "Ref",
+   "pages": [
+    143
+   ],
+   "terms": [
+    "AtomicUsize",
+    "fetch_add"
+   ],
+   "claim": "AtomicUsize only in a static example"
+  },
+  {
+   "id": "P112",
+   "src": "Ref",
+   "pages": [
+    85
+   ],
+   "terms": [
+    "target_has_atomic"
+   ],
+   "claim": "target_has_atomic"
+  },
+  {
+   "id": "P113",
+   "src": "Ref",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "The fn-based check does not fire"
+   ],
+   "claim": "must_use: per-function check does not fire on tuple/Some/if/match"
+  },
+  {
+   "id": "P114",
+   "src": "Ref",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "type-based check",
+    "_ = f();"
+   ],
+   "claim": "must_use: type-based check; _ = f()"
+  },
+  {
+   "id": "P115",
+   "src": "Ref",
+   "pages": [
+    90
+   ],
+   "terms": [
+    "cfg_select",
+    "cfg!(unix)"
+   ],
+   "claim": "cfg! and cfg_select!"
+  },
+  {
+   "id": "P116",
+   "src": "Ref",
+   "pages": [
+    642
+   ],
+   "terms": [
+    "global_allocator",
+    "only be used once in the crate graph"
+   ],
+   "claim": "single global_allocator in the graph"
+  },
+  {
+   "id": "P117",
+   "src": "Ref",
+   "pages": [
+    643
+   ],
+   "terms": [
+    "windows_subsystem"
+   ],
+   "claim": "windows_subsystem"
+  },
+  {
+   "id": "P118",
+   "src": "Ref",
+   "pages": [
+    227,
+    228
+   ],
+   "terms": [
+    "inline(always)",
+    "target_feature"
+   ],
+   "claim": "target_feature and inline(always)"
+  },
+  {
+   "id": "P119",
+   "src": "Ref",
+   "pages": [
+    567
+   ],
+   "terms": [
+    "-fno-exceptions"
+   ],
+   "claim": "FFI with C without exceptions"
+  },
+  {
+   "id": "P120",
+   "src": "Ref",
+   "pages": [
+    575
+   ],
+   "terms": [
+    "dlopen"
+   ],
+   "claim": "dlopen and unwinding"
+  },
+  {
+   "id": "P121",
+   "src": "Ref",
+   "pages": [
+    459
+   ],
+   "terms": [
+    "zero-variant enums",
+    "primitive representation"
+   ],
+   "claim": "primitive repr on an enum without variants is an error"
+  },
+  {
+   "id": "P122",
+   "src": "Ref",
+   "pages": [
+    463
+   ],
+   "terms": [
+    "transparent representation"
+   ],
+   "claim": "repr(transparent)"
+  },
+  {
+   "id": "P123",
+   "src": "Ref",
+   "pages": [
+    128,
+    129
+   ],
+   "terms": [
+    "isize",
+    "discriminant"
+   ],
+   "claim": "discriminant"
+  },
+  {
+   "id": "P124",
+   "src": "Ref",
+   "pages": [
+    622
+   ],
+   "terms": [
+    "unsafe_op_in_unsafe_fn",
+    "also considered to be an unsafe block"
+   ],
+   "claim": "the body of an unsafe fn is an unsafe block by default"
+  },
+  {
+   "id": "P125",
+   "src": "Ref",
+   "pages": [
+    620
+   ],
+   "terms": [
+    "Reading or writing a mutable or unsafe external static variable"
+   ],
+   "claim": "actions that require unsafe"
+  },
+  {
+   "id": "P126",
+   "src": "Ref",
+   "pages": [
+    604,
+    605,
+    606,
+    607
+   ],
+   "terms": [
+    "pure",
+    "nomem",
+    "readonly",
+    "nostack",
+    "noreturn"
+   ],
+   "claim": "asm! options"
+  },
+  {
+   "id": "P127",
+   "src": "Ref",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "input.encoding.utf8"
+   ],
+   "claim": "example rule id"
+  },
+  {
+   "id": "P128",
+   "src": "Ref",
+   "pages": [
+    367
+   ],
+   "terms": [
+    "Underscore expressions",
+    "destructuring assignment"
+   ],
+   "claim": "the _ expression"
+  },
+  {
+   "id": "P129",
+   "src": "Ref",
+   "pages": [
+    360
+   ],
+   "terms": [
+    "Every binding in each | separated pattern"
+   ],
+   "claim": "or-pattern: same bindings"
+  },
+  {
+   "id": "P130",
+   "src": "Ref",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "multiple possible candidates",
+    "error"
+   ],
+   "claim": "method lookup with more than one candidate"
+  },
+  {
+   "id": "P131",
+   "src": "Ref",
+   "pages": [
+    466
+   ],
+   "terms": [
+    "covariant",
+    "contravariant"
+   ],
+   "claim": "variance definitions"
+  },
+  {
+   "id": "P132",
+   "src": "Ref",
+   "pages": [
+    498
+   ],
+   "terms": [
+    "Lifetime elision in functions"
+   ],
+   "claim": "elision in functions"
+  },
+  {
+   "id": "P133",
+   "src": "Ref",
+   "pages": [
+    401
+   ],
+   "terms": [
+    "maximum isize value"
+   ],
+   "claim": "the object limit is isize::MAX"
+  },
+  {
+   "id": "P134",
+   "src": "Book",
+   "pages": [
+    707
+   ],
+   "terms": [
+    "rustfmt",
+    "reformats your code"
+   ],
+   "claim": "rustfmt / cargo fmt"
+  },
+  {
+   "id": "P135",
+   "src": "Book",
+   "pages": [
+    532
+   ],
+   "terms": [
+    "spawn_blocking",
+    "spawn_task"
+   ],
+   "claim": "spawn_blocking is only named"
+  },
+  {
+   "id": "P136",
+   "src": "Book",
+   "pages": [
+    495
+   ],
+   "terms": [
+    "tokio",
+    "block_on"
+   ],
+   "claim": "block_on uses tokio underneath"
+  },
+  {
+   "id": "P137",
+   "src": "Book",
+   "pages": [
+    547
+   ],
+   "terms": [
+    "dyn compatibility",
+    "beyond the scope of this discussion"
+   ],
+   "claim": "dyn compatibility deferred to the Reference"
+  },
+  {
+   "id": "P138",
+   "src": "Book",
+   "pages": [
+    708
+   ],
+   "terms": [
+    "cargo fix"
+   ],
+   "claim": "cargo fix"
+  },
+  {
+   "id": "P139",
+   "src": "Ref",
+   "pages": [
+    629
+   ],
+   "terms": [
+    "padding",
+    "union",
+    "reading uninitialized memory is permitted"
+   ],
+   "claim": "uninitialized memory only in union and padding"
+  },
+  {
+   "id": "P140",
+   "src": "Ref",
+   "pages": [
+    628,
+    629
+   ],
+   "terms": [
+    "In const contexts",
+    "reinterpreting a pointer"
+   ],
+   "claim": "transmute of a pointer with provenance: const context"
+  },
+  {
+   "id": "P141",
+   "src": "RBE",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "Since Rust 1.45",
+    "saturating cast",
+    "to_int_unchecked"
+   ],
+   "claim": "float to integer saturates since 1.45; to_int_unchecked is unsafe"
+  },
+  {
+   "id": "P142",
+   "src": "RBE",
+   "pages": [
+    291
+   ],
+   "terms": [
+    "f32 and f64 do not implement Hash"
+   ],
+   "claim": "floats do not implement Hash"
+  },
+  {
+   "id": "P143",
+   "src": "RBE",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "Box::leak",
+    "'static"
+   ],
+   "claim": "Box::leak creates &'static"
+  },
+  {
+   "id": "P144",
+   "src": "RBE",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "any owned data always passes a 'static lifetime bound"
+   ],
+   "claim": "an owned value satisfies T: 'static"
+  },
+  {
+   "id": "P145",
+   "src": "RBE",
+   "pages": [
+    250
+   ],
+   "terms": [
+    "Using Result in main"
+   ],
+   "claim": "main returning Result"
+  },
+  {
+   "id": "P146",
+   "src": "RBE",
+   "pages": [
+    294
+   ],
+   "terms": [
+    "HashSet<T> is, in actuality, just a wrapper around HashMap<T, ()>"
+   ],
+   "claim": "HashSet is a wrapper of HashMap"
+  },
+  {
+   "id": "P147",
+   "src": "RBE",
+   "pages": [
+    315
+   ],
+   "terms": [
+    "from_utf8_lossy"
+   ],
+   "claim": "from_utf8_lossy"
+  },
+  {
+   "id": "P148",
+   "src": "RBE",
+   "pages": [
+    232
+   ],
+   "terms": [
+    "unimplemented is better"
+   ],
+   "claim": "unimplemented in a prototype"
+  },
+  {
+   "id": "P149",
+   "src": "RBE",
+   "pages": [
+    307
+   ],
+   "terms": [
+    "OsString"
+   ],
+   "claim": "Path uses OsString"
+  },
+  {
+   "id": "P150",
+   "src": "RBE",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "partial move"
+   ],
+   "claim": "partial move"
+  },
+  {
+   "id": "P151",
+   "src": "RBE",
+   "pages": [
+    51
+   ],
+   "terms": [
+    "Aliasing",
+    "io::Result<T>"
+   ],
+   "claim": "type alias and io::Result"
+  },
+  {
+   "id": "P152",
+   "src": "RBE",
+   "pages": [
+    114,
+    115
+   ],
+   "terms": [
+    "pub(in path)",
+    "pub(crate)"
+   ],
+   "claim": "fine-grained visibility"
+  },
+  {
+   "id": "P153",
+   "src": "RBE",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "Accessing or modifying a mutable static variable is unsafe"
+   ],
+   "claim": "static mut is unsafe"
+  },
+  {
+   "id": "P154",
+   "src": "RBE",
+   "pages": [
+    228
+   ],
+   "terms": [
+    "zip"
+   ],
+   "claim": "zip in RBE"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "AtomicUsize",
+    "fetch_add",
+    "SeqCst"
+   ],
+   "claim": "the atomics API (AtomicUsize, fetch_add, orderings) is not in the Book"
+  },
+  {
+   "id": "N02",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "E0038"
+   ],
+   "claim": "the code E0038 (dyn compatibility) does not appear in any source"
+  },
+  {
+   "id": "N03",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "async-std"
+   ],
+   "claim": "async-std is not mentioned"
+  },
+  {
+   "id": "N04",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "thiserror",
+    "anyhow"
+   ],
+   "claim": "thiserror/anyhow are not mentioned"
+  },
+  {
+   "id": "N05",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "RwLock",
+    "Condvar",
+    "Barrier"
+   ],
+   "claim": "RwLock, Condvar, and Barrier are not covered in the Book"
+  },
+  {
+   "id": "N06",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "thread::scope"
+   ],
+   "claim": "scoped threads do not appear in the Book"
+  },
+  {
+   "id": "N07",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "cargo fix --edition"
+   ],
+   "claim": "the cargo fix --edition flag is not in the sources"
+  },
+  {
+   "id": "N08",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "no_std"
+   ],
+   "claim": "the Book does not cover no_std"
+  },
+  {
+   "id": "N09",
+   "src": [
+    "Book",
+    "RBE"
+   ],
+   "terms": [
+    "LazyLock",
+    "OnceLock",
+    "OnceCell"
+   ],
+   "claim": "LazyLock/OnceLock/OnceCell do not appear in the Book or RBE"
+  },
+  {
+   "id": "N10",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "cargo audit",
+    "cargo deny"
+   ],
+   "claim": "cargo audit/cargo deny do not appear"
+  },
+  {
+   "id": "N11",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "Cow<"
+   ],
+   "claim": "Cow does not appear in the Book"
+  },
+  {
+   "id": "N12",
+   "src": [
+    "Book",
+    "RBE"
+   ],
+   "terms": [
+    "crossbeam",
+    "rayon",
+    "parking_lot"
+   ],
+   "claim": "third-party concurrency crates do not appear"
+  },
+  {
+   "id": "N13",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "Stacked Borrows",
+    "Tree Borrows"
+   ],
+   "claim": "the Stacked/Tree Borrows aliasing models do not appear"
+  },
+  {
+   "id": "N14",
+   "src": [
+    "Book",
+    "RBE"
+   ],
+   "terms": [
+    "RUSTFLAGS"
+   ],
+   "claim": "RUSTFLAGS does not appear in the Book or RBE"
+  },
+  {
+   "id": "N15",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "PhantomData"
+   ],
+   "claim": "PhantomData does not appear in the Book (only in RBE)"
+  },
+  {
+   "id": "N16",
+   "src": [
+    "Book",
+    "Ref"
+   ],
+   "terms": [
+    "Polonius"
+   ],
+   "claim": "Polonius does not appear"
+  },
+  {
+   "id": "N17",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "cargo bench",
+    "criterion"
+   ],
+   "claim": "cargo bench/criterion do not appear in the Book"
+  },
+  {
+   "id": "N18",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "cargo tree"
+   ],
+   "claim": "cargo tree does not appear"
+  },
+  {
+   "id": "N19",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "mem::swap",
+    "mem::replace"
+   ],
+   "claim": "mem::swap/mem::replace do not appear in the Book"
+  },
+  {
+   "id": "N20",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "Arc::try_unwrap"
+   ],
+   "claim": "Arc::try_unwrap does not appear in the Book"
+  },
+  {
+   "id": "N21",
+   "src": [
+    "Ref"
+   ],
+   "terms": [
+    "SeqCst"
+   ],
+   "claim": "atomic memory orderings do not appear in the Reference"
+  },
+  {
+   "id": "N22",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "serde"
+   ],
+   "claim": "serde does not appear in the Book"
+  },
+  {
+   "id": "N23",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "try_lock"
+   ],
+   "claim": "Mutex::try_lock does not appear in the Book"
+  },
+  {
+   "id": "N24",
+   "src": [
+    "Book",
+    "Ref",
+    "RBE"
+   ],
+   "terms": [
+    "fmt --check"
+   ],
+   "claim": "the cargo fmt --check flag is not in the sources"
+  },
+  {
+   "id": "N25",
+   "src": [
+    "Book",
+    "RBE"
+   ],
+   "terms": [
+    "clippy::pedantic"
+   ],
+   "claim": "clippy::pedantic does not appear in the Book or RBE"
+  },
+  {
+   "id": "N26",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "const generics"
+   ],
+   "claim": "const generics do not appear in the Book"
+  },
+  {
+   "id": "N27",
+   "src": [
+    "RBE"
+   ],
+   "terms": [
+    "tokio"
+   ],
+   "claim": "tokio does not appear in RBE"
+  },
+  {
+   "id": "N28",
+   "src": [
+    "Book",
+    "RBE"
+   ],
+   "terms": [
+    "Rc<RefCell<T>>-based graph",
+    "petgraph"
+   ],
+   "claim": "graphs with petgraph do not appear"
+  },
+  {
+   "id": "N29",
+   "src": [
+    "Book"
+   ],
+   "terms": [
+    "spawn_blocking("
+   ],
+   "claim": "spawn_blocking is only named, never used in a call, in the Book"
+  }
+ ]
+}

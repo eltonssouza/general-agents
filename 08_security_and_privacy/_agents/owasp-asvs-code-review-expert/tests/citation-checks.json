@@ -1,0 +1,2612 @@
+{
+ "_comment": "Each positive item asserts that the cited page(s) contain ALL the substrings (normalized: lowercase, collapsed whitespace, straight quotes, line-break hyphenation removed or preserved). Each negative item asserts that NONE of the expressions appears as a whole word in the cited pages. 'rule_terms' links each linter rule to the terms that must exist in the OCRG pages it cites. Convention: ASVS p.N = footer = PDF; OCRG p.N = PDF page (printed = N-1). The 'claim' fields are explanatory English notes; the 'contains'/'absent' strings are verbatim source text and stay as is.",
+ "checks": [
+  {
+   "cite": "ASVS p.9",
+   "contains": [
+    "third minor patch",
+    "without renumbering"
+   ],
+   "claim": "4.0.3 is a minor patch; removed items not renumbered"
+  },
+  {
+   "cite": "ASVS p.9",
+   "contains": [
+    "superset of pci dss 3.2.1"
+   ],
+   "claim": "L1 is a superset of PCI DSS 3.2.1 6.5"
+  },
+  {
+   "cite": "ASVS p.9",
+   "contains": [
+    "nist 800-63-3",
+    "common weakness enumeration"
+   ],
+   "claim": "NIST 800-63-3 and CWE mapping in 4.0"
+  },
+  {
+   "cite": "ASVS p.10",
+   "contains": [
+    "masvs",
+    "appendix c"
+   ],
+   "claim": "mobile retired; IoT in Appendix C"
+  },
+  {
+   "cite": "ASVS p.11",
+   "contains": [
+    "completely penetration testable",
+    "black box"
+   ],
+   "claim": "L1 fully pentestable; black box discouraged"
+  },
+  {
+   "cite": "ASVS p.11",
+   "contains": [
+    "more than half of the asvs"
+   ],
+   "claim": "tools do not complete half of the ASVS"
+  },
+  {
+   "cite": "ASVS p.12",
+   "contains": [
+    "secure coding checklist",
+    "level 1 - first steps"
+   ],
+   "claim": "ASVS as a checklist blueprint; L1"
+  },
+  {
+   "cite": "ASVS p.12",
+   "contains": [
+    "defense in depth",
+    "level 3 - high value"
+   ],
+   "claim": "L3 is defense in depth"
+  },
+  {
+   "cite": "ASVS p.13",
+   "contains": [
+    "v4.0.3-1.11.3",
+    "latest application security verification standard"
+   ],
+   "claim": "versioned reference format"
+  },
+  {
+   "cite": "ASVS p.14",
+   "contains": [
+    "does not currently certify",
+    "trust marks"
+   ],
+   "claim": "OWASP does not certify"
+  },
+  {
+   "cite": "ASVS p.14",
+   "contains": [
+    "reason for non-applicability"
+   ],
+   "claim": "N/A must be justified"
+  },
+  {
+   "cite": "ASVS p.14",
+   "contains": [
+    "passed and failed tests"
+   ],
+   "claim": "report with passed and failed items"
+  },
+  {
+   "cite": "ASVS p.15",
+   "contains": [
+    "hybrid reviews",
+    "hybrid penetration tests"
+   ],
+   "claim": "hybrid reviews at L2/L3"
+  },
+  {
+   "cite": "ASVS p.15",
+   "contains": [
+    "traceability is maintained"
+   ],
+   "claim": "forks with traceability"
+  },
+  {
+   "cite": "ASVS p.15",
+   "contains": [
+    "raise specific tickets/tasks in the backlog"
+   ],
+   "claim": "ASVS in the agile backlog"
+  },
+  {
+   "cite": "ASVS p.16",
+   "contains": [
+    "secure software contract annex"
+   ],
+   "claim": "procurement with ASVS level X"
+  },
+  {
+   "cite": "ASVS p.17",
+   "contains": [
+    "lost art",
+    "shift left"
+   ],
+   "claim": "V1 objective"
+  },
+  {
+   "cite": "ASVS p.17",
+   "contains": [
+    "threat modeling for every design change"
+   ],
+   "claim": "V1.1.2"
+  },
+  {
+   "cite": "ASVS p.18",
+   "contains": [
+    "call center",
+    "same strength"
+   ],
+   "claim": "V1.2 authentication paths with the same strength"
+  },
+  {
+   "cite": "ASVS p.18",
+   "contains": [
+    "single and well-vetted access control mechanism"
+   ],
+   "claim": "V1.4.4"
+  },
+  {
+   "cite": "ASVS p.19",
+   "contains": [
+    "trusted service layer",
+    "untrusted client"
+   ],
+   "claim": "V1.5 definitions"
+  },
+  {
+   "cite": "ASVS p.19",
+   "contains": [
+    "legally negligent",
+    "key management standard such as nist sp 800-57"
+   ],
+   "claim": "V1.6"
+  },
+  {
+   "cite": "ASVS p.20",
+   "contains": [
+    "thread safe",
+    "time-of-check and time-of-use"
+   ],
+   "claim": "V1.11.3"
+  },
+  {
+   "cite": "ASVS p.21",
+   "contains": [
+    "octet stream downloads",
+    "segregation of components of differing trust levels"
+   ],
+   "claim": "V1.12.2 and V1.14.1"
+  },
+  {
+   "cite": "ASVS p.22",
+   "contains": [
+    "pre-breached",
+    "memorized secret"
+   ],
+   "claim": "V2 NIST"
+  },
+  {
+   "cite": "ASVS p.22",
+   "contains": [
+    "aal3"
+   ],
+   "claim": "AAL choice"
+  },
+  {
+   "cite": "ASVS p.23",
+   "contains": [
+    "at least 12 characters",
+    "64 characters",
+    "more than 128 characters"
+   ],
+   "claim": "V2.1.1/V2.1.2"
+  },
+  {
+   "cite": "ASVS p.24",
+   "contains": [
+    "breached passwords",
+    "no periodic credential rotation",
+    "password composition rules"
+   ],
+   "claim": "V2.1.7/9/10"
+  },
+  {
+   "cite": "ASVS p.25",
+   "contains": [
+    "100 failed attempts per hour"
+   ],
+   "claim": "V2.2.1"
+  },
+  {
+   "cite": "ASVS p.25",
+   "contains": [
+    "push notifications",
+    "intent to authenticate"
+   ],
+   "claim": "V2.2.3 and V2.2.7"
+  },
+  {
+   "cite": "ASVS p.26",
+   "contains": [
+    "not marked as l1",
+    "100,000 iterations",
+    "minimum of 10"
+   ],
+   "claim": "V2.4 has no L1; PBKDF2/bcrypt"
+  },
+  {
+   "cite": "ASVS p.27",
+   "contains": [
+    "secret salt",
+    "secret questions"
+   ],
+   "claim": "V2.4.5 and V2.5.2"
+  },
+  {
+   "cite": "ASVS p.28",
+   "contains": [
+    "10 minutes",
+    "e-mail and voip are not permitted"
+   ],
+   "claim": "V2.7"
+  },
+  {
+   "cite": "ASVS p.29",
+   "contains": [
+    "biometric authenticators",
+    "single-factor"
+   ],
+   "claim": "V2.8"
+  },
+  {
+   "cite": "ASVS p.30",
+   "contains": [
+    "not penetration testable",
+    "any l1 requirements",
+    "clear text storage of secrets"
+   ],
+   "claim": "V2.10"
+  },
+  {
+   "cite": "ASVS p.30",
+   "contains": [
+    "strict subset of nist 800-63"
+   ],
+   "claim": "ASVS x NIST"
+  },
+  {
+   "cite": "ASVS p.32",
+   "contains": [
+    "64 bits of entropy",
+    "new session token on user authentication"
+   ],
+   "claim": "V3.2"
+  },
+  {
+   "cite": "ASVS p.33",
+   "contains": [
+    "httponly",
+    "samesite",
+    "__host-"
+   ],
+   "claim": "V3.4"
+  },
+  {
+   "cite": "ASVS p.33",
+   "contains": [
+    "30 days",
+    "15 minutes of inactivity"
+   ],
+   "claim": "V3.3.2 table"
+  },
+  {
+   "cite": "ASVS p.34",
+   "contains": [
+    "api keys are known to be weak"
+   ],
+   "claim": "V3.5"
+  },
+  {
+   "cite": "ASVS p.35",
+   "contains": [
+    "half-open",
+    "last authenticator wins"
+   ],
+   "claim": "V3.7"
+  },
+  {
+   "cite": "ASVS p.36",
+   "contains": [
+    "trusted service layer",
+    "insecure direct object reference",
+    "anti-csrf"
+   ],
+   "claim": "V4.1/V4.2"
+  },
+  {
+   "cite": "ASVS p.37",
+   "contains": [
+    "multi-factor",
+    "directory browsing"
+   ],
+   "claim": "V4.3"
+  },
+  {
+   "cite": "ASVS p.38",
+   "contains": [
+    "more than 90% of all injection attacks",
+    "positive allow lists"
+   ],
+   "claim": "V5.1 intro"
+  },
+  {
+   "cite": "ASVS p.39",
+   "contains": [
+    "parameterized queries",
+    "ssrf",
+    "template injection"
+   ],
+   "claim": "V5.2/V5.3"
+  },
+  {
+   "cite": "ASVS p.40",
+   "contains": [
+    "order by",
+    "svg",
+    "text/plain"
+   ],
+   "claim": "V5.3 notes"
+  },
+  {
+   "cite": "ASVS p.40",
+   "contains": [
+    "format strings",
+    "integer overflows"
+   ],
+   "claim": "V5.4"
+  },
+  {
+   "cite": "ASVS p.41",
+   "contains": [
+    "external entities",
+    "json.parse"
+   ],
+   "claim": "V5.5"
+  },
+  {
+   "cite": "ASVS p.42",
+   "contains": [
+    "padding oracle",
+    "ecb",
+    "md5"
+   ],
+   "claim": "V6.2"
+  },
+  {
+   "cite": "ASVS p.43",
+   "contains": [
+    "guid v4",
+    "key vault"
+   ],
+   "claim": "V6.3/V6.4"
+  },
+  {
+   "cite": "ASVS p.44",
+   "contains": [
+    "session tokens should only be stored in logs in an irreversible, hashed form"
+   ],
+   "claim": "V7.1.1"
+  },
+  {
+   "cite": "ASVS p.45",
+   "contains": [
+    "log injection",
+    "l1 requirement"
+   ],
+   "claim": "V7.3 note"
+  },
+  {
+   "cite": "ASVS p.46",
+   "contains": [
+    "last resort",
+    "swift and go"
+   ],
+   "claim": "V7.4"
+  },
+  {
+   "cite": "ASVS p.47",
+   "contains": [
+    "compromised in some way",
+    "regular backups"
+   ],
+   "claim": "V8"
+  },
+  {
+   "cite": "ASVS p.48",
+   "contains": [
+    "opt-in consent",
+    "query string parameters"
+   ],
+   "claim": "V8.3"
+  },
+  {
+   "cite": "ASVS p.50",
+   "contains": [
+    "tls 1.2 or later"
+   ],
+   "claim": "V9.1 intro"
+  },
+  {
+   "cite": "ASVS p.51",
+   "contains": [
+    "stapling",
+    "hard on the outside"
+   ],
+   "claim": "V9.2"
+  },
+  {
+   "cite": "ASVS p.51",
+   "contains": [
+    "mozilla"
+   ],
+   "claim": "TLS reference note"
+  },
+  {
+   "cite": "ASVS p.52",
+   "contains": [
+    "proof of the negative",
+    "trust, but verify"
+   ],
+   "claim": "V10"
+  },
+  {
+   "cite": "ASVS p.53",
+   "contains": [
+    "subdomain takeover",
+    "subresource integrity"
+   ],
+   "claim": "V10.3"
+  },
+  {
+   "cite": "ASVS p.54",
+   "contains": [
+    "cornucopia",
+    "time of check to time of use"
+   ],
+   "claim": "V11"
+  },
+  {
+   "cite": "ASVS p.56",
+   "contains": [
+    "zip bombs",
+    "outside the web root"
+   ],
+   "claim": "V12"
+  },
+  {
+   "cite": "ASVS p.57",
+   "contains": [
+    "allow list of resources",
+    "antivirus"
+   ],
+   "claim": "V12.4/V12.6"
+  },
+  {
+   "cite": "ASVS p.58",
+   "contains": [
+    "json schema validation",
+    "406"
+   ],
+   "claim": "V13"
+  },
+  {
+   "cite": "ASVS p.59",
+   "contains": [
+    "query allow list",
+    "depth limiting"
+   ],
+   "claim": "V13.4.1"
+  },
+  {
+   "cite": "ASVS p.61",
+   "contains": [
+    "known good",
+    "safe to be on the internet"
+   ],
+   "claim": "V14 objective"
+  },
+  {
+   "cite": "ASVS p.62",
+   "contains": [
+    "software bill of materials",
+    "subresource integrity",
+    "root cause"
+   ],
+   "claim": "V14.2"
+  },
+  {
+   "cite": "ASVS p.63",
+   "contains": [
+    "frame-ancestors",
+    "strict-transport-security",
+    "null"
+   ],
+   "claim": "V14.4/V14.5"
+  },
+  {
+   "cite": "ASVS p.69",
+   "contains": [
+    "debugging interfaces",
+    "iot"
+   ],
+   "claim": "Appendix C"
+  },
+  {
+   "cite": "ASVS p.71",
+   "contains": [
+    "code protection"
+   ],
+   "claim": "C.34"
+  },
+  {
+   "cite": "OCRG p.4",
+   "contains": [
+    "we can't hack ourselves secure",
+    "c#/.net and java"
+   ],
+   "claim": "foreword"
+  },
+  {
+   "cite": "OCRG p.8",
+   "contains": [
+    "maintainability code reviews",
+    "integration code reviews"
+   ],
+   "claim": "types of review"
+  },
+  {
+   "cite": "OCRG p.10",
+   "contains": [
+    "single-most effective technique",
+    "real risk"
+   ],
+   "claim": "5 intro"
+  },
+  {
+   "cite": "OCRG p.10",
+   "contains": [
+    "circa 1000"
+   ],
+   "claim": "CWE ~1000"
+  },
+  {
+   "cite": "OCRG p.11",
+   "contains": [
+    "tools can be used to perform this task but they always need human verification",
+    "baseline"
+   ],
+   "claim": "tools need a human"
+  },
+  {
+   "cite": "OCRG p.11",
+   "contains": [
+    "self-defending"
+   ],
+   "claim": "definition of secure code review"
+  },
+  {
+   "cite": "OCRG p.12",
+   "contains": [
+    "1,250 hours",
+    "level 2 (repeatable)"
+   ],
+   "claim": "5.3/5.4"
+  },
+  {
+   "cite": "OCRG p.13",
+   "contains": [
+    "satellites"
+   ],
+   "claim": "5.5 satellites"
+  },
+  {
+   "cite": "OCRG p.14",
+   "contains": [
+    "defense-in-depth approach"
+   ],
+   "claim": "5.5 defense in depth"
+  },
+  {
+   "cite": "OCRG p.15",
+   "contains": [
+    "360 review"
+   ],
+   "claim": "360 review"
+  },
+  {
+   "cite": "OCRG p.16",
+   "contains": [
+    "white box penetration test",
+    "same class of vulnerability"
+   ],
+   "claim": "pentest white box"
+  },
+  {
+   "cite": "OCRG p.18",
+   "contains": [
+    "source to sink analysis",
+    "log writer"
+   ],
+   "claim": "source-to-sink"
+  },
+  {
+   "cite": "OCRG p.19",
+   "contains": [
+    "6.3.2",
+    "knowledgeable about code review techniques"
+   ],
+   "claim": "PCI 6.3.2"
+  },
+  {
+   "cite": "OCRG p.21",
+   "contains": [
+    "purpose & context",
+    "typed safe languages"
+   ],
+   "claim": "factors"
+  },
+  {
+   "cite": "OCRG p.22",
+   "contains": [
+    "code review reports"
+   ],
+   "claim": "report"
+  },
+  {
+   "cite": "OCRG p.23",
+   "contains": [
+    "threat modeling documents"
+   ],
+   "claim": "report (cont.)"
+  },
+  {
+   "cite": "OCRG p.23",
+   "contains": [
+    "pre-commit",
+    "post-commit"
+   ],
+   "claim": "when to review"
+  },
+  {
+   "cite": "OCRG p.24",
+   "contains": [
+    "security sprint"
+   ],
+   "claim": "security sprint"
+  },
+  {
+   "cite": "OCRG p.25",
+   "contains": [
+    "delphi",
+    "quantitative"
+   ],
+   "claim": "table 1"
+  },
+  {
+   "cite": "OCRG p.26",
+   "contains": [
+    "ease of exposure",
+    "value of loss",
+    "regulatory controls"
+   ],
+   "claim": "table 2"
+  },
+  {
+   "cite": "OCRG p.26",
+   "contains": [
+    "transfer the risk"
+   ],
+   "claim": "do not transfer risk"
+  },
+  {
+   "cite": "OCRG p.27",
+   "contains": [
+    "advisor and not a policeman",
+    "holy grail"
+   ],
+   "claim": "preparation"
+  },
+  {
+   "cite": "OCRG p.29",
+   "contains": [
+    "design questions during secure code review",
+    "failure cases"
+   ],
+   "claim": "table 4"
+  },
+  {
+   "cite": "OCRG p.31",
+   "contains": [
+    "false positives",
+    "source to sink analysis"
+   ],
+   "claim": "tables 5/6"
+  },
+  {
+   "cite": "OCRG p.31",
+   "contains": [
+    "business logic flaws",
+    "design flaws"
+   ],
+   "claim": "table 6"
+  },
+  {
+   "cite": "OCRG p.32",
+   "contains": [
+    "not an approach to reviewing code",
+    "high risk threats"
+   ],
+   "claim": "threat modeling in review"
+  },
+  {
+   "cite": "OCRG p.33",
+   "contains": [
+    "command line parameters",
+    "environment variables",
+    "flat files"
+   ],
+   "claim": "inputs"
+  },
+  {
+   "cite": "OCRG p.34",
+   "contains": [
+    "identify attack surface"
+   ],
+   "claim": "figure 4"
+  },
+  {
+   "cite": "OCRG p.35",
+   "contains": [
+    "transaction analysis",
+    "data flow diagrams"
+   ],
+   "claim": "decomposition"
+  },
+  {
+   "cite": "OCRG p.36",
+   "contains": [
+    "stride",
+    "application security frame"
+   ],
+   "claim": "categorization"
+  },
+  {
+   "cite": "OCRG p.37",
+   "contains": [
+    "repudiation",
+    "elevation of privilege"
+   ],
+   "claim": "table 8"
+  },
+  {
+   "cite": "OCRG p.38",
+   "contains": [
+    "reproducibility",
+    "discoverability"
+   ],
+   "claim": "DREAD"
+  },
+  {
+   "cite": "OCRG p.39",
+   "contains": [
+    "likelihood x impact",
+    "high, medium and low"
+   ],
+   "claim": "risk is qualitative"
+  },
+  {
+   "cite": "OCRG p.40",
+   "contains": [
+    "risk density",
+    "defect density"
+   ],
+   "claim": "metrics"
+  },
+  {
+   "cite": "OCRG p.42",
+   "contains": [
+    "cc = number of decisions +1",
+    "bad fix probability"
+   ],
+   "claim": "CC"
+  },
+  {
+   "cite": "OCRG p.43",
+   "contains": [
+    "crawling code",
+    "grep"
+   ],
+   "claim": "crawling"
+  },
+  {
+   "cite": "OCRG p.45",
+   "contains": [
+    "sql parser is not able to distinguish between code and data"
+   ],
+   "claim": "A1"
+  },
+  {
+   "cite": "OCRG p.46",
+   "contains": [
+    "use stored procedures"
+   ],
+   "claim": "A1 stored procedures"
+  },
+  {
+   "cite": "OCRG p.46",
+   "contains": [
+    "blind sql injection",
+    "parameterized sql queries"
+   ],
+   "claim": "blind and parameterized"
+  },
+  {
+   "cite": "OCRG p.47",
+   "contains": [
+    "entire table would be returned"
+   ],
+   "claim": "entire table"
+  },
+  {
+   "cite": "OCRG p.49",
+   "contains": [
+    "mysql_real_escape_string",
+    "wrap the query string with quotes"
+   ],
+   "claim": "PHP"
+  },
+  {
+   "cite": "OCRG p.50",
+   "contains": [
+    "sqlparametercollection",
+    "type checking and length validation"
+   ],
+   "claim": ".NET"
+  },
+  {
+   "cite": "OCRG p.51",
+   "contains": [
+    "never build sql statements directly from user input",
+    "orm solutions"
+   ],
+   "claim": "what to review"
+  },
+  {
+   "cite": "OCRG p.52",
+   "contains": [
+    "jason_text",
+    "red flag for the code reviewer",
+    "createtextnode"
+   ],
+   "claim": "JSON eval"
+  },
+  {
+   "cite": "OCRG p.53",
+   "contains": [
+    "criteria api",
+    "nhibernate",
+    "x-webkit-csp"
+   ],
+   "claim": "ORM/CSP"
+  },
+  {
+   "cite": "OCRG p.54",
+   "contains": [
+    "x-xss-protection",
+    "x-frame-options",
+    "nosniff"
+   ],
+   "claim": "table 11"
+  },
+  {
+   "cite": "OCRG p.55",
+   "contains": [
+    "exact match",
+    "known good",
+    "canonicalization"
+   ],
+   "claim": "validation"
+  },
+  {
+   "cite": "OCRG p.56",
+   "contains": [
+    "you can never use request validation",
+    "getcanonicalpath"
+   ],
+   "claim": "request validation"
+  },
+  {
+   "cite": "OCRG p.57",
+   "contains": [
+    "do not declare a native method public",
+    "integer overflow"
+   ],
+   "claim": "native method"
+  },
+  {
+   "cite": "OCRG p.58",
+   "contains": [
+    "golden rule",
+    "backdoors in the data validation model"
+   ],
+   "claim": "validation checklist"
+  },
+  {
+   "cite": "OCRG p.60",
+   "contains": [
+    "login page is only available over tls",
+    "case insensitive"
+   ],
+   "claim": "A2"
+  },
+  {
+   "cite": "OCRG p.61",
+   "contains": [
+    "do not log invalid passwords",
+    "shorter than 10 characters",
+    "last 5"
+   ],
+   "claim": "A2"
+  },
+  {
+   "cite": "OCRG p.62",
+   "contains": [
+    "ssl client authentication",
+    "multi-factor"
+   ],
+   "claim": "MFA"
+  },
+  {
+   "cite": "OCRG p.63",
+   "contains": [
+    "captcha",
+    "hmac"
+   ],
+   "claim": "CAPTCHA"
+  },
+  {
+   "cite": "OCRG p.65",
+   "contains": [
+    "zitmo",
+    "rate limit"
+   ],
+   "claim": "OOB"
+  },
+  {
+   "cite": "OCRG p.66",
+   "contains": [
+    "128 bits",
+    "64 bits of entropy"
+   ],
+   "claim": "session ID"
+  },
+  {
+   "cite": "OCRG p.68",
+   "contains": [
+    "session.abandon",
+    "session fixation"
+   ],
+   "claim": "logout"
+  },
+  {
+   "cite": "OCRG p.69",
+   "contains": [
+    "session elevation",
+    "roll"
+   ],
+   "claim": "session attacks"
+  },
+  {
+   "cite": "OCRG p.72",
+   "contains": [
+    "node.textcontent",
+    "document.createtextnode"
+   ],
+   "claim": "DOM XSS"
+  },
+  {
+   "cite": "OCRG p.73",
+   "contains": [
+    "validaterequest",
+    "anti-xss"
+   ],
+   "claim": ".NET XSS"
+  },
+  {
+   "cite": "OCRG p.76",
+   "contains": [
+    "even if you escape untrusted data you are xssed here",
+    "eval()"
+   ],
+   "claim": "JS XSS"
+  },
+  {
+   "cite": "OCRG p.77",
+   "contains": [
+    "layered",
+    "javascript encode"
+   ],
+   "claim": "nested contexts"
+  },
+  {
+   "cite": "OCRG p.79",
+   "contains": [
+    "insecure direct object reference",
+    "unverified data"
+   ],
+   "claim": "IDOR"
+  },
+  {
+   "cite": "OCRG p.80",
+   "contains": [
+    "1.5 million records",
+    "data binding"
+   ],
+   "claim": "Yahoo and binding"
+  },
+  {
+   "cite": "OCRG p.81",
+   "contains": [
+    "map out all locations",
+    "mass assignments"
+   ],
+   "claim": "IDOR reviewer"
+  },
+  {
+   "cite": "OCRG p.82",
+   "contains": [
+    "updatemodel",
+    "bind"
+   ],
+   "claim": "over-posting"
+  },
+  {
+   "cite": "OCRG p.84",
+   "contains": [
+    "validator",
+    "struts-config.xml"
+   ],
+   "claim": "Struts"
+  },
+  {
+   "cite": "OCRG p.89",
+   "contains": [
+    "@rolesallowed",
+    "@denyall"
+   ],
+   "claim": "JEE annotations"
+  },
+  {
+   "cite": "OCRG p.90",
+   "contains": [
+    "maxpostsize",
+    "maxformcontentsize"
+   ],
+   "claim": "Tomcat/Jetty"
+  },
+  {
+   "cite": "OCRG p.102",
+   "contains": [
+    "double encoding",
+    "%252e%252e%252f"
+   ],
+   "claim": "IIS double encoding"
+  },
+  {
+   "cite": "OCRG p.105",
+   "contains": [
+    "aspnet_regiis",
+    "connectionstrings"
+   ],
+   "claim": "web.config crypto"
+  },
+  {
+   "cite": "OCRG p.108",
+   "contains": [
+    "strong name",
+    "re-signing it with the malicious user's key"
+   ],
+   "claim": "strong names"
+  },
+  {
+   "cite": "OCRG p.114",
+   "contains": [
+    "<credentials>",
+    "slidingexpiration"
+   ],
+   "claim": "Forms authentication"
+  },
+  {
+   "cite": "OCRG p.116",
+   "contains": [
+    "debugcompilationmustbedisabled",
+    "traceshouldbedisabled"
+   ],
+   "claim": "FxCop"
+  },
+  {
+   "cite": "OCRG p.119",
+   "contains": [
+    "non-standard cryptographic algorithms"
+   ],
+   "claim": "crypto 12.1"
+  },
+  {
+   "cite": "OCRG p.120",
+   "contains": [
+    "rainbow table"
+   ],
+   "claim": "table 18"
+  },
+  {
+   "cite": "OCRG p.121",
+   "contains": [
+    "fips 140-2"
+   ],
+   "claim": "FIPS"
+  },
+  {
+   "cite": "OCRG p.121",
+   "contains": [
+    "http-only"
+   ],
+   "claim": "TLS"
+  },
+  {
+   "cite": "OCRG p.122",
+   "contains": [
+    "http strict transport security"
+   ],
+   "claim": "TLS HSTS"
+  },
+  {
+   "cite": "OCRG p.122",
+   "contains": [
+    "2048",
+    "sha-256",
+    "subject alternate names"
+   ],
+   "claim": "TLS cert"
+  },
+  {
+   "cite": "OCRG p.123",
+   "contains": [
+    "rngcryptoserviceprovider",
+    "key length is at least 128 bits"
+   ],
+   "claim": "crypto review"
+  },
+  {
+   "cite": "OCRG p.124",
+   "contains": [
+    "des and sha-0",
+    "sha-1 and md5 should be avoided"
+   ],
+   "claim": "insecure algorithms"
+  },
+  {
+   "cite": "OCRG p.126",
+   "contains": [
+    "cipher.getinstance(\"aes\")"
+   ],
+   "claim": "AES without mode"
+  },
+  {
+   "cite": "OCRG p.128",
+   "contains": [
+    "never accept in a code review an algorithm created by the programmer"
+   ],
+   "claim": "home-grown hash"
+  },
+  {
+   "cite": "OCRG p.129",
+   "contains": [
+    "2738 years",
+    "not using a salt value"
+   ],
+   "claim": "salt"
+  },
+  {
+   "cite": "OCRG p.130",
+   "contains": [
+    "128 bits",
+    "red flag if md5"
+   ],
+   "claim": "salt and MD5"
+  },
+  {
+   "cite": "OCRG p.132",
+   "contains": [
+    "relative attack surface quotient",
+    "backups"
+   ],
+   "claim": "surface"
+  },
+  {
+   "cite": "OCRG p.133",
+   "contains": [
+    "file uploads",
+    "maximum file size",
+    "virus checking"
+   ],
+   "claim": "uploads"
+  },
+  {
+   "cite": "OCRG p.135",
+   "contains": [
+    "rbac",
+    "access control lists"
+   ],
+   "claim": "A7"
+  },
+  {
+   "cite": "OCRG p.137",
+   "contains": [
+    "registerglobalfilters",
+    "authorizeattribute"
+   ],
+   "claim": "default deny MVC"
+  },
+  {
+   "cite": "OCRG p.138",
+   "contains": [
+    "complete mediation",
+    "maker/checker",
+    "403"
+   ],
+   "claim": "A7 checklist"
+  },
+  {
+   "cite": "OCRG p.141",
+   "contains": [
+    "samy myspace worm",
+    "one-click purchase"
+   ],
+   "claim": "CSRF"
+  },
+  {
+   "cite": "OCRG p.142",
+   "contains": [
+    "secret cookie",
+    "session id is not enough"
+   ],
+   "claim": "CSRF does not work"
+  },
+  {
+   "cite": "OCRG p.143",
+   "contains": [
+    "synchronizer token pattern",
+    "multi-step transactions"
+   ],
+   "claim": "CSRF token"
+  },
+  {
+   "cite": "OCRG p.144",
+   "contains": [
+    "referer",
+    "per-request tokens"
+   ],
+   "claim": "token in the URL"
+  },
+  {
+   "cite": "OCRG p.145",
+   "contains": [
+    "viewstateuserkey",
+    "double submit cookies"
+   ],
+   "claim": "ViewState and double submit"
+  },
+  {
+   "cite": "OCRG p.146",
+   "contains": [
+    "challenge-response",
+    "samy"
+   ],
+   "claim": "XSS defeats CSRF"
+  },
+  {
+   "cite": "OCRG p.148",
+   "contains": [
+    "heartbleed",
+    "controlling the ingredients"
+   ],
+   "claim": "A9"
+  },
+  {
+   "cite": "OCRG p.149",
+   "contains": [
+    "sledgehammer to crack a nut",
+    "owasp dependency check"
+   ],
+   "claim": "A9"
+  },
+  {
+   "cite": "OCRG p.151",
+   "contains": [
+    "server.transfer",
+    "phishing"
+   ],
+   "claim": "A10"
+  },
+  {
+   "cite": "OCRG p.152",
+   "contains": [
+    "sendredirect(request.getparameter",
+    "whitelist"
+   ],
+   "claim": "A10 review"
+  },
+  {
+   "cite": "OCRG p.153",
+   "contains": [
+    "return",
+    "jsp:forward"
+   ],
+   "claim": "J2EE sendRedirect"
+  },
+  {
+   "cite": "OCRG p.155",
+   "contains": [
+    "postmessage",
+    "org.attacker.com"
+   ],
+   "claim": "Web Messaging"
+  },
+  {
+   "cite": "OCRG p.156",
+   "contains": [
+    "access-control-allow-origin: *",
+    "pre-flight"
+   ],
+   "claim": "CORS"
+  },
+  {
+   "cite": "OCRG p.157",
+   "contains": [
+    "wss://",
+    "rfc6455"
+   ],
+   "claim": "WebSockets"
+  },
+  {
+   "cite": "OCRG p.158",
+   "contains": [
+    "eventsource",
+    "event.origin"
+   ],
+   "claim": "SSE"
+  },
+  {
+   "cite": "OCRG p.159",
+   "contains": [
+    "scheme, hostname and port"
+   ],
+   "claim": "SOP"
+  },
+  {
+   "cite": "OCRG p.160",
+   "contains": [
+    "idn homograph",
+    "mime type"
+   ],
+   "claim": "SOP review"
+  },
+  {
+   "cite": "OCRG p.161",
+   "contains": [
+    "non-repudiation",
+    "retention"
+   ],
+   "claim": "logging"
+  },
+  {
+   "cite": "OCRG p.162",
+   "contains": [
+    "log injection",
+    "carriage return",
+    "separate partition"
+   ],
+   "claim": "what to log"
+  },
+  {
+   "cite": "OCRG p.163",
+   "contains": [
+    "should not be logged",
+    "nist sp 800-92"
+   ],
+   "claim": "what not to log"
+  },
+  {
+   "cite": "OCRG p.164",
+   "contains": [
+    "failing securely"
+   ],
+   "claim": "errors"
+  },
+  {
+   "cite": "OCRG p.165",
+   "contains": [
+    "catch all clauses"
+   ],
+   "claim": "catch-all errors"
+  },
+  {
+   "cite": "OCRG p.165",
+   "contains": [
+    "generic error page",
+    "struts-config.xml"
+   ],
+   "claim": "generic page"
+  },
+  {
+   "cite": "OCRG p.167",
+   "contains": [
+    "printstacktrace",
+    "setout"
+   ],
+   "claim": "Java errors"
+  },
+  {
+   "cite": "OCRG p.168",
+   "contains": [
+    "on error resume next",
+    "page_error"
+   ],
+   "claim": "ASP/.NET errors"
+  },
+  {
+   "cite": "OCRG p.169",
+   "contains": [
+    "server.getlasterror",
+    "application_error"
+   ],
+   "claim": "bad example Page_Error"
+  },
+  {
+   "cite": "OCRG p.170",
+   "contains": [
+    "remoteonly"
+   ],
+   "claim": "customErrors"
+  },
+  {
+   "cite": "OCRG p.173",
+   "contains": [
+    "catch a specific type"
+   ],
+   "claim": "specific catch"
+  },
+  {
+   "cite": "OCRG p.174",
+   "contains": [
+    "more specific exceptions first"
+   ],
+   "claim": "catch order"
+  },
+  {
+   "cite": "OCRG p.174",
+   "contains": [
+    "finally",
+    "try-with-resources",
+    "pool exhaustion"
+   ],
+   "claim": "finally and RAII"
+  },
+  {
+   "cite": "OCRG p.176",
+   "contains": [
+    "risk scoring",
+    "drop down list"
+   ],
+   "claim": "alerts"
+  },
+  {
+   "cite": "OCRG p.177",
+   "contains": [
+    "23%"
+   ],
+   "claim": "3% x 23%"
+  },
+  {
+   "cite": "OCRG p.178",
+   "contains": [
+    "honey accounts",
+    "siem"
+   ],
+   "claim": "honey"
+  },
+  {
+   "cite": "OCRG p.179",
+   "contains": [
+    "active defense"
+   ],
+   "claim": "active defense"
+  },
+  {
+   "cite": "OCRG p.180",
+   "contains": [
+    "appsensor",
+    "capec"
+   ],
+   "claim": "AppSensor/CAPEC"
+  },
+  {
+   "cite": "OCRG p.180",
+   "contains": [
+    "event store",
+    "record event for attack detection"
+   ],
+   "claim": "event store"
+  },
+  {
+   "cite": "OCRG p.181",
+   "contains": [
+    "account lock out",
+    "function disabled"
+   ],
+   "claim": "responses"
+  },
+  {
+   "cite": "OCRG p.182",
+   "contains": [
+    "x = x + 10",
+    "system.threading.interlocked"
+   ],
+   "claim": "race"
+  },
+  {
+   "cite": "OCRG p.183",
+   "contains": [
+    "static members",
+    "finally{}"
+   ],
+   "claim": "statics"
+  },
+  {
+   "cite": "OCRG p.184",
+   "contains": [
+    "not vulnerable to buffer overflows",
+    "off by one"
+   ],
+   "claim": "buffer"
+  },
+  {
+   "cite": "OCRG p.185",
+   "contains": [
+    "strncpy",
+    "fgets",
+    "_s",
+    "smallbuffer[10] = 0"
+   ],
+   "claim": "C functions and Sample 24.2"
+  },
+  {
+   "cite": "OCRG p.186",
+   "contains": [
+    "stack canaries",
+    "format function"
+   ],
+   "claim": "C++11/format"
+  },
+  {
+   "cite": "OCRG p.187",
+   "contains": [
+    "%n",
+    "table 24"
+   ],
+   "claim": "format and integer"
+  },
+  {
+   "cite": "OCRG p.189",
+   "contains": [
+    "taint analysis"
+   ],
+   "claim": "client-side JS"
+  },
+  {
+   "cite": "OCRG p.190",
+   "contains": [
+    "turned off"
+   ],
+   "claim": "JS disabled"
+  },
+  {
+   "cite": "OCRG p.190",
+   "contains": [
+    "document.referrer"
+   ],
+   "claim": "sources"
+  },
+  {
+   "cite": "OCRG p.191",
+   "contains": [
+    "innerhtml"
+   ],
+   "claim": "sinks"
+  },
+  {
+   "cite": "OCRG p.191",
+   "contains": [
+    "new function",
+    "privileges of the executer"
+   ],
+   "claim": "eval"
+  },
+  {
+   "cite": "OCRG p.193",
+   "contains": [
+    "social skills",
+    "domain of the code"
+   ],
+   "claim": "do's and don'ts"
+  },
+  {
+   "cite": "OCRG p.195",
+   "contains": [
+    "continuous integration"
+   ],
+   "claim": "CI"
+  },
+  {
+   "cite": "OCRG p.196",
+   "contains": [
+    "red flag for the code reviewer",
+    "source and sinks",
+    "test driven development"
+   ],
+   "claim": "agile red flags"
+  },
+  {
+   "cite": "OCRG p.197",
+   "contains": [
+    "password complexity check",
+    "unused configurations"
+   ],
+   "claim": "checklist A"
+  },
+  {
+   "cite": "OCRG p.198",
+   "contains": [
+    "password expiration",
+    "custom schemes for hashing"
+   ],
+   "claim": "checklist A (cont.)"
+  },
+  {
+   "cite": "OCRG p.199",
+   "contains": [
+    "keys are not held in code",
+    "array bounds are checked"
+   ],
+   "claim": "checklist A (cont.)"
+  },
+  {
+   "cite": "OCRG p.200",
+   "contains": [
+    "wsdl",
+    "data is validated on server side"
+   ],
+   "claim": "checklist A (end)"
+  },
+  {
+   "cite": "OCRG p.201",
+   "contains": [
+    "document owner",
+    "reviewer"
+   ],
+   "claim": "example threat model"
+  },
+  {
+   "cite": "OCRG p.205",
+   "contains": [
+    "(8+10+7+10+10) / 5 = 9"
+   ],
+   "claim": "example DREAD"
+  },
+  {
+   "cite": "OCRG p.206",
+   "contains": [
+    "findstr",
+    "request.querystring"
+   ],
+   "claim": "crawling .NET"
+  },
+  {
+   "cite": "OCRG p.207",
+   "contains": [
+    "exec sp_",
+    "sqlparameter"
+   ],
+   "claim": "crawling SQL"
+  },
+  {
+   "cite": "OCRG p.208",
+   "contains": [
+    "application_onauthenticaterequest",
+    "webcontrols.textbox"
+   ],
+   "claim": "crawling config"
+  },
+  {
+   "cite": "OCRG p.210",
+   "contains": [
+    "system.random",
+    "rc2",
+    "securestring"
+   ],
+   "claim": "crawling crypto"
+  },
+  {
+   "cite": "OCRG p.211",
+   "contains": [
+    "objectinputstream",
+    "getresourceasstream"
+   ],
+   "claim": "crawling Java"
+  },
+  {
+   "cite": "OCRG p.212",
+   "contains": [
+    "response splitting",
+    "getcookies"
+   ],
+   "claim": "crawling servlets"
+  },
+  {
+   "cite": "OCRG p.213",
+   "contains": [
+    "trustmanagerfactory",
+    "preparestatement"
+   ],
+   "claim": "crawling SSL/SQL"
+  },
+  {
+   "cite": "OCRG p.214",
+   "contains": [
+    "runtime.exec"
+   ],
+   "claim": "crawling OS"
+  },
+  {
+   "cite": "OCRG p.216",
+   "contains": [
+    "xmlhttp",
+    "settimeout"
+   ],
+   "claim": "crawling JS"
+  },
+  {
+   "cite": "OCRG p.217",
+   "contains": [
+    "popen",
+    "ap_read_request"
+   ],
+   "claim": "crawling C++"
+  },
+  {
+   "cite": "OCRG p.220",
+   "contains": [
+    "share alike"
+   ],
+   "claim": "license"
+  },
+  {
+   "cite": "OCRG p.10",
+   "contains": [
+    "secure code review"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.13",
+   "contains": [
+    "we can't hack ourselves secure"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.18",
+   "contains": [
+    "pci"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.21",
+   "contains": [
+    "factors to consider when developing a code review process"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.23",
+   "contains": [
+    "when to code review"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.25",
+   "contains": [
+    "a risk based approach to code review"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.27",
+   "contains": [
+    "code review preparation"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.30",
+   "contains": [
+    "static code analysis"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.32",
+   "contains": [
+    "application threat modeling"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.40",
+   "contains": [
+    "metrics and code review"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.43",
+   "contains": [
+    "crawling code"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.45",
+   "contains": [
+    "a1 - injection"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.60",
+   "contains": [
+    "what to review"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.63",
+   "contains": [
+    "captcha"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.64",
+   "contains": [
+    "out-of-band"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.66",
+   "contains": [
+    "session management"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.72",
+   "contains": [
+    "cross-site scripting"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.79",
+   "contains": [
+    "insecure direct object reference"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.84",
+   "contains": [
+    "security misconfiguration"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.119",
+   "contains": [
+    "sensitive data exposure"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.135",
+   "contains": [
+    "missing function level access control"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.141",
+   "contains": [
+    "cross-site request forgery"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.148",
+   "contains": [
+    "components with known vulnerabilities"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.151",
+   "contains": [
+    "unvalidated redirects and forwards"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.155",
+   "contains": [
+    "html 5"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.159",
+   "contains": [
+    "same origin policy"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.161",
+   "contains": [
+    "reviewing logging code"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.164",
+   "contains": [
+    "error handling"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.176",
+   "contains": [
+    "reviewing security alerts"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.179",
+   "contains": [
+    "review for active defense"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.182",
+   "contains": [
+    "race conditions"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.184",
+   "contains": [
+    "buffer overruns"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.189",
+   "contains": [
+    "client side javascript"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.197",
+   "contains": [
+    "code review checklist"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.201",
+   "contains": [
+    "threat modeling example"
+   ],
+   "claim": "OCRG index: first page of the topic"
+  },
+  {
+   "cite": "OCRG p.40",
+   "contains": [
+    "4 high risk defects per 1000"
+   ],
+   "claim": "risk density example"
+  },
+  {
+   "cite": "OCRG p.42",
+   "contains": [
+    "0-10: stable code",
+    "11-15: medium risk",
+    "16-20: high risk"
+   ],
+   "claim": "CC ranges"
+  },
+  {
+   "cite": "OCRG p.42",
+   "contains": [
+    "5%",
+    "20%",
+    "40%",
+    "60%"
+   ],
+   "claim": "bad fix probability"
+  },
+  {
+   "cite": "OCRG p.43",
+   "contains": [
+    "250 lines per hour"
+   ],
+   "claim": "inspection rate"
+  },
+  {
+   "cite": "OCRG p.61",
+   "contains": [
+    "5 times",
+    "10 seconds"
+   ],
+   "claim": "lockout"
+  },
+  {
+   "cite": "OCRG p.67",
+   "contains": [
+    "sha2 (256 bits)"
+   ],
+   "claim": "session ID SHA2"
+  },
+  {
+   "cite": "OCRG p.68",
+   "contains": [
+    "30 minutes",
+    "15 minutes"
+   ],
+   "claim": "ASPX timeout"
+  },
+  {
+   "cite": "OCRG p.129",
+   "contains": [
+    "100,000 users",
+    "1,000,000 days"
+   ],
+   "claim": "salt example"
+  },
+  {
+   "cite": "OCRG p.130",
+   "contains": [
+    "256-bit salt"
+   ],
+   "claim": "salt 256 bits"
+  },
+  {
+   "cite": "ASVS p.26",
+   "contains": [
+    "32 bits in length"
+   ],
+   "claim": "V2.4.2"
+  },
+  {
+   "cite": "ASVS p.27",
+   "contains": [
+    "112 bits of entropy"
+   ],
+   "claim": "V2.6.2"
+  },
+  {
+   "cite": "ASVS p.28",
+   "contains": [
+    "20 bits of entropy"
+   ],
+   "claim": "V2.7.6"
+  },
+  {
+   "cite": "ASVS p.29",
+   "contains": [
+    "64 bits in length"
+   ],
+   "claim": "V2.9.2"
+  },
+  {
+   "cite": "ASVS p.32",
+   "contains": [
+    "session tokens in url parameters"
+   ],
+   "claim": "V3.1.1"
+  },
+  {
+   "cite": "ASVS p.54",
+   "contains": [
+    "realistic human time"
+   ],
+   "claim": "V11.1.2"
+  },
+  {
+   "cite": "ASVS p.56",
+   "contains": [
+    "compressed files"
+   ],
+   "claim": "V12.1.2"
+  },
+  {
+   "cite": "ASVS p.62",
+   "contains": [
+    "debug modes"
+   ],
+   "claim": "V14.3.2"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "bcrypt",
+    "argon2",
+    "scrypt",
+    "pbkdf2"
+   ],
+   "claim": "the OCRG does not cite password derivation functions"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "jwt",
+    "graphql",
+    "ssrf",
+    "samesite"
+   ],
+   "claim": "the OCRG does not cover JWT, GraphQL, SSRF, SameSite"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "deserialization",
+    "sbom",
+    "subresource integrity",
+    "serverless"
+   ],
+   "claim": "the OCRG does not cover deserialization, SBOM, SRI, serverless"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "tls 1.2",
+    "tls 1.3",
+    "ocsp",
+    "certificate pinning"
+   ],
+   "claim": "the OCRG does not have TLS 1.2/1.3 versions or OCSP"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "owasp top 10 2017",
+    "owasp top 10 2021",
+    "top 10 2021"
+   ],
+   "claim": "the OCRG does not state the Top 10 edition"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "referrer-policy",
+    "http parameter pollution",
+    "template injection",
+    "prototype pollution"
+   ],
+   "claim": "the OCRG does not cover these topics"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "webauthn",
+    "passkey",
+    "fido",
+    "totp"
+   ],
+   "claim": "the OCRG does not cover modern authenticators"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "docker",
+    "kubernetes",
+    "terraform",
+    "microservice"
+   ],
+   "claim": "the OCRG does not cover containers/IaC/microservices"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "cvss",
+    "linddun",
+    "attack tree",
+    "pasta"
+   ],
+   "claim": "the OCRG does not cover CVSS or LINDDUN/attack trees"
+  },
+  {
+   "cite": "OCRG p.1-220",
+   "absent": [
+    "lgpd",
+    "gdpr"
+   ],
+   "claim": "the OCRG does not cover LGPD/GDPR"
+  },
+  {
+   "cite": "OCRG p.55",
+   "absent": [
+    "bcrypt"
+   ],
+   "claim": "p.55 (validation) does not mention password hashing"
+  },
+  {
+   "cite": "OCRG p.130",
+   "absent": [
+    "sha-3",
+    "argon2"
+   ],
+   "claim": "p.130 (hash) does not mention SHA-3 or Argon2"
+  },
+  {
+   "cite": "OCRG p.61",
+   "absent": [
+    "12 characters",
+    "twelve"
+   ],
+   "claim": "the OCRG recommends a minimum of 10, not 12"
+  },
+  {
+   "cite": "OCRG p.121",
+   "absent": [
+    "tls 1.3"
+   ],
+   "claim": "p.121 does not mention TLS 1.3"
+  },
+  {
+   "cite": "ASVS p.1-71",
+   "absent": [
+    "stride",
+    "dread",
+    "owasp top 10 2021",
+    "top 10 2021"
+   ],
+   "claim": "the ASVS does not cite STRIDE/DREAD or Top 10 2021"
+  },
+  {
+   "cite": "ASVS p.1-71",
+   "absent": [
+    "scrypt",
+    "argon2",
+    "webauthn",
+    "passkey"
+   ],
+   "claim": "ASVS 4.0.3 does not cite scrypt/Argon2/WebAuthn/passkeys"
+  },
+  {
+   "cite": "ASVS p.1-71",
+   "absent": [
+    "kubernetes",
+    "docker",
+    "terraform",
+    "cvss"
+   ],
+   "claim": "the ASVS does not cite Kubernetes/Docker/Terraform/CVSS"
+  },
+  {
+   "cite": "ASVS p.1-71",
+   "absent": [
+    "lgpd",
+    "wstg"
+   ],
+   "claim": "the ASVS does not cite LGPD or 'WSTG' (only 'Web Security Testing Guide')"
+  },
+  {
+   "cite": "ASVS p.23",
+   "absent": [
+    "at least 8 characters",
+    "eight characters"
+   ],
+   "claim": "V2.1.1 asks for 12, not 8"
+  },
+  {
+   "cite": "ASVS p.24",
+   "absent": [
+    "90 days",
+    "every 90"
+   ],
+   "claim": "V2.1.10 forbids periodic rotation; there is no 90 days"
+  },
+  {
+   "cite": "ASVS p.26",
+   "absent": [
+    "argon2",
+    "scrypt"
+   ],
+   "claim": "V2.4 cites PBKDF2/bcrypt, not Argon2/scrypt"
+  },
+  {
+   "cite": "ASVS p.50",
+   "absent": [
+    "tls 1.1",
+    "tls 1.0",
+    "sslv3"
+   ],
+   "claim": "V9.1.3 only cites TLS 1.2 and 1.3"
+  },
+  {
+   "cite": "ASVS p.33",
+   "absent": [
+    "5 minutes",
+    "60 minutes"
+   ],
+   "claim": "V3.3.2 has 30 days/12 h/30 min/15 min"
+  },
+  {
+   "cite": "ASVS p.61",
+   "absent": [
+    "jenkins",
+    "github actions",
+    "gitlab"
+   ],
+   "claim": "V14.1 does not cite CI products"
+  }
+ ],
+ "rule_terms": {
+  "SQL-CONCAT": [
+   "never build sql statements directly from user input",
+   "code and data"
+  ],
+  "SQL-PHP-CONCAT": [
+   "select card from users",
+   "sample 7.5"
+  ],
+  "PHP-ESCAPE-FUNCS": [
+   "addslashes",
+   "mysql_real_escape_string"
+  ],
+  "HQL-CONCAT": [
+   "createquery",
+   "createsqlquery"
+  ],
+  "SQL-EXEC": [
+   "execute, exec",
+   "exec sp_"
+  ],
+  "JS-EVAL": [
+   "red flag for the code reviewer",
+   "eval("
+  ],
+  "JS-NEW-FUNCTION": [
+   "new function"
+  ],
+  "JS-HTML-SINK": [
+   "innerhtml",
+   "createtextnode",
+   "document.write"
+  ],
+  "JS-TIMER-STRING": [
+   "setinterval",
+   "you are xssed here"
+  ],
+  "JS-POSTMESSAGE-STAR": [
+   "postmessage",
+   "second argument"
+  ],
+  "JS-ORIGIN-INDEXOF": [
+   "indexof",
+   "org.attacker.com"
+  ],
+  "CORS-WILDCARD": [
+   "access-control-allow-origin: *"
+  ],
+  "CORS-REFLECT-ORIGIN": [
+   "blindly return the 'origin' header"
+  ],
+  "WEBSOCKET-WS": [
+   "ws://",
+   "wss://"
+  ],
+  "REDIRECT-JAVA-PARAM": [
+   "sendredirect(request.getparameter"
+  ],
+  "REDIRECT-DOTNET-VAR": [
+   "response.redirect(url)"
+  ],
+  "REDIRECT-PHP-LOCATION": [
+   "header(\"location: \""
+  ],
+  "REDIRECT-NO-RETURN": [
+   "sendredirect",
+   "return"
+  ],
+  "ERR-PRINTSTACK-OUT": [
+   "printstacktrace(out)"
+  ],
+  "ERR-PRINTSTACK": [
+   "printstacktrace()",
+   "getstacktrace()"
+  ],
+  "ERR-CATCH-ALL": [
+   "catch all clauses",
+   "catch(exception)"
+  ],
+  "ERR-SWALLOW": [
+   "swallows exceptions"
+  ],
+  "ERR-RESPONSE-WRITE-LASTERROR": [
+   "response.write(message)",
+   "server.getlasterror().tostring()"
+  ],
+  "CFG-CUSTOMERRORS-OFF": [
+   "customerrors",
+   "off"
+  ],
+  "CFG-DEBUG-TRACE": [
+   "debugcompilationmustbedisabled",
+   "traceshouldbedisabled"
+  ],
+  "CFG-FORMS-CREDENTIALS": [
+   "passwordformat",
+   "<credentials>"
+  ],
+  "CFG-COOKIE-FLAGS": [
+   "httponlycookies",
+   "requiressl"
+  ],
+  "CFG-VALIDATE-REQUEST-OFF": [
+   "validaterequest",
+   "enableviewstatemac"
+  ],
+  "CFG-SESSION-URL": [
+   "cookieless",
+   "use_trans_sid"
+  ],
+  "CFG-LOGIN-HTTP": [
+   "login page is only available over tls"
+  ],
+  "LOG-PASSWORD": [
+   "do not log invalid passwords",
+   "authentication passwords"
+  ],
+  "CRYPTO-DES": [
+   "des and sha-0",
+   "des/cbc/pkcs5padding"
+  ],
+  "CRYPTO-MD5-SHA1": [
+   "red flag if md5",
+   "md5 and sha-1 should not be used"
+  ],
+  "CRYPTO-RC2-RANDOM": [
+   "rc2",
+   "system.random",
+   "securerandom"
+  ],
+  "SECRET-IN-CODE": [
+   "keys are not held in code",
+   "connectionstrings"
+  ],
+  "AC-ALLOW-ANONYMOUS": [
+   "allowanonymous"
+  ],
+  "BIND-UPDATEMODEL": [
+   "updatemodel"
+  ],
+  "XSS-ECHO-REQUEST": [
+   "http request could possibly make its way into the html output",
+   "servletoutputstream.print"
+  ],
+  "C-UNSAFE-STR": [
+   "strcpy",
+   "gets()",
+   "fgets"
+  ],
+  "C-SCANF": [
+   "scanf"
+  ],
+  "C-FORMAT-STRING": [
+   "format string",
+   "syslog"
+  ],
+  "JNI-PUBLIC-NATIVE": [
+   "do not declare a native method public"
+  ],
+  "THREAD-STATIC-STATE": [
+   "static members",
+   "thread safe"
+  ],
+  "SERIALIZATION-CRAWL": [
+   "objectinputstream",
+   "serializable",
+   "getobjectdata"
+  ],
+  "OS-COMMAND-CRAWL": [
+   "runtime.exec",
+   "popen"
+  ],
+  "HEADER-SPLITTING": [
+   "response splitting",
+   "setheader"
+  ],
+  "JS-DOM-SOURCE": [
+   "document.referrer",
+   "window.location"
+  ],
+  "THREADING-CRAWL": [
+   "system.threading",
+   "synchronized"
+  ],
+  "ASP-ON-ERROR-RESUME": [
+   "on error resume next"
+  ]
+ },
+ "token_exempt": [
+  "evaluate",
+  "L2/L3",
+  "L1/L2/L3",
+  "ASVS p.40; OCRG p.185",
+  "na justificado",
+  "owasp-web-security-testing-expert",
+  "privacy-lgpd-engineering-expert",
+  "mysql_*",
+  "ExecuteQuery",
+  "ExecuteCommand",
+  "& < > \" '",
+  "www.owasp.org.attacker.com",
+  "window.location.href",
+  "header(\"Location: \".$_GET[...])",
+  "302 Location",
+  "<meta refresh>",
+  "forward()",
+  "sprintf",
+  "__Host-",
+  "setTimeout",
+  "<capítulo>.<seção>.<requisito>",
+  "v<versão>-<capítulo>.<seção>.<requisito>",
+  "Content-Disposition: attachment; filename=..."
+ ],
+ "token_exempt_why": "package's own notation, agent/command names, line abbreviations, or spelling different from the book's (e.g. the book writes excutequery/windon.location.href/sprint; text broken by hyphenation in www.owasp.org.attacker.com)"
+}

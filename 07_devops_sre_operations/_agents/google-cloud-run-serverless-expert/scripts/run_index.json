@@ -1,0 +1,907 @@
+{
+  "meta": {
+    "source": "RUN = Wietse Venema, Building Serverless Applications with Google Cloud Run (O'Reilly, 1st edition, Dec/2020; 204 pages in the PDF)",
+    "page_convention": "PDF page = printed page + 28 (chapters 1-10 = PDF 29-188). Back-of-book index = PDF 189-204 (not a source).",
+    "labels": "rules = stated in the book (with page); not_in_book = NOT in the book: may only be said as [inference], [extrapolation] or [DATED]. Every 2020 number/flag/price is [DATED]."
+  },
+  "topics": {
+    "serverless_definicao": {
+      "name": "What serverless is (according to the author)",
+      "citation": "RUN p.30-33",
+      "keywords": [
+        "serverless",
+        "faas",
+        "functions",
+        "definicao",
+        "pay-per-use",
+        "paga",
+        "custo",
+        "modelo de custo",
+        "definition",
+        "pay as you go",
+        "cost",
+        "cost model",
+        "what is serverless"
+      ],
+      "summary": "Serverless = simple DX without managing infrastructure, scale out of the box and pay-per-use; not to be confused with FaaS.",
+      "rules": [
+        "Three ideas: no infrastructure, scale out of the box, pay-per-use (RUN p.30)",
+        "Still up to you: secure code, resources, scaling limits, access policies (RUN p.31)",
+        "Billing with 100 ms granularity + a fee per million requests (RUN p.32) [DATED]",
+        "Can cost more if utilization is already ~100%; 20-40% is common (RUN p.32)",
+        "Cloud Run is serverless and goes beyond FaaS (RUN p.33)"
+      ],
+      "not_in_book": [
+        "current prices, per-instance billing and allocated CPU [DATED]"
+      ]
+    },
+    "preocupacoes_serverless": {
+      "name": "Concerns about serverless",
+      "citation": "RUN p.38-40",
+      "keywords": [
+        "preocupacoes",
+        "riscos",
+        "lock-in",
+        "vendor",
+        "custo imprevisivel",
+        "hiperescala",
+        "hyper-scalability",
+        "separacao compute storage",
+        "concerns",
+        "risks",
+        "unpredictable cost",
+        "hyperscalability",
+        "vendor lock-in",
+        "compute storage separation"
+      ],
+      "summary": "Unpredictable costs, hyper-scalability against downstream systems, vendor dependency and latency from compute/storage separation.",
+      "rules": [
+        "Cost is a quality attribute; limit scale and run load tests (RUN p.39)",
+        "Relational databases and rate-limited APIs suffer from fast scaling (RUN p.39)",
+        "Portability: container + Knative compatibility (RUN p.40)"
+      ],
+      "not_in_book": [
+        "billing budgets and alerts beyond a mention (RUN p.42)"
+      ]
+    },
+    "produtos_gcp_serverless": {
+      "name": "GCP serverless products (Table 1-1) and choosing Run/Functions/App Engine",
+      "citation": "RUN p.35, 57-60",
+      "keywords": [
+        "app engine",
+        "cloud functions",
+        "escolha",
+        "comparacao",
+        "tabela",
+        "pubsub",
+        "pub/sub",
+        "scheduler",
+        "firestore",
+        "source-based",
+        "request-oriented",
+        "choice",
+        "choosing",
+        "comparison",
+        "table"
+      ],
+      "summary": "Cloud Functions = glue, App Engine = source-based PaaS, Cloud Run = request-oriented containers; Table 1-1 lists OSS compatibility.",
+      "rules": [
+        "Functions: one endpoint, one container per request, no traffic splitting (RUN p.58)",
+        "App Engine Flexible runs on Compute Engine; Standard on the same platform as Run/Functions (RUN p.58)",
+        "Differences: source vs container, request vs instance (RUN p.59)",
+        "The future of App Engine/Functions is the author's speculation (RUN p.59-60)"
+      ],
+      "not_in_book": [
+        "Cloud Run functions, Jobs and products after 2020 [DATED]"
+      ]
+    },
+    "service_revision_trafego": {
+      "name": "Service, revision, rollback and tags",
+      "citation": "RUN p.36, 48-49",
+      "keywords": [
+        "service",
+        "revisao",
+        "revision",
+        "rollback",
+        "trafego",
+        "traffic",
+        "tag",
+        "update-traffic",
+        "gradual",
+        "blue-green",
+        "deploy",
+        "traffic split",
+        "revisions"
+      ],
+      "summary": "A service has an endpoint; each change creates an immutable revision; traffic can go 100% to the latest, be gradual or tested on a separate URL; rollback via update-traffic.",
+      "rules": [
+        "Revision = immutable copy of the config (image, env, serving, resources, scaling, identity) (RUN p.48)",
+        "Default: 100% of traffic on the latest revision (RUN p.48)",
+        "Rollback: gcloud run services update-traffic NAME --to-revisions REV=100 (RUN p.49)",
+        "Old revisions disappear automatically above a thousand (RUN p.49) [DATED]",
+        "Tags: concept only, no command (RUN p.49)"
+      ],
+      "not_in_book": [
+        "flags --tag, --no-traffic, --to-latest [DATED]/[extrapolation]",
+        "percentage-based canary with a command"
+      ]
+    },
+    "ciclo_de_vida_container": {
+      "name": "Container life cycle (SIGTERM, shutdown)",
+      "citation": "RUN p.50",
+      "keywords": [
+        "ciclo de vida",
+        "sigterm",
+        "shutdown",
+        "desligamento",
+        "life cycle",
+        "grace",
+        "limpeza",
+        "flush",
+        "lifecycle",
+        "graceful shutdown",
+        "cleanup"
+      ],
+      "summary": "Image cached; receives requests once it listens on 8080; CPU throttled on scale down; shutdown with SIGTERM and a short grace period (~10 s).",
+      "rules": [
+        "You do not choose which containers die (RUN p.50)",
+        "SIGTERM: close connections and flush buffers; ~10 s (RUN p.50) [DATED]"
+      ],
+      "not_in_book": [
+        "configurable terminationGracePeriod",
+        "preStop hooks"
+      ]
+    },
+    "cpu_throttling_background": {
+      "name": "CPU throttling and background work",
+      "citation": "RUN p.52",
+      "keywords": [
+        "throttling",
+        "cpu",
+        "background",
+        "segundo plano",
+        "thread",
+        "goroutine",
+        "assincrono",
+        "depois da resposta",
+        "background work",
+        "background thread",
+        "async",
+        "after the response",
+        "after response"
+      ],
+      "summary": "Outside requests the CPU is nearly zero; background work may never finish; use Cloud Tasks.",
+      "rules": [
+        "Full CPU only while serving a request (RUN p.52)",
+        "Background work after the response is not reliable; heavy work causes 503 at startup (RUN p.52)",
+        "Reliable alternative: Cloud Tasks + worker (RUN p.127-129)"
+      ],
+      "not_in_book": [
+        "CPU always allocated (--no-cpu-throttling)",
+        "Cloud Run Jobs [DATED]"
+      ]
+    },
+    "concorrencia_autoscaling": {
+      "name": "Concurrency, request buffer and autoscaler",
+      "citation": "RUN p.52-55",
+      "keywords": [
+        "concorrencia",
+        "concurrency",
+        "autoscaler",
+        "autoscaling",
+        "slots",
+        "buffer",
+        "429",
+        "503",
+        "max instances",
+        "mil instancias",
+        "escala",
+        "thousand instances",
+        "scale",
+        "scaling",
+        "max-instances",
+        "throttling"
+      ],
+      "summary": "Slots per container; the autoscaler acts on free slots and CPU; default ceiling of a thousand containers with 429 at the limit; default concurrency 250 (2020) tends to be high.",
+      "rules": [
+        "--concurrency 1 for CPU-intensive or non-thread-safe apps (RUN p.54)",
+        "Default ceiling 1000; at the limit, HTTP 429; more requires a quota (RUN p.54) [DATED]",
+        "Default concurrency 250 in Nov/2020, probably high (RUN p.55) [DATED]",
+        "Tune concurrency so the autoscaler reacts to slots, not CPU (RUN p.55)"
+      ],
+      "not_in_book": [
+        "current autoscaling algorithm, CPU utilization targets",
+        "current default concurrency (80) [DATED]"
+      ]
+    },
+    "cold_start": {
+      "name": "Cold start and minimum instances",
+      "citation": "RUN p.55",
+      "keywords": [
+        "cold start",
+        "partida a frio",
+        "instancias minimas",
+        "minimum instances",
+        "min-instances",
+        "latencia inicial",
+        "cold-start",
+        "initial latency",
+        "warm instances"
+      ],
+      "summary": "A request waits in the buffer until the container opens 8080; conceptual mitigation: minimum instances; pool of throttled containers.",
+      "rules": [
+        "Happens after a new deploy or a period without traffic; less likely on scale up (RUN p.55)",
+        "Minimum instances keep containers ready (RUN p.55)",
+        "Ready in seconds shortens deploy time (RUN p.38)"
+      ],
+      "not_in_book": [
+        "flag --min-instances",
+        "startup CPU boost",
+        "runtime optimizations per language beyond Go/GraalVM (RUN p.77)"
+      ]
+    },
+    "disco_memoria_prontidao": {
+      "name": "In-memory disk, readiness and 5xx",
+      "citation": "RUN p.55-56",
+      "keywords": [
+        "disco",
+        "filesystem",
+        "memoria",
+        "4 gb",
+        "prontidao",
+        "readiness",
+        "nginx",
+        "php-fpm",
+        "5xx",
+        "descartavel",
+        "disk",
+        "memory",
+        "ephemeral",
+        "disposable"
+      ],
+      "summary": "Containers are disposable; filesystem in memory (4 GB in 2020); readiness = accepting a connection on 8080; more than 20 consecutive 5xx remove the container.",
+      "rules": [
+        "What you can keep: rebuildable cache, per-request temp, templates, connections (RUN p.55-56)",
+        "Filesystem in memory, 4 GB limit in Oct/2020 (RUN p.56) [DATED]",
+        "There is no way to change the readiness check (RUN p.56)",
+        "More than 20 consecutive 5xx responses -> container replaced (RUN p.56) [DATED]"
+      ],
+      "not_in_book": [
+        "health checks/probes",
+        "mounted volumes (Cloud Storage, NFS)"
+      ]
+    },
+    "containers_dockerfile": {
+      "name": "Containers and Dockerfile (introduction)",
+      "citation": "RUN p.62-72",
+      "keywords": [
+        "container",
+        "dockerfile",
+        "docker",
+        "multi-stage",
+        "distroless",
+        "imagem",
+        "kernel",
+        "isolamento",
+        "entrypoint",
+        "copy",
+        "image",
+        "isolation",
+        "containers"
+      ],
+      "summary": "Introduction to containers, Dockerfile instructions, small images with multi-stage and distroless.",
+      "rules": [
+        "Instructions FROM, COPY, RUN, WORKDIR, ENV, ENTRYPOINT; prefer COPY/ENTRYPOINT (RUN p.69-70)",
+        "826 MB (golang) vs 26.7 MB (distroless multi-stage) (RUN p.71-72)",
+        "Snyk 2019: base images with 30+ vulnerable libs (RUN p.71)"
+      ],
+      "not_in_book": [
+        "advanced Docker/Kubernetes: hand off to containers-docker-kubernetes-expert"
+      ]
+    },
+    "build_sem_dockerfile": {
+      "name": "ko, Jib and Buildpacks",
+      "citation": "RUN p.74-78",
+      "keywords": [
+        "ko",
+        "jib",
+        "buildpacks",
+        "pack",
+        "go",
+        "java",
+        "graalvm",
+        "micronaut",
+        "quarkus",
+        "source",
+        "sem dockerfile",
+        "without dockerfile",
+        "no dockerfile",
+        "build"
+      ],
+      "summary": "Three ways to build an image without a Dockerfile; ko uses service.yml with ko:// and replace.",
+      "rules": [
+        "ko: KO_DOCKER_REPO; ko publish; ko resolve | gcloud beta run services replace - (RUN p.75-76)",
+        "Jib: mvn compile jib:dockerBuild; 627 MB vs 197 MB (RUN p.77)",
+        "pack build --builder gcr.io/buildpacks/builder:v1; Go, Node.js, Python, Java, .NET Core (RUN p.78) [DATED]"
+      ],
+      "not_in_book": [
+        "gcloud run deploy --source",
+        "current buildpacks and languages supported today [DATED]"
+      ]
+    },
+    "artifact_registry": {
+      "name": "Artifact Registry",
+      "citation": "RUN p.72-74",
+      "keywords": [
+        "artifact registry",
+        "registry",
+        "push",
+        "repositorio",
+        "imagem url",
+        "container registry",
+        "gcr",
+        "repository",
+        "image url",
+        "docker push"
+      ],
+      "summary": "Regional/multi-regional repository; URL us-docker.pkg.dev/PROJECT/REPO/IMG; auth configure-docker.",
+      "rules": [
+        "gcloud artifacts repositories create --location us --repository-format docker NAME (RUN p.73)",
+        "gcloud auth configure-docker us-docker.pkg.dev (RUN p.74)",
+        "Tension: the text says only AR is accepted (RUN p.72) but the 1st deploy uses gcr.io (RUN p.45) [DATED]"
+      ],
+      "not_in_book": [
+        "cleanup policies, remote cache, scanning"
+      ]
+    },
+    "cloud_build": {
+      "name": "Cloud Build and CI",
+      "citation": "RUN p.78-82",
+      "keywords": [
+        "cloud build",
+        "cloudbuild",
+        "ci",
+        "cd",
+        "pipeline",
+        "trigger",
+        "github",
+        "builds submit",
+        "workspace",
+        "passos",
+        "steps",
+        "continuous integration",
+        "build"
+      ],
+      "summary": "Remote Docker build; cloudbuild.yaml with steps in containers; GitHub triggers; 24 h timeout.",
+      "rules": [
+        "gcloud builds submit --tag IMG (RUN p.79)",
+        "Sequential steps in /workspace; a failure stops the build (RUN p.79-81)",
+        "Can deploy to Cloud Run and run migrations (24 h timeout) (RUN p.81) [DATED]",
+        "Triggers per commit; wizard in the console (RUN p.81-82)"
+      ],
+      "not_in_book": [
+        "Cloud Deploy, promotion between environments, Binary Authorization",
+        "full CI/CD: git-version-control-expert / dora-devops-delivery-expert"
+      ]
+    },
+    "cloud_sql": {
+      "name": "Cloud SQL with Cloud Run (Proxy, IP, security)",
+      "citation": "RUN p.83-92",
+      "keywords": [
+        "cloud sql",
+        "mysql",
+        "postgres",
+        "proxy",
+        "cloudsql",
+        "socket",
+        "add-cloudsql-instances",
+        "root",
+        "ssl",
+        "ip privado",
+        "banco",
+        "database",
+        "private ip",
+        "sql",
+        "connection"
+      ],
+      "summary": "Use the managed Proxy (--add-cloudsql-instances, UNIX socket); avoid direct connection; harden users; same region.",
+      "rules": [
+        "Proxy: TLS and IAM (Cloud SQL Client role) (RUN p.86-87)",
+        "--add-cloudsql-instances PROJ:REG:INST creates a socket at /cloudsql/ (RUN p.89-91)",
+        "Direct connection not recommended; --require-ssl (RUN p.90)",
+        "Delete root@% and create via cloudsqlproxy~%; in production a non-admin user (RUN p.88-89)",
+        "Not serverless; ~US$ 9/month in Sep/2020 (RUN p.86) [DATED]"
+      ],
+      "not_in_book": [
+        "Cloud SQL Auth Proxy v2, language connectors, IAM database auth",
+        "Secret Manager for passwords"
+      ]
+    },
+    "banco_concorrencia_pool": {
+      "name": "Limiting concurrency against the database (max-instances and pool)",
+      "citation": "RUN p.93-97",
+      "keywords": [
+        "pool",
+        "conexoes",
+        "concorrencia transacional",
+        "max-instances",
+        "pgbouncer",
+        "contencao",
+        "lock",
+        "tps",
+        "saturacao",
+        "connections",
+        "connection pool",
+        "transactional concurrency",
+        "contention",
+        "saturation",
+        "database concurrency"
+      ],
+      "summary": "The database degrades above the optimum (a small multiple of vCPUs); control via --max-instances and connection pool; external pool if needed.",
+      "rules": [
+        "Optimal concurrency: a small multiple of vCPUs; real case ~110 on 16 vCPU (RUN p.94, 97)",
+        "gcloud run services update todo --max-instances 100 (RUN p.96)",
+        "db.SetMaxOpenConns(2): active connections = max instances x 2 (RUN p.96)",
+        "External pool (PgBouncer on a VM) for PostgreSQL (RUN p.96)"
+      ],
+      "not_in_book": [
+        "managed Cloud SQL connection pooling, RDS Proxy-like",
+        "optimal max-instances value for your case: measure"
+      ]
+    },
+    "cloud_sql_producao": {
+      "name": "Cloud SQL in production (HA, backups, resilience)",
+      "citation": "RUN p.97-98",
+      "keywords": [
+        "alta disponibilidade",
+        "ha",
+        "backup",
+        "failover",
+        "storage increase",
+        "monitoramento banco",
+        "resiliencia",
+        "high availability",
+        "monitoring",
+        "resilience",
+        "production"
+      ],
+      "summary": "Monitor CPU; storage increase; HA across two zones; app resilient to ~1 min of downtime; enable backups.",
+      "rules": [
+        "HA = two instances in different zones (RUN p.97)",
+        "Even with HA, tolerate ~1 minute of unavailability (RUN p.98)",
+        "Enable automated backups (RUN p.98)"
+      ],
+      "not_in_book": [
+        "point-in-time recovery, read replicas, detailed scheduled maintenance"
+      ]
+    },
+    "sessoes_memorystore": {
+      "name": "HTTP sessions and Memorystore",
+      "citation": "RUN p.99-108",
+      "keywords": [
+        "sessao",
+        "session",
+        "memorystore",
+        "redis",
+        "cookie",
+        "firestore",
+        "session affinity",
+        "afinidade",
+        "sla",
+        "sessions",
+        "affinity",
+        "sticky session"
+      ],
+      "summary": "Session in an external store (Redis/Memorystore, Firestore, Cloud SQL); signed cookie; session affinity not supported in 2020 and never meant for data.",
+      "rules": [
+        "Cookie with ID and signature; Secure, HttpOnly, SameSite=Strict (RUN p.100-101)",
+        "Memorystore: basic/standard tier, private IP only, no size autoscaling (RUN p.101-102)",
+        "SLAs: Memorystore 99.9%, Cloud SQL HA 99.95%, Firestore multi ~26.3 s/month (RUN p.106) [DATED]",
+        "Session affinity not supported in Sep/2020; best-effort; do not store sessions in containers (RUN p.106-107) [DATED]"
+      ],
+      "not_in_book": [
+        "current Cloud Run session affinity [DATED]",
+        "stateless JWT as an alternative"
+      ]
+    },
+    "vpc_connector": {
+      "name": "VPC Connector and private IP",
+      "citation": "RUN p.92, 102-105, 108",
+      "keywords": [
+        "vpc",
+        "connector",
+        "vpc connector",
+        "ip privado",
+        "private ip",
+        "vpc-connector",
+        "rede",
+        "network",
+        "vpcaccess",
+        "memorystore",
+        "serverless vpc access",
+        "private network"
+      ],
+      "summary": "Cloud Run is outside the VPC; the Connector (16-IP range, 2-10 instances, billed while idle) carries traffic to private IPs.",
+      "rules": [
+        "/28 range (16 IPs); traffic to a private IP goes through the Connector, public goes to the internet (RUN p.102-103)",
+        "Minimum 2 and maximum 10 instances; not pay-per-use (~US$ 8/month in Sep/2020) (RUN p.104) [DATED]",
+        "gcloud compute networks vpc-access connectors create ... --range 10.0.0.0/28; --vpc-connector (RUN p.104-105)",
+        "Delete when done (RUN p.108)"
+      ],
+      "not_in_book": [
+        "Direct VPC egress",
+        "Cloud NAT/static egress IP",
+        "internal ingress/external load balancer",
+        "Private Service Connect"
+      ]
+    },
+    "iam_roles_bindings": {
+      "name": "IAM: roles, policy bindings, allUsers",
+      "citation": "RUN p.109-113",
+      "keywords": [
+        "iam",
+        "role",
+        "binding",
+        "policy",
+        "allusers",
+        "invoker",
+        "run.invoker",
+        "permissao",
+        "menor privilegio",
+        "least privilege",
+        "member",
+        "permission",
+        "roles",
+        "bindings"
+      ],
+      "summary": "Roles group permissions; a binding links a member to a role; Invoker can be per service; --allow-unauthenticated = allUsers binding.",
+      "rules": [
+        "Least privilege (RUN p.109)",
+        "Cloud Run Invoker on a project or on a service (RUN p.112)",
+        "--allow-unauthenticated adds an allUsers+run.invoker binding (RUN p.112-113)"
+      ],
+      "not_in_book": [
+        "custom roles, IAM Conditions, Org Policy, VPC Service Controls"
+      ]
+    },
+    "service_account": {
+      "name": "Service accounts of the service and the default account",
+      "citation": "RUN p.113-115, 124",
+      "keywords": [
+        "service account",
+        "conta de servico",
+        "default",
+        "project editor",
+        "editor",
+        "identidade",
+        "botao vermelho",
+        "metadata server",
+        "service accounts",
+        "identity",
+        "big red button",
+        "default service account"
+      ],
+      "summary": "Every service has a service account; the default one has Project Editor and should not go to production; create one per service.",
+      "rules": [
+        "Default = Project Editor (more than 3000 permissions) (RUN p.114)",
+        "gcloud iam service-accounts create + --service-account (RUN p.115)",
+        "One account per service and minimal bindings (RUN p.124-125)"
+      ],
+      "not_in_book": [
+        "current default service account (it changed) [DATED]",
+        "Workload Identity Federation"
+      ]
+    },
+    "id_token_autenticacao": {
+      "name": "ID token and private service",
+      "citation": "RUN p.116-119",
+      "keywords": [
+        "id token",
+        "identity token",
+        "oidc",
+        "jwt",
+        "audience",
+        "no-allow-unauthenticated",
+        "privado",
+        "autenticacao",
+        "servico a servico",
+        "bearer",
+        "idtoken",
+        "private service",
+        "authentication",
+        "service to service",
+        "service-to-service",
+        "private"
+      ],
+      "summary": "A private service requires an ID token (Bearer); valid up to 1 h; audience = target service; idtoken library.",
+      "rules": [
+        "gcloud auth print-identity-token; Authorization: Bearer (RUN p.117-118)",
+        "Criteria: Google signature, audience, not expired, Invoker binding (RUN p.118)",
+        "Invalid requests are not billed (RUN p.118)",
+        "idtoken.NewClient(ctx, audience) renews and is valid only for that target (RUN p.118)"
+      ],
+      "not_in_book": [
+        "end-user authentication (IAP, Identity Platform, Firebase Auth)"
+      ]
+    },
+    "gfe_latencia": {
+      "name": "Google Frontend and latency between services",
+      "citation": "RUN p.119-120",
+      "keywords": [
+        "gfe",
+        "google frontend",
+        "latencia",
+        "7 ms",
+        "chamadas entre servicos",
+        "granularidade",
+        "batch",
+        "microsservicos",
+        "latency",
+        "calls between services",
+        "granularity",
+        "microservices"
+      ],
+      "summary": "Calls between services go through the GFE (+7-9 ms); prefer coarse-grained integration.",
+      "rules": [
+        "GFE: TLS, DoS, checks authorization, strips reserved headers (RUN p.119)",
+        "Minimum extra latency of 7-9 ms (author's benchmark) (RUN p.120) [DATED]",
+        "Fine-grained sequential calls and naive parallelism cause problems (RUN p.120)"
+      ],
+      "not_in_book": [
+        "internal communication via VPC/internal ingress"
+      ]
+    },
+    "cloud_tasks": {
+      "name": "Cloud Tasks and worker",
+      "citation": "RUN p.127-136",
+      "keywords": [
+        "cloud tasks",
+        "tarefa",
+        "task",
+        "fila",
+        "queue",
+        "worker",
+        "enqueuer",
+        "retry",
+        "backoff",
+        "rate limit",
+        "dispatch",
+        "duplicada",
+        "idempotencia",
+        "background",
+        "tasks",
+        "duplicate",
+        "idempotency",
+        "async"
+      ],
+      "summary": "Cloud Tasks schedules and runs HTTP requests to a Cloud Run worker with retry and rate limit; duplicate delivery is possible.",
+      "rules": [
+        "Success = 2xx; deadline 10 min default, up to 30 (RUN p.129) [DATED]",
+        "ID token added at execution; the creator needs Service Account User (RUN p.132-133)",
+        "Retry: minBackoff, maxBackoff, maxDoublings, maxAttempts (RUN p.133-135)",
+        "Rate limit: maxDispatchesPerSecond, maxConcurrentDispatches; default 1000 is high (RUN p.134)",
+        "Duplicate delivery < 0.001%: record state in a database (RUN p.135)"
+      ],
+      "not_in_book": [
+        "Cloud Run Jobs",
+        "operational Cloud Scheduler",
+        "Pub/Sub push and Eventarc"
+      ]
+    },
+    "terraform_iac": {
+      "name": "Infrastructure as code with Terraform",
+      "citation": "RUN p.139-154",
+      "keywords": [
+        "terraform",
+        "iac",
+        "infraestrutura como codigo",
+        "hcl",
+        "plan",
+        "apply",
+        "state",
+        "provider",
+        "adc",
+        "tfstate",
+        "declarativo",
+        "infrastructure as code",
+        "declarative"
+      ],
+      "summary": "Declarative IaC; init/plan/apply; state contains secrets; ADC instead of a key; no gradual rollout.",
+      "rules": [
+        "plan -out tfplan; apply tfplan; apply without a plan asks for 'yes' (RUN p.148-149, 153)",
+        "State may contain secrets (RUN p.150)",
+        "ADC, never a downloaded service account key (RUN p.143-144)",
+        "Terraform does not manage gradual rollout in Cloud Run (RUN p.143)",
+        "Dependencies via references (RUN p.153-154)"
+      ],
+      "not_in_book": [
+        "remote state/locking",
+        "google_cloud_run_v2_service",
+        "Terragrunt/modules in detail"
+      ]
+    },
+    "logs_estruturados": {
+      "name": "Structured logs and severity",
+      "citation": "RUN p.157-163",
+      "keywords": [
+        "log",
+        "logs",
+        "logging",
+        "estruturado",
+        "json",
+        "severity",
+        "severidade",
+        "stdout",
+        "cloud logging",
+        "error reporting",
+        "panic",
+        "zerolog",
+        "structured",
+        "structured logging"
+      ],
+      "summary": "Cloud Run captures stdout/stderr, /var/log and syslog; JSON with severity becomes attributes; avoid client libraries and PII.",
+      "rules": [
+        "Captures streams, /var/log and syslog + request log (RUN p.157-158)",
+        "Plain text = default severity; JSON with severity (RUN p.160-161)",
+        "Client libraries hurt portability (RUN p.162)",
+        "Level table DEBUG..ALERT (RUN p.163)",
+        "No PII in logs (RUN p.163, 173)"
+      ],
+      "not_in_book": [
+        "log exclusions/sinks, retention, log cost",
+        "OpenTelemetry"
+      ]
+    },
+    "tracing_contexto": {
+      "name": "Request context and trace",
+      "citation": "RUN p.165-172",
+      "keywords": [
+        "trace",
+        "tracing",
+        "x-cloud-trace-context",
+        "request context",
+        "contexto",
+        "correlacao",
+        "opencensus",
+        "idtoken",
+        "span",
+        "log-based",
+        "metrics",
+        "monitoring",
+        "request correlation",
+        "correlation",
+        "log-based metrics",
+        "alerts"
+      ],
+      "summary": "The GFE injects X-Cloud-Trace-Context; put the trace ID in the logs and propagate it in calls; log-based metrics for alerts.",
+      "rules": [
+        "Attribute logging.googleapis.com/trace groups the logs of one request (RUN p.166)",
+        "Propagate trace via context with OpenCensus + idtoken (RUN p.168-169)",
+        "Log-based metrics in the Logs-based metrics tab (RUN p.171-172)"
+      ],
+      "not_in_book": [
+        "OpenTelemetry (the book uses OpenCensus) [DATED]",
+        "SLOs and burn-rate alerts",
+        "custom spans beyond a mention"
+      ]
+    },
+    "knative_portabilidade": {
+      "name": "Knative Serving and portability",
+      "citation": "RUN p.175-188",
+      "keywords": [
+        "knative",
+        "kubernetes",
+        "portabilidade",
+        "portability",
+        "minikube",
+        "kubectl",
+        "migracao",
+        "vendor",
+        "lock-in",
+        "gvisor",
+        "kourier",
+        "portable",
+        "migration",
+        "lock in"
+      ],
+      "summary": "Cloud Run is compatible with (not a managed) Knative Serving; same service.yml; migrating from Run to Knative is easier than the reverse.",
+      "rules": [
+        "Cloud Run is not managed Knative: a compatible, separate and proprietary implementation (RUN p.176)",
+        "Same service.yml: kubectl apply vs gcloud beta run services replace (RUN p.185-186)",
+        "K8s -> Run is harder: CronJob, gVisor (no NFS), throttling (RUN p.187)",
+        "Services without an open alternative: IAM, Firestore, Tasks, Scheduler (RUN p.188)"
+      ],
+      "not_in_book": [
+        "Cloud Run for Anthos, current Knative",
+        "Kubernetes in depth: containers-docker-kubernetes-expert"
+      ]
+    },
+    "custos_free_tier": {
+      "name": "Costs, free tier and shutting down",
+      "citation": "RUN p.42, 86, 102, 104",
+      "keywords": [
+        "custo",
+        "preco",
+        "free tier",
+        "creditos",
+        "budget",
+        "shutting down",
+        "desligar",
+        "cobranca",
+        "gratuito",
+        "cost",
+        "price",
+        "pricing",
+        "credits",
+        "billing",
+        "free",
+        "turn off"
+      ],
+      "summary": "US$ 300 in credits in 2020; serverless services with a free tier; Cloud SQL, Memorystore and VPC Connector charge while idle.",
+      "rules": [
+        "US$ 300 in credits; account suspended when exhausted (RUN p.42) [DATED]",
+        "Cloud SQL, Memorystore have no free tier (RUN p.42)",
+        "Each chapter has a 'Shutting Down' section (RUN p.42, 82, 98, 108)"
+      ],
+      "not_in_book": [
+        "current prices and free tier [DATED]",
+        "FinOps, budgets via CLI"
+      ]
+    },
+    "yaml_replace": {
+      "name": "Knative service.yml and gcloud replace",
+      "citation": "RUN p.76, 185-186",
+      "keywords": [
+        "yaml",
+        "replace",
+        "service.yml",
+        "knative service",
+        "describe",
+        "format yaml",
+        "declarativo",
+        "apiversion",
+        "serving.knative.dev",
+        "service yaml",
+        "export yaml",
+        "declarative"
+      ],
+      "summary": "services describe --format yaml exports; replace applies authoritatively, except IAM.",
+      "rules": [
+        "apiVersion serving.knative.dev/v1; kind Service; spec.template.spec.containers.image (RUN p.76)",
+        "replace overwrites the whole config except the IAM bindings (RUN p.76)",
+        "The same YAML runs on Knative (RUN p.185-186)"
+      ],
+      "not_in_book": [
+        "scaling annotations (autoscaling.knative.dev/...) and Cloud Run annotations (run.googleapis.com/...) in detail"
+      ]
+    },
+    "limites_numericos": {
+      "name": "Numeric limits cited (2020)",
+      "citation": "RUN p.37, 49, 50, 54-56, 129",
+      "keywords": [
+        "limite",
+        "limites",
+        "quota",
+        "timeout",
+        "60 minutos",
+        "4 gb",
+        "1000",
+        "250",
+        "numeros",
+        "limits",
+        "60 minutes",
+        "numbers"
+      ],
+      "summary": "A thousand instances, concurrency 250, disk/memory 4 GB, SIGTERM ~10 s, 20 5xx, max timeout 60 min: all from 2020.",
+      "rules": [
+        "Instances: 1000 (RUN p.37, 54)",
+        "Default concurrency: 250 (RUN p.55)",
+        "In-memory disk: up to 4 GB (RUN p.56)",
+        "Max request timeout: 60 min (RUN p.129)"
+      ],
+      "not_in_book": [
+        "current CPU/memory limits per instance, request/response size, number of revisions [DATED]"
+      ]
+    }
+  }
+}

@@ -1,0 +1,985 @@
+{
+ "fonte": "NX13-NX16, NXHB, RCTHB",
+ "convencao": "PDF page",
+ "checks": [
+  {
+   "cite": "NX13 p.1",
+   "contains": [
+    "app directory (beta)",
+    "turbopack (alpha)",
+    "next/image",
+    "@next/font (beta)"
+   ],
+   "claim": "summary of 13"
+  },
+  {
+   "cite": "NX13 p.2",
+   "contains": [
+    "do not recommend using it in production",
+    "pages directory will continue to be supported",
+    "npm i next@latest react@latest react-dom@latest eslint-config-next@latest"
+   ],
+   "claim": "app beta, pages supported, upgrade command"
+  },
+  {
+   "cite": "NX13 p.3",
+   "contains": [
+    "incrementally adopted",
+    "page.js"
+   ],
+   "claim": "incremental adoption"
+  },
+  {
+   "cite": "NX13 p.5",
+   "contains": [
+    "stream responses by default",
+    "node.js and edge runtimes"
+   ],
+   "claim": "streaming on Vercel"
+  },
+  {
+   "cite": "NX13 p.6",
+   "contains": [
+    "force-cache",
+    "no-store",
+    "revalidate: 10",
+    "getstaticprops",
+    "getserversideprops"
+   ],
+   "claim": "fetch cache options"
+  },
+  {
+   "cite": "NX13 p.7",
+   "contains": [
+    "loading.js",
+    "turbopack"
+   ],
+   "claim": "loading.js and Turbopack"
+  },
+  {
+   "cite": "NX13 p.8",
+   "contains": [
+    "700x faster",
+    "next dev --turbo",
+    "1.8 seconds",
+    "only supports next dev"
+   ],
+   "claim": "Turbopack alpha"
+  },
+  {
+   "cite": "NX13 p.9",
+   "contains": [
+    "requiring alt tags by default",
+    "next/legacy/image",
+    "npx @next/codemod next-image-to-legacy-image ./pages"
+   ],
+   "claim": "next/image"
+  },
+  {
+   "cite": "NX13 p.10",
+   "contains": [
+    "@next/font",
+    "size-adjust"
+   ],
+   "claim": "font"
+  },
+  {
+   "cite": "NX13 p.11",
+   "contains": [
+    "always renders an <a>",
+    "npx @next/codemod new-link ./pages",
+    "12.2"
+   ],
+   "claim": "Link"
+  },
+  {
+   "cite": "NX13 p.12",
+   "contains": [
+    "@vercel/og",
+    "experimental-edge"
+   ],
+   "claim": "OG"
+  },
+  {
+   "cite": "NX13 p.14",
+   "contains": [
+    "allowmiddlewareresponsebody",
+    "17.0.2",
+    "18.2.0",
+    "12.22.0",
+    "14.6.0",
+    "swcminify",
+    "next/future/image",
+    "legacybehavior",
+    "user-agent",
+    "target"
+   ],
+   "claim": "breaking changes"
+  },
+  {
+   "cite": "NX13 p.15",
+   "contains": [
+    "chrome 64+",
+    "safari 12+",
+    "internet explorer"
+   ],
+   "claim": "browsers"
+  },
+  {
+   "cite": "NX14 p.1",
+   "contains": [
+    "turbopack: 5,000 tests",
+    "server actions (stable)",
+    "partial prerendering (preview)"
+   ],
+   "claim": "summary of 14"
+  },
+  {
+   "cite": "NX14 p.2",
+   "contains": [
+    "53.3%",
+    "94.7%",
+    "90% of tests",
+    "areweturboyet",
+    "100% of tests passing"
+   ],
+   "claim": "Turbopack 14"
+  },
+  {
+   "cite": "NX14 p.4",
+   "contains": [
+    "'use server'",
+    "react canary"
+   ],
+   "claim": "Server Actions"
+  },
+  {
+   "cite": "NX14 p.5",
+   "contains": [
+    "revalidatepath()",
+    "useoptimistic()",
+    "useformstate()",
+    "useformstatus()"
+   ],
+   "claim": "actions integration"
+  },
+  {
+   "cite": "NX14 p.6",
+   "contains": [
+    "suspense",
+    "static shell"
+   ],
+   "claim": "PPR"
+  },
+  {
+   "cite": "NX14 p.7",
+   "contains": [
+    "loading.js",
+    "implicit suspense boundary",
+    "coming soon"
+   ],
+   "claim": "PPR and loading.js"
+  },
+  {
+   "cite": "NX14 p.8",
+   "contains": [
+    "generateviewport",
+    "themecolor",
+    "colorscheme",
+    "deprecated"
+   ],
+   "claim": "metadata"
+  },
+  {
+   "cite": "NX14 p.9",
+   "contains": [
+    "18.17",
+    "next export",
+    "output: 'export'",
+    "next/og",
+    "onloadingcomplete",
+    "remotepatterns",
+    "80% smaller",
+    "@next/font"
+   ],
+   "claim": "other changes in 14"
+  },
+  {
+   "cite": "NX15 p.1",
+   "contains": [
+    "async request apis (breaking)",
+    "@next/codemod@canary upgrade latest",
+    "react@rc"
+   ],
+   "claim": "summary/upgrade 15"
+  },
+  {
+   "cite": "NX15 p.2",
+   "contains": [
+    "no longer cached by default",
+    "react compiler (experimental)",
+    "unstable_after api (experimental)"
+   ],
+   "claim": "list 15"
+  },
+  {
+   "cite": "NX15 p.3",
+   "contains": [
+    "draftmode",
+    "until the next major version"
+   ],
+   "claim": "async apis"
+  },
+  {
+   "cite": "NX15 p.4",
+   "contains": [
+    "next-async-request-api",
+    "force-static",
+    "sitemap.ts"
+   ],
+   "claim": "codemod and GET handlers"
+  },
+  {
+   "cite": "NX15 p.5",
+   "contains": [
+    "stale",
+    "5 minutes",
+    "dynamic: 30",
+    "14.2.0"
+   ],
+   "claim": "client router cache"
+  },
+  {
+   "cite": "NX15 p.6",
+   "contains": [
+    "react 19 rc",
+    "don't recommend this setup",
+    "pages router on react 18"
+   ],
+   "claim": "React 19"
+  },
+  {
+   "cite": "NX15 p.7",
+   "contains": [
+    "babel plugin",
+    "hydration"
+   ],
+   "claim": "compiler and hydration"
+  },
+  {
+   "cite": "NX15 p.8",
+   "contains": [
+    "76.7%",
+    "96.3%",
+    "45.8%"
+   ],
+   "claim": "Turbopack dev stable"
+  },
+  {
+   "cite": "NX15 p.9",
+   "contains": [
+    "static route indicator"
+   ],
+   "claim": "indicator"
+  },
+  {
+   "cite": "NX15 p.10",
+   "contains": [
+    "experimental.after",
+    "instrumentationhook"
+   ],
+   "claim": "after and instrumentation"
+  },
+  {
+   "cite": "NX15 p.11",
+   "contains": [
+    "onrequesterror",
+    "sentry"
+   ],
+   "claim": "onRequestError"
+  },
+  {
+   "cite": "NX15 p.12",
+   "contains": [
+    "next.config.ts",
+    "progressive enhancement"
+   ],
+   "claim": "Form and config.ts"
+  },
+  {
+   "cite": "NX15 p.13",
+   "contains": [
+    "expiretime",
+    "swrdelta",
+    "sharp",
+    "dead code elimination"
+   ],
+   "claim": "self-hosting and security"
+  },
+  {
+   "cite": "NX15 p.14",
+   "contains": [
+    "unguessable",
+    "serverexternalpackages",
+    "bundlepagesrouterdependencies",
+    "public http endpoints"
+   ],
+   "claim": "actions security and bundling"
+  },
+  {
+   "cite": "NX15 p.15",
+   "contains": [
+    "eslint_use_flat_config=false",
+    "5.0.0",
+    "eslint 8"
+   ],
+   "claim": "ESLint 9"
+  },
+  {
+   "cite": "NX15 p.16",
+   "contains": [
+    "staticgenerationmaxconcurrency",
+    "out-of-memory"
+   ],
+   "claim": "static generation"
+  },
+  {
+   "cite": "NX15 p.17",
+   "contains": [
+    "squoosh",
+    "no-store",
+    "18.18.0",
+    "experimental-edge",
+    "speed insights"
+   ],
+   "claim": "breaking 15"
+  },
+  {
+   "cite": "NX15 p.18",
+   "contains": [
+    "ssr: false",
+    "unstable_rethrow",
+    "bundlepagesexternals",
+    "serverexternalpackages"
+   ],
+   "claim": "breaking/improvement 15"
+  },
+  {
+   "cite": "NX15 p.19",
+   "contains": [
+    "unstable_after can now be used in static pages",
+    "msw"
+   ],
+   "claim": "improvements 15"
+  },
+  {
+   "cite": "NX16 p.1",
+   "contains": [
+    "cache components",
+    "devtools mcp",
+    "proxy.ts",
+    "turbopack (stable)",
+    "5-10x"
+   ],
+   "claim": "summary of 16"
+  },
+  {
+   "cite": "NX16 p.2",
+   "contains": [
+    "\"use cache\"",
+    "opt-in",
+    "npx create-next-app@latest",
+    "react@latest"
+   ],
+   "claim": "cache components and upgrade"
+  },
+  {
+   "cite": "NX16 p.3",
+   "contains": [
+    "cachecomponents: true",
+    "experimental.ppr",
+    "model context protocol"
+   ],
+   "claim": "config and MCP"
+  },
+  {
+   "cite": "NX16 p.4",
+   "contains": [
+    "runs on the node.js runtime",
+    "rename middleware.ts",
+    "edge runtime use cases",
+    "deprecated"
+   ],
+   "claim": "proxy.ts"
+  },
+  {
+   "cite": "NX16 p.6",
+   "contains": [
+    "next dev --webpack",
+    "50% of development sessions",
+    "turbopackfilesystemcachefordev",
+    "10× faster fast refresh"
+   ],
+   "claim": "Turbopack 16"
+  },
+  {
+   "cite": "NX16 p.7",
+   "contains": [
+    "adapterpath",
+    "not enabled by default",
+    "babel",
+    "tailwind"
+   ],
+   "claim": "adapters, compiler, cna"
+  },
+  {
+   "cite": "NX16 p.8",
+   "contains": [
+    "layout deduplication",
+    "50 product links",
+    "incremental prefetching",
+    "babel-plugin-react-compiler@latest"
+   ],
+   "claim": "routing"
+  },
+  {
+   "cite": "NX16 p.9",
+   "contains": [
+    "revalidatetag",
+    "'max'",
+    "cachelife"
+   ],
+   "claim": "revalidateTag"
+  },
+  {
+   "cite": "NX16 p.10",
+   "contains": [
+    "updatetag",
+    "read-your-writes",
+    "refresh()"
+   ],
+   "claim": "updateTag/refresh"
+  },
+  {
+   "cite": "NX16 p.11",
+   "contains": [
+    "useeffectevent",
+    "activity",
+    "20.9.0",
+    "5.1.0",
+    "safari 16.4+",
+    "amp"
+   ],
+   "claim": "react 19.2 and requirements"
+  },
+  {
+   "cite": "NX16 p.12",
+   "contains": [
+    "next lint",
+    "devindicators",
+    "serverruntimeconfig",
+    "unstable_rootparams",
+    "localpatterns",
+    "data-scroll-behavior",
+    "experimental.dynamicio"
+   ],
+   "claim": "removals in 16"
+  },
+  {
+   "cite": "NX16 p.13",
+   "contains": [
+    "4 hours",
+    "14400",
+    "[75]",
+    "dangerouslyallowlocalip",
+    "default.js",
+    "flat config",
+    "lockfile"
+   ],
+   "claim": "behavior in 16"
+  },
+  {
+   "cite": "NX16 p.14",
+   "contains": [
+    "images.remotepatterns",
+    "--experimental-next-config-strip-types",
+    "next/legacy/image",
+    "stable release"
+   ],
+   "claim": "deprecations in 16"
+  },
+  {
+   "cite": "NXHB p.1",
+   "contains": [
+    "november 19, 2019",
+    "flavio copes"
+   ],
+   "claim": "NXHB date"
+  },
+  {
+   "cite": "NXHB p.3",
+   "contains": [
+    "seo issue"
+   ],
+   "claim": "SSR motivation"
+  },
+  {
+   "cite": "NXHB p.5",
+   "contains": [
+    "at least half of the site pages"
+   ],
+   "claim": "code splitting"
+  },
+  {
+   "cite": "NXHB p.6",
+   "contains": [
+    "next export",
+    "gatsby"
+   ],
+   "claim": "static export"
+  },
+  {
+   "cite": "NXHB p.8",
+   "contains": [
+    "npx create-next-app"
+   ],
+   "claim": "create-next-app"
+  },
+  {
+   "cite": "NXHB p.11",
+   "contains": [
+    "--example",
+    "blog-starter"
+   ],
+   "claim": "example"
+  },
+  {
+   "cite": "NXHB p.14",
+   "contains": [
+    "^9.1.2",
+    "^16.11.0"
+   ],
+   "claim": "tutorial versions"
+  },
+  {
+   "cite": "NXHB p.15",
+   "contains": [
+    "\"dev\": \"next\"",
+    "next -p 3001"
+   ],
+   "claim": "scripts"
+  },
+  {
+   "cite": "NXHB p.23",
+   "contains": [
+    "automatic static optimization",
+    "getinitialprops()"
+   ],
+   "claim": "icon"
+  },
+  {
+   "cite": "NXHB p.42",
+   "contains": [
+    "<link href='/blog'>",
+    "<a>blog</a>"
+   ],
+   "claim": "Link with a"
+  },
+  {
+   "cite": "NXHB p.44",
+   "contains": [
+    "pages/blog/[id].js"
+   ],
+   "claim": "dynamic route"
+  },
+  {
+   "cite": "NXHB p.52",
+   "contains": [
+    "production mode"
+   ],
+   "claim": "prefetch in production only"
+  },
+  {
+   "cite": "NXHB p.53",
+   "contains": [
+    "prefetch={false}",
+    "save-data"
+   ],
+   "claim": "prefetch"
+  },
+  {
+   "cite": "NXHB p.60",
+   "contains": [
+    "pathname",
+    "aspath",
+    "server side"
+   ],
+   "claim": "getInitialProps context"
+  },
+  {
+   "cite": "NXHB p.61",
+   "contains": [
+    "req",
+    "res",
+    "err",
+    "styled-jsx"
+   ],
+   "claim": "req/res/err"
+  },
+  {
+   "cite": "NXHB p.63",
+   "contains": [
+    "@zeit/next-css"
+   ],
+   "claim": "css"
+  },
+  {
+   "cite": "NXHB p.64",
+   "contains": [
+    "withcss",
+    "next.config.js"
+   ],
+   "claim": "withCSS"
+  },
+  {
+   "cite": "NXHB p.65",
+   "contains": [
+    "next/head"
+   ],
+   "claim": "head"
+  },
+  {
+   "cite": "NXHB p.67",
+   "contains": [
+    "getinitialprops()",
+    "is not called"
+   ],
+   "claim": "HOC"
+  },
+  {
+   "cite": "NXHB p.68",
+   "contains": [
+    "/pages/api/"
+   ],
+   "claim": "api routes"
+  },
+  {
+   "cite": "NXHB p.72",
+   "contains": [
+    "micro",
+    "req.method"
+   ],
+   "claim": "micro"
+  },
+  {
+   "cite": "NXHB p.73",
+   "contains": [
+    "typeof window"
+   ],
+   "claim": "server/client"
+  },
+  {
+   "cite": "NXHB p.75",
+   "contains": [
+    "prerendered as static html"
+   ],
+   "claim": "build"
+  },
+  {
+   "cite": "NXHB p.76",
+   "contains": [
+    "zeit"
+   ],
+   "claim": "Zeit"
+  },
+  {
+   "cite": "NXHB p.77",
+   "contains": [
+    "100gb",
+    "1000 serverless functions"
+   ],
+   "claim": "Now plan"
+  },
+  {
+   "cite": "NXHB p.80",
+   "contains": [
+    "cross-env analyze=true next build"
+   ],
+   "claim": "analyze"
+  },
+  {
+   "cite": "NXHB p.81",
+   "contains": [
+    "@next/bundle-analyzer"
+   ],
+   "claim": "bundle analyzer"
+  },
+  {
+   "cite": "NXHB p.87",
+   "contains": [
+    "350kb"
+   ],
+   "claim": "moment"
+  },
+  {
+   "cite": "NXHB p.89",
+   "contains": [
+    "await import('moment')",
+    "default"
+   ],
+   "claim": "lazy loading"
+  },
+  {
+   "cite": "RCTHB p.1",
+   "contains": [
+    "november 13, 2020",
+    "react for beginners"
+   ],
+   "claim": "RCTHB date"
+  },
+  {
+   "cite": "RCTHB p.3",
+   "contains": [
+    "2013",
+    "4 concepts"
+   ],
+   "claim": "what React is"
+  },
+  {
+   "cite": "RCTHB p.6",
+   "contains": [
+    "create-react-app",
+    "npx create-react-app"
+   ],
+   "claim": "installation"
+  },
+  {
+   "cite": "RCTHB p.20",
+   "contains": [
+    "classname",
+    "reserved word"
+   ],
+   "claim": "className"
+  },
+  {
+   "cite": "RCTHB p.21",
+   "contains": [
+    "jsx is not forgiving"
+   ],
+   "claim": "strict JSX"
+  },
+  {
+   "cite": "RCTHB p.25",
+   "contains": [
+    "usestate"
+   ],
+   "claim": "useState"
+  },
+  {
+   "cite": "RCTHB p.26",
+   "contains": [
+    "reactdom.render"
+   ],
+   "claim": "ReactDOM.render"
+  },
+  {
+   "cite": "RCTHB p.29",
+   "contains": [
+    "children"
+   ],
+   "claim": "children"
+  },
+  {
+   "cite": "RCTHB p.30",
+   "contains": [
+    "context api",
+    "redux"
+   ],
+   "claim": "context/redux"
+  },
+  {
+   "cite": "RCTHB p.31",
+   "contains": [
+    "onclick",
+    "onsubmit"
+   ],
+   "claim": "events"
+  },
+  {
+   "cite": "RCTHB p.33",
+   "contains": [
+    "empty array"
+   ],
+   "claim": "useEffect []"
+  },
+  {
+   "cite": "RCTHB p.34",
+   "contains": [
+    "gatsby",
+    "next.js",
+    "react router"
+   ],
+   "claim": "next steps"
+  },
+  {
+   "cite": "NX16 p.1-16",
+   "absent": [
+    "unstable_after"
+   ],
+   "claim": "NX16 does not mention unstable_after"
+  },
+  {
+   "cite": "NX16 p.1-16",
+   "absent": [
+    "pages router"
+   ],
+   "claim": "NX16 says nothing about the Pages Router"
+  },
+  {
+   "cite": "NX16 p.1-16",
+   "absent": [
+    "getinitialprops",
+    "create-react-app",
+    "styled-jsx",
+    "next/head"
+   ],
+   "claim": "NX16 does not cite items from the handbooks"
+  },
+  {
+   "cite": "NX16 p.1-16",
+   "absent": [
+    "next export",
+    "server components"
+   ],
+   "claim": "NX16 does not repeat next export nor discuss Server Components"
+  },
+  {
+   "cite": "NX15 p.1-22",
+   "absent": [
+    "proxy.ts",
+    "use cache",
+    "cachecomponents",
+    "dynamicio"
+   ],
+   "claim": "NX15 does not include 16 concepts"
+  },
+  {
+   "cite": "NX14 p.1-13",
+   "absent": [
+    "middleware",
+    "getinitialprops",
+    "react 19",
+    "use cache"
+   ],
+   "claim": "NX14 does not mention middleware nor React 19"
+  },
+  {
+   "cite": "NX13 p.1-16",
+   "absent": [
+    "server actions",
+    "use server",
+    "proxy.ts",
+    "react 19"
+   ],
+   "claim": "NX13 does not include features from future versions"
+  },
+  {
+   "cite": "NX13 p.1-16",
+   "absent": [
+    "getinitialprops",
+    "styled-jsx",
+    "@zeit"
+   ],
+   "claim": "NX13 does not mention getInitialProps"
+  },
+  {
+   "cite": "NX15 p.1-22",
+   "absent": [
+    "getinitialprops",
+    "create-react-app"
+   ],
+   "claim": "NX15 does not cite handbooks"
+  },
+  {
+   "cite": "NXHB p.1-91",
+   "absent": [
+    "app router",
+    "app directory",
+    "server components",
+    "getstaticprops",
+    "turbopack",
+    "typescript support for next.config"
+   ],
+   "claim": "NXHB does not cover app router nor getStaticProps"
+  },
+  {
+   "cite": "RCTHB p.1-35",
+   "absent": [
+    "server components",
+    "use client",
+    "usereducer",
+    "useref",
+    "react 18",
+    "react 19",
+    "next export"
+   ],
+   "claim": "RCTHB does not cover RSC nor advanced hooks"
+  },
+  {
+   "cite": "NX14 p.1-13",
+   "absent": [
+    "partial prerendering (ppr)",
+    "cachecomponents"
+   ],
+   "claim": "NX14 uses 'Partial Prerendering' without the PPR acronym and does not include cacheComponents"
+  },
+  {
+   "cite": "NX15 p.1-22",
+   "absent": [
+    "react native",
+    "graphql"
+   ],
+   "claim": "out of scope"
+  },
+  {
+   "cite": "NX16 p.1-16",
+   "absent": [
+    "react native",
+    "vue",
+    "svelte",
+    "angular"
+   ],
+   "claim": "out of scope"
+  },
+  {
+   "cite": "NXHB p.1-91",
+   "absent": [
+    "vercel"
+   ],
+   "claim": "NXHB does not cite Vercel (uses Zeit)"
+  },
+  {
+   "cite": "NX13 p.1-16",
+   "absent": [
+    "zeit"
+   ],
+   "claim": "releases do not cite Zeit"
+  },
+  {
+   "cite": "NX16 p.1-14",
+   "absent": [
+    "react 19.1",
+    "react 20"
+   ],
+   "claim": "NX16 cites React 19.2, not other versions"
+  },
+  {
+   "cite": "NX15 p.1-19",
+   "absent": [
+    "node.js 20",
+    "typescript 5"
+   ],
+   "claim": "NX15 does not declare TS/Node 20 minimums"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Order (fixture with problems)",
+  "root_entity": "Order",
+  "internal_entities": [
+    {"name": "OrderItem", "has_direct_repository": true, "external_direct_access": true}
+  ],
+  "value_objects": [{"name": "Money", "immutable": false}],
+  "external_references": [{"target_aggregate": "Customer", "type": "direct_pointer"}],
+  "invariants": [],
+  "modifies_multiple_aggregates": true
+}

@@ -1,0 +1,20 @@
+{
+  "name": "algorithms-expert",
+  "version": "2.0.0",
+  "description": "Algorithm design and analysis specialist based on Algorithms (Jeff Erickson, 2019, 472 p.): recursion and divide and conquer, backtracking, dynamic programming, greedy algorithms, graphs, MST, shortest paths, flows and NP-hardness. Cites PDF pages (printed = PDF - 18), separates [from source] from [inference]/[extrapolation]/[DATED] and states what the book does not cover (Master Theorem, minimax, König, etc.).",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Engineering"
+  },
+  "keywords": [
+    "algorithms",
+    "erickson",
+    "dynamic-programming",
+    "greedy",
+    "graphs",
+    "shortest-paths",
+    "max-flow",
+    "np-hardness",
+    "recurrences"
+  ]
+}

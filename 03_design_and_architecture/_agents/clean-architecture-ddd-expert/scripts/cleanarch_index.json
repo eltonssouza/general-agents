@@ -1,0 +1,1513 @@
+{
+  "convencao_de_pagina": "N = PDF page (DDD: printed = N - 7). Label [from source] = read on the page; see references/INDEX.md.",
+  "topics": [
+    {
+      "key": "bounded_context",
+      "title": "Bounded Context",
+      "aliases": [
+        "bounded context",
+        "contexto delimitado",
+        "limite de contexto"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "6",
+          "label": "[from source]",
+          "summary": "definition: boundary (subsystem or a team's work) within which a model is defined and applicable"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "9",
+          "label": "[from source]",
+          "summary": "multiple models are inevitable; explicitly define the context (teams, parts of the application, code bases, schemas) and apply CI"
+        }
+      ]
+    },
+    {
+      "key": "ubiquitous_language",
+      "title": "Ubiquitous Language",
+      "aliases": [
+        "ubiquitous language",
+        "linguagem ubiqua",
+        "linguagem ubíqua"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "6",
+          "label": "[from source]",
+          "summary": "definition in the glossary"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "10-11",
+          "label": "[from source]",
+          "summary": "model as the backbone of the language; changing the language means changing the model; refactor names in the code"
+        }
+      ]
+    },
+    {
+      "key": "continuous_integration",
+      "title": "Continuous Integration (DDD pattern)",
+      "aliases": [
+        "continuous integration",
+        "integracao continua"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "12",
+          "label": "[from source]",
+          "summary": "the model tends to fragment; merge frequently and use automated tests"
+        }
+      ]
+    },
+    {
+      "key": "model_driven_design",
+      "title": "Model-Driven Design / Hands-on Modelers",
+      "aliases": [
+        "model-driven design",
+        "model driven design",
+        "hands-on modelers"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "13",
+          "label": "[from source]",
+          "summary": "code and model must correspond literally"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "14",
+          "label": "[from source]",
+          "summary": "whoever contributes to the model touches the code"
+        }
+      ]
+    },
+    {
+      "key": "layered_architecture",
+      "title": "Layered Architecture",
+      "aliases": [
+        "layered architecture",
+        "arquitetura em camadas",
+        "camadas"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "17",
+          "label": "[from source]",
+          "summary": "isolate the domain from UI, infrastructure and application logic; the key goal is isolation; mentions Hexagonal Architecture"
+        }
+      ]
+    },
+    {
+      "key": "entity",
+      "title": "Entity",
+      "aliases": [
+        "entity",
+        "entities",
+        "entidade",
+        "entidades"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "18",
+          "label": "[from source]",
+          "summary": "object defined by identity and continuity, not by attributes"
+        }
+      ]
+    },
+    {
+      "key": "value_object",
+      "title": "Value Object",
+      "aliases": [
+        "value object",
+        "value objects",
+        "objeto de valor",
+        "vo"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "19",
+          "label": "[from source]",
+          "summary": "no conceptual identity; treat as immutable; side-effect-free operations"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "13-14",
+          "label": "[from source]",
+          "summary": "critical view of OOP: VOs reintroduce extensional identity"
+        }
+      ]
+    },
+    {
+      "key": "domain_event",
+      "title": "Domain Event",
+      "aliases": [
+        "domain event",
+        "domain events",
+        "evento de dominio"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "20",
+          "label": "[from source]",
+          "summary": "something that happened and matters to the experts; domain object, ordinarily immutable"
+        }
+      ]
+    },
+    {
+      "key": "service",
+      "title": "Service (domain service)",
+      "aliases": [
+        "domain service",
+        "servico de dominio",
+        "services"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "21",
+          "label": "[from source]",
+          "summary": "standalone operation when the process is not the natural responsibility of an entity or VO"
+        }
+      ]
+    },
+    {
+      "key": "module",
+      "title": "Module",
+      "aliases": [
+        "module",
+        "modulo",
+        "módulo",
+        "package"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "22",
+          "label": "[from source]",
+          "summary": "modules are part of the model; group cohesive concepts with names in the ubiquitous language"
+        }
+      ]
+    },
+    {
+      "key": "aggregate",
+      "title": "Aggregate and Aggregate Root",
+      "aliases": [
+        "aggregate",
+        "agregado",
+        "aggregate root",
+        "raiz do agregado",
+        "raiz"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "23",
+          "label": "[from source]",
+          "summary": "group entities and VOs with a boundary; one root; external references only to the root; invariants enforced by the root; synchronous inside, asynchronous across; boundaries govern transactions and distribution"
+        }
+      ]
+    },
+    {
+      "key": "repository",
+      "title": "Repository",
+      "aliases": [
+        "repository",
+        "repositorio",
+        "repositório",
+        "repositories"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "24",
+          "label": "[from source]",
+          "summary": "illusion of an in-memory collection of roots; repositories only for roots that need direct access"
+        }
+      ]
+    },
+    {
+      "key": "factory",
+      "title": "Factory",
+      "aliases": [
+        "factory",
+        "factories",
+        "fabrica",
+        "fábrica"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "25",
+          "label": "[from source]",
+          "summary": "encapsulates the creation of complex aggregates or VOs; creates the whole aggregate enforcing invariants"
+        }
+      ]
+    },
+    {
+      "key": "supple_design",
+      "title": "Supple Design",
+      "aliases": [
+        "supple design",
+        "intention-revealing",
+        "side-effect-free",
+        "assertions",
+        "closure of operations",
+        "declarative design",
+        "conceptual contours"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "26",
+          "label": "[from source]",
+          "summary": "chapter overview"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "27",
+          "label": "[from source]",
+          "summary": "Intention-Revealing Interfaces"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "28",
+          "label": "[from source]",
+          "summary": "Side-Effect-Free Functions"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "29",
+          "label": "[from source]",
+          "summary": "Assertions"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "30",
+          "label": "[from source]",
+          "summary": "Standalone Classes"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "31",
+          "label": "[from source]",
+          "summary": "Closure of Operations"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "32",
+          "label": "[from source]",
+          "summary": "Declarative Design"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "33",
+          "label": "[from source]",
+          "summary": "Drawing on Established Formalisms"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "34",
+          "label": "[from source]",
+          "summary": "Conceptual Contours"
+        }
+      ]
+    },
+    {
+      "key": "context_map",
+      "title": "Context Map",
+      "aliases": [
+        "context map",
+        "mapa de contextos",
+        "upstream",
+        "downstream"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "35",
+          "label": "[from source]",
+          "summary": "definitions: upstream-downstream, mutually dependent, free"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "36",
+          "label": "[from source]",
+          "summary": "identify models, name contexts, points of contact; map the existing terrain"
+        }
+      ]
+    },
+    {
+      "key": "partnership",
+      "title": "Partnership",
+      "aliases": [
+        "partnership",
+        "parceria"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "37",
+          "label": "[from source]",
+          "summary": "teams that succeed or fail together plan and integrate in a coordinated way"
+        }
+      ]
+    },
+    {
+      "key": "shared_kernel",
+      "title": "Shared Kernel",
+      "aliases": [
+        "shared kernel",
+        "nucleo compartilhado",
+        "núcleo compartilhado"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "38",
+          "label": "[from source]",
+          "summary": "small subset of the model and code is shared; changes only after consultation"
+        }
+      ]
+    },
+    {
+      "key": "customer_supplier",
+      "title": "Customer/Supplier",
+      "aliases": [
+        "customer/supplier",
+        "customer supplier",
+        "cliente-fornecedor"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "39",
+          "label": "[from source]",
+          "summary": "downstream priorities enter the upstream's planning; joint acceptance tests"
+        }
+      ]
+    },
+    {
+      "key": "conformist",
+      "title": "Conformist",
+      "aliases": [
+        "conformist",
+        "conformista"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "40",
+          "label": "[from source]",
+          "summary": "downstream adheres to the upstream model to eliminate translation"
+        }
+      ]
+    },
+    {
+      "key": "anticorruption_layer",
+      "title": "Anticorruption Layer (ACL)",
+      "aliases": [
+        "anticorruption layer",
+        "acl",
+        "camada anticorrupcao",
+        "camada anticorrupção"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "41",
+          "label": "[from source]",
+          "summary": "isolating layer that expresses the upstream in terms of one's own model"
+        }
+      ]
+    },
+    {
+      "key": "open_host_service",
+      "title": "Open-host Service",
+      "aliases": [
+        "open host service",
+        "open-host service",
+        "ohs",
+        "servico de host aberto"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "42",
+          "label": "[from source]",
+          "summary": "open protocol that gives access to the subsystem as services"
+        }
+      ]
+    },
+    {
+      "key": "published_language",
+      "title": "Published Language",
+      "aliases": [
+        "published language",
+        "linguagem publicada"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "43",
+          "label": "[from source]",
+          "summary": "documented language shared as a common means of communication"
+        }
+      ]
+    },
+    {
+      "key": "separate_ways",
+      "title": "Separate Ways",
+      "aliases": [
+        "separate ways",
+        "caminhos separados"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "44",
+          "label": "[from source]",
+          "summary": "context with no connection to the others; integration is expensive"
+        }
+      ]
+    },
+    {
+      "key": "big_ball_of_mud",
+      "title": "Big Ball of Mud",
+      "aliases": [
+        "big ball of mud",
+        "grande bola de lama",
+        "bola de lama"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "45",
+          "label": "[from source]",
+          "summary": "draw a boundary around the mess; do not apply sophisticated modeling; watch for spreading"
+        }
+      ]
+    },
+    {
+      "key": "core_domain",
+      "title": "Core Domain",
+      "aliases": [
+        "core domain",
+        "dominio central",
+        "domínio central",
+        "destilacao",
+        "distillation"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "46",
+          "label": "[from source]",
+          "summary": "distillation chapter"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "47",
+          "label": "[from source]",
+          "summary": "define the core, keep it small, apply the best talent"
+        }
+      ]
+    },
+    {
+      "key": "generic_subdomain",
+      "title": "Generic Subdomains",
+      "aliases": [
+        "generic subdomain",
+        "generic subdomains",
+        "subdominio generico",
+        "subdomínio genérico"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "48",
+          "label": "[from source]",
+          "summary": "factor into separate modules, lowest priority, consider off-the-shelf"
+        }
+      ]
+    },
+    {
+      "key": "distillation_patterns",
+      "title": "Domain Vision Statement, Highlighted Core, Cohesive Mechanisms, Segregated Core, Abstract Core",
+      "aliases": [
+        "domain vision statement",
+        "highlighted core",
+        "cohesive mechanisms",
+        "segregated core",
+        "abstract core"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "49",
+          "label": "[from source]",
+          "summary": "Domain Vision Statement"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "50",
+          "label": "[from source]",
+          "summary": "Highlighted Core"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "51",
+          "label": "[from source]",
+          "summary": "Cohesive Mechanisms"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "52",
+          "label": "[from source]",
+          "summary": "Segregated Core"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "53",
+          "label": "[from source]",
+          "summary": "Abstract Core"
+        }
+      ]
+    },
+    {
+      "key": "large_scale_structure",
+      "title": "Large-scale Structure",
+      "aliases": [
+        "large-scale structure",
+        "evolving order",
+        "system metaphor",
+        "responsibility layers",
+        "knowledge level",
+        "pluggable component framework"
+      ],
+      "entries": [
+        {
+          "sigla": "DDD",
+          "pages": "54",
+          "label": "[from source]",
+          "summary": "overview"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "55",
+          "label": "[from source]",
+          "summary": "Evolving Order"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "56",
+          "label": "[from source]",
+          "summary": "System Metaphor"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "57",
+          "label": "[from source]",
+          "summary": "Responsibility Layers"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "58",
+          "label": "[from source]",
+          "summary": "Knowledge Level"
+        },
+        {
+          "sigla": "DDD",
+          "pages": "59",
+          "label": "[from source]",
+          "summary": "Pluggable Component Framework"
+        }
+      ]
+    },
+    {
+      "key": "clean_architecture_2011",
+      "title": "'Clean Architecture' post (2011): hide UI/framework/database; defer decisions",
+      "aliases": [
+        "clean architecture 2011",
+        "decoupling",
+        "desacoplar",
+        "interactor",
+        "adiar decisoes",
+        "defer decisions",
+        "rails"
+      ],
+      "entries": [
+        {
+          "sigla": "CA11",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "reluctance to hide framework, UI or database"
+        },
+        {
+          "sigla": "CA11",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "controller unpacks HttpRequest into a simple structure; interactor implements the use case"
+        },
+        {
+          "sigla": "CA11",
+          "pages": "3",
+          "label": "[from source]",
+          "summary": "test without the UI; architecture allows (does not require) deferring decisions"
+        },
+        {
+          "sigla": "CA11",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "decoupling matters more than convention; GOOS vs inside-out"
+        },
+        {
+          "sigla": "CA11",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "not BDUF; old ideas (Parnas, DeMarco, Booch, Jacobson)"
+        }
+      ]
+    },
+    {
+      "key": "clean_architecture_properties",
+      "title": "Five properties of architectures (CA12)",
+      "aliases": [
+        "independent of frameworks",
+        "testable",
+        "independencia de framework",
+        "propriedades"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "1-2",
+          "label": "[from source]",
+          "summary": "Hexagonal, Onion, DCI, BCE: same goal (separation of concerns)"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "independent of frameworks, testable, independent of UI, database and any external agent"
+        }
+      ]
+    },
+    {
+      "key": "dependency_rule",
+      "title": "The Dependency Rule",
+      "aliases": [
+        "dependency rule",
+        "regra de dependencia",
+        "regra de dependência",
+        "inwards",
+        "para dentro"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "3",
+          "label": "[from source]",
+          "summary": "source code dependencies only point inward; names of outer circles must not appear in inner circles; external data formats must not either"
+        }
+      ]
+    },
+    {
+      "key": "concentric_circles",
+      "title": "Concentric circles: Entities, Use Cases, Interface Adapters, Frameworks and Drivers",
+      "aliases": [
+        "circulos concentricos",
+        "círculos concêntricos",
+        "four circles",
+        "quatro circulos",
+        "entities",
+        "use cases",
+        "interface adapters",
+        "frameworks and drivers",
+        "camadas da clean architecture"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "3",
+          "label": "[from source]",
+          "summary": "circles: outer ones are mechanisms, inner ones are policies; Entities"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "3-4",
+          "label": "[from source]",
+          "summary": "Use Cases"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "4-5",
+          "label": "[from source]",
+          "summary": "Interface Adapters (MVC, SQL restricted to the layer)"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "Frameworks and Drivers; 'only four circles?': schematic, there may be more"
+        }
+      ]
+    },
+    {
+      "key": "crossing_boundaries",
+      "title": "Crossing boundaries: DIP and Output Port",
+      "aliases": [
+        "crossing boundaries",
+        "cruzar fronteiras",
+        "output port",
+        "porta de saida",
+        "presenter",
+        "fluxo de controle"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "flow of control vs source code dependency"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "6",
+          "label": "[from source]",
+          "summary": "use case calls an interface in the inner circle; presenter implements it"
+        }
+      ]
+    },
+    {
+      "key": "boundary_data",
+      "title": "Data crossing boundaries",
+      "aliases": [
+        "dto",
+        "data transfer object",
+        "boundary data",
+        "dados na fronteira",
+        "rowstructure"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "6",
+          "label": "[from source]",
+          "summary": "simple, isolated structures; do not pass Entities or database rows"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "7",
+          "label": "[from source]",
+          "summary": "always in the form most convenient to the inner circle"
+        }
+      ]
+    },
+    {
+      "key": "details_web_db",
+      "title": "Web and database are details",
+      "aliases": [
+        "web is a detail",
+        "banco e detalhe",
+        "database is a detail",
+        "detalhe"
+      ],
+      "entries": [
+        {
+          "sigla": "CA12",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "the Web is a detail, the database is a detail; kept at the edge"
+        }
+      ]
+    },
+    {
+      "key": "srp",
+      "title": "Single Responsibility Principle",
+      "aliases": [
+        "srp",
+        "single responsibility",
+        "responsabilidade unica",
+        "responsabilidade única",
+        "razao para mudar",
+        "razão para mudar",
+        "reason to change"
+      ],
+      "entries": [
+        {
+          "sigla": "SRP",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "Parnas (1972): separate by decisions likely to change"
+        },
+        {
+          "sigla": "SRP",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "one and only one reason to change; question: to whom does the program answer"
+        },
+        {
+          "sigla": "SRP",
+          "pages": "3-4",
+          "label": "[from source]",
+          "summary": "Employee example: CFO, COO, CTO"
+        },
+        {
+          "sigla": "SRP",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "the principle is about people"
+        },
+        {
+          "sigla": "SRP",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "gather together... separate...; SQL does not go in a JSP"
+        },
+        {
+          "sigla": "SREL",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "microservices do not solve the mixing of reasons for change"
+        }
+      ]
+    },
+    {
+      "key": "ocp",
+      "title": "Open-Closed Principle",
+      "aliases": [
+        "ocp",
+        "open-closed",
+        "open closed",
+        "aberto fechado",
+        "aberto/fechado",
+        "plugin",
+        "plugins"
+      ],
+      "entries": [
+        {
+          "sigla": "OCP",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "Meyer (1988): open = available for extension; closed = available for use"
+        },
+        {
+          "sigla": "OCP",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "extend behavior without modifying the system; Shotgun Surgery"
+        },
+        {
+          "sigla": "OCP",
+          "pages": "3",
+          "label": "[from source]",
+          "summary": "plugins as the apotheosis of the OCP; plugin dependencies point toward the system"
+        },
+        {
+          "sigla": "OCP",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "plugin architecture as an important aspect of the future"
+        },
+        {
+          "sigla": "SREL",
+          "pages": "2-3",
+          "label": "[from source]",
+          "summary": "OCP: open for extension, closed for modification; device independence"
+        }
+      ]
+    },
+    {
+      "key": "lsp",
+      "title": "Liskov Substitution Principle",
+      "aliases": [
+        "lsp",
+        "liskov",
+        "substituicao de liskov",
+        "substituição de liskov",
+        "subtipagem"
+      ],
+      "entries": [
+        {
+          "sigla": "SREL",
+          "pages": "3-4",
+          "label": "[from source]",
+          "summary": "a program that uses an interface must not be confused by an implementation; subtyping, not inheritance; if/switch proliferate"
+        }
+      ]
+    },
+    {
+      "key": "isp",
+      "title": "Interface Segregation Principle",
+      "aliases": [
+        "isp",
+        "interface segregation",
+        "segregacao de interfaces"
+      ],
+      "entries": [
+        {
+          "sigla": "SREL",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "small interfaces; recompilation/redeployment; statically typed languages"
+        }
+      ]
+    },
+    {
+      "key": "dip",
+      "title": "Dependency Inversion Principle",
+      "aliases": [
+        "dip",
+        "dependency inversion",
+        "inversao de dependencia",
+        "inversão de dependência"
+      ],
+      "entries": [
+        {
+          "sigla": "SREL",
+          "pages": "4-5",
+          "label": "[from source]",
+          "summary": "depend in the direction of abstraction; high-level rules isolated from details"
+        },
+        {
+          "sigla": "CA12",
+          "pages": "5-6",
+          "label": "[from source]",
+          "summary": "DIP makes source code dependencies oppose the flow of control"
+        }
+      ]
+    },
+    {
+      "key": "solid_relevance",
+      "title": "Relevance of SOLID",
+      "aliases": [
+        "solid",
+        "solid relevance",
+        "relevancia do solid",
+        "dan north",
+        "simple code"
+      ],
+      "entries": [
+        {
+          "sigla": "SREL",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "letter and arguments against SOLID; Dan North"
+        },
+        {
+          "sigla": "SREL",
+          "pages": "1-2",
+          "label": "[from source]",
+          "summary": "software is still sequence, selection and iteration"
+        },
+        {
+          "sigla": "SREL",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "simplicity requires disciplines guided by principles"
+        }
+      ]
+    },
+    {
+      "key": "complexity_root_cause",
+      "title": "Complexity as the root cause",
+      "aliases": [
+        "complexity",
+        "complexidade",
+        "software crisis",
+        "crise do software",
+        "brooks",
+        "root cause"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "abstract and introduction: state, code volume and control"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "complexity is the root of most problems"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "this is not computational complexity theory"
+        }
+      ]
+    },
+    {
+      "key": "testing_vs_reasoning",
+      "title": "Testing vs. informal reasoning",
+      "aliases": [
+        "testing",
+        "informal reasoning",
+        "raciocinio informal",
+        "teste"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "4",
+          "label": "[from source]",
+          "summary": "two approaches; informal reasoning is the most important"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "5",
+          "label": "[from source]",
+          "summary": "testing shows the presence of bugs, not their absence; simplicity wins"
+        }
+      ]
+    },
+    {
+      "key": "state",
+      "title": "State as a cause of complexity",
+      "aliases": [
+        "state",
+        "estado",
+        "estado mutavel",
+        "mutable state",
+        "contaminacao",
+        "contaminação"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "6",
+          "label": "[from source]",
+          "summary": "state = mutable state; impact on testing"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "7",
+          "label": "[from source]",
+          "summary": "impact on informal reasoning"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "8",
+          "label": "[from source]",
+          "summary": "number of states doubles per bit; contamination"
+        }
+      ]
+    },
+    {
+      "key": "control",
+      "title": "Control (order of execution) and concurrency",
+      "aliases": [
+        "control",
+        "controle",
+        "concurrency",
+        "concorrencia",
+        "concorrência"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "8-9",
+          "label": "[from source]",
+          "summary": "control over-specifies the 'how'"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "10",
+          "label": "[from source]",
+          "summary": "concurrency with shared state: non-repeatable tests"
+        }
+      ]
+    },
+    {
+      "key": "code_volume",
+      "title": "Code volume and other causes",
+      "aliases": [
+        "code volume",
+        "volume de codigo",
+        "dead code",
+        "complexity breeds complexity",
+        "power corrupts"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "10-11",
+          "label": "[from source]",
+          "summary": "code volume: nonlinear; reduce to a minimum"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "11-12",
+          "label": "[from source]",
+          "summary": "duplication, dead code, unnecessary abstraction; complexity breeds complexity; simplicity is hard; power corrupts"
+        }
+      ]
+    },
+    {
+      "key": "oop_critique",
+      "title": "Critique of OOP (state, identity)",
+      "aliases": [
+        "oop",
+        "object-oriented",
+        "orientacao a objetos",
+        "object identity",
+        "identidade de objeto"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "12-14",
+          "label": "[from source]",
+          "summary": "OOP is imperative; encapsulation and multi-object constraints; intensional identity and Value Objects"
+        }
+      ]
+    },
+    {
+      "key": "functional_programming",
+      "title": "Functional programming and referential transparency",
+      "aliases": [
+        "functional programming",
+        "programacao funcional",
+        "referential transparency",
+        "transparencia referencial"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "15",
+          "label": "[from source]",
+          "summary": "referential transparency improves testing and reasoning"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "16-18",
+          "label": "[from source]",
+          "summary": "state simulated through parameters; weakness: real systems keep state; monads"
+        }
+      ]
+    },
+    {
+      "key": "essential_accidental",
+      "title": "Essential vs. accidental complexity",
+      "aliases": [
+        "essential complexity",
+        "accidental complexity",
+        "complexidade essencial",
+        "complexidade acidental"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "21",
+          "label": "[from source]",
+          "summary": "definitions (essential = inherent in the problem as seen by the users)"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "22",
+          "label": "[from source]",
+          "summary": "disagreement with Brooks/Booch; goal: eliminate the accidental"
+        }
+      ]
+    },
+    {
+      "key": "ideal_world",
+      "title": "Ideal world: essential vs. accidental state",
+      "aliases": [
+        "ideal world",
+        "mundo ideal",
+        "tabela 1",
+        "table 1",
+        "derived data",
+        "dados derivados",
+        "cache"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "23-24",
+          "label": "[from source]",
+          "summary": "informal requirements -> formal, executable ones"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "25-26",
+          "label": "[from source]",
+          "summary": "classification of data (Table 1)"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "27",
+          "label": "[from source]",
+          "summary": "no caches; control is accidental"
+        }
+      ]
+    },
+    {
+      "key": "avoid_separate",
+      "title": "Avoid and Separate (recommendations)",
+      "aliases": [
+        "avoid",
+        "separate",
+        "evitar",
+        "separar",
+        "tabela 2",
+        "table 2",
+        "recommended architecture",
+        "arquitetura recomendada"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "30-31",
+          "label": "[from source]",
+          "summary": "necessary accidental complexity: performance and ease of expression"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "31",
+          "label": "[from source]",
+          "summary": "recommendations: avoid and separate"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "33",
+          "label": "[from source]",
+          "summary": "Table 2"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "34",
+          "label": "[from source]",
+          "summary": "the system must work without the useful accidental part"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "35-36",
+          "label": "[from source]",
+          "summary": "Figure 1: reference constraints among the components"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "36-37",
+          "label": "[from source]",
+          "summary": "premature optimization"
+        }
+      ]
+    },
+    {
+      "key": "relational_model",
+      "title": "Relational model",
+      "aliases": [
+        "relational model",
+        "modelo relacional",
+        "relvar",
+        "relational algebra",
+        "algebra relacional",
+        "codd"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "37",
+          "label": "[from source]",
+          "summary": "four aspects: structure, manipulation, integrity, data independence; SQL is not the model"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "41-42",
+          "label": "[from source]",
+          "summary": "relational algebra and extensions"
+        }
+      ]
+    },
+    {
+      "key": "frp",
+      "title": "Functional Relational Programming (FRP)",
+      "aliases": [
+        "frp",
+        "functional relational programming",
+        "functional relational",
+        "feeders",
+        "observers"
+      ],
+      "entries": [
+        {
+          "sigla": "TARPIT",
+          "pages": "42",
+          "label": "[from source]",
+          "summary": "FRP is hypothetical; do not confuse with functional reactive programming"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "43-47",
+          "label": "[from source]",
+          "summary": "four components: essential state, essential logic, accidental state and control, other (feeders/observers)"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "47-49",
+          "label": "[from source]",
+          "summary": "required infrastructure"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "50-53",
+          "label": "[from source]",
+          "summary": "benefits; data abstraction"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "54-63",
+          "label": "[from source]",
+          "summary": "real estate example"
+        },
+        {
+          "sigla": "TARPIT",
+          "pages": "64",
+          "label": "[from source]",
+          "summary": "conclusions"
+        }
+      ]
+    },
+    {
+      "key": "reactive_systems",
+      "title": "Reactive Systems (Manifesto Reativo 2.0)",
+      "aliases": [
+        "reactive",
+        "reativo",
+        "reactive systems",
+        "manifesto reativo",
+        "reactive manifesto"
+      ],
+      "entries": [
+        {
+          "sigla": "REACT",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "motivation and four attributes"
+        },
+        {
+          "sigla": "REACT",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "composition at all levels of scale"
+        }
+      ]
+    },
+    {
+      "key": "responsive",
+      "title": "Responsive",
+      "aliases": [
+        "responsive",
+        "responsivo"
+      ],
+      "entries": [
+        {
+          "sigla": "REACT",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "responds in a timely manner; consistent times with upper bounds"
+        }
+      ]
+    },
+    {
+      "key": "resilient",
+      "title": "Resilient",
+      "aliases": [
+        "resilient",
+        "resiliente",
+        "resiliencia",
+        "resiliência"
+      ],
+      "entries": [
+        {
+          "sigla": "REACT",
+          "pages": "1",
+          "label": "[from source]",
+          "summary": "replication, containment, isolation and delegation; recovery delegated to another component"
+        }
+      ]
+    },
+    {
+      "key": "elastic",
+      "title": "Elastic",
+      "aliases": [
+        "elastic",
+        "elastico",
+        "elástico",
+        "elasticidade"
+      ],
+      "entries": [
+        {
+          "sigla": "REACT",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "no contention points or central bottlenecks; shard or replicate; predictive and reactive scaling"
+        }
+      ]
+    },
+    {
+      "key": "message_driven",
+      "title": "Message Driven e back-pressure",
+      "aliases": [
+        "message driven",
+        "orientado a mensagens",
+        "back-pressure",
+        "backpressure",
+        "location transparency",
+        "transparencia de localizacao"
+      ],
+      "entries": [
+        {
+          "sigla": "REACT",
+          "pages": "2",
+          "label": "[from source]",
+          "summary": "asynchronous messages; isolation, location transparency; queues, back-pressure; non-blocking communication"
+        }
+      ]
+    }
+  ],
+  "not_covered": {
+    "screaming architecture": "Only MENTIONED as a reference in CA12 p.2 (and as a post title in sidebar lists). The concept is not explained in the PDFs.",
+    "the lost years": "Not in the corpus: the CA11 PDF is the 'Clean Architecture' post (2011), not 'Architecture: The Lost Years'.",
+    "supporting subdomain": "The DDD booklet covers Core Domain and Generic Subdomains; 'supporting subdomain' does not appear.",
+    "subdominio de suporte": "The DDD booklet covers Core Domain and Generic Subdomains; 'supporting subdomain' does not appear.",
+    "cqrs": "Only mentioned in the DDD acknowledgments (p.4); no pattern is described.",
+    "event sourcing": "Only mentioned in the DDD acknowledgments (p.4); no pattern is described.",
+    "event storming": "Not in the corpus.",
+    "saga": "Not in the corpus.",
+    "outbox": "Not in the corpus.",
+    "microservices": "They appear only in SREL p.1-2 (argument that they do not solve the SRP); there is no treatment of microservice architecture.",
+    "microsservicos": "They appear only in SREL p.1-2 (argument that they do not solve the SRP); there is no treatment of microservice architecture.",
+    "hexagonal": "Only MENTIONED: CA12 p.1 (Ports and Adapters) and DDD p.17. No detailed description.",
+    "ports and adapters": "Only MENTIONED: CA12 p.1. No detailed description.",
+    "ator": "The word 'ator' (actor) does NOT appear in the SRP post; it is from the book Clean Architecture (2017), outside the corpus.",
+    "actor": "The word 'actor' does NOT appear in the SRP post; it is from the book Clean Architecture (2017), outside the corpus.",
+    "functional core": "Pattern by Gary Bernhardt; it is NOT in TARPIT nor in the other PDFs.",
+    "imperative shell": "Pattern by Gary Bernhardt; it is NOT in TARPIT nor in the other PDFs.",
+    "circuit breaker": "Not in the corpus (REACT does not cite resilience patterns).",
+    "bulkhead": "Not in the corpus.",
+    "kubernetes": "Not in the corpus.",
+    "akka": "Not in the corpus.",
+    "reactive streams": "Not in the corpus.",
+    "rectangle square": "The Rectangle/Square example is not in SREL.",
+    "retangulo quadrado": "The Rectangle/Square example is not in SREL.",
+    "anemic domain model": "Name coined by Fowler; the DDD booklet describes the symptom (p.24) without using the name.",
+    "modelo anemico": "Name coined by Fowler; the DDD booklet describes the symptom (p.24) without using the name.",
+    "mass assignment": "Not in the corpus.",
+    "clean architecture book": "The book Clean Architecture (2017) is not part of the corpus; only the 2011 and 2012 posts are."
+  }
+}

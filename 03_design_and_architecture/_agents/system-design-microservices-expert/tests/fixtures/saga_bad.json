@@ -1,0 +1,11 @@
+{
+  "name": "Order (bad)",
+  "type": "orchestration",
+  "uses_distributed_transaction": true,
+  "steps": [
+    {"name": "Reserve stock", "service": "Inventory", "idempotent": true, "publishes_event": true, "outbox": false, "sync": true},
+    {"name": "Validate coupon", "service": "Coupons", "compensation": "Reactivate coupon", "idempotent": false, "publishes_event": true, "outbox": false, "sync": true},
+    {"name": "Charge", "service": "Payment", "pivot": true, "idempotent": true, "publishes_event": true, "outbox": true, "sync": true},
+    {"name": "Issue invoice", "service": "Invoice", "idempotent": false, "publishes_event": false}
+  ]
+}

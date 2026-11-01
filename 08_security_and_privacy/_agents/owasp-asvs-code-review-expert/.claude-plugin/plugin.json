@@ -1,0 +1,23 @@
+{
+  "name": "owasp-asvs-code-review-expert",
+  "version": "1.0.0",
+  "description": "Specialist in application security verification and secure code review based on OWASP ASVS 4.0.3 (requirements V1-V14, levels L1/L2/L3) and the OWASP Code Review Guide v2.0 (risk-based methodology, applied threat modeling, per-vulnerability analysis with Java/.NET/PHP/C examples): requirement lookup by ID/topic/level, checklists by level and chapter with count validation, evaluation of answers, and a simple static linter for patterns documented in the OCRG.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "owasp",
+    "asvs",
+    "code-review",
+    "appsec",
+    "secure-code-review",
+    "threat-modeling",
+    "injection",
+    "xss",
+    "authentication",
+    "session-management",
+    "access-control",
+    "cryptography",
+    "checklist",
+    "cwe"
+  ]
+}

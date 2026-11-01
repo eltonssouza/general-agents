@@ -1,0 +1,15 @@
+{
+  "name": "audit-orchestrator",
+  "version": "3.0.0",
+  "description": "Universal software security audit orchestrator (Universal Audit Multiagent v3.0). Use proactively when asked to \"audit this repository\", \"run a full security audit\", \"look for vulnerabilities, backdoors, LGPD issues, supply chain, infrastructure or AI problems in this project\". Runs the preflight (scope, authorization, read-only), inventory, threat model and tasks across the 20 domains; dispatches the specialized auditors; requires output in the agent-result contract; runs gate G2 (audit_contracts.py); sends the candidates to the audit-evidence-validator in an independent context and only...",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "security-audit",
+    "multiagent",
+    "universal-audit",
+    "orchestrator"
+  ]
+}

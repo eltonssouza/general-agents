@@ -1,0 +1,13 @@
+{
+  "ARQ01": "yes",
+  "ARQ02": "partial",
+  "TOOL01": "yes",
+  "TOOL03": "no",
+  "TOOL07": "na",
+  "MEM05": "no",
+  "CTX02": "partial",
+  "SEG01": "yes",
+  "SEG03": "no",
+  "SEG04": "no",
+  "AVL01": "partial"
+}

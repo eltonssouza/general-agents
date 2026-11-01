@@ -1,0 +1,316 @@
+{
+ "origem": "Items: [inference] in question form; the practice assessed comes from the book (PDF pages indicated). The book has NO checklist or maturity model.",
+ "areas": {
+  "ORG": "Organization and culture",
+  "FB": "Feedback loops",
+  "CA": "Build cache",
+  "TS": "Tests and distribution",
+  "DT": "Data and profiling",
+  "FA": "Failures and troubleshooting",
+  "RE": "Reliability and reproducibility",
+  "FK": "Flaky tests",
+  "EC": "Economics and bias"
+ },
+ "items": [
+  {
+   "id": "ORG-01",
+   "area": "ORG",
+   "text": "Is there a team (or person) dedicated to DPE, with its own goals and metrics?",
+   "pages": "19"
+  },
+  {
+   "id": "ORG-02",
+   "area": "ORG",
+   "text": "Is there explicit executive sponsorship for the practice?",
+   "pages": "11, 19"
+  },
+  {
+   "id": "ORG-03",
+   "area": "ORG",
+   "text": "Do CI/CD decisions consider the effect on developer productivity, and not only auditability or vulnerability checks?",
+   "pages": "17"
+  },
+  {
+   "id": "ORG-04",
+   "area": "ORG",
+   "text": "Is there a declared culture of continuously improving toolchain productivity?",
+   "pages": "17"
+  },
+  {
+   "id": "ORG-05",
+   "area": "ORG",
+   "text": "Is the prioritization of improvements driven by data and not just by who complains the loudest?",
+   "pages": "70, 84"
+  },
+  {
+   "id": "ORG-06",
+   "area": "ORG",
+   "text": "Is the impact of the toolchain team's work visible (before/after, trend) to the organization?",
+   "pages": "56"
+  },
+  {
+   "id": "FB-01",
+   "area": "FB",
+   "text": "Are local build time (with tests) and the frequency of builds per developer measured?",
+   "pages": "28-29"
+  },
+  {
+   "id": "FB-02",
+   "area": "FB",
+   "text": "Does the local build with tests usually stay under ~10 minutes?",
+   "pages": "29-30"
+  },
+  {
+   "id": "FB-03",
+   "area": "FB",
+   "text": "Is the local quality gate (tests before the push) preserved, without shifting feedback to after the pull request?",
+   "pages": "32-33, 40"
+  },
+  {
+   "id": "FB-04",
+   "area": "FB",
+   "text": "Are small, frequent changes encouraged by the workflow and the build speed?",
+   "pages": "30"
+  },
+  {
+   "id": "FB-05",
+   "area": "FB",
+   "text": "Is CI feedback time (PR and integration branch) measured and tracked?",
+   "pages": "80"
+  },
+  {
+   "id": "CA-01",
+   "area": "CA",
+   "text": "Is the local build cache enabled?",
+   "pages": "40"
+  },
+  {
+   "id": "CA-02",
+   "area": "CA",
+   "text": "Is there a remote cache, written by CI and read by CI and local machines?",
+   "pages": "40"
+  },
+  {
+   "id": "CA-03",
+   "area": "CA",
+   "text": "Has modularization been assessed (leaf modules, unstable modules with many dependents)?",
+   "pages": "41, 52"
+  },
+  {
+   "id": "CA-04",
+   "area": "CA",
+   "text": "Are volatile inputs (timestamps, non-reproducible generators) detected and eliminated?",
+   "pages": "41-42, 52"
+  },
+  {
+   "id": "CA-05",
+   "area": "CA",
+   "text": "Is the cache hit rate monitored per action/task?",
+   "pages": "53-54"
+  },
+  {
+   "id": "CA-06",
+   "area": "CA",
+   "text": "Is the cache infrastructure (download bandwidth, storage) monitored?",
+   "pages": "41"
+  },
+  {
+   "id": "CA-07",
+   "area": "CA",
+   "text": "Are toolchains (e.g., JVM version and vendor) standardized to avoid misses?",
+   "pages": "57"
+  },
+  {
+   "id": "TS-01",
+   "area": "TS",
+   "text": "Is the fraction of build time spent on tests known?",
+   "pages": "43, 47"
+  },
+  {
+   "id": "TS-02",
+   "area": "TS",
+   "text": "Have implicit dependencies between tests and shared resources been addressed or isolated?",
+   "pages": "43"
+  },
+  {
+   "id": "TS-03",
+   "area": "TS",
+   "text": "Is the available test parallelism (even on a single machine) enabled?",
+   "pages": "52"
+  },
+  {
+   "id": "TS-04",
+   "area": "TS",
+   "text": "Has test distribution (or an alternative better than CI fanout) been evaluated?",
+   "pages": "44-46"
+  },
+  {
+   "id": "TS-05",
+   "area": "TS",
+   "text": "Have very large test classes been identified and split when they limit balancing?",
+   "pages": "47, 52"
+  },
+  {
+   "id": "DT-01",
+   "area": "DT",
+   "text": "Does every toolchain run, local and CI, generate data that is collected centrally?",
+   "pages": "53-54"
+  },
+  {
+   "id": "DT-02",
+   "area": "DT",
+   "text": "Are the median and percentiles (not just the mean) of build time tracked over windows of weeks?",
+   "pages": "56"
+  },
+  {
+   "id": "DT-03",
+   "area": "DT",
+   "text": "Is it possible to compare two builds (failed vs. successful; hit vs. miss)?",
+   "pages": "57, 65"
+  },
+  {
+   "id": "DT-04",
+   "area": "DT",
+   "text": "Are I/O, memory and network bottlenecks (dependency downloads, disk, antivirus, latency to caches) measured?",
+   "pages": "52-53"
+  },
+  {
+   "id": "DT-05",
+   "area": "DT",
+   "text": "Is there a durable, browsable record of each build with deep links?",
+   "pages": "62-63"
+  },
+  {
+   "id": "FA-01",
+   "area": "FA",
+   "text": "Are failures classified into verification vs. non-verification?",
+   "pages": "60"
+  },
+  {
+   "id": "FA-02",
+   "area": "FA",
+   "text": "Is the non-verification failure rate measured (open source project reference: 2-5% of builds, 3-10% of test builds)?",
+   "pages": "64"
+  },
+  {
+   "id": "FA-03",
+   "area": "FA",
+   "text": "Is the owner of each failure type clear (developer vs. build/CI team)?",
+   "pages": "60-61"
+  },
+  {
+   "id": "FA-04",
+   "area": "FA",
+   "text": "Is the failure list prioritized in this order: new frequent non-verification, old actionable, frequent verification, other quick ones?",
+   "pages": "71"
+  },
+  {
+   "id": "FA-05",
+   "area": "FA",
+   "text": "Is the MTTR of build failures measured?",
+   "pages": "61, 71"
+  },
+  {
+   "id": "FA-06",
+   "area": "FA",
+   "text": "Are avoidable lint and formatting failures prevented (IDE auto-format, git hook)?",
+   "pages": "71"
+  },
+  {
+   "id": "RE-01",
+   "area": "RE",
+   "text": "Are builds reproducible (declared inputs, no dependence on environment state)?",
+   "pages": "68-69"
+  },
+  {
+   "id": "RE-02",
+   "area": "RE",
+   "text": "Are reliability regressions detected quickly, with visibility into who was affected?",
+   "pages": "68"
+  },
+  {
+   "id": "RE-03",
+   "area": "RE",
+   "text": "Do developers rarely need to repeat the build, clear caches or re-clone the workspace to get unblocked?",
+   "pages": "66"
+  },
+  {
+   "id": "FK-01",
+   "area": "FK",
+   "text": "Are flaky tests identified using run history (not just by reports)?",
+   "pages": "73, 75"
+  },
+  {
+   "id": "FK-02",
+   "area": "FK",
+   "text": "Is there a strategy of re-running in a different order, in isolation and in another environment to classify the cause?",
+   "pages": "73-74"
+  },
+  {
+   "id": "FK-03",
+   "area": "FK",
+   "text": "Is there an explicit target of fewer than 1% of developer pipeline runs failing due to non-verification?",
+   "pages": "74"
+  },
+  {
+   "id": "FK-04",
+   "area": "FK",
+   "text": "Is the probability of a flaky-free run (P_pass) estimated for the test suite?",
+   "pages": "74"
+  },
+  {
+   "id": "FK-05",
+   "area": "FK",
+   "text": "Are retries used without masking flakiness (the test remains marked as flaky)?",
+   "pages": "74"
+  },
+  {
+   "id": "FK-06",
+   "area": "FK",
+   "text": "Is there a quarantine for flaky tests that does not block integration?",
+   "pages": "75"
+  },
+  {
+   "id": "FK-07",
+   "area": "FK",
+   "text": "Are there regular Flaky Fix-It Days?",
+   "pages": "67, 75"
+  },
+  {
+   "id": "FK-08",
+   "area": "FK",
+   "text": "Do new and modified tests go through aggressive retries to catch flakiness early?",
+   "pages": "74"
+  },
+  {
+   "id": "EC-01",
+   "area": "EC",
+   "text": "Is the waiting cost of local and CI builds quantified with the organization's own data?",
+   "pages": "79-80"
+  },
+  {
+   "id": "EC-02",
+   "area": "EC",
+   "text": "Is the debugging cost of code failures and build logic failures estimated?",
+   "pages": "81-83"
+  },
+  {
+   "id": "EC-03",
+   "area": "EC",
+   "text": "Is the CI infrastructure cost known and linked to cache usage?",
+   "pages": "83"
+  },
+  {
+   "id": "EC-04",
+   "area": "EC",
+   "text": "Have the book's example assumptions (US$ 1/min, 80% waiting) been replaced with the organization's data?",
+   "pages": "78-79"
+  },
+  {
+   "id": "EC-05",
+   "area": "EC",
+   "text": "Have vendors' claimed gains (50-90% savings, hard ROI) been treated as hypotheses to validate?",
+   "pages": "42, 88-90"
+  }
+ ]
+}

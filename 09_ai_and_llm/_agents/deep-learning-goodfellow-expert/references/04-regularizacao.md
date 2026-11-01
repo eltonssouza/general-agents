@@ -1,0 +1,35 @@
+# 04 · Regularization (DLB ch. 7, PDF p.243-288)
+
+**Coverage:** read p.243-247, 250-264, 268, 271-285. **Not read:** p.248-249 (eigenvalues under L²), p.265-267 (early stopping as L²), p.269-270 (sparse representations), p.286-288 (tangent classifier, summary). Convention: DLB p.N = PDF page (printed = N − 15).
+
+## Overview
+- `[from source]` (DLB p.243-244) Regularization is any strategy that reduces the test error, even at the expense of the training error. In general it trades **increased bias for reduced variance**; the goal is to move the model from the overfitting regime (3rd) to the regime where it matches the generating process (2nd). In practice, the best model is usually "a large model regularized appropriately", because the true generating process is almost always outside the model family (p.244).
+
+## Norm penalties
+- `[from source]` (DLB p.245) J̃(θ;X,y) = J(θ;X,y) + αΩ(θ) (eq. 7.1); only the **weights** are penalized, not the biases (biases need less data; regularizing them causes underfitting); the same α can be used in all layers to reduce the search.
+- `[from source]` (DLB p.246-247) **L² / weight decay**: Ω = ½‖w‖² (equivalent to *ridge/Tikhonov*); the update w ← (1 − εα)w − ε∇J multiplicatively shrinks the weights before each step; under quadratic approximation w̃ = (H + αI)⁻¹Hw* (eq. 7.10).
+- `[from source]` (DLB p.250-251) **L¹**: Ω = ‖w‖₁, sub-gradient α·sign(w) + ∇J (7.19-7.20); with a diagonal Hessian, wᵢ = sign(wᵢ*)max(|wᵢ*| − α/Hᵢᵢ, 0) (7.23): L¹ produces **sparsity** (exact zeros), L² does not (w̃ᵢ = Hᵢᵢ/(Hᵢᵢ+α)·wᵢ*); LASSO (Tibshirani 1995) uses this for feature selection. L² = MAP with a Gaussian *prior* and L¹ = MAP with a Laplace *prior* (p.251).
+- `[from source]` (DLB p.252-254) The penalty is equivalent to a constraint (Lagrangian/KKT): larger α → smaller allowed region. **Explicit** constraints **with reprojection** avoid "dead" units (small weights in local minima) and the positive feedback of growing weights up to *overflow*; Hinton 2012c: limit the norm of each column of the weight matrix.
+- `[from source]` (DLB p.254-255) Regularization makes underdetermined problems well defined: invert XᵀX + αI instead of XᵀX; in logistic regression with separable classes w would grow without bound, and weight decay stops it; the pseudoinverse is the limit α → 0 (eq. 7.29).
+
+## Data and noise
+- `[from source]` (DLB p.255-256) **Data augmentation**: create (x,y) by transforming x; very effective in object recognition (translation, rotation, scaling); beware of transformations that change the class (b/d, 6/9: no flips or 180° rotation in OCR); helps in speech; comparing algorithms requires the same augmentation (p.256). Injecting noise into the input (Sietsma and Dow 1991), into the hidden layers and into the inputs of *denoising autoencoders*.
+- `[from source]` (DLB p.257-258) Noise on the weights (used in RNNs; stochastic Bayesian interpretation) is equivalent, for small η, to a penalty ηE‖∇_Wŷ‖² that pushes toward flat regions.
+- `[from source]` (DLB p.258) **Label smoothing**: targets ε/(k−1) and 1−ε in place of 0 and 1; MLE with hard targets may never converge because the softmax does not predict exactly 0 or 1; used since the 1980s (and in Szegedy 2015).
+- `[from source]` (DLB p.258-261) Semi-supervised (learn a representation h = f(x) using unlabeled data) and **multi-task learning** (shared lower layers; Fig. 7.2; Caruana 1993).
+
+## Early stopping
+- `[from source]` (DLB p.261-262) The training error falls and the validation error rises again (Fig. 7.3); a copy of the parameters is kept every time the validation error improves; **Algorithm 7.1** (evaluate every n steps; patience p; returns θ* and i*). "Probably the most commonly used form of regularization in deep learning" (p.262).
+- `[from source]` (DLB p.262-264) The number of steps is a hyperparameter with a U-shaped curve; cost: evaluating on validation and storing the copy; discrete regularization (barely alters training); how to use all the data afterwards: Alg. 7.2 (retrain from scratch for i* steps) or Alg. 7.3 (continue until validation falls below the training target; no guarantee of terminating).
+- `[from source]` (DLB p.268) Parameter tying: penalty ‖w⁽ᴬ⁾ − w⁽ᴮ⁾‖₂² between models of similar tasks.
+
+## Ensembles and dropout
+- `[from source]` (DLB p.271-273) **Bagging**: k models on k datasets sampled with replacement (each contains ~2/3 of the original examples, p.272); the expected squared error of the ensemble is v/k + (k−1)c/k (eq. 7.51, p.271): if the errors are uncorrelated (c = 0) it drops to v/k; if perfectly correlated (c = v), there is no improvement. Networks differ by initialization and minibatches. In scientific *benchmarks* a single model is used; competitions are won by ensembles (Netflix).
+- `[from source]` (DLB p.273-274) **Dropout** (Srivastava 2014): approximates bagging of an exponential number of sub-networks that **share parameters** (ensembles of 5-10 networks are the practical limit, p.273). Training: for each example, an independent binary mask per unit; typical inclusion probabilities **0.8 on the input and 0.5 on the hidden units** (p.274).
+- `[from source]` (DLB p.277-279) Inference: normalized geometric mean; **the *weight scaling* rule**: use the full model with the output weights of each unit multiplied by its inclusion probability (with p = ½, divide the weights by 2; p.278); exact for *softmax regression* (eq. 7.56-7.66) and linear networks, a good empirical approximation in nonlinear ones; 10 to 20 masks (Monte Carlo) already give good performance (p.277) and the rule can outperform sampling 1,000 sub-networks (p.279).
+- `[from source]` (DLB p.280-283) Cost O(n) per example; more effective than weight decay, filter norms and activity sparsity; requires a larger model and more iterations (loses effective capacity); not very effective with few labels (<5,000: Bayesian networks did better) and with enormous datasets; in linear regression it is equivalent to L² with a per-feature coefficient, but not in deep networks; *dropout boosting* does not regularize (only the "bagging" regularizes); multiplicative noise is essential (additive noise would let the ReLU grow); masking hidden units destroys extracted features, not raw values; *batch normalization* adds noise and sometimes makes dropout unnecessary (p.283).
+
+## Adversarial
+- `[from source]` (DLB p.283-284) Szegedy 2014b: human-level networks err on ~100% of examples built by optimization; Goodfellow 2014b: a main cause is **excessive linearity**: perturbing each input by ε can change a linear function by up to ε‖w‖₁; Fig. 7.8: x + 0.007·sign(∇ₓJ) changes "panda" (57.7%) to "gibbon" (99.3%). **Adversarial training** reduces error on the i.i.d. test set and encourages local constancy; virtual adversarial examples (Miyato 2015) serve semi-supervised learning (p.284). Tangent prop (7.67) penalizes the directional derivative along the manifold (p.285).
+
+`[DATED]` The book is from 2016: it does not cover later practices (for example, modern augmentation variants or adversarial defenses). Use `scripts/dlb_calc.py ensemble|dropout|earlystop|linadv`.

@@ -1,0 +1,2581 @@
+{
+ "source": "sicp.txt, taup.txt, ci.txt (markers === PAGE N ===; N = PDF page; TAUP printed = N - 2). Terms: all must appear (case-insensitive, whitespace normalized) on at least one of the listed pages (the set of pages); prefix 're:' = regular expression; 'a|b' inside a term = either alternative.",
+ "positive": [
+  {
+   "id": "P001",
+   "book": "SICP",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "evaluate the body of the procedure with each formal parameter replaced",
+    "substitution model for procedure application"
+   ],
+   "claim": "rule for applying the substitution model",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P002",
+   "book": "SICP",
+   "pages": [
+    30
+   ],
+   "terms": [
+    "not to provide a description of how the interpreter really works",
+    "breaks down"
+   ],
+   "claim": "substitution is for thinking and breaks down with mutable data",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P003",
+   "book": "SICP",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "normal-order evaluation",
+    "applicative-order evaluation",
+    "evaluations of (+ 5 1) and (* 5 2) are each performed twice"
+   ],
+   "claim": "normal order re-evaluates (+ 5 1) and (* 5 2)",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P004",
+   "book": "SICP",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "lisp uses applicative-order evaluation",
+    "multiple evaluations"
+   ],
+   "claim": "Lisp uses applicative order for efficiency",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P005",
+   "book": "SICP",
+   "pages": [
+    367,
+    368
+   ],
+   "terms": [
+    "(try 0 (/ 1 0))",
+    "lazy evaluation",
+    "non-strict"
+   ],
+   "claim": "lazy: try returns 1; strict vs non-strict",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P006",
+   "book": "SICP",
+   "pages": [
+    217
+   ],
+   "terms": [
+    "functional programming",
+    "no longer be interpreted in terms of the substitution model"
+   ],
+   "claim": "set! removes the substitution interpretation; functional programming",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P007",
+   "book": "SICP",
+   "pages": [
+    218,
+    219
+   ],
+   "terms": [
+    "make-decrementer",
+    "make-simplified-withdraw",
+    "the substitution model cannot do this"
+   ],
+   "claim": "substitution does not distinguish balance before and after the set!",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P008",
+   "book": "SICP",
+   "pages": [
+    219
+   ],
+   "terms": [
+    "a variable can no longer be simply a name",
+    "place where a value can be stored"
+   ],
+   "claim": "variable becomes a place",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P009",
+   "book": "SICP",
+   "pages": [
+    220
+   ],
+   "terms": [
+    "referentially transparent",
+    "equals can be substituted for equals"
+   ],
+   "claim": "definition of referential transparency",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P010",
+   "book": "SICP",
+   "pages": [
+    223
+   ],
+   "terms": [
+    "set! 25 (- 25 amount)",
+    "makes no sense"
+   ],
+   "claim": "note 9: (set! 25 ...) is meaningless",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P011",
+   "book": "SICP",
+   "pages": [
+    224
+   ],
+   "terms": [
+    "environment is a sequence of frames",
+    "bindings",
+    "unbound"
+   ],
+   "claim": "environment = sequence of frames",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P012",
+   "book": "SICP",
+   "pages": [
+    225,
+    226
+   ],
+   "terms": [
+    "pair consisting of some code and a pointer to an environment",
+    "lambda expression"
+   ],
+   "claim": "procedure = pair of code + environment",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P013",
+   "book": "SICP",
+   "pages": [
+    226,
+    227
+   ],
+   "terms": [
+    "create a new environment containing a frame that binds the parameters",
+    "enclosing environment of this frame is the environment specified by the procedure"
+   ],
+   "claim": "application creates a frame enclosed by the procedure's environment",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P014",
+   "book": "SICP",
+   "pages": [
+    232
+   ],
+   "terms": [
+    "not the global environment, but rather the environment E1"
+   ],
+   "claim": "the frame of (W1 50) has E1 as its enclosing environment",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P015",
+   "book": "SICP",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "lexical scoping",
+    "block structure",
+    "Algol 60"
+   ],
+   "claim": "lexical scoping and block structure",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P016",
+   "book": "CI",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "dynamic scope",
+    "dynamically scoped"
+   ],
+   "claim": "CI defines dynamic scope",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P017",
+   "book": "CI",
+   "pages": [
+    164
+   ],
+   "terms": [
+    "innermost scope",
+    "preceding declaration|appearing before"
+   ],
+   "claim": "Lox lexical resolution rule",
+   "ref": "modelos-de-avaliacao-substituicao-vs-ambiente.md"
+  },
+  {
+   "id": "P018",
+   "book": "SICP",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "first-class status",
+    "may be named by variables",
+    "included in data structures"
+   ],
+   "claim": "first-class elements",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P019",
+   "book": "SICP",
+   "pages": [
+    69
+   ],
+   "terms": [
+    "(define (sum term a next b)",
+    "sum-cubes",
+    "pi-sum"
+   ],
+   "claim": "generic sum",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P020",
+   "book": "SICP",
+   "pages": [
+    82
+   ],
+   "terms": [
+    "(define (deriv g)",
+    "dx"
+   ],
+   "claim": "deriv returns a procedure",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P021",
+   "book": "SICP",
+   "pages": [
+    94,
+    95
+   ],
+   "terms": [
+    "abstraction barriers",
+    "isolate different",
+    "make-rat"
+   ],
+   "claim": "abstraction barriers (figure 2.1)",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P022",
+   "book": "SICP",
+   "pages": [
+    96
+   ],
+   "terms": [
+    "gcd",
+    "do not have to be modified at all"
+   ],
+   "claim": "change gcd without touching add-rat",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P023",
+   "book": "SICP",
+   "pages": [
+    97
+   ],
+   "terms": [
+    "selectors and constructors",
+    "conditions that these procedures must fulfill"
+   ],
+   "claim": "data = constructors+selectors+conditions",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P024",
+   "book": "SICP",
+   "pages": [
+    98
+   ],
+   "terms": [
+    "message passing",
+    "scheme, and lisp systems in general, implement pairs directly"
+   ],
+   "claim": "procedural pairs and message passing",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P025",
+   "book": "SICP",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "closure property of cons",
+    "results of combining things with that operation can themselves be combined"
+   ],
+   "claim": "closure property",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P026",
+   "book": "SICP",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "abstract algebra",
+    "we do not use the word",
+    "closure"
+   ],
+   "claim": "note 6: closure is not used in the Lisp sense",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P027",
+   "book": "SICP",
+   "pages": [
+    117,
+    118
+   ],
+   "terms": [
+    "conventional interfaces",
+    "enumerator",
+    "accumulator"
+   ],
+   "claim": "conventional interfaces; signal flow",
+   "ref": "abstracao-procedural-e-dados-compostos.md"
+  },
+  {
+   "id": "P028",
+   "book": "SICP",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "more than one useful representation",
+    "polar form"
+   ],
+   "claim": "multiple representations",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P029",
+   "book": "SICP",
+   "pages": [
+    170,
+    171
+   ],
+   "terms": [
+    "rectangular form",
+    "polar form",
+    "mul-complex"
+   ],
+   "claim": "rectangular vs polar",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P030",
+   "book": "SICP",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "principle of least commitment"
+   ],
+   "claim": "principle of least commitment",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P031",
+   "book": "SICP",
+   "pages": [
+    175,
+    176
+   ],
+   "terms": [
+    "dispatching on type",
+    "not additive",
+    "two significant weaknesses"
+   ],
+   "claim": "explicit dispatch is not additive",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P032",
+   "book": "SICP",
+   "pages": [
+    176,
+    177
+   ],
+   "terms": [
+    "two-dimensional table",
+    "put",
+    "get"
+   ],
+   "claim": "operation×type table and put/get",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P033",
+   "book": "SICP",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "apply-generic",
+    "do not change at all if a new representation is added"
+   ],
+   "claim": "generic selectors do not change",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P034",
+   "book": "SICP",
+   "pages": [
+    181
+   ],
+   "terms": [
+    "message passing",
+    "intelligent data objects"
+   ],
+   "claim": "message passing: the table's columns",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P035",
+   "book": "SICP",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "rectangular form is preferable to polar form most of the time",
+    "roundoff"
+   ],
+   "claim": "note 43",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P036",
+   "book": "SICP",
+   "pages": [
+    189,
+    190
+   ],
+   "terms": [
+    "coercion",
+    "put-coercion",
+    "n2 procedures"
+   ],
+   "claim": "coercion",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P037",
+   "book": "SICP",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "raise",
+    "tower"
+   ],
+   "claim": "raise in the type tower",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P038",
+   "book": "SICP",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "more than one supertype",
+    "no unique way"
+   ],
+   "claim": "limits of the tower",
+   "ref": "programacao-orientada-a-dados-e-genericos.md"
+  },
+  {
+   "id": "P039",
+   "book": "SICP",
+   "pages": [
+    221
+   ],
+   "terms": [
+    "imperative programming",
+    "order of the assignments"
+   ],
+   "claim": "imperative programming and order of assignments",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P040",
+   "book": "SICP",
+   "pages": [
+    223
+   ],
+   "terms": [
+    "aliasing"
+   ],
+   "claim": "note 10: aliasing",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P041",
+   "book": "SICP",
+   "pages": [
+    279
+   ],
+   "terms": [
+    "admit time into our computational models"
+   ],
+   "claim": "time in the model",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P042",
+   "book": "SICP",
+   "pages": [
+    281
+   ],
+   "terms": [
+    "total amount of money in the system is not conserved|$75"
+   ],
+   "claim": "loss of conservation of money",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P043",
+   "book": "SICP",
+   "pages": [
+    282
+   ],
+   "terms": [
+    "same result as if the processes had run sequentially|same as if they had run sequentially",
+    "$70 or $90"
+   ],
+   "claim": "criterion of equivalent sequential execution",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P044",
+   "book": "SICP",
+   "pages": [
+    283
+   ],
+   "terms": [
+    "20 different possible orderings"
+   ],
+   "claim": "20 interleavings",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P045",
+   "book": "SICP",
+   "pages": [
+    284,
+    285
+   ],
+   "terms": [
+    "serialization",
+    "make-serializer",
+    "101 or 121"
+   ],
+   "claim": "serializers",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P046",
+   "book": "SICP",
+   "pages": [
+    290
+   ],
+   "terms": [
+    "mutex",
+    "once a mutex has been acquired"
+   ],
+   "claim": "mutex",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P047",
+   "book": "SICP",
+   "pages": [
+    291
+   ],
+   "terms": [
+    "must be performed atomically",
+    "time-slicing",
+    "multiprocessing computers provide instructions"
+   ],
+   "claim": "atomic test-and-set!",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P048",
+   "book": "SICP",
+   "pages": [
+    292
+   ],
+   "terms": [
+    "deadlock",
+    "unique identification number",
+    "lowest-numbered account first"
+   ],
+   "claim": "deadlock and numbering",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P049",
+   "book": "SICP",
+   "pages": [
+    299
+   ],
+   "terms": [
+    "(cons-stream <a> <b>)",
+    "(cons <a> (delay <b>))"
+   ],
+   "claim": "cons-stream",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P050",
+   "book": "SICP",
+   "pages": [
+    301
+   ],
+   "terms": [
+    "(lambda () <exp>)",
+    "demand-driven"
+   ],
+   "claim": "delay as lambda",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P051",
+   "book": "SICP",
+   "pages": [
+    302
+   ],
+   "terms": [
+    "memo-proc",
+    "already-run?"
+   ],
+   "claim": "delay memoization",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P052",
+   "book": "SICP",
+   "pages": [
+    304,
+    305
+   ],
+   "terms": [
+    "fibgen",
+    "sieve of Eratosthenes",
+    "(define ones (cons-stream 1 ones))"
+   ],
+   "claim": "infinite streams",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P053",
+   "book": "SICP",
+   "pages": [
+    325
+   ],
+   "terms": [
+    "mutability and delayed evaluation do not mix well"
+   ],
+   "claim": "mutability and delay do not mix",
+   "ref": "estado-mutavel-concorrencia-e-streams.md"
+  },
+  {
+   "id": "P054",
+   "book": "SICP",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "metacircular",
+    "environment model of evaluation"
+   ],
+   "claim": "metacircular formulates the environment model",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P055",
+   "book": "SICP",
+   "pages": [
+    336,
+    337
+   ],
+   "terms": [
+    "eval",
+    "apply",
+    "self-evaluating",
+    "cond->if"
+   ],
+   "claim": "eval/apply",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P056",
+   "book": "SICP",
+   "pages": [
+    353
+   ],
+   "terms": [
+    "universal machine"
+   ],
+   "claim": "the evaluator is a universal machine",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P057",
+   "book": "SICP",
+   "pages": [
+    359
+   ],
+   "terms": [
+    "syntactic analysis of expressions is interleaved with their execution"
+   ],
+   "claim": "interleaved analysis and execution",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P058",
+   "book": "SICP",
+   "pages": [
+    360
+   ],
+   "terms": [
+    "analyze",
+    "execution procedure",
+    "significantly more efficient"
+   ],
+   "claim": "analyze",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P059",
+   "book": "SICP",
+   "pages": [
+    369
+   ],
+   "terms": [
+    "thunks",
+    "forcing",
+    "memoize"
+   ],
+   "claim": "thunks and forcing",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P060",
+   "book": "SICP",
+   "pages": [
+    372
+   ],
+   "terms": [
+    "evaluated-thunk",
+    "forget unneeded env"
+   ],
+   "claim": "memoized thunk",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P061",
+   "book": "SICP",
+   "pages": [
+    329
+   ],
+   "terms": [
+    "call-by-name thunks",
+    "call-by-need"
+   ],
+   "claim": "call-by-name vs call-by-need",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P062",
+   "book": "SICP",
+   "pages": [
+    379,
+    380
+   ],
+   "terms": [
+    "nondeterministic computing",
+    "amb",
+    "(amb)",
+    "require"
+   ],
+   "claim": "amb and require",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P063",
+   "book": "SICP",
+   "pages": [
+    381
+   ],
+   "terms": [
+    "choice point",
+    "systematic search"
+   ],
+   "claim": "choice point and systematic search",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P064",
+   "book": "SICP",
+   "pages": [
+    383,
+    384
+   ],
+   "terms": [
+    "multiple-dwelling",
+    "liars"
+   ],
+   "claim": "puzzles of ch. 4.3",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P065",
+   "book": "SICP",
+   "pages": [
+    389,
+    390
+   ],
+   "terms": [
+    "success continuation",
+    "failure continuation",
+    "backtrack"
+   ],
+   "claim": "success and failure continuations",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P066",
+   "book": "SICP",
+   "pages": [
+    391
+   ],
+   "terms": [
+    "(define (ambeval exp env succeed fail)"
+   ],
+   "claim": "ambeval",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P067",
+   "book": "SICP",
+   "pages": [
+    394
+   ],
+   "terms": [
+    "undo the assignment",
+    "restores the old value"
+   ],
+   "claim": "undoing assignment on backtracking",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P068",
+   "book": "SICP",
+   "pages": [
+    502,
+    503
+   ],
+   "terms": [
+    "tail-recursive",
+    "ev-sequence"
+   ],
+   "claim": "tail recursion",
+   "ref": "avaliadores-metacircular-lazy-e-amb.md"
+  },
+  {
+   "id": "P069",
+   "book": "SICP",
+   "pages": [
+    489
+   ],
+   "terms": [
+    "stop-and-copy",
+    "working memory",
+    "free memory"
+   ],
+   "claim": "stop-and-copy",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P070",
+   "book": "SICP",
+   "pages": [
+    491
+   ],
+   "terms": [
+    "broken heart",
+    "forwarding address"
+   ],
+   "claim": "broken heart",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P071",
+   "book": "SICP",
+   "pages": [
+    494
+   ],
+   "terms": [
+    "mark-sweep",
+    "compacting garbage collector",
+    "examines only the useful part of memory"
+   ],
+   "claim": "advantages of stop-and-copy",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P072",
+   "book": "TAUP",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "Rule 5. Data dominates",
+    "Rule 6. There is no Rule 6"
+   ],
+   "claim": "Pike's rules",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P073",
+   "book": "TAUP",
+   "pages": [
+    37,
+    38
+   ],
+   "terms": [
+    "Rule of Modularity",
+    "Rule of Extensibility",
+    "Rule of Silence"
+   ],
+   "claim": "list of the 17 rules",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P074",
+   "book": "TAUP",
+   "pages": [
+    38,
+    39
+   ],
+   "terms": [
+    "Rule of Modularity",
+    "Controlling complexity",
+    "essence of computer"
+   ],
+   "claim": "modularity",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P075",
+   "book": "TAUP",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "Rule of Clarity",
+    "Rule of Composition",
+    "simple filters"
+   ],
+   "claim": "clarity and composition",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P076",
+   "book": "TAUP",
+   "pages": [
+    40,
+    41
+   ],
+   "terms": [
+    "Rule of Separation",
+    "different timescales",
+    "front end implements policy"
+   ],
+   "claim": "separation of policy/mechanism",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P077",
+   "book": "TAUP",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "technical machismo",
+    "Rule of Simplicity"
+   ],
+   "claim": "simplicity",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P078",
+   "book": "TAUP",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "Rule of Parsimony",
+    "Rule of Transparency",
+    "discoverable"
+   ],
+   "claim": "parsimony and transparency",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P079",
+   "book": "TAUP",
+   "pages": [
+    43,
+    44
+   ],
+   "terms": [
+    "Rule of Robustness",
+    "special cases"
+   ],
+   "claim": "robustness",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P080",
+   "book": "TAUP",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "Rule of Representation",
+    "Rob Pike’s Rule 5|Rob Pike's Rule 5",
+    "array initializer"
+   ],
+   "claim": "representation",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P081",
+   "book": "TAUP",
+   "pages": [
+    44,
+    45
+   ],
+   "terms": [
+    "Principle of Least Astonishment",
+    "Pay attention to tradition"
+   ],
+   "claim": "least surprise",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P082",
+   "book": "TAUP",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Rule of Silence",
+    "Silence is golden",
+    "1969"
+   ],
+   "claim": "silence",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P083",
+   "book": "TAUP",
+   "pages": [
+    46
+   ],
+   "terms": [
+    "Rule of Repair",
+    "fail noisily",
+    "Postel"
+   ],
+   "claim": "repair",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P084",
+   "book": "TAUP",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "Rule of Economy",
+    "Rule of Generation",
+    "write programs to write programs"
+   ],
+   "claim": "economy and generation",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P085",
+   "book": "TAUP",
+   "pages": [
+    48
+   ],
+   "terms": [
+    "Premature optimization is the root of all evil",
+    "Hoare",
+    "90% of the functionality delivered now"
+   ],
+   "claim": "optimization; Knuth/Hoare; K&P",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P086",
+   "book": "TAUP",
+   "pages": [
+    49,
+    50
+   ],
+   "terms": [
+    "Rule of Diversity",
+    "one true way",
+    "Rule of Extensibility",
+    "version number"
+   ],
+   "claim": "diversity and extensibility",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P087",
+   "book": "TAUP",
+   "pages": [
+    327
+   ],
+   "terms": [
+    "Silence Is Golden",
+    "standard error",
+    "babble"
+   ],
+   "claim": "Silence is golden in ch. 11",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P088",
+   "book": "TAUP",
+   "pages": [
+    305,
+    306
+   ],
+   "terms": [
+    "Filter Pattern",
+    "cantrip",
+    "numeric exit status"
+   ],
+   "claim": "filter and cantrip",
+   "ref": "as-17-regras-da-filosofia-unix.md"
+  },
+  {
+   "id": "P089",
+   "book": "TAUP",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "marshaling",
+    "big- vs. little-endian"
+   ],
+   "claim": "serialization and endianness",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P090",
+   "book": "TAUP",
+   "pages": [
+    133
+   ],
+   "terms": [
+    "Interoperability, transparency, extensibility"
+   ],
+   "claim": "format design themes",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P091",
+   "book": "TAUP",
+   "pages": [
+    134
+   ],
+   "terms": [
+    "lie down until the feeling passes",
+    "IPv4"
+   ],
+   "claim": "avoid complex binary",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P092",
+   "book": "TAUP",
+   "pages": [
+    136
+   ],
+   "terms": [
+    "8% size decrease",
+    "grep"
+   ],
+   "claim": "password file in text",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P093",
+   "book": "TAUP",
+   "pages": [
+    139
+   ],
+   "terms": [
+    "PNG",
+    "Data File Metaformats",
+    "metaformat"
+   ],
+   "claim": "PNG and metaformats",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P094",
+   "book": "TAUP",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "multiprogramming",
+    "cheap",
+    "textual data formats"
+   ],
+   "claim": "multiprogramming",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P095",
+   "book": "TAUP",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "fork(2)",
+    "bugs collect at interfaces"
+   ],
+   "claim": "cost of processes and interfaces",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P096",
+   "book": "TAUP",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "Threading is a performance hack",
+    "setuid"
+   ],
+   "claim": "threads as a performance hack; setuid",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P097",
+   "book": "TAUP",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "prove by demonstration",
+    "shelling out"
+   ],
+   "claim": "prove with prototypes",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P098",
+   "book": "TAUP",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "Doug McIlroy",
+    "filters",
+    "standard input"
+   ],
+   "claim": "pipes and filters",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P099",
+   "book": "TAUP",
+   "pages": [
+    214
+   ],
+   "terms": [
+    "lightweight processes",
+    "thread-local storage",
+    "locking"
+   ],
+   "claim": "criticism of threads",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P100",
+   "book": "TAUP",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "last resort rather than a first",
+    "poll(2)"
+   ],
+   "claim": "threads as a last resort",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P101",
+   "book": "TAUP",
+   "pages": [
+    217,
+    218
+   ],
+   "terms": [
+    "domain-specific",
+    "sendmail.cf",
+    "TECO"
+   ],
+   "claim": "minilanguages",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P102",
+   "book": "TAUP",
+   "pages": [
+    219,
+    220,
+    221
+   ],
+   "terms": [
+    "Taxonomy of languages",
+    "m4",
+    "Turing-complete",
+    "bc(1) and dc(1)"
+   ],
+   "claim": "taxonomy of minilanguages",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P103",
+   "book": "TAUP",
+   "pages": [
+    245
+   ],
+   "terms": [
+    "accidentally Turing-complete",
+    "sandboxed"
+   ],
+   "claim": "avoid accidental Turing-completeness",
+   "ref": "textualidade-multiprocessamento-e-minilinguagens.md"
+  },
+  {
+   "id": "P104",
+   "book": "CI",
+   "pages": [
+    11,
+    12
+   ],
+   "terms": [
+    "token",
+    "Parsing",
+    "abstract syntax tree"
+   ],
+   "claim": "scanning and parsing",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P105",
+   "book": "CI",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "binding or resolution",
+    "symbol table",
+    "front end"
+   ],
+   "claim": "static analysis",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P106",
+   "book": "CI",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "intermediate representation",
+    "constant folding",
+    "three-address code",
+    "continuation-passing style"
+   ],
+   "claim": "IR and optimization",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P107",
+   "book": "CI",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "bytecode",
+    "p-code"
+   ],
+   "claim": "bytecode/p-code",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P108",
+   "book": "CI",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "runtime",
+    "garbage collector",
+    "Single-pass compilers"
+   ],
+   "claim": "runtime and single pass",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P109",
+   "book": "CI",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "Tree-walk interpreters",
+    "slow",
+    "Transpilers"
+   ],
+   "claim": "tree-walk slow; transpilers",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P110",
+   "book": "CI",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "Just-in-time compilation",
+    "HotSpot",
+    "hot spots"
+   ],
+   "claim": "JIT",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P111",
+   "book": "CI",
+   "pages": [
+    19,
+    20
+   ],
+   "terms": [
+    "CPython",
+    "compiler",
+    "interpreter",
+    "go run"
+   ],
+   "claim": "compiler vs interpreter",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P112",
+   "book": "CI",
+   "pages": [
+    43,
+    44
+   ],
+   "terms": [
+    "lexeme",
+    "Token type",
+    "Literal value",
+    "Location information",
+    "class Token"
+   ],
+   "claim": "lexemes and tokens",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P113",
+   "book": "CI",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "regular language",
+    "lexical grammar"
+   ],
+   "claim": "regular lexical grammar",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P114",
+   "book": "CI",
+   "pages": [
+    60,
+    61,
+    62
+   ],
+   "terms": [
+    "context-free",
+    "terminals",
+    "Backus"
+   ],
+   "claim": "CFG and BNF",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P115",
+   "book": "CI",
+   "pages": [
+    70,
+    71
+   ],
+   "terms": [
+    "expression problem",
+    "pattern matching"
+   ],
+   "claim": "expression problem",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P116",
+   "book": "CI",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "Visitor pattern",
+    "approximating the functional style",
+    "most widely misunderstood pattern"
+   ],
+   "claim": "Visitor",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P117",
+   "book": "CI",
+   "pages": [
+    73
+   ],
+   "terms": [
+    "accept()",
+    "polymorphic dispatch"
+   ],
+   "claim": "accept calls the visitor",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P118",
+   "book": "CI",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "interface Visitor<R>",
+    "R visit"
+   ],
+   "claim": "Visitor<R>",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P119",
+   "book": "CI",
+   "pages": [
+    81,
+    82
+   ],
+   "terms": [
+    "Precedence",
+    "Associativity",
+    "Equality",
+    "Unary"
+   ],
+   "claim": "precedence and associativity",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P120",
+   "book": "CI",
+   "pages": [
+    83
+   ],
+   "terms": [
+    "left-recursive",
+    "factor"
+   ],
+   "claim": "left recursion",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P121",
+   "book": "CI",
+   "pages": [
+    84
+   ],
+   "terms": [
+    "Recursive descent",
+    "GCC",
+    "V8",
+    "Roslyn"
+   ],
+   "claim": "recursive descent",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P122",
+   "book": "CI",
+   "pages": [
+    91
+   ],
+   "terms": [
+    "panic mode",
+    "synchronization",
+    "cascaded errors"
+   ],
+   "claim": "panic mode",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P123",
+   "book": "CI",
+   "pages": [
+    93
+   ],
+   "terms": [
+    "synchronize()",
+    "SEMICOLON",
+    "WHILE"
+   ],
+   "claim": "synchronization at statement boundaries",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P124",
+   "book": "CI",
+   "pages": [
+    101
+   ],
+   "terms": [
+    "post-order traversal",
+    "dynamically typed"
+   ],
+   "claim": "post-order and dynamic typing",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P125",
+   "book": "CI",
+   "pages": [
+    164,
+    165
+   ],
+   "terms": [
+    "showA",
+    "global",
+    "block"
+   ],
+   "claim": "showA bug",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P126",
+   "book": "CI",
+   "pages": [
+    166,
+    167
+   ],
+   "terms": [
+    "closure field",
+    "mutable hash table"
+   ],
+   "claim": "captured mutable environment",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P127",
+   "book": "CI",
+   "pages": [
+    167,
+    168
+   ],
+   "terms": [
+    "persistent",
+    "classic way to implement environments in Scheme interpreters",
+    "Semantic Analysis"
+   ],
+   "claim": "persistent environments and semantic analysis",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P128",
+   "book": "CI",
+   "pages": [
+    169,
+    170
+   ],
+   "terms": [
+    "hops",
+    "Additional passes between parsing and execution",
+    "no side effects",
+    "no control flow"
+   ],
+   "claim": "resolver pass",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P129",
+   "book": "CI",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "Stack<Map<String, Boolean>>",
+    "global"
+   ],
+   "claim": "stack of scopes",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P130",
+   "book": "CI",
+   "pages": [
+    179,
+    180,
+    181
+   ],
+   "terms": [
+    "locals.put(expr, depth)",
+    "getAt(distance",
+    "ancestor(distance)"
+   ],
+   "claim": "distance and getAt",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P131",
+   "book": "CI",
+   "pages": [
+    183,
+    184
+   ],
+   "terms": [
+    "Already a variable with this name",
+    "Can't return from top-level code"
+   ],
+   "claim": "resolution errors",
+   "ref": "interpretador-tree-walk-e-ast.md"
+  },
+  {
+   "id": "P132",
+   "book": "CI",
+   "pages": [
+    232
+   ],
+   "terms": [
+    "72 seconds",
+    "half a second"
+   ],
+   "claim": "jlox vs C on fib(40)",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P133",
+   "book": "CI",
+   "pages": [
+    233,
+    234
+   ],
+   "terms": [
+    "spatial locality",
+    "32 or 64 bits",
+    "upwards of 100 times faster",
+    "Visitor pattern"
+   ],
+   "claim": "AST: memory and locality",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P134",
+   "book": "CI",
+   "pages": [
+    235
+   ],
+   "terms": [
+    "Bytecode sits in the middle",
+    "portability",
+    "virtual machine"
+   ],
+   "claim": "bytecode in the middle",
+   "ref": "pipeline-de-compiladores-e-interpretadores.md"
+  },
+  {
+   "id": "P135",
+   "book": "CI",
+   "pages": [
+    237,
+    238
+   ],
+   "terms": [
+    "uint8_t* code",
+    "Cache-friendly, dense storage",
+    "opcode"
+   ],
+   "claim": "chunk",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P136",
+   "book": "CI",
+   "pages": [
+    247,
+    248
+   ],
+   "terms": [
+    "ValueArray",
+    "constant pool"
+   ],
+   "claim": "constant pool",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P137",
+   "book": "CI",
+   "pages": [
+    252
+   ],
+   "terms": [
+    "int* lines",
+    "parallels the bytecode|parallel"
+   ],
+   "claim": "parallel lines",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P138",
+   "book": "CI",
+   "pages": [
+    261,
+    262
+   ],
+   "terms": [
+    "instruction pointer",
+    "faster to dereference a pointer",
+    "dispatching",
+    "switch"
+   ],
+   "claim": "ip and switch",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P139",
+   "book": "CI",
+   "pages": [
+    268
+   ],
+   "terms": [
+    "stackTop",
+    "STACK_MAX 256"
+   ],
+   "claim": "value stack",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P140",
+   "book": "CI",
+   "pages": [
+    300
+   ],
+   "terms": [
+    "Vaughan Pratt",
+    "top-down operator precedence parsing",
+    "oral tradition"
+   ],
+   "claim": "Pratt",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P141",
+   "book": "CI",
+   "pages": [
+    302,
+    303
+   ],
+   "terms": [
+    "Single-Pass Compilation"
+   ],
+   "claim": "single-pass compilation",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P142",
+   "book": "CI",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "isn’t a recursive descent parser|isn't a recursive descent parser"
+   ],
+   "claim": "Pratt is not recursive descent",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P143",
+   "book": "CI",
+   "pages": [
+    315
+   ],
+   "terms": [
+    "ParseRule",
+    "ParseFn prefix",
+    "ParseFn infix",
+    "Precedence precedence"
+   ],
+   "claim": "ParseRule",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P144",
+   "book": "CI",
+   "pages": [
+    318
+   ],
+   "terms": [
+    "precedence <= getRule(parser.current.type)->precedence"
+   ],
+   "claim": "parsePrecedence loop",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P145",
+   "book": "CI",
+   "pages": [
+    381
+   ],
+   "terms": [
+    "late bound",
+    "hash table"
+   ],
+   "claim": "late-bound globals",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P146",
+   "book": "CI",
+   "pages": [
+    400,
+    401
+   ],
+   "terms": [
+    "lexical scope",
+    "incrementing the stackTop pointer"
+   ],
+   "claim": "locals on the stack",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P147",
+   "book": "CI",
+   "pages": [
+    402
+   ],
+   "terms": [
+    "localCount",
+    "scopeDepth",
+    "UINT8_COUNT"
+   ],
+   "claim": "compiler state for locals",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P148",
+   "book": "CI",
+   "pages": [
+    446,
+    447
+   ],
+   "terms": [
+    "CallFrame",
+    "slots",
+    "FRAMES_MAX 64"
+   ],
+   "claim": "CallFrame",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P149",
+   "book": "CI",
+   "pages": [
+    476,
+    477
+   ],
+   "terms": [
+    "upvalue",
+    "Lua dev team"
+   ],
+   "claim": "upvalues come from Lua",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P150",
+   "book": "CI",
+   "pages": [
+    493
+   ],
+   "terms": [
+    "open upvalue",
+    "closed upvalue",
+    "Closures capture variables"
+   ],
+   "claim": "open/closed upvalues",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P151",
+   "book": "CI",
+   "pages": [
+    499,
+    500
+   ],
+   "terms": [
+    "OP_CLOSE_UPVALUE",
+    "closeUpvalues",
+    "upvalue->closed = *upvalue->location"
+   ],
+   "claim": "closing an upvalue",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P152",
+   "book": "CI",
+   "pages": [
+    372
+   ],
+   "terms": [
+    "tombstones",
+    "probe sequence"
+   ],
+   "claim": "tombstones",
+   "ref": "maquina-virtual-de-bytecode-e-pratt-parsing.md"
+  },
+  {
+   "id": "P153",
+   "book": "CI",
+   "pages": [
+    506,
+    507
+   ],
+   "terms": [
+    "managed language",
+    "garbage collector",
+    "reachable",
+    "roots"
+   ],
+   "claim": "GC and reachability",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P154",
+   "book": "CI",
+   "pages": [
+    508
+   ],
+   "terms": [
+    "All roots are reachable",
+    "Any object referred to from a reachable object is itself reachable"
+   ],
+   "claim": "inductive definition",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P155",
+   "book": "CI",
+   "pages": [
+    509
+   ],
+   "terms": [
+    "mark-sweep",
+    "McCarthy",
+    "Marking",
+    "Sweeping"
+   ],
+   "claim": "mark-sweep",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P156",
+   "book": "CI",
+   "pages": [
+    513,
+    514,
+    515
+   ],
+   "terms": [
+    "isMarked",
+    "vm.globals|markTable(&vm.globals)",
+    "vm.openUpvalues",
+    "frames[i].closure"
+   ],
+   "claim": "marked roots",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P157",
+   "book": "CI",
+   "pages": [
+    517
+   ],
+   "terms": [
+    "tricolor abstraction",
+    "White",
+    "Gray",
+    "Black"
+   ],
+   "claim": "tricolor",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P158",
+   "book": "CI",
+   "pages": [
+    518
+   ],
+   "terms": [
+    "grayStack",
+    "tricolor invariant",
+    "realloc"
+   ],
+   "claim": "gray stack",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P159",
+   "book": "CI",
+   "pages": [
+    523
+   ],
+   "terms": [
+    "isMarked = false",
+    "freeObject()"
+   ],
+   "claim": "sweep",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P160",
+   "book": "CI",
+   "pages": [
+    524,
+    525
+   ],
+   "terms": [
+    "weak reference",
+    "tableRemoveWhite",
+    "dangling"
+   ],
+   "claim": "weak references",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P161",
+   "book": "CI",
+   "pages": [
+    526
+   ],
+   "terms": [
+    "Throughput",
+    "Latency"
+   ],
+   "claim": "throughput and latency",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P162",
+   "book": "CI",
+   "pages": [
+    529
+   ],
+   "terms": [
+    "GC_HEAP_GROW_FACTOR 2",
+    "nextGC"
+   ],
+   "claim": "next-GC threshold",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P163",
+   "book": "CI",
+   "pages": [
+    531,
+    532
+   ],
+   "terms": [
+    "addConstant",
+    "Interning strings",
+    "Concatenating strings"
+   ],
+   "claim": "GC bugs",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P164",
+   "book": "CI",
+   "pages": [
+    533
+   ],
+   "terms": [
+    "Cheney",
+    "reference counting"
+   ],
+   "claim": "alternatives to mark-sweep (exercise)",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P165",
+   "book": "CI",
+   "pages": [
+    534
+   ],
+   "terms": [
+    "generational garbage collection",
+    "nursery"
+   ],
+   "claim": "generational GC",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P166",
+   "book": "CI",
+   "pages": [
+    597
+   ],
+   "terms": [
+    "72%"
+   ],
+   "claim": "tableGet 72% of the time",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P167",
+   "book": "CI",
+   "pages": [
+    601
+   ],
+   "terms": [
+    "35%",
+    "profiler",
+    "NaN boxing",
+    "16 bytes"
+   ],
+   "claim": "profiler and NaN boxing",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P168",
+   "book": "CI",
+   "pages": [
+    602,
+    603
+   ],
+   "terms": [
+    "IEEE 754",
+    "quiet NaN",
+    "51 bits",
+    "48 bits"
+   ],
+   "claim": "NaN boxing bits",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P169",
+   "book": "CI",
+   "pages": [
+    604
+   ],
+   "terms": [
+    "Half the memory usage",
+    "NAN_BOXING"
+   ],
+   "claim": "NaN boxing halves the size",
+   "ref": "gerenciamento-de-memoria-e-coletor-de-lixo.md"
+  },
+  {
+   "id": "P170",
+   "book": "TAUP",
+   "pages": [
+    412
+   ],
+   "terms": [
+    "90% of the execution time of your program",
+    "10% of its code",
+    "Profilers"
+   ],
+   "claim": "90/10 rule in ch. 15 (Profiling)",
+   "ref": "casos-e-antipadroes.md"
+  },
+  {
+   "id": "P171",
+   "book": "TAUP",
+   "pages": [
+    135
+   ],
+   "terms": [
+    "premature-optimization fever"
+   ],
+   "claim": "binary as premature optimization",
+   "ref": "casos-e-antipadroes.md"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "books": [
+    "SICP",
+    "TAUP",
+    "CI"
+   ],
+   "terms": [
+    "homoiconic"
+   ],
+   "claim": "term 'homoiconicity'"
+  },
+  {
+   "id": "N002",
+   "books": [
+    "SICP"
+   ],
+   "terms": [
+    "cheney"
+   ],
+   "claim": "Cheney's algorithm in SICP"
+  },
+  {
+   "id": "N003",
+   "books": [
+    "SICP",
+    "TAUP"
+   ],
+   "terms": [
+    "dynamic scop"
+   ],
+   "claim": "dynamic scope in SICP/TAUP (v1 cited TAUP p.364)"
+  },
+  {
+   "id": "N004",
+   "books": [
+    "TAUP",
+    "SICP"
+   ],
+   "terms": [
+    "copy-on-write",
+    "copy on write"
+   ],
+   "claim": "copy-on-write"
+  },
+  {
+   "id": "N005",
+   "books": [
+    "TAUP"
+   ],
+   "terms": [
+    "re:\\bjson\\b",
+    "re:\\byaml\\b"
+   ],
+   "claim": "JSON/YAML in TAUP"
+  },
+  {
+   "id": "N006",
+   "books": [
+    "TAUP"
+   ],
+   "terms": [
+    "--help",
+    "--version",
+    "re:\\bGNU long options\\b"
+   ],
+   "claim": "--help/--version convention in TAUP"
+  },
+  {
+   "id": "N007",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "double dispatch"
+   ],
+   "claim": "double dispatch in CI"
+  },
+  {
+   "id": "N008",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "re:open.?closed principle",
+    "re:\\bOCP\\b"
+   ],
+   "claim": "Open/Closed Principle in CI"
+  },
+  {
+   "id": "N009",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "re:\\b(10|50)x\\b",
+    "re:ten to fifty",
+    "re:5x to 10x"
+   ],
+   "claim": "10x/50x and 5x-10x multipliers from v1"
+  },
+  {
+   "id": "N010",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "prefetch"
+   ],
+   "claim": "prefetching for *vm.ip++"
+  },
+  {
+   "id": "N011",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "re:pratt.{0,60}1973",
+    "re:1973.{0,60}pratt"
+   ],
+   "claim": "year of Pratt (1973)"
+  },
+  {
+   "id": "N012",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "re:misalign",
+    "re:unaligned"
+   ],
+   "claim": "NaN boxing eliminates misalignment"
+  },
+  {
+   "id": "N013",
+   "books": [
+    "SICP"
+   ],
+   "terms": [
+    "re:orders of magnitude.{0,80}(analy|execut)"
+   ],
+   "claim": "analyze speeds things up by orders of magnitude"
+  },
+  {
+   "id": "N014",
+   "books": [
+    "SICP"
+   ],
+   "terms": [
+    "einstein"
+   ],
+   "claim": "Einstein's problem in SICP"
+  },
+  {
+   "id": "N015",
+   "books": [
+    "SICP"
+   ],
+   "terms": [
+    "continuation-passing",
+    "monad",
+    "re:type inference"
+   ],
+   "claim": "CPS/monads/type inference in SICP"
+  },
+  {
+   "id": "N016",
+   "books": [
+    "SICP"
+   ],
+   "terms": [
+    "re:generational"
+   ],
+   "claim": "generational GC in SICP"
+  },
+  {
+   "id": "N017",
+   "books": [
+    "TAUP",
+    "SICP",
+    "CI"
+   ],
+   "terms": [
+    "kubernetes",
+    "docker",
+    "re:\bgraalvm\b"
+   ],
+   "claim": "technologies outside the corpus"
+  },
+  {
+   "id": "N018",
+   "books": [
+    "CI"
+   ],
+   "terms": [
+    "re:(zero|no) heap allocation.{0,120}(function|closure|upvalue)"
+   ],
+   "claim": "upvalues with 'zero heap allocation' for normal functions"
+  },
+  {
+   "id": "N019",
+   "books": [
+    "TAUP"
+   ],
+   "terms": [
+    "re:segfault.{0,200}(isolat|other processes)"
+   ],
+   "claim": "segfault fault isolation as an argument on p.193"
+  }
+ ]
+}

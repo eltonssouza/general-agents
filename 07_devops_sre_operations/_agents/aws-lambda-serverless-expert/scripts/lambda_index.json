@@ -1,0 +1,780 @@
+{
+ "_meta": {
+  "source": "AWS Lambda Developer Guide, 2022 edition (last release 11/28/2022), abbreviation LAMBDA",
+  "page_convention": "PDF page; printed = N-22",
+  "note": "Portuguese keywords are kept on purpose: lambda_lookup.py still recognizes Portuguese queries; English keywords were added."
+ },
+ "topics": [
+  {
+   "key": "o-que-e",
+   "name": "What Lambda is and when to use it",
+   "pages": "23-26",
+   "reference_file": "references/fundamentos-conceitos-e-modelo-de-programacao.md",
+   "summary": "Event-driven compute service: you upload code and Lambda runs it, scales it and bills per use. Features: functions, triggers, events, execution environment, runtimes, layers, extensions, concurrency, qualifiers, destinations.",
+   "keywords": [
+    "what is lambda",
+    "o que e",
+    "quando usar",
+    "overview",
+    "features",
+    "pricing",
+    "preco",
+    "when to use",
+    "price"
+   ],
+   "datado": "prices and regions",
+   "gaps": "Pricing: the text only points to an external pricing page."
+  },
+  {
+   "key": "conceitos",
+   "name": "Core concepts",
+   "pages": "33-37",
+   "reference_file": "references/fundamentos-conceitos-e-modelo-de-programacao.md",
+   "summary": "Definitions: function, trigger, event, execution environment, instruction set architecture, deployment package, runtime, layer, extension, concurrency, qualifier, destination.",
+   "keywords": [
+    "function",
+    "trigger",
+    "event",
+    "qualifier",
+    "destination",
+    "glossario",
+    "concepts",
+    "glossary"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "modelo-programacao",
+   "name": "Programming model and handler",
+   "pages": "44",
+   "reference_file": "references/fundamentos-conceitos-e-modelo-de-programacao.md",
+   "summary": "Model common to all runtimes: the handler receives an event and a context; the runtime invokes the handler and returns the response; Runtime API/runtime interface client.",
+   "keywords": [
+    "handler",
+    "programming model",
+    "modelo de programacao",
+    "context",
+    "handler model"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "arquiteturas",
+   "name": "arm64 vs x86_64",
+   "pages": "45-47",
+   "reference_file": "references/fundamentos-conceitos-e-modelo-de-programacao.md",
+   "summary": "Architecture choice per function; suggested arm64 migration steps and code/dependency compatibility.",
+   "keywords": [
+    "arm64",
+    "x86_64",
+    "graviton",
+    "architecture",
+    "arquitetura",
+    "instruction set"
+   ],
+   "datado": "runtimes with arm64 support change",
+   "gaps": ""
+  },
+  {
+   "key": "ciclo-de-vida",
+   "name": "Execution environment lifecycle",
+   "pages": "48-50",
+   "reference_file": "references/ambiente-de-execucao-rede-vpc-efs-e-rds.md",
+   "summary": "Init, Invoke and Shutdown phases; environment reuse across invocations; cold start = creation + init; freezing between invocations.",
+   "keywords": [
+    "lifecycle",
+    "ciclo de vida",
+    "cold start",
+    "init",
+    "invoke",
+    "shutdown",
+    "execution environment",
+    "warm",
+    "life cycle"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "vpc",
+   "name": "VPC, Hyperplane ENIs and connectivity",
+   "pages": "51-54, 263-272, 836-837",
+   "reference_file": "references/ambiente-de-execucao-rede-vpc-efs-e-rds.md",
+   "summary": "Function attached to private subnets through managed ENIs (Hyperplane); internet access requires NAT; AWS services via VPC endpoints; IAM condition keys for VPC; SG/subnet limits.",
+   "keywords": [
+    "vpc",
+    "eni",
+    "hyperplane",
+    "nat",
+    "subnet",
+    "security group",
+    "interface endpoint",
+    "privatelink",
+    "vpc endpoint"
+   ],
+   "datado": "ENI-per-VPC and SG/subnet limits",
+   "gaps": ""
+  },
+  {
+   "key": "efs-rds",
+   "name": "EFS and RDS Proxy",
+   "pages": "273-274, 277-281, 673-674, 734-739",
+   "reference_file": "references/ambiente-de-execucao-rede-vpc-efs-e-rds.md",
+   "summary": "EFS mounted through an access point requires a VPC; RDS Proxy manages a connection pool for relational databases.",
+   "keywords": [
+    "efs",
+    "file system",
+    "rds",
+    "rds proxy",
+    "banco de dados",
+    "database",
+    "mysql",
+    "connection pool"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "execution-role",
+   "name": "Execution role and credentials",
+   "pages": "72-78",
+   "reference_file": "references/permissoes-iam-e-seguranca.md",
+   "summary": "Role assumed by the function; least privilege; managed policies such as AWSLambdaBasicExecutionRole; temporary credentials in the environment; condition key lambda:SourceFunctionArn.",
+   "keywords": [
+    "execution role",
+    "role",
+    "iam",
+    "credenciais",
+    "least privilege",
+    "privilegio minimo",
+    "sourcefunctionarn",
+    "credentials"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "resource-policy",
+   "name": "Resource-based policies (who can invoke)",
+   "pages": "88-93",
+   "reference_file": "references/permissoes-iam-e-seguranca.md",
+   "summary": "AddPermission grants access to services, organizations (PrincipalOrgId) and other accounts; source-arn/source-account prevent the confused deputy; applies to function, version, alias and layer.",
+   "keywords": [
+    "resource-based",
+    "add-permission",
+    "principal",
+    "source-arn",
+    "cross-account",
+    "invoke permission",
+    "resource policy",
+    "confused deputy"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "user-policies",
+   "name": "User policies, ABAC and boundaries",
+   "pages": "79-87, 94-101",
+   "reference_file": "references/permissoes-iam-e-seguranca.md",
+   "summary": "IAM actions and resources for Lambda, condition keys (VPC, tags), tag-based ABAC, permissions boundaries.",
+   "keywords": [
+    "user policy",
+    "abac",
+    "tags",
+    "boundary",
+    "condition key",
+    "arn",
+    "lambda:functionarn",
+    "permissions boundary"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "seguranca-geral",
+   "name": "Security: data protection, IAM, compliance",
+   "pages": "815-827",
+   "reference_file": "references/permissoes-iam-e-seguranca.md",
+   "summary": "Shared responsibility; encryption in transit/at rest; IAM; resilience (AZs, versions, scaling); minimum TLS.",
+   "keywords": [
+    "seguranca",
+    "security",
+    "kms",
+    "criptografia",
+    "compliance",
+    "tls",
+    "shared responsibility",
+    "encryption",
+    "data protection"
+   ],
+   "datado": "minimum TLS version",
+   "gaps": ""
+  },
+  {
+   "key": "runtimes",
+   "name": "Supported runtimes and deprecation",
+   "pages": "102-104",
+   "reference_file": "references/runtimes-custom-runtimes-e-extensions.md",
+   "summary": "2022 edition runtime table (nodejs18.x ... provided.al2), OS (AL2/AL), architectures; two-phase deprecation policy (phase 1: no patches and no creation; phase 2: no updates).",
+   "keywords": [
+    "runtime",
+    "deprecation",
+    "deprecacao",
+    "nodejs",
+    "python",
+    "java",
+    "dotnet",
+    "ruby",
+    "go1.x",
+    "provided.al2",
+    "supported runtimes"
+   ],
+   "datado": "the WHOLE runtime table and deprecation dates",
+   "gaps": "No calendar beyond 31/mar/2023."
+  },
+  {
+   "key": "custom-runtime",
+   "name": "Custom runtimes and Runtime API",
+   "pages": "111-123",
+   "reference_file": "references/runtimes-custom-runtimes-e-extensions.md",
+   "summary": "provided/provided.al2 + bootstrap; Runtime API (next invocation, response, init error, invocation error); tutorial with a layer.",
+   "keywords": [
+    "custom runtime",
+    "runtime api",
+    "bootstrap",
+    "provided",
+    "wrapper script",
+    "avx2"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "extensions",
+   "name": "Extensions, Extensions API, Telemetry API, Logs API",
+   "pages": "126-182",
+   "reference_file": "references/runtimes-custom-runtimes-e-extensions.md",
+   "summary": "Processes that run alongside the runtime (internal/external); their own lifecycle; Extensions API; Telemetry/Logs API to ship telemetry to destinations; performance and cost impact.",
+   "keywords": [
+    "extension",
+    "extensions api",
+    "telemetry api",
+    "logs api",
+    "sidecar",
+    "otel",
+    "buffering"
+   ],
+   "datado": "API versions and buffering values (the text has divergent tables)",
+   "gaps": ""
+  },
+  {
+   "key": "deploy-zip-imagem",
+   "name": "Deploy .zip and container images",
+   "pages": "183-206",
+   "reference_file": "references/deploy-container-images-layers-code-signing-e-tags.md",
+   "summary": "Two package types: .zip and container image (ECR); AWS base images, RIC, RIE; image requirements; create/update via console, CLI, CloudFormation, SAM.",
+   "keywords": [
+    "deploy",
+    "zip",
+    "container",
+    "image",
+    "ecr",
+    "rie",
+    "ric",
+    "dockerfile",
+    "imagem",
+    "package",
+    "container image",
+    "deployment package"
+   ],
+   "datado": "maximum sizes (50 MB zip / 250 MB / 10 GB image)",
+   "gaps": ""
+  },
+  {
+   "key": "layers",
+   "name": "Layers",
+   "pages": "208-213, 290-294",
+   "reference_file": "references/deploy-container-images-layers-code-signing-e-tags.md",
+   "summary": "Shared .zip archives mounted at /opt; versioned; permission per account/organization; maximum of 5 per function [DATED].",
+   "keywords": [
+    "layer",
+    "layers",
+    "/opt",
+    "dependencias",
+    "compatible runtimes",
+    "dependencies"
+   ],
+   "datado": "maximum of 5 layers",
+   "gaps": ""
+  },
+  {
+   "key": "code-signing",
+   "name": "Code signing and tags",
+   "pages": "282-289",
+   "reference_file": "references/deploy-container-images-layers-code-signing-e-tags.md",
+   "summary": "Package signing with AWS Signer and a validation policy; tags for ABAC and organization.",
+   "keywords": [
+    "code signing",
+    "signer",
+    "tags",
+    "abac"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "config-funcao",
+   "name": "Memory, timeout and ephemeral storage",
+   "pages": "214-218, 876",
+   "reference_file": "references/configuracao-variaveis-versoes-e-aliases.md",
+   "summary": "Memory 128-10,240 MB (proportional CPU; 1,769 MB = 1 vCPU), default timeout 3 s and maximum 900 s, /tmp 512-10,240 MB [DATED].",
+   "keywords": [
+    "memory",
+    "memoria",
+    "timeout",
+    "ephemeral",
+    "tmp",
+    "cpu",
+    "power tuning",
+    "compute optimizer",
+    "ephemeral storage"
+   ],
+   "datado": "ALL the numbers",
+   "gaps": ""
+  },
+  {
+   "key": "env-vars",
+   "name": "Environment variables",
+   "pages": "219-225",
+   "reference_file": "references/configuracao-variaveis-versoes-e-aliases.md",
+   "summary": "String pairs per version; aggregate limit of 4 KB; reserved keys; encryption at rest with KMS; secrets in Secrets Manager.",
+   "keywords": [
+    "environment variable",
+    "env var",
+    "variavel de ambiente",
+    "kms",
+    "secrets manager",
+    "reservada",
+    "reserved"
+   ],
+   "datado": "4 KB; list of reserved keys",
+   "gaps": ""
+  },
+  {
+   "key": "versoes-aliases",
+   "name": "Versions and aliases",
+   "pages": "226-231",
+   "reference_file": "references/configuracao-variaveis-versoes-e-aliases.md",
+   "summary": "A published version is immutable; an alias points to a version (not to an alias); routing config splits traffic between up to two versions; permission on the alias does not apply to the version.",
+   "keywords": [
+    "version",
+    "versao",
+    "alias",
+    "routing",
+    "canary",
+    "$latest",
+    "publish-version",
+    "qualified arn",
+    "versions"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "concorrencia",
+   "name": "Concurrency: model, reserved, provisioned, burst",
+   "pages": "233-262",
+   "reference_file": "references/concorrencia-e-escala.md",
+   "summary": "Concurrency = RPS x duration; reserved = ceiling + guarantee (no cost; 0 blocks); provisioned = pre-initialized environments (cost; on a version/alias); burst 500-3000 + 500/min [DATED].",
+   "keywords": [
+    "concurrency",
+    "concorrencia",
+    "reserved",
+    "provisioned",
+    "burst",
+    "throttle",
+    "429",
+    "scaling",
+    "escala",
+    "application auto scaling",
+    "concurrent executions"
+   ],
+   "datado": "1,000 per account; 900 reservable; burst per region",
+   "gaps": ""
+  },
+  {
+   "key": "invocacao-sincrona",
+   "name": "Synchronous invocation",
+   "pages": "298-299",
+   "reference_file": "references/invocacao-erros-retries-e-function-urls.md",
+   "summary": "RequestResponse: the caller waits for the response and decides the retry; function errors arrive in the X-Amz-Function-Error header.",
+   "keywords": [
+    "synchronous",
+    "sincrona",
+    "requestresponse",
+    "invoke",
+    "sync"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "invocacao-assincrona",
+   "name": "Asynchronous invocation, DLQ and destinations",
+   "pages": "300-307",
+   "reference_file": "references/invocacao-erros-retries-e-function-urls.md",
+   "summary": "Event is queued; 2 retries (1 min, 2 min); up to 6 h for throttle/5xx; DLQ (SQS/SNS) or destinations (SQS, SNS, Lambda, EventBridge) for success/failure [DATED].",
+   "keywords": [
+    "asynchronous",
+    "assincrona",
+    "dlq",
+    "dead letter",
+    "destination",
+    "retry",
+    "maximumretryattempts",
+    "maximumeventage",
+    "event invoke config",
+    "async",
+    "dead-letter queue"
+   ],
+   "datado": "2 retries, 6 h",
+   "gaps": ""
+  },
+  {
+   "key": "esm",
+   "name": "Event source mapping, batching and filters",
+   "pages": "308-325",
+   "reference_file": "references/invocacao-erros-retries-e-function-urls.md",
+   "summary": "Resource that reads from a queue/stream and invokes the function; batching by size/window; FilterCriteria filters; function states.",
+   "keywords": [
+    "event source mapping",
+    "esm",
+    "batch",
+    "batching",
+    "filter",
+    "filtro",
+    "function state",
+    "pending",
+    "active"
+   ],
+   "datado": "batch limits",
+   "gaps": ""
+  },
+  {
+   "key": "erros-retries",
+   "name": "Errors and retries per model",
+   "pages": "324-325",
+   "reference_file": "references/invocacao-erros-retries-e-function-urls.md",
+   "summary": "Invocation error vs function error; synchronous: caller decides; asynchronous: Lambda retries 2x; stream: retries the batch and blocks the shard; queue: visibility timeout and redrive.",
+   "keywords": [
+    "error",
+    "erro",
+    "retry",
+    "retries",
+    "idempotente",
+    "idempotent",
+    "poison",
+    "shard bloqueado",
+    "blocked shard",
+    "poison pill"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "function-urls",
+   "name": "Function URLs",
+   "pages": "329-349",
+   "reference_file": "references/invocacao-erros-retries-e-function-urls.md",
+   "summary": "Dedicated HTTPS endpoint; auth type AWS_IAM or NONE; CORS; throttling; payload in HTTP event format.",
+   "keywords": [
+    "function url",
+    "url",
+    "cors",
+    "auth type",
+    "aws_iam",
+    "none",
+    "https endpoint"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "sqs",
+   "name": "SQS as a source",
+   "pages": "772-790",
+   "reference_file": "references/event-sources-stream-fila-e-kafka.md",
+   "summary": "Polling with batch; visibility timeout >= 6x function timeout; DLQ on the queue; ReportBatchItemFailures; FIFO max batch 10.",
+   "keywords": [
+    "sqs",
+    "fila",
+    "queue",
+    "visibility timeout",
+    "fifo",
+    "redrive",
+    "maxreceivecount",
+    "batch item failures"
+   ],
+   "datado": "6x, 5, batch",
+   "gaps": ""
+  },
+  {
+   "key": "kinesis-dynamodb",
+   "name": "Kinesis and DynamoDB Streams",
+   "pages": "643-655, 691-712",
+   "reference_file": "references/event-sources-stream-fila-e-kafka.md",
+   "summary": "Streams read per shard; batch retry blocks the shard; bisect, max age/retries, on-failure destination, tumbling window, ParallelizationFactor.",
+   "keywords": [
+    "kinesis",
+    "dynamodb",
+    "stream",
+    "shard",
+    "iteratorage",
+    "bisect",
+    "parallelization",
+    "tumbling",
+    "starting position"
+   ],
+   "datado": "parameters and limits",
+   "gaps": ""
+  },
+  {
+   "key": "kafka-msk-mq",
+   "name": "Kafka, MSK and Amazon MQ",
+   "pages": "678-689, 715-733",
+   "reference_file": "references/event-sources-stream-fila-e-kafka.md",
+   "summary": "Consumer group created by Lambda; 14 min maximum timeout for these sources; authentication and networking (VPC); an error repeats the batch.",
+   "keywords": [
+    "kafka",
+    "msk",
+    "mq",
+    "activemq",
+    "rabbitmq",
+    "consumer group",
+    "sasl"
+   ],
+   "datado": "14 min",
+   "gaps": ""
+  },
+  {
+   "key": "servicos-push",
+   "name": "S3, SNS, API Gateway, EventBridge and others",
+   "pages": "586-642, 664-690, 740-771",
+   "reference_file": "references/servicos-integrados-eventos-push.md",
+   "summary": "Services that invoke Lambda (synchronously or asynchronously) via resource-based policy: API Gateway, S3, SNS, EventBridge/schedules, CloudTrail, ALB, CloudFront (Lambda@Edge), etc.",
+   "keywords": [
+    "s3",
+    "sns",
+    "api gateway",
+    "eventbridge",
+    "cloudwatch events",
+    "schedule",
+    "cron",
+    "alb",
+    "cloudfront",
+    "lambda@edge",
+    "cognito",
+    "ses",
+    "iot",
+    "alexa",
+    "trigger",
+    "push services"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "snapstart",
+   "name": "SnapStart (Java 11)",
+   "pages": "353-367",
+   "reference_file": "references/snapstart.md",
+   "summary": "Snapshot of the initialized function when a version is published; resume instead of init; up to 10x less startup; java11 only, published versions only; no PC/arm64/EFS/X-Ray/ephemeral>512 MB; uniqueness and runtime hooks (CRaC).",
+   "keywords": [
+    "snapstart",
+    "snapshot",
+    "crac",
+    "runtime hook",
+    "cold start java",
+    "uniqueness",
+    "unicidade"
+   ],
+   "datado": "java11 only; 14 days; 10x",
+   "gaps": "No other runtimes, no region list."
+  },
+  {
+   "key": "linguagens",
+   "name": "Handlers, logging, errors and tracing per language",
+   "pages": "368-585",
+   "reference_file": "references/linguagens-padrao-comum.md",
+   "summary": "Common pattern documented once (Node.js) + differences per language (TypeScript, Python, Ruby, Java, Go, C#/.NET, PowerShell).",
+   "keywords": [
+    "nodejs",
+    "node",
+    "typescript",
+    "python",
+    "ruby",
+    "java",
+    "go",
+    "golang",
+    "c#",
+    "dotnet",
+    ".net",
+    "powershell",
+    "handler",
+    "logging",
+    "tracing",
+    "languages"
+   ],
+   "datado": "runtime and library versions",
+   "gaps": ""
+  },
+  {
+   "key": "observabilidade",
+   "name": "Monitoring: metrics, logs, Insights, X-Ray",
+   "pages": "795-814, 791-794",
+   "reference_file": "references/observabilidade-monitoramento.md",
+   "summary": "AWS/Lambda metrics (Invocations, Errors, Duration, Throttles, ConcurrentExecutions, IteratorAge...), CloudWatch Logs, Lambda Insights, CodeGuru Profiler, X-Ray.",
+   "keywords": [
+    "monitoring",
+    "metrics",
+    "metricas",
+    "cloudwatch",
+    "logs",
+    "insights",
+    "x-ray",
+    "tracing",
+    "codeguru",
+    "iteratorage",
+    "observabilidade",
+    "observability"
+   ],
+   "datado": "Insights/logs prices",
+   "gaps": ""
+  },
+  {
+   "key": "troubleshooting",
+   "name": "Troubleshooting",
+   "pages": "828-838",
+   "reference_file": "references/troubleshooting.md",
+   "summary": "Common causes: permission, undefined handler, ResourceConflict, function stuck in Pending, recursion, cold starts with PC, EFS, VPC without internet, ENI limit, container.",
+   "keywords": [
+    "troubleshooting",
+    "erro",
+    "problema",
+    "pending",
+    "resourceconflict",
+    "invalidparametervalue",
+    "entrypoint",
+    "timeout de vpc",
+    "problem",
+    "vpc timeout"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "applications",
+   "name": "Applications, SAM, CodeDeploy and Step Functions",
+   "pages": "839-870",
+   "reference_file": "references/aplicacoes-sam-e-orquestracao.md",
+   "summary": "Lambda applications (CloudFormation/SAM), rolling deployments, orchestration with Step Functions and error handling.",
+   "keywords": [
+    "sam",
+    "cloudformation",
+    "application",
+    "codedeploy",
+    "rolling deployment",
+    "step functions",
+    "state machine",
+    "orquestracao",
+    "orchestration"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "boas-praticas",
+   "name": "Best practices",
+   "pages": "871-874",
+   "reference_file": "references/boas-praticas.md",
+   "summary": "Environment reuse, idempotency, avoiding recursion, memory/timeout by testing, least privilege, alarms, batch tuning and IteratorAge.",
+   "keywords": [
+    "best practices",
+    "boas praticas",
+    "idempotent",
+    "recursao",
+    "recursive",
+    "power tuning",
+    "recursion"
+   ],
+   "datado": "",
+   "gaps": ""
+  },
+  {
+   "key": "quotas",
+   "name": "Quotas and limits",
+   "pages": "875-877",
+   "reference_file": "references/quotas-e-limites-datados.md",
+   "summary": "Table of compute/storage, configuration/deploy/execution and API requests (2022 edition).",
+   "keywords": [
+    "quota",
+    "limite",
+    "limit",
+    "payload",
+    "6 mb",
+    "250 mb",
+    "1000",
+    "service quotas",
+    "quotas"
+   ],
+   "datado": "the WHOLE table",
+   "gaps": ""
+  },
+  {
+   "key": "api-reference",
+   "name": "API reference (parameters and errors)",
+   "pages": "984-1297",
+   "reference_file": "references/api-reference-restricoes-e-parametros.md",
+   "summary": "Ranges and enums per parameter (MemorySize, Timeout, BatchSize, MaximumRetryAttempts...), status codes and errors per action, Marker/NextMarker pagination.",
+   "keywords": [
+    "api",
+    "createfunction",
+    "invoke",
+    "updatefunctionconfiguration",
+    "createeventsourcemapping",
+    "putfunctionconcurrency",
+    "status code",
+    "marker",
+    "enum",
+    "parameters"
+   ],
+   "datado": "Runtime enum and all limits",
+   "gaps": ""
+  },
+  {
+   "key": "releases",
+   "name": "Releases and edition date",
+   "pages": "968-983",
+   "reference_file": "references/samples-releases-e-datacao.md",
+   "summary": "Change history up to 11/28/2022 (SnapStart for Java) - proof of the edition date; \"earlier updates\" since 2014.",
+   "keywords": [
+    "release",
+    "releases",
+    "novidades",
+    "historico",
+    "edicao",
+    "data",
+    "2022",
+    "snapstart release",
+    "whats new",
+    "history",
+    "edition date"
+   ],
+   "datado": "everything after Nov/2022 is outside the text",
+   "gaps": ""
+  }
+ ]
+}

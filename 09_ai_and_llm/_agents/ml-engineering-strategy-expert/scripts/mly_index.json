@@ -1,0 +1,1030 @@
+{
+ "versao": 1,
+ "fonte": "Machine Learning Yearning (Andrew Ng, 2018 draft), abbreviated MLY",
+ "convencao": "PDF page = printed number 'Page N' (no offset)",
+ "capitulos": [
+  {
+   "cap": 1,
+   "titulo": "Why Machine Learning Strategy",
+   "pdf_ini": 6,
+   "pdf_fim": 6,
+   "ref": "00-visao-geral.md",
+   "secao": "Introduction"
+  },
+  {
+   "cap": 2,
+   "titulo": "How to use this book to help your team",
+   "pdf_ini": 8,
+   "pdf_fim": 8,
+   "ref": "00-visao-geral.md",
+   "secao": "Introduction"
+  },
+  {
+   "cap": 3,
+   "titulo": "Prerequisites and Notation",
+   "pdf_ini": 9,
+   "pdf_fim": 9,
+   "ref": "00-visao-geral.md",
+   "secao": "Introduction"
+  },
+  {
+   "cap": 4,
+   "titulo": "Scale drives machine learning progress",
+   "pdf_ini": 10,
+   "pdf_fim": 12,
+   "ref": "00-visao-geral.md",
+   "secao": "Introduction"
+  },
+  {
+   "cap": 5,
+   "titulo": "Your development and test sets",
+   "pdf_ini": 14,
+   "pdf_fim": 16,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 6,
+   "titulo": "Your dev and test sets should come from the same distribution",
+   "pdf_ini": 17,
+   "pdf_fim": 18,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 7,
+   "titulo": "How large do the dev/test sets need to be?",
+   "pdf_ini": 19,
+   "pdf_fim": 19,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 8,
+   "titulo": "Establish a single-number evaluation metric",
+   "pdf_ini": 20,
+   "pdf_fim": 21,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 9,
+   "titulo": "Optimizing and satisficing metrics",
+   "pdf_ini": 22,
+   "pdf_fim": 23,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 10,
+   "titulo": "Having a dev set and metric speeds up iterations",
+   "pdf_ini": 24,
+   "pdf_fim": 24,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 11,
+   "titulo": "When to change dev/test sets and metrics",
+   "pdf_ini": 25,
+   "pdf_fim": 26,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 12,
+   "titulo": "Takeaways: Setting up development and test sets",
+   "pdf_ini": 27,
+   "pdf_fim": 27,
+   "ref": "01-dev-test-e-metricas.md",
+   "secao": "Dev/test and metrics"
+  },
+  {
+   "cap": 13,
+   "titulo": "Build your first system quickly, then iterate",
+   "pdf_ini": 29,
+   "pdf_fim": 29,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 14,
+   "titulo": "Error analysis: Look at dev set examples to evaluate ideas",
+   "pdf_ini": 30,
+   "pdf_fim": 31,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 15,
+   "titulo": "Evaluating multiple ideas in parallel during error analysis",
+   "pdf_ini": 32,
+   "pdf_fim": 33,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 16,
+   "titulo": "Cleaning up mislabeled dev and test set examples",
+   "pdf_ini": 34,
+   "pdf_fim": 35,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 17,
+   "titulo": "If you have a large dev set, split it into two subsets",
+   "pdf_ini": 36,
+   "pdf_fim": 37,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 18,
+   "titulo": "How big should the Eyeball and Blackbox dev sets be?",
+   "pdf_ini": 38,
+   "pdf_fim": 39,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 19,
+   "titulo": "Takeaways: Basic error analysis",
+   "pdf_ini": 40,
+   "pdf_fim": 40,
+   "ref": "02-analise-de-erro.md",
+   "secao": "Basic error analysis"
+  },
+  {
+   "cap": 20,
+   "titulo": "Bias and Variance: The two big sources of error",
+   "pdf_ini": 42,
+   "pdf_fim": 43,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 21,
+   "titulo": "Examples of Bias and Variance",
+   "pdf_ini": 44,
+   "pdf_fim": 45,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 22,
+   "titulo": "Comparing to the optimal error rate",
+   "pdf_ini": 46,
+   "pdf_fim": 48,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 23,
+   "titulo": "Addressing Bias and Variance",
+   "pdf_ini": 49,
+   "pdf_fim": 49,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 24,
+   "titulo": "Bias vs. Variance tradeoff",
+   "pdf_ini": 50,
+   "pdf_fim": 50,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 25,
+   "titulo": "Techniques for reducing avoidable bias",
+   "pdf_ini": 51,
+   "pdf_fim": 51,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 26,
+   "titulo": "Error analysis on the training set",
+   "pdf_ini": 52,
+   "pdf_fim": 52,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 27,
+   "titulo": "Techniques for reducing variance",
+   "pdf_ini": 53,
+   "pdf_fim": 54,
+   "ref": "03-vies-e-variancia.md",
+   "secao": "Bias and variance"
+  },
+  {
+   "cap": 28,
+   "titulo": "Diagnosing bias and variance: Learning curves",
+   "pdf_ini": 56,
+   "pdf_fim": 58,
+   "ref": "04-curvas-de-aprendizado.md",
+   "secao": "Learning curves"
+  },
+  {
+   "cap": 29,
+   "titulo": "Plotting training error",
+   "pdf_ini": 59,
+   "pdf_fim": 59,
+   "ref": "04-curvas-de-aprendizado.md",
+   "secao": "Learning curves"
+  },
+  {
+   "cap": 30,
+   "titulo": "Interpreting learning curves: High bias",
+   "pdf_ini": 60,
+   "pdf_fim": 61,
+   "ref": "04-curvas-de-aprendizado.md",
+   "secao": "Learning curves"
+  },
+  {
+   "cap": 31,
+   "titulo": "Interpreting learning curves: Other cases",
+   "pdf_ini": 62,
+   "pdf_fim": 62,
+   "ref": "04-curvas-de-aprendizado.md",
+   "secao": "Learning curves"
+  },
+  {
+   "cap": 32,
+   "titulo": "Plotting learning curves",
+   "pdf_ini": 63,
+   "pdf_fim": 64,
+   "ref": "04-curvas-de-aprendizado.md",
+   "secao": "Learning curves"
+  },
+  {
+   "cap": 33,
+   "titulo": "Why we compare to human-level performance",
+   "pdf_ini": 66,
+   "pdf_fim": 67,
+   "ref": "05-desempenho-humano.md",
+   "secao": "Human performance"
+  },
+  {
+   "cap": 34,
+   "titulo": "How to define human-level performance",
+   "pdf_ini": 68,
+   "pdf_fim": 68,
+   "ref": "05-desempenho-humano.md",
+   "secao": "Human performance"
+  },
+  {
+   "cap": 35,
+   "titulo": "Surpassing human-level performance",
+   "pdf_ini": 69,
+   "pdf_fim": 69,
+   "ref": "05-desempenho-humano.md",
+   "secao": "Human performance"
+  },
+  {
+   "cap": 36,
+   "titulo": "When you should train and test on different distributions",
+   "pdf_ini": 71,
+   "pdf_fim": 72,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 37,
+   "titulo": "How to decide whether to use all your data",
+   "pdf_ini": 73,
+   "pdf_fim": 74,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 38,
+   "titulo": "How to decide whether to include inconsistent data",
+   "pdf_ini": 75,
+   "pdf_fim": 75,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 39,
+   "titulo": "Weighting data",
+   "pdf_ini": 76,
+   "pdf_fim": 76,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 40,
+   "titulo": "Generalizing from the training set to the dev set",
+   "pdf_ini": 77,
+   "pdf_fim": 78,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 41,
+   "titulo": "Identifying Bias, Variance, and Data Mismatch Errors",
+   "pdf_ini": 79,
+   "pdf_fim": 80,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 42,
+   "titulo": "Addressing data mismatch",
+   "pdf_ini": 81,
+   "pdf_fim": 81,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 43,
+   "titulo": "Artificial data synthesis",
+   "pdf_ini": 82,
+   "pdf_fim": 83,
+   "ref": "06-distribuicoes-diferentes.md",
+   "secao": "Different distributions"
+  },
+  {
+   "cap": 44,
+   "titulo": "The Optimization Verification test",
+   "pdf_ini": 85,
+   "pdf_fim": 86,
+   "ref": "07-depuracao-de-inferencia.md",
+   "secao": "Debugging inference algorithms"
+  },
+  {
+   "cap": 45,
+   "titulo": "General form of Optimization Verification test",
+   "pdf_ini": 87,
+   "pdf_fim": 87,
+   "ref": "07-depuracao-de-inferencia.md",
+   "secao": "Debugging inference algorithms"
+  },
+  {
+   "cap": 46,
+   "titulo": "Reinforcement learning example",
+   "pdf_ini": 88,
+   "pdf_fim": 89,
+   "ref": "07-depuracao-de-inferencia.md",
+   "secao": "Debugging inference algorithms"
+  },
+  {
+   "cap": 47,
+   "titulo": "The rise of end-to-end learning",
+   "pdf_ini": 91,
+   "pdf_fim": 92,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 48,
+   "titulo": "More end-to-end learning examples",
+   "pdf_ini": 93,
+   "pdf_fim": 94,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 49,
+   "titulo": "Pros and cons of end-to-end learning",
+   "pdf_ini": 95,
+   "pdf_fim": 96,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 50,
+   "titulo": "Choosing pipeline components: Data availability",
+   "pdf_ini": 97,
+   "pdf_fim": 98,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 51,
+   "titulo": "Choosing pipeline components: Task simplicity",
+   "pdf_ini": 99,
+   "pdf_fim": 102,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 52,
+   "titulo": "Directly learning rich outputs",
+   "pdf_ini": 103,
+   "pdf_fim": 104,
+   "ref": "08-end-to-end-e-pipelines.md",
+   "secao": "End-to-end and pipelines"
+  },
+  {
+   "cap": 53,
+   "titulo": "Error analysis by parts",
+   "pdf_ini": 106,
+   "pdf_fim": 108,
+   "ref": "09-analise-de-erro-por-partes.md",
+   "secao": "Error analysis by parts"
+  },
+  {
+   "cap": 54,
+   "titulo": "Attributing error to one part",
+   "pdf_ini": 109,
+   "pdf_fim": 110,
+   "ref": "09-analise-de-erro-por-partes.md",
+   "secao": "Error analysis by parts"
+  },
+  {
+   "cap": 55,
+   "titulo": "General case of error attribution",
+   "pdf_ini": 111,
+   "pdf_fim": 112,
+   "ref": "09-analise-de-erro-por-partes.md",
+   "secao": "Error analysis by parts"
+  },
+  {
+   "cap": 56,
+   "titulo": "Error analysis by parts and comparison to human-level performance",
+   "pdf_ini": 113,
+   "pdf_fim": 114,
+   "ref": "09-analise-de-erro-por-partes.md",
+   "secao": "Error analysis by parts"
+  },
+  {
+   "cap": 57,
+   "titulo": "Spotting a flawed ML pipeline",
+   "pdf_ini": 115,
+   "pdf_fim": 116,
+   "ref": "09-analise-de-erro-por-partes.md",
+   "secao": "Error analysis by parts"
+  },
+  {
+   "cap": 58,
+   "titulo": "Building a superhero team",
+   "pdf_ini": 118,
+   "pdf_fim": 118,
+   "ref": "00-visao-geral.md",
+   "secao": "Conclusion"
+  }
+ ],
+ "topicos": [
+  {
+   "tema": "scale: big data and big networks; older algorithms plateau",
+   "chaves": "scale data neural network plateau escala plato dados escala: dados e redes grandes; platô de algoritmos antigos",
+   "paginas": [
+    10,
+    11
+   ],
+   "cap": 4
+  },
+  {
+   "tema": "definition of training, dev and test sets",
+   "chaves": "training set dev set test set hold-out definicao conjuntos definição de treino, dev e teste",
+   "paginas": [
+    15
+   ],
+   "cap": 5
+  },
+  {
+   "tema": "dev/test must reflect future data",
+   "chaves": "dev test distribuicao futura mobile reflect future data dev/test devem refletir dados futuros",
+   "paginas": [
+    14,
+    15,
+    16
+   ],
+   "cap": 5
+  },
+  {
+   "tema": "dev and test from the same distribution",
+   "chaves": "mesma distribuicao same distribution dev test mismatch geografia dev e teste da mesma distribuição",
+   "paginas": [
+    17,
+    18
+   ],
+   "cap": 6
+  },
+  {
+   "tema": "size of dev and test sets",
+   "chaves": "tamanho dev test size 1000 10000 0.1% 30% tamanho de dev e teste",
+   "paginas": [
+    19
+   ],
+   "cap": 7
+  },
+  {
+   "tema": "single-number metric; precision/recall; F1",
+   "chaves": "single-number metric precision recall F1 media harmonica métrica de número único; precisão/recall; F1",
+   "paginas": [
+    20,
+    21
+   ],
+   "cap": 8
+  },
+  {
+   "tema": "optimizing and satisficing metrics",
+   "chaves": "optimizing satisficing metric wakeword tempo de execucao métrica otimizante e satisfatória",
+   "paginas": [
+    22,
+    23
+   ],
+   "cap": 9
+  },
+  {
+   "tema": "fast iteration with a dev set and a metric",
+   "chaves": "iteracao ideia codigo experimento iterate iteração rápida com dev e métrica",
+   "paginas": [
+    24
+   ],
+   "cap": 10
+  },
+  {
+   "tema": "when to change dev/test and metrics",
+   "chaves": "mudar dev test metrica overfit dev three causes quando mudar dev/test e métricas",
+   "paginas": [
+    25,
+    26
+   ],
+   "cap": 11
+  },
+  {
+   "tema": "do not use the test set for decisions",
+   "chaves": "test set decisions overfit test acompanhar semanal não usar o teste para decisões",
+   "paginas": [
+    26
+   ],
+   "cap": 11
+  },
+  {
+   "tema": "dev/test summary",
+   "chaves": "takeaways dev test resumo resumo dev/test",
+   "paginas": [
+    27
+   ],
+   "cap": 12
+  },
+  {
+   "tema": "build a basic system quickly",
+   "chaves": "first system quickly basic system iterate honeypot construir sistema básico rápido",
+   "paginas": [
+    29,
+    40
+   ],
+   "cap": 13
+  },
+  {
+   "tema": "error analysis: count ~100 errors and the improvement ceiling",
+   "chaves": "error analysis ceiling 100 misclassified teto dog análise de erro: contar ~100 erros e teto de melhoria",
+   "paginas": [
+    30,
+    31
+   ],
+   "cap": 14
+  },
+  {
+   "tema": "error analysis spreadsheet, evaluating ideas in parallel",
+   "chaves": "spreadsheet categories parallel planilha categorias planilha de análise de erro em paralelo",
+   "paginas": [
+    32,
+    33
+   ],
+   "cap": 15
+  },
+  {
+   "tema": "mislabeled examples in dev/test",
+   "chaves": "mislabeled labels rotulagem errada 6% 30% rótulos errados no dev/test",
+   "paginas": [
+    34,
+    35
+   ],
+   "cap": 16
+  },
+  {
+   "tema": "Eyeball and Blackbox dev sets",
+   "chaves": "eyeball blackbox dev split dev Eyeball e Blackbox",
+   "paginas": [
+    36,
+    37
+   ],
+   "cap": 17
+  },
+  {
+   "tema": "size of the Eyeball and Blackbox sets",
+   "chaves": "eyeball size 10 20 50 100 mistakes error rate 2000 tamanho do Eyeball e do Blackbox",
+   "paginas": [
+    38,
+    39
+   ],
+   "cap": 18
+  },
+  {
+   "tema": "bias and variance (informal definitions)",
+   "chaves": "bias variance definicao informal training error viés e variância (definições informais)",
+   "paginas": [
+    42,
+    43
+   ],
+   "cap": 20
+  },
+  {
+   "tema": "examples of bias and variance",
+   "chaves": "exemplos overfitting underfitting high bias high variance exemplos de viés e variância",
+   "paginas": [
+    44,
+    45
+   ],
+   "cap": 21
+  },
+  {
+   "tema": "optimal error rate, avoidable bias, Bayes rate",
+   "chaves": "optimal error rate avoidable bias unavoidable bayes rate taxa de erro ótima, viés evitável, taxa de Bayes",
+   "paginas": [
+    46,
+    47
+   ],
+   "cap": 22
+  },
+  {
+   "tema": "negative avoidable bias",
+   "chaves": "negative avoidable bias over-memorized viés evitável negativo",
+   "paginas": [
+    47
+   ],
+   "cap": 22
+  },
+  {
+   "tema": "simple recipe: bigger model / more data",
+   "chaves": "addressing bias variance bigger model more data regularization receita simples: modelo maior / mais dados",
+   "paginas": [
+    49
+   ],
+   "cap": 23
+  },
+  {
+   "tema": "bias-variance tradeoff",
+   "chaves": "tradeoff bias variance regularizacao arquitetura trade-off viés-variância",
+   "paginas": [
+    50
+   ],
+   "cap": 24
+  },
+  {
+   "tema": "techniques for reducing avoidable bias",
+   "chaves": "reduce avoidable bias techniques features architecture técnicas para reduzir viés evitável",
+   "paginas": [
+    51
+   ],
+   "cap": 25
+  },
+  {
+   "tema": "error analysis on the training set",
+   "chaves": "error analysis training set speech noise análise de erro no conjunto de treino",
+   "paginas": [
+    52
+   ],
+   "cap": 26
+  },
+  {
+   "tema": "techniques for reducing variance",
+   "chaves": "reduce variance early stopping feature selection regularization técnicas para reduzir variância",
+   "paginas": [
+    53,
+    54
+   ],
+   "cap": 27
+  },
+  {
+   "tema": "learning curve (dev error)",
+   "chaves": "learning curve dev error desired error rate curva de aprendizado (erro de dev)",
+   "paginas": [
+    56,
+    57,
+    58
+   ],
+   "cap": 28
+  },
+  {
+   "tema": "training error grows with more data",
+   "chaves": "training error increases memorize erro de treino cresce com mais dados",
+   "paginas": [
+    59
+   ],
+   "cap": 29
+  },
+  {
+   "tema": "learning curve with high bias",
+   "chaves": "high bias learning curve textbook curva com viés alto",
+   "paginas": [
+    60,
+    61
+   ],
+   "cap": 30
+  },
+  {
+   "tema": "curves: high variance and both cases",
+   "chaves": "learning curve high variance both cases curvas: variância alta e ambos",
+   "paginas": [
+    62
+   ],
+   "cap": 31
+  },
+  {
+   "tema": "noisy curves; balanced subsets; non-linear scale",
+   "chaves": "noisy learning curve sampling replacement balanced subset ruído nas curvas; subconjuntos balanceados; escala não linear",
+   "paginas": [
+    63,
+    64
+   ],
+   "cap": 32
+  },
+  {
+   "tema": "why compare to human-level performance",
+   "chaves": "human-level performance why compare por que comparar com desempenho humano",
+   "paginas": [
+    66,
+    67
+   ],
+   "cap": 33
+  },
+  {
+   "tema": "how to define human-level performance",
+   "chaves": "define human-level team of doctors x-ray 2% como definir desempenho humano",
+   "paginas": [
+    68
+   ],
+   "cap": 34
+  },
+  {
+   "tema": "surpassing human-level performance",
+   "chaves": "surpassing human-level subset noisy speech superar o desempenho humano",
+   "paginas": [
+    69
+   ],
+   "cap": 35
+  },
+  {
+   "tema": "training and testing on different distributions",
+   "chaves": "different distributions 10,000 200,000 user images treinar e testar em distribuições diferentes",
+   "paginas": [
+    71,
+    72
+   ],
+   "cap": 36
+  },
+  {
+   "tema": "whether to use all the data",
+   "chaves": "use all data capacity attic Sherlock usar ou não todos os dados",
+   "paginas": [
+    73,
+    74
+   ],
+   "cap": 37
+  },
+  {
+   "tema": "inconsistent data (NYC vs Detroit)",
+   "chaves": "inconsistent data New York Detroit housing dados inconsistentes (NYC vs Detroit)",
+   "paginas": [
+    75
+   ],
+   "cap": 38
+  },
+  {
+   "tema": "weighting data (beta)",
+   "chaves": "weighting data beta 1/40 squared error ponderar ponderar dados (beta)",
+   "paginas": [
+    76
+   ],
+   "cap": 39
+  },
+  {
+   "tema": "training-dev set",
+   "chaves": "training dev set four subsets data mismatch conjunto training-dev",
+   "paginas": [
+    77,
+    78
+   ],
+   "cap": 40
+  },
+  {
+   "tema": "bias, variance and data mismatch",
+   "chaves": "identifying bias variance data mismatch table viés, variância e descasamento de dados",
+   "paginas": [
+    79,
+    80
+   ],
+   "cap": 41
+  },
+  {
+   "tema": "addressing data mismatch",
+   "chaves": "addressing data mismatch car noise tratar descasamento de dados",
+   "paginas": [
+    81
+   ],
+   "cap": 42
+  },
+  {
+   "tema": "artificial data synthesis",
+   "chaves": "artificial data synthesis car noise motion blur video game sintese síntese artificial de dados",
+   "paginas": [
+    82,
+    83
+   ],
+   "cap": 43
+  },
+  {
+   "tema": "optimization verification test",
+   "chaves": "optimization verification test beam search score teste de verificação de otimização",
+   "paginas": [
+    85,
+    86
+   ],
+   "cap": 44
+  },
+  {
+   "tema": "general form of the verification test",
+   "chaves": "general form optimization verification translation forma geral do teste de verificação",
+   "paginas": [
+    87
+   ],
+   "cap": 45
+  },
+  {
+   "tema": "reinforcement learning and the helicopter",
+   "chaves": "reinforcement learning helicopter reward function autorotation aprendizado por reforço e helicóptero",
+   "paginas": [
+    88,
+    89
+   ],
+   "cap": 46
+  },
+  {
+   "tema": "the rise of end-to-end",
+   "chaves": "end-to-end learning sentiment pipeline parser o surgimento do end-to-end",
+   "paginas": [
+    91,
+    92
+   ],
+   "cap": 47
+  },
+  {
+   "tema": "more end-to-end examples (speech, self-driving car)",
+   "chaves": "speech MFCC phoneme autonomous car pipeline mais exemplos end-to-end (voz, carro autônomo)",
+   "paginas": [
+    93,
+    94
+   ],
+   "cap": 48
+  },
+  {
+   "tema": "pros and cons of end-to-end",
+   "chaves": "pros cons end-to-end hand-engineering data both ends prós e contras do end-to-end",
+   "paginas": [
+    95,
+    96
+   ],
+   "cap": 49
+  },
+  {
+   "tema": "pipeline components: data availability",
+   "chaves": "pipeline components data availability steering componentes do pipeline: disponibilidade de dados",
+   "paginas": [
+    97,
+    98
+   ],
+   "cap": 50
+  },
+  {
+   "tema": "pipeline components: task simplicity",
+   "chaves": "pipeline task simplicity siamese cat componentes do pipeline: simplicidade da tarefa",
+   "paginas": [
+    99,
+    100,
+    101,
+    102
+   ],
+   "cap": 51
+  },
+  {
+   "tema": "rich outputs (captioning, translation)",
+   "chaves": "rich outputs image captioning machine translation saídas ricas (legenda, tradução)",
+   "paginas": [
+    103,
+    104
+   ],
+   "cap": 52
+  },
+  {
+   "tema": "error analysis by parts",
+   "chaves": "error analysis by parts cat detector breed classifier análise de erro por partes",
+   "paginas": [
+    106,
+    107,
+    108
+   ],
+   "cap": 53
+  },
+  {
+   "tema": "attributing error to a part (perfect input)",
+   "chaves": "attributing error perfect input hand-labeled bounding box atribuir erro a uma parte (entrada perfeita)",
+   "paginas": [
+    109,
+    110
+   ],
+   "cap": 54
+  },
+  {
+   "tema": "general case of error attribution A B C; DAG",
+   "chaves": "general case error attribution DAG pipeline caso geral de atribuição de erro A B C; DAG",
+   "paginas": [
+    111,
+    112
+   ],
+   "cap": 55
+  },
+  {
+   "tema": "analysis by parts and human performance",
+   "chaves": "error analysis by parts human-level component análise por partes e desempenho humano",
+   "paginas": [
+    113,
+    114
+   ],
+   "cap": 56
+  },
+  {
+   "tema": "flawed pipeline",
+   "chaves": "flawed pipeline redesign lane markings pipeline defeituoso",
+   "paginas": [
+    115,
+    116
+   ],
+   "cap": 57
+  },
+  {
+   "tema": "superhero / team",
+   "chaves": "superhero team teammates superherói / equipe",
+   "paginas": [
+    118
+   ],
+   "cap": 58
+  },
+  {
+   "tema": "draft, copyright and table of contents",
+   "chaves": "draft copyright deeplearning.ai 2018 table of contents rascunho, copyright e índice",
+   "paginas": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "cap": 0
+  }
+ ],
+ "sem_cobertura": [
+  {
+   "tema": "Transformers, LLMs, BERT, language models",
+   "termos": "transformer|transformers|llm|llms|bert|language model|gpt"
+  },
+  {
+   "tema": "Batch normalization, ResNet, CNN, RNN, convolution, Adam, learning rate",
+   "termos": "batch normalization|resnet|cnn|rnn|convolution|convolucao|adam|learning rate|taxa de aprendizado"
+  },
+  {
+   "tema": "Ensembles, data augmentation as a term, k-fold",
+   "termos": "ensemble|ensembles|data augmentation|augmentation|k-fold|kfold"
+  },
+  {
+   "tema": "AUC, calibration, confusion matrix",
+   "termos": "auc|roc|calibration|calibracao|confusion matrix|matriz de confusao"
+  },
+  {
+   "tema": "Data leakage, drift, production monitoring, MLOps, A/B tests",
+   "termos": "data leakage|leakage|vazamento|drift|monitoring|monitoramento|mlops|a/b test|ab test"
+  },
+  {
+   "tema": "Fairness/ethical bias, privacy, interpretability",
+   "termos": "fairness|justica|privacy|privacidade|interpretability|interpretabilidade"
+  },
+  {
+   "tema": "Unsupervised/semi-supervised learning, active learning, fine-tuning, pre-training",
+   "termos": "unsupervised|semi-supervised|active learning|fine-tuning|fine tuning|pre-train|pretraining|pre-treino"
+  },
+  {
+   "tema": "Confidence intervals and significance tests (the book only mentions them in passing in the note on p.19)",
+   "termos": "confidence interval|intervalo de confianca|p-value|significance test|teste de significancia"
+  }
+ ],
+ "paginas_divisorias": [
+  13,
+  28,
+  41,
+  55,
+  65,
+  70,
+  84,
+  90,
+  105,
+  117
+ ],
+ "paginas_so_figura": "figures (curves p.10-11, 56-62; pipelines p.91-116) have no extractable text"
+}

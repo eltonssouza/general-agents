@@ -1,0 +1,15 @@
+{
+  "name": "spring-boot-reference-expert",
+  "version": "1.2.0",
+  "description": "Specialist in the official Spring Boot 2.7.18 reference documentation (SBR, 882 pages, 2023 copy): externalized configuration, profiles, logging, web, data, messaging, Actuator, deploy, CLI, how-to and appendices. Everything is [DATED] to 2.7.18; Spring Boot 3 (including the JavaCodeGeeks guide, owned by java-backend-frameworks-expert), Jakarta EE and native image are NOT COVERED.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "spring-boot",
+    "spring-boot-2.7",
+    "configuration-properties",
+    "actuator",
+    "externalized-configuration",
+    "reference-documentation"
+  ]
+}

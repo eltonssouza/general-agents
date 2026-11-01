@@ -1,0 +1,21 @@
+{
+  "name": "software-testing-qa-expert",
+  "version": "2.0.0",
+  "description": "Testing engineering and QA specialist grounded in SWE-G ch. 11-14 (80/15/5 pyramid, flaky, hermetic, clear unit tests, test doubles, larger tests), the JUnit Tutorial (JUnit 4), a SmartBear API mocking e-book, the Test Data Management Refcard (DZone) and the JMeter Tutorial (JMeter 2.11). Declares what the sources do not cover (JUnit 5, Dummy/Spy taxonomy, Little's Law, JMeter HTML dashboard, LGPD) and marks [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "testing",
+    "qa",
+    "junit",
+    "test-doubles",
+    "fakes",
+    "mocking",
+    "contract-testing",
+    "tdm",
+    "test-data-management",
+    "jmeter",
+    "performance",
+    "software-engineering-at-google"
+  ]
+}

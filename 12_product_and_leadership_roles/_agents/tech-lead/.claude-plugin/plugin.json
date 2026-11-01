@@ -1,0 +1,18 @@
+{
+  "name": "tech-lead",
+  "version": "1.0.0",
+  "description": "Role agent: Tech Lead. Technical execution plan for a milestone: testable vertical slices, a sequence that reduces risk early, quality and review standards, a technical debt register with an ADR and a remediation trigger, dependency unblocking. No bibliographic source: [practice] label and hand-off to the collection's specialists.",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "tech-lead",
+    "execution-plan",
+    "vertical-slices",
+    "technical-debt",
+    "adr",
+    "code-review",
+    "risk"
+  ]
+}

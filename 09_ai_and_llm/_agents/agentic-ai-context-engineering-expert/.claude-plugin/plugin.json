@@ -1,0 +1,18 @@
+{
+  "name": "agentic-ai-context-engineering-expert",
+  "version": "1.0.0",
+  "description": "Expert in AI agent architecture and context engineering, based on Building Agentic AI Systems (Biswas and Talukdar, Packt, 2025) and Context Engineering 2.0 (Hua et al., arXiv 2025): architectures, tools, planning, multi-agent (CWD), prompts, state, memory, context, action limits, trust, and evaluation. Frameworks and products cited are [DATED] (2025). Does not replace empirical evaluation or security review.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "agentic-ai",
+    "ai-agents",
+    "context-engineering",
+    "multi-agent",
+    "tool-use",
+    "agent-memory",
+    "llm-agents",
+    "agent-guardrails",
+    "token-budget"
+  ]
+}

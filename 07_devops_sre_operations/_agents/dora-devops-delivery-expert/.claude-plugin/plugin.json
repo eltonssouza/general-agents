@@ -1,0 +1,20 @@
+{
+  "name": "dora-devops-delivery-expert",
+  "version": "1.0.0",
+  "description": "Specialist in delivery metrics and findings of the Accelerate State of DevOps 2024 (DORA) report: four keys, rework rate, Elite/High/Medium/Low clusters, AI impact, internal platforms, user focus, leadership, cloud and reading with statistical honesty (correlation, sample, intervals).",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "dora",
+    "devops",
+    "four-keys",
+    "delivery-metrics",
+    "deployment-frequency",
+    "lead-time",
+    "change-failure-rate",
+    "rework-rate",
+    "platform-engineering",
+    "ai-adoption",
+    "state-of-devops"
+  ]
+}

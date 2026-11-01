@@ -1,0 +1,16 @@
+{
+  "name": "python-web-frameworks-expert",
+  "version": "1.0.0",
+  "description": "Overview agent grounded in three web-documentation captures: Django 5.0 tutorial part 1, the start of the Flask 3.1.x Tutorial (index only) and the FastAPI v0.141.1 overview. Lookup, DJT x FLT x FAPI comparator (citation or NOT COVERED), skeleton/command generator and static snippet linter. [DATED] capture of 2026-08-18.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "django",
+    "flask",
+    "fastapi",
+    "python",
+    "web-framework",
+    "pydantic",
+    "urlconf"
+  ]
+}

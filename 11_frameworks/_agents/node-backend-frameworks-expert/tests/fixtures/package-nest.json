@@ -1,0 +1,7 @@
+{
+  "name": "my-nest",
+  "version": "0.0.1",
+  "private": true,
+  "engines": { "node": ">= 18.0.0" },
+  "dependencies": { "@nestjs/core": "^10.0.0" }
+}

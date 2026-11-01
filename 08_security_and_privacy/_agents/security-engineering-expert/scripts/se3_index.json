@@ -1,0 +1,2055 @@
+{
+ "versao": 1,
+ "fonte": "Security Engineering, Ross Anderson, 3rd ed., 2020 (SE3)",
+ "convencao": "PDF page; printed = PDF - chapter offset",
+ "capitulos": [
+  {
+   "cap": 1,
+   "titulo": "What Is Security Engineering?",
+   "pdf_ini": 51,
+   "pdf_fim": 64,
+   "offset": 48,
+   "ref": "01-fundamentos-e-oponentes.md",
+   "leitura": "full",
+   "lido": [
+    [
+     51,
+     64
+    ]
+   ]
+  },
+  {
+   "cap": 2,
+   "titulo": "Who Is the Opponent?",
+   "pdf_ini": 65,
+   "pdf_fim": 109,
+   "offset": 48,
+   "ref": "01-fundamentos-e-oponentes.md",
+   "leitura": "full",
+   "lido": [
+    [
+     65,
+     109
+    ]
+   ]
+  },
+  {
+   "cap": 3,
+   "titulo": "Psychology and Usability",
+   "pdf_ini": 110,
+   "pdf_fim": 165,
+   "offset": 47,
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "leitura": "full",
+   "lido": [
+    [
+     110,
+     165
+    ]
+   ]
+  },
+  {
+   "cap": 4,
+   "titulo": "Protocols",
+   "pdf_ini": 166,
+   "pdf_fim": 191,
+   "offset": 47,
+   "ref": "03-protocolos.md",
+   "leitura": "full",
+   "lido": [
+    [
+     166,
+     191
+    ]
+   ]
+  },
+  {
+   "cap": 5,
+   "titulo": "Cryptography",
+   "pdf_ini": 192,
+   "pdf_fim": 252,
+   "offset": 47,
+   "ref": "04-criptografia.md",
+   "leitura": "full from 5.2.2 (p.195); 5.1-5.2.1 only the start",
+   "lido": [
+    [
+     192,
+     252
+    ]
+   ]
+  },
+  {
+   "cap": 6,
+   "titulo": "Access Control",
+   "pdf_ini": 253,
+   "pdf_fim": 287,
+   "offset": 46,
+   "ref": "05-controle-de-acesso.md",
+   "leitura": "full",
+   "lido": [
+    [
+     253,
+     287
+    ]
+   ]
+  },
+  {
+   "cap": 7,
+   "titulo": "Distributed Systems",
+   "pdf_ini": 288,
+   "pdf_fim": 318,
+   "offset": 45,
+   "ref": "06-sistemas-distribuidos-e-nomes.md",
+   "leitura": "partial (p.315-318 not read)",
+   "lido": [
+    [
+     288,
+     314
+    ]
+   ]
+  },
+  {
+   "cap": 8,
+   "titulo": "Economics",
+   "pdf_ini": 319,
+   "pdf_fim": 358,
+   "offset": 44,
+   "ref": "07-economia-da-seguranca.md",
+   "leitura": "full up to p.355; p.356-358 only skimmed",
+   "lido": [
+    [
+     319,
+     355
+    ]
+   ]
+  },
+  {
+   "cap": 9,
+   "titulo": "Multilevel Security",
+   "pdf_ini": 359,
+   "pdf_fim": 383,
+   "offset": 44,
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "leitura": "full",
+   "lido": [
+    [
+     359,
+     383
+    ]
+   ]
+  },
+  {
+   "cap": 10,
+   "titulo": "Boundaries",
+   "pdf_ini": 384,
+   "pdf_fim": 416,
+   "offset": 43,
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "leitura": "almost full (p.409-411 only excerpts)",
+   "lido": [
+    [
+     384,
+     408
+    ],
+    [
+     412,
+     416
+    ]
+   ]
+  },
+  {
+   "cap": 11,
+   "titulo": "Inference Control",
+   "pdf_ini": 417,
+   "pdf_fim": 445,
+   "offset": 42,
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "leitura": "full",
+   "lido": [
+    [
+     417,
+     445
+    ]
+   ]
+  },
+  {
+   "cap": 12,
+   "titulo": "Banking and Bookkeeping",
+   "pdf_ini": 446,
+   "pdf_fim": 510,
+   "offset": 41,
+   "ref": "11-bancos-e-controles-internos.md",
+   "leitura": "partial (p.502-510 not read)",
+   "lido": [
+    [
+     446,
+     501
+    ]
+   ]
+  },
+  {
+   "cap": 13,
+   "titulo": "Locks and Alarms",
+   "pdf_ini": 511,
+   "pdf_fim": 535,
+   "offset": 40,
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     511,
+     516
+    ],
+    [
+     532,
+     535
+    ]
+   ]
+  },
+  {
+   "cap": 14,
+   "titulo": "Monitoring and Metering",
+   "pdf_ini": 536,
+   "pdf_fim": 566,
+   "offset": 39,
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     536,
+     546
+    ],
+    [
+     564,
+     566
+    ]
+   ]
+  },
+  {
+   "cap": 15,
+   "titulo": "Nuclear Command and Control",
+   "pdf_ini": 567,
+   "pdf_fim": 585,
+   "offset": 38,
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     567,
+     569
+    ],
+    [
+     578,
+     585
+    ]
+   ]
+  },
+  {
+   "cap": 16,
+   "titulo": "Security Printing and Seals",
+   "pdf_ini": 586,
+   "pdf_fim": 607,
+   "offset": 37,
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     599,
+     607
+    ]
+   ]
+  },
+  {
+   "cap": 17,
+   "titulo": "Biometrics",
+   "pdf_ini": 608,
+   "pdf_fim": 635,
+   "offset": 37,
+   "ref": "14-biometria-e-tamper-resistance.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     608,
+     615
+    ],
+    [
+     618,
+     621
+    ],
+    [
+     625,
+     627
+    ],
+    [
+     630,
+     635
+    ]
+   ]
+  },
+  {
+   "cap": 18,
+   "titulo": "Tamper Resistance",
+   "pdf_ini": 636,
+   "pdf_fim": 674,
+   "offset": 37,
+   "ref": "14-biometria-e-tamper-resistance.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     636,
+     640
+    ],
+    [
+     667,
+     674
+    ]
+   ]
+  },
+  {
+   "cap": 19,
+   "titulo": "Side Channels",
+   "pdf_ini": 675,
+   "pdf_fim": 701,
+   "offset": 36,
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     675,
+     677
+    ],
+    [
+     685,
+     686
+    ],
+    [
+     699,
+     701
+    ]
+   ]
+  },
+  {
+   "cap": 20,
+   "titulo": "Advanced Cryptographic Engineering",
+   "pdf_ini": 702,
+   "pdf_fim": 733,
+   "offset": 35,
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "leitura": "partial",
+   "lido": [
+    [
+     702,
+     709
+    ],
+    [
+     712,
+     712
+    ],
+    [
+     716,
+     717
+    ],
+    [
+     730,
+     733
+    ]
+   ]
+  },
+  {
+   "cap": 21,
+   "titulo": "Network Attack and Defence",
+   "pdf_ini": 734,
+   "pdf_fim": 770,
+   "offset": 35,
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "leitura": "partial (p.734-747, 762-764 not read)",
+   "lido": [
+    [
+     748,
+     762
+    ],
+    [
+     765,
+     770
+    ]
+   ]
+  },
+  {
+   "cap": 22,
+   "titulo": "Phones",
+   "pdf_ini": 771,
+   "pdf_fim": 810,
+   "offset": 34,
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "leitura": "minimal",
+   "lido": [
+    [
+     771,
+     771
+    ],
+    [
+     794,
+     795
+    ],
+    [
+     808,
+     810
+    ]
+   ]
+  },
+  {
+   "cap": 23,
+   "titulo": "Electronic and Information Warfare",
+   "pdf_ini": 811,
+   "pdf_fim": 848,
+   "offset": 34,
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "leitura": "summary only",
+   "lido": [
+    [
+     846,
+     847
+    ]
+   ]
+  },
+  {
+   "cap": 24,
+   "titulo": "Copyright and DRM",
+   "pdf_ini": 849,
+   "pdf_fim": 897,
+   "offset": 34,
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "leitura": "summary only",
+   "lido": [
+    [
+     896,
+     897
+    ]
+   ]
+  },
+  {
+   "cap": 25,
+   "titulo": "New Directions?",
+   "pdf_ini": 898,
+   "pdf_fim": 941,
+   "offset": 33,
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "leitura": "partial (only 25.3 AI/ML)",
+   "lido": [
+    [
+     907,
+     915
+    ]
+   ]
+  },
+  {
+   "cap": 26,
+   "titulo": "Surveillance or Privacy?",
+   "pdf_ini": 942,
+   "pdf_fim": 996,
+   "offset": 33,
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "leitura": "partial (only p.981-996)",
+   "lido": [
+    [
+     981,
+     996
+    ]
+   ]
+  },
+  {
+   "cap": 27,
+   "titulo": "Secure Systems Development",
+   "pdf_ini": 997,
+   "pdf_fim": 1045,
+   "offset": 32,
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "leitura": "full",
+   "lido": [
+    [
+     997,
+     1045
+    ]
+   ]
+  },
+  {
+   "cap": 28,
+   "titulo": "Assurance and Sustainability",
+   "pdf_ini": 1046,
+   "pdf_fim": 1089,
+   "offset": 31,
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "leitura": "partial (p.1083-1089 not read)",
+   "lido": [
+    [
+     1046,
+     1083
+    ]
+   ]
+  },
+  {
+   "cap": 29,
+   "titulo": "Beyond Computer Says No",
+   "pdf_ini": 1090,
+   "pdf_fim": 1091,
+   "offset": 31,
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "leitura": "partial (only p.1090-1091)",
+   "lido": [
+    [
+     1090,
+     1091
+    ]
+   ]
+  }
+ ],
+ "entradas": [
+  {
+   "topico": "Definition of security engineering; four elements (policy, mechanism, assurance, incentive)",
+   "termos": [
+    "engenharia de seguranca",
+    "security engineering",
+    "quatro elementos",
+    "framework",
+    "politica mecanismo incentivo"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "51-53",
+   "cap": 1
+  },
+  {
+   "topico": "Security theatre",
+   "termos": [
+    "security theatre",
+    "teatro de seguranca"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "53",
+   "cap": 1
+  },
+  {
+   "topico": "Definitions: principal, identity, trusted vs trustworthy, privacy, hack, vulnerability",
+   "termos": [
+    "principal",
+    "trusted",
+    "trustworthy",
+    "privacidade",
+    "confidencialidade",
+    "sigilo",
+    "hack",
+    "vulnerabilidade",
+    "security target",
+    "protection profile"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "60-64",
+   "cap": 1
+  },
+  {
+   "topico": "Who is the opponent: spies, crooks, geeks, swamp",
+   "termos": [
+    "oponente",
+    "opponent",
+    "spies",
+    "crooks",
+    "geeks",
+    "swamp",
+    "classes de atacantes",
+    "adversario"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "66-67,107",
+   "cap": 2
+  },
+  {
+   "topico": "Attack scaling and supply chain (Dual_EC, Huawei)",
+   "termos": [
+    "escala de ataque",
+    "attack scaling",
+    "supply chain",
+    "cadeia de suprimento",
+    "dual_ec"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "70-71,77,81",
+   "cap": 2
+  },
+  {
+   "topico": "Attack attribution",
+   "termos": [
+    "atribuicao",
+    "attribution",
+    "false flag"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "88",
+   "cap": 2
+  },
+  {
+   "topico": "Equifax 2017",
+   "termos": [
+    "equifax",
+    "struts"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "89",
+   "cap": 2
+  },
+  {
+   "topico": "Cybercrime: botnets, ransomware, credential stuffing, cashout, BEC",
+   "termos": [
+    "cibercrime",
+    "botnet",
+    "ransomware",
+    "credential stuffing",
+    "pay-per-install",
+    "bec",
+    "fraude de ceo",
+    "cashout"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "89-97",
+   "cap": 2
+  },
+  {
+   "topico": "Whistleblowers",
+   "termos": [
+    "whistleblower",
+    "denunciante",
+    "hotline"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "99",
+   "cap": 2
+  },
+  {
+   "topico": "Intimate partner abuse and abusability",
+   "termos": [
+    "abusabilidade",
+    "abusability",
+    "stalkerware",
+    "parceiro intimo",
+    "swamp abuse"
+   ],
+   "ref": "01-fundamentos-e-oponentes.md",
+   "paginas": "102-107",
+   "cap": 2
+  },
+  {
+   "topico": "Human errors, slips and mistakes, cognitive walkthrough",
+   "termos": [
+    "erros humanos",
+    "slips",
+    "mistakes",
+    "cognitive walkthrough",
+    "usabilidade"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "113-115",
+   "cap": 3
+  },
+  {
+   "topico": "Social psychology: authority, Milgram, Asch, bystander",
+   "termos": [
+    "milgram",
+    "asch",
+    "autoridade",
+    "bystander",
+    "efeito espectador"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "118-119",
+   "cap": 3
+  },
+  {
+   "topico": "Deception, fraud triangle, Cialdini, Stajano-Wilson, dark patterns",
+   "termos": [
+    "triangulo da fraude",
+    "cialdini",
+    "stajano",
+    "dark patterns",
+    "engano",
+    "golpes"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "120-131",
+   "cap": 3
+  },
+  {
+   "topico": "Present bias, defaults, nudges, prospect theory",
+   "termos": [
+    "vies do presente",
+    "present bias",
+    "nudge",
+    "defaults",
+    "prospect theory",
+    "economia comportamental"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "123-128",
+   "cap": 3
+  },
+  {
+   "topico": "Social engineering, pretexting, phishing, opsec",
+   "termos": [
+    "engenharia social",
+    "pretexting",
+    "phishing",
+    "opsec",
+    "compliance budget"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "132-136",
+   "cap": 3
+  },
+  {
+   "topico": "Password recovery and security questions",
+   "termos": [
+    "recuperacao de senha",
+    "perguntas de seguranca",
+    "password recovery",
+    "fallback"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "139-141",
+   "cap": 3
+  },
+  {
+   "topico": "Password choice, periodic change, passphrases, bad-password list",
+   "termos": [
+    "escolha de senha",
+    "troca periodica",
+    "passphrase",
+    "lista de senhas",
+    "senha fraca",
+    "nist 800-63"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "141-147",
+   "cap": 3
+  },
+  {
+   "topico": "Attacks on password systems; lockout vs throttling",
+   "termos": [
+    "lockout",
+    "throttling",
+    "taxonomia de ataque",
+    "brute force online",
+    "rate limit",
+    "ataque a senhas"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "151-152",
+   "cap": 3
+  },
+  {
+   "topico": "Password storage: salt and slow function",
+   "termos": [
+    "sal",
+    "salt",
+    "hash de senha",
+    "armazenamento de senha",
+    "password hashing"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "156",
+   "cap": 3
+  },
+  {
+   "topico": "Password limits: P = L.R/S (DoD)",
+   "termos": [
+    "dod",
+    "l.r/s",
+    "vida da senha",
+    "espaco de senhas",
+    "password space",
+    "probabilidade de adivinhar"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "157-158",
+   "cap": 3
+  },
+  {
+   "topico": "Password managers, the end of passwords, Bonneau, CAPTCHA",
+   "termos": [
+    "gerenciador de senhas",
+    "bonneau",
+    "captcha",
+    "trust on first use senhas"
+   ],
+   "ref": "02-psicologia-usabilidade-e-senhas.md",
+   "paginas": "158-163",
+   "cap": 3
+  },
+  {
+   "topico": "Evaluating protocols; assumptions that change",
+   "termos": [
+    "protocolo",
+    "avaliar protocolo",
+    "modelo de ameaca de protocolo"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "166-167,181-182",
+   "cap": 4
+  },
+  {
+   "topico": "Nonces, replay, key diversification, remote control",
+   "termos": [
+    "nonce",
+    "replay",
+    "diversificacao",
+    "key diversification",
+    "controle remoto",
+    "frescor"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "167-171",
+   "cap": 4
+  },
+  {
+   "topico": "Immobilizers and PKES (keyless)",
+   "termos": [
+    "imobilizador",
+    "immobiliser",
+    "pkes",
+    "keyless",
+    "relay attack",
+    "keeloq",
+    "hitag2"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "171-174",
+   "cap": 4
+  },
+  {
+   "topico": "Middleperson, reflection, chosen protocol, IFF",
+   "termos": [
+    "middleperson",
+    "man in the middle",
+    "reflexao",
+    "reflection",
+    "chosen protocol",
+    "iff",
+    "mafia in the middle"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "176-184",
+   "cap": 4
+  },
+  {
+   "topico": "TOFU, trusted third party, Needham-Schroeder, Kerberos, OAuth",
+   "termos": [
+    "tofu",
+    "needham-schroeder",
+    "kerberos",
+    "oauth",
+    "terceiro confiavel",
+    "ttp",
+    "resurrecting duckling"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "184-188",
+   "cap": 4
+  },
+  {
+   "topico": "Protocol design assurance; do not design your own",
+   "termos": [
+    "metodos formais",
+    "dont roll your own",
+    "nao projete seu protocolo"
+   ],
+   "ref": "03-protocolos.md",
+   "paginas": "188-190",
+   "cap": 4
+  },
+  {
+   "topico": "Crypto principles, do not invent your own",
+   "termos": [
+    "roll your own",
+    "criptografia principios",
+    "cripto implementacao",
+    "rng"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "192-193,239,249-251",
+   "cap": 5
+  },
+  {
+   "topico": "Perfect secrecy, one-time pad, concrete security",
+   "termos": [
+    "one-time pad",
+    "sigilo perfeito",
+    "seguranca concreta",
+    "semantic security",
+    "random oracle"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "195-203",
+   "cap": 5
+  },
+  {
+   "topico": "Hash, birthday theorem, collisions, HMAC",
+   "termos": [
+    "hash",
+    "birthday",
+    "aniversario",
+    "colisao",
+    "hmac",
+    "sha-1",
+    "sha-256",
+    "md5",
+    "merkle"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "203-206,229-232",
+   "cap": 5
+  },
+  {
+   "topico": "Block ciphers, AES, DES, 3DES, block size",
+   "termos": [
+    "aes",
+    "des",
+    "3des",
+    "bloco",
+    "cifra de bloco",
+    "tamanho de bloco"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "208-222,226",
+   "cap": 5
+  },
+  {
+   "topico": "Modes: ECB, CBC, CTR, GCM, padding oracle, XTS",
+   "termos": [
+    "ecb",
+    "cbc",
+    "ctr",
+    "gcm",
+    "padding oracle",
+    "xts",
+    "modo de operacao",
+    "iv",
+    "keystream"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "223-228",
+   "cap": 5
+  },
+  {
+   "topico": "RSA, DH, DSA, elliptic curves, key sizes",
+   "termos": [
+    "rsa",
+    "diffie-hellman",
+    "dsa",
+    "curva eliptica",
+    "elliptic",
+    "tamanho de chave",
+    "forward secrecy"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "232-240,247",
+   "cap": 5
+  },
+  {
+   "topico": "CAs, TLS, HSTS, Certificate Transparency, code signing, PGP",
+   "termos": [
+    "tls",
+    "ca",
+    "certificado",
+    "hsts",
+    "pgp",
+    "code signing",
+    "autoridade certificadora"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "241-246",
+   "cap": 5
+  },
+  {
+   "topico": "Post-quantum and quantum cryptography",
+   "termos": [
+    "quantico",
+    "quantum",
+    "pos-quantico",
+    "post-quantum",
+    "quantum cryptography"
+   ],
+   "ref": "04-criptografia.md",
+   "paginas": "248-249",
+   "cap": 5
+  },
+  {
+   "topico": "Access control: layers and matrix",
+   "termos": [
+    "controle de acesso",
+    "access control",
+    "matriz de controle de acesso",
+    "camadas"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "253-257",
+   "cap": 6
+  },
+  {
+   "topico": "Groups, roles, ACLs, capabilities, Unix suid",
+   "termos": [
+    "acl",
+    "capability",
+    "capabilities",
+    "grupo",
+    "papel",
+    "suid",
+    "rbac"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "257-261",
+   "cap": 6
+  },
+  {
+   "topico": "DAC, MAC, TPM, iOS, Android, Windows",
+   "termos": [
+    "dac",
+    "mac",
+    "ios",
+    "android",
+    "windows",
+    "tpm",
+    "trusted boot",
+    "selinux"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "261-267",
+   "cap": 6
+  },
+  {
+   "topico": "Browsers and databases: same-origin, CSRF, SQL injection",
+   "termos": [
+    "same-origin",
+    "csrf",
+    "sql injection",
+    "cors",
+    "navegador",
+    "browser"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "268-270,280",
+   "cap": 6
+  },
+  {
+   "topico": "Virtualization, containers, hypervisors, cloud IAM",
+   "termos": [
+    "container",
+    "virtualizacao",
+    "hypervisor",
+    "vm",
+    "docker hub",
+    "nuvem iam",
+    "iam"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "271-272",
+   "cap": 6
+  },
+  {
+   "topico": "Hardware: SGX, TrustZone, CHERI, rings",
+   "termos": [
+    "sgx",
+    "trustzone",
+    "cheri",
+    "enclave",
+    "hardware",
+    "rings"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "273-277",
+   "cap": 6
+  },
+  {
+   "topico": "Vulnerabilities: lifecycle, memory safety, UAF, TOCTTOU, Spectre, confused deputy",
+   "termos": [
+    "memory safety",
+    "buffer overflow",
+    "use after free",
+    "tocttou",
+    "spectre",
+    "meltdown",
+    "confused deputy",
+    "rop",
+    "stack canary",
+    "aslr"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "277-284",
+   "cap": 6
+  },
+  {
+   "topico": "Least privilege and environmental creep",
+   "termos": [
+    "menor privilegio",
+    "least privilege",
+    "environmental creep"
+   ],
+   "ref": "05-controle-de-acesso.md",
+   "paginas": "284-285",
+   "cap": 6
+  },
+  {
+   "topico": "Concurrency, stale data, revocation, secure time",
+   "termos": [
+    "concorrencia",
+    "revogacao",
+    "stand-in",
+    "floor limit",
+    "convergencia",
+    "ntp",
+    "lamport"
+   ],
+   "ref": "06-sistemas-distribuidos-e-nomes.md",
+   "paginas": "289-296",
+   "cap": 7
+  },
+  {
+   "topico": "Fault tolerance, Byzantine n>=3t+1, backup vs fallback, recovery testing",
+   "termos": [
+    "byzantine",
+    "3t+1",
+    "tolerancia a falhas",
+    "backup",
+    "fallback",
+    "chaos",
+    "redundancia",
+    "recuperacao de falhas"
+   ],
+   "ref": "06-sistemas-distribuidos-e-nomes.md",
+   "paginas": "296-302",
+   "cap": 7
+  },
+  {
+   "topico": "DoS and DDoS, booters, insecure fallback",
+   "termos": [
+    "dos",
+    "ddos",
+    "negacao de servico",
+    "booter",
+    "extorsao ddos"
+   ],
+   "ref": "06-sistemas-distribuidos-e-nomes.md",
+   "paginas": "302-303",
+   "cap": 7
+  },
+  {
+   "topico": "Names: Needham's 10 principles, Zooko, uniqueness, Kent's law",
+   "termos": [
+    "nomes",
+    "needham",
+    "zooko",
+    "lei de kent",
+    "unicidade",
+    "naming",
+    "id"
+   ],
+   "ref": "06-sistemas-distribuidos-e-nomes.md",
+   "paginas": "304-314",
+   "cap": 7
+  },
+  {
+   "topico": "Security economics: incentives and externalities",
+   "termos": [
+    "economia",
+    "incentivos",
+    "externalidade",
+    "incentives",
+    "moral hazard"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "319-320,338,348-349",
+   "cap": 8
+  },
+  {
+   "topico": "Lock-in, network effects, two-sided markets",
+   "termos": [
+    "lock-in",
+    "efeito de rede",
+    "network effects",
+    "dois lados",
+    "shapiro",
+    "varian"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "325-327",
+   "cap": 8
+  },
+  {
+   "topico": "Lemons and asymmetric information; public goods",
+   "termos": [
+    "lemons",
+    "assimetria de informacao",
+    "adverse selection",
+    "bem publico",
+    "seguro cibernetico"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "328-330",
+   "cap": 8
+  },
+  {
+   "topico": "Game theory: Nash, prisoner's dilemma, hawk-dove, auctions",
+   "termos": [
+    "teoria dos jogos",
+    "nash",
+    "dilema do prisioneiro",
+    "hawk-dove",
+    "leilao",
+    "vickrey"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "330-337",
+   "cap": 8
+  },
+  {
+   "topico": "Why Windows is insecure; patch cycle; weakest-link / best-shot / sum-of-efforts",
+   "termos": [
+    "windows inseguro",
+    "ciclo de patch",
+    "weakest link",
+    "best shot",
+    "sum of efforts",
+    "disclosure",
+    "bug bounty mercado"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "338-344",
+   "cap": 8
+  },
+  {
+   "topico": "Economics of privacy, privacy paradox, economics of cybercrime",
+   "termos": [
+    "privacy paradox",
+    "cibercrime economia",
+    "becker",
+    "choke point",
+    "breach disclosure custo"
+   ],
+   "ref": "07-economia-da-seguranca.md",
+   "paginas": "349-354",
+   "cap": 8
+  },
+  {
+   "topico": "Security policy model; MLS; Bell-LaPadula",
+   "termos": [
+    "politica de seguranca",
+    "security policy model",
+    "mls",
+    "bell-lapadula",
+    "blp",
+    "no read up",
+    "reference monitor",
+    "tcb"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "360-367",
+   "cap": 9
+  },
+  {
+   "topico": "Biba, type enforcement, noninterference, RBAC, ABAC",
+   "termos": [
+    "biba",
+    "type enforcement",
+    "dte",
+    "noninterference",
+    "abac"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "367-370",
+   "cap": 9
+  },
+  {
+   "topico": "MLS: what goes wrong (covert channels, cascade, polyinstantiation)",
+   "termos": [
+    "covert channel",
+    "cascade",
+    "polyinstantiation",
+    "label explosion",
+    "system high",
+    "mils"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "375-381",
+   "cap": 9
+  },
+  {
+   "topico": "Multilateral security, compartments, lattice, Vault 7",
+   "termos": [
+    "multilateral",
+    "compartimentacao",
+    "lattice",
+    "vault 7",
+    "fluxos laterais"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "384-389",
+   "cap": 10
+  },
+  {
+   "topico": "Health: BMA nine principles, NPfIT, HES, consent",
+   "termos": [
+    "bma",
+    "saude",
+    "prontuario",
+    "npfit",
+    "hes",
+    "deepmind",
+    "medconfidential",
+    "consentimento saude"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "397-408",
+   "cap": 10
+  },
+  {
+   "topico": "Chinese Wall (Brewer-Nash)",
+   "termos": [
+    "chinese wall",
+    "brewer-nash",
+    "muralha da china"
+   ],
+   "ref": "08-politicas-mls-multilateral-e-saude.md",
+   "paginas": "412-415",
+   "cap": 10
+  },
+  {
+   "topico": "Inference control: query set size, trackers, k-anonymity",
+   "termos": [
+    "inference control",
+    "controle de inferencia",
+    "k-anonymity",
+    "tracker",
+    "query set",
+    "cell suppression"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "419-425",
+   "cap": 11
+  },
+  {
+   "topico": "Re-identification: Sweeney, AOL, Netflix, location",
+   "termos": [
+    "reidentificacao",
+    "sweeney",
+    "aol",
+    "netflix",
+    "anonimizacao"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "427-433",
+   "cap": 11
+  },
+  {
+   "topico": "Differential privacy, 2020 census, epsilon",
+   "termos": [
+    "differential privacy",
+    "privacidade diferencial",
+    "epsilon",
+    "censo",
+    "laplace"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "434-436",
+   "cap": 11
+  },
+  {
+   "topico": "Privacy set vs anonymity set; alternatives to anonymization",
+   "termos": [
+    "privacy set",
+    "anonymity set",
+    "consentimento explicito",
+    "ethics washing"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "437-442",
+   "cap": 11
+  },
+  {
+   "topico": "Digital evidence, chain of custody, forensics",
+   "termos": [
+    "forense",
+    "evidencia digital",
+    "cadeia de custodia",
+    "admissibilidade"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "981-985",
+   "cap": 26
+  },
+  {
+   "topico": "Data protection: GDPR, Safe Harbour, Privacy Shield, breach",
+   "termos": [
+    "gdpr",
+    "protecao de dados",
+    "safe harbour",
+    "privacy shield",
+    "lgpd",
+    "data protection"
+   ],
+   "ref": "10-inference-control-privacidade-e-protecao-de-dados.md",
+   "paginas": "987-992",
+   "cap": 26
+  },
+  {
+   "topico": "Accounting, double entry, Clark-Wilson",
+   "termos": [
+    "clark-wilson",
+    "partidas dobradas",
+    "contabilidade",
+    "double entry",
+    "tp cdi"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "447-452",
+   "cap": 12
+  },
+  {
+   "topico": "Internal controls: dual control vs separation of duties; prevent-detect-recover",
+   "termos": [
+    "controles internos",
+    "dual control",
+    "separacao de deveres",
+    "prevent detect recover",
+    "segregation of duties",
+    "mpa"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "452-456,463-464",
+   "cap": 12
+  },
+  {
+   "topico": "Insider and executive fraud; Horizon; Wirecard",
+   "termos": [
+    "fraude de insider",
+    "horizon",
+    "post office",
+    "wirecard",
+    "enron",
+    "barings"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "456-463",
+   "cap": 12
+  },
+  {
+   "topico": "SWIFT and Bangladesh Bank",
+   "termos": [
+    "swift",
+    "bangladesh",
+    "pagamentos interbancarios",
+    "rifkin"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "465-471",
+   "cap": 12
+  },
+  {
+   "topico": "ATMs and PINs; non-repudiation; Regulation E",
+   "termos": [
+    "atm",
+    "pin",
+    "hsm banco",
+    "nao repudio",
+    "regulation e",
+    "caixa eletronico",
+    "postbank"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "471-479",
+   "cap": 12
+  },
+  {
+   "topico": "Cards and EMV: No-PIN, pre-play, relay, contactless",
+   "termos": [
+    "emv",
+    "no-pin",
+    "pre-play",
+    "cartao",
+    "contactless",
+    "tesco bank",
+    "pci dss",
+    "3ds",
+    "fraud engine",
+    "chip and pin"
+   ],
+   "ref": "11-bancos-e-controles-internos.md",
+   "paginas": "479-501",
+   "cap": 12
+  },
+  {
+   "topico": "Side channels and covert channels; Tempest; social channels",
+   "termos": [
+    "side channel",
+    "canal lateral",
+    "tempest",
+    "emsec",
+    "integridade contextual",
+    "dpa"
+   ],
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "paginas": "675-676,685-686,699",
+   "cap": 19
+  },
+  {
+   "topico": "FDE (full disk encryption)",
+   "termos": [
+    "fde",
+    "full disk encryption",
+    "cifragem de disco",
+    "bitlocker",
+    "cold boot"
+   ],
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "paginas": "703-705",
+   "cap": 20
+  },
+  {
+   "topico": "Signal, double ratchet, forward secrecy",
+   "termos": [
+    "signal",
+    "double ratchet",
+    "x3dh",
+    "forward secrecy",
+    "backward secrecy",
+    "mensageria"
+   ],
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "paginas": "705-708",
+   "cap": 20
+  },
+  {
+   "topico": "HSMs and HSM APIs; featuritis",
+   "termos": [
+    "hsm",
+    "hardware security module",
+    "api hsm",
+    "featuritis",
+    "pkcs#11"
+   ],
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "paginas": "712,716-717",
+   "cap": 20
+  },
+  {
+   "topico": "Blockchain voting; failed dreams",
+   "termos": [
+    "blockchain voto",
+    "votacao",
+    "blockchain"
+   ],
+   "ref": "12-canais-laterais-e-cripto-avancada.md",
+   "paginas": "730-732",
+   "cap": 20
+  },
+  {
+   "topico": "Physical security: deter-detect-alarm-delay-respond; alarms and DoS",
+   "termos": [
+    "seguranca fisica",
+    "alarme",
+    "fechadura",
+    "cpted",
+    "lojack",
+    "deter detect",
+    "perimetro"
+   ],
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "paginas": "511-516,532-534",
+   "cap": 13
+  },
+  {
+   "topico": "Metering and meters: prepaid STS, smart meters, postal meters",
+   "termos": [
+    "medidor",
+    "metering",
+    "pre-pago",
+    "sts",
+    "smart meter",
+    "postal meter",
+    "ghost vendor"
+   ],
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "paginas": "536-546,564-566",
+   "cap": 14
+  },
+  {
+   "topico": "Nuclear command: subliminal channels, modern Kerckhoffs",
+   "termos": [
+    "nuclear",
+    "canal subliminal",
+    "petrov",
+    "tratados",
+    "c2"
+   ],
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "paginas": "567-569,578-585",
+   "cap": 15
+  },
+  {
+   "topico": "Seals and security printing; gundecking; evaluation methodology",
+   "termos": [
+    "selo",
+    "seal",
+    "gundecking",
+    "trujillo",
+    "impressao de seguranca",
+    "tamper evident"
+   ],
+   "ref": "13-seguranca-fisica-medicao-selos-e-nuclear.md",
+   "paginas": "599-607",
+   "cap": 16
+  },
+  {
+   "topico": "Biometrics: FAR/FRR/EER, ROC, biometric birthday",
+   "termos": [
+    "biometria",
+    "far",
+    "frr",
+    "eer",
+    "roc",
+    "goats",
+    "lambs",
+    "hill-climbing",
+    "identificacao vs verificacao"
+   ],
+   "ref": "14-biometria-e-tamper-resistance.md",
+   "paginas": "611-612,632",
+   "cap": 17
+  },
+  {
+   "topico": "Fingerprint, iris, face, handwritten signature",
+   "termos": [
+    "impressao digital",
+    "fingerprint",
+    "iris",
+    "face",
+    "reconhecimento facial",
+    "assinatura manuscrita",
+    "aadhaar",
+    "masterprint"
+   ],
+   "ref": "14-biometria-e-tamper-resistance.md",
+   "paginas": "609-615,618-621,625-627",
+   "cap": 17
+  },
+  {
+   "topico": "Tamper resistance: trusted interface, lemons, what is worth protecting",
+   "termos": [
+    "tamper",
+    "tamper resistance",
+    "interface confiavel",
+    "trusted interface",
+    "smartcard",
+    "secure element",
+    "evil maid"
+   ],
+   "ref": "14-biometria-e-tamper-resistance.md",
+   "paginas": "636-638,667-673",
+   "cap": 18
+  },
+  {
+   "topico": "Malware, antivirus, lateral movement",
+   "termos": [
+    "malware",
+    "antivirus",
+    "movimento lateral",
+    "dropper",
+    "rootkit"
+   ],
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "paginas": "748-750",
+   "cap": 21
+  },
+  {
+   "topico": "Network defense: patching, inventory, spear phishing, firewalls, BeyondCorp",
+   "termos": [
+    "firewall",
+    "patch",
+    "inventario",
+    "beyondcorp",
+    "dmz",
+    "egress",
+    "ingress",
+    "defesa de rede"
+   ],
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "paginas": "750-757",
+   "cap": 21
+  },
+  {
+   "topico": "Intrusion detection: base rate, false alarms, honeypots",
+   "termos": [
+    "ids",
+    "deteccao de intrusao",
+    "taxa-base",
+    "base rate",
+    "falso positivo",
+    "honeypot",
+    "anomaly",
+    "benford"
+   ],
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "paginas": "757-760",
+   "cap": 21
+  },
+  {
+   "topico": "PKI, DigiNotar, CT, topology",
+   "termos": [
+    "pki",
+    "diginotar",
+    "certificate transparency",
+    "ca privada",
+    "topologia"
+   ],
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "paginas": "761,765-769",
+   "cap": 21
+  },
+  {
+   "topico": "Telephony: SIM swap, SS7, revocation in apps",
+   "termos": [
+    "sim swap",
+    "telefonia",
+    "ss7",
+    "mno",
+    "simjacking",
+    "revogacao app",
+    "fordpass"
+   ],
+   "ref": "09-seguranca-de-redes-e-malware.md",
+   "paginas": "771,794-795,808-810",
+   "cap": 22
+  },
+  {
+   "topico": "Electronic and information warfare (summary only)",
+   "termos": [
+    "guerra eletronica",
+    "information warfare",
+    "propaganda",
+    "jamming"
+   ],
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "paginas": "846-847",
+   "cap": 23
+  },
+  {
+   "topico": "DRM and copyright (summary only)",
+   "termos": [
+    "drm",
+    "copyright",
+    "anti-cheat"
+   ],
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "paginas": "896-897",
+   "cap": 24
+  },
+  {
+   "topico": "AI/ML: poisoning, adversarial samples, model extraction, ML DoS",
+   "termos": [
+    "ml",
+    "machine learning",
+    "ia",
+    "adversarial",
+    "envenenamento",
+    "extracao de modelo",
+    "tay",
+    "snake oil"
+   ],
+   "ref": "17-ia-ml-e-novas-direcoes.md",
+   "paginas": "907-915",
+   "cap": 25
+  },
+  {
+   "topico": "Risk management: risk register 1-5 x 1-5, ALE, insurance",
+   "termos": [
+    "risk register",
+    "registro de riscos",
+    "ale",
+    "annual loss expectancy",
+    "gestao de risco",
+    "matriz de risco"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "998-1001",
+   "cap": 27
+  },
+  {
+   "topico": "Safety lessons: safety case, fault tree, FMEA, STPA",
+   "termos": [
+    "safety",
+    "safety case",
+    "fault tree",
+    "fmea",
+    "stpa",
+    "arvore de falhas",
+    "iso 61508"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "1001-1009",
+   "cap": 27
+  },
+  {
+   "topico": "Threat modelling (Microsoft meet-in-the-middle)",
+   "termos": [
+    "threat modelling",
+    "modelagem de ameacas",
+    "meet in the middle",
+    "stride"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "1006-1007",
+   "cap": 27
+  },
+  {
+   "topico": "Methodology: waterfall, agile, SDL, DevSecOps, SaaS, canary",
+   "termos": [
+    "sdl",
+    "devsecops",
+    "agil",
+    "waterfall",
+    "canary",
+    "ci cd",
+    "technical debt",
+    "gated development",
+    "sre error budget"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "1012-1026",
+   "cap": 27
+  },
+  {
+   "topico": "Vulnerability lifecycle, bug bounty, coordinated disclosure, IR plan",
+   "termos": [
+    "disclosure",
+    "divulgacao coordenada",
+    "incident response",
+    "resposta a incidentes",
+    "plano de ir",
+    "bug bounty",
+    "cve",
+    "cvss"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "1027-1032",
+   "cap": 27
+  },
+  {
+   "topico": "Security organization and team; checklists; CISO",
+   "termos": [
+    "equipe",
+    "ciso",
+    "checklist",
+    "cultura",
+    "bezos",
+    "diversidade"
+   ],
+   "ref": "15-desenvolvimento-seguro-e-gestao-de-risco.md",
+   "paginas": "1032-1042",
+   "cap": 27
+  },
+  {
+   "topico": "Common Criteria, FIPS 140, Orange Book, ITSEC",
+   "termos": [
+    "common criteria",
+    "eal",
+    "fips 140",
+    "orange book",
+    "itsec",
+    "protection profile avaliacao",
+    "avaliacao de produtos"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1056-1062",
+   "cap": 28
+  },
+  {
+   "topico": "Maximum Complacency (Lerner-Tirole), ISO 27001, Cyber Essentials",
+   "termos": [
+    "maximum complacency",
+    "iso 27001",
+    "cyber essentials",
+    "certificacao",
+    "bitsight",
+    "cybersecurity act"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1063-1067",
+   "cap": 28
+  },
+  {
+   "topico": "Reliability growth k/t, MTBF, attacker vs defender",
+   "termos": [
+    "reliability growth",
+    "k/t",
+    "mtbf",
+    "crescimento de confiabilidade",
+    "ahmed brian",
+    "termodinamica"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1067-1070",
+   "cap": 28
+  },
+  {
+   "topico": "Hostile review, FOSS, process assurance",
+   "termos": [
+    "revisao hostil",
+    "hostile review",
+    "foss",
+    "open source",
+    "process assurance",
+    "cmm",
+    "iso 9001"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1070-1075",
+   "cap": 28
+  },
+  {
+   "topico": "Safety and security entangled: 737 Max, Dieselgate, medical devices, sustainability",
+   "termos": [
+    "737 max",
+    "dieselgate",
+    "dispositivo medico",
+    "therac",
+    "sustentabilidade",
+    "right to repair",
+    "marca-passo"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1051-1056,1075-1083",
+   "cap": 28
+  },
+  {
+   "topico": "Closing: social complexity, sustainability, policy",
+   "termos": [
+    "fecho",
+    "conclusao",
+    "computer says no"
+   ],
+   "ref": "16-assurance-avaliacao-e-sustentabilidade.md",
+   "paginas": "1090-1091",
+   "cap": 29
+  }
+ ],
+ "lacunas": [
+  {
+   "termo": "SBOM",
+   "ocorrencias": 0,
+   "nota": "term absent from the book (0 occurrences)"
+  },
+  {
+   "termo": "SolarWinds",
+   "ocorrencias": 0,
+   "nota": "absent from the book"
+  },
+  {
+   "termo": "Log4Shell / Log4j",
+   "ocorrencias": 0,
+   "nota": "absent from the book (a 2020 book, pre-Log4Shell)"
+  },
+  {
+   "termo": "WebAuthn / FIDO2 / passkeys",
+   "ocorrencias": 0,
+   "nota": "WebAuthn and FIDO absent; 'passkey' appears once (p.763) in the Bluetooth sense, not as a modern credential"
+  },
+  {
+   "termo": "OWASP / ASVS",
+   "ocorrencias": 0,
+   "nota": "absent; see other agents of the collection (09_security_and_privacy)"
+  },
+  {
+   "termo": "Kubernetes",
+   "ocorrencias": 0,
+   "nota": "absent; containers appear only on p.271-272"
+  },
+  {
+   "termo": "LGPD",
+   "ocorrencias": 0,
+   "nota": "absent; GDPR p.987-992 (read)"
+  },
+  {
+   "termo": "LLMs, IA generativa, prompt injection",
+   "ocorrencias": 0,
+   "nota": "absent; only ML up to 2020 (p.907-915)"
+  },
+  {
+   "termo": "STRIDE",
+   "ocorrencias": 0,
+   "nota": "the name STRIDE does not appear; the book lists the six techniques (spoofing, tampering...) but does not use the name STRIDE (p.1006)"
+  },
+  {
+   "termo": "Attack trees (arvores de ataque)",
+   "ocorrencias": 0,
+   "nota": "absent; there is fault tree / threat tree (p.1003-1006)"
+  },
+  {
+   "termo": "MFA as a term",
+   "ocorrencias": 0,
+   "nota": "absent; the book says 2FA / second factor"
+  },
+  {
+   "termo": "Pegasus / spyware comercial",
+   "ocorrencias": 0,
+   "nota": "absent"
+  }
+ ],
+ "nao_lido": [
+  {
+   "tema": "BGP, DNS, network DoS, SYN, amplifiers, e-mail, malware history",
+   "paginas": "734-747"
+  },
+  {
+   "tema": "SSH, WiFi, Bluetooth, VPN",
+   "paginas": "762-764"
+  },
+  {
+   "tema": "GSM, 3G/4G/5G, Android/Apple ecosystems",
+   "paginas": "772-793,796-807"
+  },
+  {
+   "tema": "Timing, power, glitching, Rowhammer, Spectre (detail), acoustic",
+   "paginas": "677-684,687-698"
+  },
+  {
+   "tema": "Tor, detail of HSM API attacks, enclaves, blockchains (detail)",
+   "paginas": "709-711,713-715,718-729"
+  },
+  {
+   "tema": "Autonomous vehicles/drones, PETs/opsec, elections",
+   "paginas": "898-906,916-941"
+  },
+  {
+   "tema": "Surveillance, CDRs, crypto wars, terrorism, censorship",
+   "paginas": "942-980"
+  },
+  {
+   "tema": "Barriers, locks, sensors",
+   "paginas": "517-531"
+  },
+  {
+   "tema": "Nuclear C2, unconditional authentication, shared control, PALs",
+   "paginas": "570-577"
+  },
+  {
+   "tema": "Forensic fingerprints, voice",
+   "paginas": "616-617,622-624,627-629"
+  },
+  {
+   "tema": "IBM 4758 HSM, smartcards, probes, glitch, FIB, PUFs",
+   "paginas": "641-666"
+  },
+  {
+   "tema": "SIM swap, liability, APP fraud, M-Pesa (banking)",
+   "paginas": "502-510"
+  },
+  {
+   "tema": "Ch.23 and 24 (except summaries); ch.29 beyond p.1090-1091; Bibliography and Index",
+   "paginas": "811-845,848-895,1092-1212"
+  }
+ ]
+}

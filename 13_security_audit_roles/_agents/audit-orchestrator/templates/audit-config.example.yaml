@@ -1,0 +1,28 @@
+version: '3.0'
+project:
+  name: 'PROJECT_NAME'
+  repository_path: './'
+  repository_revision: null # git hash if available; otherwise the snapshot id
+scope:
+  include: ['**/*']
+  exclude: ['node_modules/**', 'dist/**', '.git/objects/**'] # inventory the exclusions; do not hide relevant code
+  authorized_environments: ['local-repo']
+  runtime_testing: false
+  sandbox_authorized: false
+  external_network_access: false
+  git_history_analysis: true # read-only
+  allow_write_to_target: false
+  allow_publish_github_issues: false
+  output_root: 'docs/security-audit/'
+context:
+  target_jurisdictions: [] # do not presume Brazil if unknown
+  regulated_industries: []
+  personal_data_processing: 'unknown' # yes/no/unknown
+execution:
+  max_parallel_specialists: 4
+  resumable: true
+  completeness_policy: 'report_partial_if_missing'
+  severity_model: 'CVSS_v4_if_justifiable_else_qualitative'
+  proof_of_concept: 'non_destructive_authorized_only'
+  generate_pdf: true
+  generate_issues_drafts: true

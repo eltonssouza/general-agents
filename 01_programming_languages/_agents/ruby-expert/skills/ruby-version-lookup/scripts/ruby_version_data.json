@@ -1,0 +1,81 @@
+{
+  "_meta": "What each release note (R30 to R34) brings. 'cite' = PDF pages; 'terms' checked by tests/verify_citations.py. All [from source].",
+  "versions": [
+    {
+      "version": "3.0", "name": "Ruby 3.0.0", "release_date": "25/12/2020", "sigla": "R30", "pages": 10,
+      "highlights": [
+        {"text": "Goals: performance, concurrency and typing; Ruby 3x3 target (3x faster than Ruby 2.0 on Optcarrot)", "cite": [["R30", [1, 2]]], "terms": ["Ruby 3x3", "Optcarrot", "performance, concurrency"]},
+        {"text": "MJIT improved, but still not ready for workloads such as Rails", "cite": [["R30", [2]]], "terms": ["MJIT", "Rails"]},
+        {"text": "Ractor (experimental): actor-style parallelism, without sharing normal objects", "cite": [["R30", [2, 3]]], "terms": ["Ractor", "experimental"]},
+        {"text": "Fiber Scheduler (Fiber#scheduler) to intercept blocking operations", "cite": [["R30", [3, 4]]], "terms": ["Fiber#scheduler"]},
+        {"text": "RBS (type language) and TypeProf (generates an RBS prototype)", "cite": [["R30", [4, 5]]], "terms": ["RBS", "TypeProf"]},
+        {"text": "One-line pattern matching redesigned (=>, in returns a boolean); find pattern; case/in is no longer experimental", "cite": [["R30", [5, 6, 7]]], "terms": ["Find pattern", "no longer experimental"]},
+        {"text": "Endless method: def square(x) = x * x", "cite": [["R30", [6]]], "terms": ["Endless method definition"]},
+        {"text": "Native Hash#except; memory view (experimental C API); IRB 53x faster when pasting code", "cite": [["R30", [6]]], "terms": ["Hash#except", "Memory view", "53 times"]},
+        {"text": "Keywords separated from positional arguments; ... accepts leading arguments; $SAFE removed", "cite": [["R30", [7]]], "terms": ["Keyword arguments are separated", "leading arguments", "$SAFE"]},
+        {"text": "Backtrace order: the 2.5 inversion was reverted", "cite": [["R30", [8]]], "terms": ["reverted"]},
+        {"text": "webrick, sdbm, net-telnet and xmlrpc stop being bundled gems or part of the stdlib", "cite": [["R30", [8]]], "terms": ["webrick", "xmlrpc"]}
+      ]
+    },
+    {
+      "version": "3.1", "name": "Ruby 3.1.0", "release_date": "25/12/2021", "sigla": "R31", "pages": 13,
+      "highlights": [
+        {"text": "YJIT: Shopify's in-process JIT, experimental, --yjit; up to 22% on railsbench and 39% on liquid-render; Unix-like x86-64 only", "cite": [["R31", [1, 2]]], "terms": ["YJIT", "22%", "39%", "--yjit"]},
+        {"text": "MJIT: --jit-max-cache from 100 to 10000", "cite": [["R31", [8]]], "terms": ["--jit-max-cache"]},
+        {"text": "debug gem (rewritten debugger) replaces lib/debug.rb", "cite": [["R31", [2, 3]]], "terms": ["debug.gem", "lib/debug.rb"]},
+        {"text": "error_highlight (NameError only); enabled by default", "cite": [["R31", [3, 4]]], "terms": ["error_highlight", "NameError"]},
+        {"text": "IRB with autocomplete and documentation display", "cite": [["R31", [4]]], "terms": ["Autocomplete"]},
+        {"text": "Omitted values in Hash and keywords: {x:, y:}", "cite": [["R31", [5]]], "terms": ["{x:, y:}"]},
+        {"text": "Pin ^ accepts an expression; optional parentheses in one-line pattern matching", "cite": [["R31", [5]]], "terms": ["pin operator", "Feature #17411"]},
+        {"text": "RBS: bounded generics, generic aliases, rbs collection; TypeProf for IDE experimental", "cite": [["R31", [5, 6, 7]]], "terms": ["rbs collection", "TypeProf for IDE"]},
+        {"text": "One-line pattern matching is no longer experimental; evaluation order of multiple assignment changes; Psych 4.0 uses safe_load", "cite": [["R31", [8]]], "terms": ["no longer experimental", "Multiple assignment", "safe_load"]},
+        {"text": "net-ftp, net-imap, net-pop, net-smtp, matrix, prime and debug become bundled gems", "cite": [["R31", [11]]], "terms": ["net-ftp", "matrix", "prime"]}
+      ]
+    },
+    {
+      "version": "3.2", "name": "Ruby 3.2.0", "release_date": "25/12/2022", "sigla": "R32", "pages": 23,
+      "highlights": [
+        {"text": "Initial WebAssembly/WASI support", "cite": [["R32", [1, 2, 3]]], "terms": ["WASI", "Asyncify"]},
+        {"text": "YJIT is no longer experimental; x86-64 and arm64; building requires Rust 1.58+; 41% faster (yjit-bench); Code GC", "cite": [["R32", [4, 5]]], "terms": ["no longer experimental", "1.58.0", "41%", "Code GC"]},
+        {"text": "ReDoS: matching with memoization (10 s down to 0.003 s; ~90% in linear time)", "cite": [["R32", [5, 6]]], "terms": ["memoization", "0.003", "90%"]},
+        {"text": "Global Regexp.timeout and per-regex timeout:; Regexp::TimeoutError", "cite": [["R32", [7]]], "terms": ["Regexp.timeout", "Regexp::TimeoutError"]},
+        {"text": "SyntaxSuggest integrated; ErrorHighlight for TypeError and ArgumentError", "cite": [["R32", [8]]], "terms": ["syntax_suggest", "TypeError"]},
+        {"text": "Anonymous * and ** can be forwarded; no autosplat for procs with keywords; ruby2_keywords mandatory; find pattern stable", "cite": [["R32", [8, 9, 10]]], "terms": ["bar(*)", "autosplat", "ruby2_keywords", "find pattern"]},
+        {"text": "MJIT reimplemented in Ruby (fork); Bundler 2.4 with PubGrub", "cite": [["R32", [11]]], "terms": ["ruby_vm/mjit/compiler", "PubGrub"]},
+        {"text": "Data (immutable value); Hash#shift; built-in Set; Struct with keywords; Unicode 15.0", "cite": [["R32", [11, 12, 15]]], "terms": ["Data.define", "Hash#shift", "Unicode to Version 15.0.0"]},
+        {"text": "Removed Fixnum, Bignum, File.exists?, Dir.exists?, taint and related methods; libyaml/libffi no longer bundled", "cite": [["R32", [16]]], "terms": ["Fixnum", "File.exists?", "libyaml"]}
+      ]
+    },
+    {
+      "version": "3.3", "name": "Ruby 3.3.0", "release_date": "25/12/2023", "sigla": "R33", "pages": 13,
+      "highlights": [
+        {"text": "Prism as a default gem; Lrama in place of Bison", "cite": [["R33", [1, 2]]], "terms": ["Prism", "Lrama"]},
+        {"text": "YJIT: speed and memory gains, YJIT.enable at runtime, Code GC off by default", "cite": [["R33", [2, 3]]], "terms": ["RubyVM::YJIT.enable", "--yjit-cold-threshold", "Code GC"]},
+        {"text": "RJIT (JIT in Ruby) replaces MJIT; keep using YJIT in production", "cite": [["R33", [4]]], "terms": ["RJIT", "keep using YJIT in production"]},
+        {"text": "M:N thread scheduler", "cite": [["R33", [4, 5]]], "terms": ["M:N", "RUBY_MAX_CPU"]},
+        {"text": "GC improvements (promotion, write barriers, VWA, weak references)", "cite": [["R33", [5]]], "terms": ["Write Barriers", "Variable Width Allocation", "weak references"]},
+        {"text": "IRB: irb:rdbg, pager, type-based autocomplete", "cite": [["R33", [5, 6]]], "terms": ["irb:rdbg", "Reline::Face"]},
+        {"text": "it without arguments deprecated; Regexp.new with at most 2 arguments", "cite": [["R33", [6]]], "terms": ["Feature #18980", "Regexp::new"]},
+        {"text": "ext/readline retired; require warnings for gems that will become bundled", "cite": [["R33", [7, 8]]], "terms": ["ext/readline", "Bootsnap"]}
+      ]
+    },
+    {
+      "version": "3.4", "name": "Ruby 3.4.0", "release_date": "25/12/2024", "sigla": "R34", "pages": 12,
+      "highlights": [
+        {"text": "Parameter it", "cite": [["R34", [1]]], "terms": ["Feature #18980", "_1"]},
+        {"text": "Prism is the default parser; --parser=parse.y for the old one", "cite": [["R34", [2]]], "terms": ["Feature #20564", "--parser=parse.y"]},
+        {"text": "Happy Eyeballs v2 in TCPSocket.new and Socket.tcp", "cite": [["R34", [2]]], "terms": ["Happy Eyeballs", "RFC 8305"]},
+        {"text": "YJIT: --yjit-mem-size, --yjit-log, methods in Ruby, inlining", "cite": [["R34", [3, 4]]], "terms": ["--yjit-mem-size", "--yjit-log"]},
+        {"text": "Modular GC (RUBY_GC_LIBRARY, experimental MMTk)", "cite": [["R34", [4]]], "terms": ["RUBY_GC_LIBRARY", "MMTk"]},
+        {"text": "Mutating a string literal in a file without frozen_string_literal emits a deprecation warning", "cite": [["R34", [5]]], "terms": ["frozen_string_literal", "-W:deprecated"]},
+        {"text": "**nil accepted; block and keywords in index not allowed; ::Ruby reserved", "cite": [["R34", [5]]], "terms": ["**nil", "::Ruby"]},
+        {"text": "Ractor: require allowed, Ractor.main?, local storage, store_if_absent", "cite": [["R34", [6]]], "terms": ["Ractor.main?", "store_if_absent"]},
+        {"text": "Error/backtrace messages with single quotes and class name; new Hash#inspect", "cite": [["R34", [8]]], "terms": ["single quote", "Hash#inspect"]},
+        {"text": "Removed Refinement#refined_class and old Net::HTTP constants; URI with RFC 3986; Timeout.timeout rejects negative values", "cite": [["R34", [9, 10]]], "terms": ["Refinement#refined_class", "Net::HTTP", "RFC 3986", "negative"]}
+      ]
+    }
+  ],
+  "not_in_notes": [
+    "GVL/GIL", "regras shareable/move do Ractor", "Fiber.set_scheduler", "RUBY_YJIT_ENABLE", "YARV", "Onigmo", "byebug", "Steep", "Ruby 4.0 and later 3.x fixes (the captures only show them in Recent News)"
+  ]
+}

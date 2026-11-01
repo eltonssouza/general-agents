@@ -1,0 +1,60 @@
+# Glossary (DLB; PDF pages, printed = N − 15)
+
+Definitions in the package's own words, only for what was read on the cited pages. EN = the book's term.
+
+- **Deep learning**: an approach in which the computer learns a hierarchy of concepts, each defined through simpler concepts (DLB p.16-17). A subset of *representation learning*, which is a subset of ML (Fig. 1.4, p.24).
+- **Representation learning**: learning the representation in addition to the mapping; canonical example: autoencoder (DLB p.19).
+- **Factors of variation / disentangle**: separate sources of influence in the data; the goal is to separate them and discard the irrelevant ones (DLB p.19-20).
+- **Depth**: length of the longest path in the computational graph (or the concept graph); there is no single correct value (DLB p.22-23).
+- **Capacity**: ability to fit a wide variety of functions; **representational** (model family) × **effective** (limited by optimization) (DLB p.126-129).
+- **Overfitting / underfitting**: large train-test gap / training error too high (DLB p.126).
+- **Generalization**: performance on unseen inputs; generalization error = test error (DLB p.125).
+- **i.i.d.**: independent examples and identically distributed train/test (DLB p.126).
+- **Bayes error**: error of the oracle that knows the true distribution (DLB p.131, 437).
+- **No Free Lunch**: averaged over all distributions, no classifier is better than another (DLB p.131-133).
+- **Regularization**: any modification meant to reduce the generalization error, not the training error (DLB p.135).
+- **Hyperparameter / validation set**: a setting not learned by the algorithm; a subset of the training set used to choose them (DLB p.135-136).
+- **Bias / variance / standard error / MSE**: bias(θ̂) = E[θ̂] − θ; Var(θ̂); SE(μ̂) = σ/√m; MSE = bias² + variance (DLB p.139-145).
+- **Consistency**: θ̂ converges in probability to θ as m → ∞ (DLB p.146).
+- **MLE / NLL / cross-entropy**: estimate θ by maximizing the likelihood = minimize the NLL = minimize the cross-entropy between the empirical distribution and the model (DLB p.146-148).
+- **Nat**: unit of information with the natural log (DLB p.88).
+- **Shannon entropy, KL, cross-entropy**: H(P) = −E log P; D_KL(P‖Q) = E log(P/Q), not symmetric; H(P,Q) = H(P) + D_KL(P‖Q) (DLB p.89-90).
+- **Condition number**: maxᵢⱼ|λᵢ/λⱼ| (DLB p.97).
+- **Hessian / Jacobian**: matrix of second derivatives / of first derivatives of a vector function (DLB p.101-102).
+- **Saddle point**: critical point with positive curvature in some directions and negative in others (eigenvalues of mixed signs) (DLB p.99, 104).
+- **Epochs / minibatch / batch / online**: a pass through the training set; a subset per update; the full batch; one example at a time from a stream (DLB p.292-297).
+- **Surrogate loss**: an optimizable function in place of the one that actually matters (NLL in place of 0-1) (DLB p.291).
+- **Softmax / logit**: discrete distribution from z; z is the log of the unnormalized probability (DLB p.198, 200).
+- **Saturation**: flat region of an activation with a small gradient (DLB p.194, 210).
+- **ReLU / leaky / PReLU / maxout**: max{0,z}; small slope for z<0; learned slope; maximum over groups of k values (DLB p.208-209).
+- **Universal approximation**: a hidden layer with a suitable activation approximates any Borel measurable function given enough units; no guarantee that training finds it (DLB p.213-214).
+- **Backpropagation**: method of computing the gradient by the chain rule over the graph; it is not the complete learning algorithm (DLB p.219).
+- **Computational graph / grad_table**: graph of operations; gradient table of Alg. 6.2 (DLB p.220, 225).
+- **Weight decay (L²) / L¹**: penalty on the weight norm; L¹ yields sparsity (DLB p.246, 250-251).
+- **Data augmentation**: enlarging the training set by transforming the inputs while preserving the class (DLB p.255-256).
+- **Label smoothing**: smoothed targets ε/(k−1) and 1−ε (DLB p.258).
+- **Early stopping**: stop when validation stops improving and return the best parameters (DLB p.261-262).
+- **Bagging / ensemble**: average of models trained on samples with replacement (DLB p.271).
+- **Dropout / weight scaling**: random per-unit masks in training; at inference the weights are multiplied by the inclusion probability (DLB p.273-278).
+- **Adversarial example**: an almost imperceptibly perturbed input that changes the prediction (DLB p.283).
+- **Learning rate**: step size ε (DLB p.101, 444).
+- **Momentum**: exponential moving average of past gradients (DLB p.311).
+- **Adam / RMSProp / AdaGrad**: per-parameter adaptive rates (DLB p.321-326).
+- **Batch normalization**: normalizes each unit with the minibatch mean and standard deviation, backpropagating through those statistics (DLB p.332-334).
+- **Gradient clipping**: limiting the gradient norm (DLB p.429-430).
+- **Convolution / cross-correlation / kernel / feature map / stride / padding**: DLB p.346-348, 363-364.
+- **Equivariance / invariance**: f(g(x)) = g(f(x)); output that does not change under small translations (pooling) (DLB p.353, 357).
+- **Parameter sharing / sparse interactions**: DLB p.350-353.
+- **Pooling**: statistical summary of the neighborhood (DLB p.354-357).
+- **RNN / BPTT / teacher forcing**: DLB p.388-399.
+- **LSTM / GRU / forget gate**: DLB p.425-427.
+- **Encoder-decoder (seq2seq) / attention (2015)**: DLB p.411, 489-491.
+- **Precision / recall / F / coverage**: DLB p.438-439.
+- **Grid search / random search**: DLB p.447-450.
+- **Autoencoder / undercomplete / sparse / denoising / contractive**: DLB p.518-523.
+- **Unsupervised greedy pretraining**: DLB p.543-545.
+- **Transfer learning**: DLB p.551.
+- **Distributed representation**: DLB p.561-563.
+- **Partition function Z / EBM / positive and negative phase / CD / PCD**: DLB p.583-585, 621-627.
+- **ELBO**: DLB p.648.
+- **RBM / VAE / GAN**: DLB p.671, 711-712, 714-715.

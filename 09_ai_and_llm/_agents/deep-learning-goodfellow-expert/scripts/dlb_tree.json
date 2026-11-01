@@ -1,0 +1,121 @@
+{
+ "versao": 1,
+ "fonte": "DLB ch. 11 Practical Methodology (PDF p.436-457; printed = PDF-15). 2016 book [DATED]: the tree organizes the ch. 11 recommendations; it does not cover LLM fine-tuning, Transformers or practices after 2016.",
+ "inicio": "meta",
+ "nos": {
+  "meta": {
+   "tipo": "passo",
+   "titulo": "1. Goals and metric",
+   "acoes": [
+    {"txt": "Define the error metric and the target value from the problem the application solves; the metric guides future actions.", "pag": "436-437, 437"},
+    {"txt": "Remember the Bayes error: the minimum achievable error even with infinite data (incomplete features, stochasticity, finite data).", "pag": "437"},
+    {"txt": "Asymmetric costs and rare events: use total cost, precision/recall (F = 2pr/(p+r)) and/or coverage instead of accuracy alone; an 'always absent' classifier has 99.9999% accuracy on a 1-in-1-million event.", "pag": "438-439"},
+    {"txt": "Define the metric BEFORE optimizing; without clear goals you cannot tell whether a change makes progress.", "pag": "439"}
+   ],
+   "proximo": "baseline"
+  },
+  "baseline": {
+   "tipo": "passo",
+   "titulo": "2. End-to-end pipeline and baseline",
+   "acoes": [
+    {"txt": "Build an end-to-end system as early as possible, with the estimated metrics.", "pag": "436-437"},
+    {"txt": "If a few linear weights can solve it, start with a simple statistical model (logistic regression); 'AI-complete' problems (objects, speech, translation) start with an appropriate deep learning model.", "pag": "440"},
+    {"txt": "Fixed-size vectors: fully connected feedforward; input with topology (image): CNN; sequence: LSTM or GRU. Piecewise linear units (ReLU and generalizations).", "pag": "440"},
+    {"txt": "Optimizer: SGD with momentum and decaying learning rate (linear down to a minimum, exponential, or divide by 2-10 when validation plateaus) or Adam. Batch normalization can be left out of the 1st baseline but comes in soon if optimization is problematic.", "pag": "440"},
+    {"txt": "Mild regularization from the start, unless training has tens of millions of examples; early stopping almost universal; dropout is a good regularizer.", "pag": "440"},
+    {"txt": "If the task resembles one already studied, copy the known model/algorithm (even a trained model). Unsupervised learning in the 1st baseline only if known to be important in the domain (e.g. word embeddings in NLP).", "pag": "441"}
+   ],
+   "proximo": "treino"
+  },
+  "treino": {
+   "tipo": "decisao",
+   "titulo": "3. Is the TRAINING error acceptable?",
+   "pergunta": "Training error <= target?",
+   "pag": "441",
+   "sim": "teste",
+   "nao": "subajuste"
+  },
+  "subajuste": {
+   "tipo": "passo",
+   "titulo": "3a. Poor training performance: do not collect more data yet",
+   "acoes": [
+    {"txt": "The algorithm is not using the data it already has: there is no reason to collect more data.", "pag": "441"},
+    {"txt": "Rule out software defects: try fitting a tiny dataset (one example); compare backprop derivatives with finite differences; look at histograms of activations and gradients.", "pag": "453-455"},
+    {"txt": "If there is no regularization and optimization works, increase capacity (more layers or more hidden units).", "pag": "444, 441"},
+    {"txt": "Tune the learning rate (the most important hyperparameter): too high increases the error, too low can get stuck at high error.", "pag": "444-445"},
+    {"txt": "Check the optimization: update/parameter ratio around 1% (not 50%, nor 0.001%); saturated or always-off units.", "pag": "455"},
+    {"txt": "Consider batch normalization, momentum or Adam if optimization is the bottleneck.", "pag": "440"}
+   ],
+   "proximo": "qualidade"
+  },
+  "qualidade": {
+   "tipo": "decisao",
+   "titulo": "3b. Do large, well-tuned models still fail?",
+   "pergunta": "Even with a larger model and tuned optimization, does the training error remain high?",
+   "pag": "441",
+   "sim": "dados",
+   "nao": "treino-reavaliar"
+  },
+  "dados": {
+   "tipo": "folha",
+   "titulo": "3c. Likely problem: data QUALITY",
+   "acoes": [
+    {"txt": "The data may be noisy or may not contain the right inputs: start over by collecting cleaner data or a richer set of features.", "pag": "441"},
+    {"txt": "Visualize the worst errors (the most confident ones): they reveal preprocessing or labeling problems (Street View example: a tight crop omitted digits).", "pag": "452-453, 457"}
+   ]
+  },
+  "treino-reavaliar": {
+   "tipo": "folha",
+   "titulo": "Re-evaluate after the adjustments",
+   "acoes": [
+    {"txt": "Go back to the node 'is the training error acceptable?' with the new model/optimization.", "pag": "441"}
+   ]
+  },
+  "teste": {
+   "tipo": "decisao",
+   "titulo": "4. Is the TEST/validation error acceptable?",
+   "pergunta": "Test error (held-out set) <= target?",
+   "pag": "441-442",
+   "sim": "pronto",
+   "nao": "gap"
+  },
+  "pronto": {
+   "tipo": "folha",
+   "titulo": "Nothing more to do (for this target)",
+   "acoes": [
+    {"txt": "If the test error is also acceptable, there is nothing more to do.", "pag": "442"}
+   ]
+  },
+  "gap": {
+   "tipo": "passo",
+   "titulo": "4a. Large gap between training and test (overfitting)",
+   "acoes": [
+    {"txt": "First: confirm that the difference is real - test error can come from saving/reloading the model or from preprocessing the test set differently from training.", "pag": "453"},
+    {"txt": "Collecting more data is one of the most effective solutions if cost and feasibility allow it (internet companies: almost always).", "pag": "442"},
+    {"txt": "Alternative to collecting data: shrink the model or improve regularization (weight decay, dropout); the best performance usually comes from a large, well-regularized model; early stopping.", "pag": "442, 445, 440"},
+    {"txt": "If the gap persists after tuning regularization, collecting more data is advisable.", "pag": "442"},
+    {"txt": "How much to collect: plot error vs training set size (like Fig. 5.4) and extrapolate; experiment on a logarithmic scale (double the number of examples between experiments); adding a small fraction does not noticeably change the error.", "pag": "442"},
+    {"txt": "Without additional data and with regularization exhausted, improving the algorithm is a research question, not applied advice.", "pag": "442"}
+   ],
+   "proximo": "hiperparametros"
+  },
+  "hiperparametros": {
+   "tipo": "passo",
+   "titulo": "5. Hyperparameters",
+   "acoes": [
+    {"txt": "Manual: match the effective capacity to the complexity of the task (representational capacity, the algorithm's ability to minimize the cost, and degree of regularization). Table 11.1 summarizes what increases capacity.", "pag": "443, 446"},
+    {"txt": "Automatic: grid search for up to 3 hyperparameters (values on a log scale; cost O(n^m)); random search (log-uniform distribution, no discretization) is more efficient; Bayesian optimization is not unequivocally recommended.", "pag": "447-451"}
+   ],
+   "proximo": "depuracao"
+  },
+  "depuracao": {
+   "tipo": "folha",
+   "titulo": "6. If something looks odd: debug",
+   "acoes": [
+    {"txt": "Visualize the model in action (detections, samples) and the worst errors.", "pag": "452-453"},
+    {"txt": "Reason with training and test error: low training + high test = overfitting or a test measurement error; both high = faulty software OR underfitting (needs more tests).", "pag": "453"},
+    {"txt": "Fit a tiny dataset (one example); compare backprop with numerical derivatives (centered difference; random projections u and v; complex step); monitor histograms; test the algorithm's guarantees with tolerance.", "pag": "453-455"}
+   ]
+  }
+ }
+}

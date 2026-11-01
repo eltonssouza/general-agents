@@ -1,0 +1,157 @@
+{
+  "source": "Web API Design: The Missing Link (Apigee/Google, 2018). Page = PDF marker. Not the 2012 e-book by Brian Mulloy.",
+  "topics": {
+    "rest_http": {
+      "name": "REST, RESTful and using only HTTP",
+      "keywords": ["rest", "restful", "http", "rpc", "endpoint", "parâmetro", "parametro", "parameter", "interface uniforme", "uniform interface", "entidades", "entities"],
+      "pages": [7, 8, 9, 10, 11, 12, 60],
+      "citation": "APIGEE p.7-12, p.60",
+      "summary": "REST is the architectural style of HTTP itself; RESTful is the mixed style with RPC concepts (endpoint, parameter) and has no precise definition. The book advocates adding the minimum of concepts to HTTP for simplicity and loose coupling, and designing around data, letting HTTP provide the uniform interface.",
+      "rules": [
+        "Use the standard HTTP mechanisms (201+Location, ETag+If-Match, Accept); extras only as additions (p.7)",
+        "Endpoint and parameter come from RPC; RESTful is not precisely defined, REST is (p.8-9)",
+        "Expose entities (/dogs), not functions (/getAllDogs) (p.10-12)",
+        "Uniform interface: HTTP is the API, you define the data (p.12)"
+      ]
+    },
+    "links": {
+      "name": "Links in representations and URI templates",
+      "keywords": ["link", "links", "hateoas", "hal", "siren", "json-ld", "uri template", "template", "ownerid", "owner", "dono", "hipermídia", "hipermidia", "hypermedia"],
+      "pages": [15, 16, 17, 18, 19, 20, 21, 22, 62, 63],
+      "citation": "APIGEE p.15-22, p.62-63",
+      "summary": "Links improve every API, not just generic clients (HATEOAS is rare and expensive). Step 1: add ownerLink/dogsLink without breaking anything; step 2: owner with a read-write URL. URI templates remain useful as shortcuts. Preferred format: simple name/value pair.",
+      "rules": [
+        "Add properties with a URL while keeping the IDs (p.16, p.20)",
+        "owner with a URL handles owners of different types (p.20-21)",
+        "Do not store absolute URLs with the domain in the database (p.21)",
+        "Templates are shortcuts; links are the paved paths (p.17)",
+        "HAL, Siren, JSON-LD etc. add concepts; the authors went back to simple strings (p.63)"
+      ]
+    },
+    "representations": {
+      "name": "Simple JSON, self, kind, collections, names and dates",
+      "keywords": ["json", "representação", "representacao", "representation", "self", "kind", "coleção", "colecao", "collection", "array", "patch", "merge patch", "json patch", "put", "camelcase", "snake_case", "data", "date", "datas", "dates", "iso 8601", "nomes", "names"],
+      "pages": [13, 14, 40, 41, 42, 43, 46, 47, 48],
+      "citation": "APIGEE p.13-14, p.40-48",
+      "summary": "Simple JSON with property names; self and kind on every object; collection as a Collection object with contents; support for Accept and PATCH (Merge Patch / JSON Patch); camelCase recommended; dates in the XML Schema format (ISO 8601 subset) or Unix time.",
+      "rules": [
+        "Names in JSON are properties; objects are entities (p.14)",
+        "self and kind on every object, including nested ones (p.40)",
+        "Collection: {self, kind: Collection, contents} instead of a bare array (p.41-42)",
+        "camelCase unless the audience is atypical; avoid hyphens and reserved words such as self and type — tension with p.40 (p.47)",
+        "Dates: XML Schema/ISO 8601 or Unix time (p.48)"
+      ]
+    },
+    "urls": {
+      "name": "Nouns, well-known URLs, permalinks",
+      "keywords": ["url", "urls", "substantivo", "substantivos", "noun", "nouns", "verbo", "verbos", "verb", "verbs", "permalink", "uuid", "plural", "pluralização", "pluralizacao", "pluralization", "raiz", "root", "bem conhecida", "well-known"],
+      "pages": [26, 27, 28, 32],
+      "citation": "APIGEE p.26-28, p.32",
+      "summary": "Every URL identifies a thing: nouns. Publish at least one well-known URL (or a root). Clients should not build entity URLs piece by piece. Stable permalinks in the format /{type}/{uuid}, designed for server-side routing. The book states no pluralization rule.",
+      "rules": [
+        "In URLs, nouns are good; verbs are bad (p.26)",
+        "At least one well-known URL; discoverable root (p.26)",
+        "The client does not build an entity URL piece by piece (p.26)",
+        "Permalink: /{type}/{uuid}; the type must be stable (p.28, p.32)"
+      ]
+    },
+    "flat": {
+      "name": "The web is flat, renaming and aliases",
+      "keywords": ["hierarquia", "hierarchy", "aninhamento", "nesting", "nested", "renomeação", "renomeacao", "renaming", "alias", "aliases", "flat", "redirect", "redirecionamento"],
+      "pages": [28, 29, 30, 31],
+      "citation": "APIGEE p.28-31",
+      "summary": "Hierarchy is useful in query URLs and a bad idea in link URLs, because hierarchies change. For renamable resources: machine ID in the link and name in the query template (different resources), or aliases with redirection. There is no numeric nesting limit.",
+      "rules": [
+        "No hierarchy in stored link URLs (p.28)",
+        "Link with a machine ID; query with the name (p.29-30)",
+        "Aliases + redirect: the canonical URL changes, old names are never released (p.31)"
+      ]
+    },
+    "query_urls": {
+      "name": "Query URLs, symmetry, matrix parameters and filters",
+      "keywords": ["consulta", "query", "busca", "search", "filtro", "filtros", "filter", "filters", "matriz", "matrix", "simetria", "symmetry", "relacionamento", "relationship", "subrecurso", "sub-resource"],
+      "pages": [32, 33, 34, 35, 36, 37],
+      "citation": "APIGEE p.32-37",
+      "summary": "Query URLs are the API's query language; prefer the path style (/persons/{id}/dogs) over search?type=; general model by relations starting from the root; symmetry with link properties; matrix parameters as an alternative; filters in the query string that combine with the path.",
+      "rules": [
+        "/persons/{id}/dogs instead of /search?type=Dog&owner= (p.33)",
+        "/{relationship-name}[/{resource-id}]/... (p.34)",
+        "URL x property symmetry (p.35)",
+        "/persons;5678/dogs (matrix) (p.36)",
+        "/persons/5678/dogs?color=red (p.36-37)"
+      ]
+    },
+    "calculations": {
+      "name": "Non-persistent responses (calculate, convert)",
+      "keywords": ["cálculo", "calculo", "calculation", "calcular", "calculate", "converter", "convert", "conversão", "conversao", "conversion", "moeda", "currency", "post", "cache", "cacheável", "cacheavel", "cacheable"],
+      "pages": [37, 38, 39],
+      "citation": "APIGEE p.37-39",
+      "summary": "The URL identifies the response resource, not the algorithm: /monetary-amount/100/EUR/CNY. POST to a noun URL is acceptable, but it is not cacheable by HTTP and moves away from the uniform interface.",
+      "rules": [
+        "/monetary-amount?quantity=100&unit=EUR&in=CNY (p.37)",
+        "Content negotiation as an alternative (p.38)",
+        "POST: no HTTP cache, towards RPC; prefer GET (p.39)"
+      ]
+    },
+    "pagination": {
+      "name": "Chatty API, pagination and partial response",
+      "keywords": ["paginação", "paginacao", "pagination", "paginar", "paginate", "página", "pagina", "page", "tagarela", "chatty", "resposta parcial", "partial response", "fields", "offset", "limit", "desnormalizado", "denormalized", "cursor"],
+      "pages": [43, 44, 45, 48, 49, 50],
+      "citation": "APIGEE p.43-45, p.48-50",
+      "summary": "Chatty API is a myth: use read-only denormalized resources. Pagination: 303 to the first page, Page object with pageOf/next/previous and IANA relations; for explicit control, the book prefers limit/offset. Partial response with ?fields=.",
+      "rules": [
+        "Read-only denormalized resources (p.48)",
+        "303 See Other -> Page {pageOf, next, previous, contents} (p.43-44)",
+        "IANA relations next/previous/first/last (p.45)",
+        "limit/offset preferred (Facebook); page/rpp and start/count for comparison (p.50)",
+        "/dogs?fields=name,color,location (p.49-50)"
+      ]
+    },
+    "status_errors": {
+      "name": "Status, headers and errors",
+      "keywords": ["status", "código", "codigo", "code", "cabeçalho", "cabecalho", "cabeçalhos", "cabecalhos", "header", "headers", "erro", "erros", "error", "errors", "201", "405", "303", "401", "location", "allow", "etag"],
+      "pages": [7, 43, 51, 52, 53],
+      "citation": "APIGEE p.7, p.43, p.51-53",
+      "summary": "Use standard status with its headers: 201+Location, 200 with Content-Location/ETag, 405+Allow, 303 in pagination; 401 only mentioned. Verbose errors with developerMessage, userMessage, errorCode and a link to more information (example, spelled 'more info'). 400/404/422/429/500 do not appear in the source.",
+      "rules": [
+        "201 Created always with Location (p.51)",
+        "405 with Allow (p.52)",
+        "Complete messages, not function return codes (p.51)",
+        "Verbose error body with a link (p.52-53)",
+        "Other codes: [extrapolation], no page"
+      ]
+    },
+    "actions": {
+      "name": "Actions (start/stop/pause)",
+      "keywords": ["ação", "acao", "ações", "acoes", "action", "actions", "start", "stop", "pause", "iniciar", "parar", "pausar", "state", "estado", "não-crud", "nao-crud", "non-crud", "siren"],
+      "pages": [53, 54],
+      "citation": "APIGEE p.53-54",
+      "summary": "Instead of verb endpoints: a state property; or POST of StartRequest/StopRequest... to the actionRequests URL (record keeping and long-running requests); or startRequests/pauseRequests properties whose presence indicates the valid actions (Siren technique).",
+      "rules": [
+        "Client-changeable state (p.53)",
+        "POST of a request entity to actionRequests (p.53)",
+        "Presence of startRequests/pauseRequests/stopRequests/resumeRequests (p.54)"
+      ]
+    },
+    "auth_sdk": {
+      "name": "OAuth 2.0 and SDK",
+      "keywords": ["oauth", "oauth2", "autenticação", "autenticacao", "authentication", "autorização", "autorizacao", "authorization", "sdk", "token", "senha", "password", "api key"],
+      "pages": [55],
+      "citation": "APIGEE p.55",
+      "summary": "Use OAuth2, like almost every large API: no password sharing and token revocation per user or app. An SDK complements a good web API. Grants, API keys and rate limiting are not in the source.",
+      "rules": ["Use OAuth 2.0 (p.55)", "An SDK complements, not replaces, the web API (p.55)"]
+    },
+    "versioning": {
+      "name": "Versioning",
+      "keywords": ["versionamento", "versioning", "versão", "versao", "version", "v1", "compatibilidade", "compatibility", "cabeçalho de versão", "version header"],
+      "pages": [46, 56, 57, 58, 59, 60],
+      "citation": "APIGEE p.56-60",
+      "summary": "Not versioning is a smart option: many changes are compatible (new properties, PATCH, new types), fundamental changes require a new API, and versioning can be added later (no version = V1). With links, a version header is simpler than a URL version; ways out: 1+n URLs (OpenStack) or relative URLs.",
+      "rules": [
+        "When in doubt, leave versioning out; it can be added later (p.57)",
+        "Prefer PATCH over PUT; never PUT with PATCH semantics (p.56)",
+        "Links + version in the URL combine poorly; a header is simpler (p.57-59)"
+      ]
+    }
+  }
+}

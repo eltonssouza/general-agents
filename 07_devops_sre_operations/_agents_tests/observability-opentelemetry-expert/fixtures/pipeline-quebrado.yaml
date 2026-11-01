@@ -1,0 +1,19 @@
+receivers:
+  otlp:
+processors:
+  batch:
+  attributes:
+exporters:
+  jaeger:
+extensions:
+  pprof:
+service:
+  extensions: [health_check]
+  pipelines:
+    traces:
+      receivers: [otlp, zipkin]
+      processors: [batch, attributes]
+      exporters: [jaeger, prometheus]
+    profiles:
+      receivers: [otlp]
+      exporters: []

@@ -1,0 +1,747 @@
+{
+ "versao": 1,
+ "fontes": {
+  "VUEHB": "Vue-Handbook-freeCodeCamp.pdf (article of 5 Jul 2018; Vue 2 by inference; 133 pages)",
+  "VUE3G": "Vue3-Guide-Introduction.pdf (Vue 3 introduction; 2026 capture; 8 pages)",
+  "NUXT": "Nuxt-Getting-Started.pdf (Nuxt v4.5.2; 6 pages, useful 1-4)"
+ },
+ "convencao": "page = PDF page (marker '=== PAGE N ===')",
+ "paginas_totais": {
+  "VUEHB": 133,
+  "VUE3G": 8,
+  "NUXT": 6
+ },
+ "paginas_sem_texto_util": {
+  "VUEHB": [
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   47,
+   51,
+   52,
+   53,
+   54,
+   61
+  ],
+  "VUE3G": [],
+  "NUXT": [
+   5,
+   6
+  ]
+ },
+ "topicos": [
+  {
+   "fonte": "VUEHB",
+   "tema": "Front-end framework landscape and history",
+   "paginas": [
+    2,
+    3
+   ],
+   "chaves": "framework javascript front-end jquery angularjs react angular dom abstrair landscape history abstract",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue popularity in 2018",
+   "paginas": [
+    4
+   ],
+   "chaves": "popularidade estrelas github npm downloads laravel popularity stars downloads",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue as a progressive framework",
+   "paginas": [
+    4,
+    5
+   ],
+   "chaves": "progressive progressivo script tag webpack babel adaptar progressive adapt",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue vs React vs Angular (2018 opinion)",
+   "paginas": [
+    6,
+    7
+   ],
+   "chaves": "react angular virtual dom jsx shouldcomponentupdate typescript indie comparacao comparison opinion",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "First app with new Vue and a script tag",
+   "paginas": [
+    8,
+    9
+   ],
+   "chaves": "new vue el data hello world unpkg cdn mustache hello world script tag",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Default Vue CLI app and file structure",
+   "paginas": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chaves": "vue create codesandbox index.html main.js app.vue helloworld estrutura arquivos productiontip default app file structure",
+   "ref": "01-vue2-handbook-fundamentos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue CLI: installation, create, presets, serve, build, inspect",
+   "paginas": [
+    18,
+    19,
+    20,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "chaves": "vue cli create preset vue add yarn serve build lint test unit webpack inspect prototipagem plugin installation presets prototyping",
+   "ref": "09-ferramentas-cli-devtools-vetur.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue DevTools",
+   "paginas": [
+    34,
+    35,
+    36,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+   ],
+   "chaves": "devtools extension chrome firefox standalone vm0 inspect componentes vuex events devtools",
+   "ref": "09-ferramentas-cli-devtools-vetur.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "VS Code and Vetur",
+   "paginas": [
+    50,
+    51,
+    53,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    62
+   ],
+   "chaves": "vetur vscode snippets intellisense emmet eslint prettier formatonsave scaffold editor editor formatting",
+   "ref": "09-ferramentas-cli-devtools-vetur.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Four ways to define components",
+   "paginas": [
+    62,
+    63
+   ],
+   "chaves": "componentes new vue vue.component local sfc spa define components",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue.component, kebab-case and PascalCase names",
+   "paginas": [
+    64,
+    65
+   ],
+   "chaves": "vue.component kebab pascalcase alias registro global tag nome naming alias global registration",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Local components and reuse",
+   "paginas": [
+    65,
+    66
+   ],
+   "chaves": "local components registro local reuso instancia independente sidebar local registration reuse independent instance",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Component options: el, props, template, data, methods, computed, watch",
+   "paginas": [
+    66,
+    67
+   ],
+   "chaves": "opcoes el props template data methods computed watch component options",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Single File Components (.vue) and Webpack",
+   "paginas": [
+    67,
+    68,
+    69,
+    70
+   ],
+   "chaves": "sfc single file component vue webpack preprocessadores scoped css modules src externalizar typescript scss pug single file component preprocessors externalize",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "data as a regular function vs arrow function",
+   "paginas": [
+    70,
+    71,
+    73
+   ],
+   "chaves": "data arrow function this funcao normal modules.exports commonjs es modules normal function arrow function",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Templates and interpolation",
+   "paginas": [
+    71,
+    72,
+    73,
+    74,
+    75
+   ],
+   "chaves": "template interpolacao mustache expressao superset html escapado v-once math date interpolation escaped expression",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Styles: style, :style, class, :class, SCSS",
+   "paginas": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+   ],
+   "chaves": "style class css scss binding dinamico camelcase prefixos classes array objeto styles dynamic binding prefixes classes array object",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Directives v-text, v-once, v-html, v-bind",
+   "paginas": [
+    81,
+    82
+   ],
+   "chaves": "diretiva v-text v-once v-html v-bind xss escape atributo directive attribute escape",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "v-model (two-way binding)",
+   "paginas": [
+    83
+   ],
+   "chaves": "v-model two-way bidirecional input select formulario two-way binding form",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Conditionals v-if v-else v-else-if",
+   "paginas": [
+    83,
+    84
+   ],
+   "chaves": "v-if v-else v-else-if condicional ternario conditional ternary",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "v-for loops",
+   "paginas": [
+    84,
+    85
+   ],
+   "chaves": "v-for lista loop array indice items todos loop list index",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Events with v-on and @",
+   "paginas": [
+    85,
+    86,
+    99,
+    100
+   ],
+   "chaves": "v-on evento click submit handler atalho event handler shortcut",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "v-show",
+   "paginas": [
+    86,
+    87
+   ],
+   "chaves": "v-show display none esconder mostrar hide show",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Event modifiers (.prevent .stop ...)",
+   "paginas": [
+    87,
+    101,
+    102
+   ],
+   "chaves": "modificadores prevent stop capture self once passive preventdefault event event modifiers",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Custom directives",
+   "paginas": [
+    87,
+    88
+   ],
+   "chaves": "diretivas customizadas custom directives custom directive",
+   "ref": "03-templates-diretivas-estilos.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Methods",
+   "paginas": [
+    88,
+    89,
+    90
+   ],
+   "chaves": "methods metodos funcao this instancia parametros methods functions parameters",
+   "ref": "04-reatividade-methods-computed-watch.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Watchers",
+   "paginas": [
+    90,
+    91
+   ],
+   "chaves": "watch watcher observar propriedade novo antigo valor watcher observe property new old value",
+   "ref": "04-reatividade-methods-computed-watch.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Computed properties and caching",
+   "paginas": [
+    91,
+    92,
+    93,
+    94
+   ],
+   "chaves": "computed propriedade computada cache date.now reativo computed property cache",
+   "ref": "04-reatividade-methods-computed-watch.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Methods vs watchers vs computed: when to use each",
+   "paginas": [
+    94,
+    95
+   ],
+   "chaves": "quando usar methods watchers computed diferenca when to use difference",
+   "ref": "04-reatividade-methods-computed-watch.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Reactivity (Vue 2, handbook)",
+   "paginas": [
+    6,
+    75,
+    93
+   ],
+   "chaves": "reatividade reactive atualizar dependencias rastrear re-render reactivity dependencies tracking",
+   "ref": "04-reatividade-methods-computed-watch.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Props",
+   "paginas": [
+    95,
+    96,
+    97,
+    98,
+    99
+   ],
+   "chaves": "props prop tipos required default validator passar dados filho pai pass data child parent",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "$event and DOM events",
+   "paginas": [
+    100,
+    101
+   ],
+   "chaves": "$event objeto evento original click parametros dom event original event",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Slots and named slots",
+   "paginas": [
+    102,
+    103,
+    104
+   ],
+   "chaves": "slot slots nomeados conteudo injetar default slots named content inject",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Filters",
+   "paginas": [
+    104,
+    105,
+    106
+   ],
+   "chaves": "filtros filter pipe capitalize formatar encadear parametros filters format chain parameters",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Component communication: props, $emit, event bus",
+   "paginas": [
+    107,
+    108,
+    109,
+    110
+   ],
+   "chaves": "comunicacao emit evento bus root filho pai props unidirecional communication emit event bus unidirectional",
+   "ref": "02-componentes-props-eventos-slots.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vuex: motivation and store",
+   "paginas": [
+    110,
+    111,
+    112,
+    113,
+    114
+   ],
+   "chaves": "vuex store estado global flux redux gerencia estado motivation global state",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vuex: state, mutations, getters, commit",
+   "paginas": [
+    115,
+    116,
+    117,
+    118,
+    119
+   ],
+   "chaves": "state mutation getter commit $store payload flavor mutation getter commit payload",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue Router: installation, $router, $route, push/replace/go",
+   "paginas": [
+    120,
+    121,
+    122,
+    123
+   ],
+   "chaves": "vue-router router push replace go history $router $route instalar install",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue Router: routes, router-link, router-view, named routes",
+   "paginas": [
+    123,
+    124,
+    125,
+    126
+   ],
+   "chaves": "routes router-link router-view named route nomeada params named route params",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue Router: navigation guards",
+   "paginas": [
+    126,
+    127,
+    128,
+    129
+   ],
+   "chaves": "guards beforeeach aftereach beforeresolve beforerouteenter beforerouteupdate beforerouteleave next navigation guards",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUEHB",
+   "tema": "Vue Router: dynamic routes, props, nested routes",
+   "paginas": [
+    129,
+    130,
+    131,
+    132,
+    133
+   ],
+   "chaves": "dinamica dynamic segment post_slug props true aninhadas nested dynamic route nested routes",
+   "ref": "05-vuex-e-vue-router-vue2.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Introduction to Vue 3, Vue 2 end-of-support notice",
+   "paginas": [
+    1
+   ],
+   "chaves": "vue 3 introducao eol suporte 2023 migration guide introduction end of support",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Minimal example with createApp and ref",
+   "paginas": [
+    1,
+    2
+   ],
+   "chaves": "createapp ref mount exemplo minimo contador count minimal example counter",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Declarative rendering and reactivity (Vue 3)",
+   "paginas": [
+    2
+   ],
+   "chaves": "renderizacao declarativa reatividade declarative rendering reactivity dom declarative rendering reactivity",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Progressive framework and ways of using it",
+   "paginas": [
+    3
+   ],
+   "chaves": "progressivo progressive web components spa ssr ssg jamstack desktop mobile webgl progressive ways of use",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Single-File Components in Vue 3",
+   "paginas": [
+    3,
+    4
+   ],
+   "chaves": "sfc single file component script setup style scoped build single file component",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Options API",
+   "paginas": [
+    4,
+    5
+   ],
+   "chaves": "options api data methods mounted this instancia options api instance",
+   "ref": "07-options-vs-composition.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Composition API and script setup",
+   "paginas": [
+    5,
+    6
+   ],
+   "chaves": "composition api script setup ref onmounted value composition api script setup",
+   "ref": "07-options-vs-composition.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Options vs Composition: which to choose",
+   "paginas": [
+    6,
+    7
+   ],
+   "chaves": "options composition escolher recomendacao producao aprendizado build tools progressive enhancement choose recommendation production learning",
+   "ref": "07-options-vs-composition.md"
+  },
+  {
+   "fonte": "VUE3G",
+   "tema": "Learning paths",
+   "paginas": [
+    8
+   ],
+   "chaves": "tutorial guide examples learning path learning path",
+   "ref": "06-vue3-guia-introducao.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "What Nuxt v4 is",
+   "paginas": [
+    1
+   ],
+   "chaves": "nuxt introducao full-stack vue hmr ssr vendor lock-in edge convencoes introduction full-stack conventions",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "File-based routing (app/pages)",
+   "paginas": [
+    1,
+    2
+   ],
+   "chaves": "file-based routing roteamento arquivos app/pages pages rotas file-based routing pages routes",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "Code splitting, auto-imports, data fetching, TypeScript, Vite",
+   "paginas": [
+    2
+   ],
+   "chaves": "code splitting auto-imports composables componentes data fetching typescript tsconfig vite hmr auto-imports composables components",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "Server-side rendering in Nuxt",
+   "paginas": [
+    2,
+    3
+   ],
+   "chaves": "ssr server-side rendering seo desempenho acessibilidade cache html performance accessibility cache",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "Rendering modes: nuxt generate, ssr:false, routeRules",
+   "paginas": [
+    3
+   ],
+   "chaves": "nuxt generate ssr false routerules hibrida estatica hybrid rendering hybrid static rendering",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "Nitro, server/api, server/middleware, .output, deployment",
+   "paginas": [
+    3
+   ],
+   "chaves": "nitro server api middleware output deploy node deno serverless edge workers rollup deployment",
+   "ref": "10-nuxt-v4.md"
+  },
+  {
+   "fonte": "NUXT",
+   "tema": "Nuxt modules and core packages",
+   "paginas": [
+    4
+   ],
+   "chaves": "modulos pacotes nuxt kit cli vite-builder rspack webpack nitro arquitetura modules packages architecture",
+   "ref": "10-nuxt-v4.md"
+  }
+ ],
+ "sem_cobertura": [
+  {
+   "tema": "Pinia",
+   "termos": "pinia"
+  },
+  {
+   "tema": "Vuex 4 / Vuex with Vue 3",
+   "termos": "vuex 4|vuex com vue 3|vuex with vue 3"
+  },
+  {
+   "tema": "Vue Router 4 / createRouter / useRouter",
+   "termos": "vue router 4|createrouter|userouter|useroute"
+  },
+  {
+   "tema": "Vue 2 -> Vue 3 migration guide (content)",
+   "termos": "migracao|migration|migrar|migrate|vue 2 para vue 3|vue 2 to vue 3|breaking changes"
+  },
+  {
+   "tema": "Vite / create-vue as a project tool",
+   "termos": "vite|create-vue|vue cli atual|current vue cli"
+  },
+  {
+   "tema": "defineProps / defineEmits",
+   "termos": "defineprops|defineemits|defineexpose"
+  },
+  {
+   "tema": "computed / watch / watchEffect / reactive in the Composition API",
+   "termos": "watcheffect|computed api|reactive api"
+  },
+  {
+   "tema": "v-for with :key",
+   "termos": "key|:key"
+  },
+  {
+   "tema": "Teleport / Suspense / Transition / keep-alive",
+   "termos": "teleport|suspense|transition|keep-alive"
+  },
+  {
+   "tema": "TypeScript in Vue",
+   "termos": "typescript vue|lang ts|vue typescript"
+  },
+  {
+   "tema": "Component testing (Vue Test Utils/Vitest/Cypress)",
+   "termos": "vitest|vue test utils|cypress|jest vue"
+  },
+  {
+   "tema": "provide / inject and composables",
+   "termos": "provide|inject|composable vue"
+  },
+  {
+   "tema": "Nuxt useFetch / useAsyncData / useState",
+   "termos": "usefetch|useasyncdata|usestate"
+  },
+  {
+   "tema": "Nuxt: layouts, plugins, route middleware",
+   "termos": "layouts|plugins nuxt|route middleware"
+  },
+  {
+   "tema": "Nuxt: project creation command (nuxi init / create nuxt)",
+   "termos": "nuxi|create nuxt|npx nuxi|instalar nuxt|install nuxt"
+  },
+  {
+   "tema": "Nuxt: per-provider deployment (Vercel/Netlify/Cloudflare)",
+   "termos": "vercel|netlify|cloudflare"
+  },
+  {
+   "tema": "Nuxt 2 / Nuxt 3 and migration",
+   "termos": "nuxt 2|nuxt 3|migracao nuxt|nuxt migration"
+  },
+  {
+   "tema": "Emits/props in Vue 3 (component API)",
+   "termos": "emits option|emits vue 3"
+  }
+ ]
+}

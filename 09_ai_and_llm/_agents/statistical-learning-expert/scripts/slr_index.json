@@ -1,0 +1,2159 @@
+{
+ "version": 1,
+ "convention": "PDF page; printed ISLR = PDF - 15; printed ESL = PDF - 19",
+ "books": {
+  "ISLR": {
+   "title": "An Introduction to Statistical Learning with Applications in R (1st ed., 2013, 8th printing 2017)",
+   "offset": 15,
+   "pdf_pages": 441,
+   "body": [
+    16,
+    433
+   ],
+   "chapters": [
+    {
+     "ch": 1,
+     "title": "Introduction",
+     "pdf_start": 16,
+     "pdf_end": 29,
+     "offset": 15,
+     "reading": "sampling",
+     "read": [
+      [
+       16,
+       16
+      ],
+      [
+       22,
+       29
+      ]
+     ]
+    },
+    {
+     "ch": 2,
+     "title": "Statistical Learning",
+     "pdf_start": 30,
+     "pdf_end": 56,
+     "offset": 15,
+     "reading": "full (text); R lab 57-66 and exercises 67-73 not read",
+     "read": [
+      [
+       30,
+       57
+      ]
+     ]
+    },
+    {
+     "ch": 3,
+     "title": "Linear Regression",
+     "pdf_start": 76,
+     "pdf_end": 123,
+     "offset": 15,
+     "reading": "text read (PDF 87 and 98 only transition); R lab 124-134 and exercises 135-141 not read",
+     "read": [
+      [
+       76,
+       86
+      ],
+      [
+       88,
+       97
+      ],
+      [
+       99,
+       124
+      ]
+     ]
+    },
+    {
+     "ch": 4,
+     "title": "Classification",
+     "pdf_start": 143,
+     "pdf_end": 169,
+     "offset": 15,
+     "reading": "full (text); R lab 169-182 and exercises 183-189 not read",
+     "read": [
+      [
+       143,
+       169
+      ]
+     ]
+    },
+    {
+     "ch": 5,
+     "title": "Resampling Methods",
+     "pdf_start": 191,
+     "pdf_end": 205,
+     "offset": 15,
+     "reading": "full (text); R lab 205-211 and exercises 212-217 not read",
+     "read": [
+      [
+       191,
+       205
+      ]
+     ]
+    },
+    {
+     "ch": 6,
+     "title": "Linear Model Selection and Regularization",
+     "pdf_start": 218,
+     "pdf_end": 259,
+     "offset": 15,
+     "reading": "full (text; PDF 246-247 only the start of PCA); R labs 259-273 and exercises 274-279 not read",
+     "read": [
+      [
+       218,
+       259
+      ]
+     ]
+    },
+    {
+     "ch": 7,
+     "title": "Moving Beyond Linearity",
+     "pdf_start": 280,
+     "pdf_end": 302,
+     "offset": 15,
+     "reading": "text read (first half of PDF 294 not); R lab 302-311 and exercises 312-317 not read",
+     "read": [
+      [
+       280,
+       302
+      ]
+     ]
+    },
+    {
+     "ch": 8,
+     "title": "Tree-Based Methods",
+     "pdf_start": 318,
+     "pdf_end": 338,
+     "offset": 15,
+     "reading": "full (text); R lab 338-346 and exercises 347-351 not read",
+     "read": [
+      [
+       318,
+       338
+      ]
+     ]
+    },
+    {
+     "ch": 9,
+     "title": "Support Vector Machines",
+     "pdf_start": 352,
+     "pdf_end": 374,
+     "offset": 15,
+     "reading": "full (text); R lab 374-382 and exercises 383-387 not read",
+     "read": [
+      [
+       352,
+       374
+      ]
+     ]
+    },
+    {
+     "ch": 10,
+     "title": "Unsupervised Learning",
+     "pdf_start": 388,
+     "pdf_end": 416,
+     "offset": 15,
+     "reading": "full (text); R labs 416-427 and exercises 428-433 not read",
+     "read": [
+      [
+       388,
+       416
+      ]
+     ]
+    }
+   ]
+  },
+  "ESL": {
+   "title": "The Elements of Statistical Learning (2nd ed., 12th printing 2017)",
+   "offset": 19,
+   "pdf_pages": 764,
+   "body": [
+    20,
+    717
+   ],
+   "chapters": [
+    {
+     "ch": 1,
+     "title": "Introduction",
+     "pdf_start": 20,
+     "pdf_end": 29,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 2,
+     "title": "Overview of Supervised Learning",
+     "pdf_start": 30,
+     "pdf_end": 58,
+     "offset": 19,
+     "reading": "read 2.3-2.9; 2.1-2.2 (PDF 28-29) not",
+     "read": [
+      [
+       30,
+       58
+      ]
+     ]
+    },
+    {
+     "ch": 3,
+     "title": "Linear Methods for Regression",
+     "pdf_start": 62,
+     "pdf_end": 119,
+     "offset": 19,
+     "reading": "read 63-71, 76-93, 98-104; not 72-75, 94-97, 105-119",
+     "read": [
+      [
+       63,
+       71
+      ],
+      [
+       76,
+       93
+      ],
+      [
+       98,
+       104
+      ]
+     ]
+    },
+    {
+     "ch": 4,
+     "title": "Linear Methods for Classification",
+     "pdf_start": 120,
+     "pdf_end": 156,
+     "offset": 19,
+     "reading": "read 120-132, 138-148; not 133-137, 149-156",
+     "read": [
+      [
+       120,
+       132
+      ],
+      [
+       138,
+       148
+      ]
+     ]
+    },
+    {
+     "ch": 5,
+     "title": "Basis Expansions and Regularization",
+     "pdf_start": 158,
+     "pdf_end": 209,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 6,
+     "title": "Kernel Smoothing Methods",
+     "pdf_start": 210,
+     "pdf_end": 237,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 7,
+     "title": "Model Assessment and Selection",
+     "pdf_start": 238,
+     "pdf_end": 279,
+     "offset": 19,
+     "reading": "read in full except PDF 259 and exercises",
+     "read": [
+      [
+       238,
+       258
+      ],
+      [
+       260,
+       277
+      ]
+     ]
+    },
+    {
+     "ch": 8,
+     "title": "Model Inference and Averaging",
+     "pdf_start": 280,
+     "pdf_end": 313,
+     "offset": 19,
+     "reading": "only 8.7-8.8 (PDF 301-308)",
+     "read": [
+      [
+       301,
+       308
+      ]
+     ]
+    },
+    {
+     "ch": 9,
+     "title": "Additive Models, Trees, and Related Methods",
+     "pdf_start": 314,
+     "pdf_end": 355,
+     "offset": 19,
+     "reading": "only 9.2 trees (PDF 324-333)",
+     "read": [
+      [
+       324,
+       333
+      ]
+     ]
+    },
+    {
+     "ch": 10,
+     "title": "Boosting and Additive Trees",
+     "pdf_start": 356,
+     "pdf_end": 407,
+     "offset": 19,
+     "reading": "read 356-384, 386-389",
+     "read": [
+      [
+       356,
+       384
+      ],
+      [
+       386,
+       389
+      ]
+     ]
+    },
+    {
+     "ch": 11,
+     "title": "Neural Networks",
+     "pdf_start": 408,
+     "pdf_end": 435,
+     "offset": 19,
+     "reading": "read 408-417",
+     "read": [
+      [
+       408,
+       417
+      ]
+     ]
+    },
+    {
+     "ch": 12,
+     "title": "Support Vector Machines and Flexible Discriminants",
+     "pdf_start": 436,
+     "pdf_end": 477,
+     "offset": 19,
+     "reading": "read 436-446, 450-451, 457",
+     "read": [
+      [
+       436,
+       446
+      ],
+      [
+       450,
+       451
+      ],
+      [
+       457,
+       457
+      ]
+     ]
+    },
+    {
+     "ch": 13,
+     "title": "Prototype Methods and Nearest-Neighbors",
+     "pdf_start": 478,
+     "pdf_end": 503,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 14,
+     "title": "Unsupervised Learning",
+     "pdf_start": 504,
+     "pdf_end": 605,
+     "offset": 19,
+     "reading": "read 527-530, 536-546, 553-556",
+     "read": [
+      [
+       527,
+       530
+      ],
+      [
+       536,
+       546
+      ],
+      [
+       553,
+       556
+      ]
+     ]
+    },
+    {
+     "ch": 15,
+     "title": "Random Forests",
+     "pdf_start": 606,
+     "pdf_end": 623,
+     "offset": 19,
+     "reading": "read 606-614",
+     "read": [
+      [
+       606,
+       614
+      ]
+     ]
+    },
+    {
+     "ch": 16,
+     "title": "Ensemble Learning",
+     "pdf_start": 624,
+     "pdf_end": 647,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 17,
+     "title": "Undirected Graphical Models",
+     "pdf_start": 648,
+     "pdf_end": 667,
+     "offset": 19,
+     "reading": "not read",
+     "read": []
+    },
+    {
+     "ch": 18,
+     "title": "High-Dimensional Problems: p >> N",
+     "pdf_start": 668,
+     "pdf_end": 717,
+     "offset": 19,
+     "reading": "read 668-671, 702-711",
+     "read": [
+      [
+       668,
+       671
+      ],
+      [
+       702,
+       711
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "entries": [
+  {
+   "topic": "Y = f(X) + error; reducible and irreducible error",
+   "terms": [
+    "erro irredutivel",
+    "erro reduzivel",
+    "irreducible error",
+    "reducible error",
+    "f desconhecida",
+    "Y = f(X) + erro; erro reduzivel e irredutivel"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "31-34",
+   "esl": ""
+  },
+  {
+   "topic": "Prediction versus inference",
+   "terms": [
+    "predicao",
+    "inferencia",
+    "prediction",
+    "inference",
+    "interpretabilidade",
+    "interpretability",
+    "Predicao versus inferencia"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "32-35,40-41",
+   "esl": ""
+  },
+  {
+   "topic": "Parametric versus non-parametric; overfitting",
+   "terms": [
+    "parametrico",
+    "nao parametrico",
+    "overfitting",
+    "flexibilidade",
+    "flexibility",
+    "Parametrico versus nao parametrico; overfitting"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "36-39,47",
+   "esl": ""
+  },
+  {
+   "topic": "Supervised versus unsupervised; no free lunch",
+   "terms": [
+    "supervisionado",
+    "nao supervisionado",
+    "supervised",
+    "unsupervised",
+    "no free lunch",
+    "almoco gratis",
+    "Supervisionado versus nao supervisionado; no free lunch"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "41-44",
+   "esl": ""
+  },
+  {
+   "topic": "Training and test MSE",
+   "terms": [
+    "mse",
+    "erro quadratico medio",
+    "training error",
+    "test error",
+    "erro de teste",
+    "erro de treino",
+    "MSE de treino e de teste"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "44-48",
+   "esl": "238-241,247-248"
+  },
+  {
+   "topic": "Bias-variance decomposition",
+   "terms": [
+    "vies-variancia",
+    "bias-variance",
+    "vies",
+    "variancia",
+    "bias",
+    "variance",
+    "tradeoff",
+    "Decomposicao vies-variancia"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "48-51",
+   "esl": "56-57,242-247"
+  },
+  {
+   "topic": "Bayes classifier and Bayes error rate",
+   "terms": [
+    "bayes classifier",
+    "classificador de bayes",
+    "taxa de erro de bayes",
+    "bayes error",
+    "Classificador de Bayes e taxa de erro de Bayes"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "52-54",
+   "esl": "39-41"
+  },
+  {
+   "topic": "kNN (classification and regression)",
+   "terms": [
+    "knn",
+    "k-nearest neighbors",
+    "vizinhos mais proximos",
+    "nearest neighbor",
+    "kNN",
+    "kNN (classificacao e regressao)"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "54-55,120-123",
+   "esl": "33-36,56-57"
+  },
+  {
+   "topic": "Decision theory: squared loss, conditional expectation, 0-1 loss",
+   "terms": [
+    "decision theory",
+    "teoria de decisao",
+    "epe",
+    "expected prediction error",
+    "esperanca condicional",
+    "Teoria de decisao: perda quadratica, esperanca condicional, perda 0-1"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "",
+   "esl": "37-41"
+  },
+  {
+   "topic": "Curse of dimensionality",
+   "terms": [
+    "curse of dimensionality",
+    "maldicao da dimensionalidade",
+    "alta dimensao",
+    "aresta",
+    "Maldicao da dimensionalidade"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "123,257-258",
+   "esl": "41-46"
+  },
+  {
+   "topic": "Complexity restrictions, regularization as a class of estimators",
+   "terms": [
+    "roughness penalty",
+    "kernel methods",
+    "basis functions",
+    "dicionario",
+    "penalizacao",
+    "Restricoes de complexidade, regularizacao como classe de estimadores"
+   ],
+   "ref": "01-fundamentos-e-vies-variancia.md",
+   "islr": "",
+   "esl": "51-55"
+  },
+  {
+   "topic": "Simple linear regression: least squares, SE, CI, t, R2, RSE",
+   "terms": [
+    "regressao linear simples",
+    "least squares",
+    "minimos quadrados",
+    "rss",
+    "rse",
+    "r2",
+    "r-quadrado",
+    "t-statistic",
+    "p-valor",
+    "intervalo de confianca",
+    "Regressao linear simples: minimos quadrados, SE, IC, t, R2, RSE"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "76-85",
+   "esl": "63-68"
+  },
+  {
+   "topic": "Multiple linear regression: F, variable selection, adjusted R2",
+   "terms": [
+    "regressao multipla",
+    "multiple regression",
+    "estatistica f",
+    "f-statistic",
+    "forward selection",
+    "backward selection",
+    "Regressao linear multipla: F, selecao de variaveis, R2 ajustado"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "86-97",
+   "esl": "66-68"
+  },
+  {
+   "topic": "Qualitative predictors, dummies, interactions, polynomials",
+   "terms": [
+    "dummy",
+    "qualitativo",
+    "interacao",
+    "interaction",
+    "hierarquico",
+    "polinomial",
+    "Preditores qualitativos, dummies, interacoes, polinomios"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "99-107",
+   "esl": ""
+  },
+  {
+   "topic": "Diagnostics: non-linearity, correlated errors, heteroscedasticity, outliers, leverage",
+   "terms": [
+    "residuos",
+    "outlier",
+    "leverage",
+    "alavancagem",
+    "heteroscedasticidade",
+    "residual plot",
+    "studentized",
+    "Diagnostico: nao linearidade, correlacao de erros, heteroscedasticidade, outliers, leverage"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "107-114",
+   "esl": ""
+  },
+  {
+   "topic": "Collinearity and VIF",
+   "terms": [
+    "colinearidade",
+    "collinearity",
+    "vif",
+    "multicolinearidade",
+    "variance inflation",
+    "Colinearidade e VIF"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "114-117",
+   "esl": ""
+  },
+  {
+   "topic": "Linear regression versus KNN",
+   "terms": [
+    "linear vs knn",
+    "knn regression",
+    "Regressao linear versus KNN"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "120-124",
+   "esl": ""
+  },
+  {
+   "topic": "Gauss-Markov, hat matrix, Var(beta), Z-score",
+   "terms": [
+    "gauss-markov",
+    "hat matrix",
+    "matriz-chapeu",
+    "var beta",
+    "z-score",
+    "Gauss-Markov, matriz-chapeu, Var(beta), Z-score"
+   ],
+   "ref": "02-regressao-linear.md",
+   "islr": "",
+   "esl": "63-71"
+  },
+  {
+   "topic": "Logistic regression: odds, logit, maximum likelihood",
+   "terms": [
+    "logistica",
+    "logistic regression",
+    "odds",
+    "logit",
+    "maxima verossimilhanca",
+    "maximum likelihood",
+    "confundimento",
+    "confounding",
+    "Regressao logistica: odds, logit, maxima verossimilhanca"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "146-153",
+   "esl": "138-146"
+  },
+  {
+   "topic": "IRLS and L1 logistic regression",
+   "terms": [
+    "irls",
+    "newton-raphson",
+    "iteratively reweighted",
+    "l1 logistic",
+    "wald",
+    "rao",
+    "IRLS e logistica com L1"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "",
+   "esl": "138-146"
+  },
+  {
+   "topic": "LDA, QDA, discriminant analysis",
+   "terms": [
+    "lda",
+    "qda",
+    "linear discriminant",
+    "quadratic discriminant",
+    "discriminante",
+    "bayes theorem",
+    "LDA, QDA, analise discriminante"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "153-165",
+   "esl": "127-132"
+  },
+  {
+   "topic": "RDA and LDA/QDA parameters",
+   "terms": [
+    "rda",
+    "regularized discriminant",
+    "parametros",
+    "covariance",
+    "RDA e parametros de LDA/QDA"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "164-165",
+   "esl": "129-132"
+  },
+  {
+   "topic": "Indicator matrix regression and masking",
+   "terms": [
+    "masking",
+    "indicator matrix",
+    "matriz indicadora",
+    "Regressao de matriz indicadora e masking"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "144-145",
+   "esl": "122-126"
+  },
+  {
+   "topic": "Confusion matrix, sensitivity, specificity, threshold",
+   "terms": [
+    "confusion matrix",
+    "matriz de confusao",
+    "sensitivity",
+    "specificity",
+    "sensibilidade",
+    "especificidade",
+    "limiar",
+    "threshold",
+    "precisao",
+    "recall",
+    "Matriz de confusao, sensibilidade, especificidade, limiar"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "159-164",
+   "esl": ""
+  },
+  {
+   "topic": "ROC and AUC",
+   "terms": [
+    "roc",
+    "auc",
+    "curva roc",
+    "ROC e AUC"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "162-164",
+   "esl": ""
+  },
+  {
+   "topic": "Comparison of logistic, LDA, QDA, KNN (six scenarios)",
+   "terms": [
+    "comparacao",
+    "scenarios",
+    "cenarios",
+    "qual classificador",
+    "Comparacao logistica, LDA, QDA, KNN (seis cenarios)"
+   ],
+   "ref": "03-classificacao.md",
+   "islr": "166-169",
+   "esl": "146-147"
+  },
+  {
+   "topic": "Validation set approach",
+   "terms": [
+    "validation set",
+    "hold-out",
+    "validacao",
+    "Validation set approach"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "191-193",
+   "esl": "241"
+  },
+  {
+   "topic": "LOOCV",
+   "terms": [
+    "loocv",
+    "leave-one-out",
+    "leave one out",
+    "LOOCV"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "194-196",
+   "esl": "261-264"
+  },
+  {
+   "topic": "k-fold CV and bias-variance of k",
+   "terms": [
+    "k-fold",
+    "cross-validation",
+    "validacao cruzada",
+    "cv",
+    "k = 5",
+    "k = 10",
+    "k-fold CV e viés-variância de k"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "196-201",
+   "esl": "260-262"
+  },
+  {
+   "topic": "CV right and wrong; does CV work?",
+   "terms": [
+    "cv errado",
+    "wrong way",
+    "vazamento",
+    "leakage",
+    "selecao dentro do fold",
+    "CV certo e errado; CV funciona?"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "",
+   "esl": "264-268"
+  },
+  {
+   "topic": "Bootstrap (standard error)",
+   "terms": [
+    "bootstrap",
+    "reamostragem",
+    "resampling",
+    "se bootstrap",
+    "Bootstrap (erro padrao)"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "202-205",
+   "esl": "268-269"
+  },
+  {
+   "topic": "Bootstrap for prediction error: .632 and .632+",
+   "terms": [
+    "632",
+    "0.632",
+    "leave-one-out bootstrap",
+    "632+",
+    "Bootstrap para erro de predicao: .632 e .632+"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "",
+   "esl": "269-273"
+  },
+  {
+   "topic": "Selection vs assessment; training/validation/test",
+   "terms": [
+    "model selection",
+    "model assessment",
+    "teste no cofre",
+    "data-rich",
+    "divisao",
+    "Selecao x avaliacao; treino/validacao/teste"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "",
+   "esl": "241"
+  },
+  {
+   "topic": "Conditional vs expected error (ErrT vs Err); optimism",
+   "terms": [
+    "errt",
+    "conditional error",
+    "otimismo",
+    "optimism",
+    "in-sample error",
+    "Erro condicional x esperado (ErrT x Err); otimismo"
+   ],
+   "ref": "04-reamostragem-e-avaliacao-de-modelos.md",
+   "islr": "",
+   "esl": "239-240,247-250,273-276"
+  },
+  {
+   "topic": "Best subset, forward and backward stepwise",
+   "terms": [
+    "best subset",
+    "stepwise",
+    "forward",
+    "backward",
+    "subset selection",
+    "Best subset, forward e backward stepwise"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "220-225",
+   "esl": "76-80"
+  },
+  {
+   "topic": "Cp, AIC, BIC, adjusted R2",
+   "terms": [
+    "cp",
+    "aic",
+    "bic",
+    "r2 ajustado",
+    "adjusted r2",
+    "criterio de informacao",
+    "mallow",
+    "Cp, AIC, BIC, R2 ajustado"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "225-229",
+   "esl": "247-254"
+  },
+  {
+   "topic": "Ridge regression",
+   "terms": [
+    "ridge",
+    "tikhonov",
+    "weight decay",
+    "regressao ridge",
+    "Ridge regression"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "230-234",
+   "esl": "82-87"
+  },
+  {
+   "topic": "Lasso",
+   "terms": [
+    "lasso",
+    "soft-thresholding",
+    "l1",
+    "esparsidade",
+    "sparse",
+    "Lasso"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "234-243",
+   "esl": "87-94"
+  },
+  {
+   "topic": "Elastic net and LAR",
+   "terms": [
+    "elastic net",
+    "lar",
+    "least angle",
+    "forward stagewise",
+    "Elastic net e LAR"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "",
+   "esl": "79,92-94"
+  },
+  {
+   "topic": "Choice of tuning parameter by CV; one-standard-error rule",
+   "terms": [
+    "lambda",
+    "tuning parameter",
+    "one standard error",
+    "um erro padrao",
+    "escolher lambda",
+    "Escolha do parametro de ajuste por CV; regra de um erro padrao"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "229,242-243",
+   "esl": "80,263"
+  },
+  {
+   "topic": "PCR and PLS",
+   "terms": [
+    "pcr",
+    "pls",
+    "principal components regression",
+    "partial least squares",
+    "regressao em componentes",
+    "PCR e PLS"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "244-253",
+   "esl": "98-101"
+  },
+  {
+   "topic": "Effective df and trace(S)",
+   "terms": [
+    "degrees of freedom",
+    "df efetivos",
+    "effective degrees",
+    "trace",
+    "Df efetivos e trace(S)"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "294",
+   "esl": "87,251-252"
+  },
+  {
+   "topic": "MDL, VC and SRM",
+   "terms": [
+    "mdl",
+    "minimum description length",
+    "vc dimension",
+    "srm",
+    "structural risk",
+    "MDL, VC e SRM"
+   ],
+   "ref": "05-selecao-de-modelos-e-regularizacao.md",
+   "islr": "",
+   "esl": "254-258"
+  },
+  {
+   "topic": "High dimension p > n",
+   "terms": [
+    "p > n",
+    "high-dimensional",
+    "alta dimensao",
+    "p grande",
+    "n pequeno",
+    "Alta dimensao p > n"
+   ],
+   "ref": "10-alta-dimensao-e-testes-multiplos.md",
+   "islr": "253-259",
+   "esl": "668-671"
+  },
+  {
+   "topic": "Multiple testing, Bonferroni, FDR, Benjamini-Hochberg, SAM",
+   "terms": [
+    "multiple testing",
+    "testes multiplos",
+    "bonferroni",
+    "fdr",
+    "false discovery",
+    "benjamini",
+    "fwer",
+    "sam",
+    "permutacao",
+    "Testes multiplos, Bonferroni, FDR, Benjamini-Hochberg, SAM"
+   ],
+   "ref": "10-alta-dimensao-e-testes-multiplos.md",
+   "islr": "",
+   "esl": "702-711"
+  },
+  {
+   "topic": "Polynomials, step functions, basis functions",
+   "terms": [
+    "polynomial regression",
+    "step function",
+    "basis function",
+    "polinomio",
+    "degrau",
+    "Polinomios, degraus, funcoes de base"
+   ],
+   "ref": "06-nao-linearidade-splines-gam.md",
+   "islr": "281-285",
+   "esl": ""
+  },
+  {
+   "topic": "Regression splines and natural splines",
+   "terms": [
+    "regression spline",
+    "spline",
+    "natural spline",
+    "knots",
+    "nos",
+    "Regression splines e splines naturais"
+   ],
+   "ref": "06-nao-linearidade-splines-gam.md",
+   "islr": "286-292",
+   "esl": ""
+  },
+  {
+   "topic": "Smoothing splines",
+   "terms": [
+    "smoothing spline",
+    "spline suavizante",
+    "lambda smoothing",
+    "Smoothing splines"
+   ],
+   "ref": "06-nao-linearidade-splines-gam.md",
+   "islr": "292-295",
+   "esl": "53"
+  },
+  {
+   "topic": "Local regression and kernels",
+   "terms": [
+    "local regression",
+    "loess",
+    "regressao local",
+    "kernel smoothing",
+    "nadaraya",
+    "Regressao local e kernels"
+   ],
+   "ref": "06-nao-linearidade-splines-gam.md",
+   "islr": "295-297",
+   "esl": "54"
+  },
+  {
+   "topic": "GAM",
+   "terms": [
+    "gam",
+    "generalized additive",
+    "modelo aditivo",
+    "additive model",
+    "GAM"
+   ],
+   "ref": "06-nao-linearidade-splines-gam.md",
+   "islr": "297-302",
+   "esl": ""
+  },
+  {
+   "topic": "Regression and classification trees; pruning",
+   "terms": [
+    "decision tree",
+    "arvore",
+    "regression tree",
+    "classification tree",
+    "cart",
+    "pruning",
+    "poda",
+    "cost complexity",
+    "Arvores de regressao e classificacao; poda"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "318-331",
+   "esl": "324-333"
+  },
+  {
+   "topic": "Gini, entropy, node impurity",
+   "terms": [
+    "gini",
+    "entropy",
+    "entropia",
+    "impureza",
+    "node purity",
+    "pureza",
+    "Gini, entropia, impureza de no"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "326-329",
+   "esl": "328-329"
+  },
+  {
+   "topic": "Bagging and OOB",
+   "terms": [
+    "bagging",
+    "out-of-bag",
+    "oob",
+    "bootstrap aggregation",
+    "Bagging e OOB"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "331-335",
+   "esl": "301-308"
+  },
+  {
+   "topic": "Random forests",
+   "terms": [
+    "random forest",
+    "floresta aleatoria",
+    "rf",
+    "decorrelacao",
+    "Florestas aleatorias"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "334-337",
+   "esl": "606-614"
+  },
+  {
+   "topic": "Boosting (trees, residuals, lambda, d)",
+   "terms": [
+    "boosting",
+    "shrinkage boosting",
+    "stump",
+    "interaction depth",
+    "Boosting (arvores, residuos, lambda, d)"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "336-338",
+   "esl": "356-389"
+  },
+  {
+   "topic": "AdaBoost, exponential loss, forward stagewise",
+   "terms": [
+    "adaboost",
+    "exponential loss",
+    "perda exponencial",
+    "forward stagewise additive",
+    "AdaBoost, perda exponencial, forward stagewise"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "",
+   "esl": "357-365"
+  },
+  {
+   "topic": "Gradient boosting (GBM), MART, importance, partial dependence",
+   "terms": [
+    "gradient boosting",
+    "gbm",
+    "mart",
+    "partial dependence",
+    "variable importance",
+    "importancia de variaveis",
+    "Gradient boosting (GBM), MART, importancia, partial dependence"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "334-335",
+   "esl": "377-389"
+  },
+  {
+   "topic": "Robustness of loss functions (deviance, Huber)",
+   "terms": [
+    "huber",
+    "robust loss",
+    "deviance",
+    "perda robusta",
+    "Robustez de perdas (deviance, Huber)"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "",
+   "esl": "366-368"
+  },
+  {
+   "topic": "Table 10.1: characteristics of methods (off-the-shelf)",
+   "terms": [
+    "off-the-shelf",
+    "pronto para uso",
+    "data mining",
+    "tabela 10.1",
+    "mixed data",
+    "dados mistos",
+    "Tabela 10.1: caracteristicas de metodos (off-the-shelf)"
+   ],
+   "ref": "13-guia-de-escolha-de-metodo.md",
+   "islr": "",
+   "esl": "369-371"
+  },
+  {
+   "topic": "Categorical predictors, loss matrix, missing data in trees",
+   "terms": [
+    "surrogate",
+    "dados faltantes",
+    "missing",
+    "categorical predictors",
+    "loss matrix",
+    "Preditores categoricos, matriz de perdas, dados faltantes em arvores"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "",
+   "esl": "329-331"
+  },
+  {
+   "topic": "Maximal margin, hyperplane, support vectors",
+   "terms": [
+    "maximal margin",
+    "hyperplane",
+    "hiperplano",
+    "support vector",
+    "vetor de suporte",
+    "margem",
+    "Maximal margin, hiperplano, vetores de suporte"
+   ],
+   "ref": "08-svm-e-kernels.md",
+   "islr": "353-358",
+   "esl": "437-441"
+  },
+  {
+   "topic": "Support vector classifier (soft margin, C)",
+   "terms": [
+    "soft margin",
+    "support vector classifier",
+    "orcamento c",
+    "slack",
+    "cost",
+    "Support vector classifier (margem suave, C)"
+   ],
+   "ref": "08-svm-e-kernels.md",
+   "islr": "359-364",
+   "esl": "437-441"
+  },
+  {
+   "topic": "SVM and kernels (polynomial, radial)",
+   "terms": [
+    "svm",
+    "kernel",
+    "radial",
+    "gamma",
+    "polinomial kernel",
+    "SVM e kernels (polinomial, radial)"
+   ],
+   "ref": "08-svm-e-kernels.md",
+   "islr": "364-370",
+   "esl": "442-446"
+  },
+  {
+   "topic": "Multiclass SVM; hinge vs logistic",
+   "terms": [
+    "one-versus-one",
+    "one-versus-all",
+    "hinge",
+    "svm multiclasse",
+    "relacao com logistica",
+    "SVM multiclasse; hinge x logistica"
+   ],
+   "ref": "08-svm-e-kernels.md",
+   "islr": "370-373",
+   "esl": "445-446,457"
+  },
+  {
+   "topic": "SVM and the curse of dimensionality (skin of the orange)",
+   "terms": [
+    "skin of the orange",
+    "svm ruido",
+    "SVM e maldicao da dimensionalidade (skin of the orange)"
+   ],
+   "ref": "08-svm-e-kernels.md",
+   "islr": "",
+   "esl": "450-451"
+  },
+  {
+   "topic": "PCA",
+   "terms": [
+    "pca",
+    "principal component",
+    "componentes principais",
+    "loadings",
+    "scores",
+    "pve",
+    "scree",
+    "PCA"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "390-400",
+   "esl": "553-556"
+  },
+  {
+   "topic": "K-means",
+   "terms": [
+    "k-means",
+    "kmeans",
+    "centroid",
+    "centroide",
+    "voronoi",
+    "K-means"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "401-405",
+   "esl": "527-529"
+  },
+  {
+   "topic": "K-medoids",
+   "terms": [
+    "k-medoids",
+    "medoids",
+    "K-medoids"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "",
+   "esl": "536-537"
+  },
+  {
+   "topic": "Hierarchical clustering, dendrogram, linkages",
+   "terms": [
+    "hierarchical clustering",
+    "dendrogram",
+    "dendrograma",
+    "linkage",
+    "ligacao",
+    "single linkage",
+    "complete linkage",
+    "average linkage",
+    "Clustering hierarquico, dendrograma, ligacoes"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "405-414",
+   "esl": "539-545"
+  },
+  {
+   "topic": "Choice of K, gap statistic, cluster validation",
+   "terms": [
+    "gap statistic",
+    "numero de clusters",
+    "choosing k",
+    "validar clusters",
+    "Escolha de K, gap statistic, validacao de clusters"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "404,414-416",
+   "esl": "537-539"
+  },
+  {
+   "topic": "Dissimilarity, correlation as distance, standardization in clustering",
+   "terms": [
+    "dissimilaridade",
+    "correlation-based distance",
+    "scaling clustering",
+    "distancia",
+    "Dissimilaridade, correlacao como distancia, padronizacao no clustering"
+   ],
+   "ref": "09-aprendizado-nao-supervisionado.md",
+   "islr": "411-414",
+   "esl": ""
+  },
+  {
+   "topic": "Neural networks (one hidden layer), backprop, weight decay",
+   "terms": [
+    "neural network",
+    "rede neural",
+    "backpropagation",
+    "back-propagation",
+    "weight decay",
+    "early stopping",
+    "projection pursuit",
+    "Redes neurais (uma camada oculta), backprop, weight decay"
+   ],
+   "ref": "11-redes-neurais-e-deep-learning.md",
+   "islr": "",
+   "esl": "408-417"
+  },
+  {
+   "topic": "R labs (dated)",
+   "terms": [
+    "lab",
+    "labs",
+    "codigo",
+    "r code",
+    "r language",
+    "exercicios",
+    "Labs em R (datados)"
+   ],
+   "ref": "14-labs-e-codigo-datado.md",
+   "islr": "57-66,124-134,169-182,205-211,259-273,302-311,338-346,374-382,416-427",
+   "esl": ""
+  },
+  {
+   "topic": "ISLR vs ESL comparison",
+   "terms": [
+    "islr x esl",
+    "esl aprofunda",
+    "mapa",
+    "Comparacao ISLR x ESL"
+   ],
+   "ref": "12-isl-vs-esl-mapa-de-aprofundamento.md",
+   "islr": "8,24",
+   "esl": "5-6"
+  },
+  {
+   "topic": "Editions, printing, dates",
+   "terms": [
+    "edicao",
+    "edition",
+    "printing",
+    "impressao",
+    "Edicoes, impressao, datas"
+   ],
+   "ref": "datado-edicoes.md",
+   "islr": "4-5",
+   "esl": "1"
+  },
+  {
+   "topic": "Bagging: vote vs probability; wisdom of crowds; model averaging and stacking",
+   "terms": [
+    "stacking",
+    "model averaging",
+    "wisdom of crowds",
+    "committee",
+    "Bagging: voto x probabilidade; wisdom of crowds; model averaging e stacking"
+   ],
+   "ref": "07-arvores-bagging-florestas-boosting.md",
+   "islr": "",
+   "esl": "301-308"
+  }
+ ],
+ "map": [
+  {
+   "theme": "Statistical decision, Bayes error",
+   "aliases": [
+    "Decisao estatistica, erro de Bayes"
+   ],
+   "islr": "44-54",
+   "esl": "37-41",
+   "esl_adds": "EPE and conditional expectation; 0-1 loss; kNN as an approximation",
+   "esl_read": true
+  },
+  {
+   "theme": "Bias-variance",
+   "aliases": [
+    "Vies-variancia"
+   ],
+   "islr": "48-51",
+   "esl": "56-57,242-247",
+   "esl_adds": "closed-form EPE of kNN; model bias vs estimation bias; 0-1 loss not additive",
+   "esl_read": true
+  },
+  {
+   "theme": "Curse of dimensionality",
+   "aliases": [
+    "Maldicao da dimensionalidade"
+   ],
+   "islr": "122-123,256-258",
+   "esl": "41-46",
+   "esl_adds": "edge r^(1/p), median distance, density N^(1/p)",
+   "esl_read": true
+  },
+  {
+   "theme": "Linear model and inference",
+   "aliases": [
+    "Modelo linear e inferencia"
+   ],
+   "islr": "76-97",
+   "esl": "63-71",
+   "esl_adds": "hat matrix, distributions, Gauss-Markov",
+   "esl_read": true
+  },
+  {
+   "theme": "Subset selection",
+   "aliases": [
+    "Selecao de subconjunto"
+   ],
+   "islr": "220-225",
+   "esl": "76-80",
+   "esl_adds": "post-search standard errors invalid; forward stagewise",
+   "esl_read": true
+  },
+  {
+   "theme": "Ridge",
+   "aliases": [
+    "Ridge"
+   ],
+   "islr": "230-234",
+   "esl": "82-87",
+   "esl_adds": "SVD, df(lambda), posterior",
+   "esl_read": true
+  },
+  {
+   "theme": "Lasso",
+   "aliases": [
+    "Lasso"
+   ],
+   "islr": "234-243",
+   "esl": "87-94",
+   "esl_adds": "q-norm, elastic net, LAR, Table 3.4",
+   "esl_read": true
+  },
+  {
+   "theme": "PCR and PLS",
+   "aliases": [
+    "PCR e PLS"
+   ],
+   "islr": "245-253",
+   "esl": "98-101",
+   "esl_adds": "PLS maximizes Corr^2*Var; Frank-Friedman comparison",
+   "esl_read": true
+  },
+  {
+   "theme": "Cp, AIC, BIC",
+   "aliases": [
+    "Cp, AIC, BIC"
+   ],
+   "islr": "225-228",
+   "esl": "247-254",
+   "esl_adds": "optimism, effective df, Bayes factor, MDL, VC/SRM",
+   "esl_read": true
+  },
+  {
+   "theme": "Cross-validation",
+   "aliases": [
+    "Validacao cruzada"
+   ],
+   "islr": "191-199",
+   "esl": "260-268,273-276",
+   "esl_adds": "learning curve, CV right vs wrong, GCV, Err vs ErrT",
+   "esl_read": true
+  },
+  {
+   "theme": "Bootstrap",
+   "aliases": [
+    "Bootstrap"
+   ],
+   "islr": "202-205",
+   "esl": "268-273",
+   "esl_adds": ".632 and .632+, AIC vs CV vs bootstrap comparison",
+   "esl_read": true
+  },
+  {
+   "theme": "Logistic",
+   "aliases": [
+    "Logistica"
+   ],
+   "islr": "146-152",
+   "esl": "138-146",
+   "esl_adds": "IRLS, deviance, Wald and Rao, L1",
+   "esl_read": true
+  },
+  {
+   "theme": "LDA and QDA",
+   "aliases": [
+    "LDA e QDA"
+   ],
+   "islr": "153-165",
+   "esl": "127-132",
+   "esl_adds": "RDA, parameter counts, LDA vs logistic (30%)",
+   "esl_read": true
+  },
+  {
+   "theme": "Masking",
+   "aliases": [
+    "Masking"
+   ],
+   "islr": "144-145",
+   "esl": "122-126",
+   "esl_adds": "masking with K>=3",
+   "esl_read": true
+  },
+  {
+   "theme": "Trees",
+   "aliases": [
+    "Arvores"
+   ],
+   "islr": "318-331",
+   "esl": "324-333",
+   "esl_adds": "cost-complexity, categorical predictors, loss matrix, surrogate",
+   "esl_read": true
+  },
+  {
+   "theme": "Bagging",
+   "aliases": [
+    "Bagging"
+   ],
+   "islr": "331-335",
+   "esl": "301-308",
+   "esl_adds": "probabilities vs votes; 0-1 loss; stacking",
+   "esl_read": true
+  },
+  {
+   "theme": "Random forest",
+   "aliases": [
+    "Floresta aleatoria"
+   ],
+   "islr": "334-337",
+   "esl": "606-614",
+   "esl_adds": "rho sigma^2 + (1-rho)sigma^2/B; defaults; OOB",
+   "esl_read": true
+  },
+  {
+   "theme": "Boosting",
+   "aliases": [
+    "Boosting"
+   ],
+   "islr": "336-338",
+   "esl": "356-389",
+   "esl_adds": "AdaBoost, additive, GBM, nu, subsampling, J",
+   "esl_read": true
+  },
+  {
+   "theme": "SVM",
+   "aliases": [
+    "SVM"
+   ],
+   "islr": "352-373",
+   "esl": "436-446,450-451,457",
+   "esl_adds": "dual, PSD, penalization, skin of the orange, SRM",
+   "esl_read": true
+  },
+  {
+   "theme": "PCA",
+   "aliases": [
+    "PCA"
+   ],
+   "islr": "388-400",
+   "esl": "553-556",
+   "esl_adds": "SVD, rank-q reconstruction",
+   "esl_read": true
+  },
+  {
+   "theme": "K-means",
+   "aliases": [
+    "K-means"
+   ],
+   "islr": "401-405",
+   "esl": "527-529",
+   "esl_adds": "W(C), T=W+B, Voronoi, GMM = soft K-means",
+   "esl_read": true
+  },
+  {
+   "theme": "Choice of K",
+   "aliases": [
+    "Escolha de K"
+   ],
+   "islr": "404,414-415",
+   "esl": "537-539",
+   "esl_adds": "gap statistic",
+   "esl_read": true
+  },
+  {
+   "theme": "Hierarchical",
+   "aliases": [
+    "Hierarquico"
+   ],
+   "islr": "405-414",
+   "esl": "539-545",
+   "esl_adds": "cophenetic, ultrametric, monotone invariance",
+   "esl_read": true
+  },
+  {
+   "theme": "High dimension",
+   "aliases": [
+    "Alta dimensao"
+   ],
+   "islr": "253-258",
+   "esl": "668-671",
+   "esl_adds": "less fitting is better; diagonal LDA; shrunken centroids",
+   "esl_read": true
+  },
+  {
+   "theme": "Multiple testing",
+   "aliases": [
+    "Testes multiplos"
+   ],
+   "islr": "",
+   "esl": "702-711",
+   "esl_adds": "FWER, Bonferroni, FDR, BH, plug-in, SAM (absent from the ISLR 1st ed.)",
+   "esl_read": true
+  },
+  {
+   "theme": "Neural networks",
+   "aliases": [
+    "Redes neurais"
+   ],
+   "islr": "",
+   "esl": "408-417",
+   "esl_adds": "PPR, MLP, backprop, weight decay (absent from the ISLR 1st ed.)",
+   "esl_read": true
+  },
+  {
+   "theme": "Splines, smoothing, GAM",
+   "aliases": [
+    "Splines, suavizacao, GAM"
+   ],
+   "islr": "286-302",
+   "esl": "158-209 (cap.5); 314-323 (9.1); 210-237 (cap.6)",
+   "esl_adds": "NOT READ in the ESL",
+   "esl_read": false
+  },
+  {
+   "theme": "MARS, PRIM, HME, missing data",
+   "aliases": [
+    "MARS, PRIM, HME, dados faltantes"
+   ],
+   "islr": "",
+   "esl": "336-353 (9.3-9.6)",
+   "esl_adds": "NOT READ",
+   "esl_read": false
+  },
+  {
+   "theme": "Ensemble learning, undirected graphs",
+   "aliases": [
+    "Ensemble learning, grafos nao direcionados"
+   ],
+   "islr": "",
+   "esl": "624-667 (cap.16-17)",
+   "esl_adds": "NOT READ",
+   "esl_read": false
+  },
+  {
+   "theme": "Prototypes and neighbors (ch.13)",
+   "aliases": [
+    "Prototipos e vizinhos (cap.13)"
+   ],
+   "islr": "54-55",
+   "esl": "478-503",
+   "esl_adds": "NOT READ",
+   "esl_read": false
+  }
+ ],
+ "gaps": [
+  {
+   "term": "deep learning",
+   "note": "Only the one-hidden-layer neural network (ESL ch.11); the ISLR 1st ed. has none; mark [DATED]",
+   "keys": [
+    "deep learning",
+    "convolutional",
+    "transformer",
+    "recurrent",
+    "dropout",
+    "batch normalization",
+    "autoencoder",
+    "generative adversarial",
+    "aprendizado profundo"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "deep learning": 0,
+     "convolutional": 0,
+     "transformer": 0,
+     "recurrent": 0,
+     "dropout": 0,
+     "batch normalization": 0,
+     "autoencoder": 0,
+     "generative adversarial": 0
+    },
+    "ESL": {
+     "deep learning": 0,
+     "convolutional": 3,
+     "transformer": 0,
+     "recurrent": 0,
+     "dropout": 0,
+     "batch normalization": 0,
+     "autoencoder": 0,
+     "generative adversarial": 0
+    }
+   }
+  },
+  {
+   "term": "LLMs / generative AI",
+   "note": "Outside the scope of both books",
+   "keys": [
+    "large language",
+    "gpt",
+    "reinforcement",
+    "LLMs / IA generativa",
+    "llm",
+    "ia generativa"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "large language": 0,
+     "gpt": 0,
+     "reinforcement": 0
+    },
+    "ESL": {
+     "large language": 0,
+     "gpt": 0,
+     "reinforcement": 0
+    }
+   }
+  },
+  {
+   "term": "XGBoost / LightGBM / CatBoost",
+   "note": "Later than the books; the ESL describes GBM/MART (ch.10)",
+   "keys": [
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "XGBoost / LightGBM / CatBoost"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "xgboost": 0,
+     "lightgbm": 0,
+     "catboost": 0
+    },
+    "ESL": {
+     "xgboost": 0,
+     "lightgbm": 0,
+     "catboost": 0
+    }
+   }
+  },
+  {
+   "term": "conformal prediction",
+   "note": "Later than the books",
+   "keys": [
+    "conformal",
+    "conformal prediction",
+    "predicao conforme"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "conformal": 0
+    },
+    "ESL": {
+     "conformal": 0
+    }
+   }
+  },
+  {
+   "term": "double descent / overparameterization",
+   "note": "Later than the books; the U shape of test error (ISLR p.47) holds for the models of the time",
+   "keys": [
+    "double descent",
+    "double descent / superparametrizacao",
+    "superparametrizacao"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "double descent": 0
+    },
+    "ESL": {
+     "double descent": 0
+    }
+   }
+  },
+  {
+   "term": "scikit-learn / TensorFlow / PyTorch / Keras (Python code)",
+   "note": "The ISLR 1st ed. labs are in R [DATED]",
+   "keys": [
+    "scikit",
+    "tensorflow",
+    "pytorch",
+    "keras",
+    "scikit-learn / TensorFlow / PyTorch / Keras (codigo Python)"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "scikit": 0,
+     "tensorflow": 0,
+     "pytorch": 0,
+     "keras": 0
+    },
+    "ESL": {
+     "scikit": 0,
+     "tensorflow": 0,
+     "pytorch": 0,
+     "keras": 0
+    }
+   }
+  },
+  {
+   "term": "hyperparameters / Bayesian optimization",
+   "note": "The book speaks of tuning parameters chosen by CV",
+   "keys": [
+    "hyperparameter",
+    "bayesian optimization",
+    "hiperparametros / otimizacao bayesiana",
+    "hiperparametros",
+    "otimizacao bayesiana"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "hyperparameter": 0,
+     "bayesian optimization": 0
+    },
+    "ESL": {
+     "hyperparameter": 0,
+     "bayesian optimization": 0
+    }
+   }
+  },
+  {
+   "term": "algorithmic fairness",
+   "note": "Outside the scope",
+   "keys": [
+    "fairness",
+    "justica algoritmica / fairness",
+    "justica algoritmica"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "fairness": 0
+    },
+    "ESL": {
+     "fairness": 0
+    }
+   }
+  },
+  {
+   "term": "probability calibration as a topic",
+   "note": "Only isolated mentions in the ESL",
+   "keys": [
+    "calibration",
+    "calibracao de probabilidades como tema",
+    "calibracao de probabilidades"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "calibration": 0
+    },
+    "ESL": {
+     "calibration": 1
+    }
+   }
+  },
+  {
+   "term": "survival analysis",
+   "note": "There is no dedicated chapter; the ESL has isolated mentions (Cox, Kaplan-Meier) in unread passages; the ISLR 1st ed. has none",
+   "keys": [
+    "survival",
+    "kaplan",
+    "cox",
+    "analise de sobrevivencia",
+    "sobrevivencia"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "survival": 1,
+     "kaplan": 0,
+     "cox": 0
+    },
+    "ESL": {
+     "survival": 27,
+     "kaplan": 3,
+     "cox": 12
+    }
+   }
+  },
+  {
+   "term": "multiple testing in the ISLR 1st ed.",
+   "note": "They appear only in ESL 18.7",
+   "keys": [
+    "bonferroni",
+    "benjamini",
+    "multiple testing",
+    "testes multiplos no ISLR 1a ed.",
+    "testes multiplos"
+   ],
+   "occurrences": {
+    "ISLR": {
+     "bonferroni": 0,
+     "benjamini": 0,
+     "multiple testing": 0
+    },
+    "ESL": {
+     "bonferroni": 5,
+     "benjamini": 13,
+     "multiple testing": 5
+    }
+   }
+  }
+ ],
+ "unread": {
+  "ISLR": [
+   {
+    "pages": "57-73",
+    "theme": "R lab of ch.2 and exercises"
+   },
+   {
+    "pages": "124-141",
+    "theme": "R lab of ch.3 and exercises"
+   },
+   {
+    "pages": "169-189",
+    "theme": "R lab of ch.4 and exercises"
+   },
+   {
+    "pages": "205-217",
+    "theme": "R lab of ch.5 and exercises"
+   },
+   {
+    "pages": "259-279",
+    "theme": "R labs of ch.6 and exercises"
+   },
+   {
+    "pages": "302-317",
+    "theme": "R lab of ch.7 and exercises"
+   },
+   {
+    "pages": "338-351",
+    "theme": "R lab of ch.8 and exercises"
+   },
+   {
+    "pages": "374-387",
+    "theme": "R lab of ch.9 and exercises"
+   },
+   {
+    "pages": "416-433",
+    "theme": "R labs of ch.10 and exercises"
+   }
+  ],
+  "ESL": [
+   {
+    "pages": "20-29",
+    "theme": "ch.1 and 2.1-2.2"
+   },
+   {
+    "pages": "72-75,94-97,105-119",
+    "theme": "3.2.3-3.2.4, LAR, 3.8-3.9"
+   },
+   {
+    "pages": "133-137,149-156",
+    "theme": "4.3.3 reduced-rank LDA, 4.5 hyperplanes"
+   },
+   {
+    "pages": "158-237",
+    "theme": "ch.5 and ch.6"
+   },
+   {
+    "pages": "259",
+    "theme": "7.9.1 example"
+   },
+   {
+    "pages": "280-300,309-313",
+    "theme": "8.1-8.6 and 8.9"
+   },
+   {
+    "pages": "314-323,334-355",
+    "theme": "9.1 GAM; 9.3-9.7"
+   },
+   {
+    "pages": "385,390-407",
+    "theme": "10.12.2 fig, 10.13.2 end, 10.14"
+   },
+   {
+    "pages": "418-435",
+    "theme": "11.5.3-11.10"
+   },
+   {
+    "pages": "447-449,452-456,458-477",
+    "theme": "SVM path/regression, FDA, PDA, MDA"
+   },
+   {
+    "pages": "478-503",
+    "theme": "ch.13"
+   },
+   {
+    "pages": "504-526,531-535,547-552,557-605",
+    "theme": "14.1-14.2, part of 14.3, 14.4, 14.5.2-14.10"
+   },
+   {
+    "pages": "615-667",
+    "theme": "15.3.4-15.4, ch.16, ch.17"
+   },
+   {
+    "pages": "672-701,712-717",
+    "theme": "18.2-18.6 and end of 18.7"
+   }
+  ]
+ }
+}

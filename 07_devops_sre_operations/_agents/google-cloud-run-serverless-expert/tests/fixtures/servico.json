@@ -1,0 +1,1 @@
+{"name":"api","image":"us-docker.pkg.dev/p/r/api","allow_unauthenticated":true,"max_instances":50,"timeout":900,"memory":"2G","service_account":"api@p.iam.gserviceaccount.com","env":{"REDIS":"redis://10.0.0.5:6379"}}

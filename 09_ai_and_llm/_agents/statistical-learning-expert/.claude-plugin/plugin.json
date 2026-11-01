@@ -1,0 +1,21 @@
+{
+  "name": "statistical-learning-expert",
+  "version": "1.0.0",
+  "description": "Statistical learning specialist grounded in ISLR (1st ed., 2013, R labs [DATED]) and ESL (2nd ed.): bias-variance, linear regression, classification, resampling, selection and regularization, trees and ensembles, SVM, unsupervised learning, high dimensions and multiple testing. Documents where the ESL goes deeper than the ISLR with pages from both. Does not cover modern deep learning, LLMs or current code.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "statistical-learning",
+    "islr",
+    "esl",
+    "bias-variance",
+    "cross-validation",
+    "regularization",
+    "lasso",
+    "random-forest",
+    "boosting",
+    "svm",
+    "clustering",
+    "multiple-testing"
+  ]
+}

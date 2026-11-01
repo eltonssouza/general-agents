@@ -1,0 +1,7 @@
+{
+  "name": "javascript-expert",
+  "version": "0.2.0",
+  "description": "JavaScript (ECMAScript) specialist agent distilled from the ECMA-262 17th edition specification (ES2026), the Portuguese-language Eloquent JavaScript (modern edition, 2024 version) and the Eloquent JavaScript 1st edition (2007/2013, treated as dated), with 4 skills, a topic lookup script and 9 references traceable by PDF page (audited: see tests/relatorio-de-fidelidade.md).",
+  "license": "MIT",
+  "author": { "name": "Elton Souza" }
+}

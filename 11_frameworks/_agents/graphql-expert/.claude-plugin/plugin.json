@@ -1,0 +1,14 @@
+{
+  "name": "graphql-expert",
+  "version": "1.0.0",
+  "description": "TINY overview agent based on a web page capture: index of lessons from graphql.org/learn (6 pages, captured 18 Aug 2026, no spec version). Only lesson titles/descriptions (Getting started, Best Practices, Schema Governance, Tutorials, FAQ) and the named concepts; no lesson content was captured. Everything else is NOT COVERED or [extrapolation]. REST belongs to web-api-rest-architecture-expert.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "graphql",
+    "learn",
+    "schema",
+    "governance",
+    "overview"
+  ]
+}

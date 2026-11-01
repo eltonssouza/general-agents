@@ -1,0 +1,279 @@
+{
+ "fonte": "LLMS Tab.12 (p.47) and design principles (p.45-46); paraphrased text",
+ "datado": "[DATED] tips collected in 2023 for the models of the time (e.g., ChatGPT/GPT-4); principle ids 1-4 as in the Tab.12 caption (p.47); principle 5 (role-playing) is described in the text on p.46.",
+ "principios": [
+  {
+   "id": 1,
+   "texto": "Express the task goal clearly (objective, input/output, constraints)",
+   "pagina": "45"
+  },
+  {
+   "id": 2,
+   "texto": "Decompose into easy, detailed subtasks",
+   "pagina": "45"
+  },
+  {
+   "id": 3,
+   "texto": "Provide high-quality few-shot demonstrations",
+   "pagina": "45"
+  },
+  {
+   "id": 4,
+   "texto": "Use a model-friendly format (separators such as ### or triple quotes; instructions in English)",
+   "pagina": "45-46"
+  },
+  {
+   "id": 5,
+   "texto": "Adopt role-playing strategies",
+   "pagina": "46"
+  }
+ ],
+ "dicas": [
+  {
+   "id": "T1",
+   "ingrediente": "Task description",
+   "texto": "Detail the request as much as possible (e.g., summarize in up to 50 words, including plot and conclusion and omitting unimportant details).",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "T2",
+   "ingrediente": "Task description",
+   "texto": "State an expert role at the start of the prompt (e.g., computer science expert).",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "T3",
+   "ingrediente": "Task description",
+   "texto": "Say more about what the model should do than about what it should not do.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "T4",
+   "ingrediente": "Task description",
+   "texto": "To avoid overly long outputs, use formats such as 'Question: Short Answer:' or suffixes such as 'in a few words'.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "I1",
+   "ingrediente": "Input data",
+   "texto": "For questions that require factual knowledge, retrieve documents with a search engine and concatenate them to the prompt as a reference.",
+   "principios": [
+    4
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "I2",
+   "ingrediente": "Input data",
+   "texto": "Highlight important parts with special marks, such as quotation marks and line breaks (or both).",
+   "principios": [
+    4
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "C1",
+   "ingrediente": "Contextual information",
+   "texto": "For complex tasks, describe the necessary intermediate steps (e.g., step 1, decompose the question into sub-questions).",
+   "principios": [
+    2
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "C2",
+   "ingrediente": "Contextual information",
+   "texto": "If the LLM must score a text, describe the scoring criterion in detail and with examples.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "C3",
+   "ingrediente": "Contextual information",
+   "texto": "When generating text from context (e.g., recommending from purchase history), asking for an explanation conditioned on the context improves quality.",
+   "principios": [
+    2
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "C4",
+   "ingrediente": "Contextual information",
+   "texto": "Approximation of tree-of-thoughts in a single prompt: ask several 'experts' to write one step each, share it and leave if they realize they were wrong.",
+   "principios": [
+    2
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D1",
+   "ingrediente": "Demonstration",
+   "texto": "Well-formatted exemplars help a lot, especially for outputs with a complex format.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D2",
+   "ingrediente": "Demonstration",
+   "texto": "In few-shot CoT you can use 'Let's think step-by-step'; separate the examples with a line break, not a period.",
+   "principios": [
+    1,
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D3",
+   "ingrediente": "Demonstration",
+   "texto": "Retrieve similar examples for the context; to retrieve better, first obtain the answer and concatenate it with the question.",
+   "principios": [
+    3,
+    4
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D4",
+   "ingrediente": "Demonstration",
+   "texto": "Exemplar diversity matters; if the questions cannot be diversified, diversify the solutions.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D5",
+   "ingrediente": "Demonstration",
+   "texto": "In chat LLMs, decompose exemplars (and the reasoning of one exemplar) into multi-turn messages.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D6",
+   "ingrediente": "Demonstration",
+   "texto": "Complex, informative exemplars help answer complex questions.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D7",
+   "ingrediente": "Demonstration",
+   "texto": "Earlier segments of a symbol sequence can serve as exemplars to predict the following ones.",
+   "principios": [
+    2,
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D8",
+   "ingrediente": "Demonstration",
+   "texto": "The order of the exemplars and of the prompt components matters; with very long inputs the position of the question (start or end) also matters.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "D9",
+   "ingrediente": "Demonstration",
+   "texto": "Without exemplars in existing datasets, use exemplars generated zero-shot by the LLM itself.",
+   "principios": [
+    3
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O1",
+   "ingrediente": "Other designs",
+   "texto": "Ask the LLM to check its output before concluding (e.g., verify that the solution is correct).",
+   "principios": [
+    2
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O2",
+   "ingrediente": "Other designs",
+   "texto": "If the LLM cannot solve the task, ask it to use tools encapsulated as APIs, with a detailed description of their functions.",
+   "principios": [
+    4
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O3",
+   "ingrediente": "Other designs",
+   "texto": "Make the prompt self-contained, with no pronouns (it, they) in the context.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O4",
+   "ingrediente": "Other designs",
+   "texto": "When comparing two or more examples, the order strongly affects performance.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O5",
+   "ingrediente": "Other designs",
+   "texto": "Assign a role to the LLM before the instruction (e.g., act as a lawyer).",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O6",
+   "ingrediente": "Other designs",
+   "texto": "OpenAI models (at the time) perform better in English; it may be worth translating the input first.",
+   "principios": [
+    4
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O7",
+   "ingrediente": "Other designs",
+   "texto": "In multiple choice, restrict the output space with a detailed explanation or constraints on the logits.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  },
+  {
+   "id": "O8",
+   "ingrediente": "Other designs",
+   "texto": "In ranking tasks (e.g., recommendation), assign letters (A, B, C, D) and ask for the ordered output of the letters.",
+   "principios": [
+    1
+   ],
+   "pagina": 47
+  }
+ ]
+}

@@ -1,0 +1,923 @@
+{
+ "versao": 1,
+ "convencao": "pages = PDF page (the 6 PDFs have no printed number)",
+ "fontes": {
+  "NX13": {
+   "pdf": "NextJS-13-Release.pdf",
+   "tipo": "release post (nextjs.org blog)",
+   "data": "25/10/2022",
+   "paginas": 16,
+   "uteis": "1-15"
+  },
+  "NX14": {
+   "pdf": "NextJS-14-Release.pdf",
+   "tipo": "release post",
+   "data": "26/10/2023",
+   "paginas": 13,
+   "uteis": "1-9"
+  },
+  "NX15": {
+   "pdf": "NextJS-15-Release.pdf",
+   "tipo": "release post",
+   "data": "21/10/2024",
+   "paginas": 22,
+   "uteis": "1-19"
+  },
+  "NX16": {
+   "pdf": "NextJS-16-Release.pdf",
+   "tipo": "release post",
+   "data": "21/10/2025",
+   "paginas": 16,
+   "uteis": "1-14"
+  },
+  "NXHB": {
+   "pdf": "NextJS-Handbook-freeCodeCamp.pdf",
+   "tipo": "freeCodeCamp handbook (Flavio Copes) [DATED]",
+   "data": "19/11/2019",
+   "paginas": 91,
+   "uteis": "3-91 (many pages are screenshots only)"
+  },
+  "RCTHB": {
+   "pdf": "React-Handbook-freeCodeCamp.pdf",
+   "tipo": "freeCodeCamp handbook (Flavio Copes) [DATED]",
+   "data": "13/11/2020",
+   "paginas": 35,
+   "uteis": "2-34"
+  }
+ },
+ "topicos": [
+  {
+   "fonte": "NXHB",
+   "tema": "Introduction: SSR and SEO as the motivation for Next.js",
+   "paginas": [
+    3,
+    4
+   ],
+   "chaves": "introdução server rendering ssr seo pre-rendering zero configuration toolchain"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Main features (hot reload, folder-based routing in pages, styled-jsx, code splitting, prefetch, next export, TypeScript)",
+   "paginas": [
+    4,
+    5,
+    6
+   ],
+   "chaves": "features recursos hot code reloading automatic routing pages styled-jsx code splitting prefetching dynamic components static exports next export typescript"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Next.js vs Gatsby vs create-react-app",
+   "paginas": [
+    6,
+    7
+   ],
+   "chaves": "gatsby create-react-app comparação static site generator graphql node.js backend"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Installation: Node/npm and npx create-next-app (includes --example)",
+   "paginas": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "chaves": "instalar install create-next-app npx node npm example blog-starter"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Creating the app manually (npm init, next react react-dom, dev/build/start scripts, pages/index.js)",
+   "paginas": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "chaves": "manual package.json scripts dev build start pages index.js porta 3001 -p"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Checking SSR (view source) and the app bundles",
+   "paginas": [
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "chaves": "view source ssr bundles __NEXT_DATA__ preload code splitting main.js webpack.js"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "'Prerendered Page' icon (automatic static optimization) and the compilation indicator",
+   "paginas": [
+    22,
+    23,
+    24
+   ],
+   "chaves": "automatic static optimization prerendered getInitialProps ícone raio compilação"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "React Developer Tools",
+   "paginas": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ],
+   "chaves": "react devtools components profiler inspecionar props state"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Debugging: console.log (server vs browser), debugger, VS Code",
+   "paginas": [
+    31,
+    32,
+    33,
+    34
+   ],
+   "chaves": "debug console.log debugger terminal navegador vs code"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Second page (/blog) and routing by file name",
+   "paginas": [
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "chaves": "pages blog roteamento arquivo hey/ho nome componente"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Link: next/link vs <a> (with an <a> child)",
+   "paginas": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+   ],
+   "chaves": "link next/link a anchor client-side history api navegação"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Dynamic routes [id].js and useRouter",
+   "paginas": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+   ],
+   "chaves": "dynamic route [id] useRouter router.query posts.json as"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Link prefetching (production only, viewport, prefetch={false})",
+   "paginas": [
+    52,
+    53
+   ],
+   "chaves": "prefetch link produção viewport save-data prefetch false"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Detecting the active link with useRouter (custom Link)",
+   "paginas": [
+    53,
+    54
+   ],
+   "chaves": "active link pathname cloneElement selected classe"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Programmatic next/router (push, prefetch)",
+   "paginas": [
+    54,
+    55,
+    56
+   ],
+   "chaves": "router push prefetch useEffect programmatic"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "getInitialProps (server and client; query, pathname, asPath, req, res, err)",
+   "paginas": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+   ],
+   "chaves": "getInitialProps props ssr query pathname asPath req res err dados"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "CSS: styled-jsx, global CSS, @zeit/next-css and next-sass",
+   "paginas": [
+    61,
+    62,
+    63,
+    64
+   ],
+   "chaves": "css styled-jsx style jsx global @zeit/next-css next-sass withCSS next.config.js"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "next/head for <head> tags",
+   "paginas": [
+    64,
+    65
+   ],
+   "chaves": "head next/head title meta"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Wrapper/layout component (HOC vs content props)",
+   "paginas": [
+    65,
+    66,
+    67,
+    68
+   ],
+   "chaves": "layout wrapper higher order component withLayout props content getInitialProps"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "API Routes (pages/api, req/res, req.method, req.query, Micro)",
+   "paginas": [
+    68,
+    69,
+    70,
+    71,
+    72
+   ],
+   "chaves": "api routes pages/api req res method query body cookies micro 405 dynamic api"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Server-only/client-only code (typeof window)",
+   "paginas": [
+    72,
+    73
+   ],
+   "chaves": "typeof window servidor cliente bundle remove"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Local production deploy (next build / next start)",
+   "paginas": [
+    73,
+    74,
+    75,
+    76
+   ],
+   "chaves": "build start produção prerendered /blog/[id] node.js"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Deploy to Now (Zeit): now CLI, URLs, free plan",
+   "paginas": [
+    76,
+    77,
+    78,
+    79
+   ],
+   "chaves": "now zeit deploy now.sh cli login url plano gratuito"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Analyzing bundles (@next/bundle-analyzer, cross-env, ANALYZE)",
+   "paginas": [
+    80,
+    81,
+    82,
+    83,
+    84
+   ],
+   "chaves": "analyze bundle analyzer cross-env ANALYZE next.config.js client server"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Lazy loading of modules (Moment.js, dynamic import() in getInitialProps)",
+   "paginas": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+   ],
+   "chaves": "lazy loading moment dynamic import await import default bundle tamanho"
+  },
+  {
+   "fonte": "NXHB",
+   "tema": "Next steps",
+   "paginas": [
+    90,
+    91
+   ],
+   "chaves": "where to go from here documentação oficial plugins"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "What React is; 4 concepts (components, JSX, state, props)",
+   "paginas": [
+    2,
+    3
+   ],
+   "chaves": "react biblioteca facebook 2013 componentes jsx state props"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "JavaScript needed before React; why learn React",
+   "paginas": [
+    4,
+    5
+   ],
+   "chaves": "javascript pré-requisitos arrow functions destructuring modules por que aprender next.js gatsby"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Installation with create-react-app (npx, npm start)",
+   "paginas": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "chaves": "create-react-app npx npm start todolist porta 3000 package.json"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Components (App.js) and composition",
+   "paginas": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chaves": "componente function App export default import logo css"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "JSX: introduction, composing UI (WelcomeMessage), differences from HTML (className, closed tags)",
+   "paginas": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ],
+   "chaves": "jsx className class welcomemessage html diferença fechar tag erro"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "JavaScript inside JSX ({ })",
+   "paginas": [
+    22,
+    23,
+    24
+   ],
+   "chaves": "chaves expressão ternário message embed javascript"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "State with useState",
+   "paginas": [
+    24,
+    25,
+    26
+   ],
+   "chaves": "state useState hook contador setCount ReactDOM.render"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Props, children and destructuring",
+   "paginas": [
+    27,
+    28,
+    29
+   ],
+   "chaves": "props children destructuring função como prop"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Data flow (parent->child; setCount as a prop); Context/Redux only mentioned",
+   "paginas": [
+    29,
+    30
+   ],
+   "chaves": "data flow props setCount context api redux"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Events (onClick, onChange etc.)",
+   "paginas": [
+    30,
+    31
+   ],
+   "chaves": "eventos onClick onKeyUp onFocus onChange onSubmit handler"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "useEffect (lifecycle, dependency array, [] for mount)",
+   "paginas": [
+    31,
+    32,
+    33
+   ],
+   "chaves": "useEffect lifecycle dependências array vazio side effect"
+  },
+  {
+   "fonte": "RCTHB",
+   "tema": "Next steps (Virtual DOM, Context, Redux, Router, testing, Gatsby/Next.js)",
+   "paginas": [
+    33,
+    34
+   ],
+   "chaves": "next steps virtual dom redux react router testes gatsby next.js"
+  }
+ ],
+ "conflitos": [
+  {
+   "id": "C01",
+   "tema": "next/link with an <a> child",
+   "tipo": "direct conflict",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     41,
+     42,
+     51,
+     52,
+     53,
+     54
+    ],
+    "afirma": "Link wraps an <a> child (and the custom Link clones the child)."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     11,
+     14
+    ],
+    "afirma": "Link always renders <a>; an <a> child is no longer allowed (legacyBehavior or remove; new-link codemod)."
+   },
+   "nota": "For Next >= 13 the NXHB pattern breaks; the custom Link with cloneElement (p.54) depends on the child."
+  },
+  {
+   "id": "C02",
+   "tema": "Static export (next export)",
+   "tipo": "direct conflict",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     6
+    ],
+    "afirma": "next export generates a fully static site."
+   },
+   "release": {
+    "fonte": "NX14",
+    "paginas": [
+     9
+    ],
+    "afirma": "next export command removed in favor of output: 'export'."
+   },
+   "nota": "NXHB mentions the command only as a feature in the list (p.6)."
+  },
+  {
+   "id": "C03",
+   "tema": "Tutorial React/Node/Next versions",
+   "tipo": "direct conflict",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     14,
+     80
+    ],
+    "afirma": "package.json with next ^9.1.2, react ^16.11.0; tells you to use the latest Node LTS (no number)."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     14
+    ],
+    "afirma": "Minimum React 18.2.0 (was 17.0.2); minimum Node 14.6.0. Later: Node 18.17 (NX14), 18.18.0 (NX15), 20.9.0 (NX16)."
+   },
+   "nota": "The NXHB project (React 16) does not meet the Next 13+ minimum according to NX13 p.14."
+  },
+  {
+   "id": "C04",
+   "tema": "How to create the project",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     8,
+     9,
+     10,
+     11,
+     15
+    ],
+    "afirma": "npx create-next-app (without @latest); structure with pages/; dev scripts: next, build, start."
+   },
+   "release": {
+    "fonte": "NX16",
+    "paginas": [
+     2,
+     7
+    ],
+    "afirma": "npx create-next-app@latest; redesigned template with App Router by default, TypeScript, Tailwind and ESLint."
+   },
+   "nota": "The releases use next dev/next build (NX13 p.8; NX16 p.6); they do not say that bare 'next' without a subcommand was removed (silence)."
+  },
+  {
+   "id": "C05",
+   "tema": "Routing: pages/ vs app/",
+   "tipo": "coexistence",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     4,
+     12,
+     34,
+     37
+    ],
+    "afirma": "Automatic file-system routing in pages/."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     2,
+     3
+    ],
+    "afirma": "app/ in beta (not recommended for production); pages/ stable and supported 'for the foreseeable future'; incremental adoption."
+   },
+   "nota": "NX15 p.5-6, 18 keeps the Pages Router (with React 18/19); NX16 p.7 makes the App Router the create-next-app default; NX16 does NOT say whether the Pages Router is still supported or deprecated (NO information)."
+  },
+  {
+   "id": "C06",
+   "tema": "Data fetching",
+   "tipo": "silence",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     56,
+     57,
+     58,
+     59,
+     60,
+     61
+    ],
+    "afirma": "getInitialProps in the page component; runs on the server and on client navigation."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     5,
+     6
+    ],
+    "afirma": "Async Server Components + extended fetch (cache force-cache/no-store/revalidate), compared with getStaticProps/getServerSideProps."
+   },
+   "nota": "No release mentions getInitialProps or declares it deprecated; they are different models (Pages vs app/). Do not claim deprecation."
+  },
+  {
+   "id": "C07",
+   "tema": "Backend: API Routes",
+   "tipo": "alternative",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     68,
+     69,
+     70,
+     71,
+     72
+    ],
+    "afirma": "pages/api with export default (req, res); req.method, req.query, cookies, body."
+   },
+   "release": {
+    "fonte": "NX14",
+    "paginas": [
+     2,
+     3,
+     4
+    ],
+    "afirma": "API Routes (since Next 9) vs Server Actions: a 'use server' function called from the component without creating a manual API Route."
+   },
+   "nota": "NX14 does not say API Routes were removed. NX15 p.4 covers GET Route Handlers (App Router)."
+  },
+  {
+   "id": "C08",
+   "tema": "Page metadata (<head>)",
+   "tipo": "silence",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     64,
+     65
+    ],
+    "afirma": "next/head with <title>/<meta> inside the component."
+   },
+   "release": {
+    "fonte": "NX14",
+    "paginas": [
+     7,
+     8
+    ],
+    "afirma": "metadata API (with viewport/generateViewport); NX15 mentions generateMetadata (p.3)."
+   },
+   "nota": "The releases do not say whether next/head was deprecated."
+  },
+  {
+   "id": "C09",
+   "tema": "Link prefetch",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     5,
+     52,
+     53
+    ],
+    "afirma": "Prefetch when the Link enters the viewport, production only; Save-Data/slow connection; prefetch={false}."
+   },
+   "release": {
+    "fonte": "NX16",
+    "paginas": [
+     8,
+     9,
+     13
+    ],
+    "afirma": "Rewritten prefetch cache: layout deduplication and incremental prefetch (cancels outside the viewport)."
+   },
+   "nota": "NX13 p.14: no prefetch for bots; NX15 p.12: <Form> with prefetch."
+  },
+  {
+   "id": "C10",
+   "tema": "Bundler and bundle analysis",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     6,
+     80,
+     81
+    ],
+    "afirma": "Next abstracts webpack; @next/bundle-analyzer + cross-env ANALYZE=true next build."
+   },
+   "release": {
+    "fonte": "NX16",
+    "paginas": [
+     6
+    ],
+    "afirma": "Turbopack is the default (dev and build); webpack via next dev/build --webpack."
+   },
+   "nota": "The releases say nothing about @next/bundle-analyzer under Turbopack (silence)."
+  },
+  {
+   "id": "C11",
+   "tema": "Styles",
+   "tipo": "silence",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     61,
+     62,
+     63,
+     64
+    ],
+    "afirma": "styled-jsx; external CSS via @zeit/next-css; Sass via @zeit/next-sass."
+   },
+   "release": {
+    "fonte": "NX15",
+    "paginas": [
+     18
+    ],
+    "afirma": "Only mentions merging global CSS with CSS Modules (improvement item); NX16 p.7: template with Tailwind CSS."
+   },
+   "nota": "No release mentions styled-jsx or @zeit/next-*."
+  },
+  {
+   "id": "C12",
+   "tema": "Deploy platform (Zeit Now vs Vercel)",
+   "tipo": "silence",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     76,
+     77,
+     78,
+     79
+    ],
+    "afirma": "Next.js created by Zeit; deploy with the now CLI (now.sh)."
+   },
+   "release": {
+    "fonte": "NX14",
+    "paginas": [
+     10
+    ],
+    "afirma": "The releases mention the Vercel core team (NX14 p.10; NX15 p.19) and the footer 'Vercel, Inc.'."
+   },
+   "nota": "The texts do not relate Zeit and Vercel. [extrapolation] they are the same company renamed; this is not in the collection. Now plan prices/limits (NXHB p.77) are [DATED]."
+  },
+  {
+   "id": "C13",
+   "tema": "Dynamic imports / lazy loading",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     5,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90
+    ],
+    "afirma": "Dynamic import() inside getInitialProps to split Moment.js into another bundle."
+   },
+   "release": {
+    "fonte": "NX15",
+    "paginas": [
+     18
+    ],
+    "afirma": "next/dynamic: suspense prop removed; ssr:false disallowed in Server Components."
+   },
+   "nota": "NXHB does not use next/dynamic in its examples; only dynamic import()."
+  },
+  {
+   "id": "C14",
+   "tema": "Static/dynamic indicator in dev",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "NXHB",
+    "paginas": [
+     22,
+     23
+    ],
+    "afirma": "'Prerendered Page' icon (automatic static optimization) when the page has no getInitialProps."
+   },
+   "release": {
+    "fonte": "NX15",
+    "paginas": [
+     9
+    ],
+    "afirma": "Static Route Indicator in dev and per-route strategy in the next build output."
+   },
+   "nota": "Close concepts, different mechanisms (Pages vs App Router); NX15 does not mention the NXHB icon."
+  },
+  {
+   "id": "C15",
+   "tema": "React: creation tool and rendering in RCTHB",
+   "tipo": "silence",
+   "datado": {
+    "fonte": "RCTHB",
+    "paginas": [
+     6,
+     7,
+     26
+    ],
+    "afirma": "create-react-app; example with ReactDOM.render."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     14
+    ],
+    "afirma": "Minimum React 18.2.0; NX15 p.5-6: React 19 RC in the App Router; NX16 p.11: React 19.2."
+   },
+   "nota": "The releases do not mention create-react-app or ReactDOM.render. Whether these patterns work in React 18/19 is [extrapolation], outside the collection."
+  },
+  {
+   "id": "C16",
+   "tema": "Server Components and Client Components",
+   "tipo": "RCTHB gap",
+   "datado": {
+    "fonte": "RCTHB",
+    "paginas": [
+     11,
+     12,
+     13,
+     14,
+     24,
+     25,
+     26,
+     31,
+     32,
+     33
+    ],
+    "afirma": "Components with useState, onClick and useEffect (client model), with no server/client distinction."
+   },
+   "release": {
+    "fonte": "NX13",
+    "paginas": [
+     4
+    ],
+    "afirma": "app/ adopts React Server Components; server-first by default."
+   },
+   "nota": "RCTHB does not cover Server Components; the collection does not detail the 'use client' boundary beyond mentions (NX14 p.4 uses 'use server')."
+  },
+  {
+   "id": "C17",
+   "tema": "Hooks and hooks lint",
+   "tipo": "evolution",
+   "datado": {
+    "fonte": "RCTHB",
+    "paginas": [
+     25,
+     32,
+     33
+    ],
+    "afirma": "useState and useEffect (dependency array)."
+   },
+   "release": {
+    "fonte": "NX15",
+    "paginas": [
+     15
+    ],
+    "afirma": "eslint-plugin-react-hooks 5.0.0 with new rules (the text does not describe them); NX14 p.5 mentions useOptimistic/useFormState/useFormStatus; NX16 p.11 mentions useEffectEvent."
+   },
+   "nota": "New hooks are only mentioned in the releases; no usage explanation in the collection."
+  }
+ ],
+ "sem_cobertura": [
+  {
+   "tema": "Hooks beyond useState/useEffect (useRef, useReducer, useContext in detail, useMemo/useCallback in detail)",
+   "termos": "useref|usereducer|usecontext|usememo|usecallback|custom hook"
+  },
+  {
+   "tema": "Server Components details, the 'use client' boundary and server/client composition",
+   "termos": "use client|client component|server component details|composition"
+  },
+  {
+   "tema": "App Router file conventions beyond page/layout/loading/default/route",
+   "termos": "error.js|not-found|template.js|route groups|parallel routes details|intercepting"
+  },
+  {
+   "tema": "next/navigation, the App Router useRouter, redirect/notFound in detail",
+   "termos": "next/navigation|usepathname|usesearchparams|notfound"
+  },
+  {
+   "tema": "Full 'use cache' syntax, cacheLife and profiles (only the names max/hours/days and { expire })",
+   "termos": "use cache syntax|cachelife|cachetag"
+  },
+  {
+   "tema": "proxy.ts: matcher and full API",
+   "termos": "proxy matcher|nextrequest api"
+  },
+  {
+   "tema": "Authentication, databases, testing, i18n, advanced SEO in Next",
+   "termos": "autenticacao|authentication|auth|database|banco de dados|testing|jest|i18n|internacionalizacao"
+  },
+  {
+   "tema": "Redux, React Router, Context API (only mentioned as next steps in RCTHB p.34)",
+   "termos": "redux|react router|context api"
+  },
+  {
+   "tema": "Intermediate minor versions (13.x, 14.x, 15.x) and Next 12 or earlier (except stray mentions: 12.2 in NX13 p.11; 14.1/14.2.0 in NX14/NX15; 15.3+ in NX16 p.6)",
+   "termos": "next 12|next 12.0|13.4|14.1|14.2|15.3|minor"
+  },
+  {
+   "tema": "Next.js 17 or later; current state of the Pages Router after 16",
+   "termos": "next 17|next.js 17"
+  },
+  {
+   "tema": "React Native (out of scope; belongs to mobile-frameworks-expert)",
+   "termos": "react native|expo"
+  },
+  {
+   "tema": "Vue, Svelte, Angular, Express, Node (other agents)",
+   "termos": "vue|svelte|angular|express|nuxt|sveltekit"
+  },
+  {
+   "tema": "Vercel: plans, pricing, current deploy (NXHB p.77 gives 2019 Now plan limits, [DATED])",
+   "termos": "vercel pricing|preco|plano vercel"
+  }
+ ]
+}

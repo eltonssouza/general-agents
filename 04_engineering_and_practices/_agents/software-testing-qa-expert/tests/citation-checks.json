@@ -1,0 +1,2041 @@
+{
+ "source": "text extracted per page (=== PAGE N ===, N = PDF page) from JUNIT, MOCK, TDM, JMETER (printed = N-7) and SWEG (Software-Engineering-at-Google-completo.pdf, ch. 11-14 = p.149-221)",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "SWEG",
+   "pages": [
+    149
+   ],
+   "terms": [
+    "support the ability to change"
+   ],
+   "claim": "tests underpin the ability to change software"
+  },
+  {
+   "id": "P002",
+   "src": "SWEG",
+   "pages": [
+    150
+   ],
+   "terms": [
+    "emergency pushes",
+    "by half"
+   ],
+   "claim": "GWS: emergency pushes dropped by half"
+  },
+  {
+   "id": "P003",
+   "src": "SWEG",
+   "pages": [
+    152
+   ],
+   "terms": [
+    "within minutes"
+   ],
+   "claim": "fixing a broken test within minutes keeps confidence"
+  },
+  {
+   "id": "P004",
+   "src": "SWEG",
+   "pages": [
+    153
+   ],
+   "terms": [
+    "size and scope",
+    "resources"
+   ],
+   "claim": "size and scope are distinct dimensions"
+  },
+  {
+   "id": "P005",
+   "src": "SWEG",
+   "pages": [
+    154
+   ],
+   "terms": [
+    "single process",
+    "sleep",
+    "blocking calls",
+    "network or disk"
+   ],
+   "claim": "small: one process, no sleep/I/O/network"
+  },
+  {
+   "id": "P006",
+   "src": "SWEG",
+   "pages": [
+    154
+   ],
+   "terms": [
+    "medium tests",
+    "localhost",
+    "single machine"
+   ],
+   "claim": "medium: localhost, one machine"
+  },
+  {
+   "id": "P007",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "localhost restriction",
+    "multiple machines"
+   ],
+   "claim": "large removes the localhost restriction"
+  },
+  {
+   "id": "P008",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "0.1%",
+    "10,000 tests per day",
+    "10 flakes per day"
+   ],
+   "claim": "numeric example of flakiness"
+  },
+  {
+   "id": "P009",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "1% flakiness",
+    "0.15%"
+   ],
+   "claim": "near 1% loses value; Google at ~0.15%"
+  },
+  {
+   "id": "P010",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "hermetic",
+    "order in which the tests are run",
+    "shared database"
+   ],
+   "claim": "hermetic test: does not depend on order or a shared database"
+  },
+  {
+   "id": "P011",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "control flow statements"
+   ],
+   "claim": "discourage conditionals and loops in tests"
+  },
+  {
+   "id": "P012",
+   "src": "SWEG",
+   "pages": [
+    155
+   ],
+   "terms": [
+    "rerunning",
+    "root cause"
+   ],
+   "claim": "re-running only postpones the root cause"
+  },
+  {
+   "id": "P013",
+   "src": "SWEG",
+   "pages": [
+    156
+   ],
+   "terms": [
+    "80%",
+    "15%",
+    "5%",
+    "pyramid"
+   ],
+   "claim": "80/15/5 pyramid"
+  },
+  {
+   "id": "P014",
+   "src": "SWEG",
+   "pages": [
+    156
+   ],
+   "terms": [
+    "security manager",
+    "small"
+   ],
+   "claim": "Java: security manager makes a small test that uses the network fail"
+  },
+  {
+   "id": "P015",
+   "src": "SWEG",
+   "pages": [
+    156,
+    157
+   ],
+   "terms": [
+    "ice cream cone",
+    "hourglass"
+   ],
+   "claim": "ice cream cone and hourglass anti-patterns"
+  },
+  {
+   "id": "P016",
+   "src": "SWEG",
+   "pages": [
+    157
+   ],
+   "terms": [
+    "shoulda put a test on it",
+    "Testing for Failure"
+   ],
+   "claim": "Beyonce Rule and failure testing"
+  },
+  {
+   "id": "P017",
+   "src": "SWEG",
+   "pages": [
+    157,
+    158
+   ],
+   "terms": [
+    "code coverage",
+    "80%",
+    "ceiling"
+   ],
+   "claim": "coverage target becomes a ceiling"
+  },
+  {
+   "id": "P018",
+   "src": "SWEG",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "sleep()",
+    "setTimeout()",
+    "no more mocks"
+   ],
+   "claim": "sleep in tests; abuse of mocks"
+  },
+  {
+   "id": "P019",
+   "src": "SWEG",
+   "pages": [
+    160,
+    161
+   ],
+   "terms": [
+    "five levels",
+    "Test Certified Level 1"
+   ],
+   "claim": "Test Certified: five levels"
+  },
+  {
+   "id": "P020",
+   "src": "SWEG",
+   "pages": [
+    163
+   ],
+   "terms": [
+    "four sizes of test",
+    "enormous"
+   ],
+   "claim": "note: fourth size enormous"
+  },
+  {
+   "id": "P021",
+   "src": "SWEG",
+   "pages": [
+    165
+   ],
+   "terms": [
+    "80% unit tests",
+    "20% broader"
+   ],
+   "claim": "80/20 rule of thumb in ch. 12"
+  },
+  {
+   "id": "P022",
+   "src": "SWEG",
+   "pages": [
+    166,
+    167
+   ],
+   "terms": [
+    "unchanging",
+    "Pure refactorings",
+    "Behavior changes"
+   ],
+   "claim": "unchanging tests; four types of change"
+  },
+  {
+   "id": "P023",
+   "src": "SWEG",
+   "pages": [
+    167,
+    169
+   ],
+   "terms": [
+    "public API",
+    "implementation details"
+   ],
+   "claim": "test through the public API"
+  },
+  {
+   "id": "P024",
+   "src": "SWEG",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "front door"
+   ],
+   "claim": "front door principle (note 2 of ch. 12, printed on p.183)"
+  },
+  {
+   "id": "P025",
+   "src": "SWEG",
+   "pages": [
+    169,
+    170
+   ],
+   "terms": [
+    "state testing",
+    "interaction testing",
+    "brittle"
+   ],
+   "claim": "state vs interaction"
+  },
+  {
+   "id": "P026",
+   "src": "SWEG",
+   "pages": [
+    171
+   ],
+   "terms": [
+    "complete",
+    "concise"
+   ],
+   "claim": "complete and concise tests"
+  },
+  {
+   "id": "P027",
+   "src": "SWEG",
+   "pages": [
+    172,
+    173
+   ],
+   "terms": [
+    "each behavior",
+    "given",
+    "when",
+    "then"
+   ],
+   "claim": "one test per behavior; given/when/then"
+  },
+  {
+   "id": "P028",
+   "src": "SWEG",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "arrange",
+    "act",
+    "assert"
+   ],
+   "claim": "note 6: arrange/act/assert"
+  },
+  {
+   "id": "P029",
+   "src": "SWEG",
+   "pages": [
+    174
+   ],
+   "terms": [
+    "Name tests after the behavior"
+   ],
+   "claim": "test name follows the behavior"
+  },
+  {
+   "id": "P030",
+   "src": "SWEG",
+   "pages": [
+    175
+   ],
+   "terms": [
+    "Put Logic in Tests"
+   ],
+   "claim": "no logic in tests"
+  },
+  {
+   "id": "P031",
+   "src": "SWEG",
+   "pages": [
+    177
+   ],
+   "terms": [
+    "DAMP",
+    "Descriptive And Meaningful Phrases"
+   ],
+   "claim": "DAMP defined"
+  },
+  {
+   "id": "P032",
+   "src": "SWEG",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "DAMP is not a replacement for DRY",
+    "complementary"
+   ],
+   "claim": "DAMP complements DRY"
+  },
+  {
+   "id": "P033",
+   "src": "SWEG",
+   "pages": [
+    182
+   ],
+   "terms": [
+    "Mockito",
+    "only mocking framework"
+   ],
+   "claim": "Google required Mockito as the only mock framework for new Java"
+  },
+  {
+   "id": "P034",
+   "src": "SWEG",
+   "pages": [
+    184
+   ],
+   "terms": [
+    "test double",
+    "stunt double"
+   ],
+   "claim": "definition of test double"
+  },
+  {
+   "id": "P035",
+   "src": "SWEG",
+   "pages": [
+    184
+   ],
+   "terms": [
+    "Testability",
+    "Applicability",
+    "Fidelity"
+   ],
+   "claim": "three concerns about doubles"
+  },
+  {
+   "id": "P036",
+   "src": "SWEG",
+   "pages": [
+    185
+   ],
+   "terms": [
+    "every nail",
+    "pendulum"
+   ],
+   "claim": "abuse of mocking frameworks at Google"
+  },
+  {
+   "id": "P037",
+   "src": "SWEG",
+   "pages": [
+    186
+   ],
+   "terms": [
+    "seam",
+    "Dependency injection"
+   ],
+   "claim": "seams and dependency injection"
+  },
+  {
+   "id": "P038",
+   "src": "SWEG",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "Mockito",
+    "googlemock",
+    "unittest.mock"
+   ],
+   "claim": "mock frameworks used at Google"
+  },
+  {
+   "id": "P039",
+   "src": "SWEG",
+   "pages": [
+    188
+   ],
+   "terms": [
+    "lightweight implementation",
+    "in-memory database"
+   ],
+   "claim": "fake"
+  },
+  {
+   "id": "P040",
+   "src": "SWEG",
+   "pages": [
+    188,
+    189
+   ],
+   "terms": [
+    "Stubbing",
+    "Interaction Testing",
+    "Faking"
+   ],
+   "claim": "three techniques"
+  },
+  {
+   "id": "P041",
+   "src": "SWEG",
+   "pages": [
+    189,
+    190
+   ],
+   "terms": [
+    "classical testing",
+    "mockist testing"
+   ],
+   "claim": "classical vs mockist"
+  },
+  {
+   "id": "P042",
+   "src": "SWEG",
+   "pages": [
+    190
+   ],
+   "terms": [
+    "@DoNotMock",
+    "ErrorProne"
+   ],
+   "claim": "@DoNotMock"
+  },
+  {
+   "id": "P043",
+   "src": "SWEG",
+   "pages": [
+    191
+   ],
+   "terms": [
+    "fast, deterministic, and has simple dependencies"
+   ],
+   "claim": "when to use the real implementation"
+  },
+  {
+   "id": "P044",
+   "src": "SWEG",
+   "pages": [
+    192
+   ],
+   "terms": [
+    "system clock",
+    "hermetic"
+   ],
+   "claim": "system clock and non-hermeticity"
+  },
+  {
+   "id": "P045",
+   "src": "SWEG",
+   "pages": [
+    193
+   ],
+   "terms": [
+    "team that owns the real implementation should write"
+   ],
+   "claim": "the owner writes and maintains the fake"
+  },
+  {
+   "id": "P046",
+   "src": "SWEG",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "contract tests",
+    "fail fast",
+    "API contracts"
+   ],
+   "claim": "fidelity to the contract; fakes are tested"
+  },
+  {
+   "id": "P047",
+   "src": "SWEG",
+   "pages": [
+    194
+   ],
+   "terms": [
+    "wrap all calls to the API in a single class"
+   ],
+   "claim": "wrapper when there is no fake"
+  },
+  {
+   "id": "P048",
+   "src": "SWEG",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "Tests become unclear",
+    "Tests become brittle",
+    "less effective"
+   ],
+   "claim": "dangers of stubbing"
+  },
+  {
+   "id": "P049",
+   "src": "SWEG",
+   "pages": [
+    197
+   ],
+   "terms": [
+    "specific value",
+    "Prefer State Testing Over Interaction Testing"
+   ],
+   "claim": "stubbing appropriate; prefer state testing"
+  },
+  {
+   "id": "P050",
+   "src": "SWEG",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "change-detector tests"
+   ],
+   "claim": "change-detector tests"
+  },
+  {
+   "id": "P051",
+   "src": "SWEG",
+   "pages": [
+    198,
+    199
+   ],
+   "terms": [
+    "state-changing",
+    "sendEmail()"
+   ],
+   "claim": "interaction testing only for state-changing functions"
+  },
+  {
+   "id": "P052",
+   "src": "SWEG",
+   "pages": [
+    199
+   ],
+   "terms": [
+    "overspecification"
+   ],
+   "claim": "avoid overspecification"
+  },
+  {
+   "id": "P053",
+   "src": "SWEG",
+   "pages": [
+    200
+   ],
+   "terms": [
+    "real implementation should be preferred",
+    "fake is often the ideal"
+   ],
+   "claim": "TL;DR ch. 13"
+  },
+  {
+   "id": "P054",
+   "src": "SWEG",
+   "pages": [
+    202
+   ],
+   "terms": [
+    "Fidelity",
+    "15 minutes"
+   ],
+   "claim": "fidelity; default timeout of large tests"
+  },
+  {
+   "id": "P055",
+   "src": "SWEG",
+   "pages": [
+    203
+   ],
+   "terms": [
+    "Unfaithful doubles",
+    "mocks become stale"
+   ],
+   "claim": "unfaithful doubles; stale mocks"
+  },
+  {
+   "id": "P056",
+   "src": "SWEG",
+   "pages": [
+    204
+   ],
+   "terms": [
+    "number one reason",
+    "Hyrum"
+   ],
+   "claim": "configuration as a cause of outages; Hyrum's Law"
+  },
+  {
+   "id": "P057",
+   "src": "SWEG",
+   "pages": [
+    207
+   ],
+   "terms": [
+    "Obtain a system under test",
+    "Seed necessary test data"
+   ],
+   "claim": "phases of a larger test"
+  },
+  {
+   "id": "P058",
+   "src": "SWEG",
+   "pages": [
+    208
+   ],
+   "terms": [
+    "Single-process SUT",
+    "Single-machine SUT",
+    "Multimachine SUT"
+   ],
+   "claim": "forms of SUT"
+  },
+  {
+   "id": "P059",
+   "src": "SWEG",
+   "pages": [
+    209
+   ],
+   "terms": [
+    "not recommended to have automated tests use a real third-party API"
+   ],
+   "claim": "do not use a real third-party API"
+  },
+  {
+   "id": "P060",
+   "src": "SWEG",
+   "pages": [
+    210
+   ],
+   "terms": [
+    "Pact",
+    "Spring Cloud Contracts",
+    "Record Mode",
+    "Replay Mode"
+   ],
+   "claim": "contract tests and record/replay"
+  },
+  {
+   "id": "P061",
+   "src": "SWEG",
+   "pages": [
+    210,
+    211
+   ],
+   "terms": [
+    "Seeded data",
+    "Test traffic",
+    "Smart sampling"
+   ],
+   "claim": "data for larger tests"
+  },
+  {
+   "id": "P062",
+   "src": "SWEG",
+   "pages": [
+    213
+   ],
+   "terms": [
+    "highly emergent"
+   ],
+   "claim": "load and stress are emergent properties"
+  },
+  {
+   "id": "P063",
+   "src": "SWEG",
+   "pages": [
+    214
+   ],
+   "terms": [
+    "A/B diff",
+    "A-A testing"
+   ],
+   "claim": "A/B diff and A-A"
+  },
+  {
+   "id": "P064",
+   "src": "SWEG",
+   "pages": [
+    215,
+    216
+   ],
+   "terms": [
+    "Probers",
+    "Canary analysis"
+   ],
+   "claim": "probers and canary"
+  },
+  {
+   "id": "P065",
+   "src": "SWEG",
+   "pages": [
+    216
+   ],
+   "terms": [
+    "DiRT",
+    "Catzilla"
+   ],
+   "claim": "DiRT and chaos engineering"
+  },
+  {
+   "id": "P066",
+   "src": "SWEG",
+   "pages": [
+    220
+   ],
+   "terms": [
+    "documented owners"
+   ],
+   "claim": "larger tests have documented owners"
+  },
+  {
+   "id": "P067",
+   "src": "JUNIT",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "3.7",
+    "Rules",
+    "3.8",
+    "Categories"
+   ],
+   "claim": "table of contents lists Rules and Categories"
+  },
+  {
+   "id": "P068",
+   "src": "JUNIT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "100% test coverage",
+    "50% or less"
+   ],
+   "claim": "opinions on coverage"
+  },
+  {
+   "id": "P069",
+   "src": "JUNIT",
+   "pages": [
+    2
+   ],
+   "terms": [
+    "TestNG"
+   ],
+   "claim": "TestNG mentioned"
+  },
+  {
+   "id": "P070",
+   "src": "JUNIT",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "@BeforeClass",
+    "static",
+    "expensive"
+   ],
+   "claim": "@BeforeClass static and expensive setup"
+  },
+  {
+   "id": "P071",
+   "src": "JUNIT",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "@Before",
+    "@After",
+    "each test"
+   ],
+   "claim": "@Before/@After per test"
+  },
+  {
+   "id": "P072",
+   "src": "JUNIT",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "@Ignore",
+    "temporarily disable"
+   ],
+   "claim": "@Ignore"
+  },
+  {
+   "id": "P073",
+   "src": "JUNIT",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "assertEquals",
+    "assertSame",
+    "assertNotSame",
+    "assertArrayEquals"
+   ],
+   "claim": "table of asserts"
+  },
+  {
+   "id": "P074",
+   "src": "JUNIT",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Junit 4"
+   ],
+   "claim": "JUnit 4 annotations"
+  },
+  {
+   "id": "P075",
+   "src": "JUNIT",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "good practice",
+    "source folder"
+   ],
+   "claim": "separate test folder"
+  },
+  {
+   "id": "P076",
+   "src": "JUNIT",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "JUnit4"
+   ],
+   "claim": "New JUnit4 test flag"
+  },
+  {
+   "id": "P077",
+   "src": "JUNIT",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "@Ignore",
+    "whole class"
+   ],
+   "claim": "@Ignore on a whole class"
+  },
+  {
+   "id": "P078",
+   "src": "JUNIT",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "@RunWith(Suite.class)",
+    "@Suite.SuiteClasses"
+   ],
+   "claim": "suite"
+  },
+  {
+   "id": "P079",
+   "src": "JUNIT",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "@RunWith(Parameterized.class)",
+    "@Parameters"
+   ],
+   "claim": "parameterized"
+  },
+  {
+   "id": "P080",
+   "src": "JUNIT",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "ErrorCol",
+    "ExpectedException",
+    "TestName"
+   ],
+   "claim": "Rules"
+  },
+  {
+   "id": "P081",
+   "src": "JUNIT",
+   "pages": [
+    7,
+    8
+   ],
+   "terms": [
+    "@Category",
+    "@IncludeCategory",
+    "@ExcludeCategory"
+   ],
+   "claim": "Categories"
+  },
+  {
+   "id": "P082",
+   "src": "JUNIT",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "JUnitCore",
+    "junit-4.11.jar",
+    "hamcrest-core-1.3.jar"
+   ],
+   "claim": "command line"
+  },
+  {
+   "id": "P083",
+   "src": "MOCK",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "A stub",
+    "A mock",
+    "A virtual service"
+   ],
+   "claim": "stub, mock and virtual service"
+  },
+  {
+   "id": "P084",
+   "src": "MOCK",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "mock on steroids",
+    "HTTP, MQ, TCP"
+   ],
+   "claim": "virtual service and protocols"
+  },
+  {
+   "id": "P085",
+   "src": "MOCK",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "unit/module/",
+    "individual instances per team"
+   ],
+   "claim": "where each one is used"
+  },
+  {
+   "id": "P086",
+   "src": "MOCK",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "Contract testing",
+    "Pact",
+    "shared understanding"
+   ],
+   "claim": "contract testing"
+  },
+  {
+   "id": "P087",
+   "src": "MOCK",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "version hell",
+    "killer app"
+   ],
+   "claim": "version hell and vendor opinion"
+  },
+  {
+   "id": "P088",
+   "src": "MOCK",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "SmartBear",
+    "not developed yet"
+   ],
+   "claim": "when to mock"
+  },
+  {
+   "id": "P089",
+   "src": "MOCK",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "mock drift",
+    "SwaggerHub"
+   ],
+   "claim": "mock drift"
+  },
+  {
+   "id": "P090",
+   "src": "MOCK",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "updated every time you save"
+   ],
+   "claim": "mock updated on every save"
+  },
+  {
+   "id": "P091",
+   "src": "MOCK",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Google Maps",
+    "rate limits",
+    "sandbox"
+   ],
+   "claim": "problems of using the real service"
+  },
+  {
+   "id": "P092",
+   "src": "MOCK",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Mocking via recording"
+   ],
+   "claim": "recording"
+  },
+  {
+   "id": "P093",
+   "src": "MOCK",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "route options",
+    "contract testing against it"
+   ],
+   "claim": "forward to the real API; validate drift"
+  },
+  {
+   "id": "P094",
+   "src": "MOCK",
+   "pages": [
+    10
+   ],
+   "terms": [
+    "Customer evaluation",
+    "Early functional testing"
+   ],
+   "claim": "usage scenarios"
+  },
+  {
+   "id": "P095",
+   "src": "TDM",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "data-ready",
+    "Heterogenous data architectures"
+   ],
+   "claim": "TDM and natural complexity"
+  },
+  {
+   "id": "P096",
+   "src": "TDM",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "data bimodal",
+    "go fast",
+    "be careful"
+   ],
+   "claim": "delivery vs security"
+  },
+  {
+   "id": "P097",
+   "src": "TDM",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Story-001",
+    "Loan Data"
+   ],
+   "claim": "requirements per story"
+  },
+  {
+   "id": "P098",
+   "src": "TDM",
+   "pages": [
+    3,
+    4
+   ],
+   "terms": [
+    "Capturing test data requirements too late"
+   ],
+   "claim": "late-requirements anti-pattern"
+  },
+  {
+   "id": "P099",
+   "src": "TDM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Full name",
+    "Email",
+    "Phone number"
+   ],
+   "claim": "examples of PII"
+  },
+  {
+   "id": "P100",
+   "src": "TDM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Profiling data manually",
+    "workshops"
+   ],
+   "claim": "manual profiling"
+  },
+  {
+   "id": "P101",
+   "src": "TDM",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "two main reasons why synthetic test data"
+   ],
+   "claim": "two reasons for synthetic data"
+  },
+  {
+   "id": "P102",
+   "src": "TDM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "Using fake data in higher environments",
+    "SIT, UAT"
+   ],
+   "claim": "synthetic data in higher environments"
+  },
+  {
+   "id": "P103",
+   "src": "TDM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "repeatable",
+    "C%"
+   ],
+   "claim": "subsetting by a repeatable criterion"
+  },
+  {
+   "id": "P104",
+   "src": "TDM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "Loose or weak subset design",
+    "relationships being lost"
+   ],
+   "claim": "loose subset"
+  },
+  {
+   "id": "P105",
+   "src": "TDM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "deltas",
+    "differencing"
+   ],
+   "claim": "virtualization by deltas"
+  },
+  {
+   "id": "P106",
+   "src": "TDM",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "Using de-sensitized data in source",
+    "Transforming the delta"
+   ],
+   "claim": "virtualization anti-patterns"
+  },
+  {
+   "id": "P107",
+   "src": "TDM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "non-reversible",
+    "Simon",
+    "John"
+   ],
+   "claim": "non-reversible masking"
+  },
+  {
+   "id": "P108",
+   "src": "TDM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "GDPR",
+    "HIPPA",
+    "PCI"
+   ],
+   "claim": "regulations cited"
+  },
+  {
+   "id": "P109",
+   "src": "TDM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Securing too much",
+    "Securing inconsistently"
+   ],
+   "claim": "masking anti-patterns"
+  },
+  {
+   "id": "P110",
+   "src": "TDM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "DES, AES, and RSA",
+    "AES128"
+   ],
+   "claim": "encryption"
+  },
+  {
+   "id": "P111",
+   "src": "TDM",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Breaking formatting rules"
+   ],
+   "claim": "encryption breaks format"
+  },
+  {
+   "id": "P112",
+   "src": "TDM",
+   "pages": [
+    6,
+    7
+   ],
+   "terms": [
+    "Manual inspection",
+    "screening process"
+   ],
+   "claim": "automated validation"
+  },
+  {
+   "id": "P113",
+   "src": "TDM",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "Data-Pool1",
+    "data list"
+   ],
+   "claim": "data views"
+  },
+  {
+   "id": "P114",
+   "src": "TDM",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "The Hero",
+    "Selective automation",
+    "single points of failure"
+   ],
+   "claim": "orchestration"
+  },
+  {
+   "id": "P115",
+   "src": "TDM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "service request method",
+    "last resort"
+   ],
+   "claim": "exemptions"
+  },
+  {
+   "id": "P116",
+   "src": "TDM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "DataOps",
+    "DataSec",
+    "Lead time"
+   ],
+   "claim": "reporting"
+  },
+  {
+   "id": "P117",
+   "src": "TDM",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "more to TDM than just ETL"
+   ],
+   "claim": "conclusion"
+  },
+  {
+   "id": "P118",
+   "src": "TDM",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Niall Crawford",
+    "Enov8",
+    "2021 Devada"
+   ],
+   "claim": "authorship and year"
+  },
+  {
+   "id": "P119",
+   "src": "JMETER",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "JMeter 2.11",
+    "Java 8 update 0.20",
+    "MySQL Community Server 5.6.21"
+   ],
+   "claim": "versions used"
+  },
+  {
+   "id": "P120",
+   "src": "JMETER",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "Load tests",
+    "Performance tests",
+    "Stress tests"
+   ],
+   "claim": "types of test"
+  },
+  {
+   "id": "P121",
+   "src": "JMETER",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "Swing",
+    "multiplatform"
+   ],
+   "claim": "JMeter and desktop Java"
+  },
+  {
+   "id": "P122",
+   "src": "JMETER",
+   "pages": [
+    11
+   ],
+   "terms": [
+    "JRE 1.6",
+    "JAVA_HOME"
+   ],
+   "claim": "installation"
+  },
+  {
+   "id": "P123",
+   "src": "JMETER",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "jmeter.bat"
+   ],
+   "claim": "starting jmeter.bat"
+  },
+  {
+   "id": "P124",
+   "src": "JMETER",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "JDBC",
+    "LDAP",
+    "JMS",
+    "FTP",
+    "JUnit"
+   ],
+   "claim": "protocols"
+  },
+  {
+   "id": "P125",
+   "src": "JMETER",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "Number of threads",
+    "Ramp-up period",
+    "Loop count",
+    "Error behavior"
+   ],
+   "claim": "Thread Group fields"
+  },
+  {
+   "id": "P126",
+   "src": "JMETER",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "root of a test plan",
+    "Scheduler"
+   ],
+   "claim": "Thread Group is the root; scheduler"
+  },
+  {
+   "id": "P127",
+   "src": "JMETER",
+   "pages": [
+    16,
+    17
+   ],
+   "terms": [
+    "Simple Controller",
+    "Transaction Controller",
+    "Throughput Controller"
+   ],
+   "claim": "logic controllers"
+  },
+  {
+   "id": "P128",
+   "src": "JMETER",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "View Results Tree",
+    "Aggregate Report",
+    "Summary Report",
+    "their level"
+   ],
+   "claim": "listeners"
+  },
+  {
+   "id": "P129",
+   "src": "JMETER",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "Constant Timer",
+    "Constant Throughput Timer",
+    "without any waiting time"
+   ],
+   "claim": "timers"
+  },
+  {
+   "id": "P130",
+   "src": "JMETER",
+   "pages": [
+    18
+   ],
+   "terms": [
+    "Duration Assertion",
+    "Size Assertion",
+    "Response Assertion"
+   ],
+   "claim": "assertions"
+  },
+  {
+   "id": "P131",
+   "src": "JMETER",
+   "pages": [
+    19
+   ],
+   "terms": [
+    "CSV Data Set Config",
+    "HTTP Request Defaults",
+    "User Parameters"
+   ],
+   "claim": "config elements and pre processors"
+  },
+  {
+   "id": "P132",
+   "src": "JMETER",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "Regular Expression Extractor",
+    "XPath Extractor",
+    "CSS/JQuery Extractor"
+   ],
+   "claim": "post processors"
+  },
+  {
+   "id": "P133",
+   "src": "JMETER",
+   "pages": [
+    21
+   ],
+   "terms": [
+    "Configuration nodes",
+    "Pre processors",
+    "Timers",
+    "Sampler",
+    "Post processors",
+    "Assertions",
+    "Listeners"
+   ],
+   "claim": "order of execution"
+  },
+  {
+   "id": "P134",
+   "src": "JMETER",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "Constant Timer",
+    "500 mili"
+   ],
+   "claim": "constant 500 ms timer"
+  },
+  {
+   "id": "P135",
+   "src": "JMETER",
+   "pages": [
+    29,
+    30
+   ],
+   "terms": [
+    "100 ms",
+    "2000 ms"
+   ],
+   "claim": "Duration Assertion of 100 and 2000 ms"
+  },
+  {
+   "id": "P136",
+   "src": "JMETER",
+   "pages": [
+    31
+   ],
+   "terms": [
+    "5000 bytes"
+   ],
+   "claim": "Size Assertion of 5000 bytes"
+  },
+  {
+   "id": "P137",
+   "src": "JMETER",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "jdbc:mysql://localhost:3306/jmeter"
+   ],
+   "claim": "JDBC URL of the example"
+  },
+  {
+   "id": "P138",
+   "src": "JMETER",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "jmeter/lib/junit",
+    "JUnit 4"
+   ],
+   "claim": "JUnit sampler"
+  },
+  {
+   "id": "P139",
+   "src": "JMETER",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "localhost",
+    "8080"
+   ],
+   "claim": "Firefox proxy"
+  },
+  {
+   "id": "P140",
+   "src": "JMETER",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "50 threads",
+    "10 seconds",
+    "loops equals 1"
+   ],
+   "claim": "recording: 50 threads, 10 s"
+  },
+  {
+   "id": "P141",
+   "src": "JMETER",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "Saving your test plan does not save the workbench"
+   ],
+   "claim": "workbench is not saved with the plan"
+  },
+  {
+   "id": "P142",
+   "src": "JMETER",
+   "pages": [
+    49
+   ],
+   "terms": [
+    "Jenkins"
+   ],
+   "claim": "Jenkins plugin"
+  },
+  {
+   "id": "P143",
+   "src": "JMETER",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "jmeter -n -t test.jmx -l test.jtl"
+   ],
+   "claim": "non-GUI command"
+  },
+  {
+   "id": "P144",
+   "src": "JMETER",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "resource intensive",
+    "as few Listeners"
+   ],
+   "claim": "listeners consume resources"
+  },
+  {
+   "id": "P145",
+   "src": "JMETER",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "View only errors",
+    "Shutdown"
+   ],
+   "claim": "best practices p.50"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "src": "SWEG",
+   "terms": [
+    "70/20/10",
+    "70%"
+   ],
+   "claim": "70/20/10 pyramid in ch. 11-14",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N02",
+   "src": "SWEG",
+   "terms": [
+    "Meszaros",
+    "re:\\bdummy\\b",
+    "re:\\bspy\\b"
+   ],
+   "claim": "Dummy/Spy/Meszaros taxonomy in SWE-G",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N03",
+   "src": "SWEG",
+   "terms": [
+    "Testcontainers",
+    "WireMock",
+    "Gatling",
+    "JMeter"
+   ],
+   "claim": "testing/load tools in SWE-G ch. 11-14",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N04",
+   "src": "SWEG",
+   "terms": [
+    "mutation testing",
+    "test-driven",
+    "re:\\bTDD\\b"
+   ],
+   "claim": "mutation testing and TDD in ch. 11-14",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N05",
+   "src": "SWEG",
+   "terms": [
+    "FakeClock",
+    "Thread.sleep"
+   ],
+   "claim": "FakeClock/Thread.sleep in SWE-G",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N06",
+   "src": "SWEG",
+   "terms": [
+    "quarantine",
+    "quarentena"
+   ],
+   "claim": "quarantine of flaky tests in SWE-G",
+   "page_range": [
+    149,
+    221
+   ]
+  },
+  {
+   "id": "N07",
+   "src": "JUNIT",
+   "terms": [
+    "@BeforeEach",
+    "@BeforeAll",
+    "@AfterEach",
+    "@AfterAll",
+    "@DisplayName",
+    "@Nested"
+   ],
+   "claim": "JUnit 5 annotations"
+  },
+  {
+   "id": "N08",
+   "src": "JUNIT",
+   "terms": [
+    "assertAll",
+    "assertThrows",
+    "assertTimeout",
+    "@ParameterizedTest",
+    "@ValueSource",
+    "@CsvSource"
+   ],
+   "claim": "JUnit 5 API"
+  },
+  {
+   "id": "N09",
+   "src": "JUNIT",
+   "terms": [
+    "Jupiter",
+    "JUnit 5",
+    "JUnit5",
+    "Vintage"
+   ],
+   "claim": "Jupiter/Vintage"
+  },
+  {
+   "id": "N10",
+   "src": "JUNIT",
+   "terms": [
+    "timeout",
+    "re:@Test\\s*\\(\\s*expected",
+    "Mockito"
+   ],
+   "claim": "timeout, @Test(expected=...) and Mockito in the JUnit excerpt"
+  },
+  {
+   "id": "N11",
+   "src": "MOCK",
+   "terms": [
+    "Meszaros",
+    "re:\\bspy\\b",
+    "re:\\bdummy\\b",
+    "re:\\bfake\\b"
+   ],
+   "claim": "Dummy/Spy/Fake in MOCK"
+  },
+  {
+   "id": "N12",
+   "src": "MOCK",
+   "terms": [
+    "429",
+    "503",
+    "500 Internal"
+   ],
+   "claim": "HTTP error codes in MOCK"
+  },
+  {
+   "id": "N13",
+   "src": "MOCK",
+   "terms": [
+    "static mock",
+    "dynamic mock",
+    "CRUD",
+    "WireMock"
+   ],
+   "claim": "static/dynamic mocks, CRUD in MOCK"
+  },
+  {
+   "id": "N14",
+   "src": "TDM",
+   "terms": [
+    "LGPD",
+    "Lei Geral"
+   ],
+   "claim": "LGPD in TDM"
+  },
+  {
+   "id": "N15",
+   "src": "TDM",
+   "terms": [
+    "static data masking",
+    "dynamic data masking",
+    "Copy-on-Write",
+    "copy on write"
+   ],
+   "claim": "SDM/DDM/COW in TDM"
+  },
+  {
+   "id": "N16",
+   "src": "TDM",
+   "terms": [
+    "terabyte",
+    "re:\\bTB\\b",
+    "re:\\d+\\s*GB"
+   ],
+   "claim": "volumes in TB/GB in TDM"
+  },
+  {
+   "id": "N17",
+   "src": "TDM",
+   "terms": [
+    "k-anonymity",
+    "tokenization",
+    "differential privacy"
+   ],
+   "claim": "anonymization techniques in TDM"
+  },
+  {
+   "id": "N18",
+   "src": "JMETER",
+   "terms": [
+    "re:\\bLittle\\b",
+    "percentile",
+    "p95",
+    "p99",
+    "99th"
+   ],
+   "claim": "Little's Law and percentiles in JMETER"
+  },
+  {
+   "id": "N19",
+   "src": "JMETER",
+   "terms": [
+    "JSON Path",
+    "JSONPath",
+    "JSON Extractor"
+   ],
+   "claim": "JSON extractor in JMETER 2.11"
+  },
+  {
+   "id": "N20",
+   "src": "JMETER",
+   "terms": [
+    "HTML report",
+    "dashboard",
+    "re:-e\\s+-o\\b"
+   ],
+   "claim": "HTML dashboard and -e -o in JMETER"
+  },
+  {
+   "id": "N21",
+   "src": "JMETER",
+   "terms": [
+    "re:\\bGUI mode is\\b",
+    "forbidden",
+    "never run"
+   ],
+   "claim": "GUI prohibition in JMETER"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nosql-polyglot-persistence-expert",
+  "version": "2.0.0",
+  "description": "Expert in NoSQL databases and polyglot persistence grounded in nine sources from different eras (Strauch 2010-11, Little Redis Book, MongoDB Applied Design Patterns 2013, Graph Databases 2e, captures of MongoDB 8.3, CouchDB, Cassandra 5.0 and Elasticsearch 9): CAP and BASE, consistent hashing, N/R/W, NoSQL families, Redis, MongoDB, Cassandra/Dynamo, CouchDB and graphs. States what the sources do not cover (PACELC, Redis internal persistence, Elasticsearch inverted index) and flags [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "nosql",
+    "polyglot-persistence",
+    "cap-theorem",
+    "base-model",
+    "redis",
+    "mongodb",
+    "cassandra",
+    "couchdb",
+    "elasticsearch",
+    "consistent-hashing",
+    "quorum",
+    "graph-databases"
+  ]
+}

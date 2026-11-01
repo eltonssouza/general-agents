@@ -1,0 +1,19 @@
+{
+  "name": "product-designer",
+  "version": "1.0.0",
+  "description": "Role agent: Product Designer (UX and UI). Journeys and flows, information architecture and wireframes, visual hierarchy, design tokens, component states and WCAG 2.2 AA accessibility. Calculates WCAG contrast with a deterministic script. No bibliographic source: labels [practice] and [WCAG 2.2].",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "product-design",
+    "ux",
+    "ui",
+    "design-tokens",
+    "wcag",
+    "contrast",
+    "accessibility",
+    "wireframe"
+  ]
+}

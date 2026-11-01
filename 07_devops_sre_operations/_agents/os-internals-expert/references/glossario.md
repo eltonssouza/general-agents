@@ -1,0 +1,79 @@
+# Glossary (OSTEP terms, definitions in our own words)
+
+All definitions are [from source] with the PDF page, except where marked. Approximate alphabetical order.
+
+- **Address space**: the process's view of memory (code, heap, stack) (OSTEP p.45-46).
+- **Allotment**: time a job may spend at an MLFQ level before being demoted (OSTEP p.382).
+- **AMAT**: average memory access time, T_M + P_miss × T_D (OSTEP p.690-691).
+- **ASID**: address space identifier in the TLB, like a shorter PID (OSTEP p.550).
+- **Atomicity violation**: bug in which a region intended to be atomic is not executed atomically (OSTEP p.558-559).
+- **Base and bounds / dynamic relocation**: pair of registers that add a base to the virtual address and check the limit (OSTEP p.202-204).
+- **Belady's Anomaly**: with FIFO, more pages in memory can produce more misses (OSTEP p.694).
+- **Block (flash)**: flash erase unit (128-256 KB); distinct from "page" (OSTEP p.654).
+- **Bounded buffer / producer-consumer**: Dijkstra's problem of a finite buffer with producers and consumers (OSTEP p.415).
+- **Cache affinity**: preference for running a process on the same CPU to reuse caches and TLB (OSTEP p.532).
+- **Callback (AFS)**: server promise to notify when a cached file is modified (OSTEP p.819).
+- **Checkpoint region (LFS)**: fixed location that points to the most recent pieces of the imap (OSTEP p.629).
+- **Checksum**: small summary of a block used to detect corruption (OSTEP p.711).
+- **Clock algorithm**: LRU approximation with use bit and a hand over a circular list (OSTEP p.701-702).
+- **Condition variable**: explicit queue where threads wait for a condition, with wait/signal (OSTEP p.411).
+- **Context switch**: save the current process's registers and restore the next one's (OSTEP p.190-191).
+- **Convoy effect**: short jobs stuck behind a long job (OSTEP p.292-293).
+- **Copy-on-write (COW)**: copy only when someone writes; in the VMM/Linux and in FSes (OSTEP p.729-730, 589).
+- **Covering condition**: wake everyone (broadcast) to cover all cases (OSTEP p.424-425).
+- **Critical section**: code that accesses a shared resource and must not be executed by several threads at the same time (OSTEP p.61, 64).
+- **Crash-consistency problem**: updating persistent structures despite a crash or power loss (OSTEP p.573, 577).
+- **Deadlock**: threads waiting in a cycle for resources; requires 4 conditions (OSTEP p.561, 563).
+- **Demand paging / prefetching**: bring the page when accessed versus anticipate it (OSTEP p.703).
+- **Demand zeroing**: zero the page only on first access (OSTEP p.729).
+- **Direct execution**: running the program directly on the CPU (OSTEP p.182-183).
+- **Dirty bit**: indicates a modified page (OSTEP p.485, 702).
+- **DMA**: engine that copies data between device and memory without the CPU (OSTEP p.74).
+- **Event loop**: loop that waits for events and calls handlers (OSTEP p.612).
+- **External / internal fragmentation**: free space chopped up outside the allocated units / waste inside the unit (OSTEP p.311, 210).
+- **File descriptor**: per-process private integer that identifies an open file (OSTEP p.334).
+- **File handle (NFS)**: volume + inode + generation (OSTEP p.798).
+- **Fletcher checksum**: two sums modulo 255 (OSTEP p.713).
+- **FTL**: layer that turns logical blocks into flash operations (OSTEP p.658).
+- **Futex**: Linux primitive with a kernel queue and a wait conditioned on the value (OSTEP p.230-231).
+- **Idempotent**: operation whose repeated effect equals that of a single execution (OSTEP p.802).
+- **Inode**: structure with a file's metadata and data pointers (OSTEP p.433).
+- **Inode map (imap)**: i-number → inode address indirection in LFS (OSTEP p.627-628).
+- **Journaling / write-ahead logging**: record the intent before overwriting (OSTEP p.579).
+- **Kernel mode / user mode**: execution modes with different privileges (OSTEP p.184).
+- **Limited direct execution (LDE)**: direct execution with limits and OS control (OSTEP p.182-183).
+- **Livelock**: processes active without progress; also from an interrupt flood (OSTEP p.73, 565).
+- **Lock**: variable that guarantees mutual exclusion over a region (OSTEP p.213-214).
+- **Lottery scheduling**: draw proportional to tickets (OSTEP p.465-466).
+- **LSE (latent sector error)**: unreadable sector detected by the disk (OSTEP p.709).
+- **Mesa / Hoare semantics**: signal as a hint (Mesa) versus immediate transfer (Hoare) (OSTEP p.418-419).
+- **Metadata**: any FS information that is not user data (OSTEP p.434).
+- **MLFQ**: multi-level feedback queue (OSTEP p.380, 389).
+- **Mutual exclusion**: guarantee that only one thread executes the critical section (OSTEP p.61).
+- **Page / page frame**: fixed unit of the virtual space / physical slot (OSTEP p.479).
+- **Page fault**: access to a non-present page (OSTEP p.643).
+- **Page table / PTE / VPN / PFN**: per-process VPN→PFN mapping and its fields (OSTEP p.481-485).
+- **PCB**: process control block (OSTEP p.38).
+- **Preemptive / non-preemptive**: with or without taking the CPU away during the job (OSTEP p.294).
+- **Priority inversion / inheritance**: high-priority task blocked by a low-priority one; solution: inherit priority (OSTEP p.229).
+- **Process**: running program (OSTEP p.30).
+- **Race condition**: result depends on interleaving (OSTEP p.61).
+- **RAID**: several disks that look like one (OSTEP p.235).
+- **Response time**: T_firstrun − T_arrival (OSTEP p.295).
+- **Round Robin**: alternating time slices (OSTEP p.296).
+- **Scrubbing**: periodically read and validate checksums (OSTEP p.717).
+- **Segmentation**: one base/bounds pair per logical segment (OSTEP p.303-305).
+- **Semaphore**: integer with sem_wait and sem_post (OSTEP p.494-495).
+- **Spin lock**: lock that spins while waiting (OSTEP p.220-221).
+- **Stateless protocol**: the server keeps no client state (OSTEP p.797).
+- **Stride scheduling**: deterministic version of lottery (OSTEP p.470).
+- **Swap space**: disk area for moved pages (OSTEP p.641).
+- **System call / trap**: controlled entry into the kernel (OSTEP p.184-185).
+- **Thrashing**: constant paging due to oversubscribed memory (OSTEP p.703).
+- **TLB**: translation cache (OSTEP p.541).
+- **Turnaround time**: T_completion − T_arrival (OSTEP p.291).
+- **Virtual address**: address visible to the program (OSTEP p.47, 49).
+- **vruntime**: virtual time accumulated in CFS (OSTEP p.472).
+- **Wear leveling**: spread erasures across flash blocks (OSTEP p.659, 669).
+- **Write amplification**: flash traffic ÷ client traffic (OSTEP p.658-659).
+- **Zombie**: finished process not yet cleaned up by the parent (OSTEP p.38).

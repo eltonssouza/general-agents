@@ -1,0 +1,543 @@
+{
+  "_comment": "Each item asserts that the indicated page of the extracted text contains ALL the substrings (case-insensitive and with collapsed whitespace). It is used to audit the citations in the references.",
+  "checks": [
+    {
+      "cite": "CSSHB p.21",
+      "contains": [
+        "specific rule will win",
+        "appears last wins"
+      ],
+      "claim": "most specific wins; tie = the last one"
+    },
+    {
+      "cite": "CSSHB p.22",
+      "contains": [
+        "p span {}",
+        "0 0 0 2",
+        "[href$='.pdf']"
+      ],
+      "claim": "specificity slots 1 and 2"
+    },
+    {
+      "cite": "CSSHB p.23",
+      "contains": [
+        ".name.name",
+        "0 0 2 0",
+        "#name {}"
+      ],
+      "claim": "repeating a class; id in slot 3"
+    },
+    {
+      "cite": "CSSHB p.24",
+      "contains": [
+        "inline style",
+        "!important"
+      ],
+      "claim": "inline = slot 4; !important"
+    },
+    {
+      "cite": "CSSHB p.25",
+      "contains": [
+        "no place in your css files",
+        "classes instead"
+      ],
+      "claim": "avoid !important; classes instead of id"
+    },
+    {
+      "cite": "CSSHB p.29",
+      "contains": [
+        "must be put before any other css"
+      ],
+      "claim": "@import at the top"
+    },
+    {
+      "cite": "CSSHB p.31",
+      "contains": [
+        "checks if the attribute contains",
+        "case insensitive"
+      ],
+      "claim": "attribute operators and the i flag"
+    },
+    {
+      "cite": "CSSHB p.33",
+      "contains": [
+        "a:visited",
+        ":nth-child(odd)"
+      ],
+      "claim": "link states and nth-child"
+    },
+    {
+      "cite": "CSSHB p.34",
+      "contains": [
+        "-n+3",
+        "5n"
+      ],
+      "claim": "nth-child(-n+3) and (5n)"
+    },
+    {
+      "cite": "CSSHB p.34",
+      "contains": [
+        "ul:nth-child(odd)"
+      ],
+      "claim": "imperfect example with ul"
+    },
+    {
+      "cite": "CSSHB p.49",
+      "contains": [
+        "space around the operator is mandatory"
+      ],
+      "claim": "calc requires spaces"
+    },
+    {
+      "cite": "CSSHB p.46",
+      "contains": [
+        "37.8 pixels",
+        "96 pixels",
+        "1 inch = 72 points"
+      ],
+      "claim": "unit equivalences"
+    },
+    {
+      "cite": "CSSHB p.55",
+      "contains": [
+        "css does not have inline comments",
+        "// nice rule"
+      ],
+      "claim": "// is not a comment"
+    },
+    {
+      "cite": "CSSHB p.59",
+      "contains": [
+        "higher specificity"
+      ],
+      "claim": ":root has higher specificity than html"
+    },
+    {
+      "cite": "CSSHB p.60",
+      "contains": [
+        "setproperty",
+        "cascading rules"
+      ],
+      "claim": "setProperty and the cascade of variables"
+    },
+    {
+      "cite": "CSSHB p.62",
+      "contains": [
+        "case sensitive",
+        "calc()"
+      ],
+      "claim": "case-sensitive variables; math with calc"
+    },
+    {
+      "cite": "CSSHB p.63",
+      "contains": [
+        "accepts a second parameter"
+      ],
+      "claim": "var() fallback"
+    },
+    {
+      "cite": "CSSHB p.66",
+      "contains": [
+        "a font without ligatures"
+      ],
+      "claim": "book imprecision about sans-serif"
+    },
+    {
+      "cite": "CSSHB p.67",
+      "contains": [
+        "sets the width of a font",
+        "fallback value"
+      ],
+      "claim": "font-weight error and generic fallback"
+    },
+    {
+      "cite": "CSSHB p.72",
+      "contains": [
+        "same-origin policy",
+        "woff2"
+      ],
+      "claim": "@font-face and same origin"
+    },
+    {
+      "cite": "CSSHB p.87",
+      "contains": [
+        "default for the style is none"
+      ],
+      "claim": "border-style default none"
+    },
+    {
+      "cite": "CSSHB p.88",
+      "contains": [
+        "top-right-bottom-left"
+      ],
+      "claim": "top-right-bottom-left order"
+    },
+    {
+      "cite": "CSSHB p.93",
+      "contains": [
+        "the second to left & right"
+      ],
+      "claim": "padding with 3 values"
+    },
+    {
+      "cite": "CSSHB p.97",
+      "contains": [
+        "only property related to sizing that can have a negative"
+      ],
+      "claim": "negative margin"
+    },
+    {
+      "cite": "CSSHB p.98",
+      "contains": [
+        "border-box",
+        "content-box"
+      ],
+      "claim": "box-sizing"
+    },
+    {
+      "cite": "CSSHB p.99",
+      "contains": [
+        "*, *:before, *:after"
+      ],
+      "claim": "global border-box"
+    },
+    {
+      "cite": "CSSHB p.109",
+      "contains": [
+        "closest container that is not static"
+      ],
+      "claim": "absolute relative to the non-static ancestor"
+    },
+    {
+      "cite": "CSSHB p.113",
+      "contains": [
+        "relatively unsupported"
+      ],
+      "claim": "sticky poorly supported (dated)"
+    },
+    {
+      "cite": "CSSHB p.122",
+      "contains": [
+        "does not make any difference",
+        "must be set to absolute"
+      ],
+      "claim": "z-index requires a position"
+    },
+    {
+      "cite": "CSSHB p.124",
+      "contains": [
+        "92% of all users",
+        "not a competitor to flexbox"
+      ],
+      "claim": "Grid support and its relation to Flexbox"
+    },
+    {
+      "cite": "CSSHB p.136",
+      "contains": [
+        "minmax(200px, 3fr) 9fr"
+      ],
+      "claim": "minmax in a sidebar"
+    },
+    {
+      "cite": "CSSHB p.141",
+      "contains": [
+        "@media (max-width: 500px)",
+        "sidebar"
+      ],
+      "claim": "grid reflow in a media query"
+    },
+    {
+      "cite": "CSSHB p.142",
+      "contains": [
+        "97.66%",
+        "dimensional layout model"
+      ],
+      "claim": "1D flexbox and support"
+    },
+    {
+      "cite": "CSSHB p.155",
+      "contains": [
+        "flex-grow",
+        "defaut for any item is 1"
+      ],
+      "claim": "default grow and shrink"
+    },
+    {
+      "cite": "CSSHB p.156",
+      "contains": [
+        "flex: 0 1 auto"
+      ],
+      "claim": "flex shorthand"
+    },
+    {
+      "cite": "CSSHB p.164",
+      "contains": [
+        "margin: 0 auto",
+        "display: block"
+      ],
+      "claim": "centering with auto margin"
+    },
+    {
+      "cite": "CSSHB p.166",
+      "contains": [
+        "place-items: center",
+        "100vh"
+      ],
+      "claim": "centering with grid"
+    },
+    {
+      "cite": "CSSHB p.172",
+      "contains": [
+        "negate an entire media query"
+      ],
+      "claim": "not in media queries"
+    },
+    {
+      "cite": "CSSHB p.174",
+      "contains": [
+        "@supports (display: grid)"
+      ],
+      "claim": "feature query"
+    },
+    {
+      "cite": "CSSHB p.177",
+      "contains": [
+        "hardware accelerated"
+      ],
+      "claim": "filter opacity (author's opinion)"
+    },
+    {
+      "cite": "CSSHB p.182",
+      "contains": [
+        "saturate()"
+      ],
+      "claim": "example without an argument"
+    },
+    {
+      "cite": "CSSHB p.184",
+      "contains": [
+        ".3delement"
+      ],
+      "claim": "invalid selector in the 3D example"
+    },
+    {
+      "cite": "CSSHB p.186",
+      "contains": [
+        "transition: property duration timing-function delay"
+      ],
+      "claim": "transition shorthand"
+    },
+    {
+      "cite": "CSSHB p.199",
+      "contains": [
+        "fill-mode",
+        "play-state",
+        "animationstart"
+      ],
+      "claim": "animation shorthand and events"
+    },
+    {
+      "cite": "CSSHB p.205",
+      "contains": [
+        "normalize.css",
+        "javascript"
+      ],
+      "claim": "normalize and CSS resilience"
+    },
+    {
+      "cite": "CSSHB p.206",
+      "contains": [
+        "size: 20px color: black"
+      ],
+      "claim": "missing semicolon"
+    },
+    {
+      "cite": "CSSHB p.207",
+      "contains": [
+        "-moz- (safari)"
+      ],
+      "claim": "book error about -moz-"
+    },
+    {
+      "cite": "CSSHB p.209",
+      "contains": [
+        "src=\"print.css\"",
+        "media=\"print\""
+      ],
+      "claim": "src error on link"
+    },
+    {
+      "cite": "CSSHB p.210",
+      "contains": [
+        "a[href*='//']:after",
+        "$primary"
+      ],
+      "claim": "links in print and $primary"
+    },
+    {
+      "cite": "MDNFS p.2",
+      "contains": [
+        "the box model",
+        "handling conflicts"
+      ],
+      "claim": "MDN First Steps index"
+    },
+    {
+      "cite": "MDNFS p.3",
+      "contains": [
+        "cascade layers",
+        "writing modes"
+      ],
+      "claim": "optional MDN lessons"
+    },
+    {
+      "cite": "MDNL p.1",
+      "contains": [
+        "one-dimensional layout method"
+      ],
+      "claim": "flexbox in MDN"
+    },
+    {
+      "cite": "MDNL p.2",
+      "contains": [
+        "responsive web design",
+        "media query"
+      ],
+      "claim": "RWD and media queries in MDN"
+    },
+    {
+      "cite": "MDNL p.3",
+      "contains": [
+        "layout cookbook"
+      ],
+      "claim": "cookbook in MDN"
+    },
+    {
+      "cite": "CSSHB p.19",
+      "contains": [
+        "specificity",
+        "importance",
+        "inheritance",
+        "order in the file"
+      ],
+      "claim": "cascade factors"
+    },
+    {
+      "cite": "CSSHB p.20",
+      "contains": [
+        "user stylesheet",
+        "browser (user agent) css"
+      ],
+      "claim": "cascade origins"
+    },
+    {
+      "cite": "CSSHB p.106",
+      "contains": [
+        "space that is occupied by the box remains preserved"
+      ],
+      "claim": "relative preserves space"
+    },
+    {
+      "cite": "CSSHB p.107",
+      "contains": [
+        "original space is now collapsed"
+      ],
+      "claim": "absolute collapses space"
+    },
+    {
+      "cite": "CSSHB p.123",
+      "contains": [
+        "non-consecutive numbers"
+      ],
+      "claim": "spaced-out z-index"
+    },
+    {
+      "cite": "CSSHB p.173",
+      "contains": [
+        "landscape",
+        "@media screen and (max-width: 800px)"
+      ],
+      "claim": "compound media query"
+    },
+    {
+      "cite": "CSSHB p.61",
+      "contains": [
+        "considered invalid"
+      ],
+      "claim": "invalid var()"
+    },
+    {
+      "cite": "CSSHB p.129",
+      "contains": [
+        "no space between the cells"
+      ],
+      "claim": "gap in grid"
+    },
+    {
+      "cite": "CSSHB p.134",
+      "contains": [
+        "span 2",
+        "grid-column: 2 / 4"
+      ],
+      "claim": "grid-column and span"
+    },
+    {
+      "cite": "CSSHB p.186",
+      "contains": [
+        "ease-in"
+      ],
+      "claim": "transition example"
+    },
+    {
+      "cite": "CSSHB p.211",
+      "contains": [
+        "@page",
+        "page-break-after"
+      ],
+      "claim": "@page and breaks"
+    },
+    {
+      "cite": "CSSHB p.212",
+      "contains": [
+        "page-break-inside: avoid"
+      ],
+      "claim": "avoid cutting"
+    },
+    {
+      "cite": "CSSHB p.213",
+      "contains": [
+        "print"
+      ],
+      "claim": "print emulation"
+    },
+    {
+      "cite": "CSSHB p.72",
+      "contains": [
+        "performance implications"
+      ],
+      "claim": "font performance note"
+    },
+    {
+      "cite": "CSSHB p.101",
+      "contains": [
+        "display: none"
+      ],
+      "claim": "display none"
+    },
+    {
+      "cite": "CSSHB p.27",
+      "contains": [
+        "visibility"
+      ],
+      "claim": "visibility inherits"
+    },
+    {
+      "cite": "CSSHB p.194",
+      "contains": [
+        "visibility",
+        "animation  property"
+      ],
+      "claim": "visibility animatable and animation"
+    }
+  ]
+}

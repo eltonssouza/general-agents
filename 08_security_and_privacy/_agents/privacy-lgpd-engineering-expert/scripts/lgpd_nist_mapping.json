@@ -1,0 +1,718 @@
+{
+ "niveis": {
+  "TEXTUAL": "NIST links the concept/objective (Fig. 8, 3.1.1.x, glossary) AND both texts use equivalent terms verifiable on the cited pages; the LGPD-NIST correspondence itself is the agent's, neither source cites the other",
+  "INFERENCE": "conceptual link made by the agent, without direct textual support; label it [inference]",
+  "NO_SUPPORT": "LGPD topic with no equivalent in NIST IR 8062"
+ },
+ "rows": [
+  {
+   "id": "M01",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, I (purpose)",
+   "lgpd_paginas": [
+    3
+   ],
+   "lgpd_termos": [
+    "propósitos legítimos, específicos, explícitos e informados",
+    "tratamento posterior de forma incompatível"
+   ],
+   "nist": "FIPP Purpose Specification and Use Limitation -> predictability (Fig. 8, p.26; text p.27; App. F p.49)",
+   "nist_paginas": [
+    27,
+    49
+   ],
+   "nist_termos": [
+    "purpose specification and use limitation",
+    "compatible with the purpose"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "NIST links the FIPP to the predictability objective (p.27) and defines it as noticed purpose and compatible uses (p.49); the LGPD defines purpose as an informed purpose with no incompatible further processing (p.3). The LGPD-FIPP equivalence is the agent's comparison between the two texts."
+  },
+  {
+   "id": "M02",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, II (suitability to context)",
+   "lgpd_paginas": [
+    3
+   ],
+   "lgpd_termos": [
+    "contexto do tratamento"
+   ],
+   "nist": "Context (3.2.2.3) and predictability in the face of changes of context",
+   "nist_paginas": [
+    27,
+    31
+   ],
+   "nist_termos": [
+    "changes in context",
+    "circumstances surrounding"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "Both use context as a criterion: the LGPD for compatibility with the informed purpose; NIST as a likelihood factor for a data action becoming a problem (p.31) and as a reason to assess changes of use (p.27)."
+  },
+  {
+   "id": "M03",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, III (necessity) and Art. 10 §1º",
+   "lgpd_paginas": [
+    3,
+    6
+   ],
+   "lgpd_termos": [
+    "mínimo necessário",
+    "estritamente necessários"
+   ],
+   "nist": "FIPP Minimization -> manageability and disassociability (Fig. 8, p.26); disassociability 'most associated with minimization' (p.28)",
+   "nist_paginas": [
+    28,
+    49
+   ],
+   "nist_termos": [
+    "minimization FIPP",
+    "directly relevant and necessary"
+   ],
+   "objetivo": "manageability; disassociability",
+   "justificativa": "Fig. 8 links Minimization to manageability and disassociability; p.28 says disassociability is the closest to minimization; the LGPD requires the minimum necessary and relevant, non-excessive data."
+  },
+  {
+   "id": "M04",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, IV (free access) and Art. 18, I-II",
+   "lgpd_paginas": [
+    3,
+    9
+   ],
+   "lgpd_termos": [
+    "consulta facilitada e gratuita",
+    "acesso aos dados"
+   ],
+   "nist": "FIPP Access and Amendment -> manageability (Fig. 8, p.26; text p.27)",
+   "nist_paginas": [
+    27,
+    49
+   ],
+   "nist_termos": [
+    "access and amendment",
+    "appropriate access"
+   ],
+   "objetivo": "manageability",
+   "justificativa": "NIST lists access and amendment among the FIPPs enabled by manageability (p.27)."
+  },
+  {
+   "id": "M05",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, V (quality) and Art. 18, III",
+   "lgpd_paginas": [
+    4,
+    9
+   ],
+   "lgpd_termos": [
+    "exatidão, clareza, relevância e atualização",
+    "inexatos ou desatualizados"
+   ],
+   "nist": "FIPP Quality and Integrity -> manageability (p.27); manageability makes it possible to correct inaccurate data",
+   "nist_paginas": [
+    27,
+    49
+   ],
+   "nist_termos": [
+    "inaccurate information can be identified and corrected",
+    "accuracy, relevance, timeliness"
+   ],
+   "objetivo": "manageability",
+   "justificativa": "p.27 says that without granularity inaccuracies cannot be corrected; App. F defines quality with accuracy, relevance, timeliness; the LGPD lists accuracy, relevance, updating."
+  },
+  {
+   "id": "M06",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, VI (transparency) and Art. 9º",
+   "lgpd_paginas": [
+    4,
+    5
+   ],
+   "lgpd_termos": [
+    "claras, precisas e facilmente acessíveis",
+    "finalidade específica do tratamento"
+   ],
+   "nist": "FIPP Transparency -> predictability (Fig. 8, p.26; text p.26-27)",
+   "nist_paginas": [
+    26,
+    27,
+    49
+   ],
+   "nist_termos": [
+    "transparency and accountability FIPPs",
+    "transparent about information policies"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "p.26 presents predictability as the basis of transparency and accountability; p.26 also suggests assessing whether the notice was read and understood, which complements Art. 9 (clear, adequate and conspicuous information)."
+  },
+  {
+   "id": "M07",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, VII and Art. 46 (security)",
+   "lgpd_paginas": [
+    4,
+    15
+   ],
+   "lgpd_termos": [
+    "medidas técnicas e administrativas",
+    "acessos não autorizados"
+   ],
+   "nist": "FIPP Security -> confidentiality, integrity, availability (Fig. 8, p.26); App. F p.49",
+   "nist_paginas": [
+    26,
+    49
+   ],
+   "nist_termos": [
+    "administrative, technical, and physical safeguards",
+    "unauthorized access"
+   ],
+   "objetivo": "(security: CIA, not a privacy objective)",
+   "justificativa": "NIST aligns the Security FIPP with the CIA security objectives, not with the three privacy ones, and separates security from privacy (p.15-17)."
+  },
+  {
+   "id": "M08",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, IX (non-discrimination)",
+   "lgpd_paginas": [
+    4
+   ],
+   "lgpd_termos": [
+    "fins discriminatórios ilícitos ou abusivos"
+   ],
+   "nist": "Privacy problems: discrimination/stigmatization (Fig. 3, p.18; p.17)",
+   "nist_paginas": [
+    17
+   ],
+   "nist_termos": [
+    "discriminatory and stigmatizing effect"
+   ],
+   "objetivo": "(problem category, not an objective)",
+   "justificativa": "Both address discrimination: NIST as a category of privacy problem; the LGPD as a principle."
+  },
+  {
+   "id": "M09",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 6º, X (accountability), Art. 50 §2º, II",
+   "lgpd_paginas": [
+    4,
+    17
+   ],
+   "lgpd_termos": [
+    "demonstração, pelo agente",
+    "demonstrar a efetividade"
+   ],
+   "nist": "FIPP Accountability -> predictability, manageability, disassociability (Fig. 8, p.26)",
+   "nist_paginas": [
+    26,
+    49
+   ],
+   "nist_termos": [
+    "monitor, audit, and document compliance",
+    "accountability"
+   ],
+   "objetivo": "predictability; manageability; disassociability",
+   "justificativa": "Accountability is the only FIPP aligned with all three objectives (Fig. 8). p.49: monitor, audit and document compliance; LGPD: demonstrate effective measures and their effectiveness."
+  },
+  {
+   "id": "M10",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 18, III, IV and VI (correction, anonymization/blocking/deletion)",
+   "lgpd_paginas": [
+    9
+   ],
+   "lgpd_termos": [
+    "correção de dados incompletos, inexatos ou desatualizados",
+    "eliminação"
+   ],
+   "nist": "Manageability: granular administration including alteration, removal and selective disclosure (glossary p.36; Fig. 6 p.25)",
+   "nist_paginas": [
+    36
+   ],
+   "nist_termos": [
+    "granular administration of PII",
+    "alteration"
+   ],
+   "objetivo": "manageability",
+   "justificativa": "The definition of manageability (alteration, removal) is the system capability that makes these rights feasible; NIST cautions that it is not a policy statement about the individual's right (p.27)."
+  },
+  {
+   "id": "M11",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 7º, I and Art. 8º (consent)",
+   "lgpd_paginas": [
+    4,
+    5
+   ],
+   "lgpd_termos": [
+    "consentimento pelo titular",
+    "finalidades determinadas"
+   ],
+   "nist": "FIPP Individual Participation -> manageability (Fig. 8, p.26); App. F",
+   "nist_paginas": [
+    49
+   ],
+   "nist_termos": [
+    "individual consent",
+    "individual participation"
+   ],
+   "objetivo": "manageability",
+   "justificativa": "App. F: seek the individual's consent to the extent practicable; manageability enables individual participation (p.27)."
+  },
+  {
+   "id": "M12",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 5º, XI (anonymization: loss of the possibility of association) and Art. 12",
+   "lgpd_paginas": [
+    3,
+    7
+   ],
+   "lgpd_termos": [
+    "perde a possibilidade de associação",
+    "dados anonimizados"
+   ],
+   "nist": "Disassociability: process PII without association to individuals beyond what is necessary (glossary p.36; p.28)",
+   "nist_paginas": [
+    28,
+    36
+   ],
+   "nist_termos": [
+    "without association to individuals",
+    "disassociability"
+   ],
+   "objetivo": "disassociability",
+   "justificativa": "There is a textual echo of the association concept: the LGPD defines anonymization as the loss of the possibility of association to an individual; NIST defines disassociability as processing without association beyond the operational requirement."
+  },
+  {
+   "id": "M13",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 13 §4º (pseudonymization)",
+   "lgpd_paginas": [
+    7
+   ],
+   "lgpd_termos": [
+    "pseudonimização",
+    "informação adicional mantida separadamente"
+   ],
+   "nist": "Possible disassociability taxonomy: anonymity, de-identification, unlinkability, pseudonymity (p.28)",
+   "nist_paginas": [
+    28
+   ],
+   "nist_termos": [
+    "pseudonymity",
+    "de-identification"
+   ],
+   "objetivo": "disassociability",
+   "justificativa": "NIST lists pseudonymity among the terms of a possible taxonomy (p.28); the LGPD defines it in Art. 13 §4º. NIST does not detail techniques."
+  },
+  {
+   "id": "M14",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 5º, XVII and Art. 38, sole paragraph (RIPD, data protection impact report)",
+   "lgpd_paginas": [
+    3,
+    14
+   ],
+   "lgpd_termos": [
+    "mecanismos de mitigação de risco",
+    "análise do controlador"
+   ],
+   "nist": "PIA: analysis of how PII is handled, risks and ways to mitigate (p.23)",
+   "nist_paginas": [
+    23
+   ],
+   "nist_termos": [
+    "determine the privacy risks",
+    "evaluate ways to mitigate"
+   ],
+   "objetivo": "(assessment document)",
+   "justificativa": "Both describe a document that analyzes processing, risks and mitigation. RIPD and PIA are not legal equivalents; the comparison is functional."
+  },
+  {
+   "id": "M15",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 50 §1º and §2º, I, d (probability, severity; systematic assessment of impacts and risks)",
+   "lgpd_paginas": [
+    16,
+    17
+   ],
+   "lgpd_termos": [
+    "probabilidade e a gravidade dos riscos",
+    "avaliação sistemática de impactos e riscos à privacidade"
+   ],
+   "nist": "Risk model: risk = function of impact and likelihood (p.29-30)",
+   "nist_paginas": [
+    29,
+    30
+   ],
+   "nist_termos": [
+    "likelihood of occurrence",
+    "adverse impacts"
+   ],
+   "objetivo": "(risk model)",
+   "justificativa": "The LGPD asks to consider probability and severity and to assess impacts and risks; NIST defines risk by likelihood and impact and introduces the problematic data action as a factor. The LGPD does not adopt the term 'problematic data action'."
+  },
+  {
+   "id": "M16",
+   "nivel": "TEXTUAL",
+   "lgpd": "Art. 46 §2º (measures from design to execution)",
+   "lgpd_paginas": [
+    15
+   ],
+   "lgpd_termos": [
+    "desde a fase de concepção do produto ou do serviço"
+   ],
+   "nist": "Privacy applied throughout the whole system life cycle (p.21)",
+   "nist_paginas": [
+    21
+   ],
+   "nist_termos": [
+    "throughout the system life cycle"
+   ],
+   "objetivo": "(life cycle)",
+   "justificativa": "Both require handling across the life cycle; the name 'privacy by design' is not in the LGPD and appears in NIST only as a reference to Cavoukian in note 2 (p.9)."
+  },
+  {
+   "id": "M17",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 6º, VIII (prevention)",
+   "lgpd_paginas": [
+    4
+   ],
+   "lgpd_termos": [
+    "prevenir a ocorrência de danos"
+   ],
+   "nist": "Risk management: minimize adverse outcomes (p.21)",
+   "nist_paginas": [
+    21
+   ],
+   "nist_termos": [
+    "minimizing adverse outcomes"
+   ],
+   "objetivo": "(risk management)",
+   "justificativa": "Conceptual connection (prevent harm / minimize adverse outcomes); neither text makes the link."
+  },
+  {
+   "id": "M18",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 8º §5º and Art. 18, IX (revocation of consent)",
+   "lgpd_paginas": [
+    5,
+    9
+   ],
+   "lgpd_termos": [
+    "revogado a qualquer momento"
+   ],
+   "nist": "Manageability (alteration and removal)",
+   "nist_paginas": [
+    27
+   ],
+   "nist_termos": [
+    "manageability"
+   ],
+   "objetivo": "manageability",
+   "justificativa": "NIST does not mention revocation; the link is inferred from the definition of manageability."
+  },
+  {
+   "id": "M19",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 37 (record of operations)",
+   "lgpd_paginas": [
+    14
+   ],
+   "lgpd_termos": [
+    "registro das operações"
+   ],
+   "nist": "Accountability: document compliance (p.49)",
+   "nist_paginas": [
+    49
+   ],
+   "nist_termos": [
+    "document compliance"
+   ],
+   "objetivo": "predictability; manageability; disassociability",
+   "justificativa": "NIST asks to document compliance; the LGPD requires a record of operations without listing fields. Relationship inferred."
+  },
+  {
+   "id": "M20",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 44 (security the data subject can expect)",
+   "lgpd_paginas": [
+    15
+   ],
+   "lgpd_termos": [
+    "segurança que o titular dele pode esperar"
+   ],
+   "nist": "Predictability: do not surprise individuals with the processing (p.26)",
+   "nist_paginas": [
+    26
+   ],
+   "nist_termos": [
+    "not surprised"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "Idea of legitimate expectation in both; link by inference."
+  },
+  {
+   "id": "M21",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 10, II (legitimate expectations of the data subject)",
+   "lgpd_paginas": [
+    6
+   ],
+   "lgpd_termos": [
+    "legítimas expectativas"
+   ],
+   "nist": "Predictability and context (p.26-27, 31)",
+   "nist_paginas": [
+    26,
+    31
+   ],
+   "nist_termos": [
+    "reliable assumptions"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "The data subject's expectations come close to 'reliable assumptions'; link by inference."
+  },
+  {
+   "id": "M22",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 20 (automated decisions)",
+   "lgpd_paginas": [
+    10
+   ],
+   "lgpd_termos": [
+    "decisões tomadas unicamente com base em tratamento automatizado"
+   ],
+   "nist": "Appendix E: big data and bias/discrimination in eligibility systems (p.47)",
+   "nist_paginas": [
+    47
+   ],
+   "nist_termos": [
+    "bias or discrimination"
+   ],
+   "objetivo": "(problem category)",
+   "justificativa": "NIST describes the problem (bias in analytic systems) but proposes no right of review; thematic link."
+  },
+  {
+   "id": "M23",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 48 (security incidents)",
+   "lgpd_paginas": [
+    16
+   ],
+   "lgpd_termos": [
+    "incidente de segurança"
+   ],
+   "nist": "PII security as the intersection of security and privacy (Fig. 2, p.16)",
+   "nist_paginas": [
+    16
+   ],
+   "nist_termos": [
+    "unauthorized activity"
+   ],
+   "objetivo": "(security)",
+   "justificativa": "NIST does not address incident response (the term 'incident' is absent from the text); only the security/privacy intersection."
+  },
+  {
+   "id": "M24",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 41 (encarregado, the data protection officer)",
+   "lgpd_paginas": [
+    14
+   ],
+   "lgpd_termos": [
+    "encarregado"
+   ],
+   "nist": "Senior Agency Official for Privacy (glossary p.36)",
+   "nist_paginas": [
+    36
+   ],
+   "nist_termos": [
+    "Senior Agency Official for Privacy"
+   ],
+   "objetivo": "(roles)",
+   "justificativa": "Privacy roles are not equivalent (the SAOP is accountable across the whole federal agency); merely analogous."
+  },
+  {
+   "id": "M25",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 8º §2º; Art. 6º, X (burden of proof/accountability)",
+   "lgpd_paginas": [
+    5,
+    4
+   ],
+   "lgpd_termos": [
+    "ônus da prova"
+   ],
+   "nist": "Evidence base to support trustworthiness claims (p.21, 24)",
+   "nist_paginas": [
+    21,
+    24
+   ],
+   "nist_termos": [
+    "base of evidence"
+   ],
+   "objetivo": "(evidence)",
+   "justificativa": "Both stress providing evidence; link by inference."
+  },
+  {
+   "id": "M26",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 11 (sensitive data)",
+   "lgpd_paginas": [
+    6
+   ],
+   "lgpd_termos": [
+    "dados pessoais sensíveis"
+   ],
+   "nist": "Context: email linked to a health condition (p.31)",
+   "nist_paginas": [
+    31
+   ],
+   "nist_termos": [
+    "health condition"
+   ],
+   "objetivo": "(context)",
+   "justificativa": "NIST gives an example of sensitive context (health) without defining a special category; link by inference."
+  },
+  {
+   "id": "M33",
+   "nivel": "INFERENCE",
+   "lgpd": "Art. 7º, caput and Art. 9º, III-IV (legal basis; identification of the controller)",
+   "lgpd_paginas": [
+    4,
+    5
+   ],
+   "lgpd_termos": [
+    "somente poderá ser realizado nas seguintes hipóteses",
+    "identificação do controlador"
+   ],
+   "nist": "FIPP Authority -> predictability (Fig. 8, p.26): have authority to process the PII and identify it in the notice (App. F p.49)",
+   "nist_paginas": [
+    49
+   ],
+   "nist_termos": [
+    "authority to do so"
+   ],
+   "objetivo": "predictability",
+   "justificativa": "NIST asks to identify the authority (basis) in the notice; the LGPD requires a basis from Art. 7º and identification of the controller, but does not call this authority: relationship inferred."
+  },
+  {
+   "id": "M27",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 7º (list of legal bases)",
+   "lgpd_paginas": [
+    4
+   ],
+   "lgpd_termos": [],
+   "nist": "(no equivalent)",
+   "nist_paginas": [],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "NIST derives requirements from laws, regulations and FIPPs (Fig. 4, p.23) but has no list of legal bases."
+  },
+  {
+   "id": "M28",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 14 (children and adolescents)",
+   "lgpd_paginas": [
+    8
+   ],
+   "lgpd_termos": [],
+   "nist": "(no equivalent; COPPA is cited only as an example of a law in note 47, p.22)",
+   "nist_paginas": [
+    22
+   ],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "No treatment of children in NIST IR 8062."
+  },
+  {
+   "id": "M29",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 33-36 (international transfer)",
+   "lgpd_paginas": [
+    12,
+    13
+   ],
+   "lgpd_termos": [],
+   "nist": "(no equivalent)",
+   "nist_paginas": [],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "NIST IR 8062 does not address international transfer."
+  },
+  {
+   "id": "M30",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 52-54 (sanctions) and Art. 55-A to 58-B (ANPD, Council)",
+   "lgpd_paginas": [
+    17,
+    19
+   ],
+   "lgpd_termos": [],
+   "nist": "(no equivalent)",
+   "nist_paginas": [],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "No sanctions or data protection authority in NIST IR 8062 (the context is OMB A-130 and US federal agencies)."
+  },
+  {
+   "id": "M31",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 42-43 (joint civil liability)",
+   "lgpd_paginas": [
+    14,
+    15
+   ],
+   "lgpd_termos": [],
+   "nist": "(no equivalent)",
+   "nist_paginas": [],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "No civil liability regime in NIST IR 8062."
+  },
+  {
+   "id": "M32",
+   "nivel": "NO_SUPPORT",
+   "lgpd": "Art. 15-16 (end of processing and deletion)",
+   "lgpd_paginas": [
+    8
+   ],
+   "lgpd_termos": [],
+   "nist": "(partial: manageability mentions disposing of obsolete data, p.27)",
+   "nist_paginas": [
+    27
+   ],
+   "nist_termos": [],
+   "objetivo": "",
+   "justificativa": "There is no equivalent rule on end of processing; only the mention of disposing of obsolete data as a capability."
+  }
+ ],
+ "nist_sem_lgpd": [
+  {
+   "conceito": "Problematic data action as a risk factor",
+   "paginas": [
+    29
+   ],
+   "obs": "The LGPD does not use this concept; the RIPD (Art. 5º, XVII) speaks of processes that may generate risks to civil liberties and fundamental rights [inference by approximation]."
+  },
+  {
+   "conceito": "Disassociability as an engineering objective",
+   "paginas": [
+    28
+   ],
+   "obs": "The LGPD has anonymization/pseudonymization and necessity, but no equivalent system objective."
+  },
+  {
+   "conceito": "Assessing effectiveness (notice read and understood) rather than the existence of the notice",
+   "paginas": [
+    22,
+    26
+   ],
+   "obs": "The LGPD asks for clear and conspicuous information (Art. 9), without requiring a comprehension test."
+  }
+ ]
+}

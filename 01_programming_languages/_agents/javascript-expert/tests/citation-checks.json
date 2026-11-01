@@ -1,0 +1,1552 @@
+{
+ "source": "ecma262.txt (Spec = ECMA-262 17th ed., 876 p.), ejs-pt.txt (EJpt = Eloquent JavaScript PT-BR, 504 p.), ejs-en.txt (EJ1 = Eloquent JavaScript 1st ed., 247 p.); markers === PAGE N ===, N = PDF page",
+ "positive": [
+  {
+   "id": "P001",
+   "book": "Spec",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "ECMAScript 2026",
+    "ECMA-402"
+   ],
+   "claim": "the Spec defines ES2026 and refers to ECMA-402 for internationalization"
+  },
+  {
+   "id": "P002",
+   "book": "Spec",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "Normative Optional",
+    "Web browsers are generally required"
+   ],
+   "claim": "Normative Optional category; browsers in general must implement"
+  },
+  {
+   "id": "P003",
+   "book": "Spec",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "Beginning with ECMAScript 2015",
+    "syntactic class definitions"
+   ],
+   "claim": "class syntax from ES2015"
+  },
+  {
+   "id": "P004",
+   "book": "Spec",
+   "pages": [
+    222
+   ],
+   "terms": [
+    "Prior to ECMAScript 2017",
+    "caller"
+   ],
+   "claim": "arguments caller requirement removed in ES2017"
+  },
+  {
+   "id": "P005",
+   "book": "Spec",
+   "pages": [
+    865
+   ],
+   "terms": [
+    "Edition 5 and 5.1"
+   ],
+   "claim": "Annex E compares with editions 5 and 5.1"
+  },
+  {
+   "id": "P006",
+   "book": "Spec",
+   "pages": [
+    867
+   ],
+   "terms": [
+    "In ECMAScript 2015, Function calls are not allowed to return a Reference Record"
+   ],
+   "claim": "Annex F cites ES2015 change in Reference Record"
+  },
+  {
+   "id": "P007",
+   "book": "Spec",
+   "pages": [
+    869
+   ],
+   "terms": [
+    "Atomics.wake",
+    "Atomics.notify"
+   ],
+   "claim": "Annex F: Atomics.wake renamed to notify"
+  },
+  {
+   "id": "P008",
+   "book": "Spec",
+   "pages": [
+    546
+   ],
+   "terms": [
+    "returns an iterator that yields match results",
+    "matchAll"
+   ],
+   "claim": "String.prototype.matchAll returns an iterator (not an array)"
+  },
+  {
+   "id": "P009",
+   "book": "Spec",
+   "pages": [
+    189
+   ],
+   "terms": [
+    "HostEnqueuePromiseJob",
+    "host-defined"
+   ],
+   "claim": "HostEnqueuePromiseJob is a host-defined operation"
+  },
+  {
+   "id": "P010",
+   "book": "Spec",
+   "pages": [
+    187
+   ],
+   "terms": [
+    "web browsers and Node.js",
+    "higher priority"
+   ],
+   "claim": "browsers and Node give Promise Jobs higher priority"
+  },
+  {
+   "id": "P011",
+   "book": "Spec",
+   "pages": [
+    843
+   ],
+   "terms": [
+    "required when the ECMAScript host is a web browser",
+    "normative but optional"
+   ],
+   "claim": "Annex B: mandatory in browsers, optional elsewhere"
+  },
+  {
+   "id": "P012",
+   "book": "Spec",
+   "pages": [
+    858
+   ],
+   "terms": [
+    "IsHTMLDDA",
+    "document.all"
+   ],
+   "claim": "IsHTMLDDA slot and the document.all example"
+  },
+  {
+   "id": "P013",
+   "book": "Spec",
+   "pages": [
+    174
+   ],
+   "terms": [
+    "Hosts may provide any ECMAScript Object value"
+   ],
+   "claim": "global this can be a host-provided object"
+  },
+  {
+   "id": "P014",
+   "book": "Spec",
+   "pages": [
+    305
+   ],
+   "terms": [
+    "IsUnresolvableReference",
+    "typeof"
+   ],
+   "claim": "typeof of an unresolvable reference"
+  },
+  {
+   "id": "P015",
+   "book": "Spec",
+   "pages": [
+    310
+   ],
+   "terms": [
+    "If rVal is not an Object, throw a TypeError exception"
+   ],
+   "claim": "in operator with a non-object right-hand side throws TypeError"
+  },
+  {
+   "id": "P016",
+   "book": "Spec",
+   "pages": [
+    313
+   ],
+   "terms": [
+    "CoalesceExpression",
+    "??"
+   ],
+   "claim": "grammar of the ?? operator"
+  },
+  {
+   "id": "P017",
+   "book": "Spec",
+   "pages": [
+    354
+   ],
+   "terms": [
+    "Evaluation of Finally",
+    "UpdateEmpty"
+   ],
+   "claim": "try/finally algorithm"
+  },
+  {
+   "id": "P018",
+   "book": "Spec",
+   "pages": [
+    364
+   ],
+   "terms": [
+    "does not define local bindings for arguments, super, this, or new.target"
+   ],
+   "claim": "arrow function does not define this/arguments/super/new.target"
+  },
+  {
+   "id": "P019",
+   "book": "Spec",
+   "pages": [
+    211
+   ],
+   "terms": [
+    "Arrow functions never have an arguments object"
+   ],
+   "claim": "arrow functions have no arguments object"
+  },
+  {
+   "id": "P020",
+   "book": "Spec",
+   "pages": [
+    376
+   ],
+   "terms": [
+    "A class definition is always strict mode code"
+   ],
+   "claim": "class is always strict code"
+  },
+  {
+   "id": "P021",
+   "book": "Spec",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "Directive Prologue",
+    "Use Strict Directive"
+   ],
+   "claim": "strict code via Use Strict Directive"
+  },
+  {
+   "id": "P022",
+   "book": "Spec",
+   "pages": [
+    489
+   ],
+   "terms": [
+    "differs from the global isNaN function",
+    "does not convert its argument"
+   ],
+   "claim": "Number.isNaN does not convert the argument"
+  },
+  {
+   "id": "P023",
+   "book": "Spec",
+   "pages": [
+    453
+   ],
+   "terms": [
+    "%isNaN% intrinsic",
+    "ToNumber(number)"
+   ],
+   "claim": "global isNaN converts with ToNumber"
+  },
+  {
+   "id": "P024",
+   "book": "Spec",
+   "pages": [
+    506
+   ],
+   "terms": [
+    "Math.round(3.5) returns 4",
+    "Math.round(-3.5) returns -3"
+   ],
+   "claim": "Math.round: ties go to +infinity"
+  },
+  {
+   "id": "P025",
+   "book": "Spec",
+   "pages": [
+    55
+   ],
+   "terms": [
+    "18,437,736,874,454,810,627"
+   ],
+   "claim": "exact quantity of Number values"
+  },
+  {
+   "id": "P026",
+   "book": "Spec",
+   "pages": [
+    509
+   ],
+   "terms": [
+    "-8,640,000,000,000,000 to 8,640,000,000,000,000"
+   ],
+   "claim": "Date time range in ms"
+  },
+  {
+   "id": "P027",
+   "book": "Spec",
+   "pages": [
+    491
+   ],
+   "terms": [
+    "f < 0 or f > 100",
+    "RangeError"
+   ],
+   "claim": "toExponential: fractionDigits outside 0-100 throws RangeError"
+  },
+  {
+   "id": "P028",
+   "book": "Spec",
+   "pages": [
+    518
+   ],
+   "terms": [
+    "inclusive interval from 0 to 99",
+    "1900"
+   ],
+   "claim": "MakeFullYear: 0-99 counts from 1900"
+  },
+  {
+   "id": "P029",
+   "book": "Spec",
+   "pages": [
+    615
+   ],
+   "terms": [
+    "Let intLen be ! ToUint32(len)",
+    "throw a RangeError exception"
+   ],
+   "claim": "Array(len) throws RangeError if len is not a 32-bit integer"
+  },
+  {
+   "id": "P030",
+   "book": "Spec",
+   "pages": [
+    732
+   ],
+   "terms": [
+    "If n = 4, return true"
+   ],
+   "claim": "Atomics.isLockFree(4) returns true"
+  },
+  {
+   "id": "P031",
+   "book": "Spec",
+   "pages": [
+    734
+   ],
+   "terms": [
+    "ECMA-404"
+   ],
+   "claim": "the Spec's JSON follows ECMA-404"
+  },
+  {
+   "id": "P032",
+   "book": "Spec",
+   "pages": [
+    519
+   ],
+   "terms": [
+    "expanded year",
+    "six decimal digits"
+   ],
+   "claim": "date format: expanded year with 6 digits"
+  },
+  {
+   "id": "P033",
+   "book": "Spec",
+   "pages": [
+    445
+   ],
+   "terms": [
+    "An early error is an error that can be detected and reported prior to the evaluation"
+   ],
+   "claim": "definition of early error"
+  },
+  {
+   "id": "P034",
+   "book": "Spec",
+   "pages": [
+    638
+   ],
+   "terms": [
+    "If v is NaN, return +0",
+    "Let xString be ? ToString(x)"
+   ],
+   "claim": "CompareArrayElements: without a comparator uses ToString"
+  },
+  {
+   "id": "P035",
+   "book": "Spec",
+   "pages": [
+    550
+   ],
+   "terms": [
+    "does not contain \"g\", throw a TypeError exception"
+   ],
+   "claim": "replaceAll with a regex without g throws TypeError"
+  },
+  {
+   "id": "P036",
+   "book": "Spec",
+   "pages": [
+    599
+   ],
+   "terms": [
+    "If v is true and u is true"
+   ],
+   "claim": "flags u and v together give SyntaxError"
+  },
+  {
+   "id": "P037",
+   "book": "Spec",
+   "pages": [
+    360
+   ],
+   "terms": [
+    "FunctionBodyContainsUseStrict",
+    "IsSimpleParameterList"
+   ],
+   "claim": "use strict with non-simple parameters is an early error"
+  },
+  {
+   "id": "P038",
+   "book": "Spec",
+   "pages": [
+    683
+   ],
+   "terms": [
+    "IsCallable(has) is false",
+    "IsCallable(keys) is false"
+   ],
+   "claim": "set methods require set-like with callable has and keys"
+  },
+  {
+   "id": "P039",
+   "book": "Spec",
+   "pages": [
+    760
+   ],
+   "terms": [
+    "numLimit is NaN",
+    "RangeError"
+   ],
+   "claim": "take/drop with NaN throw RangeError"
+  },
+  {
+   "id": "P040",
+   "book": "Spec",
+   "pages": [
+    343
+   ],
+   "terms": [
+    "EnumerateObjectProperties"
+   ],
+   "claim": "for-in uses EnumerateObjectProperties"
+  },
+  {
+   "id": "P041",
+   "book": "Spec",
+   "pages": [
+    172
+   ],
+   "terms": [
+    "ThisBindingStatus",
+    "LEXICAL"
+   ],
+   "claim": "Function Environment Record with lexical this (arrow)"
+  },
+  {
+   "id": "P042",
+   "book": "Spec",
+   "pages": [
+    849
+   ],
+   "terms": [
+    "The entries in Table 1 are added to Table 6"
+   ],
+   "claim": "PDF noise: Table 1 x Table B.1 (Annex B)"
+  },
+  {
+   "id": "P043",
+   "book": "Spec",
+   "pages": [
+    739
+   ],
+   "terms": [
+    "Return the the JSONArrayLiteralContentNodes"
+   ],
+   "claim": "typographical error in the source (the the)"
+  },
+  {
+   "id": "P044",
+   "book": "Spec",
+   "pages": [
+    808
+   ],
+   "terms": [
+    "candidate execution execution"
+   ],
+   "claim": "typographical error in the source (execution execution)"
+  },
+  {
+   "id": "P045",
+   "book": "Spec",
+   "pages": [
+    159
+   ],
+   "terms": [
+    "WEB-COMPAT"
+   ],
+   "claim": "assignment target as a function call: WEB-COMPAT"
+  },
+  {
+   "id": "P046",
+   "book": "Spec",
+   "pages": [
+    775
+   ],
+   "terms": [
+    "Let errors be a new empty List"
+   ],
+   "claim": "Promise.any accumulates errors"
+  },
+  {
+   "id": "P047",
+   "book": "Spec",
+   "pages": [
+    777
+   ],
+   "terms": [
+    "Promise.try",
+    "Promise.withResolvers"
+   ],
+   "claim": "Promise.try and withResolvers are in the 2026 Spec"
+  },
+  {
+   "id": "P048",
+   "book": "Spec",
+   "pages": [
+    627
+   ],
+   "terms": [
+    "forEach calls callback once for each element present in the array"
+   ],
+   "claim": "forEach calls the callback once per element"
+  },
+  {
+   "id": "P049",
+   "book": "Spec",
+   "pages": [
+    464
+   ],
+   "terms": [
+    "Object.groupBy",
+    "Object.hasOwn"
+   ],
+   "claim": "Object.groupBy and Object.hasOwn are in the Spec"
+  },
+  {
+   "id": "P050",
+   "book": "Spec",
+   "pages": [
+    641
+   ],
+   "terms": [
+    "toSorted"
+   ],
+   "claim": "Array.prototype.toSorted is in the Spec"
+  },
+  {
+   "id": "P051",
+   "book": "Spec",
+   "pages": [
+    854
+   ],
+   "terms": [
+    "getYear",
+    "toGMTString"
+   ],
+   "claim": "Annex B: getYear and toGMTString"
+  },
+  {
+   "id": "P052",
+   "book": "Spec",
+   "pages": [
+    855
+   ],
+   "terms": [
+    "RegExp.prototype.compile"
+   ],
+   "claim": "Annex B: RegExp.prototype.compile"
+  },
+  {
+   "id": "P053",
+   "book": "Spec",
+   "pages": [
+    869
+   ],
+   "terms": [
+    "canonically equivalent"
+   ],
+   "claim": "Annex F: localeCompare and canonical equivalence"
+  },
+  {
+   "id": "P054",
+   "book": "Spec",
+   "pages": [
+    446
+   ],
+   "terms": [
+    "LegacyOctalEscapeSequence"
+   ],
+   "claim": "templates cannot contain legacy octal escapes"
+  },
+  {
+   "id": "P055",
+   "book": "Spec",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "ECMA-402"
+   ],
+   "claim": "Spec mentions ECMA-402 as the Intl standard"
+  },
+  {
+   "id": "P056",
+   "book": "Spec",
+   "pages": [
+    52
+   ],
+   "terms": [
+    "%Symbol.",
+    "@@"
+   ],
+   "claim": "%Symbol.x% notation and the old @@x"
+  },
+  {
+   "id": "P057",
+   "book": "EJpt",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "versão 2024 do JavaScript"
+   ],
+   "claim": "the book declares it uses the 2024 version of JavaScript"
+  },
+  {
+   "id": "P058",
+   "book": "EJpt",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "versão 5",
+    "2009",
+    "Em 2015, saiu a versão 6"
+   ],
+   "claim": "history of versions 5 and 6"
+  },
+  {
+   "id": "P059",
+   "book": "EJpt",
+   "pages": [
+    132
+   ],
+   "terms": [
+    "class foi introduzido apenas na edição de 2015"
+   ],
+   "claim": "class introduced in 2015"
+  },
+  {
+   "id": "P060",
+   "book": "EJpt",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "Arrow functions foram adicionadas em 2015"
+   ],
+   "claim": "arrow functions from 2015"
+  },
+  {
+   "id": "P061",
+   "book": "EJpt",
+   "pages": [
+    141
+   ],
+   "terms": [
+    "em 2015, symbols foram adicionados"
+   ],
+   "claim": "symbols from 2015"
+  },
+  {
+   "id": "P062",
+   "book": "EJpt",
+   "pages": [
+    221
+   ],
+   "terms": [
+    "Desde o ECMAScript 2015",
+    "módulos ES"
+   ],
+   "claim": "scripts and modules since ES2015"
+  },
+  {
+   "id": "P063",
+   "book": "EJpt",
+   "pages": [
+    225
+   ],
+   "terms": [
+    "Antes de 2015",
+    "CommonJS"
+   ],
+   "claim": "CommonJS before 2015"
+  },
+  {
+   "id": "P064",
+   "book": "EJpt",
+   "pages": [
+    32
+   ],
+   "terms": [
+    "pré-2015",
+    "let ainda não existia"
+   ],
+   "claim": "var is the pre-2015 form"
+  },
+  {
+   "id": "P065",
+   "book": "EJpt",
+   "pages": [
+    210
+   ],
+   "terms": [
+    "array de arrays",
+    "matchAll"
+   ],
+   "claim": "EJpt calls the return of matchAll an array of arrays"
+  },
+  {
+   "id": "P066",
+   "book": "EJpt",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "square root"
+   ],
+   "claim": "book program says square root but computes the square"
+  },
+  {
+   "id": "P067",
+   "book": "EJpt",
+   "pages": [
+    491
+   ],
+   "terms": [
+    "String(err)",
+    "error.status"
+   ],
+   "claim": "String(err) inside catch (error)"
+  },
+  {
+   "id": "P068",
+   "book": "EJpt",
+   "pages": [
+    227
+   ],
+   "terms": [
+    "date.getMonth()",
+    "M(MMM)?"
+   ],
+   "claim": "getMonth without adding 1 in formatDate"
+  },
+  {
+   "id": "P069",
+   "book": "EJpt",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "O operador ??",
+    "null ou undefined"
+   ],
+   "claim": "?? only falls back to the default for null/undefined"
+  },
+  {
+   "id": "P070",
+   "book": "EJpt",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "null ou undefined aparece em qualquer lado"
+   ],
+   "claim": "== with null/undefined"
+  },
+  {
+   "id": "P071",
+   "book": "EJpt",
+   "pages": [
+    183
+   ],
+   "terms": [
+    "e instanceof InputError"
+   ],
+   "claim": "selective catch with instanceof"
+  },
+  {
+   "id": "P072",
+   "book": "EJpt",
+   "pages": [
+    407
+   ],
+   "terms": [
+    "se resolve com sucesso mesmo se o servidor respondeu com um código de erro",
+    "rejeitada se houver um erro de rede"
+   ],
+   "claim": "fetch resolves on an HTTP error; rejects on a network error"
+  },
+  {
+   "id": "P073",
+   "book": "EJpt",
+   "pages": [
+    498
+   ],
+   "terms": [
+    "fetchOK",
+    "rejeitada quando o servidor retorna um código de erro"
+   ],
+   "claim": "the book's fetchOK wrapper"
+  },
+  {
+   "id": "P074",
+   "book": "EJpt",
+   "pages": [
+    257
+   ],
+   "terms": [
+    "handlers catch não estarão na pilha"
+   ],
+   "claim": "try/catch does not catch an asynchronous callback error"
+  },
+  {
+   "id": "P075",
+   "book": "EJpt",
+   "pages": [
+    259
+   ],
+   "terms": [
+    "lacuna assíncrona"
+   ],
+   "claim": "+= bug with await inside map"
+  },
+  {
+   "id": "P076",
+   "book": "EJpt",
+   "pages": [
+    258
+   ],
+   "terms": [
+    "files.map(async fileName"
+   ],
+   "claim": "fileSizes example with map(async)"
+  },
+  {
+   "id": "P077",
+   "book": "EJpt",
+   "pages": [
+    104
+   ],
+   "terms": [
+    "por um acidente histórico, typeof null também produz"
+   ],
+   "claim": "typeof null is a historical accident"
+  },
+  {
+   "id": "P078",
+   "book": "EJpt",
+   "pages": [
+    170
+   ],
+   "terms": [
+    "Cannot set property 'name' of undefined",
+    "construtores criados com a notação class sempre reclamam"
+   ],
+   "claim": "constructor without new in strict mode"
+  },
+  {
+   "id": "P079",
+   "book": "EJpt",
+   "pages": [
+    170
+   ],
+   "terms": [
+    "tão errada que não é discutida"
+   ],
+   "claim": "with is so wrong that it is not discussed"
+  },
+  {
+   "id": "P080",
+   "book": "EJpt",
+   "pages": [
+    198
+   ],
+   "terms": [
+    "100-1-30000"
+   ],
+   "claim": "getDate extracts a date from 100-1-30000"
+  },
+  {
+   "id": "P081",
+   "book": "EJpt",
+   "pages": [
+    202,
+    203
+   ],
+   "terms": [
+    "([01]+)+b",
+    "dobra com cada caractere"
+   ],
+   "claim": "regex with exponential backtracking"
+  },
+  {
+   "id": "P082",
+   "book": "EJpt",
+   "pages": [
+    459
+   ],
+   "terms": [
+    "versão 18 ou superior"
+   ],
+   "claim": "the book requires Node.js 18+"
+  },
+  {
+   "id": "P083",
+   "book": "EJpt",
+   "pages": [
+    224
+   ],
+   "terms": [
+    "mais de três milhões"
+   ],
+   "claim": "more than 3 million packages on NPM"
+  },
+  {
+   "id": "P084",
+   "book": "EJpt",
+   "pages": [
+    464
+   ],
+   "terms": [
+    "versionamento semântico",
+    "2.3.0"
+   ],
+   "claim": "semantic versioning"
+  },
+  {
+   "id": "P085",
+   "book": "EJpt",
+   "pages": [
+    306
+   ],
+   "terms": [
+    "naive took 32 ms"
+   ],
+   "claim": "layout example: 32 ms"
+  },
+  {
+   "id": "P086",
+   "book": "EJpt",
+   "pages": [
+    366
+   ],
+   "terms": [
+    "Math.min(time - lastTime, 100)"
+   ],
+   "claim": "step limit in the animation"
+  },
+  {
+   "id": "P087",
+   "book": "EJpt",
+   "pages": [
+    474
+   ],
+   "terms": [
+    "mime-types"
+   ],
+   "claim": "mime-types package"
+  },
+  {
+   "id": "P088",
+   "book": "EJpt",
+   "pages": [
+    476
+   ],
+   "terms": [
+    "idempotentes"
+   ],
+   "claim": "idempotent requests (DELETE)"
+  },
+  {
+   "id": "P089",
+   "book": "EJpt",
+   "pages": [
+    461
+   ],
+   "terms": [
+    "como document ou prompt, não estão"
+   ],
+   "claim": "Node has no document or prompt"
+  },
+  {
+   "id": "P090",
+   "book": "EJpt",
+   "pages": [
+    469
+   ],
+   "terms": [
+    "muito mais trabalhosa de usar do que fetch"
+   ],
+   "claim": "http.request is more laborious than fetch"
+  },
+  {
+   "id": "P091",
+   "book": "EJpt",
+   "pages": [
+    292
+   ],
+   "terms": [
+    "se comportam de forma bastante uniforme"
+   ],
+   "claim": "recent browsers are uniform"
+  },
+  {
+   "id": "P092",
+   "book": "EJpt",
+   "pages": [
+    214
+   ],
+   "terms": [
+    "ferramenta afiada com um cabo estranho"
+   ],
+   "claim": "regex: sharp tool"
+  },
+  {
+   "id": "P093",
+   "book": "EJpt",
+   "pages": [
+    138
+   ],
+   "terms": [
+    "Object.hasOwn"
+   ],
+   "claim": "Object.hasOwn as an alternative to in"
+  },
+  {
+   "id": "P094",
+   "book": "EJpt",
+   "pages": [
+    36
+   ],
+   "terms": [
+    "Number.isNaN"
+   ],
+   "claim": "use of Number.isNaN"
+  },
+  {
+   "id": "P095",
+   "book": "EJpt",
+   "pages": [
+    111
+   ],
+   "terms": [
+    "forEach"
+   ],
+   "claim": "forEach as a higher-order function"
+  },
+  {
+   "id": "P096",
+   "book": "EJpt",
+   "pages": [
+    197
+   ],
+   "terms": [
+    "Feb 02 2024"
+   ],
+   "claim": "date example from 2024"
+  },
+  {
+   "id": "P097",
+   "book": "EJpt",
+   "pages": [
+    402
+   ],
+   "terms": [
+    "13 Oct 2023"
+   ],
+   "claim": "date example from 2023"
+  },
+  {
+   "id": "P098",
+   "book": "EJpt",
+   "pages": [
+    228
+   ],
+   "terms": [
+    "Function é uma função embutida",
+    "perigoso"
+   ],
+   "claim": "Function constructor is dangerous (there is no eval in EJpt)"
+  },
+  {
+   "id": "P099",
+   "book": "EJ1",
+   "pages": [
+    247
+   ],
+   "terms": [
+    "March to July 2007",
+    "November 28 2013"
+   ],
+   "claim": "EJ1 written in 2007 and modified in 2013"
+  },
+  {
+   "id": "P100",
+   "book": "EJ1",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "square root",
+    "theNumber * theNumber"
+   ],
+   "claim": "same square/root error in EJ1"
+  },
+  {
+   "id": "P101",
+   "book": "EJ1",
+   "pages": [
+    179
+   ],
+   "terms": [
+    "{,4} means four or less"
+   ],
+   "claim": "EJ1 states that {,4} means four or fewer"
+  },
+  {
+   "id": "P102",
+   "book": "EJ1",
+   "pages": [
+    226
+   ],
+   "terms": [
+    "self.content = null"
+   ],
+   "claim": "self.content in EJ1"
+  },
+  {
+   "id": "P103",
+   "book": "EJ1",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "As of 2011",
+    "ECMAScript harmony"
+   ],
+   "claim": "EJ1 cites Harmony in 2011"
+  },
+  {
+   "id": "P104",
+   "book": "EJ1",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "Internet Explorer version 6 or higher",
+    "Firefox 1.5",
+    "Opera 9",
+    "Safari 3"
+   ],
+   "claim": "EJ1 console browsers"
+  },
+  {
+   "id": "P105",
+   "book": "EJ1",
+   "pages": [
+    195
+   ],
+   "terms": [
+    "early 2007"
+   ],
+   "claim": "browser quirks from early 2007"
+  },
+  {
+   "id": "P106",
+   "book": "EJ1",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "ECMAScript Harmony will add some way to define variables",
+    "the let keyword"
+   ],
+   "claim": "EJ1 cites let as the future"
+  },
+  {
+   "id": "P107",
+   "book": "EJ1",
+   "pages": [
+    241
+   ],
+   "terms": [
+    "I've never actually used this in a real program"
+   ],
+   "claim": "author never used with"
+  },
+  {
+   "id": "P108",
+   "book": "EJ1",
+   "pages": [
+    131
+   ],
+   "terms": [
+    "Gecko",
+    "__proto__"
+   ],
+   "claim": "__proto__ in Gecko browsers"
+  },
+  {
+   "id": "P109",
+   "book": "EJ1",
+   "pages": [
+    145
+   ],
+   "terms": [
+    "setTimeout causes a function or string to be executed"
+   ],
+   "claim": "timers accept a string"
+  },
+  {
+   "id": "P110",
+   "book": "EJ1",
+   "pages": [
+    168
+   ],
+   "terms": [
+    "use the eval function to execute it"
+   ],
+   "claim": "EJ1 uses eval to load code"
+  },
+  {
+   "id": "P111",
+   "book": "EJ1",
+   "pages": [
+    234
+   ],
+   "terms": [
+    "converted to a normal JavaScript value by using the eval function"
+   ],
+   "claim": "EJ1 reads JSON with eval"
+  },
+  {
+   "id": "P112",
+   "book": "EJ1",
+   "pages": [
+    29
+   ],
+   "terms": [
+    "Actually, 53"
+   ],
+   "claim": "note corrects 52 to 53 bits"
+  },
+  {
+   "id": "P113",
+   "book": "EJ1",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "Uppercase letters are always 'less' than lowercase ones"
+   ],
+   "claim": "string sorting by uppercase/lowercase"
+  },
+  {
+   "id": "P114",
+   "book": "EJ1",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "out of stack space",
+    "too much recursion"
+   ],
+   "claim": "stack overflow messages"
+  },
+  {
+   "id": "P115",
+   "book": "EJ1",
+   "pages": [
+    175
+   ],
+   "terms": [
+    "the amount of available libraries is not very large"
+   ],
+   "claim": "EJ1 says there are few libraries"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N001",
+   "book": "EJpt",
+   "terms": [
+    "structuredClone"
+   ],
+   "claim": "EJpt does not teach structuredClone"
+  },
+  {
+   "id": "N002",
+   "book": "EJpt",
+   "terms": [
+    "queueMicrotask"
+   ],
+   "claim": "EJpt does not cite queueMicrotask"
+  },
+  {
+   "id": "N003",
+   "book": "EJpt",
+   "terms": [
+    "AbortController"
+   ],
+   "claim": "EJpt does not cite AbortController"
+  },
+  {
+   "id": "N004",
+   "book": "EJpt",
+   "terms": [
+    "Array.isArray"
+   ],
+   "claim": "EJpt does not cite Array.isArray"
+  },
+  {
+   "id": "N005",
+   "book": "EJpt",
+   "terms": [
+    "localeCompare"
+   ],
+   "claim": "EJpt does not cite localeCompare"
+  },
+  {
+   "id": "N006",
+   "book": "EJpt",
+   "terms": [
+    "Number.EPSILON"
+   ],
+   "claim": "EJpt does not cite Number.EPSILON"
+  },
+  {
+   "id": "N007",
+   "book": "EJpt",
+   "terms": [
+    "replaceAll"
+   ],
+   "claim": "EJpt does not cite replaceAll"
+  },
+  {
+   "id": "N008",
+   "book": "EJpt",
+   "terms": [
+    "response.ok"
+   ],
+   "claim": "EJpt does not cite response.ok"
+  },
+  {
+   "id": "N009",
+   "book": "EJpt",
+   "terms": [
+    "re:\\beval\\b"
+   ],
+   "claim": "EJpt does not cite eval"
+  },
+  {
+   "id": "N010",
+   "book": "EJpt",
+   "terms": [
+    "focusin"
+   ],
+   "claim": "EJpt does not cite focusin"
+  },
+  {
+   "id": "N011",
+   "book": "EJpt",
+   "terms": [
+    "Object.groupBy",
+    "toSorted",
+    "Promise.allSettled",
+    "Promise.any"
+   ],
+   "claim": "EJpt does not teach groupBy, toSorted, allSettled, any"
+  },
+  {
+   "id": "N012",
+   "book": "EJpt",
+   "terms": [
+    "Temporal"
+   ],
+   "claim": "EJpt does not cite Temporal"
+  },
+  {
+   "id": "N013",
+   "book": "EJ1",
+   "terms": [
+    "new Promise",
+    "Promise.all",
+    "JSON.parse",
+    "Object.create",
+    "querySelector"
+   ],
+   "claim": "EJ1 does not carry new Promise, Promise.all, JSON.parse, Object.create, querySelector"
+  },
+  {
+   "id": "N014",
+   "book": "EJ1",
+   "terms": [
+    "re:\\bSymbol\\(",
+    "Symbol.iterator",
+    "use strict"
+   ],
+   "claim": "EJ1 does not carry Symbol() nor strict mode"
+  },
+  {
+   "id": "N015",
+   "book": "EJ1",
+   "terms": [
+    "=>",
+    "re:\\bclass\\s+\\w+\\s*\\{",
+    "re:\\bconst\\s+\\w+\\s*="
+   ],
+   "claim": "EJ1 does not use arrow, class or const"
+  },
+  {
+   "id": "N016",
+   "book": "Spec",
+   "terms": [
+    "structuredClone",
+    "queueMicrotask",
+    "AbortController"
+   ],
+   "claim": "Spec does not define the environment APIs structuredClone/queueMicrotask/AbortController"
+  },
+  {
+   "id": "N017",
+   "book": "Spec",
+   "terms": [
+    "setTimeout",
+    "setInterval",
+    "console.log",
+    "localStorage",
+    "XMLHttpRequest",
+    "querySelector"
+   ],
+   "claim": "Spec does not define host APIs"
+  },
+  {
+   "id": "N018",
+   "book": "Spec",
+   "terms": [
+    "Array.prototype.groupBy",
+    "Object.observe",
+    "Array.prototype.contains",
+    "Array.prototype.flatten"
+   ],
+   "claim": "Spec does not carry these names (proposals/old names)"
+  },
+  {
+   "id": "N019",
+   "book": "Spec",
+   "terms": [
+    "Temporal.Now",
+    "Temporal.PlainDate",
+    "Intl.DateTimeFormat"
+   ],
+   "claim": "Spec does not define Temporal nor Intl.DateTimeFormat"
+  },
+  {
+   "id": "N020",
+   "book": "Spec",
+   "terms": [
+    "WebAssembly",
+    "re:\\bfetch\\("
+   ],
+   "claim": "Spec does not define WebAssembly nor fetch"
+  },
+  {
+   "id": "N021",
+   "book": "Spec",
+   "terms": [
+    "TypeScript",
+    "ReactDOM",
+    "React.createElement",
+    "Angular",
+    "Node.js module"
+   ],
+   "claim": "Spec does not mention TypeScript nor frameworks (React, Angular)"
+  },
+  {
+   "id": "N022",
+   "book": "EJ1",
+   "terms": [
+    "structuredClone",
+    "queueMicrotask",
+    "AbortController"
+   ],
+   "claim": "EJ1 does not cite structuredClone/queueMicrotask/AbortController"
+  },
+  {
+   "id": "N023",
+   "book": "EJ1",
+   "terms": [
+    "Temporal",
+    "Intl."
+   ],
+   "claim": "EJ1 does not cite Temporal nor Intl"
+  },
+  {
+   "id": "N024",
+   "book": "EJ1",
+   "terms": [
+    "TypeScript",
+    "ReactDOM",
+    "AngularJS"
+   ],
+   "claim": "EJ1 does not cite TypeScript, React nor AngularJS"
+  }
+ ]
+}

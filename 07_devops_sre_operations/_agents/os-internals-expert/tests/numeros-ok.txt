@@ -1,0 +1,11 @@
+# Manually reviewed exceptions (file:number) for audit_numbers.py. Reason: value lists, pt-BR decimal comma,
+# number spelled out in the book ("five and thirty seconds") or approximate year ("early 90's").
+02-escalonamento-de-cpu.md:10,20
+04-paginacao-tlb-e-tabelas-de-paginas.md:0,1
+04-paginacao-tlb-e-tabelas-de-paginas.md:4,5
+04-paginacao-tlb-e-tabelas-de-paginas.md:254,255
+08-dispositivos-de-io-discos-e-raid.md:62
+09-arquivos-diretorios-vsfs-e-ffs.md:30
+10-consistencia-journaling-lfs-ssd-e-integridade.md:1990
+10-consistencia-journaling-lfs-ssd-e-integridade.md:0,60
+10-consistencia-journaling-lfs-ssd-e-integridade.md:0,05

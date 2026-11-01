@@ -1,0 +1,19 @@
+{
+  "name": "privacy-lgpd-engineering-expert",
+  "version": "1.0.0",
+  "description": "Technical specialist in privacy and data protection based on the LGPD (Lei Geral de Proteção de Dados, Lei 13.709/2018, compiled text) and NISTIR 8062 (privacy engineering and risk management). Does not give legal advice: refers to a lawyer and the encarregado (DPO).",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "privacy",
+    "lgpd",
+    "data-protection",
+    "privacy-engineering",
+    "privacy-by-design",
+    "nist-ir-8062",
+    "dpia",
+    "ripd",
+    "anpd",
+    "risk-management"
+  ]
+}

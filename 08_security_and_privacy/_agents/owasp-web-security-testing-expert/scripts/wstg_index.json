@@ -1,0 +1,1296 @@
+{
+ "source": "OWASP Web Security Testing Guide v4.2",
+ "page_convention": "PDF page; printed = PDF - 2",
+ "entries": [
+  {
+   "id": "WSTG-INFO-01",
+   "title": "Conduct Search Engine Discovery Reconnaissance for Information Leakage",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    50,
+    53
+   ],
+   "keywords": "motor de busca google dorking operadores site inurl cache vazamento informação reconhecimento search engine",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-02",
+   "title": "Fingerprint Web Server",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    54,
+    57
+   ],
+   "keywords": "fingerprint servidor web banner grabbing cabeçalho server nikto nmap",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-03",
+   "title": "Review Webserver Metafiles for Information Leakage",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    58,
+    61
+   ],
+   "keywords": "robots.txt sitemap security.txt humans.txt metafiles well-known meta tags",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-04",
+   "title": "Enumerate Applications on Webserver",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    62,
+    67
+   ],
+   "keywords": "enumerar aplicações virtual host portas não padrão dns reverse ip descoberta nmap",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-05",
+   "title": "Review Webpage Content for Information Leakage",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    68,
+    71
+   ],
+   "keywords": "comentários html javascript source map chaves api vazamento conteúdo página",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-06",
+   "title": "Identify Application Entry Points",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    72,
+    75
+   ],
+   "keywords": "pontos de entrada parâmetros proxy interceptador planilha campos ocultos attack surface",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-07",
+   "title": "Map Execution Paths Through Application",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    76,
+    77
+   ],
+   "keywords": "caminhos de execução cobertura spider fluxo de dados taint mapa aplicação",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-08",
+   "title": "Fingerprint Web Application Framework",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    78,
+    85
+   ],
+   "keywords": "fingerprint framework cookies x-powered-by cms whatweb wappalyzer dirbusting",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-INFO-09",
+   "title": "Fingerprint Web Application",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    86,
+    86
+   ],
+   "keywords": "mesclado merged fingerprint aplicação",
+   "reference": "coleta-de-informacao-info.md",
+   "status": "merged into INFO-08 (Fingerprint Web Application Framework; p.86)"
+  },
+  {
+   "id": "WSTG-INFO-10",
+   "title": "Map Application Architecture",
+   "category": "4.1 Information Gathering",
+   "pages": [
+    87,
+    88
+   ],
+   "keywords": "arquitetura firewall waf reverse proxy balanceador load balancer mapa rede",
+   "reference": "coleta-de-informacao-info.md"
+  },
+  {
+   "id": "WSTG-CONF-01",
+   "title": "Test Network Infrastructure Configuration",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    90,
+    92
+   ],
+   "keywords": "infraestrutura de rede configuração vulnerabilidades conhecidas ferramentas administrativas portas",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-02",
+   "title": "Test Application Platform Configuration",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    93,
+    98
+   ],
+   "keywords": "plataforma configuração arquivos de exemplo comentários logging logs rotação cis benchmark",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-03",
+   "title": "Test File Extensions Handling for Sensitive Information",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    99,
+    101
+   ],
+   "keywords": "extensões de arquivo .inc .bak forced browsing dirbust upload",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-04",
+   "title": "Review Old Backup and Unreferenced Files for Sensitive Information",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    102,
+    107
+   ],
+   "keywords": "backup arquivos antigos não referenciados .old snapshots listagem de diretório",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-05",
+   "title": "Enumerate Infrastructure and Application Admin Interfaces",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    108,
+    110
+   ],
+   "keywords": "interfaces administrativas admin painel parâmetro oculto porta alternativa",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-06",
+   "title": "Test HTTP Methods",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    111,
+    114
+   ],
+   "keywords": "métodos http put trace xst method override options verb tampering",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-07",
+   "title": "Test HTTP Strict Transport Security",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    115,
+    116
+   ],
+   "keywords": "hsts strict-transport-security max-age includesubdomains preload",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-08",
+   "title": "Test RIA Cross Domain Policy",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    117,
+    118
+   ],
+   "keywords": "crossdomain.xml clientaccesspolicy flash silverlight política domínio cruzado",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-09",
+   "title": "Test File Permission",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    119,
+    119
+   ],
+   "keywords": "permissões de arquivo namei ls world-readable",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-10",
+   "title": "Test for Subdomain Takeover",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    120,
+    123
+   ],
+   "keywords": "subdomain takeover subdomínio dns cname ns domínio expirado",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-CONF-11",
+   "title": "Test Cloud Storage",
+   "category": "4.2 Configuration and Deployment Management",
+   "pages": [
+    124,
+    126
+   ],
+   "keywords": "armazenamento nuvem s3 bucket cloud storage aws",
+   "reference": "configuracao-e-deploy-conf.md"
+  },
+  {
+   "id": "WSTG-IDNT-01",
+   "title": "Test Role Definitions",
+   "category": "4.3 Identity Management",
+   "pages": [
+    128,
+    129
+   ],
+   "keywords": "papéis roles rbac definição permissões maker-checker",
+   "reference": "gestao-de-identidade-idnt.md"
+  },
+  {
+   "id": "WSTG-IDNT-02",
+   "title": "Test User Registration Process",
+   "category": "4.3 Identity Management",
+   "pages": [
+    130,
+    131
+   ],
+   "keywords": "registro de usuário cadastro verificação de identidade",
+   "reference": "gestao-de-identidade-idnt.md"
+  },
+  {
+   "id": "WSTG-IDNT-03",
+   "title": "Test Account Provisioning Process",
+   "category": "4.3 Identity Management",
+   "pages": [
+    132,
+    133
+   ],
+   "keywords": "provisionamento de contas desprovisionamento privilégios",
+   "reference": "gestao-de-identidade-idnt.md"
+  },
+  {
+   "id": "WSTG-IDNT-04",
+   "title": "Testing for Account Enumeration and Guessable User Account",
+   "category": "4.3 Identity Management",
+   "pages": [
+    134,
+    137
+   ],
+   "keywords": "enumeração de contas usuários adivinháveis mensagens de erro login tempo de resposta",
+   "reference": "gestao-de-identidade-idnt.md"
+  },
+  {
+   "id": "WSTG-IDNT-05",
+   "title": "Testing for Weak or Unenforced Username Policy",
+   "category": "4.3 Identity Management",
+   "pages": [
+    138,
+    138
+   ],
+   "keywords": "política de nome de usuário estrutura nomes enumeração",
+   "reference": "gestao-de-identidade-idnt.md"
+  },
+  {
+   "id": "WSTG-ATHN-01",
+   "title": "Testing for Credentials Transported over an Encrypted Channel",
+   "category": "4.4 Authentication",
+   "pages": [
+    140,
+    144
+   ],
+   "keywords": "credenciais canal criptografado https tls login transporte secure cookie",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-02",
+   "title": "Testing for Default Credentials",
+   "category": "4.4 Authentication",
+   "pages": [
+    145,
+    147
+   ],
+   "keywords": "credenciais padrão default senha admin contas novas",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-03",
+   "title": "Testing for Weak Lock Out Mechanism",
+   "category": "4.4 Authentication",
+   "pages": [
+    148,
+    150
+   ],
+   "keywords": "bloqueio de conta lockout captcha força bruta desbloqueio",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-04",
+   "title": "Testing for Bypassing Authentication Schema",
+   "category": "4.4 Authentication",
+   "pages": [
+    151,
+    156
+   ],
+   "keywords": "contornar autenticação forced browsing parâmetro previsão de sessão bypass",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-05",
+   "title": "Testing for Vulnerable Remember Password",
+   "category": "4.4 Authentication",
+   "pages": [
+    157,
+    157
+   ],
+   "keywords": "lembrar senha remember me gerenciador de senhas",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-06",
+   "title": "Testing for Browser Cache Weaknesses",
+   "category": "4.4 Authentication",
+   "pages": [
+    158,
+    160
+   ],
+   "keywords": "cache do navegador histórico botão voltar cache-control no-store",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-07",
+   "title": "Testing for Weak Password Policy",
+   "category": "4.4 Authentication",
+   "pages": [
+    161,
+    161
+   ],
+   "keywords": "política de senha complexidade expiração histórico comprimento",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-08",
+   "title": "Testing for Weak Security Question Answer",
+   "category": "4.4 Authentication",
+   "pages": [
+    162,
+    163
+   ],
+   "keywords": "perguntas de segurança respostas secretas recuperação",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-09",
+   "title": "Testing for Weak Password Change or Reset Functionalities",
+   "category": "4.4 Authentication",
+   "pages": [
+    164,
+    165
+   ],
+   "keywords": "troca de senha reset redefinição recuperação link token",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHN-10",
+   "title": "Testing for Weaker Authentication in Alternative Channel",
+   "category": "4.4 Authentication",
+   "pages": [
+    166,
+    168
+   ],
+   "keywords": "canal alternativo autenticação mobile call center sso",
+   "reference": "autenticacao-athn.md"
+  },
+  {
+   "id": "WSTG-ATHZ-01",
+   "title": "Testing Directory Traversal File Include",
+   "category": "4.5 Authorization",
+   "pages": [
+    170,
+    174
+   ],
+   "keywords": "travessia de diretório path traversal inclusão de arquivo dot-dot-slash",
+   "reference": "autorizacao-athz.md"
+  },
+  {
+   "id": "WSTG-ATHZ-02",
+   "title": "Testing for Bypassing Authorization Schema",
+   "category": "4.5 Authorization",
+   "pages": [
+    175,
+    179
+   ],
+   "keywords": "contornar autorização horizontal vertical controle de acesso x-original-url papéis",
+   "reference": "autorizacao-athz.md"
+  },
+  {
+   "id": "WSTG-ATHZ-03",
+   "title": "Testing for Privilege Escalation",
+   "category": "4.5 Authorization",
+   "pages": [
+    180,
+    182
+   ],
+   "keywords": "escalação de privilégio privilege escalation perfil grupo",
+   "reference": "autorizacao-athz.md"
+  },
+  {
+   "id": "WSTG-ATHZ-04",
+   "title": "Testing for Insecure Direct Object References",
+   "category": "4.5 Authorization",
+   "pages": [
+    183,
+    184
+   ],
+   "keywords": "idor referência direta insegura objeto parâmetro id",
+   "reference": "autorizacao-athz.md"
+  },
+  {
+   "id": "WSTG-SESS-01",
+   "title": "Testing for Session Management Schema",
+   "category": "4.6 Session Management",
+   "pages": [
+    186,
+    191
+   ],
+   "keywords": "esquema de sessão token aleatoriedade previsibilidade cookie análise",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-02",
+   "title": "Testing for Cookies Attributes",
+   "category": "4.6 Session Management",
+   "pages": [
+    192,
+    195
+   ],
+   "keywords": "atributos de cookies secure httponly samesite domain path prefixo __host",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-03",
+   "title": "Testing for Session Fixation",
+   "category": "4.6 Session Management",
+   "pages": [
+    196,
+    198
+   ],
+   "keywords": "fixação de sessão session fixation renovar token login",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-04",
+   "title": "Testing for Exposed Session Variables",
+   "category": "4.6 Session Management",
+   "pages": [
+    199,
+    201
+   ],
+   "keywords": "variáveis de sessão expostas id de sessão get post cache transporte",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-05",
+   "title": "Testing for Cross Site Request Forgery",
+   "category": "4.6 Session Management",
+   "pages": [
+    202,
+    207
+   ],
+   "keywords": "csrf cross site request forgery falsificação de requisição token anti-csrf",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-06",
+   "title": "Testing for Logout Functionality",
+   "category": "4.6 Session Management",
+   "pages": [
+    208,
+    210
+   ],
+   "keywords": "logout encerramento de sessão single sign-off sso",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-07",
+   "title": "Testing Session Timeout",
+   "category": "4.6 Session Management",
+   "pages": [
+    211,
+    212
+   ],
+   "keywords": "timeout de sessão inatividade idle expiração servidor",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-08",
+   "title": "Testing for Session Puzzling",
+   "category": "4.6 Session Management",
+   "pages": [
+    213,
+    214
+   ],
+   "keywords": "session puzzling variable overloading variável de sessão",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-SESS-09",
+   "title": "Testing for Session Hijacking",
+   "category": "4.6 Session Management",
+   "pages": [
+    215,
+    216
+   ],
+   "keywords": "sequestro de sessão session hijacking cookie hsts",
+   "reference": "gestao-de-sessao-sess.md"
+  },
+  {
+   "id": "WSTG-INPV-01",
+   "title": "Testing for Reflected Cross Site Scripting",
+   "category": "4.7 Input Validation",
+   "pages": [
+    219,
+    224
+   ],
+   "keywords": "xss refletido reflected cross site scripting codificação saída",
+   "reference": "validacao-de-entrada-inpv-parte1.md"
+  },
+  {
+   "id": "WSTG-INPV-02",
+   "title": "Testing for Stored Cross Site Scripting",
+   "category": "4.7 Input Validation",
+   "pages": [
+    225,
+    230
+   ],
+   "keywords": "xss armazenado stored persistente segunda ordem upload",
+   "reference": "validacao-de-entrada-inpv-parte1.md"
+  },
+  {
+   "id": "WSTG-INPV-03",
+   "title": "Testing for HTTP Verb Tampering",
+   "category": "4.7 Input Validation",
+   "pages": [
+    231,
+    231
+   ],
+   "keywords": "mesclado merged verb tampering métodos http",
+   "reference": "validacao-de-entrada-inpv-parte1.md",
+   "status": "merged into CONF-06 (Test HTTP Methods; p.231)"
+  },
+  {
+   "id": "WSTG-INPV-04",
+   "title": "Testing for HTTP Parameter Pollution",
+   "category": "4.7 Input Validation",
+   "pages": [
+    232,
+    235
+   ],
+   "keywords": "http parameter pollution hpp parâmetros duplicados poluição",
+   "reference": "validacao-de-entrada-inpv-parte1.md"
+  },
+  {
+   "id": "WSTG-INPV-05",
+   "title": "Testing for SQL Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    236,
+    248
+   ],
+   "keywords": "sql injection injeção sql sqli banco de dados cego blind union",
+   "reference": "validacao-de-entrada-inpv-parte1.md"
+  },
+  {
+   "id": "WSTG-INPV-05.1",
+   "title": "Testing for Oracle (section 4.7.5.1)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    249,
+    255
+   ],
+   "keywords": "oracle pl/sql gateway sql injection oracle",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.2",
+   "title": "Testing for MySQL (section 4.7.5.2)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    256,
+    260
+   ],
+   "keywords": "mysql sql injection information_schema",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.3",
+   "title": "Testing for SQL Server (section 4.7.5.3)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    261,
+    267
+   ],
+   "keywords": "sql server mssql sql injection",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.4",
+   "title": "Testing PostgreSQL (section 4.7.5.4)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    268,
+    271
+   ],
+   "keywords": "postgresql postgres sql injection",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.5",
+   "title": "Testing for MS Access (section 4.7.5.5)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    272,
+    275
+   ],
+   "keywords": "ms access sql injection",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.6",
+   "title": "Testing for NoSQL Injection (section 4.7.5.6)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    276,
+    278
+   ],
+   "keywords": "nosql injection mongodb",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.7",
+   "title": "Testing for ORM Injection (section 4.7.5.7)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    279,
+    280
+   ],
+   "keywords": "orm injection mapeamento objeto-relacional",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-05.8",
+   "title": "Testing for Client-side SQL Injection (section 4.7.5.8)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    281,
+    282
+   ],
+   "keywords": "client-side sql injection web sql",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-06",
+   "title": "Testing for LDAP Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    283,
+    285
+   ],
+   "keywords": "ldap injection injeção ldap filtro",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-07",
+   "title": "Testing for XML Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    286,
+    293
+   ],
+   "keywords": "xml injection xxe injeção xml entidade externa",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-08",
+   "title": "Testing for SSI Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    294,
+    295
+   ],
+   "keywords": "ssi injection server-side includes",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-09",
+   "title": "Testing for XPath Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    296,
+    297
+   ],
+   "keywords": "xpath injection",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-10",
+   "title": "Testing for IMAP SMTP Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    298,
+    302
+   ],
+   "keywords": "imap smtp injection webmail e-mail",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-11",
+   "title": "Testing for Code Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    303,
+    304
+   ],
+   "keywords": "code injection injeção de código php asp",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-11.1",
+   "title": "Testing for Local File Inclusion (section 4.7.11.1)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    305,
+    308
+   ],
+   "keywords": "local file inclusion lfi inclusão de arquivo local",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-11.2",
+   "title": "Testing for Remote File Inclusion (section 4.7.11.2)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    309,
+    309
+   ],
+   "keywords": "remote file inclusion rfi inclusão de arquivo remoto",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "note": "The ID suffix does not exist in the guide; it is the numbered ToC section (p.4-5). The suffix is the package's [inference]."
+  },
+  {
+   "id": "WSTG-INPV-12",
+   "title": "Testing for Command Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    310,
+    313
+   ],
+   "keywords": "command injection injeção de comando sistema operacional shell",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-13",
+   "title": "Testing for Format String Injection (Buffer Overflow removed)",
+   "category": "4.7 Input Validation",
+   "pages": [
+    314,
+    317
+   ],
+   "keywords": "format string buffer overflow especificadores de formato",
+   "reference": "validacao-de-entrada-inpv-parte2.md",
+   "status": "buffer overflow removed (p.314); format string on p.315"
+  },
+  {
+   "id": "WSTG-INPV-14",
+   "title": "Testing for Incubated Vulnerability",
+   "category": "4.7 Input Validation",
+   "pages": [
+    318,
+    320
+   ],
+   "keywords": "vulnerabilidade incubada persistente recall watering hole",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-15",
+   "title": "Testing for HTTP Splitting Smuggling",
+   "category": "4.7 Input Validation",
+   "pages": [
+    321,
+    324
+   ],
+   "keywords": "http splitting smuggling crlf contrabando",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-16",
+   "title": "Testing for HTTP Incoming Requests",
+   "category": "4.7 Input Validation",
+   "pages": [
+    325,
+    326
+   ],
+   "keywords": "requisições http de entrada monitoramento reverse proxy tcpdump",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-17",
+   "title": "Testing for Host Header Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    327,
+    328
+   ],
+   "keywords": "host header injection cabeçalho host",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-18",
+   "title": "Testing for Server-side Template Injection",
+   "category": "4.7 Input Validation",
+   "pages": [
+    329,
+    332
+   ],
+   "keywords": "ssti server-side template injection template injection motor de template",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-INPV-19",
+   "title": "Testing for Server-Side Request Forgery",
+   "category": "4.7 Input Validation",
+   "pages": [
+    333,
+    335
+   ],
+   "keywords": "ssrf server-side request forgery requisição forjada servidor",
+   "reference": "validacao-de-entrada-inpv-parte2.md"
+  },
+  {
+   "id": "WSTG-ERRH-01",
+   "title": "Testing for Improper Error Handling",
+   "category": "4.8 Error Handling",
+   "pages": [
+    337,
+    338
+   ],
+   "keywords": "tratamento de erros mensagens de erro stack trace fuzzing exceção",
+   "reference": "erros-e-criptografia-errh-cryp.md"
+  },
+  {
+   "id": "WSTG-ERRH-02",
+   "title": "Testing for Stack Traces",
+   "category": "4.8 Error Handling",
+   "pages": [
+    339,
+    339
+   ],
+   "keywords": "mesclado merged stack traces",
+   "reference": "erros-e-criptografia-errh-cryp.md",
+   "status": "merged into ERRH-01 (Testing for Improper Error Handling; p.339)"
+  },
+  {
+   "id": "WSTG-CRYP-01",
+   "title": "Testing for Weak Transport Layer Security",
+   "category": "4.9 Weak Cryptography",
+   "pages": [
+    341,
+    343
+   ],
+   "keywords": "tls fraco ssl cifras certificados protocolo testssl hsts",
+   "reference": "erros-e-criptografia-errh-cryp.md"
+  },
+  {
+   "id": "WSTG-CRYP-02",
+   "title": "Testing for Padding Oracle",
+   "category": "4.9 Weak Cryptography",
+   "pages": [
+    344,
+    346
+   ],
+   "keywords": "padding oracle cbc bloco cifra",
+   "reference": "erros-e-criptografia-errh-cryp.md"
+  },
+  {
+   "id": "WSTG-CRYP-03",
+   "title": "Testing for Sensitive Information Sent via Unencrypted Channels",
+   "category": "4.9 Weak Cryptography",
+   "pages": [
+    347,
+    349
+   ],
+   "keywords": "informação sensível canal sem criptografia http pii",
+   "reference": "erros-e-criptografia-errh-cryp.md"
+  },
+  {
+   "id": "WSTG-CRYP-04",
+   "title": "Testing for Weak Encryption",
+   "category": "4.9 Weak Cryptography",
+   "pages": [
+    350,
+    352
+   ],
+   "keywords": "criptografia fraca md5 rc4 ecb iv pbkdf2 algoritmo",
+   "reference": "erros-e-criptografia-errh-cryp.md"
+  },
+  {
+   "id": "WSTG-BUSL-01",
+   "title": "Test Business Logic Data Validation",
+   "category": "4.10 Business Logic",
+   "pages": [
+    357,
+    358
+   ],
+   "keywords": "validação de dados de negócio lógica dados logicamente válidos",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-02",
+   "title": "Test Ability to Forge Requests",
+   "category": "4.10 Business Logic",
+   "pages": [
+    359,
+    360
+   ],
+   "keywords": "forjar requisições parâmetros previsíveis funcionalidade oculta debug",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-03",
+   "title": "Test Integrity Checks",
+   "category": "4.10 Business Logic",
+   "pages": [
+    361,
+    363
+   ],
+   "keywords": "verificações de integridade campos ocultos logs não editáveis",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-04",
+   "title": "Test for Process Timing",
+   "category": "4.10 Business Logic",
+   "pages": [
+    364,
+    366
+   ],
+   "keywords": "temporização de processo timing tempo de resposta",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-05",
+   "title": "Test Number of Times a Function Can Be Used Limits",
+   "category": "4.10 Business Logic",
+   "pages": [
+    367,
+    368
+   ],
+   "keywords": "limite de uso de função cupom desconto número de vezes",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-06",
+   "title": "Testing for the Circumvention of Work Flows",
+   "category": "4.10 Business Logic",
+   "pages": [
+    369,
+    370
+   ],
+   "keywords": "contornar fluxo de trabalho workflow etapas ordem",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-07",
+   "title": "Test Defenses Against Application Misuse",
+   "category": "4.10 Business Logic",
+   "pages": [
+    371,
+    372
+   ],
+   "keywords": "defesas contra abuso uso indevido detecção appsensor",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-08",
+   "title": "Test Upload of Unexpected File Types",
+   "category": "4.10 Business Logic",
+   "pages": [
+    373,
+    374
+   ],
+   "keywords": "upload tipos de arquivo inesperados extensão content-type",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-BUSL-09",
+   "title": "Test Upload of Malicious Files",
+   "category": "4.10 Business Logic",
+   "pages": [
+    375,
+    378
+   ],
+   "keywords": "upload arquivos maliciosos malware web shell zip bomb eicar",
+   "reference": "logica-de-negocio-busl.md"
+  },
+  {
+   "id": "WSTG-CLNT-01",
+   "title": "Testing for DOM-Based Cross Site Scripting",
+   "category": "4.11 Client-side",
+   "pages": [
+    380,
+    382
+   ],
+   "keywords": "dom xss dom-based sink source javascript",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-02",
+   "title": "Testing for JavaScript Execution",
+   "category": "4.11 Client-side",
+   "pages": [
+    383,
+    384
+   ],
+   "keywords": "execução de javascript injeção javascript",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-03",
+   "title": "Testing for HTML Injection",
+   "category": "4.11 Client-side",
+   "pages": [
+    385,
+    386
+   ],
+   "keywords": "html injection injeção de html innerhtml",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-04",
+   "title": "Testing for Client-side URL Redirect",
+   "category": "4.11 Client-side",
+   "pages": [
+    387,
+    388
+   ],
+   "keywords": "redirecionamento url open redirect cliente",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-05",
+   "title": "Testing for CSS Injection",
+   "category": "4.11 Client-side",
+   "pages": [
+    389,
+    390
+   ],
+   "keywords": "css injection injeção de css",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-06",
+   "title": "Testing for Client-side Resource Manipulation",
+   "category": "4.11 Client-side",
+   "pages": [
+    391,
+    392
+   ],
+   "keywords": "manipulação de recursos cliente iframe src",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-07",
+   "title": "Testing Cross Origin Resource Sharing",
+   "category": "4.11 Client-side",
+   "pages": [
+    393,
+    395
+   ],
+   "keywords": "cors cross origin resource sharing origem",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-08",
+   "title": "Testing for Cross Site Flashing",
+   "category": "4.11 Client-side",
+   "pages": [
+    396,
+    401
+   ],
+   "keywords": "cross site flashing flash actionscript swf",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-09",
+   "title": "Testing for Clickjacking",
+   "category": "4.11 Client-side",
+   "pages": [
+    402,
+    411
+   ],
+   "keywords": "clickjacking x-frame-options frame busting iframe",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-10",
+   "title": "Testing WebSockets",
+   "category": "4.11 Client-side",
+   "pages": [
+    412,
+    414
+   ],
+   "keywords": "websockets websocket origin ws wss",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-11",
+   "title": "Testing Web Messaging",
+   "category": "4.11 Client-side",
+   "pages": [
+    415,
+    417
+   ],
+   "keywords": "web messaging postmessage mensagens entre origens",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-12",
+   "title": "Testing Browser Storage",
+   "category": "4.11 Client-side",
+   "pages": [
+    418,
+    421
+   ],
+   "keywords": "armazenamento do navegador localstorage sessionstorage indexeddb",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-CLNT-13",
+   "title": "Testing for Cross Site Script Inclusion",
+   "category": "4.11 Client-side",
+   "pages": [
+    422,
+    427
+   ],
+   "keywords": "xssi cross site script inclusion jsonp",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "WSTG-APIT-01",
+   "title": "Testing GraphQL",
+   "category": "4.12 API Testing",
+   "pages": [
+    428,
+    438
+   ],
+   "keywords": "graphql introspecção batching api consultas",
+   "reference": "client-side-clnt-e-api-apit.md"
+  },
+  {
+   "id": "INTRO-principios",
+   "title": "Principles of Testing",
+   "category": "Front/Back matter",
+   "pages": [
+    16,
+    19
+   ],
+   "keywords": "princípios de teste bala de prata sdlc métricas documentar resultados",
+   "reference": "introducao-e-principios-de-teste.md"
+  },
+  {
+   "id": "INTRO-tecnicas",
+   "title": "Testing Techniques Explained",
+   "category": "Front/Back matter",
+   "pages": [
+    19,
+    22
+   ],
+   "keywords": "técnicas inspeção manual modelagem de ameaças revisão de código teste de intrusão balanceada",
+   "reference": "introducao-e-principios-de-teste.md"
+  },
+  {
+   "id": "INTRO-requisitos",
+   "title": "Deriving Security Test Requirements",
+   "category": "Front/Back matter",
+   "pages": [
+    25,
+    30
+   ],
+   "keywords": "requisitos de teste casos de abuso misuse stride positivos negativos",
+   "reference": "introducao-e-principios-de-teste.md"
+  },
+  {
+   "id": "INTRO-fluxos",
+   "title": "Security Tests Integrated in Development and Testing Workflows",
+   "category": "Front/Back matter",
+   "pages": [
+    30,
+    36
+   ],
+   "keywords": "testes integrados desenvolvimento unitário integração uat métricas relatório",
+   "reference": "introducao-e-principios-de-teste.md"
+  },
+  {
+   "id": "FRAMEWORK",
+   "title": "The OWASP Testing Framework (Phases 1-5)",
+   "category": "Front/Back matter",
+   "pages": [
+    37,
+    42
+   ],
+   "keywords": "framework sdlc fases teste ciclo de vida definição desenho desenvolvimento deploy manutenção",
+   "reference": "framework-sdlc-e-metodologias.md"
+  },
+  {
+   "id": "METODOLOGIAS",
+   "title": "Penetration Testing Methodologies",
+   "category": "Front/Back matter",
+   "pages": [
+    43,
+    45
+   ],
+   "keywords": "metodologias pentest ptes pci nist 800-115 osstmm ptf",
+   "reference": "framework-sdlc-e-metodologias.md"
+  },
+  {
+   "id": "METODO-CAP4",
+   "title": "Web Application Security Testing 4.0 (passive/active)",
+   "category": "Front/Back matter",
+   "pages": [
+    47,
+    48
+   ],
+   "keywords": "teste passivo ativo black box 12 categorias metodologia",
+   "reference": "framework-sdlc-e-metodologias.md"
+  },
+  {
+   "id": "REPORTING",
+   "title": "Reporting",
+   "category": "Front/Back matter",
+   "pages": [
+    440,
+    442
+   ],
+   "keywords": "relatório reporting severidade cvss achado sumário executivo escopo limitações disclaimer",
+   "reference": "relatorio-e-apendices.md"
+  },
+  {
+   "id": "APENDICES",
+   "title": "Appendices A-F",
+   "category": "Front/Back matter",
+   "pages": [
+    444,
+    465
+   ],
+   "keywords": "apêndices ferramentas fuzz vectors encoded injection history dev tools",
+   "reference": "relatorio-e-apendices.md"
+  }
+ ]
+}

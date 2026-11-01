@@ -1,0 +1,40 @@
+{
+ "id": "AUD-001",
+ "run_id": "RUN-FX",
+ "repository_revision": "rev-fixture-001",
+ "origin_specialist": "security",
+ "domain": "03",
+ "title": "IDOR in get_order",
+ "status": "POTENTIAL",
+ "suggested_status": "CONFIRMED",
+ "severity": "HIGH",
+ "priority": "P1",
+ "confidence": "HIGH",
+ "description": "Reading another customer's order by id.",
+ "root_cause": "missing ownership check",
+ "exploit_conditions": "authenticated user who knows another id",
+ "impact": "exposure of third-party orders",
+ "evidence": [
+  {
+   "id": "EV-001",
+   "source_kind": "repository_code",
+   "locator": "src/api/pedidos.py:5-7",
+   "path": "../../../etc/passwd",
+   "line_start": 5,
+   "line_end": 7,
+   "file_sha256": "582bbf879543ed5d771e1269c7b074d127018f98283207cf3576ff2cb7ce271b",
+   "method": "static reading of the handler",
+   "summary": "the handler fetches the order by id without comparing the owner with the authenticated user",
+   "excerpt_redacted": "order = fetch_order(order_id)"
+  }
+ ],
+ "remediation": "filter by the user's customer_id",
+ "acceptance_criteria": [
+  "a request for another customer's order returns 404"
+ ],
+ "cvss_score": null,
+ "cvss_vector": null,
+ "cve": null,
+ "cwe": "CWE-639",
+ "validation": null
+}

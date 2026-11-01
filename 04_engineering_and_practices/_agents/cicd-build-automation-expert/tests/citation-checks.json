@@ -1,0 +1,1826 @@
+{
+ "source": "CICD.txt, GRADLE.txt, GHA.txt, SWEG.txt (=== PAGE N === markers, N = PDF page)",
+ "positive": [
+  {
+   "id": "P001",
+   "src": "GHA",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "2019",
+    "third-party"
+   ],
+   "claim": "before 2019 pipelines required third-party tools"
+  },
+  {
+   "id": "P002",
+   "src": "GHA",
+   "pages": [
+    1
+   ],
+   "terms": [
+    "manually runs through",
+    "operations staff manually deploy"
+   ],
+   "claim": "historically manual process (QA and operations)"
+  },
+  {
+   "id": "P003",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "Big Bang Integration",
+    "days or weeks"
+   ],
+   "claim": "Big Bang Integration takes days or weeks"
+  },
+  {
+   "id": "P004",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "at least once a day",
+    "dozens or even hundreds of times a day"
+   ],
+   "claim": "CI: integrate at least once a day"
+  },
+  {
+   "id": "P005",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "ordered stages",
+    "in series",
+    "in parallel"
+   ],
+   "claim": "pipeline = ordered stages in series and in parallel"
+  },
+  {
+   "id": "P006",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "User Acceptance Testing",
+    "gated",
+    "Capacity Testing",
+    "Staging"
+   ],
+   "claim": "UAT, capacity and staging stages"
+  },
+  {
+   "id": "P007",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "November of 2019",
+    "Travis CI",
+    "CircleCI"
+   ],
+   "claim": "GHA launched in November 2019"
+  },
+  {
+   "id": "P008",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "200 million repositories"
+   ],
+   "claim": "more than 200 million repositories"
+  },
+  {
+   "id": "P009",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "jobs are executed in parallel",
+    "job B will only execute if job A completes successfully"
+   ],
+   "claim": "parallel jobs; dependency"
+  },
+  {
+   "id": "P010",
+   "src": "GHA",
+   "pages": [
+    3
+   ],
+   "terms": [
+    "same runner",
+    "share data"
+   ],
+   "claim": "steps on the same runner share data"
+  },
+  {
+   "id": "P011",
+   "src": "GHA",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "Workflows = pipelines",
+    "Jobs = stages"
+   ],
+   "claim": "workflow = pipeline equivalence"
+  },
+  {
+   "id": "P012",
+   "src": "GHA",
+   "pages": [
+    4
+   ],
+   "terms": [
+    "standalone servers",
+    "hosted by GitHub"
+   ],
+   "claim": "hosted or standalone runner"
+  },
+  {
+   "id": "P013",
+   "src": "GHA",
+   "pages": [
+    4
+   ],
+   "terms": [
+    ".github/workflows/",
+    "on: [push]",
+    "ubuntu-latest",
+    "actions/checkout@v2"
+   ],
+   "claim": "workflow example"
+  },
+  {
+   "id": "P014",
+   "src": "GHA",
+   "pages": [
+    4,
+    5
+   ],
+   "terms": [
+    "we do not know the state of the runner"
+   ],
+   "claim": "checkout first: runner state unknown"
+  },
+  {
+   "id": "P015",
+   "src": "GHA",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "needs: build",
+    "upload-artifact",
+    "Actions tab"
+   ],
+   "claim": "needs and the Actions tab"
+  },
+  {
+   "id": "P016",
+   "src": "GHA",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "AZURE_CREDENTIALS",
+    "REGISTRY_USERNAME",
+    "REGISTRY_PASSWORD",
+    "Secrets"
+   ],
+   "claim": "secrets of the deploy example"
+  },
+  {
+   "id": "P017",
+   "src": "GHA",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "--role contributor",
+    "sdk-auth"
+   ],
+   "claim": "service principal with contributor role"
+  },
+  {
+   "id": "P018",
+   "src": "GHA",
+   "pages": [
+    6
+   ],
+   "terms": [
+    "FROM openjdk:11",
+    "EXPOSE 8080"
+   ],
+   "claim": "example Dockerfile"
+  },
+  {
+   "id": "P019",
+   "src": "GHA",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "secrets.AZURE_CREDENTIALS",
+    "github.sha",
+    "azure/webapps-deploy@v2",
+    "az logout"
+   ],
+   "claim": "deploy job"
+  },
+  {
+   "id": "P020",
+   "src": "GHA",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "each job is executed",
+    "independently",
+    "download the artifacts"
+   ],
+   "claim": "each job is independent; download artifacts"
+  },
+  {
+   "id": "P021",
+   "src": "CICD",
+   "pages": [
+    5
+   ],
+   "terms": [
+    "695 responses",
+    "May 6th"
+   ],
+   "claim": "May 2021 survey with 695 responses"
+  },
+  {
+   "id": "P022",
+   "src": "CICD",
+   "pages": [
+    8
+   ],
+   "terms": [
+    "30.1%",
+    "20.1%",
+    "TDD"
+   ],
+   "claim": "TDD frequent/always in the survey"
+  },
+  {
+   "id": "P023",
+   "src": "CICD",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "83.7%",
+    "55.7%",
+    "71.2%"
+   ],
+   "claim": "microservices x continuousness; feature velocity"
+  },
+  {
+   "id": "P024",
+   "src": "CICD",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "Too quickly",
+    "Too slowly",
+    "66.5%",
+    "24.9%",
+    "45.1%"
+   ],
+   "claim": "perceived velocity x technical debt"
+  },
+  {
+   "id": "P025",
+   "src": "CICD",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "62.9%",
+    "54.5%"
+   ],
+   "claim": "PRs rejected for lack of tests x technical debt"
+  },
+  {
+   "id": "P026",
+   "src": "CICD",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "deployment",
+    "lead time",
+    "MTTR",
+    "change failure rate"
+   ],
+   "claim": "metrics only mentioned in passing"
+  },
+  {
+   "id": "P027",
+   "src": "CICD",
+   "pages": [
+    17
+   ],
+   "terms": [
+    "65.7%",
+    "52.2%",
+    "44.7%"
+   ],
+   "claim": "delivery continuousness x rollbacks"
+  },
+  {
+   "id": "P028",
+   "src": "CICD",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "automatically deployed to production without any manual intervention",
+    "approval from business stakeholders"
+   ],
+   "claim": "delivery x deployment"
+  },
+  {
+   "id": "P029",
+   "src": "CICD",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "Blue-green",
+    "flip the switch",
+    "roll back"
+   ],
+   "claim": "blue-green"
+  },
+  {
+   "id": "P030",
+   "src": "CICD",
+   "pages": [
+    22
+   ],
+   "terms": [
+    "Shift Left",
+    "static code analyses"
+   ],
+   "claim": "shift left and static analysis in CI"
+  },
+  {
+   "id": "P031",
+   "src": "CICD",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "Feature flags",
+    "long-lived branches",
+    "Preview environments",
+    "torn down"
+   ],
+   "claim": "feature flags and preview environments"
+  },
+  {
+   "id": "P032",
+   "src": "CICD",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "releasable state",
+    "short-lived feature branches",
+    "static code analysis"
+   ],
+   "claim": "master always releasable"
+  },
+  {
+   "id": "P033",
+   "src": "CICD",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "GitOps",
+    "single source of truth",
+    "kubectl apply"
+   ],
+   "claim": "GitOps"
+  },
+  {
+   "id": "P034",
+   "src": "CICD",
+   "pages": [
+    27
+   ],
+   "terms": [
+    "Capital One",
+    "1,300%",
+    "Autodesk",
+    "10x"
+   ],
+   "claim": "CloudBees sponsor numbers"
+  },
+  {
+   "id": "P035",
+   "src": "CICD",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "19k",
+    "69.1%",
+    "State of Continuous Delivery"
+   ],
+   "claim": "Armory sponsor statistics"
+  },
+  {
+   "id": "P036",
+   "src": "CICD",
+   "pages": [
+    35
+   ],
+   "terms": [
+    "nearly 20%",
+    "month to restore"
+   ],
+   "claim": "nearly 20% take more than a month to restore"
+  },
+  {
+   "id": "P037",
+   "src": "CICD",
+   "pages": [
+    36
+   ],
+   "terms": [
+    ".github/workflows/",
+    "Travis CI",
+    "CircleCI"
+   ],
+   "claim": "repository-based pipeline"
+  },
+  {
+   "id": "P038",
+   "src": "CICD",
+   "pages": [
+    37
+   ],
+   "terms": [
+    "Docker image the job should run on",
+    ".gitlab-ci.yml"
+   ],
+   "claim": "runs-on in CICD and GitLab"
+  },
+  {
+   "id": "P039",
+   "src": "CICD",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "Interoperability",
+    "Limited flexibility",
+    "Bash"
+   ],
+   "claim": "disadvantages of repository pipelines"
+  },
+  {
+   "id": "P040",
+   "src": "CICD",
+   "pages": [
+    40
+   ],
+   "terms": [
+    "SolarWinds",
+    "CodeCov",
+    "Dependency Confusion",
+    "continuous packaging",
+    "software bill of materials"
+   ],
+   "claim": "supply chain and continuous packaging"
+  },
+  {
+   "id": "P041",
+   "src": "CICD",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "53%",
+    "38%",
+    "Mabl"
+   ],
+   "claim": "Mabl survey"
+  },
+  {
+   "id": "P042",
+   "src": "CICD",
+   "pages": [
+    42
+   ],
+   "terms": [
+    "TRUST RELATIONSHIPS",
+    "WORKFLOW CONFIGURATION ERRORS"
+   ],
+   "claim": "pipeline weak points"
+  },
+  {
+   "id": "P043",
+   "src": "CICD",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "shifting left",
+    "DevSecOps",
+    "grouping secrets"
+   ],
+   "claim": "shift left, DevSecOps and grouping of secrets"
+  },
+  {
+   "id": "P044",
+   "src": "CICD",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "should not be hardcoded",
+    "short-lived secrets",
+    "SAST",
+    "Fortify"
+   ],
+   "claim": "secrets outside configuration; SAST"
+  },
+  {
+   "id": "P045",
+   "src": "CICD",
+   "pages": [
+    44
+   ],
+   "terms": [
+    "Security as Code",
+    "Policy as Code",
+    "SOC2",
+    "HIPAA"
+   ],
+   "claim": "SaC and PaC"
+  },
+  {
+   "id": "P046",
+   "src": "CICD",
+   "pages": [
+    45
+   ],
+   "terms": [
+    "DAST",
+    "NetSparker",
+    "running in production"
+   ],
+   "claim": "DAST"
+  },
+  {
+   "id": "P047",
+   "src": "CICD",
+   "pages": [
+    50
+   ],
+   "terms": [
+    "short-lived branches",
+    "same repository"
+   ],
+   "claim": "short branches and tests in the repository"
+  },
+  {
+   "id": "P048",
+   "src": "CICD",
+   "pages": [
+    52,
+    53
+   ],
+   "terms": [
+    "Terraform",
+    "Ansible",
+    "Document all manual steps",
+    "Test the document",
+    "When Not to Automate"
+   ],
+   "claim": "IaC and when not to automate"
+  },
+  {
+   "id": "P049",
+   "src": "CICD",
+   "pages": [
+    56
+   ],
+   "terms": [
+    "Security of a CI/CD Pipeline",
+    "Security in a CI/CD Pipeline",
+    "mix Continuous Delivery with Continuous Deployment"
+   ],
+   "claim": "security of and in the pipeline; delivery/deployment confusion"
+  },
+  {
+   "id": "P050",
+   "src": "CICD",
+   "pages": [
+    57
+   ],
+   "terms": [
+    "code signing keys",
+    "additional layer of",
+    "false negatives",
+    "on-demand test environment"
+   ],
+   "claim": "secrets, false negatives, on-demand environments"
+  },
+  {
+   "id": "P051",
+   "src": "CICD",
+   "pages": [
+    61,
+    62
+   ],
+   "terms": [
+    "Perform the function manually",
+    "Retrospect"
+   ],
+   "claim": "DevOps automation checklist"
+  },
+  {
+   "id": "P052",
+   "src": "CICD",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "second factor of authentication",
+    "accessibility"
+   ],
+   "claim": "when not to automate"
+  },
+  {
+   "id": "P053",
+   "src": "GRADLE",
+   "pages": [
+    7
+   ],
+   "terms": [
+    "directed acyclic graph",
+    "incremental builds",
+    "up-to-date"
+   ],
+   "claim": "preface: DAG and incremental"
+  },
+  {
+   "id": "P054",
+   "src": "GRADLE",
+   "pages": [
+    9
+   ],
+   "terms": [
+    "2.3",
+    "JDK 1.6",
+    "convention over configuration",
+    "Ivy"
+   ],
+   "claim": "what Gradle is and requirements"
+  },
+  {
+   "id": "P055",
+   "src": "GRADLE",
+   "pages": [
+    12
+   ],
+   "terms": [
+    "gradle -v",
+    "2.3.9",
+    "1.9.3"
+   ],
+   "claim": "version 2.3 and Groovy 2.3.9"
+  },
+  {
+   "id": "P056",
+   "src": "GRADLE",
+   "pages": [
+    13
+   ],
+   "terms": [
+    "Projects and Tasks",
+    "doLast",
+    "<<",
+    "minimum unit of work"
+   ],
+   "claim": "projects, tasks and doLast"
+  },
+  {
+   "id": "P057",
+   "src": "GRADLE",
+   "pages": [
+    14
+   ],
+   "terms": [
+    "--debug",
+    "--quiet",
+    "--gui"
+   ],
+   "claim": "command-line options"
+  },
+  {
+   "id": "P058",
+   "src": "GRADLE",
+   "pages": [
+    15
+   ],
+   "terms": [
+    "defaultTasks",
+    "dependencyInsight",
+    "wrapper"
+   ],
+   "claim": "default tasks and gradle tasks output"
+  },
+  {
+   "id": "P059",
+   "src": "GRADLE",
+   "pages": [
+    16
+   ],
+   "terms": [
+    "dependsOn",
+    "camelCase"
+   ],
+   "claim": "dependsOn and abbreviated execution"
+  },
+  {
+   "id": "P060",
+   "src": "GRADLE",
+   "pages": [
+    17,
+    18
+   ],
+   "terms": [
+    "GRADLE_OPTS",
+    "daemon=true"
+   ],
+   "claim": "system properties and daemon"
+  },
+  {
+   "id": "P061",
+   "src": "GRADLE",
+   "pages": [
+    20
+   ],
+   "terms": [
+    "org.gradle.parallel",
+    "org.gradle.jvmargs",
+    "configureondemand"
+   ],
+   "claim": "org.gradle.* properties"
+  },
+  {
+   "id": "P062",
+   "src": "GRADLE",
+   "pages": [
+    23
+   ],
+   "terms": [
+    "gradle.properties",
+    "not a good practice"
+   ],
+   "claim": "properties in the gradle.properties file"
+  },
+  {
+   "id": "P063",
+   "src": "GRADLE",
+   "pages": [
+    24
+   ],
+   "terms": [
+    "USER_HOME",
+    "overrides"
+   ],
+   "claim": "user properties override project ones"
+  },
+  {
+   "id": "P064",
+   "src": "GRADLE",
+   "pages": [
+    25
+   ],
+   "terms": [
+    "apply plugin",
+    "transitive dependency",
+    "compile 'com.google.gwt:gwt-user:2.7.0'"
+   ],
+   "claim": "plugins and dependencies (Gradle 2.3)"
+  },
+  {
+   "id": "P065",
+   "src": "GRADLE",
+   "pages": [
+    26
+   ],
+   "terms": [
+    "src/main/java",
+    "src/main/resources",
+    "src/test/java",
+    "src/test/resources",
+    "Steffen Schaefer"
+   ],
+   "claim": "default directories of the Java plugin"
+  },
+  {
+   "id": "P066",
+   "src": "GRADLE",
+   "pages": [
+    33
+   ],
+   "terms": [
+    "options.incremental = true",
+    "mavenCentral"
+   ],
+   "claim": "incremental compilation and repository"
+  },
+  {
+   "id": "P067",
+   "src": "GRADLE",
+   "pages": [
+    34
+   ],
+   "terms": [
+    "buildscript",
+    "classpath",
+    "out of date",
+    "Download https://repo1.maven.org"
+   ],
+   "claim": "buildscript and incremental"
+  },
+  {
+   "id": "P068",
+   "src": "GRADLE",
+   "pages": [
+    38
+   ],
+   "terms": [
+    "modules-2"
+   ],
+   "claim": "dependency cache in the Gradle home"
+  },
+  {
+   "id": "P069",
+   "src": "GRADLE",
+   "pages": [
+    39
+   ],
+   "terms": [
+    "SourceSet",
+    "collection of java source"
+   ],
+   "claim": "SourceSet definition"
+  },
+  {
+   "id": "P070",
+   "src": "GRADLE",
+   "pages": [
+    41
+   ],
+   "terms": [
+    "apiCompile",
+    "implCompile",
+    "testCompile"
+   ],
+   "claim": "configurations per source set"
+  },
+  {
+   "id": "P071",
+   "src": "GRADLE",
+   "pages": [
+    44,
+    45
+   ],
+   "terms": [
+    "apiJar",
+    "compileApiJava",
+    "processApiResources",
+    "UP-TO-DATE"
+   ],
+   "claim": "tasks per source set"
+  },
+  {
+   "id": "P072",
+   "src": "GRADLE",
+   "pages": [
+    43
+   ],
+   "terms": [
+    "output.classesDir",
+    "java.srcDirs"
+   ],
+   "claim": "source set properties"
+  },
+  {
+   "id": "P073",
+   "src": "GRADLE",
+   "pages": [
+    47
+   ],
+   "terms": [
+    "javadoc",
+    "docs/javadoc"
+   ],
+   "claim": "javadoc"
+  },
+  {
+   "id": "P074",
+   "src": "GRADLE",
+   "pages": [
+    62
+   ],
+   "terms": [
+    "Gradle Wrapper",
+    "best practice"
+   ],
+   "claim": "Wrapper as a best practice"
+  },
+  {
+   "id": "P075",
+   "src": "GRADLE",
+   "pages": [
+    63
+   ],
+   "terms": [
+    "gradleVersion",
+    "distributionUrl",
+    "createGradleWrapper"
+   ],
+   "claim": "Wrapper task"
+  },
+  {
+   "id": "P076",
+   "src": "GRADLE",
+   "pages": [
+    64
+   ],
+   "terms": [
+    "version control",
+    "distributionUrl",
+    "is ignored"
+   ],
+   "claim": "version the wrapper; installed Gradle ignored"
+  },
+  {
+   "id": "P077",
+   "src": "GRADLE",
+   "pages": [
+    72
+   ],
+   "terms": [
+    "providedCompile",
+    "providedRuntime",
+    "webAppDirName",
+    "WEB-INF/lib"
+   ],
+   "claim": "War plugin"
+  },
+  {
+   "id": "P078",
+   "src": "GRADLE",
+   "pages": [
+    74
+   ],
+   "terms": [
+    "com.bmuschko"
+   ],
+   "claim": "third-party Tomcat plugin"
+  },
+  {
+   "id": "P079",
+   "src": "GRADLE",
+   "pages": [
+    78
+   ],
+   "terms": [
+    "cargo",
+    "one-button"
+   ],
+   "claim": "embedded Tomcat; cargo for remote"
+  },
+  {
+   "id": "P080",
+   "src": "SWE-G",
+   "pages": [
+    260
+   ],
+   "terms": [
+    "Fast",
+    "Correct",
+    "Bazel",
+    "2015"
+   ],
+   "claim": "properties of a good build and Bazel opened in 2015"
+  },
+  {
+   "id": "P081",
+   "src": "SWE-G",
+   "pages": [
+    263
+   ],
+   "terms": [
+    "Ant, Maven, Gradle, Grunt, and Rake",
+    "task based"
+   ],
+   "claim": "task-based systems"
+  },
+  {
+   "id": "P082",
+   "src": "SWE-G",
+   "pages": [
+    264
+   ],
+   "terms": [
+    "originally released in 2000"
+   ],
+   "claim": "Ant released in 2000"
+  },
+  {
+   "id": "P083",
+   "src": "SWE-G",
+   "pages": [
+    265
+   ],
+   "terms": [
+    "timestamp",
+    "clean",
+    "parallelize"
+   ],
+   "claim": "dark side of task systems"
+  },
+  {
+   "id": "P084",
+   "src": "SWE-G",
+   "pages": [
+    266
+   ],
+   "terms": [
+    "nondeterministic",
+    "declarative manifest",
+    "Pants, and Buck"
+   ],
+   "claim": "artifact-based and task bugs"
+  },
+  {
+   "id": "P085",
+   "src": "SWE-G",
+   "pages": [
+    267,
+    268
+   ],
+   "terms": [
+    "java_binary",
+    "java_library",
+    "bazel build"
+   ],
+   "claim": "Bazel example"
+  },
+  {
+   "id": "P086",
+   "src": "SWE-G",
+   "pages": [
+    268,
+    269
+   ],
+   "terms": [
+    "Tools as dependencies",
+    "toolchains"
+   ],
+   "claim": "tools as dependencies"
+  },
+  {
+   "id": "P087",
+   "src": "SWE-G",
+   "pages": [
+    269
+   ],
+   "terms": [
+    "sandboxing",
+    "network"
+   ],
+   "claim": "sandbox restricts network"
+  },
+  {
+   "id": "P088",
+   "src": "SWE-G",
+   "pages": [
+    270
+   ],
+   "terms": [
+    "cryptographic hash",
+    "mirror all of its dependencies"
+   ],
+   "claim": "external dependencies by hash and mirror"
+  },
+  {
+   "id": "P089",
+   "src": "SWE-G",
+   "pages": [
+    270,
+    271
+   ],
+   "terms": [
+    "remote caching",
+    "completely reproducible",
+    "hash of its inputs"
+   ],
+   "claim": "remote cache requires reproducibility"
+  },
+  {
+   "id": "P090",
+   "src": "SWE-G",
+   "pages": [
+    271,
+    272
+   ],
+   "terms": [
+    "remote execution",
+    "Forge",
+    "ObjFS"
+   ],
+   "claim": "remote execution and Google cache"
+  },
+  {
+   "id": "P091",
+   "src": "SWE-G",
+   "pages": [
+    273
+   ],
+   "terms": [
+    "almost every new project"
+   ],
+   "claim": "conclusion: almost every new project"
+  },
+  {
+   "id": "P092",
+   "src": "SWE-G",
+   "pages": [
+    275
+   ],
+   "terms": [
+    "1.+"
+   ],
+   "claim": "floating version 1.+ in Gradle"
+  },
+  {
+   "id": "P093",
+   "src": "SWE-G",
+   "pages": [
+    330
+   ],
+   "terms": [
+    "integrate their work frequently",
+    "automatically catch problematic changes as early as possible"
+   ],
+   "claim": "CI definition"
+  },
+  {
+   "id": "P094",
+   "src": "SWE-G",
+   "pages": [
+    331
+   ],
+   "terms": [
+    "Fast Feedback Loops",
+    "Canarying",
+    "version skew",
+    "almost exponentially"
+   ],
+   "claim": "fast feedback, canarying and version skew"
+  },
+  {
+   "id": "P095",
+   "src": "SWE-G",
+   "pages": [
+    332
+   ],
+   "terms": [
+    "green head",
+    "true head",
+    "flake classification"
+   ],
+   "claim": "continuous build"
+  },
+  {
+   "id": "P096",
+   "src": "SWE-G",
+   "pages": [
+    333
+   ],
+   "terms": [
+    "Release candidate",
+    "not be recompiled",
+    "Docker"
+   ],
+   "claim": "release candidate"
+  },
+  {
+   "id": "P097",
+   "src": "SWE-G",
+   "pages": [
+    334
+   ],
+   "terms": [
+    "mid-air collision",
+    "only fast, reliable ones",
+    "small tests",
+    "hermetic testing"
+   ],
+   "claim": "presubmit x post-submit"
+  },
+  {
+   "id": "P098",
+   "src": "SWE-G",
+   "pages": [
+    335
+   ],
+   "terms": [
+    "probers",
+    "CI Is Alerting",
+    "defense in depth"
+   ],
+   "claim": "production and CI as alerting"
+  },
+  {
+   "id": "P099",
+   "src": "SWE-G",
+   "pages": [
+    336
+   ],
+   "terms": [
+    "100% green rate",
+    "Error Budgets"
+   ],
+   "claim": "100% green is expensive"
+  },
+  {
+   "id": "P100",
+   "src": "SWE-G",
+   "pages": [
+    337
+   ],
+   "terms": [
+    "Hermetic tests",
+    "remove such flaky tests from presubmit",
+    "multiple attempts"
+   ],
+   "claim": "flaky tests and hermetic tests"
+  },
+  {
+   "id": "P101",
+   "src": "SWE-G",
+   "pages": [
+    338
+   ],
+   "terms": [
+    "greater determinism",
+    "isolation",
+    "record/replay"
+   ],
+   "claim": "properties of hermetic tests"
+  },
+  {
+   "id": "P102",
+   "src": "SWE-G",
+   "pages": [
+    339
+   ],
+   "terms": [
+    "50,000 unique changes",
+    "four billion"
+   ],
+   "claim": "TAP scale"
+  },
+  {
+   "id": "P103",
+   "src": "SWE-G",
+   "pages": [
+    340
+   ],
+   "terms": [
+    "95%+",
+    "Build Cop",
+    "11 minutes",
+    "culprit"
+   ],
+   "claim": "TAP presubmit"
+  },
+  {
+   "id": "P104",
+   "src": "SWE-G",
+   "pages": [
+    341
+   ],
+   "terms": [
+    "automatically roll back",
+    "Forge",
+    "Blaze"
+   ],
+   "claim": "automatic rollback"
+  },
+  {
+   "id": "P105",
+   "src": "SWE-G",
+   "pages": [
+    342
+   ],
+   "terms": [
+    "95%",
+    "50%",
+    "12 times"
+   ],
+   "claim": "Takeout results"
+  },
+  {
+   "id": "P106",
+   "src": "SWE-G",
+   "pages": [
+    344
+   ],
+   "terms": [
+    "MTTCU",
+    "mean time to clean up"
+   ],
+   "claim": "MTTCU"
+  },
+  {
+   "id": "P107",
+   "src": "SWE-G",
+   "pages": [
+    345
+   ],
+   "terms": [
+    "cost shifted left"
+   ],
+   "claim": "CI shifts cost to the left"
+  },
+  {
+   "id": "P108",
+   "src": "SWE-G",
+   "pages": [
+    346
+   ],
+   "terms": [
+    "Accelerate",
+    "trunk-based development"
+   ],
+   "claim": "note: Accelerate and trunk-based"
+  },
+  {
+   "id": "P109",
+   "src": "SWE-G",
+   "pages": [
+    347,
+    348
+   ],
+   "terms": [
+    "faster is safer",
+    "50-hour manual regression"
+   ],
+   "claim": "faster is safer; 50-hour manual regression"
+  },
+  {
+   "id": "P110",
+   "src": "SWE-G",
+   "pages": [
+    349
+   ],
+   "terms": [
+    "flag guard",
+    "100% of your users"
+   ],
+   "claim": "flag guarding"
+  },
+  {
+   "id": "P111",
+   "src": "SWE-G",
+   "pages": [
+    349,
+    350
+   ],
+   "terms": [
+    "every other day",
+    "release train"
+   ],
+   "claim": "Search release train"
+  },
+  {
+   "id": "P112",
+   "src": "SWE-G",
+   "pages": [
+    351,
+    352
+   ],
+   "terms": [
+    "Staged rollouts",
+    "A/B test",
+    "change-neutral"
+   ],
+   "claim": "staged rollouts and A/B of deploys"
+  },
+  {
+   "id": "P113",
+   "src": "SWE-G",
+   "pages": [
+    352
+   ],
+   "terms": [
+    "Always Be Deploying"
+   ],
+   "claim": "Always Be Deploying"
+  },
+  {
+   "id": "P114",
+   "src": "SWE-G",
+   "pages": [
+    353
+   ],
+   "terms": [
+    "faster is safer",
+    "error-budget"
+   ],
+   "claim": "conclusion of the CD chapter"
+  },
+  {
+   "id": "P115",
+   "src": "SWE-G",
+   "pages": [
+    316,
+    317
+   ],
+   "terms": [
+    "large-scale change",
+    "cannot practically be submitted as a single atomic"
+   ],
+   "claim": "LSC definition"
+  }
+ ],
+ "negative": [
+  {
+   "id": "N01",
+   "srcs": [
+    "GHA",
+    "CICD"
+   ],
+   "terms": [
+    "cancel-in-progress",
+    "timeout-minutes",
+    "concurrency:"
+   ],
+   "claim": "concurrency/cancel-in-progress/timeout do not appear"
+  },
+  {
+   "id": "N02",
+   "srcs": [
+    "GHA",
+    "CICD"
+   ],
+   "terms": [
+    "contents: read",
+    "re:permissions\\s*:"
+   ],
+   "claim": "workflow permissions block does not appear"
+  },
+  {
+   "id": "N03",
+   "srcs": [
+    "GHA",
+    "CICD"
+   ],
+   "terms": [
+    "re:\\bpinn(ing|ed)\\b",
+    "full commit SHA",
+    "@main",
+    "@master"
+   ],
+   "claim": "SHA pinning and mutable refs do not appear"
+  },
+  {
+   "id": "N04",
+   "srcs": [
+    "GRADLE"
+   ],
+   "terms": [
+    "settings.gradle",
+    "initialization phase",
+    "configuration phase",
+    "execution phase",
+    "doFirst"
+   ],
+   "claim": "three phases/settings.gradle/doFirst absent"
+  },
+  {
+   "id": "N05",
+   "srcs": [
+    "GRADLE"
+   ],
+   "terms": [
+    "re:\\bimplementation\\s+'",
+    "Kotlin",
+    "build cache"
+   ],
+   "claim": "implementation/api, Kotlin DSL and build cache absent"
+  },
+  {
+   "id": "N06",
+   "srcs": [
+    "GRADLE"
+   ],
+   "terms": [
+    "--profile",
+    "--scan",
+    "@Input",
+    "@OutputDirectory"
+   ],
+   "claim": "profile, scan and input/output annotations absent"
+  },
+  {
+   "id": "N07",
+   "srcs": [
+    "GRADLE"
+   ],
+   "terms": [
+    "re:\\bhash(es|ed)?\\b",
+    "checksum"
+   ],
+   "claim": "input/output hash absent"
+  },
+  {
+   "id": "N08",
+   "srcs": [
+    "CICD",
+    "GHA",
+    "GRADLE"
+   ],
+   "terms": [
+    "DORA",
+    "Elite performer",
+    "re:\\belite\\b"
+   ],
+   "claim": "DORA and level ranges absent"
+  },
+  {
+   "id": "N09",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "quarantine",
+    "quarantin"
+   ],
+   "claim": "flaky-test quarantine absent"
+  },
+  {
+   "id": "N10",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "bit-for-bit",
+    "bit for bit"
+   ],
+   "claim": "bit-for-bit absent"
+  },
+  {
+   "id": "N11",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "10 minutes",
+    "ten minutes"
+   ],
+   "claim": "10-minute target absent from CI/CD",
+   "pages": [
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353
+   ]
+  },
+  {
+   "id": "N12",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "p95",
+    "p99"
+   ],
+   "claim": "canary p95/p99 latencies absent",
+   "pages": [
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353
+   ]
+  },
+  {
+   "id": "N13",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "hermetic"
+   ],
+   "claim": "'hermetic' does not appear in the build chapter",
+   "pages": [
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277
+   ]
+  },
+  {
+   "id": "N14",
+   "srcs": [
+    "GHA"
+   ],
+   "terms": [
+    "ephemeral",
+    "self-hosted",
+    "destroyed"
+   ],
+   "claim": "ephemeral/self-hosted runners absent from GHA"
+  },
+  {
+   "id": "N15",
+   "srcs": [
+    "GHA",
+    "CICD"
+   ],
+   "terms": [
+    "libsodium",
+    "NaCl",
+    "masked",
+    "masking"
+   ],
+   "claim": "secret encryption and masking absent"
+  },
+  {
+   "id": "N16",
+   "srcs": [
+    "GHA",
+    "CICD"
+   ],
+   "terms": [
+    "workflow_dispatch",
+    "pull_request",
+    "re:\\bcron\\b"
+   ],
+   "claim": "events beyond push absent"
+  },
+  {
+   "id": "N17",
+   "srcs": [
+    "GHA",
+    "CICD",
+    "GRADLE"
+   ],
+   "terms": [
+    "Trivy",
+    "Clair",
+    "Dependabot",
+    "sigstore",
+    "SLSA"
+   ],
+   "claim": "supply chain tools absent"
+  },
+  {
+   "id": "N18",
+   "srcs": [
+    "SWE-G"
+   ],
+   "terms": [
+    "re:canary[^.]{0,60}error budget",
+    "re:error budget[^.]{0,60}canary"
+   ],
+   "claim": "canary aborted by error budget absent",
+   "pages": [
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353
+   ]
+  },
+  {
+   "id": "N19",
+   "srcs": [
+    "CICD",
+    "GHA"
+   ],
+   "terms": [
+    "organization secrets",
+    "environment secrets",
+    "protection rules"
+   ],
+   "claim": "secret scopes and environment rules absent"
+  },
+  {
+   "id": "N20",
+   "srcs": [
+    "GRADLE",
+    "GHA"
+   ],
+   "terms": [
+    "Bazel",
+    "Blaze"
+   ],
+   "claim": "Bazel/Blaze do not appear in GRADLE/GHA"
+  }
+ ]
+}

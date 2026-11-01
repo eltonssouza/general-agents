@@ -1,0 +1,17 @@
+{
+  "name": "graph-databases-neo4j-expert",
+  "version": "2.0.0",
+  "description": "Specialist in graph databases and Neo4j based on Graph Databases, 2nd ed. (Robinson, Webber, Eifrem, 2015, 238 pp.): LPG, index-free adjacency, Neo4j 2.x Cypher, modeling, time, architecture, testing, capacity planning, import, internals, transactions and master-slave HA, real cases and graph theory. States what the book does not cover (supernodes, Raft/Causal Cluster, Read Committed, EXPLAIN, GDS) and marks [DATED] content.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "graph-databases",
+    "neo4j",
+    "labeled-property-graph",
+    "index-free-adjacency",
+    "cypher",
+    "graph-modeling",
+    "dijkstra",
+    "triadic-closure"
+  ]
+}

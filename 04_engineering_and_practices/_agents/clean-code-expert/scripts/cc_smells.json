@@ -1,0 +1,1536 @@
+{
+ "source": "Código Limpo (Robert C. Martin), ch. 17 'Odores e Heurísticas' (Smells and Heuristics), PDF p.280-309",
+ "families": {
+  "C": "Comments",
+  "E": "Environment",
+  "F": "Functions",
+  "G": "General",
+  "J": "Java",
+  "N": "Names",
+  "T": "Tests"
+ },
+ "family_counts": {
+  "C": 5,
+  "E": 2,
+  "F": 4,
+  "G": 36,
+  "J": 3,
+  "N": 7,
+  "T": 9
+ },
+ "notes": "page = PDF page where the heuristic starts. title = the title printed in the Brazilian Portuguese edition; title_en = English title (the usual English wording of the heuristic). related = links inferred from the text (not a list from the book), except when the book itself cites the code. detectable='script' = a simple syntactic heuristic can flag candidates; the final decision is always judgment ('julgamento' = requires reviewer judgment).",
+ "smells": [
+  {
+   "code": "C1",
+   "family": "C",
+   "title": "Informações inapropriadas",
+   "title_en": "Inappropriate Information",
+   "page": 281,
+   "citation": "CL p.281",
+   "summary": "A comment holding change history, author, date or ticket number; that belongs in version control or the issue tracker. Comments should deal only with technical information about the code and design.",
+   "keywords": [
+    "comentário",
+    "comment",
+    "histórico de alterações",
+    "changelog",
+    "@author",
+    "autor",
+    "metadados",
+    "metadata",
+    "change history",
+    "author tag",
+    "inappropriate information"
+   ],
+   "detectable": "script",
+   "related": [
+    "C2",
+    "C3"
+   ]
+  },
+  {
+   "code": "C2",
+   "family": "C",
+   "title": "Comentário obsoleto",
+   "title_en": "Obsolete Comment",
+   "page": 281,
+   "citation": "CL p.281",
+   "summary": "An old, irrelevant or incorrect comment that has drifted from the code and now misleads. Update it or delete it right away; better still, do not write comments that are bound to age.",
+   "keywords": [
+    "comentário desatualizado",
+    "obsolete comment",
+    "outdated comment",
+    "stale comment",
+    "comentário mentiroso",
+    "lying comment"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "C3",
+    "C5"
+   ]
+  },
+  {
+   "code": "C3",
+   "family": "C",
+   "title": "Comentários redundantes",
+   "title_en": "Redundant Comment",
+   "page": 281,
+   "citation": "CL p.281",
+   "summary": "A comment that repeats what the code already says by itself (e.g. a Javadoc that only repeats the signature). Comment only what the code cannot express.",
+   "keywords": [
+    "comentário redundante",
+    "redundant comment",
+    "javadoc inútil",
+    "comentário óbvio",
+    "noise comment",
+    "useless javadoc",
+    "obvious comment"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "C1",
+    "C4",
+    "G12"
+   ]
+  },
+  {
+   "code": "C4",
+   "family": "C",
+   "title": "Comentário mal escrito",
+   "title_en": "Poorly Written Comment",
+   "page": 282,
+   "citation": "CL p.282",
+   "summary": "If a comment is worth writing, write it with care: well-chosen words, correct grammar and punctuation, no stating the obvious, brief.",
+   "keywords": [
+    "comentário mal escrito",
+    "poorly written comment",
+    "gramática",
+    "comentário confuso",
+    "grammar",
+    "confusing comment"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "C3"
+   ]
+  },
+  {
+   "code": "C5",
+   "family": "C",
+   "title": "Código como comentário",
+   "title_en": "Commented-Out Code",
+   "page": 282,
+   "citation": "CL p.282",
+   "summary": "Commented-out code rots, confuses, and nobody dares delete it. Delete it: version control keeps the history.",
+   "keywords": [
+    "código comentado",
+    "commented-out code",
+    "commented code",
+    "código morto em comentário",
+    "dead code in comments"
+   ],
+   "detectable": "script",
+   "related": [
+    "F4",
+    "G9",
+    "G12"
+   ]
+  },
+  {
+   "code": "E1",
+   "family": "E",
+   "title": "Construir requer mais de uma etapa",
+   "title_en": "Build Requires More Than One Step",
+   "page": 282,
+   "citation": "CL p.282",
+   "summary": "Building the project should be a single, simple operation: get the code with one command and build it with another, with no arcane scripts or hunting for dependencies.",
+   "keywords": [
+    "build",
+    "construção",
+    "compilar",
+    "one-step build",
+    "build script",
+    "ambiente",
+    "environment",
+    "compile"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "E2"
+   ]
+  },
+  {
+   "code": "E2",
+   "family": "E",
+   "title": "Testes requerem mais de uma etapa",
+   "title_en": "Tests Require More Than One Step",
+   "page": 282,
+   "citation": "CL p.282",
+   "summary": "You should be able to run all the unit tests with a single command (or an IDE button); running everything must be quick, easy and obvious.",
+   "keywords": [
+    "rodar testes",
+    "run tests",
+    "one command",
+    "test runner",
+    "suíte de testes",
+    "test suite"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "E1",
+    "T9"
+   ]
+  },
+  {
+   "code": "F1",
+   "family": "F",
+   "title": "Parâmetros em excesso",
+   "title_en": "Too Many Arguments",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "Functions should have few arguments: zero is best, then one, two and three; more than three is questionable and should be avoided.",
+   "keywords": [
+    "muitos parâmetros",
+    "muitos argumentos",
+    "too many arguments",
+    "too many parameters",
+    "long parameter list",
+    "aridade",
+    "arity",
+    "number of arguments"
+   ],
+   "detectable": "script",
+   "related": [
+    "F3",
+    "G15"
+   ]
+  },
+  {
+   "code": "F2",
+   "family": "F",
+   "title": "Parâmetros de saída",
+   "title_en": "Output Arguments",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "Readers expect input arguments, not output ones. If the function must change state, let it change the state of the object it is called on.",
+   "keywords": [
+    "parâmetro de saída",
+    "output argument",
+    "output parameter",
+    "out param",
+    "argumento de saída"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "F1"
+   ]
+  },
+  {
+   "code": "F3",
+   "family": "F",
+   "title": "Parâmetros lógicos",
+   "title_en": "Flag Arguments",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "A boolean argument announces that the function does more than one thing and confuses whoever reads the call; eliminate it by splitting the function.",
+   "keywords": [
+    "parâmetro booleano",
+    "argumento booleano",
+    "flag argument",
+    "boolean parameter",
+    "boolean argument",
+    "flag"
+   ],
+   "detectable": "script",
+   "related": [
+    "G15",
+    "G30"
+   ]
+  },
+  {
+   "code": "F4",
+   "family": "F",
+   "title": "Função morta",
+   "title_en": "Dead Function",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "Methods that are never called should be discarded; version control remembers them if needed.",
+   "keywords": [
+    "função morta",
+    "dead function",
+    "método não usado",
+    "unused method",
+    "never called"
+   ],
+   "detectable": "script",
+   "related": [
+    "G9",
+    "C5",
+    "G12"
+   ]
+  },
+  {
+   "code": "G1",
+   "family": "G",
+   "title": "Múltiplas linguagens em um arquivo fonte",
+   "title_en": "Multiple Languages in One Source File",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "Mixing several languages (XML, HTML, JavaScript, Java, tags) in one file is confusing. The ideal is one language per file; in practice, minimize the number and extent of the extra languages.",
+   "keywords": [
+    "múltiplas linguagens",
+    "multiple languages",
+    "jsp",
+    "html em java",
+    "sql em string",
+    "mixed languages",
+    "html in java",
+    "sql in string"
+   ],
+   "detectable": "script",
+   "related": []
+  },
+  {
+   "code": "G2",
+   "family": "G",
+   "title": "Comportamento óbvio não é implementado",
+   "title_en": "Obvious Behavior Is Unimplemented",
+   "page": 283,
+   "citation": "CL p.283",
+   "summary": "By the Principle of Least Surprise, a function or class should do what another programmer would expect from its name (e.g. accept abbreviations and ignore case when converting a day name). Without that, the reader loses trust and must read every detail.",
+   "keywords": [
+    "comportamento óbvio",
+    "obvious behavior",
+    "least surprise",
+    "menor surpresa",
+    "least astonishment",
+    "principle of least surprise"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G11",
+    "G20"
+   ]
+  },
+  {
+   "code": "G3",
+   "family": "G",
+   "title": "Comportamento incorreto nos limites",
+   "title_en": "Incorrect Behavior at the Boundaries",
+   "page": 284,
+   "citation": "CL p.284",
+   "summary": "Do not trust the intuition that the code works: handle every boundary condition, corner case and exception, and write a test for each.",
+   "keywords": [
+    "condição de limite",
+    "boundary",
+    "edge case",
+    "caso extremo",
+    "off-by-one",
+    "limites",
+    "boundary condition",
+    "corner case"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T5",
+    "G33"
+   ]
+  },
+  {
+   "code": "G4",
+   "family": "G",
+   "title": "Seguranças anuladas",
+   "title_en": "Overridden Safeties",
+   "page": 284,
+   "citation": "CL p.284",
+   "summary": "Turning off compiler warnings, controls such as serialVersionUID, or failing tests, promising to fix it later, is risky and costly in debugging.",
+   "keywords": [
+    "avisos desabilitados",
+    "suppress warnings",
+    "@SuppressWarnings",
+    "teste desabilitado",
+    "disabled test",
+    "override safeties",
+    "lint ignore",
+    "disabled warnings"
+   ],
+   "detectable": "script",
+   "related": [
+    "T4"
+   ]
+  },
+  {
+   "code": "G5",
+   "family": "G",
+   "title": "Duplicação",
+   "title_en": "Duplication",
+   "page": 284,
+   "citation": "CL p.284",
+   "summary": "One of the most important rules in the book (DRY / 'once and only once'). Every duplication is a missed abstraction: extract methods for identical blocks, use polymorphism for repeated switch/if, and Template Method or Strategy for similar algorithms.",
+   "keywords": [
+    "duplicação",
+    "duplicate code",
+    "duplicated code",
+    "DRY",
+    "copy paste",
+    "copiar e colar",
+    "código repetido",
+    "once and only once",
+    "duplication",
+    "repeated code"
+   ],
+   "detectable": "script",
+   "related": [
+    "G23",
+    "G6"
+   ]
+  },
+  {
+   "code": "G6",
+   "family": "G",
+   "title": "Códigos no nível errado de abstração",
+   "title_en": "Code at Wrong Level of Abstraction",
+   "page": 285,
+   "citation": "CL p.285",
+   "summary": "High-level concepts and low-level details must live in separate containers (base class vs. derived classes, modules, components). Example: percentFull does not belong to every Stack, but to a BoundedStack.",
+   "keywords": [
+    "nível de abstração",
+    "abstraction level",
+    "wrong level of abstraction",
+    "classe base",
+    "base class",
+    "interface",
+    "level of abstraction"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G34",
+    "N2",
+    "G7"
+   ]
+  },
+  {
+   "code": "G7",
+   "family": "G",
+   "title": "As classes base dependem de suas derivadas",
+   "title_en": "Base Classes Depending on Their Derivatives",
+   "page": 286,
+   "citation": "CL p.286",
+   "summary": "A base class that knows the names of its derivatives signals a problem; the base should not see its derivatives, so they can be deployed in separate jars/components. Exception: a fixed number of derivatives, as in finite state machines.",
+   "keywords": [
+    "classe base",
+    "base class depends on derivative",
+    "herança",
+    "inheritance",
+    "subclasse",
+    "derived class",
+    "subclass"
+   ],
+   "detectable": "script",
+   "related": [
+    "G6"
+   ]
+  },
+  {
+   "code": "G8",
+   "family": "G",
+   "title": "Informações excessivas",
+   "title_en": "Too Much Information",
+   "page": 286,
+   "citation": "CL p.286",
+   "summary": "Module interfaces should be small: few methods, few variables, few protected members. Hide data, utilities, constants and temporaries to keep coupling low.",
+   "keywords": [
+    "interface grande",
+    "too much information",
+    "encapsulamento",
+    "encapsulation",
+    "acoplamento",
+    "coupling",
+    "muitos métodos públicos",
+    "large interface",
+    "too many public methods"
+   ],
+   "detectable": "script",
+   "related": [
+    "G36",
+    "G13"
+   ]
+  },
+  {
+   "code": "G9",
+   "family": "G",
+   "title": "Código morto",
+   "title_en": "Dead Code",
+   "page": 286,
+   "citation": "CL p.286",
+   "summary": "Code that never executes (an impossible if, a catch that cannot occur, an uncalled utility, an unreachable case) ages and smells bad. Delete it.",
+   "keywords": [
+    "código morto",
+    "dead code",
+    "unreachable code",
+    "código inalcançável",
+    "unused code"
+   ],
+   "detectable": "script",
+   "related": [
+    "F4",
+    "C5",
+    "G12"
+   ]
+  },
+  {
+   "code": "G10",
+   "family": "G",
+   "title": "Separação vertical",
+   "title_en": "Vertical Separation",
+   "page": 287,
+   "citation": "CL p.287",
+   "summary": "Declare local variables just above their first use and private functions just below their first use, minimizing vertical distance.",
+   "keywords": [
+    "separação vertical",
+    "vertical separation",
+    "declaração longe do uso",
+    "variable declaration",
+    "distância vertical",
+    "variable declaration far from use",
+    "vertical distance"
+   ],
+   "detectable": "script",
+   "related": []
+  },
+  {
+   "code": "G11",
+   "family": "G",
+   "title": "Inconsistência",
+   "title_en": "Inconsistency",
+   "page": 287,
+   "citation": "CL p.287",
+   "summary": "Do similar things the same way: the same variable name for the same kind of object, parallel names for parallel methods. Choose conventions and follow them.",
+   "keywords": [
+    "inconsistência",
+    "inconsistency",
+    "consistência",
+    "convenção",
+    "naming consistency",
+    "consistency",
+    "convention"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G24",
+    "G2",
+    "N3"
+   ]
+  },
+  {
+   "code": "G12",
+   "family": "G",
+   "title": "Entulho",
+   "title_en": "Clutter",
+   "page": 287,
+   "citation": "CL p.287",
+   "summary": "Empty constructors, unused variables, functions never called and comments with no information are clutter: remove them.",
+   "keywords": [
+    "entulho",
+    "clutter",
+    "variável não usada",
+    "unused variable",
+    "construtor vazio",
+    "empty constructor"
+   ],
+   "detectable": "script",
+   "related": [
+    "G9",
+    "F4",
+    "C3"
+   ]
+  },
+  {
+   "code": "G13",
+   "family": "G",
+   "title": "Acoplamento artificial",
+   "title_en": "Artificial Coupling",
+   "page": 287,
+   "citation": "CL p.287",
+   "summary": "Independent things should not be coupled for convenience (e.g. a general enum inside a specific class, a general static function in a specific class). Decide carefully where to declare each element.",
+   "keywords": [
+    "acoplamento artificial",
+    "artificial coupling",
+    "acoplamento",
+    "coupling",
+    "enum aninhado",
+    "nested enum"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G17",
+    "G8"
+   ]
+  },
+  {
+   "code": "G14",
+   "family": "G",
+   "title": "Feature Envy",
+   "title_en": "Feature Envy",
+   "page": 288,
+   "citation": "CL p.288",
+   "summary": "A method that manipulates another object's data through getters/setters 'envies' that class and perhaps should live in it. Sometimes it is a necessary evil (e.g. formatting a report without coupling the model to the format).",
+   "keywords": [
+    "feature envy",
+    "inveja de funcionalidade",
+    "inveja",
+    "getters",
+    "Fowler",
+    "mover método",
+    "move method"
+   ],
+   "detectable": "script",
+   "related": [
+    "G17",
+    "G36"
+   ]
+  },
+  {
+   "code": "G15",
+   "family": "G",
+   "title": "Parâmetros seletores",
+   "title_en": "Selector Arguments",
+   "page": 289,
+   "citation": "CL p.289",
+   "summary": "An argument (boolean, enum, integer) that chooses the behavior merges several functions into one. Prefer several functions to passing a selector code.",
+   "keywords": [
+    "parâmetro seletor",
+    "selector argument",
+    "flag argument",
+    "boolean flag",
+    "argumento booleano",
+    "true false parâmetro",
+    "true false parameter"
+   ],
+   "detectable": "script",
+   "related": [
+    "F3",
+    "G30"
+   ]
+  },
+  {
+   "code": "G16",
+   "family": "G",
+   "title": "Propósito obscuro",
+   "title_en": "Obscured Intent",
+   "page": 290,
+   "citation": "CL p.290",
+   "summary": "Chained expressions, Hungarian notation and magic numbers hide intent. It is worth the time to make the purpose visible to the reader.",
+   "keywords": [
+    "propósito obscuro",
+    "obscured intent",
+    "código ilegível",
+    "notação húngara",
+    "hungarian notation",
+    "números mágicos",
+    "cryptic",
+    "unreadable code",
+    "magic numbers"
+   ],
+   "detectable": "script",
+   "related": [
+    "G25",
+    "N6",
+    "N1",
+    "G19"
+   ]
+  },
+  {
+   "code": "G17",
+   "family": "G",
+   "title": "Responsabilidade mal posicionada",
+   "title_en": "Misplaced Responsibility",
+   "page": 290,
+   "citation": "CL p.290",
+   "summary": "Put code where the reader expects it (principle of least surprise): PI next to the trigonometric functions, totals computed in the function whose name says so. If you move it for performance, the names must reflect that.",
+   "keywords": [
+    "responsabilidade mal posicionada",
+    "misplaced responsibility",
+    "onde colocar",
+    "princípio da surpresa mínima",
+    "SRP",
+    "where to put code",
+    "least surprise"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G13",
+    "G14",
+    "G22"
+   ]
+  },
+  {
+   "code": "G18",
+   "family": "G",
+   "title": "Modo estático inadequado",
+   "title_en": "Inappropriate Static",
+   "page": 290,
+   "citation": "CL p.290",
+   "summary": "Static is appropriate when all the data comes from the arguments and there is no chance of polymorphism (Math.max). When in doubt, prefer a non-static method.",
+   "keywords": [
+    "método estático",
+    "static method",
+    "inappropriate static",
+    "static",
+    "polimorfismo",
+    "polymorphism"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G23"
+   ]
+  },
+  {
+   "code": "G19",
+   "family": "G",
+   "title": "Use variáveis descritivas",
+   "title_en": "Use Explanatory Variables",
+   "page": 291,
+   "citation": "CL p.291",
+   "summary": "Break calculations into intermediate values held in variables with explanatory names; more explanatory variables is generally better.",
+   "keywords": [
+    "variável explicativa",
+    "explanatory variable",
+    "descriptive variable",
+    "variável intermediária",
+    "extract variable",
+    "intermediate variable"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G16",
+    "N1"
+   ]
+  },
+  {
+   "code": "G20",
+   "family": "G",
+   "title": "Nomes de funções devem dizer o que elas fazem",
+   "title_en": "Function Names Should Say What They Do",
+   "page": 291,
+   "citation": "CL p.291",
+   "summary": "If you must look at the implementation or the documentation to know what the function does (e.g. date.add(5)), choose a better name or reorganize the functionality.",
+   "keywords": [
+    "nome de função",
+    "function name",
+    "method name",
+    "nomear funções",
+    "naming",
+    "naming functions"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "N1",
+    "N4",
+    "N7",
+    "G2"
+   ]
+  },
+  {
+   "code": "G21",
+   "family": "G",
+   "title": "Entenda o algoritmo",
+   "title_en": "Understand the Algorithm",
+   "page": 292,
+   "citation": "CL p.292",
+   "summary": "Passing the tests is not enough: understand why the solution is correct. The best way is usually to refactor until it is obvious that it works.",
+   "keywords": [
+    "entenda o algoritmo",
+    "understand the algorithm",
+    "gambiarra",
+    "flags",
+    "refatorar",
+    "funciona por acaso",
+    "hack",
+    "works by accident",
+    "refactor"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G3"
+   ]
+  },
+  {
+   "code": "G22",
+   "family": "G",
+   "title": "Torne dependências lógicas em físicas",
+   "title_en": "Make Logical Dependencies Physical",
+   "page": 292,
+   "citation": "CL p.292",
+   "summary": "A dependent module should not assume things about the other (logical dependency); it should ask explicitly for what it needs. E.g. instead of a PAGE_SIZE constant in the reporter, ask the formatter getMaxPageSize().",
+   "keywords": [
+    "dependência lógica",
+    "dependência física",
+    "logical dependency",
+    "physical dependency",
+    "suposição",
+    "assumption",
+    "explicit dependency"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G17",
+    "G31"
+   ]
+  },
+  {
+   "code": "G23",
+   "family": "G",
+   "title": "Prefira polimorfismo a if...else ou switch...case",
+   "title_en": "Prefer Polymorphism to If/Else or Switch/Case",
+   "page": 294,
+   "citation": "CL p.294",
+   "summary": "Consider polymorphism before a switch; functions are rarely more volatile than types. The ONE SWITCH rule: at most one switch per type of selection, and it must create polymorphic objects.",
+   "keywords": [
+    "switch",
+    "if else",
+    "polimorfismo",
+    "polymorphism",
+    "replace conditional with polymorphism",
+    "um switch",
+    "one switch rule",
+    "case"
+   ],
+   "detectable": "script",
+   "related": [
+    "G5",
+    "G27",
+    "G18"
+   ],
+   "title_note": "The OCR reads 'if...e/se'; the image (p.294) shows 'if...else ou switch...case'."
+  },
+  {
+   "code": "G24",
+   "family": "G",
+   "title": "Siga as convenções padrões",
+   "title_en": "Follow Standard Conventions",
+   "page": 294,
+   "citation": "CL p.294",
+   "summary": "The team should follow a coding standard based on industry norms (names, brace placement, where to declare variables); the code itself serves as the example, with no document needed.",
+   "keywords": [
+    "convenções",
+    "coding standard",
+    "padrão de código",
+    "style guide",
+    "convenção de código",
+    "chaves",
+    "conventions",
+    "code convention",
+    "braces"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G11",
+    "N3"
+   ]
+  },
+  {
+   "code": "G25",
+   "family": "G",
+   "title": "Substitua os números mágicos por constantes com nomes",
+   "title_en": "Replace Magic Numbers with Named Constants",
+   "page": 294,
+   "citation": "CL p.294",
+   "summary": "Loose numbers should become well-named constants (86400 -> SECONDS_PER_DAY). Exceptions: self-explanatory formulas and very well-known values; 'magic number' applies to any token with no evident meaning, including strings.",
+   "keywords": [
+    "número mágico",
+    "números mágicos",
+    "magic number",
+    "magic numbers",
+    "constante",
+    "named constant",
+    "literal",
+    "hardcoded",
+    "constant"
+   ],
+   "detectable": "script",
+   "related": [
+    "G16",
+    "G35"
+   ]
+  },
+  {
+   "code": "G26",
+   "family": "G",
+   "title": "Seja preciso",
+   "title_en": "Be Precise",
+   "page": 295,
+   "citation": "CL p.295",
+   "summary": "Decisions in the code must be precise: check for null when the function may return it, do not use floating point for money, handle concurrency and queries that may return more than one record, declare List instead of ArrayList when that is enough.",
+   "keywords": [
+    "precisão",
+    "be precise",
+    "ponto flutuante dinheiro",
+    "float money",
+    "null check",
+    "concorrência",
+    "ambiguidade",
+    "precision",
+    "floating point money",
+    "concurrency",
+    "ambiguity"
+   ],
+   "detectable": "script",
+   "related": [
+    "G3"
+   ]
+  },
+  {
+   "code": "G27",
+   "family": "G",
+   "title": "Estrutura acima de convenção",
+   "title_en": "Structure over Convention",
+   "page": 296,
+   "citation": "CL p.296",
+   "summary": "Prefer decisions enforced by structure to those based on convention: a base class with abstract methods forces implementation; a switch over well-named enums does not.",
+   "keywords": [
+    "estrutura acima de convenção",
+    "structure over convention",
+    "métodos abstratos",
+    "abstract methods",
+    "enforce"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G23"
+   ]
+  },
+  {
+   "code": "G28",
+   "family": "G",
+   "title": "Encapsule as condicionais",
+   "title_en": "Encapsulate Conditionals",
+   "page": 296,
+   "citation": "CL p.296",
+   "summary": "Boolean logic inside if/while is hard to read; extract a function whose name explains the intent (shouldBeDeleted(timer)).",
+   "keywords": [
+    "encapsular condicional",
+    "encapsulate conditionals",
+    "condição complexa",
+    "boolean expression",
+    "extract method",
+    "if complexo",
+    "encapsulate conditional",
+    "complex condition",
+    "complex if"
+   ],
+   "detectable": "script",
+   "related": [
+    "G29",
+    "G33"
+   ]
+  },
+  {
+   "code": "G29",
+   "family": "G",
+   "title": "Evite condicionais negativas",
+   "title_en": "Avoid Negative Conditionals",
+   "page": 296,
+   "citation": "CL p.296",
+   "summary": "Negative conditions are harder to understand; whenever possible use the positive form (shouldCompact instead of !shouldNotCompact).",
+   "keywords": [
+    "condicional negativa",
+    "negative conditional",
+    "negação",
+    "double negative",
+    "dupla negação",
+    "not",
+    "negation"
+   ],
+   "detectable": "script",
+   "related": [
+    "G28"
+   ]
+  },
+  {
+   "code": "G30",
+   "family": "G",
+   "title": "As funções devem fazer uma coisa só",
+   "title_en": "Functions Should Do One Thing",
+   "page": 296,
+   "citation": "CL p.296",
+   "summary": "Functions with several sections that perform a series of operations should be split into smaller functions that each do one thing.",
+   "keywords": [
+    "fazer uma coisa",
+    "do one thing",
+    "single responsibility",
+    "função grande",
+    "long function",
+    "long method",
+    "função longa",
+    "large function"
+   ],
+   "detectable": "script",
+   "related": [
+    "G34",
+    "F3",
+    "G15"
+   ]
+  },
+  {
+   "code": "G31",
+   "family": "G",
+   "title": "Acoplamentos temporários ocultos",
+   "title_en": "Hidden Temporal Couplings",
+   "page": 297,
+   "citation": "CL p.297",
+   "summary": "If the call order matters, make it explicit: each function produces the result that the next one receives as an argument (bucket brigade), making the wrong order impossible.",
+   "keywords": [
+    "acoplamento temporal",
+    "temporal coupling",
+    "ordem de chamada",
+    "call order",
+    "hidden temporal coupling",
+    "bucket brigade"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G22"
+   ]
+  },
+  {
+   "code": "G32",
+   "family": "G",
+   "title": "Não seja arbitrário",
+   "title_en": "Don't Be Arbitrary",
+   "page": 298,
+   "citation": "CL p.298",
+   "summary": "Have a reason for the structure of the code and make it visible; arbitrary structure invites changes. E.g. a public nested class with no need, used by unrelated classes.",
+   "keywords": [
+    "arbitrário",
+    "arbitrary",
+    "classe aninhada",
+    "inner class",
+    "estrutura",
+    "consistência",
+    "nested class",
+    "structure",
+    "consistency"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G11",
+    "G13"
+   ]
+  },
+  {
+   "code": "G33",
+   "family": "G",
+   "title": "Encapsule as condições de limites",
+   "title_en": "Encapsulate Boundary Conditions",
+   "page": 298,
+   "citation": "CL p.298",
+   "summary": "Concentrate boundary handling in one place; avoid scattered +1 and -1 (e.g. a repeated level + 1 becomes nextLevel).",
+   "keywords": [
+    "condição de limite",
+    "boundary condition",
+    "+1 -1",
+    "off-by-one",
+    "encapsulate boundary"
+   ],
+   "detectable": "script",
+   "related": [
+    "G3",
+    "T5",
+    "G28"
+   ]
+  },
+  {
+   "code": "G34",
+   "family": "G",
+   "title": "Funções devem descer apenas um nível de",
+   "title_en": "Functions Should Descend Only One Level of Abstraction",
+   "page": 299,
+   "citation": "CL p.299",
+   "summary": "All statements of a function should be at the same level of abstraction, one below the operation the name describes. E.g. a render that mixes the concept of a horizontal rule with the syntax of the HR tag.",
+   "keywords": [
+    "nível de abstração",
+    "one level of abstraction",
+    "mistura de níveis",
+    "stepdown",
+    "abstraction",
+    "level of abstraction",
+    "mixed levels"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G6",
+    "G30",
+    "N2"
+   ],
+   "title_note": "Truncated printed title: the word 'abstração' is missing in the Brazilian edition (the same happens in the body text). Checked against the image of p.299."
+  },
+  {
+   "code": "G35",
+   "family": "G",
+   "title": "Mantenha os dados configuráveis em níveis altos",
+   "title_en": "Keep Configurable Data at High Levels",
+   "page": 300,
+   "citation": "CL p.300",
+   "summary": "Configuration constants and known default values at a high level should not be buried in low-level functions; expose them at the top and pass them down as arguments.",
+   "keywords": [
+    "configuração",
+    "configuration",
+    "valor padrão",
+    "default value",
+    "constante de configuração",
+    "hardcoded config",
+    "configuration constant"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G25",
+    "G6"
+   ]
+  },
+  {
+   "code": "G36",
+   "family": "G",
+   "title": "Evite a navegação transitiva",
+   "title_en": "Avoid Transitive Navigation",
+   "page": 301,
+   "citation": "CL p.301",
+   "summary": "Modules should know only their immediate collaborators (Law of Demeter, 'shy code'); avoid a.getB().getC().doSomething(), which makes the architecture rigid.",
+   "keywords": [
+    "lei de demeter",
+    "law of demeter",
+    "navegação transitiva",
+    "transitive navigation",
+    "train wreck",
+    "encadeamento",
+    "method chain",
+    "shy code",
+    "chaining"
+   ],
+   "detectable": "script",
+   "related": [
+    "G8",
+    "G14"
+   ]
+  },
+  {
+   "code": "J1",
+   "family": "J",
+   "title": "Evite longas listas de importação usando wildcards (caracteres curinga)",
+   "title_en": "Avoid Long Import Lists by Using Wildcards",
+   "page": 301,
+   "citation": "CL p.301",
+   "summary": "When using two or more classes from a package, import the package with a wildcard; long lists are intimidating and specific imports are hard dependencies. Name conflicts are rare and manageable.",
+   "keywords": [
+    "import",
+    "wildcard import",
+    "import *",
+    "curinga",
+    "java imports",
+    "lista de imports",
+    "import list"
+   ],
+   "detectable": "script",
+   "related": []
+  },
+  {
+   "code": "J2",
+   "family": "J",
+   "title": "Não herde as constantes",
+   "title_en": "Don't Inherit Constants",
+   "page": 302,
+   "citation": "CL p.302",
+   "summary": "Do not implement an interface just to gain access to its constants; this hides the origin at the top of the hierarchy. Use static import.",
+   "keywords": [
+    "herdar constantes",
+    "constant interface",
+    "interface de constantes",
+    "import static",
+    "inherit constants",
+    "static import"
+   ],
+   "detectable": "script",
+   "related": [
+    "J3"
+   ]
+  },
+  {
+   "code": "J3",
+   "family": "J",
+   "title": "Constantes versus enum",
+   "title_en": "Constants versus Enums",
+   "page": 303,
+   "citation": "CL p.303",
+   "summary": "Use enum (since Java 5) instead of public static final int; enums have names, methods and fields, giving more expressiveness.",
+   "keywords": [
+    "enum",
+    "constantes",
+    "constants",
+    "static final int",
+    "enumeração",
+    "enumeration"
+   ],
+   "detectable": "script",
+   "related": [
+    "J2",
+    "G25"
+   ]
+  },
+  {
+   "code": "N1",
+   "family": "N",
+   "title": "Escolha nomes descritivos",
+   "title_en": "Choose Descriptive Names",
+   "page": 304,
+   "citation": "CL p.304",
+   "summary": "Choose names carefully and reevaluate them as the software evolves; the book states that names are 90% responsible for readability.",
+   "keywords": [
+    "nome descritivo",
+    "descriptive name",
+    "nomenclatura",
+    "naming",
+    "nomes",
+    "legibilidade",
+    "names",
+    "readability"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "N4",
+    "G20",
+    "G16"
+   ]
+  },
+  {
+   "code": "N2",
+   "family": "N",
+   "title": "Escolha nomes no nível apropriado de abstração",
+   "title_en": "Choose Names at the Appropriate Level of Abstraction",
+   "page": 306,
+   "citation": "CL p.306",
+   "summary": "Names should reflect the level of abstraction of the class or function, not the implementation. E.g. Modem.dial(phoneNumber) becomes connect(connectionLocator).",
+   "keywords": [
+    "nome abstração",
+    "abstraction level name",
+    "nome de implementação",
+    "naming abstraction",
+    "name abstraction level",
+    "implementation name"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G6",
+    "G34"
+   ]
+  },
+  {
+   "code": "N3",
+   "family": "N",
+   "title": "Use uma nomenclatura padrão onde for possível",
+   "title_en": "Use Standard Nomenclature Where Possible",
+   "page": 306,
+   "citation": "CL p.306",
+   "summary": "Use existing conventions: the design pattern name in the class (AutoHangupModemDecorator), toString in Java, and the project's ubiquitous language (Eric Evans).",
+   "keywords": [
+    "nomenclatura padrão",
+    "standard nomenclature",
+    "padrão de projeto no nome",
+    "design pattern name",
+    "ubiquitous language",
+    "linguagem onipresente",
+    "DDD"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G24",
+    "G11"
+   ]
+  },
+  {
+   "code": "N4",
+   "family": "N",
+   "title": "Nomes não ambíguos",
+   "title_en": "Unambiguous Names",
+   "page": 307,
+   "citation": "CL p.307",
+   "summary": "The name must not leave the task of the function or variable ambiguous; e.g. doRename becomes renamePageAndOptionallyAllReferences, even if long.",
+   "keywords": [
+    "nome ambíguo",
+    "ambiguous name",
+    "unambiguous names",
+    "nome vago",
+    "vague name"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "N1",
+    "G20"
+   ]
+  },
+  {
+   "code": "N5",
+   "family": "N",
+   "title": "Use nomes longos para escopos grandes",
+   "title_en": "Use Long Names for Long Scopes",
+   "page": 307,
+   "citation": "CL p.307",
+   "summary": "The length of the name should follow the scope: i and j are fine in loops of a few lines; the larger the scope, the longer and more precise the name.",
+   "keywords": [
+    "nome curto",
+    "short name",
+    "variável de uma letra",
+    "escopo",
+    "scope",
+    "name length",
+    "comprimento do nome",
+    "single letter variable"
+   ],
+   "detectable": "script",
+   "related": [
+    "N1"
+   ]
+  },
+  {
+   "code": "N6",
+   "family": "N",
+   "title": "Evite codificações",
+   "title_en": "Avoid Encodings",
+   "page": 307,
+   "citation": "CL p.307",
+   "summary": "Do not encode type or scope in the name (prefixes m_, f, siv_); IDEs already provide that information. Avoid Hungarian pollution.",
+   "keywords": [
+    "codificação",
+    "encoding",
+    "notação húngara",
+    "hungarian notation",
+    "prefixo m_",
+    "member prefix",
+    "prefixo",
+    "m_ prefix",
+    "prefix"
+   ],
+   "detectable": "script",
+   "related": [
+    "G16"
+   ]
+  },
+  {
+   "code": "N7",
+   "family": "N",
+   "title": "Nomes devem descrever os efeitos colaterais",
+   "title_en": "Names Should Describe Side-Effects",
+   "page": 308,
+   "citation": "CL p.308",
+   "summary": "The name must tell everything the function does, including side effects; a getOos that creates the object if it does not exist should be createOrReturnOos.",
+   "keywords": [
+    "efeito colateral",
+    "side effect",
+    "nome enganoso",
+    "getter que cria",
+    "lazy initialization",
+    "misleading name",
+    "getter that creates"
+   ],
+   "detectable": "script",
+   "related": [
+    "G20",
+    "N4"
+   ]
+  },
+  {
+   "code": "T1",
+   "family": "T",
+   "title": "Testes insuficientes",
+   "title_en": "Insufficient Tests",
+   "page": 308,
+   "citation": "CL p.308",
+   "summary": "The suite should test everything that can fail; while there are unexplored conditions or unvalidated calculations, the tests are insufficient ('looks good' is not a criterion).",
+   "keywords": [
+    "testes insuficientes",
+    "insufficient tests",
+    "cobertura",
+    "test coverage",
+    "faltam testes",
+    "missing tests"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T2",
+    "T5"
+   ]
+  },
+  {
+   "code": "T2",
+   "family": "T",
+   "title": "Use uma ferramenta de cobertura!",
+   "title_en": "Use a Coverage Tool!",
+   "page": 308,
+   "citation": "CL p.308",
+   "summary": "Coverage tools show gaps in the testing strategy, highlighting ifs and catches whose bodies were not exercised.",
+   "keywords": [
+    "cobertura",
+    "coverage tool",
+    "code coverage",
+    "jacoco",
+    "cobertura de código",
+    "coverage"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T1",
+    "T8"
+   ]
+  },
+  {
+   "code": "T3",
+   "family": "T",
+   "title": "Não pule testes triviais",
+   "title_en": "Don't Skip Trivial Tests",
+   "page": 308,
+   "citation": "CL p.308",
+   "summary": "Trivial tests are cheap and are worth more as documentation than they cost.",
+   "keywords": [
+    "teste trivial",
+    "trivial test",
+    "pular teste",
+    "documentação",
+    "skip test",
+    "documentation"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T1"
+   ]
+  },
+  {
+   "code": "T4",
+   "family": "T",
+   "title": "Um teste ignorado é uma questão sobre uma ambiguidade",
+   "title_en": "An Ignored Test Is a Question about an Ambiguity",
+   "page": 308,
+   "citation": "CL p.308",
+   "summary": "When the requirement is unclear, record the doubt as a commented-out test or one annotated with @Ignore, depending on whether the ambiguity compiles or not.",
+   "keywords": [
+    "teste ignorado",
+    "ignored test",
+    "@Ignore",
+    "@Disabled",
+    "skip test",
+    "requisito ambíguo",
+    "ambiguous requirement"
+   ],
+   "detectable": "script",
+   "related": [
+    "G4"
+   ]
+  },
+  {
+   "code": "T5",
+   "family": "T",
+   "title": "Teste as condições de limites",
+   "title_en": "Test Boundary Conditions",
+   "page": 309,
+   "citation": "CL p.309",
+   "summary": "Pay special attention to boundaries: we usually get the center of the algorithm right and get the edges wrong.",
+   "keywords": [
+    "teste de limite",
+    "boundary test",
+    "edge case",
+    "valor limite",
+    "boundary value"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "G3",
+    "G33"
+   ]
+  },
+  {
+   "code": "T6",
+   "family": "T",
+   "title": "Teste abundantemente bugs próximos",
+   "title_en": "Exhaustively Test Near Bugs",
+   "page": 309,
+   "citation": "CL p.309",
+   "summary": "Bugs cluster: when you find one in a function, test it exhaustively; there are probably others.",
+   "keywords": [
+    "bugs agrupados",
+    "bug clustering",
+    "exhaustive test",
+    "testar perto do bug",
+    "test near bug",
+    "clustered bugs"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T1"
+   ]
+  },
+  {
+   "code": "T7",
+   "family": "T",
+   "title": "Padrões de falhas são reveladores",
+   "title_en": "Patterns of Failure Are Revealing",
+   "page": 309,
+   "citation": "CL p.309",
+   "summary": "Complete, well-ordered test cases expose patterns in the failures that help diagnose the problem.",
+   "keywords": [
+    "padrão de falha",
+    "failure pattern",
+    "diagnóstico",
+    "testes falhando",
+    "patterns of failure",
+    "diagnosis",
+    "failing tests"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T8"
+   ]
+  },
+  {
+   "code": "T8",
+   "family": "T",
+   "title": "Padrões de cobertura de testes podem ser reveladores",
+   "title_en": "Test Coverage Patterns Can Be Revealing",
+   "page": 309,
+   "citation": "CL p.309",
+   "summary": "Seeing what is or is not executed by the tests gives clues as to why the failing tests are failing.",
+   "keywords": [
+    "padrão de cobertura",
+    "coverage pattern",
+    "cobertura",
+    "diagnóstico",
+    "test coverage patterns",
+    "diagnosis"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "T2",
+    "T7"
+   ]
+  },
+  {
+   "code": "T9",
+   "family": "T",
+   "title": "Testes devem ser rápidos",
+   "title_en": "Tests Should Be Fast",
+   "page": 309,
+   "citation": "CL p.309",
+   "summary": "A slow test is not run and is the first to be dropped under pressure; do what you can to keep them fast.",
+   "keywords": [
+    "teste lento",
+    "slow test",
+    "fast tests",
+    "testes rápidos",
+    "velocidade dos testes",
+    "test speed",
+    "test performance"
+   ],
+   "detectable": "julgamento",
+   "related": [
+    "E2"
+   ]
+  }
+ ]
+}

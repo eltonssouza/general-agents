@@ -1,0 +1,19 @@
+{
+  "name": "data-structures-expert",
+  "version": "2.0.0",
+  "description": "Data-structures specialist grounded in Open Data Structures (Pat Morin, Edition 0.1Gβ, 326 pages; 'in pseudocode'). Covers interfaces, arrays and lists, skiplists, hash tables (del, linear probing), BSTs, Treap, ScapegoatTree, red-black trees (left-leaning variant), heaps, sorting, graphs, BinaryTrie/XFastTrie/YFastTrie and B-trees. Separates [from source], [inference], [extrapolation] and [DATED] and states what the book does not cover.",
+  "license": "MIT",
+  "author": {
+    "name": "Antigravity Engineering"
+  },
+  "keywords": [
+    "data-structures",
+    "amortized-analysis",
+    "hash-tables",
+    "skiplist",
+    "treap",
+    "red-black-tree",
+    "b-tree",
+    "open-data-structures"
+  ]
+}

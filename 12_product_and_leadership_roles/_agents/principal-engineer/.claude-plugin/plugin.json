@@ -1,0 +1,17 @@
+{
+  "name": "principal-engineer",
+  "version": "1.0.0",
+  "description": "Role agent: Principal / Staff Engineer. Systemic cross-team diagnosis, simplification, guardrails and reference patterns, alignment of the technical roadmap with the business, and RFCs with a trade-off matrix and an adoption plan. No bibliographic source: [practice] label and hand-off to the collection's specialists.",
+  "license": "MIT",
+  "author": {
+    "name": "Elton Souza"
+  },
+  "keywords": [
+    "principal-engineer",
+    "staff-engineer",
+    "rfc",
+    "technical-strategy",
+    "guardrails",
+    "roadmap"
+  ]
+}

@@ -1,0 +1,2136 @@
+{
+ "fonte": "TMM + DZ (Infosec Strategies and Best Practices, MacMillan, Packt 2021)",
+ "convencao_pagina": "PDF; DZ printed = PDF - 17; TMM PDF = document (3 pages)",
+ "capitulos": [
+  {
+   "n": 1,
+   "titulo": "InfoSec and Risk Management",
+   "pdf": "20-45",
+   "impressa": "3-28",
+   "ref": "risco-e-governanca.md"
+  },
+  {
+   "n": 2,
+   "titulo": "Protecting the Security of Assets",
+   "pdf": "46-77",
+   "impressa": "29-60",
+   "ref": "ativos-isms-e-politicas.md"
+  },
+  {
+   "n": 3,
+   "titulo": "Designing Secure Information Systems",
+   "pdf": "80-111",
+   "impressa": "63-94",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md"
+  },
+  {
+   "n": 4,
+   "titulo": "Designing and Protecting Network Security",
+   "pdf": "112-143",
+   "impressa": "95-126",
+   "ref": "rede-e-zero-trust.md"
+  },
+  {
+   "n": 5,
+   "titulo": "Controlling Access and Managing Identity",
+   "pdf": "144-166",
+   "impressa": "127-149",
+   "ref": "acesso-e-identidade.md"
+  },
+  {
+   "n": 6,
+   "titulo": "Designing and Managing Security Testing Processes",
+   "pdf": "170-190",
+   "impressa": "153-173",
+   "ref": "testes-de-seguranca-e-assessments.md"
+  },
+  {
+   "n": 7,
+   "titulo": "Owning Security Operations",
+   "pdf": "192-220",
+   "impressa": "175-203",
+   "ref": "operacoes-de-seguranca.md"
+  },
+  {
+   "n": 8,
+   "titulo": "Improving the Security of Software",
+   "pdf": "222-252",
+   "impressa": "205-235",
+   "ref": "seguranca-de-software-sdlc-devsecops.md"
+  }
+ ],
+ "entradas": [
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "What threat modeling is according to the manifesto",
+   "pages": "1",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "threat modeling",
+    "modelagem de ameacas",
+    "definicao",
+    "representacoes de um sistema",
+    "seguranca e privacidade"
+   ],
+   "terms_en": [
+    "threat modeling",
+    "representations of a system"
+   ],
+   "summary": "Analyzing representations of a system to highlight security and privacy concerns.",
+   "label": "[from source]",
+   "id": 1
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "The four questions of threat modeling",
+   "pages": "1",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "quatro perguntas",
+    "4 perguntas",
+    "o que estamos construindo",
+    "o que pode dar errado",
+    "o que vamos fazer",
+    "fizemos um bom trabalho",
+    "bom o bastante"
+   ],
+   "terms_en": [
+    "four key questions",
+    "what are we working on",
+    "what can go wrong",
+    "what are we going to do about it",
+    "did we do a good enough job"
+   ],
+   "summary": "1 What are we working on? 2 What can go wrong? 3 What are we going to do about it? 4 Did we do a good enough job?",
+   "label": "[from source]",
+   "id": 2
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "Why do threat modeling; who should do it",
+   "pages": "1",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "por que modelar ameacas",
+    "quem deve fazer",
+    "todos",
+    "ameacas como saida"
+   ],
+   "terms_en": [
+    "why threat model",
+    "who should threat model"
+   ],
+   "summary": "Recognize what can go wrong, find design and implementation problems; anyone concerned about privacy, security and safety.",
+   "label": "[from source]",
+   "id": 3
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "How to use the manifesto (methodology-agnostic, not a how-to)",
+   "pages": "1",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "como usar o manifesto",
+    "agnostico de metodologia",
+    "nao e um how-to",
+    "formato do manifesto agil"
+   ],
+   "terms_en": [
+    "methodology-agnostic",
+    "not a how-to",
+    "agile manifesto"
+   ],
+   "summary": "Guide for developing or refining a methodology; ideas, not a recipe; format inspired by the Agile Manifesto (values and principles).",
+   "label": "[from source]",
+   "id": 4
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "The five values of the manifesto",
+   "pages": "1",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "valores",
+    "cinco valores",
+    "cultura de achar e corrigir",
+    "checkbox compliance",
+    "pessoas e colaboracao",
+    "jornada de entendimento",
+    "fazer em vez de falar",
+    "refinamento continuo"
+   ],
+   "terms_en": [
+    "values",
+    "continuous refinement",
+    "people and collaboration",
+    "journey of understanding",
+    "doing over talking"
+   ],
+   "summary": "Culture of finding and fixing > checkbox; people > processes/tools; journey > snapshot; doing > talking; continuous refinement > single delivery.",
+   "label": "[from source]",
+   "id": 5
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "The four principles of the manifesto",
+   "pages": "2",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "principios",
+    "analise cedo e frequente",
+    "iteracoes porcoes gerenciaveis",
+    "valor para stakeholders",
+    "dialogo e documentos"
+   ],
+   "terms_en": [
+    "principles",
+    "early and frequent",
+    "manageable portions",
+    "stakeholders",
+    "dialog"
+   ],
+   "summary": "Early and frequent analysis; align with development practice in iterations of manageable scope; results of value to stakeholders; dialogue builds understanding and documents record it and enable measurement.",
+   "label": "[from source]",
+   "id": 6
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "Patterns that help (Systematic Approach, Informed Creativity, Varied Viewpoints, Useful Toolkit, Theory into Practice)",
+   "pages": "2",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "padroes",
+    "abordagem sistematica",
+    "criatividade informada",
+    "pontos de vista variados",
+    "toolkit util",
+    "teoria na pratica"
+   ],
+   "terms_en": [
+    "patterns",
+    "systematic approach",
+    "informed creativity",
+    "varied viewpoints",
+    "useful toolkit",
+    "theory into practice"
+   ],
+   "summary": "Five patterns recommended by the manifesto.",
+   "label": "[from source]",
+   "id": 7
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "Anti-patterns (Hero, Admiration for the Problem, Overfocus, Perfect Representation)",
+   "pages": "2",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "anti-padroes",
+    "antipadroes",
+    "heroi",
+    "admiracao pelo problema",
+    "excesso de foco",
+    "representacao perfeita",
+    "varias representacoes"
+   ],
+   "terms_en": [
+    "anti-patterns",
+    "hero threat modeler",
+    "admiration for the problem",
+    "tendency to overfocus",
+    "perfect representation"
+   ],
+   "summary": "Four anti-patterns that hinder threat modeling.",
+   "label": "[from source]",
+   "id": 8
+  },
+  {
+   "source": "TMM",
+   "chapter": "-",
+   "topic": "About the manifesto: intent, authors, license",
+   "pages": "3",
+   "ref": "tmm-manifesto.md",
+   "keywords": [
+    "autores",
+    "licenca",
+    "creative commons",
+    "sobre o manifesto",
+    "grupo de trabalho"
+   ],
+   "terms_en": [
+    "authors",
+    "license",
+    "cc by 4.0",
+    "working group"
+   ],
+   "summary": "15 authors; CC BY 4.0; current version on the manifesto website.",
+   "label": "[from source]",
+   "id": 9
+  },
+  {
+   "source": "DZ",
+   "chapter": "-",
+   "topic": "Book identification (Packt, MacMillan, 2021)",
+   "pages": "2-3",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "autor",
+    "editora",
+    "quem escreveu",
+    "packt",
+    "macmillan",
+    "edicao",
+    "isbn",
+    "dzone"
+   ],
+   "terms_en": [
+    "author",
+    "publisher",
+    "packt"
+   ],
+   "summary": "Infosec Strategies and Best Practices, Joseph MacMillan, Packt, April 2021, ISBN 978-1-80056-635-4. Single author; not a DZone compilation.",
+   "label": "[from source]",
+   "id": 10
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Terminology: organization, information, CIA triad, non-repudiation",
+   "pages": "21-22",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "triade cia",
+    "confidencialidade integridade disponibilidade",
+    "nao repudio",
+    "terminologia",
+    "informacao"
+   ],
+   "terms_en": [
+    "cia triad",
+    "non-repudiation"
+   ],
+   "summary": "CIA as an interconnected system; N = non-repudiation.",
+   "label": "[from source]",
+   "id": 11
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Definition of risk and the formula Risk = Impact x Likelihood",
+   "pages": "23",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "risco",
+    "definicao de risco",
+    "formula de risco",
+    "impacto x probabilidade",
+    "gestao de risco"
+   ],
+   "terms_en": [
+    "risk",
+    "risk = impact x likelihood",
+    "risk management"
+   ],
+   "summary": "Risk = potential for loss; components are assets, threats, vulnerabilities, likelihood and impact.",
+   "label": "[from source]",
+   "id": 12
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Assets and the asset register",
+   "pages": "24-25",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "ativo",
+    "ativos",
+    "asset register",
+    "inventario de ativos",
+    "joias da coroa"
+   ],
+   "terms_en": [
+    "asset",
+    "asset register",
+    "crown jewels"
+   ],
+   "summary": "Asset = anything of value; no asset, no risk; register with ID, name, description, notes.",
+   "label": "[from source]",
+   "id": 13
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Threats and actors (solo, group, state, insider, environmental)",
+   "pages": "25-26",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "ameaca",
+    "ameacas",
+    "ator de ameaca",
+    "insider",
+    "outsider",
+    "estatal",
+    "ambiental"
+   ],
+   "terms_en": [
+    "threat",
+    "threat actor",
+    "insider"
+   ],
+   "summary": "Capability, interest, tactics; standard set: outsiders, malicious insiders, accidental insiders, environmental.",
+   "label": "[from source]",
+   "id": 14
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Vulnerability (simple definition)",
+   "pages": "26",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "vulnerabilidade"
+   ],
+   "terms_en": [
+    "vulnerability"
+   ],
+   "summary": "Weakness of the asset that a threat can exploit.",
+   "label": "[from source]",
+   "id": 15
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Impact and likelihood scales and the 5x5 matrix",
+   "pages": "28-33",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "matriz de risco",
+    "escala de impacto",
+    "escala de probabilidade",
+    "5x5",
+    "calculo de risco",
+    "ketchup",
+    "avaliacao de risco"
+   ],
+   "terms_en": [
+    "risk matrix",
+    "impact scale",
+    "likelihood scale"
+   ],
+   "summary": "Impact by % of revenue; likelihood 1-5; 5x5 matrix (1-25).",
+   "label": "[from source]",
+   "id": 16
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Risk appetite and treatment (avoid, reduce, transfer, accept)",
+   "pages": "33-34",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "apetite de risco",
+    "aceitacao de risco",
+    "tratamento de risco",
+    "evitar reduzir transferir aceitar",
+    "risco residual",
+    "risk register",
+    "registro de riscos"
+   ],
+   "terms_en": [
+    "risk appetite",
+    "risk treatment",
+    "residual risk",
+    "risk register"
+   ],
+   "summary": "Level acceptable to the stakeholders; four treatments; residual below the acceptance level.",
+   "label": "[from source]",
+   "id": 17
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Compliance, privacy and ISO standards",
+   "pages": "35-37",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "conformidade",
+    "compliance",
+    "gdpr",
+    "hipaa",
+    "ccpa",
+    "coppa",
+    "iso 27001",
+    "privacidade",
+    "sox",
+    "fisma"
+   ],
+   "terms_en": [
+    "compliance",
+    "gdpr",
+    "iso 27001"
+   ],
+   "summary": "Laws and standards, certifications, compliance tools, internal audits.",
+   "label": "[from source]",
+   "id": 18
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Investigations, legal hold and eDiscovery",
+   "pages": "38",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "investigacao",
+    "legal hold",
+    "ediscovery",
+    "pseudonimizacao",
+    "forense legal"
+   ],
+   "terms_en": [
+    "ediscovery",
+    "legal hold",
+    "pseudonymization"
+   ],
+   "summary": "Support investigations; pseudonymization avoids bias; eDiscovery.",
+   "label": "[from source]",
+   "id": 19
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Continuous improvement (RAID example)",
+   "pages": "39-40",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "melhoria continua",
+    "otimizacao",
+    "raid",
+    "continual improvement"
+   ],
+   "terms_en": [
+    "continual improvement"
+   ],
+   "summary": "Simulation reveals gaps; updates records, reassesses risk, shows economic impact.",
+   "label": "[from source]",
+   "id": 20
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Training and awareness",
+   "pages": "41",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "conscientizacao",
+    "treinamento",
+    "phishing",
+    "culpar a vitima",
+    "awareness"
+   ],
+   "terms_en": [
+    "security awareness",
+    "training",
+    "phishing"
+   ],
+   "summary": "Train so as not to depend on a single person; do not blame the victim.",
+   "label": "[from source]",
+   "id": 21
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Third-party risk: SLA, VSAQ, due diligence",
+   "pages": "42-44",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "terceiros",
+    "fornecedor",
+    "sla",
+    "vsaq",
+    "caiq",
+    "due diligence",
+    "due care",
+    "responsabilidade compartilhada"
+   ],
+   "terms_en": [
+    "third-party risk",
+    "sla",
+    "vsaq",
+    "due care"
+   ],
+   "summary": "Binding SLA as a control; security questionnaire; documented due diligence.",
+   "label": "[from source]",
+   "id": 22
+  },
+  {
+   "source": "DZ",
+   "chapter": 1,
+   "topic": "Defense in depth and progress reporting to management",
+   "pages": "44-45",
+   "ref": "risco-e-governanca.md",
+   "keywords": [
+    "defesa em profundidade",
+    "reportar a gestao",
+    "roi",
+    "c-level",
+    "versoes do risk register"
+   ],
+   "terms_en": [
+    "defense in depth",
+    "reporting"
+   ],
+   "summary": "Defense in depth tolerates a control failure; keep versions of the risk register; report without jargon.",
+   "label": "[from source]",
+   "id": 23
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Role of senior management and risk communication (business case)",
+   "pages": "48-49",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "alta gestao",
+    "comunicar risco",
+    "business case",
+    "c-level",
+    "template de comunicacao de risco"
+   ],
+   "terms_en": [
+    "top management",
+    "business case"
+   ],
+   "summary": "Final responsibility rests with senior management; template: loss, system, threat, mitigation, cost, deadline.",
+   "label": "[from source]",
+   "id": 24
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "ISMS: definition and documents",
+   "pages": "49-50",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "isms",
+    "sgsi",
+    "sistema de gestao de seguranca da informacao",
+    "politicas procedimentos baselines"
+   ],
+   "terms_en": [
+    "isms",
+    "information security management system"
+   ],
+   "summary": "Systematic risk approach with formal documents; ISO 27001 basis.",
+   "label": "[from source]",
+   "id": 25
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Organization context and ISMS scope",
+   "pages": "51-52",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "contexto da organizacao",
+    "escopo do isms",
+    "fora de escopo"
+   ],
+   "terms_en": [
+    "context of the organization",
+    "isms scope"
+   ],
+   "summary": "Nature, assets, people; scope and out-of-scope items.",
+   "label": "[from source]",
+   "id": 26
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Statement of Applicability (SoA)",
+   "pages": "52-53",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "soa",
+    "declaracao de aplicabilidade",
+    "statement of applicability",
+    "annex a",
+    "27002",
+    "controles iso"
+   ],
+   "terms_en": [
+    "statement of applicability",
+    "annex a"
+   ],
+   "summary": "Risk-controls table with status and justification.",
+   "label": "[from source] [DATED]",
+   "id": 27
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Information security policy and other ISMS documents",
+   "pages": "54-55",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "politica de seguranca",
+    "papeis e responsabilidades",
+    "auditoria interna",
+    "acao corretiva",
+    "registros"
+   ],
+   "terms_en": [
+    "information security policy",
+    "corrective action"
+   ],
+   "summary": "Measurable CIA objectives; roles; legal requirements; audit; corrective action; records.",
+   "label": "[from source]",
+   "id": 28
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Asset management: lifecycle, inventory, owner, classification, labeling",
+   "pages": "55-57",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "ciclo de vida do ativo",
+    "dono do ativo",
+    "classificacao",
+    "rotulagem",
+    "confidential restricted internal public",
+    "politica de classificacao"
+   ],
+   "terms_en": [
+    "asset owner",
+    "information classification",
+    "labeling"
+   ],
+   "summary": "Inventory, classify, label, handle; ~4 classification levels.",
+   "label": "[from source]",
+   "id": 29
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Acceptable use policy",
+   "pages": "57-58",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "uso aceitavel",
+    "acceptable use",
+    "midia removivel",
+    "politica de uso"
+   ],
+   "terms_en": [
+    "acceptable use policy"
+   ],
+   "summary": "Usage rules for employees, contractors, third parties.",
+   "label": "[from source]",
+   "id": 30
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Risk management documentation (methodologies and report)",
+   "pages": "58-60",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "metodologia de avaliacao de risco",
+    "metodologia de tratamento",
+    "relatorio de avaliacao de risco",
+    "plano de tratamento"
+   ],
+   "terms_en": [
+    "risk assessment methodology",
+    "risk treatment plan"
+   ],
+   "summary": "Identify, assess, treat, monitor; reports by audience.",
+   "label": "[from source]",
+   "id": 31
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Third-party, incident, BC and IT documentation in the ISMS",
+   "pages": "61-63",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "politica de terceiros",
+    "politica de incidentes",
+    "playbooks",
+    "tabletop",
+    "documentos de ti",
+    "bcm"
+   ],
+   "terms_en": [
+    "tabletop exercise",
+    "incident response playbook",
+    "bcm"
+   ],
+   "summary": "Simple playbooks; tabletops; documents accessible during an outage.",
+   "label": "[from source]",
+   "id": 32
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Educating users, assessing ISMS effectiveness, shadow IT",
+   "pages": "64-65",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "educar usuarios",
+    "eficacia do isms",
+    "shadow it",
+    "patrocinio executivo",
+    "revisao anual"
+   ],
+   "terms_en": [
+    "shadow it",
+    "isms effectiveness"
+   ],
+   "summary": "Users work around controls without communication; annual review and audit.",
+   "label": "[from source]",
+   "id": 33
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Roles per asset and KISS",
+   "pages": "66-67",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "information owner",
+    "papeis por ativo",
+    "kiss",
+    "system owner"
+   ],
+   "terms_en": [
+    "information owner",
+    "kiss"
+   ],
+   "summary": "Define roles per asset, keep it simple.",
+   "label": "[from source]",
+   "id": 34
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "DLP and automatic classification",
+   "pages": "68-69",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "dlp",
+    "prevencao de perda de dados",
+    "information protection",
+    "classificacao automatica",
+    "rotulo automatico"
+   ],
+   "terms_en": [
+    "dlp",
+    "data loss prevention"
+   ],
+   "summary": "Automatic discovery, classification and protection; manual work does not scale.",
+   "label": "[from source]",
+   "id": 35
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Retention policies",
+   "pages": "69-70",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "retencao",
+    "politica de retencao",
+    "prazo de guarda"
+   ],
+   "terms_en": [
+    "retention policy"
+   ],
+   "summary": "Keep what is needed for the proper time; dispose on schedule.",
+   "label": "[from source]",
+   "id": 36
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Control classes and types; order of defense in depth",
+   "pages": "70-72",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "tipos de controle",
+    "controles preventivos detectivos",
+    "controle compensatorio",
+    "controles administrativos tecnicos fisicos operacionais",
+    "ordem dos controles",
+    "deter deny detect delay"
+   ],
+   "terms_en": [
+    "preventive",
+    "detective",
+    "corrective",
+    "compensating",
+    "deterrent",
+    "recovery controls"
+   ],
+   "summary": "Classes (administrative, physical, technical, operational) and functions; deter, prevent, detect, delay, correct, recover.",
+   "label": "[from source]",
+   "id": 37
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Data in transit, at rest, in use; encryption and hashing",
+   "pages": "72-73",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "dados em transito",
+    "dados em repouso",
+    "dados em uso",
+    "criptografia",
+    "hashing",
+    "tls",
+    "aes"
+   ],
+   "terms_en": [
+    "data in transit",
+    "data at rest",
+    "data in use",
+    "encryption"
+   ],
+   "summary": "Three states; encryption required by PCI-DSS/ISO 27001; hashing for integrity and passwords.",
+   "label": "[from source]",
+   "id": 38
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Defense in depth example for a web app",
+   "pages": "74-75",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "defesa em profundidade",
+    "exemplo web app",
+    "waf",
+    "hash com salt",
+    "allowlist de ip"
+   ],
+   "terms_en": [
+    "defense in depth",
+    "waf"
+   ],
+   "summary": "Layers: authentication, salted hash, 2FA on the repo, SAST, scanners, logs, firewall, WAF, load balancing.",
+   "label": "[from source]",
+   "id": 39
+  },
+  {
+   "source": "DZ",
+   "chapter": 2,
+   "topic": "Secure disposal, data remnants, cryptoshredding",
+   "pages": "75-77",
+   "ref": "ativos-isms-e-politicas.md",
+   "keywords": [
+    "descarte",
+    "destruicao",
+    "data remnants",
+    "cryptoshredding",
+    "degauss",
+    "sobrescrever",
+    "arquivamento"
+   ],
+   "terms_en": [
+    "disposal",
+    "data remnants",
+    "cryptoshredding",
+    "defensible destruction"
+   ],
+   "summary": "A.8.3.2/A.11.2.7; overwrite, degauss, crypto, physical; archiving is also disposal.",
+   "label": "[from source] [DATED]",
+   "id": 40
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Attacker motivations",
+   "pages": "82-85",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "motivacao",
+    "motivacoes",
+    "hacktivismo",
+    "espionagem corporativa",
+    "ciberguerra",
+    "ganho financeiro"
+   ],
+   "terms_en": [
+    "motivation",
+    "hacktivism",
+    "cyberwarfare"
+   ],
+   "summary": "Non-financial, political, monetary, competitive.",
+   "label": "[from source]",
+   "id": 41
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "APT according to NIST SP 800-39 and the author's view",
+   "pages": "85",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "apt",
+    "ameaca persistente avancada",
+    "800-39"
+   ],
+   "terms_en": [
+    "apt",
+    "advanced persistent threat"
+   ],
+   "summary": "Same steps as outsiders; differs in expertise and funding.",
+   "label": "[from source]",
+   "id": 42
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Vulnerabilities by asset class (ISO 27005, NIST 800-30)",
+   "pages": "86-89",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "vulnerabilidades por classe",
+    "hardware software rede fisico organizacional",
+    "27005",
+    "800-30",
+    "vulnerabilidade organizacional"
+   ],
+   "terms_en": [
+    "vulnerability classes",
+    "iso/iec 27005"
+   ],
+   "summary": "Hardware, software, network, physical, organizational.",
+   "label": "[from source]",
+   "id": 43
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Exploitation methods: malware, ransomware, phishing",
+   "pages": "90-96",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "malware",
+    "virus",
+    "worm",
+    "trojan",
+    "backdoor",
+    "ransomware",
+    "spyware",
+    "rootkit",
+    "botnet",
+    "logic bomb",
+    "zero day",
+    "phishing",
+    "adware"
+   ],
+   "terms_en": [
+    "malware",
+    "ransomware",
+    "phishing",
+    "zero day"
+   ],
+   "summary": "Categories and definitions by the author.",
+   "label": "[from source]",
+   "id": 44
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Cloud shared responsibility model (SaaS/PaaS/IaaS)",
+   "pages": "96-97",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "responsabilidade compartilhada",
+    "saas paas iaas",
+    "nuvem"
+   ],
+   "terms_en": [
+    "shared responsibility model",
+    "saas",
+    "paas",
+    "iaas"
+   ],
+   "summary": "Responsibility for design, governance and operation remains.",
+   "label": "[from source]",
+   "id": 45
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Testing controls; DEP, TPM, TCB, reference monitor (NEAT)",
+   "pages": "98-99",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "testar controles",
+    "pentest",
+    "dep",
+    "tpm",
+    "tcb",
+    "reference monitor",
+    "neat"
+   ],
+   "terms_en": [
+    "trusted platform module",
+    "trusted computing base",
+    "reference monitor",
+    "neat"
+   ],
+   "summary": "Internal testing then external; TPM, TCB, NEAT.",
+   "label": "[from source]",
+   "id": 46
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Control selection",
+   "pages": "101-102",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "selecionar controles",
+    "escolha de controles",
+    "complexidade inimiga"
+   ],
+   "terms_en": [
+    "selecting appropriate controls"
+   ],
+   "summary": "By risk level and knowledge of the application; avoid complexity without benefit.",
+   "label": "[from source]",
+   "id": 47
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Least privilege and Just-In-Time",
+   "pages": "103",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "menor privilegio",
+    "least privilege",
+    "just in time",
+    "jit"
+   ],
+   "terms_en": [
+    "least privilege",
+    "just-in-time"
+   ],
+   "summary": "Minimum access for the shortest time; ephemeral account.",
+   "label": "[from source]",
+   "id": 48
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Zero Trust and secure by design",
+   "pages": "104-105",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "zero trust",
+    "assumir violacao",
+    "secure by design",
+    "seguranca por obscuridade",
+    "800-207"
+   ],
+   "terms_en": [
+    "zero trust",
+    "assume breach",
+    "secure by design",
+    "security through obscurity"
+   ],
+   "summary": "Always verify, least privilege, assume breach; avoid obscurity.",
+   "label": "[from source]",
+   "id": 49
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Well-known controls x risks",
+   "pages": "106-107",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "backups",
+    "patching",
+    "antivirus",
+    "background check",
+    "ups",
+    "controles e riscos"
+   ],
+   "terms_en": [
+    "backups",
+    "patching"
+   ],
+   "summary": "Control per risk it mitigates.",
+   "label": "[from source]",
+   "id": 50
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Alternative devices: mobile, IoT, SCADA",
+   "pages": "107-109",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "mobile",
+    "iot",
+    "scada",
+    "air gap",
+    "ics"
+   ],
+   "terms_en": [
+    "iot",
+    "scada",
+    "air gap"
+   ],
+   "summary": "Specific mitigations.",
+   "label": "[from source]",
+   "id": 51
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Design to be updatable",
+   "pages": "110",
+   "ref": "ameacas-vulnerabilidades-e-design-seguro.md",
+   "keywords": [
+    "atualizar",
+    "patch",
+    "projetar para atualizar",
+    "air gap atualizacao"
+   ],
+   "terms_en": [
+    "updates and patches"
+   ],
+   "summary": "The system must be able to receive patches even when isolated.",
+   "label": "[from source]",
+   "id": 52
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "TCP/IP and OSI; TCP/UDP; DNS; ports",
+   "pages": "114-123",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "osi",
+    "tcp/ip",
+    "tcp",
+    "udp",
+    "dns",
+    "portas",
+    "sub-redes",
+    "ipv4"
+   ],
+   "terms_en": [
+    "osi model",
+    "tcp/ip",
+    "ports",
+    "dns"
+   ],
+   "summary": "Networking fundamentals.",
+   "label": "[from source]",
+   "id": 53
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "Firewalls (packet filter, stateful, application, WAF) and segmentation",
+   "pages": "124-128",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "firewall",
+    "packet filter",
+    "stateful",
+    "waf",
+    "segmentacao",
+    "deny all",
+    "rede plana",
+    "ngfw"
+   ],
+   "terms_en": [
+    "firewall",
+    "waf",
+    "segmentation",
+    "flat network"
+   ],
+   "summary": "Deny-all with allowlist; a flat network increases exposure.",
+   "label": "[from source]",
+   "id": 54
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "IDS, IPS, SIEM, VPN, CDN",
+   "pages": "128-129",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "ids",
+    "ips",
+    "siem",
+    "vpn",
+    "cdn",
+    "sniffer",
+    "wireshark"
+   ],
+   "terms_en": [
+    "ids",
+    "ips",
+    "vpn",
+    "cdn"
+   ],
+   "summary": "Detection and connectivity components.",
+   "label": "[from source]",
+   "id": 55
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "Network attacks and defenses (MITM, DNS, ARP, sniffing, DoS/DDoS, typosquatting)",
+   "pages": "130-136",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "mitm",
+    "dns hijacking",
+    "arp spoofing",
+    "dns spoofing",
+    "sniffing",
+    "dos",
+    "ddos",
+    "typosquatting",
+    "syn flood"
+   ],
+   "terms_en": [
+    "man-in-the-middle",
+    "arp spoofing",
+    "ddos",
+    "typosquatting"
+   ],
+   "summary": "Defenses per attack.",
+   "label": "[from source]",
+   "id": 56
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "Network security policy",
+   "pages": "136-137",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "politica de rede",
+    "controle de mudanca de rede",
+    "politica de seguranca de rede"
+   ],
+   "terms_en": [
+    "network security policy"
+   ],
+   "summary": "Requirements, update on changes, change control.",
+   "label": "[from source]",
+   "id": 57
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "Zero Trust in networks, microsegmentation, insiders",
+   "pages": "138-140",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "zero trust rede",
+    "microsegmentacao",
+    "dois homens",
+    "segregacao de funcoes",
+    "castle and moat",
+    "insider threat"
+   ],
+   "terms_en": [
+    "microsegmentation",
+    "two-man principle",
+    "segregation of duties"
+   ],
+   "summary": "Privilege by context; assume breach.",
+   "label": "[from source]",
+   "id": 58
+  },
+  {
+   "source": "DZ",
+   "chapter": 4,
+   "topic": "Secure communication, cloud, CASB, SOC",
+   "pages": "140-143",
+   "ref": "rede-e-zero-trust.md",
+   "keywords": [
+    "comunicacao segura",
+    "casb",
+    "seguranca de nuvem",
+    "soc",
+    "desprovisionamento"
+   ],
+   "terms_en": [
+    "casb",
+    "soc",
+    "cloud network security"
+   ],
+   "summary": "Encryption, change control in the cloud, SOC with SIEM.",
+   "label": "[from source]",
+   "id": 59
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "Definitions and formal models: Bell-LaPadula, Biba, Clark-Wilson, Brewer-Nash, Take-Grant",
+   "pages": "145-150",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "bell-lapadula",
+    "biba",
+    "clark-wilson",
+    "brewer nash",
+    "take-grant",
+    "modelo de estados",
+    "fluxo de informacao",
+    "subject object clearance"
+   ],
+   "terms_en": [
+    "bell-lapadula",
+    "biba",
+    "clark-wilson",
+    "take-grant",
+    "brewer and nash"
+   ],
+   "summary": "Confidentiality and integrity models.",
+   "label": "[from source]",
+   "id": 60
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "Real-world models: RBAC, DAC, MAC, ABAC and others",
+   "pages": "150-152",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "rbac",
+    "dac",
+    "mac",
+    "abac",
+    "lbac",
+    "capability",
+    "acl",
+    "controle de acesso baseado em papeis"
+   ],
+   "terms_en": [
+    "rbac",
+    "abac",
+    "dac",
+    "mac",
+    "acl"
+   ],
+   "summary": "Families of access control.",
+   "label": "[from source]",
+   "id": 61
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "Authentication x authorization; MFA; passwords; biometrics; smart card; SSO",
+   "pages": "153-156",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "autenticacao",
+    "autorizacao",
+    "mfa",
+    "senha",
+    "biometria",
+    "smart card",
+    "sso"
+   ],
+   "terms_en": [
+    "authentication",
+    "authorization",
+    "mfa",
+    "sso"
+   ],
+   "summary": "Factors and pitfalls (two passwords is not MFA).",
+   "label": "[from source]",
+   "id": 62
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "Protocols: NTLM, Kerberos, PKI and X.509 certificates",
+   "pages": "156-161",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "ntlm",
+    "kerberos",
+    "pki",
+    "certificado",
+    "x.509",
+    "pass-the-hash"
+   ],
+   "terms_en": [
+    "ntlm",
+    "kerberos",
+    "pki",
+    "x.509"
+   ],
+   "summary": "How they work, flaws and mitigations.",
+   "label": "[from source]",
+   "id": 63
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "IAM and identity policies",
+   "pages": "162-164",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "iam",
+    "gestao de identidade",
+    "provisionamento",
+    "revisao de acesso",
+    "idaas",
+    "federacao"
+   ],
+   "terms_en": [
+    "iam",
+    "idaas",
+    "identity"
+   ],
+   "summary": "Single identity, automation, policy questions.",
+   "label": "[from source]",
+   "id": 64
+  },
+  {
+   "source": "DZ",
+   "chapter": 5,
+   "topic": "Physical access control",
+   "pages": "164-166",
+   "ref": "acesso-e-identidade.md",
+   "keywords": [
+    "acesso fisico",
+    "eac",
+    "tailgating",
+    "mantrap",
+    "catraca"
+   ],
+   "terms_en": [
+    "physical access control",
+    "tailgating"
+   ],
+   "summary": "Human, mechanical, technological; EAC.",
+   "label": "[from source]",
+   "id": 65
+  },
+  {
+   "source": "DZ",
+   "chapter": 6,
+   "topic": "Preparing assessments: buy-in, requirements, PCI-DSS, scope, budget",
+   "pages": "170-176",
+   "ref": "testes-de-seguranca-e-assessments.md",
+   "keywords": [
+    "assessment",
+    "avaliacao de seguranca",
+    "preparar teste",
+    "pci-dss",
+    "saq",
+    "qsa",
+    "escopo",
+    "orcamento",
+    "buy-in"
+   ],
+   "terms_en": [
+    "security assessment",
+    "pci-dss"
+   ],
+   "summary": "Define why, what, time, deadline, budget; terms and NDA.",
+   "label": "[from source]",
+   "id": 66
+  },
+  {
+   "source": "DZ",
+   "chapter": 6,
+   "topic": "Web and network scanners; pentest clone environment",
+   "pages": "177-181",
+   "ref": "testes-de-seguranca-e-assessments.md",
+   "keywords": [
+    "scanner de vulnerabilidades",
+    "scanner web",
+    "scanner de rede",
+    "ambiente de pentest",
+    "clone da producao",
+    "fuzzer"
+   ],
+   "terms_en": [
+    "vulnerability scanner",
+    "pentest environment"
+   ],
+   "summary": "Automated tools and care with production.",
+   "label": "[from source]",
+   "id": 67
+  },
+  {
+   "source": "DZ",
+   "chapter": 6,
+   "topic": "SAST, DAST and dependency scanning",
+   "pages": "181-183",
+   "ref": "testes-de-seguranca-e-assessments.md",
+   "keywords": [
+    "sast",
+    "dast",
+    "dependencias",
+    "dependency scanning",
+    "snyk",
+    "devsecops scanning"
+   ],
+   "terms_en": [
+    "sast",
+    "dast",
+    "dependency scanning"
+   ],
+   "summary": "Scans in the SDLC.",
+   "label": "[from source]",
+   "id": 68
+  },
+  {
+   "source": "DZ",
+   "chapter": 6,
+   "topic": "Internal and third-party assessments: Red/Blue/Black Team",
+   "pages": "183-186",
+   "ref": "testes-de-seguranca-e-assessments.md",
+   "keywords": [
+    "red team",
+    "blue team",
+    "black team",
+    "pentest",
+    "auditoria interna",
+    "phishing simulado",
+    "auditoria de conformidade"
+   ],
+   "terms_en": [
+    "red team",
+    "blue team",
+    "black team",
+    "penetration test"
+   ],
+   "summary": "When to use internal or third-party.",
+   "label": "[from source]",
+   "id": 69
+  },
+  {
+   "source": "DZ",
+   "chapter": 6,
+   "topic": "Best practices and interpreting results",
+   "pages": "187-190",
+   "ref": "testes-de-seguranca-e-assessments.md",
+   "keywords": [
+    "interpretar resultados",
+    "relatorio de pentest",
+    "reteste",
+    "boas praticas de assessment",
+    "apresentacao de achados"
+   ],
+   "terms_en": [
+    "assessment results",
+    "remediation"
+   ],
+   "summary": "Validate internally, retest, schedule the next cycle.",
+   "label": "[from source]",
+   "id": 70
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Provisioning and configuration management; CIS hardened images",
+   "pages": "193-196",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "provisionamento",
+    "gestao de configuracao",
+    "baseline",
+    "cis benchmarks",
+    "hardened images",
+    "scm",
+    "sccm",
+    "ansible",
+    "puppet",
+    "chef"
+   ],
+   "terms_en": [
+    "configuration management",
+    "provisioning",
+    "cis benchmarks"
+   ],
+   "summary": "Approved configurations, tracked changes.",
+   "label": "[from source]",
+   "id": 71
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "IaC, CCA, policy as code, secrets management",
+   "pages": "196-201",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "iac",
+    "infraestrutura como codigo",
+    "cca",
+    "policy as code",
+    "vault",
+    "segredos",
+    "docker",
+    "kubernetes",
+    "pipeline de iac"
+   ],
+   "terms_en": [
+    "infrastructure as code",
+    "policy as code",
+    "secrets management"
+   ],
+   "summary": "Automation with governance.",
+   "label": "[from source]",
+   "id": 72
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Availability, DR, BC, hot/warm/cold sites",
+   "pages": "201-203",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "disaster recovery",
+    "continuidade de negocios",
+    "dr",
+    "bc",
+    "hot site",
+    "warm site",
+    "cold site",
+    "backup"
+   ],
+   "terms_en": [
+    "disaster recovery",
+    "business continuity",
+    "hot site"
+   ],
+   "summary": "DR restores; BC keeps running; really rehearse.",
+   "label": "[from source]",
+   "id": 73
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Change control and security improvement program",
+   "pages": "204-206",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "controle de mudancas",
+    "change control",
+    "patching",
+    "security improvement program",
+    "programa de melhoria"
+   ],
+   "terms_en": [
+    "change control",
+    "security improvement program"
+   ],
+   "summary": "Change steps and improvement program.",
+   "label": "[from source]",
+   "id": 74
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Event, incident, nonconformity; incident response plan",
+   "pages": "207-212",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "incidente",
+    "evento",
+    "nao conformidade",
+    "plano de resposta a incidentes",
+    "resposta a incidentes",
+    "ir",
+    "papeis de incidente",
+    "crest",
+    "nist 800-61"
+   ],
+   "terms_en": [
+    "incident response",
+    "event",
+    "incident",
+    "non-compliance"
+   ],
+   "summary": "Definitions, plan questions, stages, roles.",
+   "label": "[from source]",
+   "id": 75
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Detective controls, SIEM, SOC and monitoring best practices",
+   "pages": "213-219",
+   "ref": "operacoes-de-seguranca.md",
+   "keywords": [
+    "siem",
+    "soc",
+    "monitoramento",
+    "logs",
+    "baseline de rede",
+    "regras de deteccao",
+    "o que nao coletar"
+   ],
+   "terms_en": [
+    "siem",
+    "soc",
+    "security monitoring"
+   ],
+   "summary": "Risk-based strategy; requirements; rules; review.",
+   "label": "[from source]",
+   "id": 76
+  },
+  {
+   "source": "DZ",
+   "chapter": 7,
+   "topic": "Threat modeling as an item of the detection strategy",
+   "pages": "213",
+   "ref": "modelagem-de-ameacas-no-dz-e-ponte-com-tmm.md",
+   "keywords": [
+    "threat modeling na deteccao",
+    "orcamento de deteccao",
+    "orcamento de resposta"
+   ],
+   "terms_en": [
+    "detection budget",
+    "response budget"
+   ],
+   "summary": "A list item, no method.",
+   "label": "[from source]",
+   "id": 77
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Software security paradigms, Heartbleed, caveat emptor, contracts",
+   "pages": "222-226",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "heartbleed",
+    "caveat emptor",
+    "contrato com fornecedor",
+    "software de terceiros",
+    "open source"
+   ],
+   "terms_en": [
+    "heartbleed",
+    "caveat emptor"
+   ],
+   "summary": "Due diligence and contractual liability.",
+   "label": "[from source]",
+   "id": 78
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Secure SDLC: 5 stages, CSSLP, Agile/DevOps",
+   "pages": "226-228",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "sdlc",
+    "ciclo de vida de desenvolvimento seguro",
+    "csslp",
+    "cinco estagios",
+    "agile",
+    "devops"
+   ],
+   "terms_en": [
+    "sdlc",
+    "csslp"
+   ],
+   "summary": "Requirements, design, test plan, development, testing.",
+   "label": "[from source]",
+   "id": 79
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Security requirements, abuse cases and threat modeling in the SDLC",
+   "pages": "228",
+   "ref": "modelagem-de-ameacas-no-dz-e-ponte-com-tmm.md",
+   "keywords": [
+    "abuse case",
+    "caso de abuso",
+    "requisitos de seguranca",
+    "superficie de ataque",
+    "misuse story"
+   ],
+   "terms_en": [
+    "abuse case",
+    "attack surface"
+   ],
+   "summary": "Abuse cases = essentially threat modeling with attention to the attack surface.",
+   "label": "[from source]",
+   "id": 80
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Secure design, test plans (ISO/IEC/IEEE 29119) and user stories",
+   "pages": "229-231",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "plano de testes",
+    "29119",
+    "user story",
+    "design seguro"
+   ],
+   "terms_en": [
+    "iso 29119",
+    "user story"
+   ],
+   "summary": "Security testing planned before development.",
+   "label": "[from source]",
+   "id": 81
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Secure development and testing; code review as the two-person principle",
+   "pages": "232-233",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "code review",
+    "revisao de codigo",
+    "sanitizacao",
+    "tratamento de erros",
+    "isolamento",
+    "two-man"
+   ],
+   "terms_en": [
+    "code review",
+    "two-man principle"
+   ],
+   "summary": "Code and testing practices in the pipeline.",
+   "label": "[from source]",
+   "id": 82
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "OWASP Top 10 Proactive Controls according to the DZ",
+   "pages": "234-242",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "proactive controls",
+    "owasp",
+    "asvs",
+    "user story de abuso",
+    "parametrizacao",
+    "validar entradas",
+    "codificar e escapar",
+    "identidade digital",
+    "logging",
+    "erros e excecoes"
+   ],
+   "terms_en": [
+    "owasp proactive controls",
+    "asvs"
+   ],
+   "summary": "Ten controls; see the ASVS agent for depth.",
+   "label": "[from source] [DATED]",
+   "id": 83
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Evaluating third-party software, SaaS, bug bounty, on-prem, FOSS",
+   "pages": "243-248",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "saas",
+    "bug bounty",
+    "vsaq de software",
+    "software on-prem",
+    "foss",
+    "sdlc do fornecedor"
+   ],
+   "terms_en": [
+    "bug bounty",
+    "foss",
+    "third-party software"
+   ],
+   "summary": "Technical and contractual due diligence.",
+   "label": "[from source]",
+   "id": 84
+  },
+  {
+   "source": "DZ",
+   "chapter": 8,
+   "topic": "Repositories, signed commits and the DevSecOps pipeline",
+   "pages": "248-251",
+   "ref": "seguranca-de-software-sdlc-devsecops.md",
+   "keywords": [
+    "repositorio",
+    "commit assinado",
+    "branch protegida",
+    "pipeline devsecops",
+    "ci/cd"
+   ],
+   "terms_en": [
+    "devsecops pipeline",
+    "signed commits",
+    "ci/cd"
+   ],
+   "summary": "Example flow with automatic scans.",
+   "label": "[from source]",
+   "id": 85
+  },
+  {
+   "source": "DZ",
+   "chapter": 3,
+   "topic": "Meaning of \"threat modeling\" in the DZ (documenting threats and actors)",
+   "pages": "25,80,82,84,213,228",
+   "ref": "modelagem-de-ameacas-no-dz-e-ponte-com-tmm.md",
+   "keywords": [
+    "threat modeling no dz",
+    "sentido de threat modeling",
+    "ameacas e atores por ativo"
+   ],
+   "terms_en": [
+    "threat modeling"
+   ],
+   "summary": "Six occurrences in the body; no method.",
+   "label": "[from source] [inference]",
+   "id": 86
+  }
+ ],
+ "gaps_globais": [
+  "STRIDE",
+  "DREAD",
+  "PASTA",
+  "LINDDUN",
+  "DFD",
+  "data flow diagram",
+  "attack tree",
+  "trust boundary",
+  "MITRE",
+  "ATT&CK",
+  "kill chain",
+  "NIST CSF",
+  "Cybersecurity Framework",
+  "ISO 31000",
+  "FAIR",
+  "OCTAVE",
+  "CVSS",
+  "EPSS",
+  "SBOM",
+  "SLSA",
+  "Sigstore",
+  "SOAR",
+  "EDR",
+  "XDR",
+  "LGPD",
+  "NIS2",
+  "DORA",
+  "SAMM",
+  "BSIMM",
+  "passkey",
+  "WebAuthn",
+  "OAuth",
+  "OpenID",
+  "SAML",
+  "CIS Controls",
+  "COBIT",
+  "ITIL",
+  "SOC 2",
+  "Log4Shell",
+  "privacy by design",
+  "ISO 27701",
+  "honeypot",
+  "serverless",
+  "800-37",
+  "Monte Carlo",
+  "quantitative risk",
+  "ALE",
+  "annualized loss"
+ ],
+ "termos_presentes_verificados": [],
+ "encaminhar": [
+  {
+   "agente": "owasp-asvs-code-review-expert",
+   "termos": [
+    "asvs",
+    "application security verification standard",
+    "revisao de codigo",
+    "code review guide",
+    "requisitos de verificacao",
+    "code review",
+    "verification requirements"
+   ],
+   "nota": "Application verification requirements (ASVS) and detailed code review belong to another agent.",
+   "citas": "DZ p.234-235 (ASVS 3.0.1 as an example) and p.232-233 (code review as a practice)"
+  },
+  {
+   "agente": "owasp-web-security-testing-expert",
+   "termos": [
+    "wstg",
+    "owasp testing guide",
+    "teste de invasao web",
+    "como testar xss",
+    "como testar sql injection",
+    "metodologia de pentest web",
+    "web pentest",
+    "how to test xss",
+    "web penetration test",
+    "web pentest methodology"
+   ],
+   "nota": "Detailed web security testing methodology (WSTG) and technical pentesting belong to another agent.",
+   "citas": "DZ p.177-179, 185 (strategic view of scanners and pentest)"
+  },
+  {
+   "agente": "security-engineering-expert",
+   "termos": [
+    "ross anderson",
+    "security engineering",
+    "protocolos criptograficos",
+    "politica de seguranca formal",
+    "engenharia de seguranca",
+    "falha de protocolo",
+    "formal security policy",
+    "protocol flaw",
+    "cryptographic protocols"
+   ],
+   "nota": "In-depth security engineering (Anderson) belongs to another agent; the DZ only gives an introductory view of access models.",
+   "citas": "DZ p.145-152 (access models at an introductory level)"
+  },
+  {
+   "agente": "privacy-lgpd-engineering-expert",
+   "termos": [
+    "lgpd",
+    "privacidade",
+    "privacy by design",
+    "dpia",
+    "ripd",
+    "titular de dados",
+    "nist privacy framework",
+    "nist ir 8062",
+    "engenharia de privacidade",
+    "privacy",
+    "data subject",
+    "privacy engineering"
+   ],
+   "nota": "Privacy and LGPD belong to another agent; the DZ treats privacy only as compliance and a requirement.",
+   "citas": "DZ p.35-37 (privacy regulations) and p.228 (privacy requirements in the SDLC)"
+  }
+ ]
+}

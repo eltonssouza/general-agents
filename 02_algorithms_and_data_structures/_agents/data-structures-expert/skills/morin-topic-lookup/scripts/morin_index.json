@@ -1,0 +1,2325 @@
+{
+ "fonte": "Open Data Structures, Edition 0.1Gbeta (Pat Morin), 326 pages; pages = PDF (printed = N - 12)",
+ "toc": [
+  {
+   "level": 1,
+   "capitulo": "Acknowledgments",
+   "topico": "Acknowledgments",
+   "pagina_pdf": 9,
+   "citacao": "ODS p.9"
+  },
+  {
+   "level": 1,
+   "capitulo": "Why This Book?",
+   "topico": "Why This Book?",
+   "pagina_pdf": 11,
+   "citacao": "ODS p.11"
+  },
+  {
+   "level": 1,
+   "capitulo": "Introduction",
+   "topico": "Introduction",
+   "pagina_pdf": 13,
+   "citacao": "ODS p.13"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "The Need for Efficiency",
+   "pagina_pdf": 14,
+   "citacao": "ODS p.14"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "Interfaces",
+   "pagina_pdf": 16,
+   "citacao": "ODS p.16"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "The Queue, Stack, and Deque Interfaces",
+   "pagina_pdf": 17,
+   "citacao": "ODS p.17"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "The List Interface: Linear Sequences",
+   "pagina_pdf": 18,
+   "citacao": "ODS p.18"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "The USet Interface: Unordered Sets",
+   "pagina_pdf": 20,
+   "citacao": "ODS p.20"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "The SSet Interface: Sorted Sets",
+   "pagina_pdf": 20,
+   "citacao": "ODS p.20"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "Mathematical Background",
+   "pagina_pdf": 21,
+   "citacao": "ODS p.21"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "Exponentials and Logarithms",
+   "pagina_pdf": 22,
+   "citacao": "ODS p.22"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "Factorials",
+   "pagina_pdf": 23,
+   "citacao": "ODS p.23"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "Asymptotic Notation",
+   "pagina_pdf": 24,
+   "citacao": "ODS p.24"
+  },
+  {
+   "level": 3,
+   "capitulo": "Introduction",
+   "topico": "Randomization and Probability",
+   "pagina_pdf": 27,
+   "citacao": "ODS p.27"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "The Model of Computation",
+   "pagina_pdf": 30,
+   "citacao": "ODS p.30"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "Correctness, Time Complexity, and Space Complexity",
+   "pagina_pdf": 31,
+   "citacao": "ODS p.31"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "Code Samples",
+   "pagina_pdf": 33,
+   "citacao": "ODS p.33"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "List of Data Structures",
+   "pagina_pdf": 35,
+   "citacao": "ODS p.35"
+  },
+  {
+   "level": 2,
+   "capitulo": "Introduction",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 35,
+   "citacao": "ODS p.35"
+  },
+  {
+   "level": 1,
+   "capitulo": "Array-Based Lists",
+   "topico": "Array-Based Lists",
+   "pagina_pdf": 43,
+   "citacao": "ODS p.43"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "ArrayStack: Fast Stack Operations Using an Array",
+   "pagina_pdf": 44,
+   "citacao": "ODS p.44"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "The Basics",
+   "pagina_pdf": 44,
+   "citacao": "ODS p.44"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Growing and Shrinking",
+   "pagina_pdf": 47,
+   "citacao": "ODS p.47"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Summary",
+   "pagina_pdf": 49,
+   "citacao": "ODS p.49"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "FastArrayStack: An Optimized ArrayStack",
+   "pagina_pdf": 49,
+   "citacao": "ODS p.49"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "ArrayQueue: An Array-Based Queue",
+   "pagina_pdf": 50,
+   "citacao": "ODS p.50"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Summary",
+   "pagina_pdf": 53,
+   "citacao": "ODS p.53"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "ArrayDeque: Fast Deque Operations Using an Array",
+   "pagina_pdf": 54,
+   "citacao": "ODS p.54"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Summary",
+   "pagina_pdf": 56,
+   "citacao": "ODS p.56"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "DualArrayDeque: Building a Deque from Two Stacks",
+   "pagina_pdf": 56,
+   "citacao": "ODS p.56"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Balancing",
+   "pagina_pdf": 60,
+   "citacao": "ODS p.60"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Summary",
+   "pagina_pdf": 62,
+   "citacao": "ODS p.62"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "RootishArrayStack: A Space-Efficient Array Stack",
+   "pagina_pdf": 62,
+   "citacao": "ODS p.62"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Analysis of Growing and Shrinking",
+   "pagina_pdf": 67,
+   "citacao": "ODS p.67"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Space Usage",
+   "pagina_pdf": 67,
+   "citacao": "ODS p.67"
+  },
+  {
+   "level": 3,
+   "capitulo": "Array-Based Lists",
+   "topico": "Summary",
+   "pagina_pdf": 68,
+   "citacao": "ODS p.68"
+  },
+  {
+   "level": 2,
+   "capitulo": "Array-Based Lists",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 69,
+   "citacao": "ODS p.69"
+  },
+  {
+   "level": 1,
+   "capitulo": "Linked Lists",
+   "topico": "Linked Lists",
+   "pagina_pdf": 73,
+   "citacao": "ODS p.73"
+  },
+  {
+   "level": 2,
+   "capitulo": "Linked Lists",
+   "topico": "SLList: A Singly-Linked List",
+   "pagina_pdf": 73,
+   "citacao": "ODS p.73"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Queue Operations",
+   "pagina_pdf": 75,
+   "citacao": "ODS p.75"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Summary",
+   "pagina_pdf": 76,
+   "citacao": "ODS p.76"
+  },
+  {
+   "level": 2,
+   "capitulo": "Linked Lists",
+   "topico": "DLList: A Doubly-Linked List",
+   "pagina_pdf": 76,
+   "citacao": "ODS p.76"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Adding and Removing",
+   "pagina_pdf": 78,
+   "citacao": "ODS p.78"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Summary",
+   "pagina_pdf": 80,
+   "citacao": "ODS p.80"
+  },
+  {
+   "level": 2,
+   "capitulo": "Linked Lists",
+   "topico": "SEList: A Space-Efficient Linked List",
+   "pagina_pdf": 80,
+   "citacao": "ODS p.80"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Space Requirements",
+   "pagina_pdf": 81,
+   "citacao": "ODS p.81"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Finding Elements",
+   "pagina_pdf": 81,
+   "citacao": "ODS p.81"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Adding an Element",
+   "pagina_pdf": 83,
+   "citacao": "ODS p.83"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Removing an Element",
+   "pagina_pdf": 85,
+   "citacao": "ODS p.85"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Amortized Analysis of Spreading and Gathering",
+   "pagina_pdf": 87,
+   "citacao": "ODS p.87"
+  },
+  {
+   "level": 3,
+   "capitulo": "Linked Lists",
+   "topico": "Summary",
+   "pagina_pdf": 89,
+   "citacao": "ODS p.89"
+  },
+  {
+   "level": 2,
+   "capitulo": "Linked Lists",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 90,
+   "citacao": "ODS p.90"
+  },
+  {
+   "level": 1,
+   "capitulo": "Skiplists",
+   "topico": "Skiplists",
+   "pagina_pdf": 95,
+   "citacao": "ODS p.95"
+  },
+  {
+   "level": 2,
+   "capitulo": "Skiplists",
+   "topico": "The Basic Structure",
+   "pagina_pdf": 95,
+   "citacao": "ODS p.95"
+  },
+  {
+   "level": 2,
+   "capitulo": "Skiplists",
+   "topico": "SkiplistSSet: An Efficient SSet",
+   "pagina_pdf": 97,
+   "citacao": "ODS p.97"
+  },
+  {
+   "level": 3,
+   "capitulo": "Skiplists",
+   "topico": "Summary",
+   "pagina_pdf": 100,
+   "citacao": "ODS p.100"
+  },
+  {
+   "level": 2,
+   "capitulo": "Skiplists",
+   "topico": "SkiplistList: An Efficient Random-Access List",
+   "pagina_pdf": 101,
+   "citacao": "ODS p.101"
+  },
+  {
+   "level": 3,
+   "capitulo": "Skiplists",
+   "topico": "Summary",
+   "pagina_pdf": 105,
+   "citacao": "ODS p.105"
+  },
+  {
+   "level": 2,
+   "capitulo": "Skiplists",
+   "topico": "Analysis of Skiplists",
+   "pagina_pdf": 105,
+   "citacao": "ODS p.105"
+  },
+  {
+   "level": 2,
+   "capitulo": "Skiplists",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 109,
+   "citacao": "ODS p.109"
+  },
+  {
+   "level": 1,
+   "capitulo": "Hash Tables",
+   "topico": "Hash Tables",
+   "pagina_pdf": 113,
+   "citacao": "ODS p.113"
+  },
+  {
+   "level": 2,
+   "capitulo": "Hash Tables",
+   "topico": "ChainedHashTable: Hashing with Chaining",
+   "pagina_pdf": 113,
+   "citacao": "ODS p.113"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Multiplicative Hashing",
+   "pagina_pdf": 116,
+   "citacao": "ODS p.116"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Summary",
+   "pagina_pdf": 120,
+   "citacao": "ODS p.120"
+  },
+  {
+   "level": 2,
+   "capitulo": "Hash Tables",
+   "topico": "LinearHashTable: Linear Probing",
+   "pagina_pdf": 120,
+   "citacao": "ODS p.120"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Analysis of Linear Probing",
+   "pagina_pdf": 124,
+   "citacao": "ODS p.124"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Summary",
+   "pagina_pdf": 127,
+   "citacao": "ODS p.127"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Tabulation Hashing",
+   "pagina_pdf": 127,
+   "citacao": "ODS p.127"
+  },
+  {
+   "level": 2,
+   "capitulo": "Hash Tables",
+   "topico": "Hash Codes",
+   "pagina_pdf": 129,
+   "citacao": "ODS p.129"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Hash Codes for Primitive Data Types",
+   "pagina_pdf": 129,
+   "citacao": "ODS p.129"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Hash Codes for Compound Objects",
+   "pagina_pdf": 129,
+   "citacao": "ODS p.129"
+  },
+  {
+   "level": 3,
+   "capitulo": "Hash Tables",
+   "topico": "Hash Codes for Arrays and Strings",
+   "pagina_pdf": 131,
+   "citacao": "ODS p.131"
+  },
+  {
+   "level": 2,
+   "capitulo": "Hash Tables",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 134,
+   "citacao": "ODS p.134"
+  },
+  {
+   "level": 1,
+   "capitulo": "Binary Trees",
+   "topico": "Binary Trees",
+   "pagina_pdf": 139,
+   "citacao": "ODS p.139"
+  },
+  {
+   "level": 2,
+   "capitulo": "Binary Trees",
+   "topico": "BinaryTree: A Basic Binary Tree",
+   "pagina_pdf": 141,
+   "citacao": "ODS p.141"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Recursive Algorithms",
+   "pagina_pdf": 141,
+   "citacao": "ODS p.141"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Traversing Binary Trees",
+   "pagina_pdf": 142,
+   "citacao": "ODS p.142"
+  },
+  {
+   "level": 2,
+   "capitulo": "Binary Trees",
+   "topico": "BinarySearchTree: An Unbalanced Binary Search Tree",
+   "pagina_pdf": 145,
+   "citacao": "ODS p.145"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Searching",
+   "pagina_pdf": 145,
+   "citacao": "ODS p.145"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Addition",
+   "pagina_pdf": 147,
+   "citacao": "ODS p.147"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Removal",
+   "pagina_pdf": 149,
+   "citacao": "ODS p.149"
+  },
+  {
+   "level": 3,
+   "capitulo": "Binary Trees",
+   "topico": "Summary",
+   "pagina_pdf": 151,
+   "citacao": "ODS p.151"
+  },
+  {
+   "level": 2,
+   "capitulo": "Binary Trees",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 152,
+   "citacao": "ODS p.152"
+  },
+  {
+   "level": 1,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Random Binary Search Trees",
+   "pagina_pdf": 157,
+   "citacao": "ODS p.157"
+  },
+  {
+   "level": 2,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Random Binary Search Trees",
+   "pagina_pdf": 157,
+   "citacao": "ODS p.157"
+  },
+  {
+   "level": 3,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Proof of Lemma 7.1",
+   "pagina_pdf": 160,
+   "citacao": "ODS p.160"
+  },
+  {
+   "level": 3,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Summary",
+   "pagina_pdf": 162,
+   "citacao": "ODS p.162"
+  },
+  {
+   "level": 2,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Treap: A Randomized Binary Search Tree",
+   "pagina_pdf": 163,
+   "citacao": "ODS p.163"
+  },
+  {
+   "level": 3,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Summary",
+   "pagina_pdf": 170,
+   "citacao": "ODS p.170"
+  },
+  {
+   "level": 2,
+   "capitulo": "Random Binary Search Trees",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 172,
+   "citacao": "ODS p.172"
+  },
+  {
+   "level": 1,
+   "capitulo": "Scapegoat Trees",
+   "topico": "Scapegoat Trees",
+   "pagina_pdf": 177,
+   "citacao": "ODS p.177"
+  },
+  {
+   "level": 2,
+   "capitulo": "Scapegoat Trees",
+   "topico": "ScapegoatTree: A Binary Search Tree with Partial Rebuilding",
+   "pagina_pdf": 178,
+   "citacao": "ODS p.178"
+  },
+  {
+   "level": 3,
+   "capitulo": "Scapegoat Trees",
+   "topico": "Analysis of Correctness and Running-Time",
+   "pagina_pdf": 182,
+   "citacao": "ODS p.182"
+  },
+  {
+   "level": 3,
+   "capitulo": "Scapegoat Trees",
+   "topico": "Summary",
+   "pagina_pdf": 184,
+   "citacao": "ODS p.184"
+  },
+  {
+   "level": 2,
+   "capitulo": "Scapegoat Trees",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 185,
+   "citacao": "ODS p.185"
+  },
+  {
+   "level": 1,
+   "capitulo": "Red-Black Trees",
+   "topico": "Red-Black Trees",
+   "pagina_pdf": 189,
+   "citacao": "ODS p.189"
+  },
+  {
+   "level": 2,
+   "capitulo": "Red-Black Trees",
+   "topico": "2-4 Trees",
+   "pagina_pdf": 190,
+   "citacao": "ODS p.190"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Adding a Leaf",
+   "pagina_pdf": 191,
+   "citacao": "ODS p.191"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Removing a Leaf",
+   "pagina_pdf": 191,
+   "citacao": "ODS p.191"
+  },
+  {
+   "level": 2,
+   "capitulo": "Red-Black Trees",
+   "topico": "RedBlackTree: A Simulated 2-4 Tree",
+   "pagina_pdf": 194,
+   "citacao": "ODS p.194"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Red-Black Trees and 2-4 Trees",
+   "pagina_pdf": 195,
+   "citacao": "ODS p.195"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Left-Leaning Red-Black Trees",
+   "pagina_pdf": 198,
+   "citacao": "ODS p.198"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Addition",
+   "pagina_pdf": 200,
+   "citacao": "ODS p.200"
+  },
+  {
+   "level": 3,
+   "capitulo": "Red-Black Trees",
+   "topico": "Removal",
+   "pagina_pdf": 203,
+   "citacao": "ODS p.203"
+  },
+  {
+   "level": 2,
+   "capitulo": "Red-Black Trees",
+   "topico": "Summary",
+   "pagina_pdf": 208,
+   "citacao": "ODS p.208"
+  },
+  {
+   "level": 2,
+   "capitulo": "Red-Black Trees",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 210,
+   "citacao": "ODS p.210"
+  },
+  {
+   "level": 1,
+   "capitulo": "Heaps",
+   "topico": "Heaps",
+   "pagina_pdf": 215,
+   "citacao": "ODS p.215"
+  },
+  {
+   "level": 2,
+   "capitulo": "Heaps",
+   "topico": "BinaryHeap: An Implicit Binary Tree",
+   "pagina_pdf": 215,
+   "citacao": "ODS p.215"
+  },
+  {
+   "level": 3,
+   "capitulo": "Heaps",
+   "topico": "Summary",
+   "pagina_pdf": 221,
+   "citacao": "ODS p.221"
+  },
+  {
+   "level": 2,
+   "capitulo": "Heaps",
+   "topico": "MeldableHeap: A Randomized Meldable Heap",
+   "pagina_pdf": 221,
+   "citacao": "ODS p.221"
+  },
+  {
+   "level": 3,
+   "capitulo": "Heaps",
+   "topico": "Analysis of merge(h1,h2)",
+   "pagina_pdf": 224,
+   "citacao": "ODS p.224"
+  },
+  {
+   "level": 3,
+   "capitulo": "Heaps",
+   "topico": "Summary",
+   "pagina_pdf": 226,
+   "citacao": "ODS p.226"
+  },
+  {
+   "level": 2,
+   "capitulo": "Heaps",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 226,
+   "citacao": "ODS p.226"
+  },
+  {
+   "level": 1,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Sorting Algorithms",
+   "pagina_pdf": 229,
+   "citacao": "ODS p.229"
+  },
+  {
+   "level": 2,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Comparison-Based Sorting",
+   "pagina_pdf": 230,
+   "citacao": "ODS p.230"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Merge-Sort",
+   "pagina_pdf": 230,
+   "citacao": "ODS p.230"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Quicksort",
+   "pagina_pdf": 234,
+   "citacao": "ODS p.234"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Heap-sort",
+   "pagina_pdf": 237,
+   "citacao": "ODS p.237"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "A Lower-Bound for Comparison-Based Sorting",
+   "pagina_pdf": 239,
+   "citacao": "ODS p.239"
+  },
+  {
+   "level": 2,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Counting Sort and Radix Sort",
+   "pagina_pdf": 243,
+   "citacao": "ODS p.243"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Counting Sort",
+   "pagina_pdf": 243,
+   "citacao": "ODS p.243"
+  },
+  {
+   "level": 3,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Radix-Sort",
+   "pagina_pdf": 245,
+   "citacao": "ODS p.245"
+  },
+  {
+   "level": 2,
+   "capitulo": "Sorting Algorithms",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 247,
+   "citacao": "ODS p.247"
+  },
+  {
+   "level": 1,
+   "capitulo": "Graphs",
+   "topico": "Graphs",
+   "pagina_pdf": 251,
+   "citacao": "ODS p.251"
+  },
+  {
+   "level": 2,
+   "capitulo": "Graphs",
+   "topico": "AdjacencyMatrix: Representing a Graph by a Matrix",
+   "pagina_pdf": 253,
+   "citacao": "ODS p.253"
+  },
+  {
+   "level": 2,
+   "capitulo": "Graphs",
+   "topico": "AdjacencyLists: A Graph as a Collection of Lists",
+   "pagina_pdf": 256,
+   "citacao": "ODS p.256"
+  },
+  {
+   "level": 2,
+   "capitulo": "Graphs",
+   "topico": "Graph Traversal",
+   "pagina_pdf": 259,
+   "citacao": "ODS p.259"
+  },
+  {
+   "level": 3,
+   "capitulo": "Graphs",
+   "topico": "Breadth-First Search",
+   "pagina_pdf": 260,
+   "citacao": "ODS p.260"
+  },
+  {
+   "level": 3,
+   "capitulo": "Graphs",
+   "topico": "Depth-First Search",
+   "pagina_pdf": 262,
+   "citacao": "ODS p.262"
+  },
+  {
+   "level": 2,
+   "capitulo": "Graphs",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 264,
+   "citacao": "ODS p.264"
+  },
+  {
+   "level": 1,
+   "capitulo": "Data Structures for Integers",
+   "topico": "Data Structures for Integers",
+   "pagina_pdf": 269,
+   "citacao": "ODS p.269"
+  },
+  {
+   "level": 2,
+   "capitulo": "Data Structures for Integers",
+   "topico": "BinaryTrie: A digital search tree",
+   "pagina_pdf": 270,
+   "citacao": "ODS p.270"
+  },
+  {
+   "level": 2,
+   "capitulo": "Data Structures for Integers",
+   "topico": "XFastTrie: Searching in Doubly-Logarithmic Time",
+   "pagina_pdf": 276,
+   "citacao": "ODS p.276"
+  },
+  {
+   "level": 2,
+   "capitulo": "Data Structures for Integers",
+   "topico": "YFastTrie: A Doubly-Logarithmic Time SSet",
+   "pagina_pdf": 279,
+   "citacao": "ODS p.279"
+  },
+  {
+   "level": 2,
+   "capitulo": "Data Structures for Integers",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 284,
+   "citacao": "ODS p.284"
+  },
+  {
+   "level": 1,
+   "capitulo": "External Memory Searching",
+   "topico": "External Memory Searching",
+   "pagina_pdf": 287,
+   "citacao": "ODS p.287"
+  },
+  {
+   "level": 2,
+   "capitulo": "External Memory Searching",
+   "topico": "The Block Store",
+   "pagina_pdf": 289,
+   "citacao": "ODS p.289"
+  },
+  {
+   "level": 2,
+   "capitulo": "External Memory Searching",
+   "topico": "B-Trees",
+   "pagina_pdf": 289,
+   "citacao": "ODS p.289"
+  },
+  {
+   "level": 3,
+   "capitulo": "External Memory Searching",
+   "topico": "Searching",
+   "pagina_pdf": 292,
+   "citacao": "ODS p.292"
+  },
+  {
+   "level": 3,
+   "capitulo": "External Memory Searching",
+   "topico": "Addition",
+   "pagina_pdf": 294,
+   "citacao": "ODS p.294"
+  },
+  {
+   "level": 3,
+   "capitulo": "External Memory Searching",
+   "topico": "Removal",
+   "pagina_pdf": 299,
+   "citacao": "ODS p.299"
+  },
+  {
+   "level": 3,
+   "capitulo": "External Memory Searching",
+   "topico": "Amortized Analysis of B-Trees",
+   "pagina_pdf": 305,
+   "citacao": "ODS p.305"
+  },
+  {
+   "level": 2,
+   "capitulo": "External Memory Searching",
+   "topico": "Discussion and Exercises",
+   "pagina_pdf": 308,
+   "citacao": "ODS p.308"
+  },
+  {
+   "level": 1,
+   "capitulo": "Bibliography",
+   "topico": "Bibliography",
+   "pagina_pdf": 313,
+   "citacao": "ODS p.313"
+  },
+  {
+   "level": 1,
+   "capitulo": "Index",
+   "topico": "Index",
+   "pagina_pdf": 321,
+   "citacao": "ODS p.321"
+  }
+ ],
+ "topics": [
+  {
+   "topico": "Interface versus implementation",
+   "capitulo": "Introduction",
+   "paginas": [
+    16
+   ],
+   "termos": [
+    "interface",
+    "implementacao",
+    "abstract data type",
+    "tipo abstrato",
+    "implementation"
+   ]
+  },
+  {
+   "topico": "Queue, Stack and Deque",
+   "capitulo": "Introduction",
+   "paginas": [
+    17,
+    18
+   ],
+   "termos": [
+    "queue",
+    "fila",
+    "stack",
+    "pilha",
+    "deque",
+    "fifo",
+    "lifo",
+    "priority queue"
+   ]
+  },
+  {
+   "topico": "List interface",
+   "capitulo": "Introduction",
+   "paginas": [
+    18,
+    19
+   ],
+   "termos": [
+    "list",
+    "lista"
+   ]
+  },
+  {
+   "topico": "USet interface",
+   "capitulo": "Introduction",
+   "paginas": [
+    20
+   ],
+   "termos": [
+    "uset",
+    "conjunto nao ordenado",
+    "unordered set"
+   ]
+  },
+  {
+   "topico": "SSet interface (successor search)",
+   "capitulo": "Introduction",
+   "paginas": [
+    20,
+    21
+   ],
+   "termos": [
+    "sset",
+    "conjunto ordenado",
+    "sorted set",
+    "successor"
+   ]
+  },
+  {
+   "topico": "Word-RAM model",
+   "capitulo": "Introduction",
+   "paginas": [
+    30,
+    31
+   ],
+   "termos": [
+    "word-ram",
+    "word ram",
+    "modelo de computacao",
+    "computation model"
+   ]
+  },
+  {
+   "topico": "Worst-case, amortized and expected running time",
+   "capitulo": "Introduction",
+   "paginas": [
+    32,
+    33
+   ],
+   "termos": [
+    "amortizado",
+    "amortized",
+    "pior caso",
+    "worst-case",
+    "esperado",
+    "expected"
+   ]
+  },
+  {
+   "topico": "Randomization, expected value, indicator variables",
+   "capitulo": "Introduction",
+   "paginas": [
+    27,
+    28,
+    29,
+    30
+   ],
+   "termos": [
+    "valor esperado",
+    "linearidade",
+    "indicator",
+    "probabilidade"
+   ]
+  },
+  {
+   "topico": "Tables 1.1 and 1.2 (cost summary)",
+   "capitulo": "Introduction",
+   "paginas": [
+    36,
+    38
+   ],
+   "termos": [
+    "tabela",
+    "table 1.1",
+    "table 1.2",
+    "resumo"
+   ]
+  },
+  {
+   "topico": "ArrayStack",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+   ],
+   "termos": [
+    "arraystack",
+    "pilha em array",
+    "backing array",
+    "array stack"
+   ]
+  },
+  {
+   "topico": "Resize rule (doubles, shrinks at length(a) >= 3n)",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    45,
+    47
+   ],
+   "termos": [
+    "resize",
+    "redimensionamento",
+    "3n",
+    "geometrico",
+    "resizing",
+    "geometric growth"
+   ],
+   "nota": "growing by +c is not analyzed in the book"
+  },
+  {
+   "topico": "Lemma 2.1 (resize soma O(m))",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    47,
+    48
+   ],
+   "termos": [
+    "lemma 2.1",
+    "amortizado arraystack",
+    "amortized arraystack"
+   ]
+  },
+  {
+   "topico": "FastArrayStack",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    49,
+    50
+   ],
+   "termos": [
+    "fastarraystack",
+    "memcpy",
+    "memmove",
+    "arraycopy"
+   ]
+  },
+  {
+   "topico": "ArrayQueue",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    50,
+    51,
+    52,
+    53
+   ],
+   "termos": [
+    "arrayqueue",
+    "fila circular",
+    "modular",
+    "circular queue"
+   ]
+  },
+  {
+   "topico": "ArrayDeque",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    54,
+    55,
+    56
+   ],
+   "termos": [
+    "arraydeque",
+    "deque em array",
+    "array deque"
+   ]
+  },
+  {
+   "topico": "DualArrayDeque",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+   ],
+   "termos": [
+    "dualarraydeque",
+    "duas pilhas",
+    "balance",
+    "front",
+    "back",
+    "two stacks"
+   ]
+  },
+  {
+   "topico": "RootishArrayStack",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+   ],
+   "termos": [
+    "rootisharraystack",
+    "rootish",
+    "blocos",
+    "sqrt n",
+    "blocks",
+    "square root"
+   ]
+  },
+  {
+   "topico": "Rootish: index -> block (i2b)",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    64,
+    65
+   ],
+   "termos": [
+    "i2b",
+    "bloco",
+    "raiz quadrada",
+    "index",
+    "square root"
+   ]
+  },
+  {
+   "topico": "Rootish: wasted space",
+   "capitulo": "Array-Based Lists",
+   "paginas": [
+    67,
+    68
+   ],
+   "termos": [
+    "desperdicio",
+    "wasted space",
+    "espaco"
+   ]
+  },
+  {
+   "topico": "SLList",
+   "capitulo": "Linked Lists",
+   "paginas": [
+    73,
+    74,
+    75,
+    76
+   ],
+   "termos": [
+    "sllist",
+    "lista simples",
+    "singly-linked"
+   ]
+  },
+  {
+   "topico": "DLList and the dummy node",
+   "capitulo": "Linked Lists",
+   "paginas": [
+    76,
+    77,
+    78,
+    79,
+    80
+   ],
+   "termos": [
+    "dllist",
+    "dummy",
+    "sentinela",
+    "lista dupla",
+    "doubly-linked",
+    "sentinel node"
+   ]
+  },
+  {
+   "topico": "SEList",
+   "capitulo": "Linked Lists",
+   "paginas": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+   ],
+   "termos": [
+    "selist",
+    "lista eficiente em espaco",
+    "bdeque",
+    "unrolled"
+   ]
+  },
+  {
+   "topico": "spread and gather (SEList)",
+   "capitulo": "Linked Lists",
+   "paginas": [
+    83,
+    84,
+    85,
+    87,
+    88,
+    89
+   ],
+   "termos": [
+    "spread",
+    "gather"
+   ]
+  },
+  {
+   "topico": "Skiplist: structure",
+   "capitulo": "Skiplists",
+   "paginas": [
+    95,
+    96,
+    97
+   ],
+   "termos": [
+    "skiplist",
+    "lista de salto",
+    "sentinel",
+    "search path",
+    "caminho de busca",
+    "structure"
+   ]
+  },
+  {
+   "topico": "SkiplistSSet",
+   "capitulo": "Skiplists",
+   "paginas": [
+    97,
+    98,
+    99,
+    100
+   ],
+   "termos": [
+    "skiplistsset",
+    "pick_height",
+    "find",
+    "add",
+    "remove"
+   ]
+  },
+  {
+   "topico": "SkiplistList (edge length)",
+   "capitulo": "Skiplists",
+   "paginas": [
+    101,
+    102,
+    103,
+    104,
+    105
+   ],
+   "termos": [
+    "skiplistlist",
+    "length",
+    "comprimento",
+    "edge length"
+   ]
+  },
+  {
+   "topico": "Skiplist analysis (2 log n + O(1))",
+   "capitulo": "Skiplists",
+   "paginas": [
+    105,
+    106,
+    107,
+    108,
+    109
+   ],
+   "termos": [
+    "analise",
+    "reverse search path",
+    "caminho reverso",
+    "2 log n",
+    "analysis"
+   ]
+  },
+  {
+   "topico": "finger in a skiplist",
+   "capitulo": "Skiplists",
+   "paginas": [
+    110
+   ],
+   "termos": [
+    "finger",
+    "dedo"
+   ],
+   "nota": "exercise concept; not the array length"
+  },
+  {
+   "topico": "ChainedHashTable",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    113,
+    114,
+    115,
+    116,
+    117,
+    120
+   ],
+   "termos": [
+    "chainedhashtable",
+    "encadeamento",
+    "chaining"
+   ]
+  },
+  {
+   "topico": "Multiplicative hashing",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    116,
+    117,
+    118,
+    119,
+    120
+   ],
+   "termos": [
+    "multiplicative",
+    "multiplicativo",
+    "lemma 5.1"
+   ]
+  },
+  {
+   "topico": "LinearHashTable",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+   ],
+   "termos": [
+    "linearhashtable",
+    "sondagem linear",
+    "linear probing"
+   ]
+  },
+  {
+   "topico": "del values (tombstones)",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    121,
+    122,
+    123
+   ],
+   "termos": [
+    "del",
+    "valor del"
+   ],
+   "nota": "the book does not use the word tombstone"
+  },
+  {
+   "topico": "Invariant length(t) >= 2q",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    121,
+    123
+   ],
+   "termos": [
+    "invariante",
+    "q",
+    "2q",
+    "invariant"
+   ]
+  },
+  {
+   "topico": "Linear probing analysis (runs)",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    124,
+    125,
+    126,
+    127
+   ],
+   "termos": [
+    "run",
+    "lemma 5.4",
+    "analise",
+    "analysis"
+   ],
+   "nota": "assumes independent, uniform hashing"
+  },
+  {
+   "topico": "Tabulation hashing",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    127,
+    128
+   ],
+   "termos": [
+    "tabulation",
+    "tabulacao"
+   ]
+  },
+  {
+   "topico": "Hash codes",
+   "capitulo": "Hash Tables",
+   "paginas": [
+    129,
+    130,
+    131,
+    132,
+    133
+   ],
+   "termos": [
+    "hash code",
+    "codigo hash",
+    "strings",
+    "polinomios",
+    "polynomials"
+   ]
+  },
+  {
+   "topico": "BinaryTree and terminology",
+   "capitulo": "Binary Trees",
+   "paginas": [
+    139,
+    140,
+    141
+   ],
+   "termos": [
+    "binarytree",
+    "profundidade",
+    "altura",
+    "depth",
+    "height"
+   ]
+  },
+  {
+   "topico": "Binary tree traversals",
+   "capitulo": "Binary Trees",
+   "paginas": [
+    142,
+    143,
+    144,
+    145
+   ],
+   "termos": [
+    "travessia",
+    "traversal",
+    "traverse2",
+    "breadth-first"
+   ]
+  },
+  {
+   "topico": "BinarySearchTree",
+   "capitulo": "Binary Trees",
+   "paginas": [
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151
+   ],
+   "termos": [
+    "binarysearchtree",
+    "bst",
+    "arvore binaria de busca",
+    "binary search tree"
+   ]
+  },
+  {
+   "topico": "Degenerate BST (chain)",
+   "capitulo": "Binary Trees",
+   "paginas": [
+    151,
+    152,
+    157
+   ],
+   "termos": [
+    "cadeia",
+    "degenerada",
+    "desbalanceada",
+    "unbalanced",
+    "chain",
+    "degenerate"
+   ]
+  },
+  {
+   "topico": "Random binary search tree",
+   "capitulo": "Random Binary Search Trees",
+   "paginas": [
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163
+   ],
+   "termos": [
+    "random binary search tree",
+    "arvore de busca aleatoria",
+    "lemma 7.1",
+    "harmonic"
+   ]
+  },
+  {
+   "topico": "Rotations",
+   "capitulo": "Random Binary Search Trees",
+   "paginas": [
+    165,
+    166
+   ],
+   "termos": [
+    "rotacao",
+    "rotation",
+    "rotate_left",
+    "rotate_right",
+    "rotations"
+   ]
+  },
+  {
+   "topico": "Treap",
+   "capitulo": "Random Binary Search Trees",
+   "paginas": [
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170
+   ],
+   "termos": [
+    "treap",
+    "prioridade",
+    "priority",
+    "heap property"
+   ]
+  },
+  {
+   "topico": "Treap vs skiplist (2 ln n)",
+   "capitulo": "Random Binary Search Trees",
+   "paginas": [
+    170,
+    171,
+    172
+   ],
+   "termos": [
+    "1,386",
+    "2 ln n",
+    "ln n"
+   ]
+  },
+  {
+   "topico": "ScapegoatTree",
+   "capitulo": "Scapegoat Trees",
+   "paginas": [
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185
+   ],
+   "termos": [
+    "scapegoattree",
+    "scapegoat",
+    "bode expiatorio",
+    "rebuild"
+   ]
+  },
+  {
+   "topico": "Rebuild and invariant q/2 <= n <= q",
+   "capitulo": "Scapegoat Trees",
+   "paginas": [
+    177,
+    178,
+    179
+   ],
+   "termos": [
+    "rebuild",
+    "q",
+    "log 3/2"
+   ]
+  },
+  {
+   "topico": "2-4 tree",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    190,
+    191,
+    192,
+    193
+   ],
+   "termos": [
+    "2-4 tree",
+    "arvore 2-4"
+   ]
+  },
+  {
+   "topico": "RedBlackTree (black-height, no-red-edge)",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    194,
+    195,
+    196
+   ],
+   "termos": [
+    "redblacktree",
+    "rubro-negra",
+    "red-black",
+    "black-height",
+    "no-red-edge"
+   ]
+  },
+  {
+   "topico": "Left-leaning and push/pull/flip",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    198,
+    199
+   ],
+   "termos": [
+    "left-leaning",
+    "push_black",
+    "pull_black",
+    "flip_left",
+    "flip_right"
+   ]
+  },
+  {
+   "topico": "add_fixup",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    200,
+    201,
+    202
+   ],
+   "termos": [
+    "add_fixup",
+    "fixup"
+   ]
+  },
+  {
+   "topico": "remove_fixup",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    203,
+    204,
+    205,
+    206,
+    207,
+    208
+   ],
+   "termos": [
+    "remove_fixup",
+    "preto duplo",
+    "double black"
+   ]
+  },
+  {
+   "topico": "RedBlackTree: costs and amortized rotations",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    189,
+    208,
+    209
+   ],
+   "termos": [
+    "theorem 9.1",
+    "theorem 9.2",
+    "rotacoes",
+    "rotations"
+   ],
+   "nota": "the book does not state fixed rotation limits"
+  },
+  {
+   "topico": "AVL (note)",
+   "capitulo": "Red-Black Trees",
+   "paginas": [
+    210,
+    211,
+    212
+   ],
+   "termos": [
+    "avl"
+   ],
+   "nota": "no pseudocode"
+  },
+  {
+   "topico": "BinaryHeap and the Eytzinger method",
+   "capitulo": "Heaps",
+   "paginas": [
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221
+   ],
+   "termos": [
+    "binaryheap",
+    "heap",
+    "eytzinger",
+    "bubble_up",
+    "trickle_down"
+   ]
+  },
+  {
+   "topico": "MeldableHeap",
+   "capitulo": "Heaps",
+   "paginas": [
+    221,
+    222,
+    223,
+    224,
+    225,
+    226
+   ],
+   "termos": [
+    "meldableheap",
+    "merge",
+    "meld",
+    "heap fundivel",
+    "meldable heap"
+   ]
+  },
+  {
+   "topico": "Random walk (Lemma 10.1)",
+   "capitulo": "Heaps",
+   "paginas": [
+    224,
+    225,
+    226
+   ],
+   "termos": [
+    "random walk",
+    "passeio aleatorio",
+    "lemma 10.1"
+   ]
+  },
+  {
+   "topico": "Merge-sort",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    230,
+    231,
+    232,
+    233,
+    234
+   ],
+   "termos": [
+    "merge-sort",
+    "merge sort",
+    "mergesort"
+   ]
+  },
+  {
+   "topico": "Quicksort",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    234,
+    235,
+    236,
+    237
+   ],
+   "termos": [
+    "quicksort",
+    "quick sort"
+   ]
+  },
+  {
+   "topico": "Heap-sort",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    237,
+    238,
+    239
+   ],
+   "termos": [
+    "heap-sort",
+    "heap sort",
+    "heapsort"
+   ]
+  },
+  {
+   "topico": "Comparison lower bound",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    239,
+    240,
+    241,
+    242
+   ],
+   "termos": [
+    "limite inferior",
+    "lower bound",
+    "comparison tree",
+    "n!"
+   ]
+  },
+  {
+   "topico": "Counting sort",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    243,
+    244,
+    245
+   ],
+   "termos": [
+    "counting sort",
+    "contagem",
+    "counting"
+   ]
+  },
+  {
+   "topico": "Radix sort",
+   "capitulo": "Sorting Algorithms",
+   "paginas": [
+    245,
+    246,
+    247
+   ],
+   "termos": [
+    "radix sort",
+    "radix"
+   ]
+  },
+  {
+   "topico": "Graph operations",
+   "capitulo": "Graphs",
+   "paginas": [
+    252
+   ],
+   "termos": [
+    "add_edge",
+    "has_edge",
+    "out_edges",
+    "in_edges",
+    "remove_edge"
+   ]
+  },
+  {
+   "topico": "AdjacencyMatrix",
+   "capitulo": "Graphs",
+   "paginas": [
+    253,
+    254,
+    255,
+    256
+   ],
+   "termos": [
+    "adjacencymatrix",
+    "matriz de adjacencia",
+    "adjacency matrix"
+   ]
+  },
+  {
+   "topico": "AdjacencyLists",
+   "capitulo": "Graphs",
+   "paginas": [
+    256,
+    257,
+    258,
+    259
+   ],
+   "termos": [
+    "adjacencylists",
+    "lista de adjacencia",
+    "adjacency list"
+   ]
+  },
+  {
+   "topico": "Breadth-first search",
+   "capitulo": "Graphs",
+   "paginas": [
+    260,
+    261,
+    262
+   ],
+   "termos": [
+    "bfs",
+    "busca em largura",
+    "breadth-first"
+   ]
+  },
+  {
+   "topico": "Depth-first search",
+   "capitulo": "Graphs",
+   "paginas": [
+    262,
+    263,
+    264,
+    265
+   ],
+   "termos": [
+    "dfs",
+    "busca em profundidade",
+    "depth-first",
+    "dfs2"
+   ]
+  },
+  {
+   "topico": "BinaryTrie",
+   "capitulo": "Data Structures for Integers",
+   "paginas": [
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276
+   ],
+   "termos": [
+    "binarytrie",
+    "trie binaria",
+    "jump",
+    "binary trie"
+   ]
+  },
+  {
+   "topico": "XFastTrie",
+   "capitulo": "Data Structures for Integers",
+   "paginas": [
+    276,
+    277,
+    278,
+    279
+   ],
+   "termos": [
+    "xfasttrie",
+    "x-fast"
+   ]
+  },
+  {
+   "topico": "YFastTrie",
+   "capitulo": "Data Structures for Integers",
+   "paginas": [
+    279,
+    280,
+    281,
+    282,
+    283,
+    284
+   ],
+   "termos": [
+    "yfasttrie",
+    "y-fast",
+    "lemma 13.1"
+   ]
+  },
+  {
+   "topico": "External memory model and BlockStore",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    287,
+    288,
+    289
+   ],
+   "termos": [
+    "memoria externa",
+    "external memory",
+    "blockstore",
+    "bloco",
+    "block"
+   ]
+  },
+  {
+   "topico": "B-tree: definition and height",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    289,
+    290,
+    291
+   ],
+   "termos": [
+    "b-tree",
+    "btree",
+    "arvore b"
+   ]
+  },
+  {
+   "topico": "B-tree: find",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    292,
+    293,
+    294
+   ],
+   "termos": [
+    "find_it",
+    "busca binaria"
+   ]
+  },
+  {
+   "topico": "B-tree: add and split",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    294,
+    295,
+    296,
+    297,
+    298,
+    299
+   ],
+   "termos": [
+    "split",
+    "divisao",
+    "add",
+    "splitting"
+   ]
+  },
+  {
+   "topico": "B-tree: remove, borrowing and merging",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305
+   ],
+   "termos": [
+    "remove",
+    "merge",
+    "fusao",
+    "borrow",
+    "emprestimo",
+    "underflow",
+    "borrowing",
+    "merging"
+   ]
+  },
+  {
+   "topico": "B-tree: amortized analysis (Lemma 14.1)",
+   "capitulo": "External Memory Searching",
+   "paginas": [
+    305,
+    306,
+    307,
+    308
+   ],
+   "termos": [
+    "lemma 14.1",
+    "amortizado",
+    "creditos",
+    "credits"
+   ]
+  },
+  {
+   "topico": "Potential method (uses in the book)",
+   "capitulo": "Miscellaneous",
+   "paginas": [
+    61,
+    88,
+    89,
+    209
+   ],
+   "termos": [
+    "potential method",
+    "metodo do potencial",
+    "potencial",
+    "potential"
+   ],
+   "nota": "there is no general statement in Ch. 1"
+  },
+  {
+   "topico": "Credit scheme (uses in the book)",
+   "capitulo": "Miscellaneous",
+   "paginas": [
+    183,
+    184,
+    305,
+    306
+   ],
+   "termos": [
+    "credit",
+    "creditos",
+    "credit scheme"
+   ]
+  },
+  {
+   "topico": "Bibliography",
+   "capitulo": "Bibliography",
+   "paginas": [
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320
+   ],
+   "termos": [
+    "bibliografia",
+    "bibliography",
+    "referencias"
+   ],
+   "nota": "years cited: Pugh 1990 (p.319), Seidel and Aragon 1996 (p.319), Galperin and Rivest 1993 (p.316), Bayer and McCreight 1970 (p.314), Aggarwal and Vitter 1988 (p.313), Willard 1983 (p.320)"
+  },
+  {
+   "topico": "Index (printed numbering)",
+   "capitulo": "Index",
+   "paginas": [
+    321,
+    322,
+    323,
+    324,
+    325,
+    326
+   ],
+   "termos": [
+    "indice remissivo",
+    "index",
+    "subject index",
+    "printed numbering"
+   ],
+   "nota": "index pages are printed numbers: add 12"
+  }
+ ],
+ "not_in_book": {
+  "tombstone": "the book uses 'del' values (ODS p.121); 'tombstone' is an external name",
+  "tombstones": "the book uses 'del' values (ODS p.121); 'tombstone' is an external name",
+  "lapide": "the book uses 'del' values (ODS p.121); 'lapide'/'tombstone' are external labels",
+  "primary clustering": "term absent; the book uses the invariant length(t) >= 2q and the analysis of runs (ODS p.121, 124)",
+  "agrupamento primario": "term absent; the book uses the invariant length(t) >= 2q and the analysis of runs (ODS p.121, 124)",
+  "2-independente": "term absent; the book proves Pr[collision] <= 2/2^d (ODS p.116)",
+  "tempo real": "the book does not cover real-time; amortized vs. worst case is in ODS p.32",
+  "real-time": "the book does not cover real-time; amortized vs. worst case is in ODS p.32",
+  "cache": "the book only mentions caching internal B-tree nodes (ODS p.309); it does not analyze CPU cache",
+  "kubernetes": "outside the scope of the book",
+  "np-completude": "outside the book (Erickson's book, another agent)",
+  "fluxo maximo": "outside the book (Erickson's book, another agent)",
+  "dijkstra": "only mentioned as an application of decrease_key (ODS p.227)",
+  "cuckoo": "cuckoo hashing is only mentioned in the discussion (ODS p.134-135)",
+  "b+": "B+-tree appears only as Exercise 14.8 (ODS p.310-311)",
+  "2-independent": "term absent; the book proves Pr[collision] <= 2/2^d (ODS p.116)",
+  "np-completeness": "outside the book (Erickson's book, another agent)",
+  "maximum flow": "outside the book (Erickson's book, another agent)"
+ }
+}

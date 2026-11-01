@@ -1,0 +1,512 @@
+{
+  "releases": {
+    "11": {
+      "ga": "25 September 2018",
+      "lts_stated": false,
+      "lts_note": "the JDK 11 page does not mention LTS; the JDK 17 page calls JDK 11 the \"previous LTS release\"",
+      "lts_called_by_later_page": true
+    },
+    "17": {
+      "ga": "14 September 2021",
+      "lts_stated": true,
+      "lts_note": "the JDK 17 page states it will be an LTS release at most vendors; the JDK 21 page calls it the \"previous LTS release\"",
+      "lts_called_by_later_page": true
+    },
+    "21": {
+      "ga": "19 September 2023",
+      "lts_stated": true,
+      "lts_note": "the JDK 21 page states it will be an LTS release at most vendors",
+      "lts_called_by_later_page": false
+    },
+    "22": {
+      "ga": "19 March 2024",
+      "lts_stated": false,
+      "lts_note": "the page does not mention LTS",
+      "lts_called_by_later_page": false
+    },
+    "26": {
+      "ga": "17 March 2026",
+      "lts_stated": false,
+      "lts_note": "the page does not mention LTS",
+      "lts_called_by_later_page": false
+    }
+  },
+  "features": [
+    {
+      "jdk": 11,
+      "jep": 181,
+      "title": "Nest-Based Access Control",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 309,
+      "title": "Dynamic Class-File Constants",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 315,
+      "title": "Improve Aarch64 Intrinsics",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 318,
+      "title": "Epsilon: A No-Op Garbage Collector",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 320,
+      "title": "Remove the Java EE and CORBA Modules",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 321,
+      "title": "HTTP Client (Standard)",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 323,
+      "title": "Local-Variable Syntax for Lambda Parameters",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 324,
+      "title": "Key Agreement with Curve25519 and Curve448",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 327,
+      "title": "Unicode 10",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 328,
+      "title": "Flight Recorder",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 329,
+      "title": "ChaCha20 and Poly1305 Cryptographic Algorithms",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 330,
+      "title": "Launch Single-File Source-Code Programs",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 331,
+      "title": "Low-Overhead Heap Profiling",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 332,
+      "title": "Transport Layer Security (TLS) 1.3",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 333,
+      "title": "ZGC: A Scalable Low-Latency Garbage Collector",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 335,
+      "title": "Deprecate the Nashorn JavaScript Engine",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 11,
+      "jep": 336,
+      "title": "Deprecate the Pack200 Tools and API",
+      "marker": "",
+      "ga": "25 September 2018"
+    },
+    {
+      "jdk": 17,
+      "jep": 306,
+      "title": "Restore Always-Strict Floating-Point Semantics",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 356,
+      "title": "Enhanced Pseudo-Random Number Generators",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 382,
+      "title": "New macOS Rendering Pipeline",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 391,
+      "title": "macOS/AArch64 Port",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 398,
+      "title": "Deprecate the Applet API for Removal",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 403,
+      "title": "Strongly Encapsulate JDK Internals",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 406,
+      "title": "Pattern Matching for switch (Preview)",
+      "marker": "Preview",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 407,
+      "title": "Remove RMI Activation",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 409,
+      "title": "Sealed Classes",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 410,
+      "title": "Remove the Experimental AOT and JIT Compiler",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 411,
+      "title": "Deprecate the Security Manager for Removal",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 412,
+      "title": "Foreign Function & Memory API (Incubator)",
+      "marker": "Incubator",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 414,
+      "title": "Vector API (Second Incubator)",
+      "marker": "Second Incubator",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 17,
+      "jep": 415,
+      "title": "Context-Specific Deserialization Filters",
+      "marker": "",
+      "ga": "14 September 2021"
+    },
+    {
+      "jdk": 21,
+      "jep": 430,
+      "title": "String Templates (Preview)",
+      "marker": "Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 431,
+      "title": "Sequenced Collections",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 439,
+      "title": "Generational ZGC",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 440,
+      "title": "Record Patterns",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 441,
+      "title": "Pattern Matching for switch",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 442,
+      "title": "Foreign Function & Memory API (Third Preview)",
+      "marker": "Third Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 443,
+      "title": "Unnamed Patterns and Variables (Preview)",
+      "marker": "Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 444,
+      "title": "Virtual Threads",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 445,
+      "title": "Unnamed Classes and Instance Main Methods (Preview)",
+      "marker": "Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 446,
+      "title": "Scoped Values (Preview)",
+      "marker": "Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 448,
+      "title": "Vector API (Sixth Incubator)",
+      "marker": "Sixth Incubator",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 449,
+      "title": "Deprecate the Windows 32-bit x86 Port for Removal",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 451,
+      "title": "Prepare to Disallow the Dynamic Loading of Agents",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 452,
+      "title": "Key Encapsulation Mechanism API",
+      "marker": "",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 21,
+      "jep": 453,
+      "title": "Structured Concurrency (Preview)",
+      "marker": "Preview",
+      "ga": "19 September 2023"
+    },
+    {
+      "jdk": 22,
+      "jep": 423,
+      "title": "Region Pinning for G1",
+      "marker": "",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 447,
+      "title": "Statements before super(...) (Preview)",
+      "marker": "Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 454,
+      "title": "Foreign Function & Memory API",
+      "marker": "",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 456,
+      "title": "Unnamed Variables & Patterns",
+      "marker": "",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 457,
+      "title": "Class-File API (Preview)",
+      "marker": "Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 458,
+      "title": "Launch Multi-File Source-Code Programs",
+      "marker": "",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 459,
+      "title": "String Templates (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 460,
+      "title": "Vector API (Seventh Incubator)",
+      "marker": "Seventh Incubator",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 461,
+      "title": "Stream Gatherers (Preview)",
+      "marker": "Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 462,
+      "title": "Structured Concurrency (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 463,
+      "title": "Implicitly Declared Classes and Instance Main Methods (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 22,
+      "jep": 464,
+      "title": "Scoped Values (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "19 March 2024"
+    },
+    {
+      "jdk": 26,
+      "jep": 500,
+      "title": "Prepare to Make Final Mean Final",
+      "marker": "",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 504,
+      "title": "Remove the Applet API",
+      "marker": "",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 516,
+      "title": "Ahead-of-Time Object Caching with Any GC",
+      "marker": "",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 517,
+      "title": "HTTP/3 for the HTTP Client API",
+      "marker": "",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 522,
+      "title": "G1 GC: Improve Throughput by Reducing Synchronization",
+      "marker": "",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 524,
+      "title": "PEM Encodings of Cryptographic Objects (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 525,
+      "title": "Structured Concurrency (Sixth Preview)",
+      "marker": "Sixth Preview",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 526,
+      "title": "Lazy Constants (Second Preview)",
+      "marker": "Second Preview",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 529,
+      "title": "Vector API (Eleventh Incubator)",
+      "marker": "Eleventh Incubator",
+      "ga": "17 March 2026"
+    },
+    {
+      "jdk": 26,
+      "jep": 530,
+      "title": "Primitive Types in Patterns, instanceof, and switch (Fourth Preview)",
+      "marker": "Fourth Preview",
+      "ga": "17 March 2026"
+    }
+  ]
+}

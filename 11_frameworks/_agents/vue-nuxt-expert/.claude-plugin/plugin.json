@@ -1,0 +1,18 @@
+{
+  "name": "vue-nuxt-expert",
+  "version": "1.0.0",
+  "description": "Overview agent (based on documentation captures) on Vue and Nuxt: The Vue Handbook (freeCodeCamp, Jul 2018, Vue 2 by inference), Vue 3 introduction and Nuxt v4.5.2 introduction. Templates, directives, components, computed/watch, Vuex/Vue Router (Vue 2), Options vs Composition API, Nuxt (SSR, nuxt generate, ssr:false, routeRules, Nitro). Everything [DATED]; many topics NOT COVERED. Does not cover Svelte, React/Next or Angular.",
+  "license": "MIT",
+  "author": { "name": "Antigravity Agentic Platform" },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "vue2",
+    "vue3",
+    "composition-api",
+    "options-api",
+    "ssr",
+    "vuex",
+    "vue-router"
+  ]
+}
