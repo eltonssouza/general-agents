@@ -2,7 +2,7 @@
 
 **Role** agent of the `general-agents` collection (folder `12_product_and_leadership_roles`). It writes cross-team technical strategy RFCs: systemic diagnosis, direction and guardrails, alternatives with a trade-off matrix, an adoption plan with a pilot and metrics.
 
-**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: `relay-harness/packages/coding-agent/resources/agents/principal-engineer.md` (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
+**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: the harness's `principal-engineer` role agent (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
 
 ## 1. When to use
 Example requests: "Write an RFC to standardize observability across 8 teams"; "We have 4 different deploy tools; propose a unification strategy"; "Define engineering guardrails that apply to the whole organization".

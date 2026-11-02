@@ -1,7 +1,7 @@
 # INDEX: product-owner
 
 ## Nature
-**Role** agent (folder 12 of the collection): delivers product specification. It has no bibliographic source in the collection; the guidelines are market practices labeled `[practice]`. Origin: `relay-harness/packages/coding-agent/resources/agents/product-owner.md` (MIT, Elton Souza), translated and adapted to the collection standard on 2026-11-01.
+**Role** agent (folder 12 of the collection): delivers product specification. It has no bibliographic source in the collection; the guidelines are market practices labeled `[practice]`. Origin: the harness's `product-owner` role agent (MIT, Elton Souza), translated and adapted to the collection standard on 2026-11-01.
 
 ## Files
 | File | Use |

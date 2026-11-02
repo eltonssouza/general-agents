@@ -2,7 +2,7 @@
 
 **Role** agent of the `general-agents` collection (folder `12_product_and_leadership_roles`). It specifies journeys and flows, information architecture, wireframe anatomy, design tokens and all component states, with a WCAG 2.2 AA accessibility checklist measured by script.
 
-**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When the topic has a citable basis in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: `relay-harness/packages/coding-agent/resources/agents/product-designer.md` (MIT, Elton Souza), translated to English and adapted to the collection standard on 2026-11-01.
+**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When the topic has a citable basis in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: the harness's `product-designer` role agent (MIT, Elton Souza), translated to English and adapted to the collection standard on 2026-11-01.
 
 ## 1. When to use
 Example requests: "Design the sign-up flow and specify the form states"; "Define the color design tokens and check the contrast"; "Does this gray #777 pass contrast on white?".

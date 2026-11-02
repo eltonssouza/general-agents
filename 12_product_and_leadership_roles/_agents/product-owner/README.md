@@ -2,7 +2,7 @@
 
 **Role** agent of the `general-agents` collection (folder `12_product_and_leadership_roles`). Turns business goals into a product specification: ubiquitous language glossary, AS-IS/TO-BE flow, prioritized INVEST stories with Given/When/Then criteria, business rules matrix, DoR and DoD.
 
-**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: `relay-harness/packages/coding-agent/resources/agents/product-owner.md` (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
+**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: the harness's `product-owner` role agent (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
 
 ## 1. When to use
 Example requests: "Write the user stories and acceptance criteria for checkout with a coupon"; "Break this onboarding epic into INVEST stories"; "Review these user stories: are they testable?".
