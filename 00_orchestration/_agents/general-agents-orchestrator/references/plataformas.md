@@ -23,7 +23,7 @@
 - Custom agents in `.github/agents/*.agent.md` (workspace) or `~/.copilot/agents/` (user).
 - To delegate: include the **`agent`** tool set in `tools` and list the allowed ones in **`agents`** (`['*']` = all; `[]` blocks). Names are case-sensitive.
 - Tool aliases: `execute`, `read`, `edit`, `search`, `agent`, `web`, `todo`.
-- **Model:** `model` accepts text or a preference-ordered list (uses the first available); the values are Copilot runtime IDs. The collection writes `['claude-<model>-5.5', '<gpt>']` (IDs from the relay-harness `github-copilot` catalog).
+- **Model:** `model` accepts text or a preference-ordered list (uses the first available); the values are Copilot runtime IDs. The collection writes `['claude-<model>-5.5', '<gpt>']` (IDs from the `github-copilot` model catalog).
 - Specialist not installed as a custom agent: delegate to a generic subagent with the "read the canonical prompt" brief.
 - Sources: https://code.visualstudio.com/docs/copilot/customization/custom-agents and https://code.visualstudio.com/docs/agents/reference/custom-agent-file-reference
 
