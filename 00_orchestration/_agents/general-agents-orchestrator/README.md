@@ -53,7 +53,7 @@ python -I tests/run_script_tests.py                          # automated tests (
 - "Write the checkout stories with PIX and the execution plan, covering security" → requirements with `owasp-asvs-code-review-expert` (specialist, with page) → stories with `product-owner` → plan with `tech-lead` (roles, `[practice]`); payments/PIX itself is NO SPECIALIST.
 
 ## Agent models
-A single policy in `scripts/models.json`, with the models allowed by the relay-harness, tiered by price within each provider:
+A single policy in `scripts/models.json`, with the models allowed by the harness, tiered by price within each provider:
 
 | Tier | Claude Code | Codex / OpenAI | GitHub Copilot (preference) | Who uses it by default |
 |---|---|---|---|---|

@@ -1,6 +1,6 @@
 {
  "_about": "Model policy of the general-agents collection. Single source: apply_models.py writes the model into each package (Claude Code: 'model' in the frontmatter; GitHub Copilot: 'model' as a preference-ordered list; Codex: a line in AGENTS.md). Do not edit the packages by hand: edit this file and run apply_models.py.",
- "_source": "Allowed models and tiers of the relay-harness (packages/coding-agent/src/core/model-eligibility.ts and docs/laya.md, checked on 2026-11-01): Claude Opus, Sonnet and Haiku 5.5; in openai-codex only gpt-6-astra, gpt-6.1-sol, gpt-6-luna and gpt-5.6-terra. Tier = price position within the provider (fast < balanced < strong < frontier). Copilot IDs from the github-copilot.json catalog. 'model' field values checked against the Claude Code docs (aliases) and the VS Code docs (text or preference-ordered list).",
+ "_source": "Models allowed by the harness (checked on 2026-11-01): Claude Opus, Sonnet and Haiku 5.5; in openai-codex only gpt-6-astra, gpt-6.1-sol, gpt-6-luna and gpt-5.6-terra. Tier = price position within the provider (fast < balanced < strong < frontier). Copilot IDs from the github-copilot model catalog. 'model' field values checked against the Claude Code docs (aliases) and the VS Code docs (text or preference-ordered list).",
  "tiers": {
   "fast": {
    "claude": "haiku",
@@ -36,7 +36,7 @@
     "claude-opus-5.5",
     "gpt-6-astra"
    ],
-   "use": "exceptional problems; the relay-harness does not allow Claude above Opus 5.5, so the Claude side uses opus; GPT output price USD 50/1M"
+   "use": "exceptional problems; the harness does not allow Claude above Opus 5.5, so the Claude side uses opus; GPT output price USD 50/1M"
   }
  },
  "default": {

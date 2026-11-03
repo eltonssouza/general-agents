@@ -3,7 +3,7 @@
 Date: 2026-11-01. Environment: Windows 11, Python 3.13.15, Claude Code 2.1.316.
 
 ## Origin and decision
-Adapted from `relay-harness/packages/coding-agent/resources/agents/tech-lead.md` (MIT, Elton Souza): translated, `{{...}}` placeholders replaced by "expected inputs", constraints with their rationale, honesty labels (`[practice]`, `[from collection: <agent>]`, `[inference]`, `[assumption]`), hand-off to the collection's specialists and templates in `references/`. It entered the collection because no specialist covers this role; 12 of the 16 agents in the origin were left out as duplicates (see `00_orchestration/.../references/fronteiras.md`).
+Adapted from the harness's `tech-lead` role agent (MIT, Elton Souza): translated, `{{...}}` placeholders replaced by "expected inputs", constraints with their rationale, honesty labels (`[practice]`, `[from collection: <agent>]`, `[inference]`, `[assumption]`), hand-off to the collection's specialists and templates in `references/`. It entered the collection because no specialist covers this role; 12 of the 16 agents in the origin were left out as duplicates (see `00_orchestration/.../references/fronteiras.md`).
 
 ## Package
 | Check | Result |

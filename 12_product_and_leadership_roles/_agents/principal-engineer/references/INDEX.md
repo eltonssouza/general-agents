@@ -1,7 +1,7 @@
 # INDEX: principal-engineer
 
 ## Nature
-**Role** agent (collection folder 12): delivers cross-team technical strategy in the form of an RFC. It has no bibliographic source in the collection; the guidelines are practices labeled `[practice]`. Origin: `relay-harness/packages/coding-agent/resources/agents/principal-engineer.md` (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
+**Role** agent (collection folder 12): delivers cross-team technical strategy in the form of an RFC. It has no bibliographic source in the collection; the guidelines are practices labeled `[practice]`. Origin: the harness's `principal-engineer` role agent (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
 
 ## Files
 | File | Use |

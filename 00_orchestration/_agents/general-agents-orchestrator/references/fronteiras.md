@@ -57,7 +57,7 @@ Role agents **produce deliverables** and have no source; specialists **ground** 
 | Execution plan for a milestone, slices, technical debt with ADR | `tech-lead` | `google-engineering-craftsmanship-expert` (tech lead role, code review), `clean-code-expert` |
 | RFC and cross-team technical strategy, guardrails | `principal-engineer` | `google-engineering-craftsmanship-expert` (leadership at scale), `system-design-microservices-expert` |
 | "What is accessibility / DDD / SRE?" (concept) | the specialist, not the role | — |
-Roles of the relay-harness **not incorporated** because of duplication (the domain already has a specialist; cross-cutting work belongs to the orchestrator): backend, code reviewer, code simplifier, DBA, DevOps, frontend, fullstack, QA, security, SRE, software architect, software engineer.
+Role agents of the harness **not incorporated** because of duplication (the domain already has a specialist; cross-cutting work belongs to the orchestrator): backend, code reviewer, code simplifier, DBA, DevOps, frontend, fullstack, QA, security, SRE, software architect, software engineer.
 
 ## Audit pipeline (folder 13) vs specialists
 The Universal Audit Multiagent pipeline **audits a repository** and only publishes a finding after the independent validator; the specialists **explain and ground** with a page.

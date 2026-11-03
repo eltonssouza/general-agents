@@ -40,7 +40,7 @@ Date: 2026-10-31. Environment: Windows 11, Python 3.13.15, Claude Code 2.1.316. 
 - **Verification:** 90 PASS, 0 FAIL, with four new regression cases (R52-R55) and A05. With the old ordering, R52-R54 fail (mutation proof). No specialist description needed to change.
 
 ## Role agents of folder 12 (2026-11-01)
-- Origin: the 16 agents of `relay-harness/packages/coding-agent/resources/agents` (MIT). 4 joined, with no equivalent specialist in the collection: `product-owner`, `product-designer`, `tech-lead`, `principal-engineer`. The other 12 were considered duplicates (domain already covered by a specialist; cross-cutting work belongs to the orchestrator); the table is in `references/fronteiras.md`.
+- Origin: the harness's 16 role agents (MIT). 4 joined, with no equivalent specialist in the collection: `product-owner`, `product-designer`, `tech-lead`, `principal-engineer`. The other 12 were considered duplicates (domain already covered by a specialist; cross-cutting work belongs to the orchestrator); the table is in `references/fronteiras.md`.
 - Catalog: 65 agents in 12 domains. C02 now compares agents **and domains** with the disk. Cases R56-R60 (four roles and the boundary with the accessibility specialist). Result: 95 PASS, 0 FAIL.
 - The orchestrator prompt and the adapters now distinguish specialists (source and page) from roles (`[practice]`, no page) and preserve `[practice]` in the integration.
 
@@ -54,7 +54,7 @@ Date: 2026-10-31. Environment: Windows 11, Python 3.13.15, Claude Code 2.1.316. 
 - **Finding outside the orchestrator:** the `owasp-asvs-code-review-expert` (an older specialist) looks for its scripts by relative path and did not find them in plugin mode on the 1st attempt; the orchestrator passed the path. The new packages (clean-code and roles) use `${CLAUDE_PLUGIN_ROOT}`; the older specialists were not changed.
 
 ## Agent models (2026-11-01)
-- **Policy** in `scripts/models.json`, from the models allowed by the relay-harness (`model-eligibility.ts`, `docs/laya.md`) and the price-tier rule within the provider: `fast` = Haiku / gpt-6-luna; `balanced` = Sonnet / gpt-6.1-sol; `strong` = Opus / gpt-5.6-terra; `frontier` = Opus / gpt-6-astra. Copilot IDs from the `github-copilot.json` catalog.
+- **Policy** in `scripts/models.json`, from the models allowed by the harness and the price-tier rule within the provider: `fast` = Haiku / gpt-6-luna; `balanced` = Sonnet / gpt-6.1-sol; `strong` = Opus / gpt-5.6-terra; `frontier` = Opus / gpt-6-astra. Copilot IDs from the `github-copilot` model catalog.
 - **Assignment:** specialists and roles in `balanced` (evidence: end-to-end tests with Sonnet); orchestrator and `principal-engineer` in `strong`. `fast` and `frontier` mapped, no agent by default.
 - **Application:** `apply_models.py` wrote 187 files in 66 packages (frontmatter `model` in Claude Code and Copilot; a block in `AGENTS.md`). The 11 agents that already had `model: sonnet` matched the policy.
 - **Regressions:** baseline of 59 collection suites, all green before; after the application, 6 broke on a rigid frontmatter regex (go-expert HY-7, clean-code-expert and the 4 roles). Fixed: go-expert now accepts an optional `model:`; the new packages now require a valid `model:`. Result: 59/59 green.
