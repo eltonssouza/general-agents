@@ -1,6 +1,6 @@
 ---
 name: go-version-migration
-description: Plans and verifies migration between Go versions (1.19→1.20, 1.21, 1.22, 1.23, 1.24): the `go` line of go.mod, toolchain, GODEBUG, loop variable semantics, `rand.Seed`, `panic(nil)`, timers, ServeMux, range over integer and function, PGO, `tool`/`godebug` directives. Includes a go.mod checker. Use when the user says "upgrade Go", "bump go.mod to 1.22", "what changes in 1.24", "my test broke after upgrading", "which version brought X" or asks whether a feature exists in a version. Do not use for style review (use go-code-review). Go 1.25 and 1.26 have NO release notes in the sources.
+description: "Plans and verifies migration between Go versions (1.19→1.20, 1.21, 1.22, 1.23, 1.24): the `go` line of go.mod, toolchain, GODEBUG, loop variable semantics, `rand.Seed`, `panic(nil)`, timers, ServeMux, range over integer and function, PGO, `tool`/`godebug` directives. Includes a go.mod checker. Use when the user says \"upgrade Go\", \"bump go.mod to 1.22\", \"what changes in 1.24\", \"my test broke after upgrading\", \"which version brought X\" or asks whether a feature exists in a version. Do not use for style review (use go-code-review). Go 1.25 and 1.26 have NO release notes in the sources."
 ---
 
 # Migration between Go versions (1.20–1.24)

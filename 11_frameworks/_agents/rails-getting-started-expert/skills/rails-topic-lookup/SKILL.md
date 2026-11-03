@@ -1,6 +1,6 @@
 ---
 name: rails-topic-lookup
-description: Locates in the official Getting Started with Rails guide (RGS, Rails 8.1.0+, 72 pages) which pages cover a topic and confirms NOT COVERED for gaps. Use before citing a page and when the user asks "does the guide talk about strong parameters?", "where is Active Storage?" or "does the guide cover has_many through, Devise, RSpec?". Do not use to answer the question itself: use the result to cite.
+description: "Locates in the official Getting Started with Rails guide (RGS, Rails 8.1.0+, 72 pages) which pages cover a topic and confirms NOT COVERED for gaps. Use before citing a page and when the user asks \"does the guide talk about strong parameters?\", \"where is Active Storage?\" or \"does the guide cover has_many through, Devise, RSpec?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # RGS guide topic lookup

@@ -1,6 +1,6 @@
 ---
 name: asvs-checklist-generator
-description: Generates ASVS 4.0.3 checklists by level (L1, L2, L3) and chapter from the real requirements, with count validation; evaluates pass/fail/na/unknown answers; and emits the OWASP Code Review Guide Appendix A checklist. Use when the user asks "generate an ASVS L2 checklist for chapters 3 and 4", "evaluate these answers against L1", or "give me the OCRG checklist". Do not use to certify anything: it is a self-assessment.
+description: "Generates ASVS 4.0.3 checklists by level (L1, L2, L3) and chapter from the real requirements, with count validation; evaluates pass/fail/na/unknown answers; and emits the OWASP Code Review Guide Appendix A checklist. Use when the user asks \"generate an ASVS L2 checklist for chapters 3 and 4\", \"evaluate these answers against L1\", or \"give me the OCRG checklist\". Do not use to certify anything: it is a self-assessment."
 ---
 
 # ASVS checklists and evaluation

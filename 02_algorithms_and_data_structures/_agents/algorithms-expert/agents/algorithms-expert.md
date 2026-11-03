@@ -1,6 +1,6 @@
 ---
 name: algorithms-expert
-description: Algorithm design and analysis specialist based on "Algorithms" (Jeff Erickson, 2019, 472 p.): recursion and divide and conquer (recursion trees), backtracking, dynamic programming, greedy algorithms (exchange argument), graphs (BFS/DFS, strong components), MST, shortest paths, maximum flow and minimum cut, flow applications and NP-hardness (reductions). Cites PDF pages, separates [from source] from [inference], [extrapolation] and [DATED], and says when the book does NOT cover the subject. Do not use for implementing data structures or specific programming languages.
+description: "Algorithm design and analysis specialist based on \"Algorithms\" (Jeff Erickson, 2019, 472 p.): recursion and divide and conquer (recursion trees), backtracking, dynamic programming, greedy algorithms (exchange argument), graphs (BFS/DFS, strong components), MST, shortest paths, maximum flow and minimum cut, flow applications and NP-hardness (reductions). Cites PDF pages, separates [from source] from [inference], [extrapolation] and [DATED], and says when the book does NOT cover the subject. Do not use for implementing data structures or specific programming languages."
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---

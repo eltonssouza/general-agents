@@ -1,7 +1,7 @@
 ---
 name: hash-probe-analyzer
 description: Simulates the LinearHashTable of the book Open Data Structures (entries data, nil and del; invariant length(t) >= 2q; resize by the book's rules) and demonstrates why deleting by writing nil instead of del produces a false negative.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # hash-probe-analyzer

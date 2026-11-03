@@ -1,7 +1,7 @@
 ---
 name: erickson-topic-lookup
 description: Deterministic lookup of topics, algorithms and theorems of the book "Algorithms" (Jeff Erickson, 2019, 472 p.) with PDF pages (printed = PDF − 18). Answers "NOT COVERED" when the book does not treat the subject (Master Theorem, minimax, alpha-beta, König, KMP, etc.). Use before citing a page.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # Erickson Topic Lookup

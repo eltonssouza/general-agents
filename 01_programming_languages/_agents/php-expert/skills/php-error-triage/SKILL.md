@@ -1,6 +1,6 @@
 ---
 name: php-error-triage
-description: Triage of PHP error messages and stack traces (Fatal error, Warning, Notice, Uncaught ...): extracts type, message, origin and frames and attaches short guidance with a declared origin (book with page, inference or extrapolation). Read-only, no network.
+description: "Triage of PHP error messages and stack traces (Fatal error, Warning, Notice, Uncaught ...): extracts type, message, origin and frames and attaches short guidance with a declared origin (book with page, inference or extrapolation). Read-only, no network."
 ---
 
 # php-error-triage

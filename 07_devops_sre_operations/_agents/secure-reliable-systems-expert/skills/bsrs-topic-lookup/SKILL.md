@@ -1,6 +1,6 @@
 ---
 name: bsrs-topic-lookup
-description: Deterministic topic lookup in the book Building Secure and Reliable Systems (BSRS, Google, 2020) with PDF pages, PDF/printed conversion, chapter map and terms verified ABSENT from the book (NOT COVERED). Use before citing a page on least privilege, zero trust, secure CI/CD, incident response or postmortems, and when the user asks "does the book cover SBOM/SLSA/STRIDE?" or "what is the printed page of p.465?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic topic lookup in the book Building Secure and Reliable Systems (BSRS, Google, 2020) with PDF pages, PDF/printed conversion, chapter map and terms verified ABSENT from the book (NOT COVERED). Use before citing a page on least privilege, zero trust, secure CI/CD, incident response or postmortems, and when the user asks \"does the book cover SBOM/SLSA/STRIDE?\" or \"what is the printed page of p.465?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

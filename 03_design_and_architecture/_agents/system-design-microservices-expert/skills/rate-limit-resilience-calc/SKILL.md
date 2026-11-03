@@ -1,6 +1,6 @@
 ---
 name: rate-limit-resilience-calc
-description: Simulates a token bucket, exponential backoff (with optional jitter), and a circuit breaker using example parameters from the books, labeling what comes from the corpus and what is extrapolation. Use when the user asks "simulate a 100-token token bucket", "calculate the retry delays with backoff", "how does the circuit breaker react to this sequence of failures?". Do not use to set production limits: the numbers are examples.
+description: "Simulates a token bucket, exponential backoff (with optional jitter), and a circuit breaker using example parameters from the books, labeling what comes from the corpus and what is extrapolation. Use when the user asks \"simulate a 100-token token bucket\", \"calculate the retry delays with backoff\", \"how does the circuit breaker react to this sequence of failures?\". Do not use to set production limits: the numbers are examples."
 ---
 
 # Rate limit and resilience simulators

@@ -1,6 +1,6 @@
 ---
 name: audit-report-totals
-description: Use when assembling the audit report ("how many confirmed vulnerabilities?", "coverage matrix", gate G4): computes by script the totals by severity, priority and domain counting only CONFIRMED, lists POTENTIAL, REQUIRES_VALIDATION and DISCARDED in separate tables, measures coverage with denominators and blocks if there is a CONFIRMED without independent review. Do not use to validate findings (audit-evidence-validator).
+description: "Use when assembling the audit report (\"how many confirmed vulnerabilities?\", \"coverage matrix\", gate G4): computes by script the totals by severity, priority and domain counting only CONFIRMED, lists POTENTIAL, REQUIRES_VALIDATION and DISCARDED in separate tables, measures coverage with denominators and blocks if there is a CONFIRMED without independent review. Do not use to validate findings (audit-evidence-validator)."
 ---
 
 # Report totals and matrices (gate G4)

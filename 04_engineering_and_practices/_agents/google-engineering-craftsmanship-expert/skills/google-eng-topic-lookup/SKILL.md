@@ -1,6 +1,6 @@
 ---
 name: google-eng-topic-lookup
-description: Locates in the package sources (SWE-G, SWE-PREV, CC2, 97TH) the PDF pages where an engineering topic is covered and confirms when the sources do NOT contain it. Use before citing a page on Hyrum's Law, code review, testing, deprecation, LSCs, monorepo, static analysis, information hiding or the 97 Things essays, and when the user asks "does the book talk about X?" (70/20/10, Goodhart, CitC, SOLID, etc.). Do not use to answer the question itself: use the result to cite.
+description: "Locates in the package sources (SWE-G, SWE-PREV, CC2, 97TH) the PDF pages where an engineering topic is covered and confirms when the sources do NOT contain it. Use before citing a page on Hyrum's Law, code review, testing, deprecation, LSCs, monorepo, static analysis, information hiding or the 97 Things essays, and when the user asks \"does the book talk about X?\" (70/20/10, Goodhart, CitC, SOLID, etc.). Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

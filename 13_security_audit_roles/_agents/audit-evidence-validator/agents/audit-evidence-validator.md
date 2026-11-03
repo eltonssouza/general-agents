@@ -1,6 +1,6 @@
 ---
 name: audit-evidence-validator
-description: Independent evidence validator of the audit pipeline (Universal Audit Multiagent v3.0): the gate between the auditors' candidates and the report. Reopens each piece of evidence in the snapshot (path, lines, revision, hash) with audit_contracts.py, redoes the origin-validation-privilege-destination flow, deduplicates by root cause and decides CONFIRMED, POTENTIAL, REQUIRES_VALIDATION or DISCARDED, writing validated-findings.json and validation-log.md. Use after the auditors, always in a context separate from whoever found the candidate. Do not use to discover new findings or to write the report.
+description: "Independent evidence validator of the audit pipeline (Universal Audit Multiagent v3.0): the gate between the auditors' candidates and the report. Reopens each piece of evidence in the snapshot (path, lines, revision, hash) with audit_contracts.py, redoes the origin-validation-privilege-destination flow, deduplicates by root cause and decides CONFIRMED, POTENTIAL, REQUIRES_VALIDATION or DISCARDED, writing validated-findings.json and validation-log.md. Use after the auditors, always in a context separate from whoever found the candidate. Do not use to discover new findings or to write the report."
 tools: Read, Grep, Glob, Bash, Write
 model: opus
 ---

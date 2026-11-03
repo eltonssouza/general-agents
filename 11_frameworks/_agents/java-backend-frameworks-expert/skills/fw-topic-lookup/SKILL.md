@@ -1,6 +1,6 @@
 ---
 name: fw-topic-lookup
-description: Locates the PDF pages where a topic is addressed in the package's three sources (Mastering Spring Boot 3.0, Quarkus Serverless Refcard and MapStruct 1.6.3 Reference Guide), and lists the topics that are NOT COVERED. Use before citing a page about Spring Boot, JPA, security, tests, Quarkus serverless or MapStruct, and when the user asks "does the source talk about Resilience4j/Flyway/custom starter?". Do not use to answer the question itself: use the result to cite.
+description: "Locates the PDF pages where a topic is addressed in the package's three sources (Mastering Spring Boot 3.0, Quarkus Serverless Refcard and MapStruct 1.6.3 Reference Guide), and lists the topics that are NOT COVERED. Use before citing a page about Spring Boot, JPA, security, tests, Quarkus serverless or MapStruct, and when the user asks \"does the source talk about Resilience4j/Flyway/custom starter?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

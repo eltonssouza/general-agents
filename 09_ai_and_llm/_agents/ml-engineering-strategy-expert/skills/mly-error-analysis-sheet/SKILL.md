@@ -1,6 +1,6 @@
 ---
 name: mly-error-analysis-sheet
-description: Builds and analyzes the Machine Learning Yearning error analysis sheet: CSV template of categories, counts and improvement ceiling per category, mislabeled-data decomposition and error attribution by parts in a pipeline. Use when the user asks "build the error sheet with these categories", "which category has the highest ceiling?" or "which pipeline component holds the error?". Do not use as a rigid priority formula.
+description: "Builds and analyzes the Machine Learning Yearning error analysis sheet: CSV template of categories, counts and improvement ceiling per category, mislabeled-data decomposition and error attribution by parts in a pipeline. Use when the user asks \"build the error sheet with these categories\", \"which category has the highest ceiling?\" or \"which pipeline component holds the error?\". Do not use as a rigid priority formula."
 ---
 
 # Error analysis sheet

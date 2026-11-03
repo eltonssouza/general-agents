@@ -1,6 +1,6 @@
 ---
 name: nx-topic-lookup
-description: Locates topics and pages in the six sources of the collection (NX13-NX16 release posts and the 2019/2020 NXHB/RCTHB handbooks), lists conflicts between handbooks and releases and the NOT COVERED topics. Use before citing a page and when the user asks "where does Next 15 talk about caching?", "is the 2019 handbook still valid?" or "does the collection cover i18n or authentication?". Do not use to answer the question itself: use the result to cite.
+description: "Locates topics and pages in the six sources of the collection (NX13-NX16 release posts and the 2019/2020 NXHB/RCTHB handbooks), lists conflicts between handbooks and releases and the NOT COVERED topics. Use before citing a page and when the user asks \"where does Next 15 talk about caching?\", \"is the 2019 handbook still valid?\" or \"does the collection cover i18n or authentication?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

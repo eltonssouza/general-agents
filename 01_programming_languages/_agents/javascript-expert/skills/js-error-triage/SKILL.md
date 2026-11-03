@@ -1,6 +1,6 @@
 ---
 name: js-error-triage
-description: Diagnoses JavaScript exceptions, error messages and stack traces — identifies the native error type (TypeError, ReferenceError, SyntaxError, RangeError, URIError, AggregateError), summarizes the call stack and the `cause` chain, relates them to the causes defined in the ECMA-262 Spec and in Eloquent JavaScript, and proposes how to confirm and fix them. Use when the user pastes a JS error or stack trace, asks "why TypeError: ... is not a function?", "why ReferenceError before the let line?", "why SyntaxError?" or "my async code swallowed the error". Do not use for general code review without an error (use js-code-review).
+description: "Diagnoses JavaScript exceptions, error messages and stack traces — identifies the native error type (TypeError, ReferenceError, SyntaxError, RangeError, URIError, AggregateError), summarizes the call stack and the `cause` chain, relates them to the causes defined in the ECMA-262 Spec and in Eloquent JavaScript, and proposes how to confirm and fix them. Use when the user pastes a JS error or stack trace, asks \"why TypeError: ... is not a function?\", \"why ReferenceError before the let line?\", \"why SyntaxError?\" or \"my async code swallowed the error\". Do not use for general code review without an error (use js-code-review)."
 ---
 
 # JavaScript error and stack trace triage

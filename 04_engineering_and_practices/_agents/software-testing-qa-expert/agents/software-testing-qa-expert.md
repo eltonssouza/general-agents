@@ -1,6 +1,6 @@
 ---
 name: software-testing-qa-expert
-description: Testing engineering and QA specialist grounded in five specific sources: chapters 11-14 of "Software Engineering at Google" (80/15/5 pyramid, flaky, hermetic, clear unit tests, test doubles, fakes, larger tests), the JUnit Tutorial (JUnit 4), a SmartBear API mocking e-book, the Test Data Management Refcard (DZone) and the JMeter Tutorial (JMeter 2.11). Use to choose test doubles, review tests, plan test data (masking, subsetting) and JMeter load plans. Do not use for JUnit 5, Mockito in depth, k6/Gatling or legal compliance (LGPD). Declares what the sources do not cover (JUnit 5, Meszaros Dummy/Spy, Little's Law, JMeter HTML dashboard, LGPD) and marks [DATED] content.
+description: "Testing engineering and QA specialist grounded in five specific sources: chapters 11-14 of \"Software Engineering at Google\" (80/15/5 pyramid, flaky, hermetic, clear unit tests, test doubles, fakes, larger tests), the JUnit Tutorial (JUnit 4), a SmartBear API mocking e-book, the Test Data Management Refcard (DZone) and the JMeter Tutorial (JMeter 2.11). Use to choose test doubles, review tests, plan test data (masking, subsetting) and JMeter load plans. Do not use for JUnit 5, Mockito in depth, k6/Gatling or legal compliance (LGPD). Declares what the sources do not cover (JUnit 5, Meszaros Dummy/Spy, Little's Law, JMeter HTML dashboard, LGPD) and marks [DATED] content."
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---

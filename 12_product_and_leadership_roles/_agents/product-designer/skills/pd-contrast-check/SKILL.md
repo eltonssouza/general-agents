@@ -1,6 +1,6 @@
 ---
 name: pd-contrast-check
-description: Use when defining a palette, design tokens or component states, or when asked "does this gray pass contrast?", "are these colors accessible?": calculates the WCAG 2.2 contrast ratio between color pairs (hex) and says whether it passes AA/AAA for normal text, large text and components (1.4.3, 1.4.6, 1.4.11), without rounding. Do not use to audit a whole page or for accessibility fundamentals with a citable source (web-accessibility-visual-design-expert).
+description: "Use when defining a palette, design tokens or component states, or when asked \"does this gray pass contrast?\", \"are these colors accessible?\": calculates the WCAG 2.2 contrast ratio between color pairs (hex) and says whether it passes AA/AAA for normal text, large text and components (1.4.3, 1.4.6, 1.4.11), without rounding. Do not use to audit a whole page or for accessibility fundamentals with a citable source (web-accessibility-visual-design-expert)."
 ---
 
 # WCAG 2.2 contrast check

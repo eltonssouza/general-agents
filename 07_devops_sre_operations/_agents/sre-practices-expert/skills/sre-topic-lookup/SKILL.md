@@ -1,6 +1,6 @@
 ---
 name: sre-topic-lookup
-description: Three-level lookup (COVERED, POINTER ONLY, NOT COVERED) of which pages of the Google SRE book PDF address a topic. Use before citing a page on SLO, error budget, toil, on-call, postmortem, cascading failures or consensus, and when the user asks "does the book talk about burn rate/circuit breaker/DORA?". Do not use to answer the question itself: use the result to cite. It does not prove absence when it says it found nothing in the index.
+description: "Three-level lookup (COVERED, POINTER ONLY, NOT COVERED) of which pages of the Google SRE book PDF address a topic. Use before citing a page on SLO, error budget, toil, on-call, postmortem, cascading failures or consensus, and when the user asks \"does the book talk about burn rate/circuit breaker/DORA?\". Do not use to answer the question itself: use the result to cite. It does not prove absence when it says it found nothing in the index."
 ---
 
 # Topic lookup with pages, in three levels

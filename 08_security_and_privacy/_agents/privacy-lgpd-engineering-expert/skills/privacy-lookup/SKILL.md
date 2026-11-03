@@ -1,6 +1,6 @@
 ---
 name: privacy-lookup
-description: Looks up the LGPD (Lei Geral de Proteção de Dados, Lei 13.709/2018, compiled text) and NIST IR 8062 by article or topic, with PDF pages, the law's amendment notes and the list of terms verified as absent (NOT COVERED). Use when the user asks "what does Art. 18 say?", "where does the LGPD address legitimate interest?", "does the collection cover the GDPR/ISO 27701?" or before citing an article and page. Do not use for legal advice: refer to a lawyer and the encarregado (DPO).
+description: "Looks up the LGPD (Lei Geral de Proteção de Dados, Lei 13.709/2018, compiled text) and NIST IR 8062 by article or topic, with PDF pages, the law's amendment notes and the list of terms verified as absent (NOT COVERED). Use when the user asks \"what does Art. 18 say?\", \"where does the LGPD address legitimate interest?\", \"does the collection cover the GDPR/ISO 27701?\" or before citing an article and page. Do not use for legal advice: refer to a lawyer and the encarregado (DPO)."
 ---
 
 # Article and topic lookup (LGPD and NIST IR 8062)

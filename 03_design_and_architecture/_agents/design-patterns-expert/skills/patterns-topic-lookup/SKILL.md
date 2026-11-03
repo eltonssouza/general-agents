@@ -1,6 +1,6 @@
 ---
 name: patterns-topic-lookup
-description: Finds, across the package's four sources (Refactoring.Guru, Game Programming Patterns, Clean Code sample, PoEAA sample), the PDF pages where a topic is covered, and warns when the topic is outside the sources or in a missing chapter. Use before citing a page and when the user asks "do the sources talk about Observer?", "where is Game Loop?", "does the package cover Subclass Sandbox or Service Layer?". Do not use to answer the question itself: use the result to cite.
+description: "Finds, across the package's four sources (Refactoring.Guru, Game Programming Patterns, Clean Code sample, PoEAA sample), the PDF pages where a topic is covered, and warns when the topic is outside the sources or in a missing chapter. Use before citing a page and when the user asks \"do the sources talk about Observer?\", \"where is Game Loop?\", \"does the package cover Subclass Sandbox or Service Layer?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

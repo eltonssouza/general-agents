@@ -1,6 +1,6 @@
 ---
 name: audit-contract-gate
-description: Use when receiving an auditor's result or the audit manifest ("validate this agent-result", "is the result in the contract?", gate G2): validates the JSON against the Universal Audit Multiagent contracts (finding, agent-result, audit-run) and checks the invariants the schema does not cover - cited lines exist in the snapshot, line_end >= line_start, revision equal to the run's, CONFIRMED with independent review, no clear-text secret in the excerpt. Do not use to decide a finding's verdict (audit-evidence-validator).
+description: "Use when receiving an auditor's result or the audit manifest (\"validate this agent-result\", \"is the result in the contract?\", gate G2): validates the JSON against the Universal Audit Multiagent contracts (finding, agent-result, audit-run) and checks the invariants the schema does not cover - cited lines exist in the snapshot, line_end >= line_start, revision equal to the run's, CONFIRMED with independent review, no clear-text secret in the excerpt. Do not use to decide a finding's verdict (audit-evidence-validator)."
 ---
 
 # Gate G2: contracts and invariants

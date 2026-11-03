@@ -1,6 +1,6 @@
 ---
 name: nosql-topic-lookup
-description: Locates in the NoSQL collection (STRAUCH, REDIS, MONGO-PAT, NEO4J-GDB, COUCH, MONGO-MAN, CASS, ELAST) which sources and PDF pages cover a topic, and confirms when the collection does NOT cover it (NOT COVERED or NOT IN THE SOURCE). Use before citing a page and when the user asks "do the sources talk about quorum?", "where is consistent hashing?", "does the book mention PACELC or oplog?". Do not use to answer the question itself: use the result to cite.
+description: "Locates in the NoSQL collection (STRAUCH, REDIS, MONGO-PAT, NEO4J-GDB, COUCH, MONGO-MAN, CASS, ELAST) which sources and PDF pages cover a topic, and confirms when the collection does NOT cover it (NOT COVERED or NOT IN THE SOURCE). Use before citing a page and when the user asks \"do the sources talk about quorum?\", \"where is consistent hashing?\", \"does the book mention PACELC or oplog?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with sources and pages

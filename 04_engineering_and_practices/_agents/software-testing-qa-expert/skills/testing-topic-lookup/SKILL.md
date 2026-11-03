@@ -1,6 +1,6 @@
 ---
 name: testing-topic-lookup
-description: Deterministic lookup of the topics covered by the testing sources (SWE-G ch. 11-14, JUNIT, MOCK, TDM, JMETER), returning rules with the PDF page and what the sources do NOT say (NOT COVERED). Use before citing a page on the test pyramid, flaky tests, test doubles, JUnit, API mocking, TDM or JMeter, and when the user asks "do the sources talk about X?" (JUnit 5, Little's Law, LGPD, 70/20/10, etc.). Do not use to answer the question itself: use the result to cite.
+description: "Deterministic lookup of the topics covered by the testing sources (SWE-G ch. 11-14, JUNIT, MOCK, TDM, JMETER), returning rules with the PDF page and what the sources do NOT say (NOT COVERED). Use before citing a page on the test pyramid, flaky tests, test doubles, JUnit, API mocking, TDM or JMeter, and when the user asks \"do the sources talk about X?\" (JUnit 5, Little's Law, LGPD, 70/20/10, etc.). Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

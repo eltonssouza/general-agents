@@ -1,6 +1,6 @@
 ---
 name: audit-infrastructure
-description: Infrastructure and DevSecOps auditor of the audit pipeline (Universal Audit Multiagent v3.0): cloud (AWS/Azure/GCP), IAM and least privilege, Docker and Kubernetes, Terraform/Pulumi/CloudFormation, CI/CD and runners, TLS, logging, backups and network exposure, based only on what is declared in the repository. Use when the audit-orchestrator dispatches the infrastructure task or when an IaC and pipeline audit is requested in the agent-result contract. It does not run apply, deploy or active scans. Do not use to operate or design the platform (containers-docker-kubernetes-expert, sre-practices-expert).
+description: "Infrastructure and DevSecOps auditor of the audit pipeline (Universal Audit Multiagent v3.0): cloud (AWS/Azure/GCP), IAM and least privilege, Docker and Kubernetes, Terraform/Pulumi/CloudFormation, CI/CD and runners, TLS, logging, backups and network exposure, based only on what is declared in the repository. Use when the audit-orchestrator dispatches the infrastructure task or when an IaC and pipeline audit is requested in the agent-result contract. It does not run apply, deploy or active scans. Do not use to operate or design the platform (containers-docker-kubernetes-expert, sre-practices-expert)."
 tools: Read, Grep, Glob
 model: sonnet
 ---

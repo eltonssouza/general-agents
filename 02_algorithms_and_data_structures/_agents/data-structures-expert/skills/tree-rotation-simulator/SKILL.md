@@ -1,7 +1,7 @@
 ---
 name: tree-rotation-simulator
 description: Simulates rotate_left and rotate_right from Open Data Structures (Morin) on a sample BST and checks the in-order sequence, the parent/child pointers and the depth change (w moves up 1, u moves down 1).
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # tree-rotation-simulator

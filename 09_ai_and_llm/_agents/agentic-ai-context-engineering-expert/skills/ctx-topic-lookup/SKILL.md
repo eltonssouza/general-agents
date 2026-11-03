@@ -1,6 +1,6 @@
 ---
 name: ctx-topic-lookup
-description: Locates, in the two texts of the collection (BAAS, Building Agentic AI Systems, and CE2, Context Engineering 2.0), on which PDF pages an agent or context engineering topic is covered, converts a printed page to a PDF page, and lists the gaps (NOT COVERED) and the [DATED] items. Use before citing a page about memory, tools, multi-agent, guardrails, KV cache, or context, and when the user asks "does the book talk about MCP?", "where does it cover long-term memory?". Do not use to answer the question itself: use the result to cite.
+description: "Locates, in the two texts of the collection (BAAS, Building Agentic AI Systems, and CE2, Context Engineering 2.0), on which PDF pages an agent or context engineering topic is covered, converts a printed page to a PDF page, and lists the gaps (NOT COVERED) and the [DATED] items. Use before citing a page about memory, tools, multi-agent, guardrails, KV cache, or context, and when the user asks \"does the book talk about MCP?\", \"where does it cover long-term memory?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages (BAAS and CE2)

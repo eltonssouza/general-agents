@@ -1,6 +1,6 @@
 ---
 name: docker-topic-lookup
-description: Finds, in the Docker Handbook (2021) and the Kubernetes Basics index page, which PDF pages cover a topic, what the sources do NOT say and what is dated. Use before citing a page about Dockerfile, volumes, networks, Compose, multi-stage, .dockerignore or commands, and when the user asks "does the book cover HEALTHCHECK/depends_on/Pods/Helm?". Do not use to answer the question itself: use the result to cite.
+description: "Finds, in the Docker Handbook (2021) and the Kubernetes Basics index page, which PDF pages cover a topic, what the sources do NOT say and what is dated. Use before citing a page about Dockerfile, volumes, networks, Compose, multi-stage, .dockerignore or commands, and when the user asks \"does the book cover HEALTHCHECK/depends_on/Pods/Helm?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages
