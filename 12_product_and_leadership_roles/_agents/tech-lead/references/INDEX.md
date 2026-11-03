@@ -1,7 +1,7 @@
 # INDEX: tech-lead
 
 ## Nature
-**Role** agent (collection folder 12): delivers the technical execution plan of a milestone. It has no bibliographic source in the collection; the guidelines are practices labeled `[practice]`. Origin: `relay-harness/packages/coding-agent/resources/agents/tech-lead.md` (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
+**Role** agent (collection folder 12): delivers the technical execution plan of a milestone. It has no bibliographic source in the collection; the guidelines are practices labeled `[practice]`. Origin: the harness's `tech-lead` role agent (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
 
 ## Files
 | File | Use |

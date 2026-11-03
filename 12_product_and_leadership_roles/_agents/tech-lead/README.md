@@ -2,7 +2,7 @@
 
 **Role** agent of the `general-agents` collection (folder `12_product_and_leadership_roles`). It plans the technical execution of a milestone: testable vertical slices in risk order, quality and review standards, a technical debt register with an ADR and a remediation trigger, assumptions and blockers.
 
-**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: `relay-harness/packages/coding-agent/resources/agents/tech-lead.md` (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
+**Nature and source.** Unlike the specialists in folders 01-11, this agent **has no bibliographic source**: the guidelines are established practices, labeled `[practice]`, and it does not cite pages. When a topic has a citable foundation in the collection, it hands off to the specialist (`[from collection: <agent>]`); see `references/INDEX.md`. Origin: the harness's `tech-lead` role agent (MIT, Elton Souza), translated and adapted to the collection's standard on 2026-11-01.
 
 ## 1. When to use
 Example requests: "Build the technical execution plan for the payments milestone"; "Break this epic into technical slices and give the order that reduces risk"; "Record this technical debt with an ADR and a remediation trigger".
