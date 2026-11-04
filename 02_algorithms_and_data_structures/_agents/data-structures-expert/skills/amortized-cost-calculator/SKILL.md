@@ -1,7 +1,7 @@
 ---
 name: amortized-cost-calculator
 description: Calculates and simulates the resize cost of the ArrayStack (the book's rule, the Lemma 2.1 bound), the space of the RootishArrayStack (block/position of an index, waste bounds) and the space of the SEList, following Open Data Structures (Morin). Additive growth is only a demonstration [extrapolation].
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # amortized-cost-calculator

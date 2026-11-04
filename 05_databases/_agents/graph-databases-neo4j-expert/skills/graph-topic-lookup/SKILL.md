@@ -1,6 +1,6 @@
 ---
 name: graph-topic-lookup
-description: Locates in the collection of the book Graph Databases (Robinson, Webber, Eifrem, 2015) which PDF pages cover a topic and confirms whether the book does NOT cover it. Use before citing a page about Neo4j, Cypher, IFA, LPG, modeling, internals, transactions, HA or graph theory, and when the user asks "does the book talk about X?" (supernodes, Raft, EXPLAIN, GDS, APOC etc.). Do not use it to answer the question itself: use the result to cite.
+description: "Locates in the collection of the book Graph Databases (Robinson, Webber, Eifrem, 2015) which PDF pages cover a topic and confirms whether the book does NOT cover it. Use before citing a page about Neo4j, Cypher, IFA, LPG, modeling, internals, transactions, HA or graph theory, and when the user asks \"does the book talk about X?\" (supernodes, Raft, EXPLAIN, GDS, APOC etc.). Do not use it to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

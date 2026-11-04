@@ -1,6 +1,6 @@
 ---
 name: svelte-review-checklist
-description: Lists the review checklist for Svelte projects (SVHB) with SvelteKit (SKGS) and Astro (ASTRO) notes, each item with a citation, and statically scans a project folder (package.json, .svelte/.astro files, SvelteKit conventions, Vite template structure, lint summary). Use when the user asks "review my Svelte project structure", "give me a review checklist" or points to a folder to scan. Do not use to interpret versions, SvelteKit routing or .astro files: the source does not cover them.
+description: "Lists the review checklist for Svelte projects (SVHB) with SvelteKit (SKGS) and Astro (ASTRO) notes, each item with a citation, and statically scans a project folder (package.json, .svelte/.astro files, SvelteKit conventions, Vite template structure, lint summary). Use when the user asks \"review my Svelte project structure\", \"give me a review checklist\" or points to a folder to scan. Do not use to interpret versions, SvelteKit routing or .astro files: the source does not cover them."
 ---
 
 # Review checklist and project scan

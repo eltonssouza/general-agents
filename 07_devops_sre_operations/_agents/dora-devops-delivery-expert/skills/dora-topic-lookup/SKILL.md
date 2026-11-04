@@ -1,6 +1,6 @@
 ---
 name: dora-topic-lookup
-description: Finds topics of the Accelerate State of DevOps 2024 report (DORA24) and the pages where they appear, or reports NOT COVERED when the report does not address the subject. Use before citing a page and when the user asks "does DORA 2024 talk about platform engineering?", "on what page is rework rate?", "does the report cover trunk-based or MTTR?". Do not use to answer the question itself: use the result to cite.
+description: "Finds topics of the Accelerate State of DevOps 2024 report (DORA24) and the pages where they appear, or reports NOT COVERED when the report does not address the subject. Use before citing a page and when the user asks \"does DORA 2024 talk about platform engineering?\", \"on what page is rework rate?\", \"does the report cover trunk-based or MTTR?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

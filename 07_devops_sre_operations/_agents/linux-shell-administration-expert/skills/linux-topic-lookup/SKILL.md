@@ -1,6 +1,6 @@
 ---
 name: linux-topic-lookup
-description: Deterministic lookup in the index of the book Introduction to Linux (Garrels, TLDP 1.27, 2008): topics, commands (pages where they appear), the content of a PDF page and the list of what the book does NOT cover. Use when the user asks "does the book talk about tar/cron/umask?", "what is on page 70?" or before citing a page about Bash, permissions, processes, backup, SSH. Do not use to answer the content itself or for OS internals (forward to the os-internals agent).
+description: "Deterministic lookup in the index of the book Introduction to Linux (Garrels, TLDP 1.27, 2008): topics, commands (pages where they appear), the content of a PDF page and the list of what the book does NOT cover. Use when the user asks \"does the book talk about tar/cron/umask?\", \"what is on page 70?\" or before citing a page about Bash, permissions, processes, backup, SSH. Do not use to answer the content itself or for OS internals (forward to the os-internals agent)."
 ---
 
 # Topic and command lookup in the book

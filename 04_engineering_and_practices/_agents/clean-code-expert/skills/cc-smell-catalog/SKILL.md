@@ -1,6 +1,6 @@
 ---
 name: cc-smell-catalog
-description: Catalog of the 66 heuristics of chapter 17 of "Código Limpo" (Clean Code; "Odores e Heurísticas", Smells and Heuristics: C1-C5 comments, E1-E2 environment, F1-F4 functions, G1-G36 general, J1-J3 Java, N1-N7 names, T1-T9 tests), with the title (English, plus the Brazilian edition's printed Portuguese title) and the PDF page. Use when the user cites a code ("what is G5?", "does this violate F3?"), asks for the heuristic for a problem ("which heuristic covers duplication/magic numbers/transitive navigation?") or when a review needs to name the smell. Do not use for rules that exist only in chapters 1-16 without a code: use cc-topic-lookup.
+description: "Catalog of the 66 heuristics of chapter 17 of \"Código Limpo\" (Clean Code; \"Odores e Heurísticas\", Smells and Heuristics: C1-C5 comments, E1-E2 environment, F1-F4 functions, G1-G36 general, J1-J3 Java, N1-N7 names, T1-T9 tests), with the title (English, plus the Brazilian edition's printed Portuguese title) and the PDF page. Use when the user cites a code (\"what is G5?\", \"does this violate F3?\"), asks for the heuristic for a problem (\"which heuristic covers duplication/magic numbers/transitive navigation?\") or when a review needs to name the smell. Do not use for rules that exist only in chapters 1-16 without a code: use cc-topic-lookup."
 ---
 
 # Catalog of smells and heuristics (ch. 17)

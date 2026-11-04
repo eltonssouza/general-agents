@@ -1,6 +1,6 @@
 ---
 name: sysdesign-topic-lookup
-description: Deterministic topic lookup in the curated index of the system design and microservices corpus (11 PDFs), returning PDF pages or NOT COVERED when the corpus does not address the subject. Use before citing a page and when the user asks "does the corpus talk about circuit breaker?", "where are Saga/Outbox/CQRS covered?" or "does the book cover Little's Law / Half-Open?". Do not use to answer the architecture question itself: use the result to cite.
+description: "Deterministic topic lookup in the curated index of the system design and microservices corpus (11 PDFs), returning PDF pages or NOT COVERED when the corpus does not address the subject. Use before citing a page and when the user asks \"does the corpus talk about circuit breaker?\", \"where are Saga/Outbox/CQRS covered?\" or \"does the book cover Little's Law / Half-Open?\". Do not use to answer the architecture question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

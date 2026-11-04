@@ -1,6 +1,6 @@
 ---
 name: llm-topic-lookup
-description: Deterministic topic lookup in the LLMS (A Survey of Large Language Models, 2026) and the PES (A Systematic Survey of Prompt Engineering, 2025) with PDF pages, gaps (NOT COVERED) and [DATED] items. Use before citing a page and when the user asks "does the survey talk about RLHF?", "which page is LoRA on?", "does the PES cover prompt injection or MCP?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic topic lookup in the LLMS (A Survey of Large Language Models, 2026) and the PES (A Systematic Survey of Prompt Engineering, 2025) with PDF pages, gaps (NOT COVERED) and [DATED] items. Use before citing a page and when the user asks \"does the survey talk about RLHF?\", \"which page is LoRA on?\", \"does the PES cover prompt injection or MCP?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

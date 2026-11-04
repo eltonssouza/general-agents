@@ -1,6 +1,6 @@
 ---
 name: function-auditor
-description: Heuristic linter for function signatures (number of arguments, boolean argument, name with And/Or, command that returns a value, body length and indentation) and a review checklist from Clean Code Ch. 1. Use when the user pastes a signature and asks "review this function", "is this flag argument a problem?" or "give me a clean code checklist". Do not use to claim that a numeric limit comes from the book: Chs. 2-3 are not in the sample.
+description: "Heuristic linter for function signatures (number of arguments, boolean argument, name with And/Or, command that returns a value, body length and indentation) and a review checklist from Clean Code Ch. 1. Use when the user pastes a signature and asks \"review this function\", \"is this flag argument a problem?\" or \"give me a clean code checklist\". Do not use to claim that a numeric limit comes from the book: Chs. 2-3 are not in the sample."
 ---
 
 # Heuristic function audit

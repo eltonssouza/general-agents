@@ -1,6 +1,6 @@
 ---
 name: nbf-compare
-description: Compares Express, Fastify and NestJS only by criteria that the collection's sources actually provide, with a citation and NOT COVERED per cell. Use when the user asks "compare Express and Fastify", "how does each one install/create the project?" or "which one should I pick?". Do not use to recommend a framework: the sources provide neither benchmarks nor a decision rule.
+description: "Compares Express, Fastify and NestJS only by criteria that the collection's sources actually provide, with a citation and NOT COVERED per cell. Use when the user asks \"compare Express and Fastify\", \"how does each one install/create the project?\" or \"which one should I pick?\". Do not use to recommend a framework: the sources provide neither benchmarks nor a decision rule."
 ---
 
 # Express x Fastify x Nest comparer

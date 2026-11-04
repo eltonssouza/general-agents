@@ -1,6 +1,6 @@
 ---
 name: slr-method-guide
-description: Statistical learning method-selection guide that filters 52 rules from the ISLR and ESL (each with PDF pages) by the facts given - goal, response type, n and p, linearity, interpretability, imbalance, noise. Use when the user asks "which method should I use with p greater than n?", "ridge or lasso for my data?", "which model for imbalanced classes?". Do not use as an oracle: no rule is a theorem, validate by cross-validation.
+description: "Statistical learning method-selection guide that filters 52 rules from the ISLR and ESL (each with PDF pages) by the facts given - goal, response type, n and p, linearity, interpretability, imbalance, noise. Use when the user asks \"which method should I use with p greater than n?\", \"ridge or lasso for my data?\", \"which model for imbalanced classes?\". Do not use as an oracle: no rule is a theorem, validate by cross-validation."
 ---
 
 # Method-selection guide

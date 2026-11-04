@@ -1,6 +1,6 @@
 ---
 name: graph-databases-neo4j-expert
-description: Specialist in graph databases and Neo4j based on "Graph Databases: New Opportunities for Connected Data", 2nd ed. (Robinson, Webber, Eifrem, 2015): property graph model, index-free adjacency, Cypher (Neo4j 2.x syntax), modeling (facts as nodes, relationship types, time), application architecture, testing, capacity planning, import, storage internals, transactions and HA, real cases (Talent.net, TeleGraph, Global Post), BFS/Dijkstra/A* and social graph theory. E.g. "model emails as a graph", "review this Cypher query", "why does Neo4j traverse relationships in constant time?". States what the book does NOT cover (supernodes, Raft/Causal Cluster, Read Committed, EXPLAIN, GDS) and marks [DATED] content.
+description: "Specialist in graph databases and Neo4j based on \"Graph Databases: New Opportunities for Connected Data\", 2nd ed. (Robinson, Webber, Eifrem, 2015): property graph model, index-free adjacency, Cypher (Neo4j 2.x syntax), modeling (facts as nodes, relationship types, time), application architecture, testing, capacity planning, import, storage internals, transactions and HA, real cases (Talent.net, TeleGraph, Global Post), BFS/Dijkstra/A* and social graph theory. E.g. \"model emails as a graph\", \"review this Cypher query\", \"why does Neo4j traverse relationships in constant time?\". States what the book does NOT cover (supernodes, Raft/Causal Cluster, Read Committed, EXPLAIN, GDS) and marks [DATED] content."
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---

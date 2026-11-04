@@ -1,6 +1,6 @@
 ---
 name: postgres-index-advisor
-description: Suggests the PostgreSQL 16 index type (B-tree, Hash, GiST, GIN, BRIN) by data type, operators and access pattern, declaring the origin of each rule. Use when the user asks "which index should I use for jsonb?", "does BRIN fit my logs table?" or "Hash or B-tree for equality?". Do not use it to claim the suggested index is the best one: confirm with EXPLAIN ANALYZE.
+description: "Suggests the PostgreSQL 16 index type (B-tree, Hash, GiST, GIN, BRIN) by data type, operators and access pattern, declaring the origin of each rule. Use when the user asks \"which index should I use for jsonb?\", \"does BRIN fit my logs table?\" or \"Hash or B-tree for equality?\". Do not use it to claim the suggested index is the best one: confirm with EXPLAIN ANALYZE."
 ---
 
 # Choosing an index type in PostgreSQL 16

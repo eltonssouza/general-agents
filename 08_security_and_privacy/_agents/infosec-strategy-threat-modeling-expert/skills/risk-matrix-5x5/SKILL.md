@@ -1,6 +1,6 @@
 ---
 name: risk-matrix-5x5
-description: Example scales and 5x5 matrix from the DZ (Impact x Likelihood, score 1-25), with risk ranking from a CSV and configurable appetite. Use when the user asks "show the 5x5 risk matrix", "rank these risks", "which ones are above the risk appetite?" or "calculate the residual risk". Do not use as a mandatory standard: the scales and the appetite of 7 are didactic examples from the book, and the organization must adapt its own.
+description: "Example scales and 5x5 matrix from the DZ (Impact x Likelihood, score 1-25), with risk ranking from a CSV and configurable appetite. Use when the user asks \"show the 5x5 risk matrix\", \"rank these risks\", \"which ones are above the risk appetite?\" or \"calculate the residual risk\". Do not use as a mandatory standard: the scales and the appetite of 7 are didactic examples from the book, and the organization must adapt its own."
 ---
 
 # 5x5 risk matrix

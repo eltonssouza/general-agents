@@ -1,6 +1,6 @@
 ---
 name: nh-compare
-description: Side-by-side comparison of n8n and Hermes Agent restricted to what the two landing pages say, by dimension, with status and pages, without a verdict. Use when the user asks "compare n8n and Hermes", "which of the two is better?" or "do both support MCP?". Do not use to decide which is better or to integrate the two: the sources do not compare the products.
+description: "Side-by-side comparison of n8n and Hermes Agent restricted to what the two landing pages say, by dimension, with status and pages, without a verdict. Use when the user asks \"compare n8n and Hermes\", \"which of the two is better?\" or \"do both support MCP?\". Do not use to decide which is better or to integrate the two: the sources do not compare the products."
 ---
 
 # Side-by-side comparator (N8N x HERMES)

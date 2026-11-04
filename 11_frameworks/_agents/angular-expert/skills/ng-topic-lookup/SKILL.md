@@ -1,6 +1,6 @@
 ---
 name: ng-topic-lookup
-description: Locates on which pages and versions a concept appears in the five PDF captures of the "What is Angular?" page (NG18 to NG22 Overviews), or confirms NOT COVERED. Use before citing a page about signals, SSR, hydration, router, forms, i18n, ng update, security, @defer, NgOptimizedImage, and when the user asks "does the Angular 21 Overview talk about standalone?" or "in which versions does X appear?". Do not use to answer API or code questions: the collection is overview only.
+description: "Locates on which pages and versions a concept appears in the five PDF captures of the \"What is Angular?\" page (NG18 to NG22 Overviews), or confirms NOT COVERED. Use before citing a page about signals, SSR, hydration, router, forms, i18n, ng update, security, @defer, NgOptimizedImage, and when the user asks \"does the Angular 21 Overview talk about standalone?\" or \"in which versions does X appear?\". Do not use to answer API or code questions: the collection is overview only."
 ---
 
 # Concept lookup in the Angular Overviews

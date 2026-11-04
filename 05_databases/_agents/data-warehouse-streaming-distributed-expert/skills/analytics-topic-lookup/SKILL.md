@@ -1,6 +1,6 @@
 ---
 name: analytics-topic-lookup
-description: Finds in the collection (Kimball Dimensional Modeling Techniques and the stream processing survey) on which PDF pages a topic is covered and confirms whether the collection does NOT cover it. Use before citing a page about grain, dimensions, SCD, drill-across, watermarks, state, exactly-once or back-pressure, and when the user asks "does the collection talk about X?" (Data Vault, lakehouse, Saga, Flink/Kafka APIs); Portuguese keywords (grão, marca d'água, estado) also work. Do not use to answer the question itself: use the result to cite.
+description: "Finds in the collection (Kimball Dimensional Modeling Techniques and the stream processing survey) on which PDF pages a topic is covered and confirms whether the collection does NOT cover it. Use before citing a page about grain, dimensions, SCD, drill-across, watermarks, state, exactly-once or back-pressure, and when the user asks \"does the collection talk about X?\" (Data Vault, lakehouse, Saga, Flink/Kafka APIs); Portuguese keywords (grão, marca d'água, estado) also work. Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

@@ -1,6 +1,6 @@
 ---
 name: nx-changes-map
-description: Change map for Next.js 13 to 16 using only what the four release posts state: compares versions (changes --from/--to), shows the trajectory of a topic, requirements, an upgrade checklist and literal commands. Use when the user asks "what changed from Next 14 to 16?", "what are the breaking changes?", "build an upgrade checklist" or "which Node does Next 16 require?". Do not use for versions 12 or earlier, 17 or later, nor to fill gaps from memory.
+description: "Change map for Next.js 13 to 16 using only what the four release posts state: compares versions (changes --from/--to), shows the trajectory of a topic, requirements, an upgrade checklist and literal commands. Use when the user asks \"what changed from Next 14 to 16?\", \"what are the breaking changes?\", \"build an upgrade checklist\" or \"which Node does Next 16 require?\". Do not use for versions 12 or earlier, 17 or later, nor to fill gaps from memory."
 ---
 
 # Change map by version (Next.js 13-16)

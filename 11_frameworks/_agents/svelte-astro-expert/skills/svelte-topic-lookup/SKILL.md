@@ -1,6 +1,6 @@
 ---
 name: svelte-topic-lookup
-description: Deterministic topic lookup across the three sources of the collection (SVHB The Svelte Handbook 2019, SKGS SvelteKit introduction, ASTRO Astro Docs landing) with PDF pages and a NOT COVERED list. Use before citing a page about stores, props, slots, bindings, lifecycle or SvelteKit, and when the user asks "do the sources talk about runes?", "where does the handbook cover stores?" or "what does Astro say about islands?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic topic lookup across the three sources of the collection (SVHB The Svelte Handbook 2019, SKGS SvelteKit introduction, ASTRO Astro Docs landing) with PDF pages and a NOT COVERED list. Use before citing a page about stores, props, slots, bindings, lifecycle or SvelteKit, and when the user asks \"do the sources talk about runes?\", \"where does the handbook cover stores?\" or \"what does Astro say about islands?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages
