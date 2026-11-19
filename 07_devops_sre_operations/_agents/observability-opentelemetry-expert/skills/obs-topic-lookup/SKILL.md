@@ -1,6 +1,6 @@
 ---
 name: obs-topic-lookup
-description: Deterministic topic lookup in the two 2021 DZone Refcards (DOW observability and OTW OpenTelemetry), with pages and what the sources do NOT say. Use before citing a page and when the user asks "what does the Refcard say about the Collector/OTLP/Context API?" or "do the sources cover SLO, tail sampling, traceparent?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic topic lookup in the two 2021 DZone Refcards (DOW observability and OTW OpenTelemetry), with pages and what the sources do NOT say. Use before citing a page and when the user asks \"what does the Refcard say about the Collector/OTLP/Context API?\" or \"do the sources cover SLO, tail sampling, traceparent?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup in the DOW and OTW Refcards

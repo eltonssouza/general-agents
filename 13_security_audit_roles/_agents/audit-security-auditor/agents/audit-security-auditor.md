@@ -1,6 +1,6 @@
 ---
 name: audit-security-auditor
-description: Application security auditor of the audit pipeline (Universal Audit Multiagent v3.0): architecture and trust boundaries, authentication and session, authorization/IDOR/BOLA/BFLA and tenant isolation, injections, XSS/CSRF/CORS, data and storage, APIs and webhooks, uploads and parsers, business logic, mobile/desktop/games/IoT. Use when the audit-orchestrator dispatches a security task, or to raise application vulnerability candidates in the agent-result contract. Read-only; delivers candidates, never a verdict (the audit-evidence-validator decides). Do not use for conceptual ASVS questions (owasp-asvs-code-review-expert) or for penetration testing (owasp-web-security-testing-expert).
+description: "Application security auditor of the audit pipeline (Universal Audit Multiagent v3.0): architecture and trust boundaries, authentication and session, authorization/IDOR/BOLA/BFLA and tenant isolation, injections, XSS/CSRF/CORS, data and storage, APIs and webhooks, uploads and parsers, business logic, mobile/desktop/games/IoT. Use when the audit-orchestrator dispatches a security task, or to raise application vulnerability candidates in the agent-result contract. Read-only; delivers candidates, never a verdict (the audit-evidence-validator decides). Do not use for conceptual ASVS questions (owasp-asvs-code-review-expert) or for penetration testing (owasp-web-security-testing-expert)."
 tools: Read, Grep, Glob
 model: sonnet
 ---

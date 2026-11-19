@@ -1,6 +1,6 @@
 ---
 name: tree-hierarchy-evaluator
-description: Evaluates hierarchy models in SQL (Adjacency List, and as an extrapolation Path Enumeration, Nested Sets and Closure Table) according to the excerpt of the Naive Trees chapter of SQL Antipatterns. Use when the user asks "how do I model categories as a tree?", "Adjacency List or Closure Table?" or "how do I query a subtree with WITH RECURSIVE?". Do not use it to attribute the three alternative models to Karwin: they are not in the excerpt.
+description: "Evaluates hierarchy models in SQL (Adjacency List, and as an extrapolation Path Enumeration, Nested Sets and Closure Table) according to the excerpt of the Naive Trees chapter of SQL Antipatterns. Use when the user asks \"how do I model categories as a tree?\", \"Adjacency List or Closure Table?\" or \"how do I query a subtree with WITH RECURSIVE?\". Do not use it to attribute the three alternative models to Karwin: they are not in the excerpt."
 ---
 
 # Hierarchy models in SQL

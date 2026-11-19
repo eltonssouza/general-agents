@@ -1,6 +1,6 @@
 ---
 name: storage-calculator
-description: Calculates storage figures following OSTEP: disk I/O time, RAID 0/1/4/5 (capacity, reliability, throughput, latency), block mapping in RAID, XOR parity, FFS/LFS amortization, inode address, maximum file size and checksums (XOR, sum, Fletcher). Use when the user asks "how long does it take to read 4 KB on a 15000 RPM disk?", "rebuild the lost disk from parity", "what is the maximum file size with 12 direct pointers?". Do not use for real SSD benchmarks.
+description: "Calculates storage figures following OSTEP: disk I/O time, RAID 0/1/4/5 (capacity, reliability, throughput, latency), block mapping in RAID, XOR parity, FFS/LFS amortization, inode address, maximum file size and checksums (XOR, sum, Fletcher). Use when the user asks \"how long does it take to read 4 KB on a 15000 RPM disk?\", \"rebuild the lost disk from parity\", \"what is the maximum file size with 12 direct pointers?\". Do not use for real SSD benchmarks."
 ---
 
 # Storage calculator

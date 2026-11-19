@@ -1,6 +1,6 @@
 ---
 name: cc-topic-lookup
-description: Deterministic lookup of the topics of "Código Limpo" (Clean Code, Robert C. Martin, Brazilian Portuguese edition), returning the rules with the PDF page and what the book does NOT say (NOT COVERED). Use before citing a page on names, functions, arguments, comments, formatting, the Law of Demeter, exceptions, null, TDD, F.I.R.S.T., SRP, OCP, DIP, dependency injection, simple design or concurrency, and when asked "does the book mention X?" (SOLID, CQS, YAGNI, Mockito...). Do not use for heuristics by code (G5, F3): use cc-smell-catalog.
+description: "Deterministic lookup of the topics of \"Código Limpo\" (Clean Code, Robert C. Martin, Brazilian Portuguese edition), returning the rules with the PDF page and what the book does NOT say (NOT COVERED). Use before citing a page on names, functions, arguments, comments, formatting, the Law of Demeter, exceptions, null, TDD, F.I.R.S.T., SRP, OCP, DIP, dependency injection, simple design or concurrency, and when asked \"does the book mention X?\" (SOLID, CQS, YAGNI, Mockito...). Do not use for heuristics by code (G5, F3): use cc-smell-catalog."
 ---
 
 # Topic lookup with page

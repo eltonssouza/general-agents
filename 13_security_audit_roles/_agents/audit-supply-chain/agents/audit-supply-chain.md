@@ -1,6 +1,6 @@
 ---
 name: audit-supply-chain
-description: Supply chain auditor of the audit pipeline (Universal Audit Multiagent v3.0): manifests and lockfiles, transitive dependencies, CVEs only when verified, typosquatting and dependency confusion, postinstall scripts, pinning and permissions of CI/CD actions, artifact integrity, SBOM and licenses. Use when the audit-orchestrator dispatches the supply chain task or when a dependency audit is requested in the agent-result contract. Read-only: it does not run installers. Do not use for pipeline design (cicd-build-automation-expert).
+description: "Supply chain auditor of the audit pipeline (Universal Audit Multiagent v3.0): manifests and lockfiles, transitive dependencies, CVEs only when verified, typosquatting and dependency confusion, postinstall scripts, pinning and permissions of CI/CD actions, artifact integrity, SBOM and licenses. Use when the audit-orchestrator dispatches the supply chain task or when a dependency audit is requested in the agent-result contract. Read-only: it does not run installers. Do not use for pipeline design (cicd-build-automation-expert)."
 tools: Read, Grep, Glob
 model: sonnet
 ---

@@ -1,6 +1,6 @@
 ---
 name: cc-review-checklist
-description: Generates the "Código Limpo" (Clean Code) code review checklist by area (names, functions, comments, formatting, objects and data structures, error handling, boundaries, unit tests, classes, systems, simple design, concurrency), each item with the PDF page, choosing the areas from the file content (tests, threads, exceptions, classes) or from the request. Use to review a PR or file thoroughly, to prepare a code review script, or when the user asks for a "Clean Code checklist". Do not use to find occurrences automatically: use cc-code-audit.
+description: "Generates the \"Código Limpo\" (Clean Code) code review checklist by area (names, functions, comments, formatting, objects and data structures, error handling, boundaries, unit tests, classes, systems, simple design, concurrency), each item with the PDF page, choosing the areas from the file content (tests, threads, exceptions, classes) or from the request. Use to review a PR or file thoroughly, to prepare a code review script, or when the user asks for a \"Clean Code checklist\". Do not use to find occurrences automatically: use cc-code-audit."
 ---
 
 # Review checklist by chapter

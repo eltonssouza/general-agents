@@ -1,6 +1,6 @@
 ---
 name: orq-route
-description: Indicates which agent(s) of the general-agents collection (specialists with sources or role agents: product-owner, product-designer, tech-lead, principal-engineer) should handle a request, by deterministic triage over the catalog generated from the frontmatters, and says NO SPECIALIST when none covers it. Works for requests in English or Portuguese. Use when asked "which agent do I use for X?", "who covers Kafka/LGPD/Spring Boot 3?", "is there a specialist for TypeScript?" or before delegating a subtask. Do not use to answer the technical content of the request (that belongs to the specialist).
+description: "Indicates which agent(s) of the general-agents collection (specialists with sources or role agents: product-owner, product-designer, tech-lead, principal-engineer) should handle a request, by deterministic triage over the catalog generated from the frontmatters, and says NO SPECIALIST when none covers it. Works for requests in English or Portuguese. Use when asked \"which agent do I use for X?\", \"who covers Kafka/LGPD/Spring Boot 3?\", \"is there a specialist for TypeScript?\" or before delegating a subtask. Do not use to answer the technical content of the request (that belongs to the specialist)."
 ---
 
 # Routing to specialists

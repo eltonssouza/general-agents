@@ -1,7 +1,7 @@
 ---
 name: morin-topic-lookup
 description: Looks up topics, structures and pages in Open Data Structures (Morin, Edition 0.1Gβ, 326 pages) using a JSON index (the PDF table of contents plus curated topics in English and Portuguese). Terms the book does not use (tombstone, primary clustering, 2-independent, real-time) return NOT COVERED.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # morin-topic-lookup

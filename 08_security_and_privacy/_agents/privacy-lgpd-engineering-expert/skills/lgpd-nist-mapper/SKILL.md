@@ -1,6 +1,6 @@
 ---
 name: lgpd-nist-mapper
-description: Maps concepts and articles of the LGPD (Lei Geral de Proteção de Dados, Brazil's data protection law) to the NIST IR 8062 privacy engineering objectives (predictability, manageability, disassociability), stating the level of textual support (TEXTUAL, INFERENCE, NO_SUPPORT). Use when the user asks "which LGPD article corresponds to manageability?", "how does Art. 6 relate to NIST?" or "what in NIST has no counterpart in the LGPD?". Do not use as a legal interpretation: the correspondence is an engineering comparison.
+description: "Maps concepts and articles of the LGPD (Lei Geral de Proteção de Dados, Brazil's data protection law) to the NIST IR 8062 privacy engineering objectives (predictability, manageability, disassociability), stating the level of textual support (TEXTUAL, INFERENCE, NO_SUPPORT). Use when the user asks \"which LGPD article corresponds to manageability?\", \"how does Art. 6 relate to NIST?\" or \"what in NIST has no counterpart in the LGPD?\". Do not use as a legal interpretation: the correspondence is an engineering comparison."
 ---
 
 # LGPD x NIST IR 8062 map

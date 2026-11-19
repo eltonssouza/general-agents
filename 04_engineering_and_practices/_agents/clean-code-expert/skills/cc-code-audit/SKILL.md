@@ -1,6 +1,6 @@
 ---
 name: cc-code-audit
-description: Heuristic code auditor based on "Código Limpo" (Clean Code): flags smell candidates that simple syntactic analysis can see (more than 2-3 arguments, boolean/flag argument, function over 20 lines, nesting beyond 2 levels, commented-out code, magic numbers, call chains/Law of Demeter, return null, Hungarian notation/m_/I on interfaces, switch, repeated lines, lines over 120 characters) and links each one to the heuristic and the PDF page. Use when the user asks for a review, a "code review by Clean Code", "is this class clean?", or pastes Java, C#, JavaScript, TypeScript or Python code. Do not use as a final verdict: bad names, a function that does more than one thing and mixed levels of abstraction require judgment.
+description: "Heuristic code auditor based on \"Código Limpo\" (Clean Code): flags smell candidates that simple syntactic analysis can see (more than 2-3 arguments, boolean/flag argument, function over 20 lines, nesting beyond 2 levels, commented-out code, magic numbers, call chains/Law of Demeter, return null, Hungarian notation/m_/I on interfaces, switch, repeated lines, lines over 120 characters) and links each one to the heuristic and the PDF page. Use when the user asks for a review, a \"code review by Clean Code\", \"is this class clean?\", or pastes Java, C#, JavaScript, TypeScript or Python code. Do not use as a final verdict: bad names, a function that does more than one thing and mixed levels of abstraction require judgment."
 ---
 
 # Heuristic code audit

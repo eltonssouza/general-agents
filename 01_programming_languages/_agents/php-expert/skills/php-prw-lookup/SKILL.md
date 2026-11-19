@@ -1,6 +1,6 @@
 ---
 name: php-prw-lookup
-description: Topic search in the index of "PHP: The Right Way" (PRW), returning PDF pages or NOT COVERED when the book does not cover the subject (e.g. strict_types, Throwable, CSRF). Read-only, no network.
+description: "Topic search in the index of \"PHP: The Right Way\" (PRW), returning PDF pages or NOT COVERED when the book does not cover the subject (e.g. strict_types, Throwable, CSRF). Read-only, no network."
 ---
 
 # php-prw-lookup

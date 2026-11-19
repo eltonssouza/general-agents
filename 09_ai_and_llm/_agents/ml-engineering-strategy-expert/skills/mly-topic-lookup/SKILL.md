@@ -1,6 +1,6 @@
 ---
 name: mly-topic-lookup
-description: Finds in Machine Learning Yearning (Andrew Ng, 2018 draft) which pages and chapters cover a topic and lists the topics NOT COVERED. Use before citing a page and when the user asks "does the book talk about learning curves?", "what is on page 42?" or "does the MLY cover Transformers, MLOps or A/B tests?". Do not use to answer the question itself: use the result to cite.
+description: "Finds in Machine Learning Yearning (Andrew Ng, 2018 draft) which pages and chapters cover a topic and lists the topics NOT COVERED. Use before citing a page and when the user asks \"does the book talk about learning curves?\", \"what is on page 42?\" or \"does the MLY cover Transformers, MLOps or A/B tests?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

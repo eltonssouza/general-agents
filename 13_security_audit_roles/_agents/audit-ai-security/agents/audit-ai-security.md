@@ -1,6 +1,6 @@
 ---
 name: audit-ai-security
-description: AI and agent security auditor of the audit pipeline (Universal Audit Multiagent v3.0): direct and indirect prompt injection, tool-output laundering, exfiltration, prompt leakage, tool permission escalation, MCP, function calling, RAG and memory poisoning, omitted human approval and cross-tenant contamination, with a tool permission matrix. Use when the audit-orchestrator dispatches the AI task or when an audit of an agent/LLM/RAG is requested in the agent-result contract. Do not use to design prompts or context (llm-prompting-and-foundations-expert, agentic-ai-context-engineering-expert).
+description: "AI and agent security auditor of the audit pipeline (Universal Audit Multiagent v3.0): direct and indirect prompt injection, tool-output laundering, exfiltration, prompt leakage, tool permission escalation, MCP, function calling, RAG and memory poisoning, omitted human approval and cross-tenant contamination, with a tool permission matrix. Use when the audit-orchestrator dispatches the AI task or when an audit of an agent/LLM/RAG is requested in the agent-result contract. Do not use to design prompts or context (llm-prompting-and-foundations-expert, agentic-ai-context-engineering-expert)."
 tools: Read, Grep, Glob
 model: sonnet
 ---

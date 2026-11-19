@@ -1,6 +1,6 @@
 ---
 name: dlb-calculators
-description: Runs deep learning calculations checked against the book Deep Learning (2016), each output with page and source label: output size and cost of convolutions, parameter counts, entropy/KL/cross-entropy, stable softmax, backprop on a small graph with numerical check, Adam/momentum/RMSProp, clipping, batch norm, early stopping, RNN/LSTM. Use when the user asks "what is the output size of a 5x5 conv with stride 2?", "compute the KL between these distributions" or "check my gradient". Do not use to train models or to validate experimental results.
+description: "Runs deep learning calculations checked against the book Deep Learning (2016), each output with page and source label: output size and cost of convolutions, parameter counts, entropy/KL/cross-entropy, stable softmax, backprop on a small graph with numerical check, Adam/momentum/RMSProp, clipping, batch norm, early stopping, RNN/LSTM. Use when the user asks \"what is the output size of a 5x5 conv with stride 2?\", \"compute the KL between these distributions\" or \"check my gradient\". Do not use to train models or to validate experimental results."
 ---
 
 # Deep Learning calculators

@@ -1,6 +1,6 @@
 ---
 name: framework-compare
-description: Compares Svelte, SvelteKit and Astro using only the criteria the three sources of the collection provide, each cell with a citation (SVHB/SKGS/ASTRO p.N) or NOT COVERED, and shows the cited creation commands. Use when the user asks "what is the difference between Svelte and SvelteKit?", "Astro or SvelteKit for my site?" or "what do the sources say about each one?". Do not use to recommend a framework: the source gives no Astro vs SvelteKit choice criterion.
+description: "Compares Svelte, SvelteKit and Astro using only the criteria the three sources of the collection provide, each cell with a citation (SVHB/SKGS/ASTRO p.N) or NOT COVERED, and shows the cited creation commands. Use when the user asks \"what is the difference between Svelte and SvelteKit?\", \"Astro or SvelteKit for my site?\" or \"what do the sources say about each one?\". Do not use to recommend a framework: the source gives no Astro vs SvelteKit choice criterion."
 ---
 
 # Svelte x SvelteKit x Astro comparator

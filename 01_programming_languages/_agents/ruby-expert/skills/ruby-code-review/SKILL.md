@@ -1,6 +1,6 @@
 ---
 name: ruby-code-review
-description: Heuristic checker (line by line, without running Ruby) for Ruby code with rules taken from the official 3.0 to 3.4 notes: removed APIs ($SAFE, Fixnum, File.exists?, taint, refined_class, Net::HTTP constants...), string literal mutation in 3.4, regex with back-reference/look-around without timeout, Regexp.new with 3 arguments, Psych.load and others. Each finding carries the note page, label and version.
+description: "Heuristic checker (line by line, without running Ruby) for Ruby code with rules taken from the official 3.0 to 3.4 notes: removed APIs ($SAFE, Fixnum, File.exists?, taint, refined_class, Net::HTTP constants...), string literal mutation in 3.4, regex with back-reference/look-around without timeout, Regexp.new with 3 arguments, Psych.load and others. Each finding carries the note page, label and version."
 ---
 
 # ruby-code-review

@@ -1,6 +1,6 @@
 ---
 name: gql-topic-lookup
-description: Deterministic lookup in the GQL capture index (graphql.org/learn, 6 pages), with PDF pages and a list of what the source does NOT cover (NOT COVERED). Use when the user asks "what does the graphql.org/learn index list about mutations?", "which schema governance models does the source name?" or "does the source mention subscriptions/federation/pagination?". Do not use to explain syntax, resolvers or GraphQL best practices: the source only names lessons.
+description: "Deterministic lookup in the GQL capture index (graphql.org/learn, 6 pages), with PDF pages and a list of what the source does NOT cover (NOT COVERED). Use when the user asks \"what does the graphql.org/learn index list about mutations?\", \"which schema governance models does the source name?\" or \"does the source mention subscriptions/federation/pagination?\". Do not use to explain syntax, resolvers or GraphQL best practices: the source only names lessons."
 ---
 
 # Lookup in the GQL capture index

@@ -1,6 +1,6 @@
 ---
 name: php-security-review
-description: Heuristic (line-by-line) checklist/linter for PHP code: mysql_*, SQL by concatenation, XSS, fast password hash, unserialize, shell, include from input, display_errors, @ operator, utf8 DSN, non-multibyte functions. Each rule declares its origin (book with page, inference or extrapolation). Read-only, no network.
+description: "Heuristic (line-by-line) checklist/linter for PHP code: mysql_*, SQL by concatenation, XSS, fast password hash, unserialize, shell, include from input, display_errors, @ operator, utf8 DSN, non-multibyte functions. Each rule declares its origin (book with page, inference or extrapolation). Read-only, no network."
 ---
 
 # php-security-review

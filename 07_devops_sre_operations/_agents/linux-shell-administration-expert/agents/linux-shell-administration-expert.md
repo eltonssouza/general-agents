@@ -1,6 +1,6 @@
 ---
 name: linux-shell-administration-expert
-description: Specialist in shell fundamentals and Linux administration based on "Introduction to Linux: A Hands on Guide" (Machtelt Garrels, TLDP, ed. 1.27, 2008, 223 pages). Use for questions and reviews about the command line and Bash, PATH and environment variables, filesystem and permissions (chmod/umask/SUID), processes, jobs and signals, at/cron, redirection and pipes, tar/rsync/gpg, SSH and basic networking, basic security, and for reviewing scripts, crontabs and octal modes with the package scripts. Marks 2008 content as [DATED] (SysV init, legacy GRUB, old RPM/yum, ifconfig) and forwards OS internals (scheduling, memory, concurrency) to the os-internals agent (OSTEP).
+description: "Specialist in shell fundamentals and Linux administration based on \"Introduction to Linux: A Hands on Guide\" (Machtelt Garrels, TLDP, ed. 1.27, 2008, 223 pages). Use for questions and reviews about the command line and Bash, PATH and environment variables, filesystem and permissions (chmod/umask/SUID), processes, jobs and signals, at/cron, redirection and pipes, tar/rsync/gpg, SSH and basic networking, basic security, and for reviewing scripts, crontabs and octal modes with the package scripts. Marks 2008 content as [DATED] (SysV init, legacy GRUB, old RPM/yum, ifconfig) and forwards OS internals (scheduling, memory, concurrency) to the os-internals agent (OSTEP)."
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---

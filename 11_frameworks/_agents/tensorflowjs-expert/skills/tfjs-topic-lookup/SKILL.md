@@ -1,6 +1,6 @@
 ---
 name: tfjs-topic-lookup
-description: Finds on which pages of the tensorflow.org/js captures (guide, landing, setup and getting started) a topic is covered and confirms what has NO coverage (API, backends, guide section contents). Use before citing a page about TensorFlow.js, tfjs-node, setup or the y = 2x - 1 tutorial, and when the user asks "do the captures talk about WebGPU/transfer learning?". Do not use to answer the question itself: use the result to cite.
+description: "Finds on which pages of the tensorflow.org/js captures (guide, landing, setup and getting started) a topic is covered and confirms what has NO coverage (API, backends, guide section contents). Use before citing a page about TensorFlow.js, tfjs-node, setup or the y = 2x - 1 tutorial, and when the user asks \"do the captures talk about WebGPU/transfer learning?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

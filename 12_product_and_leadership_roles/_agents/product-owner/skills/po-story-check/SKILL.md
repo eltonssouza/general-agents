@@ -1,6 +1,6 @@
 ---
 name: po-story-check
-description: Use when writing, reviewing or rewriting user stories, a backlog or BDD acceptance criteria ("review these stories", "are these user stories testable?"): runs a deterministic validator (Portuguese or English) that flags a format other than "As a/I want/so that" or "Como/quero/para", scenarios without Given/When/Then (Dado/Quando/Então), vague terms ("fast", "intuitive"), prescribed technical solution ("table", "endpoint") and "and" in the "I want" (two stories in one). Do not use to decide priority or business value (the product-owner's judgment).
+description: "Use when writing, reviewing or rewriting user stories, a backlog or BDD acceptance criteria (\"review these stories\", \"are these user stories testable?\"): runs a deterministic validator (Portuguese or English) that flags a format other than \"As a/I want/so that\" or \"Como/quero/para\", scenarios without Given/When/Then (Dado/Quando/Então), vague terms (\"fast\", \"intuitive\"), prescribed technical solution (\"table\", \"endpoint\") and \"and\" in the \"I want\" (two stories in one). Do not use to decide priority or business value (the product-owner's judgment)."
 ---
 
 # User story check

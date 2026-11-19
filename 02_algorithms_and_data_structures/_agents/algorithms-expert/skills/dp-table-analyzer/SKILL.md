@@ -1,7 +1,7 @@
 ---
 name: dp-table-analyzer
 description: Deterministic worksheet of dynamic programming formulations from Erickson's book (subproblems, dependencies, evaluation order, time and space, with page and [from source]/[inference]/[extrapolation] labels) for Fibonacci, text segmentation, LIS, edit distance, Subset Sum, optimal BST, tree DP, Bellman-Ford and Floyd-Warshall; plus a simple calculation for custom formulations.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # DP Table Analyzer

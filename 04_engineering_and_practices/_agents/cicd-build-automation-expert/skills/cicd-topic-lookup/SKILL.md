@@ -1,6 +1,6 @@
 ---
 name: cicd-topic-lookup
-description: Locates in the package's four sources (CICD, GRADLE, GHA, SWE-G) the PDF pages where a CI/CD topic is covered and confirms when the collection does NOT cover it. Use before citing a page and when the user asks "do the sources talk about presubmit?", "where is the Gradle Wrapper?", "does the collection cover DORA/action pinning?". Do not use to answer the question itself: use the result to cite.
+description: "Locates in the package's four sources (CICD, GRADLE, GHA, SWE-G) the PDF pages where a CI/CD topic is covered and confirms when the collection does NOT cover it. Use before citing a page and when the user asks \"do the sources talk about presubmit?\", \"where is the Gradle Wrapper?\", \"does the collection cover DORA/action pinning?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

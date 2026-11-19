@@ -1,6 +1,6 @@
 ---
 name: lambda-topic-lookup
-description: Deterministic lookup of topics in the AWS Lambda Developer Guide (2022 edition) with PDF pages, reference file, [DATED] items and gaps, and says NOT COVERED when the guide does not address the subject. Use before citing a page about invocation, concurrency, SnapStart, event source mappings, VPC, layers or quotas, and when the user asks "does the guide talk about response streaming?" or "where does the guide cover visibility timeout?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic lookup of topics in the AWS Lambda Developer Guide (2022 edition) with PDF pages, reference file, [DATED] items and gaps, and says NOT COVERED when the guide does not address the subject. Use before citing a page about invocation, concurrency, SnapStart, event source mappings, VPC, layers or quotas, and when the user asks \"does the guide talk about response streaming?\" or \"where does the guide cover visibility timeout?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

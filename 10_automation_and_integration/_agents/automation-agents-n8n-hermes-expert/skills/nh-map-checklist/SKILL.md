@@ -1,6 +1,6 @@
 ---
 name: nh-map-checklist
-description: Shows the page-by-page map of the two captured documentations (n8n and Hermes) and a per-item checklist (COVERED, PARTIAL, NOT COVERED) of what each covers. Use when the user asks "what do these pages cover?", "cover installation, pricing, webhooks and MCP: which are documented?" or "build a coverage checklist". Do not use to explain the content of the items or to infer what the pages do not show.
+description: "Shows the page-by-page map of the two captured documentations (n8n and Hermes) and a per-item checklist (COVERED, PARTIAL, NOT COVERED) of what each covers. Use when the user asks \"what do these pages cover?\", \"cover installation, pricing, webhooks and MCP: which are documented?\" or \"build a coverage checklist\". Do not use to explain the content of the items or to infer what the pages do not show."
 ---
 
 # Coverage map and checklist (N8N and HERMES)

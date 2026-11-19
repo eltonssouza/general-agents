@@ -1,7 +1,7 @@
 ---
 name: graph-complexity-audit
 description: Complexity worksheet for graph algorithms according to Erickson's book (BFS, DFS, topological sort, SCC, Borůvka, Jarník, Kruskal, shortest paths in a dag, Dijkstra, Bellman-Ford, Johnson, Floyd-Warshall, flow and matching), with page, conditions and labels. Highlights what the book says about Dijkstra with negative edges.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # Graph Complexity Audit

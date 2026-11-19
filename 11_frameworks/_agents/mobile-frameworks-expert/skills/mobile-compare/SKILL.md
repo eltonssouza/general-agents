@@ -1,6 +1,6 @@
 ---
 name: mobile-compare
-description: React Native x Flutter x Swift comparator by criteria of the three sources in the collection, each cell with a paraphrase and page or NOT COVERED; no ranking or recommendation. Use when the user asks "compare React Native, Flutter and Swift", "what does each source say about target audience?", "give me the table in Markdown" or "which is better?" (the answer will be NOT COVERED). Do not use to choose a technology or to compare performance, market or cost: the sources do not cover that.
+description: "React Native x Flutter x Swift comparator by criteria of the three sources in the collection, each cell with a paraphrase and page or NOT COVERED; no ranking or recommendation. Use when the user asks \"compare React Native, Flutter and Swift\", \"what does each source say about target audience?\", \"give me the table in Markdown\" or \"which is better?\" (the answer will be NOT COVERED). Do not use to choose a technology or to compare performance, market or cost: the sources do not cover that."
 ---
 
 # RN x Flutter x Swift comparator

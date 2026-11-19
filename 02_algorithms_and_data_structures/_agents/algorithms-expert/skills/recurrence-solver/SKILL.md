@@ -1,7 +1,7 @@
 ---
 name: recurrence-solver
 description: Solves and numerically VERIFIES divide-and-conquer recurrences with the recursion tree method of Erickson's book (T(n)=r T(n/c)+f(n); decreasing, equal and increasing cases), including subproblems of different sizes and the book's recurrences (Hanoi, MergeSort, Karatsuba, MomSelect, backtracking). The book does NOT present the Master Theorem.
-tools: Bash, Read
+allowed-tools: Bash, Read
 ---
 
 # Recurrence Solver and numerical verifier

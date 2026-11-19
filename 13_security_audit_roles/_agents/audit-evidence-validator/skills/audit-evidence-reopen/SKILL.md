@@ -1,6 +1,6 @@
 ---
 name: audit-evidence-reopen
-description: Use when validating audit candidates ("reopen the evidence", "confirm these findings", gate G3): reopens each piece of evidence in the snapshot with a script - file exists without escaping the snapshot, lines exist, file_sha256 matches, excerpt appears in the cited lines, no clear-text secret, equal revision - and checks validated-findings.json (CONFIRMED only with independent review and existing checked_evidence_refs). Do not use to discover new findings.
+description: "Use when validating audit candidates (\"reopen the evidence\", \"confirm these findings\", gate G3): reopens each piece of evidence in the snapshot with a script - file exists without escaping the snapshot, lines exist, file_sha256 matches, excerpt appears in the cited lines, no clear-text secret, equal revision - and checks validated-findings.json (CONFIRMED only with independent review and existing checked_evidence_refs). Do not use to discover new findings."
 ---
 
 # Deterministic reopening of the evidence

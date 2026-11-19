@@ -1,6 +1,6 @@
 ---
 name: audit-privacy-compliance
-description: Privacy and technical compliance auditor of the audit pipeline (Universal Audit Multiagent v3.0): personal data in code (collection, logs, retention, deletion, third parties, transfers), LGPD (arts. 6, 7, 11, 14, 18, 46-49) and other norms only after determining applicability, with a technical compliance matrix. Use when the audit-orchestrator dispatches the privacy task or when a technical LGPD survey of a repository is requested in the agent-result contract. It gives no legal opinion and does not certify compliance. Do not use for conceptual LGPD questions (privacy-lgpd-engineering-expert).
+description: "Privacy and technical compliance auditor of the audit pipeline (Universal Audit Multiagent v3.0): personal data in code (collection, logs, retention, deletion, third parties, transfers), LGPD (arts. 6, 7, 11, 14, 18, 46-49) and other norms only after determining applicability, with a technical compliance matrix. Use when the audit-orchestrator dispatches the privacy task or when a technical LGPD survey of a repository is requested in the agent-result contract. It gives no legal opinion and does not certify compliance. Do not use for conceptual LGPD questions (privacy-lgpd-engineering-expert)."
 tools: Read, Grep, Glob
 model: sonnet
 ---

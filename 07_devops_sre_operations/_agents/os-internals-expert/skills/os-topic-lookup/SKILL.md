@@ -1,6 +1,6 @@
 ---
 name: os-topic-lookup
-description: Finds in OSTEP (Operating Systems: Three Easy Pieces, 834-page PDF) which PDF pages cover an operating-systems topic and flags NOT COVERED for what the book does not treat. Use before citing a page on scheduling, virtual memory, TLB, threads, locks, RAID, journaling, NFS/AFS, and when the user asks "does the book talk about io_uring?", "where does it explain MLFQ?". Do not use to answer the question itself: use the result to cite.
+description: "Finds in OSTEP (Operating Systems: Three Easy Pieces, 834-page PDF) which PDF pages cover an operating-systems topic and flags NOT COVERED for what the book does not treat. Use before citing a page on scheduling, virtual memory, TLB, threads, locks, RAID, journaling, NFS/AFS, and when the user asks \"does the book talk about io_uring?\", \"where does it explain MLFQ?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages (OSTEP)

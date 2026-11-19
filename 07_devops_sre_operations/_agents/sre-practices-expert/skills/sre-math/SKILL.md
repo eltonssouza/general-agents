@@ -1,6 +1,6 @@
 ---
 name: sre-math
-description: Does the operational arithmetic the Google SRE book provides: N+2 provisioning, toil floor from the on-call rotation, retry amplification, on-call limits, bimodal latency, consensus quorum, scan time, Borgmon RAM and incident duration. Use when the user asks "how many tasks do I need for 3470 QPS?", "how much do 4x3 retries amplify?" or "how many people on the on-call rotation?". Do not use for real capacity planning.
+description: "Does the operational arithmetic the Google SRE book provides: N+2 provisioning, toil floor from the on-call rotation, retry amplification, on-call limits, bimodal latency, consensus quorum, scan time, Borgmon RAM and incident duration. Use when the user asks \"how many tasks do I need for 3470 QPS?\", \"how much do 4x3 retries amplify?\" or \"how many people on the on-call rotation?\". Do not use for real capacity planning."
 ---
 
 # SRE arithmetic from the book

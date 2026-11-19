@@ -1,6 +1,6 @@
 ---
 name: vm-simulator
-description: Simulates OSTEP virtual memory: base/bounds translation, segments, linear and 2-level paging, TLB, page replacement (OPT, FIFO, LRU, RANDOM, CLOCK, MRU), AMAT and page-table sizes. Use when the user asks "translate virtual address 21 with a 16-byte page", "compare FIFO and LRU with 3 frames on this sequence" or "how big is a 32-bit linear table with 4 KB pages?". Do not use to measure real systems, nor to reproduce the RANDOM draw figure.
+description: "Simulates OSTEP virtual memory: base/bounds translation, segments, linear and 2-level paging, TLB, page replacement (OPT, FIFO, LRU, RANDOM, CLOCK, MRU), AMAT and page-table sizes. Use when the user asks \"translate virtual address 21 with a 16-byte page\", \"compare FIFO and LRU with 3 frames on this sequence\" or \"how big is a 32-bit linear table with 4 KB pages?\". Do not use to measure real systems, nor to reproduce the RANDOM draw figure."
 ---
 
 # Virtual memory simulator

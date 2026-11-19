@@ -1,6 +1,6 @@
 ---
 name: framework-compare
-description: Compares Django, Flask and FastAPI side by side using only criteria the package's three sources provide (20 criteria), each cell with a citation and PDF page or NOT COVERED. Use when the user asks "compare Django, Flask and FastAPI", "what is the routing difference between them?" or "which framework should I choose?". Do not use to recommend a framework or for benchmarks: the sources do not compare them.
+description: "Compares Django, Flask and FastAPI side by side using only criteria the package's three sources provide (20 criteria), each cell with a citation and PDF page or NOT COVERED. Use when the user asks \"compare Django, Flask and FastAPI\", \"what is the routing difference between them?\" or \"which framework should I choose?\". Do not use to recommend a framework or for benchmarks: the sources do not compare them."
 ---
 
 # DJT x FLT x FAPI comparator

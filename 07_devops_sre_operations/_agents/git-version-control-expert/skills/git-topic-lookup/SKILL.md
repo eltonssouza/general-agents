@@ -1,6 +1,6 @@
 ---
 name: git-topic-lookup
-description: Locates in Pro Git (EN 2.1.450 and PT-BR 2.1.47) on which PDF pages a topic or command is covered, with risks, [DATED] items and terms the book does NOT contain. Use before citing a page and when the user asks "does Pro Git talk about reflog?", "where is rebase?", "does the book cover git worktree or --force-with-lease?". Do not use to answer the question itself: use the result to cite.
+description: "Locates in Pro Git (EN 2.1.450 and PT-BR 2.1.47) on which PDF pages a topic or command is covered, with risks, [DATED] items and terms the book does NOT contain. Use before citing a page and when the user asks \"does Pro Git talk about reflog?\", \"where is rebase?\", \"does the book cover git worktree or --force-with-lease?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

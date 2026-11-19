@@ -1,6 +1,6 @@
 ---
 name: dlb-topic-lookup
-description: Deterministic topic lookup in the book Deep Learning (Goodfellow, Bengio, Courville, 2016) with PDF pages, PDF/printed conversion, page ranges NOT read by the package, and terms verified as absent (NOT COVERED: Transformers, LLMs, AdamW etc.). Use before citing a page on backprop, regularization, optimization, CNN, RNN or practical methodology, and when the user asks "does the book talk about batch normalization?" or "what is the printed page of p.89?". Do not use to answer the question itself: use the result to cite.
+description: "Deterministic topic lookup in the book Deep Learning (Goodfellow, Bengio, Courville, 2016) with PDF pages, PDF/printed conversion, page ranges NOT read by the package, and terms verified as absent (NOT COVERED: Transformers, LLMs, AdamW etc.). Use before citing a page on backprop, regularization, optimization, CNN, RNN or practical methodology, and when the user asks \"does the book talk about batch normalization?\" or \"what is the printed page of p.89?\". Do not use to answer the question itself: use the result to cite."
 ---
 
 # Topic lookup with pages

@@ -1,6 +1,6 @@
 ---
 name: dlb-training-diagnosis
-description: Diagnoses a bad training run with the ch. 11 decision tree of Deep Learning (practical methodology, p.436-457): underfitting, overfitting, more data, hyperparameters (Table 11.1), learning rate, suggested baseline and debugging checklist, all with pages. Use when the user says "my training error is 0.20 and my test error 0.21, now what?", "the model overfits, what do I do?" or "which baseline for sequence data?". Do not use for diagnosis that depends on post-2016 techniques nor to replace the analysis of the concrete case.
+description: "Diagnoses a bad training run with the ch. 11 decision tree of Deep Learning (practical methodology, p.436-457): underfitting, overfitting, more data, hyperparameters (Table 11.1), learning rate, suggested baseline and debugging checklist, all with pages. Use when the user says \"my training error is 0.20 and my test error 0.21, now what?\", \"the model overfits, what do I do?\" or \"which baseline for sequence data?\". Do not use for diagnosis that depends on post-2016 techniques nor to replace the analysis of the concrete case."
 ---
 
 # Training diagnosis (ch. 11)

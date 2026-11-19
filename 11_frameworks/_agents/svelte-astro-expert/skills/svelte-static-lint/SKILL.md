@@ -1,6 +1,6 @@
 ---
 name: svelte-static-lint
-description: Static linter for .svelte components with rules backed by The Svelte Handbook (2019), each finding with rule, severity, line, origin ([from source]/[inference]/[extrapolation]) and page. Use when the user pastes or points to a .svelte component and asks "review this component", "why isn't my array updating?" or "does my bind:value with const work?". Do not use for components with runes ($state, $props), SvelteKit (+page.svelte, load) or .astro: the source does not cover them.
+description: "Static linter for .svelte components with rules backed by The Svelte Handbook (2019), each finding with rule, severity, line, origin ([from source]/[inference]/[extrapolation]) and page. Use when the user pastes or points to a .svelte component and asks \"review this component\", \"why isn't my array updating?\" or \"does my bind:value with const work?\". Do not use for components with runes ($state, $props), SvelteKit (+page.svelte, load) or .astro: the source does not cover them."
 ---
 
 # Static lint for Svelte components

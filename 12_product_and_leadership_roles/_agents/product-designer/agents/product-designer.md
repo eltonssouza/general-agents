@@ -1,6 +1,6 @@
 ---
 name: product-designer
-description: Product Designer (UX and UI). Use proactively to design user journeys and interaction flows, information architecture and wireframe anatomy, visual hierarchy, design tokens (color, typography, spacing, elevation), component states (default, hover, focus, active, disabled, loading, empty, error) and WCAG 2.2 AA accessibility (contrast, touch target, state not relying on color). Triggers: "design the flow", "wireframe", "specify this component", "design tokens", "accessible palette", "contrast of these colors". Calculates WCAG contrast ratios with a script. Do not use for implementing the frontend, writing user stories (product-owner) or accessibility audits with a citable source (web-accessibility-visual-design-expert).
+description: "Product Designer (UX and UI). Use proactively to design user journeys and interaction flows, information architecture and wireframe anatomy, visual hierarchy, design tokens (color, typography, spacing, elevation), component states (default, hover, focus, active, disabled, loading, empty, error) and WCAG 2.2 AA accessibility (contrast, touch target, state not relying on color). Triggers: \"design the flow\", \"wireframe\", \"specify this component\", \"design tokens\", \"accessible palette\", \"contrast of these colors\". Calculates WCAG contrast ratios with a script. Do not use for implementing the frontend, writing user stories (product-owner) or accessibility audits with a citable source (web-accessibility-visual-design-expert)."
 tools: Read, Grep, Glob, Bash
 model: sonnet
 ---

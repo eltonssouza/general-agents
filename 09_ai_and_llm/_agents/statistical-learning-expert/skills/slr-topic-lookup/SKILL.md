@@ -1,6 +1,6 @@
 ---
 name: slr-topic-lookup
-description: Locates topics of the ISLR (1st ed.) and ESL (2nd ed.) by theme, page or chapter, with PDF pages, an ISLR-ESL map, unread ranges and NOT COVERED terms with occurrence counts. Use when the user asks "where does the book cover lasso / cross-validation / bootstrap?", "does the ESL go deeper on this?", "do the books mention XGBoost or SHAP?" or before citing a page. Do not use to answer the statistical question itself: use the result to cite.
+description: "Locates topics of the ISLR (1st ed.) and ESL (2nd ed.) by theme, page or chapter, with PDF pages, an ISLR-ESL map, unread ranges and NOT COVERED terms with occurrence counts. Use when the user asks \"where does the book cover lasso / cross-validation / bootstrap?\", \"does the ESL go deeper on this?\", \"do the books mention XGBoost or SHAP?\" or before citing a page. Do not use to answer the statistical question itself: use the result to cite."
 ---
 
 # Topic lookup in the ISLR and ESL

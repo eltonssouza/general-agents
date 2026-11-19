@@ -1,6 +1,6 @@
 # Delegation by platform
 
-[DATED] Checked against the official documentation on 2026-10-31 (models: 2026-11-01). Formats change; check again if something does not work.
+[DATED] Checked against the official documentation on 2026-10-31 (models: 2026-11-01; Relay: 2026-11-19). Formats change; check again if something does not work.
 
 ## Claude Code
 - **`Agent`** tool (formerly `Task`, which remains as an alias). `subagent_type` = the agent identifier.
@@ -26,6 +26,16 @@
 - **Model:** `model` accepts text or a preference-ordered list (uses the first available); the values are Copilot runtime IDs. The collection writes `['claude-<model>-5.5', '<gpt>']` (IDs from the `github-copilot` model catalog).
 - Specialist not installed as a custom agent: delegate to a generic subagent with the "read the canonical prompt" brief.
 - Sources: https://code.visualstudio.com/docs/copilot/customization/custom-agents and https://code.visualstudio.com/docs/agents/reference/custom-agent-file-reference
+
+## Relay
+- Install the collection with `relay agents install` (a commit pinned in Relay; `--from <path>` installs a local copy offline). `/agents` and `relay agents list` show the agents that loaded and the ones that did not, with the reason.
+- **`agent`** tool with Claude Code's arguments (`subagent_type`, `description`, `prompt`). `subagent_type` = the agent's `name` from its frontmatter, with no plugin prefix. The subagent runs in the same process with the tools and system prompt of its definition; `<PKG>` and `<ROOT>` are replaced with the package and collection folders.
+- **Routing without Python:** the `route_agent` tool returns the same answer as `scripts/route.py --json` (Relay runs the same ranking in its Rust core, checked against the script). Use it in place of `python -I <PKG>/scripts/route.py` when Python is not available.
+- **Depth:** up to 3 sessions in a chain (main, orchestrator, specialist; `subagents.maxDepth`). At the limit the `agent` tool is removed; then deliver the delegation plan. Also limited per subagent: concurrency, tokens and time (`subagents.*`).
+- **Tools:** `Read`, `Grep`, `Glob`, `Bash`, `Edit`, `Write` and `Agent` map to Relay's tools; a definition naming any other tool is not loaded.
+- **Model:** `haiku`, `sonnet` and `opus` are capability tiers (`fast`, `balanced`, `strong`), resolved by the `modelTiers` setting or from catalog prices on the session's provider; `inherit` or no `model` uses the session's model.
+- **Harness:** the brief does not authorize anything (a brief saying "push the branch" does not allow the push) and records no constraint; the developer's constraints reach the subagent. Authorization requests open in the developer's session, with the agent's name. The subagent's edits and checks count in the main session's evidence, so a delegated edit without a check is still flagged.
+- Source: Relay's `packages/coding-agent/docs/subagents.md`
 
 ## No delegation available
 Do not simulate specialist answers. Deliver the plan: a `subtask → agent → ready brief` table (template in `protocolo.md`), for execution by the main agent or the user.
